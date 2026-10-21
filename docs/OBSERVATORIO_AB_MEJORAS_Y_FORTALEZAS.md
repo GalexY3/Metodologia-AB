@@ -83,3 +83,38 @@
 - No llamar descubrimientos a estas observaciones de gobernanza: son mejoras candidatas, pruebas negativas o beneficios de trazabilidad.
 - Si la hipótesis de método no produce evidencia propia, registrar `NO_VALIDADO` y no añadir priors A numéricos.
 - Incorporar otras entradas en nuevos commits; no borrar este bloque histórico.
+
+
+---
+## Anexo acumulativo — 21-10-2026, LARP BR12 dinámico
+**Procedencia:** `GalexY3/proyecto-LARP`, commits `aff298281e3b9efab361964cf068a95c8c0b1163` (prerregistro dinámico), `56b38d13ae6b9e3c02b03021961a922772128b50` (primer código congelado) y `4d4d2179c2c9913150d9cb7088fe645fb2603037` (código y 12 decisiones posteriores). Documento `docs/07_BR12_LEDGER_12_CICLOS.md`.
+
+### AB-M009 — Exigir convergencia y optimización justa de baselines
+- **Observación/resultado:** comparación LARP LOCAL (MSE f1 k24 .1404) frente CVT inicial (.1542), aparentemente favorable a LOCAL. Después de mayor optimización CVT y bandwidth elegido solo en desarrollo, CVT refinado consiguió .0893–.0922 frente LOCAL .1074 en un holdout del mismo generador. Esto *cambia el signo* del ranking, aunque se modificaron tanto CVT como el estimador y el estudio es exploratorio.
+- **Mejora candidata:** previo a cualquier reivindicación de superioridad, comprobar la curva de convergencia de todos los comparadores competentes y conceder un presupuesto documentado de ajuste por método; desagregar efecto del generador y del predictor mediante factorial si es posible. Reportar coste de entrenamiento, generación e inferencia por separado.
+- **Falsador/coste:** la igualdad de presupuestos puede impedir optimizar alguno de los métodos; más tuning induce selección y exige holdout renovado. Diseñar pilotos realistas para escoger un buen balance.
+- **Estado:** PROPUESTA. No acredita AB por sí misma. **Relacionado con AB-M004**.
+
+### AB-M010 — Equivalencia de implementaciones y dimensión como condición de inferencia
+- **Observación:** el nuevo LOCAL_derived de N512 alcanzó 69.2% cobertura k16, mientras el LOCAL original Scale3D N4096 alcanzaba ~96% bajo otra escala. Ni parametrización, ni optimizador, ni N eran idénticos, de modo que equipararlos habría producido una inferencia falsa.
+- **Mejora candidata:** toda `REPLICACION` debe tener manifiesto de equivalencia: misma función de energía, gradientes, semillas, geometría/dimensión, tamaños, inicialización, criterio de convergencia y outputs; sin equivalencia usar `DERIVADO/PROXY`, permitir utilidad exploratoria pero prohibir declaración de réplica.
+- **Falsador/coste:** equivalencia exacta no es siempre necesaria para transferencia; distinguir replicación bitwise, conceptual e independiente por objetivos antes de imponer prueba costosa.
+- **Estado:** PROPUESTA. Relacionado con AB-M003.
+
+### AB-M011 — Veracidad del estado confirmatorio después de tuning adaptativo
+- **Observación:** LARP BR12 utilizó mundos de desarrollo 5101–5108 y evaluación 6101–6112; pero fue una rama elegida tras observar otras pruebas del mismo generador y la fuente completa de fases adicionales no estaba congelada en GitHub antes de cada test. Por tanto, el resultado se presenta como **exploratorio con holdout interno**, NO una confirmación preregistrada ni externa.
+- **Mejora:** etiqueta de origen de la hipótesis (previa/emergente), grado de reutilización del generador, estado del holdout y fecha de freeze del código. Exigir tabla de cuántos tests fueron inspeccionados y un registro de los cambios de comparación para calibrar inferencia.
+- **Falsador/coste:** no prohibir investigación exploratoria adaptativa; penalización ritual consume poder de descubrimiento. Estado PROPUESTA.
+
+### AB-B005 — Decisión dinámica que abandona una hipótesis favorecida
+- **Observación favorable:** el branching llevó desde esperar superioridad LOCAL frente CVT a STOP cuando un comparador refinado y mejor calibrado invirtió el orden; después se buscaron mecanismos rivales (acceso por tipo, MLP, dropout, espectro) sin promover hallazgos a nivel 2/3.
+- **Beneficio práctico:** el registro de la secuencia y los siguientes falsadores reduce el riesgo de que el branching se transforme en búsqueda retrospectiva de la mejor semilla. No se ha probado que AB sea mejor que un equipo científico convencional.
+- **Límite:** los 12 ciclos comparten varios DGP y geometrías; clasificar su valor informativo sigue siendo subjetivo.
+- **Estado:** PROPUESTA para conservar.
+
+### AB-B006 — Resultados positivos en la variable mecanismo, negativos en el outcome
+- **Observación:** MHU suprime considerablemente S(k) en 80 modos pero un CVT por tipo de mayor S(k) predice mejor los campos suaves del piloto. Medir mecanismo y outcome separadamente evitó inferir utilidad por excelencia de un proxy.
+- **Beneficio:** mecanismo deseado no es resultado final; mantener mecanismos, riesgos y resultados separados en el ledger. No equivale a novedad matemática sobre HU.
+- **Estado:** PROPUESTA para conservar.
+
+**No cambia automáticamente AB 3.2.1 ni A01–A21**. Tras una futura comparación metodológica podrá proponerse cambiar el núcleo con un commit y justificación, no por anotación autoaprobada.
