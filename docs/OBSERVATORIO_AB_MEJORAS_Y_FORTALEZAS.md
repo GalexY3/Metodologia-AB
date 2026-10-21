@@ -118,3 +118,28 @@
 - **Estado:** PROPUESTA para conservar.
 
 **No cambia automáticamente AB 3.2.1 ni A01–A21**. Tras una futura comparación metodológica podrá proponerse cambiar el núcleo con un commit y justificación, no por anotación autoaprobada.
+
+
+---
+
+## Anexo acumulativo — 2026-10-22 · LARP BR30 dinámico C01–C08
+**Procedencia:** `GalexY3/proyecto-LARP` / `docs/BR30_DYNAMIC_C01_C08_LEDGER.md` y commit científico `135c4a1575addef794eee69b6b0052e011ea415d`; semillas 5201–5204, datos brutos en ZIP Drive. No se ha generado evidencia externa de eficacia de AB.
+
+### AB-M012 — Buscar y verificar código original antes de declarar barrera de acceso
+- **Problema observado:** en el BR12 anterior se indicó que faltaba el generador Scale3D exacto. En el bloque siguiente se encontraron las fuentes v1/v2 originales en un ZIP histórico ya disponible y sus hashes coincidieron con los registrados. Esto había inducido un desvío de investigación hacia un generador `LOCAL_derived` no equivalente y pérdida de poder comparativo.
+- **Mejora propuesta:** añadir `SOURCE_RECOVERY_GATE`: explorar adjuntos, archivos, repositorios, backups y ZIP históricos antes de declarar `BARRERA_DE_ACCESO`; registrar lista de lugares consultados, huellas, origen y diferencias entre fuente original y reproducción. Diferenciar «fuente no localizada» de «fuente inexistente».
+- **Costo/falsador:** búsquedas exhaustivas pueden ser más caras que reconstruir una técnica conocida. Aplicar un límite de recursos; evaluar cuántas barreras falsas se evitan frente al tiempo gastado.
+- **Estado:** PROPUESTA. No altera automáticamente AB 3.2.1.
+
+### AB-M013 — Convergencia mínima antes de rankings neuronales
+- **Observación:** en dos geometrías originales y tres variantes organizadas, el Scale3D reducido (90.119 parámetros, 220 actualizaciones, un init) logró un MSE de ~.936–.941, mientras el predictor cero marcaba 1.0096. En todos los modelos organizados, el mejor checkpoint de validación era **el último** y la pérdida seguía cayendo. Un ranking por diferencias ~.002 carece de sentido como comparación de arquitecturas convergidas.
+- **Mejora propuesta:** agregar a `BASELINE_GATE` una prueba de suficiencia de entrenamiento/curva de aprendizaje, exposición a diferentes budgets, reglas de parada y estabilidad entre seeds. No confundir igualdad de actualizaciones con igualdad de convergencia; registrar FLOPs y total de datos. Una anomalía causada por subentrenamiento debe activar `REPAIR`, no `2/3`.
+- **Costo/falsador:** entrenar hasta convergencia puede ser prohibitivo o favorecer injustamente un modelo; admitir curvas de Pareto rendimiento-cómputo cuando la pregunta sea eficiencia de aprendizaje.
+- **Estado:** PROPUESTA. Compatible con AB-M009, no prior nuevo validado.
+
+### AB-B007 — Exactitud instrumental sin extrapolación ontológica
+- **Observación útil:** las cuatro muestras originales MHU superaron una auditoría FP64 de toda la banda finita, y se mantuvo la misma inicialización dentro de semilla LOCAL/MHU. Esto valida implementación de la propiedad finita; el CVT refinado igualó/superó resultados funcionales en gran parte de los ensayos. La separación *mecanismo geométrico vs outcome aprendido* evitó sobreafirmar ventaja neural.
+- **Limitación:** ni hash, ni banda finita, ni CPU smoke test acreditan hiperuniformidad asintótica o 2/3 arquitectónico.
+- **Estado:** PROPUESTA para conservar, no validación de superioridad AB.
+
+**Seguimiento:** los restantes 22 de 30 ciclos autorizados LARP siguen sin usarse. Revisar AB-M012 antes de nuevos PIVOT por fuente faltante y AB-M013 antes de usar entrenamiento para decidir novedad.
