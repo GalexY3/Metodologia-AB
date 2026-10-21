@@ -143,3 +143,40 @@
 - **Estado:** PROPUESTA para conservar, no validación de superioridad AB.
 
 **Seguimiento:** los restantes 22 de 30 ciclos autorizados LARP siguen sin usarse. Revisar AB-M012 antes de nuevos PIVOT por fuente faltante y AB-M013 antes de usar entrenamiento para decidir novedad.
+
+---
+
+## Anexo acumulativo — 2026-10-22 · LARP, bloque nuevo de 30 ciclos libres
+**Procedencia:** GitHub privado `GalexY3/proyecto-LARP`, commit `4f8c7c37bd633cd4fd9d12e4be8f09b65a53ce83`, documento `docs/AB30_LIBRE_20261022/INFORME_Y_SOLICITUD.md`, JSON con C01–C30, código íntegro y archivo de ejecución. Este anexo **no cambia automáticamente** AB 3.2.1 ni A01–A21.
+
+### AB-M014 — Branching genuino frente a secuencia de pruebas ya escrita
+- **Problema observado:** el usuario solicitó una investigación de 30 ciclos completamente libre, con decisiones dinámicas después de cada ciclo. El programa ejecutó treinta preguntas discriminantes, pero la mayor parte de la secuencia experimental estaba definida en un único script; sólo algunas decisiones incorporaron una bifurcación de ejecución o reparación sustantiva (C06 cambio a trade-off; C11 reparación de banda; C22 corrección de premisa). **No fue un branching con selección independiente del próximo protocolo y nuevo commit después de cada resultado.**
+- **Mejora candidata:** almacenar después de cada ciclo una *decision event* con timestamp/commit, resumen de evidencia inspeccionada, opciones rechazadas, selección nueva, falsador y hash de código; recién entonces congelar y ejecutar la prueba siguiente. En ejecuciones automatizadas pueden existir ramas preregistradas pero no llamarlas «completamente dinámicas» si todos los pasos ya estaban programados; la dinámica dentro de scripts requiere un scheduler real condicionado por resultados.
+- **Coste/falsador:** commits y bloqueo por ciclo incrementan overhead, frente a una secuencia eficiente de auditorías matemáticas relacionadas. Comparar valor informativo y ambigüedad retrospectiva bajo ambos protocolos.
+- **Estado:** PROPUESTA (observación de cumplimiento metodológico, no validación de mejora).
+
+### AB-M015 — Frontera de espectro realmente no observada: fuga de diseño
+- **Observación:** la primera banda llamada `high` contenía modos k² hasta 80 y el corte Fourier optimizado de la unión era k²=78; la muestra de modos seleccionados cayó 100 % dentro del corte. Hubo una reclamación prematura de generalización fuera de banda.
+- **Corrección concreta:** en C11 se calculó el corte real del código fuente por el mismo `chi` y N; en C12 se seleccionaron modos k²=101..134. **Fuera de banda**, LOCAL obtuvo potencia ~1.46e-5, MHU ~2.13e-5, invirtiendo el ranking.
+- **Mejora candidata:** `SPECTRAL_HOLDOUT_GATE`: comprobar explícitamente la intersección entre frecuencias evaluadas y todos los modos/shells del objetivo de entrenamiento, también por subpoblación, antes de llamarlas OOD. Congelar después el split para confirmación independiente; no promover este repair adaptativo a confirmación.
+- **Estado:** PROPUESTA; evidencia sintética de error categorial reparado.
+
+### AB-M016 — Semántica de coeficientes y normalización en identidades de varianza
+- **Observación:** en la primera ejecución del C26/C27 se usó E[(Re(cz))²]=|z|²/2, válido para una fase uniforme si |c|=1, pero los coeficientes c tenían partes real/imaginaria independientes N(0,1). En este caso E[(Re(cz))²]=|z|², sin 1/2. Se repararon ambas expresiones y se ejecutó de nuevo toda la batería; el expediente GitHub contiene **sólo los cálculos finales reparados** y documenta la errata.
+- **Mejora:** para cada fórmula calculada identificar distribución exacta, parámetros de varianza y normalización, efectuar mini test de Monte Carlo numérico y revisar casos límite antes de publicación. Separar correcciones de escala de cambios de signo/orden.
+- **Estado:** PROPUESTA, defecto confirmado y reparado.
+
+### AB-M017 — Premisas algebraicas anteriores a la simulación
+- **Observación:** el análisis C22 utilizó desigualdad triangular: si las componentes de proporciones estables son todas hiperuniformes en el límite, su unión lo es también. Ello impugna la premisa histórica «unir especies hiperuniformes destruye HU total» sin hipótesis adicionales. C23 sí reveló que las fases cruzadas reducen la **potencia finita** de la unión.
+- **Mejora:** before numerical branching, traducir afirmaciones de imposibilidad/necesidad a igualdad o desigualdad formal simple y comprobar si la premisa está matemáticamente permitida. Diferenciar propiedad asintótica (HU) de optimización de proxy a N finito.
+- **Estado:** PROPUESTA; demostración algebraica estándar, no descubrimiento nuevo.
+
+### AB-B008 — Controles competitivos pueden cerrar líneas y revelar intercambios
+- **Observación favorable:** un baseline rank-1 lattice por tipo integró prácticamente sin error 40 modos Fourier bajos, negando novedad de cuadratura MHU. En k=(-25,1,0), la misma retícula presentó un pico resonante de potencia ≈1.0; CVT proporcionó mejor acceso de cinco clases y Sobol superó MHU para integral no periódica de x. Estos controles exponen clases de funciones y riesgos diferentes.
+- **Qué conservar:** pares de métricas potencialmente antagónicas, prior art fuerte y pruebas de resonancia adversarial bajo etiqueta EXPLORATORIA.
+- **Límite:** no se ejecutó Wei 2010 ni se igualaron costes de construir cada diseño. **Estado:** PROPUESTA para conservar.
+
+### AB-B009 — No ocultar hallazgos contrarios ni reparaciones
+- **Observación favorable:** resultados finales (C06, C11, C22) contienen cambio de interpretación; C26–C27 fueron recalculados tras descubrir defecto de factor. No son treinta replicaciones independientes; se conservan 4 geometrías originales.
+- **Límite:** el informe reconoce branching sólo parcialmente adaptativo; se requiere evaluación externa del protocolo si pretendemos demostrar calidad metodológica superior.
+- **Estado:** PROPUESTA para conservar.
