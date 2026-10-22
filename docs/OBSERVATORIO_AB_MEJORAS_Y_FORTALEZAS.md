@@ -180,3 +180,23 @@
 - **Observación favorable:** resultados finales (C06, C11, C22) contienen cambio de interpretación; C26–C27 fueron recalculados tras descubrir defecto de factor. No son treinta replicaciones independientes; se conservan 4 geometrías originales.
 - **Límite:** el informe reconoce branching sólo parcialmente adaptativo; se requiere evaluación externa del protocolo si pretendemos demostrar calidad metodológica superior.
 - **Estado:** PROPUESTA para conservar.
+
+
+---
+## AB08 cross-phase — anexo de 22 de octubre de 2026
+**Procedencia:** GalexY3/proyecto-LARP, `docs/AB08_CROSSPHASE_20261022/LEDGER_AB08.md`, `data/AB08_CROSSPHASE_20261022/AB08_ALL_CYCLES.json` (8 ciclos nuevos, 4 geometrías originales; toda evidencia exploratoria). No modifica AB 3.2.1 ni priors A automáticamente.
+
+### AB-M018 — Controlar alineación entre tarea y función objetivo de arquitectura
+- **Observación:** la reducción de error de Ridge con MHU en señales Fourier de baja frecuencia compartidas es una consecuencia favorable del objetivo de supresión espectral de MHU. Aunque se usa un readout entrenado y un target DC variable, no es una validación externa del mecanismo neuronal: la retícula clásica casi anula esos mismos modos y LOCAL supera MHU fuera de banda.
+- **Propuesta:** añadir `TASK_ALIGNMENT_GATE`: separar tareas matemáticamente homólogas a la pérdida de construcción, tareas independientes que no comparten el mismo generador y datos externos. Una mejora medida en la primera clase jamás pasa automáticamente a 2/3; registrar la conexión algebraica antes de experimentar.
+- **Falsador/coste:** una tarea alineada puede ser un caso de uso legítimo; no descartar beneficios concretos solo por anticipables, pero distinguir utilidad de originalidad. Estado PROPUESTA.
+
+### AB-M019 — Contabilidad de la adaptación por ciclo, no solo orden de JSON
+- **Observación:** en AB08, C01–C07 se implementaron en una misma fuente con pruebas previstas, se ejecutaron secuencialmente, y C08 se añadió tras analizar resultados. Las decisiones tienen IDs, pero no hubo commit y nuevo diseño causal independiente después de cada ciclo. Debe llamarse `ramificación parcialmente adaptativa` y evitar sugerir ocho rediseños completos.
+- **Propuesta:** por ciclo registrar `designed_before_result`, `measured_at`, `question_chosen_after_result`, `source_sha` y una diff a la rama siguiente. Esta propuesta concreta prolonga AB-M014. Estado PROPUESTA.
+
+### AB-B010 — Ablación que mantiene fija la estructura interna de cada componente
+- **Observación:** desplazamientos rígidos independientes conservan exactamente cada espectro S_a(k), modificando los términos cruzados; la varianza de una señal compartida se escribe rho·P_union+(1-rho)·P_diagonal. El diseño permite separar correlaciones entre poblaciones de su regularidad individual y conecta propiedad matemática con error de lectura.
+- **Límite:** resultado conocido de Fourier/covarianza, datos sintéticos, cuatro geometrías, ningún Transformer o Wei original. Estado PROPUESTA para conservar.
+
+**Seguimiento:** Los próximos ciclos deben comparar una tarea no Fourier, fuentes nuevas y baselines auténticos. Si se usa solamente la misma batería, registrar `NO_NUEVA_EVIDENCIA` y no consumir más ciclos como estudios sustantivos.
