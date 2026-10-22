@@ -288,3 +288,14 @@ Fuente verificable: `GalexY3/proyecto-LARP` / `docs/AB06_REALDATA_20261022/LEDGE
 - **Falsador:** demostrar que los readouts son equivalentes para el problema particular (teórica o empíricamente) o que el contraste heterogéneo representa explícitamente la decisión práctica que se investiga. Estado: **PROPUESTA, eficacia NO_VALIDADA**.
 
 **Observación de gobernanza:** Los 30 eventos VALUE30 ejecutaron una rejilla diseñada ex ante cuyos estados FOCUS/PIVOT se etiquetaron de forma reactiva a la ejecución previa; no fueron 30 rediseños independientes. No cambiar esa clasificación por tratarse de una secuencia registrada en un `ledger`. La evaluación C30 en una imagen nueva consumió su carácter de test reservado; auditorías posteriores son post hoc.
+
+
+---
+
+## Adenda metodológica LARP EVIDENCE_GATE — 22-10-2026
+
+### AB-M031 — Paridad de estimador y conjunto efectivo de candidatos
+
+**Procedencia:** `GalexY3/proyecto-LARP`, rama `research/evidence-gate-20261022`, `research/EVIDENCE_GATE_20261022/NOTA_AB_METHOD.md`. Los métodos COSI y POWER_DIAG ofrecen distinto ranking con media fija y con Ridge sobre cuatro escenas físicas monocromas (canales derivados, no estaciones independientes). El selector llamado GP tenía un número efectivo de candidatos inferior al parámetro nominal por emplear `Sobol.random_base2(7)`. Una reparación ex post amplió a 576 ubicaciones por rol, pero no constituye confirmación nueva ni benchmarking contra el estado del arte.
+
+**Propuesta:** declarar estimando y predictor conjuntamente antes de seleccionar posiciones; contar candidatos únicos efectivamente evaluados por tipo; equiparar cantidad de datos, readout y presupuesto; etiquetar ampliaciones después de abrir test como `REPAIR_POST_HOC` y no como nueva confirmación. **Falsador/coste:** si el estimando solo exige cuadratura fija, no se precisa entrenamiento de predictors complejos; el checklist puede ser redundante con AB-M021/M024/M030. **Estado:** PROPUESTA, sin cambio normativo AB 3.2.1, eficacia metodológica no validada.
