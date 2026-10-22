@@ -243,3 +243,18 @@ Fuente verificable: `GalexY3/proyecto-LARP` / `docs/AB06_REALDATA_20261022/LEDGE
 - **Observación:** ejecutar con un entorno del PC y dependencias auxiliares locales no equivale a reproducir desde un clon limpio. La documentación de la campaña explicita esas dependencias; no se afirma aquí haber probado un fallo de clonación.
 - **Adopción:** instrucciones y dependencias transferibles; declarar `CLEAN_CLONE_NOT_VERIFIED` cuando corresponda. **Estado: ADOPTADA_NORMATIVAMENTE en O2; eficacia metodológica NO_VALIDADA.**
 - **Coste/falsador de utilidad:** no reconstruir entornos en cada ensayo si no cambian; comprobar lo necesario antes de declarar reproducibilidad, sin nueva infraestructura ornamental.
+
+
+---
+
+# Nota al observatorio AB — AB-M027/AB-M028 (22-10-2026)
+
+**Fuente:** campaña sintética LARP BR30-A, `GalexY3/proyecto-LARP` (rama de investigación), `DICTAMEN.md`, `run_ab30.py`, `ledger.jsonl`, `repair_optim.json`. Estas observaciones **no modifican el núcleo AB 3.2.1 ni O1/O2** ni prueban superioridad metodológica.
+
+### AB-M027 — GATE de comparador informacional y optimizador estable
+**Problema confirmado dentro del código experimental:** en C27, el optimizador «oráculo» que conocía la covarianza verdadera obtuvo RMSE fuente peor que MHU por comportamiento de pasos y repulsión intercalada. Una reparación post hoc con descenso monótono recuperó el orden esperado en C27. **Propuesta:** antes de atribuir mejora a geometría, exigir control de descenso, sensibilidad al optimizador y comparador igualmente informado si el modelo candidato usa pilotos auxiliares. Preservar el resultado inicial y el repair sin renumerar sus ciclos. Falsador: problemas genuinamente no convexos donde oráculo local no domina sin multi-start; no exigir garantía universal de óptimo global. **Estado:** PROPUESTA — eficacia AB no validada.
+
+### AB-M028 — BRANCHING adaptativo acotado, no exploración irrestricta
+**Observación:** el scheduler eligió familias según regret y cobertura de seis alternativas predefinidas; 30 filas con parent, freeze hash y estado previo sí existen, pero las 30 pruebas reutilizan el mismo DGP sintético. **Propuesta:** además de contar ciclos, registrar espacio de decisiones disponible, contrafactuales no seleccionados, eventos de REPAIR fuera del cupo, y criterio explícito de detener la familia cuando falte evidencia nueva. Un scheduler adaptativo no crea nuevas fuentes empíricas por el mero orden secuencial. **Estado:** PROPUESTA — no implica AB 3.3 ni actualiza A01–A21.
+
+**Evidencia congelada:** [dictamen y reparación LARP BR30-A](https://github.com/GalexY3/proyecto-LARP/blob/b8c9c1ac1bffec9b3a63e7b0e1164ff9c8735286/research/AB30_ADAPTIVE_20261022/DICTAMEN.md). `b8c9c1ac1bffec9b3a63e7b0e1164ff9c8735286`. El commit documenta, no confirma validez del resultado.
