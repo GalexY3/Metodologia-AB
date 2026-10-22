@@ -6,8 +6,9 @@ Repositorio privado de la metodología de investigación abductivo-bayesiana **A
 
 1. [AB 3.2.1 — protocolo central](docs/METODO_AB_3_2_1.md), revisión provisional del **19 de octubre de 2026**. Describe R1–R5, el ciclo A–J, roles, registro mínimo y límites de las conclusiones. Texto recuperado de Drive el 22 de octubre; [procedencia y SHA-256](docs/METODO_AB_3_2_1.provenance.json).
 2. [AB 3.2.1-O1 — gobernanza GitHub + Drive](docs/AB_3_2_1_O1_GOBERNANZA_GITHUB_DRIVE.md), anexo operativo del 21 de octubre. No sustituye el núcleo ni constituye una versión 3.3.
-3. [Protocolo de registro](docs/PROTOCOLO_REGISTRO.md) y [priors metodológicos A01–A21](priors/AB_A01_A21_RESUMEN_PUBLICABLE.md). Los priors no son probabilidades numéricas ni una validación general de AB.
-4. [Observatorio de mejoras, fricciones y prácticas útiles](docs/OBSERVATORIO_AB_MEJORAS_Y_FORTALEZAS.md). Sus entradas AB-M/AB-B conservan estados y procedencia: una propuesta no modifica automáticamente las normas ni se eleva por sí sola a prior metodológico.
+3. [AB 3.2.1-O2 — intervenciones y ejecución reproducible](docs/AB_3_2_1_O2_OPERACIONES_REPRODUCIBLES.md), ampliación operativa prospectiva adoptada el 22 de octubre: preprocesado, control competente, freeze–run y portabilidad. Adopción normativa no implica eficacia empírica validada ni AB 3.3.
+4. [Protocolo de registro](docs/PROTOCOLO_REGISTRO.md) y [priors metodológicos A01–A21](priors/AB_A01_A21_RESUMEN_PUBLICABLE.md). Los priors no son probabilidades numéricas ni una validación general de AB.
+5. [Observatorio de mejoras, fricciones y prácticas útiles](docs/OBSERVATORIO_AB_MEJORAS_Y_FORTALEZAS.md). Sus entradas AB-M/AB-B conservan estados y procedencia: una propuesta no modifica automáticamente las normas ni se eleva por sí sola a prior metodológico. Las adopciones operativas explícitas, como O2, identifican su decisión y límites.
 
 ## Ciclos y branching
 

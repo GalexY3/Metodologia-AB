@@ -217,3 +217,29 @@ Fuente verificable: `GalexY3/proyecto-LARP` / `docs/AB06_REALDATA_20261022/LEDGE
 **AB-B011 — Conservar negativos de roles especialistas sin forzar complementariedad.** La hipótesis intuitiva de roles tipados tuvo una refutación clara en datos externos a Fourier: las cinco transformaciones fueron peores que cinco lecturas de intensidad en la mayoría de semillas. Beneficio metodológico de ablación controlada de semántica y geometría por separado. Límite: no invalida roles en todos los dominios. Estado: práctica prometedora.
 
 **AB-M022 — Auditoría de comparador fuente ≠ ejecutable.** Localizar repo original no es ejecutar ni validar a igual coste. Registrar `SOURCE_LOCATED`, `BUILD_SUCCESS`, `SMOKE_PASS`, `DATA_COMPARABLE`, `RUNTIME_BUDGET_MATCHED` como gates separados. C01 fuente Wei 2010 localizada pero no compilación validada. Estado: propuesta.
+
+---
+
+## Adopción operativa O2 — 22 de octubre de 2026
+
+**Fuente:** LARP AB30 Codex, resultados exploratorios C01–C05 en [commit 78269a45bfbc3b8e70428813122b9f648743e9e5](https://github.com/GalexY3/proyecto-LARP/commit/78269a45bfbc3b8e70428813122b9f648743e9e5). **Decisión humana:** autorización del investigador del 22 de octubre para actualizar AB cuando se detecten deficiencias y mejorar su funcionamiento. Se adopta [O2](AB_3_2_1_O2_OPERACIONES_REPRODUCIBLES.md) como ampliación operativa prospectiva. No cambia el núcleo, O1 o A01–A21; no prueba eficacia comparada de AB.
+
+### AB-M023 — Descomponer reparaciones de preprocesado
+- **Observación:** C01 no respaldó que la guarda de varianzas nulas explicara por sí sola la fragilidad: bajo ruido, `legacy` 38,89%, `guard` 35,78% y `fixed` 86,44%. En C03, comparar `fixed` con `global` (92,44%) también cambia el centrado.
+- **Adopción:** declarar la intervención completa y aislar componentes antes de atribuir un mecanismo. **Estado: ADOPTADA_NORMATIVAMENTE en O2; eficacia metodológica NO_VALIDADA.**
+- **Coste/falsador de utilidad:** un factorial puede ser innecesario si solo importa la pipeline completa; no imponerlo para una atribución que no se reivindica.
+
+### AB-M024 — Control competente y transformación sensorial
+- **Observación:** en C04, píxeles con normalización global alcanzaron 92,67% bajo ruido frente a 90,81% MHU. C05 encontró rango 64 en 17/20 operadores lineales; más features no implican más información. Son resultados condicionados y exploratorios.
+- **Adopción:** comparar pipelines convencionales y distinguir información, filtrado, condicionamiento y arquitectura. **Estado: ADOPTADA_NORMATIVAMENTE en O2; eficacia metodológica NO_VALIDADA.**
+- **Coste/falsador de utilidad:** integrar un comparador puede ser caro; exigir un rival pertinente al estimando, sin afirmar paridad informativa por coincidencia de parámetros.
+
+### AB-M025 — Recibo vinculado a fuente, inputs y presupuesto
+- **Observación:** la campaña vincula cada resultado con commit de freeze y hashes de protocolo/fuente/instrumento común; esa correspondencia debe extenderse a los inputs efectivos y conservar fallos y reparaciones. Un recibo completo no prueba la corrección científica.
+- **Adopción:** verificar freeze–run y registrar estados de terminación, recursos y holdout sin transformar fallos en evidencia sustantiva. **Estado: ADOPTADA_NORMATIVAMENTE en O2; eficacia metodológica NO_VALIDADA.**
+- **Coste/falsador de utilidad:** hashes o registros redundantes pueden añadir trabajo sin detectar errores; reutilizar el recibo existente y evitar nuevos formularios innecesarios.
+
+### AB-M026 — Portabilidad declarada, no inferida del éxito local
+- **Observación:** ejecutar con un entorno del PC y dependencias auxiliares locales no equivale a reproducir desde un clon limpio. La documentación de la campaña explicita esas dependencias; no se afirma aquí haber probado un fallo de clonación.
+- **Adopción:** instrucciones y dependencias transferibles; declarar `CLEAN_CLONE_NOT_VERIFIED` cuando corresponda. **Estado: ADOPTADA_NORMATIVAMENTE en O2; eficacia metodológica NO_VALIDADA.**
+- **Coste/falsador de utilidad:** no reconstruir entornos en cada ensayo si no cambian; comprobar lo necesario antes de declarar reproducibilidad, sin nueva infraestructura ornamental.
