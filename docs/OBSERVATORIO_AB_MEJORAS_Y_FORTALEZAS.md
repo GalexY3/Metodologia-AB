@@ -271,3 +271,20 @@ Fuente verificable: `GalexY3/proyecto-LARP` / `docs/AB06_REALDATA_20261022/LEDGE
 **Propuesta metodológica:** cuando se ajusten cuotas, arquitectura o hiperparámetros tras consultar un conjunto externo, registrar `design_data_seen`, `selection_data_seen`, `metric_reused_as_holdout`, `number_of_external_environments` y `unit_of_replication`. Si ya se conoce un resultado externo, congelar el diseño y evaluar sobre una fuente verdaderamente nueva para reivindicar confirmación. Separar el efecto de cambiar cuotas del efecto de cambiar posiciones o estimador.
 
 **Evidencia favorable:** estudio LARP, comparaciones por cuotas y escasez de piloto, scripts/repeticiones archivados. **Límites y contradicción:** R3 y O2 ya contienen principios equivalentes; esta entrada podría ser solo una ejemplificación sin valor normativo incremental. **Falsador de utilidad:** evaluar si los metadatos adicionales permiten evitar errores que un registro AB 3.2.1 convencional no detectaría. **Decisión:** conservar caso ilustrativo; no cambiar AB 3.2.1, O1/O2 ni los priors A01–A21.
+
+
+---
+
+## Anexo VALUE30 — 22 de octubre de 2026 · LARP
+
+**Procedencia:** `GalexY3/proyecto-LARP`, commit [fbe8995ae4d51c8ef29e7fd4073b6797b85ed38b](https://github.com/GalexY3/proyecto-LARP/commit/fbe8995ae4d51c8ef29e7fd4073b6797b85ed38b), `research/VALUE30_20261022/DICTAMEN_AB30_VALUE.md`; `ledger.jsonl` C01–C30 y auditoría `audit.json`. Resultado **exploratorio** en imágenes reales con un solo entorno nuevo de prueba; sin validación de superioridad metodológica AB. No modifica automáticamente AB 3.2.1, O1, O2 ni priors A01–A21.
+
+### AB-M030 — Alineación entre el objetivo del selector y el estimador usado para compararlo
+
+- **Problema observado:** el selector inicialmente llamado GP elegía ubicaciones para reducir la incertidumbre condicional del objetivo cuando se utiliza un estimador aprendido, mientras el ranking de C01–C30 se calculaba con la media de las lecturas y pesos fijos por canal. Además, el primer GP veía un conjunto de 72 candidatos/canal frente a hasta 576 de otros procedimientos. **El GP original no estaba siendo evaluado en igualdad de objetivo/espacio de elección.** Un ranking desfavorable no equivale a una falsación de la familia de métodos de procesos gaussianos.
+- **Reparación documentada:** se conservaron las cifras originales y se añadieron readouts Ridge pareados y una selección por covarianza sobre todas las posiciones candidatas, con predicción lineal posterior. Esas reparaciones se ejecutaron después de abrir la única imagen reservada y se etiquetan **POST_HOC**; no constituyen 31 ciclos ni confirmación renovada.
+- **Propuesta operacional:** `READOUT_OBJECTIVE_ALIGNMENT_GATE`. Declarar función de selección, estimador de inferencia y estimando, y verificar su correspondencia. Si las tareas no coinciden, presentar la comparación como contraste entre **pipelines heterogéneas**, no efecto puro de geometría. Comparar opcionalmente con readout común para aislar posiciones, y con el readout propio competente para valorar utilidad end-to-end. Documentar costes y acceso a posiciones/datos.
+- **Evidencia adversa/relación con normas:** R2, AB-M021, AB-M024 y O2 ya exigen comparadores competentes y paridad informativa. Se trata de un caso operativo concreto de esa norma, **no una mejora metodológica original probada**. Añadir instrumentación solo cuando cambie realmente la inferencia.
+- **Falsador:** demostrar que los readouts son equivalentes para el problema particular (teórica o empíricamente) o que el contraste heterogéneo representa explícitamente la decisión práctica que se investiga. Estado: **PROPUESTA, eficacia NO_VALIDADA**.
+
+**Observación de gobernanza:** Los 30 eventos VALUE30 ejecutaron una rejilla diseñada ex ante cuyos estados FOCUS/PIVOT se etiquetaron de forma reactiva a la ejecución previa; no fueron 30 rediseños independientes. No cambiar esa clasificación por tratarse de una secuencia registrada en un `ledger`. La evaluación C30 en una imagen nueva consumió su carácter de test reservado; auditorías posteriores son post hoc.
