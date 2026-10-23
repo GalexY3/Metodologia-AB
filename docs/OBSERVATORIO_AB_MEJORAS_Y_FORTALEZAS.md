@@ -243,3 +243,59 @@ Fuente verificable: `GalexY3/proyecto-LARP` / `docs/AB06_REALDATA_20261022/LEDGE
 - **Observación:** ejecutar con un entorno del PC y dependencias auxiliares locales no equivale a reproducir desde un clon limpio. La documentación de la campaña explicita esas dependencias; no se afirma aquí haber probado un fallo de clonación.
 - **Adopción:** instrucciones y dependencias transferibles; declarar `CLEAN_CLONE_NOT_VERIFIED` cuando corresponda. **Estado: ADOPTADA_NORMATIVAMENTE en O2; eficacia metodológica NO_VALIDADA.**
 - **Coste/falsador de utilidad:** no reconstruir entornos en cada ensayo si no cambian; comprobar lo necesario antes de declarar reproducibilidad, sin nueva infraestructura ornamental.
+
+
+---
+
+# Nota al observatorio AB — AB-M027/AB-M028 (22-10-2026)
+
+**Fuente:** campaña sintética LARP BR30-A, `GalexY3/proyecto-LARP` (rama de investigación), `DICTAMEN.md`, `run_ab30.py`, `ledger.jsonl`, `repair_optim.json`. Estas observaciones **no modifican el núcleo AB 3.2.1 ni O1/O2** ni prueban superioridad metodológica.
+
+### AB-M027 — GATE de comparador informacional y optimizador estable
+**Problema confirmado dentro del código experimental:** en C27, el optimizador «oráculo» que conocía la covarianza verdadera obtuvo RMSE fuente peor que MHU por comportamiento de pasos y repulsión intercalada. Una reparación post hoc con descenso monótono recuperó el orden esperado en C27. **Propuesta:** antes de atribuir mejora a geometría, exigir control de descenso, sensibilidad al optimizador y comparador igualmente informado si el modelo candidato usa pilotos auxiliares. Preservar el resultado inicial y el repair sin renumerar sus ciclos. Falsador: problemas genuinamente no convexos donde oráculo local no domina sin multi-start; no exigir garantía universal de óptimo global. **Estado:** PROPUESTA — eficacia AB no validada.
+
+### AB-M028 — BRANCHING adaptativo acotado, no exploración irrestricta
+**Observación:** el scheduler eligió familias según regret y cobertura de seis alternativas predefinidas; 30 filas con parent, freeze hash y estado previo sí existen, pero las 30 pruebas reutilizan el mismo DGP sintético. **Propuesta:** además de contar ciclos, registrar espacio de decisiones disponible, contrafactuales no seleccionados, eventos de REPAIR fuera del cupo, y criterio explícito de detener la familia cuando falte evidencia nueva. Un scheduler adaptativo no crea nuevas fuentes empíricas por el mero orden secuencial. **Estado:** PROPUESTA — no implica AB 3.3 ni actualiza A01–A21.
+
+**Evidencia congelada:** [dictamen y reparación LARP BR30-A](https://github.com/GalexY3/proyecto-LARP/blob/b8c9c1ac1bffec9b3a63e7b0e1164ff9c8735286/research/AB30_ADAPTIVE_20261022/DICTAMEN.md). `b8c9c1ac1bffec9b3a63e7b0e1164ff9c8735286`. El commit documenta, no confirma validez del resultado.
+
+
+---
+
+## AB-M029 — Selección de diseños de sensores y contaminación del test por decisiones humanas (22-10-2026)
+
+**Procedencia:** [LARP VALUE_REAL_20261022](https://github.com/GalexY3/proyecto-LARP/tree/research/ab4-cosi-branch30-20261022/research/VALUE_REAL_20261022), estudio exploratorio sobre imágenes RGB reales 2D, cuatro escenas de diseño y dos escenas externas; no datos 3D ni arquitectura neuronal entrenada. **Estado: PROPUESTA; no adoptada normativamente.**
+
+**Observación:** cada disposición de sensores fue optimizada sin utilizar las escenas externas, pero el investigador inspeccionó resultados de esas escenas antes de seleccionar las cuotas de canales [6,16,2]. Esa selección adaptativa implica que las mismas escenas ya no pueden presentarse como confirmación independiente de la cuota seleccionada. Ochocientos parches solapados de una imagen tampoco representan 800 unidades de replicación independientes. Un selector empírico que optimiza directamente el error de entrenamiento alcanza gran ajuste con 12 parches pero generaliza peor; con 1.800 parches supera a COSI en la media de dos escenas. Estas observaciones son específicas del ensayo, no ley general.
+
+**Propuesta metodológica:** cuando se ajusten cuotas, arquitectura o hiperparámetros tras consultar un conjunto externo, registrar `design_data_seen`, `selection_data_seen`, `metric_reused_as_holdout`, `number_of_external_environments` y `unit_of_replication`. Si ya se conoce un resultado externo, congelar el diseño y evaluar sobre una fuente verdaderamente nueva para reivindicar confirmación. Separar el efecto de cambiar cuotas del efecto de cambiar posiciones o estimador.
+
+**Evidencia favorable:** estudio LARP, comparaciones por cuotas y escasez de piloto, scripts/repeticiones archivados. **Límites y contradicción:** R3 y O2 ya contienen principios equivalentes; esta entrada podría ser solo una ejemplificación sin valor normativo incremental. **Falsador de utilidad:** evaluar si los metadatos adicionales permiten evitar errores que un registro AB 3.2.1 convencional no detectaría. **Decisión:** conservar caso ilustrativo; no cambiar AB 3.2.1, O1/O2 ni los priors A01–A21.
+
+
+---
+
+## Anexo VALUE30 — 22 de octubre de 2026 · LARP
+
+**Procedencia:** `GalexY3/proyecto-LARP`, commit [fbe8995ae4d51c8ef29e7fd4073b6797b85ed38b](https://github.com/GalexY3/proyecto-LARP/commit/fbe8995ae4d51c8ef29e7fd4073b6797b85ed38b), `research/VALUE30_20261022/DICTAMEN_AB30_VALUE.md`; `ledger.jsonl` C01–C30 y auditoría `audit.json`. Resultado **exploratorio** en imágenes reales con un solo entorno nuevo de prueba; sin validación de superioridad metodológica AB. No modifica automáticamente AB 3.2.1, O1, O2 ni priors A01–A21.
+
+### AB-M030 — Alineación entre el objetivo del selector y el estimador usado para compararlo
+
+- **Problema observado:** el selector inicialmente llamado GP elegía ubicaciones para reducir la incertidumbre condicional del objetivo cuando se utiliza un estimador aprendido, mientras el ranking de C01–C30 se calculaba con la media de las lecturas y pesos fijos por canal. Además, el primer GP veía un conjunto de 72 candidatos/canal frente a hasta 576 de otros procedimientos. **El GP original no estaba siendo evaluado en igualdad de objetivo/espacio de elección.** Un ranking desfavorable no equivale a una falsación de la familia de métodos de procesos gaussianos.
+- **Reparación documentada:** se conservaron las cifras originales y se añadieron readouts Ridge pareados y una selección por covarianza sobre todas las posiciones candidatas, con predicción lineal posterior. Esas reparaciones se ejecutaron después de abrir la única imagen reservada y se etiquetan **POST_HOC**; no constituyen 31 ciclos ni confirmación renovada.
+- **Propuesta operacional:** `READOUT_OBJECTIVE_ALIGNMENT_GATE`. Declarar función de selección, estimador de inferencia y estimando, y verificar su correspondencia. Si las tareas no coinciden, presentar la comparación como contraste entre **pipelines heterogéneas**, no efecto puro de geometría. Comparar opcionalmente con readout común para aislar posiciones, y con el readout propio competente para valorar utilidad end-to-end. Documentar costes y acceso a posiciones/datos.
+- **Evidencia adversa/relación con normas:** R2, AB-M021, AB-M024 y O2 ya exigen comparadores competentes y paridad informativa. Se trata de un caso operativo concreto de esa norma, **no una mejora metodológica original probada**. Añadir instrumentación solo cuando cambie realmente la inferencia.
+- **Falsador:** demostrar que los readouts son equivalentes para el problema particular (teórica o empíricamente) o que el contraste heterogéneo representa explícitamente la decisión práctica que se investiga. Estado: **PROPUESTA, eficacia NO_VALIDADA**.
+
+**Observación de gobernanza:** Los 30 eventos VALUE30 ejecutaron una rejilla diseñada ex ante cuyos estados FOCUS/PIVOT se etiquetaron de forma reactiva a la ejecución previa; no fueron 30 rediseños independientes. No cambiar esa clasificación por tratarse de una secuencia registrada en un `ledger`. La evaluación C30 en una imagen nueva consumió su carácter de test reservado; auditorías posteriores son post hoc.
+
+
+---
+
+## Adenda metodológica LARP EVIDENCE_GATE — 22-10-2026
+
+### AB-M031 — Paridad de estimador y conjunto efectivo de candidatos
+
+**Procedencia:** `GalexY3/proyecto-LARP`, rama `research/evidence-gate-20261022`, `research/EVIDENCE_GATE_20261022/NOTA_AB_METHOD.md`. Los métodos COSI y POWER_DIAG ofrecen distinto ranking con media fija y con Ridge sobre cuatro escenas físicas monocromas (canales derivados, no estaciones independientes). El selector llamado GP tenía un número efectivo de candidatos inferior al parámetro nominal por emplear `Sobol.random_base2(7)`. Una reparación ex post amplió a 576 ubicaciones por rol, pero no constituye confirmación nueva ni benchmarking contra el estado del arte.
+
+**Propuesta:** declarar estimando y predictor conjuntamente antes de seleccionar posiciones; contar candidatos únicos efectivamente evaluados por tipo; equiparar cantidad de datos, readout y presupuesto; etiquetar ampliaciones después de abrir test como `REPAIR_POST_HOC` y no como nueva confirmación. **Falsador/coste:** si el estimando solo exige cuadratura fija, no se precisa entrenamiento de predictors complejos; el checklist puede ser redundante con AB-M021/M024/M030. **Estado:** PROPUESTA, sin cambio normativo AB 3.2.1, eficacia metodológica no validada.
