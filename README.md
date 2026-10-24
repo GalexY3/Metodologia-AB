@@ -13,6 +13,10 @@ Repositorio privado de la metodología de investigación abductivo-bayesiana **A
 7. [Protocolo de registro](docs/PROTOCOLO_REGISTRO.md) y [priors metodológicos A01–A21](priors/AB_A01_A21_RESUMEN_PUBLICABLE.md). Los priors no son probabilidades numéricas ni una validación general de AB.
 8. [Observatorio de mejoras, fricciones y prácticas útiles](docs/OBSERVATORIO_AB_MEJORAS_Y_FORTALEZAS.md). Sus entradas AB-M/AB-B conservan estados y procedencia: una propuesta no modifica automáticamente las normas ni se eleva por sí sola a prior metodológico. Las adopciones operativas explícitas, como O2, identifican su decisión y límites.
 
+## Propuesta reciente no normativa
+
+[AB-M036 — Presupuesto de etiquetas piloto y reutilización](docs/AB_M036_PILOTOS_Y_COSTE_REAL.md), extraída de la campaña LARP AB30 Composition. Es una propuesta de instrumentación para aplicar R2/O2; no constituye una mejora de eficacia demostrada ni modifica AB 3.2.1/O4 automáticamente.
+
 ## Ciclos y branching
 
 El protocolo A–J declara la pregunta y el estimando, rivales abiertos, prueba discriminante, instrumentación, ejecución, auditoría adversarial, confirmación cuando exista, doble actualización, dictamen y decisión. La exploración no se convierte en confirmación por usar semillas nuevas del mismo generador.
