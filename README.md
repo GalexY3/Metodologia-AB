@@ -17,6 +17,8 @@ Repositorio privado de la metodología de investigación abductivo-bayesiana **A
 
 [AB-M036 — Presupuesto de etiquetas piloto y reutilización](docs/AB_M036_PILOTOS_Y_COSTE_REAL.md) y [AB-M037 — Blindaje de y oculto y temporalidad de etiquetas](docs/AB_M037_NO_LEAKAGE_AND_LABEL_AGE.md), extraída de la campaña LARP AB30 Composition. Es una propuesta de instrumentación para aplicar R2/O2; no constituye una mejora de eficacia demostrada ni modifica AB 3.2.1/O4 automáticamente.
 
+**Nueva escala de DRIFT:** [AB 3.2.1-O5 — distancia D0–D5](docs/AB_3_2_1_O5_DISTANCIA_DRIFT.md) (adoptada 24-10-2026). Conservar CT2 por rama y registrar las diez exploraciones especiales como planificación, no experimentos.
+
 ## Ciclos y branching
 
 El protocolo A–J declara la pregunta y el estimando, rivales abiertos, prueba discriminante, instrumentación, ejecución, auditoría adversarial, confirmación cuando exista, doble actualización, dictamen y decisión. La exploración no se convierte en confirmación por usar semillas nuevas del mismo generador.
