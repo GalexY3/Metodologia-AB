@@ -15,7 +15,7 @@ Repositorio privado de la metodología de investigación abductivo-bayesiana **A
 
 ## Propuesta reciente no normativa
 
-[AB-M036 — Presupuesto de etiquetas piloto y reutilización](docs/AB_M036_PILOTOS_Y_COSTE_REAL.md), extraída de la campaña LARP AB30 Composition. Es una propuesta de instrumentación para aplicar R2/O2; no constituye una mejora de eficacia demostrada ni modifica AB 3.2.1/O4 automáticamente.
+[AB-M036 — Presupuesto de etiquetas piloto y reutilización](docs/AB_M036_PILOTOS_Y_COSTE_REAL.md) y [AB-M037 — Blindaje de y oculto y temporalidad de etiquetas](docs/AB_M037_NO_LEAKAGE_AND_LABEL_AGE.md), extraída de la campaña LARP AB30 Composition. Es una propuesta de instrumentación para aplicar R2/O2; no constituye una mejora de eficacia demostrada ni modifica AB 3.2.1/O4 automáticamente.
 
 ## Ciclos y branching
 
