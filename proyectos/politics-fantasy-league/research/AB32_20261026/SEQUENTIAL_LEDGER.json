@@ -1,6 +1,6 @@
 {
   "campaign": "PF-AB32",
-  "cycles_closed": 9,
+  "cycles_closed": 10,
   "cycles": [
     {
       "id": "C01",
@@ -328,18 +328,49 @@
       ],
       "decision": "C10 register only provenance-hashed aggregate events with true vote date, never backfill first-public timestamp.",
       "status": "CLOSED_BOUNDED"
+    },
+    {
+      "id": "C10",
+      "hypotheses": {
+        "H1": "two official raw vote files replay entirely against bounded aggregate manifest",
+        "H0": "source bytes or counts drift"
+      },
+      "observed": "2026-10-26T14:59:27Z",
+      "instrument": "verify_congress_vote_aggregates.py and pytest against both original GitHub Actions raw sources 40344682502",
+      "result": {
+        "votes_verified": 2,
+        "unique_individual_rows_per_vote": 350,
+        "sha256_comparison": "MATCH_BOTH",
+        "dates": "2026-07-23",
+        "native_pytest_pass": 108,
+        "first_public_at": null,
+        "scoring_allowed": false
+      },
+      "adversarial": "Aggregate totals do not establish individual influence/score, and event date does not prove publicly available time; no person rows versioned.",
+      "priors_update": [
+        {
+          "id": "PF-32-10",
+          "proposition": "2 independently downloaded official roll-call originals support lossless aggregate source-manifest replay",
+          "state": "verified at two pinned SHAs (conditional on institutional HTTPS)",
+          "evidence": "40344682502 C10_ORIGINAL_REPLAY and Python native suite",
+          "counterevidence": "unknown rights and first_public, same sitting means dependence",
+          "falsifier": "source SHA or tally differs on rerun"
+        }
+      ],
+      "decision": "C11 expose only verified aggregate through local read-only API and test fail-closed behavior.",
+      "status": "CLOSED_BOUNDED"
     }
   ],
   "next_cycle_prereg": {
-    "id": "C10",
-    "chosen_after": "C09 verified both dates but first_public_at still unknown",
-    "question": "Can we version a minimal authentic aggregate event manifest that is independently replayable against both original source JSONs without publishing person rows or scoring them?",
+    "id": "C11",
+    "chosen_after": "C10 original replay SUCCESS",
+    "question": "Can the product expose two historical authentic vote totals read-only without leaking individual rows or treating first_public_at as event date?",
     "hypotheses": {
-      "H1": "two pinned sources and 2×350 ballot tallies exactly replay; manifest has event date, source SHA, no invented publication time",
-      "H0": "drift or source mismatch must hard fail"
+      "H1": "strict manifest validation yields safe endpoint and rejects tampering",
+      "H0": "unsafe person/rights attribution leaks or HTTP path inadequate"
     },
-    "method": "write minimum two-event aggregate manifest, SHA256 complete downloaded original in native CI, compare session, vote#, date, aggregate counts and row counts; negative tests for tampering",
-    "criterion": "native original replay returns PASS and negative tests reject false tally/hash/date",
+    "method": "new offline Python adapter + local read-only GET + native negative and HTTP tests, no public host",
+    "criterion": "all new adapter/HTTP tests PASS, malicious Host rejected; first_public_at preserved null and scoring false",
     "status": "PREREGISTERED_BEFORE_TEST"
   }
 }

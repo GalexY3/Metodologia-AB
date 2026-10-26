@@ -21,6 +21,7 @@ from .progress_api import progress_status
 from .candidacy_api import status as official_candidacies_status
 from .nomination_atlas import status as nomination_atlas_status
 from .nomination_quality import audit as nomination_quality_audit
+from .congress_vote_evidence import status as verified_rollcall_status
 
 HERE=Path(__file__).resolve().parent
 WEB=HERE/'web'
@@ -65,6 +66,8 @@ def handler_factory(db_path: Path, pilot_path: Path | None, field_path: Path | N
                 return self.reply(200,progress_status())
             if route == '/api/evidence-readiness':
                 return self.reply(200,evidence_status())
+            if route == '/api/verified-rollcalls':
+                return self.reply(200,verified_rollcall_status())
             if route == '/api/official-nominations':
                 atlas=nomination_atlas_status()
                 quality=nomination_quality_audit()
