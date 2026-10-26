@@ -33,10 +33,12 @@ jobs:
           node --test tests/test_jec2023_audit.mjs
           node --test tests/test_political_universe.mjs
           node --test tests/test_br30g_audit.mjs
+          node --test tests/test_evidence_warehouse.mjs
+          node --test tests/test_evidence_ingest_cli.mjs
       - name: Python local integration
         run: |
           python -m pip install pytest
-          PYTHONPATH=src python -m pytest -q tests/test_actor_api.py tests/test_product.py
+          PYTHONPATH=src python -m pytest -q tests/test_actor_api.py tests/test_product.py tests/test_evidence_warehouse_status.py
       - name: Secondary source fetch, pinned revision verification
         run: |
           curl -fsSL --retry 3 --max-time 35 -o /tmp/pf-202307.csv https://raw.githubusercontent.com/anerodata/data-elecciones-congreso-espana/main/202307.csv
