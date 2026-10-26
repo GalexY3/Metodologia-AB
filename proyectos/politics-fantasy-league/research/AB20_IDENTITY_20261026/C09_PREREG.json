@@ -1,0 +1,41 @@
+{
+  "id": "C09",
+  "parent": "C08",
+  "type": "EXPERIMENTAL_AB_NEW_SOURCE",
+  "A": {
+    "question": "Does one of two historic group-code discrepancies correspond to the Congress-published July3 2025 group transfer documented in BOCG 15-D-372?",
+    "estimand": "count out of two 2024-vs-2026 discrepancy names that occur in original BOCG roster-change notice"
+  },
+  "B": {
+    "H1": "exactly one discordant member string is in official July 2025 group-switch record",
+    "H0": "zero matching conflict names, so transition unrelated",
+    "H_other": "two matches, single publication includes multiple transitions"
+  },
+  "C": {
+    "source": "original Congreso BOCG-15-D-372 7 July2025 (03/07/2025 effective), plus April2024 and July2026 voter originals",
+    "budget": "3-4 primary original downloads",
+    "falsifier": "no exact discrepancy strings in independently published notice"
+  },
+  "D": {
+    "instrument": "scripts/ab20_bocg_drift.py",
+    "no_person_names_exported": true
+  },
+  "E": {
+    "preregister_before_run": true
+  },
+  "F": {
+    "selection_exposure": "chosen after observing 2→1 historical group conflict; causal explanation requires contemporaneous pair check"
+  },
+  "G": {
+    "external_replication": "new publication document but same institution"
+  },
+  "H": {
+    "CT2_before": 21
+  },
+  "I": {
+    "grade_expected": 0
+  },
+  "J": {
+    "next": "If overlap, verify actual before/after group code on same person with two independent vote dates; else seek other mechanism"
+  }
+}
