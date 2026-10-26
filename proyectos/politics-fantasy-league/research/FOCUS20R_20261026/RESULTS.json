@@ -1,0 +1,74 @@
+{
+  "campaign": "PF-FOCUS20R",
+  "date": "2026-10-26",
+  "authorized": 20,
+  "preregistered": 20,
+  "status": "PROVISIONAL_18_CLOSED_2_PENDING_CI",
+  "closed_bounded_positive": 16,
+  "closed_STOP_R5": 2,
+  "pending_CI": 2,
+  "evidence_kind": "GITHUB_AUTHENTIC_PDF_SOURCE_REPLAY_AND_SOFTWARE_QA",
+  "independent_political_experiments": 0,
+  "original_document": "BOE-A-2023-15066",
+  "original_bytes": 4298580,
+  "original_sha256": "d1c179fcfab9889df272753ad3d44513f86cec703805219834b7d048ef0eda20",
+  "parsing": {
+    "provincial_headings_detected": 52,
+    "contiguous_sections": 25,
+    "without_known_notice": 16,
+    "with_nonproclamation_notice": 9,
+    "observed_contiguous_headings": 263,
+    "headings_from_notice_sections": 108,
+    "headings_from_no_known_notice_sections": 155,
+    "nonsequential_quarantined_sections": 27,
+    "noncertified_observed_headings": 278,
+    "legal_party_registry_matched": 0,
+    "public_person_identities_matched": 0,
+    "population_coverage_pct": null,
+    "legally_proclaimed_count": null,
+    "warning": "These are extracted headings, not certified proclaimed entries or legal-party identities."
+  },
+  "source_log_recovery": {
+    "run_id": 40333527364,
+    "job_id": 121608874950,
+    "parts": 47,
+    "parts_expected": 47,
+    "all_accepted_rows_match_existing_manifest": true,
+    "quarantine_records_unique": true
+  },
+  "verify_original_run": 40334678838,
+  "verify_original_result": "MATCH_ORIGINAL_BOUNDED",
+  "all_three_jobs_success": true,
+  "new_ci_run_status": "PENDING_20_CYCLE_ADJUDICATION",
+  "negative_tests_added": true,
+  "scope": {
+    "version": "PFL-V1",
+    "revision": 3,
+    "tracks": 9,
+    "milestones": 36,
+    "previous_progress_pct": 36.35,
+    "current_progress_pct": 36.35,
+    "scope_changed": false,
+    "six_release_blockers_remain": true
+  },
+  "epistemic": {
+    "new_scientific_claims_N1_N2_N3": [
+      0,
+      0,
+      0
+    ],
+    "VSDS": 1,
+    "CT2_multiactor": 20,
+    "CT2_predictive": 24,
+    "scientific_novelty": "NONE",
+    "evidence_adaptive": true
+  },
+  "remaining_gaps": [
+    "27 provinces contain missing positions; no data imputation",
+    "9 provinces have no-proclamation notices not adjudicated per-list",
+    "RPP legal party registry not reconciled",
+    "No verified public-person time-indexed roles",
+    "No independently verified reuse terms and no issuer-signed digest",
+    "Public multiuser deployment blocked"
+  ]
+}
