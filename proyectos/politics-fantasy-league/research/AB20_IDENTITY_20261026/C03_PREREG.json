@@ -1,0 +1,42 @@
+{
+  "id": "C03",
+  "parent": "C02",
+  "branch": "B_IDENTITY_HISTORY",
+  "prereg_only": true,
+  "A": {
+    "question": "Can a semantic-heading anchored parser remove C02 full-page ambiguity?",
+    "estimand": "fraction of eight sample profiles with exactly one roster key in h1/h2/h3 or title, compared with raw entire-page approach"
+  },
+  "B": {
+    "H1": "Main semantic heading uniquely identifies profile in all 8",
+    "H0": "Heading absent or still ambiguous",
+    "H_other": "title contains generic institution only"
+  },
+  "C": {
+    "source": "same official 8 profile IDs C02, fresh verified HTTPS",
+    "budget": "8 profile HTML pages <=2MB",
+    "controls": "repeat C02 same 8 fixed IDs and same original JSON roster, not new holdout"
+  },
+  "D": {
+    "code": "scripts/ab20_profile_semantic.py",
+    "negative": "if >1 or zero, block automatic joining"
+  },
+  "E": {
+    "execute_after_prereg_commit": true
+  },
+  "F": {
+    "adversarial": "H1 based on layout, not stable identity; no independent membership history"
+  },
+  "G": {
+    "holdout": "NOT_CONFIRMED"
+  },
+  "H": {
+    "CT2_before": 21
+  },
+  "I": {
+    "grade_expected": "0/3"
+  },
+  "J": {
+    "next": "if semantic parser resolves all, seek historical singleton conflict through its profile code; otherwise alternate official linked biographical source"
+  }
+}
