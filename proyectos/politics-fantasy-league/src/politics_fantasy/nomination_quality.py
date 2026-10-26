@@ -6,9 +6,11 @@ refuses to promote quarantined labels to eligible lists.
 from __future__ import annotations
 import json
 from pathlib import Path
-from .nomination_atlas import DEFAULT, SOURCE_SHA
+from .nomination_atlas import DEFAULT, SOURCE_SHA, ROW_KEYS, SECURE_ID
 
-def audit(path: Path|None=None)->dict:
+QUARANTINE_DEFAULT=DEFAULT.with_name('boe_2023_quarantine_unresolved.json')
+
+def audit(path: Path|None=None, quarantine_path: Path|None=None)->dict:
     p=Path(path) if path is not None else DEFAULT
     stop={"ok":False,"current_registered_parties":None,"public_people_confirmed":0,
           "eligible_real_people_for_fantasy":0,"percentage_of_spanish_parties":None}
@@ -29,9 +31,26 @@ def audit(path: Path|None=None)->dict:
             return {**stop,"error":"REVIEW_STRUCTURE_MISMATCH"}
         clean=sum(v["province_label"] not in issue_n for v in provinces)
         q=x.get("quarantined_provinces")
+        quarantine_observed=x.get("quarantined_observed_list_headings")
         if q is None:
-            return {**stop,"error":"QUARANTINE_NOT_YET_CAPTURED","clean_sections":clean,
-                    "review_notice_sections":len(issue_n)}
+            # The released atlas is intentionally bounded to the 25 accepted
+            # sections; retain the other 27 in a separate source-pinned file.
+            qp=Path(quarantine_path) if quarantine_path is not None else QUARANTINE_DEFAULT
+            if not qp.is_file() or qp.stat().st_size>160_000:
+                return {**stop,"error":"QUARANTINE_NOT_YET_CAPTURED",
+                        "clean_sections":clean,"review_notice_sections":len(issue_n)}
+            secondary=json.loads(qp.read_text(encoding="utf8"))
+            if (secondary.get("document")!="BOE-A-2023-15066" or
+                secondary.get("source_sha256")!=SOURCE_SHA or
+                secondary.get("verification_scope")!="NONCERTIFIED_OBSERVED_HEADINGS_ONLY" or
+                secondary.get("eligible_for_scoring") is not False or
+                secondary.get("people_merged")!=0 or
+                secondary.get("registered_parties_reconciled")!=0):
+                return {**stop,"error":"QUARANTINE_PROVENANCE_UNSAFE"}
+            q=secondary.get("quarantined_provinces")
+            quarantine_observed=secondary.get("n_observed_headings")
+            if secondary.get("n_unresolved_sections")!=27:
+                return {**stop,"error":"QUARANTINE_COUNT_MISMATCH"}
         if len(q)!=27 or len({t["province_id"] for t in q})!=27:
             return {**stop,"error":"QUARANTINE_INCOMPLETE"}
         if accepted_ids.intersection(t["province_id"] for t in q):
@@ -46,11 +65,17 @@ def audit(path: Path|None=None)->dict:
                 [t.get("position") for t in rows]!=ids or
                 not v.get("missing_ordinal_positions")):
                 return {**stop,"error":"QUARANTINE_CANNOT_BE_CERTIFIED"}
-            if any(t.get("legal_party_registration_id") is not None
-                   or t.get("person_count_joined")!=0 for t in rows):
+            if any((not isinstance(t,dict) or frozenset(t)!=ROW_KEYS or
+                    t.get("legal_party_registration_id") is not None or
+                    t.get("person_count_joined")!=0 or
+                    t.get("province_label")!=v.get("province_label") or
+                    not isinstance(t.get("candidacy_id"),str) or
+                    not SECURE_ID.fullmatch(t["candidacy_id"]) or
+                    t["candidacy_id"]!=f"BOE-A-2023-15066:{v['province_id']}:CONGRESO:{t['position']:03d}")
+                   for t in rows):
                 return {**stop,"error":"PRIVATE_OR_LEGAL_IDENTITY_IN_SOURCE"}
             nobs+=len(rows)
-        if nobs!=x["quarantined_observed_list_headings"]:
+        if nobs!=quarantine_observed:
             return {**stop,"error":"QUARANTINE_COUNT_MISMATCH"}
         return {**stop,"ok":True,"document":"BOE-A-2023-15066",
             "source_sha256":SOURCE_SHA,
