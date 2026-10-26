@@ -89,6 +89,8 @@ def main():
             assert "RECORTES CERO" in atlas
             assert "secciones extraídas" in atlas.lower() and "secciones pendientes" in atlas.lower(), atlas[:2500]
             assert "263" in atlas and "25" in atlas
+            assert "108" in atlas and "rótulos" in atlas.lower(),atlas[:3500]
+            assert "no son 263 candidaturas proclamadas verificadas" in atlas.lower(),atlas[:3500]
             results["passes"].append("Original BOE multiprovince 263 electoral-list atlas and 27 uncertainty sections shown in Chromium")
             assert "No procede inferirlos" in atlas
             results["passes"].append("Chromium visualises official BOE eight candidacy labels with no legal-party inference")
