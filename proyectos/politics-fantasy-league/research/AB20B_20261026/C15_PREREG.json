@@ -1,0 +1,42 @@
+{
+  "id": "C15",
+  "parent": "C14",
+  "status": "PREREGISTERED",
+  "A": {
+    "question": "Can two individuals entered in June 2026 PLENO be re-identified by same literal name in a distinct Congress declaration bulletin, and do declaration IDs differ from credential ordering?",
+    "estimand": "overlap of two entrants vs subsequent independent bulletin's declared names, and whether two number namespaces can be confused",
+    "unit": "source-scoped name per document"
+  },
+  "B": {
+    "H1": "both two names appear in BOCG D553 and numbers are declaration dossiers not stable person ID",
+    "H0": "no name overlap",
+    "Hother": "a partial name or declared current group differs"
+  },
+  "C": {
+    "source": "BOCG-15-D-553 19 June2026, same institutional issuer but separate published record",
+    "control": "BOCG D551 credential #409,#410 are explicitly different namespaces",
+    "falsifier": "zero literal overlap"
+  },
+  "D": {
+    "instrument": "read original official HTML indexed PDF alongside source, no Actions"
+  },
+  "E": {
+    "frozen": true
+  },
+  "F": {
+    "adversarial": "name matching within same issuer not independent entity identity confirmation"
+  },
+  "G": {
+    "holdout": "RETRIEVAL_EXPLORATORY"
+  },
+  "H": {
+    "CT2_before": 29,
+    "grade_0_3": 0
+  },
+  "I": {
+    "limits": "no privacy score"
+  },
+  "J": {
+    "after": true
+  }
+}

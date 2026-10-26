@@ -1,0 +1,20 @@
+{
+  "id": "C14",
+  "status": "CLOSED_INCONCLUSIVE_FOR_CROSS_SOURCE_FALSE_MATCH",
+  "type": "EXPERIMENTAL_AB_NEGATIVE",
+  "observed": {
+    "real_curated_source_records": 20,
+    "distinct_name_strings": 13,
+    "names_repeated_across_source_documents": 0,
+    "source_scoped_composite_keys": 20
+  },
+  "rivals": {
+    "H1": "No observed real collision; cannot claim identity-risk example is empirically in this corpus",
+    "H0": "Source scoping distinguishes event records structurally but not yet tested on repeated actual names"
+  },
+  "adversarial": "Absence of reused names in this selected small corpus is not evidence that real cross-source strings uniquely identify people. This is intentionally inconclusive, not positive.",
+  "grade_0_3": 0,
+  "CT2_before": 29,
+  "CT2_after": 29,
+  "decision": "C15 add genuinely new official BOCG D553 with biographies/declarations for entrants named in D551, verify repeated names without claiming universal identity"
+}
