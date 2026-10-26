@@ -3,10 +3,17 @@ name: Politics Fantasy evidence checks
 on:
   workflow_dispatch:
   push:
+    # Retain automatic verification on production main; stop automatic
+    # research-branch pushes from spending remaining shared Actions minutes.
+    branches:
+      - main
     paths:
       - 'proyectos/politics-fantasy-league/**'
       - '.github/workflows/politics-fantasy-evidence.yml'
   pull_request:
+    # Retain review checks for PRs into main; do not run on research PRs.
+    branches:
+      - main
     paths:
       - 'proyectos/politics-fantasy-league/**'
 

@@ -1,9 +1,9 @@
 {
   "campaign": "AB20_IDENTITY_20261026",
   "authorization": "20 BRANCHING",
-  "executed": 9,
-  "closed_valid": 9,
-  "remaining": 11,
+  "executed": 10,
+  "closed_valid": 10,
+  "remaining": 10,
   "drift": "D2.0: same institution, new estimand source-scoped identity reconciliation",
   "scope": "Exploratory documentary/engineering; cannot infer political ideology or score",
   "cycles": [
@@ -245,6 +245,46 @@
       "holdout_status": "DOC_DISCOVERY_EXPLORATORY; July-group explanation generated from earlier observed conflict",
       "decision": "C10 pre/post July3 original votes with treated source overlap and one nonmatching conflict as negative control",
       "status": "CLOSED_BOUNDED_CANDIDATE"
+    },
+    {
+      "id": "C10",
+      "type": "EXPERIMENTAL_AB_CROSS_SOURCE_TEMPORAL_DISCRIMINATION",
+      "prereg_commit": "e8e65105a010d7c1f9ed29651c2f346fd2cff80f",
+      "code_commit": "137c697cf30e23e5a6cc5d08f3fe08082053034c",
+      "original_source_run": "https://github.com/GalexY3/Metodologia-AB/actions/runs/40365014884",
+      "question": "Does documented 2025-07-03 group transfer predict a named voter changing institutional vote group across June and September 2025 while unmatched control stays the same?",
+      "estimand": "2-case paired historical group-code change, one BOCG-dated transfer and one negative control, no causal performance inference",
+      "rivals": [
+        "H1 treated source-scoped name changes GSUMAR→GMx; control remains GVOX",
+        "H0 treated does not change",
+        "H_other either person absent or independent source labels disagree"
+      ],
+      "result": {
+        "treated_present_before": true,
+        "treated_present_after": true,
+        "treated_before": "GSUMAR",
+        "treated_after": "GMx",
+        "treated_changed": true,
+        "control_present_before": true,
+        "control_present_after": true,
+        "control_group_before": "GVOX",
+        "control_group_after": "GVOX",
+        "control_changed": false,
+        "BOCG_publication_date": "2025-07-07",
+        "BOCG_effective_date": "2025-07-03",
+        "original_vote_sha256_before": "0d5c128727cb4b04e5f35585b7f7d51ed2b820279b259a053387a285a8f174d9",
+        "original_vote_sha256_after": "fdb92b1dfd48995c784a285c5bcabe2e84b786cedcd531afb284b5c4402271f8",
+        "BOCG_sha256": "7cbdbb415c0b468659f9b70a0c366fc4a77e3e80ff4f8d4713e13d5b3b1689ec"
+      },
+      "observed": "2026-10-26T17:03:42Z",
+      "adversarial": "This is source-scoped temporal identity and group history validation with a negative control; group change selection informed by earlier observed discrepancy. Not independent preregistered population confirmation, causal political influence, licensing clearance, or a real-world score.",
+      "grade_0_3": 0,
+      "ct2_before": 24,
+      "ct2_after": 28,
+      "ct2_rationale": "Supported pre/post source-code switch with original-date bulletin and stable second-case negative control; higher documentary confidence only, not universal match.",
+      "holdout_status": "POST_SELECTION_CORRELATED_HISTORICAL_OBSERVATION_NO_CONFIRMATORY_HOLDOUT",
+      "decision": "C11 prospectively sample independent institutional group-change event and obtain dated voter rows as negative/positive control, only after budget allows manual CI; freeze source choice before request.",
+      "status": "CLOSED_BOUNDED_SOURCE_SCOPED"
     }
   ],
   "priors": [
@@ -346,6 +386,17 @@
       "evidence_against": "one person still unexplained",
       "falsifier": "same name has same parliamentary group in June/September despite notice",
       "type": "EMPIRICO_OBSERVACIONAL"
+    },
+    {
+      "id": "PF-ID20-10",
+      "proposition": "One personally source-scoped parliamentary group mismatch is explained by an independently published effective 2025-07-03 Sumar→Mixto transfer, observed in June vs September nominal votes, with another case unchanged",
+      "provenance": "Original voting JSONs and official BOCG, GitHub Actions 40365014884",
+      "scope": "one transfer and one control in XV Legislature; selected adaptively",
+      "uncertainty": "not proof of stable person ID across terms, complete group histories, political causal effects or source rights",
+      "evidence_for": "Observed GSUMAR→GMx between two dated original votes; control GVOX unchanged and official bulletin event 03/07/2025",
+      "evidence_against": "same institution sources and selected after prior anomaly; 2024 orphan voter string still unexplained",
+      "falsifier": "independent historical profile evidence contradicts documented identity/group change",
+      "type": "EMPIRICO_DOCUMENTAL"
     }
   ],
   "new_discoveries_1_3": 0,
@@ -353,9 +404,24 @@
   "N3": 0,
   "CT2_identity": {
     "start": 20,
-    "now": 24,
+    "now": 28,
     "confidence": "LOW",
     "not_probability": true
   },
-  "next": "C10"
+  "next": "C11_PREREG_BEFORE_ANY_NEW_NETWORK_SOURCE_EXECUTION",
+  "budget_safety": {
+    "budget_alert_received": "2026-10-26",
+    "screenshot_used_minutes": 1801,
+    "screenshot_included_minutes": 2000,
+    "screenshot_percent": 90.05,
+    "screenshot_remaining_minutes": 199,
+    "actual_current_balance": "NOT_VERIFIED; screenshot may already be stale",
+    "screenshots_reset_statement": "2026-11-01",
+    "billing_excess_risk": "May be charged unless $0 Actions budget blocks further usage",
+    "automated_branch_workflow_disabled": true,
+    "broad_evidence_workflow_restricted_to_main_push_and_main_PR": true,
+    "manually_triggered_runs_allowed": true,
+    "status": "PAUSED_BEFORE_C11",
+    "protection": "Not an AB cycle. Do not run further GitHub Actions until user confirms budget/settings; working documents and prior evidence remain preserved."
+  }
 }

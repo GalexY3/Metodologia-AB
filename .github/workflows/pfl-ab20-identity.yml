@@ -1,8 +1,6 @@
 name: PFL AB20 prospective identity research
 on:
-  push:
-    branches:
-      - research/pfl-ab20-identity-temporal-20261026
+  # BUDGET PAUSE 2026-10-26: intentionally no push or PR triggers.
   workflow_dispatch:
 jobs:
   official-id-source:
