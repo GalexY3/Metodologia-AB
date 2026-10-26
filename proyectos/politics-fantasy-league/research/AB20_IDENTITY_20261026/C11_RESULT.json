@@ -1,0 +1,52 @@
+{
+  "cycle": "C11",
+  "status": "CLOSED_DOCUMENTARY_OBSERVATION",
+  "type": "EXPERIMENTAL_AB_DOCUMENTARY_WITHOUT_ACTIONS",
+  "prereg_commit": "8b777b6f5457de6e3e8f077a35e7072a3d1bb0f3",
+  "evidence_kind": "retrospective real institutional records; explicit same-institution correlated sources",
+  "claim": "El BOCG-15-D-51 publicado el 15/12/2023 documenta cinco bajas en SUMAR y cinco altas en Mixto, con fecha de efectos 05/12/2023, incluyendo los tres casos recogidos en el acta de la Mesa del 12/12/2023.",
+  "observed": {
+    "bocg_id": "BOCG-15-D-51",
+    "published": "2023-12-15",
+    "effective": "2023-12-05",
+    "sumar_leavers": 5,
+    "mixto_joiners": 5,
+    "mesa_recorded_cross_reference_examples": 3,
+    "source_name_reference": "https://www.congreso.es/en/busqueda-de-publicaciones?_publicaciones_id_texto=%28BOCG-15-D-51.CODI.%29&_publicaciones_legislatura=XV&_publicaciones_mode=mostrarTextoIntegro&p_p_id=publicaciones&p_p_lifecycle=0&p_p_state=normal",
+    "mesa_source": "https://app.congreso.es/svt/descargarOrdenDia?fecha=12%2F12%2F2023&sesion=1&tipoDocumento=2"
+  },
+  "rivals": {
+    "H1": "SUPPORTED_WITHIN_SOURCE publication and Mesa consistent on overlapping cases",
+    "H0": "Contradicted on overlapping cases",
+    "Hother": "BOCG shows more names than Mesa excerpt; cannot imply full list present in partial act excerpt"
+  },
+  "adversarial": "Publication day ≠ effective group date. The same BOCG also publishes substitutions in PSOE and Diputación Permanente; those are distinct roles. The heading ‘Mixto SUMAR’ may be publication artifact and is not legal merged group. No source-signature or rights audit.",
+  "external_replication": "NONE (Congress publishes both)",
+  "methodology": {
+    "A": "two-document source event chronology",
+    "B": "named rival absence/mismatch",
+    "C": "original source cross-check",
+    "D": "manual structured reading, no Actions",
+    "E": "official BOCG text retrieved",
+    "F": "role confusion and publication/efficacy",
+    "G": "not independent",
+    "H": "qualitative update",
+    "I": "limited documentary validity; no scoring",
+    "J": "BRANCH to turnover-vs-reassignment distinction"
+  },
+  "grade_0_3": 0,
+  "CT2_before": 28,
+  "CT2_after": 29,
+  "CT2_why": "Adds early-term group transitions across independent publication types, but within same institutional publisher and no new holdout; modest evidence-of-availability update",
+  "new_prior": {
+    "id": "PF-ID20-11",
+    "proposition": "A politician's institutional parliamentary group membership has an effective date separately from the BOCG's publication date",
+    "provenance": "BOCG 15-D-51 official 15 Dec 2023, Mesa 12 Dec 2023",
+    "scope": "five changes effective 05 Dec 2023",
+    "evidence_for": "5 bajas and 5 altas; Mesa overlap",
+    "evidence_against": "No matched JSON member IDs; bulletin wording/rights caveats",
+    "uncertainty": "cross-platform availability timestamp unknown",
+    "falsifier": "official corrections or discrepancies in identified profiles"
+  },
+  "next": "C12 distinguish loss of seat and new appointment from group-only change using contemporaneous BOCG and official institutional replacement data"
+}
