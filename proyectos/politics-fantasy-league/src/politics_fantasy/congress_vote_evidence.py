@@ -35,8 +35,8 @@ def status(path: Path|None=None):
             if not isinstance(v,dict) or set(v)!=ROW_KEYS or type(v["vote"]) is not int or v["vote"] not in PINNED:
                 return {**STOP,"error":"UNEXPECTED_EVENT_FIELDS"}
             u=urlsplit(v["source_url"])
-            if u.scheme!="https" or u.hostname!="www.congreso.es" or
-                not re.fullmatch(r"/webpublica/opendata/votaciones/Leg15/Sesion193/20260723/Votacion00[12]/VOT_20260723\d{6}\.json",u.path)):
+            if (u.scheme!="https" or u.hostname!="www.congreso.es" or
+                not re.fullmatch(r"/webpublica/opendata/votaciones/Leg15/Sesion193/20260723/Votacion00[12]/VOT_20260723\d{6}\.json",u.path))):
                 return {**STOP,"error":"SOURCE_URL_CHANGED"}
             fingerprint,yes,no,abstain,no_vote=PINNED[v["vote"]]
             if (v["source_sha256"]!=fingerprint or v["event_date"]!="2026-07-23" or
