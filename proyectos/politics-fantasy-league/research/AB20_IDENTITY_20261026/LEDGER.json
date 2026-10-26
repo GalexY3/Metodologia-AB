@@ -1,9 +1,9 @@
 {
   "campaign": "AB20_IDENTITY_20261026",
   "authorization": "20 BRANCHING",
-  "executed": 5,
-  "closed_valid": 5,
-  "remaining": 15,
+  "executed": 6,
+  "closed_valid": 6,
+  "remaining": 14,
   "drift": "D2.0: same institution, new estimand source-scoped identity reconciliation",
   "scope": "Exploratory documentary/engineering; cannot infer political ideology or score",
   "cycles": [
@@ -154,6 +154,31 @@
       "holdout_status": "EXPLORATORY",
       "decision": "C06 orthographic-only test, no fuzzy identity",
       "status": "CLOSED_BOUNDED_EXACT_NEGATIVE"
+    },
+    {
+      "id": "C06",
+      "type": "EXPERIMENTAL_AB_DOCUMENTARY",
+      "prereg_commit": "c2a8534c25ded1acc3234925bf5d92f19abf1d84",
+      "code_commit": "8649257ebf804ac4e94d50c23cf9ddd9f3bcb6e9",
+      "run": "https://github.com/GalexY3/Metodologia-AB/actions/runs/40363424074",
+      "question": "Can conservative orthographic transforms uniquely link April2024 orphan?",
+      "result": {
+        "current_transformed_exact": 0,
+        "archive_transformed_exact": 0,
+        "top_roster_similarity": 0.7857,
+        "second_roster_similarity": 0.6032,
+        "top_archive_similarity": 0.7857,
+        "second_archive_similarity": 0.7606,
+        "identity_resolved": false
+      },
+      "adversarial": "0.7857 similarity is not legal identity and multiple archive neighbors close; no fuzzy links accepted.",
+      "grade_0_3": 0,
+      "ct2_before": 24,
+      "ct2_after": 22,
+      "ct2_rationale": "Conservative orthographic test failed to recover source-scoped identity; needs new class primary change event.",
+      "holdout_status": "EXPLORATORY",
+      "decision": "BRANCH C07 independently issued 11/04/2024 BOCG parliamentary composition changes, not further fuzzy tweaking",
+      "status": "CLOSED_NULL"
     }
   ],
   "priors": [
@@ -211,6 +236,17 @@
       "evidence_against": "source schema corrections showed string choice matters",
       "falsifier": "official historical biography establishes alias",
       "type": "EMPIRICO_OBSERVACIONAL"
+    },
+    {
+      "id": "PF-ID20-06",
+      "proposition": "The 2024 historical orphan cannot be identified by simple case, accent, punctuation, hyphen transformations",
+      "provenance": "40363424074",
+      "scope": "one April9 voting string vs October2026 rosters",
+      "uncertainty": "could be name variant, event-specific display, source omission, actual person with changed name",
+      "evidence_for": "zero conservative candidates, fuzzy top archive .7857 and runner up .7606",
+      "evidence_against": "no dated parliamentary profile crosswalk",
+      "falsifier": "official BOCG or ficha provides directly identified alternate",
+      "type": "EMPIRICO_OBSERVACIONAL"
     }
   ],
   "new_discoveries_1_3": 0,
@@ -218,9 +254,9 @@
   "N3": 0,
   "CT2_identity": {
     "start": 20,
-    "now": 24,
+    "now": 22,
     "confidence": "LOW",
     "not_probability": true
   },
-  "next": "C06"
+  "next": "C07"
 }
