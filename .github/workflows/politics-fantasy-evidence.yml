@@ -102,7 +102,9 @@ jobs:
       - name: Reconcile 52-by-6 actual BOE PDF page against previous transcription
         run: |
           if [ -f /tmp/pf-official-source-capture/boe_jec_2023_original.pdf ]; then
-            command -v pdftotext
+            if ! command -v pdftotext >/dev/null 2>&1; then
+              sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils
+            fi
             python scripts/verify_boe_table_pdf.py /tmp/pf-official-source-capture/boe_jec_2023_original.pdf research/BRANCH30I_20261026/JEC_2023_TABLE_I_TRANSCRIPTION.psv --output /tmp/pf-official-source-capture/boe_pdf_table_audit.json
           else
             echo 'BOE original unavailable; STOP_R5 PDF full comparison'
