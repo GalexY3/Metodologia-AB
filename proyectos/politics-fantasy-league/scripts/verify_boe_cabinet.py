@@ -74,6 +74,13 @@ def replay(pdf_bytes: bytes, snapshot: dict) -> dict:
             "current_mandate_certified":False,"party_legal_id_certified":False,
             "scoring_enabled":False}
 
+def verify_original_digest(raw: bytes, snapshot: dict) -> str:
+    observed=hashlib.sha256(raw).hexdigest()
+    expected=snapshot.get("source_pdf_sha256")
+    if not isinstance(expected,str) or len(expected)!=64 or observed!=expected:
+        raise ValueError("ORIGINAL_DIGEST_DRIFT_STOP_R5")
+    return observed
+
 def main():
     request=Request(URL,headers={"User-Agent":"PF-DocumentaryResearch/0.1"})
     with urlopen(request,timeout=35,context=ssl.create_default_context()) as resp:
@@ -81,6 +88,7 @@ def main():
             raise ValueError(f"HTTP_{resp.status}")
         blob=resp.read(300_000)
     snapshot=json.loads(SNAPSHOT.read_text(encoding="utf8"))
+    verify_original_digest(blob,snapshot)
     result=replay(blob,snapshot)
     print("MATCH_BOE_CABINET_22",json.dumps(result,ensure_ascii=False))
     Path("/tmp/pf-boe-cabinet-audit.json").write_text(json.dumps(result,indent=2))
