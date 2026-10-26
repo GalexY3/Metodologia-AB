@@ -1,9 +1,9 @@
 {
   "campaign": "AB20_IDENTITY_20261026",
   "authorization": "20 BRANCHING",
-  "executed": 8,
-  "closed_valid": 8,
-  "remaining": 12,
+  "executed": 9,
+  "closed_valid": 9,
+  "remaining": 11,
   "drift": "D2.0: same institution, new estimand source-scoped identity reconciliation",
   "scope": "Exploratory documentary/engineering; cannot infer political ideology or score",
   "cycles": [
@@ -222,6 +222,29 @@
       "holdout_status": "EXPLORATORY",
       "decision": "BRANCH C09 directly examine BOCG 15-D-372 for dated move that could explain 2025 group-conflict reduction",
       "status": "CLOSED_BOUNDED_NEGATIVE"
+    },
+    {
+      "id": "C09",
+      "type": "EXPERIMENTAL_AB_ADAPTIVE",
+      "prereg_commit": "f55a62f6d10ab8967bfe6e089ab5558745a97e6e",
+      "code_commit": "ed835292bd93f725dbd0c4f4e28267f3e0d3e3ca",
+      "run": "https://github.com/GalexY3/Metodologia-AB/actions/runs/40364665036",
+      "question": "How many of two 2024 group discrepancies appear in dated July2025 official BOCG transfer notice?",
+      "result": {
+        "two_historical_group_conflicts": 2,
+        "source_notice_matches": 1,
+        "official_effective_date": "2025-07-03",
+        "published_date": "2025-07-07",
+        "official_notice_sha256": "566dc44b4ec5a8077b272ea149f4e39be2a18f35909b172e5c569f2caf6d2efa"
+      },
+      "adversarial": "One name overlap is not change attribution; within-vote comparisons needed, same institution documentation",
+      "grade_0_3": 0,
+      "ct2_before": 21,
+      "ct2_after": 24,
+      "ct2_rationale": "Independent dated notice singles out 1 of 2 group conflicts and affords an exact event-time falsification, not a novelty finding",
+      "holdout_status": "DOC_DISCOVERY_EXPLORATORY; July-group explanation generated from earlier observed conflict",
+      "decision": "C10 pre/post July3 original votes with treated source overlap and one nonmatching conflict as negative control",
+      "status": "CLOSED_BOUNDED_CANDIDATE"
     }
   ],
   "priors": [
@@ -312,6 +335,17 @@
       "evidence_against": "BOCG dated group changes available on separate route",
       "falsifier": "dynamic service returns documented member history",
       "type": "EMPIRICO_OBSERVACIONAL"
+    },
+    {
+      "id": "PF-ID20-09",
+      "proposition": "One of two April2024 group-code discrepancies matches a separate official July2025 BOCG name in effective Sumar→Mixto notice",
+      "provenance": "40364665036 BOCG source SHA 566dc44..., original source April2024 SHA c8de...",
+      "scope": "two source-conflict members, one change notice",
+      "uncertainty": "no actual vote-group before/after corroboration yet",
+      "evidence_for": "1 of 2 overlap and effective July3 group change",
+      "evidence_against": "one person still unexplained",
+      "falsifier": "same name has same parliamentary group in June/September despite notice",
+      "type": "EMPIRICO_OBSERVACIONAL"
     }
   ],
   "new_discoveries_1_3": 0,
@@ -319,9 +353,9 @@
   "N3": 0,
   "CT2_identity": {
     "start": 20,
-    "now": 21,
+    "now": 24,
     "confidence": "LOW",
     "not_probability": true
   },
-  "next": "C09"
+  "next": "C10"
 }
