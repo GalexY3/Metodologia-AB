@@ -1,0 +1,49 @@
+{
+  "cycle": "C11",
+  "parent": "C10",
+  "status": "PREREGISTERED_BEFORE_TARGET_CONTRAST",
+  "type": "EXPERIMENTAL_AB_DOCUMENTARY_WITHOUT_ACTIONS",
+  "research_line": "B_IDENTITY_HISTORY",
+  "D": {
+    "method": "web text oficial fuente, cotejo manual de actos fechados; control jurídico de órgano/cargo; no GH Actions",
+    "negative_control": "distinguir movimiento de grupo parlamentario de cambios de Diputación Permanente y Junta de Portavoces"
+  },
+  "A": {
+    "question": "¿Un cambio de adscripción distinto de Micó en 2025 está documentado con fecha de efectos y publicación separada en dos documentos institucionales?",
+    "estimand": "número de transferencias SUMAR→Mixto 5/12/2023 mencionadas explícitamente por dos fuentes originales distintas; no interpretar como estimador poblacional",
+    "population": "cambios de grupo de Congreso XV en diciembre 2023",
+    "unit": "par persona-cambio y fecha de efectos",
+    "real_outcome": "adscripción parlamentaria publicada y acto institucional"
+  },
+  "B": {
+    "H1": "Acta Mesa 12/12/2023 y un BOCG contemporáneo coinciden en al menos un cambio con efectos 05/12/2023",
+    "H0": "ausencia de confirmación documental cruzada",
+    "H_other": "Acta registra voluntad, boletín refleja otra fecha o no publicita los mismos cambios"
+  },
+  "C": {
+    "source_discovery_exposure": "se ha visto un resultado del acta de Mesa 12/12/2023 antes de congelar; NO cuenta como validación independiente",
+    "budget": "máximo dos documentos adicionales/consultas de fuente primaria, sin descarga extensa",
+    "comparators": "acta vs BOCG; no coincidencia de nombres en corpus de votaciones salvo evidencia independiente",
+    "falsifier": "diferencia de fechas/personas o no poder obtener segundo documento"
+  },
+  "E": {
+    "execution": "pending; no CI"
+  },
+  "F": {
+    "adversarial": "mismo sistema institucional publica ambos documentos; no independencia externa ni estimación causal"
+  },
+  "G": {
+    "holdout": "EXPLORATORY_SOURCE_DISCOVERED"
+  },
+  "H": {
+    "CT2_before": 28,
+    "grade_0_3": 0
+  },
+  "I": {
+    "ethical": "no scoring personal"
+  },
+  "J": {
+    "next": "elegir después del segundo documento"
+  },
+  "pre_commit_note": "single-source discovery from web before prereg explicitly disclosed"
+}
