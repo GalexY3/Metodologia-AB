@@ -14,7 +14,7 @@ PROJECT=Path(__file__).resolve().parents[2]
 DEFAULT=PROJECT/"data/observatory/boe_2023_minister_appointments_reviewed.json"
 PDF_URL="https://www.boe.es/boe/dias/2023/11/21/pdfs/BOE-A-2023-23543.pdf"
 PDF_SHA256="16f05bba24508af229870b68dbfb72ba258e62416713a8cfe5c49c70ba792efe"
-SNAPSHOT_GIT_BLOB_SHA1="037eaac7b757604a8dc97da8da041607654131aa"
+SNAPSHOT_GIT_BLOB_SHA1="f83793849ecd42a2e8350f9869ca3f76790f9dfe"
 ROW_KEYS=frozenset(("document_local_appointment_id","name","office",
                     "date_of_nomination_decree","date_of_official_publication",
                     "end_of_tenure","legal_party_registration_id",
@@ -50,7 +50,8 @@ def status(path:Path|None=None)->dict:
             d.get("eligible_for_real_scoring") is not False or
             d.get("reconciled_legal_party_ids")!=0 or
             d.get("party_memberships_inferred")!=0 or
-            d.get("tenure_end_dates_validated")!=0):
+            d.get("tenure_end_dates_validated")!=0 or
+            d.get("offices_are_literal_document_quotations") is not True):
             return {**BASE,"error":"SOURCE_NOT_PINNED_OR_UNSAFE"}
         rows=d["rows"]
         if not isinstance(rows,list) or len(rows)!=22:
@@ -62,7 +63,7 @@ def status(path:Path|None=None)->dict:
                 not isinstance(row.get("name"),str) or
                 not 4<=len(row["name"])<=120 or not SAFE_NAME.fullmatch(row["name"]) or
                 not isinstance(row.get("office"),str) or
-                not row["office"].startswith("Ministerio de ") or
+                not re.match(r"^Ministr[oa] (?:de|del|para) ",row["office"]) or
                 not 14<=len(row["office"])<=150 or
                 row.get("date_of_nomination_decree")!="2023-11-20" or
                 row.get("date_of_official_publication")!="2023-11-21" or
@@ -73,7 +74,7 @@ def status(path:Path|None=None)->dict:
             out.append({
                 "appointment_document_id":row["document_local_appointment_id"],
                 "name_in_original":row["name"],
-                "portfolio_in_2023_document":row["office"],
+                "role_title_as_written_in_2023":row["office"],
                 "nomination_document_signed":"2023-11-20",
                 "officially_published":"2023-11-21",
                 "current_mandate_status":"UNKNOWN_NOT_RECONCILED",
