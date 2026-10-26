@@ -1,0 +1,18 @@
+{
+  "id": "C16",
+  "status": "CLOSED_BOUNDED_NEGATIVE_BASELINE",
+  "source": "BOCG-15-D-553 official published index, two expediente families",
+  "result": {
+    "bare_suffix_matched_pairs": 2,
+    "false_person_links": 2,
+    "true_person_links": 0,
+    "qualified_cross_family_matches": 0,
+    "same_literal_name_cross_family": 2
+  },
+  "baseline_policy": "naive 408↔408 and 409↔409 mismatches both persons",
+  "adversarial": "2/2 false is a purposive two-person counterexample, NOT an estimated error rate or evidence of different legal identity.",
+  "CT2_before": 29,
+  "CT2_after": 29,
+  "grade_0_3": 0,
+  "next": "C17 design reusable namespace-aware event/identity references requiring authority and record kind, with explicit safe null crosswalk"
+}
