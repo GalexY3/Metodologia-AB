@@ -1,0 +1,22 @@
+{
+  "id": "C01",
+  "campaign": "PFL-ABH-BR20-20261026",
+  "mode": "AB-H",
+  "phase": "AB-R source discovery / AB-P identity contract",
+  "status": "PREREGISTERED_BEFORE_TARGET_TEST",
+  "question": "Does official Congreso open-data 'todos diputados todas legislaturas' JSON provide an explicit durable person identifier with documented cross-legislature semantics?",
+  "observed_before_prereg": "Discovery only: official catalog /opendata/diputados contains JSON link for all members; previous campaigns warned that codParlamentario is legislature-scoped.",
+  "H1": "The official JSON exposes an explicitly documented durable person key usable across legislatures.",
+  "H0": "It offers only term-scoped IDs, names or undocumented candidate keys; refuse automatic longitudinal merge.",
+  "H_alt": "A person key exists but semantics are not documented or endpoint is inaccessible.",
+  "test": "Follow official JSON link 31 from the current official directory; inspect accessible structure, key names, and descriptions; do not infer guarantees from similar names; compare any proposed key with two legislature-scoped official fiche URLs.",
+  "falsifier": "No stable officially documented cross-legislature person key in accessible payload/documentation, or data inaccessible.",
+  "acceptance_ABP": "Schema spec can use source-scoped keys; auto-join stays disabled absent original provider semantics.",
+  "release_gates": "No change without independent verification",
+  "CT2_before": 29,
+  "VSDS_before": "1/3",
+  "novelty_grade_expected": 0,
+  "cost": "web source inspection only; zero GitHub Actions, no download of mass personal data",
+  "holdout": "none; exploratory",
+  "next": "Select after C01 result; STOP_R5 if discriminatory official evidence inaccessible."
+}
