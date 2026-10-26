@@ -206,6 +206,9 @@ jobs:
       - name: C07 audit parliamentary group name concordance
         working-directory: proyectos/politics-fantasy-league
         run: python scripts/audit_group_concordance.py
+      - name: C08 independent official second voting event and transfer audit
+        working-directory: proyectos/politics-fantasy-league
+        run: python scripts/probe_second_vote.py
       - name: Record ephemeral raw originals and bounded manifest
         if: always()
         uses: actions/upload-artifact@v4
