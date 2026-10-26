@@ -10,7 +10,7 @@ spec=importlib.util.spec_from_file_location("cabinet_verify",HERE/"scripts/verif
 mod=importlib.util.module_from_spec(spec)
 spec.loader.exec_module(mod)
 original=json.loads(mod.SNAPSHOT.read_text(encoding="utf8"))
-rows=[(row["office"].removeprefix("Ministerio de "),row["name"]) for row in original["rows"]]
+rows=[(row["office"],row["name"]) for row in original["rows"]]
 
 def test_bounded_transcription_adjudicates_with_synthetic_extractor():
     with patch.object(mod,"extract_appointments",return_value=rows):
@@ -53,3 +53,9 @@ def test_original_pdf_digest_pinned_independently_from_22_labels():
     fixture=b"%PDF- fake-only for digest unit test"
     example={"source_pdf_sha256":hashlib.sha256(fixture).hexdigest()}
     assert mod.verify_original_digest(fixture,example)==example["source_pdf_sha256"]
+
+
+def test_literal_de_del_para_roles_not_fabricated_ministry_names():
+    assert rows[4][0]=="Ministro del Interior"
+    assert rows[11][0]=="Ministra para la Transición Ecológica y el Reto Demográfico"
+    assert all(not role.startswith("Ministerio de ") for role,_ in rows)
