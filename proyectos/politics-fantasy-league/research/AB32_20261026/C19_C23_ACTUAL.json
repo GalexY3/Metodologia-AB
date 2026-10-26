@@ -1,0 +1,238 @@
+{
+  "policy": "AB32_ADAPTIVE_VALIDITY_V1",
+  "verified_by_workflow": 40349607949,
+  "cycles": [
+    {
+      "id": "C19",
+      "A_question": "Does independently selected Congress historical date reproduce exact roster/role/group correspondence?",
+      "B_alternatives": [
+        "H1 authentic date-matched source and coherent aggregates",
+        "H0 missing source or group/name/term anomaly"
+      ],
+      "C_policy": "conditional source-day selection and original SHA",
+      "D_instrument": "verified HTTPS Congress HTML source href and original JSON; no personal values exported",
+      "E_prereg_created_before_download": "2026-10-26T15:28:38.871016+00:00",
+      "E_source_date_selected": "2024-02-01",
+      "E_selection_reason": "MAXIMIZE_HISTORICAL_TIME_SEPARATION",
+      "E_prior_before": {
+        "date_source_capture": {
+          "alpha": 1,
+          "beta": 1
+        },
+        "conditional_name_group_temporal_transfer": {
+          "alpha": 1,
+          "beta": 1
+        }
+      },
+      "F_observation": {
+        "status": "STOP_R5",
+        "error_type": "ValueError",
+        "error_code": "OFFICIAL_DATE_HAS_NO_MATCHING_VOTES",
+        "original_verified": false,
+        "scoreable_people": 0
+      },
+      "G_adversarial": "Selection adaptive and correlated; Beta engineering heuristic not population estimate; no immutable person IDs/rights/first-public.",
+      "H_decision": "STOP_R5_SOURCE_NOT_AVAILABLE",
+      "I_priors_after": {
+        "date_source_capture": {
+          "alpha": 1,
+          "beta": 2
+        },
+        "conditional_name_group_temporal_transfer": {
+          "alpha": 1,
+          "beta": 1
+        }
+      },
+      "J_next_condition": "SOURCE_ACCESS_BRANCH",
+      "observed_at": "2026-10-26T15:28:40.151459+00:00"
+    },
+    {
+      "id": "C20",
+      "A_question": "Is prior missing-date source problem local to date, with valid alternative in nearby weekday?",
+      "B_alternatives": [
+        "H1 authentic date-matched source and coherent aggregates",
+        "H0 missing source or group/name/term anomaly"
+      ],
+      "C_policy": "conditional source-day selection and original SHA",
+      "D_instrument": "verified HTTPS Congress HTML source href and original JSON; no personal values exported",
+      "E_prereg_created_before_download": "2026-10-26T15:28:40.152496+00:00",
+      "E_source_date_selected": "2024-02-14",
+      "E_selection_reason": "MAXIMIZE_HISTORICAL_TIME_SEPARATION",
+      "E_prior_before": {
+        "date_source_capture": {
+          "alpha": 1,
+          "beta": 2
+        },
+        "conditional_name_group_temporal_transfer": {
+          "alpha": 1,
+          "beta": 1
+        }
+      },
+      "F_observation": {
+        "status": "STOP_R5",
+        "error_type": "ValueError",
+        "error_code": "OFFICIAL_DATE_HAS_NO_MATCHING_VOTES",
+        "original_verified": false,
+        "scoreable_people": 0
+      },
+      "G_adversarial": "Selection adaptive and correlated; Beta engineering heuristic not population estimate; no immutable person IDs/rights/first-public.",
+      "H_decision": "STOP_R5_SOURCE_NOT_AVAILABLE",
+      "I_priors_after": {
+        "date_source_capture": {
+          "alpha": 1,
+          "beta": 3
+        },
+        "conditional_name_group_temporal_transfer": {
+          "alpha": 1,
+          "beta": 1
+        }
+      },
+      "J_next_condition": "SOURCE_ACCESS_BRANCH",
+      "observed_at": "2026-10-26T15:28:40.884889+00:00"
+    },
+    {
+      "id": "C21",
+      "A_question": "Is prior missing-date source problem local to date, with valid alternative in nearby weekday?",
+      "B_alternatives": [
+        "H1 authentic date-matched source and coherent aggregates",
+        "H0 missing source or group/name/term anomaly"
+      ],
+      "C_policy": "conditional source-day selection and original SHA",
+      "D_instrument": "verified HTTPS Congress HTML source href and original JSON; no personal values exported",
+      "E_prereg_created_before_download": "2026-10-26T15:28:40.885979+00:00",
+      "E_source_date_selected": "2024-02-28",
+      "E_selection_reason": "MAXIMIZE_HISTORICAL_TIME_SEPARATION",
+      "E_prior_before": {
+        "date_source_capture": {
+          "alpha": 1,
+          "beta": 3
+        },
+        "conditional_name_group_temporal_transfer": {
+          "alpha": 1,
+          "beta": 1
+        }
+      },
+      "F_observation": {
+        "status": "STOP_R5",
+        "error_type": "ValueError",
+        "error_code": "OFFICIAL_DATE_HAS_NO_MATCHING_VOTES",
+        "original_verified": false,
+        "scoreable_people": 0
+      },
+      "G_adversarial": "Selection adaptive and correlated; Beta engineering heuristic not population estimate; no immutable person IDs/rights/first-public.",
+      "H_decision": "STOP_R5_SOURCE_NOT_AVAILABLE",
+      "I_priors_after": {
+        "date_source_capture": {
+          "alpha": 1,
+          "beta": 4
+        },
+        "conditional_name_group_temporal_transfer": {
+          "alpha": 1,
+          "beta": 1
+        }
+      },
+      "J_next_condition": "SOURCE_ACCESS_BRANCH",
+      "observed_at": "2026-10-26T15:28:41.844028+00:00"
+    },
+    {
+      "id": "C22",
+      "A_question": "Is prior missing-date source problem local to date, with valid alternative in nearby weekday?",
+      "B_alternatives": [
+        "H1 authentic date-matched source and coherent aggregates",
+        "H0 missing source or group/name/term anomaly"
+      ],
+      "C_policy": "conditional source-day selection and original SHA",
+      "D_instrument": "verified HTTPS Congress HTML source href and original JSON; no personal values exported",
+      "E_prereg_created_before_download": "2026-10-26T15:28:41.845273+00:00",
+      "E_source_date_selected": "2024-03-13",
+      "E_selection_reason": "MAXIMIZE_HISTORICAL_TIME_SEPARATION",
+      "E_prior_before": {
+        "date_source_capture": {
+          "alpha": 1,
+          "beta": 4
+        },
+        "conditional_name_group_temporal_transfer": {
+          "alpha": 1,
+          "beta": 1
+        }
+      },
+      "F_observation": {
+        "status": "STOP_R5",
+        "error_type": "ValueError",
+        "error_code": "OFFICIAL_DATE_HAS_NO_MATCHING_VOTES",
+        "original_verified": false,
+        "scoreable_people": 0
+      },
+      "G_adversarial": "Selection adaptive and correlated; Beta engineering heuristic not population estimate; no immutable person IDs/rights/first-public.",
+      "H_decision": "STOP_R5_SOURCE_NOT_AVAILABLE",
+      "I_priors_after": {
+        "date_source_capture": {
+          "alpha": 1,
+          "beta": 5
+        },
+        "conditional_name_group_temporal_transfer": {
+          "alpha": 1,
+          "beta": 1
+        }
+      },
+      "J_next_condition": "SOURCE_ACCESS_BRANCH",
+      "observed_at": "2026-10-26T15:28:42.631770+00:00"
+    },
+    {
+      "id": "C23",
+      "A_question": "Is prior missing-date source problem local to date, with valid alternative in nearby weekday?",
+      "B_alternatives": [
+        "H1 authentic date-matched source and coherent aggregates",
+        "H0 missing source or group/name/term anomaly"
+      ],
+      "C_policy": "conditional source-day selection and original SHA",
+      "D_instrument": "verified HTTPS Congress HTML source href and original JSON; no personal values exported",
+      "E_prereg_created_before_download": "2026-10-26T15:28:42.632978+00:00",
+      "E_source_date_selected": "2024-03-27",
+      "E_selection_reason": "MAXIMIZE_HISTORICAL_TIME_SEPARATION",
+      "E_prior_before": {
+        "date_source_capture": {
+          "alpha": 1,
+          "beta": 5
+        },
+        "conditional_name_group_temporal_transfer": {
+          "alpha": 1,
+          "beta": 1
+        }
+      },
+      "F_observation": {
+        "status": "STOP_R5",
+        "error_type": "ValueError",
+        "error_code": "OFFICIAL_DATE_HAS_NO_MATCHING_VOTES",
+        "original_verified": false,
+        "scoreable_people": 0
+      },
+      "G_adversarial": "Selection adaptive and correlated; Beta engineering heuristic not population estimate; no immutable person IDs/rights/first-public.",
+      "H_decision": "STOP_R5_SOURCE_NOT_AVAILABLE",
+      "I_priors_after": {
+        "date_source_capture": {
+          "alpha": 1,
+          "beta": 6
+        },
+        "conditional_name_group_temporal_transfer": {
+          "alpha": 1,
+          "beta": 1
+        }
+      },
+      "J_next_condition": "SOURCE_ACCESS_BRANCH",
+      "observed_at": "2026-10-26T15:28:44.396051+00:00"
+    }
+  ],
+  "summary": {
+    "executed": 5,
+    "accepted": 0,
+    "stop_r5": 5,
+    "posterior": {
+      "date_source_capture": {
+        "alpha": 1,
+        "beta": 6
+      }
+    }
+  },
+  "warning": "No source on sampled 2024 dates; this does not imply official parliamentary records absent generally, and remaining 9 cycles must pivot"
+}
