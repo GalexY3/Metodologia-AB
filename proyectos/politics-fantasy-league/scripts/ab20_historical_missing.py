@@ -49,9 +49,11 @@ def run():
   arch=get(matches[0],24_000_000)
   data=json.loads(arch)
   if not isinstance(data,list) or not data:raise ValueError("ARCHIVE_NOT_ARRAY")
-  labels=[str(x.get("NOMBRE","")) for x in data if isinstance(x,dict)]
+  # Archival schema separates APELLIDOS (surname) and NOMBRE (given name), unlike current roster.
+  # This is a SOURCE SCHEMA CORRECTION, not a fuzzy name match or new cycle.
+  labels=[str(x.get("APELLIDOS","")).strip()+", "+str(x.get("NOMBRE","")).strip() for x in data if isinstance(x,dict)]
   compare=Counter(norm(s) for s in labels)
-  res.update(status="ARCHIVE_EXAMINED",archival_source_url=matches[0],archival_sha256=hashlib.sha256(arch).hexdigest(),archive_rows=len(data),archive_fields=sorted(data[0].keys()) if isinstance(data[0],dict) else [],target_exact_archival_matches=compare.get(miss[0],0),current_people_keys=len(current),vote_name_keys=len(past),archive_distinct_name_keys=len(compare),identity_verified=False)
+  res.update(status="ARCHIVE_EXAMINED_COMPOSITE_NAME",archival_source_url=matches[0],archival_sha256=hashlib.sha256(arch).hexdigest(),archive_rows=len(data),archive_fields=sorted(data[0].keys()) if isinstance(data[0],dict) else [],target_exact_archival_matches=compare.get(miss[0],0),current_people_keys=len(current),vote_name_keys=len(past),archive_distinct_name_keys=len(compare),identity_verified=False)
  except Exception as e:res.update(error_type=type(e).__name__,error_code=str(e)[:110])
  P.mkdir(parents=True,exist_ok=True);(P/"C05_result.json").write_text(json.dumps(res,ensure_ascii=False,indent=2)+"\n")
  print("AB20_C05="+json.dumps(res,ensure_ascii=False))
