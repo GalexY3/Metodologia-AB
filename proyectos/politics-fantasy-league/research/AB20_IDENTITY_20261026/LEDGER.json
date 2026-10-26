@@ -1,9 +1,9 @@
 {
   "campaign": "AB20_IDENTITY_20261026",
   "authorization": "20 BRANCHING",
-  "executed": 1,
-  "closed_valid": 1,
-  "remaining": 19,
+  "executed": 2,
+  "closed_valid": 2,
+  "remaining": 18,
   "drift": "D2.0: same institution, new estimand source-scoped identity reconciliation",
   "scope": "Exploratory documentary/engineering; cannot infer political ideology or score",
   "cycles": [
@@ -36,6 +36,34 @@
       "holdout_status": "EXPLORATORY_ONLY",
       "decision": "CONTINUE C02 audit sampled index profiles against official JSON roster, no identity linkage accepted",
       "status": "CLOSED_BOUNDED"
+    },
+    {
+      "id": "C02",
+      "type": "EXPERIMENTAL_AB_SOURCE_AUDIT",
+      "prereg_commit": "a64f700781735c4124fbd49e861bf48f69fff5dd",
+      "code_commit": "676c1e36d8c2386f3c91652e735319a03a8eb367",
+      "run": "https://github.com/GalexY3/Metodologia-AB/actions/runs/40361325933",
+      "question": "How often does whole-page text contain unique Congressional roster names?",
+      "estimand": "8 systematically chosen official profiles, literal normalized substrings in complete displayed text",
+      "result": {
+        "retrieved": 8,
+        "unique_name_matches": 5,
+        "multiple": 3,
+        "none": 0
+      },
+      "rivals": [
+        "H1 mostly unique",
+        "H0 none or ambiguous",
+        "Hother citation/sidebar false positives"
+      ],
+      "adversarial": "Whole HTML contains references to other members, so ambiguous text cannot be interpreted as true poly-identity. Sample 8 purposive, not representative.",
+      "grade_0_3": 0,
+      "ct2_before": 22,
+      "ct2_after": 21,
+      "ct2_rationale": "Naive broad-page procedure shows 3/8 ambiguity; favors structural parser before any claim.",
+      "holdout_status": "EXPLORATORY; remaining 404+ profiles unqueried",
+      "decision": "REPAIR C03 semantic heading-only match instead of whole-page scan",
+      "status": "CLOSED_BOUNDED"
     }
   ],
   "priors": [
@@ -49,6 +77,17 @@
       "evidence_against": "JSON roster does not expose ID",
       "falsifier": "same code resolves different people or index coverage disagrees upon replay",
       "type": "EMPIRICO_OBSERVACIONAL"
+    },
+    {
+      "id": "PF-ID20-02",
+      "proposition": "Whole-page normalized name substring matching overstates profile identity ambiguity",
+      "provenance": "Actions 40361325933 5/8 unique + 3/8 multiple",
+      "scope": "HTML pages as rendered on Congress",
+      "uncertainty": "not yet determined which DOM elements produced extraneous names",
+      "evidence_for": "3 unrelated names on full pages",
+      "evidence_against": "may in part reflect real changes in institutional biographies",
+      "falsifier": "semantic heading parsing also returns multiple names",
+      "type": "EMPIRICO_OBSERVACIONAL"
     }
   ],
   "new_discoveries_1_3": 0,
@@ -56,9 +95,9 @@
   "N3": 0,
   "CT2_identity": {
     "start": 20,
-    "now": 22,
+    "now": 21,
     "confidence": "LOW",
     "not_probability": true
   },
-  "next": "C02"
+  "next": "C03"
 }
