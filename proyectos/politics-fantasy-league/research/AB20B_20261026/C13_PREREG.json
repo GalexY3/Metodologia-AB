@@ -1,0 +1,42 @@
+{
+  "id": "C13",
+  "parent": "C12",
+  "status": "PREREGISTERED",
+  "A": {
+    "question": "Does specifying internal office subtype eliminate false conflicts while retaining both source changes?",
+    "estimand": "collision count after office-specific key with all observed internal D263 movements",
+    "unit": "source scoped person×office×date"
+  },
+  "B": {
+    "H1": "0 contradictory same-office events after subtype; 3 distinct Guardiola source changes retained",
+    "H0": "collision remains",
+    "Hother": "source does not give sufficiently disambiguated office label"
+  },
+  "C": {
+    "source": "BOCG-15-D-263",
+    "truth": "subsections DIPUTACION PERMANENTE / JUNTA DE PORTAVOCES and titular/suplente/sustituto",
+    "falsifier": "two opposite changes on same subtype and day"
+  },
+  "D": {
+    "method": "schema patch and local JS invariant check, no Actions"
+  },
+  "E": {
+    "freeze": true
+  },
+  "F": {
+    "risk": "hand-curated inventory incomplete; should not extrapolate to all roles"
+  },
+  "G": {
+    "holdout": "same-source repair"
+  },
+  "H": {
+    "CT2_before": 29,
+    "grade_0_3": 0
+  },
+  "I": {
+    "no_score": true
+  },
+  "J": {
+    "next": "after actual retest"
+  }
+}
