@@ -1,6 +1,6 @@
 {
   "campaign": "PF-AB32",
-  "cycles_closed": 3,
+  "cycles_closed": 4,
   "cycles": [
     {
       "id": "C01",
@@ -110,18 +110,66 @@
       "adversarial": "No duplication observed is not proof of legal uniqueness; 137 might be members remaining after dissolution but 137 vs historical FAQ 68 requires adjudication.",
       "decision": "C04 move to individually recorded official parliamentary votes; audit source format before join.",
       "status": "CLOSED_BOUNDED"
+    },
+    {
+      "id": "C04",
+      "hypotheses": {
+        "H1": "Historical vote source offers 350 per-person vote rows",
+        "H0": "only aggregates or inaccessible"
+      },
+      "observed": "2026-10-26T14:45:18Z",
+      "instrument": "scripts/probe_congress_vote.py official verified HTTPS and structural inspection in Actions 40342536528",
+      "result": {
+        "downloaded": true,
+        "bytes": 31587,
+        "sha256": "d83a10d39bad98a4f69c1e1b374700be949505aa40cb574ec0577b44d68c12d9",
+        "vote_rows": 350,
+        "fields": [
+          "asiento",
+          "diputado",
+          "grupo",
+          "voto"
+        ],
+        "header": [
+          "sesion",
+          "numeroVotacion",
+          "fecha",
+          "titulo",
+          "textoExpediente"
+        ],
+        "total_fields": [
+          "presentes",
+          "afavor",
+          "enContra",
+          "abstenciones",
+          "noVotan"
+        ]
+      },
+      "adversarial": "This is one historic roll call, no unique person id, first_public_at still unknown; no observational estimate of political merit or causal influence.",
+      "priors_update": [
+        {
+          "id": "PF-32-04",
+          "proposition": "Congress publishes original JSON individual roll-call events with date, institution and group labels",
+          "state": "SUPPORTED for at least one dated event",
+          "evidence": "40342536528 C04 original sha256",
+          "counterevidence": "vote rows keyed by strings, may not join person roster; 2026 dissolution means legislative endpoint not current",
+          "falsifier": "vote source drifts; schema or count fails replay"
+        }
+      ],
+      "decision": "C05 test arithmetic and safe roster-vote join without assuming names imply identity.",
+      "status": "CLOSED_BOUNDED"
     }
   ],
   "next_cycle_prereg": {
-    "id": "C04",
-    "chosen_after": "C03 temporal data clean, but identity key absent and no temporal event links",
-    "question": "Does one historical official Congress roll-call JSON contain per-person choices with a documented source/legislature/date and possible stable IDs?",
+    "id": "C05",
+    "chosen_after": "C04 vote has 350 person-like rows but zero explicit IDs",
+    "question": "Do voting totals reconcile to rows, and do official roster and roll-call names have unambiguous linkable syntax?",
     "hypotheses": {
-      "H1": "individual votes and identifiers are machine-readable",
-      "H0": "only aggregate vote totals or inaccessible artifact"
+      "H1": "arithmetics exact and large one-to-one exact normalized join",
+      "H0": "totals differ or low linkage forces manual review"
     },
-    "method": "capture one exact official JSON linked from 2026-07-23 public voting page under verified TLS; inspect nested type/key structure without names or choices, hash raw source; preserve ephemeral only",
-    "criterion": "if per-person rows exist, C05 inspect join feasibility; otherwise pivot to institutional aggregate events",
+    "method": "compare votes/totales; compare normalized name keys with active+discharged, gather aggregate uniqueness and quality only",
+    "criterion": "record exact coverage, conflicts; do not auto-join without independent IDs; branch according to result",
     "status": "PREREGISTERED_BEFORE_TEST"
   }
 }
