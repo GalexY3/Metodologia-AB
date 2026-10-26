@@ -1,0 +1,64 @@
+{
+  "campaign": "AB20_IDENTITY_20261026",
+  "authorization": "20 BRANCHING",
+  "executed": 1,
+  "closed_valid": 1,
+  "remaining": 19,
+  "drift": "D2.0: same institution, new estimand source-scoped identity reconciliation",
+  "scope": "Exploratory documentary/engineering; cannot infer political ideology or score",
+  "cycles": [
+    {
+      "id": "C01",
+      "type": "EXPERIMENTAL_AB_SOURCE_AUDIT",
+      "prereg_commit": "6768d948e25ced6bf64f3d7b8081ad269c6229dc",
+      "source_code_commit": "bb710aaa6383f4192ff49300cd57e5970100d0a1",
+      "run": "https://github.com/GalexY3/Metodologia-AB/actions/runs/40360886380",
+      "observed": "2026-10-26T16:37:31Z",
+      "question": "Official legislature source-scoped profile ID exists?",
+      "estimand": "unique ID links / profile links on official XV index",
+      "rivals": [
+        "H1 numeric unique institutional links",
+        "H0 none/duplicates",
+        "H_other source index partial"
+      ],
+      "result": {
+        "index_source_sha256": "5aff464ba19a3348823294ea7d43f289cec460d9f1e7696135d3e745082d718f",
+        "links": 412,
+        "unique_ids": 412,
+        "duplicates": 0,
+        "one_profile_accessible": true
+      },
+      "adversarial": "A URL ID is source-scoped to XV, not necessarily immutable person ID across time or matched to open-data names",
+      "grade_0_3": 0,
+      "ct2_before": 20,
+      "ct2_after": 22,
+      "ct2_rationale": "New independent official URL path makes future discriminant identity test feasible; tiny increase, not novelty claim",
+      "holdout_status": "EXPLORATORY_ONLY",
+      "decision": "CONTINUE C02 audit sampled index profiles against official JSON roster, no identity linkage accepted",
+      "status": "CLOSED_BOUNDED"
+    }
+  ],
+  "priors": [
+    {
+      "id": "PF-ID20-01",
+      "proposition": "Congress XV profile index enumerates unique numeric codParlamentario references",
+      "provenance": "GitHub Actions 40360886380 412/412 codes and one retrieved profile",
+      "scope": "institutional XV index",
+      "uncertainty": "not linked to current roster and no cross-leg stability proven",
+      "evidence_for": "412 unique source URL codes",
+      "evidence_against": "JSON roster does not expose ID",
+      "falsifier": "same code resolves different people or index coverage disagrees upon replay",
+      "type": "EMPIRICO_OBSERVACIONAL"
+    }
+  ],
+  "new_discoveries_1_3": 0,
+  "N2": 0,
+  "N3": 0,
+  "CT2_identity": {
+    "start": 20,
+    "now": 22,
+    "confidence": "LOW",
+    "not_probability": true
+  },
+  "next": "C02"
+}
