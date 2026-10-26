@@ -1,6 +1,6 @@
 {
   "campaign": "PF-AB32",
-  "cycles_closed": 18,
+  "cycles_closed": 23,
   "cycles": [
     {
       "id": "C01",
@@ -610,19 +610,283 @@
       ],
       "decision": "C19 source-stratified adaptive historical validation; select each subsequent cycle only after preceding observation and posterior update, not fixed 14 inputs.",
       "status": "CLOSED_BOUNDED"
+    },
+    {
+      "id": "C19",
+      "hypotheses": {
+        "H1": "H1 authentic date-matched source and coherent aggregates",
+        "H0": "H0 missing source or group/name/term anomaly"
+      },
+      "preregistered_before_request": "2026-10-26T15:28:38.871016+00:00",
+      "requested_date": "2024-02-01",
+      "mode": "conditional source-day selection and original SHA",
+      "observed": "2026-10-26T15:28:40.151459+00:00",
+      "instrument": "verified HTTPS Congress HTML source href and original JSON; no personal values exported",
+      "result": {
+        "status": "STOP_R5",
+        "error_type": "ValueError",
+        "error_code": "OFFICIAL_DATE_HAS_NO_MATCHING_VOTES",
+        "original_verified": false,
+        "scoreable_people": 0
+      },
+      "decision": "STOP_R5_SOURCE_NOT_AVAILABLE",
+      "priors_before": {
+        "date_source_capture": {
+          "alpha": 1,
+          "beta": 1
+        },
+        "conditional_name_group_temporal_transfer": {
+          "alpha": 1,
+          "beta": 1
+        }
+      },
+      "priors_after": {
+        "date_source_capture": {
+          "alpha": 1,
+          "beta": 2
+        },
+        "conditional_name_group_temporal_transfer": {
+          "alpha": 1,
+          "beta": 1
+        }
+      },
+      "adversarial": "Selection adaptive and correlated; Beta engineering heuristic not population estimate; no immutable person IDs/rights/first-public.",
+      "priors_update": [
+        {
+          "id": "PF-32-19",
+          "proposition": "Attempted distant historical date yielded no date-matched official original source; raw-source transport/source-day selection cannot be assumed",
+          "state": "R5 NONAVAILABILITY FOR THIS CANDIDATE ONLY",
+          "evidence": "Actions 40349607949 adaptive original fetch",
+          "counterevidence": "other historical dates are documented and accessible; no conclusion about total 2024 calendar",
+          "falsifier": "same date original JSON eventually found from alternative official date-scoped catalogue"
+        }
+      ],
+      "next_condition": "SOURCE_ACCESS_BRANCH",
+      "status": "CLOSED_STOP_R5_SOURCE_NOT_FOUND"
+    },
+    {
+      "id": "C20",
+      "hypotheses": {
+        "H1": "H1 authentic date-matched source and coherent aggregates",
+        "H0": "H0 missing source or group/name/term anomaly"
+      },
+      "preregistered_before_request": "2026-10-26T15:28:40.152496+00:00",
+      "requested_date": "2024-02-14",
+      "mode": "conditional source-day selection and original SHA",
+      "observed": "2026-10-26T15:28:40.884889+00:00",
+      "instrument": "verified HTTPS Congress HTML source href and original JSON; no personal values exported",
+      "result": {
+        "status": "STOP_R5",
+        "error_type": "ValueError",
+        "error_code": "OFFICIAL_DATE_HAS_NO_MATCHING_VOTES",
+        "original_verified": false,
+        "scoreable_people": 0
+      },
+      "decision": "STOP_R5_SOURCE_NOT_AVAILABLE",
+      "priors_before": {
+        "date_source_capture": {
+          "alpha": 1,
+          "beta": 2
+        },
+        "conditional_name_group_temporal_transfer": {
+          "alpha": 1,
+          "beta": 1
+        }
+      },
+      "priors_after": {
+        "date_source_capture": {
+          "alpha": 1,
+          "beta": 3
+        },
+        "conditional_name_group_temporal_transfer": {
+          "alpha": 1,
+          "beta": 1
+        }
+      },
+      "adversarial": "Selection adaptive and correlated; Beta engineering heuristic not population estimate; no immutable person IDs/rights/first-public.",
+      "priors_update": [
+        {
+          "id": "PF-32-20",
+          "proposition": "Attempted distant historical date yielded no date-matched official original source; raw-source transport/source-day selection cannot be assumed",
+          "state": "R5 NONAVAILABILITY FOR THIS CANDIDATE ONLY",
+          "evidence": "Actions 40349607949 adaptive original fetch",
+          "counterevidence": "other historical dates are documented and accessible; no conclusion about total 2024 calendar",
+          "falsifier": "same date original JSON eventually found from alternative official date-scoped catalogue"
+        }
+      ],
+      "next_condition": "SOURCE_ACCESS_BRANCH",
+      "status": "CLOSED_STOP_R5_SOURCE_NOT_FOUND"
+    },
+    {
+      "id": "C21",
+      "hypotheses": {
+        "H1": "H1 authentic date-matched source and coherent aggregates",
+        "H0": "H0 missing source or group/name/term anomaly"
+      },
+      "preregistered_before_request": "2026-10-26T15:28:40.885979+00:00",
+      "requested_date": "2024-02-28",
+      "mode": "conditional source-day selection and original SHA",
+      "observed": "2026-10-26T15:28:41.844028+00:00",
+      "instrument": "verified HTTPS Congress HTML source href and original JSON; no personal values exported",
+      "result": {
+        "status": "STOP_R5",
+        "error_type": "ValueError",
+        "error_code": "OFFICIAL_DATE_HAS_NO_MATCHING_VOTES",
+        "original_verified": false,
+        "scoreable_people": 0
+      },
+      "decision": "STOP_R5_SOURCE_NOT_AVAILABLE",
+      "priors_before": {
+        "date_source_capture": {
+          "alpha": 1,
+          "beta": 3
+        },
+        "conditional_name_group_temporal_transfer": {
+          "alpha": 1,
+          "beta": 1
+        }
+      },
+      "priors_after": {
+        "date_source_capture": {
+          "alpha": 1,
+          "beta": 4
+        },
+        "conditional_name_group_temporal_transfer": {
+          "alpha": 1,
+          "beta": 1
+        }
+      },
+      "adversarial": "Selection adaptive and correlated; Beta engineering heuristic not population estimate; no immutable person IDs/rights/first-public.",
+      "priors_update": [
+        {
+          "id": "PF-32-21",
+          "proposition": "Attempted distant historical date yielded no date-matched official original source; raw-source transport/source-day selection cannot be assumed",
+          "state": "R5 NONAVAILABILITY FOR THIS CANDIDATE ONLY",
+          "evidence": "Actions 40349607949 adaptive original fetch",
+          "counterevidence": "other historical dates are documented and accessible; no conclusion about total 2024 calendar",
+          "falsifier": "same date original JSON eventually found from alternative official date-scoped catalogue"
+        }
+      ],
+      "next_condition": "SOURCE_ACCESS_BRANCH",
+      "status": "CLOSED_STOP_R5_SOURCE_NOT_FOUND"
+    },
+    {
+      "id": "C22",
+      "hypotheses": {
+        "H1": "H1 authentic date-matched source and coherent aggregates",
+        "H0": "H0 missing source or group/name/term anomaly"
+      },
+      "preregistered_before_request": "2026-10-26T15:28:41.845273+00:00",
+      "requested_date": "2024-03-13",
+      "mode": "conditional source-day selection and original SHA",
+      "observed": "2026-10-26T15:28:42.631770+00:00",
+      "instrument": "verified HTTPS Congress HTML source href and original JSON; no personal values exported",
+      "result": {
+        "status": "STOP_R5",
+        "error_type": "ValueError",
+        "error_code": "OFFICIAL_DATE_HAS_NO_MATCHING_VOTES",
+        "original_verified": false,
+        "scoreable_people": 0
+      },
+      "decision": "STOP_R5_SOURCE_NOT_AVAILABLE",
+      "priors_before": {
+        "date_source_capture": {
+          "alpha": 1,
+          "beta": 4
+        },
+        "conditional_name_group_temporal_transfer": {
+          "alpha": 1,
+          "beta": 1
+        }
+      },
+      "priors_after": {
+        "date_source_capture": {
+          "alpha": 1,
+          "beta": 5
+        },
+        "conditional_name_group_temporal_transfer": {
+          "alpha": 1,
+          "beta": 1
+        }
+      },
+      "adversarial": "Selection adaptive and correlated; Beta engineering heuristic not population estimate; no immutable person IDs/rights/first-public.",
+      "priors_update": [
+        {
+          "id": "PF-32-22",
+          "proposition": "Attempted distant historical date yielded no date-matched official original source; raw-source transport/source-day selection cannot be assumed",
+          "state": "R5 NONAVAILABILITY FOR THIS CANDIDATE ONLY",
+          "evidence": "Actions 40349607949 adaptive original fetch",
+          "counterevidence": "other historical dates are documented and accessible; no conclusion about total 2024 calendar",
+          "falsifier": "same date original JSON eventually found from alternative official date-scoped catalogue"
+        }
+      ],
+      "next_condition": "SOURCE_ACCESS_BRANCH",
+      "status": "CLOSED_STOP_R5_SOURCE_NOT_FOUND"
+    },
+    {
+      "id": "C23",
+      "hypotheses": {
+        "H1": "H1 authentic date-matched source and coherent aggregates",
+        "H0": "H0 missing source or group/name/term anomaly"
+      },
+      "preregistered_before_request": "2026-10-26T15:28:42.632978+00:00",
+      "requested_date": "2024-03-27",
+      "mode": "conditional source-day selection and original SHA",
+      "observed": "2026-10-26T15:28:44.396051+00:00",
+      "instrument": "verified HTTPS Congress HTML source href and original JSON; no personal values exported",
+      "result": {
+        "status": "STOP_R5",
+        "error_type": "ValueError",
+        "error_code": "OFFICIAL_DATE_HAS_NO_MATCHING_VOTES",
+        "original_verified": false,
+        "scoreable_people": 0
+      },
+      "decision": "STOP_R5_SOURCE_NOT_AVAILABLE",
+      "priors_before": {
+        "date_source_capture": {
+          "alpha": 1,
+          "beta": 5
+        },
+        "conditional_name_group_temporal_transfer": {
+          "alpha": 1,
+          "beta": 1
+        }
+      },
+      "priors_after": {
+        "date_source_capture": {
+          "alpha": 1,
+          "beta": 6
+        },
+        "conditional_name_group_temporal_transfer": {
+          "alpha": 1,
+          "beta": 1
+        }
+      },
+      "adversarial": "Selection adaptive and correlated; Beta engineering heuristic not population estimate; no immutable person IDs/rights/first-public.",
+      "priors_update": [
+        {
+          "id": "PF-32-23",
+          "proposition": "Attempted distant historical date yielded no date-matched official original source; raw-source transport/source-day selection cannot be assumed",
+          "state": "R5 NONAVAILABILITY FOR THIS CANDIDATE ONLY",
+          "evidence": "Actions 40349607949 adaptive original fetch",
+          "counterevidence": "other historical dates are documented and accessible; no conclusion about total 2024 calendar",
+          "falsifier": "same date original JSON eventually found from alternative official date-scoped catalogue"
+        }
+      ],
+      "next_condition": "SOURCE_ACCESS_BRANCH",
+      "status": "CLOSED_STOP_R5_SOURCE_NOT_FOUND"
     }
   ],
   "next_cycle_prereg": {
-    "id": "C19",
-    "block": "FOLLOWUP20_C07",
-    "chosen_after": "C18 third date passes, 14 further cycles authorized, and C16 full date index failed",
-    "question": "At an adaptively chosen distinct pre-2026 session date, does authentic official Congress JSON exist and support temporal 412-roster/group concordance?",
+    "id": "C24",
+    "chosen_after": "C19–C23 five consecutive fail-closed on unverified candidate days, Beta date prior(1,6), external indexed original Congress date 09/04/2024 documented by publisher",
+    "question": "Does targeting a publisher-indexed historical 2024-04-09 sitting, rather than inferred calendar day, yield valid official JSON and expose older roster/group drift?",
     "hypotheses": {
-      "H1": "date-targeted official source exists, original JSON reconciles with publisher tally, name/role/group checks pass",
-      "H0": "date unavailable, source drift or identity/group inconsistency"
+      "H1": "Official indexed day gives original XML/JSON voting artifact with date-matched event; temporal and group mapping inspected",
+      "H0": "source or earlier member/group mapping unavailable or inconsistent"
     },
-    "method": "Versioned sequential decision-policy script chooses only C19 now, records prereg+source result, updates Beta pseudoprior for source capture and conditional group/temporal validity, then chooses C20 question/target based on C19 outcome; same process up to C32 without preselecting dates. Stop early for repeated source failure. Script uploads complete bounded per-cycle A–J results.",
-    "criterion": "Each cycle records real original source URL+SHA or STOP_R5, zero names exported, no first_public inference; source hashes and date/session consistency checked. Bayesian pseudopriors only for sampling diagnostics, no inference population score.",
+    "method": "use exact officially indexed date as discovery candidate; extract original publisher href dynamically, digest raw source, check tally, group/name/office without personal value export",
+    "criterion": "raw original and bounded audit must be recorded; if source works, adapt C25 to confirmed-index date sampling, otherwise R5 and rethink date query",
     "status": "PREREGISTERED_BEFORE_TEST"
   },
   "first_block": {
@@ -631,5 +895,12 @@
     "bounded_successes": 12,
     "partial_R5": 0,
     "gate_to_second_block": "OPEN_USER_PREAUTHORIZED_20_ADAPTIVE"
-  }
+  },
+  "second_block": {
+    "authorization": 20,
+    "closed": 11,
+    "remaining": 9,
+    "status": "SOURCE_MISSING_STOP_5_AND_POLICY_ADAPTATION"
+  },
+  "audit_note": "C19-C23 sampled 2024-02-01,02-14,02-28,03-13,03-27 with no primary vote links, because unfounded date-choice model picked sparse calendar days. These are NOT evidence that votes do not exist in early 2024. Explicit pivot to official indexed sitting 2024-04-09 after 5 R5."
 }
