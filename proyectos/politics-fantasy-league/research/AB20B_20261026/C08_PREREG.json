@@ -1,0 +1,43 @@
+{
+  "id": "C08",
+  "parent": "C07",
+  "status": "PREREGISTERED",
+  "A": {
+    "question": "Does the Congressional normative source explicitly distinguish parliamentary group from electoral party/coalition identity?",
+    "estimand": "rule and event type distinction for group formation, affiliation and electors",
+    "population": "XV Congress rules arts 23-27",
+    "unit": "normative category"
+  },
+  "B": {
+    "H1": "group membership is a distinct institutional affiliation with specific deadlines/exceptions",
+    "H0": "party membership defines group uniquely",
+    "Hother": "proposed reforms have not entered into force for XV"
+  },
+  "C": {
+    "source": "Congress Título II arts 23–27 current notice",
+    "negative_control": "text of proposed reform != law in force at XV",
+    "falsifier": "law explicitly identifies same category"
+  },
+  "D": {
+    "method": "manual official legislative text, no Actions"
+  },
+  "E": {
+    "freeze": true
+  },
+  "F": {
+    "adversarial": "never infer changing party membership from changing parliamentary group"
+  },
+  "G": {
+    "holdout": "NO"
+  },
+  "H": {
+    "CT2_before": 29,
+    "grade_0_3": 0
+  },
+  "I": {
+    "limits": "source has footnotes on future changes"
+  },
+  "J": {
+    "next": "legal effective date check after result"
+  }
+}
