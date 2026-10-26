@@ -124,3 +124,32 @@ jobs:
           path: /tmp/pf-official-source-capture/
           retention-days: 3
           if-no-files-found: error
+
+  browser-e2e:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    permissions:
+      contents: read
+    defaults:
+      run:
+        working-directory: proyectos/politics-fantasy-league
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install actual Chromium browser automation runtime
+        run: |
+          python -m pip install playwright==1.56.0
+          python -m playwright install --with-deps chromium
+      - name: Real local Chromium UI, navigation and security smoke
+        run: |
+          PYTHONPATH=src python tests/run_browser_smoke.py
+      - name: Preserve local-only browser QA report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: politics-fantasy-browser-qa-${{ github.run_id }}
+          path: /tmp/pf-browser-e2e/
+          if-no-files-found: warn
+          retention-days: 3
