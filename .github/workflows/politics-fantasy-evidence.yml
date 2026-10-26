@@ -209,6 +209,9 @@ jobs:
       - name: C08 independent official second voting event and transfer audit
         working-directory: proyectos/politics-fantasy-league
         run: python scripts/probe_second_vote.py
+      - name: C13 original BOE October 2026 dissolution statute
+        working-directory: proyectos/politics-fantasy-league
+        run: python scripts/probe_boe_dissolution.py
       - name: C09 assert real vote sources normalize to identical calendar date
         working-directory: proyectos/politics-fantasy-league
         run: |
