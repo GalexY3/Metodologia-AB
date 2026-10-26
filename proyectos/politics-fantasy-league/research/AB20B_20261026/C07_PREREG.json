@@ -1,0 +1,42 @@
+{
+  "id": "C07",
+  "parent": "C06",
+  "status": "PREREGISTERED",
+  "A": {
+    "question": "Does official 2024 issue interleave seat/group changes with personal eventual appointments, threatening simplistic name extraction?",
+    "unit": "named actor in BOCG",
+    "estimand": "named events in internal parliamentary vs external adviser staff classes",
+    "population": "BOCG-15-D-121"
+  },
+  "B": {
+    "H1": "contains member group changes and separate personnel appointment records",
+    "H0": "only parliamentary member changes",
+    "Hother": "personnel appointment mentions deputy as sponsor but not appointee"
+  },
+  "C": {
+    "source": "BOCG-15-D-121 11/04/2024",
+    "falsifier": "no 'PERSONAL' appointments or no group member entries"
+  },
+  "D": {
+    "method": "source section-scoped parsing; no Github Actions"
+  },
+  "E": {
+    "frozen": true
+  },
+  "F": {
+    "adversarial": "staff and MPs can share names; section kind prevents false MP creation"
+  },
+  "G": {
+    "holdout": "EXPLORATORY"
+  },
+  "H": {
+    "CT2_before": 29,
+    "grade_0_3": 0
+  },
+  "I": {
+    "limits": "one issue"
+  },
+  "J": {
+    "next": "after observed roles"
+  }
+}
