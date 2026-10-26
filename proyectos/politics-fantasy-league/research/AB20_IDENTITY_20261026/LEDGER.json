@@ -1,9 +1,9 @@
 {
   "campaign": "AB20_IDENTITY_20261026",
   "authorization": "20 BRANCHING",
-  "executed": 6,
-  "closed_valid": 6,
-  "remaining": 14,
+  "executed": 7,
+  "closed_valid": 7,
+  "remaining": 13,
   "drift": "D2.0: same institution, new estimand source-scoped identity reconciliation",
   "scope": "Exploratory documentary/engineering; cannot infer political ideology or score",
   "cycles": [
@@ -179,6 +179,27 @@
       "holdout_status": "EXPLORATORY",
       "decision": "BRANCH C07 independently issued 11/04/2024 BOCG parliamentary composition changes, not further fuzzy tweaking",
       "status": "CLOSED_NULL"
+    },
+    {
+      "id": "C07",
+      "type": "EXPERIMENTAL_AB_NEW_DOCUMENT_TYPE",
+      "prereg_commit": "d5584d6e0eadc011af8cb3ef6a0ea8cf00de6464",
+      "code_commit": "559efbfd2cd39fd147e96c56ae2852af0504713e",
+      "run": "https://github.com/GalexY3/Metodologia-AB/actions/runs/40363773673",
+      "question": "Does BOCG April11 contain independent group changes and missing voter name?",
+      "result": {
+        "BOCG_sha256": "84b38c5b4e5f092227cbd9026bda015340339068b819ae04eac4c6efefd77a77",
+        "date": "2024-04-11",
+        "change_mentions": 11,
+        "group_mentions": 5,
+        "orphan_literal": false
+      },
+      "grade_0_3": 0,
+      "ct2_before": 22,
+      "ct2_after": 22,
+      "holdout_status": "same institution, new publication type",
+      "decision": "C08 official group composition page ID/date field presence",
+      "status": "CLOSED_BOUNDED"
     }
   ],
   "priors": [
@@ -247,6 +268,17 @@
       "evidence_against": "no dated parliamentary profile crosswalk",
       "falsifier": "official BOCG or ficha provides directly identified alternate",
       "type": "EMPIRICO_OBSERVACIONAL"
+    },
+    {
+      "id": "PF-ID20-07",
+      "proposition": "The 11 April 2024 official BOCG has dated roster/group change notices but not the orphan literal name",
+      "provenance": "40363773673",
+      "scope": "specific BOCG 15-D-121",
+      "uncertainty": "one notice does not exhaust group history",
+      "evidence_for": "11 marker occurrences",
+      "evidence_against": "orphan exact absent",
+      "falsifier": "alternative dated source establishes identity",
+      "type": "EMPIRICO_OBSERVACIONAL"
     }
   ],
   "new_discoveries_1_3": 0,
@@ -258,5 +290,5 @@
     "confidence": "LOW",
     "not_probability": true
   },
-  "next": "C07"
+  "next": "C08"
 }
