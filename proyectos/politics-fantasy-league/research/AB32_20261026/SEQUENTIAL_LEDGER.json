@@ -1,6 +1,6 @@
 {
   "campaign": "PF-AB32",
-  "cycles_closed": 11,
+  "cycles_closed": 12,
   "cycles": [
     {
       "id": "C01",
@@ -391,18 +391,55 @@
       ],
       "decision": "C12 native-browser visibility audit of truly source-verified vs historical manual aggregates.",
       "status": "CLOSED_BOUNDED"
+    },
+    {
+      "id": "C12",
+      "hypotheses": {
+        "H1": "Native Chromium renders verified 2-vote panel and warnings",
+        "H0": "visual/source ambiguity or CSP regression"
+      },
+      "observed": "2026-10-26T15:11:12Z",
+      "instrument": "app.js source-backed read-only Observatory panel, tests/run_browser_smoke.py, GHA 40346235854",
+      "result": {
+        "source_and_app_checks": "success; 111 pytest pass",
+        "congress_source_probe": "success",
+        "original_source_download": "success",
+        "native_browser": "IN_PROGRESS_CHROMIUM_RUNTIME_INSTALL_NOT_YET_OBSERVED",
+        "ui_code_merged_into_research_branch": true
+      },
+      "adversarial": "Browser assertions not yet executed due Chromium install; cannot claim end-to-end visual pass. Mark PARTIAL_R5, preserve pending workflow and re-adjudicate after finish.",
+      "priors_update": [
+        {
+          "id": "PF-32-12",
+          "proposition": "Source-backed aggregate UI can be wired without Python backend regression",
+          "state": "supported native Python and source tests, Chromium pending",
+          "evidence": "GHA run 40346235854 3/4 jobs success; browser installing",
+          "counterevidence": "native Chromium rendering not established",
+          "falsifier": "Chromium fails or misrepresents verified source"
+        }
+      ],
+      "decision": "Because source/app checks passed but browser installation is still unobserved, close C12 PARTIAL_R5_VISUAL pending; next branch seeks primary institutional dissolution source and legal role cutoff independent of UI.",
+      "status": "CLOSED_PARTIAL_R5_NATIVE_BROWSER_PENDING"
     }
   ],
   "next_cycle_prereg": {
-    "id": "C12",
-    "chosen_after": "C11 4/4 CI successful, API returns pinned two original events",
-    "question": "Can native Chromium display two source-backed 2026 votes separately from manual 20-vote pilot without implying person scores or certified first-public timestamps?",
+    "id": "C13",
+    "block": "FOLLOWUP20_C01",
+    "chosen_after": "C12 API/UI source checker passed but visual E2E pending, and C03 uncovered discharged dates up to 2026-10-06",
+    "question": "Does a separately published official BOE document establish a certified dissolution date and source publication date to bound 'active' vs 'historical' office roles?",
     "hypotheses": {
-      "H1": "UI visibly differentiates original-verified and manual aggregates; browser verifies access and no JS errors",
-      "H0": "visual/source ambiguities or CSP regressions prevent trustworthy interface"
+      "H1": "Institutional BOE original names Congress/Senate dissolution effective on publication 2026-10-06 and 2026-11-29 election",
+      "H0": "unreliable, unverifiable publication document or dates do not align"
     },
-    "method": "add read-only panel in existing observatory; concurrent GET /api/verified-rollcalls; native Playwright asserts count and warnings",
-    "criterion": "all native tests and browser E2E pass, no source-to-game scoring",
-    "status": "PREREGISTERED_BEFORE_TEST"
+    "method": "capture BOE-A-2026-20742 official XML or HTML over verified TLS, validate publisher host and content against exact original legal clauses; preserve fingerprint, no persons",
+    "criterion": "if original captured and clauses validated, record temporal gate for role availability; not point scores or member identities; else STOP_R5",
+    "status": "PREREGISTERED_BEFORE_OBSERVATION"
+  },
+  "first_block": {
+    "authorization": 12,
+    "closed": 12,
+    "bounded_successes": 11,
+    "partial_R5": 1,
+    "gate_to_second_block": "OPEN_USER_PREAUTHORIZED_20_ADAPTIVE"
   }
 }
