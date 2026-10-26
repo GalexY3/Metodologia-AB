@@ -1,6 +1,6 @@
 {
   "campaign": "PF-AB32",
-  "cycles_closed": 7,
+  "cycles_closed": 8,
   "cycles": [
     {
       "id": "C01",
@@ -263,18 +263,52 @@
       ],
       "decision": "C08 obtain second independent vote on same date and test source format and group mapping generality.",
       "status": "CLOSED_BOUNDED"
+    },
+    {
+      "id": "C08",
+      "hypotheses": {
+        "H1": "Second original roll call also joins all person strings and group codes",
+        "H0": "mismatches reveal overfit single source"
+      },
+      "observed": "2026-10-26T14:53:25Z",
+      "instrument": "probe_second_vote.py live Congress original 2026-07-23 Votacion002 in GitHub Actions 40343681021",
+      "result": {
+        "bytes": 32284,
+        "sha256": "e4609110932f34421fd08ac16dbddd5dcc23e4d113fe0a241700dab1956936b8",
+        "vote_rows": 350,
+        "unique_names": 350,
+        "roster_name_matches": 350,
+        "group_mapping_conflicts": 0,
+        "yes": 170,
+        "no": 178,
+        "no_vote": 2,
+        "date_literal": "23/7/2026"
+      },
+      "adversarial": "Second vote is same session and shares roster; not independent population. Source date serializations differ ('23/7/2026' vs '23/07/2026'). first_public unknown.",
+      "priors_update": [
+        {
+          "id": "PF-32-08",
+          "proposition": "Source-scoped names and parliamentary group mapping transfer to another independently retrieved vote in same session",
+          "state": "supported conditional on same session; not cross-session",
+          "evidence": "40343681021 350/350 name matches and 0 group conflicts; authentic SHA",
+          "counterevidence": "same session, correlated evidence; date formatting drift",
+          "falsifier": "other session breaks group/name mapping"
+        }
+      ],
+      "decision": "C09 address observed mixed date serialization before integrating reusable events.",
+      "status": "CLOSED_BOUNDED"
     }
   ],
   "next_cycle_prereg": {
-    "id": "C08",
-    "chosen_after": "C07 zero ambiguous group mappings across nine codes",
-    "question": "Does independently downloaded Votacion002 have same coherent vote schema, roster join and group mapping?",
+    "id": "C09",
+    "chosen_after": "C08 second voting payload uses 23/7/2026 while first uses 23/07/2026",
+    "question": "Can a strict parser normalize both authentic dates and reject invented/invalid ambiguous dates rather than silently failing?",
     "hypotheses": {
-      "H1": "independent vote2 validates all three properties",
-      "H0": "distribution/schema drift, identities or totals differ"
+      "H1": "date strings have clear day/month/year semantics, parse to identical civil date",
+      "H0": "format variation causes loss of events or date confusion"
     },
-    "method": "capture second explicitly linked original vote JSON HTTPS with SHA; compare schema, totals, date and first-event group's established mapping",
-    "criterion": "record counts and differences; if new vote fails, stop extending mapping without adjudication",
+    "method": "implement validated ISO date conversion and adversarial tests, test both original source date strings in native CI, no inference publication date",
+    "criterion": "native tests PASS and both source date strings normalize to 2026-07-23; reject invalid",
     "status": "PREREGISTERED_BEFORE_TEST"
   }
 }
