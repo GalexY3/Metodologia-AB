@@ -1,6 +1,6 @@
 {
   "campaign": "PF-AB32",
-  "cycles_closed": 10,
+  "cycles_closed": 11,
   "cycles": [
     {
       "id": "C01",
@@ -359,18 +359,50 @@
       ],
       "decision": "C11 expose only verified aggregate through local read-only API and test fail-closed behavior.",
       "status": "CLOSED_BOUNDED"
+    },
+    {
+      "id": "C11",
+      "hypotheses": {
+        "H1": "strict historical aggregate API remains read-only and rejects fabricated person-scoring or publication dates",
+        "H0": "local HTTP endpoint leaks personal scores or accepts tampered manifest"
+      },
+      "observed": "2026-10-26T15:03:37Z",
+      "instrument": "congress_vote_evidence.py, local /api/verified-rollcalls, tamper and HTTP hostile Host tests; native GHA 40345506173",
+      "result": {
+        "http_get_aggregate_events": 2,
+        "score": false,
+        "publication_time": null,
+        "negative_tamper_tests": true,
+        "source_and_app_pytest": "111 passed",
+        "browser_e2e": "success",
+        "congress_capture": "success",
+        "all_4_jobs_success": true
+      },
+      "adversarial": "Two CI syntax bugs and repairs observed on prior failed attempts; final green. HTTP local-only, and provenance is conditional on pinned original source. Not a public launch.",
+      "priors_update": [
+        {
+          "id": "PF-32-11",
+          "proposition": "Two actual official roll-call aggregates can be exposed read-only in the localhost API under fail-closed provenance checks",
+          "state": "supported integration / CI 40345506173, still no publishable person scores",
+          "evidence": "111 passing Python tests, 4 CI jobs successful",
+          "counterevidence": "UI currently only displays manual pilot; license/first-public unknown",
+          "falsifier": "tampered manifest accepted or API returns person attributes"
+        }
+      ],
+      "decision": "C12 native-browser visibility audit of truly source-verified vs historical manual aggregates.",
+      "status": "CLOSED_BOUNDED"
     }
   ],
   "next_cycle_prereg": {
-    "id": "C11",
-    "chosen_after": "C10 original replay SUCCESS",
-    "question": "Can the product expose two historical authentic vote totals read-only without leaking individual rows or treating first_public_at as event date?",
+    "id": "C12",
+    "chosen_after": "C11 4/4 CI successful, API returns pinned two original events",
+    "question": "Can native Chromium display two source-backed 2026 votes separately from manual 20-vote pilot without implying person scores or certified first-public timestamps?",
     "hypotheses": {
-      "H1": "strict manifest validation yields safe endpoint and rejects tampering",
-      "H0": "unsafe person/rights attribution leaks or HTTP path inadequate"
+      "H1": "UI visibly differentiates original-verified and manual aggregates; browser verifies access and no JS errors",
+      "H0": "visual/source ambiguities or CSP regressions prevent trustworthy interface"
     },
-    "method": "new offline Python adapter + local read-only GET + native negative and HTTP tests, no public host",
-    "criterion": "all new adapter/HTTP tests PASS, malicious Host rejected; first_public_at preserved null and scoring false",
+    "method": "add read-only panel in existing observatory; concurrent GET /api/verified-rollcalls; native Playwright asserts count and warnings",
+    "criterion": "all native tests and browser E2E pass, no source-to-game scoring",
     "status": "PREREGISTERED_BEFORE_TEST"
   }
 }

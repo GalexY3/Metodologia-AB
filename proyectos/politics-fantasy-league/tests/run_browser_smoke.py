@@ -47,6 +47,12 @@ def main():
             assert obj["revision"]==3 and obj["progress_display_pct"]==36.4
             assert len(obj["release_blockers"])==6
         results["passes"].append("HTTP local progress V2 and six blocked launch gates")
+        with urlopen(BASE+"/api/verified-rollcalls",timeout=6) as h:
+            rollcalls=json.load(h)
+        assert rollcalls["ok"] is True and rollcalls["event_count"]==2
+        assert rollcalls["first_public_at"] is None and not rollcalls["real_person_scoring"]
+        assert [v["yes"] for v in rollcalls["events"]]==[33,170]
+        results["passes"].append("Local real Congress aggregate API separates two original roll calls from demo")
         with urlopen(BASE+"/api/official-nominations",timeout=6) as h:
             nominations=json.load(h)
         assert nominations["ok"] is True,nominations
@@ -81,6 +87,12 @@ def main():
             results["passes"].append("Native progress bars visible with external CSS and strict CSP")
             assert "NO está listo" in content
             results["passes"].append("Chromium progress V2 nine sublines and no-publication warning")
+            page.locator("[data-tab='observatory']").click()
+            observational=page.locator("#content").inner_text()
+            assert "dos resultados originales verificados" in observational.lower(),observational[:3000]
+            assert "Estos eventos no generan puntos políticos" in observational
+            assert page.locator("#content a[href*='/webpublica/opendata/votaciones/']").count()==2
+            results["passes"].append("Chromium shows exactly two real original votes separately from manual pilot; no person scores")
             page.locator("[data-tab='market']").click()
             market=page.locator("#content").inner_text()
             assert "Mercado" in market or "mercado" in market,market[:250]
