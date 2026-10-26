@@ -1,6 +1,6 @@
 {
   "campaign": "PF-AB32",
-  "cycles_closed": 13,
+  "cycles_closed": 14,
   "cycles": [
     {
       "id": "C01",
@@ -451,19 +451,55 @@
       ],
       "decision": "C14 sample a second *different parliamentary session* after observing same-session consistency and dissolution fact; seek primary September30 session original (pre-dissolution), no person rating.",
       "status": "CLOSED_BOUNDED"
+    },
+    {
+      "id": "C14",
+      "hypotheses": {
+        "H1": "Congress exposes discoverable September 2026 independent-session JSON",
+        "H0": "no authentic cross-session download"
+      },
+      "observed": "2026-10-26T15:15:04Z",
+      "instrument": "probe_cross_session.py verified-TLS official calendar href parse and new session 202 original, GitHub Actions 40347389556",
+      "result": {
+        "official_calendar_vote_links": 21,
+        "source_sha256": "548615f61b7fd4a1e87547666d0758ca2531034be559fd41c75e27c07aad7687",
+        "calendar_sha256": "9d9c7abac7ca5d78b33806f932e88f2834769790b84ee48e40e61e9b4d806901",
+        "vote_date": "2026-09-30",
+        "vote_session": 202,
+        "vote_number": 1,
+        "person_like_rows": 350,
+        "tally": {
+          "yes": 137,
+          "no": 175,
+          "abstain": 34,
+          "no_vote": 4
+        }
+      },
+      "adversarial": "Official document original proves rows and basic counts, but source name collisions and temporal coherence with July roster not yet independently checked; first_public unknown.",
+      "priors_update": [
+        {
+          "id": "PF-32-14",
+          "proposition": "A different parliamentary session (202, 30 September 2026) is discoverable and yields 21 original JSON links through primary Congress calendar",
+          "state": "confirmed source availability, not member join",
+          "evidence": "40347389556 350 row original SHA",
+          "counterevidence": "only 1 of 21 inspected, no cross-period harmonization yet",
+          "falsifier": "other published date URLs fail discovery or roles diverge"
+        }
+      ],
+      "decision": "C15 test cross-session identity and role dates on source202 instead of declaring cross-temporal validity automatically.",
+      "status": "CLOSED_BOUNDED"
     }
   ],
   "next_cycle_prereg": {
-    "id": "C14",
-    "block": "FOLLOWUP20_C02",
-    "chosen_after": "C13 BOE independent date success and C08 same-session-only external validity limit",
-    "question": "Can we discover latest 30 Sept 2026 session 202 official JSON directly from the official voting calendar and capture an original, without guessing opaque URL timestamp?",
+    "id": "C15",
+    "chosen_after": "C14 independent September session original captured",
+    "question": "Does exact-name and group-mapping reconciliation transfer across two months from July 23 to Sept30, and do all 350 political roles remain valid as-of new date?",
     "hypotheses": {
-      "H1": "official calendar page exposes exact downloadable JSON and content fetch yields vote rows",
-      "H0": "links inaccessible, dynamic script/HTML inconsistent"
+      "H1": "350/350 match roster and valid office intervals, unchanged group code→name map",
+      "H0": "identity mismatch, term violations or group reassignment emerge"
     },
-    "method": "verified TLS fetch of Congress date-scoped calendar and parse hrefs to official JSON, select first URL literally offered by publisher, store snapshot hash and vote shape without names",
-    "criterion": "one authentic cross-session raw original with vote rows and session 202; otherwise STOP_R5 and pivot to ZIP/cached official pages",
+    "method": "audit original 20260930 vote 001 vs already-retrieved current+discharged roster and July group abbreviations, no persons printed",
+    "criterion": "record 350 raw rows exact candidate count, unknowns, role and group discrepancies; if conflicts quarantine and adapt next source",
     "status": "PREREGISTERED_BEFORE_TEST"
   },
   "first_block": {
