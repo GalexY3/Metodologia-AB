@@ -174,3 +174,25 @@ jobs:
           path: /tmp/pf-browser-e2e/
           if-no-files-found: warn
           retention-days: 3
+
+  congress-source-probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Probe current Congress catalogue without logging public-person values
+        working-directory: proyectos/politics-fantasy-league
+        run: python scripts/probe_congress_opendata.py
+      - name: Record ephemeral raw originals and bounded manifest
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: congress-source-probe-${{ github.run_id }}
+          path: /tmp/pf-congress-probe/
+          retention-days: 3
+          if-no-files-found: warn
