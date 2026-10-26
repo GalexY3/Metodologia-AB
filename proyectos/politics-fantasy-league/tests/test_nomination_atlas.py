@@ -92,3 +92,12 @@ def test_nested_private_metadata_rejected_instead_of_silently_ignored(tmp_path):
         {"metadata":{"party_member_guess":"invented"}}))
     assert not r["ok"]
     assert r["error"]=="UNEXPECTED_CANDIDACY_FIELDS"
+
+def test_quarantined_original_log_sidecar_is_bounded_and_unscored():
+    from politics_fantasy.nomination_quality import audit
+    r=audit()
+    assert r["ok"] is True,r
+    assert r["quarantined_provinces"]==27
+    assert r["observed_but_noncertified_list_headings"]==278
+    assert r["eligible_inferred_party_identities"]==0
+    assert r["national_population_coverage_pct"] is None
