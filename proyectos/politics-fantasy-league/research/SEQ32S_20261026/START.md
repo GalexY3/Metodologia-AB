@@ -61,3 +61,12 @@ Prueba: agregar comparación en la captura real, inyectar PDF de prueba corrupto
 ### C06 · preregistro decidido tras C05
 H1: registrar la **formulación literal del rol** en la disposición (Ministro de/del, Ministra de/para) evita errores semánticos de normalización con independencia del sexo gramatical o preposición; rival H0: los formatos varían y una regex puede omitir o transformar voces sin avisar.
 Criterio: sustituir las 22 formulaciones normalizadas por las 22 denominaciones textuales observadas, cotejar PDF auténtico exacto desde GitHub Actions, actualizar el digest del derivado, cambiar API al campo `role_title_as_written_in_2023` y añadir test para «del Interior» y «para la Transición». Si falta una sola concordancia, STOP_R5; no crear un rol vigente en 2026.
+
+## C06 · resultado observado y decisión de C07
+- [GitHub Actions 40345625454](https://github.com/GalexY3/Metodologia-AB/actions/runs/40345625454): los tres trabajos **SUCCESS**, descarga PDF original con SHA256 fijo y reextracción exacta 22/22; prueba HTTP local y navegador sin regresiones.
+- El snapshot y la API devuelven ahora formulaciones **textuales** de los cargos tal como aparecen en el Real Decreto 835/2023; el campo `role_title_as_written_in_2023` no reconstruye Ministerio o carrera futura.
+- Priors PF-S06: los roles textuales aportan mejor procedencia que normalizaciones que no constan en el original; prueba adversa sería una discrepancia puntual entre PDF original y 22 etiquetas versionadas. Documental/ingeniería, no efecto científico ni current holder.
+- J: aceptación limitada de ingeniería/documento. Ninguna puntuación ni afiliación inferida.
+
+### C07 · preregistro seleccionado tras C06, no antes
+Preguntar si se puede distinguir formalmente fecha de decreto/fecha de publicación de `first_public_at` (primera publicación exacta, que no conocemos) y evitar **leakage temporal** al situar eventos en una simulación con cutoff 2023-11-20 vs 2023-11-21. H1: una función de elegibilidad conservadora censura el evento antes de su fecha de publicación; rival: tomar la fecha del decreto como información pública prematura. Contrato: tres tests de límite (2023-11-20, 2023-11-21, futuro) y fecha sin formato/zonas inválida; solo habilitar sucesos de nombramiento documentales, **nunca** puntuación de personas reales. STOP_R5 si la función infiere timestamp exacto o se introduce scoring.
