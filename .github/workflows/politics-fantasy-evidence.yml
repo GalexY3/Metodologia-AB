@@ -197,6 +197,9 @@ jobs:
       - name: C04 probe one original Congress roll-call voting record
         working-directory: proyectos/politics-fantasy-league
         run: python scripts/probe_congress_vote.py
+      - name: C05 reconcile official vote totals and roster name candidates
+        working-directory: proyectos/politics-fantasy-league
+        run: python scripts/audit_congress_vote_join.py
       - name: Record ephemeral raw originals and bounded manifest
         if: always()
         uses: actions/upload-artifact@v4
