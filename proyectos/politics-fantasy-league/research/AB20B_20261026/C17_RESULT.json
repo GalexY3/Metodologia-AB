@@ -1,0 +1,23 @@
+{
+  "id": "C17",
+  "status": "CLOSED_BOUNDED_ENGINEERING",
+  "local_test_run": "2026-10-26 local Python unittest 8/8 PASS in /mnt/data/ab20b_local (reference implementation)",
+  "github_test_status": "NOT_RUN in GitHub Actions; same eight tests authored for repo, not reproduced remotely",
+  "observed": {
+    "namespace_fields": [
+      "authority",
+      "legislature",
+      "record_family",
+      "local_reference"
+    ],
+    "numeric_only_join_permitted": false,
+    "external_identity_crosswalk_installed": false,
+    "scoring_allowed": false,
+    "local_tests_passed": 8
+  },
+  "grade_0_3": 0,
+  "CT2_before": 29,
+  "CT2_after": 29,
+  "adversarial": "The module is standalone; zero user-facing integration or external identity proof. No increase in scientific CT2 for synthetic tests.",
+  "next": "C18 audit whether currently deployed API and client already expose dangerous actor-join pathways, and whether new guard is actually connected."
+}

@@ -1,0 +1,45 @@
+{
+  "id": "C18",
+  "parent": "C17",
+  "status": "PREREGISTERED",
+  "A": {
+    "question": "Is the fail-closed typed institutional reference used by the actual HTTP endpoint that serves official historical voting aggregates?",
+    "estimand": "number of actual API route flows performing any unchecked entity ID synthesis/scoring",
+    "unit": "current source repository route and scripts"
+  },
+  "B": {
+    "H1": "API limits to aggregates with no per-person scoring, typed_refs separate, no unchecked links",
+    "H0": "unsecured numeric person join enabled",
+    "Hother": "new module dead code, guards only synthetic, integration not complete"
+  },
+  "C": {
+    "sources": [
+      "src/politics_fantasy/server.py",
+      "src/politics_fantasy/congress_vote_evidence.py",
+      "web/app.js"
+    ],
+    "falsifier": "found route returning entity-linked person points without approval"
+  },
+  "D": {
+    "instrument": "static source inspection, no GitHub Actions"
+  },
+  "E": {
+    "freeze": true
+  },
+  "F": {
+    "adversarial": "static review not deployment security test"
+  },
+  "G": {
+    "holdout": "source already exposed from prior campaigns"
+  },
+  "H": {
+    "CT2_before": 29,
+    "grade_0_3": 0
+  },
+  "I": {
+    "no_scoring": true
+  },
+  "J": {
+    "after_result": true
+  }
+}
