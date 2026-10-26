@@ -236,6 +236,9 @@ jobs:
       - name: C25 test repeatability of 2024 roster and group discrepancy
         working-directory: proyectos/politics-fantasy-league
         run: python scripts/audit_second_2024_vote.py
+      - name: C26-C32 sequential adaptive officially indexed dates, anomaly-dependent acquisition
+        working-directory: proyectos/politics-fantasy-league
+        run: python scripts/ab32_indexed_adaptive.py
       - name: C09 assert real vote sources normalize to identical calendar date
         working-directory: proyectos/politics-fantasy-league
         run: |

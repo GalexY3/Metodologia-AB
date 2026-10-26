@@ -1,6 +1,6 @@
 {
   "campaign": "PF-AB32",
-  "cycles_closed": 24,
+  "cycles_closed": 25,
   "cycles": [
     {
       "id": "C01",
@@ -910,19 +910,48 @@
       ],
       "decision": "C25 FOCUS on replication of exact 2024 mismatch across another independent April9 roll-call before attributing cause.",
       "status": "CLOSED_BOUNDED_ANOMALY_FOUND"
+    },
+    {
+      "id": "C25",
+      "hypotheses": {
+        "H1": "second independently published vote same historical session repeats missing name and group anomalies",
+        "H0": "source-specific isolated data error"
+      },
+      "observed": "2026-10-26T15:34:01Z",
+      "instrument": "audit_second_2024_vote.py, official 2024-04-09 Votacion002 original GHA 40350479635",
+      "result": {
+        "source_sha256": "d5db4e9fe8a6b0e3a7931a071f25cc6d02751ac8035e18872d02bacbf0f5ef02",
+        "vote_rows": 349,
+        "unmatched_name_strings": 1,
+        "group_label_discrepancies": 2,
+        "tallies_match": true
+      },
+      "adversarial": "Two roll calls in one sitting share member pool, so replicated anomalies likely structural/historical group/name drift, NOT two independent members or legal ID proof.",
+      "priors_update": [
+        {
+          "id": "PF-32-25",
+          "proposition": "In April 2024 session034 both votes have the same aggregate mismatch pattern: 1 unlinked name, 2 parliamentary group label discrepancies relative to latest roster",
+          "state": "supported 2 historical source files, correlated within session",
+          "evidence": "40350115767 C24 and 40350479635 C25 independent original SHA",
+          "counterevidence": "no source-backed proof whether mismatch is spelling, renaming, or actual group-switch",
+          "falsifier": "independent contemporary roster/history corroborates matching person/group"
+        }
+      ],
+      "decision": "C26 investigate time localization of persistent 2024 group/name mismatch using independently indexed 2024-12-10 sitting; if persists, choose subsequent earlier/later dates dynamically to locate scope.",
+      "status": "CLOSED_BOUNDED_REPLICATED_ANOMALY"
     }
   ],
   "next_cycle_prereg": {
-    "id": "C25",
-    "chosen_after": "C24 primary 2024 indexed source found 349 voter rows, one unmatched name and two group-map conflicts",
-    "question": "Do these specific aggregate discrepancies repeat in second vote same 2024-04-09 session, indicating metadata changes rather than single file corruption?",
+    "id": "C26",
+    "chosen_after": "C25 replicated 1 unmatched person name and 2 mismatched group codes across two 2024 vote originals, needing chronology not arbitrary same-day repeats",
+    "question": "Do early December 2024 archived original votes retain 2024 name/group discrepancy when linked to 2026 roster?",
     "hypotheses": {
-      "H1": "independent second vote repeats same 1 unmatched name/2 group mapping conflicts",
-      "H0": "they disappear or differ, suggesting vote-specific source shape or participant change"
+      "H1": "at least one recurring mismatch signifies longitudinal roster limitation",
+      "H0": "historical mismatch resolves by 2024-12-10, narrowing temporal boundary"
     },
-    "method": "discover and download next official JSON href from 2024Apr9 calendar; compare only numeric diagnostics, JSON total reconciliation; no personal name values",
-    "criterion": "preserve raw sha, count discrepancy aggregates; do not fuse person identities, do not assume group membership durable",
-    "status": "PREREGISTERED_BEFORE_TEST"
+    "method": "probe publisher-indexed 2024-12-10 first; thereafter within same native run select C27–C32 prospectively based on immediately prior evidence and Beta reliability trackers; no pre-fixed sequence",
+    "criterion": "real original sha, vote tallies, group/name and temporal aggregate diagnostics; unsupported sources STOP_R5; do not promote to identity/scores",
+    "status": "PREREGISTERED_BEFORE_NETWORK"
   },
   "first_block": {
     "authorization": 12,
@@ -933,8 +962,8 @@
   },
   "second_block": {
     "authorization": 20,
-    "closed": 12,
-    "remaining": 8,
+    "closed": 13,
+    "remaining": 7,
     "status": "SOURCE_MISSING_STOP_5_AND_POLICY_ADAPTATION"
   },
   "audit_note": "C19-C23 sampled 2024-02-01,02-14,02-28,03-13,03-27 with no primary vote links, because unfounded date-choice model picked sparse calendar days. These are NOT evidence that votes do not exist in early 2024. Explicit pivot to official indexed sitting 2024-04-09 after 5 R5."
