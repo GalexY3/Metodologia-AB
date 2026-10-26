@@ -149,12 +149,12 @@ def add_node(doc,title,kind,mode,status='open',detail='',parent=None,sources=Non
     return n
 
 def init_doc(name,mode='hybrid',outcome='',audience='',scaffold=True):
-    root={'id':'root','title':name,'kind':'research' if mode=='research' else 'project','mode':mode,'status':'active','detail':outcome or 'Objetivo inicial pendiente de especificar','sources':[],'created_at':now(),'updated_at':now()}
+    root={'id':'root','title':name,'kind':'research' if mode in ('research','meta') else 'project','mode':mode,'status':'active','detail':outcome or 'Objetivo inicial pendiente de especificar','sources':[],'created_at':now(),'updated_at':now()}
     p={'scope_version':'SCOPE-1','outcome':outcome,'audience':audience,'out_of_scope':[],'release_gates':[], 'scope_history':[{'version':'SCOPE-1','at':now(),'reason':'Inicialización; requisitos por definir'}]}
     doc={'schema_version':VERSION,'project_id':re.sub(r'[^a-z0-9]+','-',name.lower()).strip('-') or 'ab-project','title':name,'mode':mode,'created_at':now(),'updated_at':now(),'nodes':[root],'edges':[],'events':[],'runs':[],'complaints':[],'method':{'version':'AB 3.2.1 + O7 pilot','mutable':True},'project_contract':p if mode in ('project','hybrid') else None}
     if scaffold:
-        if mode=='research':
-            seeds=[('Pregunta central','question','research','discover'),('Hipótesis alternativas y falsadores','hypothesis','research','specify'),('Evidencia y baselines','task','research','verify')]
+        if mode in ('research','meta'):
+            seeds=[('Pregunta central','question',mode,'discover'),('Hipótesis alternativas y falsadores','hypothesis',mode,'specify'),('Evidencia y baselines','task',mode,'verify')]
         else:
             seeds=[('Usuarios y resultado esperado','goal','project','discover'),('Alcance y criterios de aceptación','requirement','project','specify'),('Entregables y dependencias','milestone','project','build'),('Verificación y seguridad','gate','project','verify'),('Entrega y operación','deliverable','project','release')]
             if mode=='hybrid':seeds.append(('Preguntas que requieren investigación','question','research','discover'))
