@@ -33,13 +33,13 @@ def extract_appointments(pdf_bytes: bytes) -> list[tuple[str,str]]:
     sentences=[p.strip() for p in block.split(".") if p.strip()]
     rows=[]
     for sentence in sentences:
-        m=re.fullmatch(r"Ministr[oa] (?:de|del|para) (.+?) a (?:don|doña) (.+)",sentence)
+        m=re.fullmatch(r"(Ministr[oa] (?:de|del|para) .+?) a (?:don|doña) (.+)",sentence)
         if not m:
             raise ValueError(f"UNMATCHED_APPOINTMENT_SENTENCE: {sentence[:90]}")
-        portfolio,name=m.groups()
-        if not all(name.split()) or not portfolio.strip():
+        role,name=m.groups()
+        if not all(name.split()) or not role.strip():
             raise ValueError("EMPTY_NOMINATION")
-        rows.append((portfolio,name))
+        rows.append((role,name))
     return rows
 
 def replay(pdf_bytes: bytes, snapshot: dict) -> dict:
@@ -47,6 +47,7 @@ def replay(pdf_bytes: bytes, snapshot: dict) -> dict:
         snapshot.get("source_pdf")!=URL or
         snapshot.get("date_of_official_publication") is not None or
         snapshot.get("eligible_for_real_scoring") is not False or
+        snapshot.get("offices_are_literal_document_quotations") is not True or
         snapshot.get("reconciled_legal_party_ids")!=0 or
         snapshot.get("party_memberships_inferred")!=0):
         raise ValueError("UNSAFE_SOURCE_OR_SCOPE")
@@ -54,10 +55,10 @@ def replay(pdf_bytes: bytes, snapshot: dict) -> dict:
     stored=snapshot["rows"]
     if len(real)!=22 or len(stored)!=22 or snapshot["n_expected"]!=22:
         raise ValueError("NOT_22_APPOINTMENTS")
-    for n,((portfolio,name),row) in enumerate(zip(real,stored),1):
+    for n,((role,name),row) in enumerate(zip(real,stored),1):
         expected_id=f"BOE-A-2023-23543:APPOINTMENT:{n:02d}"
         if (row.get("document_local_appointment_id")!=expected_id or
-            row.get("name")!=name or row.get("office")!="Ministerio de "+portfolio or
+            row.get("name")!=name or row.get("office")!=role or
             row.get("date_of_nomination_decree")!="2023-11-20" or
             row.get("date_of_official_publication")!="2023-11-21" or
             row.get("end_of_tenure") is not None or
