@@ -21,9 +21,9 @@ jobs:
       - name: C02 refresh official Congress JSON original roster
         working-directory: proyectos/politics-fantasy-league
         run: python scripts/probe_congress_opendata.py
-      - name: C02 bounded index/roster profile inspection
+      - name: C03 semantic-heading remediation against same 8 public profiles
         working-directory: proyectos/politics-fantasy-league
-        run: python scripts/ab20_profile_roster_probe.py
+        run: python scripts/ab20_profile_semantic.py
       - name: Preserve original investigation receipts without person values
         if: always()
         uses: actions/upload-artifact@v4
