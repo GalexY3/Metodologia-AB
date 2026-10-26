@@ -18,6 +18,12 @@ jobs:
       - name: AB20 C01 institutional XV deputy index
         working-directory: proyectos/politics-fantasy-league
         run: python scripts/ab20_identity_index.py
+      - name: C02 refresh official Congress JSON original roster
+        working-directory: proyectos/politics-fantasy-league
+        run: python scripts/probe_congress_opendata.py
+      - name: C02 bounded index/roster profile inspection
+        working-directory: proyectos/politics-fantasy-league
+        run: python scripts/ab20_profile_roster_probe.py
       - name: Preserve original investigation receipts without person values
         if: always()
         uses: actions/upload-artifact@v4
