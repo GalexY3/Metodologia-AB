@@ -1,0 +1,232 @@
+{
+  "schema": "ab.atlas.delta.v1",
+  "batch_id": "PFL_ABH_BR20_20261026_R5",
+  "parent_batch": "",
+  "at": "2026-10-26T22:43:07.497Z",
+  "actor": "chatgpt",
+  "reason": "Four adaptive AB-H cycles C01-C04 closed; 16 unconsumed by R5. Add only source-scoped finding, unresolved official registry blocker, unintegrated technical guard, runs and complaints, leaving product gates unchanged.",
+  "ops": [
+    {
+      "op": "run.add",
+      "run": {
+        "id": "PFL_ABH_BR20_C01",
+        "activity": "C01 official all-legislature JSON source-access audit",
+        "at": "2026-10-26T22:43:07.497Z",
+        "status": "completed",
+        "evidence": [
+          "proyectos/politics-fantasy-league/research/ABH_BR20_20261026/C01_PREREG.json",
+          "proyectos/politics-fantasy-league/research/ABH_BR20_20261026/C01_RESULT.json"
+        ],
+        "cost": {
+          "github_actions_minutes": 0,
+          "git_commits_skip_ci": true
+        },
+        "method_version": "AB 3.2.1 O7 AB-H",
+        "scope": "PFL-V1 rev3"
+      }
+    },
+    {
+      "op": "run.add",
+      "run": {
+        "id": "PFL_ABH_BR20_C02",
+        "activity": "C02 official XIV/XV term-scoped member IDs documentary audit",
+        "at": "2026-10-26T22:43:07.497Z",
+        "status": "completed",
+        "evidence": [
+          "proyectos/politics-fantasy-league/research/ABH_BR20_20261026/C02_PREREG.json",
+          "proyectos/politics-fantasy-league/research/ABH_BR20_20261026/C02_RESULT.json"
+        ],
+        "cost": {
+          "github_actions_minutes": 0,
+          "git_commits_skip_ci": true
+        },
+        "method_version": "AB 3.2.1 O7 AB-H",
+        "scope": "PFL-V1 rev3"
+      }
+    },
+    {
+      "op": "run.add",
+      "run": {
+        "id": "PFL_ABH_BR20_C03",
+        "activity": "C03 official RPP registry identity source feasibility check",
+        "at": "2026-10-26T22:43:07.497Z",
+        "status": "completed",
+        "evidence": [
+          "proyectos/politics-fantasy-league/research/ABH_BR20_20261026/C03_PREREG.json",
+          "proyectos/politics-fantasy-league/research/ABH_BR20_20261026/C03_RESULT.json"
+        ],
+        "cost": {
+          "github_actions_minutes": 0,
+          "git_commits_skip_ci": true
+        },
+        "method_version": "AB 3.2.1 O7 AB-H",
+        "scope": "PFL-V1 rev3"
+      }
+    },
+    {
+      "op": "run.add",
+      "run": {
+        "id": "PFL_ABH_BR20_C04",
+        "activity": "C04 AB-P source namespace safety local acceptance",
+        "at": "2026-10-26T22:43:07.497Z",
+        "status": "completed",
+        "evidence": [
+          "proyectos/politics-fantasy-league/research/ABH_BR20_20261026/C04_PREREG.json",
+          "proyectos/politics-fantasy-league/research/ABH_BR20_20261026/C04_RESULT.json",
+          "src/politics_fantasy/typed_refs.py",
+          "tests/test_abh_branch20_typed_refs.py"
+        ],
+        "cost": {
+          "github_actions_minutes": 0,
+          "git_commits_skip_ci": true
+        },
+        "method_version": "AB 3.2.1 O7 AB-H",
+        "scope": "PFL-V1 rev3"
+      }
+    },
+    {
+      "op": "complaint.add",
+      "complaint": {
+        "id": "PFL_ABH_BR20_COMPLAINT_C01",
+        "run_id": "PFL_ABH_BR20_C01",
+        "description": "Official Congress all-legislatures JSON link was present but payload retrieval returned cache miss; no access is not proof of absence.",
+        "severity": "minor",
+        "category": "evidence_access",
+        "source": "agent",
+        "status": "open",
+        "at": "2026-10-26T22:43:07.497Z"
+      }
+    },
+    {
+      "op": "complaint.add",
+      "complaint": {
+        "id": "PFL_ABH_BR20_COMPLAINT_C03",
+        "run_id": "PFL_ABH_BR20_C03",
+        "description": "Official Spanish party registry procedural descriptions available; no authoritative registry record extracted or temporal ID certified.",
+        "severity": "major",
+        "category": "evidence_access",
+        "source": "agent",
+        "status": "open",
+        "at": "2026-10-26T22:43:07.497Z"
+      }
+    },
+    {
+      "op": "complaint.add",
+      "complaint": {
+        "id": "PFL_ABH_BR20_COMPLAINT_C04",
+        "run_id": "PFL_ABH_BR20_C04",
+        "description": "Safety guard locally unit-tested in staging but remains unwired to live HTTP services; exact branch CI and full Atlas Python check not executed.",
+        "severity": "major",
+        "category": "evidence_access",
+        "source": "agent",
+        "status": "open",
+        "at": "2026-10-26T22:43:07.497Z"
+      }
+    },
+    {
+      "op": "node.add",
+      "node": {
+        "id": "pfl_abh_br20_cod_scoped",
+        "title": "Códigos de diputado restringidos a legislatura (casos XIV/XV)",
+        "kind": "finding",
+        "mode": "research",
+        "status": "answered",
+        "detail": "En dos casos prefijados, codParlamentario cambia entre XIV y XV; esto descarta igualdad numérica como clave personal invariante para esos casos, NO establece tasa poblacional, ni crosswalk universal.",
+        "sources": [
+          "proyectos/politics-fantasy-league/research/ABH_BR20_20261026/C02_RESULT.json"
+        ],
+        "phase": "verify",
+        "acceptance": {
+          "criteria": "",
+          "evidence": [],
+          "verified": false,
+          "verified_by": ""
+        }
+      }
+    },
+    {
+      "op": "node.add",
+      "node": {
+        "id": "pfl_abh_br20_registry_original",
+        "title": "Registro oficial de partidos: correspondencia acreditada pendiente",
+        "kind": "blocker",
+        "mode": "project",
+        "status": "blocked",
+        "detail": "El portal institucional documenta trámites de información/certificados, pero no se obtuvo un registro primario verificable para cruzar partidos, candidaturas y grupos.",
+        "sources": [
+          "proyectos/politics-fantasy-league/research/ABH_BR20_20261026/C03_RESULT.json"
+        ],
+        "phase": "verify",
+        "acceptance": {
+          "criteria": "",
+          "evidence": [],
+          "verified": false,
+          "verified_by": ""
+        }
+      }
+    },
+    {
+      "op": "node.add",
+      "node": {
+        "id": "pfl_abh_br20_typed_guard",
+        "title": "Guarda tipada de referencias institucionales",
+        "kind": "deliverable",
+        "mode": "project",
+        "status": "active",
+        "detail": "Módulo importado de AB20B con 6 aserciones verificadas localmente en staging; NO integrado en servidor ni prueba de identidad real.",
+        "sources": [
+          "proyectos/politics-fantasy-league/research/ABH_BR20_20261026/C04_RESULT.json"
+        ],
+        "phase": "build",
+        "acceptance": {
+          "criteria": "",
+          "evidence": [],
+          "verified": false,
+          "verified_by": ""
+        }
+      }
+    },
+    {
+      "op": "edge.add",
+      "id": "pfl_abh_br20_e01",
+      "from": "n_24887f9afdd7",
+      "to": "pfl_abh_br20_cod_scoped",
+      "relation": "branches_from"
+    },
+    {
+      "op": "edge.add",
+      "id": "pfl_abh_br20_e02",
+      "from": "pfl_abh_br20_cod_scoped",
+      "to": "n_ca9094a596e4",
+      "relation": "supports"
+    },
+    {
+      "op": "edge.add",
+      "id": "pfl_abh_br20_e03",
+      "from": "n_80498d9bc193",
+      "to": "pfl_abh_br20_registry_original",
+      "relation": "branches_from"
+    },
+    {
+      "op": "edge.add",
+      "id": "pfl_abh_br20_e04",
+      "from": "pfl_abh_br20_registry_original",
+      "to": "n_ca9094a596e4",
+      "relation": "blocks"
+    },
+    {
+      "op": "edge.add",
+      "id": "pfl_abh_br20_e05",
+      "from": "n_ca9094a596e4",
+      "to": "pfl_abh_br20_typed_guard",
+      "relation": "branches_from"
+    },
+    {
+      "op": "edge.add",
+      "id": "pfl_abh_br20_e06",
+      "from": "pfl_abh_br20_typed_guard",
+      "to": "n_faa4236b7431",
+      "relation": "related_to"
+    }
+  ]
+}
