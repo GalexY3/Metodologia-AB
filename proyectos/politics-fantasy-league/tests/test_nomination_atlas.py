@@ -66,3 +66,38 @@ def test_missing_data_fails_closed(tmp_path):
     r=status(tmp_path/"missing.json")
     assert r["ok"] is False
     assert r["real_people_scoring"] is False
+
+def test_documentary_notice_rows_not_counted_as_verified_proclaimed():
+    d=status()
+    assert d["ok"] is True
+    assert d["n_list_headings_extracted"]==263
+    assert d["n_list_headings_in_review_sections"]==108
+    assert d["n_list_headings_without_known_notices"]==155
+    # Without adjudicating original wording, even clean sections are not
+    # independently certified as legal-party identities or full membership.
+    assert d["confirmed_proclaimed_count"] is None
+    assert len([p for p in d["provinces"] if
+                p["documentary_quality"]=="REVIEW_NOTICE_NOT_VERIFIED_PROCLAIMED"])==9
+
+def test_review_notice_removed_cannot_silently_upgrade_evidence(tmp_path):
+    def remove_notice(d):
+        d["issues"]=[i for i in d["issues"] if
+            i.get("code")!="CONTAINS_NON_PROCLAMATION_NOTICE_REVIEW"]
+    r=mutate(tmp_path,remove_notice)
+    assert not r["ok"]
+    assert r["error"]=="REVIEW_NOTICES_MISMATCH"
+
+def test_nested_private_metadata_rejected_instead_of_silently_ignored(tmp_path):
+    r=mutate(tmp_path,lambda d:d["provinces"][0]["lists"][0].update(
+        {"metadata":{"party_member_guess":"invented"}}))
+    assert not r["ok"]
+    assert r["error"]=="UNEXPECTED_CANDIDACY_FIELDS"
+
+def test_quarantined_original_log_sidecar_is_bounded_and_unscored():
+    from politics_fantasy.nomination_quality import audit
+    r=audit()
+    assert r["ok"] is True,r
+    assert r["quarantined_provinces"]==27
+    assert r["observed_but_noncertified_list_headings"]==278
+    assert r["eligible_inferred_party_identities"]==0
+    assert r["national_population_coverage_pct"] is None

@@ -1,5 +1,13 @@
 # Politics Fantasy League — Political Data Science Laboratory
 
+## Cierre de la campaña de 35 ciclos · 26/10/2026
+
+**Campaña autorizada cerrada: 10/10 BR10P + 5/5 AUDIT5Q + 20/20 FOCUS20R = 35/35 fichas A–J.** El último bloque registra 18 verificaciones acotadas y dos STOP_R5; esto no son 20 experimentos sociológicos independientes. [Informe final FOCUS20R](research/FOCUS20R_20261026/REPORT.md) · [Ledger de 20 ciclos](research/FOCUS20R_20261026/LEDGER.json) · [Priors acumulados](research/PRIORS.md).
+
+**Hallazgo y reparación:** de los 263 encabezados obtenidos en 25 secciones del BOE 2023, **108 están en nueve secciones con avisos de no proclamación**; otras **155** pertenecen a 16 sin avisos conocidos. No equivalen a 263 candidaturas jurídicamente verificadas. Se recuperaron además **278 encabezados observados no certificados**, distribuidos entre **27 secciones en cuarentena**, del log de extracción del PDF oficial. Se conserva el [archivo acotado](data/observatory/boe_2023_quarantine_unresolved.json), se contrasta automáticamente contra el original en CI y se muestra la incertidumbre en el Atlas.
+
+**Evidencia nativa:** [CI 40334678838](https://github.com/GalexY3/Metodologia-AB/actions/runs/40334678838) verificó el original PDF contra ambos conjuntos documentales; [CI 40336524912](https://github.com/GalexY3/Metodologia-AB/actions/runs/40336524912) validó además apertura de cuarentena por teclado con Chromium. Ambas ejecuciones: 3/3 trabajos satisfactorios. Persiste el registro jurídico/identidad personal sin verificar; el producto continúa siendo una demo local ficticia. **Madurez vigente 36,350 % (PFL-V1 rev. 3), sin ajuste automático por ciclos**; VSDS 1/3, CT2 20/100 y 24/100, N1/N2/N3 nuevos 0. 
+
 ## BR8N — candidaturas originales y navegador real (26/10/2026)
 
 **8/8 ciclos AB con BRANCHING completados:** siete pruebas o integraciones técnicas/documentales aceptadas y un **PARTIAL_R5** porque aún falta identidad real de personas y partidos. [Ledger A–J](research/BRANCH8N_20261026/LEDGER.json) · [Informe](research/BRANCH8N_20261026/REPORT.md) · [Priors](research/PRIORS.md).

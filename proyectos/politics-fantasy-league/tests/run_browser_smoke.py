@@ -53,6 +53,9 @@ def main():
         assert nominations["n_provinces"]==25 and nominations["n_candidacies"]==263,nominations
         assert nominations["extracted_without_known_notices"]==16
         assert nominations["extracted_with_review_notices"]==9
+        assert nominations["quarantined_observed_headings"]==278
+        assert nominations["quarantine_provenance_status"]=="ORIGINAL_PDF_REEXTRACTION_MATCH"
+        assert len(nominations["quarantine_triage"])==27
         results["passes"].append("HTTP source-backed 25-province nomination atlas has 263 lists and 27 uncertainties")
 
         try:
@@ -89,6 +92,19 @@ def main():
             assert "RECORTES CERO" in atlas
             assert "secciones extraídas" in atlas.lower() and "secciones pendientes" in atlas.lower(), atlas[:2500]
             assert "263" in atlas and "25" in atlas
+            assert "108" in atlas and "rótulos" in atlas.lower(),atlas[:3500]
+            assert "no son 263 candidaturas proclamadas verificadas" in atlas.lower(),atlas[:3500]
+            assert "278" in atlas and "en cuarentena" in atlas.lower(),atlas[:3500]
+            quarantined=page.locator("#content details.card").filter(has_text="27 secciones en cuarentena").first
+            assert quarantined.count()==1
+            summary=quarantined.locator(":scope > summary")
+            summary.focus()
+            assert quarantined.get_attribute("open") is None
+            page.keyboard.press("Enter")
+            assert quarantined.get_attribute("open") is not None
+            assert "BURGOS" in quarantined.inner_text()
+            assert "rótulos observados no certificados" in quarantined.inner_text().lower()
+            results["passes"].append("Keyboard opens verified quarantine disclosure and shows Burgos")
             results["passes"].append("Original BOE multiprovince 263 electoral-list atlas and 27 uncertainty sections shown in Chromium")
             assert "No procede inferirlos" in atlas
             results["passes"].append("Chromium visualises official BOE eight candidacy labels with no legal-party inference")

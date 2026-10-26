@@ -116,3 +116,19 @@ Se incorporan **PF-N01–PF-N06** a la familia acumulativa, sin borrar ni reinte
 [BR8N 8 A–J](BRANCH8N_20261026/LEDGER.json) · [Informe](BRANCH8N_20261026/REPORT.md) · [Progreso V3](../product/progress_snapshot_v3_20261026.json).
 
 **N1/N2/N3 científicos nuevos 0, VSDS 1/3, CT2 multiactor 20/100, CT2 parlamentaria 24/100.** Los tests nativos y las candidaturas históricas son resultados técnicos/documentales delimitados.
+
+
+## PF-FOCUS20R · auditoría de calidad de la fuente original y cuarentena (26/10/2026)
+
+Sin sustituir los priors anteriores se incorporan **PF-R01–PF-R06**, con procedencia, contraevidencia y falsadores completos en [FOCUS20R/PRIORS_DELTA.md](FOCUS20R_20261026/PRIORS_DELTA.md). Estos son compromisos de interpretación, gobernanza o ingeniería, no posterior numérico ni descubrimiento sociológico.
+
+| Prior | Evidencia documental nueva | Límite |
+|---|---|---|
+| PF-R01 | De 263 encabezados extraídos, 108 están en nueve secciones con avisos de no proclamación y 155 en 16 secciones sin aviso conocido | **No** equivale a 108 candidaturas rechazadas ni a 155 proclamaciones certificadas |
+| PF-R02 | 47/47 fragmentos íntegros de GitHub Actions permitieron recuperar 27 secciones en cuarentena con 278 encabezados observados | Los ordinales faltantes siguen sin imputarse |
+| PF-R03 | Archivo separado, esquema cerrado, identificadores tipados y no elegibilidad para puntuación | No se ha auditado la seguridad de un servicio multiusuario |
+| PF-R04 | Reextracción del PDF original en CI coincide con los 25 + 27 conjuntos documentales | Mismo BOE y mismo procedimiento; no replicación social independiente |
+| PF-R05 | UI y API comunican explícitamente los estados sin aviso, revisión y cuarentena | Comprensión humana y accesibilidad integral sin validar |
+| PF-R06 | HTTPS institucional y SHA-256 no sustituyen verificación de licencias ni firma del editor | Dos bloqueos R5 documentados |
+
+[Ledger A–J 20 ciclos](FOCUS20R_20261026/LEDGER.json) · [Preregistro previo](FOCUS20R_20261026/PREREG.json) · [Informe](FOCUS20R_20261026/REPORT.md). N1/N2/N3 nuevos 0. VSDS 1/3. CT2 multiactor 20/100 y predictiva 24/100, sin elevar valores.
