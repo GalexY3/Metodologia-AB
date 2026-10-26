@@ -33,7 +33,7 @@ def extract_appointments(pdf_bytes: bytes) -> list[tuple[str,str]]:
     sentences=[p.strip() for p in block.split(".") if p.strip()]
     rows=[]
     for sentence in sentences:
-        m=re.fullmatch(r"Ministr[oa] (?:de|para) (.+?) a (?:don|doña) (.+)",sentence)
+        m=re.fullmatch(r"Ministr[oa] (?:de|del|para) (.+?) a (?:don|doña) (.+)",sentence)
         if not m:
             raise ValueError(f"UNMATCHED_APPOINTMENT_SENTENCE: {sentence[:90]}")
         portfolio,name=m.groups()
