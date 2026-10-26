@@ -1,0 +1,29 @@
+{
+  "id": "C18",
+  "type": "EXPERIMENTAL_AB_STATIC_REPO_AUDIT",
+  "status": "CLOSED_BOUNDED_INTEGRATION_GAP",
+  "source_files": [
+    "src/politics_fantasy/server.py",
+    "src/politics_fantasy/congress_vote_evidence.py",
+    "src/politics_fantasy/web/app.js",
+    "src/politics_fantasy/typed_refs.py"
+  ],
+  "observed": {
+    "api_historical_voting_route": "GET /api/verified-rollcalls",
+    "aggregate_events_only": true,
+    "api_real_person_scoring": false,
+    "api_first_public_at": null,
+    "endpoint_has_immutable_person_ids": false,
+    "typed_refs_imported_by_server": false,
+    "typed_refs_imported_by_vote_evidence": false,
+    "client_displays_2_aggregates_separate": true,
+    "no_original_dynamic_execution_this_cycle": true
+  },
+  "H1": "PARTIAL: verified API is aggregate-only, but typed reference guard is standalone and not integrated into server actor schema",
+  "H0": "No evidence the verification endpoint directly creates source identity-based scores",
+  "adversarial": "The broader game has other demo actor endpoints; static inspection of code does not prove end-to-end security or no unexpected runtime wiring. This is a development gap, not observed exploit.",
+  "grade_0_3": 0,
+  "CT2_before": 29,
+  "CT2_after": 29,
+  "decision": "C19 evaluate legal reuse conditions and personal-data/false-official-endorsement guard before any realistic player identities"
+}
