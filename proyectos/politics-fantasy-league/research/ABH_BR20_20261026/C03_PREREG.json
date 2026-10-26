@@ -1,0 +1,19 @@
+{
+  "id": "C03",
+  "status": "PREREGISTERED",
+  "mode": "AB-H",
+  "prior": [
+    "C01 official whole-roster export inaccessible",
+    "C02 official XIV/XV source codes differ for two public figures; not global IDs"
+  ],
+  "question": "Can the official Spanish Interior Ministry RPP provide a verifiable formation-level registration key from a publicly accessible indexed record, distinct from electoral candidature acronym?",
+  "H1": "RPP has an independently inspectable public record with stable registration number and dates for a sampled known formation.",
+  "H0": "Only procedural request for certificate or public query without accessible stable primary record; cannot join legal party by acronym.",
+  "H_alt": "Available indexed record but provenance, temporal status or reuse conditions insufficient.",
+  "test": "Inspect primary sede.interior.gob.es Partidos Politicos section and its public consulta/registro pages. Do not import private data. Record exact evidence fields and access failures.",
+  "stop": "If no original RPP record with robust temporal key is directly retrievable, STOP_R5 on legal formation matching.",
+  "guardrails": "No equating party, coalition, candidacy, parliamentary group.",
+  "CT2_before": 29,
+  "VSDS": "1/3",
+  "cost": "web public only; no Actions"
+}
