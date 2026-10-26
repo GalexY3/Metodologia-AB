@@ -1,6 +1,6 @@
 {
   "campaign": "PF-AB32",
-  "cycles_closed": 14,
+  "cycles_closed": 15,
   "cycles": [
     {
       "id": "C01",
@@ -488,18 +488,48 @@
       ],
       "decision": "C15 test cross-session identity and role dates on source202 instead of declaring cross-temporal validity automatically.",
       "status": "CLOSED_BOUNDED"
+    },
+    {
+      "id": "C15",
+      "hypotheses": {
+        "H1": "September independent-session roll call joins historical roster and 2026 group map",
+        "H0": "new period introduces collisions or invalid office dates"
+      },
+      "observed": "2026-10-26T15:16:42Z",
+      "instrument": "audit_cross_session.py on original session202 JSON and 20261026 roster, GitHub Actions 40347678119",
+      "result": {
+        "source_rows": 350,
+        "source_name_matches": 350,
+        "group_map_conflicts": 0,
+        "published_vote_tally_match": true,
+        "session": 202,
+        "date": "2026-09-30"
+      },
+      "adversarial": "Only 1 event from a second date; name matching across sessions is still a heuristic; no immutable person IDs, no dynamic parliamentary group changes tested.",
+      "priors_update": [
+        {
+          "id": "PF-32-15",
+          "proposition": "Single-vote name+group concordance transfers from session193 Jul to 202 Sep",
+          "state": "supported 1 held-out session across ~2months, no person scoring",
+          "evidence": "40347678119 C15_CROSS_TIME original 350/350",
+          "counterevidence": "only two sessions, no RPP identities",
+          "falsifier": "other published legislative date mismatches identity/term/group"
+        }
+      ],
+      "decision": "C16 investigate whether Congress calendar exposes dates for heterogeneous source sampling instead of testing 21 votes from one correlated sitting.",
+      "status": "CLOSED_BOUNDED"
     }
   ],
   "next_cycle_prereg": {
-    "id": "C15",
-    "chosen_after": "C14 independent September session original captured",
-    "question": "Does exact-name and group-mapping reconciliation transfer across two months from July 23 to Sept30, and do all 350 political roles remain valid as-of new date?",
+    "id": "C16",
+    "chosen_after": "C15 second date 350/350, concern about correlated same-day tests and calendar exposes 21 same-sitting files",
+    "question": "Does official Congress HTML calendar contain machine-parsable distinct date options sufficient for time-stratified reproducible auditing?",
     "hypotheses": {
-      "H1": "350/350 match roster and valid office intervals, unchanged group code→name map",
-      "H0": "identity mismatch, term violations or group reassignment emerge"
+      "H1": "at least 12 distinct 2025–26 official dates discoverable",
+      "H0": "calendar only current date; cannot claim cross-date sample"
     },
-    "method": "audit original 20260930 vote 001 vs already-retrieved current+discharged roster and July group abbreviations, no persons printed",
-    "criterion": "record 350 raw rows exact candidate count, unknowns, role and group discrepancies; if conflicts quarantine and adapt next source",
+    "method": "fresh TLS HTML fetch, parse select/option values and date-like href/option metadata; emit public date-only inventory without people",
+    "criterion": ">=12 distinct dates usable for prospective multi-date adaptive sampling, else STOP_R5 broader generalization",
     "status": "PREREGISTERED_BEFORE_TEST"
   },
   "first_block": {
