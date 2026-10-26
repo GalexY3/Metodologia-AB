@@ -1,0 +1,59 @@
+{
+  "campaign": "PFL_AB20_IDENTITY_20261026",
+  "authorization": 20,
+  "mode": "BRANCHING",
+  "cycle": "C01",
+  "type": "EXPERIMENTAL_AB_SOURCE_AUDIT",
+  "branch": "B_IDENTITY_HISTORY",
+  "drift_D": 2,
+  "A": {
+    "question": "Does original XV Legislature deputy index carry a deterministic institutional source ID that can replace exact-name match between voter rows and current Congress roster?",
+    "unit": "public parliamentary profile entry",
+    "population": "Congress XV Legislature source index",
+    "estimand": "share of indexed profile hyperlinks with unique documented codParlamentario; not real-person scoring",
+    "true_outcome": "distinct official source-scoped profile identifiers",
+    "proxy": "extractable ID from indexed hyperlinks",
+    "known_limits": "profile ID may only be stable within one legislature; roster has no explicit ID"
+  },
+  "B": {
+    "H1": "indexed deputy profile URLs expose non-repeating source-scoped codParlamentario IDs",
+    "H0": "profile URLs contain no stable numerical ID or collide",
+    "H_other": "IDs exist but index is incomplete or dynamically inaccessible"
+  },
+  "C": {
+    "instrument": "official Congress XV source index + one official profile HTML; strict verified HTTPS; HTMLParser; public links only",
+    "budget": "one index HTML <=3MB, one profile page <=2MB",
+    "falsifier": "zero/duplicate numeric IDs or profile ID not echoed",
+    "controls": "official roster current+discharged schema 412 rows as non-equal reference; no name resolution accepted",
+    "holdout": "all discovery EXPLORATORY; no confirmatory holdout",
+    "expected": "count link IDs and verify ID URL echo"
+  },
+  "D": {
+    "frozen_tool": "scripts/ab20_identity_index.py",
+    "success": "at least one unique institutional profile ID and valid page link; no identity claim",
+    "failure": "STOP_R5 for identity schema if no link ID"
+  },
+  "E": {
+    "before_request": "prereg commit; GitHub Actions real source fetch"
+  },
+  "F": {
+    "adversarial": "publisher page can embed numeric seat order only; name is not ID; link may change"
+  },
+  "G": {
+    "external_replication": "NOT_DONE"
+  },
+  "H": {
+    "ct2_before": 20,
+    "ct2_after": null,
+    "grade_0_3": null,
+    "new_prior": "PF-ID20-01 only after observation"
+  },
+  "I": {
+    "validity": "source schema test only, not causal, independent person identity or legal party"
+  },
+  "J": {
+    "pending": "choose C02 only once source structure and CI evidence seen"
+  },
+  "status": "PREREGISTERED_NOT_EXECUTED",
+  "prereg_timestamp": "Git commit datetime, see immutable commit"
+}
