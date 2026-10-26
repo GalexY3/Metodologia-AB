@@ -34,6 +34,7 @@ jobs:
           node --test tests/test_political_universe.mjs
           node --test tests/test_br30g_audit.mjs
           node --test tests/test_evidence_warehouse.mjs
+          node --test tests/test_evidence_privacy_recursive.mjs
           node --test tests/test_evidence_ingest_cli.mjs
           node --test tests/test_progress_model.mjs
           node --test tests/test_progress_revision_v2.mjs
