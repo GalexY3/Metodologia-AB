@@ -37,6 +37,8 @@ jobs:
           node --test tests/test_evidence_ingest_cli.mjs
           node --test tests/test_progress_model.mjs
           node --test tests/test_progress_revision_v2.mjs
+          node --test tests/test_audit_candidacy_crosswalk.mjs
+          node scripts/audit_candidacy_crosswalk.mjs > /tmp/pf-albacete-crosswalk.json
           node scripts/progress_report.mjs product/progress_scope_v1.json product/progress_scope_v2_20261026.json > /tmp/pf-progress.json
       - name: Python local integration
         run: |
