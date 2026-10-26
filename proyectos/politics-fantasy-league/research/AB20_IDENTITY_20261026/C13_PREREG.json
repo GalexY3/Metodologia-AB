@@ -1,0 +1,53 @@
+{
+  "id": "C13",
+  "parent": "C12",
+  "status": "PREREGISTERED_BEFORE_LOCAL_EXEC",
+  "A": {
+    "question": "Can a source-provenance temporal schema prevent conflating parliamentary seat, group affiliation, and internal office when aggregating dated documents?",
+    "estimand": "number of failed invariant tests across distinct source event types and availability dates",
+    "population": "engine records, not politicians",
+    "treatment": "typed event specification",
+    "comparison": "untyped naive name/date event",
+    "outcome": "illegal merges and false public timestamp attribution",
+    "proxy": "deterministic unit test pass/fail"
+  },
+  "B": {
+    "H1": "typed events reject cross-kind joins, unknown person scoring, and synthetic publication timestamps",
+    "H0": "one or more invariants fail",
+    "H_other": "data schema safe but no real source IDs to integrate"
+  },
+  "C": {
+    "tests": [
+      "group change never ends seat",
+      "seat entry no group implied",
+      "source publication day differs effective day",
+      "no first_public_at fabricated",
+      "unknown identity remains unscorable",
+      "typed source/event keys unique"
+    ],
+    "budget": "local Python stdlib 6+ tests, 0 GitHub Actions",
+    "falsifier": "test violates one invariant"
+  },
+  "D": {
+    "implementation": "src/politics_fantasy/temporal_parliament.py and tests/test_temporal_parliament.py",
+    "data": "synthetic microexamples only; source facts used as requirements, not experimental data"
+  },
+  "E": {
+    "status": "UNRUN"
+  },
+  "F": {
+    "adversarial": "tests built against code don't prove external source accuracy or full bitemporal storage"
+  },
+  "G": {
+    "external_replication": "NO"
+  },
+  "H": {
+    "CT2_before": 29
+  },
+  "I": {
+    "grade_0_3": 0
+  },
+  "J": {
+    "next": "after observing local tests decide stronger adversarial property audit or source-history extraction"
+  }
+}
