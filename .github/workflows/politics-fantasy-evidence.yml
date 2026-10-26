@@ -41,7 +41,7 @@ jobs:
       - name: Python local integration
         run: |
           python -m pip install pytest
-          PYTHONPATH=src python -m pytest -q tests/test_actor_api.py tests/test_product.py tests/test_evidence_warehouse_status.py tests/test_evidence_http_smoke.py tests/test_progress_api.py tests/test_progress_http.py tests/test_capture_official_sources.py tests/test_verify_boe_table_pdf.py tests/test_audit_proclaimed_candidates.py
+          PYTHONPATH=src python -m pytest -q tests/test_actor_api.py tests/test_product.py tests/test_evidence_warehouse_status.py tests/test_evidence_http_smoke.py tests/test_progress_api.py tests/test_progress_http.py tests/test_capture_official_sources.py tests/test_verify_boe_table_pdf.py tests/test_audit_proclaimed_candidates.py tests/test_candidacy_api.py
       - name: Secondary source fetch, pinned revision verification
         run: |
           curl -fsSL --retry 3 --max-time 35 -o /tmp/pf-202307.csv https://raw.githubusercontent.com/anerodata/data-elecciones-congreso-espana/main/202307.csv
