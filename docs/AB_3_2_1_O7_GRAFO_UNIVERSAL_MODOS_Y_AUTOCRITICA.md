@@ -53,3 +53,12 @@ Prototipo local AB Atlas v0.2 probado con 20 comprobaciones de ingeniería C01�
 - [Ledger de C01–C20](../research/AB_O7_ATLAS20_20261026/LEDGER.json)
 
 La norma continúa **PILOTO**, mutable/reversible. No inducir CT2, 2/3–3/3 o probabilidades de éxito de los 20 tests. Aplicar R5: detener nuevas comprobaciones locales repetitivas hasta probarlo con un proyecto real, usuarios y baseline competente.
+
+
+## Implementación Atlas 0.3 — actualización por lotes y economía de contexto (26-10-2026)
+
+**Nueva infraestructura versionada:** [motor de grafo](../ab_atlas/abmap.py), [aplicador de deltas](../ab_atlas/atlas_delta.py), [visor](../ab_atlas/viewer/template.html), [protocolo ChatGPT](../ab_atlas/docs/AB_ATLAS_V03_CHATGPT_SYNC.md) y [suite de pruebas](../ab_atlas/tests). El caso real de aplicación inicial es [Politics Fantasy](../proyectos/politics-fantasy-league/ab_atlas/README.md), con `seed.json` + `updates/*.json` + `CURRENT.md`. El HTML es una vista navegable regenerable, no la fuente de verdad.
+
+Cada bloque autorizado de X ciclos AB debe producir **un lote mínimo de cambios** (altas, estados, pruebas, puertas de entrega, ejecuciones y complaints), preservando IDs e historia. Los agentes recuperan primero un resumen compacto, no la totalidad del grafo. `parent_batch` permite rechazar secuencias obsoletas; el aplicador exige integridad referencial, aceptación documentada de entregables y pruebas para gates superados. No confundir una referencia de evidencia con su autenticación, ni aplicar cambios metodológicos nuevos como mejora ya demostrada.
+
+**Certificación limitada:** se verificaron en ejecución local 37 pruebas (20 contrastes instrumentales originales, 3 legadas, 9 pruebas de deltas y 5 interacciones de navegador). Las 20 fichas A–J originales se conservan; las nueve comprobaciones nuevas son tests de ingeniería, no nuevos ciclos científicos ni prueba de superioridad de AB. Faltan benchmarking de costes/contexto real, conflictos simultáneos multiagente, seguridad de un servicio web, auditoría de fuentes y evaluación con usuarios. No aumentar CT2 ni VSDS por haber añadido código.
