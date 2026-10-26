@@ -1,6 +1,6 @@
 {
   "campaign": "PF-AB32",
-  "cycles_closed": 1,
+  "cycles_closed": 2,
   "cycles": [
     {
       "id": "C01",
@@ -40,18 +40,57 @@
       ],
       "decision": "C02 schema/profile audit without publishing names, then decide cohort strategy.",
       "status": "CLOSED_BOUNDED"
+    },
+    {
+      "id": "C02",
+      "hypotheses": {
+        "H1": "Stable machine-readable IDs plus time fields",
+        "H0": "Name-only rows without stable source ID"
+      },
+      "instrument": "audit_congress_shape.py on real Congress JSON in CI 40341871306",
+      "observed": "2026-10-26T14:41:17Z",
+      "result": {
+        "job": 121638418278,
+        "active_json": 137,
+        "leavers_json": 275,
+        "economic_declarations": 2787,
+        "active_schema": [
+          "NOMBRE",
+          "FECHAALTA",
+          "FECHACONDICIONPLENA",
+          "FORMACIONELECTORAL",
+          "GRUPOPARLAMENTARIO",
+          "CIRCUNSCRIPCION"
+        ],
+        "explicit_person_identifier_key": false,
+        "leavers_have_end_date": true
+      },
+      "adversarial": "Name cannot be a globally unique stable identifier; catalog published during October 2026 dissolution. 137+275 cannot be interpreted as 412 active legislators.",
+      "priors_update": [
+        {
+          "id": "PF-32-02",
+          "proposition": "Congress JSON includes official roster metadata and temporally bounded term fields, but not explicit stable ID",
+          "state": "supported observed schema, strict identity link remains blocked",
+          "evidence": "CI job 121638418278 shape no names logged",
+          "counterevidence": "biography may contain profile URL with opaque identifier, not inspected yet",
+          "falsifier": "validated person-specific unique official institutional key found"
+        }
+      ],
+      "decision": "C03 audit exact name overlap, date format and term temporal integrity.",
+      "status": "CLOSED_BOUNDED"
     }
   ],
   "next_cycle_prereg": {
-    "id": "C02",
-    "chosen_after": "C01 official download SUCCESS",
-    "question": "Do JSONs expose stable identity IDs, role/term dates and sufficient non-null fields for defensible current-vs-history distinction?",
+    "id": "C03",
+    "chosen_after": "C02 proved date fields but no stable identifier",
+    "question": "Is exact-name overlap between current and discharged cohorts measurable, and are all term start/end fields parseable and logically ordered?",
     "hypotheses": {
-      "H1": "Stable source keys and temporal/legislature dimensions present",
-      "H0": "Free text, ambiguous, temporally unstable, privacy leakage"
+      "H1": "No contradictory duplicate active records and end dates after start",
+      "H0": "Overlap or date errors preclude cohort",
+      "H2": "Data temporally reflects post-dissolution residual status"
     },
-    "method": "read authentic raw files in private GHA only; audit keys/types/coverage; no public values; compare counts per resource",
-    "pass_criterion": "keys stable, at least one appropriate date/legislature field and person/cargo id; else STOP_R5 or pivot to another source",
+    "method": "fresh-original re-fetch, normalize name internally without exporting it, validate dates and joint counts",
+    "criterion": "aggregate anomalies recorded; if ambiguous then isolate nonambiguous active rows as source-only, not reconciled identity",
     "status": "PREREGISTERED_BEFORE_TEST"
   }
 }
