@@ -1,0 +1,40 @@
+{
+  "id": "C01",
+  "campaign": "PFL-ABH-BR20-20261026",
+  "status": "INCONCLUSIVE_STOP_SOURCE_FETCH",
+  "prereg_commit": "eb0b001d460223c7c10cd0b81d00b28f13365a6f",
+  "tested": "Official /gl/opendata/diputados link 31 'todos los diputados ... todas las legislaturas' as indexed by web source",
+  "observed": {
+    "catalogue_has_json_link": true,
+    "asset": "https://www.congreso.es/webpublica/opendata/diputados/Diput__20260725050229.json",
+    "asset_fetch": "CACHE_MISS",
+    "direct_payload_inspected": false,
+    "stable_person_id_documented": false
+  },
+  "interpretation": "No evidence that codParlamentario is a universal immutable person ID; no payload obtained, so neither existence nor nonexistence of such identifier is proved.",
+  "hypotheses": {
+    "H1": "NOT_TESTABLE",
+    "H0": "NOT_CONFIRMED",
+    "H_alt": "compatible with inaccessible data"
+  },
+  "ABP": "retain scoped term/source keys; forbid automatic person merges",
+  "ABR": "source-access blocked, not identity proof",
+  "CT2_after": 29,
+  "VSDS_after": "1/3",
+  "N1_N2_N3": [
+    0,
+    0,
+    0
+  ],
+  "decision": "BRANCH C02: test whether official XV/XIV individual profile pages independently expose crosslegislature linkage; stop if none accessible",
+  "sources": [
+    "https://www.congreso.es/gl/opendata/diputados",
+    "https://www.congreso.es/webpublica/opendata/diputados/Diput__20260725050229.json"
+  ],
+  "cost": {
+    "actions": 0
+  },
+  "complaints": [
+    "Official catalog links a timestamped JSON export that could not be retrieved via this browsing environment; source access unverified, not necessarily provider outage."
+  ]
+}
