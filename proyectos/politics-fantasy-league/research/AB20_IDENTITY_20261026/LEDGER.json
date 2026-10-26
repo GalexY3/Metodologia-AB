@@ -1,9 +1,9 @@
 {
   "campaign": "AB20_IDENTITY_20261026",
   "authorization": "20 BRANCHING",
-  "executed": 2,
-  "closed_valid": 2,
-  "remaining": 18,
+  "executed": 3,
+  "closed_valid": 3,
+  "remaining": 17,
   "drift": "D2.0: same institution, new estimand source-scoped identity reconciliation",
   "scope": "Exploratory documentary/engineering; cannot infer political ideology or score",
   "cycles": [
@@ -64,6 +64,33 @@
       "holdout_status": "EXPLORATORY; remaining 404+ profiles unqueried",
       "decision": "REPAIR C03 semantic heading-only match instead of whole-page scan",
       "status": "CLOSED_BOUNDED"
+    },
+    {
+      "id": "C03",
+      "type": "EXPERIMENTAL_AB_REPAIR",
+      "prereg_commit": "5ee2697c3153566bf7665ce39d1cdb4ed5538132",
+      "code_commit": "18219e3fb6beb2f989f70eda67e9e541fe196865",
+      "run": "https://github.com/GalexY3/Metodologia-AB/actions/runs/40361650800",
+      "question": "Semantic title vs whole-page string false matches?",
+      "estimand": "same 8 profile source pages h2 roster candidate count",
+      "result": {
+        "profiles": 8,
+        "h2_unambiguous": 8,
+        "global_page_unique_prev": 5,
+        "meta_title_unique": 0
+      },
+      "rivals": [
+        "H1 h2 resolves all eight",
+        "H0 absent or still ambiguous"
+      ],
+      "adversarial": "same original sample as C02; process correction not external replication. Exact text is still not cross-period immutable identity.",
+      "grade_0_3": 0,
+      "ct2_before": 21,
+      "ct2_after": 24,
+      "ct2_rationale": "Specifically remedied observed false ambiguity 3/8 with semantic h2 (8/8); source-scoped identity route now testable.",
+      "holdout_status": "8 training/layout-development cases EXPOSED; 404 unsampled",
+      "decision": "CONTINUE C04 independently withheld index profiles with frozen h2 matcher",
+      "status": "CLOSED_BOUNDED_REPAIR"
     }
   ],
   "priors": [
@@ -88,6 +115,17 @@
       "evidence_against": "may in part reflect real changes in institutional biographies",
       "falsifier": "semantic heading parsing also returns multiple names",
       "type": "EMPIRICO_OBSERVACIONAL"
+    },
+    {
+      "id": "PF-ID20-03",
+      "proposition": "Congress XV profile page h2 can discriminate roster name uniquely in 8 layout-development cases",
+      "provenance": "CI 40361650800 h2 all 8 vs full-page only 5",
+      "scope": "HTML profile title on 2026-10-26 source snapshot",
+      "uncertainty": "same sample used to choose parser; no unseen validation yet",
+      "evidence_for": "8/8 h2, 0 h1, 0 meta-title",
+      "evidence_against": "provider can alter DOM; direct text no cross-legislature identity",
+      "falsifier": "frozen h2 fails prespecified fresh-index sample",
+      "type": "EMPIRICO_OBSERVACIONAL"
     }
   ],
   "new_discoveries_1_3": 0,
@@ -95,9 +133,9 @@
   "N3": 0,
   "CT2_identity": {
     "start": 20,
-    "now": 21,
+    "now": 24,
     "confidence": "LOW",
     "not_probability": true
   },
-  "next": "C03"
+  "next": "C04"
 }
