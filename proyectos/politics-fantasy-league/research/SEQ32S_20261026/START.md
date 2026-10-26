@@ -41,3 +41,14 @@ Efecto de alcance: **nombramiento de miembros del Gobierno en noviembre 2023 no 
 Pregunta: ¿puede exponerse la cohorte de 22 **nombramientos históricos** mediante API read-only con digest original fijado y sin permitir que filas alteradas asignen scoring/partido/mandato actual?
 H1: lector fail-closed y negativos evitan promoción semántica; rival H0: UI/API filtran atributos arbitrarios, o metadatos de nominación se convierten en cargos presentes.
 Contrato: snapshot digest igual a fuente observada; whitelist exacta de campos; 22 IDs locales únicos; sin inferir first_public_at ni fecha de cese; prueba HTTP de respuesta pública sin scores. Si API/test rechaza fuente auténtica o tolera mutaciones, detener.
+
+## C04 · resultado y elección de C05
+- [GitHub Actions 40343693538](https://github.com/GalexY3/Metodologia-AB/actions/runs/40343693538): `source-and-app-checks` PASS (incluidas negativas de API/CSV/Congreso/BOE); `original-source-download` PASS (22/22 otra vez). `browser-e2e` seguía en ejecución al primer corte, no reclamarlo aún.
+- Endpoint `GET /api/official-appointments`: 22 registros DOCUMENTALES del nombramiento 2023, lectura local y solo campos públicos acotados; ningún dato de partido, final de mandato, scoring o actividad.
+- Un test de corrupción reveló que el lector de archivos podría aceptar una cartera alterada aunque tuviera formato correcto. Se reparó **antes de adjudicar C04**, fijando SHA1 de objeto Git `037eaac7b757604a8dc97da8da041607654131aa` del snapshot binario real junto al SHA256 del PDF. Negativas mutando nombre/cargo/afiliación/cese rechazan el archivo.
+- PF-S04: control técnico de instantánea derivada y transcripción fuente es necesario para evitar error de representación; no prueba sincronización de ministerios, actualización 2026 o seguridad multiusuario.
+- J: aceptación técnica limitada del endpoint histórico, conservando progreso 36,350% hasta auditoría contra hitos.
+
+### C05 · preregistro tras comprobar C04
+Riesgo residual detectado: el verificador CI vuelve a extraer 22 líneas, pero aún **no compara SHA256 del PDF descargado con el SHA registrado**. Puede pasar una revisión de bytes sin cambios en los 22 rótulos. H1: igualdad de hash exacta bloquea drift del original; H0: fuente cambia legítimamente por reedición o mutación (en ese caso STOP_R5, no sobrescribir pin).
+Prueba: agregar comparación en la captura real, inyectar PDF de prueba corrupto y comprobar que falla, y verificar repetición del original. Solo entonces reevaluar la capacidad de reproducción de la instantánea; no aumentar cobertura de personas.
