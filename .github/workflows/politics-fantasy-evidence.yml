@@ -88,7 +88,7 @@ jobs:
           import json,hashlib
           base=Path('/tmp/pf-official-source-capture')
           x=json.loads((base/'capture_manifest.json').read_text())
-          assert x['original_download_attempts']==3
+          assert x['original_download_attempts']==4
           assert x['raw_downloads_success']==sum(bool(v['original_binary_captured']) for v in x['sources'])
           for row in x['sources']:
               if not row['original_binary_captured']:
