@@ -1,9 +1,9 @@
 {
   "campaign": "AB20_IDENTITY_20261026",
   "authorization": "20 BRANCHING",
-  "executed": 4,
-  "closed_valid": 4,
-  "remaining": 16,
+  "executed": 5,
+  "closed_valid": 5,
+  "remaining": 15,
   "drift": "D2.0: same institution, new estimand source-scoped identity reconciliation",
   "scope": "Exploratory documentary/engineering; cannot infer political ideology or score",
   "cycles": [
@@ -120,6 +120,40 @@
       "holdout_status": "SINGLE_USE_CONSUMED; not fresh for further confirmation",
       "decision": "C05 historical unmatched 2024 name compared with independent all-legislatures source corpus",
       "status": "CLOSED_BOUNDED"
+    },
+    {
+      "id": "C05",
+      "type": "EXPERIMENTAL_AB_SOURCE_AUDIT_WITH_REPAIRS",
+      "prereg_commit": "9858d5891ed0ab118ebb9dbf79c6a45e58ae684d",
+      "final_code_commit": "4c0a751721c55903710906fbe9257ebe90904718",
+      "runs": [
+        "40362392089",
+        "40362607116",
+        "40362786773",
+        "40362919253"
+      ],
+      "question": "2024 missing rollcall name found in Congress all-legislature archive?",
+      "estimand": "exact full name APELLIDOS+NOMBRE match in 6325 official historical terms",
+      "result": {
+        "vote_missing_current": 1,
+        "archive_records": 6325,
+        "archive_distinct_person_name_keys": 3063,
+        "exact_archival_matches": 0,
+        "archive_sha256": "f0fab4bfeb92eff403c6300557ac00d377cdef3a8cec7466d504d876914144a3"
+      },
+      "errors": [
+        "anchor label text mismatch",
+        "stale endpoint absent current catalogue",
+        "split NOMBRE and APELLIDOS schema corrected"
+      ],
+      "adversarial": "exact absence not proof of different person; orthographic variants possible",
+      "grade_0_3": 0,
+      "ct2_before": 26,
+      "ct2_after": 24,
+      "ct2_rationale": "historic register fails to explain orphan string exactly",
+      "holdout_status": "EXPLORATORY",
+      "decision": "C06 orthographic-only test, no fuzzy identity",
+      "status": "CLOSED_BOUNDED_EXACT_NEGATIVE"
     }
   ],
   "priors": [
@@ -166,6 +200,17 @@
       "evidence_against": "source fields lack immutable natural-person ID and no historical group dates",
       "falsifier": "valid original profile has h2 inconsistent with roster",
       "type": "EMPIRICO_OBSERVACIONAL"
+    },
+    {
+      "id": "PF-ID20-05",
+      "proposition": "2024 orphan vote name absent by exact reconstructed fullname from 6325 official historical records",
+      "provenance": "40362919253",
+      "scope": "single voter string",
+      "uncertainty": "orthography and missingness, true ID unverified",
+      "evidence_for": "0 exact from archive",
+      "evidence_against": "source schema corrections showed string choice matters",
+      "falsifier": "official historical biography establishes alias",
+      "type": "EMPIRICO_OBSERVACIONAL"
     }
   ],
   "new_discoveries_1_3": 0,
@@ -173,9 +218,9 @@
   "N3": 0,
   "CT2_identity": {
     "start": 20,
-    "now": 26,
+    "now": 24,
     "confidence": "LOW",
     "not_probability": true
   },
-  "next": "C05"
+  "next": "C06"
 }
