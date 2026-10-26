@@ -1,6 +1,6 @@
 {
   "campaign": "PF-AB32",
-  "cycles_closed": 15,
+  "cycles_closed": 16,
   "cycles": [
     {
       "id": "C01",
@@ -404,10 +404,10 @@
         "source_and_app_checks": "success; 111 pytest pass",
         "congress_source_probe": "success",
         "original_source_download": "success",
-        "native_browser": "IN_PROGRESS_CHROMIUM_RUNTIME_INSTALL_NOT_YET_OBSERVED",
+        "native_browser": "SUCCESS_NATIVE_CHROMIUM_40346235854",
         "ui_code_merged_into_research_branch": true
       },
-      "adversarial": "Browser assertions not yet executed due Chromium install; cannot claim end-to-end visual pass. Mark PARTIAL_R5, preserve pending workflow and re-adjudicate after finish.",
+      "adversarial": "Browser assertions not yet executed due Chromium install; cannot claim end-to-end visual pass. Mark PARTIAL_R5, preserve pending workflow and re-adjudicate after finish. CI browser subsequently passed in same run after slow runtime install. Later success added transparently, not prereg changes.",
       "priors_update": [
         {
           "id": "PF-32-12",
@@ -419,7 +419,7 @@
         }
       ],
       "decision": "Because source/app checks passed but browser installation is still unobserved, close C12 PARTIAL_R5_VISUAL pending; next branch seeks primary institutional dissolution source and legal role cutoff independent of UI.",
-      "status": "CLOSED_PARTIAL_R5_NATIVE_BROWSER_PENDING"
+      "status": "CLOSED_BOUNDED_NATIVE_BROWSER_CONFIRMED_AFTER_INITIAL_WAIT"
     },
     {
       "id": "C13",
@@ -518,25 +518,53 @@
       ],
       "decision": "C16 investigate whether Congress calendar exposes dates for heterogeneous source sampling instead of testing 21 votes from one correlated sitting.",
       "status": "CLOSED_BOUNDED"
+    },
+    {
+      "id": "C16",
+      "hypotheses": {
+        "H1": "date-picker exposes >=12 distinct dates for population sampling",
+        "H0": "only current selected date appears"
+      },
+      "observed": "2026-10-26T15:19:19Z",
+      "instrument": "audit_congress_calendar_dates.py official verified-TLS calendar and HTML option extraction, GHA 40348099682; first parsing error repaired after live CI",
+      "result": {
+        "option_count": 6,
+        "distinct_dates_seen": 1,
+        "only_date": "30/09/2026",
+        "date_choices_sufficient": false
+      },
+      "adversarial": "A single server-rendered page is not a date archive. A date link from secondary search may guide retrieval but cannot serve as primary observation itself.",
+      "priors_update": [
+        {
+          "id": "PF-32-16",
+          "proposition": "Official vote calendar HTML contains one selected date, not exhaustive dates discoverable from a single page",
+          "state": "SUPPORTED for this September page only; metadata might be available through uninspected JS endpoint",
+          "evidence": "GHA 40348099682 C16_DATES, 1 distinct date and 6 options",
+          "counterevidence": "site may have AJAX archive and other dates via explicit URL",
+          "falsifier": "official calendar offers separately accessible multi-date index"
+        }
+      ],
+      "decision": "C17 pivot from single-page enumeration to deliberately queried other official 2026-09-10 session (cited official indexed source), verify raw 196 JSON from canonical site.",
+      "status": "CLOSED_STOP_R5_DATE_INVENTORY"
     }
   ],
   "next_cycle_prereg": {
-    "id": "C16",
-    "chosen_after": "C15 second date 350/350, concern about correlated same-day tests and calendar exposes 21 same-sitting files",
-    "question": "Does official Congress HTML calendar contain machine-parsable distinct date options sufficient for time-stratified reproducible auditing?",
+    "id": "C17",
+    "chosen_after": "C16 showed one selected date only, but public official search index shows 10/09/2026 session 196",
+    "question": "Can requesting a different known official calendar date yield a new authentic September 10 session196 vote without guessing download URL?",
     "hypotheses": {
-      "H1": "at least 12 distinct 2025–26 official dates discoverable",
-      "H0": "calendar only current date; cannot claim cross-date sample"
+      "H1": "page exposes session196 date10Sep and official vote JSON with row data",
+      "H0": "query ignored / unavailable / wrong session"
     },
-    "method": "fresh TLS HTML fetch, parse select/option values and date-like href/option metadata; emit public date-only inventory without people",
-    "criterion": ">=12 distinct dates usable for prospective multi-date adaptive sampling, else STOP_R5 broader generalization",
+    "method": "verified TLS HTML link parser, select official JSON href for Session196, verify JSON sesion=196 and calendar date against requested day; digest original, no person values",
+    "criterion": "one original cross-date session196 event with SHA and tally, otherwise STOP_R5 then seek official ZIP or alternative date",
     "status": "PREREGISTERED_BEFORE_TEST"
   },
   "first_block": {
     "authorization": 12,
     "closed": 12,
-    "bounded_successes": 11,
-    "partial_R5": 1,
+    "bounded_successes": 12,
+    "partial_R5": 0,
     "gate_to_second_block": "OPEN_USER_PREAUTHORIZED_20_ADAPTIVE"
   }
 }
