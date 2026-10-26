@@ -23,7 +23,7 @@ jobs:
         run: python scripts/probe_congress_opendata.py
       - name: C05 historical vote anomaly against full institutional roster archive
         working-directory: proyectos/politics-fantasy-league
-        run: python scripts/ab20_historical_missing.py
+        run: python scripts/ab20_name_representation.py
       - name: Preserve original investigation receipts without person values
         if: always()
         uses: actions/upload-artifact@v4
