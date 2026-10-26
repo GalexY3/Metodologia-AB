@@ -29,7 +29,7 @@ def main():
     parser=Parser();parser.feed(data.decode("utf-8","replace"))
     vals=set()
     for q in parser.options:
-        txt=q["text"]+" "+" ".join(q["attrs"].values())
+        txt=q["text"]+" "+" ".join(str(v) for v in q["attrs"].values() if v is not None)
         for m in PAT.finditer(txt):vals.add(m.group())
     vals.update(m.group() for m in PAT.finditer(data.decode("utf-8","replace")))
     # Date set may include references outside a selector; flag not independently certified.
@@ -37,6 +37,6 @@ def main():
  except Exception as e:result.update(error_type=type(e).__name__,http_code=getattr(e,"code",None))
  P.mkdir(parents=True,exist_ok=True)
  (P/"calendar_dates_inventory.json").write_text(json.dumps(result,ensure_ascii=False,indent=2)+"\n")
- print("C16_DATES="+json.dumps({k:result.get(k) for k in ("status","dates_count","option_count","html_sha256")},ensure_ascii=False))
+ print("C16_DATES="+json.dumps({k:result.get(k) for k in ("status","dates_count","option_count","html_sha256","error_type","http_code")},ensure_ascii=False))
  print("C16_DATE_SAMPLE="+json.dumps(result["available_dates"][:10]))
 if __name__=="__main__":main()
