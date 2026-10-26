@@ -1,5 +1,19 @@
 # Politics Fantasy League — Political Data Science Laboratory
 
+## Estado actual y arranque rápido
+
+Laboratorio de datos políticos con un **fantasy local de figuras ficticias**. La demo permite crear clubes, comprar/vender y guardar alineaciones; el observatorio presenta fuentes históricas con sus límites. Los datos electorales reales no puntúan a personas en el juego. El cierre y avance automático de jornadas sigue pendiente.
+
+Desde esta carpeta, con Python 3.10 o superior:
+
+```sh
+python run_demo.py
+```
+
+Abre `http://127.0.0.1:8787`. Para desarrollo: `python -m pip install -e ".[test]"`, `python -m pytest -q` y `node --test tests/*.mjs` (Node 22 o superior; en Bash también funciona con Node 20). El CI del monorepo está en `../../.github/workflows/politics-fantasy-evidence.yml`; un workflow dentro de esta subcarpeta solo funciona si el proyecto se convierte en repositorio independiente.
+
+[Revisión de software y prioridades del 26/10/2026](docs/REVISION_RAPIDA_20261026.md). El historial de campañas que sigue conserva sus estados y resultados de cada fecha.
+
 ## BR8N — candidaturas originales y navegador real (26/10/2026)
 
 **8/8 ciclos AB con BRANCHING completados:** siete pruebas o integraciones técnicas/documentales aceptadas y un **PARTIAL_R5** porque aún falta identidad real de personas y partidos. [Ledger A–J](research/BRANCH8N_20261026/LEDGER.json) · [Informe](research/BRANCH8N_20261026/REPORT.md) · [Priors](research/PRIORS.md).

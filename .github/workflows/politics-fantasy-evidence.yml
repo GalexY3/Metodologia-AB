@@ -14,6 +14,37 @@ permissions:
   contents: read
 
 jobs:
+  offline-regression:
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        python-version: ['3.10', '3.13']
+    defaults:
+      run:
+        working-directory: proyectos/politics-fantasy-league
+    env:
+      PYTHONPATH: src
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install offline test dependencies
+        run: python -m pip install ".[test]"
+      - name: Complete Python regression suite
+        run: python -m pytest -q
+      - name: Complete JavaScript regression suite
+        shell: bash
+        run: node --test tests/*.mjs
+      - name: Frontend syntax
+        run: node --check src/politics_fantasy/web/app.js
+
   source-and-app-checks:
     runs-on: ubuntu-latest
     timeout-minutes: 15
