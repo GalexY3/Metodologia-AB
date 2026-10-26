@@ -63,3 +63,15 @@ class DeltaTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,'extremo de enlace'):delta.replay(self.base,self.batches)
         self.assertEqual(len(abmap.read(self.base)['nodes']),1)
 if __name__=='__main__':unittest.main()
+
+class ExtraInvariants(unittest.TestCase):
+    def test_meta_scaffold_keeps_meta_mode(self):
+        doc=abmap.init_doc('Inspect AB itself','meta')
+        self.assertTrue(all(x['mode']=='meta' for x in doc['nodes']))
+        self.assertEqual(doc['nodes'][0]['kind'],'research')
+        self.assertIsNone(doc['project_contract'])
+    def test_brief_compacts_events(self):
+        doc=abmap.init_doc('Compact','project',scaffold=False)
+        doc['events'][-1]['payload']['huge']='X'*50000
+        b=delta.brief(doc,[],events=5)
+        self.assertLess(len(json.dumps(b)),5000)
