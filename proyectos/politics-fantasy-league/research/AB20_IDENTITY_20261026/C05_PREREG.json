@@ -1,0 +1,46 @@
+{
+  "cycle": "C05",
+  "parent": "C04",
+  "A": {
+    "question": "Does the official all-legislatures register account for the one unmatched 2024-04-09 roll-call name?",
+    "estimand": "unique norm-name occurrence in official multi-legislature archival corpus for one current-roster absent 2024 voter string",
+    "units": "one anonymized missing-name case",
+    "limitations": "matching strings never constitutes legal identity, may be multiple terms same person"
+  },
+  "B": {
+    "H1": "The missing voter name appears uniquely in all-legislature dataset",
+    "H0": "No archival source record",
+    "H_other": "multiple historical records or alternative spelling"
+  },
+  "C": {
+    "sources": [
+      "www.congreso.es/es/opendata/diputados catalogue official JSON",
+      "2024-04-09 official vote1 original",
+      "2026-10-26 active/departed JSON"
+    ],
+    "budget": "one historic original + one all-legislatures JSON under 24MB",
+    "falsification": "absence or duplicate in full institutional dataset"
+  },
+  "D": {
+    "instrument": "scripts/ab20_historical_missing.py",
+    "privacy": "Only counts/types, no person names or exact matching string emitted"
+  },
+  "E": {
+    "status": "PREREGISTERED_BEFORE_NETWORK"
+  },
+  "F": {
+    "adversarial": "all-leg dataset may reuse entries per term; current-roster absent may not be real person rather spelling variation"
+  },
+  "G": {
+    "holdout": "EXPLORATORY; no independent confirmation"
+  },
+  "H": {
+    "ct2_before": 26
+  },
+  "I": {
+    "grade_expected": "0/3 unless distinct novelty criterion met"
+  },
+  "J": {
+    "next": "choose after absent/one/multiple archival outcome"
+  }
+}
