@@ -20,6 +20,7 @@ from .evidence_warehouse_status import status as evidence_status
 from .progress_api import progress_status
 from .candidacy_api import status as official_candidacies_status
 from .nomination_atlas import status as nomination_atlas_status
+from .nomination_quality import audit as nomination_quality_audit
 
 HERE=Path(__file__).resolve().parent
 WEB=HERE/'web'
@@ -65,7 +66,17 @@ def handler_factory(db_path: Path, pilot_path: Path | None, field_path: Path | N
             if route == '/api/evidence-readiness':
                 return self.reply(200,evidence_status())
             if route == '/api/official-nominations':
-                return self.reply(200,nomination_atlas_status())
+                atlas=nomination_atlas_status()
+                quality=nomination_quality_audit()
+                if atlas.get("ok") and quality.get("ok"):
+                    atlas["quarantine_triage"]=quality["quarantine_triage"]
+                    atlas["quarantined_observed_headings"]=quality["observed_but_noncertified_list_headings"]
+                    atlas["quarantine_provenance_status"]="ORIGINAL_PDF_REEXTRACTION_MATCH"
+                else:
+                    atlas["quarantine_triage"]=[]
+                    atlas["quarantined_observed_headings"]=None
+                    atlas["quarantine_provenance_status"]="UNVERIFIED_OR_UNAVAILABLE"
+                return self.reply(200,atlas)
             if route == '/api/verified-candidacies':
                 return self.reply(200,official_candidacies_status())
             if route == '/api/electoral-atlas':
