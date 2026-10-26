@@ -1,9 +1,9 @@
 {
   "campaign": "AB20_IDENTITY_20261026",
   "authorization": "20 BRANCHING",
-  "executed": 10,
-  "closed_valid": 10,
-  "remaining": 10,
+  "executed": 11,
+  "closed_valid": 11,
+  "remaining": 9,
   "drift": "D2.0: same institution, new estimand source-scoped identity reconciliation",
   "scope": "Exploratory documentary/engineering; cannot infer political ideology or score",
   "cycles": [
@@ -285,6 +285,28 @@
       "holdout_status": "POST_SELECTION_CORRELATED_HISTORICAL_OBSERVATION_NO_CONFIRMATORY_HOLDOUT",
       "decision": "C11 prospectively sample independent institutional group-change event and obtain dated voter rows as negative/positive control, only after budget allows manual CI; freeze source choice before request.",
       "status": "CLOSED_BOUNDED_SOURCE_SCOPED"
+    },
+    {
+      "id": "C11",
+      "prereg_commit": "8b777b6f5457de6e3e8f077a35e7072a3d1bb0f3",
+      "status": "CLOSED_DOCUMENTARY_OBSERVATION",
+      "type": "EXPERIMENTAL_AB_DOCUMENTARY_WITHOUT_ACTIONS",
+      "result": {
+        "bocg_id": "BOCG-15-D-51",
+        "published": "2023-12-15",
+        "effective": "2023-12-05",
+        "sumar_leavers": 5,
+        "mixto_joiners": 5,
+        "mesa_recorded_cross_reference_examples": 3,
+        "source_name_reference": "https://www.congreso.es/en/busqueda-de-publicaciones?_publicaciones_id_texto=%28BOCG-15-D-51.CODI.%29&_publicaciones_legislatura=XV&_publicaciones_mode=mostrarTextoIntegro&p_p_id=publicaciones&p_p_lifecycle=0&p_p_state=normal",
+        "mesa_source": "https://app.congreso.es/svt/descargarOrdenDia?fecha=12%2F12%2F2023&sesion=1&tipoDocumento=2"
+      },
+      "ct2_before": 28,
+      "ct2_after": 29,
+      "grade_0_3": 0,
+      "holdout_status": "EXPLORATORY_NO_INDEPENDENT_INSTITUTION",
+      "decision": "C12 distinguish loss of seat and new appointment from group-only change using contemporaneous BOCG and official institutional replacement data",
+      "adversarial": "Publication day ≠ effective group date. The same BOCG also publishes substitutions in PSOE and Diputación Permanente; those are distinct roles. The heading ‘Mixto SUMAR’ may be publication artifact and is not legal merged group. No source-signature or rights audit."
     }
   ],
   "priors": [
@@ -397,6 +419,16 @@
       "evidence_against": "same institution sources and selected after prior anomaly; 2024 orphan voter string still unexplained",
       "falsifier": "independent historical profile evidence contradicts documented identity/group change",
       "type": "EMPIRICO_DOCUMENTAL"
+    },
+    {
+      "id": "PF-ID20-11",
+      "proposition": "A politician's institutional parliamentary group membership has an effective date separately from the BOCG's publication date",
+      "provenance": "BOCG 15-D-51 official 15 Dec 2023, Mesa 12 Dec 2023",
+      "scope": "five changes effective 05 Dec 2023",
+      "evidence_for": "5 bajas and 5 altas; Mesa overlap",
+      "evidence_against": "No matched JSON member IDs; bulletin wording/rights caveats",
+      "uncertainty": "cross-platform availability timestamp unknown",
+      "falsifier": "official corrections or discrepancies in identified profiles"
     }
   ],
   "new_discoveries_1_3": 0,
@@ -404,11 +436,11 @@
   "N3": 0,
   "CT2_identity": {
     "start": 20,
-    "now": 28,
+    "now": 29,
     "confidence": "LOW",
     "not_probability": true
   },
-  "next": "C11_PREREG_BEFORE_ANY_NEW_NETWORK_SOURCE_EXECUTION",
+  "next": "C12",
   "budget_safety": {
     "budget_alert_received": "2026-10-26",
     "screenshot_used_minutes": 1801,
