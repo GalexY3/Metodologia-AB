@@ -1,9 +1,9 @@
 {
   "campaign": "AB20_IDENTITY_20261026",
   "authorization": "20 BRANCHING",
-  "executed": 7,
-  "closed_valid": 7,
-  "remaining": 13,
+  "executed": 8,
+  "closed_valid": 8,
+  "remaining": 12,
   "drift": "D2.0: same institution, new estimand source-scoped identity reconciliation",
   "scope": "Exploratory documentary/engineering; cannot infer political ideology or score",
   "cycles": [
@@ -200,6 +200,28 @@
       "holdout_status": "same institution, new publication type",
       "decision": "C08 official group composition page ID/date field presence",
       "status": "CLOSED_BOUNDED"
+    },
+    {
+      "id": "C08",
+      "type": "EXPERIMENTAL_AB_SOURCE_AUDIT",
+      "prereg_commit": "aeaacfe19983c8623d0e8c07d18e2535f0688b5b",
+      "code_commit": "5920cb38008a75e205eee635a528053d1ae2ba70",
+      "run": "https://github.com/GalexY3/Metodologia-AB/actions/runs/40364246029",
+      "question": "XV group composition current interface machine-readable identities and historic group dates?",
+      "result": {
+        "original_html_sha256": "4ba94acb32e30b477ccf090c43e0c3fea2d3ac54393fc5bc373fb3388351a33d",
+        "member_id_links": 0,
+        "historic_date_tokens": 0,
+        "dynamic_loading": true
+      },
+      "adversarial": "Zero in static HTML does NOT prove dynamic XHR lacks historical records.",
+      "grade_0_3": 0,
+      "ct2_before": 22,
+      "ct2_after": 21,
+      "ct2_rationale": "This source does not expose historical IDs/dates to static acquisition; independent BOCG notices remain alternative.",
+      "holdout_status": "EXPLORATORY",
+      "decision": "BRANCH C09 directly examine BOCG 15-D-372 for dated move that could explain 2025 group-conflict reduction",
+      "status": "CLOSED_BOUNDED_NEGATIVE"
     }
   ],
   "priors": [
@@ -279,6 +301,17 @@
       "evidence_against": "orphan exact absent",
       "falsifier": "alternative dated source establishes identity",
       "type": "EMPIRICO_OBSERVACIONAL"
+    },
+    {
+      "id": "PF-ID20-08",
+      "proposition": "Static HTML of XV group composition shows no codes or dates and a dynamic loading marker",
+      "provenance": "40364246029",
+      "scope": "HTML initial response only",
+      "uncertainty": "AJAX/API may expose fields but not yet verified",
+      "evidence_for": "0 codes, 0 dates, loader true",
+      "evidence_against": "BOCG dated group changes available on separate route",
+      "falsifier": "dynamic service returns documented member history",
+      "type": "EMPIRICO_OBSERVACIONAL"
     }
   ],
   "new_discoveries_1_3": 0,
@@ -286,9 +319,9 @@
   "N3": 0,
   "CT2_identity": {
     "start": 20,
-    "now": 22,
+    "now": 21,
     "confidence": "LOW",
     "not_probability": true
   },
-  "next": "C08"
+  "next": "C09"
 }
