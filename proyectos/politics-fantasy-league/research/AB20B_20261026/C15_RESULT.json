@@ -1,0 +1,39 @@
+{
+  "id": "C15",
+  "status": "CLOSED_BOUNDED_DOCUMENTARY",
+  "source": "BOCG-15-D-553 dated 19/06/2026",
+  "url": "https://www.congreso.es/public_oficiales/L15/CONG/BOCG/D/BOCG-15-D-553.PDF",
+  "same_name_overlap": [
+    "MARÍN APARICIO, Inmaculada",
+    "PACHÓN MARTÍN, Brígida"
+  ],
+  "records": [
+    {
+      "name": "MARÍN APARICIO, Inmaculada",
+      "credentials_20260616": "409",
+      "asset_declaration": "005/000408/0000",
+      "economic_interest_declaration": "007/000409/0000"
+    },
+    {
+      "name": "PACHÓN MARTÍN, Brígida",
+      "credentials_20260616": "410",
+      "asset_declaration": "005/000409/0000",
+      "economic_interest_declaration": "007/000408/0000"
+    }
+  ],
+  "observed": {
+    "cross_notice_repeated_names": 2,
+    "numeric_suffixes_swap_between_source_expeditures": true,
+    "licensing_caveat": "Cited public identities/record numbers are not invitation to infer sensitive financial scores"
+  },
+  "rivals": {
+    "H1": "SUPPORTED: 2/2 repeated names in original publication",
+    "H0": "REFUTED",
+    "Hother": "source numbers are case-specific and not IDs, supported swapped values"
+  },
+  "adversarial": "PDF index verified by source extract; screenshot endpoint failed cache miss. No new individual identity proof across different legislatures. Expediente numbers cannot be cross-domain join keys.",
+  "grade_0_3": 0,
+  "CT2_before": 29,
+  "CT2_after": 29,
+  "next": "C16 adversarial numerical-key baseline vs names+document-namespace mapping with known two-member ground truth"
+}
