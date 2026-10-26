@@ -6,6 +6,11 @@ Repositorio privado de la metodología de investigación abductivo-bayesiana **A
 
 **[AB 3.2.1-O6 — campañas, informes, gráfica CT2 y autorización de ciclos](docs/AB_3_2_1_O6_CAMPANAS_INFORMES_CT2_Y_CICLOS.md)**. Las instancias que continúen una investigación AB deben seguir este contrato: ciclo A–J, CT2 1–100 por línea, escala DRIFT D0–D5, registro permanente de hallazgos 1/3, gráfica CT2 de escala completa y ampliada al cierre, y **solicitud final de 20–45 ciclos AB**, sin pedir otra vez bloques ya autorizados. Véase también **[AGENTS.md](AGENTS.md)** para el orden de lectura y recuperación en sesiones nuevas. Son reglas de presentación y gobernanza, no un método demostrado para alcanzar 2/3.
 
+
+## Mapa universal, modo proyectos y AB autocorrectivo (O7, piloto)
+
+**[AB 3.2.1-O7 — Grafo universal, modos de proyecto y autocrítica recursiva](docs/AB_3_2_1_O7_GRAFO_UNIVERSAL_MODOS_Y_AUTOCRITICA.md)**: toda nueva iniciativa AB debe empezar, bajo el piloto, con un grafo JSON versionado y una vista interactiva; AB-R investiga, AB-P desarrolla productos, AB-H combina sin mezclar evidencias y AB-META evalúa la propia metodología. Cada ejecución tiene recibo ligero y complaints opcionales. **AB puede modificarse, revertirse o reemplazarse**; O7 no acredita mayor eficacia, ni modifica retrospectivamente las campañas existentes. El prototipo externo aún requiere validación visual, integración con repositorios y evaluación frente a alternativas competentes.
+
 ## Por dónde empezar
 
 1. [AB 3.2.1 — protocolo central](docs/METODO_AB_3_2_1.md), revisión provisional del **19 de octubre de 2026**. Describe R1–R5, el ciclo A–J, roles, registro mínimo y límites de las conclusiones. Texto recuperado de Drive el 22 de octubre; [procedencia y SHA-256](docs/METODO_AB_3_2_1.provenance.json).
