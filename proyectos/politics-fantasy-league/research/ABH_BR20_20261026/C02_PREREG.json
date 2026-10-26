@@ -1,0 +1,19 @@
+{
+  "id": "C02",
+  "mode": "AB-H",
+  "status": "PREREGISTERED",
+  "prior_result": "C01 official bulk JSON unreachable via browsing cache miss",
+  "question": "Can one person be joined across XIV and XV from official individual public profiles without assuming equality of numeric codParlamentario?",
+  "H1": "Official profiles themselves explicitly cross-link same person's different legislature records or a provider-stable identifier.",
+  "H0": "No explicit linkage; numeric codes different or equivalent without provider proof.",
+  "H_alt": "Same identity can be manually corroborated with public biography and unique public-role attributes, but not automatically certified.",
+  "sample": "Pre-fixed names of two widely documented multi-legislature public officeholders: Gabriel Rufián Romero and Yolanda Díaz Pérez; legislature XIV and XV.",
+  "test": "Retrieve official XIV and XV public profile or organ member links, record URL codes and provider-exposed crosslegislature links. Distinguish corroborated descriptive match vs stable ID.",
+  "falsifier": "No provider-explicit bridge across legislature even if names match; do not claim automatic crosswalk.",
+  "guardrail": "No private affiliation inference, no real-person fantasy ratings; exploratory no holdout.",
+  "CT2_before": 29,
+  "cost": {
+    "actions": 0
+  },
+  "decision_rule": "If original individual profiles accessible and self-link, C03 crosswalk; otherwise C03 constrained provenance and STOP_R5 if no independent evidence."
+}
