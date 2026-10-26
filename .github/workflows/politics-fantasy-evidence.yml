@@ -215,6 +215,9 @@ jobs:
       - name: C14 discover original independent September session 202 voting JSON
         working-directory: proyectos/politics-fantasy-league
         run: python scripts/probe_cross_session.py
+      - name: C15 validate second-session roster roles and group labels
+        working-directory: proyectos/politics-fantasy-league
+        run: python scripts/audit_cross_session.py
       - name: C09 assert real vote sources normalize to identical calendar date
         working-directory: proyectos/politics-fantasy-league
         run: |
