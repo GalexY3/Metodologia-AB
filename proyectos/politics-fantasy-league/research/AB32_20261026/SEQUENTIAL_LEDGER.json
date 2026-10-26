@@ -1,6 +1,6 @@
 {
   "campaign": "PF-AB32",
-  "cycles_closed": 6,
+  "cycles_closed": 7,
   "cycles": [
     {
       "id": "C01",
@@ -224,18 +224,57 @@
       ],
       "decision": "C07 map group code to full title and test functional/bijective relation.",
       "status": "CLOSED_BOUNDED"
+    },
+    {
+      "id": "C07",
+      "hypotheses": {
+        "H1": "Group codes map bijectively to full official institutional names",
+        "H0": "Code collisions and changing group assignment"
+      },
+      "observed": "2026-10-26T14:51:02Z",
+      "instrument": "scripts/audit_group_concordance.py on official July 23 2026 vote+October rosters, native CI 40343373264",
+      "result": {
+        "group_categories": 9,
+        "linked_votes": 350,
+        "forward_conflicts": 0,
+        "reverse_conflicts": 0,
+        "codes": [
+          "GEH Bildu",
+          "GJxCAT",
+          "GMx",
+          "GP",
+          "GR",
+          "GS",
+          "GSUMAR",
+          "GV (EAJ-PNV)",
+          "GVOX"
+        ]
+      },
+      "adversarial": "Mapping established from overlapping rows on one session, may not survive party realignment or another session. Parliamentary groups not legal political party identity.",
+      "priors_update": [
+        {
+          "id": "PF-32-07",
+          "proposition": "At one fixed roll call 9 group abbreviations map one-to-one to official group names",
+          "state": "confirmed only for session 193 2026-07-23 vote001",
+          "evidence": "40343373264 C07_GROUP",
+          "counterevidence": "future session groups may differ",
+          "falsifier": "second vote produces conflicting code→full name concordance"
+        }
+      ],
+      "decision": "C08 obtain second independent vote on same date and test source format and group mapping generality.",
+      "status": "CLOSED_BOUNDED"
     }
   ],
   "next_cycle_prereg": {
-    "id": "C07",
-    "chosen_after": "C06 raw parliamentary group mismatch 350/350 despite perfect interval fit",
-    "question": "Is group schema mismatch a harmless abbreviation (functional code→full title) or substantive political mismatch?",
+    "id": "C08",
+    "chosen_after": "C07 zero ambiguous group mappings across nine codes",
+    "question": "Does independently downloaded Votacion002 have same coherent vote schema, roster join and group mapping?",
     "hypotheses": {
-      "H1": "each abbreviated group code maps to exactly one full official group title",
-      "H0": "codes collide or group changes contradict"
+      "H1": "independent vote2 validates all three properties",
+      "H0": "distribution/schema drift, identities or totals differ"
     },
-    "method": "use uniquely name-corresponded historic vote and roster, publish only organizational group pairs and counts, never record person values",
-    "criterion": "every abbreviated group has exactly one roster group title, no conflicting mapping; else STOP_R5 automatic source reconciliation",
+    "method": "capture second explicitly linked original vote JSON HTTPS with SHA; compare schema, totals, date and first-event group's established mapping",
+    "criterion": "record counts and differences; if new vote fails, stop extending mapping without adjudication",
     "status": "PREREGISTERED_BEFORE_TEST"
   }
 }
