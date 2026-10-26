@@ -1,0 +1,428 @@
+{
+  "campaign": "AB32_20261026",
+  "workflow_run": 40350939895,
+  "job_id": 121670482363,
+  "selection_policy": "INDEXED_SOURCE_SEQUENTIAL_V1",
+  "preregistered_before_each_http": true,
+  "note": "Actual targets selected only after previous observed result; date pool is publisher-indexed source candidates; provenance SHA of real Congress original. No person strings reproduced.",
+  "records": [
+    {
+      "id": "C26",
+      "A_question": "Do source-scoped group/name anomalies persist at the next selected indexed historical session?",
+      "B_hypotheses": {
+        "H1": "original exists, metadata and chronology auditable",
+        "H0": "official source fails or historical group/person mismatch persists"
+      },
+      "C_prior": {
+        "verified_original_indexed_dates": {
+          "alpha": 2,
+          "beta": 6
+        },
+        "conditional_2026_roster_group_transfer": {
+          "alpha": 1,
+          "beta": 3
+        }
+      },
+      "D_method": "official Congress page href→authentic JSON SHA→source-scoped group, name, period and rollcall arithmetic",
+      "E_prereg_at": "2026-10-26T15:36:47.371634+00:00",
+      "E_target_day": "2024-12-10",
+      "E_decision_after_preceding": "FIRST_TEST_AFTER_C25_GROUP_ANOMALY",
+      "F_result": {
+        "status": "ORIGINAL_RETRIEVED",
+        "source_url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion083/20241210/Votacion001/VOT_20241210202031.json",
+        "source_sha256": "49290c6a9e4032ae475cff5fafd7ba9ca9829a1a961ca5c94b0beae60af970de",
+        "session": 83,
+        "vote_number": 1,
+        "original_date": "2024-12-10",
+        "date_scoped_official_urls": 2,
+        "vote_rows": 350,
+        "source_vote_tally_matches": true,
+        "source_yes": 316,
+        "source_no": 5,
+        "source_abstain": 21,
+        "source_no_vote": 8,
+        "unmatched_person_strings": 1,
+        "invalid_office_intervals": 0,
+        "group_map_conflicts": 2,
+        "duplicate_vote_name_strings": 0,
+        "source_read_only": true,
+        "scoreable_people": 0
+      },
+      "G_adversarial": "selection is active and dependent, no inferential representativeness; group codes not party IDs; no first_public_at",
+      "H_closure": "BOUNDED_HISTORIC_ANOMALY",
+      "I_posterior": {
+        "verified_original_indexed_dates": {
+          "alpha": 3,
+          "beta": 6
+        },
+        "conditional_2026_roster_group_transfer": {
+          "alpha": 1,
+          "beta": 4
+        }
+      },
+      "J_next_strategy": "LOCALIZE_ANOMALY",
+      "observed_at": "2026-10-26T15:36:49.359443+00:00"
+    },
+    {
+      "id": "C27",
+      "A_question": "Do source-scoped group/name anomalies persist at the next selected indexed historical session?",
+      "B_hypotheses": {
+        "H1": "original exists, metadata and chronology auditable",
+        "H0": "official source fails or historical group/person mismatch persists"
+      },
+      "C_prior": {
+        "verified_original_indexed_dates": {
+          "alpha": 3,
+          "beta": 6
+        },
+        "conditional_2026_roster_group_transfer": {
+          "alpha": 1,
+          "beta": 4
+        }
+      },
+      "D_method": "official Congress page href→authentic JSON SHA→source-scoped group, name, period and rollcall arithmetic",
+      "E_prereg_at": "2026-10-26T15:36:49.359894+00:00",
+      "E_target_day": "2025-03-25",
+      "E_decision_after_preceding": "LOCATE_ANOMALY_FORWARD_IN_HISTORY",
+      "F_result": {
+        "status": "ORIGINAL_RETRIEVED",
+        "source_url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion102/20250325/Votacion001/VOT_20250325212231.json",
+        "source_sha256": "ee9d22795bea7100289a6c2c7d8b1bb51d349d45e22164e4ae155b50506fc4ce",
+        "session": 102,
+        "vote_number": 1,
+        "original_date": "2025-03-25",
+        "date_scoped_official_urls": 3,
+        "vote_rows": 350,
+        "source_vote_tally_matches": true,
+        "source_yes": 32,
+        "source_no": 177,
+        "source_abstain": 136,
+        "source_no_vote": 5,
+        "unmatched_person_strings": 1,
+        "invalid_office_intervals": 0,
+        "group_map_conflicts": 2,
+        "duplicate_vote_name_strings": 0,
+        "source_read_only": true,
+        "scoreable_people": 0
+      },
+      "G_adversarial": "selection is active and dependent, no inferential representativeness; group codes not party IDs; no first_public_at",
+      "H_closure": "BOUNDED_HISTORIC_ANOMALY",
+      "I_posterior": {
+        "verified_original_indexed_dates": {
+          "alpha": 4,
+          "beta": 6
+        },
+        "conditional_2026_roster_group_transfer": {
+          "alpha": 1,
+          "beta": 5
+        }
+      },
+      "J_next_strategy": "LOCALIZE_ANOMALY",
+      "observed_at": "2026-10-26T15:36:51.397927+00:00"
+    },
+    {
+      "id": "C28",
+      "A_question": "Do source-scoped group/name anomalies persist at the next selected indexed historical session?",
+      "B_hypotheses": {
+        "H1": "original exists, metadata and chronology auditable",
+        "H0": "official source fails or historical group/person mismatch persists"
+      },
+      "C_prior": {
+        "verified_original_indexed_dates": {
+          "alpha": 4,
+          "beta": 6
+        },
+        "conditional_2026_roster_group_transfer": {
+          "alpha": 1,
+          "beta": 5
+        }
+      },
+      "D_method": "official Congress page href→authentic JSON SHA→source-scoped group, name, period and rollcall arithmetic",
+      "E_prereg_at": "2026-10-26T15:36:51.398397+00:00",
+      "E_target_day": "2025-05-06",
+      "E_decision_after_preceding": "LOCATE_ANOMALY_FORWARD_IN_HISTORY",
+      "F_result": {
+        "status": "ORIGINAL_RETRIEVED",
+        "source_url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion107/20250506/Votacion001/VOT_20250506211452.json",
+        "source_sha256": "2ee12028e5833deb897ce4a231544be05e204d9058e9e58b5495bb4261fdb550",
+        "session": 107,
+        "vote_number": 1,
+        "original_date": "2025-05-06",
+        "date_scoped_official_urls": 3,
+        "vote_rows": 350,
+        "source_vote_tally_matches": true,
+        "source_yes": 311,
+        "source_no": 0,
+        "source_abstain": 32,
+        "source_no_vote": 7,
+        "unmatched_person_strings": 1,
+        "invalid_office_intervals": 0,
+        "group_map_conflicts": 2,
+        "duplicate_vote_name_strings": 0,
+        "source_read_only": true,
+        "scoreable_people": 0
+      },
+      "G_adversarial": "selection is active and dependent, no inferential representativeness; group codes not party IDs; no first_public_at",
+      "H_closure": "BOUNDED_HISTORIC_ANOMALY",
+      "I_posterior": {
+        "verified_original_indexed_dates": {
+          "alpha": 5,
+          "beta": 6
+        },
+        "conditional_2026_roster_group_transfer": {
+          "alpha": 1,
+          "beta": 6
+        }
+      },
+      "J_next_strategy": "LOCALIZE_ANOMALY",
+      "observed_at": "2026-10-26T15:36:53.067200+00:00"
+    },
+    {
+      "id": "C29",
+      "A_question": "Do source-scoped group/name anomalies persist at the next selected indexed historical session?",
+      "B_hypotheses": {
+        "H1": "original exists, metadata and chronology auditable",
+        "H0": "official source fails or historical group/person mismatch persists"
+      },
+      "C_prior": {
+        "verified_original_indexed_dates": {
+          "alpha": 5,
+          "beta": 6
+        },
+        "conditional_2026_roster_group_transfer": {
+          "alpha": 1,
+          "beta": 6
+        }
+      },
+      "D_method": "official Congress page href→authentic JSON SHA→source-scoped group, name, period and rollcall arithmetic",
+      "E_prereg_at": "2026-10-26T15:36:53.067920+00:00",
+      "E_target_day": "2025-06-12",
+      "E_decision_after_preceding": "LOCATE_ANOMALY_FORWARD_IN_HISTORY",
+      "F_result": {
+        "status": "ORIGINAL_RETRIEVED",
+        "source_url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion118/20250612/Votacion001/VOT_20250612132238.json",
+        "source_sha256": "0d5c128727cb4b04e5f35585b7f7d51ed2b820279b259a053387a285a8f174d9",
+        "session": 118,
+        "vote_number": 1,
+        "original_date": "2025-06-12",
+        "date_scoped_official_urls": 18,
+        "vote_rows": 350,
+        "source_vote_tally_matches": true,
+        "source_yes": 179,
+        "source_no": 164,
+        "source_abstain": 5,
+        "source_no_vote": 2,
+        "unmatched_person_strings": 1,
+        "invalid_office_intervals": 0,
+        "group_map_conflicts": 2,
+        "duplicate_vote_name_strings": 0,
+        "source_read_only": true,
+        "scoreable_people": 0
+      },
+      "G_adversarial": "selection is active and dependent, no inferential representativeness; group codes not party IDs; no first_public_at",
+      "H_closure": "BOUNDED_HISTORIC_ANOMALY",
+      "I_posterior": {
+        "verified_original_indexed_dates": {
+          "alpha": 6,
+          "beta": 6
+        },
+        "conditional_2026_roster_group_transfer": {
+          "alpha": 1,
+          "beta": 7
+        }
+      },
+      "J_next_strategy": "LOCALIZE_ANOMALY",
+      "observed_at": "2026-10-26T15:36:56.271465+00:00"
+    },
+    {
+      "id": "C30",
+      "A_question": "Do source-scoped group/name anomalies persist at the next selected indexed historical session?",
+      "B_hypotheses": {
+        "H1": "original exists, metadata and chronology auditable",
+        "H0": "official source fails or historical group/person mismatch persists"
+      },
+      "C_prior": {
+        "verified_original_indexed_dates": {
+          "alpha": 6,
+          "beta": 6
+        },
+        "conditional_2026_roster_group_transfer": {
+          "alpha": 1,
+          "beta": 7
+        }
+      },
+      "D_method": "official Congress page href→authentic JSON SHA→source-scoped group, name, period and rollcall arithmetic",
+      "E_prereg_at": "2026-10-26T15:36:56.273325+00:00",
+      "E_target_day": "2025-09-10",
+      "E_decision_after_preceding": "LOCATE_ANOMALY_FORWARD_IN_HISTORY",
+      "F_result": {
+        "status": "ORIGINAL_RETRIEVED",
+        "source_url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion130/20250910/Votacion001/VOT_20250910213532.json",
+        "source_sha256": "fdb92b1dfd48995c784a285c5bcabe2e84b786cedcd531afb284b5c4402271f8",
+        "session": 130,
+        "vote_number": 1,
+        "original_date": "2025-09-10",
+        "date_scoped_official_urls": 11,
+        "vote_rows": 350,
+        "source_vote_tally_matches": true,
+        "source_yes": 184,
+        "source_no": 157,
+        "source_abstain": 7,
+        "source_no_vote": 2,
+        "unmatched_person_strings": 1,
+        "invalid_office_intervals": 0,
+        "group_map_conflicts": 1,
+        "duplicate_vote_name_strings": 0,
+        "source_read_only": true,
+        "scoreable_people": 0
+      },
+      "G_adversarial": "selection is active and dependent, no inferential representativeness; group codes not party IDs; no first_public_at",
+      "H_closure": "BOUNDED_HISTORIC_ANOMALY",
+      "I_posterior": {
+        "verified_original_indexed_dates": {
+          "alpha": 7,
+          "beta": 6
+        },
+        "conditional_2026_roster_group_transfer": {
+          "alpha": 1,
+          "beta": 8
+        }
+      },
+      "J_next_strategy": "LOCALIZE_ANOMALY",
+      "observed_at": "2026-10-26T15:37:00.176237+00:00"
+    },
+    {
+      "id": "C31",
+      "A_question": "Do source-scoped group/name anomalies persist at the next selected indexed historical session?",
+      "B_hypotheses": {
+        "H1": "original exists, metadata and chronology auditable",
+        "H0": "official source fails or historical group/person mismatch persists"
+      },
+      "C_prior": {
+        "verified_original_indexed_dates": {
+          "alpha": 7,
+          "beta": 6
+        },
+        "conditional_2026_roster_group_transfer": {
+          "alpha": 1,
+          "beta": 8
+        }
+      },
+      "D_method": "official Congress page href→authentic JSON SHA→source-scoped group, name, period and rollcall arithmetic",
+      "E_prereg_at": "2026-10-26T15:37:00.177091+00:00",
+      "E_target_day": "2025-11-27",
+      "E_decision_after_preceding": "LOCATE_ANOMALY_FORWARD_IN_HISTORY",
+      "F_result": {
+        "status": "ORIGINAL_RETRIEVED",
+        "source_url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion151/20251127/Votacion001/VOT_20251127124047.json",
+        "source_sha256": "e62e6ca1cfa4be9113e2ab9dd5a30b3b17740f036d5abda81eb63660be3774e8",
+        "session": 151,
+        "vote_number": 1,
+        "original_date": "2025-11-27",
+        "date_scoped_official_urls": 18,
+        "vote_rows": 350,
+        "source_vote_tally_matches": true,
+        "source_yes": 307,
+        "source_no": 7,
+        "source_abstain": 33,
+        "source_no_vote": 3,
+        "unmatched_person_strings": 1,
+        "invalid_office_intervals": 0,
+        "group_map_conflicts": 1,
+        "duplicate_vote_name_strings": 0,
+        "source_read_only": true,
+        "scoreable_people": 0
+      },
+      "G_adversarial": "selection is active and dependent, no inferential representativeness; group codes not party IDs; no first_public_at",
+      "H_closure": "BOUNDED_HISTORIC_ANOMALY",
+      "I_posterior": {
+        "verified_original_indexed_dates": {
+          "alpha": 8,
+          "beta": 6
+        },
+        "conditional_2026_roster_group_transfer": {
+          "alpha": 1,
+          "beta": 9
+        }
+      },
+      "J_next_strategy": "LOCALIZE_ANOMALY",
+      "observed_at": "2026-10-26T15:37:04.057157+00:00"
+    },
+    {
+      "id": "C32",
+      "A_question": "Do source-scoped group/name anomalies persist at the next selected indexed historical session?",
+      "B_hypotheses": {
+        "H1": "original exists, metadata and chronology auditable",
+        "H0": "official source fails or historical group/person mismatch persists"
+      },
+      "C_prior": {
+        "verified_original_indexed_dates": {
+          "alpha": 8,
+          "beta": 6
+        },
+        "conditional_2026_roster_group_transfer": {
+          "alpha": 1,
+          "beta": 9
+        }
+      },
+      "D_method": "official Congress page href→authentic JSON SHA→source-scoped group, name, period and rollcall arithmetic",
+      "E_prereg_at": "2026-10-26T15:37:04.058113+00:00",
+      "E_target_day": "2026-09-22",
+      "E_decision_after_preceding": "LOCATE_ANOMALY_FORWARD_IN_HISTORY",
+      "F_result": {
+        "status": "ORIGINAL_RETRIEVED",
+        "source_url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion199/20260922/Votacion001/VOT_20260922205120.json",
+        "source_sha256": "12141a5bfa50629a1818c67c9c81657c34f408856b98506f9a755a9e392d24ea",
+        "session": 199,
+        "vote_number": 1,
+        "original_date": "2026-09-22",
+        "date_scoped_official_urls": 2,
+        "vote_rows": 350,
+        "source_vote_tally_matches": true,
+        "source_yes": 340,
+        "source_no": 7,
+        "source_abstain": 0,
+        "source_no_vote": 3,
+        "unmatched_person_strings": 0,
+        "invalid_office_intervals": 0,
+        "group_map_conflicts": 0,
+        "duplicate_vote_name_strings": 0,
+        "source_read_only": true,
+        "scoreable_people": 0
+      },
+      "G_adversarial": "selection is active and dependent, no inferential representativeness; group codes not party IDs; no first_public_at",
+      "H_closure": "BOUNDED_NO_MISMATCH",
+      "I_posterior": {
+        "verified_original_indexed_dates": {
+          "alpha": 9,
+          "beta": 6
+        },
+        "conditional_2026_roster_group_transfer": {
+          "alpha": 2,
+          "beta": 9
+        }
+      },
+      "J_next_strategy": "DIVERSIFY_TIME",
+      "observed_at": "2026-10-26T15:37:05.573899+00:00"
+    }
+  ],
+  "summary": {
+    "executed": 7,
+    "verified_originals": 7,
+    "samples_with_unmatched_names": 6,
+    "samples_with_group_conflicts": 6,
+    "latest_2026_clean": 1,
+    "source_errors": 0,
+    "posterior_heuristic": {
+      "verified_original_indexed_dates": {
+        "alpha": 9,
+        "beta": 6
+      },
+      "conditional_2026_roster_group_transfer": {
+        "alpha": 2,
+        "beta": 9
+      }
+    },
+    "not_extrapolatable": true
+  }
+}

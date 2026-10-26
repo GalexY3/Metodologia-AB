@@ -1,5 +1,12 @@
 # Politics Fantasy League — Political Data Science Laboratory
 
+## AB32 · 32 ciclos adicionales con decisiones secuenciales · 26/10/2026
+
+**Completados 12/12 BRANCHING + 20/20 adaptativos: 26 hallazgos/verificaciones acotados y seis STOP_R5.** La hipótesis de concordancia universal entre votaciones y el último grupo/nombre del registro actual quedó limitada por originales de 2024–2025: 1 cadena nominal no enlazada en cada evento histórico examinado y 2→1 conflictos de grupo, frente a 0 en la fuente 2026-09-22. [Informe AB32](research/AB32_20261026/REPORT.md) · [ledger A–J](research/AB32_20261026/SEQUENTIAL_LEDGER.json) · [priors](research/AB32_20261026/PRIORS_DELTA.md) · [CI final 4/4 + 111 tests + Chromium](https://github.com/GalexY3/Metodologia-AB/actions/runs/40350939895).
+
+Se han examinado **13 JSON nominales originales de 11 fechas parlamentarias**, almacenando públicamente solo agregados y hashes. Los dos eventos de julio 2026 en `GET /api/verified-rollcalls` son históricos y **no puntúan personas**; permanecen sin certificar el identificador individual duradero, historia de grupos, `first_public_at` y derechos específicos. El producto sigue en **36,350% PFL-V1 rev.3**, seis puertas de lanzamiento bloqueadas, sin modificar `main`.
+
+
 ## Cierre de la campaña de 35 ciclos · 26/10/2026
 
 **Campaña autorizada cerrada: 10/10 BR10P + 5/5 AUDIT5Q + 20/20 FOCUS20R = 35/35 fichas A–J.** El último bloque registra 18 verificaciones acotadas y dos STOP_R5; esto no son 20 experimentos sociológicos independientes. [Informe final FOCUS20R](research/FOCUS20R_20261026/REPORT.md) · [Ledger de 20 ciclos](research/FOCUS20R_20261026/LEDGER.json) · [Priors acumulados](research/PRIORS.md).

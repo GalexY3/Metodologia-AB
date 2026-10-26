@@ -132,3 +132,12 @@ Sin sustituir los priors anteriores se incorporan **PF-R01–PF-R06**, con proce
 | PF-R06 | HTTPS institucional y SHA-256 no sustituyen verificación de licencias ni firma del editor | Dos bloqueos R5 documentados |
 
 [Ledger A–J 20 ciclos](FOCUS20R_20261026/LEDGER.json) · [Preregistro previo](FOCUS20R_20261026/PREREG.json) · [Informe](FOCUS20R_20261026/REPORT.md). N1/N2/N3 nuevos 0. VSDS 1/3. CT2 multiactor 20/100 y predictiva 24/100, sin elevar valores.
+
+
+---
+
+## Bloque AB32 adaptativo · nueva cohorte documental (26/10/2026)
+
+[Delta detallado PF-32-01–PF-32-32](AB32_20261026/PRIORS_DELTA.md) · [Ledger secuencial 32/32](AB32_20261026/SEQUENTIAL_LEDGER.json) · [Informe](AB32_20261026/REPORT.md).
+
+**Cambio sustantivo:** tres fechas de 2026 inicialmente parecían permitir enlace perfecto por cadena de nombre, pero abril de 2024 exhibió **1 nombre no concordante y 2 conflictos de grupo**, patrón replicado en dos originales y parcial en 2025. No inferir que el grupo parlamentario de la instantánea de 2026 es válido históricamente. Priors numéricos Beta (9,6) y (2,9) son solamente controles adaptativos del instrumento, no inferencia poblacional.

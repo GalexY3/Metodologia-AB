@@ -1,0 +1,52 @@
+{
+  "title": "PFL AB32 adaptive closure",
+  "authorization": 32,
+  "closed": 32,
+  "bounded": 26,
+  "stop_R5": 6,
+  "methodology": "AB3.2.1, each actual decision after preceding observation; first 18 manual cycles, C19-23 and C26-32 prospectively chosen during CI, no fabricated independent population experiments",
+  "sources": {
+    "congress_official_vote_originals_sha256_pinned_count": 13,
+    "distinct_dated_sittings": 11,
+    "actual_roster_records": 412,
+    "post_dissolution_label_warning": "137 actively labeled in source after 2026-10-06 institutional dissolution, 275 discharged; not legal current term claims",
+    "dissolution_original": "BOE-A-2026-20742",
+    "dissolution_date": "2026-10-06"
+  },
+  "profile_join_limit": "Unique normalized names in July and September 2026 do not generalize to 2024/2025",
+  "historic_anomalies": {
+    "april2024_vote_rows": 349,
+    "unmatched_name_count": 1,
+    "group_conflict_count": 2,
+    "same_day_second_vote_repeat": true,
+    "dec2024_to_jun2025_group_conflicts": 2,
+    "sep_to_nov2025_group_conflicts": 1,
+    "sep2026_group_conflicts": 0,
+    "warning": "aggregate counts do not prove it is the same politician or exact cause"
+  },
+  "progress": {
+    "PFL_V1_rev3_percentage": 36.35,
+    "gate_count": 6,
+    "VSDS": "1/3",
+    "CT2_multiactor": "20/100",
+    "CT2_predictive": "24/100",
+    "new_N1_N2_N3": 0
+  },
+  "original_source_in_ci": "https://github.com/GalexY3/Metodologia-AB/actions/runs/40350939895",
+  "test_summary": {
+    "native_all_jobs_passed": 4,
+    "python_pytest_passed": 111,
+    "chromium_browser_passed": true
+  },
+  "release_blockers": [
+    "source-specific reuse/rights not finally adjudicated",
+    "first_public_at missing for Congress individual vote payloads",
+    "immutable politician identifiers unproven",
+    "historical group membership time series missing",
+    "no validated real-player scoring model",
+    "multiuser deployment/security gating not cleared"
+  ],
+  "automated_political_points": 0,
+  "person_data_product_exposure": false,
+  "merged_into_main": false
+}

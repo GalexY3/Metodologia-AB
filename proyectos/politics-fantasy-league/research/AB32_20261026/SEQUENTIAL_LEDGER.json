@@ -1,6 +1,6 @@
 {
   "campaign": "PF-AB32",
-  "cycles_closed": 25,
+  "cycles_closed": 32,
   "cycles": [
     {
       "id": "C01",
@@ -939,20 +939,485 @@
       ],
       "decision": "C26 investigate time localization of persistent 2024 group/name mismatch using independently indexed 2024-12-10 sitting; if persists, choose subsequent earlier/later dates dynamically to locate scope.",
       "status": "CLOSED_BOUNDED_REPLICATED_ANOMALY"
+    },
+    {
+      "id": "C26",
+      "block": "ADDITIONAL20",
+      "prereg_before_network": "2026-10-26T15:36:47.371634+00:00",
+      "observed": "2026-10-26T15:36:49.359443+00:00",
+      "selected_target": "2024-12-10",
+      "selection_rule": "FIRST_TEST_AFTER_C25_GROUP_ANOMALY",
+      "hypotheses": {
+        "H1": "original exists, metadata and chronology auditable",
+        "H0": "official source fails or historical group/person mismatch persists"
+      },
+      "instrument": "official Congress page href→authentic JSON SHA→source-scoped group, name, period and rollcall arithmetic",
+      "result": {
+        "status": "ORIGINAL_RETRIEVED",
+        "source_url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion083/20241210/Votacion001/VOT_20241210202031.json",
+        "source_sha256": "49290c6a9e4032ae475cff5fafd7ba9ca9829a1a961ca5c94b0beae60af970de",
+        "session": 83,
+        "vote_number": 1,
+        "original_date": "2024-12-10",
+        "date_scoped_official_urls": 2,
+        "vote_rows": 350,
+        "source_vote_tally_matches": true,
+        "source_yes": 316,
+        "source_no": 5,
+        "source_abstain": 21,
+        "source_no_vote": 8,
+        "unmatched_person_strings": 1,
+        "invalid_office_intervals": 0,
+        "group_map_conflicts": 2,
+        "duplicate_vote_name_strings": 0,
+        "source_read_only": true,
+        "scoreable_people": 0
+      },
+      "closure": "BOUNDED_HISTORIC_ANOMALY",
+      "prior_before": {
+        "verified_original_indexed_dates": {
+          "alpha": 2,
+          "beta": 6
+        },
+        "conditional_2026_roster_group_transfer": {
+          "alpha": 1,
+          "beta": 3
+        }
+      },
+      "prior_after": {
+        "verified_original_indexed_dates": {
+          "alpha": 3,
+          "beta": 6
+        },
+        "conditional_2026_roster_group_transfer": {
+          "alpha": 1,
+          "beta": 4
+        }
+      },
+      "adversarial": "selection is active and dependent, no inferential representativeness; group codes not party IDs; no first_public_at",
+      "decision_for_next": "LOCALIZE_ANOMALY",
+      "status": "CLOSED_BOUNDED_HISTORICAL_ANOMALY",
+      "priors_update": [
+        {
+          "id": "PF-32-26",
+          "proposition": "Older original parliamentary sitting is consistent in raw totals but still has incomplete cross-document name/group reconciliation with October 2026 roster",
+          "state": "source-document observation, not population inference",
+          "evidence": "40350939895 source=https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion083/20241210/Votacion001/VOT_20241210202031.json SHA256=49290c6a9e4032ae475cff5fafd7ba9ca9829a1a961ca5c94b0beae60af970de",
+          "counterevidence": "no stable individual ID, time-varying parliamentary group history or rights guarantee",
+          "falsifier": "historical official biography/group sources resolve relationship or original digest changes"
+        }
+      ]
+    },
+    {
+      "id": "C27",
+      "block": "ADDITIONAL20",
+      "prereg_before_network": "2026-10-26T15:36:49.359894+00:00",
+      "observed": "2026-10-26T15:36:51.397927+00:00",
+      "selected_target": "2025-03-25",
+      "selection_rule": "LOCATE_ANOMALY_FORWARD_IN_HISTORY",
+      "hypotheses": {
+        "H1": "original exists, metadata and chronology auditable",
+        "H0": "official source fails or historical group/person mismatch persists"
+      },
+      "instrument": "official Congress page href→authentic JSON SHA→source-scoped group, name, period and rollcall arithmetic",
+      "result": {
+        "status": "ORIGINAL_RETRIEVED",
+        "source_url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion102/20250325/Votacion001/VOT_20250325212231.json",
+        "source_sha256": "ee9d22795bea7100289a6c2c7d8b1bb51d349d45e22164e4ae155b50506fc4ce",
+        "session": 102,
+        "vote_number": 1,
+        "original_date": "2025-03-25",
+        "date_scoped_official_urls": 3,
+        "vote_rows": 350,
+        "source_vote_tally_matches": true,
+        "source_yes": 32,
+        "source_no": 177,
+        "source_abstain": 136,
+        "source_no_vote": 5,
+        "unmatched_person_strings": 1,
+        "invalid_office_intervals": 0,
+        "group_map_conflicts": 2,
+        "duplicate_vote_name_strings": 0,
+        "source_read_only": true,
+        "scoreable_people": 0
+      },
+      "closure": "BOUNDED_HISTORIC_ANOMALY",
+      "prior_before": {
+        "verified_original_indexed_dates": {
+          "alpha": 3,
+          "beta": 6
+        },
+        "conditional_2026_roster_group_transfer": {
+          "alpha": 1,
+          "beta": 4
+        }
+      },
+      "prior_after": {
+        "verified_original_indexed_dates": {
+          "alpha": 4,
+          "beta": 6
+        },
+        "conditional_2026_roster_group_transfer": {
+          "alpha": 1,
+          "beta": 5
+        }
+      },
+      "adversarial": "selection is active and dependent, no inferential representativeness; group codes not party IDs; no first_public_at",
+      "decision_for_next": "LOCALIZE_ANOMALY",
+      "status": "CLOSED_BOUNDED_HISTORICAL_ANOMALY",
+      "priors_update": [
+        {
+          "id": "PF-32-27",
+          "proposition": "Older original parliamentary sitting is consistent in raw totals but still has incomplete cross-document name/group reconciliation with October 2026 roster",
+          "state": "source-document observation, not population inference",
+          "evidence": "40350939895 source=https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion102/20250325/Votacion001/VOT_20250325212231.json SHA256=ee9d22795bea7100289a6c2c7d8b1bb51d349d45e22164e4ae155b50506fc4ce",
+          "counterevidence": "no stable individual ID, time-varying parliamentary group history or rights guarantee",
+          "falsifier": "historical official biography/group sources resolve relationship or original digest changes"
+        }
+      ]
+    },
+    {
+      "id": "C28",
+      "block": "ADDITIONAL20",
+      "prereg_before_network": "2026-10-26T15:36:51.398397+00:00",
+      "observed": "2026-10-26T15:36:53.067200+00:00",
+      "selected_target": "2025-05-06",
+      "selection_rule": "LOCATE_ANOMALY_FORWARD_IN_HISTORY",
+      "hypotheses": {
+        "H1": "original exists, metadata and chronology auditable",
+        "H0": "official source fails or historical group/person mismatch persists"
+      },
+      "instrument": "official Congress page href→authentic JSON SHA→source-scoped group, name, period and rollcall arithmetic",
+      "result": {
+        "status": "ORIGINAL_RETRIEVED",
+        "source_url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion107/20250506/Votacion001/VOT_20250506211452.json",
+        "source_sha256": "2ee12028e5833deb897ce4a231544be05e204d9058e9e58b5495bb4261fdb550",
+        "session": 107,
+        "vote_number": 1,
+        "original_date": "2025-05-06",
+        "date_scoped_official_urls": 3,
+        "vote_rows": 350,
+        "source_vote_tally_matches": true,
+        "source_yes": 311,
+        "source_no": 0,
+        "source_abstain": 32,
+        "source_no_vote": 7,
+        "unmatched_person_strings": 1,
+        "invalid_office_intervals": 0,
+        "group_map_conflicts": 2,
+        "duplicate_vote_name_strings": 0,
+        "source_read_only": true,
+        "scoreable_people": 0
+      },
+      "closure": "BOUNDED_HISTORIC_ANOMALY",
+      "prior_before": {
+        "verified_original_indexed_dates": {
+          "alpha": 4,
+          "beta": 6
+        },
+        "conditional_2026_roster_group_transfer": {
+          "alpha": 1,
+          "beta": 5
+        }
+      },
+      "prior_after": {
+        "verified_original_indexed_dates": {
+          "alpha": 5,
+          "beta": 6
+        },
+        "conditional_2026_roster_group_transfer": {
+          "alpha": 1,
+          "beta": 6
+        }
+      },
+      "adversarial": "selection is active and dependent, no inferential representativeness; group codes not party IDs; no first_public_at",
+      "decision_for_next": "LOCALIZE_ANOMALY",
+      "status": "CLOSED_BOUNDED_HISTORICAL_ANOMALY",
+      "priors_update": [
+        {
+          "id": "PF-32-28",
+          "proposition": "Older original parliamentary sitting is consistent in raw totals but still has incomplete cross-document name/group reconciliation with October 2026 roster",
+          "state": "source-document observation, not population inference",
+          "evidence": "40350939895 source=https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion107/20250506/Votacion001/VOT_20250506211452.json SHA256=2ee12028e5833deb897ce4a231544be05e204d9058e9e58b5495bb4261fdb550",
+          "counterevidence": "no stable individual ID, time-varying parliamentary group history or rights guarantee",
+          "falsifier": "historical official biography/group sources resolve relationship or original digest changes"
+        }
+      ]
+    },
+    {
+      "id": "C29",
+      "block": "ADDITIONAL20",
+      "prereg_before_network": "2026-10-26T15:36:53.067920+00:00",
+      "observed": "2026-10-26T15:36:56.271465+00:00",
+      "selected_target": "2025-06-12",
+      "selection_rule": "LOCATE_ANOMALY_FORWARD_IN_HISTORY",
+      "hypotheses": {
+        "H1": "original exists, metadata and chronology auditable",
+        "H0": "official source fails or historical group/person mismatch persists"
+      },
+      "instrument": "official Congress page href→authentic JSON SHA→source-scoped group, name, period and rollcall arithmetic",
+      "result": {
+        "status": "ORIGINAL_RETRIEVED",
+        "source_url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion118/20250612/Votacion001/VOT_20250612132238.json",
+        "source_sha256": "0d5c128727cb4b04e5f35585b7f7d51ed2b820279b259a053387a285a8f174d9",
+        "session": 118,
+        "vote_number": 1,
+        "original_date": "2025-06-12",
+        "date_scoped_official_urls": 18,
+        "vote_rows": 350,
+        "source_vote_tally_matches": true,
+        "source_yes": 179,
+        "source_no": 164,
+        "source_abstain": 5,
+        "source_no_vote": 2,
+        "unmatched_person_strings": 1,
+        "invalid_office_intervals": 0,
+        "group_map_conflicts": 2,
+        "duplicate_vote_name_strings": 0,
+        "source_read_only": true,
+        "scoreable_people": 0
+      },
+      "closure": "BOUNDED_HISTORIC_ANOMALY",
+      "prior_before": {
+        "verified_original_indexed_dates": {
+          "alpha": 5,
+          "beta": 6
+        },
+        "conditional_2026_roster_group_transfer": {
+          "alpha": 1,
+          "beta": 6
+        }
+      },
+      "prior_after": {
+        "verified_original_indexed_dates": {
+          "alpha": 6,
+          "beta": 6
+        },
+        "conditional_2026_roster_group_transfer": {
+          "alpha": 1,
+          "beta": 7
+        }
+      },
+      "adversarial": "selection is active and dependent, no inferential representativeness; group codes not party IDs; no first_public_at",
+      "decision_for_next": "LOCALIZE_ANOMALY",
+      "status": "CLOSED_BOUNDED_HISTORICAL_ANOMALY",
+      "priors_update": [
+        {
+          "id": "PF-32-29",
+          "proposition": "Older original parliamentary sitting is consistent in raw totals but still has incomplete cross-document name/group reconciliation with October 2026 roster",
+          "state": "source-document observation, not population inference",
+          "evidence": "40350939895 source=https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion118/20250612/Votacion001/VOT_20250612132238.json SHA256=0d5c128727cb4b04e5f35585b7f7d51ed2b820279b259a053387a285a8f174d9",
+          "counterevidence": "no stable individual ID, time-varying parliamentary group history or rights guarantee",
+          "falsifier": "historical official biography/group sources resolve relationship or original digest changes"
+        }
+      ]
+    },
+    {
+      "id": "C30",
+      "block": "ADDITIONAL20",
+      "prereg_before_network": "2026-10-26T15:36:56.273325+00:00",
+      "observed": "2026-10-26T15:37:00.176237+00:00",
+      "selected_target": "2025-09-10",
+      "selection_rule": "LOCATE_ANOMALY_FORWARD_IN_HISTORY",
+      "hypotheses": {
+        "H1": "original exists, metadata and chronology auditable",
+        "H0": "official source fails or historical group/person mismatch persists"
+      },
+      "instrument": "official Congress page href→authentic JSON SHA→source-scoped group, name, period and rollcall arithmetic",
+      "result": {
+        "status": "ORIGINAL_RETRIEVED",
+        "source_url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion130/20250910/Votacion001/VOT_20250910213532.json",
+        "source_sha256": "fdb92b1dfd48995c784a285c5bcabe2e84b786cedcd531afb284b5c4402271f8",
+        "session": 130,
+        "vote_number": 1,
+        "original_date": "2025-09-10",
+        "date_scoped_official_urls": 11,
+        "vote_rows": 350,
+        "source_vote_tally_matches": true,
+        "source_yes": 184,
+        "source_no": 157,
+        "source_abstain": 7,
+        "source_no_vote": 2,
+        "unmatched_person_strings": 1,
+        "invalid_office_intervals": 0,
+        "group_map_conflicts": 1,
+        "duplicate_vote_name_strings": 0,
+        "source_read_only": true,
+        "scoreable_people": 0
+      },
+      "closure": "BOUNDED_HISTORIC_ANOMALY",
+      "prior_before": {
+        "verified_original_indexed_dates": {
+          "alpha": 6,
+          "beta": 6
+        },
+        "conditional_2026_roster_group_transfer": {
+          "alpha": 1,
+          "beta": 7
+        }
+      },
+      "prior_after": {
+        "verified_original_indexed_dates": {
+          "alpha": 7,
+          "beta": 6
+        },
+        "conditional_2026_roster_group_transfer": {
+          "alpha": 1,
+          "beta": 8
+        }
+      },
+      "adversarial": "selection is active and dependent, no inferential representativeness; group codes not party IDs; no first_public_at",
+      "decision_for_next": "LOCALIZE_ANOMALY",
+      "status": "CLOSED_BOUNDED_HISTORICAL_ANOMALY",
+      "priors_update": [
+        {
+          "id": "PF-32-30",
+          "proposition": "Older original parliamentary sitting is consistent in raw totals but still has incomplete cross-document name/group reconciliation with October 2026 roster",
+          "state": "source-document observation, not population inference",
+          "evidence": "40350939895 source=https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion130/20250910/Votacion001/VOT_20250910213532.json SHA256=fdb92b1dfd48995c784a285c5bcabe2e84b786cedcd531afb284b5c4402271f8",
+          "counterevidence": "no stable individual ID, time-varying parliamentary group history or rights guarantee",
+          "falsifier": "historical official biography/group sources resolve relationship or original digest changes"
+        }
+      ]
+    },
+    {
+      "id": "C31",
+      "block": "ADDITIONAL20",
+      "prereg_before_network": "2026-10-26T15:37:00.177091+00:00",
+      "observed": "2026-10-26T15:37:04.057157+00:00",
+      "selected_target": "2025-11-27",
+      "selection_rule": "LOCATE_ANOMALY_FORWARD_IN_HISTORY",
+      "hypotheses": {
+        "H1": "original exists, metadata and chronology auditable",
+        "H0": "official source fails or historical group/person mismatch persists"
+      },
+      "instrument": "official Congress page href→authentic JSON SHA→source-scoped group, name, period and rollcall arithmetic",
+      "result": {
+        "status": "ORIGINAL_RETRIEVED",
+        "source_url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion151/20251127/Votacion001/VOT_20251127124047.json",
+        "source_sha256": "e62e6ca1cfa4be9113e2ab9dd5a30b3b17740f036d5abda81eb63660be3774e8",
+        "session": 151,
+        "vote_number": 1,
+        "original_date": "2025-11-27",
+        "date_scoped_official_urls": 18,
+        "vote_rows": 350,
+        "source_vote_tally_matches": true,
+        "source_yes": 307,
+        "source_no": 7,
+        "source_abstain": 33,
+        "source_no_vote": 3,
+        "unmatched_person_strings": 1,
+        "invalid_office_intervals": 0,
+        "group_map_conflicts": 1,
+        "duplicate_vote_name_strings": 0,
+        "source_read_only": true,
+        "scoreable_people": 0
+      },
+      "closure": "BOUNDED_HISTORIC_ANOMALY",
+      "prior_before": {
+        "verified_original_indexed_dates": {
+          "alpha": 7,
+          "beta": 6
+        },
+        "conditional_2026_roster_group_transfer": {
+          "alpha": 1,
+          "beta": 8
+        }
+      },
+      "prior_after": {
+        "verified_original_indexed_dates": {
+          "alpha": 8,
+          "beta": 6
+        },
+        "conditional_2026_roster_group_transfer": {
+          "alpha": 1,
+          "beta": 9
+        }
+      },
+      "adversarial": "selection is active and dependent, no inferential representativeness; group codes not party IDs; no first_public_at",
+      "decision_for_next": "LOCALIZE_ANOMALY",
+      "status": "CLOSED_BOUNDED_HISTORICAL_ANOMALY",
+      "priors_update": [
+        {
+          "id": "PF-32-31",
+          "proposition": "Older original parliamentary sitting is consistent in raw totals but still has incomplete cross-document name/group reconciliation with October 2026 roster",
+          "state": "source-document observation, not population inference",
+          "evidence": "40350939895 source=https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion151/20251127/Votacion001/VOT_20251127124047.json SHA256=e62e6ca1cfa4be9113e2ab9dd5a30b3b17740f036d5abda81eb63660be3774e8",
+          "counterevidence": "no stable individual ID, time-varying parliamentary group history or rights guarantee",
+          "falsifier": "historical official biography/group sources resolve relationship or original digest changes"
+        }
+      ]
+    },
+    {
+      "id": "C32",
+      "block": "ADDITIONAL20",
+      "prereg_before_network": "2026-10-26T15:37:04.058113+00:00",
+      "observed": "2026-10-26T15:37:05.573899+00:00",
+      "selected_target": "2026-09-22",
+      "selection_rule": "LOCATE_ANOMALY_FORWARD_IN_HISTORY",
+      "hypotheses": {
+        "H1": "original exists, metadata and chronology auditable",
+        "H0": "official source fails or historical group/person mismatch persists"
+      },
+      "instrument": "official Congress page href→authentic JSON SHA→source-scoped group, name, period and rollcall arithmetic",
+      "result": {
+        "status": "ORIGINAL_RETRIEVED",
+        "source_url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion199/20260922/Votacion001/VOT_20260922205120.json",
+        "source_sha256": "12141a5bfa50629a1818c67c9c81657c34f408856b98506f9a755a9e392d24ea",
+        "session": 199,
+        "vote_number": 1,
+        "original_date": "2026-09-22",
+        "date_scoped_official_urls": 2,
+        "vote_rows": 350,
+        "source_vote_tally_matches": true,
+        "source_yes": 340,
+        "source_no": 7,
+        "source_abstain": 0,
+        "source_no_vote": 3,
+        "unmatched_person_strings": 0,
+        "invalid_office_intervals": 0,
+        "group_map_conflicts": 0,
+        "duplicate_vote_name_strings": 0,
+        "source_read_only": true,
+        "scoreable_people": 0
+      },
+      "closure": "BOUNDED_NO_MISMATCH",
+      "prior_before": {
+        "verified_original_indexed_dates": {
+          "alpha": 8,
+          "beta": 6
+        },
+        "conditional_2026_roster_group_transfer": {
+          "alpha": 1,
+          "beta": 9
+        }
+      },
+      "prior_after": {
+        "verified_original_indexed_dates": {
+          "alpha": 9,
+          "beta": 6
+        },
+        "conditional_2026_roster_group_transfer": {
+          "alpha": 2,
+          "beta": 9
+        }
+      },
+      "adversarial": "selection is active and dependent, no inferential representativeness; group codes not party IDs; no first_public_at",
+      "decision_for_next": "DIVERSIFY_TIME",
+      "status": "CLOSED_BOUNDED_MATCH",
+      "priors_update": [
+        {
+          "id": "PF-32-32",
+          "proposition": "One independently indexed 2026 sitting reproduces source-scoped name/group/role matching",
+          "state": "source-document observation, not population inference",
+          "evidence": "40350939895 source=https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion199/20260922/Votacion001/VOT_20260922205120.json SHA256=12141a5bfa50629a1818c67c9c81657c34f408856b98506f9a755a9e392d24ea",
+          "counterevidence": "no stable individual ID, time-varying parliamentary group history or rights guarantee",
+          "falsifier": "historical official biography/group sources resolve relationship or original digest changes"
+        }
+      ]
     }
   ],
-  "next_cycle_prereg": {
-    "id": "C26",
-    "chosen_after": "C25 replicated 1 unmatched person name and 2 mismatched group codes across two 2024 vote originals, needing chronology not arbitrary same-day repeats",
-    "question": "Do early December 2024 archived original votes retain 2024 name/group discrepancy when linked to 2026 roster?",
-    "hypotheses": {
-      "H1": "at least one recurring mismatch signifies longitudinal roster limitation",
-      "H0": "historical mismatch resolves by 2024-12-10, narrowing temporal boundary"
-    },
-    "method": "probe publisher-indexed 2024-12-10 first; thereafter within same native run select C27–C32 prospectively based on immediately prior evidence and Beta reliability trackers; no pre-fixed sequence",
-    "criterion": "real original sha, vote tallies, group/name and temporal aggregate diagnostics; unsupported sources STOP_R5; do not promote to identity/scores",
-    "status": "PREREGISTERED_BEFORE_NETWORK"
-  },
+  "next_cycle_prereg": null,
   "first_block": {
     "authorization": 12,
     "closed": 12,
@@ -962,9 +1427,38 @@
   },
   "second_block": {
     "authorization": 20,
-    "closed": 13,
-    "remaining": 7,
-    "status": "SOURCE_MISSING_STOP_5_AND_POLICY_ADAPTATION"
+    "closed": 20,
+    "remaining": 0,
+    "technical_or_documentary_bounded": 14,
+    "stop_R5": 6,
+    "decision_trace": "C13–C18 manual after results; C19–C23 and C26–C32 native source studies with preregistration before each request and decisions after preceding outcomes; C24–C25 manual anomaly-directed pivots"
   },
-  "audit_note": "C19-C23 sampled 2024-02-01,02-14,02-28,03-13,03-27 with no primary vote links, because unfounded date-choice model picked sparse calendar days. These are NOT evidence that votes do not exist in early 2024. Explicit pivot to official indexed sitting 2024-04-09 after 5 R5."
+  "audit_note": "C19-C23 sampled 2024-02-01,02-14,02-28,03-13,03-27 with no primary vote links, because unfounded date-choice model picked sparse calendar days. These are NOT evidence that votes do not exist in early 2024. Explicit pivot to official indexed sitting 2024-04-09 after 5 R5.",
+  "conclusion": {
+    "authorization_total": 32,
+    "closed": 32,
+    "first12": {
+      "bounded": 12,
+      "R5": 0
+    },
+    "additional20": {
+      "bounded": 14,
+      "R5": 6
+    },
+    "total_bounded": 26,
+    "total_STOP_R5": 6,
+    "release_gate": "NOT_READY",
+    "percentage_old_v1": 36.35,
+    "legally_certified_real_player_profiles": 0,
+    "first_public_at_certified_vote_events": 0,
+    "original_individual_votes_integrated_into_person_scoring": 0,
+    "source_original_json_files_sampled": 13,
+    "distinct_original_vote_calendar_days": 11,
+    "final_native_ci": 40350939895,
+    "final_native_jobs_pass": 4,
+    "python_tests_pass": 111,
+    "browser_headless_pass": true,
+    "scientific_novelty_claims": 0
+  },
+  "terminal": "CLOSED_32_OF_32_WITH_SEQUENTIAL_DECISIONS_AND_EXTERNAL_SOURCE_LIMITS"
 }
