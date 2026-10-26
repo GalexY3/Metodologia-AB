@@ -1,0 +1,46 @@
+{
+  "cycle": "C12",
+  "parent": "C11",
+  "status": "PREREGISTERED",
+  "type": "EXPERIMENTAL_AB_DOCUMENTARY_NO_ACTIONS",
+  "A": {
+    "question": "¿El BOCG del 15/12/2023 permite discriminar transiciones de pertenencia a grupo de sustituciones del titular de escaño?",
+    "estimand": "número y fecha de cambios de cada tipo en BOCG-15-D-51",
+    "truth": "extracto textual etiquetado bajo grupos parlamentarios vs diputados/credenciales",
+    "unit": "evento fuente+tipo+persona+fecha",
+    "scope": "BOCG 15-D-51"
+  },
+  "B": {
+    "H1": "hay eventos de ambas clases con fechas/actores diferentes",
+    "H0": "las listas son indistinguibles o información insuficiente",
+    "Hother": "los datos pueden mezclar cese por cargos incompatibles y reemplazo efectivo solo posteriormente"
+  },
+  "C": {
+    "comparison": "sección GRUPOS vs sección DIPUTADOS/credenciales; comprobar reemplazo sin concluir causa",
+    "source_exposure": "se vio previamente parte del índice/resultados; estudio EXPLORATORY",
+    "budget": "1 fuente oficial HTML ya indexada + un contraste de biografía o fuente de credencial",
+    "falsifier": "sin etiquetas o falta de fechas"
+  },
+  "D": {
+    "instrument": "lectura manual de secciones de BOCG y/o extracto institucional, sin necesidad de CI",
+    "negative_control": "no tratar cambios de Diputación Permanente o portavocía como cambio de escaño"
+  },
+  "E": {
+    "status": "PENDING_EXTERNAL_DOCUMENT_CHECK"
+  },
+  "F": {
+    "adversarial": "evento de sustitución, declaración y presencia institucional pueden tener fechas diferentes"
+  },
+  "G": {
+    "holdout": "NONE exploratory"
+  },
+  "H": {
+    "CT2_before": 29
+  },
+  "I": {
+    "grade_0_3": 0
+  },
+  "J": {
+    "decision": "elegir C13 después de verificar evento y precisión del esquema"
+  }
+}
