@@ -1,0 +1,1464 @@
+{
+  "campaign": "PF-AB32",
+  "cycles_closed": 32,
+  "cycles": [
+    {
+      "id": "C01",
+      "hypotheses": {
+        "H1": "Official catalog and machine-readable roster reachable with verified TLS",
+        "H0": "catalogue/data inaccessible"
+      },
+      "instrument": "probe_congress_opendata.py in native GitHub Actions",
+      "observed": "2026-10-26T14:38:14Z",
+      "result": {
+        "run": 40341414549,
+        "job": 121636813397,
+        "official_catalogue": true,
+        "downloaded_formats": [
+          "csv",
+          "json",
+          "xml"
+        ],
+        "eight_of_eight_downloaded": true,
+        "first_json_records": 137,
+        "other_json_record_counts": [
+          2787,
+          275
+        ],
+        "original_raw_saved_ephemerally": true
+      },
+      "adversarial": "Downloads and SHA prove retrieval integrity, not legal completeness or active office on 26 Oct; catalogue URLs may predate dissolution; rights/publication times unresolved.",
+      "priors_update": [
+        {
+          "id": "PF-32-01",
+          "proposition": "Official Congress catalog yields authentic downloadable machine-readable files from institutional HTTPS source",
+          "state": "supported under observed CI environment; individual legal coverage unverified",
+          "evidence": "40341414549 congress-source-probe",
+          "counterevidence": "earlier 2026 hard-coded endpoints yielded failure in web; freshness unknown",
+          "falsifier": "replay on same canonical source fails or raw bytes invalid"
+        }
+      ],
+      "decision": "C02 schema/profile audit without publishing names, then decide cohort strategy.",
+      "status": "CLOSED_BOUNDED"
+    },
+    {
+      "id": "C02",
+      "hypotheses": {
+        "H1": "Stable machine-readable IDs plus time fields",
+        "H0": "Name-only rows without stable source ID"
+      },
+      "instrument": "audit_congress_shape.py on real Congress JSON in CI 40341871306",
+      "observed": "2026-10-26T14:41:17Z",
+      "result": {
+        "job": 121638418278,
+        "active_json": 137,
+        "leavers_json": 275,
+        "economic_declarations": 2787,
+        "active_schema": [
+          "NOMBRE",
+          "FECHAALTA",
+          "FECHACONDICIONPLENA",
+          "FORMACIONELECTORAL",
+          "GRUPOPARLAMENTARIO",
+          "CIRCUNSCRIPCION"
+        ],
+        "explicit_person_identifier_key": false,
+        "leavers_have_end_date": true
+      },
+      "adversarial": "Name cannot be a globally unique stable identifier; catalog published during October 2026 dissolution. 137+275 cannot be interpreted as 412 active legislators.",
+      "priors_update": [
+        {
+          "id": "PF-32-02",
+          "proposition": "Congress JSON includes official roster metadata and temporally bounded term fields, but not explicit stable ID",
+          "state": "supported observed schema, strict identity link remains blocked",
+          "evidence": "CI job 121638418278 shape no names logged",
+          "counterevidence": "biography may contain profile URL with opaque identifier, not inspected yet",
+          "falsifier": "validated person-specific unique official institutional key found"
+        }
+      ],
+      "decision": "C03 audit exact name overlap, date format and term temporal integrity.",
+      "status": "CLOSED_BOUNDED"
+    },
+    {
+      "id": "C03",
+      "hypotheses": {
+        "H1": "Temporal dates consistent, sets distinct by normalized names",
+        "H0": "Dates malformed, overlap or contradiction"
+      },
+      "observed": "2026-10-26T14:43:26Z",
+      "instrument": "audit_congress_temporal.py native CI run 40342240487",
+      "result": {
+        "active": 137,
+        "discharged": 275,
+        "exact_name_overlap": 0,
+        "duplicate_names_within_each": 0,
+        "valid_start_active": 137,
+        "valid_start_and_end_discharged": 275,
+        "inverted_intervals": 0,
+        "latest_discharged_on": "2026-10-06"
+      },
+      "priors_update": [
+        {
+          "id": "PF-32-03",
+          "proposition": "Congress active and discharged JSON are disjoint by exact normalized name and contain parseable ordered period dates",
+          "state": "supported snapshot only; active meaning not independently adjudicated",
+          "evidence": "CI run 40342240487 C03_TEMPORAL",
+          "counterevidence": "no explicit person IDs; potential homonyms across legislatures; unusual dissolution status",
+          "falsifier": "different snapshot with overlapping rows or date inversions"
+        }
+      ],
+      "adversarial": "No duplication observed is not proof of legal uniqueness; 137 might be members remaining after dissolution but 137 vs historical FAQ 68 requires adjudication.",
+      "decision": "C04 move to individually recorded official parliamentary votes; audit source format before join.",
+      "status": "CLOSED_BOUNDED"
+    },
+    {
+      "id": "C04",
+      "hypotheses": {
+        "H1": "Historical vote source offers 350 per-person vote rows",
+        "H0": "only aggregates or inaccessible"
+      },
+      "observed": "2026-10-26T14:45:18Z",
+      "instrument": "scripts/probe_congress_vote.py official verified HTTPS and structural inspection in Actions 40342536528",
+      "result": {
+        "downloaded": true,
+        "bytes": 31587,
+        "sha256": "d83a10d39bad98a4f69c1e1b374700be949505aa40cb574ec0577b44d68c12d9",
+        "vote_rows": 350,
+        "fields": [
+          "asiento",
+          "diputado",
+          "grupo",
+          "voto"
+        ],
+        "header": [
+          "sesion",
+          "numeroVotacion",
+          "fecha",
+          "titulo",
+          "textoExpediente"
+        ],
+        "total_fields": [
+          "presentes",
+          "afavor",
+          "enContra",
+          "abstenciones",
+          "noVotan"
+        ]
+      },
+      "adversarial": "This is one historic roll call, no unique person id, first_public_at still unknown; no observational estimate of political merit or causal influence.",
+      "priors_update": [
+        {
+          "id": "PF-32-04",
+          "proposition": "Congress publishes original JSON individual roll-call events with date, institution and group labels",
+          "state": "SUPPORTED for at least one dated event",
+          "evidence": "40342536528 C04 original sha256",
+          "counterevidence": "vote rows keyed by strings, may not join person roster; 2026 dissolution means legislative endpoint not current",
+          "falsifier": "vote source drifts; schema or count fails replay"
+        }
+      ],
+      "decision": "C05 test arithmetic and safe roster-vote join without assuming names imply identity.",
+      "status": "CLOSED_BOUNDED"
+    },
+    {
+      "id": "C05",
+      "hypotheses": {
+        "H1": "one-to-one name keys and roll call 350 items reconcile with official roll call",
+        "H0": "source totals or textual names mismatch"
+      },
+      "observed": "2026-10-26T14:47:09Z",
+      "instrument": "scripts/audit_congress_vote_join.py official JSON originals native CI 40342858004",
+      "result": {
+        "vote_rows": 350,
+        "unique_vote_names": 350,
+        "roster_distinct": 412,
+        "exact_one_to_one_name_candidates": 350,
+        "ambiguous": 0,
+        "unmatched": 0,
+        "tally": {
+          "Sí": 33,
+          "No": 315,
+          "No vota": 2
+        },
+        "published_tallies_match": true
+      },
+      "adversarial": "Exact name in two documents under same institutional source strongly supports record-level linkage but is not durable ID, and current roster includes discharged historical members; publication timestamp unverified.",
+      "priors_update": [
+        {
+          "id": "PF-32-05",
+          "proposition": "At least one historical Congress roll call has full one-to-one normalized name match with combined current + discharged members and consistent tally",
+          "state": "SUPPORT_NARROW single vote; not generalizable to sessions",
+          "evidence": "40342858004 C05_JOIN 350/350 exact, zero ambiguity",
+          "counterevidence": "potential homonym over time; no immutable IDs",
+          "falsifier": "another vote fails match or temporal interval group consistency"
+        }
+      ],
+      "decision": "C06 validate each linked record's office interval and parliamentary group at vote date.",
+      "status": "CLOSED_BOUNDED"
+    },
+    {
+      "id": "C06",
+      "hypotheses": {
+        "H1": "All 350 vote-linked name candidates hold a temporally valid office",
+        "H0": "Temporal mismatch invalidates linkage"
+      },
+      "observed": "2026-10-26T14:48:53Z",
+      "instrument": "scripts/audit_congress_vote_temporal.py, GitHub Actions 40343125491",
+      "result": {
+        "vote_date": "2026-07-23",
+        "interval_valid": 350,
+        "interval_invalid": 0,
+        "remaining": 137,
+        "discharged_after_vote": 213,
+        "group_label_exact_mismatches": 350
+      },
+      "adversarial": "350/350 are valid on historic day, yet 350/350 GROUP labels differ textually between datasets, likely abbreviation; formal group reconciliation required. Names alone lack immutable IDs.",
+      "priors_update": [
+        {
+          "id": "PF-32-06",
+          "proposition": "Unique name joins for 2026-07-23 satisfy all date intervals, but group-label schema does not share strings",
+          "state": "supported narrow, group links unresolved",
+          "evidence": "40343125491 C06_LINK",
+          "counterevidence": "no explicit person ID and all 350 groups mismatch raw label",
+          "falsifier": "corresponding group code maps inconsistently to full parliamentary group title"
+        }
+      ],
+      "decision": "C07 map group code to full title and test functional/bijective relation.",
+      "status": "CLOSED_BOUNDED"
+    },
+    {
+      "id": "C07",
+      "hypotheses": {
+        "H1": "Group codes map bijectively to full official institutional names",
+        "H0": "Code collisions and changing group assignment"
+      },
+      "observed": "2026-10-26T14:51:02Z",
+      "instrument": "scripts/audit_group_concordance.py on official July 23 2026 vote+October rosters, native CI 40343373264",
+      "result": {
+        "group_categories": 9,
+        "linked_votes": 350,
+        "forward_conflicts": 0,
+        "reverse_conflicts": 0,
+        "codes": [
+          "GEH Bildu",
+          "GJxCAT",
+          "GMx",
+          "GP",
+          "GR",
+          "GS",
+          "GSUMAR",
+          "GV (EAJ-PNV)",
+          "GVOX"
+        ]
+      },
+      "adversarial": "Mapping established from overlapping rows on one session, may not survive party realignment or another session. Parliamentary groups not legal political party identity.",
+      "priors_update": [
+        {
+          "id": "PF-32-07",
+          "proposition": "At one fixed roll call 9 group abbreviations map one-to-one to official group names",
+          "state": "confirmed only for session 193 2026-07-23 vote001",
+          "evidence": "40343373264 C07_GROUP",
+          "counterevidence": "future session groups may differ",
+          "falsifier": "second vote produces conflicting code→full name concordance"
+        }
+      ],
+      "decision": "C08 obtain second independent vote on same date and test source format and group mapping generality.",
+      "status": "CLOSED_BOUNDED"
+    },
+    {
+      "id": "C08",
+      "hypotheses": {
+        "H1": "Second original roll call also joins all person strings and group codes",
+        "H0": "mismatches reveal overfit single source"
+      },
+      "observed": "2026-10-26T14:53:25Z",
+      "instrument": "probe_second_vote.py live Congress original 2026-07-23 Votacion002 in GitHub Actions 40343681021",
+      "result": {
+        "bytes": 32284,
+        "sha256": "e4609110932f34421fd08ac16dbddd5dcc23e4d113fe0a241700dab1956936b8",
+        "vote_rows": 350,
+        "unique_names": 350,
+        "roster_name_matches": 350,
+        "group_mapping_conflicts": 0,
+        "yes": 170,
+        "no": 178,
+        "no_vote": 2,
+        "date_literal": "23/7/2026"
+      },
+      "adversarial": "Second vote is same session and shares roster; not independent population. Source date serializations differ ('23/7/2026' vs '23/07/2026'). first_public unknown.",
+      "priors_update": [
+        {
+          "id": "PF-32-08",
+          "proposition": "Source-scoped names and parliamentary group mapping transfer to another independently retrieved vote in same session",
+          "state": "supported conditional on same session; not cross-session",
+          "evidence": "40343681021 350/350 name matches and 0 group conflicts; authentic SHA",
+          "counterevidence": "same session, correlated evidence; date formatting drift",
+          "falsifier": "other session breaks group/name mapping"
+        }
+      ],
+      "decision": "C09 address observed mixed date serialization before integrating reusable events.",
+      "status": "CLOSED_BOUNDED"
+    },
+    {
+      "id": "C09",
+      "hypotheses": {
+        "H1": "Source dates in both official JSONs normalize to one civil day under strict parser",
+        "H0": "serialization drift yields loss or false date"
+      },
+      "observed": "2026-10-26T14:55:48Z",
+      "instrument": "congress_vote_dates.py and negative pytest; two authentic JSONs checked in GHA 40344153791",
+      "result": {
+        "both_real_dates_normalized": "2026-07-23",
+        "date_source_formats": [
+          "23/07/2026",
+          "23/7/2026"
+        ],
+        "native_CI_source_app_checks": "success",
+        "python_pytest_report": "106 passed in 5.21 seconds for selected Python suite; includes new parser regressions"
+      },
+      "adversarial": "Civil event occurrence date is NOT source first_public_at or observed_at; neither may be replaced by date of event.",
+      "priors_update": [
+        {
+          "id": "PF-32-09",
+          "proposition": "Official vote-date serialization variation is nonsemantic under strict day/month/year parser",
+          "state": "supported both original sources and negative tests",
+          "evidence": "40344153791 C09_REAL_DATES PASS and source-and-app-checks PASS",
+          "counterevidence": "other session may use timestamp or impossible date",
+          "falsifier": "a third official source returns date outside documented converter"
+        }
+      ],
+      "decision": "C10 register only provenance-hashed aggregate events with true vote date, never backfill first-public timestamp.",
+      "status": "CLOSED_BOUNDED"
+    },
+    {
+      "id": "C10",
+      "hypotheses": {
+        "H1": "two official raw vote files replay entirely against bounded aggregate manifest",
+        "H0": "source bytes or counts drift"
+      },
+      "observed": "2026-10-26T14:59:27Z",
+      "instrument": "verify_congress_vote_aggregates.py and pytest against both original GitHub Actions raw sources 40344682502",
+      "result": {
+        "votes_verified": 2,
+        "unique_individual_rows_per_vote": 350,
+        "sha256_comparison": "MATCH_BOTH",
+        "dates": "2026-07-23",
+        "native_pytest_pass": 108,
+        "first_public_at": null,
+        "scoring_allowed": false
+      },
+      "adversarial": "Aggregate totals do not establish individual influence/score, and event date does not prove publicly available time; no person rows versioned.",
+      "priors_update": [
+        {
+          "id": "PF-32-10",
+          "proposition": "2 independently downloaded official roll-call originals support lossless aggregate source-manifest replay",
+          "state": "verified at two pinned SHAs (conditional on institutional HTTPS)",
+          "evidence": "40344682502 C10_ORIGINAL_REPLAY and Python native suite",
+          "counterevidence": "unknown rights and first_public, same sitting means dependence",
+          "falsifier": "source SHA or tally differs on rerun"
+        }
+      ],
+      "decision": "C11 expose only verified aggregate through local read-only API and test fail-closed behavior.",
+      "status": "CLOSED_BOUNDED"
+    },
+    {
+      "id": "C11",
+      "hypotheses": {
+        "H1": "strict historical aggregate API remains read-only and rejects fabricated person-scoring or publication dates",
+        "H0": "local HTTP endpoint leaks personal scores or accepts tampered manifest"
+      },
+      "observed": "2026-10-26T15:03:37Z",
+      "instrument": "congress_vote_evidence.py, local /api/verified-rollcalls, tamper and HTTP hostile Host tests; native GHA 40345506173",
+      "result": {
+        "http_get_aggregate_events": 2,
+        "score": false,
+        "publication_time": null,
+        "negative_tamper_tests": true,
+        "source_and_app_pytest": "111 passed",
+        "browser_e2e": "success",
+        "congress_capture": "success",
+        "all_4_jobs_success": true
+      },
+      "adversarial": "Two CI syntax bugs and repairs observed on prior failed attempts; final green. HTTP local-only, and provenance is conditional on pinned original source. Not a public launch.",
+      "priors_update": [
+        {
+          "id": "PF-32-11",
+          "proposition": "Two actual official roll-call aggregates can be exposed read-only in the localhost API under fail-closed provenance checks",
+          "state": "supported integration / CI 40345506173, still no publishable person scores",
+          "evidence": "111 passing Python tests, 4 CI jobs successful",
+          "counterevidence": "UI currently only displays manual pilot; license/first-public unknown",
+          "falsifier": "tampered manifest accepted or API returns person attributes"
+        }
+      ],
+      "decision": "C12 native-browser visibility audit of truly source-verified vs historical manual aggregates.",
+      "status": "CLOSED_BOUNDED"
+    },
+    {
+      "id": "C12",
+      "hypotheses": {
+        "H1": "Native Chromium renders verified 2-vote panel and warnings",
+        "H0": "visual/source ambiguity or CSP regression"
+      },
+      "observed": "2026-10-26T15:11:12Z",
+      "instrument": "app.js source-backed read-only Observatory panel, tests/run_browser_smoke.py, GHA 40346235854",
+      "result": {
+        "source_and_app_checks": "success; 111 pytest pass",
+        "congress_source_probe": "success",
+        "original_source_download": "success",
+        "native_browser": "SUCCESS_NATIVE_CHROMIUM_40346235854",
+        "ui_code_merged_into_research_branch": true
+      },
+      "adversarial": "Browser assertions not yet executed due Chromium install; cannot claim end-to-end visual pass. Mark PARTIAL_R5, preserve pending workflow and re-adjudicate after finish. CI browser subsequently passed in same run after slow runtime install. Later success added transparently, not prereg changes.",
+      "priors_update": [
+        {
+          "id": "PF-32-12",
+          "proposition": "Source-backed aggregate UI can be wired without Python backend regression",
+          "state": "supported native Python and source tests, Chromium pending",
+          "evidence": "GHA run 40346235854 3/4 jobs success; browser installing",
+          "counterevidence": "native Chromium rendering not established",
+          "falsifier": "Chromium fails or misrepresents verified source"
+        }
+      ],
+      "decision": "Because source/app checks passed but browser installation is still unobserved, close C12 PARTIAL_R5_VISUAL pending; next branch seeks primary institutional dissolution source and legal role cutoff independent of UI.",
+      "status": "CLOSED_BOUNDED_NATIVE_BROWSER_CONFIRMED_AFTER_INITIAL_WAIT"
+    },
+    {
+      "id": "C13",
+      "hypotheses": {
+        "H1": "Institutional primary decree verifies 6 Oct dissolution and 29 Nov new elections",
+        "H0": "primary document unavailable/unverified"
+      },
+      "observed": "2026-10-26T15:13:14Z",
+      "instrument": "probe_boe_dissolution.py, official www.boe.es original 33544 bytes TLS, native Actions 40347128170",
+      "result": {
+        "source": "BOE-A-2026-20742",
+        "source_sha256": "24fb306d6a039705959dcdc4c88cf7cf8645c07b50583dba1688157ebab3e993",
+        "original_verified": true,
+        "clauses": 5,
+        "publication_date": "2026-10-06",
+        "legal_dissolution_effective": "2026-10-06",
+        "election_date": "2026-11-29"
+      },
+      "adversarial": "Publication day of dissolution is not the first_public_at of 23 July votes or person rosters. HTML page hash may differ across requests due dynamic ancillary content, legal text must be revalidated.",
+      "priors_update": [
+        {
+          "id": "PF-32-13",
+          "proposition": "Official BOE provides separate independently verified time boundary for legislative status post 2026-10-06",
+          "state": "supported legal documentary fact",
+          "evidence": "CI 40347128170 original 33,544B + clause checks",
+          "counterevidence": "older roster says 137 active after dissolution; semantics need explicit override",
+          "falsifier": "BOE original correction changes date or role applicability"
+        }
+      ],
+      "decision": "C14 sample a second *different parliamentary session* after observing same-session consistency and dissolution fact; seek primary September30 session original (pre-dissolution), no person rating.",
+      "status": "CLOSED_BOUNDED"
+    },
+    {
+      "id": "C14",
+      "hypotheses": {
+        "H1": "Congress exposes discoverable September 2026 independent-session JSON",
+        "H0": "no authentic cross-session download"
+      },
+      "observed": "2026-10-26T15:15:04Z",
+      "instrument": "probe_cross_session.py verified-TLS official calendar href parse and new session 202 original, GitHub Actions 40347389556",
+      "result": {
+        "official_calendar_vote_links": 21,
+        "source_sha256": "548615f61b7fd4a1e87547666d0758ca2531034be559fd41c75e27c07aad7687",
+        "calendar_sha256": "9d9c7abac7ca5d78b33806f932e88f2834769790b84ee48e40e61e9b4d806901",
+        "vote_date": "2026-09-30",
+        "vote_session": 202,
+        "vote_number": 1,
+        "person_like_rows": 350,
+        "tally": {
+          "yes": 137,
+          "no": 175,
+          "abstain": 34,
+          "no_vote": 4
+        }
+      },
+      "adversarial": "Official document original proves rows and basic counts, but source name collisions and temporal coherence with July roster not yet independently checked; first_public unknown.",
+      "priors_update": [
+        {
+          "id": "PF-32-14",
+          "proposition": "A different parliamentary session (202, 30 September 2026) is discoverable and yields 21 original JSON links through primary Congress calendar",
+          "state": "confirmed source availability, not member join",
+          "evidence": "40347389556 350 row original SHA",
+          "counterevidence": "only 1 of 21 inspected, no cross-period harmonization yet",
+          "falsifier": "other published date URLs fail discovery or roles diverge"
+        }
+      ],
+      "decision": "C15 test cross-session identity and role dates on source202 instead of declaring cross-temporal validity automatically.",
+      "status": "CLOSED_BOUNDED"
+    },
+    {
+      "id": "C15",
+      "hypotheses": {
+        "H1": "September independent-session roll call joins historical roster and 2026 group map",
+        "H0": "new period introduces collisions or invalid office dates"
+      },
+      "observed": "2026-10-26T15:16:42Z",
+      "instrument": "audit_cross_session.py on original session202 JSON and 20261026 roster, GitHub Actions 40347678119",
+      "result": {
+        "source_rows": 350,
+        "source_name_matches": 350,
+        "group_map_conflicts": 0,
+        "published_vote_tally_match": true,
+        "session": 202,
+        "date": "2026-09-30"
+      },
+      "adversarial": "Only 1 event from a second date; name matching across sessions is still a heuristic; no immutable person IDs, no dynamic parliamentary group changes tested.",
+      "priors_update": [
+        {
+          "id": "PF-32-15",
+          "proposition": "Single-vote name+group concordance transfers from session193 Jul to 202 Sep",
+          "state": "supported 1 held-out session across ~2months, no person scoring",
+          "evidence": "40347678119 C15_CROSS_TIME original 350/350",
+          "counterevidence": "only two sessions, no RPP identities",
+          "falsifier": "other published legislative date mismatches identity/term/group"
+        }
+      ],
+      "decision": "C16 investigate whether Congress calendar exposes dates for heterogeneous source sampling instead of testing 21 votes from one correlated sitting.",
+      "status": "CLOSED_BOUNDED"
+    },
+    {
+      "id": "C16",
+      "hypotheses": {
+        "H1": "date-picker exposes >=12 distinct dates for population sampling",
+        "H0": "only current selected date appears"
+      },
+      "observed": "2026-10-26T15:19:19Z",
+      "instrument": "audit_congress_calendar_dates.py official verified-TLS calendar and HTML option extraction, GHA 40348099682; first parsing error repaired after live CI",
+      "result": {
+        "option_count": 6,
+        "distinct_dates_seen": 1,
+        "only_date": "30/09/2026",
+        "date_choices_sufficient": false
+      },
+      "adversarial": "A single server-rendered page is not a date archive. A date link from secondary search may guide retrieval but cannot serve as primary observation itself.",
+      "priors_update": [
+        {
+          "id": "PF-32-16",
+          "proposition": "Official vote calendar HTML contains one selected date, not exhaustive dates discoverable from a single page",
+          "state": "SUPPORTED for this September page only; metadata might be available through uninspected JS endpoint",
+          "evidence": "GHA 40348099682 C16_DATES, 1 distinct date and 6 options",
+          "counterevidence": "site may have AJAX archive and other dates via explicit URL",
+          "falsifier": "official calendar offers separately accessible multi-date index"
+        }
+      ],
+      "decision": "C17 pivot from single-page enumeration to deliberately queried other official 2026-09-10 session (cited official indexed source), verify raw 196 JSON from canonical site.",
+      "status": "CLOSED_STOP_R5_DATE_INVENTORY"
+    },
+    {
+      "id": "C17",
+      "hypotheses": {
+        "H1": "primary Congress September 10 session196 can be obtained through date query and original links",
+        "H0": "date query silently ignored or no votes"
+      },
+      "observed": "2026-10-26T15:21:25Z",
+      "instrument": "probe_other_session.py official dated calendar Sept10, source-retrieved original in GitHub Actions 40348469071",
+      "result": {
+        "session": 196,
+        "requested_date": "2026-09-10",
+        "links_discovered": 21,
+        "first_vote_rows": 350,
+        "sha256": "ef14a0d604c8f0638c8966a241446864f56882fac742219bf2d42f7a4e129c7a",
+        "tallies": {
+          "yes": 139,
+          "no": 207,
+          "abstain": 1,
+          "no_vote": 3
+        }
+      },
+      "adversarial": "Third original institutional date improves temporal breadth but no semantic identity/membership adjudication; time first_public unknown.",
+      "priors_update": [
+        {
+          "id": "PF-32-17",
+          "proposition": "Individually known Congress vote dates can be queried for distinct sessions despite 1-date single-page selector",
+          "state": "supported Sep10 196 and Sep30 202",
+          "evidence": "40348469071 21 accessible links Sep10, one original captured",
+          "counterevidence": "unknown date universe; no automatic complete enumeration",
+          "falsifier": "attempted other official known dates fail to return date-matched session"
+        }
+      ],
+      "decision": "C18 test historic September 10 source versus latest roster and older group mapping with no person identities published.",
+      "status": "CLOSED_BOUNDED"
+    },
+    {
+      "id": "C18",
+      "hypotheses": {
+        "H1": "Third date Sep10 valid 350-name roster+group/period transfer",
+        "H0": "new session breaks joining or tally"
+      },
+      "observed": "2026-10-26T15:24:04Z",
+      "instrument": "audit_third_session.py official 196 vote1 and 412 roster in GHA 40348888799",
+      "result": {
+        "official_vote_rows": 350,
+        "source_scoped_name_match": 350,
+        "invalid_role_period": 0,
+        "group_conflicts": 0,
+        "aggregate_tally_match": true
+      },
+      "adversarial": "Three dates with same membership cannot imply legal universal identity, nor stable influence scores. Remaining dates require observed-only sampling and source-level uncertainty.",
+      "priors_update": [
+        {
+          "id": "PF-32-18",
+          "proposition": "Source-scoped roster-vote matches and dated party-group mappings reproduced in independent Sep10, Sep30, Jul23 sessions",
+          "state": "bounded supported 3 sessions, not representative",
+          "evidence": "40348888799 C18_THIRD_SESSION",
+          "counterevidence": "three summer/autumn 2026 dates and same legislature, correlated names",
+          "falsifier": "older sessions exhibit ID/group/date changes"
+        }
+      ],
+      "decision": "C19 source-stratified adaptive historical validation; select each subsequent cycle only after preceding observation and posterior update, not fixed 14 inputs.",
+      "status": "CLOSED_BOUNDED"
+    },
+    {
+      "id": "C19",
+      "hypotheses": {
+        "H1": "H1 authentic date-matched source and coherent aggregates",
+        "H0": "H0 missing source or group/name/term anomaly"
+      },
+      "preregistered_before_request": "2026-10-26T15:28:38.871016+00:00",
+      "requested_date": "2024-02-01",
+      "mode": "conditional source-day selection and original SHA",
+      "observed": "2026-10-26T15:28:40.151459+00:00",
+      "instrument": "verified HTTPS Congress HTML source href and original JSON; no personal values exported",
+      "result": {
+        "status": "STOP_R5",
+        "error_type": "ValueError",
+        "error_code": "OFFICIAL_DATE_HAS_NO_MATCHING_VOTES",
+        "original_verified": false,
+        "scoreable_people": 0
+      },
+      "decision": "STOP_R5_SOURCE_NOT_AVAILABLE",
+      "priors_before": {
+        "date_source_capture": {
+          "alpha": 1,
+          "beta": 1
+        },
+        "conditional_name_group_temporal_transfer": {
+          "alpha": 1,
+          "beta": 1
+        }
+      },
+      "priors_after": {
+        "date_source_capture": {
+          "alpha": 1,
+          "beta": 2
+        },
+        "conditional_name_group_temporal_transfer": {
+          "alpha": 1,
+          "beta": 1
+        }
+      },
+      "adversarial": "Selection adaptive and correlated; Beta engineering heuristic not population estimate; no immutable person IDs/rights/first-public.",
+      "priors_update": [
+        {
+          "id": "PF-32-19",
+          "proposition": "Attempted distant historical date yielded no date-matched official original source; raw-source transport/source-day selection cannot be assumed",
+          "state": "R5 NONAVAILABILITY FOR THIS CANDIDATE ONLY",
+          "evidence": "Actions 40349607949 adaptive original fetch",
+          "counterevidence": "other historical dates are documented and accessible; no conclusion about total 2024 calendar",
+          "falsifier": "same date original JSON eventually found from alternative official date-scoped catalogue"
+        }
+      ],
+      "next_condition": "SOURCE_ACCESS_BRANCH",
+      "status": "CLOSED_STOP_R5_SOURCE_NOT_FOUND"
+    },
+    {
+      "id": "C20",
+      "hypotheses": {
+        "H1": "H1 authentic date-matched source and coherent aggregates",
+        "H0": "H0 missing source or group/name/term anomaly"
+      },
+      "preregistered_before_request": "2026-10-26T15:28:40.152496+00:00",
+      "requested_date": "2024-02-14",
+      "mode": "conditional source-day selection and original SHA",
+      "observed": "2026-10-26T15:28:40.884889+00:00",
+      "instrument": "verified HTTPS Congress HTML source href and original JSON; no personal values exported",
+      "result": {
+        "status": "STOP_R5",
+        "error_type": "ValueError",
+        "error_code": "OFFICIAL_DATE_HAS_NO_MATCHING_VOTES",
+        "original_verified": false,
+        "scoreable_people": 0
+      },
+      "decision": "STOP_R5_SOURCE_NOT_AVAILABLE",
+      "priors_before": {
+        "date_source_capture": {
+          "alpha": 1,
+          "beta": 2
+        },
+        "conditional_name_group_temporal_transfer": {
+          "alpha": 1,
+          "beta": 1
+        }
+      },
+      "priors_after": {
+        "date_source_capture": {
+          "alpha": 1,
+          "beta": 3
+        },
+        "conditional_name_group_temporal_transfer": {
+          "alpha": 1,
+          "beta": 1
+        }
+      },
+      "adversarial": "Selection adaptive and correlated; Beta engineering heuristic not population estimate; no immutable person IDs/rights/first-public.",
+      "priors_update": [
+        {
+          "id": "PF-32-20",
+          "proposition": "Attempted distant historical date yielded no date-matched official original source; raw-source transport/source-day selection cannot be assumed",
+          "state": "R5 NONAVAILABILITY FOR THIS CANDIDATE ONLY",
+          "evidence": "Actions 40349607949 adaptive original fetch",
+          "counterevidence": "other historical dates are documented and accessible; no conclusion about total 2024 calendar",
+          "falsifier": "same date original JSON eventually found from alternative official date-scoped catalogue"
+        }
+      ],
+      "next_condition": "SOURCE_ACCESS_BRANCH",
+      "status": "CLOSED_STOP_R5_SOURCE_NOT_FOUND"
+    },
+    {
+      "id": "C21",
+      "hypotheses": {
+        "H1": "H1 authentic date-matched source and coherent aggregates",
+        "H0": "H0 missing source or group/name/term anomaly"
+      },
+      "preregistered_before_request": "2026-10-26T15:28:40.885979+00:00",
+      "requested_date": "2024-02-28",
+      "mode": "conditional source-day selection and original SHA",
+      "observed": "2026-10-26T15:28:41.844028+00:00",
+      "instrument": "verified HTTPS Congress HTML source href and original JSON; no personal values exported",
+      "result": {
+        "status": "STOP_R5",
+        "error_type": "ValueError",
+        "error_code": "OFFICIAL_DATE_HAS_NO_MATCHING_VOTES",
+        "original_verified": false,
+        "scoreable_people": 0
+      },
+      "decision": "STOP_R5_SOURCE_NOT_AVAILABLE",
+      "priors_before": {
+        "date_source_capture": {
+          "alpha": 1,
+          "beta": 3
+        },
+        "conditional_name_group_temporal_transfer": {
+          "alpha": 1,
+          "beta": 1
+        }
+      },
+      "priors_after": {
+        "date_source_capture": {
+          "alpha": 1,
+          "beta": 4
+        },
+        "conditional_name_group_temporal_transfer": {
+          "alpha": 1,
+          "beta": 1
+        }
+      },
+      "adversarial": "Selection adaptive and correlated; Beta engineering heuristic not population estimate; no immutable person IDs/rights/first-public.",
+      "priors_update": [
+        {
+          "id": "PF-32-21",
+          "proposition": "Attempted distant historical date yielded no date-matched official original source; raw-source transport/source-day selection cannot be assumed",
+          "state": "R5 NONAVAILABILITY FOR THIS CANDIDATE ONLY",
+          "evidence": "Actions 40349607949 adaptive original fetch",
+          "counterevidence": "other historical dates are documented and accessible; no conclusion about total 2024 calendar",
+          "falsifier": "same date original JSON eventually found from alternative official date-scoped catalogue"
+        }
+      ],
+      "next_condition": "SOURCE_ACCESS_BRANCH",
+      "status": "CLOSED_STOP_R5_SOURCE_NOT_FOUND"
+    },
+    {
+      "id": "C22",
+      "hypotheses": {
+        "H1": "H1 authentic date-matched source and coherent aggregates",
+        "H0": "H0 missing source or group/name/term anomaly"
+      },
+      "preregistered_before_request": "2026-10-26T15:28:41.845273+00:00",
+      "requested_date": "2024-03-13",
+      "mode": "conditional source-day selection and original SHA",
+      "observed": "2026-10-26T15:28:42.631770+00:00",
+      "instrument": "verified HTTPS Congress HTML source href and original JSON; no personal values exported",
+      "result": {
+        "status": "STOP_R5",
+        "error_type": "ValueError",
+        "error_code": "OFFICIAL_DATE_HAS_NO_MATCHING_VOTES",
+        "original_verified": false,
+        "scoreable_people": 0
+      },
+      "decision": "STOP_R5_SOURCE_NOT_AVAILABLE",
+      "priors_before": {
+        "date_source_capture": {
+          "alpha": 1,
+          "beta": 4
+        },
+        "conditional_name_group_temporal_transfer": {
+          "alpha": 1,
+          "beta": 1
+        }
+      },
+      "priors_after": {
+        "date_source_capture": {
+          "alpha": 1,
+          "beta": 5
+        },
+        "conditional_name_group_temporal_transfer": {
+          "alpha": 1,
+          "beta": 1
+        }
+      },
+      "adversarial": "Selection adaptive and correlated; Beta engineering heuristic not population estimate; no immutable person IDs/rights/first-public.",
+      "priors_update": [
+        {
+          "id": "PF-32-22",
+          "proposition": "Attempted distant historical date yielded no date-matched official original source; raw-source transport/source-day selection cannot be assumed",
+          "state": "R5 NONAVAILABILITY FOR THIS CANDIDATE ONLY",
+          "evidence": "Actions 40349607949 adaptive original fetch",
+          "counterevidence": "other historical dates are documented and accessible; no conclusion about total 2024 calendar",
+          "falsifier": "same date original JSON eventually found from alternative official date-scoped catalogue"
+        }
+      ],
+      "next_condition": "SOURCE_ACCESS_BRANCH",
+      "status": "CLOSED_STOP_R5_SOURCE_NOT_FOUND"
+    },
+    {
+      "id": "C23",
+      "hypotheses": {
+        "H1": "H1 authentic date-matched source and coherent aggregates",
+        "H0": "H0 missing source or group/name/term anomaly"
+      },
+      "preregistered_before_request": "2026-10-26T15:28:42.632978+00:00",
+      "requested_date": "2024-03-27",
+      "mode": "conditional source-day selection and original SHA",
+      "observed": "2026-10-26T15:28:44.396051+00:00",
+      "instrument": "verified HTTPS Congress HTML source href and original JSON; no personal values exported",
+      "result": {
+        "status": "STOP_R5",
+        "error_type": "ValueError",
+        "error_code": "OFFICIAL_DATE_HAS_NO_MATCHING_VOTES",
+        "original_verified": false,
+        "scoreable_people": 0
+      },
+      "decision": "STOP_R5_SOURCE_NOT_AVAILABLE",
+      "priors_before": {
+        "date_source_capture": {
+          "alpha": 1,
+          "beta": 5
+        },
+        "conditional_name_group_temporal_transfer": {
+          "alpha": 1,
+          "beta": 1
+        }
+      },
+      "priors_after": {
+        "date_source_capture": {
+          "alpha": 1,
+          "beta": 6
+        },
+        "conditional_name_group_temporal_transfer": {
+          "alpha": 1,
+          "beta": 1
+        }
+      },
+      "adversarial": "Selection adaptive and correlated; Beta engineering heuristic not population estimate; no immutable person IDs/rights/first-public.",
+      "priors_update": [
+        {
+          "id": "PF-32-23",
+          "proposition": "Attempted distant historical date yielded no date-matched official original source; raw-source transport/source-day selection cannot be assumed",
+          "state": "R5 NONAVAILABILITY FOR THIS CANDIDATE ONLY",
+          "evidence": "Actions 40349607949 adaptive original fetch",
+          "counterevidence": "other historical dates are documented and accessible; no conclusion about total 2024 calendar",
+          "falsifier": "same date original JSON eventually found from alternative official date-scoped catalogue"
+        }
+      ],
+      "next_condition": "SOURCE_ACCESS_BRANCH",
+      "status": "CLOSED_STOP_R5_SOURCE_NOT_FOUND"
+    },
+    {
+      "id": "C24",
+      "hypotheses": {
+        "H1": "date verified by original Congress index yields valid official 2024 JSON and full 412-roster/group reconciliation",
+        "H0": "source or old-member timeline/group fails"
+      },
+      "observed": "2026-10-26T15:31:31Z",
+      "instrument": "probe_indexed_2024.py official Apr9 session034 vote001, Actions 40350115767; original pinned SHA",
+      "result": {
+        "original": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion034/20240409/Votacion001/VOT_20240409210631.json",
+        "sha256": "c8de1b79f50085e2148d3d9e30d766446c67b43f53d2c213a372fa4c36ce168e",
+        "row_count": 349,
+        "official_yes": 310,
+        "official_no": 33,
+        "official_abstain": 0,
+        "official_no_vote": 6,
+        "tally_consistent": true,
+        "unmatched_member_name_strings": 1,
+        "invalid_office_periods": 0,
+        "conflicting_parliamentary_group_map": 2
+      },
+      "adversarial": "H1 only partly supported: real data and arithmetic pass, but one name has no match and two group labels conflict against 2026 roster last-group values; 2024 data cannot be blindly reconciled to latest group. No fabricated match to make 349/349.",
+      "priors_update": [
+        {
+          "id": "PF-32-24",
+          "proposition": "An actual 2024 roll call is retrievable with correct arithmetic but modern roster/group mapping is not perfectly time invariant",
+          "state": "CONFIRMED LOCAL ANOMALY; scope April9 2024",
+          "evidence": "Actions 40350115767 C24_INDEXED_DATE, 349 rows 1 unknown and 2 group conflicts",
+          "counterevidence": "exact normalized names are only source-scoped; mismatch may be harmless spelling vs actual group history",
+          "falsifier": "independent historical group/identity records reconcile mismatch with earlier names, or per-vote discrepancy was transcription anomaly"
+        }
+      ],
+      "decision": "C25 FOCUS on replication of exact 2024 mismatch across another independent April9 roll-call before attributing cause.",
+      "status": "CLOSED_BOUNDED_ANOMALY_FOUND"
+    },
+    {
+      "id": "C25",
+      "hypotheses": {
+        "H1": "second independently published vote same historical session repeats missing name and group anomalies",
+        "H0": "source-specific isolated data error"
+      },
+      "observed": "2026-10-26T15:34:01Z",
+      "instrument": "audit_second_2024_vote.py, official 2024-04-09 Votacion002 original GHA 40350479635",
+      "result": {
+        "source_sha256": "d5db4e9fe8a6b0e3a7931a071f25cc6d02751ac8035e18872d02bacbf0f5ef02",
+        "vote_rows": 349,
+        "unmatched_name_strings": 1,
+        "group_label_discrepancies": 2,
+        "tallies_match": true
+      },
+      "adversarial": "Two roll calls in one sitting share member pool, so replicated anomalies likely structural/historical group/name drift, NOT two independent members or legal ID proof.",
+      "priors_update": [
+        {
+          "id": "PF-32-25",
+          "proposition": "In April 2024 session034 both votes have the same aggregate mismatch pattern: 1 unlinked name, 2 parliamentary group label discrepancies relative to latest roster",
+          "state": "supported 2 historical source files, correlated within session",
+          "evidence": "40350115767 C24 and 40350479635 C25 independent original SHA",
+          "counterevidence": "no source-backed proof whether mismatch is spelling, renaming, or actual group-switch",
+          "falsifier": "independent contemporary roster/history corroborates matching person/group"
+        }
+      ],
+      "decision": "C26 investigate time localization of persistent 2024 group/name mismatch using independently indexed 2024-12-10 sitting; if persists, choose subsequent earlier/later dates dynamically to locate scope.",
+      "status": "CLOSED_BOUNDED_REPLICATED_ANOMALY"
+    },
+    {
+      "id": "C26",
+      "block": "ADDITIONAL20",
+      "prereg_before_network": "2026-10-26T15:36:47.371634+00:00",
+      "observed": "2026-10-26T15:36:49.359443+00:00",
+      "selected_target": "2024-12-10",
+      "selection_rule": "FIRST_TEST_AFTER_C25_GROUP_ANOMALY",
+      "hypotheses": {
+        "H1": "original exists, metadata and chronology auditable",
+        "H0": "official source fails or historical group/person mismatch persists"
+      },
+      "instrument": "official Congress page href→authentic JSON SHA→source-scoped group, name, period and rollcall arithmetic",
+      "result": {
+        "status": "ORIGINAL_RETRIEVED",
+        "source_url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion083/20241210/Votacion001/VOT_20241210202031.json",
+        "source_sha256": "49290c6a9e4032ae475cff5fafd7ba9ca9829a1a961ca5c94b0beae60af970de",
+        "session": 83,
+        "vote_number": 1,
+        "original_date": "2024-12-10",
+        "date_scoped_official_urls": 2,
+        "vote_rows": 350,
+        "source_vote_tally_matches": true,
+        "source_yes": 316,
+        "source_no": 5,
+        "source_abstain": 21,
+        "source_no_vote": 8,
+        "unmatched_person_strings": 1,
+        "invalid_office_intervals": 0,
+        "group_map_conflicts": 2,
+        "duplicate_vote_name_strings": 0,
+        "source_read_only": true,
+        "scoreable_people": 0
+      },
+      "closure": "BOUNDED_HISTORIC_ANOMALY",
+      "prior_before": {
+        "verified_original_indexed_dates": {
+          "alpha": 2,
+          "beta": 6
+        },
+        "conditional_2026_roster_group_transfer": {
+          "alpha": 1,
+          "beta": 3
+        }
+      },
+      "prior_after": {
+        "verified_original_indexed_dates": {
+          "alpha": 3,
+          "beta": 6
+        },
+        "conditional_2026_roster_group_transfer": {
+          "alpha": 1,
+          "beta": 4
+        }
+      },
+      "adversarial": "selection is active and dependent, no inferential representativeness; group codes not party IDs; no first_public_at",
+      "decision_for_next": "LOCALIZE_ANOMALY",
+      "status": "CLOSED_BOUNDED_HISTORICAL_ANOMALY",
+      "priors_update": [
+        {
+          "id": "PF-32-26",
+          "proposition": "Older original parliamentary sitting is consistent in raw totals but still has incomplete cross-document name/group reconciliation with October 2026 roster",
+          "state": "source-document observation, not population inference",
+          "evidence": "40350939895 source=https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion083/20241210/Votacion001/VOT_20241210202031.json SHA256=49290c6a9e4032ae475cff5fafd7ba9ca9829a1a961ca5c94b0beae60af970de",
+          "counterevidence": "no stable individual ID, time-varying parliamentary group history or rights guarantee",
+          "falsifier": "historical official biography/group sources resolve relationship or original digest changes"
+        }
+      ]
+    },
+    {
+      "id": "C27",
+      "block": "ADDITIONAL20",
+      "prereg_before_network": "2026-10-26T15:36:49.359894+00:00",
+      "observed": "2026-10-26T15:36:51.397927+00:00",
+      "selected_target": "2025-03-25",
+      "selection_rule": "LOCATE_ANOMALY_FORWARD_IN_HISTORY",
+      "hypotheses": {
+        "H1": "original exists, metadata and chronology auditable",
+        "H0": "official source fails or historical group/person mismatch persists"
+      },
+      "instrument": "official Congress page href→authentic JSON SHA→source-scoped group, name, period and rollcall arithmetic",
+      "result": {
+        "status": "ORIGINAL_RETRIEVED",
+        "source_url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion102/20250325/Votacion001/VOT_20250325212231.json",
+        "source_sha256": "ee9d22795bea7100289a6c2c7d8b1bb51d349d45e22164e4ae155b50506fc4ce",
+        "session": 102,
+        "vote_number": 1,
+        "original_date": "2025-03-25",
+        "date_scoped_official_urls": 3,
+        "vote_rows": 350,
+        "source_vote_tally_matches": true,
+        "source_yes": 32,
+        "source_no": 177,
+        "source_abstain": 136,
+        "source_no_vote": 5,
+        "unmatched_person_strings": 1,
+        "invalid_office_intervals": 0,
+        "group_map_conflicts": 2,
+        "duplicate_vote_name_strings": 0,
+        "source_read_only": true,
+        "scoreable_people": 0
+      },
+      "closure": "BOUNDED_HISTORIC_ANOMALY",
+      "prior_before": {
+        "verified_original_indexed_dates": {
+          "alpha": 3,
+          "beta": 6
+        },
+        "conditional_2026_roster_group_transfer": {
+          "alpha": 1,
+          "beta": 4
+        }
+      },
+      "prior_after": {
+        "verified_original_indexed_dates": {
+          "alpha": 4,
+          "beta": 6
+        },
+        "conditional_2026_roster_group_transfer": {
+          "alpha": 1,
+          "beta": 5
+        }
+      },
+      "adversarial": "selection is active and dependent, no inferential representativeness; group codes not party IDs; no first_public_at",
+      "decision_for_next": "LOCALIZE_ANOMALY",
+      "status": "CLOSED_BOUNDED_HISTORICAL_ANOMALY",
+      "priors_update": [
+        {
+          "id": "PF-32-27",
+          "proposition": "Older original parliamentary sitting is consistent in raw totals but still has incomplete cross-document name/group reconciliation with October 2026 roster",
+          "state": "source-document observation, not population inference",
+          "evidence": "40350939895 source=https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion102/20250325/Votacion001/VOT_20250325212231.json SHA256=ee9d22795bea7100289a6c2c7d8b1bb51d349d45e22164e4ae155b50506fc4ce",
+          "counterevidence": "no stable individual ID, time-varying parliamentary group history or rights guarantee",
+          "falsifier": "historical official biography/group sources resolve relationship or original digest changes"
+        }
+      ]
+    },
+    {
+      "id": "C28",
+      "block": "ADDITIONAL20",
+      "prereg_before_network": "2026-10-26T15:36:51.398397+00:00",
+      "observed": "2026-10-26T15:36:53.067200+00:00",
+      "selected_target": "2025-05-06",
+      "selection_rule": "LOCATE_ANOMALY_FORWARD_IN_HISTORY",
+      "hypotheses": {
+        "H1": "original exists, metadata and chronology auditable",
+        "H0": "official source fails or historical group/person mismatch persists"
+      },
+      "instrument": "official Congress page href→authentic JSON SHA→source-scoped group, name, period and rollcall arithmetic",
+      "result": {
+        "status": "ORIGINAL_RETRIEVED",
+        "source_url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion107/20250506/Votacion001/VOT_20250506211452.json",
+        "source_sha256": "2ee12028e5833deb897ce4a231544be05e204d9058e9e58b5495bb4261fdb550",
+        "session": 107,
+        "vote_number": 1,
+        "original_date": "2025-05-06",
+        "date_scoped_official_urls": 3,
+        "vote_rows": 350,
+        "source_vote_tally_matches": true,
+        "source_yes": 311,
+        "source_no": 0,
+        "source_abstain": 32,
+        "source_no_vote": 7,
+        "unmatched_person_strings": 1,
+        "invalid_office_intervals": 0,
+        "group_map_conflicts": 2,
+        "duplicate_vote_name_strings": 0,
+        "source_read_only": true,
+        "scoreable_people": 0
+      },
+      "closure": "BOUNDED_HISTORIC_ANOMALY",
+      "prior_before": {
+        "verified_original_indexed_dates": {
+          "alpha": 4,
+          "beta": 6
+        },
+        "conditional_2026_roster_group_transfer": {
+          "alpha": 1,
+          "beta": 5
+        }
+      },
+      "prior_after": {
+        "verified_original_indexed_dates": {
+          "alpha": 5,
+          "beta": 6
+        },
+        "conditional_2026_roster_group_transfer": {
+          "alpha": 1,
+          "beta": 6
+        }
+      },
+      "adversarial": "selection is active and dependent, no inferential representativeness; group codes not party IDs; no first_public_at",
+      "decision_for_next": "LOCALIZE_ANOMALY",
+      "status": "CLOSED_BOUNDED_HISTORICAL_ANOMALY",
+      "priors_update": [
+        {
+          "id": "PF-32-28",
+          "proposition": "Older original parliamentary sitting is consistent in raw totals but still has incomplete cross-document name/group reconciliation with October 2026 roster",
+          "state": "source-document observation, not population inference",
+          "evidence": "40350939895 source=https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion107/20250506/Votacion001/VOT_20250506211452.json SHA256=2ee12028e5833deb897ce4a231544be05e204d9058e9e58b5495bb4261fdb550",
+          "counterevidence": "no stable individual ID, time-varying parliamentary group history or rights guarantee",
+          "falsifier": "historical official biography/group sources resolve relationship or original digest changes"
+        }
+      ]
+    },
+    {
+      "id": "C29",
+      "block": "ADDITIONAL20",
+      "prereg_before_network": "2026-10-26T15:36:53.067920+00:00",
+      "observed": "2026-10-26T15:36:56.271465+00:00",
+      "selected_target": "2025-06-12",
+      "selection_rule": "LOCATE_ANOMALY_FORWARD_IN_HISTORY",
+      "hypotheses": {
+        "H1": "original exists, metadata and chronology auditable",
+        "H0": "official source fails or historical group/person mismatch persists"
+      },
+      "instrument": "official Congress page href→authentic JSON SHA→source-scoped group, name, period and rollcall arithmetic",
+      "result": {
+        "status": "ORIGINAL_RETRIEVED",
+        "source_url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion118/20250612/Votacion001/VOT_20250612132238.json",
+        "source_sha256": "0d5c128727cb4b04e5f35585b7f7d51ed2b820279b259a053387a285a8f174d9",
+        "session": 118,
+        "vote_number": 1,
+        "original_date": "2025-06-12",
+        "date_scoped_official_urls": 18,
+        "vote_rows": 350,
+        "source_vote_tally_matches": true,
+        "source_yes": 179,
+        "source_no": 164,
+        "source_abstain": 5,
+        "source_no_vote": 2,
+        "unmatched_person_strings": 1,
+        "invalid_office_intervals": 0,
+        "group_map_conflicts": 2,
+        "duplicate_vote_name_strings": 0,
+        "source_read_only": true,
+        "scoreable_people": 0
+      },
+      "closure": "BOUNDED_HISTORIC_ANOMALY",
+      "prior_before": {
+        "verified_original_indexed_dates": {
+          "alpha": 5,
+          "beta": 6
+        },
+        "conditional_2026_roster_group_transfer": {
+          "alpha": 1,
+          "beta": 6
+        }
+      },
+      "prior_after": {
+        "verified_original_indexed_dates": {
+          "alpha": 6,
+          "beta": 6
+        },
+        "conditional_2026_roster_group_transfer": {
+          "alpha": 1,
+          "beta": 7
+        }
+      },
+      "adversarial": "selection is active and dependent, no inferential representativeness; group codes not party IDs; no first_public_at",
+      "decision_for_next": "LOCALIZE_ANOMALY",
+      "status": "CLOSED_BOUNDED_HISTORICAL_ANOMALY",
+      "priors_update": [
+        {
+          "id": "PF-32-29",
+          "proposition": "Older original parliamentary sitting is consistent in raw totals but still has incomplete cross-document name/group reconciliation with October 2026 roster",
+          "state": "source-document observation, not population inference",
+          "evidence": "40350939895 source=https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion118/20250612/Votacion001/VOT_20250612132238.json SHA256=0d5c128727cb4b04e5f35585b7f7d51ed2b820279b259a053387a285a8f174d9",
+          "counterevidence": "no stable individual ID, time-varying parliamentary group history or rights guarantee",
+          "falsifier": "historical official biography/group sources resolve relationship or original digest changes"
+        }
+      ]
+    },
+    {
+      "id": "C30",
+      "block": "ADDITIONAL20",
+      "prereg_before_network": "2026-10-26T15:36:56.273325+00:00",
+      "observed": "2026-10-26T15:37:00.176237+00:00",
+      "selected_target": "2025-09-10",
+      "selection_rule": "LOCATE_ANOMALY_FORWARD_IN_HISTORY",
+      "hypotheses": {
+        "H1": "original exists, metadata and chronology auditable",
+        "H0": "official source fails or historical group/person mismatch persists"
+      },
+      "instrument": "official Congress page href→authentic JSON SHA→source-scoped group, name, period and rollcall arithmetic",
+      "result": {
+        "status": "ORIGINAL_RETRIEVED",
+        "source_url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion130/20250910/Votacion001/VOT_20250910213532.json",
+        "source_sha256": "fdb92b1dfd48995c784a285c5bcabe2e84b786cedcd531afb284b5c4402271f8",
+        "session": 130,
+        "vote_number": 1,
+        "original_date": "2025-09-10",
+        "date_scoped_official_urls": 11,
+        "vote_rows": 350,
+        "source_vote_tally_matches": true,
+        "source_yes": 184,
+        "source_no": 157,
+        "source_abstain": 7,
+        "source_no_vote": 2,
+        "unmatched_person_strings": 1,
+        "invalid_office_intervals": 0,
+        "group_map_conflicts": 1,
+        "duplicate_vote_name_strings": 0,
+        "source_read_only": true,
+        "scoreable_people": 0
+      },
+      "closure": "BOUNDED_HISTORIC_ANOMALY",
+      "prior_before": {
+        "verified_original_indexed_dates": {
+          "alpha": 6,
+          "beta": 6
+        },
+        "conditional_2026_roster_group_transfer": {
+          "alpha": 1,
+          "beta": 7
+        }
+      },
+      "prior_after": {
+        "verified_original_indexed_dates": {
+          "alpha": 7,
+          "beta": 6
+        },
+        "conditional_2026_roster_group_transfer": {
+          "alpha": 1,
+          "beta": 8
+        }
+      },
+      "adversarial": "selection is active and dependent, no inferential representativeness; group codes not party IDs; no first_public_at",
+      "decision_for_next": "LOCALIZE_ANOMALY",
+      "status": "CLOSED_BOUNDED_HISTORICAL_ANOMALY",
+      "priors_update": [
+        {
+          "id": "PF-32-30",
+          "proposition": "Older original parliamentary sitting is consistent in raw totals but still has incomplete cross-document name/group reconciliation with October 2026 roster",
+          "state": "source-document observation, not population inference",
+          "evidence": "40350939895 source=https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion130/20250910/Votacion001/VOT_20250910213532.json SHA256=fdb92b1dfd48995c784a285c5bcabe2e84b786cedcd531afb284b5c4402271f8",
+          "counterevidence": "no stable individual ID, time-varying parliamentary group history or rights guarantee",
+          "falsifier": "historical official biography/group sources resolve relationship or original digest changes"
+        }
+      ]
+    },
+    {
+      "id": "C31",
+      "block": "ADDITIONAL20",
+      "prereg_before_network": "2026-10-26T15:37:00.177091+00:00",
+      "observed": "2026-10-26T15:37:04.057157+00:00",
+      "selected_target": "2025-11-27",
+      "selection_rule": "LOCATE_ANOMALY_FORWARD_IN_HISTORY",
+      "hypotheses": {
+        "H1": "original exists, metadata and chronology auditable",
+        "H0": "official source fails or historical group/person mismatch persists"
+      },
+      "instrument": "official Congress page href→authentic JSON SHA→source-scoped group, name, period and rollcall arithmetic",
+      "result": {
+        "status": "ORIGINAL_RETRIEVED",
+        "source_url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion151/20251127/Votacion001/VOT_20251127124047.json",
+        "source_sha256": "e62e6ca1cfa4be9113e2ab9dd5a30b3b17740f036d5abda81eb63660be3774e8",
+        "session": 151,
+        "vote_number": 1,
+        "original_date": "2025-11-27",
+        "date_scoped_official_urls": 18,
+        "vote_rows": 350,
+        "source_vote_tally_matches": true,
+        "source_yes": 307,
+        "source_no": 7,
+        "source_abstain": 33,
+        "source_no_vote": 3,
+        "unmatched_person_strings": 1,
+        "invalid_office_intervals": 0,
+        "group_map_conflicts": 1,
+        "duplicate_vote_name_strings": 0,
+        "source_read_only": true,
+        "scoreable_people": 0
+      },
+      "closure": "BOUNDED_HISTORIC_ANOMALY",
+      "prior_before": {
+        "verified_original_indexed_dates": {
+          "alpha": 7,
+          "beta": 6
+        },
+        "conditional_2026_roster_group_transfer": {
+          "alpha": 1,
+          "beta": 8
+        }
+      },
+      "prior_after": {
+        "verified_original_indexed_dates": {
+          "alpha": 8,
+          "beta": 6
+        },
+        "conditional_2026_roster_group_transfer": {
+          "alpha": 1,
+          "beta": 9
+        }
+      },
+      "adversarial": "selection is active and dependent, no inferential representativeness; group codes not party IDs; no first_public_at",
+      "decision_for_next": "LOCALIZE_ANOMALY",
+      "status": "CLOSED_BOUNDED_HISTORICAL_ANOMALY",
+      "priors_update": [
+        {
+          "id": "PF-32-31",
+          "proposition": "Older original parliamentary sitting is consistent in raw totals but still has incomplete cross-document name/group reconciliation with October 2026 roster",
+          "state": "source-document observation, not population inference",
+          "evidence": "40350939895 source=https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion151/20251127/Votacion001/VOT_20251127124047.json SHA256=e62e6ca1cfa4be9113e2ab9dd5a30b3b17740f036d5abda81eb63660be3774e8",
+          "counterevidence": "no stable individual ID, time-varying parliamentary group history or rights guarantee",
+          "falsifier": "historical official biography/group sources resolve relationship or original digest changes"
+        }
+      ]
+    },
+    {
+      "id": "C32",
+      "block": "ADDITIONAL20",
+      "prereg_before_network": "2026-10-26T15:37:04.058113+00:00",
+      "observed": "2026-10-26T15:37:05.573899+00:00",
+      "selected_target": "2026-09-22",
+      "selection_rule": "LOCATE_ANOMALY_FORWARD_IN_HISTORY",
+      "hypotheses": {
+        "H1": "original exists, metadata and chronology auditable",
+        "H0": "official source fails or historical group/person mismatch persists"
+      },
+      "instrument": "official Congress page href→authentic JSON SHA→source-scoped group, name, period and rollcall arithmetic",
+      "result": {
+        "status": "ORIGINAL_RETRIEVED",
+        "source_url": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion199/20260922/Votacion001/VOT_20260922205120.json",
+        "source_sha256": "12141a5bfa50629a1818c67c9c81657c34f408856b98506f9a755a9e392d24ea",
+        "session": 199,
+        "vote_number": 1,
+        "original_date": "2026-09-22",
+        "date_scoped_official_urls": 2,
+        "vote_rows": 350,
+        "source_vote_tally_matches": true,
+        "source_yes": 340,
+        "source_no": 7,
+        "source_abstain": 0,
+        "source_no_vote": 3,
+        "unmatched_person_strings": 0,
+        "invalid_office_intervals": 0,
+        "group_map_conflicts": 0,
+        "duplicate_vote_name_strings": 0,
+        "source_read_only": true,
+        "scoreable_people": 0
+      },
+      "closure": "BOUNDED_NO_MISMATCH",
+      "prior_before": {
+        "verified_original_indexed_dates": {
+          "alpha": 8,
+          "beta": 6
+        },
+        "conditional_2026_roster_group_transfer": {
+          "alpha": 1,
+          "beta": 9
+        }
+      },
+      "prior_after": {
+        "verified_original_indexed_dates": {
+          "alpha": 9,
+          "beta": 6
+        },
+        "conditional_2026_roster_group_transfer": {
+          "alpha": 2,
+          "beta": 9
+        }
+      },
+      "adversarial": "selection is active and dependent, no inferential representativeness; group codes not party IDs; no first_public_at",
+      "decision_for_next": "DIVERSIFY_TIME",
+      "status": "CLOSED_BOUNDED_MATCH",
+      "priors_update": [
+        {
+          "id": "PF-32-32",
+          "proposition": "One independently indexed 2026 sitting reproduces source-scoped name/group/role matching",
+          "state": "source-document observation, not population inference",
+          "evidence": "40350939895 source=https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion199/20260922/Votacion001/VOT_20260922205120.json SHA256=12141a5bfa50629a1818c67c9c81657c34f408856b98506f9a755a9e392d24ea",
+          "counterevidence": "no stable individual ID, time-varying parliamentary group history or rights guarantee",
+          "falsifier": "historical official biography/group sources resolve relationship or original digest changes"
+        }
+      ]
+    }
+  ],
+  "next_cycle_prereg": null,
+  "first_block": {
+    "authorization": 12,
+    "closed": 12,
+    "bounded_successes": 12,
+    "partial_R5": 0,
+    "gate_to_second_block": "OPEN_USER_PREAUTHORIZED_20_ADAPTIVE"
+  },
+  "second_block": {
+    "authorization": 20,
+    "closed": 20,
+    "remaining": 0,
+    "technical_or_documentary_bounded": 14,
+    "stop_R5": 6,
+    "decision_trace": "C13–C18 manual after results; C19–C23 and C26–C32 native source studies with preregistration before each request and decisions after preceding outcomes; C24–C25 manual anomaly-directed pivots"
+  },
+  "audit_note": "C19-C23 sampled 2024-02-01,02-14,02-28,03-13,03-27 with no primary vote links, because unfounded date-choice model picked sparse calendar days. These are NOT evidence that votes do not exist in early 2024. Explicit pivot to official indexed sitting 2024-04-09 after 5 R5.",
+  "conclusion": {
+    "authorization_total": 32,
+    "closed": 32,
+    "first12": {
+      "bounded": 12,
+      "R5": 0
+    },
+    "additional20": {
+      "bounded": 14,
+      "R5": 6
+    },
+    "total_bounded": 26,
+    "total_STOP_R5": 6,
+    "release_gate": "NOT_READY",
+    "percentage_old_v1": 36.35,
+    "legally_certified_real_player_profiles": 0,
+    "first_public_at_certified_vote_events": 0,
+    "original_individual_votes_integrated_into_person_scoring": 0,
+    "source_original_json_files_sampled": 13,
+    "distinct_original_vote_calendar_days": 11,
+    "final_native_ci": 40350939895,
+    "final_native_jobs_pass": 4,
+    "python_tests_pass": 111,
+    "browser_headless_pass": true,
+    "scientific_novelty_claims": 0
+  },
+  "terminal": "CLOSED_32_OF_32_WITH_SEQUENTIAL_DECISIONS_AND_EXTERNAL_SOURCE_LIMITS"
+}

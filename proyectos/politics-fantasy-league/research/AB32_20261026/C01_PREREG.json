@@ -1,0 +1,22 @@
+{
+  "campaign": "PF-AB32-20261026",
+  "authorization": "BRANCHING 12 cycles followed by 20 adaptive cycles",
+  "method": "AB3.2.1; sequential conditional selection after observed evidence; caps not quotas",
+  "cycle": 1,
+  "decision_at_start": "Congress catalogue is independently listed and exposes download links in public HTML, but old dated JSON endpoints failed web fetch. Validate real network, no assumptions about persons.",
+  "hypotheses": {
+    "H1": "GitHub Actions verified-TLS fetch can retrieve fresh canonical catalogue and at least one machine-readable dataset",
+    "H0": "Catalogue or assets inaccessible or malformed; no usable real person rows"
+  },
+  "instrument": "Python bounded HTML-link discovery and SHA256 raw capture; network CI, strict host, maximum bytes, no values printed.",
+  "criteria": "H1 if at least one retrieved file validates basic format; otherwise STOP_R5, and next cycle must pivot to alternative official source or diagnose accessible metadata.",
+  "risks": [
+    "changing live HTML",
+    "redirect or anti-bot",
+    "source rights unverified",
+    "publication times unverified",
+    "no legal person identity yet"
+  ],
+  "new_priors": [],
+  "status": "PREREGISTERED_BEFORE_CI"
+}
