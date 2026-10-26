@@ -1,6 +1,6 @@
 {
   "campaign": "PF-AB32",
-  "cycles_closed": 23,
+  "cycles_closed": 24,
   "cycles": [
     {
       "id": "C01",
@@ -875,18 +875,53 @@
       ],
       "next_condition": "SOURCE_ACCESS_BRANCH",
       "status": "CLOSED_STOP_R5_SOURCE_NOT_FOUND"
+    },
+    {
+      "id": "C24",
+      "hypotheses": {
+        "H1": "date verified by original Congress index yields valid official 2024 JSON and full 412-roster/group reconciliation",
+        "H0": "source or old-member timeline/group fails"
+      },
+      "observed": "2026-10-26T15:31:31Z",
+      "instrument": "probe_indexed_2024.py official Apr9 session034 vote001, Actions 40350115767; original pinned SHA",
+      "result": {
+        "original": "https://www.congreso.es/webpublica/opendata/votaciones/Leg15/Sesion034/20240409/Votacion001/VOT_20240409210631.json",
+        "sha256": "c8de1b79f50085e2148d3d9e30d766446c67b43f53d2c213a372fa4c36ce168e",
+        "row_count": 349,
+        "official_yes": 310,
+        "official_no": 33,
+        "official_abstain": 0,
+        "official_no_vote": 6,
+        "tally_consistent": true,
+        "unmatched_member_name_strings": 1,
+        "invalid_office_periods": 0,
+        "conflicting_parliamentary_group_map": 2
+      },
+      "adversarial": "H1 only partly supported: real data and arithmetic pass, but one name has no match and two group labels conflict against 2026 roster last-group values; 2024 data cannot be blindly reconciled to latest group. No fabricated match to make 349/349.",
+      "priors_update": [
+        {
+          "id": "PF-32-24",
+          "proposition": "An actual 2024 roll call is retrievable with correct arithmetic but modern roster/group mapping is not perfectly time invariant",
+          "state": "CONFIRMED LOCAL ANOMALY; scope April9 2024",
+          "evidence": "Actions 40350115767 C24_INDEXED_DATE, 349 rows 1 unknown and 2 group conflicts",
+          "counterevidence": "exact normalized names are only source-scoped; mismatch may be harmless spelling vs actual group history",
+          "falsifier": "independent historical group/identity records reconcile mismatch with earlier names, or per-vote discrepancy was transcription anomaly"
+        }
+      ],
+      "decision": "C25 FOCUS on replication of exact 2024 mismatch across another independent April9 roll-call before attributing cause.",
+      "status": "CLOSED_BOUNDED_ANOMALY_FOUND"
     }
   ],
   "next_cycle_prereg": {
-    "id": "C24",
-    "chosen_after": "C19–C23 five consecutive fail-closed on unverified candidate days, Beta date prior(1,6), external indexed original Congress date 09/04/2024 documented by publisher",
-    "question": "Does targeting a publisher-indexed historical 2024-04-09 sitting, rather than inferred calendar day, yield valid official JSON and expose older roster/group drift?",
+    "id": "C25",
+    "chosen_after": "C24 primary 2024 indexed source found 349 voter rows, one unmatched name and two group-map conflicts",
+    "question": "Do these specific aggregate discrepancies repeat in second vote same 2024-04-09 session, indicating metadata changes rather than single file corruption?",
     "hypotheses": {
-      "H1": "Official indexed day gives original XML/JSON voting artifact with date-matched event; temporal and group mapping inspected",
-      "H0": "source or earlier member/group mapping unavailable or inconsistent"
+      "H1": "independent second vote repeats same 1 unmatched name/2 group mapping conflicts",
+      "H0": "they disappear or differ, suggesting vote-specific source shape or participant change"
     },
-    "method": "use exact officially indexed date as discovery candidate; extract original publisher href dynamically, digest raw source, check tally, group/name/office without personal value export",
-    "criterion": "raw original and bounded audit must be recorded; if source works, adapt C25 to confirmed-index date sampling, otherwise R5 and rethink date query",
+    "method": "discover and download next official JSON href from 2024Apr9 calendar; compare only numeric diagnostics, JSON total reconciliation; no personal name values",
+    "criterion": "preserve raw sha, count discrepancy aggregates; do not fuse person identities, do not assume group membership durable",
     "status": "PREREGISTERED_BEFORE_TEST"
   },
   "first_block": {
@@ -898,8 +933,8 @@
   },
   "second_block": {
     "authorization": 20,
-    "closed": 11,
-    "remaining": 9,
+    "closed": 12,
+    "remaining": 8,
     "status": "SOURCE_MISSING_STOP_5_AND_POLICY_ADAPTATION"
   },
   "audit_note": "C19-C23 sampled 2024-02-01,02-14,02-28,03-13,03-27 with no primary vote links, because unfounded date-choice model picked sparse calendar days. These are NOT evidence that votes do not exist in early 2024. Explicit pivot to official indexed sitting 2024-04-09 after 5 R5."
