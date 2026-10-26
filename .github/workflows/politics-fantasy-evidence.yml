@@ -188,6 +188,9 @@ jobs:
       - name: Probe current Congress catalogue without logging public-person values
         working-directory: proyectos/politics-fantasy-league
         run: python scripts/probe_congress_opendata.py
+      - name: C02 audit downloaded official JSON structure, no record values
+        working-directory: proyectos/politics-fantasy-league
+        run: python scripts/audit_congress_shape.py
       - name: Record ephemeral raw originals and bounded manifest
         if: always()
         uses: actions/upload-artifact@v4
