@@ -96,6 +96,14 @@ def main():
             assert "no son 263 candidaturas proclamadas verificadas" in atlas.lower(),atlas[:3500]
             assert "278" in atlas and "en cuarentena" in atlas.lower(),atlas[:3500]
             assert "BURGOS" in atlas and "rótulos observados no certificados" in atlas.lower(),atlas[:3500]
+            # Native keyboard activation of a source-details disclosure; this
+            # verifies that uncertainty is accessible without pointer input.
+            details=page.locator("#content details.card").first
+            details.locator("summary").focus()
+            before=details.get_attribute("open") is not None
+            page.keyboard.press("Enter")
+            assert (details.get_attribute("open") is not None)!=before
+            results["passes"].append("Keyboard navigates atlas disclosure with native semantics")
             results["passes"].append("Original BOE multiprovince 263 electoral-list atlas and 27 uncertainty sections shown in Chromium")
             assert "No procede inferirlos" in atlas
             results["passes"].append("Chromium visualises official BOE eight candidacy labels with no legal-party inference")
