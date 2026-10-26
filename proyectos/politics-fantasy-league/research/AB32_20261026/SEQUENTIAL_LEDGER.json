@@ -1,6 +1,6 @@
 {
   "campaign": "PF-AB32",
-  "cycles_closed": 16,
+  "cycles_closed": 17,
   "cycles": [
     {
       "id": "C01",
@@ -546,18 +546,53 @@
       ],
       "decision": "C17 pivot from single-page enumeration to deliberately queried other official 2026-09-10 session (cited official indexed source), verify raw 196 JSON from canonical site.",
       "status": "CLOSED_STOP_R5_DATE_INVENTORY"
+    },
+    {
+      "id": "C17",
+      "hypotheses": {
+        "H1": "primary Congress September 10 session196 can be obtained through date query and original links",
+        "H0": "date query silently ignored or no votes"
+      },
+      "observed": "2026-10-26T15:21:25Z",
+      "instrument": "probe_other_session.py official dated calendar Sept10, source-retrieved original in GitHub Actions 40348469071",
+      "result": {
+        "session": 196,
+        "requested_date": "2026-09-10",
+        "links_discovered": 21,
+        "first_vote_rows": 350,
+        "sha256": "ef14a0d604c8f0638c8966a241446864f56882fac742219bf2d42f7a4e129c7a",
+        "tallies": {
+          "yes": 139,
+          "no": 207,
+          "abstain": 1,
+          "no_vote": 3
+        }
+      },
+      "adversarial": "Third original institutional date improves temporal breadth but no semantic identity/membership adjudication; time first_public unknown.",
+      "priors_update": [
+        {
+          "id": "PF-32-17",
+          "proposition": "Individually known Congress vote dates can be queried for distinct sessions despite 1-date single-page selector",
+          "state": "supported Sep10 196 and Sep30 202",
+          "evidence": "40348469071 21 accessible links Sep10, one original captured",
+          "counterevidence": "unknown date universe; no automatic complete enumeration",
+          "falsifier": "attempted other official known dates fail to return date-matched session"
+        }
+      ],
+      "decision": "C18 test historic September 10 source versus latest roster and older group mapping with no person identities published.",
+      "status": "CLOSED_BOUNDED"
     }
   ],
   "next_cycle_prereg": {
-    "id": "C17",
-    "chosen_after": "C16 showed one selected date only, but public official search index shows 10/09/2026 session 196",
-    "question": "Can requesting a different known official calendar date yield a new authentic September 10 session196 vote without guessing download URL?",
+    "id": "C18",
+    "chosen_after": "C17 date-directed discovery of third session196 original success",
+    "question": "Do temporal interval and exact name/group source concordance extend to the September10 session196 original while retaining correct tally?",
     "hypotheses": {
-      "H1": "page exposes session196 date10Sep and official vote JSON with row data",
-      "H0": "query ignored / unavailable / wrong session"
+      "H1": "350/350 source-scoped matches, no group/period violations and tally fits",
+      "H0": "third session has missing or inconsistent roster persons"
     },
-    "method": "verified TLS HTML link parser, select official JSON href for Session196, verify JSON sesion=196 and calendar date against requested day; digest original, no person values",
-    "criterion": "one original cross-date session196 event with SHA and tally, otherwise STOP_R5 then seek official ZIP or alternative date",
+    "method": "real original Sept10 + earlier official active/discharged roster + July group mapping; compute only aggregate quality",
+    "criterion": "record match, period/group conflicts and tally, then choose additional acquisition policy based on outcome",
     "status": "PREREGISTERED_BEFORE_TEST"
   },
   "first_block": {
