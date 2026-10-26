@@ -3,17 +3,17 @@
   "parent": "C12",
   "status": "PREREGISTERED",
   "A": {
-    "question": "Does specifying internal office subtype eliminate false conflicts while retaining both source changes?",
+    "question": "Can explicit office subtype AND group code remove two observed false same-day conflicts without dropping source events?",
     "estimand": "collision count after office-specific key with all observed internal D263 movements",
     "unit": "source scoped person×office×date"
   },
   "B": {
-    "H1": "0 contradictory same-office events after subtype; 3 distinct Guardiola source changes retained",
+    "H1": "Zero same-target contradictions when target is role subtype (INTERNAL) or group code (GROUP), with all notices' actor movements preserved",
     "H0": "collision remains",
     "Hother": "source does not give sufficiently disambiguated office label"
   },
   "C": {
-    "source": "BOCG-15-D-263",
+    "source": "BOCG D263 internal offices AND D372 GSUMAR→GMx group movements",
     "truth": "subsections DIPUTACION PERMANENTE / JUNTA DE PORTAVOCES and titular/suplente/sustituto",
     "falsifier": "two opposite changes on same subtype and day"
   },
@@ -38,5 +38,6 @@
   },
   "J": {
     "next": "after actual retest"
-  }
+  },
+  "prereg_amendment": "C12 returned TWO observed collision classes, not only internal; before C13 execution expanded H1/C to include GROUP target code. Previous prereg content is retrievable via Git history. No test yet executed."
 }
