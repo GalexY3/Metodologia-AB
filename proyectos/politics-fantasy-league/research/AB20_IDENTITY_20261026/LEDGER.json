@@ -1,9 +1,9 @@
 {
   "campaign": "AB20_IDENTITY_20261026",
   "authorization": "20 BRANCHING",
-  "executed": 3,
-  "closed_valid": 3,
-  "remaining": 17,
+  "executed": 4,
+  "closed_valid": 4,
+  "remaining": 16,
   "drift": "D2.0: same institution, new estimand source-scoped identity reconciliation",
   "scope": "Exploratory documentary/engineering; cannot infer political ideology or score",
   "cycles": [
@@ -91,6 +91,35 @@
       "holdout_status": "8 training/layout-development cases EXPOSED; 404 unsampled",
       "decision": "CONTINUE C04 independently withheld index profiles with frozen h2 matcher",
       "status": "CLOSED_BOUNDED_REPAIR"
+    },
+    {
+      "id": "C04",
+      "type": "EXPERIMENTAL_AB_SOURCE_HOLDOUT",
+      "prereg_commit": "907d9642d32652108cc7241543302fac90d81f85",
+      "code_commit": "8c6cebedacaef0b2c9f73c90bd1a54673f279345",
+      "run": "https://github.com/GalexY3/Metodologia-AB/actions/runs/40361974233",
+      "question": "Does frozen h2 matcher work on 16 previously uninspected source profiles?",
+      "estimand": "unique h2 roster-name match in preregistered 16 profile subset",
+      "rivals": [
+        "H1 ≥15/16 uniquely match",
+        "H0 at least 2 fail",
+        "Hother same-source correlated reproducibility"
+      ],
+      "result": {
+        "sample": 16,
+        "unique": 16,
+        "ambiguous": 0,
+        "none": 0,
+        "original_dev_8_excluded": true
+      },
+      "adversarial": "holdout held out from parser development but same source/provider, not external replication; 16 purposive not census",
+      "grade_0_3": 0,
+      "ct2_before": 24,
+      "ct2_after": 26,
+      "ct2_rationale": "unseen institutional source IDs passed frozen parser, expands instrument confidence but not scientific novelty or population inference",
+      "holdout_status": "SINGLE_USE_CONSUMED; not fresh for further confirmation",
+      "decision": "C05 historical unmatched 2024 name compared with independent all-legislatures source corpus",
+      "status": "CLOSED_BOUNDED"
     }
   ],
   "priors": [
@@ -126,6 +155,17 @@
       "evidence_against": "provider can alter DOM; direct text no cross-legislature identity",
       "falsifier": "frozen h2 fails prespecified fresh-index sample",
       "type": "EMPIRICO_OBSERVACIONAL"
+    },
+    {
+      "id": "PF-ID20-04",
+      "proposition": "Frozen h2 matcher reproduces unique official XV roster-name correspondence in 16 uninspected profiles",
+      "provenance": "GitHub Actions 40361974233, exact source hashes 16 pages",
+      "scope": "same institutional index / XV, development holdout",
+      "uncertainty": "not independent of publication provider; no genuine cross-leg identity yet",
+      "evidence_for": "16/16 unique h2 text",
+      "evidence_against": "source fields lack immutable natural-person ID and no historical group dates",
+      "falsifier": "valid original profile has h2 inconsistent with roster",
+      "type": "EMPIRICO_OBSERVACIONAL"
     }
   ],
   "new_discoveries_1_3": 0,
@@ -133,9 +173,9 @@
   "N3": 0,
   "CT2_identity": {
     "start": 20,
-    "now": 24,
+    "now": 26,
     "confidence": "LOW",
     "not_probability": true
   },
-  "next": "C04"
+  "next": "C05"
 }
