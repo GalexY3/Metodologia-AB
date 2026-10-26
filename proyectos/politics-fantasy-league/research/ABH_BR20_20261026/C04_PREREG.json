@@ -1,0 +1,17 @@
+{
+  "id": "C04",
+  "status": "PREREGISTERED",
+  "mode": "AB-P engineering acceptance / AB-R no discovery",
+  "dependency": "AB20B C17 typed_refs exists in unmerged research branch; current main lacks it. C02 found numeric drift between XIV and XV; C03 cannot certify legal party identity.",
+  "question": "Can the prior conservative source-scoped InstitutionalRef guard be promoted into a main-derived integration branch without allowing false same-person or scoring inference?",
+  "H1": "Borrowed AB20B module with complete 4-field institutional key will reject incomplete refs, distinguish same numerical code across legislature/family and hard-disable person certification and scoring.",
+  "H0": "Cross-namespace equality or spoofed crosswalk object can cause same-person or score=True, or module fails tests.",
+  "scope": "One Python module from prior AB20B and six locally executed focused unittest controls. Integration into HTTP service is explicitly OUT of scope; no claiming ready for public release.",
+  "test": "Predefined 6 tests: same full namespace equal; different legislature unequal; different family unequal; incomplete field error; arbitrary injected attestation not enough; scoring false.",
+  "criteria": "6 tests PASS on module actually copied from prior branch, test evidence captured. Deliver source module and tests on new research branch, no Actions.",
+  "CT2_before": 29,
+  "VSDS": "1/3",
+  "n1_expected": 0,
+  "gate_changes": 0,
+  "cost": "local CPU; all GitHub commits [skip ci]"
+}
