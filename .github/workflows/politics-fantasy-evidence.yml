@@ -212,6 +212,9 @@ jobs:
       - name: C13 original BOE October 2026 dissolution statute
         working-directory: proyectos/politics-fantasy-league
         run: python scripts/probe_boe_dissolution.py
+      - name: C14 discover original independent September session 202 voting JSON
+        working-directory: proyectos/politics-fantasy-league
+        run: python scripts/probe_cross_session.py
       - name: C09 assert real vote sources normalize to identical calendar date
         working-directory: proyectos/politics-fantasy-league
         run: |
