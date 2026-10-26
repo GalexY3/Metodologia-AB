@@ -1,0 +1,45 @@
+{
+  "campaign": "AB20_IDENTITY_20261026",
+  "cycle": "C02",
+  "parent": "C01",
+  "type": "EXPERIMENTAL_AB",
+  "A": {
+    "estimand": "fraction of 8 systematically spaced official indexed XV profiles whose rendered page contains exactly one open-data roster fullname; only string correspondence, NOT stable ID validation",
+    "population": "412 indexed profiles XV, purposive 8-sample",
+    "outcome": "page HTML renders roster key name unambiguously",
+    "proxy": "literal normalized text containment",
+    "sample_nonrepresentative": true
+  },
+  "B": {
+    "H1": "Most profiles display exactly one roster name matching corresponding office snapshot",
+    "H0": "No recognizable fullname or multiple ambiguous names",
+    "H_other": "HTML reflects a different name order or stale roster"
+  },
+  "C": {
+    "budget": "8 profile HTTPS downloads <=2MB each, same verified host",
+    "control": "same official roster source, indexed profile ID before name matching; none stored in public output",
+    "falsifier": "zero or ambiguous direct matches, or profile absent"
+  },
+  "D": {
+    "instrument": "scripts/ab20_profile_roster_probe.py, index URLs discovered, original roster re-downloaded in CI",
+    "precautions": "No person names or aliases in logs/output; no legal name-to-ID mapping is committed"
+  },
+  "E": {
+    "status": "FREEZE_BEFORE_RUN"
+  },
+  "F": {
+    "adversarial": "Rendered page may list other names in sidebar; exact normalized name matches are only a diagnostic"
+  },
+  "G": {
+    "holdout": "unseen indexed profiles not yet sampled, eligible for later independent check"
+  },
+  "H": {
+    "CT2_before": 22
+  },
+  "I": {
+    "grade_expected": "0/3 unless meaningful unexpected discriminant"
+  },
+  "J": {
+    "next": "choose based on actual ambiguity rate, not preset"
+  }
+}
