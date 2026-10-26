@@ -218,6 +218,9 @@ jobs:
       - name: C15 validate second-session roster roles and group labels
         working-directory: proyectos/politics-fantasy-league
         run: python scripts/audit_cross_session.py
+      - name: C16 official Congress date-selector coverage inventory
+        working-directory: proyectos/politics-fantasy-league
+        run: python scripts/audit_congress_calendar_dates.py
       - name: C09 assert real vote sources normalize to identical calendar date
         working-directory: proyectos/politics-fantasy-league
         run: |
