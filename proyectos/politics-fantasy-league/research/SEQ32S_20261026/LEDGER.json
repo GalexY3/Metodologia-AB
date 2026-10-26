@@ -1,0 +1,115 @@
+{
+  "campaign": "PF-SEQ32S",
+  "date": "2026-10-26",
+  "authorized_phase1_max": 12,
+  "authorized_phase2_max": 20,
+  "total_authorized_max": 32,
+  "method": "AB 3.2.1",
+  "decision_rule": "C n+1 only after C n observed. No future list preregistered.",
+  "n_adjudicated": 4,
+  "n_current_pending": 1,
+  "n_not_started": 27,
+  "scientific_replications": 0,
+  "new_scientific_findings": 0,
+  "source_based_historical_appointments": 22,
+  "congress_person_records_authenticated": 0,
+  "rpp_legal_parties_reconciled": 0,
+  "current_membership_verified": 0,
+  "real_scoring_enabled": false,
+  "scope_progress_baseline_pct": 36.35,
+  "cycle_fields": "A through J represent question, disclosure, hypothesis/rival, evidence, instrument, result, critique, prior update, falsifier, next step",
+  "cycles": [
+    {
+      "id": "SEQ32-C01",
+      "state": "CLOSED_EXPLORATORY_BOUNDED",
+      "A": "¿Permite el RPP original una cohorte legal antes que las fuentes parlamentarias?",
+      "B": "Portal y Congreso ya expuestos; sin cegamiento",
+      "C": "RPP puede tener dump; rival: buscador sin dump reusable",
+      "D": "RPP búsqueda oficial error 502; Congreso ficha JSON histórica disponible en índice",
+      "E": "Inspección de catálogos y portal, sin datos originales RPP",
+      "F": "0 registros legal RPP capturados; localizar catálogo JSON Congreso",
+      "G": "Fallos locales no prueban indisponibilidad estructural",
+      "H": "Prior a favor de obtener personas parlamentarias primero; sin prob numérica",
+      "I": "Descarga original autenticada RPP con identificadores jurídicos y vigencia",
+      "J": "C02: probar parser histórico Congreso con fuente original",
+      "evidence": [
+        "https://datos.gob.es/es/aplicaciones/consulta-del-registro-de-partidos-politicos",
+        "https://www.congreso.es/gl/opendata/diputados",
+        "commit:8e3dc041fb10be617e6b2a608a3dab655fbf0b4c"
+      ]
+    },
+    {
+      "id": "SEQ32-C02",
+      "state": "CLOSED_STOP_R5_ORIGINAL_UNAVAILABLE",
+      "A": "¿El JSON histórico Congreso puede importarse de manera fail-closed?",
+      "B": "URL fue leída en web antes de preregistro, exploratorio; CI nuevo real posterior",
+      "C": "Puede servir cohorte real fechada; rival: rutas estáticas ya expiradas",
+      "D": "GitHub Actions 40341944931, HTTP 404 original, suites locales fuente/JS/Python/Chromium",
+      "E": "Proyector de campos mínimos + URL HTTPS host exacto, ensayo originario en runner",
+      "F": "Unitarios pasaron, bytes originales capturados=0, importaciones reales=0; STOP_R5",
+      "G": "Web caché mostraba contenido de julio; no garantiza descarga octubre ni cambio administrativo",
+      "H": "Baja confianza en enlaces históricos estáticos, no en existencia de datos Congreso en general",
+      "I": "Acceso auténtico de la URL o distribución alternativa con integridad verificada",
+      "J": "C03: cambiar a PDF BOE nominal estable",
+      "evidence": [
+        "https://github.com/GalexY3/Metodologia-AB/actions/runs/40341944931",
+        "commit:6d973dc72d859c385a171a87899dfa7558b99ec0"
+      ]
+    },
+    {
+      "id": "SEQ32-C03",
+      "state": "CLOSED_POSITIVE_BOUNDED_DOCUMENT",
+      "A": "¿Hay 22 actos de nombramiento ministerial reconciliables en un único BOE?",
+      "B": "Selección de documento expuesta, prueba nativa nueva tras preregistro C03",
+      "C": "BOE formal puede identificar personas/portafolios de 2023; rival parsing inconsistente",
+      "D": "BOE-A-2023-23543 PDF 193759 bytes; SHA256 16f05bba24508af229870b68dbfb72ba258e62416713a8cfe5c49c70ba792efe",
+      "E": "HTTPS PDF + pdftotext y verificación secuencial 22/22",
+      "F": "CI 40342767919 falló por omitir 'del Interior'; corrigió regex; CI 40342982881 MATCH_BOE_CABINET_22",
+      "G": "Documento aislado, excluye bajas, titulares actuales, partidos RPP y puntuaciones",
+      "H": "Aumenta confianza documental en viabilidad de registros nominativos BOE; no científico/predictivo",
+      "I": "Rectificación/cambio de PDF original, nuevas filas incompatibles, o fechas alteradas",
+      "J": "C04: lectura segura con digest y endpoint local",
+      "evidence": [
+        "https://www.boe.es/buscar/doc.php?id=BOE-A-2023-23543",
+        "https://github.com/GalexY3/Metodologia-AB/actions/runs/40342982881",
+        "commit:f183d64af0c4c0c772b5c92063316dc3e60aee8a"
+      ]
+    },
+    {
+      "id": "SEQ32-C04",
+      "state": "CLOSED_POSITIVE_BOUNDED_ENGINEERING",
+      "A": "¿La cohorte documentada puede servirse por GET local sin inferencias no justificadas y sin alteración del snapshot?",
+      "B": "Preregistro antes de pruebas API; original C03 ya expuesto",
+      "C": "API archivística estricta puede separar fuente y actualidad; rival corrupción del derivado y filtrado",
+      "D": "22 filas, digest original y SHA1 objeto Git 037eaac7b757604a8dc97da8da041607654131aa",
+      "E": "Whitelist lector, validación Git blob, tests mutación y GET localhost Host guard",
+      "F": "CI 40343693538 source-and-app-checks SUCCESS, original-source-download SUCCESS; Chromium independiente no reclamado",
+      "G": "Puede haber errores compartidos entre lector y transcriptor; única fuente, no autenticación pública",
+      "H": "Incrementa confianza técnica en exposición controlada de datos históricos, NO en score ni mandato actual",
+      "I": "Mutación preservando digest por colisión criptográfica, cadena de custodia rota, test API filtrando campos no autorizados",
+      "J": "C05: comprobar que replay original exige SHA256 exacto y no solo 22 etiquetas",
+      "evidence": [
+        "https://github.com/GalexY3/Metodologia-AB/actions/runs/40343693538",
+        "commit:02e7bc0fef66a8b813125a56f5a4ead8a28044dc"
+      ]
+    },
+    {
+      "id": "SEQ32-C05",
+      "state": "IN_CI_NOT_ADJUDICATED",
+      "A": "¿Evita el replay aceptar PDF de bytes distintos aunque conserve las 22 líneas?",
+      "B": "Prospectivo seleccionado tras C04; fuente original conocida",
+      "C": "Solo identidad de texto no garantiza identidad de bytes; rival cambios inocuos de metadatos",
+      "D": "PDF original SHA256 previamente observado 16f05bba24508af229870b68dbfb72ba258e62416713a8cfe5c49c70ba792efe",
+      "E": "Función verify_original_digest y negativas sintéticas, runner 40344807726 en cola",
+      "F": "Código y test creados; resultado nativo no verificado al escribir este ledger",
+      "G": "No atribuir éxito previo, ni modificación de población",
+      "H": "PENDIENTE",
+      "I": "CI falla por drift SHA o un test adversarial no rechaza PDF alterado",
+      "J": "No seleccionar ni preregistrar C06 hasta resolver C05",
+      "evidence": [
+        "https://github.com/GalexY3/Metodologia-AB/actions/runs/40344807726",
+        "commit:3ae5c6ec5b0c87a40127081c8f4a5f4b0ccb94b7"
+      ]
+    }
+  ]
+}
