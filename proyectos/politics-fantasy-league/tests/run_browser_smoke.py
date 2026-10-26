@@ -97,7 +97,7 @@ def main():
             assert "278" in atlas and "en cuarentena" in atlas.lower(),atlas[:3500]
             quarantined=page.locator("#content details.card").filter(has_text="27 secciones en cuarentena").first
             assert quarantined.count()==1
-            summary=quarantined.locator("summary")
+            summary=quarantined.locator(":scope > summary")
             summary.focus()
             assert quarantined.get_attribute("open") is None
             page.keyboard.press("Enter")
