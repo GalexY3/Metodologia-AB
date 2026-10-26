@@ -1,6 +1,6 @@
 {
   "campaign": "PF-AB32",
-  "cycles_closed": 5,
+  "cycles_closed": 6,
   "cycles": [
     {
       "id": "C01",
@@ -194,18 +194,48 @@
       ],
       "decision": "C06 validate each linked record's office interval and parliamentary group at vote date.",
       "status": "CLOSED_BOUNDED"
+    },
+    {
+      "id": "C06",
+      "hypotheses": {
+        "H1": "All 350 vote-linked name candidates hold a temporally valid office",
+        "H0": "Temporal mismatch invalidates linkage"
+      },
+      "observed": "2026-10-26T14:48:53Z",
+      "instrument": "scripts/audit_congress_vote_temporal.py, GitHub Actions 40343125491",
+      "result": {
+        "vote_date": "2026-07-23",
+        "interval_valid": 350,
+        "interval_invalid": 0,
+        "remaining": 137,
+        "discharged_after_vote": 213,
+        "group_label_exact_mismatches": 350
+      },
+      "adversarial": "350/350 are valid on historic day, yet 350/350 GROUP labels differ textually between datasets, likely abbreviation; formal group reconciliation required. Names alone lack immutable IDs.",
+      "priors_update": [
+        {
+          "id": "PF-32-06",
+          "proposition": "Unique name joins for 2026-07-23 satisfy all date intervals, but group-label schema does not share strings",
+          "state": "supported narrow, group links unresolved",
+          "evidence": "40343125491 C06_LINK",
+          "counterevidence": "no explicit person ID and all 350 groups mismatch raw label",
+          "falsifier": "corresponding group code maps inconsistently to full parliamentary group title"
+        }
+      ],
+      "decision": "C07 map group code to full title and test functional/bijective relation.",
+      "status": "CLOSED_BOUNDED"
     }
   ],
   "next_cycle_prereg": {
-    "id": "C06",
-    "chosen_after": "C05 exact 350/350 names, no ambiguous strings",
-    "question": "Are linked people valid office holders on 2026-07-23, and do parliamentary group strings correspond?",
+    "id": "C07",
+    "chosen_after": "C06 raw parliamentary group mismatch 350/350 despite perfect interval fit",
+    "question": "Is group schema mismatch a harmless abbreviation (functional code→full title) or substantive political mismatch?",
     "hypotheses": {
-      "H1": "350/350 office intervals cover vote day; group labels agree or have explainable format variation",
-      "H0": "at least one temporally invalid link or substantive group conflict"
+      "H1": "each abbreviated group code maps to exactly one full official group title",
+      "H0": "codes collide or group changes contradict"
     },
-    "method": "parse vote date and official roster entry/exit; count mismatches anonymously, retain source provenance",
-    "criterion": "no invalid periods; if group matches not 350, review nomenclature before link acceptance",
+    "method": "use uniquely name-corresponded historic vote and roster, publish only organizational group pairs and counts, never record person values",
+    "criterion": "every abbreviated group has exactly one roster group title, no conflicting mapping; else STOP_R5 automatic source reconciliation",
     "status": "PREREGISTERED_BEFORE_TEST"
   }
 }
