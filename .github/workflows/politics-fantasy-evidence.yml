@@ -40,7 +40,7 @@ jobs:
       - name: Python local integration
         run: |
           python -m pip install pytest
-          PYTHONPATH=src python -m pytest -q tests/test_actor_api.py tests/test_product.py tests/test_evidence_warehouse_status.py tests/test_evidence_http_smoke.py tests/test_progress_api.py tests/test_progress_http.py
+          PYTHONPATH=src python -m pytest -q tests/test_actor_api.py tests/test_product.py tests/test_evidence_warehouse_status.py tests/test_evidence_http_smoke.py tests/test_progress_api.py tests/test_progress_http.py tests/test_capture_official_sources.py
       - name: Secondary source fetch, pinned revision verification
         run: |
           curl -fsSL --retry 3 --max-time 35 -o /tmp/pf-202307.csv https://raw.githubusercontent.com/anerodata/data-elecciones-congreso-espana/main/202307.csv
@@ -64,3 +64,45 @@ jobs:
           assert all(x['exact'] for x in a['nonseatOfficialFive'])
           print('JEC match cells:', a['comparison']['comparisons'])
           PY
+
+  original-source-download:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    permissions:
+      contents: read
+    defaults:
+      run:
+        working-directory: proyectos/politics-fantasy-league
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Attempt authentic HTTPS source capture with fail-closed validation
+        run: |
+          python scripts/capture_official_sources.py
+      - name: Validate presence and consistency of capture manifest
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json,hashlib
+          base=Path('/tmp/pf-official-source-capture')
+          x=json.loads((base/'capture_manifest.json').read_text())
+          assert x['original_download_attempts']==3
+          assert x['raw_downloads_success']==sum(bool(v['original_binary_captured']) for v in x['sources'])
+          for row in x['sources']:
+              if not row['original_binary_captured']:
+                  assert row['capture_status']=='STOP_R5_NETWORK_OR_FORMAT'
+                  print('FAILED_OR_BLOCKED',row['id'],row.get('error_type'),row.get('error'))
+                  continue
+              raw=(base/row['raw_filename']).read_bytes()
+              assert hashlib.sha256(raw).hexdigest()==row['sha256']
+              print('ORIGINAL_HTTPS_CAPTURED',row['id'],'bytes',len(raw),'sha256',row['sha256'])
+          PY
+      - name: Preserve short-lived internal audit manifest and authentic raw captures
+        uses: actions/upload-artifact@v4
+        with:
+          name: politics-fantasy-official-sources-${{ github.run_id }}
+          path: /tmp/pf-official-source-capture/
+          retention-days: 3
+          if-no-files-found: error
