@@ -37,11 +37,10 @@ def test_invented_party_and_score_rejected(tmp_path):
     d=mutate(tmp_path,lambda d:d["rows"][2].update(end_of_tenure="2026-10-06"))
     assert not d["ok"]
 
-def test_changed_2023_role_rejected_in_original_replay_not_liberal_loader(tmp_path):
-    # Snapshot loader alone cannot re-extract PDF; CI replay is mandatory.
+def test_changed_2023_role_rejected_by_pinned_derivative_digest(tmp_path):
     d=mutate(tmp_path,lambda d:d["rows"][0].update(office="Ministerio de Invención"))
-    assert d["ok"] is True
-    # This limits trust: the source is pinned by CI PDF replay, not by this reader.
+    assert d["ok"] is False
+    assert d["error"]=="DERIVATIVE_SNAPSHOT_UNPINNED"
 
 def test_local_http_endpoint_never_asserts_current_office(tmp_path):
     httpd=ThreadingHTTPServer(("127.0.0.1",0),handler_factory(tmp_path/"db.sqlite",None,None))
