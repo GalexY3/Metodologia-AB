@@ -38,9 +38,11 @@ def run():
   res.update(vote_sha256=hashlib.sha256(raw).hexdigest(),voter_names_missing_current=len(miss))
   if len(miss)!=1:raise ValueError("EXPECTED_ONE_MISSING_NAME_INVALIDATED")
   html=get(CAT,3_000_000);links=Links();links.feed(html.decode("utf-8","replace"))
-  matches=[url for label,url in links.found if "todos los diputados y diputadas de todas las legislaturas" in label.casefold() and urlparse(url).path.endswith(".json")]
+  original_url="https://www.congreso.es/webpublica/opendata/diputados/Diput__20260725050229.json"
+  matches=[url for label,url in links.found if url==original_url]
   res["archival_json_links"]=len(matches)
-  if len(matches)!=1:raise ValueError("ARCHIVE_LINK_NOT_UNIQUE")
+  res["repair_note"]="C05 repair: download original all-legislatures link explicitly evidenced by Congress open-data portal, rather than parsing preceding label as anchor text"
+  if len(matches)!=1:raise ValueError("ARCHIVE_EXACT_ORIGINAL_URL_NOT_ON_CURRENT_CATALOGUE")
   arch=get(matches[0],24_000_000)
   data=json.loads(arch)
   if not isinstance(data,list) or not data:raise ValueError("ARCHIVE_NOT_ARRAY")
