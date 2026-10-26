@@ -44,3 +44,12 @@ def test_wrong_institution_disallowed():
     with patch.object(mod,"extract_appointments",return_value=rows):
         with pytest.raises(ValueError,match="UNSAFE_SOURCE"):
             mod.replay(b"synthetic test only",changed)
+
+
+def test_original_pdf_digest_pinned_independently_from_22_labels():
+    import hashlib
+    with pytest.raises(ValueError,match="ORIGINAL_DIGEST_DRIFT_STOP_R5"):
+        mod.verify_original_digest(b"fabricated altered pdf",original)
+    fixture=b"%PDF- fake-only for digest unit test"
+    example={"source_pdf_sha256":hashlib.sha256(fixture).hexdigest()}
+    assert mod.verify_original_digest(fixture,example)==example["source_pdf_sha256"]
