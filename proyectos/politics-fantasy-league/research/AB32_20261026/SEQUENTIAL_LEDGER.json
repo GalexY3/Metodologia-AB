@@ -1,6 +1,6 @@
 {
   "campaign": "PF-AB32",
-  "cycles_closed": 12,
+  "cycles_closed": 13,
   "cycles": [
     {
       "id": "C01",
@@ -420,20 +420,51 @@
       ],
       "decision": "Because source/app checks passed but browser installation is still unobserved, close C12 PARTIAL_R5_VISUAL pending; next branch seeks primary institutional dissolution source and legal role cutoff independent of UI.",
       "status": "CLOSED_PARTIAL_R5_NATIVE_BROWSER_PENDING"
+    },
+    {
+      "id": "C13",
+      "hypotheses": {
+        "H1": "Institutional primary decree verifies 6 Oct dissolution and 29 Nov new elections",
+        "H0": "primary document unavailable/unverified"
+      },
+      "observed": "2026-10-26T15:13:14Z",
+      "instrument": "probe_boe_dissolution.py, official www.boe.es original 33544 bytes TLS, native Actions 40347128170",
+      "result": {
+        "source": "BOE-A-2026-20742",
+        "source_sha256": "24fb306d6a039705959dcdc4c88cf7cf8645c07b50583dba1688157ebab3e993",
+        "original_verified": true,
+        "clauses": 5,
+        "publication_date": "2026-10-06",
+        "legal_dissolution_effective": "2026-10-06",
+        "election_date": "2026-11-29"
+      },
+      "adversarial": "Publication day of dissolution is not the first_public_at of 23 July votes or person rosters. HTML page hash may differ across requests due dynamic ancillary content, legal text must be revalidated.",
+      "priors_update": [
+        {
+          "id": "PF-32-13",
+          "proposition": "Official BOE provides separate independently verified time boundary for legislative status post 2026-10-06",
+          "state": "supported legal documentary fact",
+          "evidence": "CI 40347128170 original 33,544B + clause checks",
+          "counterevidence": "older roster says 137 active after dissolution; semantics need explicit override",
+          "falsifier": "BOE original correction changes date or role applicability"
+        }
+      ],
+      "decision": "C14 sample a second *different parliamentary session* after observing same-session consistency and dissolution fact; seek primary September30 session original (pre-dissolution), no person rating.",
+      "status": "CLOSED_BOUNDED"
     }
   ],
   "next_cycle_prereg": {
-    "id": "C13",
-    "block": "FOLLOWUP20_C01",
-    "chosen_after": "C12 API/UI source checker passed but visual E2E pending, and C03 uncovered discharged dates up to 2026-10-06",
-    "question": "Does a separately published official BOE document establish a certified dissolution date and source publication date to bound 'active' vs 'historical' office roles?",
+    "id": "C14",
+    "block": "FOLLOWUP20_C02",
+    "chosen_after": "C13 BOE independent date success and C08 same-session-only external validity limit",
+    "question": "Can we discover latest 30 Sept 2026 session 202 official JSON directly from the official voting calendar and capture an original, without guessing opaque URL timestamp?",
     "hypotheses": {
-      "H1": "Institutional BOE original names Congress/Senate dissolution effective on publication 2026-10-06 and 2026-11-29 election",
-      "H0": "unreliable, unverifiable publication document or dates do not align"
+      "H1": "official calendar page exposes exact downloadable JSON and content fetch yields vote rows",
+      "H0": "links inaccessible, dynamic script/HTML inconsistent"
     },
-    "method": "capture BOE-A-2026-20742 official XML or HTML over verified TLS, validate publisher host and content against exact original legal clauses; preserve fingerprint, no persons",
-    "criterion": "if original captured and clauses validated, record temporal gate for role availability; not point scores or member identities; else STOP_R5",
-    "status": "PREREGISTERED_BEFORE_OBSERVATION"
+    "method": "verified TLS fetch of Congress date-scoped calendar and parse hrefs to official JSON, select first URL literally offered by publisher, store snapshot hash and vote shape without names",
+    "criterion": "one authentic cross-session raw original with vote rows and session 202; otherwise STOP_R5 and pivot to ZIP/cached official pages",
+    "status": "PREREGISTERED_BEFORE_TEST"
   },
   "first_block": {
     "authorization": 12,
