@@ -1,0 +1,47 @@
+{
+  "id": "C04",
+  "parent": "C03",
+  "type": "EXPERIMENTAL_AB_HOLDOUT_SOURCE",
+  "A": {
+    "estimand": "new independent-profile sample matched uniquely in h2 among official roster names",
+    "unit": "XV profile source index link",
+    "population": "412 ID links",
+    "real_outcome": "name is exactly the indexed public office member",
+    "proxy": "unique roster-key exact substring in h2",
+    "nonidentification": "H2 can be name in title and no stable unique identity across term"
+  },
+  "B": {
+    "H1": "16 withheld profiles all have unique matching roster h2 string",
+    "H0": "structural extractor fails on withheld profiles",
+    "H_other": "legitimate differences in spelling or special characters"
+  },
+  "C": {
+    "sample": "16 with SHA256 seed AB20_C04_HOLDOUT, exclude original 8 IDs; frozen prior to download",
+    "budget": "16 official HTML GET ≤2MB + two official roster JSON; timeout 19s each",
+    "acceptance": "≥15/16 unique h2 and 0 false multiple",
+    "control": "8 known development profiles not reused",
+    "falsifier": "≥2 profiles have 0 or >1 roster matches"
+  },
+  "D": {
+    "preprocessing": "NFKC Unicode, casefold, whitespace; h2 only",
+    "data": "same official XV index and October roster"
+  },
+  "E": {
+    "status": "PREREGISTERED"
+  },
+  "F": {
+    "adversarial": "same provider gives correlated source, not external institution independent"
+  },
+  "G": {
+    "holdout": "SINGLE USE, if inspected then exposed"
+  },
+  "H": {
+    "CT2_before": 24
+  },
+  "I": {
+    "predicted_grade": "0/3 local engineering"
+  },
+  "J": {
+    "next": "if near-clean, target source-versioned historic identity; if not, diagnose specific code variants privately"
+  }
+}
