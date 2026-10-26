@@ -2,9 +2,9 @@
   "campaign": "PF-FOCUS20R",
   "authorized": 20,
   "preregistered": 20,
-  "closed_bounded": 16,
+  "closed_bounded": 18,
   "closed_STOP_R5": 2,
-  "pending_ci": 2,
+  "pending_ci": 0,
   "independent_empirical_experiments": 0,
   "source_election": "2023-07-23",
   "document": "BOE-A-2023-15066",
@@ -954,7 +954,7 @@
       "id": "PF-FOCUS20R-P17",
       "index": 17,
       "stage": "qa",
-      "status": "PENDING_CI",
+      "status": "CLOSE_ACCEPTED_BOUNDED",
       "A": {
         "question": "Add browser keyboard/DOM and hostile input tests",
         "unit": "BOE-A-2023-15066 2023 Congress electoral text heading, source or local test",
@@ -976,10 +976,10 @@
         "original_source_sha256": "d1c179fcfab9889df272753ad3d44513f86cec703805219834b7d048ef0eda20"
       },
       "E": {
-        "status": "PENDING_NATIVE_E2E",
-        "observed": "Chromium keyboard/DOM checks for opening quarantine detail and Host-header negative test added; final run pending",
+        "status": "PASS_BROWSER_NATIVE_KEYBOARD_AND_SECURITY",
+        "observed": "Three-job CI 40336524912 success: Chromium native keyboard opens 27-section quarantine summary, DOM confirms Burgos data, hostile Host 403, no uncaught JS errors",
         "main_CI_run": 40334678838,
-        "latest_keyboard_CI": "PENDING_CHECK"
+        "latest_keyboard_CI": 40336524912
       },
       "F": {
         "adversarial_challenge": "A passing smoke is not an accessibility audit across devices"
@@ -1004,7 +1004,7 @@
         "CT2_predictive": 24
       },
       "J": {
-        "decision": "REPAIR_OR_CONFIRM_AFTER_RUN",
+        "decision": "CLOSE_BOUNDED_NO_SCIENTIFIC_INFERENCE",
         "next_evidence": "A passing smoke is not an accessibility audit across devices"
       }
     },
@@ -1070,7 +1070,7 @@
       "id": "PF-FOCUS20R-P19",
       "index": 19,
       "stage": "CI",
-      "status": "PENDING_CI",
+      "status": "CLOSE_ACCEPTED_BOUNDED",
       "A": {
         "question": "Native Node/Python/Chromium and raw source extraction work after repair",
         "unit": "BOE-A-2023-15066 2023 Congress electoral text heading, source or local test",
@@ -1092,10 +1092,10 @@
         "original_source_sha256": "d1c179fcfab9889df272753ad3d44513f86cec703805219834b7d048ef0eda20"
       },
       "E": {
-        "status": "PENDING_LATEST_CI",
-        "observed": "Original extraction source/app/Chromium all green at run 40334678838; latest keyboard-expanded CI pending",
+        "status": "PASS_NATIVE_3_JOB_CI",
+        "observed": "CI 40336524912 passes source/app checks, authentic PDF source replay, Chromium; 40334678838 independently earlier same-original match",
         "main_CI_run": 40334678838,
-        "latest_keyboard_CI": "PENDING_CHECK"
+        "latest_keyboard_CI": 40336524912
       },
       "F": {
         "adversarial_challenge": "CI passing is engineering evidence only, not sociological prediction quality"
@@ -1120,7 +1120,7 @@
         "CT2_predictive": 24
       },
       "J": {
-        "decision": "REPAIR_OR_CONFIRM_AFTER_RUN",
+        "decision": "CLOSE_BOUNDED_NO_SCIENTIFIC_INFERENCE",
         "next_evidence": "CI passing is engineering evidence only, not sociological prediction quality"
       }
     },
@@ -1182,5 +1182,6 @@
         "next_evidence": "21st independent dataset not in this block, no scientific discoveries claimed"
       }
     }
-  ]
+  ],
+  "latest_keyboard_successful_CI_run": 40336524912
 }
