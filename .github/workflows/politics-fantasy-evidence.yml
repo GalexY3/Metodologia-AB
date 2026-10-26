@@ -233,6 +233,9 @@ jobs:
       - name: C24 verify historically indexed real 2024 April session
         working-directory: proyectos/politics-fantasy-league
         run: python scripts/probe_indexed_2024.py
+      - name: C25 test repeatability of 2024 roster and group discrepancy
+        working-directory: proyectos/politics-fantasy-league
+        run: python scripts/audit_second_2024_vote.py
       - name: C09 assert real vote sources normalize to identical calendar date
         working-directory: proyectos/politics-fantasy-league
         run: |
