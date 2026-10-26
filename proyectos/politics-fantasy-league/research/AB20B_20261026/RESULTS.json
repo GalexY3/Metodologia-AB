@@ -1,0 +1,41 @@
+{
+  "campaign": "PFL_AB20B_20261026",
+  "authorized": 20,
+  "closed": 20,
+  "grade_0_3_new": {
+    "N1": 0,
+    "N2": 0,
+    "N3": 0
+  },
+  "records_count_including_C20": 20,
+  "branch": "research/pfl-ab20b-historical-identity-20261026",
+  "CT2": {
+    "begin": 29,
+    "end": 29,
+    "reason": "No true independent identity validation or new published empirical knowledge; do not reward internal test count"
+  },
+  "PFL_V1_rev3_percentage": 36.35,
+  "release_gates_pending": 6,
+  "found_actual_empirical_limits": [
+    "1->3 PLENO turnout on one publication",
+    "credential vs seat one-day lag 2 cases",
+    "two false numeric joins due different expediente ID namespaces",
+    "internal office/group code ambiguity"
+  ],
+  "engineering_tools": [
+    "20-row curated source-scoped events",
+    "typed_refs Python guard",
+    "8 local tests"
+  ],
+  "inconclusive": [
+    "C14 no cross-source repeated names in 5-source development sample"
+  ],
+  "budget": {
+    "new_GitHub_Actions_executed": 0,
+    "CI_reruns": 0,
+    "GitHub_commits_only": true
+  },
+  "source_of_truth": "GitHub research branch, original source IDs/URLs and user-provided earlier local archive for AB20 C13-C20",
+  "future_request": "BRANCHING 20",
+  "next_priority": "server-owned trusted attestation and historically adjudicated immutable-person crosswalk"
+}

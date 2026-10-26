@@ -1,0 +1,34 @@
+{
+  "id": "C20",
+  "type": "EXPERIMENTAL_AB_ADVERSARIAL_LOCAL_GATE",
+  "status": "CLOSED_BOUNDED_WITH_INTEGRATION_RISK",
+  "prereg_file": "C20_PREREG.json",
+  "executed": "local Python imported prior AB20 release_gate; 2026-10-26",
+  "source": "AB20 local package/src/politics_fantasy/release_gate.py and 2026-10-26 GitHub policy",
+  "observed": {
+    "number_of_original_release_gates": 6,
+    "actual_documentary_release": false,
+    "actual_failing_gates": 6,
+    "forged_evidence_without_trusted_registry_release": false,
+    "forged_evidence_plus_caller_supplied_registry_release": true,
+    "new_branch_action_runs_observed_in_latest_100": null
+  },
+  "hypotheses": {
+    "H1": "only partially: denies release by default, but forgeable if trust boundary is broken",
+    "H0": "unsafe case proved under attacker-controlled trusted_receipts, but no live API exploit shown"
+  },
+  "F": "Direct Python function accepts externally supplied 'trusted_receipts' by design; caller must be *server-owned independent verified registry*. If backend allowed client-supplied registry, forged evidence could pass. Current source does not show such API control; no remote attack or real vulnerability established.",
+  "G": "No external replay or deployment pen-test",
+  "H": {
+    "CT2_before": 29,
+    "CT2_after": 29,
+    "grade_0_3": 0
+  },
+  "I": {
+    "security": "UNVERIFIED INTEGRATION CONDITION",
+    "science": "No 1/3+ findings"
+  },
+  "J": {
+    "decision": "CLOSE CAMPAIGN; next block should prove trusted receipt storage and independent crosswalk before live scoring"
+  }
+}
