@@ -15,6 +15,8 @@ SOURCE_SHA="d1c179fcfab9889df272753ad3d44513f86cec703805219834b7d048ef0eda20"
 KEYS=("province_label","province_id","congress_candidacies","lists",
       "legal_registered_parties_confirmed","people_identified")
 SECURE_ID=re.compile(r"^BOE-A-2023-15066:[A-Z0-9_]+:CONGRESO:\d{3}$")
+ROW_KEYS=frozenset(("candidacy_id","province_label","position","label","acronym",
+    "entity_semantics","person_count_joined","legal_party_registration_id"))
 
 def status(path:Path|None=None)->dict:
     p=Path(path) if path is not None else DEFAULT
@@ -39,6 +41,10 @@ def status(path:Path|None=None)->dict:
         review_set={x.get("province") for x in d["issues"]
                     if x.get("code")=="CONTAINS_NON_PROCLAMATION_NOTICE_REVIEW"}
 
+        if (len(review_set)!=9 or
+            not review_set.issubset({p["province_label"] for p in items})):
+            return {**stopped,"error":"REVIEW_NOTICES_MISMATCH"}
+
         for province in items:
             if any(k not in province for k in KEYS):
                 return {**stopped,"error":"PROVINCE_SCHEMA"}
@@ -53,6 +59,10 @@ def status(path:Path|None=None)->dict:
                 return {**stopped,"error":"PROVINCE_INVALID"}
             rows=[]
             for index,row in enumerate(lists,1):
+                # A known public-label schema is part of the safety boundary;
+                # silently ignoring nested/private additions would be misleading.
+                if not isinstance(row,dict) or frozenset(row)!=ROW_KEYS:
+                    return {**stopped,"error":"UNEXPECTED_CANDIDACY_FIELDS"}
                 if (row.get("position")!=index or
                     not SECURE_ID.fullmatch(row.get("candidacy_id","")) or
                     row["candidacy_id"]!=f"BOE-A-2023-15066:{pid}:CONGRESO:{index:03d}" or
@@ -66,21 +76,33 @@ def status(path:Path|None=None)->dict:
                     return {**stopped,"error":"INVALID_ACRONYM"}
                 rows.append({"id":row["candidacy_id"],"acronym":acr,
                     "semantics":"ELECTORAL_CANDIDACY_LABEL_ONLY"})
+            needs_review=province["province_label"] in review_set
             out.append({"province":province["province_label"],"province_id":pid,
                 "n_candidacies":len(rows),"lists":rows,
-                "requires_non_proclamation_review":province["province_label"] in review_set})
+                "requires_non_proclamation_review":needs_review,
+                "documentary_quality":("REVIEW_NOTICE_NOT_VERIFIED_PROCLAIMED"
+                   if needs_review else "EXTRACTED_NO_KNOWN_NOTICE")})
         if sum(x["n_candidacies"] for x in out)!=263:
             return {**stopped,"error":"TOTAL_MISMATCH"}
+        reviewed_rows=sum(p["n_candidacies"] for p in out
+                          if p["requires_non_proclamation_review"])
         return {**stopped,"ok":True,"source_url":d["source"],
             "source_document":"BOE-A-2023-15066","original_sha256":SOURCE_SHA,
             "year":2023,"coverage":"25 of 52 distinct provincial sections accepted; other 27 unresolved",
-            "n_provinces":len(out),"n_candidacies":263,"detected_provincial_sections":52,
+            "n_provinces":len(out),"n_candidacies":263,
+            "n_list_headings_extracted":263,
+            "n_list_headings_in_review_sections":reviewed_rows,
+            "n_list_headings_without_known_notices":263-reviewed_rows,
+            "confirmed_proclaimed_count":None,
+            "detected_provincial_sections":52,
             "unresolved_provincial_sections":52-len(out),
             "issues_count":len(d["issues"]),
             "extracted_with_review_notices":sum(x["requires_non_proclamation_review"] for x in out),
             "extracted_without_known_notices":sum(not x["requires_non_proclamation_review"] for x in out),
             "provinces":out,
-            "warning":"Electoral candidacies ≠ legal parties, affiliations, seats or people. 27 sections unresolved."}
+            "warning":"263 extracted headings are NOT 263 verified proclaimed candidacies: "
+                      "some source sections explicitly contain non-proclamation notices. "
+                      "27 sections unresolved; no legal parties, affiliations, seats or people established."}
     except (OSError,KeyError,ValueError,TypeError,AttributeError,OverflowError):
         return {**stopped,"error":"INVALID_SOURCE"}
 
