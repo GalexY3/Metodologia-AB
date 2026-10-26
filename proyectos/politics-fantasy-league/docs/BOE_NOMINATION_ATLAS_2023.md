@@ -29,3 +29,14 @@ No existe un denominador contrastado de **todos los partidos políticos activos 
 La prioridad para convertirlo en una población válida es revisar las 27 secciones incompletas contra el PDF original y distinguir expresamente las nueve con mensajes de no proclamación, con doble comprobación independiente. Después hacen falta fuentes jurídicas del Registro de Partidos y fuentes temporalmente válidas para cargos públicos. No adjudicar `src.registry` o `id.real` por disponer solo de siglas.
 
 **Estado científico:** ningún resultado causal, N1/N2/N3 nuevos=0. La validación es documental y acotada a una sola elección de 2023.
+
+
+## Auditoría adicional de interpretación · 26/10/2026 · rama final20
+
+**Precisión crítica:** `list_headings_extracted=263` cuenta **rótulos que el parser detectó**, no 263 proclamaciones definitivamente válidas. De los 263, **108** pertenecen a nueve secciones provinciales con avisos de no proclamación y **155** a 16 secciones sin tales avisos conocidos. Que una sección tenga aviso **no implica que sus 108 listas estén rechazadas**; que no se haya detectado aviso **tampoco prueba por sí solo** la regularidad jurídica exhaustiva de las otras 155.
+
+El [PDF oficial BOE-A-2023-15066](https://www.boe.es/boe/dias/2023/06/27/pdfs/BOE-A-2023-15066.pdf), en la sección de Alicante, incluye por ejemplo el encabezado `POR UN MUNDO MÁS JUSTO (PUM+J)` seguido de `No proclamada.`. Por ello está justificada la distinción entre **rótulo extraído** y **candidatura proclamada validada**, así como la revisión por entrada contra el documento original. No se atribuye condición de candidatura válida por simple aparición textual.
+
+**Segundo bloqueo constatado por revisión de artefactos:** el snapshot versionado `boe_2023_multiterritory_reviewed.json` **no contiene** el campo `quarantined_provinces` y el módulo `nomination_quality.audit()` exige el mismo para emitir certificación completa. El atlas público limitado puede ser legible, pero no hay certificación del universo documental completo. Se mantiene `STOP_R5` hasta reextraer y archivar el payload de las 27 secciones en cuarentena desde el PDF original y validar su digest.
+
+La API conserva `n_candidacies=263` **solo como campo histórico de compatibilidad** y ahora expone explícitamente `n_list_headings_extracted`, `n_list_headings_in_review_sections`, `n_list_headings_without_known_notices`, `confirmed_proclaimed_count:null` y calidad por sección. La UI habla de rótulos, no de proclamaciones certificadas. Una validación estructural de API no sustituye la revisión documental ni altera N1/N2/N3, VSDS, CT2 o PFL-V1.
