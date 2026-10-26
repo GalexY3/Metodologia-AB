@@ -1,0 +1,41 @@
+{
+  "id": "C12",
+  "parent": "C11",
+  "status": "PREREGISTERED",
+  "A": {
+    "question": "Does collapsing all INTERNAL organ roles into one label produce a same-day contradictory update for one actor?",
+    "estimand": "number of same-day opposite INTERNAL transitions for same source-scoped name lacking office subtype",
+    "population": "curated D263 sample"
+  },
+  "B": {
+    "H1": "at least one ambiguous same-day pair requires disambiguating internal office role subtype",
+    "H0": "no ambiguous pair"
+  },
+  "C": {
+    "source": "C11 curated D263 and exact BOCG public text",
+    "negative_control": "GROUP/SEAT remain separate and unambiguous",
+    "falsifier": "no same-day opposite pair"
+  },
+  "D": {
+    "method": "local deterministic duplicate-kind key check in JS no Actions"
+  },
+  "E": {
+    "freeze": true
+  },
+  "F": {
+    "adversarial": "pair may reflect exit from one post and entry in another, not source inconsistency"
+  },
+  "G": {
+    "holdout": "same sample, development evidence"
+  },
+  "H": {
+    "CT2_before": 29,
+    "grade_0_3": 0
+  },
+  "I": {
+    "repair": "explicit office subtype required"
+  },
+  "J": {
+    "next_after": true
+  }
+}
