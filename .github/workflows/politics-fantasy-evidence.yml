@@ -191,6 +191,9 @@ jobs:
       - name: C02 audit downloaded official JSON structure, no record values
         working-directory: proyectos/politics-fantasy-league
         run: python scripts/audit_congress_shape.py
+      - name: C03 temporal audit of official rosters
+        working-directory: proyectos/politics-fantasy-league
+        run: python scripts/audit_congress_temporal.py
       - name: Record ephemeral raw originals and bounded manifest
         if: always()
         uses: actions/upload-artifact@v4
