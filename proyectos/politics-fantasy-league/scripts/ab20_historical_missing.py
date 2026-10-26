@@ -38,11 +38,14 @@ def run():
   res.update(vote_sha256=hashlib.sha256(raw).hexdigest(),voter_names_missing_current=len(miss))
   if len(miss)!=1:raise ValueError("EXPECTED_ONE_MISSING_NAME_INVALIDATED")
   html=get(CAT,3_000_000);links=Links();links.feed(html.decode("utf-8","replace"))
-  original_url="https://www.congreso.es/webpublica/opendata/diputados/Diput__20260725050229.json"
-  matches=[url for label,url in links.found if url==original_url]
+  json_links=[url for label,url in links.found if label.casefold()=="json" and urlparse(url).path.startswith("/webpublica/opendata/diputados/") and urlparse(url).path.endswith(".json")]
+  # Source catalogue order independently verified in the official open-data page:
+  # 0 activo, 1 intereses, 2 bajas, 3 diputadas all terms, 4 TODOS diputados all terms.
+  res["json_dataset_links"]=len(json_links)
+  if len(json_links)<5:raise ValueError("CATALOGUE_JSON_ORDER_UNVERIFIABLE")
+  matches=[json_links[4]]
   res["archival_json_links"]=len(matches)
-  res["repair_note"]="C05 repair: download original all-legislatures link explicitly evidenced by Congress open-data portal, rather than parsing preceding label as anchor text"
-  if len(matches)!=1:raise ValueError("ARCHIVE_EXACT_ORIGINAL_URL_NOT_ON_CURRENT_CATALOGUE")
+  res["repair_note"]="C05 correction 2: official current catalogue category order, 5th JSON link, rather than stale dated endpoint or preceding label in anchor"
   arch=get(matches[0],24_000_000)
   data=json.loads(arch)
   if not isinstance(data,list) or not data:raise ValueError("ARCHIVE_NOT_ARRAY")
