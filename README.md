@@ -52,3 +52,14 @@ El [benchmark AB-E2E-01](benchmarks/AB_E2E_01/README.md) contiene un protocolo e
 Proyectos relacionados: [LARP](https://github.com/GalexY3/proyecto-LARP) y [Goodhart](https://github.com/GalexY3/goodhart-research), con sus propias evidencias y decisiones.
 
 **Recuperación documental del 22 de octubre de 2026:** se incorpora el texto central que ya se citaba como protocolo interno. No se modifica su contenido, la versión AB, el anexo O1, el observatorio ni los priors históricos.
+
+
+### AB-P / Atlas v0.2 — proyectos, mapa y autocrítica
+
+La ampliación O7 de AB incorpora el modo **AB-P** orientado a proyectos, **AB-R** para investigación, **AB-H** para proyectos con subinvestigaciones y **AB-META** para revisar/revertir la propia metodología. Las pruebas exploratorias del prototipo local sumaron 20 ciclos A–J instrumentales y 28 tests locales totales satisfactorios; esto **no prueba superioridad científica ni de productividad**. AB puede simplificarse, refutarse y reemplazarse.
+
+- [Protocolo AB-P v0.2](docs/AB_O7_ABP_V02_20261026.md)
+- [Informe: veinte ciclos AB Atlas](docs/AB_O7_INFORME_20_CICLOS_20261026.md)
+- [Registro A–J por ciclo, C01–C20](research/AB_O7_ATLAS20_20261026/LEDGER.json)
+
+El visor/prototipo v0.2 se entregó localmente en la conversación; **no se ha incorporado su código completo a este repositorio**, por lo que no hay que confundir estos documentos con un despliegue sincronizado.
