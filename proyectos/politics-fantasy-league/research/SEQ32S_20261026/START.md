@@ -52,3 +52,12 @@ Contrato: snapshot digest igual a fuente observada; whitelist exacta de campos; 
 ### C05 · preregistro tras comprobar C04
 Riesgo residual detectado: el verificador CI vuelve a extraer 22 líneas, pero aún **no compara SHA256 del PDF descargado con el SHA registrado**. Puede pasar una revisión de bytes sin cambios en los 22 rótulos. H1: igualdad de hash exacta bloquea drift del original; H0: fuente cambia legítimamente por reedición o mutación (en ese caso STOP_R5, no sobrescribir pin).
 Prueba: agregar comparación en la captura real, inyectar PDF de prueba corrupto y comprobar que falla, y verificar repetición del original. Solo entonces reevaluar la capacidad de reproducción de la instantánea; no aumentar cobertura de personas.
+
+## C05 · cierre observado y selección de C06
+- [CI 40344807726](https://github.com/GalexY3/Metodologia-AB/actions/runs/40344807726): **3/3 trabajos SUCCESS**, prueba `verify_original_digest` con SHA256 exacto; original 22/22 y Chromium/Node/Python. Un PDF con distinto digest ahora desencadena STOP_R5 incluso si conserva las 22 líneas.
+- J: aceptación técnica acotada; no sustituye firma independiente del publicador ni condiciones por tipo de dato. PF-S05 pasa de pendiente a evidencia de ingeniería respaldada.
+- La comparación reveló un segundo riesgo lingüístico: `office: 'Ministerio de Interior'` fue una etiqueta **normalizada** producida por el transcriptor, mientras que el BOE dice literalmente `Ministro del Interior`. No debe describirse una normalización como literal del acto.
+
+### C06 · preregistro decidido tras C05
+H1: registrar la **formulación literal del rol** en la disposición (Ministro de/del, Ministra de/para) evita errores semánticos de normalización con independencia del sexo gramatical o preposición; rival H0: los formatos varían y una regex puede omitir o transformar voces sin avisar.
+Criterio: sustituir las 22 formulaciones normalizadas por las 22 denominaciones textuales observadas, cotejar PDF auténtico exacto desde GitHub Actions, actualizar el digest del derivado, cambiar API al campo `role_title_as_written_in_2023` y añadir test para «del Interior» y «para la Transición». Si falta una sola concordancia, STOP_R5; no crear un rol vigente en 2026.
