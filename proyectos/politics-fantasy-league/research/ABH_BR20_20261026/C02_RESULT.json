@@ -1,0 +1,54 @@
+{
+  "id": "C02",
+  "status": "CLOSED_BOUNDED_NEGATIVE_ID_STABILITY",
+  "prereg_commit": "6c94a3ea87cc644bf3c8986bdea58d0aae35c008",
+  "observations": [
+    {
+      "name": "Gabriel Rufián Romero",
+      "xiv": {
+        "leg": "XIV",
+        "code": 187,
+        "url": "https://www.congreso.es/en/organos/composicion-en-la-legislatura?_organos_selectedLegislatura=XIV&_organos_selectedOrganoSup=1&_organos_selectedSuborgano=358&p_p_id=organos&p_p_lifecycle=2&p_p_resource_id=searchOrgano"
+      },
+      "xv": {
+        "leg": "XV",
+        "code": 312,
+        "url": "https://www.congreso.es/es/organos/composicion-en-la-legislatura?_organos_selectedLegislatura=XV&_organos_selectedOrganoSup=-20&_organos_selectedSuborgano=343&p_p_id=organos&p_p_lifecycle=2&p_p_resource_id=searchOrgano"
+      }
+    },
+    {
+      "name": "Yolanda Díaz Pérez",
+      "xiv": {
+        "leg": "XIV",
+        "code": 171,
+        "url": "https://www.congreso.es/en/grupos/composicion-en-la-legislatura?_grupos_gruposView=true&_grupos_idGrupo=204&_grupos_idLegislatura=XIV&_grupos_mostrarFicha=true&p_p_id=grupos&p_p_lifecycle=2&p_p_resource_id=diputadosSearch"
+      },
+      "xv": {
+        "leg": "XV",
+        "code": 342,
+        "url": "https://www.congreso.es/es/organos/composicion-en-la-legislatura?_organos_selectedLegislatura=XV&_organos_selectedOrganoSup=1&_organos_selectedSuborgano=312&p_p_id=organos&p_p_lifecycle=2&p_p_resource_id=searchOrgano"
+      }
+    }
+  ],
+  "effect": "2 of 2 predefined continuity cases have different codParlamentario values across XIV and XV, demonstrating numerically same-code-join would miss these two likely same persons; public document identification by matching names, not independently adjudicated immutable IDs.",
+  "interpretation": "Reject codParlamentario as an unchanged across-term person key in these 2 cases. Official term scope explicit in URLs. Neither a provider-issued crosswalk nor automatic disambiguation was established. Selected sample not population-level error rate.",
+  "H1": "not demonstrated",
+  "H0": "supported in bounded test regarding numeric stability",
+  "H_alt": "descriptive manual continuity plausible; no production certainty",
+  "ABP": "schema stores composite (institution,legislature,codParlamentario) and provisional identity edges only when separately corroborated; do not release people scoring.",
+  "ABR": "negative control on a proposed candidate ID, not novelty scientific.",
+  "CT2_after": 29,
+  "VSDS_after": "1/3",
+  "N1_N2_N3": [
+    0,
+    0,
+    0
+  ],
+  "next": "C03 inspect official group compositions for historical membership intervals and whether date fields are sufficient to infer bitemporal knowledge",
+  "cost": {
+    "actions": 0
+  },
+  "complaints": [
+    "Official individual profile pages were not accessible via browsing endpoint; organ/party source responses did expose links and fields."
+  ]
+}
