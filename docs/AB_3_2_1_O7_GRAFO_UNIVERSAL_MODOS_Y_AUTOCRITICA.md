@@ -41,3 +41,15 @@ Circuito: CAPTURAR → DEDUPLICAR → PRIORIZAR → PROPONER → COMPARAR → DE
 ## 6. Evaluación pendiente
 
 **NO_VALIDADO:** no hay ensayo que pruebe que exigir este mapa o complaints mejora la investigación o productividad de cualquier proyecto. Un CLI/HTML local no constituye sincronización GitHub/Drive, recuperación semántica exhaustiva ni sistema multiagente de producción. Antes de extender O7 comprobar en tareas diversas tiempo de reanudación, errores no detectados, preguntas perdidas, sobrecarga, calidad de decisiones y resultados de campo; comparar también con un gestor de proyectos competente. Permitir retroceder, reducir o retirar O7 si no aporta ganancia neta.
+
+
+## Revisión prospectiva 0.2 del piloto O7 (26-10-2026)
+
+**AB-P es modo nativo y no un cambio de etiqueta de AB-R.** Su contrato mínimo diferencia destinatarios/outcome, alcance versionado, fases discover/specify/build/verify/release/operate, criterios de aceptación de entregables, dependencias, gates críticos (sin gate definido NO implica readiness), coste, operaciones y quejas por corrida. Un `waived` crítico no se equipara a `passed`. La investigación AB-R conserva grados de evidencia y sus exigencias de hipótesis rivales; AB-H enlaza evidencias sin confundirlas.
+
+Prototipo local AB Atlas v0.2 probado con 20 comprobaciones de ingeniería C01–C20, además de 3 tests legados tras adaptación y 5 smoke tests Chromium; 28/28 PASS, **sin evaluación causal de superioridad metodológica**, y sin sincronización remota de código. Se identifica una regresión de expectativas en tres pruebas antiguas y su reparación. A–J e informe disponibles en:
+- [Modo AB-P v0.2](AB_O7_ABP_V02_20261026.md)
+- [Informe de los 20 contrastes](AB_O7_INFORME_20_CICLOS_20261026.md)
+- [Ledger de C01–C20](../research/AB_O7_ATLAS20_20261026/LEDGER.json)
+
+La norma continúa **PILOTO**, mutable/reversible. No inducir CT2, 2/3–3/3 o probabilidades de éxito de los 20 tests. Aplicar R5: detener nuevas comprobaciones locales repetitivas hasta probarlo con un proyecto real, usuarios y baseline competente.
