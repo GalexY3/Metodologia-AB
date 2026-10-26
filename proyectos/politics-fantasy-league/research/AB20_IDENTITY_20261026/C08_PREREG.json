@@ -1,0 +1,39 @@
+{
+  "id": "C08",
+  "parent": "C07",
+  "A": {
+    "question": "Does official XV group composition interface reveal dated member history with source profile IDs?",
+    "estimand": "number unique codParlamentario refs and date tokens in official HTML"
+  },
+  "B": {
+    "H1": "full member timeline visible",
+    "H0": "only current composition or dynamic loading",
+    "H_other": "IDs present but no dates"
+  },
+  "C": {
+    "source": "https://www.congreso.es/es/grupos/composicion-en-la-legislatura?idLegislatura=XV",
+    "budget": "one verified 4MB HTTPS page",
+    "falsifier": "no person IDs/dates"
+  },
+  "D": {
+    "script": "scripts/ab20_group_history_probe.py"
+  },
+  "E": {
+    "prereg_before_request": true
+  },
+  "F": {
+    "audit": "dynamic HTML possible; zero does not mean no historic database"
+  },
+  "G": {
+    "holdout": "not independent of publisher"
+  },
+  "H": {
+    "CT2_before": 22
+  },
+  "I": {
+    "grade": 0
+  },
+  "J": {
+    "decision_after_result": true
+  }
+}
