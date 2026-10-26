@@ -1,6 +1,6 @@
 {
   "campaign": "PF-AB32",
-  "cycles_closed": 4,
+  "cycles_closed": 5,
   "cycles": [
     {
       "id": "C01",
@@ -158,18 +158,54 @@
       ],
       "decision": "C05 test arithmetic and safe roster-vote join without assuming names imply identity.",
       "status": "CLOSED_BOUNDED"
+    },
+    {
+      "id": "C05",
+      "hypotheses": {
+        "H1": "one-to-one name keys and roll call 350 items reconcile with official roll call",
+        "H0": "source totals or textual names mismatch"
+      },
+      "observed": "2026-10-26T14:47:09Z",
+      "instrument": "scripts/audit_congress_vote_join.py official JSON originals native CI 40342858004",
+      "result": {
+        "vote_rows": 350,
+        "unique_vote_names": 350,
+        "roster_distinct": 412,
+        "exact_one_to_one_name_candidates": 350,
+        "ambiguous": 0,
+        "unmatched": 0,
+        "tally": {
+          "Sí": 33,
+          "No": 315,
+          "No vota": 2
+        },
+        "published_tallies_match": true
+      },
+      "adversarial": "Exact name in two documents under same institutional source strongly supports record-level linkage but is not durable ID, and current roster includes discharged historical members; publication timestamp unverified.",
+      "priors_update": [
+        {
+          "id": "PF-32-05",
+          "proposition": "At least one historical Congress roll call has full one-to-one normalized name match with combined current + discharged members and consistent tally",
+          "state": "SUPPORT_NARROW single vote; not generalizable to sessions",
+          "evidence": "40342858004 C05_JOIN 350/350 exact, zero ambiguity",
+          "counterevidence": "potential homonym over time; no immutable IDs",
+          "falsifier": "another vote fails match or temporal interval group consistency"
+        }
+      ],
+      "decision": "C06 validate each linked record's office interval and parliamentary group at vote date.",
+      "status": "CLOSED_BOUNDED"
     }
   ],
   "next_cycle_prereg": {
-    "id": "C05",
-    "chosen_after": "C04 vote has 350 person-like rows but zero explicit IDs",
-    "question": "Do voting totals reconcile to rows, and do official roster and roll-call names have unambiguous linkable syntax?",
+    "id": "C06",
+    "chosen_after": "C05 exact 350/350 names, no ambiguous strings",
+    "question": "Are linked people valid office holders on 2026-07-23, and do parliamentary group strings correspond?",
     "hypotheses": {
-      "H1": "arithmetics exact and large one-to-one exact normalized join",
-      "H0": "totals differ or low linkage forces manual review"
+      "H1": "350/350 office intervals cover vote day; group labels agree or have explainable format variation",
+      "H0": "at least one temporally invalid link or substantive group conflict"
     },
-    "method": "compare votes/totales; compare normalized name keys with active+discharged, gather aggregate uniqueness and quality only",
-    "criterion": "record exact coverage, conflicts; do not auto-join without independent IDs; branch according to result",
+    "method": "parse vote date and official roster entry/exit; count mismatches anonymously, retain source provenance",
+    "criterion": "no invalid periods; if group matches not 350, review nomenclature before link acceptance",
     "status": "PREREGISTERED_BEFORE_TEST"
   }
 }
