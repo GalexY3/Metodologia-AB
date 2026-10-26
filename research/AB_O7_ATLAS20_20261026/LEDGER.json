@@ -1,0 +1,793 @@
+{
+  "id": "AB_O7_ATLAS20_20261026",
+  "date": "2026-10-26",
+  "method": "AB 3.2.1 O7 pilot",
+  "type": "20 ciclos A-J instrumentales exploratorios (no pruebas científicas independientes)",
+  "runs": 20,
+  "passed": 20,
+  "confirmed_scientific_discoveries": 0,
+  "independent_preregistration": false,
+  "limitations": "Inspección de interfaz Chromium y CLI local; las pruebas se construyeron con el prototipo. No hay evaluación contra gestor competente.",
+  "cycles": [
+    {
+      "id": "C01",
+      "A": {
+        "mode": "AB-P/AB-META",
+        "problem": "Inicio universal de proyecto"
+      },
+      "B": {
+        "hypothesis": "La versión 0.2 satisface la invariante instrumental: Inicio universal de proyecto"
+      },
+      "C": {
+        "competitor": "Comportamiento sin la guarda correspondiente o versión 0.1"
+      },
+      "D": {
+        "falsifier": "El test asociado falla o la salida no satisface la invariante"
+      },
+      "E": {
+        "protocol": "Prueba reproducible: tests/test_cycles.py::test_C01_proyecto_universal_con_scaffold_y_root",
+        "preregistration": "No preregistro independiente"
+      },
+      "F": {
+        "execution": "python -m unittest -q test_cycles.TwentyABCycles.test_C01_proyecto_universal_con_scaffold_y_root",
+        "environment": "Python local/fixtures"
+      },
+      "G": {
+        "outcome": "PASS",
+        "meaning": "Propiedad local observada; no evalúa eficacia científica o de producción"
+      },
+      "H": {
+        "audit": "No independencia estadística; implementación compartida; sin datos de campo ni usuarios reales"
+      },
+      "I": {
+        "decision": "CONSERVAR_COMO_INVARIANTE_PILOTO",
+        "scientific_novelty": "No adjudicada"
+      },
+      "J": {
+        "next": "C02",
+        "scope": "Prospectivo; sin reescribir AB 3.2.1"
+      }
+    },
+    {
+      "id": "C02",
+      "A": {
+        "mode": "AB-P/AB-META",
+        "problem": "Separación ciencia/producto"
+      },
+      "B": {
+        "hypothesis": "La versión 0.2 satisface la invariante instrumental: Separación ciencia/producto"
+      },
+      "C": {
+        "competitor": "Comportamiento sin la guarda correspondiente o versión 0.1"
+      },
+      "D": {
+        "falsifier": "El test asociado falla o la salida no satisface la invariante"
+      },
+      "E": {
+        "protocol": "Prueba reproducible: tests/test_cycles.py::test_C02_separacion_de_ciencia_producto_meta",
+        "preregistration": "No preregistro independiente"
+      },
+      "F": {
+        "execution": "python -m unittest -q test_cycles.TwentyABCycles.test_C02_separacion_de_ciencia_producto_meta",
+        "environment": "Python local/fixtures"
+      },
+      "G": {
+        "outcome": "PASS",
+        "meaning": "Propiedad local observada; no evalúa eficacia científica o de producción"
+      },
+      "H": {
+        "audit": "No independencia estadística; implementación compartida; sin datos de campo ni usuarios reales"
+      },
+      "I": {
+        "decision": "CONSERVAR_COMO_INVARIANTE_PILOTO",
+        "scientific_novelty": "No adjudicada"
+      },
+      "J": {
+        "next": "C03",
+        "scope": "Prospectivo; sin reescribir AB 3.2.1"
+      }
+    },
+    {
+      "id": "C03",
+      "A": {
+        "mode": "AB-P/AB-META",
+        "problem": "Contrato outcome y audiencia"
+      },
+      "B": {
+        "hypothesis": "La versión 0.2 satisface la invariante instrumental: Contrato outcome y audiencia"
+      },
+      "C": {
+        "competitor": "Comportamiento sin la guarda correspondiente o versión 0.1"
+      },
+      "D": {
+        "falsifier": "El test asociado falla o la salida no satisface la invariante"
+      },
+      "E": {
+        "protocol": "Prueba reproducible: tests/test_cycles.py::test_C03_contrato_resultado_y_destinatarios",
+        "preregistration": "No preregistro independiente"
+      },
+      "F": {
+        "execution": "python -m unittest -q test_cycles.TwentyABCycles.test_C03_contrato_resultado_y_destinatarios",
+        "environment": "Python local/fixtures"
+      },
+      "G": {
+        "outcome": "PASS",
+        "meaning": "Propiedad local observada; no evalúa eficacia científica o de producción"
+      },
+      "H": {
+        "audit": "No independencia estadística; implementación compartida; sin datos de campo ni usuarios reales"
+      },
+      "I": {
+        "decision": "CONSERVAR_COMO_INVARIANTE_PILOTO",
+        "scientific_novelty": "No adjudicada"
+      },
+      "J": {
+        "next": "C04",
+        "scope": "Prospectivo; sin reescribir AB 3.2.1"
+      }
+    },
+    {
+      "id": "C04",
+      "A": {
+        "mode": "AB-P/AB-META",
+        "problem": "Historia de revisiones de alcance"
+      },
+      "B": {
+        "hypothesis": "La versión 0.2 satisface la invariante instrumental: Historia de revisiones de alcance"
+      },
+      "C": {
+        "competitor": "Comportamiento sin la guarda correspondiente o versión 0.1"
+      },
+      "D": {
+        "falsifier": "El test asociado falla o la salida no satisface la invariante"
+      },
+      "E": {
+        "protocol": "Prueba reproducible: tests/test_cycles.py::test_C04_scope_no_sobrescribe_historia",
+        "preregistration": "No preregistro independiente"
+      },
+      "F": {
+        "execution": "python -m unittest -q test_cycles.TwentyABCycles.test_C04_scope_no_sobrescribe_historia",
+        "environment": "Python local/fixtures"
+      },
+      "G": {
+        "outcome": "PASS",
+        "meaning": "Propiedad local observada; no evalúa eficacia científica o de producción"
+      },
+      "H": {
+        "audit": "No independencia estadística; implementación compartida; sin datos de campo ni usuarios reales"
+      },
+      "I": {
+        "decision": "CONSERVAR_COMO_INVARIANTE_PILOTO",
+        "scientific_novelty": "No adjudicada"
+      },
+      "J": {
+        "next": "C05",
+        "scope": "Prospectivo; sin reescribir AB 3.2.1"
+      }
+    },
+    {
+      "id": "C05",
+      "A": {
+        "mode": "AB-P/AB-META",
+        "problem": "Readiness sin gates"
+      },
+      "B": {
+        "hypothesis": "La versión 0.2 satisface la invariante instrumental: Readiness sin gates"
+      },
+      "C": {
+        "competitor": "Comportamiento sin la guarda correspondiente o versión 0.1"
+      },
+      "D": {
+        "falsifier": "El test asociado falla o la salida no satisface la invariante"
+      },
+      "E": {
+        "protocol": "Prueba reproducible: tests/test_cycles.py::test_C05_release_no_preparado_si_no_hay_gates",
+        "preregistration": "No preregistro independiente"
+      },
+      "F": {
+        "execution": "python -m unittest -q test_cycles.TwentyABCycles.test_C05_release_no_preparado_si_no_hay_gates",
+        "environment": "Python local/fixtures"
+      },
+      "G": {
+        "outcome": "PASS",
+        "meaning": "Propiedad local observada; no evalúa eficacia científica o de producción"
+      },
+      "H": {
+        "audit": "No independencia estadística; implementación compartida; sin datos de campo ni usuarios reales"
+      },
+      "I": {
+        "decision": "CONSERVAR_COMO_INVARIANTE_PILOTO",
+        "scientific_novelty": "No adjudicada"
+      },
+      "J": {
+        "next": "C06",
+        "scope": "Prospectivo; sin reescribir AB 3.2.1"
+      }
+    },
+    {
+      "id": "C06",
+      "A": {
+        "mode": "AB-P/AB-META",
+        "problem": "Gate sin evidencia"
+      },
+      "B": {
+        "hypothesis": "La versión 0.2 satisface la invariante instrumental: Gate sin evidencia"
+      },
+      "C": {
+        "competitor": "Comportamiento sin la guarda correspondiente o versión 0.1"
+      },
+      "D": {
+        "falsifier": "El test asociado falla o la salida no satisface la invariante"
+      },
+      "E": {
+        "protocol": "Prueba reproducible: tests/test_cycles.py::test_C06_gate_no_pasa_sin_evidencia",
+        "preregistration": "No preregistro independiente"
+      },
+      "F": {
+        "execution": "python -m unittest -q test_cycles.TwentyABCycles.test_C06_gate_no_pasa_sin_evidencia",
+        "environment": "Python local/fixtures"
+      },
+      "G": {
+        "outcome": "PASS",
+        "meaning": "Propiedad local observada; no evalúa eficacia científica o de producción"
+      },
+      "H": {
+        "audit": "No independencia estadística; implementación compartida; sin datos de campo ni usuarios reales"
+      },
+      "I": {
+        "decision": "CONSERVAR_COMO_INVARIANTE_PILOTO",
+        "scientific_novelty": "No adjudicada"
+      },
+      "J": {
+        "next": "C07",
+        "scope": "Prospectivo; sin reescribir AB 3.2.1"
+      }
+    },
+    {
+      "id": "C07",
+      "A": {
+        "mode": "AB-P/AB-META",
+        "problem": "Exención no equivale a paso"
+      },
+      "B": {
+        "hypothesis": "La versión 0.2 satisface la invariante instrumental: Exención no equivale a paso"
+      },
+      "C": {
+        "competitor": "Comportamiento sin la guarda correspondiente o versión 0.1"
+      },
+      "D": {
+        "falsifier": "El test asociado falla o la salida no satisface la invariante"
+      },
+      "E": {
+        "protocol": "Prueba reproducible: tests/test_cycles.py::test_C07_waiver_distinto_de_garantia_de_entrega",
+        "preregistration": "No preregistro independiente"
+      },
+      "F": {
+        "execution": "python -m unittest -q test_cycles.TwentyABCycles.test_C07_waiver_distinto_de_garantia_de_entrega",
+        "environment": "Python local/fixtures"
+      },
+      "G": {
+        "outcome": "PASS",
+        "meaning": "Propiedad local observada; no evalúa eficacia científica o de producción"
+      },
+      "H": {
+        "audit": "No independencia estadística; implementación compartida; sin datos de campo ni usuarios reales"
+      },
+      "I": {
+        "decision": "CONSERVAR_COMO_INVARIANTE_PILOTO",
+        "scientific_novelty": "No adjudicada"
+      },
+      "J": {
+        "next": "C08",
+        "scope": "Prospectivo; sin reescribir AB 3.2.1"
+      }
+    },
+    {
+      "id": "C08",
+      "A": {
+        "mode": "AB-P/AB-META",
+        "problem": "Validación sin aceptación"
+      },
+      "B": {
+        "hypothesis": "La versión 0.2 satisface la invariante instrumental: Validación sin aceptación"
+      },
+      "C": {
+        "competitor": "Comportamiento sin la guarda correspondiente o versión 0.1"
+      },
+      "D": {
+        "falsifier": "El test asociado falla o la salida no satisface la invariante"
+      },
+      "E": {
+        "protocol": "Prueba reproducible: tests/test_cycles.py::test_C08_validacion_de_entregable_requiere_aceptacion",
+        "preregistration": "No preregistro independiente"
+      },
+      "F": {
+        "execution": "python -m unittest -q test_cycles.TwentyABCycles.test_C08_validacion_de_entregable_requiere_aceptacion",
+        "environment": "Python local/fixtures"
+      },
+      "G": {
+        "outcome": "PASS",
+        "meaning": "Propiedad local observada; no evalúa eficacia científica o de producción"
+      },
+      "H": {
+        "audit": "No independencia estadística; implementación compartida; sin datos de campo ni usuarios reales"
+      },
+      "I": {
+        "decision": "CONSERVAR_COMO_INVARIANTE_PILOTO",
+        "scientific_novelty": "No adjudicada"
+      },
+      "J": {
+        "next": "C09",
+        "scope": "Prospectivo; sin reescribir AB 3.2.1"
+      }
+    },
+    {
+      "id": "C09",
+      "A": {
+        "mode": "AB-P/AB-META",
+        "problem": "Criterio/prueba/verificador"
+      },
+      "B": {
+        "hypothesis": "La versión 0.2 satisface la invariante instrumental: Criterio/prueba/verificador"
+      },
+      "C": {
+        "competitor": "Comportamiento sin la guarda correspondiente o versión 0.1"
+      },
+      "D": {
+        "falsifier": "El test asociado falla o la salida no satisface la invariante"
+      },
+      "E": {
+        "protocol": "Prueba reproducible: tests/test_cycles.py::test_C09_aceptacion_documenta_criterio_prueba_y_revisor",
+        "preregistration": "No preregistro independiente"
+      },
+      "F": {
+        "execution": "python -m unittest -q test_cycles.TwentyABCycles.test_C09_aceptacion_documenta_criterio_prueba_y_revisor",
+        "environment": "Python local/fixtures"
+      },
+      "G": {
+        "outcome": "PASS",
+        "meaning": "Propiedad local observada; no evalúa eficacia científica o de producción"
+      },
+      "H": {
+        "audit": "No independencia estadística; implementación compartida; sin datos de campo ni usuarios reales"
+      },
+      "I": {
+        "decision": "CONSERVAR_COMO_INVARIANTE_PILOTO",
+        "scientific_novelty": "No adjudicada"
+      },
+      "J": {
+        "next": "C10",
+        "scope": "Prospectivo; sin reescribir AB 3.2.1"
+      }
+    },
+    {
+      "id": "C10",
+      "A": {
+        "mode": "AB-P/AB-META",
+        "problem": "No derivar CT2 de producto"
+      },
+      "B": {
+        "hypothesis": "La versión 0.2 satisface la invariante instrumental: No derivar CT2 de producto"
+      },
+      "C": {
+        "competitor": "Comportamiento sin la guarda correspondiente o versión 0.1"
+      },
+      "D": {
+        "falsifier": "El test asociado falla o la salida no satisface la invariante"
+      },
+      "E": {
+        "protocol": "Prueba reproducible: tests/test_cycles.py::test_C10_hallazgo_no_se_infiere_de_progreso_de_producto",
+        "preregistration": "No preregistro independiente"
+      },
+      "F": {
+        "execution": "python -m unittest -q test_cycles.TwentyABCycles.test_C10_hallazgo_no_se_infiere_de_progreso_de_producto",
+        "environment": "Python local/fixtures"
+      },
+      "G": {
+        "outcome": "PASS",
+        "meaning": "Propiedad local observada; no evalúa eficacia científica o de producción"
+      },
+      "H": {
+        "audit": "No independencia estadística; implementación compartida; sin datos de campo ni usuarios reales"
+      },
+      "I": {
+        "decision": "CONSERVAR_COMO_INVARIANTE_PILOTO",
+        "scientific_novelty": "No adjudicada"
+      },
+      "J": {
+        "next": "C11",
+        "scope": "Prospectivo; sin reescribir AB 3.2.1"
+      }
+    },
+    {
+      "id": "C11",
+      "A": {
+        "mode": "AB-P/AB-META",
+        "problem": "Dependencias circulares"
+      },
+      "B": {
+        "hypothesis": "La versión 0.2 satisface la invariante instrumental: Dependencias circulares"
+      },
+      "C": {
+        "competitor": "Comportamiento sin la guarda correspondiente o versión 0.1"
+      },
+      "D": {
+        "falsifier": "El test asociado falla o la salida no satisface la invariante"
+      },
+      "E": {
+        "protocol": "Prueba reproducible: tests/test_cycles.py::test_C11_dependencias_ciclicas_rechazadas",
+        "preregistration": "No preregistro independiente"
+      },
+      "F": {
+        "execution": "python -m unittest -q test_cycles.TwentyABCycles.test_C11_dependencias_ciclicas_rechazadas",
+        "environment": "Python local/fixtures"
+      },
+      "G": {
+        "outcome": "PASS",
+        "meaning": "Propiedad local observada; no evalúa eficacia científica o de producción"
+      },
+      "H": {
+        "audit": "No independencia estadística; implementación compartida; sin datos de campo ni usuarios reales"
+      },
+      "I": {
+        "decision": "CONSERVAR_COMO_INVARIANTE_PILOTO",
+        "scientific_novelty": "No adjudicada"
+      },
+      "J": {
+        "next": "C12",
+        "scope": "Prospectivo; sin reescribir AB 3.2.1"
+      }
+    },
+    {
+      "id": "C12",
+      "A": {
+        "mode": "AB-P/AB-META",
+        "problem": "Priorización de bloqueo"
+      },
+      "B": {
+        "hypothesis": "La versión 0.2 satisface la invariante instrumental: Priorización de bloqueo"
+      },
+      "C": {
+        "competitor": "Comportamiento sin la guarda correspondiente o versión 0.1"
+      },
+      "D": {
+        "falsifier": "El test asociado falla o la salida no satisface la invariante"
+      },
+      "E": {
+        "protocol": "Prueba reproducible: tests/test_cycles.py::test_C12_priorizacion_de_bloqueo_de_lanzamiento",
+        "preregistration": "No preregistro independiente"
+      },
+      "F": {
+        "execution": "python -m unittest -q test_cycles.TwentyABCycles.test_C12_priorizacion_de_bloqueo_de_lanzamiento",
+        "environment": "Python local/fixtures"
+      },
+      "G": {
+        "outcome": "PASS",
+        "meaning": "Propiedad local observada; no evalúa eficacia científica o de producción"
+      },
+      "H": {
+        "audit": "No independencia estadística; implementación compartida; sin datos de campo ni usuarios reales"
+      },
+      "I": {
+        "decision": "CONSERVAR_COMO_INVARIANTE_PILOTO",
+        "scientific_novelty": "No adjudicada"
+      },
+      "J": {
+        "next": "C13",
+        "scope": "Prospectivo; sin reescribir AB 3.2.1"
+      }
+    },
+    {
+      "id": "C13",
+      "A": {
+        "mode": "AB-P/AB-META",
+        "problem": "Compatibilidad esquema 1.0"
+      },
+      "B": {
+        "hypothesis": "La versión 0.2 satisface la invariante instrumental: Compatibilidad esquema 1.0"
+      },
+      "C": {
+        "competitor": "Comportamiento sin la guarda correspondiente o versión 0.1"
+      },
+      "D": {
+        "falsifier": "El test asociado falla o la salida no satisface la invariante"
+      },
+      "E": {
+        "protocol": "Prueba reproducible: tests/test_cycles.py::test_C13_compatibilidad_de_formato_anterior",
+        "preregistration": "No preregistro independiente"
+      },
+      "F": {
+        "execution": "python -m unittest -q test_cycles.TwentyABCycles.test_C13_compatibilidad_de_formato_anterior",
+        "environment": "Python local/fixtures"
+      },
+      "G": {
+        "outcome": "PASS",
+        "meaning": "Propiedad local observada; no evalúa eficacia científica o de producción"
+      },
+      "H": {
+        "audit": "No independencia estadística; implementación compartida; sin datos de campo ni usuarios reales"
+      },
+      "I": {
+        "decision": "CONSERVAR_COMO_INVARIANTE_PILOTO",
+        "scientific_novelty": "No adjudicada"
+      },
+      "J": {
+        "next": "C14",
+        "scope": "Prospectivo; sin reescribir AB 3.2.1"
+      }
+    },
+    {
+      "id": "C14",
+      "A": {
+        "mode": "AB-P/AB-META",
+        "problem": "Scan sin inferencia"
+      },
+      "B": {
+        "hypothesis": "La versión 0.2 satisface la invariante instrumental: Scan sin inferencia"
+      },
+      "C": {
+        "competitor": "Comportamiento sin la guarda correspondiente o versión 0.1"
+      },
+      "D": {
+        "falsifier": "El test asociado falla o la salida no satisface la invariante"
+      },
+      "E": {
+        "protocol": "Prueba reproducible: tests/test_cycles.py::test_C14_scan_unreviewed_no_fabrica_hallazgos",
+        "preregistration": "No preregistro independiente"
+      },
+      "F": {
+        "execution": "python -m unittest -q test_cycles.TwentyABCycles.test_C14_scan_unreviewed_no_fabrica_hallazgos",
+        "environment": "Python local/fixtures"
+      },
+      "G": {
+        "outcome": "PASS",
+        "meaning": "Propiedad local observada; no evalúa eficacia científica o de producción"
+      },
+      "H": {
+        "audit": "No independencia estadística; implementación compartida; sin datos de campo ni usuarios reales"
+      },
+      "I": {
+        "decision": "CONSERVAR_COMO_INVARIANTE_PILOTO",
+        "scientific_novelty": "No adjudicada"
+      },
+      "J": {
+        "next": "C15",
+        "scope": "Prospectivo; sin reescribir AB 3.2.1"
+      }
+    },
+    {
+      "id": "C15",
+      "A": {
+        "mode": "AB-P/AB-META",
+        "problem": "Mutación atómica"
+      },
+      "B": {
+        "hypothesis": "La versión 0.2 satisface la invariante instrumental: Mutación atómica"
+      },
+      "C": {
+        "competitor": "Comportamiento sin la guarda correspondiente o versión 0.1"
+      },
+      "D": {
+        "falsifier": "El test asociado falla o la salida no satisface la invariante"
+      },
+      "E": {
+        "protocol": "Prueba reproducible: tests/test_cycles.py::test_C15_mutacion_invalida_no_cambia_disco",
+        "preregistration": "No preregistro independiente"
+      },
+      "F": {
+        "execution": "python -m unittest -q test_cycles.TwentyABCycles.test_C15_mutacion_invalida_no_cambia_disco",
+        "environment": "Python local/fixtures"
+      },
+      "G": {
+        "outcome": "PASS",
+        "meaning": "Propiedad local observada; no evalúa eficacia científica o de producción"
+      },
+      "H": {
+        "audit": "No independencia estadística; implementación compartida; sin datos de campo ni usuarios reales"
+      },
+      "I": {
+        "decision": "CONSERVAR_COMO_INVARIANTE_PILOTO",
+        "scientific_novelty": "No adjudicada"
+      },
+      "J": {
+        "next": "C16",
+        "scope": "Prospectivo; sin reescribir AB 3.2.1"
+      }
+    },
+    {
+      "id": "C16",
+      "A": {
+        "mode": "AB-P/AB-META",
+        "problem": "Run/complaint integridad"
+      },
+      "B": {
+        "hypothesis": "La versión 0.2 satisface la invariante instrumental: Run/complaint integridad"
+      },
+      "C": {
+        "competitor": "Comportamiento sin la guarda correspondiente o versión 0.1"
+      },
+      "D": {
+        "falsifier": "El test asociado falla o la salida no satisface la invariante"
+      },
+      "E": {
+        "protocol": "Prueba reproducible: tests/test_cycles.py::test_C16_recibo_por_ejecucion_y_vinculo_de_queja",
+        "preregistration": "No preregistro independiente"
+      },
+      "F": {
+        "execution": "python -m unittest -q test_cycles.TwentyABCycles.test_C16_recibo_por_ejecucion_y_vinculo_de_queja",
+        "environment": "Python local/fixtures"
+      },
+      "G": {
+        "outcome": "PASS",
+        "meaning": "Propiedad local observada; no evalúa eficacia científica o de producción"
+      },
+      "H": {
+        "audit": "No independencia estadística; implementación compartida; sin datos de campo ni usuarios reales"
+      },
+      "I": {
+        "decision": "CONSERVAR_COMO_INVARIANTE_PILOTO",
+        "scientific_novelty": "No adjudicada"
+      },
+      "J": {
+        "next": "C17",
+        "scope": "Prospectivo; sin reescribir AB 3.2.1"
+      }
+    },
+    {
+      "id": "C17",
+      "A": {
+        "mode": "AB-P/AB-META",
+        "problem": "Queja sin run"
+      },
+      "B": {
+        "hypothesis": "La versión 0.2 satisface la invariante instrumental: Queja sin run"
+      },
+      "C": {
+        "competitor": "Comportamiento sin la guarda correspondiente o versión 0.1"
+      },
+      "D": {
+        "falsifier": "El test asociado falla o la salida no satisface la invariante"
+      },
+      "E": {
+        "protocol": "Prueba reproducible: tests/test_cycles.py::test_C17_complaint_sin_run_rechazada",
+        "preregistration": "No preregistro independiente"
+      },
+      "F": {
+        "execution": "python -m unittest -q test_cycles.TwentyABCycles.test_C17_complaint_sin_run_rechazada",
+        "environment": "Python local/fixtures"
+      },
+      "G": {
+        "outcome": "PASS",
+        "meaning": "Propiedad local observada; no evalúa eficacia científica o de producción"
+      },
+      "H": {
+        "audit": "No independencia estadística; implementación compartida; sin datos de campo ni usuarios reales"
+      },
+      "I": {
+        "decision": "CONSERVAR_COMO_INVARIANTE_PILOTO",
+        "scientific_novelty": "No adjudicada"
+      },
+      "J": {
+        "next": "C18",
+        "scope": "Prospectivo; sin reescribir AB 3.2.1"
+      }
+    },
+    {
+      "id": "C18",
+      "A": {
+        "mode": "AB-P/AB-META",
+        "problem": "Separar causa supuesta y probada"
+      },
+      "B": {
+        "hypothesis": "La versión 0.2 satisface la invariante instrumental: Separar causa supuesta y probada"
+      },
+      "C": {
+        "competitor": "Comportamiento sin la guarda correspondiente o versión 0.1"
+      },
+      "D": {
+        "falsifier": "El test asociado falla o la salida no satisface la invariante"
+      },
+      "E": {
+        "protocol": "Prueba reproducible: tests/test_cycles.py::test_C18_no_duplicar_queja_y_distinguir_causa",
+        "preregistration": "No preregistro independiente"
+      },
+      "F": {
+        "execution": "python -m unittest -q test_cycles.TwentyABCycles.test_C18_no_duplicar_queja_y_distinguir_causa",
+        "environment": "Python local/fixtures"
+      },
+      "G": {
+        "outcome": "PASS",
+        "meaning": "Propiedad local observada; no evalúa eficacia científica o de producción"
+      },
+      "H": {
+        "audit": "No independencia estadística; implementación compartida; sin datos de campo ni usuarios reales"
+      },
+      "I": {
+        "decision": "CONSERVAR_COMO_INVARIANTE_PILOTO",
+        "scientific_novelty": "No adjudicada"
+      },
+      "J": {
+        "next": "C19",
+        "scope": "Prospectivo; sin reescribir AB 3.2.1"
+      }
+    },
+    {
+      "id": "C19",
+      "A": {
+        "mode": "AB-P/AB-META",
+        "problem": "Round-trip de nodos/eventos"
+      },
+      "B": {
+        "hypothesis": "La versión 0.2 satisface la invariante instrumental: Round-trip de nodos/eventos"
+      },
+      "C": {
+        "competitor": "Comportamiento sin la guarda correspondiente o versión 0.1"
+      },
+      "D": {
+        "falsifier": "El test asociado falla o la salida no satisface la invariante"
+      },
+      "E": {
+        "protocol": "Prueba reproducible: tests/test_cycles.py::test_C19_legacy_provenance_y_roundtrip",
+        "preregistration": "No preregistro independiente"
+      },
+      "F": {
+        "execution": "python -m unittest -q test_cycles.TwentyABCycles.test_C19_legacy_provenance_y_roundtrip",
+        "environment": "Python local/fixtures"
+      },
+      "G": {
+        "outcome": "PASS",
+        "meaning": "Propiedad local observada; no evalúa eficacia científica o de producción"
+      },
+      "H": {
+        "audit": "No independencia estadística; implementación compartida; sin datos de campo ni usuarios reales"
+      },
+      "I": {
+        "decision": "CONSERVAR_COMO_INVARIANTE_PILOTO",
+        "scientific_novelty": "No adjudicada"
+      },
+      "J": {
+        "next": "C20",
+        "scope": "Prospectivo; sin reescribir AB 3.2.1"
+      }
+    },
+    {
+      "id": "C20",
+      "A": {
+        "mode": "AB-P/AB-META",
+        "problem": "Mutabilidad AB sin auto-atribución"
+      },
+      "B": {
+        "hypothesis": "La versión 0.2 satisface la invariante instrumental: Mutabilidad AB sin auto-atribución"
+      },
+      "C": {
+        "competitor": "Comportamiento sin la guarda correspondiente o versión 0.1"
+      },
+      "D": {
+        "falsifier": "El test asociado falla o la salida no satisface la invariante"
+      },
+      "E": {
+        "protocol": "Prueba reproducible: tests/test_cycles.py::test_C20_ab_meta_mutable_pero_no_mejora_automaticamente",
+        "preregistration": "No preregistro independiente"
+      },
+      "F": {
+        "execution": "python -m unittest -q test_cycles.TwentyABCycles.test_C20_ab_meta_mutable_pero_no_mejora_automaticamente",
+        "environment": "Python local/fixtures"
+      },
+      "G": {
+        "outcome": "PASS",
+        "meaning": "Propiedad local observada; no evalúa eficacia científica o de producción"
+      },
+      "H": {
+        "audit": "No independencia estadística; implementación compartida; sin datos de campo ni usuarios reales"
+      },
+      "I": {
+        "decision": "CONSERVAR_COMO_INVARIANTE_PILOTO",
+        "scientific_novelty": "No adjudicada"
+      },
+      "J": {
+        "next": "Parar checks similares y pedir contraste externo",
+        "scope": "Prospectivo; sin reescribir AB 3.2.1"
+      }
+    }
+  ]
+}
