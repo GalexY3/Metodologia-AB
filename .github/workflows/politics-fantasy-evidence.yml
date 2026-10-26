@@ -221,6 +221,9 @@ jobs:
       - name: C16 official Congress date-selector coverage inventory
         working-directory: proyectos/politics-fantasy-league
         run: python scripts/audit_congress_calendar_dates.py
+      - name: C17 independently dated official 10 September voting session
+        working-directory: proyectos/politics-fantasy-league
+        run: python scripts/probe_other_session.py
       - name: C09 assert real vote sources normalize to identical calendar date
         working-directory: proyectos/politics-fantasy-league
         run: |
