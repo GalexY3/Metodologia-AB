@@ -1,0 +1,41 @@
+{
+  "id": "C06",
+  "parent": "C05",
+  "type": "EXPERIMENTAL_AB",
+  "A": {
+    "question": "Could one orphan historical voter name be spelling-only variation?",
+    "estimand": "unique candidate by diacritic/punctuation NFKD canonicalization"
+  },
+  "B": {
+    "H1": "one exact orthographic candidate",
+    "H0": "no exact candidate",
+    "H_other": "multiple or nearest fuzzy high but ambiguous"
+  },
+  "C": {
+    "sources": "Congress original 2024 vote, 2026 current+departed roster, 6325 all-leg source",
+    "budget": "3 verified-TLS inputs",
+    "falsifier": "candidate not unique or absent"
+  },
+  "D": {
+    "source_pins": "as observed C05 SHA",
+    "code": "scripts/ab20_name_representation.py"
+  },
+  "E": {
+    "prereg_before_network": true
+  },
+  "F": {
+    "adversarial": "fuzzy similarity never identity authorization"
+  },
+  "G": {
+    "holdout": "EXPLORATORY"
+  },
+  "H": {
+    "CT2_before": 24
+  },
+  "I": {
+    "grade_expected": 0
+  },
+  "J": {
+    "decision_after_observation": true
+  }
+}
