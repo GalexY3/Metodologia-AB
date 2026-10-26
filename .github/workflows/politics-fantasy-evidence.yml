@@ -128,6 +128,16 @@ jobs:
           else
             echo 'STOP_R5: no original nomination PDF downloaded'
           fi
+      - name: Reconcile original BOE candidacy extraction against versioned accepted and quarantined snapshots
+        run: |
+          if [ -f /tmp/pf-official-source-capture/multi_province_nominations_2023.json ]; then
+            python scripts/verify_boe_nomination_snapshot.py \
+              /tmp/pf-official-source-capture/multi_province_nominations_2023.json \
+              data/observatory/boe_2023_multiterritory_reviewed.json \
+              data/observatory/boe_2023_quarantine_unresolved.json
+          else
+            echo 'STOP_R5: original PDF unavailable, independent source replay not performed'
+          fi
       - name: Preserve short-lived internal audit manifest and authentic raw captures
         uses: actions/upload-artifact@v4
         with:
