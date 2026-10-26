@@ -40,6 +40,7 @@ jobs:
       - name: Complete Python regression suite
         run: python -m pytest -q
       - name: Complete JavaScript regression suite
+        shell: bash
         run: node --test tests/*.mjs
       - name: Frontend syntax
         run: node --check src/politics_fantasy/web/app.js

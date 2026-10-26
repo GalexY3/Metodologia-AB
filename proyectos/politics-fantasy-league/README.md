@@ -10,7 +10,7 @@ Desde esta carpeta, con Python 3.10 o superior:
 python run_demo.py
 ```
 
-Abre `http://127.0.0.1:8787`. Para desarrollo: `python -m pip install -e ".[test]"`, `python -m pytest -q` y, con Node 20 o superior, `node --test tests/*.mjs`. El CI del monorepo está en `../../.github/workflows/politics-fantasy-evidence.yml`; un workflow dentro de esta subcarpeta solo funciona si el proyecto se convierte en repositorio independiente.
+Abre `http://127.0.0.1:8787`. Para desarrollo: `python -m pip install -e ".[test]"`, `python -m pytest -q` y `node --test tests/*.mjs` (Node 22 o superior; en Bash también funciona con Node 20). El CI del monorepo está en `../../.github/workflows/politics-fantasy-evidence.yml`; un workflow dentro de esta subcarpeta solo funciona si el proyecto se convierte en repositorio independiente.
 
 [Revisión de software y prioridades del 26/10/2026](docs/REVISION_RAPIDA_20261026.md). El historial de campañas que sigue conserva sus estados y resultados de cada fecha.
 
