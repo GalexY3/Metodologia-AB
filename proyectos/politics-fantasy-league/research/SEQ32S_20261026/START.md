@@ -30,3 +30,14 @@ Pregunta: ¿el nombramiento por Real Decreto 835/2023 (BOE-A-2023-23543) permite
 H1: sí, un PDF institucional de un acto único permite conciliación completa de todas las líneas de nombramiento. H0: extracción inconsistente, cambios en original, roles ambiguos o fallos de captura hacen imposible verificar la cohorte.
 Instrumento: descarga HTTPS desde BOE, SHA-256, pdftotext -layout y cotejo automático de filas extraídas contra un snapshot explícito, con metadatos de fecha de publicación, no de fin de mandato. Éxito solo si los 22 actos se extraen y la comparación exacta da cero errores; de otro modo STOP_R5.
 Efecto de alcance: **nombramiento de miembros del Gobierno en noviembre 2023 no equivale a legisladores ni cargo actual en octubre 2026**; no puntuación real.
+
+## C03 · resultado observado, corrección adaptativa y decisión
+- [GitHub Actions 40342767919](https://github.com/GalexY3/Metodologia-AB/actions/runs/40342767919) falló inicialmente porque el parser omitió **«Ministro del Interior»**. Se corrigió la gramática permitida (de/del/para), sin alterar nombres del documento.
+- [GitHub Actions 40342982881](https://github.com/GalexY3/Metodologia-AB/actions/runs/40342982881): descarga oficial **193.759 bytes**, SHA256 `16f05bba24508af229870b68dbfb72ba258e62416713a8cfe5c49c70ba792efe`, **MATCH_BOE_CABINET_22**, cero divergencias; Python, Node y navegador separados pasaron / navegador completando en el momento de lectura.
+- H1 sustentada **solo para 22 actos documentales de nombramiento de noviembre de 2023**. H0 sobre imposibilidad de transcripción se debilita para esta fuente tras reparar parser; H0 sobre ausencia de continuidad temporal sigue intacta. Sin estimación de eficacia predictor/fantasy.
+- Priors PF-S03: una publicación jurídica única permite verificar nombramientos con cargo y fecha; **no** identidad RPP, permanencia en cargo o evaluación normativa. Falsador: edición del original SHA-pinned o errata/rectificación oficial posterior.
+
+### C04 · preregistro decidido tras fuente original verificada
+Pregunta: ¿puede exponerse la cohorte de 22 **nombramientos históricos** mediante API read-only con digest original fijado y sin permitir que filas alteradas asignen scoring/partido/mandato actual?
+H1: lector fail-closed y negativos evitan promoción semántica; rival H0: UI/API filtran atributos arbitrarios, o metadatos de nominación se convierten en cargos presentes.
+Contrato: snapshot digest igual a fuente observada; whitelist exacta de campos; 22 IDs locales únicos; sin inferir first_public_at ni fecha de cese; prueba HTTP de respuesta pública sin scores. Si API/test rechaza fuente auténtica o tolera mutaciones, detener.
