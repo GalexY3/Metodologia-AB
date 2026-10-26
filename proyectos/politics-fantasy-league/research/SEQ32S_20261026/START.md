@@ -19,3 +19,14 @@ Contrato antes de registrar la decisión n+1: evaluar accesibilidad de RPP, disp
 - **Dictamen J:** redirigir C02 a verificar un contrato de extracción del JSON del Congreso; mantener RPP sin reconciliación y sin datos inventados. No posterior numérico, puesto que no hay denominador ni ensayos independientes.
 
 **C02, selección tras C01 (preregistro del siguiente contraste, no de C03–C32):** probar si los campos observados del JSON histórico permiten un registro de diputados estrictamente temporal y sin biografías ni ratings. Rival: nombre y fecha por sí solos no prueban identidad jurídica persistente ni vigencia actual. Criterio: parser fail-closed, títulos de fuente, schema mínimo, estado temporal, pruebas negativas. Si falla, volver a fuentes alternativas.
+
+## C02 · resultado observado y actualización antes de elegir C03
+- En [GitHub Actions 40341944931](https://github.com/GalexY3/Metodologia-AB/actions/runs/40341944931): Python local integration, JS source contracts, Chromium y descarga BOE pasaron; **la prueba de descarga propia del JSON Congreso falló con HTTP 404**. No se capturaron bytes originales ni se adjudicó identidad de personas; el proyector tiene tests de seguridad unitarios pero no una cohorte original importada.
+- Actualización PF-S02: la existencia de un enlace oficial indexado no implica disponibilidad actual del archivo estático de julio, especialmente tras la disolución de las Cortes anunciada el 06/10/2026. Evidencia: HTTP 404 en runner; rival: acceso temporal o ruta histórica distinta. Sin probabilidad numérica por un único intento.
+- **Dictamen J de C02: STOP_R5 para importación Congreso a partir de este URL**, conservar el código experimental NO conectado a producto; avanzar a C03 examinando documentación estable del BOE que vincule nombre de cargo y acto de nombramiento.
+
+### C03 · preregistro decidido tras el 404 real de C02
+Pregunta: ¿el nombramiento por Real Decreto 835/2023 (BOE-A-2023-23543) permite obtener una primera cohorte positiva de nombramientos con fecha y cargo, sin afiliaciones partidistas supuestas?
+H1: sí, un PDF institucional de un acto único permite conciliación completa de todas las líneas de nombramiento. H0: extracción inconsistente, cambios en original, roles ambiguos o fallos de captura hacen imposible verificar la cohorte.
+Instrumento: descarga HTTPS desde BOE, SHA-256, pdftotext -layout y cotejo automático de filas extraídas contra un snapshot explícito, con metadatos de fecha de publicación, no de fin de mandato. Éxito solo si los 22 actos se extraen y la comparación exacta da cero errores; de otro modo STOP_R5.
+Efecto de alcance: **nombramiento de miembros del Gobierno en noviembre 2023 no equivale a legisladores ni cargo actual en octubre 2026**; no puntuación real.
