@@ -1,9 +1,9 @@
 {
   "campaign": "AB20_IDENTITY_20261026",
   "authorization": "20 BRANCHING",
-  "executed": 11,
-  "closed_valid": 11,
-  "remaining": 9,
+  "executed": 12,
+  "closed_valid": 12,
+  "remaining": 8,
   "drift": "D2.0: same institution, new estimand source-scoped identity reconciliation",
   "scope": "Exploratory documentary/engineering; cannot infer political ideology or score",
   "cycles": [
@@ -307,6 +307,23 @@
       "holdout_status": "EXPLORATORY_NO_INDEPENDENT_INSTITUTION",
       "decision": "C12 distinguish loss of seat and new appointment from group-only change using contemporaneous BOCG and official institutional replacement data",
       "adversarial": "Publication day ≠ effective group date. The same BOCG also publishes substitutions in PSOE and Diputación Permanente; those are distinct roles. The heading ‘Mixto SUMAR’ may be publication artifact and is not legal merged group. No source-signature or rights audit."
+    },
+    {
+      "id": "C12",
+      "type": "EXPERIMENTAL_AB_DOCUMENTARY_NO_CI",
+      "status": "CLOSED_BOUNDED",
+      "source": "BOCG-15-D-51",
+      "result": {
+        "pleno_bajas": 8,
+        "pleno_altas": 8,
+        "group_bajas": 5,
+        "group_altas": 5
+      },
+      "grade_0_3": 0,
+      "ct2_before": 29,
+      "ct2_after": 29,
+      "prereg_commit": "3e5b74e8b8d06aae37dd42887c4956abf6844529",
+      "decision": "C13 typed bitemporal model and local tests"
     }
   ],
   "priors": [
@@ -429,6 +446,16 @@
       "evidence_against": "No matched JSON member IDs; bulletin wording/rights caveats",
       "uncertainty": "cross-platform availability timestamp unknown",
       "falsifier": "official corrections or discrepancies in identified profiles"
+    },
+    {
+      "id": "PF-ID20-12",
+      "proposition": "The Congress bulletin separates PLENO mandate exits/entries from parliamentary group transfers",
+      "scope": "BOCG 15-D-51",
+      "evidence_for": "8 seat departures+8 admissions vs 5 group transfers",
+      "evidence_against": "not a full historical member ID graph",
+      "uncertainty": "single bulletin",
+      "falsifier": "official correction",
+      "type": "DOCUMENTARY"
     }
   ],
   "new_discoveries_1_3": 0,
@@ -440,7 +467,7 @@
     "confidence": "LOW",
     "not_probability": true
   },
-  "next": "C12",
+  "next": "C13",
   "budget_safety": {
     "budget_alert_received": "2026-10-26",
     "screenshot_used_minutes": 1801,
