@@ -1,0 +1,47 @@
+{
+  "campaign": "PFL_AB20B_20261026",
+  "authorized": 20,
+  "mode": "BRANCHING",
+  "actions_budget": "ZERO_GITHUB_ACTIONS",
+  "source_branch": "research/pfl-ab20-identity-temporal-20261026",
+  "branch": "research/pfl-ab20b-historical-identity-20261026",
+  "source_model": "Official Spanish Congress BOCG HTML and data, local Python, GitHub commits only",
+  "scope": "Longitudinal politician identity, group membership, changes of seat vs group vs organizational posts",
+  "methodology": "AB 3.2.1 A-J and O1-O6; true prereg before observation, rival hypotheses, source provenance, dynamic next question, no fabricated CT2, no grade2/3",
+  "constraints": [
+    "No Actions workflow dispatch",
+    "No merge main",
+    "No public politician scoring",
+    "No inferred identity from string",
+    "No first_public_at from document date",
+    "No hidden GitHub billing assumption"
+  ],
+  "start": {
+    "previous_block": "AB20 identity C01-C20",
+    "previous_CI": "C01-C10 only",
+    "local_complete": "C11-C20 external zip visible in conversation, not yet in GitHub",
+    "initial_CT2_identity": "29/100 posthoc audited; ordinal, not probability",
+    "PFL_V1_rev3": 36.35,
+    "new_N1": 0,
+    "new_N2": 0,
+    "new_N3": 0
+  },
+  "original_sources": [
+    {
+      "id": "BOCG-15-D-372",
+      "url": "https://www.congreso.es/en/busqueda-de-publicaciones?_publicaciones_id_texto=BOCG-15-D-372.CODI.&_publicaciones_legislatura=XV&_publicaciones_mode=mostrarTextoIntegro&p_p_id=publicaciones&p_p_lifecycle=0&p_p_mode=view&p_p_state=normal",
+      "role": "Micó 03/07/2025 group change"
+    },
+    {
+      "id": "BOCG-15-D-121",
+      "url": "https://www.congreso.es/es/busqueda-de-publicaciones?_publicaciones_id_texto=%28BOCG-15-D-121.CODI.%29&_publicaciones_legislatura=XV&_publicaciones_mode=mostrarTextoIntegro&p_p_id=publicaciones&p_p_lifecycle=0&p_p_state=normal",
+      "role": "Apr 2024 Pleno/group different classes"
+    },
+    {
+      "id": "BOCG-15-D-355",
+      "url": "https://www.congreso.es/es/busqueda-de-publicaciones?_publicaciones_id_texto=BOCG-15-D-355.CODI.&_publicaciones_legislatura=XV&_publicaciones_mode=mostrarTextoIntegro&p_p_id=publicaciones&p_p_lifecycle=0&p_p_state=normal",
+      "role": "Jun 2025 seat change vs group change"
+    }
+  ],
+  "credit_safety": "Writes and Git trees do not consume GitHub Actions runner minutes, but repo storage/billing and triggers should still be audited."
+}

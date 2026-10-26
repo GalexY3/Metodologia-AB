@@ -1,0 +1,42 @@
+{
+  "id": "C10",
+  "parent": "C09",
+  "status": "PREREGISTERED",
+  "A": {
+    "question": "Does current deputy roster label active contradict dissolution event of XV, requiring institutional status context?",
+    "estimand": "legal dissolution date versus source snapshot 'activo'",
+    "unit": "legislature and deputy roster snapshot"
+  },
+  "B": {
+    "H1": "BOE dissolution effective 2026-10-06 supersedes assumption active label means ordinary mandate",
+    "H0": "no dissolution or date not effective",
+    "Hother": "permanent deputation has distinct continuity regime"
+  },
+  "C": {
+    "source": "BOE-A-2026-20742 full official HTML",
+    "comparator": "current Congress JSON 137 active-labeled, 275 discharged (prior AB32)",
+    "falsifier": "decree not yet effective or not XV Parliament"
+  },
+  "D": {
+    "method": "read legal text and dates"
+  },
+  "E": {
+    "freeze": true
+  },
+  "F": {
+    "adversarial": "active API field after dissolution may be an organizational cache or constitutional holdover"
+  },
+  "G": {
+    "holdout": "NONE retrospective"
+  },
+  "H": {
+    "CT2_before": 29,
+    "grade_0_3": 0
+  },
+  "I": {
+    "limits": "can't infer deputy's personal legal status from an API label alone"
+  },
+  "J": {
+    "next_decide_after": true
+  }
+}

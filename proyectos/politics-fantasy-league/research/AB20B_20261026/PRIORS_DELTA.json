@@ -1,0 +1,76 @@
+{
+  "campaign": "PFL_AB20B_20261026",
+  "is_cumulative_addition": true,
+  "prior_start": "AB20 identity CT2 audited 29, PFL V1rev3 36.35",
+  "priors": [
+    {
+      "id": "PF-ID20B-01..07",
+      "state": "DOCUMENTARY",
+      "claim": "BOCG events can mix mandate/role/group/staff changes with distinct effective dates; equal counts of entries and exits are not guaranteed",
+      "positive": "BOCG-D-355,194,551,372,263,121",
+      "against": "source selection purposive, chronology not exhaustive",
+      "falsifier": "source-corrected classifications"
+    },
+    {
+      "id": "PF-ID20B-08..10",
+      "state": "NORMATIVE",
+      "claim": "Political group is not same as electoral party; 2026 Article23 reform scheduled XVI; Oct6 disbanding must qualify active-roster interpretation",
+      "positive": "Congress TítuloII + note 2026 and BOE-A-2026-20742",
+      "against": "no personal status via law alone",
+      "falsifier": "published correction / different effective date"
+    },
+    {
+      "id": "PF-ID20B-11..13",
+      "state": "ENGINEERING",
+      "claim": "20 manually curated source-scoped event sample had two false same-day collisions if event target code/subtype omitted, resolved by explicit targets",
+      "positive": "C11–C13 Git source and deterministic check",
+      "against": "manual curated data, no SHA original replay",
+      "falsifier": "new original reproduces same-target opposite-date conflict"
+    },
+    {
+      "id": "PF-ID20B-14",
+      "state": "INCONCLUSIVE",
+      "claim": "No name repeated across distinct documents in small curated sample; no real cross-document identity estimate from it",
+      "positive": "C14 0 overlaps",
+      "against": "sampling tiny, purposive",
+      "falsifier": "new documents show repeated name"
+    },
+    {
+      "id": "PF-ID20B-15..16",
+      "state": "DOCUMENTARY_NEGATIVE_BASELINE",
+      "claim": "Identity of 2 July2026 entrant names matches later declaration index by literal name, but case suffix numbers 408/409 swap across families, creating 2/2 intentionally selected false numerical joins",
+      "positive": "BOCG D551 and D553, PDF indexed originals",
+      "against": "no external person ID confirmation; source sample constructed after anomaly",
+      "falsifier": "official crosswalk disproves names pairing"
+    },
+    {
+      "id": "PF-ID20B-17..18",
+      "state": "ENGINEERING",
+      "claim": "Typed cross-family references reject numeric-only joins in 8 local tests; module currently not imported by existing HTTP aggregator",
+      "positive": "C17 local tests + C18 static source",
+      "against": "no CI, no live deployment audit",
+      "falsifier": "integration test shows actor route accepts unsafe ID or exact ref tuple collision"
+    },
+    {
+      "id": "PF-ID20B-19",
+      "state": "LEGAL_CONDITIONAL",
+      "claim": "Public institutional reuse generally subject to source, integrity, updating and data-personal conditions; no blanket validation of derived person scoring",
+      "positive": "Congress legal notice and Ley37/2007 art8",
+      "against": "not legal advice / specific licenses unknown",
+      "falsifier": "source-specific legal right and compliant DPA/legal opinion"
+    },
+    {
+      "id": "PF-ID20B-20",
+      "state": "SECURITY_GUARD",
+      "claim": "Release gate denies under absent registry but accepts forged approvals if caller also controls its supposedly trusted registry; integration boundary must be server-owned",
+      "positive": "three executable local observations C20",
+      "against": "no evidence client can reach this parameter via production API",
+      "falsifier": "trusted registry cannot be supplied by any untrusted client, verified by external integration audit"
+    }
+  ],
+  "new_N1": 0,
+  "N2": 0,
+  "N3": 0,
+  "CT2_before": 29,
+  "CT2_after": 29
+}

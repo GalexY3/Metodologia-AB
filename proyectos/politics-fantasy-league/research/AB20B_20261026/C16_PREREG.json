@@ -1,0 +1,43 @@
+{
+  "id": "C16",
+  "parent": "C15",
+  "status": "PREREGISTERED",
+  "A": {
+    "question": "How many false cross-person matches arise when dropping BOCG expediente namespace and using number alone to connect June2026 declarations?",
+    "estimand": "false positive identity joins among two known names and separate expediente families",
+    "unit": "cross-dataset pair of records"
+  },
+  "B": {
+    "H1": "bare numeric suffix produces at least one wrong match across 005/007 groups, while family-qualified key prevents cross-family equivalence",
+    "H0": "no collisions or no cross-person mismatch",
+    "H_other": "same-document name match is not independent legal identity confirmation"
+  },
+  "C": {
+    "data": "published D553 index case numbers for MARÍN and PACHÓN",
+    "baseline": "bare suffix matching",
+    "comparator": "exact source family-qualified provenance + independently stated same name",
+    "falsifier": "suffix pairing yields correct person consistently"
+  },
+  "D": {
+    "method": "local deterministic matching tables, no Actions"
+  },
+  "E": {
+    "frozen": true
+  },
+  "F": {
+    "adversarial": "two-person selected example is constructed after anomaly discovery; not a statistical rate of errors in population"
+  },
+  "G": {
+    "holdout": "same observed source; no external"
+  },
+  "H": {
+    "CT2_before": 29,
+    "grade_0_3": 0
+  },
+  "I": {
+    "ethics": "do not extract financial declarations themselves"
+  },
+  "J": {
+    "next": "choose after measured error"
+  }
+}

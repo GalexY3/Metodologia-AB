@@ -1,0 +1,47 @@
+{
+  "id": "C17",
+  "parent": "C16",
+  "status": "PREREGISTERED",
+  "A": {
+    "question": "Can strict typed institutional reference keys reject numeric ID joins across record families, even when suffix overlaps?",
+    "estimand": "number of accepts of cross-family identity claims lacking verified crosswalk",
+    "unit": "record link candidate"
+  },
+  "B": {
+    "H1": "schema rejects implicit joins by 408/409 and permits person-linked evidence only via separately verified crosswalk",
+    "H0": "accepts incorrect cross-domain equality",
+    "Hother": "too strict schema reduces coverage but is safe"
+  },
+  "C": {
+    "test_cases": [
+      "same suffix different families blocked",
+      "same full composite tuple can be deduplicated within family",
+      "person name equal across families does not grant legal ID",
+      "missing first_public_at does not become document date"
+    ],
+    "budget": "local stdlib test, no Actions",
+    "falsifier": "any cross-family suffix pair approved"
+  },
+  "D": {
+    "code": "source-namespace crosswalk guard and small unit tests to be committed"
+  },
+  "E": {
+    "freeze": true
+  },
+  "F": {
+    "selection": "Designed after observing D553 reversal, developmental not confirmatory"
+  },
+  "G": {
+    "holdout": "synthetic + two observed cases only"
+  },
+  "H": {
+    "CT2_before": 29,
+    "grade_0_3": 0
+  },
+  "I": {
+    "politician_scoring_disabled": true
+  },
+  "J": {
+    "next_after_actual_test": true
+  }
+}

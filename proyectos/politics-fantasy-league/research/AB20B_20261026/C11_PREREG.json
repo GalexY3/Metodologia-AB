@@ -1,0 +1,43 @@
+{
+  "id": "C11",
+  "parent": "C10",
+  "status": "PREREGISTERED",
+  "A": {
+    "question": "Can a minimal source-backed temporal event sample record publication and effective dates, actor-name scope and event kind without pretending verified legal person IDs?",
+    "unit": "publicly sourced event record",
+    "estimand": "schema completeness and source provenance",
+    "truth": "BOCG original event and BOE decree"
+  },
+  "B": {
+    "H1": "strict typed schema can represent a handful real historical events with no canonical IDs",
+    "H0": "event fields insufficient, manual coercion needed",
+    "Hother": "source snippets inadequate for individual SHA integrity"
+  },
+  "C": {
+    "scope": "BOCG D355, D194, D372, D263 and BOE Oct6",
+    "budget": "10-20 rows, separate sources, no download binaries",
+    "falsifier": "at least one source cannot represent distinct dates/kinds"
+  },
+  "D": {
+    "method": "create JSON sample with source urls, cited event dates, null first_public, no legal ID; validate locally without CI"
+  },
+  "E": {
+    "freeze": true
+  },
+  "F": {
+    "adversarial": "source URL is not signature; manual event sample not complete or longitudinally exhaustive"
+  },
+  "G": {
+    "holdout": "EXPLORE"
+  },
+  "H": {
+    "CT2_before": 29,
+    "grade_0_3": 0
+  },
+  "I": {
+    "do_not_enable_scoring": true
+  },
+  "J": {
+    "next": "select largest unexpected schema problem from validation"
+  }
+}

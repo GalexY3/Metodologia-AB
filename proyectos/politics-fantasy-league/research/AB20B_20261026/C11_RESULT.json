@@ -1,0 +1,33 @@
+{
+  "id": "C11",
+  "status": "CLOSED_BOUNDED_CURATED_SAMPLE",
+  "kind": "ENGINEERING_PLUS_DOCUMENTARY",
+  "n_events": 18,
+  "n_notices": 5,
+  "source_ids": [
+    "D355",
+    "D194",
+    "D372",
+    "D263",
+    "D551"
+  ],
+  "invalid_records": [],
+  "distinct_kinds": [
+    "SEAT",
+    "GROUP",
+    "INTERNAL"
+  ],
+  "counts_by_kind": {
+    "SEAT": 10,
+    "GROUP": 4,
+    "INTERNAL": 4
+  },
+  "first_public_timestamps_proven": 0,
+  "immutable_person_ids_proven": 0,
+  "source_sha256_verified_this_cycle": 0,
+  "source_status": "manual selective BOCG transcriptions from official indexed HTML snippets, not comprehensive, not replayed against original bytes",
+  "CT2_before": 29,
+  "CT2_after": 29,
+  "grade_0_3": 0,
+  "next": "C12 detect ambiguous same-day internal role enter/exit without office subtype; schema must reject rather than arbitrarily order"
+}

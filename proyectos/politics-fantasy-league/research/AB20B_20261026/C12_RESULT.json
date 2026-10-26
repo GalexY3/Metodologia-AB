@@ -1,0 +1,35 @@
+{
+  "id": "C12",
+  "status": "CLOSED_BOUNDED_INSTRUMENT_BUG",
+  "type": "EXPERIMENTAL_AB_ENGINEERING",
+  "source": "BOCG-15-D-263",
+  "observed": {
+    "ambiguous_collisions": 2,
+    "which": [
+      {
+        "source_id": "BOCG-15-D-372",
+        "kind": "GROUP",
+        "opposite_changes": [
+          "EXIT",
+          "ENTER"
+        ]
+      },
+      {
+        "source_id": "BOCG-15-D-263",
+        "kind": "INTERNAL",
+        "opposite_changes": [
+          "ENTER",
+          "EXIT"
+        ]
+      }
+    ],
+    "evidence": "Guardiola Salmerón has different offices: Diputación Permanente suplente, Junta de Portavoces adjunta and Junta de Portavoces sustituta; coarse INTERNAL would give same-day contradictions"
+  },
+  "H1": "SUPPORTED 1 opposite change collision in the coarse event schema",
+  "H0": "REFUTED",
+  "adversarial": "A collision arises from collapsing distinct offices, not contradiction in Congress bulletin",
+  "grade_0_3": 0,
+  "CT2_before": 29,
+  "CT2_after": 29,
+  "decision": "C13 add explicit internal office and full original events; prove that keyed state is no longer arbitrary"
+}

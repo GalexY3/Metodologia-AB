@@ -1,0 +1,43 @@
+{
+  "id": "C05",
+  "parent": "C04",
+  "status": "PREREGISTERED",
+  "A": {
+    "question": "Does an official dated transfer of one parliamentary group member affect simultaneously group and internal organs without ending the parliamentary seat?",
+    "estimand": "count kinds of source-documented changes for one group transfer",
+    "unit": "member event across GRUPOS/DIPUTACION/JUNTA",
+    "truth": "original BOCG-15-D-372"
+  },
+  "B": {
+    "H1": "same person has group transfer and internal role removals without PLENO exit",
+    "H0": "transfer entails PLENO exit",
+    "Hother": "some internal removals affect different people same notice"
+  },
+  "C": {
+    "source": "BOCG-15-D-372 07/07/2025",
+    "control": "compare C01 genuine Pleno seat exit",
+    "falsifier": "PLENO exit documented for transfer"
+  },
+  "D": {
+    "method": "type-scoped manual document audit"
+  },
+  "E": {
+    "no_Actions": true
+  },
+  "F": {
+    "risk": "absence of PLENO heading in a bulletin is not proof of seat permanence from external source"
+  },
+  "G": {
+    "holdout": "EXPLORATORY"
+  },
+  "H": {
+    "CT2_before": 29,
+    "grade_0_3": 0
+  },
+  "I": {
+    "interpretation": "no causal political merit"
+  },
+  "J": {
+    "next": "decide after observation"
+  }
+}

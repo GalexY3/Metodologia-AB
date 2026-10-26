@@ -1,0 +1,43 @@
+{
+  "id": "C20",
+  "parent": "C19",
+  "status": "PREREGISTERED",
+  "A": {
+    "question": "Can campaign close 20 AB episodes with inspectable prereg/results, unchanged science CT2, no Actions, no release and no false identity joins?",
+    "estimand": "cycle ledger completeness and six gate denials",
+    "unit": "cycle/source/test artifacts"
+  },
+  "B": {
+    "H1": "all 20 cycles have distinct prereg and result, 0 Actions run, six gates unapproved",
+    "H0": "missing records or unreliable claims",
+    "Hother": "some documentary cases reused same publisher and do not count as external confirmation"
+  },
+  "C": {
+    "instrument": "GitHub source tree path verification + previous local 8 Python tests, no CI",
+    "acceptance": "20 result files, 20 preregs, source citations/uncertainty, no unsupported person scoring",
+    "budget": "zero Actions; tests local only",
+    "falsifier": "any missing prereg/result or enabled automatic workflow"
+  },
+  "D": {
+    "method": "GitHub read-only verification, plus generating CT2 graphics as SVG source and A-J campaign report"
+  },
+  "E": {
+    "status": "PREREGISTERED"
+  },
+  "F": {
+    "adversarial": "paper trail dates and source selection exposure explicit; no 2/3 novelty"
+  },
+  "G": {
+    "external_replication": "NONE"
+  },
+  "H": {
+    "CT2_before": 29,
+    "grade_0_3": 0
+  },
+  "I": {
+    "PFL_V1": "36.35% remains unchanged until hito review"
+  },
+  "J": {
+    "next": "request 20-45 future cycles in O6 only after close"
+  }
+}

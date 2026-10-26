@@ -1,0 +1,42 @@
+{
+  "id": "C06",
+  "parent": "C05",
+  "status": "PREREGISTERED",
+  "A": {
+    "question": "Can a BOCG consist of changes to Diputación Permanente/Junta de Portavoces without any cited PLENO or group-membership transition?",
+    "unit": "public bulletin",
+    "estimand": "number of group/PLENO headings vs internal role headings",
+    "population": "BOCG-15-D-263"
+  },
+  "B": {
+    "H1": "only internal-organ updates visible",
+    "H0": "also Pleno/group-member change",
+    "Hother": "internal role change may be consequence of external event not listed"
+  },
+  "C": {
+    "source": "BOCG-15-D-263 dated 02/01/2025",
+    "negative_control": "avoid treating same-person changes in roles as changes of party group"
+  },
+  "D": {
+    "method": "inspect title, content sections and dates, no Actions"
+  },
+  "E": {
+    "freeze": true
+  },
+  "F": {
+    "adversarial": "absence from one issue ≠ proof of no event globally"
+  },
+  "G": {
+    "holdout": "EXPLORATORY"
+  },
+  "H": {
+    "CT2_before": 29,
+    "grade_0_3": 0
+  },
+  "I": {
+    "scope": "source-classification test"
+  },
+  "J": {
+    "next": "after observation"
+  }
+}
