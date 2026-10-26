@@ -1,0 +1,39 @@
+{
+  "id": "C07",
+  "A": {
+    "question": "Does the contemporaneous BOCG notice independently document the orphan rollcall name or succession/group events on April 9 2024?",
+    "estimand": "independent official 11 April publication presence of orphan literal name, plus count of dated parliamentary roster changes, not membership scoring"
+  },
+  "B": {
+    "H1": "contemporaneous BOCG includes orphan name and/or documented group-change chronology",
+    "H0": "BOCG lacks both, remains nonidentifying",
+    "H_other": "historical vote label is an alternate name not contained in known bulletin"
+  },
+  "C": {
+    "source": "BOCG-15-D-121 original official HTML, 2024-04-11; roll call April9; site HTTPS",
+    "budget": "two document downloads <=4 MB",
+    "falsifier": "no matching document nor parliament change notice"
+  },
+  "D": {
+    "code": "scripts/ab20_bocg_event.py",
+    "schema": "original HTML from Congress and exact date clauses, no names stored"
+  },
+  "E": {
+    "preregister_before_run": true
+  },
+  "F": {
+    "adversarial": "document proves publication but not first-public of prior vote; changes may concern OTHER persons"
+  },
+  "G": {
+    "holdout": "source new independent publication channel but same institution"
+  },
+  "H": {
+    "CT2_before": 22
+  },
+  "I": {
+    "grade_expected": 0
+  },
+  "J": {
+    "decision_after_document_provenance": true
+  }
+}
