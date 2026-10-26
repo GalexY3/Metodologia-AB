@@ -1,6 +1,6 @@
 {
   "campaign": "PF-AB32",
-  "cycles_closed": 2,
+  "cycles_closed": 3,
   "cycles": [
     {
       "id": "C01",
@@ -78,19 +78,50 @@
       ],
       "decision": "C03 audit exact name overlap, date format and term temporal integrity.",
       "status": "CLOSED_BOUNDED"
+    },
+    {
+      "id": "C03",
+      "hypotheses": {
+        "H1": "Temporal dates consistent, sets distinct by normalized names",
+        "H0": "Dates malformed, overlap or contradiction"
+      },
+      "observed": "2026-10-26T14:43:26Z",
+      "instrument": "audit_congress_temporal.py native CI run 40342240487",
+      "result": {
+        "active": 137,
+        "discharged": 275,
+        "exact_name_overlap": 0,
+        "duplicate_names_within_each": 0,
+        "valid_start_active": 137,
+        "valid_start_and_end_discharged": 275,
+        "inverted_intervals": 0,
+        "latest_discharged_on": "2026-10-06"
+      },
+      "priors_update": [
+        {
+          "id": "PF-32-03",
+          "proposition": "Congress active and discharged JSON are disjoint by exact normalized name and contain parseable ordered period dates",
+          "state": "supported snapshot only; active meaning not independently adjudicated",
+          "evidence": "CI run 40342240487 C03_TEMPORAL",
+          "counterevidence": "no explicit person IDs; potential homonyms across legislatures; unusual dissolution status",
+          "falsifier": "different snapshot with overlapping rows or date inversions"
+        }
+      ],
+      "adversarial": "No duplication observed is not proof of legal uniqueness; 137 might be members remaining after dissolution but 137 vs historical FAQ 68 requires adjudication.",
+      "decision": "C04 move to individually recorded official parliamentary votes; audit source format before join.",
+      "status": "CLOSED_BOUNDED"
     }
   ],
   "next_cycle_prereg": {
-    "id": "C03",
-    "chosen_after": "C02 proved date fields but no stable identifier",
-    "question": "Is exact-name overlap between current and discharged cohorts measurable, and are all term start/end fields parseable and logically ordered?",
+    "id": "C04",
+    "chosen_after": "C03 temporal data clean, but identity key absent and no temporal event links",
+    "question": "Does one historical official Congress roll-call JSON contain per-person choices with a documented source/legislature/date and possible stable IDs?",
     "hypotheses": {
-      "H1": "No contradictory duplicate active records and end dates after start",
-      "H0": "Overlap or date errors preclude cohort",
-      "H2": "Data temporally reflects post-dissolution residual status"
+      "H1": "individual votes and identifiers are machine-readable",
+      "H0": "only aggregate vote totals or inaccessible artifact"
     },
-    "method": "fresh-original re-fetch, normalize name internally without exporting it, validate dates and joint counts",
-    "criterion": "aggregate anomalies recorded; if ambiguous then isolate nonambiguous active rows as source-only, not reconciled identity",
+    "method": "capture one exact official JSON linked from 2026-07-23 public voting page under verified TLS; inspect nested type/key structure without names or choices, hash raw source; preserve ephemeral only",
+    "criterion": "if per-person rows exist, C05 inspect join feasibility; otherwise pivot to institutional aggregate events",
     "status": "PREREGISTERED_BEFORE_TEST"
   }
 }
