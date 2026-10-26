@@ -21,6 +21,7 @@ from .progress_api import progress_status
 from .candidacy_api import status as official_candidacies_status
 from .nomination_atlas import status as nomination_atlas_status
 from .nomination_quality import audit as nomination_quality_audit
+from .official_appointments import status as official_appointments_status
 
 HERE=Path(__file__).resolve().parent
 WEB=HERE/'web'
@@ -77,6 +78,8 @@ def handler_factory(db_path: Path, pilot_path: Path | None, field_path: Path | N
                     atlas["quarantined_observed_headings"]=None
                     atlas["quarantine_provenance_status"]="UNVERIFIED_OR_UNAVAILABLE"
                 return self.reply(200,atlas)
+            if route == '/api/official-appointments':
+                return self.reply(200,official_appointments_status())
             if route == '/api/verified-candidacies':
                 return self.reply(200,official_candidacies_status())
             if route == '/api/electoral-atlas':
