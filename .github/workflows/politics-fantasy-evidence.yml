@@ -227,6 +227,9 @@ jobs:
       - name: C18 independent third date group and role concordance
         working-directory: proyectos/politics-fantasy-league
         run: python scripts/audit_third_session.py
+      - name: C19 onward sequential adaptive historical-validation source investigation
+        working-directory: proyectos/politics-fantasy-league
+        run: python scripts/ab32_adaptive_survey.py
       - name: C09 assert real vote sources normalize to identical calendar date
         working-directory: proyectos/politics-fantasy-league
         run: |

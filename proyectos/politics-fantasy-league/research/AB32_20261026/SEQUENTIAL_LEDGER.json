@@ -1,6 +1,6 @@
 {
   "campaign": "PF-AB32",
-  "cycles_closed": 17,
+  "cycles_closed": 18,
   "cycles": [
     {
       "id": "C01",
@@ -581,18 +581,48 @@
       ],
       "decision": "C18 test historic September 10 source versus latest roster and older group mapping with no person identities published.",
       "status": "CLOSED_BOUNDED"
+    },
+    {
+      "id": "C18",
+      "hypotheses": {
+        "H1": "Third date Sep10 valid 350-name roster+group/period transfer",
+        "H0": "new session breaks joining or tally"
+      },
+      "observed": "2026-10-26T15:24:04Z",
+      "instrument": "audit_third_session.py official 196 vote1 and 412 roster in GHA 40348888799",
+      "result": {
+        "official_vote_rows": 350,
+        "source_scoped_name_match": 350,
+        "invalid_role_period": 0,
+        "group_conflicts": 0,
+        "aggregate_tally_match": true
+      },
+      "adversarial": "Three dates with same membership cannot imply legal universal identity, nor stable influence scores. Remaining dates require observed-only sampling and source-level uncertainty.",
+      "priors_update": [
+        {
+          "id": "PF-32-18",
+          "proposition": "Source-scoped roster-vote matches and dated party-group mappings reproduced in independent Sep10, Sep30, Jul23 sessions",
+          "state": "bounded supported 3 sessions, not representative",
+          "evidence": "40348888799 C18_THIRD_SESSION",
+          "counterevidence": "three summer/autumn 2026 dates and same legislature, correlated names",
+          "falsifier": "older sessions exhibit ID/group/date changes"
+        }
+      ],
+      "decision": "C19 source-stratified adaptive historical validation; select each subsequent cycle only after preceding observation and posterior update, not fixed 14 inputs.",
+      "status": "CLOSED_BOUNDED"
     }
   ],
   "next_cycle_prereg": {
-    "id": "C18",
-    "chosen_after": "C17 date-directed discovery of third session196 original success",
-    "question": "Do temporal interval and exact name/group source concordance extend to the September10 session196 original while retaining correct tally?",
+    "id": "C19",
+    "block": "FOLLOWUP20_C07",
+    "chosen_after": "C18 third date passes, 14 further cycles authorized, and C16 full date index failed",
+    "question": "At an adaptively chosen distinct pre-2026 session date, does authentic official Congress JSON exist and support temporal 412-roster/group concordance?",
     "hypotheses": {
-      "H1": "350/350 source-scoped matches, no group/period violations and tally fits",
-      "H0": "third session has missing or inconsistent roster persons"
+      "H1": "date-targeted official source exists, original JSON reconciles with publisher tally, name/role/group checks pass",
+      "H0": "date unavailable, source drift or identity/group inconsistency"
     },
-    "method": "real original Sept10 + earlier official active/discharged roster + July group mapping; compute only aggregate quality",
-    "criterion": "record match, period/group conflicts and tally, then choose additional acquisition policy based on outcome",
+    "method": "Versioned sequential decision-policy script chooses only C19 now, records prereg+source result, updates Beta pseudoprior for source capture and conditional group/temporal validity, then chooses C20 question/target based on C19 outcome; same process up to C32 without preselecting dates. Stop early for repeated source failure. Script uploads complete bounded per-cycle A–J results.",
+    "criterion": "Each cycle records real original source URL+SHA or STOP_R5, zero names exported, no first_public inference; source hashes and date/session consistency checked. Bayesian pseudopriors only for sampling diagnostics, no inference population score.",
     "status": "PREREGISTERED_BEFORE_TEST"
   },
   "first_block": {
