@@ -3,10 +3,14 @@ name: Politics Fantasy evidence checks
 on:
   workflow_dispatch:
   push:
+    branches:
+      - main
     paths:
       - 'proyectos/politics-fantasy-league/**'
       - '.github/workflows/politics-fantasy-evidence.yml'
   pull_request:
+    branches:
+      - main
     paths:
       - 'proyectos/politics-fantasy-league/**'
 
