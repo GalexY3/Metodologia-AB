@@ -203,6 +203,9 @@ jobs:
       - name: C06 check temporal validity of one-to-one vote name linkage
         working-directory: proyectos/politics-fantasy-league
         run: python scripts/audit_congress_vote_temporal.py
+      - name: C07 audit parliamentary group name concordance
+        working-directory: proyectos/politics-fantasy-league
+        run: python scripts/audit_group_concordance.py
       - name: Record ephemeral raw originals and bounded manifest
         if: always()
         uses: actions/upload-artifact@v4
