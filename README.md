@@ -63,3 +63,12 @@ La ampliación O7 de AB incorpora el modo **AB-P** orientado a proyectos, **AB-R
 - [Registro A–J por ciclo, C01–C20](research/AB_O7_ATLAS20_20261026/LEDGER.json)
 
 El visor/prototipo v0.2 se entregó localmente en la conversación; **no se ha incorporado su código completo a este repositorio**, por lo que no hay que confundir estos documentos con un despliegue sincronizado.
+
+
+### AB Atlas 0.3 — mapa vivo editable con ChatGPT
+
+- [Código completo y guía de AB Atlas](ab_atlas/README.md): modo AB-P/AB-H, HTML interactivo, CLI, pruebas y actualizaciones incrementales.
+- [Contrato de sincronización de bajo coste](ab_atlas/docs/AB_ATLAS_V03_CHATGPT_SYNC.md): al cierre de X ciclos AB, añadir solo un pequeño delta `ops`; recuperar `CURRENT.md` y subgrafo en vez de todo el historial.
+- [Mapa y estado inicial de Politics Fantasy](proyectos/politics-fantasy-league/ab_atlas/README.md): `seed.json`, visor autónomo, `updates/`, gates críticos y briefing corto.
+
+**Estado:** piloto operativo, con pruebas instrumentales locales; no mejora causalmente validada frente a herramientas competentes. AB sigue siendo mutable, autocorrectivo y sustituible.
