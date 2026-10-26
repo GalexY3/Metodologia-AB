@@ -132,3 +132,14 @@ Sin sustituir los priors anteriores se incorporan **PF-R01–PF-R06**, con proce
 | PF-R06 | HTTPS institucional y SHA-256 no sustituyen verificación de licencias ni firma del editor | Dos bloqueos R5 documentados |
 
 [Ledger A–J 20 ciclos](FOCUS20R_20261026/LEDGER.json) · [Preregistro previo](FOCUS20R_20261026/PREREG.json) · [Informe](FOCUS20R_20261026/REPORT.md). N1/N2/N3 nuevos 0. VSDS 1/3. CT2 multiactor 20/100 y predictiva 24/100, sin elevar valores.
+
+
+## Apéndice acumulativo · PF-SEQ32S 26/10/2026, evidencia secuencial parcial
+**No sustituyen ninguna fila PF-P, PF-R ni campañas anteriores.** [Priors completos PF-S01–S03](SEQ32S_20261026/PRIORS_DELTA.md), [ledger A–J y C05 pendiente](SEQ32S_20261026/LEDGER.json).
+- **PF-S01 (exploratorio):** un buscador oficial RPP puede existir sin un dump RPP original accesible. Portal temporalmente inaccesible no es evidencia de inexistencia.
+- **PF-S02 (original negativo):** URL de julio 2026 de Congreso indicada por catálogo/motor devuelve HTTP 404 en CI nativa de octubre; reducir confianza en permanencia de la ruta, no en valor intrínseco de datos legislativos.
+- **PF-S03 (original positivo acotado):** BOE-A-2023-23543 autentificado y conciliado 22/22 nombramientos, 193759 bytes SHA256 16f05bba24508af229870b68dbfb72ba258e62416713a8cfe5c49c70ba792efe. Demuestra 22 **actos de 2023**, no 22 ministros en activo a octubre de 2026.
+- **PF-S04 (ingeniería):** snapshot derivado con digest Git fijo y reader API de campos estrictos rechaza manipulaciones y puntuaciones (fuente y suite Python CI 40343693538 exitosas). El control es técnico, no una certificación de reutilización nominativa, vigencia jurídica ni capacidad multiusuario.
+- **PF-S05 (en verificación, no actualizar confianza todavía):** releer PDF original con digest exacto en vez de confiar solo en 22 cadenas iguales. Esperar CI para adjudicar.
+
+Ninguno constituye nuevo N1/N2/N3 o justifica subir progreso PFL-V1 rev3 36,350% sin auditoría independiente de hitos. No usar pertenencia a grupos/coaliciones para inferir afiliación legal o atributos personales.

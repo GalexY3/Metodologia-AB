@@ -45,7 +45,11 @@ jobs:
       - name: Python local integration
         run: |
           python -m pip install pytest
-          PYTHONPATH=src python -m pytest -q tests/test_actor_api.py tests/test_product.py tests/test_evidence_warehouse_status.py tests/test_evidence_http_smoke.py tests/test_progress_api.py tests/test_progress_http.py tests/test_capture_official_sources.py tests/test_verify_boe_table_pdf.py tests/test_audit_proclaimed_candidates.py tests/test_candidacy_api.py tests/test_audit_boe_nominations_all.py tests/test_nomination_atlas.py tests/test_nomination_quality.py tests/test_boe_quarantine.py
+          PYTHONPATH=src python -m pytest -q tests/test_actor_api.py tests/test_product.py tests/test_evidence_warehouse_status.py tests/test_evidence_http_smoke.py tests/test_progress_api.py tests/test_progress_http.py tests/test_capture_official_sources.py tests/test_verify_boe_table_pdf.py tests/test_audit_proclaimed_candidates.py tests/test_candidacy_api.py tests/test_audit_boe_nominations_all.py tests/test_nomination_atlas.py tests/test_nomination_quality.py tests/test_boe_quarantine.py tests/test_congress_members.py tests/test_verify_boe_cabinet.py tests/test_official_appointments.py
+      - name: Probe authentic Congreso historical JSON (known 404; explicit STOP_R5)
+        continue-on-error: true
+        run: |
+          PYTHONPATH=src python scripts/probe_congress_original.py
       - name: Secondary source fetch, pinned revision verification
         run: |
           curl -fsSL --retry 3 --max-time 35 -o /tmp/pf-202307.csv https://raw.githubusercontent.com/anerodata/data-elecciones-congreso-espana/main/202307.csv
@@ -138,6 +142,12 @@ jobs:
           else
             echo 'STOP_R5: original PDF unavailable, independent source replay not performed'
           fi
+      - name: Reextract and verify 22 November 2023 BOE minister appointments
+        run: |
+          if ! command -v pdftotext >/dev/null 2>&1; then
+            sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils
+          fi
+          python scripts/verify_boe_cabinet.py
       - name: Preserve short-lived internal audit manifest and authentic raw captures
         uses: actions/upload-artifact@v4
         with:
