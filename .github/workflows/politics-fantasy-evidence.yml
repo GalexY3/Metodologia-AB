@@ -41,7 +41,7 @@ jobs:
       - name: Python local integration
         run: |
           python -m pip install pytest
-          PYTHONPATH=src python -m pytest -q tests/test_actor_api.py tests/test_product.py tests/test_evidence_warehouse_status.py tests/test_evidence_http_smoke.py tests/test_progress_api.py tests/test_progress_http.py tests/test_capture_official_sources.py tests/test_verify_boe_table_pdf.py
+          PYTHONPATH=src python -m pytest -q tests/test_actor_api.py tests/test_product.py tests/test_evidence_warehouse_status.py tests/test_evidence_http_smoke.py tests/test_progress_api.py tests/test_progress_http.py tests/test_capture_official_sources.py tests/test_verify_boe_table_pdf.py tests/test_audit_proclaimed_candidates.py
       - name: Secondary source fetch, pinned revision verification
         run: |
           curl -fsSL --retry 3 --max-time 35 -o /tmp/pf-202307.csv https://raw.githubusercontent.com/anerodata/data-elecciones-congreso-espana/main/202307.csv
@@ -89,7 +89,7 @@ jobs:
           import json,hashlib
           base=Path('/tmp/pf-official-source-capture')
           x=json.loads((base/'capture_manifest.json').read_text())
-          assert x['original_download_attempts']==4
+          assert x['original_download_attempts']==5
           assert x['raw_downloads_success']==sum(bool(v['original_binary_captured']) for v in x['sources'])
           for row in x['sources']:
               if not row['original_binary_captured']:
@@ -109,6 +109,13 @@ jobs:
             python scripts/verify_boe_table_pdf.py /tmp/pf-official-source-capture/boe_jec_2023_original.pdf research/BRANCH30I_20261026/JEC_2023_TABLE_I_TRANSCRIPTION.psv --output /tmp/pf-official-source-capture/boe_pdf_table_audit.json
           else
             echo 'BOE original unavailable; STOP_R5 PDF full comparison'
+          fi
+      - name: Audit eight Albacete proclaimed Congress lists from original BOE 15066
+        run: |
+          if [ -f /tmp/pf-official-source-capture/boe_2023_proclaimed_lists.pdf ]; then
+            python scripts/audit_proclaimed_candidates.py /tmp/pf-official-source-capture/boe_2023_proclaimed_lists.pdf /tmp/pf-official-source-capture/albacete_candidacies_2023.json
+          else
+            echo "STOP_R5: proclaimed candidacies original unavailable"
           fi
       - name: Preserve short-lived internal audit manifest and authentic raw captures
         uses: actions/upload-artifact@v4
