@@ -1,0 +1,41 @@
+{
+  "id": "C14",
+  "parent": "C13",
+  "status": "PREREGISTERED",
+  "A": {
+    "question": "Can same text for deputy name in two separately sourced documents be mistakenly fused into one canonical person?",
+    "estimand": "cross-source identity merge count under naive name-only and source-scoped composite-key baseline"
+  },
+  "B": {
+    "H1": "name-only merge occurs; source-scoped key avoids unsafe cross-document inference",
+    "H0": "both methods keep separated",
+    "Hother": "source scoping sacrifices true links (false nonmatch)"
+  },
+  "C": {
+    "source": "curated corpus multiple BOCGs",
+    "negative_control": "no source-backed immutable person ID in curated event records",
+    "falsifier": "source-scoped grouping merges separate source IDs"
+  },
+  "D": {
+    "method": "deterministic local repeated-name audit; no Actions"
+  },
+  "E": {
+    "freeze": true
+  },
+  "F": {
+    "adversarial": "source scoping prevents false positives but cannot reconstruct longitudinal person history"
+  },
+  "G": {
+    "holdout": "same curated development data"
+  },
+  "H": {
+    "CT2_before": 29,
+    "grade_0_3": 0
+  },
+  "I": {
+    "next": "bounded schema, no scientific discovery"
+  },
+  "J": {
+    "after_observation": true
+  }
+}

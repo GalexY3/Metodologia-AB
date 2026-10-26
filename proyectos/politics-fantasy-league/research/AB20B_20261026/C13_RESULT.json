@@ -1,0 +1,27 @@
+{
+  "id": "C13",
+  "status": "CLOSED_BOUNDED_ENGINEERING_REPAIR",
+  "n_source_events": 20,
+  "old_collisions": 2,
+  "unresolved_new_collisions": 0,
+  "source_from": "BOCG D263 and D372 public official section text",
+  "manual_additions": [
+    {
+      "source": "BOCG-15-D-263",
+      "key": "JUNTA_PORTAVOCES_ADJUNTO"
+    },
+    {
+      "source": "BOCG-15-D-372",
+      "key": "JUNTA_PORTAVOCES_ADJUNTO"
+    }
+  ],
+  "group_transfer_targets": [
+    "GROUP:GSUMAR",
+    "GROUP:GMx"
+  ],
+  "adversarial": "Role subtype is a curated documentary interpretation; event corpus is NOT a certified official complete source and inherited originally faulty example. No group memberships on both sides without time-resolved state.",
+  "grade_0_3": 0,
+  "CT2_before": 29,
+  "CT2_after": 29,
+  "next": "C14 test that this local schema does not merge same normalised person name between different source documents"
+}
