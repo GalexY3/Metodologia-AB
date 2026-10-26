@@ -1,0 +1,46 @@
+{
+  "id": "C10",
+  "parent": "C09",
+  "A": {
+    "question": "Did the officially documented July3 Sumar→Mixto case change original voting group code between June12 and Sep10 2025 while other mismatch control did not?",
+    "estimand": "within-person source group-code switch across dated original rollcalls; one treated/document-matched, one negative-control unmatched"
+  },
+  "B": {
+    "H1": "treated GSUMAR→GMx and control no corresponding switch",
+    "H0": "treated same group before/after",
+    "H_other": "no person vote in one date or multiple source spellings, inconclusive"
+  },
+  "C": {
+    "instruments": [
+      "2024 Apr9 vote1 original",
+      "2026 Jul23 vote1 original",
+      "2025 June12 vote1 original",
+      "2025 Sep10 vote1 original",
+      "2025 July7 BOCG original"
+    ],
+    "budget": "5 official HTTPS originals, each under5MB",
+    "falsifier": "treated remains same vote group or control also changes identically"
+  },
+  "D": {
+    "script": "scripts/ab20_group_before_after.py",
+    "privacy": "no personal names released; group abbreviations are official public categories"
+  },
+  "E": {
+    "prereg_commit_first": true
+  },
+  "F": {
+    "adversarial": "publication and event on different dates, observed sequence descriptive not causation of politics"
+  },
+  "G": {
+    "holdout": "same cases used to generate hypothesis; independent dates but not fully unexposed group-change period"
+  },
+  "H": {
+    "CT2_before": 24
+  },
+  "I": {
+    "level_0_3": "0 until independent novelty gate"
+  },
+  "J": {
+    "next_after_observation": true
+  }
+}
