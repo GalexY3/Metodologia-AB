@@ -230,6 +230,9 @@ jobs:
       - name: C19 onward sequential adaptive historical-validation source investigation
         working-directory: proyectos/politics-fantasy-league
         run: python scripts/ab32_adaptive_survey.py
+      - name: C24 verify historically indexed real 2024 April session
+        working-directory: proyectos/politics-fantasy-league
+        run: python scripts/probe_indexed_2024.py
       - name: C09 assert real vote sources normalize to identical calendar date
         working-directory: proyectos/politics-fantasy-league
         run: |
