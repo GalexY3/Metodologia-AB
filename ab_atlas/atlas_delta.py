@@ -132,7 +132,7 @@ def apply_one(doc, batch, i, op):
         p=doc.get('project_contract');require(isinstance(p,dict),'Scope requiere proyecto')
         require(bool(op.get('reason')),'Cambio de alcance sin justificación')
         prev=p['scope_version'];nxt=op.get('version')
-        require(bool(nxt) and nxt!=prev,'Versión scope distinta y explícita obligatoria')
+        require(bool(nxt) and nxt!=prev and nxt not in {v.get('version') for v in p.get('scope_history',[])},'Versión scope nueva y explícita obligatoria')
         p['scope_version']=nxt
         if 'outcome' in op:p['outcome']=op['outcome']
         p['scope_history'].append({'version':nxt,'previous':prev,'at':batch['at'],'reason':op['reason']})
@@ -178,7 +178,7 @@ def brief(doc, batches, count=8, events=6):
         'states':dict(Counter(n['status'] for n in doc['nodes'])),'scope':(p or {}).get('scope_version'),
         'readiness':abmap.gate_readiness(doc) if p else None, 'next_actions':actions,
         'blocked':blocked,'open_complaints':complaints,
-        'recent_events':doc['events'][-events:] if events else []}
+        'recent_events':[{'at':x.get('at'), 'action':x.get('action'), 'id':x.get('id')} for x in doc['events'][-events:]] if events else []}
 
 
 def cli():
