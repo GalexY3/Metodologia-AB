@@ -1,0 +1,1186 @@
+{
+  "campaign": "PF-FOCUS20R",
+  "authorized": 20,
+  "preregistered": 20,
+  "closed_bounded": 16,
+  "closed_STOP_R5": 2,
+  "pending_ci": 2,
+  "independent_empirical_experiments": 0,
+  "source_election": "2023-07-23",
+  "document": "BOE-A-2023-15066",
+  "document_sha256": "d1c179fcfab9889df272753ad3d44513f86cec703805219834b7d048ef0eda20",
+  "validation": "retrospective technical/source comparison only, not independent prospective research",
+  "baseline_scope": "PFL-V1-v3",
+  "baseline_progress_pct": 36.35,
+  "no_new_N1_N2_N3": [
+    0,
+    0,
+    0
+  ],
+  "VSDS": 1,
+  "CT2_multiactor": 20,
+  "CT2_predictive": 24,
+  "main_verified_ci_run": 40334678838,
+  "cycles": [
+    {
+      "id": "PF-FOCUS20R-P01",
+      "index": 1,
+      "stage": "original",
+      "status": "CLOSE_ACCEPTED_BOUNDED",
+      "A": {
+        "question": "Revalidate exact BOE 15066 PDF digest and transfer size",
+        "unit": "BOE-A-2023-15066 2023 Congress electoral text heading, source or local test",
+        "estimand": "Known SHA256 and original bytes in native workflow, or STOP"
+      },
+      "B": {
+        "H1": "A narrowly bounded source/software claim can be validated without inventing real party or political-person identities",
+        "H0": "The observed result may be parser-artifact, ambiguous legal status or inadequate source evidence",
+        "rival": "A source-cleaning script can mislead without independent source/document assurance"
+      },
+      "C": {
+        "source_exposure": "RETROSPECTIVE_ADAPTIVE_SINGLE_ORIGINAL",
+        "method": "Pre-defined FOCUS20R protocol; repair decisions after exposure not independent prereg confirmations",
+        "acceptance": "Known SHA256 and original bytes in native workflow, or STOP"
+      },
+      "D": {
+        "instrument": "scripts/capture_official_sources.py",
+        "repository": "GalexY3/Metodologia-AB",
+        "original_source_sha256": "d1c179fcfab9889df272753ad3d44513f86cec703805219834b7d048ef0eda20"
+      },
+      "E": {
+        "status": "PASS_AUTHENTIC_ORIGINAL",
+        "observed": "CI source captures BOE original PDF, 4,298,580 bytes; SHA-256 d1c179fc...ef0eda20 verified, source run 40334678838",
+        "main_CI_run": 40334678838,
+        "latest_keyboard_CI": "PENDING_CHECK"
+      },
+      "F": {
+        "adversarial_challenge": "Independent publisher signature absent; HTTPS/byte SHA does not prove authorship cryptographically"
+      },
+      "G": {
+        "replication": "SAME_SOURCE_REEXTRACTED_NO_NEW_ELECTION_OR_HUMAN_SAMPLE",
+        "external_scientific_replication": false
+      },
+      "H": {
+        "prior_update": "Bounded instrumental/source belief only; no posterior numeric or political-behavior effect",
+        "evidence_against": "Independent publisher signature absent; HTTPS/byte SHA does not prove authorship cryptographically"
+      },
+      "I": {
+        "kind": "DOCUMENTARY_OR_ENGINEERING",
+        "new_N1_N2_N3": [
+          0,
+          0,
+          0
+        ],
+        "VSDS": 1,
+        "CT2_multiactor": 20,
+        "CT2_predictive": 24
+      },
+      "J": {
+        "decision": "CLOSE_BOUNDED_NO_SCIENTIFIC_INFERENCE",
+        "next_evidence": "Independent publisher signature absent; HTTPS/byte SHA does not prove authorship cryptographically"
+      }
+    },
+    {
+      "id": "PF-FOCUS20R-P02",
+      "index": 2,
+      "stage": "parsing",
+      "status": "CLOSE_ACCEPTED_BOUNDED",
+      "A": {
+        "question": "Certify 52 territorial commission headings without treating them as complete lists",
+        "unit": "BOE-A-2023-15066 2023 Congress electoral text heading, source or local test",
+        "estimand": "All 52 headings recognized; national completeness separately false"
+      },
+      "B": {
+        "H1": "A narrowly bounded source/software claim can be validated without inventing real party or political-person identities",
+        "H0": "The observed result may be parser-artifact, ambiguous legal status or inadequate source evidence",
+        "rival": "A source-cleaning script can mislead without independent source/document assurance"
+      },
+      "C": {
+        "source_exposure": "RETROSPECTIVE_ADAPTIVE_SINGLE_ORIGINAL",
+        "method": "Pre-defined FOCUS20R protocol; repair decisions after exposure not independent prereg confirmations",
+        "acceptance": "All 52 headings recognized; national completeness separately false"
+      },
+      "D": {
+        "instrument": "scripts/audit_boe_nominations_all.py",
+        "repository": "GalexY3/Metodologia-AB",
+        "original_source_sha256": "d1c179fcfab9889df272753ad3d44513f86cec703805219834b7d048ef0eda20"
+      },
+      "E": {
+        "status": "PASS_BOUNDED_DOCUMENT",
+        "observed": "All 52 provincial headings in actual original extraction; only 25 pass strict parser; 27 excluded from complete enumerations",
+        "main_CI_run": 40334678838,
+        "latest_keyboard_CI": "PENDING_CHECK"
+      },
+      "F": {
+        "adversarial_challenge": "Document section coverage is not a verified national census"
+      },
+      "G": {
+        "replication": "SAME_SOURCE_REEXTRACTED_NO_NEW_ELECTION_OR_HUMAN_SAMPLE",
+        "external_scientific_replication": false
+      },
+      "H": {
+        "prior_update": "Bounded instrumental/source belief only; no posterior numeric or political-behavior effect",
+        "evidence_against": "Document section coverage is not a verified national census"
+      },
+      "I": {
+        "kind": "DOCUMENTARY_OR_ENGINEERING",
+        "new_N1_N2_N3": [
+          0,
+          0,
+          0
+        ],
+        "VSDS": 1,
+        "CT2_multiactor": 20,
+        "CT2_predictive": 24
+      },
+      "J": {
+        "decision": "CLOSE_BOUNDED_NO_SCIENTIFIC_INFERENCE",
+        "next_evidence": "Document section coverage is not a verified national census"
+      }
+    },
+    {
+      "id": "PF-FOCUS20R-P03",
+      "index": 3,
+      "stage": "quality",
+      "status": "CLOSE_ACCEPTED_BOUNDED",
+      "A": {
+        "question": "Quarantine 27 sections with gaps including their partial observations",
+        "unit": "BOE-A-2023-15066 2023 Congress electoral text heading, source or local test",
+        "estimand": "No gap-filled list created; incomplete labels remain under review"
+      },
+      "B": {
+        "H1": "A narrowly bounded source/software claim can be validated without inventing real party or political-person identities",
+        "H0": "The observed result may be parser-artifact, ambiguous legal status or inadequate source evidence",
+        "rival": "A source-cleaning script can mislead without independent source/document assurance"
+      },
+      "C": {
+        "source_exposure": "RETROSPECTIVE_ADAPTIVE_SINGLE_ORIGINAL",
+        "method": "Pre-defined FOCUS20R protocol; repair decisions after exposure not independent prereg confirmations",
+        "acceptance": "No gap-filled list created; incomplete labels remain under review"
+      },
+      "D": {
+        "instrument": "data/observatory/boe_2023_quarantine_unresolved.json",
+        "repository": "GalexY3/Metodologia-AB",
+        "original_source_sha256": "d1c179fcfab9889df272753ad3d44513f86cec703805219834b7d048ef0eda20"
+      },
+      "E": {
+        "status": "PASS_RECOVERED_NONCERTIFIED",
+        "observed": "47/47 original CI log segments reconstructed; 27 quarantine sections and 278 public headings stored separately; missing positions explicitly retained",
+        "main_CI_run": 40334678838,
+        "latest_keyboard_CI": "PENDING_CHECK"
+      },
+      "F": {
+        "adversarial_challenge": "Cannot recover absent ordinal labels nor certify each heading legally"
+      },
+      "G": {
+        "replication": "SAME_SOURCE_REEXTRACTED_NO_NEW_ELECTION_OR_HUMAN_SAMPLE",
+        "external_scientific_replication": false
+      },
+      "H": {
+        "prior_update": "Bounded instrumental/source belief only; no posterior numeric or political-behavior effect",
+        "evidence_against": "Cannot recover absent ordinal labels nor certify each heading legally"
+      },
+      "I": {
+        "kind": "DOCUMENTARY_OR_ENGINEERING",
+        "new_N1_N2_N3": [
+          0,
+          0,
+          0
+        ],
+        "VSDS": 1,
+        "CT2_multiactor": 20,
+        "CT2_predictive": 24
+      },
+      "J": {
+        "decision": "CLOSE_BOUNDED_NO_SCIENTIFIC_INFERENCE",
+        "next_evidence": "Cannot recover absent ordinal labels nor certify each heading legally"
+      }
+    },
+    {
+      "id": "PF-FOCUS20R-P04",
+      "index": 4,
+      "stage": "quality",
+      "status": "CLOSE_ACCEPTED_BOUNDED",
+      "A": {
+        "question": "Differentiate 16 clean extracted sections",
+        "unit": "BOE-A-2023-15066 2023 Congress electoral text heading, source or local test",
+        "estimand": "No-known-notice group explicitly distinct from rest"
+      },
+      "B": {
+        "H1": "A narrowly bounded source/software claim can be validated without inventing real party or political-person identities",
+        "H0": "The observed result may be parser-artifact, ambiguous legal status or inadequate source evidence",
+        "rival": "A source-cleaning script can mislead without independent source/document assurance"
+      },
+      "C": {
+        "source_exposure": "RETROSPECTIVE_ADAPTIVE_SINGLE_ORIGINAL",
+        "method": "Pre-defined FOCUS20R protocol; repair decisions after exposure not independent prereg confirmations",
+        "acceptance": "No-known-notice group explicitly distinct from rest"
+      },
+      "D": {
+        "instrument": "src/politics_fantasy/nomination_atlas.py",
+        "repository": "GalexY3/Metodologia-AB",
+        "original_source_sha256": "d1c179fcfab9889df272753ad3d44513f86cec703805219834b7d048ef0eda20"
+      },
+      "E": {
+        "status": "PASS_NO_KNOWN_NOTICE",
+        "observed": "16 accepted sections with 155 headings are without parser-detected no-proclamation notices",
+        "main_CI_run": 40334678838,
+        "latest_keyboard_CI": "PENDING_CHECK"
+      },
+      "F": {
+        "adversarial_challenge": "Absence of detected warning is not independent legal proclamation validation"
+      },
+      "G": {
+        "replication": "SAME_SOURCE_REEXTRACTED_NO_NEW_ELECTION_OR_HUMAN_SAMPLE",
+        "external_scientific_replication": false
+      },
+      "H": {
+        "prior_update": "Bounded instrumental/source belief only; no posterior numeric or political-behavior effect",
+        "evidence_against": "Absence of detected warning is not independent legal proclamation validation"
+      },
+      "I": {
+        "kind": "DOCUMENTARY_OR_ENGINEERING",
+        "new_N1_N2_N3": [
+          0,
+          0,
+          0
+        ],
+        "VSDS": 1,
+        "CT2_multiactor": 20,
+        "CT2_predictive": 24
+      },
+      "J": {
+        "decision": "CLOSE_BOUNDED_NO_SCIENTIFIC_INFERENCE",
+        "next_evidence": "Absence of detected warning is not independent legal proclamation validation"
+      }
+    },
+    {
+      "id": "PF-FOCUS20R-P05",
+      "index": 5,
+      "stage": "quality",
+      "status": "CLOSE_ACCEPTED_BOUNDED",
+      "A": {
+        "question": "Differentiate nine extracted sections with no-proclamation notices",
+        "unit": "BOE-A-2023-15066 2023 Congress electoral text heading, source or local test",
+        "estimand": "All nine carry review warnings and no legal acceptance claim"
+      },
+      "B": {
+        "H1": "A narrowly bounded source/software claim can be validated without inventing real party or political-person identities",
+        "H0": "The observed result may be parser-artifact, ambiguous legal status or inadequate source evidence",
+        "rival": "A source-cleaning script can mislead without independent source/document assurance"
+      },
+      "C": {
+        "source_exposure": "RETROSPECTIVE_ADAPTIVE_SINGLE_ORIGINAL",
+        "method": "Pre-defined FOCUS20R protocol; repair decisions after exposure not independent prereg confirmations",
+        "acceptance": "All nine carry review warnings and no legal acceptance claim"
+      },
+      "D": {
+        "instrument": "docs/BOE_NOMINATION_ATLAS_2023.md",
+        "repository": "GalexY3/Metodologia-AB",
+        "original_source_sha256": "d1c179fcfab9889df272753ad3d44513f86cec703805219834b7d048ef0eda20"
+      },
+      "E": {
+        "status": "PASS_WARNING_COUNTS",
+        "observed": "Nine accepted sections contain no-proclamation notice; 108 headings visibly in review status, confirmed in CI browser",
+        "main_CI_run": 40334678838,
+        "latest_keyboard_CI": "PENDING_CHECK"
+      },
+      "F": {
+        "adversarial_challenge": "Which exact items were rejected requires targeted legal reading"
+      },
+      "G": {
+        "replication": "SAME_SOURCE_REEXTRACTED_NO_NEW_ELECTION_OR_HUMAN_SAMPLE",
+        "external_scientific_replication": false
+      },
+      "H": {
+        "prior_update": "Bounded instrumental/source belief only; no posterior numeric or political-behavior effect",
+        "evidence_against": "Which exact items were rejected requires targeted legal reading"
+      },
+      "I": {
+        "kind": "DOCUMENTARY_OR_ENGINEERING",
+        "new_N1_N2_N3": [
+          0,
+          0,
+          0
+        ],
+        "VSDS": 1,
+        "CT2_multiactor": 20,
+        "CT2_predictive": 24
+      },
+      "J": {
+        "decision": "CLOSE_BOUNDED_NO_SCIENTIFIC_INFERENCE",
+        "next_evidence": "Which exact items were rejected requires targeted legal reading"
+      }
+    },
+    {
+      "id": "PF-FOCUS20R-P06",
+      "index": 6,
+      "stage": "integrity",
+      "status": "CLOSE_ACCEPTED_BOUNDED",
+      "A": {
+        "question": "Preserve 263 accepted nomination records from 25 contiguous sections",
+        "unit": "BOE-A-2023-15066 2023 Congress electoral text heading, source or local test",
+        "estimand": "Total equals manifest and sum per province"
+      },
+      "B": {
+        "H1": "A narrowly bounded source/software claim can be validated without inventing real party or political-person identities",
+        "H0": "The observed result may be parser-artifact, ambiguous legal status or inadequate source evidence",
+        "rival": "A source-cleaning script can mislead without independent source/document assurance"
+      },
+      "C": {
+        "source_exposure": "RETROSPECTIVE_ADAPTIVE_SINGLE_ORIGINAL",
+        "method": "Pre-defined FOCUS20R protocol; repair decisions after exposure not independent prereg confirmations",
+        "acceptance": "Total equals manifest and sum per province"
+      },
+      "D": {
+        "instrument": "scripts/verify_boe_nomination_snapshot.py",
+        "repository": "GalexY3/Metodologia-AB",
+        "original_source_sha256": "d1c179fcfab9889df272753ad3d44513f86cec703805219834b7d048ef0eda20"
+      },
+      "E": {
+        "status": "PASS_BOUNDED_COUNT",
+        "observed": "Original replay matches 263 observed headings within 25 accepted sections, exact ids and order",
+        "main_CI_run": 40334678838,
+        "latest_keyboard_CI": "PENDING_CHECK"
+      },
+      "F": {
+        "adversarial_challenge": "Calling all 263 verified proclaimed candidates would overclaim"
+      },
+      "G": {
+        "replication": "SAME_SOURCE_REEXTRACTED_NO_NEW_ELECTION_OR_HUMAN_SAMPLE",
+        "external_scientific_replication": false
+      },
+      "H": {
+        "prior_update": "Bounded instrumental/source belief only; no posterior numeric or political-behavior effect",
+        "evidence_against": "Calling all 263 verified proclaimed candidates would overclaim"
+      },
+      "I": {
+        "kind": "DOCUMENTARY_OR_ENGINEERING",
+        "new_N1_N2_N3": [
+          0,
+          0,
+          0
+        ],
+        "VSDS": 1,
+        "CT2_multiactor": 20,
+        "CT2_predictive": 24
+      },
+      "J": {
+        "decision": "CLOSE_BOUNDED_NO_SCIENTIFIC_INFERENCE",
+        "next_evidence": "Calling all 263 verified proclaimed candidates would overclaim"
+      }
+    },
+    {
+      "id": "PF-FOCUS20R-P07",
+      "index": 7,
+      "stage": "identity",
+      "status": "CLOSE_ACCEPTED_BOUNDED",
+      "A": {
+        "question": "Prevent cross-territory homonym merges",
+        "unit": "BOE-A-2023-15066 2023 Congress electoral text heading, source or local test",
+        "estimand": "Unique IDs use original+province+chamber+ordinal; repeated acronym ≠ legal identity"
+      },
+      "B": {
+        "H1": "A narrowly bounded source/software claim can be validated without inventing real party or political-person identities",
+        "H0": "The observed result may be parser-artifact, ambiguous legal status or inadequate source evidence",
+        "rival": "A source-cleaning script can mislead without independent source/document assurance"
+      },
+      "C": {
+        "source_exposure": "RETROSPECTIVE_ADAPTIVE_SINGLE_ORIGINAL",
+        "method": "Pre-defined FOCUS20R protocol; repair decisions after exposure not independent prereg confirmations",
+        "acceptance": "Unique IDs use original+province+chamber+ordinal; repeated acronym ≠ legal identity"
+      },
+      "D": {
+        "instrument": "tests/test_nomination_atlas.py",
+        "repository": "GalexY3/Metodologia-AB",
+        "original_source_sha256": "d1c179fcfab9889df272753ad3d44513f86cec703805219834b7d048ef0eda20"
+      },
+      "E": {
+        "status": "PASS_TYPED_IDENTIFIERS",
+        "observed": "Candidacy ids encode original, province, chamber, ordinal and remain distinct for matching acronyms",
+        "main_CI_run": 40334678838,
+        "latest_keyboard_CI": "PENDING_CHECK"
+      },
+      "F": {
+        "adversarial_challenge": "Stable labels do not identify national legal entity membership"
+      },
+      "G": {
+        "replication": "SAME_SOURCE_REEXTRACTED_NO_NEW_ELECTION_OR_HUMAN_SAMPLE",
+        "external_scientific_replication": false
+      },
+      "H": {
+        "prior_update": "Bounded instrumental/source belief only; no posterior numeric or political-behavior effect",
+        "evidence_against": "Stable labels do not identify national legal entity membership"
+      },
+      "I": {
+        "kind": "DOCUMENTARY_OR_ENGINEERING",
+        "new_N1_N2_N3": [
+          0,
+          0,
+          0
+        ],
+        "VSDS": 1,
+        "CT2_multiactor": 20,
+        "CT2_predictive": 24
+      },
+      "J": {
+        "decision": "CLOSE_BOUNDED_NO_SCIENTIFIC_INFERENCE",
+        "next_evidence": "Stable labels do not identify national legal entity membership"
+      }
+    },
+    {
+      "id": "PF-FOCUS20R-P08",
+      "index": 8,
+      "stage": "privacy",
+      "status": "CLOSE_ACCEPTED_BOUNDED",
+      "A": {
+        "question": "Prevent person/legal-party/influence attributes in source parser and public API",
+        "unit": "BOE-A-2023-15066 2023 Congress electoral text heading, source or local test",
+        "estimand": "Both accepted and quarantined records contain zero people or identity assertion"
+      },
+      "B": {
+        "H1": "A narrowly bounded source/software claim can be validated without inventing real party or political-person identities",
+        "H0": "The observed result may be parser-artifact, ambiguous legal status or inadequate source evidence",
+        "rival": "A source-cleaning script can mislead without independent source/document assurance"
+      },
+      "C": {
+        "source_exposure": "RETROSPECTIVE_ADAPTIVE_SINGLE_ORIGINAL",
+        "method": "Pre-defined FOCUS20R protocol; repair decisions after exposure not independent prereg confirmations",
+        "acceptance": "Both accepted and quarantined records contain zero people or identity assertion"
+      },
+      "D": {
+        "instrument": "tests/test_nomination_quality.py",
+        "repository": "GalexY3/Metodologia-AB",
+        "original_source_sha256": "d1c179fcfab9889df272753ad3d44513f86cec703805219834b7d048ef0eda20"
+      },
+      "E": {
+        "status": "PASS_PRIVACY_NEGATIVE_TESTS",
+        "observed": "Accepted and quarantine JSON rows contain zero joined persons or legal IDs; injected nested metadata rejected by API audit tests",
+        "main_CI_run": 40334678838,
+        "latest_keyboard_CI": "PENDING_CHECK"
+      },
+      "F": {
+        "adversarial_challenge": "A negative-keylist check does not replace legal DPIA or independent security audit"
+      },
+      "G": {
+        "replication": "SAME_SOURCE_REEXTRACTED_NO_NEW_ELECTION_OR_HUMAN_SAMPLE",
+        "external_scientific_replication": false
+      },
+      "H": {
+        "prior_update": "Bounded instrumental/source belief only; no posterior numeric or political-behavior effect",
+        "evidence_against": "A negative-keylist check does not replace legal DPIA or independent security audit"
+      },
+      "I": {
+        "kind": "DOCUMENTARY_OR_ENGINEERING",
+        "new_N1_N2_N3": [
+          0,
+          0,
+          0
+        ],
+        "VSDS": 1,
+        "CT2_multiactor": 20,
+        "CT2_predictive": 24
+      },
+      "J": {
+        "decision": "CLOSE_BOUNDED_NO_SCIENTIFIC_INFERENCE",
+        "next_evidence": "A negative-keylist check does not replace legal DPIA or independent security audit"
+      }
+    },
+    {
+      "id": "PF-FOCUS20R-P09",
+      "index": 9,
+      "stage": "comparison",
+      "status": "CLOSE_ACCEPTED_BOUNDED",
+      "A": {
+        "question": "Compare original public candidacies with secondary nationally-seated benchmark conservatively",
+        "unit": "BOE-A-2023-15066 2023 Congress electoral text heading, source or local test",
+        "estimand": "Exact matching only, no venue/territory vote attribution"
+      },
+      "B": {
+        "H1": "A narrowly bounded source/software claim can be validated without inventing real party or political-person identities",
+        "H0": "The observed result may be parser-artifact, ambiguous legal status or inadequate source evidence",
+        "rival": "A source-cleaning script can mislead without independent source/document assurance"
+      },
+      "C": {
+        "source_exposure": "RETROSPECTIVE_ADAPTIVE_SINGLE_ORIGINAL",
+        "method": "Pre-defined FOCUS20R protocol; repair decisions after exposure not independent prereg confirmations",
+        "acceptance": "Exact matching only, no venue/territory vote attribution"
+      },
+      "D": {
+        "instrument": "scripts/audit_candidacy_crosswalk.mjs",
+        "repository": "GalexY3/Metodologia-AB",
+        "original_source_sha256": "d1c179fcfab9889df272753ad3d44513f86cec703805219834b7d048ef0eda20"
+      },
+      "E": {
+        "status": "PASS_QUALIFIED_CROSSWALK",
+        "observed": "8 exact Albacete labels cross-referenced against historical totals; unmatched or ambiguous remain unresolved",
+        "main_CI_run": 40334678838,
+        "latest_keyboard_CI": "PENDING_CHECK"
+      },
+      "F": {
+        "adversarial_challenge": "Other provinces and 2026 figures not independently reconciled"
+      },
+      "G": {
+        "replication": "SAME_SOURCE_REEXTRACTED_NO_NEW_ELECTION_OR_HUMAN_SAMPLE",
+        "external_scientific_replication": false
+      },
+      "H": {
+        "prior_update": "Bounded instrumental/source belief only; no posterior numeric or political-behavior effect",
+        "evidence_against": "Other provinces and 2026 figures not independently reconciled"
+      },
+      "I": {
+        "kind": "DOCUMENTARY_OR_ENGINEERING",
+        "new_N1_N2_N3": [
+          0,
+          0,
+          0
+        ],
+        "VSDS": 1,
+        "CT2_multiactor": 20,
+        "CT2_predictive": 24
+      },
+      "J": {
+        "decision": "CLOSE_BOUNDED_NO_SCIENTIFIC_INFERENCE",
+        "next_evidence": "Other provinces and 2026 figures not independently reconciled"
+      }
+    },
+    {
+      "id": "PF-FOCUS20R-P10",
+      "index": 10,
+      "stage": "measurement",
+      "status": "CLOSE_ACCEPTED_BOUNDED",
+      "A": {
+        "question": "Quantify partial denominator within BOE but not all parties/persons in Spain",
+        "unit": "BOE-A-2023-15066 2023 Congress electoral text heading, source or local test",
+        "estimand": "Separately expose 52 document sections, 25 accepted, 27 blocked, unknown population coverage"
+      },
+      "B": {
+        "H1": "A narrowly bounded source/software claim can be validated without inventing real party or political-person identities",
+        "H0": "The observed result may be parser-artifact, ambiguous legal status or inadequate source evidence",
+        "rival": "A source-cleaning script can mislead without independent source/document assurance"
+      },
+      "C": {
+        "source_exposure": "RETROSPECTIVE_ADAPTIVE_SINGLE_ORIGINAL",
+        "method": "Pre-defined FOCUS20R protocol; repair decisions after exposure not independent prereg confirmations",
+        "acceptance": "Separately expose 52 document sections, 25 accepted, 27 blocked, unknown population coverage"
+      },
+      "D": {
+        "instrument": "src/politics_fantasy/nomination_quality.py",
+        "repository": "GalexY3/Metodologia-AB",
+        "original_source_sha256": "d1c179fcfab9889df272753ad3d44513f86cec703805219834b7d048ef0eda20"
+      },
+      "E": {
+        "status": "PASS_EXPLICIT_UNKNOWN",
+        "observed": "API separately shows 52 sections/25 accepted/27 unresolved; party/person coverage remains null",
+        "main_CI_run": 40334678838,
+        "latest_keyboard_CI": "PENDING_CHECK"
+      },
+      "F": {
+        "adversarial_challenge": "Full source can still contain misread headings; population outside document unknown"
+      },
+      "G": {
+        "replication": "SAME_SOURCE_REEXTRACTED_NO_NEW_ELECTION_OR_HUMAN_SAMPLE",
+        "external_scientific_replication": false
+      },
+      "H": {
+        "prior_update": "Bounded instrumental/source belief only; no posterior numeric or political-behavior effect",
+        "evidence_against": "Full source can still contain misread headings; population outside document unknown"
+      },
+      "I": {
+        "kind": "DOCUMENTARY_OR_ENGINEERING",
+        "new_N1_N2_N3": [
+          0,
+          0,
+          0
+        ],
+        "VSDS": 1,
+        "CT2_multiactor": 20,
+        "CT2_predictive": 24
+      },
+      "J": {
+        "decision": "CLOSE_BOUNDED_NO_SCIENTIFIC_INFERENCE",
+        "next_evidence": "Full source can still contain misread headings; population outside document unknown"
+      }
+    },
+    {
+      "id": "PF-FOCUS20R-P11",
+      "index": 11,
+      "stage": "quality",
+      "status": "CLOSE_ACCEPTED_BOUNDED",
+      "A": {
+        "question": "Recompute extraction from original rather than claim hand-edited results",
+        "unit": "BOE-A-2023-15066 2023 Congress electoral text heading, source or local test",
+        "estimand": "Raw doc SHA fixed; a local fixture cannot impersonate original"
+      },
+      "B": {
+        "H1": "A narrowly bounded source/software claim can be validated without inventing real party or political-person identities",
+        "H0": "The observed result may be parser-artifact, ambiguous legal status or inadequate source evidence",
+        "rival": "A source-cleaning script can mislead without independent source/document assurance"
+      },
+      "C": {
+        "source_exposure": "RETROSPECTIVE_ADAPTIVE_SINGLE_ORIGINAL",
+        "method": "Pre-defined FOCUS20R protocol; repair decisions after exposure not independent prereg confirmations",
+        "acceptance": "Raw doc SHA fixed; a local fixture cannot impersonate original"
+      },
+      "D": {
+        "instrument": "scripts/verify_boe_nomination_snapshot.py",
+        "repository": "GalexY3/Metodologia-AB",
+        "original_source_sha256": "d1c179fcfab9889df272753ad3d44513f86cec703805219834b7d048ef0eda20"
+      },
+      "E": {
+        "status": "PASS_REAL_PDF_REPLAY",
+        "observed": "New CI step recomputes original source extraction and obtains MATCH_ORIGINAL_BOUNDED against both snapshots (40334678838)",
+        "main_CI_run": 40334678838,
+        "latest_keyboard_CI": "PENDING_CHECK"
+      },
+      "F": {
+        "adversarial_challenge": "Same original evidence, not independent empirical replication"
+      },
+      "G": {
+        "replication": "SAME_SOURCE_REEXTRACTED_NO_NEW_ELECTION_OR_HUMAN_SAMPLE",
+        "external_scientific_replication": false
+      },
+      "H": {
+        "prior_update": "Bounded instrumental/source belief only; no posterior numeric or political-behavior effect",
+        "evidence_against": "Same original evidence, not independent empirical replication"
+      },
+      "I": {
+        "kind": "DOCUMENTARY_OR_ENGINEERING",
+        "new_N1_N2_N3": [
+          0,
+          0,
+          0
+        ],
+        "VSDS": 1,
+        "CT2_multiactor": 20,
+        "CT2_predictive": 24
+      },
+      "J": {
+        "decision": "CLOSE_BOUNDED_NO_SCIENTIFIC_INFERENCE",
+        "next_evidence": "Same original evidence, not independent empirical replication"
+      }
+    },
+    {
+      "id": "PF-FOCUS20R-P12",
+      "index": 12,
+      "stage": "provenance",
+      "status": "STOP_R5",
+      "A": {
+        "question": "Distinguish institution-host TLS from publisher-signed digest",
+        "unit": "BOE-A-2023-15066 2023 Congress electoral text heading, source or local test",
+        "estimand": "Publisher-signed checksum absent stated explicitly"
+      },
+      "B": {
+        "H1": "A narrowly bounded source/software claim can be validated without inventing real party or political-person identities",
+        "H0": "The observed result may be parser-artifact, ambiguous legal status or inadequate source evidence",
+        "rival": "A source-cleaning script can mislead without independent source/document assurance"
+      },
+      "C": {
+        "source_exposure": "RETROSPECTIVE_ADAPTIVE_SINGLE_ORIGINAL",
+        "method": "Pre-defined FOCUS20R protocol; repair decisions after exposure not independent prereg confirmations",
+        "acceptance": "Publisher-signed checksum absent stated explicitly"
+      },
+      "D": {
+        "instrument": "research/BRANCH12M_20261026/OFFICIAL_CAPTURE.json",
+        "repository": "GalexY3/Metodologia-AB",
+        "original_source_sha256": "d1c179fcfab9889df272753ad3d44513f86cec703805219834b7d048ef0eda20"
+      },
+      "E": {
+        "status": "STOP_R5_NO_PUBLISHER_SIGNATURE",
+        "observed": "Official-host HTTPS PDF and locally calculated SHA verified; separate publisher-signed digest not available",
+        "main_CI_run": 40334678838,
+        "latest_keyboard_CI": "PENDING_CHECK"
+      },
+      "F": {
+        "adversarial_challenge": "SHA and TLS alone cannot prove publisher cryptographic signature"
+      },
+      "G": {
+        "replication": "SAME_SOURCE_REEXTRACTED_NO_NEW_ELECTION_OR_HUMAN_SAMPLE",
+        "external_scientific_replication": false
+      },
+      "H": {
+        "prior_update": "Bounded instrumental/source belief only; no posterior numeric or political-behavior effect",
+        "evidence_against": "SHA and TLS alone cannot prove publisher cryptographic signature"
+      },
+      "I": {
+        "kind": "GOVERNANCE_STOP",
+        "new_N1_N2_N3": [
+          0,
+          0,
+          0
+        ],
+        "VSDS": 1,
+        "CT2_multiactor": 20,
+        "CT2_predictive": 24
+      },
+      "J": {
+        "decision": "STOP_R5_NEEDS_DIFFERENT_SOURCE",
+        "next_evidence": "SHA and TLS alone cannot prove publisher cryptographic signature"
+      }
+    },
+    {
+      "id": "PF-FOCUS20R-P13",
+      "index": 13,
+      "stage": "rights",
+      "status": "STOP_R5",
+      "A": {
+        "question": "Keep actual reuse conditions unknown when rights not certified",
+        "unit": "BOE-A-2023-15066 2023 Congress electoral text heading, source or local test",
+        "estimand": "No blanket public license asserted for candidate personal rows"
+      },
+      "B": {
+        "H1": "A narrowly bounded source/software claim can be validated without inventing real party or political-person identities",
+        "H0": "The observed result may be parser-artifact, ambiguous legal status or inadequate source evidence",
+        "rival": "A source-cleaning script can mislead without independent source/document assurance"
+      },
+      "C": {
+        "source_exposure": "RETROSPECTIVE_ADAPTIVE_SINGLE_ORIGINAL",
+        "method": "Pre-defined FOCUS20R protocol; repair decisions after exposure not independent prereg confirmations",
+        "acceptance": "No blanket public license asserted for candidate personal rows"
+      },
+      "D": {
+        "instrument": "docs/FUENTES_Y_LICENCIAS.md",
+        "repository": "GalexY3/Metodologia-AB",
+        "original_source_sha256": "d1c179fcfab9889df272753ad3d44513f86cec703805219834b7d048ef0eda20"
+      },
+      "E": {
+        "status": "STOP_R5_REUSE_LICENSE",
+        "observed": "Project licenses inventory does not certify complete per-field original-source reuse terms or personal-record permissions",
+        "main_CI_run": 40334678838,
+        "latest_keyboard_CI": "PENDING_CHECK"
+      },
+      "F": {
+        "adversarial_challenge": "Website publication of records is not blanket permission for personal-score product"
+      },
+      "G": {
+        "replication": "SAME_SOURCE_REEXTRACTED_NO_NEW_ELECTION_OR_HUMAN_SAMPLE",
+        "external_scientific_replication": false
+      },
+      "H": {
+        "prior_update": "Bounded instrumental/source belief only; no posterior numeric or political-behavior effect",
+        "evidence_against": "Website publication of records is not blanket permission for personal-score product"
+      },
+      "I": {
+        "kind": "GOVERNANCE_STOP",
+        "new_N1_N2_N3": [
+          0,
+          0,
+          0
+        ],
+        "VSDS": 1,
+        "CT2_multiactor": 20,
+        "CT2_predictive": 24
+      },
+      "J": {
+        "decision": "STOP_R5_NEEDS_DIFFERENT_SOURCE",
+        "next_evidence": "Website publication of records is not blanket permission for personal-score product"
+      }
+    },
+    {
+      "id": "PF-FOCUS20R-P14",
+      "index": 14,
+      "stage": "temporal",
+      "status": "CLOSE_ACCEPTED_BOUNDED",
+      "A": {
+        "question": "Enforce 2023-vintage label and distinguish first-public date from capture date",
+        "unit": "BOE-A-2023-15066 2023 Congress electoral text heading, source or local test",
+        "estimand": "No 2026-party activity claims based on 2023 lists"
+      },
+      "B": {
+        "H1": "A narrowly bounded source/software claim can be validated without inventing real party or political-person identities",
+        "H0": "The observed result may be parser-artifact, ambiguous legal status or inadequate source evidence",
+        "rival": "A source-cleaning script can mislead without independent source/document assurance"
+      },
+      "C": {
+        "source_exposure": "RETROSPECTIVE_ADAPTIVE_SINGLE_ORIGINAL",
+        "method": "Pre-defined FOCUS20R protocol; repair decisions after exposure not independent prereg confirmations",
+        "acceptance": "No 2026-party activity claims based on 2023 lists"
+      },
+      "D": {
+        "instrument": "data/observatory/boe_2023_multiterritory_reviewed.json",
+        "repository": "GalexY3/Metodologia-AB",
+        "original_source_sha256": "d1c179fcfab9889df272753ad3d44513f86cec703805219834b7d048ef0eda20"
+      },
+      "E": {
+        "status": "PASS_TIME_BOUNDARY",
+        "observed": "2003? No: all source entities are explicitly election 2023, document published 2023-06-27, code refrains inferring 2026 party status",
+        "main_CI_run": 40334678838,
+        "latest_keyboard_CI": "PENDING_CHECK"
+      },
+      "F": {
+        "adversarial_challenge": "Historical snapshots first_public_at may remain unknown; no backtesting with current reconstruction"
+      },
+      "G": {
+        "replication": "SAME_SOURCE_REEXTRACTED_NO_NEW_ELECTION_OR_HUMAN_SAMPLE",
+        "external_scientific_replication": false
+      },
+      "H": {
+        "prior_update": "Bounded instrumental/source belief only; no posterior numeric or political-behavior effect",
+        "evidence_against": "Historical snapshots first_public_at may remain unknown; no backtesting with current reconstruction"
+      },
+      "I": {
+        "kind": "DOCUMENTARY_OR_ENGINEERING",
+        "new_N1_N2_N3": [
+          0,
+          0,
+          0
+        ],
+        "VSDS": 1,
+        "CT2_multiactor": 20,
+        "CT2_predictive": 24
+      },
+      "J": {
+        "decision": "CLOSE_BOUNDED_NO_SCIENTIFIC_INFERENCE",
+        "next_evidence": "Historical snapshots first_public_at may remain unknown; no backtesting with current reconstruction"
+      }
+    },
+    {
+      "id": "PF-FOCUS20R-P15",
+      "index": 15,
+      "stage": "api",
+      "status": "CLOSE_ACCEPTED_BOUNDED",
+      "A": {
+        "question": "API exposes data-quality triage for quarantined source segments",
+        "unit": "BOE-A-2023-15066 2023 Congress electoral text heading, source or local test",
+        "estimand": "Read-only status, non-certified labels disallowed from scoring endpoints"
+      },
+      "B": {
+        "H1": "A narrowly bounded source/software claim can be validated without inventing real party or political-person identities",
+        "H0": "The observed result may be parser-artifact, ambiguous legal status or inadequate source evidence",
+        "rival": "A source-cleaning script can mislead without independent source/document assurance"
+      },
+      "C": {
+        "source_exposure": "RETROSPECTIVE_ADAPTIVE_SINGLE_ORIGINAL",
+        "method": "Pre-defined FOCUS20R protocol; repair decisions after exposure not independent prereg confirmations",
+        "acceptance": "Read-only status, non-certified labels disallowed from scoring endpoints"
+      },
+      "D": {
+        "instrument": "src/politics_fantasy/server.py",
+        "repository": "GalexY3/Metodologia-AB",
+        "original_source_sha256": "d1c179fcfab9889df272753ad3d44513f86cec703805219834b7d048ef0eda20"
+      },
+      "E": {
+        "status": "PASS_READ_ONLY_TRIAGE",
+        "observed": "HTTP /api/official-nominations includes safe 27-territory quarantine triage and 278 observed noncertified headings, no score or person ids",
+        "main_CI_run": 40334678838,
+        "latest_keyboard_CI": "PENDING_CHECK"
+      },
+      "F": {
+        "adversarial_challenge": "Preproduction local-only endpoint, no authentication or deployment security"
+      },
+      "G": {
+        "replication": "SAME_SOURCE_REEXTRACTED_NO_NEW_ELECTION_OR_HUMAN_SAMPLE",
+        "external_scientific_replication": false
+      },
+      "H": {
+        "prior_update": "Bounded instrumental/source belief only; no posterior numeric or political-behavior effect",
+        "evidence_against": "Preproduction local-only endpoint, no authentication or deployment security"
+      },
+      "I": {
+        "kind": "DOCUMENTARY_OR_ENGINEERING",
+        "new_N1_N2_N3": [
+          0,
+          0,
+          0
+        ],
+        "VSDS": 1,
+        "CT2_multiactor": 20,
+        "CT2_predictive": 24
+      },
+      "J": {
+        "decision": "CLOSE_BOUNDED_NO_SCIENTIFIC_INFERENCE",
+        "next_evidence": "Preproduction local-only endpoint, no authentication or deployment security"
+      }
+    },
+    {
+      "id": "PF-FOCUS20R-P16",
+      "index": 16,
+      "stage": "ui",
+      "status": "CLOSE_ACCEPTED_BOUNDED",
+      "A": {
+        "question": "Atlas conveys clean, review and incomplete status without concealing any category",
+        "unit": "BOE-A-2023-15066 2023 Congress electoral text heading, source or local test",
+        "estimand": "Browser text and role/status labels visible; no misleading 'certified countrywide' wording"
+      },
+      "B": {
+        "H1": "A narrowly bounded source/software claim can be validated without inventing real party or political-person identities",
+        "H0": "The observed result may be parser-artifact, ambiguous legal status or inadequate source evidence",
+        "rival": "A source-cleaning script can mislead without independent source/document assurance"
+      },
+      "C": {
+        "source_exposure": "RETROSPECTIVE_ADAPTIVE_SINGLE_ORIGINAL",
+        "method": "Pre-defined FOCUS20R protocol; repair decisions after exposure not independent prereg confirmations",
+        "acceptance": "Browser text and role/status labels visible; no misleading 'certified countrywide' wording"
+      },
+      "D": {
+        "instrument": "src/politics_fantasy/web/app.js",
+        "repository": "GalexY3/Metodologia-AB",
+        "original_source_sha256": "d1c179fcfab9889df272753ad3d44513f86cec703805219834b7d048ef0eda20"
+      },
+      "E": {
+        "status": "PASS_THREE_WAY_UI",
+        "observed": "Atlas labels no-known-notice, review-notice, and nonsequential quarantine; 108 reviewed and 278 noncertified visible",
+        "main_CI_run": 40334678838,
+        "latest_keyboard_CI": "PENDING_CHECK"
+      },
+      "F": {
+        "adversarial_challenge": "Showing badges and warnings cannot independently adjudicate legal status"
+      },
+      "G": {
+        "replication": "SAME_SOURCE_REEXTRACTED_NO_NEW_ELECTION_OR_HUMAN_SAMPLE",
+        "external_scientific_replication": false
+      },
+      "H": {
+        "prior_update": "Bounded instrumental/source belief only; no posterior numeric or political-behavior effect",
+        "evidence_against": "Showing badges and warnings cannot independently adjudicate legal status"
+      },
+      "I": {
+        "kind": "DOCUMENTARY_OR_ENGINEERING",
+        "new_N1_N2_N3": [
+          0,
+          0,
+          0
+        ],
+        "VSDS": 1,
+        "CT2_multiactor": 20,
+        "CT2_predictive": 24
+      },
+      "J": {
+        "decision": "CLOSE_BOUNDED_NO_SCIENTIFIC_INFERENCE",
+        "next_evidence": "Showing badges and warnings cannot independently adjudicate legal status"
+      }
+    },
+    {
+      "id": "PF-FOCUS20R-P17",
+      "index": 17,
+      "stage": "qa",
+      "status": "PENDING_CI",
+      "A": {
+        "question": "Add browser keyboard/DOM and hostile input tests",
+        "unit": "BOE-A-2023-15066 2023 Congress electoral text heading, source or local test",
+        "estimand": "Native Chromium assertions PASS or failures recorded"
+      },
+      "B": {
+        "H1": "A narrowly bounded source/software claim can be validated without inventing real party or political-person identities",
+        "H0": "The observed result may be parser-artifact, ambiguous legal status or inadequate source evidence",
+        "rival": "A source-cleaning script can mislead without independent source/document assurance"
+      },
+      "C": {
+        "source_exposure": "RETROSPECTIVE_ADAPTIVE_SINGLE_ORIGINAL",
+        "method": "Pre-defined FOCUS20R protocol; repair decisions after exposure not independent prereg confirmations",
+        "acceptance": "Native Chromium assertions PASS or failures recorded"
+      },
+      "D": {
+        "instrument": "tests/run_browser_smoke.py",
+        "repository": "GalexY3/Metodologia-AB",
+        "original_source_sha256": "d1c179fcfab9889df272753ad3d44513f86cec703805219834b7d048ef0eda20"
+      },
+      "E": {
+        "status": "PENDING_NATIVE_E2E",
+        "observed": "Chromium keyboard/DOM checks for opening quarantine detail and Host-header negative test added; final run pending",
+        "main_CI_run": 40334678838,
+        "latest_keyboard_CI": "PENDING_CHECK"
+      },
+      "F": {
+        "adversarial_challenge": "A passing smoke is not an accessibility audit across devices"
+      },
+      "G": {
+        "replication": "SAME_SOURCE_REEXTRACTED_NO_NEW_ELECTION_OR_HUMAN_SAMPLE",
+        "external_scientific_replication": false
+      },
+      "H": {
+        "prior_update": "Bounded instrumental/source belief only; no posterior numeric or political-behavior effect",
+        "evidence_against": "A passing smoke is not an accessibility audit across devices"
+      },
+      "I": {
+        "kind": "DOCUMENTARY_OR_ENGINEERING",
+        "new_N1_N2_N3": [
+          0,
+          0,
+          0
+        ],
+        "VSDS": 1,
+        "CT2_multiactor": 20,
+        "CT2_predictive": 24
+      },
+      "J": {
+        "decision": "REPAIR_OR_CONFIRM_AFTER_RUN",
+        "next_evidence": "A passing smoke is not an accessibility audit across devices"
+      }
+    },
+    {
+      "id": "PF-FOCUS20R-P18",
+      "index": 18,
+      "stage": "progress",
+      "status": "CLOSE_ACCEPTED_BOUNDED",
+      "A": {
+        "question": "Version project scope without expanding it based on verified partial original source",
+        "unit": "BOE-A-2023-15066 2023 Congress electoral text heading, source or local test",
+        "estimand": "Only src.local evidence-backed milestone changes; six gates unaffected"
+      },
+      "B": {
+        "H1": "A narrowly bounded source/software claim can be validated without inventing real party or political-person identities",
+        "H0": "The observed result may be parser-artifact, ambiguous legal status or inadequate source evidence",
+        "rival": "A source-cleaning script can mislead without independent source/document assurance"
+      },
+      "C": {
+        "source_exposure": "RETROSPECTIVE_ADAPTIVE_SINGLE_ORIGINAL",
+        "method": "Pre-defined FOCUS20R protocol; repair decisions after exposure not independent prereg confirmations",
+        "acceptance": "Only src.local evidence-backed milestone changes; six gates unaffected"
+      },
+      "D": {
+        "instrument": "product/progress_snapshot_v3_20261026.json",
+        "repository": "GalexY3/Metodologia-AB",
+        "original_source_sha256": "d1c179fcfab9889df272753ad3d44513f86cec703805219834b7d048ef0eda20"
+      },
+      "E": {
+        "status": "PASS_FROZEN_PROGRESS",
+        "observed": "PFL-V1 r3 remains 36.35%, nine sublines, 36 milestones, six release gates; no automatic uplift",
+        "main_CI_run": 40334678838,
+        "latest_keyboard_CI": "PENDING_CHECK"
+      },
+      "F": {
+        "adversarial_challenge": "Progress level rubric is editorial, not unbiased time/launch prediction"
+      },
+      "G": {
+        "replication": "SAME_SOURCE_REEXTRACTED_NO_NEW_ELECTION_OR_HUMAN_SAMPLE",
+        "external_scientific_replication": false
+      },
+      "H": {
+        "prior_update": "Bounded instrumental/source belief only; no posterior numeric or political-behavior effect",
+        "evidence_against": "Progress level rubric is editorial, not unbiased time/launch prediction"
+      },
+      "I": {
+        "kind": "DOCUMENTARY_OR_ENGINEERING",
+        "new_N1_N2_N3": [
+          0,
+          0,
+          0
+        ],
+        "VSDS": 1,
+        "CT2_multiactor": 20,
+        "CT2_predictive": 24
+      },
+      "J": {
+        "decision": "CLOSE_BOUNDED_NO_SCIENTIFIC_INFERENCE",
+        "next_evidence": "Progress level rubric is editorial, not unbiased time/launch prediction"
+      }
+    },
+    {
+      "id": "PF-FOCUS20R-P19",
+      "index": 19,
+      "stage": "CI",
+      "status": "PENDING_CI",
+      "A": {
+        "question": "Native Node/Python/Chromium and raw source extraction work after repair",
+        "unit": "BOE-A-2023-15066 2023 Congress electoral text heading, source or local test",
+        "estimand": "All actual CI jobs green, source and test numbers logged"
+      },
+      "B": {
+        "H1": "A narrowly bounded source/software claim can be validated without inventing real party or political-person identities",
+        "H0": "The observed result may be parser-artifact, ambiguous legal status or inadequate source evidence",
+        "rival": "A source-cleaning script can mislead without independent source/document assurance"
+      },
+      "C": {
+        "source_exposure": "RETROSPECTIVE_ADAPTIVE_SINGLE_ORIGINAL",
+        "method": "Pre-defined FOCUS20R protocol; repair decisions after exposure not independent prereg confirmations",
+        "acceptance": "All actual CI jobs green, source and test numbers logged"
+      },
+      "D": {
+        "instrument": ".github/workflows/politics-fantasy-evidence.yml",
+        "repository": "GalexY3/Metodologia-AB",
+        "original_source_sha256": "d1c179fcfab9889df272753ad3d44513f86cec703805219834b7d048ef0eda20"
+      },
+      "E": {
+        "status": "PENDING_LATEST_CI",
+        "observed": "Original extraction source/app/Chromium all green at run 40334678838; latest keyboard-expanded CI pending",
+        "main_CI_run": 40334678838,
+        "latest_keyboard_CI": "PENDING_CHECK"
+      },
+      "F": {
+        "adversarial_challenge": "CI passing is engineering evidence only, not sociological prediction quality"
+      },
+      "G": {
+        "replication": "SAME_SOURCE_REEXTRACTED_NO_NEW_ELECTION_OR_HUMAN_SAMPLE",
+        "external_scientific_replication": false
+      },
+      "H": {
+        "prior_update": "Bounded instrumental/source belief only; no posterior numeric or political-behavior effect",
+        "evidence_against": "CI passing is engineering evidence only, not sociological prediction quality"
+      },
+      "I": {
+        "kind": "DOCUMENTARY_OR_ENGINEERING",
+        "new_N1_N2_N3": [
+          0,
+          0,
+          0
+        ],
+        "VSDS": 1,
+        "CT2_multiactor": 20,
+        "CT2_predictive": 24
+      },
+      "J": {
+        "decision": "REPAIR_OR_CONFIRM_AFTER_RUN",
+        "next_evidence": "CI passing is engineering evidence only, not sociological prediction quality"
+      }
+    },
+    {
+      "id": "PF-FOCUS20R-P20",
+      "index": 20,
+      "stage": "governance",
+      "status": "CLOSE_ACCEPTED_BOUNDED",
+      "A": {
+        "question": "Close A-J, preserve prior ledger, classify science vs engineering",
+        "unit": "BOE-A-2023-15066 2023 Congress electoral text heading, source or local test",
+        "estimand": "20 signed evidence-linked A-J cycles, no artificial N1-3/VSDS/CT2 uplift"
+      },
+      "B": {
+        "H1": "A narrowly bounded source/software claim can be validated without inventing real party or political-person identities",
+        "H0": "The observed result may be parser-artifact, ambiguous legal status or inadequate source evidence",
+        "rival": "A source-cleaning script can mislead without independent source/document assurance"
+      },
+      "C": {
+        "source_exposure": "RETROSPECTIVE_ADAPTIVE_SINGLE_ORIGINAL",
+        "method": "Pre-defined FOCUS20R protocol; repair decisions after exposure not independent prereg confirmations",
+        "acceptance": "20 signed evidence-linked A-J cycles, no artificial N1-3/VSDS/CT2 uplift"
+      },
+      "D": {
+        "instrument": "research/FOCUS20R_20261026/LEDGER.json",
+        "repository": "GalexY3/Metodologia-AB",
+        "original_source_sha256": "d1c179fcfab9889df272753ad3d44513f86cec703805219834b7d048ef0eda20"
+      },
+      "E": {
+        "status": "CLOSE_AJ_WITH_LIMITS",
+        "observed": "Historical A-J prereg exists; 20 cycle entries document results, blockers, rivals, priors and links",
+        "main_CI_run": 40334678838,
+        "latest_keyboard_CI": "PENDING_CHECK"
+      },
+      "F": {
+        "adversarial_challenge": "21st independent dataset not in this block, no scientific discoveries claimed"
+      },
+      "G": {
+        "replication": "SAME_SOURCE_REEXTRACTED_NO_NEW_ELECTION_OR_HUMAN_SAMPLE",
+        "external_scientific_replication": false
+      },
+      "H": {
+        "prior_update": "Bounded instrumental/source belief only; no posterior numeric or political-behavior effect",
+        "evidence_against": "21st independent dataset not in this block, no scientific discoveries claimed"
+      },
+      "I": {
+        "kind": "DOCUMENTARY_OR_ENGINEERING",
+        "new_N1_N2_N3": [
+          0,
+          0,
+          0
+        ],
+        "VSDS": 1,
+        "CT2_multiactor": 20,
+        "CT2_predictive": 24
+      },
+      "J": {
+        "decision": "CLOSE_BOUNDED_NO_SCIENTIFIC_INFERENCE",
+        "next_evidence": "21st independent dataset not in this block, no scientific discoveries claimed"
+      }
+    }
+  ]
+}
