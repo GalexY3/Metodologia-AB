@@ -194,6 +194,9 @@ jobs:
       - name: C03 temporal audit of official rosters
         working-directory: proyectos/politics-fantasy-league
         run: python scripts/audit_congress_temporal.py
+      - name: C04 probe one original Congress roll-call voting record
+        working-directory: proyectos/politics-fantasy-league
+        run: python scripts/probe_congress_vote.py
       - name: Record ephemeral raw originals and bounded manifest
         if: always()
         uses: actions/upload-artifact@v4
