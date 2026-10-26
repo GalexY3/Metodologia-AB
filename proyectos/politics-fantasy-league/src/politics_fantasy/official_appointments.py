@@ -5,6 +5,7 @@ This local reader checks the derivative snapshot, not an original in every GET.
 """
 from __future__ import annotations
 
+import hashlib
 import json
 import re
 from pathlib import Path
@@ -13,6 +14,7 @@ PROJECT=Path(__file__).resolve().parents[2]
 DEFAULT=PROJECT/"data/observatory/boe_2023_minister_appointments_reviewed.json"
 PDF_URL="https://www.boe.es/boe/dias/2023/11/21/pdfs/BOE-A-2023-23543.pdf"
 PDF_SHA256="16f05bba24508af229870b68dbfb72ba258e62416713a8cfe5c49c70ba792efe"
+SNAPSHOT_GIT_BLOB_SHA1="037eaac7b757604a8dc97da8da041607654131aa"
 ROW_KEYS=frozenset(("document_local_appointment_id","name","office",
                     "date_of_nomination_decree","date_of_official_publication",
                     "end_of_tenure","legal_party_registration_id",
@@ -30,7 +32,11 @@ def status(path:Path|None=None)->dict:
     try:
         if not p.is_file() or p.stat().st_size>20_000:
             return {**BASE,"error":"SOURCE_MISSING_OR_OVERSIZED"}
-        d=json.loads(p.read_text(encoding="utf8"))
+        raw=p.read_bytes()
+        actual=hashlib.sha1(b"blob "+str(len(raw)).encode()+b"\x00"+raw).hexdigest()
+        if actual!=SNAPSHOT_GIT_BLOB_SHA1:
+            return {**BASE,"error":"DERIVATIVE_SNAPSHOT_UNPINNED"}
+        d=json.loads(raw.decode("utf8"))
         if (d.get("source_id")!="BOE-A-2023-23543" or
             d.get("source_pdf")!=PDF_URL or
             d.get("source_pdf_sha256")!=PDF_SHA256 or
