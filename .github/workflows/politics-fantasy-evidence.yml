@@ -50,7 +50,7 @@ jobs:
       - name: Python local integration
         run: |
           python -m pip install pytest
-          PYTHONPATH=src python -m pytest -q tests/test_actor_api.py tests/test_product.py tests/test_evidence_warehouse_status.py tests/test_evidence_http_smoke.py tests/test_progress_api.py tests/test_progress_http.py tests/test_source_stage_http.py tests/test_ingest.py tests/test_ingest_redirect_security.py tests/test_quarantine_ingest.py tests/test_ingest_http_boundary.py tests/test_capture_official_sources.py tests/test_verify_boe_table_pdf.py tests/test_audit_proclaimed_candidates.py tests/test_candidacy_api.py tests/test_audit_boe_nominations_all.py tests/test_nomination_atlas.py tests/test_boe_quarantine.py
+          PYTHONPATH=src python -m pytest -q tests/test_actor_api.py tests/test_product.py tests/test_evidence_warehouse_status.py tests/test_evidence_http_smoke.py tests/test_progress_api.py tests/test_progress_http.py tests/test_source_stage_http.py tests/test_ingest.py tests/test_ingest_redirect_security.py tests/test_quarantine_ingest.py tests/test_ingest_http_boundary.py tests/test_secure_store.py tests/test_private_audit.py tests/test_private_audit_cli.py tests/test_ingest_full_local_e2e.py tests/test_capture_official_sources.py tests/test_verify_boe_table_pdf.py tests/test_audit_proclaimed_candidates.py tests/test_candidacy_api.py tests/test_audit_boe_nominations_all.py tests/test_nomination_atlas.py tests/test_boe_quarantine.py
       - name: Synthetic source-original Senate and Congress guards (no private raw data)
         run: |
           PYTHONPATH=src python -m unittest discover -s tests -p 'test_source_original*.py' -v
