@@ -43,13 +43,17 @@ jobs:
           node --test tests/test_progress_model.mjs
           node --test tests/test_progress_revision_v2.mjs
           node --test tests/test_progress_revision_v3.mjs
+          node --test tests/test_progress_revision_v4.mjs
           node --test tests/test_audit_candidacy_crosswalk.mjs
           node scripts/audit_candidacy_crosswalk.mjs > /tmp/pf-albacete-crosswalk.json
           node scripts/progress_report.mjs product/progress_scope_v2_20261026.json product/progress_scope_v3_20261026.json > /tmp/pf-progress.json
       - name: Python local integration
         run: |
           python -m pip install pytest
-          PYTHONPATH=src python -m pytest -q tests/test_actor_api.py tests/test_product.py tests/test_evidence_warehouse_status.py tests/test_evidence_http_smoke.py tests/test_progress_api.py tests/test_progress_http.py tests/test_capture_official_sources.py tests/test_verify_boe_table_pdf.py tests/test_audit_proclaimed_candidates.py tests/test_candidacy_api.py tests/test_audit_boe_nominations_all.py tests/test_nomination_atlas.py tests/test_boe_quarantine.py
+          PYTHONPATH=src python -m pytest -q tests/test_actor_api.py tests/test_product.py tests/test_evidence_warehouse_status.py tests/test_evidence_http_smoke.py tests/test_progress_api.py tests/test_progress_http.py tests/test_source_stage_http.py tests/test_capture_official_sources.py tests/test_verify_boe_table_pdf.py tests/test_audit_proclaimed_candidates.py tests/test_candidacy_api.py tests/test_audit_boe_nominations_all.py tests/test_nomination_atlas.py tests/test_boe_quarantine.py
+      - name: Synthetic source-original Senate and Congress guards (no private raw data)
+        run: |
+          PYTHONPATH=src python -m unittest discover -s tests -p 'test_source_original*.py' -v
       - name: Secondary source fetch, pinned revision verification
         run: |
           curl -fsSL --retry 3 --max-time 35 -o /tmp/pf-202307.csv https://raw.githubusercontent.com/anerodata/data-elecciones-congreso-espana/main/202307.csv
