@@ -5,15 +5,15 @@
   "branch": "research/ab-r-mercados-pareja-20261028",
   "authorization_context": "13 unused of prior 20 cycles, user explicitly requested continuation",
   "authorized_remaining_start": 13,
-  "valid": 10,
+  "valid": 11,
   "invalid_attempts": 1,
   "invalid_distinct_cycles": 0,
-  "planning": 1,
+  "planning": 2,
   "documentary": 2,
   "data_quality": 1,
   "empirical": 4,
   "reanalysis_or_sensitivity": 2,
-  "remaining_unstarted": 3,
+  "remaining_unstarted": 2,
   "stopped_under_R5": true,
   "source": "dankras/mixmosa-anonymized-data",
   "source_commit_blobs": {
@@ -280,6 +280,32 @@
         "SECOND_SOURCE_AUDIT.md"
       ],
       "N1_id": null
+    },
+    {
+      "id": "N38",
+      "type": "PLANNING_AB_ONLY",
+      "status": "COMPLETED_ACCESS_GATE",
+      "A": "Find independently sampled complete bilateral encounter data to replicate Mixmosa under R5",
+      "B": "Full second dataset with both votes, IDs, events vs limited/missing bytes and schema",
+      "C": "Verify bytes, primary IDs, both unilateral decisions, event, cross-dyad popularity estimation; no inference from metadata",
+      "D": "GitHub connector and browser plus container HTTPS attempts; code-free source audit. Source paths and blob SHAs in ABR_REPLICATION_GATE/SOURCE_ACCESS_AUDIT.json",
+      "E": "Essex XLSX and eHarmony gzip not downloaded; original Columbia CSV content empty. Columbia reduced 8378x15 fetched, but lacks pid, event, reciprocal yes; Parquet clean binary 403601 base64 characters fetched but not decoded/row-analysed.",
+      "F": "Do not use dec from reduced CSV as reciprocal matching. Columbia data has documented historical inconsistencies; metadata does not prove valid join.",
+      "G": "No independent data analyzed at dyad level; 0 replication of Mixmosa correlations",
+      "H": "Require valid original Columbia or other diadic source and quality audit before N39; keep two slots",
+      "I": "PLANNING_VALID, 0/3, no novelty",
+      "J": "STOP_R5; N39 N40 unstarted",
+      "sources": [
+        "https://researchdata.essex.ac.uk/85/",
+        "https://brianmcfee.net/data/eharmony.html",
+        "https://github.com/keithmcnulty/speed_dating",
+        "https://github.com/ZharlieSineFine/Speed-Dating-Reciprocal-Recommender-System"
+      ],
+      "source_artifact": "../ABR_REPLICATION_GATE_20261028/LEDGER.json",
+      "N1_id": null,
+      "CT2_before": 17,
+      "CT2_after": 17
     }
-  ]
+  ],
+  "recent_gate": "ABR_REPLICATION_GATE_20261028"
 }
