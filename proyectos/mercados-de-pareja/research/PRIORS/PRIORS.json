@@ -23,7 +23,7 @@
       "id": "P-NOVELTY",
       "question": "Originalidad de homogamia de deseabilidad sin preferencia inicial por semejanza",
       "status": "STRONG_PRIOR_ART",
-      "rationale": "La proposición general ya está en teoría matching, Hitsch 2010 y, casi literalmente para apps, Topinkova/Diviak 2025; nueva aportación exigiría predicción más estrecha. La separación de navegación, primer mensaje y match se documentó explícitamente en Hitsch et al. (2010), antes del programa ESBM. No reivindicar originalidad general de la cadena. Rios–Saban–Zheng (online 2022) probó algoritmo con exposición e historial de matches en dos intervenciones de mercado; Rios–Torrico 2023 ya formaliza secuencialidad y direcciones del flujo. ESBM no reivindica novedad de optimización de exposición y reciprocidad ni de feedback por matches. External 2024 intervention already studies a causal micro-interaction influence independent of pre-exposure sorting. ESBM has not yet included an observed micro-behavior intervention; adding smiles alone would lack originality. ICONIP 2020 MotifGNN already models reciprocal recommendation over user directed interaction graphs with degree/motif structure. Our degree-conditioned reciprocity finding does not establish a new theory: it is a data-quality/control exercise on published dataset. Su & Hu 2019 already used ratios click/rec and msg/rec as popularity and modeled target and sender attributes and network centrality; 2020 MotifGNN already modeled mutual interaction graph. N82 smooth target CTR out-of-actor predictive advantage is not a new theoretical mechanism or 2/3.",
+      "rationale": "La proposición general ya está en teoría matching, Hitsch 2010 y, casi literalmente para apps, Topinkova/Diviak 2025; nueva aportación exigiría predicción más estrecha. La separación de navegación, primer mensaje y match se documentó explícitamente en Hitsch et al. (2010), antes del programa ESBM. No reivindicar originalidad general de la cadena. Rios–Saban–Zheng (online 2022) probó algoritmo con exposición e historial de matches en dos intervenciones de mercado; Rios–Torrico 2023 ya formaliza secuencialidad y direcciones del flujo. ESBM no reivindica novedad de optimización de exposición y reciprocidad ni de feedback por matches. External 2024 intervention already studies a causal micro-interaction influence independent of pre-exposure sorting. ESBM has not yet included an observed micro-behavior intervention; adding smiles alone would lack originality. ICONIP 2020 MotifGNN already models reciprocal recommendation over user directed interaction graphs with degree/motif structure. Our degree-conditioned reciprocity finding does not establish a new theory: it is a data-quality/control exercise on published dataset. Su & Hu 2019 already used ratios click/rec and msg/rec as popularity and modeled target and sender attributes and network centrality; 2020 MotifGNN already modeled mutual interaction graph. N82 smooth target CTR out-of-actor predictive advantage is not a new theoretical mechanism or 2/3. Contest researchers in 2011 already studied ranking profiles by expected click/msg, including RankSVM, Bayesian Regression Trees and simple popularity voting; source 2012 participant explicitly discusses click/rec and msg utilities. A generic target-click-rate advantage N82 is not novel and must be compared against original NDCG@10 or stronger actor-target/context models before any novelty claim.",
       "evidence_sources": [
         "SRC001",
         "SRC002",
@@ -37,9 +37,13 @@
         "SRC057",
         "SRC059",
         "SRC060",
-        "SRC061"
+        "SRC061",
+        "SRC062",
+        "SRC063",
+        "SRC064",
+        "SRC065"
       ],
-      "last_update_id": "U081",
+      "last_update_id": "U086",
       "uncertainty": "Not probabilistically calibrated; evidence heterogeneous and some sources only metadata",
       "next_falsifier_or_test": "Find a preregistered prediction NOT covered by published mating-market literature and independently validate",
       "numeric_probability": null,
@@ -51,9 +55,10 @@
         "U059",
         "U068",
         "U076",
-        "U081"
+        "U081",
+        "U086"
       ],
-      "latest_evidence_summary": "Prior art strong; new access and reanalysis without independent novel causal mechanism gives no novelty upgrade.",
+      "latest_evidence_summary": "Strengthened early priority of opportunity-conditioned popularity/ranking; novel ESBM causal claim still 0/3.",
       "last_revised_at": "2026-10-29"
     },
     {
@@ -109,7 +114,7 @@
       "id": "P-OPPORTUNITY",
       "question": "La red de perfiles mostrados es necesaria para separar preferencias de exposición",
       "status": "RECORDED_RECOMMENDATION_RISK_SET_WITHOUT_VERIFIED_ATTENTION",
-      "rationale": "Dos fuentes speed dating incluyen citas efectivas; fuente checa reporta intentos pero no perfiles vistos; sin no-interacciones observadas el denominador de riesgo se desconoce. El artículo Hitsch 2010 sí observó perfiles visitados antes de contacto; el archivo original de observaciones sigue inaccesible y se desconoce si el paquete E112322V1 las conserva; por ello la falta de denominador a nivel de nuestras muestras permanece. La oportunidad observada como conjuntos diarios de perfiles ofrecidos es medición practicable en plataformas reales pero su asignación es endógena a algoritmos y preferencias; condicionar por visita/no visitar no identifica el efecto de exposición per se. 8.36 million 'rec' records recovered in independent source with no verified definition of an actually seen candidate; excluding them exposes severe risks from equating graph relation with opportunity. Even if rec means recommendation, logged placement may differ from seen profile. SSJY train.txt 8,366,058 unique (actor,target,round) rec records and source generated_graph.py strips ROUND in derived relations.csv. Access opens opportunity-conditioned recorded candidate risk set, but actual attended/viewed impression and nonclick intention remain unobserved. 92.0% of unique click triples map to same-round rec.",
+      "rationale": "Dos fuentes speed dating incluyen citas efectivas; fuente checa reporta intentos pero no perfiles vistos; sin no-interacciones observadas el denominador de riesgo se desconoce. El artículo Hitsch 2010 sí observó perfiles visitados antes de contacto; el archivo original de observaciones sigue inaccesible y se desconoce si el paquete E112322V1 las conserva; por ello la falta de denominador a nivel de nuestras muestras permanece. La oportunidad observada como conjuntos diarios de perfiles ofrecidos es medición practicable en plataformas reales pero su asignación es endógena a algoritmos y preferencias; condicionar por visita/no visitar no identifica el efecto de exposición per se. 8.36 million 'rec' records recovered in independent source with no verified definition of an actually seen candidate; excluding them exposes severe risks from equating graph relation with opportunity. Even if rec means recommendation, logged placement may differ from seen profile. SSJY train.txt 8,366,058 unique (actor,target,round) rec records and source generated_graph.py strips ROUND in derived relations.csv. Access opens opportunity-conditioned recorded candidate risk set, but actual attended/viewed impression and nonclick intention remain unobserved. 92.0% of unique click triples map to same-round rec. A candidate appears by recommendation in a page position with a photo; user can ignore or not attend, so rec includes opportunities presented/recorded rather than proven perceived impressions. Per-user ROUND order is sequential but lag between rounds depends on logins/navigation and is not a common calendar timestamp. Source 2012 warns nonclick rec can mean attention or distraction rather than conscious rejection.",
       "evidence_sources": [
         "SRC021",
         "SRC030",
@@ -123,9 +128,11 @@
         "SRC055",
         "SRC059",
         "SRC060",
-        "SRC061"
+        "SRC061",
+        "SRC064",
+        "SRC065"
       ],
-      "last_update_id": "U079",
+      "last_update_id": "U087",
       "uncertainty": "Not probabilistically calibrated; evidence heterogeneous and some sources only metadata",
       "next_falsifier_or_test": "Independent prospective data with matched risk set, competent adversarial controls and documented sample selection",
       "numeric_probability": null,
@@ -137,9 +144,10 @@
         "U056",
         "U063",
         "U074",
-        "U079"
+        "U079",
+        "U087"
       ],
-      "latest_evidence_summary": "Recorded offers per actor-round are measured, genuine improvement over pure click/msg graph, yet not certified human visual attention or randomized exposure.",
+      "latest_evidence_summary": "Original contest documentation corroborates denominator of assigned/displayed recommendations, not verified visual attention, explicit no or temporal causal opportunity.",
       "last_revised_at": "2026-10-29"
     },
     {
@@ -261,7 +269,7 @@
       "id": "P-DYADIC_ACCESS",
       "question": "Hay nuevas fuentes diádicas originales con datos descargados y suficiente temporalidad/exposiciones",
       "status": "PARTIAL_ROUND_ACTION_ACCESS_NO_EXPLICIT_REJECTION_OR_UNION",
-      "rationale": "Columbia y Mixmosa tienen sí/no cruzados, pero Essex/eHarmony/OSF checo no procesados; ninguna satisface exposición completa + ex ante popularity. Los investigadores Rios sí dispusieron de exposiciones y decisiones diádicas históricas de una app real, pero fueron datos de industria no compartidos con nuestro proyecto. La disponibilidad de un instrumento publicado no equivale a acceso actual a filas. The original authors provide analysis code and a link to data at Archive.org, not a reachable CSV in our environment; sample has repeated encounters but does not measure app algorithm exposure or longitudinal relationship stability. Author-released original SSJY action graph is now physically inspected (SHA256 recorded) with 232954 click/msg events, 177413 distinct directed links, but has no documented candidate exposure denominator, no time or paired explicit rejection. 'rec' type may represent recommendation, yet its semantics and observer coverage are unverified. Event record includes actor, target, ordinal within-actor ROUND, rec/click/msg. Real rows processed with aggregate-only outputs. No explicit reject/no-like, verified reciprocal mutual like, absolute time or relationship duration. Not sufficient for original ESBM full multi-stage causal estimand.",
+      "rationale": "Columbia y Mixmosa tienen sí/no cruzados, pero Essex/eHarmony/OSF checo no procesados; ninguna satisface exposición completa + ex ante popularity. Los investigadores Rios sí dispusieron de exposiciones y decisiones diádicas históricas de una app real, pero fueron datos de industria no compartidos con nuestro proyecto. La disponibilidad de un instrumento publicado no equivale a acceso actual a filas. The original authors provide analysis code and a link to data at Archive.org, not a reachable CSV in our environment; sample has repeated encounters but does not measure app algorithm exposure or longitudinal relationship stability. Author-released original SSJY action graph is now physically inspected (SHA256 recorded) with 232954 click/msg events, 177413 distinct directed links, but has no documented candidate exposure denominator, no time or paired explicit rejection. 'rec' type may represent recommendation, yet its semantics and observer coverage are unverified. Event record includes actor, target, ordinal within-actor ROUND, rec/click/msg. Real rows processed with aggregate-only outputs. No explicit reject/no-like, verified reciprocal mutual like, absolute time or relationship duration. Not sufficient for original ESBM full multi-stage causal estimand. Although MotifGNN 2020 exposes SSJY through public Google Drive and N81/N82 were processed locally, original 2012 participant instructions restrict contest dataset to competition analysis/modeling and say scientific publication needs Shanghai Huaqianshu authorization. This is historical evidence, not a present formal license. Current rights unverified; no further research use or dissemination should proceed until rightsholder confirms. No original rows in GitHub.",
       "evidence_sources": [
         "SRC010",
         "SRC011",
@@ -281,9 +289,11 @@
         "SRC056",
         "SRC057",
         "SRC059",
-        "SRC061"
+        "SRC061",
+        "SRC062",
+        "SRC064"
       ],
-      "last_update_id": "U080",
+      "last_update_id": "U088",
       "uncertainty": "Not probabilistically calibrated; evidence heterogeneous and some sources only metadata",
       "next_falsifier_or_test": "Independent prospective data with matched risk set, competent adversarial controls and documented sample selection",
       "numeric_probability": null,
@@ -302,9 +312,10 @@
         "U062",
         "U069",
         "U072",
-        "U080"
+        "U080",
+        "U088"
       ],
-      "latest_evidence_summary": "Real source event-grain access improved, but dyadic preference and relationship stages not identified.",
+      "latest_evidence_summary": "Data access is genuine but original rightsholder research/publication permission is unresolved, so the available rows fail a stringent publication-permission gate.",
       "last_revised_at": "2026-10-29"
     },
     {
@@ -616,15 +627,16 @@
       "id": "P-LONGITUDINAL-ELIGIBILITY",
       "question": "¿Existe una cohorte humana independiente con duración y formación de relaciones que permita una falsación del módulo ESBM de ruptura sin confundir reciprocidad con pareja estable?",
       "status": "DOCUMENTED_SAMPLE_RAW_NOT_INSPECTED",
-      "rationale": "HCMST 2017–2022 es un panel original de Stanford con preguntas de cómo se conocen las parejas y seguimiento 2020/2022, pero el archivo no ha sido descargado; sin esquema real no puede calibrarse ni estimarse la hazard. pairfam (Alemania) añade otra cohorte longitudinal independiente y respuestas del miembro de la pareja, pero sigue sin acceso a filas ni estimación. Stanford explicita cuestionario de relaciones a sujetos con pareja vigente (2862) y sin actual pero con pareja anterior (541), cambiando el riesgo de excluir automáticamente historias de ruptura; no se ha examinado su distribución por ola. The FReDA/pairfam Campus Use File is explicitly limited to teaching and is a reduced subset of the SUF; GESIS instructs scientific publications to use an appropriately licensed SUF rather than CUF. This source is same pairfam panel, not independent.",
+      "rationale": "HCMST 2017–2022 es un panel original de Stanford con preguntas de cómo se conocen las parejas y seguimiento 2020/2022, pero el archivo no ha sido descargado; sin esquema real no puede calibrarse ni estimarse la hazard. pairfam (Alemania) añade otra cohorte longitudinal independiente y respuestas del miembro de la pareja, pero sigue sin acceso a filas ni estimación. Stanford explicita cuestionario de relaciones a sujetos con pareja vigente (2862) y sin actual pero con pareja anterior (541), cambiando el riesgo de excluir automáticamente historias de ruptura; no se ha examinado su distribución por ola. The FReDA/pairfam Campus Use File is explicitly limited to teaching and is a reduced subset of the SUF; GESIS instructs scientific publications to use an appropriately licensed SUF rather than CUF. This source is same pairfam panel, not independent. Diverse Data Hub HCMST 2022 derived CSV has 1,328 observations, 21 relationship quality/duration/behavior variables; it is a cross-sectional reduced version of the existing 2017–2022 cohort, not a fresh follow-up sample and not a complete survival risk set. CSV data were not fetched; no hazard/censoring constructed.",
       "evidence_sources": [
         "SRC048",
         "SRC049",
         "SRC051",
         "SRC052",
-        "SRC058"
+        "SRC058",
+        "SRC066"
       ],
-      "last_update_id": "U070",
+      "last_update_id": "U089",
       "uncertainty": "Cohorte fuente validada documentalmente; acceso, pesos completos, definiciones de ruptura y seguimiento pendiente de inspección.",
       "next_falsifier_or_test": "Adquirir legítimamente archivo Stanford v2.2 y codebook v2.3, revisar pesos y variable de continuidad con campos longitudinales, prerregistrar sobrevivencia a corte 2020/2022 y contrastar con baseline de supervivencia sin app. Priorizar obtener un SUF registrado de pairfam si interesa contraste actor/partner, respetando atrición, censoring, y olas de biopart.",
       "numeric_probability": null,
@@ -633,10 +645,11 @@
         "U047",
         "U053",
         "U058",
-        "U070"
+        "U070",
+        "U089"
       ],
-      "latest_evidence_summary": "Teaching-only Campus data may help pipeline training but not independent scientific validation; SUF license still required.",
-      "last_revised_at": "2026-10-28"
+      "latest_evidence_summary": "HCMST derivative is no independent cohort and cannot identify relationship hazard or multi-stage reciprocity; no change.",
+      "last_revised_at": "2026-10-29"
     },
     {
       "id": "P-DYADIC-PANEL",
@@ -700,52 +713,61 @@
     {
       "id": "P-ACTION-SEMANTICS",
       "question": "¿Puede una arista recíproca de un grafo mixto de recomendaciones, clics y mensajes tratarse como aceptación mutua?",
-      "status": "PARTIALLY_CLARIFIED_BY_SOURCE_ANALOGUE_NOT_VERIFIED_SAME_EXTRACT",
-      "rationale": "Independent real SSJY archive has actions rec=8,366,058, click=184,291, msg=48,663; using all edges created a spuriously interpretable reciprocity rate 1.5704%, but the prereg click/msg-only result was 0.05862% directed arc reciprocity, just 52 mutual click/msg dyads. The two statistics address different variables; neither establishes match formation. A rec type could be an offer/exposure but codebook does not document delivery vs viewing. Initial all-actions analysis invalidated transparently and repaired. Source publication Su & Hu 2019 defines rec as candidate recommended/shown at homepage; click as opening target profile and msg as internal message. Original SSJY raw train.txt has identical action labels and actor-target-ROUND records but size differs, so identical extraction/platform not proved. Absence of click still not explicit rejection.",
+      "status": "HISTORICAL_COMPETITION_WORKFLOW_IDENTIFIED_NOT_VERIFIED_ATTENTION",
+      "rationale": "Independent real SSJY archive has actions rec=8,366,058, click=184,291, msg=48,663; using all edges created a spuriously interpretable reciprocity rate 1.5704%, but the prereg click/msg-only result was 0.05862% directed arc reciprocity, just 52 mutual click/msg dyads. The two statistics address different variables; neither establishes match formation. A rec type could be an offer/exposure but codebook does not document delivery vs viewing. Initial all-actions analysis invalidated transparently and repaired. Source publication Su & Hu 2019 defines rec as candidate recommended/shown at homepage; click as opening target profile and msg as internal message. Original SSJY raw train.txt has identical action labels and actor-target-ROUND records but size differs, so identical extraction/platform not proved. Absence of click still not explicit rejection. Original 2011 contest announcement plus contemporary participant technical report describe Jiayuan A→B rec (photo appears in recommended position), click (opens detailed profile), msg (in-platform mail), and within-A sequential ROUND. Independent historical teaching slide transcript matches precisely 8,599,012, 8,366,058 rec, 184,291 click, 48,663 msg and 59,921 users to author-released SSJY ZIP. Strongly identifies exact historical contest line, not direct audit of current server, whether each rec was rendered or actually viewed, and not evidence of bilateral acceptance.",
       "evidence_sources": [
         "SRC059",
         "SRC060",
-        "SRC061"
+        "SRC061",
+        "SRC062",
+        "SRC063",
+        "SRC064",
+        "SRC065"
       ],
-      "last_update_id": "U078",
+      "last_update_id": "U084",
       "uncertainty": "Action semantics are incompletely documented, no raw permission to distribute, no negative action nor timestamps; even click could mean curiosity, not consent, and reverse click can be triggered by source recommendation behavior.",
       "next_falsifier_or_test": "Obtain author codebook and event provenance explaining rec, click and msg including context and timestamps; verify true shown/clicked/replied denominator then compare competent matching and sociological alternatives.",
       "numeric_probability": null,
       "CT2_is_not_this_prior": true,
       "update_ids": [
         "U077",
-        "U078"
+        "U078",
+        "U084"
       ],
-      "latest_evidence_summary": "Adjacent original paper clarifies rec/click/msg semantics; exact mapping to SSJY not verified, cannot infer match from reciprocal clicks.",
+      "latest_evidence_summary": "2011 Jiayuan contest genealogy now strongly grounded by exact data fingerprint and contemporaneous documents, but no implicit negative preference or consent to use.",
       "last_revised_at": "2026-10-29"
     },
     {
       "id": "P-SSJY-OFFER-CONVERSION",
       "question": "Within real recorded recommendation sets, is target-specific propensity to be clicked predictive for previously unseen actors beyond a common incidence and coarse target-exposure/round groups?",
       "status": "OBSERVED_INTERNAL_ACTOR_HOLDOUT_PREDICTION_ONLY",
-      "rationale": "Original SSJY data have ~8.37 million recorded rec offers with ROUND; unique candidate click attached in same round 1.9807%. Splitting actors 80/20 by fixed salted SHA256 and smoothing training target click-through alpha20 gives heldout 3004 actors, 1.705m offered triples; logloss .087753 vs .095385 global, gain .007632, 100 actor-cluster bootstrap CI [.006976,.008476]. Posthoc stronger baseline of target exposure-frequency x round groups (256 bins, smoothing 100) logloss .094492, target CTR still gains .006739, CI [.005870,.007727]. No random assignment, no actual attended impression, no explicit rejection or mutually formed union. Similar click/rec predictors were previously published (Su & Hu 2019). Descriptive repeated rec first click 2.491% vs later 1.277% is not a causal effect.",
+      "rationale": "Original SSJY data have ~8.37 million recorded rec offers with ROUND; unique candidate click attached in same round 1.9807%. Splitting actors 80/20 by fixed salted SHA256 and smoothing training target click-through alpha20 gives heldout 3004 actors, 1.705m offered triples; logloss .087753 vs .095385 global, gain .007632, 100 actor-cluster bootstrap CI [.006976,.008476]. Posthoc stronger baseline of target exposure-frequency x round groups (256 bins, smoothing 100) logloss .094492, target CTR still gains .006739, CI [.005870,.007727]. No random assignment, no actual attended impression, no explicit rejection or mutually formed union. Similar click/rec predictors were previously published (Su & Hu 2019). Descriptive repeated rec first click 2.491% vs later 1.277% is not a causal effect. The 2011 original contest scored candidate ranking with NDCG@10 using action grades rec=0, click=1, msg=2. Contemporary contestant reports weighted popularity voting and profile content baselines before 2020 MotifGNN and long before ESBM. N82 compares within-cohort logloss but not published NDCG@10 or these original strong popularity/content baselines. A contemporary participant asserts rights of publication require company authorization; rightsholder current terms not verified. Do not cite N82 as publication-authorized original result.",
       "evidence_sources": [
         "SRC060",
-        "SRC061"
+        "SRC061",
+        "SRC063",
+        "SRC064",
+        "SRC065"
       ],
-      "last_update_id": "U083",
+      "last_update_id": "U085",
       "uncertainty": "Potential selection from recommender, repeat exposure nonrandom, unverified co-source 2019, time/actor overlap and smoothing; no proper external platform holdout. Bootstrap covers heldout actor clustering only, not source/platform shifts. Posthoc baseline not new preregistered test.",
       "next_falsifier_or_test": "Independent legally obtained platform impression logs that verify actual rendered recommendations and explicit yes/no outcomes, actor/time holdout, strong matching baselines with target, actor and content attributes; independent controlled platform exposure intervention with relationship follow-up.",
       "numeric_probability": null,
       "CT2_is_not_this_prior": true,
       "update_ids": [
-        "U083"
+        "U083",
+        "U085"
       ],
-      "latest_evidence_summary": "Target CTR improves out-of-actor prediction conditioned on actual rec records; confirms distinct descriptive stage, no causal effect or 2/3 novelty.",
+      "latest_evidence_summary": "N82 remains a real internal exploratory/benchmark calculation, not novel or publishable until data rights cleared; comparison to original NDCG and content models never executed.",
       "last_revised_at": "2026-10-29"
     }
   ],
   "audit": {
     "all_priors_linked": true,
-    "source_ids_linked": 61,
-    "registered_sources": 61,
-    "update_events": 83,
-    "counts_as_new_AB_cycle": true,
-    "last_update": "2026-10-29 N82 REAL SSJY ROUND-CONDITIONED RISK SET"
+    "source_ids_linked": 66,
+    "registered_sources": 66,
+    "update_events": 89,
+    "counts_as_new_AB_cycle": false,
+    "last_update": "2026-10-29 POST-N82 RIGHTS_AND_ORIGINAL_2011_CONTEST_PROVENANCE_NONCYCLE"
   }
 }
