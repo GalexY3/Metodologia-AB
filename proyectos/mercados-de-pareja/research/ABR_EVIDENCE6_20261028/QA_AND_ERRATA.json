@@ -1,0 +1,58 @@
+{
+  "campaign": "ABR-EVIDENCE6-20261028",
+  "date": "2026-10-28",
+  "source_file": "experiment.py",
+  "source_commit": "746221a2e570c34ade50cc7c58ecf3f683d41a94",
+  "precommit": "4c8cf495326d28faa8ae3ccb42c0b99469655e6c",
+  "freeze_commit": "792ff4393701e5021d40aa5dd8bcd3b77efb0653",
+  "sha256_python": "2028d687102c211a2bc31994a80985d643aaf48752a5da21b3bf5ae0e1072dc3",
+  "bytes_actual": 6972,
+  "bytes_recorded_freeze": 6909,
+  "erratum": "Original freeze manifest size was a typo, SHA-256 source correct, full Python source GitHub exactly matched local FNV-32 687520507 before upload; no source edits after freeze",
+  "checks": [
+    {
+      "name": "DA blocking-pairs",
+      "value": 0,
+      "passed": true
+    },
+    {
+      "name": "N18 constant q sync vs async-persistent",
+      "value": "exact same matches and r,gap for each seed",
+      "passed": true
+    },
+    {
+      "name": "N18 planned directed exposures",
+      "value": 4800,
+      "passed": true
+    },
+    {
+      "name": "Repeated local runs",
+      "value": "RUNS.csv and QA.json identical byte-by-byte",
+      "passed": true
+    },
+    {
+      "name": "External clean-clone",
+      "value": "NOT_VERIFIED",
+      "passed": false
+    }
+  ],
+  "seeds": [
+    1103,
+    2207,
+    3301,
+    4409,
+    5501
+  ],
+  "run_count": 45,
+  "limitations": [
+    "N18 matching delayed until all exposures, no endogenous exit during swipes",
+    "N18 TTL five per-agent exposure positions, not actual timestamps",
+    "N17 full graph known ex ante but DA optimizes ex post, others commit irrevocably",
+    "Sparse matching in N18 static TTL makes r volatile",
+    "Synthetic U[0,1] attributes and binary heterosexual pairing not Spanish data"
+  ],
+  "file_hashes": {
+    "runs": "dd8da7f555218d0f3a21a021913aaace79d34aa77fe11c263d893a8e5a209d88",
+    "summary": "afa5a7635b055cc58efbbe2c0fe641c1aa111b0e6eb230f701c0fa742a82e233"
+  }
+}
