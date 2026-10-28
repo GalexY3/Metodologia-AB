@@ -3,7 +3,7 @@
   "project": "mercados-de-pareja",
   "date": "2026-10-28",
   "scope": "Retrospective provenance backfill from repository reports plus N56/N57 publisher audit. Original data never copied; not systematic or claim of accessing raw data for bibliography.",
-  "source_count": 58,
+  "source_count": 59,
   "sources": [
     {
       "id": "SRC001",
@@ -1145,7 +1145,33 @@
       "same_study_as": "SRC051/SRC052",
       "falsifier": "Obtain valid SUF agreement and data for approved purpose and inspect wave/censoring before statistical inferencing.",
       "verified_at": "2026-10-28"
+    },
+    {
+      "id": "SRC059",
+      "title": "Luo, Liu, Peng, Ying and Zhang (2020), A Motif-Based Graph Neural Network to Reciprocal Recommendation for Online Dating, with original authors' public SSJY action graph",
+      "canonical_url": "https://doi.org/10.1007/978-3-030-63833-7_9",
+      "code_url": "https://github.com/RManLuo/MotifGNN",
+      "public_data_url": "https://drive.google.com/file/d/1u-59m0u5-pcF4TCN6zjGLICWFdQteCUG/view?usp=sharing",
+      "cycle_ids": [
+        "N81"
+      ],
+      "source_type": "AUTHOR_RELEASED_REAL_DATING_DIRECTED_ACTION_GRAPH_RAW_BYTES_READ_AGGREGATE_EMPIRICAL_REANALYSIS",
+      "published": "2020 ICONIP II pp. 102–114",
+      "audit_commit": "9ce043bfe1a0b9737e664bb3c4d17e765b5dc96c",
+      "archive_sha256": "23cff03451b13f94354d875e777f60e1c63224829f42b8adf9d73d7563812e24",
+      "zip_bytes": 87463480,
+      "source_inventory": "sjjy_data/relations.csv, users.csv, train.txt, train_data.csv, test_data.csv, preference files, bundled code and pickle; pickle NEVER executed. Graph has 8,599,012 action records of which rec=8,366,058, click=184,291, msg=48,663; 59,921 users across all actions, 36,432 click/msg.",
+      "actual_original_rows_processed": 8599012,
+      "raw_data_republished": false,
+      "what_it_supports": "On click/msg-only graph, 232,954 events yield 177,413 unique directed arcs and 52 two-way click/msg dyads, arc reciprocity 0.0005862; 30 exact event-stub in/out-degree permutation null mean 0.00016746, max 0.00023428, Monte Carlo p-upper 1/31. Repaired after original code erroneously included rec, both original and repair commits saved. Source is independent of Columbia, Mixmosa, Rios and HCMST cohorts. Original paper studies network motifs/recommendation, so this is not an original new matching theory.",
+      "critical_measurement": "rec action meaning NOT VERIFIED; 8.366M rec excluded from primary. Reverse click/msg means two logged directed actions, not swipes accepted, match or durable relationship. 15k train and 3,750 test rows are artificially 50:50 balanced and correspond poorly to click/msg-only reciprocals; original labels were derived using reverse ANY edge. Not a clean independent predictive test, do not report AUC or rec-user effects.",
+      "limits": "Degree-only stub permutation ignores sex segregation, algorithms, opportunity sets, spatial/institutional constraints and temporal ordering; many edges are duplicates; 30 nulls give coarse Monte Carlo resolution; statistic not causal nor a test of ESBM superiority. No documentation of true exposures/nonclicked profiles or explicit declined candidates. Raw archive has no separate LICENSE in original GitHub; public authored link does not grant unqualified redistribution, keep aggregate-only publication and confirm consent terms for wider use.",
+      "data_reuse_rights": "PUBLIC_AUTHOR_LINK_FOR_ACCESS; STANDALONE_DATA_LICENSE_NOT_FOUND; REDISTRIBUTION_NOT_ASSUMED",
+      "verified_at": "2026-10-28",
+      "result_path": "research/ABR_REAL_GRAPH_N81_20261028/RESULTS_AGGREGATE.json",
+      "source_code_repair": "research/ABR_REAL_GRAPH_N81_20261028/audit_reciprocity_REPAIR.py",
+      "falsifier": "Obtain codebook explicitly decoding rec and labels, timestamp and candidate exposure, then use truly matched risk sets, separable click/msg and degree+block-preserving null; independent external heldout and actual durable couples require further data."
     }
   ],
-  "last_added_campaign": "N80"
+  "last_added_campaign": "N81"
 }
