@@ -4,15 +4,15 @@
   "project": "mercados-de-pareja",
   "branch": "research/ab-r-mercados-pareja-20261028",
   "authorized": 20,
-  "completed_valid": 17,
+  "completed_valid": 18,
   "invalid_attempts": 1,
-  "planning_cycles": 1,
+  "planning_cycles": 2,
   "documentary_cycles": 3,
   "formal_cycles": 1,
   "synthetic_cycles": 1,
   "reanalysis_cycles": 1,
-  "remaining_authorized_not_started": 3,
-  "R5": "STOP_LOCAL_AFTER_17_TOTAL_VALID__3_UNSTARTED__NEW_SOURCE_MIXMOSA_OBSERVATIONAL",
+  "remaining_authorized_not_started": 2,
+  "R5": "STOP_R5_AFTER_18_VALID__2_UNSTARTED__SECOND_SOURCE_NOT_ANALYSABLE",
   "prereg_commit": "8949077025a8d585fecdc3cec09ec13710cd5a72",
   "source_freeze_commit": "f7e8e2d6328ffda72745e1018625bf6464ae2dcc",
   "source_commit": "5d8a3291fa73eff1a3a20468a38aa85cef575bbb",
@@ -24,6 +24,7 @@
   "CT2": {
     "start": 17,
     "after_each_cycle": [
+      17,
       17,
       17,
       17,
@@ -483,6 +484,35 @@
       "N1_id": null,
       "subcampaign": "ABR-REALDATA13-20261028",
       "ledger_path": "proyectos/mercados-de-pareja/research/ABR_REALDATA13_20261028/LEDGER.json"
+    },
+    {
+      "id": "N38",
+      "kind": "PLANNING_AB_ONLY",
+      "stage": "COMPLETED_ACCESS_GATE",
+      "A_question": "Is a second genuine independent diadic source accessible for an untouched replication of Mixmosa's accepted-pair popularity and within-event null?",
+      "B_rivals": "H1 complete paired positive/negative individual decisions available and measurable; H0 publicly described datasets lack accessible full bytes or necessary joint identifiers, so empirical replication is blocked",
+      "C_discriminant": "Both participant IDs per encounter, event, both unilateral votes, enough repeated exposures for focal-dyad-excluded popularity; verify source bytes and record grain/discordance before outcome analysis",
+      "D_instrument": "Attempted official Essex binary XLSX via HTTPS, eHarmony catalog/gzip links, Columbia full GitHub CSV with range/base64, reduced Columbia CSV via GitHub, Columbia cleaned Parquet binary via connector. Existing prereg N38 planned external gate and no sampling analysis this turn.",
+      "E_actual": "Essex/eHarmony binary bytes not fetched; original Columbia 8378x195 catalog but GitHub connector returned empty text; reduced Columbia CSV fetched and checked 8378x15, lacking pid, match, wave, dec_o; clean Parquet fetched encoded as 403601-base64-char response but binary could not be materialized/parsed/validated. No second source analyzed with full paired outcomes.",
+      "F_adversarial": "Cannot compare unilateral acceptance rate in reduced Columbia with Mixmosa event-conditioned bilateral null. Columbia original has published warnings about inconsistencies of dec and dec_o. Even a full Columbia reanalysis would be separate speed dating in US 2002-04, not replicate Spanish Tinder or reputation status loss.",
+      "G_independence": "Source exploration independent of Mixmosa data but NO independent empirical matching result nor formal external replication of model.",
+      "H_update": "Gate to N39 requires accessible verified full pair table (or equivalent) with two-sided decisions, participant IDs, event, source revision/hash, license and QA. Keep two authorized slots unstarted.",
+      "I_grade": "PLANNING_VALID_WITH_DATA_ACCESS_BLOCKER; scientific 0/3, N1=0, N2=N3=0",
+      "J_decision": "STOP_R5; do not run N39/N40 without new file access and a preregistered comparability check",
+      "ct2_before": 17,
+      "ct2_after": 17,
+      "drift": "D0; same scientific question",
+      "source_refs": [
+        "https://researchdata.essex.ac.uk/85/",
+        "https://brianmcfee.net/data/eharmony.html",
+        "https://github.com/datasets/speed-dating",
+        "https://github.com/keithmcnulty/speed_dating",
+        "https://github.com/ZharlieSineFine/Speed-Dating-Reciprocal-Recommender-System",
+        "https://statmodeling.stat.columbia.edu/2015/08/01/if-you-leave-your-datasets-sitting-out-on-the-counter-they-get-moldy/"
+      ],
+      "readme": "GATE_REPORT.md",
+      "experiment_executed": false,
+      "subcampaign": "ABR_REPLICATION_GATE_20261028"
     }
   ],
   "real_data_continuation": {
@@ -494,5 +524,6 @@
     "new_data_kind": "Observed in-person dates; not Tinder nor Spain",
     "prereg": "../ABR_REALDATA13_20261028/PREREG.json",
     "report": "../ABR_REALDATA13_20261028/REPORT.md"
-  }
+  },
+  "second_source_gate": "research/ABR_REPLICATION_GATE_20261028/LEDGER.json"
 }
