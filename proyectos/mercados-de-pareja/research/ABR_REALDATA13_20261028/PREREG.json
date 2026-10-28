@@ -1,0 +1,164 @@
+{
+  "schema": "ab.research.campaign.v1",
+  "campaign_id": "ABR-REALDATA13-20261028",
+  "parent": "ABR-EVIDENCE20-20261028",
+  "date": "2026-10-28",
+  "branch": "research/ab-r-mercados-pareja-20261028",
+  "authorization": "13 unused slots already granted in EVIDENCE20 and explicitly requested to resume by user",
+  "budget": {
+    "previous_valid": 7,
+    "remaining": 13,
+    "new_authorized": 0
+  },
+  "policy": "R5 can stop early; individually count only completed A-J; no human causal findings from observational data",
+  "source": {
+    "primary": "https://github.com/dankras/mixmosa-anonymized-data",
+    "files": [
+      "csv/interactions.csv",
+      "csv/user_features.csv",
+      "csv/swiping.csv"
+    ],
+    "source_blobs": {
+      "interactions.csv": "c4aba45888dc07573b6bd12554f73fb57ebb0479",
+      "user_features.csv": "99679f0e33b55099a4a0705810dd9771019554d0",
+      "swiping.csv": "2820b902bd4a80d57008c03aa0c4e0ff927f6639"
+    },
+    "primary_caveat": "speed dating offline, 8 minutes not Tinder; publicly shared anonymized data; no explicit license found in repo, only aggregate outputs and hashes rehosted"
+  },
+  "analysis": {
+    "random_seed": 20261028,
+    "permutation_reps": 1000,
+    "primary_endpoints": [
+      "event-weighted excess mutual interest rate",
+      "event-permutation p value exploratory",
+      "coverage/dyadic decision completeness"
+    ],
+    "secondary_endpoints": [
+      "photo attractiveness by sex among observed eligible features",
+      "income/age selection and missingness",
+      "event-stratified vs global null for popularity matching"
+    ],
+    "privacy": "Do not commit or expose raw individual identifiers or person-level responses to user's AB repo; only derived aggregate evidence and link to original source",
+    "selection_exposure": "prior source selection adapted from repeated unsuccessful Essex retrieval; treat entire analysis exploratory, multiple tested endpoints, no new empirical causal estimand"
+  },
+  "cycles": [
+    {
+      "id": "N28",
+      "type": "DOCUMENTARY_AB",
+      "A": "Obtain and verify actual public dyadic source and ethics/licence",
+      "B": "Dataset is genuinely dyadic and contains decisions from both participants versus publicity without usable records",
+      "C": "Pin GitHub source blob IDs, files, metadata; confirm Essex binary still inaccessible; check licence and privacy; no republication of person-level attributes",
+      "D": "GitHub source via connector, aggregate-only output, check each prerequisite and record invalid/blocked gates",
+      "status": "PREREG_NOT_EXECUTED"
+    },
+    {
+      "id": "N29",
+      "type": "DATA_QUALITY_AB",
+      "A": "Validate joint grain, IDs, duplicate dyads, missing data and event coverage",
+      "B": "Interpretable dates versus broken joins, missing responses or duplicated exposure",
+      "C": "Full scan 3 CSVs, exact counts unique IDs/edges/sex/events, missingness and agreement between mutually recorded flags; duplicates gate: no inferential contrasts if >5% unresolved",
+      "D": "GitHub source via connector, aggregate-only output, check each prerequisite and record invalid/blocked gates",
+      "status": "PREREG_NOT_EXECUTED"
+    },
+    {
+      "id": "N30",
+      "type": "EMPIRICAL_AB",
+      "A": "Assess whether mutual liking exceeds independence on observed encounter network",
+      "B": "H0 event-conditional independence, H1 assortative dyadic compatibility beyond event composition",
+      "C": "P(M=yes & W=yes) vs event-wise product P(M=yes|event)*P(W=yes|event); 1000 within-event permutations of women's decisions, fixed observed encounters; report effect and null distribution, cluster-event interpretation, no causal claim",
+      "D": "GitHub source via connector, aggregate-only output, check each prerequisite and record invalid/blocked gates",
+      "status": "PREREG_NOT_EXECUTED"
+    },
+    {
+      "id": "N31",
+      "type": "EMPIRICAL_AB",
+      "A": "Test pooled association with observed, independent photo attractiveness",
+      "B": "H0 no correlation between partner attractiveness and received like, H1 positive descriptive association",
+      "C": "For each directed decision with observed independent opposite party photo rating, estimate like-rate by bins, rank-correlation and event-stratified contrast; exclude missing ratings; do not claim causal effect",
+      "D": "GitHub source via connector, aggregate-only output, check each prerequisite and record invalid/blocked gates",
+      "status": "PREREG_NOT_EXECUTED"
+    },
+    {
+      "id": "N32",
+      "type": "EMPIRICAL_AB",
+      "A": "Separate status proxy income from appearance and age",
+      "B": "H0 self-reported income predictive as strongly as looks; H1 incomplete measurement and small selected samples",
+      "C": "Define income ordinal 1..9 per README; examine completeness and per-sex like-rate by income quartile plus age gap; only if adequate n>=100 and 3 levels, else gate block",
+      "D": "GitHub source via connector, aggregate-only output, check each prerequisite and record invalid/blocked gates",
+      "status": "PREREG_NOT_EXECUTED"
+    },
+    {
+      "id": "N33",
+      "type": "EMPIRICAL_AB",
+      "A": "Compare observed pairs to within-event opportunity null, avoiding global random baseline",
+      "B": "H0 matching subset r(value popularity male, female) attributable to event structure; H1 excess beyond event-stratified pairing",
+      "C": "Value proxy cross-fitted / leave-one-dyad-out received-like rate from other encounters (>=3 exposures), compare mutual pairs to event-stratified edge-resampling / conditioning. Gate if viable sample <60 mutual pairs with both proxies or <5 events.",
+      "D": "GitHub source via connector, aggregate-only output, check each prerequisite and record invalid/blocked gates",
+      "status": "PREREG_NOT_EXECUTED"
+    },
+    {
+      "id": "N34",
+      "type": "REANALYSIS_AB",
+      "A": "Reconcile mutual interest column and directional swipes",
+      "B": "H0 data should agree once missing and duplicates handled",
+      "C": "Compare source interactions vs swiping dyad aggregated, IDs join, report mismatch and source-of-truth; no claims of real rejections to third parties",
+      "D": "GitHub source via connector, aggregate-only output, check each prerequisite and record invalid/blocked gates",
+      "status": "PREREG_NOT_EXECUTED"
+    },
+    {
+      "id": "N35",
+      "type": "EMPIRICAL_AB",
+      "A": "Robustness of event-level opportunity null under participant dependence",
+      "B": "H0 event-shuffled outcomes exchangeable, H1 per-person propensity confounds",
+      "C": "Permutation both by event and descriptive within-user degree-preserving assortativity; if insufficient repeated users, do not pretend control",
+      "D": "GitHub source via connector, aggregate-only output, check each prerequisite and record invalid/blocked gates",
+      "status": "PREREG_NOT_EXECUTED"
+    },
+    {
+      "id": "N36",
+      "type": "DOCUMENTARY_AB",
+      "A": "Map sample/selection/ethics and transportability against Spain and digital apps",
+      "B": "No extrapolation from speed dating to Spanish Tinder population",
+      "C": "Describe in-person 8-minute events, age bands, recruiting unknown, anonymization and publication rights; compare other evidence without equating estimands",
+      "D": "GitHub source via connector, aggregate-only output, check each prerequisite and record invalid/blocked gates",
+      "status": "PREREG_NOT_EXECUTED"
+    },
+    {
+      "id": "N37",
+      "type": "PLANNING_AB_ONLY",
+      "A": "Revisit status loss and temporality with real dyadic data",
+      "B": "Rejection reduces public status only if observable reputation changes over time",
+      "C": "Check timestamps / participant repeats / third-party status measurements; block causal reputation calibration unless all present",
+      "D": "GitHub source via connector, aggregate-only output, check each prerequisite and record invalid/blocked gates",
+      "status": "PREREG_NOT_EXECUTED"
+    },
+    {
+      "id": "N38",
+      "type": "PLANNING_AB_ONLY",
+      "A": "Independent replication and confirmation gate",
+      "B": "Descriptive data not confirmatory without one untouched holdout and prior-art contrast",
+      "C": "Specify confirmatory estimand, a competent model, ethical constraints and additional dataset; do not call same source independent replicate",
+      "D": "GitHub source via connector, aggregate-only output, check each prerequisite and record invalid/blocked gates",
+      "status": "PREREG_NOT_EXECUTED"
+    },
+    {
+      "id": "N39",
+      "type": "PLANNING_AB_ONLY",
+      "A": "Decision R5 portfolio synthesis",
+      "B": "Continue only if new discriminant identifiable",
+      "C": "AB J stop when further reanalysis merely tunes synthetic; preserve negative findings and unspent slots",
+      "D": "GitHub source via connector, aggregate-only output, check each prerequisite and record invalid/blocked gates",
+      "status": "PREREG_NOT_EXECUTED"
+    },
+    {
+      "id": "N40",
+      "type": "PLANNING_AB_ONLY",
+      "A": "Future preregistered outside-sample study conditional on access",
+      "B": "Matching ranking theory vs conditional exposure model",
+      "C": "Prepare only if externally sampled diadic source distinct from Mixmosa; no claim of execution",
+      "D": "GitHub source via connector, aggregate-only output, check each prerequisite and record invalid/blocked gates",
+      "status": "PREREG_NOT_EXECUTED"
+    }
+  ],
+  "initial_ct2": 17
+}
