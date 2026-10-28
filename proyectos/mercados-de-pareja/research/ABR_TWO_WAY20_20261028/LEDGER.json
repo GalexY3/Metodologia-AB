@@ -4,14 +4,14 @@
   "branch": "research/ab-r-mercados-pareja-20261028",
   "date": "2026-10-28",
   "authorized": 20,
-  "completed_valid": 9,
+  "completed_valid": 11,
   "invalid_attempts": 0,
   "invalid_cycles": 0,
   "planning_only": 1,
-  "documentary_only": 1,
+  "documentary_only": 3,
   "empirical_and_formal_analysis": 7,
-  "remaining_authorized_unstarted": 11,
-  "R5": "STOP_EARLY_NEW_PROSPECTIVE_OBSERVABLES_REQUIRED",
+  "remaining_authorized_unstarted": 9,
+  "R5": "STOP_AFTER_N57__SOURCE_ONLY_PUBLISHED_RESULTS__9_UNSTARTED",
   "prior_claim": "N46 1/3 local sign reversal now marked scope-weakened under 2FE; no new N1",
   "N1_campaign": 0,
   "N1_portfolio": "NOT_AUDITED",
@@ -28,9 +28,11 @@
       16,
       14,
       14,
-      13
+      13,
+      13,
+      7
     ],
-    "final": 13,
+    "final": 7,
     "kind": "ordinal, not probability"
   },
   "source_sha256": "a0fe55d6172d01f81d6c7e2546330828cb98d1f631b2598fec4d4f4660eaa37d",
@@ -300,6 +302,44 @@
         "REPORT.md"
       ],
       "cross_source_confirmatory": false
+    },
+    {
+      "id": "N56",
+      "type": "DOCUMENTARY_ACCESS_AB",
+      "status": "COMPLETED_WITH_DATA_BLOCKER",
+      "A": "Identificar y conseguir una tercera muestra de decisiones en aplicación con exposición y popularidad anteriores al contacto.",
+      "B": "H1 repositorio público verificable contiene filas diádicas, exposiciones y tiempos; H0 solo artículo con observaciones dirigidas, sin exhaustividad de exposiciones ni bytes descargables.",
+      "C": "Comprobar fuente editorial, OSF 6zcrs, API, formato, licencia a nivel de archivo, fuente original de decisiones; probar vía web, contenedor/GitHub y clasificar cada una. No atribuir columnas del artículo a ficheros no leídos.",
+      "D": "PLOS ONE 2025 Topinkova/Diviak, OSF https://osf.io/6zcrs/, web HTTP 403, contenedor requests DNS fail osf.io/api.osf.io; GitHub search 4 consultas sin réplica; PLOS texto sin microdatos.",
+      "E": "PLOS reporta 10.528 usuarios activos checos julio 2017, ID por persona y primeras invitaciones y respuestas, cuando las hubo. Declara OSF 'all files available'. No se ha descargado ni inspeccionado un solo dato de OSF, ni sus permisos específicos. El artículo afirma que no sabe qué perfiles se mostraron. Datos previos de popularidad individual y timestamps no verificados.",
+      "F": "CC BY del artículo ≠ licencia del dataset; primeras invitaciones enviadas no representan perfiles vistos sin acción; la deseabilidad por indegree de mismo periodo incurre en fugas temporales si se pretende predictor ex ante.",
+      "G": "Fuente empírica independiente publicada por terceros, sin replicación analítica ejecutada por nosotros.",
+      "H": "No usar como muestra confirmatoria de exposición/valor anterior; si OSF funciona, leer diccionario y consentimientos antes de tocar N58.",
+      "I": "DOCUMENTARY_AB_VALID; data source inaccessible for raw quantitative analysis, 0/3 novelty; privacy maintained.",
+      "J": "STOP empirical analysis; pasar a auditoría de novedad N57; no contabilizar experimentos no corridos.",
+      "CT2_before": 13,
+      "CT2_after": 13,
+      "subcampaign": "ABR-THIRD-SOURCE-20261028",
+      "source_artifact": "../ABR_THIRD_SOURCE_20261028/LEDGER.json"
+    },
+    {
+      "id": "N57",
+      "type": "PRIOR_ART_ADVERSARIAL_AB",
+      "status": "COMPLETED_NOVELTY_NEGATIVE",
+      "A": "Auditar novedad exacta de homogamia de deseabilidad emergente sin homofilia inicial explicada por rechazo/no reciprocidad.",
+      "B": "H_new alguna predicción discriminante original frente a H_prior artículo 2025 afirma ya mismo resultado con app, red bipartita y control de grados salientes.",
+      "C": "Leer hipótesis RQ3/RQ4, diseño CUG, resultados numéricos y límites de artículo PLOS 2025; diferenciar filtrado por rechazo y pérdida causal de estatus social, y evaluar fuentes más cercanas para mecanismos futuros.",
+      "D": "Topinkova & Diviak PLOS ONE 20(7) e0327477; fuente institucional LMU y PLOS; Topinkova&Schwemmer 2025 preprint, Moreno et al 2026 OSF, Šetinová&Topinková 2021.",
+      "E": "Estudio publicado reporta hombres aspiracionales (gap indegrees normalizados Brno −.16, Praga −.08), contactos recíprocos más homogámicos (−.032, −.019), interpreta no reciprocidad como proceso plausible. Publicación reconoce exposiciones no observadas; CUG mantiene outdegrees y permuta receptores (no necesariamente indegrees). Ya existe la proposición central bajo diseño observacional app. No aporta evidencia de status social de terceros disminuyendo por rechazo.",
+      "F": "El paper no demuestra causalmente el mecanismo de rechazo y su literatura ya incluye Schaefer; la tesis más estrecha de estatus dinámico externo no queda cubierta pero requiere datos distintos. R2 comparador y temporalidad faltan; riesgo de confundir 'matching result' con 'romantic relationship'.",
+      "G": "Evidencia bibliográfica externa independiente, no reproducción nueva de los 10.528 usuarios, sin validación directa de nuestro simulador.",
+      "H": "Retirar cualquier reivindicación general de originalidad del mecanismo de homogamia por rechazo; mantener simulaciones como enseñanza y datos observacionales con límites. Reorientar futuras pruebas a mediación causal y popularidad ex ante, si se obtiene evidencia ética.",
+      "I": "NO_NEW_N1, N2=0 N3=0. 0/3 novedad para claim general, CT2 ordinal 13→7 por antecedente casi isomorfo al claim principal y bloqueo de medición.",
+      "J": "STOP_R5 después de N57; 2/11 ciclos usados, 9 sin iniciar. No ajustar otra vez modelos sobre dos datos explorados sin nuevo observacional prospectivo.",
+      "CT2_before": 13,
+      "CT2_after": 7,
+      "subcampaign": "ABR-THIRD-SOURCE-20261028",
+      "source_artifact": "../ABR_THIRD_SOURCE_20261028/LEDGER.json"
     }
   ],
   "unstarted_ids": [
@@ -314,5 +354,6 @@
     "N64",
     "N65",
     "N66"
-  ]
+  ],
+  "last_audit": "research/ABR_THIRD_SOURCE_20261028/SOURCE_AND_NOVELTY_AUDIT.md"
 }
