@@ -1,0 +1,94 @@
+{
+  "schema": "ab.research.access_audit.v1",
+  "id": "N38",
+  "date": "2026-10-28",
+  "branch": "research/ab-r-mercados-pareja-20261028",
+  "auth_from": "EVIDENCE20 3 remaining after REALDATA13",
+  "kind": "PLANNING_AB_ONLY + verified source-access attempts",
+  "data_gate": "exactly two members linked, their unilateral decisions, shared event/ exposure, participant IDs, sample size >= predeclared minimum and independently sampled from Mixmosa",
+  "actions": [
+    {
+      "source": "Essex / Ortega 2018",
+      "url": "https://researchdata.essex.ac.uk/85/",
+      "file": "AnonymizedData.xlsx",
+      "metadata": "67 kB, open CC BY 4.0, ethical approval, UK online dating 2018",
+      "access": "HTML metadata verified; binary GET researchdata.essex.ac.uk/85/1/AnonymizedData.xlsx failed",
+      "failure": "container HTTPS name resolution; web data endpoint unsupported; no bytes read",
+      "schema_verified": false,
+      "eligible_for_replication": false
+    },
+    {
+      "source": "eHarmony McFee/Lanckriet",
+      "url": "https://brianmcfee.net/data/eharmony.html",
+      "metadata": "2 period slices. gzip user features and positive/negative pairwise label files, anonymized normalized obfuscated features",
+      "access": "HTML catalog verified; no pair-level gzip bytes read",
+      "failure": "network DNS/download unavailable from container and web format unsupported",
+      "schema_verified": false,
+      "eligible_for_replication": false,
+      "additional_limit": "Binary positive label ≠ independently observed two unilateral likes; real status and looks not interpretable from obfuscated features"
+    },
+    {
+      "source": "Columbia/OpenML raw mirror",
+      "repo": "datasets/speed-dating",
+      "path": "data/speed-dating.csv",
+      "blob": "7a39a97ed38fdc388b55a79e54c167e95552dabb",
+      "metadata": "2002-2004 speed dating, 8378 rows 195 columns in published documentation; iid pid wave dec dec_o match expected",
+      "access": "GitHub file metadata and blob sha verified, connector returned zero-byte content even with range and base64 options. Container raw.githubusercontent.com DNS failed",
+      "schema_verified_from_original_file": false,
+      "eligible_for_replication": false,
+      "additional_limit": "Source release has published warnings about dec/dec_o reciprocity inconsistencies; cannot accept without independent row-level QA"
+    },
+    {
+      "source": "Columbia reduced mirror",
+      "repo": "keithmcnulty/speed_dating",
+      "path": "speed_data_data.csv",
+      "blob": "239a05b5ca40bbb746ee12c27de61327a3ffd953",
+      "bytes_utf8_chars": 427919,
+      "observed_rows": 8378,
+      "observed_columns": [
+        "gender",
+        "age",
+        "income",
+        "goal",
+        "career",
+        "dec",
+        "attr",
+        "sinc",
+        "intel",
+        "fun",
+        "amb",
+        "shar",
+        "like",
+        "prob",
+        "met"
+      ],
+      "observed_binary_decisions_yes": 3373,
+      "observed_binary_decisions_no": 4763,
+      "observed_missing_or_nonbinary_decisions": 242,
+      "observed_gender_counts": {
+        "female_0": 4184,
+        "male_1": 4194
+      },
+      "access": "Read 427919 UTF8 chars via GitHub fetch_file and counted 8378 records; no user IDs published here",
+      "schema_verified": true,
+      "eligible_for_replication": false,
+      "reason": "No partner ID, no mutual preference and no event; cannot measure correlation of popularity of both members or event-conditioned mutual-interest null"
+    },
+    {
+      "source": "Columbia cleaned Parquet mirror",
+      "repo": "ZharlieSineFine/Speed-Dating-Reciprocal-Recommender-System",
+      "path": "Stage 0 Data and Pre-processing/speed_dating_clean.parquet",
+      "blob": "c873e1466f9594f3b709b0da70d7dc4a2739b1cd",
+      "encoding": "base64",
+      "returned_base64_character_length": 403601,
+      "access": "GitHub connector returned encoded bytes; content not decoded and schema/data rows not independently processed",
+      "schema_verified": false,
+      "eligible_for_replication": "UNKNOWN_NOT_ANALYSED",
+      "reason": "Binary Parquet content retrievable in connector result but unavailable as a materialized/decoded file to run QA in this session; do not infer variables directly from repository README"
+    }
+  ],
+  "result": "No second independent dyadic data analysed; no numerical replication of Mixmosa",
+  "R5": "STOP after N38; 2 slots authorised unstarted, no empirical tests N39/N40 executed",
+  "scope_warning": "Second source may be independent dating events but not independent replication of original latent-value model or Spanish Tinder behavior",
+  "no_personal_raw_data_rehosted": true
+}
