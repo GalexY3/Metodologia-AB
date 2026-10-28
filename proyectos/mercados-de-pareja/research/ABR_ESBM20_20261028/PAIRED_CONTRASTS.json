@@ -1,0 +1,570 @@
+{
+  "campaign": "ABR-ESBM20-20261028",
+  "date": "2026-10-28",
+  "status": "EXPLORATORY_SYNTHETIC_ONLY",
+  "units": "16 periods *144 artificial agents*6 paired seeds per scenario",
+  "note": "Differences are scenario trajectories with changing numbers of singles; unequal cumulative risk sets and impressions. Not a causal estimate in human population or independent confirmatory validation. Only six Monte Carlo seeds.",
+  "source_hash": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+  "summary_hash": "e0f04f702fec3ea58f029eb8b056949d039272c120aea38a1b3c8ca895b8c197",
+  "runs_hash": "ae6ea50be7bd36d1a4aa5b637f4048205742ea6ae228654ef759332a07bd4c67",
+  "contrasts": [
+    {
+      "scenario": "explicit_norm_preference",
+      "baseline": "mixed_random",
+      "comparisons": {
+        "active_agent_share_end": {
+          "mean_paired_difference": 0.104167,
+          "sample_sd_difference": 0.052521,
+          "positive_seeds": 6,
+          "negative_seeds": 0,
+          "n_seeds": 6
+        },
+        "receiver_impression_gini": {
+          "mean_paired_difference": -0.000361,
+          "sample_sd_difference": 0.024891,
+          "positive_seeds": 3,
+          "negative_seeds": 3,
+          "n_seeds": 6
+        },
+        "group_same_new_couples": {
+          "mean_paired_difference": 0.364354,
+          "sample_sd_difference": 0.055562,
+          "positive_seeds": 6,
+          "negative_seeds": 0,
+          "n_seeds": 6
+        },
+        "group_same_exposure": {
+          "mean_paired_difference": 0.006217,
+          "sample_sd_difference": 0.015635,
+          "positive_seeds": 3,
+          "negative_seeds": 3,
+          "n_seeds": 6
+        },
+        "total_relationships_formed": {
+          "mean_paired_difference": 14.5,
+          "sample_sd_difference": 7.582875,
+          "positive_seeds": 6,
+          "negative_seeds": 0,
+          "n_seeds": 6
+        },
+        "total_dissolutions": {
+          "mean_paired_difference": 7,
+          "sample_sd_difference": 10.392305,
+          "positive_seeds": 4,
+          "negative_seeds": 2,
+          "n_seeds": 6
+        },
+        "total_impressions": {
+          "mean_paired_difference": -1969.5,
+          "sample_sd_difference": 243.94733,
+          "positive_seeds": 0,
+          "negative_seeds": 6,
+          "n_seeds": 6
+        },
+        "duration_completed_mean": {
+          "mean_paired_difference": 0.291982,
+          "sample_sd_difference": 0.055923,
+          "positive_seeds": 6,
+          "negative_seeds": 0,
+          "n_seeds": 6
+        }
+      }
+    },
+    {
+      "scenario": "heterosexual_restricted",
+      "baseline": "mixed_random",
+      "comparisons": {
+        "active_agent_share_end": {
+          "mean_paired_difference": -0.141204,
+          "sample_sd_difference": 0.025484,
+          "positive_seeds": 0,
+          "negative_seeds": 6,
+          "n_seeds": 6
+        },
+        "receiver_impression_gini": {
+          "mean_paired_difference": 0.071618,
+          "sample_sd_difference": 0.031366,
+          "positive_seeds": 6,
+          "negative_seeds": 0,
+          "n_seeds": 6
+        },
+        "group_same_new_couples": {
+          "mean_paired_difference": 0.043091,
+          "sample_sd_difference": 0.053534,
+          "positive_seeds": 4,
+          "negative_seeds": 2,
+          "n_seeds": 6
+        },
+        "group_same_exposure": {
+          "mean_paired_difference": -0.000643,
+          "sample_sd_difference": 0.022857,
+          "positive_seeds": 5,
+          "negative_seeds": 1,
+          "n_seeds": 6
+        },
+        "total_relationships_formed": {
+          "mean_paired_difference": -32.5,
+          "sample_sd_difference": 13.08052,
+          "positive_seeds": 0,
+          "negative_seeds": 6,
+          "n_seeds": 6
+        },
+        "total_dissolutions": {
+          "mean_paired_difference": -22.333333,
+          "sample_sd_difference": 13.735599,
+          "positive_seeds": 1,
+          "negative_seeds": 5,
+          "n_seeds": 6
+        },
+        "total_impressions": {
+          "mean_paired_difference": -1204.333333,
+          "sample_sd_difference": 458.382664,
+          "positive_seeds": 0,
+          "negative_seeds": 6,
+          "n_seeds": 6
+        },
+        "duration_completed_mean": {
+          "mean_paired_difference": 0.031746,
+          "sample_sd_difference": 0.280866,
+          "positive_seeds": 4,
+          "negative_seeds": 2,
+          "n_seeds": 6
+        }
+      }
+    },
+    {
+      "scenario": "institutional_segregation",
+      "baseline": "mixed_random",
+      "comparisons": {
+        "active_agent_share_end": {
+          "mean_paired_difference": 0.006944,
+          "sample_sd_difference": 0.056758,
+          "positive_seeds": 2,
+          "negative_seeds": 3,
+          "n_seeds": 6
+        },
+        "receiver_impression_gini": {
+          "mean_paired_difference": 0.015614,
+          "sample_sd_difference": 0.023584,
+          "positive_seeds": 4,
+          "negative_seeds": 2,
+          "n_seeds": 6
+        },
+        "group_same_new_couples": {
+          "mean_paired_difference": 0.340853,
+          "sample_sd_difference": 0.051101,
+          "positive_seeds": 6,
+          "negative_seeds": 0,
+          "n_seeds": 6
+        },
+        "group_same_exposure": {
+          "mean_paired_difference": 0.303708,
+          "sample_sd_difference": 0.007262,
+          "positive_seeds": 6,
+          "negative_seeds": 0,
+          "n_seeds": 6
+        },
+        "total_relationships_formed": {
+          "mean_paired_difference": -8,
+          "sample_sd_difference": 10.373042,
+          "positive_seeds": 2,
+          "negative_seeds": 4,
+          "n_seeds": 6
+        },
+        "total_dissolutions": {
+          "mean_paired_difference": -8.5,
+          "sample_sd_difference": 9.20326,
+          "positive_seeds": 2,
+          "negative_seeds": 4,
+          "n_seeds": 6
+        },
+        "total_impressions": {
+          "mean_paired_difference": -513.833333,
+          "sample_sd_difference": 256.240057,
+          "positive_seeds": 0,
+          "negative_seeds": 6,
+          "n_seeds": 6
+        },
+        "duration_completed_mean": {
+          "mean_paired_difference": 0.138191,
+          "sample_sd_difference": 0.168036,
+          "positive_seeds": 5,
+          "negative_seeds": 1,
+          "n_seeds": 6
+        }
+      }
+    },
+    {
+      "scenario": "longer_partnerships",
+      "baseline": "mixed_random",
+      "comparisons": {
+        "active_agent_share_end": {
+          "mean_paired_difference": 0.039352,
+          "sample_sd_difference": 0.040651,
+          "positive_seeds": 4,
+          "negative_seeds": 1,
+          "n_seeds": 6
+        },
+        "receiver_impression_gini": {
+          "mean_paired_difference": 0.078498,
+          "sample_sd_difference": 0.016763,
+          "positive_seeds": 6,
+          "negative_seeds": 0,
+          "n_seeds": 6
+        },
+        "group_same_new_couples": {
+          "mean_paired_difference": 0.015862,
+          "sample_sd_difference": 0.025525,
+          "positive_seeds": 5,
+          "negative_seeds": 1,
+          "n_seeds": 6
+        },
+        "group_same_exposure": {
+          "mean_paired_difference": -0.004647,
+          "sample_sd_difference": 0.010275,
+          "positive_seeds": 2,
+          "negative_seeds": 4,
+          "n_seeds": 6
+        },
+        "total_relationships_formed": {
+          "mean_paired_difference": -83.833333,
+          "sample_sd_difference": 8.953584,
+          "positive_seeds": 0,
+          "negative_seeds": 6,
+          "n_seeds": 6
+        },
+        "total_dissolutions": {
+          "mean_paired_difference": -86.666667,
+          "sample_sd_difference": 10.856642,
+          "positive_seeds": 0,
+          "negative_seeds": 6,
+          "n_seeds": 6
+        },
+        "total_impressions": {
+          "mean_paired_difference": -2344.5,
+          "sample_sd_difference": 264.410855,
+          "positive_seeds": 0,
+          "negative_seeds": 6,
+          "n_seeds": 6
+        },
+        "duration_completed_mean": {
+          "mean_paired_difference": 1.710713,
+          "sample_sd_difference": 0.561845,
+          "positive_seeds": 6,
+          "negative_seeds": 0,
+          "n_seeds": 6
+        }
+      }
+    },
+    {
+      "scenario": "popularity_ranking",
+      "baseline": "mixed_random",
+      "comparisons": {
+        "active_agent_share_end": {
+          "mean_paired_difference": -0.006944,
+          "sample_sd_difference": 0.028801,
+          "positive_seeds": 3,
+          "negative_seeds": 2,
+          "n_seeds": 6
+        },
+        "receiver_impression_gini": {
+          "mean_paired_difference": 0.09829,
+          "sample_sd_difference": 0.022643,
+          "positive_seeds": 6,
+          "negative_seeds": 0,
+          "n_seeds": 6
+        },
+        "group_same_new_couples": {
+          "mean_paired_difference": 0.03732,
+          "sample_sd_difference": 0.0366,
+          "positive_seeds": 5,
+          "negative_seeds": 1,
+          "n_seeds": 6
+        },
+        "group_same_exposure": {
+          "mean_paired_difference": 0.001723,
+          "sample_sd_difference": 0.005467,
+          "positive_seeds": 5,
+          "negative_seeds": 1,
+          "n_seeds": 6
+        },
+        "total_relationships_formed": {
+          "mean_paired_difference": -3.166667,
+          "sample_sd_difference": 14.455679,
+          "positive_seeds": 3,
+          "negative_seeds": 3,
+          "n_seeds": 6
+        },
+        "total_dissolutions": {
+          "mean_paired_difference": -2.666667,
+          "sample_sd_difference": 14.841384,
+          "positive_seeds": 3,
+          "negative_seeds": 3,
+          "n_seeds": 6
+        },
+        "total_impressions": {
+          "mean_paired_difference": -196.333333,
+          "sample_sd_difference": 229.790919,
+          "positive_seeds": 1,
+          "negative_seeds": 5,
+          "n_seeds": 6
+        },
+        "duration_completed_mean": {
+          "mean_paired_difference": 0.172726,
+          "sample_sd_difference": 0.212133,
+          "positive_seeds": 5,
+          "negative_seeds": 1,
+          "n_seeds": 6
+        }
+      }
+    },
+    {
+      "scenario": "private_rejection_learning",
+      "baseline": "mixed_random",
+      "comparisons": {
+        "active_agent_share_end": {
+          "mean_paired_difference": 0.05787,
+          "sample_sd_difference": 0.028351,
+          "positive_seeds": 6,
+          "negative_seeds": 0,
+          "n_seeds": 6
+        },
+        "receiver_impression_gini": {
+          "mean_paired_difference": -0.00533,
+          "sample_sd_difference": 0.021963,
+          "positive_seeds": 3,
+          "negative_seeds": 3,
+          "n_seeds": 6
+        },
+        "group_same_new_couples": {
+          "mean_paired_difference": 0.002221,
+          "sample_sd_difference": 0.034391,
+          "positive_seeds": 4,
+          "negative_seeds": 2,
+          "n_seeds": 6
+        },
+        "group_same_exposure": {
+          "mean_paired_difference": 0.000791,
+          "sample_sd_difference": 0.004396,
+          "positive_seeds": 4,
+          "negative_seeds": 2,
+          "n_seeds": 6
+        },
+        "total_relationships_formed": {
+          "mean_paired_difference": 20.333333,
+          "sample_sd_difference": 11.775681,
+          "positive_seeds": 6,
+          "negative_seeds": 0,
+          "n_seeds": 6
+        },
+        "total_dissolutions": {
+          "mean_paired_difference": 16.166667,
+          "sample_sd_difference": 12.51266,
+          "positive_seeds": 6,
+          "negative_seeds": 0,
+          "n_seeds": 6
+        },
+        "total_impressions": {
+          "mean_paired_difference": -464.166667,
+          "sample_sd_difference": 371.651136,
+          "positive_seeds": 1,
+          "negative_seeds": 5,
+          "n_seeds": 6
+        },
+        "duration_completed_mean": {
+          "mean_paired_difference": -0.08881,
+          "sample_sd_difference": 0.196084,
+          "positive_seeds": 2,
+          "negative_seeds": 4,
+          "n_seeds": 6
+        }
+      }
+    },
+    {
+      "scenario": "public_rejection_signal",
+      "baseline": "mixed_random",
+      "comparisons": {
+        "active_agent_share_end": {
+          "mean_paired_difference": -0.115741,
+          "sample_sd_difference": 0.050205,
+          "positive_seeds": 0,
+          "negative_seeds": 6,
+          "n_seeds": 6
+        },
+        "receiver_impression_gini": {
+          "mean_paired_difference": 0.009156,
+          "sample_sd_difference": 0.016289,
+          "positive_seeds": 3,
+          "negative_seeds": 3,
+          "n_seeds": 6
+        },
+        "group_same_new_couples": {
+          "mean_paired_difference": -0.014577,
+          "sample_sd_difference": 0.034201,
+          "positive_seeds": 2,
+          "negative_seeds": 4,
+          "n_seeds": 6
+        },
+        "group_same_exposure": {
+          "mean_paired_difference": -0.00177,
+          "sample_sd_difference": 0.007018,
+          "positive_seeds": 3,
+          "negative_seeds": 3,
+          "n_seeds": 6
+        },
+        "total_relationships_formed": {
+          "mean_paired_difference": -17.666667,
+          "sample_sd_difference": 9.770705,
+          "positive_seeds": 0,
+          "negative_seeds": 6,
+          "n_seeds": 6
+        },
+        "total_dissolutions": {
+          "mean_paired_difference": -9.333333,
+          "sample_sd_difference": 10.966616,
+          "positive_seeds": 0,
+          "negative_seeds": 5,
+          "n_seeds": 6
+        },
+        "total_impressions": {
+          "mean_paired_difference": 748,
+          "sample_sd_difference": 480.349456,
+          "positive_seeds": 6,
+          "negative_seeds": 0,
+          "n_seeds": 6
+        },
+        "duration_completed_mean": {
+          "mean_paired_difference": 0.064522,
+          "sample_sd_difference": 0.221904,
+          "positive_seeds": 4,
+          "negative_seeds": 2,
+          "n_seeds": 6
+        }
+      }
+    },
+    {
+      "scenario": "shorter_partnerships",
+      "baseline": "mixed_random",
+      "comparisons": {
+        "active_agent_share_end": {
+          "mean_paired_difference": -0.085648,
+          "sample_sd_difference": 0.03449,
+          "positive_seeds": 0,
+          "negative_seeds": 6,
+          "n_seeds": 6
+        },
+        "receiver_impression_gini": {
+          "mean_paired_difference": -0.045475,
+          "sample_sd_difference": 0.02089,
+          "positive_seeds": 0,
+          "negative_seeds": 6,
+          "n_seeds": 6
+        },
+        "group_same_new_couples": {
+          "mean_paired_difference": 0.011169,
+          "sample_sd_difference": 0.020252,
+          "positive_seeds": 4,
+          "negative_seeds": 2,
+          "n_seeds": 6
+        },
+        "group_same_exposure": {
+          "mean_paired_difference": -0.001037,
+          "sample_sd_difference": 0.006094,
+          "positive_seeds": 2,
+          "negative_seeds": 4,
+          "n_seeds": 6
+        },
+        "total_relationships_formed": {
+          "mean_paired_difference": 107.833333,
+          "sample_sd_difference": 14.675376,
+          "positive_seeds": 6,
+          "negative_seeds": 0,
+          "n_seeds": 6
+        },
+        "total_dissolutions": {
+          "mean_paired_difference": 114,
+          "sample_sd_difference": 15.019987,
+          "positive_seeds": 6,
+          "negative_seeds": 0,
+          "n_seeds": 6
+        },
+        "total_impressions": {
+          "mean_paired_difference": 2518.5,
+          "sample_sd_difference": 314.26597,
+          "positive_seeds": 6,
+          "negative_seeds": 0,
+          "n_seeds": 6
+        },
+        "duration_completed_mean": {
+          "mean_paired_difference": -1.125289,
+          "sample_sd_difference": 0.199836,
+          "positive_seeds": 0,
+          "negative_seeds": 6,
+          "n_seeds": 6
+        }
+      }
+    },
+    {
+      "scenario": "visibility_balancing",
+      "baseline": "mixed_random",
+      "comparisons": {
+        "active_agent_share_end": {
+          "mean_paired_difference": -0.043981,
+          "sample_sd_difference": 0.046826,
+          "positive_seeds": 0,
+          "negative_seeds": 4,
+          "n_seeds": 6
+        },
+        "receiver_impression_gini": {
+          "mean_paired_difference": -0.100074,
+          "sample_sd_difference": 0.024425,
+          "positive_seeds": 0,
+          "negative_seeds": 6,
+          "n_seeds": 6
+        },
+        "group_same_new_couples": {
+          "mean_paired_difference": -0.007162,
+          "sample_sd_difference": 0.03702,
+          "positive_seeds": 2,
+          "negative_seeds": 4,
+          "n_seeds": 6
+        },
+        "group_same_exposure": {
+          "mean_paired_difference": -0.002672,
+          "sample_sd_difference": 0.00856,
+          "positive_seeds": 2,
+          "negative_seeds": 4,
+          "n_seeds": 6
+        },
+        "total_relationships_formed": {
+          "mean_paired_difference": 13.833333,
+          "sample_sd_difference": 15.380724,
+          "positive_seeds": 5,
+          "negative_seeds": 1,
+          "n_seeds": 6
+        },
+        "total_dissolutions": {
+          "mean_paired_difference": 17,
+          "sample_sd_difference": 12.743626,
+          "positive_seeds": 6,
+          "negative_seeds": 0,
+          "n_seeds": 6
+        },
+        "total_impressions": {
+          "mean_paired_difference": 287.5,
+          "sample_sd_difference": 299.451999,
+          "positive_seeds": 5,
+          "negative_seeds": 1,
+          "n_seeds": 6
+        },
+        "duration_completed_mean": {
+          "mean_paired_difference": -0.113509,
+          "sample_sd_difference": 0.124806,
+          "positive_seeds": 1,
+          "negative_seeds": 5,
+          "n_seeds": 6
+        }
+      }
+    }
+  ]
+}
