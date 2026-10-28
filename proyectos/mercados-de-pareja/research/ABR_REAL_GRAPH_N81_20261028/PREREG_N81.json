@@ -1,0 +1,84 @@
+{
+  "schema": "ab.research.prereg.v1",
+  "id": "N81",
+  "date": "2026-10-28",
+  "project": "mercados-de-pareja",
+  "branch": "research/ab-r-mercados-pareja-20261028",
+  "cycle_mode": "EXPERIMENTAL_AB_EMPIRICAL_SECONDARY_DATA_DESCRIPTIVE",
+  "cycle_status": "FROZEN_BEFORE_READING ANY RELATIONS ROWS",
+  "selection_exposure": "Source MotifGNN/GitHub and DOI found exploratorily; 87.46MB archive obtained before prereg; zip inventory, source code and CSV headers read; NO rows of observed relationships and NO outcome/statistical summaries yet. Data-source discovery not preregistered.",
+  "A": {
+    "question": "In the independent real dating interaction graph SSJY shared by MotifGNN authors, is mutual directed action more frequent than a degree-constrained directed configuration null, and can the dataset identify exposure, rejection and relationships? This tests only graph reciprocity, not ESBM causal mechanism.",
+    "unit": "Unique directed user-ID pair with at least one click/msg in log; platform users in original archive; not platform-wide eligible dyads or observed exposure sets.",
+    "population": "Self-selected SSJY dating-platform actors with logged actions; no known sampling weights or population generalizability; 2020-era Asian platform uncertain geography.",
+    "estimand": "Directed arc reciprocation fraction: count unique directed i→j with observed j→i divided by unique directed arcs excluding self links. Comparison expected under exact event in/out degree stub permutation.",
+    "true_outcome": "Presence of reverse recorded click/msg action",
+    "proxy_limit": "Reverse edge is NOT app match, explicit mutual swipe, meeting, relationship, durable union or evidence of rejection; nonedge is NOT no/decline.",
+    "harm": "No individual identifiers, profile text, coordinates, emails, or raw rows in GitHub; no pkl unpickling, no credentialed scripts or remote database calls."
+  },
+  "B": {
+    "H0": "Reciprocal arcs explained by observed user event outdegree and indegree under uniformly paired directed stubs; observed rate compatible with 30 permutations.",
+    "H1": "Observed reciprocal arc proportion exceeds degree-conditioned stub-null by more than all 30 simulated null replicates.",
+    "Halt": "Interaction network strongly assortative or group restricted, old actions mixed click/msg; stub-null ignores social/algorithmic exposure and action differences. Even statistical excess is NOT uniquely due to mutual desire and cannot identify ESBM mechanisms."
+  },
+  "C": {
+    "data_zip": "Public file linked from original authors official GitHub README https://github.com/RManLuo/MotifGNN (master); Google Drive https://drive.google.com/file/d/1u-59m0u5-pcF4TCN6zjGLICWFdQteCUG/view?usp=sharing",
+    "exact_input_sha256": "23cff03451b13f94354d875e777f60e1c63224829f42b8adf9d73d7563812e24",
+    "original_input_bytes": 87463480,
+    "source_archive_member": "sjjy_data/relations.csv",
+    "primary_test": "Compute unique nonself directed arc reciprocation; degree-preserving event-stub randomization using 30 PCG64 seeded permutations of target endpoints across observed original events, preserve exact event in/out counts before dedup; drop self loops; collapse duplicates; compare 30 null rates to observed.",
+    "stats": "report observed reciprocation, observed number unique reciprocal pairs; null mean/min/max and empirical upper-tail Monte Carlo p=(1+count(null>=observed))/(B+1), B=30. If none exceed, report bound p=1/31≈0.0323, not p=0.",
+    "multiplicity": "single primary stat (arc reciprocation); descriptive secondary file types, duplicate events, self loops, role mixing; no extra hypothesis selection.",
+    "controls": [
+      "R0 null shuffles all target stubs preserving in/out event degrees; controls activity and popularity, but no gender preference, selection of shown profiles, platform rules or timeline; not a competent causal ESBM baseline.",
+      "If graph cannot expose directed distinct actions, STOP claim; if date absent, no longitudinal inference."
+    ]
+  },
+  "D": {
+    "procedure": "Parse zipped relations.csv in RAM with pandas; never unpickle enc_feature_dict.pkl, never run bundled source scripts or connect to author Neo4j (hardcoded credentials found in archive). Map user IDs to local numeric codes; pack pairs into uint64, unique arcs, compare reverse arc via numpy searchsorted; 30 random degree-preserving target permutations. Preserve complete author archive hash and script SHA, run once; save only aggregate JSON and QA, no source rows.",
+    "environment": "Python 3, pandas/numpy; bound memory; clean_clone_NOT_VERIFIED; code artifact to be committed before run",
+    "privacy": "Aggregate outputs only, no sample rows, no deanonymization, no credentials."
+  },
+  "E": {
+    "state": "NOT_EXECUTED",
+    "human_rows_read": 0,
+    "results": "NOT_INSPECTED"
+  },
+  "F": {
+    "adversarial": [
+      "No exposure denominator and no explicit negative responses",
+      "No timestamps means cannot identify temporal influence/after rejection/relationship duration",
+      "Edges reused for generated train/test labels: possible label leakage when features use full graph; not automatically claim paper model leaked",
+      "No source dataset license file in official GitHub root found; public sharing allows inspection but redistributing data or derived identifiable rows not licensed",
+      "Degree-only null ignores sex mixing/community constraints, any surplus is not evidence of causal reciprocal preference",
+      "Duplicate interactions can produce excessive stub-degree null variability, report both event and unique arcs",
+      "Action msg vs click not necessarily like/dislike"
+    ]
+  },
+  "G": {
+    "independent_replication": "No independent study of ESBM. One source distinct from Mixmosa, Columbia, Rios, Hitsch, pairfam; 30 permutations are a null test not external replication. No 2/3."
+  },
+  "H": {
+    "prior_targets": [
+      "P-DYADIC_ACCESS",
+      "P-OPPORTUNITY",
+      "P-NOVELTY",
+      "P-RECIPROCITY"
+    ],
+    "action": "append SOURCE/UPDATES qualitative after results, explicit NO_CHANGE_WITH_REASON when not identifying a scientific claim; no numeric Bayesian priors."
+  },
+  "I": {
+    "CT2_before": 6,
+    "CT2_after": "set after experimental audit; cannot rise merely by using a large unrelated graph",
+    "new_grade": "0/3 unless new, unique, independently replicated evidence with novel claim (not anticipated)."
+  },
+  "J": {
+    "decision": "If legally accessible source real and original graph analyses succeed: one valid N81 A–J, leave N82–N86 untouched and STOP_R5 if lacks exposure/negative/temporal; if no schema or legitimate rights to analyze, classify plan only and keep 6. Never claim match/duration from mutual click/msg."
+  },
+  "DRIFT": "D0.7, same matching domain with independent directed interaction graph, narrower outcome proxy",
+  "rights": {
+    "read": "Author publicly shared file via official GitHub without access barrier; no site terms explicitly granting redistribution and no LICENSE in GitHub root; only local inspect aggregate analysis, if rights unresolved don't republish original rows; license and privacy remain caveats.",
+    "redistribution": "NOT_LICENSED_OR_VERIFIED",
+    "raw_rehosting": false
+  }
+}
