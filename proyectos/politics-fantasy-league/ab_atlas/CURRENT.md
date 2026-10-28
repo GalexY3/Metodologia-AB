@@ -1,3 +1,11 @@
+# ChatRelay CR03 · AB-P auditoría limitada 35 lotes · 28/10/2026
+
+**Campaña ChatRelay `59e1f051-b3c6-4d6a-9ba5-670017942347`: 3/5 ciclos A–J documentados** (CR01 AB-P, CR02 AB-R y CR03 AB-P), **0 inválidos, 0 planificación, 2 sin consumir**. CR03 tiene [prerregistro](../research/CHATRELAY_59e1f051_20261028/CR03_PREREG.json) en commit `cc0828088` y [resultado A–J](../research/CHATRELAY_59e1f051_20261028/CR03_RESULT.json) en commit `543753e07`. Se leyeron y parsearon **35/35** deltas de la rama `research/pfl-codex-contributions-20261027` fijada a SHA `cc0828088`: cadena de padres sin discrepancias detectadas, 370 operaciones contadas y totales derivados 63 nodos, 81 aristas, 201 runs y 44 incidencias. El lote 0020 sigue documentando IC04–IC23 y tres negativas. Son **comprobaciones JS limitadas por bloques**, no replay Python canónico, ni verificación global de referencias/IDs, ni suite completa. CT2 identidad 29/100 ordinal, VSDS 1/3, V4 contractual 36,90%, gates 0/6 y NO VOTAN `UNKNOWN`, sin promoción.
+
+**Bloqueo T008 verificado como reporte de ejecutor:** checkout local Windows antiguo, `git ls-remote` fallido, sin Linux/WSL/Docker/Podman; ninguna prueba completa ni checker nuevo realizados. La rama de trabajo **diverge de main** (GitHub compare: main 83 commits por delante y rama 2 por delante tras CR03); main tiene ya lotes propios desde 0036, por lo que **no se creó un 0036 alternativo** ni se afirmó alta de run en Atlas. R5: no seguir repitiendo auditorías estáticas; el siguiente contraste valioso requiere POSIX+Git autenticado para T008 o una fuente institucional original nueva. No se fusionó main, no hubo CI costosa ni originales privados.
+
+---
+
 # CONT80 C61–C80 CERRADO 20/20 · Atlas 0035 · 28/10/2026
 
 **Presupuesto de 20 ciclos AB-H completamente utilizado: C61–C80, 20 A–J documentados, 0 restantes.** [Ledger](../research/ABH_CONT80_20261028/CAMPAIGN_STATUS.json) · [informe final POSIX](../research/ABH_CONT80_20261028/C77_C80_POSIX_FINAL.md) · [manifiesto de pruebas](../research/ABH_CONT80_20261028/C77_C80_EVIDENCE_MANIFEST.json).
