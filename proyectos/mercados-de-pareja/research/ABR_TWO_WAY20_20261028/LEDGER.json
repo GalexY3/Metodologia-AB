@@ -320,7 +320,33 @@
       "CT2_before": 13,
       "CT2_after": 13,
       "subcampaign": "ABR-THIRD-SOURCE-20261028",
-      "source_artifact": "../ABR_THIRD_SOURCE_20261028/LEDGER.json"
+      "source_artifact": "../ABR_THIRD_SOURCE_20261028/LEDGER.json",
+      "source_ids": [
+        "SRC021",
+        "SRC022",
+        "SRC023",
+        "SRC024",
+        "SRC025"
+      ],
+      "prior_ids": [
+        "P-DYADIC_ACCESS",
+        "P-APP_POP_INFO",
+        "P-OPPORTUNITY",
+        "P-EXANTE_POP",
+        "P-AGE_EXTERNAL",
+        "P-MEASURE_OUTCOME"
+      ],
+      "prior_update_ids": [
+        "U016",
+        "U017",
+        "U018",
+        "U019",
+        "U020",
+        "U021",
+        "U025"
+      ],
+      "register": "research/PRIORS/UPDATES.json",
+      "prior_update_status": "RECORDED_AFTER_DOCUMENTARY_AUDIT_NOT_A_PREREG"
     },
     {
       "id": "N57",
@@ -339,7 +365,23 @@
       "CT2_before": 13,
       "CT2_after": 7,
       "subcampaign": "ABR-THIRD-SOURCE-20261028",
-      "source_artifact": "../ABR_THIRD_SOURCE_20261028/LEDGER.json"
+      "source_artifact": "../ABR_THIRD_SOURCE_20261028/LEDGER.json",
+      "source_ids": [
+        "SRC021",
+        "SRC002"
+      ],
+      "prior_ids": [
+        "P-NOVELTY",
+        "P-RECIPROCITY",
+        "P-PUBLIC_REPUTATION"
+      ],
+      "prior_update_ids": [
+        "U022",
+        "U023",
+        "U024"
+      ],
+      "register": "research/PRIORS/UPDATES.json",
+      "prior_update_status": "RECORDED_AFTER_DOCUMENTARY_AUDIT_NOT_A_PREREG"
     }
   ],
   "unstarted_ids": [
@@ -355,5 +397,15 @@
     "N65",
     "N66"
   ],
-  "last_audit": "research/ABR_THIRD_SOURCE_20261028/SOURCE_AND_NOVELTY_AUDIT.md"
+  "last_audit": "research/ABR_THIRD_SOURCE_20261028/SOURCE_AND_NOVELTY_AUDIT.md",
+  "documentary_protocol": {
+    "enforced_from": "2026-10-28",
+    "sources": "research/PRIORS/SOURCES.json",
+    "priors": "research/PRIORS/PRIORS.json",
+    "updates": "research/PRIORS/UPDATES.json",
+    "counts_as_cycle": false,
+    "backfill_records": 25,
+    "source_records": 29,
+    "prior_hypotheses": 14
+  }
 }
