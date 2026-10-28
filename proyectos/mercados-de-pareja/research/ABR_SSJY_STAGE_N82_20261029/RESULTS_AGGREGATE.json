@@ -1,0 +1,75 @@
+{
+  "archive_sha256": "23cff03451b13f94354d875e777f60e1c63224829f42b8adf9d73d7563812e24",
+  "raw_event_rows": 8599012,
+  "event_action_counts": {
+    "rec": 8366058,
+    "click": 184291,
+    "msg": 48663
+  },
+  "round_min": 1,
+  "round_max": 33208,
+  "unique_rec_actor_target_round": 8366058,
+  "unique_click_triples": 180065,
+  "unique_msg_triples": 46384,
+  "click_triples_with_same_round_rec": 165703,
+  "msg_triples_with_same_round_rec": 22979,
+  "click_action_coverage_fraction": 0.9202399133646183,
+  "msg_action_coverage_fraction": 0.4954078992756123,
+  "offered_triples_with_click": 165703,
+  "offered_triples_with_msg": 22979,
+  "offered_click_rate": 0.019806580351223957,
+  "offered_msg_rate": 0.0027466938431457205,
+  "unique_offer_actors": 14997,
+  "train_actor_count": 11993,
+  "heldout_actor_count": 3004,
+  "training_offer_count": 6660965,
+  "heldout_offer_count": 1705093,
+  "training_click_rate": 0.019931496412306626,
+  "heldout_click_rate": 0.019318594352331516,
+  "target_unseen_in_train_offers": 745,
+  "target_unseen_in_train_offers_fraction": 0.0004369263142831505,
+  "primary_logloss": {
+    "baseline_global_rate": 0.09538493935765506,
+    "train_target_smoothed_ctr": 0.08775329406513609,
+    "improvement_positive_if_target_better": 0.007631645292518987,
+    "cluster_bootstrap_100_seed": 20261029,
+    "CI_95_percentile": [
+      0.006975623403440088,
+      0.008475946541783679
+    ],
+    "permutation_or_experiment_not_claimed": true
+  },
+  "brier_secondary": {
+    "baseline_global_rate": 0.018945761913516705,
+    "train_target_smoothed_ctr": 0.018570492660909363
+  },
+  "repeat_offer_descriptive": {
+    "first_distinct_actor_target_offer_count": 4846660,
+    "repeat_distinct_actor_target_offer_count": 3519398,
+    "fraction_repeats": 0.42067578302708397,
+    "click_on_first_offer_fraction": 0.024914477186351012,
+    "click_on_repeat_offer_fraction": 0.012772354817500038,
+    "note": "Selection-biased descriptive, NOT effect of repeated exposure; first = earliest available ROUND for dyad, not calendar date."
+  },
+  "provenance": "GitHub RManLuo/MotifGNN public archive; Su/Hu 2019 paper explains action codes for a similar Chinese platform but identical extract not proven.",
+  "identification_limits": [
+    "rec is recorded recommendation in a dataset with no proof each recommendation was attended/viewed",
+    "absence of click does not mean explicit rejection",
+    "ROUND indexes actor-internal candidate batches, not shared calendar time",
+    "No experiment/randomized treatment, no causal effect",
+    "Disjoint actor holdout is NOT external independent platform or temporal holdout",
+    "Train-group target CTR may mix chronological information and is not strict historical time",
+    "No long relationship outcome and source data redistribution license unverified",
+    "Existing Su/Hu 2019 publication already analyzes popularity conditional on recommendations; no originality claimed"
+  ],
+  "raw_user_rows_published": 0,
+  "raw_data_rehosted": false,
+  "analysis_type": "observational source-conditional prediction",
+  "grade": "0/3",
+  "raw_local_results_sha256": "43dc505e0d3092a72ee8cbd902ae6e7ff76562182acce8f5c5dd732ea4c8dbf9",
+  "note_hash": "This GitHub metadata-rich JSON differs from locally hashed 3198-byte run output. All numerical quantities copied unchanged.",
+  "source_sha256": "9587f9621d73cd25ad1e11168866568f199eafadb5fc39b5e1b406b2b5110961",
+  "source_hash_freeze_commit": "58cf00c5e2efab0c76a1f4bd84085e7ab8b22da0",
+  "source_archived_gzip_b64": "audit_N82_python_source.py.gz.b64",
+  "prereg_commit": "fb335f6a5ac2ec6f269bc1702cd3f2b39e23e3e8"
+}
