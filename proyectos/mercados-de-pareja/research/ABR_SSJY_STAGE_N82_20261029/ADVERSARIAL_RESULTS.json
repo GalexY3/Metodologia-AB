@@ -1,0 +1,27 @@
+{
+  "type": "posthoc_adversarial_N82_same_holdout_not_new_cycle",
+  "sha256_original_zip": "23cff03451b13f94354d875e777f60e1c63224829f42b8adf9d73d7563812e24",
+  "heldout_actors": 3004,
+  "heldout_offers": 1705093,
+  "train_global_click_rate": 0.019931496412306626,
+  "target_train_frequency_x_actor_round_baseline": {
+    "logloss": 0.09449183138930936,
+    "brier": 0.018912375787976093,
+    "group_count": 256,
+    "shrinkage_alpha": 100
+  },
+  "target_ctr_alpha20": {
+    "logloss": 0.08775329406513609,
+    "brier": 0.018570492660909363
+  },
+  "target_ctr_improvement_over_strong": 0.006738537324173275,
+  "bootstrap_100_actor_cluster_CI95": [
+    0.005869921893220209,
+    0.0077273404723529554
+  ],
+  "no_raw_rows_shared": true,
+  "not_confirmatory": "Benchmark chosen after primary result, source same, no causal inference.",
+  "adversarial_code_sha256_pre_run": "7745debfe4dde9e50be65b11edaf22536ff1426a952f85ff83973b68ab60dfe3",
+  "adversarial_lock_commit": "de61b2f67efdc88d464191fcb5930453de7d9e03",
+  "adversarial_design_commit": "d4c7929a4fb15dcc0e25d3781be21808221e27a4"
+}
