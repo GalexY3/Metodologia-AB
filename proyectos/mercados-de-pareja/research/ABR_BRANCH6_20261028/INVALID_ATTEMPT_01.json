@@ -1,0 +1,17 @@
+{
+  "id": "N09_initial_instrument",
+  "status": "INVALID",
+  "date": "2026-10-28",
+  "precommit": "a7eeef166ae06ed8aec49e9d9f9f441923df4509",
+  "source_sha256": "f34516e4b0514956eed5e18523b9716d65a79dc7f1a58acb12659ac98fe89322",
+  "observed_failure": "assertion blocking_pairs(DA)==0 failed for seed 1103, k20, reported 1432",
+  "root_cause": "blocking() indexed current woman match as uw[m,wpartner[w]] instead of uw[wpartner[w],w]; bad auditor, DA separately inspected against explicit loop and showed 0 true blocking pairs",
+  "fixes": [
+    "Correct the utility indices",
+    "Simplify DA choice comprehension for auditability",
+    "Use same seeded within-round random event ordering across async conditions"
+  ],
+  "repair_sha256": "6f351329c3c9fdc5aad83dcb719962dc022b8b17203b94e6661ed322ffe0b632",
+  "retest_status": "PENDING_REPAIRED_SOURCE_FROZEN",
+  "cycle_count": "Invalid attempt does not count as valid cycle; N09 valid only if repaired code run passes."
+}
