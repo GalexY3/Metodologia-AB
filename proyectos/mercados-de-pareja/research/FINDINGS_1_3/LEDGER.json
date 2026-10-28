@@ -36,7 +36,19 @@
         "event heterogeneity"
       ],
       "external_replication": "Cross-dataset exploratory replication of procedure, not preregistered prospective replication nor evidence for mechanism",
-      "updated_at": "2026-10-28"
+      "updated_at": "2026-10-28",
+      "posthoc_adversarial_update": {
+        "date": "2026-10-28",
+        "subsequent_campaign": "ABR-TWO-WAY20-20261028",
+        "status": "SCOPE_WEAKENED_BY_ALTERNATIVE_ESTIMAND",
+        "new_evidence": "Mixmosa male age-gap coefficient with chooser+candidate FE −0.00094 per SD (SE chooser .02049) versus Columbia −0.03208 (SE .00960). Prior sign reversal in actor×event permutation statistic remains a correct *descriptive statistic* but is not stable as an underlying behavioral effect when estimated using two-way FE.",
+        "causality": "NOT_IDENTIFIED",
+        "novelty": "NOT_ACREDITED",
+        "level": "1/3 only as exact descriptive scoped contrast; do not generalize to male preference",
+        "source": "research/ABR_TWO_WAY20_20261028/N53_MIXMOSA_TWOWAY_RESULTS.json",
+        "duplicate_count": "No new N1 for N53",
+        "adversarial_conclusion": "General male reversal hypothesis has not survived this stronger specification."
+      }
     }
   ]
 }
