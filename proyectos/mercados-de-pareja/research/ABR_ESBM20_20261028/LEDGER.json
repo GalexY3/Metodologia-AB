@@ -18,7 +18,7 @@
     "N85",
     "N86"
   ],
-  "R5": "STOP_AFTER_N82__REAL_RECORDED_RECOMMENDATIONS_AND_OUT_OF_ACTOR_PREDICTION_BUT_NO_EXPLICIT_NO_OR_LONG_TERM_OUTCOME",
+  "R5": "STOP_AFTER_N82__2011_JIAYUAN_DATA_HISTORICAL_ACADEMIC_PUBLICATION_REQUIRES_RIGHTSHOLDER_AUTHORIZATION__NO_NEW_N83__FOUR_UNUSED",
   "prereg_commit": "026cc12b5136e60034c71c2f794d01a453bdf5bd",
   "source_freeze_commit": "7f196409bc1ba5b5af6d8caad39c173a38a99405",
   "source_sha256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
@@ -35,22 +35,26 @@
   "QA": "QA.json",
   "raw_data_human_processed": false,
   "prior_register": {
-    "sources_total": 61,
+    "sources_total": 66,
     "prior_hypotheses_total": 30,
-    "update_events_total": 83,
+    "update_events_total": 90,
     "latest_sources": [
-      "SRC060",
-      "SRC061"
+      "SRC062",
+      "SRC063",
+      "SRC064",
+      "SRC065",
+      "SRC066"
     ],
     "latest_updates": [
-      "U078",
-      "U079",
-      "U080",
-      "U081",
-      "U082",
-      "U083"
+      "U084",
+      "U085",
+      "U086",
+      "U087",
+      "U088",
+      "U089",
+      "U090"
     ],
-    "independence": "SRC061 SSJY same exact raw cohort as SRC059; SRC060 Su Hu 2019 same code conventions but original cohort identity unverified, no independent replication"
+    "independence": "SRC062–SRC065 reflect SAME 2011 Jiayuan contest dataset SRC059/SRC061; SRC066 is subset of previously counted HCMST SRC048/SRC049; zero new cohorts"
   },
   "new_N1": 0,
   "new_N2": 0,
@@ -733,8 +737,8 @@
     "source": "../ABR_PAIRFAM_GATE_20261028/LEDGER.json",
     "source_blob_sha": "a50c6fde0a9e0532f5e974f32e9f3744e686238c",
     "not_counted_cycle": "source update after N78 is maintenance (SRC053/U056-U058).",
-    "current_status": "STOP_R5; N83-N86 NOT_EXECUTED",
-    "current_posthoc_audit": "../ABR_NO_NEW_CYCLE_ACCESS_REVIEW_20261028/REPORT.md",
+    "current_status": "STOP_R5; N83-N86 NOT EXECUTED; SSJY 2011 competition academic publication rightsholder authorization UNVERIFIED",
+    "current_posthoc_audit": "../ABR_POST_N82_PROVENANCE_RIGHTS_GATE_20261029/REPORT.md",
     "latest_completed": "N82",
     "last_updated": "2026-10-29"
   },
@@ -761,5 +765,34 @@
     "CT2_after": 7,
     "novelty_grade": "0/3",
     "no_causal_inference": true
+  },
+  "latest_posthoc_gate": {
+    "date": "2026-10-29",
+    "type": "POST_HOC_SOURCE_RIGHTS_AND_PROVENANCE_NONCYCLE",
+    "new_valid": 0,
+    "new_invalid": 0,
+    "new_planning": 0,
+    "report": "../ABR_POST_N82_PROVENANCE_RIGHTS_GATE_20261029/REPORT.md",
+    "status": "../ABR_POST_N82_PROVENANCE_RIGHTS_GATE_20261029/STATUS.json",
+    "source_ids": [
+      "SRC062",
+      "SRC063",
+      "SRC064",
+      "SRC065",
+      "SRC066"
+    ],
+    "update_ids": [
+      "U084",
+      "U085",
+      "U086",
+      "U087",
+      "U088",
+      "U089",
+      "U090"
+    ],
+    "CT2_after": 7,
+    "no_new_cycle_point": true,
+    "research_permission": "UNVERIFIED RIGHTSHOLDER; HISTORIC COMPETITION DOCUMENT SAYS ACADEMIC PUBLICATION REQUIRES PERMISSION",
+    "not_counted_as_cycle": true
   }
 }
