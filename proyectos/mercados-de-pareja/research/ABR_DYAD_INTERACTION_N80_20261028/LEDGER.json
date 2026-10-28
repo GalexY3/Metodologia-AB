@@ -1,0 +1,101 @@
+{
+  "schema": "ab.research.ledger.v1",
+  "campaign": "ABR-DYAD-INTERACTION-N80-20261028",
+  "branch": "research/ab-r-mercados-pareja-20261028",
+  "date": "2026-10-28",
+  "parent": "N79",
+  "authorized_start": 7,
+  "valid_this_turn": 1,
+  "invalid_this_turn": 0,
+  "planning_only_this_turn": 0,
+  "completed_total": 14,
+  "remaining_unused_authorized": 6,
+  "unstarted_ids": [
+    "N81",
+    "N82",
+    "N83",
+    "N84",
+    "N85",
+    "N86"
+  ],
+  "R5": "STOP_AFTER_N80__NO_LEGALLY_ACCESSED_INDEPENDENT_MICRODATA_AVAILABLE",
+  "CT2": {
+    "before": 6,
+    "after": 6,
+    "scale": "ordinal judgement 1–100 NOT probability"
+  },
+  "grade": "0/3",
+  "new_N1": 0,
+  "new_N2": 0,
+  "new_N3": 0,
+  "source_ids_added": [
+    "SRC056",
+    "SRC057",
+    "SRC058"
+  ],
+  "prior_id_added": "P-INTERACTION-EXPRESSIVE",
+  "update_ids_added": [
+    "U066",
+    "U067",
+    "U068",
+    "U069",
+    "U070",
+    "U071"
+  ],
+  "sources_count": 58,
+  "priors_count": 28,
+  "updates_count": 71,
+  "randomized_independent_paper_doc_only": true,
+  "raw_rows_processed": 0,
+  "own_experiments": 0,
+  "synthetic_runs": 0,
+  "external_replication": "NOT_EXECUTED",
+  "cycles": [
+    {
+      "id": "N80",
+      "type": "DOCUMENTARY_AB",
+      "status": "COMPLETED_ORIGINAL_RANDOMIZED_INTERACTION_ELIGIBILITY",
+      "A": "Identify inter-person signal intervention effects on post-pre attraction independently from ex ante profile desirability; original PNAS 31 people 60 video dates, not an ESBM causal estimand.",
+      "B": "Dyad congruence main-effect vs both-positive positive-valence and treatment interaction; confounded or externally nontransportable signals as alternatives.",
+      "C": "Crossed 2x2 smile manipulation with competent actor/partner Social Relation Model, pre/post rating, clustered repeated-person outcomes; compare genuine time synchrony vs static shifted display.",
+      "D": "Original 10-page PDF text read, original GitHub README and R behavior/synchrony analyses fetched; screenshots failed, archive.org CSV not available, zero subject rows processed.",
+      "E": "Published 31 volunteer/60 real dyadic sessions; positive ++ smile vs mixed attraction ratings and -- conversation quality vs mixed, not true dynamic smile synchronization. Author statistical interaction quoted chi2(3) 9.7 P .001.",
+      "F": "Small n, ratings vs stable match, repeat encounters, outcome mapping, data inaccessible, potential chi2 df/p mismatch (.0213 for df3, .00184 for df1), no inference of fraud.",
+      "G": "No independent confirmatory replication; SRC056 and SRC057 same original sample, Campus SRC058 derivative from earlier pairfam.",
+      "H": "SRC056–SRC058, U066–U071; new prior P-INTERACTION-EXPRESSIVE; 58 sources / 28 priors / 71 updates, no numeric posterior.",
+      "I": "0/3 original grade, N1=0 N2=0 N3=0, CT2 6→6, D1.1 candidate change only; no own causal effect identified.",
+      "J": "STOP_R5, six unused N81–N86, no own experiment or human rows; need legally obtained data and distinct prediction.",
+      "prereg_commit": "e70079a647c7142281d6bc6c30ce9f3e92f69cbb",
+      "source_ids": [
+        "SRC056",
+        "SRC057",
+        "SRC058"
+      ],
+      "prior_ids": [
+        "P-INTERACTION-EXPRESSIVE",
+        "P-MEASURE_OUTCOME",
+        "P-NOVELTY",
+        "P-DYADIC_ACCESS",
+        "P-LONGITUDINAL-ELIGIBILITY",
+        "P-RECIPROCITY"
+      ],
+      "prior_update_ids": [
+        "U066",
+        "U067",
+        "U068",
+        "U069",
+        "U070",
+        "U071"
+      ],
+      "CT2_before": 6,
+      "CT2_after": 6,
+      "DRIFT": "D1.1 planned mechanism dimension, no implemented pivot",
+      "new_N1": 0,
+      "new_N2": 0,
+      "new_N3": 0,
+      "raw_rows_read": 0
+    }
+  ],
+  "pre_commit": "e70079a647c7142281d6bc6c30ce9f3e92f69cbb",
+  "audit": "REPORT.md"
+}
