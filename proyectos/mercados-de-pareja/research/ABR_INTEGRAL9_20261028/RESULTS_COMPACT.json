@@ -1,0 +1,193 @@
+{
+  "schema": "ab.research.synthetic_results.v1",
+  "campaign": "ABR-INTEGRAL9-20261028",
+  "date": "2026-10-28",
+  "source_sha256": "dfe5dabc2c5c9cbd07a76471e0d855d85424a26705d1ea626b55ccb35289b279",
+  "prereg_commit": "51a387a2eaadbfb9604f0ceff9d62bb0fee32308",
+  "freeze_commit": "61c64410f58c182e1344fdc27a6c56390ee0bb08",
+  "file_hashes": {
+    "RUNS_json": "72f4cadd87dc45f1edcc5ec2370ba507f58f2e337ba886239ebf2767b86c5cd6",
+    "SUMMARY_json": "8cedf4fd0d59d046ee8ec0c0c1814dd971804d35fc68104e3cfd9847ce8a6ab9",
+    "QA_json": "66a2d96c4f10a64b26aa74fd13fcff9e41ebfaed9357eef594f4ea9c24cfe563"
+  },
+  "n_agents": 320,
+  "n_seeds": 6,
+  "seed_values": [
+    121,
+    313,
+    577,
+    787,
+    1009,
+    1291
+  ],
+  "n_scenarios": 10,
+  "n_runs": 60,
+  "per_condition_summary_keys": [
+    "scenario",
+    "coverage",
+    "r_quality_mutual",
+    "r_quality_matched",
+    "sd_quality_matched",
+    "share_same_group_exposure",
+    "share_same_group_matched",
+    "gini_right_visibility",
+    "zero_visibility_right_avg",
+    "corr_target_q_to_visibility",
+    "mutual_candidate_pairs"
+  ],
+  "summary": [
+    [
+      "null",
+      0.80521,
+      0.02183,
+      0.0199,
+      0.06899,
+      0.24974,
+      0.24829,
+      0,
+      0,
+      0,
+      329
+    ],
+    [
+      "common_quality",
+      0.79583,
+      0.01676,
+      -0.05871,
+      0.0947,
+      0.24974,
+      0.26932,
+      0,
+      0,
+      0,
+      346.66667
+    ],
+    [
+      "common_with_reservation",
+      0.76979,
+      0.09898,
+      0.08445,
+      0.05517,
+      0.24974,
+      0.2461,
+      0,
+      0,
+      0,
+      308.5
+    ],
+    [
+      "explicit_homophily",
+      0.91042,
+      0.00815,
+      -0.052,
+      0.07721,
+      0.24974,
+      0.49691,
+      0,
+      0,
+      0,
+      476.16667
+    ],
+    [
+      "joint_preferences",
+      0.90729,
+      0.10072,
+      0.11486,
+      0.03855,
+      0.24974,
+      0.48256,
+      0,
+      0,
+      0,
+      439.33333
+    ],
+    [
+      "segregated_opportunities",
+      0.80729,
+      -0.021,
+      -0.0905,
+      0.0827,
+      0.89071,
+      0.88869,
+      0,
+      0,
+      0,
+      343.66667
+    ],
+    [
+      "popularity_skewed_recommender",
+      0.67917,
+      -0.02608,
+      -0.16645,
+      0.07096,
+      0.24974,
+      0.24154,
+      0.43519,
+      2.33333,
+      0.88512,
+      411.5
+    ],
+    [
+      "common_with_reservation_k6",
+      0.58021,
+      0.05027,
+      0.08222,
+      0.09123,
+      0.26233,
+      0.2648,
+      0,
+      0,
+      0,
+      155.5
+    ],
+    [
+      "common_with_reservation_k24",
+      0.97083,
+      0.09396,
+      0.15735,
+      0.07948,
+      0.24809,
+      0.24218,
+      0,
+      0,
+      0,
+      606.16667
+    ],
+    [
+      "segregated_null",
+      0.82604,
+      -0.00211,
+      -0.01557,
+      0.10154,
+      0.89071,
+      0.88205,
+      0,
+      0,
+      0,
+      338
+    ]
+  ],
+  "quality_checks": {
+    "all_scenarios_6_seeds": true,
+    "regular_graph_doubly_regular": true,
+    "matching_is_subset_of_mutual": true,
+    "each_person_at_most_one_match": true,
+    "duplicated_run_identical": true
+  },
+  "limitations": [
+    "Synthetic only and parameter values stipulations; correlation across six seeds has Monte Carlo uncertainty, not confidence interval for human population",
+    "Similarity label abstract and quality latent synthetic independent of label/age",
+    "Max cardinality matching is not stable utility/welfare optimal, network outcomes depend on match procedure",
+    "Popularity skew condition unequal incoming opportunity budgets by design, only left user impressions fixed",
+    "Quality-based reservations are imposed not empirically estimated; outcomes may change under alternate parameters",
+    "No same sex/nonbinary/relationship survival/public reputation dynamics implemented",
+    "Not causal external evidence; high external priors for most mechanisms"
+  ],
+  "stage_names": [
+    "exposure",
+    "at least one unilateral yes",
+    "reciprocal interest",
+    "exclusive maximum-cardinality pair"
+  ],
+  "research_grade": "0/3 known mechanism illustrations, not novel"
+}
