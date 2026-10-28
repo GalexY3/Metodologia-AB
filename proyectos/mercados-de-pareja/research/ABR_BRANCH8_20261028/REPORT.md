@@ -52,3 +52,6 @@ Hallazgos adversariales: Gale-Shapley supera cobertura y sorting de swipe; N03 n
 - INE/ECEPOV 2021, https://datos.gob.es/es/catalogo/ea0042823-encuesta-de-caracteristicas-esenciales-de-la-poblacion-y-las-viviendas-ecepov
 
 **Próxima solicitud sugerida:** autorizar `BRANCHING AB-R 6 ciclos` para una intervención con comparadores paritarios y acceso/representatividad de datos, **pendiente de aprobación del investigador**. Ninguno se considera iniciado.
+
+## Nota de auditoría posterior al cierre: implementación auxiliar
+Una segunda implementación congelada separadamente (SHA-256 `a4c48335...`) produjo una auditoría reproducible adicional con **un intento N05 inválido** por reexposición de díadas rechazadas; se conservó, preregistró reparación y reejecutó N05 con bloqueo de díadas. Véase [auditoría secundaria](AUDITORIA_SECUNDARIA_A4C4.md), [prerregistro de reparación](REPAIR_N05_PREREG.json) y [resultados corregidos](RESULTS_REPAIRED_N05.csv). Esta auditoría **no añade ocho ciclos ni sustituye los números primarios**, y tampoco constituye replicación externa. La expresión «cero invalidaciones formales» anterior describe únicamente el protocolo primario `39c693a8...`; al considerar todos los intentos instrumentales conservados hay **1 intento auxiliar inválido, reparado**.
