@@ -1,0 +1,26 @@
+{
+  "campaign": "ABR-TWO-WAY20-20261028",
+  "subtest": "N53-CROSS-SOURCE-TWOWAY-FE-AGE",
+  "date": "2026-10-28",
+  "parent_prereg_commit": "4eeaee46511aba8547d62d4ee97ed3e9ea54fdcf",
+  "state": "FROZEN_BEFORE_MIXMOSA_TWOWAY_RUN",
+  "empirical_question": "Does previous positive male age-closeness proxy in Columbia versus negative in Mixmosa survive target & chooser fixed effects?",
+  "data": {
+    "mixmosa_source": "dankras/mixmosa-anonymized-data",
+    "interaction_blob": "c4aba45888dc07573b6bd12554f73fb57ebb0479",
+    "feature_blob": "99679f0e33b55099a4a0705810dd9771019554d0"
+  },
+  "design": {
+    "sample": "all observed eligible directed speed dates with both actor and target ages, gender-specific",
+    "outcome": "unilateral yes",
+    "x": "abs(age_actor-age_target), standardised by sample SD",
+    "effects": "chooser ID and candidate ID, iterative alternating projections",
+    "identification": "signed age is perfectly collinear with chooser and candidate fixed effects, not reported",
+    "minimum_complete": 500,
+    "variance_check": "abort if feature residual variance negligible or iteration fails",
+    "standard_errors": "cluster by chooser; covariance from residualized X and residualized model residual",
+    "comparison": "Columbia 2way FE age-only coefficients from original selected complete-case samples (N4071/sex), Mixmosa complete ages ~1888/sex; sample sizes differ",
+    "limits": "no timestamp causal or homophily pure; post N47-52 adaptive selection, N53 a prospectively recorded robustness test but exploratory"
+  },
+  "status": "NO_MIXMOSA_MODEL_FITTED_YET"
+}
