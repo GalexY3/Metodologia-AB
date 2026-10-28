@@ -1,0 +1,34 @@
+{
+  "campaign": "ABR-EVIDENCE6-20261028",
+  "prereg_commit": "4c8cf495326d28faa8ae3ccb42c0b99469655e6c",
+  "frozen_before_execution": true,
+  "python_source_sha256": "2028d687102c211a2bc31994a80985d643aaf48752a5da21b3bf5ae0e1072dc3",
+  "source_size_bytes": 6909,
+  "source_local_path": "/mnt/data/ABR_EVIDENCE6_20261028/experiment.py",
+  "freeze_date": "2026-10-28",
+  "seeds": [
+    1103,
+    2207,
+    3301,
+    4409,
+    5501
+  ],
+  "environment": "Python 3 numpy",
+  "source_upload_pending": "Source SHA frozen, script to be archived with GitHub and ZIP after execution; do not claim remote source until verified",
+  "endpoints": [
+    "r_value",
+    "coverage",
+    "gap",
+    "blocking_pairs",
+    "mutual_likes",
+    "planned_directed_views"
+  ],
+  "notes": [
+    "N17 revealed full graph to all models ex ante but algorithmically differs in commitment",
+    "N18 forced fixed exposure graph and delayed matching for valid static negative control, no Tinder-like exits",
+    "N18 TTL=5 differences in per-person viewing rounds"
+  ],
+  "limitations": [
+    "no external human validation"
+  ]
+}
