@@ -1,0 +1,62 @@
+{
+  "schema": "ab.research.ledger.v1",
+  "campaign": "ABR-PAIRFAM-GATE-20261028",
+  "branch": "research/ab-r-mercados-pareja-20261028",
+  "date": "2026-10-28",
+  "parent": "N77",
+  "authorized_start": 9,
+  "prereg_commit": "d62f58c2613a0ca58d67db92ed9d5696b42a3d97",
+  "completed_documentary_valid": 1,
+  "experimental_cycles": 0,
+  "planning_only": 0,
+  "invalid_AB_cycles": 0,
+  "access_failures_not_cycles": 2,
+  "remaining_unused_authorized": 8,
+  "unstarted_ids": [
+    "N79",
+    "N80",
+    "N81",
+    "N82",
+    "N83",
+    "N84",
+    "N85",
+    "N86"
+  ],
+  "CT2_before": 7,
+  "CT2_after": 7,
+  "grade": "0/3",
+  "N1_new": 0,
+  "N2": 0,
+  "N3": 0,
+  "independent_human_rows_processed": 0,
+  "external_replication": "NOT_EXECUTED",
+  "selection_exposure": "Source found exploratorily; prereg was before detailed manual inspection, not before initial search.",
+  "cycle": {
+    "id": "N78",
+    "type": "DOCUMENTARY_ACCESS_AB",
+    "status": "VALID_DOCUMENTARY_NEW_MULTI_ACTOR_PANEL_CLASS_NO_MICRODATA",
+    "A": "Whether pairfam offers linked partner respondent and month-level relationship episodes and whether legal microdata access is available; unit respondents, partners and episodes; no causal outcome estimand.",
+    "B": "H1 repeated multi-actor couple data and episodes; H0 lacks linked partner reports; H_alt missing/censoring or access limits make it unusable.",
+    "C": "Read official original technical manual after committed prereg; compare documented data structure against HCMST and NLSY97; require no-swipe negative control and license gate.",
+    "D": "GESIS project + pairfam manual Release14.2 PDF inspected visually pp 5/67/69/74/106; attempted GESIS link yields 502; no authenticated account or data bytes.",
+    "E": "Monthly union episodes and partner surveys linked by id documented; wave14 not integrated into original biopart; registration required.",
+    "F": "Partner response selection, anchor-only ever-partnered data, left truncation, right censoring, prospective-retrospective mixing, imputed dates and no partner sample weights; no rejected candidates or bidirectional app logs.",
+    "G": "Independent observation class of multi-actor survey verified in documentation; zero replication of our ESBM hypotheses or human effect tests.",
+    "H": "SRC051 and SRC052 registered as one sample; qualitative updates U053-U055; prior P-DYADIC-PANEL new, P-LONGITUDINAL-ELIGIBILITY amended, P-DYADIC_ACCESS unchanged.",
+    "I": "Unit/source eligibility yes; causal ESBM identification no; raw files 0; 0/3; CT2 7 to 7; privacy/access observed.",
+    "J": "STOP_R5 until authorized SUF/codebook and preregistered real contrast; N79–N86 unstarted."
+  },
+  "sources_added": [
+    "SRC051",
+    "SRC052"
+  ],
+  "prior_added": [
+    "P-DYADIC-PANEL"
+  ],
+  "prior_updates": [
+    "U053",
+    "U054",
+    "U055"
+  ],
+  "audit": "ACCESS_AND_SCOPE_AUDIT.md"
+}
