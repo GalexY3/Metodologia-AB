@@ -1,0 +1,56 @@
+{
+  "schema": "ab.research.prereg.v1",
+  "campaign": "ABR-PAIRFAM-GATE-20261028",
+  "cycle_id": "N78",
+  "type": "DOCUMENTARY_ACCESS_AB",
+  "date": "2026-10-28",
+  "branch": "research/ab-r-mercados-pareja-20261028",
+  "pre_discovery_note": "pairfam was identified through search and summary metadata before this freeze; this is NOT preregistration of source discovery or prior published findings. This freezes the subsequent eligibility and access audit only.",
+  "authorized_remaining_before": 9,
+  "parent": "N77",
+  "mode": "AB-R",
+  "classification": "DOCUMENTARY, no microdata runs unless lawfully retrieved",
+  "A": {
+    "question": "Does the German pairfam 14-wave survey provide independent time-indexed partner-level observations of formation, attrition and breakup that HCMST lacks, and can the exact authorized research files be retrieved here?",
+    "estimand": "source eligibility and accessibility; not a causal romantic-choice effect",
+    "units": "respondent-panel and partner reports; waves 2008–2022",
+    "outcome": "documented partner and episode data, not couple formation effects estimated in this cycle"
+  },
+  "B": {
+    "hypotheses": [
+      "H1 pairfam provides repeated multi-actor partner and relationship spells with dating partner reports",
+      "H0 partner respondent data cannot be linked for longitudinal modeling or measures are too restricted",
+      "H_alt availability varies by wave, cohort, selection and permission; HCMST remains adequate for simpler survival analysis"
+    ],
+    "prior_art": "already inspected HCMST 2017–22; pairfam named but source documentation not yet read in depth"
+  },
+  "C": {
+    "primary_endpoint": "OFFICIAL_DOCUMENTED_MULTI_ACTOR_LONGITUDINAL_AND_PERMITTED_RETRIEVAL_STATE",
+    "decision_rule": "Report official dataset structure, release, terms, and exact access outcome. Admit N78 as documentary cycle only if a genuinely new class of source observation is documented compared with HCMST and all A–J are completed; otherwise planning-only. No scientific validation without data.",
+    "falsifiers": [
+      "No partner interviews, linkage or episode history in official codebook",
+      "Only retrospective one-shot data",
+      "Access conditions prevent lawful analysis in this environment"
+    ],
+    "strong_controls": [
+      "HCMST 2017–22: repeated individual records, no direct partner response",
+      "NLSY97: longitudinal individual relationship histories, no cross-respondent partner surveys unless codebook shows otherwise",
+      "Negative control: exposure of unchosen app candidates should remain absent in pairfam"
+    ],
+    "selection_exposure": "adaptive source discovery, exploratory, no reserved human outcome holdout",
+    "no_numeric_effect_size": true
+  },
+  "D": {
+    "instrumentation": "Official GESIS/pairfam project documentation and independent registration/licensing; attempt authorized download without bypass; exact source links, failures and file hashes if acquired",
+    "frozen_before_detailed_document_inspection": true
+  },
+  "E": "One source-gate evaluation only, not synthetic simulation",
+  "F": "Adversarial check: multi-actor interviewed partners are selected, surviving pair only; retrospective histories and attrition; no swipe universe; German cohorts and external validity",
+  "G": "No external confirmation of ESBM mechanism in absence of human records and strong baselines",
+  "H": "Qualitative prior update only; no numeric Bayes updates from metadata",
+  "I": "0/3 or documentary eligibility; CT2 7 -> 7 unless new actual discriminating human data are processed; no N1/2/3 by source listing",
+  "J": "STOP_R5 if no usable microdata, retain remaining authorizations; do not open N79 without a distinct discriminating instrument",
+  "access_ethics": "No unauthorized redistribution, no inference about identifiable individuals, no bypass of registration or institutional restrictions",
+  "precommit_requirements": "GitHub commit before documentation inspection; reference source V14 and access terms; archive post-audit sources and priors",
+  "hash_purpose": "Repository commit is time-order provenance, NOT cryptographic hash of remote dataset"
+}
