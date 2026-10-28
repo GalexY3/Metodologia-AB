@@ -1,0 +1,66 @@
+{
+  "campaign": "ABR-COLUMBIA-N39-N40-20261028",
+  "branch": "research/ab-r-mercados-pareja-20261028",
+  "project": "proyectos/mercados-de-pareja",
+  "date": "2026-10-28",
+  "authorization": "Last 2 cycles already granted within 20 EVIDENCE20",
+  "cycles_granted": 2,
+  "cycles": [
+    "N39",
+    "N40"
+  ],
+  "freeze_timing": "before Columbia popularity/mutuality effect estimates; preliminary format and reciprocity QA already done",
+  "dataset": {
+    "origin": "User-attached speed_dating_clean.parquet, uploaded in current turn",
+    "sha256": "a0fe55d6172d01f81d6c7e2546330828cb98d1f631b2598fec4d4f4660eaa37d",
+    "size_bytes": 297736,
+    "declared_origin": "ZharlieSineFine/Speed-Dating-Reciprocal-Recommender-System cleaned Columbia Speed Dating data, Git blob c873e1466f9594f3b709b0da70d7dc4a2739b1cd",
+    "preliminary_checked": "PAR1 footer, 8368 directed rows, 121 fields, 4184 unique mirror-duplicated dyads, 21 waves, 551 unique iids, 0 inconsistency of mirror decisions, 690 mutual dyads. Preliminary QA not inferential analysis."
+  },
+  "primary_estimands": [
+    "r_popularity between partners of mutually accepting dyads, popularity from OTHER dates and excluding focal dyad, at least 3 remaining exposures per participant",
+    "event-conditioned permutation null for matched popularity correlation preserving mutual counts per wave",
+    "difference observed mutual vs event-wise independent null (male and female approvals shuffled within wave)",
+    "difference observed mutual vs woman-wave approval-rate-preserving null"
+  ],
+  "secondary": [
+    "null preserving both male-wave and woman-wave approval rate",
+    "event-cluster resampling exploratory 95% percentile for r",
+    "event-centered correlation for matched pairs",
+    "coverage and missingness"
+  ],
+  "simulation_contract": {
+    "seed": 20261028,
+    "permutations": 1000,
+    "bootstrap_events": 1000,
+    "match_sampling": "one woman-side row per wave+dyad; each participant may have multiple dyads; exact 1:1 mirror QC",
+    "records_count_once": true,
+    "labels": "woman_dec=dec in gender0 row; man_dec=dec_o; mutual=match",
+    "proxy": "other people’s positive votes received per person, excluding focal pair, with at least 3 other encounters",
+    "unit_of_exposure": "8-minute dyad, not app exposure",
+    "control_event": "shuffle female_dec within wave and hold male_dec fixed; no shuffle of individual IDs",
+    "control_female": "shuffle female_dec within woman x wave, male fixed",
+    "control_both": "independently shuffle female_dec within woman x wave and male_dec within man x wave",
+    "null_popularity": "hold popularity proxy and observed wave fixed, shuffle mutual flags among dyads within wave keeping matches per wave"
+  },
+  "validity_gates": [
+    "If >0 mirror disagreements or duplicate ambiguous dyads, stop and record invalid rather than repair silently",
+    "If <60 mutual dyads with at least three OTHER encounters both sides, no popularity claim",
+    "If <5 waves with eligible matches, stop matched comparison",
+    "Nulls require >=1000 permutations; disclose adaptive selection and retrospective exploratory nature"
+  ],
+  "restrictions": [
+    "data de Columbia 2002-04 US speed dating, not Spain nor Tinder",
+    "respondents in same event not independent; uncertainty event cluster",
+    "model score value latente is not identical to popularity proxy",
+    "original Columbia sample contains known past reprocessing; record cleaned source lineage",
+    "no claim of causal reputation-loss effect",
+    "do not commit raw person-level data"
+  ],
+  "A_J": {
+    "N39": "Data quality, dedup, observed popularity association and null controls, adverse findings; numeric results and cross-source comparison",
+    "N40": "Reproduce exact same predeclared estimand in Mixmosa as possible, compare uncertainty/context, update portfolio CT2 and R5, require prior art and independent sample distinction; research review rather than autonomous invention of theory"
+  },
+  "grade_rule": "No novel 2/3 claim from descriptive event data; CT2 ordinal",
+  "source_code_frozen_separately": true
+}
