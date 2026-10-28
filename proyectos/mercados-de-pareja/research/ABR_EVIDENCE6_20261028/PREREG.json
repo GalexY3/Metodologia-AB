@@ -1,0 +1,79 @@
+{
+  "schema": "ab.research.campaign.v1",
+  "campaign_id": "ABR-EVIDENCE6-20261028",
+  "parent": "ABR-BRANCH6-20261028",
+  "authorization": "User grants the needed cycles; scoped conservatively to NEXT_6_EVIDENCE_GATED.md six N15-N20",
+  "authorized": 6,
+  "mode": "BRANCHING AB-R",
+  "method": "AB 3.2.1 O2-O7",
+  "date": "2026-10-28",
+  "branch": "research/ab-r-mercados-pareja-20261028",
+  "status": "PREREG_BEFORE_NEW_SIMULATION",
+  "previous_exploratory": "MATE10, BRANCH8, BRANCH6 outputs available to researcher, therefore all new synthetic work exploratory, not holdout",
+  "primary": "separate assortative matching in latent value among matches from population coverage; same potential graph not automatically equal available information",
+  "seeds": [
+    1103,
+    2207,
+    3301,
+    4409,
+    5501
+  ],
+  "cycles": [
+    {
+      "id": "N15",
+      "type": "DOCUMENTARY_AB",
+      "A": "Verificar acceso y calibración demográfica 20-39 por sexo en ECP España julio 2026",
+      "B": "H0 denominador de residentes no es mercado de solteros/usuarios elegibles; H1 tabla oficial cotejada permite al menos stock por cohortes",
+      "C": "Acceder a dataset INE 59583 y sumas 20-39 por sexo a 1-7-2026, comprobar totales nacionales contra ECP. Cuando descarga falla, documentar interfaz, respuesta y marcar DATA_BLOCKED. No usar cifras secundarias como oficial sin comprobar",
+      "D": "INE 59583 csv_bdsc + API + portal oficial; ningún dato sintético cuenta como estadístico de España"
+    },
+    {
+      "id": "N16",
+      "type": "DOCUMENTARY_AB",
+      "A": "Construir matriz educativa oficial de cónyuges y prueba de independencia",
+      "B": "H0 homogamia diagonal bruta se explica parcialmente por márgenes; H1 hay exceso neto de diagonal",
+      "C": "Descargar 60268 año 2023/2024 si posible; distinguir nacional y provincia, estudios varón/mujer, No consta, contra columnas. Si falla, generar código validado para futura ejecución y DATA_BLOCKED sin calcular cifras",
+      "D": "INE 60268, checksum fuente y formular O/E, controles marginals y unidades matrimonios"
+    },
+    {
+      "id": "N17",
+      "type": "EXPERIMENTAL_AB_CONDITIONAL",
+      "A": "Comparador DA / greedy / adaptación en un mismo grafo de información y oportunidad",
+      "B": "H0 ordenamiento solo preferencias+graph; H1 estrategia adaptativa genera diferencial incluso con exposición y conocimiento equivalentes",
+      "C": "Dos estadios: (1) construir grafo bipartito k=20 por varón/mujer en N=240, misma información por perfil/atributos para todos; (2) decisiones después de revelar el grafo completo para DA y políticas secuenciales, las tres reciben conocimiento de ranking antes de empezar; medir la diferencia en desenlaces como efecto de política bajo mismo info inicial, pero NO igualdad de reacción temporal a salidas. Añadir control DA restringido al grafo; 5 semillas; outside>=0.05; q0=.8, fatiga .02 por fallo; rechazos y pairs blocking. No simular humanos, no preferencia por similitud",
+      "D": "Sin paridad real de oportunidades ex post y de timing no reclamar equivalencia; dejar prueba negativa explícita y observaciones exploratorias. Gate: no ejecutar si código difiere del contrato."
+    },
+    {
+      "id": "N18",
+      "type": "EXPERIMENTAL_AB_CONDITIONAL",
+      "A": "Aislar caducidad/asíncrono con aristas y presupuesto de exposición equivalentes",
+      "B": "H0 bajo q fijo, likes persistentes y ambas vistas, el orden no cambia reciprocidad de pares; H1 q adaptativo y expiración crean diferencias por causalidad interna",
+      "C": "Sobre grafo k=20 N=240, cada arista aparece una vez ante cada extremo con grafo idéntico; NO salida durante exposición para preservar exposures potenciales; q fijo=.75 control negativo: sincrónico vs asincrónico persistente debe arrojar mismas aristas recíprocas. Variante q adaptativa tras vistas fallidas (fatiga .008); asincrónico por planes de visita opuestos; vencimiento TTL=5, separado. Al final hacer asignación determinista voraz en orden de utilidad conjunta sobre aristas recíprocas; 5 seeds. No llamar esto mercado Tinder real.",
+      "D": "Resultado r y cobertura para matching posterior, tasa de likes y reciprocidad, controles conjuntos y audit de equivalencia planned exposures."
+    },
+    {
+      "id": "N19",
+      "type": "DOCUMENTARY_AB",
+      "A": "Verificar si rechazo real disminuye estatus observable ante terceros",
+      "B": "H0 swipe negativo privado no tiene canal reputacional directo; H1 señales observables producen efectos en evaluaciones por terceros",
+      "C": "Revisar fuentes revisadas por pares sobre ghosting, awareness cues y unmatching, separar autoestima afectada y reputación ante terceras personas; si no hay medida reputacional cuantificada, concluir NO_IDENTIFIED, no atribuir δ",
+      "D": "Buscar diseño seguro, no perfiles reales ni puntuaciones privadas"
+    },
+    {
+      "id": "N20",
+      "type": "PLANNING_AB_ONLY",
+      "A": "Contraste de relevancia externa y decisión R5",
+      "B": "H_dyn pérdida reputacional observable añade sorting o exclusión controlado por oportunidades vs H_static preferencias y estructura suficientes",
+      "C": "Diseñar único test externo con definición de población y outcomes no identificables, poder, marginals y rival fuerte, dejando puerta cerrada hasta acceso real. No reaprovechar casos exploratorios como confirmación.",
+      "D": "AB A-J planning sin reclamar ejecución de confirmatorio; CT2 por rama y decisión STOP si no hay datos"
+    }
+  ],
+  "scoring": {
+    "CT2_start": 17,
+    "N1_prior_audited": 0,
+    "N2": 0,
+    "N3": 0,
+    "grade_gate": "no >=2/3 without novelty,strong baseline,new independent evidence"
+  },
+  "logging": "per-cycle A–J; invalid failed code counted separately, no invented valid execution"
+}
