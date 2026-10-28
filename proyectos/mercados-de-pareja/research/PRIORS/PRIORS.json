@@ -741,24 +741,26 @@
       "id": "P-SSJY-OFFER-CONVERSION",
       "question": "Within real recorded recommendation sets, is target-specific propensity to be clicked predictive for previously unseen actors beyond a common incidence and coarse target-exposure/round groups?",
       "status": "OBSERVED_INTERNAL_ACTOR_HOLDOUT_PREDICTION_ONLY",
-      "rationale": "Original SSJY data have ~8.37 million recorded rec offers with ROUND; unique candidate click attached in same round 1.9807%. Splitting actors 80/20 by fixed salted SHA256 and smoothing training target click-through alpha20 gives heldout 3004 actors, 1.705m offered triples; logloss .087753 vs .095385 global, gain .007632, 100 actor-cluster bootstrap CI [.006976,.008476]. Posthoc stronger baseline of target exposure-frequency x round groups (256 bins, smoothing 100) logloss .094492, target CTR still gains .006739, CI [.005870,.007727]. No random assignment, no actual attended impression, no explicit rejection or mutually formed union. Similar click/rec predictors were previously published (Su & Hu 2019). Descriptive repeated rec first click 2.491% vs later 1.277% is not a causal effect. The 2011 original contest scored candidate ranking with NDCG@10 using action grades rec=0, click=1, msg=2. Contemporary contestant reports weighted popularity voting and profile content baselines before 2020 MotifGNN and long before ESBM. N82 compares within-cohort logloss but not published NDCG@10 or these original strong popularity/content baselines. A contemporary participant asserts rights of publication require company authorization; rightsholder current terms not verified. Do not cite N82 as publication-authorized original result.",
+      "rationale": "Original SSJY data have ~8.37 million recorded rec offers with ROUND; unique candidate click attached in same round 1.9807%. Splitting actors 80/20 by fixed salted SHA256 and smoothing training target click-through alpha20 gives heldout 3004 actors, 1.705m offered triples; logloss .087753 vs .095385 global, gain .007632, 100 actor-cluster bootstrap CI [.006976,.008476]. Posthoc stronger baseline of target exposure-frequency x round groups (256 bins, smoothing 100) logloss .094492, target CTR still gains .006739, CI [.005870,.007727]. No random assignment, no actual attended impression, no explicit rejection or mutually formed union. Similar click/rec predictors were previously published (Su & Hu 2019). Descriptive repeated rec first click 2.491% vs later 1.277% is not a causal effect. The 2011 original contest scored candidate ranking with NDCG@10 using action grades rec=0, click=1, msg=2. Contemporary contestant reports weighted popularity voting and profile content baselines before 2020 MotifGNN and long before ESBM. N82 compares within-cohort logloss but not published NDCG@10 or these original strong popularity/content baselines. A contemporary participant asserts rights of publication require company authorization; rightsholder current terms not verified. Do not cite N82 as publication-authorized original result. Original contest's complete 2011 benchmark required train.txt, test.txt, profile_m.txt and profile_f.txt (34 attributes for each user). Recovered MotifGNN ZIP contains train.txt, profile_m.txt and generated balanced train/test CSVs, but NOT original test.txt or profile_f.txt; hence exact historical NDCG@10 competitor cannot be reproduced from this recovered archive alone. Its artificial 50:50 train/test generated subsets are not the contest's NDCG@10 test. No data rows reprocessed to establish this: only source inventory and original 2012 documentation.",
       "evidence_sources": [
         "SRC060",
         "SRC061",
         "SRC063",
         "SRC064",
-        "SRC065"
+        "SRC065",
+        "SRC059"
       ],
-      "last_update_id": "U085",
+      "last_update_id": "U090",
       "uncertainty": "Potential selection from recommender, repeat exposure nonrandom, unverified co-source 2019, time/actor overlap and smoothing; no proper external platform holdout. Bootstrap covers heldout actor clustering only, not source/platform shifts. Posthoc baseline not new preregistered test.",
       "next_falsifier_or_test": "Independent legally obtained platform impression logs that verify actual rendered recommendations and explicit yes/no outcomes, actor/time holdout, strong matching baselines with target, actor and content attributes; independent controlled platform exposure intervention with relationship follow-up.",
       "numeric_probability": null,
       "CT2_is_not_this_prior": true,
       "update_ids": [
         "U083",
-        "U085"
+        "U085",
+        "U090"
       ],
-      "latest_evidence_summary": "N82 remains a real internal exploratory/benchmark calculation, not novel or publishable until data rights cleared; comparison to original NDCG and content models never executed.",
+      "latest_evidence_summary": "Old ranking benchmark incomplete in published MotifGNN ZIP: missing original test.txt/profile_f.txt. N82 internal actor logloss cannot be compared as though contest NDCG@10 was reproduced.",
       "last_revised_at": "2026-10-29"
     }
   ],
@@ -766,8 +768,8 @@
     "all_priors_linked": true,
     "source_ids_linked": 66,
     "registered_sources": 66,
-    "update_events": 89,
+    "update_events": 90,
     "counts_as_new_AB_cycle": false,
-    "last_update": "2026-10-29 POST-N82 RIGHTS_AND_ORIGINAL_2011_CONTEST_PROVENANCE_NONCYCLE"
+    "last_update": "2026-10-29 POST-N82 ORIGINAL_CONTEST_BENCHMARK_FILE_COVERAGE_GATE_NO_CYCLE"
   }
 }
