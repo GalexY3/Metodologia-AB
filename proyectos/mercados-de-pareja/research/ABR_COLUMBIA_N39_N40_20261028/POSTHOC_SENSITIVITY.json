@@ -1,0 +1,25 @@
+{
+  "campaign": "ABR-COLUMBIA-N39-N40-20261028",
+  "status": "POSTHOC_SENSITIVITY_NOT_PREREGISTERED",
+  "source": "POSTHOC_sensitivity.py local reproducibility bundle",
+  "source_uploaded_file_sha256": "a0fe55d6172d01f81d6c7e2546330828cb98d1f631b2598fec4d4f4660eaa37d",
+  "permutations": 1000,
+  "null_description": "Independently reshuffle each person's yes/no decisions among that same person's contacts in same wave, preserving outgoing yes-degree for each chooser; recompute received-popularity excluding focal encounter, then r among newly mutual encounters",
+  "null_matched_r_mean": -0.17430449526738923,
+  "null_matched_r_percentile95": [
+    -0.2503480554884287,
+    -0.09488580440817024
+  ],
+  "fraction_null_r_ge_observed": 0,
+  "mutual_count_mean": 709.392,
+  "mutual_count_percentile95": [
+    680,
+    740
+  ],
+  "cautions": [
+    "Designed after observing primary Columbia result, so NOT independent confirmatory test.",
+    "Changes both which pairs are matched and the popularity proxy estimates; not directly same fixed covariate null as primary.",
+    "Null is structural and cannot exclude preferences for similarity or unobserved factors.",
+    "No new research cycle counted for robustness."
+  ]
+}
