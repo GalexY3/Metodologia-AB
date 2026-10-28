@@ -1,0 +1,31 @@
+{
+  "campaign": "ABR-COLUMBIA-N39-N40-20261028",
+  "code_written_before_primary_effect_computation": true,
+  "prereg_commit": "c1382f77113bce9e0bf2e275a77ccb2403f5c053",
+  "original_input_sha256": "a0fe55d6172d01f81d6c7e2546330828cb98d1f631b2598fec4d4f4660eaa37d",
+  "source_parts": [
+    {
+      "file": "analyze_columbia.py",
+      "sha256": "c1fa1ae14a9d008975e583bb1f91d2e8d0c43f6d216b301ccaa07aff3c2714cc",
+      "size_bytes": 8604
+    },
+    {
+      "file": "parquet_decode.py",
+      "sha256": "0b573d4f7ebed8e2c77e0806bed0cb6cb8a64a4b29e4bfa7bf4cb3ff1303ec48",
+      "size_bytes": 5156
+    },
+    {
+      "file": "parquet_probe.py",
+      "sha256": "dcf19310bf8f67b1dc9d24145d7245a459f9010b28a04a4414700dd918e2a469"
+    }
+  ],
+  "method": "pure Python+system libsnappy+thrift compact parquet reader, numpy pandas for analysis, no pyarrow required",
+  "params": {
+    "rng_seed": 20261028,
+    "permutations": 1000,
+    "event_bootstrap": 1000
+  },
+  "stage": "FROZEN_PRIOR_TO_TEST_EXECUTION",
+  "original_data_only_in_user_attachment": true,
+  "verify_source_code_upload_after_run": "PENDING; hash proof frozen, code artifacts in sandbox"
+}
