@@ -4,7 +4,7 @@
   "title": "Mercados de pareja · AB-R",
   "mode": "research",
   "created_at": "2026-10-28T18:00:00+01:00",
-  "updated_at": "2026-10-28T20:45:00+01:00",
+  "updated_at": "2026-10-28T21:00:00+01:00",
   "nodes": [
     {
       "id": "root",
@@ -1042,6 +1042,27 @@
         "verified_by": "",
         "verified": false
       }
+    },
+    {
+      "id": "N38",
+      "title": "Segunda muestra diádica · acceso y réplica",
+      "kind": "blocker",
+      "mode": "research",
+      "status": "blocked",
+      "detail": "Acceso reducido Columbia 8.378 filas sin pid/wave/reciprocidad; Essex/eHarmony binary inaccessible; Columbia Parquet Base64 recuperado pero sin filas procesadas. Solo N38 planificación; N39/N40 no iniciados.",
+      "sources": [
+        "research/ABR_REPLICATION_GATE_20261028/LEDGER.json",
+        "research/ABR_REPLICATION_GATE_20261028/GATE_REPORT.md"
+      ],
+      "created_at": "2026-10-28T21:00:00+01:00",
+      "updated_at": "2026-10-28T21:00:00+01:00",
+      "phase": null,
+      "acceptance": {
+        "criteria": "",
+        "evidence": [],
+        "verified_by": "",
+        "verified": false
+      }
     }
   ],
   "edges": [
@@ -1338,6 +1359,12 @@
       "from": "goal",
       "to": "N37",
       "relation": "branches_from"
+    },
+    {
+      "id": "e_goal_N38",
+      "from": "goal",
+      "to": "N38",
+      "relation": "branches_from"
     }
   ],
   "events": [],
@@ -1351,8 +1378,8 @@
     "snapshot": "2026-10-28",
     "verified_live": false,
     "progress_semantics": "Sin índice de madurez, solo evidencia limitada",
-    "last_campaign": "ABR-REALDATA13-20261028",
-    "scientific_status": "OBSERVATIONAL_EXPLORATORY_R5_STOP",
+    "last_campaign": "ABR_REPLICATION_GATE_20261028",
+    "scientific_status": "R5_STOP_2_UNUSED",
     "current_statement": "30 total cycles across three earlier campaigns and EVIDENCE6: 10+8+6+6, no 2/3, R5 STOP",
     "reviewer": "Not validated on clean clone",
     "summary": "6 valid cycles, 1 invalid instrument attempt repaired, N12 and N13 data blocked, N1=0, N2/N3=0",
@@ -1360,8 +1387,9 @@
     "authorized": 20,
     "executed": 7,
     "remaining": 13,
-    "authorized_remaining": 3,
-    "real_dyadic_dataset": "Mixmosa 1895 in-person dates"
+    "authorized_remaining": 2,
+    "real_dyadic_dataset": "Mixmosa 1895 in-person dates",
+    "authorized_used": 18
   },
   "project_contract": {
     "scope_version": "MATE-ABR-20261028-v1",
