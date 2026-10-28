@@ -3,7 +3,7 @@
   "project": "mercados-de-pareja",
   "date": "2026-10-28",
   "scope": "Retrospective provenance backfill from repository reports plus N56/N57 publisher audit. Original data never copied; not systematic or claim of accessing raw data for bibliography.",
-  "source_count": 52,
+  "source_count": 53,
   "sources": [
     {
       "id": "SRC001",
@@ -36,9 +36,9 @@
         "N22",
         "N55"
       ],
-      "contribution": "Antecedente fuerte de preferencias y matching estable para explicar sorting en plataforma",
-      "limits": "No se han reanalizado sus datos originales; no prueba caída de estatus por rechazo",
-      "evidence_access": "published_study_checked_in_prior_campaign",
+      "contribution": "Antecedente fuerte de preferencias y matching estable para explicar sorting en plataforma; Auditoría post hoc 2026-10-28: fuente primaria AER 2010 Tabla 4 (p.149) distingue perfiles visitados (hombres 385470, mujeres 172946), primeros e-mails (49223/14178), y primeros contactos que llegan a 'match' definido como intercambio de información de contacto (2130/914); el artículo declara que se observaron registros de browse/contact por usuario. Precedente fuerte de modelado de etapas.",
+      "limits": "No se han reanalizado sus datos originales; no prueba caída de estatus por rechazo; no trasladar ratios de usuarios que navegaron a simulación ESBM de impresiones ofrecidas por algoritmo, ni interpretar 'match' de contacto como relación estable o reciprocidad de swipe. La tabla es publicada, NO reestimada.",
+      "evidence_access": "PUBLISHED_PAPER_ORIGINAL_PDF_TABLE4_PAGE149_VISUALLY_INSPECTED__NO_MICRODATA",
       "verified_at": "2026-10-28",
       "reconstructed_from_project_documents": true,
       "original_copy_in_repo": false,
@@ -48,7 +48,8 @@
         "research/ABR_EVIDENCE20_20261028/SOURCES_AND_LIMITS.md",
         "research/ABR_TWO_WAY20_20261028/PRIOR_ART.md",
         "research/ABR_THIRD_SOURCE_20261028/SOURCE_AND_NOVELTY_AUDIT.md"
-      ]
+      ],
+      "audit_20261028": "research/ABR_NO_NEW_CYCLE_ACCESS_REVIEW_20261028/REPORT.md"
     },
     {
       "id": "SRC003",
@@ -966,13 +967,14 @@
       "cycle_ids": [
         "N77"
       ],
-      "contribution": "Independent longitudinal cohort 3510 participants baseline 2017, 2107 follow-up 2020, 1722 follow-up 2022; online dating channel, partner/couple formation context and relationship outcomes. Includes LGB oversample and weights. Core potential external data for relationship persistence rather than dyadic swipe choice.",
-      "limits": "Not a profile-exposure log and no prospective popularity, declined candidates or bilateral directed decisions; official Stata/SPSS/RData/codebook announced but bytes not downloaded. Longitudinal attrition and baseline partner selection; Stanford data-use terms impose nonidentification, noncommercial redistribution, author notification and citation.",
+      "contribution": "Independent longitudinal cohort 3510 participants baseline 2017, 2107 follow-up 2020, 1722 follow-up 2022; online dating channel, partner/couple formation context and relationship outcomes. Includes LGB oversample and weights. Core potential external data for relationship persistence rather than dyadic swipe choice.; Stanford ficha original especifica 2862 con pareja vigente y 541 sin pareja actual pero con pareja anterior que contestan batería relacional; instrumento no se restringe por completo a quienes tienen pareja vigente.",
+      "limits": "Not a profile-exposure log and no prospective popularity, declined candidates or bilateral directed decisions; official Stata/SPSS/RData/codebook announced but bytes not downloaded. Longitudinal attrition and baseline partner selection; Stanford data-use terms impose nonidentification, noncommercial redistribution, author notification and citation.; subgrupos del cuestionario no representan 3403 parejas observadas ni episodios completos; no se han comprobado microdatos/codificaciones.",
       "evidence_access": "PRIMARY_STANFORD_PUBLIC_CATALOG_AND_DATA_USE_AGREEMENT_READ__MICRODATA_NOT_DOWNLOADED",
       "verified_at": "2026-10-28",
       "data_reuse_rights": "STANFORD_PUBLISHED_CONDITIONS_READ_NOT_YET_EXERCISED",
       "raw_data_processed": false,
-      "independent_source_cohort": "HCMST2017_NOT_HCMST2009"
+      "independent_source_cohort": "HCMST2017_NOT_HCMST2009",
+      "latest_metadata_recheck": "2026-10-28 Stanford source webpage and ICPSR version record reviewed; Stata and codebook file requests returned HTTP403; no row bytes"
     },
     {
       "id": "SRC049",
@@ -1034,7 +1036,22 @@
       "raw_data_processed": false,
       "independent_source_cohort": "PAIRFAM_2008_2022",
       "audit": "research/ABR_PAIRFAM_GATE_20261028/ACCESS_AND_SCOPE_AUDIT.md"
+    },
+    {
+      "id": "SRC053",
+      "title": "AEA/ICPSR archive E112322V1 (2019), replication data for Hitsch, Hortaçsu and Ariely 2010",
+      "canonical_url": "https://doi.org/10.3886/E112322V1",
+      "cycle_ids": [],
+      "contribution": "Official replication package directly linked from AEA article has folder 20080317_data and LICENSE.txt. Source class potentially contains data/code for 2010 online browsing->email->contact-exchange stages, unlike survey outcome-only archives. Need inspect actual folder, README, rights and individual fields; nothing inside package recovered.",
+      "limits": "No ZIP, inner file names, LICENSE text or datasets obtained; ICPSR folder and license clicks cache miss. Do not equate listed folder with raw browser histories or claim data analysis. E112322V1 is the canonical AEA publisher link; similarly titled dev mirror E108424 is NOT counted independent and should not replace AEA citation.",
+      "evidence_access": "OFFICIAL_AEA_LINKED_ICPSR_LANDING_METADATA_ONLY__INNER_FILES_UNREAD",
+      "verified_at": "2026-10-28",
+      "data_reuse_rights": "LICENSE_LISTED_NOT_READ_RIGHTS_UNKNOWN",
+      "raw_data_processed": false,
+      "independent_source_cohort": "HITSCH2010_SAME_STUDY_AS_SRC002",
+      "audit": "research/ABR_NO_NEW_CYCLE_ACCESS_REVIEW_20261028/REPORT.md",
+      "not_a_cycle": "posthoc source maintenance, no new AB cycle"
     }
   ],
-  "last_added_campaign": "ABR-PAIRFAM-GATE-20261028"
+  "last_added_campaign": "POSTHOC_ACCESS_REVIEW_NOT_AB_CYCLE_20261028"
 }
