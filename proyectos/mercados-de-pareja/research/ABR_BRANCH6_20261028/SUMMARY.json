@@ -1,0 +1,205 @@
+{
+  "campaign": "ABR-BRANCH6-20261028",
+  "source": "RUNS.csv",
+  "n_rows": 60,
+  "group_means": [
+    {
+      "cycle": "N09",
+      "variant": "adaptive_same_order",
+      "design_size": 20,
+      "seeds": 5,
+      "pairs_mean": 69.6,
+      "coverage_mean": 0.348,
+      "r_mean": 0.3775055911181741,
+      "r_range": [
+        0.2424252806570864,
+        0.45568882088641516
+      ],
+      "gap_mean": 0.09414890855620207,
+      "pair_exposures_mean": 2908.6,
+      "mutual_evaluated_mean": 0
+    },
+    {
+      "cycle": "N09",
+      "variant": "adaptive_same_order",
+      "design_size": 60,
+      "seeds": 5,
+      "pairs_mean": 161,
+      "coverage_mean": 0.805,
+      "r_mean": 0.7113970002266614,
+      "r_range": [
+        0.6745893711013659,
+        0.7587458039460309
+      ],
+      "gap_mean": 0.08867280762395328,
+      "pair_exposures_mean": 4135.2,
+      "mutual_evaluated_mean": 0
+    },
+    {
+      "cycle": "N09",
+      "variant": "DA_full_graph",
+      "design_size": 20,
+      "seeds": 5,
+      "pairs_mean": 192,
+      "coverage_mean": 0.96,
+      "r_mean": 0.8638094358101938,
+      "r_range": [
+        0.8548847312836027,
+        0.8780789880893979
+      ],
+      "gap_mean": 0.0735249063612214,
+      "pair_exposures_mean": 4000,
+      "mutual_evaluated_mean": 0
+    },
+    {
+      "cycle": "N09",
+      "variant": "DA_full_graph",
+      "design_size": 60,
+      "seeds": 5,
+      "pairs_mean": 196.4,
+      "coverage_mean": 0.982,
+      "r_mean": 0.9170134363091422,
+      "r_range": [
+        0.9136524159479595,
+        0.9224932013613906
+      ],
+      "gap_mean": 0.05805076811184088,
+      "pair_exposures_mean": 12000,
+      "mutual_evaluated_mean": 0
+    },
+    {
+      "cycle": "N09",
+      "variant": "greedy_same_order",
+      "design_size": 20,
+      "seeds": 5,
+      "pairs_mean": 192.4,
+      "coverage_mean": 0.962,
+      "r_mean": -0.0071399803391805185,
+      "r_range": [
+        -0.07976493703598193,
+        0.07745799955940001
+      ],
+      "gap_mean": 0.21536065874930782,
+      "pair_exposures_mean": 199.8,
+      "mutual_evaluated_mean": 0
+    },
+    {
+      "cycle": "N09",
+      "variant": "greedy_same_order",
+      "design_size": 60,
+      "seeds": 5,
+      "pairs_mean": 197.2,
+      "coverage_mean": 0.9860000000000001,
+      "r_mean": 0.035149864196024956,
+      "r_range": [
+        -0.13148520184610993,
+        0.11922262497401757
+      ],
+      "gap_mean": 0.20186297715930585,
+      "pair_exposures_mean": 205.8,
+      "mutual_evaluated_mean": 0
+    },
+    {
+      "cycle": "N10",
+      "variant": "balanced_pool_100",
+      "design_size": 100,
+      "seeds": 5,
+      "pairs_mean": 359.4,
+      "coverage_mean": 0.599,
+      "r_mean": 0.7256094842873441,
+      "r_range": [
+        0.6336991599872364,
+        0.7617218174126508
+      ],
+      "gap_mean": 0.05172647186811423,
+      "pair_exposures_mean": 0,
+      "mutual_evaluated_mean": 0
+    },
+    {
+      "cycle": "N10",
+      "variant": "balanced_pool_1200",
+      "design_size": 1200,
+      "seeds": 5,
+      "pairs_mean": 356.6,
+      "coverage_mean": 0.5943333340000001,
+      "r_mean": 0.7366141894486197,
+      "r_range": [
+        0.6957866154738684,
+        0.7568504205342844
+      ],
+      "gap_mean": 0.05304777345123494,
+      "pair_exposures_mean": 0,
+      "mutual_evaluated_mean": 0
+    },
+    {
+      "cycle": "N10",
+      "variant": "balanced_pool_300",
+      "design_size": 300,
+      "seeds": 5,
+      "pairs_mean": 361.8,
+      "coverage_mean": 0.603,
+      "r_mean": 0.7408797125452281,
+      "r_range": [
+        0.723280394465242,
+        0.7582384040777409
+      ],
+      "gap_mean": 0.05023903092390625,
+      "pair_exposures_mean": 0,
+      "mutual_evaluated_mean": 0
+    },
+    {
+      "cycle": "N11",
+      "variant": "async_expire5",
+      "design_size": 40,
+      "seeds": 5,
+      "pairs_mean": 113.2,
+      "coverage_mean": 0.5660000000000001,
+      "r_mean": 0.39594458131423865,
+      "r_range": [
+        0.18767995092159506,
+        0.5308035691063024
+      ],
+      "gap_mean": 0.10722773206552338,
+      "pair_exposures_mean": 0,
+      "mutual_evaluated_mean": 3874
+    },
+    {
+      "cycle": "N11",
+      "variant": "async_persistent",
+      "design_size": 40,
+      "seeds": 5,
+      "pairs_mean": 120.4,
+      "coverage_mean": 0.602,
+      "r_mean": 0.44404203712530343,
+      "r_range": [
+        0.29661415876910324,
+        0.5126136865571644
+      ],
+      "gap_mean": 0.10163660362305627,
+      "pair_exposures_mean": 0,
+      "mutual_evaluated_mean": 3395.8
+    },
+    {
+      "cycle": "N11",
+      "variant": "simultaneous",
+      "design_size": 40,
+      "seeds": 5,
+      "pairs_mean": 123.2,
+      "coverage_mean": 0.6159999999999999,
+      "r_mean": 0.6329329125033463,
+      "r_range": [
+        0.6008109547834053,
+        0.6701889730741815
+      ],
+      "gap_mean": 0.07765986367601871,
+      "pair_exposures_mean": 0,
+      "mutual_evaluated_mean": 4240
+    }
+  ],
+  "notes": [
+    "All statistics from synthetic generation only, no external human replicate",
+    "N09 DA has complete rankings of same graph while sequential has incomplete temporal observation",
+    "N10 five-seed run performed after two pilot seeds satisfied pre-specified coverage gate",
+    "N11 planned graph exactly matched but realised exposures differ due exits"
+  ]
+}
