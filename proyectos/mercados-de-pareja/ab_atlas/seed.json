@@ -1858,6 +1858,50 @@
         "verified_by": "",
         "verified": false
       }
+    },
+    {
+      "id": "N76",
+      "title": "AEA E218862V1: inventario oficial, sin microdatos",
+      "status": "blocked",
+      "detail": "V1 contiene Code/Data/Exhibits/Temp y README; encuesta estudiantes >1.1M respuestas sin perfiles expuestos; bytes/README/LICENSE no descargados; no réplica.",
+      "kind": "blocker",
+      "mode": "research",
+      "sources": [
+        "research/ABR_EXTERNAL_GATE_20261028/ACCESS_AND_SCOPE_AUDIT.md",
+        "research/ABR_EXTERNAL_GATE_20261028/LEDGER.json",
+        "research/PRIORS/SOURCES.json"
+      ],
+      "created_at": "2026-10-28T22:34:00+01:00",
+      "updated_at": "2026-10-28T22:34:00+01:00",
+      "phase": null,
+      "acceptance": {
+        "criteria": "",
+        "evidence": [],
+        "verified_by": "",
+        "verified": false
+      }
+    },
+    {
+      "id": "N77",
+      "title": "Stanford HCMST longitudinal 2017–2022",
+      "status": "answered",
+      "detail": "Panel independiente de relaciones 3510/2107/1722 en 2017/20/22, misma cohorte Stanford/ICPSR; duración potencial, no historial de perfiles ni decisiones bilaterales. Archivos no abiertos.",
+      "kind": "question",
+      "mode": "research",
+      "sources": [
+        "research/ABR_EXTERNAL_GATE_20261028/ACCESS_AND_SCOPE_AUDIT.md",
+        "research/ABR_EXTERNAL_GATE_20261028/LEDGER.json",
+        "research/PRIORS/SOURCES.json"
+      ],
+      "created_at": "2026-10-28T22:34:00+01:00",
+      "updated_at": "2026-10-28T22:34:00+01:00",
+      "phase": null,
+      "acceptance": {
+        "criteria": "",
+        "evidence": [],
+        "verified_by": "",
+        "verified": false
+      }
     }
   ],
   "edges": [
@@ -2382,6 +2426,18 @@
       "from": "goal",
       "to": "N75",
       "relation": "branches_from"
+    },
+    {
+      "id": "e_goal_N76",
+      "from": "goal",
+      "to": "N76",
+      "relation": "branches_from"
+    },
+    {
+      "id": "e_goal_N77",
+      "from": "goal",
+      "to": "N77",
+      "relation": "branches_from"
     }
   ],
   "events": [],
@@ -2395,8 +2451,8 @@
     "snapshot": "2026-10-28",
     "verified_live": false,
     "progress_semantics": "Sin índice de madurez, solo evidencia limitada",
-    "last_campaign": "ABR-ESBM20-20261028",
-    "scientific_status": "SYNTHETIC_MULTISTAGE_EXPANDED__NO_EXTERNAL_HUMAN_VALIDATION__R5_STOP",
+    "last_campaign": "ABR-EXTERNAL-GATE-20261028",
+    "scientific_status": "EXTERNAL_METADATA_INSPECTED__NO_NEW_MICRODATA__R5_STOP",
     "current_statement": "30 total cycles across three earlier campaigns and EVIDENCE6: 10+8+6+6, no 2/3, R5 STOP",
     "reviewer": "Not validated on clean clone",
     "summary": "6 valid cycles, 1 invalid instrument attempt repaired, N12 and N13 data blocked, N1=0, N2/N3=0",
@@ -2404,9 +2460,9 @@
     "authorized": 20,
     "executed": 7,
     "remaining": 13,
-    "authorized_remaining": 11,
+    "authorized_remaining": 9,
     "real_dyadic_dataset": "Mixmosa 1895 in-person dates",
-    "authorized_used": 9,
+    "authorized_used": 11,
     "CT2": 7,
     "N1_local_1_3": 1,
     "N2": 0,
@@ -2415,9 +2471,9 @@
     "prior_register": "research/PRIORS/PRIORS.json",
     "sources_register": "research/PRIORS/SOURCES.json",
     "prior_updates": "research/PRIORS/UPDATES.json",
-    "source_count": 47,
-    "prior_count": 24,
-    "prior_update_count": 44
+    "source_count": 50,
+    "prior_count": 25,
+    "prior_update_count": 52
   },
   "project_contract": {
     "scope_version": "MATE-ABR-20261028-v1",
