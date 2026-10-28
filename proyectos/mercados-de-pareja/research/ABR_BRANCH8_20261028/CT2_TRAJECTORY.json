@@ -1,0 +1,24 @@
+{
+  "schema": "ab.ct2.v1",
+  "line": "ABR mercados-de-pareja valor",
+  "scale": "ordinal 1-100, NOT a probability",
+  "points": [
+    {
+      "id": "MATE10_CLOSE",
+      "date": "2026-10-28",
+      "ct2": 20,
+      "kind": "POST_HOC_ASSESSMENT_PREVIOUS_CAMPAIGN",
+      "source": "../ABR_MATE10_20261028/REPORT.md",
+      "note": "Previous estimate 20/100 after MATE10; not preregistered trajectory"
+    },
+    {
+      "id": "BRANCH8_CLOSE",
+      "date": "2026-10-28",
+      "ct2": 17,
+      "kind": "POST_HOC_ASSESSMENT_AFTER_ADVERSARIAL_BASELINE",
+      "source": "REPORT.md",
+      "note": "DA baseline capable, matching novelty already prior art, no human eligible data or external replication"
+    }
+  ],
+  "no_interpolated_cycle_points": true
+}
