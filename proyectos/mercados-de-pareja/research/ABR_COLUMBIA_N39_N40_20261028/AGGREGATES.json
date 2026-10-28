@@ -1,0 +1,113 @@
+{
+  "campaign": "ABR-COLUMBIA-N39-N40-20261028",
+  "input": {
+    "filename": "speed_dating_clean.parquet",
+    "sha256": "a0fe55d6172d01f81d6c7e2546330828cb98d1f631b2598fec4d4f4660eaa37d",
+    "bytes": 297736,
+    "source": "User-uploaded cleaned Columbia Speed Dating copy",
+    "original_repo": "ZharlieSineFine/Speed-Dating-Reciprocal-Recommender-System"
+  },
+  "prereg_commit": "c1382f77113bce9e0bf2e275a77ccb2403f5c053",
+  "freeze_commit": "9d9bcf9a6a11b44102b3dbd0dac1c71b10fb4af6",
+  "script_sha256": "c1fa1ae14a9d008975e583bb1f91d2e8d0c43f6d216b301ccaa07aff3c2714cc",
+  "run": {
+    "seed": 20261028,
+    "permutations": 1000,
+    "event_bootstraps": 1000,
+    "rerun": "Same SHA256 output from two exact runs",
+    "output_sha256": "f43e9deae3366229707b79ce5324c4a42e24410cb44fd7cd6637b15eba98704d"
+  },
+  "quality": {
+    "rows_directed": 8368,
+    "columns": 121,
+    "waves": 21,
+    "participant_ids": 551,
+    "men": 277,
+    "women": 274,
+    "unique_dyads": 4184,
+    "mutual": 690,
+    "unmatched_mirrors": 0,
+    "mirror_vote_conflicts": 0,
+    "match_formula_disagreement": 0,
+    "eligible_dyads_other_exposures_ge3": 4184
+  },
+  "outcomes": {
+    "men_yes": 1986,
+    "women_yes": 1529,
+    "mutual_yes": 690,
+    "men_yes_rate": 0.47466539196940727,
+    "women_yes_rate": 0.3654397705544933,
+    "mutual_rate": 0.16491395793499045,
+    "eventwise_independence_expected_mutual": 709.8191013833039
+  },
+  "N39": {
+    "popularity_r_matched": 0.12439753179285722,
+    "popularity_r_all_dyads": -0.04414892068869878,
+    "popularity_r_matched_event_centered": 0.19337480726513806,
+    "event_permutation_null_matched_r": {
+      "mean": -0.03864908451236667,
+      "ci_025_975": [
+        -0.10223316085040202,
+        0.02834900696295596
+      ],
+      "one_sided_p_upper": 0.000999000999000999
+    },
+    "event_bootstrap_r": {
+      "mean": 0.1319077442332773,
+      "ci_025_975": [
+        0.037606485111149085,
+        0.2516189043254246
+      ]
+    },
+    "mutual_nulls": {
+      "event": {
+        "mean": 710.214,
+        "ci_025_975": [
+          683,
+          739
+        ],
+        "p_lower": 0.08891108891108891
+      },
+      "woman_wave": {
+        "mean": 673.463,
+        "ci_025_975": [
+          651,
+          697
+        ],
+        "p_upper": 0.08691308691308691
+      },
+      "both_person_wave": {
+        "mean": 708.801,
+        "ci_025_975": [
+          679,
+          738
+        ],
+        "p_lower": 0.1038961038961039
+      }
+    }
+  },
+  "comparative_prior_Mixmosa": {
+    "source": "research/ABR_REALDATA13_20261028/N33_N35_EXTRA_RESULTS.json",
+    "source_sha": "1b9fd88d2a61e6edc3ae47eb09bde95d81938b2c",
+    "sample_dyads": 1895,
+    "mutual": 259,
+    "events": 30,
+    "popularity_r_matched": -0.01586965583179132,
+    "permutation_null_matched_r": {
+      "mean": -0.05450827766741035,
+      "ci_025_975": [
+        -0.1643525504680302,
+        0.06853348556469194
+      ],
+      "p_upper": 0.25774225774225773
+    }
+  },
+  "constraints": [
+    "Exploratory retrospective (no untouched confirmatory preselection).",
+    "Matching by reciprocal interest in a four-minute speed date; not union formation nor Spanish online dating.",
+    "Popularity proxy based on remaining dates within the same event; susceptible to participant heterogeneity and event structure.",
+    "Null permutation by matched labels preserves event counts but not individual match propensities.",
+    "No direct inference about status-loss after rejection or preferences for similarity versus shared standards.",
+    "No raw individuals rehosted."
+  ]
+}
