@@ -3,7 +3,7 @@
   "project": "mercados-de-pareja",
   "date": "2026-10-28",
   "scope": "Retrospective provenance backfill from repository reports plus N56/N57 publisher audit. Original data never copied; not systematic or claim of accessing raw data for bibliography.",
-  "source_count": 61,
+  "source_count": 66,
   "sources": [
     {
       "id": "SRC001",
@@ -1217,7 +1217,87 @@
       "analysis_manifest_commit": "58cf00c5e2efab0c76a1f4bd84085e7ab8b22da0",
       "contribution_to_novelty": "Demonstrates practical instrument for observed recommendation-stage profiling and predictive target differences in existing dataset, not scientifically original phenomenon over earlier Su/Hu 2019 and Hitsch 2010.",
       "falsifier": "Stronger within-slate group+round+target popularity baseline, true rendered/attended impression and randomized ranking, replicated separately, explicit rejection and lasting union outcomes."
+    },
+    {
+      "id": "SRC062",
+      "title": "2011 COS China Statistical Community: announcement of 1st National University Student Data Mining Competition (original organizing announcement)",
+      "canonical_url": "https://cosx.org/2011/03/1st-data-mining-competetion-for-college-students/",
+      "publication_date": "2011-03-20",
+      "type": "ORIGINAL_2011_ORGANIZER_COMPETITION_NOTICE",
+      "cycle_ids": [],
+      "same_sample_as": "SRC059/SRC061 via contest likely, contest organizer disclosure does not provide participant microdata",
+      "evidence_access": "ORIGINAL_2011_HTML_READ",
+      "specific_location": "Sections background, competition period, participation, organizer and registered-data access; official announcement dated 2011-03-20",
+      "contribution": "Organizer states competition dates Mar22–Apr27 2011, organizers USTC School of Management, Renmin University Statistics, COS; sponsored by Shanghai Huaqianshu Information Technology Company, aimed at recommendations for marriage service. Original site required competition registration for access to dataset and submissions; no blanket public data reuse license.",
+      "limits": "Notice does not individually identify SSJY archive by SHA or document rec/click/msg/ROUND; academic-reuse rights not specified, older contest site not currently inspected.",
+      "data_license": "DATA_FOR_REGISTERED_COMPETITION; NO_GENERAL_RESEARCH_REUSE_GRANT_FOUND",
+      "verified_at": "2026-10-29",
+      "counts_as_ab_cycle": 0
+    },
+    {
+      "id": "SRC063",
+      "title": "USTC School of Computer Science: 2011 competition results and task definition, 18 May 2011",
+      "canonical_url": "https://cs.ustc.edu.cn/2011/0518/c14931a24453/pagem.htm",
+      "publication_date": "2011-05-18",
+      "type": "ORIGINAL_INSTITUTIONAL_EVENT_REPORT",
+      "cycle_ids": [],
+      "same_sample_as": "SRC062 contest and likely SRC059/SRC061",
+      "evidence_access": "ORIGINAL_UNIVERSITY_HTML_READ",
+      "specific_location": "Paragraphs on sponsor Jiayuan and benchmark NDCG@10",
+      "contribution": "USTC confirms contest jointly organized by USTC, Renmin and COS, with Jiayuan as sponsor/technical supporter, goal to score members for personalized recommendation and predict profile browsing, scored NDCG@10; competitors already tried RankSVM, Bayesian Regression Trees, popularity voting. Strong baseline prior-art evidence distinct from our same-user actor holdout logloss.",
+      "limits": "Original results describe contest, do not prove exact dataset ZIP identifiers or current license; NDCG@10 vs logloss not commensurate without same test labels, not our model comparison.",
+      "data_license": "NO_STANDALONE_DATA_USE_LICENSE",
+      "verified_at": "2026-10-29",
+      "counts_as_ab_cycle": 0
+    },
+    {
+      "id": "SRC064",
+      "title": "Zhou Weiran and Yan Cheng (2012), tutorial/report on Jiayuan 2011 contest recommendations and dataset terms, version 2",
+      "canonical_url": "https://www.cnblogs.com/supersteven/archive/2012/08/29/2662068.html",
+      "publication_date": "2012-08-21 version 2 (posted 2012-08-29)",
+      "type": "CONTEMPORANEOUS_COMPETITION_PARTICIPANT_TECHNICAL_DOCUMENTATION_AND_REUSE_WARNING",
+      "cycle_ids": [],
+      "same_sample_as": "same 2011 Jiayuan competition; matches SRC059/SRC061 in 8.6-million train records, not independent cohort",
+      "evidence_access": "FULL_ORIGINAL_PARTICIPANT_HTML_READ",
+      "specific_location": "Problem definition; Data description; warning at end of Data description; section on ranking algorithms",
+      "contribution": "First author states participated in 2011 contest; report documents dataset train.txt ~8.6m actions, 4 columns actor,target,ROUND,ACTION for user ID pair, rounds are ordered per same actor but separation in clock time varies; company gives candidate photo in recommendation, click allows seeing detailed profile, msg is internal contact; multiple recs per dyad and time; data originally provided by Shanghai Huaqianshu Co for competition analysis/modeling, academic research/publication requires obtaining company authorization. Reports preexisting frequency/popularity-based voting and metrics NDCG@10, stronger prior art than source-free toy model.",
+      "limits": "Participant's historical description is not a current binding license from rightsholder; cannot tell if 2020 MotifGNN author has separately negotiated publication permission. Exact train.txt count approximate; slide source SRC065 provides exact matching fingerprint. Some rec rows are interpreted as no-click in participant narrative; same actor/target/round can have separate click action record, so do NOT equate every rec event with verified human visual attention or definitive negative preference.",
+      "data_license": "PRIOR_CONTEST_RESTRICTED; ACADEMIC_PUBLICATION_REQUEST_RIGHTSHOLDER_AUTHORISATION_DESCRIBED_BY_PARTICIPANT, CURRENT_LICENSE_UNVERIFIED",
+      "verified_at": "2026-10-29",
+      "counts_as_ab_cycle": 0
+    },
+    {
+      "id": "SRC065",
+      "title": "Historical academic teaching slides, Introduction to Dating Competition (COMP621U), 2011 Jiayuan source dataset fingerprint",
+      "canonical_url": "https://www.slideserve.com/lamp/introduction-to-dating-competition-powerpoint-ppt-presentation",
+      "published": "Undated underlying original teaching slides, mirror uploaded around 2024",
+      "type": "THIRD_PARTY_MIRRORED_EDUCATIONAL_SLIDES_NOT_OFFICIAL_ORIGINAL_LICENSE",
+      "cycle_ids": [],
+      "same_sample_as": "SRC059/SRC061; same train.txt/source, NOT independent study",
+      "evidence_access": "MIRRORED_SLIDE_TRANSCRIPT_READ_NO_ORIGINAL_AUTHORS_VERIFIED",
+      "specific_location": "Slides 2-7, especially slide 4 train.txt exact action totals and slide 7 NDCG@10 evaluation",
+      "contribution": "Exact unique fingerprint: 8,599,012 train.txt rows, 15,000 USER_A and 59,921 union users, rec 8,366,058; click 184,291; msg 48,663, identical to recovered author-public SSJY file. Competition ran Mar22–Apr27 2011, sponsor Jiayuan/Shanghai Huaqianshu. This is strong source lineage evidence despite uncertain slide authorship, not a new dataset.",
+      "limits": "Mirror uploader and original slide author unverified. Fingerprint match strongly identifies same competition source but does not prove legally granted reuse or specific impressions actually attended. Do not count source SRC065 as new human sample.",
+      "data_license": "UNKNOWN_STUDY_RIGHTS_NO_REUSE_GRANT",
+      "verified_at": "2026-10-29",
+      "counts_as_ab_cycle": 0
+    },
+    {
+      "id": "SRC066",
+      "title": "Diverse Data Hub curated HCMST 2017/2022 cross-sectional 1328-by-21 subset on relationship quality",
+      "canonical_url": "https://diverse-data-hub.github.io/website_files/description_pages/hcmst.html",
+      "associated_download": "https://diverse-data-hub.github.io/data/clean/hcmst.csv",
+      "type": "CURATED_PUBLIC_DERIVATIVE_OF_EXISTING_HCMST_COHORT_NOT_NEW_INDEPENDENT_SAMPLE",
+      "cycle_ids": [],
+      "same_cohort_as": "SRC048/SRC049 HCMST 2017–2022",
+      "evidence_access": "PUBLIC_DERIVATIVE_DOCUMENTATION_READ; CSV_LINK_UNRECOVERED_IN_CONTAINER; NO_ROWS_OPENED",
+      "specific_location": "About Data, Download, Metadata (1328 rows/21 variables), variables list, purpose and uses",
+      "contribution": "Public teaching-oriented derivative selects N=1328, 21 vars including relationship_duration and relationship_quality, self reported conflict, flirting, partner demographics, pandemic agreement, drawn from HCMST 2022 panel. No couple breakup time-to-event record or dating-platform mutual exposure graph. Likely useful descriptive association among retained observations but inadequate to calibrate breakup hazard without censoring and left truncation adjustments.",
+      "limits": "Same HCMST sample as SRC048/49, not longitudinal source independently of 2022 wave. Selection to 1328 respondents and cross-sectional current relationship quality, attrition and length-biased prevalence undermine causal/temporal inference. The dataset itself is not fetched/hash-checked; no row and data-use license inspected beyond download page statement prohibits reidentification.",
+      "data_license": "PUBLIC_ADAPTED_DOWNLOAD_WITH_NO_REIDENTIFICATION_CONDITION; SOURCE_STANFORD_AGREEMENT_APPLIES; DO_NOT_ASSUME_UNRESTRICTED_DATA_REHOSTING",
+      "verified_at": "2026-10-29",
+      "counts_as_ab_cycle": 0
     }
   ],
-  "last_added_campaign": "N82"
+  "last_added_campaign": "POST_N82_SOURCE_RIGHTS_AND_PROVENANCE_GATE_NONCYCLE"
 }
