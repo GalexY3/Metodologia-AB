@@ -23,16 +23,18 @@
       "id": "P-NOVELTY",
       "question": "Originalidad de homogamia de deseabilidad sin preferencia inicial por semejanza",
       "status": "STRONG_PRIOR_ART",
-      "rationale": "La proposición general ya está en teoría matching, Hitsch 2010 y, casi literalmente para apps, Topinkova/Diviak 2025; nueva aportación exigiría predicción más estrecha. La separación de navegación, primer mensaje y match se documentó explícitamente en Hitsch et al. (2010), antes del programa ESBM. No reivindicar originalidad general de la cadena.",
+      "rationale": "La proposición general ya está en teoría matching, Hitsch 2010 y, casi literalmente para apps, Topinkova/Diviak 2025; nueva aportación exigiría predicción más estrecha. La separación de navegación, primer mensaje y match se documentó explícitamente en Hitsch et al. (2010), antes del programa ESBM. No reivindicar originalidad general de la cadena. Rios–Saban–Zheng (online 2022) probó algoritmo con exposición e historial de matches en dos intervenciones de mercado; Rios–Torrico 2023 ya formaliza secuencialidad y direcciones del flujo. ESBM no reivindica novedad de optimización de exposición y reciprocidad ni de feedback por matches.",
       "evidence_sources": [
         "SRC001",
         "SRC002",
         "SRC003",
         "SRC004",
         "SRC021",
-        "SRC053"
+        "SRC053",
+        "SRC054",
+        "SRC055"
       ],
-      "last_update_id": "U057",
+      "last_update_id": "U059",
       "uncertainty": "Not probabilistically calibrated; evidence heterogeneous and some sources only metadata",
       "next_falsifier_or_test": "Find a preregistered prediction NOT covered by published mating-market literature and independently validate",
       "numeric_probability": null,
@@ -40,9 +42,10 @@
       "update_ids": [
         "U001",
         "U022",
-        "U057"
+        "U057",
+        "U059"
       ],
-      "latest_evidence_summary": "El antecedente AER 2010 posee etapas de browsing/email/contact exchange, incluidas sus frecuencias observadas; novedad de ESBM general no acreditada.",
+      "latest_evidence_summary": "Fuerte antecedente con asignación algorítmica efectiva y DID en dos mercados, no prueba de nuestro ESBM.",
       "last_revised_at": "2026-10-28"
     },
     {
@@ -68,14 +71,15 @@
       "id": "P-PUBLIC_REPUTATION",
       "question": "Cada swipe rechazado disminuye prestigio público posterior del rechazado",
       "status": "NOT_IDENTIFIED",
-      "rationale": "No hay señal observada de difusión a terceros ni estimación causal de delta; rechazo privado, sufrimiento psicológico y reputación pública son constructos distintos.",
+      "rationale": "No hay señal observada de difusión a terceros ni estimación causal de delta; rechazo privado, sufrimiento psicológico y reputación pública son constructos distintos. El resultado de Rios concierne al éxito previo de matches y a la propensión propia a hacer like; no mide contagio reputacional del rechazo hacia terceros ni pérdida pública de status.",
       "evidence_sources": [
         "SRC014",
         "SRC015",
         "SRC021",
-        "SRC033"
+        "SRC033",
+        "SRC054"
       ],
-      "last_update_id": "U030",
+      "last_update_id": "U064",
       "uncertainty": "Not probabilistically calibrated; evidence heterogeneous and some sources only metadata",
       "next_falsifier_or_test": "Independent prospective data with matched risk set, competent adversarial controls and documented sample selection",
       "numeric_probability": null,
@@ -83,16 +87,17 @@
       "update_ids": [
         "U007",
         "U024",
-        "U030"
+        "U030",
+        "U064"
       ],
-      "latest_evidence_summary": "Feedback comparativo sí informa al actor de su propia popularidad; no prueba rechazo público ni estatus externo decreciente.",
+      "latest_evidence_summary": "NO_CHANGE: ausencia de prueba para daño reputacional público por rechazo.",
       "last_revised_at": "2026-10-28"
     },
     {
       "id": "P-OPPORTUNITY",
       "question": "La red de perfiles mostrados es necesaria para separar preferencias de exposición",
       "status": "MATERIAL_MISSINGNESS",
-      "rationale": "Dos fuentes speed dating incluyen citas efectivas; fuente checa reporta intentos pero no perfiles vistos; sin no-interacciones observadas el denominador de riesgo se desconoce. El artículo Hitsch 2010 sí observó perfiles visitados antes de contacto; el archivo original de observaciones sigue inaccesible y se desconoce si el paquete E112322V1 las conserva; por ello la falta de denominador a nivel de nuestras muestras permanece.",
+      "rationale": "Dos fuentes speed dating incluyen citas efectivas; fuente checa reporta intentos pero no perfiles vistos; sin no-interacciones observadas el denominador de riesgo se desconoce. El artículo Hitsch 2010 sí observó perfiles visitados antes de contacto; el archivo original de observaciones sigue inaccesible y se desconoce si el paquete E112322V1 las conserva; por ello la falta de denominador a nivel de nuestras muestras permanece. La oportunidad observada como conjuntos diarios de perfiles ofrecidos es medición practicable en plataformas reales pero su asignación es endógena a algoritmos y preferencias; condicionar por visita/no visitar no identifica el efecto de exposición per se.",
       "evidence_sources": [
         "SRC021",
         "SRC030",
@@ -101,9 +106,11 @@
         "SRC048",
         "SRC049",
         "SRC002",
-        "SRC053"
+        "SRC053",
+        "SRC054",
+        "SRC055"
       ],
-      "last_update_id": "U056",
+      "last_update_id": "U063",
       "uncertainty": "Not probabilistically calibrated; evidence heterogeneous and some sources only metadata",
       "next_falsifier_or_test": "Independent prospective data with matched risk set, competent adversarial controls and documented sample selection",
       "numeric_probability": null,
@@ -112,9 +119,10 @@
         "U020",
         "U027",
         "U050",
-        "U056"
+        "U056",
+        "U063"
       ],
-      "latest_evidence_summary": "Existencia histórica de registros de browsing→primer contacto en publicación Hitsch 2010, pero ninguna microfila verificada ni igualación con riesgo de candidatos ofrecidos.",
+      "latest_evidence_summary": "El diseño Rios observa assortments por tiempo, candidatos y sus evaluaciones; ESBM no los observa en microdatos propios.",
       "last_revised_at": "2026-10-28"
     },
     {
@@ -236,7 +244,7 @@
       "id": "P-DYADIC_ACCESS",
       "question": "Hay nuevas fuentes diádicas originales con datos descargados y suficiente temporalidad/exposiciones",
       "status": "PARTIALLY_SUPPORTED_FOR_DYADS_BUT_NOT_PROSPECTIVITY",
-      "rationale": "Columbia y Mixmosa tienen sí/no cruzados, pero Essex/eHarmony/OSF checo no procesados; ninguna satisface exposición completa + ex ante popularity.",
+      "rationale": "Columbia y Mixmosa tienen sí/no cruzados, pero Essex/eHarmony/OSF checo no procesados; ninguna satisface exposición completa + ex ante popularity. Los investigadores Rios sí dispusieron de exposiciones y decisiones diádicas históricas de una app real, pero fueron datos de industria no compartidos con nuestro proyecto. La disponibilidad de un instrumento publicado no equivale a acceso actual a filas.",
       "evidence_sources": [
         "SRC010",
         "SRC011",
@@ -250,9 +258,11 @@
         "SRC049",
         "SRC050",
         "SRC051",
-        "SRC052"
+        "SRC052",
+        "SRC054",
+        "SRC055"
       ],
-      "last_update_id": "U054",
+      "last_update_id": "U062",
       "uncertainty": "Not probabilistically calibrated; evidence heterogeneous and some sources only metadata",
       "next_falsifier_or_test": "Independent prospective data with matched risk set, competent adversarial controls and documented sample selection",
       "numeric_probability": null,
@@ -267,9 +277,10 @@
         "U045",
         "U051",
         "U052",
-        "U054"
+        "U054",
+        "U062"
       ],
-      "latest_evidence_summary": "pairfam partner interviews can be linked across existing unions but DO NOT reveal rejected candidates or complete profiles exposure",
+      "latest_evidence_summary": "Datos empíricos idealmente medidos en estudio ajeno, inaccesibles para réplica/cálculo propio.",
       "last_revised_at": "2026-10-28"
     },
     {
@@ -362,22 +373,25 @@
       "id": "P-PLATFORM-RANKING",
       "question": "Intermediación algorítmica altera oportunidades y desigualdad de visibilidad",
       "status": "EXTERNAL_FIELD_EVIDENCE",
-      "rationale": "Chen 2023 usa experimento de plataforma y Celdir 2024 documenta sesgo de popularidad; nuestro algoritmo toy tiene objetivos simplificados.",
+      "rationale": "Chen 2023 usa experimento de plataforma y Celdir 2024 documenta sesgo de popularidad; nuestro algoritmo toy tiene objetivos simplificados. Rios et al. aportan evidencia de campo con más matches respecto a algoritmo anterior bajo DID en 3 ciudades, con supuestos explícitos; Rios–Torrico amplía diseños teóricos. No inferir Gini ni bienestar del estudio.",
       "evidence_sources": [
         "SRC032",
         "SRC034",
-        "SRC042"
+        "SRC042",
+        "SRC054",
+        "SRC055"
       ],
-      "last_update_id": "U044",
+      "last_update_id": "U060",
       "uncertainty": "Not calibrated Bayesian probabilities; context and heterogeneity uncertain",
       "next_falsifier_or_test": "Para afirmar mecanismos causales de plataforma específica, conocer ranking real y registros de exposición, con permiso.",
       "numeric_probability": null,
       "CT2_is_not_this_prior": true,
       "update_ids": [
         "U028",
-        "U044"
+        "U044",
+        "U060"
       ],
-      "latest_evidence_summary": "Field experiment on market composition information supports endogenous platform participation and competition salience",
+      "latest_evidence_summary": "Experimento de intervención de plataforma con incremento de matches, no estimación de desigualdad de exposición ni duración.",
       "last_revised_at": "2026-10-28"
     },
     {
@@ -486,22 +500,24 @@
       "id": "P-FEEDBACK",
       "question": "Feedback informativo sobre popularidad puede alterar umbrales y autopresentación",
       "status": "EXPERIMENTALLY_SUPPORTED_IN_CONTEXT",
-      "rationale": "Shi et al. 2025 reportan diferencias entre información de popularidad comparativa y absoluta, no decremento público de reputación.",
+      "rationale": "Shi et al. 2025 reportan diferencias entre información de popularidad comparativa y absoluta, no decremento público de reputación. La retroalimentación vía ÉXITOS de matches anteriores reduce propensión del decisor a emitir nuevos likes en la fuente de Rios; este mecanismo es distinto de rechazo privado, y especialmente distinto de reputación pública por rechazo.",
       "evidence_sources": [
         "SRC033",
         "SRC042",
-        "SRC045"
+        "SRC045",
+        "SRC054"
       ],
-      "last_update_id": "U043",
+      "last_update_id": "U061",
       "uncertainty": "Not calibrated Bayesian probabilities; context and heterogeneity uncertain",
       "next_falsifier_or_test": "Randomizar tipos de feedback y observar cambio en preferencias antes/después, no inferir δ reputacional.",
       "numeric_probability": null,
       "CT2_is_not_this_prior": true,
       "update_ids": [
         "U029",
-        "U043"
+        "U043",
+        "U061"
       ],
-      "latest_evidence_summary": "Information about overall market size and about preference signaling can modify choice",
+      "latest_evidence_summary": "Contextualización de dinámica del decisor por éxito previo, no popularidad pública por rechazo.",
       "last_revised_at": "2026-10-28"
     },
     {
@@ -608,14 +624,33 @@
       ],
       "latest_evidence_summary": "New technical source class for observed couple reports, but no app dyadic candidate decisions and no file bytes.",
       "last_revised_at": "2026-10-28"
+    },
+    {
+      "id": "P-HISTORY-SUCCESS",
+      "question": "¿Los matches exitosos anteriores disminuyen la probabilidad de que un usuario emita likes posteriormente, independiente de efecto reputacional público por rechazo?",
+      "status": "EXTERNAL_QUASI_EXPERIMENT_CONDITIONAL",
+      "rationale": "Rios, Saban y Zheng (2022 online/2023 volume) explotan una modificación algorítmica de elegibilidad de backlog de mayo 2019 y estiman una reducción de probabilidad de nuevos likes por match adicional de al menos 3% bajo condiciones metodológicas del estudio. Solo atributo de ese paper, sin estimación, identificación ni replicación nueva en ESBM.",
+      "evidence_sources": [
+        "SRC054"
+      ],
+      "last_update_id": "U065",
+      "uncertainty": "Estimación dependiente de exclusión, selección, actividad, cambios algorítmicos y limitada interferencia; no está corroborada en fuente externa independiente ni transportada a España/ESBM; propietaria.",
+      "next_falsifier_or_test": "Prerregistrar una relación de éxito anterior→nuevos likes en fuente independiente de exposiciones por usuario y tiempo; comparar métodos con FE/covariables y diseño de intervención/IV válido, guardar resultado nulo.",
+      "numeric_probability": null,
+      "CT2_is_not_this_prior": true,
+      "update_ids": [
+        "U065"
+      ],
+      "latest_evidence_summary": "Estudio de campo ajeno con cuasiexperimento de match-history; no afirma reputación pública de rechazos ni causalidad propia.",
+      "last_revised_at": "2026-10-28"
     }
   ],
   "audit": {
     "all_priors_linked": true,
-    "source_ids_linked": 53,
-    "registered_sources": 53,
-    "update_events": 58,
-    "counts_as_new_AB_cycle": false,
-    "last_update": "2026-10-28 POST_HOC_SOURCE_AUDIT_NOT_AB_CYCLE"
+    "source_ids_linked": 55,
+    "registered_sources": 55,
+    "update_events": 65,
+    "counts_as_new_AB_cycle": true,
+    "last_update": "2026-10-28 N79 PRIMARY ORIGINAL FIELD PAPER PRIOR ART"
   }
 }
