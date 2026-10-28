@@ -4,7 +4,7 @@
   "date": "2026-10-28",
   "mode": "append-only logical, versioned by Git commits",
   "reconstructed_from_documents": "Retrospective backfill, not preregistration. Old before values NOT_RECORDED unless documented explicitly.",
-  "source_coverage": "55 source records (not 55 independent studies) / 27 qualitative priors / 65 append-only prior events",
+  "source_coverage": "58 documentary source records (not independent cohorts), 28 qualitative priors, 71 append-only revisions",
   "events": [
     {
       "id": "U001",
@@ -1679,7 +1679,166 @@
       "prior_probability_before": null,
       "prior_probability_after": null,
       "prereg_status": "After exploratory source discovery, before detailed original full-paper inspection; N79 prereg commit b140dc0d0943826706e156dc39d758d75bb8029b"
+    },
+    {
+      "id": "U066",
+      "prior_id": "P-INTERACTION-EXPRESSIVE",
+      "source_ids": [
+        "SRC056",
+        "SRC057"
+      ],
+      "cycle_ids": [
+        "N80"
+      ],
+      "before": "NOT_RECORDED_AT_TIME",
+      "after": "INDEPENDENT_EXTERNAL_RANDOMIZED_EXPERIMENT_CONDITIONAL",
+      "direction": "NEW_QUALITATIVE_EXTERNAL_PRIOR",
+      "what_the_sources_contribute": "31 individuals/60 encounters in randomized crossed smile-enhancement 2×2; both increased shows larger attraction ratings than mixed, actor/partner SRM approach.",
+      "why_this_updates_or_checks_prior": "Published study motivates a previously missing in-interaction stage, but this is an author finding, not our data or original novelty.",
+      "limits": "Original paper PDF text inspected and R code files fetched; raw participant CSV not acquired; screenshots from PDF unavailable due cache miss. Original χ²(3)=9.7,P=.001 mathematical inconsistency (χ² df3 p≈.0213; df1≈.00184) is unresolved and should not be treated as refuting paper or reproducing results.",
+      "falsifier_or_followup": "Independent prereg participant/dyad behavioral intervention with pre/post and actual reciprocal choice, control a nontrivial baseline and cluster uncertainty.",
+      "evidence_type": "DOCUMENTARY_EXTERNAL_RANDOMIZED_ORIGINAL_AND_DATA_RIGHTS",
+      "retrospective_backfill": false,
+      "recorded_at": "2026-10-28",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 1,
+      "prior_probability_before": null,
+      "prior_probability_after": null,
+      "prereg_status": "Original study abstract and GitHub README seen before N80 prereg; full methodological original-paper audit after commit e70079a647c7142281d6bc6c30ce9f3e92f69cbb"
+    },
+    {
+      "id": "U067",
+      "prior_id": "P-MEASURE_OUTCOME",
+      "source_ids": [
+        "SRC056"
+      ],
+      "cycle_ids": [
+        "N80"
+      ],
+      "before": "CHALLENGED",
+      "after": "CHALLENGED",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "what_the_sources_contribute": "Outcome willingness-to-see-again post–pre and conversational quality measured; no stable relationship or wellbeing follow-up.",
+      "why_this_updates_or_checks_prior": "Confirms separate outcome layers; cannot substitute subjective rating for ESBM stock.",
+      "limits": "Original paper PDF text inspected and R code files fetched; raw participant CSV not acquired; screenshots from PDF unavailable due cache miss. Original χ²(3)=9.7,P=.001 mathematical inconsistency (χ² df3 p≈.0213; df1≈.00184) is unresolved and should not be treated as refuting paper or reproducing results.",
+      "falsifier_or_followup": "Couple-duration study with censoring and separated stages.",
+      "evidence_type": "DOCUMENTARY_EXTERNAL_RANDOMIZED_ORIGINAL_AND_DATA_RIGHTS",
+      "retrospective_backfill": false,
+      "recorded_at": "2026-10-28",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null,
+      "prereg_status": "Original study abstract and GitHub README seen before N80 prereg; full methodological original-paper audit after commit e70079a647c7142281d6bc6c30ce9f3e92f69cbb"
+    },
+    {
+      "id": "U068",
+      "prior_id": "P-NOVELTY",
+      "source_ids": [
+        "SRC056",
+        "SRC057"
+      ],
+      "cycle_ids": [
+        "N80"
+      ],
+      "before": "STRONG_PRIOR_ART",
+      "after": "STRONG_PRIOR_ART",
+      "direction": "ADVERSE_PRIOR_ART_ONLY",
+      "what_the_sources_contribute": "Randomized dyadic expressive behavior is already in an original 2024 peer-reviewed study.",
+      "why_this_updates_or_checks_prior": "No originality in adding any generic smile-attraction rule; ESBM still lacks independent original outcome.",
+      "limits": "Original paper PDF text inspected and R code files fetched; raw participant CSV not acquired; screenshots from PDF unavailable due cache miss. Original χ²(3)=9.7,P=.001 mathematical inconsistency (χ² df3 p≈.0213; df1≈.00184) is unresolved and should not be treated as refuting paper or reproducing results.",
+      "falsifier_or_followup": "Produce distinct falsifiable stage coupling beyond known micro-behavior, not copy published effect.",
+      "evidence_type": "DOCUMENTARY_EXTERNAL_RANDOMIZED_ORIGINAL_AND_DATA_RIGHTS",
+      "retrospective_backfill": false,
+      "recorded_at": "2026-10-28",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null,
+      "prereg_status": "Original study abstract and GitHub README seen before N80 prereg; full methodological original-paper audit after commit e70079a647c7142281d6bc6c30ce9f3e92f69cbb"
+    },
+    {
+      "id": "U069",
+      "prior_id": "P-DYADIC_ACCESS",
+      "source_ids": [
+        "SRC056",
+        "SRC057"
+      ],
+      "cycle_ids": [
+        "N80"
+      ],
+      "before": "PARTIALLY_SUPPORTED_FOR_DYADS_BUT_NOT_PROSPECTIVITY",
+      "after": "PARTIALLY_SUPPORTED_FOR_DYADS_BUT_NOT_PROSPECTIVITY",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "what_the_sources_contribute": "Original R scripts inspectable; separate archive data link not fetched.",
+      "why_this_updates_or_checks_prior": "No raw participant data, time-stamped app candidate exposure or long relationship endpoints obtained.",
+      "limits": "Original paper PDF text inspected and R code files fetched; raw participant CSV not acquired; screenshots from PDF unavailable due cache miss. Original χ²(3)=9.7,P=.001 mathematical inconsistency (χ² df3 p≈.0213; df1≈.00184) is unresolved and should not be treated as refuting paper or reproducing results.",
+      "falsifier_or_followup": "Acquire archive files with authentic rights and hashes, prereg code rerun, never infer source access from scripts.",
+      "evidence_type": "DOCUMENTARY_EXTERNAL_RANDOMIZED_ORIGINAL_AND_DATA_RIGHTS",
+      "retrospective_backfill": false,
+      "recorded_at": "2026-10-28",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null,
+      "prereg_status": "Original study abstract and GitHub README seen before N80 prereg; full methodological original-paper audit after commit e70079a647c7142281d6bc6c30ce9f3e92f69cbb"
+    },
+    {
+      "id": "U070",
+      "prior_id": "P-LONGITUDINAL-ELIGIBILITY",
+      "source_ids": [
+        "SRC058"
+      ],
+      "cycle_ids": [
+        "N80"
+      ],
+      "before": "DOCUMENTED_SAMPLE_RAW_NOT_INSPECTED",
+      "after": "DOCUMENTED_SAMPLE_RAW_NOT_INSPECTED",
+      "direction": "NO_CHANGE_WITH_REASON_WITH_RIGHTS_GATE",
+      "what_the_sources_contribute": "Official FReDA pairfam Campus Use File v1.0.0 documentation says subset for teaching only, not recommended for normal scientific publication; SUF available only via registered agreement.",
+      "why_this_updates_or_checks_prior": "CUF does not confer publishable right nor independent cohort; follow authorized SUF path for durable relationship analysis.",
+      "limits": "Original paper PDF text inspected and R code files fetched; raw participant CSV not acquired; screenshots from PDF unavailable due cache miss. Original χ²(3)=9.7,P=.001 mathematical inconsistency (χ² df3 p≈.0213; df1≈.00184) is unresolved and should not be treated as refuting paper or reproducing results.",
+      "falsifier_or_followup": "Secure and record SUF access and weights; do not use teaching-only subset for scientific finding.",
+      "evidence_type": "DOCUMENTARY_EXTERNAL_RANDOMIZED_ORIGINAL_AND_DATA_RIGHTS",
+      "retrospective_backfill": false,
+      "recorded_at": "2026-10-28",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null,
+      "prereg_status": "Original study abstract and GitHub README seen before N80 prereg; full methodological original-paper audit after commit e70079a647c7142281d6bc6c30ce9f3e92f69cbb"
+    },
+    {
+      "id": "U071",
+      "prior_id": "P-RECIPROCITY",
+      "source_ids": [
+        "SRC056"
+      ],
+      "cycle_ids": [
+        "N80"
+      ],
+      "before": "SUPPORTED_DESCRIPTIVELY_NOT_CAUSALLY",
+      "after": "SUPPORTED_DESCRIPTIVELY_NOT_CAUSALLY",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "what_the_sources_contribute": "PNAS survey ratings and expressed desire to see again are not independently verified both-sides acceptance decisions and no longitudinal couple formation.",
+      "why_this_updates_or_checks_prior": "Cannot infer reciprocal sorting or a rejection/stigma mechanism from manipulated affective display.",
+      "limits": "Original paper PDF text inspected and R code files fetched; raw participant CSV not acquired; screenshots from PDF unavailable due cache miss. Original χ²(3)=9.7,P=.001 mathematical inconsistency (χ² df3 p≈.0213; df1≈.00184) is unresolved and should not be treated as refuting paper or reproducing results.",
+      "falsifier_or_followup": "Log independent yes/no on both sides with controlled opportunities and follow-up.",
+      "evidence_type": "DOCUMENTARY_EXTERNAL_RANDOMIZED_ORIGINAL_AND_DATA_RIGHTS",
+      "retrospective_backfill": false,
+      "recorded_at": "2026-10-28",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null,
+      "prereg_status": "Original study abstract and GitHub README seen before N80 prereg; full methodological original-paper audit after commit e70079a647c7142281d6bc6c30ce9f3e92f69cbb"
     }
   ],
-  "last_campaign": "N79_DOCUMENTARY_AB"
+  "last_campaign": "N80_DOCUMENTARY_AB"
 }
