@@ -1,0 +1,106 @@
+{
+  "schema": "ab.research.campaign.v1",
+  "campaign": "ABR-TWO-WAY20-20261028",
+  "date": "2026-10-28",
+  "branch": "research/ab-r-mercados-pareja-20261028",
+  "parent": "ABR-BRANCH6-SOCIAL-20261028",
+  "authorized_total": 20,
+  "budget_philosophy": "R5 hard stop when evidence bottleneck dominates; at most 20, no obligation",
+  "data": {
+    "source": "User uploaded cleaned Columbia Speed Dating parquet",
+    "sha256": "a0fe55d6172d01f81d6c7e2546330828cb98d1f631b2598fec4d4f4660eaa37d",
+    "n_directed": 8368,
+    "n_unique_dates": 4184,
+    "n_events": 21,
+    "source_is_already_explored": true,
+    "mixmosa": "Already explored original GitHub CSV; no raw individual sharing",
+    "eligibility": "restrict actor sex, dates with age and discipline nonmissing, retain observed chooser-target-event opportunity edges"
+  },
+  "scientific_context": {
+    "CT2_start": 17,
+    "novelty_gate": "Results exploratory; N2/N3 impossible without independent untouched confirmation",
+    "previous_age_reversal_1_3": "Not automatically recounted; challenge it with stronger controls",
+    "prior_models": "Actor fixed effect alone gave within R2 popularity 0.139-0.163 vs similarity 0.005-0.011, but popularity calculated from contemporaneous other interactions and not ex ante.",
+    "drift": "D0.5 within same mate selection science"
+  },
+  "procedures": {
+    "seed": 20261028,
+    "pre_selection": "Hypotheses and fixed checks committed before calculating new results",
+    "minimum_complete": 500,
+    "minimum_varying_actors": 50,
+    "within_event_eligible_pairing": true,
+    "matched_data_proxy": "Only other votes (not focal), not objective social value",
+    "binary_choice": "yes/no each directed speed date, no pair formation",
+    "multiple_testing": "All exploratory, no confirmatory p-values"
+  },
+  "cycles": [
+    {
+      "id": "N47",
+      "type": "DATA_QUALITY_AB",
+      "question": "Can 2-way FE be identified from the graph and are wave/age/discipline and participant IDs coherent?",
+      "test": "Inspect chooser-target bipartite connectivity per gender, feasibility and missingness; report number of unique actors, targets, repeat exposure; test no leakage via mirror outcomes; >=500 complete observations to fit."
+    },
+    {
+      "id": "N48",
+      "type": "EMPIRICAL_AB",
+      "question": "Does absolute age resemblance survive actor AND target fixed effects?",
+      "test": "Within graph, fit chooser+target FE linear-probability model with abs(age_target-age_chooser), signed gap, same field, standardized exogenous predictors. Candidate popularity is collinear with candidate FE and is NOT simultaneously entered. Compare actor FE versus two-way FE; report estimates and cluster chooser SE (descriptive)."
+    },
+    {
+      "id": "N49",
+      "type": "EMPIRICAL_AB",
+      "question": "Can a flexible target-age preference explain previously claimed age homophily?",
+      "test": "Add target age quadratic and signed age gap; note target-age linear is collinear with target FE when ages constant. Use competing versions: actor FE + target-age and age gap; two-way FE + abs-age and signed-age (linear signed gap unidentifiable under both FE if ages constant). Detect collinearity via norm residualization, do NOT report invalid coefficients."
+    },
+    {
+      "id": "N50",
+      "type": "EMPIRICAL_AB",
+      "question": "Does same-field academic signal survive two-way FE?",
+      "test": "Estimate full chooser+candidate FE with same-field indicator and abs-age gap; estimate cluster-chooser SE, report coefficient and condition checks, compare actor-only model with same complete-case sample."
+    },
+    {
+      "id": "N51",
+      "type": "ADVERSARIAL_AB",
+      "question": "Can preserving both sides' observed yes-degrees within wave explain apparent age and field homophily?",
+      "test": "Construct bipartite binary approval network within wave for each chooser sex; MCMC 2x2 checkerboard edge swaps preserving chooser/target yes-degree and observed opportunity graph. ≥200 saved samples after fixed burn-in, report successful swaps, mixing diagnostics; if insufficient acceptance/mixing mark INVALID_OR_BLOCKED, do not claim a p-value."
+    },
+    {
+      "id": "N52",
+      "type": "EMPIRICAL_AB",
+      "question": "Does chooser and candidate effect heterogeneity account for popularity explanatory power?",
+      "test": "Compare actor-FE R2 and two-way-FE baseline R2 within the same complete-case data; candidate FE is saturating popularity, compare fit not causal effect. Report number of parameters / model fit penalty."
+    },
+    {
+      "id": "N53",
+      "type": "SENSITIVITY_AB",
+      "question": "Is the age reversal 1/3 robust to flexible age specification?",
+      "test": "Compare Columbia age closeness vs chooser-normalized signed age; check within-wave sex patterns with leave-one-wave-out. If no Mixmosa person-level available, use existing stored Mixmosa aggregates and classify independent test BLOCKED."
+    },
+    {
+      "id": "N54",
+      "type": "VALIDATION_AB",
+      "question": "Can a held-out event support prospective ranking mechanism? ",
+      "test": "Event-wise CV: predictors popularity of targets learned from other events only. If >95% actors unique to one event, gate BLOCKED; do not leak within test event. Record coverage."
+    },
+    {
+      "id": "N55",
+      "type": "METHOD_AUDIT_AB",
+      "question": "Is the earlier 1/3 N46 grade robust or overstates novelty?",
+      "test": "Adversarial review of prior art, sign reversal with signed age and event effects; downgrade if not uniquely supported; do not double count."
+    },
+    {
+      "id": "N56",
+      "type": "PLANNING_AB_ONLY",
+      "question": "What independent data would discriminate popularity preference vs homophily under equal exposure?",
+      "test": "Define prospective field study and design ethical/public-observable outcome; no fictional execution. R5 decision on further cycles."
+    }
+  ],
+  "remaining_slots_if_early_stop": "N57-N66 unstarted and unspent; no automatic cycle claims",
+  "AB_requirements": "Each completed loop A-J, revise CT2 after each, N1 dedup and ethics/privacy; freeze code SHA before running; only aggregate outputs uploaded",
+  "sources_prior": [
+    "https://doi.org/10.1162/qjec.2006.121.2.673",
+    "https://doi.org/10.1257/aer.100.1.130"
+  ],
+  "output": "REPORT.md, LEDGER.json, RESULTS.json, CT2.svg, scripts/hashes and reproducibility bundle",
+  "status": "FROZEN_BEFORE_NEW_RESULTS"
+}
