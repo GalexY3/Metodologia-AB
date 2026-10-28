@@ -466,6 +466,42 @@
       ],
       "latest_evidence_summary": "Shi et al. 2025 informa que feedback relativo de popularidad altera selectividad y autopresentación en dos ensayos de campo.",
       "last_revised_at": "2026-10-28"
+    },
+    {
+      "id": "P-MARKET-INFO",
+      "question": "La información percibida del tamaño de mercado y competencia cambia participación y selectividad",
+      "status": "EXTERNAL_FIELD_EVIDENCE",
+      "rationale": "Fong 2024 realizó experimento de información en plataforma; no identifica automáticamente efecto de cambios reales de población ni nuestro modelo sintético",
+      "evidence_sources": [],
+      "last_update_id": null,
+      "uncertainty": "Qualitative, context-dependent; no calibrated numerical probabilities",
+      "next_falsifier_or_test": "Intervención consentida en información, diseño prereg, comparar participación y respuesta de ambos lados.",
+      "numeric_probability": null,
+      "CT2_is_not_this_prior": true
+    },
+    {
+      "id": "P-UNION-DURATION",
+      "question": "Mayor número de contactos o eventos de pareja aumenta necesariamente relaciones duraderas y bienestar",
+      "status": "CHALLENGED",
+      "rationale": "AEA 2026 Tinder y Jung/Lusher 2026 diferencian actividad, relaciones y disolución; nuestras medias sintéticas dependen de hazard artificial",
+      "evidence_sources": [],
+      "last_update_id": null,
+      "uncertainty": "Qualitative, context-dependent; no calibrated numerical probabilities",
+      "next_falsifier_or_test": "Medidas longitudinales de bienestar y duración, con censura y controles de cambios de pareja.",
+      "numeric_probability": null,
+      "CT2_is_not_this_prior": true
+    },
+    {
+      "id": "P-COSTLY-SIGNAL",
+      "question": "Señales escasas de interés prioritario pueden alterar respuesta sin modificar popularidad intrínseca",
+      "status": "EXTERNAL_EXPERIMENT_DESCRIBED",
+      "rationale": "Lee y Niederle 2025 manipulan dotación de señales virtuales; no se procesaron sus datos",
+      "evidence_sources": [],
+      "last_update_id": null,
+      "uncertainty": "Qualitative, context-dependent; no calibrated numerical probabilities",
+      "next_falsifier_or_test": "Aleatorizar señales y observar tasas bilaterales y oportunidades, sin estigma público inventado.",
+      "numeric_probability": null,
+      "CT2_is_not_this_prior": true
     }
   ],
   "audit": {
