@@ -4,7 +4,7 @@
   "title": "Mercados de pareja · AB-R",
   "mode": "research",
   "created_at": "2026-10-28T18:00:00+01:00",
-  "updated_at": "2026-10-28T20:00:00+01:00",
+  "updated_at": "2026-10-28T18:20:00+01:00",
   "nodes": [
     {
       "id": "root",
@@ -559,6 +559,132 @@
         "verified_by": "",
         "verified": false
       }
+    },
+    {
+      "id": "N15",
+      "title": "Población ECP edad/sexo",
+      "kind": "question",
+      "mode": "research",
+      "status": "blocked",
+      "detail": "Tabla INE 59583 identificada, descargable institucional no accesible, no calibración población soltera",
+      "sources": [
+        "research/ABR_EVIDENCE6_20261028/REPORT.md",
+        "research/ABR_EVIDENCE6_20261028/LEDGER.json"
+      ],
+      "created_at": "2026-10-28T18:20:00+01:00",
+      "updated_at": "2026-10-28T18:20:00+01:00",
+      "phase": null,
+      "acceptance": {
+        "criteria": "No 2/3 without novelty and external confirmation",
+        "evidence": [],
+        "verified_by": "",
+        "verified": false
+      }
+    },
+    {
+      "id": "N16",
+      "title": "Matriz homogamia educativa",
+      "kind": "question",
+      "mode": "research",
+      "status": "blocked",
+      "detail": "INE 60268 localizada, CSV no descargado, O/E no calculado",
+      "sources": [
+        "research/ABR_EVIDENCE6_20261028/REPORT.md",
+        "research/ABR_EVIDENCE6_20261028/LEDGER.json"
+      ],
+      "created_at": "2026-10-28T18:20:00+01:00",
+      "updated_at": "2026-10-28T18:20:00+01:00",
+      "phase": null,
+      "acceptance": {
+        "criteria": "No 2/3 without novelty and external confirmation",
+        "evidence": [],
+        "verified_by": "",
+        "verified": false
+      }
+    },
+    {
+      "id": "N17",
+      "title": "Baseline DA y política adaptativa",
+      "kind": "question",
+      "mode": "research",
+      "status": "answered",
+      "detail": "Grafo N240 k20: DA r .909/cov .962; greedy r .017/cov .970; adaptativo r .412/cov .413; síntesis sintética",
+      "sources": [
+        "research/ABR_EVIDENCE6_20261028/REPORT.md",
+        "research/ABR_EVIDENCE6_20261028/LEDGER.json"
+      ],
+      "created_at": "2026-10-28T18:20:00+01:00",
+      "updated_at": "2026-10-28T18:20:00+01:00",
+      "phase": null,
+      "acceptance": {
+        "criteria": "No 2/3 without novelty and external confirmation",
+        "evidence": [],
+        "verified_by": "",
+        "verified": false
+      }
+    },
+    {
+      "id": "N18",
+      "title": "Control negativo asincronía",
+      "kind": "question",
+      "mode": "research",
+      "status": "answered",
+      "detail": "q fijo sync y async-persistent exactamente iguales, matching diferido tras vistas, no resultado Tinder real",
+      "sources": [
+        "research/ABR_EVIDENCE6_20261028/REPORT.md",
+        "research/ABR_EVIDENCE6_20261028/LEDGER.json"
+      ],
+      "created_at": "2026-10-28T18:20:00+01:00",
+      "updated_at": "2026-10-28T18:20:00+01:00",
+      "phase": null,
+      "acceptance": {
+        "criteria": "No 2/3 without novelty and external confirmation",
+        "evidence": [],
+        "verified_by": "",
+        "verified": false
+      }
+    },
+    {
+      "id": "N19",
+      "title": "Canal reputacional del rechazo",
+      "kind": "question",
+      "mode": "research",
+      "status": "blocked",
+      "detail": "Estudios rechazo/awareness no cuantifican pérdida de status de terceros por swipe privado",
+      "sources": [
+        "research/ABR_EVIDENCE6_20261028/REPORT.md",
+        "research/ABR_EVIDENCE6_20261028/LEDGER.json"
+      ],
+      "created_at": "2026-10-28T18:20:00+01:00",
+      "updated_at": "2026-10-28T18:20:00+01:00",
+      "phase": null,
+      "acceptance": {
+        "criteria": "No 2/3 without novelty and external confirmation",
+        "evidence": [],
+        "verified_by": "",
+        "verified": false
+      }
+    },
+    {
+      "id": "N20",
+      "title": "Contraste externo futuro",
+      "kind": "question",
+      "mode": "research",
+      "status": "blocked",
+      "detail": "Plan, sin ejecución ni dataset humano o consentimiento",
+      "sources": [
+        "research/ABR_EVIDENCE6_20261028/REPORT.md",
+        "research/ABR_EVIDENCE6_20261028/LEDGER.json"
+      ],
+      "created_at": "2026-10-28T18:20:00+01:00",
+      "updated_at": "2026-10-28T18:20:00+01:00",
+      "phase": null,
+      "acceptance": {
+        "criteria": "No 2/3 without novelty and external confirmation",
+        "evidence": [],
+        "verified_by": "",
+        "verified": false
+      }
     }
   ],
   "edges": [
@@ -717,6 +843,42 @@
       "from": "goal",
       "to": "N14",
       "relation": "branches_from"
+    },
+    {
+      "id": "e_goal_N15",
+      "from": "goal",
+      "to": "N15",
+      "relation": "branches_from"
+    },
+    {
+      "id": "e_goal_N16",
+      "from": "goal",
+      "to": "N16",
+      "relation": "branches_from"
+    },
+    {
+      "id": "e_goal_N17",
+      "from": "goal",
+      "to": "N17",
+      "relation": "branches_from"
+    },
+    {
+      "id": "e_goal_N18",
+      "from": "goal",
+      "to": "N18",
+      "relation": "branches_from"
+    },
+    {
+      "id": "e_goal_N19",
+      "from": "goal",
+      "to": "N19",
+      "relation": "branches_from"
+    },
+    {
+      "id": "e_goal_N20",
+      "from": "goal",
+      "to": "N20",
+      "relation": "branches_from"
     }
   ],
   "events": [],
@@ -730,9 +892,9 @@
     "snapshot": "2026-10-28",
     "verified_live": false,
     "progress_semantics": "Sin índice de madurez, solo evidencia limitada",
-    "last_campaign": "ABR-BRANCH6-20261028",
+    "last_campaign": "ABR-EVIDENCE6-20261028",
     "scientific_status": "EXPLORATORY_ONLY",
-    "current_statement": "8/8 BRANCH8, N03 inconclusive; N08 planning only",
+    "current_statement": "30 total cycles across three earlier campaigns and EVIDENCE6: 10+8+6+6, no 2/3, R5 STOP",
     "reviewer": "Not validated on clean clone",
     "summary": "6 valid cycles, 1 invalid instrument attempt repaired, N12 and N13 data blocked, N1=0, N2/N3=0",
     "source_code_status": "hash frozen and available in conversation ZIP, not in GitHub; clean clone not verified"
