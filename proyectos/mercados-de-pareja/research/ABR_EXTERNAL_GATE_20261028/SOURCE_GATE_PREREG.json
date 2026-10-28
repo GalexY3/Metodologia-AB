@@ -1,0 +1,52 @@
+{
+  "campaign": "ABR-EXTERNAL-GATE-20261028",
+  "date": "2026-10-28",
+  "branch": "research/ab-r-mercados-pareja-20261028",
+  "authorized_carried_over": 11,
+  "parent": "ABR-ESBM20-20261028 N67–N75",
+  "purpose": "Independent source evidence gating for E218862V1 and HCMST, not retrospective claim to preregister earlier literature discovery",
+  "timing": "Frozen after checking publication metadata and prior to any new microdata processing (none presently accessed)",
+  "unit_contracts": [
+    {
+      "id": "N76",
+      "kind": "DOCUMENTARY_ACCESS_AB",
+      "source": "AEA OpenICPSR E218862V1",
+      "question": "Is archived replication package accessible and does its observed unit permit dyadic exposure/reciprocity or only college-survey outcomes?",
+      "design": "Crosscheck repository, AEA appendix and DOI, attempt direct browser downloads and container network; log HTTP/DNS failure, files actually inspected, license checks separately; classify match to target estimates",
+      "primary_outcome": "DIRECTLY_VERIFIED_FILE_BYTES_AND_COLUMNS_OR_ACCESS_BLOCKED",
+      "gate": "Do not call metadata codebook or paper a raw-file replication."
+    },
+    {
+      "id": "N77",
+      "kind": "DOCUMENTARY_LONGITUDINAL_AB",
+      "source": "Stanford HCMST 2017/2020/2022 and ICPSR38873",
+      "question": "Can independently collected individual panel measures assess relationship persistence, and what are the sampling/selection limitations?",
+      "design": "Examine exact primary sample description, attrition/weights, survey dates, documented partner status, partner history, breakups and platform use. Attempt official source download. Separate HCMST 2017 from 2009 sample; compare estimand against ESBM duration",
+      "primary_outcome": "Longitudinal survey eligibility classification with access/rights/missingness constraints, not synthetic comparison.",
+      "gate": "No effects/cross-tabulation until original data and permissible rights are verified."
+    }
+  ],
+  "current_priors": [
+    "P-UNION-DURATION",
+    "P-DYADIC_ACCESS",
+    "P-EXANTE_POP",
+    "P-OPPORTUNITY",
+    "P-TRANSPORT",
+    "P-MEASURE_OUTCOME"
+  ],
+  "CT2_start": 7,
+  "R5": "After these two source audits stop if neither yields analyzable independent raw data and a genuinely discriminating test; nine authorized cycles stay unstarted",
+  "no_source_claim": "No participant files processed or downloaded at preregistration",
+  "grade": "documentary planning only unless actually analyzed; N2=N3 impossible from metadata",
+  "next_ids_if_gates_pass": [
+    "N78",
+    "N79",
+    "N80",
+    "N81",
+    "N82",
+    "N83",
+    "N84",
+    "N85",
+    "N86"
+  ]
+}
