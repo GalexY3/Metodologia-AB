@@ -4,16 +4,15 @@
   "date": "2026-10-28",
   "branch": "research/ab-r-mercados-pareja-20261028",
   "granted": 20,
-  "completed_valid": 11,
+  "completed_valid": 12,
   "invalid": 0,
   "planning_only": 0,
-  "documentary_and_gate": 4,
+  "documentary_and_gate": 5,
   "formal_model": 1,
   "synthetic_experiment_and_sensitivity": 5,
   "adversarial": 1,
-  "unstarted_authorized": 9,
+  "unstarted_authorized": 8,
   "unstarted_ids": [
-    "N78",
     "N79",
     "N80",
     "N81",
@@ -23,7 +22,7 @@
     "N85",
     "N86"
   ],
-  "R5": "STOP_AFTER_N77__TWO_DOCUMENTARY_SOURCE_GATES__NINE_PENDING__NO_RAW_EXTERNAL_DATA",
+  "R5": "STOP_AFTER_N78__EIGHT_AUTHORIZED_UNSTARTED__RAW_INDEPENDENT_DATA_STILL_UNAVAILABLE",
   "prereg_commit": "026cc12b5136e60034c71c2f794d01a453bdf5bd",
   "source_freeze_commit": "7f196409bc1ba5b5af6d8caad39c173a38a99405",
   "source_sha256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
@@ -40,24 +39,23 @@
   "QA": "QA.json",
   "raw_data_human_processed": false,
   "prior_register": {
-    "sources_total": 50,
-    "prior_hypotheses_total": 25,
-    "update_events_total": 52,
+    "sources_total": 53,
+    "prior_hypotheses_total": 26,
+    "update_events_total": 58,
     "latest_sources": [
-      "SRC048",
-      "SRC049",
-      "SRC050"
+      "SRC051",
+      "SRC052",
+      "SRC053"
     ],
     "latest_updates": [
-      "U045",
-      "U046",
-      "U047",
-      "U048",
-      "U049",
-      "U050",
-      "U051",
-      "U052"
-    ]
+      "U053",
+      "U054",
+      "U055",
+      "U056",
+      "U057",
+      "U058"
+    ],
+    "posthoc_record_note": "SRC053 and U056-U058 from source maintenance after N78, NO extra AB cycle"
   },
   "new_N1": 0,
   "new_N2": 0,
@@ -65,6 +63,7 @@
   "CT2": {
     "before": 7,
     "per_cycle": [
+      7,
       7,
       7,
       7,
@@ -482,7 +481,59 @@
       ],
       "subcampaign": "ABR-EXTERNAL-GATE-20261028",
       "evidence_artifact": "../ABR_EXTERNAL_GATE_20261028/LEDGER.json"
+    },
+    {
+      "id": "N78",
+      "type": "DOCUMENTARY_ACCESS_AB",
+      "status": "VALID_DOCUMENTARY_NEW_MULTI_ACTOR_PANEL_CLASS_NO_MICRODATA",
+      "A": "Whether pairfam offers linked partner respondent and month-level relationship episodes and whether legal microdata access is available; unit respondents, partners and episodes; no causal outcome estimand.",
+      "B": "H1 repeated multi-actor couple data and episodes; H0 lacks linked partner reports; H_alt missing/censoring or access limits make it unusable.",
+      "C": "Read official original technical manual after committed prereg; compare documented data structure against HCMST and NLSY97; require no-swipe negative control and license gate.",
+      "D": "GESIS project + pairfam manual Release14.2 PDF inspected visually pp 5/67/69/74/106; attempted GESIS link yields 502; no authenticated account or data bytes.",
+      "E": "Monthly union episodes and partner surveys linked by id documented; wave14 not integrated into original biopart; registration required.",
+      "F": "Partner response selection, anchor-only ever-partnered data, left truncation, right censoring, prospective-retrospective mixing, imputed dates and no partner sample weights; no rejected candidates or bidirectional app logs.",
+      "G": "Independent observation class of multi-actor survey verified in documentation; zero replication of our ESBM hypotheses or human effect tests.",
+      "H": "SRC051 and SRC052 registered as one sample; qualitative updates U053-U055; prior P-DYADIC-PANEL new, P-LONGITUDINAL-ELIGIBILITY amended, P-DYADIC_ACCESS unchanged.",
+      "I": "Unit/source eligibility yes; causal ESBM identification no; raw files 0; 0/3; CT2 7 to 7; privacy/access observed.",
+      "J": "STOP_R5 until authorized SUF/codebook and preregistered real contrast; N79–N86 unstarted.",
+      "DRIFT": "D0.8 multi-actor longitudinal documentation vs earlier individual panel, not a new population-level ESBM effect",
+      "CT2_before": 7,
+      "CT2_after": 7,
+      "new_N1": 0,
+      "new_N2": 0,
+      "new_N3": 0,
+      "evidence": [
+        "../ABR_PAIRFAM_GATE_20261028/PREREG_N78.json",
+        "../ABR_PAIRFAM_GATE_20261028/LEDGER.json",
+        "../ABR_PAIRFAM_GATE_20261028/ACCESS_AND_SCOPE_AUDIT.md"
+      ],
+      "source_ids": [
+        "SRC051",
+        "SRC052"
+      ],
+      "prior_ids": [
+        "P-DYADIC-PANEL",
+        "P-DYADIC_ACCESS",
+        "P-LONGITUDINAL-ELIGIBILITY"
+      ],
+      "prior_update_ids": [
+        "U053",
+        "U054",
+        "U055"
+      ],
+      "prereg_commit": "d62f58c2613a0ca58d67db92ed9d5696b42a3d97",
+      "note": "Reconciled from already valid independently linked N78 ledger, NOT new execution in this GitHub audit."
     }
   ],
-  "external_audit": "research/ABR_EXTERNAL_GATE_20261028/ACCESS_AND_SCOPE_AUDIT.md"
+  "external_audit": "research/ABR_EXTERNAL_GATE_20261028/ACCESS_AND_SCOPE_AUDIT.md",
+  "reconciliation": {
+    "date": "2026-10-28",
+    "type": "POST_HOC_LEDGER_RECONCILIATION_NOT_AB_CYCLE",
+    "reason": "Previous campaign ledger ended at N77 although linked N78 separate ledger and CURRENT.md record N78; append existing N78 once, do not alter historic experiments.",
+    "source": "../ABR_PAIRFAM_GATE_20261028/LEDGER.json",
+    "source_blob_sha": "a50c6fde0a9e0532f5e974f32e9f3744e686238c",
+    "not_counted_cycle": "source update after N78 is maintenance (SRC053/U056-U058).",
+    "current_status": "STOP_R5;N79-N86 NOT_EXECUTED",
+    "current_posthoc_audit": "../ABR_NO_NEW_CYCLE_ACCESS_REVIEW_20261028/REPORT.md"
+  }
 }
