@@ -59,7 +59,33 @@
       "I": "DOCUMENTARY_AB_VALID; data source inaccessible for raw quantitative analysis, 0/3 novelty; privacy maintained.",
       "J": "STOP empirical analysis; pasar a auditoría de novedad N57; no contabilizar experimentos no corridos.",
       "CT2_before": 13,
-      "CT2_after": 13
+      "CT2_after": 13,
+      "source_ids": [
+        "SRC021",
+        "SRC022",
+        "SRC023",
+        "SRC024",
+        "SRC025"
+      ],
+      "prior_ids": [
+        "P-DYADIC_ACCESS",
+        "P-APP_POP_INFO",
+        "P-OPPORTUNITY",
+        "P-EXANTE_POP",
+        "P-AGE_EXTERNAL",
+        "P-MEASURE_OUTCOME"
+      ],
+      "prior_update_ids": [
+        "U016",
+        "U017",
+        "U018",
+        "U019",
+        "U020",
+        "U021",
+        "U025"
+      ],
+      "register": "research/PRIORS/UPDATES.json",
+      "prior_update_status": "RECORDED_AFTER_DOCUMENTARY_AUDIT_NOT_A_PREREG"
     },
     {
       "id": "N57",
@@ -76,7 +102,31 @@
       "I": "NO_NEW_N1, N2=0 N3=0. 0/3 novedad para claim general, CT2 ordinal 13→7 por antecedente casi isomorfo al claim principal y bloqueo de medición.",
       "J": "STOP_R5 después de N57; 2/11 ciclos usados, 9 sin iniciar. No ajustar otra vez modelos sobre dos datos explorados sin nuevo observacional prospectivo.",
       "CT2_before": 13,
-      "CT2_after": 7
+      "CT2_after": 7,
+      "source_ids": [
+        "SRC021",
+        "SRC002"
+      ],
+      "prior_ids": [
+        "P-NOVELTY",
+        "P-RECIPROCITY",
+        "P-PUBLIC_REPUTATION"
+      ],
+      "prior_update_ids": [
+        "U022",
+        "U023",
+        "U024"
+      ],
+      "register": "research/PRIORS/UPDATES.json",
+      "prior_update_status": "RECORDED_AFTER_DOCUMENTARY_AUDIT_NOT_A_PREREG"
     }
-  ]
+  ],
+  "source_registry": "research/PRIORS/SOURCES.json",
+  "prior_registry": "research/PRIORS/PRIORS.json",
+  "prior_updates": "research/PRIORS/UPDATES.json",
+  "governance_change_not_new_cycle": true,
+  "cycle_counts_preserved": {
+    "valid": 2,
+    "remaining": 9
+  }
 }
