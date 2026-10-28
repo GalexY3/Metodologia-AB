@@ -3,7 +3,7 @@
   "project": "mercados-de-pareja",
   "date": "2026-10-28",
   "scope": "Retrospective provenance backfill from repository reports plus N56/N57 publisher audit. Original data never copied; not systematic or claim of accessing raw data for bibliography.",
-  "source_count": 41,
+  "source_count": 47,
   "sources": [
     {
       "id": "SRC001",
@@ -851,7 +851,109 @@
       "backfill": false,
       "section": "Publisher abstract / introduction as cited in report",
       "source_derivation": "New browser literature review, not a reproduction of author data"
+    },
+    {
+      "id": "SRC042",
+      "title": "Jessica Fong (2024), Effects of Market Size and Competition in Two-Sided Markets: Evidence from Online Dating",
+      "canonical_url": "https://doi.org/10.1287/mksc.2023.0142",
+      "cycle_ids": [
+        "N67"
+      ],
+      "contribution": "Randomized user-level information about local opposite-side market size and same-side competition in platform; larger market signals depress participation, conditional selectivity increases with market and decreases with competition.",
+      "limits": "Information treatment, not exact observed encounter counts nor a universal size effect. Raw person-level data not downloaded; field experiment abstract read.",
+      "evidence_access": "PUBLISHER_ABSTRACT_AND_METHODS_EXCERPT_NO_MICRODATA",
+      "verified_at": "2026-10-28",
+      "article_reuse_rights": "NOT_ASSESSED",
+      "data_reuse_rights": "NOT_VERIFIED",
+      "raw_data_processed": false,
+      "backfill": false,
+      "precise_note": "Source discovery before present synthetic computation; results have not been used as training data for this model"
+    },
+    {
+      "id": "SRC043",
+      "title": "Junwen M. Hu and David M. Markowitz (2026), Re-examining relational pursuit and mate selection in online dating",
+      "canonical_url": "https://doi.org/10.1177/02654075261429319",
+      "cycle_ids": [
+        "N67"
+      ],
+      "contribution": "Two preregistered experiments (n=193,342), 31 vs 6 hypothetical choice options, greater reported pursuit with more options, partly mediated by perceived compatibility; supports separating information, compatibility, cognitive load.",
+      "limits": "Participants select from experimental profiles, not genuine reciprocal platform decisions or long-term couple formation. OSF data cited but files not retrieved.",
+      "evidence_access": "PUBLISHER_ABSTRACT_AND_METHODS_EXCERPT_NO_MICRODATA",
+      "verified_at": "2026-10-28",
+      "article_reuse_rights": "NOT_ASSESSED",
+      "data_reuse_rights": "NOT_VERIFIED",
+      "raw_data_processed": false,
+      "backfill": false,
+      "precise_note": "Source discovery before present synthetic computation; results have not been used as training data for this model"
+    },
+    {
+      "id": "SRC044",
+      "title": "Büyükeren, Makarin and Xiong (2026), The Impact of Dating Apps on Young Adults: Evidence from Tinder",
+      "canonical_url": "https://doi.org/10.1257/app.20240455",
+      "cycle_ids": [
+        "N67"
+      ],
+      "contribution": "Causal-style difference-in-differences on launch diffusion within US colleges; more sexual activity but little movement in long-term relationship formation/quality; inequality rose in some outcomes, especially men.",
+      "limits": "Not a randomized Tinder platform intervention or same as speed dating. NCHA survey and replication package referenced; no raw AEA replication file inspected. Social harms require context not inferred from toy.",
+      "evidence_access": "PUBLISHER_ABSTRACT_AND_METHODS_EXCERPT_NO_MICRODATA",
+      "verified_at": "2026-10-28",
+      "article_reuse_rights": "NOT_ASSESSED",
+      "data_reuse_rights": "NOT_VERIFIED",
+      "raw_data_processed": false,
+      "backfill": false,
+      "precise_note": "Source discovery before present synthetic computation; results have not been used as training data for this model"
+    },
+    {
+      "id": "SRC045",
+      "title": "Soohyung Lee and Muriel Niederle (2025), Propose with a rose? Signaling in internet dating markets",
+      "canonical_url": "https://www.cambridge.org/core/journals/experimental-economics/article/abs/propose-with-a-rose-signaling-in-internet-dating-markets/290AAE39D01B06D28169C646242F2788",
+      "cycle_ids": [
+        "N67"
+      ],
+      "contribution": "Field experiment randomizing endowment of two versus eight virtual roses as signals of interest, isolating a priority-signal mechanism apart from attractiveness rankings.",
+      "limits": "Abstract only, no participant-level dataset; did not reproduce effect sizes or model significance. A rose is a signal, not reputation decline.",
+      "evidence_access": "PUBLISHER_ABSTRACT_AND_METHODS_EXCERPT_NO_MICRODATA",
+      "verified_at": "2026-10-28",
+      "article_reuse_rights": "NOT_ASSESSED",
+      "data_reuse_rights": "NOT_VERIFIED",
+      "raw_data_processed": false,
+      "backfill": false,
+      "precise_note": "Source discovery before present synthetic computation; results have not been used as training data for this model"
+    },
+    {
+      "id": "SRC046",
+      "title": "Sunmi Jung and Lester Lusher (2026), Dating apps and marriage rates",
+      "canonical_url": "https://doi.org/10.1016/j.econlet.2026.112873",
+      "cycle_ids": [
+        "N67"
+      ],
+      "contribution": "Event-study/difference-in-differences with CPS and Tinder Google-search intensity finds no overall marriage-rate effect and association with higher separation/divorce, especially thin markets.",
+      "limits": "Search intensity proxy for exposure and observational identification assumptions; access to participant microdata/replication not available, so does not calibrate synthetic breakup hazard.",
+      "evidence_access": "PUBLISHER_ABSTRACT_AND_METHODS_EXCERPT_NO_MICRODATA",
+      "verified_at": "2026-10-28",
+      "article_reuse_rights": "NOT_ASSESSED",
+      "data_reuse_rights": "NOT_VERIFIED",
+      "raw_data_processed": false,
+      "backfill": false,
+      "precise_note": "Source discovery before present synthetic computation; results have not been used as training data for this model"
+    },
+    {
+      "id": "SRC047",
+      "title": "OpenICPSR / AEA replication record for Büyükeren et al. (2026)",
+      "canonical_url": "https://doi.org/10.3886/E218862V1",
+      "cycle_ids": [
+        "N67"
+      ],
+      "contribution": "AEA/RePEc identifies replication package for new 2026 Tinder paper; possible external data and code to inspect with appropriate download and rights checks.",
+      "limits": "Link from RePEc verified, but web resolver inaccessible; direct aeaweb materials ZIP download failed, no files, code, microdata, license or columns inspected; NOT an independent replication.",
+      "evidence_access": "REPLICATION_METADATA_ONLY__FILE_NOT_DOWNLOADED",
+      "verified_at": "2026-10-28",
+      "article_reuse_rights": "NOT_ASSESSED",
+      "data_reuse_rights": "NOT_VERIFIED",
+      "raw_data_processed": false,
+      "backfill": false,
+      "precise_note": "Source discovery before present synthetic computation; results have not been used as training data for this model"
     }
   ],
-  "last_added_campaign": "ABR-INTEGRAL9-20261028"
+  "last_added_campaign": "ABR-ESBM20-20261028"
 }
