@@ -1,0 +1,136 @@
+{
+  "schema": "ab.research.ledger.v1",
+  "campaign": "ABR-EXTERNAL-GATE-20261028",
+  "date": "2026-10-28",
+  "branch": "research/ab-r-mercados-pareja-20261028",
+  "root_authorization": "ABR-ESBM20-20261028 additional 20 cycles, 9 previously completed N67-N75",
+  "authorized_start": 11,
+  "valid_this_turn": 2,
+  "documentary_completed": 2,
+  "empirical_runs": 0,
+  "synthetic_runs": 0,
+  "invalid_AB_cycles": 0,
+  "invalid_download_attempts_not_AB_cycles": 0,
+  "planning_only_cycles": 0,
+  "remaining_unused_authorized": 9,
+  "unstarted_ids": [
+    "N78",
+    "N79",
+    "N80",
+    "N81",
+    "N82",
+    "N83",
+    "N84",
+    "N85",
+    "N86"
+  ],
+  "prereg_commit": "e716de8ac6ef83751302f74939efbb3a4f65956f",
+  "selection_exposure": "Documentary sources discovered before source-gate prereg; protocol captures *access eligibility*, not falsely preregistered literature discovery.",
+  "R5": "STOP_SOURCE_BYTES_NOT_OBTAINED__NO_REPLICATION",
+  "CT2": {
+    "baseline": 7,
+    "after_each": [
+      7,
+      7
+    ],
+    "final": 7,
+    "scale": "ordinal epistemic judgment, not probability"
+  },
+  "N1_new": 0,
+  "N2": 0,
+  "N3": 0,
+  "raw_datasets_downloaded": 0,
+  "raw_files_sha256": null,
+  "clean_clone_verified": false,
+  "DRIFT": "D0.5 same model and question with distinct longitudinal source class",
+  "sources_added": [
+    "SRC048",
+    "SRC049",
+    "SRC050"
+  ],
+  "source_updated": [
+    "SRC047"
+  ],
+  "prior_added": [
+    "P-LONGITUDINAL-ELIGIBILITY"
+  ],
+  "prior_updates": [
+    "U045",
+    "U046",
+    "U047",
+    "U048",
+    "U049",
+    "U050",
+    "U051",
+    "U052"
+  ],
+  "cycles": [
+    {
+      "id": "N76",
+      "type": "DOCUMENTARY_ACCESS_AB",
+      "status": "VALID_DOCUMENTARY_METADATA_GATE_NO_RAW_REPLICATION",
+      "A": "¿Puede abrirse legalmente y procesarse E218862V1 como fuente discriminante de exposiciones, reciprocidad y outcomes?",
+      "B": "H1 réplica original apta para aristas E_ij,A_ij,R_ji; H0 encuesta de resultados individuales y colegios, sin aristas demostradas.",
+      "C": "Auditar DOI depósito, inventario oficial, unidad/método AEA, enlaces de descarga, repositorio alternativo ICPSR y términos; registrar bytes/no-bytes sin suponer acceso.",
+      "D": "Página E218862V1 vista (Code/Data/Exhibits/Temp + README.pdf 256KB), artículo AEA e índice, clicks Data y README no restituyeron archivos, contenedor requests DNS falló; fuente SRC047 y migración SRC050.",
+      "E": "Repositorio V1 confirmado, >1.1M encuestas individuales de estudiantes, 2008-19 DID de introducción Tinder por afiliación griega. No ficheros interiores ni microdatos descargados; ninguna licencia concreta de depósito inspeccionada.",
+      "F": "Ajuste de nivel campus ≠ decisiones diádicas; folder 'Data' no demuestra exposición perfil; documentación sobre migración no diagnostica causalmente fallo de red. Apéndice PDF indexado pero visual no verificado, sin extracción cuantitativa.",
+      "G": "Confirmación externa de existencia y unidad publicada; NO nueva replicación de regresión ni datos. Ningún contraste humano ejecutado.",
+      "H": "Revisiones U045, U046 y U052, priors P-DYADIC_ACCESS y P-EXANTE_POP sin cambio y vigilancia de migración; fuente trazable.",
+      "I": "Acceso parcial metadatos oficiales, bytes 0, derechos específicos sin verificar; valor macro contextual, cero identificación causal ESBM, originalidad 0/3, ética sin microdatos.",
+      "J": "STOP raw analysis; N77 inspección de tercera fuente de medición distinta; no gastar plazas en simulaciones.",
+      "CT2_before": 7,
+      "CT2_after": 7,
+      "source_ids": [
+        "SRC047",
+        "SRC050"
+      ],
+      "prior_ids": [
+        "P-DYADIC_ACCESS",
+        "P-EXANTE_POP"
+      ],
+      "prior_update_ids": [
+        "U045",
+        "U046",
+        "U052"
+      ]
+    },
+    {
+      "id": "N77",
+      "type": "DOCUMENTARY_LONGITUDINAL_AB",
+      "status": "VALID_DOCUMENTARY_INDEPENDENT_PANEL_ELIGIBILITY_NO_RAW_ESTIMATES",
+      "A": "¿Existe un panel independiente real que permita estudiar duración y disolución de relaciones y contraste externo parcial de ESBM v2?",
+      "B": "H1 HCMST2017–2022 sigue personas y relaciones, apto para etapa de duración; H0 no perfiles/usuarios mostrados y sin consentimiento bilateral, así que incapaz de identificar elección inicial.",
+      "C": "Consultar fuente primaria Stanford y registro ICPSR 38873, definición de universo/ola/pesos/datos de uso, intentar descarga oficial, no importar nombres de HCMST 2009 en 2017 sin codebook.",
+      "D": "Stanford public catalog y licencia leídos, ICPSR resumen/pesos/atrícion y codebook links vistos; stacks Stanford direct fail cache/DNS, requests no DNS, ningún archivo abierto.",
+      "E": "Cohorte 3510 personas 2017, 2107 en 2020, 1722 en 2022; intención de analizar calidad, modo de encuentro y estabilidad; sobresample LGB, pesos longitudinales. Repositorios Stanford e ICPSR describen EL MISMO conjunto, no dos muestras independientes.",
+      "F": "Riesgos: supervivencia a 2017, atrición por ola, sobre-muestreo LGB, COVID, cohorte de inicio, censura, confusión por edad y duración; directorio de datos no garantiza variable disponible/ítems de ruptura; ley de uso obliga aviso contacto/cita.",
+      "G": "No replicación ni cálculo en humanos; nuevo instrumento documental independiente que podría falsar parte de duración una vez abierto con permisos.",
+      "H": "Prior nuevo P-LONGITUDINAL-ELIGIBILITY y actualizaciones U047–U051; otros priors no cambian por falta de datos. SRC048 y SRC049 mismo sample.",
+      "I": "Validez documental de diseño longitudinal sí; identificación del mecanismo de rechazo/reciprocidad no; datos no procesados, privacidad observada; no nota científica 1/3.",
+      "J": "STOP_R5 con nueve plazas sin empezar; solo continuar al adquirir datos públicos legítimos y verificar código/estimando. No simular ni prometer que ya se procesaron.",
+      "CT2_before": 7,
+      "CT2_after": 7,
+      "source_ids": [
+        "SRC048",
+        "SRC049"
+      ],
+      "prior_ids": [
+        "P-LONGITUDINAL-ELIGIBILITY",
+        "P-MEASURE_OUTCOME",
+        "P-UNION-DURATION",
+        "P-OPPORTUNITY",
+        "P-DYADIC_ACCESS"
+      ],
+      "prior_update_ids": [
+        "U047",
+        "U048",
+        "U049",
+        "U050",
+        "U051"
+      ]
+    }
+  ],
+  "rights": "No user/restricted data access; official Stanford terms read, ICPSR institutional access distinct; AEA archived file-specific license unavailable",
+  "audit": "ACCESS_AND_SCOPE_AUDIT.md"
+}
