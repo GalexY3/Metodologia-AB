@@ -1,0 +1,79 @@
+{
+  "schema": "ab.research.campaign.v1",
+  "campaign_id": "ABR-BRANCH6-20261028",
+  "authorized": 6,
+  "authorization": "User explicitly authorized 6 BRANCHING AB-R cycles conforming to NEXT_6_PROPOSAL.md",
+  "date": "2026-10-28",
+  "parent": "ABR-BRANCH8-20261028",
+  "branch": "research/ab-r-mercados-pareja-20261028",
+  "method": "AB 3.2.1 O1-O7",
+  "status": "FROZEN_BEFORE_EXPERIMENT_CODE_AND_RESULTS",
+  "adaptive_context": "MATE10 and BRANCH8 outputs explicitly exploratory, no untouched confirmatory holdout",
+  "aim": "Test opportunities as sufficient sorting mechanism versus effects of sequential filtering without explicit similarity preferences",
+  "assumptions": {
+    "sex": "binary 50/50, exclusively heterosexual synthetic; no empirical claim",
+    "status_looks": "independent U[0,1], no Spanish calibration",
+    "preferences": "women 0.6 status+0.4 looks; men 0.4 status+0.6 looks, plus fixed dyadic noise for N09",
+    "outcomes": "Pearson r of initial desirability among matched, % population matched including singles, median absolute gap; utility-based graph blocking pairs when defined",
+    "seeds": [
+      1103,
+      2207,
+      3301,
+      4409,
+      5501
+    ],
+    "stats": "descriptive across 5 seeds with per-seed CSV; no external replication, no p-value based on agents as iid humans"
+  },
+  "cycles": [
+    {
+      "id": "N09",
+      "type": "EXPERIMENTAL_AB",
+      "A": "Compare DA and online sequential filtering on exactly same ex ante regular bipartite opportunity graph",
+      "B": "H_static DA sorting from preference and mutual feasibility; H_dynamic online thresholds add sorting over static greedy after opportunity matching; H_null differences explained by information timing",
+      "C": "N400 200 men/women, k=20 and k=60 regular exposure graphs; 5 seeds, same fixed per-edge utility with Gaussian dyadic error sd=.08; three algorithms DA (full graph ranking; outside .05), greedy early accept (utility >=.05), adaptive sequential (q0=.8, qmin=.05, fatigue .015 per observed failure + .01 only for unilateral accept). Graph edges processed in same pre-drawn random schedule for sequential variants; DA sees all edges, explicitly informational advantage. Endpoints r,coverage,matched-mean utility,blocking edge count; invariants unique pairs, DA no blocking pairs, all matches on graph.",
+      "D": "Paridad del conjunto de parejas potenciales, no de tiempo/información; contrast greedy vs dynamic strongest timing control. N total 400."
+    },
+    {
+      "id": "N10",
+      "type": "EXPERIMENTAL_AB",
+      "A": "Repair low-power N03 via balanced local pools, controlled distinct exposures",
+      "B": "H0 observed local effects vanish with balanced composition and sufficient successful matches; H1 residual pool-size sorting remains",
+      "C": "N1200 balanced sexes, pool sizes 100,300,1200, exactly T40 distinct scheduled encounters/personal until match (each pool has >=50 opposite); same q0=.82 fatigue=.015 rejection=.005; five seeds and same population per seed, randomized pool assignments. Pilot rule from prereg: 2 independent seeds to assess if min coverage >=40% and >=50 pairs per condition; otherwise stop without tuning parameters. Proceed with all five only if gate met. Record distribution of pairs/pool and effective exposures.",
+      "D": "Identical potential exposures per agent pre-match, opportunities cease upon matching; pool compositions differ otherwise. Record denominator and power caveats."
+    },
+    {
+      "id": "N11",
+      "type": "EXPERIMENTAL_AB",
+      "A": "Asynchrony under exactly same bipartite edge graph and 40 planned evaluations per person",
+      "B": "H0 ordering/exposure asymmetry changes outcomes only via realised exposure; H1 fixed reciprocal opportunity graph but timing generates differences",
+      "C": "N400, 200/sex, k40 random regular bipartite graph, T40. Same score and pair-specific dyadic error sd=.06, q0=.8 fatigue=.015 by own unsuccessful views, no feedback after unilateral rejection (in async unresolved until second side view). Three variants: sync both view same edge at same round; async men evaluate edges in order, women a fixed shuffled offset order, likes persist; async with likes expiring after 5 ticks. 5 seeds with paired conditions and exact same prospective edges. Compare exposure-realisation, r,coverage, gap, distinct/mutually evaluated edges. Fix irrevocable left, exit on match. Ensure no duplicate matches.",
+      "D": "Equal planned exposure graph, not equal realised degree among agents because exits endogenous; expiration changes feasible pair sets."
+    },
+    {
+      "id": "N12",
+      "type": "PLANNING_AB_ONLY",
+      "A": "Confirm July 2026 INE 20-39 sex counts, separate eligible users",
+      "B": "National sex ratio for all ages distorts dating market; resident age counts still not pool of available willing heterosexual users",
+      "C": "Obtain and validate official INE age sex 20-39 data via ECP national table/API; compare previous secondary 5,969,215 men and 5,677,941 women if available; look up civil status / cohabitation AND dating app activity by sex/age. If exact values inaccessible, mark DATA_BLOCKED rather than derive invented numbers.",
+      "D": "Official provenance urls, query and date; documentary evidence not human experimental cycle."
+    },
+    {
+      "id": "N13",
+      "type": "PLANNING_AB_ONLY",
+      "A": "Obtain modern cross-tab of partners' education and calculate independence-adjusted homogamy",
+      "B": "Raw diagonal may reflect marginal educational composition, not preferences or matching process",
+      "C": "Inspect official marriage table 60268 national year 2023 or latest available and CSV for joint educational levels; download parse if technically accessible; otherwise report accessible schema + DATA_BLOCKED, do not fabricate counts. If accessible compute observed diagonal, expected independent sum(row_i col_i/N), O/E and simple permutation-preserving marginals; no link between marriages and Tinder matches.",
+      "D": "Disclosure years, data definition, unknown/missing education, no inference into apps."
+    },
+    {
+      "id": "N14",
+      "type": "PLANNING_AB_ONLY",
+      "A": "Review empirically observable reputation signal of online dating rejection",
+      "B": "Private swipe/ghosting vs observable network cues vs truly global public rejection; reputational status loss cannot be stipulated empirically",
+      "C": "Review peer-reviewed field or diary studies with dates, sample designs, limitations; formal DAG with direct private signal versus observable-to-third-party; define valid tests, confidentiality and risks; stronger baseline none/private/local/public tied to actual visibility. No collecting real individuals' ratings.",
+      "D": "Document only, no intervention or status penalty measured in human dataset."
+    }
+  ],
+  "count_rules": "up to 6 completed A-J cycles; invalid tests remain invalid, documentary cycles labelled planning; no completion for unexecuted simulations; R5 stop permitted",
+  "prereg_commit": "to be filled by returned GitHub SHA in RUN_MANIFEST.json"
+}
