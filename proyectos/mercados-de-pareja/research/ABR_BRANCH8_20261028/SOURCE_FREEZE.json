@@ -1,0 +1,28 @@
+{
+  "campaign": "ABR-BRANCH8-20261028",
+  "date": "2026-10-28",
+  "state": "CODE_DIGEST_FROZEN_BEFORE_SCIENTIFIC_RUNS",
+  "sha256_python": "a4c4833535975ee613c9c9459200283990ac2309abf5514dc509cdf2d2e54b22",
+  "bytes": 15292,
+  "local_path_at_freeze": "/mnt/data/ab_branch8/experiment.py",
+  "source_file_to_archive": "experiment.py.gz.b64",
+  "pre_registered": "PREREG.json (existing on branch, blob bc4f0ed3dbcf108845564eb57c4d9579c83d7016)",
+  "environment": "Python 3; numpy; local sandbox",
+  "seeds": [
+    202,
+    404,
+    606
+  ],
+  "N01_to_N05_experiments": 5,
+  "additional_N06_to_N08": "documentary/planning only",
+  "limitations": [
+    "Hash freeze alone does not constitute an uploaded source snapshot; source must later match SHA-256",
+    "No attempt yet at reproducibility on clean checkout",
+    "Not independent scientific replication"
+  ],
+  "expected_outputs": [
+    "RESULTS.csv",
+    "HAZARDS.csv",
+    "Q_TRACK.csv"
+  ]
+}
