@@ -1,24 +1,23 @@
-# CURRENT · Mercados de pareja · 28/10/2026, después de BRANCH6
+# CURRENT · Mercado de pareja · 28/10/2026, después de EVIDENCE6
 
-**Proyecto:** `AB-R`, rama `research/ab-r-mercados-pareja-20261028`, independiente de `main`, no fusionado. **Pregunta:** ¿puede emerger homogamia de valor por maximización bilateral sin preferencia directa por semejanza? Antecedentes de matching estable impiden reclamar novedad genérica; todas las correlaciones del generador son **sintéticas**.
+**Proyecto:** investigación AB-R sobre homogamia de valor emergente sin preferencia explícita por semejanza. Rama `research/ab-r-mercados-pareja-20261028`, no fusionada a main. **No hay inferencias causales humanas ni un modelo calibrado a usuarios españoles.**
 
-## Contabilidad histórica, campañas distintas
-- `MATE10`: 10/10 cerrados, 4 documentales y 6 experimentales exploratorios.
-- `BRANCH8`: 8/8 cerrados, 3 documentales y 5 experimentales; N03 inconcluso.
-- **`BRANCH6`: 6/6**, 3 ciclos `EXPERIMENTAL_AB` N09–N11 y 3 `PLANNING_AB_ONLY` N12–N14. **Un intento instrumental inválido** adicional, corregido y **no contado**. 60 corridas sintéticas válidas, 5 semillas, 12 variantes clasificadas por diseño.
-- **Saldo autorizado: 0.** N1 nuevos=0, N2=0, N3=0. CT2 en cierres 20→17→17; ordinal no probabilidad, [gráfica](research/ABR_BRANCH6_20261028/CT2_TRAJECTORY.svg).
-- [PREREG BRANCH6](research/ABR_BRANCH6_20261028/PREREG.json), [ledger A–J](research/ABR_BRANCH6_20261028/LEDGER.json), [informe](research/ABR_BRANCH6_20261028/REPORT.md), [resultados por semilla](research/ABR_BRANCH6_20261028/RUNS.csv), [resumen](research/ABR_BRANCH6_20261028/SUMMARY.json), [QA y prerregistro del intento inválido](research/ABR_BRANCH6_20261028/QA_AND_GATES.json), [fuentes oficiales/limitaciones](research/ABR_BRANCH6_20261028/SOURCES_AND_LIMITS.md).
+## Campañas cerradas
+- MATE10: **10/10** (6 experimentales sintéticos + 4 documentales).
+- BRANCH8: **8/8** (5 experimentales sintéticos + 3 documentales); N03 inconcluso.
+- BRANCH6: **6/6** (3 experimentales + 3 documentales/planning); 1 intento de código inválido, reparado y no contado.
+- EVIDENCE6: **6/6 autorizados y completados en alcance**, N15/N16/N19 documentales, N17/N18 experimentales sintéticos, N20 planning. 45 ejecuciones sintéticas (9 condiciones x 5 semillas) distintas de los 6 ciclos; 0 intentos inválidos. **Saldo 0.**
 
-## Hallazgos BRANCH6
-- **N09** mismo grafo ex ante: DA k60 r=.917, cobertura 98.2%; adaptativo r=.711 cobertura 80.5%; aceptación greedy r=.035 cobertura 98.6%. DA usa rankings completos, por lo que no hay paridad informativa pese a grafo idéntico.
-- **N10** pools balanceados y 40 exposiciones distintas programadas: 100 agentes r=.726, 300 r=.741, 1200 r=.737; coberturas 59.9%/60.3%/59.4%. Sin gradiente monotónico sólido; corrección de interpretación fuerte previa. Gate piloto superado antes de semillas adicionales, sin retuning.
-- **N11** mismo grafo planificado: simultáneo r=.633, async persistente r=.444, async caduca cinco ticks r=.396; exposiciones efectivas desiguales por salidas endógenas.
-- **N12** INE ECP oficial total 49.801.559 julio 2026, pero **no** se extrajeron celdas nacionales 20–39 por sexo ni denominador de solteros activos; tabla nacional 59583 identificada. `DATA_BLOCKED`.
-- **N13** tabla INE 60268 con cruce de estudios de hombre/mujer identificada, pero matriz no descargada: sin O/E ni tasas inventadas. `ANALYSIS_BLOCKED`.
-- **N14** estudios de rechazo y vigilancia digital verificados; **no** identifican penalización de estatus universal por swipe.
+## Resultados y límites EVIDENCE6
+- N15: INE ECP 59583 identificado; acceso directo a descarga y API bloqueado. Sin suma oficial verificada 20–39 por sexo al 1/7/2026; no usar total de residentes como personas elegibles para mercado Tinder.
+- N16: INE matrimonios 60268 identificado; matriz educativa real no descargada; **NO** calculado O/E ni control por márgenes, ni validación con parejas 2026.
+- N17: N240, k20 mismo grafo: Gale-Shapley r≈0.9085, cobertura≈96.17%, 0 pares bloqueantes; greedy r≈0.0172, cobertura≈97%; adaptive r≈0.4121, cobertura≈41.33%. Información de grafo compartida ex ante, no paridad de política temporal. No novedad fuerte ni supremacía del umbral adaptativo.
+- N18: grafo idéntico y sin salida durante fase de vistas. q fijo: sincrónico y asíncrono persistente **exactamente idénticos** en cinco semillas (r≈0.4774, cobertura≈11.5%); identidad bajo reglas fijas, no hallazgo social. TTL de 5 posiciones reduce cobertura; r inestable por pocos matches. Fatiga/percepción temporal generan diferencias internas.
+- N19: rechazo en apps mayormente no señal pública a terceros por defecto; literatura sobre autoestima, unmatching y awareness cues **no** estima δ universal de pérdida reputacional ante terceros.
+- N20: prueba confirmatoria futura formalizada, **NO EJECUTADA** por falta de datos humanos y necesidad ética.
+- Validación: código [experiment.py](research/ABR_EVIDENCE6_20261028/experiment.py) íntegro versionado, [freeze](research/ABR_EVIDENCE6_20261028/SOURCE_FREEZE.json), [per-seed RUNS](research/ABR_EVIDENCE6_20261028/RUNS.csv), [SUMMARY](research/ABR_EVIDENCE6_20261028/SUMMARY.csv), [QA](research/ABR_EVIDENCE6_20261028/QA_AND_ERRATA.json), [ledger A–J](research/ABR_EVIDENCE6_20261028/LEDGER.json), [informe](research/ABR_EVIDENCE6_20261028/REPORT.md).
+- Fuente SHA256 congelada 2028d687102c211a2bc31994a80985d643aaf48752a5da21b3bf5ae0e1072dc3. La ficha de freeze anotó tamaño equivocado 6909; tamaño real 6972, errata QA. Archivo remoto byte-equivalente verificado por FNV-32. Corrida local reproducida byte a byte, **CLEAN_CLONE_NOT_VERIFIED**, sin réplica externa.
+- CT2 por rama: **20 (MATE10 post hoc) →17 (BRANCH8)→17 (BRANCH6)→17 (EVIDENCE6)**, ordinal y no probabilidad. N1 nuevos=0, N2=0, N3=0, N1 histórico portfolio NO_AUDITED. Gráfica completa y ampliada [CT2](research/ABR_EVIDENCE6_20261028/CT2_TRAJECTORY.svg). DRIFT D0.0.
+- R5: **STOP_CAMPAIGN**, siguiente evidencia de más valor es acceso efectivo a datos y baseline ético con preferencias/actualizaciones observables. Ampliar semillas o millones de agentes no repara denominador ni reputación.
 
-## Ejecución y límites
-`PREREG` commit `58539794`; inicial source freeze `a7eeef16`; primera corrida **INVALID** (falsa detección de pares bloqueantes por indexación errónea); reparación freeze `14059774`, SHA-256 fuente válida `6f351329c3c9fdc5aad83dcb719962dc022b8b17203b94e6661ed322ffe0b632`. Reejecución local con hashes de resultados idénticos. **Archivo completo de código local en ZIP entregado en conversación; carga al repositorio GitHub de gzip/base64 bloqueada por controles de la interfaz**. No se puede afirmar clon limpio verificado, ni fuente Python íntegra versionada en GitHub. GitHub sí conserva los registros y CSV. No ha habido replicación humana ni identificación causal externa.
-
-## Estado J y propuesta futura
-`STOP_CAMPAIGN`; bloqueadores: igualación de información DA y dinámico, recuento de oportunidades realizadas, matriz educativa española completa, evidencia de mercado activo y canal reputacional real. [Próxima propuesta, no autorizada](NEXT_6_EVIDENCE_GATED.md). **No comenzar automáticamente nuevos ciclos**.
+**NO ejecutar más ciclos automáticamente.** Solicitud siguiente en informe: BRANCHING 20 condicionados a datos externos nuevos, no autorizada, y detener bajo R5 si continúa el bloqueo.
