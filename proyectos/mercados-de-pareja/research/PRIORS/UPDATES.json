@@ -4,7 +4,7 @@
   "date": "2026-10-28",
   "mode": "append-only logical, versioned by Git commits",
   "reconstructed_from_documents": "Retrospective backfill, not preregistration. Old before values NOT_RECORDED unless documented explicitly.",
-  "source_coverage": "59 source records (not independent cohorts), 29 qualitative priors, 77 append-only revisions",
+  "source_coverage": "61 documentary source records not 61 cohorts; 30 qualitative priors and 83 append-only events",
   "events": [
     {
       "id": "U001",
@@ -2000,7 +2000,168 @@
       "prior_probability_before": null,
       "prior_probability_after": null,
       "prereg_status": "Preregistered N81 click/msg source and 30 degree-only null before outcome inspection; original script included rec and was invalidated, repaired code froze in commit 9b760af378e9855cf63e6359b2602529063b314d after initial exploratory invalid outcome, so repaired result NOT an untouched holdout."
+    },
+    {
+      "id": "U078",
+      "prior_id": "P-ACTION-SEMANTICS",
+      "source_ids": [
+        "SRC060",
+        "SRC061"
+      ],
+      "cycle_ids": [
+        "N82"
+      ],
+      "before": "REJECTED_AS_UNVALIDATED_MEASUREMENT",
+      "after": "PARTIALLY_CLARIFIED_BY_SOURCE_ANALOGUE_NOT_VERIFIED_SAME_EXTRACT",
+      "direction": "PARTIAL_SOURCE_GROUNDED_DEFINITION",
+      "what_the_sources_contribute": "Su/Hu 2019 primary paper: rec means recommendation shown at homepage, click opening full profile, msg an internal letter. Its 2011 4.151m rows differ from SSJY 8.599m, exact platform/period unproven.",
+      "why_this_updates_or_checks_prior": "Provides stage labels and sharply limits interpretation but does not prove exact SSJY implementation or any explicit negative response.",
+      "limits": "SSJY data same physical cohort as N81 SRC059. Su/Hu 2019 4.151m extraction not proven same SSJY 8.599m, avoid independence claims. rec is recorded recommendation not confirmed watched; nonclick not explicit rejection; model split is disjoint actor but not temporal or external platform; stronger baseline selected post hoc after primary results. No randomized ranking intervention or stable union measurement. License to rehost original rows not verified.",
+      "falsifier_or_followup": "Author-codebook confirmation of ROUND and rec for exact SSJY extract, strong actor/target/group informed baseline and independent platform with actual impression, explicit accept/reject and duration; prereg before unviewed outcome.",
+      "evidence_type": "INDEPENDENT_REAL_GRAPH_RAW_STAGE_INSTRUMENT_CONDITIONED_PREDICTION",
+      "retrospective_backfill": false,
+      "recorded_at": "2026-10-29",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null,
+      "prereg_status": "N82 detailed predictive contract frozen fb335f6a5ac2ec6f269bc1702cd3f2b39e23e3e8; local code SHA256 precommitted 58cf00c5e2efab0c76a1f4bd84085e7ab8b22da0. Initial actor-round source rows inspected exploratorily before prereg; posthoc adversarial comparator explicitly marked."
+    },
+    {
+      "id": "U079",
+      "prior_id": "P-OPPORTUNITY",
+      "source_ids": [
+        "SRC060",
+        "SRC061"
+      ],
+      "cycle_ids": [
+        "N82"
+      ],
+      "before": "MATERIAL_MISSINGNESS",
+      "after": "RECORDED_RECOMMENDATION_RISK_SET_WITHOUT_VERIFIED_ATTENTION",
+      "direction": "MEASUREMENT_ACCESS_UPGRADE_NOT_CAUSAL",
+      "what_the_sources_contribute": "Discovered raw train.txt retains ROUND and 8,366,058 unique rec user-target-round triples discarded from the N81 relations.csv; 92.024% unique clicked triples have same-round rec.",
+      "why_this_updates_or_checks_prior": "Recorded offers give an opportunity denominator, not verified attended/viewed impressions, chance of selection is endogenous.",
+      "limits": "SSJY data same physical cohort as N81 SRC059. Su/Hu 2019 4.151m extraction not proven same SSJY 8.599m, avoid independence claims. rec is recorded recommendation not confirmed watched; nonclick not explicit rejection; model split is disjoint actor but not temporal or external platform; stronger baseline selected post hoc after primary results. No randomized ranking intervention or stable union measurement. License to rehost original rows not verified.",
+      "falsifier_or_followup": "Author-codebook confirmation of ROUND and rec for exact SSJY extract, strong actor/target/group informed baseline and independent platform with actual impression, explicit accept/reject and duration; prereg before unviewed outcome.",
+      "evidence_type": "INDEPENDENT_REAL_GRAPH_RAW_STAGE_INSTRUMENT_CONDITIONED_PREDICTION",
+      "retrospective_backfill": false,
+      "recorded_at": "2026-10-29",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 1,
+      "prior_probability_before": null,
+      "prior_probability_after": null,
+      "prereg_status": "N82 detailed predictive contract frozen fb335f6a5ac2ec6f269bc1702cd3f2b39e23e3e8; local code SHA256 precommitted 58cf00c5e2efab0c76a1f4bd84085e7ab8b22da0. Initial actor-round source rows inspected exploratorily before prereg; posthoc adversarial comparator explicitly marked."
+    },
+    {
+      "id": "U080",
+      "prior_id": "P-DYADIC_ACCESS",
+      "source_ids": [
+        "SRC061"
+      ],
+      "cycle_ids": [
+        "N82"
+      ],
+      "before": "PARTIALLY_SUPPORTED_FOR_DYADS_BUT_NOT_PROSPECTIVITY",
+      "after": "PARTIAL_ROUND_ACTION_ACCESS_NO_EXPLICIT_REJECTION_OR_UNION",
+      "direction": "PARTIAL_ELIGIBILITY_UPGRADE",
+      "what_the_sources_contribute": "Processed actual 8.599m original action rows and unique actor-target-round rec/click/msg. True actor-stage risk set for recommendation and click exists.",
+      "why_this_updates_or_checks_prior": "No explicit negative, reciprocated like or durable relationship; N81 graph result remains valid for distinct click/msg, but earlier no temporal dimension is narrowed to no shared wall clock, since per actor ROUND is available.",
+      "limits": "SSJY data same physical cohort as N81 SRC059. Su/Hu 2019 4.151m extraction not proven same SSJY 8.599m, avoid independence claims. rec is recorded recommendation not confirmed watched; nonclick not explicit rejection; model split is disjoint actor but not temporal or external platform; stronger baseline selected post hoc after primary results. No randomized ranking intervention or stable union measurement. License to rehost original rows not verified.",
+      "falsifier_or_followup": "Author-codebook confirmation of ROUND and rec for exact SSJY extract, strong actor/target/group informed baseline and independent platform with actual impression, explicit accept/reject and duration; prereg before unviewed outcome.",
+      "evidence_type": "INDEPENDENT_REAL_GRAPH_RAW_STAGE_INSTRUMENT_CONDITIONED_PREDICTION",
+      "retrospective_backfill": false,
+      "recorded_at": "2026-10-29",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null,
+      "prereg_status": "N82 detailed predictive contract frozen fb335f6a5ac2ec6f269bc1702cd3f2b39e23e3e8; local code SHA256 precommitted 58cf00c5e2efab0c76a1f4bd84085e7ab8b22da0. Initial actor-round source rows inspected exploratorily before prereg; posthoc adversarial comparator explicitly marked."
+    },
+    {
+      "id": "U081",
+      "prior_id": "P-NOVELTY",
+      "source_ids": [
+        "SRC060",
+        "SRC061"
+      ],
+      "cycle_ids": [
+        "N82"
+      ],
+      "before": "STRONG_PRIOR_ART",
+      "after": "STRONG_PRIOR_ART",
+      "direction": "NO_CHANGE_WITH_REASON_PRIOR_ART",
+      "what_the_sources_contribute": "Su/Hu 2019 modeled click/rec and msg/rec and user popularity and network centrality. N82 repeats a known model family with internal actor-out prediction.",
+      "why_this_updates_or_checks_prior": "No independent novel explanation or 2/3 finding just from predicting clicks conditioned on rec.",
+      "limits": "SSJY data same physical cohort as N81 SRC059. Su/Hu 2019 4.151m extraction not proven same SSJY 8.599m, avoid independence claims. rec is recorded recommendation not confirmed watched; nonclick not explicit rejection; model split is disjoint actor but not temporal or external platform; stronger baseline selected post hoc after primary results. No randomized ranking intervention or stable union measurement. License to rehost original rows not verified.",
+      "falsifier_or_followup": "Author-codebook confirmation of ROUND and rec for exact SSJY extract, strong actor/target/group informed baseline and independent platform with actual impression, explicit accept/reject and duration; prereg before unviewed outcome.",
+      "evidence_type": "INDEPENDENT_REAL_GRAPH_RAW_STAGE_INSTRUMENT_CONDITIONED_PREDICTION",
+      "retrospective_backfill": false,
+      "recorded_at": "2026-10-29",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null,
+      "prereg_status": "N82 detailed predictive contract frozen fb335f6a5ac2ec6f269bc1702cd3f2b39e23e3e8; local code SHA256 precommitted 58cf00c5e2efab0c76a1f4bd84085e7ab8b22da0. Initial actor-round source rows inspected exploratorily before prereg; posthoc adversarial comparator explicitly marked."
+    },
+    {
+      "id": "U082",
+      "prior_id": "P-PLATFORM-RANKING",
+      "source_ids": [
+        "SRC060",
+        "SRC061"
+      ],
+      "cycle_ids": [
+        "N82"
+      ],
+      "before": "EXTERNAL_FIELD_EVIDENCE",
+      "after": "EXTERNAL_FIELD_EVIDENCE",
+      "direction": "NO_CAUSAL_CHANGE_WITH_PREDICTIVE_EVIDENCE",
+      "what_the_sources_contribute": "Target-specific smoothed CTR improves on user-disjoint heldout: N=1,705,093 rec, 3004 actors, logloss improvement 0.007631645; stronger group rec-frequency x round posthoc alternative improves less (target CTR still +0.006738537).",
+      "why_this_updates_or_checks_prior": "These observations are selection-conditioned predictive performance within the original same platform, not intervention on ranking, and source prior status already supported externally.",
+      "limits": "SSJY data same physical cohort as N81 SRC059. Su/Hu 2019 4.151m extraction not proven same SSJY 8.599m, avoid independence claims. rec is recorded recommendation not confirmed watched; nonclick not explicit rejection; model split is disjoint actor but not temporal or external platform; stronger baseline selected post hoc after primary results. No randomized ranking intervention or stable union measurement. License to rehost original rows not verified.",
+      "falsifier_or_followup": "Author-codebook confirmation of ROUND and rec for exact SSJY extract, strong actor/target/group informed baseline and independent platform with actual impression, explicit accept/reject and duration; prereg before unviewed outcome.",
+      "evidence_type": "INDEPENDENT_REAL_GRAPH_RAW_STAGE_INSTRUMENT_CONDITIONED_PREDICTION",
+      "retrospective_backfill": false,
+      "recorded_at": "2026-10-29",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null,
+      "prereg_status": "N82 detailed predictive contract frozen fb335f6a5ac2ec6f269bc1702cd3f2b39e23e3e8; local code SHA256 precommitted 58cf00c5e2efab0c76a1f4bd84085e7ab8b22da0. Initial actor-round source rows inspected exploratorily before prereg; posthoc adversarial comparator explicitly marked."
+    },
+    {
+      "id": "U083",
+      "prior_id": "P-SSJY-OFFER-CONVERSION",
+      "source_ids": [
+        "SRC060",
+        "SRC061"
+      ],
+      "cycle_ids": [
+        "N82"
+      ],
+      "before": "NOT_RECORDED_AT_TIME",
+      "after": "OBSERVED_INTERNAL_ACTOR_HOLDOUT_PREDICTION_ONLY",
+      "direction": "NEW_QUALITATIVE_INSTRUMENT_PRIOR",
+      "what_the_sources_contribute": "Recorded recommendation risk set click rate 1.980658%, 92.024% click actions correspond same-round rec. 1.705m out-of-actor exposed offers, target click model versus global rate improves logloss 0.007632; actor bootstrap positive. Posthoc competent alternative rec-frequency + round retains 0.006739 improvement but nonconfirmatory.",
+      "why_this_updates_or_checks_prior": "Establishes internal response heterogeneity in real recommendation stage and source-verifiable instrument for future reanalyses; not a novel causal effect and explicit rejection/stable union unresolved.",
+      "limits": "SSJY data same physical cohort as N81 SRC059. Su/Hu 2019 4.151m extraction not proven same SSJY 8.599m, avoid independence claims. rec is recorded recommendation not confirmed watched; nonclick not explicit rejection; model split is disjoint actor but not temporal or external platform; stronger baseline selected post hoc after primary results. No randomized ranking intervention or stable union measurement. License to rehost original rows not verified.",
+      "falsifier_or_followup": "Author-codebook confirmation of ROUND and rec for exact SSJY extract, strong actor/target/group informed baseline and independent platform with actual impression, explicit accept/reject and duration; prereg before unviewed outcome.",
+      "evidence_type": "INDEPENDENT_REAL_GRAPH_RAW_STAGE_INSTRUMENT_CONDITIONED_PREDICTION",
+      "retrospective_backfill": false,
+      "recorded_at": "2026-10-29",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null,
+      "prereg_status": "N82 detailed predictive contract frozen fb335f6a5ac2ec6f269bc1702cd3f2b39e23e3e8; local code SHA256 precommitted 58cf00c5e2efab0c76a1f4bd84085e7ab8b22da0. Initial actor-round source rows inspected exploratorily before prereg; posthoc adversarial comparator explicitly marked."
     }
   ],
-  "last_campaign": "N81_REAL_GRAPH_REPAIRED_EMPIRICAL_AB"
+  "last_campaign": "N82_ACTOR_ROUND_CONDITIONED_AB"
 }
