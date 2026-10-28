@@ -1,0 +1,27 @@
+{
+  "campaign": "ABR-BRANCH6-20261028",
+  "state": "HASH_PRECOMMITTED_BEFORE_FIRST_EXECUTION",
+  "prereg_commit": "58539794ccdd178aa81d25572f7aa47c8d220073",
+  "sha256_python_source": "f34516e4b0514956eed5e18523b9716d65a79dc7f1a58acb12659ac98fe89322",
+  "bytes": 10821,
+  "local_source": "/mnt/data/ABR_BRANCH6_20261028/experiment.py",
+  "planned_archive": "experiment.py.gz.b64",
+  "algorithm_tests": [
+    "N09 N400 k20/k60 3 comparator models",
+    "N10 N1200 pools 100/300/1200 pilot gate",
+    "N11 N400 k40 3 synchronous/asynchronous variants"
+  ],
+  "seeds": [
+    1103,
+    2207,
+    3301,
+    4409,
+    5501
+  ],
+  "environment": "Python 3 numpy; synthetic only",
+  "limitations": [
+    "Hash commitment alone not source archive, upload original bytes after run and verify SHA",
+    "clean clone not verified"
+  ],
+  "time": "2026-10-28"
+}
