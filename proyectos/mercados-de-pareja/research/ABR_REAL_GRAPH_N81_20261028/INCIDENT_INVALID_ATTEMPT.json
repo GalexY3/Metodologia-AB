@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-28",
+  "status": "INVALID_INSTRUMENTAL_ATTEMPT_BEFORE_N81_REPAIR",
+  "AB_cycle_increment": 0,
+  "invalid_AB_cycle_increment": 0,
+  "reason": "First frozen analysis script mistakenly included action type 'rec' while prereg explicitly described click/msg-only actor→target actions. Dataset action counts were not known before reading outcomes. The unfiltered 30-replicate result must NOT be used for primary N81, and cannot confirm mutual desire or reciprocal acceptance.",
+  "first_prereg_commit": "9ce043bfe1a0b9737e664bb3c4d17e765b5dc96c",
+  "first_script_commit": "c64a030c840d644ef377dc8a3e327fb41ff10f5b",
+  "first_script_git_blob_sha": "d8d0dc3c7aa97dc75b091dbadd9520091121f0ef",
+  "actual_original_archive_sha256": "23cff03451b13f94354d875e777f60e1c63224829f42b8adf9d73d7563812e24",
+  "observed_action_counts_from_invalid_instrument": {
+    "rec": 8366058,
+    "click": 184291,
+    "msg": 48663
+  },
+  "initial_trial_outcome_archive_sha256": "97ae6dd50517eee97e6c7653c194da459cdcfe687563bb7d17747e2720620a90",
+  "invalid_original_result_summary": {
+    "unique_directed_arc_reciprocity": 0.015704294789147623,
+    "mean_null": 0.005741109560947837
+  },
+  "must_not_use_as_scientific_result": true,
+  "analysis_repair": "Filter precisely actions click and msg, excluding rec before graph creation and 30 null permutations. Keep original input zip, primary stat, 30 PCG64 permutations and seed. Source code repair commit 9b760af378e9855cf63e6359b2602529063b314d. Repeat full analysis to completion, store only valid aggregates.",
+  "selection": "Repair identified after seeing original invalid outcome. Revised valid analysis is post-error repair and therefore cannot be treated as independent untouched confirmation; explicitly log this bias.",
+  "data_privacy": "No user IDs or profile fields persisted to research repo.",
+  "limitations": "Action semantics click/msg are still not explicit acceptance; rec may mean recommendation but unverified; lack of risk set remains."
+}
