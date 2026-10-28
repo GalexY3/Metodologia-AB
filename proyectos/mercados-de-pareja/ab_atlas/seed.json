@@ -4,7 +4,7 @@
   "title": "Mercados de pareja · AB-R",
   "mode": "research",
   "created_at": "2026-10-28T18:00:00+01:00",
-  "updated_at": "2026-10-28T23:00:00+01:00",
+  "updated_at": "2026-10-28T23:15:00+01:00",
   "nodes": [
     {
       "id": "root",
@@ -1420,6 +1420,48 @@
         "verified_by": "",
         "verified": false
       }
+    },
+    {
+      "id": "N56",
+      "title": "Tercera fuente OSF checa: datos no procesados",
+      "status": "blocked",
+      "detail": "Topinkova/Diviak PLOS 2025 10.528 usuarios checos, fuente OSF 6zcrs anunciada, archivos no descargados; exposiciones de perfiles vistos no observadas; priors P-DYADIC_ACCESS P-OPPORTUNITY P-EXANTE_POP.",
+      "sources": [
+        "research/ABR_THIRD_SOURCE_20261028/SOURCE_AND_NOVELTY_AUDIT.md",
+        "research/PRIORS/UPDATES.json"
+      ],
+      "kind": "blocker",
+      "mode": "research",
+      "created_at": "2026-10-28T23:15:00+01:00",
+      "updated_at": "2026-10-28T23:15:00+01:00",
+      "phase": null,
+      "acceptance": {
+        "criteria": "",
+        "evidence": [],
+        "verified_by": "",
+        "verified": false
+      }
+    },
+    {
+      "id": "N57",
+      "title": "Novedad general descartada por antecedente de 2025",
+      "status": "answered",
+      "detail": "Homogamia de deseabilidad entre contactos recíprocos tras intentos aspiracionales ya está publicada. Diferente de pérdida pública estatus; CT2 13→7. Priors P-NOVELTY P-RECIPROCITY P-PUBLIC_REPUTATION.",
+      "sources": [
+        "research/ABR_THIRD_SOURCE_20261028/LEDGER.json",
+        "research/PRIORS/PRIORS.json"
+      ],
+      "kind": "question",
+      "mode": "research",
+      "created_at": "2026-10-28T23:15:00+01:00",
+      "updated_at": "2026-10-28T23:15:00+01:00",
+      "phase": null,
+      "acceptance": {
+        "criteria": "",
+        "evidence": [],
+        "verified_by": "",
+        "verified": false
+      }
     }
   ],
   "edges": [
@@ -1824,6 +1866,18 @@
       "from": "goal",
       "to": "N55",
       "relation": "branches_from"
+    },
+    {
+      "id": "e_goal_N56",
+      "from": "goal",
+      "to": "N56",
+      "relation": "branches_from"
+    },
+    {
+      "id": "e_goal_N57",
+      "from": "goal",
+      "to": "N57",
+      "relation": "branches_from"
     }
   ],
   "events": [],
@@ -1837,8 +1891,8 @@
     "snapshot": "2026-10-28",
     "verified_live": false,
     "progress_semantics": "Sin índice de madurez, solo evidencia limitada",
-    "last_campaign": "ABR-TWO-WAY20-20261028",
-    "scientific_status": "R5_STOP_NEW_PROSPECTIVE_DATA_REQUIRED",
+    "last_campaign": "ABR-THIRD-SOURCE-20261028",
+    "scientific_status": "R5_STOP_DIRECT_PRIOR_ART_COLLISION_NO_PROSPECTIVE_DATA",
     "current_statement": "30 total cycles across three earlier campaigns and EVIDENCE6: 10+8+6+6, no 2/3, R5 STOP",
     "reviewer": "Not validated on clean clone",
     "summary": "6 valid cycles, 1 invalid instrument attempt repaired, N12 and N13 data blocked, N1=0, N2/N3=0",
@@ -1846,14 +1900,17 @@
     "authorized": 20,
     "executed": 7,
     "remaining": 13,
-    "authorized_remaining": 11,
+    "authorized_remaining": 9,
     "real_dyadic_dataset": "Mixmosa 1895 in-person dates",
-    "authorized_used": 9,
-    "CT2": 13,
+    "authorized_used": 11,
+    "CT2": 7,
     "N1_local_1_3": 1,
     "N2": 0,
     "N3": 0,
-    "new_N1": 0
+    "new_N1": 0,
+    "prior_register": "research/PRIORS/PRIORS.json",
+    "sources_register": "research/PRIORS/SOURCES.json",
+    "prior_updates": "research/PRIORS/UPDATES.json"
   },
   "project_contract": {
     "scope_version": "MATE-ABR-20261028-v1",
