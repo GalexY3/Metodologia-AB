@@ -1,0 +1,27 @@
+{
+  "campaign": "ABR-INTEGRAL9-20261028",
+  "id": "N61_EQUIVALENCE_POSTHOC",
+  "status": "FROZEN_BEFORE_THIS_SENSITIVITY_RUN",
+  "methodological_role": "Exhibit observational equivalence as mathematical illustration, not confirmatory science. Target chosen after reading main conditions, hence adaptive.",
+  "target_exposure_samegroup": 0.5,
+  "reference_prior_condition": "explicit_homophily from previously run frozen main simulator",
+  "new_condition": "samegroup exposure induced by degree-preserving rewires, no individual homophily",
+  "seed_values": [
+    121,
+    313,
+    577,
+    787,
+    1009,
+    1291
+  ],
+  "source_sha256": "e9d75c80dcfe42f7378b1f75d72b3caad46a375860f256493c9719f0b59865e2",
+  "source": "observational_equivalence.py in local ZIP",
+  "prereg_original": "PREREG.json already preregistered mechanism but NOT exact post-hoc target, this new declaration before sensitivity",
+  "success_gates": [
+    "~50% samegroup in exposures by swaps with 12 exposures on both sides",
+    "pairing maximum-cardinality, same target yes/no logic",
+    "record all six seeds and per-seed differences",
+    "no claim of independent validation"
+  ],
+  "future_work": "Compare with a genuinely held-out opportunity graph to distinguish mechanisms"
+}
