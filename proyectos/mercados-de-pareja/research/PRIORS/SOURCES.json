@@ -3,7 +3,7 @@
   "project": "mercados-de-pareja",
   "date": "2026-10-28",
   "scope": "Retrospective provenance backfill from repository reports plus N56/N57 publisher audit. Original data never copied; not systematic or claim of accessing raw data for bibliography.",
-  "source_count": 53,
+  "source_count": 55,
   "sources": [
     {
       "id": "SRC001",
@@ -1051,7 +1051,49 @@
       "independent_source_cohort": "HITSCH2010_SAME_STUDY_AS_SRC002",
       "audit": "research/ABR_NO_NEW_CYCLE_ACCESS_REVIEW_20261028/REPORT.md",
       "not_a_cycle": "posthoc source maintenance, no new AB cycle"
+    },
+    {
+      "id": "SRC054",
+      "title": "Rios, Saban and Zheng (2022 online/2023 volume), Improving Match Rates in Dating Markets Through Assortment Optimization",
+      "canonical_url": "https://doi.org/10.1287/msom.2022.1107",
+      "original_full_text": "https://spiral.imperial.ac.uk/server/api/core/bitstreams/2e71c36d-4b6f-4626-a286-ffcab6948057/content",
+      "publication": "Manufacturing & Service Operations Management 25(4), 1304-1323; published online 2022-04-07; volume 2023",
+      "cycle_ids": [
+        "N79"
+      ],
+      "source_type": "PEER_REVIEWED_PRIMARY_ORIGINAL_FIELD_PAPER",
+      "method_and_section": "Sections 2.1-2.2 (platform/exposure), 4.1.2 (quasi-experiment May 2019), 7.1-7.3 (2020 market experiments), Tables 2-3 and Appendix D",
+      "contribution": "Platform private dataset observes 3-9 profiles offered per daily assortment, individual like/no-like on shown profiles, preferences/attributes, actual matches, session timing, backlogs and activity; 2019 change allowing inactive backlogs used as quasi-exogenous variation in matches to assess impact on subsequent likes. Two 2020 market-level algorithm changes, Houston Aug19-25 vs Austin/Dallas control, Austin Sep9-15 vs Houston/Dallas control; DID report +27.13% and +37.95% expected matches vs default partner algorithm; published paper's own estimates, not ours. Paper reports at least 3% reduction in subsequent like probability per extra recent match under authors' quasi-experiment and design assumptions.",
+      "observed_values_source": "Original paper PDF extracted text, page indices P6/P7/P14/P27-P31/P53-P54; original visual screenshot of P0 succeeded, later individual table screenshots returned cache miss, so values in Tables 2/20 come from PDF extracted text not a visually verified table image.",
+      "strongest_control": "Original platform default algorithm, within-market before/after with DID across 3 cities and pre-trend/placebo/leave-one-control tests in appendix; not identical populations or independent raw-data replication.",
+      "independent_cohort_note": "One proprietary US dating-app platform; secondary Rios/Torrico paper SRC055 may reuse same industry partner/cohort and is not independent replication.",
+      "access": "PAPER_PRIMARY_TEXT_READ_AND_ORIGINAL_PDF_COVER_VISUAL; PROPRIETARY_PARTICIPANT_DATA_NOT_ACCESSIBLE",
+      "data_reuse_rights": "Proprietary app NDA; license for individual logs NOT verified; no right to download or rehost assumed",
+      "text_reuse_rights": "Published research article accessible via institutional repository; full reproduction not authorized by citation alone",
+      "limits": "Treatment market assignment one city of three; DID depends on parallel trends/no meaningful market interference; little effective independent clustering; match means in-app reciprocal like, not contact exchange or couple longevity; exclusion of inactive profiles as IV may have exclusion/selections; estimates for short US market periods do not calibrate Spanish/Tinder/nonbinary populations, survival or public rejection reputation; no raw data/code verified.",
+      "falsifier": "Independent logs where user-time dyadic exposure, both decisions and prior successful matches are observed with valid cluster-assigned intervention and independent holdout; fit competent two-sided dynamic assortment baseline and evaluate incremental ESBM prediction.",
+      "verified_at": "2026-10-28",
+      "raw_microdata_read": false
+    },
+    {
+      "id": "SRC055",
+      "title": "Rios and Torrico (2023 arXiv / revised), Platform Design in Curated Dating Markets",
+      "canonical_url": "https://arxiv.org/abs/2308.02584",
+      "cycle_ids": [
+        "N79"
+      ],
+      "source_type": "ORIGINAL_THEORETICAL_AND_PRIVATE_DATA_FITTED_SIMULATION",
+      "method_and_section": "arXiv abstract and original arXiv HTML Sections 1, 1.1, 5.1; compares one/two-directional and sequential/non-sequential profile exposure",
+      "contribution": "Independent published research question: algorithms exploiting dynamic two-sided assortment, both likes, timing/backlog, and one vs two initiating sides; theoretical approximation guarantees (not ESBM-generated), empirical simulations calibrated from private 2020 Houston platform logs of profiles displayed, evaluation decisions and timestamps; DH guarantees under its model and assumptions; no direct standalone field intervention demonstrated in this paper.",
+      "independent_cohort_note": "Overlapping authors and industry-partner type with SRC054; data provenance potentially same/similar. NEVER count as independent replication without verifying disjoint cohorts.",
+      "access": "ARXIV_ORIGINAL_HTML_TEXT_READ; PDF MIRROR_FULL_FAILED; NO_PRIVATE_MICRODATA",
+      "data_reuse_rights": "Data under industry partner NDA, permissions unknown",
+      "text_reuse_rights": "arXiv manuscript; no large-scale quotation or external rehosting",
+      "limits": "Main improvement comparisons are simulated on calibrated proprietary data; mathematical approximation guarantees apply to stated stylized model/objective, not measured duration, wellbeing or empirical treatment effect; two-period assumptions and varying matching definitions; not external validation of ESBM.",
+      "falsifier": "Run independent open logs with identically defined opportunity and like history; compare algorithms under identical information and non-synthetic outcomes.",
+      "verified_at": "2026-10-28",
+      "raw_microdata_read": false
     }
   ],
-  "last_added_campaign": "POSTHOC_ACCESS_REVIEW_NOT_AB_CYCLE_20261028"
+  "last_added_campaign": "N79"
 }
