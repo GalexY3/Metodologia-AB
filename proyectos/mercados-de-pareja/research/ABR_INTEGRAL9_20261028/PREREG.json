@@ -1,0 +1,178 @@
+{
+  "schema": "ab.research.campaign.v1",
+  "campaign": "ABR-INTEGRAL9-20261028",
+  "date": "2026-10-28",
+  "branch": "research/ab-r-mercados-pareja-20261028",
+  "authorized_carried_over": 9,
+  "prior_cycles_completed": "11/20 N47-N57",
+  "goal": "Construir explicación socioecológica multidimensional falsable y simulador como argumento de posibilidad, NO como demostración empírica de comportamiento humano ni originalidad",
+  "hypotheses": [
+    "H0 null: sin preferencias por calidad ni semejanza y oportunidades equilibradas, el sorting no es sistemático",
+    "H1 common desirability con thresholds crecientes de calidad puede generar sorting de calidad sin homofilia explícita",
+    "H2 exposición segregada genera homogamia de grupo aunque preferencias no contengan semejanza",
+    "H3 preferencias explícitas por semejanza pueden explicar el mismo patrón con mecanismo distinto",
+    "H4 ranking platform centrado en popularidad redistribuye exposición y concentración aun con igual presupuesto de visualizaciones por emisor",
+    "H5 filtros de reciprocidad y matching alteran selección/coverage de forma no intercambiable",
+    "H6 efectos de feedback privado de rechazo frente a reputación pública son intervenciones distintas y no observadas en humanos",
+    "H7 dimension cultural, normativa, institucional, edad, generacional, orientación, terceros, valores ideales y continuidad de relación requieren instrumentos adicionales; no generalizar el simulador heterosexual"
+  ],
+  "cells": [
+    {
+      "name": "null",
+      "exposure": "regular_random",
+      "quality_weight": 0,
+      "homophily_weight": 0,
+      "reservation_gradient": 0
+    },
+    {
+      "name": "common_quality",
+      "exposure": "regular_random",
+      "quality_weight": 1,
+      "homophily_weight": 0,
+      "reservation_gradient": 0
+    },
+    {
+      "name": "common_with_reservation",
+      "exposure": "regular_random",
+      "quality_weight": 1,
+      "homophily_weight": 0,
+      "reservation_gradient": 1.8
+    },
+    {
+      "name": "explicit_homophily",
+      "exposure": "regular_random",
+      "quality_weight": 1,
+      "homophily_weight": 1.1,
+      "reservation_gradient": 0
+    },
+    {
+      "name": "joint_preferences",
+      "exposure": "regular_random",
+      "quality_weight": 1,
+      "homophily_weight": 1.1,
+      "reservation_gradient": 1.8
+    },
+    {
+      "name": "segregated_opportunities",
+      "exposure": "same_group_regular",
+      "quality_weight": 1,
+      "homophily_weight": 0,
+      "reservation_gradient": 0
+    },
+    {
+      "name": "popularity_skewed_recommender",
+      "exposure": "popularity_imbalanced",
+      "quality_weight": 1,
+      "homophily_weight": 0,
+      "reservation_gradient": 0
+    }
+  ],
+  "fixed_params": {
+    "n_left": 160,
+    "n_right": 160,
+    "sex_groups": "M/F abstract binary only, deliberately not a universal representation of relationships",
+    "k_exposures_per_left": 12,
+    "k_per_right": "12 in regular modes, NOT equal in popularity skew",
+    "seeds": [
+      121,
+      313,
+      577,
+      787,
+      1009,
+      1291
+    ],
+    "field_categories": 4,
+    "age_range": "18-45 synthetic",
+    "quality_distribution": "Uniform(0,1) independent of field and age",
+    "mutual_choice_noise": "pre-generated pair-specific uniforms to share random potential outcomes across scenarios",
+    "decision_utility": "logit intercept -0.35 + 2*quality_weight*(q_target-.5) + homophily_weight*field_same -0.7*reservation_gradient*(q_actor-.5), when both see each other; negative control constant",
+    "durability": "optional stage with probability depending on age gap and field; NOT trained on human data",
+    "matching": "Maximum cardinality bipartite matching on reciprocal candidates using scipy.sparse.csgraph.maximum_bipartite_matching; no unique stable matching claim",
+    "exposure_regular": "12 independent perfect-matchings with groupwise randomized switches avoiding duplicate edges",
+    "exposure_group": "degree-preserving 2x2 switches favor same field; diagnostic edge changes and bipartite degrees",
+    "popularity_exposure": "each LEFT chooser gets 12 candidate impressions weighted by target q, RIGHT receives unequal number; asymmetry explicitly audited"
+  },
+  "methodology": {
+    "preregister_before_run": true,
+    "freeze_source_before_run": true,
+    "compare_paired_seeds": true,
+    "metrics": [
+      "quality_pearson_by_stage (exposure, mutual, matched)",
+      "same_group_share_minus_exposure_baseline",
+      "coverage_both_populations",
+      "total_mutual_candidate_pairs",
+      "proposals_by_status_decile",
+      "exposure_gini_of_right_candidates",
+      "matcher_cardinality",
+      "conditional_survival if simulated"
+    ],
+    "adversarial": [
+      "null model",
+      "equal exposure regular graph",
+      "same-group exposure with zero same-group preference",
+      "same-group preference on random graph",
+      "common quality with and without quality-correlated acceptance threshold",
+      "vary k with same agents and compare opportunity budget explicitly",
+      "report negatives and Monte Carlo uncertainty n=6 not population inference"
+    ],
+    "min_seeds": 6,
+    "pass_condition": "all 7 named conditions run 6 seeds, invariants verified: max degree/per side, dyads no duplicates, match subset mutual, match monogamous, coverage consistent",
+    "no_auto_upgrade": "zero human validation, level 0/3 or at most local 1/3 methodological if genuinely nontrivial and unreported, never 2/3",
+    "R5": "If toy model reproduces known prior art only, stop after enough diagnostic contrasts instead of spending remaining slots on more synthetic tuning."
+  },
+  "cycle_contract": [
+    {
+      "id": "N58",
+      "type": "DOCUMENTARY_AND_PRIORS_AB",
+      "goal": "Theoretical and bibliographic atlas across preferences, third parties, opportunity, technology, sex/sexual orientation, cultural values, temporal search, socioeconomic strata; source registry updates mandatory."
+    },
+    {
+      "id": "N59",
+      "type": "FORMAL_MODEL_AB",
+      "goal": "Structural causal DAG/SCM, mathematical stage selection decomposition, identifiable vs unidentifiable causal claims, fidelity audit and model capability matrix."
+    },
+    {
+      "id": "N60",
+      "type": "SIMULATION_NULL_AB",
+      "goal": "Implement and run frozen null control, check zero artificial sorting under balanced random opportunity."
+    },
+    {
+      "id": "N61",
+      "type": "SIMULATION_OPPORTUNITY_AB",
+      "goal": "Show assortativity through same-group opportunities without explicit homophily, fixed degrees, two-sided opportunity graph."
+    },
+    {
+      "id": "N62",
+      "type": "SIMULATION_PREFERENCE_AB",
+      "goal": "Compare common quality, status-dependent reservations, explicit same-group preference and mixed version, pair seeds."
+    },
+    {
+      "id": "N63",
+      "type": "SIMULATION_PLATFORM_AB",
+      "goal": "Popularity-weighted candidate display, unequal right visibility despite constant left budget; inequality and coverage."
+    },
+    {
+      "id": "N64",
+      "type": "SIMULATION_STAGES_AB",
+      "goal": "Distinguish exposure, reciprocal yes, match and optional durability with denominators; joint outcome selection and no causal claims."
+    },
+    {
+      "id": "N65",
+      "type": "ROBUSTNESS_OR_PLAN_AB",
+      "goal": "Vary opportunity budget (k=6 or24), subgroup composition, asymmetric sex ratio and model scope; only count cases actually executed."
+    },
+    {
+      "id": "N66",
+      "type": "ADVERSARIAL_SYNTHESIS_AB",
+      "goal": "Competent alternative mechanisms, compare data source constraints, revise priors, model limitations, final R5 and CT2."
+    }
+  ],
+  "prior_grades": {
+    "prior_CT2": 7,
+    "prior_novelty": "Strong prior art for generic assortativity without homophily, especially Topinkova-Diviak 2025, Kalmijn 1998, Chen 2023",
+    "r5": "9 available, no automatic filling"
+  },
+  "external_data": "No new human sample at this prereg stage",
+  "privacy": "No patient/real person rows, only synthetic outputs",
+  "status": "PRE-EXECUTION_PREREG"
+}
