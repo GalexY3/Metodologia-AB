@@ -3,7 +3,7 @@
   "project": "mercados-de-pareja",
   "date": "2026-10-28",
   "scope": "Retrospective provenance backfill from repository reports plus N56/N57 publisher audit. Original data never copied; not systematic or claim of accessing raw data for bibliography.",
-  "source_count": 47,
+  "source_count": 50,
   "sources": [
     {
       "id": "SRC001",
@@ -944,16 +944,63 @@
       "cycle_ids": [
         "N67"
       ],
-      "contribution": "AEA/RePEc identifies replication package for new 2026 Tinder paper; possible external data and code to inspect with appropriate download and rights checks.",
-      "limits": "Link from RePEc verified, but web resolver inaccessible; direct aeaweb materials ZIP download failed, no files, code, microdata, license or columns inspected; NOT an independent replication.",
-      "evidence_access": "REPLICATION_METADATA_ONLY__FILE_NOT_DOWNLOADED",
+      "contribution": "AEA/RePEc identifies replication package for new 2026 Tinder paper; possible external data and code to inspect with appropriate download and rights checks.; 28/10/2026 official repository V1 exposed four directory names plus 256.1KB README.pdf, with >1.1M student survey responses 2008–19 and individual/college-level DID analysis. Read archive landing metadata only.",
+      "limits": "Link from RePEc verified, but web resolver inaccessible; direct aeaweb materials ZIP download failed, no files, code, microdata, license or columns inspected; NOT an independent replication.; inner files, README bytes and dataset-specific LICENSE still unavailable due web cache and container DNS. No candidate-level impressions/reciprocal decisions documented. ICPSR in 2026 migrating openICPSR; DOI still expected to redirect but unsuccessful here.",
+      "evidence_access": "OFFICIAL_ARCHIVE_TOP_LEVEL_METADATA_INSPECTED__CODE_DATA_EXHIBITS_TEMP_README__INNER_FILES_UNREAD",
       "verified_at": "2026-10-28",
       "article_reuse_rights": "NOT_ASSESSED",
       "data_reuse_rights": "NOT_VERIFIED",
       "raw_data_processed": false,
       "backfill": false,
-      "precise_note": "Source discovery before present synthetic computation; results have not been used as training data for this model"
+      "precise_note": "Source discovery before present synthetic computation; results have not been used as training data for this model",
+      "previous_evidence_access": "REPLICATION_METADATA_ONLY__FILE_NOT_DOWNLOADED",
+      "last_verified_at": "2026-10-28",
+      "audit": "research/ABR_EXTERNAL_GATE_20261028/ACCESS_AND_SCOPE_AUDIT.md"
+    },
+    {
+      "id": "SRC048",
+      "title": "Rosenfeld, Thomas, Hausen (2023) HCMST 2017/2020/2022 combined public dataset, Stanford Libraries",
+      "canonical_url": "https://data.stanford.edu/hcmst2017",
+      "cycle_ids": [
+        "N77"
+      ],
+      "contribution": "Independent longitudinal cohort 3510 participants baseline 2017, 2107 follow-up 2020, 1722 follow-up 2022; online dating channel, partner/couple formation context and relationship outcomes. Includes LGB oversample and weights. Core potential external data for relationship persistence rather than dyadic swipe choice.",
+      "limits": "Not a profile-exposure log and no prospective popularity, declined candidates or bilateral directed decisions; official Stata/SPSS/RData/codebook announced but bytes not downloaded. Longitudinal attrition and baseline partner selection; Stanford data-use terms impose nonidentification, noncommercial redistribution, author notification and citation.",
+      "evidence_access": "PRIMARY_STANFORD_PUBLIC_CATALOG_AND_DATA_USE_AGREEMENT_READ__MICRODATA_NOT_DOWNLOADED",
+      "verified_at": "2026-10-28",
+      "data_reuse_rights": "STANFORD_PUBLISHED_CONDITIONS_READ_NOT_YET_EXERCISED",
+      "raw_data_processed": false,
+      "independent_source_cohort": "HCMST2017_NOT_HCMST2009"
+    },
+    {
+      "id": "SRC049",
+      "title": "ICPSR 38873.v1 (2024), HCMST 2017/2020/2022 archival catalog and study methodology",
+      "canonical_url": "https://doi.org/10.3886/ICPSR38873.v1",
+      "cycle_ids": [
+        "N77"
+      ],
+      "contribution": "Confirms survey unit individual, original release 2024-02-07, same Stanford 3510/2107/1722 sample, LGB oversampling, analytic and attrition weights, timing and relationship questions; verifies it is panel data, not independent third sample.",
+      "limits": "Same underlying cohort as SRC048, so NOT independent evidence. Institutional ICPSR member access terms may differ from Stanford public download. File/coded variables not inspected in this execution.",
+      "evidence_access": "PRIMARY_ICPSR_ARCHIVE_METADATA_READ__SAME_DATASET_AS_SRC048",
+      "verified_at": "2026-10-28",
+      "data_reuse_rights": "ICPSR_MEMBER_CONDITIONS_DESCRIBED__NO_DATA_ACCESS",
+      "raw_data_processed": false,
+      "independent_source_cohort": "HCMST2017_SAME_AS_SRC048"
+    },
+    {
+      "id": "SRC050",
+      "title": "ICPSR 2026, openICPSR transition FAQ and maintained DOI routing",
+      "canonical_url": "https://www.icpsr.umich.edu/sites/icpsr/posts/shared/openicpsr-in-transition",
+      "cycle_ids": [
+        "N76"
+      ],
+      "contribution": "Official announcement that repository interfaces and deposits are being migrated and DOI persistent redirects preserved, clarifying that old openICPSR links may not be canonical entrypoints.",
+      "limits": "Does not prove any particular E218862 URL failed because of migration, nor prove restricted vs public-use access to its files; requires direct license check.",
+      "evidence_access": "OFFICIAL_PLATFORM_HELP_DOCUMENT_READ",
+      "verified_at": "2026-10-28",
+      "data_reuse_rights": "NO_DATA_IN_SOURCE",
+      "raw_data_processed": false
     }
   ],
-  "last_added_campaign": "ABR-ESBM20-20261028"
+  "last_added_campaign": "ABR-EXTERNAL-GATE-20261028"
 }
