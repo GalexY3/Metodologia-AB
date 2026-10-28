@@ -21,3 +21,6 @@
 
 ## Próximo bloqueo R5
 Paridad de oportunidad con modelo estable; red/horario de exposición; medición social de reputación; baseline español actual con elegibilidad y matriz educativa ajustada; fuente humana ética. [Propuesta siguiente, NO AUTORIZADA: 6 ciclos BRANCHING](NEXT_6_PROPOSAL.md). No iniciar sin confirmación humana.
+
+## Errata adversarial sobre instrumento secundario (28/10)
+Además de la campaña principal de 8 ciclos, la implementación auxiliar congelada con SHA `a4c48335...` tuvo **un intento N05 inválido** porque repetía díadas después de un rechazo. Se preservaron resultados inválidos, prereg de reparación y resultado corregido. Este intento auxiliar inválido **no consume una nueva plaza ni genera un noveno ciclo**. [Informe adversarial](research/ABR_BRANCH8_20261028/AUDITORIA_SECUNDARIA_A4C4.md). La contabilidad de 0 inválidos en el párrafo anterior se refiere exclusivamente a la implementación principal `39c693a8...`; contabilidad total de intentos auxiliares incluye 1 INVALID reparado. No deben agregarse outputs de ambas implementaciones.
