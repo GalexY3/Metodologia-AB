@@ -1,0 +1,107 @@
+{
+  "schema": "ab.research.prereg.v1",
+  "cycle": "N82",
+  "date": "2026-10-29",
+  "mode": "EMPIRICAL_AB_ORIGINAL_SOURCE_STAGE_MEASUREMENT",
+  "status": "FROZEN_BEFORE_NUMERICAL_STAGE_SUMMARIES_AND_HOLDOUT_CALCULATIONS",
+  "authorization_total": 20,
+  "valid_before": 15,
+  "remaining_before": 5,
+  "branch": "research/ab-r-mercados-pareja-20261028",
+  "selection_disclosure": "N81 has already read full action counts, unique click/msg arcs, N81 full graph 30 null permutations; N82 exposure of raw train.txt header and several sampled rows occurred during exploratory instrument discovery before freezing. 2019 Su/Hu original article consulted before freezing, provides semantics of rec/click/msg in similarly described Chinese dataset. Thus N82 is NOT an untouched source discovery or label-blind data access; prospective instrument audit and chosen statistical contract only. N81 rec graph was excluded before; N82 uses genuinely richer original candidate-round offers.",
+  "original_source": {
+    "repo": "https://github.com/RManLuo/MotifGNN",
+    "archive": "https://drive.google.com/file/d/1u-59m0u5-pcF4TCN6zjGLICWFdQteCUG/view",
+    "sha256": "23cff03451b13f94354d875e777f60e1c63224829f42b8adf9d73d7563812e24",
+    "zip_size": 87463480,
+    "raw_member": "sjjy_data/train.txt",
+    "columns": [
+      "USER_ID_A",
+      "USER_ID_B",
+      "ROUND",
+      "ACTION"
+    ],
+    "action_types_known": [
+      "rec",
+      "click",
+      "msg"
+    ],
+    "original_code": "sjjy_data/generate_graph.py strips ROUND and exports relations.csv",
+    "prior_reference": "Su & Hu 2019, https://doi.org/10.1140/epjds/s13688-019-0192-x, same variable labels on similarly described Chinese dating service; EXACT dataset overlap UNPROVEN because paper 4.151m vs SSJY 8.599m events."
+  },
+  "A": {
+    "question": "Do recommended-candidate opportunities actually support observed click and message actions within the same actor-target-round, and, conditional on the recorded offered slate, is post-recommendation clicking more concentrated among target users with a higher previous click-through score measured on disjoint actor training data?",
+    "population": "Author-shared SSJY Chinese heterosexual dating-site platform historical trace, unverified representativeness and exact year; recorded rec events, not all possible eligible pairs nor physical actual viewing confirmation.",
+    "unit": "Unique (actor,target,ROUND) recommended pair. A recorded rec indicates platform generated/presented candidate under original related article, NOT known rendered impression or attended/viewed profile.",
+    "primary_estimand": "Out-of-actor-sample log loss of click occurrence on a unique rec triple; compare source-informed target historical click-through baseline to a common within-round baseline. Prognostic prediction, NOT causal effect of recommendation.",
+    "primary_metrics": [
+      "Covered fraction of click/msg action triples having matching rec triple in same actor/target/round",
+      "Out-of-actor-heldout logloss improvement over common per-round historical rate",
+      "Within-slate target popularity ranking AUC conditional on slate having both clicked and nonclicked candidates; if feasible"
+    ],
+    "harm": "Never print or upload any raw source IDs, profiles, demographics, videos or rows."
+  },
+  "B": {
+    "H1": "Historical target-specific click-through propensity, estimated only from other actors' training slates, improves out-of-user click prediction conditioned on offered candidate, beyond global click rate and actor-round opportunity set size.",
+    "H0": "Historical target-specific response rates do not improve out-of-actor logloss; exposure composition alone plus slate-level click incidence is enough for predictions.",
+    "H_alt": "Algorithm ranks candidates nonrandomly on latent desirability, cross-actor homophily/attributes, missing sessions and feedback; any predictive gain is not unique to ESBM nor identified cause. No explicit no or relationship outcome."
+  },
+  "C": {
+    "split": "Assign actors to train/heldout via sha256 stable 80/20 hash of int actor id and fixed SALT; disjoint IDs, NEVER tune to heldout. Report actor counts/events, not individual IDs.",
+    "unit_construction": "Deduplicate all rec for actor,target,ROUND; label=1 if at least one click in same triple. Also mark message same triple; don't count other round as same. Events without same-round rec audited separately and cannot be imputed as refusals. Only rec triples form risk set. ROUND is actor-specific ordinal session/round, not calendar time; no causal or sequential between actors.",
+    "features": "Train-only target stats: unique rec triples and unique rec triples with click; empirical Bayes Laplace smoothed target CTR (click_count+alpha*p_train)/(rec_count+alpha), alpha=20 fixed. All target counts computed from train actors only. Target unseen default train global CTR; avoid target actor leakage. Simple baseline global CTR from train (constant). Secondary slate-aware model can stratify round-size bins, but must not use test labels for predictions.",
+    "comparison": "Primary heldout per-triple logloss of target CTR vs global CTR (equal sample), also Brier, difference and cluster uncertainty. This conditions on actually recorded rec offers and holds out actors; source's own popularity/CTR benchmark is stronger prior art, this is not claim of novelty.",
+    "repeated": "Risk-set counts by distinct dyad-round; report repeat recommended same actor-target over rounds and click incidence first versus later descriptively only (conditional on selected repeated dyads, no causal inference).",
+    "uncertainty": "Cluster bootstrap heldout actors B=100 seed=20261029 for difference in per-offer logloss; as all rows of one actor move together, no independence claim for repeated rec rows; report percentile 2.5–97.5% CI. Null consistent no benefit if interval spans zero. Efficiency: preaggregate user-level logloss sums and resample actor groups, no huge raw bootstrap.",
+    "QA": [
+      "Check raw counts rec/click/msg against N81 source action counts",
+      "Check percentage action matching rec same triple vs ever rec different round",
+      "Dedup actor,target,ROUND",
+      "Round nonnegative integer and max/number sessions",
+      "No future target information from heldout user, no leakage",
+      "Dataset source hash",
+      "No exploratory hyperparameter selection on heldout",
+      "No pickle or embedded database code executed"
+    ],
+    "multiplicity": "Only logloss improvement against global train rate is primary; Brier and repeat effects descriptive secondary; no multiple testing claims beyond primary."
+  },
+  "D": {
+    "instrument": "Independent Python code will be committed to same branch and sha256 computed before any aggregate summaries. Read zipped 190MB original text in pandas; avoid raw ID printing. Aggregate-only outputs and QA, no network, no data rehosting. Reproduce local source code SHA and dataset SHA; clean clone not claimed.",
+    "rights": "Original author GitHub says ZIP publicly downloadable; no separate license found in repo or ZIP; analyze local minimally, publish only nonidentifying aggregate, verify rights before redistributing."
+  },
+  "E": {
+    "state": "NOT_EXECUTED"
+  },
+  "F": {
+    "adversaries": [
+      "rec label semantics original other Su/Hu paper not proven exact SSJY cohort; rec means recommendation generated/shown on homepage but not certified attended impression",
+      "Self-selected algorithm offers, may be nonrandom",
+      "Nonclick is no observed click and not explicit dislike",
+      "Round is actor/session index not calendar wall clock",
+      "Different target users may share original account identity? original anonymized IDs only",
+      "Repeated recommendations not independent of past click and target popularity feedback",
+      "Target-history only training actor out-split not chronological prior to holdout; cannot call 'previous' in real time. Rephrase train-group historical cross-sectional target CTR",
+      "No original social causal or 2/3",
+      "Train/test as stored in MotifGNN are constructed from graph and should not be recycled as independent baseline"
+    ]
+  },
+  "G": {
+    "external_validation": "Disjoint actor holdout within same platform, not independent external cohort. No second platform available. Original source paper Su/Hu 2019 may share original operator; not independent without provenance."
+  },
+  "H": {
+    "source_and_prior_plan": "Add original 2019 paper as new source distinct publication but dataset potential overlap with SSJY SRC059; revise P-OPPORTUNITY, P-ACTION-SEMANTICS, P-DYADIC_ACCESS and P-NOVELTY with NO_CHANGE_WITH_REASON if needed, source/priors/updates append-only."
+  },
+  "I": {
+    "CT2_before": 6,
+    "CT2_after": "To decide; no automatic increase; grade 0/3 barring independently novel validated effect."
+  },
+  "J": {
+    "decision": "Count N82 valid only if code and complete data QA plus primary out-of-actor contrast and adversarial decision documented; else do not consume, STOP_R5. Either way stop causal ESBM validation without true exposure confirmations, explicit declines, temporal relationships.",
+    "remaining_after_complete": 4
+  },
+  "DRIFT": {
+    "distance": "D0.9",
+    "rationale": "Same mating-platform dyadic action paradigm with newly recovered source event-grain (user-target-round), moving from unconditional graph topology to opportunity-conditioned choice prediction. No new domain."
+  },
+  "budget": null
+}
