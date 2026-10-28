@@ -21,3 +21,12 @@ Este repositorio es la autoridad metodológica del protocolo AB del investigador
 La metodología **no garantiza** que un modelo de ChatGPT tenga acceso automático al repositorio, los archivos ni las herramientas. Requerir conexión o material aportado por el usuario cuando falte acceso.
 
 **Procedencia y detalle completo:** [O6](docs/AB_3_2_1_O6_CAMPANAS_INFORMES_CT2_Y_CICLOS.md). Su adopción normaliza informes y colaboración, **no demuestra** la eficacia científica de AB.
+
+## Norma transversal: descubrimientos documentales, fuentes y priors (28/10/2026)
+
+- **Obligatorio en todos los proyectos AB:** cada hallazgo documental nuevo, antecedente relevante, resultado de otra investigación, limitación de fuente o contradicción verificable debe tener **registro de la fuente original y de lo que aporta**, y **actualización explícita de al menos un prior**, o un evento `NO_CHANGE_WITH_REASON` justificado cuando no corresponda cambiarlo.
+- Guardar bajo cada proyecto un **registro versionado de SOURCES, PRIORS y UPDATES**, con IDs estables y referencias cruzadas, enlazado desde los ledgers A–J. La fuente incluye DOI/URL, sección/página o dato exacto, procedencia, fecha y tipo de acceso (artículo, resumen, catálogo, microdatos efectivamente leídos), derechos/licencia de texto y datos separadas, contribución a hipótesis, limitaciones y falsador.
+- `UPDATES` es append-only lógico, nunca se borra un resultado desfavorable; la retractación se registra como nueva corrección. Evitar tratar como independientes dos publicaciones que reutilicen una misma muestra.
+- **No inventar priors numéricos bayesianos:** si no hay distribución y likelihood definidos, usar actualización cualitativa. CT2 (trayectoria ordinal 2/3) no es probabilidad ni sustituye el prior de la hipótesis.
+- Al recuperar hallazgos documentales antiguos, etiquetar `retrospective_backfill` y `before=NOT_RECORDED_AT_TIME` donde proceda, sin fingir prerregistro. Añadir el registro retrospectivamente **no consume un nuevo ciclo AB**.
+- Implementación de referencia y plantilla ya creada: [Mercados de pareja · SOURCES / PRIORS / UPDATES](proyectos/mercados-de-pareja/research/PRIORS/README.md) y [SOURCE_TEMPLATE.json](proyectos/mercados-de-pareja/research/PRIORS/SOURCE_TEMPLATE.json). Para otras líneas, inicializar un registro equivalente en el directorio del proyecto cuando aparezca su siguiente hallazgo documental.
