@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-28",
+  "cycle": "N81",
+  "status": "FROZEN_PROTOCOL_REPAIR_AFTER_INVALID_ATTEMPT",
+  "initial_prereg_commit": "9ce043bfe1a0b9737e664bb3c4d17e765b5dc96c",
+  "initial_code_commit": "c64a030c840d644ef377dc8a3e327fb41ff10f5b",
+  "initial_invalid_output": "INCIDENT_INVALID_ATTEMPT.json",
+  "reason": "Instrumented code included 8,366,058 rec actions not part of the initially specified click/msg outcome.",
+  "primary_metric_unchanged": "Unique directed reciprocity rate conditional on actual click or msg actions, not rec; compare against directed degree-stub permutation on that restricted graph",
+  "fix": "Before any ID conversion, df = df[df.iloc[:,2].isin(['click','msg'])]; 232,954 expected events. Exclude rec from all primary/secondary graph statistic calculations. Tabulate all-action source counts as QA only, never treat rec as exposure without definition.",
+  "number_of_null_permutations": 30,
+  "seed": 20261028,
+  "other_design_unchanged": true,
+  "analysis_script_commit": "9b760af378e9855cf63e6359b2602529063b314d",
+  "repaired_source": "audit_reciprocity_REPAIR.py",
+  "after_initial_results_seen": true,
+  "interpret_as_prospective_confirmatory": false,
+  "decision": "RERUN_ONCE_WITH_EXPLICIT_ERRATA_DO_NOT_COUNT_TWO_CYCLES"
+}
