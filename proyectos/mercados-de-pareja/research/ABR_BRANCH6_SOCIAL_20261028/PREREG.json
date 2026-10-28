@@ -1,0 +1,93 @@
+{
+  "schema": "ab.research.campaign.v1",
+  "id": "ABR-BRANCH6-SOCIAL-20261028",
+  "date": "2026-10-28",
+  "authorized": 6,
+  "parent": "N39-N40",
+  "branch": "research/ab-r-mercados-pareja-20261028",
+  "baseline_CT2": 17,
+  "drift": "D0.4 within same research line, homophily estimands",
+  "source": {
+    "columbia_sha256": "a0fe55d6172d01f81d6c7e2546330828cb98d1f631b2598fec4d4f4660eaa37d",
+    "columbia_path": "speed_dating_clean.parquet (user upload)",
+    "mixmosa_repo": "dankras/mixmosa-anonymized-data",
+    "mixmosa_files": [
+      "csv/interactions.csv",
+      "csv/user_features.csv"
+    ]
+  },
+  "rules": {
+    "no_prospective_holdout": true,
+    "all_outcomes_exploratory": true,
+    "privacy": "aggregate only",
+    "no_causal_claim": true,
+    "permutation_seed": 20261028,
+    "permutations": 1000,
+    "bootstrap_chooser_clusters": 300,
+    "min_complete_case": 500,
+    "min_chooser_variation_groups": 50
+  },
+  "cycles": [
+    {
+      "id": "N41",
+      "type": "DATA_QUALITY_AB",
+      "A": "Age/educational-field comparability and dyad/event grain",
+      "B": "Data fit vs missingness and noncomparable fields",
+      "C": "QA mirrors/dedup/feature completeness, chooser-level variation; no inference before QA",
+      "D": "Columbia uploaded SHA, Mixmosa origin GitHub blobs; no rows rehosted"
+    },
+    {
+      "id": "N42",
+      "type": "EMPIRICAL_AB",
+      "A": "Age-gap homophily vs popularity and direction",
+      "B": "same-age preference vs target popularity or age direction",
+      "C": "mean absolute age difference accepted vs all, 1000 within chooser-wave yes-label permutations; sex-specific fixed-chooser linear-probability slope controlling signed age and candidate popularity LOO; cluster SE chooser",
+      "D": "No causal claim; 500+ complete and 50 chooser groups varying response"
+    },
+    {
+      "id": "N43",
+      "type": "EMPIRICAL_AB",
+      "A": "same academic field versus observed opportunity baseline",
+      "B": "homophily of academic field vs no individual effect",
+      "C": "same field_cd in both actor and target; accepted vs all; 1000 within-chooser-wave response permutations, gender split; fixed-chooser comparison accounting for age and popularity",
+      "D": "field_cd is educational discipline, not status or degree; check valid coding"
+    },
+    {
+      "id": "N44",
+      "type": "EMPIRICAL_AB",
+      "A": "common desirability vs similarity in within-chooser approval",
+      "B": "popularity LOO, homophily, both and other",
+      "C": "chooser FE linear probability model, candidate popularity LOO, abs/signed age-gap, same academic field, standardized covariates, cluster SE chooser; compare within R2 of quality vs similarity vs combined on same complete case",
+      "D": "contemporaneous popularity not ex ante; independent of focal choice only; >=500 and >=50 chooser groups with choice variation"
+    },
+    {
+      "id": "N45",
+      "type": "SENSITIVITY_AB",
+      "A": "Are popularity correlations homogeneous across Columbia waves?",
+      "B": "single-wave domination vs variable conditional sorting",
+      "C": "r mutual dates within waves with >=10 matches, sign shares, pooled leave-one-wave-out range, split waves 1-10 versus 11-21",
+      "D": "no post hoc success claim, no multiple p-hunting"
+    },
+    {
+      "id": "N46",
+      "type": "COMPARATIVE_AB",
+      "A": "Do chooser-conditioned age preference signals agree between Columbia and Mixmosa?",
+      "B": "consistent signs vs sample/opportunity heterogeneity",
+      "C": "Mixmosa derive same accepted-versus-all abs age gap by gender and 1000 within chooser-event shuffles; compare Columbia, distinguish missingness and variation; prior-art Fisman 2006/2008, AB A-J/R5",
+      "D": "If Mixmosa actor age unavailable, mark blocked rather than assume; no real rejection diffusion"
+    }
+  ],
+  "quality_gates": {
+    "min_complete_cases": 500,
+    "minimum_chooser_variation": 50,
+    "check_duplicate_dyads": true,
+    "detect_missingness": true
+  },
+  "prior_art": [
+    "https://doi.org/10.1162/qjec.2006.121.2.673",
+    "https://doi.org/10.1111/j.1467-937X.2007.00465.x"
+  ],
+  "multiplicity": "multiple exploratory endpoints, no confirmatory p-values or 2/3",
+  "source_design_file_sha256": "141c8fcb2dcb5ff6701b60116333d5a09058277112f70151ed9130657692c9c1",
+  "status": "PRE_RESULTS_COMMIT"
+}
