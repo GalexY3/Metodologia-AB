@@ -1,0 +1,90 @@
+{
+  "schema": "ab.research.candidate_prereg.v1",
+  "date": "2026-10-28",
+  "project": "mercados-de-pareja",
+  "branch": "research/ab-r-mercados-pareja-20261028",
+  "cycle_candidate": "N79",
+  "status": "DESIGNED_NOT_OPENED_NOT_EXECUTED",
+  "current_authorized_unused": 8,
+  "authorization_ids": [
+    "N79",
+    "N80",
+    "N81",
+    "N82",
+    "N83",
+    "N84",
+    "N85",
+    "N86"
+  ],
+  "purpose": "Potential independent published real dating platform browse/contact/match data, eligibility and reproducible contrast only after lawful material access",
+  "critical_timing_note": "Original AER 2010 table and archive landing already inspected before this candidate plan. No raw source bytes, individual codebook or hidden outcome inspected. The future complete preregistration must be committed before any numerical computation on obtained data; do not call this prereg of article discovery.",
+  "A": {
+    "population": "Observed platform users from actual Hitsch et al. 2010 sample if source and rights verifiable; sample domain historical US online dating; risk set browsed profiles, not algorithm-impressed individuals.",
+    "estimand": "Conditional probability of first-message given actual profile visit and observable target attributes; predictive out-of-sample utility and heterogeneous effect of opportunity structure, *not* causal effect of browsing.",
+    "primary_endpoint": "held-out log loss for contact conditioned on browse relative to strongest competent baseline; no post hoc stage aggregation.",
+    "secondary_endpoints": [
+      "Calibrated first-message probability",
+      "Conditional conversion to exchange of contact information, if dated messages visible",
+      "Coverage of visit and contact logs, timestamps and feature leakage",
+      "Degree/opportunity null preserving browsed set"
+    ]
+  },
+  "B": {
+    "H1": "Stage-specific opportunity composition explains match sorting beyond chooser/target preferences under equal exposures; ESBM environmental mechanism has distinctive out-of-sample gains.",
+    "H0": "A competent two-sided choice model, actor/target effects and opportunity-set controls predict observed conditional contact and matched sorting as well.",
+    "H_alternative": "Historical stage definitions differ from modern swipes or archive only provides derived/public summary counts; missing browsing candidates or no time means claim not identifiable."
+  },
+  "C": {
+    "access_gate": [
+      "File bytes acquired by lawful registered or public archive access",
+      "Exact archive DOI/version, file inventory and LICENSE verified",
+      "Raw logs actually have visited-candidate identifier, actor, target, contact indicator and time or transparent event/session history",
+      "Measured controls allow fair comparison with regularized conditional/mixed logit, actor and target heterogeneity, fixed observed opportunity sets"
+    ],
+    "no_run_if_any_access_gate_fails": true,
+    "train_test": "prospectively partition by user/time (when available) before outcome analysis; never recycle previous Columbia/Mixmosa/ESBM selection holdouts as new confirmation",
+    "primary_statistical_contract": "Define odds/log-loss and uncertainty from actual counts and clustering before run; do not impute or derive missing candidate browsing from all registered users",
+    "budget": "one actual distinct-source run subject to R5, not 8 automatic cycles"
+  },
+  "D": {
+    "instrumentation": "Read original codebook/LICENSE, hashes and schema report first; create input manifest; freeze executable code and software versions with SHA256 before any fit.",
+    "qa": [
+      "Deduplicate actor-target-time events per specified event grain",
+      "No future information in ex ante attractiveness/visibility measures",
+      "No private individual data in GitHub",
+      "Baseline same training rows and covariates"
+    ]
+  },
+  "E": {
+    "state": "NOT_EXECUTED",
+    "human_rows_processed": 0
+  },
+  "F": {
+    "adversarial": "Model selection before outcome, whether browsing is itself selected and user-initiated, impossible inference about algorithmically assigned exposure, missing non-browsed universe, censoring, privacy, temporal transport, multiple comparisons."
+  },
+  "G": {
+    "state": "NOT_EXECUTED",
+    "requirement": "Independent held-out source/time split; repeat data cohort does not yield independent external replication; need third site for population transfer."
+  },
+  "H": {
+    "current_prior_status": "U056-U058 reflect posthoc published metadata only",
+    "future_rule": "Update prior after real source outcome with qualitative change/no-change, never invented Bayes factor"
+  },
+  "I": {
+    "current_grade": "0/3",
+    "CT2_before": 7,
+    "CT2_after": 7
+  },
+  "J": {
+    "decision": "STOP_R5_UNTIL_RAW_ACCESS",
+    "remaining_after_this_plan": 8
+  },
+  "authoritative_original_link": "https://doi.org/10.3886/E112322V1",
+  "other_prioritized_blockers": [
+    "E218862V1 README/Data still inaccessible",
+    "HCMST2017 Stata/codebook 403",
+    "pairfam GESIS registered SUF required",
+    "Essex CC BY original XLSX inaccessible in runtime"
+  ],
+  "counts_as_AB_cycle": 0
+}
