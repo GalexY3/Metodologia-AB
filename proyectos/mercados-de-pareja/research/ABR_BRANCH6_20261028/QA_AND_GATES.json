@@ -1,0 +1,96 @@
+{
+  "campaign": "ABR-BRANCH6-20261028",
+  "initial_attempt": {
+    "status": "INVALID",
+    "file": "INVALID_ATTEMPT_01.json",
+    "failure": "DA blocked-pair checker used incorrect utility axis",
+    "invalid_attempts": 1,
+    "not_counted_valid": true
+  },
+  "repair": {
+    "prereg_commit": "58539794ccdd178aa81d25572f7aa47c8d220073",
+    "source_freeze_commit": "a7eeef166ae06ed8aec49e9d9f9f441923df4509",
+    "repair_commit": "14059774298ad6bc552032cdc46b9e8b7ddec82b",
+    "source_sha256": "6f351329c3c9fdc5aad83dcb719962dc022b8b17203b94e6661ed322ffe0b632",
+    "source_bytes": 10830,
+    "source_archive": "LOCAL_ZIP_ATTACHED; GitHub opaque gzip/base64 create_file blocked by security controls, so GitHub code snapshot NOT CONFIRMED"
+  },
+  "valid_run": {
+    "status": "RUN",
+    "rows": 60,
+    "seeds": [
+      1103,
+      2207,
+      3301,
+      4409,
+      5501
+    ],
+    "sha256_runs": "978479735d9d09695f546267ec71c0b04798b7c7fe8e0e0aec15bdbcc1a2b2c4",
+    "sha256_summary_local": "dbe7822402ea98ea7f188baca17d0dcae9e814babbbc3b4d66c84c91223ce743",
+    "sha256_gates": "d440c355ab6a20d3123c30ae04c9ccaf224d82ee7b6b292c49af16599bb305c6",
+    "deterministic_rerun": "YES, three local file hashes identical after second valid execution",
+    "clean_clone": "NOT_VERIFIED",
+    "external_replication": "NOT_VERIFIED"
+  },
+  "N10_pilot_gate": {
+    "seeds": [
+      1103,
+      2207
+    ],
+    "minimum_coverage": 0.4,
+    "minimum_total_pairs_per_variant": 50,
+    "pilot_100": [
+      {
+        "seed": 1103,
+        "pairs": 363,
+        "coverage": 0.605
+      },
+      {
+        "seed": 2207,
+        "pairs": 369,
+        "coverage": 0.615
+      }
+    ],
+    "pilot_300": [
+      {
+        "seed": 1103,
+        "pairs": 350,
+        "coverage": 0.58333333
+      },
+      {
+        "seed": 2207,
+        "pairs": 376,
+        "coverage": 0.62666667
+      }
+    ],
+    "pilot_1200": [
+      {
+        "seed": 1103,
+        "pairs": 361,
+        "coverage": 0.60166667
+      },
+      {
+        "seed": 2207,
+        "pairs": 357,
+        "coverage": 0.595
+      }
+    ],
+    "passed": true,
+    "decision": "RUN_THREE_EXTRA_SEEDS_WITHOUT_PARAMETER_CHANGES"
+  },
+  "controls": [
+    "N09 Gale-Shapley verified 0 blocking pairs in each run; matches only on fixed regular opportunity graph",
+    "N09 greedy and adaptive evaluated same edge order and fixed utilities, while DA sees whole opportunity graph",
+    "N10 all pools half men and half women; no repeated scheduled partner per agent across 40 rounds",
+    "N11 exactly same ex ante regular k40 partner graph, persistent and expiring schedules share a predetermined random event order",
+    "N11 realised exposure varies due endogenous exits"
+  ],
+  "limitations": [
+    "N09 full DA information and dynamic partial timing not matched; no estimate of pure algorithm effect vs information",
+    "N10 only five simulated seeds; no external sample, no equivalence test",
+    "N11 simultaneous versus async differ in realised opportunities despite identical graph",
+    "All attributes uniform synthetic, weight 60/40 hypothetical",
+    "Source SHA frozen and Python bundle available, but GitHub source file upload blocked; clean-clone test unavailable"
+  ],
+  "status": "INTERNAL_SYNTHETIC_QA_ONLY"
+}
