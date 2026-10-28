@@ -1,0 +1,174 @@
+{
+  "provenance": {
+    "source": "dankras/mixmosa-anonymized-data",
+    "file_grain": "in-person 8-minute date",
+    "date_records_actual": 1895,
+    "repository_readme_claim": 2961
+  },
+  "quality": {
+    "interactions": 1895,
+    "users_features": 2553,
+    "swipes": 4437,
+    "events_in_dataset": 30,
+    "events_in_interactions": 30,
+    "unique_male": 203,
+    "unique_female": 207,
+    "duplicate_event_dyads": 0,
+    "flags_mismatched": 0,
+    "interactions_both_features": 1888,
+    "swipe_direction_missing": 0,
+    "swipe_decision_conflicts": 0
+  },
+  "outcomes": {
+    "male_like": 997,
+    "female_like": 573,
+    "mutual": 259,
+    "male_like_rate": 0.5261213720316623,
+    "female_like_rate": 0.30237467018469655,
+    "mutual_rate": 0.1366754617414248,
+    "events": 30
+  },
+  "permutation": {
+    "reps": 1000,
+    "observed_mutual": 259,
+    "eventwise": {
+      "mean": 288.278,
+      "min": 258,
+      "max": 322,
+      "q025": 270,
+      "q975": 307,
+      "p_upper": 0.999000999000999,
+      "p_lower": 0.002997002997002997
+    },
+    "female_eventwise": {
+      "mean": 266.018,
+      "min": 246,
+      "max": 291,
+      "q025": 252,
+      "q975": 280,
+      "p_upper": 0.8601398601398601,
+      "p_lower": 0.17182817182817184
+    },
+    "event_independent_expectation": 288.255970556111
+  },
+  "features": {
+    "male_candidate_photo": {
+      "n": 1865,
+      "cutpoints": [
+        3.28571428571429,
+        4,
+        4.82352941176471
+      ],
+      "quartiles": [
+        {
+          "n": 476,
+          "like_rate": 0.19117647058823528
+        },
+        {
+          "n": 477,
+          "like_rate": 0.2914046121593291
+        },
+        {
+          "n": 451,
+          "like_rate": 0.3303769401330377
+        },
+        {
+          "n": 461,
+          "like_rate": 0.403470715835141
+        }
+      ],
+      "r": 0.19051864952002875,
+      "r_within_event": 0.2179270277579563
+    },
+    "female_candidate_photo": {
+      "n": 1839,
+      "cutpoints": [
+        4.22222222222222,
+        5.11764705882353,
+        6
+      ],
+      "quartiles": [
+        {
+          "n": 461,
+          "like_rate": 0.24945770065075923
+        },
+        {
+          "n": 470,
+          "like_rate": 0.5297872340425532
+        },
+        {
+          "n": 451,
+          "like_rate": 0.6297117516629712
+        },
+        {
+          "n": 457,
+          "like_rate": 0.7177242888402626
+        }
+      ],
+      "r": 0.3563083555594493,
+      "r_within_event": 0.326471722972746
+    },
+    "male_candidate_income": {
+      "n": 0,
+      "gate": "INSUFFICIENT",
+      "r": null,
+      "r_within_event": null
+    },
+    "female_candidate_income": {
+      "n": 0,
+      "gate": "INSUFFICIENT",
+      "r": null,
+      "r_within_event": null
+    },
+    "age_gap": {
+      "n": 1888,
+      "mean": 3.794491525423729,
+      "r_with_mutual": -0.06438036786222016,
+      "r_within_event": -0.03783852421488433,
+      "quartiles": [
+        {
+          "n": 489,
+          "like_rate": 0.15337423312883436
+        },
+        {
+          "n": 542,
+          "like_rate": 0.14391143911439114
+        },
+        {
+          "n": 433,
+          "like_rate": 0.14318706697459585
+        },
+        {
+          "n": 424,
+          "like_rate": 0.10377358490566038
+        }
+      ]
+    }
+  },
+  "popularity_leave_one_out": {
+    "eligible_edges": 1890,
+    "eligible_mutual": 259,
+    "eligible_events": 30,
+    "mutual_events": 30,
+    "r_all_dates": -0.047950175380124985,
+    "r_mutual_only": -0.01586965583179132,
+    "GATE_PASS": true
+  },
+  "audit_notes": [
+    "eventwise permute female acceptance across dates in each event; preserves event yes marginals, not individual's choice preferences",
+    "female_eventwise permute each woman's choices within event; preserves each woman's yes frequency and event, not available candidate attributes",
+    "photo and income associations are event-weighted descriptive only, never causal",
+    "leave-one-out popularity is fitted using other observed dates; could share event selection, not independent test set"
+  ],
+  "source_commits": {
+    "csv/interactions.csv": "c4aba45888dc07573b6bd12554f73fb57ebb0479",
+    "csv/user_features.csv": "99679f0e33b55099a4a0705810dd9771019554d0",
+    "csv/swiping.csv": "2820b902bd4a80d57008c03aa0c4e0ff927f6639",
+    "csv/events.csv": "3d58d8335046a71daff6fddb812429240c70af67"
+  },
+  "analysis_code_blob_sha": "3eac56954a34d6883b8a67f6fa8aad4387d6e6fb",
+  "freeze_commit": "9b7f3deab041eab4a4ca6ffed9c06d3669a2efae",
+  "prereg_commit": "a1146570712f2e545d097f3f498452bcbf9ce60a",
+  "status": "EXPLORATORY_OBSERVED_AGGREGATES_NOT_CAUSAL",
+  "visibility": "no person IDs or rows"
+}
