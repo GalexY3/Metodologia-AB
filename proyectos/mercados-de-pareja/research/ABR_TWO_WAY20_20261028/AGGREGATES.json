@@ -1,0 +1,170 @@
+{
+  "campaign": "ABR-TWO-WAY20-20261028",
+  "source_input_sha256": "a0fe55d6172d01f81d6c7e2546330828cb98d1f631b2598fec4d4f4660eaa37d",
+  "prereg_commit": "4eeaee46511aba8547d62d4ee97ed3e9ea54fdcf",
+  "source_freeze_commit": "c7037894f8bf25fc494467a54b1dd3790b3e3682",
+  "source_sha256": "1c0c14a47082f07f60200f0cf9d99cbc8b3ee4e37de2fef9b781a0dac92b414c",
+  "full_local_result_sha256": "b636df29004b0dcd355f598c105547f611a721dcaf69752fc694bd10d6fd6743",
+  "local_repeated_identical": true,
+  "portable_version_reexecuted_identical": true,
+  "clean_clone_third_party_verified": false,
+  "input_qa": {
+    "directed_rows": 8368,
+    "unique_dates": 4184,
+    "waves": 21,
+    "actors": 551,
+    "one_event_only_actors": 551,
+    "actors_cross_event": 0,
+    "age_missing_directed": 188,
+    "field_missing_directed": 164,
+    "loo_popularity_missing_directed": 0
+  },
+  "N48_N50": {
+    "women": {
+      "n": 4071,
+      "actor_only_similarity": {
+        "r2": 0.0054644471,
+        "age_abs_coef_sd": -0.02195048,
+        "signed_coef_sd": -0.01299157,
+        "same_field_coef_sd": 0.02276403
+      },
+      "two_way_similarity": {
+        "partial_r2": 0.0043845239,
+        "age_abs_coef_sd": -0.01225784,
+        "age_abs_SE": 0.01143071,
+        "same_field_coef_sd": 0.02805451,
+        "same_field_SE": 0.00880405,
+        "excluded_collinear": [
+          "signed"
+        ],
+        "baseline_actor_residual_ss": 722.0350972,
+        "baseline_twoway_residual_ss": 551.0937572
+      },
+      "two_way_age_only": {
+        "coef_sd": -0.01469681,
+        "SE": 0.01158727
+      },
+      "two_way_field_only": {
+        "coef_sd": 0.02871479,
+        "SE": 0.00872802
+      }
+    },
+    "men": {
+      "n": 4071,
+      "actor_only_similarity": {
+        "r2": 0.01069584476,
+        "age_abs_coef_sd": -0.04255992,
+        "signed_coef_sd": -0.01970409,
+        "same_field_coef_sd": 0.01862434
+      },
+      "two_way_similarity": {
+        "partial_r2": 0.00733215,
+        "age_abs_coef_sd": -0.02944523,
+        "age_abs_SE": 0.00948625,
+        "same_field_coef_sd": 0.03029612,
+        "same_field_SE": 0.00808479,
+        "excluded_collinear": [
+          "signed"
+        ],
+        "baseline_actor_residual_ss": 751.3341896,
+        "baseline_twoway_residual_ss": 557.3276104
+      },
+      "two_way_age_only": {
+        "coef_sd": -0.03207908,
+        "SE": 0.00959795
+      },
+      "two_way_field_only": {
+        "coef_sd": 0.03188223,
+        "SE": 0.00810042
+      }
+    }
+  },
+  "N49_identifiability": {
+    "signed_age": "EXACT_COLLINEAR_WITH_CHOOSER_AND_TARGET_FE, residual norm ratio about 3.48e-11; coefficient intentionally excluded",
+    "popularity_proxy": "Target-level predictor fully absorbed by target fixed effect; cannot estimate distinct popularity coefficient simultaneously",
+    "target_age_linear": "also collinear with fixed target age."
+  },
+  "N51_actor_candidate_degree_null": {
+    "method": "Bipartite checkerboard Markov swaps preserve chooser & candidate yes-degree and observed edges per wave, 250 recorded states after 6000 burn attempts and 400 proposals between samples, per gender",
+    "women": {
+      "attempts": 106000,
+      "successful_swaps": 15803,
+      "acceptance": 0.1490849,
+      "unique_gap_trace": 140,
+      "observed_age_gap_mean_diff": -0.05496391,
+      "chain_gap_mean": -0.00450997,
+      "chain_gap_range95": [
+        -0.08403601,
+        0.06170832
+      ],
+      "observed_same_field_diff": 0.01248992,
+      "chain_same_field_mean": -0.00263959,
+      "chain_same_field_range95": [
+        -0.01072437,
+        0.00618151
+      ]
+    },
+    "men": {
+      "attempts": 106000,
+      "successful_swaps": 10645,
+      "acceptance": 0.1004245,
+      "unique_gap_trace": 132,
+      "observed_age_gap_mean_diff": -0.18702872,
+      "chain_gap_mean": -0.11145942,
+      "chain_gap_range95": [
+        -0.1544553,
+        -0.07110909
+      ],
+      "observed_same_field_diff": 0.02197216,
+      "chain_same_field_mean": 0.00899515,
+      "chain_same_field_range95": [
+        0.00408764,
+        0.01430736
+      ]
+    },
+    "validation": "Degree sums of every actor and candidate within wave preserved exactly after swaps",
+    "limitation": "single chain, unknown uniformity/mixing; descriptive reference ranges only, not p-values, resampling assumes fixed graph and no exposure-level endogeneity"
+  },
+  "N52_target_FE_explained": {
+    "women_fraction_of_actor_residual_variance_explained_by_target_FE": 0.23674935,
+    "men": 0.25821609,
+    "caveat": "in-sample high-dimensional candidate parameters, expected increase in fit, not out-of-sample prediction"
+  },
+  "N53_mixmosa": {
+    "prereg_addendum_commit": "57a977dab7c6e915037e478e72d96f3209fe4251",
+    "script_commit": "0b8fc2bfc4120e42bca64c347aaee3d0406c9fa1",
+    "result_commit": "25deeea66bfe11f70a23718944f1a6c4acc45556",
+    "complete_dates": 1888,
+    "women": {
+      "actors": 207,
+      "candidates": 202,
+      "coefficient_abs_gap_sd": -0.0415281,
+      "SE_actor_cluster": 0.01541906,
+      "partial_r2": 0.00400744
+    },
+    "men": {
+      "actors": 202,
+      "candidates": 207,
+      "coefficient_abs_gap_sd": -0.00094284,
+      "SE_actor_cluster": 0.02048896,
+      "partial_r2": 0.00000186
+    },
+    "identical_repeat": true,
+    "adversarial": "Previously observed male sign reversal under a different permutation statistic is not a stable general two-way FE effect: Mixmosa men's 2FE age gap is ~0."
+  },
+  "N54_prospective_gate": {
+    "participants_multiwave": 0,
+    "participants_total": 551,
+    "target_popularity_available_ex_ante_from_prior_wave": 0,
+    "decision": "BLOCKED, no prospective out-of-event popularity prediction; do not use same-event votes as holdout"
+  },
+  "limitations": [
+    "Speed dating in 2002–04 USA and later Mixmosa foreign data, not Tinder or Spain",
+    "Observed candidate acceptability not random independent, common popularity can be latent attractiveness",
+    "FE absorbs person-specific constants, cannot separately estimate time-invariant target-level popularity",
+    "No prospective independent test; previous data used for iterative model choice",
+    "MCMC null unproven mixing; no exact conditional p-values",
+    "Two-sided participant correlation not addressed by one-way cluster SE"
+  ],
+  "privacy": "no raw rows or pseudonymous participant identifiers posted to GitHub"
+}
