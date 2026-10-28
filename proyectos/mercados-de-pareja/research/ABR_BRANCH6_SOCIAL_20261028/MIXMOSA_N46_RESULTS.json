@@ -1,0 +1,70 @@
+{
+  "result": {
+    "source": "Mixmosa github csv/interactions + csv/user_features",
+    "dates": 1895,
+    "age_complete_dates": 1888,
+    "age_missing_dates": 7,
+    "groups": {
+      "women_choosing_men": {
+        "gap": {
+          "n_directed": 1888,
+          "yes": 572,
+          "chooser_event_groups": 216,
+          "groups_with_choice_variation": 175,
+          "observed_diff": -0.4815544624866659,
+          "null_mean": -0.27198103591323913,
+          "null_p025": -0.41512089605309965,
+          "null_p975": -0.12661565129785463,
+          "p_lower": 0.002997002997002997,
+          "p_upper": 0.998001998001998
+        },
+        "signed": {
+          "n_directed": 1888,
+          "yes": 572,
+          "chooser_event_groups": 216,
+          "groups_with_choice_variation": 175,
+          "observed_diff": -0.10628778001659356,
+          "null_mean": 0.06566326893445538,
+          "null_p025": -0.12381400379281735,
+          "null_p975": 0.24685907313025957,
+          "p_lower": 0.03496503496503497,
+          "p_upper": 0.9660339660339661
+        }
+      },
+      "men_choosing_women": {
+        "gap": {
+          "n_directed": 1888,
+          "yes": 996,
+          "chooser_event_groups": 264,
+          "groups_with_choice_variation": 221,
+          "observed_diff": -0.005334898917704667,
+          "null_mean": -0.1224112041385883,
+          "null_p025": -0.2322676298413996,
+          "null_p975": -0.012363011367503951,
+          "p_lower": 0.984015984015984,
+          "p_upper": 0.017982017982017984
+        },
+        "signed": {
+          "n_directed": 1888,
+          "yes": 996,
+          "chooser_event_groups": 264,
+          "groups_with_choice_variation": 221,
+          "observed_diff": 0.26832754747804777,
+          "null_mean": 0.17517694506840928,
+          "null_p025": 0.05140987679531682,
+          "null_p975": 0.3054761418555578,
+          "p_lower": 0.9210789210789211,
+          "p_upper": 0.08291708291708291
+        }
+      }
+    }
+  },
+  "source_script_sha": "9526a418065684f20ac37ec0a05464239df369fb",
+  "source_blobs": [
+    "c4aba45888dc07573b6bd12554f73fb57ebb0479",
+    "99679f0e33b55099a4a0705810dd9771019554d0"
+  ],
+  "prereg_commit": "6cabe7a8c007a6b3800aa84f0789a6e56489d1be",
+  "exploratory": true,
+  "privacy": "aggregate only"
+}
