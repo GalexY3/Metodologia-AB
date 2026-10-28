@@ -3,7 +3,7 @@
   "project": "mercados-de-pareja",
   "date": "2026-10-28",
   "scope": "Retrospective provenance backfill from repository reports plus N56/N57 publisher audit. Original data never copied; not systematic or claim of accessing raw data for bibliography.",
-  "source_count": 50,
+  "source_count": 52,
   "sources": [
     {
       "id": "SRC001",
@@ -942,11 +942,12 @@
       "title": "OpenICPSR / AEA replication record for Büyükeren et al. (2026)",
       "canonical_url": "https://doi.org/10.3886/E218862V1",
       "cycle_ids": [
-        "N67"
+        "N67",
+        "N76"
       ],
       "contribution": "AEA/RePEc identifies replication package for new 2026 Tinder paper; possible external data and code to inspect with appropriate download and rights checks.; 28/10/2026 official repository V1 exposed four directory names plus 256.1KB README.pdf, with >1.1M student survey responses 2008–19 and individual/college-level DID analysis. Read archive landing metadata only.",
       "limits": "Link from RePEc verified, but web resolver inaccessible; direct aeaweb materials ZIP download failed, no files, code, microdata, license or columns inspected; NOT an independent replication.; inner files, README bytes and dataset-specific LICENSE still unavailable due web cache and container DNS. No candidate-level impressions/reciprocal decisions documented. ICPSR in 2026 migrating openICPSR; DOI still expected to redirect but unsuccessful here.",
-      "evidence_access": "OFFICIAL_ARCHIVE_TOP_LEVEL_METADATA_INSPECTED__CODE_DATA_EXHIBITS_TEMP_README__INNER_FILES_UNREAD",
+      "evidence_access": "OFFICIAL_ARCHIVE_TOP_LEVEL_METADATA_INSPECTED__README_DATA_HTTP403__PROJECT_DOWNLOAD_REQUIRES_ICPSR_LOGIN__NO_FILE_BYTES",
       "verified_at": "2026-10-28",
       "article_reuse_rights": "NOT_ASSESSED",
       "data_reuse_rights": "NOT_VERIFIED",
@@ -955,7 +956,8 @@
       "precise_note": "Source discovery before present synthetic computation; results have not been used as training data for this model",
       "previous_evidence_access": "REPLICATION_METADATA_ONLY__FILE_NOT_DOWNLOADED",
       "last_verified_at": "2026-10-28",
-      "audit": "research/ABR_EXTERNAL_GATE_20261028/ACCESS_AND_SCOPE_AUDIT.md"
+      "audit": "research/ABR_EXTERNAL_GATE_20261028/ACCESS_AND_SCOPE_AUDIT.md",
+      "latest_access_recheck": "2026-10-28: web click README and Data returned HTTP403, full project download redirects to ICPSR authentication. No bypass; no retrieved README/data."
     },
     {
       "id": "SRC048",
@@ -1000,7 +1002,39 @@
       "verified_at": "2026-10-28",
       "data_reuse_rights": "NO_DATA_IN_SOURCE",
       "raw_data_processed": false
+    },
+    {
+      "id": "SRC051",
+      "title": "German Family Panel pairfam, GESIS archive study ZA5678, Release 14.2",
+      "canonical_url": "https://doi.org/10.4232/pairfam.5678.14.2.0",
+      "cycle_ids": [
+        "N78"
+      ],
+      "contribution": "Independent German longitudinal cohort, 14 annual waves 2008–2022, with primary respondents and selected partner respondents, longitudinal prospective/retrospective relationship/cohabitation/marriage episodes; linked respondents and partner reports. Distinct measurement class versus HCMST one-sided survey.",
+      "limits": "SUF not acquired or processed; only registered users via GESIS; no full exposure/initiations/rejections or choice-set observations. Recalled partner episodes and selective current-partner interviews, left truncation, attrition. Same source as SRC052 manual, not a second independent cohort.",
+      "evidence_access": "OFFICIAL_GESIS_CATALOG_AND_LMU_STUDY_DESCRIPTION_READ__RESEARCH_SUFS_REGISTRATION_REQUIRED_NO_RAW",
+      "verified_at": "2026-10-28",
+      "data_reuse_rights": "REGISTRATION_AND_GESIS_USER_CONTRACT_REQUIRED_NOT_OBTAINED",
+      "raw_data_processed": false,
+      "independent_source_cohort": "PAIRFAM_2008_2022",
+      "audit": "research/ABR_PAIRFAM_GATE_20261028/ACCESS_AND_SCOPE_AUDIT.md"
+    },
+    {
+      "id": "SRC052",
+      "title": "Brüderl et al. (2024), pairfam Data Manual, Release 14.2, LMU/GESIS",
+      "canonical_url": "https://www.pairfam.de/fileadmin/user_upload/redakteur/publis/Dokumentation/Manuals/Data_Manual_pairfam_Release_14.2.pdf",
+      "cycle_ids": [
+        "N78"
+      ],
+      "contribution": "Primary technical PDF visually inspected: biopart month-level episodes and partner survey merge by id; notes that 14.0–14.2 biopart does not incorporate wave14; anchor-only relationships, missing/imputed dates and right-censoring, partner sample weights not constructed.",
+      "limits": "Codebook and SUF variable distribution/data rows not processed; manual is documentation for SAME pairfam source as SRC051, not independent empirical replication. Partner participants only selected and current partners.",
+      "evidence_access": "OFFICIAL_TECHNICAL_MANUAL_PAGES_5_67_69_74_106_VISUALLY_INSPECTED__RAW_BYTES_NOT_DOWNLOADED",
+      "verified_at": "2026-10-28",
+      "data_reuse_rights": "DOCUMENT_PUBLIC; SUF_REGISTERED_USERS_ONLY",
+      "raw_data_processed": false,
+      "independent_source_cohort": "PAIRFAM_2008_2022",
+      "audit": "research/ABR_PAIRFAM_GATE_20261028/ACCESS_AND_SCOPE_AUDIT.md"
     }
   ],
-  "last_added_campaign": "ABR-EXTERNAL-GATE-20261028"
+  "last_added_campaign": "ABR-PAIRFAM-GATE-20261028"
 }
