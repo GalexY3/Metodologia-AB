@@ -1,0 +1,15 @@
+{
+  "campaign": "ABR-TWO-WAY20-20261028",
+  "prereg_commit": "4eeaee46511aba8547d62d4ee97ed3e9ea54fdcf",
+  "date": "2026-10-28",
+  "state": "FROZEN_BEFORE_FIRST_RUN",
+  "input_sha256": "a0fe55d6172d01f81d6c7e2546330828cb98d1f631b2598fec4d4f4660eaa37d",
+  "script_file": "analyze.py",
+  "script_sha256": "1c0c14a47082f07f60200f0cf9d99cbc8b3ee4e37de2fef9b781a0dac92b414c",
+  "script_bytes": 10348,
+  "script_syntax_compiled": true,
+  "implementation_details": "two-way sparse FWL residualization scipy lsqr, cluster-chooser SE, fixed degree and opportunity within wave via checkerboard MCMC; 250 saved draws, 100k proposals plus burnin per sex; threshold accepted swaps>=1000, unique trace >=30",
+  "user_data_not_rehosted": true,
+  "run_status": "NOT_RUN_AT_FREEZE",
+  "limits": "Source script in local reproducibility bundle, not in GitHub unless uploaded separately"
+}
