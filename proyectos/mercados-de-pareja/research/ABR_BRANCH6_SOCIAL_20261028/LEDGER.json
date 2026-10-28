@@ -1,0 +1,281 @@
+{
+  "schema": "ab.research.ledger.v1",
+  "campaign": "ABR-BRANCH6-SOCIAL-20261028",
+  "date": "2026-10-28",
+  "branch": "research/ab-r-mercados-pareja-20261028",
+  "authorized": 6,
+  "executed_valid": 6,
+  "invalid": 0,
+  "planning": 0,
+  "remaining": 0,
+  "types": {
+    "data_quality": 1,
+    "observational_empirical": 3,
+    "sensitivity": 1,
+    "comparative": 1
+  },
+  "source_data": {
+    "columbia_uploaded_sha256": "a0fe55d6172d01f81d6c7e2546330828cb98d1f631b2598fec4d4f4660eaa37d",
+    "mixmosa_interactions_blob": "c4aba45888dc07573b6bd12554f73fb57ebb0479",
+    "mixmosa_features_blob": "99679f0e33b55099a4a0705810dd9771019554d"
+  },
+  "prereg_commit": "6cabe7a8c007a6b3800aa84f0789a6e56489d1be",
+  "freeze_commits": [
+    "1d18c0b8b03824691c090ae061089d271395b4e5",
+    "c45224c483563e53e374ac957d4f3dc32927c73d"
+  ],
+  "source_script_sha256": "73dc77b2690e62974520be55a704fde1c2f07522e3f41e275e9304f5ef74ff51",
+  "mixmosa_script_sha256": "ae2eba435cc57f2a04e29d534219c40560b27a67d9f0e0442aa07cb70aaab1a8",
+  "reproduction": {
+    "columbia_repeat_identical": true,
+    "columbia_output_sha256": "968da0ea68e35a36c898a2bfe790fa93a52c1931cef76ebe63077b4cf88f72a4",
+    "mixmosa_repeat_identical": true,
+    "clone_clean": false,
+    "no_raw_rehosting": true
+  },
+  "CT2": {
+    "before": 17,
+    "after_each": [
+      17,
+      17,
+      17,
+      17,
+      17,
+      17
+    ],
+    "end": 17,
+    "scale": "ordinal 1-100, not a probability"
+  },
+  "new_N1": {
+    "count": 1,
+    "status": "TENTATIVE_LOCAL_EXPLORATORY",
+    "id": "MATE-N46-AGEGAP-REVERSAL",
+    "portfolio_n1": "NOT_AUDITED",
+    "deduplicated_with_n42": true
+  },
+  "N2": 0,
+  "N3": 0,
+  "prior_art": {
+    "Fisman2006": "https://doi.org/10.1162/qjec.2006.121.2.673",
+    "Fisman2008": "https://doi.org/10.1111/j.1467-937X.2007.00465.x"
+  },
+  "drift": {
+    "distance": 0.4,
+    "parent_domain": "assortative mating",
+    "new_domain": "homophily vs popularity in speed dating",
+    "what_changed": "new observables age-gap and exact academic-field with actor fixed-effect controls, same theoretical project"
+  },
+  "cycles": [
+    {
+      "method": "AB 3.2.1 O3-O6",
+      "branch": "research/ab-r-mercados-pareja-20261028",
+      "prereg_commit": "6cabe7a8c007a6b3800aa84f0789a6e56489d1be",
+      "pre_experiment_code_sha256": "73dc77b2690e62974520be55a704fde1c2f07522e3f41e275e9304f5ef74ff51",
+      "source_freeze_commit": "1d18c0b8b03824691c090ae061089d271395b4e5",
+      "mixmosa_source_freeze_update": "c45224c483563e53e374ac957d4f3dc32927c73d",
+      "pop_prior_art": [
+        "Fisman et al 2006 QJE",
+        "Fisman et al 2008 ReStud",
+        "Bruch & Newman 2018 Sci Adv"
+      ],
+      "CT2": 17,
+      "id": "N41",
+      "type": "DATA_QUALITY_AB",
+      "A": "¿El diseño disponible distingue correctamente oportunidades, individuo, parejas y atributos?",
+      "B": "Tablas inconsistentes o sesgadas vs datos válidos para comparaciones exploratorias.",
+      "C": "QA duplicados, pareados espejo, edad, campo académico y popularidad LOO; verificar estabilidad de campo por persona.",
+      "D": "Parquet SHA fijado, script congelado; 121 campos y lectura local del Parquet limpiado.",
+      "E": "8.368 filas dirigidas, 4.184 díadas, 21 eventos, 551 personas; espejos de decisiones previamente 0 errores; edad en 8.180/8.368 filas; campo académico en 8.204/8.368; 18 categorías; campo y edad constantes dentro de cada iid; ninguna edad fuera 16–90.",
+      "F": "Copia depurada difiere en 10 filas del original difundido 8.378; field_cd es disciplina, no nivel educativo; algunos campos faltantes, subpoblación seleccionada.",
+      "G": "Réplica local exacta del script Python, QA no es muestra externa ni validación causal.",
+      "H": "Usar 4.090 decisiones dirigidas por sexo para edad; 4.102 por sexo para disciplina, sin imputar.",
+      "I": "VALID_DATA_FIT, nivel 0/3; CT2=17.",
+      "J": "CONTINUE N42–N45 bajo denominadores auditados.",
+      "CT2_before": 17,
+      "CT2_after": 17,
+      "grade_0_3": 0,
+      "external_replication": "No independent confirmation of mechanism",
+      "result_artifacts": [
+        "COLUMBIA_SUMMARY.json",
+        "MIXMOSA_N46_RESULTS.json"
+      ],
+      "N1_id": null
+    },
+    {
+      "method": "AB 3.2.1 O3-O6",
+      "branch": "research/ab-r-mercados-pareja-20261028",
+      "prereg_commit": "6cabe7a8c007a6b3800aa84f0789a6e56489d1be",
+      "pre_experiment_code_sha256": "73dc77b2690e62974520be55a704fde1c2f07522e3f41e275e9304f5ef74ff51",
+      "source_freeze_commit": "1d18c0b8b03824691c090ae061089d271395b4e5",
+      "mixmosa_source_freeze_update": "c45224c483563e53e374ac957d4f3dc32927c73d",
+      "pop_prior_art": [
+        "Fisman et al 2006 QJE",
+        "Fisman et al 2008 ReStud",
+        "Bruch & Newman 2018 Sci Adv"
+      ],
+      "CT2": 17,
+      "id": "N42",
+      "type": "EMPIRICAL_OBSERVATIONAL_AB",
+      "A": "¿Se acepta con mayor frecuencia a candidatos cercanos en edad, preservando oportunidades y propensión de cada actor?",
+      "B": "Homofilia age gap vs diferencia de edad con signo, atractivo/popularidad compartida y selección del evento.",
+      "C": "Permutar 1.000 decisiones dentro de chooser×wave, sí por participante fijo; mujeres y hombres por separado; FE ajusta signed age y target pop.",
+      "D": "Script N42 prereg + Python SHA congelada. Null por actor-evento, no asignación aleatoria original.",
+      "E": "Columbia mujeres n=4090 decisiones, exceso de proximidad frente a nulo = −0,1562 años (cola inferior .001); hombres n=4090, exceso = −0,2017 (cola inferior .001). Diferencia aceptados vs todos con el nulo no equivale a causalidad.",
+      "F": "Heterogeneidad entre actores, edades disponibles, desviación estándar 3 años, múltiples pruebas, posible edad preferida por signo y target pop. No hay relación duradera observada.",
+      "G": "N46 compara otro dataset pero no es holdout intacto diseñado para esta hipótesis.",
+      "H": "No atribuir patrones a necesidad causal de buscar semejanza, solo compatibilidad parcial con homofilia, separar signo.",
+      "I": "VALID_EXPLORATORY, 0/3 novedad no demostrada, CT2=17.",
+      "J": "CONTINUE test de disciplina y popularidad.",
+      "CT2_before": 17,
+      "CT2_after": 17,
+      "grade_0_3": 0,
+      "external_replication": "No independent confirmation of mechanism",
+      "result_artifacts": [
+        "COLUMBIA_SUMMARY.json",
+        "MIXMOSA_N46_RESULTS.json"
+      ],
+      "N1_id": null
+    },
+    {
+      "method": "AB 3.2.1 O3-O6",
+      "branch": "research/ab-r-mercados-pareja-20261028",
+      "prereg_commit": "6cabe7a8c007a6b3800aa84f0789a6e56489d1be",
+      "pre_experiment_code_sha256": "73dc77b2690e62974520be55a704fde1c2f07522e3f41e275e9304f5ef74ff51",
+      "source_freeze_commit": "1d18c0b8b03824691c090ae061089d271395b4e5",
+      "mixmosa_source_freeze_update": "c45224c483563e53e374ac957d4f3dc32927c73d",
+      "pop_prior_art": [
+        "Fisman et al 2006 QJE",
+        "Fisman et al 2008 ReStud",
+        "Bruch & Newman 2018 Sci Adv"
+      ],
+      "CT2": 17,
+      "id": "N43",
+      "type": "EMPIRICAL_OBSERVATIONAL_AB",
+      "A": "¿La coincidencia de disciplina académica se asocia a la aceptación más de lo que permiten las oportunidades?",
+      "B": "Homofilia de campo frente a correlación por edad o calidad no observada; nulo sin preferencia residual.",
+      "C": "Exact same field_cd entre actor y candidato, 1000 decisiones permutadas dentro chooser×wave; análisis por género.",
+      "D": "18 códigos académicos de campo y completo en 4.102 decisiones por sexo, script/freeze como N42.",
+      "E": "Mujeres: aceptación same-field menos oportunidad +0,01249 vs nulo −0,00302, exceso +0,01551, p superior≈.007. Hombres: observado +0,02197 vs nulo +0,01089, exceso +0,01108, p superior≈.010.",
+      "F": "Coincidir en disciplina no es igual nivel educativo; composición por programa/procedencia universitaria, faltantes, ensayos múltiples y atractivo correlacionado.",
+      "G": "Mixmosa no contiene field_cd equivalente; este resultado no se replica independientemente.",
+      "H": "Evidencia descriptiva débil de una vía de semejanza, no una teoría general ni estimación de preferencias puras.",
+      "I": "VALID_EXPLORATORY, nivel 0/3; CT2=17.",
+      "J": "CONTRASTAR con popularidad en N44.",
+      "CT2_before": 17,
+      "CT2_after": 17,
+      "grade_0_3": 0,
+      "external_replication": "No independent confirmation of mechanism",
+      "result_artifacts": [
+        "COLUMBIA_SUMMARY.json",
+        "MIXMOSA_N46_RESULTS.json"
+      ],
+      "N1_id": null
+    },
+    {
+      "method": "AB 3.2.1 O3-O6",
+      "branch": "research/ab-r-mercados-pareja-20261028",
+      "prereg_commit": "6cabe7a8c007a6b3800aa84f0789a6e56489d1be",
+      "pre_experiment_code_sha256": "73dc77b2690e62974520be55a704fde1c2f07522e3f41e275e9304f5ef74ff51",
+      "source_freeze_commit": "1d18c0b8b03824691c090ae061089d271395b4e5",
+      "mixmosa_source_freeze_update": "c45224c483563e53e374ac957d4f3dc32927c73d",
+      "pop_prior_art": [
+        "Fisman et al 2006 QJE",
+        "Fisman et al 2008 ReStud",
+        "Bruch & Newman 2018 Sci Adv"
+      ],
+      "CT2": 17,
+      "id": "N44",
+      "type": "EMPIRICAL_OBSERVATIONAL_AB",
+      "A": "¿Cuánto explica popularidad comparado con semejanza, dentro de cada decisor?",
+      "B": "Calidad consensuada vs semejanza de edad/campo vs mecanismo mixto.",
+      "C": "Modelo lineal de probabilidad con efectos fijos por chooser; mismas filas completas, popularidad LOO; distancia absoluta y firmada edad, same field; errores cluster chooser; R² in-sample.",
+      "D": "Python congelado con statsmodels, variables normalizadas por desviación típica, mínimo 500 y >50 choosers con variación.",
+      "E": "N=4071 decisiones completas por sexo. Mujeres R² within: pop .13914, solo semejanza .00546, combinado .14242; hombres pop .16270, semejanza .01070, combinado .16784. Coef pop combinado por SD: +.1693 y +.1876; mismo campo +.0242 y +.0240 por SD. Edad abs ajustada: −.0120 (SE .0094) mujeres, −.0254 (SE .0078) hombres.",
+      "F": "Popularidad contemporánea de otros observadores tiene sesgo de mismo evento y no es puntuación prospectiva; FE comprador no controla repetición de candidato ni cluster dual; R² no demuestra mejora out-of-sample ni causalidad.",
+      "G": "N46 no dispone de mismas variables, análisis observado es único Columbia.",
+      "H": "Explicación por preferencias por calidad compartida es fuerte descriptivamente, pero homofilia no desaparece completamente. No se cuantifican preferencias estructurales por género.",
+      "I": "VALID_EXPLORATORY, 0/3 novedad de enfoque no acreditada; CT2=17.",
+      "J": "CONTINUE heterogeneidad entre eventos y réplica de edad.",
+      "CT2_before": 17,
+      "CT2_after": 17,
+      "grade_0_3": 0,
+      "external_replication": "No independent confirmation of mechanism",
+      "result_artifacts": [
+        "COLUMBIA_SUMMARY.json",
+        "MIXMOSA_N46_RESULTS.json"
+      ],
+      "N1_id": null
+    },
+    {
+      "method": "AB 3.2.1 O3-O6",
+      "branch": "research/ab-r-mercados-pareja-20261028",
+      "prereg_commit": "6cabe7a8c007a6b3800aa84f0789a6e56489d1be",
+      "pre_experiment_code_sha256": "73dc77b2690e62974520be55a704fde1c2f07522e3f41e275e9304f5ef74ff51",
+      "source_freeze_commit": "1d18c0b8b03824691c090ae061089d271395b4e5",
+      "mixmosa_source_freeze_update": "c45224c483563e53e374ac957d4f3dc32927c73d",
+      "pop_prior_art": [
+        "Fisman et al 2006 QJE",
+        "Fisman et al 2008 ReStud",
+        "Bruch & Newman 2018 Sci Adv"
+      ],
+      "CT2": 17,
+      "id": "N45",
+      "type": "SENSITIVITY_AB",
+      "A": "¿La correlación de popularidad entre mutuas en Columbia depende de pocos eventos?",
+      "B": "Efecto agregado espurio de una sola sesión vs heterogeneidad de mercados.",
+      "C": "21 ondas, r entre mutuas por wave con >=10, leave-one-wave-out y split 1–10 vs 11–21.",
+      "D": "Misma muestra Parquet y definición LOO N39, no reoptimización; script congelado.",
+      "E": "18/21 waves superan 10 mutuas; 14 de esos 18 r positivos, 4 negativos; rangos por onda [−.4124,.7044]; r global +.1244, leave-one-wave-out [.0963,.1631]; 1–10 +.1152, 11–21 +.1400.",
+      "F": "R por wave muy ruidoso en 10–60 citas, variación no equivale a efecto causal del mercado; cohortes y preferencias distintas por wave.",
+      "G": "No hay segunda muestra para r por wave con misma definición prospectiva; Mixmosa r agregado negativo.",
+      "H": "No procede afirmar homogamia uniforme entre sesiones; señal agregada no depende de un único wave eliminado.",
+      "I": "VALID_SENSITIVITY_EXPLORATORY, 0/3; CT2=17.",
+      "J": "RETAIN HETEROGENEITY and carry to N46.",
+      "CT2_before": 17,
+      "CT2_after": 17,
+      "grade_0_3": 0,
+      "external_replication": "No independent confirmation of mechanism",
+      "result_artifacts": [
+        "COLUMBIA_SUMMARY.json",
+        "MIXMOSA_N46_RESULTS.json"
+      ],
+      "N1_id": null
+    },
+    {
+      "method": "AB 3.2.1 O3-O6",
+      "branch": "research/ab-r-mercados-pareja-20261028",
+      "prereg_commit": "6cabe7a8c007a6b3800aa84f0789a6e56489d1be",
+      "pre_experiment_code_sha256": "73dc77b2690e62974520be55a704fde1c2f07522e3f41e275e9304f5ef74ff51",
+      "source_freeze_commit": "1d18c0b8b03824691c090ae061089d271395b4e5",
+      "mixmosa_source_freeze_update": "c45224c483563e53e374ac957d4f3dc32927c73d",
+      "pop_prior_art": [
+        "Fisman et al 2006 QJE",
+        "Fisman et al 2008 ReStud",
+        "Bruch & Newman 2018 Sci Adv"
+      ],
+      "CT2": 17,
+      "id": "N46",
+      "type": "COMPARATIVE_AB",
+      "A": "¿La señal de preferencia por proximidad de edad se reproduce entre Columbia y Mixmosa bajo la misma clase de nulo de decisión?",
+      "B": "Semejanza universal por género, alternativa de selección heterogénea por mercado y patrones distintos de oportunidad.",
+      "C": "En Mixmosa 1.000 permutaciones de sí entre citas de cada mismo chooser×event; comparar exceso vs media nula en Columbia, por género y por edad firmada.",
+      "D": "Mixmosa CSV originales Git blob c4aba... y 99679..., script JS congelado SHA ae2eba435c..., fuente en GitHub y ejecución repetida idéntica.",
+      "E": "Mixmosa edad 1.888/1.895 citas. Mujeres n=1.888 decisiones, exceso de proximidad −0,20957 años frente nulo actor-evento (p cola inferior .003); hombres n=1.888, exceso +0,11708 años, es decir menos proximidad que nulo (p cola superior .018). Columbia mujeres −0,15624 y hombres −0,20169. Resultado masculino de signo opuesto entre estudios.",
+      "F": "Los diseños difieren en época, población y 4 vs 8 minutos, edad disponible y redes; múltiples pruebas exploratorias, signo condicionado a media aceptada vs media disponible; control no separa afinidad por misma edad de gustos por edades concretas. NO replicación causal.",
+      "G": "Dos muestras públicas independientes de citas rápidas, análisis con misma clase de permutación, resultado heterogéneo; segunda ejecución Mixmosa idéntica, local Columbia idéntica, sin reejecución clon limpio.",
+      "H": "Rechazar coeficientes fijos universales de homofilia por sexo; construir hipótesis nueva sobre composición del evento y orientación hacia rango de edad, a probar prospectivamente.",
+      "I": "CANDIDATE_1_OF_3 exploratory localized cross-sample counterexample; no scientific priority/causal generality; CT2=17.",
+      "J": "STOP_R5 campańa 6/6, requiere fuente prospectiva y comparador multivariable, no extender simulaciones solo para r.",
+      "CT2_before": 17,
+      "CT2_after": 17,
+      "grade_0_3": 1,
+      "external_replication": "Cross-market observational contrast, not causal replication",
+      "result_artifacts": [
+        "COLUMBIA_SUMMARY.json",
+        "MIXMOSA_N46_RESULTS.json"
+      ],
+      "N1_id": "MATE-N46-AGEGAP-REVERSAL"
+    }
+  ],
+  "R5": "STOP_CAMPAIGN_AT_6_OF_6; no new authorized cycles"
+}
