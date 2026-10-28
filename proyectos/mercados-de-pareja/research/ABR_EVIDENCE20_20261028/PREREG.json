@@ -1,0 +1,111 @@
+{
+  "schema": "ab.research.campaign.v1",
+  "id": "ABR-EVIDENCE20-20261028",
+  "date": "2026-10-28",
+  "project": "mercados-de-pareja",
+  "branch": "research/ab-r-mercados-pareja-20261028",
+  "parent": "ABR-EVIDENCE6-20261028",
+  "authorization": "User explicitly authorized 20 BRANCHING AB-R additional cycles, R5 stopping permitted",
+  "cycles_granted": 20,
+  "cycles_started": 0,
+  "initial_phase": 7,
+  "remaining_unstarted": 13,
+  "selection_exposure": "All previous MATE10, BRANCH8, BRANCH6, EVIDENCE6 synthetic outcomes are exploratory; further synthetic runs cannot be presented as independent human replication",
+  "R5": "If no new external usable dyadic data or discriminating prediction, stop after 7 rather than filling quota",
+  "seeds": [
+    411,
+    733,
+    1099,
+    1481,
+    2017
+  ],
+  "source_priorities": [
+    "INE ECP 59583",
+    "INE marriages 60268",
+    "Funcas Focus 2025 ESS Wave 11",
+    "University of Essex Ortega 2018 public field experiment",
+    "Hitsh Hortaçsu Ariely 2010"
+  ],
+  "outcomes": [
+    "Documented external age/education descriptive data",
+    "theorem validity and small-n exhaustive tests",
+    "r pooled and r within groups; global and stratified matched-person shuffles",
+    "r and coverage in prior simulations",
+    "gate audit of no-public reject assumption"
+  ],
+  "cycles": [
+    {
+      "id": "N21",
+      "type": "DOCUMENTARY_AB",
+      "A_question": "Contrastar indicadores de parejas convivientes España con datos publicados ESS 2024/Funcas 2025",
+      "B_rivals": "H0 datos no prueban nuestra tesis de valor latente; H1 revelan un patrón de asimetría educativa informativo",
+      "C_predefined_discriminant": "Verificar PDF página/figura, denominador exacto, pesos y cohortes, transcribir solo cifras explícitas y delimitar traslado a mercado de citas",
+      "D_plan": "Freeze inputs and code for computational cycles; cite URL/date/denominator for document cycles",
+      "status": "NOT_STARTED",
+      "grade": "UNASSESSED"
+    },
+    {
+      "id": "N22",
+      "type": "DOCUMENTARY_AB",
+      "A_question": "Evaluar datasets públicos de interacciones de dating y acceso/variables",
+      "B_rivals": "H0 sin aristas pareadas ni exposiciones no puede probarse sorting; H1 datasets con historia diádica proporcionan posible contraste",
+      "C_predefined_discriminant": "Examinar Essex 2018 RCT anonymized 67KB, licencia/variables accesibles, SwipeStats, AEA; no inferir variables no inspeccionadas ni comprar datos",
+      "D_plan": "Freeze inputs and code for computational cycles; cite URL/date/denominator for document cycles",
+      "status": "NOT_STARTED",
+      "grade": "UNASSESSED"
+    },
+    {
+      "id": "N23",
+      "type": "FORMAL_AB",
+      "A_question": "Auditar si matching estable homogámico es matemáticamente automático bajo ordenamientos comunes",
+      "B_rivals": "H0 la homogamia fuerte puede ser consecuencia lógica de rankings comunes; H1 requiere preferencia explícita por similitud",
+      "C_predefined_discriminant": "Demostrar por inducción unique stable matching de dos ranking estrictamente comunes n=n, sin opción exterior y grafo completo; auditar con enumeración n≤6 de todas las permutaciones",
+      "D_plan": "Freeze inputs and code for computational cycles; cite URL/date/denominator for document cycles",
+      "status": "NOT_STARTED",
+      "grade": "UNASSESSED"
+    },
+    {
+      "id": "N24",
+      "type": "EXPERIMENTAL_AB",
+      "A_question": "Cuantificar confusión por pertenencia a segmento mediante descomposición de covarianza",
+      "B_rivals": "H0 la correlación agregada puede ser alta con 0 asociación interna sin elección assortativa; H1 requiere preferencias homogámicas individuales",
+      "C_predefined_discriminant": "Cuatro submercados: medias conjuntas [.15,.35,.65,.85], sigma=.08, parejas aleatorias dentro; N=24000, 5 semillas; Pearson pooled, weighted within, permutación intra vs global. Fórmula E Cov + Cov(E,E). Sin preferencias por parecido.",
+      "D_plan": "Freeze inputs and code for computational cycles; cite URL/date/denominator for document cycles",
+      "status": "NOT_STARTED",
+      "grade": "UNASSESSED"
+    },
+    {
+      "id": "N25",
+      "type": "REANALYSIS_AB",
+      "A_question": "Auditar la selección por estar emparejado y denominador frente correlación condicionada",
+      "B_rivals": "H0 r entre emparejados identifica calidad total del mercado; H1 excluir solteros altera interpretación",
+      "C_predefined_discriminant": "Reanalizar resultados CSV existentes EVIDENCE6 N17 por condición (5 semillas); correlación y cobertura reportadas juntas; comparar estrategias, mediana gap, no afirmar bienestar. Verificar recuentos vs fuente.",
+      "D_plan": "Freeze inputs and code for computational cycles; cite URL/date/denominator for document cycles",
+      "status": "NOT_STARTED",
+      "grade": "UNASSESSED"
+    },
+    {
+      "id": "N26",
+      "type": "DOCUMENTARY_AB",
+      "A_question": "Identificar qué mide el rechazo social real, y qué hay que observar sobre su difusión",
+      "B_rivals": "H0 rechazo privado reduce estatus social ante terceros por defecto; H1 solo señales públicas/compartidas permiten el mecanismo",
+      "C_predefined_discriminant": "Comparar estudios unmatching efectos psicológicos 2026, awareness cues diario 2025 y prácticas de datos; diferenciar autoestima, reputación observada, status económico y señales socialmente difundidas",
+      "D_plan": "Freeze inputs and code for computational cycles; cite URL/date/denominator for document cycles",
+      "status": "NOT_STARTED",
+      "grade": "UNASSESSED"
+    },
+    {
+      "id": "N27",
+      "type": "PLANNING_AB_ONLY",
+      "A_question": "Definir puerta de confirmación y decidir R5",
+      "B_rivals": "H0 evidencias no identifican causalidad ni novedad; H1 se obtiene dataset apto para discriminante",
+      "C_predefined_discriminant": "Evaluar viabilidad de matriz educativa completa/ESS, datasets diádicos, permiso ética, baseline estable; STOP si datos independientes no descargados y no emergen predicciones novedosas; dejar bloque no ejecutado.",
+      "D_plan": "Freeze inputs and code for computational cycles; cite URL/date/denominator for document cycles",
+      "status": "NOT_STARTED",
+      "grade": "UNASSESSED"
+    }
+  ],
+  "future_13": "Unstarted slots under this authorization; no invented cycles or projected execution. Can reopen after acquisition of truly new data and updated prereg.",
+  "CT2_before": 17,
+  "level2_gate": "independent relevant empirical data + competent baseline + novelty and external replication"
+}
