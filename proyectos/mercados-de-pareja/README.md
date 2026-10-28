@@ -2,6 +2,10 @@
 
 **Proyecto AB-R (autoría de investigación: Alejandro Panera Pascual)**. Proyecto hermano de `proyectos/politics-fantasy-league/`, deliberadamente más ligero. **Estado: piloto exploratorio, sin hallazgo 2/3 ni calibración empírica.** Rama de trabajo: `research/ab-r-mercados-pareja-20261028`. Corte: 28/10/2026.
 
+## Continuidad AB-R y cierre interactivo
+
+Para reanudar, leer [estado canónico actualizado](CURRENT.md) y los ledgers del último bloque. Toda respuesta de este proyecto debe terminar con un **botón funcional** para continuar el saldo aprobado o, solo cuando se haya agotado, autorizar 20–45 ciclos adicionales conforme a [O6](../../docs/AB_3_2_1_O6_CAMPANAS_INFORMES_CT2_Y_CICLOS.md). La acción no trabaja en segundo plano; bajo R5, pulsar continuar no fuerza gastar plazas si no aparece evidencia discriminante. No mezclar el coste de documentar esta regla con ciclos A–J.
+
 ## Pregunta
 ¿Puede aparecer similitud en valor relacional de los integrantes de una pareja a partir de búsqueda individual de la mejor opción alcanzable, aceptación bilateral y salida del mercado, aunque nadie prefiera directamente la semejanza? ¿En qué condiciones la búsqueda, el estatus dinámico, la población elegible y la fragmentación modifican esa estructura?
 
