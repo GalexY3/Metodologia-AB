@@ -1,0 +1,27 @@
+{
+  "id": "N05-REPAIR-01",
+  "date": "2026-10-28",
+  "status": "INVALID_ORIGINAL_RETAINED_AND_REPAIR_PRE_FROZEN",
+  "original": "experiment_frozen_a4c4.py N05 permits repeat of a rejected dyad, contrary to prereg D",
+  "original_results": "RESULTS.csv N05 rows INVALID; others remain exploratorily usable",
+  "repair_sha256": "7b6a1ec3db5ad1785633d636e824fb8df5973ac23a1e57f91488a577ef69ba49",
+  "repair_bytes": 3330,
+  "repair_script": "repair_n05.py",
+  "repair_change": "past_decision matrix, repeated dyads skipped before rating, no re-rating after rejection",
+  "repair_primary_outcomes": [
+    "coverage",
+    "correlation initial value among matched",
+    "repeat_skips"
+  ],
+  "seeds": [
+    202,
+    404,
+    606
+  ],
+  "prereg_timing": "BEFORE_REPAIR_EXECUTION",
+  "does_not_count_new_cycle": true,
+  "limitations": [
+    "different feasible exposure numbers among conditions due to skips",
+    "source code must be preserved and re-audited"
+  ]
+}
