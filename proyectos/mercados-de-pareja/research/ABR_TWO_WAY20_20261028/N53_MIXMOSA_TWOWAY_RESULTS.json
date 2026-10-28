@@ -1,0 +1,47 @@
+{
+  "result": {
+    "source": "Mixmosa 1,895 original dates",
+    "input_rows": 1895,
+    "age_complete_dates": 1888,
+    "age_missing_dates": 7,
+    "by_sex": {
+      "women_choosing_men": {
+        "status": "FITTED",
+        "n": 1888,
+        "actors": 207,
+        "candidates": 202,
+        "age_gap_mean": 3.794491525423729,
+        "age_gap_sd": 3.461980450516557,
+        "coef_per_sd": -0.04152810418487941,
+        "SE_cluster_chooser": 0.0154190604067329,
+        "partial_r2": 0.004007435481406474,
+        "iterations_x": 364,
+        "iterations_y": 328,
+        "noncausal": true
+      },
+      "men_choosing_women": {
+        "status": "FITTED",
+        "n": 1888,
+        "actors": 202,
+        "candidates": 207,
+        "age_gap_mean": 3.794491525423729,
+        "age_gap_sd": 3.461980450516557,
+        "coef_per_sd": -0.0009428411306513471,
+        "SE_cluster_chooser": 0.020488955168770553,
+        "partial_r2": 0.0000018638829671902002,
+        "iterations_x": 372,
+        "iterations_y": 348,
+        "noncausal": true
+      }
+    }
+  },
+  "code_git_blob": "1c2c5261ae478abbb0e0e106a3e8dfb7bd8914ab",
+  "source_blobs": [
+    "c4aba45888dc07573b6bd12554f73fb57ebb0479",
+    "99679f0e33b55099a4a0705810dd9771019554d0"
+  ],
+  "frozen_before_execution": "0b8fc2bfc4120e42bca64c347aaee3d0406c9fa1",
+  "identical_repeat": true,
+  "input_original_not_rehosted": true,
+  "scope": "observational only"
+}
