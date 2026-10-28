@@ -4,15 +4,15 @@
   "project": "mercados-de-pareja",
   "branch": "research/ab-r-mercados-pareja-20261028",
   "authorized": 20,
-  "completed_valid": 18,
+  "completed_valid": 20,
   "invalid_attempts": 1,
   "planning_cycles": 2,
   "documentary_cycles": 3,
   "formal_cycles": 1,
   "synthetic_cycles": 1,
   "reanalysis_cycles": 1,
-  "remaining_authorized_not_started": 2,
-  "R5": "STOP_R5_AFTER_18_VALID__2_UNSTARTED__SECOND_SOURCE_NOT_ANALYSABLE",
+  "remaining_authorized_not_started": 0,
+  "R5": "STOP_R5_FULL_AUTHORIZED_BUDGET_20_OF_20__NO_2_OF_3",
   "prereg_commit": "8949077025a8d585fecdc3cec09ec13710cd5a72",
   "source_freeze_commit": "f7e8e2d6328ffda72745e1018625bf6464ae2dcc",
   "source_commit": "5d8a3291fa73eff1a3a20468a38aa85cef575bbb",
@@ -24,6 +24,8 @@
   "CT2": {
     "start": 17,
     "after_each_cycle": [
+      17,
+      17,
       17,
       17,
       17,
@@ -513,6 +515,50 @@
       "readme": "GATE_REPORT.md",
       "experiment_executed": false,
       "subcampaign": "ABR_REPLICATION_GATE_20261028"
+    },
+    {
+      "id": "N39",
+      "type": "EMPIRICAL_AB",
+      "status": "COMPLETED_OBSERVATIONAL",
+      "A": "¿Existe homogamia de popularidad en el conjunto Columbia y supera un nulo que conserva oportunidades de evento?",
+      "B": "H0 las correlaciones emergen de estructura/eventos y selección, H1 la aceptación mutua es selectiva respecto a popularidad de ambos",
+      "C": "Leer 121 columnas, 8368 filas dirigidas, deduplicar cada encuentro, cotejar dec/dec_o/match y calcular popularidad con otras citas; permutar labels dentro evento 1000 repeticiones, nulos de mutualidad por evento/persona y bootstrap evento.",
+      "D": "Prereg commit c1382f77 y fuente SHA256 c1fa1ae1 congelada antes de inferencia commit 9d9bcf9a. Usuario adjuntó Parquet SHA256 a0fe55d6; lector compacto Thrift/SNAPPY local, numpy/pandas.",
+      "E": "4184 fechas únicas, 21 waves, 551 participantes (274 mujeres 277 hombres); mirror/match invariants 0 errores; 690 mutuas. r_popularidad_matched +0.1244, todas las fechas -0.0441; permutación por wave media -0.03865, intervalo [-0.1022,+0.02835], cola superior ≈.001; bootstrap por wave [0.0376,0.2516]. Nulo de mutualidad por evento ~710 vs 690 reales, woman-wave ~673; no exceso robusto de mutualidad.",
+      "F": "Identidad de personas y encuentros repetidos, decisiones simultáneas no causalmente aleatorizadas, matching label null no preserva propensiones de los individuos. Estado post hoc de permutación de grados añadido pero separado. Dataset Columbia limpiado descarta 10 filas respecto a raw sin explicación independiente.",
+      "G": "Observacional en muestra distinta de Mixmosa, pero constructo de valor y experiencia de citas no equivalentes; no external validation of causal mechanism.",
+      "H": "Ordenación pequeña positiva posible en ciertos eventos; no r=.9 general. Priorizar nulos persona-evento y matching estable, homofilia explícita, status measured before outcomes.",
+      "I": {
+        "scientific_level": 0,
+        "novelty": "UNACCREDITED",
+        "causal": "NOT_IDENTIFIED",
+        "quality": "VALID_INTERNAL_QA",
+        "ct2_after": 17
+      },
+      "J": "PASSED real dataset gate, do not claim homophily-free emergence; prereg result saved and no raw rows rehosted.",
+      "subcampaign": "ABR-COLUMBIA-N39-N40-20261028"
+    },
+    {
+      "id": "N40",
+      "type": "COMPARATIVE_AB",
+      "status": "COMPLETED_SYNTHESIS",
+      "A": "¿El resultado Columbia reproduce el hallazgo de popularidad de Mixmosa y valida la teoría?",
+      "B": "H0 asociaciones dependen de muestra y proxies, H1 el sorting de popularidad es estable entre mercados y específicamente debido a maximización sin homofilia",
+      "C": "Comparar r matched y nulidad estratificada por evento de Columbia vs Mixmosa sin ponderar poblaciones diferentes; revisar propensiones, muestras, duración y resultados negativos; auditoría R5 y niveles.",
+      "D": "Fuente Columbia AGGREGATES.json, Mixmosa N33_N35_EXTRA_RESULTS.json GitHub blob 1b9fd88d; esquema de N39 congelado y resultados en README sin publicar datos de personas.",
+      "E": "Columbia N=4184 citas, 690 mutuas, 21 waves, r_matched +0.1244, permutación por evento media -.03865, percentiles [-.1022,+.02835]; Mixmosa 1895 citas, 259 mutuas, 30 eventos, r_matched -.01587, permutación por evento media -.05451, percentiles [-.16435,+.06853]. Columbia positivo; Mixmosa compatible con nulo.",
+      "F": "Población, 4 vs 8 minutos, evento, selección y proxy distintos; no existe calibración española ni visibilidad a terceros del rechazo; no deducir causalidad ni efectos únicos de status.",
+      "G": "Segunda fuente de parejas vinculadas analizada, no confirmación de un mecanismo causal o generalidad en España; p values descriptive null models only.",
+      "H": "Reformular hacia heterogeneidad de mercados, estructura de exposición, popularidad y preferencias medibles. No ajustar dinámica del simulador usando estas dos muestras como única validación.",
+      "I": {
+        "scientific_level": 0,
+        "novelty": "UNACCREDITED",
+        "causal": "NOT_IDENTIFIED",
+        "ct2_before": 17,
+        "ct2_after": 17
+      },
+      "J": "STOP_R5 after full budget 20/20; prospective hypothesis and independent cross-sample prereg prerequisite for more cycles.",
+      "subcampaign": "ABR-COLUMBIA-N39-N40-20261028"
     }
   ],
   "real_data_continuation": {
@@ -525,5 +571,7 @@
     "prereg": "../ABR_REALDATA13_20261028/PREREG.json",
     "report": "../ABR_REALDATA13_20261028/REPORT.md"
   },
-  "second_source_gate": "research/ABR_REPLICATION_GATE_20261028/LEDGER.json"
+  "second_source_gate": "research/ABR_REPLICATION_GATE_20261028/LEDGER.json",
+  "latest_external_dataset": "Columbia Speed Dating parquet 4184 unique encounters, 690 mutually accepted, r-popularity .1244; contrasted with Mixmosa -.0159",
+  "last_report": "proyectos/mercados-de-pareja/research/ABR_COLUMBIA_N39_N40_20261028/REPORT.md"
 }
