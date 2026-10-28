@@ -1,0 +1,52 @@
+{
+  "schema": "ab.research.source_gate.v1",
+  "campaign": "ABR-THIRD-SOURCE-20261028",
+  "date": "2026-10-28",
+  "branch": "research/ab-r-mercados-pareja-20261028",
+  "parent": "ABR-TWO-WAY20-20261028",
+  "authorization": "11 remaining slots from previously granted 20",
+  "cycle_budget": {
+    "previous_valid": 9,
+    "remaining_start": 11,
+    "planned_gate": 2,
+    "no_auto_filling": true
+  },
+  "timing": "Protocol for ACCESS and CLASSIFICATION recorded after discovery of published 2025 paper; NOT a preregistration of discovery and NOT an analysis of unpublished raw data.",
+  "initial_knowledge": "The authors' published abstract already reports aspirational pursuit and stronger homophily among reciprocal contacts; OSF is declared by the publication but has returned 403. Any novelty audit is retrospective.",
+  "cycles": [
+    {
+      "id": "N56",
+      "type": "DATA_ACCESS_DOCUMENTARY_AB",
+      "A": "Is a new genuinely independent dating-app dyadic sample accessible with original raw files, rights and three prospectivity variables?",
+      "B": "H1 genuine processed and licensable data enable contrast vs H0 research article/metadata only and no exposure timestamps",
+      "C": "Check publisher OSF link, exact download/HTTP response, container network, public article data section for exposure, time order, conditional reciprocity. Record access distinct from publication claim and OSF licence distinct from article CC BY.",
+      "D": "Journal publication, OSF DOI, requests via sandbox disabled DNS, web HTTP responses, GitHub alternative mirror search.",
+      "gate": "If no row-level file decoded, no empirical AB cycles and no numerical replication."
+    },
+    {
+      "id": "N57",
+      "type": "PRIOR_ART_ADVERSARIAL_AB",
+      "A": "Is core claim homogamy of desirability from rejection filtering without initial homophily original?",
+      "B": "H1 novel differentiated prediction vs H0 published 2025 Czech network study and earlier published studies already claim same direction",
+      "C": "Compare precise logical estimand, causal mechanism, available fields and independent reproducibility; distinguish rejection-based *selection* from social status *decline*. Record mandatory revision of research novelty and R5.",
+      "D": "PLOS 2025 Topinkova/Diviak peer-reviewed primary text, 2021 Czech age study, 2025 experimental popularity intervention, 2026 matchmaking article."
+    }
+  ],
+  "next_unstarted": [
+    "N58",
+    "N59",
+    "N60",
+    "N61",
+    "N62",
+    "N63",
+    "N64",
+    "N65",
+    "N66"
+  ],
+  "status": "ACCESS_GATE_NOT_NEW_DATA_ANALYSIS",
+  "CT2_start": 13,
+  "N1_prior": "N46 local 1/3 remains weak under prior two-way FE",
+  "R5": "STOP if published result confirms no novelty and raw prospectivity unavailable",
+  "privacy": "no raw user records moved",
+  "grade_gate": "No >=2/3 without new genuinely discriminating independent evidence and originality."
+}
