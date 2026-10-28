@@ -4,7 +4,7 @@
   "title": "Mercados de pareja · AB-R",
   "mode": "research",
   "created_at": "2026-10-28T18:00:00+01:00",
-  "updated_at": "2026-10-28T18:20:00+01:00",
+  "updated_at": "2026-10-28T20:30:00+01:00",
   "nodes": [
     {
       "id": "root",
@@ -685,6 +685,153 @@
         "verified_by": "",
         "verified": false
       }
+    },
+    {
+      "id": "N21",
+      "title": "ESS 2024: asimetría educativa España",
+      "kind": "question",
+      "mode": "research",
+      "status": "answered",
+      "detail": "76% hombres universitarios convivientes con pareja universitaria vs 53% mujeres universitarias, condicionales no equivalentes a app",
+      "sources": [
+        "research/ABR_EVIDENCE20_20261028/LEDGER.json",
+        "research/ABR_EVIDENCE20_20261028/REPORT.md"
+      ],
+      "created_at": "2026-10-28T20:30:00+01:00",
+      "updated_at": "2026-10-28T20:30:00+01:00",
+      "phase": null,
+      "acceptance": {
+        "criteria": "",
+        "evidence": [],
+        "verified_by": "",
+        "verified": false
+      }
+    },
+    {
+      "id": "N22",
+      "title": "Dataset de citas con exposición diádica",
+      "kind": "blocker",
+      "mode": "research",
+      "status": "blocked",
+      "detail": "Essex 2018 XLSX públicamente anunciado pero no descargado/inspeccionado",
+      "sources": [
+        "research/ABR_EVIDENCE20_20261028/LEDGER.json",
+        "research/ABR_EVIDENCE20_20261028/REPORT.md"
+      ],
+      "created_at": "2026-10-28T20:30:00+01:00",
+      "updated_at": "2026-10-28T20:30:00+01:00",
+      "phase": null,
+      "acceptance": {
+        "criteria": "",
+        "evidence": [],
+        "verified_by": "",
+        "verified": false
+      }
+    },
+    {
+      "id": "N23",
+      "title": "Teorema de rankings idénticos",
+      "kind": "question",
+      "mode": "research",
+      "status": "answered",
+      "detail": "Matching estable top-top único, prueba n general y exhaustiva n≤6",
+      "sources": [
+        "research/ABR_EVIDENCE20_20261028/LEDGER.json",
+        "research/ABR_EVIDENCE20_20261028/REPORT.md"
+      ],
+      "created_at": "2026-10-28T20:30:00+01:00",
+      "updated_at": "2026-10-28T20:30:00+01:00",
+      "phase": null,
+      "acceptance": {
+        "criteria": "",
+        "evidence": [],
+        "verified_by": "",
+        "verified": false
+      }
+    },
+    {
+      "id": "N24",
+      "title": "Nulos por sector vs global",
+      "kind": "question",
+      "mode": "research",
+      "status": "answered",
+      "detail": "4 sectores con apareamiento aleatorio interno: r global .92, intragrupo ~0",
+      "sources": [
+        "research/ABR_EVIDENCE20_20261028/LEDGER.json",
+        "research/ABR_EVIDENCE20_20261028/REPORT.md"
+      ],
+      "created_at": "2026-10-28T20:30:00+01:00",
+      "updated_at": "2026-10-28T20:30:00+01:00",
+      "phase": null,
+      "acceptance": {
+        "criteria": "",
+        "evidence": [],
+        "verified_by": "",
+        "verified": false
+      }
+    },
+    {
+      "id": "N25",
+      "title": "Sesgo por condicionamiento a matching",
+      "kind": "question",
+      "mode": "research",
+      "status": "answered",
+      "detail": "Comparar correlación con cobertura y utilidad de soltería; reanálisis N17",
+      "sources": [
+        "research/ABR_EVIDENCE20_20261028/LEDGER.json",
+        "research/ABR_EVIDENCE20_20261028/REPORT.md"
+      ],
+      "created_at": "2026-10-28T20:30:00+01:00",
+      "updated_at": "2026-10-28T20:30:00+01:00",
+      "phase": null,
+      "acceptance": {
+        "criteria": "",
+        "evidence": [],
+        "verified_by": "",
+        "verified": false
+      }
+    },
+    {
+      "id": "N26",
+      "title": "Rechazo privado vs reputación pública",
+      "kind": "blocker",
+      "mode": "research",
+      "status": "blocked",
+      "detail": "No existe δ empírico de status externo por cada rechazo privado en fuentes verificadas",
+      "sources": [
+        "research/ABR_EVIDENCE20_20261028/LEDGER.json",
+        "research/ABR_EVIDENCE20_20261028/REPORT.md"
+      ],
+      "created_at": "2026-10-28T20:30:00+01:00",
+      "updated_at": "2026-10-28T20:30:00+01:00",
+      "phase": null,
+      "acceptance": {
+        "criteria": "",
+        "evidence": [],
+        "verified_by": "",
+        "verified": false
+      }
+    },
+    {
+      "id": "N27",
+      "title": "R5 confirmatorio y disponibilidad externa",
+      "kind": "blocker",
+      "mode": "research",
+      "status": "blocked",
+      "detail": "Siete ciclos cerrados, trece autorizados sin iniciar; bloqueo diadas/ética/baseline",
+      "sources": [
+        "research/ABR_EVIDENCE20_20261028/LEDGER.json",
+        "research/ABR_EVIDENCE20_20261028/REPORT.md"
+      ],
+      "created_at": "2026-10-28T20:30:00+01:00",
+      "updated_at": "2026-10-28T20:30:00+01:00",
+      "phase": null,
+      "acceptance": {
+        "criteria": "",
+        "evidence": [],
+        "verified_by": "",
+        "verified": false
+      }
     }
   ],
   "edges": [
@@ -879,6 +1026,48 @@
       "from": "goal",
       "to": "N20",
       "relation": "branches_from"
+    },
+    {
+      "id": "e_goal_N21",
+      "from": "goal",
+      "to": "N21",
+      "relation": "branches_from"
+    },
+    {
+      "id": "e_goal_N22",
+      "from": "goal",
+      "to": "N22",
+      "relation": "branches_from"
+    },
+    {
+      "id": "e_goal_N23",
+      "from": "goal",
+      "to": "N23",
+      "relation": "branches_from"
+    },
+    {
+      "id": "e_goal_N24",
+      "from": "goal",
+      "to": "N24",
+      "relation": "branches_from"
+    },
+    {
+      "id": "e_goal_N25",
+      "from": "goal",
+      "to": "N25",
+      "relation": "branches_from"
+    },
+    {
+      "id": "e_goal_N26",
+      "from": "goal",
+      "to": "N26",
+      "relation": "branches_from"
+    },
+    {
+      "id": "e_goal_N27",
+      "from": "goal",
+      "to": "N27",
+      "relation": "branches_from"
     }
   ],
   "events": [],
@@ -892,12 +1081,15 @@
     "snapshot": "2026-10-28",
     "verified_live": false,
     "progress_semantics": "Sin índice de madurez, solo evidencia limitada",
-    "last_campaign": "ABR-EVIDENCE6-20261028",
-    "scientific_status": "EXPLORATORY_ONLY",
+    "last_campaign": "ABR-EVIDENCE20-20261028",
+    "scientific_status": "EXPLORATORY_R5_STOP_WITH_13_UNUSED",
     "current_statement": "30 total cycles across three earlier campaigns and EVIDENCE6: 10+8+6+6, no 2/3, R5 STOP",
     "reviewer": "Not validated on clean clone",
     "summary": "6 valid cycles, 1 invalid instrument attempt repaired, N12 and N13 data blocked, N1=0, N2/N3=0",
-    "source_code_status": "hash frozen and available in conversation ZIP, not in GitHub; clean clone not verified"
+    "source_code_status": "hash frozen and available in conversation ZIP, not in GitHub; clean clone not verified",
+    "authorized": 20,
+    "executed": 7,
+    "remaining": 13
   },
   "project_contract": {
     "scope_version": "MATE-ABR-20261028-v1",
