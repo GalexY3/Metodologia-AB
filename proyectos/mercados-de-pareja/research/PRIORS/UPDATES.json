@@ -4,7 +4,7 @@
   "date": "2026-10-28",
   "mode": "append-only logical, versioned by Git commits",
   "reconstructed_from_documents": "Retrospective backfill, not preregistration. Old before values NOT_RECORDED unless documented explicitly.",
-  "source_coverage": "All SOURCES.json references have at least one linked update/no-change decision; many grouped; no extra AB cycle charged.",
+  "source_coverage": "12 newly registered SRC030-041 linked to U026-U036 plus previous 29 sources",
   "events": [
     {
       "id": "U001",
@@ -646,6 +646,292 @@
       "AB_cycle_increment": 0,
       "prior_probability_before": null,
       "prior_probability_after": null
+    },
+    {
+      "id": "U026",
+      "prior_id": "P-CULTURAL-RULES",
+      "source_ids": [
+        "SRC030",
+        "SRC031",
+        "SRC035"
+      ],
+      "cycle_ids": [
+        "N58"
+      ],
+      "before": "NOT_RECORDED",
+      "direction": "TOWARD_THEORETICAL_SUPPORT",
+      "after": "THEORETICALLY_SUPPORTED",
+      "what_the_sources_contribute": "Preferencias, terceras partes, proximidad, significado cultural e institucionalización explican distintas vías de enlace.",
+      "why_this_updates_or_checks_prior": "La misma tasa de homogamia no distingue mecanismo sin medir campo cultural, normativo e institucional.",
+      "limits": "Son revisiones y síntesis, no experimentos del simulador ni causalidad de pareja.",
+      "falsifier_or_followup": "Mejorar instrumentos de exposición, preferencias, normas y resultados longitudinales con prereg y fuentes independientes",
+      "evidence_type": "2026-10-28 research review of original publisher web results",
+      "retrospective_backfill": false,
+      "recorded_at": "2026-10-28",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null
+    },
+    {
+      "id": "U027",
+      "prior_id": "P-OPPORTUNITY",
+      "source_ids": [
+        "SRC030",
+        "SRC031",
+        "SRC041"
+      ],
+      "cycle_ids": [
+        "N58"
+      ],
+      "before": "MATERIAL_MISSINGNESS",
+      "direction": "STRENGTHEN_MECHANISM_IMPORTANCE",
+      "after": "MATERIAL_MISSINGNESS",
+      "what_the_sources_contribute": "Kalmijn, redes y Blossfeld separan composición de población e instituciones de preferencias.",
+      "why_this_updates_or_checks_prior": "Sin relaciones observadas a nivel de oferta, difícil inferir utilidad individual desde parejas.",
+      "limits": "Revisión de instituciones y matrimonio no demuestra cuántos perfiles muestra Tinder.",
+      "falsifier_or_followup": "Mejorar instrumentos de exposición, preferencias, normas y resultados longitudinales con prereg y fuentes independientes",
+      "evidence_type": "2026-10-28 research review of original publisher web results",
+      "retrospective_backfill": false,
+      "recorded_at": "2026-10-28",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null
+    },
+    {
+      "id": "U028",
+      "prior_id": "P-PLATFORM-RANKING",
+      "source_ids": [
+        "SRC032",
+        "SRC034"
+      ],
+      "cycle_ids": [
+        "N58"
+      ],
+      "before": "NOT_RECORDED",
+      "direction": "ADD_EXTERNAL_FIELD_EVIDENCE",
+      "after": "EXTERNAL_FIELD_EVIDENCE",
+      "what_the_sources_contribute": "El ensayo de campo 2023 de Chen compara recomendaciones bilaterales y cobertura en plataforma, y Celdir presenta sesgo de popularidad.",
+      "why_this_updates_or_checks_prior": "El algoritmo es parte del mecanismo de selección y visibilidad; no modelo neutral del mercado.",
+      "limits": "No accedimos a microdatos; no extrapolar tamaños de efecto a nuestro toy.",
+      "falsifier_or_followup": "Mejorar instrumentos de exposición, preferencias, normas y resultados longitudinales con prereg y fuentes independientes",
+      "evidence_type": "2026-10-28 research review of original publisher web results",
+      "retrospective_backfill": false,
+      "recorded_at": "2026-10-28",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null
+    },
+    {
+      "id": "U029",
+      "prior_id": "P-FEEDBACK",
+      "source_ids": [
+        "SRC033"
+      ],
+      "cycle_ids": [
+        "N58"
+      ],
+      "before": "NOT_RECORDED",
+      "direction": "ADD_EXPERIMENTAL_CONTEXT",
+      "after": "EXPERIMENTALLY_SUPPORTED_IN_CONTEXT",
+      "what_the_sources_contribute": "Shi et al. 2025 informa que feedback relativo de popularidad altera selectividad y autopresentación en dos ensayos de campo.",
+      "why_this_updates_or_checks_prior": "Actualización de umbrales puede ser causal por información, distinta de cambiar calidad intrínseca.",
+      "limits": "No aporta decremento reputacional visto por terceros ni coeficientes para nuestro simulador.",
+      "falsifier_or_followup": "Mejorar instrumentos de exposición, preferencias, normas y resultados longitudinales con prereg y fuentes independientes",
+      "evidence_type": "2026-10-28 research review of original publisher web results",
+      "retrospective_backfill": false,
+      "recorded_at": "2026-10-28",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null
+    },
+    {
+      "id": "U030",
+      "prior_id": "P-PUBLIC_REPUTATION",
+      "source_ids": [
+        "SRC033"
+      ],
+      "cycle_ids": [
+        "N58"
+      ],
+      "before": "NOT_IDENTIFIED",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "after": "NOT_IDENTIFIED",
+      "what_the_sources_contribute": "Feedback comparativo sí informa al actor de su propia popularidad; no prueba rechazo público ni estatus externo decreciente.",
+      "why_this_updates_or_checks_prior": "Mantener separated private feedback from public reputation.",
+      "limits": "Sí hay comportamiento adaptativo en la publicación, pero no variable causal δ de reputación.",
+      "falsifier_or_followup": "Mejorar instrumentos de exposición, preferencias, normas y resultados longitudinales con prereg y fuentes independientes",
+      "evidence_type": "2026-10-28 research review of original publisher web results",
+      "retrospective_backfill": false,
+      "recorded_at": "2026-10-28",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null
+    },
+    {
+      "id": "U031",
+      "prior_id": "P-IDEATIONAL",
+      "source_ids": [
+        "SRC036"
+      ],
+      "cycle_ids": [
+        "N58"
+      ],
+      "before": "NOT_RECORDED",
+      "direction": "ADD_THEORETICAL_DIMENSION",
+      "after": "THEORETICALLY_SUPPORTED",
+      "what_the_sources_contribute": "Wang 2026 introduce valores, intención reproductiva, roles, proyectos y creencias más allá de status.",
+      "why_this_updates_or_checks_prior": "Añadir ideología/valores/planes como dimensiones a medir en futuras encuestas y simulaciones instrumentadas.",
+      "limits": "Es artículo de revisión teórica, no se generaron microdatos.",
+      "falsifier_or_followup": "Mejorar instrumentos de exposición, preferencias, normas y resultados longitudinales con prereg y fuentes independientes",
+      "evidence_type": "2026-10-28 research review of original publisher web results",
+      "retrospective_backfill": false,
+      "recorded_at": "2026-10-28",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null
+    },
+    {
+      "id": "U032",
+      "prior_id": "P-ORIENTATION",
+      "source_ids": [
+        "SRC037"
+      ],
+      "cycle_ids": [
+        "N58"
+      ],
+      "before": "NOT_RECORDED",
+      "direction": "EXPAND_SCOPE",
+      "after": "REJECTED_SCOPE",
+      "what_the_sources_contribute": "Lundquist et al. 2024 trata mercados raciales y tecnologías, incluyendo variación de uniones y orientaciones.",
+      "why_this_updates_or_checks_prior": "Modelo hetero binario no representa toda formación de parejas y puede introducir sesgo de selección.",
+      "limits": "No asumir reglas de sexos biológicamente universales ni inventar patrones LGBTQ.",
+      "falsifier_or_followup": "Mejorar instrumentos de exposición, preferencias, normas y resultados longitudinales con prereg y fuentes independientes",
+      "evidence_type": "2026-10-28 research review of original publisher web results",
+      "retrospective_backfill": false,
+      "recorded_at": "2026-10-28",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null
+    },
+    {
+      "id": "U033",
+      "prior_id": "P-BOUNDED",
+      "source_ids": [
+        "SRC038"
+      ],
+      "cycle_ids": [
+        "N58"
+      ],
+      "before": "NOT_RECORDED",
+      "direction": "ADD_EXTERNAL_EMPIRICAL_INDICATION",
+      "after": "EXTERNAL_EMPIRICAL_INDICATION",
+      "what_the_sources_contribute": "Lenton/Francesconi 2010 analizan 84 speed datings y atención a atributos simples al aumentar opciones.",
+      "why_this_updates_or_checks_prior": "Incorporar costo cognitivo de búsqueda como mecanismo distinto de status.",
+      "limits": "No es observación de apps ni predicción universal.",
+      "falsifier_or_followup": "Mejorar instrumentos de exposición, preferencias, normas y resultados longitudinales con prereg y fuentes independientes",
+      "evidence_type": "2026-10-28 research review of original publisher web results",
+      "retrospective_backfill": false,
+      "recorded_at": "2026-10-28",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null
+    },
+    {
+      "id": "U034",
+      "prior_id": "P-TRANSPORT",
+      "source_ids": [
+        "SRC039",
+        "SRC040"
+      ],
+      "cycle_ids": [
+        "N58"
+      ],
+      "before": "CHALLENGED",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "after": "CHALLENGED",
+      "what_the_sources_contribute": "Hwang et al. y estudio europeo describen oposición entre ampliación de exposición y filtros por plataforma.",
+      "why_this_updates_or_checks_prior": "No transportar un patrón único de speed-dating a matrimonio, país o tecnología.",
+      "limits": "Datos no procesados, efectividad entre plataformas dependiente de cohorte.",
+      "falsifier_or_followup": "Mejorar instrumentos de exposición, preferencias, normas y resultados longitudinales con prereg y fuentes independientes",
+      "evidence_type": "2026-10-28 research review of original publisher web results",
+      "retrospective_backfill": false,
+      "recorded_at": "2026-10-28",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null
+    },
+    {
+      "id": "U035",
+      "prior_id": "P-CROSS-STAGE",
+      "source_ids": [
+        "SRC030",
+        "SRC032",
+        "SRC039",
+        "SRC040"
+      ],
+      "cycle_ids": [
+        "N58"
+      ],
+      "before": "NOT_RECORDED",
+      "direction": "FORMAL_IDENTIFICATION_WARNING",
+      "after": "REJECTED_IDENTIFICATION",
+      "what_the_sources_contribute": "Preferencias, selección por terceros y plataformas intervienen en distintas etapas; pareja final condiciona múltiples colisionadores.",
+      "why_this_updates_or_checks_prior": "Correlación final de status no identifica utilidad original; simular etapas explícitas.",
+      "limits": "La demostración sintética es argumento de posibilidad, no estimación causal humana.",
+      "falsifier_or_followup": "Mejorar instrumentos de exposición, preferencias, normas y resultados longitudinales con prereg y fuentes independientes",
+      "evidence_type": "2026-10-28 research review of original publisher web results",
+      "retrospective_backfill": false,
+      "recorded_at": "2026-10-28",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null
+    },
+    {
+      "id": "U036",
+      "prior_id": "P-SIMILARITY",
+      "source_ids": [
+        "SRC036",
+        "SRC041"
+      ],
+      "cycle_ids": [
+        "N58"
+      ],
+      "before": "SUPPORTED_DESCRIPTIVELY_CONTEXT_DEPENDENT",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "after": "SUPPORTED_DESCRIPTIVELY_CONTEXT_DEPENDENT",
+      "what_the_sources_contribute": "Educación, valores e instituciones tienen múltiples ejes de semejanza.",
+      "why_this_updates_or_checks_prior": "No reducir similitud exclusivamente a edad y campo académico.",
+      "limits": "Las revisiones no proporcionan un coeficiente causal único.",
+      "falsifier_or_followup": "Mejorar instrumentos de exposición, preferencias, normas y resultados longitudinales con prereg y fuentes independientes",
+      "evidence_type": "2026-10-28 research review of original publisher web results",
+      "retrospective_backfill": false,
+      "recorded_at": "2026-10-28",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null
     }
-  ]
+  ],
+  "last_campaign": "ABR-INTEGRAL9-20261028"
 }
