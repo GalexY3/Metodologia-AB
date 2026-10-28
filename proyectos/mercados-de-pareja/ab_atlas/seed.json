@@ -4,7 +4,7 @@
   "title": "Mercados de pareja · AB-R",
   "mode": "research",
   "created_at": "2026-10-28T18:00:00+01:00",
-  "updated_at": "2026-10-28T18:50:00+01:00",
+  "updated_at": "2026-10-28T20:00:00+01:00",
   "nodes": [
     {
       "id": "root",
@@ -433,6 +433,132 @@
         "verified_by": "",
         "verified": false
       }
+    },
+    {
+      "id": "N09",
+      "title": "Comparador estable y secuencial con grafo común",
+      "kind": "question",
+      "mode": "research",
+      "status": "answered",
+      "detail": "DA con rankings completos r=.917(k60); adaptativo .711; greedy .035; no paridad informativa",
+      "sources": [
+        "research/ABR_BRANCH6_20261028/LEDGER.json",
+        "research/ABR_BRANCH6_20261028/REPORT.md"
+      ],
+      "created_at": "2026-10-28T20:00:00+01:00",
+      "updated_at": "2026-10-28T20:00:00+01:00",
+      "phase": null,
+      "acceptance": {
+        "criteria": "",
+        "evidence": [],
+        "verified_by": "",
+        "verified": false
+      }
+    },
+    {
+      "id": "N10",
+      "title": "Reparar mercados locales balanceados",
+      "kind": "question",
+      "mode": "research",
+      "status": "answered",
+      "detail": "Pools 100/300/1200 con 40 encuentros programados arrojan r=.726/.741/.737; sin gradiente monotónico fuerte",
+      "sources": [
+        "research/ABR_BRANCH6_20261028/LEDGER.json",
+        "research/ABR_BRANCH6_20261028/REPORT.md"
+      ],
+      "created_at": "2026-10-28T20:00:00+01:00",
+      "updated_at": "2026-10-28T20:00:00+01:00",
+      "phase": null,
+      "acceptance": {
+        "criteria": "",
+        "evidence": [],
+        "verified_by": "",
+        "verified": false
+      }
+    },
+    {
+      "id": "N11",
+      "title": "Asincronía y likes persistentes",
+      "kind": "question",
+      "mode": "research",
+      "status": "answered",
+      "detail": "Mismo grafo potencial pero exposición realizada distinta; sync .633 vs async .444 y caduca .396",
+      "sources": [
+        "research/ABR_BRANCH6_20261028/LEDGER.json",
+        "research/ABR_BRANCH6_20261028/REPORT.md"
+      ],
+      "created_at": "2026-10-28T20:00:00+01:00",
+      "updated_at": "2026-10-28T20:00:00+01:00",
+      "phase": null,
+      "acceptance": {
+        "criteria": "",
+        "evidence": [],
+        "verified_by": "",
+        "verified": false
+      }
+    },
+    {
+      "id": "N12",
+      "title": "Denominador español elegible",
+      "kind": "question",
+      "mode": "research",
+      "status": "blocked",
+      "detail": "INE ECP total verificado; faltan celdas sexo 20–39 de julio y participación activa en citas",
+      "sources": [
+        "research/ABR_BRANCH6_20261028/LEDGER.json",
+        "research/ABR_BRANCH6_20261028/REPORT.md"
+      ],
+      "created_at": "2026-10-28T20:00:00+01:00",
+      "updated_at": "2026-10-28T20:00:00+01:00",
+      "phase": null,
+      "acceptance": {
+        "criteria": "",
+        "evidence": [],
+        "verified_by": "",
+        "verified": false
+      }
+    },
+    {
+      "id": "N13",
+      "title": "Matriz educativa española moderna",
+      "kind": "question",
+      "mode": "research",
+      "status": "blocked",
+      "detail": "Tabla INE 60268 identificada, cruces no descargados; análisis O/E bloqueado",
+      "sources": [
+        "research/ABR_BRANCH6_20261028/LEDGER.json",
+        "research/ABR_BRANCH6_20261028/REPORT.md"
+      ],
+      "created_at": "2026-10-28T20:00:00+01:00",
+      "updated_at": "2026-10-28T20:00:00+01:00",
+      "phase": null,
+      "acceptance": {
+        "criteria": "",
+        "evidence": [],
+        "verified_by": "",
+        "verified": false
+      }
+    },
+    {
+      "id": "N14",
+      "title": "Rechazo como señal social observable",
+      "kind": "question",
+      "mode": "research",
+      "status": "answered",
+      "detail": "Dos estudios sobre rechazo y awareness cues; no miden perdida de status por swipe a terceros",
+      "sources": [
+        "research/ABR_BRANCH6_20261028/LEDGER.json",
+        "research/ABR_BRANCH6_20261028/REPORT.md"
+      ],
+      "created_at": "2026-10-28T20:00:00+01:00",
+      "updated_at": "2026-10-28T20:00:00+01:00",
+      "phase": null,
+      "acceptance": {
+        "criteria": "",
+        "evidence": [],
+        "verified_by": "",
+        "verified": false
+      }
     }
   ],
   "edges": [
@@ -555,6 +681,42 @@
       "from": "goal",
       "to": "N08",
       "relation": "branches_from"
+    },
+    {
+      "id": "e_goal_N09",
+      "from": "goal",
+      "to": "N09",
+      "relation": "branches_from"
+    },
+    {
+      "id": "e_goal_N10",
+      "from": "goal",
+      "to": "N10",
+      "relation": "branches_from"
+    },
+    {
+      "id": "e_goal_N11",
+      "from": "goal",
+      "to": "N11",
+      "relation": "branches_from"
+    },
+    {
+      "id": "e_goal_N12",
+      "from": "goal",
+      "to": "N12",
+      "relation": "branches_from"
+    },
+    {
+      "id": "e_goal_N13",
+      "from": "goal",
+      "to": "N13",
+      "relation": "branches_from"
+    },
+    {
+      "id": "e_goal_N14",
+      "from": "goal",
+      "to": "N14",
+      "relation": "branches_from"
     }
   ],
   "events": [],
@@ -568,10 +730,12 @@
     "snapshot": "2026-10-28",
     "verified_live": false,
     "progress_semantics": "Sin índice de madurez, solo evidencia limitada",
-    "last_campaign": "ABR-BRANCH8-20261028",
+    "last_campaign": "ABR-BRANCH6-20261028",
     "scientific_status": "EXPLORATORY_ONLY",
     "current_statement": "8/8 BRANCH8, N03 inconclusive; N08 planning only",
-    "reviewer": "Not validated on clean clone"
+    "reviewer": "Not validated on clean clone",
+    "summary": "6 valid cycles, 1 invalid instrument attempt repaired, N12 and N13 data blocked, N1=0, N2/N3=0",
+    "source_code_status": "hash frozen and available in conversation ZIP, not in GitHub; clean clone not verified"
   },
   "project_contract": {
     "scope_version": "MATE-ABR-20261028-v1",
