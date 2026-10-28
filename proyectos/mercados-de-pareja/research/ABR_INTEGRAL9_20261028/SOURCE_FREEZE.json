@@ -1,0 +1,14 @@
+{
+  "campaign": "ABR-INTEGRAL9-20261028",
+  "date": "2026-10-28",
+  "frozen_source": "simulator.py",
+  "source_sha256": "dfe5dabc2c5c9cbd07a76471e0d855d85424a26705d1ea626b55ccb35289b279",
+  "prereg_commit": "51a387a2eaadbfb9604f0ceff9d62bb0fee32308",
+  "status": "FROZEN_BEFORE_FIRST_RUN",
+  "file_present_remote": "next commit",
+  "declared_runs": 60,
+  "reason": "10 scenarios*6 seeds; synthetic only",
+  "reproduction": "Run python simulator.py, requires numpy scipy",
+  "output_promises": "RUNS.json, SUMMARY.json, SUMMARY.csv, QA.json",
+  "not_human_evidence": true
+}
