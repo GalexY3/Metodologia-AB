@@ -1,0 +1,35 @@
+{
+  "schema": "ab.prereg.v1",
+  "campaign_id": "59e1f051-b3c6-4d6a-9ba5-670017942347",
+  "turn_id": "e428d82b-4c4d-4caf-9320-6220e1175c8f",
+  "cycle": "CR03",
+  "mode": "AB-P",
+  "kind": "DOCUMENTARY_INSTRUMENTED_AB",
+  "status": "PREREGISTERED",
+  "baseline_repo": "GalexY3/Metodologia-AB",
+  "baseline_branch": "research/pfl-codex-contributions-20261027",
+  "baseline_head": "72a2ae2deeb9eaa719b598943c1e8d18360ed6ea",
+  "prior_exposure": "Already read AGENTS.md, CURRENT.md, T008, latest HEAD and directory listing of 35 json updates, seed preview, atlas_delta.py structure and historical T007/CR01. The expected 35 lots, 201 runs, 44 complaints and 370 ops are pre-exposed; this is a prospective audit of consistency only, NOT a blind original discovery.",
+  "A_question": "Does the SHA-frozen branch's 35-batch append-only Atlas have a coherent parent chain, no repeated batch IDs, valid JSON, unique run/complaint/node/edge identifiers, complaint-to-run references and conservative release-gate status, when verified through the authenticated GitHub connector (no local git/POSIX)?",
+  "B_rivals": {
+    "H1": "All audited structural invariants pass with expected derived totals.",
+    "H0": "At least one JSON/schema/chain/reference/duplicate/gate invariant fails.",
+    "H_other": "Limited JS audit passes while canonical Python checker or full suite may still fail."
+  },
+  "C_discriminant": "Fetch 35 JSON batch files and seed by exact known commit (not main); parse every JSON and validate schema, parent_batch order, batch_id uniqueness, op IDs and references, complaint references, selected gate updates and derived totals. Cross-check 0020 run set IC04-IC23. Preserve any failure; never rewrite historical batches.",
+  "D_instrument": "Explicit JavaScript checks over read-only GitHub API bytes via connected GitHub plugin; no claim of Python atlas_delta.py check, pytest, SIGKILL, full POSIX equivalence, or download of restricted institutional originals. Abort on mismatched branch SHA.",
+  "E_accept": "Report files successfully read / rejected and exact counted invariants with failure traces; distinguish pass of subset from canonical validation; no field promotion from calculated counts.",
+  "F_adversarial": "Unvalidated fields, abmap.require_valid constraints, canonical hashing, delivery file authenticity, temporal order of old preregs, and all runtime code tests remain outside coverage.",
+  "G_confirmation": "Independent canonical Python checker on actual checkout still required, per blocked T008.",
+  "H_update": "Retain NO_VOTAN UNKNOWN, CT2 identity 29 ordinal, release gates 0/6; no scientific grade promotion.",
+  "I_scope": {
+    "drift": "D0",
+    "grade": "0/3",
+    "N1_new": 0,
+    "N2_new": 0,
+    "N3_new": 0,
+    "CT2_before": 29,
+    "CT2_expected": 29
+  },
+  "J_rule": "If no novel defect, STOP_R5 on more connector-only Atlas audits; request an environment-enabled Codex T008 once Linux+Git works. Preserve negative results. No main merge, CI, real-person scoring or private originals."
+}
