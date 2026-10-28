@@ -1,0 +1,132 @@
+{
+  "campaign": "ABR-ESBM20-20261028",
+  "date": "2026-10-28",
+  "branch": "research/ab-r-mercados-pareja-20261028",
+  "authorized": 20,
+  "previously_approved_slots_exhausted": true,
+  "project_goal": "Expand explanatory mechanisms without asserting scientific novelty: arbitrary mutual compatibility, temporal two-sided decisions, institutions/algorithms, private vs public rejection feedback, relationship duration and external evidence gate",
+  "R5": "Stop if no new human evidence or synthetic hypotheses provide only prior-art illustration; 20 ceiling not target",
+  "research_level": "All human claims require real independent evidence; synthetic only, no calibrated sociological parameters",
+  "contrast_precommit": true,
+  "source_design": {
+    "file": "esbm_dynamic.py",
+    "sha256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+    "compiled_syntax": true,
+    "runs_planned": 60,
+    "seeds": [
+      101,
+      211,
+      307,
+      401,
+      503,
+      601
+    ],
+    "agents": 144,
+    "periods": 16,
+    "offer_target_per_available_agent": 7,
+    "compatibility": "Mutual reported attraction scopes all/same/other across 3 synthetic genders, with restrictive F/M comparison only as counterfactual; demographic proportions arbitrary",
+    "directed_stage": "Sender exposure, sender yes, recipient reply to yes, maximally matched exclusive partner, time-specific dissolution",
+    "stability": "Exogenous per-dyad hazard with same fixed shocks across paired scenarios, not learned from human follow-up",
+    "randomness": "Fixed potential uniforms per seed/time/sender/target for proposals, replies, recommendation and dissolution; state mediates future risk and available agents",
+    "candidate_matching": "maxcardinality maximum-weight undirected matching on mutual edge with small fixed jitter; not stable/utility optimal",
+    "metrics": [
+      "compatible_pairs",
+      "exposure_gini_recipient",
+      "zero_impression_agents",
+      "unilateral_yes",
+      "positive_replies",
+      "new_couples",
+      "active_couples_at_t16",
+      "dissolution_count",
+      "observed_completed_duration_mean (censored excluded)",
+      "proportion_same_norm_exposure",
+      "proportion_same_norm_new_couples",
+      "share_in_relationship_by_synthetic_gender"
+    ],
+    "common_baselines": [
+      "mixed_random",
+      "heterosexual_restricted",
+      "institutional_segregation",
+      "explicit_norm_preference",
+      "popularity_ranking",
+      "visibility_balancing",
+      "private_rejection_learning",
+      "public_rejection_signal",
+      "longer_partnerships",
+      "shorter_partnerships"
+    ],
+    "fixed_interventions": "Each condition changes only named mechanism vs mixed_random with shared synthetic population and latent random shocks; dynamic trajectories diverge and budgets/exposure not pairwise equal after divergences",
+    "identified_mechanism_cautions": [
+      "No external causal estimates; counterfactual code manipulation only",
+      "Public reputational penalty is intentionally visible to receiver, entirely stipulated; not evidence rejected people lose status in real world",
+      "Private feedback changes sender approval threshold, whereas public feedback changes receiver's appraisal of sender—two different estimands",
+      "Genders and scopes are invented synthetic categories; not estimates of LGBTQ+ prevalence or preferences",
+      "No welfare, coercion, wellbeing, safety outcomes measured",
+      "Duration averages exclude right-censored relationships and are biased, report censoring and use active prevalence as distinct metric",
+      "Source based on published papers means tests of novelty need stronger evidence"
+    ]
+  },
+  "cycles": [
+    {
+      "id": "N67",
+      "kind": "DOCUMENTARY_AB",
+      "intent": "Verify 2026 human papers: Hu/Markowitz option-set experiments, Fong field experiment market size/competition, Büyükeren/Makarin/Xiong AEJ Tinder outcomes and replication file access, Moreno/Finkel et al diadic first dates, Chen recommender; add SOURCES and update priors, rights/access honest"
+    },
+    {
+      "id": "N68",
+      "kind": "FORMAL_MODEL_AB",
+      "intent": "Implement generalized mutual-compatibility O, temporal stage sequence, distinguish public reputation from private learning and relationship exit with explicit scope and QA"
+    },
+    {
+      "id": "N69",
+      "kind": "SIMULATION_QA_AB",
+      "intent": "Run synthetic null inclusive opportunity graph and restrictive F/M comparator, validate symmetric compatibility, matching and relationship accounting; no demographic claims"
+    },
+    {
+      "id": "N70",
+      "kind": "SIMULATION_INSTITUTION_AB",
+      "intent": "Compare opportunity group sorting with explicit normative preference, reveal exposure difference and within-group relationship share"
+    },
+    {
+      "id": "N71",
+      "kind": "SIMULATION_PLATFORM_AB",
+      "intent": "Contrast popularity ranking and recipient visibility balance against random exposure; report impressions Gini and active partnerships, not 'fair' without substantive criterion"
+    },
+    {
+      "id": "N72",
+      "kind": "SIMULATION_FEEDBACK_AB",
+      "intent": "Contrast private rejection threshold learning and public-rejection signal against none; compare state and pair outcomes; no human reputation inference"
+    },
+    {
+      "id": "N73",
+      "kind": "SIMULATION_DURATION_AB",
+      "intent": "Contrast long/short exogenous dissolution hazard, report formed/dissolved/active and censoring, no literal duration prediction"
+    },
+    {
+      "id": "N74",
+      "kind": "EXTERNAL_VALIDATION_GATE_AB",
+      "intent": "Test whether any genuinely independent raw human observations obtainable/licensed support preregistered choice/relationship model; if only abstract/study outputs, mark not replicated and stop"
+    },
+    {
+      "id": "N75",
+      "kind": "ADVERSARIAL_SYNTHESIS_AB",
+      "intent": "Audit model validity, important mechanisms not represented, priorities, forward tests with independent data; update CT2/priors and R5"
+    }
+  ],
+  "unstarted_if_stop": [
+    "N76",
+    "N77",
+    "N78",
+    "N79",
+    "N80",
+    "N81",
+    "N82",
+    "N83",
+    "N84",
+    "N85",
+    "N86"
+  ],
+  "method": "AB A–J cycles; prereg and commit source before running; preserve seeded outcomes and all negative results; no 2/3 without novelty and independent external replication",
+  "baseline_CT2": 7,
+  "notes": "This prereg is after locating published papers, before reading local synthetic results. Literature discovery is not preregistered."
+}
