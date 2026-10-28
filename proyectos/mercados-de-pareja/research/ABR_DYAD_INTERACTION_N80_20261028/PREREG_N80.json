@@ -1,0 +1,75 @@
+{
+  "schema": "ab.research.documentary_prereg.v1",
+  "cycle": "N80",
+  "date": "2026-10-28",
+  "branch": "research/ab-r-mercados-pareja-20261028",
+  "phase": "EXPLORATORY_PRIMARY_SOURCE_AUDIT",
+  "status": "FROZEN_BEFORE_DETAILED_FULL_PAPER_AND_CODE_INSPECTION",
+  "source_discovery_timing": "Prior to this prereg I already saw paper bibliographic entry, PubMed abstract, N=31, treatment of dyadic smile alignment, main GitHub README and external Internet Archive link; do NOT claim discovery preregistered. Frozen test is original full methods/data eligibility and ESBM rival mechanism.",
+  "source_original": "https://doi.org/10.1073/pnas.2400369121",
+  "source_original_pdf": "https://neuro-team-femto.github.io/articles/2024/arias_pnas_2024.pdf",
+  "code": "https://github.com/Pablo-Arias/speed_dating",
+  "data_archive": "https://archive.org/details/data_20231023_20231023",
+  "A": {
+    "question": "Is there a real experimentally manipulated, directly dyadic interaction mechanism that changes attraction/acceptance and cannot be reduced to static ex ante Q or mere exposure sorting? If so, is the original usable microdata independently accessible with rights?",
+    "unit": "Speed dating 4-minute video dyad and participant-level attraction evaluations, clustered by repeat participant; paper source original.",
+    "population": "Only recruited volunteer sample; initial abstract indicates 31 singles, not Spanish platform.",
+    "treatment": "Congruent vs incongruent smile manipulation of both sides during real-time video",
+    "outcome": "Authors' ratings of attraction/liking and reported mating choice; precise scales and timing to inspect.",
+    "control": "Other manipulated smile alignments (e.g. both down vs one up-one down) and participant/dyad effects, not naïve independent encounters.",
+    "harm": "No covert face-video participant reidentification or bypassing ethical protections."
+  },
+  "B": {
+    "H1": "Randomized dyadic smile coordination influences in-interaction attraction above stable preexisting agent quality or platform sorting.",
+    "H0": "Only absolute smile-enhancement or individual actor trait drives outcome; congruent interaction effect disappears in proper contrast.",
+    "H_other": "Repeated participants and assignment dependence, carryover order, no durable pair formation, noisy self-ratings, and experiment constrained to video affect."
+  },
+  "C": {
+    "required_evidence": [
+      "Read primary original paper full PDF after prereg; inspect intervention schedule, randomization unit, controls, exact sample/dyads/outcome and effect estimate/uncertainty",
+      "Check separate positive vs negative congruent conditions, not claim any congruence automatically attractive",
+      "Check original GitHub code and exact data availability and rights; avoid third-party NDA or data claims",
+      "Compare preexisting ESBM interaction stage and Fisman/Columbia/Mixmosa baselines and treat effect as externally published—not new ESBM discovery"
+    ],
+    "pass": "Only count N80 if original trial and source/code yield genuinely discriminating causal interaction mechanism with identifiable control plus robust adversarial limits; otherwise remain NOT_EXECUTED."
+  },
+  "D": "D1.1 possible addition of in-interaction micro-behavior stage rather than same recommendation parametrization",
+  "E": {
+    "execution": "NOT_EXECUTED"
+  },
+  "F": {
+    "adversaries": [
+      "Potential main effect of smiles vs congruence",
+      "Small n and repeated-measures clustering",
+      "Experiment manipulation of display vs natural interactions",
+      "Attraction score vs mutually accepted match/long relationship",
+      "Possible protocol disclosure and ethics constraints",
+      "Shared subjects across treatment exposures, carryover",
+      "Data archive unreachable; scripts are not participant data"
+    ]
+  },
+  "G": {
+    "independent_replication": "Not planned: original randomized study external to ESBM and not an ESBM replication"
+  },
+  "H": {
+    "prior_targets": [
+      "P-MEASURE_OUTCOME",
+      "P-DYADIC-ACCESS",
+      "P-SIMILARITY",
+      "P-NOVELTY"
+    ],
+    "action": "Qualitative source-backed prior update or justified no-change, no fabricated numeric Bayes posterior."
+  },
+  "I": {
+    "CT2_before": 6,
+    "score_change": "UNDETERMINED",
+    "new_grade": "0/3 unless own original independent test executed"
+  },
+  "J": {
+    "decision": "Proceed only with original documentary discriminant source; R5 stop if no independent raw data to test ESBM; after one documentary cycle leave N81–N86 untouched."
+  },
+  "selection_exposure": "Abstract and GitHub README used to motivate source; confirmatory claim forbidden.",
+  "consumes_cycle_if_documentary_original_complete": true,
+  "initial_budget_remaining": 7,
+  "no_main_merge": true
+}
