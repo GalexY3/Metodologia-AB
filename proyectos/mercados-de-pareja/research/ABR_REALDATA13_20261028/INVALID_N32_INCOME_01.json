@@ -1,0 +1,13 @@
+{
+  "id": "INVALID_N32_INCOME_01",
+  "date": "2026-10-28",
+  "type": "INVALID_INSTRUMENT_SUBCOMPONENT",
+  "first_run_source_blob": "3eac56954a34d6883b8a67f6fa8aad4387d6e6fb",
+  "first_run_commit": "9b7f3deab041eab4a4ca6ffed9c06d3669a2efae",
+  "first_run_results_commit": "614acae1beafab9463b1f27e0bd93653beaf6364",
+  "error": "income_bucket is numerically encoded as strings '1'..'9' by public user_features.csv; analysis mistakenly expected raw English bracket labels and reported 0 eligible",
+  "source_readme": "Repository README gives raw bracket-to-integer transformation, actual derived table contains ranks",
+  "impact": "N32 income outputs invalid, N29/30/31/33 independent outputs unaffected in code; repair then rerun deterministic code and compare",
+  "invalid_cycle_credit": 0,
+  "after_fix_status": "PENDING"
+}
