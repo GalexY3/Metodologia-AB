@@ -4,17 +4,15 @@
   "date": "2026-10-28",
   "branch": "research/ab-r-mercados-pareja-20261028",
   "granted": 20,
-  "completed_valid": 9,
+  "completed_valid": 11,
   "invalid": 0,
   "planning_only": 0,
-  "documentary_and_gate": 2,
+  "documentary_and_gate": 4,
   "formal_model": 1,
   "synthetic_experiment_and_sensitivity": 5,
   "adversarial": 1,
-  "unstarted_authorized": 11,
+  "unstarted_authorized": 9,
   "unstarted_ids": [
-    "N76",
-    "N77",
     "N78",
     "N79",
     "N80",
@@ -25,7 +23,7 @@
     "N85",
     "N86"
   ],
-  "R5": "STOP_EARLY_NO_NEW_HUMAN_EXPOSURE_RESPONSE_DYADIC_LONGITUDINAL_SAMPLE; DO_NOT_FILL_QUOTA",
+  "R5": "STOP_AFTER_N77__TWO_DOCUMENTARY_SOURCE_GATES__NINE_PENDING__NO_RAW_EXTERNAL_DATA",
   "prereg_commit": "026cc12b5136e60034c71c2f794d01a453bdf5bd",
   "source_freeze_commit": "7f196409bc1ba5b5af6d8caad39c173a38a99405",
   "source_sha256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
@@ -42,26 +40,23 @@
   "QA": "QA.json",
   "raw_data_human_processed": false,
   "prior_register": {
-    "sources_total": 47,
-    "prior_hypotheses_total": 24,
-    "update_events_total": 44,
-    "new_sources": [
-      "SRC042",
-      "SRC043",
-      "SRC044",
-      "SRC045",
-      "SRC046",
-      "SRC047"
+    "sources_total": 50,
+    "prior_hypotheses_total": 25,
+    "update_events_total": 52,
+    "latest_sources": [
+      "SRC048",
+      "SRC049",
+      "SRC050"
     ],
-    "new_updates": [
-      "U037",
-      "U038",
-      "U039",
-      "U040",
-      "U041",
-      "U042",
-      "U043",
-      "U044"
+    "latest_updates": [
+      "U045",
+      "U046",
+      "U047",
+      "U048",
+      "U049",
+      "U050",
+      "U051",
+      "U052"
     ]
   },
   "new_N1": 0,
@@ -70,6 +65,8 @@
   "CT2": {
     "before": 7,
     "per_cycle": [
+      7,
+      7,
       7,
       7,
       7,
@@ -416,6 +413,76 @@
       "source_ids": [],
       "prior_ids": [],
       "prior_update_ids": []
+    },
+    {
+      "id": "N76",
+      "type": "DOCUMENTARY_ACCESS_AB",
+      "status": "VALID_DOCUMENTARY_METADATA_GATE_NO_RAW_REPLICATION",
+      "A": "¿Puede abrirse legalmente y procesarse E218862V1 como fuente discriminante de exposiciones, reciprocidad y outcomes?",
+      "B": "H1 réplica original apta para aristas E_ij,A_ij,R_ji; H0 encuesta de resultados individuales y colegios, sin aristas demostradas.",
+      "C": "Auditar DOI depósito, inventario oficial, unidad/método AEA, enlaces de descarga, repositorio alternativo ICPSR y términos; registrar bytes/no-bytes sin suponer acceso.",
+      "D": "Página E218862V1 vista (Code/Data/Exhibits/Temp + README.pdf 256KB), artículo AEA e índice, clicks Data y README no restituyeron archivos, contenedor requests DNS falló; fuente SRC047 y migración SRC050.",
+      "E": "Repositorio V1 confirmado, >1.1M encuestas individuales de estudiantes, 2008-19 DID de introducción Tinder por afiliación griega. No ficheros interiores ni microdatos descargados; ninguna licencia concreta de depósito inspeccionada.",
+      "F": "Ajuste de nivel campus ≠ decisiones diádicas; folder 'Data' no demuestra exposición perfil; documentación sobre migración no diagnostica causalmente fallo de red. Apéndice PDF indexado pero visual no verificado, sin extracción cuantitativa.",
+      "G": "Confirmación externa de existencia y unidad publicada; NO nueva replicación de regresión ni datos. Ningún contraste humano ejecutado.",
+      "H": "Revisiones U045, U046 y U052, priors P-DYADIC_ACCESS y P-EXANTE_POP sin cambio y vigilancia de migración; fuente trazable.",
+      "I": "Acceso parcial metadatos oficiales, bytes 0, derechos específicos sin verificar; valor macro contextual, cero identificación causal ESBM, originalidad 0/3, ética sin microdatos.",
+      "J": "STOP raw analysis; N77 inspección de tercera fuente de medición distinta; no gastar plazas en simulaciones.",
+      "CT2_before": 7,
+      "CT2_after": 7,
+      "source_ids": [
+        "SRC047",
+        "SRC050"
+      ],
+      "prior_ids": [
+        "P-DYADIC_ACCESS",
+        "P-EXANTE_POP"
+      ],
+      "prior_update_ids": [
+        "U045",
+        "U046",
+        "U052"
+      ],
+      "subcampaign": "ABR-EXTERNAL-GATE-20261028",
+      "evidence_artifact": "../ABR_EXTERNAL_GATE_20261028/LEDGER.json"
+    },
+    {
+      "id": "N77",
+      "type": "DOCUMENTARY_LONGITUDINAL_AB",
+      "status": "VALID_DOCUMENTARY_INDEPENDENT_PANEL_ELIGIBILITY_NO_RAW_ESTIMATES",
+      "A": "¿Existe un panel independiente real que permita estudiar duración y disolución de relaciones y contraste externo parcial de ESBM v2?",
+      "B": "H1 HCMST2017–2022 sigue personas y relaciones, apto para etapa de duración; H0 no perfiles/usuarios mostrados y sin consentimiento bilateral, así que incapaz de identificar elección inicial.",
+      "C": "Consultar fuente primaria Stanford y registro ICPSR 38873, definición de universo/ola/pesos/datos de uso, intentar descarga oficial, no importar nombres de HCMST 2009 en 2017 sin codebook.",
+      "D": "Stanford public catalog y licencia leídos, ICPSR resumen/pesos/atrícion y codebook links vistos; stacks Stanford direct fail cache/DNS, requests no DNS, ningún archivo abierto.",
+      "E": "Cohorte 3510 personas 2017, 2107 en 2020, 1722 en 2022; intención de analizar calidad, modo de encuentro y estabilidad; sobresample LGB, pesos longitudinales. Repositorios Stanford e ICPSR describen EL MISMO conjunto, no dos muestras independientes.",
+      "F": "Riesgos: supervivencia a 2017, atrición por ola, sobre-muestreo LGB, COVID, cohorte de inicio, censura, confusión por edad y duración; directorio de datos no garantiza variable disponible/ítems de ruptura; ley de uso obliga aviso contacto/cita.",
+      "G": "No replicación ni cálculo en humanos; nuevo instrumento documental independiente que podría falsar parte de duración una vez abierto con permisos.",
+      "H": "Prior nuevo P-LONGITUDINAL-ELIGIBILITY y actualizaciones U047–U051; otros priors no cambian por falta de datos. SRC048 y SRC049 mismo sample.",
+      "I": "Validez documental de diseño longitudinal sí; identificación del mecanismo de rechazo/reciprocidad no; datos no procesados, privacidad observada; no nota científica 1/3.",
+      "J": "STOP_R5 con nueve plazas sin empezar; solo continuar al adquirir datos públicos legítimos y verificar código/estimando. No simular ni prometer que ya se procesaron.",
+      "CT2_before": 7,
+      "CT2_after": 7,
+      "source_ids": [
+        "SRC048",
+        "SRC049"
+      ],
+      "prior_ids": [
+        "P-LONGITUDINAL-ELIGIBILITY",
+        "P-MEASURE_OUTCOME",
+        "P-UNION-DURATION",
+        "P-OPPORTUNITY",
+        "P-DYADIC_ACCESS"
+      ],
+      "prior_update_ids": [
+        "U047",
+        "U048",
+        "U049",
+        "U050",
+        "U051"
+      ],
+      "subcampaign": "ABR-EXTERNAL-GATE-20261028",
+      "evidence_artifact": "../ABR_EXTERNAL_GATE_20261028/LEDGER.json"
     }
-  ]
+  ],
+  "external_audit": "research/ABR_EXTERNAL_GATE_20261028/ACCESS_AND_SCOPE_AUDIT.md"
 }
