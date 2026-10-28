@@ -23,7 +23,7 @@
       "id": "P-NOVELTY",
       "question": "Originalidad de homogamia de deseabilidad sin preferencia inicial por semejanza",
       "status": "STRONG_PRIOR_ART",
-      "rationale": "La proposición general ya está en teoría matching, Hitsch 2010 y, casi literalmente para apps, Topinkova/Diviak 2025; nueva aportación exigiría predicción más estrecha. La separación de navegación, primer mensaje y match se documentó explícitamente en Hitsch et al. (2010), antes del programa ESBM. No reivindicar originalidad general de la cadena. Rios–Saban–Zheng (online 2022) probó algoritmo con exposición e historial de matches en dos intervenciones de mercado; Rios–Torrico 2023 ya formaliza secuencialidad y direcciones del flujo. ESBM no reivindica novedad de optimización de exposición y reciprocidad ni de feedback por matches. External 2024 intervention already studies a causal micro-interaction influence independent of pre-exposure sorting. ESBM has not yet included an observed micro-behavior intervention; adding smiles alone would lack originality.",
+      "rationale": "La proposición general ya está en teoría matching, Hitsch 2010 y, casi literalmente para apps, Topinkova/Diviak 2025; nueva aportación exigiría predicción más estrecha. La separación de navegación, primer mensaje y match se documentó explícitamente en Hitsch et al. (2010), antes del programa ESBM. No reivindicar originalidad general de la cadena. Rios–Saban–Zheng (online 2022) probó algoritmo con exposición e historial de matches en dos intervenciones de mercado; Rios–Torrico 2023 ya formaliza secuencialidad y direcciones del flujo. ESBM no reivindica novedad de optimización de exposición y reciprocidad ni de feedback por matches. External 2024 intervention already studies a causal micro-interaction influence independent of pre-exposure sorting. ESBM has not yet included an observed micro-behavior intervention; adding smiles alone would lack originality. ICONIP 2020 MotifGNN already models reciprocal recommendation over user directed interaction graphs with degree/motif structure. Our degree-conditioned reciprocity finding does not establish a new theory: it is a data-quality/control exercise on published dataset.",
       "evidence_sources": [
         "SRC001",
         "SRC002",
@@ -34,9 +34,10 @@
         "SRC054",
         "SRC055",
         "SRC056",
-        "SRC057"
+        "SRC057",
+        "SRC059"
       ],
-      "last_update_id": "U068",
+      "last_update_id": "U076",
       "uncertainty": "Not probabilistically calibrated; evidence heterogeneous and some sources only metadata",
       "next_falsifier_or_test": "Find a preregistered prediction NOT covered by published mating-market literature and independently validate",
       "numeric_probability": null,
@@ -46,30 +47,33 @@
         "U022",
         "U057",
         "U059",
-        "U068"
+        "U068",
+        "U076"
       ],
-      "latest_evidence_summary": "Independent PNAS field/lab intervention is prior art for micro-level behavior; no ESBM originality.",
+      "latest_evidence_summary": "Prior art of 2020 network recommendation; no new ESBM sociological novelty.",
       "last_revised_at": "2026-10-28"
     },
     {
       "id": "P-RECIPROCITY",
       "question": "Filtrado por no reciprocidad aumenta ordenación por deseabilidad",
       "status": "SUPPORTED_DESCRIPTIVELY_NOT_CAUSALLY",
-      "rationale": "Estudio checo encuentra contactos recíprocos más próximos en deseabilidad que intentos; selección de aristas compatible con filtrado, sin intervención de rechazo identificada. Dyadic video attraction and willingness to see again are separate from completed reciprocal decisions and do not establish how bilateral rejection reshapes assortativity.",
+      "rationale": "Estudio checo encuentra contactos recíprocos más próximos en deseabilidad que intentos; selección de aristas compatible con filtrado, sin intervención de rechazo identificada. Dyadic video attraction and willingness to see again are separate from completed reciprocal decisions and do not establish how bilateral rejection reshapes assortativity. Independent SSJY click/msg graph: just 52 mutual click/msg dyads, 104 of 177413 directed arcs reciprocated (0.0005862). Degree-stub null 30 reps mean 0.00016746 and max 0.00023428; p empirical upper 1/31, but not strong sociological null and no desirability or timing. Does NOT directly test whether filtering increases assortativity.",
       "evidence_sources": [
         "SRC021",
-        "SRC056"
+        "SRC056",
+        "SRC059"
       ],
-      "last_update_id": "U071",
+      "last_update_id": "U073",
       "uncertainty": "Not probabilistically calibrated; evidence heterogeneous and some sources only metadata",
       "next_falsifier_or_test": "Independent prospective data with matched risk set, competent adversarial controls and documented sample selection",
       "numeric_probability": null,
       "CT2_is_not_this_prior": true,
       "update_ids": [
         "U023",
-        "U071"
+        "U071",
+        "U073"
       ],
-      "latest_evidence_summary": "No change to reciprocity prior from rating outcome: no rejecting-candidate graph or stable couples in the paper.",
+      "latest_evidence_summary": "Graph reciprocation over degree-only null observed, but original claim of desirability sorting remains untested by SSJY.",
       "last_revised_at": "2026-10-28"
     },
     {
@@ -102,7 +106,7 @@
       "id": "P-OPPORTUNITY",
       "question": "La red de perfiles mostrados es necesaria para separar preferencias de exposición",
       "status": "MATERIAL_MISSINGNESS",
-      "rationale": "Dos fuentes speed dating incluyen citas efectivas; fuente checa reporta intentos pero no perfiles vistos; sin no-interacciones observadas el denominador de riesgo se desconoce. El artículo Hitsch 2010 sí observó perfiles visitados antes de contacto; el archivo original de observaciones sigue inaccesible y se desconoce si el paquete E112322V1 las conserva; por ello la falta de denominador a nivel de nuestras muestras permanece. La oportunidad observada como conjuntos diarios de perfiles ofrecidos es medición practicable en plataformas reales pero su asignación es endógena a algoritmos y preferencias; condicionar por visita/no visitar no identifica el efecto de exposición per se.",
+      "rationale": "Dos fuentes speed dating incluyen citas efectivas; fuente checa reporta intentos pero no perfiles vistos; sin no-interacciones observadas el denominador de riesgo se desconoce. El artículo Hitsch 2010 sí observó perfiles visitados antes de contacto; el archivo original de observaciones sigue inaccesible y se desconoce si el paquete E112322V1 las conserva; por ello la falta de denominador a nivel de nuestras muestras permanece. La oportunidad observada como conjuntos diarios de perfiles ofrecidos es medición practicable en plataformas reales pero su asignación es endógena a algoritmos y preferencias; condicionar por visita/no visitar no identifica el efecto de exposición per se. 8.36 million 'rec' records recovered in independent source with no verified definition of an actually seen candidate; excluding them exposes severe risks from equating graph relation with opportunity. Even if rec means recommendation, logged placement may differ from seen profile.",
       "evidence_sources": [
         "SRC021",
         "SRC030",
@@ -113,9 +117,10 @@
         "SRC002",
         "SRC053",
         "SRC054",
-        "SRC055"
+        "SRC055",
+        "SRC059"
       ],
-      "last_update_id": "U063",
+      "last_update_id": "U074",
       "uncertainty": "Not probabilistically calibrated; evidence heterogeneous and some sources only metadata",
       "next_falsifier_or_test": "Independent prospective data with matched risk set, competent adversarial controls and documented sample selection",
       "numeric_probability": null,
@@ -125,9 +130,10 @@
         "U027",
         "U050",
         "U056",
-        "U063"
+        "U063",
+        "U074"
       ],
-      "latest_evidence_summary": "El diseño Rios observa assortments por tiempo, candidatos y sus evaluaciones; ESBM no los observa en microdatos propios.",
+      "latest_evidence_summary": "No documented true impression/non-impression risk set nor rejection; no causal exposure effect identified.",
       "last_revised_at": "2026-10-28"
     },
     {
@@ -249,7 +255,7 @@
       "id": "P-DYADIC_ACCESS",
       "question": "Hay nuevas fuentes diádicas originales con datos descargados y suficiente temporalidad/exposiciones",
       "status": "PARTIALLY_SUPPORTED_FOR_DYADS_BUT_NOT_PROSPECTIVITY",
-      "rationale": "Columbia y Mixmosa tienen sí/no cruzados, pero Essex/eHarmony/OSF checo no procesados; ninguna satisface exposición completa + ex ante popularity. Los investigadores Rios sí dispusieron de exposiciones y decisiones diádicas históricas de una app real, pero fueron datos de industria no compartidos con nuestro proyecto. La disponibilidad de un instrumento publicado no equivale a acceso actual a filas. The original authors provide analysis code and a link to data at Archive.org, not a reachable CSV in our environment; sample has repeated encounters but does not measure app algorithm exposure or longitudinal relationship stability.",
+      "rationale": "Columbia y Mixmosa tienen sí/no cruzados, pero Essex/eHarmony/OSF checo no procesados; ninguna satisface exposición completa + ex ante popularity. Los investigadores Rios sí dispusieron de exposiciones y decisiones diádicas históricas de una app real, pero fueron datos de industria no compartidos con nuestro proyecto. La disponibilidad de un instrumento publicado no equivale a acceso actual a filas. The original authors provide analysis code and a link to data at Archive.org, not a reachable CSV in our environment; sample has repeated encounters but does not measure app algorithm exposure or longitudinal relationship stability. Author-released original SSJY action graph is now physically inspected (SHA256 recorded) with 232954 click/msg events, 177413 distinct directed links, but has no documented candidate exposure denominator, no time or paired explicit rejection. 'rec' type may represent recommendation, yet its semantics and observer coverage are unverified.",
       "evidence_sources": [
         "SRC010",
         "SRC011",
@@ -267,9 +273,10 @@
         "SRC054",
         "SRC055",
         "SRC056",
-        "SRC057"
+        "SRC057",
+        "SRC059"
       ],
-      "last_update_id": "U069",
+      "last_update_id": "U072",
       "uncertainty": "Not probabilistically calibrated; evidence heterogeneous and some sources only metadata",
       "next_falsifier_or_test": "Independent prospective data with matched risk set, competent adversarial controls and documented sample selection",
       "numeric_probability": null,
@@ -286,9 +293,10 @@
         "U052",
         "U054",
         "U062",
-        "U069"
+        "U069",
+        "U072"
       ],
-      "latest_evidence_summary": "No new participant rows processed; data archive unavailable; stage alignment does not identify app exposure.",
+      "latest_evidence_summary": "Raw real directed graph obtained; it only supports observed back-and-forth actions, not bilateral mutual consent or exposure/response processes.",
       "last_revised_at": "2026-10-28"
     },
     {
@@ -354,7 +362,7 @@
       "id": "P-MEASURE_OUTCOME",
       "question": "Reciprocidad inicial refleja formación de relaciones estables y bienestar",
       "status": "CHALLENGED",
-      "rationale": "Asendorpf seguimiento y Moreno experimentos muestran la necesidad de distinguir fechas, interés y relación; no asumir equivalencia. PNAS manipulation measured post–pre willingness to see the person again, expected reciprocal interest and conversational quality, but not mutually established long-term union. Distinguish measured post-date rating from a reciprocal app match and ESBM stock of long relationships.",
+      "rationale": "Asendorpf seguimiento y Moreno experimentos muestran la necesidad de distinguir fechas, interés y relación; no asumir equivalencia. PNAS manipulation measured post–pre willingness to see the person again, expected reciprocal interest and conversational quality, but not mutually established long-term union. Distinguish measured post-date rating from a reciprocal app match and ESBM stock of long relationships. Source train/test balanced 50/50 by design and derived from reciprocal graph query where reverse ANY edge counts; match labels agree with 7909/15000 train and 1973/3750 test observations for stricter bidirectional click/msg, not actual stable couples. Any predictive accuracy on these labels must not be interpreted as romantic success.",
       "evidence_sources": [
         "SRC019",
         "SRC024",
@@ -362,9 +370,10 @@
         "SRC046",
         "SRC048",
         "SRC049",
-        "SRC056"
+        "SRC056",
+        "SRC059"
       ],
-      "last_update_id": "U067",
+      "last_update_id": "U075",
       "uncertainty": "Not probabilistically calibrated; evidence heterogeneous and some sources only metadata",
       "next_falsifier_or_test": "Independent prospective data with matched risk set, competent adversarial controls and documented sample selection",
       "numeric_probability": null,
@@ -374,9 +383,10 @@
         "U025",
         "U040",
         "U048",
-        "U067"
+        "U067",
+        "U075"
       ],
-      "latest_evidence_summary": "Separate causal manipulation on attraction ratings cannot calibrate ESBM relationship duration.",
+      "latest_evidence_summary": "Recorded graph labels are not equal to bilateral positive action, let alone durable partnership, and are not an independent holdout from generating graph.",
       "last_revised_at": "2026-10-28"
     },
     {
@@ -675,14 +685,33 @@
       ],
       "latest_evidence_summary": "Published original randomized micro-signal experiment supports condition-specific in-interaction change in attraction ratings, not temporal co-smiling mechanism or durable union.",
       "last_revised_at": "2026-10-28"
+    },
+    {
+      "id": "P-ACTION-SEMANTICS",
+      "question": "¿Puede una arista recíproca de un grafo mixto de recomendaciones, clics y mensajes tratarse como aceptación mutua?",
+      "status": "REJECTED_AS_UNVALIDATED_MEASUREMENT",
+      "rationale": "Independent real SSJY archive has actions rec=8,366,058, click=184,291, msg=48,663; using all edges created a spuriously interpretable reciprocity rate 1.5704%, but the prereg click/msg-only result was 0.05862% directed arc reciprocity, just 52 mutual click/msg dyads. The two statistics address different variables; neither establishes match formation. A rec type could be an offer/exposure but codebook does not document delivery vs viewing. Initial all-actions analysis invalidated transparently and repaired.",
+      "evidence_sources": [
+        "SRC059"
+      ],
+      "last_update_id": "U077",
+      "uncertainty": "Action semantics are incompletely documented, no raw permission to distribute, no negative action nor timestamps; even click could mean curiosity, not consent, and reverse click can be triggered by source recommendation behavior.",
+      "next_falsifier_or_test": "Obtain author codebook and event provenance explaining rec, click and msg including context and timestamps; verify true shown/clicked/replied denominator then compare competent matching and sociological alternatives.",
+      "numeric_probability": null,
+      "CT2_is_not_this_prior": true,
+      "update_ids": [
+        "U077"
+      ],
+      "latest_evidence_summary": "Observed source data refute treating arbitrary two-way directed action edges as directly measured romantic match/acceptance; 52 reverse click/msg dyads observed, rec unverified.",
+      "last_revised_at": "2026-10-28"
     }
   ],
   "audit": {
     "all_priors_linked": true,
-    "source_ids_linked": 58,
-    "registered_sources": 58,
-    "update_events": 71,
+    "source_ids_linked": 59,
+    "registered_sources": 59,
+    "update_events": 77,
     "counts_as_new_AB_cycle": true,
-    "last_update": "2026-10-28 N80 independent randomized in-interaction evidence + pairfam CUF rights"
+    "last_update": "2026-10-28 N81 REAL_GRAPH_REPAIRED_AFTER_INSTRUMENTAL_INVALID"
   }
 }
