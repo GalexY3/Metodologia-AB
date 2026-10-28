@@ -4,22 +4,21 @@
   "date": "2026-10-28",
   "branch": "research/ab-r-mercados-pareja-20261028",
   "granted": 20,
-  "completed_valid": 15,
+  "completed_valid": 16,
   "invalid": 0,
   "planning_only": 0,
   "documentary_and_gate": 7,
   "formal_model": 1,
   "synthetic_experiment_and_sensitivity": 5,
   "adversarial": 1,
-  "unstarted_authorized": 5,
+  "unstarted_authorized": 4,
   "unstarted_ids": [
-    "N82",
     "N83",
     "N84",
     "N85",
     "N86"
   ],
-  "R5": "STOP_AFTER_N81__RAW_INDEPENDENT_ACTION_GRAPH_ANALYZED_BUT_EXPOSURE_REJECTION_LONGITUDINAL_STILL_NOT_IDENTIFIED",
+  "R5": "STOP_AFTER_N82__REAL_RECORDED_RECOMMENDATIONS_AND_OUT_OF_ACTOR_PREDICTION_BUT_NO_EXPLICIT_NO_OR_LONG_TERM_OUTCOME",
   "prereg_commit": "026cc12b5136e60034c71c2f794d01a453bdf5bd",
   "source_freeze_commit": "7f196409bc1ba5b5af6d8caad39c173a38a99405",
   "source_sha256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
@@ -36,21 +35,22 @@
   "QA": "QA.json",
   "raw_data_human_processed": false,
   "prior_register": {
-    "sources_total": 59,
-    "prior_hypotheses_total": 29,
-    "update_events_total": 77,
+    "sources_total": 61,
+    "prior_hypotheses_total": 30,
+    "update_events_total": 83,
     "latest_sources": [
-      "SRC059"
+      "SRC060",
+      "SRC061"
     ],
     "latest_updates": [
-      "U072",
-      "U073",
-      "U074",
-      "U075",
-      "U076",
-      "U077"
+      "U078",
+      "U079",
+      "U080",
+      "U081",
+      "U082",
+      "U083"
     ],
-    "independence": "SSJY independent original source; no other study replications; rec code not documented"
+    "independence": "SRC061 SSJY same exact raw cohort as SRC059; SRC060 Su Hu 2019 same code conventions but original cohort identity unverified, no independent replication"
   },
   "new_N1": 0,
   "new_N2": 0,
@@ -72,9 +72,10 @@
       7,
       6,
       6,
-      6
+      6,
+      7
     ],
-    "after": 6,
+    "after": 7,
     "nature": "ordinal pathway judgment not probability"
   },
   "ethics": "No personal real-data rehosting or claims about real identity groups; X/F/M frequencies completely synthetic",
@@ -671,6 +672,57 @@
       ],
       "report_dir": "../ABR_REAL_GRAPH_N81_20261028",
       "ledger": "../ABR_REAL_GRAPH_N81_20261028/LEDGER.json"
+    },
+    {
+      "id": "N82",
+      "type": "EMPIRICAL_SECONDARY_DATA_AB",
+      "status": "COMPLETED_VALID_ORIGINAL_EVENT_STAGE_AND_PREDICTIVE_HOLDOUT",
+      "A": "Original SSJY actor,target,ROUND, rec/click/msg opportunity set; outcome same-triple click conditional on recommended target, NOT like/rejection/couple.",
+      "B": "H1 target-specific training-actor CTR outpredicts global rate for heldout actors; H0 no improvement; alternatives algorithm/target/group selection, unverified visual impression and missing no-like.",
+      "C": "Precommit before N82 stats fb335f6a; SHA source lock 58cf00c5; actor disjoint 80/20, alpha20 target CTR vs global, heldout logloss+actor bootstrap B100 seed 20261029. Posthoc stronger group baseline explicitly separate nonconfirmatory.",
+      "D": "Author public original ZIP hash 23cff034... 87.46MB, train.txt 8.599m rows w ROUND, code local SHA256 9587f962..., original full Python gzip+b64 GitHub after run committed under earlier locked hash; data rights unknown for redistribution, zero raw rows pushed.",
+      "E": "8.366m rec offers, click conversion 1.980658%, 92.024% unique click events have same-round rec, messages coverage 49.541%. Heldout 3004 actors, 1.705m rec, global logloss .095384939 vs target .087753294, improvement .007631645, actor CI95 [.006975623,.008475946]; posthoc baseline target rec volume x round logloss .094491831, target lift .006738537 CI [.005869922,.007727340]. Repeated offers click first 2.491% vs later 1.277% noncausal.",
+      "F": "Su & Hu 2019 similar Chinese platform explains rec/click/msg but source not proven same extraction; rec not attended impression, nonclick not dislike; source target CTR can include future for different actors; no randomized ranking, no actor/target characteristics strongly controlled; algorithm selection, repeated offers noncausal, model less competent than full matching, bootstrap same platform; existing strong prior art; raw license unknown.",
+      "G": "Same source cohort as N81, holdout internal actors only not second study or external validation, independent paper source Su Hu overlap uncertain, clean clone not verified.",
+      "H": "SRC060/SRC061, five prior modifications and new P-SSJY-OFFER-CONVERSION, U078–U083; 61 source records, 30 priors, 83 events qualitative only.",
+      "I": "Science novelty 0/3, N1=0 N2=0 N3=0; CT2 6→7 ordinal due instrument, not validation. D0.9.",
+      "J": "STOP_R5, 4 unused authorized N83–N86, no main merge or raw rehosting.",
+      "CT2_before": 6,
+      "CT2_after": 7,
+      "DRIFT": "D0.9",
+      "grade": "0/3",
+      "N1_new": 0,
+      "N2": 0,
+      "N3": 0,
+      "prereg_commit": "fb335f6a5ac2ec6f269bc1702cd3f2b39e23e3e8",
+      "source_hash_lock_commit": "58cf00c5e2efab0c76a1f4bd84085e7ab8b22da0",
+      "source_sha256": "9587f9621d73cd25ad1e11168866568f199eafadb5fc39b5e1b406b2b5110961",
+      "source_ids": [
+        "SRC060",
+        "SRC061"
+      ],
+      "prior_update_ids": [
+        "U078",
+        "U079",
+        "U080",
+        "U081",
+        "U082",
+        "U083"
+      ],
+      "evidence": [
+        "PREREG_N82.json",
+        "SOURCE_FREEZE.json",
+        "audit_N82_python_source.py.gz.b64",
+        "RESULTS_AGGREGATE.json",
+        "ADVERSARIAL_POSTHOC_DESIGN.json",
+        "ADVERSARIAL_CODE_LOCK.json",
+        "ADVERSARIAL_RESULTS.json",
+        "REPORT.md",
+        "LEDGER.json",
+        "CT2_TRAJECTORY.json",
+        "CT2.svg"
+      ],
+      "report_dir": "../ABR_SSJY_STAGE_N82_20261029"
     }
   ],
   "external_audit": "research/ABR_EXTERNAL_GATE_20261028/ACCESS_AND_SCOPE_AUDIT.md",
@@ -681,10 +733,10 @@
     "source": "../ABR_PAIRFAM_GATE_20261028/LEDGER.json",
     "source_blob_sha": "a50c6fde0a9e0532f5e974f32e9f3744e686238c",
     "not_counted_cycle": "source update after N78 is maintenance (SRC053/U056-U058).",
-    "current_status": "STOP_R5;N82-N86 NOT_EXECUTED",
+    "current_status": "STOP_R5; N83-N86 NOT_EXECUTED",
     "current_posthoc_audit": "../ABR_NO_NEW_CYCLE_ACCESS_REVIEW_20261028/REPORT.md",
-    "latest_completed": "N81",
-    "last_updated": "2026-10-28"
+    "latest_completed": "N82",
+    "last_updated": "2026-10-29"
   },
   "last_documentary_gate": {
     "cycle": "N80",
@@ -698,16 +750,16 @@
   },
   "invalid_instrumental_attempts": 1,
   "last_valid_empirical_cycle": {
-    "id": "N81",
-    "status": "REPAIRED_AFTER_INVALID_INSTRUMENTATION",
-    "source": "SRC059",
-    "report": "../ABR_REAL_GRAPH_N81_20261028/REPORT.md",
-    "prereg_commit": "9ce043bfe1a0b9737e664bb3c4d17e765b5dc96c",
-    "repair_commit": "9b760af378e9855cf63e6359b2602529063b314d",
-    "scientific_grade": "0/3",
-    "ct2_before": 6,
-    "ct2_after": 6,
-    "archived_first_attempt": "../ABR_REAL_GRAPH_N81_20261028/INCIDENT_INVALID_ATTEMPT.json",
-    "no_raw_data_rehosted": true
+    "id": "N82",
+    "status": "COMPLETED_RAW_ACTOR_ROUND_OPPORTUNITY_PREDICTION",
+    "prereg_commit": "fb335f6a5ac2ec6f269bc1702cd3f2b39e23e3e8",
+    "source_hash_freeze_commit": "58cf00c5e2efab0c76a1f4bd84085e7ab8b22da0",
+    "report": "../ABR_SSJY_STAGE_N82_20261029/REPORT.md",
+    "result": "../ABR_SSJY_STAGE_N82_20261029/RESULTS_AGGREGATE.json",
+    "posthoc": "../ABR_SSJY_STAGE_N82_20261029/ADVERSARIAL_RESULTS.json",
+    "CT2_before": 6,
+    "CT2_after": 7,
+    "novelty_grade": "0/3",
+    "no_causal_inference": true
   }
 }
