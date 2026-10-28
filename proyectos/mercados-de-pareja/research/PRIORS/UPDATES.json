@@ -1134,7 +1134,213 @@
       "AB_cycle_increment": 0,
       "prior_probability_before": null,
       "prior_probability_after": null
+    },
+    {
+      "id": "U045",
+      "prior_id": "P-DYADIC_ACCESS",
+      "source_ids": [
+        "SRC047"
+      ],
+      "cycle_ids": [
+        "N76"
+      ],
+      "before": "PARTIALLY_SUPPORTED_FOR_DYADS_BUT_NOT_PROSPECTIVITY",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "after": "PARTIALLY_SUPPORTED_FOR_DYADS_BUT_NOT_PROSPECTIVITY",
+      "what_the_sources_contribute": "E218862V1 officially lists Data, Code, Exhibits, Temp and README, but it's student-survey panel not a profile exposure table.",
+      "why_this_updates_or_checks_prior": "The presence of Data does not imply linked candidate impressions or bilateral responses.",
+      "limits": "Only top-level archive metadata, no files downloaded or LICENSE inspected.",
+      "falsifier_or_followup": "No dyadic validation until inspect archive and raw unit.",
+      "evidence_type": "official archival metadata / primary data use agreements; not processed participant rows",
+      "retrospective_backfill": false,
+      "recorded_at": "2026-10-28",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null
+    },
+    {
+      "id": "U046",
+      "prior_id": "P-EXANTE_POP",
+      "source_ids": [
+        "SRC047",
+        "SRC050"
+      ],
+      "cycle_ids": [
+        "N76"
+      ],
+      "before": "DATA_BLOCKED",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "after": "DATA_BLOCKED",
+      "what_the_sources_contribute": "AEA archive version and migration documentation confirm where files should exist, not pre-exposure popularity data.",
+      "why_this_updates_or_checks_prior": "Student survey outcomes and college rollout offer no individual candidate desirability history.",
+      "limits": "No raw files; migration not established as specific failure cause.",
+      "falsifier_or_followup": "Require timestamped logged impressions and precontact popularity.",
+      "evidence_type": "official archival metadata / primary data use agreements; not processed participant rows",
+      "retrospective_backfill": false,
+      "recorded_at": "2026-10-28",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null
+    },
+    {
+      "id": "U047",
+      "prior_id": "P-LONGITUDINAL-ELIGIBILITY",
+      "source_ids": [
+        "SRC048",
+        "SRC049"
+      ],
+      "cycle_ids": [
+        "N77"
+      ],
+      "before": "NOT_RECORDED",
+      "direction": "DOCUMENTED_NEW_INDEPENDENT_MEASUREMENT_ROUTE",
+      "after": "DOCUMENTED_SAMPLE_RAW_NOT_INSPECTED",
+      "what_the_sources_contribute": "Stanford original HCMST2017 cohort with three waves (3510, 2107, 1722) and relationship continuity, same study mirrored as ICPSR 38873.",
+      "why_this_updates_or_checks_prior": "New observation class is relationship persistence and breakup, distinct from prior Columbia and Mixmosa speed-dating votes.",
+      "limits": "Neither Stanford v2.2 data nor codebook downloaded; no computed hazard, selection and weights unclear.",
+      "falsifier_or_followup": "Legally acquire and inspect official panel and preregister survival baselines with attrition.",
+      "evidence_type": "official archival metadata / primary data use agreements; not processed participant rows",
+      "retrospective_backfill": false,
+      "recorded_at": "2026-10-28",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null
+    },
+    {
+      "id": "U048",
+      "prior_id": "P-MEASURE_OUTCOME",
+      "source_ids": [
+        "SRC048",
+        "SRC049"
+      ],
+      "cycle_ids": [
+        "N77"
+      ],
+      "before": "CHALLENGED",
+      "direction": "REFINE_SEPARATE_LONGITUDINAL_OUTCOME",
+      "after": "CHALLENGED",
+      "what_the_sources_contribute": "HCMST follows individuals across years and studies actual relationships, unlike speed-dating likes.",
+      "why_this_updates_or_checks_prior": "A reciprocal like cannot substitute relationship persistence; panel allows testing later stage separately.",
+      "limits": "Original files missing; single respondent survey not a paired choice graph.",
+      "falsifier_or_followup": "Predefine relationship-active, breakup and right-censoring; apply weights.",
+      "evidence_type": "official archival metadata / primary data use agreements; not processed participant rows",
+      "retrospective_backfill": false,
+      "recorded_at": "2026-10-28",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null
+    },
+    {
+      "id": "U049",
+      "prior_id": "P-UNION-DURATION",
+      "source_ids": [
+        "SRC048",
+        "SRC049"
+      ],
+      "cycle_ids": [
+        "N77"
+      ],
+      "before": "CHALLENGED",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "after": "CHALLENGED",
+      "what_the_sources_contribute": "Longitudinal panel has duration-related outcomes and variation in meeting technology, potentially falsifying a stage of simulation.",
+      "why_this_updates_or_checks_prior": "The mere existence of survey questions cannot prove app relationships are more or less stable.",
+      "limits": "Nonresponse, COVID, relation age and selection confound naive comparisons; no raw processed.",
+      "falsifier_or_followup": "Fit prespecified models on verified data and robust selection controls, not synthetic hazard calibration from abstract.",
+      "evidence_type": "official archival metadata / primary data use agreements; not processed participant rows",
+      "retrospective_backfill": false,
+      "recorded_at": "2026-10-28",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null
+    },
+    {
+      "id": "U050",
+      "prior_id": "P-OPPORTUNITY",
+      "source_ids": [
+        "SRC048",
+        "SRC049"
+      ],
+      "cycle_ids": [
+        "N77"
+      ],
+      "before": "MATERIAL_MISSINGNESS",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "after": "MATERIAL_MISSINGNESS",
+      "what_the_sources_contribute": "HCMST reports encounters and meeting channel of actual couples, not profiles/people not met.",
+      "why_this_updates_or_checks_prior": "Does not solve opportunity denominator or pre-exposure choice mechanisms.",
+      "limits": "No profile impressions or risk set of declined candidates by design.",
+      "falsifier_or_followup": "Partner-level exposure log with real counterfactual options needed.",
+      "evidence_type": "official archival metadata / primary data use agreements; not processed participant rows",
+      "retrospective_backfill": false,
+      "recorded_at": "2026-10-28",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null
+    },
+    {
+      "id": "U051",
+      "prior_id": "P-DYADIC_ACCESS",
+      "source_ids": [
+        "SRC048",
+        "SRC049"
+      ],
+      "cycle_ids": [
+        "N77"
+      ],
+      "before": "PARTIALLY_SUPPORTED_FOR_DYADS_BUT_NOT_PROSPECTIVITY",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "after": "PARTIALLY_SUPPORTED_FOR_DYADS_BUT_NOT_PROSPECTIVITY",
+      "what_the_sources_contribute": "HCMST collected partner information from individuals, longitudinal but respondent as observation.",
+      "why_this_updates_or_checks_prior": "Relationship outcomes are not paired directional approval decisions; same sample from two archive pages.",
+      "limits": "No row-level data accessed, ICPSR membership differs from Stanford public terms.",
+      "falsifier_or_followup": "Keep HCMST as separate later-stage holdout, not a third dyadic swipes replicate.",
+      "evidence_type": "official archival metadata / primary data use agreements; not processed participant rows",
+      "retrospective_backfill": false,
+      "recorded_at": "2026-10-28",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null
+    },
+    {
+      "id": "U052",
+      "prior_id": "P-DYADIC_ACCESS",
+      "source_ids": [
+        "SRC050"
+      ],
+      "cycle_ids": [
+        "N76"
+      ],
+      "before": "PARTIALLY_SUPPORTED_FOR_DYADS_BUT_NOT_PROSPECTIVITY",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "after": "PARTIALLY_SUPPORTED_FOR_DYADS_BUT_NOT_PROSPECTIVITY",
+      "what_the_sources_contribute": "ICPSR migrating archive interfaces while preserving DOIs; potentially useful retrieval route.",
+      "why_this_updates_or_checks_prior": "Migration does not create an otherwise missing data field or new cohort.",
+      "limits": "Current linked DOI retrieval failed in web/container; no physical bytes.",
+      "falsifier_or_followup": "Try supported interface, verify repository-specific license and exact file.",
+      "evidence_type": "official archival metadata / primary data use agreements; not processed participant rows",
+      "retrospective_backfill": false,
+      "recorded_at": "2026-10-28",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null
     }
   ],
-  "last_campaign": "ABR-ESBM20-20261028"
+  "last_campaign": "ABR-EXTERNAL-GATE-20261028"
 }
