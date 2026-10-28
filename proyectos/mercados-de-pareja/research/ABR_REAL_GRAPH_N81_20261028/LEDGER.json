@@ -1,0 +1,135 @@
+{
+  "schema": "ab.research.ledger.v1",
+  "campaign": "ABR-SSJY-REALGRAPH-N81-20261028",
+  "branch": "research/ab-r-mercados-pareja-20261028",
+  "date": "2026-10-28",
+  "parent": "N80",
+  "authorization_start": 6,
+  "valid_cycles_this_turn": 1,
+  "invalid_AB_cycles_this_turn": 0,
+  "invalid_instrumental_attempts_this_turn": 1,
+  "planning_AB_cycles_this_turn": 0,
+  "completed_valid_total": 15,
+  "remaining_unused_authorized": 5,
+  "unstarted_ids": [
+    "N82",
+    "N83",
+    "N84",
+    "N85",
+    "N86"
+  ],
+  "ct2": {
+    "before": 6,
+    "after": 6,
+    "scale": "ordinal 1–100 not probability"
+  },
+  "original_independent_human_action_events_used": 232954,
+  "original_independent_human_data_archive_size": 87463480,
+  "raw_data_rehosted": false,
+  "original_causal_experiments": 0,
+  "synthetic_runs": 0,
+  "scientific_grade": "0/3",
+  "new_N1": 0,
+  "new_N2": 0,
+  "new_N3": 0,
+  "source_counts": {
+    "sources": 59,
+    "priors": 29,
+    "updates": 77
+  },
+  "AB_DECIDE": "STOP_R5",
+  "cycle": {
+    "id": "N81",
+    "type": "EMPIRICAL_SECONDARY_DATA_AB",
+    "status": "COMPLETED_VALID_AFTER_REPAIR_WITH_INVALID_INSTRUMENTAL_ATTEMPT",
+    "A": "Independent real author-shared SSJY directed click/msg action graph; observed reciprocal arc fraction (not romantic match or union); exact raw zip hash and rights caveat.",
+    "B": "H0 indegree/outdegree event configuration baseline vs excess reciprocal click/msg; alternatives group assortativity/exposure/algorithm explain even excess.",
+    "C": "Frozen 30-event-degree target permutation null seed 20261028, one primary rate, Monte Carlo +1 p; no causal ESBM or strong group block null.",
+    "D": "Original public Google Drive SSJY author link SHA256 23cff034... ZIP, source frozen GitHub c64a..., rec inclusion invalidated, repair prereg and code frozen 9b760..., source Git blob 50771..., no raw rehosting.",
+    "E": "232954 valid click/msg events, 177413 unique arcs, 104 reciprocated directed (52 unordered mutual pairs), observed .0005862028, mean 30 null .00016745945, max .00023428, empirical upper-tail p=1/31. Original 8.599m records mostly rec 8.366m excluded. Train/test artificial 50/50 mismatch with strict reciprocal click/msg label.",
+    "F": "Initial code included rec violating prereg (invalid instrument attempt), transparently recorded. Node activity/popularity controlled, not category mixing/exposure/temporal; 30 reps small, user self-selection, rec undefined; no true mate acceptance or duration; no license for rehosting.",
+    "G": "Dataset original independent of previously tested cohorts, not independent replication of ESBM; no external holdout, clean clone not verified.",
+    "H": "SRC059; 5 qualitative updates + new P-ACTION-SEMANTICS (U072–U077); 59 source records, 29 qualitative priors, 77 updates, no numeric Bayesian posterior.",
+    "I": "Scientific grade 0/3, no new N1,N2,N3, CT2 6→6/100 ordinal. DRIFT D0.7.",
+    "J": "STOP_R5; N82–N86 five authorized unused, no causal validation, no main merge.",
+    "DRIFT": "D0.7",
+    "CT2_before": 6,
+    "CT2_after": 6,
+    "grade": "0/3",
+    "N1_new": 0,
+    "N2": 0,
+    "N3": 0,
+    "prereg_commit": "9ce043bfe1a0b9737e664bb3c4d17e765b5dc96c",
+    "repair_commit": "9b760af378e9855cf63e6359b2602529063b314d",
+    "source_ids": [
+      "SRC059"
+    ],
+    "prior_update_ids": [
+      "U072",
+      "U073",
+      "U074",
+      "U075",
+      "U076",
+      "U077"
+    ],
+    "evidence": [
+      "PREREG_N81.json",
+      "audit_reciprocity.py",
+      "INCIDENT_INVALID_ATTEMPT.json",
+      "AMENDMENT_R1.json",
+      "audit_reciprocity_REPAIR.py",
+      "RESULTS_AGGREGATE.json",
+      "REPORT.md"
+    ]
+  },
+  "cycles": [
+    {
+      "id": "N81",
+      "type": "EMPIRICAL_SECONDARY_DATA_AB",
+      "status": "COMPLETED_VALID_AFTER_REPAIR_WITH_INVALID_INSTRUMENTAL_ATTEMPT",
+      "A": "Independent real author-shared SSJY directed click/msg action graph; observed reciprocal arc fraction (not romantic match or union); exact raw zip hash and rights caveat.",
+      "B": "H0 indegree/outdegree event configuration baseline vs excess reciprocal click/msg; alternatives group assortativity/exposure/algorithm explain even excess.",
+      "C": "Frozen 30-event-degree target permutation null seed 20261028, one primary rate, Monte Carlo +1 p; no causal ESBM or strong group block null.",
+      "D": "Original public Google Drive SSJY author link SHA256 23cff034... ZIP, source frozen GitHub c64a..., rec inclusion invalidated, repair prereg and code frozen 9b760..., source Git blob 50771..., no raw rehosting.",
+      "E": "232954 valid click/msg events, 177413 unique arcs, 104 reciprocated directed (52 unordered mutual pairs), observed .0005862028, mean 30 null .00016745945, max .00023428, empirical upper-tail p=1/31. Original 8.599m records mostly rec 8.366m excluded. Train/test artificial 50/50 mismatch with strict reciprocal click/msg label.",
+      "F": "Initial code included rec violating prereg (invalid instrument attempt), transparently recorded. Node activity/popularity controlled, not category mixing/exposure/temporal; 30 reps small, user self-selection, rec undefined; no true mate acceptance or duration; no license for rehosting.",
+      "G": "Dataset original independent of previously tested cohorts, not independent replication of ESBM; no external holdout, clean clone not verified.",
+      "H": "SRC059; 5 qualitative updates + new P-ACTION-SEMANTICS (U072–U077); 59 source records, 29 qualitative priors, 77 updates, no numeric Bayesian posterior.",
+      "I": "Scientific grade 0/3, no new N1,N2,N3, CT2 6→6/100 ordinal. DRIFT D0.7.",
+      "J": "STOP_R5; N82–N86 five authorized unused, no causal validation, no main merge.",
+      "DRIFT": "D0.7",
+      "CT2_before": 6,
+      "CT2_after": 6,
+      "grade": "0/3",
+      "N1_new": 0,
+      "N2": 0,
+      "N3": 0,
+      "prereg_commit": "9ce043bfe1a0b9737e664bb3c4d17e765b5dc96c",
+      "repair_commit": "9b760af378e9855cf63e6359b2602529063b314d",
+      "source_ids": [
+        "SRC059"
+      ],
+      "prior_update_ids": [
+        "U072",
+        "U073",
+        "U074",
+        "U075",
+        "U076",
+        "U077"
+      ],
+      "evidence": [
+        "PREREG_N81.json",
+        "audit_reciprocity.py",
+        "INCIDENT_INVALID_ATTEMPT.json",
+        "AMENDMENT_R1.json",
+        "audit_reciprocity_REPAIR.py",
+        "RESULTS_AGGREGATE.json",
+        "REPORT.md"
+      ]
+    }
+  ],
+  "initial_invalid_instrumental_attempt": "INCIDENT_INVALID_ATTEMPT.json",
+  "results": "RESULTS_AGGREGATE.json",
+  "report": "REPORT.md",
+  "portability": "CLEAN_CLONE_NOT_VERIFIED"
+}
