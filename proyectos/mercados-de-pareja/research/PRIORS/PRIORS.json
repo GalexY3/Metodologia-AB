@@ -2,7 +2,7 @@
   "schema": "ab.research.priors.v1",
   "date": "2026-10-28",
   "project": "mercados-de-pareja",
-  "backfill_scope": "Current qualitative positions reconstructed now from documentary ledgers. These were not necessarily written as priors at date of original discovery.",
+  "backfill_scope": "Current qualitative positions reconstructed now from documentary ledgers. These were not necessarily written as priors at date of original discovery. Expanded after N58 literature review and before N59-N66 synthetic results.",
   "formal_bayesian": false,
   "states": [
     "OPEN",
@@ -315,6 +315,90 @@
       ],
       "latest_evidence_summary": "Moreno et al. estudian evaluación y experiencia de citas reales.",
       "last_revised_at": "2026-10-28"
+    },
+    {
+      "id": "P-PLATFORM-RANKING",
+      "question": "Intermediación algorítmica altera oportunidades y desigualdad de visibilidad",
+      "status": "EXTERNAL_FIELD_EVIDENCE",
+      "rationale": "Chen 2023 usa experimento de plataforma y Celdir 2024 documenta sesgo de popularidad; nuestro algoritmo toy tiene objetivos simplificados.",
+      "evidence_sources": [],
+      "last_update_id": null,
+      "uncertainty": "Not calibrated Bayesian probabilities; context and heterogeneity uncertain",
+      "next_falsifier_or_test": "Para afirmar mecanismos causales de plataforma específica, conocer ranking real y registros de exposición, con permiso.",
+      "numeric_probability": null,
+      "CT2_is_not_this_prior": true
+    },
+    {
+      "id": "P-CULTURAL-RULES",
+      "question": "Normas relacionales e instituciones modulan mecanismos de matching",
+      "status": "THEORETICALLY_SUPPORTED",
+      "rationale": "Kalmijn y Fuhse-Gondal resaltan intervención de terceros, proximidad, campo social y normas culturalmente situadas.",
+      "evidence_sources": [],
+      "last_update_id": null,
+      "uncertainty": "Not calibrated Bayesian probabilities; context and heterogeneity uncertain",
+      "next_falsifier_or_test": "Comparar instituciones/entornos con reglas medibles, evitando reduccionismo status-universal.",
+      "numeric_probability": null,
+      "CT2_is_not_this_prior": true
+    },
+    {
+      "id": "P-IDEATIONAL",
+      "question": "Valores, planes familiares y actitudes importan más allá del status socioeconómico",
+      "status": "THEORETICALLY_SUPPORTED",
+      "rationale": "Wang 2026 documenta creciente atención a sorting ideacional, sin datos nuevos en el review.",
+      "evidence_sources": [],
+      "last_update_id": null,
+      "uncertainty": "Not calibrated Bayesian probabilities; context and heterogeneity uncertain",
+      "next_falsifier_or_test": "Encuestas de valores e intenciones y datos de citas vinculados, perspectiva longitudinal.",
+      "numeric_probability": null,
+      "CT2_is_not_this_prior": true
+    },
+    {
+      "id": "P-BOUNDED",
+      "question": "Abundancia de opciones y limitaciones cognitivas cambian la forma de evaluar",
+      "status": "EXTERNAL_EMPIRICAL_INDICATION",
+      "rationale": "Lenton y Francesconi 2010 reportan señales de preferencia por atributos rápidamente evaluables bajo muchas opciones.",
+      "evidence_sources": [],
+      "last_update_id": null,
+      "uncertainty": "Not calibrated Bayesian probabilities; context and heterogeneity uncertain",
+      "next_falsifier_or_test": "Manipulación aleatoria de volumen de opciones con registros de decisión/tiempo.",
+      "numeric_probability": null,
+      "CT2_is_not_this_prior": true
+    },
+    {
+      "id": "P-ORIENTATION",
+      "question": "Mercado heterosexual binario agota todos los tipos de elección de pareja",
+      "status": "REJECTED_SCOPE",
+      "rationale": "Revisiones recientes incluyen uniones diversas y minorías sexuales; heterosexual sample no transporta a orientaciones y redes distintas.",
+      "evidence_sources": [],
+      "last_update_id": null,
+      "uncertainty": "Not calibrated Bayesian probabilities; context and heterogeneity uncertain",
+      "next_falsifier_or_test": "Implementar grafo general de compatibilidad orientaciones con datos consensuados y controles de visibilidad.",
+      "numeric_probability": null,
+      "CT2_is_not_this_prior": true
+    },
+    {
+      "id": "P-CROSS-STAGE",
+      "question": "Homogamia por grupo observada en parejas identifica el mecanismo psicológico",
+      "status": "REJECTED_IDENTIFICATION",
+      "rationale": "El matching observado es selección multietapa; oportunidades y reciprocidad pueden generar mismo patrón final con distinto mecanismo.",
+      "evidence_sources": [],
+      "last_update_id": null,
+      "uncertainty": "Not calibrated Bayesian probabilities; context and heterogeneity uncertain",
+      "next_falsifier_or_test": "Comparar probabilidades condicionales y universo de riesgo por etapa con información temporal.",
+      "numeric_probability": null,
+      "CT2_is_not_this_prior": true
+    },
+    {
+      "id": "P-FEEDBACK",
+      "question": "Feedback informativo sobre popularidad puede alterar umbrales y autopresentación",
+      "status": "EXPERIMENTALLY_SUPPORTED_IN_CONTEXT",
+      "rationale": "Shi et al. 2025 reportan diferencias entre información de popularidad comparativa y absoluta, no decremento público de reputación.",
+      "evidence_sources": [],
+      "last_update_id": null,
+      "uncertainty": "Not calibrated Bayesian probabilities; context and heterogeneity uncertain",
+      "next_falsifier_or_test": "Randomizar tipos de feedback y observar cambio en preferencias antes/después, no inferir δ reputacional.",
+      "numeric_probability": null,
+      "CT2_is_not_this_prior": true
     }
   ],
   "audit": {
