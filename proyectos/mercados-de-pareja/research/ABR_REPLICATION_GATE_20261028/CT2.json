@@ -1,0 +1,26 @@
+{
+  "schema": "ab.ct2.v1",
+  "campaign": "ABR_REPLICATION_GATE_20261028",
+  "assessment_kind": "ordinal, NOT a probability",
+  "prior_CT2": 17,
+  "after_N38": 17,
+  "points": [
+    {
+      "stage": "REALDATA13 end N37",
+      "ct2": 17,
+      "source": "../ABR_REALDATA13_20261028/CT2_TRAJECTORY.json"
+    },
+    {
+      "stage": "N38 source access gate",
+      "ct2": 17,
+      "source": "LEDGER.json"
+    }
+  ],
+  "not_executed": [
+    "N39",
+    "N40"
+  ],
+  "N2": 0,
+  "N3": 0,
+  "reason": "No independent complete diadic data analysed in new sample; external replication not performed"
+}
