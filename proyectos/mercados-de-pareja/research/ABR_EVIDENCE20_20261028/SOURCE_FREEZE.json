@@ -1,0 +1,25 @@
+{
+  "prereg_commit": "8949077025a8d585fecdc3cec09ec13710cd5a72",
+  "date": "2026-10-28",
+  "source_sha256": "30417b2a58368f2e3df952d567923d5fb8c435c1d3b15e89d82ec62f053a6f45",
+  "source_bytes": 3138,
+  "source_relative_path": "audit.py",
+  "source_archived_later": "PENDING_AT_FREEZE",
+  "environment": "Python 3.13.5 numpy 2.3.5",
+  "seeds": [
+    411,
+    733,
+    1099,
+    1481,
+    2017
+  ],
+  "tests": [
+    "Exhaustive permutations n=2..6, assert stable identity only",
+    "Synthetic four-group segmentation random within, r pooled vs within vs global/stratified permuted, law total covariance assert"
+  ],
+  "status": "FROZEN_BEFORE_FIRST_EXECUTION",
+  "limits": [
+    "synthetic and mathematical not human empirical",
+    "n=2..6 exhaustive check is not a proof for all n; separate analytical proof needed"
+  ]
+}
