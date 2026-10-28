@@ -4,8 +4,10 @@ Repositorio privado de la metodología de investigación abductivo-bayesiana **A
 
 ## Protocolo portable de interacción con ChatGPT (lectura obligatoria)
 
-**[AB 3.2.1-O6 — campañas, informes, gráfica CT2 y autorización de ciclos](docs/AB_3_2_1_O6_CAMPANAS_INFORMES_CT2_Y_CICLOS.md)**. Las instancias que continúen una investigación AB deben seguir este contrato: ciclo A–J, CT2 1–100 por línea, escala DRIFT D0–D5, registro permanente de hallazgos 1/3, gráfica CT2 de escala completa y ampliada al cierre, y **solicitud final de 20–45 ciclos AB**, sin pedir otra vez bloques ya autorizados. Véase también **[AGENTS.md](AGENTS.md)** para el orden de lectura y recuperación en sesiones nuevas. Son reglas de presentación y gobernanza, no un método demostrado para alcanzar 2/3.
+**[AB 3.2.1-O6 — campañas, informes, gráfica CT2 y autorización de ciclos](docs/AB_3_2_1_O6_CAMPANAS_INFORMES_CT2_Y_CICLOS.md)**. Las instancias que continúen una investigación AB deben seguir este contrato: ciclo A–J, CT2 1–100 por línea, escala DRIFT D0–D5, registro permanente de hallazgos 1/3, gráfica CT2 de escala completa y ampliada al cierre, y **solicitud final de 5–15 ciclos AB**, sin pedir otra vez bloques ya autorizados. Véase también **[AGENTS.md](AGENTS.md)** para el orden de lectura y recuperación en sesiones nuevas. Son reglas de presentación y gobernanza, no un método demostrado para alcanzar 2/3.
 
+
+**Actualización 28/10/2026:** el investigador sustituye el intervalo prospectivo de 20–45 por **5–15 ciclos por bloque**, pudiendo solicitar bloques sucesivos. **ChatRelay queda suspendido por defecto**; cualquier reactivación requiere justificación excepcional y decisión nueva. Los saldos y contratos históricos permanecen separados.
 
 ## Mapa universal, modo proyectos y AB autocorrectivo (O7, piloto)
 
