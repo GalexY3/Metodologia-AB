@@ -4,16 +4,15 @@
   "date": "2026-10-28",
   "branch": "research/ab-r-mercados-pareja-20261028",
   "granted": 20,
-  "completed_valid": 13,
+  "completed_valid": 14,
   "invalid": 0,
   "planning_only": 0,
-  "documentary_and_gate": 6,
+  "documentary_and_gate": 7,
   "formal_model": 1,
   "synthetic_experiment_and_sensitivity": 5,
   "adversarial": 1,
-  "unstarted_authorized": 7,
+  "unstarted_authorized": 6,
   "unstarted_ids": [
-    "N80",
     "N81",
     "N82",
     "N83",
@@ -21,7 +20,7 @@
     "N85",
     "N86"
   ],
-  "R5": "STOP_AFTER_N79__EXTERNAL_REAL_MATCHING_FIELD_BENCHMARK_FOUND_BUT_NO_RAW_DATA__SEVEN_UNUSED",
+  "R5": "STOP_AFTER_N80__NEW_CAUSAL_PAPER_DOCUMENTED_BUT_NO_RAW_INDEPENDENT_ESBM_TEST__SIX_UNUSED",
   "prereg_commit": "026cc12b5136e60034c71c2f794d01a453bdf5bd",
   "source_freeze_commit": "7f196409bc1ba5b5af6d8caad39c173a38a99405",
   "source_sha256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
@@ -38,24 +37,23 @@
   "QA": "QA.json",
   "raw_data_human_processed": false,
   "prior_register": {
-    "sources_total": 55,
-    "prior_hypotheses_total": 27,
-    "update_events_total": 65,
+    "sources_total": 58,
+    "prior_hypotheses_total": 28,
+    "update_events_total": 71,
     "latest_sources": [
-      "SRC053",
-      "SRC054",
-      "SRC055"
+      "SRC056",
+      "SRC057",
+      "SRC058"
     ],
     "latest_updates": [
-      "U059",
-      "U060",
-      "U061",
-      "U062",
-      "U063",
-      "U064",
-      "U065"
+      "U066",
+      "U067",
+      "U068",
+      "U069",
+      "U070",
+      "U071"
     ],
-    "source_independence_note": "SRC054 and SRC055 may use same dating-industry partner; paper results are NOT ours; no raw individual dataset accessed"
+    "source_independence_note": "SRC056/SRC057 same PNAS dyad experiment, SRC058 pairfam campus same cohort SRC051/SRC052; no raw data rows processed"
   },
   "new_N1": 0,
   "new_N2": 0,
@@ -75,6 +73,7 @@
       7,
       7,
       7,
+      6,
       6
     ],
     "after": 6,
@@ -578,6 +577,56 @@
         "../ABR_RIOS_FIELD_GATE_20261028/CT2_TRAJECTORY.json"
       ],
       "report_dir": "../ABR_RIOS_FIELD_GATE_20261028"
+    },
+    {
+      "id": "N80",
+      "type": "DOCUMENTARY_AB",
+      "status": "COMPLETED_ORIGINAL_RANDOMIZED_INTERACTION_ELIGIBILITY",
+      "A": "Identify inter-person signal intervention effects on post-pre attraction independently from ex ante profile desirability; original PNAS 31 people 60 video dates, not an ESBM causal estimand.",
+      "B": "Dyad congruence main-effect vs both-positive positive-valence and treatment interaction; confounded or externally nontransportable signals as alternatives.",
+      "C": "Crossed 2x2 smile manipulation with competent actor/partner Social Relation Model, pre/post rating, clustered repeated-person outcomes; compare genuine time synchrony vs static shifted display.",
+      "D": "Original 10-page PDF text read, original GitHub README and R behavior/synchrony analyses fetched; screenshots failed, archive.org CSV not available, zero subject rows processed.",
+      "E": "Published 31 volunteer/60 real dyadic sessions; positive ++ smile vs mixed attraction ratings and -- conversation quality vs mixed, not true dynamic smile synchronization. Author statistical interaction quoted chi2(3) 9.7 P .001.",
+      "F": "Small n, ratings vs stable match, repeat encounters, outcome mapping, data inaccessible, potential chi2 df/p mismatch (.0213 for df3, .00184 for df1), no inference of fraud.",
+      "G": "No independent confirmatory replication; SRC056 and SRC057 same original sample, Campus SRC058 derivative from earlier pairfam.",
+      "H": "SRC056–SRC058, U066–U071; new prior P-INTERACTION-EXPRESSIVE; 58 sources / 28 priors / 71 updates, no numeric posterior.",
+      "I": "0/3 original grade, N1=0 N2=0 N3=0, CT2 6→6, D1.1 candidate change only; no own causal effect identified.",
+      "J": "STOP_R5, six unused N81–N86, no own experiment or human rows; need legally obtained data and distinct prediction.",
+      "prereg_commit": "e70079a647c7142281d6bc6c30ce9f3e92f69cbb",
+      "source_ids": [
+        "SRC056",
+        "SRC057",
+        "SRC058"
+      ],
+      "prior_ids": [
+        "P-INTERACTION-EXPRESSIVE",
+        "P-MEASURE_OUTCOME",
+        "P-NOVELTY",
+        "P-DYADIC_ACCESS",
+        "P-LONGITUDINAL-ELIGIBILITY",
+        "P-RECIPROCITY"
+      ],
+      "prior_update_ids": [
+        "U066",
+        "U067",
+        "U068",
+        "U069",
+        "U070",
+        "U071"
+      ],
+      "CT2_before": 6,
+      "CT2_after": 6,
+      "DRIFT": "D1.1 planned mechanism dimension, no implemented pivot",
+      "new_N1": 0,
+      "new_N2": 0,
+      "new_N3": 0,
+      "raw_rows_read": 0,
+      "evidence": [
+        "../ABR_DYAD_INTERACTION_N80_20261028/PREREG_N80.json",
+        "../ABR_DYAD_INTERACTION_N80_20261028/REPORT.md",
+        "../ABR_DYAD_INTERACTION_N80_20261028/LEDGER.json",
+        "../ABR_DYAD_INTERACTION_N80_20261028/CT2_TRAJECTORY.json"
+      ]
     }
   ],
   "external_audit": "research/ABR_EXTERNAL_GATE_20261028/ACCESS_AND_SCOPE_AUDIT.md",
@@ -588,16 +637,19 @@
     "source": "../ABR_PAIRFAM_GATE_20261028/LEDGER.json",
     "source_blob_sha": "a50c6fde0a9e0532f5e974f32e9f3744e686238c",
     "not_counted_cycle": "source update after N78 is maintenance (SRC053/U056-U058).",
-    "current_status": "STOP_R5;N79-N86 NOT_EXECUTED",
-    "current_posthoc_audit": "../ABR_NO_NEW_CYCLE_ACCESS_REVIEW_20261028/REPORT.md"
+    "current_status": "STOP_R5;N81-N86 NOT_EXECUTED",
+    "current_posthoc_audit": "../ABR_NO_NEW_CYCLE_ACCESS_REVIEW_20261028/REPORT.md",
+    "latest_completed": "N80",
+    "last_updated": "2026-10-28"
   },
   "last_documentary_gate": {
-    "cycle": "N79",
-    "report": "../ABR_RIOS_FIELD_GATE_20261028/REPORT.md",
-    "prereg_commit": "b140dc0d0943826706e156dc39d758d75bb8029b",
-    "noncausal_new_evidence": true,
+    "cycle": "N80",
+    "report": "../ABR_DYAD_INTERACTION_N80_20261028/REPORT.md",
+    "prereg_commit": "e70079a647c7142281d6bc6c30ce9f3e92f69cbb",
     "grade": "0/3",
-    "CT2_before": 7,
-    "CT2_after": 6
+    "CT2_before": 6,
+    "CT2_after": 6,
+    "source_independence": "independent published intervention, but no original own replication",
+    "data_access": "none"
   }
 }
