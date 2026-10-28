@@ -231,9 +231,10 @@
         "SRC026",
         "SRC027",
         "SRC024",
-        "SRC022"
+        "SRC022",
+        "SRC047"
       ],
-      "last_update_id": "U019",
+      "last_update_id": "U042",
       "uncertainty": "Not probabilistically calibrated; evidence heterogeneous and some sources only metadata",
       "next_falsifier_or_test": "Independent prospective data with matched risk set, competent adversarial controls and documented sample selection",
       "numeric_probability": null,
@@ -243,9 +244,10 @@
         "U010",
         "U011",
         "U017",
-        "U019"
+        "U019",
+        "U042"
       ],
-      "latest_evidence_summary": "OSF 6zcrs se declara en el artículo checo.",
+      "latest_evidence_summary": "AEA replication archive DOI identified externally and linked to paper",
       "last_revised_at": "2026-10-28"
     },
     {
@@ -314,18 +316,21 @@
       "rationale": "Asendorpf seguimiento y Moreno experimentos muestran la necesidad de distinguir fechas, interés y relación; no asumir equivalencia.",
       "evidence_sources": [
         "SRC019",
-        "SRC024"
+        "SRC024",
+        "SRC044",
+        "SRC046"
       ],
-      "last_update_id": "U025",
+      "last_update_id": "U040",
       "uncertainty": "Not probabilistically calibrated; evidence heterogeneous and some sources only metadata",
       "next_falsifier_or_test": "Independent prospective data with matched risk set, competent adversarial controls and documented sample selection",
       "numeric_probability": null,
       "CT2_is_not_this_prior": true,
       "update_ids": [
         "U014",
-        "U025"
+        "U025",
+        "U040"
       ],
-      "latest_evidence_summary": "Moreno et al. estudian evaluación y experiencia de citas reales.",
+      "latest_evidence_summary": "Apps can change encounter/sexual outcomes without commensurate relationship or marriage formation",
       "last_revised_at": "2026-10-28"
     },
     {
@@ -335,17 +340,19 @@
       "rationale": "Chen 2023 usa experimento de plataforma y Celdir 2024 documenta sesgo de popularidad; nuestro algoritmo toy tiene objetivos simplificados.",
       "evidence_sources": [
         "SRC032",
-        "SRC034"
+        "SRC034",
+        "SRC042"
       ],
-      "last_update_id": "U028",
+      "last_update_id": "U044",
       "uncertainty": "Not calibrated Bayesian probabilities; context and heterogeneity uncertain",
       "next_falsifier_or_test": "Para afirmar mecanismos causales de plataforma específica, conocer ranking real y registros de exposición, con permiso.",
       "numeric_probability": null,
       "CT2_is_not_this_prior": true,
       "update_ids": [
-        "U028"
+        "U028",
+        "U044"
       ],
-      "latest_evidence_summary": "El ensayo de campo 2023 de Chen compara recomendaciones bilaterales y cobertura en plataforma, y Celdir presenta sesgo de popularidad.",
+      "latest_evidence_summary": "Field experiment on market composition information supports endogenous platform participation and competition salience",
       "last_revised_at": "2026-10-28"
     },
     {
@@ -394,17 +401,19 @@
       "status": "EXTERNAL_EMPIRICAL_INDICATION",
       "rationale": "Lenton y Francesconi 2010 reportan señales de preferencia por atributos rápidamente evaluables bajo muchas opciones.",
       "evidence_sources": [
-        "SRC038"
+        "SRC038",
+        "SRC043"
       ],
-      "last_update_id": "U033",
+      "last_update_id": "U038",
       "uncertainty": "Not calibrated Bayesian probabilities; context and heterogeneity uncertain",
       "next_falsifier_or_test": "Manipulación aleatoria de volumen de opciones con registros de decisión/tiempo.",
       "numeric_probability": null,
       "CT2_is_not_this_prior": true,
       "update_ids": [
-        "U033"
+        "U033",
+        "U038"
       ],
-      "latest_evidence_summary": "Lenton/Francesconi 2010 analizan 84 speed datings y atención a atributos simples al aumentar opciones.",
+      "latest_evidence_summary": "Hu/Markowitz two preregistered experiments n193,n342 indicate greater reported pursuit with 31 vs six options and role for compatibility",
       "last_revised_at": "2026-10-28"
     },
     {
@@ -454,17 +463,20 @@
       "status": "EXPERIMENTALLY_SUPPORTED_IN_CONTEXT",
       "rationale": "Shi et al. 2025 reportan diferencias entre información de popularidad comparativa y absoluta, no decremento público de reputación.",
       "evidence_sources": [
-        "SRC033"
+        "SRC033",
+        "SRC042",
+        "SRC045"
       ],
-      "last_update_id": "U029",
+      "last_update_id": "U043",
       "uncertainty": "Not calibrated Bayesian probabilities; context and heterogeneity uncertain",
       "next_falsifier_or_test": "Randomizar tipos de feedback y observar cambio en preferencias antes/después, no inferir δ reputacional.",
       "numeric_probability": null,
       "CT2_is_not_this_prior": true,
       "update_ids": [
-        "U029"
+        "U029",
+        "U043"
       ],
-      "latest_evidence_summary": "Shi et al. 2025 informa que feedback relativo de popularidad altera selectividad y autopresentación en dos ensayos de campo.",
+      "latest_evidence_summary": "Information about overall market size and about preference signaling can modify choice",
       "last_revised_at": "2026-10-28"
     },
     {
@@ -472,44 +484,65 @@
       "question": "La información percibida del tamaño de mercado y competencia cambia participación y selectividad",
       "status": "EXTERNAL_FIELD_EVIDENCE",
       "rationale": "Fong 2024 realizó experimento de información en plataforma; no identifica automáticamente efecto de cambios reales de población ni nuestro modelo sintético",
-      "evidence_sources": [],
-      "last_update_id": null,
+      "evidence_sources": [
+        "SRC042"
+      ],
+      "last_update_id": "U037",
       "uncertainty": "Qualitative, context-dependent; no calibrated numerical probabilities",
       "next_falsifier_or_test": "Intervención consentida en información, diseño prereg, comparar participación y respuesta de ambos lados.",
       "numeric_probability": null,
-      "CT2_is_not_this_prior": true
+      "CT2_is_not_this_prior": true,
+      "update_ids": [
+        "U037"
+      ],
+      "latest_evidence_summary": "Field experiment manipulates information about market and competition size; participation and selectivity respond",
+      "last_revised_at": "2026-10-28"
     },
     {
       "id": "P-UNION-DURATION",
       "question": "Mayor número de contactos o eventos de pareja aumenta necesariamente relaciones duraderas y bienestar",
       "status": "CHALLENGED",
       "rationale": "AEA 2026 Tinder y Jung/Lusher 2026 diferencian actividad, relaciones y disolución; nuestras medias sintéticas dependen de hazard artificial",
-      "evidence_sources": [],
-      "last_update_id": null,
+      "evidence_sources": [
+        "SRC044",
+        "SRC046"
+      ],
+      "last_update_id": "U039",
       "uncertainty": "Qualitative, context-dependent; no calibrated numerical probabilities",
       "next_falsifier_or_test": "Medidas longitudinales de bienestar y duración, con censura y controles de cambios de pareja.",
       "numeric_probability": null,
-      "CT2_is_not_this_prior": true
+      "CT2_is_not_this_prior": true,
+      "update_ids": [
+        "U039"
+      ],
+      "latest_evidence_summary": "AEA Tinder exposure analysis finds increased sexual activity with little change in long-term relationships; Jung/Lusher no average marriage rate effects and possible change in separation",
+      "last_revised_at": "2026-10-28"
     },
     {
       "id": "P-COSTLY-SIGNAL",
       "question": "Señales escasas de interés prioritario pueden alterar respuesta sin modificar popularidad intrínseca",
       "status": "EXTERNAL_EXPERIMENT_DESCRIBED",
       "rationale": "Lee y Niederle 2025 manipulan dotación de señales virtuales; no se procesaron sus datos",
-      "evidence_sources": [],
-      "last_update_id": null,
+      "evidence_sources": [
+        "SRC045"
+      ],
+      "last_update_id": "U041",
       "uncertainty": "Qualitative, context-dependent; no calibrated numerical probabilities",
       "next_falsifier_or_test": "Aleatorizar señales y observar tasas bilaterales y oportunidades, sin estigma público inventado.",
       "numeric_probability": null,
-      "CT2_is_not_this_prior": true
+      "CT2_is_not_this_prior": true,
+      "update_ids": [
+        "U041"
+      ],
+      "latest_evidence_summary": "Two versus eight virtual priority signals randomly endowed in dating app field study",
+      "last_revised_at": "2026-10-28"
     }
   ],
   "audit": {
     "all_priors_linked": true,
-    "update_events": 36,
-    "source_ids_linked": 41,
-    "registered_sources": 41,
-    "last_history_commit": "e73db5e3a682a45aa71bad79ce167212884243bd",
+    "update_events": 44,
+    "source_ids_linked": 47,
+    "registered_sources": 47,
     "counts_as_new_AB_cycle": false
   }
 }
