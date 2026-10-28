@@ -1,0 +1,68 @@
+{
+  "campaign": "ABR-EVIDENCE20-20261028",
+  "source": "audit.py",
+  "source_sha256": "30417b2a58368f2e3df952d567923d5fb8c435c1d3b15e89d82ec62f053a6f45",
+  "local_environment": "Python 3.13.5 numpy 2.3.5",
+  "source_commit": "5d8a3291fa73eff1a3a20468a38aa85cef575bbb",
+  "source_fnv32": 1355783298,
+  "checks": {
+    "N23": {
+      "n_range": [
+        2,
+        6
+      ],
+      "counts": [
+        2,
+        6,
+        24,
+        120,
+        720
+      ],
+      "stable_count_each": 1,
+      "unique_identity": true
+    },
+    "N24": {
+      "seeds": [
+        411,
+        733,
+        1099,
+        1481,
+        2017
+      ],
+      "n_pairs_per_seed": 24000,
+      "group_sizes": [
+        6000,
+        6000,
+        6000,
+        6000
+      ],
+      "group_value_means": [
+        0.15,
+        0.35,
+        0.65,
+        0.85
+      ],
+      "group_sd": 0.08,
+      "mean_r_pooled": 0.9200167664921152,
+      "mean_r_within": -0.0013627020880741776,
+      "mean_r_permute_within": 0.9201172783208211,
+      "mean_r_permute_global": 0.004727217715146473,
+      "mean_share_cov_between": 1.0001141871541228,
+      "interpretation": ">1 possible due sampling within covariance slightly negative, not explained variation fraction requiring positivity",
+      "NULL_BIAS": "Global random pairing null destroys group structure and is an incompetent null for a segmented mating market"
+    }
+  },
+  "local_reproduction": {
+    "run_1_exit": 0,
+    "run_2_exit": 0,
+    "outputs_same_byte": true,
+    "exact_csv_sha256": "41b7e36447cb3c7b026c80a9b90a08ceff8e70a38f0ecb9eca39c0eaa1116174",
+    "segment_csv_sha256": "d6df3ca8227f9823010a2cb4a231e2bed4009eebc09dff62fa44953524a9a808",
+    "summary_sha256": "c46938b5bdf045a5ac0737b8349cafbe44e803cdfa401086dadf891e5252dc91"
+  },
+  "limitations": [
+    "N23 exhaustive n<=6 is only verification, general proof by induction documented separately.",
+    "N24 synthetic segments of value deliberately aligned; demonstrates confounding possibility not explanation of prior real/synthetic data.",
+    "No replication external or human-based outcomes."
+  ]
+}
