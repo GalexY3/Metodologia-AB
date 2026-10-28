@@ -64,7 +64,7 @@ function runMixmosa(payload){
   const stats={male_like:0,female_like:0,mutual:0};
   const photoMale=[],photoFemale=[],incMale=[],incFemale=[],agePairs=[];
   const receivedMale=new Map(),receivedFemale=new Map();
-  const incRanks=new Map([["Under $15,000",1],["$15,000 - $24,999",2],["$25,000 - $34,999",3],["$35,000 - $49,999",4],["$50,000 - $74,999",5],["$75,000 - $99,999",6],["$100,000 - $149,999",7],["$150,000 - $199,999",8],["$200,000 and over",9]]);
+  const incRanks=new Map(Array.from({length:9},(_,i)=>[String(i+1),i+1])); // Derived CSV encodes 1..9, not raw bracket strings.
   for(const r of D){
     const key=[r.event_id,r.male_user_id,r.female_user_id].join("|");
     if(seen.has(key))dups++;seen.add(key);
