@@ -1,0 +1,42 @@
+{
+  "schema": "ab.research.findings.v1",
+  "date": "2026-10-28",
+  "project": "mercados-de-pareja",
+  "scope": "Local unique findings recorded from N41–N46 only. Earlier campaigns' claimed level-1 ledger NOT_AUDITED.",
+  "N1_campaign": 1,
+  "N1_portfolio_audited": "NOT_AUDITED",
+  "findings": [
+    {
+      "id": "MATE-N46-AGEGAP-REVERSAL",
+      "grade": "1/3 exploratory local",
+      "novelty_status": "NO_CLAIM_ORIGINALITY; prior gender/age preferences known, Fisman 2006",
+      "exact_claim": "After preserving each chooser's observed opportunities and number of yes responses within event by 1000 permutations, male chooser relative age-gap proximity differed in sign: Columbia observed-minus-null -0.2017 years (closer ages than own null), Mixmosa +0.1171 years (less close than null); women's corresponding values both negative -0.1562 and -0.2096 years.",
+      "reproducibility_status": "Local rerun byte identical for Columbia (SHA 968da0ea...), and Mixmosa JS rerun matching JSON; no independently audited clean clone",
+      "source_refs": [
+        "research/ABR_BRANCH6_SOCIAL_20261028/COLUMBIA_SUMMARY.json",
+        "research/ABR_BRANCH6_SOCIAL_20261028/MIXMOSA_N46_RESULTS.json",
+        "research/ABR_BRANCH6_SOCIAL_20261028/PREREG.json"
+      ],
+      "prereg_commit": "6cabe7a8c007a6b3800aa84f0789a6e56489d1be",
+      "source_commits": [
+        "1d18c0b8b03824691c090ae061089d271395b4e5",
+        "9526a418065684f20ac37ec0a05464239df369fb"
+      ],
+      "sample": "Columbia age-complete 4090 directed decisions per sex; Mixmosa 1888 complete dates and directed decisions per sex",
+      "statistical_limits": "Multiple exploratory tests, not causal, different population, age composition, event lengths and sampling methods; signs can change after adjusting signed age and target attractiveness",
+      "falsifier": "Reproduce the signed-age-adjusted within-chooser age-gap contrast on a genuinely prospective independent set of age/availability markets; if reversal disappears, the generalized cross-market hypothesis is rejected",
+      "adversarial_evidence": "In Columbia men also show modest age-gap coefficient after popularity adjustment, women less; existing Fisman age/sex prior art. Mixmosa age explanatory variables do not match Columbia field_cd.",
+      "duplicate_of": null,
+      "related_findings": [
+        "N42 Columbia age-gap results (not counted as separate N1)"
+      ],
+      "potential_combinations": [
+        "age opportunity structure",
+        "popularity and signed age effects",
+        "event heterogeneity"
+      ],
+      "external_replication": "Cross-dataset exploratory replication of procedure, not preregistered prospective replication nor evidence for mechanism",
+      "updated_at": "2026-10-28"
+    }
+  ]
+}
