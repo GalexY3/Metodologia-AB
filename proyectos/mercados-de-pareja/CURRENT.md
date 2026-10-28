@@ -1,26 +1,24 @@
-# CURRENT · Mercado de pareja · 28/10/2026 (después de BRANCH8)
+# CURRENT · Mercados de pareja · 28/10/2026, después de BRANCH6
 
-**Rama de trabajo:** `research/ab-r-mercados-pareja-20261028`. No fusionada a `main`. Estudio AB-R sobre homogamia de valor emergente sin preferencia explícita de semejanza; **NO** identificado causalmente para población española. No puntuar personas reales.
+**Proyecto:** `AB-R`, rama `research/ab-r-mercados-pareja-20261028`, independiente de `main`, no fusionado. **Pregunta:** ¿puede emerger homogamia de valor por maximización bilateral sin preferencia directa por semejanza? Antecedentes de matching estable impiden reclamar novedad genérica; todas las correlaciones del generador son **sintéticas**.
 
-## Campañas
-- **MATE10**, cerrado anteriormente: 10/10 (4 documentales, 6 experimentos), tres semillas, nivel científico 2/3 no acreditado. [Informe](research/ABR_MATE10_20261028/REPORT.md), [ledger](research/ABR_MATE10_20261028/LEDGER.json).
-- **BRANCH8**, autorización expresa del investigador: **8/8 completados** dentro de alcance, 5 `EXPERIMENTAL_AB` sintéticos (N01–N05), 3 `PLANNING_AB_ONLY` documentales (N06–N08); 0 `INVALID` detectados, pero **N03 inconcluso**; **0 ciclos autorizados restantes**. [Informe](research/ABR_BRANCH8_20261028/REPORT.md), [ledger A–J](research/ABR_BRANCH8_20261028/LEDGER.json), [PREREG](research/ABR_BRANCH8_20261028/PREREG.json).
-- Code freeze `d68c9f54`, SHA256 `39c693a8...`; 14 condiciones x 3 semillas = 42 ejecuciones sintéticas. [Fuente congelada](research/ABR_BRANCH8_20261028/experiment.py.gz.b64), [Resultados por semilla](research/ABR_BRANCH8_20261028/RUNS_COMPACT.csv), [QA](research/ABR_BRANCH8_20261028/ALT_LOCAL_AUDIT_20261028.json). Reejecución local determinista, **clon limpio no verificado**.
-- **Concurrencia instrumentada:** existe además otra implementación `SOURCE_FREEZE.json` SHA256 `a4c48335...` con [RESULTS.csv](research/ABR_BRANCH8_20261028/RESULTS.csv), [HAZARDS.csv](research/ABR_BRANCH8_20261028/HAZARDS.csv), [Q_TRACK.csv](research/ABR_BRANCH8_20261028/Q_TRACK.csv). **NO** sumar como otros ocho ciclos ni combinar números sin reconciliar protocolos. [Auditoría comparativa](research/ABR_BRANCH8_20261028/AUDITORIA_CRUZADA.md).
+## Contabilidad histórica, campañas distintas
+- `MATE10`: 10/10 cerrados, 4 documentales y 6 experimentales exploratorios.
+- `BRANCH8`: 8/8 cerrados, 3 documentales y 5 experimentales; N03 inconcluso.
+- **`BRANCH6`: 6/6**, 3 ciclos `EXPERIMENTAL_AB` N09–N11 y 3 `PLANNING_AB_ONLY` N12–N14. **Un intento instrumental inválido** adicional, corregido y **no contado**. 60 corridas sintéticas válidas, 5 semillas, 12 variantes clasificadas por diseño.
+- **Saldo autorizado: 0.** N1 nuevos=0, N2=0, N3=0. CT2 en cierres 20→17→17; ordinal no probabilidad, [gráfica](research/ABR_BRANCH6_20261028/CT2_TRAJECTORY.svg).
+- [PREREG BRANCH6](research/ABR_BRANCH6_20261028/PREREG.json), [ledger A–J](research/ABR_BRANCH6_20261028/LEDGER.json), [informe](research/ABR_BRANCH6_20261028/REPORT.md), [resultados por semilla](research/ABR_BRANCH6_20261028/RUNS.csv), [resumen](research/ABR_BRANCH6_20261028/SUMMARY.json), [QA y prerregistro del intento inválido](research/ABR_BRANCH6_20261028/QA_AND_GATES.json), [fuentes oficiales/limitaciones](research/ABR_BRANCH6_20261028/SOURCES_AND_LIMITS.md).
 
-## Resultados importantes dentro del generador
-- N01: Gale-Shapley con información completa r≈.944, cobertura≈99.8%, 0 pares bloqueantes; búsqueda temporal r≈.858, cobertura≈85.7%, ~1961 pares bloqueantes. **No hay ventaja general del procedimiento adaptativo**; comparador no tiene paridad informativa todavía.
-- N02: reacción al rechazo eleva cobertura de 54.3% a 71.6% y r condicional de .913 a .940 en el escenario fijado; el decil superior se empareja antes.
-- N03: únicamente 1.3–1.6% emparejados, por lo que el test local es inconcluso.
-- N04: asincronía/historia de likes difiere en oportunidades y cobertura; comparaciones descriptivas sin identificación pura.
-- N05: difusión privada de rechazo sin efecto si rechazador no reconsidera; global reduce cobertura 60.9% →55.1% por regla impuesta.
-- N06: censo ECP por sexo y edad **no mide** soltería activa ni uso de apps. 20–39 de julio fuentes secundarias pendiente cotejo con INE.
-- N07: Censo 2001 educativo 69,15% mismas cinco categorías entre parejas heterosexuales, observación **histórica sin control de márgenes**; no usar como validación del modelo.
-- N08: prueba externa solo **planificada, NOT_EXECUTED** por ausencia de datos/instrumentos y necesidad ética.
-- N1 contados: 0, N2/N3: 0. CT2 previa 20/100 post hoc, revisión post BRANCH8 17/100, ordinal no probabilidad; [gráfica completa y ampliada](research/ABR_BRANCH8_20261028/CT2_TRAJECTORY.svg).
+## Hallazgos BRANCH6
+- **N09** mismo grafo ex ante: DA k60 r=.917, cobertura 98.2%; adaptativo r=.711 cobertura 80.5%; aceptación greedy r=.035 cobertura 98.6%. DA usa rankings completos, por lo que no hay paridad informativa pese a grafo idéntico.
+- **N10** pools balanceados y 40 exposiciones distintas programadas: 100 agentes r=.726, 300 r=.741, 1200 r=.737; coberturas 59.9%/60.3%/59.4%. Sin gradiente monotónico sólido; corrección de interpretación fuerte previa. Gate piloto superado antes de semillas adicionales, sin retuning.
+- **N11** mismo grafo planificado: simultáneo r=.633, async persistente r=.444, async caduca cinco ticks r=.396; exposiciones efectivas desiguales por salidas endógenas.
+- **N12** INE ECP oficial total 49.801.559 julio 2026, pero **no** se extrajeron celdas nacionales 20–39 por sexo ni denominador de solteros activos; tabla nacional 59583 identificada. `DATA_BLOCKED`.
+- **N13** tabla INE 60268 con cruce de estudios de hombre/mujer identificada, pero matriz no descargada: sin O/E ni tasas inventadas. `ANALYSIS_BLOCKED`.
+- **N14** estudios de rechazo y vigilancia digital verificados; **no** identifican penalización de estatus universal por swipe.
 
-## Próximo bloqueo R5
-Paridad de oportunidad con modelo estable; red/horario de exposición; medición social de reputación; baseline español actual con elegibilidad y matriz educativa ajustada; fuente humana ética. [Propuesta siguiente, NO AUTORIZADA: 6 ciclos BRANCHING](NEXT_6_PROPOSAL.md). No iniciar sin confirmación humana.
+## Ejecución y límites
+`PREREG` commit `58539794`; inicial source freeze `a7eeef16`; primera corrida **INVALID** (falsa detección de pares bloqueantes por indexación errónea); reparación freeze `14059774`, SHA-256 fuente válida `6f351329c3c9fdc5aad83dcb719962dc022b8b17203b94e6661ed322ffe0b632`. Reejecución local con hashes de resultados idénticos. **Archivo completo de código local en ZIP entregado en conversación; carga al repositorio GitHub de gzip/base64 bloqueada por controles de la interfaz**. No se puede afirmar clon limpio verificado, ni fuente Python íntegra versionada en GitHub. GitHub sí conserva los registros y CSV. No ha habido replicación humana ni identificación causal externa.
 
-## Errata adversarial sobre instrumento secundario (28/10)
-Además de la campaña principal de 8 ciclos, la implementación auxiliar congelada con SHA `a4c48335...` tuvo **un intento N05 inválido** porque repetía díadas después de un rechazo. Se preservaron resultados inválidos, prereg de reparación y resultado corregido. Este intento auxiliar inválido **no consume una nueva plaza ni genera un noveno ciclo**. [Informe adversarial](research/ABR_BRANCH8_20261028/AUDITORIA_SECUNDARIA_A4C4.md). La contabilidad de 0 inválidos en el párrafo anterior se refiere exclusivamente a la implementación principal `39c693a8...`; contabilidad total de intentos auxiliares incluye 1 INVALID reparado. No deben agregarse outputs de ambas implementaciones.
+## Estado J y propuesta futura
+`STOP_CAMPAIGN`; bloqueadores: igualación de información DA y dinámico, recuento de oportunidades realizadas, matriz educativa española completa, evidencia de mercado activo y canal reputacional real. [Próxima propuesta, no autorizada](NEXT_6_EVIDENCE_GATED.md). **No comenzar automáticamente nuevos ciclos**.
