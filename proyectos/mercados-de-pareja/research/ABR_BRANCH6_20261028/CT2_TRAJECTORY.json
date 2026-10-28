@@ -1,0 +1,27 @@
+{
+  "schema": "ab.ct2.v1",
+  "line": "Mercados de pareja · homogamia de valor",
+  "kind": "ordinal judgement not probability",
+  "points": [
+    {
+      "point": "MATE10_CLOSE",
+      "score": 20,
+      "date": "2026-10-28",
+      "basis": "MATE10/REPORT.md, explicitly post hoc"
+    },
+    {
+      "point": "BRANCH8_CLOSE",
+      "score": 17,
+      "date": "2026-10-28",
+      "basis": "BRANCH8/CT2_TRAJECTORY.json, post hoc"
+    },
+    {
+      "point": "BRANCH6_CLOSE",
+      "score": 17,
+      "date": "2026-10-28",
+      "basis": "BRANCH6/REPORT.md, after internal controls; external sources unavailable"
+    }
+  ],
+  "no_cycle_interpolation": true,
+  "reason": "Strong sorting under multiple synthetic algorithms already known; N10 removes previous apparent strong pool-size gradient, and external baseline / human eligible population missing; better internal audits do not themselves increase originality grade."
+}
