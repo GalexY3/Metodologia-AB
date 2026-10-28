@@ -1,0 +1,13 @@
+{
+  "cycle": "N82",
+  "date": "2026-10-29",
+  "type": "POSTHOC_ADVERSARIAL_SENSITIVITY_NOT_NEW_CYCLE",
+  "selection": "Defined after seeing primary improvement of 0.007631645 in heldout actor logloss. This must NOT be called new preregistered independent confirmation. Pre-frozen NOW before computing this new benchmark, within same N82.",
+  "source_sha256": "23cff03451b13f94354d875e777f60e1c63224829f42b8adf9d73d7563812e24",
+  "source_member": "sjjy_data/train.txt",
+  "split": "exactly same actor SHA256 SALT as N82, no rerandomization",
+  "benchmark": "Group train-only rec offers by target log2(1 + train-only number of rec events) binned 0–15, and actor-specific ROUND log2(1+round) binned 0–15, 256 possible cells. Train-only smoothed click probability per cell (clicks+100*p_train)/(n_offer_cell+100), with global fallback. No test labels in fit.",
+  "comparison": "Evaluate stronger group baseline heldout logloss and Brier against original source-trained target-specific CTR alpha=20, same 1,705,093 heldout offers; actor-cluster bootstrap B=100, seed=20261029, report 95% CI difference.",
+  "control_limits": "Still only frequency+round groups; source does not reveal full profile attribute preference, target gender/age for all users or algorithm selection criteria; group baseline is closer but not fully competent choice model. Can still be overfit to train actor distribution. No confirmatory p-value.",
+  "decision": "If original target CTR fails vs adjusted baseline, note and downgrade specificity; do not erase first result. Regardless no causal or 2/3 without independent cohort, intervention and informed opportunity."
+}
