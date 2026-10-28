@@ -1,0 +1,651 @@
+{
+  "schema": "ab.research.prior_updates.v1",
+  "project": "mercados-de-pareja",
+  "date": "2026-10-28",
+  "mode": "append-only logical, versioned by Git commits",
+  "reconstructed_from_documents": "Retrospective backfill, not preregistration. Old before values NOT_RECORDED unless documented explicitly.",
+  "source_coverage": "All SOURCES.json references have at least one linked update/no-change decision; many grouped; no extra AB cycle charged.",
+  "events": [
+    {
+      "id": "U001",
+      "prior_id": "P-NOVELTY",
+      "source_ids": [
+        "SRC001",
+        "SRC002",
+        "SRC003",
+        "SRC004"
+      ],
+      "cycle_ids": [
+        "C01"
+      ],
+      "before": "NOT_RECORDED_AT_TIME",
+      "direction": "TOWARD_STRONG_PRIOR_ART",
+      "after": "STRONG_PRIOR_ART",
+      "what_the_sources_contribute": "Matching teórico, aspiración y sorting digital tienen antecedentes anteriores al proyecto.",
+      "why_this_updates_or_checks_prior": "Reivindicar la idea genérica como nueva sería incorrecto.",
+      "limits": "Revisión documental no sistemática; no descarta submecanismo nuevo.",
+      "falsifier_or_followup": "Buscar predicción original con temporalidad y adversario fuerte.",
+      "evidence_type": "retrospective_from_prior_campaign_ledger",
+      "retrospective_backfill": true,
+      "recorded_at": "2026-10-28",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null
+    },
+    {
+      "id": "U002",
+      "prior_id": "P-SPAIN_CALIB",
+      "source_ids": [
+        "SRC005"
+      ],
+      "cycle_ids": [
+        "C02"
+      ],
+      "before": "NOT_RECORDED_AT_TIME",
+      "direction": "TOWARD_DATA_BLOCKED",
+      "after": "DATA_BLOCKED",
+      "what_the_sources_contribute": "ECP permite contar residentes, no personas disponibles para un mercado de citas.",
+      "why_this_updates_or_checks_prior": "Denominador romántico requiere estado de pareja, intención y uso.",
+      "limits": "Total censal no mide población de aplicación.",
+      "falsifier_or_followup": "Obtener fuente de solteros activos por edad, orientación y oferta.",
+      "evidence_type": "retrospective_from_prior_campaign_ledger",
+      "retrospective_backfill": true,
+      "recorded_at": "2026-10-28",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null
+    },
+    {
+      "id": "U003",
+      "prior_id": "P-STATUS_PROXY",
+      "source_ids": [
+        "SRC006",
+        "SRC007"
+      ],
+      "cycle_ids": [
+        "C03"
+      ],
+      "before": "NOT_RECORDED_AT_TIME",
+      "direction": "CHALLENGE",
+      "after": "CHALLENGED",
+      "what_the_sources_contribute": "Renta y educación españolas son medidas materiales comparables, no deseabilidad romántica.",
+      "why_this_updates_or_checks_prior": "El valor social es multidimensional y el Gini de renta no basta.",
+      "limits": "Sin microdatos usados ni validación de un constructo latente.",
+      "falsifier_or_followup": "Definir validez convergente y correlatos de status vs looks.",
+      "evidence_type": "retrospective_from_prior_campaign_ledger",
+      "retrospective_backfill": true,
+      "recorded_at": "2026-10-28",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null
+    },
+    {
+      "id": "U004",
+      "prior_id": "P-TRANSPORT",
+      "source_ids": [
+        "SRC008"
+      ],
+      "cycle_ids": [
+        "C04"
+      ],
+      "before": "NOT_RECORDED_AT_TIME",
+      "direction": "CHALLENGE",
+      "after": "CHALLENGED",
+      "what_the_sources_contribute": "Literatura matrimonial española requiere distinguir relación y elección inicial.",
+      "why_this_updates_or_checks_prior": "Matrimonio/educación no son resultados de swipes y reciprocidad.",
+      "limits": "Estudio publicado, microdatos no procesados.",
+      "falsifier_or_followup": "Estudio longitudinal desde exposición hasta pareja consolidada.",
+      "evidence_type": "retrospective_from_prior_campaign_ledger",
+      "retrospective_backfill": true,
+      "recorded_at": "2026-10-28",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null
+    },
+    {
+      "id": "U005",
+      "prior_id": "P-SPAIN_CALIB",
+      "source_ids": [
+        "SRC012"
+      ],
+      "cycle_ids": [
+        "N15"
+      ],
+      "before": "DATA_BLOCKED",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "after": "DATA_BLOCKED",
+      "what_the_sources_contribute": "Identificador INE 59583 y formatos conocidos.",
+      "why_this_updates_or_checks_prior": "La tabla no fue descargada; sin conteos 20–39 ni universo de usuarios.",
+      "limits": "No inferir distribución elegible de metadatos.",
+      "falsifier_or_followup": "Descargar tabla y validar definiciones por sexo/edad.",
+      "evidence_type": "retrospective_from_prior_campaign_ledger",
+      "retrospective_backfill": true,
+      "recorded_at": "2026-10-28",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null
+    },
+    {
+      "id": "U006",
+      "prior_id": "P-SPAIN_CALIB",
+      "source_ids": [
+        "SRC013"
+      ],
+      "cycle_ids": [
+        "N16"
+      ],
+      "before": "DATA_BLOCKED",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "after": "DATA_BLOCKED",
+      "what_the_sources_contribute": "INE 60268 permite concebir matriz educativa de matrimonios y nulo de independencia.",
+      "why_this_updates_or_checks_prior": "No hay matrix descargada ni homogamia neta calculada.",
+      "limits": "Matrimonio no emparejamiento activo.",
+      "falsifier_or_followup": "Obtener celdas y márgenes; O/E por cohortes.",
+      "evidence_type": "retrospective_from_prior_campaign_ledger",
+      "retrospective_backfill": true,
+      "recorded_at": "2026-10-28",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null
+    },
+    {
+      "id": "U007",
+      "prior_id": "P-PUBLIC_REPUTATION",
+      "source_ids": [
+        "SRC014",
+        "SRC015"
+      ],
+      "cycle_ids": [
+        "N19",
+        "N26"
+      ],
+      "before": "NOT_RECORDED_AT_TIME",
+      "direction": "TOWARD_NOT_IDENTIFIED",
+      "after": "NOT_IDENTIFIED",
+      "what_the_sources_contribute": "Efectos psicológicos de rechazo y señales de vigilancia sí estudiados.",
+      "why_this_updates_or_checks_prior": "No prueba transmisión automática de cada rechazo a terceros ni decremento público de estatus.",
+      "limits": "Los papers no estiman delta de prestigio; informes previos citan abstracts.",
+      "falsifier_or_followup": "Diseñar experimento ético sobre señal pública y evaluación de tercero.",
+      "evidence_type": "retrospective_from_prior_campaign_ledger",
+      "retrospective_backfill": true,
+      "recorded_at": "2026-10-28",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null
+    },
+    {
+      "id": "U008",
+      "prior_id": "P-SPAIN_CALIB",
+      "source_ids": [
+        "SRC009"
+      ],
+      "cycle_ids": [
+        "N21"
+      ],
+      "before": "DATA_BLOCKED",
+      "direction": "QUALIFY_WITH_DESCRIPTIVE_SOURCE",
+      "after": "DATA_BLOCKED",
+      "what_the_sources_contribute": "Funcas ESS 2024: 76% de universitarios convivientes hombres y 53% mujeres conviven con pareja universitaria.",
+      "why_this_updates_or_checks_prior": "Datos externos de composición condicionados apoyan estratificación por sexo/educación, NO calibración de solteros.",
+      "limits": "Sin microdatos, pesos e intervalos evaluados por nosotros.",
+      "falsifier_or_followup": "Obtener ESS y ajustar márgenes educativos en parejas.",
+      "evidence_type": "retrospective_from_prior_campaign_ledger",
+      "retrospective_backfill": true,
+      "recorded_at": "2026-10-28",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null
+    },
+    {
+      "id": "U009",
+      "prior_id": "P-DYADIC_ACCESS",
+      "source_ids": [
+        "SRC010",
+        "SRC011"
+      ],
+      "cycle_ids": [
+        "N22"
+      ],
+      "before": "NOT_RECORDED_AT_TIME",
+      "direction": "TOWARD_DATA_BLOCKED",
+      "after": "PARTIALLY_SUPPORTED_FOR_DYADS_BUT_NOT_PROSPECTIVITY",
+      "what_the_sources_contribute": "Essex anuncia Excel anonimizado; SwipeStats datos voluntarios agregados.",
+      "why_this_updates_or_checks_prior": "Catalogación no prueba que haya IDs diádicos y exposiciones.",
+      "limits": "No se descargó ni inspeccionó Essex, ni dataset SwipeStats.",
+      "falsifier_or_followup": "Auditar tablas y licencias reales antes de usar.",
+      "evidence_type": "retrospective_from_prior_campaign_ledger",
+      "retrospective_backfill": true,
+      "recorded_at": "2026-10-28",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null
+    },
+    {
+      "id": "U010",
+      "prior_id": "P-DYADIC_ACCESS",
+      "source_ids": [
+        "SRC028"
+      ],
+      "cycle_ids": [
+        "N36",
+        "N38"
+      ],
+      "before": "NOT_RECORDED_AT_TIME",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "after": "PARTIALLY_SUPPORTED_FOR_DYADS_BUT_NOT_PROSPECTIVITY",
+      "what_the_sources_contribute": "eHarmony cataloga etiquetas pareadas y atributos ofuscados.",
+      "why_this_updates_or_checks_prior": "Las etiquetas no garantizan dos decisiones ni tiempo previo.",
+      "limits": "Archivos gzip no descargados ni licencia constatada.",
+      "falsifier_or_followup": "Inspeccionar esquema, fechas y respuesta bilateral cuando sea accesible.",
+      "evidence_type": "retrospective_from_prior_campaign_ledger",
+      "retrospective_backfill": true,
+      "recorded_at": "2026-10-28",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null
+    },
+    {
+      "id": "U011",
+      "prior_id": "P-DYADIC_ACCESS",
+      "source_ids": [
+        "SRC026",
+        "SRC027"
+      ],
+      "cycle_ids": [
+        "N28",
+        "N39"
+      ],
+      "before": "NOT_RECORDED_AT_TIME",
+      "direction": "TOWARD_PARTIAL_SUPPORT",
+      "after": "PARTIALLY_SUPPORTED_FOR_DYADS_BUT_NOT_PROSPECTIVITY",
+      "what_the_sources_contribute": "Mixmosa y Columbia realmente permitieron analizar ambos votos por cita.",
+      "why_this_updates_or_checks_prior": "Prueba factibilidad diádica observacional; no población española ni exposición completa.",
+      "limits": "Popularidad inferida con otras citas contemporáneas; mismas muestras adaptativamente reusadas.",
+      "falsifier_or_followup": "Conseguir dataset prospectivo y tercero para validación.",
+      "evidence_type": "retrospective_from_prior_campaign_ledger",
+      "retrospective_backfill": true,
+      "recorded_at": "2026-10-28",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null
+    },
+    {
+      "id": "U012",
+      "prior_id": "P-COMPETENT_NULL",
+      "source_ids": [
+        "SRC026",
+        "SRC027"
+      ],
+      "cycle_ids": [
+        "N30",
+        "N39"
+      ],
+      "before": "NOT_RECORDED_AT_TIME",
+      "direction": "CHALLENGE",
+      "after": "CHALLENGED",
+      "what_the_sources_contribute": "Los resultados de reciprocidad/popularidad cambian según nulo por evento y grado de actores.",
+      "why_this_updates_or_checks_prior": "Permutación de pares global no excluye composición, selectividad y oportunidades.",
+      "limits": "Las pruebas por actor/target no son asignación aleatoria; una cadena MCMC no tiene mezcla probada.",
+      "falsifier_or_followup": "Nulo con grafo de exposición fijo y doble grado, replicaciones por mercado.",
+      "evidence_type": "retrospective_from_prior_campaign_ledger",
+      "retrospective_backfill": true,
+      "recorded_at": "2026-10-28",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null
+    },
+    {
+      "id": "U013",
+      "prior_id": "P-SIMILARITY",
+      "source_ids": [
+        "SRC016",
+        "SRC017",
+        "SRC018"
+      ],
+      "cycle_ids": [
+        "N55"
+      ],
+      "before": "NOT_RECORDED_AT_TIME",
+      "direction": "TOWARD_CONTEXTUAL_SUPPORT",
+      "after": "SUPPORTED_DESCRIPTIVELY_CONTEXT_DEPENDENT",
+      "what_the_sources_contribute": "Fisman/Belot ya estudian oportunidades/género y conjoint posterior atractivo vs homofilia.",
+      "why_this_updates_or_checks_prior": "No se debe interpretar que semejanza=0 ni que popularidad explica causalmente las decisiones.",
+      "limits": "Resultados publicados diferentes en diseño; microdatos ajenos no reanalizados.",
+      "falsifier_or_followup": "Un estudio con atributos aleatorizados y dos lados de elección.",
+      "evidence_type": "retrospective_from_prior_campaign_ledger",
+      "retrospective_backfill": true,
+      "recorded_at": "2026-10-28",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null
+    },
+    {
+      "id": "U014",
+      "prior_id": "P-MEASURE_OUTCOME",
+      "source_ids": [
+        "SRC019"
+      ],
+      "cycle_ids": [
+        "N55"
+      ],
+      "before": "NOT_RECORDED_AT_TIME",
+      "direction": "CHALLENGE",
+      "after": "CHALLENGED",
+      "what_the_sources_contribute": "Seguimiento de speed dating diferencia cita inicial y relación posterior.",
+      "why_this_updates_or_checks_prior": "Un sí recíproco no identifica pareja duradera.",
+      "limits": "No se procesaron datos longitudinales.",
+      "falsifier_or_followup": "Medir transición desde invitación hasta convivencia.",
+      "evidence_type": "retrospective_from_prior_campaign_ledger",
+      "retrospective_backfill": true,
+      "recorded_at": "2026-10-28",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null
+    },
+    {
+      "id": "U015",
+      "prior_id": "P-TRANSPORT",
+      "source_ids": [
+        "SRC020"
+      ],
+      "cycle_ids": [
+        "N22"
+      ],
+      "before": "CHALLENGED",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "after": "CHALLENGED",
+      "what_the_sources_contribute": "La tecnología de plataforma y atributo afecta patrones de sorting.",
+      "why_this_updates_or_checks_prior": "No se generalizan parámetros entre formatos ni países.",
+      "limits": "Investigación sobre EE. UU., no España.",
+      "falsifier_or_followup": "Estratificación por tecnología/época con población definida.",
+      "evidence_type": "retrospective_from_prior_campaign_ledger",
+      "retrospective_backfill": true,
+      "recorded_at": "2026-10-28",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null
+    },
+    {
+      "id": "U016",
+      "prior_id": "P-APP_POP_INFO",
+      "source_ids": [
+        "SRC023"
+      ],
+      "cycle_ids": [
+        "N56"
+      ],
+      "before": "NOT_RECORDED_AT_TIME",
+      "direction": "QUALIFY_WITH_EXPERIMENT",
+      "after": "EXTERNAL_EXPERIMENT_RELEVANT_NOT_YET_REANALYZED",
+      "what_the_sources_contribute": "La información de popularidad se manipuló en experimento de elecciones ficticias.",
+      "why_this_updates_or_checks_prior": "Apoya interés de variable exógena de visibilidad pero no reciprocidad real.",
+      "limits": "Sin datos reanalizados; no se trata de usuarios bilateralmente acoplados.",
+      "falsifier_or_followup": "Combinar aleatorización de información y respuestas reales con consentimiento.",
+      "evidence_type": "2026-10-28 contemporaneous documentary audit",
+      "retrospective_backfill": false,
+      "recorded_at": "2026-10-28",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null
+    },
+    {
+      "id": "U017",
+      "prior_id": "P-DYADIC_ACCESS",
+      "source_ids": [
+        "SRC024"
+      ],
+      "cycle_ids": [
+        "N56"
+      ],
+      "before": "PARTIALLY_SUPPORTED_FOR_DYADS_BUT_NOT_PROSPECTIVITY",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "after": "PARTIALLY_SUPPORTED_FOR_DYADS_BUT_NOT_PROSPECTIVITY",
+      "what_the_sources_contribute": "Moreno et al publican reportes de ambos lados en 4.542 citas.",
+      "why_this_updates_or_checks_prior": "Sigue sin haber universo completo de perfiles mostrados ni historial previo.",
+      "limits": "OSF vinculado no descargado.",
+      "falsifier_or_followup": "Verificar ficheros, exposición y permiso antes de análisis.",
+      "evidence_type": "2026-10-28 contemporaneous documentary audit",
+      "retrospective_backfill": false,
+      "recorded_at": "2026-10-28",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null
+    },
+    {
+      "id": "U018",
+      "prior_id": "P-AGE_EXTERNAL",
+      "source_ids": [
+        "SRC025",
+        "SRC029"
+      ],
+      "cycle_ids": [
+        "N56",
+        "N55"
+      ],
+      "before": "NOT_RECORDED_AT_TIME",
+      "direction": "CHALLENGE_UNIVERSALITY",
+      "after": "CHALLENGED",
+      "what_the_sources_contribute": "Estudios externos documentan preferencias por edad y discrepancia entre gustos declarados y revelados.",
+      "why_this_updates_or_checks_prior": "Edad elegida depende de muestra, oferta, especificación; no regla general fija.",
+      "limits": "Puede haber solapamiento con fuente checa 2025; no contar como muestra independiente.",
+      "falsifier_or_followup": "Prueba prospectiva en cohortes y mercados no solapados.",
+      "evidence_type": "2026-10-28 contemporaneous documentary audit",
+      "retrospective_backfill": false,
+      "recorded_at": "2026-10-28",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null
+    },
+    {
+      "id": "U019",
+      "prior_id": "P-DYADIC_ACCESS",
+      "source_ids": [
+        "SRC022"
+      ],
+      "cycle_ids": [
+        "N56"
+      ],
+      "before": "PARTIALLY_SUPPORTED_FOR_DYADS_BUT_NOT_PROSPECTIVITY",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "after": "PARTIALLY_SUPPORTED_FOR_DYADS_BUT_NOT_PROSPECTIVITY",
+      "what_the_sources_contribute": "OSF 6zcrs se declara en el artículo checo.",
+      "why_this_updates_or_checks_prior": "HTTP 403 y DNS bloqueado; microdatos/permiso desconocidos.",
+      "limits": "El enlace no demuestra que archivo sea legible ni reutilizable.",
+      "falsifier_or_followup": "Descargar por interfaz alternativa y verificar bytes+licencia.",
+      "evidence_type": "2026-10-28 contemporaneous documentary audit",
+      "retrospective_backfill": false,
+      "recorded_at": "2026-10-28",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null
+    },
+    {
+      "id": "U020",
+      "prior_id": "P-OPPORTUNITY",
+      "source_ids": [
+        "SRC021"
+      ],
+      "cycle_ids": [
+        "N56"
+      ],
+      "before": "MATERIAL_MISSINGNESS",
+      "direction": "STRENGTHEN_MISSINGNESS",
+      "after": "MATERIAL_MISSINGNESS",
+      "what_the_sources_contribute": "Los autores reconocen explícitamente no saber qué perfiles vieron los usuarios de la app.",
+      "why_this_updates_or_checks_prior": "Intentos enviados no son universo de oportunidades ni controles de no acción.",
+      "limits": "No se inspeccionó dataset OSF, pero limitación declarada en método del paper.",
+      "falsifier_or_followup": "Capturar registros completos de exposición incluidos no elegidos.",
+      "evidence_type": "2026-10-28 contemporaneous documentary audit",
+      "retrospective_backfill": false,
+      "recorded_at": "2026-10-28",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null
+    },
+    {
+      "id": "U021",
+      "prior_id": "P-EXANTE_POP",
+      "source_ids": [
+        "SRC021"
+      ],
+      "cycle_ids": [
+        "N56"
+      ],
+      "before": "DATA_BLOCKED",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "after": "DATA_BLOCKED",
+      "what_the_sources_contribute": "El trabajo define deseabilidad con indegrees del período.",
+      "why_this_updates_or_checks_prior": "No constituye popularidad congelada antes de las decisiones del mismo período.",
+      "limits": "Marcas temporales de raw OSF no verificadas.",
+      "falsifier_or_followup": "Log timestamped de reputación estimada antes de exposición.",
+      "evidence_type": "2026-10-28 contemporaneous documentary audit",
+      "retrospective_backfill": false,
+      "recorded_at": "2026-10-28",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null
+    },
+    {
+      "id": "U022",
+      "prior_id": "P-NOVELTY",
+      "source_ids": [
+        "SRC021"
+      ],
+      "cycle_ids": [
+        "N57"
+      ],
+      "before": "STRONG_PRIOR_ART",
+      "direction": "STRENGTHEN_NEGATIVE_PRIOR_ART",
+      "after": "STRONG_PRIOR_ART",
+      "what_the_sources_contribute": "Artículo PLOS ONE 2025 reporta contactos aspiracionales y reciprocidad más homogámica, con mecanismo filtrado.",
+      "why_this_updates_or_checks_prior": "La versión general de nuestra tesis ya está casi literalmente publicada en datos de app real.",
+      "limits": "No acredita causalidad de rechazo ni caída de estatus público.",
+      "falsifier_or_followup": "Proponer predicción nueva específicamente causal antes de nuevos datos.",
+      "evidence_type": "2026-10-28 contemporaneous documentary audit",
+      "retrospective_backfill": false,
+      "recorded_at": "2026-10-28",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null
+    },
+    {
+      "id": "U023",
+      "prior_id": "P-RECIPROCITY",
+      "source_ids": [
+        "SRC021"
+      ],
+      "cycle_ids": [
+        "N57"
+      ],
+      "before": "NOT_RECORDED_AT_TIME",
+      "direction": "DESCRIPTIVE_SUPPORT",
+      "after": "SUPPORTED_DESCRIPTIVELY_NOT_CAUSALLY",
+      "what_the_sources_contribute": "Gap de indegrees medios de intentos masculinos Brno−.16/Praga−.08 y recíprocos Brno−.032/Praga−.019.",
+      "why_this_updates_or_checks_prior": "El filtrado por no reciprocidad es explicación plausible de mayor homogamia observada.",
+      "limits": "No es estimación causal de rechazo y no identifica status ante terceros.",
+      "falsifier_or_followup": "Comparar intentos→respuestas con diseño de exposición y competencia medidos.",
+      "evidence_type": "2026-10-28 contemporaneous documentary audit",
+      "retrospective_backfill": false,
+      "recorded_at": "2026-10-28",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null
+    },
+    {
+      "id": "U024",
+      "prior_id": "P-PUBLIC_REPUTATION",
+      "source_ids": [
+        "SRC021"
+      ],
+      "cycle_ids": [
+        "N57"
+      ],
+      "before": "NOT_IDENTIFIED",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "after": "NOT_IDENTIFIED",
+      "what_the_sources_contribute": "Fuente checa explica filtrado por reciprocidad, no reputación pública.",
+      "why_this_updates_or_checks_prior": "No confundir pérdida de oportunidad de match con caída de prestigio observable.",
+      "limits": "No señal compartida de rechazo ni comparación de valor tras intervención.",
+      "falsifier_or_followup": "Randomizar visibilidad de señales reputacionales éticamente.",
+      "evidence_type": "2026-10-28 contemporaneous documentary audit",
+      "retrospective_backfill": false,
+      "recorded_at": "2026-10-28",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null
+    },
+    {
+      "id": "U025",
+      "prior_id": "P-MEASURE_OUTCOME",
+      "source_ids": [
+        "SRC024"
+      ],
+      "cycle_ids": [
+        "N56"
+      ],
+      "before": "CHALLENGED",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "after": "CHALLENGED",
+      "what_the_sources_contribute": "Moreno et al. estudian evaluación y experiencia de citas reales.",
+      "why_this_updates_or_checks_prior": "Citas e interés bilateral continúan sin ser convivencia o matrimonio.",
+      "limits": "OSF no descargado y outcome de relación no comprobado.",
+      "falsifier_or_followup": "Medir relación posterior con consentimiento.",
+      "evidence_type": "2026-10-28 contemporaneous documentary audit",
+      "retrospective_backfill": false,
+      "recorded_at": "2026-10-28",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null
+    }
+  ]
+}
