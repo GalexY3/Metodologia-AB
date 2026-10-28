@@ -1,0 +1,155 @@
+{
+  "schema": "ab.result.v1",
+  "campaign_id": "59e1f051-b3c6-4d6a-9ba5-670017942347",
+  "turn_id": "e428d82b-4c4d-4caf-9320-6220e1175c8f",
+  "cycle": "CR03",
+  "mode": "AB-P",
+  "kind": "DOCUMENTARY_INSTRUMENTED_AB",
+  "status": "COMPLETED_WITH_BOUNDED_STRUCTURAL_CHECKS",
+  "prereg": "CR03_PREREG.json",
+  "prereg_commit": "cc0828088bb7274ff87d3587ca0338adc0dfcfc4",
+  "baseline_head": "72a2ae2deeb9eaa719b598943c1e8d18360ed6ea",
+  "audited_commit": "cc0828088bb7274ff87d3587ca0338adc0dfcfc4",
+  "A_question": "Does the 35-batch Atlas chain in the specified private research branch exhibit bounded detectable inconsistencies in batch headers, immediate parent pointers, JSON, per-chunk duplicate additions or declared count totals?",
+  "B_rivals": {
+    "H1": "No detectable structural discrepancy in tested checks.",
+    "H0": "Malformed update or mismatched parent/count/identifier in the inspected span.",
+    "H_other": "Subset passes while canonical Python Atlas validation or POSIX tests could still fail."
+  },
+  "C_discriminant": "Read seed and all 35 successive JSON updates from a SHA-frozen branch; parse each update, check declared schema, batch headers, operations and IDs, check parent links within 7-batch windows and cross-window boundary names, count operations by kind, compare historical 0020 runs/complaints and expected totals.",
+  "D_execution": {
+    "source": "authenticated GitHub connector; file fetch by exact commit",
+    "seed_blob_sha": "f503c3fe3432110de2edf3a3d7517ca344c40623",
+    "seed_baseline": {
+      "nodes": 14,
+      "edges": 23,
+      "runs": 0,
+      "complaints": 0,
+      "release_gates": 6
+    },
+    "chunks": [
+      [
+        "0001",
+        "0007"
+      ],
+      [
+        "0008",
+        "0014"
+      ],
+      [
+        "0015",
+        "0021"
+      ],
+      [
+        "0022",
+        "0028"
+      ],
+      [
+        "0029",
+        "0035"
+      ]
+    ],
+    "reads": "35/35 JSON batch files read and parsed via 5 successful bounded tool executions; initial attempted all-in-one call exceeded tool-call budget and yielded no completed audit; smaller batches succeeded",
+    "checks": "JSON parse, schema, required batch headers, parent chain within each chunk, verified matching parent boundary names across chunks, recognized operation types, ID form and duplicate addition IDs within chunks; arithmetic of declared adds against seed",
+    "native_python_checker": "NOT_RUN",
+    "canonical_state_SHA256": "UNKNOWN",
+    "pytest_full_linux": "NOT_RUN",
+    "local_checkout": "NOT_AVAILABLE",
+    "git_clone": "NOT_RUN",
+    "github_actions_minutes": 0
+  },
+  "E_observations": {
+    "batches": 35,
+    "latest_batch": "0035-PFL-ABH-CONT80-C77-C80-POSIX-20261028",
+    "batch_parent_chain": "MATCHES in the inspected sequential batches including four cross-chunk parent links",
+    "schema_header_or_json_errors": 0,
+    "unexpected_operation_kinds": 0,
+    "duplicate_addition_IDs_within_chunks": 0,
+    "per_chunk_ops": [
+      97,
+      131,
+      64,
+      56,
+      22
+    ],
+    "per_chunk_adds": {
+      "run": [
+        25,
+        61,
+        37,
+        56,
+        22
+      ],
+      "complaint": [
+        17,
+        15,
+        12,
+        0,
+        0
+      ],
+      "node": [
+        19,
+        23,
+        7,
+        0,
+        0
+      ],
+      "edge": [
+        28,
+        25,
+        5,
+        0,
+        0
+      ]
+    },
+    "derived_totals": {
+      "nodes": 63,
+      "edges": 81,
+      "runs": 201,
+      "complaints": 44,
+      "operations": 370
+    },
+    "batch_0020": "20 run.add IC04–IC23 including IC15 and IC20, 3 complaints negative retained (IC09, IC21, IC22)",
+    "gates": "seed contains 6 critical release gates blocked/pending; no gate.set or gate.add observed in inspected deltas",
+    "counts_equivalence": "Matches CURRENT.md derived figures; NOT a canonical Python or independent replay validation"
+  },
+  "F_adversarial": {
+    "pre_exposure": "Expected totals and batch IDs were known before prereg. This is a consistency check, not independent scientific discovery.",
+    "untested": "Global duplicate IDs across the 5 chunks not independently executed as a single set; all complaint-run references, all node-edge references, semantic duplicate-edge controls, strict abmap schema, canonical state hashing, Python apply_one and native pytest unverified.",
+    "non_replay": "Operations were inspected/counted but a full state replay including mutation semantics was not performed."
+  },
+  "G_confirmation": {
+    "canonical_python": "NOT_RUN; T007 historical checkout certified only 31 lots",
+    "codex_t008": "BLOCKED; executor reported Windows checkout at 4faf31a, remote read network failure and no WSL/Docker/Podman, no Linux POSIX tests",
+    "independent_replicate": "NOT_AVAILABLE"
+  },
+  "H_update": {
+    "H1": "SUPPORTED_ONLY_FOR_INSPECTED_SUBSET",
+    "H0": "NOT_OBSERVED_IN_INSPECTED_SUBSET",
+    "H_other": "REMAINS_POSSIBLE",
+    "NO_VOTAN_literal": "UNKNOWN",
+    "IC04_IC15_gap": "Historical absence claim contradicted by pre-existing Atlas 0020; not rediscovered",
+    "CT2_identity_before": 29,
+    "CT2_identity_after": 29
+  },
+  "I_dictamen": {
+    "grade": "0/3",
+    "N1_new": 0,
+    "N2_new": 0,
+    "N3_new": 0,
+    "VSDS": "1/3",
+    "V4_contractual_percent": 36.9,
+    "release_gates_passed": 0,
+    "DRIFT": "D0",
+    "privacy": "No originals or personal records retrieved/published",
+    "research_significance": "Operational bounded consistency, not a scientific finding or validated release"
+  },
+  "J_decision": {
+    "decision": "STOP_R5 on repeated connector-only structural checks; T008 environment blocker remains. Preserve evidence and require native full checker and full Linux pytest before structural/canonical promotion.",
+    "atlas_append": "DEFERRED: branch already behind main whose later 0036–0043+ batches would conflict with a new 0036 chain; no new atlas.delta run asserted, artifact itself is versioned in GitHub.",
+    "next": "A capable Linux/POSIX executor with authenticated current checkout should run full T008, write exact command/exit/log/SHA evidence; no claim of completed execution.",
+    "no_main_merge": true,
+    "no_expensive_ci": true,
+    "no_scoring_of_people": true
+  }
+}
