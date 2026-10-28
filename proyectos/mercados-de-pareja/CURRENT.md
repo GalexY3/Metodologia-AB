@@ -20,7 +20,7 @@
 - Reproducibilidad interna exacta, **clon limpio independiente no verificado**, sin muestras humanas procesadas.
 
 ## Fuentes y priors
-- [SOURCES.json](research/PRIORS/SOURCES.json): **52 fuentes** (51/52 documentan la misma cohorte pairfam). SRC047 E218862V1 actualizado tras lectura de inventario original; SRC048 Stanford HCMST 2017–2022; SRC049 ICPSR 38873 (**la misma cohorte que SRC048**); SRC050 transición ICPSR.
+- [SOURCES.json](research/PRIORS/SOURCES.json): **52 fuentes** (SRC051 y SRC052 documentan una única cohorte pairfam; no son muestras independientes). SRC047 E218862V1 actualizado tras lectura de inventario original; SRC048 Stanford HCMST 2017–2022; SRC049 ICPSR 38873 (**la misma cohorte que SRC048**); SRC050 transición ICPSR.
 - [PRIORS.json](research/PRIORS/PRIORS.json): **26 priors cualitativos**, uno nuevo sobre elegibilidad longitudinal aún sin microdatos. [UPDATES.json](research/PRIORS/UPDATES.json): **55 revisiones**; once últimas U045–U055 incluidas NO_CHANGE_WITH_REASON cuando no hay evidencia suficiente.
 - **N76/N77/N78 — material humano nuevo:** ninguna fila de microdatos procesada. Se comprobaron oficialmente carpeta AEA/OpenICPSR E218862V1 (Code/Data/Exhibits/Temp/README) y diseño HCMST 2017, 2020, 2022 (3510/2107/1722 personas), pero descargas de README/datasets y codebook fallidas por cache/red/DNS. **HCMST es encuesta longitudinal individual, no log de swipes bilaterales**, útil únicamente para etapa duración. Archivo y licencias específicas no verificados; Stanford tiene acuerdo público de uso explícito.
 
