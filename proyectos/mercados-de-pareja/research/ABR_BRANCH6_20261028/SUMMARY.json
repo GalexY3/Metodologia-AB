@@ -17,7 +17,7 @@
       ],
       "gap_mean": 0.09414890855620207,
       "pair_exposures_mean": 2908.6,
-      "mutual_evaluated_mean": 0
+      "mutual_evaluated_mean": null
     },
     {
       "cycle": "N09",
@@ -33,7 +33,7 @@
       ],
       "gap_mean": 0.08867280762395328,
       "pair_exposures_mean": 4135.2,
-      "mutual_evaluated_mean": 0
+      "mutual_evaluated_mean": null
     },
     {
       "cycle": "N09",
@@ -49,7 +49,7 @@
       ],
       "gap_mean": 0.0735249063612214,
       "pair_exposures_mean": 4000,
-      "mutual_evaluated_mean": 0
+      "mutual_evaluated_mean": null
     },
     {
       "cycle": "N09",
@@ -65,7 +65,7 @@
       ],
       "gap_mean": 0.05805076811184088,
       "pair_exposures_mean": 12000,
-      "mutual_evaluated_mean": 0
+      "mutual_evaluated_mean": null
     },
     {
       "cycle": "N09",
@@ -81,7 +81,7 @@
       ],
       "gap_mean": 0.21536065874930782,
       "pair_exposures_mean": 199.8,
-      "mutual_evaluated_mean": 0
+      "mutual_evaluated_mean": null
     },
     {
       "cycle": "N09",
@@ -97,7 +97,7 @@
       ],
       "gap_mean": 0.20186297715930585,
       "pair_exposures_mean": 205.8,
-      "mutual_evaluated_mean": 0
+      "mutual_evaluated_mean": null
     },
     {
       "cycle": "N10",
@@ -112,8 +112,8 @@
         0.7617218174126508
       ],
       "gap_mean": 0.05172647186811423,
-      "pair_exposures_mean": 0,
-      "mutual_evaluated_mean": 0
+      "pair_exposures_mean": null,
+      "mutual_evaluated_mean": null
     },
     {
       "cycle": "N10",
@@ -128,8 +128,8 @@
         0.7568504205342844
       ],
       "gap_mean": 0.05304777345123494,
-      "pair_exposures_mean": 0,
-      "mutual_evaluated_mean": 0
+      "pair_exposures_mean": null,
+      "mutual_evaluated_mean": null
     },
     {
       "cycle": "N10",
@@ -144,8 +144,8 @@
         0.7582384040777409
       ],
       "gap_mean": 0.05023903092390625,
-      "pair_exposures_mean": 0,
-      "mutual_evaluated_mean": 0
+      "pair_exposures_mean": null,
+      "mutual_evaluated_mean": null
     },
     {
       "cycle": "N11",
@@ -160,7 +160,7 @@
         0.5308035691063024
       ],
       "gap_mean": 0.10722773206552338,
-      "pair_exposures_mean": 0,
+      "pair_exposures_mean": null,
       "mutual_evaluated_mean": 3874
     },
     {
@@ -176,7 +176,7 @@
         0.5126136865571644
       ],
       "gap_mean": 0.10163660362305627,
-      "pair_exposures_mean": 0,
+      "pair_exposures_mean": null,
       "mutual_evaluated_mean": 3395.8
     },
     {
@@ -192,14 +192,14 @@
         0.6701889730741815
       ],
       "gap_mean": 0.07765986367601871,
-      "pair_exposures_mean": 0,
+      "pair_exposures_mean": null,
       "mutual_evaluated_mean": 4240
     }
   ],
   "notes": [
-    "All statistics from synthetic generation only, no external human replicate",
-    "N09 DA has complete rankings of same graph while sequential has incomplete temporal observation",
-    "N10 five-seed run performed after two pilot seeds satisfied pre-specified coverage gate",
-    "N11 planned graph exactly matched but realised exposures differ due exits"
+    "Local synthetic only, no external human validation",
+    "N09 DA has complete graph information, no matched information-budget equivalence",
+    "N10 two pre-registered pilot seeds passed, then 3 further seeds ran",
+    "N11 same planned graph, realised opportunities vary with matches"
   ]
 }
