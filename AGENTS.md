@@ -22,6 +22,15 @@ La metodología **no garantiza** que un modelo de ChatGPT tenga acceso automáti
 
 **Procedencia y detalle completo:** [O6](docs/AB_3_2_1_O6_CAMPANAS_INFORMES_CT2_Y_CICLOS.md). Su adopción normaliza informes y colaboración, **no demuestra** la eficacia científica de AB.
 
+## Regla de cierre interactivo AB (decisión del investigador, 28/10/2026)
+
+**En todas las respuestas de cierre o continuidad de proyectos AB, incluir al final un botón funcional** (o la acción equivalente ofrecida por la interfaz) con una petición ya redactada para el siguiente turno; no limitarse a escribir `SOLICITO ...` como texto inerte.
+- **Si hay ciclos autorizados pendientes:** botón «Continuar con X ciclos ya autorizados», con proyecto, rama, número de plazas, R5, observaciones, controles y condición explícita de no gastar plazas sin evidencia; **no pedir autorización duplicada**. Una pulsación reabre la conversación, no demuestra que se haya ejecutado trabajo ni lo realiza en segundo plano.
+- **Si el saldo es cero:** botón «Autorizar [20–45] ciclos AB» con cantidad, modo, objetivo y requisitos A–J redactados. La nueva autorización existe **solo si el usuario pulsa y confirma el mensaje**; una sugerencia no concede créditos.
+- **Si AB-DECIDE está en STOP_R5 y quedan plazas:** el botón de continuación reevalúa acceso a evidencia y posibles pruebas discriminantes; sin nueva clase de evidencia, conserva STOP y saldo.
+- Conservar siempre el cierre escrito y el resumen de evidencia y límites incluso cuando la interfaz muestre el control. Si el cliente no admite botones, ofrecer un enlace de continuación propio de la plataforma o un mensaje exacto para copiar.
+- Esta regla es de experiencia de usuario, **no una modificación de R1–R5 ni evidencia de eficacia científica**. No contabilizar la corrección documental como ciclo AB.
+
 ## Norma transversal: descubrimientos documentales, fuentes y priors (28/10/2026)
 
 - **Obligatorio en todos los proyectos AB:** cada hallazgo documental nuevo, antecedente relevante, resultado de otra investigación, limitación de fuente o contradicción verificable debe tener **registro de la fuente original y de lo que aporta**, y **actualización explícita de al menos un prior**, o un evento `NO_CHANGE_WITH_REASON` justificado cuando no corresponda cambiarlo.
