@@ -4,7 +4,7 @@
   "title": "Mercados de pareja · AB-R",
   "mode": "research",
   "created_at": "2026-10-28T18:00:00+01:00",
-  "updated_at": "2026-10-28T21:50:00+01:00",
+  "updated_at": "2026-10-28T22:00:00+01:00",
   "nodes": [
     {
       "id": "root",
@@ -1105,6 +1105,132 @@
         "verified_by": "",
         "verified": false
       }
+    },
+    {
+      "id": "N41",
+      "title": "QA: edad y disciplina por ambos miembros",
+      "status": "answered",
+      "detail": "8.180 decisiones con edades y 8.204 con disciplina; no duplicados en díadas, categoría estable por persona",
+      "kind": "question",
+      "mode": "research",
+      "sources": [
+        "research/ABR_BRANCH6_SOCIAL_20261028/REPORT.md",
+        "research/ABR_BRANCH6_SOCIAL_20261028/LEDGER.json"
+      ],
+      "created_at": "2026-10-28T22:00:00+01:00",
+      "updated_at": "2026-10-28T22:00:00+01:00",
+      "phase": null,
+      "acceptance": {
+        "criteria": "",
+        "evidence": [],
+        "verified_by": "",
+        "verified": false
+      }
+    },
+    {
+      "id": "N42",
+      "title": "Homofilia edad, control actor×evento",
+      "status": "answered",
+      "detail": "Columbia exceso cercanía mujeres −0.156 años, hombres −0.202 frente a permutación por actor",
+      "kind": "question",
+      "mode": "research",
+      "sources": [
+        "research/ABR_BRANCH6_SOCIAL_20261028/REPORT.md",
+        "research/ABR_BRANCH6_SOCIAL_20261028/LEDGER.json"
+      ],
+      "created_at": "2026-10-28T22:00:00+01:00",
+      "updated_at": "2026-10-28T22:00:00+01:00",
+      "phase": null,
+      "acceptance": {
+        "criteria": "",
+        "evidence": [],
+        "verified_by": "",
+        "verified": false
+      }
+    },
+    {
+      "id": "N43",
+      "title": "Homofilia de disciplina académica",
+      "status": "answered",
+      "detail": "Columbia exceso misma disciplina +1.55 pp mujeres, +1.11 pp hombres, descriptivo",
+      "kind": "question",
+      "mode": "research",
+      "sources": [
+        "research/ABR_BRANCH6_SOCIAL_20261028/REPORT.md",
+        "research/ABR_BRANCH6_SOCIAL_20261028/LEDGER.json"
+      ],
+      "created_at": "2026-10-28T22:00:00+01:00",
+      "updated_at": "2026-10-28T22:00:00+01:00",
+      "phase": null,
+      "acceptance": {
+        "criteria": "",
+        "evidence": [],
+        "verified_by": "",
+        "verified": false
+      }
+    },
+    {
+      "id": "N44",
+      "title": "Popularidad frente a semejanza",
+      "status": "answered",
+      "detail": "R² FE actor popularidad 13.9–16.3%, semejanza .5–1.1%; no causal ni capacidad predictiva externa",
+      "kind": "question",
+      "mode": "research",
+      "sources": [
+        "research/ABR_BRANCH6_SOCIAL_20261028/REPORT.md",
+        "research/ABR_BRANCH6_SOCIAL_20261028/LEDGER.json"
+      ],
+      "created_at": "2026-10-28T22:00:00+01:00",
+      "updated_at": "2026-10-28T22:00:00+01:00",
+      "phase": null,
+      "acceptance": {
+        "criteria": "",
+        "evidence": [],
+        "verified_by": "",
+        "verified": false
+      }
+    },
+    {
+      "id": "N45",
+      "title": "Heterogeneidad entre 21 eventos Columbia",
+      "status": "answered",
+      "detail": "14/18 eventos con r de popularidad entre mutuas >0, cuatro <0; leave-one-event-out r .096–.163",
+      "kind": "question",
+      "mode": "research",
+      "sources": [
+        "research/ABR_BRANCH6_SOCIAL_20261028/REPORT.md",
+        "research/ABR_BRANCH6_SOCIAL_20261028/LEDGER.json"
+      ],
+      "created_at": "2026-10-28T22:00:00+01:00",
+      "updated_at": "2026-10-28T22:00:00+01:00",
+      "phase": null,
+      "acceptance": {
+        "criteria": "",
+        "evidence": [],
+        "verified_by": "",
+        "verified": false
+      }
+    },
+    {
+      "id": "N46",
+      "title": "Comparación de edad Columbia y Mixmosa",
+      "status": "answered",
+      "detail": "Mujeres muestran más cercanía vs nulo en ambos; hombres muestran signo contrario en Mixmosa (+.117) y Columbia (−.202). Un hallazgo 1/3 exploratorio local, no novedad causal.",
+      "kind": "question",
+      "mode": "research",
+      "sources": [
+        "research/ABR_BRANCH6_SOCIAL_20261028/REPORT.md",
+        "research/ABR_BRANCH6_SOCIAL_20261028/LEDGER.json"
+      ],
+      "created_at": "2026-10-28T22:00:00+01:00",
+      "updated_at": "2026-10-28T22:00:00+01:00",
+      "phase": null,
+      "acceptance": {
+        "criteria": "",
+        "evidence": [],
+        "verified_by": "",
+        "verified": false
+      }
     }
   ],
   "edges": [
@@ -1419,6 +1545,42 @@
       "from": "goal",
       "to": "N40",
       "relation": "branches_from"
+    },
+    {
+      "id": "e_goal_N41",
+      "from": "goal",
+      "to": "N41",
+      "relation": "branches_from"
+    },
+    {
+      "id": "e_goal_N42",
+      "from": "goal",
+      "to": "N42",
+      "relation": "branches_from"
+    },
+    {
+      "id": "e_goal_N43",
+      "from": "goal",
+      "to": "N43",
+      "relation": "branches_from"
+    },
+    {
+      "id": "e_goal_N44",
+      "from": "goal",
+      "to": "N44",
+      "relation": "branches_from"
+    },
+    {
+      "id": "e_goal_N45",
+      "from": "goal",
+      "to": "N45",
+      "relation": "branches_from"
+    },
+    {
+      "id": "e_goal_N46",
+      "from": "goal",
+      "to": "N46",
+      "relation": "branches_from"
     }
   ],
   "events": [],
@@ -1432,8 +1594,8 @@
     "snapshot": "2026-10-28",
     "verified_live": false,
     "progress_semantics": "Sin índice de madurez, solo evidencia limitada",
-    "last_campaign": "ABR-COLUMBIA-N39-N40-20261028",
-    "scientific_status": "OBSERVATIONAL_MIXED_RESULTS_R5_STOP_FULL_BUDGET",
+    "last_campaign": "ABR-BRANCH6-SOCIAL-20261028",
+    "scientific_status": "OBSERVATIONAL_SOURCES_HETEROGENEOUS_NO_CAUSAL_REPLICATION",
     "current_statement": "30 total cycles across three earlier campaigns and EVIDENCE6: 10+8+6+6, no 2/3, R5 STOP",
     "reviewer": "Not validated on clean clone",
     "summary": "6 valid cycles, 1 invalid instrument attempt repaired, N12 and N13 data blocked, N1=0, N2/N3=0",
@@ -1443,7 +1605,11 @@
     "remaining": 13,
     "authorized_remaining": 0,
     "real_dyadic_dataset": "Mixmosa 1895 in-person dates",
-    "authorized_used": 20
+    "authorized_used": 6,
+    "CT2": 17,
+    "N1_local_1_3": 1,
+    "N2": 0,
+    "N3": 0
   },
   "project_contract": {
     "scope_version": "MATE-ABR-20261028-v1",
