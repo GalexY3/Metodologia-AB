@@ -3,7 +3,7 @@
   "project": "mercados-de-pareja",
   "date": "2026-10-28",
   "scope": "Retrospective provenance backfill from repository reports plus N56/N57 publisher audit. Original data never copied; not systematic or claim of accessing raw data for bibliography.",
-  "source_count": 59,
+  "source_count": 61,
   "sources": [
     {
       "id": "SRC001",
@@ -1171,7 +1171,53 @@
       "result_path": "research/ABR_REAL_GRAPH_N81_20261028/RESULTS_AGGREGATE.json",
       "source_code_repair": "research/ABR_REAL_GRAPH_N81_20261028/audit_reciprocity_REPAIR.py",
       "falsifier": "Obtain codebook explicitly decoding rec and labels, timestamp and candidate exposure, then use truly matched risk sets, separable click/msg and degree+block-preserving null; independent external heldout and actual durable couples require further data."
+    },
+    {
+      "id": "SRC060",
+      "title": "Su, Xixian, and Haibo Hu (2019), Gender-specific preference in online dating, EPJ Data Science 8:12",
+      "canonical_url": "https://doi.org/10.1140/epjds/s13688-019-0192-x",
+      "publication_date": "2019-04-11",
+      "source_type": "INDEPENDENT_ORIGINAL_OPEN_ACCESS_PUBLICATION_WITH_DATA_PROVENANCE_UNCERTAIN",
+      "cycle_ids": [
+        "N82"
+      ],
+      "evidence_access": "FULL_ORIGINAL_HTML_METHODS_SECTION_2_READ; DOI PUBLISHER ORIGINAL NOT PDF",
+      "contribution": "Original article documents Chinese online dating service: rec means website recommended and displayed the target in homepage, click means user opened target profile, msg means user sent target internal letter. Unclicked rec not explicit dislike and viewing full profile after click untracked. Original paper has 4,151,224 action records extracted 2011: rec 3,978,321, click 138,502, msg 34,401. Original article already models target popularity click/rec and msg/rec, actor/target attributes and degrees: strong PRIOR ART against novelty of ESBM algorithm-/opportunity-conditioned preferences.",
+      "limits": "Not shown same SSJY ZIP or exact extraction: SSJY 2020 author's archive holds 8,599,012 event rows (2x), and its ROUND field is not documented in Su/Hu article. Similar action semantics do not prove identical collection, consent terms or full impressions. Article covers only heterosexual users and social self-selection, not causal effects or durable unions.",
+      "right_to_reuse": "Article is openly accessible (publication license must be inspected before extensive reuse), original anonymized article dataset not separately distributed through publisher in this audit; no reuse of raw identity rows.",
+      "prior_art_relation": "No claim second independent cohort; overlapping/differently extracted Chinese platform data possible and unresolved.",
+      "verified_at": "2026-10-29",
+      "falsifier": "Verify SSJY original README/manuscript/author data dictionary maps action rec and ROUND to homepage rendered impressions and dates; confirm exact platform and sampling relation before treating 2019 and 2020 sources independent."
+    },
+    {
+      "id": "SRC061",
+      "title": "N82 original SSJY actor-target-ROUND-ACTION event data and audited within-slate action conversion",
+      "canonical_url": "https://github.com/RManLuo/MotifGNN",
+      "original_archive": "https://drive.google.com/file/d/1u-59m0u5-pcF4TCN6zjGLICWFdQteCUG/view?usp=sharing",
+      "cycle_ids": [
+        "N82"
+      ],
+      "source_type": "INDEPENDENT_PROVENANCE_EVENT_GRAIN_SAME_SOURCE_COHORT_AS_SRC059",
+      "same_study_as": "SRC059",
+      "original_zip_sha256": "23cff03451b13f94354d875e777f60e1c63224829f42b8adf9d73d7563812e24",
+      "raw_member": "sjjy_data/train.txt",
+      "raw_member_columns": [
+        "USER_ID_A",
+        "USER_ID_B",
+        "ROUND",
+        "ACTION"
+      ],
+      "raw_rows_processed": 8599012,
+      "verified_at": "2026-10-29",
+      "contribution": "Raw train.txt preserves user-specific ROUND lost in derived relations.csv. Authors' generate_graph.py explicitly exports only A/B/ACTION, discarding ROUND. On 8,366,058 unique user-target-round rec events, 165,703 have click same round (1.980658%) and 22,979 have msg same round (0.274669%). 92.024% distinct click triples and 49.541% distinct msg triples match rec. Test actors 3004 disjoint (1,705,093 rec offers) get heldout target-smoothed CTR logloss .0877533 vs global .0953849, improvement .00763165; actor-bootstrap 95% interval [.00697562,.00847595], B100; potential target heterogeneity predictive, no causal interpretation. 42.07% same dyad repeat rec, with first vs repeat click rates 2.49% vs 1.28%, selection-biased.",
+      "limits": "Same original archive and sample as SRC059, not a second independent cohort. Source author's precise rec semantics beyond related 2019 paper not verified and no proof rendered/attended recommendation; CLICK is profile visit not yes/like, MSG is outgoing message not match; absent click not explicit dislike; ROUND is actor-session index not synchronized calendar. Group/user-specific baseline stronger than global not tested prospectively; holdout actor is internal not external; repeated exposure comparison noncausal. Consent, standalone license and redistribution permissions not separately verified; data original not uploaded.",
+      "data_reuse_rights": "AUTHOR_PUBLIC_LINK_RECEIVED_AND_MINIMIZED_LOCAL_AGGREGATES_ONLY; RAW_REHOSTING_NOT_AUTHORIZED",
+      "report_path": "research/ABR_SSJY_STAGE_N82_20261029/REPORT.md",
+      "analysis_sha256": "9587f9621d73cd25ad1e11168866568f199eafadb5fc39b5e1b406b2b5110961",
+      "analysis_manifest_commit": "58cf00c5e2efab0c76a1f4bd84085e7ab8b22da0",
+      "contribution_to_novelty": "Demonstrates practical instrument for observed recommendation-stage profiling and predictive target differences in existing dataset, not scientifically original phenomenon over earlier Su/Hu 2019 and Hitsch 2010.",
+      "falsifier": "Stronger within-slate group+round+target popularity baseline, true rendered/attended impression and randomized ranking, replicated separately, explicit rejection and lasting union outcomes."
     }
   ],
-  "last_added_campaign": "N81"
+  "last_added_campaign": "N82"
 }
