@@ -1,0 +1,70 @@
+{
+  "schema": "ab.research.source_and_prior_update_template.v1",
+  "required_source_fields": [
+    "id",
+    "title",
+    "canonical_url",
+    "cycle_ids",
+    "contribution",
+    "limits",
+    "evidence_access",
+    "verified_at",
+    "data_reuse_rights"
+  ],
+  "source_example": {
+    "id": "SRC030",
+    "title": "Título de artículo/informe original",
+    "canonical_url": "https://doi.org/REPLACE",
+    "cycle_ids": [
+      "N58"
+    ],
+    "publication_date": "YYYY-MM-DD or UNKNOWN",
+    "authors": "...",
+    "exact_location": "sección/página/figura o abstract",
+    "what_observed_in_source": "...",
+    "contribution": "Qué dato, antecedente o contradicción aporta",
+    "limits": "Qué NO demuestra y qué población/acceso falta",
+    "evidence_access": "ARTICLE_READ|ABSTRACT_ONLY|METADATA_ONLY|RAW_DATA_PROCESSED|DATA_BLOCKED",
+    "primary_file_sha256": "NOT_AVAILABLE_IF_NOT_PROCESSED",
+    "article_reuse_rights": "CHECK_SEPARATELY",
+    "data_reuse_rights": "NOT_VERIFIED",
+    "verified_at": "YYYY-MM-DD",
+    "notes": "No copiar artículos completos ni microdatos sin permisos"
+  },
+  "prior_update_example": {
+    "id": "U026",
+    "prior_id": "P-NOVELTY",
+    "source_ids": [
+      "SRC030"
+    ],
+    "cycle_ids": [
+      "N58"
+    ],
+    "before": "STRONG_PRIOR_ART",
+    "direction": "NO_CHANGE_WITH_REASON",
+    "after": "STRONG_PRIOR_ART",
+    "what_the_sources_contribute": "...",
+    "why_this_updates_or_checks_prior": "...",
+    "limits": "...",
+    "falsifier_or_followup": "...",
+    "evidence_type": "article_read",
+    "retrospective_backfill": false,
+    "recorded_at": "YYYY-MM-DD",
+    "entry_status": "ACTIVE",
+    "numeric_bayesian_update": false,
+    "prior_probability_before": null,
+    "prior_probability_after": null,
+    "AB_cycle_increment": 0,
+    "correction_of": null
+  },
+  "guardrails": [
+    "Cada nuevo descubrimiento documental debe registrar SOURCE + UPDATE o NO_CHANGE_WITH_REASON",
+    "source_id no se reutiliza para obra diferente; DOI deduplicado",
+    "actualización de metadatos de source se registra en commit; no fingir que se descargó fichero",
+    "update append-only lógico: nunca borrar; rectificar mediante SUPERSEDES",
+    "nuevas probabilidades bayesianas numéricas requieren previo, likelihood y datos trazables",
+    "ledger ciclo A-J debe enlazar source_ids, prior_ids, prior_update_ids",
+    "un ciclo AB solo cuenta si A-J se ejecutó, no por añadir filas de mantenimiento",
+    "no mezclar paper CC BY con licencia de datos; comprobar ambas"
+  ]
+}
