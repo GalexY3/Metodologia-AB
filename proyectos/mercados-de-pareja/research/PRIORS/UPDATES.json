@@ -4,7 +4,7 @@
   "date": "2026-10-28",
   "mode": "append-only logical, versioned by Git commits",
   "reconstructed_from_documents": "Retrospective backfill, not preregistration. Old before values NOT_RECORDED unless documented explicitly.",
-  "source_coverage": "12 newly registered SRC030-041 linked to U026-U036 plus previous 29 sources",
+  "source_coverage": "52 registered sources with pairfam GESIS and technical manual as one independent cohort; 55 qualitative revision events",
   "events": [
     {
       "id": "U001",
@@ -1340,7 +1340,85 @@
       "AB_cycle_increment": 0,
       "prior_probability_before": null,
       "prior_probability_after": null
+    },
+    {
+      "id": "U053",
+      "prior_id": "P-LONGITUDINAL-ELIGIBILITY",
+      "source_ids": [
+        "SRC051",
+        "SRC052"
+      ],
+      "cycle_ids": [
+        "N78"
+      ],
+      "before": "DOCUMENTED_SAMPLE_RAW_NOT_INSPECTED",
+      "direction": "EVIDENCE_CLASS_EXPANDED_BUT_NO_EFFECT_CHANGE",
+      "after": "DOCUMENTED_SAMPLE_RAW_NOT_INSPECTED",
+      "what_the_sources_contribute": "pairfam longitudinal panel with current-partner interviews and month-level partnership episodes supplements separate HCMST individual panel.",
+      "why_this_updates_or_checks_prior": "Changes source eligibility for multi-actor measurement, not the prior belief about real-life hazard.",
+      "limits": "No SUF data, link validation or empirical contrasts; selected partners, no app risk set.",
+      "falsifier_or_followup": "Obtain registered GESIS SUF and verify biopart and partner$ across waves with selection/audit prereg before estimating effects.",
+      "evidence_type": "original primary technical methodology documentation and GESIS source access; zero respondent rows",
+      "retrospective_backfill": false,
+      "recorded_at": "2026-10-28",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null
+    },
+    {
+      "id": "U054",
+      "prior_id": "P-DYADIC_ACCESS",
+      "source_ids": [
+        "SRC051",
+        "SRC052"
+      ],
+      "cycle_ids": [
+        "N78"
+      ],
+      "before": "PARTIALLY_SUPPORTED_FOR_DYADS_BUT_NOT_PROSPECTIVITY",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "after": "PARTIALLY_SUPPORTED_FOR_DYADS_BUT_NOT_PROSPECTIVITY",
+      "what_the_sources_contribute": "Existing couples' partner self-reports are documented but not candidate exposures or reciprocal acceptance decisions over a full eligible set.",
+      "why_this_updates_or_checks_prior": "Cannot identify initiation/rejection mechanisms, even with both ends of an established couple observed.",
+      "limits": "Partnership is selection consequence; avoid collider and survivorship biases.",
+      "falsifier_or_followup": "An independent consented logged or randomized potential dyads dataset with actually displayed pairs and two-sided decisions.",
+      "evidence_type": "original primary technical methodology documentation and GESIS source access; zero respondent rows",
+      "retrospective_backfill": false,
+      "recorded_at": "2026-10-28",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null
+    },
+    {
+      "id": "U055",
+      "prior_id": "P-DYADIC-PANEL",
+      "source_ids": [
+        "SRC051",
+        "SRC052"
+      ],
+      "cycle_ids": [
+        "N78"
+      ],
+      "before": "NOT_REGISTERED",
+      "direction": "NEW_SOURCE_ELIGIBILITY_WITH_ACCESS_GATE",
+      "after": "DOCUMENTED_MULTI_ACTOR_RAW_NOT_INSPECTED",
+      "what_the_sources_contribute": "Official manual demonstrates linkage by id for partner surveys and detailed episode history; age, interview dates and partner history with censoring and wave14 caveat.",
+      "why_this_updates_or_checks_prior": "Adds multi-actor relationship measurement design class, not empirical validation of ESBM.",
+      "limits": "Only registered SUF; no data processed. Manual says no partner sample weights constructed; attrition and selection in ever-partnered biopart.",
+      "falsifier_or_followup": "Examine actual SUF coding and weights; establish risk set and partner response mechanism; compare with baseline multi-state survival before judging ESBM.",
+      "evidence_type": "original primary technical methodology documentation and GESIS source access; zero respondent rows",
+      "retrospective_backfill": false,
+      "recorded_at": "2026-10-28",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null
     }
   ],
-  "last_campaign": "ABR-EXTERNAL-GATE-20261028"
+  "last_campaign": "ABR-PAIRFAM-GATE-20261028"
 }
