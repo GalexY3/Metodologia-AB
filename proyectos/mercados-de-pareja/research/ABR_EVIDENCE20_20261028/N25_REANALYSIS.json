@@ -1,0 +1,65 @@
+{
+  "id": "N25",
+  "source_path": "research/ABR_EVIDENCE6_20261028/RUNS.csv",
+  "source_blob_sha": "4ca4eb5a6cd89349a1f6aa758f570b881b5be3a8",
+  "source_rows": 45,
+  "subset_N17_rows": 15,
+  "results": [
+    {
+      "variant": "DA",
+      "seeds": [
+        1103,
+        2207,
+        3301,
+        4409,
+        5501
+      ],
+      "mean_r": 0.9084990931232563,
+      "mean_coverage": 0.9616666666666667,
+      "mean_pairs": 115.4,
+      "mean_gap": 0.05648880087685668,
+      "mean_utility_matched": 0.5405734127798015,
+      "blocking_pairs_mean": 0,
+      "denominator": 240,
+      "selection": "all r/gap/utility conditional on matched pairs; coverage entire population"
+    },
+    {
+      "variant": "greedy",
+      "seeds": [
+        1103,
+        2207,
+        3301,
+        4409,
+        5501
+      ],
+      "mean_r": 0.017164490040964424,
+      "mean_coverage": 0.97,
+      "mean_pairs": 116.4,
+      "mean_gap": 0.20519462508138045,
+      "mean_utility_matched": 0.5029538557983873,
+      "blocking_pairs_mean": 599,
+      "denominator": 240,
+      "selection": "all r/gap/utility conditional on matched pairs; coverage entire population"
+    },
+    {
+      "variant": "adaptive",
+      "seeds": [
+        1103,
+        2207,
+        3301,
+        4409,
+        5501
+      ],
+      "mean_r": 0.4120986615630464,
+      "mean_coverage": 0.4133333333333333,
+      "mean_pairs": 49.6,
+      "mean_gap": 0.08499189656166065,
+      "mean_utility_matched": 0.7006159080998969,
+      "blocking_pairs_mean": 882,
+      "denominator": 240,
+      "selection": "all r/gap/utility conditional on matched pairs; coverage entire population"
+    }
+  ],
+  "interpretation": "Covariance among matched is selection-conditioned; mean utility of matched not population welfare, since single/outside payoffs not included.",
+  "external_replication": false
+}
