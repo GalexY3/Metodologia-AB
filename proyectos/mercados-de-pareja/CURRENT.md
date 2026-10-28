@@ -7,3 +7,8 @@
 - Niveles 2/3 y 3/3: 0. N1/portfolio: auditoría externa pendiente; ver `LEDGER.json`. CT2: no existe trayectoria preregistrada anterior; no dibujarla ni inventarla.
 - Prioridad siguiente: censo INE 20–39 por sexo/edad; elegibilidad (solteros que buscan pareja), escala de estatus/riqueza/educación, revisión histórica Hitsch/Bruch/EPA España, controles modelo estable, entrevista o datos de usuarios, credibilidad de pérdida real de estatus, sesgo de selección en r entre emparejados.
 - Prohibido extrapolar porcentajes a España, declarar efecto causal empírico, borrar resultados negativos o afirmar ejecución de `ab_atlas/atlas_delta.py check` (no ejecutado).
+
+## Navegación verificada en rama
+- [Visor ligero estático](ab_atlas/VIEWER.html), [mapa JSON](ab_atlas/seed.json) (schema piloto, checker Atlas **NO ejecutado**).
+- [Resultados individuales por semilla](research/ABR_MATE10_20261028/RUNS.csv) y [permutaciones](research/ABR_MATE10_20261028/NULLS.csv).
+- [Siguiente bloque propuesto, sin autorización](NEXT_8_PROPOSAL.md).
