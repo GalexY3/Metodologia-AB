@@ -1,0 +1,120 @@
+{
+  "source_sha256": "a0fe55d6172d01f81d6c7e2546330828cb98d1f631b2598fec4d4f4660eaa37d",
+  "script_local_sha256": "73dc77b2690e62974520be55a704fde1c2f07522e3f41e275e9304f5ef74ff51",
+  "runlog_repeated_identically": true,
+  "result_sha256": "968da0ea68e35a36c898a2bfe790fa93a52c1931cef76ebe63077b4cf88f72a4",
+  "sample": {
+    "directed_rows": 8368,
+    "dyads": 4184,
+    "waves": 21,
+    "participants": 551,
+    "nonmissing_age_directed": 8180,
+    "field_complete_directed": 8204,
+    "field_categories": 18,
+    "field_inconsistent_person": 0,
+    "age_inconsistent_person": 0
+  },
+  "N42": {
+    "women": {
+      "n": 4090,
+      "yes": 1498,
+      "age_abs_accepted_minus_all": -0.054963912763880796,
+      "permutation_mean": 0.10127440499312843,
+      "excess_vs_null": -0.15623831775700922,
+      "permutation_025": 0.007769732095932159,
+      "permutation_975": 0.1873591846994036,
+      "one_sided_p_lower": 0.000999000999000999
+    },
+    "men": {
+      "n": 4090,
+      "yes": 1941,
+      "age_abs_accepted_minus_all": -0.18702871632473395,
+      "permutation_mean": 0.01465958867269018,
+      "excess_vs_null": -0.20168830499742413,
+      "one_sided_p_lower": 0.000999000999000999
+    }
+  },
+  "N43": {
+    "women": {
+      "n": 4102,
+      "yes": 1498,
+      "delta_same_field_accepted_vs_exposed": 0.012489918298345462,
+      "null_mean": -0.003020095052789383,
+      "excess_vs_null": 0.015510013351134845,
+      "p_one_sided_upper": 0.006993006993006993
+    },
+    "men": {
+      "n": 4102,
+      "yes": 1957,
+      "delta_same_field_accepted_vs_exposed": 0.021972157604986983,
+      "null_mean": 0.010888355867633898,
+      "excess_vs_null": 0.011083801737353086,
+      "p_one_sided_upper": 0.00999000999000999
+    }
+  },
+  "N44": {
+    "female_chooser": {
+      "complete_cases": 4071,
+      "actors": 269,
+      "varying_actors": 242,
+      "R2_within_popularity_only": 0.13914167639201624,
+      "R2_within_similarity_only": 0.005464447090618663,
+      "R2_within_combined": 0.14242173984828588,
+      "combined_coef_per_SD": {
+        "popularity": 0.16929911761290423,
+        "abs_age_gap": -0.01197567611106641,
+        "signed_age_gap": -0.0007052428752718214,
+        "same_field": 0.02419846446577115
+      },
+      "combined_cluster_SE": {
+        "popularity": 0.007829097290917898,
+        "abs_age_gap": 0.00943465075538294,
+        "signed_age_gap": 0.011123111609942586,
+        "same_field": 0.008305184040416268
+      }
+    },
+    "male_chooser": {
+      "complete_cases": 4071,
+      "actors": 273,
+      "varying_actors": 250,
+      "R2_within_popularity_only": 0.1627016265341319,
+      "R2_within_similarity_only": 0.010695844757916961,
+      "R2_within_combined": 0.1678351471690258,
+      "combined_coef_per_SD": {
+        "popularity": 0.18759428606268688,
+        "abs_age_gap": -0.025351487779573956,
+        "signed_age_gap": 0.00003075324264991967,
+        "same_field": 0.02397631491340551
+      },
+      "combined_cluster_SE": {
+        "popularity": 0.008181243210518278,
+        "abs_age_gap": 0.007840939630722956,
+        "signed_age_gap": 0.00913215172548557,
+        "same_field": 0.00784789294804361
+      }
+    }
+  },
+  "N45": {
+    "r_popularity_pooled_matched": 0.1243975317928572,
+    "waves": 21,
+    "waves_with_10plus_mutual": 18,
+    "waves_positive_r": 14,
+    "waves_negative_r": 4,
+    "wave_r_min": -0.41239304942116123,
+    "wave_r_max": 0.7044281155048301,
+    "LOO_r_min": 0.09631076839094191,
+    "LOO_r_max": 0.1630720723913709,
+    "first_10_r": 0.11522640397451366,
+    "last_11_r": 0.1400412968054536
+  },
+  "limits": [
+    "All data US 2002-04 speed dating 4 mins, not Tinder/Spain",
+    "Same field_cd is coded academic field not education level",
+    "Target popularity = contemporaneous incoming yes rate in OTHER encounters, not pre-event reputation",
+    "Age-gap permutation preserves chooser-wave yes-degree but signed age preference is a separate confound",
+    "Cluster-robust chooser SE only; 21 waves and shared candidates create two-sided dependence",
+    "Multiple outcomes, no multiplicity correction for confirmatory claims because none made",
+    "Partial source hash frozen; full Python delivered as ZIP, clean clone not verified"
+  ],
+  "CT2_before": 17
+}
