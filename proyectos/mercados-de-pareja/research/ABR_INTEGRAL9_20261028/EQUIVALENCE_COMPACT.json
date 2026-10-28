@@ -1,0 +1,36 @@
+{
+  "kind": "POSTHOC_OBSERVATIONAL_EQUIVALENCE_ILLUSTRATION",
+  "source_sha256": "e9d75c80dcfe42f7378b1f75d72b3caad46a375860f256493c9719f0b59865e2",
+  "freeze_commit": "c150a122c9bb1e3eb333a34bce1b45c907be2684",
+  "output_sha256": "a2a3a86d175350c9db1dff92eac01bd3e0040b42ed0c1cb0eaf145a831b48af3",
+  "seeds": [
+    121,
+    313,
+    577,
+    787,
+    1009,
+    1291
+  ],
+  "target_same_group_exposure": 0.5,
+  "selected_after_first_60_runs": true,
+  "comparison": {
+    "explicit_preference": {
+      "same_group_exposure": 0.24973958,
+      "same_group_pairs": 0.49690722,
+      "coverage": 0.91041667
+    },
+    "opportunity_segregation_without_preference": {
+      "same_group_exposure": 0.50017361,
+      "same_group_pairs": 0.4998815,
+      "coverage": 0.81458333
+    }
+  },
+  "interpretation": "Similar final homogamy can arise via preference or exposure; exposure and coverage separate them; deliberately tuned posthoc, not independent confirmation.",
+  "qualifications": [
+    "No causal human claim",
+    "Same group is artificial 4-category label independent of quality and age",
+    "All six seeds; no universality across parameters",
+    "Only 6 seed Monte Carlo internal uncertainty"
+  ],
+  "output": "EQUIVALENCE.json in reproducible ZIP"
+}
