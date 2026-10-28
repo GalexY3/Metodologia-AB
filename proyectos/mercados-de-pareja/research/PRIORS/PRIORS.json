@@ -68,18 +68,20 @@
       "evidence_sources": [
         "SRC014",
         "SRC015",
-        "SRC021"
+        "SRC021",
+        "SRC033"
       ],
-      "last_update_id": "U024",
+      "last_update_id": "U030",
       "uncertainty": "Not probabilistically calibrated; evidence heterogeneous and some sources only metadata",
       "next_falsifier_or_test": "Independent prospective data with matched risk set, competent adversarial controls and documented sample selection",
       "numeric_probability": null,
       "CT2_is_not_this_prior": true,
       "update_ids": [
         "U007",
-        "U024"
+        "U024",
+        "U030"
       ],
-      "latest_evidence_summary": "Fuente checa explica filtrado por reciprocidad, no reputación pública.",
+      "latest_evidence_summary": "Feedback comparativo sí informa al actor de su propia popularidad; no prueba rechazo público ni estatus externo decreciente.",
       "last_revised_at": "2026-10-28"
     },
     {
@@ -88,17 +90,21 @@
       "status": "MATERIAL_MISSINGNESS",
       "rationale": "Dos fuentes speed dating incluyen citas efectivas; fuente checa reporta intentos pero no perfiles vistos; sin no-interacciones observadas el denominador de riesgo se desconoce.",
       "evidence_sources": [
-        "SRC021"
+        "SRC021",
+        "SRC030",
+        "SRC031",
+        "SRC041"
       ],
-      "last_update_id": "U020",
+      "last_update_id": "U027",
       "uncertainty": "Not probabilistically calibrated; evidence heterogeneous and some sources only metadata",
       "next_falsifier_or_test": "Independent prospective data with matched risk set, competent adversarial controls and documented sample selection",
       "numeric_probability": null,
       "CT2_is_not_this_prior": true,
       "update_ids": [
-        "U020"
+        "U020",
+        "U027"
       ],
-      "latest_evidence_summary": "Los autores reconocen explícitamente no saber qué perfiles vieron los usuarios de la app.",
+      "latest_evidence_summary": "Kalmijn, redes y Blossfeld separan composición de población e instituciones de preferencias.",
       "last_revised_at": "2026-10-28"
     },
     {
@@ -128,17 +134,20 @@
       "evidence_sources": [
         "SRC016",
         "SRC017",
-        "SRC018"
+        "SRC018",
+        "SRC036",
+        "SRC041"
       ],
-      "last_update_id": "U013",
+      "last_update_id": "U036",
       "uncertainty": "Not probabilistically calibrated; evidence heterogeneous and some sources only metadata",
       "next_falsifier_or_test": "Independent prospective data with matched risk set, competent adversarial controls and documented sample selection",
       "numeric_probability": null,
       "CT2_is_not_this_prior": true,
       "update_ids": [
-        "U013"
+        "U013",
+        "U036"
       ],
-      "latest_evidence_summary": "Fisman/Belot ya estudian oportunidades/género y conjoint posterior atractivo vs homofilia.",
+      "latest_evidence_summary": "Educación, valores e instituciones tienen múltiples ejes de semejanza.",
       "last_revised_at": "2026-10-28"
     },
     {
@@ -148,18 +157,21 @@
       "rationale": "Resultados de cita/like no son resultados de relación consolidada ni mercado español; cohortes, plataformas y selección son diferentes.",
       "evidence_sources": [
         "SRC008",
-        "SRC020"
+        "SRC020",
+        "SRC039",
+        "SRC040"
       ],
-      "last_update_id": "U015",
+      "last_update_id": "U034",
       "uncertainty": "Not probabilistically calibrated; evidence heterogeneous and some sources only metadata",
       "next_falsifier_or_test": "Independent prospective data with matched risk set, competent adversarial controls and documented sample selection",
       "numeric_probability": null,
       "CT2_is_not_this_prior": true,
       "update_ids": [
         "U004",
-        "U015"
+        "U015",
+        "U034"
       ],
-      "latest_evidence_summary": "La tecnología de plataforma y atributo afecta patrones de sorting.",
+      "latest_evidence_summary": "Hwang et al. y estudio europeo describen oposición entre ampliación de exposición y filtros por plataforma.",
       "last_revised_at": "2026-10-28"
     },
     {
@@ -321,92 +333,147 @@
       "question": "Intermediación algorítmica altera oportunidades y desigualdad de visibilidad",
       "status": "EXTERNAL_FIELD_EVIDENCE",
       "rationale": "Chen 2023 usa experimento de plataforma y Celdir 2024 documenta sesgo de popularidad; nuestro algoritmo toy tiene objetivos simplificados.",
-      "evidence_sources": [],
-      "last_update_id": null,
+      "evidence_sources": [
+        "SRC032",
+        "SRC034"
+      ],
+      "last_update_id": "U028",
       "uncertainty": "Not calibrated Bayesian probabilities; context and heterogeneity uncertain",
       "next_falsifier_or_test": "Para afirmar mecanismos causales de plataforma específica, conocer ranking real y registros de exposición, con permiso.",
       "numeric_probability": null,
-      "CT2_is_not_this_prior": true
+      "CT2_is_not_this_prior": true,
+      "update_ids": [
+        "U028"
+      ],
+      "latest_evidence_summary": "El ensayo de campo 2023 de Chen compara recomendaciones bilaterales y cobertura en plataforma, y Celdir presenta sesgo de popularidad.",
+      "last_revised_at": "2026-10-28"
     },
     {
       "id": "P-CULTURAL-RULES",
       "question": "Normas relacionales e instituciones modulan mecanismos de matching",
       "status": "THEORETICALLY_SUPPORTED",
       "rationale": "Kalmijn y Fuhse-Gondal resaltan intervención de terceros, proximidad, campo social y normas culturalmente situadas.",
-      "evidence_sources": [],
-      "last_update_id": null,
+      "evidence_sources": [
+        "SRC030",
+        "SRC031",
+        "SRC035"
+      ],
+      "last_update_id": "U026",
       "uncertainty": "Not calibrated Bayesian probabilities; context and heterogeneity uncertain",
       "next_falsifier_or_test": "Comparar instituciones/entornos con reglas medibles, evitando reduccionismo status-universal.",
       "numeric_probability": null,
-      "CT2_is_not_this_prior": true
+      "CT2_is_not_this_prior": true,
+      "update_ids": [
+        "U026"
+      ],
+      "latest_evidence_summary": "Preferencias, terceras partes, proximidad, significado cultural e institucionalización explican distintas vías de enlace.",
+      "last_revised_at": "2026-10-28"
     },
     {
       "id": "P-IDEATIONAL",
       "question": "Valores, planes familiares y actitudes importan más allá del status socioeconómico",
       "status": "THEORETICALLY_SUPPORTED",
       "rationale": "Wang 2026 documenta creciente atención a sorting ideacional, sin datos nuevos en el review.",
-      "evidence_sources": [],
-      "last_update_id": null,
+      "evidence_sources": [
+        "SRC036"
+      ],
+      "last_update_id": "U031",
       "uncertainty": "Not calibrated Bayesian probabilities; context and heterogeneity uncertain",
       "next_falsifier_or_test": "Encuestas de valores e intenciones y datos de citas vinculados, perspectiva longitudinal.",
       "numeric_probability": null,
-      "CT2_is_not_this_prior": true
+      "CT2_is_not_this_prior": true,
+      "update_ids": [
+        "U031"
+      ],
+      "latest_evidence_summary": "Wang 2026 introduce valores, intención reproductiva, roles, proyectos y creencias más allá de status.",
+      "last_revised_at": "2026-10-28"
     },
     {
       "id": "P-BOUNDED",
       "question": "Abundancia de opciones y limitaciones cognitivas cambian la forma de evaluar",
       "status": "EXTERNAL_EMPIRICAL_INDICATION",
       "rationale": "Lenton y Francesconi 2010 reportan señales de preferencia por atributos rápidamente evaluables bajo muchas opciones.",
-      "evidence_sources": [],
-      "last_update_id": null,
+      "evidence_sources": [
+        "SRC038"
+      ],
+      "last_update_id": "U033",
       "uncertainty": "Not calibrated Bayesian probabilities; context and heterogeneity uncertain",
       "next_falsifier_or_test": "Manipulación aleatoria de volumen de opciones con registros de decisión/tiempo.",
       "numeric_probability": null,
-      "CT2_is_not_this_prior": true
+      "CT2_is_not_this_prior": true,
+      "update_ids": [
+        "U033"
+      ],
+      "latest_evidence_summary": "Lenton/Francesconi 2010 analizan 84 speed datings y atención a atributos simples al aumentar opciones.",
+      "last_revised_at": "2026-10-28"
     },
     {
       "id": "P-ORIENTATION",
       "question": "Mercado heterosexual binario agota todos los tipos de elección de pareja",
       "status": "REJECTED_SCOPE",
       "rationale": "Revisiones recientes incluyen uniones diversas y minorías sexuales; heterosexual sample no transporta a orientaciones y redes distintas.",
-      "evidence_sources": [],
-      "last_update_id": null,
+      "evidence_sources": [
+        "SRC037"
+      ],
+      "last_update_id": "U032",
       "uncertainty": "Not calibrated Bayesian probabilities; context and heterogeneity uncertain",
       "next_falsifier_or_test": "Implementar grafo general de compatibilidad orientaciones con datos consensuados y controles de visibilidad.",
       "numeric_probability": null,
-      "CT2_is_not_this_prior": true
+      "CT2_is_not_this_prior": true,
+      "update_ids": [
+        "U032"
+      ],
+      "latest_evidence_summary": "Lundquist et al. 2024 trata mercados raciales y tecnologías, incluyendo variación de uniones y orientaciones.",
+      "last_revised_at": "2026-10-28"
     },
     {
       "id": "P-CROSS-STAGE",
       "question": "Homogamia por grupo observada en parejas identifica el mecanismo psicológico",
       "status": "REJECTED_IDENTIFICATION",
       "rationale": "El matching observado es selección multietapa; oportunidades y reciprocidad pueden generar mismo patrón final con distinto mecanismo.",
-      "evidence_sources": [],
-      "last_update_id": null,
+      "evidence_sources": [
+        "SRC030",
+        "SRC032",
+        "SRC039",
+        "SRC040"
+      ],
+      "last_update_id": "U035",
       "uncertainty": "Not calibrated Bayesian probabilities; context and heterogeneity uncertain",
       "next_falsifier_or_test": "Comparar probabilidades condicionales y universo de riesgo por etapa con información temporal.",
       "numeric_probability": null,
-      "CT2_is_not_this_prior": true
+      "CT2_is_not_this_prior": true,
+      "update_ids": [
+        "U035"
+      ],
+      "latest_evidence_summary": "Preferencias, selección por terceros y plataformas intervienen en distintas etapas; pareja final condiciona múltiples colisionadores.",
+      "last_revised_at": "2026-10-28"
     },
     {
       "id": "P-FEEDBACK",
       "question": "Feedback informativo sobre popularidad puede alterar umbrales y autopresentación",
       "status": "EXPERIMENTALLY_SUPPORTED_IN_CONTEXT",
       "rationale": "Shi et al. 2025 reportan diferencias entre información de popularidad comparativa y absoluta, no decremento público de reputación.",
-      "evidence_sources": [],
-      "last_update_id": null,
+      "evidence_sources": [
+        "SRC033"
+      ],
+      "last_update_id": "U029",
       "uncertainty": "Not calibrated Bayesian probabilities; context and heterogeneity uncertain",
       "next_falsifier_or_test": "Randomizar tipos de feedback y observar cambio en preferencias antes/después, no inferir δ reputacional.",
       "numeric_probability": null,
-      "CT2_is_not_this_prior": true
+      "CT2_is_not_this_prior": true,
+      "update_ids": [
+        "U029"
+      ],
+      "latest_evidence_summary": "Shi et al. 2025 informa que feedback relativo de popularidad altera selectividad y autopresentación en dos ensayos de campo.",
+      "last_revised_at": "2026-10-28"
     }
   ],
   "audit": {
     "all_priors_linked": true,
-    "update_events": 25,
-    "source_ids_linked": 29,
-    "registered_sources": 29,
-    "last_history_commit": "3e7e847f355d09a51a59308190b7ae61ecf27364",
+    "update_events": 36,
+    "source_ids_linked": 41,
+    "registered_sources": 41,
+    "last_history_commit": "e73db5e3a682a45aa71bad79ce167212884243bd",
     "counts_as_new_AB_cycle": false
   }
 }
