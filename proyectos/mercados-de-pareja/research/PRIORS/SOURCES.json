@@ -3,7 +3,7 @@
   "project": "mercados-de-pareja",
   "date": "2026-10-28",
   "scope": "Retrospective provenance backfill from repository reports plus N56/N57 publisher audit. Original data never copied; not systematic or claim of accessing raw data for bibliography.",
-  "source_count": 55,
+  "source_count": 58,
   "sources": [
     {
       "id": "SRC001",
@@ -1093,7 +1093,59 @@
       "falsifier": "Run independent open logs with identically defined opportunity and like history; compare algorithms under identical information and non-synthetic outcomes.",
       "verified_at": "2026-10-28",
       "raw_microdata_read": false
+    },
+    {
+      "id": "SRC056",
+      "title": "Arias-Sarah et al. (2024), Aligning the smiles of dating dyads causally increases attraction, PNAS",
+      "canonical_url": "https://doi.org/10.1073/pnas.2400369121",
+      "primary_pdf": "https://neuro-team-femto.github.io/articles/2024/arias_pnas_2024.pdf",
+      "cycle_ids": [
+        "N80"
+      ],
+      "source_type": "PUBLISHED_PEER_REVIEWED_RANDOMIZED_WITHIN_PERSON_DYAD_STUDY",
+      "publication_date": "2024-10-28 online",
+      "what_it_contributes": "Original paper PDF text pp 2, 3, 7, 8: 31 single heterosexual volunteers age 20-27 in 60 video speed-date dyads, 4 × 4-minute dates each, round-robin batches, crossed manipulated increase/decrease perceived partner smiles (two congruent, two incongruent), pre/post 7-point ratings, social relation model controlling actor and partner factors. Authors report strongest attraction effect in both-increased smiles relative incongruent mixed, not generic temporal synchrony; manipulation is constant offset rather than time-series synchronization. Author-reported chi-square interaction χ²(3)=9.7 P=.001 and multiple comparison d>.55.",
+      "limits": "Sample 31 clustered volunteers, small, heterosexual/video-only, subjective rating not actual stable relationship; no own replication. Video filter levels changed permanently over each 4 minute date, not dynamically synchronized expressions. Original χ²(3)=9.7 P=.001 is numerically inconsistent for df3: chi2_sf(9.7,3)≈.0213; df1≈.00184; adjacent independent test χ²(3)=.77 P=.37 similarly appears df misprint. Treat as a potential reporting inconsistency requiring author/source verification, not refutation or identified error of code.",
+      "data_reuse_rights": "Public article CC BY-NC-ND 4.0 applies to article, separate participant-level archival data rights unverified; no participant records rehosted.",
+      "evidence_access": "PRIMARY_FULL_ARTICLE_PDF_TEXT_READ_AND_PMCHTML_TEXT_CHECKED; PNG_PDF_SCREENSHOT_FAILED_CACHE_MISS; NO_PARTICIPANT_CSV_DOWNLOADED",
+      "independent_study_note": "This 2024 French video lab experiment distinct from Mixmosa and Columbia and the Rios platform; SRC057 references same experiment, not independent replication.",
+      "falsifier": "Repeat crossed increase/decrease smile manipulation, independently pre-registered, in broad consented sample with authentic bilateral acceptance and durable relationship follow-up; compare dyadic interaction effects to competent actor/partner and pre-attraction baselines.",
+      "verified_at": "2026-10-28"
+    },
+    {
+      "id": "SRC057",
+      "title": "Arias-Sarah et al. GitHub original analysis scripts for 2024 PNAS smile manipulation experiment",
+      "canonical_url": "https://github.com/Pablo-Arias/speed_dating",
+      "data_archive": "https://archive.org/details/data_20231023_20231023",
+      "cycle_ids": [
+        "N80"
+      ],
+      "source_type": "ORIGINAL_ANALYSIS_CODE_INDEPENDENT_ACCESS_NOT_INDEPENDENT_SAMPLE",
+      "what_it_contributes": "README and original R scripts behavior_GLMM_analysis.R (Git blob SHA 4e6d6476...) and synchrony_glmm.R (Git blob SHA 530e132d...) fetched via GitHub connector. R behavior model uses srm_post_norm_for_glmm.csv with factor participant_condition × other_condition plus random intercepts participant_nb and interacting_partner, with reported endpoint 'seeing_again' (romantic attraction), and code compares additive vs interaction. Synchrony script reads mi_df_py_feat_happiness_all_manipulated_pairs.csv. Raw datasets are NOT included in GitHub and README sends to Internet Archive.",
+      "limits": "Archive.org landing could not be opened through web; container DNS inaccessible; no raw CSV, hashes, actual rows, independent run or clean-clone reproduction; R packages/environment not frozen by our project; original analysis data use rights at archive require direct inspection.",
+      "evidence_access": "PRIMARY_AUTHOR_GITHUB_README_AND_TWO_R_CODE_FILES_READ; LINK_TO_ARCHIVE_ONLY_DATA_NOT_READ",
+      "data_reuse_rights": "No license/readme granted for participant-level archive in this audit; code's own reuse license not separately inspected; do not redistribute.",
+      "same_study_as": "SRC056",
+      "falsifier": "Download documented archival CSV with authentic hashes and legally appropriate rights and rerun original GLMM against source manuscript.",
+      "verified_at": "2026-10-28"
+    },
+    {
+      "id": "SRC058",
+      "title": "FReDA/pairfam Campus Use File dataset description, GESIS ZA8756 release 1.0.0 (2024)",
+      "canonical_url": "https://doi.org/10.4232/1.14197",
+      "primary_pdf": "https://www.pairfam.de/fileadmin/user_upload/redakteur/publis/Dokumentation/pairfam_Campus_Use_File_Data_Set_Description_Release_v1.0.0.pdf",
+      "cycle_ids": [
+        "N80"
+      ],
+      "source_type": "AUTHORITATIVE_DATA_USE_SCOPE_RESTRICTION_NOT_INDEPENDENT_COHORT",
+      "what_it_contributes": "Original 28-page manual text, pp. 4-5: Campus Use Files are reduced subsample and selected variables from pairfam SUF, for teaching purposes, explicitly not recommended for ordinary scientific publications; SUF for scientific analysis requires data use agreement after GESIS authorization. CUF source ZA8756 and pairfam SUF ZA5678 have overlapping source cohort, not independent samples.",
+      "limits": "PDF screenshot attempt returned cache miss (pdf extracted text only); actual CUF nor SUF participant data not accessed; do not treat teaching file as publishable validation or as separate sample.",
+      "data_reuse_rights": "Teaching-only CUF scope; SUF research-use controlled license not obtained. Distinguish teaching exercise vs scientific article.",
+      "evidence_access": "PRIMARY_PDF_TEXT_EXTRACT_READ; SCREENSHOT_NOT_AVAILABLE; NO_CUF_OR_SUF_DATA",
+      "same_study_as": "SRC051/SRC052",
+      "falsifier": "Obtain valid SUF agreement and data for approved purpose and inspect wave/censoring before statistical inferencing.",
+      "verified_at": "2026-10-28"
     }
   ],
-  "last_added_campaign": "N79"
+  "last_added_campaign": "N80"
 }
