@@ -1,4 +1,4 @@
-# CURRENT · Mercados de pareja · 28/10/2026 · auditoría multiactor N78 · R5
+# CURRENT · Mercados de pareja · 28/10/2026 · auditoría post hoc tras N78 · STOP_R5
 
 **Investigador:** Alejandro Panera Pascual. **Rama:** `research/ab-r-mercados-pareja-20261028` (no fusionada a main). Meta del programa: explicación socioecológica multietapa de emparejamiento y su simulación con hipótesis falsables. **La afirmación de superioridad empírica y originalidad frente al estado del arte NO está acreditada**; el mecanismo genérico de homogamia sin homofilia inicial tiene antecedentes fuertes.
 
@@ -20,8 +20,8 @@
 - Reproducibilidad interna exacta, **clon limpio independiente no verificado**, sin muestras humanas procesadas.
 
 ## Fuentes y priors
-- [SOURCES.json](research/PRIORS/SOURCES.json): **52 fuentes** (SRC051 y SRC052 documentan una única cohorte pairfam; no son muestras independientes). SRC047 E218862V1 actualizado tras lectura de inventario original; SRC048 Stanford HCMST 2017–2022; SRC049 ICPSR 38873 (**la misma cohorte que SRC048**); SRC050 transición ICPSR.
-- [PRIORS.json](research/PRIORS/PRIORS.json): **26 priors cualitativos**, uno nuevo sobre elegibilidad longitudinal aún sin microdatos. [UPDATES.json](research/PRIORS/UPDATES.json): **55 revisiones**; once últimas U045–U055 incluidas NO_CHANGE_WITH_REASON cuando no hay evidencia suficiente.
+- [SOURCES.json](research/PRIORS/SOURCES.json): **53 registros de fuente** (SRC051/SRC052 = misma cohorte pairfam; SRC002/SRC053 = mismo artículo/archivo original Hitsch; SRC048/SRC049 = mismo HCMST 2017). SRC047 E218862V1 actualizado tras lectura de inventario original; SRC048 Stanford HCMST 2017–2022; SRC049 ICPSR 38873 (**la misma cohorte que SRC048**); SRC050 transición ICPSR.
+- [PRIORS.json](research/PRIORS/PRIORS.json): **26 priors cualitativos**, sin microdatos longitudinales nuevos. [UPDATES.json](research/PRIORS/UPDATES.json): **58 revisiones** (U056–U058 documentales post hoc sin nuevo ciclo), incluidas NO_CHANGE_WITH_REASON cuando no hay evidencia suficiente.
 - **N76/N77/N78 — material humano nuevo:** ninguna fila de microdatos procesada. Se comprobaron oficialmente carpeta AEA/OpenICPSR E218862V1 (Code/Data/Exhibits/Temp/README) y diseño HCMST 2017, 2020, 2022 (3510/2107/1722 personas), pero descargas de README/datasets y codebook fallidas por cache/red/DNS. **HCMST es encuesta longitudinal individual, no log de swipes bilaterales**, útil únicamente para etapa duración. Archivo y licencias específicas no verificados; Stanford tiene acuerdo público de uso explícito.
 
 ## AB-DECIDE / R5
@@ -40,3 +40,11 @@
 - SRC051/SRC052 (un mismo panel, NO dos pruebas independientes); nueva entrada P-DYADIC-PANEL, revisiones U053–U055 cualitativas. Registro fuentes 52, priors 26, eventos 55.
 - La respuesta de partners reales aporta perspectiva de dos lados de un vínculo ya existente, pero **no** el universo de candidatos expuestos ni dos decisiones independientes de rechazo/aceptación; no demuestra homogamia sin homofilia ni estatus decreciente por rechazo.
 - Reintentos archivísticos E218862V1: README y Data/ devuelven HTTP 403 y ZIP completo remite a identificación ICPSR. No hay descarga legal completada. **R5: STOP hasta acceso documentado a los datos bajo condiciones de uso y diseño discriminante contra baseline competente.** Grado 0/3; ningún N1/N2/N3 nuevo.
+
+## Auditoría de acceso posterior a N78 · no se consume N79
+
+- [Informe documental y verificación de accesos](research/ABR_NO_NEW_CYCLE_ACCESS_REVIEW_20261028/REPORT.md), [estado íntegro](research/ABR_NO_NEW_CYCLE_ACCESS_REVIEW_20261028/STATUS.json), [contrato N79 prospectivo sin ejecución](research/ABR_NO_NEW_CYCLE_ACCESS_REVIEW_20261028/N79_CANDIDATE_PREREG.json).
+- Se reintentó legalmente acceder a E218862V1, HCMST v2.2 y Essex XLSX, sin bytes descargados; pairfam SUF requiere registro. No hay nuevos outcomes humanos ni inferencia causal. La posibilidad de acceso institucional o entrega de originales sigue sin comprobarse.
+- La fuente AER **Hitsch/Hortaçsu/Ariely 2010** fue inspeccionada visualmente, Tabla 4, p.149: **385.470/172.946** perfiles visitados y **49.223/14.178** correos iniciales por hombres/mujeres, **2.130/914** primeros contactos que desembocan en intercambio de datos de contacto. Estas cifras son del estudio publicado, no resultados propios ni «parejas duraderas». El repositorio de replicación oficial, enlazado por AEA, es [E112322V1](https://doi.org/10.3886/E112322V1); carpeta `20080317_data` y `LICENSE.txt` figuran, pero **no** se inspeccionaron ficheros interiores, licencia ni microdatos. Un servidor dev con DOI distinto no es cohorte independiente.
+- SRC002 y SRC048 enriquecidas; SRC053 agregada como **otro registro documental del mismo estudio Hitsch**, no tercera cohorte. U056–U058 auditan P-OPPORTUNITY, P-NOVELTY y P-LONGITUDINAL-ELIGIBILITY sin producir evidencia causal ni mover CT2. Totales: **53 registros / 26 priors / 58 revisiones**.
+- **Ejecución en esta continuación: 0 ciclos AB nuevos, 0 inválidos, 0 planning, 0 corridas sintéticas.** Último N78 válido; N79–N86 **ocho plazas sin iniciar**. CT2 sigue **7/100**; gráfica vigente [N77→N78, completa y zoom](research/ABR_PAIRFAM_GATE_20261028/CT2.svg). No añadir un punto N79 ficticio. La investigación permanece `STOP_R5` hasta acceso original legal y prueba verdaderamente discriminante prerregistrada.
