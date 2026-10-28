@@ -19,6 +19,14 @@
 - La regla metodológica R5 permite `STOP` cuando no hay evidencia nueva; si el investigador **ordena expresamente cumplir un mínimo o prohíbe STOP para un bloque particular**, dentro de ese bloque optar por DRIFT/BRANCH/PIVOT, pero no inventar ejecución, resultados ni grado científico para cubrirlo. Explicar si los instrumentos impiden honestamente ejecutar los ciclos.
 - Si el usuario dispone una fase de `PLANNING_AB_ONLY`, cumplir A–J documental por ciclo y etiquetarla; no fingir datos empíricos.
 
+## 1 bis. Acción interactiva obligatoria para continuar (acuerdo expreso del investigador, 28/10/2026)
+
+Además de la cláusula escrita de solicitud de ciclos, **cada respuesta o informe AB al usuario termina con al menos un botón/acción de continuación realmente operativo**, cuando el canal admita acciones. El botón debe emitir un nuevo mensaje explícito del usuario, con objetivo, proyecto, rama, presupuesto y método; **no debe figurar como adorno sin acción, ni iniciar trabajo por sí solo antes de la pulsación**.
+
+Si existe saldo ya aprobado, el botón principal es **«Continuar los X ciclos autorizados»** y no vuelve a solicitar autorización. Si el presupuesto está agotado y hay un cuello de botella resoluble, el botón ofrece autorizar una propuesta justificada de **20–45 ciclos** con modo CONTINUE/BRANCHING/DRIFT/PIVOT y falsadores; la autorización solo sucede tras la acción humana. Si existe **STOP_R5 con plazas pendientes**, el botón sirve para reexaminar la condición de desbloqueo, sin obligar a consumir esas plazas.
+
+La petición debe distinguir ciclos empíricos completos, verificaciones documentales, planificación, intentos inválidos y plazas no iniciadas. Mostrar siempre el estado escrito aunque el control interactivo no sea compatible con un cliente; entonces proporcionar una alternativa de continuación utilizable. Esta regla UX no cambia los niveles 0–3, ni el prior, ni el diseño A–J. Registrar la adopción como cambio de protocolo de interacción, **0 ciclos de investigación**.
+
 ## 2. Escala de confianza CT2, 1–100 (O4)
 
 CT2 pregunta: «¿Cuánta confianza fundada existe en que **seguir esta línea científica identificada** permita llegar a **2/3**?». **No es una probabilidad calibrada**.
