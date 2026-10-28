@@ -1,0 +1,93 @@
+{
+  "source": "RManLuo/MotifGNN public author archive SSJY",
+  "sha256_original_zip": "23cff03451b13f94354d875e777f60e1c63224829f42b8adf9d73d7563812e24",
+  "zip_bytes": 87463480,
+  "observed_directed_events": 232954,
+  "unique_users_in_edges": 36432,
+  "actions": {
+    "click": 184291,
+    "msg": 48663
+  },
+  "all_action_counts": {
+    "rec": 8366058,
+    "click": 184291,
+    "msg": 48663
+  },
+  "excluded_actions": {
+    "rec": 8366058
+  },
+  "observed": {
+    "unique_arcs": 177413,
+    "reciprocated_directed_arcs": 104,
+    "mutual_unordered_pairs": 52,
+    "reciprocal_arc_fraction": 0.0005862028149008246,
+    "event_self_loops": 67,
+    "duplicate_event_arcs": 55474
+  },
+  "null": {
+    "B": 30,
+    "seed": 20261028,
+    "method": "exact in/out event degree stub permutation",
+    "reciprocal_rate_mean": 0.00016745945209163513,
+    "reciprocal_rate_min": 0.00006942214740057447,
+    "reciprocal_rate_max": 0.00023428145011540532,
+    "reciprocal_rate_sd": 0.00004159045898051551,
+    "p_upper_monte_carlo": 0.03225806451612903,
+    "null_rates": [
+      0.00021689903783586817,
+      0.00017352826341590386,
+      0.00016483397314941332,
+      0.0001648482745157582,
+      0.00020829626672336953,
+      0.00014750350320820118,
+      0.00013017951755470795,
+      0.00017351170336439193,
+      0.00021689621516104545,
+      0.0001561720495412446,
+      0.00008674080113803932,
+      0.0002081797284989374,
+      0.00013014902062861977,
+      0.00013016822073059085,
+      0.00014753358558683652,
+      0.00006942214740057447,
+      0.00012150562831428299,
+      0.0001561652749159527,
+      0.00013879431116817098,
+      0.00021688774757736386,
+      0.00015622152211836385,
+      0.00016484398384528957,
+      0.00011277478008917883,
+      0.00022560925345030305,
+      0.00020827457531512377,
+      0.00018226872485668037,
+      0.00019961898810531205,
+      0.00018208460864815184,
+      0.00019959040577597278,
+      0.00023428145011540532
+    ],
+    "null_self_loops_mean": 5.933333333333334,
+    "null_duplicate_arcs_mean": 2444.3333333333335
+  },
+  "dataset_train_labels": {
+    "rows": 15000,
+    "labels_0": 7500,
+    "labels_1": 7500,
+    "same_label_as_full_graph_reciprocity": 7909,
+    "full_graph_reciprocal_fraction_in_sample": 0.027266666666666668
+  },
+  "dataset_test_labels": {
+    "rows": 3750,
+    "labels_0": 1875,
+    "labels_1": 1875,
+    "same_label_as_full_graph_reciprocity": 1973,
+    "full_graph_reciprocal_fraction_in_sample": 0.026133333333333335
+  },
+  "claim_limit": "Reverse click/msg only, rec excluded. The meaning of rec is unverified and is not assumed to be opportunity or rejection. No no-like, timestamps or lasting couples; no causal ESBM mechanism identified.",
+  "data_licence": "Public author link, standalone license absent; aggregates only, raw data not republished.",
+  "clean_clone": "NOT_TESTED",
+  "result_local_sha256": "81d1c5aaf530884368e8f215a2711dd22fb6d95884eb3a3c627def98ffa231a2",
+  "executed_source_git_blob": "50771ebb625dccb8e8ae1344b5cc1d0ca3c3ab36",
+  "repair_commit": "9b760af378e9855cf63e6359b2602529063b314d",
+  "original_invalid_attempt": "INCIDENT_INVALID_ATTEMPT.json",
+  "stage": "REPAIRED_EXPLORATORY_NOT_FRESH_HOLDOUT"
+}
