@@ -1,3 +1,11 @@
+# Codex · T008 suite completa Linux · 28/10/2026
+
+En un Linux Alpine temporal ejecutado en QEMU, con checkout íntegro `b0344d1`, Codex ejecutó la suite Python completa: **651 pruebas y 28 subtests aprobados, sin fallos ni omisiones**, después de conservar dos resultados negativos debidos a configuración de loopback y ausencia inicial de tzdata. La red exterior estuvo desactivada durante las pruebas y el checkout se ejecutó con UID 1000. [T008_RESULTADO](../tareas_codex/T008_RESULTADO.md) describe entorno, comandos, logs y límites. Este resultado no garantiza compatibilidad del almacén privado con Windows ni equivale a validación de lanzamiento.
+
+El texto anterior que dice que T008 estaba pendiente se conserva como historia. La comprobación de fuentes originales T005 sigue bloqueada; V4 36,90 %, CT2 29/100 y gates 0/6 no cambian.
+
+---
+
 # Codex · replay canónico Atlas 35 lotes · 28/10/2026
 
 El checker Python oficial pasó sobre el checkout `9d0ef84`: **35 lotes, 63 nodos**, SHA-256 canónico `bff6978684b0d6d4cdfcd8211656750430b956f6ebb92c0faeff042e13758d81`. El replay confirmó 81 relaciones, 201 runs, 44 incidencias y 370 operaciones; gates 0/6. [T008_AVANCE_ATLAS35](../tareas_codex/T008_AVANCE_ATLAS35.md) conserva comando, logs y límites. El estado del repositorio puede avanzar mientras ChatGPT trabaja; volver a comprobar el HEAD antes de actualizarlo.
