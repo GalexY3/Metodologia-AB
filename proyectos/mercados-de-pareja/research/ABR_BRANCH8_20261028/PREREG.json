@@ -1,0 +1,96 @@
+{
+  "schema": "ab.research.campaign.v1",
+  "id": "ABR-BRANCH8-20261028",
+  "date": "2026-10-28",
+  "authorization": "Explicit user authorization of BRANCHING 8 in current conversation",
+  "parent": "ABR-MATE10-20261028",
+  "authorized": 8,
+  "branch": "research/ab-r-mercados-pareja-20261028",
+  "method": "AB 3.2.1 + O2/O3/O4/O5/O6/O7",
+  "scientific_hypothesis": "homogamia de valor puede emerger sin homofilia; contribución científica original no acreditada",
+  "previous_exposure": "MATE10 and previous chat experiments, all exploratory; NO independent confirmatory evidence",
+  "primary_outcomes": [
+    "r Pearson entre valor inicial hombre/mujer solo emparejados",
+    "coverage global y por sexo",
+    "mediana diferencia de valores iniciales",
+    "tiempo hasta emparejamiento por decil",
+    "blocking pairs sobre preferencias finales",
+    "indicadores secundarios específicos"
+  ],
+  "seeds": [
+    202,
+    404,
+    606
+  ],
+  "coding_rules": "Compare matched populations and same seed where feasible, but changing trajectories yields stochastic differences; no inference from 3 seeds as independent field replication.",
+  "cycles": [
+    {
+      "id": "N01",
+      "kind": "EXPERIMENTAL_AB",
+      "A": "Comparar selección bilateral adaptativa con deferred acceptance estable",
+      "B": "H0: la homogamia se explica por preferencias y algoritmo estable sin dinámica adaptativa; H1: adaptación altera sorting, cobertura, estabilidad",
+      "C": "Con la misma población N=400 (200/200), valor de pareja con utilidades 60/40 + ruido fijo diádico sd=0.08 (sin homofilia), DA hombres proponentes vs 180 rondas de swipe simultáneo; mismo outside option=0.05, emparejar solo con utilidad >=0.05; 3 semillas",
+      "D": "Calcular r de valores consensuados iniciales, cobertura, mediana gap, fracción de pares bloqueantes en el conjunto emparejado; comprobar estabilidad DA exhaustiva. Si no se mantiene el mismo conjunto de oportunidades, declararlo diferencia no identificada."
+    },
+    {
+      "id": "N02",
+      "kind": "EXPERIMENTAL_AB",
+      "A": "Separar duración, exposición y rechazo en hazard por deciles",
+      "B": "H0: composición por tiempo produce ordenamiento sin actualización por rechazo; H1: feedback altera distribución de tiempos y q",
+      "C": "N=1200, 600/600, T=180, beta 0 vs 0.01, q0 0.9, fatigue 0.0025, mismas semillas y preferencias 60/40; registrar hazard primeras 60 vs últimas 60 rondas por decil, q medianos de agentes activos en t=30,90,150",
+      "D": "Reportar cobertura, r valor, riesgo de match por estratos, sin interpretar los shocks de rechazo como aprendizaje empírico."
+    },
+    {
+      "id": "N03",
+      "kind": "EXPERIMENTAL_AB",
+      "A": "Distinguir tamaño local y composición/opciones",
+      "B": "H0: tras igualar oportunidades el tamaño no importa; H1: selección local genera heterogeneidad residual",
+      "C": "N=1200, 600/600, pools 100, 300, 1200 con exactamente mitad de cada sexo por pool; rondas 20; rondas asignadas por desplazamiento cíclico para perfiles distintos sin repetición; 3 semillas; mismo objetivo 20 exposiciones programadas por agente, reportar exposición efectiva",
+      "D": "Comparar correlación r, gap, cobertura; no atribuir toda diferencia a geografía real ni a exposición efectiva desigual por salida."
+    },
+    {
+      "id": "N04",
+      "kind": "EXPERIMENTAL_AB",
+      "A": "Contrastar swipe bilateral simultáneo y likes asincrónicos persistentes",
+      "B": "H0: almacenamiento temporal no altera sorting; H1: cambia cobertura y persistencia de candidatos",
+      "C": "N=600, 300/300, 100 ticks; cada agente ve un perfil por tick en orden único predeterminado y el like queda guardado; variantes likes permanentes vs expiran tras 20 ticks, comparar con 100 encuentros bilaterales simultáneos; decrecimiento q por exposición y rechazo observado solo cuando segunda acción resuelve decisión",
+      "D": "Reportar likes enviados, reciprocaciones, matches, r valor y tasas; toda política de rechazo previo es irreversible; verificar unicidad y simultaneidad."
+    },
+    {
+      "id": "N05",
+      "kind": "EXPERIMENTAL_AB",
+      "A": "Pérdida de estatus social visible tras rechazo; visibilidad privada/local/global",
+      "B": "H0: el coste social depende de difusión del rechazo; H1: cambios en distribución y matching dependen del alcance de difusión",
+      "C": "N=600, 300/300, T=150, q0=.9, fatigue=.0025 beta=.01, delta reputation=0.002 por rechazo unilateral. Cuatro modalidades: ninguna, privada al rechazador, difusión aleatoria a 10% del sexo contrario, pública a todos. Reputación observada por cada candidato, base de status constante; no confundir con descenso material de educación/renta.",
+      "D": "Correlación en valor inicial, cobertura, total pérdidas de reputación visibles y gap; pares rechazados por segunda vez no revisan decisión; reportar sensibilidad y alcance estipulado."
+    },
+    {
+      "id": "N06",
+      "kind": "PLANNING_AB_ONLY",
+      "A": "Calibración por edad/sexo/estado de pareja y actividad en España",
+      "B": "Resident population ≠ active heterosexual single online dating users",
+      "C": "Revisar INE ECP 1-7-2026 por sexo y edades 20–39, identificar fuente, denominador faltante y sesgo, documentar distribución sólo con datos comprobados; no fabricar una población Tinder",
+      "D": "Verificación documental; no análisis de microdatos si no hay acceso."
+    },
+    {
+      "id": "N07",
+      "kind": "PLANNING_AB_ONLY",
+      "A": "Línea base observacional española sobre homogamia educativa",
+      "B": "Parejas convivientes difieren de matches; diagonal educativa puede explicarse por distribuciones marginales",
+      "C": "Localizar tabla real INE por combinaciones educativas, reportar únicamente cifras verificadas con fecha y definición y cualquier problema de matriz cruzada, y preparar control por permutación ponderada si datos disponibles",
+      "D": "No inventar microdatos de EPA ni compatibilidad con cohortes digitales."
+    },
+    {
+      "id": "N08",
+      "kind": "PLANNING_AB_ONLY",
+      "A": "Congelar futura prueba confirmatoria y falsadores",
+      "B": "Rivales: matching estático Gale Shapley, sorting por composición, sorting por dinámica, sesgo de selección y reputación simulada",
+      "C": "Preregistrar un único discriminante entre dos modelos competentes y reservar un conjunto verdaderamente externo de datos; si no existe, estado NOT_EXECUTED/PLANNING, y no reclamar confirmación",
+      "D": "Novedad sujeta a literatura Hitsch 2010 y datos de mercado españoles; CT2 sólo por línea y no probabilidad."
+    }
+  ],
+  "status": "PREREGISTERED BEFORE CODE AND EXECUTION",
+  "max_level_claim": "No 2/3 without external independent data, prior art and controls",
+  "counting": "One cycle per question, 5 experiments + 3 documentary/planning; no double-count per seed/condition",
+  "outcome_reporting": "Failures, invalid simulations and nonavailability preserved"
+}
