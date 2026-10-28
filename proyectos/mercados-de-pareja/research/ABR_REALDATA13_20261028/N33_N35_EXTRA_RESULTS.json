@@ -1,0 +1,52 @@
+{
+  "source_script_blob": "fe0e92b61453a150ad71c33846ab8621a35a79e6",
+  "source_dataset_blobs": [
+    "c4aba45888dc07573b6bd12554f73fb57ebb0479",
+    "2820b902bd4a80d57008c03aa0c4e0ff927f6639",
+    "99679f0e33b55099a4a0705810dd9771019554d0"
+  ],
+  "preregistered": "PREREG.json",
+  "analysis_exploratory": true,
+  "results": {
+    "N33": {
+      "eligible_dates": 1890,
+      "mutual_dates": 259,
+      "events_with_both_measured": 30,
+      "observed_popularity_correlation": -0.01586965583179132,
+      "all_date_popularity_correlation": -0.047950175380124985,
+      "null_permutation_reps": 1000,
+      "perm_mean": -0.05450827766741035,
+      "perm_q025": -0.1643525504680302,
+      "perm_q975": 0.06853348556469194,
+      "perm_lower_p": 0.7432567432567433,
+      "perm_upper_p": 0.25774225774225773,
+      "warning": "LOO scores use other dates from same event; conditional on observed exposure; event matching shuffle does not preserve individual yes-degree."
+    },
+    "N34": {
+      "interaction_dates": 1895,
+      "observed_directional_swipes": 4437,
+      "expected_directional_date_records": 3790,
+      "extra_swipes_not_part_of_interactions": 647,
+      "unknown_interaction_origins": "The additional swipes may not reflect complete paired dates; no assertions about scope",
+      "distinct_users_across_dates": 410
+    },
+    "N35": {
+      "events": 30,
+      "overall_event_conditional_mutual_excess": -29.25597055611101,
+      "per_date_excess": -0.015438506889768343,
+      "leave_one_event_out_excess_range": [
+        -0.018051799866800115,
+        -0.013893619294588365
+      ],
+      "participant_events": {
+        "one_event": 366,
+        "multiple_events": 44,
+        "max_events": 7
+      },
+      "warnings": [
+        "Observed date edges not random sample of all eligible people, event-wise shuffling is not a randomization experiment",
+        "Repeated users create cross-event dependence; event-level bootstrap CI not robust alone"
+      ]
+    }
+  }
+}
