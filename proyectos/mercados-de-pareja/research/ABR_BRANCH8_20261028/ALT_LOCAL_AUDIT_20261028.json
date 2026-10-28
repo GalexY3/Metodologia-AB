@@ -1,0 +1,52 @@
+{
+  "role": "Independent implementation cross-check of authorized eight-cycle campaign, NOT extra authorized cycles",
+  "source_code": "experiment.py.gz.b64",
+  "source_sha256": "39c693a8645b2b305417425cdd6ff9e892974b5d37e931b8c97cc444da4db220",
+  "source_commit": "d68c9f54b166233348fd9c29db861994d390ec21",
+  "data": "RUNS_COMPACT.csv",
+  "data_commit": "7f9886b055f870285aeec0ef3a7c29add9c75e6e",
+  "seeds": [
+    202,
+    404,
+    606
+  ],
+  "run_count": 42,
+  "prereg": "PREREG.json",
+  "n01": {
+    "da_r": 0.943582,
+    "da_coverage": 0.998333,
+    "da_blocking_pairs": 0,
+    "swipe_r": 0.85821,
+    "swipe_coverage": 0.856667,
+    "swipe_blocking_pairs_mean": 1960.667
+  },
+  "n02": {
+    "fatigue_only_coverage": 0.543333,
+    "feedback_coverage": 0.715556
+  },
+  "n03": {
+    "matched_coverage_low": 0.013333,
+    "matched_coverage_high": 0.015556,
+    "conclusion": "INCONCLUSIVE_DUE_TO_FEW_PAIRS"
+  },
+  "n04": {
+    "simultaneous_coverage": 0.206667,
+    "async_persistent_coverage": 0.125556,
+    "async_expiring_coverage": 0.093333,
+    "comparability": "Different opportunity counting and temporal information"
+  },
+  "n05": {
+    "no_reputation_coverage": 0.608889,
+    "private_coverage": 0.608889,
+    "local_coverage": 0.597778,
+    "global_coverage": 0.551111,
+    "negative_control": "Private loss not observable beyond rejector; identical outcomes to no reputation"
+  },
+  "audit": {
+    "rerun_sha256_identical": true,
+    "github_gzip_fnv32_verified": true,
+    "clean_clone_verified": false,
+    "external_replication": false
+  },
+  "parallel_source_conflict": "Another code implementation SHA256 a4c4833535975ee613c9c9459200283990ac2309abf5514dc509cdf2d2e54b22 appeared on same branch as SOURCE_FREEZE.json at 55fb01f. Do not aggregate these as independent research cycles without provenance reconciliation."
+}
