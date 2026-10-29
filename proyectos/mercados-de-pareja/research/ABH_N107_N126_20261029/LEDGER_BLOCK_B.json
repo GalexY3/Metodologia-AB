@@ -1,0 +1,540 @@
+{
+  "schema": "ABH.A-J.blockB.v1",
+  "date": "2026-10-29",
+  "branch": "research/ab-h-esbm-integrated-20261029",
+  "authorized_this_campaign": 20,
+  "valid_through_N116": 10,
+  "pending": 10,
+  "grade_new": "0/3",
+  "CT2": 7,
+  "science_external_STOP_R5": true,
+  "prereg_commit": "8647c41481704b7add1c0625cbb2dc6eb39c03c8",
+  "source_freeze_commit": "9390617be3beac6ca7cf94252cc152cdf1874948",
+  "runner_freeze_commit": "f2e576018144918ce35ea9f1a3f1dc80a763f291",
+  "result_commit": "56e3bf32fd5027c007f1562fab285fb64602acc4",
+  "cycles": [
+    {
+      "id": "N112",
+      "parent": "N111",
+      "mode": "BRANCH",
+      "D": "new adapter code freeze and test driver freeze before outcomes",
+      "A": {
+        "question": "Implement institutional same-norm/cross-norm encounter preference on shortlisted compatible edges with identical risks and shocks",
+        "unit": "144 fictitious agents, original ESBM 16 ticks, 6 frozen seeds; group norm labels fictitious",
+        "outcome": "in-simulator encounters/pair formation/active stocks and same-group fractions, not causal humans"
+      },
+      "B": [
+        "no effect if label neutral",
+        "same-group prioritization",
+        "cross-group prioritization",
+        "scheduling tie order"
+      ],
+      "C": "6 seeds × 2 ticks × 3 policies (max/same/cross): 36 risk-set disjointness and capacity checks",
+      "D_instrument": {
+        "source": "esbm_schedule_adapter.py",
+        "code_commit": "9390617be3beac6ca7cf94252cc152cdf1874948",
+        "runner_commit": "f2e576018144918ce35ea9f1a3f1dc80a763f291"
+      },
+      "E": {
+        "status": "PASS",
+        "observed": {
+          "id": "N112",
+          "status": "PASS",
+          "checks": 36,
+          "seconds": 4.9
+        },
+        "human_rows": 0
+      },
+      "F": {
+        "baseline": "Strong max/sham control and identical fixed risk sets",
+        "extra": "Exact neutral pair_sham matches pair_max across full outputs two seeds; label-shuffle checks demonstrate intentional dependence."
+      },
+      "G": "Only internal same synthetic 144-agent generator, no human cohort or external replication",
+      "H": {
+        "prior": "P-SCHEDULE-CORRELATION synthetic-only potential update; P-NOVELTY no change",
+        "why": "Group norms and choices parameterized, not empirically measured"
+      },
+      "I": {
+        "grade": "0/3",
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "real_causality": "UNIDENTIFIED",
+        "validation": "TECHNICAL_ONLY"
+      },
+      "J": {
+        "decision": "PASS_NEXT",
+        "next": "N113",
+        "remaining_at_close": 14
+      }
+    },
+    {
+      "id": "N113",
+      "parent": "N112",
+      "mode": "NEGATIVE_CONTROL",
+      "D": "new adapter code freeze and test driver freeze before outcomes",
+      "A": {
+        "question": "Introduce zero-effect pair_sham policy and test exact equality with pair_max",
+        "unit": "144 fictitious agents, original ESBM 16 ticks, 6 frozen seeds; group norm labels fictitious",
+        "outcome": "in-simulator encounters/pair formation/active stocks and same-group fractions, not causal humans"
+      },
+      "B": [
+        "no effect if label neutral",
+        "same-group prioritization",
+        "cross-group prioritization",
+        "scheduling tie order"
+      ],
+      "C": "6 seeds × 2 ticks shared risks exact edge equality; two full trajectories seed101/211 exact 100% outputs as pair_max",
+      "D_instrument": {
+        "source": "esbm_schedule_adapter.py",
+        "code_commit": "9390617be3beac6ca7cf94252cc152cdf1874948",
+        "runner_commit": "f2e576018144918ce35ea9f1a3f1dc80a763f291"
+      },
+      "E": {
+        "status": "PASS",
+        "observed": {
+          "id": "N113",
+          "status": "PASS",
+          "riskset_shams_exact": 12,
+          "longitudinal_shams_exact": 2,
+          "full_run_formed": [
+            71,
+            75
+          ],
+          "seconds": 9.781
+        },
+        "human_rows": 0
+      },
+      "F": {
+        "baseline": "Strong max/sham control and identical fixed risk sets",
+        "extra": "Exact neutral pair_sham matches pair_max across full outputs two seeds; label-shuffle checks demonstrate intentional dependence."
+      },
+      "G": "Only internal same synthetic 144-agent generator, no human cohort or external replication",
+      "H": {
+        "prior": "P-SCHEDULE-CORRELATION synthetic-only potential update; P-NOVELTY no change",
+        "why": "Group norms and choices parameterized, not empirically measured"
+      },
+      "I": {
+        "grade": "0/3",
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "real_causality": "UNIDENTIFIED",
+        "validation": "TECHNICAL_ONLY"
+      },
+      "J": {
+        "decision": "PASS_NEXT",
+        "next": "N114",
+        "remaining_at_close": 13
+      }
+    },
+    {
+      "id": "N114",
+      "parent": "N113",
+      "mode": "MECHANISM",
+      "D": "new adapter code freeze and test driver freeze before outcomes",
+      "A": {
+        "question": "Compare same-norm exposure fractions of same/cross/max at unchanged available agents and eligibility, not claim preference causal effect",
+        "unit": "144 fictitious agents, original ESBM 16 ticks, 6 frozen seeds; group norm labels fictitious",
+        "outcome": "in-simulator encounters/pair formation/active stocks and same-group fractions, not causal humans"
+      },
+      "B": [
+        "no effect if label neutral",
+        "same-group prioritization",
+        "cross-group prioritization",
+        "scheduling tie order"
+      ],
+      "C": "6 seeds × 2 ticks; same-norm and cross-norm should differ on at least 1 risk set; robust check no group excluded by construction and identical encounter capacity count per matching when possible",
+      "D_instrument": {
+        "source": "esbm_schedule_adapter.py",
+        "code_commit": "9390617be3beac6ca7cf94252cc152cdf1874948",
+        "runner_commit": "f2e576018144918ce35ea9f1a3f1dc80a763f291"
+      },
+      "E": {
+        "status": "PASS",
+        "observed": {
+          "id": "N114",
+          "status": "PASS",
+          "different_same_vs_cross": 12,
+          "risksets": 12,
+          "results": [
+            {
+              "seed": 101,
+              "tick": 0,
+              "base": 0.38889,
+              "same": 0.69444,
+              "cross": 0.08333,
+              "contacts_each": 72
+            },
+            {
+              "seed": 101,
+              "tick": 3,
+              "base": 0.375,
+              "same": 0.65278,
+              "cross": 0.22222,
+              "contacts_each": 72
+            },
+            {
+              "seed": 211,
+              "tick": 0,
+              "base": 0.375,
+              "same": 0.625,
+              "cross": 0.22222,
+              "contacts_each": 72
+            },
+            {
+              "seed": 211,
+              "tick": 3,
+              "base": 0.31944,
+              "same": 0.52778,
+              "cross": 0.16667,
+              "contacts_each": 72
+            },
+            {
+              "seed": 307,
+              "tick": 0,
+              "base": 0.23611,
+              "same": 0.54167,
+              "cross": 0.13889,
+              "contacts_each": 72
+            },
+            {
+              "seed": 307,
+              "tick": 3,
+              "base": 0.27778,
+              "same": 0.55556,
+              "cross": 0.13889,
+              "contacts_each": 72
+            },
+            {
+              "seed": 401,
+              "tick": 0,
+              "base": 0.34722,
+              "same": 0.5,
+              "cross": 0.15278,
+              "contacts_each": 72
+            },
+            {
+              "seed": 401,
+              "tick": 3,
+              "base": 0.34722,
+              "same": 0.625,
+              "cross": 0.11111,
+              "contacts_each": 72
+            },
+            {
+              "seed": 503,
+              "tick": 0,
+              "base": 0.34722,
+              "same": 0.52778,
+              "cross": 0.09722,
+              "contacts_each": 72
+            },
+            {
+              "seed": 503,
+              "tick": 3,
+              "base": 0.36111,
+              "same": 0.55556,
+              "cross": 0.18056,
+              "contacts_each": 72
+            },
+            {
+              "seed": 601,
+              "tick": 0,
+              "base": 0.26389,
+              "same": 0.58333,
+              "cross": 0.08333,
+              "contacts_each": 72
+            },
+            {
+              "seed": 601,
+              "tick": 3,
+              "base": 0.23611,
+              "same": 0.47222,
+              "cross": 0.16667,
+              "contacts_each": 72
+            }
+          ],
+          "means": {
+            "base": 0.3229,
+            "same": 0.5718,
+            "cross": 0.147
+          },
+          "seconds": 5.301
+        },
+        "human_rows": 0
+      },
+      "F": {
+        "baseline": "Strong max/sham control and identical fixed risk sets",
+        "extra": "Exact neutral pair_sham matches pair_max across full outputs two seeds; label-shuffle checks demonstrate intentional dependence."
+      },
+      "G": "Only internal same synthetic 144-agent generator, no human cohort or external replication",
+      "H": {
+        "prior": "P-SCHEDULE-CORRELATION synthetic-only potential update; P-NOVELTY no change",
+        "why": "Group norms and choices parameterized, not empirically measured"
+      },
+      "I": {
+        "grade": "0/3",
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "real_causality": "UNIDENTIFIED",
+        "validation": "TECHNICAL_ONLY"
+      },
+      "J": {
+        "decision": "PASS_NEXT",
+        "next": "N115",
+        "remaining_at_close": 12
+      }
+    },
+    {
+      "id": "N115",
+      "parent": "N114",
+      "mode": "DYNAMICS",
+      "D": "new adapter code freeze and test driver freeze before outcomes",
+      "A": {
+        "question": "Check whether institution-dependent meeting composition propagates into different active relationship trajectories",
+        "unit": "144 fictitious agents, original ESBM 16 ticks, 6 frozen seeds; group norm labels fictitious",
+        "outcome": "in-simulator encounters/pair formation/active stocks and same-group fractions, not causal humans"
+      },
+      "B": [
+        "no effect if label neutral",
+        "same-group prioritization",
+        "cross-group prioritization",
+        "scheduling tie order"
+      ],
+      "C": "Two seeds 101/211 x 3 institutions x 16 ticks=6 runs; stock flow, censoring, impressions, formed and active; report heterogeneous signs and no human transport",
+      "D_instrument": {
+        "source": "esbm_schedule_adapter.py",
+        "code_commit": "9390617be3beac6ca7cf94252cc152cdf1874948",
+        "runner_commit": "f2e576018144918ce35ea9f1a3f1dc80a763f291"
+      },
+      "E": {
+        "status": "PASS",
+        "observed": {
+          "id": "N115",
+          "status": "PASS",
+          "full_simulations": 6,
+          "results": [
+            {
+              "seed": 101,
+              "mode": "pair_max",
+              "impressions": 1017,
+              "formed": 71,
+              "dissolved": 51,
+              "active": 20,
+              "same_exposure": 0.3746312684365782,
+              "same_formed": 0.38028169014084506,
+              "gini": 0.1663593903638152
+            },
+            {
+              "seed": 101,
+              "mode": "pair_norm_same",
+              "impressions": 986,
+              "formed": 69,
+              "dissolved": 52,
+              "active": 17,
+              "same_exposure": 0.5801217038539553,
+              "same_formed": 0.6086956521739131,
+              "gini": 0.19164131169709275
+            },
+            {
+              "seed": 101,
+              "mode": "pair_norm_cross",
+              "impressions": 1022,
+              "formed": 67,
+              "dissolved": 53,
+              "active": 14,
+              "same_exposure": 0.16634050880626222,
+              "same_formed": 0.11940298507462686,
+              "gini": 0.18358610567514688
+            },
+            {
+              "seed": 211,
+              "mode": "pair_max",
+              "impressions": 877,
+              "formed": 75,
+              "dissolved": 47,
+              "active": 28,
+              "same_exposure": 0.322690992018244,
+              "same_formed": 0.49333333333333335,
+              "gini": 0.25748289623717224
+            },
+            {
+              "seed": 211,
+              "mode": "pair_norm_same",
+              "impressions": 873,
+              "formed": 75,
+              "dissolved": 47,
+              "active": 28,
+              "same_exposure": 0.5738831615120275,
+              "same_formed": 0.6266666666666667,
+              "gini": 0.25010341097110866
+            },
+            {
+              "seed": 211,
+              "mode": "pair_norm_cross",
+              "impressions": 897,
+              "formed": 72,
+              "dissolved": 45,
+              "active": 27,
+              "same_exposure": 0.1605351170568562,
+              "same_formed": 0.18055555555555555,
+              "gini": 0.2565263842437755
+            }
+          ],
+          "seconds": 9.649
+        },
+        "human_rows": 0
+      },
+      "F": {
+        "baseline": "Strong max/sham control and identical fixed risk sets",
+        "extra": "Exact neutral pair_sham matches pair_max across full outputs two seeds; label-shuffle checks demonstrate intentional dependence."
+      },
+      "G": "Only internal same synthetic 144-agent generator, no human cohort or external replication",
+      "H": {
+        "prior": "P-SCHEDULE-CORRELATION synthetic-only potential update; P-NOVELTY no change",
+        "why": "Group norms and choices parameterized, not empirically measured"
+      },
+      "I": {
+        "grade": "0/3",
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "real_causality": "UNIDENTIFIED",
+        "validation": "TECHNICAL_ONLY"
+      },
+      "J": {
+        "decision": "PASS_NEXT",
+        "next": "N116",
+        "remaining_at_close": 11
+      }
+    },
+    {
+      "id": "N116",
+      "parent": "N115",
+      "mode": "ADVERSARIAL",
+      "D": "new adapter code freeze and test driver freeze before outcomes",
+      "A": {
+        "question": "Separate social-norm ranking from actor-order and stage confounds using fixed-state nulls and label shuffles",
+        "unit": "144 fictitious agents, original ESBM 16 ticks, 6 frozen seeds; group norm labels fictitious",
+        "outcome": "in-simulator encounters/pair formation/active stocks and same-group fractions, not causal humans"
+      },
+      "B": [
+        "no effect if label neutral",
+        "same-group prioritization",
+        "cross-group prioritization",
+        "scheduling tie order"
+      ],
+      "C": "Two fixed risk sets ×2 label permutations, sham equality, no unsupported claim of normative fairness; ensure outcomes are not invariant under deliberate norm permutation when norm-based rule enabled, while pair_max ignores norm in scheduler",
+      "D_instrument": {
+        "source": "esbm_schedule_adapter.py",
+        "code_commit": "9390617be3beac6ca7cf94252cc152cdf1874948",
+        "runner_commit": "f2e576018144918ce35ea9f1a3f1dc80a763f291"
+      },
+      "E": {
+        "status": "PASS",
+        "observed": {
+          "id": "N116",
+          "status": "PASS",
+          "riskset_checks": 12,
+          "null_policy_changed": 0,
+          "norm_policies_changed": 8,
+          "results": [
+            {
+              "seed": 101,
+              "tick": 0,
+              "mode": "pair_max",
+              "symmetric_difference": 0
+            },
+            {
+              "seed": 101,
+              "tick": 0,
+              "mode": "pair_norm_same",
+              "symmetric_difference": 86
+            },
+            {
+              "seed": 101,
+              "tick": 0,
+              "mode": "pair_norm_cross",
+              "symmetric_difference": 68
+            },
+            {
+              "seed": 101,
+              "tick": 3,
+              "mode": "pair_max",
+              "symmetric_difference": 0
+            },
+            {
+              "seed": 101,
+              "tick": 3,
+              "mode": "pair_norm_same",
+              "symmetric_difference": 70
+            },
+            {
+              "seed": 101,
+              "tick": 3,
+              "mode": "pair_norm_cross",
+              "symmetric_difference": 76
+            },
+            {
+              "seed": 211,
+              "tick": 0,
+              "mode": "pair_max",
+              "symmetric_difference": 0
+            },
+            {
+              "seed": 211,
+              "tick": 0,
+              "mode": "pair_norm_same",
+              "symmetric_difference": 82
+            },
+            {
+              "seed": 211,
+              "tick": 0,
+              "mode": "pair_norm_cross",
+              "symmetric_difference": 66
+            },
+            {
+              "seed": 211,
+              "tick": 3,
+              "mode": "pair_max",
+              "symmetric_difference": 0
+            },
+            {
+              "seed": 211,
+              "tick": 3,
+              "mode": "pair_norm_same",
+              "symmetric_difference": 48
+            },
+            {
+              "seed": 211,
+              "tick": 3,
+              "mode": "pair_norm_cross",
+              "symmetric_difference": 58
+            }
+          ],
+          "seconds": 3.453
+        },
+        "human_rows": 0
+      },
+      "F": {
+        "baseline": "Strong max/sham control and identical fixed risk sets",
+        "extra": "Exact neutral pair_sham matches pair_max across full outputs two seeds; label-shuffle checks demonstrate intentional dependence."
+      },
+      "G": "Only internal same synthetic 144-agent generator, no human cohort or external replication",
+      "H": {
+        "prior": "P-SCHEDULE-CORRELATION synthetic-only potential update; P-NOVELTY no change",
+        "why": "Group norms and choices parameterized, not empirically measured"
+      },
+      "I": {
+        "grade": "0/3",
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "real_causality": "UNIDENTIFIED",
+        "validation": "TECHNICAL_ONLY"
+      },
+      "J": {
+        "decision": "PASS_NEXT",
+        "next": "Consider N117 only if useful new method",
+        "remaining_at_close": 10
+      }
+    }
+  ]
+}
