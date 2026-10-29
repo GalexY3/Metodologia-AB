@@ -1,0 +1,370 @@
+{
+  "schema": "AB_ATLAS_O7_ESBM_N147_N166",
+  "day": "2026-10-30",
+  "branch": "research/ab-h-esbm-trajectory-equivalence-20261030",
+  "nodes": [
+    {
+      "id": "ESBM-TRAJECTORY",
+      "type": "program",
+      "status": "active",
+      "label": "ESBM v2 historical + optional symmetric pair engine"
+    },
+    {
+      "id": "N147",
+      "type": "AB_cycle",
+      "mode": "AB-H",
+      "status": "VALID_NEGATIVE_DIAGNOSTIC",
+      "grade": "0/3",
+      "instrument": "permutation"
+    },
+    {
+      "id": "N148",
+      "type": "AB_cycle",
+      "mode": "AB-H",
+      "status": "VALID_NEGATIVE_DIAGNOSTIC",
+      "grade": "0/3",
+      "instrument": "permutation"
+    },
+    {
+      "id": "N149",
+      "type": "AB_cycle",
+      "mode": "AB-H",
+      "status": "VALID_NEGATIVE_DIAGNOSTIC",
+      "grade": "0/3",
+      "instrument": "permutation"
+    },
+    {
+      "id": "N150",
+      "type": "AB_cycle",
+      "mode": "AB-H",
+      "status": "VALID_NEGATIVE_DIAGNOSTIC",
+      "grade": "0/3",
+      "instrument": "permutation"
+    },
+    {
+      "id": "N151",
+      "type": "AB_cycle",
+      "mode": "AB-H",
+      "status": "VALID_TECHNICAL_PASS",
+      "grade": "0/3",
+      "instrument": "sym_shocks"
+    },
+    {
+      "id": "N152",
+      "type": "AB_cycle",
+      "mode": "AB-H",
+      "status": "VALID_TECHNICAL_PASS",
+      "grade": "0/3",
+      "instrument": "sym_shocks"
+    },
+    {
+      "id": "N153",
+      "type": "AB_cycle",
+      "mode": "AB-H",
+      "status": "VALID_TECHNICAL_PASS",
+      "grade": "0/3",
+      "instrument": "sym_shocks"
+    },
+    {
+      "id": "N154",
+      "type": "AB_cycle",
+      "mode": "AB-H",
+      "status": "VALID_TECHNICAL_PASS",
+      "grade": "0/3",
+      "instrument": "sym_shocks"
+    },
+    {
+      "id": "N155",
+      "type": "AB_cycle",
+      "mode": "AB-H",
+      "status": "VALID_TECHNICAL_PASS",
+      "grade": "0/3",
+      "instrument": "learning"
+    },
+    {
+      "id": "N156",
+      "type": "AB_cycle",
+      "mode": "AB-H",
+      "status": "VALID_NEGATIVE_DIAGNOSTIC",
+      "grade": "0/3",
+      "instrument": "learning"
+    },
+    {
+      "id": "N157",
+      "type": "AB_cycle",
+      "mode": "AB-H",
+      "status": "VALID_NEGATIVE_DIAGNOSTIC",
+      "grade": "0/3",
+      "instrument": "learning"
+    },
+    {
+      "id": "N158",
+      "type": "AB_cycle",
+      "mode": "AB-H",
+      "status": "VALID_TECHNICAL_PASS",
+      "grade": "0/3",
+      "instrument": "learning"
+    },
+    {
+      "id": "N159",
+      "type": "AB_cycle",
+      "mode": "AB-H",
+      "status": "VALID_TECHNICAL_PASS",
+      "grade": "0/3",
+      "instrument": "learning"
+    },
+    {
+      "id": "N160",
+      "type": "AB_cycle",
+      "mode": "AB-H",
+      "status": "VALID_TECHNICAL_PASS",
+      "grade": "0/3",
+      "instrument": "numerical"
+    },
+    {
+      "id": "N161",
+      "type": "AB_cycle",
+      "mode": "AB-H",
+      "status": "VALID_TECHNICAL_PASS",
+      "grade": "0/3",
+      "instrument": "numerical"
+    },
+    {
+      "id": "N162",
+      "type": "AB_cycle",
+      "mode": "AB-H",
+      "status": "VALID_TECHNICAL_PASS",
+      "grade": "0/3",
+      "instrument": "numerical"
+    },
+    {
+      "id": "N163",
+      "type": "AB_cycle",
+      "mode": "AB-H",
+      "status": "VALID_TECHNICAL_PASS",
+      "grade": "0/3",
+      "instrument": "numerical"
+    },
+    {
+      "id": "N164",
+      "type": "AB_cycle",
+      "mode": "AB-H",
+      "status": "VALID_TECHNICAL_PASS",
+      "grade": "0/3",
+      "instrument": "viewer"
+    },
+    {
+      "id": "N165",
+      "type": "AB_cycle",
+      "mode": "AB-H",
+      "status": "VALID_TECHNICAL_PASS",
+      "grade": "0/3",
+      "instrument": "viewer"
+    },
+    {
+      "id": "N166",
+      "type": "AB_cycle",
+      "mode": "AB-H",
+      "status": "VALID_TECHNICAL_PASS",
+      "grade": "0/3",
+      "instrument": "viewer"
+    },
+    {
+      "id": "SRC107",
+      "type": "source",
+      "status": "PRIMARY_PUBLIC_PAPER_NO_RIGHTS_TO_MICRODATA",
+      "label": "MMSD 619 dyads, 2 native votes: only aggregates accessible"
+    },
+    {
+      "id": "P-TRAJECTORY-INVARIANCE",
+      "type": "prior",
+      "status": "TECHNICAL_ONLY"
+    },
+    {
+      "id": "R5-EXTERNAL",
+      "type": "scientific_gate",
+      "status": "STOP",
+      "label": "No legal case-level native 2-vote/observed opportunity+held-out comparison"
+    },
+    {
+      "id": "VIEWER",
+      "type": "product",
+      "status": "CHROMIUM_12_12_REAL_PASS",
+      "label": "Standalone inspectable offline event viewer"
+    }
+  ],
+  "edges": [
+    {
+      "from": "ESBM-TRAJECTORY",
+      "to": "N147",
+      "kind": "begins"
+    },
+    {
+      "from": "N147",
+      "to": "N148",
+      "kind": "CONDITIONAL_NEXT"
+    },
+    {
+      "from": "N148",
+      "to": "N149",
+      "kind": "CONDITIONAL_NEXT"
+    },
+    {
+      "from": "N149",
+      "to": "N150",
+      "kind": "CONDITIONAL_NEXT"
+    },
+    {
+      "from": "N150",
+      "to": "N151",
+      "kind": "BRANCH_BUDGET_PHASE"
+    },
+    {
+      "from": "N151",
+      "to": "N152",
+      "kind": "CONDITIONAL_NEXT"
+    },
+    {
+      "from": "N152",
+      "to": "N153",
+      "kind": "CONDITIONAL_NEXT"
+    },
+    {
+      "from": "N153",
+      "to": "N154",
+      "kind": "CONDITIONAL_NEXT"
+    },
+    {
+      "from": "N154",
+      "to": "N155",
+      "kind": "CONDITIONAL_NEXT"
+    },
+    {
+      "from": "N155",
+      "to": "N156",
+      "kind": "BRANCH_BUDGET_PHASE"
+    },
+    {
+      "from": "N156",
+      "to": "N157",
+      "kind": "CONDITIONAL_NEXT"
+    },
+    {
+      "from": "N157",
+      "to": "N158",
+      "kind": "CONDITIONAL_NEXT"
+    },
+    {
+      "from": "N158",
+      "to": "N159",
+      "kind": "CONDITIONAL_NEXT"
+    },
+    {
+      "from": "N159",
+      "to": "N160",
+      "kind": "BRANCH_BUDGET_PHASE"
+    },
+    {
+      "from": "N160",
+      "to": "N161",
+      "kind": "CONDITIONAL_NEXT"
+    },
+    {
+      "from": "N161",
+      "to": "N162",
+      "kind": "CONDITIONAL_NEXT"
+    },
+    {
+      "from": "N162",
+      "to": "N163",
+      "kind": "CONDITIONAL_NEXT"
+    },
+    {
+      "from": "N163",
+      "to": "N164",
+      "kind": "BRANCH_BUDGET_PHASE"
+    },
+    {
+      "from": "N164",
+      "to": "N165",
+      "kind": "CONDITIONAL_NEXT"
+    },
+    {
+      "from": "N165",
+      "to": "N166",
+      "kind": "CONDITIONAL_NEXT"
+    },
+    {
+      "from": "N149",
+      "to": "N151",
+      "kind": "REPAIR_R5_SCIENCE_UNCHANGED",
+      "explanation": "Directed hazard and match shock actor order"
+    },
+    {
+      "from": "N157",
+      "to": "N160",
+      "kind": "NUMERICAL_REPAIR",
+      "explanation": "IEEE float mean order 1.39e-17"
+    },
+    {
+      "from": "N166",
+      "to": "VIEWER",
+      "kind": "PUBLISH_BROWSER_VERIFIED"
+    },
+    {
+      "from": "SRC107",
+      "to": "R5-EXTERNAL",
+      "kind": "BLOCKED_RIGHTS_AND_CASES"
+    },
+    {
+      "from": "N150",
+      "to": "P-TRAJECTORY-INVARIANCE",
+      "kind": "NEW_TECHNICAL_PRIOR"
+    },
+    {
+      "from": "ESBM-TRAJECTORY",
+      "to": "R5-EXTERNAL",
+      "kind": "NO_EXTERNAL_IDENTIFICATION"
+    }
+  ],
+  "receipt": {
+    "credits_granted": 20,
+    "valid_ABH": 20,
+    "strict_pass": 14,
+    "valid_negative": 6,
+    "invalid_complete_cycles": 0,
+    "invalid_instrumental_attempts": 3,
+    "planning": 0,
+    "pending": 0,
+    "sources": 107,
+    "priors": 33,
+    "updates": 182,
+    "CT2_scientific_ordinal": 7,
+    "human_R5": "STOP",
+    "maturity_subjective": 43.6,
+    "external_human_valid": 0,
+    "science_grade_1_2_3": 0,
+    "complaints": [
+      {
+        "name": "Original legacy full trajectory actor order",
+        "state": "FIXED_ONLY_AS_OPTIONAL_NEW_SEMANTICS"
+      },
+      {
+        "name": "Floating mean order under 2-slot private/public learning",
+        "state": "STABLE_SUM_FIX_OPT_IN"
+      },
+      {
+        "name": "N166 Python -I import, indirect dependency and file URI admin block",
+        "state": "THREE_INVALID_INSTRUMENTAL_ATTEMPTS_REPAIRED_IN_SEPARATE_HASH_FREEZES"
+      },
+      {
+        "name": "Human rights and event-level bilateral MMSD",
+        "state": "NO_ACCESS_NO_DATA_LICENSE_NO_HOLDOUT"
+      },
+      {
+        "name": "Visual simulation 24 actors 4 periods",
+        "state": "ACTUAL_PYTHON_EXECUTION_BROWSER_VERIFIED_12_CASES"
+      }
+    ]
+  }
+}
