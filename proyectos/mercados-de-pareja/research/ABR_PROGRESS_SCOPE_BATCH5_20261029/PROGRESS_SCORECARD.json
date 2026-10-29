@@ -2,11 +2,11 @@
   "schema": "esbm.progress.milestone_weighted_subjective_v1",
   "date": "2026-10-29",
   "branch": "research/ab-r-mercados-pareja-20261028",
-  "source_commit": "dc5a5726f93c2fc94b9a3338a4e158eb96d6a702",
+  "source_commit": "50ed5bacab76951157ed87447d61d26737701130",
   "target_scope": "FIRST_SCIENTIFICALLY_DEFENSIBLE_ESBM_RESEARCH_PACKAGE_NOT_EXPLAIN_ALL_ROMANTIC_RELATIONSHIPS",
   "nature": "EXPLICITLY_JUDGMENTAL_MILESTONE_ESTIMATE_NOT_EVALUATED_SUCCESS_PROBABILITY_OR_CT2",
-  "aggregate_percent_exact": 38.25,
-  "aggregate_percent_rounded": 38,
+  "aggregate_percent_exact": 38.65,
+  "aggregate_percent_rounded": 39,
   "rough_uncertainty_percentage_points": 10,
   "uncertainty_is_statistical_interval": false,
   "method": "SUM(weight_percent * progress_percent / 100), dimensions weights sum 100. Anchor evidence to current repo; subjective estimates not measured experiment outcomes.",
@@ -15,8 +15,8 @@
       "id": "theory",
       "name": "Marco teórico y mecanismos",
       "weight": 15,
-      "progress": 60,
-      "evidence": "THEORY_V2.md defines actual implemented mutual compatibility scopes, staged accept/response, 16 periods, algorithmic exposure, private/public feedback and stipulated exits; parameters not calibrated.",
+      "progress": 62,
+      "evidence": "THEORY_V2.md defines actual implemented mutual compatibility scopes, staged accept/response, 16 periods, algorithmic exposure, private/public feedback and stipulated exits; parameters not calibrated. New N83 exact counterexample defines a concrete nonidentifiability boundary for risk-set causal interpretations and labels needed interventions/assumptions, but no scientific novelty or real coefficient identified.",
       "required_for_100": "Rival-specific equations, identifiable estimands, population scope, norms/institutions, alternatives and formal falsifiers linked to observable data."
     },
     {
@@ -39,8 +39,8 @@
       "id": "qa",
       "name": "Controles técnicos y reproducibilidad",
       "weight": 10,
-      "progress": 50,
-      "evidence": "Pre-outcome source freezes, A-J and R1-R5 gate, SHA256 McMaster original and QA code, 60 synthetic scenario QA and byte-identical repeat on same machine; no independent clean clone.",
+      "progress": 51,
+      "evidence": "Pre-outcome source freezes, A-J and R1-R5 gate, SHA256 McMaster original and QA code, 60 synthetic scenario QA and byte-identical repeat on same machine; no independent clean clone. N83 deterministic frozen 8-cell exhaustive distribution check and independent rational Fraction recalculation; still no independent clean clone of the ESBM simulator.",
       "required_for_100": "Fresh clean-room deterministic replay, unit+property testing, code/data provenance, exposure-preserving strong nulls, CI validation and ready-to-run reproduction package."
     },
     {
@@ -85,18 +85,20 @@
   },
   "separate_metrics": {
     "AB_authorized_cumulative": 40,
-    "AB_valid_completed": 16,
-    "AB_credits_available": 24,
-    "AB_tranche_now_open_for_attempt": 5,
+    "AB_valid_completed": 17,
+    "AB_credits_available": 23,
+    "AB_tranche_now_open_for_attempt": 4,
     "AB_outside_tranche_reserved": 19,
     "CT2_ordinal": 7,
     "CT2_not_probability": true,
     "sources": 97,
     "priors": 30,
-    "updates": 130,
-    "new_valid_cycles_this_turn": 0,
+    "updates": 131,
+    "new_valid_cycles_this_turn": 1,
     "new_planning_cycles_this_turn": 0
   },
   "score_may_change_only_with_documented_milestone_evidence": true,
-  "score_is_not_number_of_cycles": false
+  "score_is_not_number_of_cycles": false,
+  "last_evidence_commit_reference": "50ed5bacab76951157ed87447d61d26737701130",
+  "last_maturity_update": "N83_FORMAL_CAUSAL_IDENTIFIABILITY_BOUNDARY_NO_EMPIRICAL_VALIDATION"
 }

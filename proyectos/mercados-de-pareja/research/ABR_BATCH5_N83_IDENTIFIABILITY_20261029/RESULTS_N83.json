@@ -1,0 +1,95 @@
+{
+  "type": "EXACT_RATIONAL_FORMAL_NON_EMPIRICAL",
+  "probability_denominator": 250,
+  "source": "PRE-REGISTERED_AB_N83_FORMAL_IDENTIFIABILITY",
+  "original_human_rows_used": 0,
+  "independent_sample_used": false,
+  "cells": [
+    {
+      "e": 0,
+      "yi": 0,
+      "yj": 0,
+      "a_num_over_250": 50,
+      "b_num_over_250": 50
+    },
+    {
+      "e": 0,
+      "yi": 0,
+      "yj": 1,
+      "a_num_over_250": 35,
+      "b_num_over_250": 35
+    },
+    {
+      "e": 0,
+      "yi": 1,
+      "yj": 0,
+      "a_num_over_250": 20,
+      "b_num_over_250": 20
+    },
+    {
+      "e": 0,
+      "yi": 1,
+      "yj": 1,
+      "a_num_over_250": 20,
+      "b_num_over_250": 20
+    },
+    {
+      "e": 1,
+      "yi": 0,
+      "yj": 0,
+      "a_num_over_250": 20,
+      "b_num_over_250": 20
+    },
+    {
+      "e": 1,
+      "yi": 0,
+      "yj": 1,
+      "a_num_over_250": 20,
+      "b_num_over_250": 20
+    },
+    {
+      "e": 1,
+      "yi": 1,
+      "yj": 0,
+      "a_num_over_250": 35,
+      "b_num_over_250": 35
+    },
+    {
+      "e": 1,
+      "yi": 1,
+      "yj": 1,
+      "a_num_over_250": 50,
+      "b_num_over_250": 50
+    }
+  ],
+  "proof_assertions": {
+    "masses_total_A": true,
+    "masses_total_B": true,
+    "both_e_marginal_125": true,
+    "observational_joint_exactly_equal": true,
+    "strict_positivity": true,
+    "positive_joint_cell_counts": true,
+    "observed_difference_exact": true,
+    "A_no_causal_effect": true,
+    "B_nonzero_causal_effect": true,
+    "observational_and_causal_disagree": true
+  },
+  "observed_P_mutual_given_E": [
+    0.16,
+    0.4
+  ],
+  "identical_observed_joint": true,
+  "causal_P_mutual_doE_ModelA": [
+    0.28,
+    0.28
+  ],
+  "causal_P_mutual_doE_ModelB": [
+    0.16,
+    0.4
+  ],
+  "observed_contrast": 0.24000000000000002,
+  "modelA_causal_effect": 0,
+  "modelB_causal_effect": 0.24000000000000002,
+  "identification": "FAILS_EVEN_WITH_POSITIVE_P_E_GIVEN_U_AND_NATIVE_BILATERAL_YES_NO",
+  "conclusion": "Prediction from E and native bilateral decisions does not by itself identify the causal effect of risk-set size; unmeasured common causes can make models A and B observationally indistinguishable."
+}

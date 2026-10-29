@@ -4,7 +4,7 @@
   "date": "2026-10-28",
   "mode": "append-only logical, versioned by Git commits",
   "reconstructed_from_documents": "Retrospective backfill, not preregistration. Old before values NOT_RECORDED unless documented explicitly.",
-  "source_coverage": "97 SOURCES / 30 PRIORS / 130 UPDATES; SRC097 author original Leiden physiology blind dates original GitHub, only source script/directory inspected, not licensed data binary. Authorization +20 cycles recorded separately; N83-N106 untouched.",
+  "source_coverage": "97 original source entries, 30 priors, 131 update events. N83 formal identifiability counterexample frozen before execution; no new human source, no empirical novelty 2/3.",
   "events": [
     {
       "id": "U001",
@@ -3293,7 +3293,32 @@
       "prior_probability_after": null,
       "prereg_status": "NOT_N83_STOP_R5",
       "falsifier_or_followup": "Verify author data license, explicit two native binary decisions by observed opportunity, original SHA256 and external holdout on distinct human cohort, then only preregister model A-J and code SHA before outcomes; do not conflate physiological attraction with binary mutual consent."
+    },
+    {
+      "id": "U131",
+      "prior_id": "P-OPPORTUNITY",
+      "source_ids": [
+        "SRC096"
+      ],
+      "cycle_ids": [
+        "N83"
+      ],
+      "before": "RECORDED_RECOMMENDATION_RISK_SET_WITHOUT_VERIFIED_ATTENTION",
+      "after": "RECORDED_RECOMMENDATION_RISK_SET_WITHOUT_VERIFIED_ATTENTION",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "what_the_sources_contribute": "Existing McMaster original choice source SRC096 is relevant to real risk sets but not inspected this N83 formal cycle; source list unchanged. N83 adds an exact synthetic counterexample with two natively observed yes/no choices, exact joint equality (8 cells), no measured U, and counterfactual effects 0 vs +0.24.",
+      "why_this_updates_or_checks_prior": "N83 proves necessity of separate identification assumptions for claiming risk-set effect; empirical bilateral exposure/choice logs alone do not identify a causal opportunity mechanism. Not a new empirical result, does not change prior status.",
+      "limits": "Two deliberately constructed artificial DGPs; classical confounding/nonidentifiability already known in causal inference. No humans, no measured market, no risk-set manipulation, no external predictive test, no evidence of improved ESBM model.",
+      "falsifier_or_followup": "Measure sufficient common causes and justify exchangeability and positivity, or randomize opportunity sets and check interference; then test separately on an original independent holdout with competent rivals and pre-frozen model code.",
+      "recorded_at": "2026-10-29",
+      "entry_status": "ACTIVE",
+      "evidence_type": "PRE_REGISTERED_EXACT_RATIONAL_FORMAL_AB_N83_NEGATIVE_0_3",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 1,
+      "prior_probability_before": null,
+      "prior_probability_after": null,
+      "prereg_status": "A_J_PRE_COMMIT_50ed5bacab76951157ed87447d61d26737701130"
     }
   ],
-  "last_campaign": "ABR_AUTH20_EXTERNAL_GATE_20261029_NONCYCLE"
+  "last_campaign": "ABR_BATCH5_N83_IDENTIFIABILITY_20261029_FORMAL"
 }
