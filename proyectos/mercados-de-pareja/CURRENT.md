@@ -309,3 +309,8 @@
 ## Fuente primaria nueva de citas reales y licencia de datos explícita (SRC104) · 29/10/2026 · sin ciclo
 
 [Informe Pisanski et al. (2018), depósito original Figshare CC BY 4.0](research/ABR_R5_GATE_PISANSKI_FIGSHARE_NOCYCLE_20261029/REPORT.md): 30 adultos en dos eventos, citas presenciales de 6 min y votos propios sí/no de ambas personas según método publicado; suplemento de autores `rspb20181634supp1.xlsx` de 226,56 KB bajo CC BY 4.0. **Archivo original no descargado**: ninguna fila, par de votos ni SHA comprobados, no hay nuevo holdout ni validación ESBM. SRC104 con U157/U158 NO_CHANGE_WITH_REASON: **104 SOURCES, 30 PRIORS, 158 UPDATES; 26/40 ciclos históricos, N93–N106 reservados, CT2 ordinal 7/100, madurez 41.20%, STOP_R5 intactos**.
+
+
+## Auditoría real de workbook original SRC104 · 29/10/2026 · sin ciclo
+
+[Informe de integridad, 5 hojas, SHA256, unidades y contradicciones bilaterales](research/ABR_SRC104_USER_XLSX_SCHEMA_QA_NOCYCLE_20261029/REPORT.md): copia aportada **rspb20181634_si_001.xlsx**, 232002 bytes, SHA256 **91c0bb93e699cc003ad32a11c51d38da6018cf9851b613822ecb19ef5618be00** (checksum **de copia aportada**, no validado contra Figshare); datos de voz **726 filas** = **242 encounters dirigidos x3 segmentos**; 30 IDs de participantes, 2 eventos; **116 díadas con ambos registros**, **101 con votos cruzados coherentes**, **15 con discrepancias**, otras **10 claves con un solo lado**. No se publicaron filas personales. SRC104 actualizado; U159 P-DYADIC_ACCESS con ampliación de alcance y control adverso, U160 P-OPPORTUNITY NO_CHANGE_WITH_REASON. **104 SOURCES, 30 PRIORS, 160 UPDATES; 26/40 AB válidos históricos, 0 nuevos; N93–N106 14 reservados; CT2 ordinal 7/100, madurez 41.20%, STOP_R5 intactos.**
