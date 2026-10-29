@@ -18,7 +18,7 @@
     "N85",
     "N86"
   ],
-  "R5": "STOP_AFTER_N82__2011_JIAYUAN_DATA_HISTORICAL_ACADEMIC_PUBLICATION_REQUIRES_RIGHTSHOLDER_AUTHORIZATION__NO_NEW_N83__FOUR_UNUSED",
+  "R5": "STOP_AFTER_N82__NEW_DISTINCT_HCMST_2009_LONGITUDINAL_COHORT_DOCUMENTED_NOT_ACCESSED__SSJY_RIGHTS_UNVERIFIED__FOUR_UNUSED_N83_N86",
   "prereg_commit": "026cc12b5136e60034c71c2f794d01a453bdf5bd",
   "source_freeze_commit": "7f196409bc1ba5b5af6d8caad39c173a38a99405",
   "source_sha256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
@@ -35,26 +35,19 @@
   "QA": "QA.json",
   "raw_data_human_processed": false,
   "prior_register": {
-    "sources_total": 66,
+    "sources_total": 68,
     "prior_hypotheses_total": 30,
-    "update_events_total": 90,
+    "update_events_total": 93,
     "latest_sources": [
-      "SRC062",
-      "SRC063",
-      "SRC064",
-      "SRC065",
-      "SRC066"
+      "SRC067",
+      "SRC068"
     ],
     "latest_updates": [
-      "U084",
-      "U085",
-      "U086",
-      "U087",
-      "U088",
-      "U089",
-      "U090"
+      "U091",
+      "U092",
+      "U093"
     ],
-    "independence": "SRC062–SRC065 reflect SAME 2011 Jiayuan contest dataset SRC059/SRC061; SRC066 is subset of previously counted HCMST SRC048/SRC049; zero new cohorts"
+    "source_independence": "SRC067 and SRC068 are one 2009 participant cohort; HCMST 2009 cohort is independent from 2017–2022 SRC048/SRC049 but no raw data, no hazard estimates."
   },
   "new_N1": 0,
   "new_N2": 0,
@@ -737,8 +730,8 @@
     "source": "../ABR_PAIRFAM_GATE_20261028/LEDGER.json",
     "source_blob_sha": "a50c6fde0a9e0532f5e974f32e9f3744e686238c",
     "not_counted_cycle": "source update after N78 is maintenance (SRC053/U056-U058).",
-    "current_status": "STOP_R5; N83-N86 NOT EXECUTED; SSJY 2011 competition academic publication rightsholder authorization UNVERIFIED",
-    "current_posthoc_audit": "../ABR_POST_N82_PROVENANCE_RIGHTS_GATE_20261029/REPORT.md",
+    "current_status": "STOP_R5; N83-N86 remain NOT_EXECUTED, no new HCMST2009 data, SSJY rights blocked",
+    "current_posthoc_audit": "../ABR_N83_UNOPENED_HCMST_2009_GATE_20261029/REPORT.md",
     "latest_completed": "N82",
     "last_updated": "2026-10-29"
   },
@@ -768,31 +761,25 @@
   },
   "latest_posthoc_gate": {
     "date": "2026-10-29",
-    "type": "POST_HOC_SOURCE_RIGHTS_AND_PROVENANCE_NONCYCLE",
+    "type": "INDEPENDENT_HCMST_2009_COHORT_ACCESS_GATE_NOT_AB_CYCLE",
     "new_valid": 0,
     "new_invalid": 0,
     "new_planning": 0,
-    "report": "../ABR_POST_N82_PROVENANCE_RIGHTS_GATE_20261029/REPORT.md",
-    "status": "../ABR_POST_N82_PROVENANCE_RIGHTS_GATE_20261029/STATUS.json",
-    "source_ids": [
-      "SRC062",
-      "SRC063",
-      "SRC064",
-      "SRC065",
-      "SRC066"
+    "report": "../ABR_N83_UNOPENED_HCMST_2009_GATE_20261029/REPORT.md",
+    "status": "../ABR_N83_UNOPENED_HCMST_2009_GATE_20261029/STATUS.json",
+    "sources": [
+      "SRC067",
+      "SRC068"
     ],
-    "update_ids": [
-      "U084",
-      "U085",
-      "U086",
-      "U087",
-      "U088",
-      "U089",
-      "U090"
+    "updates": [
+      "U091",
+      "U092",
+      "U093"
     ],
-    "CT2_after": 7,
+    "no_raw_data_downloaded": true,
+    "ct2_unchanged": 7,
+    "no_N83_prereg": true,
     "no_new_cycle_point": true,
-    "research_permission": "UNVERIFIED RIGHTSHOLDER; HISTORIC COMPETITION DOCUMENT SAYS ACADEMIC PUBLICATION REQUIRES PERMISSION",
-    "not_counted_as_cycle": true
+    "SSJY_reuse": "STOP_UNVERIFIED_OWNER_PERMISSION"
   }
 }
