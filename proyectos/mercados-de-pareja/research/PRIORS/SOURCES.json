@@ -3,7 +3,7 @@
   "project": "mercados-de-pareja",
   "date": "2026-10-28",
   "scope": "Retrospective provenance backfill from repository reports plus N56/N57 publisher audit. Original data never copied; not systematic or claim of accessing raw data for bibliography.",
-  "source_count": 95,
+  "source_count": 96,
   "sources": [
     {
       "id": "SRC001",
@@ -1882,7 +1882,31 @@
       "limits": "The >1000 events refers to overall multi-institutional research PROJECT, not size of Zenodo subsection. Original record and API responded inaccessible to web service once each; do not retry blocked routes. The depositor lists questionnaires but no complete original codebook, paired explicit two yes/no/accept/decline, actual response rows, subject ids, original SHA256, data-specific license or usable external holdout inspected. Self-reported 'interest in future date' not necessarily native binary choice; cross-national sites may differ by design and data released. No claim of controlled effect with original data.",
       "falsifier": "New, nonrepetitive, legally authenticated access route to Zenodo record and exact license/data dictionary; native binary paired decisions, original hash and pre-registered code, strong standards vs McMaster, Joel, Pronk, Ogushi and Matz; independently held-out venue/country only with domain harmonization verified.",
       "AB_cycle_increment": 0
+    },
+    {
+      "id": "SRC096",
+      "title": "Andrew Chang original GitHub McMaster speed-dating analysis CSV with verified real binary bilateral choices",
+      "canonical_url": "https://github.com/curlsloth/SpeedDating-BodySway",
+      "original_csv_url": "https://github.com/curlsloth/SpeedDating-BodySway/blob/dadc819fbe99e99402b6d43f7e4f247a4bf55c2b/SpeedDatingOSF_20201218.csv",
+      "source_repo_commit": "dadc819fbe99e99402b6d43f7e4f247a4bf55c2b",
+      "file": "SpeedDatingOSF_20201218.csv",
+      "size_bytes": 116233,
+      "source_git_blob_sha1": "9676ffc2022009c4ad878448a8d34b241d5396e8",
+      "original_file_sha256": "9685dfb09a610bbf150ee2d151b05d6dceff6af18fc5b21d3ac31eecabf63eb6",
+      "preoutcome_freeze_commit": "5c96ba6e3b85722dcb497b58b1035ecbda283cd3",
+      "preoutcome_code_sha256": "50fb8df6b4e220182fafbeee4fb74ccc1390ecd1f97638e068c612b9487cdd8c",
+      "verified_at": "2026-10-29",
+      "cycle_ids": [],
+      "same_original_human_cohort_as": "SRC094",
+      "independent_sample_increment": 0,
+      "source_type": "ORIGINAL_AUTHOR_GITHUB_DATA_VERIFIED_SHA256_FROZEN_PREOUTCOME_BINARY_DYADS_NONCYCLE",
+      "contribution": "Direct author GitHub original data access (not OSF). Hash of full 116233-byte CSV recomputed, Git blob SHA1 matched, code QA frozen at independent earlier commit before examining binary choices. 719 directed date decisions (54 actors, 2 sessions); 714 directed rows with reverse, forming 357 binary bilateral meetings, 5 unpaired directional rows, 0 directed duplicate keys. 719 yes/no decisions: 344 yes 375 no, 0 invalid; complete 357 meetings: 70 both yes, 86 neither yes, 151 male-only yes and 50 female-only yes. Published only aggregate QA. Same participants and data-generating experiment as SRC094, NOT a second independent cohort.",
+      "rights": "Author README states CC BY-SA 4.0, LICENSE file contains text of CC BY 4.0. Public license conflict explicitly documented; attribution, conservative BY-SA treatment and no raw rehosting. No signed terms, private raw microdata, reidentification, personal identifiers or author contacts.",
+      "access_status": "PUBLIC_AUTHOR_ORIGINAL_ANALYSIS_CSV_ACTUALLY_READ_SHA256_VERIFIED_BINARY_JOIN_VERIFIED_NO_EXTERNAL_HOLDOUT",
+      "limits": "Exploratory descriptive NONCYCLE QA only, not confirmatory model or independent replication. Two McMaster sessions only; 357 dyads reuse 54 actors; 5 unpaired directed rows must not count as negative replies. Outcome is stated yes/no after date, not confirmed later union. No baselines or model/out-of-cohort validation; strict R5 still STOP.",
+      "falsifier": "New legally accessible original external participant cohort with bilateral binary decisions/exposures, separate SHA256, preoutcome A-J hypothesis/model code frozen, strong SRM, original Chang and Pronk/Ogushi/Baxter/Matz/Zhao baselines; no N83 absent holdout.",
+      "AB_cycle_increment": 0
     }
   ],
-  "last_added_campaign": "ABR_MCMASTER_BUAS_NEW_ORIGINAL_GATE_20261029_NONCYCLE"
+  "last_added_campaign": "ABR_MCMASTER_GITHUB_MICRODATA_GATE_20261029_NONCYCLE"
 }

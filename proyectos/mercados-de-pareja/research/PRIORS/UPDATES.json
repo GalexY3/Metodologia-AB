@@ -4,7 +4,7 @@
   "date": "2026-10-28",
   "mode": "append-only logical, versioned by Git commits",
   "reconstructed_from_documents": "Retrospective backfill, not preregistration. Old before values NOT_RECORDED unless documented explicitly.",
-  "source_coverage": "95 sources, 30 priors, 125 updates; McMaster 2021 original two-sided native yes/no and discordance from ordinal ratings; BUas >1000 cross-national dating encounters Zenodo original dataset SUBSECTION rights/schema unverified. No original row data, N83 not opened.",
+  "source_coverage": "96 sources, 30 priors, 128 revisions; SRC096 original GitHub CSV same sample as SRC094, frozen noncycle audit 357 actual bilateral dates. STOP_R5 no independent external holdout.",
   "events": [
     {
       "id": "U001",
@@ -3178,7 +3178,76 @@
       "prior_probability_before": null,
       "prior_probability_after": null,
       "AB_cycle_increment": 0
+    },
+    {
+      "id": "U126",
+      "prior_id": "P-DYADIC_ACCESS",
+      "source_ids": [
+        "SRC096"
+      ],
+      "cycle_ids": [],
+      "before": "PARTIAL_ROUND_ACTION_ACCESS_NO_EXPLICIT_REJECTION_OR_UNION",
+      "after": "VERIFIED_ORIGINAL_OPEN_NATIVE_BILATERAL_357_DYADS_TWO_SESSIONS_NO_EXTERNAL_HOLDOUT",
+      "direction": "MATERIAL_SOURCE_ACCESS_STATUS_IMPROVEMENT",
+      "what_the_sources_contribute": "Direct source original data now inspected, 357 linked actual two-person binaries and SHA256 documented.",
+      "why_this_updates_or_checks_prior": "Previously only paper-level yes/no protocol and inaccessible datasets; now verified actual original records.",
+      "limits": "Only 54 participants in two sessions; source matches existing SRC094 cohort, repeated actor and dyad dependence; no new independent holdout, preregistered model or tested novelty.",
+      "recorded_at": "2026-10-29",
+      "entry_status": "ACTIVE",
+      "evidence_type": "ORIGINAL_GITHUB_DATA_SHA256_FROZEN_NONCYCLE_BINARY_QA",
+      "numerical_bayesian_update": false,
+      "prior_probability_before": null,
+      "prior_probability_after": null,
+      "AB_cycle_increment": 0,
+      "prereg_status": "QA_PREOUTCOME_FROZEN_EXPERIMENT_N83_NOT_OPEN",
+      "falsifier_or_followup": "Require distinct licensed original bilateral dataset plus external holdout and fully frozen A-J and ESBM model SHA with R1-R5; otherwise STOP_R5."
+    },
+    {
+      "id": "U127",
+      "prior_id": "P-RECIPROCITY",
+      "source_ids": [
+        "SRC096"
+      ],
+      "cycle_ids": [],
+      "before": "SUPPORTED_DESCRIPTIVELY_NOT_CAUSALLY",
+      "after": "SUPPORTED_DESCRIPTIVELY_NOT_CAUSALLY",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "what_the_sources_contribute": "70 both yes, 86 neither yes, 151 male only, 50 female only; source only descriptive aggregate.",
+      "why_this_updates_or_checks_prior": "No inferential update to established reciprocal sorting premise.",
+      "limits": "Only 54 participants in two sessions; source matches existing SRC094 cohort, repeated actor and dyad dependence; no new independent holdout, preregistered model or tested novelty.",
+      "recorded_at": "2026-10-29",
+      "entry_status": "ACTIVE",
+      "evidence_type": "ORIGINAL_GITHUB_DATA_SHA256_FROZEN_NONCYCLE_BINARY_QA",
+      "numerical_bayesian_update": false,
+      "prior_probability_before": null,
+      "prior_probability_after": null,
+      "AB_cycle_increment": 0,
+      "prereg_status": "QA_PREOUTCOME_FROZEN_EXPERIMENT_N83_NOT_OPEN",
+      "falsifier_or_followup": "Require distinct licensed original bilateral dataset plus external holdout and fully frozen A-J and ESBM model SHA with R1-R5; otherwise STOP_R5."
+    },
+    {
+      "id": "U128",
+      "prior_id": "P-MEASURE_OUTCOME",
+      "source_ids": [
+        "SRC096"
+      ],
+      "cycle_ids": [],
+      "before": "CHALLENGED",
+      "after": "CHALLENGED",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "what_the_sources_contribute": "719 native 0/1 choices and 5 unpaired excluded; do not substitute Likert.",
+      "why_this_updates_or_checks_prior": "Measurement strength improved but postdate decision is not observed later relationship.",
+      "limits": "Only 54 participants in two sessions; source matches existing SRC094 cohort, repeated actor and dyad dependence; no new independent holdout, preregistered model or tested novelty.",
+      "recorded_at": "2026-10-29",
+      "entry_status": "ACTIVE",
+      "evidence_type": "ORIGINAL_GITHUB_DATA_SHA256_FROZEN_NONCYCLE_BINARY_QA",
+      "numerical_bayesian_update": false,
+      "prior_probability_before": null,
+      "prior_probability_after": null,
+      "AB_cycle_increment": 0,
+      "prereg_status": "QA_PREOUTCOME_FROZEN_EXPERIMENT_N83_NOT_OPEN",
+      "falsifier_or_followup": "Require distinct licensed original bilateral dataset plus external holdout and fully frozen A-J and ESBM model SHA with R1-R5; otherwise STOP_R5."
     }
   ],
-  "last_campaign": "ABR_MCMASTER_BUAS_NEW_ORIGINAL_GATE_20261029_NONCYCLE"
+  "last_campaign": "ABR_MCMASTER_GITHUB_MICRODATA_GATE_20261029_NONCYCLE"
 }

@@ -1,0 +1,98 @@
+{
+  "schema": "ab.research.original_data_frozen_preoutcome_noncycle.v1",
+  "branch": "research/ab-r-mercados-pareja-20261028",
+  "campaign": "ABR_ESBM20_20261028",
+  "date": "2026-10-29",
+  "source_artifact_id": "SRC096",
+  "same_cohort_as": "SRC094",
+  "source_commit": "dadc819fbe99e99402b6d43f7e4f247a4bf55c2b",
+  "source_blob_sha1": "9676ffc2022009c4ad878448a8d34b241d5396e8",
+  "source_sha256": "9685dfb09a610bbf150ee2d151b05d6dceff6af18fc5b21d3ac31eecabf63eb6",
+  "source_bytes": 116233,
+  "preoutcome_code_freeze_commit": "5c96ba6e3b85722dcb497b58b1035ecbda283cd3",
+  "preoutcome_code_sha256": "50fb8df6b4e220182fafbeee4fb74ccc1390ecd1f97638e068c612b9487cdd8c",
+  "freeze_happened_before_outcome_value_read": true,
+  "activity": "PRE_FROZEN_EXPLORATORY_AGGREGATE_ORIGINAL_DATA_QA_NOT_N83",
+  "valid_total": 16,
+  "authorized_total": 20,
+  "remaining": 4,
+  "slots_unopened": [
+    "N83",
+    "N84",
+    "N85",
+    "N86"
+  ],
+  "cycles_this_turn": {
+    "valid": 0,
+    "invalid": 0,
+    "planning": 0
+  },
+  "noncycle_audits_this_turn": 1,
+  "status": "STOP_R5",
+  "counts": {
+    "sources": 96,
+    "priors": 30,
+    "updates": 128,
+    "new_source_ids": [
+      "SRC096"
+    ],
+    "new_update_ids": [
+      "U126",
+      "U127",
+      "U128"
+    ],
+    "independent_human_cohorts_added": 0,
+    "scientific_discoveries_N1_N2_N3": [
+      0,
+      0,
+      0
+    ]
+  },
+  "qa": {
+    "directed_rows": 719,
+    "unique_actors": 54,
+    "session_count": 2,
+    "directed_rows_by_session": [
+      358,
+      361
+    ],
+    "unique_directed_keys": 719,
+    "duplicates": 0,
+    "reverse_joined_rows": 714,
+    "complete_observed_dyads": 357,
+    "unpaired_directional_rows": 5,
+    "individual_binary_yes": 344,
+    "individual_binary_no": 375,
+    "invalid_binary": 0,
+    "both_yes": 70,
+    "both_no": 86,
+    "male_yes_only": 151,
+    "female_yes_only": 50,
+    "discordant": 201,
+    "male_yes_on_joined": 221,
+    "female_yes_on_joined": 120
+  },
+  "N83": {
+    "state": "NOT_OPENED",
+    "independent_holdout": false,
+    "new_discriminating_ESBM_model_pre_registered": false,
+    "competent_baselines_executed": false,
+    "valid_cycle": false
+  },
+  "CT2": {
+    "ordinal": 7,
+    "not_probability": true,
+    "new_point": false,
+    "last_real_cycle": "N82",
+    "svg": "../ABR_SSJY_STAGE_N82_20261029/CT2.svg"
+  },
+  "open_license_discrepancy": "README CC BY-SA 4.0; LICENSE CC BY 4.0",
+  "source_private_microdata_republished": false,
+  "osf_api_web_used": false,
+  "authors_contacted": false,
+  "license_signed": false,
+  "SSJY_used": false,
+  "main_merged": false,
+  "clean_clone_verified": false,
+  "report": "REPORT.md"
+}
