@@ -280,3 +280,7 @@
 ## Nuevo candidato primario legal, DOI verificado; R5 bloqueado · 29/10/2026 · sin ciclo
 
 - [Auditoría documental de Roth et al. 2023 y DataverseNL 10.34894/AWSZSB](research/ABR_R5_GATE_R0_ROTH_NOCYCLE_20261029/REPORT.md): 67 sujetos y hasta 10 citas reales de cuatro minutos por sujeto, decisión individual sí/no; dataset DOI publicado, pero archivo del repositorio bloqueado por barrera técnica Anubis, licencia específica y join bilateral no verificables. Una predicción del consentimiento del otro **no es** su decisión efectiva. El artículo 2021 de Roth et al. puede reutilizar la cohorte; no duplicar muestras. Registro `SRC100`; `U149` y `U150` con `NO_CHANGE_WITH_REASON`. **100 SOURCES, 30 PRIORS, 150 UPDATES**. No se descargaron datos de personas ni se repitió acceso prohibido. **26/40 válidos, N93–N106 reservados, 41.20% ponderada, CT2 ordinal 7/100, STOP_R5 intactos**.
+
+## Plano metodológico de identificabilidad y falsación (documental; sin ciclo)
+
+[ESBM_IDENTIFIABILITY_AND_FALSIFICATION_BLUEPRINT.md](research/ESBM_IDENTIFIABILITY_AND_FALSIFICATION_BLUEPRINT.md) — DAG temporal, estimandos por fase, matriz de identificación, rivales competentes, contraejemplos, predicciones falsables y mínima recogida ética de datos humanos. Preparado desde f6d0587cd1cc31afa14acdca3e4884314170795f; **no** es prueba/prerregistro AB-R, no ejecuta simulaciones, no desbloquea STOP_R5 ni modifica CT2, madurez, priors, outcomes o los 14 créditos N93–N106 reservados.
