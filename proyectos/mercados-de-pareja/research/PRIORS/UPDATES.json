@@ -4,7 +4,7 @@
   "date": "2026-10-28",
   "mode": "append-only logical, versioned by Git commits",
   "reconstructed_from_documents": "Retrospective backfill, not preregistration. Old before values NOT_RECORDED unless documented explicitly.",
-  "source_coverage": "71 source records (not independent samples), 30 qualitative priors, 98 append-only revisions; original 2009 cohort wave6 is not 2017 cohort",
+  "source_coverage": "72 source records, 30 qualitative priors, 99 events; SRC072 is third-party transformation of same HCMST2009 sample",
   "events": [
     {
       "id": "U001",
@@ -2540,7 +2540,31 @@
       "prior_probability_before": null,
       "prior_probability_after": null,
       "prereg_status": "NO_N83_PREREG_OR_EXECUTION"
+    },
+    {
+      "id": "U099",
+      "prior_id": "P-LONGITUDINAL-ELIGIBILITY",
+      "source_ids": [
+        "SRC072"
+      ],
+      "cycle_ids": [],
+      "before": "DOCUMENTED_SAMPLE_RAW_NOT_INSPECTED",
+      "after": "DOCUMENTED_SAMPLE_RAW_NOT_INSPECTED",
+      "direction": "NO_CHANGE_WITH_UNVERIFIED_THIRD_PARTY_MIRROR_GATE",
+      "what_the_sources_contribute": "2019 public clbarnes gist visually lists HCMST2009 baseline v3.04 CSV and W4,W5,W6 CSVs, along with conversion hcmst.py. Browser renders baseline header with caseid_new and selected breakup and weight fields. Gist archive download and individual raw CSV download failed. Stanford original data use agreement is available but uploader's transformation/hash and rights correspondence unverified.",
+      "why_this_updates_or_checks_prior": "Potential future access path for genuine original HCMST2009 waves is identified, but no full raw file bytes, SHA or schema/risk-set verification was obtained. The original study/cohort is already represented by SRC067/068/069/070, and the 2023 survival thesis prevents novelty of naïve survival fitting.",
+      "limits": "No new dataset, new participant, original analytic unit, simulation, run, data access or prereg in this turn. Mirror may alter labels, weights or be incomplete. No original Stanford file checksum to cross-check; cannot assume permission to redistribute simply because gist is public.",
+      "falsifier_or_followup": "Acquire source with valid terms and cryptographic hashes; verify row count, 2009 cohort caseid_new join cardinality, wave6 selection and partner death vs breakup; freeze A–J and code before any new outcome analysis with strong prior art controls.",
+      "evidence_type": "POST_HOC_ACCESS_ATTEMPT_AND_SOURCE_PROVENANCE_NONCYCLE",
+      "retrospective_backfill": false,
+      "recorded_at": "2026-10-29",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null,
+      "prereg_status": "NO_N83_PREREG; NO_OUTCOME_CALCULATION; R5_STOP"
     }
   ],
-  "last_campaign": "POST_N82_WAVE6_PREEXISTING_SURVIVAL_ANALYSIS_NONCYCLE"
+  "last_campaign": "POST_N82_PUBLIC_GIST_UNVERIFIED_ACCESS_GATE_NONCYCLE"
 }
