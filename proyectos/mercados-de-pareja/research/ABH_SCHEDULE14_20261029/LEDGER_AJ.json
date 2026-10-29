@@ -1,0 +1,1500 @@
+{
+  "schema": "ABH14.COMPLETE_AJ.v1",
+  "branch": "research/ab-h-esbm-schedule-interference-20261029",
+  "day": "2026-10-29",
+  "preoutcome_prereg": "d9ccdef6a0905c0ed69ca1afe67c6ead50d31463",
+  "preoutcome_code_commit": "b7684b36d518445013a4b57c6f88187a0e5c01e1",
+  "result_commit": "921392ae88641af4f315f481384d61994944f7f2",
+  "authorized_before": 14,
+  "executed_technical_valid": 14,
+  "invalid": 0,
+  "planning": 0,
+  "credits_consumed_by_transfer_to_ABH": 14,
+  "ABR_empirical_new_valid": 0,
+  "ABR_empirical_historical_valid": 26,
+  "ABR_external_STOP_R5": true,
+  "external_confirmation": 0,
+  "novel_1_3": 0,
+  "CT2": 7,
+  "cycles": [
+    {
+      "id": "N93",
+      "parent": "P05/AB-R N92",
+      "branch": "research/ab-h-esbm-schedule-interference-20261029",
+      "mode": "AB-H technical/exact structural research; synthetic AB-P-type executed instrumentation",
+      "D": 1.2,
+      "A": {
+        "question": "Normalización de cinco regímenes de exposición sobre 2x2",
+        "estimand": "2x2 synthetic complete bipartite instantaneous matching; no real participants or temporal relationship",
+        "unit": "one synthetic event, independent draws conditioned on event schedule"
+      },
+      "B": {
+        "hypotheses": "Institutional co-exposure can change allocation and joint choice dependencies even at equal marginal opportunity; strong nulls: independent, fixed-cardinality and adjacency-only schedules",
+        "rivals": [
+          "uniform per-edge independent exposure",
+          "perfect matching rotation",
+          "uniform fixed two edges",
+          "adjacent pairs"
+        ],
+        "H_other": "induced choice correlations / risk-set geometry / nonuniform tie breaks"
+      },
+      "C": {
+        "test": "P(schedule)=1, marginal por arista=.5 para independiente, rotación, 2-aristas uniforme, adyacente y mixture; los dos últimos presupuestos 2",
+        "budget": "finite exhaustive 16 masks/16 mutual decisions; MC only final QA 30000 events",
+        "precommitted_tolerance": "1e-10 arithmetic"
+      },
+      "D_instrument": {
+        "instrument": "standalone JS exact finite engine; no human files; self-contained source frozen at GitHub commit before execution",
+        "source_status": "NOT_YET_COMMITTED",
+        "source_freeze_commit": "b7684b36d518445013a4b57c6f88187a0e5c01e1"
+      },
+      "E": {
+        "status": "PASS",
+        "observed": {
+          "cycle": "N93",
+          "status": "PASS",
+          "statistics": {
+            "independent": {
+              "mass": 1,
+              "edge_exposure": [
+                0.5,
+                0.5,
+                0.5,
+                0.5
+              ],
+              "total_exposures": 2,
+              "variance_total": 1,
+              "actor0_exposure_mean": 1,
+              "actor0_exposure_variance": 0.5,
+              "actor0_no_exposure_probability": 0.25,
+              "exposure_edge0_edge3_covariance": 0,
+              "check_outcome_mass": 1
+            },
+            "rotation": {
+              "mass": 1,
+              "edge_exposure": [
+                0.5,
+                0.5,
+                0.5,
+                0.5
+              ],
+              "total_exposures": 2,
+              "variance_total": 0,
+              "actor0_exposure_mean": 1,
+              "actor0_exposure_variance": 0,
+              "actor0_no_exposure_probability": 0,
+              "exposure_edge0_edge3_covariance": 0.25,
+              "check_outcome_mass": 1
+            },
+            "uniformTwo": {
+              "mass": 0.9999999999999999,
+              "edge_exposure": [
+                0.5,
+                0.5,
+                0.5,
+                0.5
+              ],
+              "total_exposures": 1.9999999999999998,
+              "variance_total": 4.440892098500626e-16,
+              "actor0_exposure_mean": 1,
+              "actor0_exposure_variance": 0.33333333333333326,
+              "actor0_no_exposure_probability": 0.16666666666666666,
+              "exposure_edge0_edge3_covariance": -0.08333333333333334,
+              "check_outcome_mass": 0.9999999999999996
+            },
+            "adjacent": {
+              "mass": 1,
+              "edge_exposure": [
+                0.5,
+                0.5,
+                0.5,
+                0.5
+              ],
+              "total_exposures": 2,
+              "variance_total": 0,
+              "actor0_exposure_mean": 1,
+              "actor0_exposure_variance": 0.5,
+              "actor0_no_exposure_probability": 0.25,
+              "exposure_edge0_edge3_covariance": -0.25,
+              "check_outcome_mass": 1
+            },
+            "rotationMix": {
+              "mass": 1,
+              "edge_exposure": [
+                0.5,
+                0.5,
+                0.5,
+                0.5
+              ],
+              "total_exposures": 2,
+              "variance_total": 0,
+              "actor0_exposure_mean": 1,
+              "actor0_exposure_variance": 0.033333333333333215,
+              "actor0_no_exposure_probability": 0.016666666666666663,
+              "exposure_edge0_edge3_covariance": 0.21666666666666667,
+              "check_outcome_mass": 1
+            },
+            "adjacentMix": {
+              "mass": 1,
+              "edge_exposure": [
+                0.5,
+                0.5,
+                0.5,
+                0.5
+              ],
+              "total_exposures": 2,
+              "variance_total": 0,
+              "actor0_exposure_mean": 1,
+              "actor0_exposure_variance": 0.48333333333333317,
+              "actor0_no_exposure_probability": 0.24166666666666667,
+              "exposure_edge0_edge3_covariance": -0.23333333333333334,
+              "check_outcome_mass": 1
+            }
+          },
+          "next": "N94 independent vs coordinated rotation",
+          "AB_mode": "AB-H technical/exact synthetic",
+          "scientific_grade": "0/3",
+          "prereg_commit": "d9ccdef6a0905c0ed69ca1afe67c6ead50d31463",
+          "source_freeze_commit": "b7684b36d518445013a4b57c6f88187a0e5c01e1",
+          "AB_R_empirical_credit_increment": 0
+        },
+        "human_rows": 0,
+        "simulation_independence": "Same four-agent generator; NOT independent confirmations",
+        "error": null
+      },
+      "F": {
+        "adversaries": "algebra, independent-vs-fixed2 contrast, no naive comparison; capacity baseline max matching",
+        "exact_adversarial_comparator": "Prior toy independent-edge P01/P05, zero data access, independent Fraction algebra post-run for N95/N96/N99",
+        "nonidentifiability_and_weakness": "All behavior arises from stipulated scheduling and matching; no human parameter estimate"
+      },
+      "G": {
+        "holdout_status": "NO_REAL_WORLD_HOLDOUT",
+        "external_replication": "NONE",
+        "internal_replication": "Exact enumeration plus 30,000 event deterministic PRNG final sanity check"
+      },
+      "H": {
+        "prior_id": "P-SCHEDULE-CORRELATION",
+        "mathematical_prior_update_proposed": true,
+        "human_prior_P_NOVELTY_no_change": true,
+        "observed_selection_exposure": "Cycle contracts predeclared, evaluated sequentially; 14 outcomes share a generator",
+        "triggered_next": "N94 independent vs coordinated rotation"
+      },
+      "I": {
+        "internal_synthetic_validity": "PASS_CONDITIONAL_ON_ENGINE_ASSUMPTIONS",
+        "causal_external": "NOT_ESTIMATED",
+        "originality": "No scientific originality established",
+        "grade": "0/3",
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "maturity_before": 41.2,
+        "maturity_after": "PENDING_SEPARATE_EVIDENCE_DRIVEN_SCORING"
+      },
+      "J": {
+        "decision": "BRANCH_OR_FOCUS_COMPLETE",
+        "next_cycle": "N94 independent vs coordinated rotation",
+        "discrimination_class": "New correlated joint exposure schedule / institution not a new human sample",
+        "human_R5": "STOP_R5",
+        "authorized_credit_used": 1
+      },
+      "prereg_commit": "d9ccdef6a0905c0ed69ca1afe67c6ead50d31463",
+      "source_freeze_commit": "b7684b36d518445013a4b57c6f88187a0e5c01e1",
+      "result_commit": "921392ae88641af4f315f481384d61994944f7f2",
+      "cycle_status": "VALID_ABH_SYNTHETIC_ENGINEERING",
+      "new_N1": 0,
+      "new_N2": 0,
+      "new_N3": 0
+    },
+    {
+      "id": "N94",
+      "parent": "N93",
+      "branch": "research/ab-h-esbm-schedule-interference-20261029",
+      "mode": "AB-H technical/exact structural research; synthetic AB-P-type executed instrumentation",
+      "D": 0,
+      "A": {
+        "question": "Regímenes independientes vs rotación con misma exposición marginal y probabilidad de sí/sí",
+        "estimand": "2x2 synthetic complete bipartite instantaneous matching; no real participants or temporal relationship",
+        "unit": "one synthetic event, independent draws conditioned on event schedule"
+      },
+      "B": {
+        "hypotheses": "Institutional co-exposure can change allocation and joint choice dependencies even at equal marginal opportunity; strong nulls: independent, fixed-cardinality and adjacency-only schedules",
+        "rivals": [
+          "uniform per-edge independent exposure",
+          "perfect matching rotation",
+          "uniform fixed two edges",
+          "adjacent pairs"
+        ],
+        "H_other": "induced choice correlations / risk-set geometry / nonuniform tie breaks"
+      },
+      "C": {
+        "test": "p=.5; E[matching] rotación > independiente y total exposición esperado=2; separar varianza de presupuesto",
+        "budget": "finite exhaustive 16 masks/16 mutual decisions; MC only final QA 30000 events",
+        "precommitted_tolerance": "1e-10 arithmetic"
+      },
+      "D_instrument": {
+        "instrument": "standalone JS exact finite engine; no human files; self-contained source frozen at GitHub commit before execution",
+        "source_status": "NOT_YET_COMMITTED",
+        "source_freeze_commit": "b7684b36d518445013a4b57c6f88187a0e5c01e1"
+      },
+      "E": {
+        "status": "PASS",
+        "observed": {
+          "cycle": "N94",
+          "status": "PASS",
+          "independent_expected_matches": 0.8046875,
+          "rotation_expected_matches": 1,
+          "delta": 0.1953125,
+          "rot_p2": 0.25,
+          "ind_p2": 0.12109375,
+          "warning": "Independent has variable total exposures; isolate fixed-cardinality in N95",
+          "next": "N95 budget-matched 2-exposure policy",
+          "AB_mode": "AB-H technical/exact synthetic",
+          "scientific_grade": "0/3",
+          "prereg_commit": "d9ccdef6a0905c0ed69ca1afe67c6ead50d31463",
+          "source_freeze_commit": "b7684b36d518445013a4b57c6f88187a0e5c01e1",
+          "AB_R_empirical_credit_increment": 0
+        },
+        "human_rows": 0,
+        "simulation_independence": "Same four-agent generator; NOT independent confirmations",
+        "error": null
+      },
+      "F": {
+        "adversaries": "algebra, independent-vs-fixed2 contrast, no naive comparison; capacity baseline max matching",
+        "exact_adversarial_comparator": "Prior toy independent-edge P01/P05, zero data access, independent Fraction algebra post-run for N95/N96/N99",
+        "nonidentifiability_and_weakness": "All behavior arises from stipulated scheduling and matching; no human parameter estimate"
+      },
+      "G": {
+        "holdout_status": "NO_REAL_WORLD_HOLDOUT",
+        "external_replication": "NONE",
+        "internal_replication": "Exact enumeration plus 30,000 event deterministic PRNG final sanity check"
+      },
+      "H": {
+        "prior_id": "P-SCHEDULE-CORRELATION",
+        "mathematical_prior_update_proposed": true,
+        "human_prior_P_NOVELTY_no_change": true,
+        "observed_selection_exposure": "Cycle contracts predeclared, evaluated sequentially; 14 outcomes share a generator",
+        "triggered_next": "N95 budget-matched 2-exposure policy"
+      },
+      "I": {
+        "internal_synthetic_validity": "PASS_CONDITIONAL_ON_ENGINE_ASSUMPTIONS",
+        "causal_external": "NOT_ESTIMATED",
+        "originality": "No scientific originality established",
+        "grade": "0/3",
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "maturity_before": 41.2,
+        "maturity_after": "PENDING_SEPARATE_EVIDENCE_DRIVEN_SCORING"
+      },
+      "J": {
+        "decision": "BRANCH_OR_FOCUS_COMPLETE",
+        "next_cycle": "N95 budget-matched 2-exposure policy",
+        "discrimination_class": "New correlated joint exposure schedule / institution not a new human sample",
+        "human_R5": "STOP_R5",
+        "authorized_credit_used": 1
+      },
+      "prereg_commit": "d9ccdef6a0905c0ed69ca1afe67c6ead50d31463",
+      "source_freeze_commit": "b7684b36d518445013a4b57c6f88187a0e5c01e1",
+      "result_commit": "921392ae88641af4f315f481384d61994944f7f2",
+      "cycle_status": "VALID_ABH_SYNTHETIC_ENGINEERING",
+      "new_N1": 0,
+      "new_N2": 0,
+      "new_N3": 0
+    },
+    {
+      "id": "N95",
+      "parent": "N94",
+      "branch": "research/ab-h-esbm-schedule-interference-20261029",
+      "mode": "AB-H technical/exact structural research; synthetic AB-P-type executed instrumentation",
+      "D": 0,
+      "A": {
+        "question": "Control del mismo presupuesto exacto y aristas marginales: uniforme-dos vs rotación",
+        "estimand": "2x2 synthetic complete bipartite instantaneous matching; no real participants or temporal relationship",
+        "unit": "one synthetic event, independent draws conditioned on event schedule"
+      },
+      "B": {
+        "hypotheses": "Institutional co-exposure can change allocation and joint choice dependencies even at equal marginal opportunity; strong nulls: independent, fixed-cardinality and adjacency-only schedules",
+        "rivals": [
+          "uniform per-edge independent exposure",
+          "perfect matching rotation",
+          "uniform fixed two edges",
+          "adjacent pairs"
+        ],
+        "H_other": "induced choice correlations / risk-set geometry / nonuniform tie breaks"
+      },
+      "C": {
+        "test": "Dos aristas por evento y e=.5 en ambas, comparar E[matching] a p=.5; rotación mayor",
+        "budget": "finite exhaustive 16 masks/16 mutual decisions; MC only final QA 30000 events",
+        "precommitted_tolerance": "1e-10 arithmetic"
+      },
+      "D_instrument": {
+        "instrument": "standalone JS exact finite engine; no human files; self-contained source frozen at GitHub commit before execution",
+        "source_status": "NOT_YET_COMMITTED",
+        "source_freeze_commit": "b7684b36d518445013a4b57c6f88187a0e5c01e1"
+      },
+      "E": {
+        "status": "PASS",
+        "observed": {
+          "cycle": "N95",
+          "status": "PASS",
+          "uniform2_matches": 0.8333333333333331,
+          "rotation_matches": 1,
+          "delta": 0.16666666666666685,
+          "exposure_budget": 2,
+          "next": "N96 pure adjacent-overlap contrast",
+          "AB_mode": "AB-H technical/exact synthetic",
+          "scientific_grade": "0/3",
+          "prereg_commit": "d9ccdef6a0905c0ed69ca1afe67c6ead50d31463",
+          "source_freeze_commit": "b7684b36d518445013a4b57c6f88187a0e5c01e1",
+          "AB_R_empirical_credit_increment": 0
+        },
+        "human_rows": 0,
+        "simulation_independence": "Same four-agent generator; NOT independent confirmations",
+        "error": null
+      },
+      "F": {
+        "adversaries": "algebra, independent-vs-fixed2 contrast, no naive comparison; capacity baseline max matching",
+        "exact_adversarial_comparator": "Prior toy independent-edge P01/P05, zero data access, independent Fraction algebra post-run for N95/N96/N99",
+        "nonidentifiability_and_weakness": "All behavior arises from stipulated scheduling and matching; no human parameter estimate"
+      },
+      "G": {
+        "holdout_status": "NO_REAL_WORLD_HOLDOUT",
+        "external_replication": "NONE",
+        "internal_replication": "Exact enumeration plus 30,000 event deterministic PRNG final sanity check"
+      },
+      "H": {
+        "prior_id": "P-SCHEDULE-CORRELATION",
+        "mathematical_prior_update_proposed": true,
+        "human_prior_P_NOVELTY_no_change": true,
+        "observed_selection_exposure": "Cycle contracts predeclared, evaluated sequentially; 14 outcomes share a generator",
+        "triggered_next": "N96 pure adjacent-overlap contrast"
+      },
+      "I": {
+        "internal_synthetic_validity": "PASS_CONDITIONAL_ON_ENGINE_ASSUMPTIONS",
+        "causal_external": "NOT_ESTIMATED",
+        "originality": "No scientific originality established",
+        "grade": "0/3",
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "maturity_before": 41.2,
+        "maturity_after": "PENDING_SEPARATE_EVIDENCE_DRIVEN_SCORING"
+      },
+      "J": {
+        "decision": "BRANCH_OR_FOCUS_COMPLETE",
+        "next_cycle": "N96 pure adjacent-overlap contrast",
+        "discrimination_class": "New correlated joint exposure schedule / institution not a new human sample",
+        "human_R5": "STOP_R5",
+        "authorized_credit_used": 1
+      },
+      "prereg_commit": "d9ccdef6a0905c0ed69ca1afe67c6ead50d31463",
+      "source_freeze_commit": "b7684b36d518445013a4b57c6f88187a0e5c01e1",
+      "result_commit": "921392ae88641af4f315f481384d61994944f7f2",
+      "cycle_status": "VALID_ABH_SYNTHETIC_ENGINEERING",
+      "new_N1": 0,
+      "new_N2": 0,
+      "new_N3": 0
+    },
+    {
+      "id": "N96",
+      "parent": "N95",
+      "branch": "research/ab-h-esbm-schedule-interference-20261029",
+      "mode": "AB-H technical/exact structural research; synthetic AB-P-type executed instrumentation",
+      "D": 0,
+      "A": {
+        "question": "Congestión pura: pares adyacentes vs disjuntos, mismos tamaños y marginales",
+        "estimand": "2x2 synthetic complete bipartite instantaneous matching; no real participants or temporal relationship",
+        "unit": "one synthetic event, independent draws conditioned on event schedule"
+      },
+      "B": {
+        "hypotheses": "Institutional co-exposure can change allocation and joint choice dependencies even at equal marginal opportunity; strong nulls: independent, fixed-cardinality and adjacency-only schedules",
+        "rivals": [
+          "uniform per-edge independent exposure",
+          "perfect matching rotation",
+          "uniform fixed two edges",
+          "adjacent pairs"
+        ],
+        "H_other": "induced choice correlations / risk-set geometry / nonuniform tie breaks"
+      },
+      "C": {
+        "test": "Rotación 2 oportunidades no solapadas vs adyacente 2 que comparten agente; p=.5, deltamatch=.25",
+        "budget": "finite exhaustive 16 masks/16 mutual decisions; MC only final QA 30000 events",
+        "precommitted_tolerance": "1e-10 arithmetic"
+      },
+      "D_instrument": {
+        "instrument": "standalone JS exact finite engine; no human files; self-contained source frozen at GitHub commit before execution",
+        "source_status": "NOT_YET_COMMITTED",
+        "source_freeze_commit": "b7684b36d518445013a4b57c6f88187a0e5c01e1"
+      },
+      "E": {
+        "status": "PASS",
+        "observed": {
+          "cycle": "N96",
+          "status": "PASS",
+          "adjacent_matches": 0.75,
+          "rotation_matches": 1,
+          "delta": 0.25,
+          "next": "N97 sensitivity across acceptance probabilities",
+          "AB_mode": "AB-H technical/exact synthetic",
+          "scientific_grade": "0/3",
+          "prereg_commit": "d9ccdef6a0905c0ed69ca1afe67c6ead50d31463",
+          "source_freeze_commit": "b7684b36d518445013a4b57c6f88187a0e5c01e1",
+          "AB_R_empirical_credit_increment": 0
+        },
+        "human_rows": 0,
+        "simulation_independence": "Same four-agent generator; NOT independent confirmations",
+        "error": null
+      },
+      "F": {
+        "adversaries": "algebra, independent-vs-fixed2 contrast, no naive comparison; capacity baseline max matching",
+        "exact_adversarial_comparator": "Prior toy independent-edge P01/P05, zero data access, independent Fraction algebra post-run for N95/N96/N99",
+        "nonidentifiability_and_weakness": "All behavior arises from stipulated scheduling and matching; no human parameter estimate"
+      },
+      "G": {
+        "holdout_status": "NO_REAL_WORLD_HOLDOUT",
+        "external_replication": "NONE",
+        "internal_replication": "Exact enumeration plus 30,000 event deterministic PRNG final sanity check"
+      },
+      "H": {
+        "prior_id": "P-SCHEDULE-CORRELATION",
+        "mathematical_prior_update_proposed": true,
+        "human_prior_P_NOVELTY_no_change": true,
+        "observed_selection_exposure": "Cycle contracts predeclared, evaluated sequentially; 14 outcomes share a generator",
+        "triggered_next": "N97 sensitivity across acceptance probabilities"
+      },
+      "I": {
+        "internal_synthetic_validity": "PASS_CONDITIONAL_ON_ENGINE_ASSUMPTIONS",
+        "causal_external": "NOT_ESTIMATED",
+        "originality": "No scientific originality established",
+        "grade": "0/3",
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "maturity_before": 41.2,
+        "maturity_after": "PENDING_SEPARATE_EVIDENCE_DRIVEN_SCORING"
+      },
+      "J": {
+        "decision": "BRANCH_OR_FOCUS_COMPLETE",
+        "next_cycle": "N97 sensitivity across acceptance probabilities",
+        "discrimination_class": "New correlated joint exposure schedule / institution not a new human sample",
+        "human_R5": "STOP_R5",
+        "authorized_credit_used": 1
+      },
+      "prereg_commit": "d9ccdef6a0905c0ed69ca1afe67c6ead50d31463",
+      "source_freeze_commit": "b7684b36d518445013a4b57c6f88187a0e5c01e1",
+      "result_commit": "921392ae88641af4f315f481384d61994944f7f2",
+      "cycle_status": "VALID_ABH_SYNTHETIC_ENGINEERING",
+      "new_N1": 0,
+      "new_N2": 0,
+      "new_N3": 0
+    },
+    {
+      "id": "N97",
+      "parent": "N96",
+      "branch": "research/ab-h-esbm-schedule-interference-20261029",
+      "mode": "AB-H technical/exact structural research; synthetic AB-P-type executed instrumentation",
+      "D": 0,
+      "A": {
+        "question": "Dependencia de saturación respecto a aceptación condicional p",
+        "estimand": "2x2 synthetic complete bipartite instantaneous matching; no real participants or temporal relationship",
+        "unit": "one synthetic event, independent draws conditioned on event schedule"
+      },
+      "B": {
+        "hypotheses": "Institutional co-exposure can change allocation and joint choice dependencies even at equal marginal opportunity; strong nulls: independent, fixed-cardinality and adjacency-only schedules",
+        "rivals": [
+          "uniform per-edge independent exposure",
+          "perfect matching rotation",
+          "uniform fixed two edges",
+          "adjacent pairs"
+        ],
+        "H_other": "induced choice correlations / risk-set geometry / nonuniform tie breaks"
+      },
+      "C": {
+        "test": "p=.1,.5,.9 con delta de parejas = p² entre rotación y adyacente",
+        "budget": "finite exhaustive 16 masks/16 mutual decisions; MC only final QA 30000 events",
+        "precommitted_tolerance": "1e-10 arithmetic"
+      },
+      "D_instrument": {
+        "instrument": "standalone JS exact finite engine; no human files; self-contained source frozen at GitHub commit before execution",
+        "source_status": "NOT_YET_COMMITTED",
+        "source_freeze_commit": "b7684b36d518445013a4b57c6f88187a0e5c01e1"
+      },
+      "E": {
+        "status": "PASS",
+        "observed": {
+          "cycle": "N97",
+          "status": "PASS",
+          "cases": [
+            {
+              "p": 0.1,
+              "adjacent": 0.19,
+              "rotation": 0.20000000000000004,
+              "delta": 0.010000000000000037,
+              "formula": 0.010000000000000002
+            },
+            {
+              "p": 0.5,
+              "adjacent": 0.75,
+              "rotation": 1,
+              "delta": 0.25,
+              "formula": 0.25
+            },
+            {
+              "p": 0.9,
+              "adjacent": 0.99,
+              "rotation": 1.8000000000000003,
+              "delta": 0.8100000000000003,
+              "formula": 0.81
+            }
+          ],
+          "next": "N98 actor-exposure count variance",
+          "AB_mode": "AB-H technical/exact synthetic",
+          "scientific_grade": "0/3",
+          "prereg_commit": "d9ccdef6a0905c0ed69ca1afe67c6ead50d31463",
+          "source_freeze_commit": "b7684b36d518445013a4b57c6f88187a0e5c01e1",
+          "AB_R_empirical_credit_increment": 0
+        },
+        "human_rows": 0,
+        "simulation_independence": "Same four-agent generator; NOT independent confirmations",
+        "error": null
+      },
+      "F": {
+        "adversaries": "algebra, independent-vs-fixed2 contrast, no naive comparison; capacity baseline max matching",
+        "exact_adversarial_comparator": "Prior toy independent-edge P01/P05, zero data access, independent Fraction algebra post-run for N95/N96/N99",
+        "nonidentifiability_and_weakness": "All behavior arises from stipulated scheduling and matching; no human parameter estimate"
+      },
+      "G": {
+        "holdout_status": "NO_REAL_WORLD_HOLDOUT",
+        "external_replication": "NONE",
+        "internal_replication": "Exact enumeration plus 30,000 event deterministic PRNG final sanity check"
+      },
+      "H": {
+        "prior_id": "P-SCHEDULE-CORRELATION",
+        "mathematical_prior_update_proposed": true,
+        "human_prior_P_NOVELTY_no_change": true,
+        "observed_selection_exposure": "Cycle contracts predeclared, evaluated sequentially; 14 outcomes share a generator",
+        "triggered_next": "N98 actor-exposure count variance"
+      },
+      "I": {
+        "internal_synthetic_validity": "PASS_CONDITIONAL_ON_ENGINE_ASSUMPTIONS",
+        "causal_external": "NOT_ESTIMATED",
+        "originality": "No scientific originality established",
+        "grade": "0/3",
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "maturity_before": 41.2,
+        "maturity_after": "PENDING_SEPARATE_EVIDENCE_DRIVEN_SCORING"
+      },
+      "J": {
+        "decision": "BRANCH_OR_FOCUS_COMPLETE",
+        "next_cycle": "N98 actor-exposure count variance",
+        "discrimination_class": "New correlated joint exposure schedule / institution not a new human sample",
+        "human_R5": "STOP_R5",
+        "authorized_credit_used": 1
+      },
+      "prereg_commit": "d9ccdef6a0905c0ed69ca1afe67c6ead50d31463",
+      "source_freeze_commit": "b7684b36d518445013a4b57c6f88187a0e5c01e1",
+      "result_commit": "921392ae88641af4f315f481384d61994944f7f2",
+      "cycle_status": "VALID_ABH_SYNTHETIC_ENGINEERING",
+      "new_N1": 0,
+      "new_N2": 0,
+      "new_N3": 0
+    },
+    {
+      "id": "N98",
+      "parent": "N97",
+      "branch": "research/ab-h-esbm-schedule-interference-20261029",
+      "mode": "AB-H technical/exact structural research; synthetic AB-P-type executed instrumentation",
+      "D": 0,
+      "A": {
+        "question": "Exposición por actor: mismas medias, distintas dispersiones y ceros",
+        "estimand": "2x2 synthetic complete bipartite instantaneous matching; no real participants or temporal relationship",
+        "unit": "one synthetic event, independent draws conditioned on event schedule"
+      },
+      "B": {
+        "hypotheses": "Institutional co-exposure can change allocation and joint choice dependencies even at equal marginal opportunity; strong nulls: independent, fixed-cardinality and adjacency-only schedules",
+        "rivals": [
+          "uniform per-edge independent exposure",
+          "perfect matching rotation",
+          "uniform fixed two edges",
+          "adjacent pairs"
+        ],
+        "H_other": "induced choice correlations / risk-set geometry / nonuniform tie breaks"
+      },
+      "C": {
+        "test": "Independiente y rotación E[count actor]=1; Var(actor) .5 vs 0, P(count=0) .25 vs 0",
+        "budget": "finite exhaustive 16 masks/16 mutual decisions; MC only final QA 30000 events",
+        "precommitted_tolerance": "1e-10 arithmetic"
+      },
+      "D_instrument": {
+        "instrument": "standalone JS exact finite engine; no human files; self-contained source frozen at GitHub commit before execution",
+        "source_status": "NOT_YET_COMMITTED",
+        "source_freeze_commit": "b7684b36d518445013a4b57c6f88187a0e5c01e1"
+      },
+      "E": {
+        "status": "PASS",
+        "observed": {
+          "cycle": "N98",
+          "status": "PASS",
+          "independent": {
+            "mass": 1,
+            "edge_exposure": [
+              0.5,
+              0.5,
+              0.5,
+              0.5
+            ],
+            "total_exposures": 2,
+            "variance_total": 1,
+            "actor0_exposure_mean": 1,
+            "actor0_exposure_variance": 0.5,
+            "actor0_no_exposure_probability": 0.25,
+            "exposure_edge0_edge3_covariance": 0
+          },
+          "rotation": {
+            "mass": 1,
+            "edge_exposure": [
+              0.5,
+              0.5,
+              0.5,
+              0.5
+            ],
+            "total_exposures": 2,
+            "variance_total": 0,
+            "actor0_exposure_mean": 1,
+            "actor0_exposure_variance": 0,
+            "actor0_no_exposure_probability": 0,
+            "exposure_edge0_edge3_covariance": 0.25
+          },
+          "next": "N99 full count distribution",
+          "AB_mode": "AB-H technical/exact synthetic",
+          "scientific_grade": "0/3",
+          "prereg_commit": "d9ccdef6a0905c0ed69ca1afe67c6ead50d31463",
+          "source_freeze_commit": "b7684b36d518445013a4b57c6f88187a0e5c01e1",
+          "AB_R_empirical_credit_increment": 0
+        },
+        "human_rows": 0,
+        "simulation_independence": "Same four-agent generator; NOT independent confirmations",
+        "error": null
+      },
+      "F": {
+        "adversaries": "algebra, independent-vs-fixed2 contrast, no naive comparison; capacity baseline max matching",
+        "exact_adversarial_comparator": "Prior toy independent-edge P01/P05, zero data access, independent Fraction algebra post-run for N95/N96/N99",
+        "nonidentifiability_and_weakness": "All behavior arises from stipulated scheduling and matching; no human parameter estimate"
+      },
+      "G": {
+        "holdout_status": "NO_REAL_WORLD_HOLDOUT",
+        "external_replication": "NONE",
+        "internal_replication": "Exact enumeration plus 30,000 event deterministic PRNG final sanity check"
+      },
+      "H": {
+        "prior_id": "P-SCHEDULE-CORRELATION",
+        "mathematical_prior_update_proposed": true,
+        "human_prior_P_NOVELTY_no_change": true,
+        "observed_selection_exposure": "Cycle contracts predeclared, evaluated sequentially; 14 outcomes share a generator",
+        "triggered_next": "N99 full count distribution"
+      },
+      "I": {
+        "internal_synthetic_validity": "PASS_CONDITIONAL_ON_ENGINE_ASSUMPTIONS",
+        "causal_external": "NOT_ESTIMATED",
+        "originality": "No scientific originality established",
+        "grade": "0/3",
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "maturity_before": 41.2,
+        "maturity_after": "PENDING_SEPARATE_EVIDENCE_DRIVEN_SCORING"
+      },
+      "J": {
+        "decision": "BRANCH_OR_FOCUS_COMPLETE",
+        "next_cycle": "N99 full count distribution",
+        "discrimination_class": "New correlated joint exposure schedule / institution not a new human sample",
+        "human_R5": "STOP_R5",
+        "authorized_credit_used": 1
+      },
+      "prereg_commit": "d9ccdef6a0905c0ed69ca1afe67c6ead50d31463",
+      "source_freeze_commit": "b7684b36d518445013a4b57c6f88187a0e5c01e1",
+      "result_commit": "921392ae88641af4f315f481384d61994944f7f2",
+      "cycle_status": "VALID_ABH_SYNTHETIC_ENGINEERING",
+      "new_N1": 0,
+      "new_N2": 0,
+      "new_N3": 0
+    },
+    {
+      "id": "N99",
+      "parent": "N98",
+      "branch": "research/ab-h-esbm-schedule-interference-20261029",
+      "mode": "AB-H technical/exact structural research; synthetic AB-P-type executed instrumentation",
+      "D": 0,
+      "A": {
+        "question": "No resumir por media: probabilidades de 0,1,2 parejas",
+        "estimand": "2x2 synthetic complete bipartite instantaneous matching; no real participants or temporal relationship",
+        "unit": "one synthetic event, independent draws conditioned on event schedule"
+      },
+      "B": {
+        "hypotheses": "Institutional co-exposure can change allocation and joint choice dependencies even at equal marginal opportunity; strong nulls: independent, fixed-cardinality and adjacency-only schedules",
+        "rivals": [
+          "uniform per-edge independent exposure",
+          "perfect matching rotation",
+          "uniform fixed two edges",
+          "adjacent pairs"
+        ],
+        "H_other": "induced choice correlations / risk-set geometry / nonuniform tie breaks"
+      },
+      "C": {
+        "test": "p=.5 rotación P(M=2)=.25, uniforme-dos 1/12, adyacente 0; todos son modelos sintéticos",
+        "budget": "finite exhaustive 16 masks/16 mutual decisions; MC only final QA 30000 events",
+        "precommitted_tolerance": "1e-10 arithmetic"
+      },
+      "D_instrument": {
+        "instrument": "standalone JS exact finite engine; no human files; self-contained source frozen at GitHub commit before execution",
+        "source_status": "NOT_YET_COMMITTED",
+        "source_freeze_commit": "b7684b36d518445013a4b57c6f88187a0e5c01e1"
+      },
+      "E": {
+        "status": "PASS",
+        "observed": {
+          "cycle": "N99",
+          "status": "PASS",
+          "p2_rotation": 0.25,
+          "p2_uniform2": 0.08333333333333333,
+          "p2_adjacent": 0,
+          "distributions": {
+            "rotation": [
+              0.25,
+              0.5,
+              0.25
+            ],
+            "uniform2": [
+              0.24999999999999997,
+              0.6666666666666665,
+              0.08333333333333333
+            ],
+            "adjacent": [
+              0.25,
+              0.75,
+              0
+            ]
+          },
+          "next": "N100 reparameterization of match rates",
+          "AB_mode": "AB-H technical/exact synthetic",
+          "scientific_grade": "0/3",
+          "prereg_commit": "d9ccdef6a0905c0ed69ca1afe67c6ead50d31463",
+          "source_freeze_commit": "b7684b36d518445013a4b57c6f88187a0e5c01e1",
+          "AB_R_empirical_credit_increment": 0
+        },
+        "human_rows": 0,
+        "simulation_independence": "Same four-agent generator; NOT independent confirmations",
+        "error": null
+      },
+      "F": {
+        "adversaries": "algebra, independent-vs-fixed2 contrast, no naive comparison; capacity baseline max matching",
+        "exact_adversarial_comparator": "Prior toy independent-edge P01/P05, zero data access, independent Fraction algebra post-run for N95/N96/N99",
+        "nonidentifiability_and_weakness": "All behavior arises from stipulated scheduling and matching; no human parameter estimate"
+      },
+      "G": {
+        "holdout_status": "NO_REAL_WORLD_HOLDOUT",
+        "external_replication": "NONE",
+        "internal_replication": "Exact enumeration plus 30,000 event deterministic PRNG final sanity check"
+      },
+      "H": {
+        "prior_id": "P-SCHEDULE-CORRELATION",
+        "mathematical_prior_update_proposed": true,
+        "human_prior_P_NOVELTY_no_change": true,
+        "observed_selection_exposure": "Cycle contracts predeclared, evaluated sequentially; 14 outcomes share a generator",
+        "triggered_next": "N100 reparameterization of match rates"
+      },
+      "I": {
+        "internal_synthetic_validity": "PASS_CONDITIONAL_ON_ENGINE_ASSUMPTIONS",
+        "causal_external": "NOT_ESTIMATED",
+        "originality": "No scientific originality established",
+        "grade": "0/3",
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "maturity_before": 41.2,
+        "maturity_after": "PENDING_SEPARATE_EVIDENCE_DRIVEN_SCORING"
+      },
+      "J": {
+        "decision": "BRANCH_OR_FOCUS_COMPLETE",
+        "next_cycle": "N100 reparameterization of match rates",
+        "discrimination_class": "New correlated joint exposure schedule / institution not a new human sample",
+        "human_R5": "STOP_R5",
+        "authorized_credit_used": 1
+      },
+      "prereg_commit": "d9ccdef6a0905c0ed69ca1afe67c6ead50d31463",
+      "source_freeze_commit": "b7684b36d518445013a4b57c6f88187a0e5c01e1",
+      "result_commit": "921392ae88641af4f315f481384d61994944f7f2",
+      "cycle_status": "VALID_ABH_SYNTHETIC_ENGINEERING",
+      "new_N1": 0,
+      "new_N2": 0,
+      "new_N3": 0
+    },
+    {
+      "id": "N100",
+      "parent": "N99",
+      "branch": "research/ab-h-esbm-schedule-interference-20261029",
+      "mode": "AB-H technical/exact structural research; synthetic AB-P-type executed instrumentation",
+      "D": 0,
+      "A": {
+        "question": "Igualar tasa agregada con parámetros de aceptación distintos",
+        "estimand": "2x2 synthetic complete bipartite instantaneous matching; no real participants or temporal relationship",
+        "unit": "one synthetic event, independent draws conditioned on event schedule"
+      },
+      "B": {
+        "hypotheses": "Institutional co-exposure can change allocation and joint choice dependencies even at equal marginal opportunity; strong nulls: independent, fixed-cardinality and adjacency-only schedules",
+        "rivals": [
+          "uniform per-edge independent exposure",
+          "perfect matching rotation",
+          "uniform fixed two edges",
+          "adjacent pairs"
+        ],
+        "H_other": "induced choice correlations / risk-set geometry / nonuniform tie breaks"
+      },
+      "C": {
+        "test": "Rotación p=.4 vs adyacente p=1-sqrt(.2); E[matched] ambas .8, mientras probabilidades de 2 difieren",
+        "budget": "finite exhaustive 16 masks/16 mutual decisions; MC only final QA 30000 events",
+        "precommitted_tolerance": "1e-10 arithmetic"
+      },
+      "D_instrument": {
+        "instrument": "standalone JS exact finite engine; no human files; self-contained source frozen at GitHub commit before execution",
+        "source_status": "NOT_YET_COMMITTED",
+        "source_freeze_commit": "b7684b36d518445013a4b57c6f88187a0e5c01e1"
+      },
+      "E": {
+        "status": "PASS",
+        "observed": {
+          "cycle": "N100",
+          "status": "PASS",
+          "p_rotation": 0.4,
+          "p_adjacent": 0.5527864045000421,
+          "matched_mean_rotation": 0.8,
+          "matched_mean_adjacent": 0.8000000000000003,
+          "p2_rotation": 0.16000000000000003,
+          "p2_adjacent": 0,
+          "next": "N101 maximum-cardinality tie-breaking and composition",
+          "AB_mode": "AB-H technical/exact synthetic",
+          "scientific_grade": "0/3",
+          "prereg_commit": "d9ccdef6a0905c0ed69ca1afe67c6ead50d31463",
+          "source_freeze_commit": "b7684b36d518445013a4b57c6f88187a0e5c01e1",
+          "AB_R_empirical_credit_increment": 0
+        },
+        "human_rows": 0,
+        "simulation_independence": "Same four-agent generator; NOT independent confirmations",
+        "error": null
+      },
+      "F": {
+        "adversaries": "algebra, independent-vs-fixed2 contrast, no naive comparison; capacity baseline max matching",
+        "exact_adversarial_comparator": "Prior toy independent-edge P01/P05, zero data access, independent Fraction algebra post-run for N95/N96/N99",
+        "nonidentifiability_and_weakness": "All behavior arises from stipulated scheduling and matching; no human parameter estimate"
+      },
+      "G": {
+        "holdout_status": "NO_REAL_WORLD_HOLDOUT",
+        "external_replication": "NONE",
+        "internal_replication": "Exact enumeration plus 30,000 event deterministic PRNG final sanity check"
+      },
+      "H": {
+        "prior_id": "P-SCHEDULE-CORRELATION",
+        "mathematical_prior_update_proposed": true,
+        "human_prior_P_NOVELTY_no_change": true,
+        "observed_selection_exposure": "Cycle contracts predeclared, evaluated sequentially; 14 outcomes share a generator",
+        "triggered_next": "N101 maximum-cardinality tie-breaking and composition"
+      },
+      "I": {
+        "internal_synthetic_validity": "PASS_CONDITIONAL_ON_ENGINE_ASSUMPTIONS",
+        "causal_external": "NOT_ESTIMATED",
+        "originality": "No scientific originality established",
+        "grade": "0/3",
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "maturity_before": 41.2,
+        "maturity_after": "PENDING_SEPARATE_EVIDENCE_DRIVEN_SCORING"
+      },
+      "J": {
+        "decision": "BRANCH_OR_FOCUS_COMPLETE",
+        "next_cycle": "N101 maximum-cardinality tie-breaking and composition",
+        "discrimination_class": "New correlated joint exposure schedule / institution not a new human sample",
+        "human_R5": "STOP_R5",
+        "authorized_credit_used": 1
+      },
+      "prereg_commit": "d9ccdef6a0905c0ed69ca1afe67c6ead50d31463",
+      "source_freeze_commit": "b7684b36d518445013a4b57c6f88187a0e5c01e1",
+      "result_commit": "921392ae88641af4f315f481384d61994944f7f2",
+      "cycle_status": "VALID_ABH_SYNTHETIC_ENGINEERING",
+      "new_N1": 0,
+      "new_N2": 0,
+      "new_N3": 0
+    },
+    {
+      "id": "N101",
+      "parent": "N100",
+      "branch": "research/ab-h-esbm-schedule-interference-20261029",
+      "mode": "AB-H technical/exact structural research; synthetic AB-P-type executed instrumentation",
+      "D": 0,
+      "A": {
+        "question": "Institución de desempate en grafo completo de cuatro sí/sí",
+        "estimand": "2x2 synthetic complete bipartite instantaneous matching; no real participants or temporal relationship",
+        "unit": "one synthetic event, independent draws conditioned on event schedule"
+      },
+      "B": {
+        "hypotheses": "Institutional co-exposure can change allocation and joint choice dependencies even at equal marginal opportunity; strong nulls: independent, fixed-cardinality and adjacency-only schedules",
+        "rivals": [
+          "uniform per-edge independent exposure",
+          "perfect matching rotation",
+          "uniform fixed two edges",
+          "adjacent pairs"
+        ],
+        "H_other": "induced choice correlations / risk-set geometry / nonuniform tie breaks"
+      },
+      "C": {
+        "test": "Con las 4 aristas activas existen exactamente 2 asignaciones cardinalmente máximas y composición same-group difiere 2 frente a 0",
+        "budget": "finite exhaustive 16 masks/16 mutual decisions; MC only final QA 30000 events",
+        "precommitted_tolerance": "1e-10 arithmetic"
+      },
+      "D_instrument": {
+        "instrument": "standalone JS exact finite engine; no human files; self-contained source frozen at GitHub commit before execution",
+        "source_status": "NOT_YET_COMMITTED",
+        "source_freeze_commit": "b7684b36d518445013a4b57c6f88187a0e5c01e1"
+      },
+      "E": {
+        "status": "PASS",
+        "observed": {
+          "cycle": "N101",
+          "status": "PASS",
+          "maxima": [
+            {
+              "mask": 9,
+              "same_group_pairs": 2,
+              "cardinality": 2
+            },
+            {
+              "mask": 6,
+              "same_group_pairs": 0,
+              "cardinality": 2
+            }
+          ],
+          "lexical_choice": 9,
+          "next": "N102 randomized tie and group composition",
+          "AB_mode": "AB-H technical/exact synthetic",
+          "scientific_grade": "0/3",
+          "prereg_commit": "d9ccdef6a0905c0ed69ca1afe67c6ead50d31463",
+          "source_freeze_commit": "b7684b36d518445013a4b57c6f88187a0e5c01e1",
+          "AB_R_empirical_credit_increment": 0
+        },
+        "human_rows": 0,
+        "simulation_independence": "Same four-agent generator; NOT independent confirmations",
+        "error": null
+      },
+      "F": {
+        "adversaries": "algebra, independent-vs-fixed2 contrast, no naive comparison; capacity baseline max matching",
+        "exact_adversarial_comparator": "Prior toy independent-edge P01/P05, zero data access, independent Fraction algebra post-run for N95/N96/N99",
+        "nonidentifiability_and_weakness": "All behavior arises from stipulated scheduling and matching; no human parameter estimate"
+      },
+      "G": {
+        "holdout_status": "NO_REAL_WORLD_HOLDOUT",
+        "external_replication": "NONE",
+        "internal_replication": "Exact enumeration plus 30,000 event deterministic PRNG final sanity check"
+      },
+      "H": {
+        "prior_id": "P-SCHEDULE-CORRELATION",
+        "mathematical_prior_update_proposed": true,
+        "human_prior_P_NOVELTY_no_change": true,
+        "observed_selection_exposure": "Cycle contracts predeclared, evaluated sequentially; 14 outcomes share a generator",
+        "triggered_next": "N102 randomized tie and group composition"
+      },
+      "I": {
+        "internal_synthetic_validity": "PASS_CONDITIONAL_ON_ENGINE_ASSUMPTIONS",
+        "causal_external": "NOT_ESTIMATED",
+        "originality": "No scientific originality established",
+        "grade": "0/3",
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "maturity_before": 41.2,
+        "maturity_after": "PENDING_SEPARATE_EVIDENCE_DRIVEN_SCORING"
+      },
+      "J": {
+        "decision": "BRANCH_OR_FOCUS_COMPLETE",
+        "next_cycle": "N102 randomized tie and group composition",
+        "discrimination_class": "New correlated joint exposure schedule / institution not a new human sample",
+        "human_R5": "STOP_R5",
+        "authorized_credit_used": 1
+      },
+      "prereg_commit": "d9ccdef6a0905c0ed69ca1afe67c6ead50d31463",
+      "source_freeze_commit": "b7684b36d518445013a4b57c6f88187a0e5c01e1",
+      "result_commit": "921392ae88641af4f315f481384d61994944f7f2",
+      "cycle_status": "VALID_ABH_SYNTHETIC_ENGINEERING",
+      "new_N1": 0,
+      "new_N2": 0,
+      "new_N3": 0
+    },
+    {
+      "id": "N102",
+      "parent": "N101",
+      "branch": "research/ab-h-esbm-schedule-interference-20261029",
+      "mode": "AB-H technical/exact structural research; synthetic AB-P-type executed instrumentation",
+      "D": 0,
+      "A": {
+        "question": "Desempate uniforme vs lexicográfico en grafo saturado",
+        "estimand": "2x2 synthetic complete bipartite instantaneous matching; no real participants or temporal relationship",
+        "unit": "one synthetic event, independent draws conditioned on event schedule"
+      },
+      "B": {
+        "hypotheses": "Institutional co-exposure can change allocation and joint choice dependencies even at equal marginal opportunity; strong nulls: independent, fixed-cardinality and adjacency-only schedules",
+        "rivals": [
+          "uniform per-edge independent exposure",
+          "perfect matching rotation",
+          "uniform fixed two edges",
+          "adjacent pairs"
+        ],
+        "H_other": "induced choice correlations / risk-set geometry / nonuniform tie breaks"
+      },
+      "C": {
+        "test": "Aleatorización entre 2 máximos produce E[parejas same-group]=1, manteniendo 2 parejas totales; lex mismo=2",
+        "budget": "finite exhaustive 16 masks/16 mutual decisions; MC only final QA 30000 events",
+        "precommitted_tolerance": "1e-10 arithmetic"
+      },
+      "D_instrument": {
+        "instrument": "standalone JS exact finite engine; no human files; self-contained source frozen at GitHub commit before execution",
+        "source_status": "NOT_YET_COMMITTED",
+        "source_freeze_commit": "b7684b36d518445013a4b57c6f88187a0e5c01e1"
+      },
+      "E": {
+        "status": "PASS",
+        "observed": {
+          "cycle": "N102",
+          "status": "PASS",
+          "expected_same_uniform_tie": 1,
+          "same_lexical_tie": 2,
+          "matched_total": 2,
+          "next": "N103 native bilateral data measurement",
+          "AB_mode": "AB-H technical/exact synthetic",
+          "scientific_grade": "0/3",
+          "prereg_commit": "d9ccdef6a0905c0ed69ca1afe67c6ead50d31463",
+          "source_freeze_commit": "b7684b36d518445013a4b57c6f88187a0e5c01e1",
+          "AB_R_empirical_credit_increment": 0
+        },
+        "human_rows": 0,
+        "simulation_independence": "Same four-agent generator; NOT independent confirmations",
+        "error": null
+      },
+      "F": {
+        "adversaries": "algebra, independent-vs-fixed2 contrast, no naive comparison; capacity baseline max matching",
+        "exact_adversarial_comparator": "Prior toy independent-edge P01/P05, zero data access, independent Fraction algebra post-run for N95/N96/N99",
+        "nonidentifiability_and_weakness": "All behavior arises from stipulated scheduling and matching; no human parameter estimate"
+      },
+      "G": {
+        "holdout_status": "NO_REAL_WORLD_HOLDOUT",
+        "external_replication": "NONE",
+        "internal_replication": "Exact enumeration plus 30,000 event deterministic PRNG final sanity check"
+      },
+      "H": {
+        "prior_id": "P-SCHEDULE-CORRELATION",
+        "mathematical_prior_update_proposed": true,
+        "human_prior_P_NOVELTY_no_change": true,
+        "observed_selection_exposure": "Cycle contracts predeclared, evaluated sequentially; 14 outcomes share a generator",
+        "triggered_next": "N103 native bilateral data measurement"
+      },
+      "I": {
+        "internal_synthetic_validity": "PASS_CONDITIONAL_ON_ENGINE_ASSUMPTIONS",
+        "causal_external": "NOT_ESTIMATED",
+        "originality": "No scientific originality established",
+        "grade": "0/3",
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "maturity_before": 41.2,
+        "maturity_after": "PENDING_SEPARATE_EVIDENCE_DRIVEN_SCORING"
+      },
+      "J": {
+        "decision": "BRANCH_OR_FOCUS_COMPLETE",
+        "next_cycle": "N103 native bilateral data measurement",
+        "discrimination_class": "New correlated joint exposure schedule / institution not a new human sample",
+        "human_R5": "STOP_R5",
+        "authorized_credit_used": 1
+      },
+      "prereg_commit": "d9ccdef6a0905c0ed69ca1afe67c6ead50d31463",
+      "source_freeze_commit": "b7684b36d518445013a4b57c6f88187a0e5c01e1",
+      "result_commit": "921392ae88641af4f315f481384d61994944f7f2",
+      "cycle_status": "VALID_ABH_SYNTHETIC_ENGINEERING",
+      "new_N1": 0,
+      "new_N2": 0,
+      "new_N3": 0
+    },
+    {
+      "id": "N103",
+      "parent": "N102",
+      "branch": "research/ab-h-esbm-schedule-interference-20261029",
+      "mode": "AB-H technical/exact structural research; synthetic AB-P-type executed instrumentation",
+      "D": 0,
+      "A": {
+        "question": "No identificación de dos votos nativos a partir de sí/sí agregado",
+        "estimand": "2x2 synthetic complete bipartite instantaneous matching; no real participants or temporal relationship",
+        "unit": "one synthetic event, independent draws conditioned on event schedule"
+      },
+      "B": {
+        "hypotheses": "Institutional co-exposure can change allocation and joint choice dependencies even at equal marginal opportunity; strong nulls: independent, fixed-cardinality and adjacency-only schedules",
+        "rivals": [
+          "uniform per-edge independent exposure",
+          "perfect matching rotation",
+          "uniform fixed two edges",
+          "adjacent pairs"
+        ],
+        "H_other": "induced choice correlations / risk-set geometry / nonuniform tie breaks"
+      },
+      "C": {
+        "test": "(.5,.5) y (.25,1.0) generan p_mutual=.25, pero P(sí unilateral primer actor) difiere",
+        "budget": "finite exhaustive 16 masks/16 mutual decisions; MC only final QA 30000 events",
+        "precommitted_tolerance": "1e-10 arithmetic"
+      },
+      "D_instrument": {
+        "instrument": "standalone JS exact finite engine; no human files; self-contained source frozen at GitHub commit before execution",
+        "source_status": "NOT_YET_COMMITTED",
+        "source_freeze_commit": "b7684b36d518445013a4b57c6f88187a0e5c01e1"
+      },
+      "E": {
+        "status": "PASS",
+        "observed": {
+          "cycle": "N103",
+          "status": "PASS",
+          "pair_mutual_probability": 0.25,
+          "world_uniform_actor_yes": 0.5,
+          "world_asymmetric_actor_yes": 0.25,
+          "world_asymmetric_counterpart_yes": 1,
+          "next": "N104 joint distribution despite equal marginal q",
+          "AB_mode": "AB-H technical/exact synthetic",
+          "scientific_grade": "0/3",
+          "prereg_commit": "d9ccdef6a0905c0ed69ca1afe67c6ead50d31463",
+          "source_freeze_commit": "b7684b36d518445013a4b57c6f88187a0e5c01e1",
+          "AB_R_empirical_credit_increment": 0
+        },
+        "human_rows": 0,
+        "simulation_independence": "Same four-agent generator; NOT independent confirmations",
+        "error": null
+      },
+      "F": {
+        "adversaries": "algebra, independent-vs-fixed2 contrast, no naive comparison; capacity baseline max matching",
+        "exact_adversarial_comparator": "Prior toy independent-edge P01/P05, zero data access, independent Fraction algebra post-run for N95/N96/N99",
+        "nonidentifiability_and_weakness": "All behavior arises from stipulated scheduling and matching; no human parameter estimate"
+      },
+      "G": {
+        "holdout_status": "NO_REAL_WORLD_HOLDOUT",
+        "external_replication": "NONE",
+        "internal_replication": "Exact enumeration plus 30,000 event deterministic PRNG final sanity check"
+      },
+      "H": {
+        "prior_id": "P-SCHEDULE-CORRELATION",
+        "mathematical_prior_update_proposed": true,
+        "human_prior_P_NOVELTY_no_change": true,
+        "observed_selection_exposure": "Cycle contracts predeclared, evaluated sequentially; 14 outcomes share a generator",
+        "triggered_next": "N104 joint distribution despite equal marginal q"
+      },
+      "I": {
+        "internal_synthetic_validity": "PASS_CONDITIONAL_ON_ENGINE_ASSUMPTIONS",
+        "causal_external": "NOT_ESTIMATED",
+        "originality": "No scientific originality established",
+        "grade": "0/3",
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "maturity_before": 41.2,
+        "maturity_after": "PENDING_SEPARATE_EVIDENCE_DRIVEN_SCORING"
+      },
+      "J": {
+        "decision": "BRANCH_OR_FOCUS_COMPLETE",
+        "next_cycle": "N104 joint distribution despite equal marginal q",
+        "discrimination_class": "New correlated joint exposure schedule / institution not a new human sample",
+        "human_R5": "STOP_R5",
+        "authorized_credit_used": 1
+      },
+      "prereg_commit": "d9ccdef6a0905c0ed69ca1afe67c6ead50d31463",
+      "source_freeze_commit": "b7684b36d518445013a4b57c6f88187a0e5c01e1",
+      "result_commit": "921392ae88641af4f315f481384d61994944f7f2",
+      "cycle_status": "VALID_ABH_SYNTHETIC_ENGINEERING",
+      "new_N1": 0,
+      "new_N2": 0,
+      "new_N3": 0
+    },
+    {
+      "id": "N104",
+      "parent": "N103",
+      "branch": "research/ab-h-esbm-schedule-interference-20261029",
+      "mode": "AB-H technical/exact structural research; synthetic AB-P-type executed instrumentation",
+      "D": 0,
+      "A": {
+        "question": "Mismo q por arista no implica igual distribución conjunta bajo asignación correlacionada",
+        "estimand": "2x2 synthetic complete bipartite instantaneous matching; no real participants or temporal relationship",
+        "unit": "one synthetic event, independent draws conditioned on event schedule"
+      },
+      "B": {
+        "hypotheses": "Institutional co-exposure can change allocation and joint choice dependencies even at equal marginal opportunity; strong nulls: independent, fixed-cardinality and adjacency-only schedules",
+        "rivals": [
+          "uniform per-edge independent exposure",
+          "perfect matching rotation",
+          "uniform fixed two edges",
+          "adjacent pairs"
+        ],
+        "H_other": "induced choice correlations / risk-set geometry / nonuniform tie breaks"
+      },
+      "C": {
+        "test": "Comparar matrices conjunta de sí/sí en rotación/independiente p=.5; al menos una covarianza no cero pese a q=.25 ambas",
+        "budget": "finite exhaustive 16 masks/16 mutual decisions; MC only final QA 30000 events",
+        "precommitted_tolerance": "1e-10 arithmetic"
+      },
+      "D_instrument": {
+        "instrument": "standalone JS exact finite engine; no human files; self-contained source frozen at GitHub commit before execution",
+        "source_status": "NOT_YET_COMMITTED",
+        "source_freeze_commit": "b7684b36d518445013a4b57c6f88187a0e5c01e1"
+      },
+      "E": {
+        "status": "PASS",
+        "observed": {
+          "cycle": "N104",
+          "status": "PASS",
+          "q0_marginal_both": 0.25,
+          "joint_r": 0.125,
+          "joint_i": 0.0625,
+          "covariance_rotation": 0.0625,
+          "covariance_independent": 0,
+          "next": "N105 value of institution exposure logs",
+          "AB_mode": "AB-H technical/exact synthetic",
+          "scientific_grade": "0/3",
+          "prereg_commit": "d9ccdef6a0905c0ed69ca1afe67c6ead50d31463",
+          "source_freeze_commit": "b7684b36d518445013a4b57c6f88187a0e5c01e1",
+          "AB_R_empirical_credit_increment": 0
+        },
+        "human_rows": 0,
+        "simulation_independence": "Same four-agent generator; NOT independent confirmations",
+        "error": null
+      },
+      "F": {
+        "adversaries": "algebra, independent-vs-fixed2 contrast, no naive comparison; capacity baseline max matching",
+        "exact_adversarial_comparator": "Prior toy independent-edge P01/P05, zero data access, independent Fraction algebra post-run for N95/N96/N99",
+        "nonidentifiability_and_weakness": "All behavior arises from stipulated scheduling and matching; no human parameter estimate"
+      },
+      "G": {
+        "holdout_status": "NO_REAL_WORLD_HOLDOUT",
+        "external_replication": "NONE",
+        "internal_replication": "Exact enumeration plus 30,000 event deterministic PRNG final sanity check"
+      },
+      "H": {
+        "prior_id": "P-SCHEDULE-CORRELATION",
+        "mathematical_prior_update_proposed": true,
+        "human_prior_P_NOVELTY_no_change": true,
+        "observed_selection_exposure": "Cycle contracts predeclared, evaluated sequentially; 14 outcomes share a generator",
+        "triggered_next": "N105 value of institution exposure logs"
+      },
+      "I": {
+        "internal_synthetic_validity": "PASS_CONDITIONAL_ON_ENGINE_ASSUMPTIONS",
+        "causal_external": "NOT_ESTIMATED",
+        "originality": "No scientific originality established",
+        "grade": "0/3",
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "maturity_before": 41.2,
+        "maturity_after": "PENDING_SEPARATE_EVIDENCE_DRIVEN_SCORING"
+      },
+      "J": {
+        "decision": "BRANCH_OR_FOCUS_COMPLETE",
+        "next_cycle": "N105 value of institution exposure logs",
+        "discrimination_class": "New correlated joint exposure schedule / institution not a new human sample",
+        "human_R5": "STOP_R5",
+        "authorized_credit_used": 1
+      },
+      "prereg_commit": "d9ccdef6a0905c0ed69ca1afe67c6ead50d31463",
+      "source_freeze_commit": "b7684b36d518445013a4b57c6f88187a0e5c01e1",
+      "result_commit": "921392ae88641af4f315f481384d61994944f7f2",
+      "cycle_status": "VALID_ABH_SYNTHETIC_ENGINEERING",
+      "new_N1": 0,
+      "new_N2": 0,
+      "new_N3": 0
+    },
+    {
+      "id": "N105",
+      "parent": "N104",
+      "branch": "research/ab-h-esbm-schedule-interference-20261029",
+      "mode": "AB-H technical/exact structural research; synthetic AB-P-type executed instrumentation",
+      "D": 0,
+      "A": {
+        "question": "Valor de registrar oportunidades para diferenciar instituciones rivales",
+        "estimand": "2x2 synthetic complete bipartite instantaneous matching; no real participants or temporal relationship",
+        "unit": "one synthetic event, independent draws conditioned on event schedule"
+      },
+      "B": {
+        "hypotheses": "Institutional co-exposure can change allocation and joint choice dependencies even at equal marginal opportunity; strong nulls: independent, fixed-cardinality and adjacency-only schedules",
+        "rivals": [
+          "uniform per-edge independent exposure",
+          "perfect matching rotation",
+          "uniform fixed two edges",
+          "adjacent pairs"
+        ],
+        "H_other": "induced choice correlations / risk-set geometry / nonuniform tie breaks"
+      },
+      "C": {
+        "test": "Mixturas suavizadas 90% rotación/adyacente +10% uniforme-dos, p=.5: KL de máscaras exposición > KL del conteo final de parejas; soportes positivos",
+        "budget": "finite exhaustive 16 masks/16 mutual decisions; MC only final QA 30000 events",
+        "precommitted_tolerance": "1e-10 arithmetic"
+      },
+      "D_instrument": {
+        "instrument": "standalone JS exact finite engine; no human files; self-contained source frozen at GitHub commit before execution",
+        "source_status": "NOT_YET_COMMITTED",
+        "source_freeze_commit": "b7684b36d518445013a4b57c6f88187a0e5c01e1"
+      },
+      "E": {
+        "status": "PASS",
+        "observed": {
+          "cycle": "N105",
+          "status": "PASS",
+          "kl_exposure_nats": 2.9317809662017553,
+          "kl_matching_count_nats": 0.5907383602859062,
+          "information_loss": 2.341042605915849,
+          "policy_mixture": "90% structured, 10% fixed-two uniform",
+          "next": "N106 stochastic validation against exact finite target",
+          "AB_mode": "AB-H technical/exact synthetic",
+          "scientific_grade": "0/3",
+          "prereg_commit": "d9ccdef6a0905c0ed69ca1afe67c6ead50d31463",
+          "source_freeze_commit": "b7684b36d518445013a4b57c6f88187a0e5c01e1",
+          "AB_R_empirical_credit_increment": 0
+        },
+        "human_rows": 0,
+        "simulation_independence": "Same four-agent generator; NOT independent confirmations",
+        "error": null
+      },
+      "F": {
+        "adversaries": "algebra, independent-vs-fixed2 contrast, no naive comparison; capacity baseline max matching",
+        "exact_adversarial_comparator": "Prior toy independent-edge P01/P05, zero data access, independent Fraction algebra post-run for N95/N96/N99",
+        "nonidentifiability_and_weakness": "All behavior arises from stipulated scheduling and matching; no human parameter estimate"
+      },
+      "G": {
+        "holdout_status": "NO_REAL_WORLD_HOLDOUT",
+        "external_replication": "NONE",
+        "internal_replication": "Exact enumeration plus 30,000 event deterministic PRNG final sanity check"
+      },
+      "H": {
+        "prior_id": "P-SCHEDULE-CORRELATION",
+        "mathematical_prior_update_proposed": true,
+        "human_prior_P_NOVELTY_no_change": true,
+        "observed_selection_exposure": "Cycle contracts predeclared, evaluated sequentially; 14 outcomes share a generator",
+        "triggered_next": "N106 stochastic validation against exact finite target"
+      },
+      "I": {
+        "internal_synthetic_validity": "PASS_CONDITIONAL_ON_ENGINE_ASSUMPTIONS",
+        "causal_external": "NOT_ESTIMATED",
+        "originality": "No scientific originality established",
+        "grade": "0/3",
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "maturity_before": 41.2,
+        "maturity_after": "PENDING_SEPARATE_EVIDENCE_DRIVEN_SCORING"
+      },
+      "J": {
+        "decision": "BRANCH_OR_FOCUS_COMPLETE",
+        "next_cycle": "N106 stochastic validation against exact finite target",
+        "discrimination_class": "New correlated joint exposure schedule / institution not a new human sample",
+        "human_R5": "STOP_R5",
+        "authorized_credit_used": 1
+      },
+      "prereg_commit": "d9ccdef6a0905c0ed69ca1afe67c6ead50d31463",
+      "source_freeze_commit": "b7684b36d518445013a4b57c6f88187a0e5c01e1",
+      "result_commit": "921392ae88641af4f315f481384d61994944f7f2",
+      "cycle_status": "VALID_ABH_SYNTHETIC_ENGINEERING",
+      "new_N1": 0,
+      "new_N2": 0,
+      "new_N3": 0
+    },
+    {
+      "id": "N106",
+      "parent": "N105",
+      "branch": "research/ab-h-esbm-schedule-interference-20261029",
+      "mode": "AB-H technical/exact structural research; synthetic AB-P-type executed instrumentation",
+      "D": 0,
+      "A": {
+        "question": "Validación estadística interna e invariantes del simulador estocástico respecto a oráculo exacto",
+        "estimand": "2x2 synthetic complete bipartite instantaneous matching; no real participants or temporal relationship",
+        "unit": "one synthetic event, independent draws conditioned on event schedule"
+      },
+      "B": {
+        "hypotheses": "Institutional co-exposure can change allocation and joint choice dependencies even at equal marginal opportunity; strong nulls: independent, fixed-cardinality and adjacency-only schedules",
+        "rivals": [
+          "uniform per-edge independent exposure",
+          "perfect matching rotation",
+          "uniform fixed two edges",
+          "adjacent pairs"
+        ],
+        "H_other": "induced choice correlations / risk-set geometry / nonuniform tie breaks"
+      },
+      "C": {
+        "test": "Monte Carlo 30000 eventos para rotación p=.5 con generador PRNG fijado 20261029; media +/-0.025 de exacta 1.0, P2 +/- .02 de .25; dos ejecuciones iguales y todo match≤2",
+        "budget": "finite exhaustive 16 masks/16 mutual decisions; MC only final QA 30000 events",
+        "precommitted_tolerance": ".025 mean, .02 P2"
+      },
+      "D_instrument": {
+        "instrument": "standalone JS exact finite engine; no human files; self-contained source frozen at GitHub commit before execution",
+        "source_status": "NOT_YET_COMMITTED",
+        "source_freeze_commit": "b7684b36d518445013a4b57c6f88187a0e5c01e1"
+      },
+      "E": {
+        "status": "PASS",
+        "observed": {
+          "cycle": "N106",
+          "status": "PASS",
+          "exact_mean": 1,
+          "exact_p2": 0.25,
+          "monte_carlo": {
+            "seed": 20261029,
+            "n": 30000,
+            "counts": [
+              7511,
+              14956,
+              7533
+            ],
+            "mean": 1.0007333333333333,
+            "p2": 0.2511
+          },
+          "stochastic_reproducible": true,
+          "next": "STOP_R5 human remains; audit code portability and communicate theory as conditional mathematical argument",
+          "AB_mode": "AB-H technical/exact synthetic",
+          "scientific_grade": "0/3",
+          "prereg_commit": "d9ccdef6a0905c0ed69ca1afe67c6ead50d31463",
+          "source_freeze_commit": "b7684b36d518445013a4b57c6f88187a0e5c01e1",
+          "AB_R_empirical_credit_increment": 0
+        },
+        "human_rows": 0,
+        "simulation_independence": "Same four-agent generator; NOT independent confirmations",
+        "error": null
+      },
+      "F": {
+        "adversaries": "algebra, independent-vs-fixed2 contrast, no naive comparison; capacity baseline max matching",
+        "exact_adversarial_comparator": "Prior toy independent-edge P01/P05, zero data access, independent Fraction algebra post-run for N95/N96/N99",
+        "nonidentifiability_and_weakness": "All behavior arises from stipulated scheduling and matching; no human parameter estimate"
+      },
+      "G": {
+        "holdout_status": "NO_REAL_WORLD_HOLDOUT",
+        "external_replication": "NONE",
+        "internal_replication": "Exact enumeration plus 30,000 event deterministic PRNG final sanity check"
+      },
+      "H": {
+        "prior_id": "P-SCHEDULE-CORRELATION",
+        "mathematical_prior_update_proposed": true,
+        "human_prior_P_NOVELTY_no_change": true,
+        "observed_selection_exposure": "Cycle contracts predeclared, evaluated sequentially; 14 outcomes share a generator",
+        "triggered_next": "STOP_R5 human remains; audit code portability and communicate theory as conditional mathematical argument"
+      },
+      "I": {
+        "internal_synthetic_validity": "PASS_CONDITIONAL_ON_ENGINE_ASSUMPTIONS",
+        "causal_external": "NOT_ESTIMATED",
+        "originality": "No scientific originality established",
+        "grade": "0/3",
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "maturity_before": 41.2,
+        "maturity_after": "PENDING_SEPARATE_EVIDENCE_DRIVEN_SCORING"
+      },
+      "J": {
+        "decision": "BRANCH_OR_FOCUS_COMPLETE",
+        "next_cycle": "STOP_R5 human remains; audit code portability and communicate theory as conditional mathematical argument",
+        "discrimination_class": "New correlated joint exposure schedule / institution not a new human sample",
+        "human_R5": "STOP_R5",
+        "authorized_credit_used": 1
+      },
+      "prereg_commit": "d9ccdef6a0905c0ed69ca1afe67c6ead50d31463",
+      "source_freeze_commit": "b7684b36d518445013a4b57c6f88187a0e5c01e1",
+      "result_commit": "921392ae88641af4f315f481384d61994944f7f2",
+      "cycle_status": "VALID_ABH_SYNTHETIC_ENGINEERING",
+      "new_N1": 0,
+      "new_N2": 0,
+      "new_N3": 0
+    }
+  ]
+}
