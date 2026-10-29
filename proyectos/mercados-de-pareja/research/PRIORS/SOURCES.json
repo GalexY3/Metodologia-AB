@@ -3,7 +3,7 @@
   "project": "mercados-de-pareja",
   "date": "2026-10-28",
   "scope": "Retrospective provenance backfill from repository reports plus N56/N57 publisher audit. Original data never copied; not systematic or claim of accessing raw data for bibliography.",
-  "source_count": 71,
+  "source_count": 72,
   "sources": [
     {
       "id": "SRC001",
@@ -1399,7 +1399,34 @@
       "limitations": "Student undergraduate thesis, not peer-reviewed causal replication. Scanned/indexed PDF pages not visual-confirmed due cache; C-index differences tiny, no uncertainty of difference replicated; modeling and preprocessing choices require adversarial audit. Same HCMST2009 survey as SRC067 et al — no new independent cohort.",
       "rights": "Public university thesis copyrighted, summarize/cite only. Author code/raw permission unverified.",
       "falsifier": "Acquire actual full source and valid legal license, prereg cohort-and-duration model with interval censorship, death competing risk, weights and unknown attrition, compare preexisting strong Cox RSF DeepHit in proper separate time/platform holdout."
+    },
+    {
+      "id": "SRC072",
+      "title": "clbarnes public GitHub Gist (2019), HCMST 2009 public CSV transformations, baseline v3.04 and separate W4/W5/W6 supplements",
+      "canonical_url": "https://gist.github.com/clbarnes/3d4cef38806672535a37a7db3c06c0ad",
+      "source_type": "THIRD_PARTY_PUBLIC_CSV_MIRROR_FILE_INVENTORY_NOT_ACQUIRED_OR_HASH_VERIFIED",
+      "cycle_ids": [],
+      "is_new_AB_cycle": false,
+      "verified_at": "2026-10-29",
+      "same_cohort_as": [
+        "SRC067",
+        "SRC068",
+        "SRC069",
+        "SRC070",
+        "SRC071"
+      ],
+      "independent_sample": false,
+      "what_was_verified": "Public gist created 2019-10-15, files HCMST_ver_3.04.csv, HCMST_wave_5_supplement_ver_1.csv, HCMST_wave_6_public_v1.csv, wave_4_supplement_v1_2.csv, and hcmst.py. Public gist HTML renders baseline CSV header including caseid_new, weight1, weight2, qflag, w2_broke_up, w3_brokeup_actual, but codebook and bytes not independently compared. Contains all expected wave filenames but could be incomplete/modified; NOT an official Stanford release.",
+      "source_lineage": "Unofficial CSV mirror converted from Stanford HCMST public Stata distribution. The uploader is not an original data administrator and is not a new study or an independent participant sample.",
+      "attempts_and_failures": "GitHub gist raw URL and archive/zip redirected to gist.githubusercontent.com or codeload.github.com and were not retrievable via the available web download/browser path (cache/safety redirect failures and container.download failed). No raw CSV or ZIP bytes recovered in this turn. Data original source can be acquired only from official Stanford or verified source with compatible rights.",
+      "rights": "Stanford HCMST data use agreement prohibits reidentification, no charging for further distribution, requires credit and informing research contact. Gist lacks demonstrated independent permission/conditions provenance and cannot be treated as automatically research-authorized by being public. No redistribution or analysis in this audit.",
+      "original_data_sha256": null,
+      "raw_bytes_downloaded": 0,
+      "original_rows_read": 0,
+      "risk_set_and_intervals_verified": false,
+      "critical_limits": "Original source identity, transformation provenance, row counts, waveform joins and weights not verified against Stanford official release. Source may lack the codebook and entire 2017 fresh cohort; contains W6 of 2009 original cohort ONLY. Even full original data would not make Cox/RSF/DeepHit novel against Franssen 2023.",
+      "falsifier": "Obtain official per-wave HCMST2009 public files or full gist bytes under compatible terms, verify cryptographic hashes and official schema/row counts/caseid_new join; confirm mortality/rupture, weights and response selection, then prereg truly new distinct mechanism before inspecting outcomes."
     }
   ],
-  "last_added_campaign": "POST_N82_HCMST_2009_WAVE6_AND_SURVIVAL_PRIOR_ART_GATE_NONCYCLE"
+  "last_added_campaign": "POST_N82_HCMST_GIST_UNVERIFIED_ACCESS_GATE_NONCYCLE"
 }
