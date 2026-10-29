@@ -1,0 +1,697 @@
+{
+  "schema": "ABH.A-J.BLOCK_C.v1",
+  "date": "2026-10-29",
+  "branch": "research/ab-h-esbm-integrated-20261029",
+  "original_scientific_R5": "STOP_R5_EXTERNAL",
+  "authorized": 20,
+  "start_completed": 10,
+  "new_valid": 5,
+  "ABH_valid_total": 15,
+  "invalid_AB_cycle": 0,
+  "invalid_instrumental_attempts": 1,
+  "planning": 0,
+  "remaining": 5,
+  "CT2_originality_ordinal": 7,
+  "new_grades_1_3": 0,
+  "new_grades_2_3": 0,
+  "new_grades_3_3": 0,
+  "cycle_class": "AB-H technical/model-conditional rather than independently confirmed science",
+  "cycles": [
+    {
+      "id": "N117",
+      "parent": "N116",
+      "mode": "DRIFT_D1_SCHEDULER_TEMPORAL",
+      "D": {
+        "source": "esbm_schedule_adapter.py v4 to be frozen separately",
+        "counterfactual": "in-memory original v3 imported with identical source SHA for N118",
+        "time_shock_formula": "u2=(u_original + slot*0.6180339887498948) mod 1; deterministic synthetic transform not independent real sample"
+      },
+      "A": {
+        "question": "Generalize joint meeting scheduler to two rounds/period with max one encounter per actor per round and unique dyads per period",
+        "estimand": "same fictitious 144-agent risk sets, single period vs two sequential appointment rounds; complete simulated 16-tick path"
+      },
+      "B": {
+        "rivals": [
+          "one-slot baseline",
+          "two-slot coordinated encounters",
+          "fixed hazard vs private learning changes",
+          "duplicate-meeting artefact"
+        ],
+        "H_other": "within-period shock reuse may generate correlations under deterministic transformation"
+      },
+      "C": {
+        "test": "6 seeds × 2 ticks, max mode 1 and 2 slots: 24 risksets, 0 duplicates and per actor count ≤slot budget; report expectations not human behavior",
+        "preregistered_seeds": [
+          101,
+          211,
+          307,
+          401,
+          503,
+          601
+        ]
+      },
+      "D_instrument": {
+        "source": "esbm_schedule_adapter.py v4 to be frozen separately",
+        "counterfactual": "in-memory original v3 imported with identical source SHA for N118",
+        "time_shock_formula": "u2=(u_original + slot*0.6180339887498948) mod 1; deterministic synthetic transform not independent real sample",
+        "prereg_file": "proyectos/mercados-de-pareja/research/ABH_N107_N126_20261029/PREREG_BLOCK_C.json",
+        "original_source_sha256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+        "source_freezes": [
+          "de5b64945ee44b48d6886d9d80ad0e890065a068"
+        ]
+      },
+      "E": {
+        "status": "PASS",
+        "observed": {
+          "id": "N117",
+          "status": "PASS",
+          "check_count": 24,
+          "scope": "6 seeds×2 ticks×(one/two slots), same full 144 agent risk sets",
+          "all_one_slot_contacts": 72,
+          "all_two_slot_contacts": 144,
+          "unique_per_period": true,
+          "max_actor_visits": 2,
+          "elapsed_seconds": 4.615
+        },
+        "prelim_attempt": null,
+        "human_rows": 0
+      },
+      "F": {
+        "controls": {
+          "adversary": "verify no repeat dyad, per-slot one-contact, immutable legacy, same acceptance shocks, no count inflation"
+        },
+        "adversarial_warning": "Uncalibrated simulated risk sets; acceptance law and hazards imposed; not a human baseline"
+      },
+      "G": {
+        "replication": "INTERNAL_ONLY",
+        "external": "NO_HUMAN_DATA",
+        "clean_clone": "NOT_CLAIMED"
+      },
+      "H": {
+        "prior": "P-SCHEDULE-CORRELATION synthetic-only; all human priors no change",
+        "selection_exposure": "Sequential tests with fixed seeds and known earlier miniature regression case"
+      },
+      "I": {
+        "grade": "0/3",
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "maturity_change": "scorecard separately evidence-audited",
+        "human_identification": "NONE"
+      },
+      "J": {
+        "decision": "VALID_ABH_TECHNICAL",
+        "next": "N118",
+        "slot_used": 1
+      },
+      "errors": [],
+      "result_commit": "8d9b355caaf5f07fa8ac678595c1447bcc132aad"
+    },
+    {
+      "id": "N118",
+      "parent": "N117",
+      "mode": "BRANCH_D0",
+      "D": {
+        "source": "esbm_schedule_adapter.py v4 to be frozen separately",
+        "counterfactual": "in-memory original v3 imported with identical source SHA for N118",
+        "time_shock_formula": "u2=(u_original + slot*0.6180339887498948) mod 1; deterministic synthetic transform not independent real sample"
+      },
+      "A": {
+        "question": "Check all original one-slot modes remain exactly unchanged against prior frozen adapter v3",
+        "estimand": "same fictitious 144-agent risk sets, single period vs two sequential appointment rounds; complete simulated 16-tick path"
+      },
+      "B": {
+        "rivals": [
+          "one-slot baseline",
+          "two-slot coordinated encounters",
+          "fixed hazard vs private learning changes",
+          "duplicate-meeting artefact"
+        ],
+        "H_other": "within-period shock reuse may generate correlations under deterministic transformation"
+      },
+      "C": {
+        "test": "two seeds ×3 modes paired 16-tick full result equality after deleting scenario name; original v3 file SHA fixed",
+        "preregistered_seeds": [
+          101,
+          211,
+          307,
+          401,
+          503,
+          601
+        ]
+      },
+      "D_instrument": {
+        "source": "esbm_schedule_adapter.py v4 to be frozen separately",
+        "counterfactual": "in-memory original v3 imported with identical source SHA for N118",
+        "time_shock_formula": "u2=(u_original + slot*0.6180339887498948) mod 1; deterministic synthetic transform not independent real sample",
+        "prereg_file": "proyectos/mercados-de-pareja/research/ABH_N107_N126_20261029/PREREG_BLOCK_C.json",
+        "original_source_sha256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+        "source_freezes": [
+          "de5b64945ee44b48d6886d9d80ad0e890065a068"
+        ]
+      },
+      "E": {
+        "status": "PASS",
+        "observed": {
+          "id": "N118",
+          "status": "PASS",
+          "full_longitudinal_exact_scenarios": 6,
+          "old_vs_new_v3_sha256": "5730fd224f86fedb5626e7ee38743fce3a0c95955c031301694e48068f5bbaa7",
+          "legacy_formed_by_seed": [
+            [
+              101,
+              71,
+              69,
+              67
+            ],
+            [
+              211,
+              75,
+              75,
+              72
+            ]
+          ],
+          "policy_order": [
+            "pair_max",
+            "pair_norm_same",
+            "pair_norm_cross"
+          ],
+          "elapsed_seconds": 17.505
+        },
+        "prelim_attempt": null,
+        "human_rows": 0
+      },
+      "F": {
+        "controls": {
+          "adversary": "verify no repeat dyad, per-slot one-contact, immutable legacy, same acceptance shocks, no count inflation"
+        },
+        "adversarial_warning": "Uncalibrated simulated risk sets; acceptance law and hazards imposed; not a human baseline"
+      },
+      "G": {
+        "replication": "INTERNAL_ONLY",
+        "external": "NO_HUMAN_DATA",
+        "clean_clone": "NOT_CLAIMED"
+      },
+      "H": {
+        "prior": "P-SCHEDULE-CORRELATION synthetic-only; all human priors no change",
+        "selection_exposure": "Sequential tests with fixed seeds and known earlier miniature regression case"
+      },
+      "I": {
+        "grade": "0/3",
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "maturity_change": "scorecard separately evidence-audited",
+        "human_identification": "NONE"
+      },
+      "J": {
+        "decision": "VALID_ABH_TECHNICAL",
+        "next": "N119",
+        "slot_used": 1
+      },
+      "errors": [],
+      "result_commit": "8d9b355caaf5f07fa8ac678595c1447bcc132aad"
+    },
+    {
+      "id": "N119",
+      "parent": "N118",
+      "mode": "BRANCH_D0",
+      "D": {
+        "source": "esbm_schedule_adapter.py v4 to be frozen separately",
+        "counterfactual": "in-memory original v3 imported with identical source SHA for N118",
+        "time_shock_formula": "u2=(u_original + slot*0.6180339887498948) mod 1; deterministic synthetic transform not independent real sample"
+      },
+      "A": {
+        "question": "Measure exposure increase and saturation when slots 1→2 at identical start-of-tick risk sets",
+        "estimand": "same fictitious 144-agent risk sets, single period vs two sequential appointment rounds; complete simulated 16-tick path"
+      },
+      "B": {
+        "rivals": [
+          "one-slot baseline",
+          "two-slot coordinated encounters",
+          "fixed hazard vs private learning changes",
+          "duplicate-meeting artefact"
+        ],
+        "H_other": "within-period shock reuse may generate correlations under deterministic transformation"
+      },
+      "C": {
+        "test": "6 seeds × 2 ticks × 3 modes; two slots expected count ≥one slot, at most two per actor; record marginal and shared choice budget effects, no automatic 2x claim",
+        "preregistered_seeds": [
+          101,
+          211,
+          307,
+          401,
+          503,
+          601
+        ]
+      },
+      "D_instrument": {
+        "source": "esbm_schedule_adapter.py v4 to be frozen separately",
+        "counterfactual": "in-memory original v3 imported with identical source SHA for N118",
+        "time_shock_formula": "u2=(u_original + slot*0.6180339887498948) mod 1; deterministic synthetic transform not independent real sample",
+        "prereg_file": "proyectos/mercados-de-pareja/research/ABH_N107_N126_20261029/PREREG_BLOCK_C.json",
+        "original_source_sha256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+        "source_freezes": [
+          "de5b64945ee44b48d6886d9d80ad0e890065a068"
+        ]
+      },
+      "E": {
+        "status": "PASS",
+        "observed": {
+          "id": "N119",
+          "status": "PASS",
+          "budget_checks": 36,
+          "schedule_comparison": [
+            {
+              "seed": 101,
+              "tick": 0,
+              "greedy_one": 64,
+              "greedy_two": 127,
+              "max_one": 72,
+              "max_two": 144,
+              "norm_same_one": 72,
+              "norm_same_two": 144
+            },
+            {
+              "seed": 101,
+              "tick": 3,
+              "greedy_one": 67,
+              "greedy_two": 132,
+              "max_one": 72,
+              "max_two": 144,
+              "norm_same_one": 72,
+              "norm_same_two": 144
+            },
+            {
+              "seed": 211,
+              "tick": 0,
+              "greedy_one": 62,
+              "greedy_two": 127,
+              "max_one": 72,
+              "max_two": 144,
+              "norm_same_one": 72,
+              "norm_same_two": 144
+            },
+            {
+              "seed": 211,
+              "tick": 3,
+              "greedy_one": 64,
+              "greedy_two": 129,
+              "max_one": 72,
+              "max_two": 144,
+              "norm_same_one": 72,
+              "norm_same_two": 144
+            },
+            {
+              "seed": 307,
+              "tick": 0,
+              "greedy_one": 67,
+              "greedy_two": 131,
+              "max_one": 72,
+              "max_two": 144,
+              "norm_same_one": 72,
+              "norm_same_two": 144
+            },
+            {
+              "seed": 307,
+              "tick": 3,
+              "greedy_one": 65,
+              "greedy_two": 129,
+              "max_one": 72,
+              "max_two": 144,
+              "norm_same_one": 72,
+              "norm_same_two": 144
+            },
+            {
+              "seed": 401,
+              "tick": 0,
+              "greedy_one": 64,
+              "greedy_two": 127,
+              "max_one": 72,
+              "max_two": 144,
+              "norm_same_one": 72,
+              "norm_same_two": 144
+            },
+            {
+              "seed": 401,
+              "tick": 3,
+              "greedy_one": 62,
+              "greedy_two": 128,
+              "max_one": 72,
+              "max_two": 144,
+              "norm_same_one": 72,
+              "norm_same_two": 144
+            },
+            {
+              "seed": 503,
+              "tick": 0,
+              "greedy_one": 64,
+              "greedy_two": 128,
+              "max_one": 72,
+              "max_two": 144,
+              "norm_same_one": 72,
+              "norm_same_two": 144
+            },
+            {
+              "seed": 503,
+              "tick": 3,
+              "greedy_one": 65,
+              "greedy_two": 128,
+              "max_one": 72,
+              "max_two": 144,
+              "norm_same_one": 72,
+              "norm_same_two": 144
+            },
+            {
+              "seed": 601,
+              "tick": 0,
+              "greedy_one": 65,
+              "greedy_two": 128,
+              "max_one": 72,
+              "max_two": 144,
+              "norm_same_one": 72,
+              "norm_same_two": 144
+            },
+            {
+              "seed": 601,
+              "tick": 3,
+              "greedy_one": 63,
+              "greedy_two": 129,
+              "max_one": 72,
+              "max_two": 144,
+              "norm_same_one": 72,
+              "norm_same_two": 144
+            }
+          ],
+          "warning": "Second slot shocks are deterministic transform of first, not independent realizations",
+          "elapsed_seconds": 12.004
+        },
+        "prelim_attempt": null,
+        "human_rows": 0
+      },
+      "F": {
+        "controls": {
+          "adversary": "verify no repeat dyad, per-slot one-contact, immutable legacy, same acceptance shocks, no count inflation"
+        },
+        "adversarial_warning": "Uncalibrated simulated risk sets; acceptance law and hazards imposed; not a human baseline"
+      },
+      "G": {
+        "replication": "INTERNAL_ONLY",
+        "external": "NO_HUMAN_DATA",
+        "clean_clone": "NOT_CLAIMED"
+      },
+      "H": {
+        "prior": "P-SCHEDULE-CORRELATION synthetic-only; all human priors no change",
+        "selection_exposure": "Sequential tests with fixed seeds and known earlier miniature regression case"
+      },
+      "I": {
+        "grade": "0/3",
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "maturity_change": "scorecard separately evidence-audited",
+        "human_identification": "NONE"
+      },
+      "J": {
+        "decision": "VALID_ABH_TECHNICAL",
+        "next": "N120",
+        "slot_used": 1
+      },
+      "errors": [],
+      "result_commit": "8d9b355caaf5f07fa8ac678595c1447bcc132aad"
+    },
+    {
+      "id": "N120",
+      "parent": "N119",
+      "mode": "BRANCH_D0",
+      "D": {
+        "source": "esbm_schedule_adapter.py v4 to be frozen separately",
+        "counterfactual": "in-memory original v3 imported with identical source SHA for N118",
+        "time_shock_formula": "u2=(u_original + slot*0.6180339887498948) mod 1; deterministic synthetic transform not independent real sample"
+      },
+      "A": {
+        "question": "Test conditional rejection learning under two rounds without pretending causal human response",
+        "estimand": "same fictitious 144-agent risk sets, single period vs two sequential appointment rounds; complete simulated 16-tick path"
+      },
+      "B": {
+        "rivals": [
+          "one-slot baseline",
+          "two-slot coordinated encounters",
+          "fixed hazard vs private learning changes",
+          "duplicate-meeting artefact"
+        ],
+        "H_other": "within-period shock reuse may generate correlations under deterministic transformation"
+      },
+      "C": {
+        "test": "seeds 101,211, two-slot pair_max, private learning ON vs OFF: 4 full runs, same shocks, check stock-flow, compare outcomes and note endogenous divergence",
+        "preregistered_seeds": [
+          101,
+          211,
+          307,
+          401,
+          503,
+          601
+        ]
+      },
+      "D_instrument": {
+        "source": "esbm_schedule_adapter.py v4 to be frozen separately",
+        "counterfactual": "in-memory original v3 imported with identical source SHA for N118",
+        "time_shock_formula": "u2=(u_original + slot*0.6180339887498948) mod 1; deterministic synthetic transform not independent real sample",
+        "prereg_file": "proyectos/mercados-de-pareja/research/ABH_N107_N126_20261029/PREREG_BLOCK_C.json",
+        "original_source_sha256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+        "source_freezes": [
+          "de5b64945ee44b48d6886d9d80ad0e890065a068",
+          "6022e7bdcdb135b3b33cdc353aa61dd6fed7626f"
+        ]
+      },
+      "E": {
+        "status": "PASS_AFTER_REPAIR",
+        "observed": {
+          "id": "N120",
+          "status": "PASS_AFTER_REPAIR",
+          "scope": "24 agents×4 periods, NOT full N144×16",
+          "runs": 4,
+          "results": [
+            {
+              "seed": 101,
+              "private_learning": false,
+              "formed": 5,
+              "active": 4,
+              "proposals": 24,
+              "positive": 5,
+              "bias": 0
+            },
+            {
+              "seed": 101,
+              "private_learning": true,
+              "formed": 5,
+              "active": 4,
+              "proposals": 24,
+              "positive": 5,
+              "bias": 0.06333333333333334
+            },
+            {
+              "seed": 211,
+              "private_learning": false,
+              "formed": 7,
+              "active": 5,
+              "proposals": 19,
+              "positive": 8,
+              "bias": 0
+            },
+            {
+              "seed": 211,
+              "private_learning": true,
+              "formed": 7,
+              "active": 5,
+              "proposals": 19,
+              "positive": 8,
+              "bias": 0.036666666666666674
+            }
+          ],
+          "elapsed_seconds": 0.124
+        },
+        "prelim_attempt": "144-agent two-slot run timed out; reduced 24-agent four-tick prereg & code frozen before repaired outcome",
+        "human_rows": 0
+      },
+      "F": {
+        "controls": {
+          "adversary": "verify no repeat dyad, per-slot one-contact, immutable legacy, same acceptance shocks, no count inflation"
+        },
+        "adversarial_warning": "Uncalibrated simulated risk sets; acceptance law and hazards imposed; not a human baseline"
+      },
+      "G": {
+        "replication": "INTERNAL_ONLY",
+        "external": "NO_HUMAN_DATA",
+        "clean_clone": "NOT_CLAIMED"
+      },
+      "H": {
+        "prior": "P-SCHEDULE-CORRELATION synthetic-only; all human priors no change",
+        "selection_exposure": "Sequential tests with fixed seeds and known earlier miniature regression case"
+      },
+      "I": {
+        "grade": "0/3",
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "maturity_change": "scorecard separately evidence-audited",
+        "human_identification": "NONE"
+      },
+      "J": {
+        "decision": "VALID_ABH_TECHNICAL",
+        "next": "N121",
+        "slot_used": 1
+      },
+      "errors": [
+        "Original computation exceeded timeout; repaired prereg preserved"
+      ],
+      "result_commit": "8d9b355caaf5f07fa8ac678595c1447bcc132aad"
+    },
+    {
+      "id": "N121",
+      "parent": "N120",
+      "mode": "FOCUS_D1_DURATION",
+      "D": {
+        "source": "esbm_schedule_adapter.py v4 to be frozen separately",
+        "counterfactual": "in-memory original v3 imported with identical source SHA for N118",
+        "time_shock_formula": "u2=(u_original + slot*0.6180339887498948) mod 1; deterministic synthetic transform not independent real sample"
+      },
+      "A": {
+        "question": "Distinguish formation flow, active stock and censored durations under two-slot scheduling",
+        "estimand": "same fictitious 144-agent risk sets, single period vs two sequential appointment rounds; complete simulated 16-tick path"
+      },
+      "B": {
+        "rivals": [
+          "one-slot baseline",
+          "two-slot coordinated encounters",
+          "fixed hazard vs private learning changes",
+          "duplicate-meeting artefact"
+        ],
+        "H_other": "within-period shock reuse may generate correlations under deterministic transformation"
+      },
+      "C": {
+        "test": "seeds 101,211; hazard .4/1/1.75, 6 full runs; exact stock balance and documented right censoring, no infer human duration",
+        "preregistered_seeds": [
+          101,
+          211,
+          307,
+          401,
+          503,
+          601
+        ]
+      },
+      "D_instrument": {
+        "source": "esbm_schedule_adapter.py v4 to be frozen separately",
+        "counterfactual": "in-memory original v3 imported with identical source SHA for N118",
+        "time_shock_formula": "u2=(u_original + slot*0.6180339887498948) mod 1; deterministic synthetic transform not independent real sample",
+        "prereg_file": "proyectos/mercados-de-pareja/research/ABH_N107_N126_20261029/PREREG_BLOCK_C.json",
+        "original_source_sha256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+        "source_freezes": [
+          "de5b64945ee44b48d6886d9d80ad0e890065a068",
+          "6022e7bdcdb135b3b33cdc353aa61dd6fed7626f"
+        ]
+      },
+      "E": {
+        "status": "PASS_AFTER_REPAIR",
+        "observed": {
+          "id": "N121",
+          "status": "PASS_AFTER_REPAIR",
+          "scope": "24 agents×4 periods, NOT full N144×16",
+          "runs": 6,
+          "results": [
+            {
+              "seed": 101,
+              "scenario": "longer_partnerships",
+              "formed": 5,
+              "dissolved": 1,
+              "active": 4,
+              "right_censored": 4,
+              "completed_duration_mean": 2,
+              "completed_n": 1
+            },
+            {
+              "seed": 101,
+              "scenario": "mixed_random",
+              "formed": 5,
+              "dissolved": 1,
+              "active": 4,
+              "right_censored": 4,
+              "completed_duration_mean": 2,
+              "completed_n": 1
+            },
+            {
+              "seed": 101,
+              "scenario": "shorter_partnerships",
+              "formed": 3,
+              "dissolved": 2,
+              "active": 1,
+              "right_censored": 1,
+              "completed_duration_mean": 1.5,
+              "completed_n": 2
+            },
+            {
+              "seed": 211,
+              "scenario": "longer_partnerships",
+              "formed": 6,
+              "dissolved": 0,
+              "active": 6,
+              "right_censored": 6,
+              "completed_duration_mean": null,
+              "completed_n": 0
+            },
+            {
+              "seed": 211,
+              "scenario": "mixed_random",
+              "formed": 7,
+              "dissolved": 2,
+              "active": 5,
+              "right_censored": 5,
+              "completed_duration_mean": 1.5,
+              "completed_n": 2
+            },
+            {
+              "seed": 211,
+              "scenario": "shorter_partnerships",
+              "formed": 7,
+              "dissolved": 2,
+              "active": 5,
+              "right_censored": 5,
+              "completed_duration_mean": 1,
+              "completed_n": 2
+            }
+          ],
+          "elapsed_seconds": 0.186
+        },
+        "prelim_attempt": "144-agent two-slot run timed out; reduced 24-agent four-tick prereg & code frozen before repaired outcome",
+        "human_rows": 0
+      },
+      "F": {
+        "controls": {
+          "adversary": "verify no repeat dyad, per-slot one-contact, immutable legacy, same acceptance shocks, no count inflation"
+        },
+        "adversarial_warning": "Uncalibrated simulated risk sets; acceptance law and hazards imposed; not a human baseline"
+      },
+      "G": {
+        "replication": "INTERNAL_ONLY",
+        "external": "NO_HUMAN_DATA",
+        "clean_clone": "NOT_CLAIMED"
+      },
+      "H": {
+        "prior": "P-SCHEDULE-CORRELATION synthetic-only; all human priors no change",
+        "selection_exposure": "Sequential tests with fixed seeds and known earlier miniature regression case"
+      },
+      "I": {
+        "grade": "0/3",
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "maturity_change": "scorecard separately evidence-audited",
+        "human_identification": "NONE"
+      },
+      "J": {
+        "decision": "VALID_ABH_TECHNICAL",
+        "next": "audit and propose next stage",
+        "slot_used": 1
+      },
+      "errors": [
+        "Original computation exceeded timeout; repaired prereg preserved"
+      ],
+      "result_commit": "8d9b355caaf5f07fa8ac678595c1447bcc132aad"
+    }
+  ]
+}
