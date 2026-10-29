@@ -1,0 +1,208 @@
+{
+  "schema": "ABH3.2.1_AJ_PRE_OUTCOME",
+  "date": "2026-10-30",
+  "branch": "research/ab-h-esbm-trajectory-equivalence-20261030",
+  "authorization": 20,
+  "used": 0,
+  "pending": 20,
+  "parent_head": "d3c5597c3469aaab4cdf647cfa59aa115173b4f5",
+  "prior_art": "No claim of novelty of invariance or networks; graph source code previously found actor-ID-sensitive and repaired",
+  "R5": "STOP_HUMAN",
+  "CT2": 7,
+  "maturity": 42.85,
+  "block": "A",
+  "contracts": [
+    {
+      "id": "N147",
+      "parent": "N146",
+      "mode": "FOCUS",
+      "drift_D": 0.2,
+      "A": {
+        "question": "Check full ESBM 4-tick event histories on canonical ring under simultaneous actor-label and shock permutation",
+        "unit": "completely synthetic event trajectories, same agents and shocks permuted, not new human observations",
+        "estimand": "exact actor-relabel equivariance in whole simulated outcome path"
+      },
+      "B": {
+        "rivals": [
+          "permutation equivariant engine",
+          "label-dependent max-weight matching tie",
+          "source u_match upper triangle",
+          "schedule-order dependent private learning"
+        ],
+        "null": "Original and relabelled trajectories differ in substantive stock or offers"
+      },
+      "C": {
+        "precommitted_endpoints": "2 seeds ×3 permutations ×2 slot policies; exact per-time stock trajectories, aggregate stats and directed event multisets or record smallest counterexample",
+        "falsifier": "Single unequal trajectory fails claim; no aggregate averaging to hide it"
+      },
+      "D": {
+        "inputs": "N24 T4; original ESBM and canonical graph imported unchanged; original SHA256 f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b; SHA of runner GitHub frozen in next commit",
+        "shocks": "Every 1D and 3D state tensor indexed with same actor permutation"
+      },
+      "E": "NOT_EXECUTED",
+      "F": {
+        "strong_control": "Re-identification of full event multiset, not just same graph; keep first failure and withdraw overstated symmetry",
+        "adversary": "legacy graph baseline and single round vs two slots"
+      },
+      "G": {
+        "external": "NONE",
+        "replication": "only same synthetic implementation"
+      },
+      "H": "No change human priors unless independent data; P-NETWORK-INVARIANCE technical update possible",
+      "I": {
+        "grade": "0/3",
+        "CT2_before": 7,
+        "CT2_after_expected": 7,
+        "maturity": "only if independently verified software improvements"
+      },
+      "J": {
+        "if_pass": "N148",
+        "if_fail": "REGISTER VALID_NEGATIVE then prereg REPAIR; no retroactive source edits"
+      }
+    },
+    {
+      "id": "N148",
+      "parent": "N147",
+      "mode": "BRANCH",
+      "drift_D": 1,
+      "A": {
+        "question": "Check full ESBM on rank-canonical degree-preserved rewired graph under relabel",
+        "unit": "completely synthetic event trajectories, same agents and shocks permuted, not new human observations",
+        "estimand": "exact actor-relabel equivariance in whole simulated outcome path"
+      },
+      "B": {
+        "rivals": [
+          "permutation equivariant engine",
+          "label-dependent max-weight matching tie",
+          "source u_match upper triangle",
+          "schedule-order dependent private learning"
+        ],
+        "null": "Original and relabelled trajectories differ in substantive stock or offers"
+      },
+      "C": {
+        "precommitted_endpoints": "Identical budget to N147, different graph; preserve all failures and timing",
+        "falsifier": "Single unequal trajectory fails claim; no aggregate averaging to hide it"
+      },
+      "D": {
+        "inputs": "N24 T4; original ESBM and canonical graph imported unchanged; original SHA256 f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b; SHA of runner GitHub frozen in next commit",
+        "shocks": "Every 1D and 3D state tensor indexed with same actor permutation"
+      },
+      "E": "NOT_EXECUTED",
+      "F": {
+        "strong_control": "Re-identification of full event multiset, not just same graph; keep first failure and withdraw overstated symmetry",
+        "adversary": "legacy graph baseline and single round vs two slots"
+      },
+      "G": {
+        "external": "NONE",
+        "replication": "only same synthetic implementation"
+      },
+      "H": "No change human priors unless independent data; P-NETWORK-INVARIANCE technical update possible",
+      "I": {
+        "grade": "0/3",
+        "CT2_before": 7,
+        "CT2_after_expected": 7,
+        "maturity": "only if independently verified software improvements"
+      },
+      "J": {
+        "if_pass": "N149",
+        "if_fail": "REGISTER VALID_NEGATIVE then prereg REPAIR; no retroactive source edits"
+      }
+    },
+    {
+      "id": "N149",
+      "parent": "N148",
+      "mode": "ADVERSARIAL",
+      "drift_D": 0.2,
+      "A": {
+        "question": "Localize any failure by comparing graph, meeting schedule, directed proposals and responses, match choice and dissolution",
+        "unit": "completely synthetic event trajectories, same agents and shocks permuted, not new human observations",
+        "estimand": "exact actor-relabel equivariance in whole simulated outcome path"
+      },
+      "B": {
+        "rivals": [
+          "permutation equivariant engine",
+          "label-dependent max-weight matching tie",
+          "source u_match upper triangle",
+          "schedule-order dependent private learning"
+        ],
+        "null": "Original and relabelled trajectories differ in substantive stock or offers"
+      },
+      "C": {
+        "precommitted_endpoints": "At least 1 failing pair if N147/148 fail; report first time/stage and weighted matching tie/upper-triangle artifacts. If none fail, use exact eight cases to certify stages",
+        "falsifier": "Single unequal trajectory fails claim; no aggregate averaging to hide it"
+      },
+      "D": {
+        "inputs": "N24 T4; original ESBM and canonical graph imported unchanged; original SHA256 f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b; SHA of runner GitHub frozen in next commit",
+        "shocks": "Every 1D and 3D state tensor indexed with same actor permutation"
+      },
+      "E": "NOT_EXECUTED",
+      "F": {
+        "strong_control": "Re-identification of full event multiset, not just same graph; keep first failure and withdraw overstated symmetry",
+        "adversary": "legacy graph baseline and single round vs two slots"
+      },
+      "G": {
+        "external": "NONE",
+        "replication": "only same synthetic implementation"
+      },
+      "H": "No change human priors unless independent data; P-NETWORK-INVARIANCE technical update possible",
+      "I": {
+        "grade": "0/3",
+        "CT2_before": 7,
+        "CT2_after_expected": 7,
+        "maturity": "only if independently verified software improvements"
+      },
+      "J": {
+        "if_pass": "N150",
+        "if_fail": "REGISTER VALID_NEGATIVE then prereg REPAIR; no retroactive source edits"
+      }
+    },
+    {
+      "id": "N150",
+      "parent": "N149",
+      "mode": "CONTROL",
+      "drift_D": 0.2,
+      "A": {
+        "question": "Test whether label permutation fails with original ESBM legacy scheduler and why network mechanism does not imply total-engine equivariance",
+        "unit": "completely synthetic event trajectories, same agents and shocks permuted, not new human observations",
+        "estimand": "exact actor-relabel equivariance in whole simulated outcome path"
+      },
+      "B": {
+        "rivals": [
+          "permutation equivariant engine",
+          "label-dependent max-weight matching tie",
+          "source u_match upper triangle",
+          "schedule-order dependent private learning"
+        ],
+        "null": "Original and relabelled trajectories differ in substantive stock or offers"
+      },
+      "C": {
+        "precommitted_endpoints": "2 seeds×2 permutations legacy N24×4; compare outcomes and first failed stage; no claim that baseline is actor-equivariant if it isn't",
+        "falsifier": "Single unequal trajectory fails claim; no aggregate averaging to hide it"
+      },
+      "D": {
+        "inputs": "N24 T4; original ESBM and canonical graph imported unchanged; original SHA256 f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b; SHA of runner GitHub frozen in next commit",
+        "shocks": "Every 1D and 3D state tensor indexed with same actor permutation"
+      },
+      "E": "NOT_EXECUTED",
+      "F": {
+        "strong_control": "Re-identification of full event multiset, not just same graph; keep first failure and withdraw overstated symmetry",
+        "adversary": "legacy graph baseline and single round vs two slots"
+      },
+      "G": {
+        "external": "NONE",
+        "replication": "only same synthetic implementation"
+      },
+      "H": "No change human priors unless independent data; P-NETWORK-INVARIANCE technical update possible",
+      "I": {
+        "grade": "0/3",
+        "CT2_before": 7,
+        "CT2_after_expected": 7,
+        "maturity": "only if independently verified software improvements"
+      },
+      "J": {
+        "if_pass": "Design next controls/new component",
+        "if_fail": "REGISTER VALID_NEGATIVE then prereg REPAIR; no retroactive source edits"
+      }
+    }
+  ]
+}
