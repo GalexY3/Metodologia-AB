@@ -1,0 +1,196 @@
+{
+  "schema": "ABH.3.2.1.PREEXEC.BLOCK_A.v1",
+  "date": "2026-10-29",
+  "budget_authorized": 20,
+  "slots_all": "N107–N126",
+  "target": "ESBM v2 Python integration with explicit stages and competent match controls",
+  "base_commit": "f41dc478fbcdb86fe98665b75aeed9951b8f2f91",
+  "source_original": "proyectos/mercados-de-pareja/research/ABR_ESBM20_20261028/esbm_dynamic.py",
+  "source_blob_SHA": "5fc9f63fd44ff81ce9ff6c900ba6bf24153356f2",
+  "phase": "A / 5 conditional slots",
+  "cycles": [
+    {
+      "id": "N107",
+      "parent": "N106",
+      "mode": "REPAIR/PORT",
+      "D": {
+        "version": "code SHA to be frozen in separate GitHub commit after this prereg, and before running",
+        "parity": "legacy should use original import, no modification to historical ESBM file"
+      },
+      "A": {
+        "question": "Port the original ESBM simulate() to a scheduled wrapper and require exact 60/60 scenario x seed legacy parity",
+        "estimand": "synthetic simulated outcomes at N=144 over 16 periods, same six seeds; origin ESBM v2 unchanged",
+        "true_outcome": "simulator internal pair formation / exposure / active duration; not human causal outcomes"
+      },
+      "B": {
+        "rivals": [
+          "original ESBM v2 legacy",
+          "greedy equivalent-budget exposure",
+          "central cardinality matching",
+          "null and sham"
+        ],
+        "other": "risk-set and exposure budget can change endogenously"
+      },
+      "C": {
+        "precommitted_check": "60 scenarios six seeds ten policies; all published key fields exactly equal; strict byte-equivalent JSON after normalize only route/path; on failure INVALID then REPAIR before N108",
+        "acceptance": "only PASS on full checked invariants; neither upstream seed overlap nor 20 tests implies external replication"
+      },
+      "E": "PENDING",
+      "F": "adversarial checks per cycle, failed expectations preserved",
+      "G": "internal only; different generator not independent human replication",
+      "H": "New data sources only if genuinely primary and rights checked, otherwise NO_CHANGE on human priors and separate toy results",
+      "I": "Grade 0/3 unless new scientific prior art gate; CT2 7 unchanged; maturity requires actual new code and verified tests",
+      "J": {
+        "if_pass": "N108",
+        "if_fail": "REPAIR or STOP; do not count"
+      }
+    },
+    {
+      "id": "N108",
+      "parent": "N107",
+      "mode": "BRANCH",
+      "D": {
+        "version": "code SHA to be frozen in separate GitHub commit after this prereg, and before running",
+        "parity": "legacy should use original import, no modification to historical ESBM file"
+      },
+      "A": {
+        "question": "Institute encounter scheduler with per-slot simultaneous two-sided exposure and exclusivity; preserve original consent law and outcome denominator explicitly",
+        "estimand": "synthetic simulated outcomes at N=144 over 16 periods, same six seeds; origin ESBM v2 unchanged",
+        "true_outcome": "simulator internal pair formation / exposure / active duration; not human causal outcomes"
+      },
+      "B": {
+        "rivals": [
+          "original ESBM v2 legacy",
+          "greedy equivalent-budget exposure",
+          "central cardinality matching",
+          "null and sham"
+        ],
+        "other": "risk-set and exposure budget can change endogenously"
+      },
+      "C": {
+        "precommitted_check": "Matched two-sided exposures should yield directed impression parity, each per-slot actor <=1; no self, no noneligible, no duplicate; no assertion of human realism",
+        "acceptance": "only PASS on full checked invariants; neither upstream seed overlap nor 20 tests implies external replication"
+      },
+      "E": "PENDING",
+      "F": "adversarial checks per cycle, failed expectations preserved",
+      "G": "internal only; different generator not independent human replication",
+      "H": "New data sources only if genuinely primary and rights checked, otherwise NO_CHANGE on human priors and separate toy results",
+      "I": "Grade 0/3 unless new scientific prior art gate; CT2 7 unchanged; maturity requires actual new code and verified tests",
+      "J": {
+        "if_pass": "N109",
+        "if_fail": "REPAIR or STOP; do not count"
+      }
+    },
+    {
+      "id": "N109",
+      "parent": "N108",
+      "mode": "FOCUS",
+      "D": {
+        "version": "code SHA to be frozen in separate GitHub commit after this prereg, and before running",
+        "parity": "legacy should use original import, no modification to historical ESBM file"
+      },
+      "A": {
+        "question": "Match exposure budget and marginal candidate information between schedule policies pair_greedy vs pair_optimal; compare fairness without conflating own budget",
+        "estimand": "synthetic simulated outcomes at N=144 over 16 periods, same six seeds; origin ESBM v2 unchanged",
+        "true_outcome": "simulator internal pair formation / exposure / active duration; not human causal outcomes"
+      },
+      "B": {
+        "rivals": [
+          "original ESBM v2 legacy",
+          "greedy equivalent-budget exposure",
+          "central cardinality matching",
+          "null and sham"
+        ],
+        "other": "risk-set and exposure budget can change endogenously"
+      },
+      "C": {
+        "precommitted_check": "Same people, compatibility and random shocks; max-weight/matching schedule vs greedy; ratio and count; report realized budget mismatch if any and do NOT claim controlled effect",
+        "acceptance": "only PASS on full checked invariants; neither upstream seed overlap nor 20 tests implies external replication"
+      },
+      "E": "PENDING",
+      "F": "adversarial checks per cycle, failed expectations preserved",
+      "G": "internal only; different generator not independent human replication",
+      "H": "New data sources only if genuinely primary and rights checked, otherwise NO_CHANGE on human priors and separate toy results",
+      "I": "Grade 0/3 unless new scientific prior art gate; CT2 7 unchanged; maturity requires actual new code and verified tests",
+      "J": {
+        "if_pass": "N110",
+        "if_fail": "REPAIR or STOP; do not count"
+      }
+    },
+    {
+      "id": "N110",
+      "parent": "N109",
+      "mode": "ADVERSARIAL",
+      "D": {
+        "version": "code SHA to be frozen in separate GitHub commit after this prereg, and before running",
+        "parity": "legacy should use original import, no modification to historical ESBM file"
+      },
+      "A": {
+        "question": "Actor-label and ordering invariance of joint schedule on fixed synthetic small graph",
+        "estimand": "synthetic simulated outcomes at N=144 over 16 periods, same six seeds; origin ESBM v2 unchanged",
+        "true_outcome": "simulator internal pair formation / exposure / active duration; not human causal outcomes"
+      },
+      "B": {
+        "rivals": [
+          "original ESBM v2 legacy",
+          "greedy equivalent-budget exposure",
+          "central cardinality matching",
+          "null and sham"
+        ],
+        "other": "risk-set and exposure budget can change endogenously"
+      },
+      "C": {
+        "precommitted_check": "Unique ID relabeling mapped to original, compare actual unordered scheduled edges, with and without deterministic tie; fail if tie order artifacts",
+        "acceptance": "only PASS on full checked invariants; neither upstream seed overlap nor 20 tests implies external replication"
+      },
+      "E": "PENDING",
+      "F": "adversarial checks per cycle, failed expectations preserved",
+      "G": "internal only; different generator not independent human replication",
+      "H": "New data sources only if genuinely primary and rights checked, otherwise NO_CHANGE on human priors and separate toy results",
+      "I": "Grade 0/3 unless new scientific prior art gate; CT2 7 unchanged; maturity requires actual new code and verified tests",
+      "J": {
+        "if_pass": "N111",
+        "if_fail": "REPAIR or STOP; do not count"
+      }
+    },
+    {
+      "id": "N111",
+      "parent": "N110",
+      "mode": "TEMPORAL",
+      "D": {
+        "version": "code SHA to be frozen in separate GitHub commit after this prereg, and before running",
+        "parity": "legacy should use original import, no modification to historical ESBM file"
+      },
+      "A": {
+        "question": "Dissolution, exposure, mutual intention and final stocks preserve algebra under new modes and six paired seeds",
+        "estimand": "synthetic simulated outcomes at N=144 over 16 periods, same six seeds; origin ESBM v2 unchanged",
+        "true_outcome": "simulator internal pair formation / exposure / active duration; not human causal outcomes"
+      },
+      "B": {
+        "rivals": [
+          "original ESBM v2 legacy",
+          "greedy equivalent-budget exposure",
+          "central cardinality matching",
+          "null and sham"
+        ],
+        "other": "risk-set and exposure budget can change endogenously"
+      },
+      "C": {
+        "precommitted_check": "For each scenario and six seeds, formed-dissolved=active, every new pair in eligible, max one simultaneous partner, exposure cap; report independent temporal comparison with baseline and no human extrapolation",
+        "acceptance": "only PASS on full checked invariants; neither upstream seed overlap nor 20 tests implies external replication"
+      },
+      "E": "PENDING",
+      "F": "adversarial checks per cycle, failed expectations preserved",
+      "G": "internal only; different generator not independent human replication",
+      "H": "New data sources only if genuinely primary and rights checked, otherwise NO_CHANGE on human priors and separate toy results",
+      "I": "Grade 0/3 unless new scientific prior art gate; CT2 7 unchanged; maturity requires actual new code and verified tests",
+      "J": {
+        "if_pass": "evaluate next five tasks under adaptivity",
+        "if_fail": "REPAIR or STOP; do not count"
+      }
+    }
+  ],
+  "ethics": "No human raw data, no SSJY, SRC104 untouched; no licence acceptance, no contacting authors, no PR merge",
+  "source_rights": "Original repo only with existing direct access",
+  "preserve": "AB-R 26 historical, new AB-H 0 before testing, 106 sources,31 priors,169 updates; CT2 ordinal 7, maturity 41.2; R5 human STOP"
+}
