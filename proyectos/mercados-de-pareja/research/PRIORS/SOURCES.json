@@ -3,7 +3,7 @@
   "project": "mercados-de-pareja",
   "date": "2026-10-28",
   "scope": "Retrospective provenance backfill from repository reports plus N56/N57 publisher audit. Original data never copied; not systematic or claim of accessing raw data for bibliography.",
-  "source_count": 91,
+  "source_count": 93,
   "sources": [
     {
       "id": "SRC001",
@@ -1810,7 +1810,46 @@
       "limitations": "Prediction r is association; no intervention on language, randomization of who speaks to whom, original external test against new people or independent platform verified. Published internal splits should not be confused with independent study; LLM familiarity with pre-2007 language may be a transport concern but no own test.",
       "falsifier": "Novel temporal dyadic language claim needs new consented and rights-cleared corpus with independent actors, sessions and external venue plus strong human, SRM, LIWC, RF and language baselines, prereg and code hash pre-outcome.",
       "AB_cycle_increment": 0
+    },
+    {
+      "id": "SRC092",
+      "title": "Humberg, Gerlach, Franke-Prasse, Geukes and Back (2023), Date me for Science original 2015 Münster speed-dating cohort, PsychArchives package public-use CC BY 4.0",
+      "canonical_url": "https://doi.org/10.23668/psycharchives.12546",
+      "archive_url": "https://psycharchives.org/en/item/f4921a97-a53c-4398-b1a7-8cd23c0e5653",
+      "article_url": "https://doi.org/10.5964/ps.7551",
+      "platform_rights_url": "https://www.psycharchives.org/en/about",
+      "observed_at": "2026-10-29",
+      "cycle_ids": [],
+      "source_type": "ORIGINAL_INSTITUTIONAL_PUBLIC_USE_CC_BY4_ORIGINAL_DYADIC_DATES_CODEBOOK_LICENSED_BUT_DATA_UNFETCHED_BINARIES_UNVERIFIED",
+      "contribution": "PsychArchives record confirms a single original data+code+codebook supplementary ZIP under Sharing Level 0 (Public Use), CC BY 4.0; size 4.1 MB and publisher-provided MD5 97a7f6cdecbe65e6d82776da33a02158 (metadata only, not calculated SHA256). Original 2015 Münster Date me for Science study recruited 397 heterosexual singles and 940 in-person date dyads at 42 laboratory events; partners rotated within event; participants supplied post-date attraction/fit/likeability/interest/sexual attraction items rated 1–7. Full codebook and preprocessed data described in package, so novel explicitly open institutional acquisition route with many event clusters rather than Graz Scientific Use License or prior restricted archives.",
+      "rights": "PsychArchives archive identifies the ZIP itself as CC BY 4.0 Public Use Level 0; this is an explicit data-package license, not mere journal CC. Platform states Level 0 immediate public use. No per-user contract accepted, no author contacted. Do not redistribute person-level rows or reidentify participants.",
+      "access_status": "OPEN_LICENSE_VERIFIED_ORIGINAL_ZIP_FETCH_FAILED_UNINSPECTED",
+      "file_artifact": "Humberg_et_al_2023_Personality_Similarity_Romantic_Attraction_SUPPL.zip",
+      "size_metadata": "4.1 MB",
+      "official_md5_metadata": "97a7f6cdecbe65e6d82776da33a02158",
+      "local_sha256": null,
+      "original_bytes_downloaded": false,
+      "limits": "Original ZIP direct download at pada.psycharchives.org returned HTTP 502 through public browse, and subsequent single direct transfer attempt failed. No fallback fetch loop. Published paper and archive list ordinal romantic attraction and date quality, not confirmed explicit yes/no for both actors in included prepared file. Dataset preprocessed for one paper may omit match/contact variable even if broader Date me for Science collected one. No actual codebook, raw entries, participants, outcomes or SHA256 accessed. Holdout by distinct 42 events would be within same recruitment frame, not external replication; public article explicitly acknowledges dataset used in other studies, so novelty needs dedup/prior-art check without OSF browsing.",
+      "next_gate": "Authorized transfer of original ZIP and verified SHA256, then non-outcome schema/codebook check for two native binary decisions with participant IDs and encounter-level exposures; no N83 until novelty A–J pre-outcome frozen and external cohort holdout. If only 1–7 post-date ratings, exclude strict bilateral claim.",
+      "AB_cycle_increment": 0
+    },
+    {
+      "id": "SRC093",
+      "title": "Zhao, Sidari, Lee and Zietsch (2024 online, 2025 issue), original 2014–2019 Queensland speed-dating dataset and permutation-baseline replication code",
+      "canonical_url": "https://doi.org/10.1177/08902070241286254",
+      "original_repository": "https://github.com/amyzhao11/statedvsrevealedpref",
+      "original_data_path": "https://github.com/amyzhao11/statedvsrevealedpref/blob/main/Analyses/2014-2019%20Speed%20Dating%20Data.csv",
+      "original_blob_git_sha1": "8287e7ac60b8d2912e4202b33aad7c019bd9f9d5",
+      "observed_at": "2026-10-29",
+      "cycle_ids": [],
+      "source_type": "INDEPENDENT_ORIGINAL_SPEED_DATING_COHORT_AND_PUBLISHED_ADVERSARIAL_BASELINE_HEADER_ONLY_OUTCOMES_NOT_OPENED",
+      "contribution": "Original Queensland ethical speed-dating research 2014–2019, article Study 1 n=1145 participants (not 1145 dyads), with analysis and permutation tests addressing stated vs revealed preferences; authors conclude omnibus preference tests can yield statistical artifacts. Original author public GitHub repository verified directly via connected GitHub tool. File Analyses/2014-2019 Speed Dating Data.csv exists (403,595 bytes repository metadata), and header-only read reveals id, partnerid, sessionid, sex, predate preference variables and postdate scalar attraction/trait judgments (goattrac and similar). This is a distinct original participant collection from Columbia, Münster, Northwest, MatchNMingle, and Australian samples already recorded if not explicitly deduped by IDs, no data rows inspected. Strong competent null for any ESBM claim that stated preferences translate to observed matching.",
+      "rights": "Article CC BY4; Github repo root has README.md and dirs Analyses/ and Simulations/ but no top-level LICENSE file, and public Github visibility does NOT by itself prove reusable dataset rights. No rights assertion beyond public access; no authors contacted, no terms accepted, no person-level data disclosed.",
+      "access_status": "PUBLIC_GITHUB_SOURCE_READ_HEADER_ONLY_SPECIFIC_DATA_LICENSE_UNVERIFIED_NO_BINARY_CHOICES",
+      "limits": "Header comprises id, partnerid and sessionid but no explicit yes/no choice, partner yes/no or mutual match column; there may be other files not inspected, so absence in examined published CSV does not prove source design collected none. Scalar attraction is not a binary behavioral decision; do not impose threshold. GIT blob SHA is Git object SHA1, not raw content SHA256 and not evidence of a downloaded original file. No original dataset rows, matching/union outcome, scientific model, code execution or external holdout verified. Open article and existing public code do not establish novelty for ESBM.",
+      "next_gate": "Check legal data reuse terms and original unreduced data/codebook for two measured binary decisions; require SHA256 of original bytes, nonoverlapping independent validation and frozen A–J+code before outcomes; otherwise use as only prior art / methodology control.",
+      "AB_cycle_increment": 0
     }
   ],
-  "last_added_campaign": "ABR_BAXTER_MATZ_DUPLICATION_GATE_20261029_NONCYCLE"
+  "last_added_campaign": "ABR_PSYCHARCHIVES_QUEENSLAND_OPEN_DATA_GATE_20261029_NONCYCLE"
 }

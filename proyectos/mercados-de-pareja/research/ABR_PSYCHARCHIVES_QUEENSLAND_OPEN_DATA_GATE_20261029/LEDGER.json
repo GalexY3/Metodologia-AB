@@ -1,0 +1,97 @@
+{
+  "schema": "ab.research.noncycle_material_gate.v1",
+  "campaign": "ABR_ESBM20_20261028",
+  "branch": "research/ab-r-mercados-pareja-20261028",
+  "date": "2026-10-29",
+  "activity": "PSYCHARCHIVES_PUBLIC_ORIGINAL_LICENSE_AND_QUEENSLAND_HEADER_OUTCOME_GATE_NONCYCLE",
+  "status": "STOP_R5",
+  "before_head": "67c69e5bc1e834f9f90942067f0fcd3a75302a7c",
+  "valid_total": 16,
+  "authorized_total": 20,
+  "remaining": 4,
+  "unopened": [
+    "N83",
+    "N84",
+    "N85",
+    "N86"
+  ],
+  "delta_cycles": {
+    "valid": 0,
+    "invalid": 0,
+    "planning": 0,
+    "documentary_audit": 1,
+    "models": 0,
+    "simulations": 0,
+    "participant_rows_read": 0,
+    "outcome_values_inspected": 0
+  },
+  "N83": {
+    "state": "NOT_OPENED",
+    "prereg_sha": null,
+    "code_sha256_frozen": null,
+    "original_data_sha256": null,
+    "license_accepted": false,
+    "independent_holdout": "NOT_EXECUTED"
+  },
+  "material_sources_added": [
+    "SRC092",
+    "SRC093"
+  ],
+  "prior_update_events": [
+    "U121",
+    "U122"
+  ],
+  "source_count": 93,
+  "prior_count": 30,
+  "update_count": 122,
+  "prior_status_changes": 0,
+  "new_N1": 0,
+  "new_N2": 0,
+  "new_N3": 0,
+  "CT2": {
+    "ordinal": 7,
+    "not_probability": true,
+    "new_point": false,
+    "last_cycle": "N82",
+    "trajectory": "../ABR_SSJY_STAGE_N82_20261029/CT2_TRAJECTORY.json",
+    "full_and_zoom": "../ABR_SSJY_STAGE_N82_20261029/CT2.svg"
+  },
+  "source_gate": {
+    "psycharchives": {
+      "package_license": "PUBLIC_USE_CC_BY_4_VERIFIED",
+      "real_observed_dates": true,
+      "dates": 940,
+      "participants": 397,
+      "events": 42,
+      "published_md5": "97a7f6cdecbe65e6d82776da33a02158",
+      "computed_sha256": null,
+      "binary_bilateral_confirmed": false,
+      "download": "WEB_502_SINGLE_DIRECT_TRANSFER_FAILED"
+    },
+    "queensland": {
+      "published_github_public": true,
+      "individual_and_counterpart_and_event_columns": true,
+      "header_only": true,
+      "participant_rows_read": 0,
+      "yes_no_fields_in_examined_csv_header": false,
+      "data_reuse_license": "UNVERIFIED",
+      "github_blob_sha1": "8287e7ac60b8d2912e4202b33aad7c019bd9f9d5",
+      "sha256": null
+    }
+  },
+  "R1_R5": {
+    "R1": "No linked binary behavioral decisions for both persons established, do not threshold Likert ratings",
+    "R2": "SRM, Joel/Baxter, Pronk, Matz/Ogushi, competent permutation Zhao and time/eligibility controls pre-set only",
+    "R3": "A–J+SHA not frozen, no verified original outcome data or external holdout",
+    "R4": "Ablation of assumptions about ordinal proxies, sampling, partner exposure and event dependency pending",
+    "R5": "STOP new evidence class insufficient for strict N83"
+  },
+  "license_accepted": false,
+  "authors_contacted": false,
+  "forbidden_retrievals_attempted": false,
+  "SSJY_used": false,
+  "main_merged": false,
+  "raw_individual_data_published": false,
+  "clean_clone_verified": false,
+  "report": "REPORT.md"
+}

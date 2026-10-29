@@ -4,7 +4,7 @@
   "date": "2026-10-28",
   "mode": "append-only logical, versioned by Git commits",
   "reconstructed_from_documents": "Retrospective backfill, not preregistration. Old before values NOT_RECORDED unless documented explicitly.",
-  "source_coverage": "91 sources / 30 priors / 120 updates. SRC090 Baxter 2022 cross-stage real bilateral yes and followup published; SRC091 Matz 2026 964 transcripts likely 2007 Northwestern source overlapping SRC084. No non-OSF licensed raw data for N83.",
+  "source_coverage": "93 sources, 30 priors, 122 updates: new explicit data-package CC BY Münster PsychArchives original zip but no bytes; Queensland original dyadic exposed IDs and ordinal outcome-only header, no binary or license. N83 not opened.",
   "events": [
     {
       "id": "U001",
@@ -3063,7 +3063,53 @@
       "prior_probability_before": null,
       "prior_probability_after": null,
       "prereg_status": "NO_N83_PREREG_STOP_R5"
+    },
+    {
+      "id": "U121",
+      "prior_id": "P-DYADIC_ACCESS",
+      "source_ids": [
+        "SRC092"
+      ],
+      "cycle_ids": [],
+      "before": "PARTIAL_ROUND_ACTION_ACCESS_NO_EXPLICIT_REJECTION_OR_UNION",
+      "after": "PARTIAL_ROUND_ACTION_ACCESS_NO_EXPLICIT_REJECTION_OR_UNION",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "what_the_sources_contribute": "New specifically CC BY4 original speed-date package from psycharchives DOI 10.23668/psycharchives.12546, 397 participants 940 real dates 42 events, preprocessed data/codebook/code, MD5 displayed 97a7f6cdecbe65e6d82776da33a02158 (catalog only).",
+      "why_this_updates_or_checks_prior": "Explicit original-data rights verified, unlike several earlier gated sources; yet no paired native binary outcome or original bytes access verified, hence prior gate remains unchanged.",
+      "limits": "Archive original ZIP HTTP502 and one direct transfer failure; catalog MD5 not our computed digest; 42 within-study events are not independent external data; original paper analyzes 1–7 ratings; actual codebook/yes-no unknown.",
+      "falsifier_or_followup": "Verify legal data-specific license, original bytes SHA256 and codebook/columns with opportunity + native paired binary yes/no. Freeze A–J/code SHA before inspecting outcome values; strong preexisting baselines and truly independent dataset holdout; otherwise STOP_R5.",
+      "evidence_type": "NEW_ORIGINAL_INSTITUTIONAL_DATA_ACCESS_AND_OUTCOME_SEMANTICS_NONCYCLE",
+      "recorded_at": "2026-10-29",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null,
+      "prereg_status": "NO_N83_PREREG_STOP_R5"
+    },
+    {
+      "id": "U122",
+      "prior_id": "P-MEASURE_OUTCOME",
+      "source_ids": [
+        "SRC093"
+      ],
+      "cycle_ids": [],
+      "before": "CHALLENGED",
+      "after": "CHALLENGED",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "what_the_sources_contribute": "Original Queensland researcher repo has public CSV with actor ID, partner ID and session ID, but no paired native binary yes/no in original data header; published permutation checks expose spurious stated-revealed links.",
+      "why_this_updates_or_checks_prior": "New empirical collection and methodological comparator but not binary decision data nor legally verified original reuse grant; scalar romantic attraction cannot be interpreted as explicit yes/no without external validation.",
+      "limits": "Article CC BY does not extend automatically to public repo without data LICENSE; only header seen; no data rows, SHA256 bytes, models, external holdout.",
+      "falsifier_or_followup": "Verify legal data-specific license, original bytes SHA256 and codebook/columns with opportunity + native paired binary yes/no. Freeze A–J/code SHA before inspecting outcome values; strong preexisting baselines and truly independent dataset holdout; otherwise STOP_R5.",
+      "evidence_type": "NEW_ORIGINAL_INSTITUTIONAL_DATA_ACCESS_AND_OUTCOME_SEMANTICS_NONCYCLE",
+      "recorded_at": "2026-10-29",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null,
+      "prereg_status": "NO_N83_PREREG_STOP_R5"
     }
   ],
-  "last_campaign": "ABR_BAXTER_MATZ_DUPLICATION_GATE_20261029_NONCYCLE"
+  "last_campaign": "ABR_PSYCHARCHIVES_QUEENSLAND_OPEN_DATA_GATE_20261029_NONCYCLE"
 }

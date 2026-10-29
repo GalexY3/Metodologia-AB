@@ -1,0 +1,46 @@
+# Mercados de pareja AB-R · vía original pública PsychArchives y auditoría Queensland (29/10/2026)
+
+**Clase de actuación:** descubrimiento documental material de originales independientes y auditoría de derechos/outcomes; **NO ciclo experimental A–J**. Rama `research/ab-r-mercados-pareja-20261028`, HEAD anterior `67c69e5bc1e834f9f90942067f0fcd3a75302a7c`. Estado antes: **16/20 válidos, N83–N86 sin abrir (4), 91 SOURCES/30 PRIORS/120 UPDATES, CT2 7/100 ordinal, STOP_R5**. Estado al cierre: **16/20 válidos, 4 sin abrir, 93 SOURCES/30 PRIORS/122 UPDATES, CT2 7/100, STOP_R5**. Este turno: **0 ciclos válidos, 0 inválidos, 0 planning, 0 modelos, 0 simulaciones, 0 filas originales de participantes examinadas, 0 outcomes inspeccionados**. Las dos nuevas fuentes **no equivalen** a dos validaciones.
+
+## Auditoría inicial y reglas de decisión
+
+Leídos realmente de GitHub `AGENTS.md`, `README.md`, protocolo AB3.2.1 y anexos O1–O7, `CURRENT.md`, último `ABR_BAXTER_MATZ_DUPLICATION_GATE_20261029/REPORT.md` y `LEDGER.json`, `SOURCES.json` (91), `PRIORS.json` (30), `UPDATES.json` (120), `ABR_SSJY_STAGE_N82_20261029/CT2_TRAJECTORY.json`. R5 exige una clase de oportunidad y decisión bilateral observada, derechos autorizados, original bytes+SHA256, hipótesis genuinamente discriminante, A–J y SHA de código fijados antes de consultar outcomes, comparador científico fuerte y holdout externo independiente. Se conservan sin visitar OSF web/API, Essex, Stanford, Gist y SSJY; no se aceptan licencias en nombre de nadie ni se contactan autores.
+
+## SRC092 — Humberg et al., «Date me for Science», Münster 2015: depósito original CC BY 4.0
+
+**Fuente custodia original:** [PsychArchives (objeto de datos y código)](https://psycharchives.org/en/item/f4921a97-a53c-4398-b1a7-8cd23c0e5653), DOI [10.23668/psycharchives.12546](https://doi.org/10.23668/psycharchives.12546), [políticas propias de derechos y niveles de uso](https://www.psycharchives.org/en/about) y [Humberg et al. 2023, Personality Science, DOI 10.5964/ps.7551](https://doi.org/10.5964/ps.7551).
+
+- **Novedad documental:** el propio **paquete de microdatos + codebook + scripts**, no solo el artículo, está marcado por el custodio **«Sharing Level 0 (Public Use), CC-BY 4.0»**. La ficha documenta ZIP `Humberg_et_al_2023_Personality_Similarity_Romantic_Attraction_SUPPL.zip`, **4,1 MB** y **MD5 publicado** `97a7f6cdecbe65e6d82776da33a02158`; el MD5 es dato de catálogo, **no checksum calculado por nosotros ni SHA256 original verificado**. La política institucional dice que Level 0 permite acceso inmediato y uso bajo la licencia declarada. No se ha aceptado ningún contrato ni solicitado credenciales.
+- **Observación primaria:** cohorte propia `Date me for Science`, abril–diciembre de **2015** en Münster: **397 participantes, 940 citas reales en 42 sesiones** de laboratorio; casi todas con 5 hombres/5 mujeres y citas rotatorias de 3 minutos con evaluación individual después de cada oportunidad. Son oportunidades reales, no perfiles ficticios. La publicación y la ficha hablan de atracción romántica y calidad de cita, incluyendo medidas **ordinales 1–7** (ajuste, simpatía, interés y atracción sexual).
+- **Puerta de datos fallida:** la URL pública de descarga binaria `https://pada.psycharchives.org/bitstream/2cfe2659-0821-4c92-9aca-c435698db1fd` devolvió **502** al tratar de abrirla con web; una única transferencia directa posterior tampoco completó la descarga. No repetir el mismo acceso ni inventar bytes/metadata extraída. No se inspeccionaron archivo, codebook real, filas, variables binarias, posiciones ni SHA256. Aunque hay licencia abierta y 42 eventos, **no se sabe si el ZIP liberado incluye dos decisiones binarias yes/no**. Un postdate 1–7 no las sustituye. Particionar eventos sería holdout interno de una cohorte, **no replicación externa independiente**. Los autores aclaran que la cohorte también se utilizó en otros estudios; deduplicar por ID/publicación si en el futuro se compara.
+- **Resultado de puerta:** fuente nueva, original, con licencia explícita; **N83 NO ABIERTO**, al faltar bytes y contrato de outcomes binarios, y prueba discriminante nueva con holdout externo.
+
+## SRC093 — Zhao et al., Queensland 2014–2019: original emparejado, pero solo valoración escalar visible y licencia de datos no resuelta
+
+**Fuentes:** [publicación original, DOI 10.1177/08902070241286254](https://doi.org/10.1177/08902070241286254) y [repositorio de los autores](https://github.com/amyzhao11/statedvsrevealedpref), fichero [`Analyses/2014-2019 Speed Dating Data.csv`](https://github.com/amyzhao11/statedvsrevealedpref/blob/main/Analyses/2014-2019%20Speed%20Dating%20Data.csv).
+
+- La publicación, online en octubre de **2024** y con volumen 2025, estudia **n=1.145 personas** en citas rápidas reales australianas (no confundir n con número de citas) y propone comparadores de preferencias declaradas y atracción observada; simulaciones y permutaciones revelan que algunas asociaciones omnibus pueden ser artefactos estadísticos. Esto es **prior art adversarial** contra atribuir capacidad discriminante a tests ingenuos de ESBM.
+- Vía conector GitHub (no web GitHub), se confirmaron README, directorio `Analyses/`, archivo CSV original de **403.595 bytes según metadatos GitHub** y se inspeccionó **exclusivamente su primera línea de nombres de columnas** (0 outcomes): `id`, `partnerid`, `sessionid`, `sex`, variables de preferencias y de valoración/atracción (`goattrac`, `gfattrac` etc.). **No aparece en esa cabecera ninguna decisión explícita `yes_i`, `yes_j`, `match`**. Esto no demuestra que los autores nunca recogieran decisiones binarias en otro instrumento; sí descarta tratar el fichero examinado como listo para el contrato estricto.
+- GitHub reporta blob object SHA1 `8287e7ac60b8d2912e4202b33aad7c019bd9f9d5`, **NO es el SHA256 del contenido original** exigido. El repositorio es público, pero no tiene fichero `LICENSE` en raíz; la licencia CC BY del artículo **no debe trasladarse automáticamente al CSV**. Por lo tanto, ni derechos específicos de reutilización ni desenlace de dos decisiones cumplen la puerta. **No se descargaron ni consultaron filas**. Los eventos/personas de Queensland no deben mezclarse con Münster, Graz o Northwestern para fabricar holdout sin comprobar diseños y cobertura de variables.
+
+## Matriz de puerta N83 y R1–R5
+
+| Condición | Münster PsychArchives | Queensland autor GitHub |
+|---|---|---|
+| Recolección humana original independiente | Sí, 2015 / 42 eventos | Sí, 2014–19 |
+| Encuentro real observado | Descrito en el artículo | Identificadores `id/partnerid/sessionid` en cabecera y contexto publicado |
+| Permiso de reutilización de fichero | **CC BY 4.0 del ZIP verificable en ficha** | **No verificado para CSV** |
+| Bytes originales y SHA256 propio | **No**, 502/fallo de descarga | **No**, solo cabecera/Git SHA1 |
+| Dos decisiones binarias por cita verificadas | **No**; el paper evalúa Likert 1–7 | **No**; cabecera CSV sin yes/no |
+| A–J y código congelados antes de outcomes | No; N83 no autorizado por puerta | No |
+| Controles SRM/Pronk/Ogushi/Baxter/Matz y permutación Zhao | Solo plan, no ensayo | Solo plan, no ensayo |
+| Holdout independiente de otra cohorte | No | No |
+| R5 | STOP | STOP |
+
+**R1:** declarar unidad oportunidad real y `yes_i(t)`, `yes_j(t)` nativos y separados de valoración ordinal, match, contacto, formación y estabilidad. **R2:** baselines actor/partner/dyad (SRM), orden/evento, popularidad, atracción previa, ratings de postdate (solo como predictores del tramo temporal correcto), nulos de permutación Zhao con igual información, ML contrastado, lenguaje Matz y conducta Ogushi/Arias-Sarah; competir con literatura y con el diseño más fuerte posible. **R3:** no abrir N83 sin A–J y SHA de código previos a outcomes; no hay ni datalog ni SHA256 ZIP, y ningún holdout de cohorte externa reservado. **R4:** distinguir artefacto de ratings, sesgo de admisión a eventos, selección por consentimiento, tratamiento de parejas no enlazadas y contaminación por participantes compartidos; ablacionar premisas ESBM. **R5:** estas son vías de adquisición/publicación nuevas pero **sin dataset estrictamente apto para N83**. Los cuatro slots siguen libres.
+
+## Registro del cambio y estrategia de desbloqueo
+
+Se añaden SRC092 y SRC093; U121 sobre P-DYADIC_ACCESS y U122 sobre P-MEASURE_OUTCOME, ambos `NO_CHANGE_WITH_REASON`. Total **93 fuentes / 30 priors / 122 revisiones**, **sin estado nuevo en ningún prior, sin nuevos descubrimientos 1/3–3/3, sin ciclo N83**. CT2 ordinal 7/100, sin nuevo punto ni ajuste a la gráfica: [CT2 0–100 y zoom](../ABR_SSJY_STAGE_N82_20261029/CT2.svg), [trayectoria JSON](../ABR_SSJY_STAGE_N82_20261029/CT2_TRAJECTORY.json).
+
+La única acción que podría cambiar STOP_R5 sería una **fuente original con derechos y bytes SHA256 reales + esquema de exposición/decisión bilateral explícito + predicción diferenciadora y holdout externo preregistrados**. Si el paquete PsychArchives se pudiera acceder por un canal distinto y autorizado, auditar únicamente documentación estructural antes de congelar outcomes; no inventar que contiene elecciones binarias por hallarse una escala de atracción. Sin este avance, **terminar STOP_R5** sin ocupar N83–N86, sin microdatos públicos y sin merge a main. No pedir 20 ciclos más: hay cuatro pendientes.
