@@ -1,0 +1,6 @@
+# N166 second instrumentation repair, before new outcome
+Date 2026-10-30. First repair prereg commit `6afd8d0b72fd4eb78c56323749abbca4a1cdd550`, code SHA frozen `67fe1447fead39d8e647874ed1f8023b85ea97c1`.
+
+**Observed second instrumental failure**: isolated `python -I -c` successfully resolved `esbm_dynamic` after explicitly adding temporary source dir to sys.path but then raised `ModuleNotFoundError: esbm_event_engine` imported indirectly by `social_graph.py`. Thus previous attempt did not reach data regeneration or Chromium; record INVALID_INSTRUMENTAL_2, no PASS. Initial N164 and N165 remain completed.
+
+**Prospective repair**: include the existing, source-frozen `esbm_event_engine.py` **only** in the copied `SOURCE_FILES` dependency inventory. Do not modify outputs, external calls, HTML generation, model code, tests, or their data. Recompute SHA256 of this exact verifier and freeze a new GitHub commit before any execution. Repeat original N166 criteria: byte-for-byte HTML duplicate, 12 exported scenarios verified, real Chromium 12 selections, zero HTTP/HTTPS requests and zero browser page errors. If further failure, stop or again prereg a bounded repair; do not claim interactive validation until execution.

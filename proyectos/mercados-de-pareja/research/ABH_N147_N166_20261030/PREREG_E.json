@@ -1,0 +1,146 @@
+{
+  "schema": "ABH3.2.1.PREREG_E",
+  "date": "2026-10-30",
+  "branch": "research/ab-h-esbm-trajectory-equivalence-20261030",
+  "authorization_total": 20,
+  "used": 17,
+  "remaining": 3,
+  "trigger": "N160–N163 full event equivalence and prospective canonical comparison complete. User requests inspectable simulation and portable code; next tasks materially distinct deliverables.",
+  "contracts": [
+    {
+      "id": "N164",
+      "parent": "N163",
+      "mode": "PRODUCT_DEMO",
+      "D": {
+        "freeze": "Builder source and independent QA script frozen on GitHub before generating HTML and collecting checks",
+        "dependencies": "stdlib plus numpy/networkx; browser test may be unavailable; never claim validated UI if not actually exercised"
+      },
+      "A": {
+        "question": "Create actual self-contained interactive HTML viewer of generated agent-level opportunities, directed decisions, graph and time",
+        "estimand": "Inspectable simulated 24-agent event datasets, not human effect"
+      },
+      "B": {
+        "rivals": [
+          "text report only",
+          "precomputed but unrelated mock animation",
+          "non-reproducible stale HTML",
+          "viewer without stage conservation"
+        ],
+        "null": "Visualizations can misstate event timeline or original model"
+      },
+      "C": {
+        "falsifier": "3 seeds 6100–6102 × 2 graphs × 2 slot policies=12 underlying N24×4 synthetic executions; embed original event records and graph edge lists; interactive seed/network/slots and time selection, no external URL or human identity, no invented metrics.",
+        "checks": "12 scenarios, fixed seeds 6100–6102, 24 agents, 4 ticks, 1/2 slots, two canonical networks"
+      },
+      "E": "PENDING",
+      "F": {
+        "adversary": "HTML data derived from real executed model; separate stage audit and no external JS",
+        "negative": "Any mismatch means INVALID and repair with new freeze"
+      },
+      "G": {
+        "independent_replication": "NONE",
+        "human": "NONE"
+      },
+      "H": "No human prior status update or novelty gain from a viewer",
+      "I": {
+        "grade": "0/3",
+        "CT2": 7,
+        "maturity": "only audit deliverables; no numerical upgrade without proof"
+      },
+      "J": {
+        "if_pass": "N165",
+        "if_fail": "REPAIR or keep unused slots"
+      }
+    },
+    {
+      "id": "N165",
+      "parent": "N164",
+      "mode": "INDEPENDENT_TRACE_QA",
+      "D": {
+        "freeze": "Builder source and independent QA script frozen on GitHub before generating HTML and collecting checks",
+        "dependencies": "stdlib plus numpy/networkx; browser test may be unavailable; never claim validated UI if not actually exercised"
+      },
+      "A": {
+        "question": "Reconstruct event-stage balances and actual partner occupancy from exported viewer input without reusing original ESBM Python matching logic",
+        "estimand": "Inspectable simulated 24-agent event datasets, not human effect"
+      },
+      "B": {
+        "rivals": [
+          "text report only",
+          "precomputed but unrelated mock animation",
+          "non-reproducible stale HTML",
+          "viewer without stage conservation"
+        ],
+        "null": "Visualizations can misstate event timeline or original model"
+      },
+      "C": {
+        "falsifier": "Verify all 12 scenarios ×4 ticks, stage identities; formation–dissolution=active per time, graph exposure eligibility, max contacts by slot, never repeated dyads per tick, event-oriented yes/response constraints; no erroneous interpretation as independent external replication.",
+        "checks": "12 scenarios, fixed seeds 6100–6102, 24 agents, 4 ticks, 1/2 slots, two canonical networks"
+      },
+      "E": "PENDING",
+      "F": {
+        "adversary": "HTML data derived from real executed model; separate stage audit and no external JS",
+        "negative": "Any mismatch means INVALID and repair with new freeze"
+      },
+      "G": {
+        "independent_replication": "NONE",
+        "human": "NONE"
+      },
+      "H": "No human prior status update or novelty gain from a viewer",
+      "I": {
+        "grade": "0/3",
+        "CT2": 7,
+        "maturity": "only audit deliverables; no numerical upgrade without proof"
+      },
+      "J": {
+        "if_pass": "N166",
+        "if_fail": "REPAIR or keep unused slots"
+      }
+    },
+    {
+      "id": "N166",
+      "parent": "N165",
+      "mode": "PORTABILITY_BUNDLE",
+      "D": {
+        "freeze": "Builder source and independent QA script frozen on GitHub before generating HTML and collecting checks",
+        "dependencies": "stdlib plus numpy/networkx; browser test may be unavailable; never claim validated UI if not actually exercised"
+      },
+      "A": {
+        "question": "Package reproducible scripts, original immutable SHA, generated static demo and complete AB-H receipts with frozen input hash into local ZIP, plus isolated subprocess same environment",
+        "estimand": "Inspectable simulated 24-agent event datasets, not human effect"
+      },
+      "B": {
+        "rivals": [
+          "text report only",
+          "precomputed but unrelated mock animation",
+          "non-reproducible stale HTML",
+          "viewer without stage conservation"
+        ],
+        "null": "Visualizations can misstate event timeline or original model"
+      },
+      "C": {
+        "falsifier": "Verify source-original SHA, full HTML embedded data digest and source artifact bundle manifest; no outside network and no external resources; GitHub text artifacts and final SHA receipt, no main merge or UI claim without test.",
+        "checks": "12 scenarios, fixed seeds 6100–6102, 24 agents, 4 ticks, 1/2 slots, two canonical networks"
+      },
+      "E": "PENDING",
+      "F": {
+        "adversary": "HTML data derived from real executed model; separate stage audit and no external JS",
+        "negative": "Any mismatch means INVALID and repair with new freeze"
+      },
+      "G": {
+        "independent_replication": "NONE",
+        "human": "NONE"
+      },
+      "H": "No human prior status update or novelty gain from a viewer",
+      "I": {
+        "grade": "0/3",
+        "CT2": 7,
+        "maturity": "only audit deliverables; no numerical upgrade without proof"
+      },
+      "J": {
+        "if_pass": "STOP CAMPAIGN after final archive",
+        "if_fail": "REPAIR or keep unused slots"
+      }
+    }
+  ]
+}

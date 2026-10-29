@@ -5,8 +5,8 @@
   "source_commit": "50ed5bacab76951157ed87447d61d26737701130",
   "target_scope": "FIRST_SCIENTIFICALLY_DEFENSIBLE_ESBM_RESEARCH_PACKAGE_NOT_EXPLAIN_ALL_ROMANTIC_RELATIONSHIPS",
   "nature": "EXPLICITLY_JUDGMENTAL_MILESTONE_ESTIMATE_NOT_EVALUATED_SUCCESS_PROBABILITY_OR_CT2",
-  "aggregate_percent_exact": 42.85,
-  "aggregate_percent_rounded": 43,
+  "aggregate_percent_exact": 43.6,
+  "aggregate_percent_rounded": 44,
   "rough_uncertainty_percentage_points": 10,
   "uncertainty_is_statistical_interval": false,
   "method": "SUM(weight_percent * progress_percent / 100), dimensions weights sum 100. Anchor evidence to current repo; subjective estimates not measured experiment outcomes.",
@@ -31,16 +31,16 @@
       "id": "simulator",
       "name": "Simulador ESBM",
       "weight": 15,
-      "progress": 71,
-      "evidence": "Executable esbm_dynamic.py, frozen 6x10 scenarios, N144 synthetic agents, 16 ticks, dynamic eligibility/platforms/dissolution; simplistic matching, exogenous hazards, arbitrary weights and identities. N87 exact source-preserving Python ESBM real 60-run simulated integration, legacy outputs unchanged; 16 formation cohorts instrumented per run; historic source unchanged. N88 new full 240-run institutional matching intervention central max-cardinality against two decentralized greedy strong baselines, paired with fixed shocks; results sensitive and heterogeneous; original v2 unmodified. N89 120-run source-verified broadcast vs witness-only vs silent reputation, showing global reputation is a coded information-diffusion institution; synthetic dynamics heterogeneous across four contexts, 24/24 exact sham controls. N90 source-verified 120-run immediate rejection response vs next-tick batching vs silent, 14,053 same-tick proposals influenced by earlier update across 6 seeds; result heterogeneity and model-time semantics audited. N91 actor permutation invariance audit detects ID-order artefact only in sequential visibility balancing across 18/18 relabelings, with 90 formed-outcome invariant negative controls; exact original source kept. N92 source-verified, pre-frozen in-memory snapshot of seen at start of tick restores relabel equivariance to 18/18; original and patched policy differ on 6 seeds (−10 mean formed), no original history modified. AB-H N107–N126: new non-destructive Python encounter scheduler tested against exact historical source SHA; 60/60 original scenario-seed outputs identical, pair_max/greedy/budgeted and same-/cross-norm choices, explicit two-slot extension, but two-slot 144x16 runs exceeded budget and miniature 24x4 used for temporal feedback/hazard. All synthetic, uncalibrated. Original code unchanged. AB-H N127–N146: standalone explicit simulate(people_provider, compatibility_provider, scheduler, trace), with no runtime source transformation or exec/inspect, verified 60/60 exact historic parity and 6/6 prior institutional parity, 24×4 synthetic network/riskset/survival/quality-proxy test bench. Previous rewired social graph is label-order-sensitive N144, therefore all N133–N141 old-null comparisons are exploratory/invalid as clean topology-only contrasts; corrected canonical network alternative implemented.",
+      "progress": 74,
+      "evidence": "Executable esbm_dynamic.py, frozen 6x10 scenarios, N144 synthetic agents, 16 ticks, dynamic eligibility/platforms/dissolution; simplistic matching, exogenous hazards, arbitrary weights and identities. N87 exact source-preserving Python ESBM real 60-run simulated integration, legacy outputs unchanged; 16 formation cohorts instrumented per run; historic source unchanged. N88 new full 240-run institutional matching intervention central max-cardinality against two decentralized greedy strong baselines, paired with fixed shocks; results sensitive and heterogeneous; original v2 unmodified. N89 120-run source-verified broadcast vs witness-only vs silent reputation, showing global reputation is a coded information-diffusion institution; synthetic dynamics heterogeneous across four contexts, 24/24 exact sham controls. N90 source-verified 120-run immediate rejection response vs next-tick batching vs silent, 14,053 same-tick proposals influenced by earlier update across 6 seeds; result heterogeneity and model-time semantics audited. N91 actor permutation invariance audit detects ID-order artefact only in sequential visibility balancing across 18/18 relabelings, with 90 formed-outcome invariant negative controls; exact original source kept. N92 source-verified, pre-frozen in-memory snapshot of seen at start of tick restores relabel equivariance to 18/18; original and patched policy differ on 6 seeds (−10 mean formed), no original history modified. AB-H N107–N126: new non-destructive Python encounter scheduler tested against exact historical source SHA; 60/60 original scenario-seed outputs identical, pair_max/greedy/budgeted and same-/cross-norm choices, explicit two-slot extension, but two-slot 144x16 runs exceeded budget and miniature 24x4 used for temporal feedback/hazard. All synthetic, uncalibrated. Original code unchanged. AB-H N127–N146: standalone explicit simulate(people_provider, compatibility_provider, scheduler, trace), with no runtime source transformation or exec/inspect, verified 60/60 exact historic parity and 6/6 prior institutional parity, 24×4 synthetic network/riskset/survival/quality-proxy test bench. Previous rewired social graph is label-order-sensitive N144, therefore all N133–N141 old-null comparisons are exploratory/invalid as clean topology-only contrasts; corrected canonical network alternative implemented. N147–N166: opt-in dyad-symmetric hazard and matching shocks repair full N24×4 actor-relabel trajectories under canonical ring/rewired and legacy schedules while default original N144×16 outputs stay exactly 60/60. Combined learning+norm tests 24/24 exactly equivalent after math.fsum; model still uncalibrated synthetic. New standalone inspectable 12-scenario event viewer captures stagewise actual simulations.",
       "required_for_100": "Modular mechanisms and independent measurable observables, stateful event chronology, time-to-event censoring handled, negative controls and realistic constraints without forced outcomes."
     },
     {
       "id": "qa",
       "name": "Controles técnicos y reproducibilidad",
       "weight": 10,
-      "progress": 69,
-      "evidence": "Pre-outcome source freezes, A-J and R1-R5 gate, SHA256 McMaster original and QA code, 60 synthetic scenario QA and byte-identical repeat on same machine; no independent clean clone. N83 deterministic frozen 8-cell exhaustive distribution check and independent rational Fraction recalculation; still no independent clean clone of the ESBM simulator. N84 pre-frozen 2000 permutations of the actual McMaster actor-by-opportunity network, exact per-actor yes totals and independent analytical null expectation check; remains within-study exploratory, no clean clone of ESBM v2. N85 source-guarded analytical KM/RMST test from 150k independent synthetic histories (no full ESBM original run); fixes quantified known survival censor issue. N86 added pure-stdlib Python survival RMST helper and nine deterministic unittests, executed in isolated local runtime against exact Github blob hashes with all passed; not integrated original ESBM or clean-clone validated. N87 original uploaded Git hashes verified, 19/19 deterministic tests pass, 60 old versus 60 instrumented result equivalences repeated, event/censor invariants; isolated file workspace uses preinstalled dependencies, not independent package reinstall. N88 SHA-frozen 60/60 exact sham source identity, graphwise max>=greedy checks across 16 ticks, three arms preserve formation dissolution balances; reproducible compressed source artifact in GitHub. N89 precommitted SHA and exact gzip source, 24/24 global-original equality and 24/24 no-public placebo equality, all 72 instrumented runs preserve relationship accounting; JSON by seed archived. N90 24 exact original-private and 24 exact no-private sham checks pass with original script SHA, 72 modified runs all counts balance; full frozen script and JSON per-seed archived. N91 SHA-frozen source and relabel code executed 180 real simulations, identities 36/36, inverse input tensors and same pair shocks preserved, no-balance controls matched; near-zero floating order differences explicitly audited posthoc. N92 60 real Python simulations, 12/12 exact nonbalance shams, 18/18 original label-sensitivity reproducibility and snapshot zero relabel full-output differences; all risk-event and exogenous tensor controls passed. New source files and all executable runner Git blob hashes verified byte-for-byte against actual local execution. 20 A-J technical checks valid across four pre-frozen blocks, three failed/timeout instrumental attempts preserved, repairs committed before resumed outcomes. Negative shams identical, relabel checks passed, fail-closed source SHA, isolated-process clean-directory reproduction same Python environment. Runtime ceilings and missing-category NaN warning remain; no external independent machine clone. 20 new A–J technical/negative cycles across four GitHub pre-outcome contracts and source freezes; 6 malicious schedule inputs rejected, 60 legacy parity after hardening, 40/40 corrected graph identity relabel invariance, 8/8 schedule invariance and same-environment isolated subprocess; one old degree-preserving rewiring null failed 20/20 identity checks, corrective comparison archived posthoc and no retroactive grade. Full four-runner receipt ZIP checksum available in conversation; no independent OS clone.",
+      "progress": 72,
+      "evidence": "Pre-outcome source freezes, A-J and R1-R5 gate, SHA256 McMaster original and QA code, 60 synthetic scenario QA and byte-identical repeat on same machine; no independent clean clone. N83 deterministic frozen 8-cell exhaustive distribution check and independent rational Fraction recalculation; still no independent clean clone of the ESBM simulator. N84 pre-frozen 2000 permutations of the actual McMaster actor-by-opportunity network, exact per-actor yes totals and independent analytical null expectation check; remains within-study exploratory, no clean clone of ESBM v2. N85 source-guarded analytical KM/RMST test from 150k independent synthetic histories (no full ESBM original run); fixes quantified known survival censor issue. N86 added pure-stdlib Python survival RMST helper and nine deterministic unittests, executed in isolated local runtime against exact Github blob hashes with all passed; not integrated original ESBM or clean-clone validated. N87 original uploaded Git hashes verified, 19/19 deterministic tests pass, 60 old versus 60 instrumented result equivalences repeated, event/censor invariants; isolated file workspace uses preinstalled dependencies, not independent package reinstall. N88 SHA-frozen 60/60 exact sham source identity, graphwise max>=greedy checks across 16 ticks, three arms preserve formation dissolution balances; reproducible compressed source artifact in GitHub. N89 precommitted SHA and exact gzip source, 24/24 global-original equality and 24/24 no-public placebo equality, all 72 instrumented runs preserve relationship accounting; JSON by seed archived. N90 24 exact original-private and 24 exact no-private sham checks pass with original script SHA, 72 modified runs all counts balance; full frozen script and JSON per-seed archived. N91 SHA-frozen source and relabel code executed 180 real simulations, identities 36/36, inverse input tensors and same pair shocks preserved, no-balance controls matched; near-zero floating order differences explicitly audited posthoc. N92 60 real Python simulations, 12/12 exact nonbalance shams, 18/18 original label-sensitivity reproducibility and snapshot zero relabel full-output differences; all risk-event and exogenous tensor controls passed. New source files and all executable runner Git blob hashes verified byte-for-byte against actual local execution. 20 A-J technical checks valid across four pre-frozen blocks, three failed/timeout instrumental attempts preserved, repairs committed before resumed outcomes. Negative shams identical, relabel checks passed, fail-closed source SHA, isolated-process clean-directory reproduction same Python environment. Runtime ceilings and missing-category NaN warning remain; no external independent machine clone. 20 new A–J technical/negative cycles across four GitHub pre-outcome contracts and source freezes; 6 malicious schedule inputs rejected, 60 legacy parity after hardening, 40/40 corrected graph identity relabel invariance, 8/8 schedule invariance and same-environment isolated subprocess; one old degree-preserving rewiring null failed 20/20 identity checks, corrective comparison archived posthoc and no retroactive grade. Full four-runner receipt ZIP checksum available in conversation; no independent OS clone. N147–N166: Initial 11/28 full-trajectory actor label failures preserved as negative; N151–N154 32 prereg checks passed after shock symmetry; floating summation differences max 1.3878e-17 were identified and corrected in opt-in v2, 48/48 private/public and 24/24 combined exact. Independent export event audit 12/12 scenarios 48 ticks, self-contained browser Chromium 12/12 controls, no JS errors or external HTTP requests; three instrument attempts for subprocess module paths and blocked file URI preserved/repaired prospectively. Same installed environment, not external OS.",
       "required_for_100": "Fresh clean-room deterministic replay, unit+property testing, code/data provenance, exposure-preserving strong nulls, CI validation and ready-to-run reproduction package."
     },
     {
@@ -101,26 +101,28 @@
   "score_is_not_number_of_cycles": true,
   "last_evidence_commit_reference": "09df08425db8e1746a9453629e4c4b879d20e5b0",
   "last_maturity_update": {
-    "date": "2026-10-29",
-    "previous": 42.2,
-    "current": 42.85,
-    "change_pp": 0.65,
-    "driver": "Technical execution and code refactor evidence only, not cycle count",
-    "dimensions_changed": [
+    "date": "2026-10-30",
+    "from": 42.85,
+    "to": 43.6,
+    "delta_pp": 0.75,
+    "driver": "Actual new integrated simulator property and inspectable browser-validated artifact, not 20 cycles",
+    "dimension_deltas": [
       {
         "id": "simulator",
-        "old": 68,
-        "new": 71,
-        "weighted_gain_pp": 0.45
+        "before": 71,
+        "after": 74,
+        "weight": 15,
+        "weighted_delta": 0.45
       },
       {
         "id": "qa",
-        "old": 67,
-        "new": 69,
-        "weighted_gain_pp": 0.2
+        "before": 69,
+        "after": 72,
+        "weight": 10,
+        "weighted_delta": 0.3
       }
     ],
-    "dimensions_unchanged": [
+    "unchanged": [
       "theory",
       "literature",
       "real_data",
@@ -128,7 +130,7 @@
       "validation",
       "manuscript"
     ],
-    "negative_caveat": "Old N133–N141 network-null comparison invalid for identity-invariant topology claims; remaining technical code/tests robust under observed protocols, but future implementation upgrades necessary."
+    "epistemic_limit": "Full actor relabel invariance only finite synthetic tests; opts in to different symmetric shock family; 619 human bilateral outcomes described in new SRC107 paper but microdata rights and case labels unverified. External scientific CT2 unchanged."
   },
   "last_precision_errata": "2026-10-29 display precision repair only: IEEE-754 41.199999999999996 normalized to decimal 41.2; no science score, cycle, evidence or ledger changes.",
   "last_documentary_audit": {
@@ -495,5 +497,28 @@
     "STOP_R5_external": true,
     "all_original_human_rows_untouched": true,
     "original_ESBM_SHA256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+  },
+  "last_ABH_N147_N166": {
+    "date": "2026-10-30",
+    "branch": "research/ab-h-esbm-trajectory-equivalence-20261030",
+    "authorized": 20,
+    "valid_technical_or_negative": 20,
+    "strict_pass": 14,
+    "negative_diagnostic": 6,
+    "invalid_full_cycles": 0,
+    "invalid_instrumental_attempts": 3,
+    "remaining": 0,
+    "original_ESBM_unchanged": true,
+    "new_external_human_validations": 0,
+    "scientific_CT2": 7,
+    "scientific_grade_2_3": 0,
+    "maturity": 43.6,
+    "sources": 107,
+    "priors": 33,
+    "updates": 182,
+    "STOP_R5": true,
+    "HTML_viewer_scenarios": 12,
+    "Chromium_tested": true,
+    "third_party_OS_tested": false
   }
 }

@@ -1,0 +1,319 @@
+{
+  "schema": "ABH.A-J.N147_N166.E.v1",
+  "date": "2026-10-30",
+  "branch": "research/ab-h-esbm-trajectory-equivalence-20261030",
+  "block": "E",
+  "cycles_valid_technical_or_negative": 3,
+  "scientific_0_3_only": true,
+  "human_R5": "STOP",
+  "source_original_sha": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+  "cycles": [
+    {
+      "id": "N164",
+      "parent": "N163",
+      "mode": "PRODUCT_DEMO",
+      "drift_D": {
+        "freeze": "Builder source and independent QA script frozen on GitHub before generating HTML and collecting checks",
+        "dependencies": "stdlib plus numpy/networkx; browser test may be unavailable; never claim validated UI if not actually exercised"
+      },
+      "A": {
+        "question": "Create actual self-contained interactive HTML viewer of generated agent-level opportunities, directed decisions, graph and time",
+        "estimand": "Inspectable simulated 24-agent event datasets, not human effect"
+      },
+      "B": {
+        "rivals": [
+          "text report only",
+          "precomputed but unrelated mock animation",
+          "non-reproducible stale HTML",
+          "viewer without stage conservation"
+        ],
+        "null": "Visualizations can misstate event timeline or original model"
+      },
+      "C": {
+        "falsifier": "3 seeds 6100–6102 × 2 graphs × 2 slot policies=12 underlying N24×4 synthetic executions; embed original event records and graph edge lists; interactive seed/network/slots and time selection, no external URL or human identity, no invented metrics.",
+        "checks": "12 scenarios, fixed seeds 6100–6102, 24 agents, 4 ticks, 1/2 slots, two canonical networks"
+      },
+      "D": {
+        "preregistered": {
+          "freeze": "Builder source and independent QA script frozen on GitHub before generating HTML and collecting checks",
+          "dependencies": "stdlib plus numpy/networkx; browser test may be unavailable; never claim validated UI if not actually exercised"
+        },
+        "prereg_commit": "5b0bb50a6a305f51f6fdb4f7171782809799fa05",
+        "code_sha_frozen_before_outcomes": "4272fde2b120716930ccd2d1b054eadfd0e2c7dd"
+      },
+      "E": {
+        "status": "PASS",
+        "actual_endpoint": {
+          "scenario_count": 12,
+          "agents": 24,
+          "ticks": 4,
+          "HTML_sha256": "fc09589e84334a0732c8e292050d763dbf818f5668d9930cfd3c2fbf314b5abc",
+          "html_bytes": 76624
+        },
+        "source_full_receipt_sha256": "5502184c2777a9859c537813b7478a1ab5afc2049e13a0a035bd0189dccf7f1f",
+        "local_full_rows_available_in_conversation_bundle": true,
+        "humans": 0
+      },
+      "F": {
+        "preregistered_adversarial": {
+          "adversary": "HTML data derived from real executed model; separate stage audit and no external JS",
+          "negative": "Any mismatch means INVALID and repair with new freeze"
+        },
+        "negative_diagnostic": false,
+        "warning": "All findings in model and Python; technically falsified baseline actor order no human inference."
+      },
+      "G": {
+        "preregistered": {
+          "independent_replication": "NONE",
+          "human": "NONE"
+        },
+        "independence": "NO_EXTERNAL_HUMAN_HOLDOUT",
+        "third_party_OS": "NOT_TESTED"
+      },
+      "H": {
+        "prior_ids": [
+          "P-TRAJECTORY-INVARIANCE",
+          "P-NETWORK-INVARIANCE",
+          "P-DYADIC_ACCESS",
+          "P-NOVELTY"
+        ],
+        "update_ids": [
+          "U177",
+          "U178",
+          "U179",
+          "U180",
+          "U181",
+          "U182"
+        ],
+        "human_priors": "NO_CHANGE_WITH_REASON",
+        "source_new": "SRC107 documentary publication only"
+      },
+      "I": {
+        "grade": "0/3",
+        "scientific_CT2_before": 7,
+        "scientific_CT2_after": 7,
+        "technical_result_valid": true,
+        "external_replication": false,
+        "ethical_ok": "No raw human sample or original source mutation"
+      },
+      "J": {
+        "decision": "PASS_CONDITIONAL_ADVANCE",
+        "successor": "N165",
+        "failure_path": "REPAIR or keep unused slots",
+        "credit_spent": 1,
+        "value_next": "Distinct model and code capability; R5 external remains STOP"
+      },
+      "selection_exposure": "Adaptive sequential blocks, no blinded human outcomes, no 2/3 scientific claim",
+      "source_refs": [
+        "proyectos/mercados-de-pareja/research/ABH_N147_N166_20261030/PREREG_E.json",
+        "proyectos/mercados-de-pareja/research/ABH_N147_N166_20261030/RESULTS_INDEX.json"
+      ]
+    },
+    {
+      "id": "N165",
+      "parent": "N164",
+      "mode": "INDEPENDENT_TRACE_QA",
+      "drift_D": {
+        "freeze": "Builder source and independent QA script frozen on GitHub before generating HTML and collecting checks",
+        "dependencies": "stdlib plus numpy/networkx; browser test may be unavailable; never claim validated UI if not actually exercised"
+      },
+      "A": {
+        "question": "Reconstruct event-stage balances and actual partner occupancy from exported viewer input without reusing original ESBM Python matching logic",
+        "estimand": "Inspectable simulated 24-agent event datasets, not human effect"
+      },
+      "B": {
+        "rivals": [
+          "text report only",
+          "precomputed but unrelated mock animation",
+          "non-reproducible stale HTML",
+          "viewer without stage conservation"
+        ],
+        "null": "Visualizations can misstate event timeline or original model"
+      },
+      "C": {
+        "falsifier": "Verify all 12 scenarios ×4 ticks, stage identities; formation–dissolution=active per time, graph exposure eligibility, max contacts by slot, never repeated dyads per tick, event-oriented yes/response constraints; no erroneous interpretation as independent external replication.",
+        "checks": "12 scenarios, fixed seeds 6100–6102, 24 agents, 4 ticks, 1/2 slots, two canonical networks"
+      },
+      "D": {
+        "preregistered": {
+          "freeze": "Builder source and independent QA script frozen on GitHub before generating HTML and collecting checks",
+          "dependencies": "stdlib plus numpy/networkx; browser test may be unavailable; never claim validated UI if not actually exercised"
+        },
+        "prereg_commit": "5b0bb50a6a305f51f6fdb4f7171782809799fa05",
+        "code_sha_frozen_before_outcomes": "4272fde2b120716930ccd2d1b054eadfd0e2c7dd"
+      },
+      "E": {
+        "status": "PASS",
+        "actual_endpoint": {
+          "ledger_scenarios": 12,
+          "ledger_ticks": 48,
+          "stage_and_exclusivity_all": true
+        },
+        "source_full_receipt_sha256": "5502184c2777a9859c537813b7478a1ab5afc2049e13a0a035bd0189dccf7f1f",
+        "local_full_rows_available_in_conversation_bundle": true,
+        "humans": 0
+      },
+      "F": {
+        "preregistered_adversarial": {
+          "adversary": "HTML data derived from real executed model; separate stage audit and no external JS",
+          "negative": "Any mismatch means INVALID and repair with new freeze"
+        },
+        "negative_diagnostic": false,
+        "warning": "All findings in model and Python; technically falsified baseline actor order no human inference."
+      },
+      "G": {
+        "preregistered": {
+          "independent_replication": "NONE",
+          "human": "NONE"
+        },
+        "independence": "NO_EXTERNAL_HUMAN_HOLDOUT",
+        "third_party_OS": "NOT_TESTED"
+      },
+      "H": {
+        "prior_ids": [
+          "P-TRAJECTORY-INVARIANCE",
+          "P-NETWORK-INVARIANCE",
+          "P-DYADIC_ACCESS",
+          "P-NOVELTY"
+        ],
+        "update_ids": [
+          "U177",
+          "U178",
+          "U179",
+          "U180",
+          "U181",
+          "U182"
+        ],
+        "human_priors": "NO_CHANGE_WITH_REASON",
+        "source_new": "SRC107 documentary publication only"
+      },
+      "I": {
+        "grade": "0/3",
+        "scientific_CT2_before": 7,
+        "scientific_CT2_after": 7,
+        "technical_result_valid": true,
+        "external_replication": false,
+        "ethical_ok": "No raw human sample or original source mutation"
+      },
+      "J": {
+        "decision": "PASS_CONDITIONAL_ADVANCE",
+        "successor": "N166",
+        "failure_path": "REPAIR or keep unused slots",
+        "credit_spent": 1,
+        "value_next": "Distinct model and code capability; R5 external remains STOP"
+      },
+      "selection_exposure": "Adaptive sequential blocks, no blinded human outcomes, no 2/3 scientific claim",
+      "source_refs": [
+        "proyectos/mercados-de-pareja/research/ABH_N147_N166_20261030/PREREG_E.json",
+        "proyectos/mercados-de-pareja/research/ABH_N147_N166_20261030/RESULTS_INDEX.json"
+      ]
+    },
+    {
+      "id": "N166",
+      "parent": "N165",
+      "mode": "PORTABILITY_BUNDLE",
+      "drift_D": {
+        "freeze": "Builder source and independent QA script frozen on GitHub before generating HTML and collecting checks",
+        "dependencies": "stdlib plus numpy/networkx; browser test may be unavailable; never claim validated UI if not actually exercised"
+      },
+      "A": {
+        "question": "Package reproducible scripts, original immutable SHA, generated static demo and complete AB-H receipts with frozen input hash into local ZIP, plus isolated subprocess same environment",
+        "estimand": "Inspectable simulated 24-agent event datasets, not human effect"
+      },
+      "B": {
+        "rivals": [
+          "text report only",
+          "precomputed but unrelated mock animation",
+          "non-reproducible stale HTML",
+          "viewer without stage conservation"
+        ],
+        "null": "Visualizations can misstate event timeline or original model"
+      },
+      "C": {
+        "falsifier": "Verify source-original SHA, full HTML embedded data digest and source artifact bundle manifest; no outside network and no external resources; GitHub text artifacts and final SHA receipt, no main merge or UI claim without test.",
+        "checks": "12 scenarios, fixed seeds 6100–6102, 24 agents, 4 ticks, 1/2 slots, two canonical networks"
+      },
+      "D": {
+        "preregistered": {
+          "freeze": "Builder source and independent QA script frozen on GitHub before generating HTML and collecting checks",
+          "dependencies": "stdlib plus numpy/networkx; browser test may be unavailable; never claim validated UI if not actually exercised"
+        },
+        "prereg_commit": "5b0bb50a6a305f51f6fdb4f7171782809799fa05",
+        "code_sha_frozen_before_outcomes": "4272fde2b120716930ccd2d1b054eadfd0e2c7dd"
+      },
+      "E": {
+        "status": "PASS_AFTER_3_INSTRUMENTAL_REPAIRS",
+        "actual_endpoint": {
+          "isolated_directory_identical_html": true,
+          "headless_chromium_scenarios": 12,
+          "no_external_HTTP": true,
+          "zero_JS_page_errors": true,
+          "failed_instrumentation_attempts": 3,
+          "invalid_attempts": [
+            "python -I no module path",
+            "missing indirect esbm_event_engine.py dependency",
+            "file:// blocked by administrator"
+          ],
+          "repaired_source_SHA256": "e1a05e5250ccec22ccf7c79eb8e985671d2b59a382eac88ec613275b98724a19"
+        },
+        "source_full_receipt_sha256": "5502184c2777a9859c537813b7478a1ab5afc2049e13a0a035bd0189dccf7f1f",
+        "local_full_rows_available_in_conversation_bundle": true,
+        "humans": 0
+      },
+      "F": {
+        "preregistered_adversarial": {
+          "adversary": "HTML data derived from real executed model; separate stage audit and no external JS",
+          "negative": "Any mismatch means INVALID and repair with new freeze"
+        },
+        "negative_diagnostic": false,
+        "warning": "All findings in model and Python; technically falsified baseline actor order no human inference."
+      },
+      "G": {
+        "preregistered": {
+          "independent_replication": "NONE",
+          "human": "NONE"
+        },
+        "independence": "NO_EXTERNAL_HUMAN_HOLDOUT",
+        "third_party_OS": "NOT_TESTED"
+      },
+      "H": {
+        "prior_ids": [
+          "P-TRAJECTORY-INVARIANCE",
+          "P-NETWORK-INVARIANCE",
+          "P-DYADIC_ACCESS",
+          "P-NOVELTY"
+        ],
+        "update_ids": [
+          "U177",
+          "U178",
+          "U179",
+          "U180",
+          "U181",
+          "U182"
+        ],
+        "human_priors": "NO_CHANGE_WITH_REASON",
+        "source_new": "SRC107 documentary publication only"
+      },
+      "I": {
+        "grade": "0/3",
+        "scientific_CT2_before": 7,
+        "scientific_CT2_after": 7,
+        "technical_result_valid": true,
+        "external_replication": false,
+        "ethical_ok": "No raw human sample or original source mutation"
+      },
+      "J": {
+        "decision": "PASS_CONDITIONAL_ADVANCE",
+        "successor": "STOP CAMPAIGN after final archive",
+        "failure_path": "REPAIR or keep unused slots",
+        "credit_spent": 1,
+        "value_next": "Distinct model and code capability; R5 external remains STOP"
+      },
+      "selection_exposure": "Adaptive sequential blocks, no blinded human outcomes, no 2/3 scientific claim",
+      "source_refs": [
+        "proyectos/mercados-de-pareja/research/ABH_N147_N166_20261030/PREREG_E.json",
+        "proyectos/mercados-de-pareja/research/ABH_N147_N166_20261030/RESULTS_INDEX.json"
+      ]
+    }
+  ]
+}

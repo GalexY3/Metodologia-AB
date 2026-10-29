@@ -1,0 +1,245 @@
+{
+  "schema": "ABH.N147_N166.RESULTS_INDEX.v1",
+  "date": "2026-10-30",
+  "branch": "research/ab-h-esbm-trajectory-equivalence-20261030",
+  "original_source_sha256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+  "prereg_commits": {
+    "A": "4a1c7a8ad0c01ee4622201f4be151fbc14e48586",
+    "B": "9d58ef9998487a4c71213679710a2540f8e8cf2f",
+    "C": "dc883bb0fa02fdc2adf7508df490b513bbff1e84",
+    "D": "c144cfe88962085a5f6797b33daf94cba77dcbfe",
+    "E": "5b0bb50a6a305f51f6fdb4f7171782809799fa05"
+  },
+  "code_freeze_commits": {
+    "A": "e4b781098bfc045d631e03b6dd33c110724bfe27",
+    "B_source": "6c7a7f7814eda1cef3f8b22d4efabbd2da4d8385",
+    "B_runner": "ddc84a0ca236bcb04c335df41bd70a21ff35ec3c",
+    "C": "813f42d645a4255483e3f33a8d98dc45b898d24c",
+    "D_source": "ea7cd2532e352cda9aa6860dd079a51c5bea93c1",
+    "D_runner": "5131263a34d630336a84c212e2730cfc241dd42d",
+    "E_SHA_commit": "4272fde2b120716930ccd2d1b054eadfd0e2c7dd",
+    "E_repair_1_SHA": "67fe1447fead39d8e647874ed1f8023b85ea97c1",
+    "E_repair_2_SHA": "a281c06a5793bb5d42f4bc740445d36c350e7bb0",
+    "E_repair_3_SHA": "9a6c7b22c8e6bb8d43cbead720db94b2146fd0cc"
+  },
+  "local_full_receipts_SHA256": {
+    "A": "460dadd95c4fe7b843d01cb3bd3cfc27c1272533422b019d3e4ab4131c691a12",
+    "B": "3edfb5632825e1cdedfbc1511bcade05b48f2c661cac94db1d957a3f17ced45e",
+    "C": "13a11540a215952764200e2ee242315fc1ad7c7953d535b75a7154182eb6f798",
+    "D": "4af786fef72eb16ad3d70828dc7b2100d1f9417fa9e97930a3205e3e012b06eb",
+    "E_ledger": "5502184c2777a9859c537813b7478a1ab5afc2049e13a0a035bd0189dccf7f1f",
+    "E_chromium": "09405e60316524617f73b6ab2c61b57c8c3a0d081684fc12e1110f2218adb090",
+    "HTML": "fc09589e84334a0732c8e292050d763dbf818f5668d9930cfd3c2fbf314b5abc",
+    "DATA": "c823d1a6d44b1ebbc44c09004bd0d21491705b3cf64d7ec1f0dc635f6840578f",
+    "PNG": "05eb60b60c14d055bc476c3eff3b166e97e1d90778354d20500746c3896a364f"
+  },
+  "material": "Full 12-scenario HTML and source code are local conversation artifacts with source SHA frozen before outcomes. GitHub has prereg/code hash and outcome index, may not have full HTML bytes.",
+  "totals": {
+    "authorized": 20,
+    "valid_or_negative": 20,
+    "strict_PASS": 14,
+    "valid_negative": 6,
+    "invalid_finished_cycles": 0,
+    "failed_instrumental_attempts": 3,
+    "remaining": 0,
+    "human_validations": 0,
+    "grade_2": 0,
+    "CT2": 7,
+    "R5": "STOP"
+  },
+  "cycles": [
+    {
+      "id": "N147",
+      "status": "VALID_NEGATIVE_DIAGNOSTIC",
+      "endpoint": {
+        "exact": 10,
+        "checks": 12,
+        "first": "ring 2 slots: 2/12 trajectories disagree in dissolution/exposure despite graph and schedule invariance"
+      }
+    },
+    {
+      "id": "N148",
+      "status": "VALID_NEGATIVE_DIAGNOSTIC",
+      "endpoint": {
+        "exact": 7,
+        "checks": 12,
+        "first": "rewired 1/2 slots: 5/12 trajectories differ in dissolution and active stocks"
+      }
+    },
+    {
+      "id": "N149",
+      "status": "VALID_NEGATIVE_DIAGNOSTIC",
+      "endpoint": {
+        "counterexamples": 7,
+        "first": "first divergent stage dissolution at t1/t2 for canonical graph, legacy matching at t0, original per-pair directional ordered tensor"
+      }
+    },
+    {
+      "id": "N150",
+      "status": "VALID_NEGATIVE_DIAGNOSTIC",
+      "endpoint": {
+        "exact": 0,
+        "checks": 4,
+        "legacy_order": "Direct legacy schedule actor-index sensitivity in full event and aggregate outputs"
+      }
+    },
+    {
+      "id": "N151",
+      "status": "PASS",
+      "endpoint": {
+        "exact": 2,
+        "checks": 2,
+        "symmetric_hazard_only": true
+      }
+    },
+    {
+      "id": "N152",
+      "status": "PASS",
+      "endpoint": {
+        "exact": 2,
+        "checks": 2,
+        "symmetric_hazard_and_matching": true
+      }
+    },
+    {
+      "id": "N153",
+      "status": "PASS",
+      "endpoint": {
+        "exact": 12,
+        "checks": 12,
+        "full_directed_events_and_aggregates": true
+      }
+    },
+    {
+      "id": "N154",
+      "status": "PASS",
+      "endpoint": {
+        "exact": 16,
+        "checks": 16,
+        "rewired_12_and_legacy_4": true
+      }
+    },
+    {
+      "id": "N155",
+      "status": "PASS",
+      "endpoint": {
+        "legacy_full_dict_parity": 60
+      }
+    },
+    {
+      "id": "N156",
+      "status": "VALID_NEGATIVE_DIAGNOSTIC",
+      "endpoint": {
+        "exact": 18,
+        "checks": 24,
+        "remaining_six": "only final_private_aspiration_bias_mean differs by IEEE addition order, event symmetric diff 0"
+      }
+    },
+    {
+      "id": "N157",
+      "status": "VALID_NEGATIVE_DIAGNOSTIC",
+      "endpoint": {
+        "exact": 18,
+        "checks": 24,
+        "remaining_six": "only final_public_reputation_penalty_mean differs by IEEE addition order, event symmetric diff 0"
+      }
+    },
+    {
+      "id": "N158",
+      "status": "PASS",
+      "endpoint": {
+        "exact": 24,
+        "checks": 24,
+        "norm_policies": [
+          "pair_norm_same",
+          "pair_norm_cross"
+        ]
+      }
+    },
+    {
+      "id": "N159",
+      "status": "PASS",
+      "endpoint": {
+        "n": 100000,
+        "symmetric_sum_mod_mean": 0.49891800046705825,
+        "corr_with_first": -0.00006993552876124609
+      }
+    },
+    {
+      "id": "N160",
+      "status": "PASS",
+      "endpoint": {
+        "cases": 12,
+        "event_mismatches": 0,
+        "max_absolute_float_diff": 1.3877787807814457e-17
+      }
+    },
+    {
+      "id": "N161",
+      "status": "PASS",
+      "endpoint": {
+        "private_public_full_exact": 48,
+        "checks": 48,
+        "legacy_full_parity": 60
+      }
+    },
+    {
+      "id": "N162",
+      "status": "PASS",
+      "endpoint": {
+        "private_and_public_simultaneous_exact": 24,
+        "checks": 24
+      }
+    },
+    {
+      "id": "N163",
+      "status": "PASS",
+      "endpoint": {
+        "new_seeds": "6100..6129",
+        "runs": 60,
+        "mean_ring_minus_canonical_rewired_active": -0.23333333333333334,
+        "positive": 8,
+        "negative": 13,
+        "ties": 9,
+        "no_external_human_inference": true
+      }
+    },
+    {
+      "id": "N164",
+      "status": "PASS",
+      "endpoint": {
+        "scenario_count": 12,
+        "agents": 24,
+        "ticks": 4,
+        "HTML_sha256": "fc09589e84334a0732c8e292050d763dbf818f5668d9930cfd3c2fbf314b5abc",
+        "html_bytes": 76624
+      }
+    },
+    {
+      "id": "N165",
+      "status": "PASS",
+      "endpoint": {
+        "ledger_scenarios": 12,
+        "ledger_ticks": 48,
+        "stage_and_exclusivity_all": true
+      }
+    },
+    {
+      "id": "N166",
+      "status": "PASS_AFTER_3_INSTRUMENTAL_REPAIRS",
+      "endpoint": {
+        "isolated_directory_identical_html": true,
+        "headless_chromium_scenarios": 12,
+        "no_external_HTTP": true,
+        "zero_JS_page_errors": true,
+        "failed_instrumentation_attempts": 3,
+        "invalid_attempts": [
+          "python -I no module path",
+          "missing indirect esbm_event_engine.py dependency",
+          "file:// blocked by administrator"
+        ],
+        "repaired_source_SHA256": "e1a05e5250ccec22ccf7c79eb8e985671d2b59a382eac88ec613275b98724a19"
+      }
+    }
+  ]
+}
