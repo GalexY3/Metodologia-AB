@@ -1,0 +1,142 @@
+{
+  "cycle": "N87",
+  "status": "ALL_PRECOMMITTED_TESTS_PASS",
+  "date": "2026-10-29",
+  "preexecution_freeze_commit": "4482b9936c47820dd719f1a177d9c01079b10239",
+  "preexecution_archive_sha256": "8baf8a3cda6546cc161835061236f2c894f79545914fd24025a2dc0d1a5d3719",
+  "preexecution_archive_blob_sha1": "8191d164e780f3aa5e42cd21167b8037ed44c99b",
+  "original_v2_sha256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+  "python": "3.13.5",
+  "numpy": "2.3.5",
+  "networkx": "3.6.1",
+  "tests": {
+    "passed": 19,
+    "total": 19,
+    "inherited_n86": 9,
+    "new_n87": 10
+  },
+  "original_scenarios": 10,
+  "seeds": 6,
+  "legacy_unchanged_across_60": true,
+  "comparison_repeated_twice": true,
+  "formed": 13668,
+  "dissolved": 10028,
+  "censored": 3640,
+  "formation_cohorts_per_run": 16,
+  "max_distinct_hazards_in_run": 61,
+  "scenarios": [
+    {
+      "scenario": "mixed_random",
+      "runs": 6,
+      "formed": 1360,
+      "dissolved": 988,
+      "censored": 372,
+      "RMST4": 2.920572,
+      "eligible_for_RMST4": 1160,
+      "late_excluded": 200,
+      "legacy_completed_mean": 3.598917
+    },
+    {
+      "scenario": "heterosexual_restricted",
+      "runs": 6,
+      "formed": 1165,
+      "dissolved": 854,
+      "censored": 311,
+      "RMST4": 2.997279,
+      "eligible_for_RMST4": 987,
+      "late_excluded": 178,
+      "legacy_completed_mean": 3.630663
+    },
+    {
+      "scenario": "institutional_segregation",
+      "runs": 6,
+      "formed": 1312,
+      "dissolved": 937,
+      "censored": 375,
+      "RMST4": 3.002782,
+      "eligible_for_RMST4": 1123,
+      "late_excluded": 189,
+      "legacy_completed_mean": 3.737108
+    },
+    {
+      "scenario": "explicit_norm_preference",
+      "runs": 6,
+      "formed": 1447,
+      "dissolved": 1030,
+      "censored": 417,
+      "RMST4": 3.04656,
+      "eligible_for_RMST4": 1251,
+      "late_excluded": 196,
+      "legacy_completed_mean": 3.890899
+    },
+    {
+      "scenario": "popularity_ranking",
+      "runs": 6,
+      "formed": 1341,
+      "dissolved": 972,
+      "censored": 369,
+      "RMST4": 2.998198,
+      "eligible_for_RMST4": 1138,
+      "late_excluded": 203,
+      "legacy_completed_mean": 3.771643
+    },
+    {
+      "scenario": "visibility_balancing",
+      "runs": 6,
+      "formed": 1443,
+      "dissolved": 1090,
+      "censored": 353,
+      "RMST4": 2.873203,
+      "eligible_for_RMST4": 1235,
+      "late_excluded": 208,
+      "legacy_completed_mean": 3.485408
+    },
+    {
+      "scenario": "private_rejection_learning",
+      "runs": 6,
+      "formed": 1482,
+      "dissolved": 1085,
+      "censored": 397,
+      "RMST4": 2.892325,
+      "eligible_for_RMST4": 1257,
+      "late_excluded": 225,
+      "legacy_completed_mean": 3.510107
+    },
+    {
+      "scenario": "public_rejection_signal",
+      "runs": 6,
+      "formed": 1254,
+      "dissolved": 932,
+      "censored": 322,
+      "RMST4": 2.917821,
+      "eligible_for_RMST4": 1061,
+      "late_excluded": 193,
+      "legacy_completed_mean": 3.66344
+    },
+    {
+      "scenario": "longer_partnerships",
+      "runs": 6,
+      "formed": 857,
+      "dissolved": 468,
+      "censored": 389,
+      "RMST4": 3.486335,
+      "eligible_for_RMST4": 767,
+      "late_excluded": 90,
+      "legacy_completed_mean": 5.309631
+    },
+    {
+      "scenario": "shorter_partnerships",
+      "runs": 6,
+      "formed": 2007,
+      "dissolved": 1672,
+      "censored": 335,
+      "RMST4": 2.32676,
+      "eligible_for_RMST4": 1653,
+      "late_excluded": 354,
+      "legacy_completed_mean": 2.473628
+    }
+  ],
+  "full_result_sha256": "92dc697811fb90db44bb31bd5b0ba782cb3549d01bfb77affa4da129eb8dc500",
+  "test_receipt_sha256": "50c0269e779fdeb59e66638f4b41cbe053b1dfdf15a4dd29de5331eb4b9bab1a",
+  "limitations": "Purely synthetic system; standalone source-preserving in-memory instrumentation; fresh isolated temp workspace uses preinstalled numpy/networkx, NOT clean independent install; only four-tick RMST eligible start<=12; no human validation or causal novelty."
+}

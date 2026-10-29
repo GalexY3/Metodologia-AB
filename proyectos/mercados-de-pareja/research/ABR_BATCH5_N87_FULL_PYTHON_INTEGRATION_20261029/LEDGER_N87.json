@@ -1,0 +1,62 @@
+{
+  "schema": "ab.r.cycle.N87.full_python_integration.v1",
+  "cycle": "N87",
+  "status": "COMPLETED_VALID_TECHNICAL_0_OF_3",
+  "prereg_commit": "4482b9936c47820dd719f1a177d9c01079b10239",
+  "archive_blob": "8191d164e780f3aa5e42cd21167b8037ed44c99b",
+  "archive_sha256": "8baf8a3cda6546cc161835061236f2c894f79545914fd24025a2dc0d1a5d3719",
+  "source_sha256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+  "code_sha256": "ae1ba9f9cac5cbc5828da29751ae9eea455382b6c7a1789312887284c542c167",
+  "results": "RESULTS_N87_SUMMARY.json",
+  "A": "Can original Python ESBM v2 support true censor/event instrumentation while old metrics remain identical?",
+  "B": "Original unchanged 60-run outcomes are exact controls versus instrumented Python with N86 Kaplan-Meier helper.",
+  "C": "Cohort start-conditioned RMST, and common RMST4 only early formations, no 16-tick pool with late entrants.",
+  "D": "Original source exact uploaded and SHA-checked; 6 seeds x 10 scenarios compared both implementations.",
+  "E": "Immutable Git archive containing complete A-J, source tests saved at preexecution freeze.",
+  "F": "19/19 tests passed and 60/60 exact equality, repeated second time, 13668=10028+3640.",
+  "G": "All 16 cohort starts per run, heterogeneous hazards, 5 adversarial small sample tests, right censor and modified source rejection.",
+  "H": "No external humans, random artificial simulation, not an independently provisioned dependency environment.",
+  "I": "U136 P-UNION-DURATION NO_CHANGE, 0 new scientific findings; CT2 ordinal 7.",
+  "J": "Close N87 technically valid; first 5/5 tranche complete; remaining 19 N88-N106 already approved but NOT released.",
+  "test_receipt": {
+    "runner": "python -m unittest -v test_survival_metrics test_integration",
+    "tests": 19,
+    "passed": 19,
+    "failed": 0,
+    "seconds": 11.907,
+    "original_full_comparisons": 60,
+    "instrumented_full_comparisons": 60,
+    "repeated_for_result_generation": true,
+    "clean_file_workspace": true,
+    "clean_dependency_environment": false
+  },
+  "budget": {
+    "total_authorized": 40,
+    "valid_completed": 21,
+    "reserved_not_released": 19,
+    "first_five_spent": 5,
+    "first_five_remaining": 0
+  },
+  "score": {
+    "before": 39.05,
+    "after": 39.650000000000006,
+    "simulator_score": 57,
+    "qa_score": 58,
+    "scientific_originality_unchanged": 10,
+    "external_validation_unchanged": 5
+  },
+  "CT2": {
+    "before": 7,
+    "after": 7,
+    "ordinal": true
+  },
+  "privacy": {
+    "human_rows_used": 0,
+    "personal_rows_published": 0,
+    "authors_contacted": false,
+    "licenses_accepted": false,
+    "main_merged": false,
+    "SSJY_used": false
+  },
+  "original_file_mutated": false
+}

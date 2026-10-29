@@ -4,7 +4,7 @@
   "date": "2026-10-28",
   "mode": "append-only logical, versioned by Git commits",
   "reconstructed_from_documents": "Retrospective backfill, not preregistration. Old before values NOT_RECORDED unless documented explicitly.",
-  "source_coverage": "97 sources, 30 priors, 135 updates. N86 tested stand-alone KM/RMST utility, original simulator not run. 20 valid, 20 pending, N87 free.",
+  "source_coverage": "97 sources, 30 priors, 136 updates. N87 real original Python synthetic integration, no new human source, no external holdout.",
   "events": [
     {
       "id": "U001",
@@ -3414,7 +3414,30 @@
       "prior_probability_after": null,
       "prereg_status": "PRECOMMITTED_AJ_AT_6b04d12e4b699f8203982a728076bc17c71b86b3",
       "falsifier_or_followup": "Instrument original Python simulation to export (start_tick, duration, event), use helper and compare outputs with static seeds on clean repo, guard right-censor conditional on entry, then seek external longitudinal human panel if original."
+    },
+    {
+      "id": "U136",
+      "prior_id": "P-UNION-DURATION",
+      "source_ids": [],
+      "cycle_ids": [
+        "N87"
+      ],
+      "before": "CHALLENGED",
+      "after": "CHALLENGED",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "what_the_sources_contribute": "Original uploaded Python ESBM v2 verified byte-identical to private GitHub, preregistered SHA-frozen source instrumenter, 19/19 Python unittest checks, original vs instrumented outputs identical across 60/60 scenario-seed pairs in two separate comparison executions. 13668 artificial unions, 10028 ruptures, 3640 censored, all 16 entry cohorts in every run, heterogeneous hazards.",
+      "why_this_updates_or_checks_prior": "Replaces N85 toy-only confirmation and N86 standalone module-only tests with actual original ESBM Python execution, preserving legacy metrics exactly while adding coherent cohort and four-tick survival estimates.",
+      "limits": "Synthetic 144-agent simulation, not independent human evidence or novel ESBM mechanism; temporary clean workspace but system Python dependencies reused; original historical simulator source deliberately unchanged; RMST conditional on formation, possible selection and heterogeneous hazards.",
+      "falsifier_or_followup": "New independent observed longitudinal panel with legal data rights and pre-frozen comparators, plus dependency-isolated reproduction; no reusing synthetic seeds as human validation.",
+      "entry_status": "ACTIVE",
+      "recorded_at": "2026-10-29",
+      "evidence_type": "N87_REAL_ORIGINAL_ESBM_PYTHON_EXECUTION_60_RUN_19_TEST_INTEGRATION",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 1,
+      "prior_probability_before": null,
+      "prior_probability_after": null,
+      "prereg_status": "FROZEN_GIT_COMMIT_4482b9936c47820dd719f1a177d9c01079b10239"
     }
   ],
-  "last_campaign": "ABR_BATCH5_N86_SURVIVAL_ESTIMATOR_20261029"
+  "last_campaign": "ABR_BATCH5_N87_FULL_PYTHON_INTEGRATION_20261029"
 }

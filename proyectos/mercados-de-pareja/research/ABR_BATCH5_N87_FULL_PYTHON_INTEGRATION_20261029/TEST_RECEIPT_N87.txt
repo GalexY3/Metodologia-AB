@@ -1,0 +1,10 @@
+N87: test receipt summary (not original verbatim transcript).
+PRE-FREEZE COMMIT 4482b9936c47820dd719f1a177d9c01079b10239
+TEST COMMAND python -m unittest -v test_survival_metrics test_integration
+19 tests executed, 19 pass, 0 failures, 0 errors, wall-time reported by unittest 11.907s.
+Original 9 N86 checks + new 10 N87 tests, all pass.
+Original 60 exact-seed scenario runs vs instrumented 60 runs, all old output metrics and track exactly equal.
+Full comparison repeated for 255161-byte results JSON, SHA256 92dc697811fb90db44bb31bd5b0ba782cb3549d01bfb77affa4da129eb8dc500
+User uploads SHA256 matched existing GitHub blobs; test archive SHA256 8baf8a3cda6546cc161835061236f2c894f79545914fd24025a2dc0d1a5d3719
+Python 3.13.5, numpy 2.3.5, networkx 3.6.1; fresh folder with reused packages, no clean dependency build.
+Full original raw test transcript SHA256 50c0269e779fdeb59e66638f4b41cbe053b1dfdf15a4dd29de5331eb4b9bab1a
