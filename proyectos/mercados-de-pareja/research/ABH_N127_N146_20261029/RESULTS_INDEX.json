@@ -1,0 +1,234 @@
+{
+  "schema": "ABH.N127_N146.OUTCOME_INDEX.v1",
+  "date": "2026-10-29",
+  "branch": "research/ab-h-esbm-event-api-20261029",
+  "original_repo_source_SHA256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+  "code_freezes": {
+    "A_engine": "ec7368b84510850523d1a43dd4db958a5aa323c6",
+    "A_runner": "327807ba70a9e46fbae669d29026f2d079d41e8b",
+    "B_social_graph": "9af3a551854ee0793531d17b51f2e53977c49fc0",
+    "B_runner": "91e5bcdd5c3c4a04361a533c9b877ebd75b3d8bc",
+    "C_runner": "5f3a6f4d32588e6781a5ae9b80eee3c1b5fe0f63",
+    "D_engine_hardening": "ede5bb9a954c2bbce9ad26cc8fb59c8f5135174a",
+    "D_canonical_null": "4ca9d95fb1016789d13c478b6843f961939acb11",
+    "D_runner": "0672050bbd62f16950c55206d985ae6cf31d85f2"
+  },
+  "preregs": {
+    "A": "c424e34fa0138abb89f88568ea711e8a49781b70",
+    "B": "0f91ba7df0f14720765f12009873397c35078619",
+    "C": "e0ff2456fb2e7d63f6cb532e91108e4b3399da9c",
+    "D": "8daed203673985e0fb3df9c0e2d9ab883a645abd"
+  },
+  "full_local_receipts_SHA256": {
+    "A": "e4ea7c7496bae75cdd69d78d04e8dde9b180bfdeeff3809c3032f1a71923266f",
+    "B": "f0b4be4a6a19cb3188aee2acd41dcfab7be2162600e9ee5c2912041cca878856",
+    "C": "d1f9452b0cffa1424083927bba1f2071d1f748d82f22ec5a9ae95330cab8e7a2",
+    "D": "046a4ef8efdbc1452b60c0a6e6c4e5ae63068feae9e8c8e3fd7511fcb819ec13",
+    "posthoc": "23ec702fa4cb4a86ddf3b9c52adb9f4db48b52c1f705bafdf8f4cc72aba471c06"
+  },
+  "storage": "Full per-seed outcomes included in conversation ZIP, not separately uploaded to GitHub; frozen runners regenerate exact result structures in matching software versions.",
+  "scientific_validation": "NO_HUMAN_R5_STOP",
+  "CT2": 7,
+  "prior_art_gate": "Strong old matching prior art, no ESBM-only external prediction",
+  "total": {
+    "technical_or_valid_negative_cycles": 20,
+    "invalid_completed": 0,
+    "planning": 0,
+    "empirical_external_new": 0,
+    "grade_1": 0,
+    "grade_2": 0,
+    "grade_3": 0
+  },
+  "cycles": [
+    {
+      "id": "N127",
+      "status": "PASS",
+      "observed": {
+        "historical_exact": 60
+      },
+      "ABH_synthetic_only": true
+    },
+    {
+      "id": "N128",
+      "status": "PASS",
+      "observed": {
+        "adapter_exact": 6,
+        "exclusion": "only absent-category representation"
+      },
+      "ABH_synthetic_only": true
+    },
+    {
+      "id": "N129",
+      "status": "PASS",
+      "observed": {
+        "two_stage_trace_conservation_checks": 2
+      },
+      "ABH_synthetic_only": true
+    },
+    {
+      "id": "N130",
+      "status": "PASS",
+      "observed": {
+        "undefined_group_share": null,
+        "empty_group_not_zero": true
+      },
+      "ABH_synthetic_only": true
+    },
+    {
+      "id": "N131",
+      "status": "PASS",
+      "observed": {
+        "isolated_same_env": true,
+        "source_transform_removed": true
+      },
+      "ABH_synthetic_only": true
+    },
+    {
+      "id": "N132",
+      "status": "PASS",
+      "observed": {
+        "degree4_connected_graphs": 30
+      },
+      "ABH_synthetic_only": true
+    },
+    {
+      "id": "N133",
+      "status": "PASS",
+      "observed": {
+        "degree_preserving_rewired_graphs": 30
+      },
+      "ABH_synthetic_only": true
+    },
+    {
+      "id": "N134",
+      "status": "PASS",
+      "observed": {
+        "fixed_riskset_controls": 60,
+        "budget_equality_not_assumed": true
+      },
+      "ABH_synthetic_only": true
+    },
+    {
+      "id": "N135",
+      "status": "PASS",
+      "observed": {
+        "paired_network_runs": 60,
+        "ring_minus_oldrewire_active_mean": 0.03333333333333333,
+        "positive": 10,
+        "negative": 12,
+        "ties": 8,
+        "comparison_validity": "OLD_NULL_LABEL_DEPENDENT_WITHDRAWN"
+      },
+      "ABH_synthetic_only": true
+    },
+    {
+      "id": "N136",
+      "status": "PASS",
+      "observed": {
+        "degree_preserving_bridge_audit": 60,
+        "comparison_validity": "OLD_NULL_LABEL_DEPENDENT_WITHDRAWN"
+      },
+      "ABH_synthetic_only": true
+    },
+    {
+      "id": "N137",
+      "status": "PASS",
+      "observed": {
+        "network_slots_runs": 120,
+        "mean_two_minus_one_active_ring": 1.0666666666666667,
+        "mean_two_minus_one_active_rewired_old": 1.1333333333333333,
+        "control_warning": "old network rewiring label-sensitive"
+      },
+      "ABH_synthetic_only": true
+    },
+    {
+      "id": "N138",
+      "status": "PASS",
+      "observed": {
+        "initial_riskset_audits": 120,
+        "budget_inequality_documented": true
+      },
+      "ABH_synthetic_only": true
+    },
+    {
+      "id": "N139",
+      "status": "PASS",
+      "observed": {
+        "ring_records": 146,
+        "ring_censored": 100,
+        "ring_naive_completed_duration": 1.5434782608695652,
+        "ring_restricted_KM_t3": 2.514059120403749,
+        "old_rewired_records": 147,
+        "old_rewired_censored": 104,
+        "old_null_sensitivity": true
+      },
+      "ABH_synthetic_only": true
+    },
+    {
+      "id": "N140",
+      "status": "PASS",
+      "observed": {
+        "quality_proxy": "1 - abs(q_i-q_j)",
+        "not_human_wellbeing": true,
+        "old_network_null_sensitive": true
+      },
+      "ABH_synthetic_only": true
+    },
+    {
+      "id": "N141",
+      "status": "PASS",
+      "observed": {
+        "synthetic_exposure_gini": 60,
+        "real_fairness_inference": false,
+        "old_network_null_sensitive": true
+      },
+      "ABH_synthetic_only": true
+    },
+    {
+      "id": "N142",
+      "status": "PASS",
+      "observed": {
+        "invalid_input_classes_rejected": 6
+      },
+      "ABH_synthetic_only": true
+    },
+    {
+      "id": "N143",
+      "status": "PASS",
+      "observed": {
+        "historical_exact_after_guard": 60,
+        "old_adapter_exact_after_guard": 6
+      },
+      "ABH_synthetic_only": true
+    },
+    {
+      "id": "N144",
+      "status": "VALID_NEGATIVE_DIAGNOSTIC",
+      "observed": {
+        "old_ring_label_invariant": 20,
+        "old_rewired_label_noninvariant": 20,
+        "old_comparison_claims": "WITHDRAWN_PENDING_CANONICAL_REANALYSIS"
+      },
+      "ABH_synthetic_only": true
+    },
+    {
+      "id": "N145",
+      "status": "PASS",
+      "observed": {
+        "canonical_graph_label_invariant": 40,
+        "canonical_schedules_invariant": 8
+      },
+      "ABH_synthetic_only": true
+    },
+    {
+      "id": "N146",
+      "status": "PASS",
+      "observed": {
+        "isolated_subprocess_same_environment": true,
+        "source_corruption_rejected": true,
+        "independent_external_replication": false
+      },
+      "ABH_synthetic_only": true
+    }
+  ]
+}
