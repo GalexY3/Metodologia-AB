@@ -1,0 +1,23 @@
+# AB-R N92 · A–J PRE-EJECUCIÓN: instantánea de visibilidad frente a actualización secuencial
+
+Fecha 2026-10-29; padres N90 y N91 (N91 commit `eba81212143a15d726051959ce5eb3d287afc3c8`). **No contar N92 antes de ejecutar, verificar, registrar y guardar resultados.**
+
+A. Pregunta/falsador: N91 demuestra que `visibility_balancing` cambia formaciones para 18/18 relabelings arbitrarios, con cinco controles sin cambios sustantivos. ¿Desaparece esa dependencia si el score de equilibrado se computa con el contador `seen` tomado al **inicio de cada período**, en vez de permitir que senders previos del mismo tick modifiquen el score de los siguientes? Si no desaparece, el diagnóstico de N91 estaba incompleto y debe registrarse otra causa (tie-breaking, iteración, etc.).
+
+B. Rivales: (O) política `visibility_balancing` original, actualizaciones `seen` antes de terminar la ronda; (S) política `visibility_balancing` con `seen_tick_start=seen.copy()` al principio del período y mismo score `-1.4*log1p` aplicado a todos los remitentes de esa ronda; el contador real `seen` sigue registrando todas las exposiciones y cambia solo el score. Controles negativos fuertes: source original vs patch bajo `mixed_random` y `popularity_ranking`, que **no** usan `seen` en score.
+
+C. Estimando: número de formaciones que cambian al relabelar las mismas 144 personas, 6 semillas × tres permutaciones no identidad =18 comparaciones entre pares O y S, más las diferencias emparejadas de S−O en formaciones, Gini, activas y trayectorias por seed. Si S mejora invariancia sin perder información a nivel tick, eso diagnostica el mecanismo temporal. No se asume en prereg que S sea preferible empíricamente.
+
+D. Diseño: fuente Python ESBM v2 exacta con SHA256 `f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b`, código de transporte exógeno N91 SHA256 `2ea5b39520f86dd35d760f6d29ddac26ff839afa1289aebbb034cf3ceeb2e791`. N92 compila una modificación muy acotada **en memoria**, con dos reemplazos de texto exactos, sin editar código histórico. Se ejecutan seis semillas × cuatro relabelings × dos operadores O/S =48 simulaciones y 12 controles equivalencia original/patched en dos políticas no afectadas = **60 llamadas a simulate**.
+
+E. Freeze: script `n92_snapshot_test.py` SHA256 **`3006583df8d3f95a8ee6a43d6ef665c44578229956e9aed8e220bf04ad484480`**; gzip sin timestamp SHA256 **`1e22efdc8bff30ee27fa24d7c294c124512fe46a831f7474d0e976146634dcc2`**, Git blob `24b4e1413c7a44eaeed475b2ac104d910af59a65`. Debe existir commit de este A–J y el gzip exacto **ANTES** de ejecutar N92, y comprobar SHA local de fuente, N91 y código. No reparar ex post.
+
+F. Puertas de aceptación: 12/12 controles originales vs versión S idénticos en `mixed_random` y `popularity_ranking`, relabel inputs todos reversibles bajo shocks de pareja simétricos; exactamente 24 pares O/S, cuatro perm por seed; todas las corridas tienen `formed−dissolved=active`; source replace 1/1 anclado. Resultado negativo válido: si S no restaura invariancia, dejarlo explícito. Para afirmar que soluciona N91, exigir **18/18** emparejamientos S bajo relabel con mismo outcome de formaciones que su identidad, además de mismo resto de agregados salvo diferencias numéricas menores de orden.
+
+G. Controles alternativos: N91 relabel protocol reproducido como comparador pero **no contado otra vez como ciclo**; dos políticas no afectadas; cambios solo de ventana de lectura de `seen`; misma política/algoritmo de matching y shocks. Si persisten diferencias, NetworkX desempate u otra secuencia seguirá viable.
+
+H. Validez y multiplicidad: solo simulaciones, mismos seis seeds analizados antes; no nuevas observaciones humanas; sobreajuste por reparación consciente del problema de N91, por tanto evidencia técnica de software no prueba científica confirmatoria ni causal social. El efecto S−O incluye secuencias futuras modificadas por exposición.
+
+I. Registro: U145/U146 según resultado sobre P-PLATFORM-RANKING y P-OPPORTUNITY (sin convertir en prior causal validado). CT2 ordinal 7/100 y 0/3 novedoso. Si N92 valida reparación, no sobrescribir las series históricas; versionar como propuesta `snapshot`.
+
+J. Dictamen: contar un único N92 técnico válido únicamente tras ejecución pre-frozen e invariantes, publicar código, resultados agregados por semilla, ledger, CT2 completa y ampliada y scorecard. R5 STOP externo, ninguna licencia, autor, SSJY, reintentos agotados, microdatos privados o merge main. Tanda N88–N92 se cierra tras N92; 14 N93–N106 permanecen reservados, no liberados. DRIFT D1.0 dentro del mismo modelo.
