@@ -4,7 +4,7 @@
   "date": "2026-10-28",
   "mode": "append-only logical, versioned by Git commits",
   "reconstructed_from_documents": "Retrospective backfill, not preregistration. Old before values NOT_RECORDED unless documented explicitly.",
-  "source_coverage": "73 documentary source records (not independent cohorts), 30 priors and 101 append-only updates; SRC073 actual byte-level metadata access but no complete panel",
+  "source_coverage": "80 source records (not independent datasets), 30 priors, 107 updates; SRC074–SRC080 literature and author code",
   "events": [
     {
       "id": "U001",
@@ -2612,7 +2612,155 @@
       "prior_probability_before": null,
       "prior_probability_after": null,
       "prereg_status": "NO_N83_PREREG_BEFORE_OUTCOMES; SCHEMA_ONLY"
+    },
+    {
+      "id": "U102",
+      "prior_id": "P-NOVELTY",
+      "source_ids": [
+        "SRC074",
+        "SRC075",
+        "SRC076",
+        "SRC077",
+        "SRC078",
+        "SRC079"
+      ],
+      "cycle_ids": [],
+      "before": "STRONG_PRIOR_ART",
+      "after": "STRONG_PRIOR_ART",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "what_the_sources_contribute": "NO_CHANGE_WITH_REASON: educational hypergamy, network aspiration and structural composition already studied; ESBM generic novelty excluded.",
+      "why_this_updates_or_checks_prior": "Newly inspected independent published prior art narrows novelty and clarifies estimand but supplies no fresh observed human dyad data, no preregistered test, no numerical Bayesian update.",
+      "limits": "Public paper abstracts/full texts and code repository, no original microdata rows; existing ESBM empirical R5 gate unchanged. Different countries, cohorts and denominators cannot be pooled as a single effect.",
+      "falsifier_or_followup": "Require access to genuine exposure/reciprocity/union microdata; compare two hypergamy denominators, education/income/network desirability separately, composition-null and observed risk sets, preregister A–J before outcomes.",
+      "evidence_type": "POST_HOC_PRIOR_ART_REVIEW_NONCYCLE",
+      "recorded_at": "2026-10-29",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null,
+      "prereg_status": "NO_N83_PREREG_NO_OUTCOME_CALCULATION_STOP_R5"
+    },
+    {
+      "id": "U103",
+      "prior_id": "P-OPPORTUNITY",
+      "source_ids": [
+        "SRC077",
+        "SRC079"
+      ],
+      "cycle_ids": [],
+      "before": "RECORDED_RECOMMENDATION_RISK_SET_WITHOUT_VERIFIED_ATTENTION",
+      "after": "RECORDED_RECOMMENDATION_RISK_SET_WITHOUT_VERIFIED_ATTENTION",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "what_the_sources_contribute": "NO_CHANGE_WITH_REASON: opportunity composition vs assortative sorting decomposed in 3 European countries; still no actual impression sets.",
+      "why_this_updates_or_checks_prior": "Newly inspected independent published prior art narrows novelty and clarifies estimand but supplies no fresh observed human dyad data, no preregistered test, no numerical Bayesian update.",
+      "limits": "Public paper abstracts/full texts and code repository, no original microdata rows; existing ESBM empirical R5 gate unchanged. Different countries, cohorts and denominators cannot be pooled as a single effect.",
+      "falsifier_or_followup": "Require access to genuine exposure/reciprocity/union microdata; compare two hypergamy denominators, education/income/network desirability separately, composition-null and observed risk sets, preregister A–J before outcomes.",
+      "evidence_type": "POST_HOC_PRIOR_ART_REVIEW_NONCYCLE",
+      "recorded_at": "2026-10-29",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null,
+      "prereg_status": "NO_N83_PREREG_NO_OUTCOME_CALCULATION_STOP_R5"
+    },
+    {
+      "id": "U104",
+      "prior_id": "P-SIMILARITY",
+      "source_ids": [
+        "SRC074",
+        "SRC076",
+        "SRC078"
+      ],
+      "cycle_ids": [],
+      "before": "SUPPORTED_DESCRIPTIVELY_CONTEXT_DEPENDENT",
+      "after": "SUPPORTED_DESCRIPTIVELY_CONTEXT_DEPENDENT",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "what_the_sources_contribute": "NO_CHANGE_WITH_REASON: Esteve and Urbina use differing denominator/samples; homogamy and hypergamy not direct preference measures.",
+      "why_this_updates_or_checks_prior": "Newly inspected independent published prior art narrows novelty and clarifies estimand but supplies no fresh observed human dyad data, no preregistered test, no numerical Bayesian update.",
+      "limits": "Public paper abstracts/full texts and code repository, no original microdata rows; existing ESBM empirical R5 gate unchanged. Different countries, cohorts and denominators cannot be pooled as a single effect.",
+      "falsifier_or_followup": "Require access to genuine exposure/reciprocity/union microdata; compare two hypergamy denominators, education/income/network desirability separately, composition-null and observed risk sets, preregister A–J before outcomes.",
+      "evidence_type": "POST_HOC_PRIOR_ART_REVIEW_NONCYCLE",
+      "recorded_at": "2026-10-29",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null,
+      "prereg_status": "NO_N83_PREREG_NO_OUTCOME_CALCULATION_STOP_R5"
+    },
+    {
+      "id": "U105",
+      "prior_id": "P-STATUS_PROXY",
+      "source_ids": [
+        "SRC075",
+        "SRC078"
+      ],
+      "cycle_ids": [],
+      "before": "CHALLENGED",
+      "after": "CHALLENGED",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "what_the_sources_contribute": "NO_CHANGE_WITH_REASON: network desirability not interchangeable with earnings/education; sex and cohort context.",
+      "why_this_updates_or_checks_prior": "Newly inspected independent published prior art narrows novelty and clarifies estimand but supplies no fresh observed human dyad data, no preregistered test, no numerical Bayesian update.",
+      "limits": "Public paper abstracts/full texts and code repository, no original microdata rows; existing ESBM empirical R5 gate unchanged. Different countries, cohorts and denominators cannot be pooled as a single effect.",
+      "falsifier_or_followup": "Require access to genuine exposure/reciprocity/union microdata; compare two hypergamy denominators, education/income/network desirability separately, composition-null and observed risk sets, preregister A–J before outcomes.",
+      "evidence_type": "POST_HOC_PRIOR_ART_REVIEW_NONCYCLE",
+      "recorded_at": "2026-10-29",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null,
+      "prereg_status": "NO_N83_PREREG_NO_OUTCOME_CALCULATION_STOP_R5"
+    },
+    {
+      "id": "U106",
+      "prior_id": "P-SPAIN_CALIB",
+      "source_ids": [
+        "SRC079"
+      ],
+      "cycle_ids": [],
+      "before": "DATA_BLOCKED",
+      "after": "DATA_BLOCKED",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "what_the_sources_contribute": "NO_CHANGE_WITH_REASON: Spain aggregate spouse-schooling correlation does not calibrate observed dyadic exposure and acceptance.",
+      "why_this_updates_or_checks_prior": "Newly inspected independent published prior art narrows novelty and clarifies estimand but supplies no fresh observed human dyad data, no preregistered test, no numerical Bayesian update.",
+      "limits": "Public paper abstracts/full texts and code repository, no original microdata rows; existing ESBM empirical R5 gate unchanged. Different countries, cohorts and denominators cannot be pooled as a single effect.",
+      "falsifier_or_followup": "Require access to genuine exposure/reciprocity/union microdata; compare two hypergamy denominators, education/income/network desirability separately, composition-null and observed risk sets, preregister A–J before outcomes.",
+      "evidence_type": "POST_HOC_PRIOR_ART_REVIEW_NONCYCLE",
+      "recorded_at": "2026-10-29",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null,
+      "prereg_status": "NO_N83_PREREG_NO_OUTCOME_CALCULATION_STOP_R5"
+    },
+    {
+      "id": "U107",
+      "prior_id": "P-DYADIC_ACCESS",
+      "source_ids": [
+        "SRC075",
+        "SRC080"
+      ],
+      "cycle_ids": [],
+      "before": "PARTIAL_ROUND_ACTION_ACCESS_NO_EXPLICIT_REJECTION_OR_UNION",
+      "after": "PARTIAL_ROUND_ACTION_ACCESS_NO_EXPLICIT_REJECTION_OR_UNION",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "what_the_sources_contribute": "NO_CHANGE_WITH_REASON: author IPUMS replication scripts available, census microdata not accessed and no exposure/rejection variables.",
+      "why_this_updates_or_checks_prior": "Newly inspected independent published prior art narrows novelty and clarifies estimand but supplies no fresh observed human dyad data, no preregistered test, no numerical Bayesian update.",
+      "limits": "Public paper abstracts/full texts and code repository, no original microdata rows; existing ESBM empirical R5 gate unchanged. Different countries, cohorts and denominators cannot be pooled as a single effect.",
+      "falsifier_or_followup": "Require access to genuine exposure/reciprocity/union microdata; compare two hypergamy denominators, education/income/network desirability separately, composition-null and observed risk sets, preregister A–J before outcomes.",
+      "evidence_type": "POST_HOC_PRIOR_ART_REVIEW_NONCYCLE",
+      "recorded_at": "2026-10-29",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null,
+      "prereg_status": "NO_N83_PREREG_NO_OUTCOME_CALCULATION_STOP_R5"
     }
   ],
-  "last_campaign": "POST_N82_REAL_SUPPLEMENT_BINARY_ACCESS_GATE_NONCYCLE"
+  "last_campaign": "ABR_HYPERGAMY_LITERATURE_NONCYCLE_20261029"
 }
