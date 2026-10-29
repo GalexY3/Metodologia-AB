@@ -1094,7 +1094,15 @@
       "limits": "Treatment market assignment one city of three; DID depends on parallel trends/no meaningful market interference; little effective independent clustering; match means in-app reciprocal like, not contact exchange or couple longevity; exclusion of inactive profiles as IV may have exclusion/selections; estimates for short US market periods do not calibrate Spanish/Tinder/nonbinary populations, survival or public rejection reputation; no raw data/code verified.",
       "falsifier": "Independent logs where user-time dyadic exposure, both decisions and prior successful matches are observed with valid cluster-assigned intervention and independent holdout; fit competent two-sided dynamic assortment baseline and evaluate incremental ESBM prediction.",
       "verified_at": "2026-10-28",
-      "raw_microdata_read": false
+      "raw_microdata_read": false,
+      "conceptual_novelty_reinspection_20261029": {
+        "primary_publication": "https://www.gsb.stanford.edu/faculty-research/publications/improving-match-rates-dating-markets-through-assortment-optimization",
+        "reinspection_date": "2026-10-29",
+        "method_location": "Original faculty-publisher abstract via indexed public search: 2023 paper dynamic assortments, recent-match history affects future likes, field assessment",
+        "finding_relevant_to_novelty": "Published dynamic assortment/recent-match history interactions already address a substantial subset of generic ESBM time-dependence and matching intervention claims.",
+        "rights_and_overlap": "Original proprietary platform dyadic event rows unavailable. Public faculty original page direct open returned 403, indexed original abstract was readable; no further PDF inspection or new access attempt.",
+        "research_use": "LITERATURE_PRIOR_ART_REINSPECTION_ONLY_NO_NEW_SOURCE_OR_AB_CYCLE"
+      }
     },
     {
       "id": "SRC055",
@@ -1715,7 +1723,15 @@
       "contribution": "UK Data Archive DOI 10.5255/UKDA-SN-852716 original samples 163 undergraduates at 7 speed dating events in 2005, 187 at 8 events in 2007, four-minute observed meetings, >100 predate traits/preferences; prior random forest predicts actor 4-18% and partner 7-27% variance but not relationship-specific attraction residual. Data.zip ~1MB registered users only under UK Data Service End User Licence; codebooks.zip 79 KB and syntax.zip 12 KB public.",
       "limits": "Two samples are separate years but part of same published research program, not Columbia or Mixmosa. Registered user authentication/terms not satisfied; no original data bytes, no SHA256 or binary bilateral acceptance/duration confirmed. Strong prior art against claiming predictive pair-specific compatibility from self-reports.",
       "rights": "UKDS safeguarded registered-user End User Licence; access needs user's own registration and license acceptance, no circumvention.",
-      "AB_cycle_increment": 0
+      "AB_cycle_increment": 0,
+      "conceptual_novelty_reinspection_20261029": {
+        "primary_publication": "https://doi.org/10.1177/0956797617714580",
+        "reinspection_date": "2026-10-29",
+        "method_location": "SAGE original article abstract/open-practices (public HTML; full article restricted); two prior speed-dating studies; actor / partner / relationship-specific distinction",
+        "finding_relevant_to_novelty": "Authors' predate questionnaires predict portions of actor/partner variance but do not predict relationship-specific attraction in their reported tests. This is prior art and a limit on relying only on ex-ante attributes in ESBM.",
+        "rights_and_overlap": "Paper original published; UKDS individual files still subject to user licence; no data downloaded. Two cohorts may overlap the 2005/2007 components in SRC090, do not count as independent extra validation.",
+        "research_use": "LITERATURE_PRIOR_ART_REINSPECTION_ONLY_NO_NEW_SOURCE_OR_AB_CYCLE"
+      }
     },
     {
       "id": "SRC085",
@@ -1813,7 +1829,15 @@
       "rights": "PNAS paper CC BY4, not automatic license for participant-level Excel; authors state deposit in OSF 10.17605/OSF.IO/3ZYN6. Explicit user rule forbids repeating OSF web/API attempts: did not attempt them. No alternative independently verifiable authorized raw file identified, no SHA256 or original rows.",
       "limitations": "Source report not our replication or causal estimate. Followup is conditional on initial mutual match and thus selected; association cannot identify causal effect of initial romantic attraction or prove durable stable unions. 2015 festival sample selection and differences in gender/orientation and calendar across cohorts challenge transport. No independent ESBM holdout run, no novelty by repeating social relations model.",
       "falsifier": "Acquire legally licensed original paired yes/no and follow-up records with data-specific rights and stable event IDs via a permitted new route; freeze distinct mechanistic claim and competent SRM/partner/actor controls plus independent cohort holdout before reading outcomes.",
-      "AB_cycle_increment": 0
+      "AB_cycle_increment": 0,
+      "conceptual_novelty_reinspection_20261029": {
+        "primary_publication": "https://doi.org/10.1073/pnas.2206925119",
+        "reinspection_date": "2026-10-29",
+        "method_location": "Original article abstract via PubMed PMID 36322750: 3 speed-dating studies n=559; >6600 dates; >6100 longitudinal followups; social relations model actor, partner, relationship impressions",
+        "finding_relevant_to_novelty": "Partner and relationship-specific attraction effects are reported as predictive for later contact/romantic involvement. ESBM cannot claim novelty simply from predicting follow-up after real dates with partner and dyad terms.",
+        "rights_and_overlap": "No original participant rows accessed, original two older speed-date samples overlap potentially with SRC084; longitudinal followups among select initial matches not randomized and cannot establish causality.",
+        "research_use": "LITERATURE_PRIOR_ART_REINSPECTION_ONLY_NO_NEW_SOURCE_OR_AB_CYCLE"
+      }
     },
     {
       "id": "SRC091",

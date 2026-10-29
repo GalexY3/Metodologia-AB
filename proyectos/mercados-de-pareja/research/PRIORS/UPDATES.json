@@ -4,7 +4,7 @@
   "date": "2026-10-28",
   "mode": "append-only logical, versioned by Git commits",
   "reconstructed_from_documents": "Retrospective backfill, not preregistration. Old before values NOT_RECORDED unless documented explicitly.",
-  "source_coverage": "103 SOURCES / 30 PRIORS / 154 UPDATES; SRC017 and SRC032 original publication reread (same already-registered samples), U153/U154 no-state-change; 0 new primary cohorts, 0 AB cycles",
+  "source_coverage": "103 SOURCES, 30 PRIORS, 156 UPDATES; re-read existing SRC084, SRC090, SRC054 plus registered prior art, no new source/dataset/cycle, 0 original scientific grade.",
   "events": [
     {
       "id": "U001",
@@ -3863,7 +3863,66 @@
       "AB_cycle_increment": 0,
       "prereg_status": "DOCUMENTARY_NONCYCLE_ADVERSARIAL_NO_GO",
       "status_change": false
+    },
+    {
+      "id": "U155",
+      "prior_id": "P-NOVELTY",
+      "source_ids": [
+        "SRC017",
+        "SRC021",
+        "SRC032",
+        "SRC054",
+        "SRC055",
+        "SRC084",
+        "SRC090",
+        "SRC098"
+      ],
+      "cycle_ids": [],
+      "before": "STRONG_PRIOR_ART",
+      "after": "STRONG_PRIOR_ART",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "recorded_at": "2026-10-29",
+      "entry_status": "ACTIVE",
+      "evidence_type": "EXISTING_PRIMARY_ARTICLE_REINSPECTION_PLUS_MODEL_CLASS_IDENTIFIABILITY_PROOF_NOT_EMPIRICAL",
+      "what_the_sources_contribute": "Thesis novelty audit: no presently defensible ESBM v2-only human prediction found. Stagewise selection, actor/partner/dyad attraction, exposure ranking, bilateral matching, private history and duration each have prior art, are imposed as parametric laws or are mimicked by competent alternatives. Current ESBM is an uncalibrated integrative computational model, not validated original causal social theory. No new independent sample; STRONG_PRIOR_ART remains.",
+      "why_this_updates_or_checks_prior": "Documents revised thesis scope and necessity of formal rival-class benchmarking; evidence and original grade do not change because prior art existed and no novel human data or independently tested prediction was produced.",
+      "limits": "The class-equivalence proof assumes a saturated history-aware B6 with matched observed policies and event support; it does not assert that a small finite-sample parametric B6 predicts equally well, or that causal interventions beyond observed support cannot discriminate mechanism.",
+      "falsifier_or_followup": "Before any new cycle: propose an ex ante quantitative or ordinal prediction under defined policy/data support, compared with constrained B0/B1/SRM/B2/B4/B6 under identical information, and confirm on independent original licensed real bilateral exposure data with ethics, correct event clustering and frozen A-J/code SHA. Otherwise retain integrative thesis only.",
+      "numerical_bayesian_update": false,
+      "prior_probability_before": null,
+      "prior_probability_after": null,
+      "AB_cycle_increment": 0,
+      "prereg_status": "POSTHOC_DOCUMENTARY_NO_AB_CYCLE_NOVELTY_SCOPING"
+    },
+    {
+      "id": "U156",
+      "prior_id": "P-COMPETENT_NULL",
+      "source_ids": [
+        "SRC002",
+        "SRC017",
+        "SRC021",
+        "SRC032",
+        "SRC054",
+        "SRC084",
+        "SRC090"
+      ],
+      "cycle_ids": [],
+      "before": "CHALLENGED",
+      "after": "CHALLENGED",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "recorded_at": "2026-10-29",
+      "entry_status": "ACTIVE",
+      "evidence_type": "EXISTING_PRIMARY_ARTICLE_REINSPECTION_PLUS_MODEL_CLASS_IDENTIFIABILITY_PROOF_NOT_EMPIRICAL",
+      "what_the_sources_contribute": "Exact finite-horizon chain-rule representation shows a fully flexible, exposure- and policy-aware B6 conditional-history model reproduces the observable joint distribution induced by ESBM after latent integration, so observable trajectory alone cannot prove unique ESBM mechanism. This is general model-class saturation, not finite-sample predictive equivalence or equivalence under unobserved interventions. Strong fair constrained B0/B1/B2/B4/B6 baselines remain mandatory; CHALLENGED unchanged.",
+      "why_this_updates_or_checks_prior": "Documents revised thesis scope and necessity of formal rival-class benchmarking; evidence and original grade do not change because prior art existed and no novel human data or independently tested prediction was produced.",
+      "limits": "The class-equivalence proof assumes a saturated history-aware B6 with matched observed policies and event support; it does not assert that a small finite-sample parametric B6 predicts equally well, or that causal interventions beyond observed support cannot discriminate mechanism.",
+      "falsifier_or_followup": "Before any new cycle: propose an ex ante quantitative or ordinal prediction under defined policy/data support, compared with constrained B0/B1/SRM/B2/B4/B6 under identical information, and confirm on independent original licensed real bilateral exposure data with ethics, correct event clustering and frozen A-J/code SHA. Otherwise retain integrative thesis only.",
+      "numerical_bayesian_update": false,
+      "prior_probability_before": null,
+      "prior_probability_after": null,
+      "AB_cycle_increment": 0,
+      "prereg_status": "POSTHOC_DOCUMENTARY_NO_AB_CYCLE_NOVELTY_SCOPING"
     }
   ],
-  "last_campaign": "ABR_AASSIGN_NOVELTY_NO_GO_NOCYCLE_20261029"
+  "last_campaign": "ESBM_THESIS_REDUCTION_NOVELTY_GATE_NOCYCLE_20261029"
 }
