@@ -1,0 +1,307 @@
+{
+  "schema": "ABH.N127_N146.V1",
+  "date": "2026-10-29",
+  "project": "Mercados de pareja",
+  "branch": "research/ab-h-esbm-event-api-20261029",
+  "from_sha": "7533f3db5e1128a54819d5dda4905e40c5ef8cca",
+  "granted": 20,
+  "used_before": 0,
+  "block": "A N127–N131",
+  "original_source_sha256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+  "previous_adapter_sha256": "TO_BE_COMPUTED_FROM_MOUNTED_AND_GITHUB_IDENTICAL_COPY",
+  "design_phase": "PREOUTCOME",
+  "source_sha": "NOT_YET_COMMITTED",
+  "assumptions": [
+    "Synthetic N144×16 original; miniature 24×4 clearly separate",
+    "Original ESBM never modified",
+    "All event-level traces are synthetic derived calculations",
+    "Human STOP_R5, CT2 scientific 7, maturation 42.20% before independent technical score audit"
+  ],
+  "contracts": [
+    {
+      "id": "N127",
+      "parent": "N126",
+      "mode": "FOCUS_API",
+      "D": {
+        "code": "Engine source and runner frozen on GitHub before outcomes",
+        "environment": "Python numpy networkx same versions, clean copy tests"
+      },
+      "A": {
+        "question": "Remove runtime inspect/exec transformation and expose a source-explicit simulate() plus injectable scheduler.",
+        "target": "Executable refactored code not new sociological behavior",
+        "estimand": "Original outputs parity and independent event schema invariants"
+      },
+      "B": {
+        "null": "Original ESBM exact behavioral outputs and old adapter identical; no new meaning",
+        "rivals": [
+          "legacy source transformation",
+          "explicit API",
+          "broken implementation that silently changes outcomes",
+          "missing-data=zero artifact"
+        ]
+      },
+      "C": {
+        "predicted_discriminant": "60 original ESBM legacy scenario×seed outputs EXACTLY identical; original file unchanged; no selective result exclusion.",
+        "falsifier": "Any failed equality or invariant -> INVALID or REPAIR pre-outcome; no cherry picking"
+      },
+      "E": {
+        "execution": "PENDING",
+        "seeds": [
+          101,
+          211,
+          307,
+          401,
+          503,
+          601
+        ]
+      },
+      "F": {
+        "adversarial": "strong old exact reference, invalid args and subtype controls",
+        "negative": "failed check must be archived"
+      },
+      "G": {
+        "holdout": "NONE",
+        "replication": "Technical only, same synthetic generator"
+      },
+      "H": {
+        "prior": "P-SCHEDULE-CORRELATION internal only; P-NOVELTY/P-DYADIC_ACCESS human NO_CHANGE"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after_expected": 7,
+        "grade": "0/3",
+        "maturity": "evidence-scored only after substantive verified implementation"
+      },
+      "J": {
+        "if_pass": "N128",
+        "if_fail": "STOP/REPAIR with prereg before rerun",
+        "independent_value": "Distinct engineering property, not another random seed"
+      }
+    },
+    {
+      "id": "N128",
+      "parent": "N127",
+      "mode": "FOCUS_PARITY",
+      "D": {
+        "code": "Engine source and runner frozen on GitHub before outcomes",
+        "environment": "Python numpy networkx same versions, clean copy tests"
+      },
+      "A": {
+        "question": "Confirm new explicit event scheduling reproduces previous N107–N126 adapter in fixed sample.",
+        "target": "Executable refactored code not new sociological behavior",
+        "estimand": "Original outputs parity and independent event schema invariants"
+      },
+      "B": {
+        "null": "Original ESBM exact behavioral outputs and old adapter identical; no new meaning",
+        "rivals": [
+          "legacy source transformation",
+          "explicit API",
+          "broken implementation that silently changes outcomes",
+          "missing-data=zero artifact"
+        ]
+      },
+      "C": {
+        "predicted_discriminant": "Six N24×4 trajectories across schedule policy ×1/2 slots exactly equal to prior adapter, not merely mean; source module no inspect/exec.",
+        "falsifier": "Any failed equality or invariant -> INVALID or REPAIR pre-outcome; no cherry picking"
+      },
+      "E": {
+        "execution": "PENDING",
+        "seeds": [
+          101,
+          211
+        ]
+      },
+      "F": {
+        "adversarial": "strong old exact reference, invalid args and subtype controls",
+        "negative": "failed check must be archived"
+      },
+      "G": {
+        "holdout": "NONE",
+        "replication": "Technical only, same synthetic generator"
+      },
+      "H": {
+        "prior": "P-SCHEDULE-CORRELATION internal only; P-NOVELTY/P-DYADIC_ACCESS human NO_CHANGE"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after_expected": 7,
+        "grade": "0/3",
+        "maturity": "evidence-scored only after substantive verified implementation"
+      },
+      "J": {
+        "if_pass": "N129",
+        "if_fail": "STOP/REPAIR with prereg before rerun",
+        "independent_value": "Distinct engineering property, not another random seed"
+      }
+    },
+    {
+      "id": "N129",
+      "parent": "N128",
+      "mode": "BRANCH_EVENT_TRACE",
+      "D": {
+        "code": "Engine source and runner frozen on GitHub before outcomes",
+        "environment": "Python numpy networkx same versions, clean copy tests"
+      },
+      "A": {
+        "question": "Define typed exposure→proposal→response→formed/dissolved event records and reconcile stage counts.",
+        "target": "Executable refactored code not new sociological behavior",
+        "estimand": "Original outputs parity and independent event schema invariants"
+      },
+      "B": {
+        "null": "Original ESBM exact behavioral outputs and old adapter identical; no new meaning",
+        "rivals": [
+          "legacy source transformation",
+          "explicit API",
+          "broken implementation that silently changes outcomes",
+          "missing-data=zero artifact"
+        ]
+      },
+      "C": {
+        "predicted_discriminant": "Two N24×4 scenarios: event counts per stage must exactly reconcile result totals and formed/dissolved; event time and actor consistency; no double counting.",
+        "falsifier": "Any failed equality or invariant -> INVALID or REPAIR pre-outcome; no cherry picking"
+      },
+      "E": {
+        "execution": "PENDING",
+        "seeds": [
+          101,
+          211
+        ]
+      },
+      "F": {
+        "adversarial": "strong old exact reference, invalid args and subtype controls",
+        "negative": "failed check must be archived"
+      },
+      "G": {
+        "holdout": "NONE",
+        "replication": "Technical only, same synthetic generator"
+      },
+      "H": {
+        "prior": "P-SCHEDULE-CORRELATION internal only; P-NOVELTY/P-DYADIC_ACCESS human NO_CHANGE"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after_expected": 7,
+        "grade": "0/3",
+        "maturity": "evidence-scored only after substantive verified implementation"
+      },
+      "J": {
+        "if_pass": "N130",
+        "if_fail": "STOP/REPAIR with prereg before rerun",
+        "independent_value": "Distinct engineering property, not another random seed"
+      }
+    },
+    {
+      "id": "N130",
+      "parent": "N129",
+      "mode": "REPAIR_MISSING_CATEGORY",
+      "D": {
+        "code": "Engine source and runner frozen on GitHub before outcomes",
+        "environment": "Python numpy networkx same versions, clean copy tests"
+      },
+      "A": {
+        "question": "Correct small-subset missing gender category warnings and report undefined rates as missing not zero.",
+        "target": "Executable refactored code not new sociological behavior",
+        "estimand": "Original outputs parity and independent event schema invariants"
+      },
+      "B": {
+        "null": "Original ESBM exact behavioral outputs and old adapter identical; no new meaning",
+        "rivals": [
+          "legacy source transformation",
+          "explicit API",
+          "broken implementation that silently changes outcomes",
+          "missing-data=zero artifact"
+        ]
+      },
+      "C": {
+        "predicted_discriminant": "N24×4 all seeds 101/211 and constructed no-X subset; no NaNs in reported empty-category rates, unchanged nonempty-category values, parity legacy N144 preserved.",
+        "falsifier": "Any failed equality or invariant -> INVALID or REPAIR pre-outcome; no cherry picking"
+      },
+      "E": {
+        "execution": "PENDING",
+        "seeds": [
+          101,
+          211
+        ]
+      },
+      "F": {
+        "adversarial": "strong old exact reference, invalid args and subtype controls",
+        "negative": "failed check must be archived"
+      },
+      "G": {
+        "holdout": "NONE",
+        "replication": "Technical only, same synthetic generator"
+      },
+      "H": {
+        "prior": "P-SCHEDULE-CORRELATION internal only; P-NOVELTY/P-DYADIC_ACCESS human NO_CHANGE"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after_expected": 7,
+        "grade": "0/3",
+        "maturity": "evidence-scored only after substantive verified implementation"
+      },
+      "J": {
+        "if_pass": "N131",
+        "if_fail": "STOP/REPAIR with prereg before rerun",
+        "independent_value": "Distinct engineering property, not another random seed"
+      }
+    },
+    {
+      "id": "N131",
+      "parent": "N130",
+      "mode": "ADVERSARIAL_PORT",
+      "D": {
+        "code": "Engine source and runner frozen on GitHub before outcomes",
+        "environment": "Python numpy networkx same versions, clean copy tests"
+      },
+      "A": {
+        "question": "Prove module can run in clean source directory without dynamic source patch and fail closed on unsupported source/mode.",
+        "target": "Executable refactored code not new sociological behavior",
+        "estimand": "Original outputs parity and independent event schema invariants"
+      },
+      "B": {
+        "null": "Original ESBM exact behavioral outputs and old adapter identical; no new meaning",
+        "rivals": [
+          "legacy source transformation",
+          "explicit API",
+          "broken implementation that silently changes outcomes",
+          "missing-data=zero artifact"
+        ]
+      },
+      "C": {
+        "predicted_discriminant": "Subprocess isolated import three pure source files and one miniature 2-slot; old code sha verified, bad mode/slot rejected, no runtime exec/inspect and no external data.",
+        "falsifier": "Any failed equality or invariant -> INVALID or REPAIR pre-outcome; no cherry picking"
+      },
+      "E": {
+        "execution": "PENDING",
+        "seeds": [
+          101,
+          211
+        ]
+      },
+      "F": {
+        "adversarial": "strong old exact reference, invalid args and subtype controls",
+        "negative": "failed check must be archived"
+      },
+      "G": {
+        "holdout": "NONE",
+        "replication": "Technical only, same synthetic generator"
+      },
+      "H": {
+        "prior": "P-SCHEDULE-CORRELATION internal only; P-NOVELTY/P-DYADIC_ACCESS human NO_CHANGE"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after_expected": 7,
+        "grade": "0/3",
+        "maturity": "evidence-scored only after substantive verified implementation"
+      },
+      "J": {
+        "if_pass": "adapting next block B depending on defects",
+        "if_fail": "STOP/REPAIR with prereg before rerun",
+        "independent_value": "Distinct engineering property, not another random seed"
+      }
+    }
+  ],
+  "rights": "No SSJY, no SRC104 changes, no restricted access, no author contact, no merge, no re-run failed external links"
+}
