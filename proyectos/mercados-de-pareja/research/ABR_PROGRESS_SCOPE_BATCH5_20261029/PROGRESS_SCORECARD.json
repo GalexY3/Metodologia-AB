@@ -378,5 +378,45 @@
     "human_R5_status": "STOP_R5_EXTERNAL",
     "clean_clone_tested": false,
     "recorded_under": "proyectos/mercados-de-pareja/research/ABP_EXACT_ORACLE5_20261029"
+  },
+  "last_ABH_schedule14_synthetic_branch": {
+    "date": "2026-10-29",
+    "branch": "research/ab-h-esbm-schedule-interference-20261029",
+    "source_parent": "e9fb4aaa76d11f740105636486a2673351a8713c",
+    "prereg_commit": "d9ccdef6a0905c0ed69ca1afe67c6ead50d31463",
+    "code_freeze_commit": "b7684b36d518445013a4b57c6f88187a0e5c01e1",
+    "outcome_commit": "921392ae88641af4f315f481384d61994944f7f2",
+    "report": "proyectos/mercados-de-pareja/research/ABH_SCHEDULE14_20261029/REPORT.md",
+    "technical_synthetic_valid": 14,
+    "invalid": 0,
+    "planning": 0,
+    "authorized_previous_N93_N106_transferred_and_used": 14,
+    "remaining_from_that_block": 0,
+    "historical_AB_R_valid": 26,
+    "AB_R_valid_added": 0,
+    "AB_R_human_external_STOP_R5": true,
+    "sources": 106,
+    "priors": 31,
+    "updates": 169,
+    "new_priors": [
+      "P-SCHEDULE-CORRELATION"
+    ],
+    "new_prior_scope": "MATHEMATICAL_TOY_ONLY",
+    "new_human_rows": 0,
+    "new_external_tests": 0,
+    "CT2_ordinal_unchanged": 7,
+    "scientific_maturity_unchanged": 41.2,
+    "reason_no_maturity_change": "Finite standalone exact schedule model and demo not yet integrated in Python ESBM or independently browser/cloned tested; no external empirical identification or scientifically novel claim. Do not add percentage merely for test count.",
+    "grade_0_3_new": 0,
+    "prior_updates": [
+      "U167",
+      "U168",
+      "U169"
+    ],
+    "test_family_dependence": "All 14 finite tests evaluate same 2x2 generative assumptions and do not count as independent scientific replication",
+    "demo_browser_visual_validation": "NOT_VERIFIED",
+    "python_fraction_crosscheck": "EXECUTED_POSTOUTCOME",
+    "original_ESBM_v2_unchanged": true,
+    "original_SRC104_votes_unchanged": true
   }
 }
