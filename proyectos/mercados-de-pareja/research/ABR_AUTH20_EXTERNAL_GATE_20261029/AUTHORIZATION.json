@@ -69,5 +69,51 @@
     "No individual sensitive microdata sharing",
     "No falsely independent same human cohort"
   ],
-  "new_authorization_is_not_cycle_completion": true
+  "new_authorization_is_not_cycle_completion": true,
+  "current_tranche": {
+    "release_id": "TRANCHE_N83_N87_20261029",
+    "date": "2026-10-29",
+    "released_slots": [
+      "N83",
+      "N84",
+      "N85",
+      "N86",
+      "N87"
+    ],
+    "released_count": 5,
+    "unreleased_conditional_reserved_slots": [
+      "N88",
+      "N89",
+      "N90",
+      "N91",
+      "N92",
+      "N93",
+      "N94",
+      "N95",
+      "N96",
+      "N97",
+      "N98",
+      "N99",
+      "N100",
+      "N101",
+      "N102",
+      "N103",
+      "N104",
+      "N105",
+      "N106"
+    ],
+    "unreleased_count": 19,
+    "valid_completed_in_tranche": 0,
+    "invalid_in_tranche": 0,
+    "planning_in_tranche": 0,
+    "status": "RELEASED_FOR_CONDITIONAL_EVIDENCE_BASED_ATTEMPT_NONE_OPENED",
+    "fallback_tracks": [
+      "THEORY",
+      "IDENTIFIABILITY",
+      "SIMULATOR",
+      "REPRODUCIBILITY",
+      "INDEPENDENT_DATA"
+    ],
+    "cycle_gate": "Each counts only full frozen A-J and R1-R5; no required minimum, no 2/3 on synthetic results."
+  }
 }

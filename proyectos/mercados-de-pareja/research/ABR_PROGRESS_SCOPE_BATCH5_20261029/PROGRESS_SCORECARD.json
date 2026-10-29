@@ -1,0 +1,102 @@
+{
+  "schema": "esbm.progress.milestone_weighted_subjective_v1",
+  "date": "2026-10-29",
+  "branch": "research/ab-r-mercados-pareja-20261028",
+  "source_commit": "dc5a5726f93c2fc94b9a3338a4e158eb96d6a702",
+  "target_scope": "FIRST_SCIENTIFICALLY_DEFENSIBLE_ESBM_RESEARCH_PACKAGE_NOT_EXPLAIN_ALL_ROMANTIC_RELATIONSHIPS",
+  "nature": "EXPLICITLY_JUDGMENTAL_MILESTONE_ESTIMATE_NOT_EVALUATED_SUCCESS_PROBABILITY_OR_CT2",
+  "aggregate_percent_exact": 38.25,
+  "aggregate_percent_rounded": 38,
+  "rough_uncertainty_percentage_points": 10,
+  "uncertainty_is_statistical_interval": false,
+  "method": "SUM(weight_percent * progress_percent / 100), dimensions weights sum 100. Anchor evidence to current repo; subjective estimates not measured experiment outcomes.",
+  "dimensions": [
+    {
+      "id": "theory",
+      "name": "Marco teórico y mecanismos",
+      "weight": 15,
+      "progress": 60,
+      "evidence": "THEORY_V2.md defines actual implemented mutual compatibility scopes, staged accept/response, 16 periods, algorithmic exposure, private/public feedback and stipulated exits; parameters not calibrated.",
+      "required_for_100": "Rival-specific equations, identifiable estimands, population scope, norms/institutions, alternatives and formal falsifiers linked to observable data."
+    },
+    {
+      "id": "literature",
+      "name": "Estado del arte",
+      "weight": 10,
+      "progress": 75,
+      "evidence": "97 versioned original source records and 30 explicit priors, strong adverse Joel/Baxter/Pronk/Rios/Chang/Ogushi/Matz/Zhao, deduped author GitHub source SRC096 and SRC094.",
+      "required_for_100": "Systematic search protocol, inclusion/exclusion and study overlap audit, strongest competing outcomes and qualified literature synthesis ready for manuscript."
+    },
+    {
+      "id": "simulator",
+      "name": "Simulador ESBM",
+      "weight": 15,
+      "progress": 55,
+      "evidence": "Executable esbm_dynamic.py, frozen 6x10 scenarios, N144 synthetic agents, 16 ticks, dynamic eligibility/platforms/dissolution; simplistic matching, exogenous hazards, arbitrary weights and identities.",
+      "required_for_100": "Modular mechanisms and independent measurable observables, stateful event chronology, time-to-event censoring handled, negative controls and realistic constraints without forced outcomes."
+    },
+    {
+      "id": "qa",
+      "name": "Controles técnicos y reproducibilidad",
+      "weight": 10,
+      "progress": 50,
+      "evidence": "Pre-outcome source freezes, A-J and R1-R5 gate, SHA256 McMaster original and QA code, 60 synthetic scenario QA and byte-identical repeat on same machine; no independent clean clone.",
+      "required_for_100": "Fresh clean-room deterministic replay, unit+property testing, code/data provenance, exposure-preserving strong nulls, CI validation and ready-to-run reproduction package."
+    },
+    {
+      "id": "real_data",
+      "name": "Datos reales y preparación empírica",
+      "weight": 15,
+      "progress": 40,
+      "evidence": "Columbia, Mixmosa and McMaster original observational samples studied; McMaster 54 actors, two sessions, 357 native bilateral complete dates and SHA256. Original source rights for some other data unknown; no universal harmonized cross-site risk-set dictionary.",
+      "required_for_100": "Licensed complete original datasets from distinct cohorts, harmonized native yes/no and exposure identifiers with missingness and timing, versioned SHA256 and secure controlled access."
+    },
+    {
+      "id": "novelty",
+      "name": "Originalidad científica y baselines competentes",
+      "weight": 15,
+      "progress": 10,
+      "evidence": "Only one scoped 1/3 finding with subsequent attenuation, 2/3 not established. Risk-set-veto hypothesis PROPOSED_UNVALIDATED; strong existing prior-art SRM, assortments and sequence effects. No strong independent model comparison.",
+      "required_for_100": "Prospectively pre-registered original discriminating prediction surviving matched strong baselines and ablations; adverse results retained with no 2/3 if failed."
+    },
+    {
+      "id": "validation",
+      "name": "Validación externa independiente",
+      "weight": 15,
+      "progress": 5,
+      "evidence": "No virgin held-out independently collected original yes/no reciprocal dataset with legal rights, no ESBM heldout model test; within-source actors/2 McMaster sessions insufficient.",
+      "required_for_100": "External other-cohort untouched test, valid intervals/clustering and transport/negative results across populations and settings; no posthoc tuning."
+    },
+    {
+      "id": "manuscript",
+      "name": "Producto científico final",
+      "weight": 5,
+      "progress": 5,
+      "evidence": "Numerous internal reports/ledgers and transparent code, but no finished reproducible journal-style manuscript with defensible central claim and external validation.",
+      "required_for_100": "Complete methods, preregistration, data provenance and tables, independent reproduction, limitations, polished paper and supplement fit for scientific peer review."
+    }
+  ],
+  "hard_scientific_gates": {
+    "novel_validated_ESBM_2of3": false,
+    "external_independent_confirmatory_test": false,
+    "working_simulator": true,
+    "original_bilateral_data_verified": true,
+    "independently_reproduced_clean_clone": false
+  },
+  "separate_metrics": {
+    "AB_authorized_cumulative": 40,
+    "AB_valid_completed": 16,
+    "AB_credits_available": 24,
+    "AB_tranche_now_open_for_attempt": 5,
+    "AB_outside_tranche_reserved": 19,
+    "CT2_ordinal": 7,
+    "CT2_not_probability": true,
+    "sources": 97,
+    "priors": 30,
+    "updates": 130,
+    "new_valid_cycles_this_turn": 0,
+    "new_planning_cycles_this_turn": 0
+  },
+  "score_may_change_only_with_documented_milestone_evidence": true,
+  "score_is_not_number_of_cycles": false
+}
