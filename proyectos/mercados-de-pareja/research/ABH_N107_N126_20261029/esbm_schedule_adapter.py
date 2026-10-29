@@ -38,7 +38,7 @@ def opportunities(p, eligible, available, config, seen, tick, mode='legacy', slo
             for j in candidates[np.argsort(scores)[-kk:]]:
                 yield int(i), int(j)
         return
-    if mode not in ('pair_max', 'pair_greedy', 'pair_budgeted_max'):
+    if mode not in ('pair_max', 'pair_greedy', 'pair_budgeted_max', 'pair_sham', 'pair_norm_same', 'pair_norm_cross'):
         raise ValueError('Unknown institution: '+str(mode))
     if slots != 1:
         raise ValueError('Initial institution contract: exactly one encounter per actor per tick')
@@ -63,6 +63,13 @@ def opportunities(p, eligible, available, config, seen, tick, mode='legacy', slo
         chosen=candidates[np.argsort(p['u_expose'][tick,i,candidates])[-min(4,len(candidates)):]]
         for j in chosen: shortlist.add((min(i,int(j)),max(i,int(j))))
     edges=[(i,j,w) for i,j,w in edges if (i,j) in shortlist]
+    # New N112 institution: shift edge priority only after fixing candidate shortlist.
+    # Group markers are artificial; this is not a claim about social norms in humans.
+    if mode == 'pair_norm_same':
+        edges=[(i,j,w+1.8*float(p['norm'][i]==p['norm'][j])) for i,j,w in edges]
+    elif mode == 'pair_norm_cross':
+        edges=[(i,j,w+1.8*float(p['norm'][i]!=p['norm'][j])) for i,j,w in edges]
+    # pair_sham is exactly identical to pair_max (strong negative control).
     edges.sort(key=lambda x:-x[2])
     used = set(); greedy = []
     for i, j, w in edges:
