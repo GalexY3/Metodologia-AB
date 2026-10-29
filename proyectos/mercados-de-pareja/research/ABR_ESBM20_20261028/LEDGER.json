@@ -18,7 +18,7 @@
     "N85",
     "N86"
   ],
-  "R5": "STOP_AFTER_N82__THREE_HCMST2009_PUBLIC_STATA_SUPPLEMENTS_BINARY_HEADERS_SHA256_VERIFIED_THIRD_PARTY_ONLY__BASELINE_MISSING_OFFICIAL_FIDELITY_UNVERIFIED__FOUR_UNUSED",
+  "R5": "STOP_AFTER_N82__HYPERGAMY_PRIOR_ART_NO_NEW_EXPOSURE_RECIPROCITY_MICRODATA__FOUR_UNUSED",
   "prereg_commit": "026cc12b5136e60034c71c2f794d01a453bdf5bd",
   "source_freeze_commit": "7f196409bc1ba5b5af6d8caad39c173a38a99405",
   "source_sha256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
@@ -35,17 +35,27 @@
   "QA": "QA.json",
   "raw_data_human_processed": false,
   "prior_register": {
-    "sources_total": 73,
+    "sources_total": 80,
     "prior_hypotheses_total": 30,
-    "update_events_total": 101,
+    "update_events_total": 107,
     "latest_sources": [
-      "SRC073"
+      "SRC074",
+      "SRC075",
+      "SRC076",
+      "SRC077",
+      "SRC078",
+      "SRC079",
+      "SRC080"
     ],
     "latest_updates": [
-      "U100",
-      "U101"
+      "U102",
+      "U103",
+      "U104",
+      "U105",
+      "U106",
+      "U107"
     ],
-    "independence": "SRC073 original-format Stata W4–W6 same HCMST2009 cohort, not original server verified; 2009 baseline bytes absent; HCMST2017 fresh cohort independent but not acquired."
+    "independence": "Six distinct prior publications; SRC080 is same Urbina et al. 2024 study code, not independent sample; no new raw data or AB cycle."
   },
   "new_N1": 0,
   "new_N2": 0,
@@ -759,26 +769,31 @@
   },
   "latest_posthoc_gate": {
     "date": "2026-10-29",
-    "type": "ACTUAL_GITHUB_STATA_SUPPLEMENT_BINARY_BYTES_AND_HEADER_QA_NONCYCLE",
+    "type": "HYPERGAMY_PRIOR_ART_AUDIT_NONCYCLE",
+    "report": "../ABR_HYPERGAMY_PRIOR_ART_GATE_20261029/REPORT.md",
     "new_valid": 0,
     "new_invalid": 0,
     "new_planning": 0,
-    "report": "../ABR_HCMST_STATA_BINARY_GATE_20261029/REPORT.md",
-    "status": "../ABR_HCMST_STATA_BINARY_GATE_20261029/STATUS.json",
-    "source_ids": [
-      "SRC073"
-    ],
-    "updates": [
-      "U100",
-      "U101"
-    ],
-    "data_bytes_decoded": 971342,
-    "files_supplement_only": 3,
-    "baseline_byte_access": false,
-    "individual_outcome_rows_read": 0,
     "CT2_after": 7,
-    "new_CT2_point": false,
-    "rights": "PUBLIC_STANFORD_USE_AGREEMENT; THIRD_PARTY_MIRROR_NO_OFFICIAL_SHA",
-    "new_AB_cycle": false
+    "CT2_new_point": false,
+    "source_ids": [
+      "SRC074",
+      "SRC075",
+      "SRC076",
+      "SRC077",
+      "SRC078",
+      "SRC079",
+      "SRC080"
+    ],
+    "update_ids": [
+      "U102",
+      "U103",
+      "U104",
+      "U105",
+      "U106",
+      "U107"
+    ],
+    "original_rows": 0,
+    "new_simulations": 0
   }
 }
