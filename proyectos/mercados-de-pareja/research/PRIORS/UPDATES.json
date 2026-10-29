@@ -4,7 +4,7 @@
   "date": "2026-10-28",
   "mode": "append-only logical, versioned by Git commits",
   "reconstructed_from_documents": "Retrospective backfill, not preregistration. Old before values NOT_RECORDED unless documented explicitly.",
-  "source_coverage": "96 sources, 30 priors, 128 revisions; SRC096 original GitHub CSV same sample as SRC094, frozen noncycle audit 357 actual bilateral dates. STOP_R5 no independent external holdout.",
+  "source_coverage": "97 SOURCES / 30 PRIORS / 130 UPDATES; SRC097 author original Leiden physiology blind dates original GitHub, only source script/directory inspected, not licensed data binary. Authorization +20 cycles recorded separately; N83-N106 untouched.",
   "events": [
     {
       "id": "U001",
@@ -3247,7 +3247,53 @@
       "AB_cycle_increment": 0,
       "prereg_status": "QA_PREOUTCOME_FROZEN_EXPERIMENT_N83_NOT_OPEN",
       "falsifier_or_followup": "Require distinct licensed original bilateral dataset plus external holdout and fully frozen A-J and ESBM model SHA with R1-R5; otherwise STOP_R5."
+    },
+    {
+      "id": "U129",
+      "prior_id": "P-INTERACTION-EXPRESSIVE",
+      "source_ids": [
+        "SRC097"
+      ],
+      "cycle_ids": [],
+      "before": "INDEPENDENT_EXTERNAL_RANDOMIZED_EXPERIMENT_CONDITIONAL",
+      "after": "INDEPENDENT_EXTERNAL_RANDOMIZED_EXPERIMENT_CONDITIONAL",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "what_the_sources_contribute": "Distinct original Leiden blind-date physiological synchrony article and author GitHub data/coding pathway, source 2022 Nature Human Behaviour.",
+      "why_this_updates_or_checks_prior": "Already published physiological-synchrony association limits naive 'body coupling' novelty but does not refute conditional randomized facial smile findings or validate ESBM.",
+      "limits": "No causal manipulation of synchrony; direct script uses continuous Attraction; no native binary yes/no data accessed; data rights and bytes unverified.",
+      "recorded_at": "2026-10-29",
+      "entry_status": "ACTIVE",
+      "evidence_type": "NEW_INDEPENDENT_ORIGINAL_DATA_SOURCE_AND_ADVERSARIAL_BEHAVIOR_PRIOR_ART_NONCYCLE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null,
+      "prereg_status": "NOT_N83_STOP_R5",
+      "falsifier_or_followup": "Verify author data license, explicit two native binary decisions by observed opportunity, original SHA256 and external holdout on distinct human cohort, then only preregister model A-J and code SHA before outcomes; do not conflate physiological attraction with binary mutual consent."
+    },
+    {
+      "id": "U130",
+      "prior_id": "P-DYADIC_ACCESS",
+      "source_ids": [
+        "SRC097"
+      ],
+      "cycle_ids": [],
+      "before": "VERIFIED_ORIGINAL_OPEN_NATIVE_BILATERAL_357_DYADS_TWO_SESSIONS_NO_EXTERNAL_HOLDOUT",
+      "after": "VERIFIED_ORIGINAL_OPEN_NATIVE_BILATERAL_357_DYADS_TWO_SESSIONS_NO_EXTERNAL_HOLDOUT",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "what_the_sources_contribute": "Original processed behavioral SPSS and raw physio directory present on author GitHub commit 666f4d..., not a Columbia or McMaster clone.",
+      "why_this_updates_or_checks_prior": "New legal-discovery route in independent human event setting, but nothing meets native two-decision gate; access prior still reflects only McMaster 357 real bilateral dyads.",
+      "limits": "Raw participant files not read, no source specific license or SHA256, no verified stable paired binary yes/no, no independent ESBM evaluation.",
+      "recorded_at": "2026-10-29",
+      "entry_status": "ACTIVE",
+      "evidence_type": "NEW_INDEPENDENT_ORIGINAL_DATA_SOURCE_AND_ADVERSARIAL_BEHAVIOR_PRIOR_ART_NONCYCLE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null,
+      "prereg_status": "NOT_N83_STOP_R5",
+      "falsifier_or_followup": "Verify author data license, explicit two native binary decisions by observed opportunity, original SHA256 and external holdout on distinct human cohort, then only preregister model A-J and code SHA before outcomes; do not conflate physiological attraction with binary mutual consent."
     }
   ],
-  "last_campaign": "ABR_MCMASTER_GITHUB_MICRODATA_GATE_20261029_NONCYCLE"
+  "last_campaign": "ABR_AUTH20_EXTERNAL_GATE_20261029_NONCYCLE"
 }

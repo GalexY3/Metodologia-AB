@@ -3,7 +3,7 @@
   "project": "mercados-de-pareja",
   "date": "2026-10-28",
   "scope": "Retrospective provenance backfill from repository reports plus N56/N57 publisher audit. Original data never copied; not systematic or claim of accessing raw data for bibliography.",
-  "source_count": 96,
+  "source_count": 97,
   "sources": [
     {
       "id": "SRC001",
@@ -1906,7 +1906,27 @@
       "limits": "Exploratory descriptive NONCYCLE QA only, not confirmatory model or independent replication. Two McMaster sessions only; 357 dyads reuse 54 actors; 5 unpaired directed rows must not count as negative replies. Outcome is stated yes/no after date, not confirmed later union. No baselines or model/out-of-cohort validation; strict R5 still STOP.",
       "falsifier": "New legally accessible original external participant cohort with bilateral binary decisions/exposures, separate SHA256, preoutcome A-J hypothesis/model code frozen, strong SRM, original Chang and Pronk/Ogushi/Baxter/Matz/Zhao baselines; no N83 absent holdout.",
       "AB_cycle_increment": 0
+    },
+    {
+      "id": "SRC097",
+      "title": "Prochazkova et al. 2021/2022 physiological synchrony in real blind dates: original author GitHub Physio_Synchrony and Nature Human Behaviour dataset",
+      "canonical_url": "https://doi.org/10.1038/s41562-021-01197-3",
+      "original_author_github": "https://github.com/Eprochazkova/Physio_Synchrony",
+      "exact_original_github_commit": "666f4d05d60a5ce2fa745c7e621182cb2eb7a334",
+      "linked_technical_doi": "https://doi.org/10.34894/RFUGGD",
+      "original_preprint": "https://doi.org/10.1101/748707",
+      "read_original_script": "https://github.com/Eprochazkova/Physio_Synchrony/blob/666f4d05d60a5ce2fa745c7e621182cb2eb7a334/Code_SPSS_Express_Attraction.sps",
+      "observed_at": "2026-10-29",
+      "cycle_ids": [],
+      "source_type": "NEW_INDEPENDENT_ORIGINAL_PARTNER_LAB_BEHAVIORAL_DATA_GITHUB_CATALOG_NONCYCLE_NO_BINARY_LICENSE",
+      "contribution": "New author-original GitHub repository discovered from the original 2019 preprint as an alternative to the established DataverseNL paper's archive. Original author repository on default master was directly inspected, pinned to commit 666f4d05..., and lists physiological originals by dyad in 3.Raw_data/, human behavioral long format in 5.Processed data/1.behavior_long_format.sav and 3.Centered.sav, SPSS scripts and behavioral coding in Code_SPSS_Express_Attraction.sps. That text script defines Attraction as a continuous target and uses normal identity mixed models for expressions, indicating published analysis targets subjective attraction rather than native two-sided accept/reject. Journal paper reports physiological heart-rate and skin-conductance synchrony with attraction but not a causal intervention; this is strong external natural-interaction mechanistic prior art beyond McMaster movement, not an independent ESBM match validation.",
+      "independence_caveat": "Data are collected by original Leiden/Amsterdam investigator team and are a different human blind-date cohort from McMaster; original GitHub and DataverseNL contain the SAME paper/cohort, not two independent datasets. Number of raw dyad files is not sample size, dates or participants; no population N asserted from uninspected files.",
+      "rights": "Original author GitHub root has no explicit LICENSE file in inspected listing; data-specific Creative Commons or reuse terms not established. Published article and GitHub public visibility are insufficient to infer rights over sensitive physiological/raw original participant data. Binary files were NOT downloaded, only directory metadata and original public SPSS script. No signed agreements or author contacts.",
+      "access_status": "ORIGINAL_AUTHOR_GITHUB_DIRECTORY_AND_SOURCE_SCRIPT_VERIFIED_RAW_BINARY_NOT_FETCHED_RIGHTS_AND_NATIVE_YESNO_UNVERIFIED",
+      "limits": "No source data SHA256, no actual rows and no schema proof of two native accept/reject decisions, no observed contact/duration, site/event independent holdout. DataverseNL listing is a further archive route but not used and not counted as second independent cohort. No validation of ESBM and no causal conclusion. Materials predate 2022 published research, so synchrony-attraction is strong prior art.",
+      "falsifier": "Only after original explicit data package license, open raw files+SHA256, stable dyad/event/participant IDs, linked native binary outcomes and external independent cohort holdout; no N83 on mere attraction ratings or public physiology archives.",
+      "AB_cycle_increment": 0
     }
   ],
-  "last_added_campaign": "ABR_MCMASTER_GITHUB_MICRODATA_GATE_20261029_NONCYCLE"
+  "last_added_campaign": "ABR_AUTH20_EXTERNAL_GATE_20261029_NONCYCLE"
 }

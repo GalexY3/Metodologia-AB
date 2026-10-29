@@ -1,0 +1,73 @@
+{
+  "schema": "ab.r.campaign.authorization.v2",
+  "project": "mercados-de-pareja",
+  "campaign_id": "ABR_ESBM20_20261028",
+  "branch": "research/ab-r-mercados-pareja-20261028",
+  "recorded_date": "2026-10-29",
+  "authority": "USER_EXPLICIT_REQUEST_IN_CURRENT_CONVERSATION",
+  "original_grant_total": 20,
+  "original_completed_valid": 16,
+  "original_unused": [
+    "N83",
+    "N84",
+    "N85",
+    "N86"
+  ],
+  "additional_grant_from_user": 20,
+  "grant_kind": "UP_TO_20_ADDITIONAL_AB_R_ONLY_CONDITIONAL",
+  "cumulative_max_valid": 40,
+  "cumulative_completed_valid": 16,
+  "cumulative_authorized_but_unused": 24,
+  "pending_original_cycles": [
+    "N83",
+    "N84",
+    "N85",
+    "N86"
+  ],
+  "reserved_additional_cycle_ids": [
+    "N87",
+    "N88",
+    "N89",
+    "N90",
+    "N91",
+    "N92",
+    "N93",
+    "N94",
+    "N95",
+    "N96",
+    "N97",
+    "N98",
+    "N99",
+    "N100",
+    "N101",
+    "N102",
+    "N103",
+    "N104",
+    "N105",
+    "N106"
+  ],
+  "additional_ids_are_reservations_not_started": true,
+  "execution_authorized_only_if_r1_r5_and_full_A_J": true,
+  "counts_today": {
+    "valid_AB": 0,
+    "invalid_AB": 0,
+    "planning_AB": 0,
+    "material_documentary_audits": 1
+  },
+  "status": "STOP_R5",
+  "CT2_ordinal": 7,
+  "slots_cannot_be_spent_for_non_discriminating_repeated_simulation": true,
+  "overrides_banned_retrieval_routes": false,
+  "prohibitions": [
+    "No OSF web/API retries",
+    "No Essex Stanford Gist retries",
+    "No PsychArchives failed binary retry",
+    "No SSJY",
+    "No author contact without explicit consent",
+    "No license acceptance impersonation",
+    "No merge main",
+    "No individual sensitive microdata sharing",
+    "No falsely independent same human cohort"
+  ],
+  "new_authorization_is_not_cycle_completion": true
+}

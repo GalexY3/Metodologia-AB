@@ -1,0 +1,117 @@
+{
+  "schema": "ab.r.budget_expansion_research_gate.v1",
+  "project": "mercados-de-pareja",
+  "campaign": "ABR_ESBM20_20261028",
+  "date": "2026-10-29",
+  "branch": "research/ab-r-mercados-pareja-20261028",
+  "parent_commit": "c01e5154b2b1ca038c59300cc4a496611201648b",
+  "authorization_file": "AUTHORIZATION.json",
+  "status": "STOP_R5",
+  "cumulative_granted": 40,
+  "cumulative_valid": 16,
+  "cumulative_remaining": 24,
+  "slots_original": [
+    "N83",
+    "N84",
+    "N85",
+    "N86"
+  ],
+  "slots_new_reserved": [
+    "N87",
+    "N88",
+    "N89",
+    "N90",
+    "N91",
+    "N92",
+    "N93",
+    "N94",
+    "N95",
+    "N96",
+    "N97",
+    "N98",
+    "N99",
+    "N100",
+    "N101",
+    "N102",
+    "N103",
+    "N104",
+    "N105",
+    "N106"
+  ],
+  "N83": {
+    "status": "NOT_OPENED",
+    "experimental_A_J_preregistered": false,
+    "model_source_sha_frozen_before_outcomes": false,
+    "legal_independent_validation_sample_verified": false
+  },
+  "cycles_this_turn": {
+    "valid": 0,
+    "invalid": 0,
+    "planning": 0,
+    "documentary_noncycle": 1
+  },
+  "source_count": 97,
+  "prior_count": 30,
+  "update_count": 130,
+  "source_added": [
+    "SRC097"
+  ],
+  "update_events": [
+    "U129",
+    "U130"
+  ],
+  "prior_status_changes": 0,
+  "independent_validation_executed": 0,
+  "new_N1": 0,
+  "new_N2": 0,
+  "new_N3": 0,
+  "CT2": {
+    "ordinal": 7,
+    "probability": false,
+    "new_point": false,
+    "last_cycle": "N82",
+    "chart_full_zoom": "../ABR_SSJY_STAGE_N82_20261029/CT2.svg",
+    "source": "../ABR_SSJY_STAGE_N82_20261029/CT2_TRAJECTORY.json"
+  },
+  "hypothesis_candidate": "H-RISKSET-VETO",
+  "hypothesis_status": "PROPOSED_UNVALIDATED_NOT_PREREGISTERED",
+  "DRIFT": {
+    "kind": "D0.7",
+    "parent": "ESBM current AB-R",
+    "data_source_changed": "Candidate Leiden original physiology source",
+    "model_mechanism_changed": "Risk set conditioned veto as untested proposal, not executed",
+    "claim_change": false,
+    "planning_cycle_started": false
+  },
+  "adverse_prior_art": [
+    "Joel 2017 SRM",
+    "Baxter 2022 matched contact",
+    "Pronk 2020 rejection mindset",
+    "Rios Saban Zheng 2022/23 assortment optimization",
+    "Ogushi 2026 RF",
+    "Matz 2026 language",
+    "Chang 2021 physiological movement",
+    "Zhao 2024/25 permutation",
+    "Prochazkova 2022 physiological synchrony"
+  ],
+  "rights": {
+    "Leiden_license": "NOT_VERIFIED",
+    "data_bytes_retrieved": false,
+    "binary_outcomes_verified": false,
+    "original_sha256": null,
+    "do_not_republish_personal_data": true
+  },
+  "prohibitions_met": {
+    "OSF_web_api": false,
+    "Essex": false,
+    "Stanford": false,
+    "Gist": false,
+    "SSJY": false,
+    "contact_authors": false,
+    "accept_licenses": false,
+    "merge_main": false,
+    "publish_private_microdata": false
+  },
+  "clean_clone_verified": false,
+  "report": "REPORT.md"
+}
