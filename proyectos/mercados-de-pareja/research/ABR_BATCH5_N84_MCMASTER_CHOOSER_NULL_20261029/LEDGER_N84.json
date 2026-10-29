@@ -1,0 +1,86 @@
+{
+  "schema": "ab.r.cycle.exploratory_human_conditional_permutation.v1",
+  "campaign": "ABR_ESBM20_20261028",
+  "cycle": "N84",
+  "branch": "research/ab-r-mercados-pareja-20261028",
+  "date": "2026-10-29",
+  "status": "COMPLETED_VALID_EXPLORATORY_NEGATIVE",
+  "pre_execution_prereg_commit": "028a3276a2b73225b9baa65c077a1771c4fe1378",
+  "code_path": "n84_actor_conditioned.js",
+  "code_github_blob_sha1": "f0a4bffcddc3a9d82a5b2e5e07ae09c176e82c58",
+  "code_sha256": "de6e83813da9d98fd0a31731da3c2636c84f6c1c47585329fea565b649ba5d7a",
+  "original_author_data_github_commit": "dadc819fbe99e99402b6d43f7e4f247a4bf55c2b",
+  "original_data_sha256": "9685dfb09a610bbf150ee2d151b05d6dceff6af18fc5b21d3ac31eecabf63eb6",
+  "data_outcomes_were_exposed_in_earlier_qa": true,
+  "A": "Test whether mutual yes exceeds a null preserving every person's exact number of yes and actual attended encounters",
+  "B": "H0 exchangeability within dater over observed counterparts; alternative dyad alignment beyond individual selectivity",
+  "C": "357 complete original observed date pairs; mutual yes statistic",
+  "D": "Fisher-Yates for each actor, fixed xorshift32 seed 1badd00d, B=2000, exact actor yes and full opportunity graph fixed",
+  "E": "Prereg/code froze in commit before this new contrast, Git blob and original SHA checked",
+  "F": "Observed 70 vs exact null expected 73.359573; MC mean 73.302, sd 4.28, middle 95% 65-82; descriptive tail 0.4743",
+  "G": "Analytical expectation and MC agree, each actor yes count retained, 5 unmatched excluded as pairs",
+  "H": "Same 54 persons and 2 sessions as already exposed McMaster source; not confirmatory holdout, no causality or new science",
+  "I": "U132 and U133 qualitative NO_CHANGE_WITH_REASON, 0 N1/N2/N3; CT2 ordinal 7",
+  "J": "N84 exploratory valid negative; retain STOP_R5 for independent human validation; N85-N87 available, N88-N106 held",
+  "results": "RESULTS_N84.json",
+  "measurements": {
+    "status": "EXPLORATORY_PRIOR_OUTCOME_EXPOSURE",
+    "B": 2000,
+    "seed_hex": "1badd00d",
+    "n_actors": 54,
+    "n_sessions": 2,
+    "n_directional": 719,
+    "n_complete_encounters": 357,
+    "unmatched_directional": 5,
+    "observed_mutual": 70,
+    "expected_mutual_conditional_exact": 73.35957311918854,
+    "perm_mean": 73.302,
+    "perm_sd": 4.279948011073115,
+    "perm_quantiles": {
+      "q025": 65,
+      "median": 73,
+      "q975": 82
+    },
+    "observed_minus_null_expected": -3.359573119188539,
+    "randomization_two_sided_p_descriptive": 0.47426286856571714,
+    "null_min": 60,
+    "null_max": 89,
+    "qualifiers": "Conditional permutation fixes each actor's number yes and all encounter arcs and session; participants reused; outcomes previously explored; descriptive exploratory not confirmatory causal test or external replication",
+    "invariants": {
+      "all_source_binary": true,
+      "complete_pairs_sum": true,
+      "each_actor_yes_preserved": true,
+      "perm_expected_consistent": true
+    }
+  },
+  "grade": "0/3",
+  "CT2": {
+    "before": 7,
+    "after": 7,
+    "not_probability": true
+  },
+  "budget": {
+    "valid_total": 18,
+    "grant_total": 40,
+    "pending": 22,
+    "batch_valid": 2,
+    "batch_remaining": 3,
+    "unreleased_reserved": 19
+  },
+  "score": {
+    "before": 38.65,
+    "after": 38.85,
+    "dimension_affected": "qa 51 to 53, original scientific novelty and validation unchanged"
+  },
+  "DRIFT": "D0.4",
+  "clean_clone": "NOT_VERIFIED",
+  "report_script_write_repair": "First post-result GitHub report write aborted by a TYPO in expected Git blob hash; no repo mutation occurred, corrected in reporting code; frozen N84 code unchanged and cycle not re-counted",
+  "rights": {
+    "osf_web_api": false,
+    "SSJY": false,
+    "authors_contacted": false,
+    "licenses_accepted": false,
+    "raw_person_data_published": false,
+    "main_merged": false
+  }
+}
