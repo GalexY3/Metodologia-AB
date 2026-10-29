@@ -3,7 +3,7 @@
   "project": "mercados-de-pareja",
   "date": "2026-10-28",
   "scope": "Retrospective provenance backfill from repository reports plus N56/N57 publisher audit. Original data never copied; not systematic or claim of accessing raw data for bibliography.",
-  "source_count": 82,
+  "source_count": 84,
   "sources": [
     {
       "id": "SRC001",
@@ -1671,7 +1671,31 @@
       "limits": "Not a new independent study or new source of relationship duration; explicit downstream license cannot establish original investigator authorization. No data bytes retrieved here, only repository/documentation metadata. No reason to repeat Columbia analyses as new cycle.",
       "rights": "PUBLIC DOMAIN DEDICATION IN DERIVATIVE BASED ON ASSUMPTION; original source authorization unclear; verify original institution terms before reuse.",
       "AB_cycle_increment": 0
+    },
+    {
+      "id": "SRC083",
+      "title": "Graz Speed-Dating Study: Ability-Perception and the Appeal of Abilities — primary dyadic CSV and individual CSV",
+      "canonical_url": "https://doi.org/10.23668/psycharchives.5606",
+      "source_type": "INDEPENDENT_ORIGINAL_DYADIC_DATA_ARCHIVED_UNDER_EXPLICIT_SCIENTIFIC_USE_LICENSE_AUTHENTICATION_REQUIRED",
+      "verified_at": "2026-10-29",
+      "cycle_ids": [],
+      "contribution": "Original authors Hofer, Langmann, Burkart, Neubauer deposit two separate CSVs, individual data 308.19 KB MD5 c25dfdfa207ee7313e3303ee52ae8b40 and speed-date dyads 246.62 KB MD5 82ebbe3e49df499ede82758be9476219, both Scientific Use License v1 Sharing Level 1. Public codebook PDF 322.39 KB MD5 27bafbb8b881720a9e97fcb9b4bf56c9 CC BY4. Publication 2021 Journal of Research in Personality and 2022 data deposit. Independent Austrian sample from Columbia, Mixmosa and SSJY; actual speed dates and measured mate appeal. PsychArchives explicitly says level 1 requires acceptance of license and statement of intended use, and SSO redirect appeared when trying download. No CSV bytes or columns retrieved. Public MD5 metadata only, not verified local SHA256.",
+      "limits": "Not confirmed whether both explicit binary yes/no decisions or post-date union duration present; codebook bytes not inspected. Scientific use requires user's authorized acceptance, not bypassed. Preexisting original paper about perceived abilities and attraction, so simple association of perceived abilities with appeal is not new. No microdata analysis and no causal claims.",
+      "rights": "Scientific Use License v1 level 1 per-file; authentication and license acceptance mandatory; cannot assume model has consent or credentials. Public codebook CC BY4, data not CC BY4.",
+      "AB_cycle_increment": 0
+    },
+    {
+      "id": "SRC084",
+      "title": "Joel, Eastwick & Finkel: Is romantic desire predictable? two independent speed dating studies 2005/2007",
+      "canonical_url": "https://reshare.ukdataservice.ac.uk/852716/",
+      "source_type": "ORIGINAL_ARCHIVED_SAFEGUARDED_DATA_UK_DATA_SERVICE_REGISTERED_USERS_END_USER_LICENSE",
+      "verified_at": "2026-10-29",
+      "cycle_ids": [],
+      "contribution": "UK Data Archive DOI 10.5255/UKDA-SN-852716 original samples 163 undergraduates at 7 speed dating events in 2005, 187 at 8 events in 2007, four-minute observed meetings, >100 predate traits/preferences; prior random forest predicts actor 4-18% and partner 7-27% variance but not relationship-specific attraction residual. Data.zip ~1MB registered users only under UK Data Service End User Licence; codebooks.zip 79 KB and syntax.zip 12 KB public.",
+      "limits": "Two samples are separate years but part of same published research program, not Columbia or Mixmosa. Registered user authentication/terms not satisfied; no original data bytes, no SHA256 or binary bilateral acceptance/duration confirmed. Strong prior art against claiming predictive pair-specific compatibility from self-reports.",
+      "rights": "UKDS safeguarded registered-user End User Licence; access needs user's own registration and license acceptance, no circumvention.",
+      "AB_cycle_increment": 0
     }
   ],
-  "last_added_campaign": "ABR_MIXMOSA_BILATERAL_ORIGINAL_SOURCE_RIGHTS_GATE_NONCYCLE_20261029"
+  "last_added_campaign": "ABR_LICENSED_DYADIC_GRAZ_UKDS_GATE_NONCYCLE_20261029"
 }
