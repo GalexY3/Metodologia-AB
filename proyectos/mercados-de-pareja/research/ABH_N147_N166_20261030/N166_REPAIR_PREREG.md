@@ -1,0 +1,9 @@
+# N166 · pre-outcome repair and invalid attempt receipt
+
+Date 2026-10-30. Original N164–N166 prereg commit `5b0bb50a6a305f51f6fdb4f7171782809799fa05`; initial code SHA freeze commit `4272fde2b120716930ccd2d1b054eadfd0e2c7dd`.
+
+**Actual first run before this repair:** `build_demo.py` generated 12 synthetic scenarios and 76,624-byte `DEMO.html` SHA256 `fc09589e84334a0732c8e292050d763dbf818f5668d9930cfd3c2fbf314b5abc`. `test_demo.py` passed 12/12 exported scenarios, four periods each (48 riskset snapshots), with stage conservation. `verify_portable.py` failed **BEFORE browser validation** because `python -I /tmp/tmp.../build_demo.py` did not make the copied directory importable, raising `ModuleNotFoundError: No module named 'esbm_dynamic'`. Thus the first N166 instrumental attempt is INVALID, not a PASS, with no screenshot, no isolated reproducibility established yet. N164 and N165 remain separately valid.
+
+**Prospective bounded repair:** run the same frozen builder and independent verifier through a `python -I -c` wrapper that explicitly inserts the isolated temporary source directory into `sys.path` and invokes `runpy.run_path(script,run_name='__main__')`. Do not change simulator, data, HTML generation or acceptance checks. Verify source script SHA and byte-for-byte HTML digest, 12/12 independent stage checks, 12 browser cases, 24 circles, 48 graph edges, expected metrics, zero page errors and zero network HTTP requests. Freeze the revised verifier SHA in GitHub before executing. If Chromium fails, preserve that as a new instrumentation failure rather than infer a valid interactive UI.
+
+**Scope:** same installed Python/NumPy/NetworkX and Chromium; not a clean OS or independent scientific replication. The final original N166 slot counts only if this repaired code actually passes.
