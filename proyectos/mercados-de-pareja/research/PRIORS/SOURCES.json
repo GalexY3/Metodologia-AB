@@ -3,7 +3,7 @@
   "project": "mercados-de-pareja",
   "date": "2026-10-28",
   "scope": "Retrospective provenance backfill from repository reports plus N56/N57 publisher audit. Original data never copied; not systematic or claim of accessing raw data for bibliography.",
-  "source_count": 100,
+  "source_count": 103,
   "sources": [
     {
       "id": "SRC001",
@@ -1980,7 +1980,53 @@
       "limits": "Neither the original record nor file list, codebook, dyad IDs, event IDs, two native response columns for each pair, excluded/censored rows, missingness or time ordering could be inspected. Verifying that each person supplied a yes/no after each date in the published method does NOT prove that both native values can be linked in the accessible archive. A predicted partner yes/no is NOT partner's observed decision. No original bytes, observed dyads counted, original dataset reuse license, participant/event holdout, baseline or ESBM validation. Grouping is four local sessions of 67 select participants, not population sampling. No proof of relation formation or durability.",
       "falsifier": "Only from newly authorized/licensed access without circumventing the archive's bot challenge: independently verify file-specific rights, raw numeric anonymized tables/metadata/column dictionary and SHA256, join original respondent/partner actual yes/no by event, actual encountered risk set and ordering, distinct sample, and evaluate prospectively frozen ESBM vs competent conditional/actor/dyad/logit/SRM baselines under event-level untouched holdout.",
       "independent_external_validation_executed": false
+    },
+    {
+      "id": "SRC101",
+      "title": "Reglamento (UE) 2016/679 — RGPD, texto oficial EUR-Lex, arts. 5, 6, 9, 35 y 89",
+      "canonical_url": "https://eur-lex.europa.eu/legal-content/EN-ES/TXT/?uri=CELEX%3A32016R0679",
+      "source_type": "OFFICIAL_PRIMARY_BINDING_REGULATION_NOT_EMPIRICAL",
+      "verified_at": "2026-10-29",
+      "access_status": "OFFICIAL_WEB_INDEX_EXCERPT_VERIFIED; DIRECT_EURLEX_PAGE_BOT_GATED_NOT_BYPASSED",
+      "contribution": "Art. 9(1) lists categories involving data revealing sex life or sexual orientation; art. 9(2) provides conditional exceptions. Arts. 5,6,35,89 provide other core obligations for lawful and safeguarded research, including high-risk DPIA under relevant conditions. Dyadic dating graphs may allow inferences about sensitive information, even if labels are not requested. No lawful basis or approval for this project thereby established.",
+      "rights": "Public official legal text; no rights on human data, no consent of future participants, no ethical authorization.",
+      "limits": "Not every romantic yes/no is automatically special-category data. Actual facts, purposes, inferences and applicable exceptions need competent case-specific assessment. Web index supports summarized original text; direct open met JavaScript anti-bot and was not retried.",
+      "falsifier": "Document an actual competent institutional legal assessment, basis, where applicable special-category condition and privacy safeguards BEFORE human recruitment.",
+      "cycle_ids": [],
+      "AB_cycle_increment": 0,
+      "independent_external_validation_executed": false
+    },
+    {
+      "id": "SRC102",
+      "title": "AEPD, ¿Qué debe incluir una EIPD? — artículo 35.7 RGPD, FAQ oficial",
+      "canonical_url": "https://www.aepd.es/preguntas-frecuentes/2-tus-obligaciones-como-responsable-del-tratamiento/10-evaluacion-de-impacto/FAQ-0229-que-debe-incluir-una-evaluacion-de-impacto-de-proteccion-de-datos",
+      "related_official_url": "https://www.aepd.es/derechos-y-deberes/cumple-tus-deberes/medidas-de-cumplimiento/realizacion-de-evaluaciones-de",
+      "source_type": "OFFICIAL_SPANISH_DATA_PROTECTION_AUTHORITY_PRIMARY_GUIDANCE_NOT_EMPIRICAL",
+      "verified_at": "2026-10-29",
+      "access_status": "OFFICIAL_AEPD_FAQ_HTML_READ_WITH_FOUR_REQUIREMENTS_AND_REVIEW_PROCEDURE",
+      "contribution": "AEPD original FAQ directly states EIPD elements: systematic processing description, necessity and proportionality, risks, security/safeguards; update if changes in treatment/risk. AEPD guidance indicates a DPIA is mandatory when treatment is likely high risk, not necessarily for every small study.",
+      "rights": "Official guidance only; no people or data files accessed.",
+      "limits": "No EIPD has been performed or approved for ESBM. Applicability requires specific design review by the competent controller.",
+      "falsifier": "An approved prospective appropriate-risk plan, and where required full EIPD before data collection.",
+      "cycle_ids": [],
+      "AB_cycle_increment": 0,
+      "independent_external_validation_executed": false
+    },
+    {
+      "id": "SRC103",
+      "title": "EDPB Guidelines 1/2026 scientific research processing, v1 public-consultation metadata",
+      "canonical_url": "https://www.edpb.europa.eu/documents/guideline/guidelines-12026-on-processing-of-personal-data-for-scientific-research_en",
+      "source_type": "OFFICIAL_DRAFT_GUIDANCE_PUBLIC_CONSULTATION_METADATA_NOT_BINDING_LAW_OR_EMPIRICAL",
+      "verified_at": "2026-10-29",
+      "access_status": "EDPB_HTML_LANDING_PAGE_READ; PDF_TEXT_NOT_ANALYSED",
+      "contribution": "EDPB site lists guidance 1/2026 v1 dated 16 April 2026, public consultation closed. Supports documenting state of guidance process, not automatic legal permission.",
+      "rights": "Public guidance metadata; no personal records inspected.",
+      "limits": "V1 consultation version, not verified final/adopted binding interpretation; contents of linked PDF not analysed. No claim about detailed prescriptions.",
+      "falsifier": "Check final guidance status before concrete protocol approval, without relying on draft as legal authorization.",
+      "cycle_ids": [],
+      "AB_cycle_increment": 0,
+      "independent_external_validation_executed": false
     }
   ],
-  "last_added_campaign": "ABR_R5_GATE_R0_ROTH_NOCYCLE_20261029_NEW_PRIMARY_DOI_VERIFIED_ARCHIVE_UNREAD"
+  "last_added_campaign": "ABR_HFBTIME_ETHICS_ALTERNATIVE_NOCYCLE_20261029_NORMATIVE_ONLY"
 }

@@ -289,3 +289,8 @@
 ## Protocolo falsador único H-FB-TIME · 10 revisiones intelectuales (NO AB-R, NO ciclo)
 
 [ESBM_SINGLE_DISCRIMINANT_FEEDBACK_PROTOCOL_20261029.md](research/ESBM_SINGLE_DISCRIMINANT_FEEDBACK_PROTOCOL_20261029.md) — prueba candidata de cuándo comunicar rechazos **auténticos**, medida por propuestas posteriores ante slates fijados; ITT, rivales B0–B8, daños/ética, 10 objeciones RA01–RA10, sin reclutar ni ejecutar. **Las diez revisiones no gastan ciclos**; 26/40 válidos, N93–N106 14 reservados, CT2 ordinal 7, madurez 41.20%, 100 SOURCES/30 PRIORS/150 UPDATES y STOP_R5 intactos.
+
+
+## Auditoría posterior H-FB-TIME y alternativa de asignación A-ASSIGN (sin ciclo)
+
+[Informe de evaluación ética, estadística, identificadora y diez objeciones RA01–RA10](research/ABR_HFBTIME_ETHICS_ALTERNATIVE_NOCYCLE_20261029/REPORT.md). H-FB-TIME: estudio de aviso de rechazo **no identifica** mediador ESBM private_bias y su manipulación emocional requiere autorización y justificación ausentes; se desprioriza. A-ASSIGN: propuesta distinta para aleatorizar por **eventos** oportunidades consentidas y recoger dos sí/no efectivos, conservando antecedente Belot-Francesconi SRC017 y sesgos/limitaciones. Tres fuentes **normativas** SRC101–SRC103 y U151/U152 NO_CHANGE_WITH_REASON: **103 SOURCES, 30 PRIORS, 152 UPDATES**; nuevos ciclos 0, N93–N106 14 reservados, CT2 7 ordinal y madurez 41.20% intactos, STOP_R5 permanece.
