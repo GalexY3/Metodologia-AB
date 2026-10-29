@@ -1,0 +1,121 @@
+{
+  "schema": "ab.atlas.minigraph.v1",
+  "date": "2026-10-29",
+  "project": "mercados-de-pareja",
+  "branch": "research/ab-p-esbm-exact-oracle-20261029",
+  "root": "ABP-EXACT",
+  "nodes": [
+    {
+      "id": "ABP-EXACT",
+      "type": "product",
+      "mode": "AB-P",
+      "status": "validated",
+      "label": "Oráculo exacto para auditoría de ESBM",
+      "evidence": "PREREG_AJ.json;oracle.js;RESULTS.json",
+      "claim": "Solo funcionalidad técnica; no efecto humano"
+    },
+    {
+      "id": "P01",
+      "type": "test",
+      "mode": "AB-P",
+      "status": "validated",
+      "label": "Normalización y capacidad",
+      "evidence": "RESULTS.json#P01",
+      "why_next": "Aprobado → probar equivalencia observacional"
+    },
+    {
+      "id": "P02",
+      "type": "test",
+      "mode": "AB-P",
+      "status": "validated",
+      "label": "Equivalencia observacional exacta",
+      "evidence": "RESULTS.json#P02",
+      "why_next": "TVD=0 → contrastar información por etapas"
+    },
+    {
+      "id": "P03",
+      "type": "test",
+      "mode": "AB-P",
+      "status": "validated",
+      "label": "Medición de oportunidades estratificadas",
+      "evidence": "RESULTS.json#P03",
+      "why_next": "Diferencia 1.6 vs 1.0 → auditar congestión"
+    },
+    {
+      "id": "P04",
+      "type": "test",
+      "mode": "AB-P",
+      "status": "validated",
+      "label": "Matching competente y congestión",
+      "evidence": "RESULTS.json#P04",
+      "why_next": "Óptimo 2 vs greedy 1 → distinguir stock de flujo"
+    },
+    {
+      "id": "P05",
+      "type": "test",
+      "mode": "AB-P",
+      "status": "validated",
+      "label": "Hazard y stock",
+      "evidence": "RESULTS.json#P05",
+      "why_next": "Pasa → cierre técnico, sin AB-R"
+    },
+    {
+      "id": "R5",
+      "type": "gate",
+      "mode": "AB-R",
+      "status": "blocked",
+      "label": "Evidencia independiente y originalidad ESBM",
+      "evidence": "CURRENT.md;SOURCES.json",
+      "why_next": "14 plazas N93-N106 intactas; exige licencias, dual nativo, riesgo y validación frente baselines"
+    }
+  ],
+  "edges": [
+    {
+      "from": "ABP-EXACT",
+      "to": "P01",
+      "type": "tests"
+    },
+    {
+      "from": "P01",
+      "to": "P02",
+      "type": "branches_from"
+    },
+    {
+      "from": "P02",
+      "to": "P03",
+      "type": "branches_from"
+    },
+    {
+      "from": "P03",
+      "to": "P04",
+      "type": "branches_from"
+    },
+    {
+      "from": "P04",
+      "to": "P05",
+      "type": "branches_from"
+    },
+    {
+      "from": "ABP-EXACT",
+      "to": "R5",
+      "type": "related_to"
+    },
+    {
+      "from": "R5",
+      "to": "P01",
+      "type": "blocks",
+      "scope": "empirical_claim_only"
+    }
+  ],
+  "receipt": {
+    "run_id": "ABP-EXACT-20261029",
+    "protocol": "AB 3.2.1 O1-O7",
+    "outcome": "FIVE_TECHNICAL_VALID",
+    "cost": {
+      "field_dataset_rows": 0,
+      "random_seeds": 0
+    },
+    "complaint_ids": [],
+    "notes": "No registered complaints, not evidence of no defects. Browser UI not tested."
+  }
+}
