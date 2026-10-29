@@ -1,0 +1,95 @@
+{
+  "schema": "ABH.D_EXECUTED_SUMMARY.v1",
+  "date": "2026-10-29",
+  "prereg_commit": "df32429dba5d5738fbd1a43b44116f1cb37a684f",
+  "runner_freeze_commit": "785ab2c7d2a0309badf19c4380c89e6c198ed1aa",
+  "source_adapter_freeze": "de5b64945ee44b48d6886d9d80ad0e890065a068",
+  "fixture_freeze": "6022e7bdcdb135b3b33cdc353aa61dd6fed7626f",
+  "original_source_sha256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+  "full_local_receipt_SHA256": "4f142a743e9e39de9602689af8d4a5eb3f8e453b61b94ee3053f6e45f9f72299",
+  "full_local_receipt_size_bytes": 60319,
+  "archive_local_sha256": "e61799c53107b2ae366b8fcf4811ee5c73839a99396f959bca5263cefb8d282e",
+  "cycles": [
+    {
+      "id": "N122",
+      "status": "PASS",
+      "seconds": 3.46,
+      "population": "N24, 4 ticks, same generator, 60 seeds 1000-1059",
+      "runs": 120,
+      "paired_active_difference_two_minus_one": {
+        "mean": 1.8166666666666667,
+        "positive": 50,
+        "negative": 1,
+        "ties": 9,
+        "min": -1,
+        "max": 5
+      },
+      "warning": "Same model, 60 new seeds not 60 independent human samples; some policy effects do not improve active pairs."
+    },
+    {
+      "id": "N123",
+      "status": "PASS",
+      "seconds": 6.279,
+      "population": "N24, 4 ticks, 60 seeds 2000-2059, 3 institutions",
+      "runs": 180,
+      "by_mode": {
+        "pair_max": {
+          "mean_formed": 5.966666666666667,
+          "mean_active": 4.133333333333334,
+          "mean_same_exposure": 0.32803001812525223
+        },
+        "pair_norm_same": {
+          "mean_formed": 6.016666666666667,
+          "mean_active": 4.216666666666667,
+          "mean_same_exposure": 0.5144265504051445
+        },
+        "pair_norm_cross": {
+          "mean_formed": 6,
+          "mean_active": 3.966666666666667,
+          "mean_same_exposure": 0.1694689066014262
+        }
+      },
+      "warning": "Group norm, opportunity and hazard artificial, averages not human effects."
+    },
+    {
+      "id": "N124",
+      "status": "PASS",
+      "seconds": 0.332,
+      "exact_permutation_relabel_checks": 18,
+      "failures": 0,
+      "scope": "N24 two slots, 2 seeds ×3 permutations ×3 modes"
+    },
+    {
+      "id": "N125",
+      "status": "PASS",
+      "seconds": 1.439,
+      "fail_closed_checks": 3,
+      "invalid_mode_rejected": true,
+      "unsupported_slots3_rejected": true,
+      "corrupted_original_SHA_import_rejected": true,
+      "original_file_untouched": true
+    },
+    {
+      "id": "N126",
+      "status": "PASS",
+      "seconds": 1.209,
+      "execution": "isolated Python subprocess in temporary clean source directory, same installed environment, no external dependency installation",
+      "legacy_formed": 224,
+      "mini_formed": 5,
+      "mini_active": 4,
+      "source_sha_check": true,
+      "clean_os_independent_replication": false
+    }
+  ],
+  "warnings": [
+    {
+      "severity": "minor",
+      "type": "NUMPY_EMPTY_GROUP",
+      "detail": "One or more artificial N24 subsets contain no people of the X gender label, so original gender-specific mean emits mean-of-empty-slice/NaN warnings. No checked group-specific estimate was used; handle missing group values explicitly in future production report."
+    }
+  ],
+  "external_validation": false,
+  "scientific_level": "0/3",
+  "human_R5": "STOP",
+  "CT2": 7
+}
