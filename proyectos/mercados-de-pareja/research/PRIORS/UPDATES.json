@@ -4,7 +4,7 @@
   "date": "2026-10-28",
   "mode": "append-only logical, versioned by Git commits",
   "reconstructed_from_documents": "Retrospective backfill, not preregistration. Old before values NOT_RECORDED unless documented explicitly.",
-  "source_coverage": "97 original sources, 30 priors, 140 updates; 120 synthetic ESBM simulations, no new independent human sample.",
+  "source_coverage": "97 sources, 30 priors, 142 updates, no new external human evidence. N89, N90 synthetic exact-sham mechanisms.",
   "events": [
     {
       "id": "U001",
@@ -3529,7 +3529,53 @@
       "prior_probability_after": null,
       "AB_cycle_increment": 0,
       "prereg_status": "A_J_FROZEN_BEFORE_EXECUTION_8fd4a0a7b5cb5d3db57f116d4563d994a33d70ec"
+    },
+    {
+      "id": "U141",
+      "prior_id": "P-BOUNDED",
+      "source_ids": [],
+      "cycle_ids": [
+        "N90"
+      ],
+      "before": "EXTERNAL_EMPIRICAL_INDICATION",
+      "after": "EXTERNAL_EMPIRICAL_INDICATION",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "recorded_at": "2026-10-29",
+      "entry_status": "ACTIVE",
+      "evidence_type": "N90_FROZEN_120_RUN_PRIVATE_FEEDBACK_TIMING_IMMEDIATE_VS_NEXT_TICK",
+      "what_the_sources_contribute": "Under source-verified original private rejection dynamics, 14,053 subsequent same-tick proposals use newly increased bias in the six primary runs; demonstrates potential order sensitivity in toy model, not cognitive burden.",
+      "why_this_updates_or_checks_prior": "Demonstrates structural timing dependence of an already posited synthetic rejection-learning update. No independent human proof, cognitive or psychological mechanism identification.",
+      "limits": "All artificial 144 agents, 16 periods, six reused seeds and four contexts. Modifications alter dynamic future availability. No human response times, real immediate feedback timing, or longitudinal evidence.",
+      "falsifier_or_followup": "Use original timed sequence of bilateral decisions with recorded exposure/rejection and counterbalanced order to distinguish within-round timing from update next round; pre-register strong alternatives and independent test.",
+      "prereg_status": "A_J_AND_CODE_FROZEN_AT_5f59462e03fb5af198c7824bafdaf37a3512ac3d",
+      "numerical_bayesian_update": false,
+      "prior_probability_before": null,
+      "prior_probability_after": null,
+      "AB_cycle_increment": 1
+    },
+    {
+      "id": "U142",
+      "prior_id": "P-FEEDBACK",
+      "source_ids": [],
+      "cycle_ids": [
+        "N90"
+      ],
+      "before": "EXPERIMENTALLY_SUPPORTED_IN_CONTEXT",
+      "after": "EXPERIMENTALLY_SUPPORTED_IN_CONTEXT",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "recorded_at": "2026-10-29",
+      "entry_status": "ACTIVE",
+      "evidence_type": "N90_FROZEN_120_RUN_PRIVATE_FEEDBACK_TIMING_IMMEDIATE_VS_NEXT_TICK",
+      "what_the_sources_contribute": "Batching equal .08 negative feedback until next tick changes synthetic number of proposals and formed unions compared with immediate update while same PRNG and sources held. 48/48 exact shams and all cohort balances passed.",
+      "why_this_updates_or_checks_prior": "Demonstrates structural timing dependence of an already posited synthetic rejection-learning update. No independent human proof, cognitive or psychological mechanism identification.",
+      "limits": "All artificial 144 agents, 16 periods, six reused seeds and four contexts. Modifications alter dynamic future availability. No human response times, real immediate feedback timing, or longitudinal evidence.",
+      "falsifier_or_followup": "Use original timed sequence of bilateral decisions with recorded exposure/rejection and counterbalanced order to distinguish within-round timing from update next round; pre-register strong alternatives and independent test.",
+      "prereg_status": "A_J_AND_CODE_FROZEN_AT_5f59462e03fb5af198c7824bafdaf37a3512ac3d",
+      "numerical_bayesian_update": false,
+      "prior_probability_before": null,
+      "prior_probability_after": null,
+      "AB_cycle_increment": 0
     }
   ],
-  "last_campaign": "ABR_BATCH2_N89_REPUTATION_VISIBILITY_20261029"
+  "last_campaign": "ABR_BATCH2_N90_PRIVATE_LEARNING_TIMING_20261029"
 }

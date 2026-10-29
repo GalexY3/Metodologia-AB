@@ -1,0 +1,115 @@
+{
+  "schema": "ABR_N90_private_feedback_timing_v1",
+  "cycle": "N90",
+  "date": "2026-10-29",
+  "status": "ALL_PRE_REGISTERED_CHECKS_PASS",
+  "pre_execution_commit": "5f59462e03fb5af198c7824bafdaf37a3512ac3d",
+  "original_sha256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+  "instrument_sha256": "0dd721ea30a5e89b465fd2e22234dcb8af94835eb537e51ffe4c1223bddecb33",
+  "instrument_gzip_blob": "36f9d999fa03a365ef18349e11f2a2eae5a64a17",
+  "results_json_sha256": "6ad62ca776f6dc5e91247b05ea2fa680f76950b4f652b6e8aac85e4a18a88cc8",
+  "results_gzip_sha256": "547ba73fdf48676bfc12fa9684da8e67b2f9510e80f34f7120f05f5ebbcf70ad",
+  "results_gzip_git_blob": "80f82c17a5647fe04367587013405cc45fb2922a",
+  "runs_instrumented": 72,
+  "original_immediate_sham_runs": 24,
+  "original_no_private_placebo_runs": 24,
+  "total_simulations": 120,
+  "exact_sham_checks": 48,
+  "all_balances": true,
+  "synthetic_only": true,
+  "primary_delta_immediate_minus_lagged_formed": [
+    -11,
+    11,
+    9,
+    -12,
+    18,
+    7
+  ],
+  "primary_delta_immediate_minus_lagged_active": [
+    3,
+    5,
+    1,
+    3,
+    3,
+    1
+  ],
+  "primary_within_tick_bias_reused_attempts": 14053,
+  "scenarios": [
+    {
+      "name": "mixed_random",
+      "formed": [
+        247,
+        243.333333,
+        226.666667
+      ],
+      "active": [
+        66.166667,
+        63.5,
+        62
+      ],
+      "proposals": [
+        2020.666667,
+        2001,
+        1646.833333
+      ],
+      "sameTick": 14053
+    },
+    {
+      "name": "popularity_ranking",
+      "formed": [
+        239.5,
+        236.5,
+        223.5
+      ],
+      "active": [
+        64.5,
+        63,
+        61.5
+      ],
+      "proposals": [
+        2422.333333,
+        2413.666667,
+        1971.5
+      ],
+      "sameTick": 13624
+    },
+    {
+      "name": "institutional_segregation",
+      "formed": [
+        231,
+        226,
+        218.666667
+      ],
+      "active": [
+        66.666667,
+        65.666667,
+        62.5
+      ],
+      "proposals": [
+        1820.5,
+        1791.5,
+        1557.5
+      ],
+      "sameTick": 12795
+    },
+    {
+      "name": "explicit_norm_preference",
+      "formed": [
+        247.666667,
+        242.666667,
+        241.166667
+      ],
+      "active": [
+        70,
+        70,
+        69.5
+      ],
+      "proposals": [
+        1803.333333,
+        1751.166667,
+        1602.833333
+      ],
+      "sameTick": 11217
+    }
+  ]
+}

@@ -568,7 +568,7 @@
         "SRC043",
         "SRC086"
       ],
-      "last_update_id": "U114",
+      "last_update_id": "U141",
       "uncertainty": "Not calibrated Bayesian probabilities; context and heterogeneity uncertain",
       "next_falsifier_or_test": "Manipulación aleatoria de volumen de opciones con registros de decisión/tiempo.",
       "numeric_probability": null,
@@ -576,9 +576,10 @@
       "update_ids": [
         "U033",
         "U038",
-        "U114"
+        "U114",
+        "U141"
       ],
-      "latest_evidence_summary": "Pronk & Denissen 2020 Study 2 directly tested repeated yes/no judgments of 158 participants facing actually available profiles with reciprocal matches. Prior art constrains novelty of fatigue-by-swipe or sequence effects. Their DataverseNL replication archive is separately identified but restricted: no files legally inspected, no new ESBM test.",
+      "latest_evidence_summary": "N90 synthetic strict schedule audit: immediate rejection increment alters later candidate proposals within same exposure tick, 14,053 attempts with updated bias across 6 primary seeds. Immediate/next-tick/silent mean formed 247/243.33/226.67. This does not test human limited attention or choice overload; Pronk/Denissen and Lenton/Francesconi prior art unchanged.",
       "last_revised_at": "2026-10-29"
     },
     {
@@ -633,7 +634,7 @@
         "SRC045",
         "SRC054"
       ],
-      "last_update_id": "U140",
+      "last_update_id": "U142",
       "uncertainty": "Not calibrated Bayesian probabilities; context and heterogeneity uncertain",
       "next_falsifier_or_test": "Randomizar tipos de feedback y observar cambio en preferencias antes/después, no inferir δ reputacional.",
       "numeric_probability": null,
@@ -642,9 +643,10 @@
         "U029",
         "U043",
         "U061",
-        "U140"
+        "U140",
+        "U142"
       ],
-      "latest_evidence_summary": "N89 synthetic feedback comparison keeps every score update and shocks fixed, changes only visibility global/witness/silent. Global applied mean penalty on 1673.67 reply decisions, witness 147, with future matching feedback. Four policy contexts show heterogeneity (formed global-witness -15/-28.33/-20.5/-2). External experimental feedback prior remains context-supported, not calibrated to this toy model.",
+      "latest_evidence_summary": "N90 frozen synthetic comparison with 24 original/private and 24 no-private exact shams, 72 instrumented runs. Learning occurs intra-tick in original ESBM, incrementing private_bias by .08 per rejection; batching same signals until next tick reduces formed by 3.67 primary mean, but 6 paired deltas mixed sign and context variation; no identification of psychological learning in people.",
       "last_revised_at": "2026-10-29"
     },
     {
@@ -882,8 +884,8 @@
     "all_priors_linked": true,
     "source_ids_linked": 97,
     "registered_sources": 97,
-    "update_events": 140,
+    "update_events": 142,
     "counts_as_new_AB_cycle": false,
-    "last_update": "2026-10-29 N89_120_SIM_REPUTATION_BROADCAST_VISIBILITY_WITH_STRONG_SHAMS_NO_EXTERNAL_CAUSAL"
+    "last_update": "2026-10-29 N90_REJECTION_UPDATE_TIMING_120_SIM_ORDER_MECHANISM_NO_NOVEL_HUMAN_EVIDENCE"
   }
 }

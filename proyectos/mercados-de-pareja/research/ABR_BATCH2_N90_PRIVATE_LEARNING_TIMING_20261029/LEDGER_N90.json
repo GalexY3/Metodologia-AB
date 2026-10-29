@@ -1,0 +1,51 @@
+{
+  "schema": "ABR_AJ_private_timing_v1",
+  "cycle": "N90",
+  "date": "2026-10-29",
+  "status": "COMPLETED_VALID_SYNTHETIC_ADVERSARIAL_0_OF_3",
+  "preexecution_commit": "5f59462e03fb5af198c7824bafdaf37a3512ac3d",
+  "original_sha256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+  "script_sha256": "0dd721ea30a5e89b465fd2e22234dcb8af94835eb537e51ffe4c1223bddecb33",
+  "code_github_blob": "36f9d999fa03a365ef18349e11f2a2eae5a64a17",
+  "results_github_blob": "80f82c17a5647fe04367587013405cc45fb2922a",
+  "A": "Does within-tick update timing change synthetic behavior beyond equal rejection information?",
+  "B": "Original immediate feedback vs same .08 increment deferred to end of tick vs silent no-feedback control",
+  "C": "Paired outcomes across six seeds and four contexts, 144 synthetic actors, 16 ticks; same-tick proposals with prior update",
+  "D": "72 transformed and 48 exact-original baseline runs, all same shocks and conditions besides timing",
+  "E": "Full A–J and byte-hashed source gzip recorded and Git-committed before execution, no edits later",
+  "F": "All 48/48 sham matches pass, primary mean formed immediate 247 vs next tick 243.33 vs silent 226.67; active 66.17 vs63.5 vs62",
+  "G": "14,053 primary same-tick proposals potentially affected by prior in-tick rejection; all balance and delayed-commit invariants pass",
+  "H": "Paired immediate minus lagged formed differences [-11,11,9,-12,18,7] heterogeneous, no human panel or information timings",
+  "I": "U141 P-BOUNDED and U142 P-FEEDBACK remain same status; 0/3 new science, CT2 7",
+  "J": "N90 valid internal mechanism test; N91-N92 available and N93-N106 reserved, STOP_R5 external",
+  "budget": {
+    "grant": 40,
+    "completed": 24,
+    "remaining_authorized": 16,
+    "within_tranche_remaining": 2,
+    "reserved_untouched": 14
+  },
+  "maturity": {
+    "before": 40.45,
+    "after": 40.7,
+    "simulator": 62,
+    "qa": 61,
+    "novelty": 10,
+    "validation_external": 5
+  },
+  "CT2": {
+    "before": 7,
+    "after": 7,
+    "ordinal": true
+  },
+  "full_results": "RESULTS_N90.json.gz",
+  "report": "REPORT_N90.md",
+  "R5": "STOP_EXTERNAL",
+  "privacy": {
+    "human_data": false,
+    "licenses": false,
+    "authors_contacted": false,
+    "SSJY": false,
+    "main_merge": false
+  }
+}
