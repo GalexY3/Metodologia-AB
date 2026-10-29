@@ -2,7 +2,11 @@
 
 **Fecha:** 24 de octubre de 2026. **Estado:** norma operativa de presentación y gobernanza adoptada por solicitud del investigador. **No** declara una mejora de eficacia científica de AB; sigue siendo metodología provisional. Complementa AB 3.2.1 y los anexos O1–O5 sin sustituir R1–R5 ni A–J.
 
-## Nota prospectiva del investigador — 28 de octubre de 2026
+## Directiva posterior del investigador — 29 de octubre de 2026
+
+Para nuevas solicitudes de ciclos AB, el intervalo vigente pasa de 5–15 a **5–30 ciclos por petición**, siempre con autorización expresa del usuario y sin obligación de agotar cuotas bajo R5. Se autorizó específicamente en PFL un bloque de **20 ciclos libres de investigación/desarrollo + 10 ciclos de investigación de autonomía técnica frente a Codex**, conservando separadas las 2 plazas residuales antiguas. La orden posterior del usuario pide ejecutar el bloque completo sin consultas intermedias: si un ciclo falla, registrar INVALID/INCOMPLETE y buscar una nueva vía antes de terminar; no inventar ejecuciones ni eludir R5. **Esta actualización prevalece sobre los límites de 28/10 de 5–15 recogidos abajo, conservados como historia.** ChatRelay sigue en pausa.
+
+## Nota histórica del investigador — 28 de octubre de 2026
 
 La directiva anterior de solicitudes de 20–45 ciclos queda **sustituida** para futuros bloques por **5–15 ciclos**, sin límite acumulado implícito de bloques y siempre con autorización independiente. **ChatRelay se suspende por defecto**: no asignarle ciclos ni ejecutar intermediaciones automáticas; solo reconsiderarlo ante evidencia excepcional y nueva decisión expresa. El saldo histórico de ChatRelay no migra a campañas nuevas. Esta instrucción es de gobernanza, no prueba empírica de mayor rendimiento de otros canales.
 
@@ -17,7 +21,7 @@ La directiva anterior de solicitudes de 20–45 ciclos queda **sustituida** para
 
 - Un ciclo AB sustantivo = contrato completo **A–J** (pregunta, hipótesis rivales, diseño discriminante, instrumentación, ejecución o verificación documental legítima, auditoría adversarial, contrastes independientes cuando existan, actualización de priors, dictamen y decisión).
 - Distinguir `EXPERIMENTAL_AB`, `PLANNING_AB_ONLY`, `INVALID`, `NOT_EXECUTED` y `POST_HOC_AUDIT`. Un plan o auditoría añadida no es un experimento ejecutado. Una repetición por reparación conserva ambas versiones, no multiplica el número de ciclos válidos.
-- **Solicitud normal al cierre de cada informe final de campaña (directiva vigente desde el 28/10/2026):** solicitar entre **5 y 15 ciclos** adicionales inclusive (un entero), eligiendo cantidad y tipo por el cuello de botella de evidencia. Ejemplos: `SOLICITO BRANCHING 5 CICLOS` o `SOLICITO PIVOT 10 CICLOS`. Las nuevas solicitudes fuera del intervalo no están autorizadas por defecto. Se permite encadenar bloques posteriores previa autorización separada; esta regla no modifica presupuestos históricos.
+- **Solicitud normal al cierre de cada informe final de campaña (directiva vigente desde el 29/10/2026):** solicitar entre **5 y 30 ciclos** adicionales inclusive (un entero), eligiendo cantidad y tipo por el cuello de botella de evidencia. Ejemplos: `SOLICITO BRANCHING 5 CICLOS` o `SOLICITO PIVOT 10 CICLOS`. Las nuevas solicitudes fuera del intervalo 5–30 no están autorizadas por defecto. Se permite encadenar bloques posteriores previa autorización separada; esta regla no modifica presupuestos históricos.
 - **No volver a solicitar autorización ya concedida durante la ejecución de la campaña**; si el investigador autorizó un bloque condicional (p. ej. 20 + 5 planificación + 30), consumir primero esa autorización sin confundir fases.
 - La aceptación del usuario se aplica solo al bloque pedido/concedido; no presuponer nuevos bloques ilimitados.
 - La regla metodológica R5 permite `STOP` cuando no hay evidencia nueva; si el investigador **ordena expresamente cumplir un mínimo o prohíbe STOP para un bloque particular**, dentro de ese bloque optar por DRIFT/BRANCH/PIVOT, pero no inventar ejecución, resultados ni grado científico para cubrirlo. Explicar si los instrumentos impiden honestamente ejecutar los ciclos.
@@ -68,7 +72,7 @@ Por hallazgo guardar: `id, grade, novelty_status, exact_claim, reproducibility_s
 
 **E. Diagnóstico explícito del umbral 2/3:** qué es nuevo, antecedente más próximo, predicción discriminante, control competente, evidencia externa necesaria, bloqueos y CT2 razonada. Decir “NO ACREDITADO” si faltan pruebas.
 
-**F. Último párrafo — siguiente autorización:** recomendar una dirección y **pedir 5–15 ciclos AB** con tipo `CONTINUE`, `PIVOT`, `BRANCHING` o `DRIFT`, cantidad motivada y frase terminal inequívoca. No asumir aprobación ni programar trabajo futuro sin acción explícita del usuario. Excepción: si se está reportando una *fase intermedia* y ya existe autorización de fases posteriores, indicar saldo concedido y no volver a pedir.
+**F. Último párrafo — siguiente autorización:** recomendar una dirección y **pedir 5–30 ciclos AB** con tipo `CONTINUE`, `PIVOT`, `BRANCHING` o `DRIFT`, cantidad motivada y frase terminal inequívoca. No asumir aprobación ni programar trabajo futuro sin acción explícita del usuario. Excepción: si se está reportando una *fase intermedia* y ya existe autorización de fases posteriores, indicar saldo concedido y no volver a pedir.
 
 ## 6. Contratos de datos mínimos para portabilidad
 

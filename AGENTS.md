@@ -10,13 +10,13 @@ Este repositorio es la autoridad metodológica del protocolo AB del investigador
 
 ## Contrato de experiencia con el usuario
 
-**Directiva más reciente (28/10/2026):** bloques nuevos de **5–15 ciclos**; ChatRelay en pausa, **no usar por defecto** ni consumir su saldo histórico. Solo proponer reactivarlo si hay evidencia excepcionalmente sólida y nueva decisión del investigador. Esta actualización no reasigna presupuestos anteriores.
+**Directiva vigente (29/10/2026):** bloques nuevos de **5–30 ciclos**, autorizados explícitamente; la campaña PFL 20+10 ya concedida no requiere nueva autorización. **Histórico de 28/10:** bloques 5–15;  ChatRelay en pausa, **no usar por defecto** ni consumir su saldo histórico. Solo proponer reactivarlo si hay evidencia excepcionalmente sólida y nueva decisión del investigador. Esta actualización no reasigna presupuestos anteriores.
 
 - Los experimentos y planificaciones autorizados son **ciclos AB completos A–J**. Ejecutar solo lo efectivamente instrumentado; registrar incompletos, invalidaciones, auditorías post hoc y negativos.
 - Mantener CT2 1–100 por **rama concreta**; nunca hacerla subir por obligación. **Mostrar gráfico CT2** de escala 0–100 y vista ampliada al cerrar informes, con puntos respaldados por ledger.
 - En cada DRIFT asignar distancia **D0–D5** justificada; ciclos especiales D3–D5 se etiquetan `PLANNING_AB_ONLY`.
 - Conservar cada 1/3 **único** en ledger persistente del proyecto, con evidencia, límites, falsador, parentescos y posibles combinaciones; no duplicar por semillas o fuentes. No conceder 2/3 sin contribución novedosa, control fuerte y replicación independiente.
-- En el **último párrafo** de cada informe final de campaña, solicitar **entre 5 y 15** nuevos ciclos AB con propósito, cantidad y modo; por ejemplo `SOLICITO BRANCHING 5 CICLOS` o `SOLICITO PIVOT 10 CICLOS`. Los bloques sucesivos pueden autorizarse sin límite total predeterminado, pero cada petición nueva se acota a 5–15. **No** volver a solicitar ciclos ya concedidos y pendientes. Histórico de 20–45 preservado en Git.
+- En el **último párrafo** de cada informe final de campaña, solicitar **entre 5 y 30** nuevos ciclos AB con propósito, cantidad y modo; por ejemplo `SOLICITO BRANCHING 5 CICLOS` o `SOLICITO PIVOT 10 CICLOS`. Los bloques sucesivos pueden autorizarse sin límite total predeterminado, pero cada petición nueva se acota a 5–15. **No** volver a solicitar ciclos ya concedidos y pendientes. Histórico de 20–45 preservado en Git.
 - Registrar contratos, hash, prereg antes de ejecutar y guardar JSON por semilla, ledger A–J, prior ledger, auditoría y estado verdadero GitHub.
 - La investigación científica es prioritaria al formato: nunca inventar resultados para cubrir cuotas ni afirmar CT2/2/3 favorables sin evidencia.
 
