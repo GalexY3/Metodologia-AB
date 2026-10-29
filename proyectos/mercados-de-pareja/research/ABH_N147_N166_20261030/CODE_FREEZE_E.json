@@ -1,0 +1,50 @@
+{
+  "schema": "ABH_CODE_FREEZE_E_V1",
+  "date": "2026-10-30",
+  "prereg_commit": "5b0bb50a6a305f51f6fdb4f7171782809799fa05",
+  "status": "PRE_EXECUTION_HASH_COMMIT",
+  "frozen_before_outcomes": true,
+  "files": [
+    {
+      "name": "build_demo.py",
+      "bytes": 10860,
+      "sha256": "c88f1d062ec6b0f125b7b79d2ff90b63763c26bcb82045789b9c734cb00e4301",
+      "git_blob": "fc86f5befb385a08d5e0580e467421e098d35e4a"
+    },
+    {
+      "name": "test_demo.py",
+      "bytes": 3455,
+      "sha256": "c09f1f3eaad002b013bec143659f675f46f86922620a48cf7bd01be884822104",
+      "git_blob": "dd46935220905107dc5b53bf9f4b6e1a45da512e"
+    },
+    {
+      "name": "verify_portable.py",
+      "bytes": 3240,
+      "sha256": "e6daaee3b54380466496bc64badbae1bb43d4b858b106db625ad23315510e714",
+      "git_blob": "496f7c2f44799f0c72b9b9a6f05a01cf5ff68a4d"
+    }
+  ],
+  "code_storage": "Local conversation file source at /mnt/data/esbm_n147_n166 at freeze; SHA256 and Git blob of exact bytes committed to GitHub before first outcome. Publish source in verified ZIP; GitHub source files can be uploaded afterward with exact matching SHA.",
+  "inputs": {
+    "original": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+    "engine_v2": "83a5ff3a63f764147e04e2be54b76c189dfca40044825c13d2338b1909229761",
+    "seed_values": [
+      6100,
+      6101,
+      6102
+    ],
+    "graphs": [
+      "ring",
+      "rewired"
+    ],
+    "slots": [
+      1,
+      2
+    ],
+    "periods": 4,
+    "agents": 24
+  },
+  "outcomes": "NOT_YET_OBSERVED",
+  "browser": "Chromium headless via Playwright smoke before claiming UI interactivity",
+  "no_external_data": true
+}
