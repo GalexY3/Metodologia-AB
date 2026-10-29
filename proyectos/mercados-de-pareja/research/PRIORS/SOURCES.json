@@ -3,7 +3,7 @@
   "project": "mercados-de-pareja",
   "date": "2026-10-28",
   "scope": "Retrospective provenance backfill from repository reports plus N56/N57 publisher audit. Original data never copied; not systematic or claim of accessing raw data for bibliography.",
-  "source_count": 80,
+  "source_count": 82,
   "sources": [
     {
       "id": "SRC001",
@@ -1623,7 +1623,55 @@
       "raw_microdata_retrieved": false,
       "new_independent_replication": false,
       "AB_cycle_increment": 0
+    },
+    {
+      "id": "SRC081",
+      "title": "Daniel Kras / Mixmosa anonymized data — 2,961 in-person eight-minute dates with two yes/no choices",
+      "canonical_url": "https://github.com/dankras/mixmosa-anonymized-data",
+      "source_type": "INDEPENDENT_ORIGINAL_OPERATOR_PUBLIC_DYADIC_EVENT_DATA_METADATA_AND_CSV_SCHEMA_ACCESS_RIGHTS_UNVERIFIED",
+      "verified_at": "2026-10-29",
+      "cycle_ids": [],
+      "contribution": "GitHub author README describes 2961 in-person 8-minute dates, separate male and female likes, events, attendance, raw swiping and derived interactions. GitHub connector actually fetched text CSV for interactions and user_features, headers and initial rows; original user IDs and individual records not retained/rehosted. Repository csv/ contains interactions.csv 140405 bytes Git blob c4aba45888dc07573b6bd12554f73fb57ebb0479; user_features.csv 287361 bytes blob 99679f0e33b55099a4a0705810dd9771019554d0; attendance.csv 22270 bytes, events.csv 500 bytes, swiping.csv 316137 bytes; 4549148-byte responses.csv not downloaded. Interactions columns event_id,male_user_id,female_user_id,does_male_like_female,does_female_like_male,mutual_interest; user_features age, gender, attracted_to, income_bucket, attractiveness independent picture ratings, Big5 and others, many missing/censored. This is not Columbia 2002-04 dataset, nor SSJY, nor HCMST2009.",
+      "limits": "No repository LICENSE found (GitHub 404); author's README says sharing anonymized dataset for research, but no verified explicit copyright/data license, consent scope, ethical clearance or data retention terms. No observed relationship duration or post-match followup. Actual physical date is stronger opportunity than rec but still does not prove all eligible participants saw one another or dates were randomly assigned. Event attendance must reconstruct actual opportunity sets, user repeated observations must be clustered and holdout by participant and event; user_features derived and may include post-event scores/leakage; sparse and censored fields. No outcomes aggregated or analyzed, no A-J, no novel causal inference.",
+      "rights": "EXPLICIT_DATA_LICENSE_NOT_FOUND; do not reproduce or run substantive inference until permission/terms clarified; no raw rows redistributed. Contact original owner if necessary, but do not send communication without user approval.",
+      "files": [
+        {
+          "path": "csv/interactions.csv",
+          "git_blob_sha": "c4aba45888dc07573b6bd12554f73fb57ebb0479",
+          "size": 140405
+        },
+        {
+          "path": "csv/user_features.csv",
+          "git_blob_sha": "99679f0e33b55099a4a0705810dd9771019554d0",
+          "size": 287361
+        },
+        {
+          "path": "csv/attendance.csv",
+          "git_blob_sha": "790438412a478d89ac133febdf38c79d8d94a4d6",
+          "size": 22270
+        },
+        {
+          "path": "csv/swiping.csv",
+          "git_blob_sha": "2820b902bd4a80d57008c03aa0c4e0ff927f6639",
+          "size": 316137
+        }
+      ],
+      "falsifier": "Obtain explicit rights and original operator provenance/consent, inspect aggregate integrity and missingness, preregister a discriminant hypothesis with event+participant disjoint holdout, strong choice/opportunity baselines, pre-outcome code SHA; duration requires a different linked longitudinal dataset.",
+      "AB_cycle_increment": 0,
+      "new_independent_sample": "YES distinct original service but not an independent statistical replication of ESBM"
+    },
+    {
+      "id": "SRC082",
+      "title": "Columbia Speed Dating 2002–2004 data redistributed as datasets/speed-dating and OpenML 40536",
+      "canonical_url": "https://github.com/datasets/speed-dating",
+      "source_type": "PUBLIC_DERIVATIVE_REPO_LICENSE_PROVENANCE_WARNING_EXISTING_COLUMBIA_COHORT",
+      "verified_at": "2026-10-29",
+      "cycle_ids": [],
+      "contribution": "A third-party GitHub dataset offers original Columbia speed-dating CSV with actual four-minute encounters, bilateral yes/no and 21 waves. Its README says ODC PDDL on an assumption source data had no rights or was public domain; separate Kaggle listing says License Unknown. Columbia original 2006 Fisman/Iyengar/Kamenica/Simonson study already well known and used as speed-dating prior art; redistributions do not create new cohort.",
+      "limits": "Not a new independent study or new source of relationship duration; explicit downstream license cannot establish original investigator authorization. No data bytes retrieved here, only repository/documentation metadata. No reason to repeat Columbia analyses as new cycle.",
+      "rights": "PUBLIC DOMAIN DEDICATION IN DERIVATIVE BASED ON ASSUMPTION; original source authorization unclear; verify original institution terms before reuse.",
+      "AB_cycle_increment": 0
     }
   ],
-  "last_added_campaign": "ABR_HYPERGAMY_LITERATURE_NONCYCLE_20261029"
+  "last_added_campaign": "ABR_MIXMOSA_BILATERAL_ORIGINAL_SOURCE_RIGHTS_GATE_NONCYCLE_20261029"
 }
