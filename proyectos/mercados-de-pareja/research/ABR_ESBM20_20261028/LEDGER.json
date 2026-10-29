@@ -18,7 +18,7 @@
     "N85",
     "N86"
   ],
-  "R5": "STOP_AFTER_N82__PUBLIC_CSV_GIST_METADATA_ONLY__NO_VERIFIED_ORIGINAL_HCMST_BYTES__N83_N86_FOUR_UNUSED__SSJY_RIGHTS_BLOCKED",
+  "R5": "STOP_AFTER_N82__THREE_HCMST2009_PUBLIC_STATA_SUPPLEMENTS_BINARY_HEADERS_SHA256_VERIFIED_THIRD_PARTY_ONLY__BASELINE_MISSING_OFFICIAL_FIDELITY_UNVERIFIED__FOUR_UNUSED",
   "prereg_commit": "026cc12b5136e60034c71c2f794d01a453bdf5bd",
   "source_freeze_commit": "7f196409bc1ba5b5af6d8caad39c173a38a99405",
   "source_sha256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
@@ -35,16 +35,17 @@
   "QA": "QA.json",
   "raw_data_human_processed": false,
   "prior_register": {
-    "sources_total": 72,
+    "sources_total": 73,
     "prior_hypotheses_total": 30,
-    "update_events_total": 99,
+    "update_events_total": 101,
     "latest_sources": [
-      "SRC072"
+      "SRC073"
     ],
     "latest_updates": [
-      "U099"
+      "U100",
+      "U101"
     ],
-    "independence": "SRC072 is an unverified third-party CSV mirror of SAME HCMST2009 sample SRC067–SRC071. No raw file bytes received, no SHA, no new cohort or analysis."
+    "independence": "SRC073 original-format Stata W4–W6 same HCMST2009 cohort, not original server verified; 2009 baseline bytes absent; HCMST2017 fresh cohort independent but not acquired."
   },
   "new_N1": 0,
   "new_N2": 0,
@@ -727,8 +728,8 @@
     "source": "../ABR_PAIRFAM_GATE_20261028/LEDGER.json",
     "source_blob_sha": "a50c6fde0a9e0532f5e974f32e9f3744e686238c",
     "not_counted_cycle": "source update after N78 is maintenance (SRC053/U056-U058).",
-    "current_status": "STOP_R5; N83–N86 not executed; HCMST Gist no raw bytes or SHA, SSJY rights unverified",
-    "current_posthoc_audit": "../ABR_HCMST_GIST_ACCESS_GATE_20261029/REPORT.md",
+    "current_status": "STOP_R5, 4 N83–N86 authorized unused; W4/W5/W6 bytes accessed from public third-party GitHub; baseline unavailable",
+    "current_posthoc_audit": "../ABR_HCMST_STATA_BINARY_GATE_20261029/REPORT.md",
     "latest_completed": "N82",
     "last_updated": "2026-10-29"
   },
@@ -758,22 +759,26 @@
   },
   "latest_posthoc_gate": {
     "date": "2026-10-29",
-    "type": "POST_HOC_GIST_HCMST2009_ACCESS_GATE_NOT_AB_CYCLE",
+    "type": "ACTUAL_GITHUB_STATA_SUPPLEMENT_BINARY_BYTES_AND_HEADER_QA_NONCYCLE",
     "new_valid": 0,
     "new_invalid": 0,
     "new_planning": 0,
-    "report": "../ABR_HCMST_GIST_ACCESS_GATE_20261029/REPORT.md",
-    "status": "../ABR_HCMST_GIST_ACCESS_GATE_20261029/STATUS.json",
+    "report": "../ABR_HCMST_STATA_BINARY_GATE_20261029/REPORT.md",
+    "status": "../ABR_HCMST_STATA_BINARY_GATE_20261029/STATUS.json",
     "source_ids": [
-      "SRC072"
+      "SRC073"
     ],
     "updates": [
-      "U099"
+      "U100",
+      "U101"
     ],
-    "new_original_rows": 0,
-    "download_success": false,
-    "sha_verified": false,
-    "ct2_after": 7,
-    "no_new_point": true
+    "data_bytes_decoded": 971342,
+    "files_supplement_only": 3,
+    "baseline_byte_access": false,
+    "individual_outcome_rows_read": 0,
+    "CT2_after": 7,
+    "new_CT2_point": false,
+    "rights": "PUBLIC_STANFORD_USE_AGREEMENT; THIRD_PARTY_MIRROR_NO_OFFICIAL_SHA",
+    "new_AB_cycle": false
   }
 }
