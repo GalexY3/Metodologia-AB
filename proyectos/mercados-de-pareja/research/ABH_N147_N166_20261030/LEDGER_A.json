@@ -1,0 +1,399 @@
+{
+  "schema": "ABH.A-J.N147_N166.A.v1",
+  "date": "2026-10-30",
+  "branch": "research/ab-h-esbm-trajectory-equivalence-20261030",
+  "block": "A",
+  "cycles_valid_technical_or_negative": 4,
+  "scientific_0_3_only": true,
+  "human_R5": "STOP",
+  "source_original_sha": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+  "cycles": [
+    {
+      "id": "N147",
+      "parent": "N146",
+      "mode": "FOCUS",
+      "drift_D": 0.2,
+      "A": {
+        "question": "Check full ESBM 4-tick event histories on canonical ring under simultaneous actor-label and shock permutation",
+        "unit": "completely synthetic event trajectories, same agents and shocks permuted, not new human observations",
+        "estimand": "exact actor-relabel equivariance in whole simulated outcome path"
+      },
+      "B": {
+        "rivals": [
+          "permutation equivariant engine",
+          "label-dependent max-weight matching tie",
+          "source u_match upper triangle",
+          "schedule-order dependent private learning"
+        ],
+        "null": "Original and relabelled trajectories differ in substantive stock or offers"
+      },
+      "C": {
+        "precommitted_endpoints": "2 seeds ×3 permutations ×2 slot policies; exact per-time stock trajectories, aggregate stats and directed event multisets or record smallest counterexample",
+        "falsifier": "Single unequal trajectory fails claim; no aggregate averaging to hide it"
+      },
+      "D": {
+        "preregistered": {
+          "inputs": "N24 T4; original ESBM and canonical graph imported unchanged; original SHA256 f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b; SHA of runner GitHub frozen in next commit",
+          "shocks": "Every 1D and 3D state tensor indexed with same actor permutation"
+        },
+        "prereg_commit": "4a1c7a8ad0c01ee4622201f4be151fbc14e48586",
+        "code_sha_frozen_before_outcomes": "e4b781098bfc045d631e03b6dd33c110724bfe27"
+      },
+      "E": {
+        "status": "VALID_NEGATIVE_DIAGNOSTIC",
+        "actual_endpoint": {
+          "exact": 10,
+          "checks": 12,
+          "first": "ring 2 slots: 2/12 trajectories disagree in dissolution/exposure despite graph and schedule invariance"
+        },
+        "source_full_receipt_sha256": "460dadd95c4fe7b843d01cb3bd3cfc27c1272533422b019d3e4ab4131c691a12",
+        "local_full_rows_available_in_conversation_bundle": true,
+        "humans": 0
+      },
+      "F": {
+        "preregistered_adversarial": {
+          "strong_control": "Re-identification of full event multiset, not just same graph; keep first failure and withdraw overstated symmetry",
+          "adversary": "legacy graph baseline and single round vs two slots"
+        },
+        "negative_diagnostic": true,
+        "warning": "All findings in model and Python; technically falsified baseline actor order no human inference."
+      },
+      "G": {
+        "preregistered": {
+          "external": "NONE",
+          "replication": "only same synthetic implementation"
+        },
+        "independence": "NO_EXTERNAL_HUMAN_HOLDOUT",
+        "third_party_OS": "NOT_TESTED"
+      },
+      "H": {
+        "prior_ids": [
+          "P-TRAJECTORY-INVARIANCE",
+          "P-NETWORK-INVARIANCE",
+          "P-DYADIC_ACCESS",
+          "P-NOVELTY"
+        ],
+        "update_ids": [
+          "U177",
+          "U178",
+          "U179",
+          "U180",
+          "U181",
+          "U182"
+        ],
+        "human_priors": "NO_CHANGE_WITH_REASON",
+        "source_new": "SRC107 documentary publication only"
+      },
+      "I": {
+        "grade": "0/3",
+        "scientific_CT2_before": 7,
+        "scientific_CT2_after": 7,
+        "technical_result_valid": true,
+        "external_replication": false,
+        "ethical_ok": "No raw human sample or original source mutation"
+      },
+      "J": {
+        "decision": "BRANCH_REPAIR_FROM_COUNTEREXAMPLE",
+        "successor": "N148",
+        "failure_path": "REGISTER VALID_NEGATIVE then prereg REPAIR; no retroactive source edits",
+        "credit_spent": 1,
+        "value_next": "Distinct model and code capability; R5 external remains STOP"
+      },
+      "selection_exposure": "Adaptive sequential blocks, no blinded human outcomes, no 2/3 scientific claim",
+      "source_refs": [
+        "proyectos/mercados-de-pareja/research/ABH_N147_N166_20261030/PREREG_A.json",
+        "proyectos/mercados-de-pareja/research/ABH_N147_N166_20261030/RESULTS_INDEX.json"
+      ]
+    },
+    {
+      "id": "N148",
+      "parent": "N147",
+      "mode": "BRANCH",
+      "drift_D": 1,
+      "A": {
+        "question": "Check full ESBM on rank-canonical degree-preserved rewired graph under relabel",
+        "unit": "completely synthetic event trajectories, same agents and shocks permuted, not new human observations",
+        "estimand": "exact actor-relabel equivariance in whole simulated outcome path"
+      },
+      "B": {
+        "rivals": [
+          "permutation equivariant engine",
+          "label-dependent max-weight matching tie",
+          "source u_match upper triangle",
+          "schedule-order dependent private learning"
+        ],
+        "null": "Original and relabelled trajectories differ in substantive stock or offers"
+      },
+      "C": {
+        "precommitted_endpoints": "Identical budget to N147, different graph; preserve all failures and timing",
+        "falsifier": "Single unequal trajectory fails claim; no aggregate averaging to hide it"
+      },
+      "D": {
+        "preregistered": {
+          "inputs": "N24 T4; original ESBM and canonical graph imported unchanged; original SHA256 f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b; SHA of runner GitHub frozen in next commit",
+          "shocks": "Every 1D and 3D state tensor indexed with same actor permutation"
+        },
+        "prereg_commit": "4a1c7a8ad0c01ee4622201f4be151fbc14e48586",
+        "code_sha_frozen_before_outcomes": "e4b781098bfc045d631e03b6dd33c110724bfe27"
+      },
+      "E": {
+        "status": "VALID_NEGATIVE_DIAGNOSTIC",
+        "actual_endpoint": {
+          "exact": 7,
+          "checks": 12,
+          "first": "rewired 1/2 slots: 5/12 trajectories differ in dissolution and active stocks"
+        },
+        "source_full_receipt_sha256": "460dadd95c4fe7b843d01cb3bd3cfc27c1272533422b019d3e4ab4131c691a12",
+        "local_full_rows_available_in_conversation_bundle": true,
+        "humans": 0
+      },
+      "F": {
+        "preregistered_adversarial": {
+          "strong_control": "Re-identification of full event multiset, not just same graph; keep first failure and withdraw overstated symmetry",
+          "adversary": "legacy graph baseline and single round vs two slots"
+        },
+        "negative_diagnostic": true,
+        "warning": "All findings in model and Python; technically falsified baseline actor order no human inference."
+      },
+      "G": {
+        "preregistered": {
+          "external": "NONE",
+          "replication": "only same synthetic implementation"
+        },
+        "independence": "NO_EXTERNAL_HUMAN_HOLDOUT",
+        "third_party_OS": "NOT_TESTED"
+      },
+      "H": {
+        "prior_ids": [
+          "P-TRAJECTORY-INVARIANCE",
+          "P-NETWORK-INVARIANCE",
+          "P-DYADIC_ACCESS",
+          "P-NOVELTY"
+        ],
+        "update_ids": [
+          "U177",
+          "U178",
+          "U179",
+          "U180",
+          "U181",
+          "U182"
+        ],
+        "human_priors": "NO_CHANGE_WITH_REASON",
+        "source_new": "SRC107 documentary publication only"
+      },
+      "I": {
+        "grade": "0/3",
+        "scientific_CT2_before": 7,
+        "scientific_CT2_after": 7,
+        "technical_result_valid": true,
+        "external_replication": false,
+        "ethical_ok": "No raw human sample or original source mutation"
+      },
+      "J": {
+        "decision": "BRANCH_REPAIR_FROM_COUNTEREXAMPLE",
+        "successor": "N149",
+        "failure_path": "REGISTER VALID_NEGATIVE then prereg REPAIR; no retroactive source edits",
+        "credit_spent": 1,
+        "value_next": "Distinct model and code capability; R5 external remains STOP"
+      },
+      "selection_exposure": "Adaptive sequential blocks, no blinded human outcomes, no 2/3 scientific claim",
+      "source_refs": [
+        "proyectos/mercados-de-pareja/research/ABH_N147_N166_20261030/PREREG_A.json",
+        "proyectos/mercados-de-pareja/research/ABH_N147_N166_20261030/RESULTS_INDEX.json"
+      ]
+    },
+    {
+      "id": "N149",
+      "parent": "N148",
+      "mode": "ADVERSARIAL",
+      "drift_D": 0.2,
+      "A": {
+        "question": "Localize any failure by comparing graph, meeting schedule, directed proposals and responses, match choice and dissolution",
+        "unit": "completely synthetic event trajectories, same agents and shocks permuted, not new human observations",
+        "estimand": "exact actor-relabel equivariance in whole simulated outcome path"
+      },
+      "B": {
+        "rivals": [
+          "permutation equivariant engine",
+          "label-dependent max-weight matching tie",
+          "source u_match upper triangle",
+          "schedule-order dependent private learning"
+        ],
+        "null": "Original and relabelled trajectories differ in substantive stock or offers"
+      },
+      "C": {
+        "precommitted_endpoints": "At least 1 failing pair if N147/148 fail; report first time/stage and weighted matching tie/upper-triangle artifacts. If none fail, use exact eight cases to certify stages",
+        "falsifier": "Single unequal trajectory fails claim; no aggregate averaging to hide it"
+      },
+      "D": {
+        "preregistered": {
+          "inputs": "N24 T4; original ESBM and canonical graph imported unchanged; original SHA256 f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b; SHA of runner GitHub frozen in next commit",
+          "shocks": "Every 1D and 3D state tensor indexed with same actor permutation"
+        },
+        "prereg_commit": "4a1c7a8ad0c01ee4622201f4be151fbc14e48586",
+        "code_sha_frozen_before_outcomes": "e4b781098bfc045d631e03b6dd33c110724bfe27"
+      },
+      "E": {
+        "status": "VALID_NEGATIVE_DIAGNOSTIC",
+        "actual_endpoint": {
+          "counterexamples": 7,
+          "first": "first divergent stage dissolution at t1/t2 for canonical graph, legacy matching at t0, original per-pair directional ordered tensor"
+        },
+        "source_full_receipt_sha256": "460dadd95c4fe7b843d01cb3bd3cfc27c1272533422b019d3e4ab4131c691a12",
+        "local_full_rows_available_in_conversation_bundle": true,
+        "humans": 0
+      },
+      "F": {
+        "preregistered_adversarial": {
+          "strong_control": "Re-identification of full event multiset, not just same graph; keep first failure and withdraw overstated symmetry",
+          "adversary": "legacy graph baseline and single round vs two slots"
+        },
+        "negative_diagnostic": true,
+        "warning": "All findings in model and Python; technically falsified baseline actor order no human inference."
+      },
+      "G": {
+        "preregistered": {
+          "external": "NONE",
+          "replication": "only same synthetic implementation"
+        },
+        "independence": "NO_EXTERNAL_HUMAN_HOLDOUT",
+        "third_party_OS": "NOT_TESTED"
+      },
+      "H": {
+        "prior_ids": [
+          "P-TRAJECTORY-INVARIANCE",
+          "P-NETWORK-INVARIANCE",
+          "P-DYADIC_ACCESS",
+          "P-NOVELTY"
+        ],
+        "update_ids": [
+          "U177",
+          "U178",
+          "U179",
+          "U180",
+          "U181",
+          "U182"
+        ],
+        "human_priors": "NO_CHANGE_WITH_REASON",
+        "source_new": "SRC107 documentary publication only"
+      },
+      "I": {
+        "grade": "0/3",
+        "scientific_CT2_before": 7,
+        "scientific_CT2_after": 7,
+        "technical_result_valid": true,
+        "external_replication": false,
+        "ethical_ok": "No raw human sample or original source mutation"
+      },
+      "J": {
+        "decision": "BRANCH_REPAIR_FROM_COUNTEREXAMPLE",
+        "successor": "N150",
+        "failure_path": "REGISTER VALID_NEGATIVE then prereg REPAIR; no retroactive source edits",
+        "credit_spent": 1,
+        "value_next": "Distinct model and code capability; R5 external remains STOP"
+      },
+      "selection_exposure": "Adaptive sequential blocks, no blinded human outcomes, no 2/3 scientific claim",
+      "source_refs": [
+        "proyectos/mercados-de-pareja/research/ABH_N147_N166_20261030/PREREG_A.json",
+        "proyectos/mercados-de-pareja/research/ABH_N147_N166_20261030/RESULTS_INDEX.json"
+      ]
+    },
+    {
+      "id": "N150",
+      "parent": "N149",
+      "mode": "CONTROL",
+      "drift_D": 0.2,
+      "A": {
+        "question": "Test whether label permutation fails with original ESBM legacy scheduler and why network mechanism does not imply total-engine equivariance",
+        "unit": "completely synthetic event trajectories, same agents and shocks permuted, not new human observations",
+        "estimand": "exact actor-relabel equivariance in whole simulated outcome path"
+      },
+      "B": {
+        "rivals": [
+          "permutation equivariant engine",
+          "label-dependent max-weight matching tie",
+          "source u_match upper triangle",
+          "schedule-order dependent private learning"
+        ],
+        "null": "Original and relabelled trajectories differ in substantive stock or offers"
+      },
+      "C": {
+        "precommitted_endpoints": "2 seeds×2 permutations legacy N24×4; compare outcomes and first failed stage; no claim that baseline is actor-equivariant if it isn't",
+        "falsifier": "Single unequal trajectory fails claim; no aggregate averaging to hide it"
+      },
+      "D": {
+        "preregistered": {
+          "inputs": "N24 T4; original ESBM and canonical graph imported unchanged; original SHA256 f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b; SHA of runner GitHub frozen in next commit",
+          "shocks": "Every 1D and 3D state tensor indexed with same actor permutation"
+        },
+        "prereg_commit": "4a1c7a8ad0c01ee4622201f4be151fbc14e48586",
+        "code_sha_frozen_before_outcomes": "e4b781098bfc045d631e03b6dd33c110724bfe27"
+      },
+      "E": {
+        "status": "VALID_NEGATIVE_DIAGNOSTIC",
+        "actual_endpoint": {
+          "exact": 0,
+          "checks": 4,
+          "legacy_order": "Direct legacy schedule actor-index sensitivity in full event and aggregate outputs"
+        },
+        "source_full_receipt_sha256": "460dadd95c4fe7b843d01cb3bd3cfc27c1272533422b019d3e4ab4131c691a12",
+        "local_full_rows_available_in_conversation_bundle": true,
+        "humans": 0
+      },
+      "F": {
+        "preregistered_adversarial": {
+          "strong_control": "Re-identification of full event multiset, not just same graph; keep first failure and withdraw overstated symmetry",
+          "adversary": "legacy graph baseline and single round vs two slots"
+        },
+        "negative_diagnostic": true,
+        "warning": "All findings in model and Python; technically falsified baseline actor order no human inference."
+      },
+      "G": {
+        "preregistered": {
+          "external": "NONE",
+          "replication": "only same synthetic implementation"
+        },
+        "independence": "NO_EXTERNAL_HUMAN_HOLDOUT",
+        "third_party_OS": "NOT_TESTED"
+      },
+      "H": {
+        "prior_ids": [
+          "P-TRAJECTORY-INVARIANCE",
+          "P-NETWORK-INVARIANCE",
+          "P-DYADIC_ACCESS",
+          "P-NOVELTY"
+        ],
+        "update_ids": [
+          "U177",
+          "U178",
+          "U179",
+          "U180",
+          "U181",
+          "U182"
+        ],
+        "human_priors": "NO_CHANGE_WITH_REASON",
+        "source_new": "SRC107 documentary publication only"
+      },
+      "I": {
+        "grade": "0/3",
+        "scientific_CT2_before": 7,
+        "scientific_CT2_after": 7,
+        "technical_result_valid": true,
+        "external_replication": false,
+        "ethical_ok": "No raw human sample or original source mutation"
+      },
+      "J": {
+        "decision": "BRANCH_REPAIR_FROM_COUNTEREXAMPLE",
+        "successor": "Design next controls/new component",
+        "failure_path": "REGISTER VALID_NEGATIVE then prereg REPAIR; no retroactive source edits",
+        "credit_spent": 1,
+        "value_next": "Distinct model and code capability; R5 external remains STOP"
+      },
+      "selection_exposure": "Adaptive sequential blocks, no blinded human outcomes, no 2/3 scientific claim",
+      "source_refs": [
+        "proyectos/mercados-de-pareja/research/ABH_N147_N166_20261030/PREREG_A.json",
+        "proyectos/mercados-de-pareja/research/ABH_N147_N166_20261030/RESULTS_INDEX.json"
+      ]
+    }
+  ]
+}
