@@ -1,0 +1,264 @@
+{
+  "schema": "ABH.PREEXEC.BLOCK_B.v1",
+  "date": "2026-10-29",
+  "branch": "research/ab-h-esbm-event-api-20261029",
+  "authorized": 20,
+  "valid_previously": 5,
+  "remaining": 15,
+  "trigger": "N127–N131 exact legacy parity and explicit scheduler injection passed; next independent *mechanism class* social contact opportunity network",
+  "source_freeze": "TO_COMMIT_BEFORE_RUN",
+  "cycles": [
+    {
+      "id": "N132",
+      "parent": "N131",
+      "mode": "NETWORK_CONSTRUCTION",
+      "D": {
+        "code": "pure Python social_graph.py plus runner_B.py commit before outcomes",
+        "source_sha": "not yet frozen",
+        "numerics": "numpy networkx stable versions"
+      },
+      "A": {
+        "question": "Build a finite synthetic 4-regular ring contact network on 24 actors and verify its graph-theoretic constraints",
+        "estimand": "synthetic social graph and ESBM N24×4 stage-specific outputs; not people"
+      },
+      "B": {
+        "strong_rivals": [
+          "same-degree rewired null",
+          "unrestricted opportunities original",
+          "risk-set budget differences as confound"
+        ],
+        "null": "Network topology can be irrelevant to final active relationships even when alters exposure"
+      },
+      "C": {
+        "design": "For 30 preregistered seeds 3000–3029, each graph connected, simple, degree=4 for all 24, 48 edges; generated from latent q order not fixed actor index.",
+        "falsifier": "Fail invariant -> INVALID/REPAIR; no posthoc changes to group labels or new seeds"
+      },
+      "E": {
+        "execution": "PENDING",
+        "seeds": "3000..3029"
+      },
+      "F": {
+        "adversarial": "degree and edge-count equality does NOT guarantee eligible-edge or exposure budget equality; must report both"
+      },
+      "G": {
+        "external": "NONE",
+        "scope": "same generative simulator"
+      },
+      "H": {
+        "prior": "P-SCHEDULE-CORRELATION unchanged externally; optional synthetic-only subclaim updates; no new SOURCE"
+      },
+      "I": {
+        "scientific_grade": "0/3",
+        "CT2": 7,
+        "maturity": "no increment without audited deliverables"
+      },
+      "J": {
+        "next": "N133",
+        "fail": "STOP/REPAIR prereg; leave unused if no useful test"
+      }
+    },
+    {
+      "id": "N133",
+      "parent": "N132",
+      "mode": "NETWORK_ADVERSARY",
+      "D": {
+        "code": "pure Python social_graph.py plus runner_B.py commit before outcomes",
+        "source_sha": "not yet frozen",
+        "numerics": "numpy networkx stable versions"
+      },
+      "A": {
+        "question": "Construct a degree-preserving rewired graph as competent adversarial reference",
+        "estimand": "synthetic social graph and ESBM N24×4 stage-specific outputs; not people"
+      },
+      "B": {
+        "strong_rivals": [
+          "same-degree rewired null",
+          "unrestricted opportunities original",
+          "risk-set budget differences as confound"
+        ],
+        "null": "Network topology can be irrelevant to final active relationships even when alters exposure"
+      },
+      "C": {
+        "design": "For 30 seeds, same 24 nodes, exact degree sequence and 48 edges, measure edge overlap, eligible-edge count; preserve negative null when network coincides.",
+        "falsifier": "Fail invariant -> INVALID/REPAIR; no posthoc changes to group labels or new seeds"
+      },
+      "E": {
+        "execution": "PENDING",
+        "seeds": "3000..3029"
+      },
+      "F": {
+        "adversarial": "degree and edge-count equality does NOT guarantee eligible-edge or exposure budget equality; must report both"
+      },
+      "G": {
+        "external": "NONE",
+        "scope": "same generative simulator"
+      },
+      "H": {
+        "prior": "P-SCHEDULE-CORRELATION unchanged externally; optional synthetic-only subclaim updates; no new SOURCE"
+      },
+      "I": {
+        "scientific_grade": "0/3",
+        "CT2": 7,
+        "maturity": "no increment without audited deliverables"
+      },
+      "J": {
+        "next": "N134",
+        "fail": "STOP/REPAIR prereg; leave unused if no useful test"
+      }
+    },
+    {
+      "id": "N134",
+      "parent": "N133",
+      "mode": "EXPOSURE_IDENTIFICATION",
+      "D": {
+        "code": "pure Python social_graph.py plus runner_B.py commit before outcomes",
+        "source_sha": "not yet frozen",
+        "numerics": "numpy networkx stable versions"
+      },
+      "A": {
+        "question": "Audit network-filtered risk-set encounter budgets and structural sorting at fixed initial population",
+        "estimand": "synthetic social graph and ESBM N24×4 stage-specific outputs; not people"
+      },
+      "B": {
+        "strong_rivals": [
+          "same-degree rewired null",
+          "unrestricted opportunities original",
+          "risk-set budget differences as confound"
+        ],
+        "null": "Network topology can be irrelevant to final active relationships even when alters exposure"
+      },
+      "C": {
+        "design": "Both network variants serve identical 24-agent synthetic population with same original shocks; count eligible opportunities, matched schedule size and same-norm share; note if budgets differ and do not claim isolated rewiring effect.",
+        "falsifier": "Fail invariant -> INVALID/REPAIR; no posthoc changes to group labels or new seeds"
+      },
+      "E": {
+        "execution": "PENDING",
+        "seeds": "3000..3029"
+      },
+      "F": {
+        "adversarial": "degree and edge-count equality does NOT guarantee eligible-edge or exposure budget equality; must report both"
+      },
+      "G": {
+        "external": "NONE",
+        "scope": "same generative simulator"
+      },
+      "H": {
+        "prior": "P-SCHEDULE-CORRELATION unchanged externally; optional synthetic-only subclaim updates; no new SOURCE"
+      },
+      "I": {
+        "scientific_grade": "0/3",
+        "CT2": 7,
+        "maturity": "no increment without audited deliverables"
+      },
+      "J": {
+        "next": "N135",
+        "fail": "STOP/REPAIR prereg; leave unused if no useful test"
+      }
+    },
+    {
+      "id": "N135",
+      "parent": "N134",
+      "mode": "TEMPORAL_NET",
+      "D": {
+        "code": "pure Python social_graph.py plus runner_B.py commit before outcomes",
+        "source_sha": "not yet frozen",
+        "numerics": "numpy networkx stable versions"
+      },
+      "A": {
+        "question": "Execute network-scheduled ESBM time trajectories with identical actor shocks and stateful network constraints",
+        "estimand": "synthetic social graph and ESBM N24×4 stage-specific outputs; not people"
+      },
+      "B": {
+        "strong_rivals": [
+          "same-degree rewired null",
+          "unrestricted opportunities original",
+          "risk-set budget differences as confound"
+        ],
+        "null": "Network topology can be irrelevant to final active relationships even when alters exposure"
+      },
+      "C": {
+        "design": "30 paired seeds 3000–3029 on N24×4, ring vs rewired; all stocks, consent and right-censor balances; report paired delta sign (including negatives) and exposure differences.",
+        "falsifier": "Fail invariant -> INVALID/REPAIR; no posthoc changes to group labels or new seeds"
+      },
+      "E": {
+        "execution": "PENDING",
+        "seeds": "3000..3029"
+      },
+      "F": {
+        "adversarial": "degree and edge-count equality does NOT guarantee eligible-edge or exposure budget equality; must report both"
+      },
+      "G": {
+        "external": "NONE",
+        "scope": "same generative simulator"
+      },
+      "H": {
+        "prior": "P-SCHEDULE-CORRELATION unchanged externally; optional synthetic-only subclaim updates; no new SOURCE"
+      },
+      "I": {
+        "scientific_grade": "0/3",
+        "CT2": 7,
+        "maturity": "no increment without audited deliverables"
+      },
+      "J": {
+        "next": "N136",
+        "fail": "STOP/REPAIR prereg; leave unused if no useful test"
+      }
+    },
+    {
+      "id": "N136",
+      "parent": "N135",
+      "mode": "BRIDGING_INSTITUTION",
+      "D": {
+        "code": "pure Python social_graph.py plus runner_B.py commit before outcomes",
+        "source_sha": "not yet frozen",
+        "numerics": "numpy networkx stable versions"
+      },
+      "A": {
+        "question": "Measure cross-category bridge edges under a fixed degree-preserving network rewire and assess decoupling of connectivity and relation count",
+        "estimand": "synthetic social graph and ESBM N24×4 stage-specific outputs; not people"
+      },
+      "B": {
+        "strong_rivals": [
+          "same-degree rewired null",
+          "unrestricted opportunities original",
+          "risk-set budget differences as confound"
+        ],
+        "null": "Network topology can be irrelevant to final active relationships even when alters exposure"
+      },
+      "C": {
+        "design": "30 seeds 3000–3029; compare edge fraction connecting distinct group labels, eligible opportunities and final matching; must distinguish graph-topology changes from inferred beliefs or welfare.",
+        "falsifier": "Fail invariant -> INVALID/REPAIR; no posthoc changes to group labels or new seeds"
+      },
+      "E": {
+        "execution": "PENDING",
+        "seeds": "3000..3029"
+      },
+      "F": {
+        "adversarial": "degree and edge-count equality does NOT guarantee eligible-edge or exposure budget equality; must report both"
+      },
+      "G": {
+        "external": "NONE",
+        "scope": "same generative simulator"
+      },
+      "H": {
+        "prior": "P-SCHEDULE-CORRELATION unchanged externally; optional synthetic-only subclaim updates; no new SOURCE"
+      },
+      "I": {
+        "scientific_grade": "0/3",
+        "CT2": 7,
+        "maturity": "no increment without audited deliverables"
+      },
+      "J": {
+        "next": "Choose temporal/norm/welfare block on observed weaknesses",
+        "fail": "STOP/REPAIR prereg; leave unused if no useful test"
+      }
+    }
+  ],
+  "R5": "HUMAN_STOP",
+  "limitations": [
+    "No calibrated social network parameters",
+    "Synthetic q-sorting may mechanically affect preference covariates",
+    "Degree-preserving shuffling does not equalize all eligible contacts",
+    "No claimed social science empirical finding"
+  ]
+}
