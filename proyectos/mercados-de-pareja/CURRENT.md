@@ -304,3 +304,8 @@
 ## Auditoría final de tesis ESBM v2 · 29/10/2026 · sin ciclo
 
 [Dictamen de reducción de tesis, prueba de límite representacional B6* y puerta de originalidad](research/ESBM_THESIS_REDUCTION_NOVELTY_GATE_NOCYCLE_20261029/REPORT.md): no se identifica **hoy** predicción humana exclusiva de ESBM v2 frente a B0/B1/SRM/B2/B4/B6 con paridad. Declaración restringida a **marco sintético integrador sin originalidad causal/predictiva acreditada**, conservando todos los resultados adversos y el carácter de simulación. SRC084 (Joel), SRC090 (Baxter) y SRC054 (Ríos) reexaminados como **fuentes ya registradas**, sin nuevos datasets; U155 P-NOVELTY y U156 P-COMPETENT_NULL `NO_CHANGE_WITH_REASON`. **103 SOURCES/30 PRIORS/156 UPDATES**. Sin ciclos/ejecuciones, 26/40 válidos históricos, 14 N93–N106 reservados, CT2 ordinal 7, madurez 41.20%, STOP_R5 inalterados.
+
+
+## Fuente primaria nueva de citas reales y licencia de datos explícita (SRC104) · 29/10/2026 · sin ciclo
+
+[Informe Pisanski et al. (2018), depósito original Figshare CC BY 4.0](research/ABR_R5_GATE_PISANSKI_FIGSHARE_NOCYCLE_20261029/REPORT.md): 30 adultos en dos eventos, citas presenciales de 6 min y votos propios sí/no de ambas personas según método publicado; suplemento de autores `rspb20181634supp1.xlsx` de 226,56 KB bajo CC BY 4.0. **Archivo original no descargado**: ninguna fila, par de votos ni SHA comprobados, no hay nuevo holdout ni validación ESBM. SRC104 con U157/U158 NO_CHANGE_WITH_REASON: **104 SOURCES, 30 PRIORS, 158 UPDATES; 26/40 ciclos históricos, N93–N106 reservados, CT2 ordinal 7/100, madurez 41.20%, STOP_R5 intactos**.

@@ -3,7 +3,7 @@
   "project": "mercados-de-pareja",
   "date": "2026-10-28",
   "scope": "Retrospective provenance backfill from repository reports plus N56/N57 publisher audit. Original data never copied; not systematic or claim of accessing raw data for bibliography.",
-  "source_count": 103,
+  "source_count": 104,
   "sources": [
     {
       "id": "SRC001",
@@ -2071,7 +2071,33 @@
       "cycle_ids": [],
       "AB_cycle_increment": 0,
       "independent_external_validation_executed": false
+    },
+    {
+      "id": "SRC104",
+      "title": "Pisanski et al. (2018), Voice pitch modulation in human mate choice — original speed dating events, 30 adults, Figshare author dataset CC BY 4.0",
+      "canonical_url": "https://doi.org/10.1098/rspb.2018.1634",
+      "article_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6304053/",
+      "primary_dataset_doi": "https://doi.org/10.6084/m9.figshare.7410575.v1",
+      "figshare_collection_doi": "https://doi.org/10.6084/m9.figshare.c.4320851",
+      "dataset_filename": "rspb20181634supp1.xlsx",
+      "dataset_file_size_published": "226.56 kB",
+      "verified_at": "2026-10-29",
+      "source_type": "NEW_ORIGINAL_IN_PERSON_SPEEDDATE_BILATERAL_YES_NO_PRIMARY_PAPER_AND_FIRST_PARTY_CC_BY4_DATASET_METADATA_ONLY_NO_ROW_INSPECTION",
+      "contribution": "Original Methods 2(a)-2(b): 30 adult participants aged 20–40, two in-person speed-dating events run with a professional speed-dating host at a cafe; six-minute encounters, self-written YES/NO by BOTH participants after EACH real date, mutual yes used for contact exchange. Authors report 14 percent mutual matches. Paper Data Accessibility links original XLSX supplementary; Figshare author's dataset item describes raw data and S1–S3 tables, explicitly CC BY 4.0. This is not an artificial profile/conjoint experiment and is an apparently distinct original cohort from Columbia/Northwestern/McMaster/Graz/Mixmosa/Leiden.",
+      "data_rights": "Original Figshare supplement ITEM explicitly marked CC BY 4.0 (not automatically the article or permission to publish identifiable individual rows). Rights metadata verified in primary repository result; any sensitive romantic-choice data must be protected under applicable GDPR policies.",
+      "access_status": "PAPER_ORIGINAL_METHODS_AND_FIGSHARE_DATASET_LICENSE_VERIFIED_ORIGINAL_XLSX_BYTES_NOT_ACCESSED",
+      "access_failure": "PMC supplement link leads to Preparing to download page; direct normal download via container failed; Figshare DOI redirect and public API not accessible via web tools; no bypass, account, licence acceptance or contact. NO bytes, no SHA256, sheet names, codebook or original dyadic join.",
+      "sampling_limits": "Only 2 sessions, 30 participants; true event IDs, raw dates performed/missing, round ordering and whether original spreadsheet retains both individually written votes pairwise are UNVERIFIED. Distinct cohort from catalogued sources suggested by study provenance, not directly established by file IDs.",
+      "structural_limit": "Speed-date voting is simultaneous after a 6-min meeting; ESBM v2 is sequential proposal followed by conditional reply. Positive bilateral interest is not confirmed exclusive union or duration. No platform exposure, policy intervention or direct transportability. No new ESBM-exclusive prediction relative to B0/B1/SRM/B2/B4/B6.",
+      "falsifier": "Obtain original first-party supplementary XLSX through permitted standard access; inspect sheets, original row/actor/partner/event IDs, two native yes/no decisions, missingness and order; verify file SHA256, custody and rights, then assess if it can serve as exploratory holdout before pre-registering a separate genuinely incremental ESBM hypothesis with competent baselines. If data cannot be linked, remain documentary-only and STOP_R5.",
+      "file_level_metadata_rights_verified": true,
+      "original_rows_read": false,
+      "bilateral_decisions_confirmed_by_method": true,
+      "bilateral_dyadic_join_verified": false,
+      "independent_external_validation_executed": false,
+      "cycle_ids": [],
+      "AB_cycle_increment": 0
     }
   ],
-  "last_added_campaign": "ABR_HFBTIME_ETHICS_ALTERNATIVE_NOCYCLE_20261029_NORMATIVE_ONLY"
+  "last_added_campaign": "ABR_R5_GATE_PISANSKI_FIGSHARE_NOCYCLE_20261029"
 }

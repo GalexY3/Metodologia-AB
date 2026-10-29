@@ -24,7 +24,7 @@
       "name": "Estado del arte",
       "weight": 10,
       "progress": 75,
-      "evidence": "103 versioned source records and 30 explicit priors (SRC101–SRC103 are official legal/supervisory references only, not new human empirical data) (new Roth et al. 2023 real Leiden speed-dating source DOI 10.34894/AWSZSB with native yes/no methodology but inaccessible file rights, schema and rows; STOP_R5 remains) (SRC098 new original published field experiment with exposure-order controls but no licensed row-level release; SRC099 open unilateral conjoint without counterpart decisions; neither unlocks R5), strong adverse Joel/Baxter/Pronk/Rios/Chang/Ogushi/Matz/Zhao, deduped author GitHub source SRC096 and SRC094.",
+      "evidence": "104 versioned source records and 30 explicit priors (SRC104 new original author CC-BY4 speed-date dataset metadata, original workbook bytes not inspected) (SRC101–SRC103 are official legal/supervisory references only, not new human empirical data) (new Roth et al. 2023 real Leiden speed-dating source DOI 10.34894/AWSZSB with native yes/no methodology but inaccessible file rights, schema and rows; STOP_R5 remains) (SRC098 new original published field experiment with exposure-order controls but no licensed row-level release; SRC099 open unilateral conjoint without counterpart decisions; neither unlocks R5), strong adverse Joel/Baxter/Pronk/Rios/Chang/Ogushi/Matz/Zhao, deduped author GitHub source SRC096 and SRC094.",
       "required_for_100": "Systematic search protocol, inclusion/exclusion and study overlap audit, strongest competing outcomes and qualified literature synthesis ready for manuscript."
     },
     {
@@ -91,9 +91,9 @@
     "AB_outside_tranche_reserved": 14,
     "CT2_ordinal": 7,
     "CT2_not_probability": true,
-    "sources": 103,
+    "sources": 104,
     "priors": 30,
-    "updates": 156,
+    "updates": 158,
     "new_valid_cycles_this_turn": 2,
     "new_planning_cycles_this_turn": 0
   },
@@ -212,5 +212,27 @@
     "CT2_ordinal_unchanged": 7,
     "weighted_maturity_unchanged": 41.2,
     "note": "Historic scorecard new_valid_cycles_this_turn=2 refers to N91-N92, not thesis audit. No 1/3–3/3 claim advanced."
+  },
+  "last_R5_Pisanski_noncycle_gate": {
+    "date": "2026-10-29",
+    "base_commit": "1d253b5201dea0ca1d717ccd36a61dbafb83684c",
+    "report": "proyectos/mercados-de-pareja/research/ABR_R5_GATE_PISANSKI_FIGSHARE_NOCYCLE_20261029/REPORT.md",
+    "new_source": "SRC104",
+    "new_update_ids": [
+      "U157",
+      "U158"
+    ],
+    "original_human_rows_read": 0,
+    "first_party_data_item_CC_BY4_metadata_verified": true,
+    "published_two_native_yes_no_methods_verified": true,
+    "original_dyadic_join_inspected": false,
+    "new_valid_cycles": 0,
+    "new_invalid_cycles": 0,
+    "new_planning_cycles": 0,
+    "slots_released": 0,
+    "CT2_ordinal_unchanged": 7,
+    "weighted_maturity_unchanged": 41.2,
+    "STOP_R5_external": true,
+    "note": "historical new_valid_cycles_this_turn=2 refers to N91–N92, not this discovery"
   }
 }
