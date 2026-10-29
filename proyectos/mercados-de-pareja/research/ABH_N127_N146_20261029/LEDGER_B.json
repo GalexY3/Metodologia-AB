@@ -1,0 +1,415 @@
+{
+  "schema": "ABH.AJ.N127_N146_BLOCK_B.v1",
+  "date": "2026-10-29",
+  "branch": "research/ab-h-esbm-event-api-20261029",
+  "prereg_path": "proyectos/mercados-de-pareja/research/ABH_N127_N146_20261029/PREREG_B.json",
+  "code_freeze_commits": [
+    "9af3a551854ee0793531d17b51f2e53977c49fc0",
+    "91e5bcdd5c3c4a04361a533c9b877ebd75b3d8bc"
+  ],
+  "outcome_index_path": "proyectos/mercados-de-pareja/research/ABH_N127_N146_20261029/RESULTS_INDEX.json",
+  "human_external_evidence": false,
+  "grade_0_3": "0/3",
+  "CT2_before": 7,
+  "CT2_after": 7,
+  "substantive_outcome_limit": "code and trace internal invariant",
+  "children": [
+    {
+      "id": "N132",
+      "parent": "N131",
+      "mode": "NETWORK_CONSTRUCTION",
+      "drift_D": {
+        "code": "pure Python social_graph.py plus runner_B.py commit before outcomes",
+        "source_sha": "not yet frozen",
+        "numerics": "numpy networkx stable versions"
+      },
+      "A": {
+        "question": "Build a finite synthetic 4-regular ring contact network on 24 actors and verify its graph-theoretic constraints",
+        "estimand": "synthetic social graph and ESBM N24×4 stage-specific outputs; not people"
+      },
+      "B": {
+        "strong_rivals": [
+          "same-degree rewired null",
+          "unrestricted opportunities original",
+          "risk-set budget differences as confound"
+        ],
+        "null": "Network topology can be irrelevant to final active relationships even when alters exposure"
+      },
+      "C": {
+        "design": "For 30 preregistered seeds 3000–3029, each graph connected, simple, degree=4 for all 24, 48 edges; generated from latent q order not fixed actor index.",
+        "falsifier": "Fail invariant -> INVALID/REPAIR; no posthoc changes to group labels or new seeds"
+      },
+      "D": {
+        "code": "pure Python social_graph.py plus runner_B.py commit before outcomes",
+        "source_sha": "not yet frozen",
+        "numerics": "numpy networkx stable versions",
+        "source_code_commits": [
+          "9af3a551854ee0793531d17b51f2e53977c49fc0",
+          "91e5bcdd5c3c4a04361a533c9b877ebd75b3d8bc"
+        ]
+      },
+      "E": {
+        "status": "PASS",
+        "observed": {
+          "degree4_connected_graphs": 30
+        },
+        "source_receipt_SHA256": "f0b4be4a6a19cb3188aee2acd41dcfab7be2162600e9ee5c2912041cca878856",
+        "independent_trials": "No; all run within same artificial ESBM generator",
+        "human_data_rows": 0
+      },
+      "F": {
+        "null_controls": "Original ESBM exact legacy; matched-degree artificial comparator; before/after source checks; input abuse; adversarial actor relabel",
+        "adversarial_finding": "No external causal inference."
+      },
+      "G": {
+        "holdout": "NONE",
+        "external_replication": "NONE",
+        "code_parity": "Input source SHA verified; canonical clean subprocess is same OS/env"
+      },
+      "H": {
+        "prior_update": "U176 technical negative P-NETWORK-INVARIANCE and U177–U179 NO_CHANGE_WITH_REASON; never a human posterior",
+        "source_ids": [],
+        "numeric_bayes": null
+      },
+      "I": {
+        "scientific_grade": "0/3",
+        "technical_valid": true,
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "CT2_is_not_probability": true,
+        "novelty_not_claimed": true
+      },
+      "J": {
+        "decision": "CONTINUE_OR_CLOSE",
+        "next": "N133",
+        "reason": "Next precommitted falsifier or final closure after technical success",
+        "credit_spent": 1
+      },
+      "record_kind": "VALID_EXECUTED_ABH_TECHNICAL_OR_NEGATIVE",
+      "source_refs": [
+        "esbm_dynamic.py sha256=f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+        "proyectos/mercados-de-pareja/research/ABH_N127_N146_20261029/PREREG_B.json",
+        "proyectos/mercados-de-pareja/research/ABH_N127_N146_20261029/RESULTS_INDEX.json"
+      ]
+    },
+    {
+      "id": "N133",
+      "parent": "N132",
+      "mode": "NETWORK_ADVERSARY",
+      "drift_D": {
+        "code": "pure Python social_graph.py plus runner_B.py commit before outcomes",
+        "source_sha": "not yet frozen",
+        "numerics": "numpy networkx stable versions"
+      },
+      "A": {
+        "question": "Construct a degree-preserving rewired graph as competent adversarial reference",
+        "estimand": "synthetic social graph and ESBM N24×4 stage-specific outputs; not people"
+      },
+      "B": {
+        "strong_rivals": [
+          "same-degree rewired null",
+          "unrestricted opportunities original",
+          "risk-set budget differences as confound"
+        ],
+        "null": "Network topology can be irrelevant to final active relationships even when alters exposure"
+      },
+      "C": {
+        "design": "For 30 seeds, same 24 nodes, exact degree sequence and 48 edges, measure edge overlap, eligible-edge count; preserve negative null when network coincides.",
+        "falsifier": "Fail invariant -> INVALID/REPAIR; no posthoc changes to group labels or new seeds"
+      },
+      "D": {
+        "code": "pure Python social_graph.py plus runner_B.py commit before outcomes",
+        "source_sha": "not yet frozen",
+        "numerics": "numpy networkx stable versions",
+        "source_code_commits": [
+          "9af3a551854ee0793531d17b51f2e53977c49fc0",
+          "91e5bcdd5c3c4a04361a533c9b877ebd75b3d8bc"
+        ]
+      },
+      "E": {
+        "status": "PASS",
+        "observed": {
+          "degree_preserving_rewired_graphs": 30
+        },
+        "source_receipt_SHA256": "f0b4be4a6a19cb3188aee2acd41dcfab7be2162600e9ee5c2912041cca878856",
+        "independent_trials": "No; all run within same artificial ESBM generator",
+        "human_data_rows": 0
+      },
+      "F": {
+        "null_controls": "Original ESBM exact legacy; matched-degree artificial comparator; before/after source checks; input abuse; adversarial actor relabel",
+        "adversarial_finding": "This run used prior rewired null subsequently found label sensitive N144: withdraw cross-network inference."
+      },
+      "G": {
+        "holdout": "NONE",
+        "external_replication": "NONE",
+        "code_parity": "Input source SHA verified; canonical clean subprocess is same OS/env"
+      },
+      "H": {
+        "prior_update": "U176 technical negative P-NETWORK-INVARIANCE and U177–U179 NO_CHANGE_WITH_REASON; never a human posterior",
+        "source_ids": [],
+        "numeric_bayes": null
+      },
+      "I": {
+        "scientific_grade": "0/3",
+        "technical_valid": true,
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "CT2_is_not_probability": true,
+        "novelty_not_claimed": true
+      },
+      "J": {
+        "decision": "CONTINUE_OR_CLOSE",
+        "next": "N134",
+        "reason": "Next precommitted falsifier or final closure after technical success",
+        "credit_spent": 1
+      },
+      "record_kind": "VALID_EXECUTED_ABH_TECHNICAL_OR_NEGATIVE",
+      "source_refs": [
+        "esbm_dynamic.py sha256=f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+        "proyectos/mercados-de-pareja/research/ABH_N127_N146_20261029/PREREG_B.json",
+        "proyectos/mercados-de-pareja/research/ABH_N127_N146_20261029/RESULTS_INDEX.json"
+      ]
+    },
+    {
+      "id": "N134",
+      "parent": "N133",
+      "mode": "EXPOSURE_IDENTIFICATION",
+      "drift_D": {
+        "code": "pure Python social_graph.py plus runner_B.py commit before outcomes",
+        "source_sha": "not yet frozen",
+        "numerics": "numpy networkx stable versions"
+      },
+      "A": {
+        "question": "Audit network-filtered risk-set encounter budgets and structural sorting at fixed initial population",
+        "estimand": "synthetic social graph and ESBM N24×4 stage-specific outputs; not people"
+      },
+      "B": {
+        "strong_rivals": [
+          "same-degree rewired null",
+          "unrestricted opportunities original",
+          "risk-set budget differences as confound"
+        ],
+        "null": "Network topology can be irrelevant to final active relationships even when alters exposure"
+      },
+      "C": {
+        "design": "Both network variants serve identical 24-agent synthetic population with same original shocks; count eligible opportunities, matched schedule size and same-norm share; note if budgets differ and do not claim isolated rewiring effect.",
+        "falsifier": "Fail invariant -> INVALID/REPAIR; no posthoc changes to group labels or new seeds"
+      },
+      "D": {
+        "code": "pure Python social_graph.py plus runner_B.py commit before outcomes",
+        "source_sha": "not yet frozen",
+        "numerics": "numpy networkx stable versions",
+        "source_code_commits": [
+          "9af3a551854ee0793531d17b51f2e53977c49fc0",
+          "91e5bcdd5c3c4a04361a533c9b877ebd75b3d8bc"
+        ]
+      },
+      "E": {
+        "status": "PASS",
+        "observed": {
+          "fixed_riskset_controls": 60,
+          "budget_equality_not_assumed": true
+        },
+        "source_receipt_SHA256": "f0b4be4a6a19cb3188aee2acd41dcfab7be2162600e9ee5c2912041cca878856",
+        "independent_trials": "No; all run within same artificial ESBM generator",
+        "human_data_rows": 0
+      },
+      "F": {
+        "null_controls": "Original ESBM exact legacy; matched-degree artificial comparator; before/after source checks; input abuse; adversarial actor relabel",
+        "adversarial_finding": "This run used prior rewired null subsequently found label sensitive N144: withdraw cross-network inference."
+      },
+      "G": {
+        "holdout": "NONE",
+        "external_replication": "NONE",
+        "code_parity": "Input source SHA verified; canonical clean subprocess is same OS/env"
+      },
+      "H": {
+        "prior_update": "U176 technical negative P-NETWORK-INVARIANCE and U177–U179 NO_CHANGE_WITH_REASON; never a human posterior",
+        "source_ids": [],
+        "numeric_bayes": null
+      },
+      "I": {
+        "scientific_grade": "0/3",
+        "technical_valid": true,
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "CT2_is_not_probability": true,
+        "novelty_not_claimed": true
+      },
+      "J": {
+        "decision": "CONTINUE_OR_CLOSE",
+        "next": "N135",
+        "reason": "Next precommitted falsifier or final closure after technical success",
+        "credit_spent": 1
+      },
+      "record_kind": "VALID_EXECUTED_ABH_TECHNICAL_OR_NEGATIVE",
+      "source_refs": [
+        "esbm_dynamic.py sha256=f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+        "proyectos/mercados-de-pareja/research/ABH_N127_N146_20261029/PREREG_B.json",
+        "proyectos/mercados-de-pareja/research/ABH_N127_N146_20261029/RESULTS_INDEX.json"
+      ]
+    },
+    {
+      "id": "N135",
+      "parent": "N134",
+      "mode": "TEMPORAL_NET",
+      "drift_D": {
+        "code": "pure Python social_graph.py plus runner_B.py commit before outcomes",
+        "source_sha": "not yet frozen",
+        "numerics": "numpy networkx stable versions"
+      },
+      "A": {
+        "question": "Execute network-scheduled ESBM time trajectories with identical actor shocks and stateful network constraints",
+        "estimand": "synthetic social graph and ESBM N24×4 stage-specific outputs; not people"
+      },
+      "B": {
+        "strong_rivals": [
+          "same-degree rewired null",
+          "unrestricted opportunities original",
+          "risk-set budget differences as confound"
+        ],
+        "null": "Network topology can be irrelevant to final active relationships even when alters exposure"
+      },
+      "C": {
+        "design": "30 paired seeds 3000–3029 on N24×4, ring vs rewired; all stocks, consent and right-censor balances; report paired delta sign (including negatives) and exposure differences.",
+        "falsifier": "Fail invariant -> INVALID/REPAIR; no posthoc changes to group labels or new seeds"
+      },
+      "D": {
+        "code": "pure Python social_graph.py plus runner_B.py commit before outcomes",
+        "source_sha": "not yet frozen",
+        "numerics": "numpy networkx stable versions",
+        "source_code_commits": [
+          "9af3a551854ee0793531d17b51f2e53977c49fc0",
+          "91e5bcdd5c3c4a04361a533c9b877ebd75b3d8bc"
+        ]
+      },
+      "E": {
+        "status": "PASS",
+        "observed": {
+          "paired_network_runs": 60,
+          "ring_minus_oldrewire_active_mean": 0.03333333333333333,
+          "positive": 10,
+          "negative": 12,
+          "ties": 8,
+          "comparison_validity": "OLD_NULL_LABEL_DEPENDENT_WITHDRAWN"
+        },
+        "source_receipt_SHA256": "f0b4be4a6a19cb3188aee2acd41dcfab7be2162600e9ee5c2912041cca878856",
+        "independent_trials": "No; all run within same artificial ESBM generator",
+        "human_data_rows": 0
+      },
+      "F": {
+        "null_controls": "Original ESBM exact legacy; matched-degree artificial comparator; before/after source checks; input abuse; adversarial actor relabel",
+        "adversarial_finding": "This run used prior rewired null subsequently found label sensitive N144: withdraw cross-network inference."
+      },
+      "G": {
+        "holdout": "NONE",
+        "external_replication": "NONE",
+        "code_parity": "Input source SHA verified; canonical clean subprocess is same OS/env"
+      },
+      "H": {
+        "prior_update": "U176 technical negative P-NETWORK-INVARIANCE and U177–U179 NO_CHANGE_WITH_REASON; never a human posterior",
+        "source_ids": [],
+        "numeric_bayes": null
+      },
+      "I": {
+        "scientific_grade": "0/3",
+        "technical_valid": true,
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "CT2_is_not_probability": true,
+        "novelty_not_claimed": true
+      },
+      "J": {
+        "decision": "CONTINUE_OR_CLOSE",
+        "next": "N136",
+        "reason": "Next precommitted falsifier or final closure after technical success",
+        "credit_spent": 1
+      },
+      "record_kind": "VALID_EXECUTED_ABH_TECHNICAL_OR_NEGATIVE",
+      "source_refs": [
+        "esbm_dynamic.py sha256=f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+        "proyectos/mercados-de-pareja/research/ABH_N127_N146_20261029/PREREG_B.json",
+        "proyectos/mercados-de-pareja/research/ABH_N127_N146_20261029/RESULTS_INDEX.json"
+      ]
+    },
+    {
+      "id": "N136",
+      "parent": "N135",
+      "mode": "BRIDGING_INSTITUTION",
+      "drift_D": {
+        "code": "pure Python social_graph.py plus runner_B.py commit before outcomes",
+        "source_sha": "not yet frozen",
+        "numerics": "numpy networkx stable versions"
+      },
+      "A": {
+        "question": "Measure cross-category bridge edges under a fixed degree-preserving network rewire and assess decoupling of connectivity and relation count",
+        "estimand": "synthetic social graph and ESBM N24×4 stage-specific outputs; not people"
+      },
+      "B": {
+        "strong_rivals": [
+          "same-degree rewired null",
+          "unrestricted opportunities original",
+          "risk-set budget differences as confound"
+        ],
+        "null": "Network topology can be irrelevant to final active relationships even when alters exposure"
+      },
+      "C": {
+        "design": "30 seeds 3000–3029; compare edge fraction connecting distinct group labels, eligible opportunities and final matching; must distinguish graph-topology changes from inferred beliefs or welfare.",
+        "falsifier": "Fail invariant -> INVALID/REPAIR; no posthoc changes to group labels or new seeds"
+      },
+      "D": {
+        "code": "pure Python social_graph.py plus runner_B.py commit before outcomes",
+        "source_sha": "not yet frozen",
+        "numerics": "numpy networkx stable versions",
+        "source_code_commits": [
+          "9af3a551854ee0793531d17b51f2e53977c49fc0",
+          "91e5bcdd5c3c4a04361a533c9b877ebd75b3d8bc"
+        ]
+      },
+      "E": {
+        "status": "PASS",
+        "observed": {
+          "degree_preserving_bridge_audit": 60,
+          "comparison_validity": "OLD_NULL_LABEL_DEPENDENT_WITHDRAWN"
+        },
+        "source_receipt_SHA256": "f0b4be4a6a19cb3188aee2acd41dcfab7be2162600e9ee5c2912041cca878856",
+        "independent_trials": "No; all run within same artificial ESBM generator",
+        "human_data_rows": 0
+      },
+      "F": {
+        "null_controls": "Original ESBM exact legacy; matched-degree artificial comparator; before/after source checks; input abuse; adversarial actor relabel",
+        "adversarial_finding": "This run used prior rewired null subsequently found label sensitive N144: withdraw cross-network inference."
+      },
+      "G": {
+        "holdout": "NONE",
+        "external_replication": "NONE",
+        "code_parity": "Input source SHA verified; canonical clean subprocess is same OS/env"
+      },
+      "H": {
+        "prior_update": "U176 technical negative P-NETWORK-INVARIANCE and U177–U179 NO_CHANGE_WITH_REASON; never a human posterior",
+        "source_ids": [],
+        "numeric_bayes": null
+      },
+      "I": {
+        "scientific_grade": "0/3",
+        "technical_valid": true,
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "CT2_is_not_probability": true,
+        "novelty_not_claimed": true
+      },
+      "J": {
+        "decision": "CONTINUE_OR_CLOSE",
+        "next": "N137",
+        "reason": "Next precommitted falsifier or final closure after technical success",
+        "credit_spent": 1
+      },
+      "record_kind": "VALID_EXECUTED_ABH_TECHNICAL_OR_NEGATIVE",
+      "source_refs": [
+        "esbm_dynamic.py sha256=f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+        "proyectos/mercados-de-pareja/research/ABH_N127_N146_20261029/PREREG_B.json",
+        "proyectos/mercados-de-pareja/research/ABH_N127_N146_20261029/RESULTS_INDEX.json"
+      ]
+    }
+  ]
+}
