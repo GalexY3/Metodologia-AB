@@ -1,0 +1,301 @@
+{
+  "schema": "ABH.BLOCK_B_EXECUTED_v1",
+  "date": "2026-10-29",
+  "prereg_commit": "8647c41481704b7add1c0625cbb2dc6eb39c03c8",
+  "adapter_freeze_commit": "9390617be3beac6ca7cf94252cc152cdf1874948",
+  "runner_freeze_commit": "f2e576018144918ce35ea9f1a3f1dc80a763f291",
+  "local_receipt_sha256": "b6b999da561d0c604a5ff4ee239c1d68bf51ef0e96d0a7cb7a951a7270ff150b",
+  "original_human_rows": 0,
+  "grade": "0/3",
+  "count": {
+    "valid": 5,
+    "invalid": 0,
+    "planning": 0
+  },
+  "cycles": [
+    {
+      "id": "N112",
+      "status": "PASS",
+      "checks": 36,
+      "seconds": 4.9
+    },
+    {
+      "id": "N113",
+      "status": "PASS",
+      "riskset_shams_exact": 12,
+      "longitudinal_shams_exact": 2,
+      "full_run_formed": [
+        71,
+        75
+      ],
+      "seconds": 9.781
+    },
+    {
+      "id": "N114",
+      "status": "PASS",
+      "different_same_vs_cross": 12,
+      "risksets": 12,
+      "results": [
+        {
+          "seed": 101,
+          "tick": 0,
+          "base": 0.38889,
+          "same": 0.69444,
+          "cross": 0.08333,
+          "contacts_each": 72
+        },
+        {
+          "seed": 101,
+          "tick": 3,
+          "base": 0.375,
+          "same": 0.65278,
+          "cross": 0.22222,
+          "contacts_each": 72
+        },
+        {
+          "seed": 211,
+          "tick": 0,
+          "base": 0.375,
+          "same": 0.625,
+          "cross": 0.22222,
+          "contacts_each": 72
+        },
+        {
+          "seed": 211,
+          "tick": 3,
+          "base": 0.31944,
+          "same": 0.52778,
+          "cross": 0.16667,
+          "contacts_each": 72
+        },
+        {
+          "seed": 307,
+          "tick": 0,
+          "base": 0.23611,
+          "same": 0.54167,
+          "cross": 0.13889,
+          "contacts_each": 72
+        },
+        {
+          "seed": 307,
+          "tick": 3,
+          "base": 0.27778,
+          "same": 0.55556,
+          "cross": 0.13889,
+          "contacts_each": 72
+        },
+        {
+          "seed": 401,
+          "tick": 0,
+          "base": 0.34722,
+          "same": 0.5,
+          "cross": 0.15278,
+          "contacts_each": 72
+        },
+        {
+          "seed": 401,
+          "tick": 3,
+          "base": 0.34722,
+          "same": 0.625,
+          "cross": 0.11111,
+          "contacts_each": 72
+        },
+        {
+          "seed": 503,
+          "tick": 0,
+          "base": 0.34722,
+          "same": 0.52778,
+          "cross": 0.09722,
+          "contacts_each": 72
+        },
+        {
+          "seed": 503,
+          "tick": 3,
+          "base": 0.36111,
+          "same": 0.55556,
+          "cross": 0.18056,
+          "contacts_each": 72
+        },
+        {
+          "seed": 601,
+          "tick": 0,
+          "base": 0.26389,
+          "same": 0.58333,
+          "cross": 0.08333,
+          "contacts_each": 72
+        },
+        {
+          "seed": 601,
+          "tick": 3,
+          "base": 0.23611,
+          "same": 0.47222,
+          "cross": 0.16667,
+          "contacts_each": 72
+        }
+      ],
+      "means": {
+        "base": 0.3229,
+        "same": 0.5718,
+        "cross": 0.147
+      },
+      "seconds": 5.301
+    },
+    {
+      "id": "N115",
+      "status": "PASS",
+      "full_simulations": 6,
+      "results": [
+        {
+          "seed": 101,
+          "mode": "pair_max",
+          "impressions": 1017,
+          "formed": 71,
+          "dissolved": 51,
+          "active": 20,
+          "same_exposure": 0.3746312684365782,
+          "same_formed": 0.38028169014084506,
+          "gini": 0.1663593903638152
+        },
+        {
+          "seed": 101,
+          "mode": "pair_norm_same",
+          "impressions": 986,
+          "formed": 69,
+          "dissolved": 52,
+          "active": 17,
+          "same_exposure": 0.5801217038539553,
+          "same_formed": 0.6086956521739131,
+          "gini": 0.19164131169709275
+        },
+        {
+          "seed": 101,
+          "mode": "pair_norm_cross",
+          "impressions": 1022,
+          "formed": 67,
+          "dissolved": 53,
+          "active": 14,
+          "same_exposure": 0.16634050880626222,
+          "same_formed": 0.11940298507462686,
+          "gini": 0.18358610567514688
+        },
+        {
+          "seed": 211,
+          "mode": "pair_max",
+          "impressions": 877,
+          "formed": 75,
+          "dissolved": 47,
+          "active": 28,
+          "same_exposure": 0.322690992018244,
+          "same_formed": 0.49333333333333335,
+          "gini": 0.25748289623717224
+        },
+        {
+          "seed": 211,
+          "mode": "pair_norm_same",
+          "impressions": 873,
+          "formed": 75,
+          "dissolved": 47,
+          "active": 28,
+          "same_exposure": 0.5738831615120275,
+          "same_formed": 0.6266666666666667,
+          "gini": 0.25010341097110866
+        },
+        {
+          "seed": 211,
+          "mode": "pair_norm_cross",
+          "impressions": 897,
+          "formed": 72,
+          "dissolved": 45,
+          "active": 27,
+          "same_exposure": 0.1605351170568562,
+          "same_formed": 0.18055555555555555,
+          "gini": 0.2565263842437755
+        }
+      ],
+      "seconds": 9.649
+    },
+    {
+      "id": "N116",
+      "status": "PASS",
+      "riskset_checks": 12,
+      "null_policy_changed": 0,
+      "norm_policies_changed": 8,
+      "results": [
+        {
+          "seed": 101,
+          "tick": 0,
+          "mode": "pair_max",
+          "symmetric_difference": 0
+        },
+        {
+          "seed": 101,
+          "tick": 0,
+          "mode": "pair_norm_same",
+          "symmetric_difference": 86
+        },
+        {
+          "seed": 101,
+          "tick": 0,
+          "mode": "pair_norm_cross",
+          "symmetric_difference": 68
+        },
+        {
+          "seed": 101,
+          "tick": 3,
+          "mode": "pair_max",
+          "symmetric_difference": 0
+        },
+        {
+          "seed": 101,
+          "tick": 3,
+          "mode": "pair_norm_same",
+          "symmetric_difference": 70
+        },
+        {
+          "seed": 101,
+          "tick": 3,
+          "mode": "pair_norm_cross",
+          "symmetric_difference": 76
+        },
+        {
+          "seed": 211,
+          "tick": 0,
+          "mode": "pair_max",
+          "symmetric_difference": 0
+        },
+        {
+          "seed": 211,
+          "tick": 0,
+          "mode": "pair_norm_same",
+          "symmetric_difference": 82
+        },
+        {
+          "seed": 211,
+          "tick": 0,
+          "mode": "pair_norm_cross",
+          "symmetric_difference": 66
+        },
+        {
+          "seed": 211,
+          "tick": 3,
+          "mode": "pair_max",
+          "symmetric_difference": 0
+        },
+        {
+          "seed": 211,
+          "tick": 3,
+          "mode": "pair_norm_same",
+          "symmetric_difference": 48
+        },
+        {
+          "seed": 211,
+          "tick": 3,
+          "mode": "pair_norm_cross",
+          "symmetric_difference": 58
+        }
+      ],
+      "seconds": 3.453
+    }
+  ],
+  "limits": "Tests are within same artificial algorithm. Fictitious norm assignments and hazard are stipulated. Actor eligibility and matching impose outcomes; six full runs only two seeds. Equal fixed risk-set counts do not imply equal longitudinal opportunities or causal treatment effect."
+}
