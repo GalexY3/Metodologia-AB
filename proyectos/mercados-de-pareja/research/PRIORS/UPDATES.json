@@ -4,7 +4,7 @@
   "date": "2026-10-28",
   "mode": "append-only logical, versioned by Git commits",
   "reconstructed_from_documents": "Retrospective backfill, not preregistration. Old before values NOT_RECORDED unless documented explicitly.",
-  "source_coverage": "97 SOURCES 30 PRIORS 146 UPDATES; complete 5/5 N88–N92 technical synthetic cycles, 14 authorized held.",
+  "source_coverage": "99 SOURCES 30 PRIORS 148 UPDATES; post-N92 documentary R5 gate only, 0 new AB cycles, 14 still reserved.",
   "events": [
     {
       "id": "U001",
@@ -3667,7 +3667,54 @@
       "prior_probability_after": null,
       "AB_cycle_increment": 0,
       "prereg_status": "PRE_FROZEN_CODE_AT_0d3260968405fd3ea070d0877f29ea04471140b3"
+    },
+    {
+      "id": "U147",
+      "prior_id": "P-PLATFORM-RANKING",
+      "source_ids": [
+        "SRC098"
+      ],
+      "cycle_ids": [],
+      "before": "EXTERNAL_FIELD_EVIDENCE",
+      "after": "EXTERNAL_FIELD_EVIDENCE",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "recorded_at": "2026-10-29",
+      "entry_status": "ACTIVE",
+      "evidence_type": "NEW_PRIMARY_PUBLISHED_FIELD_RANDOMIZED_PRIOR_ART_DOCUMENTARY_ONLY_NO_SOURCE_ROWS",
+      "what_the_sources_contribute": "Original publisher reports randomized network-isolated four-arm South Korean dating-platform experiment with n=6327 and randomized order of profiles; observed real choice, view, invite and chat logs and aggregate match outcome. Scientific prior art pertinent to N91/N92 order and opportunity, but not a rerun or accessible dataset.",
+      "why_this_updates_or_checks_prior": "Independent external published field evidence strengthens prior-art gate; P-PLATFORM-RANKING already has published field evidence and there is no new ESBM empirical model test. Thus qualitative prior status does not change; R5 remains STOP.",
+      "limits": "No legally reusable original participant rows verified; paper source not independent replication of ESBM; matches not verifiable from source files; no author contact or private terms accepted.",
+      "falsifier_or_followup": "New authorized primary archive with exact exposed candidates, original profile order, both side decisions, secure data rights and untouched independent holdout.",
+      "numerical_bayesian_update": false,
+      "prior_probability_before": null,
+      "prior_probability_after": null,
+      "AB_cycle_increment": 0,
+      "prereg_status": "DOCUMENTARY_NOT_AB_PREREG"
+    },
+    {
+      "id": "U148",
+      "prior_id": "P-OPPORTUNITY",
+      "source_ids": [
+        "SRC098",
+        "SRC099"
+      ],
+      "cycle_ids": [],
+      "before": "RECORDED_RECOMMENDATION_RISK_SET_WITHOUT_VERIFIED_ATTENTION",
+      "after": "RECORDED_RECOMMENDATION_RISK_SET_WITHOUT_VERIFIED_ATTENTION",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "recorded_at": "2026-10-29",
+      "entry_status": "ACTIVE",
+      "evidence_type": "ORIGINAL_PRIMARY_FIELD_PAPER_AND_CONJOINT_REPOSITORY_METADATA_NEGATIVE_R5_GATE_NONCYCLE",
+      "what_the_sources_contribute": "Jung et al. report randomized presentation and bilateral matching in a real platform, yet only the article is verifiable, not source rows/licence. Sleiman et al. and public IRW table document real human unilateral forced choices among fictitious displayed profiles, not human-to-human reciprocal acceptance; no eligible external ESBM sample added.",
+      "why_this_updates_or_checks_prior": "An open licensed profile-choice table is not a dyadic reciprocal matching cohort. This rules out a false-positive R5 unlock despite accessible unilateral preferences. Existing P-OPPORTUNITY status remains appropriate.",
+      "limits": "Raw Harvard Dataverse record not independently readable; IRW table license claim is metadata only; data uninspected; no actual dyad acceptance/relationship timing.",
+      "falsifier_or_followup": "Rights-verified primary sample with opportunity logged, actor and target joined, both native decisions, genuine encounter timing and independent events.",
+      "numerical_bayesian_update": false,
+      "prior_probability_before": null,
+      "prior_probability_after": null,
+      "AB_cycle_increment": 0,
+      "prereg_status": "DOCUMENTARY_NOT_AB_PREREG"
     }
   ],
-  "last_campaign": "ABR_BATCH2_N92_VISIBILITY_SNAPSHOT_CAUSAL_20261029"
+  "last_campaign": "ABR_R5_RECHECK_NOCYCLE_20261029"
 }

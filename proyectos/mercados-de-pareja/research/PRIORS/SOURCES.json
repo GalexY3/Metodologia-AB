@@ -3,7 +3,7 @@
   "project": "mercados-de-pareja",
   "date": "2026-10-28",
   "scope": "Retrospective provenance backfill from repository reports plus N56/N57 publisher audit. Original data never copied; not systematic or claim of accessing raw data for bibliography.",
-  "source_count": 97,
+  "source_count": 99,
   "sources": [
     {
       "id": "SRC001",
@@ -1926,7 +1926,42 @@
       "limits": "No source data SHA256, no actual rows and no schema proof of two native accept/reject decisions, no observed contact/duration, site/event independent holdout. DataverseNL listing is a further archive route but not used and not counted as second independent cohort. No validation of ESBM and no causal conclusion. Materials predate 2022 published research, so synchrony-attraction is strong prior art.",
       "falsifier": "Only after original explicit data package license, open raw files+SHA256, stable dyad/event/participant IDs, linked native binary outcomes and external independent cohort holdout; no N83 on mere attraction ratings or public physiology archives.",
       "AB_cycle_increment": 0
+    },
+    {
+      "id": "SRC098",
+      "title": "Jung, Lim, Lee and Kim (2021 online/2022 print), The Secret to Finding a Match: randomized choice-capacity and profile-order field experiment on a South Korean online dating platform",
+      "canonical_url": "https://doi.org/10.1287/isre.2021.1028",
+      "original_publisher_full_text": "https://pubsonline.informs.org/doi/10.1287/isre.2021.1028",
+      "institutional_publication_record": "https://researchportal.hkust.edu.hk/en/publications/the-secret-to-finding-a-match-a-field-experiment-on-choice-capaci/",
+      "verified_at": "2026-10-29",
+      "cycle_ids": [],
+      "AB_cycle_increment": 0,
+      "source_type": "ORIGINAL_PUBLISHED_RANDOMIZED_HUMAN_PLATFORM_FIELD_EXPERIMENT_WITH_CHOICES_EXPOSURES_MATCH_OUTCOMES_PAPER_ONLY_NO_REUSABLE_ROWS",
+      "contribution": "Publisher original section 4 and sample design describe 6,327 real South Korean platform users aged 24–34, randomized to four network-isolated choice-capacity treatment groups during three January 2019 days. Within groups order of paired candidate profiles was randomized to decouple position and assortment, with behavioral logs for selection/profile views/invitations/chats and match outcomes. Paper reports cross-side effects and different matching outcomes between treatment groups, providing independent real-world PRIOR ART that treats exposure order, choice capacity, network interference and mutual matching as distinct experimental concerns. These are the AUTHORS' published results, not replicated here.",
+      "access_status": "PUBLISHER_ORIGINAL_METHODS_READ_NO_LINKED_PUBLIC_MICRODATA_OR_DATA_SPECIFIC_LICENSE_VERIFIED",
+      "rights": "Publisher article text read as scientific publication. The online appendix mentioned by the publisher is not evidence of public original logs or reuse rights. Original participant-level files, data-specific license, consent scope, platform approval for reuse, and repository DOI are NOT VERIFIED. No data downloaded, account terms accepted or authors contacted.",
+      "limits": "Source is independent of Columbia/Mixmosa/McMaster as a published study, but NO source bytes, person/dyad ids, native original yes/no for both sides, observed exact profile-order logs or untouched ESBM holdout were inspected. Platform match semantics presented in authors' methods cannot be treated as verified microdata schema; no public legally usable replication package established. Strong prior art reduces scope for novelty of any generic order/control mechanism.",
+      "falsifier": "Only if a NEW legally authorized public release is independently verified for exact records of randomized shown pairs, actor/candidate IDs, two actual response decisions, timestamp, unit of network interference, data license and SHA256, prospectively preregister model/baselines and independent out-of-cohort test. No contact with authors without explicit approval.",
+      "independent_external_validation_executed": false
+    },
+    {
+      "id": "SRC099",
+      "title": "Sleiman, Melios and Dolan (2025), Sleeping with the Enemy: original dating-profile conjoint and open Item Response Warehouse transformed table",
+      "canonical_url": "https://doi.org/10.1017/psrm.2025.10011",
+      "original_publisher_article": "https://www.cambridge.org/core/journals/political-science-research-and-methods/article/sleeping-with-the-enemy-partisanship-and-tolerance-in-online-dating/628B2BD08EA384301E87E577305F4865",
+      "original_replication_record_claim": "https://doi.org/10.7910/DVN/G1H0UA",
+      "independent_public_metadata": "https://itemresponsewarehouse.org/tables/sleiman_2025_online_dating/",
+      "verified_at": "2026-10-29",
+      "cycle_ids": [],
+      "AB_cycle_increment": 0,
+      "source_type": "ORIGINAL_HUMAN_FORCED_CHOICE_CONJOINT_WITH_PUBLIC_METADATA_AND_REPRODUCED_TABLE_NOT_OBSERVED_BILATERAL_DATING",
+      "contribution": "Original peer-reviewed article confirms a 2023 UK online-dating profile conjoint with roughly 3,000 respondents; Item Response Warehouse metadata documents 2,993 respondents, 95,776 profile-by-task records, up to sixteen two-profile forced-choice tasks, and eight experimentally presented attributes. This documents a potential OPEN unilateral preference/opportunity-choice benchmark, but is emphatically NOT an observed meeting between two consenting humans and cannot identify bilateral match or relationship outcomes.",
+      "access_status": "PUBLISHER_ORIGINAL_PAPER_READ_IRW_METADATA_READ_NO_PARTICIPANT_ROWS_DOWNLOADED_NATIVE_HARVARD_DATAVERSE_UNVERIFIED",
+      "rights": "Cambridge journal article is CC BY 4.0. Item Response Warehouse metadata declares its own transformed table CC0 1.0, but this does NOT independently verify Harvard Dataverse original per-file license or grant rights to other materials. No registration, license acceptance or personal dataset download occurred.",
+      "limits": "Candidates are hypothetical profiles, respondent forced to choose one; no second agent evaluates or reciprocates, no opt-out, no real-world match/union or duration, profile order not a trustworthy timestamp of human contact. Accordingly zero eligible bilateral outcome records for R5. The canonical Harvard Dataverse DOI could not be accessed by current web reader and was not retried. IRW is a transformed distribution of the SAME study, not a second independent cohort.",
+      "falsifier": "A genuinely dyadic independent cohort with both native choices and observed opportunity/sequence would be required; even original conjoint files cannot supply nonexistent reciprocal decisions.",
+      "independent_external_validation_executed": false
     }
   ],
-  "last_added_campaign": "ABR_AUTH20_EXTERNAL_GATE_20261029_NONCYCLE"
+  "last_added_campaign": "ABR_R5_RECHECK_NOCYCLE_20261029_TWO_PRIMARY_DOCUMENTARY_FINDS_NO_HUMAN_ROWS"
 }
