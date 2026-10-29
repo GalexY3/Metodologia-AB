@@ -4,7 +4,7 @@
   "date": "2026-10-28",
   "mode": "append-only logical, versioned by Git commits",
   "reconstructed_from_documents": "Retrospective backfill, not preregistration. Old before values NOT_RECORDED unless documented explicitly.",
-  "source_coverage": "82 source records, 30 priors, 110 updates; SRC081 Mixmosa independent in-person date cohort bilateral yes/no but rights and duration unverified, SRC082 Columbia derivative existing cohort",
+  "source_coverage": "84 sources, 30 priors, 112 updates; SRC083 Graz licensed level1 and SRC084 UKDS safeguarded require user login",
   "events": [
     {
       "id": "U001",
@@ -2830,7 +2830,55 @@
       "prior_probability_before": null,
       "prior_probability_after": null,
       "prereg_status": "NO_N83_PREREG_STOP_R5"
+    },
+    {
+      "id": "U111",
+      "prior_id": "P-DYADIC_ACCESS",
+      "source_ids": [
+        "SRC083",
+        "SRC084"
+      ],
+      "cycle_ids": [],
+      "before": "PARTIAL_ROUND_ACTION_ACCESS_NO_EXPLICIT_REJECTION_OR_UNION",
+      "after": "PARTIAL_ROUND_ACTION_ACCESS_NO_EXPLICIT_REJECTION_OR_UNION",
+      "direction": "NO_CHANGE_WITH_MATERIAL_ACCESS_GATE",
+      "what_the_sources_contribute": "Found independent original Graz and Joel 2005/07 speed dating data with explicit institution-backed scientific research licences, not anonymous public mirrors; both require user authentication and license acceptance; original CSV bytes not obtained.",
+      "why_this_updates_or_checks_prior": "Institutionally licensed original independent datasets are discoverable, but user must personally accept license and login; no scientific test executed.",
+      "limits": "No data bytes, no SHA256; MD5 repository metadata not locally verified; no authenticated access, no documented bilateral yes/no fields in Graz, no relationship duration.",
+      "falsifier_or_followup": "User may authorize and complete Scientific Use License level1 Graz or UKDS safeguarded login in own account; then verify legal access, bytes and schema, design discriminant test prereg A–J and SHA before outcomes.",
+      "evidence_type": "LICENSED_ORIGINAL_HUMAN_DYADIC_DATA_AUTHENTICATION_GATE_NONCYCLE",
+      "recorded_at": "2026-10-29",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null,
+      "prereg_status": "NO_N83_PREREG_STOP_R5"
+    },
+    {
+      "id": "U112",
+      "prior_id": "P-NOVELTY",
+      "source_ids": [
+        "SRC083",
+        "SRC084"
+      ],
+      "cycle_ids": [],
+      "before": "STRONG_PRIOR_ART",
+      "after": "STRONG_PRIOR_ART",
+      "direction": "NO_CHANGE_WITH_MATERIAL_ACCESS_GATE",
+      "what_the_sources_contribute": "Graz ability-perception prediction and Joel random forest actor/partner vs relationship-specific desire already published, constrain novelty and baseline selection.",
+      "why_this_updates_or_checks_prior": "Institutionally licensed original independent datasets are discoverable, but user must personally accept license and login; no scientific test executed.",
+      "limits": "No data bytes, no SHA256; MD5 repository metadata not locally verified; no authenticated access, no documented bilateral yes/no fields in Graz, no relationship duration.",
+      "falsifier_or_followup": "User may authorize and complete Scientific Use License level1 Graz or UKDS safeguarded login in own account; then verify legal access, bytes and schema, design discriminant test prereg A–J and SHA before outcomes.",
+      "evidence_type": "LICENSED_ORIGINAL_HUMAN_DYADIC_DATA_AUTHENTICATION_GATE_NONCYCLE",
+      "recorded_at": "2026-10-29",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null,
+      "prereg_status": "NO_N83_PREREG_STOP_R5"
     }
   ],
-  "last_campaign": "ABR_MIXMOSA_BILATERAL_ORIGINAL_SOURCE_RIGHTS_GATE_NONCYCLE_20261029"
+  "last_campaign": "ABR_LICENSED_DYADIC_GRAZ_UKDS_GATE_NONCYCLE_20261029"
 }
