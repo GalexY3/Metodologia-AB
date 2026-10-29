@@ -1,0 +1,280 @@
+{
+  "schema": "AB_ATLAS_O7_ABH_SCHEDULE14.graph.v1",
+  "date": "2026-10-29",
+  "project": "Mercados de pareja",
+  "branch": "research/ab-h-esbm-schedule-interference-20261029",
+  "root": "ABH-OPPORTUNITIES",
+  "nodes": [
+    {
+      "id": "ABH-OPPORTUNITIES",
+      "type": "research_product",
+      "status": "answered",
+      "mode": "AB-H",
+      "label": "Correlated 2x2 opportunity institution toy",
+      "source": "proyectos/mercados-de-pareja/research/ABH_SCHEDULE14_20261029/REPORT.md"
+    },
+    {
+      "id": "N93",
+      "type": "AB_cycle",
+      "mode": "AB-H",
+      "status": "validated_internal_only",
+      "grade": "0/3",
+      "label": "QA policy masses",
+      "source": "proyectos/mercados-de-pareja/research/ABH_SCHEDULE14_20261029/LEDGER_AJ.json"
+    },
+    {
+      "id": "N94",
+      "type": "AB_cycle",
+      "mode": "AB-H",
+      "status": "validated_internal_only",
+      "grade": "0/3",
+      "label": "Independent vs rotation",
+      "source": "proyectos/mercados-de-pareja/research/ABH_SCHEDULE14_20261029/LEDGER_AJ.json"
+    },
+    {
+      "id": "N95",
+      "type": "AB_cycle",
+      "mode": "AB-H",
+      "status": "validated_internal_only",
+      "grade": "0/3",
+      "label": "Fixed-two control",
+      "source": "proyectos/mercados-de-pareja/research/ABH_SCHEDULE14_20261029/LEDGER_AJ.json"
+    },
+    {
+      "id": "N96",
+      "type": "AB_cycle",
+      "mode": "AB-H",
+      "status": "validated_internal_only",
+      "grade": "0/3",
+      "label": "Pure adjacency",
+      "source": "proyectos/mercados-de-pareja/research/ABH_SCHEDULE14_20261029/LEDGER_AJ.json"
+    },
+    {
+      "id": "N97",
+      "type": "AB_cycle",
+      "mode": "AB-H",
+      "status": "validated_internal_only",
+      "grade": "0/3",
+      "label": "p-sensitivity",
+      "source": "proyectos/mercados-de-pareja/research/ABH_SCHEDULE14_20261029/LEDGER_AJ.json"
+    },
+    {
+      "id": "N98",
+      "type": "AB_cycle",
+      "mode": "AB-H",
+      "status": "validated_internal_only",
+      "grade": "0/3",
+      "label": "Actor budget variance",
+      "source": "proyectos/mercados-de-pareja/research/ABH_SCHEDULE14_20261029/LEDGER_AJ.json"
+    },
+    {
+      "id": "N99",
+      "type": "AB_cycle",
+      "mode": "AB-H",
+      "status": "validated_internal_only",
+      "grade": "0/3",
+      "label": "Outcome distribution",
+      "source": "proyectos/mercados-de-pareja/research/ABH_SCHEDULE14_20261029/LEDGER_AJ.json"
+    },
+    {
+      "id": "N100",
+      "type": "AB_cycle",
+      "mode": "AB-H",
+      "status": "validated_internal_only",
+      "grade": "0/3",
+      "label": "Equal mean different mechanism",
+      "source": "proyectos/mercados-de-pareja/research/ABH_SCHEDULE14_20261029/LEDGER_AJ.json"
+    },
+    {
+      "id": "N101",
+      "type": "AB_cycle",
+      "mode": "AB-H",
+      "status": "validated_internal_only",
+      "grade": "0/3",
+      "label": "Tie-breaking",
+      "source": "proyectos/mercados-de-pareja/research/ABH_SCHEDULE14_20261029/LEDGER_AJ.json"
+    },
+    {
+      "id": "N102",
+      "type": "AB_cycle",
+      "mode": "AB-H",
+      "status": "validated_internal_only",
+      "grade": "0/3",
+      "label": "Uniform tie",
+      "source": "proyectos/mercados-de-pareja/research/ABH_SCHEDULE14_20261029/LEDGER_AJ.json"
+    },
+    {
+      "id": "N103",
+      "type": "AB_cycle",
+      "mode": "AB-H",
+      "status": "validated_internal_only",
+      "grade": "0/3",
+      "label": "Native votes",
+      "source": "proyectos/mercados-de-pareja/research/ABH_SCHEDULE14_20261029/LEDGER_AJ.json"
+    },
+    {
+      "id": "N104",
+      "type": "AB_cycle",
+      "mode": "AB-H",
+      "status": "validated_internal_only",
+      "grade": "0/3",
+      "label": "Joint covariance",
+      "source": "proyectos/mercados-de-pareja/research/ABH_SCHEDULE14_20261029/LEDGER_AJ.json"
+    },
+    {
+      "id": "N105",
+      "type": "AB_cycle",
+      "mode": "AB-H",
+      "status": "validated_internal_only",
+      "grade": "0/3",
+      "label": "KL observation",
+      "source": "proyectos/mercados-de-pareja/research/ABH_SCHEDULE14_20261029/LEDGER_AJ.json"
+    },
+    {
+      "id": "N106",
+      "type": "AB_cycle",
+      "mode": "AB-H",
+      "status": "validated_internal_only",
+      "grade": "0/3",
+      "label": "Monte Carlo QA",
+      "source": "proyectos/mercados-de-pareja/research/ABH_SCHEDULE14_20261029/LEDGER_AJ.json"
+    },
+    {
+      "id": "GATE-R5-HUMAN",
+      "type": "gate",
+      "mode": "AB-R",
+      "status": "blocked",
+      "label": "Human independent discrimination: STOP_R5",
+      "source": "proyectos/mercados-de-pareja/CURRENT.md"
+    },
+    {
+      "id": "PYTHON-ESBM-INTEGRATION",
+      "type": "future_task",
+      "mode": "AB-P",
+      "status": "proposed",
+      "label": "Port schedule-correlations to original ESBM Python with baseline controls",
+      "source": "proyectos/mercados-de-pareja/research/ABH_SCHEDULE14_20261029/THEORY_AND_FALSIFIERS.md"
+    }
+  ],
+  "edges": [
+    {
+      "from": "ABH-OPPORTUNITIES",
+      "to": "N93",
+      "type": "tests"
+    },
+    {
+      "from": "N93",
+      "to": "N94",
+      "type": "leads_to",
+      "reason": "Output and confound from preceding cycle specify next contrast"
+    },
+    {
+      "from": "N94",
+      "to": "N95",
+      "type": "leads_to",
+      "reason": "Output and confound from preceding cycle specify next contrast"
+    },
+    {
+      "from": "N95",
+      "to": "N96",
+      "type": "leads_to",
+      "reason": "Output and confound from preceding cycle specify next contrast"
+    },
+    {
+      "from": "N96",
+      "to": "N97",
+      "type": "leads_to",
+      "reason": "Output and confound from preceding cycle specify next contrast"
+    },
+    {
+      "from": "N97",
+      "to": "N98",
+      "type": "leads_to",
+      "reason": "Output and confound from preceding cycle specify next contrast"
+    },
+    {
+      "from": "N98",
+      "to": "N99",
+      "type": "leads_to",
+      "reason": "Output and confound from preceding cycle specify next contrast"
+    },
+    {
+      "from": "N99",
+      "to": "N100",
+      "type": "leads_to",
+      "reason": "Output and confound from preceding cycle specify next contrast"
+    },
+    {
+      "from": "N100",
+      "to": "N101",
+      "type": "leads_to",
+      "reason": "Output and confound from preceding cycle specify next contrast"
+    },
+    {
+      "from": "N101",
+      "to": "N102",
+      "type": "leads_to",
+      "reason": "Output and confound from preceding cycle specify next contrast"
+    },
+    {
+      "from": "N102",
+      "to": "N103",
+      "type": "leads_to",
+      "reason": "Output and confound from preceding cycle specify next contrast"
+    },
+    {
+      "from": "N103",
+      "to": "N104",
+      "type": "leads_to",
+      "reason": "Output and confound from preceding cycle specify next contrast"
+    },
+    {
+      "from": "N104",
+      "to": "N105",
+      "type": "leads_to",
+      "reason": "Output and confound from preceding cycle specify next contrast"
+    },
+    {
+      "from": "N105",
+      "to": "N106",
+      "type": "leads_to",
+      "reason": "Output and confound from preceding cycle specify next contrast"
+    },
+    {
+      "from": "ABH-OPPORTUNITIES",
+      "to": "GATE-R5-HUMAN",
+      "type": "related_to"
+    },
+    {
+      "from": "GATE-R5-HUMAN",
+      "to": "PYTHON-ESBM-INTEGRATION",
+      "type": "does_not_block",
+      "scope": "Only blocks claims about humans, not technical development"
+    },
+    {
+      "from": "N106",
+      "to": "PYTHON-ESBM-INTEGRATION",
+      "type": "proposes"
+    }
+  ],
+  "provenance": {
+    "prereg": "d9ccdef6a0905c0ed69ca1afe67c6ead50d31463",
+    "freeze": "b7684b36d518445013a4b57c6f88187a0e5c01e1",
+    "outcomes": "921392ae88641af4f315f481384d61994944f7f2"
+  },
+  "receipt": {
+    "run_id": "ABH_SCHEDULE14_20261029",
+    "mode": "AB-H",
+    "tech_valid": 14,
+    "invalid": 0,
+    "planning": 0,
+    "AB_R_valid_added": 0,
+    "complaints": [],
+    "warnings": [
+      "No external replication",
+      "Shared exact toy",
+      "Demo browser not verified",
+      "Clean clone not tested"
+    ]
+  }
+}

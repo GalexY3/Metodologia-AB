@@ -1,0 +1,383 @@
+{
+  "schema": "ABH.EXACT_CORRELATED_SCHEDULE.OUTCOMES.v1",
+  "date": "2026-10-29",
+  "prereg_commit": "d9ccdef6a0905c0ed69ca1afe67c6ead50d31463",
+  "source_freeze_commit": "b7684b36d518445013a4b57c6f88187a0e5c01e1",
+  "environment": "JavaScript V8 isolate; deterministic enumeration; PRNG xorshift32 for 30,000-event sanity check",
+  "external_human_validation": false,
+  "cycles": [
+    {
+      "cycle": "N93",
+      "status": "PASS",
+      "statistics": {
+        "independent": {
+          "mass": 1,
+          "edge_exposure": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "total_exposures": 2,
+          "variance_total": 1,
+          "actor0_exposure_mean": 1,
+          "actor0_exposure_variance": 0.5,
+          "actor0_no_exposure_probability": 0.25,
+          "exposure_edge0_edge3_covariance": 0,
+          "check_outcome_mass": 1
+        },
+        "rotation": {
+          "mass": 1,
+          "edge_exposure": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "total_exposures": 2,
+          "variance_total": 0,
+          "actor0_exposure_mean": 1,
+          "actor0_exposure_variance": 0,
+          "actor0_no_exposure_probability": 0,
+          "exposure_edge0_edge3_covariance": 0.25,
+          "check_outcome_mass": 1
+        },
+        "uniformTwo": {
+          "mass": 0.9999999999999999,
+          "edge_exposure": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "total_exposures": 1.9999999999999998,
+          "variance_total": 4.440892098500626e-16,
+          "actor0_exposure_mean": 1,
+          "actor0_exposure_variance": 0.33333333333333326,
+          "actor0_no_exposure_probability": 0.16666666666666666,
+          "exposure_edge0_edge3_covariance": -0.08333333333333334,
+          "check_outcome_mass": 0.9999999999999996
+        },
+        "adjacent": {
+          "mass": 1,
+          "edge_exposure": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "total_exposures": 2,
+          "variance_total": 0,
+          "actor0_exposure_mean": 1,
+          "actor0_exposure_variance": 0.5,
+          "actor0_no_exposure_probability": 0.25,
+          "exposure_edge0_edge3_covariance": -0.25,
+          "check_outcome_mass": 1
+        },
+        "rotationMix": {
+          "mass": 1,
+          "edge_exposure": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "total_exposures": 2,
+          "variance_total": 0,
+          "actor0_exposure_mean": 1,
+          "actor0_exposure_variance": 0.033333333333333215,
+          "actor0_no_exposure_probability": 0.016666666666666663,
+          "exposure_edge0_edge3_covariance": 0.21666666666666667,
+          "check_outcome_mass": 1
+        },
+        "adjacentMix": {
+          "mass": 1,
+          "edge_exposure": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "total_exposures": 2,
+          "variance_total": 0,
+          "actor0_exposure_mean": 1,
+          "actor0_exposure_variance": 0.48333333333333317,
+          "actor0_no_exposure_probability": 0.24166666666666667,
+          "exposure_edge0_edge3_covariance": -0.23333333333333334,
+          "check_outcome_mass": 1
+        }
+      },
+      "next": "N94 independent vs coordinated rotation",
+      "AB_mode": "AB-H technical/exact synthetic",
+      "scientific_grade": "0/3",
+      "prereg_commit": "d9ccdef6a0905c0ed69ca1afe67c6ead50d31463",
+      "source_freeze_commit": "b7684b36d518445013a4b57c6f88187a0e5c01e1",
+      "AB_R_empirical_credit_increment": 0
+    },
+    {
+      "cycle": "N94",
+      "status": "PASS",
+      "independent_expected_matches": 0.8046875,
+      "rotation_expected_matches": 1,
+      "delta": 0.1953125,
+      "rot_p2": 0.25,
+      "ind_p2": 0.12109375,
+      "warning": "Independent has variable total exposures; isolate fixed-cardinality in N95",
+      "next": "N95 budget-matched 2-exposure policy",
+      "AB_mode": "AB-H technical/exact synthetic",
+      "scientific_grade": "0/3",
+      "prereg_commit": "d9ccdef6a0905c0ed69ca1afe67c6ead50d31463",
+      "source_freeze_commit": "b7684b36d518445013a4b57c6f88187a0e5c01e1",
+      "AB_R_empirical_credit_increment": 0
+    },
+    {
+      "cycle": "N95",
+      "status": "PASS",
+      "uniform2_matches": 0.8333333333333331,
+      "rotation_matches": 1,
+      "delta": 0.16666666666666685,
+      "exposure_budget": 2,
+      "next": "N96 pure adjacent-overlap contrast",
+      "AB_mode": "AB-H technical/exact synthetic",
+      "scientific_grade": "0/3",
+      "prereg_commit": "d9ccdef6a0905c0ed69ca1afe67c6ead50d31463",
+      "source_freeze_commit": "b7684b36d518445013a4b57c6f88187a0e5c01e1",
+      "AB_R_empirical_credit_increment": 0
+    },
+    {
+      "cycle": "N96",
+      "status": "PASS",
+      "adjacent_matches": 0.75,
+      "rotation_matches": 1,
+      "delta": 0.25,
+      "next": "N97 sensitivity across acceptance probabilities",
+      "AB_mode": "AB-H technical/exact synthetic",
+      "scientific_grade": "0/3",
+      "prereg_commit": "d9ccdef6a0905c0ed69ca1afe67c6ead50d31463",
+      "source_freeze_commit": "b7684b36d518445013a4b57c6f88187a0e5c01e1",
+      "AB_R_empirical_credit_increment": 0
+    },
+    {
+      "cycle": "N97",
+      "status": "PASS",
+      "cases": [
+        {
+          "p": 0.1,
+          "adjacent": 0.19,
+          "rotation": 0.20000000000000004,
+          "delta": 0.010000000000000037,
+          "formula": 0.010000000000000002
+        },
+        {
+          "p": 0.5,
+          "adjacent": 0.75,
+          "rotation": 1,
+          "delta": 0.25,
+          "formula": 0.25
+        },
+        {
+          "p": 0.9,
+          "adjacent": 0.99,
+          "rotation": 1.8000000000000003,
+          "delta": 0.8100000000000003,
+          "formula": 0.81
+        }
+      ],
+      "next": "N98 actor-exposure count variance",
+      "AB_mode": "AB-H technical/exact synthetic",
+      "scientific_grade": "0/3",
+      "prereg_commit": "d9ccdef6a0905c0ed69ca1afe67c6ead50d31463",
+      "source_freeze_commit": "b7684b36d518445013a4b57c6f88187a0e5c01e1",
+      "AB_R_empirical_credit_increment": 0
+    },
+    {
+      "cycle": "N98",
+      "status": "PASS",
+      "independent": {
+        "mass": 1,
+        "edge_exposure": [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "total_exposures": 2,
+        "variance_total": 1,
+        "actor0_exposure_mean": 1,
+        "actor0_exposure_variance": 0.5,
+        "actor0_no_exposure_probability": 0.25,
+        "exposure_edge0_edge3_covariance": 0
+      },
+      "rotation": {
+        "mass": 1,
+        "edge_exposure": [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "total_exposures": 2,
+        "variance_total": 0,
+        "actor0_exposure_mean": 1,
+        "actor0_exposure_variance": 0,
+        "actor0_no_exposure_probability": 0,
+        "exposure_edge0_edge3_covariance": 0.25
+      },
+      "next": "N99 full count distribution",
+      "AB_mode": "AB-H technical/exact synthetic",
+      "scientific_grade": "0/3",
+      "prereg_commit": "d9ccdef6a0905c0ed69ca1afe67c6ead50d31463",
+      "source_freeze_commit": "b7684b36d518445013a4b57c6f88187a0e5c01e1",
+      "AB_R_empirical_credit_increment": 0
+    },
+    {
+      "cycle": "N99",
+      "status": "PASS",
+      "p2_rotation": 0.25,
+      "p2_uniform2": 0.08333333333333333,
+      "p2_adjacent": 0,
+      "distributions": {
+        "rotation": [
+          0.25,
+          0.5,
+          0.25
+        ],
+        "uniform2": [
+          0.24999999999999997,
+          0.6666666666666665,
+          0.08333333333333333
+        ],
+        "adjacent": [
+          0.25,
+          0.75,
+          0
+        ]
+      },
+      "next": "N100 reparameterization of match rates",
+      "AB_mode": "AB-H technical/exact synthetic",
+      "scientific_grade": "0/3",
+      "prereg_commit": "d9ccdef6a0905c0ed69ca1afe67c6ead50d31463",
+      "source_freeze_commit": "b7684b36d518445013a4b57c6f88187a0e5c01e1",
+      "AB_R_empirical_credit_increment": 0
+    },
+    {
+      "cycle": "N100",
+      "status": "PASS",
+      "p_rotation": 0.4,
+      "p_adjacent": 0.5527864045000421,
+      "matched_mean_rotation": 0.8,
+      "matched_mean_adjacent": 0.8000000000000003,
+      "p2_rotation": 0.16000000000000003,
+      "p2_adjacent": 0,
+      "next": "N101 maximum-cardinality tie-breaking and composition",
+      "AB_mode": "AB-H technical/exact synthetic",
+      "scientific_grade": "0/3",
+      "prereg_commit": "d9ccdef6a0905c0ed69ca1afe67c6ead50d31463",
+      "source_freeze_commit": "b7684b36d518445013a4b57c6f88187a0e5c01e1",
+      "AB_R_empirical_credit_increment": 0
+    },
+    {
+      "cycle": "N101",
+      "status": "PASS",
+      "maxima": [
+        {
+          "mask": 9,
+          "same_group_pairs": 2,
+          "cardinality": 2
+        },
+        {
+          "mask": 6,
+          "same_group_pairs": 0,
+          "cardinality": 2
+        }
+      ],
+      "lexical_choice": 9,
+      "next": "N102 randomized tie and group composition",
+      "AB_mode": "AB-H technical/exact synthetic",
+      "scientific_grade": "0/3",
+      "prereg_commit": "d9ccdef6a0905c0ed69ca1afe67c6ead50d31463",
+      "source_freeze_commit": "b7684b36d518445013a4b57c6f88187a0e5c01e1",
+      "AB_R_empirical_credit_increment": 0
+    },
+    {
+      "cycle": "N102",
+      "status": "PASS",
+      "expected_same_uniform_tie": 1,
+      "same_lexical_tie": 2,
+      "matched_total": 2,
+      "next": "N103 native bilateral data measurement",
+      "AB_mode": "AB-H technical/exact synthetic",
+      "scientific_grade": "0/3",
+      "prereg_commit": "d9ccdef6a0905c0ed69ca1afe67c6ead50d31463",
+      "source_freeze_commit": "b7684b36d518445013a4b57c6f88187a0e5c01e1",
+      "AB_R_empirical_credit_increment": 0
+    },
+    {
+      "cycle": "N103",
+      "status": "PASS",
+      "pair_mutual_probability": 0.25,
+      "world_uniform_actor_yes": 0.5,
+      "world_asymmetric_actor_yes": 0.25,
+      "world_asymmetric_counterpart_yes": 1,
+      "next": "N104 joint distribution despite equal marginal q",
+      "AB_mode": "AB-H technical/exact synthetic",
+      "scientific_grade": "0/3",
+      "prereg_commit": "d9ccdef6a0905c0ed69ca1afe67c6ead50d31463",
+      "source_freeze_commit": "b7684b36d518445013a4b57c6f88187a0e5c01e1",
+      "AB_R_empirical_credit_increment": 0
+    },
+    {
+      "cycle": "N104",
+      "status": "PASS",
+      "q0_marginal_both": 0.25,
+      "joint_r": 0.125,
+      "joint_i": 0.0625,
+      "covariance_rotation": 0.0625,
+      "covariance_independent": 0,
+      "next": "N105 value of institution exposure logs",
+      "AB_mode": "AB-H technical/exact synthetic",
+      "scientific_grade": "0/3",
+      "prereg_commit": "d9ccdef6a0905c0ed69ca1afe67c6ead50d31463",
+      "source_freeze_commit": "b7684b36d518445013a4b57c6f88187a0e5c01e1",
+      "AB_R_empirical_credit_increment": 0
+    },
+    {
+      "cycle": "N105",
+      "status": "PASS",
+      "kl_exposure_nats": 2.9317809662017553,
+      "kl_matching_count_nats": 0.5907383602859062,
+      "information_loss": 2.341042605915849,
+      "policy_mixture": "90% structured, 10% fixed-two uniform",
+      "next": "N106 stochastic validation against exact finite target",
+      "AB_mode": "AB-H technical/exact synthetic",
+      "scientific_grade": "0/3",
+      "prereg_commit": "d9ccdef6a0905c0ed69ca1afe67c6ead50d31463",
+      "source_freeze_commit": "b7684b36d518445013a4b57c6f88187a0e5c01e1",
+      "AB_R_empirical_credit_increment": 0
+    },
+    {
+      "cycle": "N106",
+      "status": "PASS",
+      "exact_mean": 1,
+      "exact_p2": 0.25,
+      "monte_carlo": {
+        "seed": 20261029,
+        "n": 30000,
+        "counts": [
+          7511,
+          14956,
+          7533
+        ],
+        "mean": 1.0007333333333333,
+        "p2": 0.2511
+      },
+      "stochastic_reproducible": true,
+      "next": "STOP_R5 human remains; audit code portability and communicate theory as conditional mathematical argument",
+      "AB_mode": "AB-H technical/exact synthetic",
+      "scientific_grade": "0/3",
+      "prereg_commit": "d9ccdef6a0905c0ed69ca1afe67c6ead50d31463",
+      "source_freeze_commit": "b7684b36d518445013a4b57c6f88187a0e5c01e1",
+      "AB_R_empirical_credit_increment": 0
+    }
+  ]
+}

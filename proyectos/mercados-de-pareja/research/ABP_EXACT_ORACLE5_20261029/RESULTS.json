@@ -1,0 +1,102 @@
+{
+  "schema": "ABP.EXACT.ORACLE5.RESULTS.v1",
+  "date": "2026-10-29",
+  "prereg_commit": "efeef8b1ecf4e12d02069723b91bcfdb8e5aca4d",
+  "source_freeze_commit": "8b36dabc8eb594f66ae42898f030408f71090928",
+  "independent_human_replication": false,
+  "AB_R_status": "STOP_R5",
+  "AB_R_remaining_slots": 14,
+  "cycles": [
+    {
+      "id": "P01",
+      "status": "PASS",
+      "support": "Exact exhaustive 16 yes/no states; capacity invariants",
+      "mass": 1.0000000000000002,
+      "expected_mutual_edges": 0.49999999999999994,
+      "expected_formed_pairs": 0.46480000000000005,
+      "distinct_final_matching_signatures": 7,
+      "next": "P02 observational equivalence (structural exposure vs choice)",
+      "baseline": "finite constructed synthetic mathematical reference; not measured field effect",
+      "grade_0_3": 0,
+      "AB_R_credit_increment": 0,
+      "source_freeze_commit": "8b36dabc8eb594f66ae42898f030408f71090928",
+      "prereg_commit": "efeef8b1ecf4e12d02069723b91bcfdb8e5aca4d"
+    },
+    {
+      "id": "P02",
+      "status": "PASS",
+      "support": "Different stagewise structural mechanisms give indistinguishable entire match-set distribution",
+      "q_by_edges": [
+        0.2,
+        0.05,
+        0.05,
+        0.2
+      ],
+      "full_matching_distribution_TVD": 0,
+      "expected_final_pairs": 0.46480000000000005,
+      "next": "P03 audit which stage-specific logs distinguish these worlds",
+      "baseline": "finite constructed synthetic mathematical reference; not measured field effect",
+      "grade_0_3": 0,
+      "AB_R_credit_increment": 0,
+      "source_freeze_commit": "8b36dabc8eb594f66ae42898f030408f71090928",
+      "prereg_commit": "efeef8b1ecf4e12d02069723b91bcfdb8e5aca4d"
+    },
+    {
+      "id": "P03",
+      "status": "PASS",
+      "support": "Aggregate exposures and entire match distribution fail to distinguish; group-typed opportunity logs distinguish constructed worlds",
+      "world_exposure_segregated": {
+        "total_exposures": 2,
+        "same_group_exposures": 1.6,
+        "cross_group_exposures": 0.4,
+        "expected_proposals": 1,
+        "expected_mutual_edges": 0.5
+      },
+      "world_preference_segregated": {
+        "total_exposures": 2,
+        "same_group_exposures": 1,
+        "cross_group_exposures": 1,
+        "expected_proposals": 0.9486832980505138,
+        "expected_mutual_edges": 0.5
+      },
+      "next": "P04 congestion and competent matching baseline",
+      "baseline": "finite constructed synthetic mathematical reference; not measured field effect",
+      "grade_0_3": 0,
+      "AB_R_credit_increment": 0,
+      "source_freeze_commit": "8b36dabc8eb594f66ae42898f030408f71090928",
+      "prereg_commit": "efeef8b1ecf4e12d02069723b91bcfdb8e5aca4d"
+    },
+    {
+      "id": "P04",
+      "status": "PASS",
+      "support": "Capacity/congestion induces mismatch between reciprocated intentions and exclusive matching; competent maximum matching beats naive greedy on exact graph",
+      "greedy_pairs": 1,
+      "maximum_pairs": 2,
+      "all_mutual_positive_edges": 4,
+      "all_mutual_formed_pairs": 2,
+      "next": "P05 separate formation flow from survivor stock",
+      "baseline": "finite constructed synthetic mathematical reference; not measured field effect",
+      "grade_0_3": 0,
+      "AB_R_credit_increment": 0,
+      "source_freeze_commit": "8b36dabc8eb594f66ae42898f030408f71090928",
+      "prereg_commit": "efeef8b1ecf4e12d02069723b91bcfdb8e5aca4d"
+    },
+    {
+      "id": "P05",
+      "status": "PASS",
+      "support": "Fixed deterministic formation flow does not determine active stock without dissolution/survival",
+      "formed_pairs_flow": 2,
+      "expected_stocks_by_hazard": {
+        "h0": 2,
+        "h025": 1.5,
+        "h075": 0.5
+      },
+      "next": "Return to AB-R STOP_R5; do not spend N93–N106 without independent legal data and ESBM-exclusive hypothesis",
+      "baseline": "finite constructed synthetic mathematical reference; not measured field effect",
+      "grade_0_3": 0,
+      "AB_R_credit_increment": 0,
+      "source_freeze_commit": "8b36dabc8eb594f66ae42898f030408f71090928",
+      "prereg_commit": "efeef8b1ecf4e12d02069723b91bcfdb8e5aca4d"
+    }
+  ]
+}

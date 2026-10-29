@@ -1,0 +1,788 @@
+{
+  "schema": "AB-H.PREEXEC.AJ14.v1",
+  "date": "2026-10-29",
+  "authorizations": {
+    "historical_AB_R_valid": 26,
+    "remaining_N93_N106": 14,
+    "authority": "User explicitly allows reallocation to branch/pivot/technical tasks while empirical STOP_R5 remains",
+    "allocated_this_branch": 14,
+    "ab_r_empirical_cycle_increase": 0,
+    "ABP_earlier_P01_P05_not_deducted_here": true
+  },
+  "source_branch_parent": "research/ab-p-esbm-exact-oracle-20261029@e9fb4aaa76d11f740105636486a2673351a8713c",
+  "branch": "research/ab-h-esbm-schedule-interference-20261029",
+  "registration_stage": "PREOUTCOME",
+  "R5_external_status": "STOP_R5",
+  "restrictions": [
+    "No previously failed OSF/Essex/Stanford/Gist retrievals",
+    "No SSJY, no raw human data, no accepted licences",
+    "No original ESBM modification",
+    "No 1/3–3/3 or CT2 rise on synthetic results",
+    "Adaptively execute PENDING tests only if prior cycles pass; never count unexecuted as valid",
+    "Finish with each cycle next-target and evidence trail"
+  ],
+  "common_assumptions": {
+    "network": "Two actors A0,A1 and two potential counterparts B0,B1; four eligible potential edges.",
+    "policy_model": "Draw an exposure mask from a policy distribution; each exposed edge independently achieves two yes with probability p. Unexposed cannot yield a match.",
+    "matching": "maximum cardinality, deterministic canonical tie-breaking; one simultaneous partner maximum",
+    "scope": "Constructed mathematical argument, NOT a dataset or predictive test for humans"
+  },
+  "cycles": [
+    {
+      "id": "N93",
+      "slot_from_previous_authorization": true,
+      "mode": "AB-H (AB-P engineering with explicitly synthetic AB-R diagnostic)",
+      "distance_D": 1.2,
+      "workstream": "EXACT_QA",
+      "parent": "P05/AB-R N92",
+      "A": {
+        "question": "Normalización de cinco regímenes de exposición sobre 2x2",
+        "estimand": "2x2 synthetic complete bipartite instantaneous matching; no real participants or temporal relationship",
+        "unit": "one synthetic event, independent draws conditioned on event schedule"
+      },
+      "B": {
+        "hypotheses": "Institutional co-exposure can change allocation and joint choice dependencies even at equal marginal opportunity; strong nulls: independent, fixed-cardinality and adjacency-only schedules",
+        "rivals": [
+          "uniform per-edge independent exposure",
+          "perfect matching rotation",
+          "uniform fixed two edges",
+          "adjacent pairs"
+        ],
+        "H_other": "induced choice correlations / risk-set geometry / nonuniform tie breaks"
+      },
+      "C": {
+        "test": "P(schedule)=1, marginal por arista=.5 para independiente, rotación, 2-aristas uniforme, adyacente y mixture; los dos últimos presupuestos 2",
+        "budget": "finite exhaustive 16 masks/16 mutual decisions; MC only final QA 30000 events",
+        "precommitted_tolerance": "1e-10 arithmetic"
+      },
+      "D": {
+        "instrument": "standalone JS exact finite engine; no human files; self-contained source frozen at GitHub commit before execution",
+        "source_status": "NOT_YET_COMMITTED"
+      },
+      "E": {
+        "execution": "PENDING",
+        "repetitions": "finite enumerations; 30000 only N106"
+      },
+      "F": {
+        "adversaries": "algebra, independent-vs-fixed2 contrast, no naive comparison; capacity baseline max matching"
+      },
+      "G": {
+        "confirmation": "intra-generative validation only; no independent human external test"
+      },
+      "H": {
+        "prior": "P-OPPORTUNITY and P-NOVELTY remain unchanged unless new external documentary evidence; synthetic mathematical results stored as claims not human prior updates"
+      },
+      "I": {
+        "grade_0_3": "0 unless independently verified original theoretical contribution is established; current baseline 0",
+        "CT2_from_7": true,
+        "maturity_from_41_2": true
+      },
+      "J": {
+        "conditional_next": "Si falla masa/marginal STOP_REPAIR; si pasa N94",
+        "R5_external": "STOP; synthetic branching authorized separately from external claims"
+      }
+    },
+    {
+      "id": "N94",
+      "slot_from_previous_authorization": true,
+      "mode": "AB-H (AB-P engineering with explicitly synthetic AB-R diagnostic)",
+      "distance_D": 0,
+      "workstream": "ABR_SYNTHETIC",
+      "parent": "N93",
+      "A": {
+        "question": "Regímenes independientes vs rotación con misma exposición marginal y probabilidad de sí/sí",
+        "estimand": "2x2 synthetic complete bipartite instantaneous matching; no real participants or temporal relationship",
+        "unit": "one synthetic event, independent draws conditioned on event schedule"
+      },
+      "B": {
+        "hypotheses": "Institutional co-exposure can change allocation and joint choice dependencies even at equal marginal opportunity; strong nulls: independent, fixed-cardinality and adjacency-only schedules",
+        "rivals": [
+          "uniform per-edge independent exposure",
+          "perfect matching rotation",
+          "uniform fixed two edges",
+          "adjacent pairs"
+        ],
+        "H_other": "induced choice correlations / risk-set geometry / nonuniform tie breaks"
+      },
+      "C": {
+        "test": "p=.5; E[matching] rotación > independiente y total exposición esperado=2; separar varianza de presupuesto",
+        "budget": "finite exhaustive 16 masks/16 mutual decisions; MC only final QA 30000 events",
+        "precommitted_tolerance": "1e-10 arithmetic"
+      },
+      "D": {
+        "instrument": "standalone JS exact finite engine; no human files; self-contained source frozen at GitHub commit before execution",
+        "source_status": "NOT_YET_COMMITTED"
+      },
+      "E": {
+        "execution": "PENDING",
+        "repetitions": "finite enumerations; 30000 only N106"
+      },
+      "F": {
+        "adversaries": "algebra, independent-vs-fixed2 contrast, no naive comparison; capacity baseline max matching"
+      },
+      "G": {
+        "confirmation": "intra-generative validation only; no independent human external test"
+      },
+      "H": {
+        "prior": "P-OPPORTUNITY and P-NOVELTY remain unchanged unless new external documentary evidence; synthetic mathematical results stored as claims not human prior updates"
+      },
+      "I": {
+        "grade_0_3": "0 unless independently verified original theoretical contribution is established; current baseline 0",
+        "CT2_from_7": true,
+        "maturity_from_41_2": true
+      },
+      "J": {
+        "conditional_next": "Si delta 0 revisar; si pasa N95",
+        "R5_external": "STOP; synthetic branching authorized separately from external claims"
+      }
+    },
+    {
+      "id": "N95",
+      "slot_from_previous_authorization": true,
+      "mode": "AB-H (AB-P engineering with explicitly synthetic AB-R diagnostic)",
+      "distance_D": 0,
+      "workstream": "FOCUS",
+      "parent": "N94",
+      "A": {
+        "question": "Control del mismo presupuesto exacto y aristas marginales: uniforme-dos vs rotación",
+        "estimand": "2x2 synthetic complete bipartite instantaneous matching; no real participants or temporal relationship",
+        "unit": "one synthetic event, independent draws conditioned on event schedule"
+      },
+      "B": {
+        "hypotheses": "Institutional co-exposure can change allocation and joint choice dependencies even at equal marginal opportunity; strong nulls: independent, fixed-cardinality and adjacency-only schedules",
+        "rivals": [
+          "uniform per-edge independent exposure",
+          "perfect matching rotation",
+          "uniform fixed two edges",
+          "adjacent pairs"
+        ],
+        "H_other": "induced choice correlations / risk-set geometry / nonuniform tie breaks"
+      },
+      "C": {
+        "test": "Dos aristas por evento y e=.5 en ambas, comparar E[matching] a p=.5; rotación mayor",
+        "budget": "finite exhaustive 16 masks/16 mutual decisions; MC only final QA 30000 events",
+        "precommitted_tolerance": "1e-10 arithmetic"
+      },
+      "D": {
+        "instrument": "standalone JS exact finite engine; no human files; self-contained source frozen at GitHub commit before execution",
+        "source_status": "NOT_YET_COMMITTED"
+      },
+      "E": {
+        "execution": "PENDING",
+        "repetitions": "finite enumerations; 30000 only N106"
+      },
+      "F": {
+        "adversaries": "algebra, independent-vs-fixed2 contrast, no naive comparison; capacity baseline max matching"
+      },
+      "G": {
+        "confirmation": "intra-generative validation only; no independent human external test"
+      },
+      "H": {
+        "prior": "P-OPPORTUNITY and P-NOVELTY remain unchanged unless new external documentary evidence; synthetic mathematical results stored as claims not human prior updates"
+      },
+      "I": {
+        "grade_0_3": "0 unless independently verified original theoretical contribution is established; current baseline 0",
+        "CT2_from_7": true,
+        "maturity_from_41_2": true
+      },
+      "J": {
+        "conditional_next": "Si no difieren, STOP; si difieren N96",
+        "R5_external": "STOP; synthetic branching authorized separately from external claims"
+      }
+    },
+    {
+      "id": "N96",
+      "slot_from_previous_authorization": true,
+      "mode": "AB-H (AB-P engineering with explicitly synthetic AB-R diagnostic)",
+      "distance_D": 0,
+      "workstream": "FOCUS",
+      "parent": "N95",
+      "A": {
+        "question": "Congestión pura: pares adyacentes vs disjuntos, mismos tamaños y marginales",
+        "estimand": "2x2 synthetic complete bipartite instantaneous matching; no real participants or temporal relationship",
+        "unit": "one synthetic event, independent draws conditioned on event schedule"
+      },
+      "B": {
+        "hypotheses": "Institutional co-exposure can change allocation and joint choice dependencies even at equal marginal opportunity; strong nulls: independent, fixed-cardinality and adjacency-only schedules",
+        "rivals": [
+          "uniform per-edge independent exposure",
+          "perfect matching rotation",
+          "uniform fixed two edges",
+          "adjacent pairs"
+        ],
+        "H_other": "induced choice correlations / risk-set geometry / nonuniform tie breaks"
+      },
+      "C": {
+        "test": "Rotación 2 oportunidades no solapadas vs adyacente 2 que comparten agente; p=.5, deltamatch=.25",
+        "budget": "finite exhaustive 16 masks/16 mutual decisions; MC only final QA 30000 events",
+        "precommitted_tolerance": "1e-10 arithmetic"
+      },
+      "D": {
+        "instrument": "standalone JS exact finite engine; no human files; self-contained source frozen at GitHub commit before execution",
+        "source_status": "NOT_YET_COMMITTED"
+      },
+      "E": {
+        "execution": "PENDING",
+        "repetitions": "finite enumerations; 30000 only N106"
+      },
+      "F": {
+        "adversaries": "algebra, independent-vs-fixed2 contrast, no naive comparison; capacity baseline max matching"
+      },
+      "G": {
+        "confirmation": "intra-generative validation only; no independent human external test"
+      },
+      "H": {
+        "prior": "P-OPPORTUNITY and P-NOVELTY remain unchanged unless new external documentary evidence; synthetic mathematical results stored as claims not human prior updates"
+      },
+      "I": {
+        "grade_0_3": "0 unless independently verified original theoretical contribution is established; current baseline 0",
+        "CT2_from_7": true,
+        "maturity_from_41_2": true
+      },
+      "J": {
+        "conditional_next": "Si no se verifica, reparar; si sí N97",
+        "R5_external": "STOP; synthetic branching authorized separately from external claims"
+      }
+    },
+    {
+      "id": "N97",
+      "slot_from_previous_authorization": true,
+      "mode": "AB-H (AB-P engineering with explicitly synthetic AB-R diagnostic)",
+      "distance_D": 0,
+      "workstream": "SENSITIVITY",
+      "parent": "N96",
+      "A": {
+        "question": "Dependencia de saturación respecto a aceptación condicional p",
+        "estimand": "2x2 synthetic complete bipartite instantaneous matching; no real participants or temporal relationship",
+        "unit": "one synthetic event, independent draws conditioned on event schedule"
+      },
+      "B": {
+        "hypotheses": "Institutional co-exposure can change allocation and joint choice dependencies even at equal marginal opportunity; strong nulls: independent, fixed-cardinality and adjacency-only schedules",
+        "rivals": [
+          "uniform per-edge independent exposure",
+          "perfect matching rotation",
+          "uniform fixed two edges",
+          "adjacent pairs"
+        ],
+        "H_other": "induced choice correlations / risk-set geometry / nonuniform tie breaks"
+      },
+      "C": {
+        "test": "p=.1,.5,.9 con delta de parejas = p² entre rotación y adyacente",
+        "budget": "finite exhaustive 16 masks/16 mutual decisions; MC only final QA 30000 events",
+        "precommitted_tolerance": "1e-10 arithmetic"
+      },
+      "D": {
+        "instrument": "standalone JS exact finite engine; no human files; self-contained source frozen at GitHub commit before execution",
+        "source_status": "NOT_YET_COMMITTED"
+      },
+      "E": {
+        "execution": "PENDING",
+        "repetitions": "finite enumerations; 30000 only N106"
+      },
+      "F": {
+        "adversaries": "algebra, independent-vs-fixed2 contrast, no naive comparison; capacity baseline max matching"
+      },
+      "G": {
+        "confirmation": "intra-generative validation only; no independent human external test"
+      },
+      "H": {
+        "prior": "P-OPPORTUNITY and P-NOVELTY remain unchanged unless new external documentary evidence; synthetic mathematical results stored as claims not human prior updates"
+      },
+      "I": {
+        "grade_0_3": "0 unless independently verified original theoretical contribution is established; current baseline 0",
+        "CT2_from_7": true,
+        "maturity_from_41_2": true
+      },
+      "J": {
+        "conditional_next": "Si rompe identidad reparar; si sí N98",
+        "R5_external": "STOP; synthetic branching authorized separately from external claims"
+      }
+    },
+    {
+      "id": "N98",
+      "slot_from_previous_authorization": true,
+      "mode": "AB-H (AB-P engineering with explicitly synthetic AB-R diagnostic)",
+      "distance_D": 0,
+      "workstream": "MEASUREMENT",
+      "parent": "N97",
+      "A": {
+        "question": "Exposición por actor: mismas medias, distintas dispersiones y ceros",
+        "estimand": "2x2 synthetic complete bipartite instantaneous matching; no real participants or temporal relationship",
+        "unit": "one synthetic event, independent draws conditioned on event schedule"
+      },
+      "B": {
+        "hypotheses": "Institutional co-exposure can change allocation and joint choice dependencies even at equal marginal opportunity; strong nulls: independent, fixed-cardinality and adjacency-only schedules",
+        "rivals": [
+          "uniform per-edge independent exposure",
+          "perfect matching rotation",
+          "uniform fixed two edges",
+          "adjacent pairs"
+        ],
+        "H_other": "induced choice correlations / risk-set geometry / nonuniform tie breaks"
+      },
+      "C": {
+        "test": "Independiente y rotación E[count actor]=1; Var(actor) .5 vs 0, P(count=0) .25 vs 0",
+        "budget": "finite exhaustive 16 masks/16 mutual decisions; MC only final QA 30000 events",
+        "precommitted_tolerance": "1e-10 arithmetic"
+      },
+      "D": {
+        "instrument": "standalone JS exact finite engine; no human files; self-contained source frozen at GitHub commit before execution",
+        "source_status": "NOT_YET_COMMITTED"
+      },
+      "E": {
+        "execution": "PENDING",
+        "repetitions": "finite enumerations; 30000 only N106"
+      },
+      "F": {
+        "adversaries": "algebra, independent-vs-fixed2 contrast, no naive comparison; capacity baseline max matching"
+      },
+      "G": {
+        "confirmation": "intra-generative validation only; no independent human external test"
+      },
+      "H": {
+        "prior": "P-OPPORTUNITY and P-NOVELTY remain unchanged unless new external documentary evidence; synthetic mathematical results stored as claims not human prior updates"
+      },
+      "I": {
+        "grade_0_3": "0 unless independently verified original theoretical contribution is established; current baseline 0",
+        "CT2_from_7": true,
+        "maturity_from_41_2": true
+      },
+      "J": {
+        "conditional_next": "Si equivocado corregir; si pasa N99",
+        "R5_external": "STOP; synthetic branching authorized separately from external claims"
+      }
+    },
+    {
+      "id": "N99",
+      "slot_from_previous_authorization": true,
+      "mode": "AB-H (AB-P engineering with explicitly synthetic AB-R diagnostic)",
+      "distance_D": 0,
+      "workstream": "OUTCOME_DISTRIBUTION",
+      "parent": "N98",
+      "A": {
+        "question": "No resumir por media: probabilidades de 0,1,2 parejas",
+        "estimand": "2x2 synthetic complete bipartite instantaneous matching; no real participants or temporal relationship",
+        "unit": "one synthetic event, independent draws conditioned on event schedule"
+      },
+      "B": {
+        "hypotheses": "Institutional co-exposure can change allocation and joint choice dependencies even at equal marginal opportunity; strong nulls: independent, fixed-cardinality and adjacency-only schedules",
+        "rivals": [
+          "uniform per-edge independent exposure",
+          "perfect matching rotation",
+          "uniform fixed two edges",
+          "adjacent pairs"
+        ],
+        "H_other": "induced choice correlations / risk-set geometry / nonuniform tie breaks"
+      },
+      "C": {
+        "test": "p=.5 rotación P(M=2)=.25, uniforme-dos 1/12, adyacente 0; todos son modelos sintéticos",
+        "budget": "finite exhaustive 16 masks/16 mutual decisions; MC only final QA 30000 events",
+        "precommitted_tolerance": "1e-10 arithmetic"
+      },
+      "D": {
+        "instrument": "standalone JS exact finite engine; no human files; self-contained source frozen at GitHub commit before execution",
+        "source_status": "NOT_YET_COMMITTED"
+      },
+      "E": {
+        "execution": "PENDING",
+        "repetitions": "finite enumerations; 30000 only N106"
+      },
+      "F": {
+        "adversaries": "algebra, independent-vs-fixed2 contrast, no naive comparison; capacity baseline max matching"
+      },
+      "G": {
+        "confirmation": "intra-generative validation only; no independent human external test"
+      },
+      "H": {
+        "prior": "P-OPPORTUNITY and P-NOVELTY remain unchanged unless new external documentary evidence; synthetic mathematical results stored as claims not human prior updates"
+      },
+      "I": {
+        "grade_0_3": "0 unless independently verified original theoretical contribution is established; current baseline 0",
+        "CT2_from_7": true,
+        "maturity_from_41_2": true
+      },
+      "J": {
+        "conditional_next": "Si falla revisar agregador; si pasa N100",
+        "R5_external": "STOP; synthetic branching authorized separately from external claims"
+      }
+    },
+    {
+      "id": "N100",
+      "slot_from_previous_authorization": true,
+      "mode": "AB-H (AB-P engineering with explicitly synthetic AB-R diagnostic)",
+      "distance_D": 0,
+      "workstream": "IDENTIFIABILITY",
+      "parent": "N99",
+      "A": {
+        "question": "Igualar tasa agregada con parámetros de aceptación distintos",
+        "estimand": "2x2 synthetic complete bipartite instantaneous matching; no real participants or temporal relationship",
+        "unit": "one synthetic event, independent draws conditioned on event schedule"
+      },
+      "B": {
+        "hypotheses": "Institutional co-exposure can change allocation and joint choice dependencies even at equal marginal opportunity; strong nulls: independent, fixed-cardinality and adjacency-only schedules",
+        "rivals": [
+          "uniform per-edge independent exposure",
+          "perfect matching rotation",
+          "uniform fixed two edges",
+          "adjacent pairs"
+        ],
+        "H_other": "induced choice correlations / risk-set geometry / nonuniform tie breaks"
+      },
+      "C": {
+        "test": "Rotación p=.4 vs adyacente p=1-sqrt(.2); E[matched] ambas .8, mientras probabilidades de 2 difieren",
+        "budget": "finite exhaustive 16 masks/16 mutual decisions; MC only final QA 30000 events",
+        "precommitted_tolerance": "1e-10 arithmetic"
+      },
+      "D": {
+        "instrument": "standalone JS exact finite engine; no human files; self-contained source frozen at GitHub commit before execution",
+        "source_status": "NOT_YET_COMMITTED"
+      },
+      "E": {
+        "execution": "PENDING",
+        "repetitions": "finite enumerations; 30000 only N106"
+      },
+      "F": {
+        "adversaries": "algebra, independent-vs-fixed2 contrast, no naive comparison; capacity baseline max matching"
+      },
+      "G": {
+        "confirmation": "intra-generative validation only; no independent human external test"
+      },
+      "H": {
+        "prior": "P-OPPORTUNITY and P-NOVELTY remain unchanged unless new external documentary evidence; synthetic mathematical results stored as claims not human prior updates"
+      },
+      "I": {
+        "grade_0_3": "0 unless independently verified original theoretical contribution is established; current baseline 0",
+        "CT2_from_7": true,
+        "maturity_from_41_2": true
+      },
+      "J": {
+        "conditional_next": "Si no empatan revisar; si pasan N101",
+        "R5_external": "STOP; synthetic branching authorized separately from external claims"
+      }
+    },
+    {
+      "id": "N101",
+      "slot_from_previous_authorization": true,
+      "mode": "AB-H (AB-P engineering with explicitly synthetic AB-R diagnostic)",
+      "distance_D": 0,
+      "workstream": "TIEBREAK",
+      "parent": "N100",
+      "A": {
+        "question": "Institución de desempate en grafo completo de cuatro sí/sí",
+        "estimand": "2x2 synthetic complete bipartite instantaneous matching; no real participants or temporal relationship",
+        "unit": "one synthetic event, independent draws conditioned on event schedule"
+      },
+      "B": {
+        "hypotheses": "Institutional co-exposure can change allocation and joint choice dependencies even at equal marginal opportunity; strong nulls: independent, fixed-cardinality and adjacency-only schedules",
+        "rivals": [
+          "uniform per-edge independent exposure",
+          "perfect matching rotation",
+          "uniform fixed two edges",
+          "adjacent pairs"
+        ],
+        "H_other": "induced choice correlations / risk-set geometry / nonuniform tie breaks"
+      },
+      "C": {
+        "test": "Con las 4 aristas activas existen exactamente 2 asignaciones cardinalmente máximas y composición same-group difiere 2 frente a 0",
+        "budget": "finite exhaustive 16 masks/16 mutual decisions; MC only final QA 30000 events",
+        "precommitted_tolerance": "1e-10 arithmetic"
+      },
+      "D": {
+        "instrument": "standalone JS exact finite engine; no human files; self-contained source frozen at GitHub commit before execution",
+        "source_status": "NOT_YET_COMMITTED"
+      },
+      "E": {
+        "execution": "PENDING",
+        "repetitions": "finite enumerations; 30000 only N106"
+      },
+      "F": {
+        "adversaries": "algebra, independent-vs-fixed2 contrast, no naive comparison; capacity baseline max matching"
+      },
+      "G": {
+        "confirmation": "intra-generative validation only; no independent human external test"
+      },
+      "H": {
+        "prior": "P-OPPORTUNITY and P-NOVELTY remain unchanged unless new external documentary evidence; synthetic mathematical results stored as claims not human prior updates"
+      },
+      "I": {
+        "grade_0_3": "0 unless independently verified original theoretical contribution is established; current baseline 0",
+        "CT2_from_7": true,
+        "maturity_from_41_2": true
+      },
+      "J": {
+        "conditional_next": "Si no se cumple corregir algoritmo; si sí N102",
+        "R5_external": "STOP; synthetic branching authorized separately from external claims"
+      }
+    },
+    {
+      "id": "N102",
+      "slot_from_previous_authorization": true,
+      "mode": "AB-H (AB-P engineering with explicitly synthetic AB-R diagnostic)",
+      "distance_D": 0,
+      "workstream": "SYMMETRY",
+      "parent": "N101",
+      "A": {
+        "question": "Desempate uniforme vs lexicográfico en grafo saturado",
+        "estimand": "2x2 synthetic complete bipartite instantaneous matching; no real participants or temporal relationship",
+        "unit": "one synthetic event, independent draws conditioned on event schedule"
+      },
+      "B": {
+        "hypotheses": "Institutional co-exposure can change allocation and joint choice dependencies even at equal marginal opportunity; strong nulls: independent, fixed-cardinality and adjacency-only schedules",
+        "rivals": [
+          "uniform per-edge independent exposure",
+          "perfect matching rotation",
+          "uniform fixed two edges",
+          "adjacent pairs"
+        ],
+        "H_other": "induced choice correlations / risk-set geometry / nonuniform tie breaks"
+      },
+      "C": {
+        "test": "Aleatorización entre 2 máximos produce E[parejas same-group]=1, manteniendo 2 parejas totales; lex mismo=2",
+        "budget": "finite exhaustive 16 masks/16 mutual decisions; MC only final QA 30000 events",
+        "precommitted_tolerance": "1e-10 arithmetic"
+      },
+      "D": {
+        "instrument": "standalone JS exact finite engine; no human files; self-contained source frozen at GitHub commit before execution",
+        "source_status": "NOT_YET_COMMITTED"
+      },
+      "E": {
+        "execution": "PENDING",
+        "repetitions": "finite enumerations; 30000 only N106"
+      },
+      "F": {
+        "adversaries": "algebra, independent-vs-fixed2 contrast, no naive comparison; capacity baseline max matching"
+      },
+      "G": {
+        "confirmation": "intra-generative validation only; no independent human external test"
+      },
+      "H": {
+        "prior": "P-OPPORTUNITY and P-NOVELTY remain unchanged unless new external documentary evidence; synthetic mathematical results stored as claims not human prior updates"
+      },
+      "I": {
+        "grade_0_3": "0 unless independently verified original theoretical contribution is established; current baseline 0",
+        "CT2_from_7": true,
+        "maturity_from_41_2": true
+      },
+      "J": {
+        "conditional_next": "Si falla parar; si pasa N103",
+        "R5_external": "STOP; synthetic branching authorized separately from external claims"
+      }
+    },
+    {
+      "id": "N103",
+      "slot_from_previous_authorization": true,
+      "mode": "AB-H (AB-P engineering with explicitly synthetic AB-R diagnostic)",
+      "distance_D": 0,
+      "workstream": "MEASUREMENT",
+      "parent": "N102",
+      "A": {
+        "question": "No identificación de dos votos nativos a partir de sí/sí agregado",
+        "estimand": "2x2 synthetic complete bipartite instantaneous matching; no real participants or temporal relationship",
+        "unit": "one synthetic event, independent draws conditioned on event schedule"
+      },
+      "B": {
+        "hypotheses": "Institutional co-exposure can change allocation and joint choice dependencies even at equal marginal opportunity; strong nulls: independent, fixed-cardinality and adjacency-only schedules",
+        "rivals": [
+          "uniform per-edge independent exposure",
+          "perfect matching rotation",
+          "uniform fixed two edges",
+          "adjacent pairs"
+        ],
+        "H_other": "induced choice correlations / risk-set geometry / nonuniform tie breaks"
+      },
+      "C": {
+        "test": "(.5,.5) y (.25,1.0) generan p_mutual=.25, pero P(sí unilateral primer actor) difiere",
+        "budget": "finite exhaustive 16 masks/16 mutual decisions; MC only final QA 30000 events",
+        "precommitted_tolerance": "1e-10 arithmetic"
+      },
+      "D": {
+        "instrument": "standalone JS exact finite engine; no human files; self-contained source frozen at GitHub commit before execution",
+        "source_status": "NOT_YET_COMMITTED"
+      },
+      "E": {
+        "execution": "PENDING",
+        "repetitions": "finite enumerations; 30000 only N106"
+      },
+      "F": {
+        "adversaries": "algebra, independent-vs-fixed2 contrast, no naive comparison; capacity baseline max matching"
+      },
+      "G": {
+        "confirmation": "intra-generative validation only; no independent human external test"
+      },
+      "H": {
+        "prior": "P-OPPORTUNITY and P-NOVELTY remain unchanged unless new external documentary evidence; synthetic mathematical results stored as claims not human prior updates"
+      },
+      "I": {
+        "grade_0_3": "0 unless independently verified original theoretical contribution is established; current baseline 0",
+        "CT2_from_7": true,
+        "maturity_from_41_2": true
+      },
+      "J": {
+        "conditional_next": "Si falla revisar regla producto; si pasa N104",
+        "R5_external": "STOP; synthetic branching authorized separately from external claims"
+      }
+    },
+    {
+      "id": "N104",
+      "slot_from_previous_authorization": true,
+      "mode": "AB-H (AB-P engineering with explicitly synthetic AB-R diagnostic)",
+      "distance_D": 0,
+      "workstream": "OBSERVATION_PROJECTION",
+      "parent": "N103",
+      "A": {
+        "question": "Mismo q por arista no implica igual distribución conjunta bajo asignación correlacionada",
+        "estimand": "2x2 synthetic complete bipartite instantaneous matching; no real participants or temporal relationship",
+        "unit": "one synthetic event, independent draws conditioned on event schedule"
+      },
+      "B": {
+        "hypotheses": "Institutional co-exposure can change allocation and joint choice dependencies even at equal marginal opportunity; strong nulls: independent, fixed-cardinality and adjacency-only schedules",
+        "rivals": [
+          "uniform per-edge independent exposure",
+          "perfect matching rotation",
+          "uniform fixed two edges",
+          "adjacent pairs"
+        ],
+        "H_other": "induced choice correlations / risk-set geometry / nonuniform tie breaks"
+      },
+      "C": {
+        "test": "Comparar matrices conjunta de sí/sí en rotación/independiente p=.5; al menos una covarianza no cero pese a q=.25 ambas",
+        "budget": "finite exhaustive 16 masks/16 mutual decisions; MC only final QA 30000 events",
+        "precommitted_tolerance": "1e-10 arithmetic"
+      },
+      "D": {
+        "instrument": "standalone JS exact finite engine; no human files; self-contained source frozen at GitHub commit before execution",
+        "source_status": "NOT_YET_COMMITTED"
+      },
+      "E": {
+        "execution": "PENDING",
+        "repetitions": "finite enumerations; 30000 only N106"
+      },
+      "F": {
+        "adversaries": "algebra, independent-vs-fixed2 contrast, no naive comparison; capacity baseline max matching"
+      },
+      "G": {
+        "confirmation": "intra-generative validation only; no independent human external test"
+      },
+      "H": {
+        "prior": "P-OPPORTUNITY and P-NOVELTY remain unchanged unless new external documentary evidence; synthetic mathematical results stored as claims not human prior updates"
+      },
+      "I": {
+        "grade_0_3": "0 unless independently verified original theoretical contribution is established; current baseline 0",
+        "CT2_from_7": true,
+        "maturity_from_41_2": true
+      },
+      "J": {
+        "conditional_next": "Si difiere q reparar; si no diferencia cov STOP; si pasa N105",
+        "R5_external": "STOP; synthetic branching authorized separately from external claims"
+      }
+    },
+    {
+      "id": "N105",
+      "slot_from_previous_authorization": true,
+      "mode": "AB-H (AB-P engineering with explicitly synthetic AB-R diagnostic)",
+      "distance_D": 0,
+      "workstream": "INFORMATION",
+      "parent": "N104",
+      "A": {
+        "question": "Valor de registrar oportunidades para diferenciar instituciones rivales",
+        "estimand": "2x2 synthetic complete bipartite instantaneous matching; no real participants or temporal relationship",
+        "unit": "one synthetic event, independent draws conditioned on event schedule"
+      },
+      "B": {
+        "hypotheses": "Institutional co-exposure can change allocation and joint choice dependencies even at equal marginal opportunity; strong nulls: independent, fixed-cardinality and adjacency-only schedules",
+        "rivals": [
+          "uniform per-edge independent exposure",
+          "perfect matching rotation",
+          "uniform fixed two edges",
+          "adjacent pairs"
+        ],
+        "H_other": "induced choice correlations / risk-set geometry / nonuniform tie breaks"
+      },
+      "C": {
+        "test": "Mixturas suavizadas 90% rotación/adyacente +10% uniforme-dos, p=.5: KL de máscaras exposición > KL del conteo final de parejas; soportes positivos",
+        "budget": "finite exhaustive 16 masks/16 mutual decisions; MC only final QA 30000 events",
+        "precommitted_tolerance": "1e-10 arithmetic"
+      },
+      "D": {
+        "instrument": "standalone JS exact finite engine; no human files; self-contained source frozen at GitHub commit before execution",
+        "source_status": "NOT_YET_COMMITTED"
+      },
+      "E": {
+        "execution": "PENDING",
+        "repetitions": "finite enumerations; 30000 only N106"
+      },
+      "F": {
+        "adversaries": "algebra, independent-vs-fixed2 contrast, no naive comparison; capacity baseline max matching"
+      },
+      "G": {
+        "confirmation": "intra-generative validation only; no independent human external test"
+      },
+      "H": {
+        "prior": "P-OPPORTUNITY and P-NOVELTY remain unchanged unless new external documentary evidence; synthetic mathematical results stored as claims not human prior updates"
+      },
+      "I": {
+        "grade_0_3": "0 unless independently verified original theoretical contribution is established; current baseline 0",
+        "CT2_from_7": true,
+        "maturity_from_41_2": true
+      },
+      "J": {
+        "conditional_next": "Si KL no ordena, auditar; si sí N106",
+        "R5_external": "STOP; synthetic branching authorized separately from external claims"
+      }
+    },
+    {
+      "id": "N106",
+      "slot_from_previous_authorization": true,
+      "mode": "AB-H (AB-P engineering with explicitly synthetic AB-R diagnostic)",
+      "distance_D": 0,
+      "workstream": "QA_MONTECARLO",
+      "parent": "N105",
+      "A": {
+        "question": "Validación estadística interna e invariantes del simulador estocástico respecto a oráculo exacto",
+        "estimand": "2x2 synthetic complete bipartite instantaneous matching; no real participants or temporal relationship",
+        "unit": "one synthetic event, independent draws conditioned on event schedule"
+      },
+      "B": {
+        "hypotheses": "Institutional co-exposure can change allocation and joint choice dependencies even at equal marginal opportunity; strong nulls: independent, fixed-cardinality and adjacency-only schedules",
+        "rivals": [
+          "uniform per-edge independent exposure",
+          "perfect matching rotation",
+          "uniform fixed two edges",
+          "adjacent pairs"
+        ],
+        "H_other": "induced choice correlations / risk-set geometry / nonuniform tie breaks"
+      },
+      "C": {
+        "test": "Monte Carlo 30000 eventos para rotación p=.5 con generador PRNG fijado 20261029; media +/-0.025 de exacta 1.0, P2 +/- .02 de .25; dos ejecuciones iguales y todo match≤2",
+        "budget": "finite exhaustive 16 masks/16 mutual decisions; MC only final QA 30000 events",
+        "precommitted_tolerance": ".025 mean, .02 P2"
+      },
+      "D": {
+        "instrument": "standalone JS exact finite engine; no human files; self-contained source frozen at GitHub commit before execution",
+        "source_status": "NOT_YET_COMMITTED"
+      },
+      "E": {
+        "execution": "PENDING",
+        "repetitions": "finite enumerations; 30000 only N106"
+      },
+      "F": {
+        "adversaries": "algebra, independent-vs-fixed2 contrast, no naive comparison; capacity baseline max matching"
+      },
+      "G": {
+        "confirmation": "intra-generative validation only; no independent human external test"
+      },
+      "H": {
+        "prior": "P-OPPORTUNITY and P-NOVELTY remain unchanged unless new external documentary evidence; synthetic mathematical results stored as claims not human prior updates"
+      },
+      "I": {
+        "grade_0_3": "0 unless independently verified original theoretical contribution is established; current baseline 0",
+        "CT2_from_7": true,
+        "maturity_from_41_2": true
+      },
+      "J": {
+        "conditional_next": "Si falla INVALID/REPAIR; si pasa cerrar AB-H sintética y conservar STOP_R5 empírico",
+        "R5_external": "STOP; synthetic branching authorized separately from external claims"
+      }
+    }
+  ]
+}
