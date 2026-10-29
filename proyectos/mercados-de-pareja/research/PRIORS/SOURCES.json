@@ -3,7 +3,7 @@
   "project": "mercados-de-pareja",
   "date": "2026-10-28",
   "scope": "Retrospective provenance backfill from repository reports plus N56/N57 publisher audit. Original data never copied; not systematic or claim of accessing raw data for bibliography.",
-  "source_count": 72,
+  "source_count": 73,
   "sources": [
     {
       "id": "SRC001",
@@ -1426,7 +1426,106 @@
       "risk_set_and_intervals_verified": false,
       "critical_limits": "Original source identity, transformation provenance, row counts, waveform joins and weights not verified against Stanford official release. Source may lack the codebook and entire 2017 fresh cohort; contains W6 of 2009 original cohort ONLY. Even full original data would not make Cox/RSF/DeepHit novel against Franssen 2023.",
       "falsifier": "Obtain official per-wave HCMST2009 public files or full gist bytes under compatible terms, verify cryptographic hashes and official schema/row counts/caseid_new join; confirm mortality/rupture, weights and response selection, then prereg truly new distinct mechanism before inspecting outcomes."
+    },
+    {
+      "id": "SRC073",
+      "title": "Miriam-Stoehr/hcmst-clustering public HCMST2009 original Stata format supplements (W4, W5, W6), binary-byte retrieval via connected GitHub",
+      "canonical_url": "https://github.com/Miriam-Stoehr/hcmst-clustering/tree/main/data",
+      "repository_url": "https://github.com/Miriam-Stoehr/hcmst-clustering",
+      "cycle_ids": [],
+      "source_type": "THIRD_PARTY_MIRROR_ORIGINAL_FORMAT_STATA_W4_W5_W6_BYTES_READ_AND_HASHED__BASE_UNAVAILABLE",
+      "same_cohort_as": [
+        "SRC067",
+        "SRC068",
+        "SRC069",
+        "SRC070",
+        "SRC071",
+        "SRC072"
+      ],
+      "not_independent_sample": true,
+      "verified_at": "2026-10-29",
+      "data_retrieval_method": "Connected GitHub fetch_file(..., encoding=base64) decoded in V8 JS locally only for inspection and SHA256. No original source row emitted; no dataset files or participant IDs stored in project GitHub. No clean clone or container files created.",
+      "files": [
+        {
+          "name": "wave_4_supplement_v1_2.dta",
+          "decoded_bytes": 352532,
+          "stata_release": 115,
+          "K_variables": 62,
+          "N_records": 4002,
+          "git_blob_sha1": "aa257a6d37878f91db9f2556d83f0f5f3786073b",
+          "sha256": "2593656f7e8a1f299c5894bd948e4d8ec9590113978b16151afc438250c0656f",
+          "verified_schema_fields": [
+            "caseid_new",
+            "w4_xqualified",
+            "w4_status",
+            "w4_complete",
+            "w4_duration",
+            "w4_broke_up",
+            "w4_HCMST_interview_fin_yrmo"
+          ]
+        },
+        {
+          "name": "HCMST_wave_5_supplement_ver_1.dta",
+          "decoded_bytes": 525330,
+          "stata_release": 115,
+          "K_variables": 78,
+          "N_records": 4002,
+          "git_blob_sha1": "45d2ee32267181df57c23c699652d8fbc5d5c090",
+          "sha256": "a94b023c9659cb0298ed6531b2da78a06af1174b0246adada8df100df6be7523",
+          "verified_schema_fields": [
+            "caseid_new",
+            "w5_duration",
+            "w5_status",
+            "w5_complete",
+            "w5x_qualified",
+            "w5_broke_up",
+            "w5_HCMST_interview_fin_yrmo"
+          ]
+        },
+        {
+          "name": "HCMST_wave_6_public_v1.dta",
+          "decoded_bytes": 93480,
+          "stata_release": 117,
+          "K_variables": 77,
+          "N_records": 640,
+          "git_blob_sha1": "0fcfa113f7a8205063fd16aba4d2ab259da1a99c",
+          "sha256": "7eaf5ba12083980b8d331226f507e196845cccace93c75cff2fc4b17f3c315d8",
+          "verified_schema_fields": [
+            "caseid_new",
+            "w6_broke_up",
+            "w6_relationship_end_mar",
+            "w6_relationship_end_nonmar",
+            "w6_partner_passaway_Year",
+            "w6_partner_passaway_C_Year",
+            "w6_met_online_dating",
+            "w6_HCMST_yrmo"
+          ]
+        },
+        {
+          "name": "HCMST_ver_3.04.dta",
+          "decoded_bytes": null,
+          "metadata_github_bytes": 2113470,
+          "git_blob_sha1": "e48a82e21b534380756b2f7f5d4194492c0fdaa1",
+          "sha256": null,
+          "metadata_only": true,
+          "verified_same_git_blob_in_another_third_party_repo": "olhasl/how_couples_meet_and_stay_together",
+          "reason": "GitHub connector returned empty .content for 2.1 MB original binary; GitHub fetch_blob binary failed UTF8 UnicodeDecodeError; no data bytes obtained."
+        }
+      ],
+      "cross_repo_check": "Base HCMST_ver_3.04.dta has identical Git blob SHA in Miriam-Stoehr and olhasl repositories, proving same Git bytes shared; NOT a checksum comparison against the official Stanford archive. W4-W6 SHA256 are exact for retrieved public mirror bytes, NOT official checksums.",
+      "data_rights": "Original Stanford HCMST public use agreement (https://data.stanford.edu/hcmst) prohibits reidentification and requires citing and informing contact about studies; repository has MIT license applying to its software, not established independent grant over Stanford data. Public reading of author-format Stata supplements for schema QA performed; no further analysis/publication until source fidelity and applicable data-use terms confirmed.",
+      "finding": "Unlike earlier Gist which only exposed metadata, W4/W5/W6 original-format Stata bytes truly fetched, decoded, checksummed, and their header N/K and variable names read. N=4002 both W4 and W5 as file row universe, W6 N=640 file subset: 640/4002 is NOT attrition or survivor rate without wave-eligibility semantics. Complete baseline HCMST 2009 remains inaccessible by tools, so source cannot support survival estimand or full join.",
+      "unknowns": [
+        "No official Stanford cryptographic checksum for matching versions",
+        "No baseline binary bytes for SHA or join",
+        "No labels/value category codes/weights verified beyond variable names",
+        "No rows or outcomes analyzed",
+        "Missing fresh HCMST2017 cohort holdout",
+        "No external independent replication",
+        "W6 N640 likely subset but mechanism/sampling undefined"
+      ],
+      "falsifier": "Acquire authentic baseline Stata bytes and official reference metadata, verify all four SHA and caseid_new uniqueness/join plus selection codes; freeze A–J and pre-outcome script before proper new hypothesis against Cox/RSF/DeepHit and independent fresh cohort."
     }
   ],
-  "last_added_campaign": "POST_N82_HCMST_GIST_UNVERIFIED_ACCESS_GATE_NONCYCLE"
+  "last_added_campaign": "POST_N82_ACTUAL_STATA_SUPPLEMENT_BYTES_SCHEMA_GATE_NONCYCLE"
 }
