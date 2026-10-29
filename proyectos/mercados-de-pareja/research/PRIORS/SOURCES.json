@@ -3,7 +3,7 @@
   "project": "mercados-de-pareja",
   "date": "2026-10-28",
   "scope": "Retrospective provenance backfill from repository reports plus N56/N57 publisher audit. Original data never copied; not systematic or claim of accessing raw data for bibliography.",
-  "source_count": 85,
+  "source_count": 87,
   "sources": [
     {
       "id": "SRC001",
@@ -1710,7 +1710,39 @@
       "rights": "OSF data deposition stated by 2026 authors, but individual OSF file licenses, consent, ethics and sharing conditions unverified due inaccessible view-only page; cannot treat as CC BY.",
       "AB_cycle_increment": 0,
       "new_independent_sample": "YES Tawkify cohort independent from Graz Joel Mixmosa Columbia, but 2025 and 2026 papers share same sample"
+    },
+    {
+      "id": "SRC086",
+      "title": "Pronk & Denissen (2020), A Rejection Mind-Set: Choice Overload in Online Dating — Study 2 original replication dataset",
+      "canonical_url": "https://doi.org/10.34894/8WQ1UC",
+      "repository_record": "https://research.tilburguniversity.edu/en/datasets/replication-data-for-a-rejection-mind-set-choice-overload-in-onli/",
+      "rights_metadata": "https://b2find.eudat.eu/dataset/f986f50d-309b-5eb7-996f-70de9916ceb7",
+      "article_doi": "https://doi.org/10.1177/1948550619866189",
+      "verified_at": "2026-10-29",
+      "source_type": "PRIMARY_ORIGINAL_HUMAN_BILATERAL_DATING_EXPERIMENT_DATAVERSENL_RESTRICTED_ACCESS_NONCYCLE",
+      "cycle_ids": [],
+      "contribution": "The Tilburg University publisher record identifies authors' original replication deposit with three studies. Study 2 involved 158 analyzed people (82 male/76 female) judging photos of actually available participants, recording an explicit yes/no per offered profile, reciprocal match eligibility and order of opportunities. Published article reports mean 2.15 mutual matches/person and declining selectivity/matches for a subset; NOT recalculated here. Provides directly relevant prior art on choice overload and reciprocal choice, and a DIFFERENT original-data archive discovery route from Graz/UKDS/OSF.",
+      "limits": "B2FIND catalog metadata explicitly says restrictedAccess and OpenAccess=false; original bytes, row schema, licenses, consent for secondary reuse, participant-level bilateral joins, SHA256, and independent platform holdout NOT inspected. Real partner availability is documented, but pair-level ordering and full risk set for both sides require data audit. Not evidence of union/duration or causal contemporary-app effect.",
+      "rights": "Data and article rights separate. B2FIND info:eu-repo/semantics/restrictedAccess. No license accepted, authorization obtained, or data downloaded. Any future access must be legally authorized by user or archive.",
+      "status": "DOCUMENTAL_MATERIAL_NEW_ARCHIVE_ROUTE_NO_DATA_ACCESS",
+      "AB_cycle_increment": 0,
+      "falsifier": "Authorized archived file + actual binary yes/no joined pairs, eligibility/order documentation and independent event/person split; preregister a truly novel contrast beyond published rejection mind-set before outcomes."
+    },
+    {
+      "id": "SRC087",
+      "title": "Ogushi, Azuma, Ishii & Miyata (2026), Predicting female and male participants' contact-exchange decisions from time-segmented multimodal behavioral features in speed dating",
+      "canonical_url": "https://doi.org/10.3389/fcomp.2026.1893669",
+      "publisher_url": "https://www.frontiersin.org/journals/computer-science/articles/10.3389/fcomp.2026.1893669/full",
+      "verified_at": "2026-10-29",
+      "source_type": "PRIMARY_PUBLISHED_ORIGINAL_JAPANESE_SPEED_DATING_BILATERAL_DECISIONS_RAW_DATA_NOT_AVAILABLE_NONCYCLE",
+      "cycle_ids": [],
+      "contribution": "Peer-reviewed paper published 2026-09-23 analyzes 625 observed speed-date interactions, including 619 with a male and female contact-exchange decision jointly observed. Original reported 2x2 table: both no 214, female-only yes 105, male-only yes 220, both yes 80; no independent microdata analysis here. Authors report RF classifiers using multimodal temporal behavior, weighted F1 female .6248 and male .5379, differences vs random baseline uncertainty includes zero. Material new contemporaneous prior art for binary bilateral end-of-date decisions and temporal behavioral controls, unlike mere ratings of desire or unverified platform clicks.",
+      "limits": "Published aggregated contingency table is NOT 619 downloadable row records; 2026 authors explicitly state data availability as article/supplements and invite inquiries. Participant-level raw outcomes, licensing, independent holdout, event split and stable-union follow-up NOT verified. Current study 619 pairs within one cohort, not 619 independent people nor 2026 validation of ESBM.",
+      "rights": "Paper CC BY; participant-level data availability and reuse licensing not verified. No author contacts permitted without user's explicit approval and none attempted.",
+      "status": "MATERIAL_STRONG_RECENT_PRIOR_ART_NO_ACCESS_TO_ORIGINAL_ROWS",
+      "AB_cycle_increment": 0,
+      "falsifier": "Legitimately licensed original microdata with raw pairwise event decisions and novel preregistered prediction beyond published RF controls, tested on independent event/person cohort."
     }
   ],
-  "last_added_campaign": "ABR_TAWKIFY_RECENT_DYADIC_ORIGINAL_OSF_GATE_NONCYCLE_20261029"
+  "last_added_campaign": "ABR_DATAVERSENL_JP_BILATERAL_GATE_NONCYCLE_20261029"
 }

@@ -1,0 +1,90 @@
+{
+  "schema": "ab.research.noncycle_material_gate.v1",
+  "project": "mercados-de-pareja",
+  "branch": "research/ab-r-mercados-pareja-20261028",
+  "date": "2026-10-29",
+  "gate": "DATAVERSENL_PRONK_RESTRICTED_AND_OGUSHI_JAPAN_BILATERAL_PRIOR_ART",
+  "type": "NON_CYCLE_MATERIAL_SOURCE_GATE_NOT_AB_A_J",
+  "parent_valid_cycle": "N82",
+  "authorizations": {
+    "granted": 20,
+    "completed_valid": 16,
+    "remaining": 4,
+    "pending": [
+      "N83",
+      "N84",
+      "N85",
+      "N86"
+    ]
+  },
+  "cycles_this_turn": {
+    "valid": 0,
+    "invalid": 0,
+    "planning": 0
+  },
+  "N83": {
+    "status": "NOT_OPENED",
+    "prereg_commit": null,
+    "code_sha256_frozen": null,
+    "analyses_executed": 0
+  },
+  "status": "STOP_R5",
+  "CT2": {
+    "ordinal": 7,
+    "scale": "1-100",
+    "new_point": false,
+    "not_probability": true,
+    "trajectory_source": "../ABR_SSJY_STAGE_N82_20261029/CT2_TRAJECTORY.json"
+  },
+  "documentation": {
+    "new_source_ids": [
+      "SRC086",
+      "SRC087"
+    ],
+    "new_update_ids": [
+      "U114",
+      "U115"
+    ],
+    "source_count": 87,
+    "prior_count": 30,
+    "update_count": 115,
+    "prior_states_changed": false
+  },
+  "evidence": {
+    "Pronk": "Tilburg original archive doi:10.34894/8WQ1UC, B2FIND restrictedAccess, 158 actual available profiles study 2",
+    "Ogushi": "Frontiers 2026 doi:10.3389/fcomp.2026.1893669, 619 published paired contact yes/no, 80 mutual"
+  },
+  "original_microdata_rows_read": 0,
+  "original_dataset_bytes_downloaded": 0,
+  "licensed_access_to_new_files": false,
+  "source_sha256_new_files": null,
+  "outcomes_used_for_new_analysis": false,
+  "new_simulations": 0,
+  "new_models": 0,
+  "independent_holdout_run": false,
+  "external_replication_performed": false,
+  "scientific_novelty_grades": {
+    "new_1of3": 0,
+    "new_2of3": 0,
+    "new_3of3": 0
+  },
+  "data_rights": "UNVERIFIED_OR_RESTRICTED_NOT_CLEARED_FOR_ORIGINAL_MICRODATA_ANALYSIS",
+  "approach_R1_R5": {
+    "R1": "Published consent-to-exchange contact and reciprocal accept decisions are different from union or lifetime; conditional on attended/available opportunities.",
+    "R2": "Pre-existing published Pronk choice-overload and Ogushi classifier, Joel SRM etc; full parity baselines require rows.",
+    "R3": "No current A-J prereg or code SHA; any hypothesized new outcome contrast would be selected post hoc; future holdout independent by person and event/source.",
+    "R4": "Selection into dating, absence of random exposure, actor dependencies and behavioral feature temporality; no causal attribution.",
+    "R5": "STOP until legal raw bytes, real bilateral opportunity/action and novelty design plus prereg/code SHA before outcomes."
+  },
+  "restrictions": {
+    "no_licences_accepted": true,
+    "no_authors_contacted": true,
+    "no_SSJY_used": true,
+    "no_raw_rows_published": true,
+    "no_main_merge": true,
+    "no_repeated_OSF_Essex_Stanford_Gist": true
+  },
+  "external_clean_clone": "NOT_VERIFIED",
+  "report": "REPORT.md",
+  "next_condition": "NEW_LEGALLY_AUTHORIZED_ORIGINAL_ROWS_AND_PREOUTCOME_FROZEN_NOVEL_TEST"
+}
