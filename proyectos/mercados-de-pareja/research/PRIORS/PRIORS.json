@@ -680,7 +680,7 @@
         "SRC071",
         "SRC090"
       ],
-      "last_update_id": "U134",
+      "last_update_id": "U135",
       "uncertainty": "Qualitative, context-dependent; no calibrated numerical probabilities",
       "next_falsifier_or_test": "Medidas longitudinales de bienestar y duración, con censura y controles de cambios de pareja.",
       "numeric_probability": null,
@@ -691,9 +691,10 @@
         "U092",
         "U095",
         "U118",
-        "U134"
+        "U134",
+        "U135"
       ],
-      "latest_evidence_summary": "N85 source-guarded frozen synthetic test reproduces documented complete-case duration bias: 50k t0 entrant relationships at h=.048/.12/.21, completed mean 7.081/5.775/4.315 vs KM RMST 11.365/7.276/4.666, agrees with analytic truth. Known already in THEORY_V2, no new causal science; real Python simulator not executed, event/censor duration output repair needed.",
+      "latest_evidence_summary": "N85 test quantified known censoring bias. N86 committed frozen pure-standard-library discrete Kaplan–Meier RMST helper and nine unittest checks; locally tested Git-blob-identical source and tests. All nine pass with manually calculated 2.75 and 10/3 and event/censor edge cases. Not integrated in historical ESBM v2 or full simulation; censoring assumptions and heterogeneous entry require future validation; no new human scientific claim.",
       "last_revised_at": "2026-10-29"
     },
     {
@@ -876,8 +877,8 @@
     "all_priors_linked": true,
     "source_ids_linked": 97,
     "registered_sources": 97,
-    "update_events": 134,
+    "update_events": 135,
     "counts_as_new_AB_cycle": false,
-    "last_update": "2026-10-29 N85_SURVIVAL_CENSOR_QA_ALREADY_KNOWN_PROBLEM"
+    "last_update": "2026-10-29 N86_NINE_UNIT_TESTS_PYTHON_KM_RMST_REPAIR_MODULE_UNINTEGRATED"
   }
 }

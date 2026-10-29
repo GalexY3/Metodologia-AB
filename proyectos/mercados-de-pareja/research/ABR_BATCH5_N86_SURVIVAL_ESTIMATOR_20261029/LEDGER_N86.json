@@ -1,0 +1,67 @@
+{
+  "schema": "ab.r.cycle.technical_software_test.v1",
+  "campaign": "ABR_ESBM20_20261028",
+  "cycle": "N86",
+  "date": "2026-10-29",
+  "branch": "research/ab-r-mercados-pareja-20261028",
+  "status": "COMPLETED_VALID_ENGINEERING_ONLY",
+  "prereg_commit": "6b04d12e4b699f8203982a728076bc17c71b86b3",
+  "prereg_file": "PREREG_N86.md",
+  "python_source_path": "survival_metrics.py",
+  "python_test_path": "test_survival_metrics.py",
+  "original_git_blobs": {
+    "source": "580895c7f0a00217664ffdc437d722a6bb045c3b",
+    "tests": "88b692bf2e5686ec991dfcb89ae0e3fb76e74f10"
+  },
+  "sha256_local_files": {
+    "source": "a6726cf8dd0c6d0342cce6eb2b4b6845242a830433c8044bc5835f97e4b02e88",
+    "tests": "5e0275f9aee89766bd764f25c27b8bde9d7930f1cbd9862720d164d71a9de944"
+  },
+  "binary_identical_to_github_verified_by_git_hash_object": true,
+  "A": "Implement a reproducible survival RMST helper accounting for right-censored relationship durations",
+  "B": "Naive completed-only mean vs discrete KM RMST with manually known analytical checks and invalid-data guards",
+  "C": "Restricted mean to tau, not unrestricted longevity",
+  "D": "Pure Python stdlib utility, 9 deterministic tests specified in A-J",
+  "E": "GitHub code, tests and A-J committed before tests executed; local blob SHA matches remote identical bytes",
+  "F": "9/9 unittests passing, no fixes after execution",
+  "G": "Handcheck 2.75, 10/3, survival all censor/all event, ties, invalid flags, no followup, adapter equivalence",
+  "H": "No original ESBM simulation executed/repaired; no extra independent data; censoring assumptions still unverified",
+  "I": "U135 P-UNION-DURATION NO_CHANGE, no N1-N3, CT2=7",
+  "J": "N86 valid engineering test 0/3 scientific claim. Leave last N87 slot unspent absent independent discriminatory test",
+  "test_receipt": {
+    "runner": "python -m unittest -v test_survival_metrics.py",
+    "tests": 9,
+    "passed": 9,
+    "failures": 0,
+    "errors": 0,
+    "duration_seconds_approx": 0.001,
+    "original_python_simulator_executed": false,
+    "all_tests_identical_frozen_code": true
+  },
+  "budget": {
+    "grant": 40,
+    "valid": 20,
+    "remaining": 20,
+    "tranche_spent": 4,
+    "tranche_remaining": 1,
+    "reserved_not_released": 19
+  },
+  "score": {
+    "before": 38.95,
+    "after": 39.05,
+    "only": "qa 54->55, no original simulator integration"
+  },
+  "CT2": {
+    "before": 7,
+    "after": 7,
+    "ordinal": true
+  },
+  "R5": "STOP_R5_EXTERNAL",
+  "human_rows_read": 0,
+  "SSJY_used": false,
+  "authors_contacted": false,
+  "licenses_signed": false,
+  "main_merged": false,
+  "individual_microdata_published": false,
+  "clean_clone_ESBM_verified": false
+}

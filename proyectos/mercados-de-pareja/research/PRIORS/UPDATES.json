@@ -4,7 +4,7 @@
   "date": "2026-10-28",
   "mode": "append-only logical, versioned by Git commits",
   "reconstructed_from_documents": "Retrospective backfill, not preregistration. Old before values NOT_RECORDED unless documented explicitly.",
-  "source_coverage": "97 sources, 30 priors, 134 updates. N85 synthetic pre-frozen diagnostic only.",
+  "source_coverage": "97 sources, 30 priors, 135 updates. N86 tested stand-alone KM/RMST utility, original simulator not run. 20 valid, 20 pending, N87 free.",
   "events": [
     {
       "id": "U001",
@@ -3391,7 +3391,30 @@
       "prior_probability_after": null,
       "prereg_status": "PREREG_CODE_AT_25b9442346bb00b4598389129fbf84ff7ef7a487",
       "falsifier_or_followup": "Export complete duration/event records, compute KM/RMST under justified censoring assumption, run original ESBM v2 instrumented and independent clean reproduction."
+    },
+    {
+      "id": "U135",
+      "prior_id": "P-UNION-DURATION",
+      "source_ids": [],
+      "cycle_ids": [
+        "N86"
+      ],
+      "before": "CHALLENGED",
+      "after": "CHALLENGED",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "what_the_sources_contribute": "A deterministic reusable pure-Python survival_metrics.py and matching test_survival_metrics.py committed before execution. Local blob hashes verified identical to Github original files; 9/9 unittest tests passed, including event/censor times, ties, input validation and adapter.",
+      "why_this_updates_or_checks_prior": "A technically verified module repairs a known measurement gap in principle but is not yet hooked into original ESBM Python scenario runs or externally validated.",
+      "limits": "No original full simulator executed, no clean-clone ESBM port validated, no human longitudinal outcomes and no guarantee of independent censoring across formation cohorts. No new science 1/3 to 3/3.",
+      "recorded_at": "2026-10-29",
+      "entry_status": "ACTIVE",
+      "evidence_type": "N86_FROZEN_PURE_PYTHON_SURVIVAL_UTILITY_REAL_UNIT_TESTS_NINE_OF_NINE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 1,
+      "prior_probability_before": null,
+      "prior_probability_after": null,
+      "prereg_status": "PRECOMMITTED_AJ_AT_6b04d12e4b699f8203982a728076bc17c71b86b3",
+      "falsifier_or_followup": "Instrument original Python simulation to export (start_tick, duration, event), use helper and compare outputs with static seeds on clean repo, guard right-censor conditional on entry, then seek external longitudinal human panel if original."
     }
   ],
-  "last_campaign": "ABR_BATCH5_N85_CENSORING_GATE_20261029"
+  "last_campaign": "ABR_BATCH5_N86_SURVIVAL_ESTIMATOR_20261029"
 }
