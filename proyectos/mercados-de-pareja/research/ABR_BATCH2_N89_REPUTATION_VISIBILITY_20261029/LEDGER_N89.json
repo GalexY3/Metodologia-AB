@@ -1,0 +1,61 @@
+{
+  "schema": "ABR_AJ_reputation_visibility_v1",
+  "cycle": "N89",
+  "date": "2026-10-29",
+  "status": "COMPLETED_VALID_SYNTHETIC_ADVERSARIAL_0_3",
+  "preregister_commit": "8fd4a0a7b5cb5d3db57f116d4563d994a33d70ec",
+  "code_sha256": "34e055d63b9bca17622fb0d964e804632b9fd34637c58ca6ab14869e932d1148",
+  "original_code_sha256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+  "code_git_blob": "41e0c40aa053a0ce39667ffac8e44fae91cb0147",
+  "results_git_blob": "148c04d5f04a2b5118a2dcc162d2b65527487066",
+  "A": "Do all third-party repliers know a proponent's past rejected approaches?",
+  "B": "Global original broadcasting vs prior rejector witness-only vs no information silent, exact prior-compiled original and placebo sham",
+  "C": "Paired outcomes and penalized responses for same 6 seeds, 144 synthetic agents, 16 ticks, plus three context sensitivities",
+  "D": "4 contexts × 6 seeds × 3 source-modified arms plus 24 original global and 24 no-public baseline runs; 120 executed total",
+  "E": "Pre-exec Git commit with full A–J and compressed code SHA256 verified before first run",
+  "F": "24/24 original-global and 24/24 silent-null exact equality; in primary context formed global 209, witness 224, silent 226.67, active 53.67/59.67/62",
+  "G": "All relationship balances and applied<=reply invariants pass; 8,776 nonwitness penalty candidates in primary 6 global runs; strongly discriminating manipulation",
+  "H": "Changes availability downstream so time-global effects include feedback, synthetic only, reuse seeds and do not interpret as causal human effects",
+  "I": "U139 P-PUBLIC_REPUTATION and U140 P-FEEDBACK no prior status change, novelty 0/3, CT2 7",
+  "J": "N89 completed valid synthetic, N90–N92 remain available, N93–N106 reserved, STOP_R5 externally",
+  "original_human_rows": 0,
+  "full_results_file": "RESULTS_N89.json.gz",
+  "code_file": "n89_reputation_institution.py.gz",
+  "all_tests_passed": true,
+  "sample": {
+    "primary_global_minus_witness_formed": -15,
+    "primary_global_minus_witness_active": -6,
+    "nonwitness_candidates": 8776,
+    "scenarios": 4
+  },
+  "budget": {
+    "authorized": 40,
+    "completed_valid": 23,
+    "pending": 17,
+    "current_batch_completed": 2,
+    "current_batch_remaining": 3,
+    "reserved_outside_batch": 14
+  },
+  "maturity": {
+    "before": 40.05,
+    "after": 40.45,
+    "simulator": 61,
+    "qa": 60,
+    "novelty": 10,
+    "validation": 5
+  },
+  "CT2": {
+    "before": 7,
+    "after": 7,
+    "ordinal": true
+  },
+  "R5": "STOP_HUMAN_EXTERNAL",
+  "privacy": {
+    "human_microdata": false,
+    "SSJY": false,
+    "main_merged": false,
+    "authors_contacted": false,
+    "licenses_accepted": false
+  },
+  "clean_clone": "LOCAL_SOURCE_VERIFIED_NOT_FRESH_DEPENDENCY_INSTALL"
+}

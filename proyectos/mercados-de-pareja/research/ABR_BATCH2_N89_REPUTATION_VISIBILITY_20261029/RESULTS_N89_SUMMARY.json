@@ -1,0 +1,122 @@
+{
+  "schema": "ABR_N89_reputation_visibility_v1",
+  "date": "2026-10-29",
+  "cycle": "N89",
+  "status": "ALL_PRECOMMITTED_GATES_PASS",
+  "original_code_sha256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+  "pre_exec_commit": "8fd4a0a7b5cb5d3db57f116d4563d994a33d70ec",
+  "script_sha256": "34e055d63b9bca17622fb0d964e804632b9fd34637c58ca6ab14869e932d1148",
+  "code_gzip_blob": "41e0c40aa053a0ce39667ffac8e44fae91cb0147",
+  "code_gzip_sha256": "cd56582823eed36d0ac4092f110677cbb5b361d78acf8a0e2f3a13800b3b285d",
+  "full_json_sha256": "c7ec5e5f297503c209091dd3dce1288ed36030e7082afea8247b44ab36e40354",
+  "full_json_gzip_sha256": "5332c76bcd37b49dc64ed2795d6b284bdf4bc77061bf308d350c25498e76f4c9",
+  "full_json_gzip_git_blob": "148c04d5f04a2b5118a2dcc162d2b65527487066",
+  "synthetic_only": true,
+  "simulations": 120,
+  "global_sham_original_exact": 24,
+  "silent_sham_no_public_exact": 24,
+  "all_event_invariants": true,
+  "primary_context": "mixed_random",
+  "primary_seed_deltas_global_minus_witness_formed": [
+    6,
+    -20,
+    -10,
+    -13,
+    -25,
+    -28
+  ],
+  "primary_seed_deltas_global_minus_witness_active": [
+    -1,
+    -1,
+    -12,
+    -8,
+    -4,
+    -10
+  ],
+  "primary_global_minus_witness_formed_mean": -15,
+  "primary_global_minus_witness_active_mean": -6,
+  "primary_sum_nonwitness_opportunities_global": 8776,
+  "scenarios": [
+    {
+      "name": "mixed_random",
+      "formed": [
+        209,
+        224,
+        226.666667
+      ],
+      "active": [
+        53.666667,
+        59.666667,
+        62
+      ],
+      "responses": [
+        342.5,
+        405.166667,
+        417.833333
+      ],
+      "applied": [
+        1673.666667,
+        147,
+        0
+      ],
+      "nonwitness": 8776
+    },
+    {
+      "name": "popularity_ranking",
+      "formed": [
+        191.833333,
+        220.166667,
+        223.5
+      ],
+      "active": [
+        49.833333,
+        60.333333,
+        61.5
+      ],
+      "applied": [
+        2104,
+        272.166667,
+        0
+      ],
+      "nonwitness": 10423
+    },
+    {
+      "name": "institutional_segregation",
+      "formed": [
+        190.333333,
+        210.833333,
+        218.666667
+      ],
+      "active": [
+        54.166667,
+        62.333333,
+        62.5
+      ],
+      "applied": [
+        1546.5,
+        164.333333,
+        0
+      ],
+      "nonwitness": 7804
+    },
+    {
+      "name": "explicit_norm_preference",
+      "formed": [
+        235.333333,
+        237.333333,
+        241.166667
+      ],
+      "active": [
+        65.833333,
+        68.666667,
+        69.5
+      ],
+      "applied": [
+        1444.166667,
+        90.5,
+        0
+      ],
+      "nonwitness": 7912
+    }
+  ]
+}

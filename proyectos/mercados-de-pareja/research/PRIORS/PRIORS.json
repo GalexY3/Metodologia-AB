@@ -116,7 +116,7 @@
         "SRC033",
         "SRC054"
       ],
-      "last_update_id": "U064",
+      "last_update_id": "U139",
       "uncertainty": "Not probabilistically calibrated; evidence heterogeneous and some sources only metadata",
       "next_falsifier_or_test": "Independent prospective data with matched risk set, competent adversarial controls and documented sample selection",
       "numeric_probability": null,
@@ -125,10 +125,11 @@
         "U007",
         "U024",
         "U030",
-        "U064"
+        "U064",
+        "U139"
       ],
-      "latest_evidence_summary": "NO_CHANGE: ausencia de prueba para daño reputacional público por rechazo.",
-      "last_revised_at": "2026-10-28"
+      "latest_evidence_summary": "N89 120 real ESBM synthetic executions compare global rejection score broadcast vs witness-only vs hidden with 24 exact shams each. On six original random-policy seeds, mean formed global 209, witness 224, silent 226.67; broadcast creates 8776 reply opportunities with non-witness penalties. This shows global information diffusion is an assumption of code, not established real-world rejection contagion; status NOT_IDENTIFIED remains.",
+      "last_revised_at": "2026-10-29"
     },
     {
       "id": "P-OPPORTUNITY",
@@ -632,7 +633,7 @@
         "SRC045",
         "SRC054"
       ],
-      "last_update_id": "U061",
+      "last_update_id": "U140",
       "uncertainty": "Not calibrated Bayesian probabilities; context and heterogeneity uncertain",
       "next_falsifier_or_test": "Randomizar tipos de feedback y observar cambio en preferencias antes/después, no inferir δ reputacional.",
       "numeric_probability": null,
@@ -640,10 +641,11 @@
       "update_ids": [
         "U029",
         "U043",
-        "U061"
+        "U061",
+        "U140"
       ],
-      "latest_evidence_summary": "Contextualización de dinámica del decisor por éxito previo, no popularidad pública por rechazo.",
-      "last_revised_at": "2026-10-28"
+      "latest_evidence_summary": "N89 synthetic feedback comparison keeps every score update and shocks fixed, changes only visibility global/witness/silent. Global applied mean penalty on 1673.67 reply decisions, witness 147, with future matching feedback. Four policy contexts show heterogeneity (formed global-witness -15/-28.33/-20.5/-2). External experimental feedback prior remains context-supported, not calibrated to this toy model.",
+      "last_revised_at": "2026-10-29"
     },
     {
       "id": "P-MARKET-INFO",
@@ -880,8 +882,8 @@
     "all_priors_linked": true,
     "source_ids_linked": 97,
     "registered_sources": 97,
-    "update_events": 138,
+    "update_events": 140,
     "counts_as_new_AB_cycle": false,
-    "last_update": "2026-10-29 N88_CENTRAL_VS_DECENTRAL_MATCHING_240_SIM_SAME_GRAPH_STRONG_NULLS_0_3"
+    "last_update": "2026-10-29 N89_120_SIM_REPUTATION_BROADCAST_VISIBILITY_WITH_STRONG_SHAMS_NO_EXTERNAL_CAUSAL"
   }
 }
