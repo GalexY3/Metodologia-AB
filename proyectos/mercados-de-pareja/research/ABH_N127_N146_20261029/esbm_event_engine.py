@@ -146,8 +146,17 @@ def simulate(seed, name, config, *, scheduler=None, trace=False, people_provider
   active_graph=eligible[np.ix_(available,available)]
   possible_edges=int(np.triu(active_graph,1).sum())
   impressions=[]; mutual=[]; tick_proposals=0
+  seen_meeting_pairs=set(); per_tick_encounters=np.zeros(n_agents,dtype=int)
   for i,j in (scheduler or opportunities)(p,eligible,available,config,seen,t,config.get('schedule_mode','legacy'),config.get('schedule_slots',1)):
     i=int(i);j=int(j)
+    if not (0<=i<n_agents and 0<=j<n_agents and i!=j and i in active_set and j in active_set and eligible[i,j]):
+     raise ValueError('Injected exposure outside eligible active risk set')
+    if scheduler is not None or config.get('schedule_mode','legacy')!='legacy':
+     dyad=(min(i,j),max(i,j))
+     if dyad in seen_meeting_pairs:raise ValueError('Repeated dyad in one tick')
+     if per_tick_encounters[i]>=config.get('schedule_slots',1) or per_tick_encounters[j]>=config.get('schedule_slots',1):
+      raise ValueError('Per-actor meeting cap exceeded')
+     seen_meeting_pairs.add(dyad);per_tick_encounters[i]+=1;per_tick_encounters[j]+=1
     if trace: trace_rows.append(dict(t=t,stage='exposure',i=i,j=j))
     listed+=1;seen[j]+=1;received_by_norm[norm[j]]+=1
     norm_exposure_denom+=1;norm_exp+=int(norm[i]==norm[j])
