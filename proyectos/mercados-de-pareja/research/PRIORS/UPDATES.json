@@ -4,7 +4,7 @@
   "date": "2026-10-28",
   "mode": "append-only logical, versioned by Git commits",
   "reconstructed_from_documents": "Retrospective backfill, not preregistration. Old before values NOT_RECORDED unless documented explicitly.",
-  "source_coverage": "66 source records (not independent studies), 30 qualitative priors, 90 events",
+  "source_coverage": "68 source records (not independent studies); 30 qualitative priors, 93 append-only updates; distinct 2009 and 2017 HCMST respondent cohorts",
   "events": [
     {
       "id": "U001",
@@ -2340,7 +2340,82 @@
       "prior_probability_before": null,
       "prior_probability_after": null,
       "prereg_status": "NO_N83_PREREG_OPENED; ORIGINAL_COMPETITION_PRIOR_ART_READ_POSTHOC"
+    },
+    {
+      "id": "U091",
+      "prior_id": "P-LONGITUDINAL-ELIGIBILITY",
+      "source_ids": [
+        "SRC067",
+        "SRC068"
+      ],
+      "cycle_ids": [],
+      "before": "DOCUMENTED_SAMPLE_RAW_NOT_INSPECTED",
+      "after": "DOCUMENTED_SAMPLE_RAW_NOT_INSPECTED",
+      "direction": "NO_CHANGE_WITH_SOURCE_ELIGIBILITY_UPGRADE",
+      "what_the_sources_contribute": "Stanford original HCMST 2009 cohort of 4002 respondents (3009 partnered) plus followups 2010/2011/2013/2015 and ICPSR original record; explicitly different people from HCMST 2017–2022.",
+      "why_this_updates_or_checks_prior": "New genuinely separate longitudinal cohort confirmed in source docs, but no raw bytes, weights, risk indicators or hazard computed; status DOCUMENTED_SAMPLE_RAW_NOT_INSPECTED retained.",
+      "limits": "Original Stanford and ICPSR 2009 public catalog read; no binary source file downloaded, no hash, no codebook variable-level verification, no participant rows or independent testing. Five waves in one cohort not five independent samples, 2009 independent from 2017 but same investigator family. Restricted texts on breakup not available. Public-use access may require agreement/registration/membership; no permission to bypass.",
+      "falsifier_or_followup": "Obtain officially licensed complete 2009 public wave file, verified SHA256, original codebook; prereg baseline partnered hazard with interval censoring/dropout and a content/era-matched 2017 holdout. Do NOT claim causal effect of online matching from cohort contrast.",
+      "evidence_type": "ORIGINAL_INDEPENDENT_LONGITUDINAL_COHORT_ACCESS_GATE_NONCYCLE",
+      "retrospective_backfill": false,
+      "recorded_at": "2026-10-29",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null,
+      "prereg_status": "NO_N83_PREREG_OR_EXPERIMENT; SOURCE_ELIGIBILITY_DOC_ONLY"
+    },
+    {
+      "id": "U092",
+      "prior_id": "P-UNION-DURATION",
+      "source_ids": [
+        "SRC067",
+        "SRC068"
+      ],
+      "cycle_ids": [],
+      "before": "CHALLENGED",
+      "after": "CHALLENGED",
+      "direction": "NO_CHANGE_WITH_INDEPENDENT_PROSPECTIVE_COHORT",
+      "what_the_sources_contribute": "2009 HCMST follows baseline couples and captures changes in current relationship and breakups over five waves, original ICPSR 30103.v8 public use.",
+      "why_this_updates_or_checks_prior": "More suitable independent *duration* falsification candidate than synthetic hazard or 2022 selected existing couples; no raw rows and no baseline formation risk set, cannot claim survival estimates.",
+      "limits": "Original Stanford and ICPSR 2009 public catalog read; no binary source file downloaded, no hash, no codebook variable-level verification, no participant rows or independent testing. Five waves in one cohort not five independent samples, 2009 independent from 2017 but same investigator family. Restricted texts on breakup not available. Public-use access may require agreement/registration/membership; no permission to bypass.",
+      "falsifier_or_followup": "Obtain officially licensed complete 2009 public wave file, verified SHA256, original codebook; prereg baseline partnered hazard with interval censoring/dropout and a content/era-matched 2017 holdout. Do NOT claim causal effect of online matching from cohort contrast.",
+      "evidence_type": "ORIGINAL_INDEPENDENT_LONGITUDINAL_COHORT_ACCESS_GATE_NONCYCLE",
+      "retrospective_backfill": false,
+      "recorded_at": "2026-10-29",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null,
+      "prereg_status": "NO_N83_PREREG_OR_EXPERIMENT; SOURCE_ELIGIBILITY_DOC_ONLY"
+    },
+    {
+      "id": "U093",
+      "prior_id": "P-TRANSPORT",
+      "source_ids": [
+        "SRC067",
+        "SRC068"
+      ],
+      "cycle_ids": [],
+      "before": "CHALLENGED",
+      "after": "CHALLENGED",
+      "direction": "NO_CHANGE_WITH_PERIOD_AND_INSTRUMENT_CONFOUNDING",
+      "what_the_sources_contribute": "2009 and 2017 HCMST are independent cohorts but periods differ and 2020/2022 pandemic and dating app adoption differ.",
+      "why_this_updates_or_checks_prior": "Cohort independence does NOT identify app causal effect, generalizability to Spain or unchanged survey constructs. Strong baseline/weights needed.",
+      "limits": "Original Stanford and ICPSR 2009 public catalog read; no binary source file downloaded, no hash, no codebook variable-level verification, no participant rows or independent testing. Five waves in one cohort not five independent samples, 2009 independent from 2017 but same investigator family. Restricted texts on breakup not available. Public-use access may require agreement/registration/membership; no permission to bypass.",
+      "falsifier_or_followup": "Obtain officially licensed complete 2009 public wave file, verified SHA256, original codebook; prereg baseline partnered hazard with interval censoring/dropout and a content/era-matched 2017 holdout. Do NOT claim causal effect of online matching from cohort contrast.",
+      "evidence_type": "ORIGINAL_INDEPENDENT_LONGITUDINAL_COHORT_ACCESS_GATE_NONCYCLE",
+      "retrospective_backfill": false,
+      "recorded_at": "2026-10-29",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null,
+      "prereg_status": "NO_N83_PREREG_OR_EXPERIMENT; SOURCE_ELIGIBILITY_DOC_ONLY"
     }
   ],
-  "last_campaign": "POST_N82_RIGHTS_AND_BENCHMARK_GATE_NO_CYCLE"
+  "last_campaign": "POST_N82_HCMST_2009_ACCESS_GATE_NO_CYCLE"
 }
