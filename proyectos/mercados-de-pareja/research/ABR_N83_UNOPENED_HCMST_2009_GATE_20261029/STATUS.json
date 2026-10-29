@@ -1,0 +1,56 @@
+{
+  "schema": "ab.research.noncycle_gate.v1",
+  "date": "2026-10-29",
+  "branch": "research/ab-r-mercados-pareja-20261028",
+  "campaign": "ABR_ESBM20_20261028",
+  "gate": "HCMST_2009_SOURCE_DOCUMENTATION_AND_ORIGINAL_DOWNLOAD_ATTEMPTS",
+  "status": "STOP_R5",
+  "valid_AB_this_turn": 0,
+  "invalid_AB_this_turn": 0,
+  "planning_AB_this_turn": 0,
+  "failed_download_attempts_instrumental": 3,
+  "previous_valid": 16,
+  "valid_total": 16,
+  "authorization_total": 20,
+  "remaining": 4,
+  "pending_ids": [
+    "N83",
+    "N84",
+    "N85",
+    "N86"
+  ],
+  "last_valid": "N82",
+  "CT2_ordinal_100": 7,
+  "CT2_not_probability": true,
+  "CT2_new_point": false,
+  "original_human_rows_read": 0,
+  "new_dataset_bytes_recovered": 0,
+  "new_causal_estimates": 0,
+  "new_ESBM_simulations": 0,
+  "new_1of3": 0,
+  "new_2of3": 0,
+  "new_3of3": 0,
+  "sources_added": [
+    "SRC067",
+    "SRC068"
+  ],
+  "two_source_cards_same_2009_cohort": true,
+  "distinct_from_2017_cohort": true,
+  "priors_changed": [
+    "P-LONGITUDINAL-ELIGIBILITY",
+    "P-UNION-DURATION",
+    "P-TRANSPORT"
+  ],
+  "update_events_added": [
+    "U091",
+    "U092",
+    "U093"
+  ],
+  "cumulative_sources": 68,
+  "cumulative_priors": 30,
+  "cumulative_updates": 93,
+  "SSJY_reuse": "BLOCKED_UNVERIFIED_RIGHTSHOLDER_PERMISSIONS",
+  "clean_clone": "NOT_VERIFIED",
+  "no_main_merge": true,
+  "note": "No N83 prereg, no N83 execution. Future independent cohort 2009 is eligible in theory but original data unaccessed. No synthetic cycle created."
+}
