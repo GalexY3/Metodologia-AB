@@ -1,0 +1,9 @@
+# Amendments N110/N111 before future outcomes — resource ceilings, 2026-10-29
+
+**Historical protocol remains visible:** PREREG_BLOCK_A.json and runner freeze 9a71fe8, prior sparse repair 8e56aab. N107/N108/N109 passed. The full runner timed out after N109 while evaluating N110, without saving an N110 result; **N110's original attempt is NOT_EXECUTED_TO_COMPLETION**, not PASS, not a scientific finding.
+
+**Budget reduction does not retrospectively certify the previous test.** For N110_REPAIR, use only seed 101, two independent relabel permutations (RNG seed 10100, 10101), all three schedule modes. Compare all unordered meeting edges after inverse relabeling and require six exact equalities, not approximate aggregate matching counts. This is a **spot-check**, not a full proof of identity equivariance over all graphs. In case of counterexample: INVALID plus adversarial diagnosis; stop.
+
+For N111_REPAIR, on successful N110, run two seeds 101, 211, two source regimes `mixed_random` and `longer_partnerships`, and three meeting policies `pair_max`, `pair_greedy`, `pair_budgeted_max`: **12 longitudinal 16-tick simulations** (instead of prereg original 72). Require per-run stock-flow identity, exclusivity and stagewise counts, publish all 12 rows and policy differences; cannot generalize differences across six seeds or transport to humans. Stage inputs and observational risks unchanged; report runtime. No inference of equal longitudinal exposure budgets, equal final market composition, or intervention effect.
+
+Freeze amended runner source in a **new GitHub commit before executing** the reduced N110/N111 tests. No silent modification of N107/N109 or of original ESBM v2. N110/N111 count only if repaired contract actually passed; the interrupted attempts remain a separate incident. Budget for still-unauthorised follow-up cycles remains available; do not manufacture tests.
