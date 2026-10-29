@@ -1,0 +1,416 @@
+{
+  "schema": "ABH.A-J.BLOCK_D.v1",
+  "date": "2026-10-29",
+  "branch": "research/ab-h-esbm-integrated-20261029",
+  "original_scientific_R5": "STOP_R5_EXTERNAL",
+  "authorized": 20,
+  "start_completed": 15,
+  "new_valid": 5,
+  "ABH_valid_total": 20,
+  "invalid_AB_cycle": 0,
+  "invalid_instrumental_attempts": 0,
+  "planning": 0,
+  "remaining": 0,
+  "CT2_originality_ordinal": 7,
+  "new_grades_1_3": 0,
+  "new_grades_2_3": 0,
+  "new_grades_3_3": 0,
+  "cycle_class": "AB-H technical/model-conditional rather than independently confirmed science",
+  "cycles": [
+    {
+      "id": "N122",
+      "parent": "N121",
+      "mode": "DISTRIBUTION",
+      "D": {
+        "code_sha": "runner D will be committed before execution",
+        "input_original_sha": "f7e6...",
+        "seeds": "1000–1059"
+      },
+      "A": {
+        "question": "Determine dispersion and sign consistency of slot1 vs slot2 over 60 freshly fixed synthetic miniature seeds 1000–1059",
+        "estimand": "computational synthetic oracles/permutation/risk sets, no human decisions"
+      },
+      "B": [
+        "AB-H integrated two-slot vs alternative",
+        "competent neutral source-frozen sham",
+        "invalid model selection / label leakage as counterexamples"
+      ],
+      "C": {
+        "test": "N24 T4; 60 seeds, pair_max slots1/2; complete stock-flow for every run, report mean differences, paired sign counts, min/max, no statistical human inference",
+        "falsifier": "Any failed expected invariant, or unsupported inference from distributions"
+      },
+      "D_instrument": {
+        "code_sha": "runner D will be committed before execution",
+        "input_original_sha": "f7e6...",
+        "seeds": "1000–1059",
+        "prereg_file": "proyectos/mercados-de-pareja/research/ABH_N107_N126_20261029/PREREG_BLOCK_D.json",
+        "original_source_sha256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+        "source_freezes": [
+          "785ab2c7d2a0309badf19c4380c89e6c198ed1aa"
+        ]
+      },
+      "E": {
+        "status": "PASS",
+        "observed": {
+          "id": "N122",
+          "status": "PASS",
+          "seconds": 3.46,
+          "population": "N24, 4 ticks, same generator, 60 seeds 1000-1059",
+          "runs": 120,
+          "paired_active_difference_two_minus_one": {
+            "mean": 1.8166666666666667,
+            "positive": 50,
+            "negative": 1,
+            "ties": 9,
+            "min": -1,
+            "max": 5
+          },
+          "warning": "Same model, 60 new seeds not 60 independent human samples; some policy effects do not improve active pairs."
+        },
+        "prelim_attempt": null,
+        "human_rows": 0
+      },
+      "F": {
+        "controls": "Independent subprocess or permutation where specified, no weaker naive control claims",
+        "adversarial_warning": "Uncalibrated simulated risk sets; acceptance law and hazards imposed; not a human baseline"
+      },
+      "G": {
+        "replication": "INTERNAL_ONLY",
+        "external": "NO_HUMAN_DATA",
+        "clean_clone": "NOT_CLAIMED"
+      },
+      "H": {
+        "prior": "P-SCHEDULE-CORRELATION synthetic-only; all human priors no change",
+        "selection_exposure": "Sequential tests with fixed seeds and known earlier miniature regression case"
+      },
+      "I": {
+        "grade": "0/3",
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "maturity_change": "scorecard separately evidence-audited",
+        "human_identification": "NONE"
+      },
+      "J": {
+        "decision": "VALID_ABH_TECHNICAL",
+        "next": "N123",
+        "slot_used": 1
+      },
+      "errors": [],
+      "result_commit": "cf4008bedb3c09979ce1654da53f1f6b26d40255"
+    },
+    {
+      "id": "N123",
+      "parent": "N122",
+      "mode": "SOCIAL_INSTITUTION",
+      "D": {
+        "code_sha": "runner D will be committed before execution",
+        "input_original_sha": "f7e6...",
+        "seeds": "2000–2059"
+      },
+      "A": {
+        "question": "Test heterogeneity of norm-same/cross and neutral schedules without suppressing negative outcomes",
+        "estimand": "computational synthetic oracles/permutation/risk sets, no human decisions"
+      },
+      "B": [
+        "AB-H integrated two-slot vs alternative",
+        "competent neutral source-frozen sham",
+        "invalid model selection / label leakage as counterexamples"
+      ],
+      "C": {
+        "test": "N24 T4; 60 different fixed seeds 2000–2059, pair_max/norm_same/norm_cross 180 runs; compare same exposure, formation stock and variable signs, no claims of novelty or causality",
+        "falsifier": "Any failed expected invariant, or unsupported inference from distributions"
+      },
+      "D_instrument": {
+        "code_sha": "runner D will be committed before execution",
+        "input_original_sha": "f7e6...",
+        "seeds": "2000–2059",
+        "prereg_file": "proyectos/mercados-de-pareja/research/ABH_N107_N126_20261029/PREREG_BLOCK_D.json",
+        "original_source_sha256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+        "source_freezes": [
+          "785ab2c7d2a0309badf19c4380c89e6c198ed1aa"
+        ]
+      },
+      "E": {
+        "status": "PASS",
+        "observed": {
+          "id": "N123",
+          "status": "PASS",
+          "seconds": 6.279,
+          "population": "N24, 4 ticks, 60 seeds 2000-2059, 3 institutions",
+          "runs": 180,
+          "by_mode": {
+            "pair_max": {
+              "mean_formed": 5.966666666666667,
+              "mean_active": 4.133333333333334,
+              "mean_same_exposure": 0.32803001812525223
+            },
+            "pair_norm_same": {
+              "mean_formed": 6.016666666666667,
+              "mean_active": 4.216666666666667,
+              "mean_same_exposure": 0.5144265504051445
+            },
+            "pair_norm_cross": {
+              "mean_formed": 6,
+              "mean_active": 3.966666666666667,
+              "mean_same_exposure": 0.1694689066014262
+            }
+          },
+          "warning": "Group norm, opportunity and hazard artificial, averages not human effects."
+        },
+        "prelim_attempt": null,
+        "human_rows": 0
+      },
+      "F": {
+        "controls": "Independent subprocess or permutation where specified, no weaker naive control claims",
+        "adversarial_warning": "Uncalibrated simulated risk sets; acceptance law and hazards imposed; not a human baseline"
+      },
+      "G": {
+        "replication": "INTERNAL_ONLY",
+        "external": "NO_HUMAN_DATA",
+        "clean_clone": "NOT_CLAIMED"
+      },
+      "H": {
+        "prior": "P-SCHEDULE-CORRELATION synthetic-only; all human priors no change",
+        "selection_exposure": "Sequential tests with fixed seeds and known earlier miniature regression case"
+      },
+      "I": {
+        "grade": "0/3",
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "maturity_change": "scorecard separately evidence-audited",
+        "human_identification": "NONE"
+      },
+      "J": {
+        "decision": "VALID_ABH_TECHNICAL",
+        "next": "N124",
+        "slot_used": 1
+      },
+      "errors": [],
+      "result_commit": "cf4008bedb3c09979ce1654da53f1f6b26d40255"
+    },
+    {
+      "id": "N124",
+      "parent": "N123",
+      "mode": "PERMUTATION",
+      "D": {
+        "code_sha": "runner D will be committed before execution",
+        "input_original_sha": "f7e6...",
+        "seeds": "101/211"
+      },
+      "A": {
+        "question": "Verify two-slot planner commutes with relabelled agent identities when shock matrices and norm variables are permuted consistently",
+        "estimand": "computational synthetic oracles/permutation/risk sets, no human decisions"
+      },
+      "B": [
+        "AB-H integrated two-slot vs alternative",
+        "competent neutral source-frozen sham",
+        "invalid model selection / label leakage as counterexamples"
+      ],
+      "C": {
+        "test": "N24 T4; seeds 101/211, 3 permutations each, pair_max/norm_same/norm_cross, 18 exact unordered schedule comparisons per fixed riskset",
+        "falsifier": "Any failed expected invariant, or unsupported inference from distributions"
+      },
+      "D_instrument": {
+        "code_sha": "runner D will be committed before execution",
+        "input_original_sha": "f7e6...",
+        "seeds": "101/211",
+        "prereg_file": "proyectos/mercados-de-pareja/research/ABH_N107_N126_20261029/PREREG_BLOCK_D.json",
+        "original_source_sha256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+        "source_freezes": [
+          "785ab2c7d2a0309badf19c4380c89e6c198ed1aa"
+        ]
+      },
+      "E": {
+        "status": "PASS",
+        "observed": {
+          "id": "N124",
+          "status": "PASS",
+          "seconds": 0.332,
+          "exact_permutation_relabel_checks": 18,
+          "failures": 0,
+          "scope": "N24 two slots, 2 seeds ×3 permutations ×3 modes"
+        },
+        "prelim_attempt": null,
+        "human_rows": 0
+      },
+      "F": {
+        "controls": "Independent subprocess or permutation where specified, no weaker naive control claims",
+        "adversarial_warning": "Uncalibrated simulated risk sets; acceptance law and hazards imposed; not a human baseline"
+      },
+      "G": {
+        "replication": "INTERNAL_ONLY",
+        "external": "NO_HUMAN_DATA",
+        "clean_clone": "NOT_CLAIMED"
+      },
+      "H": {
+        "prior": "P-SCHEDULE-CORRELATION synthetic-only; all human priors no change",
+        "selection_exposure": "Sequential tests with fixed seeds and known earlier miniature regression case"
+      },
+      "I": {
+        "grade": "0/3",
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "maturity_change": "scorecard separately evidence-audited",
+        "human_identification": "NONE"
+      },
+      "J": {
+        "decision": "VALID_ABH_TECHNICAL",
+        "next": "N125",
+        "slot_used": 1
+      },
+      "errors": [],
+      "result_commit": "cf4008bedb3c09979ce1654da53f1f6b26d40255"
+    },
+    {
+      "id": "N125",
+      "parent": "N124",
+      "mode": "FAIL_CLOSED",
+      "D": {
+        "code_sha": "runner D will be committed before execution",
+        "input_original_sha": "f7e6...",
+        "seeds": "101/211"
+      },
+      "A": {
+        "question": "Verify corrupted original source and unsupported scheduling arguments are rejected rather than silently accepted",
+        "estimand": "computational synthetic oracles/permutation/risk sets, no human decisions"
+      },
+      "B": [
+        "AB-H integrated two-slot vs alternative",
+        "competent neutral source-frozen sham",
+        "invalid model selection / label leakage as counterexamples"
+      ],
+      "C": {
+        "test": "Original code isolated copy altered one byte must fail strict SHA; unknown mode and slots3 raise ValueError; no real originals changed",
+        "falsifier": "Any failed expected invariant, or unsupported inference from distributions"
+      },
+      "D_instrument": {
+        "code_sha": "runner D will be committed before execution",
+        "input_original_sha": "f7e6...",
+        "seeds": "101/211",
+        "prereg_file": "proyectos/mercados-de-pareja/research/ABH_N107_N126_20261029/PREREG_BLOCK_D.json",
+        "original_source_sha256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+        "source_freezes": [
+          "785ab2c7d2a0309badf19c4380c89e6c198ed1aa"
+        ]
+      },
+      "E": {
+        "status": "PASS",
+        "observed": {
+          "id": "N125",
+          "status": "PASS",
+          "seconds": 1.439,
+          "fail_closed_checks": 3,
+          "invalid_mode_rejected": true,
+          "unsupported_slots3_rejected": true,
+          "corrupted_original_SHA_import_rejected": true,
+          "original_file_untouched": true
+        },
+        "prelim_attempt": null,
+        "human_rows": 0
+      },
+      "F": {
+        "controls": "Independent subprocess or permutation where specified, no weaker naive control claims",
+        "adversarial_warning": "Uncalibrated simulated risk sets; acceptance law and hazards imposed; not a human baseline"
+      },
+      "G": {
+        "replication": "INTERNAL_ONLY",
+        "external": "NO_HUMAN_DATA",
+        "clean_clone": "NOT_CLAIMED"
+      },
+      "H": {
+        "prior": "P-SCHEDULE-CORRELATION synthetic-only; all human priors no change",
+        "selection_exposure": "Sequential tests with fixed seeds and known earlier miniature regression case"
+      },
+      "I": {
+        "grade": "0/3",
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "maturity_change": "scorecard separately evidence-audited",
+        "human_identification": "NONE"
+      },
+      "J": {
+        "decision": "VALID_ABH_TECHNICAL",
+        "next": "N126",
+        "slot_used": 1
+      },
+      "errors": [],
+      "result_commit": "cf4008bedb3c09979ce1654da53f1f6b26d40255"
+    },
+    {
+      "id": "N126",
+      "parent": "N125",
+      "mode": "PORTABILITY",
+      "D": {
+        "code_sha": "runner D will be committed before execution",
+        "input_original_sha": "f7e6...",
+        "seeds": "101/211"
+      },
+      "A": {
+        "question": "Verify clean isolated local directory with only required code files can reproduce a historical equality and a two-slot 24-agent test",
+        "estimand": "computational synthetic oracles/permutation/risk sets, no human decisions"
+      },
+      "B": [
+        "AB-H integrated two-slot vs alternative",
+        "competent neutral source-frozen sham",
+        "invalid model selection / label leakage as counterexamples"
+      ],
+      "C": {
+        "test": "Copy actual original SHA, adapter and fixture to temporary directory; subprocess python -I starts without repo source-path reliance; verify original regression and exact pre-observed miniature 101 stock as regression, not a new scientific holdout",
+        "falsifier": "Any failed expected invariant, or unsupported inference from distributions"
+      },
+      "D_instrument": {
+        "code_sha": "runner D will be committed before execution",
+        "input_original_sha": "f7e6...",
+        "seeds": "101/211",
+        "prereg_file": "proyectos/mercados-de-pareja/research/ABH_N107_N126_20261029/PREREG_BLOCK_D.json",
+        "original_source_sha256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+        "source_freezes": [
+          "785ab2c7d2a0309badf19c4380c89e6c198ed1aa"
+        ]
+      },
+      "E": {
+        "status": "PASS",
+        "observed": {
+          "id": "N126",
+          "status": "PASS",
+          "seconds": 1.209,
+          "execution": "isolated Python subprocess in temporary clean source directory, same installed environment, no external dependency installation",
+          "legacy_formed": 224,
+          "mini_formed": 5,
+          "mini_active": 4,
+          "source_sha_check": true,
+          "clean_os_independent_replication": false
+        },
+        "prelim_attempt": null,
+        "human_rows": 0
+      },
+      "F": {
+        "controls": "Independent subprocess or permutation where specified, no weaker naive control claims",
+        "adversarial_warning": "Uncalibrated simulated risk sets; acceptance law and hazards imposed; not a human baseline"
+      },
+      "G": {
+        "replication": "INTERNAL_ONLY",
+        "external": "NO_HUMAN_DATA",
+        "clean_clone": "ISOLATED_PROCESS_SAME_ENVIRONMENT_ONLY"
+      },
+      "H": {
+        "prior": "P-SCHEDULE-CORRELATION synthetic-only; all human priors no change",
+        "selection_exposure": "Sequential tests with fixed seeds and known earlier miniature regression case"
+      },
+      "I": {
+        "grade": "0/3",
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "maturity_change": "scorecard separately evidence-audited",
+        "human_identification": "NONE"
+      },
+      "J": {
+        "decision": "VALID_ABH_TECHNICAL",
+        "next": "ABH campaign close",
+        "slot_used": 1
+      },
+      "errors": [],
+      "result_commit": "cf4008bedb3c09979ce1654da53f1f6b26d40255"
+    }
+  ]
+}
