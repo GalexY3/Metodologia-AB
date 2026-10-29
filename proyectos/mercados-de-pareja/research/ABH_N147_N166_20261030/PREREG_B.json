@@ -1,0 +1,192 @@
+{
+  "schema": "ABH3.2.1_PREREG_B",
+  "date": "2026-10-30",
+  "branch": "research/ab-h-esbm-trajectory-equivalence-20261030",
+  "authorized_total": 20,
+  "valid_negative_A": 4,
+  "slots_remaining": 16,
+  "parents": [
+    "N147",
+    "N148",
+    "N149",
+    "N150"
+  ],
+  "trigger": "Old actor-ID ordering induces t1 dissolution and t0 matching divergences; original source uses u_hazard[t,i,j] and u_match[t,min(i,j),max(i,j)]",
+  "model_amendment": "New standalone engine copies original explicit implementation and adds shock_policy=historical|symmetric_hazard|symmetric_pair with default historical, never alters esbm_dynamic.py",
+  "symmetric_shock": "(U[t,i,j] + U[t,j,i]) mod 1 for i!=j; distribution uniform under original iid pair shocks, but correlation with original shocks is imposed; no transport to humans",
+  "contracts": [
+    {
+      "id": "N151",
+      "parent": "N150",
+      "mode": "HAZARD_ISOLATION",
+      "D": {
+        "freeze": "Separate code and runner commit after this prereg and before any outcomes",
+        "source_original": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+      },
+      "A": {
+        "question": "Isolated symmetric dyadic hazard should remove early dissolution permutation counterexample while preserving default historical mode",
+        "estimand": "N24x4 synthetic event path invariance and first-stage mechanism isolation"
+      },
+      "B": {
+        "controls": [
+          "unmodified historical ESBM exact 60 original outputs",
+          "original explicit engine default original shocks",
+          "ring and degree-preserving canonical rewired",
+          "no guarantee of invariance when legacy preference learning is stateful"
+        ],
+        "null": "Symmetric shock choice does not repair full path"
+      },
+      "C": {
+        "tests": "Ring 2 slots, seed101 rep0 first t1 divergence; new symmetric_hazard choice with symmetric hazard and original matching; do not claim complete path pass if downstream match diverges",
+        "falsifier": "Any non-identical event multiset or temporal track rejects full identity claim; partial isolates not reinterpreted"
+      },
+      "E": "NOT_EXECUTED",
+      "F": {
+        "adversarial": "all conditions include mismatches and first counterexamples; no output filtering"
+      },
+      "G": {
+        "independent": "NO",
+        "human": "NONE"
+      },
+      "H": "Tech-only update P-NETWORK-INVARIANCE if verified; human priors unchanged",
+      "I": {
+        "grade": "0/3",
+        "CT2": 7
+      },
+      "J": {
+        "pass": "N152",
+        "fail": "REGISTER NEGATIVE and branch REPAIR via separate code freeze"
+      }
+    },
+    {
+      "id": "N152",
+      "parent": "N151",
+      "mode": "MATCH_ISOLATION",
+      "D": {
+        "freeze": "Separate code and runner commit after this prereg and before any outcomes",
+        "source_original": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+      },
+      "A": {
+        "question": "Symmetric dyadic matching tie weights should remove pre-existing first-tick legacy matching actor-ID artifact",
+        "estimand": "N24x4 synthetic event path invariance and first-stage mechanism isolation"
+      },
+      "B": {
+        "controls": [
+          "unmodified historical ESBM exact 60 original outputs",
+          "original explicit engine default original shocks",
+          "ring and degree-preserving canonical rewired",
+          "no guarantee of invariance when legacy preference learning is stateful"
+        ],
+        "null": "Symmetric shock choice does not repair full path"
+      },
+      "C": {
+        "tests": "Legacy 1 slot seed101 rep0, full-stage first-tick matching; compare symmetric_pair and historical, report first divergence, no posthoc selected global success",
+        "falsifier": "Any non-identical event multiset or temporal track rejects full identity claim; partial isolates not reinterpreted"
+      },
+      "E": "NOT_EXECUTED",
+      "F": {
+        "adversarial": "all conditions include mismatches and first counterexamples; no output filtering"
+      },
+      "G": {
+        "independent": "NO",
+        "human": "NONE"
+      },
+      "H": "Tech-only update P-NETWORK-INVARIANCE if verified; human priors unchanged",
+      "I": {
+        "grade": "0/3",
+        "CT2": 7
+      },
+      "J": {
+        "pass": "N153",
+        "fail": "REGISTER NEGATIVE and branch REPAIR via separate code freeze"
+      }
+    },
+    {
+      "id": "N153",
+      "parent": "N152",
+      "mode": "FULL_TRAJECTORY_CANONICAL",
+      "D": {
+        "freeze": "Separate code and runner commit after this prereg and before any outcomes",
+        "source_original": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+      },
+      "A": {
+        "question": "With both dyadic shock identities fixed, N24 four ticks actor permutations should have identical directed events and all aggregates in canonical ring",
+        "estimand": "N24x4 synthetic event path invariance and first-stage mechanism isolation"
+      },
+      "B": {
+        "controls": [
+          "unmodified historical ESBM exact 60 original outputs",
+          "original explicit engine default original shocks",
+          "ring and degree-preserving canonical rewired",
+          "no guarantee of invariance when legacy preference learning is stateful"
+        ],
+        "null": "Symmetric shock choice does not repair full path"
+      },
+      "C": {
+        "tests": "2 seeds×3 perms×2 slots; 12 comparisons exact, old results preserved separately",
+        "falsifier": "Any non-identical event multiset or temporal track rejects full identity claim; partial isolates not reinterpreted"
+      },
+      "E": "NOT_EXECUTED",
+      "F": {
+        "adversarial": "all conditions include mismatches and first counterexamples; no output filtering"
+      },
+      "G": {
+        "independent": "NO",
+        "human": "NONE"
+      },
+      "H": "Tech-only update P-NETWORK-INVARIANCE if verified; human priors unchanged",
+      "I": {
+        "grade": "0/3",
+        "CT2": 7
+      },
+      "J": {
+        "pass": "N154",
+        "fail": "REGISTER NEGATIVE and branch REPAIR via separate code freeze"
+      }
+    },
+    {
+      "id": "N154",
+      "parent": "N153",
+      "mode": "FULL_TRAJECTORY_RIVALS",
+      "D": {
+        "freeze": "Separate code and runner commit after this prereg and before any outcomes",
+        "source_original": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+      },
+      "A": {
+        "question": "With both fixes test canonical rewired and legacy contrasts under same actors and shocks",
+        "estimand": "N24x4 synthetic event path invariance and first-stage mechanism isolation"
+      },
+      "B": {
+        "controls": [
+          "unmodified historical ESBM exact 60 original outputs",
+          "original explicit engine default original shocks",
+          "ring and degree-preserving canonical rewired",
+          "no guarantee of invariance when legacy preference learning is stateful"
+        ],
+        "null": "Symmetric shock choice does not repair full path"
+      },
+      "C": {
+        "tests": "Canonical rewired 12 comparisons plus legacy 4, exact aggregated and directed timeline; any failure invalidates universal equivariance claim",
+        "falsifier": "Any non-identical event multiset or temporal track rejects full identity claim; partial isolates not reinterpreted"
+      },
+      "E": "NOT_EXECUTED",
+      "F": {
+        "adversarial": "all conditions include mismatches and first counterexamples; no output filtering"
+      },
+      "G": {
+        "independent": "NO",
+        "human": "NONE"
+      },
+      "H": "Tech-only update P-NETWORK-INVARIANCE if verified; human priors unchanged",
+      "I": {
+        "grade": "0/3",
+        "CT2": 7
+      },
+      "J": {
+        "pass": "next block conditional on results",
+        "fail": "REGISTER NEGATIVE and branch REPAIR via separate code freeze"
+      }
+    }
+  ],
+  "ethics": "STOP_R5 humans, no SSJY SRC104 licensing or author outreach"
+}
