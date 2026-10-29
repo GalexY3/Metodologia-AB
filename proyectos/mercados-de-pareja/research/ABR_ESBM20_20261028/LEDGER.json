@@ -18,7 +18,7 @@
     "N85",
     "N86"
   ],
-  "R5": "STOP_AFTER_N82__NEW_DISTINCT_HCMST_2009_LONGITUDINAL_COHORT_DOCUMENTED_NOT_ACCESSED__SSJY_RIGHTS_UNVERIFIED__FOUR_UNUSED_N83_N86",
+  "R5": "STOP_AFTER_N82__HCMST2009_WAVE6_AND_2023_SURVIVAL_PRIOR_ART_REVIEW_ONLY__NO_RAW_ACCESS__SSJY_RIGHTS_UNVERIFIED__FOUR_UNUSED",
   "prereg_commit": "026cc12b5136e60034c71c2f794d01a453bdf5bd",
   "source_freeze_commit": "7f196409bc1ba5b5af6d8caad39c173a38a99405",
   "source_sha256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
@@ -35,19 +35,22 @@
   "QA": "QA.json",
   "raw_data_human_processed": false,
   "prior_register": {
-    "sources_total": 68,
+    "sources_total": 71,
     "prior_hypotheses_total": 30,
-    "update_events_total": 93,
+    "update_events_total": 98,
     "latest_sources": [
-      "SRC067",
-      "SRC068"
+      "SRC069",
+      "SRC070",
+      "SRC071"
     ],
     "latest_updates": [
-      "U091",
-      "U092",
-      "U093"
+      "U094",
+      "U095",
+      "U096",
+      "U097",
+      "U098"
     ],
-    "source_independence": "SRC067 and SRC068 are one 2009 participant cohort; HCMST 2009 cohort is independent from 2017–2022 SRC048/SRC049 but no raw data, no hazard estimates."
+    "independence": "SRC067–SRC071 all describe HCMST2009 original participants, plus thesis analysis of SAME sample; HCMST2017 fresh sample SRC048/SRC049 is different. W6 in calendar 2017 of 2009 cohort is NOT new 2017 sample."
   },
   "new_N1": 0,
   "new_N2": 0,
@@ -730,8 +733,8 @@
     "source": "../ABR_PAIRFAM_GATE_20261028/LEDGER.json",
     "source_blob_sha": "a50c6fde0a9e0532f5e974f32e9f3744e686238c",
     "not_counted_cycle": "source update after N78 is maintenance (SRC053/U056-U058).",
-    "current_status": "STOP_R5; N83-N86 remain NOT_EXECUTED, no new HCMST2009 data, SSJY rights blocked",
-    "current_posthoc_audit": "../ABR_N83_UNOPENED_HCMST_2009_GATE_20261029/REPORT.md",
+    "current_status": "STOP_R5; N83-N86 NOT EXECUTED; no HCMST2009 public data bytes, preexisting breakup survival work",
+    "current_posthoc_audit": "../ABR_HCMST_W6_SURVIVAL_PRIOR_GATE_20261029/REPORT.md",
     "latest_completed": "N82",
     "last_updated": "2026-10-29"
   },
@@ -761,25 +764,29 @@
   },
   "latest_posthoc_gate": {
     "date": "2026-10-29",
-    "type": "INDEPENDENT_HCMST_2009_COHORT_ACCESS_GATE_NOT_AB_CYCLE",
+    "type": "HCMST_2009_WAVE6_AND_2023_EXISTING_SURVIVAL_PRIOR_ART_DOCUMENTARY_NONCYCLE",
     "new_valid": 0,
     "new_invalid": 0,
     "new_planning": 0,
-    "report": "../ABR_N83_UNOPENED_HCMST_2009_GATE_20261029/REPORT.md",
-    "status": "../ABR_N83_UNOPENED_HCMST_2009_GATE_20261029/STATUS.json",
+    "no_N83_prereg": true,
+    "report": "../ABR_HCMST_W6_SURVIVAL_PRIOR_GATE_20261029/REPORT.md",
+    "status": "../ABR_HCMST_W6_SURVIVAL_PRIOR_GATE_20261029/STATUS.json",
     "sources": [
-      "SRC067",
-      "SRC068"
+      "SRC069",
+      "SRC070",
+      "SRC071"
     ],
     "updates": [
-      "U091",
-      "U092",
-      "U093"
+      "U094",
+      "U095",
+      "U096",
+      "U097",
+      "U098"
     ],
-    "no_raw_data_downloaded": true,
-    "ct2_unchanged": 7,
-    "no_N83_prereg": true,
-    "no_new_cycle_point": true,
-    "SSJY_reuse": "STOP_UNVERIFIED_OWNER_PERMISSION"
+    "new_original_rows": 0,
+    "CT2_after": 7,
+    "no_new_CT2_point": true,
+    "scientific_novelty_2of3": false,
+    "rights": "SSJY_BLOCKED_HISTORICAL_CONTEST_RIGHTSHOLDER_PERMISSIONS_UNVERIFIED"
   }
 }
