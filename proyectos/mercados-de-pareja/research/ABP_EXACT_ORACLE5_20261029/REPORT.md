@@ -30,3 +30,7 @@ La implementación usa enumeración exhaustiva en JavaScript, sin datos original
 - **Siguiente implementación técnica útil:** acoplar `oracle.js` a un modo miniatura de ESBM para que el simulador de 144 agentes pase invariantes y controles de emparejamiento/censura frente a soluciones exhaustivas; sería AB-P prospectivo distinto y no nueva prueba empírica.
 
 **AB-DECIDE:** `AB-P FOCUS COMPLETE`; `AB-R STOP_R5_EXTERNAL`. No se modificó el código original ESBM ni los votos SRC104 ni se aceptaron licencias; no se contactó a autores. No hay nuevo punto CT2 que representar: conservar la trayectoria histórica documentada y no simular una subida.
+
+## Mapa O7 y proyección interactiva
+
+[GRAPH.json](GRAPH.json) conserva siete nodos estables (raíz técnica, P01–P05 y STOP_R5), sus relaciones, decisiones y recibo de ejecución sin complaints registradas. [VIEWER.html](VIEWER.html) es una proyección HTML autocontenida y seleccionable de esos nodos, **sin prueba visual en navegador**. Esta vista no reemplaza el ledger ni la fuente versionada del grafo. La ausencia de complaints no acredita ausencia de fallos.
