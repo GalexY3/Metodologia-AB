@@ -1,0 +1,187 @@
+{
+  "schema": "ABH3.2.1.PREREG_D",
+  "date": "2026-10-30",
+  "branch": "research/ab-h-esbm-trajectory-equivalence-20261030",
+  "authorized": 20,
+  "used_through_N159": 13,
+  "slots_remaining": 7,
+  "trigger": "N156 N157 each 18/24 strict PASS; remaining 6/24 each differ only final_private_aspiration_bias_mean or final_public_reputation_penalty_mean, while events/stocks equal; suspected floating reduction order",
+  "contracts": [
+    {
+      "id": "N160",
+      "parent": "N159",
+      "mode": "FLOATING_POINT_AUDIT",
+      "D": {
+        "code_freeze": "New engine and runner commit after prereg, before outcomes",
+        "seeds": "101/211; 311/509",
+        "original_sha256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+      },
+      "A": {
+        "question": "Isolate N156/N157 mismatches as numerical reduction order versus genuine event differences",
+        "estimand": "Model-internal exact path equivariance vs numeric reduction; fresh simulated stock contrast"
+      },
+      "B": {
+        "rivals": [
+          "IEEE-754 nonassociative summation artifact",
+          "genuine actor-label behavioral dependence",
+          "old null vs corrected canonical graph",
+          "synchronous/private/public feedback"
+        ],
+        "null": "If event outputs differ, numerical-only explanation fails"
+      },
+      "C": {
+        "discriminant": "Repeat six failed private and six public comparisons; event delta zero; absolute scalar mean difference <=1e-12; preserve largest discrepancy and original strict mismatch.",
+        "falsifier": "Any event difference or abs error over tolerance fails N160; any exact mismatch fails N161/162; N163 any delta signs acceptable"
+      },
+      "E": "PENDING",
+      "F": {
+        "adversary": "compare events separately from floating aggregates; no retrospective weakening of N156/N157 strict tests"
+      },
+      "G": {
+        "human": "NONE",
+        "independent_OS": "NONE"
+      },
+      "H": "P-NETWORK-INVARIANCE internal only and P-NOVELTY no scientific increase",
+      "I": {
+        "grade": "0/3",
+        "CT2": 7
+      },
+      "J": {
+        "if_pass": "N161",
+        "if_fail": "REPAIR with code freeze and honest negative ledger"
+      }
+    },
+    {
+      "id": "N161",
+      "parent": "N160",
+      "mode": "NUMERIC_REPAIR",
+      "D": {
+        "code_freeze": "New engine and runner commit after prereg, before outcomes",
+        "seeds": "101/211; 311/509",
+        "original_sha256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+      },
+      "A": {
+        "question": "Use order-stable math.fsum for opt-in symmetric pairing summaries without altering historical default",
+        "estimand": "Model-internal exact path equivariance vs numeric reduction; fresh simulated stock contrast"
+      },
+      "B": {
+        "rivals": [
+          "IEEE-754 nonassociative summation artifact",
+          "genuine actor-label behavioral dependence",
+          "old null vs corrected canonical graph",
+          "synchronous/private/public feedback"
+        ],
+        "null": "If event outputs differ, numerical-only explanation fails"
+      },
+      "C": {
+        "discriminant": "New v2 engine source freeze, 60 old-source parity historical and 24+24 private/public relabel checks, first-run expected bitwise exact summary values; assert no source mutation.",
+        "falsifier": "Any event difference or abs error over tolerance fails N160; any exact mismatch fails N161/162; N163 any delta signs acceptable"
+      },
+      "E": "PENDING",
+      "F": {
+        "adversary": "compare events separately from floating aggregates; no retrospective weakening of N156/N157 strict tests"
+      },
+      "G": {
+        "human": "NONE",
+        "independent_OS": "NONE"
+      },
+      "H": "P-NETWORK-INVARIANCE internal only and P-NOVELTY no scientific increase",
+      "I": {
+        "grade": "0/3",
+        "CT2": 7
+      },
+      "J": {
+        "if_pass": "N162",
+        "if_fail": "REPAIR with code freeze and honest negative ledger"
+      }
+    },
+    {
+      "id": "N162",
+      "parent": "N161",
+      "mode": "MULTI_REGIME",
+      "D": {
+        "code_freeze": "New engine and runner commit after prereg, before outcomes",
+        "seeds": "101/211; 311/509",
+        "original_sha256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+      },
+      "A": {
+        "question": "Check exact full trajectory and public/private combined policies with explicit social norm priority for independently selected seeds",
+        "estimand": "Model-internal exact path equivariance vs numeric reduction; fresh simulated stock contrast"
+      },
+      "B": {
+        "rivals": [
+          "IEEE-754 nonassociative summation artifact",
+          "genuine actor-label behavioral dependence",
+          "old null vs corrected canonical graph",
+          "synchronous/private/public feedback"
+        ],
+        "null": "If event outputs differ, numerical-only explanation fails"
+      },
+      "C": {
+        "discriminant": "Seeds 311,509; 2 canonical graphs × 2 slots × private/public both on × three identity permutations; require 24 exact directed-event and whole result comparisons.",
+        "falsifier": "Any event difference or abs error over tolerance fails N160; any exact mismatch fails N161/162; N163 any delta signs acceptable"
+      },
+      "E": "PENDING",
+      "F": {
+        "adversary": "compare events separately from floating aggregates; no retrospective weakening of N156/N157 strict tests"
+      },
+      "G": {
+        "human": "NONE",
+        "independent_OS": "NONE"
+      },
+      "H": "P-NETWORK-INVARIANCE internal only and P-NOVELTY no scientific increase",
+      "I": {
+        "grade": "0/3",
+        "CT2": 7
+      },
+      "J": {
+        "if_pass": "N163",
+        "if_fail": "REPAIR with code freeze and honest negative ledger"
+      }
+    },
+    {
+      "id": "N163",
+      "parent": "N162",
+      "mode": "PROSPECTIVE_CANONICAL_NETWORK",
+      "D": {
+        "code_freeze": "New engine and runner commit after prereg, before outcomes",
+        "seeds": "6100..6129",
+        "original_sha256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+      },
+      "A": {
+        "question": "Run fresh seed-block canonical ring vs canonical rewired under matched shocks and degree, preserving first-stage risk set denominators",
+        "estimand": "Model-internal exact path equivariance vs numeric reduction; fresh simulated stock contrast"
+      },
+      "B": {
+        "rivals": [
+          "IEEE-754 nonassociative summation artifact",
+          "genuine actor-label behavioral dependence",
+          "old null vs corrected canonical graph",
+          "synchronous/private/public feedback"
+        ],
+        "null": "If event outputs differ, numerical-only explanation fails"
+      },
+      "C": {
+        "discriminant": "30 synthetic seeds 6100–6129, two slots and symmetric_pair; 60 N24×4 real simulations; paired stock signs and exposure totals; no causal claim because eligible risksets/paths can differ; report zeros and negatives.",
+        "falsifier": "Any event difference or abs error over tolerance fails N160; any exact mismatch fails N161/162; N163 any delta signs acceptable"
+      },
+      "E": "PENDING",
+      "F": {
+        "adversary": "compare events separately from floating aggregates; no retrospective weakening of N156/N157 strict tests"
+      },
+      "G": {
+        "human": "NONE",
+        "independent_OS": "NONE"
+      },
+      "H": "P-NETWORK-INVARIANCE internal only and P-NOVELTY no scientific increase",
+      "I": {
+        "grade": "0/3",
+        "CT2": 7
+      },
+      "J": {
+        "if_pass": "N164–N166 demo and reproducibility",
+        "if_fail": "REPAIR with code freeze and honest negative ledger"
+      }
+    }
+  ]
+}
