@@ -1,0 +1,37 @@
+{
+  "schema": "ABR_cycle_AJ_relabel_invariance_v1",
+  "cycle": "N91",
+  "status": "COMPLETED_VALID_TECHNICAL_SYNTHETIC_0_3",
+  "preexecution_commit": "8bf3838f2858948f9201e8d25d89178c92eed64a",
+  "code_sha256": "2ea5b39520f86dd35d760f6d29ddac26ff839afa1289aebbb034cf3ceeb2e791",
+  "results": "proyectos/mercados-de-pareja/research/ABR_BATCH2_N91_ACTOR_RELABEL_ORDER_20261029/RESULTS_N91_COMPACT.json",
+  "A": "Does model outcome change when only artificial IDs are relabelled under same actors/shocks?",
+  "B": "5 negative-control policies vs sequential visibility balancing; identity, reverse and 2 seeded relabelings",
+  "C": "Formed relationships, Gini, output and run equivalence, 6 original seeds×6 scenarios",
+  "D": "36 original +144 relabel runs on exact source, original six seeds and stable pair shocks from upper triangle",
+  "E": "Complete A–J and executable gzip SHA frozen in Git before any result execution",
+  "F": "18/18 visibility balancing relabel change formed, Δ mean −8.0556 range −32 to +19, 4 positives 14 negatives",
+  "G": "Identity 36/36, full exogenous tensor inverse and pair shock transport, formed−dissolved=active all; negative controls 90/90 formed invariant",
+  "H": "Private/public full dict last-bit floating summation changes found posthoc; no substantive matches difference, attribution to seen needs separate follow-up",
+  "I": "U143/U144 no prior status changes, 0/3 sociology, CT2 7",
+  "J": "Count N91 one valid source-based computational audit, N92 available, N93–N106 reserved; R5 external STOP",
+  "budget": {
+    "valid": 25,
+    "granted": 40,
+    "pending": 15,
+    "available_current": 1,
+    "reserved": 14
+  },
+  "score": {
+    "before": 40.7,
+    "after": 40.95
+  },
+  "privacy": {
+    "human_microdata": false,
+    "SSJY": false,
+    "author_contact": false,
+    "licenses": false,
+    "merge_main": false
+  },
+  "clean_clone": "NOT_VERIFIED"
+}

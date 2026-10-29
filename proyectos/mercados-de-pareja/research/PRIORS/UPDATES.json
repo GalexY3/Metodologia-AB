@@ -4,7 +4,7 @@
   "date": "2026-10-28",
   "mode": "append-only logical, versioned by Git commits",
   "reconstructed_from_documents": "Retrospective backfill, not preregistration. Old before values NOT_RECORDED unless documented explicitly.",
-  "source_coverage": "97 sources, 30 priors, 142 updates, no new external human evidence. N89, N90 synthetic exact-sham mechanisms.",
+  "source_coverage": "97 original sources, 30 priors, 144 updates; N91 180 source-verified real Python synthetic runs, no human data.",
   "events": [
     {
       "id": "U001",
@@ -3575,7 +3575,53 @@
       "prior_probability_before": null,
       "prior_probability_after": null,
       "AB_cycle_increment": 0
+    },
+    {
+      "id": "U143",
+      "prior_id": "P-PLATFORM-RANKING",
+      "source_ids": [],
+      "cycle_ids": [
+        "N91"
+      ],
+      "before": "EXTERNAL_FIELD_EVIDENCE",
+      "after": "EXTERNAL_FIELD_EVIDENCE",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "recorded_at": "2026-10-29",
+      "entry_status": "ACTIVE",
+      "evidence_type": "SOURCE_FROZEN_REAL_PYTHON_180_RUN_ACTOR_RELABEL_AUDIT",
+      "what_the_sources_contribute": "Source-verified synthetic exposure balancing is not permutation invariant: 18/18 relabeled runs change formed pair counts (mean -8.06, min -32, max +19), while random, popular, same_norm, private, public conditions preserve formed pairs in 90/90 perm tests. Internal label order can change opportunity distribution; external platform causal prior unchanged.",
+      "why_this_updates_or_checks_prior": "Technical counterexample to an identity-invariance requirement inside an artificial visibility-balancing rule; no empirical evidence.",
+      "limits": "Six reused artificial seeds, no observed human exposures. Post hoc float-tolerance diagnostic labeled as such; platform policies have previous literature; attribution to within-tick seen mechanism requires separate ablation.",
+      "falsifier_or_followup": "Test pre-frozen per-tick snapshot of seen counters under identical relabelings, versus original and negative control, and independently observed exposure ordering if ever legal.",
+      "numerical_bayesian_update": false,
+      "prior_probability_before": null,
+      "prior_probability_after": null,
+      "AB_cycle_increment": 1,
+      "prereg_status": "CODE_AND_CONTRACT_FROZEN_AT_8bf3838f2858948f9201e8d25d89178c92eed64a"
+    },
+    {
+      "id": "U144",
+      "prior_id": "P-ACTION-SEMANTICS",
+      "source_ids": [],
+      "cycle_ids": [
+        "N91"
+      ],
+      "before": "HISTORICAL_COMPETITION_WORKFLOW_IDENTIFIED_NOT_VERIFIED_ATTENTION",
+      "after": "HISTORICAL_COMPETITION_WORKFLOW_IDENTIFIED_NOT_VERIFIED_ATTENTION",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "recorded_at": "2026-10-29",
+      "entry_status": "ACTIVE",
+      "evidence_type": "SOURCE_FROZEN_REAL_PYTHON_180_RUN_ACTOR_RELABEL_AUDIT",
+      "what_the_sources_contribute": "N91 relabel test confirms semantics/identity of consent graph under common shocks and agent label is stable for 5 policies, while balanced-policy sequential exposure changes matches. Diagnostic disallows interpreting synthetic indices as time/randomization of human exposure; no human action semantics update.",
+      "why_this_updates_or_checks_prior": "Technical counterexample to an identity-invariance requirement inside an artificial visibility-balancing rule; no empirical evidence.",
+      "limits": "Six reused artificial seeds, no observed human exposures. Post hoc float-tolerance diagnostic labeled as such; platform policies have previous literature; attribution to within-tick seen mechanism requires separate ablation.",
+      "falsifier_or_followup": "Test pre-frozen per-tick snapshot of seen counters under identical relabelings, versus original and negative control, and independently observed exposure ordering if ever legal.",
+      "numerical_bayesian_update": false,
+      "prior_probability_before": null,
+      "prior_probability_after": null,
+      "AB_cycle_increment": 0,
+      "prereg_status": "CODE_AND_CONTRACT_FROZEN_AT_8bf3838f2858948f9201e8d25d89178c92eed64a"
     }
   ],
-  "last_campaign": "ABR_BATCH2_N90_PRIVATE_LEARNING_TIMING_20261029"
+  "last_campaign": "ABR_BATCH2_N91_ACTOR_RELABEL_ORDER_20261029"
 }

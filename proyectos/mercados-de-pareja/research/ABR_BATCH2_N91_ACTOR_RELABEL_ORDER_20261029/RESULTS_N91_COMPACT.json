@@ -1,0 +1,165 @@
+{
+  "cycle": "N91",
+  "date": "2026-10-29",
+  "status": "EXECUTED_VALID_SYNTHETIC_INVARIANCE_AUDIT_0_3",
+  "precommit": "8bf3838f2858948f9201e8d25d89178c92eed64a",
+  "source_sha256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+  "script_sha256": "2ea5b39520f86dd35d760f6d29ddac26ff839afa1289aebbb034cf3ceeb2e791",
+  "code_gzip_sha256": "003aba40cedf0fe470fa0820fe1827795b8fa1c90715d46780d1500ff5aeca0a",
+  "code_git_blob": "a731d753b8675d270da254fb824f420b056eab41",
+  "original_calls": 36,
+  "relabel_calls": 144,
+  "identity_exact": 36,
+  "all_roundtrip_and_pair_shocks": true,
+  "all_balance_checks": true,
+  "by_scenario": [
+    {
+      "scenario": "mixed_random",
+      "permuted_runs": 18,
+      "formed_change_count": 0,
+      "full_field_differences": 0,
+      "mean_delta_formed": 0,
+      "mean_delta_gini": 0
+    },
+    {
+      "scenario": "popularity_ranking",
+      "permuted_runs": 18,
+      "formed_change_count": 0,
+      "full_field_differences": 0,
+      "mean_delta_formed": 0,
+      "mean_delta_gini": 0
+    },
+    {
+      "scenario": "institutional_segregation",
+      "permuted_runs": 18,
+      "formed_change_count": 0,
+      "full_field_differences": 0,
+      "mean_delta_formed": 0,
+      "mean_delta_gini": 0
+    },
+    {
+      "scenario": "private_rejection_learning",
+      "permuted_runs": 18,
+      "formed_change_count": 0,
+      "full_field_differences": 9,
+      "mean_delta_formed": 0,
+      "mean_delta_gini": 0
+    },
+    {
+      "scenario": "public_rejection_signal",
+      "permuted_runs": 18,
+      "formed_change_count": 0,
+      "full_field_differences": 3,
+      "mean_delta_formed": 0,
+      "mean_delta_gini": 0
+    },
+    {
+      "scenario": "visibility_balancing",
+      "permuted_runs": 18,
+      "formed_change_count": 18,
+      "full_field_differences": 18,
+      "mean_delta_formed": -8.055555555555555,
+      "mean_delta_gini": 0.011917037815397262
+    }
+  ],
+  "balance_permutation_deltas_per_seed": [
+    {
+      "seed": 101,
+      "relabel": "reverse",
+      "delta_formed": -2
+    },
+    {
+      "seed": 101,
+      "relabel": "shuffle_1",
+      "delta_formed": 1
+    },
+    {
+      "seed": 101,
+      "relabel": "shuffle_2",
+      "delta_formed": 19
+    },
+    {
+      "seed": 211,
+      "relabel": "reverse",
+      "delta_formed": -17
+    },
+    {
+      "seed": 211,
+      "relabel": "shuffle_1",
+      "delta_formed": -3
+    },
+    {
+      "seed": 211,
+      "relabel": "shuffle_2",
+      "delta_formed": -2
+    },
+    {
+      "seed": 307,
+      "relabel": "reverse",
+      "delta_formed": -8
+    },
+    {
+      "seed": 307,
+      "relabel": "shuffle_1",
+      "delta_formed": -1
+    },
+    {
+      "seed": 307,
+      "relabel": "shuffle_2",
+      "delta_formed": 6
+    },
+    {
+      "seed": 401,
+      "relabel": "reverse",
+      "delta_formed": -23
+    },
+    {
+      "seed": 401,
+      "relabel": "shuffle_1",
+      "delta_formed": -21
+    },
+    {
+      "seed": 401,
+      "relabel": "shuffle_2",
+      "delta_formed": -24
+    },
+    {
+      "seed": 503,
+      "relabel": "reverse",
+      "delta_formed": 13
+    },
+    {
+      "seed": 503,
+      "relabel": "shuffle_1",
+      "delta_formed": -2
+    },
+    {
+      "seed": 503,
+      "relabel": "shuffle_2",
+      "delta_formed": -10
+    },
+    {
+      "seed": 601,
+      "relabel": "reverse",
+      "delta_formed": -32
+    },
+    {
+      "seed": 601,
+      "relabel": "shuffle_1",
+      "delta_formed": -15
+    },
+    {
+      "seed": 601,
+      "relabel": "shuffle_2",
+      "delta_formed": -24
+    }
+  ],
+  "balance_formed_min": -32,
+  "balance_formed_max": 19,
+  "balance_positive": 4,
+  "balance_negative": 14,
+  "negative_control_float_rounding": "Private 9 and public 3 of 18 relabelings differ only in non-substantive last-bit floating summation of final bias/reputation mean (observed posthoc); formed/impression/relationships unchanged in 90/90 negative controls.",
+  "full_results_sha256": "62df6b2f96fee34721ea1be6668d2fa20d9b2e9dfc947571c643f626d83fdbf1",
+  "full_results_gzip_sha256": "a8490a42aaed2a5279810c21c9a2274a503dbb9945ac67d95996bddd023bc193",
+  "limitations": "Pure synthetic 144 actors, no human data, N91 uses original six seeds and pairwise shock normalization strictly preserving original upper triangle. Possible choice of sequential seen updates vs other order effects requires N92 falsifier."
+}

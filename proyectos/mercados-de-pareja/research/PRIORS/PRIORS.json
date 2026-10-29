@@ -504,7 +504,7 @@
         "SRC060",
         "SRC061"
       ],
-      "last_update_id": "U082",
+      "last_update_id": "U143",
       "uncertainty": "Not calibrated Bayesian probabilities; context and heterogeneity uncertain",
       "next_falsifier_or_test": "Para afirmar mecanismos causales de plataforma específica, conocer ranking real y registros de exposición, con permiso.",
       "numeric_probability": null,
@@ -513,9 +513,10 @@
         "U028",
         "U044",
         "U060",
-        "U082"
+        "U082",
+        "U143"
       ],
-      "latest_evidence_summary": "Independent within-archive actor split supports heterogeneity of click response among recorded recommendations; not causal or a novel ESBM policy result.",
+      "latest_evidence_summary": "Source-verified synthetic exposure balancing is not permutation invariant: 18/18 relabeled runs change formed pair counts (mean -8.06, min -32, max +19), while random, popular, same_norm, private, public conditions preserve formed pairs in 90/90 perm tests. Internal label order can change opportunity distribution; external platform causal prior unchanged.",
       "last_revised_at": "2026-10-29"
     },
     {
@@ -839,7 +840,7 @@
         "SRC064",
         "SRC065"
       ],
-      "last_update_id": "U137",
+      "last_update_id": "U144",
       "uncertainty": "Action semantics are incompletely documented, no raw permission to distribute, no negative action nor timestamps; even click could mean curiosity, not consent, and reverse click can be triggered by source recommendation behavior.",
       "next_falsifier_or_test": "Obtain author codebook and event provenance explaining rec, click and msg including context and timestamps; verify true shown/clicked/replied denominator then compare competent matching and sociological alternatives.",
       "numeric_probability": null,
@@ -848,9 +849,10 @@
         "U077",
         "U078",
         "U084",
-        "U137"
+        "U137",
+        "U144"
       ],
-      "latest_evidence_summary": "N88 frozen original ESBM Python synthetic study: global max-cardinality vs greedy_weight/greedy_actor under identical 60 seed-scenario programs; 60/60 sham exact, graphwise dominance checks; central +9.52 formed vs weighted greedy, +7.7 vs actor greedy on average, but temporal sign reversals. Confirms allocation mechanism is an active centralized institution, not mere bilateral decisions; no original human evidence.",
+      "latest_evidence_summary": "N91 relabel test confirms semantics/identity of consent graph under common shocks and agent label is stable for 5 policies, while balanced-policy sequential exposure changes matches. Diagnostic disallows interpreting synthetic indices as time/randomization of human exposure; no human action semantics update.",
       "last_revised_at": "2026-10-29"
     },
     {
@@ -884,8 +886,8 @@
     "all_priors_linked": true,
     "source_ids_linked": 97,
     "registered_sources": 97,
-    "update_events": 142,
+    "update_events": 144,
     "counts_as_new_AB_cycle": false,
-    "last_update": "2026-10-29 N90_REJECTION_UPDATE_TIMING_120_SIM_ORDER_MECHANISM_NO_NOVEL_HUMAN_EVIDENCE"
+    "last_update": "2026-10-29 N91_RELABEL_ORDER_VISIBILITY_BALANCE_18_OF_18_WITH_90_NEGATIVE_CONTROLS"
   }
 }
