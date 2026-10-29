@@ -330,23 +330,25 @@
       "id": "P-COMPETENT_NULL",
       "question": "Permutación global o nulo por evento simple bastan para atribuir homogamia a mecanismo individual",
       "status": "CHALLENGED",
-      "rationale": "Nulos competentes requieren preservar segmentos, oportunidades, propensión de ambos extremos; mezcla MCMC no demostrada, replicaciones con diferencias. For HCMST-2009, minimally competent model comparison is not naïve constant hazard: already published Cox/RSF/DeepHit. A truly strong baseline also needs landmark/interview-risk sets, relationship duration at baseline (delayed entry), interval-censoring, partner death as competing event, sampling/attrition weights, and external era holdout (HCMST 2017 with different wording) not just random within-wave 70/30 split. 2023 thesis published C-index differences RSF .795 vs Cox .791 too small to claim superiority without uncertainty. Text reports Brier scores in 2017 above 1, inconsistent with ordinary unscaled Brier definition; verify units before using comparisons, no accusation.",
+      "rationale": "Nulos competentes requieren preservar segmentos, oportunidades, propensión de ambos extremos; mezcla MCMC no demostrada, replicaciones con diferencias. For HCMST-2009, minimally competent model comparison is not naïve constant hazard: already published Cox/RSF/DeepHit. A truly strong baseline also needs landmark/interview-risk sets, relationship duration at baseline (delayed entry), interval-censoring, partner death as competing event, sampling/attrition weights, and external era holdout (HCMST 2017 with different wording) not just random within-wave 70/30 split. 2023 thesis published C-index differences RSF .795 vs Cox .791 too small to claim superiority without uncertainty. Text reports Brier scores in 2017 above 1, inconsistent with ordinary unscaled Brier definition; verify units before using comparisons, no accusation. The recovered Stata W6 binary's header describes 640 cases versus 4002 file records each in W4 and W5; a valid 2009-to-2017 survival baseline needs attrition/survival eligibility conditions and wave-specific recruitment, as well as full baseline original IDs, not the naive ratio 640/4002. W4/W5 have w4_status, w4_xqualified, w5_status, w5x_qualified and w4_broke_up/w5_broke_up, and W6 distinguishes spouse death and breakup. Only schema fields inspected, so neither denominator nor event rates are established. Existing 2023 Cox/RSF/DeepHit prior art remains.",
       "evidence_sources": [
         "SRC026",
         "SRC027",
         "SRC071",
-        "SRC070"
+        "SRC070",
+        "SRC073"
       ],
-      "last_update_id": "U097",
+      "last_update_id": "U101",
       "uncertainty": "Not probabilistically calibrated; evidence heterogeneous and some sources only metadata",
       "next_falsifier_or_test": "Independent prospective data with matched risk set, competent adversarial controls and documented sample selection",
       "numeric_probability": null,
       "CT2_is_not_this_prior": true,
       "update_ids": [
         "U012",
-        "U097"
+        "U097",
+        "U101"
       ],
-      "latest_evidence_summary": "Explicit strong survival baseline/hazard audit required; published original thesis not a replication of ESBM, no elevation of own CT2.",
+      "latest_evidence_summary": "W6 file N640 subset vs W4/W5 file N4002, shows why conditioning and dropout/competing-risk controls essential; no rates or outcome calculation.",
       "last_revised_at": "2026-10-29"
     },
     {
@@ -644,8 +646,8 @@
     {
       "id": "P-LONGITUDINAL-ELIGIBILITY",
       "question": "¿Existe una cohorte humana independiente con duración y formación de relaciones que permita una falsación del módulo ESBM de ruptura sin confundir reciprocidad con pareja estable?",
-      "status": "DOCUMENTED_SAMPLE_RAW_NOT_INSPECTED",
-      "rationale": "HCMST 2017–2022 es un panel original de Stanford con preguntas de cómo se conocen las parejas y seguimiento 2020/2022, pero el archivo no ha sido descargado; sin esquema real no puede calibrarse ni estimarse la hazard. pairfam (Alemania) añade otra cohorte longitudinal independiente y respuestas del miembro de la pareja, pero sigue sin acceso a filas ni estimación. Stanford explicita cuestionario de relaciones a sujetos con pareja vigente (2862) y sin actual pero con pareja anterior (541), cambiando el riesgo de excluir automáticamente historias de ruptura; no se ha examinado su distribución por ola. The FReDA/pairfam Campus Use File is explicitly limited to teaching and is a reduced subset of the SUF; GESIS instructs scientific publications to use an appropriately licensed SUF rather than CUF. This source is same pairfam panel, not independent. Diverse Data Hub HCMST 2022 derived CSV has 1,328 observations, 21 relationship quality/duration/behavior variables; it is a cross-sectional reduced version of the existing 2017–2022 cohort, not a fresh follow-up sample and not a complete survival risk set. CSV data were not fetched; no hazard/censoring constructed. New original HCMST 2009 baseline was an independent cohort (4002 adults, 3009 partnered) with followups in 2010/2011/2013/2015, covering baseline relationship status and subsequent breakup. It is legitimately distinct from the 2017–2022 HCMST sample, even though archived by the same project/investigators. But no raw rows, codebook or original wave files are accessible in this turn, so no censoring, attrition, interval risks or hazard estimable. The original followup design conditions on having a baseline romantic partner; it tests conditional stability of existing unions, not unconditional formation from all singles. Stanford original HCMST 2009 (not 2017 fresh cohort) has a 2017 wave6 supplement that is NOT covered by ICPSR30103 5-wave public collection. Original codebook of waves1-3 v3.04 identifies qflag, w2_broke_up vs w3_brokeup_actual, death vs breakup and w3_xpartnered with 289 no longer eligible after 2010 breakup, proving followup risk sets are conditional and cannot be coded non-respondents as stable. Full raw wave 6 not accessed, so do not set time-to-event without supplementary files, weights and exposure/censoring codes. Additional 2019 GitHub gist displays CSV mirror inventory for all HCMST2009 baseline+wave4+wave5+wave6, with baseline header matching known weight/relationship breakup variables, but neither CSV nor archive bytes were actually recovered, validated against Stanford checksum or joined. This is NOT new cohort access, nor a research-ready source; no change to eligibility. Direct original Stanford distribution and its data-use agreement remain authoritative.",
+      "status": "RAW_STATA_SUPPLEMENTS_SCHEMA_ONLY_BASELINE_MISSING_NOT_RESEARCH_READY",
+      "rationale": "HCMST 2017–2022 es un panel original de Stanford con preguntas de cómo se conocen las parejas y seguimiento 2020/2022, pero el archivo no ha sido descargado; sin esquema real no puede calibrarse ni estimarse la hazard. pairfam (Alemania) añade otra cohorte longitudinal independiente y respuestas del miembro de la pareja, pero sigue sin acceso a filas ni estimación. Stanford explicita cuestionario de relaciones a sujetos con pareja vigente (2862) y sin actual pero con pareja anterior (541), cambiando el riesgo de excluir automáticamente historias de ruptura; no se ha examinado su distribución por ola. The FReDA/pairfam Campus Use File is explicitly limited to teaching and is a reduced subset of the SUF; GESIS instructs scientific publications to use an appropriately licensed SUF rather than CUF. This source is same pairfam panel, not independent. Diverse Data Hub HCMST 2022 derived CSV has 1,328 observations, 21 relationship quality/duration/behavior variables; it is a cross-sectional reduced version of the existing 2017–2022 cohort, not a fresh follow-up sample and not a complete survival risk set. CSV data were not fetched; no hazard/censoring constructed. New original HCMST 2009 baseline was an independent cohort (4002 adults, 3009 partnered) with followups in 2010/2011/2013/2015, covering baseline relationship status and subsequent breakup. It is legitimately distinct from the 2017–2022 HCMST sample, even though archived by the same project/investigators. But no raw rows, codebook or original wave files are accessible in this turn, so no censoring, attrition, interval risks or hazard estimable. The original followup design conditions on having a baseline romantic partner; it tests conditional stability of existing unions, not unconditional formation from all singles. Stanford original HCMST 2009 (not 2017 fresh cohort) has a 2017 wave6 supplement that is NOT covered by ICPSR30103 5-wave public collection. Original codebook of waves1-3 v3.04 identifies qflag, w2_broke_up vs w3_brokeup_actual, death vs breakup and w3_xpartnered with 289 no longer eligible after 2010 breakup, proving followup risk sets are conditional and cannot be coded non-respondents as stable. Full raw wave 6 not accessed, so do not set time-to-event without supplementary files, weights and exposure/censoring codes. Additional 2019 GitHub gist displays CSV mirror inventory for all HCMST2009 baseline+wave4+wave5+wave6, with baseline header matching known weight/relationship breakup variables, but neither CSV nor archive bytes were actually recovered, validated against Stanford checksum or joined. This is NOT new cohort access, nor a research-ready source; no change to eligibility. Direct original Stanford distribution and its data-use agreement remain authoritative. New source SRC073 includes three authentic-format Stata binary supplements (public third-party GitHub repository) actually decoded and checksummed in this turn: W4 352532 bytes/N4002/K62, W5 525330/N4002/K78, W6 93480/N640/K77, with qflag-independent w4/w5 eligibility and breakup variable names and w6 breakup/death/online dating fields. The baseline v3.04 DTA is indexed with Git blob matching two third-party repositories but GitHub connector returns no bytes, and no official Stanford checksum or complete original panel reconstructed. This advances raw access to supplements, not the legal/reproducible eligibility of a full longitudinal inference: W6 N640 must not be treated as sample-survival ratio.",
       "evidence_sources": [
         "SRC048",
         "SRC049",
@@ -657,9 +659,10 @@
         "SRC068",
         "SRC069",
         "SRC070",
-        "SRC072"
+        "SRC072",
+        "SRC073"
       ],
-      "last_update_id": "U099",
+      "last_update_id": "U100",
       "uncertainty": "Cohorte fuente validada documentalmente; acceso, pesos completos, definiciones de ruptura y seguimiento pendiente de inspección.",
       "next_falsifier_or_test": "Adquirir legítimamente archivo Stanford v2.2 y codebook v2.3, revisar pesos y variable de continuidad con campos longitudinales, prerregistrar sobrevivencia a corte 2020/2022 y contrastar con baseline de supervivencia sin app. Priorizar obtener un SUF registrado de pairfam si interesa contraste actor/partner, respetando atrición, censoring, y olas de biopart.",
       "numeric_probability": null,
@@ -672,9 +675,10 @@
         "U089",
         "U091",
         "U094",
-        "U099"
+        "U099",
+        "U100"
       ],
-      "latest_evidence_summary": "Gist lists converted baseline+W4/W5/W6 but archive/CSV not downloaded, hashed or matched to original; no hazard/risk set; status unchanged.",
+      "latest_evidence_summary": "3 supplementary wave Stata binaries physically decoded, SHA256 and N/K and field names verified; 2009 baseline missing and official fidelity/rights not validated, zero substantive outcome rows or join.",
       "last_revised_at": "2026-10-29"
     },
     {
@@ -792,10 +796,10 @@
   ],
   "audit": {
     "all_priors_linked": true,
-    "source_ids_linked": 72,
-    "registered_sources": 72,
-    "update_events": 99,
+    "source_ids_linked": 73,
+    "registered_sources": 73,
+    "update_events": 101,
     "counts_as_new_AB_cycle": false,
-    "last_update": "2026-10-29 POST_N82_HCMST_GIST_UNDOWNLOADED_NONCYCLE"
+    "last_update": "2026-10-29 POST_N82_GITHUB_PUBLIC_STATA_BLOBS_DECODED_HEADER_QA_ONLY"
   }
 }
