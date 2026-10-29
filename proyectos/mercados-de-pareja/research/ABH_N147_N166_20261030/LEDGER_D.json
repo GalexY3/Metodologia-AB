@@ -1,0 +1,415 @@
+{
+  "schema": "ABH.A-J.N147_N166.D.v1",
+  "date": "2026-10-30",
+  "branch": "research/ab-h-esbm-trajectory-equivalence-20261030",
+  "block": "D",
+  "cycles_valid_technical_or_negative": 4,
+  "scientific_0_3_only": true,
+  "human_R5": "STOP",
+  "source_original_sha": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+  "cycles": [
+    {
+      "id": "N160",
+      "parent": "N159",
+      "mode": "FLOATING_POINT_AUDIT",
+      "drift_D": {
+        "code_freeze": "New engine and runner commit after prereg, before outcomes",
+        "seeds": "101/211; 311/509",
+        "original_sha256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+      },
+      "A": {
+        "question": "Isolate N156/N157 mismatches as numerical reduction order versus genuine event differences",
+        "estimand": "Model-internal exact path equivariance vs numeric reduction; fresh simulated stock contrast"
+      },
+      "B": {
+        "rivals": [
+          "IEEE-754 nonassociative summation artifact",
+          "genuine actor-label behavioral dependence",
+          "old null vs corrected canonical graph",
+          "synchronous/private/public feedback"
+        ],
+        "null": "If event outputs differ, numerical-only explanation fails"
+      },
+      "C": {
+        "discriminant": "Repeat six failed private and six public comparisons; event delta zero; absolute scalar mean difference <=1e-12; preserve largest discrepancy and original strict mismatch.",
+        "falsifier": "Any event difference or abs error over tolerance fails N160; any exact mismatch fails N161/162; N163 any delta signs acceptable"
+      },
+      "D": {
+        "preregistered": {
+          "code_freeze": "New engine and runner commit after prereg, before outcomes",
+          "seeds": "101/211; 311/509",
+          "original_sha256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+        },
+        "prereg_commit": "c144cfe88962085a5f6797b33daf94cba77dcbfe",
+        "code_sha_frozen_before_outcomes": "ea7cd2532e352cda9aa6860dd079a51c5bea93c1"
+      },
+      "E": {
+        "status": "PASS",
+        "actual_endpoint": {
+          "cases": 12,
+          "event_mismatches": 0,
+          "max_absolute_float_diff": 1.3877787807814457e-17
+        },
+        "source_full_receipt_sha256": "4af786fef72eb16ad3d70828dc7b2100d1f9417fa9e97930a3205e3e012b06eb",
+        "local_full_rows_available_in_conversation_bundle": true,
+        "humans": 0
+      },
+      "F": {
+        "preregistered_adversarial": {
+          "adversary": "compare events separately from floating aggregates; no retrospective weakening of N156/N157 strict tests"
+        },
+        "negative_diagnostic": false,
+        "warning": "All findings in model and Python; technically falsified baseline actor order no human inference."
+      },
+      "G": {
+        "preregistered": {
+          "human": "NONE",
+          "independent_OS": "NONE"
+        },
+        "independence": "NO_EXTERNAL_HUMAN_HOLDOUT",
+        "third_party_OS": "NOT_TESTED"
+      },
+      "H": {
+        "prior_ids": [
+          "P-TRAJECTORY-INVARIANCE",
+          "P-NETWORK-INVARIANCE",
+          "P-DYADIC_ACCESS",
+          "P-NOVELTY"
+        ],
+        "update_ids": [
+          "U177",
+          "U178",
+          "U179",
+          "U180",
+          "U181",
+          "U182"
+        ],
+        "human_priors": "NO_CHANGE_WITH_REASON",
+        "source_new": "SRC107 documentary publication only"
+      },
+      "I": {
+        "grade": "0/3",
+        "scientific_CT2_before": 7,
+        "scientific_CT2_after": 7,
+        "technical_result_valid": true,
+        "external_replication": false,
+        "ethical_ok": "No raw human sample or original source mutation"
+      },
+      "J": {
+        "decision": "PASS_CONDITIONAL_ADVANCE",
+        "successor": "N161",
+        "failure_path": "REPAIR with code freeze and honest negative ledger",
+        "credit_spent": 1,
+        "value_next": "Distinct model and code capability; R5 external remains STOP"
+      },
+      "selection_exposure": "Adaptive sequential blocks, no blinded human outcomes, no 2/3 scientific claim",
+      "source_refs": [
+        "proyectos/mercados-de-pareja/research/ABH_N147_N166_20261030/PREREG_D.json",
+        "proyectos/mercados-de-pareja/research/ABH_N147_N166_20261030/RESULTS_INDEX.json"
+      ]
+    },
+    {
+      "id": "N161",
+      "parent": "N160",
+      "mode": "NUMERIC_REPAIR",
+      "drift_D": {
+        "code_freeze": "New engine and runner commit after prereg, before outcomes",
+        "seeds": "101/211; 311/509",
+        "original_sha256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+      },
+      "A": {
+        "question": "Use order-stable math.fsum for opt-in symmetric pairing summaries without altering historical default",
+        "estimand": "Model-internal exact path equivariance vs numeric reduction; fresh simulated stock contrast"
+      },
+      "B": {
+        "rivals": [
+          "IEEE-754 nonassociative summation artifact",
+          "genuine actor-label behavioral dependence",
+          "old null vs corrected canonical graph",
+          "synchronous/private/public feedback"
+        ],
+        "null": "If event outputs differ, numerical-only explanation fails"
+      },
+      "C": {
+        "discriminant": "New v2 engine source freeze, 60 old-source parity historical and 24+24 private/public relabel checks, first-run expected bitwise exact summary values; assert no source mutation.",
+        "falsifier": "Any event difference or abs error over tolerance fails N160; any exact mismatch fails N161/162; N163 any delta signs acceptable"
+      },
+      "D": {
+        "preregistered": {
+          "code_freeze": "New engine and runner commit after prereg, before outcomes",
+          "seeds": "101/211; 311/509",
+          "original_sha256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+        },
+        "prereg_commit": "c144cfe88962085a5f6797b33daf94cba77dcbfe",
+        "code_sha_frozen_before_outcomes": "ea7cd2532e352cda9aa6860dd079a51c5bea93c1"
+      },
+      "E": {
+        "status": "PASS",
+        "actual_endpoint": {
+          "private_public_full_exact": 48,
+          "checks": 48,
+          "legacy_full_parity": 60
+        },
+        "source_full_receipt_sha256": "4af786fef72eb16ad3d70828dc7b2100d1f9417fa9e97930a3205e3e012b06eb",
+        "local_full_rows_available_in_conversation_bundle": true,
+        "humans": 0
+      },
+      "F": {
+        "preregistered_adversarial": {
+          "adversary": "compare events separately from floating aggregates; no retrospective weakening of N156/N157 strict tests"
+        },
+        "negative_diagnostic": false,
+        "warning": "All findings in model and Python; technically falsified baseline actor order no human inference."
+      },
+      "G": {
+        "preregistered": {
+          "human": "NONE",
+          "independent_OS": "NONE"
+        },
+        "independence": "NO_EXTERNAL_HUMAN_HOLDOUT",
+        "third_party_OS": "NOT_TESTED"
+      },
+      "H": {
+        "prior_ids": [
+          "P-TRAJECTORY-INVARIANCE",
+          "P-NETWORK-INVARIANCE",
+          "P-DYADIC_ACCESS",
+          "P-NOVELTY"
+        ],
+        "update_ids": [
+          "U177",
+          "U178",
+          "U179",
+          "U180",
+          "U181",
+          "U182"
+        ],
+        "human_priors": "NO_CHANGE_WITH_REASON",
+        "source_new": "SRC107 documentary publication only"
+      },
+      "I": {
+        "grade": "0/3",
+        "scientific_CT2_before": 7,
+        "scientific_CT2_after": 7,
+        "technical_result_valid": true,
+        "external_replication": false,
+        "ethical_ok": "No raw human sample or original source mutation"
+      },
+      "J": {
+        "decision": "PASS_CONDITIONAL_ADVANCE",
+        "successor": "N162",
+        "failure_path": "REPAIR with code freeze and honest negative ledger",
+        "credit_spent": 1,
+        "value_next": "Distinct model and code capability; R5 external remains STOP"
+      },
+      "selection_exposure": "Adaptive sequential blocks, no blinded human outcomes, no 2/3 scientific claim",
+      "source_refs": [
+        "proyectos/mercados-de-pareja/research/ABH_N147_N166_20261030/PREREG_D.json",
+        "proyectos/mercados-de-pareja/research/ABH_N147_N166_20261030/RESULTS_INDEX.json"
+      ]
+    },
+    {
+      "id": "N162",
+      "parent": "N161",
+      "mode": "MULTI_REGIME",
+      "drift_D": {
+        "code_freeze": "New engine and runner commit after prereg, before outcomes",
+        "seeds": "101/211; 311/509",
+        "original_sha256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+      },
+      "A": {
+        "question": "Check exact full trajectory and public/private combined policies with explicit social norm priority for independently selected seeds",
+        "estimand": "Model-internal exact path equivariance vs numeric reduction; fresh simulated stock contrast"
+      },
+      "B": {
+        "rivals": [
+          "IEEE-754 nonassociative summation artifact",
+          "genuine actor-label behavioral dependence",
+          "old null vs corrected canonical graph",
+          "synchronous/private/public feedback"
+        ],
+        "null": "If event outputs differ, numerical-only explanation fails"
+      },
+      "C": {
+        "discriminant": "Seeds 311,509; 2 canonical graphs × 2 slots × private/public both on × three identity permutations; require 24 exact directed-event and whole result comparisons.",
+        "falsifier": "Any event difference or abs error over tolerance fails N160; any exact mismatch fails N161/162; N163 any delta signs acceptable"
+      },
+      "D": {
+        "preregistered": {
+          "code_freeze": "New engine and runner commit after prereg, before outcomes",
+          "seeds": "101/211; 311/509",
+          "original_sha256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+        },
+        "prereg_commit": "c144cfe88962085a5f6797b33daf94cba77dcbfe",
+        "code_sha_frozen_before_outcomes": "ea7cd2532e352cda9aa6860dd079a51c5bea93c1"
+      },
+      "E": {
+        "status": "PASS",
+        "actual_endpoint": {
+          "private_and_public_simultaneous_exact": 24,
+          "checks": 24
+        },
+        "source_full_receipt_sha256": "4af786fef72eb16ad3d70828dc7b2100d1f9417fa9e97930a3205e3e012b06eb",
+        "local_full_rows_available_in_conversation_bundle": true,
+        "humans": 0
+      },
+      "F": {
+        "preregistered_adversarial": {
+          "adversary": "compare events separately from floating aggregates; no retrospective weakening of N156/N157 strict tests"
+        },
+        "negative_diagnostic": false,
+        "warning": "All findings in model and Python; technically falsified baseline actor order no human inference."
+      },
+      "G": {
+        "preregistered": {
+          "human": "NONE",
+          "independent_OS": "NONE"
+        },
+        "independence": "NO_EXTERNAL_HUMAN_HOLDOUT",
+        "third_party_OS": "NOT_TESTED"
+      },
+      "H": {
+        "prior_ids": [
+          "P-TRAJECTORY-INVARIANCE",
+          "P-NETWORK-INVARIANCE",
+          "P-DYADIC_ACCESS",
+          "P-NOVELTY"
+        ],
+        "update_ids": [
+          "U177",
+          "U178",
+          "U179",
+          "U180",
+          "U181",
+          "U182"
+        ],
+        "human_priors": "NO_CHANGE_WITH_REASON",
+        "source_new": "SRC107 documentary publication only"
+      },
+      "I": {
+        "grade": "0/3",
+        "scientific_CT2_before": 7,
+        "scientific_CT2_after": 7,
+        "technical_result_valid": true,
+        "external_replication": false,
+        "ethical_ok": "No raw human sample or original source mutation"
+      },
+      "J": {
+        "decision": "PASS_CONDITIONAL_ADVANCE",
+        "successor": "N163",
+        "failure_path": "REPAIR with code freeze and honest negative ledger",
+        "credit_spent": 1,
+        "value_next": "Distinct model and code capability; R5 external remains STOP"
+      },
+      "selection_exposure": "Adaptive sequential blocks, no blinded human outcomes, no 2/3 scientific claim",
+      "source_refs": [
+        "proyectos/mercados-de-pareja/research/ABH_N147_N166_20261030/PREREG_D.json",
+        "proyectos/mercados-de-pareja/research/ABH_N147_N166_20261030/RESULTS_INDEX.json"
+      ]
+    },
+    {
+      "id": "N163",
+      "parent": "N162",
+      "mode": "PROSPECTIVE_CANONICAL_NETWORK",
+      "drift_D": {
+        "code_freeze": "New engine and runner commit after prereg, before outcomes",
+        "seeds": "6100..6129",
+        "original_sha256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+      },
+      "A": {
+        "question": "Run fresh seed-block canonical ring vs canonical rewired under matched shocks and degree, preserving first-stage risk set denominators",
+        "estimand": "Model-internal exact path equivariance vs numeric reduction; fresh simulated stock contrast"
+      },
+      "B": {
+        "rivals": [
+          "IEEE-754 nonassociative summation artifact",
+          "genuine actor-label behavioral dependence",
+          "old null vs corrected canonical graph",
+          "synchronous/private/public feedback"
+        ],
+        "null": "If event outputs differ, numerical-only explanation fails"
+      },
+      "C": {
+        "discriminant": "30 synthetic seeds 6100–6129, two slots and symmetric_pair; 60 N24×4 real simulations; paired stock signs and exposure totals; no causal claim because eligible risksets/paths can differ; report zeros and negatives.",
+        "falsifier": "Any event difference or abs error over tolerance fails N160; any exact mismatch fails N161/162; N163 any delta signs acceptable"
+      },
+      "D": {
+        "preregistered": {
+          "code_freeze": "New engine and runner commit after prereg, before outcomes",
+          "seeds": "6100..6129",
+          "original_sha256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+        },
+        "prereg_commit": "c144cfe88962085a5f6797b33daf94cba77dcbfe",
+        "code_sha_frozen_before_outcomes": "ea7cd2532e352cda9aa6860dd079a51c5bea93c1"
+      },
+      "E": {
+        "status": "PASS",
+        "actual_endpoint": {
+          "new_seeds": "6100..6129",
+          "runs": 60,
+          "mean_ring_minus_canonical_rewired_active": -0.23333333333333334,
+          "positive": 8,
+          "negative": 13,
+          "ties": 9,
+          "no_external_human_inference": true
+        },
+        "source_full_receipt_sha256": "4af786fef72eb16ad3d70828dc7b2100d1f9417fa9e97930a3205e3e012b06eb",
+        "local_full_rows_available_in_conversation_bundle": true,
+        "humans": 0
+      },
+      "F": {
+        "preregistered_adversarial": {
+          "adversary": "compare events separately from floating aggregates; no retrospective weakening of N156/N157 strict tests"
+        },
+        "negative_diagnostic": false,
+        "warning": "All findings in model and Python; technically falsified baseline actor order no human inference."
+      },
+      "G": {
+        "preregistered": {
+          "human": "NONE",
+          "independent_OS": "NONE"
+        },
+        "independence": "NO_EXTERNAL_HUMAN_HOLDOUT",
+        "third_party_OS": "NOT_TESTED"
+      },
+      "H": {
+        "prior_ids": [
+          "P-TRAJECTORY-INVARIANCE",
+          "P-NETWORK-INVARIANCE",
+          "P-DYADIC_ACCESS",
+          "P-NOVELTY"
+        ],
+        "update_ids": [
+          "U177",
+          "U178",
+          "U179",
+          "U180",
+          "U181",
+          "U182"
+        ],
+        "human_priors": "NO_CHANGE_WITH_REASON",
+        "source_new": "SRC107 documentary publication only"
+      },
+      "I": {
+        "grade": "0/3",
+        "scientific_CT2_before": 7,
+        "scientific_CT2_after": 7,
+        "technical_result_valid": true,
+        "external_replication": false,
+        "ethical_ok": "No raw human sample or original source mutation"
+      },
+      "J": {
+        "decision": "PASS_CONDITIONAL_ADVANCE",
+        "successor": "N164–N166 demo and reproducibility",
+        "failure_path": "REPAIR with code freeze and honest negative ledger",
+        "credit_spent": 1,
+        "value_next": "Distinct model and code capability; R5 external remains STOP"
+      },
+      "selection_exposure": "Adaptive sequential blocks, no blinded human outcomes, no 2/3 scientific claim",
+      "source_refs": [
+        "proyectos/mercados-de-pareja/research/ABH_N147_N166_20261030/PREREG_D.json",
+        "proyectos/mercados-de-pareja/research/ABH_N147_N166_20261030/RESULTS_INDEX.json"
+      ]
+    }
+  ]
+}
