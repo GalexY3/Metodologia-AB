@@ -108,18 +108,22 @@ compatibility=original.compatibility
 sigmoid=original.sigmoid
 gini=original.gini
 
-def simulate(seed, name, config, *, scheduler=None, trace=False):
+def simulate(seed, name, config, *, scheduler=None, trace=False, people_provider=None, compatibility_provider=None, population_size=None, steps=None):
  trace_rows=[]
- p=people(seed)
- eligible=compatibility(p,config['compat'])
+ p=(people_provider or people)(seed)
+ eligible=(compatibility_provider or compatibility)(p,config['compat'])
+ n_agents=int(population_size or len(p['genders']))
+ step_count=int(steps or p['u_send'].shape[0])
+ assert eligible.shape==(n_agents,n_agents)
+ assert p['u_send'].shape[0]>=step_count
  q=p['q']; norm=p['norm']; age=p['age'];u_send=p['u_send'];u_reply=p['u_reply'];uh=p['u_hazard']
- partner=np.full(N,-1,dtype=int)
- start=np.full(N,-1,dtype=int)
- seen=np.zeros(N,dtype=int)
- requests_received=np.zeros(N,dtype=int)
- approvals=np.zeros(N,dtype=int)
- public_score=np.zeros(N,dtype=float)
- private_bias=np.zeros(N,dtype=float)
+ partner=np.full(n_agents,-1,dtype=int)
+ start=np.full(n_agents,-1,dtype=int)
+ seen=np.zeros(n_agents,dtype=int)
+ requests_received=np.zeros(n_agents,dtype=int)
+ approvals=np.zeros(n_agents,dtype=int)
+ public_score=np.zeros(n_agents,dtype=float)
+ private_bias=np.zeros(n_agents,dtype=float)
  formed=0; dissolved=0; listed=0; proposals=0; requests_accepted=0
  sent_by_norm=np.zeros(3,int); received_by_norm=np.zeros(3,int)
  norm_exp=0; norm_exposure_denom=0
@@ -127,9 +131,9 @@ def simulate(seed, name, config, *, scheduler=None, trace=False):
  key_pairs=set()
  assert not np.any(np.diag(eligible))
  edges_all=int(np.triu(eligible,1).sum())
- for t in range(STEPS):
+ for t in range(step_count):
   # Dissolution happens at START of tick based on previous relationships, from same fixed shocks.
-  for i in range(N):
+  for i in range(n_agents):
    j=int(partner[i])
    if j<=i:continue
    h=min(.90, (.12+.065*(norm[i]!=norm[j])+.004*abs(int(age[i])-int(age[j])))*config['hazard_mult'])
@@ -176,21 +180,21 @@ def simulate(seed, name, config, *, scheduler=None, trace=False):
    partner[i]=j;partner[j]=i;start[i]=start[j]=t
    if trace: trace_rows.append(dict(t=t,stage='formation',i=i,j=j))
    formed+=1; new_norm+=int(norm[i]==norm[j]);key_pairs.add(tuple(sorted((i,j))))
-  assert all((partner[i]==-1 or partner[partner[i]]==i) for i in range(N))
+  assert all((partner[i]==-1 or partner[partner[i]]==i) for i in range(n_agents))
   ongoing=int((partner>=0).sum()//2)
   samples.append(dict(t=t,singles=len(available),risk_edges=possible_edges,impressions=len(impressions),proposals=tick_proposals,reciprocals=len(mutual),new_pairs=len(pairs),active_pairs=ongoing))
  # Aggregate partner-stage outputs without implying single connection = stable relationship.
  active_pairs=int((partner>=0).sum()//2)
- censored_durations=[STEPS-int(start[i]) for i in range(N) if partner[i]>i]
+ censored_durations=[step_count-int(start[i]) for i in range(n_agents) if partner[i]>i]
  ever_seen=seen>0
  nonselectable=np.sum(~eligible.any(axis=1))
  result={
-  'seed':seed,'scenario':name,'n_agents':N,'time_steps':STEPS,
+  'seed':seed,'scenario':name,'n_agents':n_agents,'time_steps':step_count,
   'gender_distribution':dict(Counter(p['genders'])),'scope_distribution':dict(Counter(p['scopes'])),
   'possible_compatibility_pairs':edges_all,'agents_no_eligible_partner':int(nonselectable),
   'total_impressions':int(listed),'total_proposals':int(proposals),'total_positive_responses':int(requests_accepted),
   'total_relationships_formed':int(formed),'total_dissolutions':int(dissolved),
-  'active_partnerships_end':active_pairs,'active_agent_share_end':float(2*active_pairs/N),
+  'active_partnerships_end':active_pairs,'active_agent_share_end':float(2*active_pairs/n_agents),
   'never_displayed_receivers':int((~ever_seen).sum()),'receiver_impression_gini':gini(seen),
   'group_same_exposure':float(norm_exp/norm_exposure_denom) if norm_exposure_denom else None,
   'group_same_new_couples':float(new_norm/formed) if formed else None,
@@ -206,7 +210,7 @@ def simulate(seed, name, config, *, scheduler=None, trace=False):
  assert formed-dissolved==active_pairs,(name,seed,formed,dissolved,active_pairs)
  assert len(key_pairs)<=formed
  assert result['total_positive_responses']<=result['total_proposals']<=result['total_impressions']
- assert all(x['active_pairs']<=N//2 and x['new_pairs']<=x['reciprocals'] for x in samples)
+ assert all(x['active_pairs']<=n_agents//2 and x['new_pairs']<=x['reciprocals'] for x in samples)
  assert sum(result['impression_count_by_gender'].values())==listed
  if trace:
   result['events']=trace_rows
