@@ -1,0 +1,55 @@
+{
+  "schema": "ab.r.cycle.computational_institutional_ab.v1",
+  "campaign": "ABR_ESBM20_20261028",
+  "cycle": "N88",
+  "date": "2026-10-29",
+  "branch": "research/ab-r-mercados-pareja-20261028",
+  "status": "COMPLETED_VALID_SYNTHETIC_ADVERSARIAL_0_OF_3",
+  "prereg_git_commit": "c4b9442c9ffdcc1f792987df4171a2ca79e752cc",
+  "prereg_file": "PREEXEC_AJ_N88.md",
+  "script_file": "n88_assignment_audit.py.br",
+  "script_compression": "brotli; decompress to n88_assignment_audit.py; SHA256 of raw text anchored pre-execution",
+  "script_sha256": "0218886d3d52c4557cf8a54066cd931e349a74114c80ee687f72fd67d0ae98af",
+  "compressed_git_blob_sha1": "511f7b8bdf4fcbe50018c8059be316b16d99734b",
+  "execution_command": "python n88_assignment_audit.py --original /mnt/data/esbm_dynamic.py --output /mnt/data/n88_results_full.json",
+  "A": "Does a centralized maximum-cardinality institution drive formation/activity in synthetic ESBM beyond bilateral acceptance?",
+  "B": "Unaltered Python original vs exact patched-central sham and two strong same-graph greedy alternatives weight/actor priority",
+  "C": "Paired 60-run differences formed and active per 6 seeds ×10 scenarios, plus graphwise cardinality differences",
+  "D": "240 real Python simulations on original artificial 144-agent 16-tick environment, original shocks reused, only assignment operator intervened",
+  "E": "Complete A-J and SHA256 of exact local script were recorded in immutable GitHub commit before any N88 execution; script archived in Git later with verified precommitted SHA",
+  "F": "60/60 sham exactly same; central-minus-greedy weight formed +9.5167 active +2.1167; actor formed +7.7 active +0.7667; baseline central formed 227.8 average",
+  "G": "All per-graph max cardinality >= both greedies; central superiority occurs in 680/595 tick-graphs across respective treated arms; formed-dissolved=active in all 240 simulations",
+  "H": "Only synthetic; downstream treatment changes future available risk sets, so graphwise theorem does not imply overall cumulative monotonic improvement. In heterosexual restricted central had −1 formed vs weighted greedy, −3.67 vs actor greedy",
+  "I": "U137 P-ACTION-SEMANTICS and U138 P-OPPORTUNITY NO_CHANGE_WITH_REASON; 97 sources, 30 priors, 138 updates, CT2 7, 0 new original scientific grade",
+  "J": "Count one valid scoped N88 and leave N89-N92 available, N93-N106 reserved, STOP_R5 external",
+  "results": "RESULTS_N88_SUMMARY.json",
+  "full_results_sha256": "051df4293751846c532f1d720b84b40d89ac8471f2763391e320734ec50264df",
+  "CT2": {
+    "before": 7,
+    "after": 7,
+    "ordinal": true
+  },
+  "score": {
+    "before": 39.65,
+    "after": 40.05,
+    "simulator": 59,
+    "qa": 59,
+    "novelty": 10,
+    "external_validation": 5
+  },
+  "budget": {
+    "grant": 40,
+    "valid": 22,
+    "remaining": 18,
+    "within_current_tranche_remaining": 4,
+    "other_reserved": 14
+  },
+  "prohibitions": {
+    "no_SSJY": true,
+    "no_failed_source_retries": true,
+    "no_author_contact": true,
+    "no_license_accepted": true,
+    "no_main_merge": true,
+    "no_human_microdata": true
+  }
+}

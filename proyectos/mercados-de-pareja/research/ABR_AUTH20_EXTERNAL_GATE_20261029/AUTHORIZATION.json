@@ -16,8 +16,8 @@
   "additional_grant_from_user": 20,
   "grant_kind": "UP_TO_20_ADDITIONAL_AB_R_ONLY_CONDITIONAL",
   "cumulative_max_valid": 40,
-  "cumulative_completed_valid": 21,
-  "cumulative_authorized_but_unused": 19,
+  "cumulative_completed_valid": 22,
+  "cumulative_authorized_but_unused": 18,
   "pending_original_cycles": [
     "N83",
     "N84",
@@ -71,22 +71,15 @@
   ],
   "new_authorization_is_not_cycle_completion": true,
   "current_tranche": {
-    "release_id": "TRANCHE_N83_N87_20261029",
-    "date": "2026-10-29",
+    "release_id": "TRANCHE_N88_N92_20261029",
     "released_slots": [
-      "N83",
-      "N84",
-      "N85",
-      "N86",
-      "N87"
-    ],
-    "released_count": 5,
-    "unreleased_conditional_reserved_slots": [
       "N88",
       "N89",
       "N90",
       "N91",
-      "N92",
+      "N92"
+    ],
+    "unreleased_conditional_reserved_slots": [
       "N93",
       "N94",
       "N95",
@@ -102,20 +95,10 @@
       "N105",
       "N106"
     ],
-    "unreleased_count": 19,
-    "valid_completed_in_tranche": 5,
-    "invalid_in_tranche": 0,
-    "planning_in_tranche": 0,
-    "status": "FIRST_N83_N87_TRANCHE_COMPLETE_19_RESERVED",
-    "fallback_tracks": [
-      "THEORY",
-      "IDENTIFIABILITY",
-      "SIMULATOR",
-      "REPRODUCIBILITY",
-      "INDEPENDENT_DATA"
-    ],
-    "cycle_gate": "Each counts only full frozen A-J and R1-R5; no required minimum, no 2/3 on synthetic results.",
-    "remaining_within_tranche": 0
+    "released_count": 5,
+    "valid_completed_in_tranche": 1,
+    "remaining_within_tranche": 4,
+    "status": "N88_COMPLETED_N89_N92_AVAILABLE"
   },
-  "latest_completed_valid": 21
+  "latest_completed_valid": 22
 }

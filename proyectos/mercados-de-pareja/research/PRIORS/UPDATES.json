@@ -4,7 +4,7 @@
   "date": "2026-10-28",
   "mode": "append-only logical, versioned by Git commits",
   "reconstructed_from_documents": "Retrospective backfill, not preregistration. Old before values NOT_RECORDED unless documented explicitly.",
-  "source_coverage": "97 sources, 30 priors, 136 updates. N87 real original Python synthetic integration, no new human source, no external holdout.",
+  "source_coverage": "97 sources, 30 priors, 138 updates; N88 240 original synthetic ESBM runs and 2 strong greedy variants with exact sham; no original human source, 0/3.",
   "events": [
     {
       "id": "U001",
@@ -3437,7 +3437,53 @@
       "prior_probability_before": null,
       "prior_probability_after": null,
       "prereg_status": "FROZEN_GIT_COMMIT_4482b9936c47820dd719f1a177d9c01079b10239"
+    },
+    {
+      "id": "U137",
+      "prior_id": "P-ACTION-SEMANTICS",
+      "source_ids": [],
+      "cycle_ids": [
+        "N88"
+      ],
+      "before": "HISTORICAL_COMPETITION_WORKFLOW_IDENTIFIED_NOT_VERIFIED_ATTENTION",
+      "after": "HISTORICAL_COMPETITION_WORKFLOW_IDENTIFIED_NOT_VERIFIED_ATTENTION",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "recorded_at": "2026-10-29",
+      "entry_status": "ACTIVE",
+      "evidence_type": "N88_FROZEN_SYNTHETIC_CENTRAL_CLEARINGHOUSE_VS_TWO_GREEDY_BASELINES",
+      "what_the_sources_contribute": "Original v2 ESBM code actually executed in 240 simulations including 60/60 sham exact match; dynamic outcomes by 10 scenarios, central − greedy formed +9.5167 and +7.7, active +2.1167 and +0.7667.",
+      "why_this_updates_or_checks_prior": "Qualifies interpretation of model mechanics and opportunity effects without changing external human prior or asserting causal market effect.",
+      "limits": "All agents, eligibility, yes/no shocks, available matches and hazards synthetic; no model fitted to real humans or independent sample. Centralized maxmatching property a known algorithmic theorem, not novel sociological effect. Same seed does not freeze future eligible graph after changed matching.",
+      "falsifier_or_followup": "Benchmark against locally feasible decentralized matching on independently observed opportunity/exposure network with original binary choices and legal rights and a frozen strong adversarial model; examine platform institutional realism before human claim.",
+      "numerical_bayesian_update": false,
+      "prior_probability_before": null,
+      "prior_probability_after": null,
+      "AB_cycle_increment": 1,
+      "prereg_status": "A_J_CODE_SHA_FROZEN_AT_c4b9442c9ffdcc1f792987df4171a2ca79e752cc"
+    },
+    {
+      "id": "U138",
+      "prior_id": "P-OPPORTUNITY",
+      "source_ids": [],
+      "cycle_ids": [
+        "N88"
+      ],
+      "before": "RECORDED_RECOMMENDATION_RISK_SET_WITHOUT_VERIFIED_ATTENTION",
+      "after": "RECORDED_RECOMMENDATION_RISK_SET_WITHOUT_VERIFIED_ATTENTION",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "recorded_at": "2026-10-29",
+      "entry_status": "ACTIVE",
+      "evidence_type": "N88_FROZEN_SYNTHETIC_CENTRAL_CLEARINGHOUSE_VS_TWO_GREEDY_BASELINES",
+      "what_the_sources_contribute": "Both pairwise greedy alternatives evaluated on every identical period candidate graph; central graph cardinality always >= greedy, but treatment arms diverge over time causing some negative cumulative differences.",
+      "why_this_updates_or_checks_prior": "Qualifies interpretation of model mechanics and opportunity effects without changing external human prior or asserting causal market effect.",
+      "limits": "All agents, eligibility, yes/no shocks, available matches and hazards synthetic; no model fitted to real humans or independent sample. Centralized maxmatching property a known algorithmic theorem, not novel sociological effect. Same seed does not freeze future eligible graph after changed matching.",
+      "falsifier_or_followup": "Benchmark against locally feasible decentralized matching on independently observed opportunity/exposure network with original binary choices and legal rights and a frozen strong adversarial model; examine platform institutional realism before human claim.",
+      "numerical_bayesian_update": false,
+      "prior_probability_before": null,
+      "prior_probability_after": null,
+      "AB_cycle_increment": 0,
+      "prereg_status": "A_J_CODE_SHA_FROZEN_AT_c4b9442c9ffdcc1f792987df4171a2ca79e752cc"
     }
   ],
-  "last_campaign": "ABR_BATCH5_N87_FULL_PYTHON_INTEGRATION_20261029"
+  "last_campaign": "ABR_BATCH2_N88_MATCHING_MECHANISM_20261029"
 }

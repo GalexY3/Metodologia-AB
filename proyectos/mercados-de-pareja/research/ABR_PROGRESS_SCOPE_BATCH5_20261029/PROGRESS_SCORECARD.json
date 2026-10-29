@@ -5,7 +5,7 @@
   "source_commit": "50ed5bacab76951157ed87447d61d26737701130",
   "target_scope": "FIRST_SCIENTIFICALLY_DEFENSIBLE_ESBM_RESEARCH_PACKAGE_NOT_EXPLAIN_ALL_ROMANTIC_RELATIONSHIPS",
   "nature": "EXPLICITLY_JUDGMENTAL_MILESTONE_ESTIMATE_NOT_EVALUATED_SUCCESS_PROBABILITY_OR_CT2",
-  "aggregate_percent_exact": 39.650000000000006,
+  "aggregate_percent_exact": 40.05,
   "aggregate_percent_rounded": 40,
   "rough_uncertainty_percentage_points": 10,
   "uncertainty_is_statistical_interval": false,
@@ -31,16 +31,16 @@
       "id": "simulator",
       "name": "Simulador ESBM",
       "weight": 15,
-      "progress": 57,
-      "evidence": "Executable esbm_dynamic.py, frozen 6x10 scenarios, N144 synthetic agents, 16 ticks, dynamic eligibility/platforms/dissolution; simplistic matching, exogenous hazards, arbitrary weights and identities. N87 exact source-preserving Python ESBM real 60-run simulated integration, legacy outputs unchanged; 16 formation cohorts instrumented per run; historic source unchanged.",
+      "progress": 59,
+      "evidence": "Executable esbm_dynamic.py, frozen 6x10 scenarios, N144 synthetic agents, 16 ticks, dynamic eligibility/platforms/dissolution; simplistic matching, exogenous hazards, arbitrary weights and identities. N87 exact source-preserving Python ESBM real 60-run simulated integration, legacy outputs unchanged; 16 formation cohorts instrumented per run; historic source unchanged. N88 new full 240-run institutional matching intervention central max-cardinality against two decentralized greedy strong baselines, paired with fixed shocks; results sensitive and heterogeneous; original v2 unmodified.",
       "required_for_100": "Modular mechanisms and independent measurable observables, stateful event chronology, time-to-event censoring handled, negative controls and realistic constraints without forced outcomes."
     },
     {
       "id": "qa",
       "name": "Controles técnicos y reproducibilidad",
       "weight": 10,
-      "progress": 58,
-      "evidence": "Pre-outcome source freezes, A-J and R1-R5 gate, SHA256 McMaster original and QA code, 60 synthetic scenario QA and byte-identical repeat on same machine; no independent clean clone. N83 deterministic frozen 8-cell exhaustive distribution check and independent rational Fraction recalculation; still no independent clean clone of the ESBM simulator. N84 pre-frozen 2000 permutations of the actual McMaster actor-by-opportunity network, exact per-actor yes totals and independent analytical null expectation check; remains within-study exploratory, no clean clone of ESBM v2. N85 source-guarded analytical KM/RMST test from 150k independent synthetic histories (no full ESBM original run); fixes quantified known survival censor issue. N86 added pure-stdlib Python survival RMST helper and nine deterministic unittests, executed in isolated local runtime against exact Github blob hashes with all passed; not integrated original ESBM or clean-clone validated. N87 original uploaded Git hashes verified, 19/19 deterministic tests pass, 60 old versus 60 instrumented result equivalences repeated, event/censor invariants; isolated file workspace uses preinstalled dependencies, not independent package reinstall.",
+      "progress": 59,
+      "evidence": "Pre-outcome source freezes, A-J and R1-R5 gate, SHA256 McMaster original and QA code, 60 synthetic scenario QA and byte-identical repeat on same machine; no independent clean clone. N83 deterministic frozen 8-cell exhaustive distribution check and independent rational Fraction recalculation; still no independent clean clone of the ESBM simulator. N84 pre-frozen 2000 permutations of the actual McMaster actor-by-opportunity network, exact per-actor yes totals and independent analytical null expectation check; remains within-study exploratory, no clean clone of ESBM v2. N85 source-guarded analytical KM/RMST test from 150k independent synthetic histories (no full ESBM original run); fixes quantified known survival censor issue. N86 added pure-stdlib Python survival RMST helper and nine deterministic unittests, executed in isolated local runtime against exact Github blob hashes with all passed; not integrated original ESBM or clean-clone validated. N87 original uploaded Git hashes verified, 19/19 deterministic tests pass, 60 old versus 60 instrumented result equivalences repeated, event/censor invariants; isolated file workspace uses preinstalled dependencies, not independent package reinstall. N88 SHA-frozen 60/60 exact sham source identity, graphwise max>=greedy checks across 16 ticks, three arms preserve formation dissolution balances; reproducible compressed source artifact in GitHub.",
       "required_for_100": "Fresh clean-room deterministic replay, unit+property testing, code/data provenance, exposure-preserving strong nulls, CI validation and ready-to-run reproduction package."
     },
     {
@@ -85,20 +85,20 @@
   },
   "separate_metrics": {
     "AB_authorized_cumulative": 40,
-    "AB_valid_completed": 21,
-    "AB_credits_available": 19,
-    "AB_tranche_now_open_for_attempt": 0,
+    "AB_valid_completed": 22,
+    "AB_credits_available": 18,
+    "AB_tranche_now_open_for_attempt": 4,
     "AB_outside_tranche_reserved": 19,
     "CT2_ordinal": 7,
     "CT2_not_probability": true,
     "sources": 97,
     "priors": 30,
-    "updates": 136,
+    "updates": 138,
     "new_valid_cycles_this_turn": 1,
     "new_planning_cycles_this_turn": 0
   },
   "score_may_change_only_with_documented_milestone_evidence": true,
   "score_is_not_number_of_cycles": false,
-  "last_evidence_commit_reference": "028a3276a2b73225b9baa65c077a1771c4fe1378",
-  "last_maturity_update": "N87_FULL_SYNTHETIC_ESBM_PYTHON_EXECUTION_AND_INSTRUMENTATION_TESTED"
+  "last_evidence_commit_reference": "c4b9442c9ffdcc1f792987df4171a2ca79e752cc",
+  "last_maturity_update": "N88_240_REAL_SYNTHETIC_SIMULATIONS_MATCHING_INSTITUTION_STRONG_GREEDY_COMPETITORS"
 }

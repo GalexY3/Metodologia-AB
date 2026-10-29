@@ -1,0 +1,146 @@
+{
+  "schema": "ab.r.N88.matching_institution_experiment.v1",
+  "cycle": "N88",
+  "status": "ALL_PRECOMMITTED_GATES_PASS",
+  "prereg_git_commit": "c4b9442c9ffdcc1f792987df4171a2ca79e752cc",
+  "pre_outcome_code_sha256": "0218886d3d52c4557cf8a54066cd931e349a74114c80ee687f72fd67d0ae98af",
+  "source_original_sha256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+  "original_source_untouched": true,
+  "code_brotli_sha256": "002c8d25205db82e4b1389d2507eb0f9328247239c0c4a8995aa9a4a005682a3",
+  "code_brotli_git_blob_sha1": "511f7b8bdf4fcbe50018c8059be316b16d99734b",
+  "frozen_local_tar_gzip_sha256": "f7c5cb931fa8276a70368641735991268870b4ec47178dec0811b7d63563017e",
+  "python_command": "python n88_assignment_audit.py --original /mnt/data/esbm_dynamic.py --output /mnt/data/n88_results_full.json",
+  "n_simulations_total": 240,
+  "n_scenario_seed_cells": 60,
+  "n_scenarios": 10,
+  "n_seeds": 6,
+  "n_actors_per_simulation": 144,
+  "n_ticks": 16,
+  "sham_equal_original_60_of_60": true,
+  "all_maxcardinality_graphwise_ge_greedy": true,
+  "all_arms_relationship_balance": true,
+  "central_mean_formed": 227.8,
+  "central_mean_active_end": 60.6666666667,
+  "mean_diff_central_minus_greedy_weight_formed": 9.5166666667,
+  "mean_diff_central_minus_greedy_weight_active": 2.1166666667,
+  "mean_diff_central_minus_greedy_actor_formed": 7.7,
+  "mean_diff_central_minus_greedy_actor_active": 0.7666666667,
+  "relative_formed_weight_vs_central": 0.04177641205736,
+  "relative_formed_actor_vs_central": 0.03380158033363,
+  "scenario_summaries": [
+    {
+      "scenario": "mixed_random",
+      "seeds": 6,
+      "weight_delta_formed": 3.666667,
+      "weight_delta_active": 3,
+      "actor_delta_formed": 8.5,
+      "actor_delta_active": 0,
+      "weight_strict_graphs": 72,
+      "actor_strict_graphs": 59
+    },
+    {
+      "scenario": "heterosexual_restricted",
+      "seeds": 6,
+      "weight_delta_formed": -1,
+      "weight_delta_active": 1.833333,
+      "actor_delta_formed": -3.666667,
+      "actor_delta_active": 1.833333,
+      "weight_strict_graphs": 59,
+      "actor_strict_graphs": 52
+    },
+    {
+      "scenario": "institutional_segregation",
+      "seeds": 6,
+      "weight_delta_formed": 6.5,
+      "weight_delta_active": 2.833333,
+      "actor_delta_formed": 7.5,
+      "actor_delta_active": 0.833333,
+      "weight_strict_graphs": 64,
+      "actor_strict_graphs": 53
+    },
+    {
+      "scenario": "explicit_norm_preference",
+      "seeds": 6,
+      "weight_delta_formed": 9.5,
+      "weight_delta_active": 2.5,
+      "actor_delta_formed": 2.666667,
+      "actor_delta_active": 2.5,
+      "weight_strict_graphs": 86,
+      "actor_strict_graphs": 84
+    },
+    {
+      "scenario": "popularity_ranking",
+      "seeds": 6,
+      "weight_delta_formed": 5,
+      "weight_delta_active": 4.666667,
+      "actor_delta_formed": 4.166667,
+      "actor_delta_active": 1.833333,
+      "weight_strict_graphs": 78,
+      "actor_strict_graphs": 68
+    },
+    {
+      "scenario": "visibility_balancing",
+      "seeds": 6,
+      "weight_delta_formed": 13,
+      "weight_delta_active": -1.166667,
+      "actor_delta_formed": 16.166667,
+      "actor_delta_active": -1.333333,
+      "weight_strict_graphs": 70,
+      "actor_strict_graphs": 56
+    },
+    {
+      "scenario": "private_rejection_learning",
+      "seeds": 6,
+      "weight_delta_formed": 15.666667,
+      "weight_delta_active": 2.833333,
+      "actor_delta_formed": 11.166667,
+      "actor_delta_active": 1.333333,
+      "weight_strict_graphs": 79,
+      "actor_strict_graphs": 70
+    },
+    {
+      "scenario": "public_rejection_signal",
+      "seeds": 6,
+      "weight_delta_formed": 13.666667,
+      "weight_delta_active": 3.333333,
+      "actor_delta_formed": 7.5,
+      "actor_delta_active": 1.333333,
+      "weight_strict_graphs": 47,
+      "actor_strict_graphs": 41
+    },
+    {
+      "scenario": "longer_partnerships",
+      "seeds": 6,
+      "weight_delta_formed": 5.833333,
+      "weight_delta_active": -0.333333,
+      "actor_delta_formed": 3.333333,
+      "actor_delta_active": -0.5,
+      "weight_strict_graphs": 37,
+      "actor_strict_graphs": 38
+    },
+    {
+      "scenario": "shorter_partnerships",
+      "seeds": 6,
+      "weight_delta_formed": 23.333333,
+      "weight_delta_active": 1.666667,
+      "actor_delta_formed": 19.666667,
+      "actor_delta_active": -0.166667,
+      "weight_strict_graphs": 88,
+      "actor_strict_graphs": 74
+    }
+  ],
+  "graph_instantaneous_strict_advantages": {
+    "greedy_weight": 680,
+    "greedy_actor": 595
+  },
+  "paired_signs": {
+    "weight_formed_positive": 46,
+    "weight_formed_negative": 12,
+    "actor_formed_positive": 42,
+    "actor_formed_negative": 17
+  },
+  "full_detail_json_sha256": "051df4293751846c532f1d720b84b40d89ac8471f2763391e320734ec50264df",
+  "original_humans": 0,
+  "scientific_novelty_grade": "0/3",
+  "conclusion": "Centralized maximum-cardinality institution has nonzero but scenario heterogeneous synthetic dynamic effect; on the same graph maximum >= greedy, but accumulated temporal counts can reverse (e.g. heterosexual_restricted). No human external validity."
+}
