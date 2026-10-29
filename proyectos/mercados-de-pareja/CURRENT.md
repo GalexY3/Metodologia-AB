@@ -284,3 +284,8 @@
 ## Plano metodológico de identificabilidad y falsación (documental; sin ciclo)
 
 [ESBM_IDENTIFIABILITY_AND_FALSIFICATION_BLUEPRINT.md](research/ESBM_IDENTIFIABILITY_AND_FALSIFICATION_BLUEPRINT.md) — DAG temporal, estimandos por fase, matriz de identificación, rivales competentes, contraejemplos, predicciones falsables y mínima recogida ética de datos humanos. Preparado desde f6d0587cd1cc31afa14acdca3e4884314170795f; **no** es prueba/prerregistro AB-R, no ejecuta simulaciones, no desbloquea STOP_R5 ni modifica CT2, madurez, priors, outcomes o los 14 créditos N93–N106 reservados.
+
+
+## Protocolo falsador único H-FB-TIME · 10 revisiones intelectuales (NO AB-R, NO ciclo)
+
+[ESBM_SINGLE_DISCRIMINANT_FEEDBACK_PROTOCOL_20261029.md](research/ESBM_SINGLE_DISCRIMINANT_FEEDBACK_PROTOCOL_20261029.md) — prueba candidata de cuándo comunicar rechazos **auténticos**, medida por propuestas posteriores ante slates fijados; ITT, rivales B0–B8, daños/ética, 10 objeciones RA01–RA10, sin reclutar ni ejecutar. **Las diez revisiones no gastan ciclos**; 26/40 válidos, N93–N106 14 reservados, CT2 ordinal 7, madurez 41.20%, 100 SOURCES/30 PRIORS/150 UPDATES y STOP_R5 intactos.
