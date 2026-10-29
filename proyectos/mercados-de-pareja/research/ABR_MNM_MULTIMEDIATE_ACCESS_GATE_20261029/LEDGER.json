@@ -1,0 +1,78 @@
+{
+  "schema": "ab.research.noncycle_material_gate.v1",
+  "campaign": "ABR_ESBM20_20261028",
+  "branch": "research/ab-r-mercados-pareja-20261028",
+  "date": "2026-10-29",
+  "activity": "ORIGINAL_SOURCE_ACCESS_AUDIT_NONCYCLE",
+  "status": "STOP_R5",
+  "parent": "N82",
+  "previous_commit": "e6ba1ca8477445cbefc9bd473b2c38dad508b703",
+  "authorized_total": 20,
+  "valid_total": 16,
+  "remaining": 4,
+  "unstarted": [
+    "N83",
+    "N84",
+    "N85",
+    "N86"
+  ],
+  "this_turn": {
+    "valid": 0,
+    "invalid": 0,
+    "planning": 0,
+    "posthoc_audits": 1,
+    "original_rows_read": 0,
+    "models_run": 0,
+    "synthetic_runs": 0,
+    "experiment_runs": 0
+  },
+  "N83": {
+    "status": "NOT_OPENED",
+    "prereg": null,
+    "preoutcome_code_sha": null,
+    "holdout": "NOT_EXECUTED"
+  },
+  "CT2": {
+    "ordinal_score": 7,
+    "scale": "1-100",
+    "probability": false,
+    "new_point": false,
+    "last_point": "N82",
+    "trajectory": "../ABR_SSJY_STAGE_N82_20261029/CT2_TRAJECTORY.json",
+    "graph_full_and_zoom": "../ABR_SSJY_STAGE_N82_20261029/CT2.svg"
+  },
+  "new_material_sources": [
+    "SRC088",
+    "SRC089"
+  ],
+  "qualitative_updates": [
+    "U116",
+    "U117"
+  ],
+  "source_count": 89,
+  "prior_count": 30,
+  "update_count": 117,
+  "priors_status_unchanged": true,
+  "new_n1": 0,
+  "new_n2": 0,
+  "new_n3": 0,
+  "provenance": "MATCHNMINGLE_TU_DELFT_ORIGINAL_EULA_AND_MULTIMEDIATE_ORIGINAL_VIDEO_DATES",
+  "rights": "MNM_SIGNED_EULA_REQUIRED; MULTIMEDIATE_SECONDARY_REUSE_NOT_VERIFIED; no terms accepted",
+  "outcome_semantics": "OBSERVED_DATES_AND_ORDINAL_LIKERT_CONTACT_DESIRE; NO_VERIFIED_PAIRED_YES_NO_FILE",
+  "independent_external_holdout": "NOT_AVAILABLE_AND_NOT_RUN",
+  "strong_controls": "PLANNED_ONLY_NOT_PREREGISTERED",
+  "stop_gates": [
+    "No licensed original bytes",
+    "No verified individual pairwise binary yes/no",
+    "No novel discriminating estimand beyond recorded prior art",
+    "No A-J and code SHA lock before outcomes",
+    "No external independent holdout"
+  ],
+  "author_contacted": false,
+  "license_accepted": false,
+  "SSJY_used": false,
+  "original_data_rehosted": false,
+  "main_merged": false,
+  "clean_clone": "NOT_VERIFIED",
+  "report": "REPORT.md"
+}

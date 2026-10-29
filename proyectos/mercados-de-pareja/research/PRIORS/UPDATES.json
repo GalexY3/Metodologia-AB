@@ -4,7 +4,7 @@
   "date": "2026-10-28",
   "mode": "append-only logical, versioned by Git commits",
   "reconstructed_from_documents": "Retrospective backfill, not preregistration. Old before values NOT_RECORDED unless documented explicitly.",
-  "source_coverage": "87 sources, 30 priors, 115 updates; SRC086 DataverseNL Pronk 2020 original restrictedAccess; SRC087 Ogushi 2026 original bilateral speed-date decisions only publisher aggregates; no new raw files.",
+  "source_coverage": "89 sources, 30 priors, 117 updates. Two original human speed-dating cohort descriptions with access gates: SRC088 TU Delft MatchNMingle EULA signed and SRC089 MultiMediate online dates release/rights unverified. No new microdata, no N83.",
   "events": [
     {
       "id": "U001",
@@ -2947,7 +2947,53 @@
       "prior_probability_before": null,
       "prior_probability_after": null,
       "prereg_status": "NO_N83_PREREG_STOP_R5"
+    },
+    {
+      "id": "U116",
+      "prior_id": "P-DYADIC_ACCESS",
+      "source_ids": [
+        "SRC088"
+      ],
+      "cycle_ids": [],
+      "before": "PARTIAL_ROUND_ACTION_ACCESS_NO_EXPLICIT_REJECTION_OR_UNION",
+      "after": "PARTIAL_ROUND_ACTION_ACCESS_NO_EXPLICIT_REJECTION_OR_UNION",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "what_the_sources_contribute": "Original 92 persons, complete 3-event round-robin face-to-face dates, pairwise attractiveness/interest ratings; TU Delft publication gives restricted, signed scientific-research EULA route.",
+      "why_this_updates_or_checks_prior": "Independent original data-generating setting and a concrete new (but restricted) access route investigated; does not clear legal access nor meet explicit binary bilateral outcome gate; no experiment executed, thus prior scientific status unchanged.",
+      "limits": "Signed use agreement + access credentials lacking, actual pairwise data not read, 0–7 ordinal desire not proven yes/no, 3 events insufficient external dataset holdout.",
+      "falsifier_or_followup": "Legal original bytes, data-specific permission, participant/event/round mapping, verified binary opposite-person decisions for each observed meeting (no thresholding Likert as if behavioral choice); method novelty vs earlier controlled studies, prereg A–J and code SHA before outcomes, competent baselines, truly independent holdout. Otherwise R5 STOP.",
+      "evidence_type": "NEW_ORIGINAL_HUMAN_DATA_ACCESS_DESCRIPTION_NONCYCLE",
+      "recorded_at": "2026-10-29",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null,
+      "prereg_status": "NO_N83_PREREG_STOP_R5"
+    },
+    {
+      "id": "U117",
+      "prior_id": "P-MEASURE_OUTCOME",
+      "source_ids": [
+        "SRC089"
+      ],
+      "cycle_ids": [],
+      "before": "CHALLENGED",
+      "after": "CHALLENGED",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "what_the_sources_contribute": "Independent 227 video speed dates from 102 people and 1–7 interest in sharing contact, organizer-assisted transmission if mutual; exposes distinction between ordinal stated desire and binary consent.",
+      "why_this_updates_or_checks_prior": "Independent original data-generating setting and a concrete new (but restricted) access route investigated; does not clear legal access nor meet explicit binary bilateral outcome gate; no experiment executed, thus prior scientific status unchanged.",
+      "limits": "Actual binary responses and linked contact transfer absent in catalog, rights and raw data not verified; conditional contact is not subsequent union.",
+      "falsifier_or_followup": "Legal original bytes, data-specific permission, participant/event/round mapping, verified binary opposite-person decisions for each observed meeting (no thresholding Likert as if behavioral choice); method novelty vs earlier controlled studies, prereg A–J and code SHA before outcomes, competent baselines, truly independent holdout. Otherwise R5 STOP.",
+      "evidence_type": "NEW_ORIGINAL_HUMAN_DATA_ACCESS_DESCRIPTION_NONCYCLE",
+      "recorded_at": "2026-10-29",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null,
+      "prereg_status": "NO_N83_PREREG_STOP_R5"
     }
   ],
-  "last_campaign": "ABR_DATAVERSENL_JP_BILATERAL_GATE_NONCYCLE_20261029"
+  "last_campaign": "ABR_MNM_MULTIMEDIATE_ACCESS_GATE_20261029_NONCYCLE"
 }

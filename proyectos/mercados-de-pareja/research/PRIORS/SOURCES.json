@@ -3,7 +3,7 @@
   "project": "mercados-de-pareja",
   "date": "2026-10-28",
   "scope": "Retrospective provenance backfill from repository reports plus N56/N57 publisher audit. Original data never copied; not systematic or claim of accessing raw data for bibliography.",
-  "source_count": 87,
+  "source_count": 89,
   "sources": [
     {
       "id": "SRC001",
@@ -1742,7 +1742,39 @@
       "status": "MATERIAL_STRONG_RECENT_PRIOR_ART_NO_ACCESS_TO_ORIGINAL_ROWS",
       "AB_cycle_increment": 0,
       "falsifier": "Legitimately licensed original microdata with raw pairwise event decisions and novel preregistered prediction beyond published RF controls, tested on independent event/person cohort."
+    },
+    {
+      "id": "SRC088",
+      "title": "Cabrera-Quiros et al. 2018 MatchNMingle original speed-date and mingle events, Delft University of Technology",
+      "canonical_url": "https://matchmakers.ewi.tudelft.nl/matchnmingle/pmwiki/",
+      "source_type": "PRIMARY_ORIGINAL_RESEARCH_DATASET_EULA_IDENTIFIED_NO_DATA_LICENSE_ACCEPTED",
+      "verified_at": "2026-10-29",
+      "cycle_ids": [],
+      "paper_doi": "https://doi.org/10.1109/TAFFC.2018.2848914",
+      "original_dataset_description": "https://matchmakers.ewi.tudelft.nl/matchnmingle/pmwiki/pmwiki.php?n=Main.TheDataset",
+      "usage_agreement": "https://matchmakers.ewi.tudelft.nl/matchnmingle/pmwiki/eula.pdf",
+      "supplementary_catalog": "https://www.opendataindex.nl/en/dataset/datacite-4tu/10.4121%2F4e6fb106-5b00-4bf2-93ae-d80dbd3f626c",
+      "contribution": "Independently collected human 3-event round-robin dating corpus: 92 participants (46 male/46 female), first event 16 each and two events 15 each, 3-minute face-to-face encounters with immediately documented interest ratings and social interaction sensors, followed by mingle. Official original author site documents 0–7 after-date scores for desire to see again, potential friendship/sexual/romantic partner, plus pre-date HEXACO and physical opportunities via rotation. MatchNMingle EULA establishes a concrete legal non-commercial scientific access route requiring user identification/signature and credential request, rather than anonymous unlicensed reuse.",
+      "limits": "Official date response fields are rating-scale 0–7, NOT a verified yes/no accept/reject for both actors. No observation of couple formation or duration. Mingle captures different uncontrolled non-romantic opportunities and should not be conflated with assigned dates. Random rotation within events is not proof of randomized person-selection or representativeness. Only 3 events imply weak event-level holdout and no platform-level external sample. Original files, row pairing, rights confirmation, file hash, exposure ids, missingness and disclosure limitations not checked. 4TU Mingle repository is related same participant cohort, not independent replication.",
+      "rights": "Original TU Delft host says EULA, academic noncommercial use after identification and signed agreement, username/password requested; third-party 4TU listing Restrictive Licence. Not accepted, no author approached. Article and dataset rights distinct; no access or redistribution authorization established.",
+      "access_status": "LICENSED_GATE_NOT_AUTHORIZED_NO_MICRODATA_FETCHED",
+      "AB_cycle_increment": 0,
+      "falsifier": "Researcher signs/obtains explicit EULA access without assistant impersonation, obtains original file SHA256 and both participant keys; verify whether yes/no options exist separate from 0–7 ratings, pre-exposure covariates, and overlap across three events. Until then NOT an N83-ready binary reciprocal outcome."
+    },
+    {
+      "id": "SRC089",
+      "title": "MultiMediate'24 Speed Dating corpus: video-call romantic meetings and mutual contact-sharing questionnaires",
+      "canonical_url": "https://multimediate-challenge.org/datasets/Dataset_SpeedDating/",
+      "source_type": "PRIMARY_COLLECTOR_CHALLENGE_DATA_DESCRIPTION_DATA_RELEASE_REUSE_TERMS_UNVERIFIED",
+      "verified_at": "2026-10-29",
+      "cycle_ids": [],
+      "contribution": "Original challenge provider describes 227 online-video speed dates across 102 distinct people (51 male/51 female), approximately 6 minutes per date; survey consent, pre-date personality/empathy, seven postdate 1–7 impression items including interest in counterpart contact information; organizer may connect parties conditional on mutual interest. This is a separate observed interaction cohort from Delft MatchNMingle, Columbia, Graz, Pronk, Ogushi and Tawkify, not a derived mirror.",
+      "limits": "Public official 2024 page describes intended challenge validation sets and survey responses; no verified currently downloadable original row-level bilateral dataset or joint yes/no contact fields. Contact interest item is ordinal 1–7, not inherently an explicit binary yes/no; conditions for actual contact transmission, timestamps, participant/event crosswalk, files, holdout and attrition not inspected. Neither stable union nor duration measured in public description. A challenge evaluation subset is not automatically original full cohort or independent holdout.",
+      "rights": "Website documents GDPR-related participant consent for collection, NOT explicit secondary research reuse license for outside users. No license accepted, no data or recordings fetched, no authors contacted.",
+      "access_status": "RIGHTS_RELEASE_AND_BINARY_OUTCOME_UNVERIFIED_NO_MICRODATA_FETCHED",
+      "AB_cycle_increment": 0,
+      "falsifier": "Locate legally authorized institutional release that identifies both paired decisions and observed offered pairs, participant identifiers, temporal ordering, privacy and terms; SHA256 original file plus design under strong prior-art controls before outcomes."
     }
   ],
-  "last_added_campaign": "ABR_DATAVERSENL_JP_BILATERAL_GATE_NONCYCLE_20261029"
+  "last_added_campaign": "ABR_MNM_MULTIMEDIATE_ACCESS_GATE_20261029_NONCYCLE"
 }
