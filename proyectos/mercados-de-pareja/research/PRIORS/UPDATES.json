@@ -4,7 +4,7 @@
   "date": "2026-10-28",
   "mode": "append-only logical, versioned by Git commits",
   "reconstructed_from_documents": "Retrospective backfill, not preregistration. Old before values NOT_RECORDED unless documented explicitly.",
-  "source_coverage": "93 sources, 30 priors, 122 updates: new explicit data-package CC BY Münster PsychArchives original zip but no bytes; Queensland original dyadic exposed IDs and ordinal outcome-only header, no binary or license. N83 not opened.",
+  "source_coverage": "95 sources, 30 priors, 125 updates; McMaster 2021 original two-sided native yes/no and discordance from ordinal ratings; BUas >1000 cross-national dating encounters Zenodo original dataset SUBSECTION rights/schema unverified. No original row data, N83 not opened.",
   "events": [
     {
       "id": "U001",
@@ -3109,7 +3109,76 @@
       "prior_probability_before": null,
       "prior_probability_after": null,
       "prereg_status": "NO_N83_PREREG_STOP_R5"
+    },
+    {
+      "id": "U123",
+      "prior_id": "P-DYADIC_ACCESS",
+      "source_ids": [
+        "SRC094"
+      ],
+      "cycle_ids": [],
+      "before": "PARTIAL_ROUND_ACTION_ACCESS_NO_EXPLICIT_REJECTION_OR_UNION",
+      "after": "PARTIAL_ROUND_ACTION_ACCESS_NO_EXPLICIT_REJECTION_OR_UNION",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "what_the_sources_contribute": "McMaster 2021 original study with 2 sessions, original yes/no MeetingAgain for both daters, real observed opportunities; matches trigger contact exchange.",
+      "why_this_updates_or_checks_prior": "Exactly required bilateral binary construct exists in original study design, unlike prior 0–7 datasets, yet no rights-verified original bytes or SHA256 and only OSF/author agreement permitted routes; no new experimental evidence.",
+      "limits": "Two event groups only; participant-level records and license absent; source article open license does not extend automatically to original row data.",
+      "prereg_status": "NO_N83_PREREG_STOP_R5",
+      "falsifier_or_followup": "Do not revisit OSF, Essex, Stanford, Gist, PsychArchives binary download, or failed new Zenodo access paths; only a genuinely new permitted original file route, license, bytes SHA256, native paired yes/no and independent holdout plus pre-outcome preregistered A–J/code SHA can reopen R5.",
+      "evidence_type": "MATERIAL_PRIMARY_ORIGINAL_PROTOCOL_AND_ARCHIVE_METADATA_NONCYCLE",
+      "recorded_at": "2026-10-29",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "prior_probability_before": null,
+      "prior_probability_after": null,
+      "AB_cycle_increment": 0
+    },
+    {
+      "id": "U124",
+      "prior_id": "P-MEASURE_OUTCOME",
+      "source_ids": [
+        "SRC094"
+      ],
+      "cycle_ids": [],
+      "before": "CHALLENGED",
+      "after": "CHALLENGED",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "what_the_sources_contribute": "Published authors count 30 of 54 inconsistent respondents when their 9-point stated desire and yes/no choice are compared.",
+      "why_this_updates_or_checks_prior": "Direct material empirical measurement limitation reinforces rejection of thresholding ordinal romantic interest as native behavioral acceptance.",
+      "limits": "Respondents not dyads, not 30 of 55 recruited; original raw ordinal/binary mismatches uninspected, method-level comparison only, no estimates of ESBM.",
+      "prereg_status": "NO_N83_PREREG_STOP_R5",
+      "falsifier_or_followup": "Do not revisit OSF, Essex, Stanford, Gist, PsychArchives binary download, or failed new Zenodo access paths; only a genuinely new permitted original file route, license, bytes SHA256, native paired yes/no and independent holdout plus pre-outcome preregistered A–J/code SHA can reopen R5.",
+      "evidence_type": "MATERIAL_PRIMARY_ORIGINAL_PROTOCOL_AND_ARCHIVE_METADATA_NONCYCLE",
+      "recorded_at": "2026-10-29",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "prior_probability_before": null,
+      "prior_probability_after": null,
+      "AB_cycle_increment": 0
+    },
+    {
+      "id": "U125",
+      "prior_id": "P-TRANSPORT",
+      "source_ids": [
+        "SRC095"
+      ],
+      "cycle_ids": [],
+      "before": "CHALLENGED",
+      "after": "CHALLENGED",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "what_the_sources_contribute": "Breda BYU Sun Yat-Sen speed-dating programme collected >1000 interactions across 3 countries, and original BUas university lists Zenodo subset with raw questionnaires/physiology/scripts.",
+      "why_this_updates_or_checks_prior": "Potential external diverse venue source identified, but is not a confirmed multicohohort bilateral yes/no comparison and cannot update transport inference without data.",
+      "limits": "Record page/API inaccessible; no exact record-specific license, binary two-person outcome, original SHA or proven between-country split of public subset; no cross-cultural causal result.",
+      "prereg_status": "NO_N83_PREREG_STOP_R5",
+      "falsifier_or_followup": "Do not revisit OSF, Essex, Stanford, Gist, PsychArchives binary download, or failed new Zenodo access paths; only a genuinely new permitted original file route, license, bytes SHA256, native paired yes/no and independent holdout plus pre-outcome preregistered A–J/code SHA can reopen R5.",
+      "evidence_type": "MATERIAL_PRIMARY_ORIGINAL_PROTOCOL_AND_ARCHIVE_METADATA_NONCYCLE",
+      "recorded_at": "2026-10-29",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "prior_probability_before": null,
+      "prior_probability_after": null,
+      "AB_cycle_increment": 0
     }
   ],
-  "last_campaign": "ABR_PSYCHARCHIVES_QUEENSLAND_OPEN_DATA_GATE_20261029_NONCYCLE"
+  "last_campaign": "ABR_MCMASTER_BUAS_NEW_ORIGINAL_GATE_20261029_NONCYCLE"
 }

@@ -3,7 +3,7 @@
   "project": "mercados-de-pareja",
   "date": "2026-10-28",
   "scope": "Retrospective provenance backfill from repository reports plus N56/N57 publisher audit. Original data never copied; not systematic or claim of accessing raw data for bibliography.",
-  "source_count": 93,
+  "source_count": 95,
   "sources": [
     {
       "id": "SRC001",
@@ -1849,7 +1849,40 @@
       "limits": "Header comprises id, partnerid and sessionid but no explicit yes/no choice, partner yes/no or mutual match column; there may be other files not inspected, so absence in examined published CSV does not prove source design collected none. Scalar attraction is not a binary behavioral decision; do not impose threshold. GIT blob SHA is Git object SHA1, not raw content SHA256 and not evidence of a downloaded original file. No original dataset rows, matching/union outcome, scientific model, code execution or external holdout verified. Open article and existing public code do not establish novelty for ESBM.",
       "next_gate": "Check legal data reuse terms and original unreduced data/codebook for two measured binary decisions; require SHA256 of original bytes, nonoverlapping independent validation and frozen A–J+code before outcomes; otherwise use as only prior art / methodology control.",
       "AB_cycle_increment": 0
+    },
+    {
+      "id": "SRC094",
+      "title": "Chang, Kragness, Tsou, Bosnyak, Thiede and Trainor (2021), Body sway predicts romantic interest in speed dating, McMaster LIVELab",
+      "canonical_url": "https://doi.org/10.1093/scan/nsaa093",
+      "original_paper": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7812630/",
+      "author_institution_site": "https://livelab.mcmaster.ca/speed-dating/",
+      "verified_at": "2026-10-29",
+      "cycle_ids": [],
+      "source_type": "PRIMARY_ORIGINAL_TWO_SESSIONS_OBSERVED_ROTATION_AND_NATIVE_BILATERAL_YES_NO_SOURCE_ORIGINAL_ROW_DATA_BLOCKED_OSF",
+      "contribution": "Distinct original McMaster Hamilton real face-to-face speed-dating two-session collection recruited 55 singles, with n=54 usable after missing female responses (authors), ~15 rounds per session, 4-minute dates. After each observed encounter both participants filled private native yes/no MeetingAgain 'Would you like to see this person again for a second date?'; when both answered yes contacts exchanged within 24 h. Critically the paper documents that 30/54 participants had inconsistent ordinal 9-point 'How interested in a second date' vs their native binary yes/no: direct external empirical evidence against treating Likert attraction as observed acceptance. Authors analyze body sway Granger directionality and groovy vs low groove music and actor/dyad mixed-effects as prior art.",
+      "rights": "Article CC BY 4.0 does not establish raw motion capture or response microdata license. The original authors' data availability says analyzed datasets only on OSF, raw time series via reasonable request and agreement. Per explicit user prohibition no OSF web/API attempt and no author contact or agreement accepted. Supplementary ZIP linked through article is not presumed to contain original pairwise decision rows or license.",
+      "access_status": "ORIGINAL_BILATERAL_BINARY_MEASURE_CONFIRMED_IN_PROTOCOL_BUT_ORIGINAL_DATA_NOT_READ_RIGHTS_UNVERIFIED",
+      "limits": "Only two event clusters, different cohorts required to validate external predictions. Participant count 55 initially, 54 usable; observed dates not equated to observed stable unions or duration. Per-author yes/no responses confirmed by published method, not raw linked original fields. Raw rights, id and meeting crosswalk, codebook, event/round holdout, SHA256, data schema all unverified; data route via OSF blocked by prior instruction. Observed association body sway does not identify causal effect of coupling. Order of music shared by all subjects can confound music inference; no own reanalysis.",
+      "falsifier": "Acquire data only through a newly permitted and rights-verified original public alternative (not OSF, author request, or controlled content); verify original bytes SHA256, exact native two binary decisions and round exposure IDs, code prereg A–J before outcomes; require external independent cohort beyond the two sessions and stronger movement/actor/event baselines.",
+      "AB_cycle_increment": 0
+    },
+    {
+      "id": "SRC095",
+      "title": "Shahvali, Mitas, Ward and Boode (2024), Five Minutes to Love, BUas original cross-country speed-dating physiology and questionnaire dataset",
+      "canonical_url": "https://doi.org/10.5281/zenodo.13927395",
+      "original_institutional_metadata": "https://pure.buas.nl/en/datasets/five-minutes-to-love/",
+      "institution_project": "https://www.buas.nl/en/research/professorships/leisure-and-tourism-experiences/measuring-love-from-the-body",
+      "institution_qualitative_results": "https://www.buas.nl/en/research/professorships/leisure-and-tourism-experiences/connection-experiences",
+      "verified_at": "2026-10-29",
+      "cycle_ids": [],
+      "source_type": "PRIMARY_CROSS_NATIONAL_SPEED_DATING_RESEARCH_DATASET_ZENODO_SUBSET_WITH_BILATERAL_YES_NO_UNVERIFIED",
+      "contribution": "Independent original cross-national study from Breda University of Applied Sciences, Brigham Young University USA and Sun Yat-Sen University China: over 1000 observed brief speed dates according to host university, self-disclosure topics manipulated and physiological synchrony recorded. Researchers register data and accompanying materials for a SUBSECTION via Zenodo DOI 10.5281/zenodo.13927395, listed by original BUas research portal as Rawdata participant physiology/times/metadata/questionnaires, MATLAB/R scripts and processed physiology. Cross-country contexts could enable external venue and culture stress tests if the original data actually expose paired decisions, overlap and legal rights.",
+      "rights": "Institutional page links to Zenodo DOI and describes files, but record-specific license/access status NOT verified. General Zenodo default CC BY4 is not legal evidence for this specific record; user explicitly prohibits accepting terms. Public institutional description is not evidence of participant consent for reuse of individually reidentifiable physiology, so do not download original participant folders until license & privacy terms verified.",
+      "access_status": "INSTITUTIONAL_DATA_RECORD_VERIFIED_ZENODO_RECORD_OR_API_NOT_ACCESSIBLE_NO_DATA",
+      "limits": "The >1000 events refers to overall multi-institutional research PROJECT, not size of Zenodo subsection. Original record and API responded inaccessible to web service once each; do not retry blocked routes. The depositor lists questionnaires but no complete original codebook, paired explicit two yes/no/accept/decline, actual response rows, subject ids, original SHA256, data-specific license or usable external holdout inspected. Self-reported 'interest in future date' not necessarily native binary choice; cross-national sites may differ by design and data released. No claim of controlled effect with original data.",
+      "falsifier": "New, nonrepetitive, legally authenticated access route to Zenodo record and exact license/data dictionary; native binary paired decisions, original hash and pre-registered code, strong standards vs McMaster, Joel, Pronk, Ogushi and Matz; independently held-out venue/country only with domain harmonization verified.",
+      "AB_cycle_increment": 0
     }
   ],
-  "last_added_campaign": "ABR_PSYCHARCHIVES_QUEENSLAND_OPEN_DATA_GATE_20261029_NONCYCLE"
+  "last_added_campaign": "ABR_MCMASTER_BUAS_NEW_ORIGINAL_GATE_20261029_NONCYCLE"
 }

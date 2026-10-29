@@ -1,0 +1,92 @@
+{
+  "schema": "ab.research.noncycle_material_gate.v1",
+  "project": "mercados-de-pareja",
+  "branch": "research/ab-r-mercados-pareja-20261028",
+  "campaign": "ABR_ESBM20_20261028",
+  "date": "2026-10-29",
+  "parent_commit": "8f68420413b22a6303b75c11c8eff6b841539901",
+  "kind": "NEW_ORIGINAL_BILATERAL_PROTOCOL_WITH_NO_LEGAL_DATA_ACCESS_AND_CROSS_NATIONAL_ORIGINAL_ARCHIVE_GATE_NONCYCLE",
+  "status": "STOP_R5",
+  "valid_total": 16,
+  "authorized_total": 20,
+  "remaining": 4,
+  "unopened": [
+    "N83",
+    "N84",
+    "N85",
+    "N86"
+  ],
+  "delta": {
+    "valid_AB": 0,
+    "invalid_AB": 0,
+    "planning_AB": 0,
+    "documentary_audits": 1,
+    "original_participant_rows_read": 0,
+    "original_outcome_values_inspected": 0,
+    "models_run": 0,
+    "simulations_run": 0,
+    "external_holdout_evaluated": 0
+  },
+  "N83": {
+    "state": "NOT_OPENED",
+    "original_data_permission_verified": false,
+    "original_bytes_sha256": null,
+    "native_binary_bilateral_in_accessible_files_verified": false,
+    "A_J_prereg_commit": null,
+    "code_sha_before_outcomes": null,
+    "competent_baseline_executed": false,
+    "independent_holdout_executed": false
+  },
+  "CT2": {
+    "ordinal": 7,
+    "not_probability": true,
+    "unchanged": true,
+    "last_real_cycle": "N82",
+    "trajectory": "../ABR_SSJY_STAGE_N82_20261029/CT2_TRAJECTORY.json",
+    "svg_full_and_zoom": "../ABR_SSJY_STAGE_N82_20261029/CT2.svg"
+  },
+  "documentary": {
+    "sources": 95,
+    "priors": 30,
+    "updates": 125,
+    "added_sources": [
+      "SRC094",
+      "SRC095"
+    ],
+    "events": [
+      "U123",
+      "U124",
+      "U125"
+    ],
+    "prior_state_changes": 0,
+    "new_N1": 0,
+    "new_N2": 0,
+    "new_N3": 0
+  },
+  "sources_gate": {
+    "McMaster": "Two persons native yes/no verified in original research protocol, 54 included/55 recruited and only 2 sessions; no accessible licensed original linked dyad rows, OSF forbidden, SHA absent.",
+    "BUas": "Original 3-nation >1000 program, Zenodo original SUBSET with questionnaires, file license, paired native yes/no, bytes and SHA not inspected, entry and API inaccessible."
+  },
+  "prior_art_controls": [
+    "Joel 2017 actor-target-pair SRM",
+    "Baxter 2022 post-match followup",
+    "Pronk 2020 rejection",
+    "Ogushi 2026 time-segmented RF",
+    "Matz 2026 natural-language judges",
+    "Zhao 2024/25 permutation controls",
+    "Chang 2021 movement/beat",
+    "Arias-Sarah 2024 smiles"
+  ],
+  "forbidden_routes_attempted": false,
+  "OSF_attempted": false,
+  "Essex_attempted": false,
+  "Stanford_attempted": false,
+  "Gist_attempted": false,
+  "SSJY_used": false,
+  "authors_contacted": false,
+  "license_accepted": false,
+  "main_merged": false,
+  "private_microdata_published": false,
+  "clean_clone_verified": false,
+  "report": "REPORT.md"
+}
