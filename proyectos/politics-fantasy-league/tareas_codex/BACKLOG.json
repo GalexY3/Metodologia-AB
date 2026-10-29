@@ -333,6 +333,97 @@
         "scientific_2of3": "NOT_ACREDITED",
         "two_legacy_AB_slots_untouched": true
       }
+    },
+    {
+      "id": "PFL-CODEX-T025-MECHANISM",
+      "title": "Reproducción nativa y auditoría de mecanismos sintéticos",
+      "file": "T025_MECHANISM_SYNTHETIC_NATIVE_QA_20261029.md",
+      "status": "PARCIAL_EN_RAMA",
+      "result_file": "T025_MECANISMOS_RESULTADO.md",
+      "tested_commit": "070ecb0ae2b2597e09b3df5819da9509f6f5c354",
+      "notes": [
+        "36 cases independently reconstructed; exact original fixtures unavailable",
+        "Validation contract v2 rejects exotic inputs; manifests remain unauthenticated",
+        "Distinct from older T025 release task"
+      ]
+    },
+    {
+      "id": "PFL-CODEX-T026",
+      "title": "Piloto ficticio: pruebas nativas y requisitos éticos",
+      "file": "T026_PILOT_NATIVE_ETHICS_QA_20261029.md",
+      "status": "PARCIAL_EN_RAMA",
+      "result_file": "T026_AVANCE_20261029.md",
+      "tested_commit": "12a3f3b2b57e2f976efa8dc3257f40e96a94a45a",
+      "notes": [
+        "84 tests reconstructed, original harness unavailable",
+        "Human and ethics criteria remain pending"
+      ]
+    },
+    {
+      "id": "PFL-CODEX-T019",
+      "title": "Originales XML oficiales y contraste agregado Cámara EE. UU.",
+      "file": "T019_US_HOUSE_XML_PREDICCION_20261028.md",
+      "status": "PARCIAL_EN_RAMA",
+      "result_file": "T019_AVANCE_20261029.md",
+      "notes": [
+        "12 XML originales nominales guardados solo fuera de Git",
+        "84 comprobaciones agregadas y 15 tests focalizados PASS",
+        "QA integral, derechos y first_public_at pendientes"
+      ]
+    },
+    {
+      "id": "PFL-CODEX-T020",
+      "title": "Originales europeos firmados",
+      "file": "T020_EP_ORIGINALES_FIRMADOS_20261028.md",
+      "status": "PARCIAL_EN_RAMA",
+      "result_file": "T020_AVANCE_20261029.md"
+    },
+    {
+      "id": "PFL-CODEX-T021",
+      "title": "Originales UK650",
+      "file": "T021_UK650_ORIGINALES_Y_RÉPLICA_20261028.md",
+      "status": "BLOQUEADA_ACCESO_403",
+      "result_file": "T021_AVANCE_20261029.md"
+    },
+    {
+      "id": "PFL-CODEX-T023",
+      "title": "Peticiones UK por cohorte",
+      "file": "T023_PETITIONS_IDCOHORT_ORIGINALES_20261028.md",
+      "status": "PARCIAL_EN_RAMA",
+      "result_file": "T023_AVANCE_20261029.md"
+    },
+    {
+      "id": "PFL-CODEX-T016",
+      "title": "Originales regionales y contraste agregado",
+      "file": "T016_ORIGINALES_REGIONAL5_20261028.md",
+      "status": "PARCIAL_EN_RAMA",
+      "result_file": "T016_AVANCE_20261029.md",
+      "notes": [
+        "Discrepancia de 100 entre cabecera DOG y CSV; causa desconocida",
+        "Euskadi TLS no validado, sin bypass",
+        "Originales solo fuera de Git"
+      ]
+    },
+    {
+      "id": "PFL-CODEX-T017",
+      "title": "Originales de holdout regional",
+      "file": "T017_HOLDOUT_ORIGINALES_20261028.md",
+      "status": "PARCIAL_EN_RAMA",
+      "result_file": "T017_AVANCE_20261029.md"
+    },
+    {
+      "id": "PFL-CODEX-T018",
+      "title": "Originales UK divisiones",
+      "file": "T018_UK_DIVISIONS_ORIGINALES_20261028.md",
+      "status": "PARCIAL_EN_RAMA",
+      "result_file": "T018_AVANCE_20261029.md"
+    },
+    {
+      "id": "PFL-CODEX-T022",
+      "title": "Originales UK peticiones top12",
+      "file": "T022_PETICIONES_JSON_COHORTE_20261028.md",
+      "status": "PARCIAL_EN_RAMA",
+      "result_file": "T022_AVANCE_20261029.md"
     }
   ],
   "no_automatic_actions": true,
@@ -377,5 +468,23 @@
     "branch": "research/pfl-t028-handoff-and-evidence-20261029",
     "current_pr": 37,
     "executor_not_called": true
+  },
+  "T028_supplemental_20261029": {
+    "result_file": "T028_COMPLEMENTO_20261029.md",
+    "commit_tested": "7a6876f71b6cbc286f86ff4bf1393889e4f22851",
+    "controls_passed": 11,
+    "scope": "pilot keyboard, CSS, headers, methods, screenshots; not WCAG or release"
+  },
+  "CODEX20_20261029": {
+    "status": "CLOSED_20_ABP_CYCLES",
+    "authorized": 20,
+    "executed": 20,
+    "remaining": 0,
+    "report": "../research/ABH_CODEX20_20261029/FINAL_REPORT.md",
+    "linux_tested_commit": "20e01950bc00044b546c7e7c658fab168232bb57",
+    "python_pass": 799,
+    "python_subtests": 32,
+    "node_pass": 314,
+    "release_gates_passed": 0
   }
 }

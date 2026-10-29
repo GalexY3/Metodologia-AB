@@ -1,3 +1,7 @@
+> **CODEX20 cerrado, 29/10/2026:** replay original PASS **81 lotes**, 63 nodos, 283 runs y 51 complaints; SHA256 `ae363aff1be0bbe6e9f7873a7cbfd1c68c0db50d239f94987b7df120caac29c1`. [20 ciclos acotados AB-P, sin descubrimientos ni gates promovidos](../research/ABH_CODEX20_20261029/FINAL_REPORT.md). El bloque Linux completo anterior valida el commit20e01950 con 80 lotes; el nuevo delta se verifico despues con checker y 38 tests +92 subtests nativos. Historial inferior preservado.
+
+> **QA complementaria 29/10/2026:** [T028](../tareas_codex/T028_COMPLEMENTO_20261029.md) añade 11 controles locales de navegador; [T025 mecanismos](../tareas_codex/T025_MECANISMOS_RESULTADO.md) registra reproducción y corrección acotadas. No se añaden lotes ni ciclos, no se revalida con ello el grafo y no se abren gates.
+
 # ESTADO CANÓNICO DEL ATLAS — REPRODUCIDO CON PYTHON ORIGINAL (29/10/2026)
 
 **Fuente autorizada:** PR sucesora de #41, `research/pfl-t028-atlas-direct-adversarial-20261029`; ejecución nativa del checkout privado en [GitHub Actions #40805714464](https://github.com/GalexY3/Metodologia-AB/actions/runs/40805714464), commit fuente `85f5513f801f0c34a03b2d73cbf95d5ae3e5c5d1`. [Recibo verificable](../research/T028_DIRECT_ATLAS_20261029/NATIVE_ATLAS_CHECK_RECEIPT.json).
