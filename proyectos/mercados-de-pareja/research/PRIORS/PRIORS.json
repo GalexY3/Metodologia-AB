@@ -172,7 +172,7 @@
         "SRC032",
         "SRC104"
       ],
-      "last_update_id": "U162",
+      "last_update_id": "U164",
       "uncertainty": "Not probabilistically calibrated; evidence heterogeneous and some sources only metadata",
       "next_falsifier_or_test": "Independent prospective data with matched risk set, competent adversarial controls and documented sample selection",
       "numeric_probability": null,
@@ -197,9 +197,10 @@
         "U154",
         "U158",
         "U160",
-        "U162"
+        "U162",
+        "U164"
       ],
-      "latest_evidence_summary": "SRC104 round mismatch in previous ledger 32/116 was comparison of mixed integer/text Round; corrected numeric value mismatch=26/116. 726 audio filenames independently agree with recorded actor/round/segment; 90 mirrored dyads are same-round (88 vote-consistent, 2 contradictions); 26 are cross-round (13 vote inconsistent). Physical event clock not externally established, round cannot be used to overwrite identity or infer causal exposure/order. No new R5 release.",
+      "latest_evidence_summary": "SRC104 2-event roster QA: group2 11 men+8 women, 11 round labels each with 8+8 directed observations, 88/88 possible recorded pair labels. Group3 6 men+5 women, 6 rounds each with 6 male+5 female directed observations, 30/30 possible recorded pair labels plus 8 one-sided actor labels to 2 unrecorded counterpart IDs; union 38 keys exceeds conditional 36 male×round capacity. The published protocol synchronizes six-minute rounds and men rotate, but paper does not define spreadsheet Round / Dates_ID at row level; no opportunity schedule identified, STOP_R5.",
       "last_revised_at": "2026-10-29"
     },
     {
@@ -375,7 +376,7 @@
         "SRC100",
         "SRC104"
       ],
-      "last_update_id": "U161",
+      "last_update_id": "U163",
       "uncertainty": "Not probabilistically calibrated; evidence heterogeneous and some sources only metadata",
       "next_falsifier_or_test": "Independent prospective data with matched risk set, competent adversarial controls and documented sample selection",
       "numeric_probability": null,
@@ -408,9 +409,10 @@
         "U149",
         "U157",
         "U159",
-        "U161"
+        "U161",
+        "U163"
       ],
-      "latest_evidence_summary": "Read-only forensic rerun of SRC104 confirms 15/116 cross-vote conflicts but corrects 32 to 26 Round disagreements after integer normalization; 13/26 different-round pairs have conflicts vs 2/90 same-round, and 18/26 different-round pairs have contradictory mirrored partner score annotations vs 0/90 same-round. Source cannot identify cause of mislabeling or which vote true. 10 single-sided keys all in second event: 8 refer to two nonvoice partner IDs (6+2), 2 recorded counterpart but missing inverse, and 1 with no choice. Evidence quality increased, no safe dyadic confirmatory outcome. Prior remains challenged by missing rights/identification/independent holdout.",
+      "latest_evidence_summary": "Original first-party Pisanski Methods verify private yes/no written by each person beside the counterpart ID after each six-minute encounter; XLSX read-only roster reveals 118/118 eligible opposite-sex participant-pair ID labels across recorded people, but the second group has 38 partner keys for 6 men × 6 recorded round slots (36 maximum under common real-time Round). Thus not all 38 can be unique correctly attributed physical encounters under that interpretation; 15 prior cross-vote conflicts remain, no source to identify correct row, no new clean dyadic sample.",
       "last_revised_at": "2026-10-29"
     },
     {
@@ -929,8 +931,8 @@
     "all_priors_linked": true,
     "source_ids_linked": 104,
     "registered_sources": 104,
-    "update_events": 162,
+    "update_events": 164,
     "counts_as_new_AB_cycle": false,
-    "last_update": "2026-10-29 U161 P-DYADIC_ACCESS + U162 P-OPPORTUNITY, both NO_CHANGE_WITH_REASON; SRC104 untyped Round differences 32 corrected to 26; no cycles"
+    "last_update": "2026-10-29 U163/U164 both NO_CHANGE_WITH_REASON original Pisanski §2b and conditional 38 label edges > 36 one-slot per male-round QA, no cycle"
   }
 }

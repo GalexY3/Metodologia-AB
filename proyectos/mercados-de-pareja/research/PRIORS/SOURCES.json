@@ -2204,7 +2204,54 @@
       },
       "partial_bilateral_join_verified": true,
       "canonical_artifact_sha256_verified": false,
-      "last_methodological_audit": "2026-10-29 SRC104 round type correction and cross-partner covariate mirror checks; see proyectos/mercados-de-pareja/research/ABR_SRC104_MIRROR_ROUND_ADVERSARIAL_QA_NOCYCLE_20261029/REPORT.md"
+      "last_methodological_audit": "2026-10-29 primary original Methods plus XLSX gender/round capacity audit; proyectos/mercados-de-pareja/research/ABR_SRC104_PRIMARY_PROTOCOL_ROSTER_IMPOSSIBILITY_NOCYCLE_20261029/REPORT.md",
+      "coding_provenance_round_roster_audit_20261029": {
+        "status": "POSTHOC_READ_ONLY_PRIMARY_PAPER_AND_USER_WORKBOOK_SCHEMA_QA_NOT_AN_IDENTIFIED_ROW_REPAIR",
+        "source_article": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6304053/",
+        "primary_method": "Methods 2(a)-(d): two age-group sessions, 6-min dates with men rotating, private yes/no by date ID from BOTH participants after each encounter, three acoustic segment recordings per directed event. Article does not supply a field dictionary certifying Group/Date/Round/Dates_ID row-level correctness.",
+        "observed_workbook_sha256": "91c0bb93e699cc003ad32a11c51d38da6018cf9851b613822ecb19ef5618be00",
+        "event_group_2": {
+          "recorded_men": 11,
+          "recorded_women": 8,
+          "rounds": 11,
+          "directed_per_round_by_gender": {
+            "men": 8,
+            "women": 8
+          },
+          "all_recorded_opposite_sex_pair_labels": 88,
+          "total_possible_recorded_pairs": 88,
+          "reverse_id_pairs": 88
+        },
+        "event_group_3": {
+          "recorded_men": 6,
+          "recorded_women": 5,
+          "rounds": 6,
+          "directed_per_round_by_gender": {
+            "men": 6,
+            "women": 5
+          },
+          "all_recorded_opposite_sex_pair_labels": 30,
+          "total_possible_recorded_pairs": 30,
+          "reverse_id_pairs": 28,
+          "one_direction_of_recorded_counterpart": 2,
+          "one_direction_to_nonrecorded_counterpart": 8,
+          "nonrecorded_counterpart_IDs": 2,
+          "all_unordered_partner_labels": 38,
+          "male_actor_round_capacity_if_same_real_time_round": 36,
+          "conditional_distinct_edge_capacity_overshoot": 2
+        },
+        "all_recorded_opposite_sex_pairs_label_coverage": {
+          "present": 118,
+          "possible": 118
+        },
+        "audited_triplicate_segments": 726,
+        "directed_units": 242,
+        "prior_cross_vote_mismatch": 15,
+        "original_records_changed": 0,
+        "source_substantive_limits": "The observed 38>36 is conditional on global clock-round interpretation and unique date pairing; it diagnoses at least one failed assumption but not which IDs/rounds/votes are wrong. No original booklet/table attendance schedule, no row repair allowed.",
+        "report_path": "proyectos/mercados-de-pareja/research/ABR_SRC104_PRIMARY_PROTOCOL_ROSTER_IMPOSSIBILITY_NOCYCLE_20261029/REPORT.md",
+        "AB_cycle_increment": 0
+      }
     }
   ],
   "last_added_campaign": "ABR_R5_GATE_PISANSKI_FIGSHARE_NOCYCLE_20261029"
