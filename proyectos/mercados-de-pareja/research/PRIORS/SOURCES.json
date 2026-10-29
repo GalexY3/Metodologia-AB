@@ -3,7 +3,7 @@
   "project": "mercados-de-pareja",
   "date": "2026-10-28",
   "scope": "Retrospective provenance backfill from repository reports plus N56/N57 publisher audit. Original data never copied; not systematic or claim of accessing raw data for bibliography.",
-  "source_count": 84,
+  "source_count": 85,
   "sources": [
     {
       "id": "SRC001",
@@ -1695,7 +1695,22 @@
       "limits": "Two samples are separate years but part of same published research program, not Columbia or Mixmosa. Registered user authentication/terms not satisfied; no original data bytes, no SHA256 or binary bilateral acceptance/duration confirmed. Strong prior art against claiming predictive pair-specific compatibility from self-reports.",
       "rights": "UKDS safeguarded registered-user End User Licence; access needs user's own registration and license acceptance, no circumvention.",
       "AB_cycle_increment": 0
+    },
+    {
+      "id": "SRC085",
+      "title": "Eastwick et al. (2025) and Moreno et al. (2026): 4,542 Tawkify blind dates 2023-24, original dyadic reports and OSF deposition claim",
+      "canonical_url": "https://doi.org/10.1073/pnas.2416984122",
+      "secondary_publication": "https://doi.org/10.1177/01461672251409231",
+      "osf_repository_claimed": "https://osf.io/pkf9x/overview?view_only=e420f876a3d64eed9c0f3ca970787557",
+      "source_type": "ORIGINAL_RECENT_OPERATOR_DYADIC_COHORT_PUBLISHED_AND_OSF_CLAIM_ACCESS_RIGHTS_BYTES_NOT_VERIFIED",
+      "verified_at": "2026-10-29",
+      "cycle_ids": [],
+      "contribution": "2025 preregistered PNAS paper Eastwick et al. documents Tawkify N6262 participants and N4542 blind dates Oct2023-Jan2024, 9084 postdate reports (two per date), partner age and initial romantic desire. Participants ages 22–85, mean46.8, 4286 only one date, repeated daters. Contrary to simple age-hypergamy preference interpretation, authors find slight preference for younger partner with no gender difference in initial attraction. Moreno et al. 2026 reuse same EXACT Tawkify cohort to compare in-person and virtual first dates and state 'data and materials posted on OSF' at supplied view-only link. The OSF page failed web tool fetch; files, license, bytes and SHA not verified. Two papers are not independent replications; data same operator, dates and individuals.",
+      "limits": "Observed postdate desire is not explicit bilateral yes/no acceptance unless codebook proves, not actual union/duration. Matching is arranged by paid service, nonrandom selection into clients vs members, age range and self-reported postdate outcomes; conditional-on-date inference not unconditional preferences. Published 2025 age result and 2026 modality result are strong prior art. No OSF data retrieved and no terms verified, no novel test.",
+      "rights": "OSF data deposition stated by 2026 authors, but individual OSF file licenses, consent, ethics and sharing conditions unverified due inaccessible view-only page; cannot treat as CC BY.",
+      "AB_cycle_increment": 0,
+      "new_independent_sample": "YES Tawkify cohort independent from Graz Joel Mixmosa Columbia, but 2025 and 2026 papers share same sample"
     }
   ],
-  "last_added_campaign": "ABR_LICENSED_DYADIC_GRAZ_UKDS_GATE_NONCYCLE_20261029"
+  "last_added_campaign": "ABR_TAWKIFY_RECENT_DYADIC_ORIGINAL_OSF_GATE_NONCYCLE_20261029"
 }
