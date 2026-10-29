@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ESBM · Laboratorio de oportunidades institucionales</title>
+<style>
+:root{font-family:system-ui,-apple-system,Segoe UI,Arial,sans-serif;color-scheme:dark;color:#e7f2fc;background:#091421}
+body{max-width:1080px;margin:0 auto;padding:28px 18px 70px;line-height:1.5}
+header{border-bottom:1px solid #2c4157;padding-bottom:16px;margin-bottom:22px}
+h1{font-size:clamp(24px,4vw,36px);letter-spacing:-.7px;margin:8px 0}
+h2{font-size:18px;margin:0 0 12px}small,.muted{color:#aec0d0}
+.tag{display:inline-block;background:#24394c;color:#cdeafa;border-radius:5px;padding:4px 8px;font-size:12px}
+.controls{display:flex;flex-wrap:wrap;gap:16px;align-items:center;background:#13283a;padding:16px;border-radius:12px}
+.control{display:flex;flex-direction:column;gap:5px}
+label{font-size:13px;color:#aec0d0}
+select,input,button{font:inherit}
+select{padding:10px 12px;border-radius:8px;border:1px solid #3d5a70;color:white;background:#183448;max-width:280px}
+input[type=range]{accent-color:#4fcfc1;width:240px}
+button{cursor:pointer;padding:10px 16px;border-radius:9px;border:1px solid #4c7286;background:#1d3b51;color:white}
+button.primary{background:#157e78;border-color:#39beb1;font-weight:650}
+button:focus-visible,select:focus-visible{outline:3px solid #a9dfea}
+.layout{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(250px,1fr);gap:16px;margin:18px 0}
+.panel{background:#13283a;border:1px solid #294356;border-radius:14px;padding:20px}
+svg{width:100%;max-height:300px}
+svg text{font-size:15px;fill:#eaf5ff}
+.edge{stroke:#52708e;stroke-width:2;stroke-dasharray:5 5;opacity:.52}
+.edge.exposed{stroke:#f0bb66;stroke-width:6;stroke-dasharray:none;opacity:.85}
+.edge.mutual{stroke:#42d3a8;stroke-width:7;stroke-dasharray:none;opacity:1}
+.edge.matched{stroke:#fff;stroke-width:11;stroke-dasharray:none;opacity:1}
+.node{fill:#184860;stroke:#9ac6d6;stroke-width:2}
+.stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.stat{padding:13px;background:#0f2030;border-radius:9px}.stat strong{font-size:25px;display:block;color:#63d4c2}.stat span{font-size:12px;color:#aec0d0}
+.bar{margin:9px 0;display:grid;grid-template-columns:1fr 80px;gap:6px;align-items:center}
+.track{height:10px;background:#0e1e2d;border-radius:6px;overflow:hidden;grid-column:1/-1}
+.fill{height:100%;background:#4fcfc1;transition:width .2s}
+table{border-collapse:collapse;width:100%;font-size:14px}td,th{text-align:left;padding:9px;border-bottom:1px solid #345064}th{color:#aec0d0}
+.note{border-left:3px solid #f0bb66;padding:10px 14px;background:#172c3b;margin:20px 0}
+.legend{display:flex;gap:15px;flex-wrap:wrap;font-size:12px;color:#aec0d0}
+.legend b{width:12px;height:12px;display:inline-block;border-radius:3px;vertical-align:middle}
+@media(max-width:700px){.layout{grid-template-columns:1fr}.controls{display:block}.control{margin-bottom:12px}}
+</style></head>
+<body>
+<header><span class="tag">AB-H · simulación matemática exacta · 4 agentes</span>
+<h1>Cómo las instituciones cambian quién puede emparejarse</h1>
+<p class="muted">Mismo universo de cuatro agentes y las mismas posibilidades marginales de encuentro, pero diferentes correlaciones entre encuentros. No representa preferencias, orientaciones o frecuencias observadas de personas reales.</p></header>
+<section class="controls" aria-label="Control del experimento">
+<div class="control"><label for="policy">Institución de asignación</label>
+<select id="policy">
+<option value="rotation">Rotación sin solapamientos</option>
+<option value="uniformTwo">Dos encuentros aleatorios (sin restricción)</option>
+<option value="adjacent">Encuentros que comparten persona</option>
+<option value="independent">Cada arista expuesta al azar (número variable)</option>
+</select></div>
+<div class="control"><label for="p">P(dos sí | encuentro): <strong id="pLabel">50 %</strong></label><input id="p" type="range" min="0" max="100" value="50" step="5"></div>
+<div class="control"><label>Ejecutar eventos ficticios</label><div style="display:flex;gap:8px"><button class="primary" id="step">Una ronda</button><button id="batch">100 rondas</button><button id="reset">Reiniciar</button></div></div>
+</section>
+<section class="layout">
+<div class="panel"><h2>Encuentros, consentimientos y parejas</h2>
+<svg viewBox="0 0 480 285" role="img" aria-label="Cuatro agentes y los cuatro encuentros potenciales">
+<g id="edges"></g>
+<g><circle class="node" cx="75" cy="80" r="28"/><circle class="node" cx="75" cy="215" r="28"/>
+<circle class="node" cx="405" cy="80" r="28"/><circle class="node" cx="405" cy="215" r="28"/>
+<text x="75" y="86" text-anchor="middle">A0</text><text x="75" y="221" text-anchor="middle">A1</text>
+<text x="405" y="86" text-anchor="middle">B0</text><text x="405" y="221" text-anchor="middle">B1</text></g>
+</svg>
+<div class="legend"><span><b style="background:#52708e"></b> No expuesto</span><span><b style="background:#f0bb66"></b> Encuentro</span><span><b style="background:#42d3a8"></b> Dos sí</span><span><b style="background:white"></b> Pareja seleccionada</span></div>
+<p id="roundSummary" class="muted" aria-live="polite">Ejecuta una ronda para ver qué ocurre.</p>
+</div>
+<div class="panel"><h2>Predicción teórica exacta</h2>
+<div class="stats"><div class="stat"><strong id="mean">—</strong><span>Parejas esperadas por ronda</span></div>
+<div class="stat"><strong id="p2">—</strong><span>Probabilidad de dos parejas</span></div>
+<div class="stat"><strong id="exposures">—</strong><span>Encuentros esperados</span></div><div class="stat"><strong id="observed">0</strong><span>Parejas/ronda observadas en esta simulación</span></div></div>
+<h2 style="margin-top:22px">Distribución exacta de parejas</h2><div id="bars"></div>
+<p class="muted" style="font-size:12px">Predicción obtenida por enumeración completa de máscaras, no por ajustar los ejemplos a los resultados observados.</p></div></section>
+<section class="panel"><h2>Comparación a igualdad de probabilidad de consentimiento</h2>
+<table><thead><tr><th>Regla institucional</th><th>Encuentros esperados</th><th>Parejas esperadas</th></tr></thead><tbody id="comparison"></tbody></table>
+<div class="note"><strong>Cómo interpretar el experimento.</strong> El resultado es una consecuencia de las reglas de asignación y de exclusividad. Una institución puede reducir solapamientos sin modificar la probabilidad individual de consentimiento. Para trasladar esta comparación a una población humana harían falta datos de oportunidades reales, decisiones de ambas personas y pruebas con diseños independientes.</div></section>
+<p class="muted">Trazabilidad: campaña N93–N106 · contrato AB 3.2.1 · código analítico original schedule_oracle.js · 14 tests PASS · modelo de un evento, sin duración ni causalidad humana. Este demo es una representación pedagógica, no la fuente canónica del cálculo.</p>
+<script>
+"use strict";
+const E=[[75,80,405,80],[75,80,405,215],[75,215,405,80],[75,215,405,215]];
+const policies={
+rotation:{6:.5,9:.5},
+uniformTwo:{3:1/6,5:1/6,6:1/6,9:1/6,10:1/6,12:1/6},
+adjacent:{3:.25,5:.25,10:.25,12:.25},
+independent:Object.fromEntries(Array.from({length:16},(_,i)=>[i,1/16]))
+};
+const names={rotation:"Rotación sin solapamientos",uniformTwo:"Dos encuentros aleatorios",adjacent:"Encuentros que comparten persona",independent:"Exposición independiente"};
+const byId=id=>document.getElementById(id);
+const count=x=>{let n=0;while(x){n+=x&1;x>>>=1}return n};
+function maxMask(mask){
+let legal=[];
+for(let z=0;z<16;z++)if((z&mask)===z&&count(z&3)<=1&&count(z&12)<=1&&count(z&5)<=1&&count(z&10)<=1)legal.push(z);
+const best=Math.max(...legal.map(count));
+return legal.filter(m=>count(m)===best).sort((a,b)=>b-a)[0];
+}
+function exact(policy,p){
+const dist=[0,0,0];let exposure=0;
+for(const [key,w] of Object.entries(policy)){
+const m=+key,n=count(m);exposure+=w*n;
+for(let c=0;c<16;c++)if((c&m)===c)dist[count(maxMask(c))]+=w*Math.pow(p,count(c))*Math.pow(1-p,n-count(c));
+}
+return {dist,mean:dist[1]+2*dist[2],exposure};
+}
+function sample(policy,p){
+let v=Math.random(),s=0,mask=0;
+for(const [k,w] of Object.entries(policy)){s+=w;if(v<s){mask=+k;break}}
+let yes=0;
+for(let i=0;i<4;i++)if(mask&(1<<i))if(Math.random()<p)yes|=1<<i;
+return {mask,yes,selected:maxMask(yes)};
+}
+let state={n:0,pairs:0,last:null};
+function reset(){state={n:0,pairs:0,last:null};render()}
+function draw(){
+const el=byId("edges");el.replaceChildren();
+const last=state.last;
+E.forEach((pts,i)=>{
+const l=document.createElementNS("http://www.w3.org/2000/svg","line");
+["x1","y1","x2","y2"].forEach((k,j)=>l.setAttribute(k,pts[j]));
+const phase=!last?"edge":last.selected&(1<<i)?"edge matched":last.yes&(1<<i)?"edge mutual":last.mask&(1<<i)?"edge exposed":"edge";
+l.setAttribute("class",phase);el.append(l);
+});
+byId("roundSummary").textContent=last
+?"Encuentros: "+count(last.mask)+" · consentimientos mutuos: "+count(last.yes)+" · parejas formadas: "+count(last.selected)+"."
+:"Ejecuta una ronda para ver qué ocurre.";
+}
+function render(){
+const policy=byId("policy").value,p=Number(byId("p").value)/100,a=exact(policies[policy],p);
+byId("pLabel").textContent=Math.round(p*100)+" %";
+byId("mean").textContent=a.mean.toFixed(3);
+byId("p2").textContent=(a.dist[2]*100).toFixed(1)+" %";
+byId("exposures").textContent=a.exposure.toFixed(2);
+byId("observed").textContent=state.n?(state.pairs/state.n).toFixed(3):"0";
+const bars=byId("bars");bars.replaceChildren();
+a.dist.forEach((v,k)=>{const c=document.createElement("div");c.className="bar";const t=document.createElement("span");t.textContent=k+" parejas";const n=document.createElement("strong");n.textContent=(100*v).toFixed(1)+" %";const tr=document.createElement("div");tr.className="track";const fi=document.createElement("div");fi.className="fill";fi.style.width=(v*100)+"%";tr.append(fi);c.append(t,n,tr);bars.append(c)});
+const tbody=byId("comparison");tbody.replaceChildren();
+for(const [key,item] of Object.entries(policies)){
+const r=exact(item,p),tr=document.createElement("tr");for(const val of [names[key],r.exposure.toFixed(2),r.mean.toFixed(4)]){const td=document.createElement("td");td.textContent=val;tr.append(td)}if(key===policy)tr.style.background="#1b4452";tbody.append(tr)}
+draw();
+}
+function run(n){const p=Number(byId("p").value)/100,policy=policies[byId("policy").value];for(let j=0;j<n;j++){const round=sample(policy,p);state.n++;state.pairs+=count(round.selected);state.last=round}render()}
+byId("policy").addEventListener("change",reset);
+byId("p").addEventListener("input",reset);
+byId("step").addEventListener("click",()=>run(1));
+byId("batch").addEventListener("click",()=>run(100));
+byId("reset").addEventListener("click",reset);
+render();
+</script></body></html>
