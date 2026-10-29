@@ -1,0 +1,180 @@
+{
+  "schema": "ABH.BLOCK_D.PREEXEC.v1",
+  "date": "2026-10-29",
+  "branch": "research/ab-h-esbm-integrated-20261029",
+  "source_original_SHA": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+  "source_adapter_freeze": "de5b64945ee44b48d6886d9d80ad0e890065a068",
+  "source_mini_fixture_freeze": "6022e7bdcdb135b3b33cdc353aa61dd6fed7626f",
+  "history": "N107-N121 technical PASS after documented resource repairs; 15 valid, 5 remaining; human R5 STOP",
+  "main_hypotheses": "Model robustness is a property of the specified generator and invariants; not transportability to humans.",
+  "controls": "paired seeds, selected diagnostic counterexample from observed N120/N121 only for porting regression, same consent shocks; no human identification; log failures",
+  "cycles": [
+    {
+      "id": "N122",
+      "parent": "N121",
+      "mode": "DISTRIBUTION",
+      "D": {
+        "code_sha": "runner D will be committed before execution",
+        "input_original_sha": "f7e6...",
+        "seeds": "1000–1059"
+      },
+      "A": {
+        "question": "Determine dispersion and sign consistency of slot1 vs slot2 over 60 freshly fixed synthetic miniature seeds 1000–1059",
+        "estimand": "computational synthetic oracles/permutation/risk sets, no human decisions"
+      },
+      "B": [
+        "AB-H integrated two-slot vs alternative",
+        "competent neutral source-frozen sham",
+        "invalid model selection / label leakage as counterexamples"
+      ],
+      "C": {
+        "test": "N24 T4; 60 seeds, pair_max slots1/2; complete stock-flow for every run, report mean differences, paired sign counts, min/max, no statistical human inference",
+        "falsifier": "Any failed expected invariant, or unsupported inference from distributions"
+      },
+      "E": "PENDING",
+      "F": "Independent subprocess or permutation where specified, no weaker naive control claims",
+      "G": "not external or independent humans; same generator",
+      "H": "P-SCHEDULE-CORRELATION technical prior only, P-NOVELTY NO_CHANGE; no new sources as web search returned duplicates",
+      "I": "0/3 discovery; CT2 7 and R5 human unchanged; maturity judged after verified clean-run",
+      "J": {
+        "if_pass": "N123",
+        "if_fail": "INVALID, REPAIR only with new prior prereg or keep slot unused"
+      }
+    },
+    {
+      "id": "N123",
+      "parent": "N122",
+      "mode": "SOCIAL_INSTITUTION",
+      "D": {
+        "code_sha": "runner D will be committed before execution",
+        "input_original_sha": "f7e6...",
+        "seeds": "2000–2059"
+      },
+      "A": {
+        "question": "Test heterogeneity of norm-same/cross and neutral schedules without suppressing negative outcomes",
+        "estimand": "computational synthetic oracles/permutation/risk sets, no human decisions"
+      },
+      "B": [
+        "AB-H integrated two-slot vs alternative",
+        "competent neutral source-frozen sham",
+        "invalid model selection / label leakage as counterexamples"
+      ],
+      "C": {
+        "test": "N24 T4; 60 different fixed seeds 2000–2059, pair_max/norm_same/norm_cross 180 runs; compare same exposure, formation stock and variable signs, no claims of novelty or causality",
+        "falsifier": "Any failed expected invariant, or unsupported inference from distributions"
+      },
+      "E": "PENDING",
+      "F": "Independent subprocess or permutation where specified, no weaker naive control claims",
+      "G": "not external or independent humans; same generator",
+      "H": "P-SCHEDULE-CORRELATION technical prior only, P-NOVELTY NO_CHANGE; no new sources as web search returned duplicates",
+      "I": "0/3 discovery; CT2 7 and R5 human unchanged; maturity judged after verified clean-run",
+      "J": {
+        "if_pass": "N124",
+        "if_fail": "INVALID, REPAIR only with new prior prereg or keep slot unused"
+      }
+    },
+    {
+      "id": "N124",
+      "parent": "N123",
+      "mode": "PERMUTATION",
+      "D": {
+        "code_sha": "runner D will be committed before execution",
+        "input_original_sha": "f7e6...",
+        "seeds": "101/211"
+      },
+      "A": {
+        "question": "Verify two-slot planner commutes with relabelled agent identities when shock matrices and norm variables are permuted consistently",
+        "estimand": "computational synthetic oracles/permutation/risk sets, no human decisions"
+      },
+      "B": [
+        "AB-H integrated two-slot vs alternative",
+        "competent neutral source-frozen sham",
+        "invalid model selection / label leakage as counterexamples"
+      ],
+      "C": {
+        "test": "N24 T4; seeds 101/211, 3 permutations each, pair_max/norm_same/norm_cross, 18 exact unordered schedule comparisons per fixed riskset",
+        "falsifier": "Any failed expected invariant, or unsupported inference from distributions"
+      },
+      "E": "PENDING",
+      "F": "Independent subprocess or permutation where specified, no weaker naive control claims",
+      "G": "not external or independent humans; same generator",
+      "H": "P-SCHEDULE-CORRELATION technical prior only, P-NOVELTY NO_CHANGE; no new sources as web search returned duplicates",
+      "I": "0/3 discovery; CT2 7 and R5 human unchanged; maturity judged after verified clean-run",
+      "J": {
+        "if_pass": "N125",
+        "if_fail": "INVALID, REPAIR only with new prior prereg or keep slot unused"
+      }
+    },
+    {
+      "id": "N125",
+      "parent": "N124",
+      "mode": "FAIL_CLOSED",
+      "D": {
+        "code_sha": "runner D will be committed before execution",
+        "input_original_sha": "f7e6...",
+        "seeds": "101/211"
+      },
+      "A": {
+        "question": "Verify corrupted original source and unsupported scheduling arguments are rejected rather than silently accepted",
+        "estimand": "computational synthetic oracles/permutation/risk sets, no human decisions"
+      },
+      "B": [
+        "AB-H integrated two-slot vs alternative",
+        "competent neutral source-frozen sham",
+        "invalid model selection / label leakage as counterexamples"
+      ],
+      "C": {
+        "test": "Original code isolated copy altered one byte must fail strict SHA; unknown mode and slots3 raise ValueError; no real originals changed",
+        "falsifier": "Any failed expected invariant, or unsupported inference from distributions"
+      },
+      "E": "PENDING",
+      "F": "Independent subprocess or permutation where specified, no weaker naive control claims",
+      "G": "not external or independent humans; same generator",
+      "H": "P-SCHEDULE-CORRELATION technical prior only, P-NOVELTY NO_CHANGE; no new sources as web search returned duplicates",
+      "I": "0/3 discovery; CT2 7 and R5 human unchanged; maturity judged after verified clean-run",
+      "J": {
+        "if_pass": "N126",
+        "if_fail": "INVALID, REPAIR only with new prior prereg or keep slot unused"
+      }
+    },
+    {
+      "id": "N126",
+      "parent": "N125",
+      "mode": "PORTABILITY",
+      "D": {
+        "code_sha": "runner D will be committed before execution",
+        "input_original_sha": "f7e6...",
+        "seeds": "101/211"
+      },
+      "A": {
+        "question": "Verify clean isolated local directory with only required code files can reproduce a historical equality and a two-slot 24-agent test",
+        "estimand": "computational synthetic oracles/permutation/risk sets, no human decisions"
+      },
+      "B": [
+        "AB-H integrated two-slot vs alternative",
+        "competent neutral source-frozen sham",
+        "invalid model selection / label leakage as counterexamples"
+      ],
+      "C": {
+        "test": "Copy actual original SHA, adapter and fixture to temporary directory; subprocess python -I starts without repo source-path reliance; verify original regression and exact pre-observed miniature 101 stock as regression, not a new scientific holdout",
+        "falsifier": "Any failed expected invariant, or unsupported inference from distributions"
+      },
+      "E": "PENDING",
+      "F": "Independent subprocess or permutation where specified, no weaker naive control claims",
+      "G": "not external or independent humans; same generator",
+      "H": "P-SCHEDULE-CORRELATION technical prior only, P-NOVELTY NO_CHANGE; no new sources as web search returned duplicates",
+      "I": "0/3 discovery; CT2 7 and R5 human unchanged; maturity judged after verified clean-run",
+      "J": {
+        "if_pass": "ABH campaign close",
+        "if_fail": "INVALID, REPAIR only with new prior prereg or keep slot unused"
+      }
+    }
+  ],
+  "non_goals": [
+    "No excessive simulator runs for science-grade inflation",
+    "No rerun OSF / restricted / SSJY",
+    "No SRC104 mutation",
+    "No author contact/licence acceptance",
+    "No merge main or existing PR"
+  ]
+}
