@@ -23,7 +23,7 @@
       "id": "P-NOVELTY",
       "question": "Originalidad de homogamia de deseabilidad sin preferencia inicial por semejanza",
       "status": "STRONG_PRIOR_ART",
-      "rationale": "La proposición general ya está en teoría matching, Hitsch 2010 y, casi literalmente para apps, Topinkova/Diviak 2025; nueva aportación exigiría predicción más estrecha. La separación de navegación, primer mensaje y match se documentó explícitamente en Hitsch et al. (2010), antes del programa ESBM. No reivindicar originalidad general de la cadena. Rios–Saban–Zheng (online 2022) probó algoritmo con exposición e historial de matches en dos intervenciones de mercado; Rios–Torrico 2023 ya formaliza secuencialidad y direcciones del flujo. ESBM no reivindica novedad de optimización de exposición y reciprocidad ni de feedback por matches. External 2024 intervention already studies a causal micro-interaction influence independent of pre-exposure sorting. ESBM has not yet included an observed micro-behavior intervention; adding smiles alone would lack originality. ICONIP 2020 MotifGNN already models reciprocal recommendation over user directed interaction graphs with degree/motif structure. Our degree-conditioned reciprocity finding does not establish a new theory: it is a data-quality/control exercise on published dataset. Su & Hu 2019 already used ratios click/rec and msg/rec as popularity and modeled target and sender attributes and network centrality; 2020 MotifGNN already modeled mutual interaction graph. N82 smooth target CTR out-of-actor predictive advantage is not a new theoretical mechanism or 2/3. Contest researchers in 2011 already studied ranking profiles by expected click/msg, including RankSVM, Bayesian Regression Trees and simple popularity voting; source 2012 participant explicitly discusses click/rec and msg utilities. A generic target-click-rate advantage N82 is not novel and must be compared against original NDCG@10 or stronger actor-target/context models before any novelty claim. A prior 2023 thesis already performed time-to-breakup survival prediction on HCMST 2009 using Cox PH, Random Survival Forest and DeepHit and identified cohabitation, marriage, duration and meeting modality as predictors. New ESBM must supply unique causal or mechanistically discriminating prediction with superior properly heldout model, not just 'add duration/predict breakup' in HCMST source. Hypergamy review 2026-10-29: Existing evidence covers educational hypergamy trends, denominator effects, structural opportunity decomposition, and aspiration in messages for both sexes; ESBM cannot claim novelty of generic hypergamy, homogamy, aspirational hierarchy or exposure-vs-sorting mechanism. Licensed dyadic access gate: Graz 2021 has already tested perceived abilities vs objective performance in mate appeal; Joel et al. already find actor/partner variance partly predictable but relationship-specific attraction not from predate traits. ESBM must beat these strong baselines on truly new preregistered prediction, not repackage them.",
+      "rationale": "La proposición general ya está en teoría matching, Hitsch 2010 y, casi literalmente para apps, Topinkova/Diviak 2025; nueva aportación exigiría predicción más estrecha. La separación de navegación, primer mensaje y match se documentó explícitamente en Hitsch et al. (2010), antes del programa ESBM. No reivindicar originalidad general de la cadena. Rios–Saban–Zheng (online 2022) probó algoritmo con exposición e historial de matches en dos intervenciones de mercado; Rios–Torrico 2023 ya formaliza secuencialidad y direcciones del flujo. ESBM no reivindica novedad de optimización de exposición y reciprocidad ni de feedback por matches. External 2024 intervention already studies a causal micro-interaction influence independent of pre-exposure sorting. ESBM has not yet included an observed micro-behavior intervention; adding smiles alone would lack originality. ICONIP 2020 MotifGNN already models reciprocal recommendation over user directed interaction graphs with degree/motif structure. Our degree-conditioned reciprocity finding does not establish a new theory: it is a data-quality/control exercise on published dataset. Su & Hu 2019 already used ratios click/rec and msg/rec as popularity and modeled target and sender attributes and network centrality; 2020 MotifGNN already modeled mutual interaction graph. N82 smooth target CTR out-of-actor predictive advantage is not a new theoretical mechanism or 2/3. Contest researchers in 2011 already studied ranking profiles by expected click/msg, including RankSVM, Bayesian Regression Trees and simple popularity voting; source 2012 participant explicitly discusses click/rec and msg utilities. A generic target-click-rate advantage N82 is not novel and must be compared against original NDCG@10 or stronger actor-target/context models before any novelty claim. A prior 2023 thesis already performed time-to-breakup survival prediction on HCMST 2009 using Cox PH, Random Survival Forest and DeepHit and identified cohabitation, marriage, duration and meeting modality as predictors. New ESBM must supply unique causal or mechanistically discriminating prediction with superior properly heldout model, not just 'add duration/predict breakup' in HCMST source. Hypergamy review 2026-10-29: Existing evidence covers educational hypergamy trends, denominator effects, structural opportunity decomposition, and aspiration in messages for both sexes; ESBM cannot claim novelty of generic hypergamy, homogamy, aspirational hierarchy or exposure-vs-sorting mechanism. Licensed dyadic access gate: Graz 2021 has already tested perceived abilities vs objective performance in mate appeal; Joel et al. already find actor/partner variance partly predictable but relationship-specific attraction not from predate traits. ESBM must beat these strong baselines on truly new preregistered prediction, not repackage them. Tawkify 2025/26 gate: Eastwick et al. 2025 preregistered 4542 real blind dates find slight attraction to younger partners for both sexes; Moreno et al. 2026 use SAME Tawkify sample for modality and assert OSF data availability, not independent replication. Age gap in formed couples cannot be equated to women's older-partner attraction. Any age-hypergamy claim must beat this prior art and distinguish arranged-date selection.",
       "evidence_sources": [
         "SRC001",
         "SRC002",
@@ -50,9 +50,10 @@
         "SRC078",
         "SRC079",
         "SRC083",
-        "SRC084"
+        "SRC084",
+        "SRC085"
       ],
-      "last_update_id": "U112",
+      "last_update_id": "U113",
       "uncertainty": "Not probabilistically calibrated; evidence heterogeneous and some sources only metadata",
       "next_falsifier_or_test": "Find a preregistered prediction NOT covered by published mating-market literature and independently validate",
       "numeric_probability": null,
@@ -68,9 +69,10 @@
         "U086",
         "U096",
         "U102",
-        "U112"
+        "U112",
+        "U113"
       ],
-      "latest_evidence_summary": "Graz 2021 has already tested perceived abilities vs objective performance in mate appeal; Joel et al. already find actor/partner variance partly predictable but relationship-specific attraction not from predate traits. ESBM must beat these strong baselines on truly new preregistered prediction, not repackage them.",
+      "latest_evidence_summary": "Eastwick et al. 2025 preregistered 4542 real blind dates find slight attraction to younger partners for both sexes; Moreno et al. 2026 use SAME Tawkify sample for modality and assert OSF data availability, not independent replication. Age gap in formed couples cannot be equated to women's older-partner attraction. Any age-hypergamy claim must beat this prior art and distinguish arranged-date selection.",
       "last_revised_at": "2026-10-29"
     },
     {
@@ -831,10 +833,10 @@
   ],
   "audit": {
     "all_priors_linked": true,
-    "source_ids_linked": 84,
-    "registered_sources": 84,
-    "update_events": 112,
+    "source_ids_linked": 85,
+    "registered_sources": 85,
+    "update_events": 113,
     "counts_as_new_AB_cycle": false,
-    "last_update": "2026-10-29 GRAZ_UKDS_SCIENTIFIC_LICENSE_AUTH_GATE_NONCYCLE"
+    "last_update": "2026-10-29 TAWKIFY_OSF_UNVERIFIED_ACCESS_NONCYCLE"
   }
 }
