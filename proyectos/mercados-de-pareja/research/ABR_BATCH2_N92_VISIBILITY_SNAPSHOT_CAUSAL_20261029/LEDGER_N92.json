@@ -1,0 +1,44 @@
+{
+  "schema": "ABR_AJ_snapshot_visibility_causal_v1",
+  "cycle": "N92",
+  "status": "COMPLETED_VALID_SYNTHETIC_TECHNICAL_0_OF_3",
+  "pre_execution_commit": "0d3260968405fd3ea070d0877f29ea04471140b3",
+  "source_sha256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+  "script_sha256": "3006583df8d3f95a8ee6a43d6ef665c44578229956e9aed8e220bf04ad484480",
+  "gzip_blob": "24b4e1413c7a44eaeed475b2ac104d910af59a65",
+  "results_blob": "697cfe7572a9eeb5a0fa8731d460f7b13cfc30f4",
+  "A": "Does a frozen start-of-tick visibility counter eliminate arbitrary ID dependence isolated by N91?",
+  "B": "Original sequential seen counter vs start-of-tick snapshot with same score and shocks; two nonbalance policy sham controls",
+  "C": "Perm relabeling invariance in 18 comparisons plus six base seed paired differences",
+  "D": "6 original seeds×4 permutations×2 policies =48 +12 negative shams =60 real Python source-guarded simulations",
+  "E": "A-J and SHA of N91, N92, original committed before execution in 0d3260968405fd3ea070d0877f29ea04471140b3",
+  "F": "Old 18/18 formed different under relabel, snapshot 0/18 formed changed AND 0/18 full output changed, 12/12 negative shams exact, snapshot minus baseline identity mean formed −10",
+  "G": "Same dyadic shocks under inverse permutations; unchanged source binary, counts invariant, original nonbalance shams exact",
+  "H": "Selected after N91 pilot, not independent confirmatory evaluation; different dynamics for new policy and model-specific causality only",
+  "I": "U145/U146 no new empirical prior status, score CT2 7, novelty 0/3",
+  "J": "Count N92 valid scoped QA cycle; N88–N92 batch complete 5/5; N93–N106 remain reserved and not released; external STOP_R5",
+  "budget": {
+    "valid_total": 26,
+    "max_authorized": 40,
+    "remaining_reserved": 14,
+    "remaining_this_tranche": 0
+  },
+  "score": {
+    "before": 40.95,
+    "after": 41.199999999999996,
+    "only_technical": true
+  },
+  "CT2": {
+    "before": 7,
+    "after": 7,
+    "ordinal": true
+  },
+  "privacy": {
+    "human_data": false,
+    "SSJY": false,
+    "authors_contacted": false,
+    "licenses_signed": false,
+    "merge_main": false
+  },
+  "clean_clone": "NOT_VERIFIED"
+}

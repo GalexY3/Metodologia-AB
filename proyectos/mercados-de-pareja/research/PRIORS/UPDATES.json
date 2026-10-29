@@ -4,7 +4,7 @@
   "date": "2026-10-28",
   "mode": "append-only logical, versioned by Git commits",
   "reconstructed_from_documents": "Retrospective backfill, not preregistration. Old before values NOT_RECORDED unless documented explicitly.",
-  "source_coverage": "97 original sources, 30 priors, 144 updates; N91 180 source-verified real Python synthetic runs, no human data.",
+  "source_coverage": "97 SOURCES 30 PRIORS 146 UPDATES; complete 5/5 N88–N92 technical synthetic cycles, 14 authorized held.",
   "events": [
     {
       "id": "U001",
@@ -3621,7 +3621,53 @@
       "prior_probability_after": null,
       "AB_cycle_increment": 0,
       "prereg_status": "CODE_AND_CONTRACT_FROZEN_AT_8bf3838f2858948f9201e8d25d89178c92eed64a"
+    },
+    {
+      "id": "U145",
+      "prior_id": "P-PLATFORM-RANKING",
+      "source_ids": [],
+      "cycle_ids": [
+        "N92"
+      ],
+      "before": "EXTERNAL_FIELD_EVIDENCE",
+      "after": "EXTERNAL_FIELD_EVIDENCE",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "recorded_at": "2026-10-29",
+      "entry_status": "ACTIVE",
+      "evidence_type": "N92_PRE_FROZEN_SNAPSHOT_SEEN_CAUSAL_MECHANISM_ABLATION_60_PYTHON_RUNS",
+      "what_the_sources_contribute": "N92 prereg source-verified snapshot of seen at beginning of each simulated tick makes entire visibility balancing output invariant in 18/18 relabelings (baseline 18/18 formed changes), with 12/12 negative sham policies unchanged; however changing policy creates −10 mean formed relative to original. This diagnoses an ID order artifact, not an observed ranking intervention.",
+      "why_this_updates_or_checks_prior": "A separate targeted source-guarded ablation isolates the N91 artifact to within-tick updating of the seen counter, without supporting external validity or new sociology.",
+      "limits": "Original six artificial seeds and source, preselected known bug, not fresh holdout. Within-model counterfactual not observed real-world intervention. No independent audience/attention records.",
+      "falsifier_or_followup": "Collect genuine original visible profile exposures and attention logs in an independent cohort with lawful rights; verify rank timing, selection, and propensity effects in untouched external holdout, or clean-dependency reproduce with distinct synthetic seeds for QA (not new science).",
+      "numerical_bayesian_update": false,
+      "prior_probability_before": null,
+      "prior_probability_after": null,
+      "AB_cycle_increment": 1,
+      "prereg_status": "PRE_FROZEN_CODE_AT_0d3260968405fd3ea070d0877f29ea04471140b3"
+    },
+    {
+      "id": "U146",
+      "prior_id": "P-OPPORTUNITY",
+      "source_ids": [],
+      "cycle_ids": [
+        "N92"
+      ],
+      "before": "RECORDED_RECOMMENDATION_RISK_SET_WITHOUT_VERIFIED_ATTENTION",
+      "after": "RECORDED_RECOMMENDATION_RISK_SET_WITHOUT_VERIFIED_ATTENTION",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "recorded_at": "2026-10-29",
+      "entry_status": "ACTIVE",
+      "evidence_type": "N92_PRE_FROZEN_SNAPSHOT_SEEN_CAUSAL_MECHANISM_ABLATION_60_PYTHON_RUNS",
+      "what_the_sources_contribute": "N92 synthetic observational contrast of same agents under per-tick visibility score snapshot removes arbitrary label dependence while preserving later aggregate impression counts, but gives different formation paths across six seeds (deltas +8,−16,−13,−30,+13,−22). Exposure assignment within a tick can be algorithmic/interfering; no human seen or independent external panel.",
+      "why_this_updates_or_checks_prior": "A separate targeted source-guarded ablation isolates the N91 artifact to within-tick updating of the seen counter, without supporting external validity or new sociology.",
+      "limits": "Original six artificial seeds and source, preselected known bug, not fresh holdout. Within-model counterfactual not observed real-world intervention. No independent audience/attention records.",
+      "falsifier_or_followup": "Collect genuine original visible profile exposures and attention logs in an independent cohort with lawful rights; verify rank timing, selection, and propensity effects in untouched external holdout, or clean-dependency reproduce with distinct synthetic seeds for QA (not new science).",
+      "numerical_bayesian_update": false,
+      "prior_probability_before": null,
+      "prior_probability_after": null,
+      "AB_cycle_increment": 0,
+      "prereg_status": "PRE_FROZEN_CODE_AT_0d3260968405fd3ea070d0877f29ea04471140b3"
     }
   ],
-  "last_campaign": "ABR_BATCH2_N91_ACTOR_RELABEL_ORDER_20261029"
+  "last_campaign": "ABR_BATCH2_N92_VISIBILITY_SNAPSHOT_CAUSAL_20261029"
 }

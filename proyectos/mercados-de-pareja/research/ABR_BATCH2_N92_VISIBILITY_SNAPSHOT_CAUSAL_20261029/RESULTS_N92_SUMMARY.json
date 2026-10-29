@@ -1,0 +1,50 @@
+{
+  "cycle": "N92",
+  "date": "2026-10-29",
+  "status": "COMPLETED_VALID_SYNTHETIC_MECHANISM_ISOLATION_0_OF_3",
+  "prereg_commit": "0d3260968405fd3ea070d0877f29ea04471140b3",
+  "code_sha256": "3006583df8d3f95a8ee6a43d6ef665c44578229956e9aed8e220bf04ad484480",
+  "code_gzip_sha256": "1e22efdc8bff30ee27fa24d7c294c124512fe46a831f7474d0e976146634dcc2",
+  "source_sha256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+  "n91_sha256": "2ea5b39520f86dd35d760f6d29ddac26ff839afa1289aebbb034cf3ceeb2e791",
+  "original_simulator_unchanged": true,
+  "real_python_simulations": 60,
+  "negative_sham_original_vs_patched_other_policies": "12/12",
+  "old_relabel_changed_formations": "18/18",
+  "snapshot_relabel_changed_formations": "0/18",
+  "snapshot_relabel_full_output_changed": "0/18",
+  "snapshot_minus_original_formed_by_seed": [
+    {
+      "seed": 101,
+      "difference": 8
+    },
+    {
+      "seed": 211,
+      "difference": -16
+    },
+    {
+      "seed": 307,
+      "difference": -13
+    },
+    {
+      "seed": 401,
+      "difference": -30
+    },
+    {
+      "seed": 503,
+      "difference": 13
+    },
+    {
+      "seed": 601,
+      "difference": -22
+    }
+  ],
+  "snapshot_minus_original_mean_formed": -10,
+  "snapshot_minus_original_mean_gini": 0.005769984568470628,
+  "n91_original_relabel_mean_delta": -8.055555555555555,
+  "full_result_json_sha256": "cab57575cfa6c47a5bb62318fea16afadd0ca3e8f5719d7d1048764257861861",
+  "full_result_gzip_sha256": "a9c5a6e08114b85c0824f3a5a8dfac404f534a6c3499f01bcb6b3bf353570d80",
+  "full_result_gzip_gitblob": "697cfe7572a9eeb5a0fa8731d460f7b13cfc30f4",
+  "interpretation": "The within-tick seen update is sufficient to explain N91 relabel sensitivity in the source-verified simulator: per-tick frozen seen removes all full-output differences under relabeling. Different policy changes outcomes; no external validation or causal human claim.",
+  "limitations": "User preselected known N91 artifact then designed N92 targeted repair, not scientific confirmatory holdout. Same six synthetic seeds, snapshot is alternative model not demonstrated real-world best."
+}
