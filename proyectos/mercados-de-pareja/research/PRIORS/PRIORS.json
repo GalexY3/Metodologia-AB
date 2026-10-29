@@ -60,7 +60,7 @@
         "SRC105",
         "SRC106"
       ],
-      "last_update_id": "U166",
+      "last_update_id": "U169",
       "uncertainty": "Not probabilistically calibrated; evidence heterogeneous and some sources only metadata",
       "next_falsifier_or_test": "Find a preregistered prediction NOT covered by published mating-market literature and independently validate",
       "numeric_probability": null,
@@ -81,9 +81,10 @@
         "U120",
         "U153",
         "U155",
-        "U166"
+        "U166",
+        "U169"
       ],
-      "latest_evidence_summary": "Original Jauk 2016 human speeddate study already models actor/partner-specific and reciprocated choices with Social Relations Model and has 691 original meetings; Hall 2026 additional published native second-date choice cohorts. Thus real dyadic votes/attraction, target and perceiver effects remain prior art; no ESBM-only prediction vs B0/B1/SRM/B2/B4/B6 and no source-eligible holdout or causal novelty.",
+      "latest_evidence_summary": "Original Jauk 2016 human speeddate study already models actor/partner-specific and reciprocated choices with Social Relations Model and has 691 original meetings; Hall 2026 additional published native second-date choice cohorts. Thus real dyadic votes/attraction, target and perceiver effects remain prior art; no ESBM-only prediction vs B0/B1/SRM/B2/B4/B6 and no source-eligible holdout or causal novelty.\nAB-H N93–N106 interno: Existen antecedentes importantes sobre oportunidades, congestión y selección; no hay predicción humana exclusiva.",
       "last_revised_at": "2026-10-29"
     },
     {
@@ -175,7 +176,7 @@
         "SRC032",
         "SRC104"
       ],
-      "last_update_id": "U164",
+      "last_update_id": "U168",
       "uncertainty": "Not probabilistically calibrated; evidence heterogeneous and some sources only metadata",
       "next_falsifier_or_test": "Independent prospective data with matched risk set, competent adversarial controls and documented sample selection",
       "numeric_probability": null,
@@ -201,9 +202,10 @@
         "U158",
         "U160",
         "U162",
-        "U164"
+        "U164",
+        "U168"
       ],
-      "latest_evidence_summary": "SRC104 2-event roster QA: group2 11 men+8 women, 11 round labels each with 8+8 directed observations, 88/88 possible recorded pair labels. Group3 6 men+5 women, 6 rounds each with 6 male+5 female directed observations, 30/30 possible recorded pair labels plus 8 one-sided actor labels to 2 unrecorded counterpart IDs; union 38 keys exceeds conditional 36 male×round capacity. The published protocol synchronizes six-minute rounds and men rotate, but paper does not define spreadsheet Round / Dates_ID at row level; no opportunity schedule identified, STOP_R5.",
+      "latest_evidence_summary": "SRC104 2-event roster QA: group2 11 men+8 women, 11 round labels each with 8+8 directed observations, 88/88 possible recorded pair labels. Group3 6 men+5 women, 6 rounds each with 6 male+5 female directed observations, 30/30 possible recorded pair labels plus 8 one-sided actor labels to 2 unrecorded counterpart IDs; union 38 keys exceeds conditional 36 male×round capacity. The published protocol synchronizes six-minute rounds and men rotate, but paper does not define spreadsheet Round / Dates_ID at row level; no opportunity schedule identified, STOP_R5.\nAB-H N93–N106 interno: El argumento exacto ayuda a especificar medidas, pero faltan exposiciones humanas observadas.",
       "last_revised_at": "2026-10-29"
     },
     {
@@ -931,14 +933,44 @@
       ],
       "latest_evidence_summary": "Old ranking benchmark incomplete in published MotifGNN ZIP: missing original test.txt/profile_f.txt. N82 internal actor logloss cannot be compared as though contest NDCG@10 was reproduced.",
       "last_revised_at": "2026-10-29"
+    },
+    {
+      "id": "P-SCHEDULE-CORRELATION",
+      "question": "¿La dependencia conjunta de oportunidades cambia el matching incluso cuando coinciden las probabilidades marginales de cada encuentro y dos sí?",
+      "status": "SYNTHETIC_MATHEMATICAL_ONLY_NOT_HUMAN_VERIFIED",
+      "rationale": "N93–N106: oráculo exhaustivo 2x2. Con exactamente dos encuentros y e_ij=.5 en cuatro aristas, política disjunta vs adyacente produce E[parejas] 1 vs .75 a p(mutual|encuentro)=.5. No inferir conducta humana: distribuciones de exposición y consentimiento impuestas. Matching máximo exclusivo y congestión explican diferencias. Los 14 tests comparten un sistema, no 14 estudios.",
+      "evidence_sources": [
+        "SRC017",
+        "SRC054",
+        "SRC098"
+      ],
+      "prior_art_citation_role_only": true,
+      "internal_evidence": [
+        "proyectos/mercados-de-pareja/research/ABH_SCHEDULE14_20261029/PREREG_AJ14.json",
+        "proyectos/mercados-de-pareja/research/ABH_SCHEDULE14_20261029/schedule_oracle.js",
+        "proyectos/mercados-de-pareja/research/ABH_SCHEDULE14_20261029/RESULTS.json",
+        "proyectos/mercados-de-pareja/research/ABH_SCHEDULE14_20261029/LEDGER_AJ.json"
+      ],
+      "last_update_id": "U167",
+      "uncertainty": "4 agentes, un evento, consentimiento condicional independiente, matching de cardinalidad máxima; sin calibración ni replicación humana.",
+      "next_falsifier_or_test": "Asignación ética de oportunidades y decisiones bilaterales observadas; baselines competentes y fuente independiente, cumpliendo R5.",
+      "numeric_probability": null,
+      "CT2_is_not_this_prior": true,
+      "update_ids": [
+        "U167"
+      ],
+      "latest_evidence_summary": "E[M] rotación=1, adyacentes=.75, uniforme-dos=5/6 con mismas probabilidades marginales por arista y 2 encuentros. KL exposición=2.93178 nats vs KL cantidad parejas=.590738 bajo mixturas diseñadas. No se acredita prioridad científica.",
+      "last_revised_at": "2026-10-29"
     }
   ],
   "audit": {
     "all_priors_linked": true,
     "source_ids_linked": 106,
     "registered_sources": 106,
-    "update_events": 166,
-    "counts_as_new_AB_cycle": false,
-    "last_update": "2026-10-29 U165 P-DYADIC_ACCESS and U166 P-NOVELTY both NO_CHANGE_WITH_REASON; new original Jauk and Hall human cohorts with author OSF leads not accessed/rights unverified; zero cycles"
+    "update_events": 169,
+    "counts_as_new_AB_cycle": true,
+    "last_update": "2026-10-29: U167 internal mathematical model; U168/U169 no-change, no new external source, R5 unchanged",
+    "scientific_AB_R_cycle_increment": 0,
+    "internal_AB_H_cycles": 14
   }
 }
