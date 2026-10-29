@@ -1,0 +1,23 @@
+# N90 — Contrato completo A–J PRE-CONGELADO, aprendizaje privado inmediato vs diferido
+
+Fecha 2026-10-29. Rama `research/ab-r-mercados-pareja-20261028`, HEAD padre `839e1bc4c9153b963ae1d849a9207f6cb68112eb`. No iniciar ejecución N90 hasta constatar el commit de congelación con contrato y script exactos.
+
+A. **Pregunta**: el script original, tras cada rechazo, actualiza `private_bias[i]=min(.80,private_bias[i]+.08)` inmediatamente dentro del bucle de candidatos del mismo tick. ¿Cuánto dependen las propuestas y uniones de esa **secuencia de procesamiento intraperíodo**, frente a una institución donde todas las señales del período se entregan juntas antes del siguiente tick?
+
+B. **Rivales fuertes**: (I) original *immediate* con incremento intra tick; (L) *next_tick* idénticas señales y magnitudes de rechazo pero actualizadas solo al acabar el tick; (S) *silent* acumula sesgo pero nunca lo aplica a `send_util`. Comparadores sham: I debe reproducir exactamente el código ESBM histórico con `private=True` en los 24 casos; S debe reproducir exactamente código histórico con `private=False` exceptuando etiqueta de escenario y variable de sesgo no aplicado. Todos los shocks de elección, emparejamiento, oportunidad y disolución iguales.
+
+C. **Estimandos**: seis pares de seeds en `mixed_random` (contexto principal), diferencia I−L en relaciones formadas totales, activas final, propuestas emitidas y respuestas aceptadas; controles I−S. Conteo de propuestas posteriores que utilizaron una actualización por rechazo **del mismo período** para detectar la vía mediadora. Resultado nulo aceptable si dicho canal existe pero shocks no inducen diferencias. No usar p-values confirmatorios sobre simulación.
+
+D. **Diseño**: 4 contextos (aleatorio, popularidad, segregación, preferencia normativa) × 6 semillas × 3 alternativas = 72 ejecuciones instrumentadas, 24 originales `private=True` y 24 originales `private=False`; **120 ejecuciones reales**. Python ESBM v2 sin modificarse. La alternativa L usa `private_pending[i]` por tick y aplica la misma suma limitada a .80 al final; captura exactamente el mismo número de señales en cada brazo, pero trayectorias futuras pueden divergir. Sensibilidad por contexto predefinida.
+
+E. **Freeze**: código original SHA256 `f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b`. Script exacto `n90_private_timing.py` SHA256 `0dd721ea30a5e89b465fd2e22234dcb8af94835eb537e51ffe4c1223bddecb33`. Su gzip sin timestamps SHA256 `d12b4809bbba64a89beb07fe3f8479502d4a9060791f88e343b8ea9b787302dc`, blob Git `36f9d999fa03a365ef18349e11f2a2eae5a64a17`. No editar ni sustituir scripts tras resultados: si falla un check, declarar INVALID y nuevo prerregistro eventual.
+
+F. **Invariantes**: 24/24 exactos de I vs histórico, 24/24 S vs histórico sin private, todas las relaciones formed−dissolved=active, en L cada rechazo privado contado en pendientes (la suma acumulada de contadores igual, independientemente del clipping); solo I debe registrar oportunidades de usar sesgo modificado dentro del tick. Fuente hash verificada. *Manipulation gate*: al menos una propuesta con sesgo actualizado dentro de mismo tick en las seis corridas principales de I. Reportar seis diferencias por semilla y medias, incluyendo resultados contrarios y nulos.
+
+G. **Adversariales**: L no omite rechazos ni cambia ganancia .08 o techo .80, solo su momento de aplicación. S placebo con shocks iguales. Diseño distingue causalidad algorítmica de información social observada; nada de inferir aprendizaje psicológico humano ni de equiparar aspiración con probabilidad de obtener pareja.
+
+H. **Multiplicidad/holdout**: seis semillas ya usadas, reutilización exploratoria de simulador; cuatro contextos sensibilidad, no grupos humanos independientes. Diferencias en disponibilidad futura son parte del tratamiento compuesto; no permiten identificar efecto humano de que las plataformas den feedback en tiempo real. Sin originales microdatos de nueva cohorte.
+
+I. **Priors**: P-BOUNDED, P-FEEDBACK (y P-ACTION-SEMANTICS si estrictamente pertinente). Los mecanismos de aprendizaje/feedback y de secuenciación tienen precedentes; novedad científica 0/3. Registrar la importancia de no confundir actualización de parámetro con estrategia psicológica observada. CT2 ordinal 7 sin incremento por sintéticos.
+
+J. **Decisión**: si pasa controles y manipulación, un ciclo AB-R N90 sintético técnico válido 0/3; documentar A–J, datos por semilla, resultado, priors y scorecard basada en hitos. Si falla, INVALID sin consumir válido. N91–N92 permanecen autorizados, N93–N106 reservados, STOP_R5 externo, sin licencias, contactos, SSJY, reintentos bloqueados, datos privados publicados ni merge main. DRIFT D0.8 intra-familia.
