@@ -1,0 +1,490 @@
+{
+  "schema": "ABP.FIVE_AJ.v1",
+  "date": "2026-10-29",
+  "branch": "research/ab-p-esbm-exact-oracle-20261029",
+  "kind": "AB-P engineering technical cycles, non-AB-R",
+  "technical_cycles_authorized_this_turn": 5,
+  "technical_cycles_executed": 5,
+  "technical_cycles_passed": 5,
+  "technical_cycles_invalid": 0,
+  "AB_R_new_valid": 0,
+  "AB_R_remaining_reserved": 14,
+  "old_AB_R_valid": 26,
+  "AB_R_target": 40,
+  "CT2_ordinal": 7,
+  "weighted_maturity_percent": 41.2,
+  "cycles": [
+    {
+      "id": "P01",
+      "type": "AB-P",
+      "parent": "N92 (technical fork, NO AB-R credit)",
+      "mode": "FOCUS_EXACT_REFERENCE_ENG",
+      "drift_D": 0.5,
+      "claim": "Exact observable-state reference for 2x2 consent/matching",
+      "A": {
+        "question": "Exact observable-state reference for 2x2 consent/matching",
+        "estimand": "E[max-cardinality active mutual-consent dyads]",
+        "population": "4 fictitious agents (2 x 2), 4 potential dyads; P04 special constructed 3-edge graph; no human population"
+      },
+      "B": {
+        "rivals": [
+          "pair-count-only",
+          "greedy cardinality",
+          "exact matching"
+        ],
+        "null": "No mechanistic difference identifiable from final matching if edge-level q is identical",
+        "H_other": "Changes of risk set, dependence across edges, temporal constraints or alternative tie-breaking may break equivalence"
+      },
+      "C": {
+        "design": "Exhaustively enumerate all sixteen mutual-choice states; compare exact expected matches and edge probability mass; probability sum=1",
+        "gate": "1e-12 tolerance, independent edge successes, matched finite risk set",
+        "policy": "Selection logic and all tests committed before computed outcomes"
+      },
+      "D": {
+        "instrument": "oracle.js exact enumeration",
+        "commit": "8b36dabc8eb594f66ae42898f030408f71090928",
+        "prereg": "efeef8b1ecf4e12d02069723b91bcfdb8e5aca4d",
+        "clean_clone": "NOT_VERIFIED",
+        "execution": "V8 JavaScript tool runtime (same function source used in frozen file)"
+      },
+      "E": {
+        "run": "EXECUTED",
+        "observations": {
+          "id": "P01",
+          "status": "PASS",
+          "support": "Exact exhaustive 16 yes/no states; capacity invariants",
+          "mass": 1.0000000000000002,
+          "expected_mutual_edges": 0.49999999999999994,
+          "expected_formed_pairs": 0.46480000000000005,
+          "distinct_final_matching_signatures": 7,
+          "next": "P02 observational equivalence (structural exposure vs choice)",
+          "baseline": "finite constructed synthetic mathematical reference; not measured field effect",
+          "grade_0_3": 0,
+          "AB_R_credit_increment": 0,
+          "source_freeze_commit": "8b36dabc8eb594f66ae42898f030408f71090928",
+          "prereg_commit": "efeef8b1ecf4e12d02069723b91bcfdb8e5aca4d"
+        },
+        "failures": 0,
+        "rows_human": 0,
+        "simulation_type": "exact finite mathematical enumerator rather than random agents/field data"
+      },
+      "F": {
+        "baselines": [
+          "pair-count-only",
+          "greedy cardinality",
+          "exact matching"
+        ],
+        "adversarial": "Capacity ceiling and exact algebra; no real baseline predictive benchmark"
+      },
+      "G": {
+        "status": "INTERNAL_EXACT_TEST_ONLY",
+        "external": "NONE",
+        "holdout": "NO_HUMAN_HOLDOUT"
+      },
+      "H": {
+        "prior_update": "NO_CHANGE_NO_NEW_DOCUMENTARY_SOURCE",
+        "reason": "All results derive from transparent constructed assumptions; human P-NOVELTY and P-DYADIC_ACCESS not updated",
+        "next_test": "P02 observational equivalence (structural exposure vs choice)"
+      },
+      "I": {
+        "validity_internal": "PASS_ON_STATED_FINITE_MODEL",
+        "causal_human": "NOT_IDENTIFIED",
+        "scientific_grade": "0/3",
+        "originality": "No claim of original scientific theorem",
+        "ct2_before": 7,
+        "ct2_after": 7,
+        "weighted_maturity_before": 41.2,
+        "weighted_maturity_after": 41.2,
+        "privacy": "Synthetic only"
+      },
+      "J": {
+        "decision": "AB-P PASS_NEXT",
+        "next": "P02 observational equivalence (structural exposure vs choice)",
+        "AB_R_decision": "STOP_R5_EXTERNAL",
+        "AB_R_credit_used": 0
+      },
+      "status": "ABP_ENGINEERING_VALID",
+      "outcome_commit": "e0a5d2f76f230cde8db87829c69b12bd92976da9"
+    },
+    {
+      "id": "P02",
+      "type": "AB-P",
+      "parent": "P01",
+      "mode": "FOCUS_EXACT_REFERENCE_ENG",
+      "drift_D": 0.5,
+      "claim": "Exact observational equivalence of two distinct exposure/choice-generating mechanisms",
+      "A": {
+        "question": "Exact observational equivalence of two distinct exposure/choice-generating mechanisms",
+        "estimand": "Total variation distance of full distribution of observed match sets under both mechanisms",
+        "population": "4 fictitious agents (2 x 2), 4 potential dyads; P04 special constructed 3-edge graph; no human population"
+      },
+      "B": {
+        "rivals": [
+          "segregated exposure-neutral preferences",
+          "equal exposure-homophilic preferences"
+        ],
+        "null": "No mechanistic difference identifiable from final matching if edge-level q is identical",
+        "H_other": "Changes of risk set, dependence across edges, temporal constraints or alternative tie-breaking may break equivalence"
+      },
+      "C": {
+        "design": "Use q_same=.2 and q_cross=.05 under e_same=.8/e_cross=.2,p_yes=.5 vs e=.5,p_same=sqrt(.4),p_cross=sqrt(.1); compare exact match signatures",
+        "gate": "1e-12 tolerance, independent edge successes, matched finite risk set",
+        "policy": "Selection logic and all tests committed before computed outcomes"
+      },
+      "D": {
+        "instrument": "oracle.js exact enumeration",
+        "commit": "8b36dabc8eb594f66ae42898f030408f71090928",
+        "prereg": "efeef8b1ecf4e12d02069723b91bcfdb8e5aca4d",
+        "clean_clone": "NOT_VERIFIED",
+        "execution": "V8 JavaScript tool runtime (same function source used in frozen file)"
+      },
+      "E": {
+        "run": "EXECUTED",
+        "observations": {
+          "id": "P02",
+          "status": "PASS",
+          "support": "Different stagewise structural mechanisms give indistinguishable entire match-set distribution",
+          "q_by_edges": [
+            0.2,
+            0.05,
+            0.05,
+            0.2
+          ],
+          "full_matching_distribution_TVD": 0,
+          "expected_final_pairs": 0.46480000000000005,
+          "next": "P03 audit which stage-specific logs distinguish these worlds",
+          "baseline": "finite constructed synthetic mathematical reference; not measured field effect",
+          "grade_0_3": 0,
+          "AB_R_credit_increment": 0,
+          "source_freeze_commit": "8b36dabc8eb594f66ae42898f030408f71090928",
+          "prereg_commit": "efeef8b1ecf4e12d02069723b91bcfdb8e5aca4d"
+        },
+        "failures": 0,
+        "rows_human": 0,
+        "simulation_type": "exact finite mathematical enumerator rather than random agents/field data"
+      },
+      "F": {
+        "baselines": [
+          "segregated exposure-neutral preferences",
+          "equal exposure-homophilic preferences"
+        ],
+        "adversarial": "Capacity ceiling and exact algebra; no real baseline predictive benchmark"
+      },
+      "G": {
+        "status": "INTERNAL_EXACT_TEST_ONLY",
+        "external": "NONE",
+        "holdout": "NO_HUMAN_HOLDOUT"
+      },
+      "H": {
+        "prior_update": "NO_CHANGE_NO_NEW_DOCUMENTARY_SOURCE",
+        "reason": "All results derive from transparent constructed assumptions; human P-NOVELTY and P-DYADIC_ACCESS not updated",
+        "next_test": "P03 audit which stage-specific logs distinguish these worlds"
+      },
+      "I": {
+        "validity_internal": "PASS_ON_STATED_FINITE_MODEL",
+        "causal_human": "NOT_IDENTIFIED",
+        "scientific_grade": "0/3",
+        "originality": "No claim of original scientific theorem",
+        "ct2_before": 7,
+        "ct2_after": 7,
+        "weighted_maturity_before": 41.2,
+        "weighted_maturity_after": 41.2,
+        "privacy": "Synthetic only"
+      },
+      "J": {
+        "decision": "AB-P PASS_NEXT",
+        "next": "P03 audit which stage-specific logs distinguish these worlds",
+        "AB_R_decision": "STOP_R5_EXTERNAL",
+        "AB_R_credit_used": 0
+      },
+      "status": "ABP_ENGINEERING_VALID",
+      "outcome_commit": "e0a5d2f76f230cde8db87829c69b12bd92976da9"
+    },
+    {
+      "id": "P03",
+      "type": "AB-P",
+      "parent": "P02",
+      "mode": "FOCUS_EXACT_REFERENCE_ENG",
+      "drift_D": 0.5,
+      "claim": "Stagewise measurement value of observed opportunity sets",
+      "A": {
+        "question": "Stagewise measurement value of observed opportunity sets",
+        "estimand": "Difference in expected same-group exposure, directed yes, reciprocal yes with equal total exposure",
+        "population": "4 fictitious agents (2 x 2), 4 potential dyads; P04 special constructed 3-edge graph; no human population"
+      },
+      "B": {
+        "rivals": [
+          "match-only observation",
+          "aggregate exposure observation",
+          "group-typed exposure plus decisions"
+        ],
+        "null": "No mechanistic difference identifiable from final matching if edge-level q is identical",
+        "H_other": "Changes of risk set, dependence across edges, temporal constraints or alternative tie-breaking may break equivalence"
+      },
+      "C": {
+        "design": "Compute exact expected group-specific exposures and positive choices, do not infer person-level human mechanisms",
+        "gate": "1e-12 tolerance, independent edge successes, matched finite risk set",
+        "policy": "Selection logic and all tests committed before computed outcomes"
+      },
+      "D": {
+        "instrument": "oracle.js exact enumeration",
+        "commit": "8b36dabc8eb594f66ae42898f030408f71090928",
+        "prereg": "efeef8b1ecf4e12d02069723b91bcfdb8e5aca4d",
+        "clean_clone": "NOT_VERIFIED",
+        "execution": "V8 JavaScript tool runtime (same function source used in frozen file)"
+      },
+      "E": {
+        "run": "EXECUTED",
+        "observations": {
+          "id": "P03",
+          "status": "PASS",
+          "support": "Aggregate exposures and entire match distribution fail to distinguish; group-typed opportunity logs distinguish constructed worlds",
+          "world_exposure_segregated": {
+            "total_exposures": 2,
+            "same_group_exposures": 1.6,
+            "cross_group_exposures": 0.4,
+            "expected_proposals": 1,
+            "expected_mutual_edges": 0.5
+          },
+          "world_preference_segregated": {
+            "total_exposures": 2,
+            "same_group_exposures": 1,
+            "cross_group_exposures": 1,
+            "expected_proposals": 0.9486832980505138,
+            "expected_mutual_edges": 0.5
+          },
+          "next": "P04 congestion and competent matching baseline",
+          "baseline": "finite constructed synthetic mathematical reference; not measured field effect",
+          "grade_0_3": 0,
+          "AB_R_credit_increment": 0,
+          "source_freeze_commit": "8b36dabc8eb594f66ae42898f030408f71090928",
+          "prereg_commit": "efeef8b1ecf4e12d02069723b91bcfdb8e5aca4d"
+        },
+        "failures": 0,
+        "rows_human": 0,
+        "simulation_type": "exact finite mathematical enumerator rather than random agents/field data"
+      },
+      "F": {
+        "baselines": [
+          "match-only observation",
+          "aggregate exposure observation",
+          "group-typed exposure plus decisions"
+        ],
+        "adversarial": "Capacity ceiling and exact algebra; no real baseline predictive benchmark"
+      },
+      "G": {
+        "status": "INTERNAL_EXACT_TEST_ONLY",
+        "external": "NONE",
+        "holdout": "NO_HUMAN_HOLDOUT"
+      },
+      "H": {
+        "prior_update": "NO_CHANGE_NO_NEW_DOCUMENTARY_SOURCE",
+        "reason": "All results derive from transparent constructed assumptions; human P-NOVELTY and P-DYADIC_ACCESS not updated",
+        "next_test": "P04 congestion and competent matching baseline"
+      },
+      "I": {
+        "validity_internal": "PASS_ON_STATED_FINITE_MODEL",
+        "causal_human": "NOT_IDENTIFIED",
+        "scientific_grade": "0/3",
+        "originality": "No claim of original scientific theorem",
+        "ct2_before": 7,
+        "ct2_after": 7,
+        "weighted_maturity_before": 41.2,
+        "weighted_maturity_after": 41.2,
+        "privacy": "Synthetic only"
+      },
+      "J": {
+        "decision": "AB-P PASS_NEXT",
+        "next": "P04 congestion and competent matching baseline",
+        "AB_R_decision": "STOP_R5_EXTERNAL",
+        "AB_R_credit_used": 0
+      },
+      "status": "ABP_ENGINEERING_VALID",
+      "outcome_commit": "e0a5d2f76f230cde8db87829c69b12bd92976da9"
+    },
+    {
+      "id": "P04",
+      "type": "AB-P",
+      "parent": "P03",
+      "mode": "FOCUS_EXACT_REFERENCE_ENG",
+      "drift_D": 0.5,
+      "claim": "Congestion versus per-edge consent and strong matching comparator",
+      "A": {
+        "question": "Congestion versus per-edge consent and strong matching comparator",
+        "estimand": "maximum-cardinality matching vs lexical greedy under constructed edge counterexample; saturation in complete 2x2",
+        "population": "4 fictitious agents (2 x 2), 4 potential dyads; P04 special constructed 3-edge graph; no human population"
+      },
+      "B": {
+        "rivals": [
+          "independent-edge pair count",
+          "greedy",
+          "max cardinality"
+        ],
+        "null": "No mechanistic difference identifiable from final matching if edge-level q is identical",
+        "H_other": "Changes of risk set, dependence across edges, temporal constraints or alternative tie-breaking may break equivalence"
+      },
+      "C": {
+        "design": "Check three-edge path greedy produces 1 while optimal produces 2; full 2x2 all mutual yields 4 consenting edges but only 2 partnerships",
+        "gate": "1e-12 tolerance, independent edge successes, matched finite risk set",
+        "policy": "Selection logic and all tests committed before computed outcomes"
+      },
+      "D": {
+        "instrument": "oracle.js exact enumeration",
+        "commit": "8b36dabc8eb594f66ae42898f030408f71090928",
+        "prereg": "efeef8b1ecf4e12d02069723b91bcfdb8e5aca4d",
+        "clean_clone": "NOT_VERIFIED",
+        "execution": "V8 JavaScript tool runtime (same function source used in frozen file)"
+      },
+      "E": {
+        "run": "EXECUTED",
+        "observations": {
+          "id": "P04",
+          "status": "PASS",
+          "support": "Capacity/congestion induces mismatch between reciprocated intentions and exclusive matching; competent maximum matching beats naive greedy on exact graph",
+          "greedy_pairs": 1,
+          "maximum_pairs": 2,
+          "all_mutual_positive_edges": 4,
+          "all_mutual_formed_pairs": 2,
+          "next": "P05 separate formation flow from survivor stock",
+          "baseline": "finite constructed synthetic mathematical reference; not measured field effect",
+          "grade_0_3": 0,
+          "AB_R_credit_increment": 0,
+          "source_freeze_commit": "8b36dabc8eb594f66ae42898f030408f71090928",
+          "prereg_commit": "efeef8b1ecf4e12d02069723b91bcfdb8e5aca4d"
+        },
+        "failures": 0,
+        "rows_human": 0,
+        "simulation_type": "exact finite mathematical enumerator rather than random agents/field data"
+      },
+      "F": {
+        "baselines": [
+          "independent-edge pair count",
+          "greedy",
+          "max cardinality"
+        ],
+        "adversarial": "Capacity ceiling and exact algebra; no real baseline predictive benchmark"
+      },
+      "G": {
+        "status": "INTERNAL_EXACT_TEST_ONLY",
+        "external": "NONE",
+        "holdout": "NO_HUMAN_HOLDOUT"
+      },
+      "H": {
+        "prior_update": "NO_CHANGE_NO_NEW_DOCUMENTARY_SOURCE",
+        "reason": "All results derive from transparent constructed assumptions; human P-NOVELTY and P-DYADIC_ACCESS not updated",
+        "next_test": "P05 separate formation flow from survivor stock"
+      },
+      "I": {
+        "validity_internal": "PASS_ON_STATED_FINITE_MODEL",
+        "causal_human": "NOT_IDENTIFIED",
+        "scientific_grade": "0/3",
+        "originality": "No claim of original scientific theorem",
+        "ct2_before": 7,
+        "ct2_after": 7,
+        "weighted_maturity_before": 41.2,
+        "weighted_maturity_after": 41.2,
+        "privacy": "Synthetic only"
+      },
+      "J": {
+        "decision": "AB-P PASS_NEXT",
+        "next": "P05 separate formation flow from survivor stock",
+        "AB_R_decision": "STOP_R5_EXTERNAL",
+        "AB_R_credit_used": 0
+      },
+      "status": "ABP_ENGINEERING_VALID",
+      "outcome_commit": "e0a5d2f76f230cde8db87829c69b12bd92976da9"
+    },
+    {
+      "id": "P05",
+      "type": "AB-P",
+      "parent": "P04",
+      "mode": "FOCUS_EXACT_REFERENCE_ENG",
+      "drift_D": 0.5,
+      "claim": "Formation-stock accounting in one-step dynamic",
+      "A": {
+        "question": "Formation-stock accounting in one-step dynamic",
+        "estimand": "Expected active stock after independently specified breakup hazard conditional on formation",
+        "population": "4 fictitious agents (2 x 2), 4 potential dyads; P04 special constructed 3-edge graph; no human population"
+      },
+      "B": {
+        "rivals": [
+          "flow=stock",
+          "stock=flow times survival"
+        ],
+        "null": "No mechanistic difference identifiable from final matching if edge-level q is identical",
+        "H_other": "Changes of risk set, dependence across edges, temporal constraints or alternative tie-breaking may break equivalence"
+      },
+      "C": {
+        "design": "Under 4 unanimous mutual edges, formation=2, h=.25 expected active=1.5, h=.75 expected active=.5; check stock never above flow",
+        "gate": "1e-12 tolerance, independent edge successes, matched finite risk set",
+        "policy": "Selection logic and all tests committed before computed outcomes"
+      },
+      "D": {
+        "instrument": "oracle.js exact enumeration",
+        "commit": "8b36dabc8eb594f66ae42898f030408f71090928",
+        "prereg": "efeef8b1ecf4e12d02069723b91bcfdb8e5aca4d",
+        "clean_clone": "NOT_VERIFIED",
+        "execution": "V8 JavaScript tool runtime (same function source used in frozen file)"
+      },
+      "E": {
+        "run": "EXECUTED",
+        "observations": {
+          "id": "P05",
+          "status": "PASS",
+          "support": "Fixed deterministic formation flow does not determine active stock without dissolution/survival",
+          "formed_pairs_flow": 2,
+          "expected_stocks_by_hazard": {
+            "h0": 2,
+            "h025": 1.5,
+            "h075": 0.5
+          },
+          "next": "Return to AB-R STOP_R5; do not spend N93–N106 without independent legal data and ESBM-exclusive hypothesis",
+          "baseline": "finite constructed synthetic mathematical reference; not measured field effect",
+          "grade_0_3": 0,
+          "AB_R_credit_increment": 0,
+          "source_freeze_commit": "8b36dabc8eb594f66ae42898f030408f71090928",
+          "prereg_commit": "efeef8b1ecf4e12d02069723b91bcfdb8e5aca4d"
+        },
+        "failures": 0,
+        "rows_human": 0,
+        "simulation_type": "exact finite mathematical enumerator rather than random agents/field data"
+      },
+      "F": {
+        "baselines": [
+          "flow=stock",
+          "stock=flow times survival"
+        ],
+        "adversarial": "Capacity ceiling and exact algebra; no real baseline predictive benchmark"
+      },
+      "G": {
+        "status": "INTERNAL_EXACT_TEST_ONLY",
+        "external": "NONE",
+        "holdout": "NO_HUMAN_HOLDOUT"
+      },
+      "H": {
+        "prior_update": "NO_CHANGE_NO_NEW_DOCUMENTARY_SOURCE",
+        "reason": "All results derive from transparent constructed assumptions; human P-NOVELTY and P-DYADIC_ACCESS not updated",
+        "next_test": "Return to AB-R STOP_R5; do not spend N93–N106 without independent legal data and ESBM-exclusive hypothesis"
+      },
+      "I": {
+        "validity_internal": "PASS_ON_STATED_FINITE_MODEL",
+        "causal_human": "NOT_IDENTIFIED",
+        "scientific_grade": "0/3",
+        "originality": "No claim of original scientific theorem",
+        "ct2_before": 7,
+        "ct2_after": 7,
+        "weighted_maturity_before": 41.2,
+        "weighted_maturity_after": 41.2,
+        "privacy": "Synthetic only"
+      },
+      "J": {
+        "decision": "AB-P PASS_NEXT",
+        "next": "Return to AB-R STOP_R5; do not spend N93–N106 without independent legal data and ESBM-exclusive hypothesis",
+        "AB_R_decision": "STOP_R5_EXTERNAL",
+        "AB_R_credit_used": 0
+      },
+      "status": "ABP_ENGINEERING_VALID",
+      "outcome_commit": "e0a5d2f76f230cde8db87829c69b12bd92976da9"
+    }
+  ]
+}
