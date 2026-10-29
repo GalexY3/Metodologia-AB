@@ -38,3 +38,9 @@ Rutas ya documentadas sin desbloqueo: McMaster `SRC096` (357 citas binarias de d
 ## Decisión
 
 `AB-DECIDE = STOP_R5_EXTERNAL; DOCUMENTARY_REPAIR_ONLY`. No abrir N93–N106, no consumir crédito, no alterar resultados/holdout/preregistros, no aumentar CT2 ni madurez y no hacer merge a `main`. Esta auditoría permanece accesible en Git junto con las correcciones versionadas.
+
+## Comprobación adicional de integridad del código fuente y aritmética (misma auditoría, sin ciclo)
+
+Posteriormente a la primera reparación documental se recalculó **directamente a partir del contenido textual UTF-8/ASCII recuperado por GitHub** el SHA256 de `research/ABR_ESBM20_20261028/esbm_dynamic.py`: `f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b`, coincidencia exacta con los manifiestos N88, N91 y N92. El algoritmo SHA256 empleado se contrastó con el vector conocido `abc` → `ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad`. El blob Git de la fuente se mantiene idéntico (`5fc9f63fd44ff81ce9ff6c900ba6bf24153356f2`) entre el commit de freeze N91 y el HEAD auditado. **Esto verifica el hash del código ORIGINAL en texto; no verifica los hashes de scripts auxiliares almacenados en gzip ni su ejecución.**
+
+Comparando el contenido del prerregistro antes de los resultados y el HEAD posterior, `PREREG_N91.md` conserva el blob `9b1d921a4525e67d9a5c98c9b1496cc45ae88bb8` y `PREREG_N92.md` conserva `0b50325e228dfcd8b2fd93727ad2adb07795993c`. Recalculando desde los JSON de resultados legibles, los 18 deltas de N91 tienen media `−8.055555555555555`, 14 signos negativos y cuatro positivos; los controles negativos suman 90/90 formaciones invariantes. Los seis deltas N92 suman `−60`, media `−10`; los counts del JSON son consistentes con los informes. **Control de coherencia matemática y documental, no reproducción independiente de las 180/60 simulaciones declaradas.**
