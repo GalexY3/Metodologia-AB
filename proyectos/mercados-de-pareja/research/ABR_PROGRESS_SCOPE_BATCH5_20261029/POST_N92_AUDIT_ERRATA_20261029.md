@@ -1,0 +1,40 @@
+# Auditoría documental posterior a N92 y erratas de metadatos — 29/10/2026
+
+**Naturaleza:** revisión y reparación documental **POST_HOC / NO_AB_CYCLE**, no nuevo prerregistro, experimento, confirmación, descubrimiento ni liberación de créditos AB-R. Auditado desde HEAD previo `4041adf9848f4393e1101f01a1559bb423f584d8` en la rama `research/ab-r-mercados-pareja-20261028`; historia Git original conservada. No hay datos humanos nuevos, nuevos SOURCES ni cambios de PRIORS o UPDATES.
+
+## Problemas detectados y correcciones exactas
+
+| Archivo / campo | Valor antes (HEAD previo) | Corrección | Evidencia y razón |
+|---|---|---|---|
+| `PROGRESS_SCORECARD.json:separate_metrics.AB_outside_tranche_reserved` | `19` | `14` | `TRANCHE_N88_N92.json` y `AUTHORIZATION.json` documentan que las cinco plazas N88–N92 fueron consumidas y N93–N106 (14) siguen reservadas. Había quedado el número anterior a la liberación de la tanda. |
+| `PROGRESS_SCORECARD.json:score_is_not_number_of_cycles` | `false` | `true` | La rúbrica expresa `SUM(weight_percent * progress_percent / 100)` para ocho dimensiones. El progreso es un juicio por hitos, no el cociente de ciclos válidos. |
+| `PROGRESS_SCORECARD.json:last_evidence_commit_reference` | `0d3260968405fd3ea070d0877f29ea04471140b3` | `4409e063e5726d88687c821337c957855232d9a8` | El primero congeló N92 antes de resultados; el segundo archivó los resultados, ledger y scorecard N92. Se conserva la referencia de freeze en el ledger N92. |
+| `ABR_BATCH2_N88_MATCHING_MECHANISM_20261029/REPORT_N88.md` | `Original v2 Python SHA256 undefined` | SHA `f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b` | Literal incorrecto en una frase de informe; `CODE_FREEZE_MANIFEST.json` N88 ya registraba este SHA256. Se añade nota de errata, sin alterar el manifiesto, código o resultados. |
+
+Los blobs originales observados antes de la reparación fueron `3833550541e93bfb8bbb906ed22d8eeb269a2a7e` (scorecard) y `b479edd18a133f124ad7ce5616e2efab84d6291c` (informe N88). La diferencia se registra en un commit documental nuevo; Git conserva los estados anteriores. El valor numérico del scorecard **41.20%** queda intacto, al igual que los ocho hitos, el CT2 ordinal **7/100**, el grado sociológico 0/3 y el balance **26/40 válidos, 14 reservados sin liberación, cero plazas abiertas**. `new_valid_cycles_this_turn: 2` es el marcador histórico de la ejecución N91–N92, NO una afirmación de dos nuevos ciclos durante esta auditoría.
+
+## Verificación de precedencia de congelaciones y resultados
+
+Secuencia Git obtenida mediante lectura de la API de commits:
+
+- N91: padre de congelación `fcb2f4cf50eddcfc0b0df709ff8c924c9c11885d` → freeze `8bf3838f2858948f9201e8d25d89178c92eed64a` (2026-10-29 12:24:08 UTC, prerregistro A–J + manifiesto + `n91_relabel_audit.py.gz`, blob `a731d753b8675d270da254fb824f420b056eab41`) → resultados `eba81212143a15d726051959ce5eb3d287afc3c8` (12:27:42 UTC; ledger, resumen y CT2).
+- N92: padre `eba81212143a15d726051959ce5eb3d287afc3c8` → freeze `0d3260968405fd3ea070d0877f29ea04471140b3` (12:30:01 UTC, prerregistro A–J + manifiesto + `n92_snapshot_test.py.gz`, blob `24b4e1413c7a44eaeed475b2ac104d910af59a65`) → resultados `4409e063e5726d88687c821337c957855232d9a8` (12:32:58 UTC; ledger, resumen, gzip de resultados y CT2).
+- Ambas parejas freeze→outcome son commits sucesivos padre-hijo. Los manifiestos registran SHA256 código N91 `2ea5b39520f86dd35d760f6d29ddac26ff839afa1289aebbb034cf3ceeb2e791` y N92 `3006583df8d3f95a8ee6a43d6ef665c44578229956e9aed8e220bf04ad484480`, contra la misma fuente original `f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b`.
+
+**Qué se verificó:** existencia, orden y parentesco de commits, archivos congelados y de resultados, contenido legible del prerregistro, manifiestos, informes, JSON-resumen y coherencia aritmética. N91 conserva 180 llamadas declaradas (36 originales +144 transformadas), con 18/18 cambios de formaciones solo en `visibility_balancing`, y 90/90 controles negativos de formaciones invariantes; el promedio de los 18 deltas listados es −8.05556. N92 conserva 60 llamadas declaradas (48 originales/snapshot por permutación +12 controles), 12/12 shams de políticas no afectadas, 0/18 cambios de resultado completo bajo snapshot, y los seis deltas [+8,−16,−13,−30,+13,−22] promedian −10 formaciones.
+
+**Límite de auditoría:** los ficheros originales `.gz` no fueron descomprimidos ni recalculados byte a byte desde el conector GitHub disponible; la interfaz de lectura rechaza binarios no UTF-8. La coincidencia de SHA256 del texto descomprimido con el manifiesto y la reejecución independiente en clon limpio **NO ESTÁN VERIFICADAS en esta auditoría**. Los registros de resultados existentes afirman ejecución real; esta auditoría no la repite ni la eleva a confirmación externa. No se puede demostrar desde estos metadatos por sí solos el instante efectivo de cada instrucción de ejecución, pero los objetos de Git confirman precedencia documental.
+
+## Interpretación adversarial y STOP_R5
+
+N91–N92 identifican un sesgo de índice **dentro de ESBM** bajo el ranking `-1.4 log1p(seen)` cuando `seen` cambia dentro del mismo tick. Congelar el contador para la decisión de exposición del tick restaura equivarianza a permutar IDs en los 18 casos estudiados, sin demostrar robustez universal ni una teoría de emparejamiento humano. El propio cambio snapshot afecta formaciones, y su signo no es constante por seed. Se preservan estas contraevidencias y el código histórico; el parche no sustituye los resultados históricos.
+
+El principal bloqueo empírico sigue siendo **datos de cohorte externa independiente, con derechos legales de reutilización comprobados, oportunidades realmente observadas, identificadores de ambos participantes, elecciones binarias nativas de ambos extremos y cronología suficiente**. La mera publicación de gustos, Likert, mensajes o recomendaciones no acredita aceptación bilateral observada. Deben comprobarse licencia por archivo y privacidad, event/session IDs, dependencia entre díadas, ausencia de leakage, métricas/estimandos y posibilidad de holdout virgen, además de un control competente contra modelos de preferencias, exposición y selección. Para duración se requieren tiempos y censura genuinos, no solo postdate interest.
+
+Rutas ya documentadas sin desbloqueo: McMaster `SRC096` (357 citas binarias de dos sesiones **ya exploradas**; no holdout independiente), Columbia/Mixmosa (cohortes ya usadas, no confundir nueva especificación con réplica externa), `SRC084` (UKDS registro y licencia propios pendientes), `SRC088` (MatchNMingle condiciones de acceso y respuestas ordinales), `SRC092` (PsychArchives licencia CC BY4 del ZIP confirmada pero descarga previa fallida y outcome binario no confirmado), `SRC095` (BUas/ZENODO subconjunto, licencia de registro y decisión binaria no verificadas), `SRC097` (GitHub de autor, licencia de microdatos y sí/sí desconocidos). Ninguna fuente citada satisface ahora **simultáneamente** derechos, observaciones completas, independencia y holdout confirmatorio. No repetir accesos fallidos de OSF, Essex, Stanford, Gist ni otras rutas agotadas; no SSJY, aceptación de licencias ni contactos a autores sin aprobación.
+
+**Puerta de desbloqueo:** solo revaluar R5 si se obtiene por medio nuevo autorizado y lícito un dataset original independiente con bytes, licencia, diccionario de campos y decisiones bilaterales verificables o una intervención verdaderamente nueva con observaciones discriminantes. Una revisión bibliográfica, un parche técnico, más seeds o documentación adicional no equivalen a esa evidencia. Sin hallazgo documental nuevo aquí, `SOURCES=97`, `PRIORS=30`, `UPDATES=146` permanecen sin alteración; **NO_CHANGE_WITH_REASON**: revisión de material ya registrado, sin nuevo prior empírico ni evidencia sustantiva.
+
+## Decisión
+
+`AB-DECIDE = STOP_R5_EXTERNAL; DOCUMENTARY_REPAIR_ONLY`. No abrir N93–N106, no consumir crédito, no alterar resultados/holdout/preregistros, no aumentar CT2 ni madurez y no hacer merge a `main`. Esta auditoría permanece accesible en Git junto con las correcciones versionadas.

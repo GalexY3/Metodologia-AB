@@ -88,7 +88,7 @@
     "AB_valid_completed": 26,
     "AB_credits_available": 14,
     "AB_tranche_now_open_for_attempt": 0,
-    "AB_outside_tranche_reserved": 19,
+    "AB_outside_tranche_reserved": 14,
     "CT2_ordinal": 7,
     "CT2_not_probability": true,
     "sources": 97,
@@ -98,8 +98,22 @@
     "new_planning_cycles_this_turn": 0
   },
   "score_may_change_only_with_documented_milestone_evidence": true,
-  "score_is_not_number_of_cycles": false,
-  "last_evidence_commit_reference": "0d3260968405fd3ea070d0877f29ea04471140b3",
+  "score_is_not_number_of_cycles": true,
+  "last_evidence_commit_reference": "4409e063e5726d88687c821337c957855232d9a8",
   "last_maturity_update": "N92_SNAPSHOT_REPAIRS_N91_ID_ORDER_ARTEFACT_WITH_FULL_18_RELABEL_EQUIVARIANCE",
-  "last_precision_errata": "2026-10-29 display precision repair only: IEEE-754 41.199999999999996 normalized to decimal 41.2; no science score, cycle, evidence or ledger changes."
+  "last_precision_errata": "2026-10-29 display precision repair only: IEEE-754 41.199999999999996 normalized to decimal 41.2; no science score, cycle, evidence or ledger changes.",
+  "last_documentary_audit": {
+    "date": "2026-10-29",
+    "status": "POST_N92_ERRATA_ONLY_NO_AB_CYCLE",
+    "previous_head": "4041adf9848f4393e1101f01a1559bb423f584d8",
+    "errata_path": "proyectos/mercados-de-pareja/research/ABR_PROGRESS_SCOPE_BATCH5_20261029/POST_N92_AUDIT_ERRATA_20261029.md",
+    "new_valid_cycles": 0,
+    "new_invalid_cycles": 0,
+    "new_planning_cycles": 0,
+    "new_empirical_evidence": 0,
+    "outcomes_changed": false,
+    "original_code_changed": false,
+    "maturity_percent_changed": false,
+    "ct2_changed": false
+  }
 }

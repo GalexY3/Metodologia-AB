@@ -4,7 +4,7 @@
 
 ## Prueba realmente ejecutada
 
-Original v2 Python SHA256 `undefined`; 6 semillas ×10 escenarios ×4 brazos = **240 simulaciones reales de Python**: original, control instrumental central idéntico, greedy por los mismos pesos de arista y greedy por orden de actor. Los 60 controles centrales repiten **exactamente cada campo del original**; se restauró operador NetworkX en `finally`. Dentro de cada brazo, en cada tick, la alternativa central cardinalmente domina a ambas greedy sobre el MISMO grafo de consentimientos. Entre brazos cambia la disponibilidad futura: no confundir maximización instantánea con máximo acumulado. En cada brazo se conserva formado − disuelto = activo. Sin datos de personas.
+Original v2 Python SHA256 `f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b` (valor recuperado del manifiesto N88; errata documental posterior); 6 semillas ×10 escenarios ×4 brazos = **240 simulaciones reales de Python**: original, control instrumental central idéntico, greedy por los mismos pesos de arista y greedy por orden de actor. Los 60 controles centrales repiten **exactamente cada campo del original**; se restauró operador NetworkX en `finally`. Dentro de cada brazo, en cada tick, la alternativa central cardinalmente domina a ambas greedy sobre el MISMO grafo de consentimientos. Entre brazos cambia la disponibilidad futura: no confundir maximización instantánea con máximo acumulado. En cada brazo se conserva formado − disuelto = activo. Sin datos de personas.
 
 ## Estimandos principales: central menos alternativa, media emparejada sobre 60 corridas
 
@@ -52,3 +52,7 @@ R1: encuentros y uniones artificiales; no relaciones observadas. R2: dos baselin
 U137 P-ACTION-SEMANTICS y U138 P-OPPORTUNITY sin cambios de estado; 97 fuentes, 30 priors, 138 revisiones. CT2 ordinal 7/100 no aumenta. Madurez ponderada **40.05%**, aumenta solo simulador y QA; novedad 10% y validez externa 5% no cambian. 22/40 ciclos válidos, 18 restantes: N89–N92 cuatro disponibles, N93–N106 catorce reservados; ningún ciclo abierto adicional. No hubo SSJY, licencias, autores, OSF/Essex/Stanford/Gist, microdatos ni fusión a main.
 
 Fuente original, script completo congelado (Brotli) y outputs agregados son verificables; JSON íntegro de los 60 pares en runtime: SHA256 `051df4293751846c532f1d720b84b40d89ac8471f2763391e320734ec50264df`. No confundir code SHA en GitHub con publicación del repositorio privado.
+
+## Errata documental posterior (29/10/2026; sin nuevo ciclo)
+
+La versión original del apartado «Prueba realmente ejecutada» mostraba literalmente `Original v2 Python SHA256 undefined` por un fallo de incorporación del identificador en el informe. Se sustituyó esa cadena por el SHA256 de la fuente original documentado antes de los resultados en `CODE_FREEZE_MANIFEST.json` de N88, `f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b`. La corrección es solo de texto: no cambia el fuente original, el script N88, el protocolo precongelado, los resultados, los controles, la evaluación 0/3 ni la contabilidad. La verificación independiente de bytes comprimidos y reejecución permanece pendiente. [Registro de auditoría y errata](../ABR_PROGRESS_SCOPE_BATCH5_20261029/POST_N92_AUDIT_ERRATA_20261029.md).
