@@ -1,0 +1,488 @@
+{
+  "schema": "ABH.A-J.N147_N166.C.v1",
+  "date": "2026-10-30",
+  "branch": "research/ab-h-esbm-trajectory-equivalence-20261030",
+  "block": "C",
+  "cycles_valid_technical_or_negative": 5,
+  "scientific_0_3_only": true,
+  "human_R5": "STOP",
+  "source_original_sha": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+  "cycles": [
+    {
+      "id": "N155",
+      "parent": "N154",
+      "mode": "BACKWARD_COMPAT",
+      "drift_D": {
+        "source_commit": "6c7a7f7814eda1cef3f8b22d4efabbd2da4d8385",
+        "runner": "freeze before outcome",
+        "seeds": "101,211; original 101,211,307,401,503,601"
+      },
+      "A": {
+        "question": "Prove opt-in shock repair leaves historical default output untouched in all 60 official ESBM scenario×seed runs",
+        "estimand": "model-specific software invariance and marginal toy shock distribution"
+      },
+      "B": {
+        "rivals": [
+          "original historical ESBM",
+          "symmetric only dyads",
+          "within tick private bias feedback",
+          "public reputation feedback order"
+        ],
+        "H0": "No full path equivariance for social learning even with dyadic shocks"
+      },
+      "C": {
+        "test": "60/60 complete result dict parity old vs equivariant engine historical default, N144x16 actual",
+        "falsifier": "Every unmatched event or output counts against whole-trajectory equivalence; no label tie exemptions"
+      },
+      "D": {
+        "preregistered": {
+          "source_commit": "6c7a7f7814eda1cef3f8b22d4efabbd2da4d8385",
+          "runner": "freeze before outcome",
+          "seeds": "101,211; original 101,211,307,401,503,601"
+        },
+        "prereg_commit": "dc883bb0fa02fdc2adf7508df490b513bbff1e84",
+        "code_sha_frozen_before_outcomes": "813f42d645a4255483e3f33a8d98dc45b898d24c"
+      },
+      "E": {
+        "status": "PASS",
+        "actual_endpoint": {
+          "legacy_full_dict_parity": 60
+        },
+        "source_full_receipt_sha256": "13a11540a215952764200e2ee242315fc1ad7c7953d535b75a7154182eb6f798",
+        "local_full_rows_available_in_conversation_bundle": true,
+        "humans": 0
+      },
+      "F": {
+        "preregistered_adversarial": "Adversarial explicit private vs public mechanisms, plus source parity",
+        "negative_diagnostic": false,
+        "warning": "All findings in model and Python; technically falsified baseline actor order no human inference."
+      },
+      "G": {
+        "preregistered": "No external human replication",
+        "independence": "NO_EXTERNAL_HUMAN_HOLDOUT",
+        "third_party_OS": "NOT_TESTED"
+      },
+      "H": {
+        "prior_ids": [
+          "P-TRAJECTORY-INVARIANCE",
+          "P-NETWORK-INVARIANCE",
+          "P-DYADIC_ACCESS",
+          "P-NOVELTY"
+        ],
+        "update_ids": [
+          "U177",
+          "U178",
+          "U179",
+          "U180",
+          "U181",
+          "U182"
+        ],
+        "human_priors": "NO_CHANGE_WITH_REASON",
+        "source_new": "SRC107 documentary publication only"
+      },
+      "I": {
+        "grade": "0/3",
+        "scientific_CT2_before": 7,
+        "scientific_CT2_after": 7,
+        "technical_result_valid": true,
+        "external_replication": false,
+        "ethical_ok": "No raw human sample or original source mutation"
+      },
+      "J": {
+        "decision": "PASS_CONDITIONAL_ADVANCE",
+        "successor": "N156",
+        "failure_path": "VALID_NEGATIVE_DIAGNOSTIC or prereg repair; do not make false equivalence claim",
+        "credit_spent": 1,
+        "value_next": "Distinct model and code capability; R5 external remains STOP"
+      },
+      "selection_exposure": "Adaptive sequential blocks, no blinded human outcomes, no 2/3 scientific claim",
+      "source_refs": [
+        "proyectos/mercados-de-pareja/research/ABH_N147_N166_20261030/PREREG_C.json",
+        "proyectos/mercados-de-pareja/research/ABH_N147_N166_20261030/RESULTS_INDEX.json"
+      ]
+    },
+    {
+      "id": "N156",
+      "parent": "N155",
+      "mode": "LEARNING_PRIVATE",
+      "drift_D": {
+        "source_commit": "6c7a7f7814eda1cef3f8b22d4efabbd2da4d8385",
+        "runner": "freeze before outcome",
+        "seeds": "101,211; original 101,211,307,401,503,601"
+      },
+      "A": {
+        "question": "Test whole-trajectory actor equivariance with rejection learning private only",
+        "estimand": "model-specific software invariance and marginal toy shock distribution"
+      },
+      "B": {
+        "rivals": [
+          "original historical ESBM",
+          "symmetric only dyads",
+          "within tick private bias feedback",
+          "public reputation feedback order"
+        ],
+        "H0": "No full path equivariance for social learning even with dyadic shocks"
+      },
+      "C": {
+        "test": "N24×4; two seeds×three perms×2 canonical networks×2 slots, opt-in pair symmetric; exact directed event multisets and stats; preserve all failures",
+        "falsifier": "Every unmatched event or output counts against whole-trajectory equivalence; no label tie exemptions"
+      },
+      "D": {
+        "preregistered": {
+          "source_commit": "6c7a7f7814eda1cef3f8b22d4efabbd2da4d8385",
+          "runner": "freeze before outcome",
+          "seeds": "101,211; original 101,211,307,401,503,601"
+        },
+        "prereg_commit": "dc883bb0fa02fdc2adf7508df490b513bbff1e84",
+        "code_sha_frozen_before_outcomes": "813f42d645a4255483e3f33a8d98dc45b898d24c"
+      },
+      "E": {
+        "status": "VALID_NEGATIVE_DIAGNOSTIC",
+        "actual_endpoint": {
+          "exact": 18,
+          "checks": 24,
+          "remaining_six": "only final_private_aspiration_bias_mean differs by IEEE addition order, event symmetric diff 0"
+        },
+        "source_full_receipt_sha256": "13a11540a215952764200e2ee242315fc1ad7c7953d535b75a7154182eb6f798",
+        "local_full_rows_available_in_conversation_bundle": true,
+        "humans": 0
+      },
+      "F": {
+        "preregistered_adversarial": "Adversarial explicit private vs public mechanisms, plus source parity",
+        "negative_diagnostic": true,
+        "warning": "All findings in model and Python; technically falsified baseline actor order no human inference."
+      },
+      "G": {
+        "preregistered": "No external human replication",
+        "independence": "NO_EXTERNAL_HUMAN_HOLDOUT",
+        "third_party_OS": "NOT_TESTED"
+      },
+      "H": {
+        "prior_ids": [
+          "P-TRAJECTORY-INVARIANCE",
+          "P-NETWORK-INVARIANCE",
+          "P-DYADIC_ACCESS",
+          "P-NOVELTY"
+        ],
+        "update_ids": [
+          "U177",
+          "U178",
+          "U179",
+          "U180",
+          "U181",
+          "U182"
+        ],
+        "human_priors": "NO_CHANGE_WITH_REASON",
+        "source_new": "SRC107 documentary publication only"
+      },
+      "I": {
+        "grade": "0/3",
+        "scientific_CT2_before": 7,
+        "scientific_CT2_after": 7,
+        "technical_result_valid": true,
+        "external_replication": false,
+        "ethical_ok": "No raw human sample or original source mutation"
+      },
+      "J": {
+        "decision": "BRANCH_REPAIR_FROM_COUNTEREXAMPLE",
+        "successor": "N157",
+        "failure_path": "VALID_NEGATIVE_DIAGNOSTIC or prereg repair; do not make false equivalence claim",
+        "credit_spent": 1,
+        "value_next": "Distinct model and code capability; R5 external remains STOP"
+      },
+      "selection_exposure": "Adaptive sequential blocks, no blinded human outcomes, no 2/3 scientific claim",
+      "source_refs": [
+        "proyectos/mercados-de-pareja/research/ABH_N147_N166_20261030/PREREG_C.json",
+        "proyectos/mercados-de-pareja/research/ABH_N147_N166_20261030/RESULTS_INDEX.json"
+      ]
+    },
+    {
+      "id": "N157",
+      "parent": "N156",
+      "mode": "LEARNING_PUBLIC",
+      "drift_D": {
+        "source_commit": "6c7a7f7814eda1cef3f8b22d4efabbd2da4d8385",
+        "runner": "freeze before outcome",
+        "seeds": "101,211; original 101,211,307,401,503,601"
+      },
+      "A": {
+        "question": "Test whole-trajectory actor equivariance with public reputation feedback only; identify order dependence rather than average it away",
+        "estimand": "model-specific software invariance and marginal toy shock distribution"
+      },
+      "B": {
+        "rivals": [
+          "original historical ESBM",
+          "symmetric only dyads",
+          "within tick private bias feedback",
+          "public reputation feedback order"
+        ],
+        "H0": "No full path equivariance for social learning even with dyadic shocks"
+      },
+      "C": {
+        "test": "Same 24 full path comparisons; compare to N156. Expected possible failure if within-tick reputation updated sequentially",
+        "falsifier": "Every unmatched event or output counts against whole-trajectory equivalence; no label tie exemptions"
+      },
+      "D": {
+        "preregistered": {
+          "source_commit": "6c7a7f7814eda1cef3f8b22d4efabbd2da4d8385",
+          "runner": "freeze before outcome",
+          "seeds": "101,211; original 101,211,307,401,503,601"
+        },
+        "prereg_commit": "dc883bb0fa02fdc2adf7508df490b513bbff1e84",
+        "code_sha_frozen_before_outcomes": "813f42d645a4255483e3f33a8d98dc45b898d24c"
+      },
+      "E": {
+        "status": "VALID_NEGATIVE_DIAGNOSTIC",
+        "actual_endpoint": {
+          "exact": 18,
+          "checks": 24,
+          "remaining_six": "only final_public_reputation_penalty_mean differs by IEEE addition order, event symmetric diff 0"
+        },
+        "source_full_receipt_sha256": "13a11540a215952764200e2ee242315fc1ad7c7953d535b75a7154182eb6f798",
+        "local_full_rows_available_in_conversation_bundle": true,
+        "humans": 0
+      },
+      "F": {
+        "preregistered_adversarial": "Adversarial explicit private vs public mechanisms, plus source parity",
+        "negative_diagnostic": true,
+        "warning": "All findings in model and Python; technically falsified baseline actor order no human inference."
+      },
+      "G": {
+        "preregistered": "No external human replication",
+        "independence": "NO_EXTERNAL_HUMAN_HOLDOUT",
+        "third_party_OS": "NOT_TESTED"
+      },
+      "H": {
+        "prior_ids": [
+          "P-TRAJECTORY-INVARIANCE",
+          "P-NETWORK-INVARIANCE",
+          "P-DYADIC_ACCESS",
+          "P-NOVELTY"
+        ],
+        "update_ids": [
+          "U177",
+          "U178",
+          "U179",
+          "U180",
+          "U181",
+          "U182"
+        ],
+        "human_priors": "NO_CHANGE_WITH_REASON",
+        "source_new": "SRC107 documentary publication only"
+      },
+      "I": {
+        "grade": "0/3",
+        "scientific_CT2_before": 7,
+        "scientific_CT2_after": 7,
+        "technical_result_valid": true,
+        "external_replication": false,
+        "ethical_ok": "No raw human sample or original source mutation"
+      },
+      "J": {
+        "decision": "BRANCH_REPAIR_FROM_COUNTEREXAMPLE",
+        "successor": "N158",
+        "failure_path": "VALID_NEGATIVE_DIAGNOSTIC or prereg repair; do not make false equivalence claim",
+        "credit_spent": 1,
+        "value_next": "Distinct model and code capability; R5 external remains STOP"
+      },
+      "selection_exposure": "Adaptive sequential blocks, no blinded human outcomes, no 2/3 scientific claim",
+      "source_refs": [
+        "proyectos/mercados-de-pareja/research/ABH_N147_N166_20261030/PREREG_C.json",
+        "proyectos/mercados-de-pareja/research/ABH_N147_N166_20261030/RESULTS_INDEX.json"
+      ]
+    },
+    {
+      "id": "N158",
+      "parent": "N157",
+      "mode": "NORM_RULES",
+      "drift_D": {
+        "source_commit": "6c7a7f7814eda1cef3f8b22d4efabbd2da4d8385",
+        "runner": "freeze before outcome",
+        "seeds": "101,211; original 101,211,307,401,503,601"
+      },
+      "A": {
+        "question": "Test full path identity with explicit same-/cross-norm institutional scheduling under both shock modes",
+        "estimand": "model-specific software invariance and marginal toy shock distribution"
+      },
+      "B": {
+        "rivals": [
+          "original historical ESBM",
+          "symmetric only dyads",
+          "within tick private bias feedback",
+          "public reputation feedback order"
+        ],
+        "H0": "No full path equivariance for social learning even with dyadic shocks"
+      },
+      "C": {
+        "test": "2 seeds ×3 perms ×2 norm policies ×2 slots, opt-in pair-sym; no alteration to norm/compatibility or stochastic seed",
+        "falsifier": "Every unmatched event or output counts against whole-trajectory equivalence; no label tie exemptions"
+      },
+      "D": {
+        "preregistered": {
+          "source_commit": "6c7a7f7814eda1cef3f8b22d4efabbd2da4d8385",
+          "runner": "freeze before outcome",
+          "seeds": "101,211; original 101,211,307,401,503,601"
+        },
+        "prereg_commit": "dc883bb0fa02fdc2adf7508df490b513bbff1e84",
+        "code_sha_frozen_before_outcomes": "813f42d645a4255483e3f33a8d98dc45b898d24c"
+      },
+      "E": {
+        "status": "PASS",
+        "actual_endpoint": {
+          "exact": 24,
+          "checks": 24,
+          "norm_policies": [
+            "pair_norm_same",
+            "pair_norm_cross"
+          ]
+        },
+        "source_full_receipt_sha256": "13a11540a215952764200e2ee242315fc1ad7c7953d535b75a7154182eb6f798",
+        "local_full_rows_available_in_conversation_bundle": true,
+        "humans": 0
+      },
+      "F": {
+        "preregistered_adversarial": "Adversarial explicit private vs public mechanisms, plus source parity",
+        "negative_diagnostic": false,
+        "warning": "All findings in model and Python; technically falsified baseline actor order no human inference."
+      },
+      "G": {
+        "preregistered": "No external human replication",
+        "independence": "NO_EXTERNAL_HUMAN_HOLDOUT",
+        "third_party_OS": "NOT_TESTED"
+      },
+      "H": {
+        "prior_ids": [
+          "P-TRAJECTORY-INVARIANCE",
+          "P-NETWORK-INVARIANCE",
+          "P-DYADIC_ACCESS",
+          "P-NOVELTY"
+        ],
+        "update_ids": [
+          "U177",
+          "U178",
+          "U179",
+          "U180",
+          "U181",
+          "U182"
+        ],
+        "human_priors": "NO_CHANGE_WITH_REASON",
+        "source_new": "SRC107 documentary publication only"
+      },
+      "I": {
+        "grade": "0/3",
+        "scientific_CT2_before": 7,
+        "scientific_CT2_after": 7,
+        "technical_result_valid": true,
+        "external_replication": false,
+        "ethical_ok": "No raw human sample or original source mutation"
+      },
+      "J": {
+        "decision": "PASS_CONDITIONAL_ADVANCE",
+        "successor": "N159",
+        "failure_path": "VALID_NEGATIVE_DIAGNOSTIC or prereg repair; do not make false equivalence claim",
+        "credit_spent": 1,
+        "value_next": "Distinct model and code capability; R5 external remains STOP"
+      },
+      "selection_exposure": "Adaptive sequential blocks, no blinded human outcomes, no 2/3 scientific claim",
+      "source_refs": [
+        "proyectos/mercados-de-pareja/research/ABH_N147_N166_20261030/PREREG_C.json",
+        "proyectos/mercados-de-pareja/research/ABH_N147_N166_20261030/RESULTS_INDEX.json"
+      ]
+    },
+    {
+      "id": "N159",
+      "parent": "N158",
+      "mode": "SHOCK_DIAGNOSTIC",
+      "drift_D": {
+        "source_commit": "6c7a7f7814eda1cef3f8b22d4efabbd2da4d8385",
+        "runner": "freeze before outcome",
+        "seeds": "20261030 draw 100k"
+      },
+      "A": {
+        "question": "Check whether directed versus symmetric dyadic shocks preserve intended uniform marginal under simulation and distinguish induced correlation",
+        "estimand": "model-specific software invariance and marginal toy shock distribution"
+      },
+      "B": {
+        "rivals": [
+          "original historical ESBM",
+          "symmetric only dyads",
+          "within tick private bias feedback",
+          "public reputation feedback order"
+        ],
+        "H0": "No full path equivariance for social learning even with dyadic shocks"
+      },
+      "C": {
+        "test": "100,000 independent simulated dyad shocks generated with frozen numpy seed 20261030, predeclared mean interval 0.497–0.503 and positive lag-independent checks. Report finite-sample evidence only, not independence of original behavior.",
+        "falsifier": "Every unmatched event or output counts against whole-trajectory equivalence; no label tie exemptions"
+      },
+      "D": {
+        "preregistered": {
+          "source_commit": "6c7a7f7814eda1cef3f8b22d4efabbd2da4d8385",
+          "runner": "freeze before outcome",
+          "seeds": "20261030 draw 100k"
+        },
+        "prereg_commit": "dc883bb0fa02fdc2adf7508df490b513bbff1e84",
+        "code_sha_frozen_before_outcomes": "813f42d645a4255483e3f33a8d98dc45b898d24c"
+      },
+      "E": {
+        "status": "PASS",
+        "actual_endpoint": {
+          "n": 100000,
+          "symmetric_sum_mod_mean": 0.49891800046705825,
+          "corr_with_first": -0.00006993552876124609
+        },
+        "source_full_receipt_sha256": "13a11540a215952764200e2ee242315fc1ad7c7953d535b75a7154182eb6f798",
+        "local_full_rows_available_in_conversation_bundle": true,
+        "humans": 0
+      },
+      "F": {
+        "preregistered_adversarial": "Adversarial explicit private vs public mechanisms, plus source parity",
+        "negative_diagnostic": false,
+        "warning": "All findings in model and Python; technically falsified baseline actor order no human inference."
+      },
+      "G": {
+        "preregistered": "No external human replication",
+        "independence": "NO_EXTERNAL_HUMAN_HOLDOUT",
+        "third_party_OS": "NOT_TESTED"
+      },
+      "H": {
+        "prior_ids": [
+          "P-TRAJECTORY-INVARIANCE",
+          "P-NETWORK-INVARIANCE",
+          "P-DYADIC_ACCESS",
+          "P-NOVELTY"
+        ],
+        "update_ids": [
+          "U177",
+          "U178",
+          "U179",
+          "U180",
+          "U181",
+          "U182"
+        ],
+        "human_priors": "NO_CHANGE_WITH_REASON",
+        "source_new": "SRC107 documentary publication only"
+      },
+      "I": {
+        "grade": "0/3",
+        "scientific_CT2_before": 7,
+        "scientific_CT2_after": 7,
+        "technical_result_valid": true,
+        "external_replication": false,
+        "ethical_ok": "No raw human sample or original source mutation"
+      },
+      "J": {
+        "decision": "PASS_CONDITIONAL_ADVANCE",
+        "successor": "plan event-order repair if public feedback breaks",
+        "failure_path": "VALID_NEGATIVE_DIAGNOSTIC or prereg repair; do not make false equivalence claim",
+        "credit_spent": 1,
+        "value_next": "Distinct model and code capability; R5 external remains STOP"
+      },
+      "selection_exposure": "Adaptive sequential blocks, no blinded human outcomes, no 2/3 scientific claim",
+      "source_refs": [
+        "proyectos/mercados-de-pareja/research/ABH_N147_N166_20261030/PREREG_C.json",
+        "proyectos/mercados-de-pareja/research/ABH_N147_N166_20261030/RESULTS_INDEX.json"
+      ]
+    }
+  ]
+}
