@@ -1,0 +1,272 @@
+{
+  "schema": "ABH.PREEXEC.BLOCK_C.v1",
+  "date": "2026-10-29",
+  "branch": "research/ab-h-esbm-event-api-20261029",
+  "valid_so_far": 10,
+  "authorized": 20,
+  "remaining": 10,
+  "trigger": "N132–N136 produced 30-seed degree-preserving null, active-delta mixed/near zero; duration and bounded quality are new observables, not retrying same one-slot comparison",
+  "cycles": [
+    {
+      "id": "N137",
+      "mode": "INTERACTION",
+      "parent": "N136",
+      "D": {
+        "frozen_code": "run_C.py commit pending; frozen before outcomes",
+        "source_modules": [
+          "esbm_event_engine.py",
+          "social_graph.py",
+          "mini_world.py"
+        ]
+      },
+      "A": {
+        "question": "Quantify network topology × appointment slots interaction against same actor shock and degree null.",
+        "estimand": "artificial event-stage metrics in 24 fictitious agents, four ticks; never human happiness"
+      },
+      "B": {
+        "rivals": [
+          "fixed-degree network null",
+          "one-slot baseline",
+          "naive completed-only duration",
+          "formed-pairs count vs invented proxy"
+        ],
+        "null": "No consistent improvement in active relations, duration, proxy or inequality"
+      },
+      "C": {
+        "falsifier": "30 seeds 4000..4029; four trajectories ring/rewired ×1/2 slots, outcomes exposure, formed, active, n=24 t=4; paired budget differences explicit.",
+        "seed_range": "4000-4029",
+        "budget": "120 simulator executions for shared C batch; 30 seeds×2 networks×2 slot counts; all tests share runs, not independent studies"
+      },
+      "E": {
+        "execution": "NOT_RUN"
+      },
+      "F": {
+        "adversarial": "No inference from synthetic uncertainty to humans; stock same as formation and duration distinct"
+      },
+      "G": {
+        "external": "NONE"
+      },
+      "H": {
+        "prior": "Only synthetic formal prior monitored; all external human priors unchanged"
+      },
+      "I": {
+        "grade": "0/3",
+        "CT2": 7,
+        "maturity": "unmodified until final verifiable milestone"
+      },
+      "J": {
+        "if_pass": "N138",
+        "if_fail": "document and repair, do not count"
+      }
+    },
+    {
+      "id": "N138",
+      "mode": "RISK_PARITY",
+      "parent": "N137",
+      "D": {
+        "frozen_code": "run_C.py commit pending; frozen before outcomes",
+        "source_modules": [
+          "esbm_event_engine.py",
+          "social_graph.py",
+          "mini_world.py"
+        ]
+      },
+      "A": {
+        "question": "Test whether degree-preserving rewiring equalizes observed feasible opportunities per tick; report failures as confounding.",
+        "estimand": "artificial event-stage metrics in 24 fictitious agents, four ticks; never human happiness"
+      },
+      "B": {
+        "rivals": [
+          "fixed-degree network null",
+          "one-slot baseline",
+          "naive completed-only duration",
+          "formed-pairs count vs invented proxy"
+        ],
+        "null": "No consistent improvement in active relations, duration, proxy or inequality"
+      },
+      "C": {
+        "falsifier": "At each initial fixed risk set and both slot policies record eligible candidate edges, actual exposures and group composition, never claim equal longitudinal budget if false.",
+        "seed_range": "4000-4029",
+        "budget": "120 simulator executions for shared C batch; 30 seeds×2 networks×2 slot counts; all tests share runs, not independent studies"
+      },
+      "E": {
+        "execution": "NOT_RUN"
+      },
+      "F": {
+        "adversarial": "No inference from synthetic uncertainty to humans; stock same as formation and duration distinct"
+      },
+      "G": {
+        "external": "NONE"
+      },
+      "H": {
+        "prior": "Only synthetic formal prior monitored; all external human priors unchanged"
+      },
+      "I": {
+        "grade": "0/3",
+        "CT2": 7,
+        "maturity": "unmodified until final verifiable milestone"
+      },
+      "J": {
+        "if_pass": "N139",
+        "if_fail": "document and repair, do not count"
+      }
+    },
+    {
+      "id": "N139",
+      "mode": "CENSORING",
+      "parent": "N138",
+      "D": {
+        "frozen_code": "run_C.py commit pending; frozen before outcomes",
+        "source_modules": [
+          "esbm_event_engine.py",
+          "social_graph.py",
+          "mini_world.py"
+        ]
+      },
+      "A": {
+        "question": "Reconstruct event durations with right censoring and a tiny synthetic Kaplan–Meier restricted duration diagnostic.",
+        "estimand": "artificial event-stage metrics in 24 fictitious agents, four ticks; never human happiness"
+      },
+      "B": {
+        "rivals": [
+          "fixed-degree network null",
+          "one-slot baseline",
+          "naive completed-only duration",
+          "formed-pairs count vs invented proxy"
+        ],
+        "null": "No consistent improvement in active relations, duration, proxy or inequality"
+      },
+      "C": {
+        "falsifier": "Trace every formation/dissolution for 2-slot variants and 30 seeds; every active relationship censored, no negative durations, KM survival monotonically non-increasing, compare naive completed durations.",
+        "seed_range": "4000-4029",
+        "budget": "120 simulator executions for shared C batch; 30 seeds×2 networks×2 slot counts; all tests share runs, not independent studies"
+      },
+      "E": {
+        "execution": "NOT_RUN"
+      },
+      "F": {
+        "adversarial": "No inference from synthetic uncertainty to humans; stock same as formation and duration distinct"
+      },
+      "G": {
+        "external": "NONE"
+      },
+      "H": {
+        "prior": "Only synthetic formal prior monitored; all external human priors unchanged"
+      },
+      "I": {
+        "grade": "0/3",
+        "CT2": 7,
+        "maturity": "unmodified until final verifiable milestone"
+      },
+      "J": {
+        "if_pass": "N140",
+        "if_fail": "document and repair, do not count"
+      }
+    },
+    {
+      "id": "N140",
+      "mode": "WELFARE_PROXY",
+      "parent": "N139",
+      "D": {
+        "frozen_code": "run_C.py commit pending; frozen before outcomes",
+        "source_modules": [
+          "esbm_event_engine.py",
+          "social_graph.py",
+          "mini_world.py"
+        ]
+      },
+      "A": {
+        "question": "Define artificial quality proxy based on latent q similarity and compare quantity, total proxy and per-active partnership quality.",
+        "estimand": "artificial event-stage metrics in 24 fictitious agents, four ticks; never human happiness"
+      },
+      "B": {
+        "rivals": [
+          "fixed-degree network null",
+          "one-slot baseline",
+          "naive completed-only duration",
+          "formed-pairs count vs invented proxy"
+        ],
+        "null": "No consistent improvement in active relations, duration, proxy or inequality"
+      },
+      "C": {
+        "falsifier": "A priori quality=1−|q_i−q_j|, calculated per formed edge, NOT subjective wellbeing; compute stock proxy from events; measure rankings across policies, include negative tradeoffs.",
+        "seed_range": "4000-4029",
+        "budget": "120 simulator executions for shared C batch; 30 seeds×2 networks×2 slot counts; all tests share runs, not independent studies"
+      },
+      "E": {
+        "execution": "NOT_RUN"
+      },
+      "F": {
+        "adversarial": "No inference from synthetic uncertainty to humans; stock same as formation and duration distinct"
+      },
+      "G": {
+        "external": "NONE"
+      },
+      "H": {
+        "prior": "Only synthetic formal prior monitored; all external human priors unchanged"
+      },
+      "I": {
+        "grade": "0/3",
+        "CT2": 7,
+        "maturity": "unmodified until final verifiable milestone"
+      },
+      "J": {
+        "if_pass": "N141",
+        "if_fail": "document and repair, do not count"
+      }
+    },
+    {
+      "id": "N141",
+      "mode": "INEQUALITY",
+      "parent": "N140",
+      "D": {
+        "frozen_code": "run_C.py commit pending; frozen before outcomes",
+        "source_modules": [
+          "esbm_event_engine.py",
+          "social_graph.py",
+          "mini_world.py"
+        ]
+      },
+      "A": {
+        "question": "Measure receiver exposure inequality and contrast against relation stock with known network capacity.",
+        "estimand": "artificial event-stage metrics in 24 fictitious agents, four ticks; never human happiness"
+      },
+      "B": {
+        "rivals": [
+          "fixed-degree network null",
+          "one-slot baseline",
+          "naive completed-only duration",
+          "formed-pairs count vs invented proxy"
+        ],
+        "null": "No consistent improvement in active relations, duration, proxy or inequality"
+      },
+      "C": {
+        "falsifier": "Paired 30 seeds×4 scenarios; Gini of impressions and zero-exposure agents, plus active pairs; no fairness or real demographic claims.",
+        "seed_range": "4000-4029",
+        "budget": "120 simulator executions for shared C batch; 30 seeds×2 networks×2 slot counts; all tests share runs, not independent studies"
+      },
+      "E": {
+        "execution": "NOT_RUN"
+      },
+      "F": {
+        "adversarial": "No inference from synthetic uncertainty to humans; stock same as formation and duration distinct"
+      },
+      "G": {
+        "external": "NONE"
+      },
+      "H": {
+        "prior": "Only synthetic formal prior monitored; all external human priors unchanged"
+      },
+      "I": {
+        "grade": "0/3",
+        "CT2": 7,
+        "maturity": "unmodified until final verifiable milestone"
+      },
+      "J": {
+        "if_pass": "Audit observational bias, packaging and external gate",
+        "if_fail": "document and repair, do not count"
+      }
+    }
+  ],
+  "scope": "AB-H technical/substantive toy proof, R5 external STOP, no new human data"
+}
