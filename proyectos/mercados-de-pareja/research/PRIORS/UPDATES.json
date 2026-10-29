@@ -4,7 +4,7 @@
   "date": "2026-10-28",
   "mode": "append-only logical, versioned by Git commits",
   "reconstructed_from_documents": "Retrospective backfill, not preregistration. Old before values NOT_RECORDED unless documented explicitly.",
-  "source_coverage": "68 source records (not independent studies); 30 qualitative priors, 93 append-only updates; distinct 2009 and 2017 HCMST respondent cohorts",
+  "source_coverage": "71 source records (not independent samples), 30 qualitative priors, 98 append-only revisions; original 2009 cohort wave6 is not 2017 cohort",
   "events": [
     {
       "id": "U001",
@@ -2415,7 +2415,132 @@
       "prior_probability_before": null,
       "prior_probability_after": null,
       "prereg_status": "NO_N83_PREREG_OR_EXPERIMENT; SOURCE_ELIGIBILITY_DOC_ONLY"
+    },
+    {
+      "id": "U094",
+      "prior_id": "P-LONGITUDINAL-ELIGIBILITY",
+      "source_ids": [
+        "SRC069",
+        "SRC070"
+      ],
+      "cycle_ids": [],
+      "before": "DOCUMENTED_SAMPLE_RAW_NOT_INSPECTED",
+      "after": "DOCUMENTED_SAMPLE_RAW_NOT_INSPECTED",
+      "direction": "NO_CHANGE_WITH_SOURCE_SCHEMA_AND_WAVE6_CORRECTION",
+      "what_the_sources_contribute": "Stanford HCMST 2009 original source includes wave 6 supplement in 2017 and ICPSR 30103 public V8 has only waves 1–5. Official codebook confirms qflag baseline partnered and w2_broke_up/w3_brokeup_actual death/separation plus ineligible wave3 group.",
+      "why_this_updates_or_checks_prior": "No additional independent sample (wave6 same 2009 original persons); cannot calculate hazard/attrition or wave6 without bytes, so retain DOCUMENTED_SAMPLE_RAW_NOT_INSPECTED.",
+      "limits": "Primary Stanford 2009 HTML and extracted codebook PDF text, 2023 Tilburg thesis university PDF text. Screenshot requests on both PDFs failed cache miss. No raw waves downloaded, no participant records, source code or original statistical results reproduced. This is documentary maintenance NOT preregistered empirical AB. Values attributed to thesis and not recalculated.",
+      "falsifier_or_followup": "Acquire official rights-cleared full public-wave files 2009 waves1-6, source SHA, check response/death/censoring join, prereg A–J and heldout tests vs Cox RSF DeepHit, external 2017 cohort treated as distinct sample. Clear legal use, no SSJY use.",
+      "evidence_type": "POST_HOC_PREEXISTING_SURVIVAL_PRIOR_ART_AND_SCHEMA_AUDIT_NO_AB_CYCLE",
+      "retrospective_backfill": false,
+      "recorded_at": "2026-10-29",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null,
+      "prereg_status": "NO_N83_PREREG_OR_EXECUTION"
+    },
+    {
+      "id": "U095",
+      "prior_id": "P-UNION-DURATION",
+      "source_ids": [
+        "SRC069",
+        "SRC070",
+        "SRC071"
+      ],
+      "cycle_ids": [],
+      "before": "CHALLENGED",
+      "after": "CHALLENGED",
+      "direction": "NO_CHANGE_WITH_PREEXISTING_SURVIVAL_APPLICATION",
+      "what_the_sources_contribute": "Franssen's 2023 thesis used HCMST 2009 waves1–6 to compare Cox, RSF and DeepHit on 3009 baseline partnered (third-party C-index .791, .795, .780).",
+      "why_this_updates_or_checks_prior": "Predicting union duration with standard survival models already has prior art; no own hazard, no independent external holdout, not ESBM mechanism validation.",
+      "limits": "Primary Stanford 2009 HTML and extracted codebook PDF text, 2023 Tilburg thesis university PDF text. Screenshot requests on both PDFs failed cache miss. No raw waves downloaded, no participant records, source code or original statistical results reproduced. This is documentary maintenance NOT preregistered empirical AB. Values attributed to thesis and not recalculated.",
+      "falsifier_or_followup": "Acquire official rights-cleared full public-wave files 2009 waves1-6, source SHA, check response/death/censoring join, prereg A–J and heldout tests vs Cox RSF DeepHit, external 2017 cohort treated as distinct sample. Clear legal use, no SSJY use.",
+      "evidence_type": "POST_HOC_PREEXISTING_SURVIVAL_PRIOR_ART_AND_SCHEMA_AUDIT_NO_AB_CYCLE",
+      "retrospective_backfill": false,
+      "recorded_at": "2026-10-29",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null,
+      "prereg_status": "NO_N83_PREREG_OR_EXECUTION"
+    },
+    {
+      "id": "U096",
+      "prior_id": "P-NOVELTY",
+      "source_ids": [
+        "SRC071"
+      ],
+      "cycle_ids": [],
+      "before": "STRONG_PRIOR_ART",
+      "after": "STRONG_PRIOR_ART",
+      "direction": "NO_CHANGE_STRONGER_PRIOR_ART",
+      "what_the_sources_contribute": "2023 pre-ESBM thesis used 2009 panel for time-to-breakup using Cox/RSF/DeepHit and inspected cohabitation, marriage, time together, how met.",
+      "why_this_updates_or_checks_prior": "Cannot present survival module add-on by itself as original; novelty requires new intervention/mechanism + competent baselines and independent test.",
+      "limits": "Primary Stanford 2009 HTML and extracted codebook PDF text, 2023 Tilburg thesis university PDF text. Screenshot requests on both PDFs failed cache miss. No raw waves downloaded, no participant records, source code or original statistical results reproduced. This is documentary maintenance NOT preregistered empirical AB. Values attributed to thesis and not recalculated.",
+      "falsifier_or_followup": "Acquire official rights-cleared full public-wave files 2009 waves1-6, source SHA, check response/death/censoring join, prereg A–J and heldout tests vs Cox RSF DeepHit, external 2017 cohort treated as distinct sample. Clear legal use, no SSJY use.",
+      "evidence_type": "POST_HOC_PREEXISTING_SURVIVAL_PRIOR_ART_AND_SCHEMA_AUDIT_NO_AB_CYCLE",
+      "retrospective_backfill": false,
+      "recorded_at": "2026-10-29",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null,
+      "prereg_status": "NO_N83_PREREG_OR_EXECUTION"
+    },
+    {
+      "id": "U097",
+      "prior_id": "P-COMPETENT_NULL",
+      "source_ids": [
+        "SRC070",
+        "SRC071"
+      ],
+      "cycle_ids": [],
+      "before": "CHALLENGED",
+      "after": "CHALLENGED",
+      "direction": "NO_CHANGE_WITH_ADVERSARIAL_BENCHMARK_SPEC",
+      "what_the_sources_contribute": "Original thesis includes Cox/RSF/DeepHit; original codebook has selective wave qualification, prior breakup and death distinctions; thesis reports some 2017 Brier values >1 inconsistent with unscaled Bernoulli squared error.",
+      "why_this_updates_or_checks_prior": "Future fair benchmark must audit outcome construction, weights, left truncation, interval censoring, attrition and death competing risks; third-party score concerns are NOT confirmation of an error or fraud without code.",
+      "limits": "Primary Stanford 2009 HTML and extracted codebook PDF text, 2023 Tilburg thesis university PDF text. Screenshot requests on both PDFs failed cache miss. No raw waves downloaded, no participant records, source code or original statistical results reproduced. This is documentary maintenance NOT preregistered empirical AB. Values attributed to thesis and not recalculated.",
+      "falsifier_or_followup": "Acquire official rights-cleared full public-wave files 2009 waves1-6, source SHA, check response/death/censoring join, prereg A–J and heldout tests vs Cox RSF DeepHit, external 2017 cohort treated as distinct sample. Clear legal use, no SSJY use.",
+      "evidence_type": "POST_HOC_PREEXISTING_SURVIVAL_PRIOR_ART_AND_SCHEMA_AUDIT_NO_AB_CYCLE",
+      "retrospective_backfill": false,
+      "recorded_at": "2026-10-29",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null,
+      "prereg_status": "NO_N83_PREREG_OR_EXECUTION"
+    },
+    {
+      "id": "U098",
+      "prior_id": "P-TRANSPORT",
+      "source_ids": [
+        "SRC069",
+        "SRC071"
+      ],
+      "cycle_ids": [],
+      "before": "CHALLENGED",
+      "after": "CHALLENGED",
+      "direction": "NO_CHANGE_WITH_COHORT_LEAKAGE_WARNING",
+      "what_the_sources_contribute": "HCMST 2009 wave6 2017 respondents came from original 2009 cohort; HCMST 2017 new baseline is a different sample in same calendar year.",
+      "why_this_updates_or_checks_prior": "Do not count followup wave6 as independent contemporaneous replication; period/pandemic/cohort changes confound cross-cohort dating app narratives.",
+      "limits": "Primary Stanford 2009 HTML and extracted codebook PDF text, 2023 Tilburg thesis university PDF text. Screenshot requests on both PDFs failed cache miss. No raw waves downloaded, no participant records, source code or original statistical results reproduced. This is documentary maintenance NOT preregistered empirical AB. Values attributed to thesis and not recalculated.",
+      "falsifier_or_followup": "Acquire official rights-cleared full public-wave files 2009 waves1-6, source SHA, check response/death/censoring join, prereg A–J and heldout tests vs Cox RSF DeepHit, external 2017 cohort treated as distinct sample. Clear legal use, no SSJY use.",
+      "evidence_type": "POST_HOC_PREEXISTING_SURVIVAL_PRIOR_ART_AND_SCHEMA_AUDIT_NO_AB_CYCLE",
+      "retrospective_backfill": false,
+      "recorded_at": "2026-10-29",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null,
+      "prereg_status": "NO_N83_PREREG_OR_EXECUTION"
     }
   ],
-  "last_campaign": "POST_N82_HCMST_2009_ACCESS_GATE_NO_CYCLE"
+  "last_campaign": "POST_N82_WAVE6_PREEXISTING_SURVIVAL_ANALYSIS_NONCYCLE"
 }
