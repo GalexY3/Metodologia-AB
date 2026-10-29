@@ -680,7 +680,7 @@
         "SRC071",
         "SRC090"
       ],
-      "last_update_id": "U118",
+      "last_update_id": "U134",
       "uncertainty": "Qualitative, context-dependent; no calibrated numerical probabilities",
       "next_falsifier_or_test": "Medidas longitudinales de bienestar y duración, con censura y controles de cambios de pareja.",
       "numeric_probability": null,
@@ -690,9 +690,10 @@
         "U049",
         "U092",
         "U095",
-        "U118"
+        "U118",
+        "U134"
       ],
-      "latest_evidence_summary": "Baxter et al. 2022 original three speed-date cohorts add explicit two-person yes/no and followup for matched pairs, including 2015 Anime North 12-week followup, but main estimate is association conditional on mutual match, not causal stable-union duration; no original bytes accessed.",
+      "latest_evidence_summary": "N85 source-guarded frozen synthetic test reproduces documented complete-case duration bias: 50k t0 entrant relationships at h=.048/.12/.21, completed mean 7.081/5.775/4.315 vs KM RMST 11.365/7.276/4.666, agrees with analytic truth. Known already in THEORY_V2, no new causal science; real Python simulator not executed, event/censor duration output repair needed.",
       "last_revised_at": "2026-10-29"
     },
     {
@@ -875,8 +876,8 @@
     "all_priors_linked": true,
     "source_ids_linked": 97,
     "registered_sources": 97,
-    "update_events": 133,
+    "update_events": 134,
     "counts_as_new_AB_cycle": false,
-    "last_update": "2026-10-29 N84_ACTOR_EXPOSURE_PRESERVING_MCMASTER_NULL_NEGATIVE_NO_N2"
+    "last_update": "2026-10-29 N85_SURVIVAL_CENSOR_QA_ALREADY_KNOWN_PROBLEM"
   }
 }

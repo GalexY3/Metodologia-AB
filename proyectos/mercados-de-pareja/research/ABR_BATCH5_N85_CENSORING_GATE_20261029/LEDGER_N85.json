@@ -1,0 +1,51 @@
+{
+  "schema": "ab.r.technical_formal_cycle.v1",
+  "campaign": "ABR_ESBM20_20261028",
+  "cycle": "N85",
+  "status": "COMPLETED_VALID_SCOPED_SYNTHETIC_QA_NEGATIVE",
+  "prereg_commit": "25b9442346bb00b4598389129fbf84ff7ef7a487",
+  "code_git_blob_sha1": "51bb177f77d647ad2bf8c3ac4f7cd2338cb213e1",
+  "code_sha256": "3edead1eb61e6315f6893e671095fb97848af838c06760fd97e0475efce74d9f",
+  "original_esbm_python_git_blob_sha1": "5fc9f63fd44ff81ce9ff6c900ba6bf24153356f2",
+  "run_original_esbm_python": false,
+  "technical_source_static_guards_passed": true,
+  "original_human_data_rows_accessed": 0,
+  "synthetic_cohorts": 150000,
+  "results": "RESULTS_N85.json",
+  "A": "Complete-only mean vs censor-aware survival duration estimand",
+  "B": "Naive completion mean versus KM RMST and analytic known-hazard truth",
+  "C": "RMST to 16 and conditional duration amongst ruptures are distinct",
+  "D": "n50000 x h0.048/0.12/0.21 t0 entrance and administrative censor16",
+  "E": "Code and A-J committed before running from pinned source",
+  "F": "KM 11.365/7.276/4.666 vs naive 7.081/5.775/4.315",
+  "G": "Pre-set gates all passed and source semantics guarded",
+  "H": "Known result acknowledged in original THEORY_V2; standalone toy only",
+  "I": "U134 P-UNION-DURATION NO_CHANGE, novel discoveries 0/3, CT2 7",
+  "J": "Valid scoped synthetic QA cycle; preserve N86/N87 and empirical STOP_R5",
+  "CT2": {
+    "ordinal": 7,
+    "last_real_cycle": "N85"
+  },
+  "counts": {
+    "authorized": 40,
+    "valid_total": 19,
+    "pending_total": 21,
+    "tranche_remaining": 2,
+    "other_reserved": 19,
+    "sources": 97,
+    "priors": 30,
+    "updates": 134
+  },
+  "score": {
+    "previous": 38.85,
+    "after": 38.95
+  },
+  "rights": {
+    "raw_microdata_published": false,
+    "main_merged": false,
+    "authors_contacted": false,
+    "license_accepted": false,
+    "SSJY": false
+  },
+  "clean_clone_verified": false
+}

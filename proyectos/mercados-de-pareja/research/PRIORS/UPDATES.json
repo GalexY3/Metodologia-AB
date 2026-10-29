@@ -4,7 +4,7 @@
   "date": "2026-10-28",
   "mode": "append-only logical, versioned by Git commits",
   "reconstructed_from_documents": "Retrospective backfill, not preregistration. Old before values NOT_RECORDED unless documented explicitly.",
-  "source_coverage": "97 sources, 30 priors, 133 updates; N83 formal and N84 exploratory valid scoped cycles; McMaster sample unchanged, no external validation; CT2 ordinal 7 and STOP_R5.",
+  "source_coverage": "97 sources, 30 priors, 134 updates. N85 synthetic pre-frozen diagnostic only.",
   "events": [
     {
       "id": "U001",
@@ -3368,7 +3368,30 @@
       "prior_probability_before": null,
       "prior_probability_after": null,
       "prereg_status": "EXPLORATORY_DATA_ALREADY_EXPOSED_CODE_PRE_FROZEN_AT_028a3276a2b73225b9baa65c077a1771c4fe1378"
+    },
+    {
+      "id": "U134",
+      "prior_id": "P-UNION-DURATION",
+      "source_ids": [],
+      "cycle_ids": [
+        "N85"
+      ],
+      "before": "CHALLENGED",
+      "after": "CHALLENGED",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "what_the_sources_contribute": "Actual ESBM Python source source-guarded; 150k synthetic exogenous-hazard histories executed after N85 code freeze; compared complete-only and KM RMST to analytic truth.",
+      "why_this_updates_or_checks_prior": "Quantifies a pre-documented issue and fixes the acceptance specification for future repair; no original human cohort, no new causal result.",
+      "limits": "THEORY_V2.md already acknowledges censor bias. Separate toy survival process, no full ESBM Python execution, no external holdout.",
+      "evidence_type": "N85_FORMAL_SYNTHETIC_SURVIVAL_QA_0_3",
+      "recorded_at": "2026-10-29",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 1,
+      "prior_probability_before": null,
+      "prior_probability_after": null,
+      "prereg_status": "PREREG_CODE_AT_25b9442346bb00b4598389129fbf84ff7ef7a487",
+      "falsifier_or_followup": "Export complete duration/event records, compute KM/RMST under justified censoring assumption, run original ESBM v2 instrumented and independent clean reproduction."
     }
   ],
-  "last_campaign": "ABR_BATCH5_N84_MCMASTER_CHOOSER_NULL_20261029"
+  "last_campaign": "ABR_BATCH5_N85_CENSORING_GATE_20261029"
 }

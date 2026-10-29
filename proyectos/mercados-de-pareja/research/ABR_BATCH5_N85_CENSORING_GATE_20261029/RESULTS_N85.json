@@ -1,0 +1,87 @@
+{
+  "status": "FORMAL_SYNTHETIC_CENSORING_DIAGNOSTIC_NOT_ESBM_PYTHON_EXECUTION",
+  "code_source_guards": {
+    "original_function": true,
+    "completed_only": true,
+    "censored_computed": true,
+    "only_censored_count_persisted": true,
+    "ended_at_start_tick": true,
+    "horizon_16": true,
+    "exogenous_hazard": true
+  },
+  "model": "all relationships enter at tick zero, known constant hazard per tick, dissolution tried ticks 1–15, administrative censor at 16",
+  "independent_human_holdout": false,
+  "original_human_rows": 0,
+  "settings": {
+    "replicates_per_hazard": 50000,
+    "seed_hex": "72a6e119",
+    "horizon": 16,
+    "hazards": [
+      0.048,
+      0.12,
+      0.21
+    ],
+    "tolerance_km_rmst": 0.17,
+    "tolerance_completed_mean": 0.18
+  },
+  "results": [
+    {
+      "name": "longer_partnerships_base_only",
+      "h": 0.048,
+      "cohorts": 50000,
+      "horizon": 16,
+      "completed": 25982,
+      "censored": 24018,
+      "naive_completed_mean": 7.080594257562928,
+      "km_restricted_mean_16": 11.365119999999997,
+      "known_true_restricted_mean_16": 11.350241925114911,
+      "analytic_completed_only_mean": 7.090043838030326,
+      "km_minus_naive": 4.2845257424370695,
+      "completes": true,
+      "test": {
+        "analytic_within_tolerance": true,
+        "restricted_beats_completed": true,
+        "cohort_balance": true
+      }
+    },
+    {
+      "name": "mixed_random_base_only",
+      "h": 0.12,
+      "cohorts": 50000,
+      "horizon": 16,
+      "completed": 42660,
+      "censored": 7340,
+      "naive_completed_mean": 5.775058602906705,
+      "km_restricted_mean_16": 7.276080000000001,
+      "known_true_restricted_mean_16": 7.255525071399174,
+      "analytic_completed_only_mean": 5.7488781925602686,
+      "km_minus_naive": 1.5010213970932966,
+      "completes": true,
+      "test": {
+        "analytic_within_tolerance": true,
+        "restricted_beats_completed": true,
+        "cohort_balance": true
+      }
+    },
+    {
+      "name": "shorter_partnerships_base_only",
+      "h": 0.21,
+      "cohorts": 50000,
+      "horizon": 16,
+      "completed": 48496,
+      "censored": 1504,
+      "naive_completed_mean": 4.314562025734081,
+      "km_restricted_mean_16": 4.666060000000001,
+      "known_true_restricted_mean_16": 4.652303850423995,
+      "analytic_completed_only_mean": 4.311774175967711,
+      "km_minus_naive": 0.35149797426591967,
+      "completes": true,
+      "test": {
+        "analytic_within_tolerance": true,
+        "restricted_beats_completed": true,
+        "cohort_balance": true
+      }
+    }
+  ],
+  "claim": "Source's completed-only duration mean is not a consistent unrestricted/16-tick restricted mean when censored pairs remain; bias changes with hazard. Fix requires retaining individual durations+event flags and calculating KM/RMST, not reading completed mean as population average."
+}

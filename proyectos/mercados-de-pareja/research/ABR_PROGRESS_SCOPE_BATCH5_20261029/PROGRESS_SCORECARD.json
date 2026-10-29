@@ -5,7 +5,7 @@
   "source_commit": "50ed5bacab76951157ed87447d61d26737701130",
   "target_scope": "FIRST_SCIENTIFICALLY_DEFENSIBLE_ESBM_RESEARCH_PACKAGE_NOT_EXPLAIN_ALL_ROMANTIC_RELATIONSHIPS",
   "nature": "EXPLICITLY_JUDGMENTAL_MILESTONE_ESTIMATE_NOT_EVALUATED_SUCCESS_PROBABILITY_OR_CT2",
-  "aggregate_percent_exact": 38.85,
+  "aggregate_percent_exact": 38.95,
   "aggregate_percent_rounded": 39,
   "rough_uncertainty_percentage_points": 10,
   "uncertainty_is_statistical_interval": false,
@@ -39,8 +39,8 @@
       "id": "qa",
       "name": "Controles técnicos y reproducibilidad",
       "weight": 10,
-      "progress": 53,
-      "evidence": "Pre-outcome source freezes, A-J and R1-R5 gate, SHA256 McMaster original and QA code, 60 synthetic scenario QA and byte-identical repeat on same machine; no independent clean clone. N83 deterministic frozen 8-cell exhaustive distribution check and independent rational Fraction recalculation; still no independent clean clone of the ESBM simulator. N84 pre-frozen 2000 permutations of the actual McMaster actor-by-opportunity network, exact per-actor yes totals and independent analytical null expectation check; remains within-study exploratory, no clean clone of ESBM v2.",
+      "progress": 54,
+      "evidence": "Pre-outcome source freezes, A-J and R1-R5 gate, SHA256 McMaster original and QA code, 60 synthetic scenario QA and byte-identical repeat on same machine; no independent clean clone. N83 deterministic frozen 8-cell exhaustive distribution check and independent rational Fraction recalculation; still no independent clean clone of the ESBM simulator. N84 pre-frozen 2000 permutations of the actual McMaster actor-by-opportunity network, exact per-actor yes totals and independent analytical null expectation check; remains within-study exploratory, no clean clone of ESBM v2. N85 source-guarded analytical KM/RMST test from 150k independent synthetic histories (no full ESBM original run); fixes quantified known survival censor issue.",
       "required_for_100": "Fresh clean-room deterministic replay, unit+property testing, code/data provenance, exposure-preserving strong nulls, CI validation and ready-to-run reproduction package."
     },
     {
@@ -85,20 +85,20 @@
   },
   "separate_metrics": {
     "AB_authorized_cumulative": 40,
-    "AB_valid_completed": 18,
-    "AB_credits_available": 22,
-    "AB_tranche_now_open_for_attempt": 3,
+    "AB_valid_completed": 19,
+    "AB_credits_available": 21,
+    "AB_tranche_now_open_for_attempt": 2,
     "AB_outside_tranche_reserved": 19,
     "CT2_ordinal": 7,
     "CT2_not_probability": true,
     "sources": 97,
     "priors": 30,
-    "updates": 133,
+    "updates": 134,
     "new_valid_cycles_this_turn": 2,
     "new_planning_cycles_this_turn": 0
   },
   "score_may_change_only_with_documented_milestone_evidence": true,
   "score_is_not_number_of_cycles": false,
   "last_evidence_commit_reference": "028a3276a2b73225b9baa65c077a1771c4fe1378",
-  "last_maturity_update": "N84_EXECUTED_STRONG_ACTOR_CONDITIONAL_NULL_NEGATIVE_NOT_2_3"
+  "last_maturity_update": "N85_SYNTHETIC_CENSORING_QA_ONLY"
 }
