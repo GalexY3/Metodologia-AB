@@ -3,7 +3,7 @@
   "project": "mercados-de-pareja",
   "date": "2026-10-28",
   "scope": "Retrospective provenance backfill from repository reports plus N56/N57 publisher audit. Original data never copied; not systematic or claim of accessing raw data for bibliography.",
-  "source_count": 73,
+  "source_count": 80,
   "sources": [
     {
       "id": "SRC001",
@@ -1525,7 +1525,105 @@
         "W6 N640 likely subset but mechanism/sampling undefined"
       ],
       "falsifier": "Acquire authentic baseline Stata bytes and official reference metadata, verify all four SHA and caseid_new uniqueness/join plus selection codes; freeze A–J and pre-outcome script before proper new hypothesis against Cox/RSF/DeepHit and independent fresh cohort."
+    },
+    {
+      "id": "SRC074",
+      "title": "Esteve et al. 2016, The End of Hypergamy: Global Trends and Implications",
+      "canonical_url": "https://doi.org/10.1111/padr.12012",
+      "source_type": "PEER_REVIEWED_OR_OFFICIAL_PRIOR_ART_DOCUMENTARY",
+      "verified_at": "2026-10-29",
+      "cycle_ids": [],
+      "contribution": "420 census/survey samples from 120 countries, 1960–2011; educational hypergamy trends and hypogamy; study itself reports 420 whereas full text describes 417 analytical samples in figure; do not assume exact denominator across analyses.",
+      "limits": "Descriptive educational spouse distributions, not stated preferences or dyadic exposure; 120 countries not 120 independent replications.",
+      "rights": "Paper public metadata/full text consulted; data reuse rights not established; author code MIT does not license IPUMS microdata.",
+      "raw_microdata_retrieved": false,
+      "new_independent_replication": false,
+      "AB_cycle_increment": 0
+    },
+    {
+      "id": "SRC075",
+      "title": "Bruch and Newman 2018, Aspirational pursuit of mates in online dating markets",
+      "canonical_url": "https://doi.org/10.1126/sciadv.aap9815",
+      "source_type": "PEER_REVIEWED_OR_OFFICIAL_PRIOR_ART_DOCUMENTARY",
+      "verified_at": "2026-10-29",
+      "cycle_ids": [],
+      "contribution": "Message network in four US cities: both sexes contact higher network-ranked desirability (average 25% relative), reply decreases with gap.",
+      "limits": "Network-derived desirability is not income, beauty, status or causal preference; messages are not impressions, reciprocal matches or durable unions.",
+      "rights": "Paper public metadata/full text consulted; data reuse rights not established; author code MIT does not license IPUMS microdata.",
+      "raw_microdata_retrieved": false,
+      "new_independent_replication": false,
+      "AB_cycle_increment": 0
+    },
+    {
+      "id": "SRC076",
+      "title": "Urbina Frye Lopus 2024, No End to Hypergamy when Considering the Full Married Population",
+      "canonical_url": "https://doi.org/10.1111/padr.12643",
+      "source_type": "PEER_REVIEWED_OR_OFFICIAL_PRIOR_ART_DOCUMENTARY",
+      "verified_at": "2026-10-29",
+      "cycle_ids": [],
+      "contribution": "16 Latin American countries 105 birth cohorts; hypergamy trends differ when denominator includes homogamous marriages, instead of conditioning on educationally unequal marriages.",
+      "limits": "Denominator estimand and educational categories differ from Esteve; results do not imply a universal empirical contradiction or causally observed individual preference.",
+      "rights": "Paper public metadata/full text consulted; data reuse rights not established; author code MIT does not license IPUMS microdata.",
+      "raw_microdata_retrieved": false,
+      "new_independent_replication": false,
+      "AB_cycle_increment": 0
+    },
+    {
+      "id": "SRC077",
+      "title": "Leesch Katrnak Skopek 2024, Structural opportunities or assortative mating?",
+      "canonical_url": "https://doi.org/10.1080/14616696.2023.2290238",
+      "source_type": "PEER_REVIEWED_OR_OFFICIAL_PRIOR_ART_DOCUMENTARY",
+      "verified_at": "2026-10-29",
+      "cycle_ids": [],
+      "contribution": "Administrative/vital statistics marriages 2000–2020 Sweden Czech Republic Italy; decomposition of opportunity composition vs nonrandom sorting; country-dependent contributions.",
+      "limits": "Nonrandom matching component is not identified as pure preferences; married selected couples only, no complete search/offer risk set.",
+      "rights": "Paper public metadata/full text consulted; data reuse rights not established; author code MIT does not license IPUMS microdata.",
+      "raw_microdata_retrieved": false,
+      "new_independent_replication": false,
+      "AB_cycle_increment": 0
+    },
+    {
+      "id": "SRC078",
+      "title": "Giesselmann et al. 2026, Female Education Expansion in Switzerland and Marriage Market Dynamics",
+      "canonical_url": "https://doi.org/10.26034/cm.sjs.2026.8867",
+      "source_type": "PEER_REVIEWED_OR_OFFICIAL_PRIOR_ART_DOCUMENTARY",
+      "verified_at": "2026-10-29",
+      "cycle_ids": [],
+      "contribution": "Swiss Household Panel 1999–2024: authors report no highly educated female marriage squeeze, increased homogamy among highly educated men and upward partnering medium-educated men; income hypergamy persists.",
+      "limits": "Abstract/metadata checked, no original respondent-level microdata or reanalysis; one Swiss panel and marriage-conditioned selection; not proof of universal absence of squeeze.",
+      "rights": "Paper public metadata/full text consulted; data reuse rights not established; author code MIT does not license IPUMS microdata.",
+      "raw_microdata_retrieved": false,
+      "new_independent_replication": false,
+      "AB_cycle_increment": 0
+    },
+    {
+      "id": "SRC079",
+      "title": "Grebol Machelett Stuhler Villanueva 2026, Assortative Mating Inequality and Rising Educational Mobility in Spain",
+      "canonical_url": "https://www.bde.es/wbe/es/publicaciones/analisis-economico-investigacion/documentos-trabajo/assortative-mating-inequality-and-rising-educational-mobility-in-spain.html",
+      "source_type": "PEER_REVIEWED_OR_OFFICIAL_PRIOR_ART_DOCUMENTARY",
+      "verified_at": "2026-10-29",
+      "cycle_ids": [],
+      "contribution": "Banco de España working paper 2606 18 Feb 2026; declining educational spouse correlation and educational inequality in Spain; regional association with intergenerational mobility.",
+      "limits": "Working paper, educational correlations and regional decomposition not causal proof of partner choice; cannot infer individual search preference.",
+      "rights": "Paper public metadata/full text consulted; data reuse rights not established; author code MIT does not license IPUMS microdata.",
+      "raw_microdata_retrieved": false,
+      "new_independent_replication": false,
+      "AB_cycle_increment": 0
+    },
+    {
+      "id": "SRC080",
+      "title": "Urbina Frye Lopus replication code for No End to Hypergamy",
+      "canonical_url": "https://github.com/danielaurbina/Noend_hypergamy",
+      "source_type": "AUTHOR_REPLICATION_CODE_NO_MICRODATA",
+      "verified_at": "2026-10-29",
+      "cycle_ids": [],
+      "contribution": "Authors' original code repo contains Stata Datacleaning_example.do and R scripts Fig1–Fig4, README points to IPUMS International original census microdata, MIT software license.",
+      "limits": "Source code is not a new independent sample; IPUMS microdata access subject to user authorization and terms, original bytes not acquired or reexecuted.",
+      "rights": "Paper public metadata/full text consulted; data reuse rights not established; author code MIT does not license IPUMS microdata.",
+      "raw_microdata_retrieved": false,
+      "new_independent_replication": false,
+      "AB_cycle_increment": 0
     }
   ],
-  "last_added_campaign": "POST_N82_ACTUAL_STATA_SUPPLEMENT_BYTES_SCHEMA_GATE_NONCYCLE"
+  "last_added_campaign": "ABR_HYPERGAMY_LITERATURE_NONCYCLE_20261029"
 }
