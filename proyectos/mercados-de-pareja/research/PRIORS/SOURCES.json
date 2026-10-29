@@ -3,7 +3,7 @@
   "project": "mercados-de-pareja",
   "date": "2026-10-28",
   "scope": "Retrospective provenance backfill from repository reports plus N56/N57 publisher audit. Original data never copied; not systematic or claim of accessing raw data for bibliography.",
-  "source_count": 89,
+  "source_count": 91,
   "sources": [
     {
       "id": "SRC001",
@@ -1774,7 +1774,43 @@
       "access_status": "RIGHTS_RELEASE_AND_BINARY_OUTCOME_UNVERIFIED_NO_MICRODATA_FETCHED",
       "AB_cycle_increment": 0,
       "falsifier": "Locate legally authorized institutional release that identifies both paired decisions and observed offered pairs, participant identifiers, temporal ordering, privacy and terms; SHA256 original file plus design under strong prior-art controls before outcomes."
+    },
+    {
+      "id": "SRC090",
+      "title": "Baxter et al. (2022), Initial impressions of compatibility and mate value predict later dating and romantic interest",
+      "canonical_url": "https://doi.org/10.1073/pnas.2206925119",
+      "public_abstract": "https://pubmed.ncbi.nlm.nih.gov/36322750/",
+      "public_full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9659375/",
+      "university_repository": "https://escholarship.org/uc/item/1mv7f02n",
+      "published_at": "2022-11-02",
+      "verified_at": "2026-10-29",
+      "cycle_ids": [],
+      "source_type": "ORIGINAL_THREE_SPEED_DATING_COHORTS_LONGITUDINAL_MATCH_FOLLOWUP_PREEXISTING_PRIOR_ART_NO_MICRODATA",
+      "contribution": "Authors report 3 original speed-dating studies, N=559 respondents and more than 6600 encounters, reciprocal binary yes choices after actual meetings, plus followups of matched pairs. Studies 1 and 2 Northwestern speed dating include 2005/2007 collections; third study was Anime North 2015 Toronto, in which the after-date yes/no produced mutual matches and 12 weekly followup surveys track further contact/romantic initiation. Social Relations Model separates actor's general desire, target partner consensus and relationship-specific attraction: partner and relationship effects predicted later contact and romantic involvement in authors' original meta-analyses. Independent of this project's code and novel scientific-prior-art gate for ESBM claims about first-meeting match and subsequent courtship.",
+      "independence_caveat": "Two Northwestern 2005/2007 component cohorts appear to overlap historically with SRC084 Joel/Eastwick/Finkel speed dating archives; do not call all three entirely new independent cohorts or independent corroboration without participant/event matching. 2015 Anime North is a distinct collection, but reused by an earlier publication noted in article. Three components in one paper are not automatically three independently acquired new datasets for project.",
+      "access_status": "PAPER_OPEN_ANONYMIZED_EXCEL_DEPOSIT_REFERENCED_NO_DATA_BYTES_AND_NO_PERMISSIONS_VERIFIED",
+      "rights": "PNAS paper CC BY4, not automatic license for participant-level Excel; authors state deposit in OSF 10.17605/OSF.IO/3ZYN6. Explicit user rule forbids repeating OSF web/API attempts: did not attempt them. No alternative independently verifiable authorized raw file identified, no SHA256 or original rows.",
+      "limitations": "Source report not our replication or causal estimate. Followup is conditional on initial mutual match and thus selected; association cannot identify causal effect of initial romantic attraction or prove durable stable unions. 2015 festival sample selection and differences in gender/orientation and calendar across cohorts challenge transport. No independent ESBM holdout run, no novelty by repeating social relations model.",
+      "falsifier": "Acquire legally licensed original paired yes/no and follow-up records with data-specific rights and stable event IDs via a permitted new route; freeze distinct mechanistic claim and competent SRM/partner/actor controls plus independent cohort holdout before reading outcomes.",
+      "AB_cycle_increment": 0
+    },
+    {
+      "id": "SRC091",
+      "title": "Matz, Peters, Cerf et al. (2026), Large language models can detect verbal indicators of romantic attraction",
+      "canonical_url": "https://doi.org/10.1038/s41598-026-52308-x",
+      "full_text": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13350872/",
+      "published_at": "2026-05-11",
+      "verified_at": "2026-10-29",
+      "cycle_ids": [],
+      "source_type": "RECENT_ORIGINAL_ANALYSIS_OF_EXISTING_2007_NORTHWESTERN_SPEED_DATING_VIDEO_TRANSCRIPT_COHORT_STRONG_PRIOR_ART",
+      "contribution": "Published research evaluated 964 transcripts with identifiable speed-date endpoints and compared LLM judgments with human observers and the dater's own estimates; r about 0.12–0.23 for predicted date outcomes in original study. Historical parent event: 1,039 dates from 187 undergraduates (93 women, 94 men) participating in eight 2007 Northwestern speed-dating events, of which 964 were linked to transcripts. Authors refer to actual mutual exchanges of contact information; more detailed language/behavior baselines already exist for match prediction.",
+      "independence_caveat": "The exact published 187 participants and eight 2007 events match metadata of SRC084 Joel/Eastwick/Finkel's 2007 study. Treat as strongly likely SAME Northwestern source cohort, not new independent sample, pending raw ID/event audit. Baxter 2022 also includes Northwestern cohorts with probable overlap. This article is new prior art of model evaluation, not novel human-data source in this project.",
+      "access_status": "PAPER_AVAILABLE_DATA_CODE_DECLARED_ON_OSF_NOT_VISITED_NO_RAW_ROWS",
+      "rights": "Article CC BY licensing does not establish microdata/transcript/video rights. Project materials stated to be on OSF, which has not been contacted in this continuation; no legal reuse license for transcripts or videos authenticated.",
+      "limitations": "Prediction r is association; no intervention on language, randomization of who speaks to whom, original external test against new people or independent platform verified. Published internal splits should not be confused with independent study; LLM familiarity with pre-2007 language may be a transport concern but no own test.",
+      "falsifier": "Novel temporal dyadic language claim needs new consented and rights-cleared corpus with independent actors, sessions and external venue plus strong human, SRM, LIWC, RF and language baselines, prereg and code hash pre-outcome.",
+      "AB_cycle_increment": 0
     }
   ],
-  "last_added_campaign": "ABR_MNM_MULTIMEDIATE_ACCESS_GATE_20261029_NONCYCLE"
+  "last_added_campaign": "ABR_BAXTER_MATZ_DUPLICATION_GATE_20261029_NONCYCLE"
 }

@@ -4,7 +4,7 @@
   "date": "2026-10-28",
   "mode": "append-only logical, versioned by Git commits",
   "reconstructed_from_documents": "Retrospective backfill, not preregistration. Old before values NOT_RECORDED unless documented explicitly.",
-  "source_coverage": "89 sources, 30 priors, 117 updates. Two original human speed-dating cohort descriptions with access gates: SRC088 TU Delft MatchNMingle EULA signed and SRC089 MultiMediate online dates release/rights unverified. No new microdata, no N83.",
+  "source_coverage": "91 sources / 30 priors / 120 updates. SRC090 Baxter 2022 cross-stage real bilateral yes and followup published; SRC091 Matz 2026 964 transcripts likely 2007 Northwestern source overlapping SRC084. No non-OSF licensed raw data for N83.",
   "events": [
     {
       "id": "U001",
@@ -2993,7 +2993,77 @@
       "prior_probability_before": null,
       "prior_probability_after": null,
       "prereg_status": "NO_N83_PREREG_STOP_R5"
+    },
+    {
+      "id": "U118",
+      "prior_id": "P-UNION-DURATION",
+      "source_ids": [
+        "SRC090"
+      ],
+      "cycle_ids": [],
+      "before": "CHALLENGED",
+      "after": "CHALLENGED",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "what_the_sources_contribute": "Baxter 2022 three cohorts, 559 participants, 6600+ dates, yes/yes matches and followup post-event, 2015 Anime North 12-week followup of matched couples; results of others, not ours.",
+      "why_this_updates_or_checks_prior": "Already documents link from real initial attraction to later contact. Existing P-UNION-DURATION remains CHALLENGED because no causal identification or evidence that more initial contacts yield durable unions.",
+      "limits": "Followups only after mutual matches; no time-at-risk for all pairings; samples overlapping existing studies; deposited files on OSF off-limits, no raw rights, data or SHA.",
+      "falsifier_or_followup": "Locate actual original participant-level opportunity exposure and linked two binary decisions with verified data rights and SHA256 through a non-OSF route; separately establish novel estimand vs original SRM/followup and language baselines, pre-outcome prereg A–J and SHA code, independent other-cohort holdout. Without these, STOP_R5.",
+      "evidence_type": "ORIGINAL_PUBLISHED_PRIOR_ART_AND_COHORT_DEDUP_ACCESS_GATE_NONCYCLE",
+      "recorded_at": "2026-10-29",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null,
+      "prereg_status": "NO_N83_PREREG_STOP_R5"
+    },
+    {
+      "id": "U119",
+      "prior_id": "P-INTERACTION-EXPRESSIVE",
+      "source_ids": [
+        "SRC091"
+      ],
+      "cycle_ids": [],
+      "before": "INDEPENDENT_EXTERNAL_RANDOMIZED_EXPERIMENT_CONDITIONAL",
+      "after": "INDEPENDENT_EXTERNAL_RANDOMIZED_EXPERIMENT_CONDITIONAL",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "what_the_sources_contribute": "Matz 2026 original published transcription/LLM-vs-human prediction of matching after 964 speed dates.",
+      "why_this_updates_or_checks_prior": "Strengthens alternative natural-language baseline for any future attempt to identify dyad-specific cues, but does not refute or directly replicate smile-manipulation effect; prior status remains conditionally external experiment.",
+      "limits": "2007 Northwestern cohort likely same as SRC084; no new independent participants or external validation; code/data on OSF prohibited from attempt, no original transcripts, raw file licenses unverified.",
+      "falsifier_or_followup": "Locate actual original participant-level opportunity exposure and linked two binary decisions with verified data rights and SHA256 through a non-OSF route; separately establish novel estimand vs original SRM/followup and language baselines, pre-outcome prereg A–J and SHA code, independent other-cohort holdout. Without these, STOP_R5.",
+      "evidence_type": "ORIGINAL_PUBLISHED_PRIOR_ART_AND_COHORT_DEDUP_ACCESS_GATE_NONCYCLE",
+      "recorded_at": "2026-10-29",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null,
+      "prereg_status": "NO_N83_PREREG_STOP_R5"
+    },
+    {
+      "id": "U120",
+      "prior_id": "P-NOVELTY",
+      "source_ids": [
+        "SRC090",
+        "SRC091"
+      ],
+      "cycle_ids": [],
+      "before": "STRONG_PRIOR_ART",
+      "after": "STRONG_PRIOR_ART",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "what_the_sources_contribute": "Two separate publications add stronger prior art for contact after initial match and language-based inference, but partly overlapping earlier original Northwestern 2007 cohort.",
+      "why_this_updates_or_checks_prior": "Scientific contribution from ESBM cannot be generic actor/partner/dyad/followup SRM or generic LLM detection; status already STRONG_PRIOR_ART and remains unchanged.",
+      "limits": "No new executed discriminating hypothesis, licensed original bytes, fully verified cohort IDs, independent holdout or pre-outcome code. Reused published cohort is not independent sample.",
+      "falsifier_or_followup": "Locate actual original participant-level opportunity exposure and linked two binary decisions with verified data rights and SHA256 through a non-OSF route; separately establish novel estimand vs original SRM/followup and language baselines, pre-outcome prereg A–J and SHA code, independent other-cohort holdout. Without these, STOP_R5.",
+      "evidence_type": "ORIGINAL_PUBLISHED_PRIOR_ART_AND_COHORT_DEDUP_ACCESS_GATE_NONCYCLE",
+      "recorded_at": "2026-10-29",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null,
+      "prereg_status": "NO_N83_PREREG_STOP_R5"
     }
   ],
-  "last_campaign": "ABR_MNM_MULTIMEDIATE_ACCESS_GATE_20261029_NONCYCLE"
+  "last_campaign": "ABR_BAXTER_MATZ_DUPLICATION_GATE_20261029_NONCYCLE"
 }

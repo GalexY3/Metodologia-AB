@@ -51,9 +51,11 @@
         "SRC079",
         "SRC083",
         "SRC084",
-        "SRC085"
+        "SRC085",
+        "SRC090",
+        "SRC091"
       ],
-      "last_update_id": "U113",
+      "last_update_id": "U120",
       "uncertainty": "Not probabilistically calibrated; evidence heterogeneous and some sources only metadata",
       "next_falsifier_or_test": "Find a preregistered prediction NOT covered by published mating-market literature and independently validate",
       "numeric_probability": null,
@@ -70,9 +72,10 @@
         "U096",
         "U102",
         "U112",
-        "U113"
+        "U113",
+        "U120"
       ],
-      "latest_evidence_summary": "Eastwick et al. 2025 preregistered 4542 real blind dates find slight attraction to younger partners for both sexes; Moreno et al. 2026 use SAME Tawkify sample for modality and assert OSF data availability, not independent replication. Age gap in formed couples cannot be equated to women's older-partner attraction. Any age-hypergamy claim must beat this prior art and distinguish arranged-date selection.",
+      "latest_evidence_summary": "Baxter 2022 already tests partner, actor and relationship-specific attraction to later contact; Matz 2026 already benchmarks language of natural dates and LLM judges against humans. Both materially constrain generic ESBM novelty and make new out-of-cohort falsifiable claim and parity baselines necessary; cohorts cannot be double-counted.",
       "last_revised_at": "2026-10-29"
     },
     {
@@ -651,9 +654,10 @@
         "SRC068",
         "SRC069",
         "SRC070",
-        "SRC071"
+        "SRC071",
+        "SRC090"
       ],
-      "last_update_id": "U095",
+      "last_update_id": "U118",
       "uncertainty": "Qualitative, context-dependent; no calibrated numerical probabilities",
       "next_falsifier_or_test": "Medidas longitudinales de bienestar y duración, con censura y controles de cambios de pareja.",
       "numeric_probability": null,
@@ -662,9 +666,10 @@
         "U039",
         "U049",
         "U092",
-        "U095"
+        "U095",
+        "U118"
       ],
-      "latest_evidence_summary": "Prior predictive breakup models exist for same 2009 cohort, field novelty weakened; no own hazard or causal effect computed.",
+      "latest_evidence_summary": "Baxter et al. 2022 original three speed-date cohorts add explicit two-person yes/no and followup for matched pairs, including 2015 Anime North 12-week followup, but main estimate is association conditional on mutual match, not causal stable-union duration; no original bytes accessed.",
       "last_revised_at": "2026-10-29"
     },
     {
@@ -772,18 +777,20 @@
       "rationale": "Arias-Sarah et al. 2024 PNAS, 31 singles/60 video dates, manipulated smile display crossed by two participants; strongest positive romantic-interest difference for both boosted smiles vs mixed conditions, after pre ratings and social relation effects. Manipulation is a static smile-level shift, NOT enforced time-series synchrony. Does not imply any arbitrary congruence boosts attraction, or stable couple formation. Published chi-square df/p numerical inconsistency and few dyads require caution before quantitative import.",
       "evidence_sources": [
         "SRC056",
-        "SRC057"
+        "SRC057",
+        "SRC091"
       ],
-      "last_update_id": "U066",
+      "last_update_id": "U119",
       "uncertainty": "Small 31-person heterosexual volunteer video setting; 60 encounter units, reused participants; no publication-usable raw dataset accessed; effect conditional on authors' SRM/GLMM and possible df misreporting. No independent replication or Spanish transport.",
       "next_falsifier_or_test": "Preregister an external sample contrasting both-boosted vs both-reduced vs mixed display across actors with fixed observed opportunity sets and robust cluster randomization; post–pre subjective attraction and actual mutual choice separately; do not manipulate real users covertly without research ethics/consent.",
       "numeric_probability": null,
       "CT2_is_not_this_prior": true,
       "update_ids": [
-        "U066"
+        "U066",
+        "U119"
       ],
-      "latest_evidence_summary": "Published original randomized micro-signal experiment supports condition-specific in-interaction change in attraction ratings, not temporal co-smiling mechanism or durable union.",
-      "last_revised_at": "2026-10-28"
+      "latest_evidence_summary": "Matz et al. 2026 new language-transcript predictive prior art for actual contact exchange, 964 linked dyad transcripts; underlying Northwestern 2007 187 respondents/eight events strongly match SRC084 2007 and likely overlap SRC090. No independent sample or causal language intervention.",
+      "last_revised_at": "2026-10-29"
     },
     {
       "id": "P-ACTION-SEMANTICS",
@@ -841,10 +848,10 @@
   ],
   "audit": {
     "all_priors_linked": true,
-    "source_ids_linked": 89,
-    "registered_sources": 89,
-    "update_events": 117,
+    "source_ids_linked": 91,
+    "registered_sources": 91,
+    "update_events": 120,
     "counts_as_new_AB_cycle": false,
-    "last_update": "2026-10-29 MATCHNMINGLE_MULTIMEDIATE_NONCYCLE_DISTINCT_HUMAN_DATA_RIGHTS_AND_OUTCOME_GATES"
+    "last_update": "2026-10-29 BAXTER_REAL_BILATERAL_LONGITUDINAL_PRIOR_ART_AND_MATZ_2007_REUSE_DEDUP_NONCYCLE"
   }
 }

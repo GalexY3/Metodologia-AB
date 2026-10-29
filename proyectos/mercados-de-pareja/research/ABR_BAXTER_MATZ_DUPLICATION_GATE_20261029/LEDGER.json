@@ -1,0 +1,100 @@
+{
+  "schema": "ab.research.noncycle_material_gate.v1",
+  "project": "mercados-de-pareja",
+  "branch": "research/ab-r-mercados-pareja-20261028",
+  "campaign": "ABR_ESBM20_20261028",
+  "date": "2026-10-29",
+  "activity": "BAXTER_LONGITUDINAL_ORIGINAL_AND_MATZ_2007_DUPLICATION_PRIOR_ART_NONCYCLE",
+  "type": "POST_HOC_DOCUMENTARY_AUDIT_NOT_AB_A_J",
+  "status": "STOP_R5",
+  "parent_valid_cycle": "N82",
+  "prior_commit": "6171b0348d033bd1fa377d2784f98b52aac9a2cd",
+  "authorized_total": 20,
+  "valid_total": 16,
+  "remaining": 4,
+  "unstarted_ids": [
+    "N83",
+    "N84",
+    "N85",
+    "N86"
+  ],
+  "activity_counts": {
+    "valid_AB": 0,
+    "invalid_AB": 0,
+    "planning_AB": 0,
+    "documentary_audits": 1,
+    "human_original_rows_read": 0,
+    "models_run": 0,
+    "synthetic_simulations_run": 0,
+    "independent_validation_executed": 0
+  },
+  "N83": {
+    "state": "NOT_OPENED",
+    "prereg_commit": null,
+    "code_sha256_frozen": null,
+    "outcomes_inspected": false,
+    "external_holdout": "NOT_EXECUTED"
+  },
+  "ct2": {
+    "ordinal": 7,
+    "not_probability": true,
+    "new_point": false,
+    "last_point": "N82",
+    "trajectory_path": "../ABR_SSJY_STAGE_N82_20261029/CT2_TRAJECTORY.json",
+    "chart_path": "../ABR_SSJY_STAGE_N82_20261029/CT2.svg"
+  },
+  "documentary_counts": {
+    "sources": 91,
+    "priors": 30,
+    "updates": 120,
+    "added_sources": [
+      "SRC090",
+      "SRC091"
+    ],
+    "prior_events": [
+      "U118",
+      "U119",
+      "U120"
+    ],
+    "prior_status_changes": 0
+  },
+  "cohort_overlap": {
+    "Baxter2022": "Northwestern 2005/2007 components possibly share original participants with SRC084; Anime North 2015 separate collection but used in prior studies",
+    "Matz2026": "2007 Northwestern N187 eight events metadata match SRC084 2007: strongly probable overlap; participant linkage not independently confirmed"
+  },
+  "rights": {
+    "source_data_licenses": "NOT_VERIFIED",
+    "original_bytes_retrieved": false,
+    "original_sha256": null,
+    "OSF_web_or_api_attempted": false,
+    "author_contact_attempted": false,
+    "licences_accepted": false,
+    "SSJY_used": false,
+    "personal_microdata_published": false
+  },
+  "scientific_status": {
+    "N1_new": 0,
+    "N2_new": 0,
+    "N3_new": 0,
+    "causal_validation_claimed": false,
+    "clean_clone": "NOT_VERIFIED"
+  },
+  "R1_to_R5": {
+    "R1": "Meeting yes/no vs mutual match vs later contact vs durable union, selected followup",
+    "R2": "Competent actor/partner/dyadic SRM, event/order, exposure, attrition, timing and language/behavior baselines",
+    "R3": "No N83 prereg nor SHA lock, external holdout absent",
+    "R4": "Cohort re-use, selection, postmatching followup, no causal transfer",
+    "R5": "Insufficient legal original data and independent holdout; STOP_R5"
+  },
+  "excluded_false_routes": [
+    "OSF forbidden web/API",
+    "Essex previous failed",
+    "Stanford previous failed",
+    "Gist previous failed",
+    "Columbia derived clones",
+    "synthetic dating datasets",
+    "Spain/UK fake-profile conjoint (unilateral exposure, no real counterpart)"
+  ],
+  "report": "REPORT.md",
+  "next_eligible_event": "Verified new independent original dataset with explicit data reuse rights and bilateral binary decisions+opportunity prior to freeze–run"
+}
