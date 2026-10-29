@@ -1,0 +1,284 @@
+{
+  "schema": "ABH.PREEXEC.BLOCK_C.v1",
+  "date": "2026-10-29",
+  "branch": "research/ab-h-esbm-integrated-20261029",
+  "authorized": 20,
+  "valid_completed": 10,
+  "remaining_before": 10,
+  "cycles": [
+    {
+      "id": "N117",
+      "parent": "N116",
+      "mode": "DRIFT_D1_SCHEDULER_TEMPORAL",
+      "D": {
+        "source": "esbm_schedule_adapter.py v4 to be frozen separately",
+        "counterfactual": "in-memory original v3 imported with identical source SHA for N118",
+        "time_shock_formula": "u2=(u_original + slot*0.6180339887498948) mod 1; deterministic synthetic transform not independent real sample"
+      },
+      "A": {
+        "question": "Generalize joint meeting scheduler to two rounds/period with max one encounter per actor per round and unique dyads per period",
+        "estimand": "same fictitious 144-agent risk sets, single period vs two sequential appointment rounds; complete simulated 16-tick path"
+      },
+      "B": {
+        "rivals": [
+          "one-slot baseline",
+          "two-slot coordinated encounters",
+          "fixed hazard vs private learning changes",
+          "duplicate-meeting artefact"
+        ],
+        "H_other": "within-period shock reuse may generate correlations under deterministic transformation"
+      },
+      "C": {
+        "test": "6 seeds × 2 ticks, max mode 1 and 2 slots: 24 risksets, 0 duplicates and per actor count ≤slot budget; report expectations not human behavior",
+        "preregistered_seeds": [
+          101,
+          211,
+          307,
+          401,
+          503,
+          601
+        ]
+      },
+      "E": "NOT_EXECUTED",
+      "F": {
+        "adversary": "verify no repeat dyad, per-slot one-contact, immutable legacy, same acceptance shocks, no count inflation"
+      },
+      "G": {
+        "holdout": "no human holdout",
+        "novelty": "none claimed"
+      },
+      "H": {
+        "prior": "one formal toy synthetic P-SCHEDULE only; no human prior posterior"
+      },
+      "I": {
+        "scientific_grade": "0/3",
+        "CT2": 7,
+        "maturity": "not increased until verified deliverable"
+      },
+      "J": {
+        "if_pass": "N118",
+        "if_fail": "STOP or prereg REPAIR, preserve invalid attempt"
+      }
+    },
+    {
+      "id": "N118",
+      "parent": "N117",
+      "mode": "BRANCH_D0",
+      "D": {
+        "source": "esbm_schedule_adapter.py v4 to be frozen separately",
+        "counterfactual": "in-memory original v3 imported with identical source SHA for N118",
+        "time_shock_formula": "u2=(u_original + slot*0.6180339887498948) mod 1; deterministic synthetic transform not independent real sample"
+      },
+      "A": {
+        "question": "Check all original one-slot modes remain exactly unchanged against prior frozen adapter v3",
+        "estimand": "same fictitious 144-agent risk sets, single period vs two sequential appointment rounds; complete simulated 16-tick path"
+      },
+      "B": {
+        "rivals": [
+          "one-slot baseline",
+          "two-slot coordinated encounters",
+          "fixed hazard vs private learning changes",
+          "duplicate-meeting artefact"
+        ],
+        "H_other": "within-period shock reuse may generate correlations under deterministic transformation"
+      },
+      "C": {
+        "test": "two seeds ×3 modes paired 16-tick full result equality after deleting scenario name; original v3 file SHA fixed",
+        "preregistered_seeds": [
+          101,
+          211,
+          307,
+          401,
+          503,
+          601
+        ]
+      },
+      "E": "NOT_EXECUTED",
+      "F": {
+        "adversary": "verify no repeat dyad, per-slot one-contact, immutable legacy, same acceptance shocks, no count inflation"
+      },
+      "G": {
+        "holdout": "no human holdout",
+        "novelty": "none claimed"
+      },
+      "H": {
+        "prior": "one formal toy synthetic P-SCHEDULE only; no human prior posterior"
+      },
+      "I": {
+        "scientific_grade": "0/3",
+        "CT2": 7,
+        "maturity": "not increased until verified deliverable"
+      },
+      "J": {
+        "if_pass": "N119",
+        "if_fail": "STOP or prereg REPAIR, preserve invalid attempt"
+      }
+    },
+    {
+      "id": "N119",
+      "parent": "N118",
+      "mode": "BRANCH_D0",
+      "D": {
+        "source": "esbm_schedule_adapter.py v4 to be frozen separately",
+        "counterfactual": "in-memory original v3 imported with identical source SHA for N118",
+        "time_shock_formula": "u2=(u_original + slot*0.6180339887498948) mod 1; deterministic synthetic transform not independent real sample"
+      },
+      "A": {
+        "question": "Measure exposure increase and saturation when slots 1→2 at identical start-of-tick risk sets",
+        "estimand": "same fictitious 144-agent risk sets, single period vs two sequential appointment rounds; complete simulated 16-tick path"
+      },
+      "B": {
+        "rivals": [
+          "one-slot baseline",
+          "two-slot coordinated encounters",
+          "fixed hazard vs private learning changes",
+          "duplicate-meeting artefact"
+        ],
+        "H_other": "within-period shock reuse may generate correlations under deterministic transformation"
+      },
+      "C": {
+        "test": "6 seeds × 2 ticks × 3 modes; two slots expected count ≥one slot, at most two per actor; record marginal and shared choice budget effects, no automatic 2x claim",
+        "preregistered_seeds": [
+          101,
+          211,
+          307,
+          401,
+          503,
+          601
+        ]
+      },
+      "E": "NOT_EXECUTED",
+      "F": {
+        "adversary": "verify no repeat dyad, per-slot one-contact, immutable legacy, same acceptance shocks, no count inflation"
+      },
+      "G": {
+        "holdout": "no human holdout",
+        "novelty": "none claimed"
+      },
+      "H": {
+        "prior": "one formal toy synthetic P-SCHEDULE only; no human prior posterior"
+      },
+      "I": {
+        "scientific_grade": "0/3",
+        "CT2": 7,
+        "maturity": "not increased until verified deliverable"
+      },
+      "J": {
+        "if_pass": "N120",
+        "if_fail": "STOP or prereg REPAIR, preserve invalid attempt"
+      }
+    },
+    {
+      "id": "N120",
+      "parent": "N119",
+      "mode": "BRANCH_D0",
+      "D": {
+        "source": "esbm_schedule_adapter.py v4 to be frozen separately",
+        "counterfactual": "in-memory original v3 imported with identical source SHA for N118",
+        "time_shock_formula": "u2=(u_original + slot*0.6180339887498948) mod 1; deterministic synthetic transform not independent real sample"
+      },
+      "A": {
+        "question": "Test conditional rejection learning under two rounds without pretending causal human response",
+        "estimand": "same fictitious 144-agent risk sets, single period vs two sequential appointment rounds; complete simulated 16-tick path"
+      },
+      "B": {
+        "rivals": [
+          "one-slot baseline",
+          "two-slot coordinated encounters",
+          "fixed hazard vs private learning changes",
+          "duplicate-meeting artefact"
+        ],
+        "H_other": "within-period shock reuse may generate correlations under deterministic transformation"
+      },
+      "C": {
+        "test": "seeds 101,211, two-slot pair_max, private learning ON vs OFF: 4 full runs, same shocks, check stock-flow, compare outcomes and note endogenous divergence",
+        "preregistered_seeds": [
+          101,
+          211,
+          307,
+          401,
+          503,
+          601
+        ]
+      },
+      "E": "NOT_EXECUTED",
+      "F": {
+        "adversary": "verify no repeat dyad, per-slot one-contact, immutable legacy, same acceptance shocks, no count inflation"
+      },
+      "G": {
+        "holdout": "no human holdout",
+        "novelty": "none claimed"
+      },
+      "H": {
+        "prior": "one formal toy synthetic P-SCHEDULE only; no human prior posterior"
+      },
+      "I": {
+        "scientific_grade": "0/3",
+        "CT2": 7,
+        "maturity": "not increased until verified deliverable"
+      },
+      "J": {
+        "if_pass": "N121",
+        "if_fail": "STOP or prereg REPAIR, preserve invalid attempt"
+      }
+    },
+    {
+      "id": "N121",
+      "parent": "N120",
+      "mode": "FOCUS_D1_DURATION",
+      "D": {
+        "source": "esbm_schedule_adapter.py v4 to be frozen separately",
+        "counterfactual": "in-memory original v3 imported with identical source SHA for N118",
+        "time_shock_formula": "u2=(u_original + slot*0.6180339887498948) mod 1; deterministic synthetic transform not independent real sample"
+      },
+      "A": {
+        "question": "Distinguish formation flow, active stock and censored durations under two-slot scheduling",
+        "estimand": "same fictitious 144-agent risk sets, single period vs two sequential appointment rounds; complete simulated 16-tick path"
+      },
+      "B": {
+        "rivals": [
+          "one-slot baseline",
+          "two-slot coordinated encounters",
+          "fixed hazard vs private learning changes",
+          "duplicate-meeting artefact"
+        ],
+        "H_other": "within-period shock reuse may generate correlations under deterministic transformation"
+      },
+      "C": {
+        "test": "seeds 101,211; hazard .4/1/1.75, 6 full runs; exact stock balance and documented right censoring, no infer human duration",
+        "preregistered_seeds": [
+          101,
+          211,
+          307,
+          401,
+          503,
+          601
+        ]
+      },
+      "E": "NOT_EXECUTED",
+      "F": {
+        "adversary": "verify no repeat dyad, per-slot one-contact, immutable legacy, same acceptance shocks, no count inflation"
+      },
+      "G": {
+        "holdout": "no human holdout",
+        "novelty": "none claimed"
+      },
+      "H": {
+        "prior": "one formal toy synthetic P-SCHEDULE only; no human prior posterior"
+      },
+      "I": {
+        "scientific_grade": "0/3",
+        "CT2": 7,
+        "maturity": "not increased until verified deliverable"
+      },
+      "J": {
+        "if_pass": "audit and propose next stage",
+        "if_fail": "STOP or prereg REPAIR, preserve invalid attempt"
+      }
+    }
+  ],
+  "external_R5": "STOP",
+  "source_original_SHA256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+  "technical_v3_SHA256": "5730fd224f86fedb5626e7ee38743fce3a0c95955c031301694e48068f5bbaa7",
+  "protection": "No SSJY, SRC104, contact, licence acceptance, merge, or human causal inference."
+}
