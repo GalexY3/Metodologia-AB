@@ -1,0 +1,415 @@
+{
+  "schema": "ABH.AJ.N127_N146_BLOCK_D.v1",
+  "date": "2026-10-29",
+  "branch": "research/ab-h-esbm-event-api-20261029",
+  "prereg_path": "proyectos/mercados-de-pareja/research/ABH_N127_N146_20261029/PREREG_D.json",
+  "code_freeze_commits": [
+    "ede5bb9a954c2bbce9ad26cc8fb59c8f5135174a",
+    "4ca9d95fb1016789d13c478b6843f961939acb11",
+    "0672050bbd62f16950c55206d985ae6cf31d85f2"
+  ],
+  "outcome_index_path": "proyectos/mercados-de-pareja/research/ABH_N127_N146_20261029/RESULTS_INDEX.json",
+  "human_external_evidence": false,
+  "grade_0_3": "0/3",
+  "CT2_before": 7,
+  "CT2_after": 7,
+  "substantive_outcome_limit": "model-conditional longitudinal events, right censoring and quality proxy",
+  "children": [
+    {
+      "id": "N142",
+      "parent": "N141",
+      "mode": "ADVERSARIAL_INPUT",
+      "drift_D": {
+        "code_hash": "GitHub freeze before any outcomes",
+        "original_ESBM_sha": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+      },
+      "A": {
+        "question": "Reject injected invalid event schedules at the event boundary before any stage updates",
+        "estimand": "Software invariants or negative identity audit, not human outcomes"
+      },
+      "B": {
+        "null": "Source unchanged or actor relabel should have no effect under symmetric shocks",
+        "rivals": [
+          "old networkx label-sensitive rewire",
+          "rank-canonical degree-preserving rewire",
+          "broken scheduler input"
+        ],
+        "H0": "Any discrepancy must be retained"
+      },
+      "C": {
+        "precommitted_test": "N24×4 synthetic: self/negative/out-of-range/ineligible and repeated dyad, plus slot1 overcount; all rejected with ValueError; no silent result contamination.",
+        "seed_values": "101,211/legacy 101–601"
+      },
+      "D": {
+        "code_hash": "GitHub freeze before any outcomes",
+        "original_ESBM_sha": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+        "source_code_commits": [
+          "ede5bb9a954c2bbce9ad26cc8fb59c8f5135174a",
+          "4ca9d95fb1016789d13c478b6843f961939acb11",
+          "0672050bbd62f16950c55206d985ae6cf31d85f2"
+        ]
+      },
+      "E": {
+        "status": "PASS",
+        "observed": {
+          "invalid_input_classes_rejected": 6
+        },
+        "source_receipt_SHA256": "046a4ef8efdbc1452b60c0a6e6c4e5ae63068feae9e8c8e3fd7511fcb819ec13",
+        "independent_trials": "No; all run within same artificial ESBM generator",
+        "human_data_rows": 0
+      },
+      "F": {
+        "null_controls": "Original ESBM exact legacy; matched-degree artificial comparator; before/after source checks; input abuse; adversarial actor relabel",
+        "adversarial_finding": "No external causal inference."
+      },
+      "G": {
+        "holdout": "NONE",
+        "external_replication": "NONE",
+        "code_parity": "Input source SHA verified; canonical clean subprocess is same OS/env"
+      },
+      "H": {
+        "prior_update": "U176 technical negative P-NETWORK-INVARIANCE and U177–U179 NO_CHANGE_WITH_REASON; never a human posterior",
+        "source_ids": [],
+        "numeric_bayes": null
+      },
+      "I": {
+        "scientific_grade": "0/3",
+        "technical_valid": true,
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "CT2_is_not_probability": true,
+        "novelty_not_claimed": true
+      },
+      "J": {
+        "decision": "CONTINUE_OR_CLOSE",
+        "next": "N143",
+        "reason": "Next precommitted falsifier or final closure after technical success",
+        "credit_spent": 1
+      },
+      "record_kind": "VALID_EXECUTED_ABH_TECHNICAL_OR_NEGATIVE",
+      "source_refs": [
+        "esbm_dynamic.py sha256=f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+        "proyectos/mercados-de-pareja/research/ABH_N127_N146_20261029/PREREG_D.json",
+        "proyectos/mercados-de-pareja/research/ABH_N127_N146_20261029/RESULTS_INDEX.json"
+      ]
+    },
+    {
+      "id": "N143",
+      "parent": "N142",
+      "mode": "REGRESSION_REPAIR",
+      "drift_D": {
+        "code_hash": "GitHub freeze before any outcomes",
+        "original_ESBM_sha": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+      },
+      "A": {
+        "question": "After event boundary hardening preserve exact backward compatibility and bounded trace",
+        "estimand": "Software invariants or negative identity audit, not human outcomes"
+      },
+      "B": {
+        "null": "Source unchanged or actor relabel should have no effect under symmetric shocks",
+        "rivals": [
+          "old networkx label-sensitive rewire",
+          "rank-canonical degree-preserving rewire",
+          "broken scheduler input"
+        ],
+        "H0": "Any discrepancy must be retained"
+      },
+      "C": {
+        "precommitted_test": "60 original scenario×seed identical plus six earlier old-adapter small trajectories, and two event counters exact. No new artificial data.",
+        "seed_values": "101,211/legacy 101–601"
+      },
+      "D": {
+        "code_hash": "GitHub freeze before any outcomes",
+        "original_ESBM_sha": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+        "source_code_commits": [
+          "ede5bb9a954c2bbce9ad26cc8fb59c8f5135174a",
+          "4ca9d95fb1016789d13c478b6843f961939acb11",
+          "0672050bbd62f16950c55206d985ae6cf31d85f2"
+        ]
+      },
+      "E": {
+        "status": "PASS",
+        "observed": {
+          "historical_exact_after_guard": 60,
+          "old_adapter_exact_after_guard": 6
+        },
+        "source_receipt_SHA256": "046a4ef8efdbc1452b60c0a6e6c4e5ae63068feae9e8c8e3fd7511fcb819ec13",
+        "independent_trials": "No; all run within same artificial ESBM generator",
+        "human_data_rows": 0
+      },
+      "F": {
+        "null_controls": "Original ESBM exact legacy; matched-degree artificial comparator; before/after source checks; input abuse; adversarial actor relabel",
+        "adversarial_finding": "No external causal inference."
+      },
+      "G": {
+        "holdout": "NONE",
+        "external_replication": "NONE",
+        "code_parity": "Input source SHA verified; canonical clean subprocess is same OS/env"
+      },
+      "H": {
+        "prior_update": "U176 technical negative P-NETWORK-INVARIANCE and U177–U179 NO_CHANGE_WITH_REASON; never a human posterior",
+        "source_ids": [],
+        "numeric_bayes": null
+      },
+      "I": {
+        "scientific_grade": "0/3",
+        "technical_valid": true,
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "CT2_is_not_probability": true,
+        "novelty_not_claimed": true
+      },
+      "J": {
+        "decision": "CONTINUE_OR_CLOSE",
+        "next": "N144",
+        "reason": "Next precommitted falsifier or final closure after technical success",
+        "credit_spent": 1
+      },
+      "record_kind": "VALID_EXECUTED_ABH_TECHNICAL_OR_NEGATIVE",
+      "source_refs": [
+        "esbm_dynamic.py sha256=f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+        "proyectos/mercados-de-pareja/research/ABH_N127_N146_20261029/PREREG_D.json",
+        "proyectos/mercados-de-pareja/research/ABH_N127_N146_20261029/RESULTS_INDEX.json"
+      ]
+    },
+    {
+      "id": "N144",
+      "parent": "N143",
+      "mode": "LABEL_AUDIT",
+      "drift_D": {
+        "code_hash": "GitHub freeze before any outcomes",
+        "original_ESBM_sha": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+      },
+      "A": {
+        "question": "Determine whether the previous degree-preserving rewired null leaks arbitrary actor labels",
+        "estimand": "Software invariants or negative identity audit, not human outcomes"
+      },
+      "B": {
+        "null": "Source unchanged or actor relabel should have no effect under symmetric shocks",
+        "rivals": [
+          "old networkx label-sensitive rewire",
+          "rank-canonical degree-preserving rewire",
+          "broken scheduler input"
+        ],
+        "H0": "Any discrepancy must be retained"
+      },
+      "C": {
+        "precommitted_test": "Ten seeds 5000–5009 × two relabelings: compare old ring and rewired edge sets; report mismatches even if old null fails. This diagnostic can be a VALID NEGATIVE research artifact, not PASS of invariance.",
+        "seed_values": "5000–5009"
+      },
+      "D": {
+        "code_hash": "GitHub freeze before any outcomes",
+        "original_ESBM_sha": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+        "source_code_commits": [
+          "ede5bb9a954c2bbce9ad26cc8fb59c8f5135174a",
+          "4ca9d95fb1016789d13c478b6843f961939acb11",
+          "0672050bbd62f16950c55206d985ae6cf31d85f2"
+        ]
+      },
+      "E": {
+        "status": "VALID_NEGATIVE_DIAGNOSTIC",
+        "observed": {
+          "old_ring_label_invariant": 20,
+          "old_rewired_label_noninvariant": 20,
+          "old_comparison_claims": "WITHDRAWN_PENDING_CANONICAL_REANALYSIS"
+        },
+        "source_receipt_SHA256": "046a4ef8efdbc1452b60c0a6e6c4e5ae63068feae9e8c8e3fd7511fcb819ec13",
+        "independent_trials": "No; all run within same artificial ESBM generator",
+        "human_data_rows": 0
+      },
+      "F": {
+        "null_controls": "Original ESBM exact legacy; matched-degree artificial comparator; before/after source checks; input abuse; adversarial actor relabel",
+        "adversarial_finding": "Prior rewired null failed 20/20 label relabels. Treat N133-N141 old-null comparisons as invalid for causal claims; posthoc canonical reanalysis separate 0 cycles."
+      },
+      "G": {
+        "holdout": "NONE",
+        "external_replication": "NONE",
+        "code_parity": "Input source SHA verified; canonical clean subprocess is same OS/env"
+      },
+      "H": {
+        "prior_update": "U176 technical negative P-NETWORK-INVARIANCE and U177–U179 NO_CHANGE_WITH_REASON; never a human posterior",
+        "source_ids": [],
+        "numeric_bayes": null
+      },
+      "I": {
+        "scientific_grade": "0/3",
+        "technical_valid": true,
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "CT2_is_not_probability": true,
+        "novelty_not_claimed": true
+      },
+      "J": {
+        "decision": "REPAIR_BRANCHED_NEXT_N145",
+        "next": "N145",
+        "reason": "Change source-null generation coordinate system before next check. Do not silently revise old results.",
+        "credit_spent": 1
+      },
+      "record_kind": "VALID_EXECUTED_ABH_TECHNICAL_OR_NEGATIVE",
+      "source_refs": [
+        "esbm_dynamic.py sha256=f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+        "proyectos/mercados-de-pareja/research/ABH_N127_N146_20261029/PREREG_D.json",
+        "proyectos/mercados-de-pareja/research/ABH_N127_N146_20261029/RESULTS_INDEX.json"
+      ]
+    },
+    {
+      "id": "N145",
+      "parent": "N144",
+      "mode": "REPAIR_SYMMETRY",
+      "drift_D": {
+        "code_hash": "GitHub freeze before any outcomes",
+        "original_ESBM_sha": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+      },
+      "A": {
+        "question": "Generate a degree-preserving null in canonical rank space and test equivariance of its graph and scheduling decisions",
+        "estimand": "Software invariants or negative identity audit, not human outcomes"
+      },
+      "B": {
+        "null": "Source unchanged or actor relabel should have no effect under symmetric shocks",
+        "rivals": [
+          "old networkx label-sensitive rewire",
+          "rank-canonical degree-preserving rewire",
+          "broken scheduler input"
+        ],
+        "H0": "Any discrepancy must be retained"
+      },
+      "C": {
+        "precommitted_test": "Same ten seeds × two relabelings ×ring/rewired: 40 exact graph identities; for 2 seeds compare one-slot scheduled pairs; revised graph with canonical rank labels.",
+        "seed_values": "5000–5009"
+      },
+      "D": {
+        "code_hash": "GitHub freeze before any outcomes",
+        "original_ESBM_sha": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+        "source_code_commits": [
+          "ede5bb9a954c2bbce9ad26cc8fb59c8f5135174a",
+          "4ca9d95fb1016789d13c478b6843f961939acb11",
+          "0672050bbd62f16950c55206d985ae6cf31d85f2"
+        ]
+      },
+      "E": {
+        "status": "PASS",
+        "observed": {
+          "canonical_graph_label_invariant": 40,
+          "canonical_schedules_invariant": 8
+        },
+        "source_receipt_SHA256": "046a4ef8efdbc1452b60c0a6e6c4e5ae63068feae9e8c8e3fd7511fcb819ec13",
+        "independent_trials": "No; all run within same artificial ESBM generator",
+        "human_data_rows": 0
+      },
+      "F": {
+        "null_controls": "Original ESBM exact legacy; matched-degree artificial comparator; before/after source checks; input abuse; adversarial actor relabel",
+        "adversarial_finding": "No external causal inference."
+      },
+      "G": {
+        "holdout": "NONE",
+        "external_replication": "NONE",
+        "code_parity": "Input source SHA verified; canonical clean subprocess is same OS/env"
+      },
+      "H": {
+        "prior_update": "U176 technical negative P-NETWORK-INVARIANCE and U177–U179 NO_CHANGE_WITH_REASON; never a human posterior",
+        "source_ids": [],
+        "numeric_bayes": null
+      },
+      "I": {
+        "scientific_grade": "0/3",
+        "technical_valid": true,
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "CT2_is_not_probability": true,
+        "novelty_not_claimed": true
+      },
+      "J": {
+        "decision": "CONTINUE_OR_CLOSE",
+        "next": "N146",
+        "reason": "Next precommitted falsifier or final closure after technical success",
+        "credit_spent": 1
+      },
+      "record_kind": "VALID_EXECUTED_ABH_TECHNICAL_OR_NEGATIVE",
+      "source_refs": [
+        "esbm_dynamic.py sha256=f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+        "proyectos/mercados-de-pareja/research/ABH_N127_N146_20261029/PREREG_D.json",
+        "proyectos/mercados-de-pareja/research/ABH_N127_N146_20261029/RESULTS_INDEX.json"
+      ]
+    },
+    {
+      "id": "N146",
+      "parent": "N145",
+      "mode": "PORTABILITY_FINAL",
+      "drift_D": {
+        "code_hash": "GitHub freeze before any outcomes",
+        "original_ESBM_sha": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+      },
+      "A": {
+        "question": "Run isolated-from-cwd Python subprocess with only explicit engine and revised graph sources and deterministic smoke controls",
+        "estimand": "Software invariants or negative identity audit, not human outcomes"
+      },
+      "B": {
+        "null": "Source unchanged or actor relabel should have no effect under symmetric shocks",
+        "rivals": [
+          "old networkx label-sensitive rewire",
+          "rank-canonical degree-preserving rewire",
+          "broken scheduler input"
+        ],
+        "H0": "Any discrepancy must be retained"
+      },
+      "C": {
+        "precommitted_test": "Same installed NumPy/NetworkX environment, no dynamic exec/inspect in engine; fail closed bad source, bad scheduler, exact legacy 101 parity and 2-slot mini. Different machine NOT claimed.",
+        "seed_values": "101,211/legacy 101–601"
+      },
+      "D": {
+        "code_hash": "GitHub freeze before any outcomes",
+        "original_ESBM_sha": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+        "source_code_commits": [
+          "ede5bb9a954c2bbce9ad26cc8fb59c8f5135174a",
+          "4ca9d95fb1016789d13c478b6843f961939acb11",
+          "0672050bbd62f16950c55206d985ae6cf31d85f2"
+        ]
+      },
+      "E": {
+        "status": "PASS",
+        "observed": {
+          "isolated_subprocess_same_environment": true,
+          "source_corruption_rejected": true,
+          "independent_external_replication": false
+        },
+        "source_receipt_SHA256": "046a4ef8efdbc1452b60c0a6e6c4e5ae63068feae9e8c8e3fd7511fcb819ec13",
+        "independent_trials": "No; all run within same artificial ESBM generator",
+        "human_data_rows": 0
+      },
+      "F": {
+        "null_controls": "Original ESBM exact legacy; matched-degree artificial comparator; before/after source checks; input abuse; adversarial actor relabel",
+        "adversarial_finding": "No external causal inference."
+      },
+      "G": {
+        "holdout": "NONE",
+        "external_replication": "NONE",
+        "code_parity": "Input source SHA verified; canonical clean subprocess is same OS/env"
+      },
+      "H": {
+        "prior_update": "U176 technical negative P-NETWORK-INVARIANCE and U177–U179 NO_CHANGE_WITH_REASON; never a human posterior",
+        "source_ids": [],
+        "numeric_bayes": null
+      },
+      "I": {
+        "scientific_grade": "0/3",
+        "technical_valid": true,
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "CT2_is_not_probability": true,
+        "novelty_not_claimed": true
+      },
+      "J": {
+        "decision": "CONTINUE_OR_CLOSE",
+        "next": "STOP_CAMPAIGN: 20 credits consumed; R5 scientific remains",
+        "reason": "Next precommitted falsifier or final closure after technical success",
+        "credit_spent": 1
+      },
+      "record_kind": "VALID_EXECUTED_ABH_TECHNICAL_OR_NEGATIVE",
+      "source_refs": [
+        "esbm_dynamic.py sha256=f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+        "proyectos/mercados-de-pareja/research/ABH_N127_N146_20261029/PREREG_D.json",
+        "proyectos/mercados-de-pareja/research/ABH_N127_N146_20261029/RESULTS_INDEX.json"
+      ]
+    }
+  ]
+}
