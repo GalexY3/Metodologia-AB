@@ -4,7 +4,7 @@
   "date": "2026-10-28",
   "mode": "append-only logical, versioned by Git commits",
   "reconstructed_from_documents": "Retrospective backfill, not preregistration. Old before values NOT_RECORDED unless documented explicitly.",
-  "source_coverage": "103 SOURCES, 30 PRIORS, 152 UPDATES; 3 normative new primary references, no empirical source or human dataset, no AB cycle",
+  "source_coverage": "103 SOURCES / 30 PRIORS / 154 UPDATES; SRC017 and SRC032 original publication reread (same already-registered samples), U153/U154 no-state-change; 0 new primary cohorts, 0 AB cycles",
   "events": [
     {
       "id": "U001",
@@ -3811,7 +3811,59 @@
       "prior_probability_after": null,
       "AB_cycle_increment": 0,
       "prereg_status": "DOCUMENTARY_NONCYCLE_POSTHOC_AUDIT"
+    },
+    {
+      "id": "U153",
+      "prior_id": "P-NOVELTY",
+      "source_ids": [
+        "SRC017",
+        "SRC032",
+        "SRC054"
+      ],
+      "cycle_ids": [],
+      "before": "STRONG_PRIOR_ART",
+      "after": "STRONG_PRIOR_ART",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "recorded_at": "2026-10-29",
+      "entry_status": "ACTIVE",
+      "evidence_type": "PREEXISTING_PRIMARY_PUBLICATIONS_REINSPECTED_PLUS_NONEXCLUSIVE_FORMAL_COUNTEREXAMPLE_NO_NEW_EMPIRICAL_OBSERVATION",
+      "what_the_sources_contribute": "Publication original full text reinspection + exact algebraic no-go: balanced exposure vs equal-budget uniform has no ESBM-exclusive observable prediction of mutual yesyes yield. Belot-Francesconi prior art directly varies opportunities, Chen already field-tests bilateral exposure optimization, Rios already tests match optimization. The proposed single-policy ITT cannot establish an original explanatory model.",
+      "why_this_updates_or_checks_prior": "Changes the candidate-design recommendation to REJECT_AS_ORIGINAL_MECHANISM while preserving previously qualitative evidence-status, because no independent external human sample or effect is added. No novel source ID or second cohort created.",
+      "limits": "Formal examples are analytic illustrative constructions, not ESBM runs, no original human rows, no measured effect, no actual randomized A-ASSIGN intervention. B1/B2/B4 are expressive; predefine their functional classes and information parity rather than claiming all models can be logically defeated.",
+      "falsifier_or_followup": "A prospectively specified ESBM-specific nontrivial sign/interaction or predictive margin under fixed policy against best standard competitors B0/B1/B2/B4 with same fields, independent licensed original dyad exposure and bilateral decisions, suitable ethics, independent markets and frozen A–J/code before outcomes. Otherwise STOP_R5.",
+      "numerical_bayesian_update": false,
+      "prior_probability_before": null,
+      "prior_probability_after": null,
+      "AB_cycle_increment": 0,
+      "prereg_status": "DOCUMENTARY_NONCYCLE_ADVERSARIAL_NO_GO",
+      "status_change": false
+    },
+    {
+      "id": "U154",
+      "prior_id": "P-OPPORTUNITY",
+      "source_ids": [
+        "SRC017",
+        "SRC032",
+        "SRC054"
+      ],
+      "cycle_ids": [],
+      "before": "RECORDED_RECOMMENDATION_RISK_SET_WITHOUT_VERIFIED_ATTENTION",
+      "after": "RECORDED_RECOMMENDATION_RISK_SET_WITHOUT_VERIFIED_ATTENTION",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "recorded_at": "2026-10-29",
+      "entry_status": "ACTIVE",
+      "evidence_type": "PREEXISTING_PRIMARY_PUBLICATIONS_REINSPECTED_PLUS_NONEXCLUSIVE_FORMAL_COUNTEREXAMPLE_NO_NEW_EMPIRICAL_OBSERVATION",
+      "what_the_sources_contribute": "An exact two-by-two exposure assignment example makes both balanced and iid uniform policies have the same dyad marginal inclusion, so expected mutual-yesyes totals coincide under static independent dyad propensities, despite balanced coverage increasing. Capacity/congestion and heterogeneous static target effects B0/B1/B2/B4 can also generate changes. Opportunity assignment is valuable for measurement but not sufficient for mechanism attribution.",
+      "why_this_updates_or_checks_prior": "Changes the candidate-design recommendation to REJECT_AS_ORIGINAL_MECHANISM while preserving previously qualitative evidence-status, because no independent external human sample or effect is added. No novel source ID or second cohort created.",
+      "limits": "Formal examples are analytic illustrative constructions, not ESBM runs, no original human rows, no measured effect, no actual randomized A-ASSIGN intervention. B1/B2/B4 are expressive; predefine their functional classes and information parity rather than claiming all models can be logically defeated.",
+      "falsifier_or_followup": "A prospectively specified ESBM-specific nontrivial sign/interaction or predictive margin under fixed policy against best standard competitors B0/B1/B2/B4 with same fields, independent licensed original dyad exposure and bilateral decisions, suitable ethics, independent markets and frozen A–J/code before outcomes. Otherwise STOP_R5.",
+      "numerical_bayesian_update": false,
+      "prior_probability_before": null,
+      "prior_probability_after": null,
+      "AB_cycle_increment": 0,
+      "prereg_status": "DOCUMENTARY_NONCYCLE_ADVERSARIAL_NO_GO",
+      "status_change": false
     }
   ],
-  "last_campaign": "ABR_HFBTIME_ETHICS_ALTERNATIVE_NOCYCLE_20261029"
+  "last_campaign": "ABR_AASSIGN_NOVELTY_NO_GO_NOCYCLE_20261029"
 }
