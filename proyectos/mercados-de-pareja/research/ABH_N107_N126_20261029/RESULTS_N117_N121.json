@@ -1,0 +1,300 @@
+{
+  "schema": "ABH.C_EXECUTED.v1",
+  "date": "2026-10-29",
+  "source_freeze_commit": "de5b64945ee44b48d6886d9d80ad0e890065a068",
+  "runner_freeze": "c94193f02b3dd829993b9ff904ad6732c67c5481",
+  "prereg": "37ae51c3136c051e6ec95cfcee06589cfc03f850",
+  "failed_N120_144_person_timeout": "INSTRUMENTAL_TIMEOUT_NOT_VALID",
+  "repair_prereg": "173eb8c596914b0d9a1485dbd2be655c721b3f0f",
+  "mini_fixture_freeze": "6022e7bdcdb135b3b33cdc353aa61dd6fed7626f",
+  "mini_runner_freeze": "8b97ee41bac90fad454feb73cc2dc2287ea5622c",
+  "local_receipts_sha256": {
+    "N117_N119": "113c6cdffd4ca69cb547625b927f2afb0ce90567c22780aa8ccea288e4d62aad",
+    "N120_N121": "d15c0988f001d88a8da186a2677f87eda48143672694265e1417a1b0e10bbda4"
+  },
+  "original_human_data": 0,
+  "grade": "0/3",
+  "cycles": [
+    {
+      "id": "N117",
+      "status": "PASS",
+      "check_count": 24,
+      "scope": "6 seeds×2 ticks×(one/two slots), same full 144 agent risk sets",
+      "all_one_slot_contacts": 72,
+      "all_two_slot_contacts": 144,
+      "unique_per_period": true,
+      "max_actor_visits": 2,
+      "elapsed_seconds": 4.615
+    },
+    {
+      "id": "N118",
+      "status": "PASS",
+      "full_longitudinal_exact_scenarios": 6,
+      "old_vs_new_v3_sha256": "5730fd224f86fedb5626e7ee38743fce3a0c95955c031301694e48068f5bbaa7",
+      "legacy_formed_by_seed": [
+        [
+          101,
+          71,
+          69,
+          67
+        ],
+        [
+          211,
+          75,
+          75,
+          72
+        ]
+      ],
+      "policy_order": [
+        "pair_max",
+        "pair_norm_same",
+        "pair_norm_cross"
+      ],
+      "elapsed_seconds": 17.505
+    },
+    {
+      "id": "N119",
+      "status": "PASS",
+      "budget_checks": 36,
+      "schedule_comparison": [
+        {
+          "seed": 101,
+          "tick": 0,
+          "greedy_one": 64,
+          "greedy_two": 127,
+          "max_one": 72,
+          "max_two": 144,
+          "norm_same_one": 72,
+          "norm_same_two": 144
+        },
+        {
+          "seed": 101,
+          "tick": 3,
+          "greedy_one": 67,
+          "greedy_two": 132,
+          "max_one": 72,
+          "max_two": 144,
+          "norm_same_one": 72,
+          "norm_same_two": 144
+        },
+        {
+          "seed": 211,
+          "tick": 0,
+          "greedy_one": 62,
+          "greedy_two": 127,
+          "max_one": 72,
+          "max_two": 144,
+          "norm_same_one": 72,
+          "norm_same_two": 144
+        },
+        {
+          "seed": 211,
+          "tick": 3,
+          "greedy_one": 64,
+          "greedy_two": 129,
+          "max_one": 72,
+          "max_two": 144,
+          "norm_same_one": 72,
+          "norm_same_two": 144
+        },
+        {
+          "seed": 307,
+          "tick": 0,
+          "greedy_one": 67,
+          "greedy_two": 131,
+          "max_one": 72,
+          "max_two": 144,
+          "norm_same_one": 72,
+          "norm_same_two": 144
+        },
+        {
+          "seed": 307,
+          "tick": 3,
+          "greedy_one": 65,
+          "greedy_two": 129,
+          "max_one": 72,
+          "max_two": 144,
+          "norm_same_one": 72,
+          "norm_same_two": 144
+        },
+        {
+          "seed": 401,
+          "tick": 0,
+          "greedy_one": 64,
+          "greedy_two": 127,
+          "max_one": 72,
+          "max_two": 144,
+          "norm_same_one": 72,
+          "norm_same_two": 144
+        },
+        {
+          "seed": 401,
+          "tick": 3,
+          "greedy_one": 62,
+          "greedy_two": 128,
+          "max_one": 72,
+          "max_two": 144,
+          "norm_same_one": 72,
+          "norm_same_two": 144
+        },
+        {
+          "seed": 503,
+          "tick": 0,
+          "greedy_one": 64,
+          "greedy_two": 128,
+          "max_one": 72,
+          "max_two": 144,
+          "norm_same_one": 72,
+          "norm_same_two": 144
+        },
+        {
+          "seed": 503,
+          "tick": 3,
+          "greedy_one": 65,
+          "greedy_two": 128,
+          "max_one": 72,
+          "max_two": 144,
+          "norm_same_one": 72,
+          "norm_same_two": 144
+        },
+        {
+          "seed": 601,
+          "tick": 0,
+          "greedy_one": 65,
+          "greedy_two": 128,
+          "max_one": 72,
+          "max_two": 144,
+          "norm_same_one": 72,
+          "norm_same_two": 144
+        },
+        {
+          "seed": 601,
+          "tick": 3,
+          "greedy_one": 63,
+          "greedy_two": 129,
+          "max_one": 72,
+          "max_two": 144,
+          "norm_same_one": 72,
+          "norm_same_two": 144
+        }
+      ],
+      "warning": "Second slot shocks are deterministic transform of first, not independent realizations",
+      "elapsed_seconds": 12.004
+    },
+    {
+      "id": "N120",
+      "status": "PASS_AFTER_REPAIR",
+      "scope": "24 agents×4 periods, NOT full N144×16",
+      "runs": 4,
+      "results": [
+        {
+          "seed": 101,
+          "private_learning": false,
+          "formed": 5,
+          "active": 4,
+          "proposals": 24,
+          "positive": 5,
+          "bias": 0
+        },
+        {
+          "seed": 101,
+          "private_learning": true,
+          "formed": 5,
+          "active": 4,
+          "proposals": 24,
+          "positive": 5,
+          "bias": 0.06333333333333334
+        },
+        {
+          "seed": 211,
+          "private_learning": false,
+          "formed": 7,
+          "active": 5,
+          "proposals": 19,
+          "positive": 8,
+          "bias": 0
+        },
+        {
+          "seed": 211,
+          "private_learning": true,
+          "formed": 7,
+          "active": 5,
+          "proposals": 19,
+          "positive": 8,
+          "bias": 0.036666666666666674
+        }
+      ],
+      "elapsed_seconds": 0.124
+    },
+    {
+      "id": "N121",
+      "status": "PASS_AFTER_REPAIR",
+      "scope": "24 agents×4 periods, NOT full N144×16",
+      "runs": 6,
+      "results": [
+        {
+          "seed": 101,
+          "scenario": "longer_partnerships",
+          "formed": 5,
+          "dissolved": 1,
+          "active": 4,
+          "right_censored": 4,
+          "completed_duration_mean": 2,
+          "completed_n": 1
+        },
+        {
+          "seed": 101,
+          "scenario": "mixed_random",
+          "formed": 5,
+          "dissolved": 1,
+          "active": 4,
+          "right_censored": 4,
+          "completed_duration_mean": 2,
+          "completed_n": 1
+        },
+        {
+          "seed": 101,
+          "scenario": "shorter_partnerships",
+          "formed": 3,
+          "dissolved": 2,
+          "active": 1,
+          "right_censored": 1,
+          "completed_duration_mean": 1.5,
+          "completed_n": 2
+        },
+        {
+          "seed": 211,
+          "scenario": "longer_partnerships",
+          "formed": 6,
+          "dissolved": 0,
+          "active": 6,
+          "right_censored": 6,
+          "completed_duration_mean": null,
+          "completed_n": 0
+        },
+        {
+          "seed": 211,
+          "scenario": "mixed_random",
+          "formed": 7,
+          "dissolved": 2,
+          "active": 5,
+          "right_censored": 5,
+          "completed_duration_mean": 1.5,
+          "completed_n": 2
+        },
+        {
+          "seed": 211,
+          "scenario": "shorter_partnerships",
+          "formed": 7,
+          "dissolved": 2,
+          "active": 5,
+          "right_censored": 5,
+          "completed_duration_mean": 1,
+          "completed_n": 2
+        }
+      ],
+      "elapsed_seconds": 0.186
+    }
+  ],
+  "scientific_limits": "No direct data from humans; synthetic schedule effects conditional on 24/144 synthetic populations, original rejection feedback law and stipulated hazard. Censoring excludes currently active relationships; two-slot matches at end tick are simultaneous; within-tick feedback order depends on scheduler event order."
+}
