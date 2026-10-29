@@ -23,7 +23,7 @@
       "id": "P-NOVELTY",
       "question": "Originalidad de homogamia de deseabilidad sin preferencia inicial por semejanza",
       "status": "STRONG_PRIOR_ART",
-      "rationale": "La proposición general ya está en teoría matching, Hitsch 2010 y, casi literalmente para apps, Topinkova/Diviak 2025; nueva aportación exigiría predicción más estrecha. La separación de navegación, primer mensaje y match se documentó explícitamente en Hitsch et al. (2010), antes del programa ESBM. No reivindicar originalidad general de la cadena. Rios–Saban–Zheng (online 2022) probó algoritmo con exposición e historial de matches en dos intervenciones de mercado; Rios–Torrico 2023 ya formaliza secuencialidad y direcciones del flujo. ESBM no reivindica novedad de optimización de exposición y reciprocidad ni de feedback por matches. External 2024 intervention already studies a causal micro-interaction influence independent of pre-exposure sorting. ESBM has not yet included an observed micro-behavior intervention; adding smiles alone would lack originality. ICONIP 2020 MotifGNN already models reciprocal recommendation over user directed interaction graphs with degree/motif structure. Our degree-conditioned reciprocity finding does not establish a new theory: it is a data-quality/control exercise on published dataset. Su & Hu 2019 already used ratios click/rec and msg/rec as popularity and modeled target and sender attributes and network centrality; 2020 MotifGNN already modeled mutual interaction graph. N82 smooth target CTR out-of-actor predictive advantage is not a new theoretical mechanism or 2/3. Contest researchers in 2011 already studied ranking profiles by expected click/msg, including RankSVM, Bayesian Regression Trees and simple popularity voting; source 2012 participant explicitly discusses click/rec and msg utilities. A generic target-click-rate advantage N82 is not novel and must be compared against original NDCG@10 or stronger actor-target/context models before any novelty claim. A prior 2023 thesis already performed time-to-breakup survival prediction on HCMST 2009 using Cox PH, Random Survival Forest and DeepHit and identified cohabitation, marriage, duration and meeting modality as predictors. New ESBM must supply unique causal or mechanistically discriminating prediction with superior properly heldout model, not just 'add duration/predict breakup' in HCMST source.",
+      "rationale": "La proposición general ya está en teoría matching, Hitsch 2010 y, casi literalmente para apps, Topinkova/Diviak 2025; nueva aportación exigiría predicción más estrecha. La separación de navegación, primer mensaje y match se documentó explícitamente en Hitsch et al. (2010), antes del programa ESBM. No reivindicar originalidad general de la cadena. Rios–Saban–Zheng (online 2022) probó algoritmo con exposición e historial de matches en dos intervenciones de mercado; Rios–Torrico 2023 ya formaliza secuencialidad y direcciones del flujo. ESBM no reivindica novedad de optimización de exposición y reciprocidad ni de feedback por matches. External 2024 intervention already studies a causal micro-interaction influence independent of pre-exposure sorting. ESBM has not yet included an observed micro-behavior intervention; adding smiles alone would lack originality. ICONIP 2020 MotifGNN already models reciprocal recommendation over user directed interaction graphs with degree/motif structure. Our degree-conditioned reciprocity finding does not establish a new theory: it is a data-quality/control exercise on published dataset. Su & Hu 2019 already used ratios click/rec and msg/rec as popularity and modeled target and sender attributes and network centrality; 2020 MotifGNN already modeled mutual interaction graph. N82 smooth target CTR out-of-actor predictive advantage is not a new theoretical mechanism or 2/3. Contest researchers in 2011 already studied ranking profiles by expected click/msg, including RankSVM, Bayesian Regression Trees and simple popularity voting; source 2012 participant explicitly discusses click/rec and msg utilities. A generic target-click-rate advantage N82 is not novel and must be compared against original NDCG@10 or stronger actor-target/context models before any novelty claim. A prior 2023 thesis already performed time-to-breakup survival prediction on HCMST 2009 using Cox PH, Random Survival Forest and DeepHit and identified cohabitation, marriage, duration and meeting modality as predictors. New ESBM must supply unique causal or mechanistically discriminating prediction with superior properly heldout model, not just 'add duration/predict breakup' in HCMST source. Hypergamy review 2026-10-29: Existing evidence covers educational hypergamy trends, denominator effects, structural opportunity decomposition, and aspiration in messages for both sexes; ESBM cannot claim novelty of generic hypergamy, homogamy, aspirational hierarchy or exposure-vs-sorting mechanism.",
       "evidence_sources": [
         "SRC001",
         "SRC002",
@@ -42,9 +42,15 @@
         "SRC063",
         "SRC064",
         "SRC065",
-        "SRC071"
+        "SRC071",
+        "SRC074",
+        "SRC075",
+        "SRC076",
+        "SRC077",
+        "SRC078",
+        "SRC079"
       ],
-      "last_update_id": "U096",
+      "last_update_id": "U102",
       "uncertainty": "Not probabilistically calibrated; evidence heterogeneous and some sources only metadata",
       "next_falsifier_or_test": "Find a preregistered prediction NOT covered by published mating-market literature and independently validate",
       "numeric_probability": null,
@@ -58,9 +64,10 @@
         "U076",
         "U081",
         "U086",
-        "U096"
+        "U096",
+        "U102"
       ],
-      "latest_evidence_summary": "Strong prior art extends to relationship survival estimation with source 2009; new original contribution not demonstrated.",
+      "latest_evidence_summary": "Existing evidence covers educational hypergamy trends, denominator effects, structural opportunity decomposition, and aspiration in messages for both sexes; ESBM cannot claim novelty of generic hypergamy, homogamy, aspirational hierarchy or exposure-vs-sorting mechanism.",
       "last_revised_at": "2026-10-29"
     },
     {
@@ -116,7 +123,7 @@
       "id": "P-OPPORTUNITY",
       "question": "La red de perfiles mostrados es necesaria para separar preferencias de exposición",
       "status": "RECORDED_RECOMMENDATION_RISK_SET_WITHOUT_VERIFIED_ATTENTION",
-      "rationale": "Dos fuentes speed dating incluyen citas efectivas; fuente checa reporta intentos pero no perfiles vistos; sin no-interacciones observadas el denominador de riesgo se desconoce. El artículo Hitsch 2010 sí observó perfiles visitados antes de contacto; el archivo original de observaciones sigue inaccesible y se desconoce si el paquete E112322V1 las conserva; por ello la falta de denominador a nivel de nuestras muestras permanece. La oportunidad observada como conjuntos diarios de perfiles ofrecidos es medición practicable en plataformas reales pero su asignación es endógena a algoritmos y preferencias; condicionar por visita/no visitar no identifica el efecto de exposición per se. 8.36 million 'rec' records recovered in independent source with no verified definition of an actually seen candidate; excluding them exposes severe risks from equating graph relation with opportunity. Even if rec means recommendation, logged placement may differ from seen profile. SSJY train.txt 8,366,058 unique (actor,target,round) rec records and source generated_graph.py strips ROUND in derived relations.csv. Access opens opportunity-conditioned recorded candidate risk set, but actual attended/viewed impression and nonclick intention remain unobserved. 92.0% of unique click triples map to same-round rec. A candidate appears by recommendation in a page position with a photo; user can ignore or not attend, so rec includes opportunities presented/recorded rather than proven perceived impressions. Per-user ROUND order is sequential but lag between rounds depends on logins/navigation and is not a common calendar timestamp. Source 2012 warns nonclick rec can mean attention or distraction rather than conscious rejection.",
+      "rationale": "Dos fuentes speed dating incluyen citas efectivas; fuente checa reporta intentos pero no perfiles vistos; sin no-interacciones observadas el denominador de riesgo se desconoce. El artículo Hitsch 2010 sí observó perfiles visitados antes de contacto; el archivo original de observaciones sigue inaccesible y se desconoce si el paquete E112322V1 las conserva; por ello la falta de denominador a nivel de nuestras muestras permanece. La oportunidad observada como conjuntos diarios de perfiles ofrecidos es medición practicable en plataformas reales pero su asignación es endógena a algoritmos y preferencias; condicionar por visita/no visitar no identifica el efecto de exposición per se. 8.36 million 'rec' records recovered in independent source with no verified definition of an actually seen candidate; excluding them exposes severe risks from equating graph relation with opportunity. Even if rec means recommendation, logged placement may differ from seen profile. SSJY train.txt 8,366,058 unique (actor,target,round) rec records and source generated_graph.py strips ROUND in derived relations.csv. Access opens opportunity-conditioned recorded candidate risk set, but actual attended/viewed impression and nonclick intention remain unobserved. 92.0% of unique click triples map to same-round rec. A candidate appears by recommendation in a page position with a photo; user can ignore or not attend, so rec includes opportunities presented/recorded rather than proven perceived impressions. Per-user ROUND order is sequential but lag between rounds depends on logins/navigation and is not a common calendar timestamp. Source 2012 warns nonclick rec can mean attention or distraction rather than conscious rejection. Hypergamy review 2026-10-29: Leesch et al. already decompose educational composition vs nonrandom marriage sorting, and Spanish regional correlations show educational assortative mating co-varies with inequality/mobility. This does not identify exposure, preferences or causal effect.",
       "evidence_sources": [
         "SRC021",
         "SRC030",
@@ -132,9 +139,11 @@
         "SRC060",
         "SRC061",
         "SRC064",
-        "SRC065"
+        "SRC065",
+        "SRC077",
+        "SRC079"
       ],
-      "last_update_id": "U087",
+      "last_update_id": "U103",
       "uncertainty": "Not probabilistically calibrated; evidence heterogeneous and some sources only metadata",
       "next_falsifier_or_test": "Independent prospective data with matched risk set, competent adversarial controls and documented sample selection",
       "numeric_probability": null,
@@ -147,9 +156,10 @@
         "U063",
         "U074",
         "U079",
-        "U087"
+        "U087",
+        "U103"
       ],
-      "latest_evidence_summary": "Original contest documentation corroborates denominator of assigned/displayed recommendations, not verified visual attention, explicit no or temporal causal opportunity.",
+      "latest_evidence_summary": "Leesch et al. already decompose educational composition vs nonrandom marriage sorting, and Spanish regional correlations show educational assortative mating co-varies with inequality/mobility. This does not identify exposure, preferences or causal effect.",
       "last_revised_at": "2026-10-29"
     },
     {
@@ -178,25 +188,29 @@
       "id": "P-SIMILARITY",
       "question": "Homofilia de edad y campo académico tiene papel adicional frente a deseabilidad compartida",
       "status": "SUPPORTED_DESCRIPTIVELY_CONTEXT_DEPENDENT",
-      "rationale": "Columbia: small same-field association after 2 FE, edad relativa heterogénea; Mixmosa male age signal near zero in 2 FE, no efecto universal identificado.",
+      "rationale": "Columbia: small same-field association after 2 FE, edad relativa heterogénea; Mixmosa male age signal near zero in 2 FE, no efecto universal identificado. Hypergamy review 2026-10-29: Esteve and Urbina findings are not necessarily contradictory: denominators differ (all unions vs only heterogamous unions) and samples differ. Educational homogamy is not preference without available candidate composition.",
       "evidence_sources": [
         "SRC016",
         "SRC017",
         "SRC018",
         "SRC036",
-        "SRC041"
+        "SRC041",
+        "SRC074",
+        "SRC076",
+        "SRC078"
       ],
-      "last_update_id": "U036",
+      "last_update_id": "U104",
       "uncertainty": "Not probabilistically calibrated; evidence heterogeneous and some sources only metadata",
       "next_falsifier_or_test": "Independent prospective data with matched risk set, competent adversarial controls and documented sample selection",
       "numeric_probability": null,
       "CT2_is_not_this_prior": true,
       "update_ids": [
         "U013",
-        "U036"
+        "U036",
+        "U104"
       ],
-      "latest_evidence_summary": "Educación, valores e instituciones tienen múltiples ejes de semejanza.",
-      "last_revised_at": "2026-10-28"
+      "latest_evidence_summary": "Esteve and Urbina findings are not necessarily contradictory: denominators differ (all unions vs only heterogamous unions) and samples differ. Educational homogamy is not preference without available candidate composition.",
+      "last_revised_at": "2026-10-29"
     },
     {
       "id": "P-TRANSPORT",
@@ -232,14 +246,15 @@
       "id": "P-SPAIN_CALIB",
       "question": "Hay datos españoles suficientes para calibrar un mercado de usuarios solteros activos",
       "status": "DATA_BLOCKED",
-      "rationale": "INE residentes por edad no equivale a singles ni app users; cifras de convivencia Funcas están condicionadas por cohorte/educación, matrices INE no descargadas.",
+      "rationale": "INE residentes por edad no equivale a singles ni app users; cifras de convivencia Funcas están condicionadas por cohorte/educación, matrices INE no descargadas. Hypergamy review 2026-10-29: Banco de España 2026 provides Spanish descriptive spouse-schooling correlation and mobility association; cannot calibrate a dyadic platform-stage choice or infer causal effects from aggregate correlation.",
       "evidence_sources": [
         "SRC005",
         "SRC012",
         "SRC013",
-        "SRC009"
+        "SRC009",
+        "SRC079"
       ],
-      "last_update_id": "U008",
+      "last_update_id": "U106",
       "uncertainty": "Not probabilistically calibrated; evidence heterogeneous and some sources only metadata",
       "next_falsifier_or_test": "Independent prospective data with matched risk set, competent adversarial controls and documented sample selection",
       "numeric_probability": null,
@@ -248,36 +263,40 @@
         "U002",
         "U005",
         "U006",
-        "U008"
+        "U008",
+        "U106"
       ],
-      "latest_evidence_summary": "Funcas ESS 2024: 76% de universitarios convivientes hombres y 53% mujeres conviven con pareja universitaria.",
-      "last_revised_at": "2026-10-28"
+      "latest_evidence_summary": "Banco de España 2026 provides Spanish descriptive spouse-schooling correlation and mobility association; cannot calibrate a dyadic platform-stage choice or infer causal effects from aggregate correlation.",
+      "last_revised_at": "2026-10-29"
     },
     {
       "id": "P-STATUS_PROXY",
       "question": "Ingreso, educación y posición material son equivalentes a atractivo/deseabilidad social",
       "status": "CHALLENGED",
-      "rationale": "Medidas materiales y reputacionales se deben separar; bucket de renta y rating de fotos no definen por sí solos valor relacional.",
+      "rationale": "Medidas materiales y reputacionales se deben separar; bucket de renta y rating de fotos no definen por sí solos valor relacional. Hypergamy review 2026-10-29: Bruch-Newman desirability is network rank from messages, not income/beauty or a universal stable scalar; Swiss educational versus income dimensions diverge.",
       "evidence_sources": [
         "SRC006",
-        "SRC007"
+        "SRC007",
+        "SRC075",
+        "SRC078"
       ],
-      "last_update_id": "U003",
+      "last_update_id": "U105",
       "uncertainty": "Not probabilistically calibrated; evidence heterogeneous and some sources only metadata",
       "next_falsifier_or_test": "Independent prospective data with matched risk set, competent adversarial controls and documented sample selection",
       "numeric_probability": null,
       "CT2_is_not_this_prior": true,
       "update_ids": [
-        "U003"
+        "U003",
+        "U105"
       ],
-      "latest_evidence_summary": "Renta y educación españolas son medidas materiales comparables, no deseabilidad romántica.",
-      "last_revised_at": "2026-10-28"
+      "latest_evidence_summary": "Bruch-Newman desirability is network rank from messages, not income/beauty or a universal stable scalar; Swiss educational versus income dimensions diverge.",
+      "last_revised_at": "2026-10-29"
     },
     {
       "id": "P-DYADIC_ACCESS",
       "question": "Hay nuevas fuentes diádicas originales con datos descargados y suficiente temporalidad/exposiciones",
       "status": "PARTIAL_ROUND_ACTION_ACCESS_NO_EXPLICIT_REJECTION_OR_UNION",
-      "rationale": "Columbia y Mixmosa tienen sí/no cruzados, pero Essex/eHarmony/OSF checo no procesados; ninguna satisface exposición completa + ex ante popularity. Los investigadores Rios sí dispusieron de exposiciones y decisiones diádicas históricas de una app real, pero fueron datos de industria no compartidos con nuestro proyecto. La disponibilidad de un instrumento publicado no equivale a acceso actual a filas. The original authors provide analysis code and a link to data at Archive.org, not a reachable CSV in our environment; sample has repeated encounters but does not measure app algorithm exposure or longitudinal relationship stability. Author-released original SSJY action graph is now physically inspected (SHA256 recorded) with 232954 click/msg events, 177413 distinct directed links, but has no documented candidate exposure denominator, no time or paired explicit rejection. 'rec' type may represent recommendation, yet its semantics and observer coverage are unverified. Event record includes actor, target, ordinal within-actor ROUND, rec/click/msg. Real rows processed with aggregate-only outputs. No explicit reject/no-like, verified reciprocal mutual like, absolute time or relationship duration. Not sufficient for original ESBM full multi-stage causal estimand. Although MotifGNN 2020 exposes SSJY through public Google Drive and N81/N82 were processed locally, original 2012 participant instructions restrict contest dataset to competition analysis/modeling and say scientific publication needs Shanghai Huaqianshu authorization. This is historical evidence, not a present formal license. Current rights unverified; no further research use or dissemination should proceed until rightsholder confirms. No original rows in GitHub.",
+      "rationale": "Columbia y Mixmosa tienen sí/no cruzados, pero Essex/eHarmony/OSF checo no procesados; ninguna satisface exposición completa + ex ante popularity. Los investigadores Rios sí dispusieron de exposiciones y decisiones diádicas históricas de una app real, pero fueron datos de industria no compartidos con nuestro proyecto. La disponibilidad de un instrumento publicado no equivale a acceso actual a filas. The original authors provide analysis code and a link to data at Archive.org, not a reachable CSV in our environment; sample has repeated encounters but does not measure app algorithm exposure or longitudinal relationship stability. Author-released original SSJY action graph is now physically inspected (SHA256 recorded) with 232954 click/msg events, 177413 distinct directed links, but has no documented candidate exposure denominator, no time or paired explicit rejection. 'rec' type may represent recommendation, yet its semantics and observer coverage are unverified. Event record includes actor, target, ordinal within-actor ROUND, rec/click/msg. Real rows processed with aggregate-only outputs. No explicit reject/no-like, verified reciprocal mutual like, absolute time or relationship duration. Not sufficient for original ESBM full multi-stage causal estimand. Although MotifGNN 2020 exposes SSJY through public Google Drive and N81/N82 were processed locally, original 2012 participant instructions restrict contest dataset to competition analysis/modeling and say scientific publication needs Shanghai Huaqianshu authorization. This is historical evidence, not a present formal license. Current rights unverified; no further research use or dissemination should proceed until rightsholder confirms. No original rows in GitHub. Hypergamy review 2026-10-29: Bruch-Newman message networks show aspirational contacts and replies; Urbina code is replicable with authorized IPUMS marriage samples but no dyadic exposures/rejections; original microdata not accessed.",
       "evidence_sources": [
         "SRC010",
         "SRC011",
@@ -299,9 +318,11 @@
         "SRC059",
         "SRC061",
         "SRC062",
-        "SRC064"
+        "SRC064",
+        "SRC075",
+        "SRC080"
       ],
-      "last_update_id": "U088",
+      "last_update_id": "U107",
       "uncertainty": "Not probabilistically calibrated; evidence heterogeneous and some sources only metadata",
       "next_falsifier_or_test": "Independent prospective data with matched risk set, competent adversarial controls and documented sample selection",
       "numeric_probability": null,
@@ -321,9 +342,10 @@
         "U069",
         "U072",
         "U080",
-        "U088"
+        "U088",
+        "U107"
       ],
-      "latest_evidence_summary": "Data access is genuine but original rightsholder research/publication permission is unresolved, so the available rows fail a stringent publication-permission gate.",
+      "latest_evidence_summary": "Bruch-Newman message networks show aspirational contacts and replies; Urbina code is replicable with authorized IPUMS marriage samples but no dyadic exposures/rejections; original microdata not accessed.",
       "last_revised_at": "2026-10-29"
     },
     {
@@ -796,10 +818,10 @@
   ],
   "audit": {
     "all_priors_linked": true,
-    "source_ids_linked": 73,
-    "registered_sources": 73,
-    "update_events": 101,
+    "source_ids_linked": 80,
+    "registered_sources": 80,
+    "update_events": 107,
     "counts_as_new_AB_cycle": false,
-    "last_update": "2026-10-29 POST_N82_GITHUB_PUBLIC_STATA_BLOBS_DECODED_HEADER_QA_ONLY"
+    "last_update": "2026-10-29 ABR_HYPERGAMY_PRIOR_ART_REVIEW_NONCYCLE"
   }
 }
