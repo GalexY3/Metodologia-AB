@@ -3,7 +3,7 @@
   "project": "mercados-de-pareja",
   "date": "2026-10-28",
   "scope": "Retrospective provenance backfill from repository reports plus N56/N57 publisher audit. Original data never copied; not systematic or claim of accessing raw data for bibliography.",
-  "source_count": 104,
+  "source_count": 106,
   "sources": [
     {
       "id": "SRC001",
@@ -2252,7 +2252,50 @@
         "report_path": "proyectos/mercados-de-pareja/research/ABR_SRC104_PRIMARY_PROTOCOL_ROSTER_IMPOSSIBILITY_NOCYCLE_20261029/REPORT.md",
         "AB_cycle_increment": 0
       }
+    },
+    {
+      "id": "SRC105",
+      "title": "Jauk et al. (2016), How Alluring Are Dark Personalities? The Dark Triad and Attractiveness in Speed Dating — original Graz 90 people/691 face-to-face dates in 3 events, native repeat-date yes/no, original OSF person/dyad .sav catalogue",
+      "canonical_url": "https://doi.org/10.1002/per.2040",
+      "author_original_report": "https://scottbarrykaufman.com/wp-content/uploads/2016/01/Jauk_et_al-2016-European_Journal_of_Personality.pdf",
+      "author_OSF_project": "https://osf.io/j4fcb/",
+      "secondary_codebook_vignette": "https://rubenarslan.github.io/codebook/articles/codebook_sav.html",
+      "source_type": "NEW_PRIMARY_ORIGINAL_HUMAN_SPEEDDATE_PAPER_PLUS_ORIGINAL_AUTHOR_OSF_DYADIC_FILE_MENTION_NOT_ACCESSED_RIGHTS_UNVERIFIED",
+      "verified_at": "2026-10-29",
+      "contribution": "Original peer-reviewed Methods reports 90 people (46 women, 44 men) in 3 original three-minute speed-dating events, group women:men 14:11/19:18/13:15, 691 face-to-face dates (products 154+342+195=691). Both sexes individually marked whether they would see counterpart again after actual date; mutual yes led to exchange of contact information. Original study uses SRM target/perceiver effects and observed dyadic reciprocal actual choices, making such a mechanism clear prior art, not an exclusive ESBM prediction. The software R codebook vignette documents author's original OSF project and separate 'DarkTriadDate_dyad.sav'/'DarkTriadDate_person.sav', SPSS labelled variables, acquaintance-corrected derived ratings. Original files not inspected; codebook vignette is secondary metadata, not independent new subjects.",
+      "rights": "NO FIRST-PARTY DYADIC DATASET LICENSE VERIFIED. Public paper and linked OSF are not licence to publish/reuse person-level data; codebook vignette mentions 'requiresSubscription' metadata without resolving actual use rights. No licence accepted, no contact with authors, no downloaded original dyadic file.",
+      "original_data_access": "NO_ORIGINAL_DYAD_FILE_BYTES_NO_SHA_NO_CASE_IDENTIFIERS_NO_SCHEMA_JOIN",
+      "independence": "Different publication and recruitment/cohort from published SRC104 Pisanski and SRC083 Hofer 2021 by study description and year; individual IDs and dates not compared, independence from all recorded datasets not proven.",
+      "legal_dataset_reuse_verified": false,
+      "raw_human_rows_read": false,
+      "original_pairwise_file_opened": false,
+      "two_native_yesno_decisions_reported_in_paper": true,
+      "dyadic_native_vote_pairwise_join_verified": false,
+      "no_new_exclusive_ESBM_prediction": true,
+      "AB_cycle_increment": 0,
+      "cycle_ids": []
+    },
+    {
+      "id": "SRC106",
+      "title": "Hall, Hart and Lambert (2026), Do Narcissistic People Have More Dating Success? Evidence From a Speed-Dating Study — eight real speed-date events, 129 undergraduates, second-date yes/no and original OSF data-availability assertion",
+      "canonical_url": "https://doi.org/10.1111/jopy.70059",
+      "publisher_original": "https://onlinelibrary.wiley.com/doi/10.1111/jopy.70059",
+      "author_OSF_data_repository": "https://osf.io/tn9mj/?view_only=3f9ff1f5fa604089ac66f2de3058df01",
+      "source_type": "NEW_PRIMARY_2026_ORIGINAL_EIGHT_EVENT_HUMAN_SPEEDDATE_NATIVE_YES_NO_PUBLISHER_SAYS_OSF_OPEN_BUT_FILES_NOT_READ_OR_LICENSE_CHECKED",
+      "verified_at": "2026-10-29",
+      "contribution": "Original Wiley-published February 19 2026 paper Methods state eight speed-dating events and 129 college participants, each rated date characteristics and chose whether they would want a second date. Data availability statement explicitly directs readers to OSF via view-only link. A genuine additional primary real encounter event cohort prospect, but no original actor+partner keys or dual native vote columns verified, no independently held-out results, and source license of data files not established. The paper studies narcissism, not new ESBM-specific predictions.",
+      "rights": "Publisher says findings data are openly available in OSF; this is not proof of unrestricted data licensing, source-specific licence, consent for any redistribution, absence of controls, or retrievability. Did not access OSF or accept licences; no author contact.",
+      "original_data_access": "NO_ORIGINAL_OSF_BYTES_NO_SHA_NO_EVENTS_ORDERS_NO_NATIVE_CROSS_VOTE_JOIN",
+      "independence": "Eight 2026-published events plausibly new, distinct author teams from SRC104 and SRC105, but raw sample IDs and collection dates not audited against prior Northwestern or other sources; confirm before using as independent holdout.",
+      "legal_dataset_reuse_verified": false,
+      "raw_human_rows_read": false,
+      "original_pairwise_file_opened": false,
+      "two_native_yesno_decisions_reported_in_paper": true,
+      "dyadic_native_vote_pairwise_join_verified": false,
+      "no_new_exclusive_ESBM_prediction": true,
+      "AB_cycle_increment": 0,
+      "cycle_ids": []
     }
   ],
-  "last_added_campaign": "ABR_R5_GATE_PISANSKI_FIGSHARE_NOCYCLE_20261029"
+  "last_added_campaign": "ABR_NEW_PRIMARY_DYADIC_JAUK_HALL_R5_GATE_NOCYCLE_20261029"
 }
