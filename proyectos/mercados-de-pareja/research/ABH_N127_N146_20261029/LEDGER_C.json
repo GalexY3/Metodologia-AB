@@ -1,0 +1,456 @@
+{
+  "schema": "ABH.AJ.N127_N146_BLOCK_C.v1",
+  "date": "2026-10-29",
+  "branch": "research/ab-h-esbm-event-api-20261029",
+  "prereg_path": "proyectos/mercados-de-pareja/research/ABH_N127_N146_20261029/PREREG_C.json",
+  "code_freeze_commits": [
+    "5f3a6f4d32588e6781a5ae9b80eee3c1b5fe0f63"
+  ],
+  "outcome_index_path": "proyectos/mercados-de-pareja/research/ABH_N127_N146_20261029/RESULTS_INDEX.json",
+  "human_external_evidence": false,
+  "grade_0_3": "0/3",
+  "CT2_before": 7,
+  "CT2_after": 7,
+  "substantive_outcome_limit": "toy network generator and artificial identity",
+  "children": [
+    {
+      "id": "N137",
+      "parent": "N136",
+      "mode": "INTERACTION",
+      "drift_D": {
+        "frozen_code": "run_C.py commit pending; frozen before outcomes",
+        "source_modules": [
+          "esbm_event_engine.py",
+          "social_graph.py",
+          "mini_world.py"
+        ]
+      },
+      "A": {
+        "question": "Quantify network topology × appointment slots interaction against same actor shock and degree null.",
+        "estimand": "artificial event-stage metrics in 24 fictitious agents, four ticks; never human happiness"
+      },
+      "B": {
+        "rivals": [
+          "fixed-degree network null",
+          "one-slot baseline",
+          "naive completed-only duration",
+          "formed-pairs count vs invented proxy"
+        ],
+        "null": "No consistent improvement in active relations, duration, proxy or inequality"
+      },
+      "C": {
+        "falsifier": "30 seeds 4000..4029; four trajectories ring/rewired ×1/2 slots, outcomes exposure, formed, active, n=24 t=4; paired budget differences explicit.",
+        "seed_range": "4000-4029",
+        "budget": "120 simulator executions for shared C batch; 30 seeds×2 networks×2 slot counts; all tests share runs, not independent studies"
+      },
+      "D": {
+        "frozen_code": "run_C.py commit pending; frozen before outcomes",
+        "source_modules": [
+          "esbm_event_engine.py",
+          "social_graph.py",
+          "mini_world.py"
+        ],
+        "source_code_commits": [
+          "5f3a6f4d32588e6781a5ae9b80eee3c1b5fe0f63"
+        ]
+      },
+      "E": {
+        "status": "PASS",
+        "observed": {
+          "network_slots_runs": 120,
+          "mean_two_minus_one_active_ring": 1.0666666666666667,
+          "mean_two_minus_one_active_rewired_old": 1.1333333333333333,
+          "control_warning": "old network rewiring label-sensitive"
+        },
+        "source_receipt_SHA256": "d1f9452b0cffa1424083927bba1f2071d1f748d82f22ec5a9ae95330cab8e7a2",
+        "independent_trials": "No; all run within same artificial ESBM generator",
+        "human_data_rows": 0
+      },
+      "F": {
+        "null_controls": "Original ESBM exact legacy; matched-degree artificial comparator; before/after source checks; input abuse; adversarial actor relabel",
+        "adversarial_finding": "This run used prior rewired null subsequently found label sensitive N144: withdraw cross-network inference."
+      },
+      "G": {
+        "holdout": "NONE",
+        "external_replication": "NONE",
+        "code_parity": "Input source SHA verified; canonical clean subprocess is same OS/env"
+      },
+      "H": {
+        "prior_update": "U176 technical negative P-NETWORK-INVARIANCE and U177–U179 NO_CHANGE_WITH_REASON; never a human posterior",
+        "source_ids": [],
+        "numeric_bayes": null
+      },
+      "I": {
+        "scientific_grade": "0/3",
+        "technical_valid": true,
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "CT2_is_not_probability": true,
+        "novelty_not_claimed": true
+      },
+      "J": {
+        "decision": "CONTINUE_OR_CLOSE",
+        "next": "N138",
+        "reason": "Next precommitted falsifier or final closure after technical success",
+        "credit_spent": 1
+      },
+      "record_kind": "VALID_EXECUTED_ABH_TECHNICAL_OR_NEGATIVE",
+      "source_refs": [
+        "esbm_dynamic.py sha256=f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+        "proyectos/mercados-de-pareja/research/ABH_N127_N146_20261029/PREREG_C.json",
+        "proyectos/mercados-de-pareja/research/ABH_N127_N146_20261029/RESULTS_INDEX.json"
+      ]
+    },
+    {
+      "id": "N138",
+      "parent": "N137",
+      "mode": "RISK_PARITY",
+      "drift_D": {
+        "frozen_code": "run_C.py commit pending; frozen before outcomes",
+        "source_modules": [
+          "esbm_event_engine.py",
+          "social_graph.py",
+          "mini_world.py"
+        ]
+      },
+      "A": {
+        "question": "Test whether degree-preserving rewiring equalizes observed feasible opportunities per tick; report failures as confounding.",
+        "estimand": "artificial event-stage metrics in 24 fictitious agents, four ticks; never human happiness"
+      },
+      "B": {
+        "rivals": [
+          "fixed-degree network null",
+          "one-slot baseline",
+          "naive completed-only duration",
+          "formed-pairs count vs invented proxy"
+        ],
+        "null": "No consistent improvement in active relations, duration, proxy or inequality"
+      },
+      "C": {
+        "falsifier": "At each initial fixed risk set and both slot policies record eligible candidate edges, actual exposures and group composition, never claim equal longitudinal budget if false.",
+        "seed_range": "4000-4029",
+        "budget": "120 simulator executions for shared C batch; 30 seeds×2 networks×2 slot counts; all tests share runs, not independent studies"
+      },
+      "D": {
+        "frozen_code": "run_C.py commit pending; frozen before outcomes",
+        "source_modules": [
+          "esbm_event_engine.py",
+          "social_graph.py",
+          "mini_world.py"
+        ],
+        "source_code_commits": [
+          "5f3a6f4d32588e6781a5ae9b80eee3c1b5fe0f63"
+        ]
+      },
+      "E": {
+        "status": "PASS",
+        "observed": {
+          "initial_riskset_audits": 120,
+          "budget_inequality_documented": true
+        },
+        "source_receipt_SHA256": "d1f9452b0cffa1424083927bba1f2071d1f748d82f22ec5a9ae95330cab8e7a2",
+        "independent_trials": "No; all run within same artificial ESBM generator",
+        "human_data_rows": 0
+      },
+      "F": {
+        "null_controls": "Original ESBM exact legacy; matched-degree artificial comparator; before/after source checks; input abuse; adversarial actor relabel",
+        "adversarial_finding": "This run used prior rewired null subsequently found label sensitive N144: withdraw cross-network inference."
+      },
+      "G": {
+        "holdout": "NONE",
+        "external_replication": "NONE",
+        "code_parity": "Input source SHA verified; canonical clean subprocess is same OS/env"
+      },
+      "H": {
+        "prior_update": "U176 technical negative P-NETWORK-INVARIANCE and U177–U179 NO_CHANGE_WITH_REASON; never a human posterior",
+        "source_ids": [],
+        "numeric_bayes": null
+      },
+      "I": {
+        "scientific_grade": "0/3",
+        "technical_valid": true,
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "CT2_is_not_probability": true,
+        "novelty_not_claimed": true
+      },
+      "J": {
+        "decision": "CONTINUE_OR_CLOSE",
+        "next": "N139",
+        "reason": "Next precommitted falsifier or final closure after technical success",
+        "credit_spent": 1
+      },
+      "record_kind": "VALID_EXECUTED_ABH_TECHNICAL_OR_NEGATIVE",
+      "source_refs": [
+        "esbm_dynamic.py sha256=f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+        "proyectos/mercados-de-pareja/research/ABH_N127_N146_20261029/PREREG_C.json",
+        "proyectos/mercados-de-pareja/research/ABH_N127_N146_20261029/RESULTS_INDEX.json"
+      ]
+    },
+    {
+      "id": "N139",
+      "parent": "N138",
+      "mode": "CENSORING",
+      "drift_D": {
+        "frozen_code": "run_C.py commit pending; frozen before outcomes",
+        "source_modules": [
+          "esbm_event_engine.py",
+          "social_graph.py",
+          "mini_world.py"
+        ]
+      },
+      "A": {
+        "question": "Reconstruct event durations with right censoring and a tiny synthetic Kaplan–Meier restricted duration diagnostic.",
+        "estimand": "artificial event-stage metrics in 24 fictitious agents, four ticks; never human happiness"
+      },
+      "B": {
+        "rivals": [
+          "fixed-degree network null",
+          "one-slot baseline",
+          "naive completed-only duration",
+          "formed-pairs count vs invented proxy"
+        ],
+        "null": "No consistent improvement in active relations, duration, proxy or inequality"
+      },
+      "C": {
+        "falsifier": "Trace every formation/dissolution for 2-slot variants and 30 seeds; every active relationship censored, no negative durations, KM survival monotonically non-increasing, compare naive completed durations.",
+        "seed_range": "4000-4029",
+        "budget": "120 simulator executions for shared C batch; 30 seeds×2 networks×2 slot counts; all tests share runs, not independent studies"
+      },
+      "D": {
+        "frozen_code": "run_C.py commit pending; frozen before outcomes",
+        "source_modules": [
+          "esbm_event_engine.py",
+          "social_graph.py",
+          "mini_world.py"
+        ],
+        "source_code_commits": [
+          "5f3a6f4d32588e6781a5ae9b80eee3c1b5fe0f63"
+        ]
+      },
+      "E": {
+        "status": "PASS",
+        "observed": {
+          "ring_records": 146,
+          "ring_censored": 100,
+          "ring_naive_completed_duration": 1.5434782608695652,
+          "ring_restricted_KM_t3": 2.514059120403749,
+          "old_rewired_records": 147,
+          "old_rewired_censored": 104,
+          "old_null_sensitivity": true
+        },
+        "source_receipt_SHA256": "d1f9452b0cffa1424083927bba1f2071d1f748d82f22ec5a9ae95330cab8e7a2",
+        "independent_trials": "No; all run within same artificial ESBM generator",
+        "human_data_rows": 0
+      },
+      "F": {
+        "null_controls": "Original ESBM exact legacy; matched-degree artificial comparator; before/after source checks; input abuse; adversarial actor relabel",
+        "adversarial_finding": "This run used prior rewired null subsequently found label sensitive N144: withdraw cross-network inference."
+      },
+      "G": {
+        "holdout": "NONE",
+        "external_replication": "NONE",
+        "code_parity": "Input source SHA verified; canonical clean subprocess is same OS/env"
+      },
+      "H": {
+        "prior_update": "U176 technical negative P-NETWORK-INVARIANCE and U177–U179 NO_CHANGE_WITH_REASON; never a human posterior",
+        "source_ids": [],
+        "numeric_bayes": null
+      },
+      "I": {
+        "scientific_grade": "0/3",
+        "technical_valid": true,
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "CT2_is_not_probability": true,
+        "novelty_not_claimed": true
+      },
+      "J": {
+        "decision": "CONTINUE_OR_CLOSE",
+        "next": "N140",
+        "reason": "Next precommitted falsifier or final closure after technical success",
+        "credit_spent": 1
+      },
+      "record_kind": "VALID_EXECUTED_ABH_TECHNICAL_OR_NEGATIVE",
+      "source_refs": [
+        "esbm_dynamic.py sha256=f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+        "proyectos/mercados-de-pareja/research/ABH_N127_N146_20261029/PREREG_C.json",
+        "proyectos/mercados-de-pareja/research/ABH_N127_N146_20261029/RESULTS_INDEX.json"
+      ]
+    },
+    {
+      "id": "N140",
+      "parent": "N139",
+      "mode": "WELFARE_PROXY",
+      "drift_D": {
+        "frozen_code": "run_C.py commit pending; frozen before outcomes",
+        "source_modules": [
+          "esbm_event_engine.py",
+          "social_graph.py",
+          "mini_world.py"
+        ]
+      },
+      "A": {
+        "question": "Define artificial quality proxy based on latent q similarity and compare quantity, total proxy and per-active partnership quality.",
+        "estimand": "artificial event-stage metrics in 24 fictitious agents, four ticks; never human happiness"
+      },
+      "B": {
+        "rivals": [
+          "fixed-degree network null",
+          "one-slot baseline",
+          "naive completed-only duration",
+          "formed-pairs count vs invented proxy"
+        ],
+        "null": "No consistent improvement in active relations, duration, proxy or inequality"
+      },
+      "C": {
+        "falsifier": "A priori quality=1−|q_i−q_j|, calculated per formed edge, NOT subjective wellbeing; compute stock proxy from events; measure rankings across policies, include negative tradeoffs.",
+        "seed_range": "4000-4029",
+        "budget": "120 simulator executions for shared C batch; 30 seeds×2 networks×2 slot counts; all tests share runs, not independent studies"
+      },
+      "D": {
+        "frozen_code": "run_C.py commit pending; frozen before outcomes",
+        "source_modules": [
+          "esbm_event_engine.py",
+          "social_graph.py",
+          "mini_world.py"
+        ],
+        "source_code_commits": [
+          "5f3a6f4d32588e6781a5ae9b80eee3c1b5fe0f63"
+        ]
+      },
+      "E": {
+        "status": "PASS",
+        "observed": {
+          "quality_proxy": "1 - abs(q_i-q_j)",
+          "not_human_wellbeing": true,
+          "old_network_null_sensitive": true
+        },
+        "source_receipt_SHA256": "d1f9452b0cffa1424083927bba1f2071d1f748d82f22ec5a9ae95330cab8e7a2",
+        "independent_trials": "No; all run within same artificial ESBM generator",
+        "human_data_rows": 0
+      },
+      "F": {
+        "null_controls": "Original ESBM exact legacy; matched-degree artificial comparator; before/after source checks; input abuse; adversarial actor relabel",
+        "adversarial_finding": "This run used prior rewired null subsequently found label sensitive N144: withdraw cross-network inference."
+      },
+      "G": {
+        "holdout": "NONE",
+        "external_replication": "NONE",
+        "code_parity": "Input source SHA verified; canonical clean subprocess is same OS/env"
+      },
+      "H": {
+        "prior_update": "U176 technical negative P-NETWORK-INVARIANCE and U177–U179 NO_CHANGE_WITH_REASON; never a human posterior",
+        "source_ids": [],
+        "numeric_bayes": null
+      },
+      "I": {
+        "scientific_grade": "0/3",
+        "technical_valid": true,
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "CT2_is_not_probability": true,
+        "novelty_not_claimed": true
+      },
+      "J": {
+        "decision": "CONTINUE_OR_CLOSE",
+        "next": "N141",
+        "reason": "Next precommitted falsifier or final closure after technical success",
+        "credit_spent": 1
+      },
+      "record_kind": "VALID_EXECUTED_ABH_TECHNICAL_OR_NEGATIVE",
+      "source_refs": [
+        "esbm_dynamic.py sha256=f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+        "proyectos/mercados-de-pareja/research/ABH_N127_N146_20261029/PREREG_C.json",
+        "proyectos/mercados-de-pareja/research/ABH_N127_N146_20261029/RESULTS_INDEX.json"
+      ]
+    },
+    {
+      "id": "N141",
+      "parent": "N140",
+      "mode": "INEQUALITY",
+      "drift_D": {
+        "frozen_code": "run_C.py commit pending; frozen before outcomes",
+        "source_modules": [
+          "esbm_event_engine.py",
+          "social_graph.py",
+          "mini_world.py"
+        ]
+      },
+      "A": {
+        "question": "Measure receiver exposure inequality and contrast against relation stock with known network capacity.",
+        "estimand": "artificial event-stage metrics in 24 fictitious agents, four ticks; never human happiness"
+      },
+      "B": {
+        "rivals": [
+          "fixed-degree network null",
+          "one-slot baseline",
+          "naive completed-only duration",
+          "formed-pairs count vs invented proxy"
+        ],
+        "null": "No consistent improvement in active relations, duration, proxy or inequality"
+      },
+      "C": {
+        "falsifier": "Paired 30 seeds×4 scenarios; Gini of impressions and zero-exposure agents, plus active pairs; no fairness or real demographic claims.",
+        "seed_range": "4000-4029",
+        "budget": "120 simulator executions for shared C batch; 30 seeds×2 networks×2 slot counts; all tests share runs, not independent studies"
+      },
+      "D": {
+        "frozen_code": "run_C.py commit pending; frozen before outcomes",
+        "source_modules": [
+          "esbm_event_engine.py",
+          "social_graph.py",
+          "mini_world.py"
+        ],
+        "source_code_commits": [
+          "5f3a6f4d32588e6781a5ae9b80eee3c1b5fe0f63"
+        ]
+      },
+      "E": {
+        "status": "PASS",
+        "observed": {
+          "synthetic_exposure_gini": 60,
+          "real_fairness_inference": false,
+          "old_network_null_sensitive": true
+        },
+        "source_receipt_SHA256": "d1f9452b0cffa1424083927bba1f2071d1f748d82f22ec5a9ae95330cab8e7a2",
+        "independent_trials": "No; all run within same artificial ESBM generator",
+        "human_data_rows": 0
+      },
+      "F": {
+        "null_controls": "Original ESBM exact legacy; matched-degree artificial comparator; before/after source checks; input abuse; adversarial actor relabel",
+        "adversarial_finding": "This run used prior rewired null subsequently found label sensitive N144: withdraw cross-network inference."
+      },
+      "G": {
+        "holdout": "NONE",
+        "external_replication": "NONE",
+        "code_parity": "Input source SHA verified; canonical clean subprocess is same OS/env"
+      },
+      "H": {
+        "prior_update": "U176 technical negative P-NETWORK-INVARIANCE and U177–U179 NO_CHANGE_WITH_REASON; never a human posterior",
+        "source_ids": [],
+        "numeric_bayes": null
+      },
+      "I": {
+        "scientific_grade": "0/3",
+        "technical_valid": true,
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "CT2_is_not_probability": true,
+        "novelty_not_claimed": true
+      },
+      "J": {
+        "decision": "CONTINUE_OR_CLOSE",
+        "next": "N142",
+        "reason": "Next precommitted falsifier or final closure after technical success",
+        "credit_spent": 1
+      },
+      "record_kind": "VALID_EXECUTED_ABH_TECHNICAL_OR_NEGATIVE",
+      "source_refs": [
+        "esbm_dynamic.py sha256=f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+        "proyectos/mercados-de-pareja/research/ABH_N127_N146_20261029/PREREG_C.json",
+        "proyectos/mercados-de-pareja/research/ABH_N127_N146_20261029/RESULTS_INDEX.json"
+      ]
+    }
+  ]
+}
