@@ -2089,7 +2089,7 @@
       "access_failure": "Historical download failures remain, but copy was user-provided; no official publisher bitwise checksum cross-check; incomplete participant reciprocity and 15 cross-record mismatches block treating all joins as verified.",
       "sampling_limits": "Only 2 sessions, 30 participants; true event IDs, raw dates performed/missing, round ordering and whether original spreadsheet retains both individually written votes pairwise are UNVERIFIED. Distinct cohort from catalogued sources suggested by study provenance, not directly established by file IDs.",
       "structural_limit": "Speed-date voting is simultaneous after a 6-min meeting; ESBM v2 is sequential proposal followed by conditional reply. Positive bilateral interest is not confirmed exclusive union or duration. No platform exposure, policy intervention or direct transportability. No new ESBM-exclusive prediction relative to B0/B1/SRM/B2/B4/B6.",
-      "falsifier": "Explain or independently resolve 15 mirrored vote inconsistencies and 10 one-sided dyad keys using original publication authors' documentation or permitted original material before defining a confirmatory dyadic outcome. Never overwrite raw votes without pre-registered rules. Require new mechanistically discriminating hypothesis, competent controls, independent holdout and R5 even if data repaired.",
+      "falsifier": "Explain or independently resolve 15 mirrored vote inconsistencies and 10 one-sided dyad keys using original publication authors' documentation or permitted original material before defining a confirmatory dyadic outcome. Never overwrite raw votes without pre-registered rules. Require new mechanistically discriminating hypothesis, competent controls, independent holdout and R5 even if data repaired. Later read-only adversarial QA corrected false 32/116 Round comparison to 26/116 because 6 mixed numeric/text same-valued rounds; conflicts concentrated in 13/26 cross-round pairs vs 2/90 same-round. 18 cross-round pairs also conflict on partner repeated scores, but 2 true same-round votes still conflict. Never impute or alter recorded choices without original external documentation.",
       "file_level_metadata_rights_verified": true,
       "original_rows_read": true,
       "bilateral_decisions_confirmed_by_method": true,
@@ -2147,7 +2147,7 @@
           "Chosen_both_match",
           "Dates_ID"
         ],
-        "raw_variable_warning": "Round differs between two partner-side rows in 32/116 linked dyads; cannot assume identical round number is a join key; join used event+actor+Dates_ID reverse, not Round. Do not infer event chronology or invent date ordering.",
+        "raw_variable_warning": "CORRECTED 2026-10-29: 32/116 unnormalized Round type-sensitive differences included 6 format-only differences; actual integer-normalized Round value differences 26/116. Do not use Round as a verified unique join key or force overwrite. Audit report ABR_SRC104_MIRROR_ROUND_ADVERSARIAL_QA_NOCYCLE_20261029.",
         "per_directional_encounter_missing_selected": {
           "Age": 12,
           "Height_cm": 12,
@@ -2166,10 +2166,45 @@
         "legal": "SRC104 original Figshare item metadata CC BY 4.0 as verified previously; user-uploaded bytes do not independently verify canonical checksum. Consent/GDPR and the possible linkability of romance decisions remain to be assessed before disclosure/reuse.",
         "outcome_use": "A documented two-sided native response exists on 241 of 242 directed encounter units; partial two-sided ID join obtained on 116 pair keys with 15 discordant vote cross-checks. No silent repair, no automated data cleansing, no causal or predictive test.",
         "no_cycles": true,
-        "stop_R5_external": true
+        "stop_R5_external": true,
+        "raw_variable_warning_before_20261029": "Previous source audit asserted 32/116 round label differences using mixed numeric/text types; this was an artifact of unnormalized comparison.",
+        "round_type_correction_20261029": {
+          "previous_round_different_untyped": 32,
+          "round_different_numeric_normalized": 26,
+          "format_only_false_differences": 6,
+          "native_file_name_actor_round_segment_mismatches": 0,
+          "voice_segments_checked": 726,
+          "event_participant_date_units": 242,
+          "matched_reverse_id_pairs": 116,
+          "same_round_pairs": 90,
+          "same_round_pairs_consistent_cross_vote": 88,
+          "same_round_pairs_discordant_cross_vote": 2,
+          "different_round_pairs": 26,
+          "different_round_pairs_consistent_cross_vote": 13,
+          "different_round_pairs_discordant_cross_vote": 13,
+          "same_round_dyads_with_any_counterpart_attribute_mismatch": 0,
+          "different_round_dyads_with_any_counterpart_attribute_mismatch": 18,
+          "cross_round_conflicting_votes_with_counterpart_attribute_mismatch": 10,
+          "one_direction_keys": 10,
+          "one_direction_keys_in_second_session": 10,
+          "one_direction_keys_with_unrecorded_counterpart": 8,
+          "distinct_unrecorded_counterpart_ids": 2,
+          "unrecorded_counterpart_reference_frequency": [
+            6,
+            2
+          ],
+          "one_direction_keys_missing_inverse_despite_counterpart_recorded": 2,
+          "one_direction_keys_missing_both_vote_values": 1,
+          "original_rows_edited": false,
+          "source_checksum_newly_verified": false,
+          "new_model_tests": false,
+          "documentation_only": true,
+          "report": "proyectos/mercados-de-pareja/research/ABR_SRC104_MIRROR_ROUND_ADVERSARIAL_QA_NOCYCLE_20261029/REPORT.md"
+        }
       },
       "partial_bilateral_join_verified": true,
-      "canonical_artifact_sha256_verified": false
+      "canonical_artifact_sha256_verified": false,
+      "last_methodological_audit": "2026-10-29 SRC104 round type correction and cross-partner covariate mirror checks; see proyectos/mercados-de-pareja/research/ABR_SRC104_MIRROR_ROUND_ADVERSARIAL_QA_NOCYCLE_20261029/REPORT.md"
     }
   ],
   "last_added_campaign": "ABR_R5_GATE_PISANSKI_FIGSHARE_NOCYCLE_20261029"

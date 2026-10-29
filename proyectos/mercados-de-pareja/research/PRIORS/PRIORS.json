@@ -172,7 +172,7 @@
         "SRC032",
         "SRC104"
       ],
-      "last_update_id": "U160",
+      "last_update_id": "U162",
       "uncertainty": "Not probabilistically calibrated; evidence heterogeneous and some sources only metadata",
       "next_falsifier_or_test": "Independent prospective data with matched risk set, competent adversarial controls and documented sample selection",
       "numeric_probability": null,
@@ -196,9 +196,10 @@
         "U152",
         "U154",
         "U158",
-        "U160"
+        "U160",
+        "U162"
       ],
-      "latest_evidence_summary": "Actually-read SRC104 workbook verifies opportunity rows for the 30 recorded actors and partner ID variable after real 6-minute speed dates. The 726 sound segments collapse to 242 actor-date records; 116 dyads have two counterpart rows and 10 only one side. 32 of 116 mirrored pairs have differing 'Round' labels, so Round alone is not a reliable pairing key; stage-by-stage random opportunities and visibility are not measured. No causal intervention, independent test or new ESBM-specific claim.",
+      "latest_evidence_summary": "SRC104 round mismatch in previous ledger 32/116 was comparison of mixed integer/text Round; corrected numeric value mismatch=26/116. 726 audio filenames independently agree with recorded actor/round/segment; 90 mirrored dyads are same-round (88 vote-consistent, 2 contradictions); 26 are cross-round (13 vote inconsistent). Physical event clock not externally established, round cannot be used to overwrite identity or infer causal exposure/order. No new R5 release.",
       "last_revised_at": "2026-10-29"
     },
     {
@@ -374,7 +375,7 @@
         "SRC100",
         "SRC104"
       ],
-      "last_update_id": "U159",
+      "last_update_id": "U161",
       "uncertainty": "Not probabilistically calibrated; evidence heterogeneous and some sources only metadata",
       "next_falsifier_or_test": "Independent prospective data with matched risk set, competent adversarial controls and documented sample selection",
       "numeric_probability": null,
@@ -406,9 +407,10 @@
         "U130",
         "U149",
         "U157",
-        "U159"
+        "U159",
+        "U161"
       ],
-      "latest_evidence_summary": "New actual SRC104 original-style workbook uploaded and read: SHA256 91c0bb93e699cc003ad32a11c51d38da6018cf9851b613822ecb19ef5618be00; 5 sheets incl 726 acoustic rows (242 respondent-pair encounters×3), 30 recorded participant IDs over two events. Event+respondent+counterparty reverse link produces 116 dyads with both actor rows but 15 conflicts when mirroring yes/no, 10 single-sided and one missing native choice record. Thus data access improved, yet bilateral join is incomplete/inconsistent, no independent holdout/power and no model validation. McMaster older valid data preserved. STOP_R5 remains.",
+      "latest_evidence_summary": "Read-only forensic rerun of SRC104 confirms 15/116 cross-vote conflicts but corrects 32 to 26 Round disagreements after integer normalization; 13/26 different-round pairs have conflicts vs 2/90 same-round, and 18/26 different-round pairs have contradictory mirrored partner score annotations vs 0/90 same-round. Source cannot identify cause of mislabeling or which vote true. 10 single-sided keys all in second event: 8 refer to two nonvoice partner IDs (6+2), 2 recorded counterpart but missing inverse, and 1 with no choice. Evidence quality increased, no safe dyadic confirmatory outcome. Prior remains challenged by missing rights/identification/independent holdout.",
       "last_revised_at": "2026-10-29"
     },
     {
@@ -927,8 +929,8 @@
     "all_priors_linked": true,
     "source_ids_linked": 104,
     "registered_sources": 104,
-    "update_events": 160,
+    "update_events": 162,
     "counts_as_new_AB_cycle": false,
-    "last_update": "2026-10-29 U159 P-DYADIC_ACCESS qualitative data access expansion with 15 cross-record conflicts, U160 P-OPPORTUNITY NO_CHANGE_WITH_REASON, no AB cycles."
+    "last_update": "2026-10-29 U161 P-DYADIC_ACCESS + U162 P-OPPORTUNITY, both NO_CHANGE_WITH_REASON; SRC104 untyped Round differences 32 corrected to 26; no cycles"
   }
 }
