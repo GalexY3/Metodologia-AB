@@ -4,7 +4,7 @@
   "date": "2026-10-28",
   "mode": "append-only logical, versioned by Git commits",
   "reconstructed_from_documents": "Retrospective backfill, not preregistration. Old before values NOT_RECORDED unless documented explicitly.",
-  "source_coverage": "84 sources, 30 priors, 112 updates; SRC083 Graz licensed level1 and SRC084 UKDS safeguarded require user login",
+  "source_coverage": "85 sources, 30 priors, 113 updates; SRC085 Tawkify 2023-24 same cohort in Eastwick 2025 and Moreno 2026, OSF link not accessible",
   "events": [
     {
       "id": "U001",
@@ -2878,7 +2878,30 @@
       "prior_probability_before": null,
       "prior_probability_after": null,
       "prereg_status": "NO_N83_PREREG_STOP_R5"
+    },
+    {
+      "id": "U113",
+      "prior_id": "P-NOVELTY",
+      "source_ids": [
+        "SRC085"
+      ],
+      "cycle_ids": [],
+      "before": "STRONG_PRIOR_ART",
+      "after": "STRONG_PRIOR_ART",
+      "direction": "NO_CHANGE_WITH_MATERIAL_PRIOR_ART",
+      "what_the_sources_contribute": "Eastwick 2025 preregistered 4542 Tawkify real blind dates shows slight preference for younger partners regardless of gender; Moreno 2026 uses same cohort, OSF view-only data claimed, not independently downloadable. Reframes age-hypergamy assumptions.",
+      "why_this_updates_or_checks_prior": "New independent original cohort identified and strong gender/age result prior art; no new microdata analyzed or experiment.",
+      "limits": "OSF link inaccessible to tool; license, rows and SHA256 unverified; 2025 and 2026 are SAME cohort not two replications; no union duration.",
+      "falsifier_or_followup": "If legal OSF access becomes available, inspect license, consent, participant/date identifiers and postdate measures before proposing any new age-specific discriminant. Require independent holdout and prereg A-J/code SHA.",
+      "evidence_type": "RECENT_ORIGINAL_OPERATOR_DYADIC_PRIOR_ART_OSF_ACCESS_UNVERIFIED_NONCYCLE",
+      "recorded_at": "2026-10-29",
+      "entry_status": "ACTIVE",
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "prior_probability_before": null,
+      "prior_probability_after": null,
+      "prereg_status": "NO_N83_PREREG_STOP_R5"
     }
   ],
-  "last_campaign": "ABR_LICENSED_DYADIC_GRAZ_UKDS_GATE_NONCYCLE_20261029"
+  "last_campaign": "ABR_TAWKIFY_RECENT_DYADIC_ORIGINAL_OSF_GATE_NONCYCLE_20261029"
 }
