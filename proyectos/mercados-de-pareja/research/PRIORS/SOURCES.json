@@ -3,7 +3,7 @@
   "project": "mercados-de-pareja",
   "date": "2026-10-28",
   "scope": "Retrospective provenance backfill from repository reports plus N56/N57 publisher audit. Original data never copied; not systematic or claim of accessing raw data for bibliography.",
-  "source_count": 66,
+  "source_count": 68,
   "sources": [
     {
       "id": "SRC001",
@@ -1297,7 +1297,51 @@
       "data_license": "PUBLIC_ADAPTED_DOWNLOAD_WITH_NO_REIDENTIFICATION_CONDITION; SOURCE_STANFORD_AGREEMENT_APPLIES; DO_NOT_ASSUME_UNRESTRICTED_DATA_REHOSTING",
       "verified_at": "2026-10-29",
       "counts_as_ab_cycle": 0
+    },
+    {
+      "id": "SRC067",
+      "title": "Rosenfeld, Thomas and Falcon, HCMST 2009 original longitudinal cohort, Stanford 2009–2015",
+      "canonical_url": "https://data.stanford.edu/hcmst",
+      "source_type": "ORIGINAL_STANFORD_PANEL_PROVENANCE_ONLY_NO_BYTES",
+      "first_wave_year": 2009,
+      "follow_up_years": [
+        2010,
+        2011,
+        2013,
+        2015
+      ],
+      "initial_people": 4002,
+      "initial_partnered": 3009,
+      "independence": "Distinct new respondent cohort from HCMST 2017 SRC048/SRC049; same institution/investigators, different people/time; not third-party replication of any ESBM mechanism.",
+      "concepts": "How met current partner, union length and quality, follow-up relationship status/breakup, compatible with duration endpoint and competing explanatory factors; no impressions, no actual bilateral swipe/no, not Spain.",
+      "access_and_rights": "Stanford official page describes free to registered users; data use agreement: no reidentification; no fee for redistribution; notify contact researcher of work; cite original. No consent to identify individuals. Direct binary data attempts unavailable; no raw data or variable codebook bytes processed in current turn.",
+      "sampling": "2009 baseline 4,002 respondents, 3,009 partnered. Followups sample only baseline partnered members eligible in panel, survival and panel attrition can bias; public documentation must govern weights and censoring.",
+      "raw_file_sha256": null,
+      "raw_rows_read": 0,
+      "verified_at": "2026-10-29",
+      "cycle_ids": [],
+      "is_AB_cycle": false,
+      "limits": "No dataset rows, no original data variables/dates inspected, no estimated hazard, impossible to identify ESBM rejection/public reputation effects; important alternative independent temporal cohort only."
+    },
+    {
+      "id": "SRC068",
+      "title": "ICPSR 30103 v8 HCMST 2009–2015 public-use 5-wave collection archive and restrictions",
+      "canonical_url": "https://doi.org/10.3886/ICPSR30103.v8",
+      "source_url": "https://www.icpsr.umich.edu/web/ICPSR/studies/30103/datadocumentation",
+      "publication_date": "2016-03-18 version 8",
+      "source_type": "ORIGINAL_ICPSR_ARCHIVAL_CATALOG_SAME_2009_COHORT_AS_SRC067",
+      "same_cohort_as": "SRC067",
+      "cohort_independent_from": "SRC048/SRC049 HCMST 2017, originally distinct sample.",
+      "what_it_contributes": "Confirms five public-use waves 2009, 2010, 2011, 2013, 2015 and restricted-use separate content (text on why breakups, zip/state). Confirms first-wave relationship duration and followups status/separation; original PIs data collection. Public use stripped detailed indirect IDs and sensitive qualitative responses. Supports prospective survival eligibility but not outcomes until data access.",
+      "sampling": "Baseline partnered cohort respondents are followed; panel participation attrition, risk sets and death/marriage transition require codebook, weights and censoring before unbiased estimates.",
+      "rights": "ICPSR public-use available subject to ICPSR membership/registration/terms, not identical unrestricted CC BY. No specific raw file license verified in current turn; no new file fetched.",
+      "raw_rows_read": 0,
+      "file_hash_verified": false,
+      "cycle_ids": [],
+      "is_AB_cycle": false,
+      "verified_at": "2026-10-29",
+      "limitations": "Archival listing and access eligibility not itself reproduction, not separate independent cohort from SRC067, cannot claim exposure/rejection mechanism or verified effects."
     }
   ],
-  "last_added_campaign": "POST_N82_SOURCE_RIGHTS_AND_PROVENANCE_GATE_NONCYCLE"
+  "last_added_campaign": "POST_N82_HCMST_2009_INDEPENDENT_COHORT_GATE_NONCYCLE"
 }
