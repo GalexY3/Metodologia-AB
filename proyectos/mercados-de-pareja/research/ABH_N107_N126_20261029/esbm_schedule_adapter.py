@@ -53,6 +53,16 @@ def opportunities(p, eligible, available, config, seen, tick, mode='legacy', slo
             a = float(p['u_expose'][tick, i, j]); b = float(p['u_expose'][tick, j, i])
             weight = -np.log(-np.log(np.clip(a, 1e-12, 1-1e-12))) + -np.log(-np.log(np.clip(b, 1e-12, 1-1e-12)))
             edges.append((i, j, weight))
+    # Prospectively repaired N108: cap feasible candidate shortlists to top four
+    # directed opportunity shocks per actor, then take the undirected union.
+    # This restricts the graph; max matching is exact only within this shortlist.
+    shortlist=set()
+    for i in available:
+        candidates=np.array([j for j in available if j!=i and eligible[i,j]],dtype=int)
+        if not len(candidates):continue
+        chosen=candidates[np.argsort(p['u_expose'][tick,i,candidates])[-min(4,len(candidates)):]]
+        for j in chosen: shortlist.add((min(i,int(j)),max(i,int(j))))
+    edges=[(i,j,w) for i,j,w in edges if (i,j) in shortlist]
     edges.sort(key=lambda x:-x[2])
     used = set(); greedy = []
     for i, j, w in edges:
