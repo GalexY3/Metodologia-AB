@@ -1,0 +1,11 @@
+# Reparación N120/N121: banco reducido del mismo modelo, antes de outcomes
+
+2026-10-29. Contratos originales N117–N121 en PREREG_BLOCK_C.json commit `37ae51c3136c051e6ec95cfcee06589cfc03f850`, versión dos rondas de scheduler freeze `de5b64945ee44b48d6886d9d80ad0e890065a068` y runner de pruebas freeze `c94193f02b3dd829993b9ff904ad6732c67c5481`. **N117, N118, N119 informaron PASS en ejecución real local**; el runner se interrumpió por timeout a 160 s dentro de N120, sin escribir resumen del conjunto. N120 primer intento `INVALID_INSTRUMENTAL_TIMEOUT`; N121 ni siquiera se inició. Prohibido imputar resultados.
+
+**Reparación prospectiva de alcance y coste, no equivalente a resultado n=144**: añadir una fixture Python autocontenida que reproduce la misma función `simulate` compilada del adaptador sin alterar sus bytes, pero usa una submuestra ficticia de 24 actores (primeros 24 del generador N144), cuatro ticks iniciales y tablas/tensores originales recortados al cuadrado 24×24. Compatibilidad recalculada con el mismo predicado del original. El remapeo debe quedar explícito; no simular que es el modelo completo. Verificar primero checksum original congelado y que la configuración `slots=2` conserve por ronda exclusividad y sin díadas repetidas.
+
+N120-REPAIR: para semillas 101 y 211, un escenario base con feedback privado apagado/encendido, dos slots, **4 simulaciones de 4 ticks/24 agentes**. Outcomes: propuestas, respuestas, formadas, activas, sesgo privado y balance formado-disueltas=activas. Se acepta cualquier signo de diferencia y también empate; no exigir que la intervención ayude.
+
+N121-REPAIR: semillas 101 y 211 × hazards sintéticos 0.4/1/1.75, dos slots, **6 simulaciones de 4 ticks/24 agentes**. Outcomes: stock, flujos, duración completada, censuradas a derecha; balance y `right_censored_count=active_partnerships_end`. La muestra pequeña no permite extrapolar tasas, hazard real ni duración humana.
+
+Congelar fixture y runner como GitHub commits ANTES de inspeccionar resultados; intentar solo si la fixture de instrumentación pasa controles de estructura. En caso de fallo registrar REPAIR/INVALID y detener. Mantener el intento 144-agentes en historial como evidencia de coste, nunca como resultado positivo.
