@@ -1,0 +1,142 @@
+{
+  "schema": "ABH.BLOCK_B_PRE_OUTCOME.v1",
+  "day": "2026-10-29",
+  "authorized_initial": 20,
+  "valid_A": 5,
+  "slots_B": "N112–N116",
+  "parent": "N111",
+  "branch": "research/ab-h-esbm-integrated-20261029",
+  "observed_trigger": "N111 policies produced different exposure totals even when common starting risk-set budgets matched; need explicit institution label and sham controls",
+  "R5": "STOP_R5_HUMAN",
+  "scientific_CT2_ordinal": 7,
+  "original_sha256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+  "allocation": "AB-H technical with conditional synthetic AB-R arguments",
+  "contract_common": {
+    "population": "144 fictitious agents, original ESBM 16 ticks, 6 frozen seeds; group norm labels fictitious",
+    "estimand": "in-simulator encounters/pair formation/active stocks and same-group fractions, not causal humans",
+    "strong_baseline": "pair_max same risk graph, pair_sham exact negative control, cross-norm opposing policy, original legacy unchanged",
+    "interaction": "Norm also changes original stipulated hazard, so do not interpret final stock difference as solely due to allocation unless within-risk-set contrasts isolate",
+    "multiplicity": "all checks engineering descriptive, no multiplicity-adjusted confirmatory human claims",
+    "outcomes_stored": "per-seed JSON and negatives; A-J ledger",
+    "ethics": "no source or human rows, no rights assumptions",
+    "source_freeze": "To be committed before experiments",
+    "grade": "0/3 by default"
+  },
+  "cycles": [
+    {
+      "id": "N112",
+      "parent": "N111",
+      "D": "new adapter code freeze and test driver freeze before outcomes",
+      "mode": "BRANCH",
+      "A": "Implement institutional same-norm/cross-norm encounter preference on shortlisted compatible edges with identical risks and shocks",
+      "B": [
+        "no effect if label neutral",
+        "same-group prioritization",
+        "cross-group prioritization",
+        "scheduling tie order"
+      ],
+      "C": "6 seeds × 2 ticks × 3 policies (max/same/cross): 36 risk-set disjointness and capacity checks",
+      "E": "NOT_YET_EXECUTED",
+      "F": "Strong max/sham control and identical fixed risk sets",
+      "G": "Synthetic internal tests, no independent human replication",
+      "H": "P-SCHEDULE-CORRELATION theoretical/technical update only; P-NOVELTY no change",
+      "I": "CT2 7 ordinal and grade 0/3; maturity contingent on new verified capability",
+      "J": {
+        "if_pass": "N113",
+        "if_fail": "INVALID/REPAIR without using slot"
+      }
+    },
+    {
+      "id": "N113",
+      "parent": "N112",
+      "D": "new adapter code freeze and test driver freeze before outcomes",
+      "mode": "NEGATIVE_CONTROL",
+      "A": "Introduce zero-effect pair_sham policy and test exact equality with pair_max",
+      "B": [
+        "no effect if label neutral",
+        "same-group prioritization",
+        "cross-group prioritization",
+        "scheduling tie order"
+      ],
+      "C": "6 seeds × 2 ticks shared risks exact edge equality; two full trajectories seed101/211 exact 100% outputs as pair_max",
+      "E": "NOT_YET_EXECUTED",
+      "F": "Strong max/sham control and identical fixed risk sets",
+      "G": "Synthetic internal tests, no independent human replication",
+      "H": "P-SCHEDULE-CORRELATION theoretical/technical update only; P-NOVELTY no change",
+      "I": "CT2 7 ordinal and grade 0/3; maturity contingent on new verified capability",
+      "J": {
+        "if_pass": "N114",
+        "if_fail": "INVALID/REPAIR without using slot"
+      }
+    },
+    {
+      "id": "N114",
+      "parent": "N113",
+      "D": "new adapter code freeze and test driver freeze before outcomes",
+      "mode": "MECHANISM",
+      "A": "Compare same-norm exposure fractions of same/cross/max at unchanged available agents and eligibility, not claim preference causal effect",
+      "B": [
+        "no effect if label neutral",
+        "same-group prioritization",
+        "cross-group prioritization",
+        "scheduling tie order"
+      ],
+      "C": "6 seeds × 2 ticks; same-norm and cross-norm should differ on at least 1 risk set; robust check no group excluded by construction and identical encounter capacity count per matching when possible",
+      "E": "NOT_YET_EXECUTED",
+      "F": "Strong max/sham control and identical fixed risk sets",
+      "G": "Synthetic internal tests, no independent human replication",
+      "H": "P-SCHEDULE-CORRELATION theoretical/technical update only; P-NOVELTY no change",
+      "I": "CT2 7 ordinal and grade 0/3; maturity contingent on new verified capability",
+      "J": {
+        "if_pass": "N115",
+        "if_fail": "INVALID/REPAIR without using slot"
+      }
+    },
+    {
+      "id": "N115",
+      "parent": "N114",
+      "D": "new adapter code freeze and test driver freeze before outcomes",
+      "mode": "DYNAMICS",
+      "A": "Check whether institution-dependent meeting composition propagates into different active relationship trajectories",
+      "B": [
+        "no effect if label neutral",
+        "same-group prioritization",
+        "cross-group prioritization",
+        "scheduling tie order"
+      ],
+      "C": "Two seeds 101/211 x 3 institutions x 16 ticks=6 runs; stock flow, censoring, impressions, formed and active; report heterogeneous signs and no human transport",
+      "E": "NOT_YET_EXECUTED",
+      "F": "Strong max/sham control and identical fixed risk sets",
+      "G": "Synthetic internal tests, no independent human replication",
+      "H": "P-SCHEDULE-CORRELATION theoretical/technical update only; P-NOVELTY no change",
+      "I": "CT2 7 ordinal and grade 0/3; maturity contingent on new verified capability",
+      "J": {
+        "if_pass": "N116",
+        "if_fail": "INVALID/REPAIR without using slot"
+      }
+    },
+    {
+      "id": "N116",
+      "parent": "N115",
+      "D": "new adapter code freeze and test driver freeze before outcomes",
+      "mode": "ADVERSARIAL",
+      "A": "Separate social-norm ranking from actor-order and stage confounds using fixed-state nulls and label shuffles",
+      "B": [
+        "no effect if label neutral",
+        "same-group prioritization",
+        "cross-group prioritization",
+        "scheduling tie order"
+      ],
+      "C": "Two fixed risk sets ×2 label permutations, sham equality, no unsupported claim of normative fairness; ensure outcomes are not invariant under deliberate norm permutation when norm-based rule enabled, while pair_max ignores norm in scheduler",
+      "E": "NOT_YET_EXECUTED",
+      "F": "Strong max/sham control and identical fixed risk sets",
+      "G": "Synthetic internal tests, no independent human replication",
+      "H": "P-SCHEDULE-CORRELATION theoretical/technical update only; P-NOVELTY no change",
+      "I": "CT2 7 ordinal and grade 0/3; maturity contingent on new verified capability",
+      "J": {
+        "if_pass": "Consider N117 only if useful new method",
+        "if_fail": "INVALID/REPAIR without using slot"
+      }
+    }
+  ]
+}
