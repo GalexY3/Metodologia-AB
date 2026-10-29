@@ -23,7 +23,7 @@
       "id": "P-NOVELTY",
       "question": "Originalidad de homogamia de deseabilidad sin preferencia inicial por semejanza",
       "status": "STRONG_PRIOR_ART",
-      "rationale": "La proposición general ya está en teoría matching, Hitsch 2010 y, casi literalmente para apps, Topinkova/Diviak 2025; nueva aportación exigiría predicción más estrecha. La separación de navegación, primer mensaje y match se documentó explícitamente en Hitsch et al. (2010), antes del programa ESBM. No reivindicar originalidad general de la cadena. Rios–Saban–Zheng (online 2022) probó algoritmo con exposición e historial de matches en dos intervenciones de mercado; Rios–Torrico 2023 ya formaliza secuencialidad y direcciones del flujo. ESBM no reivindica novedad de optimización de exposición y reciprocidad ni de feedback por matches. External 2024 intervention already studies a causal micro-interaction influence independent of pre-exposure sorting. ESBM has not yet included an observed micro-behavior intervention; adding smiles alone would lack originality. ICONIP 2020 MotifGNN already models reciprocal recommendation over user directed interaction graphs with degree/motif structure. Our degree-conditioned reciprocity finding does not establish a new theory: it is a data-quality/control exercise on published dataset. Su & Hu 2019 already used ratios click/rec and msg/rec as popularity and modeled target and sender attributes and network centrality; 2020 MotifGNN already modeled mutual interaction graph. N82 smooth target CTR out-of-actor predictive advantage is not a new theoretical mechanism or 2/3. Contest researchers in 2011 already studied ranking profiles by expected click/msg, including RankSVM, Bayesian Regression Trees and simple popularity voting; source 2012 participant explicitly discusses click/rec and msg utilities. A generic target-click-rate advantage N82 is not novel and must be compared against original NDCG@10 or stronger actor-target/context models before any novelty claim.",
+      "rationale": "La proposición general ya está en teoría matching, Hitsch 2010 y, casi literalmente para apps, Topinkova/Diviak 2025; nueva aportación exigiría predicción más estrecha. La separación de navegación, primer mensaje y match se documentó explícitamente en Hitsch et al. (2010), antes del programa ESBM. No reivindicar originalidad general de la cadena. Rios–Saban–Zheng (online 2022) probó algoritmo con exposición e historial de matches en dos intervenciones de mercado; Rios–Torrico 2023 ya formaliza secuencialidad y direcciones del flujo. ESBM no reivindica novedad de optimización de exposición y reciprocidad ni de feedback por matches. External 2024 intervention already studies a causal micro-interaction influence independent of pre-exposure sorting. ESBM has not yet included an observed micro-behavior intervention; adding smiles alone would lack originality. ICONIP 2020 MotifGNN already models reciprocal recommendation over user directed interaction graphs with degree/motif structure. Our degree-conditioned reciprocity finding does not establish a new theory: it is a data-quality/control exercise on published dataset. Su & Hu 2019 already used ratios click/rec and msg/rec as popularity and modeled target and sender attributes and network centrality; 2020 MotifGNN already modeled mutual interaction graph. N82 smooth target CTR out-of-actor predictive advantage is not a new theoretical mechanism or 2/3. Contest researchers in 2011 already studied ranking profiles by expected click/msg, including RankSVM, Bayesian Regression Trees and simple popularity voting; source 2012 participant explicitly discusses click/rec and msg utilities. A generic target-click-rate advantage N82 is not novel and must be compared against original NDCG@10 or stronger actor-target/context models before any novelty claim. A prior 2023 thesis already performed time-to-breakup survival prediction on HCMST 2009 using Cox PH, Random Survival Forest and DeepHit and identified cohabitation, marriage, duration and meeting modality as predictors. New ESBM must supply unique causal or mechanistically discriminating prediction with superior properly heldout model, not just 'add duration/predict breakup' in HCMST source.",
       "evidence_sources": [
         "SRC001",
         "SRC002",
@@ -41,9 +41,10 @@
         "SRC062",
         "SRC063",
         "SRC064",
-        "SRC065"
+        "SRC065",
+        "SRC071"
       ],
-      "last_update_id": "U086",
+      "last_update_id": "U096",
       "uncertainty": "Not probabilistically calibrated; evidence heterogeneous and some sources only metadata",
       "next_falsifier_or_test": "Find a preregistered prediction NOT covered by published mating-market literature and independently validate",
       "numeric_probability": null,
@@ -56,9 +57,10 @@
         "U068",
         "U076",
         "U081",
-        "U086"
+        "U086",
+        "U096"
       ],
-      "latest_evidence_summary": "Strengthened early priority of opportunity-conditioned popularity/ranking; novel ESBM causal claim still 0/3.",
+      "latest_evidence_summary": "Strong prior art extends to relationship survival estimation with source 2009; new original contribution not demonstrated.",
       "last_revised_at": "2026-10-29"
     },
     {
@@ -200,16 +202,18 @@
       "id": "P-TRANSPORT",
       "question": "Speed dating, reciprocidad en app, convivencia y matrimonio son estimandos transportables",
       "status": "CHALLENGED",
-      "rationale": "Resultados de cita/like no son resultados de relación consolidada ni mercado español; cohortes, plataformas y selección son diferentes. HCMST 2009 versus HCMST 2017 participants are independent, but a before/after contrast across historical cohorts is confounded by period, age, different survey wording and the 2020 pandemic. HCMST 2009 has minimal comparable app exposure, and the two surveys cannot isolate a Tinder/platform causal effect without stronger comparisons.",
+      "rationale": "Resultados de cita/like no son resultados de relación consolidada ni mercado español; cohortes, plataformas y selección son diferentes. HCMST 2009 versus HCMST 2017 participants are independent, but a before/after contrast across historical cohorts is confounded by period, age, different survey wording and the 2020 pandemic. HCMST 2009 has minimal comparable app exposure, and the two surveys cannot isolate a Tinder/platform causal effect without stronger comparisons. HCMST2009 wave6 collected in 2017 from surviving/remaining 2009 respondents; it is NOT fresh HCMST2017 baseline sample despite shared year. Treating wave6 2009 as independent 2017 replicate would be cohort leakage. Comparing estimates across 2009 baseline and 2017 new baseline requires cohort fixed timing and identical constructs, attrition, period effects and pandemic adjustments.",
       "evidence_sources": [
         "SRC008",
         "SRC020",
         "SRC039",
         "SRC040",
         "SRC067",
-        "SRC068"
+        "SRC068",
+        "SRC069",
+        "SRC071"
       ],
-      "last_update_id": "U093",
+      "last_update_id": "U098",
       "uncertainty": "Not probabilistically calibrated; evidence heterogeneous and some sources only metadata",
       "next_falsifier_or_test": "Independent prospective data with matched risk set, competent adversarial controls and documented sample selection",
       "numeric_probability": null,
@@ -218,9 +222,10 @@
         "U004",
         "U015",
         "U034",
-        "U093"
+        "U093",
+        "U098"
       ],
-      "latest_evidence_summary": "Independence of respondent samples is not identification of historical platform treatment or Spanish/generalizable causal effect.",
+      "latest_evidence_summary": "Historical same-year waves are not independent cohorts; no causal app-effect transport inferred.",
       "last_revised_at": "2026-10-29"
     },
     {
@@ -325,21 +330,24 @@
       "id": "P-COMPETENT_NULL",
       "question": "Permutación global o nulo por evento simple bastan para atribuir homogamia a mecanismo individual",
       "status": "CHALLENGED",
-      "rationale": "Nulos competentes requieren preservar segmentos, oportunidades, propensión de ambos extremos; mezcla MCMC no demostrada, replicaciones con diferencias.",
+      "rationale": "Nulos competentes requieren preservar segmentos, oportunidades, propensión de ambos extremos; mezcla MCMC no demostrada, replicaciones con diferencias. For HCMST-2009, minimally competent model comparison is not naïve constant hazard: already published Cox/RSF/DeepHit. A truly strong baseline also needs landmark/interview-risk sets, relationship duration at baseline (delayed entry), interval-censoring, partner death as competing event, sampling/attrition weights, and external era holdout (HCMST 2017 with different wording) not just random within-wave 70/30 split. 2023 thesis published C-index differences RSF .795 vs Cox .791 too small to claim superiority without uncertainty. Text reports Brier scores in 2017 above 1, inconsistent with ordinary unscaled Brier definition; verify units before using comparisons, no accusation.",
       "evidence_sources": [
         "SRC026",
-        "SRC027"
+        "SRC027",
+        "SRC071",
+        "SRC070"
       ],
-      "last_update_id": "U012",
+      "last_update_id": "U097",
       "uncertainty": "Not probabilistically calibrated; evidence heterogeneous and some sources only metadata",
       "next_falsifier_or_test": "Independent prospective data with matched risk set, competent adversarial controls and documented sample selection",
       "numeric_probability": null,
       "CT2_is_not_this_prior": true,
       "update_ids": [
-        "U012"
+        "U012",
+        "U097"
       ],
-      "latest_evidence_summary": "Los resultados de reciprocidad/popularidad cambian según nulo por evento y grado de actores.",
-      "last_revised_at": "2026-10-28"
+      "latest_evidence_summary": "Explicit strong survival baseline/hazard audit required; published original thesis not a replication of ESBM, no elevation of own CT2.",
+      "last_revised_at": "2026-10-29"
     },
     {
       "id": "P-APP_POP_INFO",
@@ -588,16 +596,19 @@
       "id": "P-UNION-DURATION",
       "question": "Mayor número de contactos o eventos de pareja aumenta necesariamente relaciones duraderas y bienestar",
       "status": "CHALLENGED",
-      "rationale": "AEA 2026 Tinder y Jung/Lusher 2026 diferencian actividad, relaciones y disolución; nuestras medias sintéticas dependen de hazard artificial The Stanford 2009 HCMST has five waves and recorded relationship continuity/breakup plus baseline duration, potentially enabling survival-style empirical falsification rather than using stock snapshots. The panel follows respondents with baseline partners; separated couples do not form a general re-entry formation risk set. Cross-cohort differences may reflect calendar and pandemic events, baseline sample composition or instrument changes, not dating-app impact. Inadequate raw/weights access stops any hazard estimate. No claims of original data results.",
+      "rationale": "AEA 2026 Tinder y Jung/Lusher 2026 diferencian actividad, relaciones y disolución; nuestras medias sintéticas dependen de hazard artificial The Stanford 2009 HCMST has five waves and recorded relationship continuity/breakup plus baseline duration, potentially enabling survival-style empirical falsification rather than using stock snapshots. The panel follows respondents with baseline partners; separated couples do not form a general re-entry formation risk set. Cross-cohort differences may reflect calendar and pandemic events, baseline sample composition or instrument changes, not dating-app impact. Inadequate raw/weights access stops any hazard estimate. No claims of original data results. 2023 Tilburg BSc thesis by Charlot Franssen already merged HCMST2009 original waves1–6 and estimated/compared Cox, Random Survival Forest and DeepHit on 3009 partnered baseline respondents. It reports C-index .791/.795/.780 and IBS .087/.085/.090 respectively (third-party findings not re-estimated). Applying Cox or RSF or DeepHit in HCMST2009 by itself is prior art, not new scientific 2/3. Competing death, interval-censored breakups and selective followup must be explicit and may differ from thesis treatment. No independent data or replication this turn.",
       "evidence_sources": [
         "SRC044",
         "SRC046",
         "SRC048",
         "SRC049",
         "SRC067",
-        "SRC068"
+        "SRC068",
+        "SRC069",
+        "SRC070",
+        "SRC071"
       ],
-      "last_update_id": "U092",
+      "last_update_id": "U095",
       "uncertainty": "Qualitative, context-dependent; no calibrated numerical probabilities",
       "next_falsifier_or_test": "Medidas longitudinales de bienestar y duración, con censura y controles de cambios de pareja.",
       "numeric_probability": null,
@@ -605,9 +616,10 @@
       "update_ids": [
         "U039",
         "U049",
-        "U092"
+        "U092",
+        "U095"
       ],
-      "latest_evidence_summary": "Independently sampled 2009 longitudinal couple cohort exists (not another 2017 subset), yet not accessed. No hazard comparison or 2/3.",
+      "latest_evidence_summary": "Prior predictive breakup models exist for same 2009 cohort, field novelty weakened; no own hazard or causal effect computed.",
       "last_revised_at": "2026-10-29"
     },
     {
@@ -633,7 +645,7 @@
       "id": "P-LONGITUDINAL-ELIGIBILITY",
       "question": "¿Existe una cohorte humana independiente con duración y formación de relaciones que permita una falsación del módulo ESBM de ruptura sin confundir reciprocidad con pareja estable?",
       "status": "DOCUMENTED_SAMPLE_RAW_NOT_INSPECTED",
-      "rationale": "HCMST 2017–2022 es un panel original de Stanford con preguntas de cómo se conocen las parejas y seguimiento 2020/2022, pero el archivo no ha sido descargado; sin esquema real no puede calibrarse ni estimarse la hazard. pairfam (Alemania) añade otra cohorte longitudinal independiente y respuestas del miembro de la pareja, pero sigue sin acceso a filas ni estimación. Stanford explicita cuestionario de relaciones a sujetos con pareja vigente (2862) y sin actual pero con pareja anterior (541), cambiando el riesgo de excluir automáticamente historias de ruptura; no se ha examinado su distribución por ola. The FReDA/pairfam Campus Use File is explicitly limited to teaching and is a reduced subset of the SUF; GESIS instructs scientific publications to use an appropriately licensed SUF rather than CUF. This source is same pairfam panel, not independent. Diverse Data Hub HCMST 2022 derived CSV has 1,328 observations, 21 relationship quality/duration/behavior variables; it is a cross-sectional reduced version of the existing 2017–2022 cohort, not a fresh follow-up sample and not a complete survival risk set. CSV data were not fetched; no hazard/censoring constructed. New original HCMST 2009 baseline was an independent cohort (4002 adults, 3009 partnered) with followups in 2010/2011/2013/2015, covering baseline relationship status and subsequent breakup. It is legitimately distinct from the 2017–2022 HCMST sample, even though archived by the same project/investigators. But no raw rows, codebook or original wave files are accessible in this turn, so no censoring, attrition, interval risks or hazard estimable. The original followup design conditions on having a baseline romantic partner; it tests conditional stability of existing unions, not unconditional formation from all singles.",
+      "rationale": "HCMST 2017–2022 es un panel original de Stanford con preguntas de cómo se conocen las parejas y seguimiento 2020/2022, pero el archivo no ha sido descargado; sin esquema real no puede calibrarse ni estimarse la hazard. pairfam (Alemania) añade otra cohorte longitudinal independiente y respuestas del miembro de la pareja, pero sigue sin acceso a filas ni estimación. Stanford explicita cuestionario de relaciones a sujetos con pareja vigente (2862) y sin actual pero con pareja anterior (541), cambiando el riesgo de excluir automáticamente historias de ruptura; no se ha examinado su distribución por ola. The FReDA/pairfam Campus Use File is explicitly limited to teaching and is a reduced subset of the SUF; GESIS instructs scientific publications to use an appropriately licensed SUF rather than CUF. This source is same pairfam panel, not independent. Diverse Data Hub HCMST 2022 derived CSV has 1,328 observations, 21 relationship quality/duration/behavior variables; it is a cross-sectional reduced version of the existing 2017–2022 cohort, not a fresh follow-up sample and not a complete survival risk set. CSV data were not fetched; no hazard/censoring constructed. New original HCMST 2009 baseline was an independent cohort (4002 adults, 3009 partnered) with followups in 2010/2011/2013/2015, covering baseline relationship status and subsequent breakup. It is legitimately distinct from the 2017–2022 HCMST sample, even though archived by the same project/investigators. But no raw rows, codebook or original wave files are accessible in this turn, so no censoring, attrition, interval risks or hazard estimable. The original followup design conditions on having a baseline romantic partner; it tests conditional stability of existing unions, not unconditional formation from all singles. Stanford original HCMST 2009 (not 2017 fresh cohort) has a 2017 wave6 supplement that is NOT covered by ICPSR30103 5-wave public collection. Original codebook of waves1-3 v3.04 identifies qflag, w2_broke_up vs w3_brokeup_actual, death vs breakup and w3_xpartnered with 289 no longer eligible after 2010 breakup, proving followup risk sets are conditional and cannot be coded non-respondents as stable. Full raw wave 6 not accessed, so do not set time-to-event without supplementary files, weights and exposure/censoring codes.",
       "evidence_sources": [
         "SRC048",
         "SRC049",
@@ -642,9 +654,11 @@
         "SRC058",
         "SRC066",
         "SRC067",
-        "SRC068"
+        "SRC068",
+        "SRC069",
+        "SRC070"
       ],
-      "last_update_id": "U091",
+      "last_update_id": "U094",
       "uncertainty": "Cohorte fuente validada documentalmente; acceso, pesos completos, definiciones de ruptura y seguimiento pendiente de inspección.",
       "next_falsifier_or_test": "Adquirir legítimamente archivo Stanford v2.2 y codebook v2.3, revisar pesos y variable de continuidad con campos longitudinales, prerregistrar sobrevivencia a corte 2020/2022 y contrastar con baseline de supervivencia sin app. Priorizar obtener un SUF registrado de pairfam si interesa contraste actor/partner, respetando atrición, censoring, y olas de biopart.",
       "numeric_probability": null,
@@ -655,9 +669,10 @@
         "U058",
         "U070",
         "U089",
-        "U091"
+        "U091",
+        "U094"
       ],
-      "latest_evidence_summary": "One more genuinely independent participant cohort eligible in concept for duration; no raw data or independent ESBM validation, risk set and attrition untested.",
+      "latest_evidence_summary": "More complete longitudinal original panel in principle; instrument discontinuities, risk-set selection and no raw source keep status DOCUMENTED_SAMPLE_RAW_NOT_INSPECTED.",
       "last_revised_at": "2026-10-29"
     },
     {
@@ -775,10 +790,10 @@
   ],
   "audit": {
     "all_priors_linked": true,
-    "source_ids_linked": 68,
-    "registered_sources": 68,
-    "update_events": 93,
+    "source_ids_linked": 71,
+    "registered_sources": 71,
+    "update_events": 98,
     "counts_as_new_AB_cycle": false,
-    "last_update": "2026-10-29 POST_N82_HCMST_2009_TWO_INDEPENDENT_COHORTS_ARCHIVE_ONLY"
+    "last_update": "2026-10-29 POST_N82_WAVE6_CODEBOOK_SURVIVAL_PRIOR_ART_NONCYCLE"
   }
 }
