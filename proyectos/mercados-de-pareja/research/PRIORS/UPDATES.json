@@ -4,7 +4,7 @@
   "date": "2026-10-28",
   "mode": "append-only logical, versioned by Git commits",
   "reconstructed_from_documents": "Retrospective backfill, not preregistration. Old before values NOT_RECORDED unless documented explicitly.",
-  "source_coverage": "99 SOURCES 30 PRIORS 148 UPDATES; post-N92 documentary R5 gate only, 0 new AB cycles, 14 still reserved.",
+  "source_coverage": "100 SOURCES 30 PRIORS 150 UPDATES; post-N92 documentary Roth 2023 R5 gate only, 0 new AB cycles; N93–N106 held.",
   "events": [
     {
       "id": "U001",
@@ -3714,7 +3714,53 @@
       "prior_probability_after": null,
       "AB_cycle_increment": 0,
       "prereg_status": "DOCUMENTARY_NOT_AB_PREREG"
+    },
+    {
+      "id": "U149",
+      "prior_id": "P-DYADIC_ACCESS",
+      "source_ids": [
+        "SRC100"
+      ],
+      "cycle_ids": [],
+      "before": "VERIFIED_ORIGINAL_OPEN_NATIVE_BILATERAL_357_DYADS_TWO_SESSIONS_NO_EXTERNAL_HOLDOUT",
+      "after": "VERIFIED_ORIGINAL_OPEN_NATIVE_BILATERAL_357_DYADS_TWO_SESSIONS_NO_EXTERNAL_HOLDOUT",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "recorded_at": "2026-10-29",
+      "entry_status": "ACTIVE",
+      "evidence_type": "NEW_ORIGINAL_HUMAN_SPEED_DATING_PUBLISHED_METHODS_AND_EXPLICIT_PRIMARY_DATA_DOI_UNINSPECTABLE",
+      "what_the_sources_contribute": "Roth et al. 2023 Leiden independent cohort paper establishes N=67 real participants, four speed-dating sessions, directly attended four-minute dates and each actor's native yes/no next-date response. Data available statement links precisely to DataverseNL DOI 10.34894/AWSZSB, not OSF; previously unregistered primary source.",
+      "why_this_updates_or_checks_prior": "Documented original dataset location and proper field-question semantics strengthen the discovery trail, but the current researcher cannot read data-specific license, files or join actual counterpart responses. Existing McMaster 357 joined original dyads remain the only previously rights-and-bytes-verified original dataset; no new confirmation.",
+      "limits": "One initial DataverseNL landing page retrieval returned JS anti-bot; no bypass or retry. Same Roth 2021 multimodal cohort should be deduplicated. Image exposure/predicted counterpart answer not interchangeable with actual face-to-face encounter/actual counterpart choice.",
+      "falsifier_or_followup": "Only lawful direct archive access to original licensed files with dyadic row joins, SHA256, event/session identifiers, actual seen/attended opportunities and new independent holdout can clear R5.",
+      "numerical_bayesian_update": false,
+      "prior_probability_before": null,
+      "prior_probability_after": null,
+      "AB_cycle_increment": 0,
+      "prereg_status": "DOCUMENTARY_NOT_AB_PREREG"
+    },
+    {
+      "id": "U150",
+      "prior_id": "P-OPPORTUNITY",
+      "source_ids": [
+        "SRC100"
+      ],
+      "cycle_ids": [],
+      "before": "RECORDED_RECOMMENDATION_RISK_SET_WITHOUT_VERIFIED_ATTENTION",
+      "after": "RECORDED_RECOMMENDATION_RISK_SET_WITHOUT_VERIFIED_ATTENTION",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "recorded_at": "2026-10-29",
+      "entry_status": "ACTIVE",
+      "evidence_type": "PRIMARY_METHODS_REAL_ATTENDED_RISK_SET_DISTINCT_FROM_STIMULUS_EXPOSURE_NEGATIVE_DATA_GATE",
+      "what_the_sources_contribute": "Roth et al. primary methods distinguish displayed experimental photographs of candidate strangers (some not later attended) from actually attended dated dyads; after each actual meeting participants record a real willingness yes/no. Thus offered profiles and real encounter opportunities are different risk sets, with selection into attended dates and stimulus replacements; published methods only.",
+      "why_this_updates_or_checks_prior": "Directly relevant opportunity measurement precedent but not novel original microdata or ESBM identification, because codebook of which photos, actual pairings and both responses inaccessible. No change in prior status.",
+      "limits": "Small selective Dutch cohort, no population transport, no observed stable union, no reusable row rights verified, no causal estimate obtained here.",
+      "falsifier_or_followup": "Legally retrieve and pre-audit distinct shown-photo and attended-date sets plus matched native two-sided outcomes before any model confirmation attempt.",
+      "numerical_bayesian_update": false,
+      "prior_probability_before": null,
+      "prior_probability_after": null,
+      "AB_cycle_increment": 0,
+      "prereg_status": "DOCUMENTARY_NOT_AB_PREREG"
     }
   ],
-  "last_campaign": "ABR_R5_RECHECK_NOCYCLE_20261029"
+  "last_campaign": "ABR_R5_GATE_R0_ROTH_NOCYCLE_20261029"
 }

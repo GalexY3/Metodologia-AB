@@ -3,7 +3,7 @@
   "project": "mercados-de-pareja",
   "date": "2026-10-28",
   "scope": "Retrospective provenance backfill from repository reports plus N56/N57 publisher audit. Original data never copied; not systematic or claim of accessing raw data for bibliography.",
-  "source_count": 99,
+  "source_count": 100,
   "sources": [
     {
       "id": "SRC001",
@@ -1961,7 +1961,26 @@
       "limits": "Candidates are hypothetical profiles, respondent forced to choose one; no second agent evaluates or reciprocates, no opt-out, no real-world match/union or duration, profile order not a trustworthy timestamp of human contact. Accordingly zero eligible bilateral outcome records for R5. The canonical Harvard Dataverse DOI could not be accessed by current web reader and was not retried. IRW is a transformed distribution of the SAME study, not a second independent cohort.",
       "falsifier": "A genuinely dyadic independent cohort with both native choices and observed opportunity/sequence would be required; even original conjoint files cannot supply nonexistent reciprocal decisions.",
       "independent_external_validation_executed": false
+    },
+    {
+      "id": "SRC100",
+      "title": "Roth, Samara, Perea-García and Kret (2023), Individual attractiveness preferences differentially modulate immediate and voluntary attention: new Leiden speed-date cohort with original DataverseNL deposit DOI",
+      "canonical_url": "https://doi.org/10.1038/s41598-023-29240-5",
+      "article_PMC": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9905556/",
+      "primary_dataset_doi": "https://doi.org/10.34894/AWSZSB",
+      "original_related_previous_publication": "https://doi.org/10.1016/j.evolhumbehav.2021.04.004",
+      "verified_at": "2026-10-29",
+      "cycle_ids": [],
+      "AB_cycle_increment": 0,
+      "source_type": "NEW_PRIMARY_LEIDEN_SPEED_DATE_BINARY_ACTOR_RESPONSE_PAPER_VERIFIED_DATA_DEPOSIT_CITED_FILE_LEVEL_RIGHTS_AND_CROSS_JOIN_NOT_INSPECTABLE_NONCYCLE",
+      "contribution": "Original 2023 Scientific Reports Methods describe 80 recruits, 67 final participants (35 women, 32 men; ages 18-26) divided into four groups; experimental participants conducted up to 10 real in-person four-minute speed dates; after each, each person recorded own willingness to date again (yes/no) and forecast partner's response (yes/no). Individual attention tasks before dates show actual potential targets' pictures, some substitutes from previous groups; thus photo exposure should not be equated to a real encounter. Authors explicitly state generated/analyzed datasets and materials available at DOI 10.34894/AWSZSB in DataverseNL. This is a NEW dataset lead not in previous 99-source inventory and conceptually closer to an independent real exposure-and-choice test than hypothetical conjoint profiles. Article provides no literal subject-level columns. Aspects of this experimental cohort were previously analyzed by Roth, Samara and Kret (2021), DOI 10.1016/j.evolhumbehav.2021.04.004; paper publications must not be counted as separate datasets.",
+      "sample_independence": "Different paper authors and cohort context from Columbia 2002–04, US Midwest 2007, McMaster, Japanese MMSD and Czech Mixmosa. The 2023 paper and earlier Roth et al. 2021 multimodal mate-choice paper refer to overlapping experimental paradigm/data, so not two independent cohorts; possible overlap with other Leiden publications cannot be excluded absent primary sample identifiers.",
+      "rights": "Original article is CC BY 4.0, but this covers article and materials expressly included, not automatically the DataverseNL source participant files. DataverseNL dataset DOI is published by original authors, but data-specific licensing, participant reuse authorization and file access conditions NOT independently verified. The primary dataset landing page returned an Anubis bot protection requiring JavaScript; no bypass, new account login, license acceptance, private access or direct data download performed.",
+      "access_status": "ORIGINAL_PAPER_AND_DATA_DOI_VERIFIED_DATAVERSENL_BOT_PROTECTED_NO_ORIGINAL_ROWS_LICENSE_DICTIONARY_OR_SHA256",
+      "limits": "Neither the original record nor file list, codebook, dyad IDs, event IDs, two native response columns for each pair, excluded/censored rows, missingness or time ordering could be inspected. Verifying that each person supplied a yes/no after each date in the published method does NOT prove that both native values can be linked in the accessible archive. A predicted partner yes/no is NOT partner's observed decision. No original bytes, observed dyads counted, original dataset reuse license, participant/event holdout, baseline or ESBM validation. Grouping is four local sessions of 67 select participants, not population sampling. No proof of relation formation or durability.",
+      "falsifier": "Only from newly authorized/licensed access without circumventing the archive's bot challenge: independently verify file-specific rights, raw numeric anonymized tables/metadata/column dictionary and SHA256, join original respondent/partner actual yes/no by event, actual encountered risk set and ordering, distinct sample, and evaluate prospectively frozen ESBM vs competent conditional/actor/dyad/logit/SRM baselines under event-level untouched holdout.",
+      "independent_external_validation_executed": false
     }
   ],
-  "last_added_campaign": "ABR_R5_RECHECK_NOCYCLE_20261029_TWO_PRIMARY_DOCUMENTARY_FINDS_NO_HUMAN_ROWS"
+  "last_added_campaign": "ABR_R5_GATE_R0_ROTH_NOCYCLE_20261029_NEW_PRIMARY_DOI_VERIFIED_ARCHIVE_UNREAD"
 }
