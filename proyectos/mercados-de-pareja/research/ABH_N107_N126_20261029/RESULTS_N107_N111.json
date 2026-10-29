@@ -1,0 +1,418 @@
+{
+  "schema": "ABH.ESBM_PYTHON_BLOCK_A_RESULTS.v1",
+  "date": "2026-10-29",
+  "new_branch": "research/ab-h-esbm-integrated-20261029",
+  "original_source_sha256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+  "prereg": "f8172859689e51484a025e3b1cd2837e51a1b71a",
+  "initial_adapter_freeze": "7469bb086531438b01b8d7b8d908a13be08f97f4",
+  "runner_freeze": "9a71fe827a0fd153f4f2569a79e90ac9248a51b7",
+  "N108_timeout_attempt": "INVALID_INSTRUMENTAL_NOT_COMPLETED",
+  "N108_repair_prereg": "e084ac455d25cf7fea14f942c580871db4d8bba7",
+  "adapter_repair_freeze": "8e56aabe4f0cfe7adcf964aa2e1605606c69bd4b",
+  "N110_N111_amended_prereg": "3e5313bcc1b20e15fae21197d9d641e0b850dd28",
+  "N110_N111_runner_freeze": "5ff087aaa173e58d533f0df89a31f2b8c963b296",
+  "local_receipt_sha256": {
+    "N107": "5dc366e3c71d8c769952566bdaad0d932fd4332a1b41fcd42f1a3bce8541e3fc",
+    "N108": "7a691c47a6945afa231806c0438b19f5748f1dd3de1ea1584a26a72ab395f79f",
+    "N109": "0c4b716a86d679bec040621a5e478bed11f5b42c8bfbc09a655e6eb569e056d3",
+    "N110_N111": "bd9d1e038bee653e10e6ce2af2936ca74054c8f3dc7f8adf19c95c021f5eca92"
+  },
+  "cycles": [
+    {
+      "id": "N107",
+      "status": "PASS",
+      "scope": "60 original/adapter exact JSON dictionary pairs",
+      "formed_by_seed_and_scenario": [
+        {
+          "seed": 101,
+          "formed": [
+            224,
+            185,
+            214,
+            238,
+            234,
+            221,
+            240,
+            216,
+            143,
+            308
+          ]
+        },
+        {
+          "seed": 211,
+          "formed": [
+            227,
+            197,
+            209,
+            249,
+            236,
+            235,
+            237,
+            218,
+            136,
+            348
+          ]
+        },
+        {
+          "seed": 307,
+          "formed": [
+            227,
+            188,
+            209,
+            248,
+            215,
+            237,
+            246,
+            209,
+            146,
+            325
+          ]
+        },
+        {
+          "seed": 401,
+          "formed": [
+            215,
+            206,
+            217,
+            233,
+            225,
+            256,
+            241,
+            201,
+            146,
+            337
+          ]
+        },
+        {
+          "seed": 503,
+          "formed": [
+            227,
+            196,
+            234,
+            229,
+            205,
+            233,
+            268,
+            204,
+            133,
+            335
+          ]
+        },
+        {
+          "seed": 601,
+          "formed": [
+            240,
+            193,
+            229,
+            250,
+            226,
+            261,
+            250,
+            206,
+            153,
+            354
+          ]
+        }
+      ],
+      "scenario_order": [
+        "mixed_random",
+        "heterosexual_restricted",
+        "institutional_segregation",
+        "explicit_norm_preference",
+        "popularity_ranking",
+        "visibility_balancing",
+        "private_rejection_learning",
+        "public_rejection_signal",
+        "longer_partnerships",
+        "shorter_partnerships"
+      ],
+      "seconds": 10.155
+    },
+    {
+      "id": "N108",
+      "status": "PASS_AFTER_REPAIR",
+      "scope": "6 seeds × 8 even periods × 3 schedulers, original full graph attempt timed out, repaired top-4 candidate union",
+      "risksets_valid": 144,
+      "seconds": 15.797
+    },
+    {
+      "id": "N109",
+      "status": "PASS",
+      "scope": "Same starting full actor availability + top-4 candidate graph, 6 seeds ×16 ticks; not actual longitudinal risk-set equality",
+      "budgeted_max_equal_greedy_per_case": 96,
+      "unbudgeted_max_pairs_per_case": 72,
+      "greedy_contacts_by_seed_tick": [
+        {
+          "seed": 101,
+          "counts": [
+            64,
+            65,
+            63,
+            67,
+            65,
+            65,
+            64,
+            65,
+            66,
+            65,
+            63,
+            64,
+            64,
+            65,
+            67,
+            64
+          ]
+        },
+        {
+          "seed": 211,
+          "counts": [
+            62,
+            66,
+            66,
+            64,
+            66,
+            65,
+            65,
+            66,
+            65,
+            66,
+            60,
+            64,
+            64,
+            65,
+            65,
+            66
+          ]
+        },
+        {
+          "seed": 307,
+          "counts": [
+            67,
+            64,
+            60,
+            65,
+            64,
+            61,
+            64,
+            61,
+            62,
+            64,
+            62,
+            64,
+            65,
+            65,
+            65,
+            66
+          ]
+        },
+        {
+          "seed": 401,
+          "counts": [
+            64,
+            66,
+            65,
+            62,
+            66,
+            67,
+            67,
+            63,
+            64,
+            65,
+            64,
+            62,
+            64,
+            62,
+            62,
+            65
+          ]
+        },
+        {
+          "seed": 503,
+          "counts": [
+            64,
+            64,
+            62,
+            65,
+            65,
+            65,
+            65,
+            62,
+            64,
+            67,
+            67,
+            66,
+            65,
+            61,
+            64,
+            65
+          ]
+        },
+        {
+          "seed": 601,
+          "counts": [
+            65,
+            63,
+            64,
+            63,
+            65,
+            63,
+            66,
+            64,
+            65,
+            62,
+            64,
+            65,
+            63,
+            62,
+            65,
+            62
+          ]
+        }
+      ],
+      "seconds": 33.799
+    },
+    {
+      "id": "N110",
+      "status": "PASS_AFTER_REPAIR",
+      "scope": "1 seed, 2 relabel permutations, 3 scheduling methods, exactly same unordered dyadic edge sets",
+      "checks": 6,
+      "all_identical": true,
+      "sizes_by_mode": {
+        "pair_greedy": 64,
+        "pair_max": 72,
+        "pair_budgeted_max": 64
+      },
+      "seconds": 1.34
+    },
+    {
+      "id": "N111",
+      "status": "PASS_AFTER_REPAIR",
+      "scope": "2 seeds, 2 scenario types, 3 schedulers ×16 ticks; dynamic risk sets and total exposures vary",
+      "runs": 12,
+      "per_seed_scenario_policy": [
+        {
+          "seed": 101,
+          "scenario": "mixed_random",
+          "policy": "pair_greedy",
+          "impressions": 907,
+          "formed": 52,
+          "dissolved": 38,
+          "active": 14,
+          "gini": 0.22415931642778397
+        },
+        {
+          "seed": 101,
+          "scenario": "mixed_random",
+          "policy": "pair_max",
+          "impressions": 1017,
+          "formed": 71,
+          "dissolved": 51,
+          "active": 20,
+          "gini": 0.1663593903638152
+        },
+        {
+          "seed": 101,
+          "scenario": "mixed_random",
+          "policy": "pair_budgeted_max",
+          "impressions": 879,
+          "formed": 61,
+          "dissolved": 45,
+          "active": 16,
+          "gini": 0.2115961951712806
+        },
+        {
+          "seed": 101,
+          "scenario": "longer_partnerships",
+          "policy": "pair_greedy",
+          "impressions": 828,
+          "formed": 51,
+          "dissolved": 22,
+          "active": 29,
+          "gini": 0.2727623456790125
+        },
+        {
+          "seed": 101,
+          "scenario": "longer_partnerships",
+          "policy": "pair_max",
+          "impressions": 949,
+          "formed": 58,
+          "dissolved": 31,
+          "active": 27,
+          "gini": 0.21662422432970385
+        },
+        {
+          "seed": 101,
+          "scenario": "longer_partnerships",
+          "policy": "pair_budgeted_max",
+          "impressions": 875,
+          "formed": 46,
+          "dissolved": 28,
+          "active": 18,
+          "gini": 0.21065873015873016
+        },
+        {
+          "seed": 211,
+          "scenario": "mixed_random",
+          "policy": "pair_greedy",
+          "impressions": 846,
+          "formed": 71,
+          "dissolved": 50,
+          "active": 21,
+          "gini": 0.23407538744418188
+        },
+        {
+          "seed": 211,
+          "scenario": "mixed_random",
+          "policy": "pair_max",
+          "impressions": 877,
+          "formed": 75,
+          "dissolved": 47,
+          "active": 28,
+          "gini": 0.25748289623717224
+        },
+        {
+          "seed": 211,
+          "scenario": "mixed_random",
+          "policy": "pair_budgeted_max",
+          "impressions": 837,
+          "formed": 69,
+          "dissolved": 44,
+          "active": 25,
+          "gini": 0.25032357626443646
+        },
+        {
+          "seed": 211,
+          "scenario": "longer_partnerships",
+          "policy": "pair_greedy",
+          "impressions": 731,
+          "formed": 56,
+          "dissolved": 25,
+          "active": 31,
+          "gini": 0.2967111263109896
+        },
+        {
+          "seed": 211,
+          "scenario": "longer_partnerships",
+          "policy": "pair_max",
+          "impressions": 746,
+          "formed": 66,
+          "dissolved": 30,
+          "active": 36,
+          "gini": 0.3274687220732797
+        },
+        {
+          "seed": 211,
+          "scenario": "longer_partnerships",
+          "policy": "pair_budgeted_max",
+          "impressions": 742,
+          "formed": 60,
+          "dissolved": 27,
+          "active": 33,
+          "gini": 0.29580338424678043
+        }
+      ],
+      "seconds": 13.417
+    }
+  ],
+  "epistemic_limits": "All synthetic from same model; N109 shared risk-set budget parity does not imply N111 longitudinal exposure parity; no new human sample, no causal effect, no scientific grade beyond 0/3."
+}
