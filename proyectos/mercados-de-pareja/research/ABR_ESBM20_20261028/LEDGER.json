@@ -18,7 +18,7 @@
     "N85",
     "N86"
   ],
-  "R5": "STOP_AFTER_N82__MIXMOSA_ORIGINAL_PHYSICAL_DATE_BILATERAL_DECISIONS_AVAILABLE_RIGHTS_AND_DURATION_NOT_VERIFIED__FOUR_UNUSED",
+  "R5": "STOP_AFTER_N82__GRAZ_UKDS_SCIENTIFIC_USE_LICENSE_CONFIRMED_USER_AUTH_REQUIRED__FOUR_UNUSED",
   "prereg_commit": "026cc12b5136e60034c71c2f794d01a453bdf5bd",
   "source_freeze_commit": "7f196409bc1ba5b5af6d8caad39c173a38a99405",
   "source_sha256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
@@ -35,19 +35,18 @@
   "QA": "QA.json",
   "raw_data_human_processed": false,
   "prior_register": {
-    "sources_total": 82,
+    "sources_total": 84,
     "prior_hypotheses_total": 30,
-    "update_events_total": 110,
+    "update_events_total": 112,
     "latest_sources": [
-      "SRC081",
-      "SRC082"
+      "SRC083",
+      "SRC084"
     ],
     "latest_updates": [
-      "U108",
-      "U109",
-      "U110"
+      "U111",
+      "U112"
     ],
-    "independence": "SRC081 original Mixmosa independent service with 2961 physical dates, real two-way yes/no, rights and duration unverified; SRC082 Columbia mirror same prior study."
+    "independence": "SRC083 Graz independent 2021/22 original dyadic cohort Scientific Use level1; SRC084 Joel original 2005/07 two studies UKDS safeguarded; no original bytes or outcomes analyzed, not counted as replication."
   },
   "new_N1": 0,
   "new_N2": 0,
@@ -761,27 +760,24 @@
   },
   "latest_posthoc_gate": {
     "date": "2026-10-29",
-    "type": "MIXMOSA_ORIGINAL_DYADIC_SOURCE_ACCESS_RIGHTS_GATE_NONCYCLE",
-    "report": "../ABR_MIXMOSA_BILATERAL_ACCESS_GATE_20261029/REPORT.md",
+    "type": "GRAZ_PSYCHARCHIVES_UKDS_ORIGINAL_LICENSED_DYADIC_ACCESS_NONCYCLE",
+    "report": "../ABR_LICENSED_DYADIC_GRAZ_UKDS_GATE_20261029/REPORT.md",
     "new_valid": 0,
     "new_invalid": 0,
     "new_planning": 0,
     "CT2_after": 7,
     "CT2_new_point": false,
     "source_ids": [
-      "SRC081",
-      "SRC082"
+      "SRC083",
+      "SRC084"
     ],
     "update_ids": [
-      "U108",
-      "U109",
-      "U110"
+      "U111",
+      "U112"
     ],
-    "original_operator_repo": true,
-    "original_csv_headers_read": true,
-    "original_csv_full_sha256": false,
-    "license_verified": false,
-    "relationship_duration_observed": false,
+    "institutional_data_license_verified": true,
+    "authorized_download_completed": false,
+    "original_csv_sha256": false,
     "new_AB_cycle": false
   }
 }
