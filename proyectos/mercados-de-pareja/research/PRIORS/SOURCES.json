@@ -3,7 +3,7 @@
   "project": "mercados-de-pareja",
   "date": "2026-10-28",
   "scope": "Retrospective provenance backfill from repository reports plus N56/N57 publisher audit. Original data never copied; not systematic or claim of accessing raw data for bibliography.",
-  "source_count": 68,
+  "source_count": 71,
   "sources": [
     {
       "id": "SRC001",
@@ -1341,7 +1341,65 @@
       "is_AB_cycle": false,
       "verified_at": "2026-10-29",
       "limitations": "Archival listing and access eligibility not itself reproduction, not separate independent cohort from SRC067, cannot claim exposure/rejection mechanism or verified effects."
+    },
+    {
+      "id": "SRC069",
+      "title": "Stanford HCMST 2009 original panel — public version 3.04 plus wave 4/5 and wave 6 supplement (2017)",
+      "canonical_url": "https://data.stanford.edu/hcmst",
+      "source_type": "ORIGINAL_PRIMARY_DATA_PROVENANCE_AND_WAVE_6_ELIGIBILITY",
+      "same_cohort_as": [
+        "SRC067",
+        "SRC068"
+      ],
+      "separate_cohort_from": [
+        "SRC048",
+        "SRC049"
+      ],
+      "cycle_ids": [],
+      "verified_at": "2026-10-29",
+      "access": "OFFICIAL_STANFORD_HTML_READ; linked wave6 Stata/codebook not downloaded or parsed; ZERO raw rows, ZERO file SHA",
+      "contribution": "Stanford original HCMST site now additionally lists wave 6 in summer 2017 (same persons originally sampled 2009), Stata wave6 supplement version 1.0 and codebook. It lists waves 1–3 in v3.04 and separately linkable waves4,5,6 via caseid_new. ICPSR30103.v8 contains only original 5 waves 2009-2015, so the 2017 supplement MUST NOT be assumed part of ICPSR 5-wave combined public dataset. Site confirms qflag partnered-at-baseline; w2_broke_up and w3_brokeup_actual recoded to separate separation vs partner death, and specific WEIGHT variables. Wave6 internet-only followup 91.3% among eligible GfK members; severe selection for long-surviving/contactable partnerships. Distinct 2017 HCMST NEW COHORT at same year is not HCMST 2009 wave6.",
+      "limitations": "Cannot construct actual wave6 survival cohort or infer hazard/weights without true file; HCMST2009 wave6 may require different sampling universe than earlier waves and wave7? Main page mentions wave6. Neither original data bytes nor reproducibility checked.",
+      "rights": "Stanford data use agreement no identification, citation and notification, no-charge redistribution, authentication/terms required. No implied cross-platform permission.",
+      "falsifier": "Officially download and hash public full waves 1–6, read wave6 codebook and caseid_new join cardinalities, inspect selection status and breakups vs deaths with previous-wave risk set; separate survey panel in 2017."
+    },
+    {
+      "id": "SRC070",
+      "title": "Rosenfeld et al. Stanford HCMST 2009 codebook Waves 1–3 v3.04 (16 December 2011)",
+      "canonical_url": "https://web.stanford.edu/~mrosenfe/how_meet_public/HCMST_codebook_3_04.pdf",
+      "source_type": "PRIMARY_ORIGINAL_CODEBOOK_WITH_AGGREGATED_FREQUENCIES_NOT_RAW_ROWS",
+      "same_cohort_as": [
+        "SRC067",
+        "SRC068",
+        "SRC069"
+      ],
+      "cycle_ids": [],
+      "verified_at": "2026-10-29",
+      "access": "Original PDF indexed extracted text inspected; web screenshot attempts p0 and p169 returned CACHE MISS, so tabulations/labels not image-verified. No PDF file bytes downloaded, no raw row access.",
+      "contribution": "Codebook p0 confirms 4002 observations, 387 variables baseline+wave2+wave3. Variable qflag is partnered flag; w2_broke_up and w3_brokeup_actual distinguish breakup and partner deceased; w3_xpartnered encodes 993 unqualified baseline-unpartnered, 2720 qualified for wave3 and 289 unqualified due wave2 breakup, showing waves are conditionally risk-set selected. Example codebook aggregate w3_brokeup_actual categories still together/broke up/deceased among observed; missing includes structurally ineligible/not followed, so missing must not be treated as no breakup. Original baseline weight1 all respondents and weight2 partnered respondents (exact weighting details further in full user guide).",
+      "limitations": "Page number/values from extracted public PDF index, not new microdata. Do not use tabulated counts as unconditional population survival rates; followup drops prior breakups/deaths and panel attrition also affects risk set. No visual screenshot verification.",
+      "rights": "Public original research codebook, separate data-use agreement for microdata. No raw data accessed.",
+      "falsifier": "Verify original downloaded dataset categories and ID joins, wave-specific no-response, competing risk partner death, weights and at-risk risk sets before any model."
+    },
+    {
+      "id": "SRC071",
+      "title": "Charlot Franssen (2023), Predicting the Probability of a Relationship Breakup Using 7-Year Longitudinal Data: A Survival Analysis Approach — Tilburg University undergraduate thesis",
+      "canonical_url": "https://arno.uvt.nl/show.cgi?fid=169314",
+      "source_type": "INDEPENDENT_ANALYST_PREVIOUS_HCMST2009_SURVIVAL_BASELINE_SAME_COHORT_NOT_INDEPENDENT_SAMPLE",
+      "same_cohort_as": [
+        "SRC067",
+        "SRC068",
+        "SRC069"
+      ],
+      "cycle_ids": [],
+      "verified_at": "2026-10-29",
+      "access": "Full original university repository PDF original indexed text (26 pages) inspected. web screenshots pages 0,10,16 failed CACHE MISS; tables extracted as text only. No author's analysis code or data rows read, results not reproduced.",
+      "contribution": "Published thesis already merged HCMST 2009 waves1-6 (2009–2017) on caseid_new: 4002 total, 3009 baseline partnered. Survival prediction with Cox proportional hazards, Random Survival Forest (RSF) and DeepHit, 70/30 split; author-reported C-index: Cox .791, RSF .795, DeepHit .780; IBS Cox .087, RSF .085, DeepHit .090. Therefore 'using survival analysis/RSF on HCMST 2009 to predict breakup' has pre-2026 prior art. Related risk: thesis reports some Brier scores for 2017 as 3.387/3.149/1.500, >1, mathematically impossible for ordinary unscaled per-row squared error on binary outcomes; require verify unit/scale/transcription, do not claim invalidity without code and original source. Event time constructed from annual survey and if no breakups 2012/2016 assigned 2017 in figure, raises inspection needs. Use as prior art and weak comparative baseline; not causal ESBM validation.",
+      "baseline": "Cox PH, RSF, DeepHit with comparable baseline predictors; even these cannot identify app cause or formation/rejection stage; stronger survival analysis must account for baseline duration and competing death, proper holdout and evaluation.",
+      "limitations": "Student undergraduate thesis, not peer-reviewed causal replication. Scanned/indexed PDF pages not visual-confirmed due cache; C-index differences tiny, no uncertainty of difference replicated; modeling and preprocessing choices require adversarial audit. Same HCMST2009 survey as SRC067 et al — no new independent cohort.",
+      "rights": "Public university thesis copyrighted, summarize/cite only. Author code/raw permission unverified.",
+      "falsifier": "Acquire actual full source and valid legal license, prereg cohort-and-duration model with interval censorship, death competing risk, weights and unknown attrition, compare preexisting strong Cox RSF DeepHit in proper separate time/platform holdout."
     }
   ],
-  "last_added_campaign": "POST_N82_HCMST_2009_INDEPENDENT_COHORT_GATE_NONCYCLE"
+  "last_added_campaign": "POST_N82_HCMST_2009_WAVE6_AND_SURVIVAL_PRIOR_ART_GATE_NONCYCLE"
 }
