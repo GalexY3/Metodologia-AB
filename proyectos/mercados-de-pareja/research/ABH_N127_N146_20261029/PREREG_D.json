@@ -1,0 +1,239 @@
+{
+  "schema": "ABH.PREEXEC.D.v1",
+  "day": "2026-10-29",
+  "branch": "research/ab-h-esbm-event-api-20261029",
+  "authorized_total": 20,
+  "valid_before": 15,
+  "pending": 5,
+  "why": "N127 explicit API parity and N132–N141 model-conditional network/timing tests passed; current scheduler lacks explicit input fail-closed at injection; rewiring null likely depends on actor iteration order",
+  "source_freezes": "New engine hardening and canonical graph source commits plus runner commits before N142–N146 outcomes",
+  "contracts": [
+    {
+      "id": "N142",
+      "parent": "N141",
+      "mode": "ADVERSARIAL_INPUT",
+      "D": {
+        "code_hash": "GitHub freeze before any outcomes",
+        "original_ESBM_sha": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+      },
+      "A": {
+        "question": "Reject injected invalid event schedules at the event boundary before any stage updates",
+        "estimand": "Software invariants or negative identity audit, not human outcomes"
+      },
+      "B": {
+        "null": "Source unchanged or actor relabel should have no effect under symmetric shocks",
+        "rivals": [
+          "old networkx label-sensitive rewire",
+          "rank-canonical degree-preserving rewire",
+          "broken scheduler input"
+        ],
+        "H0": "Any discrepancy must be retained"
+      },
+      "C": {
+        "precommitted_test": "N24×4 synthetic: self/negative/out-of-range/ineligible and repeated dyad, plus slot1 overcount; all rejected with ValueError; no silent result contamination.",
+        "seed_values": "101,211/legacy 101–601"
+      },
+      "E": "PENDING",
+      "F": {
+        "negative_control": "malicious inputs and old engine parity; do not hide failed old rewire invariance"
+      },
+      "G": {
+        "independent_external": "none"
+      },
+      "H": {
+        "science_priors": "NO_CHANGE; code-only findings cannot raise P-NOVELTY"
+      },
+      "I": {
+        "CT2": 7,
+        "grade": "0/3",
+        "maturity": "audited technical-only"
+      },
+      "J": {
+        "if_pass": "N143",
+        "if_fail": "record INVALID or VALID_NEGATIVE_DIAGNOSIS, repair with new freeze, no silent claims"
+      }
+    },
+    {
+      "id": "N143",
+      "parent": "N142",
+      "mode": "REGRESSION_REPAIR",
+      "D": {
+        "code_hash": "GitHub freeze before any outcomes",
+        "original_ESBM_sha": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+      },
+      "A": {
+        "question": "After event boundary hardening preserve exact backward compatibility and bounded trace",
+        "estimand": "Software invariants or negative identity audit, not human outcomes"
+      },
+      "B": {
+        "null": "Source unchanged or actor relabel should have no effect under symmetric shocks",
+        "rivals": [
+          "old networkx label-sensitive rewire",
+          "rank-canonical degree-preserving rewire",
+          "broken scheduler input"
+        ],
+        "H0": "Any discrepancy must be retained"
+      },
+      "C": {
+        "precommitted_test": "60 original scenario×seed identical plus six earlier old-adapter small trajectories, and two event counters exact. No new artificial data.",
+        "seed_values": "101,211/legacy 101–601"
+      },
+      "E": "PENDING",
+      "F": {
+        "negative_control": "malicious inputs and old engine parity; do not hide failed old rewire invariance"
+      },
+      "G": {
+        "independent_external": "none"
+      },
+      "H": {
+        "science_priors": "NO_CHANGE; code-only findings cannot raise P-NOVELTY"
+      },
+      "I": {
+        "CT2": 7,
+        "grade": "0/3",
+        "maturity": "audited technical-only"
+      },
+      "J": {
+        "if_pass": "N144",
+        "if_fail": "record INVALID or VALID_NEGATIVE_DIAGNOSIS, repair with new freeze, no silent claims"
+      }
+    },
+    {
+      "id": "N144",
+      "parent": "N143",
+      "mode": "LABEL_AUDIT",
+      "D": {
+        "code_hash": "GitHub freeze before any outcomes",
+        "original_ESBM_sha": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+      },
+      "A": {
+        "question": "Determine whether the previous degree-preserving rewired null leaks arbitrary actor labels",
+        "estimand": "Software invariants or negative identity audit, not human outcomes"
+      },
+      "B": {
+        "null": "Source unchanged or actor relabel should have no effect under symmetric shocks",
+        "rivals": [
+          "old networkx label-sensitive rewire",
+          "rank-canonical degree-preserving rewire",
+          "broken scheduler input"
+        ],
+        "H0": "Any discrepancy must be retained"
+      },
+      "C": {
+        "precommitted_test": "Ten seeds 5000–5009 × two relabelings: compare old ring and rewired edge sets; report mismatches even if old null fails. This diagnostic can be a VALID NEGATIVE research artifact, not PASS of invariance.",
+        "seed_values": "5000–5009"
+      },
+      "E": "PENDING",
+      "F": {
+        "negative_control": "malicious inputs and old engine parity; do not hide failed old rewire invariance"
+      },
+      "G": {
+        "independent_external": "none"
+      },
+      "H": {
+        "science_priors": "NO_CHANGE; code-only findings cannot raise P-NOVELTY"
+      },
+      "I": {
+        "CT2": 7,
+        "grade": "0/3",
+        "maturity": "audited technical-only"
+      },
+      "J": {
+        "if_pass": "N145",
+        "if_fail": "record INVALID or VALID_NEGATIVE_DIAGNOSIS, repair with new freeze, no silent claims"
+      }
+    },
+    {
+      "id": "N145",
+      "parent": "N144",
+      "mode": "REPAIR_SYMMETRY",
+      "D": {
+        "code_hash": "GitHub freeze before any outcomes",
+        "original_ESBM_sha": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+      },
+      "A": {
+        "question": "Generate a degree-preserving null in canonical rank space and test equivariance of its graph and scheduling decisions",
+        "estimand": "Software invariants or negative identity audit, not human outcomes"
+      },
+      "B": {
+        "null": "Source unchanged or actor relabel should have no effect under symmetric shocks",
+        "rivals": [
+          "old networkx label-sensitive rewire",
+          "rank-canonical degree-preserving rewire",
+          "broken scheduler input"
+        ],
+        "H0": "Any discrepancy must be retained"
+      },
+      "C": {
+        "precommitted_test": "Same ten seeds × two relabelings ×ring/rewired: 40 exact graph identities; for 2 seeds compare one-slot scheduled pairs; revised graph with canonical rank labels.",
+        "seed_values": "5000–5009"
+      },
+      "E": "PENDING",
+      "F": {
+        "negative_control": "malicious inputs and old engine parity; do not hide failed old rewire invariance"
+      },
+      "G": {
+        "independent_external": "none"
+      },
+      "H": {
+        "science_priors": "NO_CHANGE; code-only findings cannot raise P-NOVELTY"
+      },
+      "I": {
+        "CT2": 7,
+        "grade": "0/3",
+        "maturity": "audited technical-only"
+      },
+      "J": {
+        "if_pass": "N146",
+        "if_fail": "record INVALID or VALID_NEGATIVE_DIAGNOSIS, repair with new freeze, no silent claims"
+      }
+    },
+    {
+      "id": "N146",
+      "parent": "N145",
+      "mode": "PORTABILITY_FINAL",
+      "D": {
+        "code_hash": "GitHub freeze before any outcomes",
+        "original_ESBM_sha": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+      },
+      "A": {
+        "question": "Run isolated-from-cwd Python subprocess with only explicit engine and revised graph sources and deterministic smoke controls",
+        "estimand": "Software invariants or negative identity audit, not human outcomes"
+      },
+      "B": {
+        "null": "Source unchanged or actor relabel should have no effect under symmetric shocks",
+        "rivals": [
+          "old networkx label-sensitive rewire",
+          "rank-canonical degree-preserving rewire",
+          "broken scheduler input"
+        ],
+        "H0": "Any discrepancy must be retained"
+      },
+      "C": {
+        "precommitted_test": "Same installed NumPy/NetworkX environment, no dynamic exec/inspect in engine; fail closed bad source, bad scheduler, exact legacy 101 parity and 2-slot mini. Different machine NOT claimed.",
+        "seed_values": "101,211/legacy 101–601"
+      },
+      "E": "PENDING",
+      "F": {
+        "negative_control": "malicious inputs and old engine parity; do not hide failed old rewire invariance"
+      },
+      "G": {
+        "independent_external": "none"
+      },
+      "H": {
+        "science_priors": "NO_CHANGE; code-only findings cannot raise P-NOVELTY"
+      },
+      "I": {
+        "CT2": 7,
+        "grade": "0/3",
+        "maturity": "audited technical-only"
+      },
+      "J": {
+        "if_pass": "close if all valid",
+        "if_fail": "record INVALID or VALID_NEGATIVE_DIAGNOSIS, repair with new freeze, no silent claims"
+      }
+    }
+  ],
+  "R5_human": "STOP",
+  "rights": "No SSJY SRC104/licence/author contact/main merge"
+}
