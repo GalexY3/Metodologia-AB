@@ -1,22 +1,22 @@
-# Mercados de pareja · acceso estable
+# Mercados de pareja · acceso estable y estado verificable
 
-**Estado de investigación comprobado el 30/10/2026.** Este directorio en `main` es una entrada documental, **no** una fusión del historial experimental. La historia técnica, los contratos, fuentes y resultados siguen en ramas de investigación independientes.
+**Actualizado 30/10/2026.** Este directorio en `main` es una **entrada documental, no un merge de la investigación**. Código fuente original, instrumentos, ledgers y resultados científicos continúan en ramas controladas. No usar el número de pruebas como validación sociológica.
 
-## Ruta activa de N257–N276
-- Rama: [research/ab-h-esbm-event-parity-n257-n276-20261030](https://github.com/GalexY3/Metodologia-AB/tree/research/ab-h-esbm-event-parity-n257-n276-20261030/proyectos/mercados-de-pareja).
-- Punto de partida autorizado y comprobado: `28ee845cca88e16f13f25962e4b103335484d9a1`; su [planificación no ejecutada](https://github.com/GalexY3/Metodologia-AB/blob/research/ab-h-esbm-event-parity-n257-n276-20261030/proyectos/mercados-de-pareja/research/ABH_N257_N276_20261030/PREPARATION_NOT_EXECUTED.md).
-- [Tareas para Codex](tareas_codex/README.md) (índice en main, con tareas de recuperación, SIGSEGV, timeout y paridad individual).
+## Campaña vigente cerrada: AB-H N257–N276
 
-## Evidencia y límites
-- [Cierre N237–N256](https://github.com/GalexY3/Metodologia-AB/blob/research/ab-h-esbm-polynomial-blossom-n237-n256-20261030/proyectos/mercados-de-pareja/research/ABH_N237_N256_20261030/REPORT.md), HEAD `7307f81174dab5050bf3f28f04235e7dc6666e74`.
-- 20/20 ejecuciones históricas: 18 PASS técnicos y dos fallos adversariales preservados; 60/60 coincidencias de métricas/series agregadas de simulaciones N144 T16 K7, **no** identidad de eventos ni parejas por individuo.
-- N242: SIGSEGV C++ en grafo n143. N246: timeout 12s en n144 casi completo.
-- Falta recuperar `ESBM_ABH_N237_N256_Blossom_60corridas.zip` (SHA256 `349414236fb7d075e9c024efb7c56faf616fd46d79454963e30db6d832aa144c`) para reproducir los fallos con instrumentos originales.
-- N257–N276: **20 autorizados, 0 ejecutados, 20 disponibles** en el último estado aquí registrado; comprobar la rama activa antes de asumir vigencia.
-- **CT2 científico 7/100; STOP_R5 humano activo.** Ninguna evidencia humana nueva ni validación causal.
-- ESBM original SHA256 `f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b` y SRC104 sin modificaciones.
+- **20/20 ciclos ejecutados, 18 PASS técnicos, 2 negativos válidos (N257/n143 y N258/n144), 0 pendientes.** Primeros intentos N259–N263: 5 fallos instrumentales de guardado, preservados y repetidos después de registrar reparación prospectiva. No se contabilizaron como plazas extra.
+- **[Informe de cierre publicado en main](informes/ABH_N257_N276_20261030.md)**. [Informe canónico y preregistro de investigación](https://github.com/GalexY3/Metodologia-AB/tree/research/ab-h-esbm-event-parity-n257-n276-20261030/proyectos/mercados-de-pareja/research/ABH_N257_N276_20261030).
+- **[Índice de recibos SHA](https://github.com/GalexY3/Metodologia-AB/blob/research/ab-h-esbm-event-parity-n257-n276-20261030/proyectos/mercados-de-pareja/research/ABH_N257_N276_20261030/RESULTS_INDEX_GITHUB.json)** y **[ledger completo A–J](https://github.com/GalexY3/Metodologia-AB/blob/research/ab-h-esbm-event-parity-n257-n276-20261030/proyectos/mercados-de-pareja/research/ABH_N257_N276_20261030/LEDGER_AJ_POSTOUTCOME_GITHUB.json)**. El código/hash A–J fue congelado antes de outcomes: commit `474cdae1cf04bf89912f7c6fa4f961bbe14c4483`.
+- 60/60 comparaciones de **eventos dirigidos y parejas** a lo largo de 960 ticks entre **dos motores Python instrumentales** (uno usa NetworkX, otro Boost C++). **NO** se compararon bytes/trazas del antiguo TypeScript histórico ni se obtuvo el ZIP anterior. Las igualdades no demuestran unicidad de matching o portabilidad.
+- **Fallos conservados:** n143 near-tie `SIGSEGV -11`; n143 plano timeout 4 s; n144 plano/near-tie timeout 5 s. Un ASan posterior preregistrado detectó `stack-overflow` en la ruta Boost `retrieve_augmenting_path` para un grafo **nuevo**, no el antiguo N242.
+- N270: objetivo invariante en 6/6 comparaciones de permutación, pero **4/6 cambiaron la identidad de las aristas** en casos empatados/casi empatados; coincidencia de objetivos no equivale a paridad de parejas.
+- **Archivo íntegro**: `ESBM_ABH_N257_N276_event_parity_results.zip` SHA256 `e0263af4ac85073b1ccbd8a32a4d9dc460b29f89147d765c20eaf2c90554bd5d`, 161 archivos, en Biblioteca del investigador `/Mercados-de-pareja/ABH-N257-N276/`. La Biblioteca no equivale a alojamiento en GitHub.
+- [Tareas para Codex históricas archivadas](tareas_codex/README.md). **Actualmente no hay Codex ni encargos externos activos**.
 
-## Política de publicación
-Los archivos estables de navegación y las tareas autorizadas pueden entrar en `main` por commits documentales independientes. Código experimental, métricas, evaluaciones negativas y reparaciones deben permanecer en ramas con prerregistro/ledger y evidencia intacta hasta una revisión explícita; no hacer fusión masiva de historiales divergentes. No SSJY; no aceptar licencias; no contactar autores; no CI costosa.
+## Punto de partida histórico y garantías
 
-**No utilizar este README como prueba de ejecución de nuevos ciclos.**
+- [Cierre anterior N237–N256](https://github.com/GalexY3/Metodologia-AB/blob/research/ab-h-esbm-polynomial-blossom-n237-n256-20261030/proyectos/mercados-de-pareja/research/ABH_N237_N256_20261030/REPORT.md): 60/60 **resultados agregados** N144 T16 K7 con original Python y réplica TypeScript+Boost, pero no eventos individuales verificados; N242 `SIGSEGV` y N246 timeout 12 s en adversariales originales no reproducidos en esta campaña por ausencia de ZIP exacto.
+- ESBM original SHA256 `f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b` y evidencia humana SRC104 **intactos**. **111 SOURCES, 34 PRIORS, 197 UPDATES** (U197 `NO_CHANGE_WITH_REASON`). Madurez previa 44,10% **no reestimada**.
+- **CT2 científica 7/100; STOP_R5 humano activo, grado humano nuevo 0/3**. Sin sujetos nuevos ni validación causal, sin SSJY, licencias aceptadas, contacto de autores, fusiones experimentales ni CI costosa.
+
+Esta entrada no modifica retroactivamente los resultados o contratos A–J del proyecto. Cualquier campaña posterior requerirá consentimiento/alcance propios y evidencia diferenciadora.
