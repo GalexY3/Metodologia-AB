@@ -4,7 +4,7 @@
   "date": "2026-10-28",
   "mode": "append-only logical, versioned by Git commits",
   "reconstructed_from_documents": "Retrospective backfill, not preregistration. Old before values NOT_RECORDED unless documented explicitly.",
-  "source_coverage": "109 SOURCE records (3 known duplicated DOI pairs plus cohort reuse), 34 PRIORS unchanged, 192 append-only UPDATES. N187–N206 19 synthetic/technical cycles + 1 primary documentary rights no-go. No human records read.",
+  "source_coverage": "110 SOURCE bibliographic entries, 34 PRIORS, 193 UPDATES including U193 no-cycle document, 0 human data rows added and 0 AB-H cycles used.",
   "events": [
     {
       "id": "U001",
@@ -5426,7 +5426,33 @@
       "AB_R_empirical_cycle_increment": 0,
       "AB_H_executed_technical_or_documentary_count": 20,
       "scientific_grade": "0/3"
+    },
+    {
+      "id": "U193",
+      "prior_id": "P-DYADIC_ACCESS",
+      "source_ids": [
+        "SRC110",
+        "SRC081",
+        "SRC083",
+        "SRC088"
+      ],
+      "cycle_ids": [],
+      "before": "TWO_ORIGINAL_HUMAN_DATASETS_READ_SECOND_PARTIAL_BILATERAL_ID_JOIN_INCONSISTENT_NO_EXTERNAL_HOLDOUT",
+      "after": "TWO_ORIGINAL_HUMAN_DATASETS_READ_SECOND_PARTIAL_BILATERAL_ID_JOIN_INCONSISTENT_NO_EXTERNAL_HOLDOUT",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "recorded_at": "2026-10-30",
+      "evidence_type": "NOCYCLE_PUBLIC_PRIMARY_LITERATURE_AND_SECONDARY_DATA_CATALOG_FEASIBILITY",
+      "what_the_test_contributes": "New distinct audio podcast pair-level binary joint match dataset SRC110 from Finn laboratory, NLM catalogue CC BY; published released target is only whether both yes-or-maybe, not two separate participant vote outcomes. Other avenues are governed by EULA or unverified licence. A new legal primary data route passing all 4 R5 gates was NOT verified.",
+      "why_this_updates_or_checks_prior": "Mixed original/publication, secondary license meta, and incomplete individual two-vote columns do not create an eligible external holdout. Can't inspect OSF due user restriction. No author outreach.",
+      "limits": "No 1st-party file-level licence inspection or bytes/sha, no reidentification audit, no complete riskset, no prediction against full SRM/B6*. Source is transcript podcast not a controlled rotation cohort. No causal validation.",
+      "falsifier_or_followup": "Verify release licence per file, case-level two independently recorded votes linked to stable actor/partner/session/time and complete opportunity riskset plus independent people; precommit heldout ESBM-vs-SRM/B6 and inspect before outcome",
+      "prior_probability_before": null,
+      "prior_probability_after": null,
+      "numerical_bayesian_update": false,
+      "AB_cycle_increment": 0,
+      "AB_H_cycle_increment": 0,
+      "scientific_grade": "0/3"
     }
   ],
-  "last_campaign": "ABH_N187_N206_RIVAL_PARITY_20261030"
+  "last_campaign": "NOCYCLE_R5_INDEPENDENT_REPLICATION_FEASIBILITY_20261030"
 }
