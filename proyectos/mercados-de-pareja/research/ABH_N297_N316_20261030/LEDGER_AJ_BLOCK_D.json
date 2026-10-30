@@ -1,0 +1,322 @@
+{
+  "schema": "ABH_N297_N316_AJ_POSTOUTCOME",
+  "date": "2026-10-30",
+  "branch": "research/ab-h-esbm-robust-exact-n297-n316-20261030",
+  "preoutcome_freeze_commit": "7495312512fbcfd9f48cdb05588ae74a10b555d9",
+  "prereg_parts": [
+    "PREREG_AJ_PART_A.json",
+    "PREREG_AJ_PART_B.json"
+  ],
+  "code_sha_commit": "ab43890677b27a8f3848263ad8f8baf27fd365ba",
+  "posthoc_native_prereg_commit": "3f1bedbf8d27528f28b8a36391b15678d1e4584f",
+  "authorized": 20,
+  "valid_executions": 20,
+  "invalid_executions": 0,
+  "unspent": 0,
+  "human_evidence_new": 0,
+  "CT2": 7,
+  "STOP_R5": "ACTIVE",
+  "entries": [
+    {
+      "id": "N312",
+      "A": {
+        "question": "N312 2 of 8 quantized n12 label permutations change canonical pair IDs",
+        "estimand": "Synthetic solver objective, uniqueness/canonicality or event state as specified; no human outcome"
+      },
+      "B": {
+        "rivals": "Exact integer NetworkX vs Boost/DP/MILP/float64/metamorphic control as preregistered"
+      },
+      "C": {
+        "preoutcome_contract": "PREREG_AJ_PART_B.json",
+        "falsifier": "Predefined mismatch/timeout/error or expected counterexample found, not posthoc altered"
+      },
+      "D": {
+        "code_sha256": {
+          "run_n297.py": "74346a39a2c31a44fc79fba41f40c107b569091cafeeff0a0b1ff8c16e3abad7",
+          "robust_solver.py": "3447fb5c0ca44f1808f6d5940ae2de4d96dd575d936fe27d914393c98d4918ca",
+          "experiment.py": "89d9d5c125c9153ca8a641267a983e71c0427e1600a45faf03d6f3761b125dfe",
+          "trace_engine.py": "c0c92061100a689ab59698a46e22a96e96d7bb3bd99a21ec292d7aaa30e4415a",
+          "boost_blossom.cpp": "47806e6b331e088d209e51143d18cb5d5cc7a2e2d3d6d8914478bff4b7b8c2d3",
+          "boost_blossom": "96087f807c3845193da871aa8a8f83092c095a0dcf2ab0862ace85b76eebf995"
+        },
+        "source_archive_sha256": "5df54b85ccb3ef4bb2c568ec4a665ac07032dd9e3941108f2cb20e689dabe55b",
+        "freeze_commit": "7495312512fbcfd9f48cdb05588ae74a10b555d9"
+      },
+      "E": {
+        "execution": {
+          "cycle": 312,
+          "sha256": "3f80b19cee12490bac3f6b915ebdab70efa9cf9f7ccfc2b4544f07229d1f4dfd",
+          "status": "EXECUTED",
+          "elapsed_s": 0.016736183000034544,
+          "path": "results/N312.json"
+        },
+        "observed": "2 of 8 quantized n12 label permutations change canonical pair IDs"
+      },
+      "F": {
+        "classification": "NEGATIVE_ID_CANONICALITY",
+        "strict_limits": "Boost 1.2/1/0.45s where specified; no 100% reliability assertion"
+      },
+      "G": {
+        "independent_human_evidence": false,
+        "small_exact_oracles": false,
+        "historic_TS_not_executed": true
+      },
+      "H": {
+        "prior_event": "U202",
+        "human_prior_update": "NO_CHANGE_WITH_REASON"
+      },
+      "I": {
+        "scientific_CT2_before": 7,
+        "scientific_CT2_after": 7,
+        "human_grade": "0/3",
+        "STOP_R5": true
+      },
+      "J": {
+        "decision": "CLOSE_TECHNICAL_NEGATIVE_ID_CANONICALITY",
+        "slot_counted": true,
+        "remaining_after": 4
+      }
+    },
+    {
+      "id": "N313",
+      "A": {
+        "question": "N313 4 n30 with ten isolates meet cardinality and paired endpoint controls",
+        "estimand": "Synthetic solver objective, uniqueness/canonicality or event state as specified; no human outcome"
+      },
+      "B": {
+        "rivals": "Exact integer NetworkX vs Boost/DP/MILP/float64/metamorphic control as preregistered"
+      },
+      "C": {
+        "preoutcome_contract": "PREREG_AJ_PART_B.json",
+        "falsifier": "Predefined mismatch/timeout/error or expected counterexample found, not posthoc altered"
+      },
+      "D": {
+        "code_sha256": {
+          "run_n297.py": "74346a39a2c31a44fc79fba41f40c107b569091cafeeff0a0b1ff8c16e3abad7",
+          "robust_solver.py": "3447fb5c0ca44f1808f6d5940ae2de4d96dd575d936fe27d914393c98d4918ca",
+          "experiment.py": "89d9d5c125c9153ca8a641267a983e71c0427e1600a45faf03d6f3761b125dfe",
+          "trace_engine.py": "c0c92061100a689ab59698a46e22a96e96d7bb3bd99a21ec292d7aaa30e4415a",
+          "boost_blossom.cpp": "47806e6b331e088d209e51143d18cb5d5cc7a2e2d3d6d8914478bff4b7b8c2d3",
+          "boost_blossom": "96087f807c3845193da871aa8a8f83092c095a0dcf2ab0862ace85b76eebf995"
+        },
+        "source_archive_sha256": "5df54b85ccb3ef4bb2c568ec4a665ac07032dd9e3941108f2cb20e689dabe55b",
+        "freeze_commit": "7495312512fbcfd9f48cdb05588ae74a10b555d9"
+      },
+      "E": {
+        "execution": {
+          "cycle": 313,
+          "sha256": "e9de739e41a6ec8945c64c1b5d71f04208d23d1315d0a35cb622215e024dcdd1",
+          "status": "EXECUTED",
+          "elapsed_s": 0.009630789999960143,
+          "path": "results/N313.json"
+        },
+        "observed": "4 n30 with ten isolates meet cardinality and paired endpoint controls"
+      },
+      "F": {
+        "classification": "PASS_ISOLATION",
+        "strict_limits": "Boost 1.2/1/0.45s where specified; no 100% reliability assertion"
+      },
+      "G": {
+        "independent_human_evidence": false,
+        "small_exact_oracles": false,
+        "historic_TS_not_executed": true
+      },
+      "H": {
+        "prior_event": "U202",
+        "human_prior_update": "NO_CHANGE_WITH_REASON"
+      },
+      "I": {
+        "scientific_CT2_before": 7,
+        "scientific_CT2_after": 7,
+        "human_grade": "0/3",
+        "STOP_R5": true
+      },
+      "J": {
+        "decision": "CLOSE_TECHNICAL_PASS_ISOLATION",
+        "slot_counted": true,
+        "remaining_after": 3
+      }
+    },
+    {
+      "id": "N314",
+      "A": {
+        "question": "N314 6 n24 binary64 delta extraction and reconstruction checks pass",
+        "estimand": "Synthetic solver objective, uniqueness/canonicality or event state as specified; no human outcome"
+      },
+      "B": {
+        "rivals": "Exact integer NetworkX vs Boost/DP/MILP/float64/metamorphic control as preregistered"
+      },
+      "C": {
+        "preoutcome_contract": "PREREG_AJ_PART_B.json",
+        "falsifier": "Predefined mismatch/timeout/error or expected counterexample found, not posthoc altered"
+      },
+      "D": {
+        "code_sha256": {
+          "run_n297.py": "74346a39a2c31a44fc79fba41f40c107b569091cafeeff0a0b1ff8c16e3abad7",
+          "robust_solver.py": "3447fb5c0ca44f1808f6d5940ae2de4d96dd575d936fe27d914393c98d4918ca",
+          "experiment.py": "89d9d5c125c9153ca8a641267a983e71c0427e1600a45faf03d6f3761b125dfe",
+          "trace_engine.py": "c0c92061100a689ab59698a46e22a96e96d7bb3bd99a21ec292d7aaa30e4415a",
+          "boost_blossom.cpp": "47806e6b331e088d209e51143d18cb5d5cc7a2e2d3d6d8914478bff4b7b8c2d3",
+          "boost_blossom": "96087f807c3845193da871aa8a8f83092c095a0dcf2ab0862ace85b76eebf995"
+        },
+        "source_archive_sha256": "5df54b85ccb3ef4bb2c568ec4a665ac07032dd9e3941108f2cb20e689dabe55b",
+        "freeze_commit": "7495312512fbcfd9f48cdb05588ae74a10b555d9"
+      },
+      "E": {
+        "execution": {
+          "cycle": 314,
+          "sha256": "4ba4724dac9718421efcd515c7741dd7335c2378cfeded1c3bdbd5973dbdc01d",
+          "status": "EXECUTED",
+          "elapsed_s": 0.0015317510000159018,
+          "path": "results/N314.json"
+        },
+        "observed": "6 n24 binary64 delta extraction and reconstruction checks pass"
+      },
+      "F": {
+        "classification": "PASS_FLOAT_ROUNDTRIP",
+        "strict_limits": "Boost 1.2/1/0.45s where specified; no 100% reliability assertion"
+      },
+      "G": {
+        "independent_human_evidence": false,
+        "small_exact_oracles": false,
+        "historic_TS_not_executed": true
+      },
+      "H": {
+        "prior_event": "U202",
+        "human_prior_update": "NO_CHANGE_WITH_REASON"
+      },
+      "I": {
+        "scientific_CT2_before": 7,
+        "scientific_CT2_after": 7,
+        "human_grade": "0/3",
+        "STOP_R5": true
+      },
+      "J": {
+        "decision": "CLOSE_TECHNICAL_PASS_FLOAT_ROUNDTRIP",
+        "slot_counted": true,
+        "remaining_after": 2
+      }
+    },
+    {
+      "id": "N315",
+      "A": {
+        "question": "N315 Four artificially flat-shock scenarios, 3 ticks, full event parity within reconstructed engine",
+        "estimand": "Synthetic solver objective, uniqueness/canonicality or event state as specified; no human outcome"
+      },
+      "B": {
+        "rivals": "Exact integer NetworkX vs Boost/DP/MILP/float64/metamorphic control as preregistered"
+      },
+      "C": {
+        "preoutcome_contract": "PREREG_AJ_PART_B.json",
+        "falsifier": "Predefined mismatch/timeout/error or expected counterexample found, not posthoc altered"
+      },
+      "D": {
+        "code_sha256": {
+          "run_n297.py": "74346a39a2c31a44fc79fba41f40c107b569091cafeeff0a0b1ff8c16e3abad7",
+          "robust_solver.py": "3447fb5c0ca44f1808f6d5940ae2de4d96dd575d936fe27d914393c98d4918ca",
+          "experiment.py": "89d9d5c125c9153ca8a641267a983e71c0427e1600a45faf03d6f3761b125dfe",
+          "trace_engine.py": "c0c92061100a689ab59698a46e22a96e96d7bb3bd99a21ec292d7aaa30e4415a",
+          "boost_blossom.cpp": "47806e6b331e088d209e51143d18cb5d5cc7a2e2d3d6d8914478bff4b7b8c2d3",
+          "boost_blossom": "96087f807c3845193da871aa8a8f83092c095a0dcf2ab0862ace85b76eebf995"
+        },
+        "source_archive_sha256": "5df54b85ccb3ef4bb2c568ec4a665ac07032dd9e3941108f2cb20e689dabe55b",
+        "freeze_commit": "7495312512fbcfd9f48cdb05588ae74a10b555d9"
+      },
+      "E": {
+        "execution": {
+          "cycle": 315,
+          "sha256": "5b2b9f3798d9db33dffc49794acb5a38e16889ab2947d1585821a0267a352f02",
+          "status": "EXECUTED",
+          "elapsed_s": 0.41944946599994637,
+          "path": "results/N315.json"
+        },
+        "observed": "Four artificially flat-shock scenarios, 3 ticks, full event parity within reconstructed engine"
+      },
+      "F": {
+        "classification": "PASS_DIRECTED_SHORT_TRACES",
+        "strict_limits": "Boost 1.2/1/0.45s where specified; no 100% reliability assertion"
+      },
+      "G": {
+        "independent_human_evidence": false,
+        "small_exact_oracles": false,
+        "historic_TS_not_executed": true
+      },
+      "H": {
+        "prior_event": "U202",
+        "human_prior_update": "NO_CHANGE_WITH_REASON"
+      },
+      "I": {
+        "scientific_CT2_before": 7,
+        "scientific_CT2_after": 7,
+        "human_grade": "0/3",
+        "STOP_R5": true
+      },
+      "J": {
+        "decision": "CLOSE_TECHNICAL_PASS_DIRECTED_SHORT_TRACES",
+        "slot_counted": true,
+        "remaining_after": 1
+      }
+    },
+    {
+      "id": "N316",
+      "A": {
+        "question": "N316 Original n143 synthetic fixture crashes Boost; reversed insertion returns; three other topology/weight perturbations crash",
+        "estimand": "Synthetic solver objective, uniqueness/canonicality or event state as specified; no human outcome"
+      },
+      "B": {
+        "rivals": "Exact integer NetworkX vs Boost/DP/MILP/float64/metamorphic control as preregistered"
+      },
+      "C": {
+        "preoutcome_contract": "PREREG_AJ_PART_B.json",
+        "falsifier": "Predefined mismatch/timeout/error or expected counterexample found, not posthoc altered"
+      },
+      "D": {
+        "code_sha256": {
+          "run_n297.py": "74346a39a2c31a44fc79fba41f40c107b569091cafeeff0a0b1ff8c16e3abad7",
+          "robust_solver.py": "3447fb5c0ca44f1808f6d5940ae2de4d96dd575d936fe27d914393c98d4918ca",
+          "experiment.py": "89d9d5c125c9153ca8a641267a983e71c0427e1600a45faf03d6f3761b125dfe",
+          "trace_engine.py": "c0c92061100a689ab59698a46e22a96e96d7bb3bd99a21ec292d7aaa30e4415a",
+          "boost_blossom.cpp": "47806e6b331e088d209e51143d18cb5d5cc7a2e2d3d6d8914478bff4b7b8c2d3",
+          "boost_blossom": "96087f807c3845193da871aa8a8f83092c095a0dcf2ab0862ace85b76eebf995"
+        },
+        "source_archive_sha256": "5df54b85ccb3ef4bb2c568ec4a665ac07032dd9e3941108f2cb20e689dabe55b",
+        "freeze_commit": "7495312512fbcfd9f48cdb05588ae74a10b555d9"
+      },
+      "E": {
+        "execution": {
+          "cycle": 316,
+          "sha256": "64357179e25b41fd490bce75844819697c4df1672db24ab9cbaba00e7833917b",
+          "status": "EXECUTED",
+          "elapsed_s": 0.0641115500000069,
+          "path": "results/N316.json"
+        },
+        "observed": "Original n143 synthetic fixture crashes Boost; reversed insertion returns; three other topology/weight perturbations crash"
+      },
+      "F": {
+        "classification": "NEGATIVE_ORDER_SENSITIVITY",
+        "strict_limits": "Boost 1.2/1/0.45s where specified; no 100% reliability assertion"
+      },
+      "G": {
+        "independent_human_evidence": false,
+        "small_exact_oracles": false,
+        "historic_TS_not_executed": true
+      },
+      "H": {
+        "prior_event": "U202",
+        "human_prior_update": "NO_CHANGE_WITH_REASON"
+      },
+      "I": {
+        "scientific_CT2_before": 7,
+        "scientific_CT2_after": 7,
+        "human_grade": "0/3",
+        "STOP_R5": true
+      },
+      "J": {
+        "decision": "CLOSE_TECHNICAL_NEGATIVE_ORDER_SENSITIVITY",
+        "slot_counted": true,
+        "remaining_after": 0
+      }
+    }
+  ],
+  "block": "D"
+}
