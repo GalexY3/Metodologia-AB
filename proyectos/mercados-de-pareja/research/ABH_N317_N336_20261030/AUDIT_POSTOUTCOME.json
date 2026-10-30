@@ -1,0 +1,71 @@
+{
+  "status": "PASS",
+  "statistical_scope": "20 predeclared exploratory synthetic algorithm comparisons, NOT independent social evidence",
+  "source_hashes": {
+    "ORIGINAL_ESBM_UNMODIFIED.py": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+    "market_lab.py": "f202e790705dd0d48724dcbcb67356b4f2075c0a82d4b44c1a9d434851bb6e21",
+    "run_cycles.py": "13d5e89d9a9adfb3c5f2f8d9c5a8480b3dfe71b7dd23b816bccca4a4dc63f24b"
+  },
+  "manifest_sha": "1b5bbb67d5cf2e74fad93c898d9dd51c378925ef6f85af6923ff60ced982dc9f",
+  "unique_seed_receipts": 20,
+  "cycle_receipt_sha256": {
+    "317": "566d354bbb782609a02046ed90d298fd1db8226828d7dd389965217dfcbdae37",
+    "318": "6c9ec2a260fe2849938393645d017642959634db8f1517ae18b1eda4e1215cc7",
+    "319": "529aa301164cc031474baa952851c9f632b7289eab4c919f3f1b9503d4ab0fb4",
+    "320": "06e1de2e306532835aa05fe9f20b46611ad9f5a32e86cf45fe5b4dface3cc7be",
+    "321": "cd1156bde38092733af975ad1be085583cdefb22ab415e0fc3b2dbda2df2468c",
+    "322": "7a80719441605740b70f23f6761b1041688bd15ad819b9f22648634b7fcd1a36",
+    "323": "cd001163939c45cd3961ab4b0c20ea3be4a0e1584c05055f641608ace6dfec45",
+    "324": "0ec58ab1388400ff8cc9c2300a8de0c025474c09e7bce097eacda6448de856c4",
+    "325": "9ea1ce3c5b2d7161dc238543234cce4b70c4f308736e907c6c9ad34565fc4f14",
+    "326": "d0b5598d7eeab570f25fb81c4a47cdcc30ca8937d4b5142241966d72ec9d9ddd",
+    "327": "3d731c84e65def4538c7a3da67622597f58157ee3e2be0524b4a72f090b6619f",
+    "328": "fb983ae3cbe1018467037f02931b085824147f47ed0e64f17392317d92f73def",
+    "329": "b5a74f1b394eb2ca1efa2ae6fef0a8b9ef4e2c07253bd16a9ab67dbb27c850f6",
+    "330": "f08692f8c28601eada84bcbf5d4ce8f441adfb0169c04363e1afeba31e6c581a",
+    "331": "25bec8155e44cc756ca812da16355c005c1adeb8d36d0294add38194bc893b71",
+    "332": "88ae1e0ede4a01a2f4ef1ba6331bcf1ccb11350f600ec507eba2012e035ba869",
+    "333": "c43eace01dfa407fd10e4b42a89d24f5f1b0d7580486d6388ba4a965a4382bf3",
+    "334": "c1ea5f9a80c5fa849394ac7dbd9c3b48a53b4931c674b7de7885456448f9c7b7",
+    "335": "334017bd699bee831b68470f5573b8c6b34f5fd9cb40b2d24db4bc4b115eaaf1",
+    "336": "1a5fd427f76a3bcca6de3dcfaa56bd64c52a5604aad32410a7d763c3c3383679"
+  },
+  "observed": {
+    "N317_central_unstable_count": 18,
+    "N317_strict_central_surplus_advantage": 18,
+    "N318_stable_extremals_differ": 5,
+    "N319_exact_stable_count": 3,
+    "N322_one_round_unstable": 20,
+    "N323_cut_unstable": 20,
+    "N324_unfinished": 20,
+    "N325_local_cycles": 5,
+    "N325_stable_within_80": 20,
+    "N326_mean_delta_updates": -20.5,
+    "N328_more_exposure_inequality": 20,
+    "N329_same_card": 6.95,
+    "N329_all_card": 8.0,
+    "N330_changed_preferences_violate_original_assignment": 19,
+    "N334_stable_count_distribution": {
+      "1": 17,
+      "2": 3
+    },
+    "N335_exact_3way_agree": 20,
+    "N336_cardinal_central_switch": 15
+  },
+  "adversarial": {
+    "blocking_independent_cases": 168,
+    "blocking_positive_cases": 160,
+    "negative_mutants_detected": 2
+  },
+  "ct2_scientific": 7,
+  "STOP_R5_human": true,
+  "new_human_rows": 0,
+  "limitations": [
+    "DA stability invariant by construction",
+    "Cardinal central optimum is not observed behavior",
+    "All payoff distributions artificial",
+    "At most 20 synthetic fixtures per multi-case cycle",
+    "N330 counterfactual changes utilities: not a true single-sided matching algorithm",
+    "Published Echenique human nonromantic outcomes not fitted to this model"
+  ]
+}
