@@ -1,0 +1,253 @@
+{
+  "schema": "ABH_N202_N206_PREREG_D",
+  "branch": "research/ab-h-esbm-rival-parity-20261030",
+  "date": "2026-10-30",
+  "authorized": 20,
+  "used_before": 15,
+  "pending": 5,
+  "R5": "STOP_HUMAN",
+  "CT2": 7,
+  "source_original_SHA256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+  "contracts": [
+    {
+      "id": "N202",
+      "parent": "N201",
+      "mode": "HUMAN_RIGHTS_GATE",
+      "drift_D": 1.4,
+      "A": {
+        "question": "Audit independently described Hoffmann et al. 2024 eye-contact dataset with two native votes and repeated partners, without touching person-level files",
+        "estimand": "original source metadata or synthetic model technical validity"
+      },
+      "B": {
+        "null": "source can't open R5; event weighting/transports or independent training may undermine past conclusions",
+        "rivals": [
+          "event weighting vs cohort weighting",
+          "ring vs rewired riskset",
+          "sklearn LBFGS B2 vs independent Node Newton IRLS"
+        ],
+        "prior_art": "Human source observational eye contact effects and preassigned partners not exclusive ESBM"
+      },
+      "C": {
+        "endpoint": "Primary paper: 60 participants, four preassigned partners, 240 meetings/237 usable, both vote yes/no. OSF stated public but file-level licenses/IDs and 2 vote join unverified; NO_R5 without lawful reuse",
+        "falsifier": "Document license no-go honestly, verify same bytes / model inputs, report any failed Node optimizer or viewer browser checks"
+      },
+      "D": {
+        "source_sha": "Freeze local scripts/manifests before outcomes",
+        "right_source": "Hoffmann primary Springer DOI 10.1007/s10508-023-02806-0, data availability OSF stated but NOT downloaded or license accepted"
+      },
+      "E": "NOT_EXECUTED",
+      "F": {
+        "control": "Original code and source unchanged; no special access; independent baseline share identical covariates",
+        "negative": "Source paper CC BY not dataset blanket permission"
+      },
+      "G": {
+        "human_external": "STOP_R5",
+        "independent_reproduction": "Node numerical trainer same machine and data"
+      },
+      "H": {
+        "scientific_priors": "human NO_CHANGE_WITH_REASON",
+        "external_source": "new metadata only"
+      },
+      "I": {
+        "CT2": 7,
+        "grade": "0/3"
+      },
+      "J": {
+        "if_pass": "N203",
+        "if_fail": "preregister targeted repair or leave pending"
+      }
+    },
+    {
+      "id": "N203",
+      "parent": "N202",
+      "mode": "WEIGHTING",
+      "drift_D": 0.4,
+      "A": {
+        "question": "Contrast pooled event-weighted logloss vs equal-cohort macro logloss across all six rival predictions",
+        "estimand": "original source metadata or synthetic model technical validity"
+      },
+      "B": {
+        "null": "source can't open R5; event weighting/transports or independent training may undermine past conclusions",
+        "rivals": [
+          "event weighting vs cohort weighting",
+          "ring vs rewired riskset",
+          "sklearn LBFGS B2 vs independent Node Newton IRLS"
+        ],
+        "prior_art": "Human source observational eye contact effects and preassigned partners not exclusive ESBM"
+      },
+      "C": {
+        "endpoint": "Same 50 synthetic seeds 12000–12049 at tick3, compute both averages and ranks, no new simulation outcomes",
+        "falsifier": "Document license no-go honestly, verify same bytes / model inputs, report any failed Node optimizer or viewer browser checks"
+      },
+      "D": {
+        "source_sha": "Freeze local scripts/manifests before outcomes",
+        "right_source": "Hoffmann primary Springer DOI 10.1007/s10508-023-02806-0, data availability OSF stated but NOT downloaded or license accepted"
+      },
+      "E": "NOT_EXECUTED",
+      "F": {
+        "control": "Original code and source unchanged; no special access; independent baseline share identical covariates",
+        "negative": "Source paper CC BY not dataset blanket permission"
+      },
+      "G": {
+        "human_external": "STOP_R5",
+        "independent_reproduction": "Node numerical trainer same machine and data"
+      },
+      "H": {
+        "scientific_priors": "human NO_CHANGE_WITH_REASON",
+        "external_source": "new metadata only"
+      },
+      "I": {
+        "CT2": 7,
+        "grade": "0/3"
+      },
+      "J": {
+        "if_pass": "N204",
+        "if_fail": "preregister targeted repair or leave pending"
+      }
+    },
+    {
+      "id": "N204",
+      "parent": "N203",
+      "mode": "NETWORK_TRANSFER",
+      "drift_D": 0.4,
+      "A": {
+        "question": "Test SRM, B2, finite B6 and oracle when opportunity graph shifts from ring training to rewired test using same cohort identities",
+        "estimand": "original source metadata or synthetic model technical validity"
+      },
+      "B": {
+        "null": "source can't open R5; event weighting/transports or independent training may undermine past conclusions",
+        "rivals": [
+          "event weighting vs cohort weighting",
+          "ring vs rewired riskset",
+          "sklearn LBFGS B2 vs independent Node Newton IRLS"
+        ],
+        "prior_art": "Human source observational eye contact effects and preassigned partners not exclusive ESBM"
+      },
+      "C": {
+        "endpoint": "Training ring first 3 ticks 50 seeds, evaluation rewired tick3 same seeds, report opportunity count and score, label distribution, no causal network inference",
+        "falsifier": "Document license no-go honestly, verify same bytes / model inputs, report any failed Node optimizer or viewer browser checks"
+      },
+      "D": {
+        "source_sha": "Freeze local scripts/manifests before outcomes",
+        "right_source": "Hoffmann primary Springer DOI 10.1007/s10508-023-02806-0, data availability OSF stated but NOT downloaded or license accepted"
+      },
+      "E": "NOT_EXECUTED",
+      "F": {
+        "control": "Original code and source unchanged; no special access; independent baseline share identical covariates",
+        "negative": "Source paper CC BY not dataset blanket permission"
+      },
+      "G": {
+        "human_external": "STOP_R5",
+        "independent_reproduction": "Node numerical trainer same machine and data"
+      },
+      "H": {
+        "scientific_priors": "human NO_CHANGE_WITH_REASON",
+        "external_source": "new metadata only"
+      },
+      "I": {
+        "CT2": 7,
+        "grade": "0/3"
+      },
+      "J": {
+        "if_pass": "N205",
+        "if_fail": "preregister targeted repair or leave pending"
+      }
+    },
+    {
+      "id": "N205",
+      "parent": "N204",
+      "mode": "AUDIT_VIEWER",
+      "drift_D": 0.4,
+      "A": {
+        "question": "Build source-backed static offline inspector with actual paired model scores and negative/human rights gates",
+        "estimand": "original source metadata or synthetic model technical validity"
+      },
+      "B": {
+        "null": "source can't open R5; event weighting/transports or independent training may undermine past conclusions",
+        "rivals": [
+          "event weighting vs cohort weighting",
+          "ring vs rewired riskset",
+          "sklearn LBFGS B2 vs independent Node Newton IRLS"
+        ],
+        "prior_art": "Human source observational eye contact effects and preassigned partners not exclusive ESBM"
+      },
+      "C": {
+        "endpoint": "Embed actual A–C result JSON plus N203/204, standalone 0 external fetch, visual selection and browser smoke test, no invented rows",
+        "falsifier": "Document license no-go honestly, verify same bytes / model inputs, report any failed Node optimizer or viewer browser checks"
+      },
+      "D": {
+        "source_sha": "Freeze local scripts/manifests before outcomes",
+        "right_source": "Hoffmann primary Springer DOI 10.1007/s10508-023-02806-0, data availability OSF stated but NOT downloaded or license accepted"
+      },
+      "E": "NOT_EXECUTED",
+      "F": {
+        "control": "Original code and source unchanged; no special access; independent baseline share identical covariates",
+        "negative": "Source paper CC BY not dataset blanket permission"
+      },
+      "G": {
+        "human_external": "STOP_R5",
+        "independent_reproduction": "Node numerical trainer same machine and data"
+      },
+      "H": {
+        "scientific_priors": "human NO_CHANGE_WITH_REASON",
+        "external_source": "new metadata only"
+      },
+      "I": {
+        "CT2": 7,
+        "grade": "0/3"
+      },
+      "J": {
+        "if_pass": "N206",
+        "if_fail": "preregister targeted repair or leave pending"
+      }
+    },
+    {
+      "id": "N206",
+      "parent": "N205",
+      "mode": "CROSS_LANGUAGE_TRAINER",
+      "drift_D": 1.1,
+      "A": {
+        "question": "Implement a genuinely independent JavaScript Newton/IRLS 9-feature penalized logistic fitter and compare to sklearn B2, rather than only rescore it",
+        "estimand": "original source metadata or synthetic model technical validity"
+      },
+      "B": {
+        "null": "source can't open R5; event weighting/transports or independent training may undermine past conclusions",
+        "rivals": [
+          "event weighting vs cohort weighting",
+          "ring vs rewired riskset",
+          "sklearn LBFGS B2 vs independent Node Newton IRLS"
+        ],
+        "prior_art": "Human source observational eye contact effects and preassigned partners not exclusive ESBM"
+      },
+      "C": {
+        "endpoint": "Frozen 2351 training and 613 test feature rows; compare predictions within <=0.005 and logloss <=0.001 and KKT residual <=1e-4; if fails preserve discrepancy, same machine not independent human",
+        "falsifier": "Document license no-go honestly, verify same bytes / model inputs, report any failed Node optimizer or viewer browser checks"
+      },
+      "D": {
+        "source_sha": "Freeze local scripts/manifests before outcomes",
+        "right_source": "Hoffmann primary Springer DOI 10.1007/s10508-023-02806-0, data availability OSF stated but NOT downloaded or license accepted"
+      },
+      "E": "NOT_EXECUTED",
+      "F": {
+        "control": "Original code and source unchanged; no special access; independent baseline share identical covariates",
+        "negative": "Source paper CC BY not dataset blanket permission"
+      },
+      "G": {
+        "human_external": "STOP_R5",
+        "independent_reproduction": "Node numerical trainer same machine and data"
+      },
+      "H": {
+        "scientific_priors": "human NO_CHANGE_WITH_REASON",
+        "external_source": "new metadata only"
+      },
+      "I": {
+        "CT2": 7,
+        "grade": "0/3"
+      },
+      "J": {
+        "if_pass": "Stop budget, report empirically blocked",
+        "if_fail": "preregister targeted repair or leave pending"
+      }
+    }
+  ]
+}
