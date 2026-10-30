@@ -1,0 +1,263 @@
+{
+  "campaign": "ABH_N237_N256_20261030",
+  "authorized": 20,
+  "executed_cases": 20,
+  "valid_technical_PASS": 18,
+  "valid_negative_backend_failure": 2,
+  "invalid_extra_executions": 0,
+  "planning": 0,
+  "remaining": 0,
+  "branch": "research/ab-h-esbm-polynomial-blossom-n237-n256-20261030",
+  "parent": "b008f2eb6e864c4e4bb3090570f626ebe1416f62",
+  "pre_outcome_AJ_SHA_commit": "2bc4b1ab0c42d817a433264907c7800e59dc45ba",
+  "original_source_SHA256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+  "backend": "C++ Boost Graph Edmonds Blossom n^3 with cardinality bonus binary64 scaled exact integers, used by Node TS engine",
+  "source_distribution": "full experimental scripts, SHA all tests/results and 60 individual JSON receipts in user downloadable ZIP, not GitHub source copies",
+  "archive_filename": "ESBM_ABH_N237_N256_Blossom_60corridas.zip",
+  "archive_sha256": "349414236fb7d075e9c024efb7c56faf616fd46d79454963e30db6d832aa144c",
+  "archive_bytes": 138891,
+  "results_summary": {
+    "historical_full_N144_T16_K7_runs": 60,
+    "official_seeds": [
+      101,
+      211,
+      307,
+      401,
+      503,
+      601
+    ],
+    "original_scenarios": 10,
+    "aggregate_and_16_tick_track_agreement": 60,
+    "individual_event_agreement": "NOT_EXECUTED",
+    "boost_crash_n143": true,
+    "boost_timeout_n144_almost_complete": true,
+    "matching_uniqueness_proved": false,
+    "windows_backend_executed": false,
+    "pure_TS_Blossom": false
+  },
+  "environment": {
+    "OS": "Linux x86_64",
+    "python": "3.13",
+    "numpy": "2.3.5",
+    "networkx": "3.6.1",
+    "node": "22.16.0",
+    "compiler": "g++ 14.2",
+    "boost": "System Boost.Graph headers"
+  },
+  "total_seconds": {
+    "native_original_python": 5.7031,
+    "ts_with_cpp_boost": 13.3567
+  },
+  "scientific": {
+    "CT2": 7,
+    "R5_human": "STOP",
+    "new_independent_human_rows": 0,
+    "grade": "0/3",
+    "SOURCES": 111,
+    "PRIORS": 34,
+    "UPDATES": 196,
+    "maturity": 44.1
+  },
+  "cycles": [
+    {
+      "cycle": "N237",
+      "case": "12 graphs n10",
+      "observed": "PASS",
+      "parity_count": null,
+      "case_count": 12,
+      "raw_receipt": "results/N237.json",
+      "classification": "VALID_TECHNICAL_PASS",
+      "scientific_grade": "0/3"
+    },
+    {
+      "cycle": "N238",
+      "case": "7 dense graphs n24",
+      "observed": "PASS",
+      "parity_count": null,
+      "case_count": 7,
+      "raw_receipt": "results/N238.json",
+      "classification": "VALID_TECHNICAL_PASS",
+      "scientific_grade": "0/3"
+    },
+    {
+      "cycle": "N239",
+      "case": "3 sparse graphs n144",
+      "observed": "PASS",
+      "parity_count": null,
+      "case_count": 3,
+      "raw_receipt": "results/N239.json",
+      "classification": "VALID_TECHNICAL_PASS",
+      "scientific_grade": "0/3"
+    },
+    {
+      "cycle": "N240",
+      "case": "2 dense graphs n144",
+      "observed": "PASS",
+      "parity_count": null,
+      "case_count": 2,
+      "raw_receipt": "results/N240.json",
+      "classification": "VALID_TECHNICAL_PASS",
+      "scientific_grade": "0/3"
+    },
+    {
+      "cycle": "N241",
+      "case": "3 disconnected graphs n144",
+      "observed": "PASS",
+      "parity_count": null,
+      "case_count": 3,
+      "raw_receipt": "results/N241.json",
+      "classification": "VALID_TECHNICAL_PASS",
+      "scientific_grade": "0/3"
+    },
+    {
+      "cycle": "N242",
+      "case": "3 odd graphs n143 (crashed)",
+      "observed": "BACKEND_CRASH_SIGSEGV_MINUS_11",
+      "parity_count": null,
+      "case_count": null,
+      "raw_receipt": "results/N242.json",
+      "classification": "VALID_NEGATIVE_BACKEND_ROBUSTNESS_NO_MATCH_OUTPUT",
+      "scientific_grade": "0/3"
+    },
+    {
+      "cycle": "N243",
+      "case": "9 cardinality controls",
+      "observed": "PASS",
+      "parity_count": null,
+      "case_count": 9,
+      "raw_receipt": "results/N243.json",
+      "classification": "VALID_TECHNICAL_PASS",
+      "scientific_grade": "0/3"
+    },
+    {
+      "cycle": "N244",
+      "case": "5 near tie / arbitrary weights",
+      "observed": "PASS",
+      "parity_count": null,
+      "case_count": 5,
+      "raw_receipt": "results/N244.json",
+      "classification": "VALID_TECHNICAL_PASS",
+      "scientific_grade": "0/3"
+    },
+    {
+      "cycle": "N245",
+      "case": "six seed 30-tensor exact roundtrips",
+      "observed": "PASS",
+      "parity_count": null,
+      "case_count": 6,
+      "raw_receipt": "results/N245.json",
+      "classification": "VALID_TECHNICAL_PASS",
+      "scientific_grade": "0/3"
+    },
+    {
+      "cycle": "N246",
+      "case": "2 n144 density adversaries (timeout)",
+      "observed": "BOOST_TIMEOUT_12_SECONDS",
+      "parity_count": null,
+      "case_count": null,
+      "raw_receipt": "results/N246.json",
+      "classification": "VALID_NEGATIVE_BACKEND_ROBUSTNESS_NO_MATCH_OUTPUT",
+      "scientific_grade": "0/3"
+    },
+    {
+      "cycle": "N247",
+      "case": "mixed_random",
+      "observed": "PASS",
+      "parity_count": 6,
+      "case_count": null,
+      "raw_receipt": "results/N247.json",
+      "classification": "VALID_TECHNICAL_PASS",
+      "scientific_grade": "0/3"
+    },
+    {
+      "cycle": "N248",
+      "case": "heterosexual_restricted",
+      "observed": "PASS",
+      "parity_count": 6,
+      "case_count": null,
+      "raw_receipt": "results/N248.json",
+      "classification": "VALID_TECHNICAL_PASS",
+      "scientific_grade": "0/3"
+    },
+    {
+      "cycle": "N249",
+      "case": "institutional_segregation",
+      "observed": "PASS",
+      "parity_count": 6,
+      "case_count": null,
+      "raw_receipt": "results/N249.json",
+      "classification": "VALID_TECHNICAL_PASS",
+      "scientific_grade": "0/3"
+    },
+    {
+      "cycle": "N250",
+      "case": "explicit_norm_preference",
+      "observed": "PASS",
+      "parity_count": 6,
+      "case_count": null,
+      "raw_receipt": "results/N250.json",
+      "classification": "VALID_TECHNICAL_PASS",
+      "scientific_grade": "0/3"
+    },
+    {
+      "cycle": "N251",
+      "case": "popularity_ranking",
+      "observed": "PASS",
+      "parity_count": 6,
+      "case_count": null,
+      "raw_receipt": "results/N251.json",
+      "classification": "VALID_TECHNICAL_PASS",
+      "scientific_grade": "0/3"
+    },
+    {
+      "cycle": "N252",
+      "case": "visibility_balancing",
+      "observed": "PASS",
+      "parity_count": 6,
+      "case_count": null,
+      "raw_receipt": "results/N252.json",
+      "classification": "VALID_TECHNICAL_PASS",
+      "scientific_grade": "0/3"
+    },
+    {
+      "cycle": "N253",
+      "case": "private_rejection_learning",
+      "observed": "PASS",
+      "parity_count": 6,
+      "case_count": null,
+      "raw_receipt": "results/N253.json",
+      "classification": "VALID_TECHNICAL_PASS",
+      "scientific_grade": "0/3"
+    },
+    {
+      "cycle": "N254",
+      "case": "public_rejection_signal",
+      "observed": "PASS",
+      "parity_count": 6,
+      "case_count": null,
+      "raw_receipt": "results/N254.json",
+      "classification": "VALID_TECHNICAL_PASS",
+      "scientific_grade": "0/3"
+    },
+    {
+      "cycle": "N255",
+      "case": "longer_partnerships",
+      "observed": "PASS",
+      "parity_count": 6,
+      "case_count": null,
+      "raw_receipt": "results/N255.json",
+      "classification": "VALID_TECHNICAL_PASS",
+      "scientific_grade": "0/3"
+    },
+    {
+      "cycle": "N256",
+      "case": "shorter_partnerships",
+      "observed": "PASS",
+      "parity_count": 6,
+      "case_count": null,
+      "raw_receipt": "results/N256.json",
+      "classification": "VALID_TECHNICAL_PASS",
+      "scientific_grade": "0/3"
+    }
+  ]
+}
