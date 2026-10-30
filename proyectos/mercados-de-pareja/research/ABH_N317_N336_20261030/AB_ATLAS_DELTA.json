@@ -1,0 +1,101 @@
+{
+  "schema": "AB_ATLAS_V01_N317_N336_DELTA",
+  "date": "2026-10-30",
+  "root": "ESBM:markets-of-pair-formation",
+  "nodes": [
+    {
+      "id": "ESBM:allocation-rule",
+      "type": "hypothesis",
+      "status": "answered_technical",
+      "grade": "0/3",
+      "CT2": 7,
+      "description": "Allocation is mechanism: maximum cardinal welfare not equivalent to stable two-sided pair choice",
+      "prior_id": "P-ALLOCATION-RULE",
+      "evidence": [
+        "N317",
+        "N318",
+        "N319",
+        "N320",
+        "N335",
+        "N336"
+      ]
+    },
+    {
+      "id": "ESBM:time-and-offers",
+      "type": "hypothesis",
+      "status": "answered_technical",
+      "grade": "0/3",
+      "description": "Communication budgets, binding, rejection and rematching affect emergent selection",
+      "evidence": [
+        "N322",
+        "N323",
+        "N324",
+        "N325",
+        "N326",
+        "N332"
+      ]
+    },
+    {
+      "id": "ESBM:exposure-access",
+      "type": "hypothesis",
+      "status": "answered_technical",
+      "grade": "0/3",
+      "description": "Partially observed candidate opportunity distribution gates apparent preferences and homophily",
+      "evidence": [
+        "N321",
+        "N327",
+        "N328",
+        "N329",
+        "N330"
+      ]
+    },
+    {
+      "id": "ESBM:human-r5",
+      "type": "blocker",
+      "status": "blocked",
+      "grade": "0/3",
+      "description": "No legally reusable independent romantic dyadic native votes with verified opportunity sets obtained",
+      "evidence": [
+        "U208",
+        "SRC081",
+        "SRC107",
+        "SRC114"
+      ]
+    },
+    {
+      "id": "ESBM:oracle-qa",
+      "type": "artifact",
+      "status": "answered_technical",
+      "description": "20/20 n7 independent MILP/DP/NetworkX matching objective checks; separate 168 blocking-pair audits",
+      "evidence": [
+        "N334",
+        "N335",
+        "AUDIT_POSTOUTCOME.json"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "ESBM:allocation-rule",
+      "target": "ESBM:human-r5",
+      "type": "depends_on"
+    },
+    {
+      "source": "ESBM:time-and-offers",
+      "target": "ESBM:human-r5",
+      "type": "depends_on"
+    },
+    {
+      "source": "ESBM:exposure-access",
+      "target": "ESBM:human-r5",
+      "type": "depends_on"
+    },
+    {
+      "source": "ESBM:oracle-qa",
+      "target": "ESBM:allocation-rule",
+      "type": "supports"
+    }
+  ],
+  "cycle_budget_consumed": 20,
+  "human_validated": false
+}
