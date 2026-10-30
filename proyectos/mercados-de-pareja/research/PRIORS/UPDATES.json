@@ -4,7 +4,7 @@
   "date": "2026-10-28",
   "mode": "append-only logical, versioned by Git commits",
   "reconstructed_from_documents": "Retrospective backfill, not preregistration. Old before values NOT_RECORDED unless documented explicitly.",
-  "source_coverage": "110 SOURCES metadata / 34 priors / 194 append-only UPDATES. N207–N216 10 Linux technical checks; no human record or external research validity.",
+  "source_coverage": "110 SOURCES, 34 PRIORS, 195 append-only UPDATES. N217–N236 technical 20 executed, no human microdata or human validation.",
   "events": [
     {
       "id": "U001",
@@ -5484,7 +5484,50 @@
       "AB_H_technical_cycles": 10,
       "new_human_grade": "0/3",
       "CT2": 7
+    },
+    {
+      "id": "U195",
+      "prior_id": "P-TRAJECTORY-INVARIANCE",
+      "cycle_ids": [
+        "N217",
+        "N218",
+        "N219",
+        "N220",
+        "N221",
+        "N222",
+        "N223",
+        "N224",
+        "N225",
+        "N226",
+        "N227",
+        "N228",
+        "N229",
+        "N230",
+        "N231",
+        "N232",
+        "N233",
+        "N234",
+        "N235",
+        "N236"
+      ],
+      "source_ids": [],
+      "direction": "NO_CHANGE_WITH_REASON",
+      "before": "SYNTHETIC_COUNTEREXAMPLE_REPAIRED_OPT_IN_NOT_HUMAN",
+      "after": "SYNTHETIC_COUNTEREXAMPLE_REPAIRED_OPT_IN_NOT_HUMAN",
+      "recorded_at": "2026-10-30",
+      "evidence_type": "PRE_FROZEN_20_TECHNICAL_SYNTHETIC_CROSS_LANGUAGE_ESBM_PARITY_TESTS",
+      "what_the_test_contributes": "14 scenarios small N full source-derived event adapter Python vs independent TS same synthetic shocks exact metrics and directed event parity; 24 further n6 graphs independently enumerated Python Fraction; n144 dense hard resource stop observed; 2 tie/near-tie diagnostics; N217 initial instrument repair prereg before retest.",
+      "limits": "N=8–12 and 3–4 ticks parity only; original N144 seed-specific full 60 runs not replayed; Python adapter not untouched historical engine; TS Node 22.16 Linux although real Windows Node 24 separate compilation previously passed; no humans, external data, observed preferences or causal inference. N144 artificial stress failure no proof typical historical N144 fails. BigInt vs binary64 near-tie not universally solved.",
+      "why_no_numerical_prior_change": "New software fidelity evidence but prior concerns theory mechanism/empirical R5, not software at fixed small synthetic input; no human likelihood defined",
+      "falsifier_or_followup": "Clean independent Windows runtime comparing complete historical 60 records and TRACE_SCHEMA_1 oracle under explicit rights and resource budget, with polynomial exact max cardinality max weight matching and comparable binary64 tie policy",
+      "prior_probability_before": null,
+      "prior_probability_after": null,
+      "numerical_bayesian_update": false,
+      "human_grade": "0/3",
+      "CT2": 7,
+      "R5_human": "STOP",
+      "technical_cycles": 20
     }
   ],
-  "last_campaign": "ABH_N207_N216_REPLICA_TECH_QA_20261030"
+  "last_campaign": "ABH_N217_N236_ESBM_CROSS_LANGUAGE_LIMITS_20261030"
 }
