@@ -3,7 +3,7 @@
   "project": "mercados-de-pareja",
   "date": "2026-10-30",
   "scope": "Retrospective provenance backfill from repository reports plus N56/N57 publisher audit. Original data never copied; not systematic or claim of accessing raw data for bibliography.",
-  "source_count": 113,
+  "source_count": 114,
   "sources": [
     {
       "id": "SRC001",
@@ -2477,9 +2477,29 @@
         "P-DYADIC_ACCESS",
         "P-SOURCE-DEDUP"
       ]
+    },
+    {
+      "id": "SRC114",
+      "title": "Echenique, Robinson-Cortés & Yariv (2025), An experimental study of decentralized matching, Quantitative Economics",
+      "canonical_url": "https://doi.org/10.3982/QE2316",
+      "primary_full_text": "https://www.lyariv.com/papers/MatchingExperiment.pdf",
+      "official_author_site": "https://sites.google.com/view/decentralized-matching",
+      "replication_package_link_status": "Author site links third-party Dropbox ZIP; attempted textual web access did not fetch bytes; file-level permissions and licensing not independently verified; NO download or licence acceptance",
+      "source_type": "INDEPENDENT_HUMAN_DECENTRALIZED_TWO_SIDED_LAB_MARKET_NOT_ROMANTIC",
+      "date_discovered": "2026-10-30",
+      "experimental_population": "Nonromantic laboratory participants, bipartite colors/foods roles assigned at each round, 8 players per side in main treatments, payoffs and full preference opportunities shown to agents",
+      "observations_described": "Authors report 85 usable main-treatment experimental markets after five dropped software-error markets from 90; actors make offers to any opposite-side actor and can accept; dynamic matching end when inactive 30 seconds; no dating or stable romantic relationships observed",
+      "methodological_relevance": "Rival to ESBM centralized maxcardinality maximum-weight snapshot: strategic decentralized sequential offers, rejections and stable-match convergence may differ even with complete information and payoff matrices.",
+      "independence": "Independent nonromantic laboratory market setting, NOT independent romantic dyadic preference validation. Could test abstract matching dynamics only after raw data legal reuse and schema verifications.",
+      "data_files_read": 0,
+      "rights": "No rights accepted; dataset-level terms not verified, raw archive not downloaded",
+      "native_two_actors_observed": "Offers and acceptances within experimental market as described in primary paper, not two native romantic yes/no per pair",
+      "romantic_ESBM_R5_eligible": false,
+      "CT2_human_impact": "NO_CHANGE",
+      "status": "DOCUMENTARY_ADJACENT_HUMAN_LAB_EVIDENCE__NO_ROMANTIC_R5_UNBLOCK"
     }
   ],
-  "last_added_campaign": "ABH_N277_N296_20261030",
+  "last_added_campaign": "ABH_N297_N316_20261030",
   "canonical_duplicate_DOI_audit": {
     "date": "2026-10-30",
     "source_records_before": 107,
