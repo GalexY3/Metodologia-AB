@@ -1,0 +1,77 @@
+{
+  "schema": "ESBM_WINDOWS_PROTOCOL_SHA_FREEZE_1",
+  "status": "FROZEN_DOCUMENTS_ONLY_NOT_RUN",
+  "created_on": "2026-10-30",
+  "parent_branch": "research/ab-h-esbm-r5-replication-gates-20261030",
+  "parent_head": "58e2b09800aca306013bd4bfb81d9d7f678b4fda",
+  "protocol_branch": "research/esbm-independent-replication-spec-20261030",
+  "authority": {
+    "path": "proyectos/mercados-de-pareja/research/ABR_ESBM20_20261028/esbm_dynamic.py",
+    "git_blob_sha1": "5fc9f63fd44ff81ce9ff6c900ba6bf24153356f2",
+    "sha256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+    "bytes_utf8": 11913
+  },
+  "files": [
+    {
+      "name": "SPEC.md",
+      "git_blob_sha1": "a81092a0a15cc4ca66e35b52f93eb44f3ec25ba5",
+      "sha256": "62591081b51cb540ed53b111c8aa11a2d9e79399c1d409bdad4cf5eda975c384",
+      "bytes_utf8": 11072
+    },
+    {
+      "name": "UNIT_INPUTS.json",
+      "git_blob_sha1": "a416feeaf9621e502c9f7f7ab551194701cf5856",
+      "sha256": "9ceb5ca4c0027b0c468e4e10c0e78c78e67b0e1d02740bfeeb8019ad5e045581",
+      "bytes_utf8": 13224,
+      "check_count": 12,
+      "manual_unexecuted": true
+    },
+    {
+      "name": "REFERENCE_PLAN.json",
+      "git_blob_sha1": "62d6d089377521830d504d2b2e8e1f3b0fec0caa",
+      "sha256": "8da756d413bd28f61e87ca0ea9f6eaf0e16cd967d25a4e3c710aebcf1d1d6984",
+      "bytes_utf8": 5019,
+      "full_runs_planned": 60,
+      "raw_tensors_not_generated": true
+    },
+    {
+      "name": "WINDOWS_EXECUTOR_TASK.md",
+      "git_blob_sha1": "a0c9cb25fb8a186a80d8e56d955ae0b3d1724448",
+      "sha256": "31a348b974bc0ce9a7050a687a3805155d9fff53c1975f41c2ebfa2b312717b7",
+      "bytes_utf8": 8585,
+      "actual_windows_executed": false
+    },
+    {
+      "name": "ACCEPTANCE_MATRIX.md",
+      "git_blob_sha1": "3fbe7ac5523104505760f27b97ac3b39877182ec",
+      "sha256": "fb2522abce9cebececd081b3d12844f52f5e6c09046ee51647d4b8fe3845e39d",
+      "bytes_utf8": 5548,
+      "acceptance_gates": 11
+    }
+  ],
+  "historic_outputs": {
+    "RUNS_gz_b64_git_blob": "d8dbf04ec52337d46892e555cceee49ef224efc6",
+    "SUMMARY_git_blob": "adbfcba9405a5af4b15cbf7a7b504974d5c33d6b",
+    "QA_git_blob": "06204182f11dbe76d587be565d26fd70c65a52cb",
+    "history_preexists": "YES; not a prospectively unseen holdout"
+  },
+  "frozen_boundary": "This manifest freezes textual protocol plus handcrafted toy examples, not generated shocks, expected full runs or executable code; future prospective contracts and SHA freezes required separately BEFORE any runs",
+  "run_status": {
+    "ab_cycles_new": 0,
+    "simulations_new": 0,
+    "window_processes_executed": 0,
+    "source_bytes_changed": false,
+    "independent_replication_executed": false,
+    "fixture_oracle_validated": false,
+    "human_datasets_used": 0
+  },
+  "governance": {
+    "CT2_ordinal": 7,
+    "maturity_percent": 43.8,
+    "R5_human": "STOP",
+    "licences_accepted": false,
+    "authors_contacted": false,
+    "main_merged": false
+  },
+  "hash_method": "Pure JS SHA-256 implementation checked against exact original Python SHA256 in the same read; hashes computed over original UTF-8 bytes fetched through GitHub connector"
+}
