@@ -1,0 +1,534 @@
+{
+  "schema": "ABH_N167_N186_AJ_LEDGER_D",
+  "branch": "research/ab-h-esbm-adversarial-benchmark-20261030",
+  "date": "2026-10-30",
+  "prereg": "proyectos/mercados-de-pareja/research/ABH_N167_N186_20261030/PREREG_D.json",
+  "prereg_commit": "44aee165ac418682972e2faa81b57e699c408842",
+  "result_index": "proyectos/mercados-de-pareja/research/ABH_N167_N186_20261030/RESULTS_INDEX.json",
+  "cycles": [
+    {
+      "id": "N182",
+      "parent": "N181",
+      "mode": "SOURCE_AUDIT",
+      "drift_D": {
+        "protocol": "Fixed rubric + offline receipts source SHA, script and tester SHA must be GitHub frozen before outcomes",
+        "inputs": "all source metadata plus three receipts A/B/C; no user raw data accessed"
+      },
+      "A": {
+        "question": "Normalize DOI identifiers over all 107 SOURCES and list duplicate records without deleting historical IDs",
+        "estimand": "independent code/source validity and reproducible decision artifact, not new human outcomes"
+      },
+      "B": {
+        "rivals": [
+          "duplicated bibliographic record as new source",
+          "Columbia derivative dataset as independent cohort",
+          "proxy B6 as fully flexible history baseline",
+          "simulated conditional reply as human ballot",
+          "unverified demo metrics"
+        ],
+        "null": "Existing evidence cannot support external model superiority"
+      },
+      "C": {
+        "falsifier": "Compute DOI from canonical_url, doi substring in title when no DOI; report duplicate pairs, no claims about cohort independence from URL alone",
+        "rule": "Any unverified live rights/actor IDs -> no R5; reproducibility mismatch invalid, adverse baseline gaps reported"
+      },
+      "D": {
+        "protocol": "Fixed rubric + offline receipts source SHA, script and tester SHA must be GitHub frozen before outcomes",
+        "inputs": "all source metadata plus three receipts A/B/C; no user raw data accessed",
+        "source_sha256": "3bbb9df0c37cedbadf040ae40e61ee521915022dad600f3e7a44d90d560b9413",
+        "prereg_commit": "44aee165ac418682972e2faa81b57e699c408842",
+        "code_freeze_commits": [
+          "7cb470b6e78ea19480d2cb22cf951fc0a4f29d3",
+          "ca7215696684a9b0e52d9e5cd1957b95c960a52c",
+          "00bd6515eae4a7884c0b571a0d0a17ee53bc445a"
+        ],
+        "before_outcome": true
+      },
+      "E": {
+        "execution_status": "VALID_DOCUMENTARY_NEGATIVE",
+        "observed": {
+          "catalog_pre_audit": 107,
+          "doi_with_canonical": 61,
+          "unique_dois": 58,
+          "duplicate_groups": [
+            [
+              "SRC003",
+              "SRC075"
+            ],
+            [
+              "SRC029",
+              "SRC093"
+            ],
+            [
+              "SRC087",
+              "SRC107"
+            ]
+          ],
+          "previous_SRC107_novel_claim_withdrawn": true
+        },
+        "actual_rows_processed": "DOCUMENT_META_OR_BROWSER_ONLY",
+        "human_raw_rows": 0,
+        "source_receipt": "d06c4abec7fa414c68fb63b782ccf6e8f25f68db1b0c30b361f297eb4d827e59"
+      },
+      "F": {
+        "adversarial": {
+          "adversarial": "Explicitly withdraw inflated source novelty and baseline identity wherever unsupported"
+        },
+        "actual_benchmark_limit": "3 exact DOI duplicate groups; previous SRC107 novelty withdrawn"
+      },
+      "G": {
+        "prespec": {
+          "external": "not human",
+          "OS": "same installed machine"
+        },
+        "external_human_holdout": "NONE",
+        "independent_OS_replication": false,
+        "verification": "DOCUMENTARY_NEGATIVE_ONLY"
+      },
+      "H": {
+        "update_events": [
+          "U183",
+          "U184",
+          "U185",
+          "U186",
+          "U187"
+        ],
+        "prior_ids": [
+          "P-SOURCE-DEDUP",
+          "P-COMPETENT_NULL",
+          "P-NOVELTY",
+          "P-DYADIC_ACCESS",
+          "P-OPPORTUNITY"
+        ],
+        "human_scientific_status": "NO_CHANGE_WITH_REASON",
+        "source_ids": [
+          "SRC003",
+          "SRC075",
+          "SRC029",
+          "SRC093",
+          "SRC087",
+          "SRC107"
+        ]
+      },
+      "I": {
+        "scientific_grade": "0/3",
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "not_external_validation": true,
+        "technically_valid_or_documentary": true,
+        "instrumental_failed_attempts": 0
+      },
+      "J": {
+        "decision": "VALID_NEGATIVE_DOCUMENTED_REJECT_INFLATED_CLAIM",
+        "successor": "N183",
+        "credit_spent": 1,
+        "reason": "Execution or substantive source/baseline no-go per prereg; not repeated seed-only simulations",
+        "value_of_next_external_evidence": "Legal independent real opportunities with two native yes/no and calibrated equal-info SRM/B6 baseline"
+      }
+    },
+    {
+      "id": "N183",
+      "parent": "N182",
+      "mode": "BASELINE_VALIDITY",
+      "drift_D": {
+        "protocol": "Fixed rubric + offline receipts source SHA, script and tester SHA must be GitHub frozen before outcomes",
+        "inputs": "all source metadata plus three receipts A/B/C; no user raw data accessed"
+      },
+      "A": {
+        "question": "Compare actual operational B0/B1/B2/B4/B6/SRM design to historical protocol definitions and issue claim downgrade",
+        "estimand": "independent code/source validity and reproducible decision artifact, not new human outcomes"
+      },
+      "B": {
+        "rivals": [
+          "duplicated bibliographic record as new source",
+          "Columbia derivative dataset as independent cohort",
+          "proxy B6 as fully flexible history baseline",
+          "simulated conditional reply as human ballot",
+          "unverified demo metrics"
+        ],
+        "null": "Existing evidence cannot support external model superiority"
+      },
+      "C": {
+        "falsifier": "Rubric equal feature budgets/historical actor-target effects/feedback/ranking/bilateral outcomes; mark each model exact/proxy/incomplete and forbid claiming complete historical competition",
+        "rule": "Any unverified live rights/actor IDs -> no R5; reproducibility mismatch invalid, adverse baseline gaps reported"
+      },
+      "D": {
+        "protocol": "Fixed rubric + offline receipts source SHA, script and tester SHA must be GitHub frozen before outcomes",
+        "inputs": "all source metadata plus three receipts A/B/C; no user raw data accessed",
+        "source_sha256": "3bbb9df0c37cedbadf040ae40e61ee521915022dad600f3e7a44d90d560b9413",
+        "prereg_commit": "44aee165ac418682972e2faa81b57e699c408842",
+        "code_freeze_commits": [
+          "7cb470b6e78ea19480d2cb22cf951fc0a4f29d3",
+          "ca7215696684a9b0e52d9e5cd1957b95c960a52c",
+          "00bd6515eae4a7884c0b571a0d0a17ee53bc445a"
+        ],
+        "before_outcome": true
+      },
+      "E": {
+        "execution_status": "VALID_DOCUMENTARY_NEGATIVE",
+        "observed": {
+          "historical_B1_SRM_equivalent": false,
+          "B6star_implemented": false,
+          "model_labels_are_proxies": true
+        },
+        "actual_rows_processed": "DOCUMENT_META_OR_BROWSER_ONLY",
+        "human_raw_rows": 0,
+        "source_receipt": "d06c4abec7fa414c68fb63b782ccf6e8f25f68db1b0c30b361f297eb4d827e59"
+      },
+      "F": {
+        "adversarial": {
+          "adversarial": "Explicitly withdraw inflated source novelty and baseline identity wherever unsupported"
+        },
+        "actual_benchmark_limit": "All B labels proxies; historical parity fails"
+      },
+      "G": {
+        "prespec": {
+          "external": "not human",
+          "OS": "same installed machine"
+        },
+        "external_human_holdout": "NONE",
+        "independent_OS_replication": false,
+        "verification": "DOCUMENTARY_NEGATIVE_ONLY"
+      },
+      "H": {
+        "update_events": [
+          "U183",
+          "U184",
+          "U185",
+          "U186",
+          "U187"
+        ],
+        "prior_ids": [
+          "P-SOURCE-DEDUP",
+          "P-COMPETENT_NULL",
+          "P-NOVELTY",
+          "P-DYADIC_ACCESS",
+          "P-OPPORTUNITY"
+        ],
+        "human_scientific_status": "NO_CHANGE_WITH_REASON",
+        "source_ids": []
+      },
+      "I": {
+        "scientific_grade": "0/3",
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "not_external_validation": true,
+        "technically_valid_or_documentary": true,
+        "instrumental_failed_attempts": 0
+      },
+      "J": {
+        "decision": "VALID_NEGATIVE_DOCUMENTED_REJECT_INFLATED_CLAIM",
+        "successor": "N184",
+        "credit_spent": 1,
+        "reason": "Execution or substantive source/baseline no-go per prereg; not repeated seed-only simulations",
+        "value_of_next_external_evidence": "Legal independent real opportunities with two native yes/no and calibrated equal-info SRM/B6 baseline"
+      }
+    },
+    {
+      "id": "N184",
+      "parent": "N183",
+      "mode": "LEGAL_GATE",
+      "drift_D": {
+        "protocol": "Fixed rubric + offline receipts source SHA, script and tester SHA must be GitHub frozen before outcomes",
+        "inputs": "all source metadata plus three receipts A/B/C; no user raw data accessed"
+      },
+      "A": {
+        "question": "Assess Harvard Dataverse replication record DOI 10.7910/DVN/27893 for cohort independence and rights using publication source and metadata; do not fetch restricted human rows",
+        "estimand": "independent code/source validity and reproducible decision artifact, not new human outcomes"
+      },
+      "B": {
+        "rivals": [
+          "duplicated bibliographic record as new source",
+          "Columbia derivative dataset as independent cohort",
+          "proxy B6 as fully flexible history baseline",
+          "simulated conditional reply as human ballot",
+          "unverified demo metrics"
+        ],
+        "null": "Existing evidence cannot support external model superiority"
+      },
+      "C": {
+        "falsifier": "Record catalog-level CC0 assertion vs file rights unverified, author paper same Fisman 2002–2004 Columbia cohort; STOP_R5 no new humans",
+        "rule": "Any unverified live rights/actor IDs -> no R5; reproducibility mismatch invalid, adverse baseline gaps reported"
+      },
+      "D": {
+        "protocol": "Fixed rubric + offline receipts source SHA, script and tester SHA must be GitHub frozen before outcomes",
+        "inputs": "all source metadata plus three receipts A/B/C; no user raw data accessed",
+        "source_sha256": "3bbb9df0c37cedbadf040ae40e61ee521915022dad600f3e7a44d90d560b9413",
+        "prereg_commit": "44aee165ac418682972e2faa81b57e699c408842",
+        "code_freeze_commits": [
+          "7cb470b6e78ea19480d2cb22cf951fc0a4f29d3",
+          "ca7215696684a9b0e52d9e5cd1957b95c960a52c",
+          "00bd6515eae4a7884c0b571a0d0a17ee53bc445a"
+        ],
+        "before_outcome": true
+      },
+      "E": {
+        "execution_status": "VALID_DOCUMENTARY_NO_GO",
+        "observed": {
+          "SRC108_replication_DOI": "10.7910/DVN/27893",
+          "Columbia_same_cohort": true,
+          "CC0_only_secondary_catalog": false,
+          "first_party_data_access": false,
+          "R5": "STOP"
+        },
+        "actual_rows_processed": "DOCUMENT_META_OR_BROWSER_ONLY",
+        "human_raw_rows": 0,
+        "source_receipt": "d06c4abec7fa414c68fb63b782ccf6e8f25f68db1b0c30b361f297eb4d827e59"
+      },
+      "F": {
+        "adversarial": {
+          "adversarial": "Explicitly withdraw inflated source novelty and baseline identity wherever unsupported"
+        },
+        "actual_benchmark_limit": "CC0 catalog is not per-file license, same Columbia cohort"
+      },
+      "G": {
+        "prespec": {
+          "external": "not human",
+          "OS": "same installed machine"
+        },
+        "external_human_holdout": "NONE",
+        "independent_OS_replication": false,
+        "verification": "DOCUMENTARY_NEGATIVE_ONLY"
+      },
+      "H": {
+        "update_events": [
+          "U183",
+          "U184",
+          "U185",
+          "U186",
+          "U187"
+        ],
+        "prior_ids": [
+          "P-SOURCE-DEDUP",
+          "P-COMPETENT_NULL",
+          "P-NOVELTY",
+          "P-DYADIC_ACCESS",
+          "P-OPPORTUNITY"
+        ],
+        "human_scientific_status": "NO_CHANGE_WITH_REASON",
+        "source_ids": [
+          "SRC108",
+          "SRC016",
+          "SRC082"
+        ]
+      },
+      "I": {
+        "scientific_grade": "0/3",
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "not_external_validation": true,
+        "technically_valid_or_documentary": true,
+        "instrumental_failed_attempts": 0
+      },
+      "J": {
+        "decision": "VALID_NEGATIVE_DOCUMENTED_REJECT_INFLATED_CLAIM",
+        "successor": "N185",
+        "credit_spent": 1,
+        "reason": "Execution or substantive source/baseline no-go per prereg; not repeated seed-only simulations",
+        "value_of_next_external_evidence": "Legal independent real opportunities with two native yes/no and calibrated equal-info SRM/B6 baseline"
+      }
+    },
+    {
+      "id": "N185",
+      "parent": "N184",
+      "mode": "PRODUCT_REPORT",
+      "drift_D": {
+        "protocol": "Fixed rubric + offline receipts source SHA, script and tester SHA must be GitHub frozen before outcomes",
+        "inputs": "all source metadata plus three receipts A/B/C; no user raw data accessed"
+      },
+      "A": {
+        "question": "Create standalone offline evidence dashboard from immutable A–C receipts with stage/rival/dropdown",
+        "estimand": "independent code/source validity and reproducible decision artifact, not new human outcomes"
+      },
+      "B": {
+        "rivals": [
+          "duplicated bibliographic record as new source",
+          "Columbia derivative dataset as independent cohort",
+          "proxy B6 as fully flexible history baseline",
+          "simulated conditional reply as human ballot",
+          "unverified demo metrics"
+        ],
+        "null": "Existing evidence cannot support external model superiority"
+      },
+      "C": {
+        "falsifier": "Data sources actual result JSON, not invented; one per-task selector, table of logloss and bootstrap intervals, annotate oracle and proxy limitations; run HTML static & browser checks if available",
+        "rule": "Any unverified live rights/actor IDs -> no R5; reproducibility mismatch invalid, adverse baseline gaps reported"
+      },
+      "D": {
+        "protocol": "Fixed rubric + offline receipts source SHA, script and tester SHA must be GitHub frozen before outcomes",
+        "inputs": "all source metadata plus three receipts A/B/C; no user raw data accessed",
+        "source_sha256": "3bbb9df0c37cedbadf040ae40e61ee521915022dad600f3e7a44d90d560b9413",
+        "prereg_commit": "44aee165ac418682972e2faa81b57e699c408842",
+        "code_freeze_commits": [
+          "7cb470b6e78ea19480d2cb22cf951fc0a4f29d3",
+          "ca7215696684a9b0e52d9e5cd1957b95c960a52c",
+          "00bd6515eae4a7884c0b571a0d0a17ee53bc445a"
+        ],
+        "before_outcome": true
+      },
+      "E": {
+        "execution_status": "PASS",
+        "observed": {
+          "offline_dashboard_sections": 7,
+          "Chromium_interactions": 7,
+          "HTML_SHA256": "099c0435fef63cf25494477dceefa5a994e0447d8bde567ba542cb15634ef568",
+          "no_external_HTTP": true,
+          "js_errors": 0
+        },
+        "actual_rows_processed": "DOCUMENT_META_OR_BROWSER_ONLY",
+        "human_raw_rows": 0,
+        "source_receipt": "32b3dc1d9e5ef3281344999c8b5691afa6440153f96473108f72fd4b38fed4de"
+      },
+      "F": {
+        "adversarial": {
+          "adversarial": "Explicitly withdraw inflated source novelty and baseline identity wherever unsupported"
+        },
+        "actual_benchmark_limit": "Browser and stdlib tests only, same OS and dependencies"
+      },
+      "G": {
+        "prespec": {
+          "external": "not human",
+          "OS": "same installed machine"
+        },
+        "external_human_holdout": "NONE",
+        "independent_OS_replication": false,
+        "verification": "SAME_GENERATOR_AND_OR_LOCAL_TECHNICAL"
+      },
+      "H": {
+        "update_events": [
+          "U183",
+          "U184",
+          "U185",
+          "U186",
+          "U187"
+        ],
+        "prior_ids": [
+          "P-SOURCE-DEDUP",
+          "P-COMPETENT_NULL",
+          "P-NOVELTY",
+          "P-DYADIC_ACCESS",
+          "P-OPPORTUNITY"
+        ],
+        "human_scientific_status": "NO_CHANGE_WITH_REASON",
+        "source_ids": []
+      },
+      "I": {
+        "scientific_grade": "0/3",
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "not_external_validation": true,
+        "technically_valid_or_documentary": true,
+        "instrumental_failed_attempts": 1
+      },
+      "J": {
+        "decision": "CONTINUE_TO_NEXT_DISTINCT_FALSIFIER",
+        "successor": "N186",
+        "credit_spent": 1,
+        "reason": "Execution or substantive source/baseline no-go per prereg; not repeated seed-only simulations",
+        "value_of_next_external_evidence": "Legal independent real opportunities with two native yes/no and calibrated equal-info SRM/B6 baseline"
+      }
+    },
+    {
+      "id": "N186",
+      "parent": "N185",
+      "mode": "REPLICATION",
+      "drift_D": {
+        "protocol": "Fixed rubric + offline receipts source SHA, script and tester SHA must be GitHub frozen before outcomes",
+        "inputs": "all source metadata plus three receipts A/B/C; no user raw data accessed"
+      },
+      "A": {
+        "question": "Recompute selected benchmark losses with a separately authored pure stdlib floating-point scorer in isolated Python process and freeze complete local bundle",
+        "estimand": "independent code/source validity and reproducible decision artifact, not new human outcomes"
+      },
+      "B": {
+        "rivals": [
+          "duplicated bibliographic record as new source",
+          "Columbia derivative dataset as independent cohort",
+          "proxy B6 as fully flexible history baseline",
+          "simulated conditional reply as human ballot",
+          "unverified demo metrics"
+        ],
+        "null": "Existing evidence cannot support external model superiority"
+      },
+      "C": {
+        "falsifier": "40 independent seeds score recomputation, SHA manifest includes model source and receipt, no independent OS or machine claim, exact original SHA unchanged",
+        "rule": "Any unverified live rights/actor IDs -> no R5; reproducibility mismatch invalid, adverse baseline gaps reported"
+      },
+      "D": {
+        "protocol": "Fixed rubric + offline receipts source SHA, script and tester SHA must be GitHub frozen before outcomes",
+        "inputs": "all source metadata plus three receipts A/B/C; no user raw data accessed",
+        "source_sha256": "3bbb9df0c37cedbadf040ae40e61ee521915022dad600f3e7a44d90d560b9413",
+        "prereg_commit": "44aee165ac418682972e2faa81b57e699c408842",
+        "code_freeze_commits": [
+          "7cb470b6e78ea19480d2cb22cf951fc0a4f29d3",
+          "ca7215696684a9b0e52d9e5cd1957b95c960a52c",
+          "00bd6515eae4a7884c0b571a0d0a17ee53bc445a"
+        ],
+        "before_outcome": true
+      },
+      "E": {
+        "execution_status": "PASS",
+        "observed": {
+          "pure_stdlib_recalculated_six_model_logloss": true,
+          "max_abs_error": 2.220446049250313e-16,
+          "same_OS": true,
+          "independent_human_replication": false
+        },
+        "actual_rows_processed": "DOCUMENT_META_OR_BROWSER_ONLY",
+        "human_raw_rows": 0,
+        "source_receipt": "32b3dc1d9e5ef3281344999c8b5691afa6440153f96473108f72fd4b38fed4de"
+      },
+      "F": {
+        "adversarial": {
+          "adversarial": "Explicitly withdraw inflated source novelty and baseline identity wherever unsupported"
+        },
+        "actual_benchmark_limit": "Browser and stdlib tests only, same OS and dependencies"
+      },
+      "G": {
+        "prespec": {
+          "external": "not human",
+          "OS": "same installed machine"
+        },
+        "external_human_holdout": "NONE",
+        "independent_OS_replication": false,
+        "verification": "SAME_GENERATOR_AND_OR_LOCAL_TECHNICAL"
+      },
+      "H": {
+        "update_events": [
+          "U183",
+          "U184",
+          "U185",
+          "U186",
+          "U187"
+        ],
+        "prior_ids": [
+          "P-SOURCE-DEDUP",
+          "P-COMPETENT_NULL",
+          "P-NOVELTY",
+          "P-DYADIC_ACCESS",
+          "P-OPPORTUNITY"
+        ],
+        "human_scientific_status": "NO_CHANGE_WITH_REASON",
+        "source_ids": []
+      },
+      "I": {
+        "scientific_grade": "0/3",
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "not_external_validation": true,
+        "technically_valid_or_documentary": true,
+        "instrumental_failed_attempts": 0
+      },
+      "J": {
+        "decision": "CONTINUE_TO_NEXT_DISTINCT_FALSIFIER",
+        "successor": "STOP_CAMPAIGN_TOTAL20_WITH_R5_HUMAN_STOP",
+        "credit_spent": 1,
+        "reason": "Execution or substantive source/baseline no-go per prereg; not repeated seed-only simulations",
+        "value_of_next_external_evidence": "Legal independent real opportunities with two native yes/no and calibrated equal-info SRM/B6 baseline"
+      }
+    }
+  ],
+  "total": 5,
+  "external_human_cycles": 0,
+  "CT2": 7
+}
