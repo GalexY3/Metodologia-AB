@@ -1,0 +1,235 @@
+{
+  "schema": "ABH.BLOCK_B.v1",
+  "date": "2026-10-30",
+  "br": "research/ab-h-esbm-adversarial-benchmark-20261030",
+  "authorized": 20,
+  "valid_consumed": 5,
+  "remaining": 15,
+  "parent": "N171",
+  "scientific_level": "0/3",
+  "CT2": 7,
+  "R5": "STOP",
+  "code_freeze": "separate SHA before outcomes",
+  "contracts": [
+    {
+      "id": "N172",
+      "parent": "N171",
+      "mode": "HOLDOUT",
+      "D": {
+        "seeds": "train 7100..7159, fresh 9100..9179; RNG 1720/1730/1740; code SHA pinned separately",
+        "no_future": "SRM t0-2 only for t3"
+      },
+      "A": {
+        "claim": "Fresh 80-seed never-seen synthetic proposal heldout test with bootstrap paired by seed",
+        "estimand": "synthetic out-of-seed logistic proposal event probability"
+      },
+      "B": {
+        "rivals": [
+          "B0",
+          "B1",
+          "B2",
+          "B4",
+          "B6",
+          "ESBM generating-param oracle",
+          "sender+target random intercept shrinkage SRM"
+        ],
+        "null": "No robust ESBM advantage across independent synthetic seeds and hostile generators"
+      },
+      "C": {
+        "falsifier": "Train fixed 7100..7159; test 9100..9179; paired 4000 bootstrap seed=1720, report interval B2-oracle and B6-oracle; no ex-ante human claim",
+        "direction": "If ESBM fails on alternate DGP, report; no aggregate cherry pick"
+      },
+      "E": "PENDING",
+      "F": {
+        "controls": "same labels/cases and priors; alternative laws intentionally adversarial, no real-world mechanism",
+        "strong": "B2 simple correctly specified approximate logit; B6 flexible; SRM within-actor only"
+      },
+      "G": "NO_EXTERNAL_HUMAN_OR_INDEPENDENT_IMPLEMENTATION",
+      "H": "All priors synthetic technical only, cannot promote human posterior",
+      "I": {
+        "CT2": 7,
+        "grade": "0/3"
+      },
+      "J": {
+        "if_pass": "N173",
+        "if_fail": "preregister repair, no fabricated valid cycle"
+      }
+    },
+    {
+      "id": "N173",
+      "parent": "N172",
+      "mode": "PIVOT",
+      "D": {
+        "seeds": "train 7100..7159, fresh 9100..9179; RNG 1720/1730/1740; code SHA pinned separately",
+        "no_future": "SRM t0-2 only for t3"
+      },
+      "A": {
+        "claim": "Adversarial generator reverses attraction to q, tests whether correctly retrained flexible model can falsify ESBM oracle",
+        "estimand": "synthetic out-of-seed logistic proposal event probability"
+      },
+      "B": {
+        "rivals": [
+          "B0",
+          "B1",
+          "B2",
+          "B4",
+          "B6",
+          "ESBM generating-param oracle",
+          "sender+target random intercept shrinkage SRM"
+        ],
+        "null": "No robust ESBM advantage across independent synthetic seeds and hostile generators"
+      },
+      "C": {
+        "falsifier": "Alternative Bernoulli labels logistic with negative q weight and same features, independent RNG 1730; label shifts split by train/test seeds, oracle remains original, no fit to test outcomes",
+        "direction": "If ESBM fails on alternate DGP, report; no aggregate cherry pick"
+      },
+      "E": "PENDING",
+      "F": {
+        "controls": "same labels/cases and priors; alternative laws intentionally adversarial, no real-world mechanism",
+        "strong": "B2 simple correctly specified approximate logit; B6 flexible; SRM within-actor only"
+      },
+      "G": "NO_EXTERNAL_HUMAN_OR_INDEPENDENT_IMPLEMENTATION",
+      "H": "All priors synthetic technical only, cannot promote human posterior",
+      "I": {
+        "CT2": 7,
+        "grade": "0/3"
+      },
+      "J": {
+        "if_pass": "N174",
+        "if_fail": "preregister repair, no fabricated valid cycle"
+      }
+    },
+    {
+      "id": "N174",
+      "parent": "N173",
+      "mode": "NEGATIVE",
+      "D": {
+        "seeds": "train 7100..7159, fresh 9100..9179; RNG 1720/1730/1740; code SHA pinned separately",
+        "no_future": "SRM t0-2 only for t3"
+      },
+      "A": {
+        "claim": "No-signal control generator makes choices iid Bernoulli p=.28 irrespective of attributes",
+        "estimand": "synthetic out-of-seed logistic proposal event probability"
+      },
+      "B": {
+        "rivals": [
+          "B0",
+          "B1",
+          "B2",
+          "B4",
+          "B6",
+          "ESBM generating-param oracle",
+          "sender+target random intercept shrinkage SRM"
+        ],
+        "null": "No robust ESBM advantage across independent synthetic seeds and hostile generators"
+      },
+      "C": {
+        "falsifier": "train/test independent RNG 1740; B0 advantage or failures reported; same number of rows only, independent target noises",
+        "direction": "If ESBM fails on alternate DGP, report; no aggregate cherry pick"
+      },
+      "E": "PENDING",
+      "F": {
+        "controls": "same labels/cases and priors; alternative laws intentionally adversarial, no real-world mechanism",
+        "strong": "B2 simple correctly specified approximate logit; B6 flexible; SRM within-actor only"
+      },
+      "G": "NO_EXTERNAL_HUMAN_OR_INDEPENDENT_IMPLEMENTATION",
+      "H": "All priors synthetic technical only, cannot promote human posterior",
+      "I": {
+        "CT2": 7,
+        "grade": "0/3"
+      },
+      "J": {
+        "if_pass": "N175",
+        "if_fail": "preregister repair, no fabricated valid cycle"
+      }
+    },
+    {
+      "id": "N175",
+      "parent": "N174",
+      "mode": "AUDIT_HETEROGENEITY",
+      "D": {
+        "seeds": "train 7100..7159, fresh 9100..9179; RNG 1720/1730/1740; code SHA pinned separately",
+        "no_future": "SRM t0-2 only for t3"
+      },
+      "A": {
+        "claim": "Audit evaluation by synthetic actor group under fresh holdout, including empty group handling",
+        "estimand": "synthetic out-of-seed logistic proposal event probability"
+      },
+      "B": {
+        "rivals": [
+          "B0",
+          "B1",
+          "B2",
+          "B4",
+          "B6",
+          "ESBM generating-param oracle",
+          "sender+target random intercept shrinkage SRM"
+        ],
+        "null": "No robust ESBM advantage across independent synthetic seeds and hostile generators"
+      },
+      "C": {
+        "falsifier": "Outcomes split receiver gender F M X; enforce min test n >=1; no demographic human inference or unpooled data claims",
+        "direction": "If ESBM fails on alternate DGP, report; no aggregate cherry pick"
+      },
+      "E": "PENDING",
+      "F": {
+        "controls": "same labels/cases and priors; alternative laws intentionally adversarial, no real-world mechanism",
+        "strong": "B2 simple correctly specified approximate logit; B6 flexible; SRM within-actor only"
+      },
+      "G": "NO_EXTERNAL_HUMAN_OR_INDEPENDENT_IMPLEMENTATION",
+      "H": "All priors synthetic technical only, cannot promote human posterior",
+      "I": {
+        "CT2": 7,
+        "grade": "0/3"
+      },
+      "J": {
+        "if_pass": "N176",
+        "if_fail": "preregister repair, no fabricated valid cycle"
+      }
+    },
+    {
+      "id": "N176",
+      "parent": "N175",
+      "mode": "SRM_BRANCH",
+      "D": {
+        "seeds": "train 7100..7159, fresh 9100..9179; RNG 1720/1730/1740; code SHA pinned separately",
+        "no_future": "SRM t0-2 only for t3"
+      },
+      "A": {
+        "claim": "Competent participant-history SRM sender/target empirical Bayes baseline for last tick of each synthetic cohort",
+        "estimand": "synthetic out-of-seed logistic proposal event probability"
+      },
+      "B": {
+        "rivals": [
+          "B0",
+          "B1",
+          "B2",
+          "B4",
+          "B6",
+          "ESBM generating-param oracle",
+          "sender+target random intercept shrinkage SRM"
+        ],
+        "null": "No robust ESBM advantage across independent synthetic seeds and hostile generators"
+      },
+      "C": {
+        "falsifier": "Seeds 9100..9139; t0-2 actor/target exposures used to estimate shrinkage from events, score only t3; no heldout decisions seen; compare constant and out-of-seed B2",
+        "direction": "If ESBM fails on alternate DGP, report; no aggregate cherry pick"
+      },
+      "E": "PENDING",
+      "F": {
+        "controls": "same labels/cases and priors; alternative laws intentionally adversarial, no real-world mechanism",
+        "strong": "B2 simple correctly specified approximate logit; B6 flexible; SRM within-actor only"
+      },
+      "G": "NO_EXTERNAL_HUMAN_OR_INDEPENDENT_IMPLEMENTATION",
+      "H": "All priors synthetic technical only, cannot promote human posterior",
+      "I": {
+        "CT2": 7,
+        "grade": "0/3"
+      },
+      "J": {
+        "if_pass": "Assess conditional scientific value under R5",
+        "if_fail": "preregister repair, no fabricated valid cycle"
+      }
+    }
+  ]
+}
