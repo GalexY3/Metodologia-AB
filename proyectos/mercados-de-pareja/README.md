@@ -1,22 +1,19 @@
-# Mercados de pareja · acceso estable
+# Mercados de pareja · entrada estable
 
-**Estado verificado 30/10/2026.** Este directorio en `main` es una entrada **documental**, no un merge del historial experimental.
+**Estado final verificado: 30/10/2026.** Esta página es documentación publicada en `main`, **no** un merge de ramas de investigación. Evidencia humana de validación causal **no** aportada.
 
-## Última campaña: AB-H PIVOT N277–N296, cerrada
+## Última campaña AB-H N297–N316 · 20/20 cerrados
 
-- **20/20 ciclos técnicos ejecutados y 0 plazas pendientes**, con contratos A–J y hashes de código congelados **antes** del primer resultado en commit `4d92e8002bc24af3dfe6009603e1bc95d2b806ca`.
-- [Informe completo en main](informes/ABH_N277_N296_20261030.md) · [rama científica y recibos](https://github.com/GalexY3/Metodologia-AB/tree/research/ab-h-esbm-exactness-n277-n296-20261030/proyectos/mercados-de-pareja/research/ABH_N277_N296_20261030).
-- **N277:** 60/60 trayectorias sintéticas instrumentadas idénticas entre NetworkX con pesos `float64` y objetivo entero exacto sobre el mismo motor reconstruido. **No es paridad con TS histórico o ejecución directa del ESBM original.**
-- **N280:** dos contraejemplos sintéticos n143 con el mismo número de parejas (71): matching float64 pierde **2 y 3 unidades del residuo entero** (no parejas) frente al óptimo exacto, corroborado por Boost en una auditoría post hoc previamente preregistrada.
-- **N290:** dos tiempos límite de 5 s de Boost sobre grafos casi completos de pesos planos/ULP. Otros controles de MILP HiGHS y programación dinámica concuerdan en grafos pequeños. Los empates pueden cambiar las identidades de los pares sin cambiar el objetivo.
-- **Archivos completos:** `ESBM_ABH_N277_N296_exactness_results.zip` SHA256 `cc8be3d25a1cb158e01a407a347b972dad1d1eb711a1c051eee6f6862e009552`, 30 archivos, Biblioteca `/Mercados-de-pareja/ABH-N277-N296/`; código pre-outcome ZIP SHA256 `8e4e6705954d9d9e864da6ea0b1607f7ca061ec87d1c9e9ede14b951e2a2ba67`. Los ZIP están en Biblioteca, no en este árbol de GitHub.
-- **Fuentes y límites:** 113 SOURCES, 34 PRIORS, 201 UPDATES; SRC112 Lock5Data es Columbia reempaquetado, SRC113 Fledge.Love son encuestas individuales, no decisiones diádicas observadas. Sin nuevos microdatos humanos. **CT2 7/100, STOP_R5 humano activo**, grado 0/3, madurez previa 44,10% no reestimada.
+[Informe N297–N316](informes/ABH_N297_N316_20261030.md) · [Rama científica, prerregistros y ledgers](https://github.com/GalexY3/Metodologia-AB/tree/research/ab-h-esbm-robust-exact-n297-n316-20261030/proyectos/mercados-de-pareja/research/ABH_N297_N316_20261030).
 
-## Antecedentes necesarios
+- 20 ciclos técnicos realmente ejecutados, 0 excepciones del runner, **0 plazas disponibles**. Contratos A–J y seis hashes congelados antes de resultados: commits `ab43890677b27a8f3848263ad8f8baf27fd365ba`, `e3896d8a252e3448cf4521cb8d8f9fa32caa7e3b` y `7495312512fbcfd9f48cdb05588ae74a10b555d9`. **Ejecutado no equivale a PASS:** se registran crashes, timeouts y contraejemplos.
+- Nuevo fallback seguro en controles probados: Boost C++ intenta el matching; ante `SIGSEGV`/timeout/objetivo incompatible se conserva solución de `NetworkX` con **pesos enteros exactos**. N297 reprodujo `SIGSEGV -11` del fixture sintético n143 N25704, no el antiguo fixture N242; N298–N300 tres timeouts de 1 s Boost en nuevos grafos planos/ULP.
+- **Cinco de cinco** grafos pequeños n18 comparados entre NetworkX, MILP HiGHS en dos fases y DP obtuvieron objetivo idéntico. N310 observó **3/6** nuevos grafos n143 de casi-empates donde el float quedaba 2,1,2 unidades residuales por debajo del objetivo entero, sin diferencia de cardinalidad. La proporción corresponde solo a grafos adversariales, no a personas.
+- N316: el orden original de aristas provoca caída `-11` de Boost en el fixture N25704; invertirlo devuelve resultado óptimo de cardinalidad 71 y objetivo entero 15.407, pero con parejas distintas. Diagnóstico adicional registrado antes de repetir; no corrige universalmente Boost.
+- **Original Python ESBM ahora recuperado y verificado byte a byte**: SHA256 `f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b`. Auditoría adicional preinscrita en `3f1bedbf8d27528f28b8a36391b15678d1e4584f`: ejecución original directa 60/60 casos N144/T16/K7, 960 ticks, 0 diferencias de parejas seleccionadas, cinco campos del track y seis agregados respecto a reconstrucción. **No** se capturaron todos los eventos dirigidos nativos originales y **no** se recuperó ni ejecutó el TypeScript histórico.
+- Archivo de resultados e instrumentos: `ESBM_ABH_N297_N316_RESULTS_AND_AUDITS.zip` SHA256 `559e49f762033b1e8027cbf49e9a9f6d998bc78b48811039bc2f8ff3525a96dd`, 36 archivos, Biblioteca `/Mercados-de-pareja/ABH-N297-N316/`. Código antes de outcomes: ZIP SHA256 `5df54b85ccb3ef4bb2c568ec4a665ac07032dd9e3941108f2cb20e689dabe55b` (6 fuentes/binario).
+- **114 SOURCES, 34 PRIORS, 204 UPDATES**. SRC114, Echenique et al. 2025, es estudio humano de matching **no romántico**, solo rival teórico/comparativo. No se le atribuye validación ESBM. **CT2 científica 7/100, STOP_R5 humano activo, grado humano nuevo 0/3**. Madurez 44,10% anterior **no reestimada**.
 
-- [Informe N257–N276](informes/ABH_N257_N276_20261030.md): 20/20 ejecuciones técnicas, 18 PASS, 2 negativos. Comparación de eventos individuales entre **dos reconstrucciones instrumentales**, no TS original.
-- [Informe N237–N256 en rama histórica](https://github.com/GalexY3/Metodologia-AB/blob/research/ab-h-esbm-polynomial-blossom-n237-n256-20261030/proyectos/mercados-de-pareja/research/ABH_N237_N256_20261030/REPORT.md): 60/60 paridad agregada entre Python ESBM original y TypeScript+Boost; histórico N242 SIGSEGV y N246 timeout 12 s; no paridad individual histórica acreditada.
-- ESBM original SHA256 `f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b` y SRC104 **sin alteraciones**.
-- [Tareas para Codex archivadas](tareas_codex/README.md) y [propuesta futura no activa](tareas_codex/05_FUTURA_N297_EXACT_MATCHING_Y_DATOS.md). Codex no está disponible por ahora; esas tareas **no están en ejecución**.
+## Historia reciente y trabajo futuro
 
-**Gobernanza:** sin SSJY, sin aceptación de licencias, sin contactos de autores, sin fusiones experimentales a main ni CI costosa. Cualquier nuevo bloque AB requiere nueva autorización, prerregistro y evidencia nueva; mejorar el software no sustituye verificación humana independiente.
+[Informe N277–N296](informes/ABH_N277_N296_20261030.md) · [Informe N257–N276](informes/ABH_N257_N276_20261030.md). El ESBM y SRC104 originales permanecieron intactos; no SSJY, licencias aceptadas, contacto de autores ni CI costosa. [Tareas para Codex archivadas](tareas_codex/README.md), incluida la [futura especificación inactiva](tareas_codex/06_FUTURA_N317_COHORTES_Y_MATCHING.md); **Codex no está autorizado ni disponible hasta nuevo aviso**. Nuevas plazas AB requieren autorización adicional y resultados realmente independientes para superar R5. No mezclar estabilidad estratégica con solución centralizada de peso máximo por equivalencia implícita.
