@@ -4,7 +4,7 @@
   "date": "2026-10-28",
   "mode": "append-only logical, versioned by Git commits",
   "reconstructed_from_documents": "Retrospective backfill, not preregistration. Old before values NOT_RECORDED unless documented explicitly.",
-  "source_coverage": "110 SOURCE bibliographic entries, 34 PRIORS, 193 UPDATES including U193 no-cycle document, 0 human data rows added and 0 AB-H cycles used.",
+  "source_coverage": "110 SOURCES metadata / 34 priors / 194 append-only UPDATES. N207–N216 10 Linux technical checks; no human record or external research validity.",
   "events": [
     {
       "id": "U001",
@@ -5452,7 +5452,39 @@
       "AB_cycle_increment": 0,
       "AB_H_cycle_increment": 0,
       "scientific_grade": "0/3"
+    },
+    {
+      "id": "U194",
+      "prior_id": "P-TRAJECTORY-INVARIANCE",
+      "source_ids": [],
+      "cycle_ids": [
+        "N207",
+        "N208",
+        "N209",
+        "N210",
+        "N211",
+        "N212",
+        "N213",
+        "N214",
+        "N215",
+        "N216"
+      ],
+      "before": "SYNTHETIC_COUNTEREXAMPLE_REPAIRED_OPT_IN_NOT_HUMAN",
+      "after": "SYNTHETIC_COUNTEREXAMPLE_REPAIRED_OPT_IN_NOT_HUMAN",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "recorded_at": "2026-10-30",
+      "evidence_type": "PRE_FROZEN_TECHNICAL_SOFTWARE_CONTRAST_LINUX_NOT_EMPIRICAL_HUMAN",
+      "what_the_test_contributes": "Real 10 distinct software checks after prereg and frozen exact source/tests; 12 toy fixture classifications and 10 independent small graph exhaustive matching oracle, Gumbel cutoff/metadata false positives and STOP budgets, TS strict compile after prereg env symlink repair.",
+      "why_this_updates_or_checks_prior": "Improved verification of technical replica instrument, but structural historical identity/order invariance is still false, no native Windows confirmation and no human outcomes. Numeric scientific priors and CT2 unchanged.",
+      "limits": "N207 repeats prior manifest integrity but as a controlled archival provenance check, no new scientific novelty; N208 initial tsc failed missing environment Node types, retained; Node 22.16 < declared 22.18 minimum. Solver still exponential and can STOP for N144; no NetworkX near-tie comparison or full 60 runs. No GitHub commit provenance for local eabadd8f from ZIP.",
+      "falsifier_or_followup": "Next need genuine clean Windows git HEAD and two-commit freeze, original Python TRACE_SCHEMA_1 observer with parity validation, N144 matching feasibility or alternative exact polynomial matcher, same-input 60 runs; separate authorization before execution",
+      "prior_probability_before": null,
+      "prior_probability_after": null,
+      "numerical_bayesian_update": false,
+      "AB_H_technical_cycles": 10,
+      "new_human_grade": "0/3",
+      "CT2": 7
     }
   ],
-  "last_campaign": "NOCYCLE_R5_INDEPENDENT_REPLICATION_FEASIBILITY_20261030"
+  "last_campaign": "ABH_N207_N216_REPLICA_TECH_QA_20261030"
 }
