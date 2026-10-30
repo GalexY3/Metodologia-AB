@@ -76,3 +76,7 @@ El visor/prototipo v0.2 se entregó localmente en la conversación; **no se ha i
 - [Mapa y estado inicial de Politics Fantasy](https://github.com/GalexY3/politics-fantasy-league/blob/main/ab_atlas/README.md): `seed.json`, visor autónomo, `updates/`, gates críticos y briefing corto.
 
 **Estado:** piloto operativo, con pruebas instrumentales locales; no mejora causalmente validada frente a herramientas competentes. AB sigue siendo mutable, autocorrectivo y sustituible.
+
+## Mercados de pareja · continuidad
+
+[Entrada estable del proyecto](proyectos/mercados-de-pareja/README.md) y [tareas para Codex](proyectos/mercados-de-pareja/tareas_codex/README.md). La investigación vigente N257–N276 permanece en rama científica separada: 20 plazas autorizadas y aún no ejecutadas por falta de archivo instrumental original. Esta entrada documental en `main` no equivale a fusión ni validación empírica.
