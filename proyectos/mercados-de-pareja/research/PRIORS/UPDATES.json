@@ -5719,7 +5719,90 @@
       "raw_rows_read": 0,
       "CT2_ordinal": 7,
       "R5_human": "STOP"
+    },
+    {
+      "id": "U202",
+      "prior_id": "P-TRAJECTORY-INVARIANCE",
+      "source_ids": [],
+      "cycle_ids": [
+        "N297",
+        "N298",
+        "N299",
+        "N300",
+        "N301",
+        "N302",
+        "N303",
+        "N304",
+        "N305",
+        "N306",
+        "N307",
+        "N308",
+        "N309",
+        "N310",
+        "N311",
+        "N312",
+        "N313",
+        "N314",
+        "N315",
+        "N316"
+      ],
+      "direction": "NO_CHANGE_WITH_REASON",
+      "before": "SYNTHETIC_COUNTEREXAMPLE_REPAIRED_OPT_IN_NOT_HUMAN",
+      "after": "SYNTHETIC_COUNTEREXAMPLE_REPAIRED_OPT_IN_NOT_HUMAN",
+      "recorded_at": "2026-10-30",
+      "evidence_type": "PRE_FROZEN_20_SYNTHETIC_SOFTWARE_CONTROLS_AND_POSTCYCLE_NATIVE_ORIGINAL_AUDIT",
+      "code_sha_freeze_commit": "ab43890677b27a8f3848263ad8f8baf27fd365ba",
+      "AJ_preoutcome_commits": [
+        "e3896d8a252e3448cf4521cb8d8f9fa32caa7e3b",
+        "7495312512fbcfd9f48cdb05588ae74a10b555d9"
+      ],
+      "posthoc_native_and_reverse_prereg_commit": "3f1bedbf8d27528f28b8a36391b15678d1e4584f",
+      "findings": "20/20 instrumented N297–316; NetworkX integer fallback produced objective on N25704 old NEW fixture despite Boost -11, and n143/n144 flat/ULP graph timeouts 1s. 5/5 independent n18 NetworkX integer vs 2-phase SciPy HiGHS MILP vs exact DP. N310 3/6 adversarial n143 near-ULP cases float solver exact residual deficits 2,1,2; N308 automorphism C4 impossibility of fully ID-permutation-equivariant deterministic single matching when tied. N307 canonical by ID stable to insertion-order reversal in seven small graphs but not relabeling. N316 original order -11 but reverse returns; in separate prereg diagnostic reverse returns a valid 71-pair objective equal to NetworkX although different pair set. Independently recovered original Python source SHA f7e6b8...d0b and executed native simulate 60 original cases N144 T16 K7 under temporary outcome-preserving NetworkX matching wrapper, zero differences in pair ID per tick, 5 common tick metrics and 6 totals over 960 ticks compared to reconstructed reference. Does NOT capture all directed event sequences of untouched Python, and historical TypeScript not recovered.",
+      "limits": "Posthoc audit of true original Python was registered only before that follow-up, not before N297 first outcome; no original TS, N242/N246 exact fixtures absent, N25704 is previous synthetic test. Bigger exact matching depends on same Python NetworkX algorithm, MILP/DP independent only small bounded graph. No human data, model validity, causal mechanism, posterior probability. Boost edge-order effect is operationally observed, not fixed or formally diagnosed.",
+      "why_no_change": "Technical fidelity and solver robustness do not resolve independent human opportunity and bilateral choice observations; R5 still STOP. New residual deficits are computational not social.",
+      "no_numerical_probability": true,
+      "CT2_scientific": 7,
+      "STOP_R5_human": "ACTIVE",
+      "human_grade": "0/3",
+      "technical_cycles": 20,
+      "extra_native_diagnostic_not_cycle": true
+    },
+    {
+      "id": "U203",
+      "prior_id": "P-DYADIC_ACCESS",
+      "source_ids": [
+        "SRC114"
+      ],
+      "cycle_ids": [],
+      "direction": "NO_CHANGE_WITH_REASON",
+      "before": "TWO_ORIGINAL_HUMAN_DATASETS_READ_SECOND_PARTIAL_BILATERAL_ID_JOIN_INCONSISTENT_NO_EXTERNAL_HOLDOUT",
+      "after": "TWO_ORIGINAL_HUMAN_DATASETS_READ_SECOND_PARTIAL_BILATERAL_ID_JOIN_INCONSISTENT_NO_EXTERNAL_HOLDOUT",
+      "recorded_at": "2026-10-30",
+      "evidence_type": "PRIMARY_PUBLICATION_DOCUMENTARY_SCREENING_NOT_CYCLE",
+      "finding": "Echenique et al. (2025), DOI 10.3982/QE2316: 85 usable human laboratory bipartite matching rounds with offers, acceptances, complete observed payoff opportunities, not romantic matching and not sequential observed romantic first-date two-vote decisions. Original authors site links Dropbox replication ZIP, raw bytes not accessed nor rights verified.",
+      "reason_no_change": "Transfer across artificially incentivized market participants and real romantic preferences would be unjustified; cannot falsify ESBM native dyadic romantic outcome models without cohort transfer. No licence accepted, no raw rows.",
+      "CT2_scientific": 7,
+      "STOP_R5_human": "ACTIVE",
+      "human_grade": "0/3"
+    },
+    {
+      "id": "U204",
+      "prior_id": "P-CULTURAL-RULES",
+      "source_ids": [
+        "SRC114"
+      ],
+      "cycle_ids": [],
+      "direction": "NO_CHANGE_WITH_REASON",
+      "before": "THEORETICALLY_SUPPORTED",
+      "after": "THEORETICALLY_SUPPORTED",
+      "recorded_at": "2026-10-30",
+      "evidence_type": "PRIMARY_COMPARATIVE_EXPERIMENT_OUTSIDE_ROMANCE",
+      "finding": "Human lab centralized-versus-decentralized strategic choice experiments with observable offers/acceptances and full payoff preferences provide a competent rival to imposing centralized max-weight matching rule on romantic agent processes. Reported stable selections and strategic history dependence, not necessarily socially max-weight assignment.",
+      "limits": "Nonromantic artificial roles/payoffs, no human romantic preference or observed duration; cannot identify cultural norms in dating population, raw data inaccessible in this turn.",
+      "reason_no_change": "Theoretical scope broadened but no independent romantic validation or operational data; no evidence to change human prior",
+      "CT2_scientific": 7,
+      "STOP_R5_human": "ACTIVE"
     }
   ],
-  "last_campaign": "ABH_N277_N296_20261030"
+  "last_campaign": "ABH_N297_N316_20261030"
 }
