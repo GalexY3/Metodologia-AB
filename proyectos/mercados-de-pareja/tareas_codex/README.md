@@ -2,6 +2,8 @@
 
 **Estado final 2026-10-30:** N257–N276 **CERRADOS: 20/20 ejecutados, 18 PASS técnicos, 2 negativos válidos, 0 plazas restantes**; 5 primeros intentos instrumentales fallidos archivados y reparados con nuevo prerregistro. CT2 científica **7/100**. STOP_R5 humano **activo**. **No hay Codex disponible por ahora ni tareas en ejecución externa.** Véase el [informe final en rama científica](https://github.com/GalexY3/Metodologia-AB/blob/research/ab-h-esbm-event-parity-n257-n276-20261030/proyectos/mercados-de-pareja/research/ABH_N257_N276_20261030/REPORT.md) y el [índice SHA](https://github.com/GalexY3/Metodologia-AB/blob/research/ab-h-esbm-event-parity-n257-n276-20261030/proyectos/mercados-de-pareja/research/ABH_N257_N276_20261030/RESULTS_INDEX_GITHUB.json).
 
+> **Estado actualizado 30/10/2026:** después de N257–N276 se ejecutó y cerró también **N277–N296: 20/20 ejecutados, 0 pendientes**. [Informe N277–N296](https://github.com/GalexY3/Metodologia-AB/blob/main/proyectos/mercados-de-pareja/informes/ABH_N277_N296_20261030.md). **No hay Codex disponible actualmente.** Las tareas 01–04 conservan su alcance histórico; la [tarea 05](05_FUTURA_N297_EXACT_MATCHING_Y_DATOS.md) es una especificación prospectiva **inactiva y no autorizada como ciclo**. Mantener R5 humano STOP y CT2 científico 7/100.
+
 ## Procedencia de las tareas (archivadas tras cierre)
 - Rama científica: `research/ab-h-esbm-event-parity-n257-n276-20261030`, punto de partida `28ee845cca88e16f13f25962e4b103335484d9a1`.
 - Evidencia histórica: `research/ab-h-esbm-polynomial-blossom-n237-n256-20261030`, cierre `7307f81174dab5050bf3f28f04235e7dc6666e74`.
