@@ -1,0 +1,289 @@
+{
+  "schema": "ABH_3_2_1_BLOCK_A",
+  "project": "Mercados de pareja",
+  "date": "2026-10-30",
+  "authorization": 20,
+  "previous_used": 0,
+  "remaining": 20,
+  "branch": "research/ab-h-esbm-adversarial-benchmark-20261030",
+  "parent_sha": "d7da22a8926ee0c05c1e2ef6bd84e19dd4463ee8",
+  "scope": "Synthetic B proxy prediction, no external human outcomes; true oracle knows the exact generator and is NOT a novel discovery",
+  "original_SHA256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+  "code_hash": "PREEXEC_FREEZE_SEPARATELY",
+  "train_seeds": "7100..7159",
+  "holdout_seeds": "8100..8139",
+  "claim_limit": "B0/B1/B2/B4/B6 here are explicit working operationalizations, do not assert historical label identity without reading original labels",
+  "contracts": [
+    {
+      "id": "N167",
+      "parent": "N166",
+      "mode": "FOCUS",
+      "D": {
+        "code": "Python source SHA256 frozen by GitHub prereg+separate frozen code manifest before outcomes",
+        "environment": "Python 3.13.5, numpy 2.3.5, sklearn 1.8.0, networkx 3.6.1",
+        "seeds": "train=7100..7159, test=8100..8139"
+      },
+      "A": {
+        "question": "Create an event-level synthetic prospective proposal dataset from actual ESBM event logs",
+        "estimand": "out-of-seed synthetic proposal yes/no logloss Brier; no human prediction"
+      },
+      "B": {
+        "rivals": [
+          "B0 prevalence",
+          "B1 demographic age/norm",
+          "B2 q,age,norm logistic",
+          "B4 temporal-exposure logistic",
+          "B6 nonlinear gradient boosting",
+          "ESBM oracle uses true generating parameter and prior negative-response state"
+        ],
+        "null": "No loss advantage or collapsed baseline, including shuffled null"
+      },
+      "C": {
+        "falsifier": "All proposals correspond to previously exposed directed dyads, every row has a pre-outcome feature state, no future information, reconcile counts",
+        "rule": "Failure or incomplete outcomes count INVALID, retain null/signs and seed-level losses, no retrospective model changes"
+      },
+      "E": {
+        "status": "NOT_RUN"
+      },
+      "F": {
+        "competent_baselines": "Same training rows and target, no testing labels used in fit",
+        "negative_controls": "Within-seed/tick outcome shuffle, cross-network opportunity shift",
+        "warning": "Original model's dyadic sender/conditional reply not 2 native human yes/no ballots"
+      },
+      "G": {
+        "external": "NONE",
+        "holdout_status": "HOLDOUT_SYNTHETIC_ONLY"
+      },
+      "H": {
+        "sources": "No human original data used",
+        "priors": "No change external"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after_expected": 7,
+        "grade": "0/3"
+      },
+      "J": {
+        "if_pass": "N168",
+        "if_fail": "REPAIR with new code freeze, STOP if no value"
+      }
+    },
+    {
+      "id": "N168",
+      "parent": "N167",
+      "mode": "BRANCH",
+      "D": {
+        "code": "Python source SHA256 frozen by GitHub prereg+separate frozen code manifest before outcomes",
+        "environment": "Python 3.13.5, numpy 2.3.5, sklearn 1.8.0, networkx 3.6.1",
+        "seeds": "train=7100..7159, test=8100..8139"
+      },
+      "A": {
+        "question": "Fit and compare real-outcome-free B0 constant, B1 demographic, B2 q-age-norm, B4 time/exposure, B6 flexible nonlinear, plus exact structural oracle",
+        "estimand": "out-of-seed synthetic proposal yes/no logloss Brier; no human prediction"
+      },
+      "B": {
+        "rivals": [
+          "B0 prevalence",
+          "B1 demographic age/norm",
+          "B2 q,age,norm logistic",
+          "B4 temporal-exposure logistic",
+          "B6 nonlinear gradient boosting",
+          "ESBM oracle uses true generating parameter and prior negative-response state"
+        ],
+        "null": "No loss advantage or collapsed baseline, including shuffled null"
+      },
+      "C": {
+        "falsifier": "Split by entire simulated seed not by event rows; report heldout log loss and Brier with all predictions clipped; legacy B labels only operational proxies",
+        "rule": "Failure or incomplete outcomes count INVALID, retain null/signs and seed-level losses, no retrospective model changes"
+      },
+      "E": {
+        "status": "NOT_RUN"
+      },
+      "F": {
+        "competent_baselines": "Same training rows and target, no testing labels used in fit",
+        "negative_controls": "Within-seed/tick outcome shuffle, cross-network opportunity shift",
+        "warning": "Original model's dyadic sender/conditional reply not 2 native human yes/no ballots"
+      },
+      "G": {
+        "external": "NONE",
+        "holdout_status": "HOLDOUT_SYNTHETIC_ONLY"
+      },
+      "H": {
+        "sources": "No human original data used",
+        "priors": "No change external"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after_expected": 7,
+        "grade": "0/3"
+      },
+      "J": {
+        "if_pass": "N169",
+        "if_fail": "REPAIR with new code freeze, STOP if no value"
+      }
+    },
+    {
+      "id": "N169",
+      "parent": "N168",
+      "mode": "ADVERSARIAL",
+      "D": {
+        "code": "Python source SHA256 frozen by GitHub prereg+separate frozen code manifest before outcomes",
+        "environment": "Python 3.13.5, numpy 2.3.5, sklearn 1.8.0, networkx 3.6.1",
+        "seeds": "train=7100..7159, test=8100..8139"
+      },
+      "A": {
+        "question": "Test oracle advantage versus baseline B6 and analytic B2 under true generator on truly heldout seeds",
+        "estimand": "out-of-seed synthetic proposal yes/no logloss Brier; no human prediction"
+      },
+      "B": {
+        "rivals": [
+          "B0 prevalence",
+          "B1 demographic age/norm",
+          "B2 q,age,norm logistic",
+          "B4 temporal-exposure logistic",
+          "B6 nonlinear gradient boosting",
+          "ESBM oracle uses true generating parameter and prior negative-response state"
+        ],
+        "null": "No loss advantage or collapsed baseline, including shuffled null"
+      },
+      "C": {
+        "falsifier": "Paired per-seed logloss deltas and sign distribution; no empirical validation even if ESBM oracle wins",
+        "rule": "Failure or incomplete outcomes count INVALID, retain null/signs and seed-level losses, no retrospective model changes"
+      },
+      "E": {
+        "status": "NOT_RUN"
+      },
+      "F": {
+        "competent_baselines": "Same training rows and target, no testing labels used in fit",
+        "negative_controls": "Within-seed/tick outcome shuffle, cross-network opportunity shift",
+        "warning": "Original model's dyadic sender/conditional reply not 2 native human yes/no ballots"
+      },
+      "G": {
+        "external": "NONE",
+        "holdout_status": "HOLDOUT_SYNTHETIC_ONLY"
+      },
+      "H": {
+        "sources": "No human original data used",
+        "priors": "No change external"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after_expected": 7,
+        "grade": "0/3"
+      },
+      "J": {
+        "if_pass": "N170",
+        "if_fail": "REPAIR with new code freeze, STOP if no value"
+      }
+    },
+    {
+      "id": "N170",
+      "parent": "N169",
+      "mode": "NEGATIVE_CONTROL",
+      "D": {
+        "code": "Python source SHA256 frozen by GitHub prereg+separate frozen code manifest before outcomes",
+        "environment": "Python 3.13.5, numpy 2.3.5, sklearn 1.8.0, networkx 3.6.1",
+        "seeds": "train=7100..7159, test=8100..8139"
+      },
+      "A": {
+        "question": "Run a fully shuffled held-out and train null (within seed/tick) and measure whether structural oracle loses advantage",
+        "estimand": "out-of-seed synthetic proposal yes/no logloss Brier; no human prediction"
+      },
+      "B": {
+        "rivals": [
+          "B0 prevalence",
+          "B1 demographic age/norm",
+          "B2 q,age,norm logistic",
+          "B4 temporal-exposure logistic",
+          "B6 nonlinear gradient boosting",
+          "ESBM oracle uses true generating parameter and prior negative-response state"
+        ],
+        "null": "No loss advantage or collapsed baseline, including shuffled null"
+      },
+      "C": {
+        "falsifier": "No preserved real causal signal from outcome labels; same fixed sample sizes, group-level sham",
+        "rule": "Failure or incomplete outcomes count INVALID, retain null/signs and seed-level losses, no retrospective model changes"
+      },
+      "E": {
+        "status": "NOT_RUN"
+      },
+      "F": {
+        "competent_baselines": "Same training rows and target, no testing labels used in fit",
+        "negative_controls": "Within-seed/tick outcome shuffle, cross-network opportunity shift",
+        "warning": "Original model's dyadic sender/conditional reply not 2 native human yes/no ballots"
+      },
+      "G": {
+        "external": "NONE",
+        "holdout_status": "HOLDOUT_SYNTHETIC_ONLY"
+      },
+      "H": {
+        "sources": "No human original data used",
+        "priors": "No change external"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after_expected": 7,
+        "grade": "0/3"
+      },
+      "J": {
+        "if_pass": "N171",
+        "if_fail": "REPAIR with new code freeze, STOP if no value"
+      }
+    },
+    {
+      "id": "N171",
+      "parent": "N170",
+      "mode": "SHIFT",
+      "D": {
+        "code": "Python source SHA256 frozen by GitHub prereg+separate frozen code manifest before outcomes",
+        "environment": "Python 3.13.5, numpy 2.3.5, sklearn 1.8.0, networkx 3.6.1",
+        "seeds": "train=7100..7159, test=8100..8139"
+      },
+      "A": {
+        "question": "Evaluate train on canonical ring and heldout rewired opportunities without peeking at test labels",
+        "estimand": "out-of-seed synthetic proposal yes/no logloss Brier; no human prediction"
+      },
+      "B": {
+        "rivals": [
+          "B0 prevalence",
+          "B1 demographic age/norm",
+          "B2 q,age,norm logistic",
+          "B4 temporal-exposure logistic",
+          "B6 nonlinear gradient boosting",
+          "ESBM oracle uses true generating parameter and prior negative-response state"
+        ],
+        "null": "No loss advantage or collapsed baseline, including shuffled null"
+      },
+      "C": {
+        "falsifier": "Same seeds and schedule budgets but distinct risksets; no topology causal conclusion, report n and loss",
+        "rule": "Failure or incomplete outcomes count INVALID, retain null/signs and seed-level losses, no retrospective model changes"
+      },
+      "E": {
+        "status": "NOT_RUN"
+      },
+      "F": {
+        "competent_baselines": "Same training rows and target, no testing labels used in fit",
+        "negative_controls": "Within-seed/tick outcome shuffle, cross-network opportunity shift",
+        "warning": "Original model's dyadic sender/conditional reply not 2 native human yes/no ballots"
+      },
+      "G": {
+        "external": "NONE",
+        "holdout_status": "HOLDOUT_SYNTHETIC_ONLY"
+      },
+      "H": {
+        "sources": "No human original data used",
+        "priors": "No change external"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after_expected": 7,
+        "grade": "0/3"
+      },
+      "J": {
+        "if_pass": "Evaluate next domain-distinct line",
+        "if_fail": "REPAIR with new code freeze, STOP if no value"
+      }
+    }
+  ],
+  "STOP_R5": true
+}

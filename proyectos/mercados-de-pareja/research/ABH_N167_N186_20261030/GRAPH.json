@@ -1,0 +1,332 @@
+{
+  "schema": "AB_O7_GRAPH_N167_N186",
+  "date": "2026-10-30",
+  "branch": "research/ab-h-esbm-adversarial-benchmark-20261030",
+  "nodes": [
+    {
+      "id": "ESBM_BENCH",
+      "type": "program",
+      "label": "Synthetic prediction and validity audit",
+      "status": "EXECUTED"
+    },
+    {
+      "id": "N167",
+      "type": "AB_cycle",
+      "mode": "FOCUS",
+      "status": "PASS_TECHNICAL",
+      "grade": "0/3"
+    },
+    {
+      "id": "N168",
+      "type": "AB_cycle",
+      "mode": "FOCUS",
+      "status": "PASS_TECHNICAL",
+      "grade": "0/3"
+    },
+    {
+      "id": "N169",
+      "type": "AB_cycle",
+      "mode": "FOCUS",
+      "status": "PASS_TECHNICAL",
+      "grade": "0/3"
+    },
+    {
+      "id": "N170",
+      "type": "AB_cycle",
+      "mode": "FOCUS",
+      "status": "PASS_TECHNICAL",
+      "grade": "0/3"
+    },
+    {
+      "id": "N171",
+      "type": "AB_cycle",
+      "mode": "FOCUS",
+      "status": "PASS_TECHNICAL",
+      "grade": "0/3"
+    },
+    {
+      "id": "N172",
+      "type": "AB_cycle",
+      "mode": "BRANCH",
+      "status": "PASS_TECHNICAL",
+      "grade": "0/3"
+    },
+    {
+      "id": "N173",
+      "type": "AB_cycle",
+      "mode": "BRANCH",
+      "status": "PASS_TECHNICAL",
+      "grade": "0/3"
+    },
+    {
+      "id": "N174",
+      "type": "AB_cycle",
+      "mode": "BRANCH",
+      "status": "PASS_TECHNICAL",
+      "grade": "0/3"
+    },
+    {
+      "id": "N175",
+      "type": "AB_cycle",
+      "mode": "BRANCH",
+      "status": "PASS_TECHNICAL",
+      "grade": "0/3"
+    },
+    {
+      "id": "N176",
+      "type": "AB_cycle",
+      "mode": "BRANCH",
+      "status": "PASS_TECHNICAL",
+      "grade": "0/3"
+    },
+    {
+      "id": "N177",
+      "type": "AB_cycle",
+      "mode": "EXPOSURE_STAGE",
+      "status": "PASS_TECHNICAL",
+      "grade": "0/3"
+    },
+    {
+      "id": "N178",
+      "type": "AB_cycle",
+      "mode": "EXPOSURE_STAGE",
+      "status": "PASS_TECHNICAL",
+      "grade": "0/3"
+    },
+    {
+      "id": "N179",
+      "type": "AB_cycle",
+      "mode": "EXPOSURE_STAGE",
+      "status": "PASS_TECHNICAL",
+      "grade": "0/3"
+    },
+    {
+      "id": "N180",
+      "type": "AB_cycle",
+      "mode": "EXPOSURE_STAGE",
+      "status": "PASS_TECHNICAL",
+      "grade": "0/3"
+    },
+    {
+      "id": "N181",
+      "type": "AB_cycle",
+      "mode": "EXPOSURE_STAGE",
+      "status": "PASS_TECHNICAL",
+      "grade": "0/3"
+    },
+    {
+      "id": "N182",
+      "type": "AB_cycle",
+      "mode": "DOCUMENTARY_AND_QA",
+      "status": "VALID_DOCUMENTARY_NEGATIVE",
+      "grade": "0/3"
+    },
+    {
+      "id": "N183",
+      "type": "AB_cycle",
+      "mode": "DOCUMENTARY_AND_QA",
+      "status": "VALID_DOCUMENTARY_NEGATIVE",
+      "grade": "0/3"
+    },
+    {
+      "id": "N184",
+      "type": "AB_cycle",
+      "mode": "DOCUMENTARY_AND_QA",
+      "status": "VALID_DOCUMENTARY_NEGATIVE",
+      "grade": "0/3"
+    },
+    {
+      "id": "N185",
+      "type": "AB_cycle",
+      "mode": "DOCUMENTARY_AND_QA",
+      "status": "PASS_TECHNICAL",
+      "grade": "0/3"
+    },
+    {
+      "id": "N186",
+      "type": "AB_cycle",
+      "mode": "DOCUMENTARY_AND_QA",
+      "status": "PASS_TECHNICAL",
+      "grade": "0/3"
+    },
+    {
+      "id": "HUMAN_R5",
+      "type": "gate",
+      "status": "STOP",
+      "label": "No independent human native votes/opportunity rights with full baseline parity"
+    },
+    {
+      "id": "P_SOURCE",
+      "type": "prior",
+      "status": "NEW_TECHNICAL",
+      "label": "P-SOURCE-DEDUP"
+    },
+    {
+      "id": "SRC108",
+      "type": "source",
+      "status": "SAME_COHORT_SECONDARY_LICENSE_METADATA",
+      "label": "Harvard Dataverse replication 2014 Columbia 2002-2004"
+    }
+  ],
+  "edges": [
+    {
+      "from": "ESBM_BENCH",
+      "to": "N167",
+      "rel": "START"
+    },
+    {
+      "from": "N167",
+      "to": "N168",
+      "rel": "NEXT_CONDITIONAL"
+    },
+    {
+      "from": "N168",
+      "to": "N169",
+      "rel": "NEXT_CONDITIONAL"
+    },
+    {
+      "from": "N169",
+      "to": "N170",
+      "rel": "NEXT_CONDITIONAL"
+    },
+    {
+      "from": "N170",
+      "to": "N171",
+      "rel": "NEXT_CONDITIONAL"
+    },
+    {
+      "from": "N171",
+      "to": "N172",
+      "rel": "BRANCH_NEW_EVIDENCE_CLASS"
+    },
+    {
+      "from": "N172",
+      "to": "N173",
+      "rel": "NEXT_CONDITIONAL"
+    },
+    {
+      "from": "N173",
+      "to": "N174",
+      "rel": "NEXT_CONDITIONAL"
+    },
+    {
+      "from": "N174",
+      "to": "N175",
+      "rel": "NEXT_CONDITIONAL"
+    },
+    {
+      "from": "N175",
+      "to": "N176",
+      "rel": "NEXT_CONDITIONAL"
+    },
+    {
+      "from": "N176",
+      "to": "N177",
+      "rel": "BRANCH_NEW_EVIDENCE_CLASS"
+    },
+    {
+      "from": "N177",
+      "to": "N178",
+      "rel": "NEXT_CONDITIONAL"
+    },
+    {
+      "from": "N178",
+      "to": "N179",
+      "rel": "NEXT_CONDITIONAL"
+    },
+    {
+      "from": "N179",
+      "to": "N180",
+      "rel": "NEXT_CONDITIONAL"
+    },
+    {
+      "from": "N180",
+      "to": "N181",
+      "rel": "NEXT_CONDITIONAL"
+    },
+    {
+      "from": "N181",
+      "to": "N182",
+      "rel": "BRANCH_NEW_EVIDENCE_CLASS"
+    },
+    {
+      "from": "N182",
+      "to": "N183",
+      "rel": "NEXT_CONDITIONAL"
+    },
+    {
+      "from": "N183",
+      "to": "N184",
+      "rel": "NEXT_CONDITIONAL"
+    },
+    {
+      "from": "N184",
+      "to": "N185",
+      "rel": "NEXT_CONDITIONAL"
+    },
+    {
+      "from": "N185",
+      "to": "N186",
+      "rel": "NEXT_CONDITIONAL"
+    },
+    {
+      "from": "N182",
+      "to": "P_SOURCE",
+      "rel": "THREE_DUPLICATE_DOI_FINDINGS"
+    },
+    {
+      "from": "SRC108",
+      "to": "HUMAN_R5",
+      "rel": "SAME_COHORT_FILE_RIGHTS_NOT_VERIFIED"
+    },
+    {
+      "from": "ESBM_BENCH",
+      "to": "HUMAN_R5",
+      "rel": "NO_EXTERNAL_VALIDATION"
+    },
+    {
+      "from": "N183",
+      "to": "HUMAN_R5",
+      "rel": "NO_FULL_B1_SRM_B6_COMPARATOR_PARITY"
+    }
+  ],
+  "totals": {
+    "authorized": 20,
+    "executed_technical_PASS": 17,
+    "executed_documentary_negative": 3,
+    "completed_invalid": 0,
+    "instrumental_failures": 2,
+    "planning": 0,
+    "remaining": 0,
+    "CT2_ordinal": 7,
+    "maturity_percent": 43.7,
+    "human_R5": "STOP",
+    "source_records": 108,
+    "doi_duplicate_pairs": 3,
+    "priors": 34,
+    "updates": 187,
+    "new_human_evidence": 0
+  },
+  "criticism": [
+    {
+      "claim": "B2 nearly equal to ESBM oracle",
+      "risk": "oracle parametrized true DGP, and q latent known; this is model-self comparison, not social science discovery"
+    },
+    {
+      "claim": "strong baselines",
+      "risk": "B1 B4 B6 and SRM operational proxies, not exact historical competitors; scientific victory barred"
+    },
+    {
+      "claim": "source count",
+      "risk": "SRC087=SRC107 and other DOI duplication, multiple Columbia artifacts same cohort"
+    },
+    {
+      "claim": "archive rights",
+      "risk": "NLM CC0 catalog metadata not verified per-file and underlying cohort not independent"
+    },
+    {
+      "claim": "browser QA",
+      "risk": "Same container Chromium via system binary; no external-machine reproducibility"
+    }
+  ]
+}

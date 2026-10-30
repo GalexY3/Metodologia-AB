@@ -1,0 +1,292 @@
+{
+  "schema": "ABH_N167_N186_RESULTS_INDEX",
+  "date": "2026-10-30",
+  "branch": "research/ab-h-esbm-adversarial-benchmark-20261030",
+  "parent_HEAD": "d7da22a8926ee0c05c1e2ef6bd84e19dd4463ee8",
+  "original_ESBM_SHA256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+  "technical_or_substantive_documentary_AJ_cycles": 20,
+  "strict_technical_PASS": 17,
+  "valid_documentary_negative_or_nogo": 3,
+  "invalid_completed_cycles": 0,
+  "invalid_instrumental_attempts": 2,
+  "planning": 0,
+  "remaining": 0,
+  "human_observations_processed": 0,
+  "external_human_validation": 0,
+  "scientific_CT2": 7,
+  "human_STOP_R5": true,
+  "prereg_commit": {
+    "A": "613bfa643fc6cff8b86ff6bb2d82c5635eb20417",
+    "B": "fd0caaffa5289cb47192f83e9e017ff133503db4",
+    "C": "3b9e12c81d3413b1221af286d6e4d65848b24afe",
+    "D": "44aee165ac418682972e2faa81b57e699c408842"
+  },
+  "code_hash_freezes": {
+    "A_initial": "dcf9f8b5b230424a0aded31f9a9cd8786aede980",
+    "A_repair_pre": "b94bb3afd1b5075a10bd9d718eb3406d7b2ed315",
+    "A_repair_code": "db4b418cf61286f19e7b89a4d82356f2d247ce95",
+    "B": "6ed9b848c3ddf8cd496ef04120f90625d41458ed",
+    "C": "e9935bd5aefbe7ed2e0cad57cebc4fb82fea3b98",
+    "D_document": "7cb470b6e78ea19480d2cb22cf951fc0a4f29d3",
+    "D_UI": "ca7215696684a9b0e52d9e5cd1957b95c960a52c",
+    "D_repair_prereg": "027810fe367840b3136f06795ac2d7c5c88d9325",
+    "D_repair_code": "00bd6515eae4a7884c0b571a0d0a17ee53bc445a"
+  },
+  "code_sha256": {
+    "benchmark": "beab33082fa062e6c3abb510b3f4716b9d446380d6a2d213d1fb96251f5fcefa",
+    "shift": "eb260c9a1a7ac75e8a64609d4f8279161f382df3bd684eb4e6313a88a443fbdc",
+    "bilateral": "f98080694072643f470c431e9b41460126f42df378c6ac551becd09c7e42a1de",
+    "dashboard": "598b57a408f5c1fcc04da388a47ca2cf87548cad94a663e468a5355a4b72170e",
+    "audit_repaired": "3bbb9df0c37cedbadf040ae40e61ee521915022dad600f3e7a44d90d560b9413"
+  },
+  "receipts_SHA256": {
+    "A": "d173f4ef4e1648f977b100e5c6700bd2d00a7b9e8a751ac7a7428c29215deebe",
+    "B": "854fabfaeead542c4de9361eaf934ba11010a0835992f3b6614b4444b849275b",
+    "C": "14e740f8d9d698ee224f73b6725b098aca530fa98b32502d8391600581049425",
+    "D_document": "d06c4abec7fa414c68fb63b782ccf6e8f25f68db1b0c30b361f297eb4d827e59",
+    "D_UI": "32b3dc1d9e5ef3281344999c8b5691afa6440153f96473108f72fd4b38fed4de"
+  },
+  "archive": "Full raw per-seed receipts, code, generated offline dashboard + screenshot delivered as current conversation ZIP; code SHA frozen in GitHub before outcomes; scripts are not claimed pushed as full source to GitHub",
+  "rights": "No original human files read. SRC104 and original ESBM untouched. No license accepted; no author contacted; no SSJY; no main merge.",
+  "cycles": [
+    {
+      "id": "N167",
+      "status": "PASS",
+      "observed": {
+        "train_exposures": 3608,
+        "test_exposures": 2365,
+        "train_seed_count": 60,
+        "test_seed_count": 40
+      }
+    },
+    {
+      "id": "N168",
+      "status": "PASS",
+      "observed": {
+        "logloss": {
+          "B0": 0.5957,
+          "B1": 0.5945,
+          "B2": 0.5746,
+          "B4": 0.5747,
+          "B6": 0.5806,
+          "oracle": 0.5741
+        },
+        "note": "B0/B1/B2/B4/B6 are operational proxies, not canonical fully competitive historical versions"
+      }
+    },
+    {
+      "id": "N169",
+      "status": "PASS",
+      "observed": {
+        "B2_minus_oracle_seed_mean": 0.0005257148293544095,
+        "oracle_wins_vs_B2": 23,
+        "oracle_losses_vs_B2": 17
+      }
+    },
+    {
+      "id": "N170",
+      "status": "PASS",
+      "observed": {
+        "shuffled_null_logloss": {
+          "B0": 0.5957,
+          "B2": 0.5972,
+          "B6": 0.6002,
+          "oracle": 0.607
+        }
+      }
+    },
+    {
+      "id": "N171",
+      "status": "PASS",
+      "observed": {
+        "rewired_test_exposures": 2412,
+        "logloss": {
+          "B2": 0.578,
+          "B6": 0.5783,
+          "oracle": 0.5765
+        }
+      }
+    },
+    {
+      "id": "N172",
+      "status": "PASS",
+      "observed": {
+        "fresh_test_exposures": 4796,
+        "seed_count": 80,
+        "B2_minus_oracle_seed_mean": 0.00099,
+        "B2_minus_oracle_CI95": [
+          -0.00022727496274924794,
+          0.002346419290427648
+        ],
+        "includes_zero": true
+      }
+    },
+    {
+      "id": "N173",
+      "status": "PASS",
+      "observed": {
+        "reversed_quality_generator_logloss": {
+          "B2": 0.5799,
+          "oracle": 0.6468
+        },
+        "adversarial_generator_different": true
+      }
+    },
+    {
+      "id": "N174",
+      "status": "PASS",
+      "observed": {
+        "no_signal_generator_logloss": {
+          "B0": 0.5976,
+          "oracle": 0.6163
+        }
+      }
+    },
+    {
+      "id": "N175",
+      "status": "PASS",
+      "observed": {
+        "receiver_synthetic_gender_exposures": {
+          "F": 2108,
+          "M": 1913,
+          "X": 775
+        },
+        "not_human_disparity": true
+      }
+    },
+    {
+      "id": "N176",
+      "status": "PASS",
+      "observed": {
+        "within_event_tick3_test": 539,
+        "sender_target_EB_SRM_logloss": 0.5872,
+        "B2_logloss": 0.5625
+      }
+    },
+    {
+      "id": "N177",
+      "status": "PASS",
+      "observed": {
+        "train_exposures": 3537,
+        "train_proposals": 992,
+        "train_positives": 284,
+        "test_exposures": 4789,
+        "test_proposals": 1300,
+        "test_positives": 381
+      }
+    },
+    {
+      "id": "N178",
+      "status": "PASS",
+      "observed": {
+        "joint_positive_logloss": {
+          "B0": 0.27769,
+          "B2": 0.26623,
+          "oracle": 0.26606
+        },
+        "measurement": "sequential conditional program not two native human ballots"
+      }
+    },
+    {
+      "id": "N179",
+      "status": "PASS",
+      "observed": {
+        "conditional_reply_test_n": 1300,
+        "conditional_logloss": {
+          "B0": 0.60498,
+          "B2": 0.58917,
+          "oracle": 0.58843
+        }
+      }
+    },
+    {
+      "id": "N180",
+      "status": "PASS",
+      "observed": {
+        "rewired_joint_n": 4764,
+        "logloss": {
+          "B2": 0.26346,
+          "oracle": 0.26353
+        },
+        "no_topology_causal_claim": true
+      }
+    },
+    {
+      "id": "N181",
+      "status": "PASS",
+      "observed": {
+        "B2_minus_oracle_seed_mean": 0.00023554173958339526,
+        "CI95": [
+          -0.00025062973628815695,
+          0.0007472001594422135
+        ],
+        "includes_zero": true
+      }
+    },
+    {
+      "id": "N182",
+      "status": "VALID_DOCUMENTARY_NEGATIVE",
+      "observed": {
+        "catalog_pre_audit": 107,
+        "doi_with_canonical": 61,
+        "unique_dois": 58,
+        "duplicate_groups": [
+          [
+            "SRC003",
+            "SRC075"
+          ],
+          [
+            "SRC029",
+            "SRC093"
+          ],
+          [
+            "SRC087",
+            "SRC107"
+          ]
+        ],
+        "previous_SRC107_novel_claim_withdrawn": true
+      }
+    },
+    {
+      "id": "N183",
+      "status": "VALID_DOCUMENTARY_NEGATIVE",
+      "observed": {
+        "historical_B1_SRM_equivalent": false,
+        "B6star_implemented": false,
+        "model_labels_are_proxies": true
+      }
+    },
+    {
+      "id": "N184",
+      "status": "VALID_DOCUMENTARY_NO_GO",
+      "observed": {
+        "SRC108_replication_DOI": "10.7910/DVN/27893",
+        "Columbia_same_cohort": true,
+        "first_party_data_access": false,
+        "R5": "STOP",
+        "CC0_secondary_catalog_only": true
+      }
+    },
+    {
+      "id": "N185",
+      "status": "PASS",
+      "observed": {
+        "offline_dashboard_sections": 7,
+        "Chromium_interactions": 7,
+        "HTML_SHA256": "099c0435fef63cf25494477dceefa5a994e0447d8bde567ba542cb15634ef568",
+        "no_external_HTTP": true,
+        "js_errors": 0
+      }
+    },
+    {
+      "id": "N186",
+      "status": "PASS",
+      "observed": {
+        "pure_stdlib_recalculated_six_model_logloss": true,
+        "max_abs_error": 2.220446049250313e-16,
+        "same_OS": true,
+        "independent_human_replication": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "schema": "ABH_N167_N171_CODE_PRE_OUTCOME",
+  "date": "2026-10-30",
+  "code_path": "benchmark.py",
+  "code_bytes": 7504,
+  "code_sha256": "16865f3ddf1e678f9376d67e6352a284c7a10322909f6316b4657de317c1615f",
+  "source_path": "/mnt/data/esbm_n167_n186/benchmark.py",
+  "source_distribution": "Original ESBM generator, symmetric pair variant, q age norm and outcome proposal label",
+  "dependencies": [
+    "numpy 2.3.5",
+    "networkx 3.6.1",
+    "scikit-learn 1.8.0"
+  ],
+  "seeds": {
+    "train": "7100:7159",
+    "holdout": "8100:8139",
+    "shuffle_rng": 70170
+  },
+  "baseline_labels": "Proxy definitions not assumed identical to historical AB-R B0/B1/SRM/B2/B4/B6",
+  "status": "BEFORE_OUTCOMES",
+  "R5": "HUMAN_STOP"
+}
