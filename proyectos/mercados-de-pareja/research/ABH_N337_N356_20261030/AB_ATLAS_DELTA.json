@@ -1,0 +1,125 @@
+{
+  "schema": "ab_atlas_delta_v1",
+  "campaign": "ABH_N337_N356_20261030",
+  "date": "2026-10-30",
+  "root": "MP-R5-N337",
+  "mode": "AB-H",
+  "AB_cycles": {
+    "authorized": 20,
+    "valid_executed": 0,
+    "invalid_executed": 0,
+    "planning_ab": 0,
+    "pending": 20
+  },
+  "scientific_grade": "0/3",
+  "CT2": 7,
+  "STOP_R5": true,
+  "nodes": [
+    {
+      "id": "MP-R5-N337",
+      "type": "research_question",
+      "mode": "AB-R",
+      "status": "blocked",
+      "title": "New independent romantic bilateral opportunity+decision holdout",
+      "decision": "STOP_LOCAL_R5",
+      "reason": "No fully verified lawful native two-vote temporal opportunity source among screened candidates",
+      "evidence": [
+        "R5_SOURCE_SCREEN.json",
+        "REPORT.md"
+      ]
+    },
+    {
+      "id": "MP-DA-N317",
+      "type": "prior_cycle_campaign",
+      "mode": "AB-H",
+      "status": "closed",
+      "title": "Synthetic decentralized offer/DA vs centralized matching N317-N336",
+      "scientific_grade": "0/3",
+      "limits": "Algorithm-defined stability is not observed romance"
+    },
+    {
+      "id": "MP-SRC115",
+      "type": "source",
+      "mode": "AB-R",
+      "status": "unreviewed",
+      "title": "2026 online profiles six versus 31",
+      "source_id": "SRC115",
+      "reason": "Human one-sided choice, missing recipient native vote and raw audit"
+    },
+    {
+      "id": "MP-SRC116",
+      "type": "source",
+      "mode": "AB-R",
+      "status": "unreviewed",
+      "title": "2026 nonromantic teammate/competitor preferences",
+      "source_id": "SRC116",
+      "reason": "No romantic dyadic acceptance"
+    },
+    {
+      "id": "MP-SRC117",
+      "type": "source",
+      "mode": "AB-R",
+      "status": "unreviewed",
+      "title": "2020 randomized information prior first-date meeting",
+      "source_id": "SRC117",
+      "reason": "No two binary native votes and no serial opportunity sets verified"
+    },
+    {
+      "id": "MP-AJ-N337",
+      "type": "preregistration_gate",
+      "mode": "AB-H",
+      "status": "proposed",
+      "title": "Conditional A-J and SHA for first qualifying human study",
+      "evidence": "A_J_CONDITIONAL_R5_GATE_NOT_EXECUTED.md",
+      "warning": "No executable instrument, no frozen code, no cycle spent"
+    },
+    {
+      "id": "MP-R5-SRC104",
+      "type": "data_blocker",
+      "mode": "AB-R",
+      "status": "blocked",
+      "title": "SRC104 original bilateral vote pairing inconsistency",
+      "reason": "15 mirrored decisions discordant; original coding documentation missing"
+    }
+  ],
+  "edges": [
+    {
+      "from": "MP-DA-N317",
+      "to": "MP-R5-N337",
+      "type": "branches_from",
+      "note": "Algorithm mechanism to independent field validity"
+    },
+    {
+      "from": "MP-SRC115",
+      "to": "MP-R5-N337",
+      "type": "related_to",
+      "note": "One-sided human profile choice, not R5 native pair"
+    },
+    {
+      "from": "MP-SRC116",
+      "to": "MP-R5-N337",
+      "type": "related_to",
+      "note": "Nonromantic human pair selection"
+    },
+    {
+      "from": "MP-SRC117",
+      "to": "MP-R5-N337",
+      "type": "related_to",
+      "note": "Randomized prior information"
+    },
+    {
+      "from": "MP-R5-SRC104",
+      "to": "MP-R5-N337",
+      "type": "blocks",
+      "note": "Existing original cohort vote matching unclear"
+    },
+    {
+      "from": "MP-AJ-N337",
+      "to": "MP-R5-N337",
+      "type": "depends_on",
+      "note": "Requires source rights and code SHA before outcomes"
+    }
+  ],
+  "orphan_audit": "All newly introduced source nodes SRC115-117 linked; no 1/3 created; blocked source SRC104 retained; no relations construed as confirmation",
+  "main_merge": false
+}
