@@ -1,8 +1,7 @@
-Continúa Politics Fantasy League con dos objetivos separados: producto utilizable e investigación sociológica/institucional.
+# Politics Fantasy se ha trasladado
 
-Antes de proponer o ejecutar trabajo, lee el punto de entrada **actual** y sigue sus enlaces:
-https://github.com/GalexY3/Metodologia-AB/blob/integration/pfl/proyectos/politics-fantasy-league/START_HERE.md
+**Continuar en [NEW_CHAT_PROMPT.md](https://github.com/GalexY3/politics-fantasy-league/blob/main/NEW_CHAT_PROMPT.md).**
 
-Comprueba la rama y el commit remotos reales; recupera PROJECT_STATE.json y el briefing actual. Resume el hito activo de cada línea y su siguiente acción. No reconstruyas el estado a partir de esta conversación, una rama antigua o títulos de PR.
+El repositorio canónico es [https://github.com/GalexY3/politics-fantasy-league](https://github.com/GalexY3/politics-fantasy-league); rama `main`. AB conserva el método y la historia anterior, sin copia activa del producto. No crear nuevos lotes, campañas ni cambios de PFL aquí.
 
-Avanza hacia el resultado verificable priorizado. Conserva las autorizaciones pendientes en sus ledgers. No pidas más ciclos por fórmula, no repitas bloqueos sin evidencia nueva y no conviertas QA o simulaciones en resultados humanos. Actualiza el estado y el handoff al cerrar. Si no puedes leer o guardar en el repositorio, declara ese límite y no afirmes sincronización.
+Leer el estado vigente en [START_HERE](https://github.com/GalexY3/politics-fantasy-league/blob/main/START_HERE.md) y [PROJECT_STATE.json](https://github.com/GalexY3/politics-fantasy-league/blob/main/PROJECT_STATE.json). La historia previa está fijada en la etiqueta `pfl-monorepo-final-20261030`; [informe del traslado](https://github.com/GalexY3/Metodologia-AB/blob/main/docs/PFL_REPOSITORY_MIGRATION_20261030.md).

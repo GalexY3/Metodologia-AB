@@ -44,14 +44,8 @@ class BatchTimestampTests(unittest.TestCase):
             with self.subTest(at=at):
                 delta.batch_check(self.sample(at))
 
-    def test_all_committed_atlas_batch_timestamps_are_backward_compatible(self):
-        root = Path(__file__).resolve().parents[2]
-        folder = root / "proyectos" / "politics-fantasy-league" / "ab_atlas" / "updates"
-        files = sorted(folder.glob("*.json"))
-        self.assertGreaterEqual(len(files), 55)
-        for file in files:
-            with self.subTest(file=file.name):
-                delta.batch_check(json.loads(file.read_text(encoding="utf-8")))
+    # Corpus compatibility check moved with PFL to tools/ab_atlas/tests;
+    # generic timestamp tests remain local and do not require another repository.
 
     def test_historical_patch_order_is_not_a_timing_claim(self):
         # Intentionally diagnostic, not a global monotonic-time invariant:

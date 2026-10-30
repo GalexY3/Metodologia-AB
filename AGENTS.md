@@ -2,7 +2,7 @@
 
 ## Politics Fantasy: recuperación y excepción de gobernanza vigente
 
-Para trabajo en `proyectos/politics-fantasy-league`, leer primero su [START_HERE](proyectos/politics-fantasy-league/START_HERE.md), [AGENTS](proyectos/politics-fantasy-league/AGENTS.md) y `PROJECT_STATE.json`. La solicitud del investigador del 30/10/2026 prioriza producto e investigación con objetivos separados, integración y continuidad entre chats. La política local sustituye en PFL la obligación de pedir más ciclos por fórmula y evita contar mantenimiento como investigación. Los protocolos científicos y saldos históricos se conservan; otros proyectos no cambian. Una rama conceptual de investigación no obliga a crear una rama Git.
+Politics Fantasy se desarrolla exclusivamente en [su repositorio](https://github.com/GalexY3/politics-fantasy-league), rama `main`. Leer allí [START_HERE](https://github.com/GalexY3/politics-fantasy-league/blob/main/START_HERE.md), AGENTS y PROJECT_STATE. El directorio antiguo solo contiene redirecciones; no escribir código, estado ni nuevos lotes de PFL en AB. La [política local](https://github.com/GalexY3/politics-fantasy-league/blob/main/docs/WORKING_AGREEMENT.md) preserva objetivos separados, saldos históricos y la excepción a pedir ciclos por fórmula. AB sigue siendo la referencia metodológica; el proyecto fija la revisión adoptada en METHOD_REFERENCE.json.
 
 Este repositorio es la autoridad metodológica del protocolo AB del investigador. Antes de crear o revisar campañas, leer **en este orden**:
 1. [README](README.md)

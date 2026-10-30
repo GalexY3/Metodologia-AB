@@ -1,20 +1,7 @@
-> **Continuidad y organización:** [empezar](START_HERE.md) · [dónde está cada cosa](PROJECT_MAP.md) · [investigaciones](research/INDEX.md) · [estado e hitos](PROJECT_STATE.json) · [prompt reutilizable](NEW_CHAT_PROMPT.md). La rama operativa estable es `integration/pfl`; la incorporación a main se comprueba en Git. Producto e investigación tienen objetivos y progreso distintos.
+# Politics Fantasy se ha trasladado
 
-# Politics Fantasy League
+**Continuar en [README.md](https://github.com/GalexY3/politics-fantasy-league/blob/main/README.md).**
 
-Laboratorio en desarrollo: juego local con fixtures ficticias, observatorio de fuentes y subinvestigaciones metodologicas. El avance contractual V4 es 36,90 %; las puertas de lanzamiento siguen 0/6. Las pruebas tecnicas no acreditan validez predictiva ni autorizan puntuaciones sobre personas reales.
+El repositorio canónico es [https://github.com/GalexY3/politics-fantasy-league](https://github.com/GalexY3/politics-fantasy-league); rama `main`. AB conserva el método y la historia anterior, sin copia activa del producto. No crear nuevos lotes, campañas ni cambios de PFL aquí.
 
-## Retomar trabajo
-
-- [Cola vigente y resultados Codex](tareas_codex/README.md).
-- [Estado y limites de Atlas](ab_atlas/CURRENT.md).
-- [Campana CODEX20 cerrada](research/ABH_CODEX20_20261029/CAMPAIGN.json): su ledger es la autoridad del saldo, no esta pagina.
-- [Catalogo de fuentes](docs/CATALOGO_FUENTES.md).
-- [Instrucciones del repositorio](../../AGENTS.md).
-- [Historial completo del proyecto](README_HISTORICO_HASTA_20261029.md), preservado con sus fechas, ramas y balances originales.
-
-## Verificacion local
-
-Desde la raiz del repositorio, usar los comandos del informe correspondiente y registrar el commit ensayado. Node tiene pruebas en tests/ y tambien en src/politics_fantasy/; no asumir que un unico glob las descubre todas. Comando Node desde raiz: `node proyectos/politics-fantasy-league/scripts/run_node_tests.mjs`. Python requiere los extras del pyproject del proyecto. Los controles POSIX y navegador deben reportarse por separado cuando el entorno no los permita.
-
-Los originales potencialmente nominativos permanecen en data/raw/ fuera de Git. Consultar cada manifiesto de captura, derechos y limites temporales antes de reutilizarlos. El linaje RELEASEPATH de PR44 tiene un registro de logros distinto; sus snapshots no sustituyen los de este linaje automaticamente.
+Leer el estado vigente en [START_HERE](https://github.com/GalexY3/politics-fantasy-league/blob/main/START_HERE.md) y [PROJECT_STATE.json](https://github.com/GalexY3/politics-fantasy-league/blob/main/PROJECT_STATE.json). La historia previa está fijada en la etiqueta `pfl-monorepo-final-20261030`; [informe del traslado](https://github.com/GalexY3/Metodologia-AB/blob/main/docs/PFL_REPOSITORY_MIGRATION_20261030.md).

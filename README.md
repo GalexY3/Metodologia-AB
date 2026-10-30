@@ -1,12 +1,12 @@
-# Metodología AB
+# Metodología AB · WIP
 
-**Para continuar Politics Fantasy:** empezar por [su entrada estable](proyectos/politics-fantasy-league/START_HERE.md). Su estado vivo, dos líneas de hitos y política de continuidad evitan reconstruir el proyecto desde conversaciones antiguas. PFL tiene una excepción local a la petición automática de nuevos ciclos; consultar su política antes de aplicar el resto del protocolo.
+**Politics Fantasy tiene repositorio propio desde el 30/10/2026.** [Migración y procedencia](docs/PFL_REPOSITORY_MIGRATION_20261030.md). Para continuarlo: empezar por [su entrada estable](https://github.com/GalexY3/politics-fantasy-league/blob/main/START_HERE.md). Su estado vivo, dos líneas de hitos y política de continuidad evitan reconstruir el proyecto desde conversaciones antiguas. PFL tiene una excepción local a la petición automática de nuevos ciclos; consultar su política antes de aplicar el resto del protocolo.
 
 Repositorio de la metodología de investigación abductivo-bayesiana **AB**, sus priors metodológicos y observaciones acumulativas. GitHub conserva el registro científico versionado; Drive es el archivo documental complementario. Los resultados sustantivos de cada proyecto conservan sus propios repositorios y ledgers.
 
 ## Protocolo portable de interacción con ChatGPT (lectura obligatoria)
 
-**[AB 3.2.1-O6 — campañas, informes, gráfica CT2 y autorización de ciclos](docs/AB_3_2_1_O6_CAMPANAS_INFORMES_CT2_Y_CICLOS.md)**. Las instancias que continúen una investigación AB deben seguir este contrato: ciclo A–J, CT2 1–100 por línea, escala DRIFT D0–D5, registro permanente de hallazgos 1/3, gráfica CT2 de escala completa y ampliada al cierre, y **solicitud final de 5–15 ciclos AB**, sin pedir otra vez bloques ya autorizados. Véase también **[AGENTS.md](AGENTS.md)** para el orden de lectura y recuperación en sesiones nuevas. Son reglas de presentación y gobernanza, no un método demostrado para alcanzar 2/3.
+**[AB 3.2.1-O6 — campañas, informes, gráfica CT2 y autorización de ciclos](docs/AB_3_2_1_O6_CAMPANAS_INFORMES_CT2_Y_CICLOS.md)**. Las instancias que continúen una investigación AB deben seguir este contrato: ciclo A–J, CT2 1–100 por línea, escala DRIFT D0–D5, registro permanente de hallazgos 1/3, gráfica CT2 de escala completa y ampliada al cierre, y **solicitud motivada según O6 y sus actualizaciones vigentes (5–30; PFL tiene política local)**, sin pedir otra vez bloques ya autorizados. Véase también **[AGENTS.md](AGENTS.md)** para el orden de lectura y recuperación en sesiones nuevas. Son reglas de presentación y gobernanza, no un método demostrado para alcanzar 2/3.
 
 
 **Actualización 28/10/2026:** el investigador sustituye el intervalo prospectivo de 20–45 por **5–15 ciclos por bloque**, pudiendo solicitar bloques sucesivos. **ChatRelay queda suspendido por defecto**; cualquier reactivación requiere justificación excepcional y decisión nueva. Los saldos y contratos históricos permanecen separados.
@@ -49,7 +49,7 @@ El [benchmark AB-E2E-01](benchmarks/AB_E2E_01/README.md) contiene un protocolo e
 ## Colaboración y trazabilidad
 
 - Registrar cambios informativos mediante commits descriptivos, preservando versiones y motivos de revisión.
-- Mantener privados estos materiales hasta una decisión humana de publicación; no incluir credenciales ni datos sin derechos de conservación.
+- Repositorio público por decisión del investigador; identificar los trabajos en curso y sus límites. No incluir credenciales ni datos locales/personales no destinados a publicación.
 - Enlazar informes extensos de Drive con repo, commit exacto, ciclos, fuentes y límites. Las discrepancias se resuelven mediante errata visible.
 - Registrar las mejoras propuestas en el observatorio con fuente, alcance, contraevidencia y falsador; una incorporación documental no autoriza una actualización normativa silenciosa.
 
@@ -73,6 +73,6 @@ El visor/prototipo v0.2 se entregó localmente en la conversación; **no se ha i
 
 - [Código completo y guía de AB Atlas](ab_atlas/README.md): modo AB-P/AB-H, HTML interactivo, CLI, pruebas y actualizaciones incrementales.
 - [Contrato de sincronización de bajo coste](ab_atlas/docs/AB_ATLAS_V03_CHATGPT_SYNC.md): al cierre de X ciclos AB, añadir solo un pequeño delta `ops`; recuperar `CURRENT.md` y subgrafo en vez de todo el historial.
-- [Mapa y estado inicial de Politics Fantasy](proyectos/politics-fantasy-league/ab_atlas/README.md): `seed.json`, visor autónomo, `updates/`, gates críticos y briefing corto.
+- [Mapa y estado inicial de Politics Fantasy](https://github.com/GalexY3/politics-fantasy-league/blob/main/ab_atlas/README.md): `seed.json`, visor autónomo, `updates/`, gates críticos y briefing corto.
 
 **Estado:** piloto operativo, con pruebas instrumentales locales; no mejora causalmente validada frente a herramientas competentes. AB sigue siendo mutable, autocorrectivo y sustituible.
