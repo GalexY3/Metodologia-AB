@@ -1,0 +1,701 @@
+{
+  "schema": "ESBM_V2_UNIT_INPUTS_V1",
+  "status": "PREPARED_NOT_RUN",
+  "historical_source": {
+    "path": "proyectos/mercados-de-pareja/research/ABR_ESBM20_20261028/esbm_dynamic.py",
+    "blob": "5fc9f63fd44ff81ce9ff6c900ba6bf24153356f2",
+    "sha256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+  },
+  "date": "2026-10-30",
+  "type": "MANUALLY_DERIVED_TOY_ORACLE_EXPECTATIONS",
+  "usage": "Independent small-N unit state injection, NOT directly runnable by unchanged original N=144 globals. Assertions are reviewed by source reading, not source-run verified. Freeze test cases BEFORE future generated original outcomes. No code executed.",
+  "float_tolerance": 1e-12,
+  "checks": [
+    {
+      "id": "UT01_SCOPE_GENERAL",
+      "module": "compatibility",
+      "input": {
+        "genders": [
+          "F",
+          "F",
+          "M",
+          "X"
+        ],
+        "scopes": [
+          "same",
+          "all",
+          "other",
+          "all"
+        ],
+        "mode": "general"
+      },
+      "expected": {
+        "eligible_unordered_pairs": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "no_self": true
+      }
+    },
+    {
+      "id": "UT02_SCOPE_FM_ONLY",
+      "module": "compatibility",
+      "input": {
+        "genders": [
+          "F",
+          "F",
+          "M",
+          "X"
+        ],
+        "scopes": [
+          "same",
+          "same",
+          "same",
+          "all"
+        ],
+        "mode": "FM_only"
+      },
+      "expected": {
+        "eligible_unordered_pairs": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "scopes_ignored": true
+      }
+    },
+    {
+      "id": "UT03_HAZARD",
+      "module": "dissolution",
+      "input": {
+        "t": 3,
+        "partner_pair": [
+          0,
+          1
+        ],
+        "start_tick": 1,
+        "norm": [
+          0,
+          1
+        ],
+        "age": [
+          20,
+          25
+        ],
+        "shock_at_t_i_lt_j": 0.2,
+        "variants": [
+          {
+            "hazard_mult": 1
+          },
+          {
+            "hazard_mult": 0.4
+          },
+          {
+            "hazard_mult": 10
+          }
+        ]
+      },
+      "expected": {
+        "base_h": 0.205,
+        "decisions": [
+          {
+            "h": 0.205,
+            "dissolve": true,
+            "duration": 2
+          },
+          {
+            "h": 0.082,
+            "dissolve": false
+          },
+          {
+            "h": 0.9,
+            "dissolve": true,
+            "duration": 2
+          }
+        ],
+        "directed_shock_orientation": "u_hazard[t,0,1]"
+      }
+    },
+    {
+      "id": "UT04_GUMBEL_ORDER",
+      "module": "exposure",
+      "input": {
+        "sender": 0,
+        "candidates_ascending": [
+          1,
+          2,
+          3
+        ],
+        "u_expose": [
+          0.9,
+          0.4,
+          0.7
+        ],
+        "K": 2,
+        "policy": "random"
+      },
+      "expected": {
+        "picks_in_actual_visit_order": [
+          3,
+          1
+        ],
+        "picks_not_descending": true,
+        "unique_scores": true
+      }
+    },
+    {
+      "id": "UT05_SAME_NORM_PRIORITY",
+      "module": "exposure",
+      "input": {
+        "sender_norm": 0,
+        "candidates_ascending": [
+          1,
+          2,
+          3
+        ],
+        "candidate_norms": [
+          1,
+          0,
+          1
+        ],
+        "u_expose": [
+          0.8,
+          0.5,
+          0.6
+        ],
+        "K": 1,
+        "policy": "same_norm"
+      },
+      "expected": {
+        "selected": [
+          2
+        ],
+        "score_expression_candidate2": "-log(-log(.5))+1.7",
+        "unique_scores": true
+      }
+    },
+    {
+      "id": "UT06_DIRECTED_SEND_REPLY",
+      "module": "proposal_and_response",
+      "input": {
+        "sender": 0,
+        "receiver": 1,
+        "age": [
+          22,
+          22
+        ],
+        "q": [
+          0.5,
+          0.5
+        ],
+        "norm": [
+          0,
+          0
+        ],
+        "same_pref": 0,
+        "private_bias": [
+          0,
+          0
+        ],
+        "public_score": [
+          0,
+          0
+        ],
+        "u_send_t_0_1": 0.25,
+        "u_reply_t_1_0": 0,
+        "u_reply_t_0_1": 0.99,
+        "private": false,
+        "public": false
+      },
+      "expected": {
+        "send_utility": -0.85,
+        "reply_utility": -0.85,
+        "probability_expression": "1/(1+exp(.85))",
+        "proposes": true,
+        "response_positive": true,
+        "uses_reverse_reply_index": true,
+        "mutual_directed": [
+          [
+            0,
+            1
+          ]
+        ],
+        "formed_yet": false
+      }
+    },
+    {
+      "id": "UT07_REJECTION_FEEDBACK",
+      "module": "proposal_sequential",
+      "input": {
+        "sender": 0,
+        "receivers_in_actual_order": [
+          1,
+          2
+        ],
+        "q": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "ages": [
+          20,
+          20,
+          20
+        ],
+        "norm": [
+          0,
+          0,
+          0
+        ],
+        "same_pref": 0,
+        "u_send_for_both": 0,
+        "u_reply_reverse_for_both": 0.99,
+        "initial_private_bias": 0,
+        "initial_public_score": 0,
+        "run_variants": [
+          {
+            "private": true,
+            "public": false
+          },
+          {
+            "private": false,
+            "public": true
+          }
+        ]
+      },
+      "expected": {
+        "proposals": 2,
+        "positive_responses": 0,
+        "private_only": {
+          "final_private_bias": 0.16,
+          "final_public_score": 0
+        },
+        "public_only": {
+          "final_private_bias": 0,
+          "final_public_score": -0.16
+        },
+        "updates_immediate": true
+      }
+    },
+    {
+      "id": "UT08_MATCH_CARDINALITY",
+      "module": "matching",
+      "input": {
+        "available": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "accepted_directed": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "u_match_undirected": [
+          {
+            "pair": [
+              0,
+              1
+            ],
+            "U": 0.9
+          },
+          {
+            "pair": [
+              0,
+              2
+            ],
+            "U": 0.2
+          },
+          {
+            "pair": [
+              1,
+              3
+            ],
+            "U": 0.1
+          }
+        ],
+        "weight_formula": "1+1e-4*u_match[t,min(i,j),max(i,j)]"
+      },
+      "expected": {
+        "chosen_unordered_pairs": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "cardinality": 2,
+        "unique_cardinality_two_solution": true,
+        "maximum_single_edge_not_optimal": true
+      }
+    },
+    {
+      "id": "UT09_COLLAPSE_DIRECTIONS",
+      "module": "matching",
+      "input": {
+        "available": [
+          0,
+          1
+        ],
+        "accepted_directed": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "u_match_t_0_1": 0.2
+      },
+      "expected": {
+        "positive_responses": 2,
+        "unique_candidate_edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "new_pairs": 1,
+        "active_pairs": 1
+      }
+    },
+    {
+      "id": "UT10_TICK0_TWO_ACTORS",
+      "module": "complete_toy_tick",
+      "input": {
+        "N": 2,
+        "STEPS": 1,
+        "K": 1,
+        "config": {
+          "compat": "general",
+          "policy": "random",
+          "same_pref": 0,
+          "private": false,
+          "public": false,
+          "hazard_mult": 1
+        },
+        "people": {
+          "genders": [
+            "F",
+            "M"
+          ],
+          "scopes": [
+            "all",
+            "all"
+          ],
+          "norm": [
+            0,
+            0
+          ],
+          "q": [
+            0.5,
+            0.5
+          ],
+          "age": [
+            22,
+            22
+          ]
+        },
+        "u_send_t0": [
+          [
+            0.99,
+            0
+          ],
+          [
+            0.99,
+            0.99
+          ]
+        ],
+        "u_reply_t0": [
+          [
+            0.99,
+            0.99
+          ],
+          [
+            0,
+            0.99
+          ]
+        ],
+        "u_hazard_t0": [
+          [
+            0.99,
+            0.99
+          ],
+          [
+            0.99,
+            0.99
+          ]
+        ],
+        "u_expose_t0": [
+          [
+            0.5,
+            0.5
+          ],
+          [
+            0.5,
+            0.5
+          ]
+        ],
+        "u_match_t0": [
+          [
+            0.5,
+            0.2
+          ],
+          [
+            0.2,
+            0.5
+          ]
+        ]
+      },
+      "expected": {
+        "ordered_directed_events": [
+          [
+            "exposure",
+            0,
+            1
+          ],
+          [
+            "proposal",
+            0,
+            1
+          ],
+          [
+            "positive_response",
+            0,
+            1
+          ],
+          [
+            "exposure",
+            1,
+            0
+          ]
+        ],
+        "formed_unordered_pairs": [
+          [
+            0,
+            1
+          ]
+        ],
+        "track": [
+          {
+            "t": 0,
+            "singles": 2,
+            "risk_edges": 1,
+            "impressions": 2,
+            "proposals": 1,
+            "reciprocals": 1,
+            "new_pairs": 1,
+            "active_pairs": 1
+          }
+        ],
+        "seen": [
+          1,
+          1
+        ],
+        "partner": [
+          1,
+          0
+        ],
+        "start": [
+          0,
+          0
+        ],
+        "formed": 1,
+        "dissolved": 0,
+        "active_pairs": 1,
+        "total_impressions": 2,
+        "total_proposals": 1,
+        "total_positive_responses": 1,
+        "right_censored_count": 1
+      }
+    },
+    {
+      "id": "UT11_TICK1_DISSOLVE",
+      "module": "complete_toy_2ticks",
+      "input": {
+        "run": "UT10_TICK0_TWO_ACTORS but STEPS=2",
+        "t1": {
+          "u_send": [
+            [
+              0.99,
+              0.99
+            ],
+            [
+              0.99,
+              0.99
+            ]
+          ],
+          "u_reply": [
+            [
+              0.99,
+              0.99
+            ],
+            [
+              0.99,
+              0.99
+            ]
+          ],
+          "u_hazard": [
+            [
+              0.99,
+              0
+            ],
+            [
+              0.99,
+              0.99
+            ]
+          ],
+          "u_expose": [
+            [
+              0.5,
+              0.5
+            ],
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          "u_match": [
+            [
+              0.5,
+              0.2
+            ],
+            [
+              0.2,
+              0.5
+            ]
+          ]
+        }
+      },
+      "expected": {
+        "at_t1_dissolutions": [
+          [
+            0,
+            1
+          ]
+        ],
+        "t1_track": {
+          "t": 1,
+          "singles": 2,
+          "risk_edges": 1,
+          "impressions": 2,
+          "proposals": 0,
+          "reciprocals": 0,
+          "new_pairs": 0,
+          "active_pairs": 0
+        },
+        "final": {
+          "formed": 1,
+          "dissolved": 1,
+          "active_pairs": 0,
+          "total_impressions": 4,
+          "total_proposals": 1,
+          "total_positive_responses": 1,
+          "duration_completed_n": 1,
+          "duration_completed_mean": 1,
+          "right_censored_count": 0,
+          "partner": [
+            -1,
+            -1
+          ],
+          "start": [
+            -1,
+            -1
+          ]
+        }
+      }
+    },
+    {
+      "id": "UT12_MATCHING_TIE_DIAGNOSTIC",
+      "module": "matching",
+      "input": {
+        "available": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "accepted_directed": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "u_match_all": 0.5
+      },
+      "expected": {
+        "status": "MATCH_TIE_DIAGNOSTIC_NOT_EXACT_PAIR_ACCEPTANCE",
+        "max_cardinality": 2,
+        "solutions_include": [
+          [
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              3
+            ]
+          ]
+        ],
+        "do_not_assume_NetworkX_pair_choice": true
+      }
+    }
+  ]
+}
