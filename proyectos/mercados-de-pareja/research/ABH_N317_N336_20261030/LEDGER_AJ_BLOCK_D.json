@@ -1,0 +1,357 @@
+{
+  "schema": "ABH_N317_N336_AJ_POSTOUTCOME",
+  "authorized": 20,
+  "executed": 20,
+  "valid_technical": 20,
+  "scientific_n1": 0,
+  "scientific_n2": 0,
+  "scientific_n3": 0,
+  "invalid": 0,
+  "remaining": 0,
+  "CT2_before": 7,
+  "CT2_after": 7,
+  "STOP_R5_human": true,
+  "contracts": [
+    {
+      "id": "N332",
+      "pre_outcome_AJ_contract": "PREREG_AJ_SHA_FREEZE.json:contracts[15]",
+      "pre_outcome_commit": "f69b629c404b3325817b569d7e0dd0f0acdae375",
+      "A": {
+        "estimand": "¿Vinculación irreversible afecta ciclos/bloqueantes frente a rematching?",
+        "unit": "synthetic bipartite matching market",
+        "human_outcome": false
+      },
+      "B": {
+        "competent_comparators": [
+          "Deferred acceptance",
+          "Bipartite max weight/cardinality",
+          "Exhaustive oracle or MILP where specified"
+        ],
+        "null": "No discriminating difference"
+      },
+      "C": {
+        "experimental_plan": "Frozen in initial prereg; use prescribed seeds and no adaptive reselection",
+        "falsifier": "Independent stability, feasibility, welfare or equivalence check fails"
+      },
+      "D": {
+        "code_sha256": {
+          "ORIGINAL_ESBM_UNMODIFIED.py": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+          "market_lab.py": "f202e790705dd0d48724dcbcb67356b4f2075c0a82d4b44c1a9d434851bb6e21",
+          "run_cycles.py": "13d5e89d9a9adfb3c5f2f8d9c5a8480b3dfe71b7dd23b816bccca4a4dc63f24b"
+        },
+        "source_archive_sha256": "d4687db70c1b79801b0d4b27c38363184f3ef9f4ea4be9903e41ab1c4c65a93d",
+        "frozen_manifest_sha256": "1b5bbb67d5cf2e74fad93c898d9dd51c378925ef6f85af6923ff60ced982dc9f"
+      },
+      "E": {
+        "executed": true,
+        "receipt_sha256": "88ae1e0ede4a01a2f4ef1ba6331bcf1ccb11350f600ec507eba2012e035ba869",
+        "elapsed_s": 0.21420150700032536,
+        "result_summary": {
+          "binding_not_assumed_to_reach_stability": true
+        },
+        "frozen_inputs_comparison": true
+      },
+      "F": {
+        "adversarial_check": "Eligibility/stability invariants in cycle; post hoc 168 independent enumerations and two mutants in AUDIT_POSTOUTCOME.json",
+        "negative_result_recorded": false,
+        "execution_exception": false
+      },
+      "G": {
+        "independent_external_human_evidence": false,
+        "software_oracle_scope": "Small graph MILP/DP or separate block census when applicable",
+        "human_holdout": false
+      },
+      "H": {
+        "prior_update": "U205",
+        "direction": "NO_CHANGE_WITH_REASON_FOR_HUMAN",
+        "numerical_bayesian_update": false
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "grade_scientific": "0/3",
+        "ethics": "Synthetic only; no humans"
+      },
+      "J": {
+        "technical_disposition": "PASS_LOCAL_QA_NOT_HUMAN",
+        "slot_spent_once": true,
+        "slots_left_after": 4,
+        "decision": "CLOSE_TECHNICAL_KEEP_R5_STOP"
+      }
+    },
+    {
+      "id": "N333",
+      "pre_outcome_AJ_contract": "PREREG_AJ_SHA_FREEZE.json:contracts[16]",
+      "pre_outcome_commit": "f69b629c404b3325817b569d7e0dd0f0acdae375",
+      "A": {
+        "estimand": "¿Invariancia al orden de proponentes ante preferencias estrictas?",
+        "unit": "synthetic bipartite matching market",
+        "human_outcome": false
+      },
+      "B": {
+        "competent_comparators": [
+          "Deferred acceptance",
+          "Bipartite max weight/cardinality",
+          "Exhaustive oracle or MILP where specified"
+        ],
+        "null": "No discriminating difference"
+      },
+      "C": {
+        "experimental_plan": "Frozen in initial prereg; use prescribed seeds and no adaptive reselection",
+        "falsifier": "Independent stability, feasibility, welfare or equivalence check fails"
+      },
+      "D": {
+        "code_sha256": {
+          "ORIGINAL_ESBM_UNMODIFIED.py": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+          "market_lab.py": "f202e790705dd0d48724dcbcb67356b4f2075c0a82d4b44c1a9d434851bb6e21",
+          "run_cycles.py": "13d5e89d9a9adfb3c5f2f8d9c5a8480b3dfe71b7dd23b816bccca4a4dc63f24b"
+        },
+        "source_archive_sha256": "d4687db70c1b79801b0d4b27c38363184f3ef9f4ea4be9903e41ab1c4c65a93d",
+        "frozen_manifest_sha256": "1b5bbb67d5cf2e74fad93c898d9dd51c378925ef6f85af6923ff60ced982dc9f"
+      },
+      "E": {
+        "executed": true,
+        "receipt_sha256": "c43eace01dfa407fd10e4b42a89d24f5f1b0d7580486d6388ba4a965a4382bf3",
+        "elapsed_s": 0.01875406399994972,
+        "result_summary": {
+          "all_da_outcomes_proposer_order_invariant": true
+        },
+        "frozen_inputs_comparison": true
+      },
+      "F": {
+        "adversarial_check": "Eligibility/stability invariants in cycle; post hoc 168 independent enumerations and two mutants in AUDIT_POSTOUTCOME.json",
+        "negative_result_recorded": false,
+        "execution_exception": false
+      },
+      "G": {
+        "independent_external_human_evidence": false,
+        "software_oracle_scope": "Small graph MILP/DP or separate block census when applicable",
+        "human_holdout": false
+      },
+      "H": {
+        "prior_update": "U205",
+        "direction": "NO_CHANGE_WITH_REASON_FOR_HUMAN",
+        "numerical_bayesian_update": false
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "grade_scientific": "0/3",
+        "ethics": "Synthetic only; no humans"
+      },
+      "J": {
+        "technical_disposition": "PASS_LOCAL_QA_NOT_HUMAN",
+        "slot_spent_once": true,
+        "slots_left_after": 3,
+        "decision": "CLOSE_TECHNICAL_KEEP_R5_STOP"
+      }
+    },
+    {
+      "id": "N334",
+      "pre_outcome_AJ_contract": "PREREG_AJ_SHA_FREEZE.json:contracts[17]",
+      "pre_outcome_commit": "f69b629c404b3325817b569d7e0dd0f0acdae375",
+      "A": {
+        "estimand": "¿DA es estable frente a enumerador independiente de permutaciones n4?",
+        "unit": "synthetic bipartite matching market",
+        "human_outcome": false
+      },
+      "B": {
+        "competent_comparators": [
+          "Deferred acceptance",
+          "Bipartite max weight/cardinality",
+          "Exhaustive oracle or MILP where specified"
+        ],
+        "null": "No discriminating difference"
+      },
+      "C": {
+        "experimental_plan": "Frozen in initial prereg; use prescribed seeds and no adaptive reselection",
+        "falsifier": "Independent stability, feasibility, welfare or equivalence check fails"
+      },
+      "D": {
+        "code_sha256": {
+          "ORIGINAL_ESBM_UNMODIFIED.py": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+          "market_lab.py": "f202e790705dd0d48724dcbcb67356b4f2075c0a82d4b44c1a9d434851bb6e21",
+          "run_cycles.py": "13d5e89d9a9adfb3c5f2f8d9c5a8480b3dfe71b7dd23b816bccca4a4dc63f24b"
+        },
+        "source_archive_sha256": "d4687db70c1b79801b0d4b27c38363184f3ef9f4ea4be9903e41ab1c4c65a93d",
+        "frozen_manifest_sha256": "1b5bbb67d5cf2e74fad93c898d9dd51c378925ef6f85af6923ff60ced982dc9f"
+      },
+      "E": {
+        "executed": true,
+        "receipt_sha256": "c1ea5f9a80c5fa849394ac7dbd9c3b48a53b4931c674b7de7885456448f9c7b7",
+        "elapsed_s": 0.03468937400020877,
+        "result_summary": {
+          "stable_count_distribution": {
+            "1": 17,
+            "2": 3
+          }
+        },
+        "frozen_inputs_comparison": true
+      },
+      "F": {
+        "adversarial_check": "Eligibility/stability invariants in cycle; post hoc 168 independent enumerations and two mutants in AUDIT_POSTOUTCOME.json",
+        "negative_result_recorded": false,
+        "execution_exception": false
+      },
+      "G": {
+        "independent_external_human_evidence": false,
+        "software_oracle_scope": "Small graph MILP/DP or separate block census when applicable",
+        "human_holdout": false
+      },
+      "H": {
+        "prior_update": "U205",
+        "direction": "NO_CHANGE_WITH_REASON_FOR_HUMAN",
+        "numerical_bayesian_update": false
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "grade_scientific": "0/3",
+        "ethics": "Synthetic only; no humans"
+      },
+      "J": {
+        "technical_disposition": "PASS_LOCAL_QA_NOT_HUMAN",
+        "slot_spent_once": true,
+        "slots_left_after": 2,
+        "decision": "CLOSE_TECHNICAL_KEEP_R5_STOP"
+      }
+    },
+    {
+      "id": "N335",
+      "pre_outcome_AJ_contract": "PREREG_AJ_SHA_FREEZE.json:contracts[18]",
+      "pre_outcome_commit": "f69b629c404b3325817b569d7e0dd0f0acdae375",
+      "A": {
+        "estimand": "¿Convergen tres oráculos de maxcardinal welfare n7 (DP, MILP, NetworkX)?",
+        "unit": "synthetic bipartite matching market",
+        "human_outcome": false
+      },
+      "B": {
+        "competent_comparators": [
+          "Deferred acceptance",
+          "Bipartite max weight/cardinality",
+          "Exhaustive oracle or MILP where specified"
+        ],
+        "null": "No discriminating difference"
+      },
+      "C": {
+        "experimental_plan": "Frozen in initial prereg; use prescribed seeds and no adaptive reselection",
+        "falsifier": "Independent stability, feasibility, welfare or equivalence check fails"
+      },
+      "D": {
+        "code_sha256": {
+          "ORIGINAL_ESBM_UNMODIFIED.py": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+          "market_lab.py": "f202e790705dd0d48724dcbcb67356b4f2075c0a82d4b44c1a9d434851bb6e21",
+          "run_cycles.py": "13d5e89d9a9adfb3c5f2f8d9c5a8480b3dfe71b7dd23b816bccca4a4dc63f24b"
+        },
+        "source_archive_sha256": "d4687db70c1b79801b0d4b27c38363184f3ef9f4ea4be9903e41ab1c4c65a93d",
+        "frozen_manifest_sha256": "1b5bbb67d5cf2e74fad93c898d9dd51c378925ef6f85af6923ff60ced982dc9f"
+      },
+      "E": {
+        "executed": true,
+        "receipt_sha256": "334017bd699bee831b68470f5573b8c6b34f5fd9cb40b2d24db4bc4b115eaaf1",
+        "elapsed_s": 0.13516914399997404,
+        "result_summary": {
+          "independent_exact_solvers_agree": true
+        },
+        "frozen_inputs_comparison": true
+      },
+      "F": {
+        "adversarial_check": "Eligibility/stability invariants in cycle; post hoc 168 independent enumerations and two mutants in AUDIT_POSTOUTCOME.json",
+        "negative_result_recorded": false,
+        "execution_exception": false
+      },
+      "G": {
+        "independent_external_human_evidence": false,
+        "software_oracle_scope": "Small graph MILP/DP or separate block census when applicable",
+        "human_holdout": false
+      },
+      "H": {
+        "prior_update": "U205",
+        "direction": "NO_CHANGE_WITH_REASON_FOR_HUMAN",
+        "numerical_bayesian_update": false
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "grade_scientific": "0/3",
+        "ethics": "Synthetic only; no humans"
+      },
+      "J": {
+        "technical_disposition": "PASS_LOCAL_QA_NOT_HUMAN",
+        "slot_spent_once": true,
+        "slots_left_after": 1,
+        "decision": "CLOSE_TECHNICAL_KEEP_R5_STOP"
+      }
+    },
+    {
+      "id": "N336",
+      "pre_outcome_AJ_contract": "PREREG_AJ_SHA_FREEZE.json:contracts[19]",
+      "pre_outcome_commit": "f69b629c404b3325817b569d7e0dd0f0acdae375",
+      "A": {
+        "estimand": "¿El peso cardinal transforma asignación central sin alterar DA ordinal?",
+        "unit": "synthetic bipartite matching market",
+        "human_outcome": false
+      },
+      "B": {
+        "competent_comparators": [
+          "Deferred acceptance",
+          "Bipartite max weight/cardinality",
+          "Exhaustive oracle or MILP where specified"
+        ],
+        "null": "No discriminating difference"
+      },
+      "C": {
+        "experimental_plan": "Frozen in initial prereg; use prescribed seeds and no adaptive reselection",
+        "falsifier": "Independent stability, feasibility, welfare or equivalence check fails"
+      },
+      "D": {
+        "code_sha256": {
+          "ORIGINAL_ESBM_UNMODIFIED.py": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+          "market_lab.py": "f202e790705dd0d48724dcbcb67356b4f2075c0a82d4b44c1a9d434851bb6e21",
+          "run_cycles.py": "13d5e89d9a9adfb3c5f2f8d9c5a8480b3dfe71b7dd23b816bccca4a4dc63f24b"
+        },
+        "source_archive_sha256": "d4687db70c1b79801b0d4b27c38363184f3ef9f4ea4be9903e41ab1c4c65a93d",
+        "frozen_manifest_sha256": "1b5bbb67d5cf2e74fad93c898d9dd51c378925ef6f85af6923ff60ced982dc9f"
+      },
+      "E": {
+        "executed": true,
+        "receipt_sha256": "1a5fd427f76a3bcca6de3dcfaa56bd64c52a5604aad32410a7d763c3c3383679",
+        "elapsed_s": 0.06551921499976743,
+        "result_summary": {
+          "central_changes_on_cardinal_scale": 15
+        },
+        "frozen_inputs_comparison": true
+      },
+      "F": {
+        "adversarial_check": "Eligibility/stability invariants in cycle; post hoc 168 independent enumerations and two mutants in AUDIT_POSTOUTCOME.json",
+        "negative_result_recorded": false,
+        "execution_exception": false
+      },
+      "G": {
+        "independent_external_human_evidence": false,
+        "software_oracle_scope": "Small graph MILP/DP or separate block census when applicable",
+        "human_holdout": false
+      },
+      "H": {
+        "prior_update": "U205",
+        "direction": "NO_CHANGE_WITH_REASON_FOR_HUMAN",
+        "numerical_bayesian_update": false
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "grade_scientific": "0/3",
+        "ethics": "Synthetic only; no humans"
+      },
+      "J": {
+        "technical_disposition": "PASS_LOCAL_QA_NOT_HUMAN",
+        "slot_spent_once": true,
+        "slots_left_after": 0,
+        "decision": "CLOSE_TECHNICAL_KEEP_R5_STOP"
+      }
+    }
+  ],
+  "part": 4,
+  "total_parts": 4,
+  "complete_ledger_library_sha256": "c7ee1c565ab6edf22b07ceb90349beeec56ab93778d4d26df5ac558bdb324481"
+}
