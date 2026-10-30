@@ -1,0 +1,357 @@
+{
+  "schema": "AB_O7_GRAPH_N187_N206",
+  "date": "2026-10-30",
+  "branch": "research/ab-h-esbm-rival-parity-20261030",
+  "nodes": [
+    {
+      "id": "ESBM_RIVAL_PARITY",
+      "type": "program",
+      "mode": "AB-H",
+      "status": "TECHNICAL_EXECUTED",
+      "label": "N187–N206 equal-opportunity SRM/B6 synthetic benchmark"
+    },
+    {
+      "id": "N187",
+      "type": "AB_cycle",
+      "mode": "AB-H",
+      "status": "PASS_TECHNICAL",
+      "grade": "0/3",
+      "human_rows": 0
+    },
+    {
+      "id": "N188",
+      "type": "AB_cycle",
+      "mode": "AB-H",
+      "status": "PASS_TECHNICAL",
+      "grade": "0/3",
+      "human_rows": 0
+    },
+    {
+      "id": "N189",
+      "type": "AB_cycle",
+      "mode": "AB-H",
+      "status": "PASS_TECHNICAL",
+      "grade": "0/3",
+      "human_rows": 0
+    },
+    {
+      "id": "N190",
+      "type": "AB_cycle",
+      "mode": "AB-H",
+      "status": "PASS_TECHNICAL",
+      "grade": "0/3",
+      "human_rows": 0
+    },
+    {
+      "id": "N191",
+      "type": "AB_cycle",
+      "mode": "AB-H",
+      "status": "PASS_TECHNICAL",
+      "grade": "0/3",
+      "human_rows": 0
+    },
+    {
+      "id": "N192",
+      "type": "AB_cycle",
+      "mode": "AB-H",
+      "status": "PASS_TECHNICAL",
+      "grade": "0/3",
+      "human_rows": 0
+    },
+    {
+      "id": "N193",
+      "type": "AB_cycle",
+      "mode": "AB-H",
+      "status": "PASS_TECHNICAL",
+      "grade": "0/3",
+      "human_rows": 0
+    },
+    {
+      "id": "N194",
+      "type": "AB_cycle",
+      "mode": "AB-H",
+      "status": "PASS_TECHNICAL",
+      "grade": "0/3",
+      "human_rows": 0
+    },
+    {
+      "id": "N195",
+      "type": "AB_cycle",
+      "mode": "AB-H",
+      "status": "PASS_TECHNICAL",
+      "grade": "0/3",
+      "human_rows": 0
+    },
+    {
+      "id": "N196",
+      "type": "AB_cycle",
+      "mode": "AB-H",
+      "status": "PASS_TECHNICAL",
+      "grade": "0/3",
+      "human_rows": 0
+    },
+    {
+      "id": "N197",
+      "type": "AB_cycle",
+      "mode": "AB-H",
+      "status": "PASS_TECHNICAL",
+      "grade": "0/3",
+      "human_rows": 0
+    },
+    {
+      "id": "N198",
+      "type": "AB_cycle",
+      "mode": "AB-H",
+      "status": "PASS_TECHNICAL",
+      "grade": "0/3",
+      "human_rows": 0
+    },
+    {
+      "id": "N199",
+      "type": "AB_cycle",
+      "mode": "AB-H",
+      "status": "PASS_TECHNICAL",
+      "grade": "0/3",
+      "human_rows": 0
+    },
+    {
+      "id": "N200",
+      "type": "AB_cycle",
+      "mode": "AB-H",
+      "status": "PASS_TECHNICAL",
+      "grade": "0/3",
+      "human_rows": 0
+    },
+    {
+      "id": "N201",
+      "type": "AB_cycle",
+      "mode": "AB-H",
+      "status": "PASS_TECHNICAL",
+      "grade": "0/3",
+      "human_rows": 0
+    },
+    {
+      "id": "N202",
+      "type": "AB_cycle",
+      "mode": "AB-H",
+      "status": "VALID_DOCUMENTARY_NO_GO",
+      "grade": "0/3",
+      "human_rows": 0
+    },
+    {
+      "id": "N203",
+      "type": "AB_cycle",
+      "mode": "AB-H",
+      "status": "PASS_TECHNICAL",
+      "grade": "0/3",
+      "human_rows": 0
+    },
+    {
+      "id": "N204",
+      "type": "AB_cycle",
+      "mode": "AB-H",
+      "status": "PASS_TECHNICAL",
+      "grade": "0/3",
+      "human_rows": 0
+    },
+    {
+      "id": "N205",
+      "type": "AB_cycle",
+      "mode": "AB-H",
+      "status": "PASS_TECHNICAL",
+      "grade": "0/3",
+      "human_rows": 0
+    },
+    {
+      "id": "N206",
+      "type": "AB_cycle",
+      "mode": "AB-H",
+      "status": "PASS_TECHNICAL",
+      "grade": "0/3",
+      "human_rows": 0
+    },
+    {
+      "id": "SRC109",
+      "type": "source",
+      "label": "Hoffmann 2024 original native bilateral paper — rights unverified",
+      "status": "DOC_ONLY"
+    },
+    {
+      "id": "STOP_R5",
+      "type": "gate",
+      "label": "No original independently usable two votes/riskset with rights",
+      "status": "STOP"
+    },
+    {
+      "id": "B6STAR",
+      "type": "competent_rival",
+      "label": "Universal history-conditional representation",
+      "status": "UNTESTED_FULL_COVERAGE"
+    }
+  ],
+  "edges": [
+    {
+      "from": "ESBM_RIVAL_PARITY",
+      "to": "N187",
+      "kind": "START"
+    },
+    {
+      "from": "N187",
+      "to": "N188",
+      "kind": "NEXT_CONDITIONAL"
+    },
+    {
+      "from": "N188",
+      "to": "N189",
+      "kind": "NEXT_CONDITIONAL"
+    },
+    {
+      "from": "N189",
+      "to": "N190",
+      "kind": "NEXT_CONDITIONAL"
+    },
+    {
+      "from": "N190",
+      "to": "N191",
+      "kind": "NEXT_CONDITIONAL"
+    },
+    {
+      "from": "N191",
+      "to": "N192",
+      "kind": "DISTINCT_ADVERSARIAL_BLOCK"
+    },
+    {
+      "from": "N192",
+      "to": "N193",
+      "kind": "NEXT_CONDITIONAL"
+    },
+    {
+      "from": "N193",
+      "to": "N194",
+      "kind": "NEXT_CONDITIONAL"
+    },
+    {
+      "from": "N194",
+      "to": "N195",
+      "kind": "NEXT_CONDITIONAL"
+    },
+    {
+      "from": "N195",
+      "to": "N196",
+      "kind": "NEXT_CONDITIONAL"
+    },
+    {
+      "from": "N196",
+      "to": "N197",
+      "kind": "DISTINCT_ADVERSARIAL_BLOCK"
+    },
+    {
+      "from": "N197",
+      "to": "N198",
+      "kind": "NEXT_CONDITIONAL"
+    },
+    {
+      "from": "N198",
+      "to": "N199",
+      "kind": "NEXT_CONDITIONAL"
+    },
+    {
+      "from": "N199",
+      "to": "N200",
+      "kind": "NEXT_CONDITIONAL"
+    },
+    {
+      "from": "N200",
+      "to": "N201",
+      "kind": "NEXT_CONDITIONAL"
+    },
+    {
+      "from": "N201",
+      "to": "N202",
+      "kind": "DISTINCT_ADVERSARIAL_BLOCK"
+    },
+    {
+      "from": "N202",
+      "to": "N203",
+      "kind": "NEXT_CONDITIONAL"
+    },
+    {
+      "from": "N203",
+      "to": "N204",
+      "kind": "NEXT_CONDITIONAL"
+    },
+    {
+      "from": "N204",
+      "to": "N205",
+      "kind": "NEXT_CONDITIONAL"
+    },
+    {
+      "from": "N205",
+      "to": "N206",
+      "kind": "NEXT_CONDITIONAL"
+    },
+    {
+      "from": "N202",
+      "to": "SRC109",
+      "kind": "PRIMARY_METADATA_NEW"
+    },
+    {
+      "from": "SRC109",
+      "to": "STOP_R5",
+      "kind": "BLOCKED_RIGHTS"
+    },
+    {
+      "from": "ESBM_RIVAL_PARITY",
+      "to": "B6STAR",
+      "kind": "NO_FULL_SATURATED_B6_EVALUATION"
+    },
+    {
+      "from": "ESBM_RIVAL_PARITY",
+      "to": "STOP_R5",
+      "kind": "NO_EXTERNAL_HUMAN_HOLDOUT"
+    }
+  ],
+  "receipts": {
+    "authorized": 20,
+    "valid_technical_PASS": 19,
+    "valid_documentary_no_go": 1,
+    "invalid_completed": 0,
+    "invalid_instrument_before_outcomes": 1,
+    "planning": 0,
+    "remaining": 0,
+    "SOURCES": 109,
+    "PRIORS": 34,
+    "UPDATES": 192,
+    "CT2_scientific": 7,
+    "maturity_subjective": 43.8,
+    "human_R5": "STOP",
+    "human_data_rows_new": 0,
+    "science_grade_new": "0/3"
+  },
+  "complaints": [
+    {
+      "type": "no fully hierarchical dyadic SRM",
+      "status": "OPEN"
+    },
+    {
+      "type": "B6* saturated able to represent same observational law",
+      "status": "OPEN_FOR_EXCLUSIVE_CLAIM"
+    },
+    {
+      "type": "positive controls sampled labels on old exposure risksets",
+      "status": "RESTRICTED_TO_PREDICTIVE_POWER"
+    },
+    {
+      "type": "N187 IndentationError before first simulation",
+      "status": "PREREG_REPAIR"
+    },
+    {
+      "type": "Hoffmann new paper source original native yes/no but no verified file rights",
+      "status": "STOP_R5"
+    },
+    {
+      "type": "Node independent training shares OS/input data",
+      "status": "NO_EXTERNAL_GENERATOR_REPLICATION"
+    }
+  ]
+}
