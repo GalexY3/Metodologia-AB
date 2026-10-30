@@ -1,0 +1,35 @@
+name: PFL R0 original public institutional petition descriptive one-shot
+on:
+  push:
+    branches:
+      - feature/pfl-p1-accounts
+    paths:
+      - .github/workflows/pfl-r0-petitions-original-one-shot.yml
+permissions:
+  contents: read
+concurrency:
+  group: pfl-r0-20261030-one-original
+  cancel-in-progress: true
+jobs:
+  original-petitions-descriptive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Verify frozen prereg and code before sampling original open dataset
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd proyectos/politics-fantasy-league
+          test "$(git hash-object research/R0_INSTITUTIONAL_PETITIONS_20261030/petition_documentation_audit.py)" = 42383b26989674d445acd144defce8c62b62657d
+          test "$(git hash-object tests/test_petition_documentation_audit.py)" = 6ce385bde631ff305cf05d7f5b99a0d6334dafb2
+          python -m pip show pytest >/dev/null 2>&1 || python -m pip install -q pytest
+          PYTHONPATH=src python -m pytest -q tests/test_petition_documentation_audit.py
+          curl --fail --silent --show-error --location --max-time 60 --retry 0 \
+            'https://www.data.gouv.fr/api/1/datasets/r/c94c9dfe-23eb-45aa-acd1-7438c4e977db' \
+            --output /tmp/pfl-fr-petitions-source.csv
+          test "$(wc -c </tmp/pfl-fr-petitions-source.csv)" -le 16000000
+          python research/R0_INSTITUTIONAL_PETITIONS_20261030/petition_documentation_audit.py /tmp/pfl-fr-petitions-source.csv
+          echo PFL_R0_OFFICIAL_OPEN_PETITIONS_ORIGINAL_READ_PASS
