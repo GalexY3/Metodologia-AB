@@ -1,0 +1,536 @@
+{
+  "schema": "ABH_N167_N186_AJ_LEDGER_A",
+  "branch": "research/ab-h-esbm-adversarial-benchmark-20261030",
+  "date": "2026-10-30",
+  "prereg": "proyectos/mercados-de-pareja/research/ABH_N167_N186_20261030/PREREG_A.json",
+  "prereg_commit": "613bfa643fc6cff8b86ff6bb2d82c5635eb20417",
+  "result_index": "proyectos/mercados-de-pareja/research/ABH_N167_N186_20261030/RESULTS_INDEX.json",
+  "cycles": [
+    {
+      "id": "N167",
+      "parent": "N166",
+      "mode": "FOCUS",
+      "drift_D": {
+        "code": "Python source SHA256 frozen by GitHub prereg+separate frozen code manifest before outcomes",
+        "environment": "Python 3.13.5, numpy 2.3.5, sklearn 1.8.0, networkx 3.6.1",
+        "seeds": "train=7100..7159, test=8100..8139"
+      },
+      "A": {
+        "question": "Create an event-level synthetic prospective proposal dataset from actual ESBM event logs",
+        "estimand": "out-of-seed synthetic proposal yes/no logloss Brier; no human prediction"
+      },
+      "B": {
+        "rivals": [
+          "B0 prevalence",
+          "B1 demographic age/norm",
+          "B2 q,age,norm logistic",
+          "B4 temporal-exposure logistic",
+          "B6 nonlinear gradient boosting",
+          "ESBM oracle uses true generating parameter and prior negative-response state"
+        ],
+        "null": "No loss advantage or collapsed baseline, including shuffled null"
+      },
+      "C": {
+        "falsifier": "All proposals correspond to previously exposed directed dyads, every row has a pre-outcome feature state, no future information, reconcile counts",
+        "rule": "Failure or incomplete outcomes count INVALID, retain null/signs and seed-level losses, no retrospective model changes"
+      },
+      "D": {
+        "code": "Python source SHA256 frozen by GitHub prereg+separate frozen code manifest before outcomes",
+        "environment": "Python 3.13.5, numpy 2.3.5, sklearn 1.8.0, networkx 3.6.1",
+        "seeds": "train=7100..7159, test=8100..8139",
+        "source_sha256": "beab33082fa062e6c3abb510b3f4716b9d446380d6a2d213d1fb96251f5fcefa",
+        "prereg_commit": "613bfa643fc6cff8b86ff6bb2d82c5635eb20417",
+        "code_freeze_commits": [
+          "dcf9f8b5b230424a0aded31f9a9cd8786aede980",
+          "db4b418cf61286f19e7b89a4d82356f2d247ce95"
+        ],
+        "before_outcome": true
+      },
+      "E": {
+        "execution_status": "PASS",
+        "observed": {
+          "train_exposures": 3608,
+          "test_exposures": 2365,
+          "train_seed_count": 60,
+          "test_seed_count": 40
+        },
+        "actual_rows_processed": "SYNTHETIC_PROPOSAL_OR_CONDITIONAL_ONLY",
+        "human_raw_rows": 0,
+        "source_receipt": "d173f4ef4e1648f977b100e5c6700bd2d00a7b9e8a751ac7a7428c29215deebe"
+      },
+      "F": {
+        "adversarial": {
+          "competent_baselines": "Same training rows and target, no testing labels used in fit",
+          "negative_controls": "Within-seed/tick outcome shuffle, cross-network opportunity shift",
+          "warning": "Original model's dyadic sender/conditional reply not 2 native human yes/no ballots"
+        },
+        "actual_benchmark_limit": "B1 != full SRM; B4 != full ranking+fatigue; B6 != fully flexible feedback B6*. Oracle knows DGP."
+      },
+      "G": {
+        "prespec": {
+          "external": "NONE",
+          "holdout_status": "HOLDOUT_SYNTHETIC_ONLY"
+        },
+        "external_human_holdout": "NONE",
+        "independent_OS_replication": false,
+        "verification": "SAME_GENERATOR_AND_OR_LOCAL_TECHNICAL"
+      },
+      "H": {
+        "update_events": [
+          "U183",
+          "U184",
+          "U185",
+          "U186",
+          "U187"
+        ],
+        "prior_ids": [
+          "P-SOURCE-DEDUP",
+          "P-COMPETENT_NULL",
+          "P-NOVELTY",
+          "P-DYADIC_ACCESS",
+          "P-OPPORTUNITY"
+        ],
+        "human_scientific_status": "NO_CHANGE_WITH_REASON",
+        "source_ids": []
+      },
+      "I": {
+        "scientific_grade": "0/3",
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "not_external_validation": true,
+        "technically_valid_or_documentary": true,
+        "instrumental_failed_attempts": 1
+      },
+      "J": {
+        "decision": "CONTINUE_TO_NEXT_DISTINCT_FALSIFIER",
+        "successor": "N168",
+        "credit_spent": 1,
+        "reason": "Execution or substantive source/baseline no-go per prereg; not repeated seed-only simulations",
+        "value_of_next_external_evidence": "Legal independent real opportunities with two native yes/no and calibrated equal-info SRM/B6 baseline"
+      }
+    },
+    {
+      "id": "N168",
+      "parent": "N167",
+      "mode": "BRANCH",
+      "drift_D": {
+        "code": "Python source SHA256 frozen by GitHub prereg+separate frozen code manifest before outcomes",
+        "environment": "Python 3.13.5, numpy 2.3.5, sklearn 1.8.0, networkx 3.6.1",
+        "seeds": "train=7100..7159, test=8100..8139"
+      },
+      "A": {
+        "question": "Fit and compare real-outcome-free B0 constant, B1 demographic, B2 q-age-norm, B4 time/exposure, B6 flexible nonlinear, plus exact structural oracle",
+        "estimand": "out-of-seed synthetic proposal yes/no logloss Brier; no human prediction"
+      },
+      "B": {
+        "rivals": [
+          "B0 prevalence",
+          "B1 demographic age/norm",
+          "B2 q,age,norm logistic",
+          "B4 temporal-exposure logistic",
+          "B6 nonlinear gradient boosting",
+          "ESBM oracle uses true generating parameter and prior negative-response state"
+        ],
+        "null": "No loss advantage or collapsed baseline, including shuffled null"
+      },
+      "C": {
+        "falsifier": "Split by entire simulated seed not by event rows; report heldout log loss and Brier with all predictions clipped; legacy B labels only operational proxies",
+        "rule": "Failure or incomplete outcomes count INVALID, retain null/signs and seed-level losses, no retrospective model changes"
+      },
+      "D": {
+        "code": "Python source SHA256 frozen by GitHub prereg+separate frozen code manifest before outcomes",
+        "environment": "Python 3.13.5, numpy 2.3.5, sklearn 1.8.0, networkx 3.6.1",
+        "seeds": "train=7100..7159, test=8100..8139",
+        "source_sha256": "beab33082fa062e6c3abb510b3f4716b9d446380d6a2d213d1fb96251f5fcefa",
+        "prereg_commit": "613bfa643fc6cff8b86ff6bb2d82c5635eb20417",
+        "code_freeze_commits": [
+          "dcf9f8b5b230424a0aded31f9a9cd8786aede980",
+          "db4b418cf61286f19e7b89a4d82356f2d247ce95"
+        ],
+        "before_outcome": true
+      },
+      "E": {
+        "execution_status": "PASS",
+        "observed": {
+          "logloss": {
+            "B0": 0.5957,
+            "B1": 0.5945,
+            "B2": 0.5746,
+            "B4": 0.5747,
+            "B6": 0.5806,
+            "oracle": 0.5741
+          },
+          "note": "B0/B1/B2/B4/B6 are operational proxies, not canonical fully competitive historical versions"
+        },
+        "actual_rows_processed": "SYNTHETIC_PROPOSAL_OR_CONDITIONAL_ONLY",
+        "human_raw_rows": 0,
+        "source_receipt": "d173f4ef4e1648f977b100e5c6700bd2d00a7b9e8a751ac7a7428c29215deebe"
+      },
+      "F": {
+        "adversarial": {
+          "competent_baselines": "Same training rows and target, no testing labels used in fit",
+          "negative_controls": "Within-seed/tick outcome shuffle, cross-network opportunity shift",
+          "warning": "Original model's dyadic sender/conditional reply not 2 native human yes/no ballots"
+        },
+        "actual_benchmark_limit": "B1 != full SRM; B4 != full ranking+fatigue; B6 != fully flexible feedback B6*. Oracle knows DGP."
+      },
+      "G": {
+        "prespec": {
+          "external": "NONE",
+          "holdout_status": "HOLDOUT_SYNTHETIC_ONLY"
+        },
+        "external_human_holdout": "NONE",
+        "independent_OS_replication": false,
+        "verification": "SAME_GENERATOR_AND_OR_LOCAL_TECHNICAL"
+      },
+      "H": {
+        "update_events": [
+          "U183",
+          "U184",
+          "U185",
+          "U186",
+          "U187"
+        ],
+        "prior_ids": [
+          "P-SOURCE-DEDUP",
+          "P-COMPETENT_NULL",
+          "P-NOVELTY",
+          "P-DYADIC_ACCESS",
+          "P-OPPORTUNITY"
+        ],
+        "human_scientific_status": "NO_CHANGE_WITH_REASON",
+        "source_ids": []
+      },
+      "I": {
+        "scientific_grade": "0/3",
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "not_external_validation": true,
+        "technically_valid_or_documentary": true,
+        "instrumental_failed_attempts": 0
+      },
+      "J": {
+        "decision": "CONTINUE_TO_NEXT_DISTINCT_FALSIFIER",
+        "successor": "N169",
+        "credit_spent": 1,
+        "reason": "Execution or substantive source/baseline no-go per prereg; not repeated seed-only simulations",
+        "value_of_next_external_evidence": "Legal independent real opportunities with two native yes/no and calibrated equal-info SRM/B6 baseline"
+      }
+    },
+    {
+      "id": "N169",
+      "parent": "N168",
+      "mode": "ADVERSARIAL",
+      "drift_D": {
+        "code": "Python source SHA256 frozen by GitHub prereg+separate frozen code manifest before outcomes",
+        "environment": "Python 3.13.5, numpy 2.3.5, sklearn 1.8.0, networkx 3.6.1",
+        "seeds": "train=7100..7159, test=8100..8139"
+      },
+      "A": {
+        "question": "Test oracle advantage versus baseline B6 and analytic B2 under true generator on truly heldout seeds",
+        "estimand": "out-of-seed synthetic proposal yes/no logloss Brier; no human prediction"
+      },
+      "B": {
+        "rivals": [
+          "B0 prevalence",
+          "B1 demographic age/norm",
+          "B2 q,age,norm logistic",
+          "B4 temporal-exposure logistic",
+          "B6 nonlinear gradient boosting",
+          "ESBM oracle uses true generating parameter and prior negative-response state"
+        ],
+        "null": "No loss advantage or collapsed baseline, including shuffled null"
+      },
+      "C": {
+        "falsifier": "Paired per-seed logloss deltas and sign distribution; no empirical validation even if ESBM oracle wins",
+        "rule": "Failure or incomplete outcomes count INVALID, retain null/signs and seed-level losses, no retrospective model changes"
+      },
+      "D": {
+        "code": "Python source SHA256 frozen by GitHub prereg+separate frozen code manifest before outcomes",
+        "environment": "Python 3.13.5, numpy 2.3.5, sklearn 1.8.0, networkx 3.6.1",
+        "seeds": "train=7100..7159, test=8100..8139",
+        "source_sha256": "beab33082fa062e6c3abb510b3f4716b9d446380d6a2d213d1fb96251f5fcefa",
+        "prereg_commit": "613bfa643fc6cff8b86ff6bb2d82c5635eb20417",
+        "code_freeze_commits": [
+          "dcf9f8b5b230424a0aded31f9a9cd8786aede980",
+          "db4b418cf61286f19e7b89a4d82356f2d247ce95"
+        ],
+        "before_outcome": true
+      },
+      "E": {
+        "execution_status": "PASS",
+        "observed": {
+          "B2_minus_oracle_seed_mean": 0.0005257148293544095,
+          "oracle_wins_vs_B2": 23,
+          "oracle_losses_vs_B2": 17
+        },
+        "actual_rows_processed": "SYNTHETIC_PROPOSAL_OR_CONDITIONAL_ONLY",
+        "human_raw_rows": 0,
+        "source_receipt": "d173f4ef4e1648f977b100e5c6700bd2d00a7b9e8a751ac7a7428c29215deebe"
+      },
+      "F": {
+        "adversarial": {
+          "competent_baselines": "Same training rows and target, no testing labels used in fit",
+          "negative_controls": "Within-seed/tick outcome shuffle, cross-network opportunity shift",
+          "warning": "Original model's dyadic sender/conditional reply not 2 native human yes/no ballots"
+        },
+        "actual_benchmark_limit": "B1 != full SRM; B4 != full ranking+fatigue; B6 != fully flexible feedback B6*. Oracle knows DGP."
+      },
+      "G": {
+        "prespec": {
+          "external": "NONE",
+          "holdout_status": "HOLDOUT_SYNTHETIC_ONLY"
+        },
+        "external_human_holdout": "NONE",
+        "independent_OS_replication": false,
+        "verification": "SAME_GENERATOR_AND_OR_LOCAL_TECHNICAL"
+      },
+      "H": {
+        "update_events": [
+          "U183",
+          "U184",
+          "U185",
+          "U186",
+          "U187"
+        ],
+        "prior_ids": [
+          "P-SOURCE-DEDUP",
+          "P-COMPETENT_NULL",
+          "P-NOVELTY",
+          "P-DYADIC_ACCESS",
+          "P-OPPORTUNITY"
+        ],
+        "human_scientific_status": "NO_CHANGE_WITH_REASON",
+        "source_ids": []
+      },
+      "I": {
+        "scientific_grade": "0/3",
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "not_external_validation": true,
+        "technically_valid_or_documentary": true,
+        "instrumental_failed_attempts": 0
+      },
+      "J": {
+        "decision": "CONTINUE_TO_NEXT_DISTINCT_FALSIFIER",
+        "successor": "N170",
+        "credit_spent": 1,
+        "reason": "Execution or substantive source/baseline no-go per prereg; not repeated seed-only simulations",
+        "value_of_next_external_evidence": "Legal independent real opportunities with two native yes/no and calibrated equal-info SRM/B6 baseline"
+      }
+    },
+    {
+      "id": "N170",
+      "parent": "N169",
+      "mode": "NEGATIVE_CONTROL",
+      "drift_D": {
+        "code": "Python source SHA256 frozen by GitHub prereg+separate frozen code manifest before outcomes",
+        "environment": "Python 3.13.5, numpy 2.3.5, sklearn 1.8.0, networkx 3.6.1",
+        "seeds": "train=7100..7159, test=8100..8139"
+      },
+      "A": {
+        "question": "Run a fully shuffled held-out and train null (within seed/tick) and measure whether structural oracle loses advantage",
+        "estimand": "out-of-seed synthetic proposal yes/no logloss Brier; no human prediction"
+      },
+      "B": {
+        "rivals": [
+          "B0 prevalence",
+          "B1 demographic age/norm",
+          "B2 q,age,norm logistic",
+          "B4 temporal-exposure logistic",
+          "B6 nonlinear gradient boosting",
+          "ESBM oracle uses true generating parameter and prior negative-response state"
+        ],
+        "null": "No loss advantage or collapsed baseline, including shuffled null"
+      },
+      "C": {
+        "falsifier": "No preserved real causal signal from outcome labels; same fixed sample sizes, group-level sham",
+        "rule": "Failure or incomplete outcomes count INVALID, retain null/signs and seed-level losses, no retrospective model changes"
+      },
+      "D": {
+        "code": "Python source SHA256 frozen by GitHub prereg+separate frozen code manifest before outcomes",
+        "environment": "Python 3.13.5, numpy 2.3.5, sklearn 1.8.0, networkx 3.6.1",
+        "seeds": "train=7100..7159, test=8100..8139",
+        "source_sha256": "beab33082fa062e6c3abb510b3f4716b9d446380d6a2d213d1fb96251f5fcefa",
+        "prereg_commit": "613bfa643fc6cff8b86ff6bb2d82c5635eb20417",
+        "code_freeze_commits": [
+          "dcf9f8b5b230424a0aded31f9a9cd8786aede980",
+          "db4b418cf61286f19e7b89a4d82356f2d247ce95"
+        ],
+        "before_outcome": true
+      },
+      "E": {
+        "execution_status": "PASS",
+        "observed": {
+          "shuffled_null_logloss": {
+            "B0": 0.5957,
+            "B2": 0.5972,
+            "B6": 0.6002,
+            "oracle": 0.607
+          }
+        },
+        "actual_rows_processed": "SYNTHETIC_PROPOSAL_OR_CONDITIONAL_ONLY",
+        "human_raw_rows": 0,
+        "source_receipt": "d173f4ef4e1648f977b100e5c6700bd2d00a7b9e8a751ac7a7428c29215deebe"
+      },
+      "F": {
+        "adversarial": {
+          "competent_baselines": "Same training rows and target, no testing labels used in fit",
+          "negative_controls": "Within-seed/tick outcome shuffle, cross-network opportunity shift",
+          "warning": "Original model's dyadic sender/conditional reply not 2 native human yes/no ballots"
+        },
+        "actual_benchmark_limit": "B1 != full SRM; B4 != full ranking+fatigue; B6 != fully flexible feedback B6*. Oracle knows DGP."
+      },
+      "G": {
+        "prespec": {
+          "external": "NONE",
+          "holdout_status": "HOLDOUT_SYNTHETIC_ONLY"
+        },
+        "external_human_holdout": "NONE",
+        "independent_OS_replication": false,
+        "verification": "SAME_GENERATOR_AND_OR_LOCAL_TECHNICAL"
+      },
+      "H": {
+        "update_events": [
+          "U183",
+          "U184",
+          "U185",
+          "U186",
+          "U187"
+        ],
+        "prior_ids": [
+          "P-SOURCE-DEDUP",
+          "P-COMPETENT_NULL",
+          "P-NOVELTY",
+          "P-DYADIC_ACCESS",
+          "P-OPPORTUNITY"
+        ],
+        "human_scientific_status": "NO_CHANGE_WITH_REASON",
+        "source_ids": []
+      },
+      "I": {
+        "scientific_grade": "0/3",
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "not_external_validation": true,
+        "technically_valid_or_documentary": true,
+        "instrumental_failed_attempts": 0
+      },
+      "J": {
+        "decision": "CONTINUE_TO_NEXT_DISTINCT_FALSIFIER",
+        "successor": "N171",
+        "credit_spent": 1,
+        "reason": "Execution or substantive source/baseline no-go per prereg; not repeated seed-only simulations",
+        "value_of_next_external_evidence": "Legal independent real opportunities with two native yes/no and calibrated equal-info SRM/B6 baseline"
+      }
+    },
+    {
+      "id": "N171",
+      "parent": "N170",
+      "mode": "SHIFT",
+      "drift_D": {
+        "code": "Python source SHA256 frozen by GitHub prereg+separate frozen code manifest before outcomes",
+        "environment": "Python 3.13.5, numpy 2.3.5, sklearn 1.8.0, networkx 3.6.1",
+        "seeds": "train=7100..7159, test=8100..8139"
+      },
+      "A": {
+        "question": "Evaluate train on canonical ring and heldout rewired opportunities without peeking at test labels",
+        "estimand": "out-of-seed synthetic proposal yes/no logloss Brier; no human prediction"
+      },
+      "B": {
+        "rivals": [
+          "B0 prevalence",
+          "B1 demographic age/norm",
+          "B2 q,age,norm logistic",
+          "B4 temporal-exposure logistic",
+          "B6 nonlinear gradient boosting",
+          "ESBM oracle uses true generating parameter and prior negative-response state"
+        ],
+        "null": "No loss advantage or collapsed baseline, including shuffled null"
+      },
+      "C": {
+        "falsifier": "Same seeds and schedule budgets but distinct risksets; no topology causal conclusion, report n and loss",
+        "rule": "Failure or incomplete outcomes count INVALID, retain null/signs and seed-level losses, no retrospective model changes"
+      },
+      "D": {
+        "code": "Python source SHA256 frozen by GitHub prereg+separate frozen code manifest before outcomes",
+        "environment": "Python 3.13.5, numpy 2.3.5, sklearn 1.8.0, networkx 3.6.1",
+        "seeds": "train=7100..7159, test=8100..8139",
+        "source_sha256": "beab33082fa062e6c3abb510b3f4716b9d446380d6a2d213d1fb96251f5fcefa",
+        "prereg_commit": "613bfa643fc6cff8b86ff6bb2d82c5635eb20417",
+        "code_freeze_commits": [
+          "dcf9f8b5b230424a0aded31f9a9cd8786aede980",
+          "db4b418cf61286f19e7b89a4d82356f2d247ce95"
+        ],
+        "before_outcome": true
+      },
+      "E": {
+        "execution_status": "PASS",
+        "observed": {
+          "rewired_test_exposures": 2412,
+          "logloss": {
+            "B2": 0.578,
+            "B6": 0.5783,
+            "oracle": 0.5765
+          }
+        },
+        "actual_rows_processed": "SYNTHETIC_PROPOSAL_OR_CONDITIONAL_ONLY",
+        "human_raw_rows": 0,
+        "source_receipt": "d173f4ef4e1648f977b100e5c6700bd2d00a7b9e8a751ac7a7428c29215deebe"
+      },
+      "F": {
+        "adversarial": {
+          "competent_baselines": "Same training rows and target, no testing labels used in fit",
+          "negative_controls": "Within-seed/tick outcome shuffle, cross-network opportunity shift",
+          "warning": "Original model's dyadic sender/conditional reply not 2 native human yes/no ballots"
+        },
+        "actual_benchmark_limit": "B1 != full SRM; B4 != full ranking+fatigue; B6 != fully flexible feedback B6*. Oracle knows DGP."
+      },
+      "G": {
+        "prespec": {
+          "external": "NONE",
+          "holdout_status": "HOLDOUT_SYNTHETIC_ONLY"
+        },
+        "external_human_holdout": "NONE",
+        "independent_OS_replication": false,
+        "verification": "SAME_GENERATOR_AND_OR_LOCAL_TECHNICAL"
+      },
+      "H": {
+        "update_events": [
+          "U183",
+          "U184",
+          "U185",
+          "U186",
+          "U187"
+        ],
+        "prior_ids": [
+          "P-SOURCE-DEDUP",
+          "P-COMPETENT_NULL",
+          "P-NOVELTY",
+          "P-DYADIC_ACCESS",
+          "P-OPPORTUNITY"
+        ],
+        "human_scientific_status": "NO_CHANGE_WITH_REASON",
+        "source_ids": []
+      },
+      "I": {
+        "scientific_grade": "0/3",
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "not_external_validation": true,
+        "technically_valid_or_documentary": true,
+        "instrumental_failed_attempts": 0
+      },
+      "J": {
+        "decision": "CONTINUE_TO_NEXT_DISTINCT_FALSIFIER",
+        "successor": "N172",
+        "credit_spent": 1,
+        "reason": "Execution or substantive source/baseline no-go per prereg; not repeated seed-only simulations",
+        "value_of_next_external_evidence": "Legal independent real opportunities with two native yes/no and calibrated equal-info SRM/B6 baseline"
+      }
+    }
+  ],
+  "total": 5,
+  "external_human_cycles": 0,
+  "CT2": 7
+}
