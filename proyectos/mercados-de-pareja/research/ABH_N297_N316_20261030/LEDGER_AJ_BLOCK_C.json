@@ -1,0 +1,322 @@
+{
+  "schema": "ABH_N297_N316_AJ_POSTOUTCOME",
+  "date": "2026-10-30",
+  "branch": "research/ab-h-esbm-robust-exact-n297-n316-20261030",
+  "preoutcome_freeze_commit": "7495312512fbcfd9f48cdb05588ae74a10b555d9",
+  "prereg_parts": [
+    "PREREG_AJ_PART_A.json",
+    "PREREG_AJ_PART_B.json"
+  ],
+  "code_sha_commit": "ab43890677b27a8f3848263ad8f8baf27fd365ba",
+  "posthoc_native_prereg_commit": "3f1bedbf8d27528f28b8a36391b15678d1e4584f",
+  "authorized": 20,
+  "valid_executions": 20,
+  "invalid_executions": 0,
+  "unspent": 0,
+  "human_evidence_new": 0,
+  "CT2": 7,
+  "STOP_R5": "ACTIVE",
+  "entries": [
+    {
+      "id": "N307",
+      "A": {
+        "question": "N307 7 flat n12 tests deterministic label-based tie policy invariant to edge order",
+        "estimand": "Synthetic solver objective, uniqueness/canonicality or event state as specified; no human outcome"
+      },
+      "B": {
+        "rivals": "Exact integer NetworkX vs Boost/DP/MILP/float64/metamorphic control as preregistered"
+      },
+      "C": {
+        "preoutcome_contract": "PREREG_AJ_PART_B.json",
+        "falsifier": "Predefined mismatch/timeout/error or expected counterexample found, not posthoc altered"
+      },
+      "D": {
+        "code_sha256": {
+          "run_n297.py": "74346a39a2c31a44fc79fba41f40c107b569091cafeeff0a0b1ff8c16e3abad7",
+          "robust_solver.py": "3447fb5c0ca44f1808f6d5940ae2de4d96dd575d936fe27d914393c98d4918ca",
+          "experiment.py": "89d9d5c125c9153ca8a641267a983e71c0427e1600a45faf03d6f3761b125dfe",
+          "trace_engine.py": "c0c92061100a689ab59698a46e22a96e96d7bb3bd99a21ec292d7aaa30e4415a",
+          "boost_blossom.cpp": "47806e6b331e088d209e51143d18cb5d5cc7a2e2d3d6d8914478bff4b7b8c2d3",
+          "boost_blossom": "96087f807c3845193da871aa8a8f83092c095a0dcf2ab0862ace85b76eebf995"
+        },
+        "source_archive_sha256": "5df54b85ccb3ef4bb2c568ec4a665ac07032dd9e3941108f2cb20e689dabe55b",
+        "freeze_commit": "7495312512fbcfd9f48cdb05588ae74a10b555d9"
+      },
+      "E": {
+        "execution": {
+          "cycle": 307,
+          "sha256": "748894274a7a4cca01ef2f43e4822b9cd8df8926a04b28407d5da0f678e8ef13",
+          "status": "EXECUTED",
+          "elapsed_s": 0.0127559630000178,
+          "path": "results/N307.json"
+        },
+        "observed": "7 flat n12 tests deterministic label-based tie policy invariant to edge order"
+      },
+      "F": {
+        "classification": "PASS_CANONICAL_POLICY",
+        "strict_limits": "Boost 1.2/1/0.45s where specified; no 100% reliability assertion"
+      },
+      "G": {
+        "independent_human_evidence": false,
+        "small_exact_oracles": false,
+        "historic_TS_not_executed": true
+      },
+      "H": {
+        "prior_event": "U202",
+        "human_prior_update": "NO_CHANGE_WITH_REASON"
+      },
+      "I": {
+        "scientific_CT2_before": 7,
+        "scientific_CT2_after": 7,
+        "human_grade": "0/3",
+        "STOP_R5": true
+      },
+      "J": {
+        "decision": "CLOSE_TECHNICAL_PASS_CANONICAL_POLICY",
+        "slot_counted": true,
+        "remaining_after": 9
+      }
+    },
+    {
+      "id": "N308",
+      "A": {
+        "question": "N308 C4 rotation maps chosen maximum matching to distinct equally optimal one",
+        "estimand": "Synthetic solver objective, uniqueness/canonicality or event state as specified; no human outcome"
+      },
+      "B": {
+        "rivals": "Exact integer NetworkX vs Boost/DP/MILP/float64/metamorphic control as preregistered"
+      },
+      "C": {
+        "preoutcome_contract": "PREREG_AJ_PART_B.json",
+        "falsifier": "Predefined mismatch/timeout/error or expected counterexample found, not posthoc altered"
+      },
+      "D": {
+        "code_sha256": {
+          "run_n297.py": "74346a39a2c31a44fc79fba41f40c107b569091cafeeff0a0b1ff8c16e3abad7",
+          "robust_solver.py": "3447fb5c0ca44f1808f6d5940ae2de4d96dd575d936fe27d914393c98d4918ca",
+          "experiment.py": "89d9d5c125c9153ca8a641267a983e71c0427e1600a45faf03d6f3761b125dfe",
+          "trace_engine.py": "c0c92061100a689ab59698a46e22a96e96d7bb3bd99a21ec292d7aaa30e4415a",
+          "boost_blossom.cpp": "47806e6b331e088d209e51143d18cb5d5cc7a2e2d3d6d8914478bff4b7b8c2d3",
+          "boost_blossom": "96087f807c3845193da871aa8a8f83092c095a0dcf2ab0862ace85b76eebf995"
+        },
+        "source_archive_sha256": "5df54b85ccb3ef4bb2c568ec4a665ac07032dd9e3941108f2cb20e689dabe55b",
+        "freeze_commit": "7495312512fbcfd9f48cdb05588ae74a10b555d9"
+      },
+      "E": {
+        "execution": {
+          "cycle": 308,
+          "sha256": "95607322a150ee013a1b145f3e6e8119f914fe25098a5265c126071623f2e32f",
+          "status": "EXECUTED",
+          "elapsed_s": 0.0009712180000178705,
+          "path": "results/N308.json"
+        },
+        "observed": "C4 rotation maps chosen maximum matching to distinct equally optimal one"
+      },
+      "F": {
+        "classification": "MATHEMATICAL_COUNTEREXAMPLE",
+        "strict_limits": "Boost 1.2/1/0.45s where specified; no 100% reliability assertion"
+      },
+      "G": {
+        "independent_human_evidence": false,
+        "small_exact_oracles": false,
+        "historic_TS_not_executed": true
+      },
+      "H": {
+        "prior_event": "U202",
+        "human_prior_update": "NO_CHANGE_WITH_REASON"
+      },
+      "I": {
+        "scientific_CT2_before": 7,
+        "scientific_CT2_after": 7,
+        "human_grade": "0/3",
+        "STOP_R5": true
+      },
+      "J": {
+        "decision": "CLOSE_TECHNICAL_MATHEMATICAL_COUNTEREXAMPLE",
+        "slot_counted": true,
+        "remaining_after": 8
+      }
+    },
+    {
+      "id": "N309",
+      "A": {
+        "question": "N309 5 n14 unique optima certified via exact exclusion margin",
+        "estimand": "Synthetic solver objective, uniqueness/canonicality or event state as specified; no human outcome"
+      },
+      "B": {
+        "rivals": "Exact integer NetworkX vs Boost/DP/MILP/float64/metamorphic control as preregistered"
+      },
+      "C": {
+        "preoutcome_contract": "PREREG_AJ_PART_B.json",
+        "falsifier": "Predefined mismatch/timeout/error or expected counterexample found, not posthoc altered"
+      },
+      "D": {
+        "code_sha256": {
+          "run_n297.py": "74346a39a2c31a44fc79fba41f40c107b569091cafeeff0a0b1ff8c16e3abad7",
+          "robust_solver.py": "3447fb5c0ca44f1808f6d5940ae2de4d96dd575d936fe27d914393c98d4918ca",
+          "experiment.py": "89d9d5c125c9153ca8a641267a983e71c0427e1600a45faf03d6f3761b125dfe",
+          "trace_engine.py": "c0c92061100a689ab59698a46e22a96e96d7bb3bd99a21ec292d7aaa30e4415a",
+          "boost_blossom.cpp": "47806e6b331e088d209e51143d18cb5d5cc7a2e2d3d6d8914478bff4b7b8c2d3",
+          "boost_blossom": "96087f807c3845193da871aa8a8f83092c095a0dcf2ab0862ace85b76eebf995"
+        },
+        "source_archive_sha256": "5df54b85ccb3ef4bb2c568ec4a665ac07032dd9e3941108f2cb20e689dabe55b",
+        "freeze_commit": "7495312512fbcfd9f48cdb05588ae74a10b555d9"
+      },
+      "E": {
+        "execution": {
+          "cycle": 309,
+          "sha256": "079062e33fbe1392c3a3775903648f699af677b66c793380cf073433d410a6be",
+          "status": "EXECUTED",
+          "elapsed_s": 0.04736910499991609,
+          "path": "results/N309.json"
+        },
+        "observed": "5 n14 unique optima certified via exact exclusion margin"
+      },
+      "F": {
+        "classification": "PASS_GAP_CERTIFICATE",
+        "strict_limits": "Boost 1.2/1/0.45s where specified; no 100% reliability assertion"
+      },
+      "G": {
+        "independent_human_evidence": false,
+        "small_exact_oracles": true,
+        "historic_TS_not_executed": true
+      },
+      "H": {
+        "prior_event": "U202",
+        "human_prior_update": "NO_CHANGE_WITH_REASON"
+      },
+      "I": {
+        "scientific_CT2_before": 7,
+        "scientific_CT2_after": 7,
+        "human_grade": "0/3",
+        "STOP_R5": true
+      },
+      "J": {
+        "decision": "CLOSE_TECHNICAL_PASS_GAP_CERTIFICATE",
+        "slot_counted": true,
+        "remaining_after": 7
+      }
+    },
+    {
+      "id": "N310",
+      "A": {
+        "question": "N310 3 of 6 new n143 near-ULP graphs float64 optimality deficits 2,1,2 residual units",
+        "estimand": "Synthetic solver objective, uniqueness/canonicality or event state as specified; no human outcome"
+      },
+      "B": {
+        "rivals": "Exact integer NetworkX vs Boost/DP/MILP/float64/metamorphic control as preregistered"
+      },
+      "C": {
+        "preoutcome_contract": "PREREG_AJ_PART_B.json",
+        "falsifier": "Predefined mismatch/timeout/error or expected counterexample found, not posthoc altered"
+      },
+      "D": {
+        "code_sha256": {
+          "run_n297.py": "74346a39a2c31a44fc79fba41f40c107b569091cafeeff0a0b1ff8c16e3abad7",
+          "robust_solver.py": "3447fb5c0ca44f1808f6d5940ae2de4d96dd575d936fe27d914393c98d4918ca",
+          "experiment.py": "89d9d5c125c9153ca8a641267a983e71c0427e1600a45faf03d6f3761b125dfe",
+          "trace_engine.py": "c0c92061100a689ab59698a46e22a96e96d7bb3bd99a21ec292d7aaa30e4415a",
+          "boost_blossom.cpp": "47806e6b331e088d209e51143d18cb5d5cc7a2e2d3d6d8914478bff4b7b8c2d3",
+          "boost_blossom": "96087f807c3845193da871aa8a8f83092c095a0dcf2ab0862ace85b76eebf995"
+        },
+        "source_archive_sha256": "5df54b85ccb3ef4bb2c568ec4a665ac07032dd9e3941108f2cb20e689dabe55b",
+        "freeze_commit": "7495312512fbcfd9f48cdb05588ae74a10b555d9"
+      },
+      "E": {
+        "execution": {
+          "cycle": 310,
+          "sha256": "3a7007a36f2994a62ab787d9a919ed3fac614982ee9b7b688d8137b8864677f6",
+          "status": "EXECUTED",
+          "elapsed_s": 1.153239955999993,
+          "path": "results/N310.json"
+        },
+        "observed": "3 of 6 new n143 near-ULP graphs float64 optimality deficits 2,1,2 residual units"
+      },
+      "F": {
+        "classification": "NEGATIVE_FLOAT_PRECISION",
+        "strict_limits": "Boost 1.2/1/0.45s where specified; no 100% reliability assertion"
+      },
+      "G": {
+        "independent_human_evidence": false,
+        "small_exact_oracles": false,
+        "historic_TS_not_executed": true
+      },
+      "H": {
+        "prior_event": "U202",
+        "human_prior_update": "NO_CHANGE_WITH_REASON"
+      },
+      "I": {
+        "scientific_CT2_before": 7,
+        "scientific_CT2_after": 7,
+        "human_grade": "0/3",
+        "STOP_R5": true
+      },
+      "J": {
+        "decision": "CLOSE_TECHNICAL_NEGATIVE_FLOAT_PRECISION",
+        "slot_counted": true,
+        "remaining_after": 6
+      }
+    },
+    {
+      "id": "N311",
+      "A": {
+        "question": "N311 12 n14 near-ULP examples integer NetworkX equals DP, float not suboptimal in these cases",
+        "estimand": "Synthetic solver objective, uniqueness/canonicality or event state as specified; no human outcome"
+      },
+      "B": {
+        "rivals": "Exact integer NetworkX vs Boost/DP/MILP/float64/metamorphic control as preregistered"
+      },
+      "C": {
+        "preoutcome_contract": "PREREG_AJ_PART_B.json",
+        "falsifier": "Predefined mismatch/timeout/error or expected counterexample found, not posthoc altered"
+      },
+      "D": {
+        "code_sha256": {
+          "run_n297.py": "74346a39a2c31a44fc79fba41f40c107b569091cafeeff0a0b1ff8c16e3abad7",
+          "robust_solver.py": "3447fb5c0ca44f1808f6d5940ae2de4d96dd575d936fe27d914393c98d4918ca",
+          "experiment.py": "89d9d5c125c9153ca8a641267a983e71c0427e1600a45faf03d6f3761b125dfe",
+          "trace_engine.py": "c0c92061100a689ab59698a46e22a96e96d7bb3bd99a21ec292d7aaa30e4415a",
+          "boost_blossom.cpp": "47806e6b331e088d209e51143d18cb5d5cc7a2e2d3d6d8914478bff4b7b8c2d3",
+          "boost_blossom": "96087f807c3845193da871aa8a8f83092c095a0dcf2ab0862ace85b76eebf995"
+        },
+        "source_archive_sha256": "5df54b85ccb3ef4bb2c568ec4a665ac07032dd9e3941108f2cb20e689dabe55b",
+        "freeze_commit": "7495312512fbcfd9f48cdb05588ae74a10b555d9"
+      },
+      "E": {
+        "execution": {
+          "cycle": 311,
+          "sha256": "4799757b2d56c6fbd8fdf405f975f26a88e976d84b67fd19cebddfb2b5ecadcc",
+          "status": "EXECUTED",
+          "elapsed_s": 0.06806573500000468,
+          "path": "results/N311.json"
+        },
+        "observed": "12 n14 near-ULP examples integer NetworkX equals DP, float not suboptimal in these cases"
+      },
+      "F": {
+        "classification": "PASS_SMALL_EXACT",
+        "strict_limits": "Boost 1.2/1/0.45s where specified; no 100% reliability assertion"
+      },
+      "G": {
+        "independent_human_evidence": false,
+        "small_exact_oracles": true,
+        "historic_TS_not_executed": true
+      },
+      "H": {
+        "prior_event": "U202",
+        "human_prior_update": "NO_CHANGE_WITH_REASON"
+      },
+      "I": {
+        "scientific_CT2_before": 7,
+        "scientific_CT2_after": 7,
+        "human_grade": "0/3",
+        "STOP_R5": true
+      },
+      "J": {
+        "decision": "CLOSE_TECHNICAL_PASS_SMALL_EXACT",
+        "slot_counted": true,
+        "remaining_after": 5
+      }
+    }
+  ],
+  "block": "C"
+}
