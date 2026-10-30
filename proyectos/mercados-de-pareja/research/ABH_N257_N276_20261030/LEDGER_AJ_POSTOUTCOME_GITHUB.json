@@ -1,0 +1,1478 @@
+{
+  "schema": "ABH_N257_N276_AJ_OUTCOME_LEDGER",
+  "technical_grade": "QA ONLY 0/3 SCIENTIFIC",
+  "date": "2026-10-30",
+  "preoutcome_freeze_commit": "474cdae1cf04bf89912f7c6fa4f961bbe14c4483",
+  "first_attempt_repair_commit": "89decd3b840bb654cd743ea80bf210c876293d39",
+  "asan_noncycle_prereg": "2643d4fb03fd28ec81dc3152fe1ca95745d9ab47",
+  "authorized": 20,
+  "executed_valid": 20,
+  "pass": 18,
+  "negative": 2,
+  "invalid_retried": 5,
+  "remaining": 0,
+  "prior_update_id": "U197",
+  "raw_full_archive_sha256": "e0263af4ac85073b1ccbd8a32a4d9dc460b29f89147d765c20eaf2c90554bd5d",
+  "rows": [
+    {
+      "cycle": "N257",
+      "A": {
+        "question": "Adversarial odd n143 newly constructed graphs: distinguish Boost crash, objective mismatch, and resource failure; explicitly NOT historical N242 fixture.",
+        "estimand": "Specific technical invariant and first failure on fixed synthetic controls",
+        "population": "144 artificial agents (or named synthetic graph) with no human observation"
+      },
+      "B": {
+        "rival": "Python/NumPy original-semantics reconstruction with NetworkX maxcardinality integer objective versus separate Python list-state replay using C++ Boost; not the historical TS ZIP",
+        "null": "No proven parity or failure due to missing instrument, crash, timeout or objective/edge discrepancy"
+      },
+      "C": {
+        "primary": "Adversarial odd n143 newly constructed graphs: distinguish Boost crash, objective mismatch, and resource failure; explicitly NOT historical N242 fixture.",
+        "falsifier": "First prespecified mismatch in directed events, objective, pair identities where unique, or crash/timeout; ties classified unresolved"
+      },
+      "D": {
+        "pre_outcome": true,
+        "code_sha256": {
+          "trace_engine.py": "c0c92061100a689ab59698a46e22a96e96d7bb3bd99a21ec292d7aaa30e4415a",
+          "boost_blossom.cpp": "47806e6b331e088d209e51143d18cb5d5cc7a2e2d3d6d8914478bff4b7b8c2d3",
+          "run_campaign.py": "5d39ded9b8602a2d3e58e78934c3a62c0560c7993b85d4af24d60e9bc58302df",
+          "boost_blossom_binary": "96087f807c3845193da871aa8a8f83092c095a0dcf2ab0862ace85b76eebf995"
+        },
+        "seed_rule": "Fixed synthetic seeds stated in frozen run_campaign.py",
+        "data_provenance": "No original ZIP; newly designed instruments; immutable synthetic fixture hashes in results"
+      },
+      "E": {
+        "status": "EXECUTED",
+        "planned_receipt": "results/N257.json",
+        "planned_events": null,
+        "outcome": "NEGATIVE_OR_RESOURCE_LIMIT",
+        "raw_receipt_path": "results/N257.json",
+        "raw_receipt_SHA256": "1e1fd01a00edc17f9b9b0be314d4a58416d868720ce1f9bd2748987100585d8e",
+        "scenario_seed_parity": null,
+        "result_detail": "odd n143 synthetic stress: 2 normal exact agreements, one flat timeout 4s, near-tie SIGSEGV -11",
+        "invalid_first_attempt_SHA256": null
+      },
+      "F": {
+        "controls": "Exact cardinality+integer weight oracles, metamorphic cases and error-preserving output",
+        "fail_closed": true,
+        "observed_adversarial_negative": true,
+        "outcome_falsifier": "Boost failed for prescribed odd/dense adversarial graph; not robust on this fixture",
+        "full_raw_in_archive": "ESBM_ABH_N257_N276_event_parity_results.zip"
+      },
+      "G": {
+        "independence": "Software implementation contrast only, shared ESBM generator/semantics; no independent human evidence, historic TS comparison NOT executed",
+        "OS": "Linux x86_64; Python 3.13.5 NumPy2.3.5 NetworkX3.6.1 g++14.2; Boost system headers",
+        "original_historical_Python_TS_comparison_executed": false,
+        "independent_human_reproduction": false
+      },
+      "H": {
+        "prior_id": "P-TRAJECTORY-INVARIANCE",
+        "planned_update": "NO_CHANGE_WITH_REASON unless event-level differential changes technical prior; never numeric invented Bayes",
+        "qualitative_prior_event": "U197",
+        "human_prior_changed": false
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after_planned": 7,
+        "scientific_grade": "0/3",
+        "STOP_R5_human": true,
+        "CT2_after": 7,
+        "grade": "0/3",
+        "technical_QA": "VALID_TECHNICAL_NEGATIVE"
+      },
+      "J": {
+        "decision": "CLOSE_NEGATIVE_WITH_SCOPE",
+        "cycle_budget_remaining_before": 20,
+        "remaining_after": 19,
+        "slot_counted_once": true,
+        "invalid_first_attempt_preserved": false
+      }
+    },
+    {
+      "cycle": "N258",
+      "A": {
+        "question": "Adversarial near-complete n144 newly constructed graphs: compare wall-clock bounded Boost to exact NetworkX; explicitly NOT historical N246 fixture.",
+        "estimand": "Specific technical invariant and first failure on fixed synthetic controls",
+        "population": "144 artificial agents (or named synthetic graph) with no human observation"
+      },
+      "B": {
+        "rival": "Python/NumPy original-semantics reconstruction with NetworkX maxcardinality integer objective versus separate Python list-state replay using C++ Boost; not the historical TS ZIP",
+        "null": "No proven parity or failure due to missing instrument, crash, timeout or objective/edge discrepancy"
+      },
+      "C": {
+        "primary": "Adversarial near-complete n144 newly constructed graphs: compare wall-clock bounded Boost to exact NetworkX; explicitly NOT historical N246 fixture.",
+        "falsifier": "First prespecified mismatch in directed events, objective, pair identities where unique, or crash/timeout; ties classified unresolved"
+      },
+      "D": {
+        "pre_outcome": true,
+        "code_sha256": {
+          "trace_engine.py": "c0c92061100a689ab59698a46e22a96e96d7bb3bd99a21ec292d7aaa30e4415a",
+          "boost_blossom.cpp": "47806e6b331e088d209e51143d18cb5d5cc7a2e2d3d6d8914478bff4b7b8c2d3",
+          "run_campaign.py": "5d39ded9b8602a2d3e58e78934c3a62c0560c7993b85d4af24d60e9bc58302df",
+          "boost_blossom_binary": "96087f807c3845193da871aa8a8f83092c095a0dcf2ab0862ace85b76eebf995"
+        },
+        "seed_rule": "Fixed synthetic seeds stated in frozen run_campaign.py",
+        "data_provenance": "No original ZIP; newly designed instruments; immutable synthetic fixture hashes in results"
+      },
+      "E": {
+        "status": "EXECUTED",
+        "planned_receipt": "results/N258.json",
+        "planned_events": null,
+        "outcome": "NEGATIVE_OR_RESOURCE_LIMIT",
+        "raw_receipt_path": "results/N258.json",
+        "raw_receipt_SHA256": "66cbe4dad02f85f22ce6b1262972c10b0e127a0b7f5917bf75177542d15b8c94",
+        "scenario_seed_parity": null,
+        "result_detail": "near-complete n144 stress: 2 normal exact agreements, flat and near-tie timeout 5s",
+        "invalid_first_attempt_SHA256": null
+      },
+      "F": {
+        "controls": "Exact cardinality+integer weight oracles, metamorphic cases and error-preserving output",
+        "fail_closed": true,
+        "observed_adversarial_negative": true,
+        "outcome_falsifier": "Boost failed for prescribed odd/dense adversarial graph; not robust on this fixture",
+        "full_raw_in_archive": "ESBM_ABH_N257_N276_event_parity_results.zip"
+      },
+      "G": {
+        "independence": "Software implementation contrast only, shared ESBM generator/semantics; no independent human evidence, historic TS comparison NOT executed",
+        "OS": "Linux x86_64; Python 3.13.5 NumPy2.3.5 NetworkX3.6.1 g++14.2; Boost system headers",
+        "original_historical_Python_TS_comparison_executed": false,
+        "independent_human_reproduction": false
+      },
+      "H": {
+        "prior_id": "P-TRAJECTORY-INVARIANCE",
+        "planned_update": "NO_CHANGE_WITH_REASON unless event-level differential changes technical prior; never numeric invented Bayes",
+        "qualitative_prior_event": "U197",
+        "human_prior_changed": false
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after_planned": 7,
+        "scientific_grade": "0/3",
+        "STOP_R5_human": true,
+        "CT2_after": 7,
+        "grade": "0/3",
+        "technical_QA": "VALID_TECHNICAL_NEGATIVE"
+      },
+      "J": {
+        "decision": "CLOSE_NEGATIVE_WITH_SCOPE",
+        "cycle_budget_remaining_before": 19,
+        "remaining_after": 18,
+        "slot_counted_once": true,
+        "invalid_first_attempt_preserved": false
+      }
+    },
+    {
+      "cycle": "N259",
+      "A": {
+        "question": "Mixed random N144/T16/K7 individual event parity, six historical seeds, Python reference reconstruction versus independent list-state replay+Boost.",
+        "estimand": "Individual directed event sequence, final relationship edges and first divergence; 6 seeds x 16 ticks",
+        "population": "144 artificial agents (or named synthetic graph) with no human observation"
+      },
+      "B": {
+        "rival": "Python/NumPy original-semantics reconstruction with NetworkX maxcardinality integer objective versus separate Python list-state replay using C++ Boost; not the historical TS ZIP",
+        "null": "No proven parity or failure due to missing instrument, crash, timeout or objective/edge discrepancy"
+      },
+      "C": {
+        "primary": "Ordered exposures/proposals/responses and matched pairs per tick, not aggregates",
+        "falsifier": "First prespecified mismatch in directed events, objective, pair identities where unique, or crash/timeout; ties classified unresolved"
+      },
+      "D": {
+        "pre_outcome": true,
+        "code_sha256": {
+          "trace_engine.py": "c0c92061100a689ab59698a46e22a96e96d7bb3bd99a21ec292d7aaa30e4415a",
+          "boost_blossom.cpp": "47806e6b331e088d209e51143d18cb5d5cc7a2e2d3d6d8914478bff4b7b8c2d3",
+          "run_campaign.py": "5d39ded9b8602a2d3e58e78934c3a62c0560c7993b85d4af24d60e9bc58302df",
+          "boost_blossom_binary": "96087f807c3845193da871aa8a8f83092c095a0dcf2ab0862ace85b76eebf995"
+        },
+        "seed_rule": "[101,211,307,401,503,601]",
+        "data_provenance": "No original ZIP; newly designed instruments; immutable synthetic fixture hashes in results"
+      },
+      "E": {
+        "status": "EXECUTED",
+        "planned_receipt": "results/N259.json",
+        "planned_events": "results/events/N259_*.json.gz",
+        "outcome": "PASS",
+        "raw_receipt_path": "results/N259.json",
+        "raw_receipt_SHA256": "786d309c42ac1d4dc537e84208846b213cb719f36ae01261b8106f4e4c6e8608",
+        "scenario_seed_parity": 6,
+        "result_detail": "6/6 individual directed event and pair traces matched",
+        "invalid_first_attempt_SHA256": "a179246c25ff5d20414623d2ae57d629d51653a1e3c019aaba4f2a669e52d4da"
+      },
+      "F": {
+        "controls": "First-difference comparator; all event fields, observed collisions/ties and failure receipts",
+        "fail_closed": true,
+        "observed_adversarial_negative": false,
+        "outcome_falsifier": "No discrepancy in predeclared controls",
+        "full_raw_in_archive": "ESBM_ABH_N257_N276_event_parity_results.zip"
+      },
+      "G": {
+        "independence": "Software implementation contrast only, shared ESBM generator/semantics; no independent human evidence, historic TS comparison NOT executed",
+        "OS": "Linux x86_64; Python 3.13.5 NumPy2.3.5 NetworkX3.6.1 g++14.2; Boost system headers",
+        "original_historical_Python_TS_comparison_executed": false,
+        "independent_human_reproduction": false
+      },
+      "H": {
+        "prior_id": "P-TRAJECTORY-INVARIANCE",
+        "planned_update": "NO_CHANGE_WITH_REASON unless event-level differential changes technical prior; never numeric invented Bayes",
+        "qualitative_prior_event": "U197",
+        "human_prior_changed": false
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after_planned": 7,
+        "scientific_grade": "0/3",
+        "STOP_R5_human": true,
+        "CT2_after": 7,
+        "grade": "0/3",
+        "technical_QA": "TECHNICAL_PASS"
+      },
+      "J": {
+        "decision": "CLOSE_PASS_TECHNICAL_ONLY",
+        "cycle_budget_remaining_before": 18,
+        "remaining_after": 17,
+        "slot_counted_once": true,
+        "invalid_first_attempt_preserved": true
+      }
+    },
+    {
+      "cycle": "N260",
+      "A": {
+        "question": "Heterosexual restricted individual ordered event/response/couple parity, six seeds.",
+        "estimand": "Individual directed event sequence, final relationship edges and first divergence; 6 seeds x 16 ticks",
+        "population": "144 artificial agents (or named synthetic graph) with no human observation"
+      },
+      "B": {
+        "rival": "Python/NumPy original-semantics reconstruction with NetworkX maxcardinality integer objective versus separate Python list-state replay using C++ Boost; not the historical TS ZIP",
+        "null": "No proven parity or failure due to missing instrument, crash, timeout or objective/edge discrepancy"
+      },
+      "C": {
+        "primary": "Ordered exposures/proposals/responses and matched pairs per tick, not aggregates",
+        "falsifier": "First prespecified mismatch in directed events, objective, pair identities where unique, or crash/timeout; ties classified unresolved"
+      },
+      "D": {
+        "pre_outcome": true,
+        "code_sha256": {
+          "trace_engine.py": "c0c92061100a689ab59698a46e22a96e96d7bb3bd99a21ec292d7aaa30e4415a",
+          "boost_blossom.cpp": "47806e6b331e088d209e51143d18cb5d5cc7a2e2d3d6d8914478bff4b7b8c2d3",
+          "run_campaign.py": "5d39ded9b8602a2d3e58e78934c3a62c0560c7993b85d4af24d60e9bc58302df",
+          "boost_blossom_binary": "96087f807c3845193da871aa8a8f83092c095a0dcf2ab0862ace85b76eebf995"
+        },
+        "seed_rule": "[101,211,307,401,503,601]",
+        "data_provenance": "No original ZIP; newly designed instruments; immutable synthetic fixture hashes in results"
+      },
+      "E": {
+        "status": "EXECUTED",
+        "planned_receipt": "results/N260.json",
+        "planned_events": "results/events/N260_*.json.gz",
+        "outcome": "PASS",
+        "raw_receipt_path": "results/N260.json",
+        "raw_receipt_SHA256": "ac2d715e06d359b44308483dabacde70a76f2fd85f6026dca528fae5fd106799",
+        "scenario_seed_parity": 6,
+        "result_detail": "6/6 individual directed event and pair traces matched",
+        "invalid_first_attempt_SHA256": "a387896f6ed1d98f0f2450e6e355bda440036b30e5f053d2fd9a93cfadc636fd"
+      },
+      "F": {
+        "controls": "First-difference comparator; all event fields, observed collisions/ties and failure receipts",
+        "fail_closed": true,
+        "observed_adversarial_negative": false,
+        "outcome_falsifier": "No discrepancy in predeclared controls",
+        "full_raw_in_archive": "ESBM_ABH_N257_N276_event_parity_results.zip"
+      },
+      "G": {
+        "independence": "Software implementation contrast only, shared ESBM generator/semantics; no independent human evidence, historic TS comparison NOT executed",
+        "OS": "Linux x86_64; Python 3.13.5 NumPy2.3.5 NetworkX3.6.1 g++14.2; Boost system headers",
+        "original_historical_Python_TS_comparison_executed": false,
+        "independent_human_reproduction": false
+      },
+      "H": {
+        "prior_id": "P-TRAJECTORY-INVARIANCE",
+        "planned_update": "NO_CHANGE_WITH_REASON unless event-level differential changes technical prior; never numeric invented Bayes",
+        "qualitative_prior_event": "U197",
+        "human_prior_changed": false
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after_planned": 7,
+        "scientific_grade": "0/3",
+        "STOP_R5_human": true,
+        "CT2_after": 7,
+        "grade": "0/3",
+        "technical_QA": "TECHNICAL_PASS"
+      },
+      "J": {
+        "decision": "CLOSE_PASS_TECHNICAL_ONLY",
+        "cycle_budget_remaining_before": 17,
+        "remaining_after": 16,
+        "slot_counted_once": true,
+        "invalid_first_attempt_preserved": true
+      }
+    },
+    {
+      "cycle": "N261",
+      "A": {
+        "question": "Institutional same-norm exposure policy ordered event and couple parity, six seeds.",
+        "estimand": "Individual directed event sequence, final relationship edges and first divergence; 6 seeds x 16 ticks",
+        "population": "144 artificial agents (or named synthetic graph) with no human observation"
+      },
+      "B": {
+        "rival": "Python/NumPy original-semantics reconstruction with NetworkX maxcardinality integer objective versus separate Python list-state replay using C++ Boost; not the historical TS ZIP",
+        "null": "No proven parity or failure due to missing instrument, crash, timeout or objective/edge discrepancy"
+      },
+      "C": {
+        "primary": "Ordered exposures/proposals/responses and matched pairs per tick, not aggregates",
+        "falsifier": "First prespecified mismatch in directed events, objective, pair identities where unique, or crash/timeout; ties classified unresolved"
+      },
+      "D": {
+        "pre_outcome": true,
+        "code_sha256": {
+          "trace_engine.py": "c0c92061100a689ab59698a46e22a96e96d7bb3bd99a21ec292d7aaa30e4415a",
+          "boost_blossom.cpp": "47806e6b331e088d209e51143d18cb5d5cc7a2e2d3d6d8914478bff4b7b8c2d3",
+          "run_campaign.py": "5d39ded9b8602a2d3e58e78934c3a62c0560c7993b85d4af24d60e9bc58302df",
+          "boost_blossom_binary": "96087f807c3845193da871aa8a8f83092c095a0dcf2ab0862ace85b76eebf995"
+        },
+        "seed_rule": "[101,211,307,401,503,601]",
+        "data_provenance": "No original ZIP; newly designed instruments; immutable synthetic fixture hashes in results"
+      },
+      "E": {
+        "status": "EXECUTED",
+        "planned_receipt": "results/N261.json",
+        "planned_events": "results/events/N261_*.json.gz",
+        "outcome": "PASS",
+        "raw_receipt_path": "results/N261.json",
+        "raw_receipt_SHA256": "77f217be9a824152bff75a06f58fa4b351c81231c2161b561bc242ab996a824a",
+        "scenario_seed_parity": 6,
+        "result_detail": "6/6 individual directed event and pair traces matched",
+        "invalid_first_attempt_SHA256": "68475c46966e03fe789ad5888bd32831b107901bb76c3ce655f734ae4cab57f6"
+      },
+      "F": {
+        "controls": "First-difference comparator; all event fields, observed collisions/ties and failure receipts",
+        "fail_closed": true,
+        "observed_adversarial_negative": false,
+        "outcome_falsifier": "No discrepancy in predeclared controls",
+        "full_raw_in_archive": "ESBM_ABH_N257_N276_event_parity_results.zip"
+      },
+      "G": {
+        "independence": "Software implementation contrast only, shared ESBM generator/semantics; no independent human evidence, historic TS comparison NOT executed",
+        "OS": "Linux x86_64; Python 3.13.5 NumPy2.3.5 NetworkX3.6.1 g++14.2; Boost system headers",
+        "original_historical_Python_TS_comparison_executed": false,
+        "independent_human_reproduction": false
+      },
+      "H": {
+        "prior_id": "P-TRAJECTORY-INVARIANCE",
+        "planned_update": "NO_CHANGE_WITH_REASON unless event-level differential changes technical prior; never numeric invented Bayes",
+        "qualitative_prior_event": "U197",
+        "human_prior_changed": false
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after_planned": 7,
+        "scientific_grade": "0/3",
+        "STOP_R5_human": true,
+        "CT2_after": 7,
+        "grade": "0/3",
+        "technical_QA": "TECHNICAL_PASS"
+      },
+      "J": {
+        "decision": "CLOSE_PASS_TECHNICAL_ONLY",
+        "cycle_budget_remaining_before": 16,
+        "remaining_after": 15,
+        "slot_counted_once": true,
+        "invalid_first_attempt_preserved": true
+      }
+    },
+    {
+      "cycle": "N262",
+      "A": {
+        "question": "Explicit same-norm preference event/response/couple parity, six seeds.",
+        "estimand": "Individual directed event sequence, final relationship edges and first divergence; 6 seeds x 16 ticks",
+        "population": "144 artificial agents (or named synthetic graph) with no human observation"
+      },
+      "B": {
+        "rival": "Python/NumPy original-semantics reconstruction with NetworkX maxcardinality integer objective versus separate Python list-state replay using C++ Boost; not the historical TS ZIP",
+        "null": "No proven parity or failure due to missing instrument, crash, timeout or objective/edge discrepancy"
+      },
+      "C": {
+        "primary": "Ordered exposures/proposals/responses and matched pairs per tick, not aggregates",
+        "falsifier": "First prespecified mismatch in directed events, objective, pair identities where unique, or crash/timeout; ties classified unresolved"
+      },
+      "D": {
+        "pre_outcome": true,
+        "code_sha256": {
+          "trace_engine.py": "c0c92061100a689ab59698a46e22a96e96d7bb3bd99a21ec292d7aaa30e4415a",
+          "boost_blossom.cpp": "47806e6b331e088d209e51143d18cb5d5cc7a2e2d3d6d8914478bff4b7b8c2d3",
+          "run_campaign.py": "5d39ded9b8602a2d3e58e78934c3a62c0560c7993b85d4af24d60e9bc58302df",
+          "boost_blossom_binary": "96087f807c3845193da871aa8a8f83092c095a0dcf2ab0862ace85b76eebf995"
+        },
+        "seed_rule": "[101,211,307,401,503,601]",
+        "data_provenance": "No original ZIP; newly designed instruments; immutable synthetic fixture hashes in results"
+      },
+      "E": {
+        "status": "EXECUTED",
+        "planned_receipt": "results/N262.json",
+        "planned_events": "results/events/N262_*.json.gz",
+        "outcome": "PASS",
+        "raw_receipt_path": "results/N262.json",
+        "raw_receipt_SHA256": "34e8ae22d9ef15a843f0f91f409a3c6108314cccca581c76bfc4d387f5a279bd",
+        "scenario_seed_parity": 6,
+        "result_detail": "6/6 individual directed event and pair traces matched",
+        "invalid_first_attempt_SHA256": "1c2ad285c70de96a7ce8b45a1d14c78192ff466ffb7c4bd3b6253529dd479861"
+      },
+      "F": {
+        "controls": "First-difference comparator; all event fields, observed collisions/ties and failure receipts",
+        "fail_closed": true,
+        "observed_adversarial_negative": false,
+        "outcome_falsifier": "No discrepancy in predeclared controls",
+        "full_raw_in_archive": "ESBM_ABH_N257_N276_event_parity_results.zip"
+      },
+      "G": {
+        "independence": "Software implementation contrast only, shared ESBM generator/semantics; no independent human evidence, historic TS comparison NOT executed",
+        "OS": "Linux x86_64; Python 3.13.5 NumPy2.3.5 NetworkX3.6.1 g++14.2; Boost system headers",
+        "original_historical_Python_TS_comparison_executed": false,
+        "independent_human_reproduction": false
+      },
+      "H": {
+        "prior_id": "P-TRAJECTORY-INVARIANCE",
+        "planned_update": "NO_CHANGE_WITH_REASON unless event-level differential changes technical prior; never numeric invented Bayes",
+        "qualitative_prior_event": "U197",
+        "human_prior_changed": false
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after_planned": 7,
+        "scientific_grade": "0/3",
+        "STOP_R5_human": true,
+        "CT2_after": 7,
+        "grade": "0/3",
+        "technical_QA": "TECHNICAL_PASS"
+      },
+      "J": {
+        "decision": "CLOSE_PASS_TECHNICAL_ONLY",
+        "cycle_budget_remaining_before": 15,
+        "remaining_after": 14,
+        "slot_counted_once": true,
+        "invalid_first_attempt_preserved": true
+      }
+    },
+    {
+      "cycle": "N263",
+      "A": {
+        "question": "Popularity rank exposure policy event-level and pair identity parity, six seeds.",
+        "estimand": "Individual directed event sequence, final relationship edges and first divergence; 6 seeds x 16 ticks",
+        "population": "144 artificial agents (or named synthetic graph) with no human observation"
+      },
+      "B": {
+        "rival": "Python/NumPy original-semantics reconstruction with NetworkX maxcardinality integer objective versus separate Python list-state replay using C++ Boost; not the historical TS ZIP",
+        "null": "No proven parity or failure due to missing instrument, crash, timeout or objective/edge discrepancy"
+      },
+      "C": {
+        "primary": "Ordered exposures/proposals/responses and matched pairs per tick, not aggregates",
+        "falsifier": "First prespecified mismatch in directed events, objective, pair identities where unique, or crash/timeout; ties classified unresolved"
+      },
+      "D": {
+        "pre_outcome": true,
+        "code_sha256": {
+          "trace_engine.py": "c0c92061100a689ab59698a46e22a96e96d7bb3bd99a21ec292d7aaa30e4415a",
+          "boost_blossom.cpp": "47806e6b331e088d209e51143d18cb5d5cc7a2e2d3d6d8914478bff4b7b8c2d3",
+          "run_campaign.py": "5d39ded9b8602a2d3e58e78934c3a62c0560c7993b85d4af24d60e9bc58302df",
+          "boost_blossom_binary": "96087f807c3845193da871aa8a8f83092c095a0dcf2ab0862ace85b76eebf995"
+        },
+        "seed_rule": "[101,211,307,401,503,601]",
+        "data_provenance": "No original ZIP; newly designed instruments; immutable synthetic fixture hashes in results"
+      },
+      "E": {
+        "status": "EXECUTED",
+        "planned_receipt": "results/N263.json",
+        "planned_events": "results/events/N263_*.json.gz",
+        "outcome": "PASS",
+        "raw_receipt_path": "results/N263.json",
+        "raw_receipt_SHA256": "6e8f5809c1220abc5138cdce9c9dd3b542db55d592ce703f9b0efd5ab8a2aadb",
+        "scenario_seed_parity": 6,
+        "result_detail": "6/6 individual directed event and pair traces matched",
+        "invalid_first_attempt_SHA256": "2a14b3e0ac6ed99259cae599987d41555d592ce703f9b0efd5ab8a2aadb"
+      },
+      "F": {
+        "controls": "First-difference comparator; all event fields, observed collisions/ties and failure receipts",
+        "fail_closed": true,
+        "observed_adversarial_negative": false,
+        "outcome_falsifier": "No discrepancy in predeclared controls",
+        "full_raw_in_archive": "ESBM_ABH_N257_N276_event_parity_results.zip"
+      },
+      "G": {
+        "independence": "Software implementation contrast only, shared ESBM generator/semantics; no independent human evidence, historic TS comparison NOT executed",
+        "OS": "Linux x86_64; Python 3.13.5 NumPy2.3.5 NetworkX3.6.1 g++14.2; Boost system headers",
+        "original_historical_Python_TS_comparison_executed": false,
+        "independent_human_reproduction": false
+      },
+      "H": {
+        "prior_id": "P-TRAJECTORY-INVARIANCE",
+        "planned_update": "NO_CHANGE_WITH_REASON unless event-level differential changes technical prior; never numeric invented Bayes",
+        "qualitative_prior_event": "U197",
+        "human_prior_changed": false
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after_planned": 7,
+        "scientific_grade": "0/3",
+        "STOP_R5_human": true,
+        "CT2_after": 7,
+        "grade": "0/3",
+        "technical_QA": "TECHNICAL_PASS"
+      },
+      "J": {
+        "decision": "CLOSE_PASS_TECHNICAL_ONLY",
+        "cycle_budget_remaining_before": 14,
+        "remaining_after": 13,
+        "slot_counted_once": true,
+        "invalid_first_attempt_preserved": true
+      }
+    },
+    {
+      "cycle": "N264",
+      "A": {
+        "question": "Visibility balancing sequential feedback event-level and pair identity parity, six seeds.",
+        "estimand": "Individual directed event sequence, final relationship edges and first divergence; 6 seeds x 16 ticks",
+        "population": "144 artificial agents (or named synthetic graph) with no human observation"
+      },
+      "B": {
+        "rival": "Python/NumPy original-semantics reconstruction with NetworkX maxcardinality integer objective versus separate Python list-state replay using C++ Boost; not the historical TS ZIP",
+        "null": "No proven parity or failure due to missing instrument, crash, timeout or objective/edge discrepancy"
+      },
+      "C": {
+        "primary": "Ordered exposures/proposals/responses and matched pairs per tick, not aggregates",
+        "falsifier": "First prespecified mismatch in directed events, objective, pair identities where unique, or crash/timeout; ties classified unresolved"
+      },
+      "D": {
+        "pre_outcome": true,
+        "code_sha256": {
+          "trace_engine.py": "c0c92061100a689ab59698a46e22a96e96d7bb3bd99a21ec292d7aaa30e4415a",
+          "boost_blossom.cpp": "47806e6b331e088d209e51143d18cb5d5cc7a2e2d3d6d8914478bff4b7b8c2d3",
+          "run_campaign.py": "5d39ded9b8602a2d3e58e78934c3a62c0560c7993b85d4af24d60e9bc58302df",
+          "boost_blossom_binary": "96087f807c3845193da871aa8a8f83092c095a0dcf2ab0862ace85b76eebf995"
+        },
+        "seed_rule": "[101,211,307,401,503,601]",
+        "data_provenance": "No original ZIP; newly designed instruments; immutable synthetic fixture hashes in results"
+      },
+      "E": {
+        "status": "EXECUTED",
+        "planned_receipt": "results/N264.json",
+        "planned_events": "results/events/N264_*.json.gz",
+        "outcome": "PASS",
+        "raw_receipt_path": "results/N264.json",
+        "raw_receipt_SHA256": "643049f291f6c2e1b7999a4260f7966085fdc9723ccc7598745c1b252bbf0b9c",
+        "scenario_seed_parity": 6,
+        "result_detail": "6/6 individual directed event and pair traces matched",
+        "invalid_first_attempt_SHA256": null
+      },
+      "F": {
+        "controls": "First-difference comparator; all event fields, observed collisions/ties and failure receipts",
+        "fail_closed": true,
+        "observed_adversarial_negative": false,
+        "outcome_falsifier": "No discrepancy in predeclared controls",
+        "full_raw_in_archive": "ESBM_ABH_N257_N276_event_parity_results.zip"
+      },
+      "G": {
+        "independence": "Software implementation contrast only, shared ESBM generator/semantics; no independent human evidence, historic TS comparison NOT executed",
+        "OS": "Linux x86_64; Python 3.13.5 NumPy2.3.5 NetworkX3.6.1 g++14.2; Boost system headers",
+        "original_historical_Python_TS_comparison_executed": false,
+        "independent_human_reproduction": false
+      },
+      "H": {
+        "prior_id": "P-TRAJECTORY-INVARIANCE",
+        "planned_update": "NO_CHANGE_WITH_REASON unless event-level differential changes technical prior; never numeric invented Bayes",
+        "qualitative_prior_event": "U197",
+        "human_prior_changed": false
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after_planned": 7,
+        "scientific_grade": "0/3",
+        "STOP_R5_human": true,
+        "CT2_after": 7,
+        "grade": "0/3",
+        "technical_QA": "TECHNICAL_PASS"
+      },
+      "J": {
+        "decision": "CLOSE_PASS_TECHNICAL_ONLY",
+        "cycle_budget_remaining_before": 13,
+        "remaining_after": 12,
+        "slot_counted_once": true,
+        "invalid_first_attempt_preserved": false
+      }
+    },
+    {
+      "cycle": "N265",
+      "A": {
+        "question": "Private rejection learning with stateful aspirations, full directed event parity, six seeds.",
+        "estimand": "Individual directed event sequence, final relationship edges and first divergence; 6 seeds x 16 ticks",
+        "population": "144 artificial agents (or named synthetic graph) with no human observation"
+      },
+      "B": {
+        "rival": "Python/NumPy original-semantics reconstruction with NetworkX maxcardinality integer objective versus separate Python list-state replay using C++ Boost; not the historical TS ZIP",
+        "null": "No proven parity or failure due to missing instrument, crash, timeout or objective/edge discrepancy"
+      },
+      "C": {
+        "primary": "Ordered exposures/proposals/responses and matched pairs per tick, not aggregates",
+        "falsifier": "First prespecified mismatch in directed events, objective, pair identities where unique, or crash/timeout; ties classified unresolved"
+      },
+      "D": {
+        "pre_outcome": true,
+        "code_sha256": {
+          "trace_engine.py": "c0c92061100a689ab59698a46e22a96e96d7bb3bd99a21ec292d7aaa30e4415a",
+          "boost_blossom.cpp": "47806e6b331e088d209e51143d18cb5d5cc7a2e2d3d6d8914478bff4b7b8c2d3",
+          "run_campaign.py": "5d39ded9b8602a2d3e58e78934c3a62c0560c7993b85d4af24d60e9bc58302df",
+          "boost_blossom_binary": "96087f807c3845193da871aa8a8f83092c095a0dcf2ab0862ace85b76eebf995"
+        },
+        "seed_rule": "[101,211,307,401,503,601]",
+        "data_provenance": "No original ZIP; newly designed instruments; immutable synthetic fixture hashes in results"
+      },
+      "E": {
+        "status": "EXECUTED",
+        "planned_receipt": "results/N265.json",
+        "planned_events": "results/events/N265_*.json.gz",
+        "outcome": "PASS",
+        "raw_receipt_path": "results/N265.json",
+        "raw_receipt_SHA256": "175944ca01d6193c5f3c7acdac186eb32fc1e48c277aa7bca1bef0dfd4cd2346",
+        "scenario_seed_parity": 6,
+        "result_detail": "6/6 individual directed event and pair traces matched",
+        "invalid_first_attempt_SHA256": null
+      },
+      "F": {
+        "controls": "First-difference comparator; all event fields, observed collisions/ties and failure receipts",
+        "fail_closed": true,
+        "observed_adversarial_negative": false,
+        "outcome_falsifier": "No discrepancy in predeclared controls",
+        "full_raw_in_archive": "ESBM_ABH_N257_N276_event_parity_results.zip"
+      },
+      "G": {
+        "independence": "Software implementation contrast only, shared ESBM generator/semantics; no independent human evidence, historic TS comparison NOT executed",
+        "OS": "Linux x86_64; Python 3.13.5 NumPy2.3.5 NetworkX3.6.1 g++14.2; Boost system headers",
+        "original_historical_Python_TS_comparison_executed": false,
+        "independent_human_reproduction": false
+      },
+      "H": {
+        "prior_id": "P-TRAJECTORY-INVARIANCE",
+        "planned_update": "NO_CHANGE_WITH_REASON unless event-level differential changes technical prior; never numeric invented Bayes",
+        "qualitative_prior_event": "U197",
+        "human_prior_changed": false
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after_planned": 7,
+        "scientific_grade": "0/3",
+        "STOP_R5_human": true,
+        "CT2_after": 7,
+        "grade": "0/3",
+        "technical_QA": "TECHNICAL_PASS"
+      },
+      "J": {
+        "decision": "CLOSE_PASS_TECHNICAL_ONLY",
+        "cycle_budget_remaining_before": 12,
+        "remaining_after": 11,
+        "slot_counted_once": true,
+        "invalid_first_attempt_preserved": false
+      }
+    },
+    {
+      "cycle": "N266",
+      "A": {
+        "question": "Public rejection signal with stateful reputation, full directed event parity, six seeds.",
+        "estimand": "Individual directed event sequence, final relationship edges and first divergence; 6 seeds x 16 ticks",
+        "population": "144 artificial agents (or named synthetic graph) with no human observation"
+      },
+      "B": {
+        "rival": "Python/NumPy original-semantics reconstruction with NetworkX maxcardinality integer objective versus separate Python list-state replay using C++ Boost; not the historical TS ZIP",
+        "null": "No proven parity or failure due to missing instrument, crash, timeout or objective/edge discrepancy"
+      },
+      "C": {
+        "primary": "Ordered exposures/proposals/responses and matched pairs per tick, not aggregates",
+        "falsifier": "First prespecified mismatch in directed events, objective, pair identities where unique, or crash/timeout; ties classified unresolved"
+      },
+      "D": {
+        "pre_outcome": true,
+        "code_sha256": {
+          "trace_engine.py": "c0c92061100a689ab59698a46e22a96e96d7bb3bd99a21ec292d7aaa30e4415a",
+          "boost_blossom.cpp": "47806e6b331e088d209e51143d18cb5d5cc7a2e2d3d6d8914478bff4b7b8c2d3",
+          "run_campaign.py": "5d39ded9b8602a2d3e58e78934c3a62c0560c7993b85d4af24d60e9bc58302df",
+          "boost_blossom_binary": "96087f807c3845193da871aa8a8f83092c095a0dcf2ab0862ace85b76eebf995"
+        },
+        "seed_rule": "[101,211,307,401,503,601]",
+        "data_provenance": "No original ZIP; newly designed instruments; immutable synthetic fixture hashes in results"
+      },
+      "E": {
+        "status": "EXECUTED",
+        "planned_receipt": "results/N266.json",
+        "planned_events": "results/events/N266_*.json.gz",
+        "outcome": "PASS",
+        "raw_receipt_path": "results/N266.json",
+        "raw_receipt_SHA256": "72bc5df23d4d5fcf64058a3fa9c08d5a83c6088dc278f4a5b6ebfa42b4eb5fbf",
+        "scenario_seed_parity": 6,
+        "result_detail": "6/6 individual directed event and pair traces matched",
+        "invalid_first_attempt_SHA256": null
+      },
+      "F": {
+        "controls": "First-difference comparator; all event fields, observed collisions/ties and failure receipts",
+        "fail_closed": true,
+        "observed_adversarial_negative": false,
+        "outcome_falsifier": "No discrepancy in predeclared controls",
+        "full_raw_in_archive": "ESBM_ABH_N257_N276_event_parity_results.zip"
+      },
+      "G": {
+        "independence": "Software implementation contrast only, shared ESBM generator/semantics; no independent human evidence, historic TS comparison NOT executed",
+        "OS": "Linux x86_64; Python 3.13.5 NumPy2.3.5 NetworkX3.6.1 g++14.2; Boost system headers",
+        "original_historical_Python_TS_comparison_executed": false,
+        "independent_human_reproduction": false
+      },
+      "H": {
+        "prior_id": "P-TRAJECTORY-INVARIANCE",
+        "planned_update": "NO_CHANGE_WITH_REASON unless event-level differential changes technical prior; never numeric invented Bayes",
+        "qualitative_prior_event": "U197",
+        "human_prior_changed": false
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after_planned": 7,
+        "scientific_grade": "0/3",
+        "STOP_R5_human": true,
+        "CT2_after": 7,
+        "grade": "0/3",
+        "technical_QA": "TECHNICAL_PASS"
+      },
+      "J": {
+        "decision": "CLOSE_PASS_TECHNICAL_ONLY",
+        "cycle_budget_remaining_before": 11,
+        "remaining_after": 10,
+        "slot_counted_once": true,
+        "invalid_first_attempt_preserved": false
+      }
+    },
+    {
+      "cycle": "N267",
+      "A": {
+        "question": "Longer partnership duration perturbation with dissolution timestamps, event parity, six seeds.",
+        "estimand": "Individual directed event sequence, final relationship edges and first divergence; 6 seeds x 16 ticks",
+        "population": "144 artificial agents (or named synthetic graph) with no human observation"
+      },
+      "B": {
+        "rival": "Python/NumPy original-semantics reconstruction with NetworkX maxcardinality integer objective versus separate Python list-state replay using C++ Boost; not the historical TS ZIP",
+        "null": "No proven parity or failure due to missing instrument, crash, timeout or objective/edge discrepancy"
+      },
+      "C": {
+        "primary": "Ordered exposures/proposals/responses and matched pairs per tick, not aggregates",
+        "falsifier": "First prespecified mismatch in directed events, objective, pair identities where unique, or crash/timeout; ties classified unresolved"
+      },
+      "D": {
+        "pre_outcome": true,
+        "code_sha256": {
+          "trace_engine.py": "c0c92061100a689ab59698a46e22a96e96d7bb3bd99a21ec292d7aaa30e4415a",
+          "boost_blossom.cpp": "47806e6b331e088d209e51143d18cb5d5cc7a2e2d3d6d8914478bff4b7b8c2d3",
+          "run_campaign.py": "5d39ded9b8602a2d3e58e78934c3a62c0560c7993b85d4af24d60e9bc58302df",
+          "boost_blossom_binary": "96087f807c3845193da871aa8a8f83092c095a0dcf2ab0862ace85b76eebf995"
+        },
+        "seed_rule": "[101,211,307,401,503,601]",
+        "data_provenance": "No original ZIP; newly designed instruments; immutable synthetic fixture hashes in results"
+      },
+      "E": {
+        "status": "EXECUTED",
+        "planned_receipt": "results/N267.json",
+        "planned_events": "results/events/N267_*.json.gz",
+        "outcome": "PASS",
+        "raw_receipt_path": "results/N267.json",
+        "raw_receipt_SHA256": "c7807b01177633313dc534f8945ace907b7a166f3f59b5962eb050f926bc5f15",
+        "scenario_seed_parity": 6,
+        "result_detail": "6/6 individual directed event and pair traces matched",
+        "invalid_first_attempt_SHA256": null
+      },
+      "F": {
+        "controls": "First-difference comparator; all event fields, observed collisions/ties and failure receipts",
+        "fail_closed": true,
+        "observed_adversarial_negative": false,
+        "outcome_falsifier": "No discrepancy in predeclared controls",
+        "full_raw_in_archive": "ESBM_ABH_N257_N276_event_parity_results.zip"
+      },
+      "G": {
+        "independence": "Software implementation contrast only, shared ESBM generator/semantics; no independent human evidence, historic TS comparison NOT executed",
+        "OS": "Linux x86_64; Python 3.13.5 NumPy2.3.5 NetworkX3.6.1 g++14.2; Boost system headers",
+        "original_historical_Python_TS_comparison_executed": false,
+        "independent_human_reproduction": false
+      },
+      "H": {
+        "prior_id": "P-TRAJECTORY-INVARIANCE",
+        "planned_update": "NO_CHANGE_WITH_REASON unless event-level differential changes technical prior; never numeric invented Bayes",
+        "qualitative_prior_event": "U197",
+        "human_prior_changed": false
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after_planned": 7,
+        "scientific_grade": "0/3",
+        "STOP_R5_human": true,
+        "CT2_after": 7,
+        "grade": "0/3",
+        "technical_QA": "TECHNICAL_PASS"
+      },
+      "J": {
+        "decision": "CLOSE_PASS_TECHNICAL_ONLY",
+        "cycle_budget_remaining_before": 10,
+        "remaining_after": 9,
+        "slot_counted_once": true,
+        "invalid_first_attempt_preserved": false
+      }
+    },
+    {
+      "cycle": "N268",
+      "A": {
+        "question": "Shorter partnership duration perturbation with dissolution timestamps, event parity, six seeds.",
+        "estimand": "Individual directed event sequence, final relationship edges and first divergence; 6 seeds x 16 ticks",
+        "population": "144 artificial agents (or named synthetic graph) with no human observation"
+      },
+      "B": {
+        "rival": "Python/NumPy original-semantics reconstruction with NetworkX maxcardinality integer objective versus separate Python list-state replay using C++ Boost; not the historical TS ZIP",
+        "null": "No proven parity or failure due to missing instrument, crash, timeout or objective/edge discrepancy"
+      },
+      "C": {
+        "primary": "Ordered exposures/proposals/responses and matched pairs per tick, not aggregates",
+        "falsifier": "First prespecified mismatch in directed events, objective, pair identities where unique, or crash/timeout; ties classified unresolved"
+      },
+      "D": {
+        "pre_outcome": true,
+        "code_sha256": {
+          "trace_engine.py": "c0c92061100a689ab59698a46e22a96e96d7bb3bd99a21ec292d7aaa30e4415a",
+          "boost_blossom.cpp": "47806e6b331e088d209e51143d18cb5d5cc7a2e2d3d6d8914478bff4b7b8c2d3",
+          "run_campaign.py": "5d39ded9b8602a2d3e58e78934c3a62c0560c7993b85d4af24d60e9bc58302df",
+          "boost_blossom_binary": "96087f807c3845193da871aa8a8f83092c095a0dcf2ab0862ace85b76eebf995"
+        },
+        "seed_rule": "[101,211,307,401,503,601]",
+        "data_provenance": "No original ZIP; newly designed instruments; immutable synthetic fixture hashes in results"
+      },
+      "E": {
+        "status": "EXECUTED",
+        "planned_receipt": "results/N268.json",
+        "planned_events": "results/events/N268_*.json.gz",
+        "outcome": "PASS",
+        "raw_receipt_path": "results/N268.json",
+        "raw_receipt_SHA256": "cde2d67c42ce44c18bf81351afe27ac4060dbcde917b264487dd2186dcb49f3b",
+        "scenario_seed_parity": 6,
+        "result_detail": "6/6 individual directed event and pair traces matched",
+        "invalid_first_attempt_SHA256": null
+      },
+      "F": {
+        "controls": "First-difference comparator; all event fields, observed collisions/ties and failure receipts",
+        "fail_closed": true,
+        "observed_adversarial_negative": false,
+        "outcome_falsifier": "No discrepancy in predeclared controls",
+        "full_raw_in_archive": "ESBM_ABH_N257_N276_event_parity_results.zip"
+      },
+      "G": {
+        "independence": "Software implementation contrast only, shared ESBM generator/semantics; no independent human evidence, historic TS comparison NOT executed",
+        "OS": "Linux x86_64; Python 3.13.5 NumPy2.3.5 NetworkX3.6.1 g++14.2; Boost system headers",
+        "original_historical_Python_TS_comparison_executed": false,
+        "independent_human_reproduction": false
+      },
+      "H": {
+        "prior_id": "P-TRAJECTORY-INVARIANCE",
+        "planned_update": "NO_CHANGE_WITH_REASON unless event-level differential changes technical prior; never numeric invented Bayes",
+        "qualitative_prior_event": "U197",
+        "human_prior_changed": false
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after_planned": 7,
+        "scientific_grade": "0/3",
+        "STOP_R5_human": true,
+        "CT2_after": 7,
+        "grade": "0/3",
+        "technical_QA": "TECHNICAL_PASS"
+      },
+      "J": {
+        "decision": "CLOSE_PASS_TECHNICAL_ONLY",
+        "cycle_budget_remaining_before": 9,
+        "remaining_after": 8,
+        "slot_counted_once": true,
+        "invalid_first_attempt_preserved": false
+      }
+    },
+    {
+      "cycle": "N269",
+      "A": {
+        "question": "True nonuniqueness witness: known two optimum 4-cycle; distinguish equal objective from identical chosen edge set.",
+        "estimand": "Specific technical invariant and first failure on fixed synthetic controls",
+        "population": "144 artificial agents (or named synthetic graph) with no human observation"
+      },
+      "B": {
+        "rival": "Python/NumPy original-semantics reconstruction with NetworkX maxcardinality integer objective versus separate Python list-state replay using C++ Boost; not the historical TS ZIP",
+        "null": "No proven parity or failure due to missing instrument, crash, timeout or objective/edge discrepancy"
+      },
+      "C": {
+        "primary": "True nonuniqueness witness: known two optimum 4-cycle; distinguish equal objective from identical chosen edge set.",
+        "falsifier": "First prespecified mismatch in directed events, objective, pair identities where unique, or crash/timeout; ties classified unresolved"
+      },
+      "D": {
+        "pre_outcome": true,
+        "code_sha256": {
+          "trace_engine.py": "c0c92061100a689ab59698a46e22a96e96d7bb3bd99a21ec292d7aaa30e4415a",
+          "boost_blossom.cpp": "47806e6b331e088d209e51143d18cb5d5cc7a2e2d3d6d8914478bff4b7b8c2d3",
+          "run_campaign.py": "5d39ded9b8602a2d3e58e78934c3a62c0560c7993b85d4af24d60e9bc58302df",
+          "boost_blossom_binary": "96087f807c3845193da871aa8a8f83092c095a0dcf2ab0862ace85b76eebf995"
+        },
+        "seed_rule": "Fixed synthetic seeds stated in frozen run_campaign.py",
+        "data_provenance": "No original ZIP; newly designed instruments; immutable synthetic fixture hashes in results"
+      },
+      "E": {
+        "status": "EXECUTED",
+        "planned_receipt": "results/N269.json",
+        "planned_events": null,
+        "outcome": "PASS",
+        "raw_receipt_path": "results/N269.json",
+        "raw_receipt_SHA256": "7efe0f662895e7fa035e679e0cb2d19598b1cf12d78ef6f9dd0055d744527520",
+        "scenario_seed_parity": null,
+        "result_detail": "four-cycle has multiple optimal edge sets; both solvers chose one identical set",
+        "invalid_first_attempt_SHA256": null
+      },
+      "F": {
+        "controls": "Exact cardinality+integer weight oracles, metamorphic cases and error-preserving output",
+        "fail_closed": true,
+        "observed_adversarial_negative": false,
+        "outcome_falsifier": "No discrepancy in predeclared controls",
+        "full_raw_in_archive": "ESBM_ABH_N257_N276_event_parity_results.zip"
+      },
+      "G": {
+        "independence": "Software implementation contrast only, shared ESBM generator/semantics; no independent human evidence, historic TS comparison NOT executed",
+        "OS": "Linux x86_64; Python 3.13.5 NumPy2.3.5 NetworkX3.6.1 g++14.2; Boost system headers",
+        "original_historical_Python_TS_comparison_executed": false,
+        "independent_human_reproduction": false
+      },
+      "H": {
+        "prior_id": "P-TRAJECTORY-INVARIANCE",
+        "planned_update": "NO_CHANGE_WITH_REASON unless event-level differential changes technical prior; never numeric invented Bayes",
+        "qualitative_prior_event": "U197",
+        "human_prior_changed": false
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after_planned": 7,
+        "scientific_grade": "0/3",
+        "STOP_R5_human": true,
+        "CT2_after": 7,
+        "grade": "0/3",
+        "technical_QA": "TECHNICAL_PASS"
+      },
+      "J": {
+        "decision": "CLOSE_PASS_TECHNICAL_ONLY",
+        "cycle_budget_remaining_before": 8,
+        "remaining_after": 7,
+        "slot_counted_once": true,
+        "invalid_first_attempt_preserved": false
+      }
+    },
+    {
+      "cycle": "N270",
+      "A": {
+        "question": "Metamorphic relabelling for unique-ish and intentionally tied n32 graphs; objective invariant, pair identity conditional on uniqueness.",
+        "estimand": "Specific technical invariant and first failure on fixed synthetic controls",
+        "population": "144 artificial agents (or named synthetic graph) with no human observation"
+      },
+      "B": {
+        "rival": "Python/NumPy original-semantics reconstruction with NetworkX maxcardinality integer objective versus separate Python list-state replay using C++ Boost; not the historical TS ZIP",
+        "null": "No proven parity or failure due to missing instrument, crash, timeout or objective/edge discrepancy"
+      },
+      "C": {
+        "primary": "Metamorphic relabelling for unique-ish and intentionally tied n32 graphs; objective invariant, pair identity conditional on uniqueness.",
+        "falsifier": "First prespecified mismatch in directed events, objective, pair identities where unique, or crash/timeout; ties classified unresolved"
+      },
+      "D": {
+        "pre_outcome": true,
+        "code_sha256": {
+          "trace_engine.py": "c0c92061100a689ab59698a46e22a96e96d7bb3bd99a21ec292d7aaa30e4415a",
+          "boost_blossom.cpp": "47806e6b331e088d209e51143d18cb5d5cc7a2e2d3d6d8914478bff4b7b8c2d3",
+          "run_campaign.py": "5d39ded9b8602a2d3e58e78934c3a62c0560c7993b85d4af24d60e9bc58302df",
+          "boost_blossom_binary": "96087f807c3845193da871aa8a8f83092c095a0dcf2ab0862ace85b76eebf995"
+        },
+        "seed_rule": "Fixed synthetic seeds stated in frozen run_campaign.py",
+        "data_provenance": "No original ZIP; newly designed instruments; immutable synthetic fixture hashes in results"
+      },
+      "E": {
+        "status": "EXECUTED",
+        "planned_receipt": "results/N270.json",
+        "planned_events": null,
+        "outcome": "PASS",
+        "raw_receipt_path": "results/N270.json",
+        "raw_receipt_SHA256": "12677865edf59475a2a905887aa719842db95cd26433f58ca9412908aef82c81",
+        "scenario_seed_parity": null,
+        "result_detail": "six node relabel tests objective invariant 6/6, edge identity diverged in 4 tied cases",
+        "invalid_first_attempt_SHA256": null
+      },
+      "F": {
+        "controls": "Exact cardinality+integer weight oracles, metamorphic cases and error-preserving output",
+        "fail_closed": true,
+        "observed_adversarial_negative": false,
+        "outcome_falsifier": "No discrepancy in predeclared controls",
+        "full_raw_in_archive": "ESBM_ABH_N257_N276_event_parity_results.zip"
+      },
+      "G": {
+        "independence": "Software implementation contrast only, shared ESBM generator/semantics; no independent human evidence, historic TS comparison NOT executed",
+        "OS": "Linux x86_64; Python 3.13.5 NumPy2.3.5 NetworkX3.6.1 g++14.2; Boost system headers",
+        "original_historical_Python_TS_comparison_executed": false,
+        "independent_human_reproduction": false
+      },
+      "H": {
+        "prior_id": "P-TRAJECTORY-INVARIANCE",
+        "planned_update": "NO_CHANGE_WITH_REASON unless event-level differential changes technical prior; never numeric invented Bayes",
+        "qualitative_prior_event": "U197",
+        "human_prior_changed": false
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after_planned": 7,
+        "scientific_grade": "0/3",
+        "STOP_R5_human": true,
+        "CT2_after": 7,
+        "grade": "0/3",
+        "technical_QA": "TECHNICAL_PASS"
+      },
+      "J": {
+        "decision": "CLOSE_PASS_TECHNICAL_ONLY",
+        "cycle_budget_remaining_before": 7,
+        "remaining_after": 6,
+        "slot_counted_once": true,
+        "invalid_first_attempt_preserved": false
+      }
+    },
+    {
+      "cycle": "N271",
+      "A": {
+        "question": "Metamorphic edge insertion-order reversal on n143/n144: test objective stability and crash sensitivity.",
+        "estimand": "Specific technical invariant and first failure on fixed synthetic controls",
+        "population": "144 artificial agents (or named synthetic graph) with no human observation"
+      },
+      "B": {
+        "rival": "Python/NumPy original-semantics reconstruction with NetworkX maxcardinality integer objective versus separate Python list-state replay using C++ Boost; not the historical TS ZIP",
+        "null": "No proven parity or failure due to missing instrument, crash, timeout or objective/edge discrepancy"
+      },
+      "C": {
+        "primary": "Metamorphic edge insertion-order reversal on n143/n144: test objective stability and crash sensitivity.",
+        "falsifier": "First prespecified mismatch in directed events, objective, pair identities where unique, or crash/timeout; ties classified unresolved"
+      },
+      "D": {
+        "pre_outcome": true,
+        "code_sha256": {
+          "trace_engine.py": "c0c92061100a689ab59698a46e22a96e96d7bb3bd99a21ec292d7aaa30e4415a",
+          "boost_blossom.cpp": "47806e6b331e088d209e51143d18cb5d5cc7a2e2d3d6d8914478bff4b7b8c2d3",
+          "run_campaign.py": "5d39ded9b8602a2d3e58e78934c3a62c0560c7993b85d4af24d60e9bc58302df",
+          "boost_blossom_binary": "96087f807c3845193da871aa8a8f83092c095a0dcf2ab0862ace85b76eebf995"
+        },
+        "seed_rule": "Fixed synthetic seeds stated in frozen run_campaign.py",
+        "data_provenance": "No original ZIP; newly designed instruments; immutable synthetic fixture hashes in results"
+      },
+      "E": {
+        "status": "EXECUTED",
+        "planned_receipt": "results/N271.json",
+        "planned_events": null,
+        "outcome": "PASS",
+        "raw_receipt_path": "results/N271.json",
+        "raw_receipt_SHA256": "4bd632bb7c665930d14e5ee9d2cd1b47c74d337d5ed681065f4edecaeb388105",
+        "scenario_seed_parity": null,
+        "result_detail": "six graph edge-order reversals objective and pairs invariant in controls",
+        "invalid_first_attempt_SHA256": null
+      },
+      "F": {
+        "controls": "Exact cardinality+integer weight oracles, metamorphic cases and error-preserving output",
+        "fail_closed": true,
+        "observed_adversarial_negative": false,
+        "outcome_falsifier": "No discrepancy in predeclared controls",
+        "full_raw_in_archive": "ESBM_ABH_N257_N276_event_parity_results.zip"
+      },
+      "G": {
+        "independence": "Software implementation contrast only, shared ESBM generator/semantics; no independent human evidence, historic TS comparison NOT executed",
+        "OS": "Linux x86_64; Python 3.13.5 NumPy2.3.5 NetworkX3.6.1 g++14.2; Boost system headers",
+        "original_historical_Python_TS_comparison_executed": false,
+        "independent_human_reproduction": false
+      },
+      "H": {
+        "prior_id": "P-TRAJECTORY-INVARIANCE",
+        "planned_update": "NO_CHANGE_WITH_REASON unless event-level differential changes technical prior; never numeric invented Bayes",
+        "qualitative_prior_event": "U197",
+        "human_prior_changed": false
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after_planned": 7,
+        "scientific_grade": "0/3",
+        "STOP_R5_human": true,
+        "CT2_after": 7,
+        "grade": "0/3",
+        "technical_QA": "TECHNICAL_PASS"
+      },
+      "J": {
+        "decision": "CLOSE_PASS_TECHNICAL_ONLY",
+        "cycle_budget_remaining_before": 6,
+        "remaining_after": 5,
+        "slot_counted_once": true,
+        "invalid_first_attempt_preserved": false
+      }
+    },
+    {
+      "cycle": "N272",
+      "A": {
+        "question": "Comparator-isolation: four N144 5-tick cases with identical NetworkX solver but independently coded event state loops; isolate event implementation.",
+        "estimand": "Specific technical invariant and first failure on fixed synthetic controls",
+        "population": "144 artificial agents (or named synthetic graph) with no human observation"
+      },
+      "B": {
+        "rival": "Python/NumPy original-semantics reconstruction with NetworkX maxcardinality integer objective versus separate Python list-state replay using C++ Boost; not the historical TS ZIP",
+        "null": "No proven parity or failure due to missing instrument, crash, timeout or objective/edge discrepancy"
+      },
+      "C": {
+        "primary": "Comparator-isolation: four N144 5-tick cases with identical NetworkX solver but independently coded event state loops; isolate event implementation.",
+        "falsifier": "First prespecified mismatch in directed events, objective, pair identities where unique, or crash/timeout; ties classified unresolved"
+      },
+      "D": {
+        "pre_outcome": true,
+        "code_sha256": {
+          "trace_engine.py": "c0c92061100a689ab59698a46e22a96e96d7bb3bd99a21ec292d7aaa30e4415a",
+          "boost_blossom.cpp": "47806e6b331e088d209e51143d18cb5d5cc7a2e2d3d6d8914478bff4b7b8c2d3",
+          "run_campaign.py": "5d39ded9b8602a2d3e58e78934c3a62c0560c7993b85d4af24d60e9bc58302df",
+          "boost_blossom_binary": "96087f807c3845193da871aa8a8f83092c095a0dcf2ab0862ace85b76eebf995"
+        },
+        "seed_rule": "Fixed synthetic seeds stated in frozen run_campaign.py",
+        "data_provenance": "No original ZIP; newly designed instruments; immutable synthetic fixture hashes in results"
+      },
+      "E": {
+        "status": "EXECUTED",
+        "planned_receipt": "results/N272.json",
+        "planned_events": null,
+        "outcome": "PASS",
+        "raw_receipt_path": "results/N272.json",
+        "raw_receipt_SHA256": "4e6e4cf5360e7870ad40ce64697335434bf9e8c3629357107ab0c3392bec0898",
+        "scenario_seed_parity": null,
+        "result_detail": "four same-NetworkX controls confirm independent state-loop event processing first five ticks",
+        "invalid_first_attempt_SHA256": null
+      },
+      "F": {
+        "controls": "Exact cardinality+integer weight oracles, metamorphic cases and error-preserving output",
+        "fail_closed": true,
+        "observed_adversarial_negative": false,
+        "outcome_falsifier": "No discrepancy in predeclared controls",
+        "full_raw_in_archive": "ESBM_ABH_N257_N276_event_parity_results.zip"
+      },
+      "G": {
+        "independence": "Software implementation contrast only, shared ESBM generator/semantics; no independent human evidence, historic TS comparison NOT executed",
+        "OS": "Linux x86_64; Python 3.13.5 NumPy2.3.5 NetworkX3.6.1 g++14.2; Boost system headers",
+        "original_historical_Python_TS_comparison_executed": false,
+        "independent_human_reproduction": false
+      },
+      "H": {
+        "prior_id": "P-TRAJECTORY-INVARIANCE",
+        "planned_update": "NO_CHANGE_WITH_REASON unless event-level differential changes technical prior; never numeric invented Bayes",
+        "qualitative_prior_event": "U197",
+        "human_prior_changed": false
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after_planned": 7,
+        "scientific_grade": "0/3",
+        "STOP_R5_human": true,
+        "CT2_after": 7,
+        "grade": "0/3",
+        "technical_QA": "TECHNICAL_PASS"
+      },
+      "J": {
+        "decision": "CLOSE_PASS_TECHNICAL_ONLY",
+        "cycle_budget_remaining_before": 5,
+        "remaining_after": 4,
+        "slot_counted_once": true,
+        "invalid_first_attempt_preserved": false
+      }
+    },
+    {
+      "cycle": "N273",
+      "A": {
+        "question": "Event ledger conservation controls in four full 16-tick N144 cases: directed decisions and matching invariants, not aggregate rerun.",
+        "estimand": "Specific technical invariant and first failure on fixed synthetic controls",
+        "population": "144 artificial agents (or named synthetic graph) with no human observation"
+      },
+      "B": {
+        "rival": "Python/NumPy original-semantics reconstruction with NetworkX maxcardinality integer objective versus separate Python list-state replay using C++ Boost; not the historical TS ZIP",
+        "null": "No proven parity or failure due to missing instrument, crash, timeout or objective/edge discrepancy"
+      },
+      "C": {
+        "primary": "Event ledger conservation controls in four full 16-tick N144 cases: directed decisions and matching invariants, not aggregate rerun.",
+        "falsifier": "First prespecified mismatch in directed events, objective, pair identities where unique, or crash/timeout; ties classified unresolved"
+      },
+      "D": {
+        "pre_outcome": true,
+        "code_sha256": {
+          "trace_engine.py": "c0c92061100a689ab59698a46e22a96e96d7bb3bd99a21ec292d7aaa30e4415a",
+          "boost_blossom.cpp": "47806e6b331e088d209e51143d18cb5d5cc7a2e2d3d6d8914478bff4b7b8c2d3",
+          "run_campaign.py": "5d39ded9b8602a2d3e58e78934c3a62c0560c7993b85d4af24d60e9bc58302df",
+          "boost_blossom_binary": "96087f807c3845193da871aa8a8f83092c095a0dcf2ab0862ace85b76eebf995"
+        },
+        "seed_rule": "Fixed synthetic seeds stated in frozen run_campaign.py",
+        "data_provenance": "No original ZIP; newly designed instruments; immutable synthetic fixture hashes in results"
+      },
+      "E": {
+        "status": "EXECUTED",
+        "planned_receipt": "results/N273.json",
+        "planned_events": null,
+        "outcome": "PASS",
+        "raw_receipt_path": "results/N273.json",
+        "raw_receipt_SHA256": "bc6301c2bc7bdb7458d1a12353abf4de91fea6b576402aa77d2c2bf7b88bd873",
+        "scenario_seed_parity": null,
+        "result_detail": "four trace conservation and directed-response audits PASS",
+        "invalid_first_attempt_SHA256": null
+      },
+      "F": {
+        "controls": "Exact cardinality+integer weight oracles, metamorphic cases and error-preserving output",
+        "fail_closed": true,
+        "observed_adversarial_negative": false,
+        "outcome_falsifier": "No discrepancy in predeclared controls",
+        "full_raw_in_archive": "ESBM_ABH_N257_N276_event_parity_results.zip"
+      },
+      "G": {
+        "independence": "Software implementation contrast only, shared ESBM generator/semantics; no independent human evidence, historic TS comparison NOT executed",
+        "OS": "Linux x86_64; Python 3.13.5 NumPy2.3.5 NetworkX3.6.1 g++14.2; Boost system headers",
+        "original_historical_Python_TS_comparison_executed": false,
+        "independent_human_reproduction": false
+      },
+      "H": {
+        "prior_id": "P-TRAJECTORY-INVARIANCE",
+        "planned_update": "NO_CHANGE_WITH_REASON unless event-level differential changes technical prior; never numeric invented Bayes",
+        "qualitative_prior_event": "U197",
+        "human_prior_changed": false
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after_planned": 7,
+        "scientific_grade": "0/3",
+        "STOP_R5_human": true,
+        "CT2_after": 7,
+        "grade": "0/3",
+        "technical_QA": "TECHNICAL_PASS"
+      },
+      "J": {
+        "decision": "CLOSE_PASS_TECHNICAL_ONLY",
+        "cycle_budget_remaining_before": 4,
+        "remaining_after": 3,
+        "slot_counted_once": true,
+        "invalid_first_attempt_preserved": false
+      }
+    },
+    {
+      "cycle": "N274",
+      "A": {
+        "question": "Seven fault injections into exposure, proposal, response, match, active state, seen, bias; first-difference detector must flag correct field.",
+        "estimand": "Specific technical invariant and first failure on fixed synthetic controls",
+        "population": "144 artificial agents (or named synthetic graph) with no human observation"
+      },
+      "B": {
+        "rival": "Python/NumPy original-semantics reconstruction with NetworkX maxcardinality integer objective versus separate Python list-state replay using C++ Boost; not the historical TS ZIP",
+        "null": "No proven parity or failure due to missing instrument, crash, timeout or objective/edge discrepancy"
+      },
+      "C": {
+        "primary": "Seven fault injections into exposure, proposal, response, match, active state, seen, bias; first-difference detector must flag correct field.",
+        "falsifier": "First prespecified mismatch in directed events, objective, pair identities where unique, or crash/timeout; ties classified unresolved"
+      },
+      "D": {
+        "pre_outcome": true,
+        "code_sha256": {
+          "trace_engine.py": "c0c92061100a689ab59698a46e22a96e96d7bb3bd99a21ec292d7aaa30e4415a",
+          "boost_blossom.cpp": "47806e6b331e088d209e51143d18cb5d5cc7a2e2d3d6d8914478bff4b7b8c2d3",
+          "run_campaign.py": "5d39ded9b8602a2d3e58e78934c3a62c0560c7993b85d4af24d60e9bc58302df",
+          "boost_blossom_binary": "96087f807c3845193da871aa8a8f83092c095a0dcf2ab0862ace85b76eebf995"
+        },
+        "seed_rule": "Fixed synthetic seeds stated in frozen run_campaign.py",
+        "data_provenance": "No original ZIP; newly designed instruments; immutable synthetic fixture hashes in results"
+      },
+      "E": {
+        "status": "EXECUTED",
+        "planned_receipt": "results/N274.json",
+        "planned_events": null,
+        "outcome": "PASS",
+        "raw_receipt_path": "results/N274.json",
+        "raw_receipt_SHA256": "69263c2f158252abbdd34bb5631d67e29053f41f699d75b5a068a69a20cc7096",
+        "scenario_seed_parity": null,
+        "result_detail": "seven injected event errors detected in correct field",
+        "invalid_first_attempt_SHA256": null
+      },
+      "F": {
+        "controls": "Seven targeted mutations must be detected",
+        "fail_closed": true,
+        "observed_adversarial_negative": false,
+        "outcome_falsifier": "No discrepancy in predeclared controls",
+        "full_raw_in_archive": "ESBM_ABH_N257_N276_event_parity_results.zip"
+      },
+      "G": {
+        "independence": "Software implementation contrast only, shared ESBM generator/semantics; no independent human evidence, historic TS comparison NOT executed",
+        "OS": "Linux x86_64; Python 3.13.5 NumPy2.3.5 NetworkX3.6.1 g++14.2; Boost system headers",
+        "original_historical_Python_TS_comparison_executed": false,
+        "independent_human_reproduction": false
+      },
+      "H": {
+        "prior_id": "P-TRAJECTORY-INVARIANCE",
+        "planned_update": "NO_CHANGE_WITH_REASON unless event-level differential changes technical prior; never numeric invented Bayes",
+        "qualitative_prior_event": "U197",
+        "human_prior_changed": false
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after_planned": 7,
+        "scientific_grade": "0/3",
+        "STOP_R5_human": true,
+        "CT2_after": 7,
+        "grade": "0/3",
+        "technical_QA": "TECHNICAL_PASS"
+      },
+      "J": {
+        "decision": "CLOSE_PASS_TECHNICAL_ONLY",
+        "cycle_budget_remaining_before": 3,
+        "remaining_after": 2,
+        "slot_counted_once": true,
+        "invalid_first_attempt_preserved": false
+      }
+    },
+    {
+      "cycle": "N275",
+      "A": {
+        "question": "Negative controls on exclusive private/public/balance temporal feedback channels across 5 ticks.",
+        "estimand": "Specific technical invariant and first failure on fixed synthetic controls",
+        "population": "144 artificial agents (or named synthetic graph) with no human observation"
+      },
+      "B": {
+        "rival": "Python/NumPy original-semantics reconstruction with NetworkX maxcardinality integer objective versus separate Python list-state replay using C++ Boost; not the historical TS ZIP",
+        "null": "No proven parity or failure due to missing instrument, crash, timeout or objective/edge discrepancy"
+      },
+      "C": {
+        "primary": "Negative controls on exclusive private/public/balance temporal feedback channels across 5 ticks.",
+        "falsifier": "First prespecified mismatch in directed events, objective, pair identities where unique, or crash/timeout; ties classified unresolved"
+      },
+      "D": {
+        "pre_outcome": true,
+        "code_sha256": {
+          "trace_engine.py": "c0c92061100a689ab59698a46e22a96e96d7bb3bd99a21ec292d7aaa30e4415a",
+          "boost_blossom.cpp": "47806e6b331e088d209e51143d18cb5d5cc7a2e2d3d6d8914478bff4b7b8c2d3",
+          "run_campaign.py": "5d39ded9b8602a2d3e58e78934c3a62c0560c7993b85d4af24d60e9bc58302df",
+          "boost_blossom_binary": "96087f807c3845193da871aa8a8f83092c095a0dcf2ab0862ace85b76eebf995"
+        },
+        "seed_rule": "Fixed synthetic seeds stated in frozen run_campaign.py",
+        "data_provenance": "No original ZIP; newly designed instruments; immutable synthetic fixture hashes in results"
+      },
+      "E": {
+        "status": "EXECUTED",
+        "planned_receipt": "results/N275.json",
+        "planned_events": null,
+        "outcome": "PASS",
+        "raw_receipt_path": "results/N275.json",
+        "raw_receipt_SHA256": "d9c0814d8e88326472f72295bc38331a71d8fbdfa85bf6a5e094f92d320a3a9c",
+        "scenario_seed_parity": null,
+        "result_detail": "private/public/balancing feedback channel exclusions PASS",
+        "invalid_first_attempt_SHA256": null
+      },
+      "F": {
+        "controls": "Exact cardinality+integer weight oracles, metamorphic cases and error-preserving output",
+        "fail_closed": true,
+        "observed_adversarial_negative": false,
+        "outcome_falsifier": "No discrepancy in predeclared controls",
+        "full_raw_in_archive": "ESBM_ABH_N257_N276_event_parity_results.zip"
+      },
+      "G": {
+        "independence": "Software implementation contrast only, shared ESBM generator/semantics; no independent human evidence, historic TS comparison NOT executed",
+        "OS": "Linux x86_64; Python 3.13.5 NumPy2.3.5 NetworkX3.6.1 g++14.2; Boost system headers",
+        "original_historical_Python_TS_comparison_executed": false,
+        "independent_human_reproduction": false
+      },
+      "H": {
+        "prior_id": "P-TRAJECTORY-INVARIANCE",
+        "planned_update": "NO_CHANGE_WITH_REASON unless event-level differential changes technical prior; never numeric invented Bayes",
+        "qualitative_prior_event": "U197",
+        "human_prior_changed": false
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after_planned": 7,
+        "scientific_grade": "0/3",
+        "STOP_R5_human": true,
+        "CT2_after": 7,
+        "grade": "0/3",
+        "technical_QA": "TECHNICAL_PASS"
+      },
+      "J": {
+        "decision": "CLOSE_PASS_TECHNICAL_ONLY",
+        "cycle_budget_remaining_before": 2,
+        "remaining_after": 1,
+        "slot_counted_once": true,
+        "invalid_first_attempt_preserved": false
+      }
+    },
+    {
+      "cycle": "N276",
+      "A": {
+        "question": "Repeatability of complete event trace SHA for three full N144 16-tick trajectories, timings excluded.",
+        "estimand": "Specific technical invariant and first failure on fixed synthetic controls",
+        "population": "144 artificial agents (or named synthetic graph) with no human observation"
+      },
+      "B": {
+        "rival": "Python/NumPy original-semantics reconstruction with NetworkX maxcardinality integer objective versus separate Python list-state replay using C++ Boost; not the historical TS ZIP",
+        "null": "No proven parity or failure due to missing instrument, crash, timeout or objective/edge discrepancy"
+      },
+      "C": {
+        "primary": "Repeatability of complete event trace SHA for three full N144 16-tick trajectories, timings excluded.",
+        "falsifier": "First prespecified mismatch in directed events, objective, pair identities where unique, or crash/timeout; ties classified unresolved"
+      },
+      "D": {
+        "pre_outcome": true,
+        "code_sha256": {
+          "trace_engine.py": "c0c92061100a689ab59698a46e22a96e96d7bb3bd99a21ec292d7aaa30e4415a",
+          "boost_blossom.cpp": "47806e6b331e088d209e51143d18cb5d5cc7a2e2d3d6d8914478bff4b7b8c2d3",
+          "run_campaign.py": "5d39ded9b8602a2d3e58e78934c3a62c0560c7993b85d4af24d60e9bc58302df",
+          "boost_blossom_binary": "96087f807c3845193da871aa8a8f83092c095a0dcf2ab0862ace85b76eebf995"
+        },
+        "seed_rule": "Fixed synthetic seeds stated in frozen run_campaign.py",
+        "data_provenance": "No original ZIP; newly designed instruments; immutable synthetic fixture hashes in results"
+      },
+      "E": {
+        "status": "EXECUTED",
+        "planned_receipt": "results/N276.json",
+        "planned_events": null,
+        "outcome": "PASS",
+        "raw_receipt_path": "results/N276.json",
+        "raw_receipt_SHA256": "aa69eb0a9479a042510bd791d0d31ea2cb6e16b51d482f67f033dd37eb082299",
+        "scenario_seed_parity": null,
+        "result_detail": "three full synthetic event trace repeatability tests PASS",
+        "invalid_first_attempt_SHA256": null
+      },
+      "F": {
+        "controls": "Exact cardinality+integer weight oracles, metamorphic cases and error-preserving output",
+        "fail_closed": true,
+        "observed_adversarial_negative": false,
+        "outcome_falsifier": "No discrepancy in predeclared controls",
+        "full_raw_in_archive": "ESBM_ABH_N257_N276_event_parity_results.zip"
+      },
+      "G": {
+        "independence": "Software implementation contrast only, shared ESBM generator/semantics; no independent human evidence, historic TS comparison NOT executed",
+        "OS": "Linux x86_64; Python 3.13.5 NumPy2.3.5 NetworkX3.6.1 g++14.2; Boost system headers",
+        "original_historical_Python_TS_comparison_executed": false,
+        "independent_human_reproduction": false
+      },
+      "H": {
+        "prior_id": "P-TRAJECTORY-INVARIANCE",
+        "planned_update": "NO_CHANGE_WITH_REASON unless event-level differential changes technical prior; never numeric invented Bayes",
+        "qualitative_prior_event": "U197",
+        "human_prior_changed": false
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after_planned": 7,
+        "scientific_grade": "0/3",
+        "STOP_R5_human": true,
+        "CT2_after": 7,
+        "grade": "0/3",
+        "technical_QA": "TECHNICAL_PASS"
+      },
+      "J": {
+        "decision": "CLOSE_PASS_TECHNICAL_ONLY",
+        "cycle_budget_remaining_before": 1,
+        "remaining_after": 0,
+        "slot_counted_once": true,
+        "invalid_first_attempt_preserved": false
+      }
+    }
+  ]
+}
