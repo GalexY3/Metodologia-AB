@@ -1,0 +1,122 @@
+{
+  "schema": "ESBM_REFERENCE_PLAN_1_0",
+  "status": "PLAN_NOT_RUN",
+  "reference_git_commit_parent": "58e2b09800aca306013bd4bfb81d9d7f678b4fda",
+  "historical_source": {
+    "path": "proyectos/mercados-de-pareja/research/ABR_ESBM20_20261028/esbm_dynamic.py",
+    "Git_blob": "5fc9f63fd44ff81ce9ff6c900ba6bf24153356f2",
+    "SHA256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+    "bytes": 11913
+  },
+  "historical_frozen_outputs_not_opened": {
+    "runs_compressed_base64": {
+      "path": "proyectos/mercados-de-pareja/research/ABR_ESBM20_20261028/RUNS.json.gz.b64",
+      "Git_blob": "d8dbf04ec52337d46892e555cceee49ef224efc6"
+    },
+    "summary": {
+      "path": "proyectos/mercados-de-pareja/research/ABR_ESBM20_20261028/SUMMARY.json",
+      "Git_blob": "adbfcba9405a5af4b15cbf7a7b504974d5c33d6b"
+    },
+    "qa": {
+      "path": "proyectos/mercados-de-pareja/research/ABR_ESBM20_20261028/QA.json",
+      "Git_blob": "06204182f11dbe76d587be565d26fd70c65a52cb"
+    }
+  },
+  "official": {
+    "N": 144,
+    "T": 16,
+    "K": 7,
+    "seeds": [
+      101,
+      211,
+      307,
+      401,
+      503,
+      601
+    ],
+    "scenario_order": [
+      "mixed_random",
+      "heterosexual_restricted",
+      "institutional_segregation",
+      "explicit_norm_preference",
+      "popularity_ranking",
+      "visibility_balancing",
+      "private_rejection_learning",
+      "public_rejection_signal",
+      "longer_partnerships",
+      "shorter_partnerships"
+    ],
+    "count": 60
+  },
+  "prospective_fixtures": {
+    "status": "NOT_GENERATED_OR_RUN",
+    "source_script_required": "Frozen original Python people(seed), not independent implementation; producer writes attrs and five raw float64LE tensors only, excludes derived state/outcome labels",
+    "file_structure": "people_000101.json; u_send_000101.bin, u_reply_000101.bin, u_hazard_000101.bin, u_expose_000101.bin, u_match_000101.bin; repeated across six seeds",
+    "float64_binary_layout": {
+      "dtype": "IEEE754 binary64 little endian",
+      "order": "C t-major, i-major, j-minor",
+      "shape": [
+        16,
+        144,
+        144
+      ],
+      "tensor_bytes": 2654208,
+      "all_five_tensors_per_seed_bytes": 13271040,
+      "index_formula_byte_offset": "((t*144*144)+(i*144)+j)*8",
+      "forbids": "NaN and Inf",
+      "checksum": "SHA256 of exact raw file before oracle outcomes or JS run"
+    },
+    "agent_attributes": "UTF-8 JSON arrays genders,scopes,norm,q,age length144; q JSON repr exact binary64 round-trip",
+    "provenance_fields": [
+      "source_sha256",
+      "rng_kind",
+      "seed",
+      "python_version",
+      "numpy_version",
+      "platform",
+      "utc_timestamp",
+      "git_commit",
+      "sha256_by_file"
+    ],
+    "input_bundle_release_order": "publish six seed inputs and their hashes before reading archived RUNS.json.gz.b64 as expected reference",
+    "scope": "Tests deterministic replay; original outputs were historically created before this protocol so NOT a prospectively hidden holdout"
+  },
+  "independent_engine_requirement": {
+    "language": "TypeScript Node.js (or Rust) excluding Python/NumPy/NetworkX",
+    "core_own_modules": [
+      "compatibility",
+      "gumbel scheduler",
+      "directed proposal-response",
+      "stateful learning",
+      "breakup",
+      "weighted cardinality matching",
+      "right censoring",
+      "result and track"
+    ],
+    "matching": "True maximum cardinality then maximum summed weights (no greedy algorithm); disclose tie handling",
+    "dependency_licenses": "List and verify every third-party library licence",
+    "same_replay_inputs": "A hash-identical copy of six actor arrays and five fixed tensor blobs; no independent RNG yet"
+  },
+  "acceptance": {
+    "unit_fixtures": "12/12 source-derived small-N expectations after independent inspection; toy expectations are not yet validated against running Python",
+    "full_suite": "6 seeds ×10 scenarios = 60 exactly enumerated, with frozen inputs; no changed choices of scenarios post outcomes",
+    "events": "same directed impression/proposal/conditional response events with chronological sequence; formation pair sets unordered with unique optima",
+    "exact_int_keys": "all track and main output integer fields equal, including active stock",
+    "float_tolerance": {
+      "transition": 1e-12,
+      "final": 1e-9,
+      "decision_crossing_is_failure": true
+    },
+    "matching_ties": "Equal optimal matching ambiguous -> explicit diagnostic; cannot claim exact pair parity for tie without shared deterministic rule",
+    "second_OS": "Windows process proved by machine-generated provenance; not a Python Windows run of same source",
+    "independence_level": "Must implement transition algorithm anew and matching algorithm independently, not call Python, not only compute scores in Node"
+  },
+  "nonexecution": {
+    "AB_H_new_cycles": 0,
+    "simulation_runs": 0,
+    "original_human_data_rows": 0,
+    "R5": "STOP",
+    "CT2": 7,
+    "previous_maturity_percent": 43.8
+  }
+}
