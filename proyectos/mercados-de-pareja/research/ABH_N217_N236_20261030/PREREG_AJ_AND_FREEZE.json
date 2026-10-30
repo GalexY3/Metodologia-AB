@@ -1,0 +1,945 @@
+{
+  "protocol": "AB3.2.1 O1-O7; 20 actual AB-H slots, A-J locked before outcomes",
+  "authorized": 20,
+  "first": 217,
+  "last": 236,
+  "branch": "research/ab-h-esbm-parity-gates-n217-n236-20261030",
+  "parent_sha": "4045061932d44fd6fc2dfa1077bf3696e9cf0481",
+  "date": "2026-10-30",
+  "source_sha256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+  "adapter": "ESBM event_engine from N127-N146 with configurable n and historical legacy scheduler; compared to independent TS replica without edits",
+  "replica_source": "user Windows committed f3be098 (declared), byte-identical known N207–N216 ZIP files with SHA in freeze below; Windows not run by agent",
+  "scripts": {
+    "mini_runner.mjs": "6f9fa90def3740f8ba84c71afa641796618dd67f8278a3a9234f277fd69b695a",
+    "replay_comparison.py": "54afb9aeee286a3afefcc610c9ede13e16f063c461d0d40c83278136d97f553a",
+    "engine.ts": "595251b0f86eac29e793c08bd3a0f46e992c811445fc4307a47d786e3e22d5e8",
+    "matching.ts": "1068a2f3d66c6d4b887a16f6cc13d50efb5f03214c744c959d9dc8cdfb7380f2",
+    "selection.ts": "ff63668658f99c7439fbd6920b83b79618ccde5a6475d218d62703d54820598c",
+    "compare.ts": "3a4995049ecb1a5043ed3fb8e2c675dff59f76929c8b79af61db9a806ad2d648"
+  },
+  "conditions": "All files above SHA-frozen before first invocation; scripts and raw case-specific JSON receipts distributed as archive afterward. Script corrective repairs after outcome require new prereg and freeze, preserve failed attempt. No expensive CI, no SSJY, no human rows, no external rights. Linux local does not prove Windows native history full 60.",
+  "controls": "Tests N217–N230 separate Python adapter vs TS model with identical injected synthetic people and five shocks, metric fields, event stage counts and formation sets. N231–N234 explicit tie/floating adversaries. N235 requires explicit N144 failure stop, NOT a successful scalable run. N236 enumerates 24 n6 graphs with independent Fraction reference. All outcome labels interpreted as technical checks only.",
+  "AB_DECIDE": "STOP_R5 human, CT2 scientific 7/100; 110 SOURCES/34 PRIORS/194 UPDATES before campaign; no grade 1/3–3/3 from synthetic tests.",
+  "AJ": [
+    {
+      "cycle": "N217",
+      "case": "mixed_random",
+      "type": "PAIRWISE_PY_ADAPTER_VS_TS_FULL_STATE_AND_EVENTS",
+      "A": {
+        "question": "Can cross-language ESBM reproduce or explicitly reject this pre-identified failure mode? mixed_random",
+        "claim": "software property only, not sociological explanation",
+        "D": 1
+      },
+      "B": {
+        "hypothesis": "same input => equal event trajectories, counts and metrics except explicitly diagnostic ties/resources",
+        "rival": "original Python adapter/NetworkX or independent Fraction matching oracle; against TS independent implementation",
+        "null": "no equivalence or explicit STOP"
+      },
+      "C": {
+        "primary": "exact event sequence ignoring only unordered formation iteration and exact discrete metrics; float tolerance 1e-9; type-specific diagnostics for tied optimal solutions",
+        "expected_negative": false
+      },
+      "D": {
+        "script_sha256": "54afb9aeee286a3afefcc610c9ede13e16f063c461d0d40c83278136d97f553a",
+        "JS_runner_sha256": "6f9fa90def3740f8ba84c71afa641796618dd67f8278a3a9234f277fd69b695a",
+        "seed": 9217,
+        "prereg_before_outcomes": true
+      },
+      "E": "PENDING_EXECUTION",
+      "F": {
+        "strength": "Independent generator comparison with same injected shocks when applicable",
+        "limitations": "Python small-N adapter is not untouched original N144, arbitrary actor attributes synthetic; do not count as independent humans"
+      },
+      "G": {
+        "portability": "Linux Node 22.16, not Windows Node 24.16; Windows compilation verified by user, runtime equivalence not certified"
+      },
+      "H": {
+        "prior": "P-TRAJECTORY-INVARIANCE/QA only; NO_CHANGE if only technical results",
+        "sources": "None new"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": "UNDECIDED_NO_HUMAN",
+        "scientific_grade": "0/3"
+      },
+      "J": {
+        "decision": "PASS_ONLY_ACTUAL_EVIDENCE_ELSE_VALID_NEGATIVE_OR_INVALID_INSTRUMENT",
+        "remaining": 19
+      }
+    },
+    {
+      "cycle": "N218",
+      "case": "heterosexual_restricted",
+      "type": "PAIRWISE_PY_ADAPTER_VS_TS_FULL_STATE_AND_EVENTS",
+      "A": {
+        "question": "Can cross-language ESBM reproduce or explicitly reject this pre-identified failure mode? heterosexual_restricted",
+        "claim": "software property only, not sociological explanation",
+        "D": 1
+      },
+      "B": {
+        "hypothesis": "same input => equal event trajectories, counts and metrics except explicitly diagnostic ties/resources",
+        "rival": "original Python adapter/NetworkX or independent Fraction matching oracle; against TS independent implementation",
+        "null": "no equivalence or explicit STOP"
+      },
+      "C": {
+        "primary": "exact event sequence ignoring only unordered formation iteration and exact discrete metrics; float tolerance 1e-9; type-specific diagnostics for tied optimal solutions",
+        "expected_negative": false
+      },
+      "D": {
+        "script_sha256": "54afb9aeee286a3afefcc610c9ede13e16f063c461d0d40c83278136d97f553a",
+        "JS_runner_sha256": "6f9fa90def3740f8ba84c71afa641796618dd67f8278a3a9234f277fd69b695a",
+        "seed": 9218,
+        "prereg_before_outcomes": true
+      },
+      "E": "PENDING_EXECUTION",
+      "F": {
+        "strength": "Independent generator comparison with same injected shocks when applicable",
+        "limitations": "Python small-N adapter is not untouched original N144, arbitrary actor attributes synthetic; do not count as independent humans"
+      },
+      "G": {
+        "portability": "Linux Node 22.16, not Windows Node 24.16; Windows compilation verified by user, runtime equivalence not certified"
+      },
+      "H": {
+        "prior": "P-TRAJECTORY-INVARIANCE/QA only; NO_CHANGE if only technical results",
+        "sources": "None new"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": "UNDECIDED_NO_HUMAN",
+        "scientific_grade": "0/3"
+      },
+      "J": {
+        "decision": "PASS_ONLY_ACTUAL_EVIDENCE_ELSE_VALID_NEGATIVE_OR_INVALID_INSTRUMENT",
+        "remaining": 18
+      }
+    },
+    {
+      "cycle": "N219",
+      "case": "institutional_segregation",
+      "type": "PAIRWISE_PY_ADAPTER_VS_TS_FULL_STATE_AND_EVENTS",
+      "A": {
+        "question": "Can cross-language ESBM reproduce or explicitly reject this pre-identified failure mode? institutional_segregation",
+        "claim": "software property only, not sociological explanation",
+        "D": 1
+      },
+      "B": {
+        "hypothesis": "same input => equal event trajectories, counts and metrics except explicitly diagnostic ties/resources",
+        "rival": "original Python adapter/NetworkX or independent Fraction matching oracle; against TS independent implementation",
+        "null": "no equivalence or explicit STOP"
+      },
+      "C": {
+        "primary": "exact event sequence ignoring only unordered formation iteration and exact discrete metrics; float tolerance 1e-9; type-specific diagnostics for tied optimal solutions",
+        "expected_negative": false
+      },
+      "D": {
+        "script_sha256": "54afb9aeee286a3afefcc610c9ede13e16f063c461d0d40c83278136d97f553a",
+        "JS_runner_sha256": "6f9fa90def3740f8ba84c71afa641796618dd67f8278a3a9234f277fd69b695a",
+        "seed": 9219,
+        "prereg_before_outcomes": true
+      },
+      "E": "PENDING_EXECUTION",
+      "F": {
+        "strength": "Independent generator comparison with same injected shocks when applicable",
+        "limitations": "Python small-N adapter is not untouched original N144, arbitrary actor attributes synthetic; do not count as independent humans"
+      },
+      "G": {
+        "portability": "Linux Node 22.16, not Windows Node 24.16; Windows compilation verified by user, runtime equivalence not certified"
+      },
+      "H": {
+        "prior": "P-TRAJECTORY-INVARIANCE/QA only; NO_CHANGE if only technical results",
+        "sources": "None new"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": "UNDECIDED_NO_HUMAN",
+        "scientific_grade": "0/3"
+      },
+      "J": {
+        "decision": "PASS_ONLY_ACTUAL_EVIDENCE_ELSE_VALID_NEGATIVE_OR_INVALID_INSTRUMENT",
+        "remaining": 17
+      }
+    },
+    {
+      "cycle": "N220",
+      "case": "explicit_norm_preference",
+      "type": "PAIRWISE_PY_ADAPTER_VS_TS_FULL_STATE_AND_EVENTS",
+      "A": {
+        "question": "Can cross-language ESBM reproduce or explicitly reject this pre-identified failure mode? explicit_norm_preference",
+        "claim": "software property only, not sociological explanation",
+        "D": 1
+      },
+      "B": {
+        "hypothesis": "same input => equal event trajectories, counts and metrics except explicitly diagnostic ties/resources",
+        "rival": "original Python adapter/NetworkX or independent Fraction matching oracle; against TS independent implementation",
+        "null": "no equivalence or explicit STOP"
+      },
+      "C": {
+        "primary": "exact event sequence ignoring only unordered formation iteration and exact discrete metrics; float tolerance 1e-9; type-specific diagnostics for tied optimal solutions",
+        "expected_negative": false
+      },
+      "D": {
+        "script_sha256": "54afb9aeee286a3afefcc610c9ede13e16f063c461d0d40c83278136d97f553a",
+        "JS_runner_sha256": "6f9fa90def3740f8ba84c71afa641796618dd67f8278a3a9234f277fd69b695a",
+        "seed": 9220,
+        "prereg_before_outcomes": true
+      },
+      "E": "PENDING_EXECUTION",
+      "F": {
+        "strength": "Independent generator comparison with same injected shocks when applicable",
+        "limitations": "Python small-N adapter is not untouched original N144, arbitrary actor attributes synthetic; do not count as independent humans"
+      },
+      "G": {
+        "portability": "Linux Node 22.16, not Windows Node 24.16; Windows compilation verified by user, runtime equivalence not certified"
+      },
+      "H": {
+        "prior": "P-TRAJECTORY-INVARIANCE/QA only; NO_CHANGE if only technical results",
+        "sources": "None new"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": "UNDECIDED_NO_HUMAN",
+        "scientific_grade": "0/3"
+      },
+      "J": {
+        "decision": "PASS_ONLY_ACTUAL_EVIDENCE_ELSE_VALID_NEGATIVE_OR_INVALID_INSTRUMENT",
+        "remaining": 16
+      }
+    },
+    {
+      "cycle": "N221",
+      "case": "popularity_ranking",
+      "type": "PAIRWISE_PY_ADAPTER_VS_TS_FULL_STATE_AND_EVENTS",
+      "A": {
+        "question": "Can cross-language ESBM reproduce or explicitly reject this pre-identified failure mode? popularity_ranking",
+        "claim": "software property only, not sociological explanation",
+        "D": 1
+      },
+      "B": {
+        "hypothesis": "same input => equal event trajectories, counts and metrics except explicitly diagnostic ties/resources",
+        "rival": "original Python adapter/NetworkX or independent Fraction matching oracle; against TS independent implementation",
+        "null": "no equivalence or explicit STOP"
+      },
+      "C": {
+        "primary": "exact event sequence ignoring only unordered formation iteration and exact discrete metrics; float tolerance 1e-9; type-specific diagnostics for tied optimal solutions",
+        "expected_negative": false
+      },
+      "D": {
+        "script_sha256": "54afb9aeee286a3afefcc610c9ede13e16f063c461d0d40c83278136d97f553a",
+        "JS_runner_sha256": "6f9fa90def3740f8ba84c71afa641796618dd67f8278a3a9234f277fd69b695a",
+        "seed": 9221,
+        "prereg_before_outcomes": true
+      },
+      "E": "PENDING_EXECUTION",
+      "F": {
+        "strength": "Independent generator comparison with same injected shocks when applicable",
+        "limitations": "Python small-N adapter is not untouched original N144, arbitrary actor attributes synthetic; do not count as independent humans"
+      },
+      "G": {
+        "portability": "Linux Node 22.16, not Windows Node 24.16; Windows compilation verified by user, runtime equivalence not certified"
+      },
+      "H": {
+        "prior": "P-TRAJECTORY-INVARIANCE/QA only; NO_CHANGE if only technical results",
+        "sources": "None new"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": "UNDECIDED_NO_HUMAN",
+        "scientific_grade": "0/3"
+      },
+      "J": {
+        "decision": "PASS_ONLY_ACTUAL_EVIDENCE_ELSE_VALID_NEGATIVE_OR_INVALID_INSTRUMENT",
+        "remaining": 15
+      }
+    },
+    {
+      "cycle": "N222",
+      "case": "visibility_balancing",
+      "type": "PAIRWISE_PY_ADAPTER_VS_TS_FULL_STATE_AND_EVENTS",
+      "A": {
+        "question": "Can cross-language ESBM reproduce or explicitly reject this pre-identified failure mode? visibility_balancing",
+        "claim": "software property only, not sociological explanation",
+        "D": 1
+      },
+      "B": {
+        "hypothesis": "same input => equal event trajectories, counts and metrics except explicitly diagnostic ties/resources",
+        "rival": "original Python adapter/NetworkX or independent Fraction matching oracle; against TS independent implementation",
+        "null": "no equivalence or explicit STOP"
+      },
+      "C": {
+        "primary": "exact event sequence ignoring only unordered formation iteration and exact discrete metrics; float tolerance 1e-9; type-specific diagnostics for tied optimal solutions",
+        "expected_negative": false
+      },
+      "D": {
+        "script_sha256": "54afb9aeee286a3afefcc610c9ede13e16f063c461d0d40c83278136d97f553a",
+        "JS_runner_sha256": "6f9fa90def3740f8ba84c71afa641796618dd67f8278a3a9234f277fd69b695a",
+        "seed": 9222,
+        "prereg_before_outcomes": true
+      },
+      "E": "PENDING_EXECUTION",
+      "F": {
+        "strength": "Independent generator comparison with same injected shocks when applicable",
+        "limitations": "Python small-N adapter is not untouched original N144, arbitrary actor attributes synthetic; do not count as independent humans"
+      },
+      "G": {
+        "portability": "Linux Node 22.16, not Windows Node 24.16; Windows compilation verified by user, runtime equivalence not certified"
+      },
+      "H": {
+        "prior": "P-TRAJECTORY-INVARIANCE/QA only; NO_CHANGE if only technical results",
+        "sources": "None new"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": "UNDECIDED_NO_HUMAN",
+        "scientific_grade": "0/3"
+      },
+      "J": {
+        "decision": "PASS_ONLY_ACTUAL_EVIDENCE_ELSE_VALID_NEGATIVE_OR_INVALID_INSTRUMENT",
+        "remaining": 14
+      }
+    },
+    {
+      "cycle": "N223",
+      "case": "private_rejection_learning",
+      "type": "PAIRWISE_PY_ADAPTER_VS_TS_FULL_STATE_AND_EVENTS",
+      "A": {
+        "question": "Can cross-language ESBM reproduce or explicitly reject this pre-identified failure mode? private_rejection_learning",
+        "claim": "software property only, not sociological explanation",
+        "D": 1
+      },
+      "B": {
+        "hypothesis": "same input => equal event trajectories, counts and metrics except explicitly diagnostic ties/resources",
+        "rival": "original Python adapter/NetworkX or independent Fraction matching oracle; against TS independent implementation",
+        "null": "no equivalence or explicit STOP"
+      },
+      "C": {
+        "primary": "exact event sequence ignoring only unordered formation iteration and exact discrete metrics; float tolerance 1e-9; type-specific diagnostics for tied optimal solutions",
+        "expected_negative": false
+      },
+      "D": {
+        "script_sha256": "54afb9aeee286a3afefcc610c9ede13e16f063c461d0d40c83278136d97f553a",
+        "JS_runner_sha256": "6f9fa90def3740f8ba84c71afa641796618dd67f8278a3a9234f277fd69b695a",
+        "seed": 9223,
+        "prereg_before_outcomes": true
+      },
+      "E": "PENDING_EXECUTION",
+      "F": {
+        "strength": "Independent generator comparison with same injected shocks when applicable",
+        "limitations": "Python small-N adapter is not untouched original N144, arbitrary actor attributes synthetic; do not count as independent humans"
+      },
+      "G": {
+        "portability": "Linux Node 22.16, not Windows Node 24.16; Windows compilation verified by user, runtime equivalence not certified"
+      },
+      "H": {
+        "prior": "P-TRAJECTORY-INVARIANCE/QA only; NO_CHANGE if only technical results",
+        "sources": "None new"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": "UNDECIDED_NO_HUMAN",
+        "scientific_grade": "0/3"
+      },
+      "J": {
+        "decision": "PASS_ONLY_ACTUAL_EVIDENCE_ELSE_VALID_NEGATIVE_OR_INVALID_INSTRUMENT",
+        "remaining": 13
+      }
+    },
+    {
+      "cycle": "N224",
+      "case": "public_rejection_signal",
+      "type": "PAIRWISE_PY_ADAPTER_VS_TS_FULL_STATE_AND_EVENTS",
+      "A": {
+        "question": "Can cross-language ESBM reproduce or explicitly reject this pre-identified failure mode? public_rejection_signal",
+        "claim": "software property only, not sociological explanation",
+        "D": 1
+      },
+      "B": {
+        "hypothesis": "same input => equal event trajectories, counts and metrics except explicitly diagnostic ties/resources",
+        "rival": "original Python adapter/NetworkX or independent Fraction matching oracle; against TS independent implementation",
+        "null": "no equivalence or explicit STOP"
+      },
+      "C": {
+        "primary": "exact event sequence ignoring only unordered formation iteration and exact discrete metrics; float tolerance 1e-9; type-specific diagnostics for tied optimal solutions",
+        "expected_negative": false
+      },
+      "D": {
+        "script_sha256": "54afb9aeee286a3afefcc610c9ede13e16f063c461d0d40c83278136d97f553a",
+        "JS_runner_sha256": "6f9fa90def3740f8ba84c71afa641796618dd67f8278a3a9234f277fd69b695a",
+        "seed": 9224,
+        "prereg_before_outcomes": true
+      },
+      "E": "PENDING_EXECUTION",
+      "F": {
+        "strength": "Independent generator comparison with same injected shocks when applicable",
+        "limitations": "Python small-N adapter is not untouched original N144, arbitrary actor attributes synthetic; do not count as independent humans"
+      },
+      "G": {
+        "portability": "Linux Node 22.16, not Windows Node 24.16; Windows compilation verified by user, runtime equivalence not certified"
+      },
+      "H": {
+        "prior": "P-TRAJECTORY-INVARIANCE/QA only; NO_CHANGE if only technical results",
+        "sources": "None new"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": "UNDECIDED_NO_HUMAN",
+        "scientific_grade": "0/3"
+      },
+      "J": {
+        "decision": "PASS_ONLY_ACTUAL_EVIDENCE_ELSE_VALID_NEGATIVE_OR_INVALID_INSTRUMENT",
+        "remaining": 12
+      }
+    },
+    {
+      "cycle": "N225",
+      "case": "longer_partnerships",
+      "type": "PAIRWISE_PY_ADAPTER_VS_TS_FULL_STATE_AND_EVENTS",
+      "A": {
+        "question": "Can cross-language ESBM reproduce or explicitly reject this pre-identified failure mode? longer_partnerships",
+        "claim": "software property only, not sociological explanation",
+        "D": 1
+      },
+      "B": {
+        "hypothesis": "same input => equal event trajectories, counts and metrics except explicitly diagnostic ties/resources",
+        "rival": "original Python adapter/NetworkX or independent Fraction matching oracle; against TS independent implementation",
+        "null": "no equivalence or explicit STOP"
+      },
+      "C": {
+        "primary": "exact event sequence ignoring only unordered formation iteration and exact discrete metrics; float tolerance 1e-9; type-specific diagnostics for tied optimal solutions",
+        "expected_negative": false
+      },
+      "D": {
+        "script_sha256": "54afb9aeee286a3afefcc610c9ede13e16f063c461d0d40c83278136d97f553a",
+        "JS_runner_sha256": "6f9fa90def3740f8ba84c71afa641796618dd67f8278a3a9234f277fd69b695a",
+        "seed": 9225,
+        "prereg_before_outcomes": true
+      },
+      "E": "PENDING_EXECUTION",
+      "F": {
+        "strength": "Independent generator comparison with same injected shocks when applicable",
+        "limitations": "Python small-N adapter is not untouched original N144, arbitrary actor attributes synthetic; do not count as independent humans"
+      },
+      "G": {
+        "portability": "Linux Node 22.16, not Windows Node 24.16; Windows compilation verified by user, runtime equivalence not certified"
+      },
+      "H": {
+        "prior": "P-TRAJECTORY-INVARIANCE/QA only; NO_CHANGE if only technical results",
+        "sources": "None new"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": "UNDECIDED_NO_HUMAN",
+        "scientific_grade": "0/3"
+      },
+      "J": {
+        "decision": "PASS_ONLY_ACTUAL_EVIDENCE_ELSE_VALID_NEGATIVE_OR_INVALID_INSTRUMENT",
+        "remaining": 11
+      }
+    },
+    {
+      "cycle": "N226",
+      "case": "shorter_partnerships",
+      "type": "PAIRWISE_PY_ADAPTER_VS_TS_FULL_STATE_AND_EVENTS",
+      "A": {
+        "question": "Can cross-language ESBM reproduce or explicitly reject this pre-identified failure mode? shorter_partnerships",
+        "claim": "software property only, not sociological explanation",
+        "D": 1
+      },
+      "B": {
+        "hypothesis": "same input => equal event trajectories, counts and metrics except explicitly diagnostic ties/resources",
+        "rival": "original Python adapter/NetworkX or independent Fraction matching oracle; against TS independent implementation",
+        "null": "no equivalence or explicit STOP"
+      },
+      "C": {
+        "primary": "exact event sequence ignoring only unordered formation iteration and exact discrete metrics; float tolerance 1e-9; type-specific diagnostics for tied optimal solutions",
+        "expected_negative": false
+      },
+      "D": {
+        "script_sha256": "54afb9aeee286a3afefcc610c9ede13e16f063c461d0d40c83278136d97f553a",
+        "JS_runner_sha256": "6f9fa90def3740f8ba84c71afa641796618dd67f8278a3a9234f277fd69b695a",
+        "seed": 9226,
+        "prereg_before_outcomes": true
+      },
+      "E": "PENDING_EXECUTION",
+      "F": {
+        "strength": "Independent generator comparison with same injected shocks when applicable",
+        "limitations": "Python small-N adapter is not untouched original N144, arbitrary actor attributes synthetic; do not count as independent humans"
+      },
+      "G": {
+        "portability": "Linux Node 22.16, not Windows Node 24.16; Windows compilation verified by user, runtime equivalence not certified"
+      },
+      "H": {
+        "prior": "P-TRAJECTORY-INVARIANCE/QA only; NO_CHANGE if only technical results",
+        "sources": "None new"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": "UNDECIDED_NO_HUMAN",
+        "scientific_grade": "0/3"
+      },
+      "J": {
+        "decision": "PASS_ONLY_ACTUAL_EVIDENCE_ELSE_VALID_NEGATIVE_OR_INVALID_INSTRUMENT",
+        "remaining": 10
+      }
+    },
+    {
+      "cycle": "N227",
+      "case": "heterogeneous_N12_K3",
+      "type": "PAIRWISE_PY_ADAPTER_VS_TS_FULL_STATE_AND_EVENTS",
+      "A": {
+        "question": "Can cross-language ESBM reproduce or explicitly reject this pre-identified failure mode? heterogeneous_N12_K3",
+        "claim": "software property only, not sociological explanation",
+        "D": 1
+      },
+      "B": {
+        "hypothesis": "same input => equal event trajectories, counts and metrics except explicitly diagnostic ties/resources",
+        "rival": "original Python adapter/NetworkX or independent Fraction matching oracle; against TS independent implementation",
+        "null": "no equivalence or explicit STOP"
+      },
+      "C": {
+        "primary": "exact event sequence ignoring only unordered formation iteration and exact discrete metrics; float tolerance 1e-9; type-specific diagnostics for tied optimal solutions",
+        "expected_negative": false
+      },
+      "D": {
+        "script_sha256": "54afb9aeee286a3afefcc610c9ede13e16f063c461d0d40c83278136d97f553a",
+        "JS_runner_sha256": "6f9fa90def3740f8ba84c71afa641796618dd67f8278a3a9234f277fd69b695a",
+        "seed": 9227,
+        "prereg_before_outcomes": true
+      },
+      "E": "PENDING_EXECUTION",
+      "F": {
+        "strength": "Independent generator comparison with same injected shocks when applicable",
+        "limitations": "Python small-N adapter is not untouched original N144, arbitrary actor attributes synthetic; do not count as independent humans"
+      },
+      "G": {
+        "portability": "Linux Node 22.16, not Windows Node 24.16; Windows compilation verified by user, runtime equivalence not certified"
+      },
+      "H": {
+        "prior": "P-TRAJECTORY-INVARIANCE/QA only; NO_CHANGE if only technical results",
+        "sources": "None new"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": "UNDECIDED_NO_HUMAN",
+        "scientific_grade": "0/3"
+      },
+      "J": {
+        "decision": "PASS_ONLY_ACTUAL_EVIDENCE_ELSE_VALID_NEGATIVE_OR_INVALID_INSTRUMENT",
+        "remaining": 9
+      }
+    },
+    {
+      "cycle": "N228",
+      "case": "directional_reply_orientation",
+      "type": "PAIRWISE_PY_ADAPTER_VS_TS_FULL_STATE_AND_EVENTS",
+      "A": {
+        "question": "Can cross-language ESBM reproduce or explicitly reject this pre-identified failure mode? directional_reply_orientation",
+        "claim": "software property only, not sociological explanation",
+        "D": 1
+      },
+      "B": {
+        "hypothesis": "same input => equal event trajectories, counts and metrics except explicitly diagnostic ties/resources",
+        "rival": "original Python adapter/NetworkX or independent Fraction matching oracle; against TS independent implementation",
+        "null": "no equivalence or explicit STOP"
+      },
+      "C": {
+        "primary": "exact event sequence ignoring only unordered formation iteration and exact discrete metrics; float tolerance 1e-9; type-specific diagnostics for tied optimal solutions",
+        "expected_negative": false
+      },
+      "D": {
+        "script_sha256": "54afb9aeee286a3afefcc610c9ede13e16f063c461d0d40c83278136d97f553a",
+        "JS_runner_sha256": "6f9fa90def3740f8ba84c71afa641796618dd67f8278a3a9234f277fd69b695a",
+        "seed": 9228,
+        "prereg_before_outcomes": true
+      },
+      "E": "PENDING_EXECUTION",
+      "F": {
+        "strength": "Independent generator comparison with same injected shocks when applicable",
+        "limitations": "Python small-N adapter is not untouched original N144, arbitrary actor attributes synthetic; do not count as independent humans"
+      },
+      "G": {
+        "portability": "Linux Node 22.16, not Windows Node 24.16; Windows compilation verified by user, runtime equivalence not certified"
+      },
+      "H": {
+        "prior": "P-TRAJECTORY-INVARIANCE/QA only; NO_CHANGE if only technical results",
+        "sources": "None new"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": "UNDECIDED_NO_HUMAN",
+        "scientific_grade": "0/3"
+      },
+      "J": {
+        "decision": "PASS_ONLY_ACTUAL_EVIDENCE_ELSE_VALID_NEGATIVE_OR_INVALID_INSTRUMENT",
+        "remaining": 8
+      }
+    },
+    {
+      "cycle": "N229",
+      "case": "FM_ignores_scope",
+      "type": "PAIRWISE_PY_ADAPTER_VS_TS_FULL_STATE_AND_EVENTS",
+      "A": {
+        "question": "Can cross-language ESBM reproduce or explicitly reject this pre-identified failure mode? FM_ignores_scope",
+        "claim": "software property only, not sociological explanation",
+        "D": 1
+      },
+      "B": {
+        "hypothesis": "same input => equal event trajectories, counts and metrics except explicitly diagnostic ties/resources",
+        "rival": "original Python adapter/NetworkX or independent Fraction matching oracle; against TS independent implementation",
+        "null": "no equivalence or explicit STOP"
+      },
+      "C": {
+        "primary": "exact event sequence ignoring only unordered formation iteration and exact discrete metrics; float tolerance 1e-9; type-specific diagnostics for tied optimal solutions",
+        "expected_negative": false
+      },
+      "D": {
+        "script_sha256": "54afb9aeee286a3afefcc610c9ede13e16f063c461d0d40c83278136d97f553a",
+        "JS_runner_sha256": "6f9fa90def3740f8ba84c71afa641796618dd67f8278a3a9234f277fd69b695a",
+        "seed": 9229,
+        "prereg_before_outcomes": true
+      },
+      "E": "PENDING_EXECUTION",
+      "F": {
+        "strength": "Independent generator comparison with same injected shocks when applicable",
+        "limitations": "Python small-N adapter is not untouched original N144, arbitrary actor attributes synthetic; do not count as independent humans"
+      },
+      "G": {
+        "portability": "Linux Node 22.16, not Windows Node 24.16; Windows compilation verified by user, runtime equivalence not certified"
+      },
+      "H": {
+        "prior": "P-TRAJECTORY-INVARIANCE/QA only; NO_CHANGE if only technical results",
+        "sources": "None new"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": "UNDECIDED_NO_HUMAN",
+        "scientific_grade": "0/3"
+      },
+      "J": {
+        "decision": "PASS_ONLY_ACTUAL_EVIDENCE_ELSE_VALID_NEGATIVE_OR_INVALID_INSTRUMENT",
+        "remaining": 7
+      }
+    },
+    {
+      "cycle": "N230",
+      "case": "forced_dissolution",
+      "type": "PAIRWISE_PY_ADAPTER_VS_TS_FULL_STATE_AND_EVENTS",
+      "A": {
+        "question": "Can cross-language ESBM reproduce or explicitly reject this pre-identified failure mode? forced_dissolution",
+        "claim": "software property only, not sociological explanation",
+        "D": 1
+      },
+      "B": {
+        "hypothesis": "same input => equal event trajectories, counts and metrics except explicitly diagnostic ties/resources",
+        "rival": "original Python adapter/NetworkX or independent Fraction matching oracle; against TS independent implementation",
+        "null": "no equivalence or explicit STOP"
+      },
+      "C": {
+        "primary": "exact event sequence ignoring only unordered formation iteration and exact discrete metrics; float tolerance 1e-9; type-specific diagnostics for tied optimal solutions",
+        "expected_negative": false
+      },
+      "D": {
+        "script_sha256": "54afb9aeee286a3afefcc610c9ede13e16f063c461d0d40c83278136d97f553a",
+        "JS_runner_sha256": "6f9fa90def3740f8ba84c71afa641796618dd67f8278a3a9234f277fd69b695a",
+        "seed": 9230,
+        "prereg_before_outcomes": true
+      },
+      "E": "PENDING_EXECUTION",
+      "F": {
+        "strength": "Independent generator comparison with same injected shocks when applicable",
+        "limitations": "Python small-N adapter is not untouched original N144, arbitrary actor attributes synthetic; do not count as independent humans"
+      },
+      "G": {
+        "portability": "Linux Node 22.16, not Windows Node 24.16; Windows compilation verified by user, runtime equivalence not certified"
+      },
+      "H": {
+        "prior": "P-TRAJECTORY-INVARIANCE/QA only; NO_CHANGE if only technical results",
+        "sources": "None new"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": "UNDECIDED_NO_HUMAN",
+        "scientific_grade": "0/3"
+      },
+      "J": {
+        "decision": "PASS_ONLY_ACTUAL_EVIDENCE_ELSE_VALID_NEGATIVE_OR_INVALID_INSTRUMENT",
+        "remaining": 6
+      }
+    },
+    {
+      "cycle": "N231",
+      "case": "harmless_below_topk_tie",
+      "type": "TIE_SELECTION_ADVERSARIAL",
+      "A": {
+        "question": "Can cross-language ESBM reproduce or explicitly reject this pre-identified failure mode? harmless_below_topk_tie",
+        "claim": "software property only, not sociological explanation",
+        "D": 1
+      },
+      "B": {
+        "hypothesis": "same input => equal event trajectories, counts and metrics except explicitly diagnostic ties/resources",
+        "rival": "original Python adapter/NetworkX or independent Fraction matching oracle; against TS independent implementation",
+        "null": "no equivalence or explicit STOP"
+      },
+      "C": {
+        "primary": "exact event sequence ignoring only unordered formation iteration and exact discrete metrics; float tolerance 1e-9; type-specific diagnostics for tied optimal solutions",
+        "expected_negative": false
+      },
+      "D": {
+        "script_sha256": "54afb9aeee286a3afefcc610c9ede13e16f063c461d0d40c83278136d97f553a",
+        "JS_runner_sha256": "6f9fa90def3740f8ba84c71afa641796618dd67f8278a3a9234f277fd69b695a",
+        "seed": 9231,
+        "prereg_before_outcomes": true
+      },
+      "E": "PENDING_EXECUTION",
+      "F": {
+        "strength": "Independent generator comparison with same injected shocks when applicable",
+        "limitations": "Python small-N adapter is not untouched original N144, arbitrary actor attributes synthetic; do not count as independent humans"
+      },
+      "G": {
+        "portability": "Linux Node 22.16, not Windows Node 24.16; Windows compilation verified by user, runtime equivalence not certified"
+      },
+      "H": {
+        "prior": "P-TRAJECTORY-INVARIANCE/QA only; NO_CHANGE if only technical results",
+        "sources": "None new"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": "UNDECIDED_NO_HUMAN",
+        "scientific_grade": "0/3"
+      },
+      "J": {
+        "decision": "PASS_ONLY_ACTUAL_EVIDENCE_ELSE_VALID_NEGATIVE_OR_INVALID_INSTRUMENT",
+        "remaining": 5
+      }
+    },
+    {
+      "cycle": "N232",
+      "case": "topk_boundary_tie",
+      "type": "TIE_SELECTION_ADVERSARIAL",
+      "A": {
+        "question": "Can cross-language ESBM reproduce or explicitly reject this pre-identified failure mode? topk_boundary_tie",
+        "claim": "software property only, not sociological explanation",
+        "D": 1
+      },
+      "B": {
+        "hypothesis": "same input => equal event trajectories, counts and metrics except explicitly diagnostic ties/resources",
+        "rival": "original Python adapter/NetworkX or independent Fraction matching oracle; against TS independent implementation",
+        "null": "no equivalence or explicit STOP"
+      },
+      "C": {
+        "primary": "exact event sequence ignoring only unordered formation iteration and exact discrete metrics; float tolerance 1e-9; type-specific diagnostics for tied optimal solutions",
+        "expected_negative": true
+      },
+      "D": {
+        "script_sha256": "54afb9aeee286a3afefcc610c9ede13e16f063c461d0d40c83278136d97f553a",
+        "JS_runner_sha256": "6f9fa90def3740f8ba84c71afa641796618dd67f8278a3a9234f277fd69b695a",
+        "seed": 9232,
+        "prereg_before_outcomes": true
+      },
+      "E": "PENDING_EXECUTION",
+      "F": {
+        "strength": "Independent generator comparison with same injected shocks when applicable",
+        "limitations": "Python small-N adapter is not untouched original N144, arbitrary actor attributes synthetic; do not count as independent humans"
+      },
+      "G": {
+        "portability": "Linux Node 22.16, not Windows Node 24.16; Windows compilation verified by user, runtime equivalence not certified"
+      },
+      "H": {
+        "prior": "P-TRAJECTORY-INVARIANCE/QA only; NO_CHANGE if only technical results",
+        "sources": "None new"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": "UNDECIDED_NO_HUMAN",
+        "scientific_grade": "0/3"
+      },
+      "J": {
+        "decision": "PASS_ONLY_ACTUAL_EVIDENCE_ELSE_VALID_NEGATIVE_OR_INVALID_INSTRUMENT",
+        "remaining": 4
+      }
+    },
+    {
+      "cycle": "N233",
+      "case": "matching_equal_optima",
+      "type": "MATCH_TIE_ADVERSARIAL",
+      "A": {
+        "question": "Can cross-language ESBM reproduce or explicitly reject this pre-identified failure mode? matching_equal_optima",
+        "claim": "software property only, not sociological explanation",
+        "D": 1
+      },
+      "B": {
+        "hypothesis": "same input => equal event trajectories, counts and metrics except explicitly diagnostic ties/resources",
+        "rival": "original Python adapter/NetworkX or independent Fraction matching oracle; against TS independent implementation",
+        "null": "no equivalence or explicit STOP"
+      },
+      "C": {
+        "primary": "exact event sequence ignoring only unordered formation iteration and exact discrete metrics; float tolerance 1e-9; type-specific diagnostics for tied optimal solutions",
+        "expected_negative": true
+      },
+      "D": {
+        "script_sha256": "54afb9aeee286a3afefcc610c9ede13e16f063c461d0d40c83278136d97f553a",
+        "JS_runner_sha256": "6f9fa90def3740f8ba84c71afa641796618dd67f8278a3a9234f277fd69b695a",
+        "seed": 9233,
+        "prereg_before_outcomes": true
+      },
+      "E": "PENDING_EXECUTION",
+      "F": {
+        "strength": "Independent generator comparison with same injected shocks when applicable",
+        "limitations": "Python small-N adapter is not untouched original N144, arbitrary actor attributes synthetic; do not count as independent humans"
+      },
+      "G": {
+        "portability": "Linux Node 22.16, not Windows Node 24.16; Windows compilation verified by user, runtime equivalence not certified"
+      },
+      "H": {
+        "prior": "P-TRAJECTORY-INVARIANCE/QA only; NO_CHANGE if only technical results",
+        "sources": "None new"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": "UNDECIDED_NO_HUMAN",
+        "scientific_grade": "0/3"
+      },
+      "J": {
+        "decision": "PASS_ONLY_ACTUAL_EVIDENCE_ELSE_VALID_NEGATIVE_OR_INVALID_INSTRUMENT",
+        "remaining": 3
+      }
+    },
+    {
+      "cycle": "N234",
+      "case": "binary64_near_tie",
+      "type": "FLOAT_NEAR_TIE",
+      "A": {
+        "question": "Can cross-language ESBM reproduce or explicitly reject this pre-identified failure mode? binary64_near_tie",
+        "claim": "software property only, not sociological explanation",
+        "D": 1
+      },
+      "B": {
+        "hypothesis": "same input => equal event trajectories, counts and metrics except explicitly diagnostic ties/resources",
+        "rival": "original Python adapter/NetworkX or independent Fraction matching oracle; against TS independent implementation",
+        "null": "no equivalence or explicit STOP"
+      },
+      "C": {
+        "primary": "exact event sequence ignoring only unordered formation iteration and exact discrete metrics; float tolerance 1e-9; type-specific diagnostics for tied optimal solutions",
+        "expected_negative": true
+      },
+      "D": {
+        "script_sha256": "54afb9aeee286a3afefcc610c9ede13e16f063c461d0d40c83278136d97f553a",
+        "JS_runner_sha256": "6f9fa90def3740f8ba84c71afa641796618dd67f8278a3a9234f277fd69b695a",
+        "seed": 9234,
+        "prereg_before_outcomes": true
+      },
+      "E": "PENDING_EXECUTION",
+      "F": {
+        "strength": "Independent generator comparison with same injected shocks when applicable",
+        "limitations": "Python small-N adapter is not untouched original N144, arbitrary actor attributes synthetic; do not count as independent humans"
+      },
+      "G": {
+        "portability": "Linux Node 22.16, not Windows Node 24.16; Windows compilation verified by user, runtime equivalence not certified"
+      },
+      "H": {
+        "prior": "P-TRAJECTORY-INVARIANCE/QA only; NO_CHANGE if only technical results",
+        "sources": "None new"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": "UNDECIDED_NO_HUMAN",
+        "scientific_grade": "0/3"
+      },
+      "J": {
+        "decision": "PASS_ONLY_ACTUAL_EVIDENCE_ELSE_VALID_NEGATIVE_OR_INVALID_INSTRUMENT",
+        "remaining": 2
+      }
+    },
+    {
+      "cycle": "N235",
+      "case": "N144_connected_component_cap",
+      "type": "N144_FAIL_STOP",
+      "A": {
+        "question": "Can cross-language ESBM reproduce or explicitly reject this pre-identified failure mode? N144_connected_component_cap",
+        "claim": "software property only, not sociological explanation",
+        "D": 1
+      },
+      "B": {
+        "hypothesis": "same input => equal event trajectories, counts and metrics except explicitly diagnostic ties/resources",
+        "rival": "original Python adapter/NetworkX or independent Fraction matching oracle; against TS independent implementation",
+        "null": "no equivalence or explicit STOP"
+      },
+      "C": {
+        "primary": "exact event sequence ignoring only unordered formation iteration and exact discrete metrics; float tolerance 1e-9; type-specific diagnostics for tied optimal solutions",
+        "expected_negative": true
+      },
+      "D": {
+        "script_sha256": "54afb9aeee286a3afefcc610c9ede13e16f063c461d0d40c83278136d97f553a",
+        "JS_runner_sha256": "6f9fa90def3740f8ba84c71afa641796618dd67f8278a3a9234f277fd69b695a",
+        "seed": 9235,
+        "prereg_before_outcomes": true
+      },
+      "E": "PENDING_EXECUTION",
+      "F": {
+        "strength": "Independent generator comparison with same injected shocks when applicable",
+        "limitations": "Python small-N adapter is not untouched original N144, arbitrary actor attributes synthetic; do not count as independent humans"
+      },
+      "G": {
+        "portability": "Linux Node 22.16, not Windows Node 24.16; Windows compilation verified by user, runtime equivalence not certified"
+      },
+      "H": {
+        "prior": "P-TRAJECTORY-INVARIANCE/QA only; NO_CHANGE if only technical results",
+        "sources": "None new"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": "UNDECIDED_NO_HUMAN",
+        "scientific_grade": "0/3"
+      },
+      "J": {
+        "decision": "PASS_ONLY_ACTUAL_EVIDENCE_ELSE_VALID_NEGATIVE_OR_INVALID_INSTRUMENT",
+        "remaining": 1
+      }
+    },
+    {
+      "cycle": "N236",
+      "case": "networkx_matching_rival_exact",
+      "type": "INDEPENDENT_EXHAUSTIVE_MATCHING_24_GRAPHS",
+      "A": {
+        "question": "Can cross-language ESBM reproduce or explicitly reject this pre-identified failure mode? networkx_matching_rival_exact",
+        "claim": "software property only, not sociological explanation",
+        "D": 1
+      },
+      "B": {
+        "hypothesis": "same input => equal event trajectories, counts and metrics except explicitly diagnostic ties/resources",
+        "rival": "original Python adapter/NetworkX or independent Fraction matching oracle; against TS independent implementation",
+        "null": "no equivalence or explicit STOP"
+      },
+      "C": {
+        "primary": "exact event sequence ignoring only unordered formation iteration and exact discrete metrics; float tolerance 1e-9; type-specific diagnostics for tied optimal solutions",
+        "expected_negative": false
+      },
+      "D": {
+        "script_sha256": "54afb9aeee286a3afefcc610c9ede13e16f063c461d0d40c83278136d97f553a",
+        "JS_runner_sha256": "6f9fa90def3740f8ba84c71afa641796618dd67f8278a3a9234f277fd69b695a",
+        "seed": 9236,
+        "prereg_before_outcomes": true
+      },
+      "E": "PENDING_EXECUTION",
+      "F": {
+        "strength": "Independent generator comparison with same injected shocks when applicable",
+        "limitations": "Python small-N adapter is not untouched original N144, arbitrary actor attributes synthetic; do not count as independent humans"
+      },
+      "G": {
+        "portability": "Linux Node 22.16, not Windows Node 24.16; Windows compilation verified by user, runtime equivalence not certified"
+      },
+      "H": {
+        "prior": "P-TRAJECTORY-INVARIANCE/QA only; NO_CHANGE if only technical results",
+        "sources": "None new"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": "UNDECIDED_NO_HUMAN",
+        "scientific_grade": "0/3"
+      },
+      "J": {
+        "decision": "PASS_ONLY_ACTUAL_EVIDENCE_ELSE_VALID_NEGATIVE_OR_INVALID_INSTRUMENT",
+        "remaining": 0
+      }
+    }
+  ]
+}
