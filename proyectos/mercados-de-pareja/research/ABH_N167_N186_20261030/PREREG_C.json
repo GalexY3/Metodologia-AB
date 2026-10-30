@@ -1,0 +1,251 @@
+{
+  "schema": "ABH.3.2.1.BLOCK_C",
+  "branch": "research/ab-h-esbm-adversarial-benchmark-20261030",
+  "authorization": 20,
+  "done": 10,
+  "pending": 10,
+  "code_sha": "FREEZE_IN_GITHUB_PREOUTCOME",
+  "date": "2026-10-30",
+  "seeds": {
+    "train": "7200..7259",
+    "test": "9400..9479",
+    "bootstrap": 1810
+  },
+  "contracts": [
+    {
+      "id": "N177",
+      "parent": "N176",
+      "mode": "STAGE",
+      "D": {
+        "input": "original model trace, no participant records",
+        "code_freeze": "sha before execution"
+      },
+      "A": {
+        "question": "Reconstruct sequential outgoing proposal, conditional reply and joint positive from each actual simulated exposure",
+        "estimand": "Synthetic conditional and joint stage predicted probability"
+      },
+      "B": {
+        "rivals": [
+          "sender only",
+          "reply if proposed",
+          "joint model-structural product",
+          "B0",
+          "B2",
+          "B4",
+          "B6"
+        ],
+        "null": "Oracle not superior / temporal inconsistency"
+      },
+      "C": {
+        "falsifier": "By seed 7200..7259 train and 9400..9479 test, exact proposal and positive event conservation; no two native human ballots",
+        "negative": "One positive response without proposal is a mandatory failure"
+      },
+      "E": "PENDING",
+      "F": {
+        "adversarial": "Proposals create endogenous response sample; no independent native human yes/no claim",
+        "challenge": "Strong fitted logistic and nonlinear baseline"
+      },
+      "G": {
+        "external": "NONE",
+        "human": "STOP_R5"
+      },
+      "H": "Model priors technical only",
+      "I": {
+        "CT2": 7,
+        "grade": "0/3"
+      },
+      "J": {
+        "if_pass": "N178",
+        "if_fail": "invalid or explicitly bounded repair"
+      }
+    },
+    {
+      "id": "N178",
+      "parent": "N177",
+      "mode": "JOINT",
+      "D": {
+        "input": "original model trace, no participant records",
+        "code_freeze": "sha before execution"
+      },
+      "A": {
+        "question": "Test B0/B2/B4/B6 vs structural p(send)*p(reply|send) for joint positive outcome",
+        "estimand": "Synthetic conditional and joint stage predicted probability"
+      },
+      "B": {
+        "rivals": [
+          "sender only",
+          "reply if proposed",
+          "joint model-structural product",
+          "B0",
+          "B2",
+          "B4",
+          "B6"
+        ],
+        "null": "Oracle not superior / temporal inconsistency"
+      },
+      "C": {
+        "falsifier": "Fresh 80-seed joint holdout 9400..9479, no direct label or response shocks in features; report logloss and Brier",
+        "negative": "One positive response without proposal is a mandatory failure"
+      },
+      "E": "PENDING",
+      "F": {
+        "adversarial": "Proposals create endogenous response sample; no independent native human yes/no claim",
+        "challenge": "Strong fitted logistic and nonlinear baseline"
+      },
+      "G": {
+        "external": "NONE",
+        "human": "STOP_R5"
+      },
+      "H": "Model priors technical only",
+      "I": {
+        "CT2": 7,
+        "grade": "0/3"
+      },
+      "J": {
+        "if_pass": "N179",
+        "if_fail": "invalid or explicitly bounded repair"
+      }
+    },
+    {
+      "id": "N179",
+      "parent": "N178",
+      "mode": "CONDITIONAL",
+      "D": {
+        "input": "original model trace, no participant records",
+        "code_freeze": "sha before execution"
+      },
+      "A": {
+        "question": "Test B0/B2/B4/B6 vs structural p(reply|send) among realized proposals only",
+        "estimand": "Synthetic conditional and joint stage predicted probability"
+      },
+      "B": {
+        "rivals": [
+          "sender only",
+          "reply if proposed",
+          "joint model-structural product",
+          "B0",
+          "B2",
+          "B4",
+          "B6"
+        ],
+        "null": "Oracle not superior / temporal inconsistency"
+      },
+      "C": {
+        "falsifier": "Train uses true proposed subset; heldout 80 seeds, explicit selection-on-proposals, report N and loss",
+        "negative": "One positive response without proposal is a mandatory failure"
+      },
+      "E": "PENDING",
+      "F": {
+        "adversarial": "Proposals create endogenous response sample; no independent native human yes/no claim",
+        "challenge": "Strong fitted logistic and nonlinear baseline"
+      },
+      "G": {
+        "external": "NONE",
+        "human": "STOP_R5"
+      },
+      "H": "Model priors technical only",
+      "I": {
+        "CT2": 7,
+        "grade": "0/3"
+      },
+      "J": {
+        "if_pass": "N180",
+        "if_fail": "invalid or explicitly bounded repair"
+      }
+    },
+    {
+      "id": "N180",
+      "parent": "N179",
+      "mode": "OPPORTUNITY_SHIFT",
+      "D": {
+        "input": "original model trace, no participant records",
+        "code_freeze": "sha before execution"
+      },
+      "A": {
+        "question": "Evaluate true joint probabilities when test schedule changes to canonical rewired",
+        "estimand": "Synthetic conditional and joint stage predicted probability"
+      },
+      "B": {
+        "rivals": [
+          "sender only",
+          "reply if proposed",
+          "joint model-structural product",
+          "B0",
+          "B2",
+          "B4",
+          "B6"
+        ],
+        "null": "Oracle not superior / temporal inconsistency"
+      },
+      "C": {
+        "falsifier": "Train ring, test rewired same 80 holdout seeds, report event opportunities and model losses, avoid causal topology assertion",
+        "negative": "One positive response without proposal is a mandatory failure"
+      },
+      "E": "PENDING",
+      "F": {
+        "adversarial": "Proposals create endogenous response sample; no independent native human yes/no claim",
+        "challenge": "Strong fitted logistic and nonlinear baseline"
+      },
+      "G": {
+        "external": "NONE",
+        "human": "STOP_R5"
+      },
+      "H": "Model priors technical only",
+      "I": {
+        "CT2": 7,
+        "grade": "0/3"
+      },
+      "J": {
+        "if_pass": "N181",
+        "if_fail": "invalid or explicitly bounded repair"
+      }
+    },
+    {
+      "id": "N181",
+      "parent": "N180",
+      "mode": "CLUSTER_BOOTSTRAP",
+      "D": {
+        "input": "original model trace, no participant records",
+        "code_freeze": "sha before execution"
+      },
+      "A": {
+        "question": "Paired by generator seed bootstrap of structural oracle vs B2 and B6 on joint outcome",
+        "estimand": "Synthetic conditional and joint stage predicted probability"
+      },
+      "B": {
+        "rivals": [
+          "sender only",
+          "reply if proposed",
+          "joint model-structural product",
+          "B0",
+          "B2",
+          "B4",
+          "B6"
+        ],
+        "null": "Oracle not superior / temporal inconsistency"
+      },
+      "C": {
+        "falsifier": "At 80 independent synthetic seeds, 4000 bootstrap seed=1810, interval and sign distribution; no human confidence inference",
+        "negative": "One positive response without proposal is a mandatory failure"
+      },
+      "E": "PENDING",
+      "F": {
+        "adversarial": "Proposals create endogenous response sample; no independent native human yes/no claim",
+        "challenge": "Strong fitted logistic and nonlinear baseline"
+      },
+      "G": {
+        "external": "NONE",
+        "human": "STOP_R5"
+      },
+      "H": "Model priors technical only",
+      "I": {
+        "CT2": 7,
+        "grade": "0/3"
+      },
+      "J": {
+        "if_pass": "audit catalogue and missing evidence",
+        "if_fail": "invalid or explicitly bounded repair"
+      }
+    }
+  ]
+}
