@@ -1,0 +1,233 @@
+{
+  "schema": "ABH_N192_N196_PRE_OUTCOME",
+  "date": "2026-10-30",
+  "parent": "N191",
+  "branch": "research/ab-h-esbm-rival-parity-20261030",
+  "authorized": 20,
+  "used": 5,
+  "remaining": 15,
+  "mode": "BRANCH_ADVERSARIAL_GENERATOR",
+  "original_data_sha": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+  "contracts": [
+    {
+      "id": "N192",
+      "parent": "N191",
+      "mode": "POSITIVE_CONTROL_ACTORS",
+      "drift_D": 1.4,
+      "A": {
+        "question": "Introduce new DGP with persistent actor and receiver heterogeneity and see whether SRM recovers predictive signal from same riskset",
+        "estimand": "Synthetic teacher-student positive-control predictive logloss"
+      },
+      "B": {
+        "null": "SRM or B6 fails to recover known implanted signal with sparse actor history",
+        "rivals": [
+          "B2 same ex-ante fields",
+          "regularized actor-target two-way SRM",
+          "finite B6 feature interactions",
+          "label-sham"
+        ],
+        "prior_art": "These are software model-power checks not new human effects"
+      },
+      "C": {
+        "endpoint": "Synthetic seed 12500–12539; actor sender and target latent effects fixed across t0–t3, label RNG 192; equal train t0–t2, holdout t3; compare B2 vs regularized SRM",
+        "falsifier": "If strong signal is not detected, mark weak power rather than artificially tuning model; identity tests exact or INVALID"
+      },
+      "D": {
+        "data": "40 cohorts seeds12500–12539; tick0–2 train tick3 holdout",
+        "dgp": "actor target fixed latent normal SD1.3; alternative norm-age XOR+exposure nonlinear; random state source frozen",
+        "code_sha": "separate FREEZE_B.json before outcomes"
+      },
+      "E": "PENDING",
+      "F": {
+        "adversarial": "Both controlled DGP and sham/null, no use of test labels during training",
+        "multiple_testing": "5 planned checks, exploratory synthetic"
+      },
+      "G": "No independent humans, no external replication",
+      "H": "Only technical model competence prior, no external scientific update",
+      "I": {
+        "scientific_CT2": 7,
+        "grade": "0/3"
+      },
+      "J": {
+        "pass": "N193",
+        "fail": "register negative; limit spending additional cycles"
+      }
+    },
+    {
+      "id": "N193",
+      "parent": "N192",
+      "mode": "NEGATIVE_CONTROL_ACTORS",
+      "drift_D": 0.3,
+      "A": {
+        "question": "Erase persistent actor effects in a DGP preserving marginal prevalence while retaining same exposure network",
+        "estimand": "Synthetic teacher-student positive-control predictive logloss"
+      },
+      "B": {
+        "null": "SRM or B6 fails to recover known implanted signal with sparse actor history",
+        "rivals": [
+          "B2 same ex-ante fields",
+          "regularized actor-target two-way SRM",
+          "finite B6 feature interactions",
+          "label-sham"
+        ],
+        "prior_art": "These are software model-power checks not new human effects"
+      },
+      "C": {
+        "endpoint": "Same 40 cohorts, ex ante Bernoulli with age/norm predictors but no actor effects; SRM should not automatically win; no cherry picked threshold",
+        "falsifier": "If strong signal is not detected, mark weak power rather than artificially tuning model; identity tests exact or INVALID"
+      },
+      "D": {
+        "data": "40 cohorts seeds12500–12539; tick0–2 train tick3 holdout",
+        "dgp": "actor target fixed latent normal SD1.3; alternative norm-age XOR+exposure nonlinear; random state source frozen",
+        "code_sha": "separate FREEZE_B.json before outcomes"
+      },
+      "E": "PENDING",
+      "F": {
+        "adversarial": "Both controlled DGP and sham/null, no use of test labels during training",
+        "multiple_testing": "5 planned checks, exploratory synthetic"
+      },
+      "G": "No independent humans, no external replication",
+      "H": "Only technical model competence prior, no external scientific update",
+      "I": {
+        "scientific_CT2": 7,
+        "grade": "0/3"
+      },
+      "J": {
+        "pass": "N194",
+        "fail": "register negative; limit spending additional cycles"
+      }
+    },
+    {
+      "id": "N194",
+      "parent": "N193",
+      "mode": "NONLINEAR_FEEDBACK",
+      "drift_D": 0.3,
+      "A": {
+        "question": "Create adversarial nonlinear temporal DGP with an XOR-like norm/age rule and past-exposure interaction",
+        "estimand": "Synthetic teacher-student positive-control predictive logloss"
+      },
+      "B": {
+        "null": "SRM or B6 fails to recover known implanted signal with sparse actor history",
+        "rivals": [
+          "B2 same ex-ante fields",
+          "regularized actor-target two-way SRM",
+          "finite B6 feature interactions",
+          "label-sham"
+        ],
+        "prior_art": "These are software model-power checks not new human effects"
+      },
+      "C": {
+        "endpoint": "Same 40 cohorts, train t0–t2, test t3; compare shared-feature B2 logit, nonlinear B6 finite; no oracle advantage claim",
+        "falsifier": "If strong signal is not detected, mark weak power rather than artificially tuning model; identity tests exact or INVALID"
+      },
+      "D": {
+        "data": "40 cohorts seeds12500–12539; tick0–2 train tick3 holdout",
+        "dgp": "actor target fixed latent normal SD1.3; alternative norm-age XOR+exposure nonlinear; random state source frozen",
+        "code_sha": "separate FREEZE_B.json before outcomes"
+      },
+      "E": "PENDING",
+      "F": {
+        "adversarial": "Both controlled DGP and sham/null, no use of test labels during training",
+        "multiple_testing": "5 planned checks, exploratory synthetic"
+      },
+      "G": "No independent humans, no external replication",
+      "H": "Only technical model competence prior, no external scientific update",
+      "I": {
+        "scientific_CT2": 7,
+        "grade": "0/3"
+      },
+      "J": {
+        "pass": "N195",
+        "fail": "register negative; limit spending additional cycles"
+      }
+    },
+    {
+      "id": "N195",
+      "parent": "N194",
+      "mode": "DGP_SPLIT",
+      "drift_D": 0.3,
+      "A": {
+        "question": "Test calibration and variance of predictions on both positive-control DGPs separately and report all signs",
+        "estimand": "Synthetic teacher-student positive-control predictive logloss"
+      },
+      "B": {
+        "null": "SRM or B6 fails to recover known implanted signal with sparse actor history",
+        "rivals": [
+          "B2 same ex-ante fields",
+          "regularized actor-target two-way SRM",
+          "finite B6 feature interactions",
+          "label-sham"
+        ],
+        "prior_art": "These are software model-power checks not new human effects"
+      },
+      "C": {
+        "endpoint": "Brier, logloss, per-seed deltas and clustered bootstrap 2000 resamples seed 195; N192/N194 result reuse, distinct inferential test",
+        "falsifier": "If strong signal is not detected, mark weak power rather than artificially tuning model; identity tests exact or INVALID"
+      },
+      "D": {
+        "data": "40 cohorts seeds12500–12539; tick0–2 train tick3 holdout",
+        "dgp": "actor target fixed latent normal SD1.3; alternative norm-age XOR+exposure nonlinear; random state source frozen",
+        "code_sha": "separate FREEZE_B.json before outcomes"
+      },
+      "E": "PENDING",
+      "F": {
+        "adversarial": "Both controlled DGP and sham/null, no use of test labels during training",
+        "multiple_testing": "5 planned checks, exploratory synthetic"
+      },
+      "G": "No independent humans, no external replication",
+      "H": "Only technical model competence prior, no external scientific update",
+      "I": {
+        "scientific_CT2": 7,
+        "grade": "0/3"
+      },
+      "J": {
+        "pass": "N196",
+        "fail": "register negative; limit spending additional cycles"
+      }
+    },
+    {
+      "id": "N196",
+      "parent": "N195",
+      "mode": "PERMUTATION_AUDIT",
+      "drift_D": 0.3,
+      "A": {
+        "question": "Verify change in actor label names alone does not change group-indexed SRM predicted scores when train and test labels permuted together",
+        "estimand": "Synthetic teacher-student positive-control predictive logloss"
+      },
+      "B": {
+        "null": "SRM or B6 fails to recover known implanted signal with sparse actor history",
+        "rivals": [
+          "B2 same ex-ante fields",
+          "regularized actor-target two-way SRM",
+          "finite B6 feature interactions",
+          "label-sham"
+        ],
+        "prior_art": "These are software model-power checks not new human effects"
+      },
+      "C": {
+        "endpoint": "One fixed synthetic dataset, deterministic actor relabel 10 random permutations, reconstruct model with same regularization and fit training-only; strict prediction tolerance 1e-9; do not transform outcomes",
+        "falsifier": "If strong signal is not detected, mark weak power rather than artificially tuning model; identity tests exact or INVALID"
+      },
+      "D": {
+        "data": "40 cohorts seeds12500–12539; tick0–2 train tick3 holdout",
+        "dgp": "actor target fixed latent normal SD1.3; alternative norm-age XOR+exposure nonlinear; random state source frozen",
+        "code_sha": "separate FREEZE_B.json before outcomes"
+      },
+      "E": "PENDING",
+      "F": {
+        "adversarial": "Both controlled DGP and sham/null, no use of test labels during training",
+        "multiple_testing": "5 planned checks, exploratory synthetic"
+      },
+      "G": "No independent humans, no external replication",
+      "H": "Only technical model competence prior, no external scientific update",
+      "I": {
+        "scientific_CT2": 7,
+        "grade": "0/3"
+      },
+      "J": {
+        "pass": "close line if weak power",
+        "fail": "register negative; limit spending additional cycles"
+      }
+    }
+  ]
+}

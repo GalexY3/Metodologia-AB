@@ -1,0 +1,507 @@
+{
+  "schema": "ABH_N187_N206_LEDGERS_A",
+  "date": "2026-10-30",
+  "branch": "research/ab-h-esbm-rival-parity-20261030",
+  "original_ESBM_SHA256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+  "prereg_commit": "c530ba63f22946be4baf4262d2038fbd9f17813c",
+  "cycles": [
+    {
+      "id": "N187",
+      "parent": "N186",
+      "mode": "RISKSET",
+      "drift_D": 1.2,
+      "A": {
+        "question": "Build genuine shared pre-outcome event panels with a time-based within-cohort split and audit no future outcomes",
+        "estimand": "synthetic prospective per-exposure unilateral proposal probability"
+      },
+      "B": {
+        "null": "SRM and flexible history model do not improve baseline B2 under equal training and features",
+        "rivals": [
+          "regularized B2",
+          "cross-classified sender/target effects SRM",
+          "nonlinear history model finite B6",
+          "constant B0",
+          "oracle true DGP",
+          "label-sham"
+        ],
+        "prior_art": "SRM and B6* well established; not new sociological discovery"
+      },
+      "C": {
+        "endpoint": "24x4 synthetic; seeds 12000-12049; ticks0-2 fitting, tick3 evaluation; each exposure unique event, labels and identities conservation, no observed outcome in features",
+        "falsification": "any row imbalance, actor leakage, split misuse -> INVALID; B2 equal/better undermines incremental ESRM advantage"
+      },
+      "D": {
+        "seeds": "12000-12049",
+        "train": "tick0,1,2",
+        "test": "tick3",
+        "model_params": "L2 fixed C=0.3, all 9 pre-outcome covariates; boosting 100 iterations shallow leaves and min leaf 20",
+        "source_code_SHA": "freeze later in separate GitHub commit before outcomes",
+        "freeze_commit": "afa05cafb98cf5abf386a46419eb704c2b78cec8",
+        "prereg_commit": "c530ba63f22946be4baf4262d2038fbd9f17813c",
+        "initial_error_id": "N187_REPAIR_PREREG.md"
+      },
+      "E": {
+        "status": "PASS",
+        "real_outcome": {
+          "fit": 2351,
+          "test": 613,
+          "positive_train": 692,
+          "positive_test": 166
+        },
+        "full_seed_receipt_in_local_ZIP": true,
+        "human_rows_read": 0,
+        "source_hashes": {
+          "run_A": "1fb99ae098d88169ab4dfbf13ce94195b6789014744f3ec00e0e966190c0a342",
+          "run_B": "c36f86b7bf1573adcebcb3b0237d4b5d94601b9ccf2d929acba58352955a31a0",
+          "run_C": "b8fc847f1a4c11cf8ac4c5f7d2cdac8b1781b4c27daa029db0004040520be624",
+          "score_node": "6d1c1515109f117d299e740561701e3f12500bed5d1a8b98f44fca54fbafba68",
+          "run_D": "68bc8895c0b88e438cfddd9d5f34b6031b2689683518c38f64098b7b91d47015",
+          "run_D_fit": "67aa1b66c02d3873313f1a848ea9181c0002b8f2013408ea68604b3a7e443fdb",
+          "fit_node": "6901223b97a0eeefaf161b5f963d064d2cc482855e89e205247ad3517fb03cf5"
+        }
+      },
+      "F": {
+        "adversarial_review": {
+          "adversarial": "same rows/features/budget; compare label sham and no ID info; avoid source-truth asymmetry",
+          "negative_controls": "renamed/shuffled actor IDs and withheld tick"
+        },
+        "negative_result": "Preserve zero or negative advantages and actor-ID confounds."
+      },
+      "G": {
+        "caveat": {
+          "holdout": "SYNTHETIC tick3 fixed; no external replication"
+        },
+        "external_replication": false,
+        "human_R5": "STOP"
+      },
+      "H": {
+        "prior_update_ids": [
+          "U188",
+          "U189",
+          "U190",
+          "U191",
+          "U192"
+        ],
+        "human_priors": "NO_CHANGE_WITH_REASON",
+        "source_refs": []
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "grade": "0/3",
+        "counts_scientific_human_validation": false,
+        "valid": true
+      },
+      "J": {
+        "decision": "CONTINUE_DISTINCT_MECHANISM",
+        "next": "N188",
+        "reason": "Distinct preregistered technical falsifier, no inflation of external confidence",
+        "credit_spent": 1
+      },
+      "selection_exposure": "Adaptive blocks; all cohort/actor controls synthetic, no human holdout",
+      "outcome_refs": [
+        "proyectos/mercados-de-pareja/research/ABH_N187_N206_20261030/RESULTS_INDEX.json",
+        "proyectos/mercados-de-pareja/research/ABH_N187_N206_20261030/PREREG_A.json"
+      ]
+    },
+    {
+      "id": "N188",
+      "parent": "N187",
+      "mode": "SRM_PARITY",
+      "drift_D": 0.4,
+      "A": {
+        "question": "Implement cross-classified sender and target regularized effects on SAME training rows and nine base features as B2",
+        "estimand": "synthetic prospective per-exposure unilateral proposal probability"
+      },
+      "B": {
+        "null": "SRM and flexible history model do not improve baseline B2 under equal training and features",
+        "rivals": [
+          "regularized B2",
+          "cross-classified sender/target effects SRM",
+          "nonlinear history model finite B6",
+          "constant B0",
+          "oracle true DGP",
+          "label-sham"
+        ],
+        "prior_art": "SRM and B6* well established; not new sociological discovery"
+      },
+      "C": {
+        "endpoint": "Two actor-ID intercept blocks and 9 common covariates, L2 penalty; no dedicated unknown person test that unfairly wipes IDs",
+        "falsification": "any row imbalance, actor leakage, split misuse -> INVALID; B2 equal/better undermines incremental ESRM advantage"
+      },
+      "D": {
+        "seeds": "12000-12049",
+        "train": "tick0,1,2",
+        "test": "tick3",
+        "model_params": "L2 fixed C=0.3, all 9 pre-outcome covariates; boosting 100 iterations shallow leaves and min leaf 20",
+        "source_code_SHA": "freeze later in separate GitHub commit before outcomes",
+        "freeze_commit": "afa05cafb98cf5abf386a46419eb704c2b78cec8",
+        "prereg_commit": "c530ba63f22946be4baf4262d2038fbd9f17813c",
+        "initial_error_id": null
+      },
+      "E": {
+        "status": "PASS",
+        "real_outcome": {
+          "SRM_logloss": 0.5785676283864234,
+          "B2_logloss": 0.5691718794866818,
+          "actor_dummy_features": 1974
+        },
+        "full_seed_receipt_in_local_ZIP": true,
+        "human_rows_read": 0,
+        "source_hashes": {
+          "run_A": "1fb99ae098d88169ab4dfbf13ce94195b6789014744f3ec00e0e966190c0a342",
+          "run_B": "c36f86b7bf1573adcebcb3b0237d4b5d94601b9ccf2d929acba58352955a31a0",
+          "run_C": "b8fc847f1a4c11cf8ac4c5f7d2cdac8b1781b4c27daa029db0004040520be624",
+          "score_node": "6d1c1515109f117d299e740561701e3f12500bed5d1a8b98f44fca54fbafba68",
+          "run_D": "68bc8895c0b88e438cfddd9d5f34b6031b2689683518c38f64098b7b91d47015",
+          "run_D_fit": "67aa1b66c02d3873313f1a848ea9181c0002b8f2013408ea68604b3a7e443fdb",
+          "fit_node": "6901223b97a0eeefaf161b5f963d064d2cc482855e89e205247ad3517fb03cf5"
+        }
+      },
+      "F": {
+        "adversarial_review": {
+          "adversarial": "same rows/features/budget; compare label sham and no ID info; avoid source-truth asymmetry",
+          "negative_controls": "renamed/shuffled actor IDs and withheld tick"
+        },
+        "negative_result": "SRM does not outperform B2 in current sparse actor history, label sham performs similarly; do not claim mechanism defeated"
+      },
+      "G": {
+        "caveat": {
+          "holdout": "SYNTHETIC tick3 fixed; no external replication"
+        },
+        "external_replication": false,
+        "human_R5": "STOP"
+      },
+      "H": {
+        "prior_update_ids": [
+          "U188",
+          "U189",
+          "U190",
+          "U191",
+          "U192"
+        ],
+        "human_priors": "NO_CHANGE_WITH_REASON",
+        "source_refs": []
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "grade": "0/3",
+        "counts_scientific_human_validation": false,
+        "valid": true
+      },
+      "J": {
+        "decision": "CONTINUE_DISTINCT_MECHANISM",
+        "next": "N189",
+        "reason": "Distinct preregistered technical falsifier, no inflation of external confidence",
+        "credit_spent": 1
+      },
+      "selection_exposure": "Adaptive blocks; all cohort/actor controls synthetic, no human holdout",
+      "outcome_refs": [
+        "proyectos/mercados-de-pareja/research/ABH_N187_N206_20261030/RESULTS_INDEX.json",
+        "proyectos/mercados-de-pareja/research/ABH_N187_N206_20261030/PREREG_A.json"
+      ]
+    },
+    {
+      "id": "N189",
+      "parent": "N188",
+      "mode": "B6_FLEX",
+      "drift_D": 0.4,
+      "A": {
+        "question": "Implement strong nonlinear time/history feedback model with equal covariate source and evaluate against SRM and B2",
+        "estimand": "synthetic prospective per-exposure unilateral proposal probability"
+      },
+      "B": {
+        "null": "SRM and flexible history model do not improve baseline B2 under equal training and features",
+        "rivals": [
+          "regularized B2",
+          "cross-classified sender/target effects SRM",
+          "nonlinear history model finite B6",
+          "constant B0",
+          "oracle true DGP",
+          "label-sham"
+        ],
+        "prior_art": "SRM and B6* well established; not new sociological discovery"
+      },
+      "C": {
+        "endpoint": "Boosting with same pre-outcome features and pair nonlinear interactions; disclose whether q and private bias available to all, finite B6 cannot claim B6*",
+        "falsification": "any row imbalance, actor leakage, split misuse -> INVALID; B2 equal/better undermines incremental ESRM advantage"
+      },
+      "D": {
+        "seeds": "12000-12049",
+        "train": "tick0,1,2",
+        "test": "tick3",
+        "model_params": "L2 fixed C=0.3, all 9 pre-outcome covariates; boosting 100 iterations shallow leaves and min leaf 20",
+        "source_code_SHA": "freeze later in separate GitHub commit before outcomes",
+        "freeze_commit": "afa05cafb98cf5abf386a46419eb704c2b78cec8",
+        "prereg_commit": "c530ba63f22946be4baf4262d2038fbd9f17813c",
+        "initial_error_id": null
+      },
+      "E": {
+        "status": "PASS",
+        "real_outcome": {
+          "finite_B6_logloss": 0.5791061225739036,
+          "B6star_implemented": false
+        },
+        "full_seed_receipt_in_local_ZIP": true,
+        "human_rows_read": 0,
+        "source_hashes": {
+          "run_A": "1fb99ae098d88169ab4dfbf13ce94195b6789014744f3ec00e0e966190c0a342",
+          "run_B": "c36f86b7bf1573adcebcb3b0237d4b5d94601b9ccf2d929acba58352955a31a0",
+          "run_C": "b8fc847f1a4c11cf8ac4c5f7d2cdac8b1781b4c27daa029db0004040520be624",
+          "score_node": "6d1c1515109f117d299e740561701e3f12500bed5d1a8b98f44fca54fbafba68",
+          "run_D": "68bc8895c0b88e438cfddd9d5f34b6031b2689683518c38f64098b7b91d47015",
+          "run_D_fit": "67aa1b66c02d3873313f1a848ea9181c0002b8f2013408ea68604b3a7e443fdb",
+          "fit_node": "6901223b97a0eeefaf161b5f963d064d2cc482855e89e205247ad3517fb03cf5"
+        }
+      },
+      "F": {
+        "adversarial_review": {
+          "adversarial": "same rows/features/budget; compare label sham and no ID info; avoid source-truth asymmetry",
+          "negative_controls": "renamed/shuffled actor IDs and withheld tick"
+        },
+        "negative_result": "Preserve zero or negative advantages and actor-ID confounds."
+      },
+      "G": {
+        "caveat": {
+          "holdout": "SYNTHETIC tick3 fixed; no external replication"
+        },
+        "external_replication": false,
+        "human_R5": "STOP"
+      },
+      "H": {
+        "prior_update_ids": [
+          "U188",
+          "U189",
+          "U190",
+          "U191",
+          "U192"
+        ],
+        "human_priors": "NO_CHANGE_WITH_REASON",
+        "source_refs": []
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "grade": "0/3",
+        "counts_scientific_human_validation": false,
+        "valid": true
+      },
+      "J": {
+        "decision": "CONTINUE_DISTINCT_MECHANISM",
+        "next": "N190",
+        "reason": "Distinct preregistered technical falsifier, no inflation of external confidence",
+        "credit_spent": 1
+      },
+      "selection_exposure": "Adaptive blocks; all cohort/actor controls synthetic, no human holdout",
+      "outcome_refs": [
+        "proyectos/mercados-de-pareja/research/ABH_N187_N206_20261030/RESULTS_INDEX.json",
+        "proyectos/mercados-de-pareja/research/ABH_N187_N206_20261030/PREREG_A.json"
+      ]
+    },
+    {
+      "id": "N190",
+      "parent": "N189",
+      "mode": "HOLDOUT",
+      "drift_D": 0.4,
+      "A": {
+        "question": "Compare SRM, B2, B6, B0 and true generating oracle strictly on withheld tick3",
+        "estimand": "synthetic prospective per-exposure unilateral proposal probability"
+      },
+      "B": {
+        "null": "SRM and flexible history model do not improve baseline B2 under equal training and features",
+        "rivals": [
+          "regularized B2",
+          "cross-classified sender/target effects SRM",
+          "nonlinear history model finite B6",
+          "constant B0",
+          "oracle true DGP",
+          "label-sham"
+        ],
+        "prior_art": "SRM and B6* well established; not new sociological discovery"
+      },
+      "C": {
+        "endpoint": "Time split fixed, score logloss Brier and per-cohort differences; 4000 bootstrap seed 187190; all negatives remain",
+        "falsification": "any row imbalance, actor leakage, split misuse -> INVALID; B2 equal/better undermines incremental ESRM advantage"
+      },
+      "D": {
+        "seeds": "12000-12049",
+        "train": "tick0,1,2",
+        "test": "tick3",
+        "model_params": "L2 fixed C=0.3, all 9 pre-outcome covariates; boosting 100 iterations shallow leaves and min leaf 20",
+        "source_code_SHA": "freeze later in separate GitHub commit before outcomes",
+        "freeze_commit": "afa05cafb98cf5abf386a46419eb704c2b78cec8",
+        "prereg_commit": "c530ba63f22946be4baf4262d2038fbd9f17813c",
+        "initial_error_id": null
+      },
+      "E": {
+        "status": "PASS",
+        "real_outcome": {
+          "oracle": 0.5647444596328012,
+          "B2": 0.5691718794866818,
+          "SRM": 0.5785676283864234,
+          "B6": 0.5791061225739036,
+          "SRM_minus_B2_seed_CI95": [
+            0.0015192175346974536,
+            0.016813309849711543
+          ]
+        },
+        "full_seed_receipt_in_local_ZIP": true,
+        "human_rows_read": 0,
+        "source_hashes": {
+          "run_A": "1fb99ae098d88169ab4dfbf13ce94195b6789014744f3ec00e0e966190c0a342",
+          "run_B": "c36f86b7bf1573adcebcb3b0237d4b5d94601b9ccf2d929acba58352955a31a0",
+          "run_C": "b8fc847f1a4c11cf8ac4c5f7d2cdac8b1781b4c27daa029db0004040520be624",
+          "score_node": "6d1c1515109f117d299e740561701e3f12500bed5d1a8b98f44fca54fbafba68",
+          "run_D": "68bc8895c0b88e438cfddd9d5f34b6031b2689683518c38f64098b7b91d47015",
+          "run_D_fit": "67aa1b66c02d3873313f1a848ea9181c0002b8f2013408ea68604b3a7e443fdb",
+          "fit_node": "6901223b97a0eeefaf161b5f963d064d2cc482855e89e205247ad3517fb03cf5"
+        }
+      },
+      "F": {
+        "adversarial_review": {
+          "adversarial": "same rows/features/budget; compare label sham and no ID info; avoid source-truth asymmetry",
+          "negative_controls": "renamed/shuffled actor IDs and withheld tick"
+        },
+        "negative_result": "Preserve zero or negative advantages and actor-ID confounds."
+      },
+      "G": {
+        "caveat": {
+          "holdout": "SYNTHETIC tick3 fixed; no external replication"
+        },
+        "external_replication": false,
+        "human_R5": "STOP"
+      },
+      "H": {
+        "prior_update_ids": [
+          "U188",
+          "U189",
+          "U190",
+          "U191",
+          "U192"
+        ],
+        "human_priors": "NO_CHANGE_WITH_REASON",
+        "source_refs": []
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "grade": "0/3",
+        "counts_scientific_human_validation": false,
+        "valid": true
+      },
+      "J": {
+        "decision": "CONTINUE_DISTINCT_MECHANISM",
+        "next": "N191",
+        "reason": "Distinct preregistered technical falsifier, no inflation of external confidence",
+        "credit_spent": 1
+      },
+      "selection_exposure": "Adaptive blocks; all cohort/actor controls synthetic, no human holdout",
+      "outcome_refs": [
+        "proyectos/mercados-de-pareja/research/ABH_N187_N206_20261030/RESULTS_INDEX.json",
+        "proyectos/mercados-de-pareja/research/ABH_N187_N206_20261030/PREREG_A.json"
+      ]
+    },
+    {
+      "id": "N191",
+      "parent": "N190",
+      "mode": "CAPACITY_NULL",
+      "drift_D": 0.4,
+      "A": {
+        "question": "Test actor/target SRM incremental capacity against label-sham and exposure-order-only control",
+        "estimand": "synthetic prospective per-exposure unilateral proposal probability"
+      },
+      "B": {
+        "null": "SRM and flexible history model do not improve baseline B2 under equal training and features",
+        "rivals": [
+          "regularized B2",
+          "cross-classified sender/target effects SRM",
+          "nonlinear history model finite B6",
+          "constant B0",
+          "oracle true DGP",
+          "label-sham"
+        ],
+        "prior_art": "SRM and B6* well established; not new sociological discovery"
+      },
+      "C": {
+        "endpoint": "An equally regularized actor-ID random shuffled mapping null on train, compare test paired by seed; reject unsupported benefit",
+        "falsification": "any row imbalance, actor leakage, split misuse -> INVALID; B2 equal/better undermines incremental ESRM advantage"
+      },
+      "D": {
+        "seeds": "12000-12049",
+        "train": "tick0,1,2",
+        "test": "tick3",
+        "model_params": "L2 fixed C=0.3, all 9 pre-outcome covariates; boosting 100 iterations shallow leaves and min leaf 20",
+        "source_code_SHA": "freeze later in separate GitHub commit before outcomes",
+        "freeze_commit": "afa05cafb98cf5abf386a46419eb704c2b78cec8",
+        "prereg_commit": "c530ba63f22946be4baf4262d2038fbd9f17813c",
+        "initial_error_id": null
+      },
+      "E": {
+        "status": "PASS",
+        "real_outcome": {
+          "actor_sham": 0.575735814563477,
+          "SRM": 0.5785676283864234
+        },
+        "full_seed_receipt_in_local_ZIP": true,
+        "human_rows_read": 0,
+        "source_hashes": {
+          "run_A": "1fb99ae098d88169ab4dfbf13ce94195b6789014744f3ec00e0e966190c0a342",
+          "run_B": "c36f86b7bf1573adcebcb3b0237d4b5d94601b9ccf2d929acba58352955a31a0",
+          "run_C": "b8fc847f1a4c11cf8ac4c5f7d2cdac8b1781b4c27daa029db0004040520be624",
+          "score_node": "6d1c1515109f117d299e740561701e3f12500bed5d1a8b98f44fca54fbafba68",
+          "run_D": "68bc8895c0b88e438cfddd9d5f34b6031b2689683518c38f64098b7b91d47015",
+          "run_D_fit": "67aa1b66c02d3873313f1a848ea9181c0002b8f2013408ea68604b3a7e443fdb",
+          "fit_node": "6901223b97a0eeefaf161b5f963d064d2cc482855e89e205247ad3517fb03cf5"
+        }
+      },
+      "F": {
+        "adversarial_review": {
+          "adversarial": "same rows/features/budget; compare label sham and no ID info; avoid source-truth asymmetry",
+          "negative_controls": "renamed/shuffled actor IDs and withheld tick"
+        },
+        "negative_result": "SRM does not outperform B2 in current sparse actor history, label sham performs similarly; do not claim mechanism defeated"
+      },
+      "G": {
+        "caveat": {
+          "holdout": "SYNTHETIC tick3 fixed; no external replication"
+        },
+        "external_replication": false,
+        "human_R5": "STOP"
+      },
+      "H": {
+        "prior_update_ids": [
+          "U188",
+          "U189",
+          "U190",
+          "U191",
+          "U192"
+        ],
+        "human_priors": "NO_CHANGE_WITH_REASON",
+        "source_refs": []
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "grade": "0/3",
+        "counts_scientific_human_validation": false,
+        "valid": true
+      },
+      "J": {
+        "decision": "CONTINUE_DISTINCT_MECHANISM",
+        "next": "N192",
+        "reason": "Distinct preregistered technical falsifier, no inflation of external confidence",
+        "credit_spent": 1
+      },
+      "selection_exposure": "Adaptive blocks; all cohort/actor controls synthetic, no human holdout",
+      "outcome_refs": [
+        "proyectos/mercados-de-pareja/research/ABH_N187_N206_20261030/RESULTS_INDEX.json",
+        "proyectos/mercados-de-pareja/research/ABH_N187_N206_20261030/PREREG_A.json"
+      ]
+    }
+  ],
+  "strict_technical_PASS": 5,
+  "documentary_valid": 0,
+  "CT2_ordinal": 7,
+  "source_microdata_access": "NONE"
+}

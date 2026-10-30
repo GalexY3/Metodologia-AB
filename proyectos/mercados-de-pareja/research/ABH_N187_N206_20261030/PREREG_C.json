@@ -1,0 +1,237 @@
+{
+  "schema": "ABH_N197_N201_PREREG_C_v1",
+  "date": "2026-10-30",
+  "branch": "research/ab-h-esbm-rival-parity-20261030",
+  "parent": "N196",
+  "authorized": 20,
+  "spent": 10,
+  "remaining": 10,
+  "original_sha": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+  "contracts": [
+    {
+      "id": "N197",
+      "parent": "N196",
+      "mode": "CROSS_LANGUAGE_EXPORT",
+      "drift_D": 1.1,
+      "A": {
+        "question": "Generate event-level prediction arrays from actual preregistered synthetic panels for all same-riskset competitors",
+        "estimand": "code correctness and out-of-sample performance under changing information regime, synthetic"
+      },
+      "B": {
+        "null": "cross-language scorer diverges or frozen prediction depends on t3 labels; SRM generalizes to unseen identities",
+        "rivals": [
+          "Python numpy independently summed",
+          "Node.js V8 math.log1p compensated sum",
+          "B2/SRM/B6 on identical rows and training budgets"
+        ]
+      },
+      "C": {
+        "test": "Outputs JSON per model y,p, seed, tick; prior training fixed 12000–12049 t0–2 test t3; record SHA before Node sees them; no hidden model refit",
+        "falsifier": "Any scorer mismatch >1e-12 or target contamination -> invalid evidence; report cold failures"
+      },
+      "D": {
+        "fixed_seeds": "12000..12049",
+        "training": "ticks0–2 vs ticks0–1",
+        "test": "tick3",
+        "code_SHA": "freeze local file SHA on GitHub before outcomes"
+      },
+      "E": "PENDING",
+      "F": {
+        "adversarial": "same test rows and no future outcomes in fit; cold actor IDs genuinely unknown",
+        "negative": "flipped test-only labels"
+      },
+      "G": {
+        "replication": "independent JS loss implementation, SAME host and input predictions; not independent generator"
+      },
+      "H": "Technical only, no scientific human posterior",
+      "I": {
+        "CT2": 7,
+        "grade": "0/3"
+      },
+      "J": {
+        "if_pass": "N198",
+        "if_fail": "bounded prereg repair or STOP without consuming more"
+      }
+    },
+    {
+      "id": "N198",
+      "parent": "N197",
+      "mode": "INDEPENDENT_SCORER",
+      "drift_D": 0.2,
+      "A": {
+        "question": "Recompute log-loss and Brier in a separate Node.js 22 implementation with no Python numerical library",
+        "estimand": "code correctness and out-of-sample performance under changing information regime, synthetic"
+      },
+      "B": {
+        "null": "cross-language scorer diverges or frozen prediction depends on t3 labels; SRM generalizes to unseen identities",
+        "rivals": [
+          "Python numpy independently summed",
+          "Node.js V8 math.log1p compensated sum",
+          "B2/SRM/B6 on identical rows and training budgets"
+        ]
+      },
+      "C": {
+        "test": "Node Kahan summation, log1p on 613 events and 6 rivals, compare Python <=1e-12, no claims of independent ESBM recreation",
+        "falsifier": "Any scorer mismatch >1e-12 or target contamination -> invalid evidence; report cold failures"
+      },
+      "D": {
+        "fixed_seeds": "12000..12049",
+        "training": "ticks0–2 vs ticks0–1",
+        "test": "tick3",
+        "code_SHA": "freeze local file SHA on GitHub before outcomes"
+      },
+      "E": "PENDING",
+      "F": {
+        "adversarial": "same test rows and no future outcomes in fit; cold actor IDs genuinely unknown",
+        "negative": "flipped test-only labels"
+      },
+      "G": {
+        "replication": "independent JS loss implementation, SAME host and input predictions; not independent generator"
+      },
+      "H": "Technical only, no scientific human posterior",
+      "I": {
+        "CT2": 7,
+        "grade": "0/3"
+      },
+      "J": {
+        "if_pass": "N199",
+        "if_fail": "bounded prereg repair or STOP without consuming more"
+      }
+    },
+    {
+      "id": "N199",
+      "parent": "N198",
+      "mode": "TARGET_LEAKAGE",
+      "drift_D": 0.2,
+      "A": {
+        "question": "Blindly alter all t3 outcome labels without changing pre-outcome X and refit only t0–2 data; predictions must remain identical",
+        "estimand": "code correctness and out-of-sample performance under changing information regime, synthetic"
+      },
+      "B": {
+        "null": "cross-language scorer diverges or frozen prediction depends on t3 labels; SRM generalizes to unseen identities",
+        "rivals": [
+          "Python numpy independently summed",
+          "Node.js V8 math.log1p compensated sum",
+          "B2/SRM/B6 on identical rows and training budgets"
+        ]
+      },
+      "C": {
+        "test": "Perturb only evaluation y, verify six model prediction arrays same to tolerance, no use of t3 training labels, separately count changed losses",
+        "falsifier": "Any scorer mismatch >1e-12 or target contamination -> invalid evidence; report cold failures"
+      },
+      "D": {
+        "fixed_seeds": "12000..12049",
+        "training": "ticks0–2 vs ticks0–1",
+        "test": "tick3",
+        "code_SHA": "freeze local file SHA on GitHub before outcomes"
+      },
+      "E": "PENDING",
+      "F": {
+        "adversarial": "same test rows and no future outcomes in fit; cold actor IDs genuinely unknown",
+        "negative": "flipped test-only labels"
+      },
+      "G": {
+        "replication": "independent JS loss implementation, SAME host and input predictions; not independent generator"
+      },
+      "H": "Technical only, no scientific human posterior",
+      "I": {
+        "CT2": 7,
+        "grade": "0/3"
+      },
+      "J": {
+        "if_pass": "N200",
+        "if_fail": "bounded prereg repair or STOP without consuming more"
+      }
+    },
+    {
+      "id": "N200",
+      "parent": "N199",
+      "mode": "HISTORY_BUDGET",
+      "drift_D": 0.2,
+      "A": {
+        "question": "Evaluate same t3 heldout events under t0–1 vs t0–2 training budgets for B2/SRM/B6",
+        "estimand": "code correctness and out-of-sample performance under changing information regime, synthetic"
+      },
+      "B": {
+        "null": "cross-language scorer diverges or frozen prediction depends on t3 labels; SRM generalizes to unseen identities",
+        "rivals": [
+          "Python numpy independently summed",
+          "Node.js V8 math.log1p compensated sum",
+          "B2/SRM/B6 on identical rows and training budgets"
+        ]
+      },
+      "C": {
+        "test": "Train 2-tick vs 3-tick with common features and fixed parameters; compare per-model losses; cannot claim monotonic guarantee",
+        "falsifier": "Any scorer mismatch >1e-12 or target contamination -> invalid evidence; report cold failures"
+      },
+      "D": {
+        "fixed_seeds": "12000..12049",
+        "training": "ticks0–2 vs ticks0–1",
+        "test": "tick3",
+        "code_SHA": "freeze local file SHA on GitHub before outcomes"
+      },
+      "E": "PENDING",
+      "F": {
+        "adversarial": "same test rows and no future outcomes in fit; cold actor IDs genuinely unknown",
+        "negative": "flipped test-only labels"
+      },
+      "G": {
+        "replication": "independent JS loss implementation, SAME host and input predictions; not independent generator"
+      },
+      "H": "Technical only, no scientific human posterior",
+      "I": {
+        "CT2": 7,
+        "grade": "0/3"
+      },
+      "J": {
+        "if_pass": "N201",
+        "if_fail": "bounded prereg repair or STOP without consuming more"
+      }
+    },
+    {
+      "id": "N201",
+      "parent": "N200",
+      "mode": "UNSEEN_ACTOR_TEST",
+      "drift_D": 0.2,
+      "A": {
+        "question": "Exclude complete test actors from training and compare SRM/B2/B6 under proper cold cohort holdout",
+        "estimand": "code correctness and out-of-sample performance under changing information regime, synthetic"
+      },
+      "B": {
+        "null": "cross-language scorer diverges or frozen prediction depends on t3 labels; SRM generalizes to unseen identities",
+        "rivals": [
+          "Python numpy independently summed",
+          "Node.js V8 math.log1p compensated sum",
+          "B2/SRM/B6 on identical rows and training budgets"
+        ]
+      },
+      "C": {
+        "test": "Fit 12000–12039 t0–2 only, test 12040–12049 t3; no actor keys from evaluation cohorts in training, SRM must handle unseen label and report loss",
+        "falsifier": "Any scorer mismatch >1e-12 or target contamination -> invalid evidence; report cold failures"
+      },
+      "D": {
+        "fixed_seeds": "12000..12049",
+        "training": "ticks0–2 vs ticks0–1",
+        "test": "tick3",
+        "code_SHA": "freeze local file SHA on GitHub before outcomes"
+      },
+      "E": "PENDING",
+      "F": {
+        "adversarial": "same test rows and no future outcomes in fit; cold actor IDs genuinely unknown",
+        "negative": "flipped test-only labels"
+      },
+      "G": {
+        "replication": "independent JS loss implementation, SAME host and input predictions; not independent generator"
+      },
+      "H": "Technical only, no scientific human posterior",
+      "I": {
+        "CT2": 7,
+        "grade": "0/3"
+      },
+      "J": {
+        "if_pass": "external evidence gate audit",
+        "if_fail": "bounded prereg repair or STOP without consuming more"
+      }
+    }
+  ]
+}

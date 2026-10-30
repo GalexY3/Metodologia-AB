@@ -3,7 +3,7 @@
   "project": "mercados-de-pareja",
   "date": "2026-10-30",
   "scope": "Retrospective provenance backfill from repository reports plus N56/N57 publisher audit. Original data never copied; not systematic or claim of accessing raw data for bibliography.",
-  "source_count": 108,
+  "source_count": 109,
   "sources": [
     {
       "id": "SRC001",
@@ -2380,9 +2380,31 @@
         "N184"
       ],
       "R5_decision": "STOP_HUMAN_EXTERNAL_DATA_GATE"
+    },
+    {
+      "id": "SRC109",
+      "title": "Hoffmann, Schiestl, Sinske, Gondan, Sachse & Maran (2024), Sharing and Receiving Eye-Contact Predicts Mate Choice After a 5-Minute Conversation",
+      "canonical_url": "https://doi.org/10.1007/s10508-023-02806-0",
+      "original_publisher": "https://link.springer.com/article/10.1007/s10508-023-02806-0",
+      "publication_date": "2024-02-20",
+      "source_type": "NEW_PRIMARY_ORIGINAL_SPEED_DATE_COHORT_PAPER_NATIVE_TWO_PARTY_DECISIONS_DESCRIBED_NOT_READ",
+      "paper_method": "60 principal subjects 4 speed dates each, 4 preassigned repeatedly seen counterparts, collected 240 real dyadic conversations and retained 237 after gaze quality exclusions. Each principal participant and counterpart confidentially recorded their independent yes/no wish to meet again. Researchers analyzed one direction as primary outcome due 4% mutual matches; strong partner reuse and degree imbalance.",
+      "data_availability": "Author-publisher paper states study data + statistical code available at https://osf.io/vzx6q/ but raw gaze videos excluded for privacy. Source files not accessed due user's no-repeated OSF failures restriction.",
+      "rights": "CC BY 4.0 pertains to published article, NOT verified to license participant-level dataset. OSF original files, actor ID/two vote schemas, rights, face footage and exact eligible opportunity sets unverified. No file access, licence acceptance or author communication.",
+      "cohort_independence": "Publication appears distinct Innsbruck study from Columbia/MMSD/other recordings; no raw recruitment IDs or temporal overlaps audited. Distinct-paper does not prove entirely independent people.",
+      "human_raw_rows_read": 0,
+      "case_level_data_sha": null,
+      "license_file_level_verified": false,
+      "two_native_yesno_reported_in_publication": true,
+      "two_native_yesno_join_verified_from_files": false,
+      "complete_eligible_exposure_riskset_verified": false,
+      "grade": "0/3",
+      "STOP_R5": "ACTIVE",
+      "campaign_cycle": "N202",
+      "last_verified_at": "2026-10-30"
     }
   ],
-  "last_added_campaign": "ABH_N167_N186_METADATA_SRC108_NO_NEW_COHORT",
+  "last_added_campaign": "ABH_N187_N206_20261030_SRC109_METADATA_ONLY",
   "canonical_duplicate_DOI_audit": {
     "date": "2026-10-30",
     "source_records_before": 107,

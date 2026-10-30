@@ -1,0 +1,475 @@
+{
+  "schema": "ABH_N187_N206_LEDGERS_B",
+  "date": "2026-10-30",
+  "branch": "research/ab-h-esbm-rival-parity-20261030",
+  "original_ESBM_SHA256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+  "prereg_commit": "8e5c96d549911a42817226e85e5ad89ee334d263",
+  "cycles": [
+    {
+      "id": "N192",
+      "parent": "N191",
+      "mode": "POSITIVE_CONTROL_ACTORS",
+      "drift_D": 1.4,
+      "A": {
+        "question": "Introduce new DGP with persistent actor and receiver heterogeneity and see whether SRM recovers predictive signal from same riskset",
+        "estimand": "Synthetic teacher-student positive-control predictive logloss"
+      },
+      "B": {
+        "null": "SRM or B6 fails to recover known implanted signal with sparse actor history",
+        "rivals": [
+          "B2 same ex-ante fields",
+          "regularized actor-target two-way SRM",
+          "finite B6 feature interactions",
+          "label-sham"
+        ],
+        "prior_art": "These are software model-power checks not new human effects"
+      },
+      "C": {
+        "endpoint": "Synthetic seed 12500–12539; actor sender and target latent effects fixed across t0–t3, label RNG 192; equal train t0–t2, holdout t3; compare B2 vs regularized SRM",
+        "falsifier": "If strong signal is not detected, mark weak power rather than artificially tuning model; identity tests exact or INVALID"
+      },
+      "D": {
+        "data": "40 cohorts seeds12500–12539; tick0–2 train tick3 holdout",
+        "dgp": "actor target fixed latent normal SD1.3; alternative norm-age XOR+exposure nonlinear; random state source frozen",
+        "code_sha": "separate FREEZE_B.json before outcomes",
+        "freeze_commit": "5baae616e5cf33640395fac5d96a832a700fd599",
+        "prereg_commit": "8e5c96d549911a42817226e85e5ad89ee334d263",
+        "initial_error_id": null
+      },
+      "E": {
+        "status": "PASS",
+        "real_outcome": {
+          "actor_DGP_B2": 0.6269844797431173,
+          "actor_DGP_SRM": 0.5685499845960316,
+          "positive_control_only": true
+        },
+        "full_seed_receipt_in_local_ZIP": true,
+        "human_rows_read": 0,
+        "source_hashes": {
+          "run_A": "1fb99ae098d88169ab4dfbf13ce94195b6789014744f3ec00e0e966190c0a342",
+          "run_B": "c36f86b7bf1573adcebcb3b0237d4b5d94601b9ccf2d929acba58352955a31a0",
+          "run_C": "b8fc847f1a4c11cf8ac4c5f7d2cdac8b1781b4c27daa029db0004040520be624",
+          "score_node": "6d1c1515109f117d299e740561701e3f12500bed5d1a8b98f44fca54fbafba68",
+          "run_D": "68bc8895c0b88e438cfddd9d5f34b6031b2689683518c38f64098b7b91d47015",
+          "run_D_fit": "67aa1b66c02d3873313f1a848ea9181c0002b8f2013408ea68604b3a7e443fdb",
+          "fit_node": "6901223b97a0eeefaf161b5f963d064d2cc482855e89e205247ad3517fb03cf5"
+        }
+      },
+      "F": {
+        "adversarial_review": {
+          "adversarial": "Both controlled DGP and sham/null, no use of test labels during training",
+          "multiple_testing": "5 planned checks, exploratory synthetic"
+        },
+        "negative_result": "Controls use re-sampled alternative target laws on frozen ESBM opportunities, not self-consistent new network processes"
+      },
+      "G": {
+        "caveat": "No independent humans, no external replication",
+        "external_replication": false,
+        "human_R5": "STOP"
+      },
+      "H": {
+        "prior_update_ids": [
+          "U188",
+          "U189",
+          "U190",
+          "U191",
+          "U192"
+        ],
+        "human_priors": "NO_CHANGE_WITH_REASON",
+        "source_refs": []
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "grade": "0/3",
+        "counts_scientific_human_validation": false,
+        "valid": true
+      },
+      "J": {
+        "decision": "CONTINUE_DISTINCT_MECHANISM",
+        "next": "N193",
+        "reason": "Distinct preregistered technical falsifier, no inflation of external confidence",
+        "credit_spent": 1
+      },
+      "selection_exposure": "Adaptive blocks; all cohort/actor controls synthetic, no human holdout",
+      "outcome_refs": [
+        "proyectos/mercados-de-pareja/research/ABH_N187_N206_20261030/RESULTS_INDEX.json",
+        "proyectos/mercados-de-pareja/research/ABH_N187_N206_20261030/PREREG_B.json"
+      ]
+    },
+    {
+      "id": "N193",
+      "parent": "N192",
+      "mode": "NEGATIVE_CONTROL_ACTORS",
+      "drift_D": 0.3,
+      "A": {
+        "question": "Erase persistent actor effects in a DGP preserving marginal prevalence while retaining same exposure network",
+        "estimand": "Synthetic teacher-student positive-control predictive logloss"
+      },
+      "B": {
+        "null": "SRM or B6 fails to recover known implanted signal with sparse actor history",
+        "rivals": [
+          "B2 same ex-ante fields",
+          "regularized actor-target two-way SRM",
+          "finite B6 feature interactions",
+          "label-sham"
+        ],
+        "prior_art": "These are software model-power checks not new human effects"
+      },
+      "C": {
+        "endpoint": "Same 40 cohorts, ex ante Bernoulli with age/norm predictors but no actor effects; SRM should not automatically win; no cherry picked threshold",
+        "falsifier": "If strong signal is not detected, mark weak power rather than artificially tuning model; identity tests exact or INVALID"
+      },
+      "D": {
+        "data": "40 cohorts seeds12500–12539; tick0–2 train tick3 holdout",
+        "dgp": "actor target fixed latent normal SD1.3; alternative norm-age XOR+exposure nonlinear; random state source frozen",
+        "code_sha": "separate FREEZE_B.json before outcomes",
+        "freeze_commit": "5baae616e5cf33640395fac5d96a832a700fd599",
+        "prereg_commit": "8e5c96d549911a42817226e85e5ad89ee334d263",
+        "initial_error_id": null
+      },
+      "E": {
+        "status": "PASS",
+        "real_outcome": {
+          "no_actor_DGP_B2": 0.4870504703489435,
+          "no_actor_DGP_SRM": 0.4816642395356736
+        },
+        "full_seed_receipt_in_local_ZIP": true,
+        "human_rows_read": 0,
+        "source_hashes": {
+          "run_A": "1fb99ae098d88169ab4dfbf13ce94195b6789014744f3ec00e0e966190c0a342",
+          "run_B": "c36f86b7bf1573adcebcb3b0237d4b5d94601b9ccf2d929acba58352955a31a0",
+          "run_C": "b8fc847f1a4c11cf8ac4c5f7d2cdac8b1781b4c27daa029db0004040520be624",
+          "score_node": "6d1c1515109f117d299e740561701e3f12500bed5d1a8b98f44fca54fbafba68",
+          "run_D": "68bc8895c0b88e438cfddd9d5f34b6031b2689683518c38f64098b7b91d47015",
+          "run_D_fit": "67aa1b66c02d3873313f1a848ea9181c0002b8f2013408ea68604b3a7e443fdb",
+          "fit_node": "6901223b97a0eeefaf161b5f963d064d2cc482855e89e205247ad3517fb03cf5"
+        }
+      },
+      "F": {
+        "adversarial_review": {
+          "adversarial": "Both controlled DGP and sham/null, no use of test labels during training",
+          "multiple_testing": "5 planned checks, exploratory synthetic"
+        },
+        "negative_result": "Preserve zero or negative advantages and actor-ID confounds."
+      },
+      "G": {
+        "caveat": "No independent humans, no external replication",
+        "external_replication": false,
+        "human_R5": "STOP"
+      },
+      "H": {
+        "prior_update_ids": [
+          "U188",
+          "U189",
+          "U190",
+          "U191",
+          "U192"
+        ],
+        "human_priors": "NO_CHANGE_WITH_REASON",
+        "source_refs": []
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "grade": "0/3",
+        "counts_scientific_human_validation": false,
+        "valid": true
+      },
+      "J": {
+        "decision": "CONTINUE_DISTINCT_MECHANISM",
+        "next": "N194",
+        "reason": "Distinct preregistered technical falsifier, no inflation of external confidence",
+        "credit_spent": 1
+      },
+      "selection_exposure": "Adaptive blocks; all cohort/actor controls synthetic, no human holdout",
+      "outcome_refs": [
+        "proyectos/mercados-de-pareja/research/ABH_N187_N206_20261030/RESULTS_INDEX.json",
+        "proyectos/mercados-de-pareja/research/ABH_N187_N206_20261030/PREREG_B.json"
+      ]
+    },
+    {
+      "id": "N194",
+      "parent": "N193",
+      "mode": "NONLINEAR_FEEDBACK",
+      "drift_D": 0.3,
+      "A": {
+        "question": "Create adversarial nonlinear temporal DGP with an XOR-like norm/age rule and past-exposure interaction",
+        "estimand": "Synthetic teacher-student positive-control predictive logloss"
+      },
+      "B": {
+        "null": "SRM or B6 fails to recover known implanted signal with sparse actor history",
+        "rivals": [
+          "B2 same ex-ante fields",
+          "regularized actor-target two-way SRM",
+          "finite B6 feature interactions",
+          "label-sham"
+        ],
+        "prior_art": "These are software model-power checks not new human effects"
+      },
+      "C": {
+        "endpoint": "Same 40 cohorts, train t0–t2, test t3; compare shared-feature B2 logit, nonlinear B6 finite; no oracle advantage claim",
+        "falsifier": "If strong signal is not detected, mark weak power rather than artificially tuning model; identity tests exact or INVALID"
+      },
+      "D": {
+        "data": "40 cohorts seeds12500–12539; tick0–2 train tick3 holdout",
+        "dgp": "actor target fixed latent normal SD1.3; alternative norm-age XOR+exposure nonlinear; random state source frozen",
+        "code_sha": "separate FREEZE_B.json before outcomes",
+        "freeze_commit": "5baae616e5cf33640395fac5d96a832a700fd599",
+        "prereg_commit": "8e5c96d549911a42817226e85e5ad89ee334d263",
+        "initial_error_id": null
+      },
+      "E": {
+        "status": "PASS",
+        "real_outcome": {
+          "nonlinear_DGP_B2": 0.5838272092236498,
+          "nonlinear_DGP_B6": 0.4516446532224417
+        },
+        "full_seed_receipt_in_local_ZIP": true,
+        "human_rows_read": 0,
+        "source_hashes": {
+          "run_A": "1fb99ae098d88169ab4dfbf13ce94195b6789014744f3ec00e0e966190c0a342",
+          "run_B": "c36f86b7bf1573adcebcb3b0237d4b5d94601b9ccf2d929acba58352955a31a0",
+          "run_C": "b8fc847f1a4c11cf8ac4c5f7d2cdac8b1781b4c27daa029db0004040520be624",
+          "score_node": "6d1c1515109f117d299e740561701e3f12500bed5d1a8b98f44fca54fbafba68",
+          "run_D": "68bc8895c0b88e438cfddd9d5f34b6031b2689683518c38f64098b7b91d47015",
+          "run_D_fit": "67aa1b66c02d3873313f1a848ea9181c0002b8f2013408ea68604b3a7e443fdb",
+          "fit_node": "6901223b97a0eeefaf161b5f963d064d2cc482855e89e205247ad3517fb03cf5"
+        }
+      },
+      "F": {
+        "adversarial_review": {
+          "adversarial": "Both controlled DGP and sham/null, no use of test labels during training",
+          "multiple_testing": "5 planned checks, exploratory synthetic"
+        },
+        "negative_result": "Controls use re-sampled alternative target laws on frozen ESBM opportunities, not self-consistent new network processes"
+      },
+      "G": {
+        "caveat": "No independent humans, no external replication",
+        "external_replication": false,
+        "human_R5": "STOP"
+      },
+      "H": {
+        "prior_update_ids": [
+          "U188",
+          "U189",
+          "U190",
+          "U191",
+          "U192"
+        ],
+        "human_priors": "NO_CHANGE_WITH_REASON",
+        "source_refs": []
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "grade": "0/3",
+        "counts_scientific_human_validation": false,
+        "valid": true
+      },
+      "J": {
+        "decision": "CONTINUE_DISTINCT_MECHANISM",
+        "next": "N195",
+        "reason": "Distinct preregistered technical falsifier, no inflation of external confidence",
+        "credit_spent": 1
+      },
+      "selection_exposure": "Adaptive blocks; all cohort/actor controls synthetic, no human holdout",
+      "outcome_refs": [
+        "proyectos/mercados-de-pareja/research/ABH_N187_N206_20261030/RESULTS_INDEX.json",
+        "proyectos/mercados-de-pareja/research/ABH_N187_N206_20261030/PREREG_B.json"
+      ]
+    },
+    {
+      "id": "N195",
+      "parent": "N194",
+      "mode": "DGP_SPLIT",
+      "drift_D": 0.3,
+      "A": {
+        "question": "Test calibration and variance of predictions on both positive-control DGPs separately and report all signs",
+        "estimand": "Synthetic teacher-student positive-control predictive logloss"
+      },
+      "B": {
+        "null": "SRM or B6 fails to recover known implanted signal with sparse actor history",
+        "rivals": [
+          "B2 same ex-ante fields",
+          "regularized actor-target two-way SRM",
+          "finite B6 feature interactions",
+          "label-sham"
+        ],
+        "prior_art": "These are software model-power checks not new human effects"
+      },
+      "C": {
+        "endpoint": "Brier, logloss, per-seed deltas and clustered bootstrap 2000 resamples seed 195; N192/N194 result reuse, distinct inferential test",
+        "falsifier": "If strong signal is not detected, mark weak power rather than artificially tuning model; identity tests exact or INVALID"
+      },
+      "D": {
+        "data": "40 cohorts seeds12500–12539; tick0–2 train tick3 holdout",
+        "dgp": "actor target fixed latent normal SD1.3; alternative norm-age XOR+exposure nonlinear; random state source frozen",
+        "code_sha": "separate FREEZE_B.json before outcomes",
+        "freeze_commit": "5baae616e5cf33640395fac5d96a832a700fd599",
+        "prereg_commit": "8e5c96d549911a42817226e85e5ad89ee334d263",
+        "initial_error_id": null
+      },
+      "E": {
+        "status": "PASS",
+        "real_outcome": {
+          "actor_SRM_minus_B2_CI95": [
+            -0.07247754675799528,
+            -0.047403604557992404
+          ],
+          "nonlinear_B6_minus_B2_CI95": [
+            -0.15483713595564436,
+            -0.10493132174579876
+          ]
+        },
+        "full_seed_receipt_in_local_ZIP": true,
+        "human_rows_read": 0,
+        "source_hashes": {
+          "run_A": "1fb99ae098d88169ab4dfbf13ce94195b6789014744f3ec00e0e966190c0a342",
+          "run_B": "c36f86b7bf1573adcebcb3b0237d4b5d94601b9ccf2d929acba58352955a31a0",
+          "run_C": "b8fc847f1a4c11cf8ac4c5f7d2cdac8b1781b4c27daa029db0004040520be624",
+          "score_node": "6d1c1515109f117d299e740561701e3f12500bed5d1a8b98f44fca54fbafba68",
+          "run_D": "68bc8895c0b88e438cfddd9d5f34b6031b2689683518c38f64098b7b91d47015",
+          "run_D_fit": "67aa1b66c02d3873313f1a848ea9181c0002b8f2013408ea68604b3a7e443fdb",
+          "fit_node": "6901223b97a0eeefaf161b5f963d064d2cc482855e89e205247ad3517fb03cf5"
+        }
+      },
+      "F": {
+        "adversarial_review": {
+          "adversarial": "Both controlled DGP and sham/null, no use of test labels during training",
+          "multiple_testing": "5 planned checks, exploratory synthetic"
+        },
+        "negative_result": "Preserve zero or negative advantages and actor-ID confounds."
+      },
+      "G": {
+        "caveat": "No independent humans, no external replication",
+        "external_replication": false,
+        "human_R5": "STOP"
+      },
+      "H": {
+        "prior_update_ids": [
+          "U188",
+          "U189",
+          "U190",
+          "U191",
+          "U192"
+        ],
+        "human_priors": "NO_CHANGE_WITH_REASON",
+        "source_refs": []
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "grade": "0/3",
+        "counts_scientific_human_validation": false,
+        "valid": true
+      },
+      "J": {
+        "decision": "CONTINUE_DISTINCT_MECHANISM",
+        "next": "N196",
+        "reason": "Distinct preregistered technical falsifier, no inflation of external confidence",
+        "credit_spent": 1
+      },
+      "selection_exposure": "Adaptive blocks; all cohort/actor controls synthetic, no human holdout",
+      "outcome_refs": [
+        "proyectos/mercados-de-pareja/research/ABH_N187_N206_20261030/RESULTS_INDEX.json",
+        "proyectos/mercados-de-pareja/research/ABH_N187_N206_20261030/PREREG_B.json"
+      ]
+    },
+    {
+      "id": "N196",
+      "parent": "N195",
+      "mode": "PERMUTATION_AUDIT",
+      "drift_D": 0.3,
+      "A": {
+        "question": "Verify change in actor label names alone does not change group-indexed SRM predicted scores when train and test labels permuted together",
+        "estimand": "Synthetic teacher-student positive-control predictive logloss"
+      },
+      "B": {
+        "null": "SRM or B6 fails to recover known implanted signal with sparse actor history",
+        "rivals": [
+          "B2 same ex-ante fields",
+          "regularized actor-target two-way SRM",
+          "finite B6 feature interactions",
+          "label-sham"
+        ],
+        "prior_art": "These are software model-power checks not new human effects"
+      },
+      "C": {
+        "endpoint": "One fixed synthetic dataset, deterministic actor relabel 10 random permutations, reconstruct model with same regularization and fit training-only; strict prediction tolerance 1e-9; do not transform outcomes",
+        "falsifier": "If strong signal is not detected, mark weak power rather than artificially tuning model; identity tests exact or INVALID"
+      },
+      "D": {
+        "data": "40 cohorts seeds12500–12539; tick0–2 train tick3 holdout",
+        "dgp": "actor target fixed latent normal SD1.3; alternative norm-age XOR+exposure nonlinear; random state source frozen",
+        "code_sha": "separate FREEZE_B.json before outcomes",
+        "freeze_commit": "5baae616e5cf33640395fac5d96a832a700fd599",
+        "prereg_commit": "8e5c96d549911a42817226e85e5ad89ee334d263",
+        "initial_error_id": null
+      },
+      "E": {
+        "status": "PASS",
+        "real_outcome": {
+          "actor_label_permutations": 10,
+          "max_abs_delta": 7.771561172376096e-16
+        },
+        "full_seed_receipt_in_local_ZIP": true,
+        "human_rows_read": 0,
+        "source_hashes": {
+          "run_A": "1fb99ae098d88169ab4dfbf13ce94195b6789014744f3ec00e0e966190c0a342",
+          "run_B": "c36f86b7bf1573adcebcb3b0237d4b5d94601b9ccf2d929acba58352955a31a0",
+          "run_C": "b8fc847f1a4c11cf8ac4c5f7d2cdac8b1781b4c27daa029db0004040520be624",
+          "score_node": "6d1c1515109f117d299e740561701e3f12500bed5d1a8b98f44fca54fbafba68",
+          "run_D": "68bc8895c0b88e438cfddd9d5f34b6031b2689683518c38f64098b7b91d47015",
+          "run_D_fit": "67aa1b66c02d3873313f1a848ea9181c0002b8f2013408ea68604b3a7e443fdb",
+          "fit_node": "6901223b97a0eeefaf161b5f963d064d2cc482855e89e205247ad3517fb03cf5"
+        }
+      },
+      "F": {
+        "adversarial_review": {
+          "adversarial": "Both controlled DGP and sham/null, no use of test labels during training",
+          "multiple_testing": "5 planned checks, exploratory synthetic"
+        },
+        "negative_result": "Preserve zero or negative advantages and actor-ID confounds."
+      },
+      "G": {
+        "caveat": "No independent humans, no external replication",
+        "external_replication": false,
+        "human_R5": "STOP"
+      },
+      "H": {
+        "prior_update_ids": [
+          "U188",
+          "U189",
+          "U190",
+          "U191",
+          "U192"
+        ],
+        "human_priors": "NO_CHANGE_WITH_REASON",
+        "source_refs": []
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "grade": "0/3",
+        "counts_scientific_human_validation": false,
+        "valid": true
+      },
+      "J": {
+        "decision": "CONTINUE_DISTINCT_MECHANISM",
+        "next": "N197",
+        "reason": "Distinct preregistered technical falsifier, no inflation of external confidence",
+        "credit_spent": 1
+      },
+      "selection_exposure": "Adaptive blocks; all cohort/actor controls synthetic, no human holdout",
+      "outcome_refs": [
+        "proyectos/mercados-de-pareja/research/ABH_N187_N206_20261030/RESULTS_INDEX.json",
+        "proyectos/mercados-de-pareja/research/ABH_N187_N206_20261030/PREREG_B.json"
+      ]
+    }
+  ],
+  "strict_technical_PASS": 5,
+  "documentary_valid": 0,
+  "CT2_ordinal": 7,
+  "source_microdata_access": "NONE"
+}

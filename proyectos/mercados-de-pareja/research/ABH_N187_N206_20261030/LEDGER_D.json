@@ -1,0 +1,490 @@
+{
+  "schema": "ABH_N187_N206_LEDGERS_D",
+  "date": "2026-10-30",
+  "branch": "research/ab-h-esbm-rival-parity-20261030",
+  "original_ESBM_SHA256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+  "prereg_commit": "418af4e28463546b8d31aeb792dcdd16bad71dbf",
+  "cycles": [
+    {
+      "id": "N202",
+      "parent": "N201",
+      "mode": "HUMAN_RIGHTS_GATE",
+      "drift_D": 1.4,
+      "A": {
+        "question": "Audit independently described Hoffmann et al. 2024 eye-contact dataset with two native votes and repeated partners, without touching person-level files",
+        "estimand": "original source metadata or synthetic model technical validity"
+      },
+      "B": {
+        "null": "source can't open R5; event weighting/transports or independent training may undermine past conclusions",
+        "rivals": [
+          "event weighting vs cohort weighting",
+          "ring vs rewired riskset",
+          "sklearn LBFGS B2 vs independent Node Newton IRLS"
+        ],
+        "prior_art": "Human source observational eye contact effects and preassigned partners not exclusive ESBM"
+      },
+      "C": {
+        "endpoint": "Primary paper: 60 participants, four preassigned partners, 240 meetings/237 usable, both vote yes/no. OSF stated public but file-level licenses/IDs and 2 vote join unverified; NO_R5 without lawful reuse",
+        "falsifier": "Document license no-go honestly, verify same bytes / model inputs, report any failed Node optimizer or viewer browser checks"
+      },
+      "D": {
+        "source_sha": "Freeze local scripts/manifests before outcomes",
+        "right_source": "Hoffmann primary Springer DOI 10.1007/s10508-023-02806-0, data availability OSF stated but NOT downloaded or license accepted",
+        "freeze_commit": "79502b98ffd0fca77b0ffa7cd241a8690471415c",
+        "prereg_commit": "418af4e28463546b8d31aeb792dcdd16bad71dbf",
+        "initial_error_id": null
+      },
+      "E": {
+        "status": "VALID_DOCUMENTARY_NO_GO",
+        "real_outcome": {
+          "SRC": "SRC109",
+          "publication_DOI": "10.1007/s10508-023-02806-0",
+          "human_pairs_published_usable": 237,
+          "original_votes_two_sided_reported": true,
+          "raw_rows_read": 0,
+          "file_level_license_verified": false,
+          "human_R5": "STOP"
+        },
+        "full_seed_receipt_in_local_ZIP": true,
+        "human_rows_read": 0,
+        "source_hashes": {
+          "run_A": "1fb99ae098d88169ab4dfbf13ce94195b6789014744f3ec00e0e966190c0a342",
+          "run_B": "c36f86b7bf1573adcebcb3b0237d4b5d94601b9ccf2d929acba58352955a31a0",
+          "run_C": "b8fc847f1a4c11cf8ac4c5f7d2cdac8b1781b4c27daa029db0004040520be624",
+          "score_node": "6d1c1515109f117d299e740561701e3f12500bed5d1a8b98f44fca54fbafba68",
+          "run_D": "68bc8895c0b88e438cfddd9d5f34b6031b2689683518c38f64098b7b91d47015",
+          "run_D_fit": "67aa1b66c02d3873313f1a848ea9181c0002b8f2013408ea68604b3a7e443fdb",
+          "fit_node": "6901223b97a0eeefaf161b5f963d064d2cc482855e89e205247ad3517fb03cf5"
+        }
+      },
+      "F": {
+        "adversarial_review": {
+          "control": "Original code and source unchanged; no special access; independent baseline share identical covariates",
+          "negative": "Source paper CC BY not dataset blanket permission"
+        },
+        "negative_result": "OSF and file-level data reuse rights not verified; no raw human cases"
+      },
+      "G": {
+        "caveat": {
+          "human_external": "STOP_R5",
+          "independent_reproduction": "Node numerical trainer same machine and data"
+        },
+        "external_replication": false,
+        "human_R5": "STOP"
+      },
+      "H": {
+        "prior_update_ids": [
+          "U188",
+          "U189",
+          "U190",
+          "U191",
+          "U192"
+        ],
+        "human_priors": "NO_CHANGE_WITH_REASON",
+        "source_refs": [
+          "SRC109"
+        ]
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "grade": "0/3",
+        "counts_scientific_human_validation": false,
+        "valid": true
+      },
+      "J": {
+        "decision": "DOCUMENTARY_NO_GO",
+        "next": "N203",
+        "reason": "No file-level licence, case-level join, or full opportunity denominators",
+        "credit_spent": 1
+      },
+      "selection_exposure": "Adaptive blocks; all cohort/actor controls synthetic, no human holdout",
+      "outcome_refs": [
+        "proyectos/mercados-de-pareja/research/ABH_N187_N206_20261030/RESULTS_INDEX.json",
+        "proyectos/mercados-de-pareja/research/ABH_N187_N206_20261030/PREREG_D.json"
+      ]
+    },
+    {
+      "id": "N203",
+      "parent": "N202",
+      "mode": "WEIGHTING",
+      "drift_D": 0.4,
+      "A": {
+        "question": "Contrast pooled event-weighted logloss vs equal-cohort macro logloss across all six rival predictions",
+        "estimand": "original source metadata or synthetic model technical validity"
+      },
+      "B": {
+        "null": "source can't open R5; event weighting/transports or independent training may undermine past conclusions",
+        "rivals": [
+          "event weighting vs cohort weighting",
+          "ring vs rewired riskset",
+          "sklearn LBFGS B2 vs independent Node Newton IRLS"
+        ],
+        "prior_art": "Human source observational eye contact effects and preassigned partners not exclusive ESBM"
+      },
+      "C": {
+        "endpoint": "Same 50 synthetic seeds 12000–12049 at tick3, compute both averages and ranks, no new simulation outcomes",
+        "falsifier": "Document license no-go honestly, verify same bytes / model inputs, report any failed Node optimizer or viewer browser checks"
+      },
+      "D": {
+        "source_sha": "Freeze local scripts/manifests before outcomes",
+        "right_source": "Hoffmann primary Springer DOI 10.1007/s10508-023-02806-0, data availability OSF stated but NOT downloaded or license accepted",
+        "freeze_commit": "79502b98ffd0fca77b0ffa7cd241a8690471415c",
+        "prereg_commit": "418af4e28463546b8d31aeb792dcdd16bad71dbf",
+        "initial_error_id": null
+      },
+      "E": {
+        "status": "PASS",
+        "real_outcome": {
+          "event_macro_same_ranks": true,
+          "pooling_mean_diff_exists": true
+        },
+        "full_seed_receipt_in_local_ZIP": true,
+        "human_rows_read": 0,
+        "source_hashes": {
+          "run_A": "1fb99ae098d88169ab4dfbf13ce94195b6789014744f3ec00e0e966190c0a342",
+          "run_B": "c36f86b7bf1573adcebcb3b0237d4b5d94601b9ccf2d929acba58352955a31a0",
+          "run_C": "b8fc847f1a4c11cf8ac4c5f7d2cdac8b1781b4c27daa029db0004040520be624",
+          "score_node": "6d1c1515109f117d299e740561701e3f12500bed5d1a8b98f44fca54fbafba68",
+          "run_D": "68bc8895c0b88e438cfddd9d5f34b6031b2689683518c38f64098b7b91d47015",
+          "run_D_fit": "67aa1b66c02d3873313f1a848ea9181c0002b8f2013408ea68604b3a7e443fdb",
+          "fit_node": "6901223b97a0eeefaf161b5f963d064d2cc482855e89e205247ad3517fb03cf5"
+        }
+      },
+      "F": {
+        "adversarial_review": {
+          "control": "Original code and source unchanged; no special access; independent baseline share identical covariates",
+          "negative": "Source paper CC BY not dataset blanket permission"
+        },
+        "negative_result": "Preserve zero or negative advantages and actor-ID confounds."
+      },
+      "G": {
+        "caveat": {
+          "human_external": "STOP_R5",
+          "independent_reproduction": "Node numerical trainer same machine and data"
+        },
+        "external_replication": false,
+        "human_R5": "STOP"
+      },
+      "H": {
+        "prior_update_ids": [
+          "U188",
+          "U189",
+          "U190",
+          "U191",
+          "U192"
+        ],
+        "human_priors": "NO_CHANGE_WITH_REASON",
+        "source_refs": []
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "grade": "0/3",
+        "counts_scientific_human_validation": false,
+        "valid": true
+      },
+      "J": {
+        "decision": "CONTINUE_DISTINCT_MECHANISM",
+        "next": "N204",
+        "reason": "Distinct preregistered technical falsifier, no inflation of external confidence",
+        "credit_spent": 1
+      },
+      "selection_exposure": "Adaptive blocks; all cohort/actor controls synthetic, no human holdout",
+      "outcome_refs": [
+        "proyectos/mercados-de-pareja/research/ABH_N187_N206_20261030/RESULTS_INDEX.json",
+        "proyectos/mercados-de-pareja/research/ABH_N187_N206_20261030/PREREG_D.json"
+      ]
+    },
+    {
+      "id": "N204",
+      "parent": "N203",
+      "mode": "NETWORK_TRANSFER",
+      "drift_D": 0.4,
+      "A": {
+        "question": "Test SRM, B2, finite B6 and oracle when opportunity graph shifts from ring training to rewired test using same cohort identities",
+        "estimand": "original source metadata or synthetic model technical validity"
+      },
+      "B": {
+        "null": "source can't open R5; event weighting/transports or independent training may undermine past conclusions",
+        "rivals": [
+          "event weighting vs cohort weighting",
+          "ring vs rewired riskset",
+          "sklearn LBFGS B2 vs independent Node Newton IRLS"
+        ],
+        "prior_art": "Human source observational eye contact effects and preassigned partners not exclusive ESBM"
+      },
+      "C": {
+        "endpoint": "Training ring first 3 ticks 50 seeds, evaluation rewired tick3 same seeds, report opportunity count and score, label distribution, no causal network inference",
+        "falsifier": "Document license no-go honestly, verify same bytes / model inputs, report any failed Node optimizer or viewer browser checks"
+      },
+      "D": {
+        "source_sha": "Freeze local scripts/manifests before outcomes",
+        "right_source": "Hoffmann primary Springer DOI 10.1007/s10508-023-02806-0, data availability OSF stated but NOT downloaded or license accepted",
+        "freeze_commit": "79502b98ffd0fca77b0ffa7cd241a8690471415c",
+        "prereg_commit": "418af4e28463546b8d31aeb792dcdd16bad71dbf",
+        "initial_error_id": null
+      },
+      "E": {
+        "status": "PASS",
+        "real_outcome": {
+          "ring_test_events": 613,
+          "rewired_test_events": 642,
+          "B2_rewired": 0.5837,
+          "SRM_rewired": 0.59127,
+          "oracle_rewired": 0.58102,
+          "causal": false
+        },
+        "full_seed_receipt_in_local_ZIP": true,
+        "human_rows_read": 0,
+        "source_hashes": {
+          "run_A": "1fb99ae098d88169ab4dfbf13ce94195b6789014744f3ec00e0e966190c0a342",
+          "run_B": "c36f86b7bf1573adcebcb3b0237d4b5d94601b9ccf2d929acba58352955a31a0",
+          "run_C": "b8fc847f1a4c11cf8ac4c5f7d2cdac8b1781b4c27daa029db0004040520be624",
+          "score_node": "6d1c1515109f117d299e740561701e3f12500bed5d1a8b98f44fca54fbafba68",
+          "run_D": "68bc8895c0b88e438cfddd9d5f34b6031b2689683518c38f64098b7b91d47015",
+          "run_D_fit": "67aa1b66c02d3873313f1a848ea9181c0002b8f2013408ea68604b3a7e443fdb",
+          "fit_node": "6901223b97a0eeefaf161b5f963d064d2cc482855e89e205247ad3517fb03cf5"
+        }
+      },
+      "F": {
+        "adversarial_review": {
+          "control": "Original code and source unchanged; no special access; independent baseline share identical covariates",
+          "negative": "Source paper CC BY not dataset blanket permission"
+        },
+        "negative_result": "Preserve zero or negative advantages and actor-ID confounds."
+      },
+      "G": {
+        "caveat": {
+          "human_external": "STOP_R5",
+          "independent_reproduction": "Node numerical trainer same machine and data"
+        },
+        "external_replication": false,
+        "human_R5": "STOP"
+      },
+      "H": {
+        "prior_update_ids": [
+          "U188",
+          "U189",
+          "U190",
+          "U191",
+          "U192"
+        ],
+        "human_priors": "NO_CHANGE_WITH_REASON",
+        "source_refs": []
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "grade": "0/3",
+        "counts_scientific_human_validation": false,
+        "valid": true
+      },
+      "J": {
+        "decision": "CONTINUE_DISTINCT_MECHANISM",
+        "next": "N205",
+        "reason": "Distinct preregistered technical falsifier, no inflation of external confidence",
+        "credit_spent": 1
+      },
+      "selection_exposure": "Adaptive blocks; all cohort/actor controls synthetic, no human holdout",
+      "outcome_refs": [
+        "proyectos/mercados-de-pareja/research/ABH_N187_N206_20261030/RESULTS_INDEX.json",
+        "proyectos/mercados-de-pareja/research/ABH_N187_N206_20261030/PREREG_D.json"
+      ]
+    },
+    {
+      "id": "N205",
+      "parent": "N204",
+      "mode": "AUDIT_VIEWER",
+      "drift_D": 0.4,
+      "A": {
+        "question": "Build source-backed static offline inspector with actual paired model scores and negative/human rights gates",
+        "estimand": "original source metadata or synthetic model technical validity"
+      },
+      "B": {
+        "null": "source can't open R5; event weighting/transports or independent training may undermine past conclusions",
+        "rivals": [
+          "event weighting vs cohort weighting",
+          "ring vs rewired riskset",
+          "sklearn LBFGS B2 vs independent Node Newton IRLS"
+        ],
+        "prior_art": "Human source observational eye contact effects and preassigned partners not exclusive ESBM"
+      },
+      "C": {
+        "endpoint": "Embed actual A–C result JSON plus N203/204, standalone 0 external fetch, visual selection and browser smoke test, no invented rows",
+        "falsifier": "Document license no-go honestly, verify same bytes / model inputs, report any failed Node optimizer or viewer browser checks"
+      },
+      "D": {
+        "source_sha": "Freeze local scripts/manifests before outcomes",
+        "right_source": "Hoffmann primary Springer DOI 10.1007/s10508-023-02806-0, data availability OSF stated but NOT downloaded or license accepted",
+        "freeze_commit": "79502b98ffd0fca77b0ffa7cd241a8690471415c",
+        "prereg_commit": "418af4e28463546b8d31aeb792dcdd16bad71dbf",
+        "initial_error_id": null
+      },
+      "E": {
+        "status": "PASS",
+        "real_outcome": {
+          "dashboard_scenarios": 5,
+          "real_Chromium_selects": 5,
+          "zero_external_HTTP": true,
+          "zero_JS_errors": true,
+          "html_sha256": "566a0ba6f2ba6c32631f40f97227bdf046bf3387db5c4b49b53b8f0818f54f3b"
+        },
+        "full_seed_receipt_in_local_ZIP": true,
+        "human_rows_read": 0,
+        "source_hashes": {
+          "run_A": "1fb99ae098d88169ab4dfbf13ce94195b6789014744f3ec00e0e966190c0a342",
+          "run_B": "c36f86b7bf1573adcebcb3b0237d4b5d94601b9ccf2d929acba58352955a31a0",
+          "run_C": "b8fc847f1a4c11cf8ac4c5f7d2cdac8b1781b4c27daa029db0004040520be624",
+          "score_node": "6d1c1515109f117d299e740561701e3f12500bed5d1a8b98f44fca54fbafba68",
+          "run_D": "68bc8895c0b88e438cfddd9d5f34b6031b2689683518c38f64098b7b91d47015",
+          "run_D_fit": "67aa1b66c02d3873313f1a848ea9181c0002b8f2013408ea68604b3a7e443fdb",
+          "fit_node": "6901223b97a0eeefaf161b5f963d064d2cc482855e89e205247ad3517fb03cf5"
+        }
+      },
+      "F": {
+        "adversarial_review": {
+          "control": "Original code and source unchanged; no special access; independent baseline share identical covariates",
+          "negative": "Source paper CC BY not dataset blanket permission"
+        },
+        "negative_result": "Preserve zero or negative advantages and actor-ID confounds."
+      },
+      "G": {
+        "caveat": {
+          "human_external": "STOP_R5",
+          "independent_reproduction": "Node numerical trainer same machine and data"
+        },
+        "external_replication": false,
+        "human_R5": "STOP"
+      },
+      "H": {
+        "prior_update_ids": [
+          "U188",
+          "U189",
+          "U190",
+          "U191",
+          "U192"
+        ],
+        "human_priors": "NO_CHANGE_WITH_REASON",
+        "source_refs": []
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "grade": "0/3",
+        "counts_scientific_human_validation": false,
+        "valid": true
+      },
+      "J": {
+        "decision": "CONTINUE_DISTINCT_MECHANISM",
+        "next": "N206",
+        "reason": "Distinct preregistered technical falsifier, no inflation of external confidence",
+        "credit_spent": 1
+      },
+      "selection_exposure": "Adaptive blocks; all cohort/actor controls synthetic, no human holdout",
+      "outcome_refs": [
+        "proyectos/mercados-de-pareja/research/ABH_N187_N206_20261030/RESULTS_INDEX.json",
+        "proyectos/mercados-de-pareja/research/ABH_N187_N206_20261030/PREREG_D.json"
+      ]
+    },
+    {
+      "id": "N206",
+      "parent": "N205",
+      "mode": "CROSS_LANGUAGE_TRAINER",
+      "drift_D": 1.1,
+      "A": {
+        "question": "Implement a genuinely independent JavaScript Newton/IRLS 9-feature penalized logistic fitter and compare to sklearn B2, rather than only rescore it",
+        "estimand": "original source metadata or synthetic model technical validity"
+      },
+      "B": {
+        "null": "source can't open R5; event weighting/transports or independent training may undermine past conclusions",
+        "rivals": [
+          "event weighting vs cohort weighting",
+          "ring vs rewired riskset",
+          "sklearn LBFGS B2 vs independent Node Newton IRLS"
+        ],
+        "prior_art": "Human source observational eye contact effects and preassigned partners not exclusive ESBM"
+      },
+      "C": {
+        "endpoint": "Frozen 2351 training and 613 test feature rows; compare predictions within <=0.005 and logloss <=0.001 and KKT residual <=1e-4; if fails preserve discrepancy, same machine not independent human",
+        "falsifier": "Document license no-go honestly, verify same bytes / model inputs, report any failed Node optimizer or viewer browser checks"
+      },
+      "D": {
+        "source_sha": "Freeze local scripts/manifests before outcomes",
+        "right_source": "Hoffmann primary Springer DOI 10.1007/s10508-023-02806-0, data availability OSF stated but NOT downloaded or license accepted",
+        "freeze_commit": "79502b98ffd0fca77b0ffa7cd241a8690471415c",
+        "prereg_commit": "418af4e28463546b8d31aeb792dcdd16bad71dbf",
+        "initial_error_id": null
+      },
+      "E": {
+        "status": "PASS",
+        "real_outcome": {
+          "independent_Node_IRLS_KKT_residual": 7.783232919278404e-8,
+          "max_probability_diff": 0.0013795225090041385,
+          "Node_logloss": 0.5691514741191579,
+          "sklearn_logloss": 0.5691718794866811,
+          "same_OS": true
+        },
+        "full_seed_receipt_in_local_ZIP": true,
+        "human_rows_read": 0,
+        "source_hashes": {
+          "run_A": "1fb99ae098d88169ab4dfbf13ce94195b6789014744f3ec00e0e966190c0a342",
+          "run_B": "c36f86b7bf1573adcebcb3b0237d4b5d94601b9ccf2d929acba58352955a31a0",
+          "run_C": "b8fc847f1a4c11cf8ac4c5f7d2cdac8b1781b4c27daa029db0004040520be624",
+          "score_node": "6d1c1515109f117d299e740561701e3f12500bed5d1a8b98f44fca54fbafba68",
+          "run_D": "68bc8895c0b88e438cfddd9d5f34b6031b2689683518c38f64098b7b91d47015",
+          "run_D_fit": "67aa1b66c02d3873313f1a848ea9181c0002b8f2013408ea68604b3a7e443fdb",
+          "fit_node": "6901223b97a0eeefaf161b5f963d064d2cc482855e89e205247ad3517fb03cf5"
+        }
+      },
+      "F": {
+        "adversarial_review": {
+          "control": "Original code and source unchanged; no special access; independent baseline share identical covariates",
+          "negative": "Source paper CC BY not dataset blanket permission"
+        },
+        "negative_result": "Node independent B2 trainer same machine, not independent scientific replication"
+      },
+      "G": {
+        "caveat": {
+          "human_external": "STOP_R5",
+          "independent_reproduction": "Node numerical trainer same machine and data"
+        },
+        "external_replication": false,
+        "human_R5": "STOP"
+      },
+      "H": {
+        "prior_update_ids": [
+          "U188",
+          "U189",
+          "U190",
+          "U191",
+          "U192"
+        ],
+        "human_priors": "NO_CHANGE_WITH_REASON",
+        "source_refs": []
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "grade": "0/3",
+        "counts_scientific_human_validation": false,
+        "valid": true
+      },
+      "J": {
+        "decision": "STOP_CAMPAIGN",
+        "next": "NO_NEW_CYCLES_WITHOUT_AUTHORISATION",
+        "reason": "20 authorized slots consumed, human R5 remains STOP",
+        "credit_spent": 1
+      },
+      "selection_exposure": "Adaptive blocks; all cohort/actor controls synthetic, no human holdout",
+      "outcome_refs": [
+        "proyectos/mercados-de-pareja/research/ABH_N187_N206_20261030/RESULTS_INDEX.json",
+        "proyectos/mercados-de-pareja/research/ABH_N187_N206_20261030/PREREG_D.json"
+      ]
+    }
+  ],
+  "strict_technical_PASS": 4,
+  "documentary_valid": 1,
+  "CT2_ordinal": 7,
+  "source_microdata_access": "NONE"
+}

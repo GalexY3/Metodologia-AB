@@ -1,0 +1,285 @@
+{
+  "schema": "ABH_AJ_PREOUTCOME_N187_N191_v1",
+  "date": "2026-10-30",
+  "branch": "research/ab-h-esbm-rival-parity-20261030",
+  "parent_head": "8d0aa5d66972c830bb9af9f3e404f45212e9e65d",
+  "authorized": 20,
+  "used_before": 0,
+  "remaining_before": 20,
+  "original_sha256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+  "R5": "HUMAN_STOP",
+  "CT2": 7,
+  "spec": "No human data touched. Synthetic within-cohort tick 3 assessment. B6* is defined as representationally saturated conditional history class, cannot be estimated on sparse simulated histories with same budget.",
+  "contracts": [
+    {
+      "id": "N187",
+      "parent": "N186",
+      "mode": "RISKSET",
+      "drift_D": 1.2,
+      "A": {
+        "question": "Build genuine shared pre-outcome event panels with a time-based within-cohort split and audit no future outcomes",
+        "estimand": "synthetic prospective per-exposure unilateral proposal probability"
+      },
+      "B": {
+        "null": "SRM and flexible history model do not improve baseline B2 under equal training and features",
+        "rivals": [
+          "regularized B2",
+          "cross-classified sender/target effects SRM",
+          "nonlinear history model finite B6",
+          "constant B0",
+          "oracle true DGP",
+          "label-sham"
+        ],
+        "prior_art": "SRM and B6* well established; not new sociological discovery"
+      },
+      "C": {
+        "endpoint": "24x4 synthetic; seeds 12000-12049; ticks0-2 fitting, tick3 evaluation; each exposure unique event, labels and identities conservation, no observed outcome in features",
+        "falsification": "any row imbalance, actor leakage, split misuse -> INVALID; B2 equal/better undermines incremental ESRM advantage"
+      },
+      "D": {
+        "seeds": "12000-12049",
+        "train": "tick0,1,2",
+        "test": "tick3",
+        "model_params": "L2 fixed C=0.3, all 9 pre-outcome covariates; boosting 100 iterations shallow leaves and min leaf 20",
+        "source_code_SHA": "freeze later in separate GitHub commit before outcomes"
+      },
+      "E": "NOT_EXECUTED",
+      "F": {
+        "adversarial": "same rows/features/budget; compare label sham and no ID info; avoid source-truth asymmetry",
+        "negative_controls": "renamed/shuffled actor IDs and withheld tick"
+      },
+      "G": {
+        "holdout": "SYNTHETIC tick3 fixed; no external replication"
+      },
+      "H": {
+        "priors": "No human posterior change without independent data"
+      },
+      "I": {
+        "scientific_CT2_before": 7,
+        "scientific_CT2_after": 7,
+        "grade": "0/3",
+        "maturity": "no automatic credit"
+      },
+      "J": {
+        "if_pass": "N188",
+        "if_fail": "STOP/REPAIR predeclared; don't spend quota"
+      }
+    },
+    {
+      "id": "N188",
+      "parent": "N187",
+      "mode": "SRM_PARITY",
+      "drift_D": 0.4,
+      "A": {
+        "question": "Implement cross-classified sender and target regularized effects on SAME training rows and nine base features as B2",
+        "estimand": "synthetic prospective per-exposure unilateral proposal probability"
+      },
+      "B": {
+        "null": "SRM and flexible history model do not improve baseline B2 under equal training and features",
+        "rivals": [
+          "regularized B2",
+          "cross-classified sender/target effects SRM",
+          "nonlinear history model finite B6",
+          "constant B0",
+          "oracle true DGP",
+          "label-sham"
+        ],
+        "prior_art": "SRM and B6* well established; not new sociological discovery"
+      },
+      "C": {
+        "endpoint": "Two actor-ID intercept blocks and 9 common covariates, L2 penalty; no dedicated unknown person test that unfairly wipes IDs",
+        "falsification": "any row imbalance, actor leakage, split misuse -> INVALID; B2 equal/better undermines incremental ESRM advantage"
+      },
+      "D": {
+        "seeds": "12000-12049",
+        "train": "tick0,1,2",
+        "test": "tick3",
+        "model_params": "L2 fixed C=0.3, all 9 pre-outcome covariates; boosting 100 iterations shallow leaves and min leaf 20",
+        "source_code_SHA": "freeze later in separate GitHub commit before outcomes"
+      },
+      "E": "NOT_EXECUTED",
+      "F": {
+        "adversarial": "same rows/features/budget; compare label sham and no ID info; avoid source-truth asymmetry",
+        "negative_controls": "renamed/shuffled actor IDs and withheld tick"
+      },
+      "G": {
+        "holdout": "SYNTHETIC tick3 fixed; no external replication"
+      },
+      "H": {
+        "priors": "No human posterior change without independent data"
+      },
+      "I": {
+        "scientific_CT2_before": 7,
+        "scientific_CT2_after": 7,
+        "grade": "0/3",
+        "maturity": "no automatic credit"
+      },
+      "J": {
+        "if_pass": "N189",
+        "if_fail": "STOP/REPAIR predeclared; don't spend quota"
+      }
+    },
+    {
+      "id": "N189",
+      "parent": "N188",
+      "mode": "B6_FLEX",
+      "drift_D": 0.4,
+      "A": {
+        "question": "Implement strong nonlinear time/history feedback model with equal covariate source and evaluate against SRM and B2",
+        "estimand": "synthetic prospective per-exposure unilateral proposal probability"
+      },
+      "B": {
+        "null": "SRM and flexible history model do not improve baseline B2 under equal training and features",
+        "rivals": [
+          "regularized B2",
+          "cross-classified sender/target effects SRM",
+          "nonlinear history model finite B6",
+          "constant B0",
+          "oracle true DGP",
+          "label-sham"
+        ],
+        "prior_art": "SRM and B6* well established; not new sociological discovery"
+      },
+      "C": {
+        "endpoint": "Boosting with same pre-outcome features and pair nonlinear interactions; disclose whether q and private bias available to all, finite B6 cannot claim B6*",
+        "falsification": "any row imbalance, actor leakage, split misuse -> INVALID; B2 equal/better undermines incremental ESRM advantage"
+      },
+      "D": {
+        "seeds": "12000-12049",
+        "train": "tick0,1,2",
+        "test": "tick3",
+        "model_params": "L2 fixed C=0.3, all 9 pre-outcome covariates; boosting 100 iterations shallow leaves and min leaf 20",
+        "source_code_SHA": "freeze later in separate GitHub commit before outcomes"
+      },
+      "E": "NOT_EXECUTED",
+      "F": {
+        "adversarial": "same rows/features/budget; compare label sham and no ID info; avoid source-truth asymmetry",
+        "negative_controls": "renamed/shuffled actor IDs and withheld tick"
+      },
+      "G": {
+        "holdout": "SYNTHETIC tick3 fixed; no external replication"
+      },
+      "H": {
+        "priors": "No human posterior change without independent data"
+      },
+      "I": {
+        "scientific_CT2_before": 7,
+        "scientific_CT2_after": 7,
+        "grade": "0/3",
+        "maturity": "no automatic credit"
+      },
+      "J": {
+        "if_pass": "N190",
+        "if_fail": "STOP/REPAIR predeclared; don't spend quota"
+      }
+    },
+    {
+      "id": "N190",
+      "parent": "N189",
+      "mode": "HOLDOUT",
+      "drift_D": 0.4,
+      "A": {
+        "question": "Compare SRM, B2, B6, B0 and true generating oracle strictly on withheld tick3",
+        "estimand": "synthetic prospective per-exposure unilateral proposal probability"
+      },
+      "B": {
+        "null": "SRM and flexible history model do not improve baseline B2 under equal training and features",
+        "rivals": [
+          "regularized B2",
+          "cross-classified sender/target effects SRM",
+          "nonlinear history model finite B6",
+          "constant B0",
+          "oracle true DGP",
+          "label-sham"
+        ],
+        "prior_art": "SRM and B6* well established; not new sociological discovery"
+      },
+      "C": {
+        "endpoint": "Time split fixed, score logloss Brier and per-cohort differences; 4000 bootstrap seed 187190; all negatives remain",
+        "falsification": "any row imbalance, actor leakage, split misuse -> INVALID; B2 equal/better undermines incremental ESRM advantage"
+      },
+      "D": {
+        "seeds": "12000-12049",
+        "train": "tick0,1,2",
+        "test": "tick3",
+        "model_params": "L2 fixed C=0.3, all 9 pre-outcome covariates; boosting 100 iterations shallow leaves and min leaf 20",
+        "source_code_SHA": "freeze later in separate GitHub commit before outcomes"
+      },
+      "E": "NOT_EXECUTED",
+      "F": {
+        "adversarial": "same rows/features/budget; compare label sham and no ID info; avoid source-truth asymmetry",
+        "negative_controls": "renamed/shuffled actor IDs and withheld tick"
+      },
+      "G": {
+        "holdout": "SYNTHETIC tick3 fixed; no external replication"
+      },
+      "H": {
+        "priors": "No human posterior change without independent data"
+      },
+      "I": {
+        "scientific_CT2_before": 7,
+        "scientific_CT2_after": 7,
+        "grade": "0/3",
+        "maturity": "no automatic credit"
+      },
+      "J": {
+        "if_pass": "N191",
+        "if_fail": "STOP/REPAIR predeclared; don't spend quota"
+      }
+    },
+    {
+      "id": "N191",
+      "parent": "N190",
+      "mode": "CAPACITY_NULL",
+      "drift_D": 0.4,
+      "A": {
+        "question": "Test actor/target SRM incremental capacity against label-sham and exposure-order-only control",
+        "estimand": "synthetic prospective per-exposure unilateral proposal probability"
+      },
+      "B": {
+        "null": "SRM and flexible history model do not improve baseline B2 under equal training and features",
+        "rivals": [
+          "regularized B2",
+          "cross-classified sender/target effects SRM",
+          "nonlinear history model finite B6",
+          "constant B0",
+          "oracle true DGP",
+          "label-sham"
+        ],
+        "prior_art": "SRM and B6* well established; not new sociological discovery"
+      },
+      "C": {
+        "endpoint": "An equally regularized actor-ID random shuffled mapping null on train, compare test paired by seed; reject unsupported benefit",
+        "falsification": "any row imbalance, actor leakage, split misuse -> INVALID; B2 equal/better undermines incremental ESRM advantage"
+      },
+      "D": {
+        "seeds": "12000-12049",
+        "train": "tick0,1,2",
+        "test": "tick3",
+        "model_params": "L2 fixed C=0.3, all 9 pre-outcome covariates; boosting 100 iterations shallow leaves and min leaf 20",
+        "source_code_SHA": "freeze later in separate GitHub commit before outcomes"
+      },
+      "E": "NOT_EXECUTED",
+      "F": {
+        "adversarial": "same rows/features/budget; compare label sham and no ID info; avoid source-truth asymmetry",
+        "negative_controls": "renamed/shuffled actor IDs and withheld tick"
+      },
+      "G": {
+        "holdout": "SYNTHETIC tick3 fixed; no external replication"
+      },
+      "H": {
+        "priors": "No human posterior change without independent data"
+      },
+      "I": {
+        "scientific_CT2_before": 7,
+        "scientific_CT2_after": 7,
+        "grade": "0/3",
+        "maturity": "no automatic credit"
+      },
+      "J": {
+        "if_pass": "decide next evidence class by observed failures",
+        "if_fail": "STOP/REPAIR predeclared; don't spend quota"
+      }
+    }
+  ]
+}

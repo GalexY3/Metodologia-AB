@@ -1,0 +1,247 @@
+{
+  "schema": "ABH_N187_N206_SCIENTIFIC_RESULT_INDEX",
+  "date": "2026-10-30",
+  "branch": "research/ab-h-esbm-rival-parity-20261030",
+  "base_sha": "8d0aa5d66972c830bb9af9f3e404f45212e9e65d",
+  "authorized": 20,
+  "technical_PASS": 19,
+  "documentary_valid_no_go": 1,
+  "failed_instrumental_before_outcome": 1,
+  "invalid_completed": 0,
+  "planning": 0,
+  "pending": 0,
+  "external_human_rows": 0,
+  "scientific_CT2": 7,
+  "human_R5": "STOP",
+  "original_ESBM_SHA256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+  "preregs": {
+    "A": "c530ba63f22946be4baf4262d2038fbd9f17813c",
+    "B": "8e5c96d549911a42817226e85e5ad89ee334d263",
+    "C": "8072f5112fe21166bfaffbb2be08feaf6ef9f051",
+    "D": "418af4e28463546b8d31aeb792dcdd16bad71dbf"
+  },
+  "code_freezes": {
+    "A_initial": "a7738d908b1350d7ae891d05331efe4ee27913bd",
+    "A_repair": "afa05cafb98cf5abf386a46419eb704c2b78cec8",
+    "B": "5baae616e5cf33640395fac5d96a832a700fd599",
+    "C": "43d2d0243be31d4a5b77e71153257f406a74489e",
+    "D": "79502b98ffd0fca77b0ffa7cd241a8690471415c"
+  },
+  "code_sha256": {
+    "run_A": "1fb99ae098d88169ab4dfbf13ce94195b6789014744f3ec00e0e966190c0a342",
+    "run_B": "c36f86b7bf1573adcebcb3b0237d4b5d94601b9ccf2d929acba58352955a31a0",
+    "run_C": "b8fc847f1a4c11cf8ac4c5f7d2cdac8b1781b4c27daa029db0004040520be624",
+    "score_node": "6d1c1515109f117d299e740561701e3f12500bed5d1a8b98f44fca54fbafba68",
+    "run_D": "68bc8895c0b88e438cfddd9d5f34b6031b2689683518c38f64098b7b91d47015",
+    "run_D_fit": "67aa1b66c02d3873313f1a848ea9181c0002b8f2013408ea68604b3a7e443fdb",
+    "fit_node": "6901223b97a0eeefaf161b5f963d064d2cc482855e89e205247ad3517fb03cf5"
+  },
+  "full_local_index_sha256": "a6b0a993d2e802f250b1da7adcc9d8cdc585dd812e5bd036a324224609ed6a3d",
+  "zip_name": "mercados_pareja_ABH_N187_N206_rivales_y_auditoria.zip",
+  "zip_sha256": "1032a7d4e96c2274540acd1888cd9fbd98ac438aca69ed118495a1380953300b",
+  "zip_files": 32,
+  "local_zip_contains_full_source_and_receipts": true,
+  "git_repo_contains_summarized_outcome_index_not_binary_zip": true,
+  "model_caveats": [
+    "SRM uses regularized sender/receiver fixed effects and lacks complete cross-classified random dyad hierarchy",
+    "B6 finite gradient boosting is not saturated B6*",
+    "Positive-control alternative labels are generated on frozen ESBM encounter schedules and not self-consistent dynamics",
+    "Original ESBM is a sequential proposer/conditional reply program, not native human bilateral voting",
+    "Node independent algorithm shares input data and operating system; no independent full ESBM replication"
+  ],
+  "cycles": [
+    {
+      "id": "N187",
+      "status": "PASS",
+      "observed": {
+        "fit": 2351,
+        "test": 613,
+        "positive_train": 692,
+        "positive_test": 166
+      }
+    },
+    {
+      "id": "N188",
+      "status": "PASS",
+      "observed": {
+        "SRM_logloss": 0.5785676283864234,
+        "B2_logloss": 0.5691718794866818,
+        "actor_dummy_features": 1974
+      }
+    },
+    {
+      "id": "N189",
+      "status": "PASS",
+      "observed": {
+        "finite_B6_logloss": 0.5791061225739036,
+        "B6star_implemented": false
+      }
+    },
+    {
+      "id": "N190",
+      "status": "PASS",
+      "observed": {
+        "oracle": 0.5647444596328012,
+        "B2": 0.5691718794866818,
+        "SRM": 0.5785676283864234,
+        "B6": 0.5791061225739036,
+        "SRM_minus_B2_seed_CI95": [
+          0.0015192175346974536,
+          0.016813309849711543
+        ]
+      }
+    },
+    {
+      "id": "N191",
+      "status": "PASS",
+      "observed": {
+        "actor_sham": 0.575735814563477,
+        "SRM": 0.5785676283864234
+      }
+    },
+    {
+      "id": "N192",
+      "status": "PASS",
+      "observed": {
+        "actor_DGP_B2": 0.6269844797431173,
+        "actor_DGP_SRM": 0.5685499845960316,
+        "positive_control_only": true
+      }
+    },
+    {
+      "id": "N193",
+      "status": "PASS",
+      "observed": {
+        "no_actor_DGP_B2": 0.4870504703489435,
+        "no_actor_DGP_SRM": 0.4816642395356736
+      }
+    },
+    {
+      "id": "N194",
+      "status": "PASS",
+      "observed": {
+        "nonlinear_DGP_B2": 0.5838272092236498,
+        "nonlinear_DGP_B6": 0.4516446532224417
+      }
+    },
+    {
+      "id": "N195",
+      "status": "PASS",
+      "observed": {
+        "actor_SRM_minus_B2_CI95": [
+          -0.07247754675799528,
+          -0.047403604557992404
+        ],
+        "nonlinear_B6_minus_B2_CI95": [
+          -0.15483713595564436,
+          -0.10493132174579876
+        ]
+      }
+    },
+    {
+      "id": "N196",
+      "status": "PASS",
+      "observed": {
+        "actor_label_permutations": 10,
+        "max_abs_delta": 7.771561172376096e-16
+      }
+    },
+    {
+      "id": "N197",
+      "status": "PASS",
+      "observed": {
+        "frozen_predictions": 613,
+        "models": 6,
+        "input_sha256": "35b630056a046d870a6369bd6b7eb8a1e528d78dca18c555ae2c972596dbb925"
+      }
+    },
+    {
+      "id": "N198",
+      "status": "PASS",
+      "observed": {
+        "Node_independent_logloss_Brier_recomputation_error": 1.1102230246251565e-16
+      }
+    },
+    {
+      "id": "N199",
+      "status": "PASS",
+      "observed": {
+        "test_labels_flipped": 613,
+        "model_prediction_change": 0
+      }
+    },
+    {
+      "id": "N200",
+      "status": "PASS",
+      "observed": {
+        "B2_two_tick_train": 0.57953,
+        "B2_three_tick_train": 0.5691718794866818
+      }
+    },
+    {
+      "id": "N201",
+      "status": "PASS",
+      "observed": {
+        "cold_test_actors": 129,
+        "B2": 0.60563,
+        "SRM": 0.60599,
+        "B6": 0.59453
+      }
+    },
+    {
+      "id": "N202",
+      "status": "VALID_DOCUMENTARY_NO_GO",
+      "observed": {
+        "SRC": "SRC109",
+        "publication_DOI": "10.1007/s10508-023-02806-0",
+        "human_pairs_published_usable": 237,
+        "original_votes_two_sided_reported": true,
+        "raw_rows_read": 0,
+        "file_level_license_verified": false,
+        "human_R5": "STOP"
+      }
+    },
+    {
+      "id": "N203",
+      "status": "PASS",
+      "observed": {
+        "event_macro_same_ranks": true,
+        "pooling_mean_diff_exists": true
+      }
+    },
+    {
+      "id": "N204",
+      "status": "PASS",
+      "observed": {
+        "ring_test_events": 613,
+        "rewired_test_events": 642,
+        "B2_rewired": 0.5837,
+        "SRM_rewired": 0.59127,
+        "oracle_rewired": 0.58102,
+        "causal": false
+      }
+    },
+    {
+      "id": "N205",
+      "status": "PASS",
+      "observed": {
+        "dashboard_scenarios": 5,
+        "real_Chromium_selects": 5,
+        "zero_external_HTTP": true,
+        "zero_JS_errors": true,
+        "html_sha256": "566a0ba6f2ba6c32631f40f97227bdf046bf3387db5c4b49b53b8f0818f54f3b"
+      }
+    },
+    {
+      "id": "N206",
+      "status": "PASS",
+      "observed": {
+        "independent_Node_IRLS_KKT_residual": 7.783232919278404e-8,
+        "max_probability_diff": 0.0013795225090041385,
+        "Node_logloss": 0.5691514741191579,
+        "sklearn_logloss": 0.5691718794866811,
+        "same_OS": true
+      }
+    }
+  ]
+}
