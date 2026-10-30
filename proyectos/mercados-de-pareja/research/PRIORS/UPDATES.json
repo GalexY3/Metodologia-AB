@@ -5619,7 +5619,107 @@
       "CT2_ordinal": 7,
       "R5_human": "STOP",
       "raw_results_sha256": "e0263af4ac85073b1ccbd8a32a4d9dc460b29f89147d765c20eaf2c90554bd5d"
+    },
+    {
+      "id": "U198",
+      "prior_id": "P-TRAJECTORY-INVARIANCE",
+      "cycle_ids": [
+        "N277",
+        "N278",
+        "N279",
+        "N280",
+        "N281",
+        "N282",
+        "N283",
+        "N284",
+        "N285",
+        "N286",
+        "N287",
+        "N288",
+        "N289",
+        "N290",
+        "N291",
+        "N292",
+        "N293",
+        "N294",
+        "N295",
+        "N296"
+      ],
+      "source_ids": [],
+      "recorded_at": "2026-10-30",
+      "before": "SYNTHETIC_COUNTEREXAMPLE_REPAIRED_OPT_IN_NOT_HUMAN",
+      "after": "SYNTHETIC_COUNTEREXAMPLE_REPAIRED_OPT_IN_NOT_HUMAN",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "prereg_commit": "4d92e8002bc24af3dfe6009603e1bc95d2b806ca",
+      "evidence_type": "GITHUB_PRE_FROZEN_SYNTHETIC_MATCHING_FLOAT_EXACTNESS_AND_ADVERSARIAL_R5_QA",
+      "technical_findings": "N277 60/60 reconstructed N144 T16 K7 individual synthetic event traces float64 maxcardinality NetworkX vs exact integer encoded identical; N280 two newly constructed n143 near-tie graphs same matching cardinality but float64 solution exact integer objective inferior by 2 and 3 residual units (2/2^52 and 3/2^52 weights); posthoc Boost independent solver recovers integer optimum after separate prereg. N282 7/7 bounded n12 HiGHS MILP / DP / NetworkX objective agreement. N284 multiple optima; N285 unique optima permute invariant, N286 6/6 tied relabel pair identity changes, N287 insertion order 4/8 selected edge set changes under ties; N290 Boost times out 5s 2/3 near-complete degenerate n144; others detailed REPORT. N293 archival reparse only; no novel science.",
+      "limits": "Original ESBM source not executed byte-identically; old TypeScript source/fixture missing; only reconstructed Python engine used in N277; synthetic graph and solver validation, no people, no causal inference; 20 technical tests not 20 independent scientific claims. N280 Boost post hoc not prospective confirmatory holdout.",
+      "why_no_change": "Human prior concerns exposure, bilateral decisions and real relationship dynamics, none observed. Technical counterexamples narrower precision and tie choices, not new human evidence.",
+      "no_numerical_bayesian_update": true,
+      "scientific_grade": "0/3",
+      "CT2_ordinal": 7,
+      "R5_human": "STOP",
+      "AB_H_technical_cycles": 20,
+      "AB_H_negative_primary": 2,
+      "AB_H_remaining": 0
+    },
+    {
+      "id": "U199",
+      "prior_id": "P-DYADIC_ACCESS",
+      "cycle_ids": [],
+      "source_ids": [
+        "SRC112"
+      ],
+      "recorded_at": "2026-10-30",
+      "before": "TWO_ORIGINAL_HUMAN_DATASETS_READ_SECOND_PARTIAL_BILATERAL_ID_JOIN_INCONSISTENT_NO_EXTERNAL_HOLDOUT",
+      "after": "TWO_ORIGINAL_HUMAN_DATASETS_READ_SECOND_PARTIAL_BILATERAL_ID_JOIN_INCONSISTENT_NO_EXTERNAL_HOLDOUT",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "evidence_type": "DOCUMENTARY_SCREENING_NOT_AB_CYCLE",
+      "observed_documentation": "Lock5Data 276 Columbia first-date records list native DecisionM/DecisionF but ONLY first date in each session and overlap original Columbia recruitment; NOT an independent cohort/complete opportunity schedule, no raw bytes checked.",
+      "why_no_change": "Duplicate/repackaged first-date sample cannot be counted as new independent native bilateral dataset nor reconstruct dynamic exposure risk sets.",
+      "raw_rows_read": 0,
+      "licence_accepted": false,
+      "CT2_ordinal": 7,
+      "R5_human": "STOP"
+    },
+    {
+      "id": "U200",
+      "prior_id": "P-DYADIC_ACCESS",
+      "cycle_ids": [],
+      "source_ids": [
+        "SRC113"
+      ],
+      "recorded_at": "2026-10-30",
+      "before": "TWO_ORIGINAL_HUMAN_DATASETS_READ_SECOND_PARTIAL_BILATERAL_ID_JOIN_INCONSISTENT_NO_EXTERNAL_HOLDOUT",
+      "after": "TWO_ORIGINAL_HUMAN_DATASETS_READ_SECOND_PARTIAL_BILATERAL_ID_JOIN_INCONSISTENT_NO_EXTERNAL_HOLDOUT",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "evidence_type": "DOCUMENTARY_SCREENING_NOT_AB_CYCLE",
+      "observed_documentation": "NLM catalog + authors arxiv preprint Fledge.Love two surveys 2617 and 2894 active users, attitudes toward AI dating agents, not person-to-person dyad-specific first votes or measured candidate risk sets. Raw files not inspected.",
+      "why_no_change": "Within-person views of deploying/encountering AI agents are not independent bilateral native decisions by two people in same observed opportunity. No eligible R5 validation.",
+      "raw_rows_read": 0,
+      "licence_accepted": false,
+      "CT2_ordinal": 7,
+      "R5_human": "STOP"
+    },
+    {
+      "id": "U201",
+      "prior_id": "P-SOURCE-DEDUP",
+      "cycle_ids": [],
+      "source_ids": [
+        "SRC112",
+        "SRC113"
+      ],
+      "recorded_at": "2026-10-30",
+      "before": "TECHNICAL_AUDIT_THREE_KNOWN_DUPLICATE_DOI_PAIRS",
+      "after": "TECHNICAL_AUDIT_THREE_KNOWN_DUPLICATE_DOI_PAIRS",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "evidence_type": "DOCUMENTARY_SOURCE_DISTINCTION_NOT_AB_CYCLE",
+      "observed_documentation": "SRC112 is packaging of Columbia first-date cohort; SRC113 is independent online-dating survey respondents but lacks native paired choices and exposure slates; source count is not cohort count or validation count. Topinkova/Diviak preexisting in SRC021/SRC022 and not duplicated.",
+      "why_no_change": "Adds explicit eligibility exclusions and prevents duplicate counting; does not provide a new dataset satisfying R5.",
+      "raw_rows_read": 0,
+      "CT2_ordinal": 7,
+      "R5_human": "STOP"
     }
   ],
-  "last_campaign": "ABH_N257_N276_20261030"
+  "last_campaign": "ABH_N277_N296_20261030"
 }
