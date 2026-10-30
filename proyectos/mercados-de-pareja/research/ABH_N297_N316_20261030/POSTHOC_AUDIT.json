@@ -1,0 +1,241 @@
+{
+  "schema": "ABH_N297_N316_POSTHOC_AUDIT_v1",
+  "preregister_commit": "7495312512fbcfd9f48cdb05588ae74a10b555d9",
+  "code_hashes": {
+    "run_n297.py": "74346a39a2c31a44fc79fba41f40c107b569091cafeeff0a0b1ff8c16e3abad7",
+    "robust_solver.py": "3447fb5c0ca44f1808f6d5940ae2de4d96dd575d936fe27d914393c98d4918ca",
+    "experiment.py": "89d9d5c125c9153ca8a641267a983e71c0427e1600a45faf03d6f3761b125dfe",
+    "trace_engine.py": "c0c92061100a689ab59698a46e22a96e96d7bb3bd99a21ec292d7aaa30e4415a",
+    "boost_blossom.cpp": "47806e6b331e088d209e51143d18cb5d5cc7a2e2d3d6d8914478bff4b7b8c2d3",
+    "boost_blossom": "96087f807c3845193da871aa8a8f83092c095a0dcf2ab0862ace85b76eebf995"
+  },
+  "source_zip_sha256": "5df54b85ccb3ef4bb2c568ec4a665ac07032dd9e3941108f2cb20e689dabe55b",
+  "cycles_executed": 20,
+  "valid_executed": 20,
+  "runner_exceptions": 0,
+  "subprocess_timeout_or_crash_records": {
+    "N297": "EXIT",
+    "N298": "TIMEOUT",
+    "N299": "TIMEOUT",
+    "N300": "TIMEOUT",
+    "N301": "RETURNED"
+  },
+  "critical_findings": {
+    "N301_boost_int_objective_equal": true,
+    "N302_DP_unique_and_matching_agreement": 6,
+    "N303_symmetric_graphs_multiple_optima": 6,
+    "N304_MILP_DP_NetworkX_agree": 5,
+    "N307_canonical_order_invariant": 7,
+    "N308_C4_no_full_automorphism_equivariance": true,
+    "N309_unique_objective_gap_positive": 5,
+    "N310_n143_near_ulp_float_suboptimal": 3,
+    "N310_n143_near_ulp_float_pair_difference": 4,
+    "N310_exact_gap_values": [
+      0,
+      0,
+      2,
+      1,
+      0,
+      2
+    ],
+    "N311_n14_near_ulp_float_suboptimal": 0,
+    "N311_DP_integer_agree": 12,
+    "N312_canonical_label_permutation_differences": 2,
+    "N313_isolate_controls_pass": 4,
+    "N314_float_binary_roundtrips_pass": 6,
+    "N315_flat_tie_short_event_trace_pass": 4,
+    "N316_Boost_input_order_states": {
+      "original_replay": "CRASH_-11",
+      "half_edge_subset": "CRASH_-11",
+      "reverse_order": "RETURNED",
+      "constant_weight": "CRASH_-11",
+      "remove_high_degree": "CRASH_-11"
+    }
+  },
+  "original_python_post_cycle": {
+    "NATIVE_60_POSTHOC": {
+      "sha256": "4d289362066c88b8c08da3a14fe78a2c19be186f2935f0b3a9b94713aa3fb8ff",
+      "summary": {
+        "cases": 60,
+        "ticks_observed": 960,
+        "all_pair_and_tick_metrics_match": true,
+        "mismatch_count": 0
+      }
+    },
+    "N316_EDGE_ORDER_POSTHOC": {
+      "sha256": "b39fa07379aee243d6885ab72dc43b0f3b8002d4ad67c0cdf571f703558616e2",
+      "summary": {
+        "fixture_sha": "0cf31966ff1839a5cf9ca31255b8412eaf6bd5e66502657df90b3ba253b88ee2",
+        "nx_exact_objective": [
+          71,
+          15407
+        ],
+        "results": [
+          {
+            "test": "original_order",
+            "returncode": -11,
+            "stderr_tail": ""
+          },
+          {
+            "test": "reverse_order",
+            "returncode": 0,
+            "stderr_tail": "",
+            "valid": true,
+            "objective": [
+              71,
+              15407
+            ],
+            "objective_equal_to_networkx": true,
+            "pairs_equal_to_nx": false
+          }
+        ]
+      }
+    }
+  },
+  "receipts": [
+    {
+      "cycle": 297,
+      "sha256": "9e5991ecb390e55165219b98f6172e552d170ac9d70bb18769e9adaab73e9758",
+      "status": "EXECUTED",
+      "elapsed_s": 0.07388715000001866,
+      "path": "results/N297.json"
+    },
+    {
+      "cycle": 298,
+      "sha256": "5c392d3b92710676f60e1325e809ca1263cd9e6e813cd8752f7f841b2bf39716",
+      "status": "EXECUTED",
+      "elapsed_s": 1.0617154300000493,
+      "path": "results/N298.json"
+    },
+    {
+      "cycle": 299,
+      "sha256": "0b0bdb3da215c1cacaf576475d175b0e951b0fd3a0e96a5102d721aace0a9a8c",
+      "status": "EXECUTED",
+      "elapsed_s": 1.1273950709999099,
+      "path": "results/N299.json"
+    },
+    {
+      "cycle": 300,
+      "sha256": "d1e8159ed3fb96b71e573bc4e2814e9b743d6a6d92495352a8d1ce7a01d154d1",
+      "status": "EXECUTED",
+      "elapsed_s": 1.073589267999978,
+      "path": "results/N300.json"
+    },
+    {
+      "cycle": 301,
+      "sha256": "fec3234caffd6fb77ed983817ed513208ca1f93bae6c2b907c7b6832145e05d1",
+      "status": "EXECUTED",
+      "elapsed_s": 1.2911681409999574,
+      "path": "results/N301.json"
+    },
+    {
+      "cycle": 302,
+      "sha256": "3105f8d0c29140fe26b8d070157eb209e0f337909800337865ed3bcb8a810c73",
+      "status": "EXECUTED",
+      "elapsed_s": 0.02017462899993916,
+      "path": "results/N302.json"
+    },
+    {
+      "cycle": 303,
+      "sha256": "5dbe0eaf373f110d30e0c34004262a0dbd75c9b32f3586fd1c1093c7fecdfa08",
+      "status": "EXECUTED",
+      "elapsed_s": 0.022918849000006958,
+      "path": "results/N303.json"
+    },
+    {
+      "cycle": 304,
+      "sha256": "057e0695dc5b6c74f3bec44c520040f04bdca12a798f79eaf4be23788fc6b853",
+      "status": "EXECUTED",
+      "elapsed_s": 0.13536820800004534,
+      "path": "results/N304.json"
+    },
+    {
+      "cycle": 305,
+      "sha256": "1122a454da6e80a0ba0a307627f2421cfb42566ed4f9a8e8bfaa93e4f16c104d",
+      "status": "EXECUTED",
+      "elapsed_s": 0.05011632700006885,
+      "path": "results/N305.json"
+    },
+    {
+      "cycle": 306,
+      "sha256": "902cd779e3c109e478819d4dcfdab6384fbe3e689cc05c771d1d95aa3e06160d",
+      "status": "EXECUTED",
+      "elapsed_s": 0.000030255000069701055,
+      "path": "results/N306.json"
+    },
+    {
+      "cycle": 307,
+      "sha256": "748894274a7a4cca01ef2f43e4822b9cd8df8926a04b28407d5da0f678e8ef13",
+      "status": "EXECUTED",
+      "elapsed_s": 0.0127559630000178,
+      "path": "results/N307.json"
+    },
+    {
+      "cycle": 308,
+      "sha256": "95607322a150ee013a1b145f3e6e8119f914fe25098a5265c126071623f2e32f",
+      "status": "EXECUTED",
+      "elapsed_s": 0.0009712180000178705,
+      "path": "results/N308.json"
+    },
+    {
+      "cycle": 309,
+      "sha256": "079062e33fbe1392c3a3775903648f699af677b66c793380cf073433d410a6be",
+      "status": "EXECUTED",
+      "elapsed_s": 0.04736910499991609,
+      "path": "results/N309.json"
+    },
+    {
+      "cycle": 310,
+      "sha256": "3a7007a36f2994a62ab787d9a919ed3fac614982ee9b7b688d8137b8864677f6",
+      "status": "EXECUTED",
+      "elapsed_s": 1.153239955999993,
+      "path": "results/N310.json"
+    },
+    {
+      "cycle": 311,
+      "sha256": "4799757b2d56c6fbd8fdf405f975f26a88e976d84b67fd19cebddfb2b5ecadcc",
+      "status": "EXECUTED",
+      "elapsed_s": 0.06806573500000468,
+      "path": "results/N311.json"
+    },
+    {
+      "cycle": 312,
+      "sha256": "3f80b19cee12490bac3f6b915ebdab70efa9cf9f7ccfc2b4544f07229d1f4dfd",
+      "status": "EXECUTED",
+      "elapsed_s": 0.016736183000034544,
+      "path": "results/N312.json"
+    },
+    {
+      "cycle": 313,
+      "sha256": "e9de739e41a6ec8945c64c1b5d71f04208d23d1315d0a35cb622215e024dcdd1",
+      "status": "EXECUTED",
+      "elapsed_s": 0.009630789999960143,
+      "path": "results/N313.json"
+    },
+    {
+      "cycle": 314,
+      "sha256": "4ba4724dac9718421efcd515c7741dd7335c2378cfeded1c3bdbd5973dbdc01d",
+      "status": "EXECUTED",
+      "elapsed_s": 0.0015317510000159018,
+      "path": "results/N314.json"
+    },
+    {
+      "cycle": 315,
+      "sha256": "5b2b9f3798d9db33dffc49794acb5a38e16889ab2947d1585821a0267a352f02",
+      "status": "EXECUTED",
+      "elapsed_s": 0.41944946599994637,
+      "path": "results/N315.json"
+    },
+    {
+      "cycle": 316,
+      "sha256": "64357179e25b41fd490bce75844819697c4df1672db24ab9cbaba00e7833917b",
+      "status": "EXECUTED",
+      "elapsed_s": 0.0641115500000069,
+      "path": "results/N316.json"
+    }
+  ],
+  "human_rows_new": 0,
+  "scientific_grade": "0/3",
+  "CT2_scientific": 7,
+  "STOP_R5_human": true
+}
