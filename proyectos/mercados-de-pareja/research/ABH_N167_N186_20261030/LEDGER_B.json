@@ -1,0 +1,504 @@
+{
+  "schema": "ABH_N167_N186_AJ_LEDGER_B",
+  "branch": "research/ab-h-esbm-adversarial-benchmark-20261030",
+  "date": "2026-10-30",
+  "prereg": "proyectos/mercados-de-pareja/research/ABH_N167_N186_20261030/PREREG_B.json",
+  "prereg_commit": "fd0caaffa5289cb47192f83e9e017ff133503db4",
+  "result_index": "proyectos/mercados-de-pareja/research/ABH_N167_N186_20261030/RESULTS_INDEX.json",
+  "cycles": [
+    {
+      "id": "N172",
+      "parent": "N171",
+      "mode": "HOLDOUT",
+      "drift_D": {
+        "seeds": "train 7100..7159, fresh 9100..9179; RNG 1720/1730/1740; code SHA pinned separately",
+        "no_future": "SRM t0-2 only for t3"
+      },
+      "A": {
+        "claim": "Fresh 80-seed never-seen synthetic proposal heldout test with bootstrap paired by seed",
+        "estimand": "synthetic out-of-seed logistic proposal event probability"
+      },
+      "B": {
+        "rivals": [
+          "B0",
+          "B1",
+          "B2",
+          "B4",
+          "B6",
+          "ESBM generating-param oracle",
+          "sender+target random intercept shrinkage SRM"
+        ],
+        "null": "No robust ESBM advantage across independent synthetic seeds and hostile generators"
+      },
+      "C": {
+        "falsifier": "Train fixed 7100..7159; test 9100..9179; paired 4000 bootstrap seed=1720, report interval B2-oracle and B6-oracle; no ex-ante human claim",
+        "direction": "If ESBM fails on alternate DGP, report; no aggregate cherry pick"
+      },
+      "D": {
+        "seeds": "train 7100..7159, fresh 9100..9179; RNG 1720/1730/1740; code SHA pinned separately",
+        "no_future": "SRM t0-2 only for t3",
+        "source_sha256": "eb260c9a1a7ac75e8a64609d4f8279161f382df3bd684eb4e6313a88a443fbdc",
+        "prereg_commit": "fd0caaffa5289cb47192f83e9e017ff133503db4",
+        "code_freeze_commits": [
+          "6ed9b848c3ddf8cd496ef04120f90625d41458ed"
+        ],
+        "before_outcome": true
+      },
+      "E": {
+        "execution_status": "PASS",
+        "observed": {
+          "fresh_test_exposures": 4796,
+          "seed_count": 80,
+          "B2_minus_oracle_seed_mean": 0.00099,
+          "B2_minus_oracle_CI95": [
+            -0.00022727496274924794,
+            0.002346419290427648
+          ],
+          "includes_zero": true
+        },
+        "actual_rows_processed": "SYNTHETIC_PROPOSAL_OR_CONDITIONAL_ONLY",
+        "human_raw_rows": 0,
+        "source_receipt": "854fabfaeead542c4de9361eaf934ba11010a0835992f3b6614b4444b849275b"
+      },
+      "F": {
+        "adversarial": {
+          "controls": "same labels/cases and priors; alternative laws intentionally adversarial, no real-world mechanism",
+          "strong": "B2 simple correctly specified approximate logit; B6 flexible; SRM within-actor only"
+        },
+        "actual_benchmark_limit": "B1 != full SRM; B4 != full ranking+fatigue; B6 != fully flexible feedback B6*. Oracle knows DGP."
+      },
+      "G": {
+        "prespec": "NO_EXTERNAL_HUMAN_OR_INDEPENDENT_IMPLEMENTATION",
+        "external_human_holdout": "NONE",
+        "independent_OS_replication": false,
+        "verification": "SAME_GENERATOR_AND_OR_LOCAL_TECHNICAL"
+      },
+      "H": {
+        "update_events": [
+          "U183",
+          "U184",
+          "U185",
+          "U186",
+          "U187"
+        ],
+        "prior_ids": [
+          "P-SOURCE-DEDUP",
+          "P-COMPETENT_NULL",
+          "P-NOVELTY",
+          "P-DYADIC_ACCESS",
+          "P-OPPORTUNITY"
+        ],
+        "human_scientific_status": "NO_CHANGE_WITH_REASON",
+        "source_ids": []
+      },
+      "I": {
+        "scientific_grade": "0/3",
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "not_external_validation": true,
+        "technically_valid_or_documentary": true,
+        "instrumental_failed_attempts": 0
+      },
+      "J": {
+        "decision": "CONTINUE_TO_NEXT_DISTINCT_FALSIFIER",
+        "successor": "N173",
+        "credit_spent": 1,
+        "reason": "Execution or substantive source/baseline no-go per prereg; not repeated seed-only simulations",
+        "value_of_next_external_evidence": "Legal independent real opportunities with two native yes/no and calibrated equal-info SRM/B6 baseline"
+      }
+    },
+    {
+      "id": "N173",
+      "parent": "N172",
+      "mode": "PIVOT",
+      "drift_D": {
+        "seeds": "train 7100..7159, fresh 9100..9179; RNG 1720/1730/1740; code SHA pinned separately",
+        "no_future": "SRM t0-2 only for t3"
+      },
+      "A": {
+        "claim": "Adversarial generator reverses attraction to q, tests whether correctly retrained flexible model can falsify ESBM oracle",
+        "estimand": "synthetic out-of-seed logistic proposal event probability"
+      },
+      "B": {
+        "rivals": [
+          "B0",
+          "B1",
+          "B2",
+          "B4",
+          "B6",
+          "ESBM generating-param oracle",
+          "sender+target random intercept shrinkage SRM"
+        ],
+        "null": "No robust ESBM advantage across independent synthetic seeds and hostile generators"
+      },
+      "C": {
+        "falsifier": "Alternative Bernoulli labels logistic with negative q weight and same features, independent RNG 1730; label shifts split by train/test seeds, oracle remains original, no fit to test outcomes",
+        "direction": "If ESBM fails on alternate DGP, report; no aggregate cherry pick"
+      },
+      "D": {
+        "seeds": "train 7100..7159, fresh 9100..9179; RNG 1720/1730/1740; code SHA pinned separately",
+        "no_future": "SRM t0-2 only for t3",
+        "source_sha256": "eb260c9a1a7ac75e8a64609d4f8279161f382df3bd684eb4e6313a88a443fbdc",
+        "prereg_commit": "fd0caaffa5289cb47192f83e9e017ff133503db4",
+        "code_freeze_commits": [
+          "6ed9b848c3ddf8cd496ef04120f90625d41458ed"
+        ],
+        "before_outcome": true
+      },
+      "E": {
+        "execution_status": "PASS",
+        "observed": {
+          "reversed_quality_generator_logloss": {
+            "B2": 0.5799,
+            "oracle": 0.6468
+          },
+          "adversarial_generator_different": true
+        },
+        "actual_rows_processed": "SYNTHETIC_PROPOSAL_OR_CONDITIONAL_ONLY",
+        "human_raw_rows": 0,
+        "source_receipt": "854fabfaeead542c4de9361eaf934ba11010a0835992f3b6614b4444b849275b"
+      },
+      "F": {
+        "adversarial": {
+          "controls": "same labels/cases and priors; alternative laws intentionally adversarial, no real-world mechanism",
+          "strong": "B2 simple correctly specified approximate logit; B6 flexible; SRM within-actor only"
+        },
+        "actual_benchmark_limit": "B1 != full SRM; B4 != full ranking+fatigue; B6 != fully flexible feedback B6*. Oracle knows DGP."
+      },
+      "G": {
+        "prespec": "NO_EXTERNAL_HUMAN_OR_INDEPENDENT_IMPLEMENTATION",
+        "external_human_holdout": "NONE",
+        "independent_OS_replication": false,
+        "verification": "SAME_GENERATOR_AND_OR_LOCAL_TECHNICAL"
+      },
+      "H": {
+        "update_events": [
+          "U183",
+          "U184",
+          "U185",
+          "U186",
+          "U187"
+        ],
+        "prior_ids": [
+          "P-SOURCE-DEDUP",
+          "P-COMPETENT_NULL",
+          "P-NOVELTY",
+          "P-DYADIC_ACCESS",
+          "P-OPPORTUNITY"
+        ],
+        "human_scientific_status": "NO_CHANGE_WITH_REASON",
+        "source_ids": []
+      },
+      "I": {
+        "scientific_grade": "0/3",
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "not_external_validation": true,
+        "technically_valid_or_documentary": true,
+        "instrumental_failed_attempts": 0
+      },
+      "J": {
+        "decision": "CONTINUE_TO_NEXT_DISTINCT_FALSIFIER",
+        "successor": "N174",
+        "credit_spent": 1,
+        "reason": "Execution or substantive source/baseline no-go per prereg; not repeated seed-only simulations",
+        "value_of_next_external_evidence": "Legal independent real opportunities with two native yes/no and calibrated equal-info SRM/B6 baseline"
+      }
+    },
+    {
+      "id": "N174",
+      "parent": "N173",
+      "mode": "NEGATIVE",
+      "drift_D": {
+        "seeds": "train 7100..7159, fresh 9100..9179; RNG 1720/1730/1740; code SHA pinned separately",
+        "no_future": "SRM t0-2 only for t3"
+      },
+      "A": {
+        "claim": "No-signal control generator makes choices iid Bernoulli p=.28 irrespective of attributes",
+        "estimand": "synthetic out-of-seed logistic proposal event probability"
+      },
+      "B": {
+        "rivals": [
+          "B0",
+          "B1",
+          "B2",
+          "B4",
+          "B6",
+          "ESBM generating-param oracle",
+          "sender+target random intercept shrinkage SRM"
+        ],
+        "null": "No robust ESBM advantage across independent synthetic seeds and hostile generators"
+      },
+      "C": {
+        "falsifier": "train/test independent RNG 1740; B0 advantage or failures reported; same number of rows only, independent target noises",
+        "direction": "If ESBM fails on alternate DGP, report; no aggregate cherry pick"
+      },
+      "D": {
+        "seeds": "train 7100..7159, fresh 9100..9179; RNG 1720/1730/1740; code SHA pinned separately",
+        "no_future": "SRM t0-2 only for t3",
+        "source_sha256": "eb260c9a1a7ac75e8a64609d4f8279161f382df3bd684eb4e6313a88a443fbdc",
+        "prereg_commit": "fd0caaffa5289cb47192f83e9e017ff133503db4",
+        "code_freeze_commits": [
+          "6ed9b848c3ddf8cd496ef04120f90625d41458ed"
+        ],
+        "before_outcome": true
+      },
+      "E": {
+        "execution_status": "PASS",
+        "observed": {
+          "no_signal_generator_logloss": {
+            "B0": 0.5976,
+            "oracle": 0.6163
+          }
+        },
+        "actual_rows_processed": "SYNTHETIC_PROPOSAL_OR_CONDITIONAL_ONLY",
+        "human_raw_rows": 0,
+        "source_receipt": "854fabfaeead542c4de9361eaf934ba11010a0835992f3b6614b4444b849275b"
+      },
+      "F": {
+        "adversarial": {
+          "controls": "same labels/cases and priors; alternative laws intentionally adversarial, no real-world mechanism",
+          "strong": "B2 simple correctly specified approximate logit; B6 flexible; SRM within-actor only"
+        },
+        "actual_benchmark_limit": "B1 != full SRM; B4 != full ranking+fatigue; B6 != fully flexible feedback B6*. Oracle knows DGP."
+      },
+      "G": {
+        "prespec": "NO_EXTERNAL_HUMAN_OR_INDEPENDENT_IMPLEMENTATION",
+        "external_human_holdout": "NONE",
+        "independent_OS_replication": false,
+        "verification": "SAME_GENERATOR_AND_OR_LOCAL_TECHNICAL"
+      },
+      "H": {
+        "update_events": [
+          "U183",
+          "U184",
+          "U185",
+          "U186",
+          "U187"
+        ],
+        "prior_ids": [
+          "P-SOURCE-DEDUP",
+          "P-COMPETENT_NULL",
+          "P-NOVELTY",
+          "P-DYADIC_ACCESS",
+          "P-OPPORTUNITY"
+        ],
+        "human_scientific_status": "NO_CHANGE_WITH_REASON",
+        "source_ids": []
+      },
+      "I": {
+        "scientific_grade": "0/3",
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "not_external_validation": true,
+        "technically_valid_or_documentary": true,
+        "instrumental_failed_attempts": 0
+      },
+      "J": {
+        "decision": "CONTINUE_TO_NEXT_DISTINCT_FALSIFIER",
+        "successor": "N175",
+        "credit_spent": 1,
+        "reason": "Execution or substantive source/baseline no-go per prereg; not repeated seed-only simulations",
+        "value_of_next_external_evidence": "Legal independent real opportunities with two native yes/no and calibrated equal-info SRM/B6 baseline"
+      }
+    },
+    {
+      "id": "N175",
+      "parent": "N174",
+      "mode": "AUDIT_HETEROGENEITY",
+      "drift_D": {
+        "seeds": "train 7100..7159, fresh 9100..9179; RNG 1720/1730/1740; code SHA pinned separately",
+        "no_future": "SRM t0-2 only for t3"
+      },
+      "A": {
+        "claim": "Audit evaluation by synthetic actor group under fresh holdout, including empty group handling",
+        "estimand": "synthetic out-of-seed logistic proposal event probability"
+      },
+      "B": {
+        "rivals": [
+          "B0",
+          "B1",
+          "B2",
+          "B4",
+          "B6",
+          "ESBM generating-param oracle",
+          "sender+target random intercept shrinkage SRM"
+        ],
+        "null": "No robust ESBM advantage across independent synthetic seeds and hostile generators"
+      },
+      "C": {
+        "falsifier": "Outcomes split receiver gender F M X; enforce min test n >=1; no demographic human inference or unpooled data claims",
+        "direction": "If ESBM fails on alternate DGP, report; no aggregate cherry pick"
+      },
+      "D": {
+        "seeds": "train 7100..7159, fresh 9100..9179; RNG 1720/1730/1740; code SHA pinned separately",
+        "no_future": "SRM t0-2 only for t3",
+        "source_sha256": "eb260c9a1a7ac75e8a64609d4f8279161f382df3bd684eb4e6313a88a443fbdc",
+        "prereg_commit": "fd0caaffa5289cb47192f83e9e017ff133503db4",
+        "code_freeze_commits": [
+          "6ed9b848c3ddf8cd496ef04120f90625d41458ed"
+        ],
+        "before_outcome": true
+      },
+      "E": {
+        "execution_status": "PASS",
+        "observed": {
+          "receiver_synthetic_gender_exposures": {
+            "F": 2108,
+            "M": 1913,
+            "X": 775
+          },
+          "not_human_disparity": true
+        },
+        "actual_rows_processed": "SYNTHETIC_PROPOSAL_OR_CONDITIONAL_ONLY",
+        "human_raw_rows": 0,
+        "source_receipt": "854fabfaeead542c4de9361eaf934ba11010a0835992f3b6614b4444b849275b"
+      },
+      "F": {
+        "adversarial": {
+          "controls": "same labels/cases and priors; alternative laws intentionally adversarial, no real-world mechanism",
+          "strong": "B2 simple correctly specified approximate logit; B6 flexible; SRM within-actor only"
+        },
+        "actual_benchmark_limit": "B1 != full SRM; B4 != full ranking+fatigue; B6 != fully flexible feedback B6*. Oracle knows DGP."
+      },
+      "G": {
+        "prespec": "NO_EXTERNAL_HUMAN_OR_INDEPENDENT_IMPLEMENTATION",
+        "external_human_holdout": "NONE",
+        "independent_OS_replication": false,
+        "verification": "SAME_GENERATOR_AND_OR_LOCAL_TECHNICAL"
+      },
+      "H": {
+        "update_events": [
+          "U183",
+          "U184",
+          "U185",
+          "U186",
+          "U187"
+        ],
+        "prior_ids": [
+          "P-SOURCE-DEDUP",
+          "P-COMPETENT_NULL",
+          "P-NOVELTY",
+          "P-DYADIC_ACCESS",
+          "P-OPPORTUNITY"
+        ],
+        "human_scientific_status": "NO_CHANGE_WITH_REASON",
+        "source_ids": []
+      },
+      "I": {
+        "scientific_grade": "0/3",
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "not_external_validation": true,
+        "technically_valid_or_documentary": true,
+        "instrumental_failed_attempts": 0
+      },
+      "J": {
+        "decision": "CONTINUE_TO_NEXT_DISTINCT_FALSIFIER",
+        "successor": "N176",
+        "credit_spent": 1,
+        "reason": "Execution or substantive source/baseline no-go per prereg; not repeated seed-only simulations",
+        "value_of_next_external_evidence": "Legal independent real opportunities with two native yes/no and calibrated equal-info SRM/B6 baseline"
+      }
+    },
+    {
+      "id": "N176",
+      "parent": "N175",
+      "mode": "SRM_BRANCH",
+      "drift_D": {
+        "seeds": "train 7100..7159, fresh 9100..9179; RNG 1720/1730/1740; code SHA pinned separately",
+        "no_future": "SRM t0-2 only for t3"
+      },
+      "A": {
+        "claim": "Competent participant-history SRM sender/target empirical Bayes baseline for last tick of each synthetic cohort",
+        "estimand": "synthetic out-of-seed logistic proposal event probability"
+      },
+      "B": {
+        "rivals": [
+          "B0",
+          "B1",
+          "B2",
+          "B4",
+          "B6",
+          "ESBM generating-param oracle",
+          "sender+target random intercept shrinkage SRM"
+        ],
+        "null": "No robust ESBM advantage across independent synthetic seeds and hostile generators"
+      },
+      "C": {
+        "falsifier": "Seeds 9100..9139; t0-2 actor/target exposures used to estimate shrinkage from events, score only t3; no heldout decisions seen; compare constant and out-of-seed B2",
+        "direction": "If ESBM fails on alternate DGP, report; no aggregate cherry pick"
+      },
+      "D": {
+        "seeds": "train 7100..7159, fresh 9100..9179; RNG 1720/1730/1740; code SHA pinned separately",
+        "no_future": "SRM t0-2 only for t3",
+        "source_sha256": "eb260c9a1a7ac75e8a64609d4f8279161f382df3bd684eb4e6313a88a443fbdc",
+        "prereg_commit": "fd0caaffa5289cb47192f83e9e017ff133503db4",
+        "code_freeze_commits": [
+          "6ed9b848c3ddf8cd496ef04120f90625d41458ed"
+        ],
+        "before_outcome": true
+      },
+      "E": {
+        "execution_status": "PASS",
+        "observed": {
+          "within_event_tick3_test": 539,
+          "sender_target_EB_SRM_logloss": 0.5872,
+          "B2_logloss": 0.5625
+        },
+        "actual_rows_processed": "SYNTHETIC_PROPOSAL_OR_CONDITIONAL_ONLY",
+        "human_raw_rows": 0,
+        "source_receipt": "854fabfaeead542c4de9361eaf934ba11010a0835992f3b6614b4444b849275b"
+      },
+      "F": {
+        "adversarial": {
+          "controls": "same labels/cases and priors; alternative laws intentionally adversarial, no real-world mechanism",
+          "strong": "B2 simple correctly specified approximate logit; B6 flexible; SRM within-actor only"
+        },
+        "actual_benchmark_limit": "B1 != full SRM; B4 != full ranking+fatigue; B6 != fully flexible feedback B6*. Oracle knows DGP."
+      },
+      "G": {
+        "prespec": "NO_EXTERNAL_HUMAN_OR_INDEPENDENT_IMPLEMENTATION",
+        "external_human_holdout": "NONE",
+        "independent_OS_replication": false,
+        "verification": "SAME_GENERATOR_AND_OR_LOCAL_TECHNICAL"
+      },
+      "H": {
+        "update_events": [
+          "U183",
+          "U184",
+          "U185",
+          "U186",
+          "U187"
+        ],
+        "prior_ids": [
+          "P-SOURCE-DEDUP",
+          "P-COMPETENT_NULL",
+          "P-NOVELTY",
+          "P-DYADIC_ACCESS",
+          "P-OPPORTUNITY"
+        ],
+        "human_scientific_status": "NO_CHANGE_WITH_REASON",
+        "source_ids": []
+      },
+      "I": {
+        "scientific_grade": "0/3",
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "not_external_validation": true,
+        "technically_valid_or_documentary": true,
+        "instrumental_failed_attempts": 0
+      },
+      "J": {
+        "decision": "CONTINUE_TO_NEXT_DISTINCT_FALSIFIER",
+        "successor": "N177",
+        "credit_spent": 1,
+        "reason": "Execution or substantive source/baseline no-go per prereg; not repeated seed-only simulations",
+        "value_of_next_external_evidence": "Legal independent real opportunities with two native yes/no and calibrated equal-info SRM/B6 baseline"
+      }
+    }
+  ],
+  "total": 5,
+  "external_human_cycles": 0,
+  "CT2": 7
+}
