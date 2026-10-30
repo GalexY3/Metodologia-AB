@@ -1,0 +1,71 @@
+{
+  "schema": "ABH_N207_N216_CODE_FREEZE_1",
+  "parent_prereg_commit": "e8869fe19fb35063c68ce42b824b6a98ac73ec0d",
+  "original_ESBM_sha256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+  "local_source": "User ZIP eabadd8f archive, patched in isolated sandbox, source bytes and runnable tests SHA frozen prospectively before any test execution",
+  "original_codes_not_modified": true,
+  "status": "PRE_EXECUTION",
+  "frozen_paths": [
+    {
+      "path": "src/selection.ts",
+      "sha256": "ff63668658f99c7439fbd6920b83b79618ccde5a6475d218d62703d54820598c",
+      "bytes": 1677
+    },
+    {
+      "path": "src/engine.ts",
+      "sha256": "595251b0f86eac29e793c08bd3a0f46e992c811445fc4307a47d786e3e22d5e8",
+      "bytes": 6638
+    },
+    {
+      "path": "src/matching.ts",
+      "sha256": "1068a2f3d66c6d4b887a16f6cc13d50efb5f03214c744c959d9dc8cdfb7380f2",
+      "bytes": 8250
+    },
+    {
+      "path": "src/compare.ts",
+      "sha256": "3a4995049ecb1a5043ed3fb8e2c675dff59f76929c8b79af61db9a806ad2d648",
+      "bytes": 6998
+    },
+    {
+      "path": "src/types.ts",
+      "sha256": "dfba5e9abde658731043be37a80699c484a720bba097a4971bbd9f8eb1cd0983",
+      "bytes": 2440
+    },
+    {
+      "path": "src/cli.ts",
+      "sha256": "12565688745fe35f555175bcb6e8a7df781379590375d1672d2184295c3942f7",
+      "bytes": 11230
+    },
+    {
+      "path": "TRACE_SCHEMA_1.md",
+      "sha256": "c145a2f3fb1fcc210362adcdb98e5afc7956c2a51b0dfe2b66d1754e9bd1c2f4",
+      "bytes": 2263
+    },
+    {
+      "path": "CORRECTION_LOG.md",
+      "sha256": "08b88d89dfbb9a079a796982f4b00035c8c8eaea5ad20eeb85fe2ef42c689994",
+      "bytes": 809
+    },
+    {
+      "path": "authorization.example.json",
+      "sha256": "fd98e9f26da99c17830f2f39b2b6289f6326a97303a2f6a95b3d44fe25a7d7bc",
+      "bytes": 877
+    },
+    {
+      "path": "tests/verification.mjs",
+      "sha256": "bc408757b917876f72259155f441425120ace1e9d6ce2668ee1b3f89285c1cc7",
+      "bytes": 6778
+    },
+    {
+      "path": "tests/independent_graph_oracle.py",
+      "sha256": "2853f66afdf530b2b08af9c62aa7d658d8b3e32bf4e6c699a5b588b89be05554",
+      "bytes": 2271
+    }
+  ],
+  "baseline_original_26_manifest_from_user": "62bc3bd9b70bc72565acd98f9610c8534fc53299664e2a7f0acfd2c58281a49f",
+  "R5": "HUMAN_STOP",
+  "CT2": 7,
+  "no_60_full_runs": true,
+  "actor_test_scope": "N<=8 toy and manual fixtures only, not N144",
+  "side_effects": "No publication of local private code required; ZIP afterward with exactly SHA declared"
+}
