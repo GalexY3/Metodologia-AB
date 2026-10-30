@@ -1,0 +1,44 @@
+name: PFL P1 + R1 regenerate official project catalogue and handoff once
+on:
+  push:
+    branches:
+      - feature/pfl-p1-accounts
+    paths:
+      - .github/workflows/pfl-p1-rebuild-continuity.yml
+permissions:
+  contents: write
+concurrency:
+  group: pfl-p1-final-continuity-one
+  cancel-in-progress: false
+jobs:
+  regenerate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+      - name: Original project index build and canonical status validation
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd proyectos/politics-fantasy-league
+          python scripts/project_index.py build
+          python scripts/project_status.py check
+          python scripts/project_status.py handoff
+          python scripts/project_index.py check
+          python scripts/project_status.py check
+          cd ../..
+          git config user.name 'PFL Integration QA'
+          git config user.email 'pfl-integration-qa@users.noreply.github.com'
+          git add -- proyectos/politics-fantasy-league/PROJECT_INDEX.json \
+             proyectos/politics-fantasy-league/PROJECT_MAP.md \
+             proyectos/politics-fantasy-league/research/INDEX.md \
+             proyectos/politics-fantasy-league/HANDOFF.md
+          git diff --cached --stat
+          if ! git diff --cached --quiet; then
+            git commit -m 'PFL rebuild tracked project catalogue and verified handoff after P1 and C38'
+            git push origin HEAD:refs/heads/feature/pfl-p1-accounts
+          fi
+          echo PFL_STATE_INDEX_HANDOFF_NATIVE_VERIFIED
