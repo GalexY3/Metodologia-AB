@@ -1,5 +1,7 @@
 # Tareas para Codex · Mercados de pareja
 
+> **Vigente 30/10/2026:** AB-H N317–N336 cerrado 20/20, 0 plazas; [informe](https://github.com/GalexY3/Metodologia-AB/blob/main/proyectos/mercados-de-pareja/informes/ABH_N317_N336_20261030.md). Codex está deshabilitado: [tarea futura 08](08_FUTURA_N337_VALIDACION_Y_NEGOCIACION.md) es archivo histórico **no activo ni autorizado como ciclo**. La próxima tarea científica requiere nueva evidencia romántica de oportunidades observadas y decisiones bilaterales, no solo más simulaciones. CT2 ciencia 7/100 y STOP_R5 humano activos.
+
 **Estado 30/10/2026:** N297–N316 completados (20/20). Saldo 0. Codex deshabilitado. Tarea 06 archivada, no activa. Véase [informe vigente](../research/ABH_N297_N316_20261030/REPORT.md). STOP_R5 humano; CT2 científica 7/100.
 
 **Estado final 2026-10-30:** N257–N276 **CERRADOS: 20/20 ejecutados, 18 PASS técnicos, 2 negativos válidos, 0 plazas restantes**; 5 primeros intentos instrumentales fallidos archivados y reparados con nuevo prerregistro. CT2 científica **7/100**. STOP_R5 humano **activo**. **No hay Codex disponible por ahora ni tareas en ejecución externa.** Véase el [informe final en rama científica](https://github.com/GalexY3/Metodologia-AB/blob/research/ab-h-esbm-event-parity-n257-n276-20261030/proyectos/mercados-de-pareja/research/ABH_N257_N276_20261030/REPORT.md) y el [índice SHA](https://github.com/GalexY3/Metodologia-AB/blob/research/ab-h-esbm-event-parity-n257-n276-20261030/proyectos/mercados-de-pareja/research/ABH_N257_N276_20261030/RESULTS_INDEX_GITHUB.json).
