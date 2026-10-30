@@ -1,0 +1,1047 @@
+{
+  "schema": "ABH_N237_N256_AJ_PRE_OUTCOME",
+  "created": "2026-10-30",
+  "authorized": 20,
+  "remaining_before": 20,
+  "branch": "research/ab-h-esbm-polynomial-blossom-n237-n256-20261030",
+  "parent_head": "b008f2eb6e864c4e4bb3090570f626ebe1416f62",
+  "freeze_files_sha256": {
+    "run": "ef3cd1341ea06103187dbeb2bed4bf69a993c16becaa2ddc232c7e3cce963354",
+    "boost": "5a6c410585f1512c36e62cd91ad57f47bda26adc522a1a1cb756b549707bded3",
+    "mjs": "b431e367ca045fd180323f98d5a0735a18d744155c263c8c91bd583126e95949",
+    "ts": "898370b4e31bd8aa71cadc3c572c139d3c404e95bcbede9177d6c5d24e3df98d",
+    "engine": "53ef6511cbb3e267b5f88783a588a9b9a24430a5d8ee632f852fc39711a4e9b9",
+    "types": "ad16c981f5fee9549bca9a7d3621a350d539d593761ddb934071f64fe12ed8cb",
+    "original": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+  },
+  "code_provenance": "new independent C++ Boost.Graph exact weighted blossom backend, instrumented TS wrapper and Python original ESBM 11,913 bytes unchanged",
+  "design": "n<=144 matching with cardinality-first integer encoding B= floor(n/2)*max_delta+1, delta=(IEEE754 binary64 edge_weight-1)*2^52 exactly; prove bounds <=MAX_SAFE_INTEGER. Boost max weighted matching exact integer arithmetic. Distinct from historical TS exponential solver; Windows C++ Boost install/compiler not demonstrated. Historical Python/NetworkX remains independent comparator.",
+  "adversarial": "Some graphs may show NetworkX vs integer exact weight difference near binary64 rounding or multiple matching optima. Record first differential and all failures, no repair after outcomes without new prereg/source freeze.",
+  "human_R5": "STOP",
+  "CT2": 7,
+  "scientific_grade": "0/3",
+  "no_SSJY": true,
+  "no_merge": true,
+  "cycles": [
+    {
+      "cycle": "N237",
+      "A": {
+        "question": "integer objective 12 n10 graphs",
+        "domain": "matching exactness and feasibility",
+        "scope": "synthetic software replication, no human causal inference"
+      },
+      "B": {
+        "rival": "NetworkX max_weight_matching(maxcardinality=True), Python stdlib Fraction where relevant",
+        "null": "No objective and/or trajectory parity or no valid execution; conservative fail-stop"
+      },
+      "C": {
+        "primary": "Fraction cardinality+weight agreement (ties distinguished) and resource-bounded execution",
+        "falsifier": "Any wrong cardinality/weight, first mismatched metric/seed/tick, crash/timeout; not auto-PASS for tie"
+      },
+      "D": {
+        "source_sha256": {
+          "run": "ef3cd1341ea06103187dbeb2bed4bf69a993c16becaa2ddc232c7e3cce963354",
+          "boost": "5a6c410585f1512c36e62cd91ad57f47bda26adc522a1a1cb756b549707bded3",
+          "mjs": "b431e367ca045fd180323f98d5a0735a18d744155c263c8c91bd583126e95949",
+          "ts": "898370b4e31bd8aa71cadc3c572c139d3c404e95bcbede9177d6c5d24e3df98d",
+          "engine": "53ef6511cbb3e267b5f88783a588a9b9a24430a5d8ee632f852fc39711a4e9b9",
+          "types": "ad16c981f5fee9549bca9a7d3621a350d539d593761ddb934071f64fe12ed8cb",
+          "original": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+        },
+        "seed_policy": "fixed random_edges(np_rng(seed)) and named deterministic stress graphs",
+        "pre_outcome": true
+      },
+      "E": "NOT_EXECUTED",
+      "F": {
+        "positive_controls": "NetworkX exact output on same synthetic graph, source file SHA and float64LE roundtrip",
+        "negative_controls": "n144 dense and near ties, bipartite, odd/disconnected",
+        "tracking": "per-case JSON receipts before scorecard"
+      },
+      "G": {
+        "execution_host": "Linux, independent C++ Boost vs Python NetworkX; Windows has only compilation previous, no native C++ engine test",
+        "independence_caveat": "Boost C++ backend is external; not pure TS independent solver"
+      },
+      "H": {
+        "prior": "P-TRAJECTORY-INVARIANCE technical update; no invented Bayesian numbers"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "scientific_grade": "0/3"
+      },
+      "J": {
+        "decision": "Keep negative results and STOP human R5; no unused cycles counted",
+        "remaining_after": 19
+      }
+    },
+    {
+      "cycle": "N238",
+      "A": {
+        "question": "n24 dense graphs 7",
+        "domain": "matching exactness and feasibility",
+        "scope": "synthetic software replication, no human causal inference"
+      },
+      "B": {
+        "rival": "NetworkX max_weight_matching(maxcardinality=True), Python stdlib Fraction where relevant",
+        "null": "No objective and/or trajectory parity or no valid execution; conservative fail-stop"
+      },
+      "C": {
+        "primary": "Fraction cardinality+weight agreement (ties distinguished) and resource-bounded execution",
+        "falsifier": "Any wrong cardinality/weight, first mismatched metric/seed/tick, crash/timeout; not auto-PASS for tie"
+      },
+      "D": {
+        "source_sha256": {
+          "run": "ef3cd1341ea06103187dbeb2bed4bf69a993c16becaa2ddc232c7e3cce963354",
+          "boost": "5a6c410585f1512c36e62cd91ad57f47bda26adc522a1a1cb756b549707bded3",
+          "mjs": "b431e367ca045fd180323f98d5a0735a18d744155c263c8c91bd583126e95949",
+          "ts": "898370b4e31bd8aa71cadc3c572c139d3c404e95bcbede9177d6c5d24e3df98d",
+          "engine": "53ef6511cbb3e267b5f88783a588a9b9a24430a5d8ee632f852fc39711a4e9b9",
+          "types": "ad16c981f5fee9549bca9a7d3621a350d539d593761ddb934071f64fe12ed8cb",
+          "original": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+        },
+        "seed_policy": "fixed random_edges(np_rng(seed)) and named deterministic stress graphs",
+        "pre_outcome": true
+      },
+      "E": "NOT_EXECUTED",
+      "F": {
+        "positive_controls": "NetworkX exact output on same synthetic graph, source file SHA and float64LE roundtrip",
+        "negative_controls": "n144 dense and near ties, bipartite, odd/disconnected",
+        "tracking": "per-case JSON receipts before scorecard"
+      },
+      "G": {
+        "execution_host": "Linux, independent C++ Boost vs Python NetworkX; Windows has only compilation previous, no native C++ engine test",
+        "independence_caveat": "Boost C++ backend is external; not pure TS independent solver"
+      },
+      "H": {
+        "prior": "P-TRAJECTORY-INVARIANCE technical update; no invented Bayesian numbers"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "scientific_grade": "0/3"
+      },
+      "J": {
+        "decision": "Keep negative results and STOP human R5; no unused cycles counted",
+        "remaining_after": 18
+      }
+    },
+    {
+      "cycle": "N239",
+      "A": {
+        "question": "n144 sparse 3",
+        "domain": "matching exactness and feasibility",
+        "scope": "synthetic software replication, no human causal inference"
+      },
+      "B": {
+        "rival": "NetworkX max_weight_matching(maxcardinality=True), Python stdlib Fraction where relevant",
+        "null": "No objective and/or trajectory parity or no valid execution; conservative fail-stop"
+      },
+      "C": {
+        "primary": "Fraction cardinality+weight agreement (ties distinguished) and resource-bounded execution",
+        "falsifier": "Any wrong cardinality/weight, first mismatched metric/seed/tick, crash/timeout; not auto-PASS for tie"
+      },
+      "D": {
+        "source_sha256": {
+          "run": "ef3cd1341ea06103187dbeb2bed4bf69a993c16becaa2ddc232c7e3cce963354",
+          "boost": "5a6c410585f1512c36e62cd91ad57f47bda26adc522a1a1cb756b549707bded3",
+          "mjs": "b431e367ca045fd180323f98d5a0735a18d744155c263c8c91bd583126e95949",
+          "ts": "898370b4e31bd8aa71cadc3c572c139d3c404e95bcbede9177d6c5d24e3df98d",
+          "engine": "53ef6511cbb3e267b5f88783a588a9b9a24430a5d8ee632f852fc39711a4e9b9",
+          "types": "ad16c981f5fee9549bca9a7d3621a350d539d593761ddb934071f64fe12ed8cb",
+          "original": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+        },
+        "seed_policy": "fixed random_edges(np_rng(seed)) and named deterministic stress graphs",
+        "pre_outcome": true
+      },
+      "E": "NOT_EXECUTED",
+      "F": {
+        "positive_controls": "NetworkX exact output on same synthetic graph, source file SHA and float64LE roundtrip",
+        "negative_controls": "n144 dense and near ties, bipartite, odd/disconnected",
+        "tracking": "per-case JSON receipts before scorecard"
+      },
+      "G": {
+        "execution_host": "Linux, independent C++ Boost vs Python NetworkX; Windows has only compilation previous, no native C++ engine test",
+        "independence_caveat": "Boost C++ backend is external; not pure TS independent solver"
+      },
+      "H": {
+        "prior": "P-TRAJECTORY-INVARIANCE technical update; no invented Bayesian numbers"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "scientific_grade": "0/3"
+      },
+      "J": {
+        "decision": "Keep negative results and STOP human R5; no unused cycles counted",
+        "remaining_after": 17
+      }
+    },
+    {
+      "cycle": "N240",
+      "A": {
+        "question": "n144 dense 2",
+        "domain": "matching exactness and feasibility",
+        "scope": "synthetic software replication, no human causal inference"
+      },
+      "B": {
+        "rival": "NetworkX max_weight_matching(maxcardinality=True), Python stdlib Fraction where relevant",
+        "null": "No objective and/or trajectory parity or no valid execution; conservative fail-stop"
+      },
+      "C": {
+        "primary": "Fraction cardinality+weight agreement (ties distinguished) and resource-bounded execution",
+        "falsifier": "Any wrong cardinality/weight, first mismatched metric/seed/tick, crash/timeout; not auto-PASS for tie"
+      },
+      "D": {
+        "source_sha256": {
+          "run": "ef3cd1341ea06103187dbeb2bed4bf69a993c16becaa2ddc232c7e3cce963354",
+          "boost": "5a6c410585f1512c36e62cd91ad57f47bda26adc522a1a1cb756b549707bded3",
+          "mjs": "b431e367ca045fd180323f98d5a0735a18d744155c263c8c91bd583126e95949",
+          "ts": "898370b4e31bd8aa71cadc3c572c139d3c404e95bcbede9177d6c5d24e3df98d",
+          "engine": "53ef6511cbb3e267b5f88783a588a9b9a24430a5d8ee632f852fc39711a4e9b9",
+          "types": "ad16c981f5fee9549bca9a7d3621a350d539d593761ddb934071f64fe12ed8cb",
+          "original": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+        },
+        "seed_policy": "fixed random_edges(np_rng(seed)) and named deterministic stress graphs",
+        "pre_outcome": true
+      },
+      "E": "NOT_EXECUTED",
+      "F": {
+        "positive_controls": "NetworkX exact output on same synthetic graph, source file SHA and float64LE roundtrip",
+        "negative_controls": "n144 dense and near ties, bipartite, odd/disconnected",
+        "tracking": "per-case JSON receipts before scorecard"
+      },
+      "G": {
+        "execution_host": "Linux, independent C++ Boost vs Python NetworkX; Windows has only compilation previous, no native C++ engine test",
+        "independence_caveat": "Boost C++ backend is external; not pure TS independent solver"
+      },
+      "H": {
+        "prior": "P-TRAJECTORY-INVARIANCE technical update; no invented Bayesian numbers"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "scientific_grade": "0/3"
+      },
+      "J": {
+        "decision": "Keep negative results and STOP human R5; no unused cycles counted",
+        "remaining_after": 16
+      }
+    },
+    {
+      "cycle": "N241",
+      "A": {
+        "question": "n144 disconnected 3",
+        "domain": "matching exactness and feasibility",
+        "scope": "synthetic software replication, no human causal inference"
+      },
+      "B": {
+        "rival": "NetworkX max_weight_matching(maxcardinality=True), Python stdlib Fraction where relevant",
+        "null": "No objective and/or trajectory parity or no valid execution; conservative fail-stop"
+      },
+      "C": {
+        "primary": "Fraction cardinality+weight agreement (ties distinguished) and resource-bounded execution",
+        "falsifier": "Any wrong cardinality/weight, first mismatched metric/seed/tick, crash/timeout; not auto-PASS for tie"
+      },
+      "D": {
+        "source_sha256": {
+          "run": "ef3cd1341ea06103187dbeb2bed4bf69a993c16becaa2ddc232c7e3cce963354",
+          "boost": "5a6c410585f1512c36e62cd91ad57f47bda26adc522a1a1cb756b549707bded3",
+          "mjs": "b431e367ca045fd180323f98d5a0735a18d744155c263c8c91bd583126e95949",
+          "ts": "898370b4e31bd8aa71cadc3c572c139d3c404e95bcbede9177d6c5d24e3df98d",
+          "engine": "53ef6511cbb3e267b5f88783a588a9b9a24430a5d8ee632f852fc39711a4e9b9",
+          "types": "ad16c981f5fee9549bca9a7d3621a350d539d593761ddb934071f64fe12ed8cb",
+          "original": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+        },
+        "seed_policy": "fixed random_edges(np_rng(seed)) and named deterministic stress graphs",
+        "pre_outcome": true
+      },
+      "E": "NOT_EXECUTED",
+      "F": {
+        "positive_controls": "NetworkX exact output on same synthetic graph, source file SHA and float64LE roundtrip",
+        "negative_controls": "n144 dense and near ties, bipartite, odd/disconnected",
+        "tracking": "per-case JSON receipts before scorecard"
+      },
+      "G": {
+        "execution_host": "Linux, independent C++ Boost vs Python NetworkX; Windows has only compilation previous, no native C++ engine test",
+        "independence_caveat": "Boost C++ backend is external; not pure TS independent solver"
+      },
+      "H": {
+        "prior": "P-TRAJECTORY-INVARIANCE technical update; no invented Bayesian numbers"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "scientific_grade": "0/3"
+      },
+      "J": {
+        "decision": "Keep negative results and STOP human R5; no unused cycles counted",
+        "remaining_after": 15
+      }
+    },
+    {
+      "cycle": "N242",
+      "A": {
+        "question": "n143 odd 3",
+        "domain": "matching exactness and feasibility",
+        "scope": "synthetic software replication, no human causal inference"
+      },
+      "B": {
+        "rival": "NetworkX max_weight_matching(maxcardinality=True), Python stdlib Fraction where relevant",
+        "null": "No objective and/or trajectory parity or no valid execution; conservative fail-stop"
+      },
+      "C": {
+        "primary": "Fraction cardinality+weight agreement (ties distinguished) and resource-bounded execution",
+        "falsifier": "Any wrong cardinality/weight, first mismatched metric/seed/tick, crash/timeout; not auto-PASS for tie"
+      },
+      "D": {
+        "source_sha256": {
+          "run": "ef3cd1341ea06103187dbeb2bed4bf69a993c16becaa2ddc232c7e3cce963354",
+          "boost": "5a6c410585f1512c36e62cd91ad57f47bda26adc522a1a1cb756b549707bded3",
+          "mjs": "b431e367ca045fd180323f98d5a0735a18d744155c263c8c91bd583126e95949",
+          "ts": "898370b4e31bd8aa71cadc3c572c139d3c404e95bcbede9177d6c5d24e3df98d",
+          "engine": "53ef6511cbb3e267b5f88783a588a9b9a24430a5d8ee632f852fc39711a4e9b9",
+          "types": "ad16c981f5fee9549bca9a7d3621a350d539d593761ddb934071f64fe12ed8cb",
+          "original": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+        },
+        "seed_policy": "fixed random_edges(np_rng(seed)) and named deterministic stress graphs",
+        "pre_outcome": true
+      },
+      "E": "NOT_EXECUTED",
+      "F": {
+        "positive_controls": "NetworkX exact output on same synthetic graph, source file SHA and float64LE roundtrip",
+        "negative_controls": "n144 dense and near ties, bipartite, odd/disconnected",
+        "tracking": "per-case JSON receipts before scorecard"
+      },
+      "G": {
+        "execution_host": "Linux, independent C++ Boost vs Python NetworkX; Windows has only compilation previous, no native C++ engine test",
+        "independence_caveat": "Boost C++ backend is external; not pure TS independent solver"
+      },
+      "H": {
+        "prior": "P-TRAJECTORY-INVARIANCE technical update; no invented Bayesian numbers"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "scientific_grade": "0/3"
+      },
+      "J": {
+        "decision": "Keep negative results and STOP human R5; no unused cycles counted",
+        "remaining_after": 14
+      }
+    },
+    {
+      "cycle": "N243",
+      "A": {
+        "question": "cardinality adversarial 9",
+        "domain": "matching exactness and feasibility",
+        "scope": "synthetic software replication, no human causal inference"
+      },
+      "B": {
+        "rival": "NetworkX max_weight_matching(maxcardinality=True), Python stdlib Fraction where relevant",
+        "null": "No objective and/or trajectory parity or no valid execution; conservative fail-stop"
+      },
+      "C": {
+        "primary": "Fraction cardinality+weight agreement (ties distinguished) and resource-bounded execution",
+        "falsifier": "Any wrong cardinality/weight, first mismatched metric/seed/tick, crash/timeout; not auto-PASS for tie"
+      },
+      "D": {
+        "source_sha256": {
+          "run": "ef3cd1341ea06103187dbeb2bed4bf69a993c16becaa2ddc232c7e3cce963354",
+          "boost": "5a6c410585f1512c36e62cd91ad57f47bda26adc522a1a1cb756b549707bded3",
+          "mjs": "b431e367ca045fd180323f98d5a0735a18d744155c263c8c91bd583126e95949",
+          "ts": "898370b4e31bd8aa71cadc3c572c139d3c404e95bcbede9177d6c5d24e3df98d",
+          "engine": "53ef6511cbb3e267b5f88783a588a9b9a24430a5d8ee632f852fc39711a4e9b9",
+          "types": "ad16c981f5fee9549bca9a7d3621a350d539d593761ddb934071f64fe12ed8cb",
+          "original": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+        },
+        "seed_policy": "fixed random_edges(np_rng(seed)) and named deterministic stress graphs",
+        "pre_outcome": true
+      },
+      "E": "NOT_EXECUTED",
+      "F": {
+        "positive_controls": "NetworkX exact output on same synthetic graph, source file SHA and float64LE roundtrip",
+        "negative_controls": "n144 dense and near ties, bipartite, odd/disconnected",
+        "tracking": "per-case JSON receipts before scorecard"
+      },
+      "G": {
+        "execution_host": "Linux, independent C++ Boost vs Python NetworkX; Windows has only compilation previous, no native C++ engine test",
+        "independence_caveat": "Boost C++ backend is external; not pure TS independent solver"
+      },
+      "H": {
+        "prior": "P-TRAJECTORY-INVARIANCE technical update; no invented Bayesian numbers"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "scientific_grade": "0/3"
+      },
+      "J": {
+        "decision": "Keep negative results and STOP human R5; no unused cycles counted",
+        "remaining_after": 13
+      }
+    },
+    {
+      "cycle": "N244",
+      "A": {
+        "question": "binary64 near ties 5",
+        "domain": "matching exactness and feasibility",
+        "scope": "synthetic software replication, no human causal inference"
+      },
+      "B": {
+        "rival": "NetworkX max_weight_matching(maxcardinality=True), Python stdlib Fraction where relevant",
+        "null": "No objective and/or trajectory parity or no valid execution; conservative fail-stop"
+      },
+      "C": {
+        "primary": "Fraction cardinality+weight agreement (ties distinguished) and resource-bounded execution",
+        "falsifier": "Any wrong cardinality/weight, first mismatched metric/seed/tick, crash/timeout; not auto-PASS for tie"
+      },
+      "D": {
+        "source_sha256": {
+          "run": "ef3cd1341ea06103187dbeb2bed4bf69a993c16becaa2ddc232c7e3cce963354",
+          "boost": "5a6c410585f1512c36e62cd91ad57f47bda26adc522a1a1cb756b549707bded3",
+          "mjs": "b431e367ca045fd180323f98d5a0735a18d744155c263c8c91bd583126e95949",
+          "ts": "898370b4e31bd8aa71cadc3c572c139d3c404e95bcbede9177d6c5d24e3df98d",
+          "engine": "53ef6511cbb3e267b5f88783a588a9b9a24430a5d8ee632f852fc39711a4e9b9",
+          "types": "ad16c981f5fee9549bca9a7d3621a350d539d593761ddb934071f64fe12ed8cb",
+          "original": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+        },
+        "seed_policy": "fixed random_edges(np_rng(seed)) and named deterministic stress graphs",
+        "pre_outcome": true
+      },
+      "E": "NOT_EXECUTED",
+      "F": {
+        "positive_controls": "NetworkX exact output on same synthetic graph, source file SHA and float64LE roundtrip",
+        "negative_controls": "n144 dense and near ties, bipartite, odd/disconnected",
+        "tracking": "per-case JSON receipts before scorecard"
+      },
+      "G": {
+        "execution_host": "Linux, independent C++ Boost vs Python NetworkX; Windows has only compilation previous, no native C++ engine test",
+        "independence_caveat": "Boost C++ backend is external; not pure TS independent solver"
+      },
+      "H": {
+        "prior": "P-TRAJECTORY-INVARIANCE technical update; no invented Bayesian numbers"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "scientific_grade": "0/3"
+      },
+      "J": {
+        "decision": "Keep negative results and STOP human R5; no unused cycles counted",
+        "remaining_after": 12
+      }
+    },
+    {
+      "cycle": "N245",
+      "A": {
+        "question": "six historic seed five tensor hashes round-trip",
+        "domain": "matching exactness and feasibility",
+        "scope": "synthetic software replication, no human causal inference"
+      },
+      "B": {
+        "rival": "NetworkX max_weight_matching(maxcardinality=True), Python stdlib Fraction where relevant",
+        "null": "No objective and/or trajectory parity or no valid execution; conservative fail-stop"
+      },
+      "C": {
+        "primary": "Fraction cardinality+weight agreement (ties distinguished) and resource-bounded execution",
+        "falsifier": "Any wrong cardinality/weight, first mismatched metric/seed/tick, crash/timeout; not auto-PASS for tie"
+      },
+      "D": {
+        "source_sha256": {
+          "run": "ef3cd1341ea06103187dbeb2bed4bf69a993c16becaa2ddc232c7e3cce963354",
+          "boost": "5a6c410585f1512c36e62cd91ad57f47bda26adc522a1a1cb756b549707bded3",
+          "mjs": "b431e367ca045fd180323f98d5a0735a18d744155c263c8c91bd583126e95949",
+          "ts": "898370b4e31bd8aa71cadc3c572c139d3c404e95bcbede9177d6c5d24e3df98d",
+          "engine": "53ef6511cbb3e267b5f88783a588a9b9a24430a5d8ee632f852fc39711a4e9b9",
+          "types": "ad16c981f5fee9549bca9a7d3621a350d539d593761ddb934071f64fe12ed8cb",
+          "original": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+        },
+        "seed_policy": "fixed random_edges(np_rng(seed)) and named deterministic stress graphs",
+        "pre_outcome": true
+      },
+      "E": "NOT_EXECUTED",
+      "F": {
+        "positive_controls": "NetworkX exact output on same synthetic graph, source file SHA and float64LE roundtrip",
+        "negative_controls": "n144 dense and near ties, bipartite, odd/disconnected",
+        "tracking": "per-case JSON receipts before scorecard"
+      },
+      "G": {
+        "execution_host": "Linux, independent C++ Boost vs Python NetworkX; Windows has only compilation previous, no native C++ engine test",
+        "independence_caveat": "Boost C++ backend is external; not pure TS independent solver"
+      },
+      "H": {
+        "prior": "P-TRAJECTORY-INVARIANCE technical update; no invented Bayesian numbers"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "scientific_grade": "0/3"
+      },
+      "J": {
+        "decision": "Keep negative results and STOP human R5; no unused cycles counted",
+        "remaining_after": 11
+      }
+    },
+    {
+      "cycle": "N246",
+      "A": {
+        "question": "n144 near-complete and very sparse 2",
+        "domain": "matching exactness and feasibility",
+        "scope": "synthetic software replication, no human causal inference"
+      },
+      "B": {
+        "rival": "NetworkX max_weight_matching(maxcardinality=True), Python stdlib Fraction where relevant",
+        "null": "No objective and/or trajectory parity or no valid execution; conservative fail-stop"
+      },
+      "C": {
+        "primary": "Fraction cardinality+weight agreement (ties distinguished) and resource-bounded execution",
+        "falsifier": "Any wrong cardinality/weight, first mismatched metric/seed/tick, crash/timeout; not auto-PASS for tie"
+      },
+      "D": {
+        "source_sha256": {
+          "run": "ef3cd1341ea06103187dbeb2bed4bf69a993c16becaa2ddc232c7e3cce963354",
+          "boost": "5a6c410585f1512c36e62cd91ad57f47bda26adc522a1a1cb756b549707bded3",
+          "mjs": "b431e367ca045fd180323f98d5a0735a18d744155c263c8c91bd583126e95949",
+          "ts": "898370b4e31bd8aa71cadc3c572c139d3c404e95bcbede9177d6c5d24e3df98d",
+          "engine": "53ef6511cbb3e267b5f88783a588a9b9a24430a5d8ee632f852fc39711a4e9b9",
+          "types": "ad16c981f5fee9549bca9a7d3621a350d539d593761ddb934071f64fe12ed8cb",
+          "original": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+        },
+        "seed_policy": "fixed random_edges(np_rng(seed)) and named deterministic stress graphs",
+        "pre_outcome": true
+      },
+      "E": "NOT_EXECUTED",
+      "F": {
+        "positive_controls": "NetworkX exact output on same synthetic graph, source file SHA and float64LE roundtrip",
+        "negative_controls": "n144 dense and near ties, bipartite, odd/disconnected",
+        "tracking": "per-case JSON receipts before scorecard"
+      },
+      "G": {
+        "execution_host": "Linux, independent C++ Boost vs Python NetworkX; Windows has only compilation previous, no native C++ engine test",
+        "independence_caveat": "Boost C++ backend is external; not pure TS independent solver"
+      },
+      "H": {
+        "prior": "P-TRAJECTORY-INVARIANCE technical update; no invented Bayesian numbers"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "scientific_grade": "0/3"
+      },
+      "J": {
+        "decision": "Keep negative results and STOP human R5; no unused cycles counted",
+        "remaining_after": 10
+      }
+    },
+    {
+      "cycle": "N247",
+      "A": {
+        "question": "mixed_random",
+        "domain": "full 144x16 genuine original Python ESBM vs derived TS+independent Boost solver",
+        "scope": "synthetic software replication, no human causal inference"
+      },
+      "B": {
+        "rival": "Original untouched ESBM Python 144 agents, 16 ticks, K7, six original seeds with exact same source-generated people and shocks",
+        "null": "No objective and/or trajectory parity or no valid execution; conservative fail-stop"
+      },
+      "C": {
+        "primary": "6 of 6 original seed runs identical aggregate result metrics and 16 tick rows; strict no sampling, 1e-9 numerical tolerance, exact ints; runtime cap 150s per TS seed",
+        "falsifier": "Any wrong cardinality/weight, first mismatched metric/seed/tick, crash/timeout; not auto-PASS for tie"
+      },
+      "D": {
+        "source_sha256": {
+          "run": "ef3cd1341ea06103187dbeb2bed4bf69a993c16becaa2ddc232c7e3cce963354",
+          "boost": "5a6c410585f1512c36e62cd91ad57f47bda26adc522a1a1cb756b549707bded3",
+          "mjs": "b431e367ca045fd180323f98d5a0735a18d744155c263c8c91bd583126e95949",
+          "ts": "898370b4e31bd8aa71cadc3c572c139d3c404e95bcbede9177d6c5d24e3df98d",
+          "engine": "53ef6511cbb3e267b5f88783a588a9b9a24430a5d8ee632f852fc39711a4e9b9",
+          "types": "ad16c981f5fee9549bca9a7d3621a350d539d593761ddb934071f64fe12ed8cb",
+          "original": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+        },
+        "seed_policy": "official seeds 101,211,307,401,503,601, fixed scenario mixed_random",
+        "pre_outcome": true
+      },
+      "E": "NOT_EXECUTED",
+      "F": {
+        "positive_controls": "NetworkX exact output on same synthetic graph, source file SHA and float64LE roundtrip",
+        "negative_controls": "n144 dense and near ties, bipartite, odd/disconnected",
+        "tracking": "per-case JSON receipts before scorecard"
+      },
+      "G": {
+        "execution_host": "Linux, independent C++ Boost vs Python NetworkX; Windows has only compilation previous, no native C++ engine test",
+        "independence_caveat": "Boost C++ backend is external; not pure TS independent solver"
+      },
+      "H": {
+        "prior": "P-TRAJECTORY-INVARIANCE technical update; no invented Bayesian numbers"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "scientific_grade": "0/3"
+      },
+      "J": {
+        "decision": "Keep negative results and STOP human R5; no unused cycles counted",
+        "remaining_after": 9
+      }
+    },
+    {
+      "cycle": "N248",
+      "A": {
+        "question": "heterosexual_restricted",
+        "domain": "full 144x16 genuine original Python ESBM vs derived TS+independent Boost solver",
+        "scope": "synthetic software replication, no human causal inference"
+      },
+      "B": {
+        "rival": "Original untouched ESBM Python 144 agents, 16 ticks, K7, six original seeds with exact same source-generated people and shocks",
+        "null": "No objective and/or trajectory parity or no valid execution; conservative fail-stop"
+      },
+      "C": {
+        "primary": "6 of 6 original seed runs identical aggregate result metrics and 16 tick rows; strict no sampling, 1e-9 numerical tolerance, exact ints; runtime cap 150s per TS seed",
+        "falsifier": "Any wrong cardinality/weight, first mismatched metric/seed/tick, crash/timeout; not auto-PASS for tie"
+      },
+      "D": {
+        "source_sha256": {
+          "run": "ef3cd1341ea06103187dbeb2bed4bf69a993c16becaa2ddc232c7e3cce963354",
+          "boost": "5a6c410585f1512c36e62cd91ad57f47bda26adc522a1a1cb756b549707bded3",
+          "mjs": "b431e367ca045fd180323f98d5a0735a18d744155c263c8c91bd583126e95949",
+          "ts": "898370b4e31bd8aa71cadc3c572c139d3c404e95bcbede9177d6c5d24e3df98d",
+          "engine": "53ef6511cbb3e267b5f88783a588a9b9a24430a5d8ee632f852fc39711a4e9b9",
+          "types": "ad16c981f5fee9549bca9a7d3621a350d539d593761ddb934071f64fe12ed8cb",
+          "original": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+        },
+        "seed_policy": "official seeds 101,211,307,401,503,601, fixed scenario heterosexual_restricted",
+        "pre_outcome": true
+      },
+      "E": "NOT_EXECUTED",
+      "F": {
+        "positive_controls": "NetworkX exact output on same synthetic graph, source file SHA and float64LE roundtrip",
+        "negative_controls": "n144 dense and near ties, bipartite, odd/disconnected",
+        "tracking": "per-case JSON receipts before scorecard"
+      },
+      "G": {
+        "execution_host": "Linux, independent C++ Boost vs Python NetworkX; Windows has only compilation previous, no native C++ engine test",
+        "independence_caveat": "Boost C++ backend is external; not pure TS independent solver"
+      },
+      "H": {
+        "prior": "P-TRAJECTORY-INVARIANCE technical update; no invented Bayesian numbers"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "scientific_grade": "0/3"
+      },
+      "J": {
+        "decision": "Keep negative results and STOP human R5; no unused cycles counted",
+        "remaining_after": 8
+      }
+    },
+    {
+      "cycle": "N249",
+      "A": {
+        "question": "institutional_segregation",
+        "domain": "full 144x16 genuine original Python ESBM vs derived TS+independent Boost solver",
+        "scope": "synthetic software replication, no human causal inference"
+      },
+      "B": {
+        "rival": "Original untouched ESBM Python 144 agents, 16 ticks, K7, six original seeds with exact same source-generated people and shocks",
+        "null": "No objective and/or trajectory parity or no valid execution; conservative fail-stop"
+      },
+      "C": {
+        "primary": "6 of 6 original seed runs identical aggregate result metrics and 16 tick rows; strict no sampling, 1e-9 numerical tolerance, exact ints; runtime cap 150s per TS seed",
+        "falsifier": "Any wrong cardinality/weight, first mismatched metric/seed/tick, crash/timeout; not auto-PASS for tie"
+      },
+      "D": {
+        "source_sha256": {
+          "run": "ef3cd1341ea06103187dbeb2bed4bf69a993c16becaa2ddc232c7e3cce963354",
+          "boost": "5a6c410585f1512c36e62cd91ad57f47bda26adc522a1a1cb756b549707bded3",
+          "mjs": "b431e367ca045fd180323f98d5a0735a18d744155c263c8c91bd583126e95949",
+          "ts": "898370b4e31bd8aa71cadc3c572c139d3c404e95bcbede9177d6c5d24e3df98d",
+          "engine": "53ef6511cbb3e267b5f88783a588a9b9a24430a5d8ee632f852fc39711a4e9b9",
+          "types": "ad16c981f5fee9549bca9a7d3621a350d539d593761ddb934071f64fe12ed8cb",
+          "original": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+        },
+        "seed_policy": "official seeds 101,211,307,401,503,601, fixed scenario institutional_segregation",
+        "pre_outcome": true
+      },
+      "E": "NOT_EXECUTED",
+      "F": {
+        "positive_controls": "NetworkX exact output on same synthetic graph, source file SHA and float64LE roundtrip",
+        "negative_controls": "n144 dense and near ties, bipartite, odd/disconnected",
+        "tracking": "per-case JSON receipts before scorecard"
+      },
+      "G": {
+        "execution_host": "Linux, independent C++ Boost vs Python NetworkX; Windows has only compilation previous, no native C++ engine test",
+        "independence_caveat": "Boost C++ backend is external; not pure TS independent solver"
+      },
+      "H": {
+        "prior": "P-TRAJECTORY-INVARIANCE technical update; no invented Bayesian numbers"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "scientific_grade": "0/3"
+      },
+      "J": {
+        "decision": "Keep negative results and STOP human R5; no unused cycles counted",
+        "remaining_after": 7
+      }
+    },
+    {
+      "cycle": "N250",
+      "A": {
+        "question": "explicit_norm_preference",
+        "domain": "full 144x16 genuine original Python ESBM vs derived TS+independent Boost solver",
+        "scope": "synthetic software replication, no human causal inference"
+      },
+      "B": {
+        "rival": "Original untouched ESBM Python 144 agents, 16 ticks, K7, six original seeds with exact same source-generated people and shocks",
+        "null": "No objective and/or trajectory parity or no valid execution; conservative fail-stop"
+      },
+      "C": {
+        "primary": "6 of 6 original seed runs identical aggregate result metrics and 16 tick rows; strict no sampling, 1e-9 numerical tolerance, exact ints; runtime cap 150s per TS seed",
+        "falsifier": "Any wrong cardinality/weight, first mismatched metric/seed/tick, crash/timeout; not auto-PASS for tie"
+      },
+      "D": {
+        "source_sha256": {
+          "run": "ef3cd1341ea06103187dbeb2bed4bf69a993c16becaa2ddc232c7e3cce963354",
+          "boost": "5a6c410585f1512c36e62cd91ad57f47bda26adc522a1a1cb756b549707bded3",
+          "mjs": "b431e367ca045fd180323f98d5a0735a18d744155c263c8c91bd583126e95949",
+          "ts": "898370b4e31bd8aa71cadc3c572c139d3c404e95bcbede9177d6c5d24e3df98d",
+          "engine": "53ef6511cbb3e267b5f88783a588a9b9a24430a5d8ee632f852fc39711a4e9b9",
+          "types": "ad16c981f5fee9549bca9a7d3621a350d539d593761ddb934071f64fe12ed8cb",
+          "original": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+        },
+        "seed_policy": "official seeds 101,211,307,401,503,601, fixed scenario explicit_norm_preference",
+        "pre_outcome": true
+      },
+      "E": "NOT_EXECUTED",
+      "F": {
+        "positive_controls": "NetworkX exact output on same synthetic graph, source file SHA and float64LE roundtrip",
+        "negative_controls": "n144 dense and near ties, bipartite, odd/disconnected",
+        "tracking": "per-case JSON receipts before scorecard"
+      },
+      "G": {
+        "execution_host": "Linux, independent C++ Boost vs Python NetworkX; Windows has only compilation previous, no native C++ engine test",
+        "independence_caveat": "Boost C++ backend is external; not pure TS independent solver"
+      },
+      "H": {
+        "prior": "P-TRAJECTORY-INVARIANCE technical update; no invented Bayesian numbers"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "scientific_grade": "0/3"
+      },
+      "J": {
+        "decision": "Keep negative results and STOP human R5; no unused cycles counted",
+        "remaining_after": 6
+      }
+    },
+    {
+      "cycle": "N251",
+      "A": {
+        "question": "popularity_ranking",
+        "domain": "full 144x16 genuine original Python ESBM vs derived TS+independent Boost solver",
+        "scope": "synthetic software replication, no human causal inference"
+      },
+      "B": {
+        "rival": "Original untouched ESBM Python 144 agents, 16 ticks, K7, six original seeds with exact same source-generated people and shocks",
+        "null": "No objective and/or trajectory parity or no valid execution; conservative fail-stop"
+      },
+      "C": {
+        "primary": "6 of 6 original seed runs identical aggregate result metrics and 16 tick rows; strict no sampling, 1e-9 numerical tolerance, exact ints; runtime cap 150s per TS seed",
+        "falsifier": "Any wrong cardinality/weight, first mismatched metric/seed/tick, crash/timeout; not auto-PASS for tie"
+      },
+      "D": {
+        "source_sha256": {
+          "run": "ef3cd1341ea06103187dbeb2bed4bf69a993c16becaa2ddc232c7e3cce963354",
+          "boost": "5a6c410585f1512c36e62cd91ad57f47bda26adc522a1a1cb756b549707bded3",
+          "mjs": "b431e367ca045fd180323f98d5a0735a18d744155c263c8c91bd583126e95949",
+          "ts": "898370b4e31bd8aa71cadc3c572c139d3c404e95bcbede9177d6c5d24e3df98d",
+          "engine": "53ef6511cbb3e267b5f88783a588a9b9a24430a5d8ee632f852fc39711a4e9b9",
+          "types": "ad16c981f5fee9549bca9a7d3621a350d539d593761ddb934071f64fe12ed8cb",
+          "original": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+        },
+        "seed_policy": "official seeds 101,211,307,401,503,601, fixed scenario popularity_ranking",
+        "pre_outcome": true
+      },
+      "E": "NOT_EXECUTED",
+      "F": {
+        "positive_controls": "NetworkX exact output on same synthetic graph, source file SHA and float64LE roundtrip",
+        "negative_controls": "n144 dense and near ties, bipartite, odd/disconnected",
+        "tracking": "per-case JSON receipts before scorecard"
+      },
+      "G": {
+        "execution_host": "Linux, independent C++ Boost vs Python NetworkX; Windows has only compilation previous, no native C++ engine test",
+        "independence_caveat": "Boost C++ backend is external; not pure TS independent solver"
+      },
+      "H": {
+        "prior": "P-TRAJECTORY-INVARIANCE technical update; no invented Bayesian numbers"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "scientific_grade": "0/3"
+      },
+      "J": {
+        "decision": "Keep negative results and STOP human R5; no unused cycles counted",
+        "remaining_after": 5
+      }
+    },
+    {
+      "cycle": "N252",
+      "A": {
+        "question": "visibility_balancing",
+        "domain": "full 144x16 genuine original Python ESBM vs derived TS+independent Boost solver",
+        "scope": "synthetic software replication, no human causal inference"
+      },
+      "B": {
+        "rival": "Original untouched ESBM Python 144 agents, 16 ticks, K7, six original seeds with exact same source-generated people and shocks",
+        "null": "No objective and/or trajectory parity or no valid execution; conservative fail-stop"
+      },
+      "C": {
+        "primary": "6 of 6 original seed runs identical aggregate result metrics and 16 tick rows; strict no sampling, 1e-9 numerical tolerance, exact ints; runtime cap 150s per TS seed",
+        "falsifier": "Any wrong cardinality/weight, first mismatched metric/seed/tick, crash/timeout; not auto-PASS for tie"
+      },
+      "D": {
+        "source_sha256": {
+          "run": "ef3cd1341ea06103187dbeb2bed4bf69a993c16becaa2ddc232c7e3cce963354",
+          "boost": "5a6c410585f1512c36e62cd91ad57f47bda26adc522a1a1cb756b549707bded3",
+          "mjs": "b431e367ca045fd180323f98d5a0735a18d744155c263c8c91bd583126e95949",
+          "ts": "898370b4e31bd8aa71cadc3c572c139d3c404e95bcbede9177d6c5d24e3df98d",
+          "engine": "53ef6511cbb3e267b5f88783a588a9b9a24430a5d8ee632f852fc39711a4e9b9",
+          "types": "ad16c981f5fee9549bca9a7d3621a350d539d593761ddb934071f64fe12ed8cb",
+          "original": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+        },
+        "seed_policy": "official seeds 101,211,307,401,503,601, fixed scenario visibility_balancing",
+        "pre_outcome": true
+      },
+      "E": "NOT_EXECUTED",
+      "F": {
+        "positive_controls": "NetworkX exact output on same synthetic graph, source file SHA and float64LE roundtrip",
+        "negative_controls": "n144 dense and near ties, bipartite, odd/disconnected",
+        "tracking": "per-case JSON receipts before scorecard"
+      },
+      "G": {
+        "execution_host": "Linux, independent C++ Boost vs Python NetworkX; Windows has only compilation previous, no native C++ engine test",
+        "independence_caveat": "Boost C++ backend is external; not pure TS independent solver"
+      },
+      "H": {
+        "prior": "P-TRAJECTORY-INVARIANCE technical update; no invented Bayesian numbers"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "scientific_grade": "0/3"
+      },
+      "J": {
+        "decision": "Keep negative results and STOP human R5; no unused cycles counted",
+        "remaining_after": 4
+      }
+    },
+    {
+      "cycle": "N253",
+      "A": {
+        "question": "private_rejection_learning",
+        "domain": "full 144x16 genuine original Python ESBM vs derived TS+independent Boost solver",
+        "scope": "synthetic software replication, no human causal inference"
+      },
+      "B": {
+        "rival": "Original untouched ESBM Python 144 agents, 16 ticks, K7, six original seeds with exact same source-generated people and shocks",
+        "null": "No objective and/or trajectory parity or no valid execution; conservative fail-stop"
+      },
+      "C": {
+        "primary": "6 of 6 original seed runs identical aggregate result metrics and 16 tick rows; strict no sampling, 1e-9 numerical tolerance, exact ints; runtime cap 150s per TS seed",
+        "falsifier": "Any wrong cardinality/weight, first mismatched metric/seed/tick, crash/timeout; not auto-PASS for tie"
+      },
+      "D": {
+        "source_sha256": {
+          "run": "ef3cd1341ea06103187dbeb2bed4bf69a993c16becaa2ddc232c7e3cce963354",
+          "boost": "5a6c410585f1512c36e62cd91ad57f47bda26adc522a1a1cb756b549707bded3",
+          "mjs": "b431e367ca045fd180323f98d5a0735a18d744155c263c8c91bd583126e95949",
+          "ts": "898370b4e31bd8aa71cadc3c572c139d3c404e95bcbede9177d6c5d24e3df98d",
+          "engine": "53ef6511cbb3e267b5f88783a588a9b9a24430a5d8ee632f852fc39711a4e9b9",
+          "types": "ad16c981f5fee9549bca9a7d3621a350d539d593761ddb934071f64fe12ed8cb",
+          "original": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+        },
+        "seed_policy": "official seeds 101,211,307,401,503,601, fixed scenario private_rejection_learning",
+        "pre_outcome": true
+      },
+      "E": "NOT_EXECUTED",
+      "F": {
+        "positive_controls": "NetworkX exact output on same synthetic graph, source file SHA and float64LE roundtrip",
+        "negative_controls": "n144 dense and near ties, bipartite, odd/disconnected",
+        "tracking": "per-case JSON receipts before scorecard"
+      },
+      "G": {
+        "execution_host": "Linux, independent C++ Boost vs Python NetworkX; Windows has only compilation previous, no native C++ engine test",
+        "independence_caveat": "Boost C++ backend is external; not pure TS independent solver"
+      },
+      "H": {
+        "prior": "P-TRAJECTORY-INVARIANCE technical update; no invented Bayesian numbers"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "scientific_grade": "0/3"
+      },
+      "J": {
+        "decision": "Keep negative results and STOP human R5; no unused cycles counted",
+        "remaining_after": 3
+      }
+    },
+    {
+      "cycle": "N254",
+      "A": {
+        "question": "public_rejection_signal",
+        "domain": "full 144x16 genuine original Python ESBM vs derived TS+independent Boost solver",
+        "scope": "synthetic software replication, no human causal inference"
+      },
+      "B": {
+        "rival": "Original untouched ESBM Python 144 agents, 16 ticks, K7, six original seeds with exact same source-generated people and shocks",
+        "null": "No objective and/or trajectory parity or no valid execution; conservative fail-stop"
+      },
+      "C": {
+        "primary": "6 of 6 original seed runs identical aggregate result metrics and 16 tick rows; strict no sampling, 1e-9 numerical tolerance, exact ints; runtime cap 150s per TS seed",
+        "falsifier": "Any wrong cardinality/weight, first mismatched metric/seed/tick, crash/timeout; not auto-PASS for tie"
+      },
+      "D": {
+        "source_sha256": {
+          "run": "ef3cd1341ea06103187dbeb2bed4bf69a993c16becaa2ddc232c7e3cce963354",
+          "boost": "5a6c410585f1512c36e62cd91ad57f47bda26adc522a1a1cb756b549707bded3",
+          "mjs": "b431e367ca045fd180323f98d5a0735a18d744155c263c8c91bd583126e95949",
+          "ts": "898370b4e31bd8aa71cadc3c572c139d3c404e95bcbede9177d6c5d24e3df98d",
+          "engine": "53ef6511cbb3e267b5f88783a588a9b9a24430a5d8ee632f852fc39711a4e9b9",
+          "types": "ad16c981f5fee9549bca9a7d3621a350d539d593761ddb934071f64fe12ed8cb",
+          "original": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+        },
+        "seed_policy": "official seeds 101,211,307,401,503,601, fixed scenario public_rejection_signal",
+        "pre_outcome": true
+      },
+      "E": "NOT_EXECUTED",
+      "F": {
+        "positive_controls": "NetworkX exact output on same synthetic graph, source file SHA and float64LE roundtrip",
+        "negative_controls": "n144 dense and near ties, bipartite, odd/disconnected",
+        "tracking": "per-case JSON receipts before scorecard"
+      },
+      "G": {
+        "execution_host": "Linux, independent C++ Boost vs Python NetworkX; Windows has only compilation previous, no native C++ engine test",
+        "independence_caveat": "Boost C++ backend is external; not pure TS independent solver"
+      },
+      "H": {
+        "prior": "P-TRAJECTORY-INVARIANCE technical update; no invented Bayesian numbers"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "scientific_grade": "0/3"
+      },
+      "J": {
+        "decision": "Keep negative results and STOP human R5; no unused cycles counted",
+        "remaining_after": 2
+      }
+    },
+    {
+      "cycle": "N255",
+      "A": {
+        "question": "longer_partnerships",
+        "domain": "full 144x16 genuine original Python ESBM vs derived TS+independent Boost solver",
+        "scope": "synthetic software replication, no human causal inference"
+      },
+      "B": {
+        "rival": "Original untouched ESBM Python 144 agents, 16 ticks, K7, six original seeds with exact same source-generated people and shocks",
+        "null": "No objective and/or trajectory parity or no valid execution; conservative fail-stop"
+      },
+      "C": {
+        "primary": "6 of 6 original seed runs identical aggregate result metrics and 16 tick rows; strict no sampling, 1e-9 numerical tolerance, exact ints; runtime cap 150s per TS seed",
+        "falsifier": "Any wrong cardinality/weight, first mismatched metric/seed/tick, crash/timeout; not auto-PASS for tie"
+      },
+      "D": {
+        "source_sha256": {
+          "run": "ef3cd1341ea06103187dbeb2bed4bf69a993c16becaa2ddc232c7e3cce963354",
+          "boost": "5a6c410585f1512c36e62cd91ad57f47bda26adc522a1a1cb756b549707bded3",
+          "mjs": "b431e367ca045fd180323f98d5a0735a18d744155c263c8c91bd583126e95949",
+          "ts": "898370b4e31bd8aa71cadc3c572c139d3c404e95bcbede9177d6c5d24e3df98d",
+          "engine": "53ef6511cbb3e267b5f88783a588a9b9a24430a5d8ee632f852fc39711a4e9b9",
+          "types": "ad16c981f5fee9549bca9a7d3621a350d539d593761ddb934071f64fe12ed8cb",
+          "original": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+        },
+        "seed_policy": "official seeds 101,211,307,401,503,601, fixed scenario longer_partnerships",
+        "pre_outcome": true
+      },
+      "E": "NOT_EXECUTED",
+      "F": {
+        "positive_controls": "NetworkX exact output on same synthetic graph, source file SHA and float64LE roundtrip",
+        "negative_controls": "n144 dense and near ties, bipartite, odd/disconnected",
+        "tracking": "per-case JSON receipts before scorecard"
+      },
+      "G": {
+        "execution_host": "Linux, independent C++ Boost vs Python NetworkX; Windows has only compilation previous, no native C++ engine test",
+        "independence_caveat": "Boost C++ backend is external; not pure TS independent solver"
+      },
+      "H": {
+        "prior": "P-TRAJECTORY-INVARIANCE technical update; no invented Bayesian numbers"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "scientific_grade": "0/3"
+      },
+      "J": {
+        "decision": "Keep negative results and STOP human R5; no unused cycles counted",
+        "remaining_after": 1
+      }
+    },
+    {
+      "cycle": "N256",
+      "A": {
+        "question": "shorter_partnerships",
+        "domain": "full 144x16 genuine original Python ESBM vs derived TS+independent Boost solver",
+        "scope": "synthetic software replication, no human causal inference"
+      },
+      "B": {
+        "rival": "Original untouched ESBM Python 144 agents, 16 ticks, K7, six original seeds with exact same source-generated people and shocks",
+        "null": "No objective and/or trajectory parity or no valid execution; conservative fail-stop"
+      },
+      "C": {
+        "primary": "6 of 6 original seed runs identical aggregate result metrics and 16 tick rows; strict no sampling, 1e-9 numerical tolerance, exact ints; runtime cap 150s per TS seed",
+        "falsifier": "Any wrong cardinality/weight, first mismatched metric/seed/tick, crash/timeout; not auto-PASS for tie"
+      },
+      "D": {
+        "source_sha256": {
+          "run": "ef3cd1341ea06103187dbeb2bed4bf69a993c16becaa2ddc232c7e3cce963354",
+          "boost": "5a6c410585f1512c36e62cd91ad57f47bda26adc522a1a1cb756b549707bded3",
+          "mjs": "b431e367ca045fd180323f98d5a0735a18d744155c263c8c91bd583126e95949",
+          "ts": "898370b4e31bd8aa71cadc3c572c139d3c404e95bcbede9177d6c5d24e3df98d",
+          "engine": "53ef6511cbb3e267b5f88783a588a9b9a24430a5d8ee632f852fc39711a4e9b9",
+          "types": "ad16c981f5fee9549bca9a7d3621a350d539d593761ddb934071f64fe12ed8cb",
+          "original": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+        },
+        "seed_policy": "official seeds 101,211,307,401,503,601, fixed scenario shorter_partnerships",
+        "pre_outcome": true
+      },
+      "E": "NOT_EXECUTED",
+      "F": {
+        "positive_controls": "NetworkX exact output on same synthetic graph, source file SHA and float64LE roundtrip",
+        "negative_controls": "n144 dense and near ties, bipartite, odd/disconnected",
+        "tracking": "per-case JSON receipts before scorecard"
+      },
+      "G": {
+        "execution_host": "Linux, independent C++ Boost vs Python NetworkX; Windows has only compilation previous, no native C++ engine test",
+        "independence_caveat": "Boost C++ backend is external; not pure TS independent solver"
+      },
+      "H": {
+        "prior": "P-TRAJECTORY-INVARIANCE technical update; no invented Bayesian numbers"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "scientific_grade": "0/3"
+      },
+      "J": {
+        "decision": "Keep negative results and STOP human R5; no unused cycles counted",
+        "remaining_after": 0
+      }
+    }
+  ]
+}
