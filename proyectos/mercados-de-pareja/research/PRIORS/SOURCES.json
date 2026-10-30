@@ -3,7 +3,7 @@
   "project": "mercados-de-pareja",
   "date": "2026-10-30",
   "scope": "Retrospective provenance backfill from repository reports plus N56/N57 publisher audit. Original data never copied; not systematic or claim of accessing raw data for bibliography.",
-  "source_count": 109,
+  "source_count": 110,
   "sources": [
     {
       "id": "SRC001",
@@ -2402,9 +2402,33 @@
       "STOP_R5": "ACTIVE",
       "campaign_cycle": "N202",
       "last_verified_at": "2026-10-30"
+    },
+    {
+      "id": "SRC110",
+      "title": "O'Nell, Sanchez & Finn (2025/2026), Pink noise in dyads' semantic similarity trajectories predicts conversation enjoyment — Blink Date podcast transcript/second-date matching corpus",
+      "canonical_url": "https://doi.org/10.17605/OSF.IO/7JU2S",
+      "secondary_catalog": "https://datasetcatalog.nlm.nih.gov/dataset?q=0003334552",
+      "author_code_repository": "https://github.com/thefinnlab/pink-noise",
+      "preprint_author_pdf": "https://thefinnlab.github.io/files/ONell_Sanchez_Finn-pinknoise_preprint-2025.pdf",
+      "source_type": "NEW_ORIGINAL_PUBLIC_PODCAST_SPEEDDATE_EPISODE_TRANSCRIPTS_AND_BINARY_JOINT_MATCH_METADATA_ONLY__NOT_TWO_NATIVE_CHOICES",
+      "date_discovered": "2026-10-30",
+      "evidence": "NLM source-catalog summary calls repository CC BY 4.0 and describes Blink Date 31 10-minute audio-only phone conversations from podcast, whose participants privately indicated yes or maybe for second date; catalog says only a binary match outcome is provided (both yes or maybe). The original-author preprint additionally describes Kings and Kweens 52 ordinal single-chooser podcast episodes. Episode/transcript origin distinct from Columbia and previous speed-date labs by description; raw overlap not audited.",
+      "rights": "NLM catalogue records CC BY 4.0 for linked deposited materials. Catalog is SECONDARY metadata, first-party file-level terms, host transcripts permissions and precise release flags NOT checked. DOI resolves to OSF repository; user explicitly forbids repeating prior failed OSF access routes; no repository files or transcripts downloaded, no licence accepted or author contacted.",
+      "native_two_actors_voted_in_study_description": true,
+      "two_native_yesno_columns_in_released_data_verified": false,
+      "released_observed_outcome": "binary joint match/nonmatch (both yes or maybe) only; cannot recover whether one/both parties declined",
+      "observed_opportunity_set": "selected public podcast episodes, not all eligible candidate pairs or complete partner slates; Kings and Kweens one public 'monarch' chooser with encounter order, but not independent two-vote join",
+      "independence": "Likely genuinely separate Blink Date and Kings and Kweens media cohorts, distinct recruitment and event format; overlap with existing human datasets not independently audited. Do not count 31 and 52 as independent people or cohort holdouts.",
+      "original_data_file_bytes_read": 0,
+      "legal_dataset_reuse_verified": false,
+      "new_independent_human_case_level_validation": false,
+      "AB_cycle_increment": 0,
+      "N_case_file_rows": 0,
+      "status": "DOCUMENTARY_CANDIDATE_ONLY_R5_STOP",
+      "last_audit": "2026-10-30"
     }
   ],
-  "last_added_campaign": "ABH_N187_N206_20261030_SRC109_METADATA_ONLY",
+  "last_added_campaign": "NO_CYCLE_R5_FEASIBILITY_SRC110_PODCAST_MATCH_ONLY",
   "canonical_duplicate_DOI_audit": {
     "date": "2026-10-30",
     "source_records_before": 107,
