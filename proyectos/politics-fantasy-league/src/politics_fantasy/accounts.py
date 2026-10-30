@@ -14,6 +14,7 @@ import sqlite3
 import time
 import uuid
 from dataclasses import dataclass
+from contextlib import contextmanager
 from pathlib import Path
 
 from .product import seed_demo
@@ -53,12 +54,16 @@ class AccountSession:
     csrf_secret: str
 
 
+@contextmanager
 def _connect(path: Path):
     db = sqlite3.connect(str(path), timeout=5, isolation_level=None)
-    db.row_factory = sqlite3.Row
-    db.execute("PRAGMA foreign_keys=ON")
-    db.execute("PRAGMA busy_timeout=5000")
-    return db
+    try:
+        db.row_factory = sqlite3.Row
+        db.execute("PRAGMA foreign_keys=ON")
+        db.execute("PRAGMA busy_timeout=5000")
+        yield db
+    finally:
+        db.close()
 
 
 def init_accounts(path: Path) -> None:
