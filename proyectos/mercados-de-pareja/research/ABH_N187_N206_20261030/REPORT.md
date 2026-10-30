@@ -1,0 +1,54 @@
+# Mercados de pareja · Informe de campaña AB-H N187–N206 · Paridad y falsación de rivales
+
+**Fecha:** 2026-10-30. **Rama:** `research/ab-h-esbm-rival-parity-20261030`, desde el HEAD autorizado `8d0aa5d66972c830bb9af9f3e404f45212e9e65d`. **20/20 contratos A–J ejecutados:** N187–N201 y N203–N206 = 19 comprobaciones de software/simulación **PASS**; N202 = **VALID_DOCUMENTARY_NO_GO** (documento humano primario con dos votos descritos, microdatos legalmente accesibles no verificados). Un intento instrumental anterior a toda simulación N187 produjo `IndentationError`; reparación preregistrada y SHA source congelada en commits **c746a6ca818ce5a5d77eb6e367034cffee574882** y **afa05cafb98cf5abf386a46419eb704c2b78cec8**, sin consumir ciclo adicional. Cero ciclos completos inválidos, cero planificación, cero saldo. Cero nuevas filas humanas y validaciones causales externas.
+
+## Contratos congelados antes de los outcomes
+
+| Bloque | Prerregistro A–J GitHub | Hashes completos del código preregistrados antes de correr |
+|---|---|---|
+| A N187–N191 | `c530ba63f22946be4baf4262d2038fbd9f17813c` | `FREEZE_A.json` `a7738d908b1350d7ae891d05331efe4ee27913bd`; fuente reparada en `FREEZE_A_REPAIR.json` `afa05cafb98cf5abf386a46419eb704c2b78cec8` |
+| B N192–N196 | `8e5c96d549911a42817226e85e5ad89ee334d263` | `FREEZE_B.json` `5baae616e5cf33640395fac5d96a832a700fd599` |
+| C N197–N201 | `8072f5112fe21166bfaffbb2be08feaf6ef9f051` | `FREEZE_C.json` `43d2d0243be31d4a5b77e71153257f406a74489e` |
+| D N202–N206 | `418af4e28463546b8d31aeb792dcdd16bad71dbf` | `FREEZE_D.json` `79502b98ffd0fca77b0ffa7cd241a8690471415c` |
+
+**Matiz metodológico de N202:** la publicación candidata se descubrió antes de formalizar el contrato D; el dictamen de derechos sí se explicitó en él, pero no se trata de descubrimiento documental ciego ni experimento humano prospectivo. Los scripts de A–D ejecutados realmente se conservan con fuente y hash SHA256 exactos en el ZIP de esta conversación, y GitHub conserva los contratos, freezes y [RESULTS_INDEX.json](RESULTS_INDEX.json), no el ZIP binario. Source original ESBM v2 `esbm_dynamic.py` **sin cambios**: SHA256 `f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b`. [LEDGER_A](LEDGER_A.json), [LEDGER_B](LEDGER_B.json), [LEDGER_C](LEDGER_C.json), [LEDGER_D](LEDGER_D.json) recogen cada A–J, outcome, control y decisión. Código original SHA preservado, sin SSJY ni SRC104 alterados.
+
+## A. N187–N191: SRM más sustantivo con igual información y riesgo
+
+Ejecutado ESBM artificial N24×4 sobre 50 cohortes/semillas 12000–12049, por cada una entrenando en **t0–t2** y evaluando **t3**, con 2.351 oportunidades train y 613 test, 692/166 propuestas. Los modelos ven exactamente las mismas 9 variables pre-outcome (incluido `q` latente del generador). B2 = logística L2; `SRM_ACTOR_TARGET` = regresión logística L2 con **1974 columnas identificadoras de sender/receiver** regularizadas y nueve covariables continuas; B6 = boosting finito con idénticos campos y presupuesto de entrenamiento; oráculo sabe los parámetros del generador. SRM **no es** un modelo multinivel cruzado completo con variación actor, pareja, díada y correlación representativa. B6 finito **no es B6* saturado**.
+
+**Log-loss t3, mismo riesgo y presupuesto**: ESBM oracle **0,564744**, B2 **0,569172**, SRM **0,578568**, B6 finito **0,579106**, B0 **0,585428**, control identidades actor sham **0,575736**. SRM−B2 diferencia por semilla **+0,009006**, intervalo bootstrap sintético al 95% **[+0,001519,+0,016813]**; 32 cohortes peor SRM vs 18 mejor. Importa que cada agente dispone de muy pocas interacciones previas: la capacidad de estimar su intercepto es limitada, no se ha falsado la teoría SRM. N191 control de etiquetas perturbadas rinde mejor que SRM, evidencia negativa de ajuste en este soporte específico.
+
+## B. N192–N196: controles positivos sobre leyes alternativas congeladas
+
+Sobre oportunidades fijadas por ESBM (40 cohortes 12500–12539, t0–t2 para train y t3 para test) se muestrearon **etiquetas alternativas** bajo leyes previamente codificadas, sin recalcular oportunidades/estados posteriores según tales nuevas respuestas: por eso son pruebas de **potencia predictiva del algoritmo ante otra distribución condicional, no simulaciones dinámicas autoconsistentes**.
+
+- N192, DGP con efectos persistentes fuertes de emisor y receptor: SRM **0,56855** frente a B2 **0,62698**, B6 **0,61042** y valor verdadero condicional 0,39043 (todas log-loss). El rival SRM recupera una parte útil de un mecanismo realmente implantado.
+- N193, DGP sin esos efectos actor: SRM 0,48166 frente a B2 0,48705 y B6 0,48930. La pequeña diferencia no prueba heterogeneidad verdadera; representa variación muestral o ajuste.
+- N194, DGP temporal/no lineal XOR: B6 **0,45164** vs B2 **0,58383**, SRM **0,56665** (verdadera ley conocida 0,42397). El no lineal aprovecha señal que los rivales no captan bien.
+- N195 bootstrap 2.000 muestras de 40 cohortes: DGP actor diferencia SRM−B2 CI **[−0,07248,−0,04740]**; DGP no lineal diferencia B6−B2 **[−0,15484,−0,10493]**. Solo incertidumbre Monte Carlo bajo generador artificial.
+- N196: 10 permutaciones de IDs de actor con transporte completo de etiquetas de training y test: máximo cambio en p de SRM **7,77e−16**, frente al umbral 1e−9. No prueba invariancia universal para todos los posibles grafos y programas.
+
+## C. N197–N201: evaluación de fugas de información y replicación numérica de score
+
+N197 exportó las **613 etiquetas de evaluación y predicciones de seis modelos** a un JSON SHA256 `35b630056a046d870a6369bd6b7eb8a1e528d78dca18c555ae2c972596dbb925`. N198 calculó de nuevo log-loss/Brier en **Node.js V22**, implementación independiente sin sklearn, con suma compensada; máximo error absoluto **1,11e−16** sobre los 6 modelos. **No** equivale a reproducir el generador o entrenar los modelos en otro equipo.
+
+N199 cambió exclusivamente los 613 outcomes de evaluación (0↔1) manteniendo features y fit: ninguna predicción cambió (delta 0), contra fuga directa del target. N200 comparó presupuestos de dos vs tres rondas train con test t3 fijo: B2 log-loss **0,57953→0,56917**, SRM **0,59228→0,57857**, B6 **0,61012→0,57911**. No se presume monotonía fuera de las semillas elegidas. N201, test de actores *completamente nuevos* (10 cohortes, n129 eventos): B2 **0,60563**, SRM **0,60599**, B6 **0,59453**, oráculo **0,59960**. El SRM de identificadores no generaliza automáticamente a personas nunca vistas.
+
+## D. N202–N206: fuente humana, políticas, visor e independencia de ajuste
+
+**N202 y nueva SRC109**: Hoffmann et al. (2024), *Sharing and Receiving Eye-Contact Predicts Mate Choice After a 5-Minute Conversation*, DOI [10.1007/s10508-023-02806-0](https://doi.org/10.1007/s10508-023-02806-0). Artículo original describe 60 sujetos principales (30/30), 240 encuentros con **cuatro parejas/contrapartes preasignadas y repetidas**, 237 analizados tras 3 exclusiones, y **dos decisiones propias e independientes sí/no** por conversación. Los autores hicieron multilevel logit de intención propia y omitieron matches como DV por prevalencia de ~4%. Publicación CC BY y mención de datos/código alojados en OSF **no verifican licencia de cada archivo original, estructura de actores y votos, derechos de participantes ni riesgo de oportunidad completo**. **No se repitió ningún acceso OSF fallido, ninguna descarga de datos humanos, ninguna aceptación de licencia o contacto con autores.** Dictamen: `VALID_DOCUMENTARY_NO_GO`, R5 externo STOP. [Fuente y derechos](HUMAN_RIGHTS_GATE.md).
+
+**N203** comparó pooled eventos vs media equiponderada de cohortes para seis rivales, con diferencias numéricas y **misma clasificación ordinal** de seis modelos; no sobreinterpretar si cambia el conjunto de cohorts. **N204**, transporte de red anular en train a reordenada en test, mismas 50 semillas t3 pero **613→642** oportunidades por políticas, B2 **0,58370**, SRM **0,59127**, B6 **0,59250**, oracle **0,58102**. El riskset y la historia no son iguales: **NO** diferencia causal aislada de topología.
+
+**N205** visor HTML offline desde los resultados reales A–B–C, cinco vistas (factual, DGP actor, DGP sin actor, DGP temporal, cold-cohort), probado **5/5 selecciones reales en Chromium local**, cero excepciones JS y cero solicitudes HTTP. ZIP contiene HTML 5.219 bytes SHA256 `566a0ba6f2ba6c32631f40f97227bdf046bf3387db5c4b49b53b8f0818f54f3b` y captura PNG. **N206** ajuste logístico L2 de nueve covariables implementado **independientemente en JavaScript con Newton/IRLS**, entrenado sobre exactamente las 2.351 filas normalizadas en Python en train y evaluado en 613: residuo máximo de gradiente KKT **7,78e−8**, diferencia máxima de probabilidad con sklearn **0,0013795**, log-loss Node **0,5691515**, sklearn **0,5691719**, ambos dentro de límites precongelados. **Mismo SO y datos, segunda implementación de entrenamiento B2, no segunda implementación completa de ESBM.**
+
+## Fuentes, priors, autocrítica y decisión
+
+**109 SOURCES** (registros; con 3 grupos DOI duplicados conocidos y estudios sobre las mismas personas), **34 PRIORS** y **192 UPDATES** (U188–U192 `NO_CHANGE_WITH_REASON` para modelo rival, originalidad, acceso diádico, oportunidad y auditoría técnica). Se actualizó SRC109 con licencia no confirmada y dos votos reportados, no microdatos. No se ha añadido hallazgo empírico sociológico ni evidencia exclusiva frente a B6* saturado: por definición una familia condicional completamente flexible sobre el mismo soporte puede emular la distribución observable de cualquier modelo generativo, incluido ESBM; la comparación finita no refuta ese hecho formal.
+
+**CT2 ordinal 7/100**, sin probabilidades infladas. **Madurez subjetiva ponderada 43,70→43,80%**, +0,10 pp exclusivamente QA de verificación de ajuste numérico independiente; teoría, novedad, datos reales, validación y manuscrito intactos. **20/20 ciclos cerrados** (19 PASS técnicos y 1 no-go documental), 1 fallido instrumental previo a ejecución preservado, 0 ciclos humanos R5. Original ESBM/SRC104 intocados, sin SSJY, sin merge ni PR históricos.
+
+**AB-DECIDE:** STOP campaña y mantener STOP_R5 externo. La próxima investigación científica requiere un dataset diádico diferente de las cohortes ya inventariadas con derechos por archivo verificados, los dos votos nativos, conjunto de oportunidades posibles y observadas, orden/evento temporal y holdout original; confrontar ESBM con SRM realmente multinivel y B6* apropiado con paridad de información. Más semilla de ESBM no desbloquea esa puerta.
+
+**Recibo de archivos en conversación:** `mercados_pareja_ABH_N187_N206_rivales_y_auditoria.zip` (32 archivos, SHA256 `1032a7d4e96c2274540acd1888cd9fbd98ac438aca69ed118495a1380953300b`). No confundir los SHA pre-outcome alojados en GitHub con supuesta publicación del ZIP binario en el repositorio.
