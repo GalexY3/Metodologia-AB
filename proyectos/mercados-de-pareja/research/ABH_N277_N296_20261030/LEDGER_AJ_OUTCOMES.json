@@ -1,0 +1,1705 @@
+{
+  "schema": "ABH_N277_N296_AJ_OUTCOME_LEDGER",
+  "date": "2026-10-30",
+  "branch": "research/ab-h-esbm-exactness-n277-n296-20261030",
+  "preoutcome_freeze_commit": "4d92e8002bc24af3dfe6009603e1bc95d2b806ca",
+  "posthoc_N280_prereg_commit": "2ab26e6de4c781a3795684ead94736f7e8f15c34",
+  "authorized": 20,
+  "executed": 20,
+  "valid_executed": 20,
+  "invalid_executed": 0,
+  "remaining": 0,
+  "n1_new": 0,
+  "n2_new": 0,
+  "n3_new": 0,
+  "CT2_before": 7,
+  "CT2_after": 7,
+  "STOP_R5_human": true,
+  "prior_update": "U198",
+  "human_microdata_new": 0,
+  "source_archive_sha256": "8e4e6705954d9d9e864da6ea0b1607f7ca061ec87d1c9e9ede14b951e2a2ba67",
+  "result_archive_sha256": "cc8be3d25a1cb158e01a407a347b972dad1d1eb711a1c051eee6f6862e009552",
+  "full_individual_raw_event_traces_saved_N277": false,
+  "cycles": [
+    {
+      "id": "N277",
+      "A": {
+        "question": "Full 60-case N144 T16 K7 individual event divergence: float64 historical NetworkX objective versus lexicographically integer encoding",
+        "unit": "Artificial graph or individual synthetic agent-tick; no human outcomes",
+        "estimand": "Cardinality-first exact matching objective and/or event identity, specified by cycle",
+        "outcome_proxy": "Executable check, not empirical model validity"
+      },
+      "B": {
+        "rivals": [
+          "NetworkX float64 maxcardinality original-semantics",
+          "NetworkX exact-integer maxcardinality",
+          "Boost C++ maximum_weighted_matching",
+          "SciPy HiGHS MILP/independent exhaustive DP where indicated"
+        ],
+        "null": "No demonstrated discrepancy in tested fixtures"
+      },
+      "C": {
+        "plan": "All ten scenarios and 6 seeds; 960 ticks maximum",
+        "falsifier": "Any changed directed event, selected pair, duration or sequential state at first tick, even if aggregate equal",
+        "stopping": "Do not continue beyond fixed fixture budget; preserve errors; no posthoc replacement or changing thresholds"
+      },
+      "D": {
+        "instrument_hashes": {
+          "experiment.py": "89d9d5c125c9153ca8a641267a983e71c0427e1600a45faf03d6f3761b125dfe",
+          "trace_engine.py": "c0c92061100a689ab59698a46e22a96e96d7bb3bd99a21ec292d7aaa30e4415a",
+          "boost_blossom.cpp": "47806e6b331e088d209e51143d18cb5d5cc7a2e2d3d6d8914478bff4b7b8c2d3",
+          "boost_blossom": "96087f807c3845193da871aa8a8f83092c095a0dcf2ab0862ace85b76eebf995"
+        },
+        "archive_sha256": "8e4e6705954d9d9e864da6ea0b1607f7ca061ec87d1c9e9ede14b951e2a2ba67",
+        "archive_path": "/Mercados-de-pareja/ABH-N277-N296/ESBM_ABH_N277_N296_PREOUTCOME_INSTRUMENTS.zip",
+        "freeze_rule": "Commit this A–J + hash before any outcome. Code immutable. Repair requires new prereg commit and retention of first receipt."
+      },
+      "E": {
+        "status_at_freeze": "NOT_EXECUTED",
+        "receipt": "results/N277.json",
+        "planned_runner": "python experiment.py 277 --freeze freeze.json",
+        "resources": "Run each cycle separately with external 75s wall cap, Boost subprocess 4-6s, no expensive CI; memory monitoring and errors preserved",
+        "status": "EXECUTED",
+        "receipt_sha256": "52ef584ee8e8ce8b9cdd0498e7c67ab57a0ce9465b8db61b5a61ceaa9ee94fef",
+        "receipt_path": "results/N277.json",
+        "seconds": 21.42,
+        "observed": "60/60 same synthetic individual event traces under float64 NetworkX vs exact integer NetworkX; not original TS/Python executables"
+      },
+      "F": {
+        "adversarial": "Negative input, ties, permuted IDs, reversed edge order, brute exact DP, MILP, frozen checks as relevant",
+        "nonuniqueness": "Report objective and pair set separately; no universal pair equality under ties",
+        "observed_adversarial": "VALID_TECHNICAL_CONTROL",
+        "limitations": "Float precision, nonuniqueness, timeouts or archival QA classified separately; full outcomes archived in ZIP"
+      },
+      "G": {
+        "independence": "Independent software solvers but same synthetic mechanisms and stimuli; historical TS not available. N293 self-audit not external replication.",
+        "human": "No real human original outcomes or independent validation",
+        "actual_external_human_replication": false,
+        "actual_original_Python_executable": false,
+        "actual_historical_TS_executable": false
+      },
+      "H": {
+        "prior": "P-TRAJECTORY-INVARIANCE",
+        "planned": "U198 qualitative only NO_CHANGE_WITH_REASON absent new human observation. SRC112 only if genuinely new independently sourced primary documentation",
+        "recorded_update": "U198",
+        "prior_probability_change": false,
+        "source_count": 113
+      },
+      "I": {
+        "grade_scientific": "0/3",
+        "CT2_scientific_before": 7,
+        "CT2_scientific_after_planned": 7,
+        "R5_human": "STOP",
+        "DRIFT": "D0 or D1 within software QA, not new substantive human phenomenon",
+        "CT2_scientific_after": 7,
+        "new_human_validation": false,
+        "technical_class": "VALID_TECHNICAL_CONTROL"
+      },
+      "J": {
+        "possible": "VALID_PASS / VALID_NEGATIVE / INVALID / BLOCKED",
+        "slot": "Count at most once after actual useful execution; a time-out on predeclared control is valid negative; merely preparing code not valid",
+        "branching": "Do not force quota without distinct tests",
+        "observed_decision": "CLOSE_TECHNICAL",
+        "cycle_executed": true,
+        "slot_spent_once": true,
+        "remaining_after": 19
+      }
+    },
+    {
+      "id": "N278",
+      "A": {
+        "question": "Sparse n144 continuous weight graphs",
+        "unit": "Artificial graph or individual synthetic agent-tick; no human outcomes",
+        "estimand": "Cardinality-first exact matching objective and/or event identity, specified by cycle",
+        "outcome_proxy": "Executable check, not empirical model validity"
+      },
+      "B": {
+        "rivals": [
+          "NetworkX float64 maxcardinality original-semantics",
+          "NetworkX exact-integer maxcardinality",
+          "Boost C++ maximum_weighted_matching",
+          "SciPy HiGHS MILP/independent exhaustive DP where indicated"
+        ],
+        "null": "No demonstrated discrepancy in tested fixtures"
+      },
+      "C": {
+        "plan": "3 independent synthetic fixtures, density=.06",
+        "falsifier": "Any disagreement in exact integer objective across float and integer",
+        "stopping": "Do not continue beyond fixed fixture budget; preserve errors; no posthoc replacement or changing thresholds"
+      },
+      "D": {
+        "instrument_hashes": {
+          "experiment.py": "89d9d5c125c9153ca8a641267a983e71c0427e1600a45faf03d6f3761b125dfe",
+          "trace_engine.py": "c0c92061100a689ab59698a46e22a96e96d7bb3bd99a21ec292d7aaa30e4415a",
+          "boost_blossom.cpp": "47806e6b331e088d209e51143d18cb5d5cc7a2e2d3d6d8914478bff4b7b8c2d3",
+          "boost_blossom": "96087f807c3845193da871aa8a8f83092c095a0dcf2ab0862ace85b76eebf995"
+        },
+        "archive_sha256": "8e4e6705954d9d9e864da6ea0b1607f7ca061ec87d1c9e9ede14b951e2a2ba67",
+        "archive_path": "/Mercados-de-pareja/ABH-N277-N296/ESBM_ABH_N277_N296_PREOUTCOME_INSTRUMENTS.zip",
+        "freeze_rule": "Commit this A–J + hash before any outcome. Code immutable. Repair requires new prereg commit and retention of first receipt."
+      },
+      "E": {
+        "status_at_freeze": "NOT_EXECUTED",
+        "receipt": "results/N278.json",
+        "planned_runner": "python experiment.py 278 --freeze freeze.json",
+        "resources": "Run each cycle separately with external 75s wall cap, Boost subprocess 4-6s, no expensive CI; memory monitoring and errors preserved",
+        "status": "EXECUTED",
+        "receipt_sha256": "c2c4af60a2065d7c5c0fbc47eecae66f6b180527be0b9404b7b315f7e4871530",
+        "receipt_path": "results/N278.json",
+        "seconds": 1.1,
+        "observed": "3/3 sparse n144 continuous weight graphs same objective and pairs, Boost oracle passes"
+      },
+      "F": {
+        "adversarial": "Negative input, ties, permuted IDs, reversed edge order, brute exact DP, MILP, frozen checks as relevant",
+        "nonuniqueness": "Report objective and pair set separately; no universal pair equality under ties",
+        "observed_adversarial": "VALID_TECHNICAL_CONTROL",
+        "limitations": "Float precision, nonuniqueness, timeouts or archival QA classified separately; full outcomes archived in ZIP"
+      },
+      "G": {
+        "independence": "Independent software solvers but same synthetic mechanisms and stimuli; historical TS not available. N293 self-audit not external replication.",
+        "human": "No real human original outcomes or independent validation",
+        "actual_external_human_replication": false,
+        "actual_original_Python_executable": false,
+        "actual_historical_TS_executable": false
+      },
+      "H": {
+        "prior": "P-TRAJECTORY-INVARIANCE",
+        "planned": "U198 qualitative only NO_CHANGE_WITH_REASON absent new human observation. SRC112 only if genuinely new independently sourced primary documentation",
+        "recorded_update": "U198",
+        "prior_probability_change": false,
+        "source_count": 113
+      },
+      "I": {
+        "grade_scientific": "0/3",
+        "CT2_scientific_before": 7,
+        "CT2_scientific_after_planned": 7,
+        "R5_human": "STOP",
+        "DRIFT": "D0 or D1 within software QA, not new substantive human phenomenon",
+        "CT2_scientific_after": 7,
+        "new_human_validation": false,
+        "technical_class": "VALID_TECHNICAL_CONTROL"
+      },
+      "J": {
+        "possible": "VALID_PASS / VALID_NEGATIVE / INVALID / BLOCKED",
+        "slot": "Count at most once after actual useful execution; a time-out on predeclared control is valid negative; merely preparing code not valid",
+        "branching": "Do not force quota without distinct tests",
+        "observed_decision": "CLOSE_TECHNICAL",
+        "cycle_executed": true,
+        "slot_spent_once": true,
+        "remaining_after": 18
+      }
+    },
+    {
+      "id": "N279",
+      "A": {
+        "question": "Quantized n144 graph matching and tie ordering",
+        "unit": "Artificial graph or individual synthetic agent-tick; no human outcomes",
+        "estimand": "Cardinality-first exact matching objective and/or event identity, specified by cycle",
+        "outcome_proxy": "Executable check, not empirical model validity"
+      },
+      "B": {
+        "rivals": [
+          "NetworkX float64 maxcardinality original-semantics",
+          "NetworkX exact-integer maxcardinality",
+          "Boost C++ maximum_weighted_matching",
+          "SciPy HiGHS MILP/independent exhaustive DP where indicated"
+        ],
+        "null": "No demonstrated discrepancy in tested fixtures"
+      },
+      "C": {
+        "plan": "2 fixtures density=.4",
+        "falsifier": "Changed pairs or objective; pair identity only claimed if unique",
+        "stopping": "Do not continue beyond fixed fixture budget; preserve errors; no posthoc replacement or changing thresholds"
+      },
+      "D": {
+        "instrument_hashes": {
+          "experiment.py": "89d9d5c125c9153ca8a641267a983e71c0427e1600a45faf03d6f3761b125dfe",
+          "trace_engine.py": "c0c92061100a689ab59698a46e22a96e96d7bb3bd99a21ec292d7aaa30e4415a",
+          "boost_blossom.cpp": "47806e6b331e088d209e51143d18cb5d5cc7a2e2d3d6d8914478bff4b7b8c2d3",
+          "boost_blossom": "96087f807c3845193da871aa8a8f83092c095a0dcf2ab0862ace85b76eebf995"
+        },
+        "archive_sha256": "8e4e6705954d9d9e864da6ea0b1607f7ca061ec87d1c9e9ede14b951e2a2ba67",
+        "archive_path": "/Mercados-de-pareja/ABH-N277-N296/ESBM_ABH_N277_N296_PREOUTCOME_INSTRUMENTS.zip",
+        "freeze_rule": "Commit this A–J + hash before any outcome. Code immutable. Repair requires new prereg commit and retention of first receipt."
+      },
+      "E": {
+        "status_at_freeze": "NOT_EXECUTED",
+        "receipt": "results/N279.json",
+        "planned_runner": "python experiment.py 279 --freeze freeze.json",
+        "resources": "Run each cycle separately with external 75s wall cap, Boost subprocess 4-6s, no expensive CI; memory monitoring and errors preserved",
+        "status": "EXECUTED",
+        "receipt_sha256": "e23b1d22c5eabcd0963031c5c88c3908801e2af3fa5006378f1e4172e7e85ec6",
+        "receipt_path": "results/N279.json",
+        "seconds": 0.22,
+        "observed": "2/2 n144 quantized graphs equal objective and pair identity under same order"
+      },
+      "F": {
+        "adversarial": "Negative input, ties, permuted IDs, reversed edge order, brute exact DP, MILP, frozen checks as relevant",
+        "nonuniqueness": "Report objective and pair set separately; no universal pair equality under ties",
+        "observed_adversarial": "VALID_TECHNICAL_CONTROL",
+        "limitations": "Float precision, nonuniqueness, timeouts or archival QA classified separately; full outcomes archived in ZIP"
+      },
+      "G": {
+        "independence": "Independent software solvers but same synthetic mechanisms and stimuli; historical TS not available. N293 self-audit not external replication.",
+        "human": "No real human original outcomes or independent validation",
+        "actual_external_human_replication": false,
+        "actual_original_Python_executable": false,
+        "actual_historical_TS_executable": false
+      },
+      "H": {
+        "prior": "P-TRAJECTORY-INVARIANCE",
+        "planned": "U198 qualitative only NO_CHANGE_WITH_REASON absent new human observation. SRC112 only if genuinely new independently sourced primary documentation",
+        "recorded_update": "U198",
+        "prior_probability_change": false,
+        "source_count": 113
+      },
+      "I": {
+        "grade_scientific": "0/3",
+        "CT2_scientific_before": 7,
+        "CT2_scientific_after_planned": 7,
+        "R5_human": "STOP",
+        "DRIFT": "D0 or D1 within software QA, not new substantive human phenomenon",
+        "CT2_scientific_after": 7,
+        "new_human_validation": false,
+        "technical_class": "VALID_TECHNICAL_CONTROL"
+      },
+      "J": {
+        "possible": "VALID_PASS / VALID_NEGATIVE / INVALID / BLOCKED",
+        "slot": "Count at most once after actual useful execution; a time-out on predeclared control is valid negative; merely preparing code not valid",
+        "branching": "Do not force quota without distinct tests",
+        "observed_decision": "CLOSE_TECHNICAL",
+        "cycle_executed": true,
+        "slot_spent_once": true,
+        "remaining_after": 17
+      }
+    },
+    {
+      "id": "N280",
+      "A": {
+        "question": "n143 near-ulp graph and solver precision",
+        "unit": "Artificial graph or individual synthetic agent-tick; no human outcomes",
+        "estimand": "Cardinality-first exact matching objective and/or event identity, specified by cycle",
+        "outcome_proxy": "Executable check, not empirical model validity"
+      },
+      "B": {
+        "rivals": [
+          "NetworkX float64 maxcardinality original-semantics",
+          "NetworkX exact-integer maxcardinality",
+          "Boost C++ maximum_weighted_matching",
+          "SciPy HiGHS MILP/independent exhaustive DP where indicated"
+        ],
+        "null": "No demonstrated discrepancy in tested fixtures"
+      },
+      "C": {
+        "plan": "2 fixtures density=.28",
+        "falsifier": "Original float and exact integer objective difference",
+        "stopping": "Do not continue beyond fixed fixture budget; preserve errors; no posthoc replacement or changing thresholds"
+      },
+      "D": {
+        "instrument_hashes": {
+          "experiment.py": "89d9d5c125c9153ca8a641267a983e71c0427e1600a45faf03d6f3761b125dfe",
+          "trace_engine.py": "c0c92061100a689ab59698a46e22a96e96d7bb3bd99a21ec292d7aaa30e4415a",
+          "boost_blossom.cpp": "47806e6b331e088d209e51143d18cb5d5cc7a2e2d3d6d8914478bff4b7b8c2d3",
+          "boost_blossom": "96087f807c3845193da871aa8a8f83092c095a0dcf2ab0862ace85b76eebf995"
+        },
+        "archive_sha256": "8e4e6705954d9d9e864da6ea0b1607f7ca061ec87d1c9e9ede14b951e2a2ba67",
+        "archive_path": "/Mercados-de-pareja/ABH-N277-N296/ESBM_ABH_N277_N296_PREOUTCOME_INSTRUMENTS.zip",
+        "freeze_rule": "Commit this A–J + hash before any outcome. Code immutable. Repair requires new prereg commit and retention of first receipt."
+      },
+      "E": {
+        "status_at_freeze": "NOT_EXECUTED",
+        "receipt": "results/N280.json",
+        "planned_runner": "python experiment.py 280 --freeze freeze.json",
+        "resources": "Run each cycle separately with external 75s wall cap, Boost subprocess 4-6s, no expensive CI; memory monitoring and errors preserved",
+        "status": "EXECUTED",
+        "receipt_sha256": "d4f8d1487d68bc1e9d6840df9958e6ea2602ef0ec1025395687a838f87e466f9",
+        "receipt_path": "results/N280.json",
+        "seconds": 0.62,
+        "observed": "2/2 near-tie n143 float solver loses exactly 2 and 3 integer-residue units vs exact solver, same 71 pairs count; posthoc independent Boost verifies exact objective"
+      },
+      "F": {
+        "adversarial": "Negative input, ties, permuted IDs, reversed edge order, brute exact DP, MILP, frozen checks as relevant",
+        "nonuniqueness": "Report objective and pair set separately; no universal pair equality under ties",
+        "observed_adversarial": "VALID_FLOAT64_NEAR_OPTIMAL_NEGATIVE",
+        "limitations": "Float precision, nonuniqueness, timeouts or archival QA classified separately; full outcomes archived in ZIP"
+      },
+      "G": {
+        "independence": "Independent software solvers but same synthetic mechanisms and stimuli; historical TS not available. N293 self-audit not external replication.",
+        "human": "No real human original outcomes or independent validation",
+        "actual_external_human_replication": false,
+        "actual_original_Python_executable": false,
+        "actual_historical_TS_executable": false
+      },
+      "H": {
+        "prior": "P-TRAJECTORY-INVARIANCE",
+        "planned": "U198 qualitative only NO_CHANGE_WITH_REASON absent new human observation. SRC112 only if genuinely new independently sourced primary documentation",
+        "recorded_update": "U198",
+        "prior_probability_change": false,
+        "source_count": 113
+      },
+      "I": {
+        "grade_scientific": "0/3",
+        "CT2_scientific_before": 7,
+        "CT2_scientific_after_planned": 7,
+        "R5_human": "STOP",
+        "DRIFT": "D0 or D1 within software QA, not new substantive human phenomenon",
+        "CT2_scientific_after": 7,
+        "new_human_validation": false,
+        "technical_class": "VALID_FLOAT64_NEAR_OPTIMAL_NEGATIVE"
+      },
+      "J": {
+        "possible": "VALID_PASS / VALID_NEGATIVE / INVALID / BLOCKED",
+        "slot": "Count at most once after actual useful execution; a time-out on predeclared control is valid negative; merely preparing code not valid",
+        "branching": "Do not force quota without distinct tests",
+        "observed_decision": "RETAIN_COUNTEREXAMPLE",
+        "cycle_executed": true,
+        "slot_spent_once": true,
+        "remaining_after": 16
+      }
+    },
+    {
+      "id": "N281",
+      "A": {
+        "question": "Dense n144 continuous graphs with Boost independent backend",
+        "unit": "Artificial graph or individual synthetic agent-tick; no human outcomes",
+        "estimand": "Cardinality-first exact matching objective and/or event identity, specified by cycle",
+        "outcome_proxy": "Executable check, not empirical model validity"
+      },
+      "B": {
+        "rivals": [
+          "NetworkX float64 maxcardinality original-semantics",
+          "NetworkX exact-integer maxcardinality",
+          "Boost C++ maximum_weighted_matching",
+          "SciPy HiGHS MILP/independent exhaustive DP where indicated"
+        ],
+        "null": "No demonstrated discrepancy in tested fixtures"
+      },
+      "C": {
+        "plan": "2 fixtures density=.9, Boost timeout 6s",
+        "falsifier": "Boost segfault, timeout or objective discrepancy; preserved as negative",
+        "stopping": "Do not continue beyond fixed fixture budget; preserve errors; no posthoc replacement or changing thresholds"
+      },
+      "D": {
+        "instrument_hashes": {
+          "experiment.py": "89d9d5c125c9153ca8a641267a983e71c0427e1600a45faf03d6f3761b125dfe",
+          "trace_engine.py": "c0c92061100a689ab59698a46e22a96e96d7bb3bd99a21ec292d7aaa30e4415a",
+          "boost_blossom.cpp": "47806e6b331e088d209e51143d18cb5d5cc7a2e2d3d6d8914478bff4b7b8c2d3",
+          "boost_blossom": "96087f807c3845193da871aa8a8f83092c095a0dcf2ab0862ace85b76eebf995"
+        },
+        "archive_sha256": "8e4e6705954d9d9e864da6ea0b1607f7ca061ec87d1c9e9ede14b951e2a2ba67",
+        "archive_path": "/Mercados-de-pareja/ABH-N277-N296/ESBM_ABH_N277_N296_PREOUTCOME_INSTRUMENTS.zip",
+        "freeze_rule": "Commit this A–J + hash before any outcome. Code immutable. Repair requires new prereg commit and retention of first receipt."
+      },
+      "E": {
+        "status_at_freeze": "NOT_EXECUTED",
+        "receipt": "results/N281.json",
+        "planned_runner": "python experiment.py 281 --freeze freeze.json",
+        "resources": "Run each cycle separately with external 75s wall cap, Boost subprocess 4-6s, no expensive CI; memory monitoring and errors preserved",
+        "status": "EXECUTED",
+        "receipt_sha256": "a6833ef088e1cfb14b6baff75716c6503dff2d2e3f0cf13657e08455d01841ed",
+        "receipt_path": "results/N281.json",
+        "seconds": 6.14,
+        "observed": "2/2 dense n144 continuous weight graphs Boost agrees with integer and float"
+      },
+      "F": {
+        "adversarial": "Negative input, ties, permuted IDs, reversed edge order, brute exact DP, MILP, frozen checks as relevant",
+        "nonuniqueness": "Report objective and pair set separately; no universal pair equality under ties",
+        "observed_adversarial": "VALID_TECHNICAL_CONTROL",
+        "limitations": "Float precision, nonuniqueness, timeouts or archival QA classified separately; full outcomes archived in ZIP"
+      },
+      "G": {
+        "independence": "Independent software solvers but same synthetic mechanisms and stimuli; historical TS not available. N293 self-audit not external replication.",
+        "human": "No real human original outcomes or independent validation",
+        "actual_external_human_replication": false,
+        "actual_original_Python_executable": false,
+        "actual_historical_TS_executable": false
+      },
+      "H": {
+        "prior": "P-TRAJECTORY-INVARIANCE",
+        "planned": "U198 qualitative only NO_CHANGE_WITH_REASON absent new human observation. SRC112 only if genuinely new independently sourced primary documentation",
+        "recorded_update": "U198",
+        "prior_probability_change": false,
+        "source_count": 113
+      },
+      "I": {
+        "grade_scientific": "0/3",
+        "CT2_scientific_before": 7,
+        "CT2_scientific_after_planned": 7,
+        "R5_human": "STOP",
+        "DRIFT": "D0 or D1 within software QA, not new substantive human phenomenon",
+        "CT2_scientific_after": 7,
+        "new_human_validation": false,
+        "technical_class": "VALID_TECHNICAL_CONTROL"
+      },
+      "J": {
+        "possible": "VALID_PASS / VALID_NEGATIVE / INVALID / BLOCKED",
+        "slot": "Count at most once after actual useful execution; a time-out on predeclared control is valid negative; merely preparing code not valid",
+        "branching": "Do not force quota without distinct tests",
+        "observed_decision": "CLOSE_TECHNICAL",
+        "cycle_executed": true,
+        "slot_spent_once": true,
+        "remaining_after": 15
+      }
+    },
+    {
+      "id": "N282",
+      "A": {
+        "question": "Independent SciPy HiGHS binary MILP / NetworkX / exhaustive n12 comparison",
+        "unit": "Artificial graph or individual synthetic agent-tick; no human outcomes",
+        "estimand": "Cardinality-first exact matching objective and/or event identity, specified by cycle",
+        "outcome_proxy": "Executable check, not empirical model validity"
+      },
+      "B": {
+        "rivals": [
+          "NetworkX float64 maxcardinality original-semantics",
+          "NetworkX exact-integer maxcardinality",
+          "Boost C++ maximum_weighted_matching",
+          "SciPy HiGHS MILP/independent exhaustive DP where indicated"
+        ],
+        "null": "No demonstrated discrepancy in tested fixtures"
+      },
+      "C": {
+        "plan": "7 fixtures (0..1000 integer weights)",
+        "falsifier": "Any disagreement in lexicographic cardinality + weight",
+        "stopping": "Do not continue beyond fixed fixture budget; preserve errors; no posthoc replacement or changing thresholds"
+      },
+      "D": {
+        "instrument_hashes": {
+          "experiment.py": "89d9d5c125c9153ca8a641267a983e71c0427e1600a45faf03d6f3761b125dfe",
+          "trace_engine.py": "c0c92061100a689ab59698a46e22a96e96d7bb3bd99a21ec292d7aaa30e4415a",
+          "boost_blossom.cpp": "47806e6b331e088d209e51143d18cb5d5cc7a2e2d3d6d8914478bff4b7b8c2d3",
+          "boost_blossom": "96087f807c3845193da871aa8a8f83092c095a0dcf2ab0862ace85b76eebf995"
+        },
+        "archive_sha256": "8e4e6705954d9d9e864da6ea0b1607f7ca061ec87d1c9e9ede14b951e2a2ba67",
+        "archive_path": "/Mercados-de-pareja/ABH-N277-N296/ESBM_ABH_N277_N296_PREOUTCOME_INSTRUMENTS.zip",
+        "freeze_rule": "Commit this A–J + hash before any outcome. Code immutable. Repair requires new prereg commit and retention of first receipt."
+      },
+      "E": {
+        "status_at_freeze": "NOT_EXECUTED",
+        "receipt": "results/N282.json",
+        "planned_runner": "python experiment.py 282 --freeze freeze.json",
+        "resources": "Run each cycle separately with external 75s wall cap, Boost subprocess 4-6s, no expensive CI; memory monitoring and errors preserved",
+        "status": "EXECUTED",
+        "receipt_sha256": "b5a6031ed1e468df7c13643036ea9d523b8dd6ad64c3c661f21a359092d6e22a",
+        "receipt_path": "results/N282.json",
+        "seconds": 0.06,
+        "observed": "7/7 small n12 SCIPY HiGHS MILP + DP exhaustive + NetworkX lex cardinality and weight objective agree"
+      },
+      "F": {
+        "adversarial": "Negative input, ties, permuted IDs, reversed edge order, brute exact DP, MILP, frozen checks as relevant",
+        "nonuniqueness": "Report objective and pair set separately; no universal pair equality under ties",
+        "observed_adversarial": "VALID_TECHNICAL_CONTROL",
+        "limitations": "Float precision, nonuniqueness, timeouts or archival QA classified separately; full outcomes archived in ZIP"
+      },
+      "G": {
+        "independence": "Independent software solvers but same synthetic mechanisms and stimuli; historical TS not available. N293 self-audit not external replication.",
+        "human": "No real human original outcomes or independent validation",
+        "actual_external_human_replication": false,
+        "actual_original_Python_executable": false,
+        "actual_historical_TS_executable": false
+      },
+      "H": {
+        "prior": "P-TRAJECTORY-INVARIANCE",
+        "planned": "U198 qualitative only NO_CHANGE_WITH_REASON absent new human observation. SRC112 only if genuinely new independently sourced primary documentation",
+        "recorded_update": "U198",
+        "prior_probability_change": false,
+        "source_count": 113
+      },
+      "I": {
+        "grade_scientific": "0/3",
+        "CT2_scientific_before": 7,
+        "CT2_scientific_after_planned": 7,
+        "R5_human": "STOP",
+        "DRIFT": "D0 or D1 within software QA, not new substantive human phenomenon",
+        "CT2_scientific_after": 7,
+        "new_human_validation": false,
+        "technical_class": "VALID_TECHNICAL_CONTROL"
+      },
+      "J": {
+        "possible": "VALID_PASS / VALID_NEGATIVE / INVALID / BLOCKED",
+        "slot": "Count at most once after actual useful execution; a time-out on predeclared control is valid negative; merely preparing code not valid",
+        "branching": "Do not force quota without distinct tests",
+        "observed_decision": "CLOSE_TECHNICAL",
+        "cycle_executed": true,
+        "slot_spent_once": true,
+        "remaining_after": 14
+      }
+    },
+    {
+      "id": "N283",
+      "A": {
+        "question": "Unique matching proof versus subset DP",
+        "unit": "Artificial graph or individual synthetic agent-tick; no human outcomes",
+        "estimand": "Cardinality-first exact matching objective and/or event identity, specified by cycle",
+        "outcome_proxy": "Executable check, not empirical model validity"
+      },
+      "B": {
+        "rivals": [
+          "NetworkX float64 maxcardinality original-semantics",
+          "NetworkX exact-integer maxcardinality",
+          "Boost C++ maximum_weighted_matching",
+          "SciPy HiGHS MILP/independent exhaustive DP where indicated"
+        ],
+        "null": "No demonstrated discrepancy in tested fixtures"
+      },
+      "C": {
+        "plan": "6 n14 continuous graphs",
+        "falsifier": "Integer solver fails exact subset enumeration",
+        "stopping": "Do not continue beyond fixed fixture budget; preserve errors; no posthoc replacement or changing thresholds"
+      },
+      "D": {
+        "instrument_hashes": {
+          "experiment.py": "89d9d5c125c9153ca8a641267a983e71c0427e1600a45faf03d6f3761b125dfe",
+          "trace_engine.py": "c0c92061100a689ab59698a46e22a96e96d7bb3bd99a21ec292d7aaa30e4415a",
+          "boost_blossom.cpp": "47806e6b331e088d209e51143d18cb5d5cc7a2e2d3d6d8914478bff4b7b8c2d3",
+          "boost_blossom": "96087f807c3845193da871aa8a8f83092c095a0dcf2ab0862ace85b76eebf995"
+        },
+        "archive_sha256": "8e4e6705954d9d9e864da6ea0b1607f7ca061ec87d1c9e9ede14b951e2a2ba67",
+        "archive_path": "/Mercados-de-pareja/ABH-N277-N296/ESBM_ABH_N277_N296_PREOUTCOME_INSTRUMENTS.zip",
+        "freeze_rule": "Commit this A–J + hash before any outcome. Code immutable. Repair requires new prereg commit and retention of first receipt."
+      },
+      "E": {
+        "status_at_freeze": "NOT_EXECUTED",
+        "receipt": "results/N283.json",
+        "planned_runner": "python experiment.py 283 --freeze freeze.json",
+        "resources": "Run each cycle separately with external 75s wall cap, Boost subprocess 4-6s, no expensive CI; memory monitoring and errors preserved",
+        "status": "EXECUTED",
+        "receipt_sha256": "1f70e9946831608130e20aa1b34056abc71e104472c5e8326d1c2a69494d46a8",
+        "receipt_path": "results/N283.json",
+        "seconds": 0.03,
+        "observed": "6/6 n14 continuous graph DP unique optimum and matching pair identities agree"
+      },
+      "F": {
+        "adversarial": "Negative input, ties, permuted IDs, reversed edge order, brute exact DP, MILP, frozen checks as relevant",
+        "nonuniqueness": "Report objective and pair set separately; no universal pair equality under ties",
+        "observed_adversarial": "VALID_TECHNICAL_CONTROL",
+        "limitations": "Float precision, nonuniqueness, timeouts or archival QA classified separately; full outcomes archived in ZIP"
+      },
+      "G": {
+        "independence": "Independent software solvers but same synthetic mechanisms and stimuli; historical TS not available. N293 self-audit not external replication.",
+        "human": "No real human original outcomes or independent validation",
+        "actual_external_human_replication": false,
+        "actual_original_Python_executable": false,
+        "actual_historical_TS_executable": false
+      },
+      "H": {
+        "prior": "P-TRAJECTORY-INVARIANCE",
+        "planned": "U198 qualitative only NO_CHANGE_WITH_REASON absent new human observation. SRC112 only if genuinely new independently sourced primary documentation",
+        "recorded_update": "U198",
+        "prior_probability_change": false,
+        "source_count": 113
+      },
+      "I": {
+        "grade_scientific": "0/3",
+        "CT2_scientific_before": 7,
+        "CT2_scientific_after_planned": 7,
+        "R5_human": "STOP",
+        "DRIFT": "D0 or D1 within software QA, not new substantive human phenomenon",
+        "CT2_scientific_after": 7,
+        "new_human_validation": false,
+        "technical_class": "VALID_TECHNICAL_CONTROL"
+      },
+      "J": {
+        "possible": "VALID_PASS / VALID_NEGATIVE / INVALID / BLOCKED",
+        "slot": "Count at most once after actual useful execution; a time-out on predeclared control is valid negative; merely preparing code not valid",
+        "branching": "Do not force quota without distinct tests",
+        "observed_decision": "CLOSE_TECHNICAL",
+        "cycle_executed": true,
+        "slot_spent_once": true,
+        "remaining_after": 13
+      }
+    },
+    {
+      "id": "N284",
+      "A": {
+        "question": "Degenerate flat / quantized tie multiplicity via DP",
+        "unit": "Artificial graph or individual synthetic agent-tick; no human outcomes",
+        "estimand": "Cardinality-first exact matching objective and/or event identity, specified by cycle",
+        "outcome_proxy": "Executable check, not empirical model validity"
+      },
+      "B": {
+        "rivals": [
+          "NetworkX float64 maxcardinality original-semantics",
+          "NetworkX exact-integer maxcardinality",
+          "Boost C++ maximum_weighted_matching",
+          "SciPy HiGHS MILP/independent exhaustive DP where indicated"
+        ],
+        "null": "No demonstrated discrepancy in tested fixtures"
+      },
+      "C": {
+        "plan": "10 n14 fixtures",
+        "falsifier": "Disagreement in optimal objective or falsely inferred uniqueness",
+        "stopping": "Do not continue beyond fixed fixture budget; preserve errors; no posthoc replacement or changing thresholds"
+      },
+      "D": {
+        "instrument_hashes": {
+          "experiment.py": "89d9d5c125c9153ca8a641267a983e71c0427e1600a45faf03d6f3761b125dfe",
+          "trace_engine.py": "c0c92061100a689ab59698a46e22a96e96d7bb3bd99a21ec292d7aaa30e4415a",
+          "boost_blossom.cpp": "47806e6b331e088d209e51143d18cb5d5cc7a2e2d3d6d8914478bff4b7b8c2d3",
+          "boost_blossom": "96087f807c3845193da871aa8a8f83092c095a0dcf2ab0862ace85b76eebf995"
+        },
+        "archive_sha256": "8e4e6705954d9d9e864da6ea0b1607f7ca061ec87d1c9e9ede14b951e2a2ba67",
+        "archive_path": "/Mercados-de-pareja/ABH-N277-N296/ESBM_ABH_N277_N296_PREOUTCOME_INSTRUMENTS.zip",
+        "freeze_rule": "Commit this A–J + hash before any outcome. Code immutable. Repair requires new prereg commit and retention of first receipt."
+      },
+      "E": {
+        "status_at_freeze": "NOT_EXECUTED",
+        "receipt": "results/N284.json",
+        "planned_runner": "python experiment.py 284 --freeze freeze.json",
+        "resources": "Run each cycle separately with external 75s wall cap, Boost subprocess 4-6s, no expensive CI; memory monitoring and errors preserved",
+        "status": "EXECUTED",
+        "receipt_sha256": "cdc553c3e802ae3c4f7edcb02c0e76429d08fa9103e9b3f07185b44c93a1d2ad",
+        "receipt_path": "results/N284.json",
+        "seconds": 0.06,
+        "observed": "10/10 n14 quantized/flat multiple optimum enumerations exact objective agree"
+      },
+      "F": {
+        "adversarial": "Negative input, ties, permuted IDs, reversed edge order, brute exact DP, MILP, frozen checks as relevant",
+        "nonuniqueness": "Report objective and pair set separately; no universal pair equality under ties",
+        "observed_adversarial": "VALID_TECHNICAL_CONTROL",
+        "limitations": "Float precision, nonuniqueness, timeouts or archival QA classified separately; full outcomes archived in ZIP"
+      },
+      "G": {
+        "independence": "Independent software solvers but same synthetic mechanisms and stimuli; historical TS not available. N293 self-audit not external replication.",
+        "human": "No real human original outcomes or independent validation",
+        "actual_external_human_replication": false,
+        "actual_original_Python_executable": false,
+        "actual_historical_TS_executable": false
+      },
+      "H": {
+        "prior": "P-TRAJECTORY-INVARIANCE",
+        "planned": "U198 qualitative only NO_CHANGE_WITH_REASON absent new human observation. SRC112 only if genuinely new independently sourced primary documentation",
+        "recorded_update": "U198",
+        "prior_probability_change": false,
+        "source_count": 113
+      },
+      "I": {
+        "grade_scientific": "0/3",
+        "CT2_scientific_before": 7,
+        "CT2_scientific_after_planned": 7,
+        "R5_human": "STOP",
+        "DRIFT": "D0 or D1 within software QA, not new substantive human phenomenon",
+        "CT2_scientific_after": 7,
+        "new_human_validation": false,
+        "technical_class": "VALID_TECHNICAL_CONTROL"
+      },
+      "J": {
+        "possible": "VALID_PASS / VALID_NEGATIVE / INVALID / BLOCKED",
+        "slot": "Count at most once after actual useful execution; a time-out on predeclared control is valid negative; merely preparing code not valid",
+        "branching": "Do not force quota without distinct tests",
+        "observed_decision": "CLOSE_TECHNICAL",
+        "cycle_executed": true,
+        "slot_spent_once": true,
+        "remaining_after": 12
+      }
+    },
+    {
+      "id": "N285",
+      "A": {
+        "question": "Permutation equivariance for verified unique matchings",
+        "unit": "Artificial graph or individual synthetic agent-tick; no human outcomes",
+        "estimand": "Cardinality-first exact matching objective and/or event identity, specified by cycle",
+        "outcome_proxy": "Executable check, not empirical model validity"
+      },
+      "B": {
+        "rivals": [
+          "NetworkX float64 maxcardinality original-semantics",
+          "NetworkX exact-integer maxcardinality",
+          "Boost C++ maximum_weighted_matching",
+          "SciPy HiGHS MILP/independent exhaustive DP where indicated"
+        ],
+        "null": "No demonstrated discrepancy in tested fixtures"
+      },
+      "C": {
+        "plan": "6 n14 continuous graphs",
+        "falsifier": "When DP uniqueness established, relabelled pair set fails to transform",
+        "stopping": "Do not continue beyond fixed fixture budget; preserve errors; no posthoc replacement or changing thresholds"
+      },
+      "D": {
+        "instrument_hashes": {
+          "experiment.py": "89d9d5c125c9153ca8a641267a983e71c0427e1600a45faf03d6f3761b125dfe",
+          "trace_engine.py": "c0c92061100a689ab59698a46e22a96e96d7bb3bd99a21ec292d7aaa30e4415a",
+          "boost_blossom.cpp": "47806e6b331e088d209e51143d18cb5d5cc7a2e2d3d6d8914478bff4b7b8c2d3",
+          "boost_blossom": "96087f807c3845193da871aa8a8f83092c095a0dcf2ab0862ace85b76eebf995"
+        },
+        "archive_sha256": "8e4e6705954d9d9e864da6ea0b1607f7ca061ec87d1c9e9ede14b951e2a2ba67",
+        "archive_path": "/Mercados-de-pareja/ABH-N277-N296/ESBM_ABH_N277_N296_PREOUTCOME_INSTRUMENTS.zip",
+        "freeze_rule": "Commit this A–J + hash before any outcome. Code immutable. Repair requires new prereg commit and retention of first receipt."
+      },
+      "E": {
+        "status_at_freeze": "NOT_EXECUTED",
+        "receipt": "results/N285.json",
+        "planned_runner": "python experiment.py 285 --freeze freeze.json",
+        "resources": "Run each cycle separately with external 75s wall cap, Boost subprocess 4-6s, no expensive CI; memory monitoring and errors preserved",
+        "status": "EXECUTED",
+        "receipt_sha256": "4194cad77006efa26f698e281ff0d94916333ffd31793d758616117bf6c4d6da",
+        "receipt_path": "results/N285.json",
+        "seconds": 0.08,
+        "observed": "6/6 n14 uniquely-optimal permutation pair identities equivariant"
+      },
+      "F": {
+        "adversarial": "Negative input, ties, permuted IDs, reversed edge order, brute exact DP, MILP, frozen checks as relevant",
+        "nonuniqueness": "Report objective and pair set separately; no universal pair equality under ties",
+        "observed_adversarial": "VALID_TECHNICAL_CONTROL",
+        "limitations": "Float precision, nonuniqueness, timeouts or archival QA classified separately; full outcomes archived in ZIP"
+      },
+      "G": {
+        "independence": "Independent software solvers but same synthetic mechanisms and stimuli; historical TS not available. N293 self-audit not external replication.",
+        "human": "No real human original outcomes or independent validation",
+        "actual_external_human_replication": false,
+        "actual_original_Python_executable": false,
+        "actual_historical_TS_executable": false
+      },
+      "H": {
+        "prior": "P-TRAJECTORY-INVARIANCE",
+        "planned": "U198 qualitative only NO_CHANGE_WITH_REASON absent new human observation. SRC112 only if genuinely new independently sourced primary documentation",
+        "recorded_update": "U198",
+        "prior_probability_change": false,
+        "source_count": 113
+      },
+      "I": {
+        "grade_scientific": "0/3",
+        "CT2_scientific_before": 7,
+        "CT2_scientific_after_planned": 7,
+        "R5_human": "STOP",
+        "DRIFT": "D0 or D1 within software QA, not new substantive human phenomenon",
+        "CT2_scientific_after": 7,
+        "new_human_validation": false,
+        "technical_class": "VALID_TECHNICAL_CONTROL"
+      },
+      "J": {
+        "possible": "VALID_PASS / VALID_NEGATIVE / INVALID / BLOCKED",
+        "slot": "Count at most once after actual useful execution; a time-out on predeclared control is valid negative; merely preparing code not valid",
+        "branching": "Do not force quota without distinct tests",
+        "observed_decision": "CLOSE_TECHNICAL",
+        "cycle_executed": true,
+        "slot_spent_once": true,
+        "remaining_after": 11
+      }
+    },
+    {
+      "id": "N286",
+      "A": {
+        "question": "Nonunique matching permutation counterexamples",
+        "unit": "Artificial graph or individual synthetic agent-tick; no human outcomes",
+        "estimand": "Cardinality-first exact matching objective and/or event identity, specified by cycle",
+        "outcome_proxy": "Executable check, not empirical model validity"
+      },
+      "B": {
+        "rivals": [
+          "NetworkX float64 maxcardinality original-semantics",
+          "NetworkX exact-integer maxcardinality",
+          "Boost C++ maximum_weighted_matching",
+          "SciPy HiGHS MILP/independent exhaustive DP where indicated"
+        ],
+        "null": "No demonstrated discrepancy in tested fixtures"
+      },
+      "C": {
+        "plan": "6 n12 flat graphs",
+        "falsifier": "Wrongly interpreted tie-different pairs as solver invalid despite same objective",
+        "stopping": "Do not continue beyond fixed fixture budget; preserve errors; no posthoc replacement or changing thresholds"
+      },
+      "D": {
+        "instrument_hashes": {
+          "experiment.py": "89d9d5c125c9153ca8a641267a983e71c0427e1600a45faf03d6f3761b125dfe",
+          "trace_engine.py": "c0c92061100a689ab59698a46e22a96e96d7bb3bd99a21ec292d7aaa30e4415a",
+          "boost_blossom.cpp": "47806e6b331e088d209e51143d18cb5d5cc7a2e2d3d6d8914478bff4b7b8c2d3",
+          "boost_blossom": "96087f807c3845193da871aa8a8f83092c095a0dcf2ab0862ace85b76eebf995"
+        },
+        "archive_sha256": "8e4e6705954d9d9e864da6ea0b1607f7ca061ec87d1c9e9ede14b951e2a2ba67",
+        "archive_path": "/Mercados-de-pareja/ABH-N277-N296/ESBM_ABH_N277_N296_PREOUTCOME_INSTRUMENTS.zip",
+        "freeze_rule": "Commit this A–J + hash before any outcome. Code immutable. Repair requires new prereg commit and retention of first receipt."
+      },
+      "E": {
+        "status_at_freeze": "NOT_EXECUTED",
+        "receipt": "results/N286.json",
+        "planned_runner": "python experiment.py 286 --freeze freeze.json",
+        "resources": "Run each cycle separately with external 75s wall cap, Boost subprocess 4-6s, no expensive CI; memory monitoring and errors preserved",
+        "status": "EXECUTED",
+        "receipt_sha256": "93cf28a00a9fe195ae65a4b32f5fd14d5c7bf13b984bc3dc8600ce0b380be808",
+        "receipt_path": "results/N286.json",
+        "seconds": 0.02,
+        "observed": "6/6 n12 flat nonunique relabel objective invariant, pair sets unequal"
+      },
+      "F": {
+        "adversarial": "Negative input, ties, permuted IDs, reversed edge order, brute exact DP, MILP, frozen checks as relevant",
+        "nonuniqueness": "Report objective and pair set separately; no universal pair equality under ties",
+        "observed_adversarial": "VALID_NONUNIQUE_PERMUTATION_COUNTEREXAMPLE",
+        "limitations": "Float precision, nonuniqueness, timeouts or archival QA classified separately; full outcomes archived in ZIP"
+      },
+      "G": {
+        "independence": "Independent software solvers but same synthetic mechanisms and stimuli; historical TS not available. N293 self-audit not external replication.",
+        "human": "No real human original outcomes or independent validation",
+        "actual_external_human_replication": false,
+        "actual_original_Python_executable": false,
+        "actual_historical_TS_executable": false
+      },
+      "H": {
+        "prior": "P-TRAJECTORY-INVARIANCE",
+        "planned": "U198 qualitative only NO_CHANGE_WITH_REASON absent new human observation. SRC112 only if genuinely new independently sourced primary documentation",
+        "recorded_update": "U198",
+        "prior_probability_change": false,
+        "source_count": 113
+      },
+      "I": {
+        "grade_scientific": "0/3",
+        "CT2_scientific_before": 7,
+        "CT2_scientific_after_planned": 7,
+        "R5_human": "STOP",
+        "DRIFT": "D0 or D1 within software QA, not new substantive human phenomenon",
+        "CT2_scientific_after": 7,
+        "new_human_validation": false,
+        "technical_class": "VALID_NONUNIQUE_PERMUTATION_COUNTEREXAMPLE"
+      },
+      "J": {
+        "possible": "VALID_PASS / VALID_NEGATIVE / INVALID / BLOCKED",
+        "slot": "Count at most once after actual useful execution; a time-out on predeclared control is valid negative; merely preparing code not valid",
+        "branching": "Do not force quota without distinct tests",
+        "observed_decision": "CLOSE_TECHNICAL",
+        "cycle_executed": true,
+        "slot_spent_once": true,
+        "remaining_after": 10
+      }
+    },
+    {
+      "id": "N287",
+      "A": {
+        "question": "Original graph edge-order reversal invariance",
+        "unit": "Artificial graph or individual synthetic agent-tick; no human outcomes",
+        "estimand": "Cardinality-first exact matching objective and/or event identity, specified by cycle",
+        "outcome_proxy": "Executable check, not empirical model validity"
+      },
+      "B": {
+        "rivals": [
+          "NetworkX float64 maxcardinality original-semantics",
+          "NetworkX exact-integer maxcardinality",
+          "Boost C++ maximum_weighted_matching",
+          "SciPy HiGHS MILP/independent exhaustive DP where indicated"
+        ],
+        "null": "No demonstrated discrepancy in tested fixtures"
+      },
+      "C": {
+        "plan": "8 n20 continuous/flat fixtures",
+        "falsifier": "Objective changes after insertion order, or undescribed pair divergence",
+        "stopping": "Do not continue beyond fixed fixture budget; preserve errors; no posthoc replacement or changing thresholds"
+      },
+      "D": {
+        "instrument_hashes": {
+          "experiment.py": "89d9d5c125c9153ca8a641267a983e71c0427e1600a45faf03d6f3761b125dfe",
+          "trace_engine.py": "c0c92061100a689ab59698a46e22a96e96d7bb3bd99a21ec292d7aaa30e4415a",
+          "boost_blossom.cpp": "47806e6b331e088d209e51143d18cb5d5cc7a2e2d3d6d8914478bff4b7b8c2d3",
+          "boost_blossom": "96087f807c3845193da871aa8a8f83092c095a0dcf2ab0862ace85b76eebf995"
+        },
+        "archive_sha256": "8e4e6705954d9d9e864da6ea0b1607f7ca061ec87d1c9e9ede14b951e2a2ba67",
+        "archive_path": "/Mercados-de-pareja/ABH-N277-N296/ESBM_ABH_N277_N296_PREOUTCOME_INSTRUMENTS.zip",
+        "freeze_rule": "Commit this A–J + hash before any outcome. Code immutable. Repair requires new prereg commit and retention of first receipt."
+      },
+      "E": {
+        "status_at_freeze": "NOT_EXECUTED",
+        "receipt": "results/N287.json",
+        "planned_runner": "python experiment.py 287 --freeze freeze.json",
+        "resources": "Run each cycle separately with external 75s wall cap, Boost subprocess 4-6s, no expensive CI; memory monitoring and errors preserved",
+        "status": "EXECUTED",
+        "receipt_sha256": "4f2df79a31965c0844a570b0f76cbd8176e3248d4f4172a4fec712b9b5a7941b",
+        "receipt_path": "results/N287.json",
+        "seconds": 0.03,
+        "observed": "8/8 n20 reversed insertion order objective invariant, pair identities differ 4/8 in tied cases"
+      },
+      "F": {
+        "adversarial": "Negative input, ties, permuted IDs, reversed edge order, brute exact DP, MILP, frozen checks as relevant",
+        "nonuniqueness": "Report objective and pair set separately; no universal pair equality under ties",
+        "observed_adversarial": "VALID_TECHNICAL_CONTROL",
+        "limitations": "Float precision, nonuniqueness, timeouts or archival QA classified separately; full outcomes archived in ZIP"
+      },
+      "G": {
+        "independence": "Independent software solvers but same synthetic mechanisms and stimuli; historical TS not available. N293 self-audit not external replication.",
+        "human": "No real human original outcomes or independent validation",
+        "actual_external_human_replication": false,
+        "actual_original_Python_executable": false,
+        "actual_historical_TS_executable": false
+      },
+      "H": {
+        "prior": "P-TRAJECTORY-INVARIANCE",
+        "planned": "U198 qualitative only NO_CHANGE_WITH_REASON absent new human observation. SRC112 only if genuinely new independently sourced primary documentation",
+        "recorded_update": "U198",
+        "prior_probability_change": false,
+        "source_count": 113
+      },
+      "I": {
+        "grade_scientific": "0/3",
+        "CT2_scientific_before": 7,
+        "CT2_scientific_after_planned": 7,
+        "R5_human": "STOP",
+        "DRIFT": "D0 or D1 within software QA, not new substantive human phenomenon",
+        "CT2_scientific_after": 7,
+        "new_human_validation": false,
+        "technical_class": "VALID_TECHNICAL_CONTROL"
+      },
+      "J": {
+        "possible": "VALID_PASS / VALID_NEGATIVE / INVALID / BLOCKED",
+        "slot": "Count at most once after actual useful execution; a time-out on predeclared control is valid negative; merely preparing code not valid",
+        "branching": "Do not force quota without distinct tests",
+        "observed_decision": "CLOSE_TECHNICAL",
+        "cycle_executed": true,
+        "slot_spent_once": true,
+        "remaining_after": 9
+      }
+    },
+    {
+      "id": "N288",
+      "A": {
+        "question": "Disconnected component additive objective n144",
+        "unit": "Artificial graph or individual synthetic agent-tick; no human outcomes",
+        "estimand": "Cardinality-first exact matching objective and/or event identity, specified by cycle",
+        "outcome_proxy": "Executable check, not empirical model validity"
+      },
+      "B": {
+        "rivals": [
+          "NetworkX float64 maxcardinality original-semantics",
+          "NetworkX exact-integer maxcardinality",
+          "Boost C++ maximum_weighted_matching",
+          "SciPy HiGHS MILP/independent exhaustive DP where indicated"
+        ],
+        "null": "No demonstrated discrepancy in tested fixtures"
+      },
+      "C": {
+        "plan": "4 synthetic graphs, 12 blocks of 12",
+        "falsifier": "Whole-graph and componentwise optimum differ",
+        "stopping": "Do not continue beyond fixed fixture budget; preserve errors; no posthoc replacement or changing thresholds"
+      },
+      "D": {
+        "instrument_hashes": {
+          "experiment.py": "89d9d5c125c9153ca8a641267a983e71c0427e1600a45faf03d6f3761b125dfe",
+          "trace_engine.py": "c0c92061100a689ab59698a46e22a96e96d7bb3bd99a21ec292d7aaa30e4415a",
+          "boost_blossom.cpp": "47806e6b331e088d209e51143d18cb5d5cc7a2e2d3d6d8914478bff4b7b8c2d3",
+          "boost_blossom": "96087f807c3845193da871aa8a8f83092c095a0dcf2ab0862ace85b76eebf995"
+        },
+        "archive_sha256": "8e4e6705954d9d9e864da6ea0b1607f7ca061ec87d1c9e9ede14b951e2a2ba67",
+        "archive_path": "/Mercados-de-pareja/ABH-N277-N296/ESBM_ABH_N277_N296_PREOUTCOME_INSTRUMENTS.zip",
+        "freeze_rule": "Commit this A–J + hash before any outcome. Code immutable. Repair requires new prereg commit and retention of first receipt."
+      },
+      "E": {
+        "status_at_freeze": "NOT_EXECUTED",
+        "receipt": "results/N288.json",
+        "planned_runner": "python experiment.py 288 --freeze freeze.json",
+        "resources": "Run each cycle separately with external 75s wall cap, Boost subprocess 4-6s, no expensive CI; memory monitoring and errors preserved",
+        "status": "EXECUTED",
+        "receipt_sha256": "26e988ee607cd9e905a61bc1f44c3ae40e090ba46f0959f9666c2dc5cd165ebd",
+        "receipt_path": "results/N288.json",
+        "seconds": 0.05,
+        "observed": "4/4 disconnected n144 blockwise versus global matching pair identities agree"
+      },
+      "F": {
+        "adversarial": "Negative input, ties, permuted IDs, reversed edge order, brute exact DP, MILP, frozen checks as relevant",
+        "nonuniqueness": "Report objective and pair set separately; no universal pair equality under ties",
+        "observed_adversarial": "VALID_TECHNICAL_CONTROL",
+        "limitations": "Float precision, nonuniqueness, timeouts or archival QA classified separately; full outcomes archived in ZIP"
+      },
+      "G": {
+        "independence": "Independent software solvers but same synthetic mechanisms and stimuli; historical TS not available. N293 self-audit not external replication.",
+        "human": "No real human original outcomes or independent validation",
+        "actual_external_human_replication": false,
+        "actual_original_Python_executable": false,
+        "actual_historical_TS_executable": false
+      },
+      "H": {
+        "prior": "P-TRAJECTORY-INVARIANCE",
+        "planned": "U198 qualitative only NO_CHANGE_WITH_REASON absent new human observation. SRC112 only if genuinely new independently sourced primary documentation",
+        "recorded_update": "U198",
+        "prior_probability_change": false,
+        "source_count": 113
+      },
+      "I": {
+        "grade_scientific": "0/3",
+        "CT2_scientific_before": 7,
+        "CT2_scientific_after_planned": 7,
+        "R5_human": "STOP",
+        "DRIFT": "D0 or D1 within software QA, not new substantive human phenomenon",
+        "CT2_scientific_after": 7,
+        "new_human_validation": false,
+        "technical_class": "VALID_TECHNICAL_CONTROL"
+      },
+      "J": {
+        "possible": "VALID_PASS / VALID_NEGATIVE / INVALID / BLOCKED",
+        "slot": "Count at most once after actual useful execution; a time-out on predeclared control is valid negative; merely preparing code not valid",
+        "branching": "Do not force quota without distinct tests",
+        "observed_decision": "CLOSE_TECHNICAL",
+        "cycle_executed": true,
+        "slot_spent_once": true,
+        "remaining_after": 8
+      }
+    },
+    {
+      "id": "N289",
+      "A": {
+        "question": "Odd n143 sparse Boost reliability under three edge-weight families",
+        "unit": "Artificial graph or individual synthetic agent-tick; no human outcomes",
+        "estimand": "Cardinality-first exact matching objective and/or event identity, specified by cycle",
+        "outcome_proxy": "Executable check, not empirical model validity"
+      },
+      "B": {
+        "rivals": [
+          "NetworkX float64 maxcardinality original-semantics",
+          "NetworkX exact-integer maxcardinality",
+          "Boost C++ maximum_weighted_matching",
+          "SciPy HiGHS MILP/independent exhaustive DP where indicated"
+        ],
+        "null": "No demonstrated discrepancy in tested fixtures"
+      },
+      "C": {
+        "plan": "3 fixtures continuous, flat, near",
+        "falsifier": "Crash, timeout 4s or suboptimal objective",
+        "stopping": "Do not continue beyond fixed fixture budget; preserve errors; no posthoc replacement or changing thresholds"
+      },
+      "D": {
+        "instrument_hashes": {
+          "experiment.py": "89d9d5c125c9153ca8a641267a983e71c0427e1600a45faf03d6f3761b125dfe",
+          "trace_engine.py": "c0c92061100a689ab59698a46e22a96e96d7bb3bd99a21ec292d7aaa30e4415a",
+          "boost_blossom.cpp": "47806e6b331e088d209e51143d18cb5d5cc7a2e2d3d6d8914478bff4b7b8c2d3",
+          "boost_blossom": "96087f807c3845193da871aa8a8f83092c095a0dcf2ab0862ace85b76eebf995"
+        },
+        "archive_sha256": "8e4e6705954d9d9e864da6ea0b1607f7ca061ec87d1c9e9ede14b951e2a2ba67",
+        "archive_path": "/Mercados-de-pareja/ABH-N277-N296/ESBM_ABH_N277_N296_PREOUTCOME_INSTRUMENTS.zip",
+        "freeze_rule": "Commit this A–J + hash before any outcome. Code immutable. Repair requires new prereg commit and retention of first receipt."
+      },
+      "E": {
+        "status_at_freeze": "NOT_EXECUTED",
+        "receipt": "results/N289.json",
+        "planned_runner": "python experiment.py 289 --freeze freeze.json",
+        "resources": "Run each cycle separately with external 75s wall cap, Boost subprocess 4-6s, no expensive CI; memory monitoring and errors preserved",
+        "status": "EXECUTED",
+        "receipt_sha256": "3812a323af64d46978831ef9f9db8d6953c9d2a44e6b9b75a8f301c6f9bba03e",
+        "receipt_path": "results/N289.json",
+        "seconds": 0.2,
+        "observed": "3/3 n143 sparse weight variants Boost solves; tied case can choose alternate optimum"
+      },
+      "F": {
+        "adversarial": "Negative input, ties, permuted IDs, reversed edge order, brute exact DP, MILP, frozen checks as relevant",
+        "nonuniqueness": "Report objective and pair set separately; no universal pair equality under ties",
+        "observed_adversarial": "VALID_TECHNICAL_CONTROL",
+        "limitations": "Float precision, nonuniqueness, timeouts or archival QA classified separately; full outcomes archived in ZIP"
+      },
+      "G": {
+        "independence": "Independent software solvers but same synthetic mechanisms and stimuli; historical TS not available. N293 self-audit not external replication.",
+        "human": "No real human original outcomes or independent validation",
+        "actual_external_human_replication": false,
+        "actual_original_Python_executable": false,
+        "actual_historical_TS_executable": false
+      },
+      "H": {
+        "prior": "P-TRAJECTORY-INVARIANCE",
+        "planned": "U198 qualitative only NO_CHANGE_WITH_REASON absent new human observation. SRC112 only if genuinely new independently sourced primary documentation",
+        "recorded_update": "U198",
+        "prior_probability_change": false,
+        "source_count": 113
+      },
+      "I": {
+        "grade_scientific": "0/3",
+        "CT2_scientific_before": 7,
+        "CT2_scientific_after_planned": 7,
+        "R5_human": "STOP",
+        "DRIFT": "D0 or D1 within software QA, not new substantive human phenomenon",
+        "CT2_scientific_after": 7,
+        "new_human_validation": false,
+        "technical_class": "VALID_TECHNICAL_CONTROL"
+      },
+      "J": {
+        "possible": "VALID_PASS / VALID_NEGATIVE / INVALID / BLOCKED",
+        "slot": "Count at most once after actual useful execution; a time-out on predeclared control is valid negative; merely preparing code not valid",
+        "branching": "Do not force quota without distinct tests",
+        "observed_decision": "CLOSE_TECHNICAL",
+        "cycle_executed": true,
+        "slot_spent_once": true,
+        "remaining_after": 7
+      }
+    },
+    {
+      "id": "N290",
+      "A": {
+        "question": "Near-complete n144 Boost reliability across continuous/flat/ULP weights",
+        "unit": "Artificial graph or individual synthetic agent-tick; no human outcomes",
+        "estimand": "Cardinality-first exact matching objective and/or event identity, specified by cycle",
+        "outcome_proxy": "Executable check, not empirical model validity"
+      },
+      "B": {
+        "rivals": [
+          "NetworkX float64 maxcardinality original-semantics",
+          "NetworkX exact-integer maxcardinality",
+          "Boost C++ maximum_weighted_matching",
+          "SciPy HiGHS MILP/independent exhaustive DP where indicated"
+        ],
+        "null": "No demonstrated discrepancy in tested fixtures"
+      },
+      "C": {
+        "plan": "3 fixtures density .98 timeout 5s",
+        "falsifier": "Crash, timeout or suboptimal objective",
+        "stopping": "Do not continue beyond fixed fixture budget; preserve errors; no posthoc replacement or changing thresholds"
+      },
+      "D": {
+        "instrument_hashes": {
+          "experiment.py": "89d9d5c125c9153ca8a641267a983e71c0427e1600a45faf03d6f3761b125dfe",
+          "trace_engine.py": "c0c92061100a689ab59698a46e22a96e96d7bb3bd99a21ec292d7aaa30e4415a",
+          "boost_blossom.cpp": "47806e6b331e088d209e51143d18cb5d5cc7a2e2d3d6d8914478bff4b7b8c2d3",
+          "boost_blossom": "96087f807c3845193da871aa8a8f83092c095a0dcf2ab0862ace85b76eebf995"
+        },
+        "archive_sha256": "8e4e6705954d9d9e864da6ea0b1607f7ca061ec87d1c9e9ede14b951e2a2ba67",
+        "archive_path": "/Mercados-de-pareja/ABH-N277-N296/ESBM_ABH_N277_N296_PREOUTCOME_INSTRUMENTS.zip",
+        "freeze_rule": "Commit this A–J + hash before any outcome. Code immutable. Repair requires new prereg commit and retention of first receipt."
+      },
+      "E": {
+        "status_at_freeze": "NOT_EXECUTED",
+        "receipt": "results/N290.json",
+        "planned_runner": "python experiment.py 290 --freeze freeze.json",
+        "resources": "Run each cycle separately with external 75s wall cap, Boost subprocess 4-6s, no expensive CI; memory monitoring and errors preserved",
+        "status": "EXECUTED",
+        "receipt_sha256": "e89c13abf6cb2b93d9d1339fa7dac964134015a91f13cabf177e324347f66d5e",
+        "receipt_path": "results/N290.json",
+        "seconds": 12.56,
+        "observed": "n144 near-complete Boost continuous solves, flat and ulp two timeouts at 5s"
+      },
+      "F": {
+        "adversarial": "Negative input, ties, permuted IDs, reversed edge order, brute exact DP, MILP, frozen checks as relevant",
+        "nonuniqueness": "Report objective and pair set separately; no universal pair equality under ties",
+        "observed_adversarial": "VALID_BOOST_RESOURCE_NEGATIVE",
+        "limitations": "Float precision, nonuniqueness, timeouts or archival QA classified separately; full outcomes archived in ZIP"
+      },
+      "G": {
+        "independence": "Independent software solvers but same synthetic mechanisms and stimuli; historical TS not available. N293 self-audit not external replication.",
+        "human": "No real human original outcomes or independent validation",
+        "actual_external_human_replication": false,
+        "actual_original_Python_executable": false,
+        "actual_historical_TS_executable": false
+      },
+      "H": {
+        "prior": "P-TRAJECTORY-INVARIANCE",
+        "planned": "U198 qualitative only NO_CHANGE_WITH_REASON absent new human observation. SRC112 only if genuinely new independently sourced primary documentation",
+        "recorded_update": "U198",
+        "prior_probability_change": false,
+        "source_count": 113
+      },
+      "I": {
+        "grade_scientific": "0/3",
+        "CT2_scientific_before": 7,
+        "CT2_scientific_after_planned": 7,
+        "R5_human": "STOP",
+        "DRIFT": "D0 or D1 within software QA, not new substantive human phenomenon",
+        "CT2_scientific_after": 7,
+        "new_human_validation": false,
+        "technical_class": "VALID_BOOST_RESOURCE_NEGATIVE"
+      },
+      "J": {
+        "possible": "VALID_PASS / VALID_NEGATIVE / INVALID / BLOCKED",
+        "slot": "Count at most once after actual useful execution; a time-out on predeclared control is valid negative; merely preparing code not valid",
+        "branching": "Do not force quota without distinct tests",
+        "observed_decision": "RETAIN_TIMEOUT",
+        "cycle_executed": true,
+        "slot_spent_once": true,
+        "remaining_after": 6
+      }
+    },
+    {
+      "id": "N291",
+      "A": {
+        "question": "Boost CLI malformed-input adversarial resistance",
+        "unit": "Artificial graph or individual synthetic agent-tick; no human outcomes",
+        "estimand": "Cardinality-first exact matching objective and/or event identity, specified by cycle",
+        "outcome_proxy": "Executable check, not empirical model validity"
+      },
+      "B": {
+        "rivals": [
+          "NetworkX float64 maxcardinality original-semantics",
+          "NetworkX exact-integer maxcardinality",
+          "Boost C++ maximum_weighted_matching",
+          "SciPy HiGHS MILP/independent exhaustive DP where indicated"
+        ],
+        "null": "No demonstrated discrepancy in tested fixtures"
+      },
+      "C": {
+        "plan": "Six invalid payloads, 2s each",
+        "falsifier": "Incorrect acceptance, crash or timeout",
+        "stopping": "Do not continue beyond fixed fixture budget; preserve errors; no posthoc replacement or changing thresholds"
+      },
+      "D": {
+        "instrument_hashes": {
+          "experiment.py": "89d9d5c125c9153ca8a641267a983e71c0427e1600a45faf03d6f3761b125dfe",
+          "trace_engine.py": "c0c92061100a689ab59698a46e22a96e96d7bb3bd99a21ec292d7aaa30e4415a",
+          "boost_blossom.cpp": "47806e6b331e088d209e51143d18cb5d5cc7a2e2d3d6d8914478bff4b7b8c2d3",
+          "boost_blossom": "96087f807c3845193da871aa8a8f83092c095a0dcf2ab0862ace85b76eebf995"
+        },
+        "archive_sha256": "8e4e6705954d9d9e864da6ea0b1607f7ca061ec87d1c9e9ede14b951e2a2ba67",
+        "archive_path": "/Mercados-de-pareja/ABH-N277-N296/ESBM_ABH_N277_N296_PREOUTCOME_INSTRUMENTS.zip",
+        "freeze_rule": "Commit this A–J + hash before any outcome. Code immutable. Repair requires new prereg commit and retention of first receipt."
+      },
+      "E": {
+        "status_at_freeze": "NOT_EXECUTED",
+        "receipt": "results/N291.json",
+        "planned_runner": "python experiment.py 291 --freeze freeze.json",
+        "resources": "Run each cycle separately with external 75s wall cap, Boost subprocess 4-6s, no expensive CI; memory monitoring and errors preserved",
+        "status": "EXECUTED",
+        "receipt_sha256": "24b96162852cc7fbf94be558248d3b4537bbd17cd694b62206b4bcd187d4a0bc",
+        "receipt_path": "results/N291.json",
+        "seconds": 0.03,
+        "observed": "6/6 malformed C++ input payloads rejected without crash"
+      },
+      "F": {
+        "adversarial": "Negative input, ties, permuted IDs, reversed edge order, brute exact DP, MILP, frozen checks as relevant",
+        "nonuniqueness": "Report objective and pair set separately; no universal pair equality under ties",
+        "observed_adversarial": "VALID_TECHNICAL_CONTROL",
+        "limitations": "Float precision, nonuniqueness, timeouts or archival QA classified separately; full outcomes archived in ZIP"
+      },
+      "G": {
+        "independence": "Independent software solvers but same synthetic mechanisms and stimuli; historical TS not available. N293 self-audit not external replication.",
+        "human": "No real human original outcomes or independent validation",
+        "actual_external_human_replication": false,
+        "actual_original_Python_executable": false,
+        "actual_historical_TS_executable": false
+      },
+      "H": {
+        "prior": "P-TRAJECTORY-INVARIANCE",
+        "planned": "U198 qualitative only NO_CHANGE_WITH_REASON absent new human observation. SRC112 only if genuinely new independently sourced primary documentation",
+        "recorded_update": "U198",
+        "prior_probability_change": false,
+        "source_count": 113
+      },
+      "I": {
+        "grade_scientific": "0/3",
+        "CT2_scientific_before": 7,
+        "CT2_scientific_after_planned": 7,
+        "R5_human": "STOP",
+        "DRIFT": "D0 or D1 within software QA, not new substantive human phenomenon",
+        "CT2_scientific_after": 7,
+        "new_human_validation": false,
+        "technical_class": "VALID_TECHNICAL_CONTROL"
+      },
+      "J": {
+        "possible": "VALID_PASS / VALID_NEGATIVE / INVALID / BLOCKED",
+        "slot": "Count at most once after actual useful execution; a time-out on predeclared control is valid negative; merely preparing code not valid",
+        "branching": "Do not force quota without distinct tests",
+        "observed_decision": "CLOSE_TECHNICAL",
+        "cycle_executed": true,
+        "slot_spent_once": true,
+        "remaining_after": 5
+      }
+    },
+    {
+      "id": "N292",
+      "A": {
+        "question": "IEEE-754 integer encoding safe bound at n up to 300",
+        "unit": "Artificial graph or individual synthetic agent-tick; no human outcomes",
+        "estimand": "Cardinality-first exact matching objective and/or event identity, specified by cycle",
+        "outcome_proxy": "Executable check, not empirical model validity"
+      },
+      "B": {
+        "rivals": [
+          "NetworkX float64 maxcardinality original-semantics",
+          "NetworkX exact-integer maxcardinality",
+          "Boost C++ maximum_weighted_matching",
+          "SciPy HiGHS MILP/independent exhaustive DP where indicated"
+        ],
+        "null": "No demonstrated discrepancy in tested fixtures"
+      },
+      "C": {
+        "plan": "n 2,10,100,144,200,256,300",
+        "falsifier": "Fail to reject unsafe cardinality bonus or reject safe one",
+        "stopping": "Do not continue beyond fixed fixture budget; preserve errors; no posthoc replacement or changing thresholds"
+      },
+      "D": {
+        "instrument_hashes": {
+          "experiment.py": "89d9d5c125c9153ca8a641267a983e71c0427e1600a45faf03d6f3761b125dfe",
+          "trace_engine.py": "c0c92061100a689ab59698a46e22a96e96d7bb3bd99a21ec292d7aaa30e4415a",
+          "boost_blossom.cpp": "47806e6b331e088d209e51143d18cb5d5cc7a2e2d3d6d8914478bff4b7b8c2d3",
+          "boost_blossom": "96087f807c3845193da871aa8a8f83092c095a0dcf2ab0862ace85b76eebf995"
+        },
+        "archive_sha256": "8e4e6705954d9d9e864da6ea0b1607f7ca061ec87d1c9e9ede14b951e2a2ba67",
+        "archive_path": "/Mercados-de-pareja/ABH-N277-N296/ESBM_ABH_N277_N296_PREOUTCOME_INSTRUMENTS.zip",
+        "freeze_rule": "Commit this A–J + hash before any outcome. Code immutable. Repair requires new prereg commit and retention of first receipt."
+      },
+      "E": {
+        "status_at_freeze": "NOT_EXECUTED",
+        "receipt": "results/N292.json",
+        "planned_runner": "python experiment.py 292 --freeze freeze.json",
+        "resources": "Run each cycle separately with external 75s wall cap, Boost subprocess 4-6s, no expensive CI; memory monitoring and errors preserved",
+        "status": "EXECUTED",
+        "receipt_sha256": "99a993d91a0f0dfb4a407b93d0f86013de12c68753c6abc4bed893470f159873",
+        "receipt_path": "results/N292.json",
+        "seconds": 0,
+        "observed": "7 n ranges test integer safe bound; n200/256/300 rejected safely"
+      },
+      "F": {
+        "adversarial": "Negative input, ties, permuted IDs, reversed edge order, brute exact DP, MILP, frozen checks as relevant",
+        "nonuniqueness": "Report objective and pair set separately; no universal pair equality under ties",
+        "observed_adversarial": "VALID_TECHNICAL_CONTROL",
+        "limitations": "Float precision, nonuniqueness, timeouts or archival QA classified separately; full outcomes archived in ZIP"
+      },
+      "G": {
+        "independence": "Independent software solvers but same synthetic mechanisms and stimuli; historical TS not available. N293 self-audit not external replication.",
+        "human": "No real human original outcomes or independent validation",
+        "actual_external_human_replication": false,
+        "actual_original_Python_executable": false,
+        "actual_historical_TS_executable": false
+      },
+      "H": {
+        "prior": "P-TRAJECTORY-INVARIANCE",
+        "planned": "U198 qualitative only NO_CHANGE_WITH_REASON absent new human observation. SRC112 only if genuinely new independently sourced primary documentation",
+        "recorded_update": "U198",
+        "prior_probability_change": false,
+        "source_count": 113
+      },
+      "I": {
+        "grade_scientific": "0/3",
+        "CT2_scientific_before": 7,
+        "CT2_scientific_after_planned": 7,
+        "R5_human": "STOP",
+        "DRIFT": "D0 or D1 within software QA, not new substantive human phenomenon",
+        "CT2_scientific_after": 7,
+        "new_human_validation": false,
+        "technical_class": "VALID_TECHNICAL_CONTROL"
+      },
+      "J": {
+        "possible": "VALID_PASS / VALID_NEGATIVE / INVALID / BLOCKED",
+        "slot": "Count at most once after actual useful execution; a time-out on predeclared control is valid negative; merely preparing code not valid",
+        "branching": "Do not force quota without distinct tests",
+        "observed_decision": "CLOSE_TECHNICAL",
+        "cycle_executed": true,
+        "slot_spent_once": true,
+        "remaining_after": 4
+      }
+    },
+    {
+      "id": "N293",
+      "A": {
+        "question": "Reaudit of 120 old compressed individual traces with SHA and parse",
+        "unit": "Artificial graph or individual synthetic agent-tick; no human outcomes",
+        "estimand": "Cardinality-first exact matching objective and/or event identity, specified by cycle",
+        "outcome_proxy": "Executable check, not empirical model validity"
+      },
+      "B": {
+        "rivals": [
+          "NetworkX float64 maxcardinality original-semantics",
+          "NetworkX exact-integer maxcardinality",
+          "Boost C++ maximum_weighted_matching",
+          "SciPy HiGHS MILP/independent exhaustive DP where indicated"
+        ],
+        "null": "No demonstrated discrepancy in tested fixtures"
+      },
+      "C": {
+        "plan": "Read prior N257 results archive only",
+        "falsifier": "Corruption, missing files, malformed JSON or malformed tick data; QA provenance, not independent validation",
+        "stopping": "Do not continue beyond fixed fixture budget; preserve errors; no posthoc replacement or changing thresholds"
+      },
+      "D": {
+        "instrument_hashes": {
+          "experiment.py": "89d9d5c125c9153ca8a641267a983e71c0427e1600a45faf03d6f3761b125dfe",
+          "trace_engine.py": "c0c92061100a689ab59698a46e22a96e96d7bb3bd99a21ec292d7aaa30e4415a",
+          "boost_blossom.cpp": "47806e6b331e088d209e51143d18cb5d5cc7a2e2d3d6d8914478bff4b7b8c2d3",
+          "boost_blossom": "96087f807c3845193da871aa8a8f83092c095a0dcf2ab0862ace85b76eebf995"
+        },
+        "archive_sha256": "8e4e6705954d9d9e864da6ea0b1607f7ca061ec87d1c9e9ede14b951e2a2ba67",
+        "archive_path": "/Mercados-de-pareja/ABH-N277-N296/ESBM_ABH_N277_N296_PREOUTCOME_INSTRUMENTS.zip",
+        "freeze_rule": "Commit this A–J + hash before any outcome. Code immutable. Repair requires new prereg commit and retention of first receipt."
+      },
+      "E": {
+        "status_at_freeze": "NOT_EXECUTED",
+        "receipt": "results/N293.json",
+        "planned_runner": "python experiment.py 293 --freeze freeze.json",
+        "resources": "Run each cycle separately with external 75s wall cap, Boost subprocess 4-6s, no expensive CI; memory monitoring and errors preserved",
+        "status": "EXECUTED",
+        "receipt_sha256": "4b746c9ea1bc8468091d87379a21bcb692f9e9f7d8db8606b56af32e791472ba",
+        "receipt_path": "results/N293.json",
+        "seconds": 0.68,
+        "observed": "120 old N257 gzip traces reparsed without malformed ticks; archival QA only, not new cohort"
+      },
+      "F": {
+        "adversarial": "Negative input, ties, permuted IDs, reversed edge order, brute exact DP, MILP, frozen checks as relevant",
+        "nonuniqueness": "Report objective and pair set separately; no universal pair equality under ties",
+        "observed_adversarial": "ARCHIVAL_QA_ONLY",
+        "limitations": "Float precision, nonuniqueness, timeouts or archival QA classified separately; full outcomes archived in ZIP"
+      },
+      "G": {
+        "independence": "Independent software solvers but same synthetic mechanisms and stimuli; historical TS not available. N293 self-audit not external replication.",
+        "human": "No real human original outcomes or independent validation",
+        "actual_external_human_replication": false,
+        "actual_original_Python_executable": false,
+        "actual_historical_TS_executable": false
+      },
+      "H": {
+        "prior": "P-TRAJECTORY-INVARIANCE",
+        "planned": "U198 qualitative only NO_CHANGE_WITH_REASON absent new human observation. SRC112 only if genuinely new independently sourced primary documentation",
+        "recorded_update": "U198",
+        "prior_probability_change": false,
+        "source_count": 113
+      },
+      "I": {
+        "grade_scientific": "0/3",
+        "CT2_scientific_before": 7,
+        "CT2_scientific_after_planned": 7,
+        "R5_human": "STOP",
+        "DRIFT": "D0 or D1 within software QA, not new substantive human phenomenon",
+        "CT2_scientific_after": 7,
+        "new_human_validation": false,
+        "technical_class": "ARCHIVAL_QA_ONLY"
+      },
+      "J": {
+        "possible": "VALID_PASS / VALID_NEGATIVE / INVALID / BLOCKED",
+        "slot": "Count at most once after actual useful execution; a time-out on predeclared control is valid negative; merely preparing code not valid",
+        "branching": "Do not force quota without distinct tests",
+        "observed_decision": "ARCHIVAL_QA_NO_SCIENTIFIC_NOVELTY",
+        "cycle_executed": true,
+        "slot_spent_once": true,
+        "remaining_after": 3
+      }
+    },
+    {
+      "id": "N294",
+      "A": {
+        "question": "Field-specific fault injection in full directed ledger comparator",
+        "unit": "Artificial graph or individual synthetic agent-tick; no human outcomes",
+        "estimand": "Cardinality-first exact matching objective and/or event identity, specified by cycle",
+        "outcome_proxy": "Executable check, not empirical model validity"
+      },
+      "B": {
+        "rivals": [
+          "NetworkX float64 maxcardinality original-semantics",
+          "NetworkX exact-integer maxcardinality",
+          "Boost C++ maximum_weighted_matching",
+          "SciPy HiGHS MILP/independent exhaustive DP where indicated"
+        ],
+        "null": "No demonstrated discrepancy in tested fixtures"
+      },
+      "C": {
+        "plan": "10 fields in private rejection learning, 2 ticks",
+        "falsifier": "Injected wrong field not detected",
+        "stopping": "Do not continue beyond fixed fixture budget; preserve errors; no posthoc replacement or changing thresholds"
+      },
+      "D": {
+        "instrument_hashes": {
+          "experiment.py": "89d9d5c125c9153ca8a641267a983e71c0427e1600a45faf03d6f3761b125dfe",
+          "trace_engine.py": "c0c92061100a689ab59698a46e22a96e96d7bb3bd99a21ec292d7aaa30e4415a",
+          "boost_blossom.cpp": "47806e6b331e088d209e51143d18cb5d5cc7a2e2d3d6d8914478bff4b7b8c2d3",
+          "boost_blossom": "96087f807c3845193da871aa8a8f83092c095a0dcf2ab0862ace85b76eebf995"
+        },
+        "archive_sha256": "8e4e6705954d9d9e864da6ea0b1607f7ca061ec87d1c9e9ede14b951e2a2ba67",
+        "archive_path": "/Mercados-de-pareja/ABH-N277-N296/ESBM_ABH_N277_N296_PREOUTCOME_INSTRUMENTS.zip",
+        "freeze_rule": "Commit this A–J + hash before any outcome. Code immutable. Repair requires new prereg commit and retention of first receipt."
+      },
+      "E": {
+        "status_at_freeze": "NOT_EXECUTED",
+        "receipt": "results/N294.json",
+        "planned_runner": "python experiment.py 294 --freeze freeze.json",
+        "resources": "Run each cycle separately with external 75s wall cap, Boost subprocess 4-6s, no expensive CI; memory monitoring and errors preserved",
+        "status": "EXECUTED",
+        "receipt_sha256": "d1873ecaba9c6a534b8880be378f1d198a53f18a82473bf4923ad5f08fbe2324",
+        "receipt_path": "results/N294.json",
+        "seconds": 0.13,
+        "observed": "10/10 injected synthetic field defects detected by first field comparator"
+      },
+      "F": {
+        "adversarial": "Negative input, ties, permuted IDs, reversed edge order, brute exact DP, MILP, frozen checks as relevant",
+        "nonuniqueness": "Report objective and pair set separately; no universal pair equality under ties",
+        "observed_adversarial": "VALID_TECHNICAL_CONTROL",
+        "limitations": "Float precision, nonuniqueness, timeouts or archival QA classified separately; full outcomes archived in ZIP"
+      },
+      "G": {
+        "independence": "Independent software solvers but same synthetic mechanisms and stimuli; historical TS not available. N293 self-audit not external replication.",
+        "human": "No real human original outcomes or independent validation",
+        "actual_external_human_replication": false,
+        "actual_original_Python_executable": false,
+        "actual_historical_TS_executable": false
+      },
+      "H": {
+        "prior": "P-TRAJECTORY-INVARIANCE",
+        "planned": "U198 qualitative only NO_CHANGE_WITH_REASON absent new human observation. SRC112 only if genuinely new independently sourced primary documentation",
+        "recorded_update": "U198",
+        "prior_probability_change": false,
+        "source_count": 113
+      },
+      "I": {
+        "grade_scientific": "0/3",
+        "CT2_scientific_before": 7,
+        "CT2_scientific_after_planned": 7,
+        "R5_human": "STOP",
+        "DRIFT": "D0 or D1 within software QA, not new substantive human phenomenon",
+        "CT2_scientific_after": 7,
+        "new_human_validation": false,
+        "technical_class": "VALID_TECHNICAL_CONTROL"
+      },
+      "J": {
+        "possible": "VALID_PASS / VALID_NEGATIVE / INVALID / BLOCKED",
+        "slot": "Count at most once after actual useful execution; a time-out on predeclared control is valid negative; merely preparing code not valid",
+        "branching": "Do not force quota without distinct tests",
+        "observed_decision": "CLOSE_TECHNICAL",
+        "cycle_executed": true,
+        "slot_spent_once": true,
+        "remaining_after": 2
+      }
+    },
+    {
+      "id": "N295",
+      "A": {
+        "question": "Controlled behavioral feedback channel differences under counterfactual policies",
+        "unit": "Artificial graph or individual synthetic agent-tick; no human outcomes",
+        "estimand": "Cardinality-first exact matching objective and/or event identity, specified by cycle",
+        "outcome_proxy": "Executable check, not empirical model validity"
+      },
+      "B": {
+        "rivals": [
+          "NetworkX float64 maxcardinality original-semantics",
+          "NetworkX exact-integer maxcardinality",
+          "Boost C++ maximum_weighted_matching",
+          "SciPy HiGHS MILP/independent exhaustive DP where indicated"
+        ],
+        "null": "No demonstrated discrepancy in tested fixtures"
+      },
+      "C": {
+        "plan": "Seven scenario pairs same seed, 4 ticks",
+        "falsifier": "Unexpected identity or sign; output is synthetic mechanism check only",
+        "stopping": "Do not continue beyond fixed fixture budget; preserve errors; no posthoc replacement or changing thresholds"
+      },
+      "D": {
+        "instrument_hashes": {
+          "experiment.py": "89d9d5c125c9153ca8a641267a983e71c0427e1600a45faf03d6f3761b125dfe",
+          "trace_engine.py": "c0c92061100a689ab59698a46e22a96e96d7bb3bd99a21ec292d7aaa30e4415a",
+          "boost_blossom.cpp": "47806e6b331e088d209e51143d18cb5d5cc7a2e2d3d6d8914478bff4b7b8c2d3",
+          "boost_blossom": "96087f807c3845193da871aa8a8f83092c095a0dcf2ab0862ace85b76eebf995"
+        },
+        "archive_sha256": "8e4e6705954d9d9e864da6ea0b1607f7ca061ec87d1c9e9ede14b951e2a2ba67",
+        "archive_path": "/Mercados-de-pareja/ABH-N277-N296/ESBM_ABH_N277_N296_PREOUTCOME_INSTRUMENTS.zip",
+        "freeze_rule": "Commit this A–J + hash before any outcome. Code immutable. Repair requires new prereg commit and retention of first receipt."
+      },
+      "E": {
+        "status_at_freeze": "NOT_EXECUTED",
+        "receipt": "results/N295.json",
+        "planned_runner": "python experiment.py 295 --freeze freeze.json",
+        "resources": "Run each cycle separately with external 75s wall cap, Boost subprocess 4-6s, no expensive CI; memory monitoring and errors preserved",
+        "status": "EXECUTED",
+        "receipt_sha256": "f3e0a33941d5b63dd66470a65f922a191aa22b6a92281d64e7a11b0e60f059d9",
+        "receipt_path": "results/N295.json",
+        "seconds": 1.05,
+        "observed": "7/7 altered policies change one or more synthetic event channels in four ticks"
+      },
+      "F": {
+        "adversarial": "Negative input, ties, permuted IDs, reversed edge order, brute exact DP, MILP, frozen checks as relevant",
+        "nonuniqueness": "Report objective and pair set separately; no universal pair equality under ties",
+        "observed_adversarial": "VALID_TECHNICAL_CONTROL",
+        "limitations": "Float precision, nonuniqueness, timeouts or archival QA classified separately; full outcomes archived in ZIP"
+      },
+      "G": {
+        "independence": "Independent software solvers but same synthetic mechanisms and stimuli; historical TS not available. N293 self-audit not external replication.",
+        "human": "No real human original outcomes or independent validation",
+        "actual_external_human_replication": false,
+        "actual_original_Python_executable": false,
+        "actual_historical_TS_executable": false
+      },
+      "H": {
+        "prior": "P-TRAJECTORY-INVARIANCE",
+        "planned": "U198 qualitative only NO_CHANGE_WITH_REASON absent new human observation. SRC112 only if genuinely new independently sourced primary documentation",
+        "recorded_update": "U198",
+        "prior_probability_change": false,
+        "source_count": 113
+      },
+      "I": {
+        "grade_scientific": "0/3",
+        "CT2_scientific_before": 7,
+        "CT2_scientific_after_planned": 7,
+        "R5_human": "STOP",
+        "DRIFT": "D0 or D1 within software QA, not new substantive human phenomenon",
+        "CT2_scientific_after": 7,
+        "new_human_validation": false,
+        "technical_class": "VALID_TECHNICAL_CONTROL"
+      },
+      "J": {
+        "possible": "VALID_PASS / VALID_NEGATIVE / INVALID / BLOCKED",
+        "slot": "Count at most once after actual useful execution; a time-out on predeclared control is valid negative; merely preparing code not valid",
+        "branching": "Do not force quota without distinct tests",
+        "observed_decision": "CLOSE_TECHNICAL",
+        "cycle_executed": true,
+        "slot_spent_once": true,
+        "remaining_after": 1
+      }
+    },
+    {
+      "id": "N296",
+      "A": {
+        "question": "Cross-density/degeneracy n144 float-vs-integer objective",
+        "unit": "Artificial graph or individual synthetic agent-tick; no human outcomes",
+        "estimand": "Cardinality-first exact matching objective and/or event identity, specified by cycle",
+        "outcome_proxy": "Executable check, not empirical model validity"
+      },
+      "B": {
+        "rivals": [
+          "NetworkX float64 maxcardinality original-semantics",
+          "NetworkX exact-integer maxcardinality",
+          "Boost C++ maximum_weighted_matching",
+          "SciPy HiGHS MILP/independent exhaustive DP where indicated"
+        ],
+        "null": "No demonstrated discrepancy in tested fixtures"
+      },
+      "C": {
+        "plan": "3 fixtures (continuous sparse, quantized moderate, flat dense)",
+        "falsifier": "Objective or pair difference; resource tolerance recorded",
+        "stopping": "Do not continue beyond fixed fixture budget; preserve errors; no posthoc replacement or changing thresholds"
+      },
+      "D": {
+        "instrument_hashes": {
+          "experiment.py": "89d9d5c125c9153ca8a641267a983e71c0427e1600a45faf03d6f3761b125dfe",
+          "trace_engine.py": "c0c92061100a689ab59698a46e22a96e96d7bb3bd99a21ec292d7aaa30e4415a",
+          "boost_blossom.cpp": "47806e6b331e088d209e51143d18cb5d5cc7a2e2d3d6d8914478bff4b7b8c2d3",
+          "boost_blossom": "96087f807c3845193da871aa8a8f83092c095a0dcf2ab0862ace85b76eebf995"
+        },
+        "archive_sha256": "8e4e6705954d9d9e864da6ea0b1607f7ca061ec87d1c9e9ede14b951e2a2ba67",
+        "archive_path": "/Mercados-de-pareja/ABH-N277-N296/ESBM_ABH_N277_N296_PREOUTCOME_INSTRUMENTS.zip",
+        "freeze_rule": "Commit this A–J + hash before any outcome. Code immutable. Repair requires new prereg commit and retention of first receipt."
+      },
+      "E": {
+        "status_at_freeze": "NOT_EXECUTED",
+        "receipt": "results/N296.json",
+        "planned_runner": "python experiment.py 296 --freeze freeze.json",
+        "resources": "Run each cycle separately with external 75s wall cap, Boost subprocess 4-6s, no expensive CI; memory monitoring and errors preserved",
+        "status": "EXECUTED",
+        "receipt_sha256": "7429f5a61070a9d4794189f34ade6e711e9a28fa0e84960f8eabba3da1ad1ff2",
+        "receipt_path": "results/N296.json",
+        "seconds": 0.5,
+        "observed": "3/3 new n144 density/degeneracy fixtures float vs integer objective and pairs agree"
+      },
+      "F": {
+        "adversarial": "Negative input, ties, permuted IDs, reversed edge order, brute exact DP, MILP, frozen checks as relevant",
+        "nonuniqueness": "Report objective and pair set separately; no universal pair equality under ties",
+        "observed_adversarial": "VALID_TECHNICAL_CONTROL",
+        "limitations": "Float precision, nonuniqueness, timeouts or archival QA classified separately; full outcomes archived in ZIP"
+      },
+      "G": {
+        "independence": "Independent software solvers but same synthetic mechanisms and stimuli; historical TS not available. N293 self-audit not external replication.",
+        "human": "No real human original outcomes or independent validation",
+        "actual_external_human_replication": false,
+        "actual_original_Python_executable": false,
+        "actual_historical_TS_executable": false
+      },
+      "H": {
+        "prior": "P-TRAJECTORY-INVARIANCE",
+        "planned": "U198 qualitative only NO_CHANGE_WITH_REASON absent new human observation. SRC112 only if genuinely new independently sourced primary documentation",
+        "recorded_update": "U198",
+        "prior_probability_change": false,
+        "source_count": 113
+      },
+      "I": {
+        "grade_scientific": "0/3",
+        "CT2_scientific_before": 7,
+        "CT2_scientific_after_planned": 7,
+        "R5_human": "STOP",
+        "DRIFT": "D0 or D1 within software QA, not new substantive human phenomenon",
+        "CT2_scientific_after": 7,
+        "new_human_validation": false,
+        "technical_class": "VALID_TECHNICAL_CONTROL"
+      },
+      "J": {
+        "possible": "VALID_PASS / VALID_NEGATIVE / INVALID / BLOCKED",
+        "slot": "Count at most once after actual useful execution; a time-out on predeclared control is valid negative; merely preparing code not valid",
+        "branching": "Do not force quota without distinct tests",
+        "observed_decision": "CLOSE_TECHNICAL",
+        "cycle_executed": true,
+        "slot_spent_once": true,
+        "remaining_after": 0
+      }
+    }
+  ]
+}
