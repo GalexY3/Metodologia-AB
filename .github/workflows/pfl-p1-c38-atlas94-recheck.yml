@@ -32,6 +32,6 @@ jobs:
           assert b.returncode==0,b.stderr
           q=json.loads(b.stdout)
           assert q['head_batch']=='0094-PFL-ABH10-C38-FR-PETITIONS-20261030',q['head_batch']
-          assert q['batch_count']==94 or q.get('batch_count') is None
+          assert q.get('batch_count',94)==94, q.get('batch_count')
           print('PFL_ATLAS94_CANONICAL_SUMMARY',json.dumps({'head':q['head_batch'],'nodes':q['node_count'],'edges':q['edge_count'],'sha256':q['state_sha256']},sort_keys=True),flush=True)
           PY
