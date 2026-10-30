@@ -1,0 +1,1638 @@
+{
+  "schema": "ABH_N317_N336_AJ_SHA_PREOUTCOME_V1",
+  "date": "2026-10-30",
+  "branch": "research/ab-h-esbm-decentralized-n317-n336-20261030",
+  "authorization": 20,
+  "executed_before_freeze": 0,
+  "remaining_before_freeze": 20,
+  "source_archive_sha256": "d4687db70c1b79801b0d4b27c38363184f3ef9f4ea4be9903e41ab1c4c65a93d",
+  "source_archive_size": 13267,
+  "source_archive_library": "/Mercados-de-pareja/ABH-N317-N336/INSTRUMENTS_PREOUTCOME.zip",
+  "code_sha256": {
+    "market_lab.py": "f202e790705dd0d48724dcbcb67356b4f2075c0a82d4b44c1a9d434851bb6e21",
+    "run_cycles.py": "13d5e89d9a9adfb3c5f2f8d9c5a8480b3dfe71b7dd23b816bccca4a4dc63f24b",
+    "ORIGINAL_ESBM_UNMODIFIED.py": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+  },
+  "no_human_data": true,
+  "CT2": 7,
+  "STOP_R5_human": true,
+  "original_ESBM_untouched": true,
+  "SRC104_untouched": true,
+  "historical_TS_missing": true,
+  "no_SSJY": true,
+  "no_Codex": true,
+  "no_license_acceptance": true,
+  "no_author_contact": true,
+  "no_experimental_merge_to_main": true,
+  "no_expensive_CI": true,
+  "DRIFT": {
+    "parent": "ESBM centralized maximum-weight matching software QA",
+    "child": "decentralized offers, consent, stability, welfare, partial information under synthetic bilateral utilities",
+    "distance_D": 1.8,
+    "transfer": "agent/risk-set and matching conventions, not empirical parameter estimates",
+    "what_changes": "Different mechanism and estimand: stable set/strategic timing instead of static optimum",
+    "why_not_scientific_pivot": "All utilities and rules artificial; new human evidence required for transportability"
+  },
+  "contracts": [
+    {
+      "id": "N317",
+      "mode": "AB-H_TECHNICAL_SIMULATION",
+      "experimental_status": "NOT_EXECUTED_AT_FREEZE",
+      "A": {
+        "question": "DA estable versus máximo bienestar centralizado",
+        "unit": "Agente sintético, dyad y mercado bipartito n3–8",
+        "population": "100% artificial, no calibrada empíricamente",
+        "outcome_true": "Comparación de algoritmos con mismas utilidades/eligibilidades",
+        "outcome_proxy": "Estabilidad DA, ventaja bienestar central, tasa central inestable",
+        "treatment": "Regla del protocolo explicitada en pregunta",
+        "comparison": "Contrafactual sobre mismo mercado",
+        "human_interference": "No identificable; no sujetos humanos"
+      },
+      "B": {
+        "hypothesis_A": "El mecanismo descentralizado y el óptimo de peso centralizado difieren condicionalmente al diseño y reglas de información",
+        "competent_rivals": [
+          "Gale-Shapley deferred acceptance lado izquierdo/derecho",
+          "NetworkX exact bipartite max-weight with maxcardinality",
+          "Enumeración exhaustiva o MILP HiGHS cuando predefinido",
+          "Protocolos de ofertas únicos, limitados, aleatorios o estratégicos"
+        ],
+        "null": "No diferencia bajo este input; no afirmación sobre humanos",
+        "prior_art": "Gale-Shapley 1962 y Echenique–Robinson-Cortés–Yariv 2025; no originalidad de estabilidad"
+      },
+      "C": {
+        "precommitted_input": "20 mercados n8 semilla 31700–31719",
+        "primary_endpoint": "Estabilidad DA, ventaja bienestar central, tasa central inestable",
+        "falsifier": "DA sin parejas bloqueantes y central bienestar no inferior",
+        "selected_before_outcome": true,
+        "planned_repeat": "Una sola batería por N, sin añadir seeds tras outcomes",
+        "multiplicity": "20 pruebas exploratorias ligadas por fuente sintética compartida; no reclamar 20 descubrimientos ni significación confirmatoria"
+      },
+      "D": {
+        "frozen_code_sha256": {
+          "market_lab.py": "f202e790705dd0d48724dcbcb67356b4f2075c0a82d4b44c1a9d434851bb6e21",
+          "run_cycles.py": "13d5e89d9a9adfb3c5f2f8d9c5a8480b3dfe71b7dd23b816bccca4a4dc63f24b",
+          "ORIGINAL_ESBM_UNMODIFIED.py": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+        },
+        "instrument_archive_sha256": "d4687db70c1b79801b0d4b27c38363184f3ef9f4ea4be9903e41ab1c4c65a93d",
+        "instrument_archive_bytes": 13267,
+        "archived_in": "/Mercados-de-pareja/ABH-N317-N336/INSTRUMENTS_PREOUTCOME.zip",
+        "original_source_unchanged": true,
+        "resource_limit_s_per_cycle": 75,
+        "executor": "python3 local; no Codex",
+        "code_sha_check": "run_cycles.py aborts on modified sources",
+        "state": "FROZEN_PRIOR_TO_FIRST_OUTCOME"
+      },
+      "E": {
+        "expected_receipt": "results/N317.json",
+        "status": "NOT_RUN_YET",
+        "run_command": "python run_cycles.py 317 --freeze freeze.json"
+      },
+      "F": {
+        "adversarial_controls": "Independently computed blocking-pair census, eligibility checks, exhaustive stable-permutation enumeration and MILP/DP for small cases; negative findings preserved",
+        "stop": "No edited fixtures based on outcomes; errors logged as EXECUTED_EXCEPTION not PASS",
+        "baseline_parity": "Same synthetic payoff matrices available to all comparisons"
+      },
+      "G": {
+        "independence": "No external human observation; same synthetic people generator; this is software/mechanism QA, not field replication",
+        "human_R5": "STOP",
+        "SSJY": false
+      },
+      "H": {
+        "prior_id": "P-CULTURAL-RULES",
+        "update_type": "Qualitative NO_CHANGE_WITH_REASON for human priors absent independent real observed choices",
+        "numerical_posterior": false
+      },
+      "I": {
+        "scientific_CT2_before": 7,
+        "scientific_CT2_planned_after": 7,
+        "grade_scientific": "0/3 absent independent empirical falsation",
+        "ethics": "No real-person attributes or data used",
+        "DRIFT": "D1.8 mechanistic pivot from centralized ESBM match to decentralized two-sided laboratory rules"
+      },
+      "J": {
+        "decision_rule": "Count cycle only after real run with valid receipt, correctness audit and useful novel estimand; preserve zero or negative outcomes; no forced scientific grade",
+        "pre_outcome_spent": false
+      }
+    },
+    {
+      "id": "N318",
+      "mode": "AB-H_TECHNICAL_SIMULATION",
+      "experimental_status": "NOT_EXECUTED_AT_FREEZE",
+      "A": {
+        "question": "Ventaja del lado proponente",
+        "unit": "Agente sintético, dyad y mercado bipartito n3–8",
+        "population": "100% artificial, no calibrada empíricamente",
+        "outcome_true": "Comparación de algoritmos con mismas utilidades/eligibilidades",
+        "outcome_proxy": "Mejora de rango lado proponente y diferencias de pareado",
+        "treatment": "Regla del protocolo explicitada en pregunta",
+        "comparison": "Contrafactual sobre mismo mercado",
+        "human_interference": "No identificable; no sujetos humanos"
+      },
+      "B": {
+        "hypothesis_A": "El mecanismo descentralizado y el óptimo de peso centralizado difieren condicionalmente al diseño y reglas de información",
+        "competent_rivals": [
+          "Gale-Shapley deferred acceptance lado izquierdo/derecho",
+          "NetworkX exact bipartite max-weight with maxcardinality",
+          "Enumeración exhaustiva o MILP HiGHS cuando predefinido",
+          "Protocolos de ofertas únicos, limitados, aleatorios o estratégicos"
+        ],
+        "null": "No diferencia bajo este input; no afirmación sobre humanos",
+        "prior_art": "Gale-Shapley 1962 y Echenique–Robinson-Cortés–Yariv 2025; no originalidad de estabilidad"
+      },
+      "C": {
+        "precommitted_input": "20 mercados n8 semilla 31800–31819",
+        "primary_endpoint": "Mejora de rango lado proponente y diferencias de pareado",
+        "falsifier": "DA por ambos lados estable; rangos proponentes débiles óptimos",
+        "selected_before_outcome": true,
+        "planned_repeat": "Una sola batería por N, sin añadir seeds tras outcomes",
+        "multiplicity": "20 pruebas exploratorias ligadas por fuente sintética compartida; no reclamar 20 descubrimientos ni significación confirmatoria"
+      },
+      "D": {
+        "frozen_code_sha256": {
+          "market_lab.py": "f202e790705dd0d48724dcbcb67356b4f2075c0a82d4b44c1a9d434851bb6e21",
+          "run_cycles.py": "13d5e89d9a9adfb3c5f2f8d9c5a8480b3dfe71b7dd23b816bccca4a4dc63f24b",
+          "ORIGINAL_ESBM_UNMODIFIED.py": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+        },
+        "instrument_archive_sha256": "d4687db70c1b79801b0d4b27c38363184f3ef9f4ea4be9903e41ab1c4c65a93d",
+        "instrument_archive_bytes": 13267,
+        "archived_in": "/Mercados-de-pareja/ABH-N317-N336/INSTRUMENTS_PREOUTCOME.zip",
+        "original_source_unchanged": true,
+        "resource_limit_s_per_cycle": 75,
+        "executor": "python3 local; no Codex",
+        "code_sha_check": "run_cycles.py aborts on modified sources",
+        "state": "FROZEN_PRIOR_TO_FIRST_OUTCOME"
+      },
+      "E": {
+        "expected_receipt": "results/N318.json",
+        "status": "NOT_RUN_YET",
+        "run_command": "python run_cycles.py 318 --freeze freeze.json"
+      },
+      "F": {
+        "adversarial_controls": "Independently computed blocking-pair census, eligibility checks, exhaustive stable-permutation enumeration and MILP/DP for small cases; negative findings preserved",
+        "stop": "No edited fixtures based on outcomes; errors logged as EXECUTED_EXCEPTION not PASS",
+        "baseline_parity": "Same synthetic payoff matrices available to all comparisons"
+      },
+      "G": {
+        "independence": "No external human observation; same synthetic people generator; this is software/mechanism QA, not field replication",
+        "human_R5": "STOP",
+        "SSJY": false
+      },
+      "H": {
+        "prior_id": "P-CULTURAL-RULES",
+        "update_type": "Qualitative NO_CHANGE_WITH_REASON for human priors absent independent real observed choices",
+        "numerical_posterior": false
+      },
+      "I": {
+        "scientific_CT2_before": 7,
+        "scientific_CT2_planned_after": 7,
+        "grade_scientific": "0/3 absent independent empirical falsation",
+        "ethics": "No real-person attributes or data used",
+        "DRIFT": "D1.8 mechanistic pivot from centralized ESBM match to decentralized two-sided laboratory rules"
+      },
+      "J": {
+        "decision_rule": "Count cycle only after real run with valid receipt, correctness audit and useful novel estimand; preserve zero or negative outcomes; no forced scientific grade",
+        "pre_outcome_spent": false
+      }
+    },
+    {
+      "id": "N319",
+      "mode": "AB-H_TECHNICAL_SIMULATION",
+      "experimental_status": "NOT_EXECUTED_AT_FREEZE",
+      "A": {
+        "question": "Caso clásico Gale–Shapley tres emparejamientos estables",
+        "unit": "Agente sintético, dyad y mercado bipartito n3–8",
+        "population": "100% artificial, no calibrada empíricamente",
+        "outcome_true": "Comparación de algoritmos con mismas utilidades/eligibilidades",
+        "outcome_proxy": "Número de matchings estables y pares DA",
+        "treatment": "Regla del protocolo explicitada en pregunta",
+        "comparison": "Contrafactual sobre mismo mercado",
+        "human_interference": "No identificable; no sujetos humanos"
+      },
+      "B": {
+        "hypothesis_A": "El mecanismo descentralizado y el óptimo de peso centralizado difieren condicionalmente al diseño y reglas de información",
+        "competent_rivals": [
+          "Gale-Shapley deferred acceptance lado izquierdo/derecho",
+          "NetworkX exact bipartite max-weight with maxcardinality",
+          "Enumeración exhaustiva o MILP HiGHS cuando predefinido",
+          "Protocolos de ofertas únicos, limitados, aleatorios o estratégicos"
+        ],
+        "null": "No diferencia bajo este input; no afirmación sobre humanos",
+        "prior_art": "Gale-Shapley 1962 y Echenique–Robinson-Cortés–Yariv 2025; no originalidad de estabilidad"
+      },
+      "C": {
+        "precommitted_input": "Una matriz ordinal n3 explícita del artículo de 1962",
+        "primary_endpoint": "Número de matchings estables y pares DA",
+        "falsifier": "Enumeración independiente: tres de seis perfectos estables; dos DA extremales",
+        "selected_before_outcome": true,
+        "planned_repeat": "Una sola batería por N, sin añadir seeds tras outcomes",
+        "multiplicity": "20 pruebas exploratorias ligadas por fuente sintética compartida; no reclamar 20 descubrimientos ni significación confirmatoria"
+      },
+      "D": {
+        "frozen_code_sha256": {
+          "market_lab.py": "f202e790705dd0d48724dcbcb67356b4f2075c0a82d4b44c1a9d434851bb6e21",
+          "run_cycles.py": "13d5e89d9a9adfb3c5f2f8d9c5a8480b3dfe71b7dd23b816bccca4a4dc63f24b",
+          "ORIGINAL_ESBM_UNMODIFIED.py": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+        },
+        "instrument_archive_sha256": "d4687db70c1b79801b0d4b27c38363184f3ef9f4ea4be9903e41ab1c4c65a93d",
+        "instrument_archive_bytes": 13267,
+        "archived_in": "/Mercados-de-pareja/ABH-N317-N336/INSTRUMENTS_PREOUTCOME.zip",
+        "original_source_unchanged": true,
+        "resource_limit_s_per_cycle": 75,
+        "executor": "python3 local; no Codex",
+        "code_sha_check": "run_cycles.py aborts on modified sources",
+        "state": "FROZEN_PRIOR_TO_FIRST_OUTCOME"
+      },
+      "E": {
+        "expected_receipt": "results/N319.json",
+        "status": "NOT_RUN_YET",
+        "run_command": "python run_cycles.py 319 --freeze freeze.json"
+      },
+      "F": {
+        "adversarial_controls": "Independently computed blocking-pair census, eligibility checks, exhaustive stable-permutation enumeration and MILP/DP for small cases; negative findings preserved",
+        "stop": "No edited fixtures based on outcomes; errors logged as EXECUTED_EXCEPTION not PASS",
+        "baseline_parity": "Same synthetic payoff matrices available to all comparisons"
+      },
+      "G": {
+        "independence": "No external human observation; same synthetic people generator; this is software/mechanism QA, not field replication",
+        "human_R5": "STOP",
+        "SSJY": false
+      },
+      "H": {
+        "prior_id": "P-CULTURAL-RULES",
+        "update_type": "Qualitative NO_CHANGE_WITH_REASON for human priors absent independent real observed choices",
+        "numerical_posterior": false
+      },
+      "I": {
+        "scientific_CT2_before": 7,
+        "scientific_CT2_planned_after": 7,
+        "grade_scientific": "0/3 absent independent empirical falsation",
+        "ethics": "No real-person attributes or data used",
+        "DRIFT": "D1.8 mechanistic pivot from centralized ESBM match to decentralized two-sided laboratory rules"
+      },
+      "J": {
+        "decision_rule": "Count cycle only after real run with valid receipt, correctness audit and useful novel estimand; preserve zero or negative outcomes; no forced scientific grade",
+        "pre_outcome_spent": false
+      }
+    },
+    {
+      "id": "N320",
+      "mode": "AB-H_TECHNICAL_SIMULATION",
+      "experimental_status": "NOT_EXECUTED_AT_FREEZE",
+      "A": {
+        "question": "Identificabilidad de objetivo de bienestar vs estabilidad",
+        "unit": "Agente sintético, dyad y mercado bipartito n3–8",
+        "population": "100% artificial, no calibrada empíricamente",
+        "outcome_true": "Comparación de algoritmos con mismas utilidades/eligibilidades",
+        "outcome_proxy": "Gap cardinal de bienestar central−DA, fracción central estable",
+        "treatment": "Regla del protocolo explicitada en pregunta",
+        "comparison": "Contrafactual sobre mismo mercado",
+        "human_interference": "No identificable; no sujetos humanos"
+      },
+      "B": {
+        "hypothesis_A": "El mecanismo descentralizado y el óptimo de peso centralizado difieren condicionalmente al diseño y reglas de información",
+        "competent_rivals": [
+          "Gale-Shapley deferred acceptance lado izquierdo/derecho",
+          "NetworkX exact bipartite max-weight with maxcardinality",
+          "Enumeración exhaustiva o MILP HiGHS cuando predefinido",
+          "Protocolos de ofertas únicos, limitados, aleatorios o estratégicos"
+        ],
+        "null": "No diferencia bajo este input; no afirmación sobre humanos",
+        "prior_art": "Gale-Shapley 1962 y Echenique–Robinson-Cortés–Yariv 2025; no originalidad de estabilidad"
+      },
+      "C": {
+        "precommitted_input": "20 mercados n8 semilla 32000–32019",
+        "primary_endpoint": "Gap cardinal de bienestar central−DA, fracción central estable",
+        "falsifier": "Central máximo suma no es observación de preferencia estratégica",
+        "selected_before_outcome": true,
+        "planned_repeat": "Una sola batería por N, sin añadir seeds tras outcomes",
+        "multiplicity": "20 pruebas exploratorias ligadas por fuente sintética compartida; no reclamar 20 descubrimientos ni significación confirmatoria"
+      },
+      "D": {
+        "frozen_code_sha256": {
+          "market_lab.py": "f202e790705dd0d48724dcbcb67356b4f2075c0a82d4b44c1a9d434851bb6e21",
+          "run_cycles.py": "13d5e89d9a9adfb3c5f2f8d9c5a8480b3dfe71b7dd23b816bccca4a4dc63f24b",
+          "ORIGINAL_ESBM_UNMODIFIED.py": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+        },
+        "instrument_archive_sha256": "d4687db70c1b79801b0d4b27c38363184f3ef9f4ea4be9903e41ab1c4c65a93d",
+        "instrument_archive_bytes": 13267,
+        "archived_in": "/Mercados-de-pareja/ABH-N317-N336/INSTRUMENTS_PREOUTCOME.zip",
+        "original_source_unchanged": true,
+        "resource_limit_s_per_cycle": 75,
+        "executor": "python3 local; no Codex",
+        "code_sha_check": "run_cycles.py aborts on modified sources",
+        "state": "FROZEN_PRIOR_TO_FIRST_OUTCOME"
+      },
+      "E": {
+        "expected_receipt": "results/N320.json",
+        "status": "NOT_RUN_YET",
+        "run_command": "python run_cycles.py 320 --freeze freeze.json"
+      },
+      "F": {
+        "adversarial_controls": "Independently computed blocking-pair census, eligibility checks, exhaustive stable-permutation enumeration and MILP/DP for small cases; negative findings preserved",
+        "stop": "No edited fixtures based on outcomes; errors logged as EXECUTED_EXCEPTION not PASS",
+        "baseline_parity": "Same synthetic payoff matrices available to all comparisons"
+      },
+      "G": {
+        "independence": "No external human observation; same synthetic people generator; this is software/mechanism QA, not field replication",
+        "human_R5": "STOP",
+        "SSJY": false
+      },
+      "H": {
+        "prior_id": "P-CULTURAL-RULES",
+        "update_type": "Qualitative NO_CHANGE_WITH_REASON for human priors absent independent real observed choices",
+        "numerical_posterior": false
+      },
+      "I": {
+        "scientific_CT2_before": 7,
+        "scientific_CT2_planned_after": 7,
+        "grade_scientific": "0/3 absent independent empirical falsation",
+        "ethics": "No real-person attributes or data used",
+        "DRIFT": "D1.8 mechanistic pivot from centralized ESBM match to decentralized two-sided laboratory rules"
+      },
+      "J": {
+        "decision_rule": "Count cycle only after real run with valid receipt, correctness audit and useful novel estimand; preserve zero or negative outcomes; no forced scientific grade",
+        "pre_outcome_spent": false
+      }
+    },
+    {
+      "id": "N321",
+      "mode": "AB-H_TECHNICAL_SIMULATION",
+      "experimental_status": "NOT_EXECUTED_AT_FREEZE",
+      "A": {
+        "question": "Opción exterior y elegibilidad bilateral",
+        "unit": "Agente sintético, dyad y mercado bipartito n3–8",
+        "population": "100% artificial, no calibrada empíricamente",
+        "outcome_true": "Comparación de algoritmos con mismas utilidades/eligibilidades",
+        "outcome_proxy": "Riesgo elegible, solos DA vs central, bloqueantes",
+        "treatment": "Regla del protocolo explicitada en pregunta",
+        "comparison": "Contrafactual sobre mismo mercado",
+        "human_interference": "No identificable; no sujetos humanos"
+      },
+      "B": {
+        "hypothesis_A": "El mecanismo descentralizado y el óptimo de peso centralizado difieren condicionalmente al diseño y reglas de información",
+        "competent_rivals": [
+          "Gale-Shapley deferred acceptance lado izquierdo/derecho",
+          "NetworkX exact bipartite max-weight with maxcardinality",
+          "Enumeración exhaustiva o MILP HiGHS cuando predefinido",
+          "Protocolos de ofertas únicos, limitados, aleatorios o estratégicos"
+        ],
+        "null": "No diferencia bajo este input; no afirmación sobre humanos",
+        "prior_art": "Gale-Shapley 1962 y Echenique–Robinson-Cortés–Yariv 2025; no originalidad de estabilidad"
+      },
+      "C": {
+        "precommitted_input": "20 mercados n8 semilla 32100–32119 umbral112",
+        "primary_endpoint": "Riesgo elegible, solos DA vs central, bloqueantes",
+        "falsifier": "Matching estable debe respetar ambos umbrales y ausencias",
+        "selected_before_outcome": true,
+        "planned_repeat": "Una sola batería por N, sin añadir seeds tras outcomes",
+        "multiplicity": "20 pruebas exploratorias ligadas por fuente sintética compartida; no reclamar 20 descubrimientos ni significación confirmatoria"
+      },
+      "D": {
+        "frozen_code_sha256": {
+          "market_lab.py": "f202e790705dd0d48724dcbcb67356b4f2075c0a82d4b44c1a9d434851bb6e21",
+          "run_cycles.py": "13d5e89d9a9adfb3c5f2f8d9c5a8480b3dfe71b7dd23b816bccca4a4dc63f24b",
+          "ORIGINAL_ESBM_UNMODIFIED.py": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+        },
+        "instrument_archive_sha256": "d4687db70c1b79801b0d4b27c38363184f3ef9f4ea4be9903e41ab1c4c65a93d",
+        "instrument_archive_bytes": 13267,
+        "archived_in": "/Mercados-de-pareja/ABH-N317-N336/INSTRUMENTS_PREOUTCOME.zip",
+        "original_source_unchanged": true,
+        "resource_limit_s_per_cycle": 75,
+        "executor": "python3 local; no Codex",
+        "code_sha_check": "run_cycles.py aborts on modified sources",
+        "state": "FROZEN_PRIOR_TO_FIRST_OUTCOME"
+      },
+      "E": {
+        "expected_receipt": "results/N321.json",
+        "status": "NOT_RUN_YET",
+        "run_command": "python run_cycles.py 321 --freeze freeze.json"
+      },
+      "F": {
+        "adversarial_controls": "Independently computed blocking-pair census, eligibility checks, exhaustive stable-permutation enumeration and MILP/DP for small cases; negative findings preserved",
+        "stop": "No edited fixtures based on outcomes; errors logged as EXECUTED_EXCEPTION not PASS",
+        "baseline_parity": "Same synthetic payoff matrices available to all comparisons"
+      },
+      "G": {
+        "independence": "No external human observation; same synthetic people generator; this is software/mechanism QA, not field replication",
+        "human_R5": "STOP",
+        "SSJY": false
+      },
+      "H": {
+        "prior_id": "P-CULTURAL-RULES",
+        "update_type": "Qualitative NO_CHANGE_WITH_REASON for human priors absent independent real observed choices",
+        "numerical_posterior": false
+      },
+      "I": {
+        "scientific_CT2_before": 7,
+        "scientific_CT2_planned_after": 7,
+        "grade_scientific": "0/3 absent independent empirical falsation",
+        "ethics": "No real-person attributes or data used",
+        "DRIFT": "D1.8 mechanistic pivot from centralized ESBM match to decentralized two-sided laboratory rules"
+      },
+      "J": {
+        "decision_rule": "Count cycle only after real run with valid receipt, correctness audit and useful novel estimand; preserve zero or negative outcomes; no forced scientific grade",
+        "pre_outcome_spent": false
+      }
+    },
+    {
+      "id": "N322",
+      "mode": "AB-H_TECHNICAL_SIMULATION",
+      "experimental_status": "NOT_EXECUTED_AT_FREEZE",
+      "A": {
+        "question": "Una sola ronda de ofertas frente a DA reiterado",
+        "unit": "Agente sintético, dyad y mercado bipartito n3–8",
+        "population": "100% artificial, no calibrada empíricamente",
+        "outcome_true": "Comparación de algoritmos con mismas utilidades/eligibilidades",
+        "outcome_proxy": "Bloqueantes, parejas, volumen ofertas",
+        "treatment": "Regla del protocolo explicitada en pregunta",
+        "comparison": "Contrafactual sobre mismo mercado",
+        "human_interference": "No identificable; no sujetos humanos"
+      },
+      "B": {
+        "hypothesis_A": "El mecanismo descentralizado y el óptimo de peso centralizado difieren condicionalmente al diseño y reglas de información",
+        "competent_rivals": [
+          "Gale-Shapley deferred acceptance lado izquierdo/derecho",
+          "NetworkX exact bipartite max-weight with maxcardinality",
+          "Enumeración exhaustiva o MILP HiGHS cuando predefinido",
+          "Protocolos de ofertas únicos, limitados, aleatorios o estratégicos"
+        ],
+        "null": "No diferencia bajo este input; no afirmación sobre humanos",
+        "prior_art": "Gale-Shapley 1962 y Echenique–Robinson-Cortés–Yariv 2025; no originalidad de estabilidad"
+      },
+      "C": {
+        "precommitted_input": "20 mercados n8 semilla 32200–32219",
+        "primary_endpoint": "Bloqueantes, parejas, volumen ofertas",
+        "falsifier": "Recepción top-1 difiere del desenlace DA; no excede cardinalidad DA completa",
+        "selected_before_outcome": true,
+        "planned_repeat": "Una sola batería por N, sin añadir seeds tras outcomes",
+        "multiplicity": "20 pruebas exploratorias ligadas por fuente sintética compartida; no reclamar 20 descubrimientos ni significación confirmatoria"
+      },
+      "D": {
+        "frozen_code_sha256": {
+          "market_lab.py": "f202e790705dd0d48724dcbcb67356b4f2075c0a82d4b44c1a9d434851bb6e21",
+          "run_cycles.py": "13d5e89d9a9adfb3c5f2f8d9c5a8480b3dfe71b7dd23b816bccca4a4dc63f24b",
+          "ORIGINAL_ESBM_UNMODIFIED.py": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+        },
+        "instrument_archive_sha256": "d4687db70c1b79801b0d4b27c38363184f3ef9f4ea4be9903e41ab1c4c65a93d",
+        "instrument_archive_bytes": 13267,
+        "archived_in": "/Mercados-de-pareja/ABH-N317-N336/INSTRUMENTS_PREOUTCOME.zip",
+        "original_source_unchanged": true,
+        "resource_limit_s_per_cycle": 75,
+        "executor": "python3 local; no Codex",
+        "code_sha_check": "run_cycles.py aborts on modified sources",
+        "state": "FROZEN_PRIOR_TO_FIRST_OUTCOME"
+      },
+      "E": {
+        "expected_receipt": "results/N322.json",
+        "status": "NOT_RUN_YET",
+        "run_command": "python run_cycles.py 322 --freeze freeze.json"
+      },
+      "F": {
+        "adversarial_controls": "Independently computed blocking-pair census, eligibility checks, exhaustive stable-permutation enumeration and MILP/DP for small cases; negative findings preserved",
+        "stop": "No edited fixtures based on outcomes; errors logged as EXECUTED_EXCEPTION not PASS",
+        "baseline_parity": "Same synthetic payoff matrices available to all comparisons"
+      },
+      "G": {
+        "independence": "No external human observation; same synthetic people generator; this is software/mechanism QA, not field replication",
+        "human_R5": "STOP",
+        "SSJY": false
+      },
+      "H": {
+        "prior_id": "P-CULTURAL-RULES",
+        "update_type": "Qualitative NO_CHANGE_WITH_REASON for human priors absent independent real observed choices",
+        "numerical_posterior": false
+      },
+      "I": {
+        "scientific_CT2_before": 7,
+        "scientific_CT2_planned_after": 7,
+        "grade_scientific": "0/3 absent independent empirical falsation",
+        "ethics": "No real-person attributes or data used",
+        "DRIFT": "D1.8 mechanistic pivot from centralized ESBM match to decentralized two-sided laboratory rules"
+      },
+      "J": {
+        "decision_rule": "Count cycle only after real run with valid receipt, correctness audit and useful novel estimand; preserve zero or negative outcomes; no forced scientific grade",
+        "pre_outcome_spent": false
+      }
+    },
+    {
+      "id": "N323",
+      "mode": "AB-H_TECHNICAL_SIMULATION",
+      "experimental_status": "NOT_EXECUTED_AT_FREEZE",
+      "A": {
+        "question": "Truncar listas estratégicas a dos opciones",
+        "unit": "Agente sintético, dyad y mercado bipartito n3–8",
+        "population": "100% artificial, no calibrada empíricamente",
+        "outcome_true": "Comparación de algoritmos con mismas utilidades/eligibilidades",
+        "outcome_proxy": "Casos bloqueantes verdaderos vs DA completo",
+        "treatment": "Regla del protocolo explicitada en pregunta",
+        "comparison": "Contrafactual sobre mismo mercado",
+        "human_interference": "No identificable; no sujetos humanos"
+      },
+      "B": {
+        "hypothesis_A": "El mecanismo descentralizado y el óptimo de peso centralizado difieren condicionalmente al diseño y reglas de información",
+        "competent_rivals": [
+          "Gale-Shapley deferred acceptance lado izquierdo/derecho",
+          "NetworkX exact bipartite max-weight with maxcardinality",
+          "Enumeración exhaustiva o MILP HiGHS cuando predefinido",
+          "Protocolos de ofertas únicos, limitados, aleatorios o estratégicos"
+        ],
+        "null": "No diferencia bajo este input; no afirmación sobre humanos",
+        "prior_art": "Gale-Shapley 1962 y Echenique–Robinson-Cortés–Yariv 2025; no originalidad de estabilidad"
+      },
+      "C": {
+        "precommitted_input": "20 mercados n8 semilla 32300–32319",
+        "primary_endpoint": "Casos bloqueantes verdaderos vs DA completo",
+        "falsifier": "Estabilidad bajo lista truncada no implica estabilidad bajo preferencias completas",
+        "selected_before_outcome": true,
+        "planned_repeat": "Una sola batería por N, sin añadir seeds tras outcomes",
+        "multiplicity": "20 pruebas exploratorias ligadas por fuente sintética compartida; no reclamar 20 descubrimientos ni significación confirmatoria"
+      },
+      "D": {
+        "frozen_code_sha256": {
+          "market_lab.py": "f202e790705dd0d48724dcbcb67356b4f2075c0a82d4b44c1a9d434851bb6e21",
+          "run_cycles.py": "13d5e89d9a9adfb3c5f2f8d9c5a8480b3dfe71b7dd23b816bccca4a4dc63f24b",
+          "ORIGINAL_ESBM_UNMODIFIED.py": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+        },
+        "instrument_archive_sha256": "d4687db70c1b79801b0d4b27c38363184f3ef9f4ea4be9903e41ab1c4c65a93d",
+        "instrument_archive_bytes": 13267,
+        "archived_in": "/Mercados-de-pareja/ABH-N317-N336/INSTRUMENTS_PREOUTCOME.zip",
+        "original_source_unchanged": true,
+        "resource_limit_s_per_cycle": 75,
+        "executor": "python3 local; no Codex",
+        "code_sha_check": "run_cycles.py aborts on modified sources",
+        "state": "FROZEN_PRIOR_TO_FIRST_OUTCOME"
+      },
+      "E": {
+        "expected_receipt": "results/N323.json",
+        "status": "NOT_RUN_YET",
+        "run_command": "python run_cycles.py 323 --freeze freeze.json"
+      },
+      "F": {
+        "adversarial_controls": "Independently computed blocking-pair census, eligibility checks, exhaustive stable-permutation enumeration and MILP/DP for small cases; negative findings preserved",
+        "stop": "No edited fixtures based on outcomes; errors logged as EXECUTED_EXCEPTION not PASS",
+        "baseline_parity": "Same synthetic payoff matrices available to all comparisons"
+      },
+      "G": {
+        "independence": "No external human observation; same synthetic people generator; this is software/mechanism QA, not field replication",
+        "human_R5": "STOP",
+        "SSJY": false
+      },
+      "H": {
+        "prior_id": "P-CULTURAL-RULES",
+        "update_type": "Qualitative NO_CHANGE_WITH_REASON for human priors absent independent real observed choices",
+        "numerical_posterior": false
+      },
+      "I": {
+        "scientific_CT2_before": 7,
+        "scientific_CT2_planned_after": 7,
+        "grade_scientific": "0/3 absent independent empirical falsation",
+        "ethics": "No real-person attributes or data used",
+        "DRIFT": "D1.8 mechanistic pivot from centralized ESBM match to decentralized two-sided laboratory rules"
+      },
+      "J": {
+        "decision_rule": "Count cycle only after real run with valid receipt, correctness audit and useful novel estimand; preserve zero or negative outcomes; no forced scientific grade",
+        "pre_outcome_spent": false
+      }
+    },
+    {
+      "id": "N324",
+      "mode": "AB-H_TECHNICAL_SIMULATION",
+      "experimental_status": "NOT_EXECUTED_AT_FREEZE",
+      "A": {
+        "question": "Presupuesto de comunicación finito",
+        "unit": "Agente sintético, dyad y mercado bipartito n3–8",
+        "population": "100% artificial, no calibrada empíricamente",
+        "outcome_true": "Comparación de algoritmos con mismas utilidades/eligibilidades",
+        "outcome_proxy": "Mercados inacabados, parejas bloqueantes y propuestas",
+        "treatment": "Regla del protocolo explicitada en pregunta",
+        "comparison": "Contrafactual sobre mismo mercado",
+        "human_interference": "No identificable; no sujetos humanos"
+      },
+      "B": {
+        "hypothesis_A": "El mecanismo descentralizado y el óptimo de peso centralizado difieren condicionalmente al diseño y reglas de información",
+        "competent_rivals": [
+          "Gale-Shapley deferred acceptance lado izquierdo/derecho",
+          "NetworkX exact bipartite max-weight with maxcardinality",
+          "Enumeración exhaustiva o MILP HiGHS cuando predefinido",
+          "Protocolos de ofertas únicos, limitados, aleatorios o estratégicos"
+        ],
+        "null": "No diferencia bajo este input; no afirmación sobre humanos",
+        "prior_art": "Gale-Shapley 1962 y Echenique–Robinson-Cortés–Yariv 2025; no originalidad de estabilidad"
+      },
+      "C": {
+        "precommitted_input": "20 mercados n8 semilla 32400–32419 cap 9 ofertas",
+        "primary_endpoint": "Mercados inacabados, parejas bloqueantes y propuestas",
+        "falsifier": "Cap interrumpe DA antes de resolver desequilibrios",
+        "selected_before_outcome": true,
+        "planned_repeat": "Una sola batería por N, sin añadir seeds tras outcomes",
+        "multiplicity": "20 pruebas exploratorias ligadas por fuente sintética compartida; no reclamar 20 descubrimientos ni significación confirmatoria"
+      },
+      "D": {
+        "frozen_code_sha256": {
+          "market_lab.py": "f202e790705dd0d48724dcbcb67356b4f2075c0a82d4b44c1a9d434851bb6e21",
+          "run_cycles.py": "13d5e89d9a9adfb3c5f2f8d9c5a8480b3dfe71b7dd23b816bccca4a4dc63f24b",
+          "ORIGINAL_ESBM_UNMODIFIED.py": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+        },
+        "instrument_archive_sha256": "d4687db70c1b79801b0d4b27c38363184f3ef9f4ea4be9903e41ab1c4c65a93d",
+        "instrument_archive_bytes": 13267,
+        "archived_in": "/Mercados-de-pareja/ABH-N317-N336/INSTRUMENTS_PREOUTCOME.zip",
+        "original_source_unchanged": true,
+        "resource_limit_s_per_cycle": 75,
+        "executor": "python3 local; no Codex",
+        "code_sha_check": "run_cycles.py aborts on modified sources",
+        "state": "FROZEN_PRIOR_TO_FIRST_OUTCOME"
+      },
+      "E": {
+        "expected_receipt": "results/N324.json",
+        "status": "NOT_RUN_YET",
+        "run_command": "python run_cycles.py 324 --freeze freeze.json"
+      },
+      "F": {
+        "adversarial_controls": "Independently computed blocking-pair census, eligibility checks, exhaustive stable-permutation enumeration and MILP/DP for small cases; negative findings preserved",
+        "stop": "No edited fixtures based on outcomes; errors logged as EXECUTED_EXCEPTION not PASS",
+        "baseline_parity": "Same synthetic payoff matrices available to all comparisons"
+      },
+      "G": {
+        "independence": "No external human observation; same synthetic people generator; this is software/mechanism QA, not field replication",
+        "human_R5": "STOP",
+        "SSJY": false
+      },
+      "H": {
+        "prior_id": "P-CULTURAL-RULES",
+        "update_type": "Qualitative NO_CHANGE_WITH_REASON for human priors absent independent real observed choices",
+        "numerical_posterior": false
+      },
+      "I": {
+        "scientific_CT2_before": 7,
+        "scientific_CT2_planned_after": 7,
+        "grade_scientific": "0/3 absent independent empirical falsation",
+        "ethics": "No real-person attributes or data used",
+        "DRIFT": "D1.8 mechanistic pivot from centralized ESBM match to decentralized two-sided laboratory rules"
+      },
+      "J": {
+        "decision_rule": "Count cycle only after real run with valid receipt, correctness audit and useful novel estimand; preserve zero or negative outcomes; no forced scientific grade",
+        "pre_outcome_spent": false
+      }
+    },
+    {
+      "id": "N325",
+      "mode": "AB-H_TECHNICAL_SIMULATION",
+      "experimental_status": "NOT_EXECUTED_AT_FREEZE",
+      "A": {
+        "question": "Rematching por pareja bloqueante aleatoria",
+        "unit": "Agente sintético, dyad y mercado bipartito n3–8",
+        "population": "100% artificial, no calibrada empíricamente",
+        "outcome_true": "Comparación de algoritmos con mismas utilidades/eligibilidades",
+        "outcome_proxy": "Tasa estabilidad, ciclos de estados y número de cambios",
+        "treatment": "Regla del protocolo explicitada en pregunta",
+        "comparison": "Contrafactual sobre mismo mercado",
+        "human_interference": "No identificable; no sujetos humanos"
+      },
+      "B": {
+        "hypothesis_A": "El mecanismo descentralizado y el óptimo de peso centralizado difieren condicionalmente al diseño y reglas de información",
+        "competent_rivals": [
+          "Gale-Shapley deferred acceptance lado izquierdo/derecho",
+          "NetworkX exact bipartite max-weight with maxcardinality",
+          "Enumeración exhaustiva o MILP HiGHS cuando predefinido",
+          "Protocolos de ofertas únicos, limitados, aleatorios o estratégicos"
+        ],
+        "null": "No diferencia bajo este input; no afirmación sobre humanos",
+        "prior_art": "Gale-Shapley 1962 y Echenique–Robinson-Cortés–Yariv 2025; no originalidad de estabilidad"
+      },
+      "C": {
+        "precommitted_input": "20 mercados n8 semilla 32500–32519, 80 pasos",
+        "primary_endpoint": "Tasa estabilidad, ciclos de estados y número de cambios",
+        "falsifier": "La mejora local no tiene por qué reproducir resultado DA",
+        "selected_before_outcome": true,
+        "planned_repeat": "Una sola batería por N, sin añadir seeds tras outcomes",
+        "multiplicity": "20 pruebas exploratorias ligadas por fuente sintética compartida; no reclamar 20 descubrimientos ni significación confirmatoria"
+      },
+      "D": {
+        "frozen_code_sha256": {
+          "market_lab.py": "f202e790705dd0d48724dcbcb67356b4f2075c0a82d4b44c1a9d434851bb6e21",
+          "run_cycles.py": "13d5e89d9a9adfb3c5f2f8d9c5a8480b3dfe71b7dd23b816bccca4a4dc63f24b",
+          "ORIGINAL_ESBM_UNMODIFIED.py": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+        },
+        "instrument_archive_sha256": "d4687db70c1b79801b0d4b27c38363184f3ef9f4ea4be9903e41ab1c4c65a93d",
+        "instrument_archive_bytes": 13267,
+        "archived_in": "/Mercados-de-pareja/ABH-N317-N336/INSTRUMENTS_PREOUTCOME.zip",
+        "original_source_unchanged": true,
+        "resource_limit_s_per_cycle": 75,
+        "executor": "python3 local; no Codex",
+        "code_sha_check": "run_cycles.py aborts on modified sources",
+        "state": "FROZEN_PRIOR_TO_FIRST_OUTCOME"
+      },
+      "E": {
+        "expected_receipt": "results/N325.json",
+        "status": "NOT_RUN_YET",
+        "run_command": "python run_cycles.py 325 --freeze freeze.json"
+      },
+      "F": {
+        "adversarial_controls": "Independently computed blocking-pair census, eligibility checks, exhaustive stable-permutation enumeration and MILP/DP for small cases; negative findings preserved",
+        "stop": "No edited fixtures based on outcomes; errors logged as EXECUTED_EXCEPTION not PASS",
+        "baseline_parity": "Same synthetic payoff matrices available to all comparisons"
+      },
+      "G": {
+        "independence": "No external human observation; same synthetic people generator; this is software/mechanism QA, not field replication",
+        "human_R5": "STOP",
+        "SSJY": false
+      },
+      "H": {
+        "prior_id": "P-CULTURAL-RULES",
+        "update_type": "Qualitative NO_CHANGE_WITH_REASON for human priors absent independent real observed choices",
+        "numerical_posterior": false
+      },
+      "I": {
+        "scientific_CT2_before": 7,
+        "scientific_CT2_planned_after": 7,
+        "grade_scientific": "0/3 absent independent empirical falsation",
+        "ethics": "No real-person attributes or data used",
+        "DRIFT": "D1.8 mechanistic pivot from centralized ESBM match to decentralized two-sided laboratory rules"
+      },
+      "J": {
+        "decision_rule": "Count cycle only after real run with valid receipt, correctness audit and useful novel estimand; preserve zero or negative outcomes; no forced scientific grade",
+        "pre_outcome_spent": false
+      }
+    },
+    {
+      "id": "N326",
+      "mode": "AB-H_TECHNICAL_SIMULATION",
+      "experimental_status": "NOT_EXECUTED_AT_FREEZE",
+      "A": {
+        "question": "Oferta miope por beneficio marginal frente a aleatoria",
+        "unit": "Agente sintético, dyad y mercado bipartito n3–8",
+        "population": "100% artificial, no calibrada empíricamente",
+        "outcome_true": "Comparación de algoritmos con mismas utilidades/eligibilidades",
+        "outcome_proxy": "Cambios, ciclos y bloqueantes de ambos protocolos",
+        "treatment": "Regla del protocolo explicitada en pregunta",
+        "comparison": "Contrafactual sobre mismo mercado",
+        "human_interference": "No identificable; no sujetos humanos"
+      },
+      "B": {
+        "hypothesis_A": "El mecanismo descentralizado y el óptimo de peso centralizado difieren condicionalmente al diseño y reglas de información",
+        "competent_rivals": [
+          "Gale-Shapley deferred acceptance lado izquierdo/derecho",
+          "NetworkX exact bipartite max-weight with maxcardinality",
+          "Enumeración exhaustiva o MILP HiGHS cuando predefinido",
+          "Protocolos de ofertas únicos, limitados, aleatorios o estratégicos"
+        ],
+        "null": "No diferencia bajo este input; no afirmación sobre humanos",
+        "prior_art": "Gale-Shapley 1962 y Echenique–Robinson-Cortés–Yariv 2025; no originalidad de estabilidad"
+      },
+      "C": {
+        "precommitted_input": "20 mercados n8 semilla 32600–32619, 80 pasos",
+        "primary_endpoint": "Cambios, ciclos y bloqueantes de ambos protocolos",
+        "falsifier": "Selección por ganancia cambia trayectorias ante mismas preferencias",
+        "selected_before_outcome": true,
+        "planned_repeat": "Una sola batería por N, sin añadir seeds tras outcomes",
+        "multiplicity": "20 pruebas exploratorias ligadas por fuente sintética compartida; no reclamar 20 descubrimientos ni significación confirmatoria"
+      },
+      "D": {
+        "frozen_code_sha256": {
+          "market_lab.py": "f202e790705dd0d48724dcbcb67356b4f2075c0a82d4b44c1a9d434851bb6e21",
+          "run_cycles.py": "13d5e89d9a9adfb3c5f2f8d9c5a8480b3dfe71b7dd23b816bccca4a4dc63f24b",
+          "ORIGINAL_ESBM_UNMODIFIED.py": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+        },
+        "instrument_archive_sha256": "d4687db70c1b79801b0d4b27c38363184f3ef9f4ea4be9903e41ab1c4c65a93d",
+        "instrument_archive_bytes": 13267,
+        "archived_in": "/Mercados-de-pareja/ABH-N317-N336/INSTRUMENTS_PREOUTCOME.zip",
+        "original_source_unchanged": true,
+        "resource_limit_s_per_cycle": 75,
+        "executor": "python3 local; no Codex",
+        "code_sha_check": "run_cycles.py aborts on modified sources",
+        "state": "FROZEN_PRIOR_TO_FIRST_OUTCOME"
+      },
+      "E": {
+        "expected_receipt": "results/N326.json",
+        "status": "NOT_RUN_YET",
+        "run_command": "python run_cycles.py 326 --freeze freeze.json"
+      },
+      "F": {
+        "adversarial_controls": "Independently computed blocking-pair census, eligibility checks, exhaustive stable-permutation enumeration and MILP/DP for small cases; negative findings preserved",
+        "stop": "No edited fixtures based on outcomes; errors logged as EXECUTED_EXCEPTION not PASS",
+        "baseline_parity": "Same synthetic payoff matrices available to all comparisons"
+      },
+      "G": {
+        "independence": "No external human observation; same synthetic people generator; this is software/mechanism QA, not field replication",
+        "human_R5": "STOP",
+        "SSJY": false
+      },
+      "H": {
+        "prior_id": "P-CULTURAL-RULES",
+        "update_type": "Qualitative NO_CHANGE_WITH_REASON for human priors absent independent real observed choices",
+        "numerical_posterior": false
+      },
+      "I": {
+        "scientific_CT2_before": 7,
+        "scientific_CT2_planned_after": 7,
+        "grade_scientific": "0/3 absent independent empirical falsation",
+        "ethics": "No real-person attributes or data used",
+        "DRIFT": "D1.8 mechanistic pivot from centralized ESBM match to decentralized two-sided laboratory rules"
+      },
+      "J": {
+        "decision_rule": "Count cycle only after real run with valid receipt, correctness audit and useful novel estimand; preserve zero or negative outcomes; no forced scientific grade",
+        "pre_outcome_spent": false
+      }
+    },
+    {
+      "id": "N327",
+      "mode": "AB-H_TECHNICAL_SIMULATION",
+      "experimental_status": "NOT_EXECUTED_AT_FREEZE",
+      "A": {
+        "question": "Riesgo visual de tres candidatos frente a full slates",
+        "unit": "Agente sintético, dyad y mercado bipartito n3–8",
+        "population": "100% artificial, no calibrada empíricamente",
+        "outcome_true": "Comparación de algoritmos con mismas utilidades/eligibilidades",
+        "outcome_proxy": "Bloqueantes full vs conjuntos visibles y cardinalidad",
+        "treatment": "Regla del protocolo explicitada en pregunta",
+        "comparison": "Contrafactual sobre mismo mercado",
+        "human_interference": "No identificable; no sujetos humanos"
+      },
+      "B": {
+        "hypothesis_A": "El mecanismo descentralizado y el óptimo de peso centralizado difieren condicionalmente al diseño y reglas de información",
+        "competent_rivals": [
+          "Gale-Shapley deferred acceptance lado izquierdo/derecho",
+          "NetworkX exact bipartite max-weight with maxcardinality",
+          "Enumeración exhaustiva o MILP HiGHS cuando predefinido",
+          "Protocolos de ofertas únicos, limitados, aleatorios o estratégicos"
+        ],
+        "null": "No diferencia bajo este input; no afirmación sobre humanos",
+        "prior_art": "Gale-Shapley 1962 y Echenique–Robinson-Cortés–Yariv 2025; no originalidad de estabilidad"
+      },
+      "C": {
+        "precommitted_input": "20 mercados n8 semilla 32700–32719, visibilidad aleatoria k3",
+        "primary_endpoint": "Bloqueantes full vs conjuntos visibles y cardinalidad",
+        "falsifier": "DA estable en oportunidades observadas puede ser inestable en mercado total",
+        "selected_before_outcome": true,
+        "planned_repeat": "Una sola batería por N, sin añadir seeds tras outcomes",
+        "multiplicity": "20 pruebas exploratorias ligadas por fuente sintética compartida; no reclamar 20 descubrimientos ni significación confirmatoria"
+      },
+      "D": {
+        "frozen_code_sha256": {
+          "market_lab.py": "f202e790705dd0d48724dcbcb67356b4f2075c0a82d4b44c1a9d434851bb6e21",
+          "run_cycles.py": "13d5e89d9a9adfb3c5f2f8d9c5a8480b3dfe71b7dd23b816bccca4a4dc63f24b",
+          "ORIGINAL_ESBM_UNMODIFIED.py": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+        },
+        "instrument_archive_sha256": "d4687db70c1b79801b0d4b27c38363184f3ef9f4ea4be9903e41ab1c4c65a93d",
+        "instrument_archive_bytes": 13267,
+        "archived_in": "/Mercados-de-pareja/ABH-N317-N336/INSTRUMENTS_PREOUTCOME.zip",
+        "original_source_unchanged": true,
+        "resource_limit_s_per_cycle": 75,
+        "executor": "python3 local; no Codex",
+        "code_sha_check": "run_cycles.py aborts on modified sources",
+        "state": "FROZEN_PRIOR_TO_FIRST_OUTCOME"
+      },
+      "E": {
+        "expected_receipt": "results/N327.json",
+        "status": "NOT_RUN_YET",
+        "run_command": "python run_cycles.py 327 --freeze freeze.json"
+      },
+      "F": {
+        "adversarial_controls": "Independently computed blocking-pair census, eligibility checks, exhaustive stable-permutation enumeration and MILP/DP for small cases; negative findings preserved",
+        "stop": "No edited fixtures based on outcomes; errors logged as EXECUTED_EXCEPTION not PASS",
+        "baseline_parity": "Same synthetic payoff matrices available to all comparisons"
+      },
+      "G": {
+        "independence": "No external human observation; same synthetic people generator; this is software/mechanism QA, not field replication",
+        "human_R5": "STOP",
+        "SSJY": false
+      },
+      "H": {
+        "prior_id": "P-CULTURAL-RULES",
+        "update_type": "Qualitative NO_CHANGE_WITH_REASON for human priors absent independent real observed choices",
+        "numerical_posterior": false
+      },
+      "I": {
+        "scientific_CT2_before": 7,
+        "scientific_CT2_planned_after": 7,
+        "grade_scientific": "0/3 absent independent empirical falsation",
+        "ethics": "No real-person attributes or data used",
+        "DRIFT": "D1.8 mechanistic pivot from centralized ESBM match to decentralized two-sided laboratory rules"
+      },
+      "J": {
+        "decision_rule": "Count cycle only after real run with valid receipt, correctness audit and useful novel estimand; preserve zero or negative outcomes; no forced scientific grade",
+        "pre_outcome_spent": false
+      }
+    },
+    {
+      "id": "N328",
+      "mode": "AB-H_TECHNICAL_SIMULATION",
+      "experimental_status": "NOT_EXECUTED_AT_FREEZE",
+      "A": {
+        "question": "Sesgo de popularidad en oportunidades vs azar",
+        "unit": "Agente sintético, dyad y mercado bipartito n3–8",
+        "population": "100% artificial, no calibrada empíricamente",
+        "outcome_true": "Comparación de algoritmos con mismas utilidades/eligibilidades",
+        "outcome_proxy": "Gini receptores, bloqueo y parejas",
+        "treatment": "Regla del protocolo explicitada en pregunta",
+        "comparison": "Contrafactual sobre mismo mercado",
+        "human_interference": "No identificable; no sujetos humanos"
+      },
+      "B": {
+        "hypothesis_A": "El mecanismo descentralizado y el óptimo de peso centralizado difieren condicionalmente al diseño y reglas de información",
+        "competent_rivals": [
+          "Gale-Shapley deferred acceptance lado izquierdo/derecho",
+          "NetworkX exact bipartite max-weight with maxcardinality",
+          "Enumeración exhaustiva o MILP HiGHS cuando predefinido",
+          "Protocolos de ofertas únicos, limitados, aleatorios o estratégicos"
+        ],
+        "null": "No diferencia bajo este input; no afirmación sobre humanos",
+        "prior_art": "Gale-Shapley 1962 y Echenique–Robinson-Cortés–Yariv 2025; no originalidad de estabilidad"
+      },
+      "C": {
+        "precommitted_input": "20 mercados n8 semilla 32800–32819, k3",
+        "primary_endpoint": "Gini receptores, bloqueo y parejas",
+        "falsifier": "Exposición concentrada altera selección sin cambiar preferencias",
+        "selected_before_outcome": true,
+        "planned_repeat": "Una sola batería por N, sin añadir seeds tras outcomes",
+        "multiplicity": "20 pruebas exploratorias ligadas por fuente sintética compartida; no reclamar 20 descubrimientos ni significación confirmatoria"
+      },
+      "D": {
+        "frozen_code_sha256": {
+          "market_lab.py": "f202e790705dd0d48724dcbcb67356b4f2075c0a82d4b44c1a9d434851bb6e21",
+          "run_cycles.py": "13d5e89d9a9adfb3c5f2f8d9c5a8480b3dfe71b7dd23b816bccca4a4dc63f24b",
+          "ORIGINAL_ESBM_UNMODIFIED.py": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+        },
+        "instrument_archive_sha256": "d4687db70c1b79801b0d4b27c38363184f3ef9f4ea4be9903e41ab1c4c65a93d",
+        "instrument_archive_bytes": 13267,
+        "archived_in": "/Mercados-de-pareja/ABH-N317-N336/INSTRUMENTS_PREOUTCOME.zip",
+        "original_source_unchanged": true,
+        "resource_limit_s_per_cycle": 75,
+        "executor": "python3 local; no Codex",
+        "code_sha_check": "run_cycles.py aborts on modified sources",
+        "state": "FROZEN_PRIOR_TO_FIRST_OUTCOME"
+      },
+      "E": {
+        "expected_receipt": "results/N328.json",
+        "status": "NOT_RUN_YET",
+        "run_command": "python run_cycles.py 328 --freeze freeze.json"
+      },
+      "F": {
+        "adversarial_controls": "Independently computed blocking-pair census, eligibility checks, exhaustive stable-permutation enumeration and MILP/DP for small cases; negative findings preserved",
+        "stop": "No edited fixtures based on outcomes; errors logged as EXECUTED_EXCEPTION not PASS",
+        "baseline_parity": "Same synthetic payoff matrices available to all comparisons"
+      },
+      "G": {
+        "independence": "No external human observation; same synthetic people generator; this is software/mechanism QA, not field replication",
+        "human_R5": "STOP",
+        "SSJY": false
+      },
+      "H": {
+        "prior_id": "P-CULTURAL-RULES",
+        "update_type": "Qualitative NO_CHANGE_WITH_REASON for human priors absent independent real observed choices",
+        "numerical_posterior": false
+      },
+      "I": {
+        "scientific_CT2_before": 7,
+        "scientific_CT2_planned_after": 7,
+        "grade_scientific": "0/3 absent independent empirical falsation",
+        "ethics": "No real-person attributes or data used",
+        "DRIFT": "D1.8 mechanistic pivot from centralized ESBM match to decentralized two-sided laboratory rules"
+      },
+      "J": {
+        "decision_rule": "Count cycle only after real run with valid receipt, correctness audit and useful novel estimand; preserve zero or negative outcomes; no forced scientific grade",
+        "pre_outcome_spent": false
+      }
+    },
+    {
+      "id": "N329",
+      "mode": "AB-H_TECHNICAL_SIMULATION",
+      "experimental_status": "NOT_EXECUTED_AT_FREEZE",
+      "A": {
+        "question": "Segregación institucional de oportunidades por grupo",
+        "unit": "Agente sintético, dyad y mercado bipartito n3–8",
+        "population": "100% artificial, no calibrada empíricamente",
+        "outcome_true": "Comparación de algoritmos con mismas utilidades/eligibilidades",
+        "outcome_proxy": "Cardinalidad, bloqueo contrafactual cross-group",
+        "treatment": "Regla del protocolo explicitada en pregunta",
+        "comparison": "Contrafactual sobre mismo mercado",
+        "human_interference": "No identificable; no sujetos humanos"
+      },
+      "B": {
+        "hypothesis_A": "El mecanismo descentralizado y el óptimo de peso centralizado difieren condicionalmente al diseño y reglas de información",
+        "competent_rivals": [
+          "Gale-Shapley deferred acceptance lado izquierdo/derecho",
+          "NetworkX exact bipartite max-weight with maxcardinality",
+          "Enumeración exhaustiva o MILP HiGHS cuando predefinido",
+          "Protocolos de ofertas únicos, limitados, aleatorios o estratégicos"
+        ],
+        "null": "No diferencia bajo este input; no afirmación sobre humanos",
+        "prior_art": "Gale-Shapley 1962 y Echenique–Robinson-Cortés–Yariv 2025; no originalidad de estabilidad"
+      },
+      "C": {
+        "precommitted_input": "20 mercados n8 semilla 32900–32919",
+        "primary_endpoint": "Cardinalidad, bloqueo contrafactual cross-group",
+        "falsifier": "Estabilidad restringida no identifica preferencias del mercado no restringido",
+        "selected_before_outcome": true,
+        "planned_repeat": "Una sola batería por N, sin añadir seeds tras outcomes",
+        "multiplicity": "20 pruebas exploratorias ligadas por fuente sintética compartida; no reclamar 20 descubrimientos ni significación confirmatoria"
+      },
+      "D": {
+        "frozen_code_sha256": {
+          "market_lab.py": "f202e790705dd0d48724dcbcb67356b4f2075c0a82d4b44c1a9d434851bb6e21",
+          "run_cycles.py": "13d5e89d9a9adfb3c5f2f8d9c5a8480b3dfe71b7dd23b816bccca4a4dc63f24b",
+          "ORIGINAL_ESBM_UNMODIFIED.py": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+        },
+        "instrument_archive_sha256": "d4687db70c1b79801b0d4b27c38363184f3ef9f4ea4be9903e41ab1c4c65a93d",
+        "instrument_archive_bytes": 13267,
+        "archived_in": "/Mercados-de-pareja/ABH-N317-N336/INSTRUMENTS_PREOUTCOME.zip",
+        "original_source_unchanged": true,
+        "resource_limit_s_per_cycle": 75,
+        "executor": "python3 local; no Codex",
+        "code_sha_check": "run_cycles.py aborts on modified sources",
+        "state": "FROZEN_PRIOR_TO_FIRST_OUTCOME"
+      },
+      "E": {
+        "expected_receipt": "results/N329.json",
+        "status": "NOT_RUN_YET",
+        "run_command": "python run_cycles.py 329 --freeze freeze.json"
+      },
+      "F": {
+        "adversarial_controls": "Independently computed blocking-pair census, eligibility checks, exhaustive stable-permutation enumeration and MILP/DP for small cases; negative findings preserved",
+        "stop": "No edited fixtures based on outcomes; errors logged as EXECUTED_EXCEPTION not PASS",
+        "baseline_parity": "Same synthetic payoff matrices available to all comparisons"
+      },
+      "G": {
+        "independence": "No external human observation; same synthetic people generator; this is software/mechanism QA, not field replication",
+        "human_R5": "STOP",
+        "SSJY": false
+      },
+      "H": {
+        "prior_id": "P-CULTURAL-RULES",
+        "update_type": "Qualitative NO_CHANGE_WITH_REASON for human priors absent independent real observed choices",
+        "numerical_posterior": false
+      },
+      "I": {
+        "scientific_CT2_before": 7,
+        "scientific_CT2_planned_after": 7,
+        "grade_scientific": "0/3 absent independent empirical falsation",
+        "ethics": "No real-person attributes or data used",
+        "DRIFT": "D1.8 mechanistic pivot from centralized ESBM match to decentralized two-sided laboratory rules"
+      },
+      "J": {
+        "decision_rule": "Count cycle only after real run with valid receipt, correctness audit and useful novel estimand; preserve zero or negative outcomes; no forced scientific grade",
+        "pre_outcome_spent": false
+      }
+    },
+    {
+      "id": "N330",
+      "mode": "AB-H_TECHNICAL_SIMULATION",
+      "experimental_status": "NOT_EXECUTED_AT_FREEZE",
+      "A": {
+        "question": "Puerta de consentimiento bilateral",
+        "unit": "Agente sintético, dyad y mercado bipartito n3–8",
+        "population": "100% artificial, no calibrada empíricamente",
+        "outcome_true": "Comparación de algoritmos con mismas utilidades/eligibilidades",
+        "outcome_proxy": "Conteo aristas inválidas, factibilidad con consentimiento",
+        "treatment": "Regla del protocolo explicitada en pregunta",
+        "comparison": "Contrafactual sobre mismo mercado",
+        "human_interference": "No identificable; no sujetos humanos"
+      },
+      "B": {
+        "hypothesis_A": "El mecanismo descentralizado y el óptimo de peso centralizado difieren condicionalmente al diseño y reglas de información",
+        "competent_rivals": [
+          "Gale-Shapley deferred acceptance lado izquierdo/derecho",
+          "NetworkX exact bipartite max-weight with maxcardinality",
+          "Enumeración exhaustiva o MILP HiGHS cuando predefinido",
+          "Protocolos de ofertas únicos, limitados, aleatorios o estratégicos"
+        ],
+        "null": "No diferencia bajo este input; no afirmación sobre humanos",
+        "prior_art": "Gale-Shapley 1962 y Echenique–Robinson-Cortés–Yariv 2025; no originalidad de estabilidad"
+      },
+      "C": {
+        "precommitted_input": "20 mercados n8 semilla 33000–33019, utilidades de un lado parcialmente negativas",
+        "primary_endpoint": "Conteo aristas inválidas, factibilidad con consentimiento",
+        "falsifier": "Asignación sin comprobar ambas utilidades incluye aristas ilegítimas",
+        "selected_before_outcome": true,
+        "planned_repeat": "Una sola batería por N, sin añadir seeds tras outcomes",
+        "multiplicity": "20 pruebas exploratorias ligadas por fuente sintética compartida; no reclamar 20 descubrimientos ni significación confirmatoria"
+      },
+      "D": {
+        "frozen_code_sha256": {
+          "market_lab.py": "f202e790705dd0d48724dcbcb67356b4f2075c0a82d4b44c1a9d434851bb6e21",
+          "run_cycles.py": "13d5e89d9a9adfb3c5f2f8d9c5a8480b3dfe71b7dd23b816bccca4a4dc63f24b",
+          "ORIGINAL_ESBM_UNMODIFIED.py": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+        },
+        "instrument_archive_sha256": "d4687db70c1b79801b0d4b27c38363184f3ef9f4ea4be9903e41ab1c4c65a93d",
+        "instrument_archive_bytes": 13267,
+        "archived_in": "/Mercados-de-pareja/ABH-N317-N336/INSTRUMENTS_PREOUTCOME.zip",
+        "original_source_unchanged": true,
+        "resource_limit_s_per_cycle": 75,
+        "executor": "python3 local; no Codex",
+        "code_sha_check": "run_cycles.py aborts on modified sources",
+        "state": "FROZEN_PRIOR_TO_FIRST_OUTCOME"
+      },
+      "E": {
+        "expected_receipt": "results/N330.json",
+        "status": "NOT_RUN_YET",
+        "run_command": "python run_cycles.py 330 --freeze freeze.json"
+      },
+      "F": {
+        "adversarial_controls": "Independently computed blocking-pair census, eligibility checks, exhaustive stable-permutation enumeration and MILP/DP for small cases; negative findings preserved",
+        "stop": "No edited fixtures based on outcomes; errors logged as EXECUTED_EXCEPTION not PASS",
+        "baseline_parity": "Same synthetic payoff matrices available to all comparisons"
+      },
+      "G": {
+        "independence": "No external human observation; same synthetic people generator; this is software/mechanism QA, not field replication",
+        "human_R5": "STOP",
+        "SSJY": false
+      },
+      "H": {
+        "prior_id": "P-CULTURAL-RULES",
+        "update_type": "Qualitative NO_CHANGE_WITH_REASON for human priors absent independent real observed choices",
+        "numerical_posterior": false
+      },
+      "I": {
+        "scientific_CT2_before": 7,
+        "scientific_CT2_planned_after": 7,
+        "grade_scientific": "0/3 absent independent empirical falsation",
+        "ethics": "No real-person attributes or data used",
+        "DRIFT": "D1.8 mechanistic pivot from centralized ESBM match to decentralized two-sided laboratory rules"
+      },
+      "J": {
+        "decision_rule": "Count cycle only after real run with valid receipt, correctness audit and useful novel estimand; preserve zero or negative outcomes; no forced scientific grade",
+        "pre_outcome_spent": false
+      }
+    },
+    {
+      "id": "N331",
+      "mode": "AB-H_TECHNICAL_SIMULATION",
+      "experimental_status": "NOT_EXECUTED_AT_FREEZE",
+      "A": {
+        "question": "Transformación cardinal estrictamente creciente vs orden DA",
+        "unit": "Agente sintético, dyad y mercado bipartito n3–8",
+        "population": "100% artificial, no calibrada empíricamente",
+        "outcome_true": "Comparación de algoritmos con mismas utilidades/eligibilidades",
+        "outcome_proxy": "Número de identidades cambiadas y estabilidad",
+        "treatment": "Regla del protocolo explicitada en pregunta",
+        "comparison": "Contrafactual sobre mismo mercado",
+        "human_interference": "No identificable; no sujetos humanos"
+      },
+      "B": {
+        "hypothesis_A": "El mecanismo descentralizado y el óptimo de peso centralizado difieren condicionalmente al diseño y reglas de información",
+        "competent_rivals": [
+          "Gale-Shapley deferred acceptance lado izquierdo/derecho",
+          "NetworkX exact bipartite max-weight with maxcardinality",
+          "Enumeración exhaustiva o MILP HiGHS cuando predefinido",
+          "Protocolos de ofertas únicos, limitados, aleatorios o estratégicos"
+        ],
+        "null": "No diferencia bajo este input; no afirmación sobre humanos",
+        "prior_art": "Gale-Shapley 1962 y Echenique–Robinson-Cortés–Yariv 2025; no originalidad de estabilidad"
+      },
+      "C": {
+        "precommitted_input": "20 mercados n8 semilla 33100–33119, transformaciones positivas distintas por lado",
+        "primary_endpoint": "Número de identidades cambiadas y estabilidad",
+        "falsifier": "DA ordinal debe preservar parejas aunque cambie suma cardinal",
+        "selected_before_outcome": true,
+        "planned_repeat": "Una sola batería por N, sin añadir seeds tras outcomes",
+        "multiplicity": "20 pruebas exploratorias ligadas por fuente sintética compartida; no reclamar 20 descubrimientos ni significación confirmatoria"
+      },
+      "D": {
+        "frozen_code_sha256": {
+          "market_lab.py": "f202e790705dd0d48724dcbcb67356b4f2075c0a82d4b44c1a9d434851bb6e21",
+          "run_cycles.py": "13d5e89d9a9adfb3c5f2f8d9c5a8480b3dfe71b7dd23b816bccca4a4dc63f24b",
+          "ORIGINAL_ESBM_UNMODIFIED.py": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+        },
+        "instrument_archive_sha256": "d4687db70c1b79801b0d4b27c38363184f3ef9f4ea4be9903e41ab1c4c65a93d",
+        "instrument_archive_bytes": 13267,
+        "archived_in": "/Mercados-de-pareja/ABH-N317-N336/INSTRUMENTS_PREOUTCOME.zip",
+        "original_source_unchanged": true,
+        "resource_limit_s_per_cycle": 75,
+        "executor": "python3 local; no Codex",
+        "code_sha_check": "run_cycles.py aborts on modified sources",
+        "state": "FROZEN_PRIOR_TO_FIRST_OUTCOME"
+      },
+      "E": {
+        "expected_receipt": "results/N331.json",
+        "status": "NOT_RUN_YET",
+        "run_command": "python run_cycles.py 331 --freeze freeze.json"
+      },
+      "F": {
+        "adversarial_controls": "Independently computed blocking-pair census, eligibility checks, exhaustive stable-permutation enumeration and MILP/DP for small cases; negative findings preserved",
+        "stop": "No edited fixtures based on outcomes; errors logged as EXECUTED_EXCEPTION not PASS",
+        "baseline_parity": "Same synthetic payoff matrices available to all comparisons"
+      },
+      "G": {
+        "independence": "No external human observation; same synthetic people generator; this is software/mechanism QA, not field replication",
+        "human_R5": "STOP",
+        "SSJY": false
+      },
+      "H": {
+        "prior_id": "P-CULTURAL-RULES",
+        "update_type": "Qualitative NO_CHANGE_WITH_REASON for human priors absent independent real observed choices",
+        "numerical_posterior": false
+      },
+      "I": {
+        "scientific_CT2_before": 7,
+        "scientific_CT2_planned_after": 7,
+        "grade_scientific": "0/3 absent independent empirical falsation",
+        "ethics": "No real-person attributes or data used",
+        "DRIFT": "D1.8 mechanistic pivot from centralized ESBM match to decentralized two-sided laboratory rules"
+      },
+      "J": {
+        "decision_rule": "Count cycle only after real run with valid receipt, correctness audit and useful novel estimand; preserve zero or negative outcomes; no forced scientific grade",
+        "pre_outcome_spent": false
+      }
+    },
+    {
+      "id": "N332",
+      "mode": "AB-H_TECHNICAL_SIMULATION",
+      "experimental_status": "NOT_EXECUTED_AT_FREEZE",
+      "A": {
+        "question": "Ofertas vinculantes frente a nuevas ofertas y ruptura",
+        "unit": "Agente sintético, dyad y mercado bipartito n3–8",
+        "population": "100% artificial, no calibrada empíricamente",
+        "outcome_true": "Comparación de algoritmos con mismas utilidades/eligibilidades",
+        "outcome_proxy": "Reemparejamientos, parejas bloqueantes, ciclos",
+        "treatment": "Regla del protocolo explicitada en pregunta",
+        "comparison": "Contrafactual sobre mismo mercado",
+        "human_interference": "No identificable; no sujetos humanos"
+      },
+      "B": {
+        "hypothesis_A": "El mecanismo descentralizado y el óptimo de peso centralizado difieren condicionalmente al diseño y reglas de información",
+        "competent_rivals": [
+          "Gale-Shapley deferred acceptance lado izquierdo/derecho",
+          "NetworkX exact bipartite max-weight with maxcardinality",
+          "Enumeración exhaustiva o MILP HiGHS cuando predefinido",
+          "Protocolos de ofertas únicos, limitados, aleatorios o estratégicos"
+        ],
+        "null": "No diferencia bajo este input; no afirmación sobre humanos",
+        "prior_art": "Gale-Shapley 1962 y Echenique–Robinson-Cortés–Yariv 2025; no originalidad de estabilidad"
+      },
+      "C": {
+        "precommitted_input": "20 mercados n8 semilla 33200–33219, 50 pasos",
+        "primary_endpoint": "Reemparejamientos, parejas bloqueantes, ciclos",
+        "falsifier": "Restricción de no romper vínculos produce historia y estabilidad diferente",
+        "selected_before_outcome": true,
+        "planned_repeat": "Una sola batería por N, sin añadir seeds tras outcomes",
+        "multiplicity": "20 pruebas exploratorias ligadas por fuente sintética compartida; no reclamar 20 descubrimientos ni significación confirmatoria"
+      },
+      "D": {
+        "frozen_code_sha256": {
+          "market_lab.py": "f202e790705dd0d48724dcbcb67356b4f2075c0a82d4b44c1a9d434851bb6e21",
+          "run_cycles.py": "13d5e89d9a9adfb3c5f2f8d9c5a8480b3dfe71b7dd23b816bccca4a4dc63f24b",
+          "ORIGINAL_ESBM_UNMODIFIED.py": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+        },
+        "instrument_archive_sha256": "d4687db70c1b79801b0d4b27c38363184f3ef9f4ea4be9903e41ab1c4c65a93d",
+        "instrument_archive_bytes": 13267,
+        "archived_in": "/Mercados-de-pareja/ABH-N317-N336/INSTRUMENTS_PREOUTCOME.zip",
+        "original_source_unchanged": true,
+        "resource_limit_s_per_cycle": 75,
+        "executor": "python3 local; no Codex",
+        "code_sha_check": "run_cycles.py aborts on modified sources",
+        "state": "FROZEN_PRIOR_TO_FIRST_OUTCOME"
+      },
+      "E": {
+        "expected_receipt": "results/N332.json",
+        "status": "NOT_RUN_YET",
+        "run_command": "python run_cycles.py 332 --freeze freeze.json"
+      },
+      "F": {
+        "adversarial_controls": "Independently computed blocking-pair census, eligibility checks, exhaustive stable-permutation enumeration and MILP/DP for small cases; negative findings preserved",
+        "stop": "No edited fixtures based on outcomes; errors logged as EXECUTED_EXCEPTION not PASS",
+        "baseline_parity": "Same synthetic payoff matrices available to all comparisons"
+      },
+      "G": {
+        "independence": "No external human observation; same synthetic people generator; this is software/mechanism QA, not field replication",
+        "human_R5": "STOP",
+        "SSJY": false
+      },
+      "H": {
+        "prior_id": "P-CULTURAL-RULES",
+        "update_type": "Qualitative NO_CHANGE_WITH_REASON for human priors absent independent real observed choices",
+        "numerical_posterior": false
+      },
+      "I": {
+        "scientific_CT2_before": 7,
+        "scientific_CT2_planned_after": 7,
+        "grade_scientific": "0/3 absent independent empirical falsation",
+        "ethics": "No real-person attributes or data used",
+        "DRIFT": "D1.8 mechanistic pivot from centralized ESBM match to decentralized two-sided laboratory rules"
+      },
+      "J": {
+        "decision_rule": "Count cycle only after real run with valid receipt, correctness audit and useful novel estimand; preserve zero or negative outcomes; no forced scientific grade",
+        "pre_outcome_spent": false
+      }
+    },
+    {
+      "id": "N333",
+      "mode": "AB-H_TECHNICAL_SIMULATION",
+      "experimental_status": "NOT_EXECUTED_AT_FREEZE",
+      "A": {
+        "question": "Invariancia al orden de procesamiento de propuestas",
+        "unit": "Agente sintético, dyad y mercado bipartito n3–8",
+        "population": "100% artificial, no calibrada empíricamente",
+        "outcome_true": "Comparación de algoritmos con mismas utilidades/eligibilidades",
+        "outcome_proxy": "Conjuntos de parejas iguales, diferencia de propuestas",
+        "treatment": "Regla del protocolo explicitada en pregunta",
+        "comparison": "Contrafactual sobre mismo mercado",
+        "human_interference": "No identificable; no sujetos humanos"
+      },
+      "B": {
+        "hypothesis_A": "El mecanismo descentralizado y el óptimo de peso centralizado difieren condicionalmente al diseño y reglas de información",
+        "competent_rivals": [
+          "Gale-Shapley deferred acceptance lado izquierdo/derecho",
+          "NetworkX exact bipartite max-weight with maxcardinality",
+          "Enumeración exhaustiva o MILP HiGHS cuando predefinido",
+          "Protocolos de ofertas únicos, limitados, aleatorios o estratégicos"
+        ],
+        "null": "No diferencia bajo este input; no afirmación sobre humanos",
+        "prior_art": "Gale-Shapley 1962 y Echenique–Robinson-Cortés–Yariv 2025; no originalidad de estabilidad"
+      },
+      "C": {
+        "precommitted_input": "20 mercados n8 semilla 33300–33319 con proposers permutados",
+        "primary_endpoint": "Conjuntos de parejas iguales, diferencia de propuestas",
+        "falsifier": "Con preferencias estrictas DA produce mismo matching proponent-optimal",
+        "selected_before_outcome": true,
+        "planned_repeat": "Una sola batería por N, sin añadir seeds tras outcomes",
+        "multiplicity": "20 pruebas exploratorias ligadas por fuente sintética compartida; no reclamar 20 descubrimientos ni significación confirmatoria"
+      },
+      "D": {
+        "frozen_code_sha256": {
+          "market_lab.py": "f202e790705dd0d48724dcbcb67356b4f2075c0a82d4b44c1a9d434851bb6e21",
+          "run_cycles.py": "13d5e89d9a9adfb3c5f2f8d9c5a8480b3dfe71b7dd23b816bccca4a4dc63f24b",
+          "ORIGINAL_ESBM_UNMODIFIED.py": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+        },
+        "instrument_archive_sha256": "d4687db70c1b79801b0d4b27c38363184f3ef9f4ea4be9903e41ab1c4c65a93d",
+        "instrument_archive_bytes": 13267,
+        "archived_in": "/Mercados-de-pareja/ABH-N317-N336/INSTRUMENTS_PREOUTCOME.zip",
+        "original_source_unchanged": true,
+        "resource_limit_s_per_cycle": 75,
+        "executor": "python3 local; no Codex",
+        "code_sha_check": "run_cycles.py aborts on modified sources",
+        "state": "FROZEN_PRIOR_TO_FIRST_OUTCOME"
+      },
+      "E": {
+        "expected_receipt": "results/N333.json",
+        "status": "NOT_RUN_YET",
+        "run_command": "python run_cycles.py 333 --freeze freeze.json"
+      },
+      "F": {
+        "adversarial_controls": "Independently computed blocking-pair census, eligibility checks, exhaustive stable-permutation enumeration and MILP/DP for small cases; negative findings preserved",
+        "stop": "No edited fixtures based on outcomes; errors logged as EXECUTED_EXCEPTION not PASS",
+        "baseline_parity": "Same synthetic payoff matrices available to all comparisons"
+      },
+      "G": {
+        "independence": "No external human observation; same synthetic people generator; this is software/mechanism QA, not field replication",
+        "human_R5": "STOP",
+        "SSJY": false
+      },
+      "H": {
+        "prior_id": "P-CULTURAL-RULES",
+        "update_type": "Qualitative NO_CHANGE_WITH_REASON for human priors absent independent real observed choices",
+        "numerical_posterior": false
+      },
+      "I": {
+        "scientific_CT2_before": 7,
+        "scientific_CT2_planned_after": 7,
+        "grade_scientific": "0/3 absent independent empirical falsation",
+        "ethics": "No real-person attributes or data used",
+        "DRIFT": "D1.8 mechanistic pivot from centralized ESBM match to decentralized two-sided laboratory rules"
+      },
+      "J": {
+        "decision_rule": "Count cycle only after real run with valid receipt, correctness audit and useful novel estimand; preserve zero or negative outcomes; no forced scientific grade",
+        "pre_outcome_spent": false
+      }
+    },
+    {
+      "id": "N334",
+      "mode": "AB-H_TECHNICAL_SIMULATION",
+      "experimental_status": "NOT_EXECUTED_AT_FREEZE",
+      "A": {
+        "question": "Enumerador independiente de matching estable 4x4",
+        "unit": "Agente sintético, dyad y mercado bipartito n3–8",
+        "population": "100% artificial, no calibrada empíricamente",
+        "outcome_true": "Comparación de algoritmos con mismas utilidades/eligibilidades",
+        "outcome_proxy": "Distribución de número de soluciones estables",
+        "treatment": "Regla del protocolo explicitada en pregunta",
+        "comparison": "Contrafactual sobre mismo mercado",
+        "human_interference": "No identificable; no sujetos humanos"
+      },
+      "B": {
+        "hypothesis_A": "El mecanismo descentralizado y el óptimo de peso centralizado difieren condicionalmente al diseño y reglas de información",
+        "competent_rivals": [
+          "Gale-Shapley deferred acceptance lado izquierdo/derecho",
+          "NetworkX exact bipartite max-weight with maxcardinality",
+          "Enumeración exhaustiva o MILP HiGHS cuando predefinido",
+          "Protocolos de ofertas únicos, limitados, aleatorios o estratégicos"
+        ],
+        "null": "No diferencia bajo este input; no afirmación sobre humanos",
+        "prior_art": "Gale-Shapley 1962 y Echenique–Robinson-Cortés–Yariv 2025; no originalidad de estabilidad"
+      },
+      "C": {
+        "precommitted_input": "20 mercados n4 semilla 33400–33419; 24 permutaciones cada",
+        "primary_endpoint": "Distribución de número de soluciones estables",
+        "falsifier": "Ambos DA pertenecen a conjunto estable exhaustivo",
+        "selected_before_outcome": true,
+        "planned_repeat": "Una sola batería por N, sin añadir seeds tras outcomes",
+        "multiplicity": "20 pruebas exploratorias ligadas por fuente sintética compartida; no reclamar 20 descubrimientos ni significación confirmatoria"
+      },
+      "D": {
+        "frozen_code_sha256": {
+          "market_lab.py": "f202e790705dd0d48724dcbcb67356b4f2075c0a82d4b44c1a9d434851bb6e21",
+          "run_cycles.py": "13d5e89d9a9adfb3c5f2f8d9c5a8480b3dfe71b7dd23b816bccca4a4dc63f24b",
+          "ORIGINAL_ESBM_UNMODIFIED.py": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+        },
+        "instrument_archive_sha256": "d4687db70c1b79801b0d4b27c38363184f3ef9f4ea4be9903e41ab1c4c65a93d",
+        "instrument_archive_bytes": 13267,
+        "archived_in": "/Mercados-de-pareja/ABH-N317-N336/INSTRUMENTS_PREOUTCOME.zip",
+        "original_source_unchanged": true,
+        "resource_limit_s_per_cycle": 75,
+        "executor": "python3 local; no Codex",
+        "code_sha_check": "run_cycles.py aborts on modified sources",
+        "state": "FROZEN_PRIOR_TO_FIRST_OUTCOME"
+      },
+      "E": {
+        "expected_receipt": "results/N334.json",
+        "status": "NOT_RUN_YET",
+        "run_command": "python run_cycles.py 334 --freeze freeze.json"
+      },
+      "F": {
+        "adversarial_controls": "Independently computed blocking-pair census, eligibility checks, exhaustive stable-permutation enumeration and MILP/DP for small cases; negative findings preserved",
+        "stop": "No edited fixtures based on outcomes; errors logged as EXECUTED_EXCEPTION not PASS",
+        "baseline_parity": "Same synthetic payoff matrices available to all comparisons"
+      },
+      "G": {
+        "independence": "No external human observation; same synthetic people generator; this is software/mechanism QA, not field replication",
+        "human_R5": "STOP",
+        "SSJY": false
+      },
+      "H": {
+        "prior_id": "P-CULTURAL-RULES",
+        "update_type": "Qualitative NO_CHANGE_WITH_REASON for human priors absent independent real observed choices",
+        "numerical_posterior": false
+      },
+      "I": {
+        "scientific_CT2_before": 7,
+        "scientific_CT2_planned_after": 7,
+        "grade_scientific": "0/3 absent independent empirical falsation",
+        "ethics": "No real-person attributes or data used",
+        "DRIFT": "D1.8 mechanistic pivot from centralized ESBM match to decentralized two-sided laboratory rules"
+      },
+      "J": {
+        "decision_rule": "Count cycle only after real run with valid receipt, correctness audit and useful novel estimand; preserve zero or negative outcomes; no forced scientific grade",
+        "pre_outcome_spent": false
+      }
+    },
+    {
+      "id": "N335",
+      "mode": "AB-H_TECHNICAL_SIMULATION",
+      "experimental_status": "NOT_EXECUTED_AT_FREEZE",
+      "A": {
+        "question": "MILP HiGHS + DP exacta + NetworkX en bipartito 7x7",
+        "unit": "Agente sintético, dyad y mercado bipartito n3–8",
+        "population": "100% artificial, no calibrada empíricamente",
+        "outcome_true": "Comparación de algoritmos con mismas utilidades/eligibilidades",
+        "outcome_proxy": "Número conflictos de objetivo, casos válidos",
+        "treatment": "Regla del protocolo explicitada en pregunta",
+        "comparison": "Contrafactual sobre mismo mercado",
+        "human_interference": "No identificable; no sujetos humanos"
+      },
+      "B": {
+        "hypothesis_A": "El mecanismo descentralizado y el óptimo de peso centralizado difieren condicionalmente al diseño y reglas de información",
+        "competent_rivals": [
+          "Gale-Shapley deferred acceptance lado izquierdo/derecho",
+          "NetworkX exact bipartite max-weight with maxcardinality",
+          "Enumeración exhaustiva o MILP HiGHS cuando predefinido",
+          "Protocolos de ofertas únicos, limitados, aleatorios o estratégicos"
+        ],
+        "null": "No diferencia bajo este input; no afirmación sobre humanos",
+        "prior_art": "Gale-Shapley 1962 y Echenique–Robinson-Cortés–Yariv 2025; no originalidad de estabilidad"
+      },
+      "C": {
+        "precommitted_input": "20 mercados n7 semilla 33500–33519, pesos en milésimas",
+        "primary_endpoint": "Número conflictos de objetivo, casos válidos",
+        "falsifier": "Óptimo lexicográfico cardinal/peso concuerda en tres algoritmos",
+        "selected_before_outcome": true,
+        "planned_repeat": "Una sola batería por N, sin añadir seeds tras outcomes",
+        "multiplicity": "20 pruebas exploratorias ligadas por fuente sintética compartida; no reclamar 20 descubrimientos ni significación confirmatoria"
+      },
+      "D": {
+        "frozen_code_sha256": {
+          "market_lab.py": "f202e790705dd0d48724dcbcb67356b4f2075c0a82d4b44c1a9d434851bb6e21",
+          "run_cycles.py": "13d5e89d9a9adfb3c5f2f8d9c5a8480b3dfe71b7dd23b816bccca4a4dc63f24b",
+          "ORIGINAL_ESBM_UNMODIFIED.py": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+        },
+        "instrument_archive_sha256": "d4687db70c1b79801b0d4b27c38363184f3ef9f4ea4be9903e41ab1c4c65a93d",
+        "instrument_archive_bytes": 13267,
+        "archived_in": "/Mercados-de-pareja/ABH-N317-N336/INSTRUMENTS_PREOUTCOME.zip",
+        "original_source_unchanged": true,
+        "resource_limit_s_per_cycle": 75,
+        "executor": "python3 local; no Codex",
+        "code_sha_check": "run_cycles.py aborts on modified sources",
+        "state": "FROZEN_PRIOR_TO_FIRST_OUTCOME"
+      },
+      "E": {
+        "expected_receipt": "results/N335.json",
+        "status": "NOT_RUN_YET",
+        "run_command": "python run_cycles.py 335 --freeze freeze.json"
+      },
+      "F": {
+        "adversarial_controls": "Independently computed blocking-pair census, eligibility checks, exhaustive stable-permutation enumeration and MILP/DP for small cases; negative findings preserved",
+        "stop": "No edited fixtures based on outcomes; errors logged as EXECUTED_EXCEPTION not PASS",
+        "baseline_parity": "Same synthetic payoff matrices available to all comparisons"
+      },
+      "G": {
+        "independence": "No external human observation; same synthetic people generator; this is software/mechanism QA, not field replication",
+        "human_R5": "STOP",
+        "SSJY": false
+      },
+      "H": {
+        "prior_id": "P-CULTURAL-RULES",
+        "update_type": "Qualitative NO_CHANGE_WITH_REASON for human priors absent independent real observed choices",
+        "numerical_posterior": false
+      },
+      "I": {
+        "scientific_CT2_before": 7,
+        "scientific_CT2_planned_after": 7,
+        "grade_scientific": "0/3 absent independent empirical falsation",
+        "ethics": "No real-person attributes or data used",
+        "DRIFT": "D1.8 mechanistic pivot from centralized ESBM match to decentralized two-sided laboratory rules"
+      },
+      "J": {
+        "decision_rule": "Count cycle only after real run with valid receipt, correctness audit and useful novel estimand; preserve zero or negative outcomes; no forced scientific grade",
+        "pre_outcome_spent": false
+      }
+    },
+    {
+      "id": "N336",
+      "mode": "AB-H_TECHNICAL_SIMULATION",
+      "experimental_status": "NOT_EXECUTED_AT_FREEZE",
+      "A": {
+        "question": "Cambio cardinal no lineal conservando órdenes individuales",
+        "unit": "Agente sintético, dyad y mercado bipartito n3–8",
+        "population": "100% artificial, no calibrada empíricamente",
+        "outcome_true": "Comparación de algoritmos con mismas utilidades/eligibilidades",
+        "outcome_proxy": "Incidencia cambio central sin cambiar DA",
+        "treatment": "Regla del protocolo explicitada en pregunta",
+        "comparison": "Contrafactual sobre mismo mercado",
+        "human_interference": "No identificable; no sujetos humanos"
+      },
+      "B": {
+        "hypothesis_A": "El mecanismo descentralizado y el óptimo de peso centralizado difieren condicionalmente al diseño y reglas de información",
+        "competent_rivals": [
+          "Gale-Shapley deferred acceptance lado izquierdo/derecho",
+          "NetworkX exact bipartite max-weight with maxcardinality",
+          "Enumeración exhaustiva o MILP HiGHS cuando predefinido",
+          "Protocolos de ofertas únicos, limitados, aleatorios o estratégicos"
+        ],
+        "null": "No diferencia bajo este input; no afirmación sobre humanos",
+        "prior_art": "Gale-Shapley 1962 y Echenique–Robinson-Cortés–Yariv 2025; no originalidad de estabilidad"
+      },
+      "C": {
+        "precommitted_input": "20 mercados n8 semilla 33600–33619",
+        "primary_endpoint": "Incidencia cambio central sin cambiar DA",
+        "falsifier": "DA ordinal invariante, máximo de suma puede seleccionar otras parejas",
+        "selected_before_outcome": true,
+        "planned_repeat": "Una sola batería por N, sin añadir seeds tras outcomes",
+        "multiplicity": "20 pruebas exploratorias ligadas por fuente sintética compartida; no reclamar 20 descubrimientos ni significación confirmatoria"
+      },
+      "D": {
+        "frozen_code_sha256": {
+          "market_lab.py": "f202e790705dd0d48724dcbcb67356b4f2075c0a82d4b44c1a9d434851bb6e21",
+          "run_cycles.py": "13d5e89d9a9adfb3c5f2f8d9c5a8480b3dfe71b7dd23b816bccca4a4dc63f24b",
+          "ORIGINAL_ESBM_UNMODIFIED.py": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+        },
+        "instrument_archive_sha256": "d4687db70c1b79801b0d4b27c38363184f3ef9f4ea4be9903e41ab1c4c65a93d",
+        "instrument_archive_bytes": 13267,
+        "archived_in": "/Mercados-de-pareja/ABH-N317-N336/INSTRUMENTS_PREOUTCOME.zip",
+        "original_source_unchanged": true,
+        "resource_limit_s_per_cycle": 75,
+        "executor": "python3 local; no Codex",
+        "code_sha_check": "run_cycles.py aborts on modified sources",
+        "state": "FROZEN_PRIOR_TO_FIRST_OUTCOME"
+      },
+      "E": {
+        "expected_receipt": "results/N336.json",
+        "status": "NOT_RUN_YET",
+        "run_command": "python run_cycles.py 336 --freeze freeze.json"
+      },
+      "F": {
+        "adversarial_controls": "Independently computed blocking-pair census, eligibility checks, exhaustive stable-permutation enumeration and MILP/DP for small cases; negative findings preserved",
+        "stop": "No edited fixtures based on outcomes; errors logged as EXECUTED_EXCEPTION not PASS",
+        "baseline_parity": "Same synthetic payoff matrices available to all comparisons"
+      },
+      "G": {
+        "independence": "No external human observation; same synthetic people generator; this is software/mechanism QA, not field replication",
+        "human_R5": "STOP",
+        "SSJY": false
+      },
+      "H": {
+        "prior_id": "P-CULTURAL-RULES",
+        "update_type": "Qualitative NO_CHANGE_WITH_REASON for human priors absent independent real observed choices",
+        "numerical_posterior": false
+      },
+      "I": {
+        "scientific_CT2_before": 7,
+        "scientific_CT2_planned_after": 7,
+        "grade_scientific": "0/3 absent independent empirical falsation",
+        "ethics": "No real-person attributes or data used",
+        "DRIFT": "D1.8 mechanistic pivot from centralized ESBM match to decentralized two-sided laboratory rules"
+      },
+      "J": {
+        "decision_rule": "Count cycle only after real run with valid receipt, correctness audit and useful novel estimand; preserve zero or negative outcomes; no forced scientific grade",
+        "pre_outcome_spent": false
+      }
+    }
+  ]
+}
