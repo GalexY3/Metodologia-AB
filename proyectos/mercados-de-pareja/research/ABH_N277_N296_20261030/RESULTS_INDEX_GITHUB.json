@@ -1,0 +1,217 @@
+{
+  "schema": "ABH_N277_N296_RECEIPT_INDEX_V1",
+  "campaign": "N277-N296",
+  "date": "2026-10-30",
+  "branch": "research/ab-h-esbm-exactness-n277-n296-20261030",
+  "original_authorization": 20,
+  "preoutcome_AJ_and_SHA_commit": "4d92e8002bc24af3dfe6009603e1bc95d2b806ca",
+  "posthoc_N280_Boost_prereg_commit": "2ab26e6de4c781a3795684ead94736f7e8f15c34",
+  "technical_executed": 20,
+  "invalid_executions": 0,
+  "remaining": 0,
+  "synthetic_only": true,
+  "original_python_untouched_executed": false,
+  "historical_TS_executed": false,
+  "human_rows_new": 0,
+  "source_count_after_document_screen": 113,
+  "prior_count": 34,
+  "updates_pending": "U198",
+  "CT2_science": 7,
+  "STOP_R5_human": true,
+  "source_zip_sha256": "8e4e6705954d9d9e864da6ea0b1607f7ca061ec87d1c9e9ede14b951e2a2ba67",
+  "outcome_zip_sha256": "cc8be3d25a1cb158e01a407a347b972dad1d1eb711a1c051eee6f6862e009552",
+  "outcome_zip_bytes": 72717,
+  "outcome_zip_filecount": 30,
+  "outcome_zip_library_path": "/Mercados-de-pareja/ABH-N277-N296/ESBM_ABH_N277_N296_exactness_results.zip",
+  "source_zip_library_path": "/Mercados-de-pareja/ABH-N277-N296/ESBM_ABH_N277_N296_PREOUTCOME_INSTRUMENTS.zip",
+  "posthoc_audit_SHA256": "91a23d5c269adbf94c2960d82c421aa61c8209afb624fb8d2a96ceb36a894407",
+  "posthoc_N280_boost_receipt_sha256": "bc8a4f20cb0654500a35623c1225a106f8d335a8285739ea09ff79c3638bff19",
+  "protocol_limitations": [
+    "No exact historical TS/N242/N246 instrument recovery",
+    "No original ESBM script direct execution",
+    "No RSS telemetry, subprocess wall time caps only",
+    "Some tests are QA of already recorded synthetic results, not independent scientific evidence"
+  ],
+  "records": [
+    {
+      "id": "N277",
+      "receipt": "results/N277.json",
+      "sha256": "52ef584ee8e8ce8b9cdd0498e7c67ab57a0ce9465b8db61b5a61ceaa9ee94fef",
+      "elapsed_s_rounded": 21.42,
+      "execution": "EXECUTED",
+      "classification": "VALID_TECHNICAL_CONTROL",
+      "detail": "60/60 same synthetic individual event traces under float64 NetworkX vs exact integer NetworkX; not original TS/Python executables"
+    },
+    {
+      "id": "N278",
+      "receipt": "results/N278.json",
+      "sha256": "c2c4af60a2065d7c5c0fbc47eecae66f6b180527be0b9404b7b315f7e4871530",
+      "elapsed_s_rounded": 1.1,
+      "execution": "EXECUTED",
+      "classification": "VALID_TECHNICAL_CONTROL",
+      "detail": "3/3 sparse n144 continuous weight graphs same objective and pairs, Boost oracle passes"
+    },
+    {
+      "id": "N279",
+      "receipt": "results/N279.json",
+      "sha256": "e23b1d22c5eabcd0963031c5c88c3908801e2af3fa5006378f1e4172e7e85ec6",
+      "elapsed_s_rounded": 0.22,
+      "execution": "EXECUTED",
+      "classification": "VALID_TECHNICAL_CONTROL",
+      "detail": "2/2 n144 quantized graphs equal objective and pair identity under same order"
+    },
+    {
+      "id": "N280",
+      "receipt": "results/N280.json",
+      "sha256": "d4f8d1487d68bc1e9d6840df9958e6ea2602ef0ec1025395687a838f87e466f9",
+      "elapsed_s_rounded": 0.62,
+      "execution": "EXECUTED",
+      "classification": "VALID_FLOAT64_NEAR_OPTIMAL_NEGATIVE",
+      "detail": "2/2 near-tie n143 float solver loses exactly 2 and 3 integer-residue units vs exact solver, same 71 pairs count; posthoc independent Boost verifies exact objective"
+    },
+    {
+      "id": "N281",
+      "receipt": "results/N281.json",
+      "sha256": "a6833ef088e1cfb14b6baff75716c6503dff2d2e3f0cf13657e08455d01841ed",
+      "elapsed_s_rounded": 6.14,
+      "execution": "EXECUTED",
+      "classification": "VALID_TECHNICAL_CONTROL",
+      "detail": "2/2 dense n144 continuous weight graphs Boost agrees with integer and float"
+    },
+    {
+      "id": "N282",
+      "receipt": "results/N282.json",
+      "sha256": "b5a6031ed1e468df7c13643036ea9d523b8dd6ad64c3c661f21a359092d6e22a",
+      "elapsed_s_rounded": 0.06,
+      "execution": "EXECUTED",
+      "classification": "VALID_TECHNICAL_CONTROL",
+      "detail": "7/7 small n12 SCIPY HiGHS MILP + DP exhaustive + NetworkX lex cardinality and weight objective agree"
+    },
+    {
+      "id": "N283",
+      "receipt": "results/N283.json",
+      "sha256": "1f70e9946831608130e20aa1b34056abc71e104472c5e8326d1c2a69494d46a8",
+      "elapsed_s_rounded": 0.03,
+      "execution": "EXECUTED",
+      "classification": "VALID_TECHNICAL_CONTROL",
+      "detail": "6/6 n14 continuous graph DP unique optimum and matching pair identities agree"
+    },
+    {
+      "id": "N284",
+      "receipt": "results/N284.json",
+      "sha256": "cdc553c3e802ae3c4f7edcb02c0e76429d08fa9103e9b3f07185b44c93a1d2ad",
+      "elapsed_s_rounded": 0.06,
+      "execution": "EXECUTED",
+      "classification": "VALID_TECHNICAL_CONTROL",
+      "detail": "10/10 n14 quantized/flat multiple optimum enumerations exact objective agree"
+    },
+    {
+      "id": "N285",
+      "receipt": "results/N285.json",
+      "sha256": "4194cad77006efa26f698e281ff0d94916333ffd31793d758616117bf6c4d6da",
+      "elapsed_s_rounded": 0.08,
+      "execution": "EXECUTED",
+      "classification": "VALID_TECHNICAL_CONTROL",
+      "detail": "6/6 n14 uniquely-optimal permutation pair identities equivariant"
+    },
+    {
+      "id": "N286",
+      "receipt": "results/N286.json",
+      "sha256": "93cf28a00a9fe195ae65a4b32f5fd14d5c7bf13b984bc3dc8600ce0b380be808",
+      "elapsed_s_rounded": 0.02,
+      "execution": "EXECUTED",
+      "classification": "VALID_NONUNIQUE_PERMUTATION_COUNTEREXAMPLE",
+      "detail": "6/6 n12 flat nonunique relabel objective invariant, pair sets unequal"
+    },
+    {
+      "id": "N287",
+      "receipt": "results/N287.json",
+      "sha256": "4f2df79a31965c0844a570b0f76cbd8176e3248d4f4172a4fec712b9b5a7941b",
+      "elapsed_s_rounded": 0.03,
+      "execution": "EXECUTED",
+      "classification": "VALID_TECHNICAL_CONTROL",
+      "detail": "8/8 n20 reversed insertion order objective invariant, pair identities differ 4/8 in tied cases"
+    },
+    {
+      "id": "N288",
+      "receipt": "results/N288.json",
+      "sha256": "26e988ee607cd9e905a61bc1f44c3ae40e090ba46f0959f9666c2dc5cd165ebd",
+      "elapsed_s_rounded": 0.05,
+      "execution": "EXECUTED",
+      "classification": "VALID_TECHNICAL_CONTROL",
+      "detail": "4/4 disconnected n144 blockwise versus global matching pair identities agree"
+    },
+    {
+      "id": "N289",
+      "receipt": "results/N289.json",
+      "sha256": "3812a323af64d46978831ef9f9db8d6953c9d2a44e6b9b75a8f301c6f9bba03e",
+      "elapsed_s_rounded": 0.2,
+      "execution": "EXECUTED",
+      "classification": "VALID_TECHNICAL_CONTROL",
+      "detail": "3/3 n143 sparse weight variants Boost solves; tied case can choose alternate optimum"
+    },
+    {
+      "id": "N290",
+      "receipt": "results/N290.json",
+      "sha256": "e89c13abf6cb2b93d9d1339fa7dac964134015a91f13cabf177e324347f66d5e",
+      "elapsed_s_rounded": 12.56,
+      "execution": "EXECUTED",
+      "classification": "VALID_BOOST_RESOURCE_NEGATIVE",
+      "detail": "n144 near-complete Boost continuous solves, flat and ulp two timeouts at 5s"
+    },
+    {
+      "id": "N291",
+      "receipt": "results/N291.json",
+      "sha256": "24b96162852cc7fbf94be558248d3b4537bbd17cd694b62206b4bcd187d4a0bc",
+      "elapsed_s_rounded": 0.03,
+      "execution": "EXECUTED",
+      "classification": "VALID_TECHNICAL_CONTROL",
+      "detail": "6/6 malformed C++ input payloads rejected without crash"
+    },
+    {
+      "id": "N292",
+      "receipt": "results/N292.json",
+      "sha256": "99a993d91a0f0dfb4a407b93d0f86013de12c68753c6abc4bed893470f159873",
+      "elapsed_s_rounded": 0,
+      "execution": "EXECUTED",
+      "classification": "VALID_TECHNICAL_CONTROL",
+      "detail": "7 n ranges test integer safe bound; n200/256/300 rejected safely"
+    },
+    {
+      "id": "N293",
+      "receipt": "results/N293.json",
+      "sha256": "4b746c9ea1bc8468091d87379a21bcb692f9e9f7d8db8606b56af32e791472ba",
+      "elapsed_s_rounded": 0.68,
+      "execution": "EXECUTED",
+      "classification": "ARCHIVAL_QA_ONLY",
+      "detail": "120 old N257 gzip traces reparsed without malformed ticks; archival QA only, not new cohort"
+    },
+    {
+      "id": "N294",
+      "receipt": "results/N294.json",
+      "sha256": "d1873ecaba9c6a534b8880be378f1d198a53f18a82473bf4923ad5f08fbe2324",
+      "elapsed_s_rounded": 0.13,
+      "execution": "EXECUTED",
+      "classification": "VALID_TECHNICAL_CONTROL",
+      "detail": "10/10 injected synthetic field defects detected by first field comparator"
+    },
+    {
+      "id": "N295",
+      "receipt": "results/N295.json",
+      "sha256": "f3e0a33941d5b63dd66470a65f922a191aa22b6a92281d64e7a11b0e60f059d9",
+      "elapsed_s_rounded": 1.05,
+      "execution": "EXECUTED",
+      "classification": "VALID_TECHNICAL_CONTROL",
+      "detail": "7/7 altered policies change one or more synthetic event channels in four ticks"
+    },
+    {
+      "id": "N296",
+      "receipt": "results/N296.json",
+      "sha256": "7429f5a61070a9d4794189f34ade6e711e9a28fa0e84960f8eabba3da1ad1ff2",
+      "elapsed_s_rounded": 0.5,
+      "execution": "EXECUTED",
+      "classification": "VALID_TECHNICAL_CONTROL",
+      "detail": "3/3 new n144 density/degeneracy fixtures float vs integer objective and pairs agree"
+    }
+  ]
+}
