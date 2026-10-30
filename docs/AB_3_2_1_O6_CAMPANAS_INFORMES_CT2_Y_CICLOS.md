@@ -1,5 +1,7 @@
 # AB 3.2.1-O6 — Protocolo portable de campañas, informes y autorización de ciclos
 
+> **Excepción prospectiva de PFL · solicitud del investigador 30/10/2026:** [política de progreso y continuidad](../proyectos/politics-fantasy-league/docs/WORKING_AGREEMENT.md). Para Politics Fantasy se sustituye la petición obligatoria al cierre por una decisión motivada hacia un hito de producto o evidencia discriminante. No pedir más ciclos por fórmula, no convertir QA/traspasos en ciclos, preservar los cinco ABH10 y dos históricos pendientes y aplicar R5. Esta excepción prevalece en PFL sobre las cláusulas de solicitud normal y último párrafo de este documento. No modifica otros proyectos ni demuestra eficacia metodológica; el resto del texto conserva las directivas y su historia.
+
 **Fecha:** 24 de octubre de 2026. **Estado:** norma operativa de presentación y gobernanza adoptada por solicitud del investigador. **No** declara una mejora de eficacia científica de AB; sigue siendo metodología provisional. Complementa AB 3.2.1 y los anexos O1–O5 sin sustituir R1–R5 ni A–J.
 
 ## Directiva posterior del investigador — 29 de octubre de 2026
