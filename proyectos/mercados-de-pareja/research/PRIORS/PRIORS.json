@@ -181,7 +181,7 @@
         "SRC032",
         "SRC104"
       ],
-      "last_update_id": "U207",
+      "last_update_id": "U212",
       "uncertainty": "Not probabilistically calibrated; evidence heterogeneous and some sources only metadata",
       "next_falsifier_or_test": "Independent prospective data with matched risk set, competent adversarial controls and documented sample selection",
       "numeric_probability": null,
@@ -213,10 +213,15 @@
         "U182",
         "U187",
         "U191",
-        "U207"
+        "U207",
+        "U212"
       ],
-      "latest_evidence_summary": "SRC104 2-event roster QA: group2 11 men+8 women, 11 round labels each with 8+8 directed observations, 88/88 possible recorded pair labels. Group3 6 men+5 women, 6 rounds each with 6 male+5 female directed observations, 30/30 possible recorded pair labels plus 8 one-sided actor labels to 2 unrecorded counterpart IDs; union 38 keys exceeds conditional 36 male×round capacity. The published protocol synchronizes six-minute rounds and men rotate, but paper does not define spreadsheet Round / Dates_ID at row level; no opportunity schedule identified, STOP_R5.\nAB-H N93–N106 interno: El argumento exacto ayuda a especificar medidas, pero faltan exposiciones humanas observadas.\nAB-H N127–N146: Artificial eligibility and ring meetings do not supply human attended opportunities or two native consent votes\n2026-10-30: SRC107 paper provides described attended dyads and two native contact exchange decisions in aggregate, but no observed event-level full candidate/offered/attended opportunities suitable for exposure propensity or order-control. Do not equate pairs held with complete opportunity lists.\nN167–N186: N177–N181 show model stage: 4,789 exposures; 1,300 outgoing proposals; 381 positive conditional responses; these outcomes are sequential artificial program events, not two independently observed native human yes/no ballots or user attention. B2 matches oracle on joint logloss ~0.26623 vs 0.26606.\nN187–N206: Original Hoffmann study preassigned four partners, so only 237 attended meetings from unequal repeatedly reused counterparts, no full unconstrained opportunity risksets or randomized assignment to all available partners. Does not identify platform opportunity effects or equivalence to sequential ESBM proposer/replier.\nN327 synthetic random k3 riskset vs full preferences and N328 popularity-ranked exposures mechanically concentrate views, highlighting why measured opportunities—not inferred likes—are necessary for interpretation. N329 same-group synthetic restriction reduces average observed pair count from 8.0 to 6.95 in n8 20-seed toy cohorts. Purely design-imposed, NOT human empirical evidence. CT2 unchanged.",
-      "last_revised_at": "2026-10-30"
+      "latest_evidence_summary": "SRC104 2-event roster QA: group2 11 men+8 women, 11 round labels each with 8+8 directed observations, 88/88 possible recorded pair labels. Group3 6 men+5 women, 6 rounds each with 6 male+5 female directed observations, 30/30 possible recorded pair labels plus 8 one-sided actor labels to 2 unrecorded counterpart IDs; union 38 keys exceeds conditional 36 male×round capacity. The published protocol synchronizes six-minute rounds and men rotate, but paper does not define spreadsheet Round / Dates_ID at row level; no opportunity schedule identified, STOP_R5.\nAB-H N93–N106 interno: El argumento exacto ayuda a especificar medidas, pero faltan exposiciones humanas observadas.\nAB-H N127–N146: Artificial eligibility and ring meetings do not supply human attended opportunities or two native consent votes\n2026-10-30: SRC107 paper provides described attended dyads and two native contact exchange decisions in aggregate, but no observed event-level full candidate/offered/attended opportunities suitable for exposure propensity or order-control. Do not equate pairs held with complete opportunity lists.\nN167–N186: N177–N181 show model stage: 4,789 exposures; 1,300 outgoing proposals; 381 positive conditional responses; these outcomes are sequential artificial program events, not two independently observed native human yes/no ballots or user attention. B2 matches oracle on joint logloss ~0.26623 vs 0.26606.\nN187–N206: Original Hoffmann study preassigned four partners, so only 237 attended meetings from unequal repeatedly reused counterparts, no full unconstrained opportunity risksets or randomized assignment to all available partners. Does not identify platform opportunity effects or equivalence to sequential ESBM proposer/replier.\nN327 synthetic random k3 riskset vs full preferences and N328 popularity-ranked exposures mechanically concentrate views, highlighting why measured opportunities—not inferred likes—are necessary for interpretation. N329 same-group synthetic restriction reduces average observed pair count from 8.0 to 6.95 in n8 20-seed toy cohorts. Purely design-imposed, NOT human empirical evidence. CT2 unchanged.\nSRC117 randomized exposure to a single candidate's profile vs blind meeting (108 dyads, 56/52) and SRC115 randomized display of six vs 31 candidate profiles; information and option quantity are distinct treatments. Neither measures sequential actually viewed platform slates with two independently chosen native yes/no votes in a complete participant-market riskset. No CT2 increase.",
+      "last_revised_at": "2026-10-30",
+      "source_ids": [
+        "SRC115",
+        "SRC117"
+      ]
     },
     {
       "id": "P-EXANTE_POP",
@@ -393,7 +398,7 @@
         "SRC105",
         "SRC106"
       ],
-      "last_update_id": "U208",
+      "last_update_id": "U213",
       "uncertainty": "Not probabilistically calibrated; evidence heterogeneous and some sources only metadata",
       "next_falsifier_or_test": "Independent prospective data with matched risk set, competent adversarial controls and documented sample selection",
       "numeric_probability": null,
@@ -437,14 +442,18 @@
         "U199",
         "U200",
         "U203",
-        "U208"
+        "U208",
+        "U213"
       ],
-      "latest_evidence_summary": "Two genuinely new original human data-source leads: SRC105 Jauk 2016 90 participants 691 actual speed dates in 3 groups and primary author OSF individual/dyadic SAV, and SRC106 Hall 2026 129 participants in 8 events with second-date choices and publisher pointing to original OSF. Both sources document native personal binary intent after real dates, but neither original dyadic data file was obtained, neither source-specific data licence proven, actor/partner two-native-column join and cohort overlap not audited; no additional original human sample is accessible for an ESBM test.\n2026-10-29 AB-H N107–N126: 2026-10-29 targeted lookup yielded previously registered Columbia/OpenML, Mixmosa, McMaster, Hall, Arias-Sarah, Tawkify and other already indexed publications; no novel licensed two-native-vote data archive obtained. Do not treat web links as independent samples or successful rights verification.\n2026-10-30: SRC107 newly retrieved original 2026 MMSD peer-reviewed study reports 619 observed contact-exchange dyads each with two native decisions, 25 sessions/147 people. Only aggregate 2x2 published is verified; rights to individual data, actor IDs, ex ante exposure schedule and independent holdout not established. STOP_R5 remains.\nN167–N186: New SRC108 deposit-level CC0 catalog assertion refers to original Columbia 2002–2004 Fisman/Iyengar cohort; not independent from SRC016/SRC082, original archive first-party page and file-level license/bytes unverified, cannot open R5.\nN187–N206: New SRC109 Hoffmann et al. 2024 paper (60 volunteer subjects, four recurring preassigned partners, 240 real meetings, 237 usable) describes independent two native yes/no answers. Paper says files on OSF and article CC BY, but case-level dataset rights, file schema, two-vote actor join and usable independent holdout not verified; no OSF access attempted. STOP_R5.\nNO CYCLE 2026-10-30: SRC110 Blink Date podcast speed-date: NLM secondary CC BY catalogue + ~31 published speed-date dialogues, binary joint match only (two surveys described but not per-actor native vote columns released), no full candidate-opportunity risksets or file-level licence audited; this cannot unblock R5. Mixmosa/SRC081 public two native votes still lacks explicit license; Graz/SRC083 Scientific Use authentication; MatchNMingle/SRC088 has EULA, ordinal scores.\nDOCUMENTARY_SCREENING 2026-10-30: SRC112 Lock5Data has 276 Columbia first-date records with two votes, but known Columbia-derived cohort and first date only, not independent full opportunity dynamics. SRC113 Fledge.Love 2026 surveys N2617/N2894 on attitudes toward AI agents, not actual two-human directed votes or person-to-person opportunity risk sets. No raw files examined, no licence accepted; human R5 STOP.\nDocumentary new SRC114 Echenique-Robinson-Cortés-Yariv 2025: original human lab decentralized matching with strategic offers/acceptances and known payoff/opportunity arrays; 85 usable nonromantic market rounds in publication. This is NOT human romantic speed dating, native two-person romantic votes, or independent romantic ESBM holdout. Dropbox linked replication files not read, file licensing unverified; R5 human STOP.\nDocumentary re-screen: Ogushi MMSD human 619 bilateral decisions SRC107 remains raw inaccessible/unlicensed for verified replication; Mixmosa SRC081 two native decisions but unresolved file-level reuse rights; Columbia rehosts duplicate original SRC082. Echenique SRC114 is nonromantic. No qualifying new independent cohort with eligibility, paired votes and lawful raw access; STOP_R5 remains.",
+      "latest_evidence_summary": "Two genuinely new original human data-source leads: SRC105 Jauk 2016 90 participants 691 actual speed dates in 3 groups and primary author OSF individual/dyadic SAV, and SRC106 Hall 2026 129 participants in 8 events with second-date choices and publisher pointing to original OSF. Both sources document native personal binary intent after real dates, but neither original dyadic data file was obtained, neither source-specific data licence proven, actor/partner two-native-column join and cohort overlap not audited; no additional original human sample is accessible for an ESBM test.\n2026-10-29 AB-H N107–N126: 2026-10-29 targeted lookup yielded previously registered Columbia/OpenML, Mixmosa, McMaster, Hall, Arias-Sarah, Tawkify and other already indexed publications; no novel licensed two-native-vote data archive obtained. Do not treat web links as independent samples or successful rights verification.\n2026-10-30: SRC107 newly retrieved original 2026 MMSD peer-reviewed study reports 619 observed contact-exchange dyads each with two native decisions, 25 sessions/147 people. Only aggregate 2x2 published is verified; rights to individual data, actor IDs, ex ante exposure schedule and independent holdout not established. STOP_R5 remains.\nN167–N186: New SRC108 deposit-level CC0 catalog assertion refers to original Columbia 2002–2004 Fisman/Iyengar cohort; not independent from SRC016/SRC082, original archive first-party page and file-level license/bytes unverified, cannot open R5.\nN187–N206: New SRC109 Hoffmann et al. 2024 paper (60 volunteer subjects, four recurring preassigned partners, 240 real meetings, 237 usable) describes independent two native yes/no answers. Paper says files on OSF and article CC BY, but case-level dataset rights, file schema, two-vote actor join and usable independent holdout not verified; no OSF access attempted. STOP_R5.\nNO CYCLE 2026-10-30: SRC110 Blink Date podcast speed-date: NLM secondary CC BY catalogue + ~31 published speed-date dialogues, binary joint match only (two surveys described but not per-actor native vote columns released), no full candidate-opportunity risksets or file-level licence audited; this cannot unblock R5. Mixmosa/SRC081 public two native votes still lacks explicit license; Graz/SRC083 Scientific Use authentication; MatchNMingle/SRC088 has EULA, ordinal scores.\nDOCUMENTARY_SCREENING 2026-10-30: SRC112 Lock5Data has 276 Columbia first-date records with two votes, but known Columbia-derived cohort and first date only, not independent full opportunity dynamics. SRC113 Fledge.Love 2026 surveys N2617/N2894 on attitudes toward AI agents, not actual two-human directed votes or person-to-person opportunity risk sets. No raw files examined, no licence accepted; human R5 STOP.\nDocumentary new SRC114 Echenique-Robinson-Cortés-Yariv 2025: original human lab decentralized matching with strategic offers/acceptances and known payoff/opportunity arrays; 85 usable nonromantic market rounds in publication. This is NOT human romantic speed dating, native two-person romantic votes, or independent romantic ESBM holdout. Dropbox linked replication files not read, file licensing unverified; R5 human STOP.\nDocumentary re-screen: Ogushi MMSD human 619 bilateral decisions SRC107 remains raw inaccessible/unlicensed for verified replication; Mixmosa SRC081 two native decisions but unresolved file-level reuse rights; Columbia rehosts duplicate original SRC082. Echenique SRC114 is nonromantic. No qualifying new independent cohort with eligibility, paired votes and lawful raw access; STOP_R5 remains.\n2026-10-30 R5 review: new documentary SRC115 (one-sided online profile choice), SRC116 (nonromantic teammate/competitor partner), SRC117 (experimental paired first meeting with self-report satisfaction), but zero newly verified original raw romantic datasets with full exposure and sequential two-native-choice records. Known SRC096 McMaster is pre-existing and has rights conflict and event-holdout limitations; SRC104 bidirectional joins inconsistent, SRC107 MMSD row rights inaccessible. STOP_R5 human, CT2=7.",
       "last_revised_at": "2026-10-30",
       "source_ids": [
         "SRC112",
         "SRC113",
-        "SRC114"
+        "SRC114",
+        "SRC115",
+        "SRC116",
+        "SRC117"
       ]
     },
     {
@@ -604,7 +613,7 @@
         "SRC031",
         "SRC035"
       ],
-      "last_update_id": "U206",
+      "last_update_id": "U210",
       "uncertainty": "Not calibrated Bayesian probabilities; context and heterogeneity uncertain",
       "next_falsifier_or_test": "Comparar instituciones/entornos con reglas medibles, evitando reduccionismo status-universal.",
       "numeric_probability": null,
@@ -612,12 +621,14 @@
       "update_ids": [
         "U026",
         "U204",
-        "U206"
+        "U206",
+        "U210"
       ],
-      "latest_evidence_summary": "Preferencias, terceras partes, proximidad, significado cultural e institucionalización explican distintas vías de enlace.\nSRC114 primary nonromantic lab matching paper provides a well-identified strategic sequential offer/acceptance alternative to imposing centralized maximum-weight matching on artificial agents. Transfer to romantic decision context not identified: monetary matrix, full payoff information and lab roles differ from ESBM. No reclassification of human scientific evidence, CT2=7.\nAdditional first-party detail: SRC114 Echenique et al. (2025) observed 75/85 stable decentralized nonromantic laboratory markets in main treatments, 26/43 under unilateral offers and 8/12 in larger treatments, with strategic offers and cardinal payoff effects. Not romantic data and no cross-setting transport. U206 qualitative NO_CHANGE_WITH_REASON.",
+      "latest_evidence_summary": "Preferencias, terceras partes, proximidad, significado cultural e institucionalización explican distintas vías de enlace.\nSRC114 primary nonromantic lab matching paper provides a well-identified strategic sequential offer/acceptance alternative to imposing centralized maximum-weight matching on artificial agents. Transfer to romantic decision context not identified: monetary matrix, full payoff information and lab roles differ from ESBM. No reclassification of human scientific evidence, CT2=7.\nAdditional first-party detail: SRC114 Echenique et al. (2025) observed 75/85 stable decentralized nonromantic laboratory markets in main treatments, 26/43 under unilateral offers and 8/12 in larger treatments, with strategic offers and cardinal payoff effects. Not romantic data and no cross-setting transport. U206 qualitative NO_CHANGE_WITH_REASON.\nWinter/Gërxhani/van de Rijt (2026) nonromantic human teammate/competitor choice cohorts (N961/N997, belief task N598) reported gender homophily despite performance incentives; useful adjacent prior art, not romantic two-sided choice or relational R5 confirmation.",
       "last_revised_at": "2026-10-30",
       "source_ids": [
-        "SRC114"
+        "SRC114",
+        "SRC116"
       ]
     },
     {
@@ -649,7 +660,7 @@
         "SRC043",
         "SRC086"
       ],
-      "last_update_id": "U141",
+      "last_update_id": "U209",
       "uncertainty": "Not calibrated Bayesian probabilities; context and heterogeneity uncertain",
       "next_falsifier_or_test": "Manipulación aleatoria de volumen de opciones con registros de decisión/tiempo.",
       "numeric_probability": null,
@@ -658,10 +669,14 @@
         "U033",
         "U038",
         "U114",
-        "U141"
+        "U141",
+        "U209"
       ],
-      "latest_evidence_summary": "N90 synthetic strict schedule audit: immediate rejection increment alters later candidate proposals within same exposure tick, 14,053 attempts with updated bias across 6 primary seeds. Immediate/next-tick/silent mean formed 247/243.33/226.67. This does not test human limited attention or choice overload; Pronk/Denissen and Lenton/Francesconi prior art unchanged.",
-      "last_revised_at": "2026-10-29"
+      "latest_evidence_summary": "N90 synthetic strict schedule audit: immediate rejection increment alters later candidate proposals within same exposure tick, 14,053 attempts with updated bias across 6 primary seeds. Immediate/next-tick/silent mean formed 247/243.33/226.67. This does not test human limited attention or choice overload; Pronk/Denissen and Lenton/Francesconi prior art unchanged.\nHu & Markowitz (2026) two randomized real-human profile-choice studies (N193/342) report higher relational pursuit with larger 31-profile than 6-profile set and mediation by perceived compatibility, conflicting with any universal overload claim. Not observed two-way romance or real profile recipients' native consent; no raw rows, rights or R5 new validation.",
+      "last_revised_at": "2026-10-30",
+      "source_ids": [
+        "SRC115"
+      ]
     },
     {
       "id": "P-ORIENTATION",
@@ -1093,7 +1108,8 @@
       "original_science_claim": "NONE_NEW; Gale-Shapley stable matching and Echenique et al. nonromantic human lab have prior art",
       "source_ids": [
         "SRC001",
-        "SRC114"
+        "SRC114",
+        "SRC116"
       ],
       "internal_evidence": [
         "ABH_N317_N336_20261030/PREREG_AJ_SHA_FREEZE.json",
@@ -1104,16 +1120,17 @@
       "next_falsifier_or_test": "On a legally reusable independently recruited human romantic dyadic cohort with observed slates, native yes/no offers and sequence, prefit at least full-informed DA, one-round decentralized, and mutually acceptable max-weight rivals on matched holdouts; estimate likelihood and welfare under realistically constrained risksets.",
       "numeric_probability": null,
       "update_ids": [
-        "U205"
+        "U205",
+        "U211"
       ],
-      "last_update_id": "U205",
+      "last_update_id": "U211",
       "CT2_scientific": 7,
       "grade": "0/3",
       "external_data": false,
       "independence": "Synthetic only; novel computational implementation, not novel social theory",
       "date": "2026-10-30",
       "last_revised_at": "2026-10-30",
-      "latest_evidence_summary": "N317 18/20 central welfare-optimal matchings unstable under bilateral artificial preferences; N322 20/20 one-round protocols unstable; N336 15/20 nonlinear rescalings change central allocations while DA remains ordinally invariant; independent DP/MILP small oracles. Known prior art and mechanistic stipulation, no human validation."
+      "latest_evidence_summary": "N317 18/20 central welfare-optimal matchings unstable under bilateral artificial preferences; N322 20/20 one-round protocols unstable; N336 15/20 nonlinear rescalings change central allocations while DA remains ordinally invariant; independent DP/MILP small oracles. Known prior art and mechanistic stipulation, no human validation.\nSRC116 demonstrates that nonromantic participant choices may diverge from objectively task-optimal partner selection under experimental payoffs. Not observed both parties agreeing in a romantic market. Prior human status remains synthetic-only."
     }
   ],
   "audit": {
