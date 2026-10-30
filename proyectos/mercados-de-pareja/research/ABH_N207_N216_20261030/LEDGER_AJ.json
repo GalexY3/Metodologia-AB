@@ -1,0 +1,649 @@
+{
+  "schema": "ABH_N207_N216_COMPLETE_AJ_LEDGER",
+  "branch": "research/ab-h-esbm-replica-verification-n207-n216-20261030",
+  "date": "2026-10-30",
+  "prereg_commit": "e8869fe19fb35063c68ce42b824b6a98ac73ec0d",
+  "code_SHA_freeze_commit": "246e94fa705fc295668a0fcc9d473c8a49817b2e",
+  "contracts": [
+    {
+      "cycle": "N207",
+      "parent": "N206",
+      "mode": "INTEGRITY_BASELINE",
+      "drift_D": 1.2,
+      "A": {
+        "question": "Reinspect archival ZIP source and independently recompute SHA256 for original TypeScript and original ESBM without executing a model",
+        "estimand": "software validity/portability of independent ESBM replica, not human dating market"
+      },
+      "B": {
+        "rivals": [
+          "unmodified eabadd8f baseline",
+          "patched code with frozen SHA",
+          "exact integer-weight vs original binary64 NetworkX caveat"
+        ],
+        "null": "No difference in semantics or resource STOP from baseline; source-derived fixtures may fail"
+      },
+      "C": {
+        "endpoint": "26/26 manifest files and manifest SHA match; archive exactly identified as local eabadd8f export, no claim Git origin certified",
+        "pass": "Observed after freeze only; negative outcomes retained",
+        "fail": "Any mismatch invalidates that claimed property; capture first failure"
+      },
+      "D": {
+        "test_script_sha": "freeze test source on GitHub before execution",
+        "replica_sha": "freeze patched code+files before execution",
+        "limits": "No original 60-run or human evidence",
+        "seeds": "fixed in executable script prior to outcomes"
+      },
+      "E": {
+        "status": "PASS_TECHNICAL_BASELINE_RECHECK",
+        "what_actually_ran": "26/26 archival source files match SHA256 manifest and manifest checksum 62bc3bd9b70bc72565acd98f9610c8534fc53299664e2a7f0acfd2c58281a49f. Does not verify local eabadd8f Git history.",
+        "receipt": "N207.json",
+        "failed_instrument_attempt": null,
+        "real_execution": true,
+        "host_OS": "Linux, not Windows"
+      },
+      "F": {
+        "adversarial": "Tie negative controls; exact enumeration; no fixture laundering; errors preserved",
+        "original_data": "None",
+        "limits": "Manual self-consistent fixtures / independent finite graph enumeration, no human validation, no full N144/60 runs"
+      },
+      "G": {
+        "replication": "same available Linux container; Windows pending; no scientific external data",
+        "independent_second_language_only": false,
+        "independent_windows_host": false
+      },
+      "H": {
+        "priors": "No change to human hypotheses; update QA technical only if objectively validated",
+        "prior_update": "U194 NO_CHANGE_WITH_REASON for software/trajectory prior"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "scientific_grade": "0/3",
+        "maturity": "do not change merely for cycles",
+        "grade": "0/3"
+      },
+      "J": {
+        "decision": "CLOSE_TECHNICAL_SCOPE_WITH_R5_STOP",
+        "remaining_after": 9,
+        "credential_rights": "No human data or licenses",
+        "next_gate": "Windows private worktree or full historical oracle require new explicit authorization"
+      }
+    },
+    {
+      "cycle": "N208",
+      "parent": "N207",
+      "mode": "STATIC_TYPES",
+      "drift_D": 0.4,
+      "A": {
+        "question": "After prospective patch SHA freeze, run TypeScript strict noEmit type check using installed compiler without downloading deps",
+        "estimand": "software validity/portability of independent ESBM replica, not human dating market"
+      },
+      "B": {
+        "rivals": [
+          "unmodified eabadd8f baseline",
+          "patched code with frozen SHA",
+          "exact integer-weight vs original binary64 NetworkX caveat"
+        ],
+        "null": "No difference in semantics or resource STOP from baseline; source-derived fixtures may fail"
+      },
+      "C": {
+        "endpoint": "No unhandled TS errors; any missing Node types reported as environment blocker not code success",
+        "pass": "Observed after freeze only; negative outcomes retained",
+        "fail": "Any mismatch invalidates that claimed property; capture first failure"
+      },
+      "D": {
+        "test_script_sha": "freeze test source on GitHub before execution",
+        "replica_sha": "freeze patched code+files before execution",
+        "limits": "No original 60-run or human evidence",
+        "seeds": "fixed in executable script prior to outcomes"
+      },
+      "E": {
+        "status": "PASS_AFTER_INSTRUMENT_REPAIR",
+        "what_actually_ran": "First TypeScript 5.8.3 tsc strict --noEmit exit 2 missing local @types/node; prereg environment-only repair 81e0ac4; ignored node_modules symlink to preinstalled @types/node 25.1.0; second strict tsc exit 0 with exact same frozen source. Node runtime 22.16.0 Linux, not 22.18 required by package.",
+        "receipt": "N208_retry.log",
+        "failed_instrument_attempt": "N208.log",
+        "real_execution": true,
+        "host_OS": "Linux, not Windows"
+      },
+      "F": {
+        "adversarial": "Tie negative controls; exact enumeration; no fixture laundering; errors preserved",
+        "original_data": "None",
+        "limits": "Manual self-consistent fixtures / independent finite graph enumeration, no human validation, no full N144/60 runs"
+      },
+      "G": {
+        "replication": "same available Linux container; Windows pending; no scientific external data",
+        "independent_second_language_only": false,
+        "independent_windows_host": false
+      },
+      "H": {
+        "priors": "No change to human hypotheses; update QA technical only if objectively validated",
+        "prior_update": "U194 NO_CHANGE_WITH_REASON for software/trajectory prior"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "scientific_grade": "0/3",
+        "maturity": "do not change merely for cycles",
+        "grade": "0/3"
+      },
+      "J": {
+        "decision": "CLOSE_TECHNICAL_SCOPE_WITH_R5_STOP",
+        "remaining_after": 8,
+        "credential_rights": "No human data or licenses",
+        "next_gate": "Windows private worktree or full historical oracle require new explicit authorization"
+      }
+    },
+    {
+      "cycle": "N209",
+      "parent": "N208",
+      "mode": "GUMBEL_DISCRIMINANT",
+      "drift_D": 0.4,
+      "A": {
+        "question": "Test three tie classes with explicit below-cutoff, tie-at-boundary and within-picks cases",
+        "estimand": "software validity/portability of independent ESBM replica, not human dating market"
+      },
+      "B": {
+        "rivals": [
+          "unmodified eabadd8f baseline",
+          "patched code with frozen SHA",
+          "exact integer-weight vs original binary64 NetworkX caveat"
+        ],
+        "null": "No difference in semantics or resource STOP from baseline; source-derived fixtures may fail"
+      },
+      "C": {
+        "endpoint": "Only harmless below-cutoff continues; two consequential ties stop; unique-score visit order identical",
+        "pass": "Observed after freeze only; negative outcomes retained",
+        "fail": "Any mismatch invalidates that claimed property; capture first failure"
+      },
+      "D": {
+        "test_script_sha": "freeze test source on GitHub before execution",
+        "replica_sha": "freeze patched code+files before execution",
+        "limits": "No original 60-run or human evidence",
+        "seeds": "fixed in executable script prior to outcomes"
+      },
+      "E": {
+        "status": "PASS_TECHNICAL",
+        "what_actually_ran": "Top-k Gumbel tie classification below cutoff nonblocking; cutoff and inside selected set blocking; unique scores preserve ascending within-selected visit order.",
+        "receipt": "gumbel.json",
+        "failed_instrument_attempt": null,
+        "real_execution": true,
+        "host_OS": "Linux, not Windows"
+      },
+      "F": {
+        "adversarial": "Tie negative controls; exact enumeration; no fixture laundering; errors preserved",
+        "original_data": "None",
+        "limits": "Manual self-consistent fixtures / independent finite graph enumeration, no human validation, no full N144/60 runs"
+      },
+      "G": {
+        "replication": "same available Linux container; Windows pending; no scientific external data",
+        "independent_second_language_only": false,
+        "independent_windows_host": false
+      },
+      "H": {
+        "priors": "No change to human hypotheses; update QA technical only if objectively validated",
+        "prior_update": "U194 NO_CHANGE_WITH_REASON for software/trajectory prior"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "scientific_grade": "0/3",
+        "maturity": "do not change merely for cycles",
+        "grade": "0/3"
+      },
+      "J": {
+        "decision": "CLOSE_TECHNICAL_SCOPE_WITH_R5_STOP",
+        "remaining_after": 7,
+        "credential_rights": "No human data or licenses",
+        "next_gate": "Windows private worktree or full historical oracle require new explicit authorization"
+      }
+    },
+    {
+      "cycle": "N210",
+      "parent": "N209",
+      "mode": "MATCH_META_PARITY",
+      "drift_D": 0.4,
+      "A": {
+        "question": "Event comparator must ignore private solver metadata yet refuse cardinality/pair differences and classify float near-ties",
+        "estimand": "software validity/portability of independent ESBM replica, not human dating market"
+      },
+      "B": {
+        "rivals": [
+          "unmodified eabadd8f baseline",
+          "patched code with frozen SHA",
+          "exact integer-weight vs original binary64 NetworkX caveat"
+        ],
+        "null": "No difference in semantics or resource STOP from baseline; source-derived fixtures may fail"
+      },
+      "C": {
+        "endpoint": "Missing unique/exact_weight_units on Python side not mismatch; changed pair/cardinality is mismatch; ambiguous status explicit",
+        "pass": "Observed after freeze only; negative outcomes retained",
+        "fail": "Any mismatch invalidates that claimed property; capture first failure"
+      },
+      "D": {
+        "test_script_sha": "freeze test source on GitHub before execution",
+        "replica_sha": "freeze patched code+files before execution",
+        "limits": "No original 60-run or human evidence",
+        "seeds": "fixed in executable script prior to outcomes"
+      },
+      "E": {
+        "status": "PASS_TECHNICAL",
+        "what_actually_ran": "Matching comparator ignores solver_meta absent on Python-like reference; detects pair mismatch PAIR_MISMATCH and cardinality mismatch CARDINALITY_MISMATCH.",
+        "receipt": "compare.json",
+        "failed_instrument_attempt": null,
+        "real_execution": true,
+        "host_OS": "Linux, not Windows"
+      },
+      "F": {
+        "adversarial": "Tie negative controls; exact enumeration; no fixture laundering; errors preserved",
+        "original_data": "None",
+        "limits": "Manual self-consistent fixtures / independent finite graph enumeration, no human validation, no full N144/60 runs"
+      },
+      "G": {
+        "replication": "same available Linux container; Windows pending; no scientific external data",
+        "independent_second_language_only": false,
+        "independent_windows_host": false
+      },
+      "H": {
+        "priors": "No change to human hypotheses; update QA technical only if objectively validated",
+        "prior_update": "U194 NO_CHANGE_WITH_REASON for software/trajectory prior"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "scientific_grade": "0/3",
+        "maturity": "do not change merely for cycles",
+        "grade": "0/3"
+      },
+      "J": {
+        "decision": "CLOSE_TECHNICAL_SCOPE_WITH_R5_STOP",
+        "remaining_after": 6,
+        "credential_rights": "No human data or licenses",
+        "next_gate": "Windows private worktree or full historical oracle require new explicit authorization"
+      }
+    },
+    {
+      "cycle": "N211",
+      "parent": "N210",
+      "mode": "TRACE_CONTRACT",
+      "drift_D": 0.4,
+      "A": {
+        "question": "Compare two synthetic schema-compliant trace events with ordered stage/seq and injected negative/positive decisions",
+        "estimand": "software validity/portability of independent ESBM replica, not human dating market"
+      },
+      "B": {
+        "rivals": [
+          "unmodified eabadd8f baseline",
+          "patched code with frozen SHA",
+          "exact integer-weight vs original binary64 NetworkX caveat"
+        ],
+        "null": "No difference in semantics or resource STOP from baseline; source-derived fixtures may fail"
+      },
+      "C": {
+        "endpoint": "Schema validator rejects altered seq, stage, sender or missing decisions; event comparison never claims original Python trace valid",
+        "pass": "Observed after freeze only; negative outcomes retained",
+        "fail": "Any mismatch invalidates that claimed property; capture first failure"
+      },
+      "D": {
+        "test_script_sha": "freeze test source on GitHub before execution",
+        "replica_sha": "freeze patched code+files before execution",
+        "limits": "No original 60-run or human evidence",
+        "seeds": "fixed in executable script prior to outcomes"
+      },
+      "E": {
+        "status": "PASS_TECHNICAL",
+        "what_actually_ran": "Synthetic TRACE_SCHEMA_1 event validator checks version/sequence, missing Boolean outcome, flipped outcome; no original Python oracle trace exists yet.",
+        "receipt": "schema.json",
+        "failed_instrument_attempt": null,
+        "real_execution": true,
+        "host_OS": "Linux, not Windows"
+      },
+      "F": {
+        "adversarial": "Tie negative controls; exact enumeration; no fixture laundering; errors preserved",
+        "original_data": "None",
+        "limits": "Manual self-consistent fixtures / independent finite graph enumeration, no human validation, no full N144/60 runs"
+      },
+      "G": {
+        "replication": "same available Linux container; Windows pending; no scientific external data",
+        "independent_second_language_only": false,
+        "independent_windows_host": false
+      },
+      "H": {
+        "priors": "No change to human hypotheses; update QA technical only if objectively validated",
+        "prior_update": "U194 NO_CHANGE_WITH_REASON for software/trajectory prior"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "scientific_grade": "0/3",
+        "maturity": "do not change merely for cycles",
+        "grade": "0/3"
+      },
+      "J": {
+        "decision": "CLOSE_TECHNICAL_SCOPE_WITH_R5_STOP",
+        "remaining_after": 5,
+        "credential_rights": "No human data or licenses",
+        "next_gate": "Windows private worktree or full historical oracle require new explicit authorization"
+      }
+    },
+    {
+      "cycle": "N212",
+      "parent": "N211",
+      "mode": "RESOURCE_COMPONENT",
+      "drift_D": 0.4,
+      "A": {
+        "question": "Check that independently configured component node limit stops before exponential matching",
+        "estimand": "software validity/portability of independent ESBM replica, not human dating market"
+      },
+      "B": {
+        "rivals": [
+          "unmodified eabadd8f baseline",
+          "patched code with frozen SHA",
+          "exact integer-weight vs original binary64 NetworkX caveat"
+        ],
+        "null": "No difference in semantics or resource STOP from baseline; source-derived fixtures may fail"
+      },
+      "C": {
+        "endpoint": "cap=3 stops graph of 4; cap=4 small acyclic graph still solves; no greedy substitute",
+        "pass": "Observed after freeze only; negative outcomes retained",
+        "fail": "Any mismatch invalidates that claimed property; capture first failure"
+      },
+      "D": {
+        "test_script_sha": "freeze test source on GitHub before execution",
+        "replica_sha": "freeze patched code+files before execution",
+        "limits": "No original 60-run or human evidence",
+        "seeds": "fixed in executable script prior to outcomes"
+      },
+      "E": {
+        "status": "PASS_TECHNICAL",
+        "what_actually_ran": "Matching maxComponentNodes=3 blocks 4-node connected graph before exponential recurrence; maxComponentNodes=4 solves it. No N144 ability established.",
+        "receipt": "component.json",
+        "failed_instrument_attempt": null,
+        "real_execution": true,
+        "host_OS": "Linux, not Windows"
+      },
+      "F": {
+        "adversarial": "Tie negative controls; exact enumeration; no fixture laundering; errors preserved",
+        "original_data": "None",
+        "limits": "Manual self-consistent fixtures / independent finite graph enumeration, no human validation, no full N144/60 runs"
+      },
+      "G": {
+        "replication": "same available Linux container; Windows pending; no scientific external data",
+        "independent_second_language_only": false,
+        "independent_windows_host": false
+      },
+      "H": {
+        "priors": "No change to human hypotheses; update QA technical only if objectively validated",
+        "prior_update": "U194 NO_CHANGE_WITH_REASON for software/trajectory prior"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "scientific_grade": "0/3",
+        "maturity": "do not change merely for cycles",
+        "grade": "0/3"
+      },
+      "J": {
+        "decision": "CLOSE_TECHNICAL_SCOPE_WITH_R5_STOP",
+        "remaining_after": 4,
+        "credential_rights": "No human data or licenses",
+        "next_gate": "Windows private worktree or full historical oracle require new explicit authorization"
+      }
+    },
+    {
+      "cycle": "N213",
+      "parent": "N212",
+      "mode": "RESOURCE_WALL_HEAP",
+      "drift_D": 0.4,
+      "A": {
+        "question": "Check zero/tiny matching time and heap budgets safely stop with diagnostic, no false PASS",
+        "estimand": "software validity/portability of independent ESBM replica, not human dating market"
+      },
+      "B": {
+        "rivals": [
+          "unmodified eabadd8f baseline",
+          "patched code with frozen SHA",
+          "exact integer-weight vs original binary64 NetworkX caveat"
+        ],
+        "null": "No difference in semantics or resource STOP from baseline; source-derived fixtures may fail"
+      },
+      "C": {
+        "endpoint": "monotonic time and process heap checked; no hard OS isolation claimed; failures preserve details",
+        "pass": "Observed after freeze only; negative outcomes retained",
+        "fail": "Any mismatch invalidates that claimed property; capture first failure"
+      },
+      "D": {
+        "test_script_sha": "freeze test source on GitHub before execution",
+        "replica_sha": "freeze patched code+files before execution",
+        "limits": "No original 60-run or human evidence",
+        "seeds": "fixed in executable script prior to outcomes"
+      },
+      "E": {
+        "status": "PASS_TECHNICAL",
+        "what_actually_ran": "Monotonic zero-millisecond and one-byte heap budget trigger fail-stop explicitly; JS sync guards are best-effort, not OS process limits.",
+        "receipt": "wallheap.json",
+        "failed_instrument_attempt": null,
+        "real_execution": true,
+        "host_OS": "Linux, not Windows"
+      },
+      "F": {
+        "adversarial": "Tie negative controls; exact enumeration; no fixture laundering; errors preserved",
+        "original_data": "None",
+        "limits": "Manual self-consistent fixtures / independent finite graph enumeration, no human validation, no full N144/60 runs"
+      },
+      "G": {
+        "replication": "same available Linux container; Windows pending; no scientific external data",
+        "independent_second_language_only": false,
+        "independent_windows_host": false
+      },
+      "H": {
+        "priors": "No change to human hypotheses; update QA technical only if objectively validated",
+        "prior_update": "U194 NO_CHANGE_WITH_REASON for software/trajectory prior"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "scientific_grade": "0/3",
+        "maturity": "do not change merely for cycles",
+        "grade": "0/3"
+      },
+      "J": {
+        "decision": "CLOSE_TECHNICAL_SCOPE_WITH_R5_STOP",
+        "remaining_after": 3,
+        "credential_rights": "No human data or licenses",
+        "next_gate": "Windows private worktree or full historical oracle require new explicit authorization"
+      }
+    },
+    {
+      "cycle": "N214",
+      "parent": "N213",
+      "mode": "TRACE_RESOURCE",
+      "drift_D": 0.4,
+      "A": {
+        "question": "Check trace event/bytes budgets stop before unbounded snapshot collection and retain last completed event",
+        "estimand": "software validity/portability of independent ESBM replica, not human dating market"
+      },
+      "B": {
+        "rivals": [
+          "unmodified eabadd8f baseline",
+          "patched code with frozen SHA",
+          "exact integer-weight vs original binary64 NetworkX caveat"
+        ],
+        "null": "No difference in semantics or resource STOP from baseline; source-derived fixtures may fail"
+      },
+      "C": {
+        "endpoint": "A short synthetic emit stream under bounded sink, forced overflow yields PARTIAL_STOP; no 60 historical runs",
+        "pass": "Observed after freeze only; negative outcomes retained",
+        "fail": "Any mismatch invalidates that claimed property; capture first failure"
+      },
+      "D": {
+        "test_script_sha": "freeze test source on GitHub before execution",
+        "replica_sha": "freeze patched code+files before execution",
+        "limits": "No original 60-run or human evidence",
+        "seeds": "fixed in executable script prior to outcomes"
+      },
+      "E": {
+        "status": "PASS_TECHNICAL",
+        "what_actually_ran": "One complete toy event preserved before maxEvents=1 stop, maxBytes=5 stops before emission, with trace resource error; no actual 60-run CLI execution.",
+        "receipt": "tracebudget.json",
+        "failed_instrument_attempt": null,
+        "real_execution": true,
+        "host_OS": "Linux, not Windows"
+      },
+      "F": {
+        "adversarial": "Tie negative controls; exact enumeration; no fixture laundering; errors preserved",
+        "original_data": "None",
+        "limits": "Manual self-consistent fixtures / independent finite graph enumeration, no human validation, no full N144/60 runs"
+      },
+      "G": {
+        "replication": "same available Linux container; Windows pending; no scientific external data",
+        "independent_second_language_only": false,
+        "independent_windows_host": false
+      },
+      "H": {
+        "priors": "No change to human hypotheses; update QA technical only if objectively validated",
+        "prior_update": "U194 NO_CHANGE_WITH_REASON for software/trajectory prior"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "scientific_grade": "0/3",
+        "maturity": "do not change merely for cycles",
+        "grade": "0/3"
+      },
+      "J": {
+        "decision": "CLOSE_TECHNICAL_SCOPE_WITH_R5_STOP",
+        "remaining_after": 2,
+        "credential_rights": "No human data or licenses",
+        "next_gate": "Windows private worktree or full historical oracle require new explicit authorization"
+      }
+    },
+    {
+      "cycle": "N215",
+      "parent": "N214",
+      "mode": "MANUAL_FIXTURE_EVAL",
+      "drift_D": 0.4,
+      "A": {
+        "question": "Run 12 frozen human-authored tiny fixture inputs against newly frozen replica; all failures and repairs preserved",
+        "estimand": "software validity/portability of independent ESBM replica, not human dating market"
+      },
+      "B": {
+        "rivals": [
+          "unmodified eabadd8f baseline",
+          "patched code with frozen SHA",
+          "exact integer-weight vs original binary64 NetworkX caveat"
+        ],
+        "null": "No difference in semantics or resource STOP from baseline; source-derived fixtures may fail"
+      },
+      "C": {
+        "endpoint": "12/12 or honest SPEC_OR_FIXTURE_ERR; source-derived expectations not independent original Python oracle",
+        "pass": "Observed after freeze only; negative outcomes retained",
+        "fail": "Any mismatch invalidates that claimed property; capture first failure"
+      },
+      "D": {
+        "test_script_sha": "freeze test source on GitHub before execution",
+        "replica_sha": "freeze patched code+files before execution",
+        "limits": "No original 60-run or human evidence",
+        "seeds": "fixed in executable script prior to outcomes"
+      },
+      "E": {
+        "status": "PASS_TOY_NOT_INDEPENDENT_PYTHON",
+        "what_actually_ran": "12/12 manual toy fixtures classified: 11 MATCHES_MANUAL_EXPECTATION and UT12 MATCH_TIE_DIAGNOSTIC; not independently compared to historic Python oracle.",
+        "receipt": "fixtures.json",
+        "failed_instrument_attempt": null,
+        "real_execution": true,
+        "host_OS": "Linux, not Windows"
+      },
+      "F": {
+        "adversarial": "Tie negative controls; exact enumeration; no fixture laundering; errors preserved",
+        "original_data": "None",
+        "limits": "Manual self-consistent fixtures / independent finite graph enumeration, no human validation, no full N144/60 runs"
+      },
+      "G": {
+        "replication": "same available Linux container; Windows pending; no scientific external data",
+        "independent_second_language_only": false,
+        "independent_windows_host": false
+      },
+      "H": {
+        "priors": "No change to human hypotheses; update QA technical only if objectively validated",
+        "prior_update": "U194 NO_CHANGE_WITH_REASON for software/trajectory prior"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "scientific_grade": "0/3",
+        "maturity": "do not change merely for cycles",
+        "grade": "0/3"
+      },
+      "J": {
+        "decision": "CLOSE_TECHNICAL_SCOPE_WITH_R5_STOP",
+        "remaining_after": 1,
+        "credential_rights": "No human data or licenses",
+        "next_gate": "Windows private worktree or full historical oracle require new explicit authorization"
+      }
+    },
+    {
+      "cycle": "N216",
+      "parent": "N215",
+      "mode": "INDEPENDENT_GRAPH_ORACLE",
+      "drift_D": 0.4,
+      "A": {
+        "question": "Adversarial matching small sparse and dense graph enumeration via independently written exhaustive Python oracle vs TS matching",
+        "estimand": "software validity/portability of independent ESBM replica, not human dating market"
+      },
+      "B": {
+        "rivals": [
+          "unmodified eabadd8f baseline",
+          "patched code with frozen SHA",
+          "exact integer-weight vs original binary64 NetworkX caveat"
+        ],
+        "null": "No difference in semantics or resource STOP from baseline; source-derived fixtures may fail"
+      },
+      "C": {
+        "endpoint": "Fixed small graphs n<=8 with unique optima and degeneracies; exact objective cardinality then integer-weight, no N144 capacity claim",
+        "pass": "Observed after freeze only; negative outcomes retained",
+        "fail": "Any mismatch invalidates that claimed property; capture first failure"
+      },
+      "D": {
+        "test_script_sha": "freeze test source on GitHub before execution",
+        "replica_sha": "freeze patched code+files before execution",
+        "limits": "No original 60-run or human evidence",
+        "seeds": "fixed in executable script prior to outcomes"
+      },
+      "E": {
+        "status": "PASS_SMALL_GRAPH_PYTHON_ORACLE",
+        "what_actually_ran": "Exact TypeScript subset matching agrees with standalone Python stdlib Fraction-based exhaustive oracle on ten deterministic graphs up to n8 for cardinality, uniqueness, exact pair when unique, or optimal witness when tied. Cannot infer N144 or NetworkX binary64 near-ties.",
+        "receipt": "oracle.json",
+        "failed_instrument_attempt": null,
+        "real_execution": true,
+        "host_OS": "Linux, not Windows"
+      },
+      "F": {
+        "adversarial": "Tie negative controls; exact enumeration; no fixture laundering; errors preserved",
+        "original_data": "None",
+        "limits": "Manual self-consistent fixtures / independent finite graph enumeration, no human validation, no full N144/60 runs"
+      },
+      "G": {
+        "replication": "same available Linux container; Windows pending; no scientific external data",
+        "independent_second_language_only": true,
+        "independent_windows_host": false
+      },
+      "H": {
+        "priors": "No change to human hypotheses; update QA technical only if objectively validated",
+        "prior_update": "U194 NO_CHANGE_WITH_REASON for software/trajectory prior"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "scientific_grade": "0/3",
+        "maturity": "do not change merely for cycles",
+        "grade": "0/3"
+      },
+      "J": {
+        "decision": "CLOSE_TECHNICAL_SCOPE_WITH_R5_STOP",
+        "remaining_after": 0,
+        "credential_rights": "No human data or licenses",
+        "next_gate": "Windows private worktree or full historical oracle require new explicit authorization"
+      }
+    }
+  ]
+}
