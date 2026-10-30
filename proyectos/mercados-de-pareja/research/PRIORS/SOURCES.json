@@ -3,7 +3,7 @@
   "project": "mercados-de-pareja",
   "date": "2026-10-30",
   "scope": "Retrospective provenance backfill from repository reports plus N56/N57 publisher audit. Original data never copied; not systematic or claim of accessing raw data for bibliography.",
-  "source_count": 110,
+  "source_count": 111,
   "sources": [
     {
       "id": "SRC001",
@@ -2426,9 +2426,23 @@
       "N_case_file_rows": 0,
       "status": "DOCUMENTARY_CANDIDATE_ONLY_R5_STOP",
       "last_audit": "2026-10-30"
+    },
+    {
+      "id": "SRC111",
+      "title": "Boost.Graph official maximum_weighted_matching documentation — exact polynomial-time Edmonds weighted blossom algorithm (C++ library)",
+      "canonical_url": "https://www.boost.org/latest/libs/graph/doc/html/graph/algorithms/network_flow/maximum_weighted_matching.html",
+      "source_type": "PRIMARY_ORIGINAL_SOFTWARE_LIBRARY_API_DOCUMENTATION_NOT_HUMAN_EMPIRICAL_DATA",
+      "date_discovered": "2026-10-30",
+      "evidence": "Boost official documentation states maximum_weighted_matching solves maximum weight matching in undirected graphs using Edmonds/Galil blossom and describes complexity O(V^3); integer edge-weight types use integer arithmetic internally. It is not maxcardinality-first automatically: PIVOT experiment lexicographically encoded cardinality into integer objective weights before invoking the solver.",
+      "rights": "Official Boost headers preinstalled in Linux, Boost Software License v1.0 documented by the project; no credentials, external data permissions, click-through agreements or non-standard licensing. This source entry is documentation citation, not a license acceptance.",
+      "independence": "C++ Boost implementation is independent of Python NetworkX/TypeScript exhaustive-subset solver, but it is a native third-party dependency. TypeScript wrapper does not constitute pure JS/TS Blossom.",
+      "contribution": "Potential computational bridge to N144 original ESBM historical 60-run replication without greedy matching. N247–N256 full 60 results aggregate/track parity, N242 segfault and N246 timeout limit robustness; neither human model validation nor fully event-level parity.",
+      "data_rows_read": 0,
+      "disclaimer": "DO NOT COUNT as new human cohort; no scientific causal validity claim",
+      "status": "TECHNICAL_SOFTWARE_PRIMARY_DOC_ONLY"
     }
   ],
-  "last_added_campaign": "NO_CYCLE_R5_FEASIBILITY_SRC110_PODCAST_MATCH_ONLY",
+  "last_added_campaign": "ABH_N237_N256_BOOST_BLOSSOM_PIVOT",
   "canonical_duplicate_DOI_audit": {
     "date": "2026-10-30",
     "source_records_before": 107,
