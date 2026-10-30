@@ -7,6 +7,7 @@
 - Evidencia histórica: `research/ab-h-esbm-polynomial-blossom-n237-n256-20261030`, cierre `7307f81174dab5050bf3f28f04235e7dc6666e74`.
 - [Preparación (no ejecutada) en rama científica](https://github.com/GalexY3/Metodologia-AB/blob/research/ab-h-esbm-event-parity-n257-n276-20261030/proyectos/mercados-de-pareja/research/ABH_N257_N276_20261030/PREPARATION_NOT_EXECUTED.md) **solo existe en la rama de investigación**.
 - Código y resultados para nuevos experimentos solo en rama científica. Este directorio contiene **instrucciones, no resultados**.
+- [Registro de recuperación y búsquedas ya agotadas](RECOVERY_STATUS_20261030.md). 
 - Ejecutar en orden condicionado: [01 recuperar](01_RECUPERAR_INSTRUMENTOS.md), [02 depurar N242](02_N257_SIGSEGV.md), [03 depurar N246](03_N258_TIMEOUT.md), [04 paridad de eventos](04_N259_N276_EVENTOS.md).
 
 ## Prohibiciones y criterio de contabilidad
