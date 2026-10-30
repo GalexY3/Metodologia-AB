@@ -1,5 +1,8 @@
 # CURRENT · Mercados de pareja · 2026-10-30 · cierre AB-H N237–N256 matching Blossom
 
+> **N257–N276, continuidad autorizada 30/10/2026 (estado operativo, no resultado):** 20 plazas AB-H PIVOT autorizadas; **0 ejecutadas, 20 pendientes**. Preparación previa: [PREPARATION_NOT_EXECUTED](research/ABH_N257_N276_20261030/PREPARATION_NOT_EXECUTED.md). Tareas Codex guardadas en [tareas_codex/README.md](tareas_codex/README.md) y publicadas en `main` sin fusionar la rama científica. ZIP N237–N256 original aún **no recuperado**: SHA256 `349414236fb7d075e9c024efb7c56faf616fd46d79454963e30db6d832aa144c`; N242/N246 y paridad individual siguen abiertos. **CT2 científico 7/100; STOP_R5 humano activo**. Ningún resultado nuevo ni mejora de madurez alegada; ESBM y SRC104 intocados.
+
+
 > **Cierre vigente:** N237–N256 20/20 ejecuciones reales: 18 PASS técnicos, 2 negativos de robustez (SIGSEGV C++ n143, timeout 12s n144 casi completo); 60/60 JSON agregados/tick histories N144 T16 K7 del ESBM original Python coinciden con réplica TS y Boost C++ bajo mismos shocks, **SIN prueba de paridad de cada evento/pareja o unicidad de todos los óptimos**. 111 SOURCES, 34 PRIORS, 196 UPDATES; madurez 44.10% QA-only, CT2 7/100 y STOP_R5 humano. [Informe](research/ABH_N237_N256_20261030/REPORT.md). Sin fusiones, humanos, licencias ni SSJY.
 
 > **Cierre vigente:** N217–N236 20/20 técnicos; 14/14 comparaciones Python/TS pequeñas y 24/24 oráculos grafos, pero N144 escala no validada; 110 SOURCES/34 PRIORS/195 UPDATES, madurez 44,00%, CT2 7/100, STOP_R5 humano. Cero ciclos pendientes. [Informe](research/ABH_N217_N236_20261030/REPORT.md).
