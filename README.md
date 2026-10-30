@@ -2,7 +2,7 @@
 
 **Para continuar Politics Fantasy:** empezar por [su entrada estable](proyectos/politics-fantasy-league/START_HERE.md). Su estado vivo, dos líneas de hitos y política de continuidad evitan reconstruir el proyecto desde conversaciones antiguas. PFL tiene una excepción local a la petición automática de nuevos ciclos; consultar su política antes de aplicar el resto del protocolo.
 
-Repositorio privado de la metodología de investigación abductivo-bayesiana **AB**, sus priors metodológicos y observaciones acumulativas. GitHub conserva el registro científico versionado; Drive es el archivo documental complementario. Los resultados sustantivos de cada proyecto conservan sus propios repositorios y ledgers.
+Repositorio de la metodología de investigación abductivo-bayesiana **AB**, sus priors metodológicos y observaciones acumulativas. GitHub conserva el registro científico versionado; Drive es el archivo documental complementario. Los resultados sustantivos de cada proyecto conservan sus propios repositorios y ledgers.
 
 ## Protocolo portable de interacción con ChatGPT (lectura obligatoria)
 
