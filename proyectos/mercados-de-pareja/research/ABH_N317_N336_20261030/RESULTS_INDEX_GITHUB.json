@@ -1,0 +1,349 @@
+{
+  "schema": "ABH_N317_N336_OUTCOME_SHA_INDEX_v1",
+  "date": "2026-10-30",
+  "branch": "research/ab-h-esbm-decentralized-n317-n336-20261030",
+  "authorized": 20,
+  "technical_executed": 20,
+  "technical_pass": 20,
+  "technical_exceptions": 0,
+  "remaining": 0,
+  "preoutcome_commit": "f69b629c404b3325817b569d7e0dd0f0acdae375",
+  "runner_manifest_commit": "c94fc50ef83a45edae2108c4088c808212ef44c8",
+  "auditor_preregister_commit": "f11e92f848cbdec72c1d95143057e2f111730db9",
+  "instrument_zip_sha256": "d4687db70c1b79801b0d4b27c38363184f3ef9f4ea4be9903e41ab1c4c65a93d",
+  "code_sha256": {
+    "ORIGINAL_ESBM_UNMODIFIED.py": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+    "market_lab.py": "f202e790705dd0d48724dcbcb67356b4f2075c0a82d4b44c1a9d434851bb6e21",
+    "run_cycles.py": "13d5e89d9a9adfb3c5f2f8d9c5a8480b3dfe71b7dd23b816bccca4a4dc63f24b"
+  },
+  "audit_json_sha256": "02d6f0c7355c8d88d21ac4dcc7cbc45ddd078e79c0f9207a6063c7c2ceb512e5",
+  "audit_status": "PASS",
+  "scientific_grade": "0/3",
+  "new_human_rows": 0,
+  "CT2_scientific": 7,
+  "STOP_R5_human": true,
+  "source_count": 114,
+  "prior_count": 35,
+  "updates_count": 208,
+  "original_ESBM_unchanged": true,
+  "SRC104_unchanged": true,
+  "historical_TS_available": false,
+  "all_20_exploratory_synthetic": true,
+  "records": [
+    {
+      "cycle": "N317",
+      "state": "PASS",
+      "receipt": "results/N317.json",
+      "sha256": "566d354bbb782609a02046ed90d298fd1db8226828d7dd389965217dfcbdae37",
+      "elapsed_wall_seconds": 0.07430302900002062,
+      "maxrss_kib": 134668,
+      "result_summary": {
+        "central_unstable": 18,
+        "strict_welfare_advantage": 18
+      },
+      "seed_rows": 20,
+      "scientific_grade": "0/3",
+      "CT2": 7
+    },
+    {
+      "cycle": "N318",
+      "state": "PASS",
+      "receipt": "results/N318.json",
+      "sha256": "6c9ec2a260fe2849938393645d017642959634db8f1517ae18b1eda4e1215cc7",
+      "elapsed_wall_seconds": 0.03563448300019445,
+      "maxrss_kib": 134288,
+      "result_summary": {
+        "stable_extremals_differ": 5
+      },
+      "seed_rows": 20,
+      "scientific_grade": "0/3",
+      "CT2": 7
+    },
+    {
+      "cycle": "N319",
+      "state": "PASS",
+      "receipt": "results/N319.json",
+      "sha256": "529aa301164cc031474baa952851c9f632b7289eab4c919f3f1b9503d4ab0fb4",
+      "elapsed_wall_seconds": 0.000461704000372265,
+      "maxrss_kib": 134280,
+      "result_summary": {
+        "stable": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            1,
+            2,
+            0
+          ],
+          [
+            2,
+            0,
+            1
+          ]
+        ],
+        "DA_left": [
+          0,
+          1,
+          2
+        ],
+        "DA_right": [
+          2,
+          0,
+          1
+        ],
+        "first_party_document": "Gale and Shapley 1962",
+        "total_permutations": 6
+      },
+      "seed_rows": 0,
+      "scientific_grade": "0/3",
+      "CT2": 7
+    },
+    {
+      "cycle": "N320",
+      "state": "PASS",
+      "receipt": "results/N320.json",
+      "sha256": "06e1de2e306532835aa05fe9f20b46611ad9f5a32e86cf45fe5b4dface3cc7be",
+      "elapsed_wall_seconds": 0.037065064999751485,
+      "maxrss_kib": 134668,
+      "result_summary": {
+        "mean_surplus_gap": 62.323783049999975,
+        "welfare_optimum_ex_post_not_behavioral_prediction": true
+      },
+      "seed_rows": 20,
+      "scientific_grade": "0/3",
+      "CT2": 7
+    },
+    {
+      "cycle": "N321",
+      "state": "PASS",
+      "receipt": "results/N321.json",
+      "sha256": "cd1156bde38092733af975ad1be085583cdefb22ab415e0fc3b2dbda2df2468c",
+      "elapsed_wall_seconds": 0.02676467999981469,
+      "maxrss_kib": 134540,
+      "result_summary": {
+        "mean_eligibility": 11.15
+      },
+      "seed_rows": 20,
+      "scientific_grade": "0/3",
+      "CT2": 7
+    },
+    {
+      "cycle": "N322",
+      "state": "PASS",
+      "receipt": "results/N322.json",
+      "sha256": "7a80719441605740b70f23f6761b1041688bd15ad819b9f22648634b7fcd1a36",
+      "elapsed_wall_seconds": 0.020034444999964762,
+      "maxrss_kib": 134416,
+      "result_summary": {
+        "oneshot_unstable": 20
+      },
+      "seed_rows": 20,
+      "scientific_grade": "0/3",
+      "CT2": 7
+    },
+    {
+      "cycle": "N323",
+      "state": "PASS",
+      "receipt": "results/N323.json",
+      "sha256": "cd001163939c45cd3961ab4b0c20ea3be4a0e1584c05055f641608ace6dfec45",
+      "elapsed_wall_seconds": 0.021456348999890906,
+      "maxrss_kib": 134408,
+      "result_summary": {
+        "cut_unstable_by_full_preferences": 20
+      },
+      "seed_rows": 20,
+      "scientific_grade": "0/3",
+      "CT2": 7
+    },
+    {
+      "cycle": "N324",
+      "state": "PASS",
+      "receipt": "results/N324.json",
+      "sha256": "0ec58ab1388400ff8cc9c2300a8de0c025474c09e7bce097eacda6448de856c4",
+      "elapsed_wall_seconds": 0.012985071999992215,
+      "maxrss_kib": 134384,
+      "result_summary": {
+        "incomplete_markets": 20
+      },
+      "seed_rows": 20,
+      "scientific_grade": "0/3",
+      "CT2": 7
+    },
+    {
+      "cycle": "N325",
+      "state": "PASS",
+      "receipt": "results/N325.json",
+      "sha256": "9ea1ce3c5b2d7161dc238543234cce4b70c4f308736e907c6c9ad34565fc4f14",
+      "elapsed_wall_seconds": 0.15467414000022472,
+      "maxrss_kib": 134408,
+      "result_summary": {
+        "stable_within_80": 20,
+        "cycles_seen": 5
+      },
+      "seed_rows": 20,
+      "scientific_grade": "0/3",
+      "CT2": 7
+    },
+    {
+      "cycle": "N326",
+      "state": "PASS",
+      "receipt": "results/N326.json",
+      "sha256": "d0b5598d7eeab570f25fb81c4a47cdcc30ca8937d4b5142241966d72ec9d9ddd",
+      "elapsed_wall_seconds": 0.28444088000014744,
+      "maxrss_kib": 134412,
+      "result_summary": {
+        "mean_updates_difference": -20.5
+      },
+      "seed_rows": 20,
+      "scientific_grade": "0/3",
+      "CT2": 7
+    },
+    {
+      "cycle": "N327",
+      "state": "PASS",
+      "receipt": "results/N327.json",
+      "sha256": "3d731c84e65def4538c7a3da67622597f58157ee3e2be0524b4a72f090b6619f",
+      "elapsed_wall_seconds": 0.015674588000365475,
+      "maxrss_kib": 134416,
+      "result_summary": {
+        "visibility_is_an_exposure_assumption_not_observed_attention": true
+      },
+      "seed_rows": 20,
+      "scientific_grade": "0/3",
+      "CT2": 7
+    },
+    {
+      "cycle": "N328",
+      "state": "PASS",
+      "receipt": "results/N328.json",
+      "sha256": "fb983ae3cbe1018467037f02931b085824147f47ed0e64f17392317d92f73def",
+      "elapsed_wall_seconds": 0.015371101000255294,
+      "maxrss_kib": 134540,
+      "result_summary": {
+        "popular_gini_greater": 20
+      },
+      "seed_rows": 20,
+      "scientific_grade": "0/3",
+      "CT2": 7
+    },
+    {
+      "cycle": "N329",
+      "state": "PASS",
+      "receipt": "results/N329.json",
+      "sha256": "b5a74f1b394eb2ca1efa2ae6fef0a8b9ef4e2c07253bd16a9ab67dbb27c850f6",
+      "elapsed_wall_seconds": 0.026420015999974567,
+      "maxrss_kib": 134416,
+      "result_summary": {
+        "mean_same_card": 6.95,
+        "mean_all_card": 8.0
+      },
+      "seed_rows": 20,
+      "scientific_grade": "0/3",
+      "CT2": 7
+    },
+    {
+      "cycle": "N330",
+      "state": "PASS",
+      "receipt": "results/N330.json",
+      "sha256": "f08692f8c28601eada84bcbf5d4ce8f441adfb0169c04363e1afeba31e6c581a",
+      "elapsed_wall_seconds": 0.06577529400010462,
+      "maxrss_kib": 134796,
+      "result_summary": {
+        "cases_with_consent_error": 19
+      },
+      "seed_rows": 20,
+      "scientific_grade": "0/3",
+      "CT2": 7
+    },
+    {
+      "cycle": "N331",
+      "state": "PASS",
+      "receipt": "results/N331.json",
+      "sha256": "25bec8155e44cc756ca812da16355c005c1adeb8d36d0294add38194bc893b71",
+      "elapsed_wall_seconds": 0.005282627000269713,
+      "maxrss_kib": 134288,
+      "result_summary": {
+        "DA_ordinal_invariance": true
+      },
+      "seed_rows": 20,
+      "scientific_grade": "0/3",
+      "CT2": 7
+    },
+    {
+      "cycle": "N332",
+      "state": "PASS",
+      "receipt": "results/N332.json",
+      "sha256": "88ae1e0ede4a01a2f4ef1ba6331bcf1ccb11350f600ec507eba2012e035ba869",
+      "elapsed_wall_seconds": 0.21420150700032536,
+      "maxrss_kib": 134412,
+      "result_summary": {
+        "binding_not_assumed_to_reach_stability": true
+      },
+      "seed_rows": 20,
+      "scientific_grade": "0/3",
+      "CT2": 7
+    },
+    {
+      "cycle": "N333",
+      "state": "PASS",
+      "receipt": "results/N333.json",
+      "sha256": "c43eace01dfa407fd10e4b42a89d24f5f1b0d7580486d6388ba4a965a4382bf3",
+      "elapsed_wall_seconds": 0.01875406399994972,
+      "maxrss_kib": 134300,
+      "result_summary": {
+        "all_da_outcomes_proposer_order_invariant": true
+      },
+      "seed_rows": 20,
+      "scientific_grade": "0/3",
+      "CT2": 7
+    },
+    {
+      "cycle": "N334",
+      "state": "PASS",
+      "receipt": "results/N334.json",
+      "sha256": "c1ea5f9a80c5fa849394ac7dbd9c3b48a53b4931c674b7de7885456448f9c7b7",
+      "elapsed_wall_seconds": 0.03468937400020877,
+      "maxrss_kib": 134412,
+      "result_summary": {
+        "stable_count_distribution": {
+          "1": 17,
+          "2": 3
+        }
+      },
+      "seed_rows": 20,
+      "scientific_grade": "0/3",
+      "CT2": 7
+    },
+    {
+      "cycle": "N335",
+      "state": "PASS",
+      "receipt": "results/N335.json",
+      "sha256": "334017bd699bee831b68470f5573b8c6b34f5fd9cb40b2d24db4bc4b115eaaf1",
+      "elapsed_wall_seconds": 0.13516914399997404,
+      "maxrss_kib": 138524,
+      "result_summary": {
+        "independent_exact_solvers_agree": true
+      },
+      "seed_rows": 20,
+      "scientific_grade": "0/3",
+      "CT2": 7
+    },
+    {
+      "cycle": "N336",
+      "state": "PASS",
+      "receipt": "results/N336.json",
+      "sha256": "1a5fd427f76a3bcca6de3dcfaa56bd64c52a5604aad32410a7d763c3c3383679",
+      "elapsed_wall_seconds": 0.06551921499976743,
+      "maxrss_kib": 134924,
+      "result_summary": {
+        "central_changes_on_cardinal_scale": 15
+      },
+      "seed_rows": 20,
+      "scientific_grade": "0/3",
+      "CT2": 7
+    }
+  ]
+}
