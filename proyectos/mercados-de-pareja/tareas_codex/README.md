@@ -1,5 +1,7 @@
 # Tareas para Codex · Mercados de pareja
 
+> **Estado 30/10/2026: N337–N356 20/20 autorizados y SIN EJECUTAR.** [Informe STOP_R5](https://github.com/GalexY3/Metodologia-AB/blob/main/proyectos/mercados-de-pareja/informes/ABH_N337_N356_20261030_STOP_R5.md). Ningún encargo de esta carpeta está activo. El investigador prohíbe Codex hasta nuevo aviso; la [tarea 08](08_FUTURA_N337_VALIDACION_Y_NEGOCIACION.md) es solo contexto histórico y el trabajo empírico está bloqueado por falta de una cohorte romántica legalmente accesible con oportunidades y dos decisiones nativas. **No solicitar nueva autorización**: quedan 20 plazas N337–N356. CT2 7/100, STOP_R5 humano.
+
 > **Vigente 30/10/2026:** AB-H N317–N336 cerrado 20/20, 0 plazas; [informe](https://github.com/GalexY3/Metodologia-AB/blob/main/proyectos/mercados-de-pareja/informes/ABH_N317_N336_20261030.md). Codex está deshabilitado: [tarea futura 08](08_FUTURA_N337_VALIDACION_Y_NEGOCIACION.md) es archivo histórico **no activo ni autorizado como ciclo**. La próxima tarea científica requiere nueva evidencia romántica de oportunidades observadas y decisiones bilaterales, no solo más simulaciones. CT2 ciencia 7/100 y STOP_R5 humano activos.
 
 **Estado 30/10/2026:** N297–N316 completados (20/20). Saldo 0. Codex deshabilitado. Tarea 06 archivada, no activa. Véase [informe vigente](../informes/ABH_N297_N316_20261030.md). STOP_R5 humano; CT2 científica 7/100.
