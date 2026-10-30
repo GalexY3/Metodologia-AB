@@ -1,0 +1,92 @@
+{
+  "schema": "ABH_N207_N216_RESULTS_INDEX",
+  "created": "2026-10-30",
+  "branch": "research/ab-h-esbm-replica-verification-n207-n216-20261030",
+  "authorized": 10,
+  "technical_executed": 10,
+  "technical_valid": 10,
+  "invalid_completed": 0,
+  "planning": 0,
+  "remaining": 0,
+  "instrumental_failed_attempts": 1,
+  "CT2_scientific": 7,
+  "human_R5": "STOP",
+  "human_new_rows": 0,
+  "run_environment": "Linux Node 22.16.0, tsc 5.8.3, preinstalled @types/node 25.1.0",
+  "windows_native_execution": false,
+  "clean_clone_verified": false,
+  "historical_60_run_replayed": false,
+  "N144_capacity_validated": false,
+  "original_ESBM_sha256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+  "prereg_commit": "e8869fe19fb35063c68ce42b824b6a98ac73ec0d",
+  "code_SHA_freeze_commit": "246e94fa705fc295668a0fcc9d473c8a49817b2e",
+  "environment_repair_prereg": "81e0ac435dbbb196883dcb9c656b6e6503fd5de8",
+  "code_source_available": "Full fixed sources and raw receipts delivered as exact sandbox ZIP in user conversation, not uploaded to GitHub. SHA-256 full changed source and tests recorded in FREEZE_1.json.",
+  "local_release_sha256": "4e463f200b164edd7403efc0a3e26cfc17dd2fdb1b1f67927505ae2555d74ac0",
+  "local_release_contains_files": 60,
+  "local_source_manifest_sha256": "a8b1612537c9237627ce5d87ad535895e3955fb99975aaaab653bb952e8dbf27",
+  "scorecard_note": "Technical QA-only, no novel sociological evidence",
+  "cycles": [
+    {
+      "id": "N207",
+      "status": "PASS_TECHNICAL_BASELINE_RECHECK",
+      "outcome": "26/26 archival source files match SHA256 manifest and manifest checksum 62bc3bd9b70bc72565acd98f9610c8534fc53299664e2a7f0acfd2c58281a49f. Does not verify local eabadd8f Git history.",
+      "receipt": "N207.json"
+    },
+    {
+      "id": "N208",
+      "status": "PASS_AFTER_INSTRUMENT_REPAIR",
+      "outcome": "First TypeScript 5.8.3 tsc strict --noEmit exit 2 missing local @types/node; prereg environment-only repair 81e0ac4; ignored node_modules symlink to preinstalled @types/node 25.1.0; second strict tsc exit 0 with exact same frozen source. Node runtime 22.16.0 Linux, not 22.18 required by package.",
+      "receipt": "N208_retry.log",
+      "failed_attempt": "N208.log"
+    },
+    {
+      "id": "N209",
+      "status": "PASS_TECHNICAL",
+      "outcome": "Top-k Gumbel tie classification below cutoff nonblocking; cutoff and inside selected set blocking; unique scores preserve ascending within-selected visit order.",
+      "receipt": "gumbel.json"
+    },
+    {
+      "id": "N210",
+      "status": "PASS_TECHNICAL",
+      "outcome": "Matching comparator ignores solver_meta absent on Python-like reference; detects pair mismatch PAIR_MISMATCH and cardinality mismatch CARDINALITY_MISMATCH.",
+      "receipt": "compare.json"
+    },
+    {
+      "id": "N211",
+      "status": "PASS_TECHNICAL",
+      "outcome": "Synthetic TRACE_SCHEMA_1 event validator checks version/sequence, missing Boolean outcome, flipped outcome; no original Python oracle trace exists yet.",
+      "receipt": "schema.json"
+    },
+    {
+      "id": "N212",
+      "status": "PASS_TECHNICAL",
+      "outcome": "Matching maxComponentNodes=3 blocks 4-node connected graph before exponential recurrence; maxComponentNodes=4 solves it. No N144 ability established.",
+      "receipt": "component.json"
+    },
+    {
+      "id": "N213",
+      "status": "PASS_TECHNICAL",
+      "outcome": "Monotonic zero-millisecond and one-byte heap budget trigger fail-stop explicitly; JS sync guards are best-effort, not OS process limits.",
+      "receipt": "wallheap.json"
+    },
+    {
+      "id": "N214",
+      "status": "PASS_TECHNICAL",
+      "outcome": "One complete toy event preserved before maxEvents=1 stop, maxBytes=5 stops before emission, with trace resource error; no actual 60-run CLI execution.",
+      "receipt": "tracebudget.json"
+    },
+    {
+      "id": "N215",
+      "status": "PASS_TOY_NOT_INDEPENDENT_PYTHON",
+      "outcome": "12/12 manual toy fixtures classified: 11 MATCHES_MANUAL_EXPECTATION and UT12 MATCH_TIE_DIAGNOSTIC; not independently compared to historic Python oracle.",
+      "receipt": "fixtures.json"
+    },
+    {
+      "id": "N216",
+      "status": "PASS_SMALL_GRAPH_PYTHON_ORACLE",
+      "outcome": "Exact TypeScript subset matching agrees with standalone Python stdlib Fraction-based exhaustive oracle on ten deterministic graphs up to n8 for cardinality, uniqueness, exact pair when unique, or optimal witness when tied. Cannot infer N144 or NetworkX binary64 near-ties.",
+      "receipt": "oracle.json"
+    }
+  ]
+}
