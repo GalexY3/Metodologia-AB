@@ -48,7 +48,7 @@ def test_duplicate_key_rejected_not_double_counted(tmp_path):
 
 def test_future_and_open_are_not_assumed_closed(tmp_path):
     x=mod.analyze(write_csv(tmp_path,[row(1,100,status="ouverte"),
-                                  row(2,100,year="2026"),row(3,100,year="2024")]))
+                                  row(2,100,year="2027"),row(3,100,year="2024")]))
     assert x["eligible"]==1 and x["counts"]["excluded_open"]==1
     assert x["counts"]["excluded_young"]==1
 
@@ -61,7 +61,7 @@ def test_unknown_votes_not_zero(tmp_path):
 
 def test_require_schema_and_reject_missing_columns(tmp_path):
     f=tmp_path/"bad.csv"
-    f.write_text("date;nb_votes\n2024-02-03;100\n")
+    f.write_text("date;nb_votes;example\n2024-02-03;100;long nonpersonal fixture without mandatory fields\n")
     with pytest.raises(ValueError,match="REQUIRED_FIELDS_MISSING"):
         mod.analyze(f)
 
