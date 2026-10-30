@@ -1,0 +1,265 @@
+{
+  "schema": "ABH.BLOCK_D.v1",
+  "date": "2026-10-30",
+  "authorization": 20,
+  "completed": 15,
+  "remaining": 5,
+  "branch": "research/ab-h-esbm-adversarial-benchmark-20261030",
+  "source_catalog_count_prior": 107,
+  "distinct_document_count": "UNKNOWN_BEFORE_FULL_CANONICAL_AUDIT",
+  "original_SHA": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+  "human_R5": "STOP",
+  "CT2": 7,
+  "contracts": [
+    {
+      "id": "N182",
+      "parent": "N181",
+      "mode": "SOURCE_AUDIT",
+      "D": {
+        "protocol": "Fixed rubric + offline receipts source SHA, script and tester SHA must be GitHub frozen before outcomes",
+        "inputs": "all source metadata plus three receipts A/B/C; no user raw data accessed"
+      },
+      "A": {
+        "question": "Normalize DOI identifiers over all 107 SOURCES and list duplicate records without deleting historical IDs",
+        "estimand": "independent code/source validity and reproducible decision artifact, not new human outcomes"
+      },
+      "B": {
+        "rivals": [
+          "duplicated bibliographic record as new source",
+          "Columbia derivative dataset as independent cohort",
+          "proxy B6 as fully flexible history baseline",
+          "simulated conditional reply as human ballot",
+          "unverified demo metrics"
+        ],
+        "null": "Existing evidence cannot support external model superiority"
+      },
+      "C": {
+        "falsifier": "Compute DOI from canonical_url, doi substring in title when no DOI; report duplicate pairs, no claims about cohort independence from URL alone",
+        "rule": "Any unverified live rights/actor IDs -> no R5; reproducibility mismatch invalid, adverse baseline gaps reported"
+      },
+      "E": {
+        "status": "PENDING"
+      },
+      "F": {
+        "adversarial": "Explicitly withdraw inflated source novelty and baseline identity wherever unsupported"
+      },
+      "G": {
+        "external": "not human",
+        "OS": "same installed machine"
+      },
+      "H": {
+        "status": "NO_CHANGE human priors",
+        "UPDATE": "append-only"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after_expected": 7,
+        "grade": "0/3"
+      },
+      "J": {
+        "if_pass": "N183",
+        "if_fail": "record adverse, bounded prereg repair, do not count planned work"
+      }
+    },
+    {
+      "id": "N183",
+      "parent": "N182",
+      "mode": "BASELINE_VALIDITY",
+      "D": {
+        "protocol": "Fixed rubric + offline receipts source SHA, script and tester SHA must be GitHub frozen before outcomes",
+        "inputs": "all source metadata plus three receipts A/B/C; no user raw data accessed"
+      },
+      "A": {
+        "question": "Compare actual operational B0/B1/B2/B4/B6/SRM design to historical protocol definitions and issue claim downgrade",
+        "estimand": "independent code/source validity and reproducible decision artifact, not new human outcomes"
+      },
+      "B": {
+        "rivals": [
+          "duplicated bibliographic record as new source",
+          "Columbia derivative dataset as independent cohort",
+          "proxy B6 as fully flexible history baseline",
+          "simulated conditional reply as human ballot",
+          "unverified demo metrics"
+        ],
+        "null": "Existing evidence cannot support external model superiority"
+      },
+      "C": {
+        "falsifier": "Rubric equal feature budgets/historical actor-target effects/feedback/ranking/bilateral outcomes; mark each model exact/proxy/incomplete and forbid claiming complete historical competition",
+        "rule": "Any unverified live rights/actor IDs -> no R5; reproducibility mismatch invalid, adverse baseline gaps reported"
+      },
+      "E": {
+        "status": "PENDING"
+      },
+      "F": {
+        "adversarial": "Explicitly withdraw inflated source novelty and baseline identity wherever unsupported"
+      },
+      "G": {
+        "external": "not human",
+        "OS": "same installed machine"
+      },
+      "H": {
+        "status": "NO_CHANGE human priors",
+        "UPDATE": "append-only"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after_expected": 7,
+        "grade": "0/3"
+      },
+      "J": {
+        "if_pass": "N184",
+        "if_fail": "record adverse, bounded prereg repair, do not count planned work"
+      }
+    },
+    {
+      "id": "N184",
+      "parent": "N183",
+      "mode": "LEGAL_GATE",
+      "D": {
+        "protocol": "Fixed rubric + offline receipts source SHA, script and tester SHA must be GitHub frozen before outcomes",
+        "inputs": "all source metadata plus three receipts A/B/C; no user raw data accessed"
+      },
+      "A": {
+        "question": "Assess Harvard Dataverse replication record DOI 10.7910/DVN/27893 for cohort independence and rights using publication source and metadata; do not fetch restricted human rows",
+        "estimand": "independent code/source validity and reproducible decision artifact, not new human outcomes"
+      },
+      "B": {
+        "rivals": [
+          "duplicated bibliographic record as new source",
+          "Columbia derivative dataset as independent cohort",
+          "proxy B6 as fully flexible history baseline",
+          "simulated conditional reply as human ballot",
+          "unverified demo metrics"
+        ],
+        "null": "Existing evidence cannot support external model superiority"
+      },
+      "C": {
+        "falsifier": "Record catalog-level CC0 assertion vs file rights unverified, author paper same Fisman 2002–2004 Columbia cohort; STOP_R5 no new humans",
+        "rule": "Any unverified live rights/actor IDs -> no R5; reproducibility mismatch invalid, adverse baseline gaps reported"
+      },
+      "E": {
+        "status": "PENDING"
+      },
+      "F": {
+        "adversarial": "Explicitly withdraw inflated source novelty and baseline identity wherever unsupported"
+      },
+      "G": {
+        "external": "not human",
+        "OS": "same installed machine"
+      },
+      "H": {
+        "status": "NO_CHANGE human priors",
+        "UPDATE": "append-only"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after_expected": 7,
+        "grade": "0/3"
+      },
+      "J": {
+        "if_pass": "N185",
+        "if_fail": "record adverse, bounded prereg repair, do not count planned work"
+      }
+    },
+    {
+      "id": "N185",
+      "parent": "N184",
+      "mode": "PRODUCT_REPORT",
+      "D": {
+        "protocol": "Fixed rubric + offline receipts source SHA, script and tester SHA must be GitHub frozen before outcomes",
+        "inputs": "all source metadata plus three receipts A/B/C; no user raw data accessed"
+      },
+      "A": {
+        "question": "Create standalone offline evidence dashboard from immutable A–C receipts with stage/rival/dropdown",
+        "estimand": "independent code/source validity and reproducible decision artifact, not new human outcomes"
+      },
+      "B": {
+        "rivals": [
+          "duplicated bibliographic record as new source",
+          "Columbia derivative dataset as independent cohort",
+          "proxy B6 as fully flexible history baseline",
+          "simulated conditional reply as human ballot",
+          "unverified demo metrics"
+        ],
+        "null": "Existing evidence cannot support external model superiority"
+      },
+      "C": {
+        "falsifier": "Data sources actual result JSON, not invented; one per-task selector, table of logloss and bootstrap intervals, annotate oracle and proxy limitations; run HTML static & browser checks if available",
+        "rule": "Any unverified live rights/actor IDs -> no R5; reproducibility mismatch invalid, adverse baseline gaps reported"
+      },
+      "E": {
+        "status": "PENDING"
+      },
+      "F": {
+        "adversarial": "Explicitly withdraw inflated source novelty and baseline identity wherever unsupported"
+      },
+      "G": {
+        "external": "not human",
+        "OS": "same installed machine"
+      },
+      "H": {
+        "status": "NO_CHANGE human priors",
+        "UPDATE": "append-only"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after_expected": 7,
+        "grade": "0/3"
+      },
+      "J": {
+        "if_pass": "N186",
+        "if_fail": "record adverse, bounded prereg repair, do not count planned work"
+      }
+    },
+    {
+      "id": "N186",
+      "parent": "N185",
+      "mode": "REPLICATION",
+      "D": {
+        "protocol": "Fixed rubric + offline receipts source SHA, script and tester SHA must be GitHub frozen before outcomes",
+        "inputs": "all source metadata plus three receipts A/B/C; no user raw data accessed"
+      },
+      "A": {
+        "question": "Recompute selected benchmark losses with a separately authored pure stdlib floating-point scorer in isolated Python process and freeze complete local bundle",
+        "estimand": "independent code/source validity and reproducible decision artifact, not new human outcomes"
+      },
+      "B": {
+        "rivals": [
+          "duplicated bibliographic record as new source",
+          "Columbia derivative dataset as independent cohort",
+          "proxy B6 as fully flexible history baseline",
+          "simulated conditional reply as human ballot",
+          "unverified demo metrics"
+        ],
+        "null": "Existing evidence cannot support external model superiority"
+      },
+      "C": {
+        "falsifier": "40 independent seeds score recomputation, SHA manifest includes model source and receipt, no independent OS or machine claim, exact original SHA unchanged",
+        "rule": "Any unverified live rights/actor IDs -> no R5; reproducibility mismatch invalid, adverse baseline gaps reported"
+      },
+      "E": {
+        "status": "PENDING"
+      },
+      "F": {
+        "adversarial": "Explicitly withdraw inflated source novelty and baseline identity wherever unsupported"
+      },
+      "G": {
+        "external": "not human",
+        "OS": "same installed machine"
+      },
+      "H": {
+        "status": "NO_CHANGE human priors",
+        "UPDATE": "append-only"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after_expected": 7,
+        "grade": "0/3"
+      },
+      "J": {
+        "if_pass": "close 20-cycle campaign",
+        "if_fail": "record adverse, bounded prereg repair, do not count planned work"
+      }
+    }
+  ]
+}
