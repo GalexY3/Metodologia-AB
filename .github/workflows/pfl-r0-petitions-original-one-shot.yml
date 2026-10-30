@@ -24,7 +24,7 @@ jobs:
           set -euo pipefail
           cd proyectos/politics-fantasy-league
           test "$(git hash-object research/R0_INSTITUTIONAL_PETITIONS_20261030/petition_documentation_audit.py)" = 42383b26989674d445acd144defce8c62b62657d
-          test "$(git hash-object tests/test_petition_documentation_audit.py)" = 6ce385bde631ff305cf05d7f5b99a0d6334dafb2
+          test "$(git hash-object tests/test_petition_documentation_audit.py)" = dc475c4c85328ec9229c6ec9584c90e3fc876a53
           python -m pip show pytest >/dev/null 2>&1 || python -m pip install -q pytest
           PYTHONPATH=src python -m pytest -q tests/test_petition_documentation_audit.py
           curl --fail --silent --show-error --location --max-time 60 --retry 0 \
