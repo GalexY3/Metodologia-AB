@@ -1,0 +1,516 @@
+{
+  "schema": "ABH_N207_N216_PREEXEC_AJ_V1",
+  "date": "2026-10-30",
+  "authorized": 10,
+  "consumed_before": 0,
+  "branch": "research/ab-h-esbm-replica-verification-n207-n216-20261030",
+  "parent_sha": "c9138563969c147d55c8f401c588320b3d84ae46",
+  "environment_intent": "Linux tool container Node v22.16.0, tsc locally available; not Windows",
+  "src_from_user": "eabadd8f local git archive ZIP supplied, no .git; cannot prove matching unpublished commit",
+  "R5": "STOP_HUMAN",
+  "CT2": 7,
+  "original_ESBM_SHA": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+  "stop": "R5 synthetic limits; no human data; no full 60-run, N144 matching performance not established",
+  "contracts": [
+    {
+      "cycle": "N207",
+      "parent": "N206",
+      "mode": "INTEGRITY_BASELINE",
+      "drift_D": 1.2,
+      "A": {
+        "question": "Reinspect archival ZIP source and independently recompute SHA256 for original TypeScript and original ESBM without executing a model",
+        "estimand": "software validity/portability of independent ESBM replica, not human dating market"
+      },
+      "B": {
+        "rivals": [
+          "unmodified eabadd8f baseline",
+          "patched code with frozen SHA",
+          "exact integer-weight vs original binary64 NetworkX caveat"
+        ],
+        "null": "No difference in semantics or resource STOP from baseline; source-derived fixtures may fail"
+      },
+      "C": {
+        "endpoint": "26/26 manifest files and manifest SHA match; archive exactly identified as local eabadd8f export, no claim Git origin certified",
+        "pass": "Observed after freeze only; negative outcomes retained",
+        "fail": "Any mismatch invalidates that claimed property; capture first failure"
+      },
+      "D": {
+        "test_script_sha": "freeze test source on GitHub before execution",
+        "replica_sha": "freeze patched code+files before execution",
+        "limits": "No original 60-run or human evidence",
+        "seeds": "fixed in executable script prior to outcomes"
+      },
+      "E": "NOT_EXECUTED",
+      "F": {
+        "adversarial": "Tie negative controls; exact enumeration; no fixture laundering; errors preserved",
+        "original_data": "None"
+      },
+      "G": {
+        "replication": "same available Linux container; Windows pending; no scientific external data"
+      },
+      "H": {
+        "priors": "No change to human hypotheses; update QA technical only if objectively validated"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "scientific_grade": "0/3",
+        "maturity": "do not change merely for cycles"
+      },
+      "J": {
+        "decision_on_fail": "Preserve INVALID/STOP/REPAIR without extra cycle; do not burn credits",
+        "remaining_after_planned": 9
+      }
+    },
+    {
+      "cycle": "N208",
+      "parent": "N207",
+      "mode": "STATIC_TYPES",
+      "drift_D": 0.4,
+      "A": {
+        "question": "After prospective patch SHA freeze, run TypeScript strict noEmit type check using installed compiler without downloading deps",
+        "estimand": "software validity/portability of independent ESBM replica, not human dating market"
+      },
+      "B": {
+        "rivals": [
+          "unmodified eabadd8f baseline",
+          "patched code with frozen SHA",
+          "exact integer-weight vs original binary64 NetworkX caveat"
+        ],
+        "null": "No difference in semantics or resource STOP from baseline; source-derived fixtures may fail"
+      },
+      "C": {
+        "endpoint": "No unhandled TS errors; any missing Node types reported as environment blocker not code success",
+        "pass": "Observed after freeze only; negative outcomes retained",
+        "fail": "Any mismatch invalidates that claimed property; capture first failure"
+      },
+      "D": {
+        "test_script_sha": "freeze test source on GitHub before execution",
+        "replica_sha": "freeze patched code+files before execution",
+        "limits": "No original 60-run or human evidence",
+        "seeds": "fixed in executable script prior to outcomes"
+      },
+      "E": "NOT_EXECUTED",
+      "F": {
+        "adversarial": "Tie negative controls; exact enumeration; no fixture laundering; errors preserved",
+        "original_data": "None"
+      },
+      "G": {
+        "replication": "same available Linux container; Windows pending; no scientific external data"
+      },
+      "H": {
+        "priors": "No change to human hypotheses; update QA technical only if objectively validated"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "scientific_grade": "0/3",
+        "maturity": "do not change merely for cycles"
+      },
+      "J": {
+        "decision_on_fail": "Preserve INVALID/STOP/REPAIR without extra cycle; do not burn credits",
+        "remaining_after_planned": 8
+      }
+    },
+    {
+      "cycle": "N209",
+      "parent": "N208",
+      "mode": "GUMBEL_DISCRIMINANT",
+      "drift_D": 0.4,
+      "A": {
+        "question": "Test three tie classes with explicit below-cutoff, tie-at-boundary and within-picks cases",
+        "estimand": "software validity/portability of independent ESBM replica, not human dating market"
+      },
+      "B": {
+        "rivals": [
+          "unmodified eabadd8f baseline",
+          "patched code with frozen SHA",
+          "exact integer-weight vs original binary64 NetworkX caveat"
+        ],
+        "null": "No difference in semantics or resource STOP from baseline; source-derived fixtures may fail"
+      },
+      "C": {
+        "endpoint": "Only harmless below-cutoff continues; two consequential ties stop; unique-score visit order identical",
+        "pass": "Observed after freeze only; negative outcomes retained",
+        "fail": "Any mismatch invalidates that claimed property; capture first failure"
+      },
+      "D": {
+        "test_script_sha": "freeze test source on GitHub before execution",
+        "replica_sha": "freeze patched code+files before execution",
+        "limits": "No original 60-run or human evidence",
+        "seeds": "fixed in executable script prior to outcomes"
+      },
+      "E": "NOT_EXECUTED",
+      "F": {
+        "adversarial": "Tie negative controls; exact enumeration; no fixture laundering; errors preserved",
+        "original_data": "None"
+      },
+      "G": {
+        "replication": "same available Linux container; Windows pending; no scientific external data"
+      },
+      "H": {
+        "priors": "No change to human hypotheses; update QA technical only if objectively validated"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "scientific_grade": "0/3",
+        "maturity": "do not change merely for cycles"
+      },
+      "J": {
+        "decision_on_fail": "Preserve INVALID/STOP/REPAIR without extra cycle; do not burn credits",
+        "remaining_after_planned": 7
+      }
+    },
+    {
+      "cycle": "N210",
+      "parent": "N209",
+      "mode": "MATCH_META_PARITY",
+      "drift_D": 0.4,
+      "A": {
+        "question": "Event comparator must ignore private solver metadata yet refuse cardinality/pair differences and classify float near-ties",
+        "estimand": "software validity/portability of independent ESBM replica, not human dating market"
+      },
+      "B": {
+        "rivals": [
+          "unmodified eabadd8f baseline",
+          "patched code with frozen SHA",
+          "exact integer-weight vs original binary64 NetworkX caveat"
+        ],
+        "null": "No difference in semantics or resource STOP from baseline; source-derived fixtures may fail"
+      },
+      "C": {
+        "endpoint": "Missing unique/exact_weight_units on Python side not mismatch; changed pair/cardinality is mismatch; ambiguous status explicit",
+        "pass": "Observed after freeze only; negative outcomes retained",
+        "fail": "Any mismatch invalidates that claimed property; capture first failure"
+      },
+      "D": {
+        "test_script_sha": "freeze test source on GitHub before execution",
+        "replica_sha": "freeze patched code+files before execution",
+        "limits": "No original 60-run or human evidence",
+        "seeds": "fixed in executable script prior to outcomes"
+      },
+      "E": "NOT_EXECUTED",
+      "F": {
+        "adversarial": "Tie negative controls; exact enumeration; no fixture laundering; errors preserved",
+        "original_data": "None"
+      },
+      "G": {
+        "replication": "same available Linux container; Windows pending; no scientific external data"
+      },
+      "H": {
+        "priors": "No change to human hypotheses; update QA technical only if objectively validated"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "scientific_grade": "0/3",
+        "maturity": "do not change merely for cycles"
+      },
+      "J": {
+        "decision_on_fail": "Preserve INVALID/STOP/REPAIR without extra cycle; do not burn credits",
+        "remaining_after_planned": 6
+      }
+    },
+    {
+      "cycle": "N211",
+      "parent": "N210",
+      "mode": "TRACE_CONTRACT",
+      "drift_D": 0.4,
+      "A": {
+        "question": "Compare two synthetic schema-compliant trace events with ordered stage/seq and injected negative/positive decisions",
+        "estimand": "software validity/portability of independent ESBM replica, not human dating market"
+      },
+      "B": {
+        "rivals": [
+          "unmodified eabadd8f baseline",
+          "patched code with frozen SHA",
+          "exact integer-weight vs original binary64 NetworkX caveat"
+        ],
+        "null": "No difference in semantics or resource STOP from baseline; source-derived fixtures may fail"
+      },
+      "C": {
+        "endpoint": "Schema validator rejects altered seq, stage, sender or missing decisions; event comparison never claims original Python trace valid",
+        "pass": "Observed after freeze only; negative outcomes retained",
+        "fail": "Any mismatch invalidates that claimed property; capture first failure"
+      },
+      "D": {
+        "test_script_sha": "freeze test source on GitHub before execution",
+        "replica_sha": "freeze patched code+files before execution",
+        "limits": "No original 60-run or human evidence",
+        "seeds": "fixed in executable script prior to outcomes"
+      },
+      "E": "NOT_EXECUTED",
+      "F": {
+        "adversarial": "Tie negative controls; exact enumeration; no fixture laundering; errors preserved",
+        "original_data": "None"
+      },
+      "G": {
+        "replication": "same available Linux container; Windows pending; no scientific external data"
+      },
+      "H": {
+        "priors": "No change to human hypotheses; update QA technical only if objectively validated"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "scientific_grade": "0/3",
+        "maturity": "do not change merely for cycles"
+      },
+      "J": {
+        "decision_on_fail": "Preserve INVALID/STOP/REPAIR without extra cycle; do not burn credits",
+        "remaining_after_planned": 5
+      }
+    },
+    {
+      "cycle": "N212",
+      "parent": "N211",
+      "mode": "RESOURCE_COMPONENT",
+      "drift_D": 0.4,
+      "A": {
+        "question": "Check that independently configured component node limit stops before exponential matching",
+        "estimand": "software validity/portability of independent ESBM replica, not human dating market"
+      },
+      "B": {
+        "rivals": [
+          "unmodified eabadd8f baseline",
+          "patched code with frozen SHA",
+          "exact integer-weight vs original binary64 NetworkX caveat"
+        ],
+        "null": "No difference in semantics or resource STOP from baseline; source-derived fixtures may fail"
+      },
+      "C": {
+        "endpoint": "cap=3 stops graph of 4; cap=4 small acyclic graph still solves; no greedy substitute",
+        "pass": "Observed after freeze only; negative outcomes retained",
+        "fail": "Any mismatch invalidates that claimed property; capture first failure"
+      },
+      "D": {
+        "test_script_sha": "freeze test source on GitHub before execution",
+        "replica_sha": "freeze patched code+files before execution",
+        "limits": "No original 60-run or human evidence",
+        "seeds": "fixed in executable script prior to outcomes"
+      },
+      "E": "NOT_EXECUTED",
+      "F": {
+        "adversarial": "Tie negative controls; exact enumeration; no fixture laundering; errors preserved",
+        "original_data": "None"
+      },
+      "G": {
+        "replication": "same available Linux container; Windows pending; no scientific external data"
+      },
+      "H": {
+        "priors": "No change to human hypotheses; update QA technical only if objectively validated"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "scientific_grade": "0/3",
+        "maturity": "do not change merely for cycles"
+      },
+      "J": {
+        "decision_on_fail": "Preserve INVALID/STOP/REPAIR without extra cycle; do not burn credits",
+        "remaining_after_planned": 4
+      }
+    },
+    {
+      "cycle": "N213",
+      "parent": "N212",
+      "mode": "RESOURCE_WALL_HEAP",
+      "drift_D": 0.4,
+      "A": {
+        "question": "Check zero/tiny matching time and heap budgets safely stop with diagnostic, no false PASS",
+        "estimand": "software validity/portability of independent ESBM replica, not human dating market"
+      },
+      "B": {
+        "rivals": [
+          "unmodified eabadd8f baseline",
+          "patched code with frozen SHA",
+          "exact integer-weight vs original binary64 NetworkX caveat"
+        ],
+        "null": "No difference in semantics or resource STOP from baseline; source-derived fixtures may fail"
+      },
+      "C": {
+        "endpoint": "monotonic time and process heap checked; no hard OS isolation claimed; failures preserve details",
+        "pass": "Observed after freeze only; negative outcomes retained",
+        "fail": "Any mismatch invalidates that claimed property; capture first failure"
+      },
+      "D": {
+        "test_script_sha": "freeze test source on GitHub before execution",
+        "replica_sha": "freeze patched code+files before execution",
+        "limits": "No original 60-run or human evidence",
+        "seeds": "fixed in executable script prior to outcomes"
+      },
+      "E": "NOT_EXECUTED",
+      "F": {
+        "adversarial": "Tie negative controls; exact enumeration; no fixture laundering; errors preserved",
+        "original_data": "None"
+      },
+      "G": {
+        "replication": "same available Linux container; Windows pending; no scientific external data"
+      },
+      "H": {
+        "priors": "No change to human hypotheses; update QA technical only if objectively validated"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "scientific_grade": "0/3",
+        "maturity": "do not change merely for cycles"
+      },
+      "J": {
+        "decision_on_fail": "Preserve INVALID/STOP/REPAIR without extra cycle; do not burn credits",
+        "remaining_after_planned": 3
+      }
+    },
+    {
+      "cycle": "N214",
+      "parent": "N213",
+      "mode": "TRACE_RESOURCE",
+      "drift_D": 0.4,
+      "A": {
+        "question": "Check trace event/bytes budgets stop before unbounded snapshot collection and retain last completed event",
+        "estimand": "software validity/portability of independent ESBM replica, not human dating market"
+      },
+      "B": {
+        "rivals": [
+          "unmodified eabadd8f baseline",
+          "patched code with frozen SHA",
+          "exact integer-weight vs original binary64 NetworkX caveat"
+        ],
+        "null": "No difference in semantics or resource STOP from baseline; source-derived fixtures may fail"
+      },
+      "C": {
+        "endpoint": "A short synthetic emit stream under bounded sink, forced overflow yields PARTIAL_STOP; no 60 historical runs",
+        "pass": "Observed after freeze only; negative outcomes retained",
+        "fail": "Any mismatch invalidates that claimed property; capture first failure"
+      },
+      "D": {
+        "test_script_sha": "freeze test source on GitHub before execution",
+        "replica_sha": "freeze patched code+files before execution",
+        "limits": "No original 60-run or human evidence",
+        "seeds": "fixed in executable script prior to outcomes"
+      },
+      "E": "NOT_EXECUTED",
+      "F": {
+        "adversarial": "Tie negative controls; exact enumeration; no fixture laundering; errors preserved",
+        "original_data": "None"
+      },
+      "G": {
+        "replication": "same available Linux container; Windows pending; no scientific external data"
+      },
+      "H": {
+        "priors": "No change to human hypotheses; update QA technical only if objectively validated"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "scientific_grade": "0/3",
+        "maturity": "do not change merely for cycles"
+      },
+      "J": {
+        "decision_on_fail": "Preserve INVALID/STOP/REPAIR without extra cycle; do not burn credits",
+        "remaining_after_planned": 2
+      }
+    },
+    {
+      "cycle": "N215",
+      "parent": "N214",
+      "mode": "MANUAL_FIXTURE_EVAL",
+      "drift_D": 0.4,
+      "A": {
+        "question": "Run 12 frozen human-authored tiny fixture inputs against newly frozen replica; all failures and repairs preserved",
+        "estimand": "software validity/portability of independent ESBM replica, not human dating market"
+      },
+      "B": {
+        "rivals": [
+          "unmodified eabadd8f baseline",
+          "patched code with frozen SHA",
+          "exact integer-weight vs original binary64 NetworkX caveat"
+        ],
+        "null": "No difference in semantics or resource STOP from baseline; source-derived fixtures may fail"
+      },
+      "C": {
+        "endpoint": "12/12 or honest SPEC_OR_FIXTURE_ERR; source-derived expectations not independent original Python oracle",
+        "pass": "Observed after freeze only; negative outcomes retained",
+        "fail": "Any mismatch invalidates that claimed property; capture first failure"
+      },
+      "D": {
+        "test_script_sha": "freeze test source on GitHub before execution",
+        "replica_sha": "freeze patched code+files before execution",
+        "limits": "No original 60-run or human evidence",
+        "seeds": "fixed in executable script prior to outcomes"
+      },
+      "E": "NOT_EXECUTED",
+      "F": {
+        "adversarial": "Tie negative controls; exact enumeration; no fixture laundering; errors preserved",
+        "original_data": "None"
+      },
+      "G": {
+        "replication": "same available Linux container; Windows pending; no scientific external data"
+      },
+      "H": {
+        "priors": "No change to human hypotheses; update QA technical only if objectively validated"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "scientific_grade": "0/3",
+        "maturity": "do not change merely for cycles"
+      },
+      "J": {
+        "decision_on_fail": "Preserve INVALID/STOP/REPAIR without extra cycle; do not burn credits",
+        "remaining_after_planned": 1
+      }
+    },
+    {
+      "cycle": "N216",
+      "parent": "N215",
+      "mode": "INDEPENDENT_GRAPH_ORACLE",
+      "drift_D": 0.4,
+      "A": {
+        "question": "Adversarial matching small sparse and dense graph enumeration via independently written exhaustive Python oracle vs TS matching",
+        "estimand": "software validity/portability of independent ESBM replica, not human dating market"
+      },
+      "B": {
+        "rivals": [
+          "unmodified eabadd8f baseline",
+          "patched code with frozen SHA",
+          "exact integer-weight vs original binary64 NetworkX caveat"
+        ],
+        "null": "No difference in semantics or resource STOP from baseline; source-derived fixtures may fail"
+      },
+      "C": {
+        "endpoint": "Fixed small graphs n<=8 with unique optima and degeneracies; exact objective cardinality then integer-weight, no N144 capacity claim",
+        "pass": "Observed after freeze only; negative outcomes retained",
+        "fail": "Any mismatch invalidates that claimed property; capture first failure"
+      },
+      "D": {
+        "test_script_sha": "freeze test source on GitHub before execution",
+        "replica_sha": "freeze patched code+files before execution",
+        "limits": "No original 60-run or human evidence",
+        "seeds": "fixed in executable script prior to outcomes"
+      },
+      "E": "NOT_EXECUTED",
+      "F": {
+        "adversarial": "Tie negative controls; exact enumeration; no fixture laundering; errors preserved",
+        "original_data": "None"
+      },
+      "G": {
+        "replication": "same available Linux container; Windows pending; no scientific external data"
+      },
+      "H": {
+        "priors": "No change to human hypotheses; update QA technical only if objectively validated"
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "scientific_grade": "0/3",
+        "maturity": "do not change merely for cycles"
+      },
+      "J": {
+        "decision_on_fail": "Preserve INVALID/STOP/REPAIR without extra cycle; do not burn credits",
+        "remaining_after_planned": 0
+      }
+    }
+  ]
+}
