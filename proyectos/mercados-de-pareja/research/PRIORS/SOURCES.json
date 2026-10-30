@@ -3,7 +3,7 @@
   "project": "mercados-de-pareja",
   "date": "2026-10-30",
   "scope": "Retrospective provenance backfill from repository reports plus N56/N57 publisher audit. Original data never copied; not systematic or claim of accessing raw data for bibliography.",
-  "source_count": 111,
+  "source_count": 113,
   "sources": [
     {
       "id": "SRC001",
@@ -2440,9 +2440,46 @@
       "data_rows_read": 0,
       "disclaimer": "DO NOT COUNT as new human cohort; no scientific causal validity claim",
       "status": "TECHNICAL_SOFTWARE_PRIMARY_DOC_ONLY"
+    },
+    {
+      "id": "SRC112",
+      "title": "Lock5Data (2026 documentation), SpeedDating: 276 Columbia first-encounter records with DecisionM and DecisionF",
+      "canonical_url": "https://rdrr.io/cran/Lock5Data/man/SpeedDating.html",
+      "source_type": "SECONDARY_REPACKAGING_HUMAN_BILATERAL_DECISIONS__NOT_NEW_INDEPENDENT_COHORT",
+      "date_discovered": "2026-10-30",
+      "evidence": "Lock5Data documentation specifies 276 observations, native sex-specific first-date decisions DecisionM and DecisionF, students recruited at Columbia, only first date in each session recorded, citing Gelman & Hill (2007).",
+      "independence": "NOT independently recruited from Columbia speed-dating events; evidence overlaps already audited Columbia origin. Do not count as additional human source cohort.",
+      "limitations": "No full opportunity schedules or sequence reconstructed; participant/day identifiers and official source relation not audited at raw-byte level; documentation only.",
+      "raw_rows_read": 0,
+      "license_accepted": false,
+      "original_source_evidence": false,
+      "status": "DOCUMENTARY_SCREENED_DUPLICATE__R5_HUMAN_STOP",
+      "prior_ids": [
+        "P-DYADIC_ACCESS",
+        "P-SOURCE-DEDUP"
+      ]
+    },
+    {
+      "id": "SRC113",
+      "title": "Klimov, Kuskova, Leshchikova & Zaytsev (2026), Fledge.Love two-sided receptivity to AI dating agents survey and reproducibility bundle",
+      "canonical_url": "https://doi.org/10.5281/zenodo.21971273",
+      "primary_preprint": "https://arxiv.org/abs/2608.19545",
+      "source_type": "INDEPENDENT_HUMAN_ONLINE_DATING_USER_ATTITUDE_SURVEY__NO_NATIVE_DYADIC_CHOICE",
+      "date_discovered": "2026-10-30",
+      "evidence": "Author preprint and NIH/NLM catalog describe two unlinked opt-in survey samples N=2617 and N=2894, including attitudes toward deploying AI agent vs encountering other's AI; includes processing pipeline, bilingual codebook and partially computed scores. Repository catalog reports CC BY 4.0.",
+      "independence": "Independent platform Fledge.Love survey cohorts described by authors, but overlap and sampling independence from existing respondent databases NOT externally verified. Never equate within-respondent two perspectives with bilateral native observed choices.",
+      "limitations": "Not opportunity matrices, person-to-person votes, exposed candidate sets, stable dyad IDs or relationship formation/dissolution; raw files not downloaded or inspected. Rights terms not accepted; reported CC BY 4.0 metadata is not standalone reuser attestation.",
+      "raw_rows_read": 0,
+      "license_accepted": false,
+      "original_source_evidence": false,
+      "status": "DOCUMENTARY_NON_DISCRIMINATING_FOR_ESBM_R5",
+      "prior_ids": [
+        "P-DYADIC_ACCESS",
+        "P-SOURCE-DEDUP"
+      ]
     }
   ],
-  "last_added_campaign": "ABH_N237_N256_BOOST_BLOSSOM_PIVOT",
+  "last_added_campaign": "ABH_N277_N296_20261030",
   "canonical_duplicate_DOI_audit": {
     "date": "2026-10-30",
     "source_records_before": 107,
