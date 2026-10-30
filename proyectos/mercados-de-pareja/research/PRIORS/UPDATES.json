@@ -4,7 +4,7 @@
   "date": "2026-10-28",
   "mode": "append-only logical, versioned by Git commits",
   "reconstructed_from_documents": "Retrospective backfill, not preregistration. Old before values NOT_RECORDED unless documented explicitly.",
-  "source_coverage": "110 SOURCES, 34 PRIORS, 195 append-only UPDATES. N217–N236 technical 20 executed, no human microdata or human validation.",
+  "source_coverage": "111 SOURCE metadata, 34 PRIORS, 196 append-only UPDATES; N237–256 20 genuinely executed technical audits; 0 new human data/grade.",
   "events": [
     {
       "id": "U001",
@@ -5527,7 +5527,52 @@
       "CT2": 7,
       "R5_human": "STOP",
       "technical_cycles": 20
+    },
+    {
+      "id": "U196",
+      "prior_id": "P-TRAJECTORY-INVARIANCE",
+      "source_ids": [
+        "SRC111"
+      ],
+      "cycle_ids": [
+        "N237",
+        "N238",
+        "N239",
+        "N240",
+        "N241",
+        "N242",
+        "N243",
+        "N244",
+        "N245",
+        "N246",
+        "N247",
+        "N248",
+        "N249",
+        "N250",
+        "N251",
+        "N252",
+        "N253",
+        "N254",
+        "N255",
+        "N256"
+      ],
+      "before": "SYNTHETIC_COUNTEREXAMPLE_REPAIRED_OPT_IN_NOT_HUMAN",
+      "after": "SYNTHETIC_COUNTEREXAMPLE_REPAIRED_OPT_IN_NOT_HUMAN",
+      "direction": "NO_CHANGE_WITH_REASON",
+      "recorded_at": "2026-10-30",
+      "evidence_type": "GITHUB_PRE_FROZEN_SYNTHETIC_SOFTWARE_BACKEND_CROSS_LANGUAGE_FULL_HISTORICAL_N144_COMPARISON",
+      "what_the_test_contributes": "60/60 original Python ESBM simulations N144, T16, K7 aggregate JSON and per-tick track match independent TypeScript engine with native C++ Boost weighted Blossom and same five synthetic shock tensors. 8 matching controls PASS; N242 Boost crash and N246 timeout are explicit failures. Official Boost documentation supports C++ library and theoretical O(V^3), not this backend complete reliability.",
+      "why_this_does_not_change_human_prior": "Exact synthetic aggregate reproduction is a software engineering milestone, not independent real-person opportunity/vote validation; no new human outcomes, no differential fit against SRM/B6*, no new observation of causal mechanism.",
+      "falsifiers_and_limits": "N242 exit -11 on 143-node odd sparse graph; N246 12s timeout on near-complete 144-node graph; no 60/60 individual event trace equality or unique-optimum certificate; C++ backend outside pure TS, native Windows backend untested. Only 60 aggregate and per-period series agree.",
+      "no_numerical_likelihood": true,
+      "AB_H_technical_cycles": 20,
+      "AB_H_pass": 18,
+      "AB_H_negative_diagnostics": 2,
+      "AB_H_invalid_completed": 0,
+      "human_grade": "0/3",
+      "CT2_ordinal": 7,
+      "R5_human": "STOP"
     }
   ],
-  "last_campaign": "ABH_N217_N236_ESBM_CROSS_LANGUAGE_LIMITS_20261030"
+  "last_campaign": "ABH_N237_N256_POLYNOMIAL_BLOSSOM_N144_60_RUNS_20261030"
 }
