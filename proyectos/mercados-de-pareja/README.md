@@ -1,18 +1,28 @@
-# Mercados de pareja · acceso estable
+# Mercados de pareja · estado verificable
 
-**Estado 30/10/2026.** Esta entrada en `main` es documentación estable, **no una fusión** de ramas experimentales.
+**Actualizado: 30/10/2026.** Esta entrada es documentación estable en `main`, no una fusión de ramas científicas.
 
-## Último cierre AB-H PIVOT N317–N336
+## Campaña autorizada actualmente: AB-H N337–N356
 
-- [Informe técnico completo en main](informes/ABH_N317_N336_20261030.md) y [versión canónica, prerregistro A–J, recibos y auditoría](https://github.com/GalexY3/Metodologia-AB/tree/research/ab-h-esbm-decentralized-n317-n336-20261030/proyectos/mercados-de-pareja/research/ABH_N317_N336_20261030).
-- **20/20 ejecuciones técnicas, 20 PASS locales, 0 plazas restantes; ninguna prueba humana confirmatoria.** A–J y código congelados antes de outcomes: commits `f69b629c404b3325817b569d7e0dd0f0acdae375` y `c94fc50ef83a45edae2108c4088c808212ef44c8`. La auditoría posterior se preregistró antes de ejecutarla en commit `f11e92f848cbdec72c1d95143057e2f111730db9`.
-- **Hallazgo operacional del modo de asignación:** N317, en 18/20 mercados artificiales n8+8, el maximizador central de utilidad conjunta produjo parejas bloqueantes aunque DA fue estable por construcción; no es una muestra de personas ni una comparación causal del mundo real. N322 top-1 ofertas dejó bloqueantes en 20/20; N325 dinámica de bloqueos aleatorios alcanzó estabilidad en 20/20 dentro del límite pero revisó cinco estados; N326 ganancia marginal requirió 20,5 cambios menos de media que selección aleatoria. N327–N329 mostraron restricciones sintéticas de visibilidad y normas; N328 Gini se concentró **por diseño**, no como descubrimiento. N335 obtuvo 20/20 coincidencias de oráculos independientes DP, MILP HiGHS y NetworkX n7; N336, transformar cardinalmente pesos sin alterar orden individual cambió el óptimo central en 15/20, preservando DA.
-- **34 archivos íntegros** en `ESBM_ABH_N317_N336_RESULTS_AND_AUDITS.zip`, SHA256 `f5a2fb3f7811030d20864d11db06513fef3f7cb52b7a174c2ccb5c6c2c3e52bf`, Biblioteca `/Mercados-de-pareja/ABH-N317-N336/`. Fuentes pre-outcome ZIP SHA `d4687db70c1b79801b0d4b27c38363184f3ef9f4ea4be9903e41ab1c4c65a93d`. La Biblioteca no implica que los ZIP brutos estén en GitHub.
-- **114 SOURCES, 35 PRIORS** (nuevo `P-ALLOCATION-RULE`) y **208 UPDATES** (U205–U208). SRC001 Gale–Shapley y SRC114 Echenique et al. ya estaban registrados: no se duplicaron; SRC114 se enriqueció con cifras de laboratorio **no romántico** 75/85 mercados estables. No se obtuvo evidencia real romántica con dos votos nativos más oportunidades y derechos acreditados. **CT2 científica 7/100; STOP_R5 humano activo; grado humano nuevo 0/3**. Madurez previa 44,10% no reestimada.
-- El ESBM Python original conserva su SHA256 `f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b`; SRC104 intacto; esta campaña introdujo simulaciones bipartitas separadas, **no** reejecutó el antiguo TypeScript ni validó parámetros del ESBM original. Sin SSJY, Codex, aceptación de licencias, contactos de autores ni CI costosa.
+**20 plazas autorizadas, 0 ejecutadas, 20 disponibles, STOP_R5 humano activo.** El usuario ha ordenado no consumir cupo con repeticiones ni simulaciones carentes de nueva prueba discriminante. La investigación se ha detenido localmente tras un cribado documental sin identificar una nueva base de decisiones románticas que permita al mismo tiempo verificar el conjunto de oportunidades, dos respuestas nativas, secuencia temporal, independencia, permisos y acceso a registros originales.
 
-## Histórico, tarea futura inactiva y gobernanza
+[Informe de STOP_R5 documentado en main](informes/ABH_N337_N356_20261030_STOP_R5.md) · [Rama científica N337–N356 con puerta A–J y saldo](https://github.com/GalexY3/Metodologia-AB/tree/research/ab-h-esbm-r5-evidence-gate-n337-n356-20261030/proyectos/mercados-de-pareja/research/ABH_N337_N356_20261030).
 
-[Informe N297–N316](informes/ABH_N297_N316_20261030.md) · [N277–N296](informes/ABH_N277_N296_20261030.md) · [N257–N276](informes/ABH_N257_N276_20261030.md) · [carpeta de tareas archivadas para Codex](tareas_codex/README.md) · [propuesta de ejecución futura inactiva](tareas_codex/08_FUTURA_N337_VALIDACION_Y_NEGOCIACION.md).
+### Nuevos antecedentes documentales
 
-**R5 manda:** un presupuesto para nuevas simulaciones no representa validación externa ni obliga a ejecutar sin evidencia discriminante. Cualquier campaña posterior necesita autorización nueva y congelación A–J y SHA antes de outcomes. No fusionar ramas científicas en `main`.
+Se añadieron **SRC115–SRC117** (sin suplantar cohortes independientes):
+- **SRC115:** Hu y Markowitz (2026), dos experimentos de elección entre conjuntos de seis y 31 perfiles románticos (N193/N342); elección unilateral, sin decisión independiente del destinatario.
+- **SRC116:** Winter, Gërxhani y van de Rijt (2026), elección humana de compañeros y competidores en tareas remuneradas, **no** emparejamiento romántico ni consentimiento bilateral.
+- **SRC117:** Sharabi (2020/2021), 108 díadas con información previa de perfil asignada aleatoriamente, autoinformes sobre comunicación y futura interacción; sin binarios nativos de ambas personas ni secuencias de riesgo acreditados.
+
+Registrados en SOURCES y UPDATES, con revisión cualitativa de cinco priors preexistentes. **117 SOURCES, 35 PRIORS, 213 UPDATES (U209–U213 `NO_CHANGE_WITH_REASON`)**. CT2 científica **7/100**, STOP_R5 humano **activo**, grado científico nuevo 0/3. Madurez histórica 44,10 % **no reestimada**.
+
+No hay SHA de código experimental N337 porque no se inició ni observó outcome alguno. El [contrato A–J de admisión](https://github.com/GalexY3/Metodologia-AB/blob/research/ab-h-esbm-r5-evidence-gate-n337-n356-20261030/proyectos/mercados-de-pareja/research/ABH_N337_N356_20261030/A_J_CONDITIONAL_R5_GATE_NOT_EXECUTED.md) es **condicional**; cualquier ejecución futura requiere código, dataset y hashes congelados en GitHub antes de outcomes. Los 20 ciclos están previamente autorizados y no deben volver a solicitarse.
+
+## Antecedentes experimentales realmente cerrados
+
+- [N317–N336: 20/20 pruebas técnicas ejecutadas](informes/ABH_N317_N336_20261030.md), diferenciando negociación DA, ofertas descentralizadas y max-weight central sobre poblaciones artificiales. Sin validación causal romántica.
+- [N297–N316: 20/20 controles exactitud y robustez](informes/ABH_N297_N316_20261030.md), con Python ESBM original auditado directamente en 60 trayectorias y problemas adversariales Boost.
+- [N277–N296](informes/ABH_N277_N296_20261030.md) y [N257–N276](informes/ABH_N257_N276_20261030.md): antecedentes de paridad instrumental y contraejemplos técnicos.
+
+El **ESBM original** permanece con SHA256 `f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b`; SRC104 intacto y con anomalías de correspondencia no corregidas. El TypeScript histórico completo no se ha recuperado. Sin SSJY, Codex, aceptación de licencias, contactos de autores, fusiones experimentales a main ni CI costosa. [Carpeta histórica de tareas Codex, inactiva](tareas_codex/README.md).
