@@ -3,7 +3,7 @@
   "project": "mercados-de-pareja",
   "date": "2026-10-30",
   "scope": "Retrospective provenance backfill from repository reports plus N56/N57 publisher audit. Original data never copied; not systematic or claim of accessing raw data for bibliography.",
-  "source_count": 107,
+  "source_count": 108,
   "sources": [
     {
       "id": "SRC001",
@@ -70,7 +70,13 @@
         "research/ABR_EVIDENCE20_20261028/SOURCES_AND_LIMITS.md",
         "research/ABR_TWO_WAY20_20261028/PRIOR_ART.md",
         "research/ABR_THIRD_SOURCE_20261028/SOURCE_AND_NOVELTY_AUDIT.md"
-      ]
+      ],
+      "audit_duplicate_document_doi": "10.1126/sciadv.aap9815",
+      "audit_canonical_record_id": "SRC003",
+      "audit_document_not_independent_of": [
+        "SRC075"
+      ],
+      "audit_dedup_date": "2026-10-30"
     },
     {
       "id": "SRC004",
@@ -646,7 +652,13 @@
         "research/ABR_EVIDENCE20_20261028/SOURCES_AND_LIMITS.md",
         "research/ABR_TWO_WAY20_20261028/PRIOR_ART.md",
         "research/ABR_THIRD_SOURCE_20261028/SOURCE_AND_NOVELTY_AUDIT.md"
-      ]
+      ],
+      "audit_duplicate_document_doi": "10.1177/08902070241286254",
+      "audit_canonical_record_id": "SRC029",
+      "audit_document_not_independent_of": [
+        "SRC093"
+      ],
+      "audit_dedup_date": "2026-10-30"
     },
     {
       "id": "SRC030",
@@ -1581,7 +1593,13 @@
       "rights": "Paper public metadata/full text consulted; data reuse rights not established; author code MIT does not license IPUMS microdata.",
       "raw_microdata_retrieved": false,
       "new_independent_replication": false,
-      "AB_cycle_increment": 0
+      "AB_cycle_increment": 0,
+      "audit_duplicate_document_doi": "10.1126/sciadv.aap9815",
+      "audit_canonical_record_id": "SRC003",
+      "audit_document_not_independent_of": [
+        "SRC003"
+      ],
+      "audit_dedup_date": "2026-10-30"
     },
     {
       "id": "SRC076",
@@ -1778,7 +1796,13 @@
       "rights": "Paper CC BY; participant-level data availability and reuse licensing not verified. No author contacts permitted without user's explicit approval and none attempted.",
       "status": "MATERIAL_STRONG_RECENT_PRIOR_ART_NO_ACCESS_TO_ORIGINAL_ROWS",
       "AB_cycle_increment": 0,
-      "falsifier": "Legitimately licensed original microdata with raw pairwise event decisions and novel preregistered prediction beyond published RF controls, tested on independent event/person cohort."
+      "falsifier": "Legitimately licensed original microdata with raw pairwise event decisions and novel preregistered prediction beyond published RF controls, tested on independent event/person cohort.",
+      "audit_duplicate_document_doi": "10.3389/fcomp.2026.1893669",
+      "audit_canonical_record_id": "SRC087",
+      "audit_document_not_independent_of": [
+        "SRC107"
+      ],
+      "audit_dedup_date": "2026-10-30"
     },
     {
       "id": "SRC088",
@@ -1893,7 +1917,13 @@
       "access_status": "PUBLIC_GITHUB_SOURCE_READ_HEADER_ONLY_SPECIFIC_DATA_LICENSE_UNVERIFIED_NO_BINARY_CHOICES",
       "limits": "Header comprises id, partnerid and sessionid but no explicit yes/no choice, partner yes/no or mutual match column; there may be other files not inspected, so absence in examined published CSV does not prove source design collected none. Scalar attraction is not a binary behavioral decision; do not impose threshold. GIT blob SHA is Git object SHA1, not raw content SHA256 and not evidence of a downloaded original file. No original dataset rows, matching/union outcome, scientific model, code execution or external holdout verified. Open article and existing public code do not establish novelty for ESBM.",
       "next_gate": "Check legal data reuse terms and original unreduced data/codebook for two measured binary decisions; require SHA256 of original bytes, nonoverlapping independent validation and frozen A–J+code before outcomes; otherwise use as only prior art / methodology control.",
-      "AB_cycle_increment": 0
+      "AB_cycle_increment": 0,
+      "audit_duplicate_document_doi": "10.1177/08902070241286254",
+      "audit_canonical_record_id": "SRC029",
+      "audit_document_not_independent_of": [
+        "SRC029"
+      ],
+      "audit_dedup_date": "2026-10-30"
     },
     {
       "id": "SRC094",
@@ -2301,7 +2331,7 @@
       "title": "Ogushi, Azuma, Ishii & Miyata (2026), Predicting female and male participants' contact-exchange decisions from time-segmented multimodal behavioral features in speed dating — MMSD corpus 625 conversations, 619 with bilateral original decisions",
       "canonical_url": "https://doi.org/10.3389/fcomp.2026.1893669",
       "journal_fulltext": "https://www.frontiersin.org/journals/computer-science/articles/10.3389/fcomp.2026.1893669/full",
-      "source_type": "NEW_PRIMARY_PUBLISHED_2026_PAPER_REPORTS_ORIGINAL_JAPANESE_SPEEDDATE_BILATERAL_CHOICES_BUT_DYADIC_MICRODATA_NOT_OPENLY_VERIFIED",
+      "source_type": "REDUNDANT_BIBLIOGRAPHIC_RECORD_SAME_DOCUMENT_AS_SRC087_PRESERVED_FOR_AUDIT",
       "verified_at": "2026-10-30",
       "publication_date": "2026-09-23",
       "contribution": "First-party peer reviewed study reports the Multi-Modal Speed Dating corpus collected by Ishii et al. (2023): 25 speed-dating session units, 147 Japanese participants, 625 ten-minute dialogue dyads; 619 have two separately recorded native contact-exchange decisions, six lack both. Published 2x2 counts by male/female native decision: neither 214, only female 105, only male 220, both 80 (619 total). Observed encounters from 25 sessions and observed bilateral choices satisfy a portion of the conceptual R5 structure in publication description. Important: this paper studies feature-based decision prediction, and its cross-validation/feature selection are not ESBM-specific differential testing. No legal access to 619 event-level joined actor IDs, temporal opportunity lists or raw two-vote files established, no ex-ante ESBM vs B0/B1/SRM/B2/B4/B6 holdout.",
@@ -2317,8 +2347,76 @@
       "new_ESBM_only_prediction_verified": false,
       "AB_cycle_increment": 0,
       "cycle_ids": [],
-      "R5_decision": "STOP_R5_HUMAN_UNTIL_RIGHTS_LEVEL_RECORDS_AND_PREOUTCOME_DIFFERENTIAL_CONTRAST"
+      "R5_decision": "STOP_R5_HUMAN_UNTIL_RIGHTS_LEVEL_RECORDS_AND_PREOUTCOME_DIFFERENTIAL_CONTRAST",
+      "audit_duplicate_document_doi": "10.3389/fcomp.2026.1893669",
+      "audit_canonical_record_id": "SRC087",
+      "audit_document_not_independent_of": [
+        "SRC087"
+      ],
+      "audit_dedup_date": "2026-10-30",
+      "duplicate_of": "SRC087",
+      "new_unique_primary_source_claim_withdrawn": true
+    },
+    {
+      "id": "SRC108",
+      "title": "Bhargava & Fisman (2014), Contrast Effects in Sequential Decisions: Evidence from Speed Dating — Harvard Dataverse replication archive metadata",
+      "canonical_url": "https://doi.org/10.7910/DVN/27893",
+      "author_original_publication": "https://www.saurbhar.com/_files/ugd/4fc2f2_779eecedb95d4038b35f97be0303cea8.pdf",
+      "secondary_license_catalog": "https://datasetcatalog.nlm.nih.gov/dataset?q=0000071358",
+      "source_type": "NEW_REPLICATION_ARCHIVE_METADATA_NOT_NEW_HUMAN_COHORT",
+      "verified_at": "2026-10-30",
+      "contribution": "NLM/NLM Dataset Catalog lists author replication deposit for 2014 Bhargava-Fisman sequence effects in speed dating and tags dataset as CC0. Original peer-reviewed publication explicitly states source is 16 Columbia area speed-dating sessions 2002–2004 originating in Fisman et al. 2006/2008, participant base overlapping SRC016 and SRC082. Adds contextual evidence on past sequential contrast and observable round-order but is NOT a new independent human dataset. No original archive bytes or per-file license/microdata inventory verified because first-party Dataverse URL not accessible in current tooling.",
+      "rights": "CC0 tagged in NLM catalog at deposit-level (secondary source); NOT independently verified file-level license, ethics, direct unrestricted download, permissions to redistribute or use participant-level values. No license accepted, no contacts, no download.",
+      "original_data_access": "NO_DATAVERSE_FIRST_PARTY_PAGE_NO_FILE_BYTES_OR_SHA_NO_ROWS_READ",
+      "cohort_independence": "NOT_INDEPENDENT_OF_SRC016_SRC082_COLUMBIA_2002_2004",
+      "same_subjects_possible": [
+        "SRC016",
+        "SRC082"
+      ],
+      "legal_dataset_reuse_verified": false,
+      "raw_human_rows_read": false,
+      "AB_cycle_increment": 0,
+      "cycle_ids": [
+        "N184"
+      ],
+      "R5_decision": "STOP_HUMAN_EXTERNAL_DATA_GATE"
     }
   ],
-  "last_added_campaign": "ABH_N147_N166_20261030_PRIMARY_PAPER_METADATA_ONLY"
+  "last_added_campaign": "ABH_N167_N186_METADATA_SRC108_NO_NEW_COHORT",
+  "canonical_duplicate_DOI_audit": {
+    "date": "2026-10-30",
+    "source_records_before": 107,
+    "source_records_after": 108,
+    "exact_duplicate_doi_groups_before": 3,
+    "duplicate_groups": [
+      {
+        "doi": "10.1126/sciadv.aap9815",
+        "ids": [
+          "SRC003",
+          "SRC075"
+        ]
+      },
+      {
+        "doi": "10.1177/08902070241286254",
+        "ids": [
+          "SRC029",
+          "SRC093"
+        ]
+      },
+      {
+        "doi": "10.3389/fcomp.2026.1893669",
+        "ids": [
+          "SRC087",
+          "SRC107"
+        ]
+      }
+    ],
+    "other_document_duplicates_unknown": true,
+    "known_nonindependent_cohort": [
+      "SRC016",
+      "SRC082",
+      "SRC108"
+    ],
+    "note": "Counts are documentary records, never independent cohorts. Historical IDs preserved append-only."
+  }
 }
