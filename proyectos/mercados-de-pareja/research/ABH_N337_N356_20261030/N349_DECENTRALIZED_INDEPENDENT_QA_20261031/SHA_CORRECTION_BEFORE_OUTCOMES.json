@@ -1,0 +1,21 @@
+{
+  "schema": "ABH_N349_PREOUTCOME_CODE_SHA_CORRECTION",
+  "date": "2026-10-31",
+  "cycle": "N349",
+  "status": "BEFORE_ANY_N349_OUTCOME",
+  "source_prereg_commit": "previously frozen A-J code hash 18e370a83e2869e45b6784b48eb36f48ba1fae1a59bbb348c0e9bf4b6773852a does not match archived source bytes",
+  "previously_written_hash": "18e370a83e2869e45b6784b48eb36f48ba1fae1a59bbb348c0e9bf4b6773852a",
+  "actual_source_sha256": "03b6df126d3b34330b74e057676de9fe967659f2b68aa32049bbf602d69657d2",
+  "source_git_blob_sha": "571633c273a6ae9cb2bdb8f173d5980094150514",
+  "actual_GitHub_source_commit": "598df61e7ab5d38e8038be284e9f5b32f7695c1e",
+  "exact_GitHub_byte_equality": "Local git hash-object --no-filters yielded 571633c273a6ae9cb2bdb8f173d5980094150514, exactly same as GitHub connector fetch_file blob sha, local file 12014 bytes, newline LF",
+  "explanation": "Prereg's literal SHA and source itself are inconsistent. Cause cannot be verified; do not assert intentional revision or typo. No source modification or N349 validation outcomes existed when checked. Freeze actual immutable source SHA prospectively before running.",
+  "other_frozen_inputs": {
+    "N348_dec_index": "e357e134c23379c07ed8aa52be1924401d664f951e55829428b8cc94083d5f28",
+    "N341_shocks": "84a52580add085ab551dacf6e4cd3fdfc80be8eeaf187c7d3e4b25be208e42bf"
+  },
+  "allowed_next_action": "Run original Github-archived code SHA03b6... unchanged on N348 source arrays, inspect all 120, preserve negatives. Repaired prereg affects source SHA reference only; no edits to test, data or outcome.",
+  "counting": "No AB cycle spent by SHA correction alone",
+  "CT2": 7,
+  "STOP_R5_human": true
+}
