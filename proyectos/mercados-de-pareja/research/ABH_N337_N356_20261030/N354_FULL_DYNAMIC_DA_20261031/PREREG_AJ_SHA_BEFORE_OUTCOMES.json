@@ -1,0 +1,94 @@
+{
+  "cycle": "N354",
+  "date": "2026-10-31",
+  "status": "FROZEN_PREOUTCOME",
+  "A": {
+    "question": "Does replacing only the per-tick central ESBM assignment institution by stable Gale–Shapley on a clearly assumed F/M reciprocal-ranking market change entire longitudinal future opportunity sets, choices and relationship counts across 6 official N144/T16/K7 synthetic seeds?",
+    "unit": "6 seeds heterosexual_restricted, each 16 periods; F-proposing vs M-proposing, two alternative whole-world trajectories per seed; compare with original central ESBM and N348 first accepted greedy worlds (paired original shocks)",
+    "human": false
+  },
+  "B": {
+    "competitors": [
+      "Central ESBM original full dynamic same 6 seeds",
+      "Chronological and reverse first accepted full dynamic N348, same 6 seeds",
+      "F-proposing DA and M-proposing DA full dynamic N354",
+      "Independent Python shadow blocked-pair checker N351 DA formula"
+    ],
+    "strong_control": "Only mechanism changes; all original people and 30 shocks binary tensors unchanged; strictly F/M-only due DA requirement."
+  },
+  "C": {
+    "primary": [
+      "All 12 DA runs complete 16 ticks, each returned pairing stable under stated ordinal preferences and no pair repeated",
+      "Compare complete 16-period relationships formed, active end, exposures and pair identity to central and first accepted greedy",
+      "Separate proposer side differences from assignment order and feedback over time",
+      "First-period DA must equal independent previously computed N351 static DA for seed/t=0 given same source parameters"
+    ],
+    "falsifier": "Any input SHA drift, matching blocking pair, per-tick invariant violation, trace resource limit or deviation of static N351 first-tick DA pair sets; preserve negative.",
+    "multiplicity": "12 synthetic worlds across 6 seeds, report paired cluster differences with no human p-values"
+  },
+  "D": {
+    "sources": {
+      "work/src/da_matching.mjs": "25c47dcc4f13571ddd4882f83e39bdaac683f4df0e1dfecf23dd4102790368a7",
+      "work/src/engine_DA.ts": "234e12b1e593088af07741e8f56ec460be3a82483b92bbb9038d58095a9a6539",
+      "instrument/n354_run_dynamic_da.mjs": "b3a8773ea82dfda7d9a324c240a02b1644adbf0868ed3bbdc1755a82372bec40",
+      "instrument/n354_compare_da_dynamic.py": "e836457c8c6f3a66adabd3c717f8fb4ebc2e9f65df8c781ef55327172bda2d2f"
+    },
+    "github_code_commits": [
+      "b3a5cb240acf763f9788f58782de22367f7f0881",
+      "48ba425f9195eca8f84fab10a7c8c602f28b2a92",
+      "4e5098b19f9a621f27285d0ea2bf38962df48860",
+      "96186b3b8ccd3ee84b41240ab71f7b47dd609181"
+    ],
+    "frozen_inputs": "84a52580add085ab551dacf6e4cd3fdfc80be8eeaf187c7d3e4b25be208e42bf",
+    "baseline_N341_central_index": "37b8a1010968e0ead1a13f7f71193858bcfb83b0e3428573ad734f96e136948d",
+    "baseline_N348_greedy_index": "e357e134c23379c07ed8aa52be1924401d664f951e55829428b8cc94083d5f28"
+  },
+  "E": {
+    "commands": [
+      "node instrument/n354_run_dynamic_da.mjs",
+      "py -3.13 instrument/n354_compare_da_dynamic.py"
+    ],
+    "per_run_trace_limit_events": 80000,
+    "per_run_trace_limit_bytes": 134217728,
+    "outer_node_wall_seconds": 90,
+    "outer_compare_wall_seconds": 60,
+    "heap_cap_mb": 1024,
+    "outputs": [
+      "outcomes/N354_DA_DYNAMIC_INDEX.json",
+      "outcomes/N354_FULL_DYNAMIC_DA_COMPARISON.json",
+      "outcomes/N354_DA_DYNAMIC_TRACES/12x2 files"
+    ],
+    "executed_at_freeze": false
+  },
+  "F": {
+    "controls": [
+      "DA rejects self-edge",
+      "DA detects blocking pair and duplicate assignments",
+      "DA preferences explicitly assumed from q and actor trait, not natively observed",
+      "Compare all 12 original full-run ground truths, fixed 5 shocks",
+      "Store original directed TS events and individual JSON SHA"
+    ],
+    "negative": "No hidden rerun/tuning after outcomes"
+  },
+  "G": {
+    "novelty": "Prior N351/352/353 one-tick conditional market shadows; this is first full 16-period DA institution with endogenous feedback on same ESBM causal graph. No observed human causal claim."
+  },
+  "H": {
+    "prior": "P-ALLOCATION-RULE qualitative only; update U not CT2"
+  },
+  "I": {
+    "CT2": 7,
+    "STOP_R5_human": true
+  },
+  "J": {
+    "cycle": "N354 count one if complete or valid negative, N355/N356 remain",
+    "restrictions": [
+      "no SSJY",
+      "no Codex",
+      "no licence acceptance",
+      "no author contact",
+      "no main merge",
+      "no expensive CI"
+    ]
+  }
+}
