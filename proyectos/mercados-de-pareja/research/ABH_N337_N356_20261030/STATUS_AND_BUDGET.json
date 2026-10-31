@@ -5,40 +5,55 @@
   "base_ref": "research/ab-h-esbm-decentralized-n317-n336-20261030",
   "authorized_range": "N337–N356",
   "authorized_cycles": 20,
-  "valid": 2,
+  "valid": 13,
   "invalid": 0,
   "planning": 0,
-  "unspent": 18,
+  "unspent": 7,
   "cycle_ids_executed": [
     "N337",
-    "N338"
+    "N338",
+    "N339",
+    "N340",
+    "N341",
+    "N342",
+    "N343",
+    "N344",
+    "N345",
+    "N346",
+    "N347",
+    "N348",
+    "N349"
   ],
   "cycle_ids_planning": [],
   "cycle_ids_invalid": [],
-  "next_cycle_if_conditions_met": "N339",
-  "current_blocker": "STOP_R5_HUMAN_NO_ELIGIBLE_NEW_INDEPENDENT_ROMANTIC_DYADIC_DATA; TECHNICAL_N207_TS_N144_SCALABILITY_COMPONENT_27_GT_22",
+  "next_cycle_if_conditions_met": "N350",
+  "current_blocker": "R5_HUMAN_NO_INDEPENDENT_LEGALLY_AUDITABLE_ROMANTIC_COHORT_WITH_BOTH_NATIVE_DECISIONS_SEQUENCE; TECHNICAL_REPLAY_N144_N60_DIRECTED_COMPLETE; NEXT_USEFUL_TECHNICAL_N350_ONLY_WITH_NOVEL_ADVERSARIAL_DESIGN",
   "admission_contract": "A_J_CONDITIONAL_R5_GATE_NOT_EXECUTED.md",
   "outcomes_executed": true,
   "original_ESBM_sha256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
   "original_SRC104_modified": false,
   "legacy_TypeScript_recovered": false,
-  "code_SHA_frozen_for_new_outcomes": "N337/N338 only, see individual prereg commits 732d628d and 9ee375c0; N339 not yet frozen",
-  "reason_no_code_freeze": "The previous field referred to documentary-only phase on Oct30. On Oct31 N337 and N338 were independently preregistered with code/input SHA before outcomes; later N339 has no executable instrument until distinct prereg.",
+  "code_SHA_frozen_for_new_outcomes": "All executed N337–N349 individually A–J+code SHA frozen BEFORE outcome, including prospective repair SHA audits N339 N341 N342 N349. N350 not opened",
+  "reason_no_code_freeze": "N350 not yet selected or preregistered; no cycles spent for mere planning",
   "new_documentary_source_ids": [
     "SRC115",
     "SRC116",
-    "SRC117"
+    "SRC117",
+    "SRC118"
   ],
   "new_documentary_updates": [
     "U209",
     "U210",
     "U211",
     "U212",
-    "U213"
+    "U213",
+    "U214",
+    "U215",
+    "U216"
   ],
-  "source_count": 117,
+  "source_count": 118,
   "priors_count": 35,
-  "updates_count": 214,
+  "updates_count": 216,
   "new_qualifying_human_holdout": 0,
   "raw_rows_inspected_new": 0,
   "source_screen_candidates": 13,
@@ -47,7 +62,7 @@
   "STOP_R5_human": true,
   "scientific_grade_new": "0/3",
   "maturity_percent_previous_44_10_not_reestimated": true,
-  "R5_gate_decision": "PRESERVE_20_SLOTS",
+  "R5_gate_decision": "TECHNICAL_VALIDATION_13_OF_20_WITH_HUMAN_STOP_R5",
   "prohibitions": {
     "SSJY": true,
     "Codex": true,
@@ -56,27 +71,85 @@
     "merge_research_to_main": true,
     "expensive_CI": true
   },
-  "scope": "New first-party documentary research only; no cycles claimed and no empirical analysis done",
+  "scope": "Real Windows execution of original Python and TypeScript matching solvers plus independent computational verification; No new qualifying independent human romantic dyadic data. Existing R5 documentary screening retained.",
   "is_graph_revision": "AB_ATLAS_DELTA.json",
-  "status": "2_TECHNICAL_CYCLES_EXECUTED_18_PENDING_HUMAN_R5_STOP",
+  "status": "N337_N349_13_TECHNICAL_EXPERIMENTS_VALID_7_PENDING_STOP_R5_HUMAN",
   "executed_details": [
     {
       "id": "N337",
       "status": "VALID_TECHNICAL_PASS",
-      "prereg_commit": "732d628dc8aa9f24620206c352eed5705fa40521",
-      "receipt": "N337_WINDOWS_NATIVE_TYPESCRIPT_20261031/N337_OUTCOME_RECEIPT.json",
-      "results": "Python original vs real N207 TS, N8 T6 K3 60/60 all full outputs and partner sets identical, 360 ticks"
+      "evidence": "LEDGER_AJ_N337_N349_20261031.json#N337"
     },
     {
       "id": "N338",
       "status": "VALID_TECHNICAL_NEGATIVE",
-      "prereg_commit": "9ee375c058cbeb3a678c403bcc2653207fc4690f",
-      "receipt": "N338_WINDOWS_FULLSIZE_20261031/N338_OUTCOME_RECEIPT.json",
-      "results": "Official N144 T16 K7 seed101 two scenarios: Python full runs, independent N207 TS stops at t1 component27>22 in both; no 16-tick parity"
+      "evidence": "LEDGER_AJ_N337_N349_20261031.json#N338"
+    },
+    {
+      "id": "N339",
+      "status": "VALID_TECHNICAL_PASS",
+      "evidence": "LEDGER_AJ_N337_N349_20261031.json#N339"
+    },
+    {
+      "id": "N340",
+      "status": "VALID_TECHNICAL_PASS",
+      "evidence": "LEDGER_AJ_N337_N349_20261031.json#N340"
+    },
+    {
+      "id": "N341",
+      "status": "VALID_TECHNICAL_PASS",
+      "evidence": "LEDGER_AJ_N337_N349_20261031.json#N341"
+    },
+    {
+      "id": "N342",
+      "status": "VALID_TECHNICAL_PASS",
+      "evidence": "LEDGER_AJ_N337_N349_20261031.json#N342"
+    },
+    {
+      "id": "N343",
+      "status": "VALID_TECHNICAL_PASS",
+      "evidence": "LEDGER_AJ_N337_N349_20261031.json#N343"
+    },
+    {
+      "id": "N344",
+      "status": "VALID_TECHNICAL_PASS",
+      "evidence": "LEDGER_AJ_N337_N349_20261031.json#N344"
+    },
+    {
+      "id": "N345",
+      "status": "VALID_TECHNICAL_PASS",
+      "evidence": "LEDGER_AJ_N337_N349_20261031.json#N345"
+    },
+    {
+      "id": "N346",
+      "status": "VALID_TECHNICAL_PASS",
+      "evidence": "LEDGER_AJ_N337_N349_20261031.json#N346"
+    },
+    {
+      "id": "N347",
+      "status": "VALID_TECHNICAL_PASS",
+      "evidence": "LEDGER_AJ_N337_N349_20261031.json#N347"
+    },
+    {
+      "id": "N348",
+      "status": "VALID_TECHNICAL_PASS",
+      "evidence": "LEDGER_AJ_N337_N349_20261031.json#N348"
+    },
+    {
+      "id": "N349",
+      "status": "VALID_TECHNICAL_PASS",
+      "evidence": "LEDGER_AJ_N337_N349_20261031.json#N349"
     }
   ],
-  "AJ_postoutcome_ledger": "LEDGER_AJ_N337_N338_20261031.json",
+  "AJ_postoutcome_ledger": "LEDGER_AJ_N337_N349_20261031.json",
   "date_last_verified": "2026-10-31",
   "external_human_validation_executed": false,
-  "supersedes_documentary_phase_20261030": true
+  "supersedes_documentary_phase_20261030": true,
+  "outcomes_sha_manifest": "LEDGER_AJ_N337_N349_20261031.json",
+  "invalid_instrument_attempts": 3,
+  "technical_pass": 12,
+  "technical_valid_negative": 1,
+  "verified_tech_results": "N342 60/60 native pair & 871914 directed events parity, N343 960/960 graph optimality, N344 960/960 unique, N345 358348 exposures, N346 513566 probability decisions, N347 fixed shadow, N348 120 full dynamic alternative worlds, N349 120/120 independent full-state QA",
+  "legacy_TypeScript_scope": "N207–N216 actual TS recovered and executed; original N237–N256 TS/Boost historical ZIP still not recovered. No rewrite of prior claim.",
+  "no_merge_main": true
 }
