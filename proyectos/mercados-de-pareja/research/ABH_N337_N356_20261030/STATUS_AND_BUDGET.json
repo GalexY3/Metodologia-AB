@@ -1,26 +1,29 @@
 {
   "schema": "ABH_N337_N356_BUDGET_AND_EVIDENCE_LEDGER_V1",
-  "date": "2026-10-30",
+  "date": "2026-10-31",
   "branch": "research/ab-h-esbm-r5-evidence-gate-n337-n356-20261030",
   "base_ref": "research/ab-h-esbm-decentralized-n317-n336-20261030",
   "authorized_range": "N337–N356",
   "authorized_cycles": 20,
-  "valid": 0,
+  "valid": 2,
   "invalid": 0,
   "planning": 0,
-  "unspent": 20,
-  "cycle_ids_executed": [],
+  "unspent": 18,
+  "cycle_ids_executed": [
+    "N337",
+    "N338"
+  ],
   "cycle_ids_planning": [],
   "cycle_ids_invalid": [],
-  "next_cycle_if_conditions_met": "N337",
-  "current_blocker": "STOP_LOCAL_R5_NO_NEW_VERIFIED_INDEPENDENT_ROMANTIC_DYADIC_RISKSET_DATA",
+  "next_cycle_if_conditions_met": "N339",
+  "current_blocker": "STOP_R5_HUMAN_NO_ELIGIBLE_NEW_INDEPENDENT_ROMANTIC_DYADIC_DATA; TECHNICAL_N207_TS_N144_SCALABILITY_COMPONENT_27_GT_22",
   "admission_contract": "A_J_CONDITIONAL_R5_GATE_NOT_EXECUTED.md",
-  "outcomes_executed": false,
+  "outcomes_executed": true,
   "original_ESBM_sha256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
   "original_SRC104_modified": false,
   "legacy_TypeScript_recovered": false,
-  "code_SHA_frozen_for_new_outcomes": false,
-  "reason_no_code_freeze": "No new executable outcomes, dataset or instrument. Proposed A-J is conditional; a future code+dataset SHA freeze must precede any execution.",
+  "code_SHA_frozen_for_new_outcomes": "N337/N338 only, see individual prereg commits 732d628d and 9ee375c0; N339 not yet frozen",
+  "reason_no_code_freeze": "The previous field referred to documentary-only phase on Oct30. On Oct31 N337 and N338 were independently preregistered with code/input SHA before outcomes; later N339 has no executable instrument until distinct prereg.",
   "new_documentary_source_ids": [
     "SRC115",
     "SRC116",
@@ -35,7 +38,7 @@
   ],
   "source_count": 117,
   "priors_count": 35,
-  "updates_count": 213,
+  "updates_count": 214,
   "new_qualifying_human_holdout": 0,
   "raw_rows_inspected_new": 0,
   "source_screen_candidates": 13,
@@ -54,5 +57,26 @@
     "expensive_CI": true
   },
   "scope": "New first-party documentary research only; no cycles claimed and no empirical analysis done",
-  "is_graph_revision": "AB_ATLAS_DELTA.json"
+  "is_graph_revision": "AB_ATLAS_DELTA.json",
+  "status": "2_TECHNICAL_CYCLES_EXECUTED_18_PENDING_HUMAN_R5_STOP",
+  "executed_details": [
+    {
+      "id": "N337",
+      "status": "VALID_TECHNICAL_PASS",
+      "prereg_commit": "732d628dc8aa9f24620206c352eed5705fa40521",
+      "receipt": "N337_WINDOWS_NATIVE_TYPESCRIPT_20261031/N337_OUTCOME_RECEIPT.json",
+      "results": "Python original vs real N207 TS, N8 T6 K3 60/60 all full outputs and partner sets identical, 360 ticks"
+    },
+    {
+      "id": "N338",
+      "status": "VALID_TECHNICAL_NEGATIVE",
+      "prereg_commit": "9ee375c058cbeb3a678c403bcc2653207fc4690f",
+      "receipt": "N338_WINDOWS_FULLSIZE_20261031/N338_OUTCOME_RECEIPT.json",
+      "results": "Official N144 T16 K7 seed101 two scenarios: Python full runs, independent N207 TS stops at t1 component27>22 in both; no 16-tick parity"
+    }
+  ],
+  "AJ_postoutcome_ledger": "LEDGER_AJ_N337_N338_20261031.json",
+  "date_last_verified": "2026-10-31",
+  "external_human_validation_executed": false,
+  "supersedes_documentary_phase_20261030": true
 }
