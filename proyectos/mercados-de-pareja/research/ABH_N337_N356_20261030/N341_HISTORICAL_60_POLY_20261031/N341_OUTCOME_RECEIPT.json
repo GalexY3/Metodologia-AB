@@ -1,0 +1,64 @@
+{
+  "schema": "ABH_N341_OUTCOME_RECEIPT",
+  "date": "2026-10-31",
+  "cycle_id": "N341",
+  "status": "VALID_TECHNICAL_POSITIVE",
+  "prereg_AJ_SHA_commit": "a24f9f6635cf7b4cc2d9f1beb377ce9edfbac6a9",
+  "resumption_preoutcome_commit": "6053c27dae6df30229c9a87006dcd6327574771e",
+  "original_input_manifest_sha256": "84a52580add085ab551dacf6e4cd3fdfc80be8eeaf187c7d3e4b25be208e42bf",
+  "historic_python_reference_blob": "d8dbf04ec52337d46892e555cceee49ef224efc6",
+  "historic_base64_sha256": "25c5bd12f0784449c9b9a25af4f5ea7211f193a4f503a29ca8fdc2c42b9eebe3",
+  "original_python_sha": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+  "typescript_index_sha256": "37b8a1010968e0ead1a13f7f71193858bcfb83b0e3428573ad734f96e136948d",
+  "comparison_sha256": "dd20054a8dc7e197364995c8d70d0b209418e4b4ac804d34181beaf160069f13",
+  "summary": {
+    "runs": 60,
+    "full_TS_runs": 60,
+    "historic_Python_result_parity": 60,
+    "matching_ticks": 960,
+    "matching_primal_dual_certificates_present": 960,
+    "compact_directional_JS_events": 871914,
+    "individual_run_json": 60,
+    "individual_JS_event_trace_jsonl": 60,
+    "mutant_path": "$.history.total_impressions"
+  },
+  "limits": "Historic Python RUNS contains no per-tick pairs or directed events. This test proves parity across original historical run JSON and TS results and per-tick metrics, but not original vs TS individual pairs or events. The 960 certificates refer to JS matching; N339 independently audited 12 representative primal-dual certificates, not all 960 across languages. Not human validation.",
+  "failed_instrument_attempts": [
+    {
+      "count": 1,
+      "type": "STDOUT_REDIRECTION_BACKPRESSURE_OR_UNDIAGNOSED_BLOCK",
+      "definite": "Parent waited for Node process without streaming console; process ceased progress at exactly 54 complete files; uniquely identified Node killed; stdout backpressure is hypothesis, not proven",
+      "preserved_completed": 54,
+      "resume_only_six": true,
+      "custody_manifest_sha": "8553d0261d2043b60f6a2de18de800c10cbe7124218ab8900881aec2b1cd9948",
+      "repair_prereg": "6053c27dae6df30229c9a87006dcd6327574771e",
+      "no_same_case_rerun": true
+    }
+  ],
+  "artifacts": {
+    "local_root": "C:\\Users\\Nitropc\\CoS-Prueba\\ESBM_ABH_N339_N356_20261031",
+    "full_147_files_zip": {
+      "name": "N341_EVENTS_RESULTS_AND_SOURCES.zip",
+      "bytes": 17590352,
+      "sha256": "920e2060caecb92b4342df8feed0109f0e58c0c9d3d568b9d912898ea1dbab75",
+      "crc": "PASS"
+    },
+    "synthetic_36_tensor_input_zip": {
+      "name": "N341_SHOCKS_ALL_SEEDS.zip",
+      "bytes": 79662022,
+      "sha256": "0bd7e0007e109025223a15ca26228acde39ce1486e1bc452f1d7370db1ca1e2c",
+      "crc": "PASS"
+    },
+    "upload_status": "Local PC preserved; GitHub branch has SHA manifest+index+summary, 17.6MB/79.6MB ZIPs not uploaded. No user-facing sandbox link for PC-only files."
+  },
+  "no_causal_human_validation": true,
+  "CT2_scientific": 7,
+  "STOP_R5_human": true,
+  "licence_accepted": false,
+  "SSJY_used": false,
+  "Codex_used": false,
+  "main_merged": false,
+  "expensive_CI": false,
+  "cycles_total_spent_N337_to_N341": 5,
+  "remaining_N342_to_N356": 15
+}
