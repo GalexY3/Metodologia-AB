@@ -1,0 +1,132 @@
+{
+  "schema": "ABH_PREOUTCOME_AJ_N339_V1",
+  "date": "2026-10-31",
+  "authorized_campaign": "N337–N356",
+  "existing_cycles": [
+    "N337",
+    "N338"
+  ],
+  "cycle": "N339",
+  "status": "FROZEN_BEFORE_ANY_SOLVER_OUTCOME",
+  "A": {
+    "question": "Can a genuinely polynomial JavaScript Blossom implementation replace the exponential N207 matching solver while preserving exact binary64 ESBM lexicographic cardinality/weight and emitting independently checkable primal-dual optimality certificates at n144, even under ties, ULP near-ties, disconnected and odd cycles?",
+    "unit": "12 frozen synthetic undirected edge-weighted graphs 4,6,8,12,14,24,64,144 nodes, 4 dedicated dense/narrow n144 conditions, not human subjects",
+    "no_social_validation": true
+  },
+  "B": {
+    "oracles": [
+      "Independent Python NetworkX maximum-cardinality then maximum exact-integer ULP residual sum for every graph",
+      "Independent Python subset DP for n≤14 with number of distinct optima",
+      "Independent Python verifier of JS primal-dual witness: nonnegative edge slacks, matched zero slack, unmatched vertex zero dual, positive odd-blossom saturation, exact primal-dual equality"
+    ],
+    "backend": "MIT 2015 Matt Krick Edmonds Blossom Joris van Rantwijk lineage. Source code translated from same algorithm family as NetworkX; independent code/runtime + independently written certificate verifier, NOT independent mathematical lineage nor novel algorithm.",
+    "alternatives": [
+      "N207 exponential subset solver existing resource component22 from N338",
+      "Boost prior N297 had SIGSEGV / timeouts; not reused"
+    ],
+    "hypothesis": "All 12 graphs solved with cert within resource bounds and exact same cardinality+residue as independent NetworkX integer; alternate tied identity is not considered mismatch when objective equal"
+  },
+  "C": {
+    "primary": "All 12 runs must have JS certificate verified twice (JS and independently in Python), exact cardinality and total residual equal NetworkX; small n subset DP must agree; allow distinct matching identity only with tie/unknown uniqueness",
+    "expected_negative": "Any source check failure, nonfinite/unsafe integer, certificate infeasible, objective mismatch, time limit, memory limit, too many edges or paired identity mismatch with independently proven unique optimum",
+    "failure_reporting": "Keep each graph receipt with exception and first error; count negative not pass; no post-outcome cap tuning"
+  },
+  "D": {
+    "source_versions": {
+      "upstream_project": "mattkrick/EdmondsBlossom",
+      "upstream_commit": "fab7ca8505e1577b009696c038dc804cf0acbea2",
+      "upstream_blob": "b1de38593cdce8354fd281f75158f337f5cd54f8",
+      "licence": "MIT with attribution retained; only passive public source download, no click-through licence acceptance",
+      "TS_ref_worktree": "f3be098df714085c831ab2f1165d6322e30af685",
+      "original_Python_sha256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+    },
+    "sha256_windows_files": {
+      "vendor/blossom.cjs": "334350e3dd8ff68964febbb27d6c89f8cd72f78e3780f3da5d217cf1c53755ff",
+      "vendor/blossom_with_state.cjs": "1b6f24f1b2aba321ec8c1a14cd045a7f673cfacf60ac4fe456666d31ee5806a2",
+      "vendor/LICENSE_MIT.txt": "a2ea4fdc117435d85e2d303242e5130f7787404ea11cc287b37c4c566547c58a",
+      "work/src/blossom_matching.mjs": "9b6fd317dd05229c45fa5ee60bf71af226dd307fa2a558c1abb332b93017b19d",
+      "work/src/engine.ts": "15506227eeac1aeb5f0f2c1d61fe567519b31f862ae3310897575cd3957d0cbe",
+      "instrument/make_graphs.py": "0357f1a076c9ff3cd4b1f219010352c1c7204ad43625176d119e6a876fb15745",
+      "instrument/run_poly_graphs.mjs": "ceea907bd4940adbc11a6e682f16b16a54687f0e539533a920666e9590218eaa",
+      "instrument/python_poly_oracle.py": "fb3f09b51238f2deb5ec479f397d908b12b15d7737ab75e679b7997bca531259",
+      "GRAPH_INPUTS_N339.json": "875d3fdc70f07ae65c906221d8e7c8c4b37cbeb5106939c41604ba0d3bd1378b"
+    },
+    "precommitted_source_commits": [
+      "d87d4ec00dd1e356f7f366cd249824fae70a976c",
+      "047c620b3ae57bacc534322dee55da1f6bc2f1fa",
+      "bc06dbaca89802489c1a401fbe912daabc1c0a72",
+      "da4d8a06a803e1b772979a7ed68d9d4ca3917d62",
+      "a9718c141547cf11001c4f1db830717fb271ef1f",
+      "0e5aa12154e76a4b1b9f2d001119e616aaf0e279",
+      "9f2f1d591ed59845c1af6640da34d644f6b95ab3",
+      "2fecc7709944de62d0afd426f917de0fd8790335"
+    ],
+    "note": "Graph JSON 745816 bytes is pre-generated INPUT only, full frozen SHA here before any solver operation; include raw in postoutcome ZIP."
+  },
+  "E": {
+    "executed_at_freeze": false,
+    "commands": [
+      "node instrument/run_poly_graphs.mjs",
+      "py -3.13 instrument/python_poly_oracle.py"
+    ],
+    "environment": "Windows 11 build 26200, Node24.16.0, Python3.13.4 NetworkX3.6.1 NumPy2.4.3",
+    "resource_caps": {
+      "max_edges_per_graph": 5500,
+      "max_solver_wall_ms": 30000,
+      "outer_Node_process_ms": 180000,
+      "outer_Python_process_ms": 180000,
+      "expected_nonconsole_heap_mb": 512
+    },
+    "input_cases": [
+      "C4_EXACT_TIE",
+      "K6_ALL_TIED",
+      "ODD_TRIANGLE_PENDANT",
+      "RANDOM_N12_D65",
+      "RANDOM_N14_D80",
+      "RANDOM_N24_D32",
+      "RANDOM_N64_D12",
+      "RANDOM_N144_D8",
+      "RANDOM_N144_D31",
+      "ULP_N144_D13",
+      "ULP_N144_D27",
+      "DISCONNECTED_N144_WITH_ISOLATES"
+    ]
+  },
+  "F": {
+    "adversarial": [
+      "C4 and K6 true equal optima must not be reported unique without proof",
+      "n144 1-ULP variations and extreme density",
+      "Odd cycles + disconnected leftovers",
+      "Strict units (w-1)*2^52 within Number safe; baseline K=(n/2)*maxResidue+1 and combined sum<2^53",
+      "Independently verify full blossom primal-dual witness, not accept internal 'certified' flag blindly"
+    ],
+    "no_posthoc_edits": true
+  },
+  "G": {
+    "replication_scope": "Technical independent JS runtime/implementation vs Python NetworkX, Python DP and independently coded dual checker; source lineage overlaps for JS and NetworkX: explicitly disclosed",
+    "human_romance_rows": 0,
+    "unique_research_1of3": false
+  },
+  "H": {
+    "prior_id": "P-TRAJECTORY-INVARIANCE",
+    "update": "Upon run append NO_CHANGE_WITH_REASON for human scientific priors, note solver ability/limits. No new human source."
+  },
+  "I": {
+    "CT2_scientific": 7,
+    "STOP_R5_human": true,
+    "scientific_grade": "0/3"
+  },
+  "J": {
+    "decision_preoutcome": "EXECUTE_N339_ONCE",
+    "slot_rule": "Only spend one N339 if bounded execution actually produces inspected results or negative; do not count 12 graphs as 12 cycles",
+    "remaining_on_completion": 17,
+    "restrictions": [
+      "NO SSJY",
+      "NO Codex",
+      "NO interactive licence acceptance",
+      "NO author contact",
+      "NO main merge",
+      "NO expensive CI"
+    ]
+  }
+}
