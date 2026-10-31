@@ -1,0 +1,75 @@
+{
+  "cycle": "N353",
+  "date": "2026-10-31",
+  "status": "FROZEN_BEFORE_OUTCOMES",
+  "A": {
+    "question": "Is the universal DA F/M agreement over original ESBM yes/no-generated opportunity graphs explained by scarcity of alternating even cycles, and what minimal declared counterfactual eligibility intervention suffices to make both proposing-side stable allocations diverge?",
+    "unit": "Original 96 synthetic heterosexual markets; compute graph cyclomatic dimension and 4cycle counts, then counterfactual 4-person preference cycle per market where two disjoint original pairs exist",
+    "not": "Neither genuine human ordinal preferences nor observed new opportunities."
+  },
+  "B": {
+    "comparators": [
+      "96 frozen original mutual-YES graph edges with 480 fixed N352 preference scenarios",
+      "Formal no-alternating-cycle structural precondition for distinct stable matchings",
+      "Explicit 2×2 crossed preferences and direct brute-force enumeration of all matchings on four actors to certify two stable configurations",
+      "DA from N351 independent of brute-force test"
+    ],
+    "baseline": "Original source has same 96 graphs and five preference levels, all zero proposer divergence."
+  },
+  "C": {
+    "primary": [
+      "Count original cycle-space dimension 0 vs >0, count 4cycles",
+      "Prove two proposed 2×2 stable pair sets differ under designed crossed preferences and enumerate all possible matchings to validate",
+      "Count exactly how many artificially added edges are needed to complete a 4cycle from two EXISTING disjoint edges, 0,1,2, while clearly labeling them NOT NATIVE",
+      "Do not claim no stable side effect is general without observed preference intervention"
+    ],
+    "adversarial": [
+      "Never treat synthetic added edges as native exposures",
+      "Never claim N353 96 markets are independent persons",
+      "Use both preference-algorithm output and brute force independent 4actor enumerator",
+      "Require all N352 fixed 480 results integrity, no posthoc selection"
+    ]
+  },
+  "D": {
+    "script_sha256": "9492746f0f293feba2ff94e3b2fcaed940c1eb4e8bc941261d8018aace5456c4",
+    "code_git_commit": "fee40da23f1d6e6874126b58b41a6491058ebe94",
+    "frozen_96_markets_sha": "42c24b43bde724d0609d816a57f6287c17c0f201705382031d8f00cecfe28d35",
+    "N352_five_preference_outcomes_sha": "5907663ba2e24ccc5122f19f176e7f07c82804771bc68f62391c565d69871187"
+  },
+  "E": {
+    "command": "py -3.13 instrument/n353_rotation_obstruction.py",
+    "wall_seconds": 60,
+    "memory_gb": 2,
+    "expected_file": "outcomes/N353_ROTATION_OBSTRUCTION.json",
+    "output_preexisting": false
+  },
+  "F": {
+    "falsifiers": [
+      "Original market has any DA-F-vs-M difference not in frozen N352",
+      "Constructed 2×2 strict lists do not produce exactly two stable matchings",
+      "Required new edges mislabelled existing",
+      "Discrete minimal new edges count must be certified by enumeration of pairs of existing disjoint edges"
+    ]
+  },
+  "G": {
+    "theory": "Known stable-marriage rotation structure, new analysis is conditional structural identification in this ESBM synthetic riskset only; no causal human extrapolation."
+  },
+  "H": {
+    "prior": "P-ALLOCATION-RULE NO_CHANGE_WITH_REASON human"
+  },
+  "I": {
+    "CT2": 7,
+    "STOP_R5_human": true
+  },
+  "J": {
+    "cycle": "N353 spend one only after executable audit, N354–N356 remain if passes",
+    "prohibited": [
+      "SSJY",
+      "Codex",
+      "license acceptance",
+      "author contacts",
+      "research branch merge",
+      "CI cost"
+    ]
+  }
+}
