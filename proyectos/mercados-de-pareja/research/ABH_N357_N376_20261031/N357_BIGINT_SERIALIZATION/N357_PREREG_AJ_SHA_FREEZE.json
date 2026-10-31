@@ -1,0 +1,72 @@
+{
+  "schema": "ABH_N357_PREREG_AJ_V1",
+  "date": "2026-10-31",
+  "cycle": "N357",
+  "status": "PLANNED_SHA_FREEZE_BEFORE_OUTCOMES",
+  "A": {
+    "question": "Can the auxiliary integer objective reporting error N356 be repaired by exact BigInt construction and decimal string serialization while preserving the actual Blossom matching and its proof?",
+    "experimental_unit": "21 deterministic synthetic graph fixtures, 12 previously defined regression controls and nine additional structures, including nontrivial conflicts, dense near-ties, odd components, zero edges and high-degree vertices",
+    "human_validation": false
+  },
+  "B": {
+    "treatment": "On a separate copy of blossom_matching.mjs, replace unsafe arithmetic Number cardinality*2^52+residue with BigInt integer expression and decimal string field, including empty-graph return.",
+    "comparison": "Exact pairwise IEEE binary64 weight reconstruction via separate JavaScript BigInt from graph edges; independent Python Fraction.from_float reconstruction from serialized inputs",
+    "historical_control": "12 old N356 fixtures are regression controls, not new cycles; nine newly constructed fixtures are instrumented stress controls."
+  },
+  "C": {
+    "primary": "21/21 returned full_units fields are decimal digit strings; each equals independently reconstructed exact sum for selected matching edges",
+    "secondary": "21/21 matching optimality claims remain certified; count old Number mismatches as descriptive counterfactual; reject two deliberate mutations of exact field and residue.",
+    "falsifiers": "Any numeric mismatch, wrong field type/schema, a matching without its certificate, failed mutation detection, divergence between Python and JS exact sums, unhandled solver resource exception.",
+    "no_overclaim": "This is a software repair/regression, not a universal matching proof, human-market validation or reproduction of historical 60 trajectories."
+  },
+  "D": {
+    "instrument_js_sha256": "ecfb50efedfa483818bad14e9d4090038865cc532876df809346bea3d027fb43",
+    "independent_python_sha256": "f69d0d887503baa03e1a884f3bd4d99d6c628e18fe96e05c9813c1255ffa458d",
+    "patched_blssom_source_sha256": "feacf8ea1399b0425b0692549cc6fc7bbbabf285ad70e3e374828e0b33d1dbf6",
+    "matching_dependency_sha256": "1068a2f3d66c6d4b887a16f6cc13d50efb5f03214c744c959d9dc8cdfb7380f2",
+    "types_dependency_sha256": "dfba5e9abde658731043be37a80699c484a720bba097a4971bbd9f8eb1cd0983",
+    "vendor_blssom_sha256": "1b6f24f1b2aba321ec8c1a14cd045a7f673cfacf60ac4fe456666d31ee5806a2",
+    "original_ESBM_sha256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+    "fixture_generation": "Entire deterministic 21-fixture generator is code frozen in instrument_js; randomized graph controls use fixed xorshift32 seeds 35708,35724,35764,357144,357145,17.",
+    "preoutcome_GitHub_commit": "THIS_PREREG_AND_CODE_MUST_BE_PUBLISHED_BEFORE_RUNNING"
+  },
+  "E": {
+    "working_dir": "C:/Users/Nitropc/CoS-Prueba/ESBM_ABH_N357_N376_20261031",
+    "command_js": "node instrument/n357_exact_serialization_regression.mjs",
+    "command_oracle": "py -3 instrument/n357_python_fraction_oracle.py",
+    "max_total_wall_seconds": 120,
+    "max_solver_per_graph_ms": 7000,
+    "max_RAM_GB": 1.5,
+    "outputs": ["outcomes/N357_EXACT_SERIALIZATION_RESULTS.json","outcomes/N357_PYTHON_ORACLE.json"],
+    "no_overwrite": true,
+    "executed": false
+  },
+  "F": {
+    "adversarial_cases": ["multi-pair legacy ULP problem including 72 edges", "empty graph string zero branch", "star graph matching cardinality one", "two odd disconnected components", "dense graphs with multiple tight candidate edges and discrete near-ties"],
+    "controls": "Independent Python exact Fractions and deliberate one-unit corruption of reported objective and residual.",
+    "failed_attempts": "Preserve results/errors and freeze modifications prospectively before rerunning; no hidden post-hoc repairs."
+  },
+  "G": {
+    "novelty": "Engineering fix and new versioned serialized numeric schema, in direct response to verified negative N356; new graph classes provide regression over nontrivial matching without redoing old simulation trajectories.",
+    "schema_breaking_change": "full_units_in_2_power_minus52 is now a decimal string, not a JS Number; full_units_schema_version=2 and full_units_format=decimal_bigint_string. Downstream consumers must accept new type.",
+    "constraints": "Do not alter byte-identical ESBM original, SRC104, N339/N356 frozen sources or old outcomes."
+  },
+  "H": {
+    "source_update": "No new human source in this cycle",
+    "prior": "P-ALLOCATION-RULE technical provenance; NO_CHANGE_WITH_REASON for claims about real humans."
+  },
+  "I": {
+    "scientific_CT2": 7,
+    "human_STOP_R5": true,
+    "scientific_grade": "0/3",
+    "R5_new_human_validation": false
+  },
+  "J": {
+    "campaign": "AB-H PIVOT N357–N376 authorized 2026-10-31",
+    "cycle_count_if_valid": 1,
+    "no_redundant_cycles": true,
+    "no_SSJY_or_Codex": true,
+    "no_license_acceptance_or_author_contacts": true,
+    "no_merge_experimental_to_main_or_expensive_CI": true
+  }
+}
