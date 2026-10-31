@@ -1,0 +1,61 @@
+{
+  "cycle": "N355",
+  "date": "2026-10-31",
+  "status": "SHA_FROZEN_BEFORE_VALIDATOR_EXECUTION",
+  "A": {
+    "question": "Can a separately coded Python full-state oracle reconstruct all twelve official N354 synthetic long-lived GALE–SHAPLEY DA worlds from recorded directed events and frozen shocks, including stability, exposure, proposal/response, feedback, dissolution, stocks, duration and summary metrics?",
+    "unit": "Six original seeds × F/M proposing complete N144/T16/K7 heterosexual restricted 16tick worlds, 192 matching ticks",
+    "human": false
+  },
+  "B": {
+    "main_comparator": "N354 native TypeScript DA 12 complete runs and full directed logs, code frozen before N354",
+    "independent": "Python observer adapted from prior independently validated N349 state checker, with independent N351 Python Gale–Shapley and exact blocking check; no import of TypeScript or Python ESBM original simulator",
+    "strong": "All source input shocks verified SHA, every directed event timestamp actor and threshold recomputed."
+  },
+  "C": {
+    "primary": "12/12 complete TS trajectories fully reconstructed by independent Python with exact per-tick matching pairsets and zero blocking under the same assumed strict rankings; at least all 192 matching ticks; every directed and probabilistic event, history, duration and aggregate checked",
+    "falsifier": "Any invalid matching allocation, stability certificate false positive, wrong actor-level event or wrong shock/probability, duplicate partner, track or duration difference, or injected proposal mutation undetected.",
+    "provenance": "Original TS results were generated in N354 with SHA before this N355; not fresh blind dataset, but cross-language state parity test."
+  },
+  "D": {
+    "new_code_sha256": "88c82f7747e54bff9b1cb1db31127b6fc613e72b9c4d7bfe6b158754493298e3",
+    "new_code_commit": "7b6ce470df1afcb62ad902a46568d57354ebf5d8",
+    "original_Python_independent_N351_DA_sha": "e9b5d2ddfdfe6b786220fd32606047860930c2b19d9dd6751f0e6367acb81805",
+    "original_N349_validator_SHA": "03b6df126d3b34330b74e057676de9fe967659f2b68aa32049bbf602d69657d2",
+    "TS_N354_index_sha": "1d5bf0bde62cf85a61cbdfdc6a47d49f153a95b1eefa3ad7b484fb4938001ef1",
+    "original_input_manifest_SHA": "84a52580add085ab551dacf6e4cd3fdfc80be8eeaf187c7d3e4b25be208e42bf"
+  },
+  "E": {
+    "command": "py -3.13 instrument/n355_independent_DA_validator.py",
+    "wall_seconds": 60,
+    "ram_gb": 2,
+    "output": "outcomes/N355_INDEPENDENT_DA_VALIDATOR.json",
+    "already_executed": false
+  },
+  "F": {
+    "mutants": [
+      "Flip actual proposal choice in memory without changing shock; must detect"
+    ],
+    "controls": [
+      "One-to-one actor partner constraints every tick",
+      "Source 12 input SHA and each 24 raw result/trace SHA",
+      "Independent Python DA algorithm and blocking check",
+      "All 192 track state balances"
+    ],
+    "interpretation": "A single fake-second-partner assert alone is not considered a substantive adversarial mutation."
+  },
+  "G": {
+    "distinct_from_N349": "N349 independently audited chronological greedy worlds; N355 independently audits new DA with assumed ranks and blocking on full endogenous dynamics; no human data."
+  },
+  "H": {
+    "prior": "P-ALLOCATION-RULE, NO_CHANGE_WITH_REASON for real dating validation"
+  },
+  "I": {
+    "CT2": 7,
+    "STOP_R5_human": true
+  },
+  "J": {
+    "slot_count": "One AB-H N355 if truly executed with outcome hashes; N356 only if distinct R5 evidence or technical falsifier",
+    "no_SSJY_Codex_license_acceptance_contact_merge_expensive_CI": true
+  }
+}
