@@ -1,0 +1,71 @@
+{
+  "schema": "ABH_N347_AJ_SHA_PREOUTCOME",
+  "date": "2026-10-31",
+  "cycle": "N347",
+  "state": "BEFORE_COUNTERFACTUAL_SHADOW_OUTCOMES",
+  "A": {
+    "question": "Conditional on all 960 actually accepted directed original ESBM offers, does the institutional centralized exact maximum-cardinality matching select more partners and different identities than decentralized first-come pair acceptance under event chronology, and how sensitive is that conditional allocation to reversing offer order?",
+    "unit": "Each tick of the actual 60 N144 synthetic ESBM trajectories; hold actual acceptance events and u_match fixed, reassign only matching protocol within tick, no full dynamic rollout.",
+    "interpretation": "Mechanistic dependency of simulated allocation rule, NOT a causal human estimate."
+  },
+  "B": {
+    "rivals": [
+      "original central max cardinality+tiny residual weight from unmodified original Python and independently certified N343",
+      "decentralized immediate binding pair formation in chronological accepted response order",
+      "decentralized reversed chronological accepted response order as prespecified order sensitivity control"
+    ],
+    "prohibited_confusion": "DA Gale-Shapley requires ordinal preference lists, not inferred from multiple non-exclusive accepts. These sequential protocols are legitimate toy no-preference accept-first contracts, not inferred actual behavior."
+  },
+  "C": {
+    "primary": "Across all 960 fixed matching graphs compute cardinality and pair identity overlap for chronological and reversed vs centralized, count conditional match losses and allocations differing; no negative if central dominates because built by design. Relevant discriminant is actual frequency/size of deviations under original ESBM shock realization.",
+    "fail": "Original central match contains non-mutual/duplicate pair, any sequential cardinal exceeds exact central, source SHA mismatch or invalid actor; preserve false or zero deviations.",
+    "limits": "Sequential shadow is NOT a complete counterfactual ESBM time path because original opportunities and responses wouldn't be invariant to earlier alternative partner assignments; avoid presenting longitudinal effects without separate fully dynamic new run."
+  },
+  "D": {
+    "new_code_SHA": "fc6889a61566a4bb5e95fbf3817d13a87c39c82097cc12fee95ef2e826ce64d4",
+    "source_commit": "a707d059fc05ee7e186679c87d19031f8ed8cc00",
+    "source_native_index_SHA": "89e221ab34c1a3c08ff04c8902268946f1b40cf6230cea224a907d9e96bd776b",
+    "source_original_frozen_shocks_manifest": "84a52580add085ab551dacf6e4cd3fdfc80be8eeaf187c7d3e4b25be208e42bf",
+    "N343_exact_original_matching_graph_oracle_SHA": "8392510bba676593c93fe2aebf46d9e9e2fcad03c48929669f3e45819afff7de"
+  },
+  "E": {
+    "command": "py -3.13 instrument/decentralized_allocation_shadow.py",
+    "unit_time_tick": 960,
+    "outer_wall_seconds": 120,
+    "max_memory_GB": 2,
+    "new_people_or_ESBM_runs": 0,
+    "output": "outcomes/N347_CONDITIONAL_ALLOCATION_PROTOCOLS.json"
+  },
+  "F": {
+    "adversarial": [
+      "Self pairing fake accepted event raises invalid edge error",
+      "All central chosen edges must occur among true accepted edges",
+      "Forward and backward chronological protocols are maximal matchings, with cardinality bounded by exact central max",
+      "Do not conflated pair identity difference with welfare or with empirically observed real matchmaking"
+    ],
+    "uncertainty": "Report per seed and per scenario conditional differences without making population causal confidence claims."
+  },
+  "G": {
+    "novelty_vs_N317": "Previous N317 decentralized-vs-central theoretical toy n8 bipartite ordinal preference markets; N347 uses actual ESBM historical n144 proposals+responses with directed chronology and 960 real model matching graphs, no new human data."
+  },
+  "H": {
+    "prior_id": "P-ALLOCATION-RULE",
+    "direction": "Qualitative synthetic new architectural sensitivity; no CT2 human increase, tag NO_CHANGE_WITH_REASON."
+  },
+  "I": {
+    "CT2_scientific": 7,
+    "STOP_R5_human": true,
+    "scientific_grade": "0/3"
+  },
+  "J": {
+    "one_cycle": "Count N347 only if actual 960 shadow analyses with SHA and receipt; don't inflate by treatment/tick. N348–N356 9 slots if spent.",
+    "forbidden": [
+      "SSJY",
+      "Codex",
+      "licence acceptance",
+      "author contact",
+      "research-branch merge into main",
+      "expensive CI"
+    ]
+  }
+}
