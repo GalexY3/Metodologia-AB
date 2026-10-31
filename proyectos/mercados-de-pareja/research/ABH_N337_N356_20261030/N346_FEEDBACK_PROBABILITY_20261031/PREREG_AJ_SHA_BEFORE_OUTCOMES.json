@@ -1,0 +1,72 @@
+{
+  "schema": "ABH_N346_AJ_SHA_BEFORE_OUTCOMES",
+  "date": "2026-10-31",
+  "cycle": "N346",
+  "state": "PREOUTCOME",
+  "A": {
+    "question": "Does independently calculated probability for every original ESBM send/reply/dissolve decision, its exact PCG64 shock, and longitudinal private/public rejection feedback agree with the 60 native directed-event streams? What is the numerical distance between shock and threshold, and which feedback direction do the hard-coded mechanisms impose?",
+    "unit": "All 871914 native directed events of 60 historical N144 T16 K7 synthetic trajectories; independent event-driven reconstruction of biases and probabilities, not rerun of original ESBM."
+  },
+  "B": {
+    "baseline": "N342 native Python decision events and historical result final bias/public means, frozen outputs",
+    "challenger": "Independent pure Python math with freshly programmed sigmoid, utility and hazard, streaming rejection state and tensor memmap, not imported ESBM or JS runtime",
+    "mechanistic_competitors": [
+      "No private feedback control scenarios",
+      "private rejection +0.08 lowers aspiration and raises send probability (hypothesized)",
+      "public rejection -0.08 reputation lowers reply probability (hypothesized)"
+    ],
+    "caution": "Not evidence of real-world human responses"
+  },
+  "C": {
+    "primary": "60/60 streams: each u_expose/u_send/u_reply/u_hazard exactly equals frozen tensor, each send/reply/dissolve p within 1e-12 of stored native P and Boolean equals u<p, and final private_bias and public_score means equal original metrics within 1e-12. Record exact minimum decision margin and counts <=1e-12, <=1e-9, <=1e-6.",
+    "falsifier": "Any first divergence in exact shock, probability >1e-12, threshold Boolean, scenario-specific feedback updates, final mean or trial count, retain negatives and limits."
+  },
+  "D": {
+    "code_file_sha256": "ec70851f0d707c06a22a20fad56121e05c367467c16c377449d2a24dc39d57fb",
+    "code_preregistered_git_commit": "5e4bd42b0e649ebc8a286552dc11b011f6302553",
+    "original_native_index_sha": "89e221ab34c1a3c08ff04c8902268946f1b40cf6230cea224a907d9e96bd776b",
+    "frozen_input_manifest_sha": "84a52580add085ab551dacf6e4cd3fdfc80be8eeaf187c7d3e4b25be208e42bf",
+    "original_source_sha": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+  },
+  "E": {
+    "command": "py -3.13 instrument/verify_decision_feedback_hazard_60.py",
+    "expected_runs": 60,
+    "expected_directed_events": 871914,
+    "max_wall_seconds": 180,
+    "max_memory_gb": 2,
+    "output": "outcomes/N346_DECISION_FEEDBACK_HAZARD_ORACLE.json",
+    "no_simulator_executions": true
+  },
+  "F": {
+    "negative_controls": [
+      "Private rejection p(send) before/after must increase if not at cap",
+      "Public rejection p(reply) before/after must decrease if not at floor",
+      "Examine margin nearest actual threshold to flag numerical fragility",
+      "Original shock values read independently from five immutable tensors and matched exactly"
+    ],
+    "adversarial_resource": "No expensive CI, no author access or data exfiltration."
+  },
+  "G": {
+    "novelty": "N342 compared Python vs TS event outputs; N346 verifies utilities/probabilities against an independently coded event-driven state machine with original tensors and checks direction of private/public feedback and hazard. N345 previously verified exposure/riskset; this tests decision probability and learning, not repeated exposures.",
+    "human_new": 0
+  },
+  "H": {
+    "prior": "P-TRAJECTORY-INVARIANCE and P-CROSS-STAGE as appropriate, only qualitative synthetic mechanism QA; no new human calibrating posterior"
+  },
+  "I": {
+    "CT2_scientific": 7,
+    "STOP_R5_human": true,
+    "new_human_grade": "0/3"
+  },
+  "J": {
+    "count": "Only one N346 if actual 60 state-chain results and SHA; preserve negative, remaining N347–N356 ten slots if valid.",
+    "restrictions": [
+      "SSJY",
+      "Codex",
+      "License acceptance",
+      "Author contact",
+      "Merge research to main",
+      "Expensive CI"
+    ]
+  }
+}
