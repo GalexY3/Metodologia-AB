@@ -1,0 +1,25 @@
+{
+  "cycle": "N350",
+  "state": "PROSPECTIVE_V3_FROZEN",
+  "github_source_commit": "f42fb71667a597de5fc29185bbeedb1bd5dff61c",
+  "source_sha256": "490068e0a9dd60f0c52238526132e6889dd1ee5b7fd6f082d1e61ba88879246c",
+  "previous_attempts_invalid": 2,
+  "previous_errors": [
+    "INVALID_DUAL_SHAPE original serialized witness keys",
+    "EXACT_OBJECTIVE_UPPER_BOUND_EXCEEDED caused using witness incident n109 rather than frozen source n144"
+  ],
+  "previous_attempts_mutations_executed": 0,
+  "original_prereg": "5348df004ec012ba9de240d0aafc9fb01a4f5809",
+  "v1": "dfa4b28b5423a4f76b49bffcfe7474f7bb83c40da938137c91fac4eb26ed8f25",
+  "v2": "a478727e7bbe2b10d491c35bae008dcb9c08d89a306422b967fa2c2c4358a1e7",
+  "v3": "490068e0a9dd60f0c52238526132e6889dd1ee5b7fd6f082d1e61ba88879246c",
+  "graph_sha": "875d3fdc70f07ae65c906221d8e7c8c4b37cbeb5106939c41604ba0d3bd1378b",
+  "existing_witness_result_sha": "b7d3f483e90e956129e7197c72a23096512b4faff0facc34344cd5cd96951a2a",
+  "allowed_changes": [
+    "serial witness field mapping",
+    "use full source graph n for safe upper bound",
+    "set attacked upper bound to exact primal-1"
+  ],
+  "CT2": 7,
+  "STOP_R5": true
+}
