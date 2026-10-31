@@ -2,21 +2,25 @@
   "schema": "ABH_N337_N356_R5_SOURCE_SCREEN_2026_10_30",
   "previous_campaign": "N317-N336 20/20 executed",
   "branch": "research/ab-h-esbm-r5-evidence-gate-n337-n356-20261030",
-  "source_registry_count": 117,
+  "source_registry_count": 119,
   "prior_registry_count": 35,
-  "update_registry_count": 213,
-  "candidate_records_screened": 13,
+  "update_registry_count": 219,
+  "candidate_records_screened": 14,
   "new_source_ids": [
     "SRC115",
     "SRC116",
-    "SRC117"
+    "SRC117",
+    "SRC119"
   ],
   "documentary_updates": [
     "U209",
     "U210",
     "U211",
     "U212",
-    "U213"
+    "U213",
+    "U217",
+    "U218",
+    "U219"
   ],
   "new_original_eligible_romantic_holdout_count": 0,
   "licensed_raw_datasets_downloaded": 0,
@@ -24,10 +28,10 @@
   "authors_contacted": 0,
   "SSJY_used": false,
   "Codex_used": false,
-  "AB_cycles_executed": 0,
+  "AB_cycles_executed": 19,
   "AB_cycles_invalid": 0,
   "AB_cycles_planning": 0,
-  "AB_cycles_pending": 20,
+  "AB_cycles_pending": 1,
   "AB_grant_range": "N337–N356",
   "CT2_science": 7,
   "STOP_R5_human": true,
@@ -202,6 +206,31 @@
       "decisive_blocker": "Study narrative real dates but DataverseNL file metadata/rights/native bilateral keys unverified; anti-bot access previously failed.",
       "scientific_update": "NO_NEW_ROMANTIC_HOLDOUT",
       "cycle_count": 0
+    },
+    {
+      "id": "SRC119",
+      "name": "Hoffmann et al. (2024), Dual Eye-Tracking Speed Dating Study, OSF vzx6q",
+      "romantic_context": true,
+      "opportunities_in_public_description": true,
+      "observed_exposure_denominator": "4 assigned real encounters per 60 Subjects, each of 8 preassigned partners seen 30 times",
+      "two_native_votes_in_public_description": true,
+      "raw_file_access_and_sha_verified": true,
+      "original_raw_file_sha256": "3de995b8f8abc24908244d770009e600207d6b7940b4a91ff0b82573e45c9f01",
+      "original_R_script_sha256": "de0d558c79a4e530070006575534d8be2b922c05e5acd0700a63e21a649ed67a",
+      "observed_actual_dates": 240,
+      "mutual_yes": 10,
+      "choice_missing": 0,
+      "nonromantic_laboratory": false,
+      "temporal_sequence_native_verified": false,
+      "reuse_rights_data_specific_verified": false,
+      "all_R5_gates_passed": false,
+      "decisive_blocker": "Original 31-column SPSS contains no Round/sequence/time/trial/session; participant-level dated order unknown, cannot fit prospective dynamic exposure/rejection model; OSF metadata no verifiable data license; DA complete ordinal rankings and exclusivity not recorded. Cannot lift human STOP_R5.",
+      "scientific_update": "ORIGINAL_HUMAN_DATA_FOUND_PARTIAL_R5_ZERO_LIKELIHOOD_UPDATE_WITH_REASON",
+      "cycle_count": 0,
+      "privacy": "Only aggregated schema/counts published, no participant IDs or human rows; original raw in user's approved PC workspace."
     }
-  ]
+  ],
+  "raw_human_rows_inspected_locally": 240,
+  "raw_human_rows_published": 0,
+  "note_date": "2026-10-31 appended aggregate-only SRC119 human source; R5 false due native order and rights"
 }
