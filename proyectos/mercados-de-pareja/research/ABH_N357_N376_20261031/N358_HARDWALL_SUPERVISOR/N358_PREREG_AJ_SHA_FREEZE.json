@@ -1,0 +1,71 @@
+{
+  "schema":"ABH_N358_PROSPECTIVE_A_J_V1",
+  "cycle":"N358",
+  "date":"2026-10-31",
+  "status":"NOT_EXECUTED_COMMIT_BEFORE_OUTCOMES",
+  "A":{
+    "question":"Does a synchronous weighted-Blossom backend have an enforceable wall-time and output-memory budget, and can an isolated subprocess supervisor terminate stalls while preserving exact certified successes and rejecting malformed worker responses?",
+    "unit":"Eight distinct deterministic process-level adversarial controls: three real matching, forced 2s stall, 1ms budget, corrupt JSON, injected crash, stdout flooding.",
+    "context":"Existing Blossom matching checks maxWallMs only after blossom.withState returns, hence is not a preemptive hard bound.",
+    "human_validation":false
+  },
+  "B":{
+    "intervention":"New nonhistorical subprocess adapter using spawnSync timeout and --max-old-space-size plus bounded stdin/stdout and schema validation; no modifications to ESBM original or frozen N339-N357 files.",
+    "comparators":"Explicit controls in independent child processes and separate Python rational oracle for three bona fide successful matching outputs.",
+    "not_repeating":"No N144/T16 full simulation, no N337-356 historical runs, no repeating earlier Boost SIGSEGV fixtures."
+  },
+  "C":{
+    "primary":"Eight tests return their predetermined status: PASS x3, RESOURCE_HARD_WALL x2, INVALID_WORKER_JSON x1, WORKER_FAILURE x1, RESOURCE_OUTPUT x1.",
+    "time_falsifier":"A deliberately stalled child must be terminated by parent before 1750ms despite its 2000ms CPU stall, and the same applies to a 1ms budget on real matching.",
+    "certification_falsifier":"Any failure status includes a certified matching or any successful control fails Python exact objective verification.",
+    "interpretation":"Only process-level enforcement on this Windows/Node environment; not universal OS-level guarantee or sociological evidence."
+  },
+  "D":{
+    "runner_SHA256":"5798b7939a4e51e733f2b00baea785db0e1d99404b604317abd6fe3b066e0a12",
+    "worker_SHA256":"8c1a3c6387ad13740b6778e04b67ea839182dc5438f35bda28a0db7304fbc023",
+    "experiment_SHA256":"3e3c8616144a2fa3fe17caa2cc53187f3fba55ef9bc59bc498bf89552f865cbd",
+    "python_auditor_SHA256":"eb4c78ff6ecc3f3bd3635ed90f19617724156739dd80b9ae7d65117afb460479",
+    "patched_Blossom_SHA256":"feacf8ea1399b0425b0692549cc6fc7bbbabf285ad70e3e374828e0b33d1dbf6",
+    "ESBM_original_SHA256":"f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+    "freeze_commit":"TO_BE_COMMITTED_AND_CONFIRMED_BEFORE_ANY_TEST",
+    "fixture_generation":"New deterministic source literals: empty144, star144 and sparse n144 function using fixed integer hash formula; four adversarial worker modes without human data."
+  },
+  "E":{
+    "cwd":"C:/Users/Nitropc/CoS-Prueba/ESBM_ABH_N357_N376_20261031",
+    "commands":["node instrument/n358_hardwall_experiment.mjs","py -3 instrument/n358_independent_supervisor_audit.py"],
+    "output":["outcomes/N358_HARD_WALL_RESULTS.json","outcomes/N358_INDEPENDENT_AUDIT.json"],
+    "max_total_wall_seconds":90,
+    "max_matching_wall_ms":9000,
+    "worker_stall_duration_ms":2000,
+    "worker_stall_timeout_ms":300,
+    "worker_stall_assert_elapsed_lt_ms":1750,
+    "worker_heap_mb":128,
+    "max_default_stdout_bytes":262144,
+    "no_overwrite":true
+  },
+  "F":{
+    "positive_controls":["empty graph returns 0 exact string and certified", "star n144 returns single match and certified", "nontrivial sparse n144 has certified matching and objective verified by Python fractions"],
+    "negative_controls":["2s CPU stall interrupted before deadline","real matching killed under 1ms hard budget","invalid JSON rejected","crashing worker rejected","stdout overflow rejected"],
+    "fault_handling":"Any mismatch is preserved as negative/invalid as appropriate. No changing timeout thresholds after seeing failures without separate prereg and explicit invalid attempt log."
+  },
+  "G":{
+    "novelty":"This assesses real watchdog preemption and fail-closed worker isolation, rather than the N357 exact serialization field or prior N339 primal-dual algorithm optimality.",
+    "limitations":"Native subprocess startup and OS scheduling contribute to observed wall, not a real-time bound. No deployment into historical Python or TS ESBM simulation is claimed."
+  },
+  "H":{
+    "prior":"P-ALLOCATION-RULE: technical resource robustness update only, NO_CHANGE_WITH_REASON for human mechanism.",
+    "sources":"No new human source; DOC-only SRC106 view-only original code remains R5-blocked."
+  },
+  "I":{
+    "CT2_scientific":7,
+    "STOP_R5_human":true,
+    "scientific_grade":"0/3"
+  },
+  "J":{
+    "authorized":"N358 is within already approved N357–N376 20 AB-H cycles",
+    "count_only_if":"Prereg and code frozen on GitHub BEFORE execution, eight outcomes plus Python independent receipt, hashes and ledger recorded.",
+    "no_SSJY":true,"no_Codex":true,"no_license_acceptance":true,
+    "no_author_contact":true,"no_merge_to_main":true,"no_expensive_CI":true,
+    "no_original_model_changes":true
+  }
+}
