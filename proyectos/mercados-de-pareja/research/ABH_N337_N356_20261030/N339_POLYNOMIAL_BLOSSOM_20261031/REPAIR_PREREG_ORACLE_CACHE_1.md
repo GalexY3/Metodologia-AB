@@ -1,0 +1,9 @@
+# N339 · reparación prospectiva del verificador independiente, no del solver
+
+Fecha 31/10/2026. **Antes de repetir cualquier comparación de óptimos en Python**, se registra una errata de instrumentación en el código del oráculo `instrument/python_poly_oracle.py`, SHA256 `FB3F09B51238F2DEB5EC479F397D908B12B15D7737AB75E679B7997BCA531259`, ya congelado en el prerregistro A–J `b8ac80c4bfe73c77088c80cb4f1e966f90e120a4`.
+
+**Historial real:** el motor MIT JS Blossom ya ejecutó los 12 grafos y escribió `outcomes/N339_POLY_GRAPHS.json` con SHA256 `B7D3F483E90E956129E7197C72A23096512B4FAFF0FACC34344CD5CD96951A2A`. El proceso Node reportó `EXECUTED` en los 12, pero **todavía NO se ha calculado ni leído ninguna comparación Python de objetivos o certificados**, porque el oráculo cayó al entrar en la función `verify_primal_dual`, antes de la primera comprobación, con `TypeError: the first argument must be callable` debido a `@functools.cache(None)`.
+
+**Cambio permitido y único:** en las dos funciones locales `leaves(x)` y `ancestors(v)`, sustituir la cadena exacta `@functools.cache(None)` por `@functools.cache`. No alterar otro código, datos, parámetros, casos, código JS ni outcomes. Conservar código del primer oráculo bajo SHA original y traza del fallo. Ejecutar `py_compile`, comprobar hash actualizado, publicar fuente+SHA en GitHub **antes de ejecutar el oráculo reparado**, y finalmente volver a verificar los 12 grafos con el mismo resultado JS inmutable.
+
+**Contabilidad AB:** el primer intento de auditoría del ciclo N339 es `INVALID_INSTRUMENTATION_ATTEMPT`; no consume una segunda plaza N340 ni invalida automáticamente los 12 resultados JS ya ejecutados. N339 se considerará válido solamente si la auditoría reparada arroja recibo y si el contrato de comparación primaria permanece idéntico. Se conserva el error y se prohíbe editar resultados para forzar coincidencias. CT2 7/100, STOP_R5 humano.
