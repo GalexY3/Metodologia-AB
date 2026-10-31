@@ -1,0 +1,81 @@
+{
+  "schema": "N351_ABH_AJ_PREOUTCOME",
+  "date": "2026-10-31",
+  "cycle": "N351",
+  "executed": false,
+  "A": {
+    "question": "On the 96 native ESBM synthetic opposite-sex bilateral-YES eligibility graphs, does Gale–Shapley DA with independently assumed complete ranked acceptable lists differ in stability, cardinality and pair identity from central maxcard matching and chronological greedy immediate offers?",
+    "units": "6 original people(seed) ×16 original exposure/response ticks under heterosexual_restricted; six participant seed clusters, same frozen 96 market inputs",
+    "limitation": "Preference rankings are synthesized from q receiver, age distance and norm; cannot read ordinal preferences from yes/no events"
+  },
+  "B": {
+    "comparators": [
+      "Central original exact maxcard+integer weight from native ESBM saved matching",
+      "NetworkX independent exact max cardinality for 96 cases",
+      "Gale-Shapley women-proposing and men-proposing separately coded",
+      "Sequential greedy forward and reversed original directed response order"
+    ],
+    "preference_construction": "q(partner) − 0.02|age gap| +0.03 same norm -1e-7 partner id as STRICT ASSUMED directional ranks; only mutual YES edges acceptable",
+    "protocol": "One-to-one irreversible assignment per tick; not longitudinal because later exposures change."
+  },
+  "C": {
+    "primary": [
+      "Both DA matchings stable (zero blocking pairs) on all cases with incomplete strict mutually acceptable lists",
+      "Compare DA cardinality F/M against each other and original central max matching",
+      "Counts blocking pairs for central, greedy forward and reverse; pair identity changes",
+      "No causal statement about real dates, no DA inferred from observed yes-only decisions"
+    ],
+    "adversarial": [
+      "Deduplicate reciprocal directed yes reports into one undirected dyad edge",
+      "Eligibility only between F and M, no X or same gender accepted",
+      "No actor assigned twice, every matched edge admissible",
+      "Independent networkx cardinality comparator"
+    ],
+    "multiplicity": "96 markets dependent by 6 seed clusters, descriptive comparisons only; no p-value claims or 96 independent humans"
+  },
+  "D": {
+    "python_producer_sha256": "972b65b2abc3f6348e474589083215a26dd1e92887fd96827f1e4510ba4511a5",
+    "python_mechanism_sha256": "e9b5d2ddfdfe6b786220fd32606047860930c2b19d9dd6751f0e6367acb81805",
+    "frozen_input_96_graphs_sha256": "42c24b43bde724d0609d816a57f6287c17c0f201705382031d8f00cecfe28d35",
+    "input_bytes": 524982,
+    "source_frozen_git_commits": [
+      "f21cb3e574a095931f3a469892ff500eb9a8d432",
+      "225ef6d1c42e154ed8c8425eb73764d0e67eed2a"
+    ],
+    "reference_original_native_index_sha": "89e221ab34c1a3c08ff04c8902268946f1b40cf6230cea224a907d9e96bd776b",
+    "source_input_manifest_sha": "84a52580add085ab551dacf6e4cd3fdfc80be8eeaf187c7d3e4b25be208e42bf"
+  },
+  "E": {
+    "command": "py -3.13 instrument/n351_da_central.py",
+    "wall_seconds": 80,
+    "memory_gb": 2,
+    "inputs_derived_before_prereg": true,
+    "outputs_expected": "outcomes/N351_DA_CENTRAL.json",
+    "no_outcome_ran": true
+  },
+  "F": {
+    "strong_tests": "True DA stability checker independently tests all blocking pairs; NetworkX independently recomputes cardinality; per-actor sex and dedup assertions; preserve nonzero blocking central as scientific contrast, not failure"
+  },
+  "G": {
+    "known_limits": "Roth/Sotomayor proposer effect and Rural Hospitals stable cardinality theorem are known; novelty is quantitative mechanism distinction under exact ESBM native accepted-opportunity sets, not rediscovery of stable matching theorem."
+  },
+  "H": {
+    "prior": "P-ALLOCATION-RULE technical only; U update no human confidence uplift."
+  },
+  "I": {
+    "CT2_scientific": 7,
+    "STOP_R5_human": true,
+    "new_human_grade": "0/3"
+  },
+  "J": {
+    "slot": "N351 counted only if executed and full audit saved; N352–N356 still authorized",
+    "avoid": [
+      "No SSJY",
+      "No Codex",
+      "No licence acceptance",
+      "No author contact",
+      "No experimental merge main",
+      "No costly CI"
+    ]
+  }
+}
