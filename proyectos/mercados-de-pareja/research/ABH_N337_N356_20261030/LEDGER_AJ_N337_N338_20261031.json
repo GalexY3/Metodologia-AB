@@ -1,0 +1,319 @@
+{
+  "schema": "ABH_N337_N356_AJ_POSTOUTCOME_LEDGER_V1",
+  "date": "2026-10-31",
+  "branch": "research/ab-h-esbm-r5-evidence-gate-n337-n356-20261030",
+  "authorization": 20,
+  "technical_valid_executed": 2,
+  "technical_positive": 1,
+  "technical_negative": 1,
+  "invalid": 0,
+  "planning": 0,
+  "remaining": 18,
+  "cycles": [
+    {
+      "id": "N337",
+      "status": "VALID_TECHNICAL_PASS",
+      "preoutcome_freeze_commit": "732d628dc8aa9f24620206c352eed5705fa40521",
+      "A": {
+        "question": "Does unmodified original Python ESBM simulate() produce exactly the same formed partner pairs by tick and all output result fields as a separate N207-era TypeScript implementation on identical controlled small-N synthetic people and shocks?",
+        "unit": "Seed-scenario synthetic N=8,T=6,K=3 runs (6 predetermined seeds × 10 historical scenarios =60), repeated agents across scenarios",
+        "outcome_true": "Python original function returned values and NetworkX pairs, TypeScript independently coded event loop and exact subset matching",
+        "warning": "NOT official N=144 and NOT historical N237 TS blossom; synthetic only"
+      },
+      "B": {
+        "rivals": [
+          "Native Python/NumPy/NetworkX original function SHA preserved, only globals N/T/K and people supplier injected via memory",
+          "Distinct TypeScript N207 engine SHA frozen, exact memoized subset matching and hand-coded state transitions",
+          "Null: divergence due to selection/shock indexing, numerical threshold crossing, tie handling or solver difference"
+        ],
+        "independence": "Separate programming languages/solvers, but shared inputs and synthetic assumptions; no independent people"
+      },
+      "C": {
+        "primary": "For each of 60 cases compare 6 tick formation pair sets then all fields of full output result and track, exact integers and abs ≤1e-9 on floats; report first difference",
+        "controls": [
+          "All 60 cases and ten fixed scenario names in source script",
+          "Mutation of one native track[0].impressions count must be detected at correct path",
+          "Any TS exception or nonuniqueness diagnostic is counted as negative/incomplete, never silent parity",
+          "No outcome-driven seeds, parameter adjustments or exclusions"
+        ],
+        "falsifier": "At least one case with pair identity, result field or TS execution mismatch; aggregate agreement cannot mask individual mismatch"
+      },
+      "D": {
+        "original_ESBM_sha256": "F7E6B84000720CBDF2EE0800C2B10D136185FACD00E4622756CBB5F8D8254D0B",
+        "fixture_manifest_sha256": "C4866866AABB1FCBF14CBDB48288B8C67C38D113053DFA0070BD919CF9F8DAA5",
+        "six_fixed_inputs_sha256": {
+          "seed_101.json": "43E627A166A3E1EBE2BF7F5105EE526B449D54038BF626B2E8BB05291AFA163B",
+          "seed_211.json": "0BC2B23DA54AB0D18690529D793D3D5E6A7BBC4E8101E3CDCE6492384B5DE7A9",
+          "seed_307.json": "780F598F3A973ED326B3C591D11E668FEF9469BD4656736F3A34BA8842269F73",
+          "seed_401.json": "A8CF203455A224FD8DF40AB1EBD35548E49AAA6A848A742F6A192A2A4F67D53D",
+          "seed_503.json": "BEE7C7104F5C96DBE8AFA093394DC0E04BB0C3B55A953DD0B3AB984CC132763E",
+          "seed_601.json": "0445921A30ECF270EE02B744AEF91A18721DD6C8CDA9AE6FE799002EA6D3E85D"
+        },
+        "driver_sha256": {
+          "esbm_dynamic.py": "F7E6B84000720CBDF2EE0800C2B10D136185FACD00E4622756CBB5F8D8254D0B",
+          "prepare_inputs.py": "153B1477C6A47F5554657834DDB15F2C1D8E8B1E6250E1279978FBDA0DAAB256",
+          "python_oracle.py": "7E594FBA42B85CF52E61155BB6B91F32143818305FBEE41FA99FE3F2E72FC1FE",
+          "ts_oracle.mjs": "14F42A38471E87017267C7C37507E1115832341F0271DB805994AE85C3A40068",
+          "audit_n337.py": "892E9F8917453BF49066792F403A9D38A4ED6A980B9C50BAA7E4AC645E3178EF",
+          "input_manifest.json": "C4866866AABB1FCBF14CBDB48288B8C67C38D113053DFA0070BD919CF9F8DAA5"
+        },
+        "typescript_13_module_sha256": {
+          "cli.ts": "12565688745FE35F555175BCB6E8A7DF781379590375D1672D2184295C3942F7",
+          "compare.ts": "3A4995049ECB1A5043ED3FB8E2C675DFF59F76929C8B79AF61DB9A806AD2D648",
+          "compatibility.ts": "AC88D8B7260AAA6396FC19AF92FC79C96CB5713BE16618494DB56186EA4F869B",
+          "decision.ts": "025298ADC76EED8A2A53EE821813BC3BF4E7DE8BEA6E4F17B90571CC80642CD3",
+          "engine.ts": "595251B0F86EAC29E793C08BD3A0F46E992C811445FC4307A47D786E3E22D5E8",
+          "fixtures.ts": "B41B830B0AB0F2B53F8475CDEEDB354D6BEBCE4F1D16571CB0EAA29247C8543E",
+          "io.ts": "9ED51249F575634A2E4D59FC394D036E04D24677B1FA3BD8059594B3DFD8994F",
+          "matching.ts": "1068A2F3D66C6D4B887A16F6CC13D50EFB5F03214C744C959D9DC8CDFB7380F2",
+          "metrics.ts": "1C38A21D2FEBDF7A5770BB4DC797CE1B7FBAF2EB68B467FDD51DE45D6BA3DC5A",
+          "provenance.ts": "84847346A05B70235C50CA042E6298A768026EE63FA2411CD6006120FEA87EA5",
+          "selection.ts": "FF63668658F99C7439FBD6920B83B79618CCDE5A6475D218D62703D54820598C",
+          "state.ts": "CF8E1D7D65CC0C7ACC89E4C06673D8CC0C56E75E29FAEC0B4EB3C63F6F24DC39",
+          "types.ts": "DFBA5E9ABDE658731043BE37A80699C484A720BBA097A4971BBD9F8EB1CD0983"
+        },
+        "local_typescript_git_head": "f3be098df714085c831ab2f1165d6322e30af685",
+        "source_package": "ESBM_W_ESBM01_N207_N216_CODIGO_CORREGIDO.zip nested in Windows installer v2, nested ZIP SHA256 4E463F200B164EDD7403EFC0A3E26CFC17DD2FDB1B1F67927505AE2555D74AC0",
+        "github_instrument_commits": [
+          "7457208712240f26f08658ab02a0d01ec0ea37af",
+          "f81820bc02a527dccc0abe8518155c80a809ce23",
+          "a48745547bb6e5ce08d1e2763b3eb4b2fd52a4e8",
+          "6f4f204758d165e279d7b06b6b371b662da72588",
+          "62b76c5a2a29944cb8ac804f4ac31304be68fe53"
+        ],
+        "local_copy_path": "C:\\Users\\Nitropc\\CoS-Prueba\\ESBM_AUDIT_N337_20261031",
+        "status": "CODE_AND_INPUT_SHA_PINNED_BEFORE_ANY_MODEL_EXECUTION"
+      },
+      "E": {
+        "commands": [
+          "py -3.13 python_oracle.py",
+          "node ts_oracle.mjs",
+          "py -3.13 audit_n337.py"
+        ],
+        "planned_outputs": [
+          "N337_PY_NATIVE.json",
+          "N337_TS_N207.json",
+          "N337_AUDIT.json"
+        ],
+        "executed_at_freeze": false,
+        "wall_limits": "≤60s Python, ≤90s Node, ≤20s audit; guard TS matching 2500ms/matching, 50000 states, component 8, heap 256MB, trace 10k events/8MiB per case",
+        "environment": "Windows 10.0.26200 PowerShell 5.1; Python 3.13.4, NumPy 2.4.3, NetworkX 3.6.1, Node 24.16.0",
+        "executed": true,
+        "raw_outcomes": {
+          "Python": "9f169762e73a369cc828272e4fca041dd87646ff6fd447ff660366911bc088b8",
+          "TypeScript": "e1b42c22b9debe2067cf0e31f3bd8c08eb5483513e890363f2dfcdc2b7a800d9",
+          "audit": "24b1e5595bc96ff3de3a486f9bc26a804abd58c47bc5d7bdfb18691bcc14654b"
+        },
+        "raw_archive_sha": "53bcb886bb1dc033a9cc16ee1d6afd8ecd178306966c3e8ce0ff6fa676796406",
+        "comparison_results": "60/60 full fields and 360 canonical pairs on synthetic N8 T6 K3"
+      },
+      "F": {
+        "adversarial": "Known mutation of result integer impressions must be detected; TS matching ties never converted into parities; every exception retained, no output overwrite",
+        "resources": "No CI, no installer/license acceptance, no Node npm install, no network requests",
+        "limit": "No RAM external telemetry unless measured; do not infer",
+        "observed": "360 TS unique optima; comparator mutation track0.impressions detected; no TS exceptions"
+      },
+      "G": {
+        "prior_art": "N207–N216 tested TypeScript units and toy matching, did NOT run Python original against actual full TS replay; N297 tested original against reconstructed Python, NOT TS",
+        "external_human_replication": false,
+        "original_N237_TypeScript_not_recovered": true,
+        "observed": "Complete independent Python-vs-N207 TS integration small synthetic, not official N144 or TS+Boost N237"
+      },
+      "H": {
+        "planned_prior": "P-TRAJECTORY-INVARIANCE",
+        "update_policy": "NO_CHANGE_WITH_REASON to human prior even if software passes; document novel technical parity or first divergence",
+        "sources": "No new human file",
+        "recorded_update": "U214",
+        "prior_probability_change": false
+      },
+      "I": {
+        "CT2_scientific_before": 7,
+        "CT2_after_prespecified": 7,
+        "STOP_R5_human": true,
+        "scientific_grade": "0/3",
+        "technical_level": "QA only",
+        "CT2_after": 7,
+        "new_human_grade": "0/3"
+      },
+      "J": {
+        "status": "PENDING_EXECUTION",
+        "if_executed": "Count N337 only once with receipt, code+fixtures SHA and first mismatch, leave N338–N356 pending",
+        "if_blocked": "Preserve all 20 slots, do not call PASS",
+        "no_SSJY": true,
+        "no_Codex": true,
+        "no_license_acceptance": true,
+        "no_author_contact": true,
+        "no_merge": true,
+        "decision": "CLOSE_TECHNICAL_PASS",
+        "slot_counted_once": true,
+        "remaining_after": 19
+      }
+    },
+    {
+      "id": "N338",
+      "status": "VALID_TECHNICAL_NEGATIVE_RESOURCE",
+      "preoutcome_freeze_commit": "9ee375c058cbeb3a678c403bcc2653207fc4690f",
+      "A": {
+        "question": "Does independent N207 Windows TypeScript engine with its exact subset solver reproduce actual byte-identical original Python ESBM for official n144 T16 K7 with shared frozen source-generated shocks?",
+        "unit": "One official synthetic seed 101, two fixed scenarios mixed_random and private_rejection_learning, 16 periods each",
+        "outcomes": "Partner pair identities per tick, all track/aggregate fields, operational feasibility and fail-closed resource handling",
+        "not": "NOT historical N237–N256 TS+Boost nor human validation"
+      },
+      "B": {
+        "rivals": [
+          "Original Python unchanged simulate() NetworkX float maximum cardinality solver",
+          "N207 TypeScript independent engine and exact binary64 subset recurrence (max component22)",
+          "Null: N207 hits size/time/resource limit or diverges by shock order, responses, matching tie or metric"
+        ],
+        "extra": "N237 previously tested aggregated historical Python vs TS+Boost; here independent earlier N207 TS and exact solver; no novelty claim for human dynamics"
+      },
+      "C": {
+        "data": "Original people(101) creates genders scopes norms q ages and five independent frozen tensors IEEE754 float64 C-order [16,144,144]",
+        "fixed_scenarios": [
+          "mixed_random",
+          "private_rejection_learning"
+        ],
+        "primary": "Both cases must complete and agree on 16 canonical pair sets, then all output fields exact integers and numeric tolerance1e-9",
+        "falsifier": "Any execution STOP/timeout, tie without uniqueness proof, pair divergence, field divergence; first difference preserved",
+        "selection_exposure": "Seed 101 was used in prior campaigns; NOT independent holdout, only software QA"
+      },
+      "D": {
+        "code_files_sha256": {
+          "prepare_official_101.py": "4668496FB7305B5BD48425D7620CE2C4C999DF10986B0429856F4BEDEB6E95D5",
+          "python_official_101.py": "E8045C356C3933C6CFCB9EB80D0013A4E1522998D4BA32310EEE1C849AF645E2",
+          "ts_official_101.mjs": "6DED9C9398E213400E30AA644F6C1E87376F372AFA026B007C00A5CDD1118F0D",
+          "audit_official_101.py": "71B590CC884E56DA030C5E9864E69C4354632ED963FAB8AFB5C48C71D6172A17",
+          "esbm_dynamic.py": "F7E6B84000720CBDF2EE0800C2B10D136185FACD00E4622756CBB5F8D8254D0B",
+          "N338_INPUT_MANIFEST.json": "075900F243F31E0306D7A72C2075A45818782FCBC860CD1A5C07A46439C2B994",
+          "audit_n337.py": "892E9F8917453BF49066792F403A9D38A4ED6A980B9C50BAA7E4AC645E3178EF"
+        },
+        "source_TS_N207_frozen_in_N337_prereg": "732d628dc8aa9f24620206c352eed5705fa40521",
+        "binary_inputs_sha256": {
+          "people_101.json": "DD16C739B3139F45DCC53D18AB36810E99BA98842C707764BC0A33CC9356249D",
+          "u_send_101.bin": "61468C812847A2C540FB3C8A472EA2E6A6B7C36AF328746640ED386B22FB60DF",
+          "u_reply_101.bin": "92C9D540136661AAD7C381A58D260F05CA9B328B060172F27D6278DA60F04E3D",
+          "u_hazard_101.bin": "3E8149CCBE4B10F38DFDFF85CC326DA5D7156BE7E6EA1D7079156A5988E85931",
+          "u_expose_101.bin": "FF6B5BC4B5D1D4B9651527C44476CD54080E73251F14FB6A003093271B8234CC",
+          "u_match_101.bin": "E30DDAD180210DA0BAD3A487FD593238DD0CA9CCD9824361B0376AA0F99FE0C9"
+        },
+        "frozen_github_code_commits": [
+          "15e6039ec35a3587f253c8ea86595a269a9081e6",
+          "0c156e290daaac5f6b7bcb8f75eff652347bb8d6",
+          "0c600b74659852a89e4ba7e426f54dc404311af5",
+          "cc2bab3dd403e43565155b2252f326221cb0fba4",
+          "b96e44da151239fd99e34147437354fd55dc1b8a"
+        ],
+        "windows_local_path": "C:\\Users\\Nitropc\\CoS-Prueba\\ESBM_AUDIT_N337_20261031"
+      },
+      "E": {
+        "commands": [
+          "py -3.13 python_official_101.py",
+          "node ts_official_101.mjs",
+          "py -3.13 audit_official_101.py"
+        ],
+        "expected_files": [
+          "N338_PY_OFFICIAL.json",
+          "N338_TS_OFFICIAL.json",
+          "N338_AUDIT.json"
+        ],
+        "wall_time_caps_seconds": {
+          "python": 45,
+          "typescript": 90,
+          "audit": 15
+        },
+        "TS_match_limits": {
+          "maxStates": 50000,
+          "maxComponentNodes": 22,
+          "maxWallMs_per_call": 2500,
+          "maxHeapBytes": 524288000
+        },
+        "trace_limits": {
+          "events": 80000,
+          "bytes": 134217728
+        },
+        "outcome_at_freeze": "NONE",
+        "executed": true,
+        "raw_outcomes": {
+          "Python": "b95e2727af8eecf54f52e026531ce7adc6686e73cd2f203fe804f60e728ed48d",
+          "TypeScript": "be54a38fca2f4b9f17bf20fddaa1a80f4b6095dc7837677d64a0057525de2eb2",
+          "audit": "ee61ffb56feca4e2fed3462cc94baf56e5651f251ef4100d9a10479825a183e6"
+        },
+        "raw_archive_sha": "bd535039aaf30e872c95e3601d8d1a17dc2a88d1da00ea38ded49251780a5f87",
+        "comparison_results": "0/2 complete; both N144 official cases original Python completed but TS stopped at t1 (COMPONENT:27>22) under fixed budget"
+      },
+      "F": {
+        "checks": "Exact source input arrays verified against canonical Python people(101), independent TypeScript float64LE read validates each file SHA, TS uniqueness statuses and no hidden fallbacks, exact partner identity/tick, every field with comparator, report resource errors as negatives",
+        "negative": "N207 solver may STOP due component>22, wall/heap limit; do not broaden on failure",
+        "observed": "Two frozen negative resource outcomes at t1, no cap adjustment; descriptive first-tick pair agreement 37/37 and 38/38"
+      },
+      "G": {
+        "independence": "Separate TS algorithm and Python original; same synthetic data; self-hosted Windows PC. No external human observation. Original N237 historical TS still absent.",
+        "prior_technical": "N337 N8 cross-language 60/60 agreement, N297 original Python vs reconstruction 60/60; this run tests new full N144 N207 exact-subset performance",
+        "observed": "N207 exact subset solver insufficient to complete full N144; historical N237 Boost TS untested"
+      },
+      "H": {
+        "planned_update": "P-TRAJECTORY-INVARIANCE qualitative NO_CHANGE_WITH_REASON for human validation even if technical PASS; no new SOURCES unless documentary",
+        "numerical_posterior": false,
+        "recorded_update": "U214",
+        "prior_probability_change": false
+      },
+      "I": {
+        "CT2_before": 7,
+        "CT2_after": 7,
+        "STOP_R5_human": true,
+        "scientific_grade": "0/3",
+        "new_human_grade": "0/3"
+      },
+      "J": {
+        "count_rule": "Spend one N338 only if actual bounded execution produces auditable full or failure receipt; no same-case retries after outcome except separate prereg; leave other 18 pending",
+        "prohibitions": [
+          "No SSJY",
+          "No Codex",
+          "No licence acceptance",
+          "No author contact",
+          "No main merge",
+          "No expensive CI"
+        ],
+        "resource_cleanup": "No background service; child Node process must be killed on 90s budget",
+        "decision": "CLOSE_VALID_NEGATIVE_WITH_SCOPE",
+        "slot_counted_once": true,
+        "remaining_after": 18
+      }
+    }
+  ],
+  "unopened_ids": [
+    "N339",
+    "N340",
+    "N341",
+    "N342",
+    "N343",
+    "N344",
+    "N345",
+    "N346",
+    "N347",
+    "N348",
+    "N349",
+    "N350",
+    "N351",
+    "N352",
+    "N353",
+    "N354",
+    "N355",
+    "N356"
+  ],
+  "independent_human_cohort_new": 0,
+  "CT2_scientific": 7,
+  "STOP_R5_human": true,
+  "scientific_grade": "0/3",
+  "prior_update": "U214",
+  "source_count": 117,
+  "prior_count": 35,
+  "updates_after": 214,
+  "no_SSJY": true,
+  "no_Codex": true,
+  "no_licence_acceptance": true,
+  "no_author_contact": true,
+  "no_merge": true,
+  "no_expensive_CI": true,
+  "remark": "N337 small-N Python-vs-TypeScript parity and N338 full-N144 TypeScript resource negative are technically useful and pre-frozen. Neither provides new independent human validation."
+}
