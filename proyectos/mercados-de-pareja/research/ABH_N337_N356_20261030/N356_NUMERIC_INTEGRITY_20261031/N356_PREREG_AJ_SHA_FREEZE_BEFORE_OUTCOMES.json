@@ -1,0 +1,82 @@
+{
+  "schema": "ABH_N356_PREREG_A_J_V1",
+  "cycle": "N356",
+  "date": "2026-10-31",
+  "status": "PENDING_SHA_COMMIT_BEFORE_ANY_OUTCOMES",
+  "A": {
+    "question": "Does Blossom's auxiliary field full_units_in_2_power_minus52 actually preserve the exact integer-scaled objective for multiple selected edges near the IEEE-754 binary64 safe integer limit?",
+    "unit": "12 distinct prospective adversarial disjoint-edge fixtures, n=2,4,6,8,144; one integer-scaled output per fixture",
+    "human": false,
+    "separate_from": "Does not rerun historical 60 trajectories, repeat N277 matching optimality tests, compare source human matches or fit a model"
+  },
+  "B": {
+    "source_impl": "Unchanged work/src/blossom_matching.mjs plus vendored MIT blossom_with_state.cjs",
+    "main_comparator": "Exact built-in JavaScript BigInt objective = cardinality*2^52 + integral IEEE binary64 residual",
+    "independent": "Separately implemented Python 3 Fraction.from_float reconstruction of original edge weights from fixture ULP increments without trusting JS total or JS residual",
+    "positive_controls": ["One pair plus one ULP is representable", "Two full pairs with zero residual", "All 72 full integer pairs n144"],
+    "negative_adversarial_controls": ["Two, three, four pairs and 1/3 ULP offsets near 2^53", "72 full pairs plus 1/3/31/33 ULP offsets", "72 pairs with heterogeneous residues"],
+    "further_mutants": ["Corrupt serialized published objective to exact value; Python checks discrepancy relative to source", "Corrupt residual by one and detect independent weight reconstruction"]
+  },
+  "C": {
+    "primary_estimand": "Count of records for which integer(BigInt-reinterpreted published full_units) minus exact BigInt sum is nonzero, out of twelve; record exact signed ULP differences for each fixture",
+    "secondary": ["Number.isSafeInteger for published auxiliary objective", "Matching certificate status and unmodified per-pair exact_weight_residue", "Agreement with independent Python rational reconstruction"],
+    "decision_rule": "A reporting mismatch confirmed by the independent Python oracle is a valid technical negative on exact serialization; zero mismatches means no false field detected by these twelve tests, not universal proof; any verifier disagreement or failed prereg source SHA invalidates the attempted N356 outcome until repaired prospectively",
+    "falsifiers": ["Disjoint pair matching not certified or has wrong cardinality", "Independent Python rational oracle differs from JS BigInt objective", "Intentional output corruptions go undetected"],
+    "prediction_not_blind": "Source inspection already identified plausible unsafe addition of pairs.length*2^52 + residual at line 135. The tests are prospectively designed to quantify the boundary, not a blind discovery over historical outcomes."
+  },
+  "D": {
+    "js_audit_SHA256": "5b85db6726abe41e8920f8ad2f90a851a198023e10d6623109ed09a92162df74",
+    "python_oracle_SHA256": "7c3ac54531a160fa76d301267707ca2ed9aba6d16e59a551ee33529d28e7add0",
+    "unchanged_matching_source_SHA256": "9b6fd317dd05229c45fa5ee60bf71af226dd307fa2a558c1abb332b93017b19d",
+    "unchanged_vendor_sha256": "1b6f24f1b2aba321ec8c1a14cd045a7f673cfacf60ac4fe456666d31ee5806a2",
+    "matching_ts_SHA256": "1068a2f3d66c6d4b887a16f6cc13d50efb5f03214c744c959d9dc8cdfb7380f2",
+    "types_ts_SHA256": "dfba5e9abde658731043be37a80699c484a720bba097a4971bbd9f8eb1cd0983",
+    "source_version_note": "Local runtime Blossom source is a later local copy with SHA differing from the older GitHub N339 INSTRUMENTS/blossom_matching.mjs. All four locally executed dependency bytes are separately archived in this N356 GitHub prereg commit.",
+    "original_ESBM_SHA256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+    "GitHub_SHA_freeze_commit": "TO_BE_FILLED_BY_COMMIT_RECEIPT_NOT_RETROACTIVELY_IN_THIS_FILE",
+    "fixture_policy": "All twelve graph generators and deterministic ULP offsets are literals in the frozen JS; no input is changed after seeing an outcome."
+  },
+  "E": {
+    "commands": ["node instrument/n356_numeric_precision_boundary.mjs", "py -3 instrument/n356_independent_bigint_oracle.py"],
+    "working_dir": "C:/Users/Nitropc/CoS-Prueba/ESBM_ABH_N339_N356_20261031",
+    "output_files": ["outcomes/N356_NUMERIC_PRECISION_BOUNDARY.json", "outcomes/N356_PYTHON_INDEPENDENT_ORACLE.json"],
+    "max_total_wall_seconds": 120,
+    "max_RAM_GB": 1,
+    "max_solver_wall_ms_per_fixture": 3000,
+    "no_overwrite": true,
+    "execution_status": "NOT_EXECUTED_PREOUTCOME"
+  },
+  "F": {
+    "adversarial": "Mix sub-safe one-pair, precisely representable zero-residual multi-pair, nonrepresentable one-ULP large total and n144 variants; two deliberate mutated fields checked by Python oracle",
+    "negative_results_are_valid": true,
+    "failure_policy": "Preserve stderr and interim artifacts; do not edit scripts or fixtures post-outcome and present as preregistered; any repair requires a separate commit before retry and an explicit failure log."
+  },
+  "G": {
+    "scientific_novelty": "Audit exact objective SERIALIZATION across the IEEE-754 2^53 boundary. N277/N310 tested assignment optimality under float weights; N339/N350 verified primal-dual witness; N341/N342 tested historical pair/event parity. Those are distinct from this output-unit integrity.",
+    "significance_limit": "Does not necessarily invalidate the selected matching or its primal-dual proof. A bug in an auxiliary full-units display is not a social mechanism and may not propagate to any scientific outcomes.",
+    "publication_policy": "Report exact failing fields and their impact, propose patch separately; never alter old witnesses or outputs."
+  },
+  "H": {
+    "prior_to_update": "P-ALLOCATION-RULE",
+    "update_rule": "NO_CHANGE_WITH_REASON on human-market theory; add technical provenance/update entry on serialized numerical integrity. Do not invent probability distributions.",
+    "sources": "No additional human dataset; OSF vzx6q public node metadata can be recorded as a refinement to SRC119 without R5 admission"
+  },
+  "I": {
+    "CT2_scientific_before": 7,
+    "CT2_scientific_after_expected": 7,
+    "STOP_R5_human": true,
+    "R5_SRC119": "OSF API node_license is null and public two-file record has no native round index. No participant-level predictive analysis will be executed.",
+    "scientific_grade_new": "0/3"
+  },
+  "J": {
+    "authorized": "Already authorized N356, last of N337–N356",
+    "count_only_if": "New prereg/fixture/code SHA in GitHub commit before outputs; actual execution, independent control, SHA outcome receipts and auditable result",
+    "no_SSJY": true,
+    "no_Codex": true,
+    "no_license_acceptance": true,
+    "no_author_contact": true,
+    "no_merge_to_main": true,
+    "no_expensive_CI": true,
+    "no_edit_ESBM_or_SRC104": true
+  }
+}
