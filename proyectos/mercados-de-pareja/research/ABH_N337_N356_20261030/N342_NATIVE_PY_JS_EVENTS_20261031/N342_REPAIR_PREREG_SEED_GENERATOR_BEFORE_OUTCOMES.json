@@ -1,0 +1,25 @@
+{
+  "schema": "N342_PROSPECTIVE_FIX_SEED_GENERATOR_RESUME_10_50",
+  "date": "2026-10-31",
+  "original_prereg": "fbec2f689cdf390ad476d8c48c6618242d8ccdfe",
+  "before_any_seed211_or_later_outcome": true,
+  "initial_source_sha": "04ebebf1a16254c623de59dc5c3ea1d1780c127526228985d79602ab59581ac1",
+  "first10_custody_sha": "90a3971eabf0cf749ac68dc4faf7cd0a929411e6fefa0257db7f0ad54df6626f",
+  "run_state": "Exactly 10 full native source-original run+trace pairs seed101, 16 ticks each, 146438 directed events; no seed211 outcomes.",
+  "instrument_failure": "Observer monkeypatched mod.people once and forgot to cache the actual original generator. On seed211, p=mod.people(seed) returned cached seed101 population, input/attribute hash assert raised before any new outcomes. No changes to ESBM original.",
+  "allowed_repair": [
+    "Copy frozen failed source to versioned v1 failure file",
+    "At module import capture original_people=mod.people before any injected per-seed fixture",
+    "For each seed set p=original_people(seed); for each scenario mod.people = lambda _seed,data=p:data",
+    "At startup require existing N342_NATIVE_TRACES and exactly 10 original pairs; read custody manifest SHA and rehash all ten output pairs; never re-run or overwrite seed101",
+    "Skip seed101 only after all SHA checks pass, run the remaining seed211,307,401,503,601 × ten scenarios exactly once with identical sys.settrace, result serialization, original NetworkX wrapper, original shock and comparisons",
+    "Create complete 60-case native index by combining original ten file hashes plus new 50"
+  ],
+  "not_allowed": [
+    "no change to original esbm_dynamic.py",
+    "no change TS N341 run outcomes",
+    "no change event predicate, actor, probability or comparator tolerance",
+    "no alternate seeds or scenarios post outcomes"
+  ],
+  "counting": "One invalid instrumental attempt, NOT additional AB cycle. N342 only counts once upon completion, preserve all results. Scientific CT2 7 and STOP_R5."
+}
