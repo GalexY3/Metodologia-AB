@@ -1,0 +1,71 @@
+{
+  "cycle": "N352",
+  "date": "2026-10-31",
+  "status": "A_J_SHA_BEFORE_EXECUTION",
+  "A": {
+    "question": "Does the zero DA-proposer-side difference observed in N351 survive exogenous actor-specific heterogeneity in strict ordinal preferences when 96 existing bipartite acceptability/opportunity graphs remain exactly fixed?",
+    "units": "96 markets × five pre-set preference heterogeneity intensities 0,0.1,0.5,1,2, grouped by 6 original synthetic seeds",
+    "human_data": false
+  },
+  "B": {
+    "comparators": [
+      "N351 frozen lambda=0 DA baseline, exact same pairs required",
+      "F-proposing DA vs M-proposing DA with mutually acceptable strict ranked lists, independent of matching objective",
+      "Original central matching held fixed, compute blocking under each imposed ranking"
+    ],
+    "assumption": "directional actor-specific pseudorandom ordinal noise deterministic SHA256(seed,t,actor,receiver); NOT observed preferences"
+  },
+  "C": {
+    "primary": "Heterogeneity-by-intensity change in 96 market DA pair identity differences, stable matching cardinality, and central blocking; report all five intensities including zero; DA must have zero blocking and equal size F/M",
+    "falsifiers": [
+      "At lambda=0 any deviation from N351",
+      "DA unstable or F/M differ cardinality",
+      "Loss of frozen graph integrity",
+      "Exclusion of null-case experiments"
+    ],
+    "multiplicity": "All 5 intensities prereg fixed, descriptive within 6 synthetic seed clusters; no empirical significance claim or correction requiring human inference"
+  },
+  "D": {
+    "new_code_sha": "940beeaff4d440eab8562e42df8a0ce20b0c0fcd24b619762e4d0a1d9d2eb776",
+    "code_frozen_git_commit": "98fc02ee062520a4c0f42c27fbf1d60b924322b0",
+    "frozen_graph_inputs_sha": "42c24b43bde724d0609d816a57f6287c17c0f201705382031d8f00cecfe28d35",
+    "baseline_N351_output_sha": "5bc1d9e7557e6e090002a1b705fbf1f08691bd736de50ea418c52ba800a72eac",
+    "people_inputs_manifest": "84a52580add085ab551dacf6e4cd3fdfc80be8eeaf187c7d3e4b25be208e42bf"
+  },
+  "E": {
+    "command": "py -3.13 instrument/n352_preference_heterogeneity.py",
+    "wall_seconds": 80,
+    "memory_gb": 2,
+    "no_outcomes_executed": true,
+    "output": "outcomes/N352_PREFERENCE_HETEROGENEITY.json"
+  },
+  "F": {
+    "adversarial": [
+      "DA stability zero blocking every 480 cases",
+      "Fixed N351 original lambda0 exact pair identities",
+      "No graph or original shock changes",
+      "Clean results per intensity and original seed, no posthoc selection"
+    ]
+  },
+  "G": {
+    "scientific_role": "Theory-mechanism sensitivity under preferences supplied as explicit hypotheses, tests when proposer-side power emerges; not identified human causal preferences or DA evidence"
+  },
+  "H": {
+    "prior": "P-ALLOCATION-RULE qualitative NO_CHANGE_WITH_REASON for human"
+  },
+  "I": {
+    "CT2_scientific": 7,
+    "STOP_R5_human": true
+  },
+  "J": {
+    "slot_if_executed": "N352 one AB cycle only, remaining N353-N356 four",
+    "prohibitions": [
+      "SSJY",
+      "Codex",
+      "License acceptance",
+      "Author contact",
+      "main branch experimental merge",
+      "costly CI"
+    ]
+  }
+}
