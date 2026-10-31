@@ -1,0 +1,112 @@
+{
+  "schema": "ABH_N341_AJ_SHA_PREOUTCOME",
+  "date": "2026-10-31",
+  "cycle": "N341",
+  "authorized_range": "N337–N356",
+  "state": "CODE_AND_6_GENERATED_INPUTS_FROZEN_BEFORE_TS_RUNS_AND_BEFORE_READING_HISTORICAL_RUNS",
+  "A": {
+    "question": "Does newly integrated TypeScript polynomial-certified ESBM reproduce all 60 EXISTING original historical Python ESBM scalar/track outputs, 6 seeds × 10 scenarios at official N144/T16/K7, while preserving per-tick formed pair sets and full directed JS event trace?",
+    "primary_unit": "Individual seed-scenario synthetic run, 60 preenumerated; each has 16 ESBM ticks and fixed original PCG64 shocks",
+    "not": "Not a hidden independent cohort, native Python original directed traces nor recovered N237 TypeScript"
+  },
+  "B": {
+    "comparator": "Historically frozen RUNS.json.gz.b64 from original ESBM Python (Git blob d8dbf04ec52337d46892e555cceee49ef224efc6), not re-executed reference",
+    "JS": "Independent N207 TypeScript transition loop with N339 primal-dual certified MIT integer Blossom polynomial replacement",
+    "controls": [
+      "N340 two official scenes passed; N341 adds five more seeds, eight more scenarios, all 60 full historical tests",
+      "Exact original people(seed) and 5 precomputed RNG tensors for all six seeds",
+      "Per-run matching primal-dual certificate validity is checked internally; known unique status separate"
+    ],
+    "rivals": "Original historical 60 outputs vs current JS. Historical source outcomes predate this prereg; source independence is temporal archive, not blind outcome held out from algorithm design."
+  },
+  "C": {
+    "success": "All 60 TypeScript runs complete with 16 matching ticks/certificates, and exact integer/floating tolerance <=1e-9 all original historical result fields including per-tick track, sorted by exact seeds/scenario order",
+    "failure": "Any single incomplete, resource limit, unsupported input, missing SHA, different integer or float >1e-9, nonfinite, mutated historical integer not detected",
+    "limitations": "Historical RUNS lacks matched pair identities/direct events, so 60 matching sequences are stored but Python pair identity and directed event parity require separate N342; no general uniqueness claim"
+  },
+  "D": {
+    "sha256_source": {
+      "instrument/make_official_60_inputs.py": "a1d19f290ee8cf528b2107297cc1f4a0ed47de5365abb168cba69c1caa3d612b",
+      "instrument/run_poly_60.mjs": "90e5abec08338a1b2d12126d00cd7c89aa5d2677c8655d21f0eed8f35b2706d4",
+      "instrument/compare_original_historical_60.py": "336ee9a6d410232c8ead6e1b2bb55850310f04f7552a8a90498a83d01c355c69",
+      "N341_INPUT_MANIFEST.json": "84a52580add085ab551dacf6e4cd3fdfc80be8eeaf187c7d3e4b25be208e42bf",
+      "HISTORICAL_ESBM_RUNS.json.gz.b64": "25c5bd12f0784449c9b9a25af4f5ea7211f193a4f503a29ca8fdc2c42b9eebe3",
+      "work/src/engine.ts": "15506227eeac1aeb5f0f2c1d61fe567519b31f862ae3310897575cd3957d0cbe",
+      "work/src/blossom_matching.mjs": "9b6fd317dd05229c45fa5ee60bf71af226dd307fa2a558c1abb332b93017b19d",
+      "vendor/blossom_with_state.cjs": "1b6f24f1b2aba321ec8c1a14cd045a7f673cfacf60ac4fe456666d31ee5806a2",
+      "ESBM_original_source": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+    },
+    "original_historical_blob": "d8dbf04ec52337d46892e555cceee49ef224efc6",
+    "original_historical_path": "proyectos/mercados-de-pareja/research/ABR_ESBM20_20261028/RUNS.json.gz.b64",
+    "inputs_count": 6,
+    "simulations_prepared": 0,
+    "shocks_binary_files": 30,
+    "total_input_bytes": 79656804,
+    "seed101_reuse_verified_against_N338": true,
+    "all_seed_file_sha": "N341_INPUT_MANIFEST.json has each individual people+tensor SHA and size for 6 seeds",
+    "source_freeze_commits": [
+      "530b7a30dacf2b586a7a14c0293fc0eae661d918",
+      "7f9be3b2d9b557cd46e1a1558b4e20b3ac6222ce",
+      "d4e0aa37bbd5fc9417c0a600cb02c67bfa7528ce",
+      "7f183ed91c560e10dd31815a081e5ceaf34b6589"
+    ],
+    "backend_source_frozen_N339_prereg": "b8ac80c4bfe73c77088c80cb4f1e966f90e120a4"
+  },
+  "E": {
+    "commands": [
+      "node instrument/run_poly_60.mjs",
+      "py -3.13 instrument/compare_original_historical_60.py"
+    ],
+    "environment": "Windows 11 build26200 Node24.16.0, Python3.13.4 numpy2.4.3 NetworkX3.6.1",
+    "outer_runtime_limit_JS_seconds": 240,
+    "outer_runtime_limit_Python_seconds": 60,
+    "per_matching_wall_ms": 5000,
+    "max_graph_edges": 6000,
+    "event_trace_budget_per_run": {
+      "maxEvents": 80000,
+      "maxBytes": 134217728
+    },
+    "evidence_disk_budget_GB": 2.5,
+    "expected_runs": 60,
+    "expected_matching_ticks": 960,
+    "reference_data_read_at_freeze": false,
+    "streaming": "One JSON+compact directed-event JSONL file per run with SHA and unmodified full JS result, plus 60-run manifest. 60 files not one giant in-memory output."
+  },
+  "F": {
+    "falsators": [
+      "Cross-seed row order fixed; 6 seeds ×10 exact scenarios only",
+      "Missing hash/corrupt tensor fail closed",
+      "Directed JS trace file SHA checked vs manifest after generation",
+      "In-memory mutation of historic integer total_impressions must be caught",
+      "Matching certificate must be present every tick, and selected pair identity stored for later native observer comparison",
+      "No increasing maxEdges/maxWall or changing seeds after outputs"
+    ],
+    "negative_records": "Never drop failures or only report successful cases"
+  },
+  "G": {
+    "technical_independence": "Historical reference frozen before N341, prior Python original direct N297 60/60, JS event loop and polynomial solver independently coded; Blossom and NetworkX share mathematical Galil/Joris lineage",
+    "data_independence": "No human holdout; same historical generated six synthetic seeds"
+  },
+  "H": {
+    "prior_id": "P-TRAJECTORY-INVARIANCE",
+    "source_count_new_human": 0,
+    "prior_update": "Qualitative, no science CT2 change unless independent real human data (not present)"
+  },
+  "I": {
+    "CT2_scientific": 7,
+    "STOP_R5_human": true,
+    "new_human_grade": "0/3"
+  },
+  "J": {
+    "start": "EXECUTE_N341_FULL_60_ONCE",
+    "if_complete": "Count one valid technical cycle, not 60",
+    "if_broken": "Count negative technical only if execution/evidence meaningful, otherwise invalid attempt with preserved artifacts",
+    "remaining_if_spent": 15,
+    "no_SSJY": true,
+    "no_Codex": true,
+    "no_license_acceptance": true,
+    "no_author_contact": true,
+    "no_merge_to_main": true,
+    "no_expensive_CI": true
+  }
+}
