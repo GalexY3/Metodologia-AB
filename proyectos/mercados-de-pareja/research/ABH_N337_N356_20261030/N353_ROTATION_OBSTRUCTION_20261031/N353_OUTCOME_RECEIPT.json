@@ -1,0 +1,27 @@
+{
+  "cycle": "N353",
+  "classification": "VALID_TECHNICAL_STRUCTURAL_MECHANISM_INSIGHT",
+  "prereg": "d407bf50f01731cc5463702284ed06f2a6b976f3",
+  "code_sha": "9492746f0f293feba2ff94e3b2fcaed940c1eb4e8bc941261d8018aace5456c4",
+  "input_sha": "42c24b43bde724d0609d816a57f6287c17c0f201705382031d8f00cecfe28d35",
+  "N352_input_sha": "5907663ba2e24ccc5122f19f176e7f07c82804771bc68f62391c565d69871187",
+  "outcome_sha": "4e4ddac111d61abede941a32255509e974790e86e14b9bd703403bfe3d1f5dd6",
+  "original_market_graphs": 96,
+  "acyclic": 68,
+  "with_cycle": 28,
+  "with_4cycle": 21,
+  "DA_F_M_different_existing_five_levels": 0,
+  "counterfactual_2x2_rotations_constructed": 96,
+  "minimum_needed_additional_NONNATIVE_opportunity_edges": {
+    "0": 21,
+    "1": 73,
+    "2": 2
+  },
+  "bruteforce_2stable_verified": 96,
+  "scope": "Original graphs have sparse alternating cycle structure, 68/96 acyclic, yet 28 with some cycle also show DA proposer side equality under pre-set five preference models; presence of cycle necessary, not sufficient, to yield different stable outcomes. Constructed 4actor preference configurations are artificial counterexamples; added opportunities are not historical exposures.",
+  "human_validation": false,
+  "CT2": 7,
+  "STOP_R5": true,
+  "remaining_after": 3,
+  "no_SSJY_Codex_license_contact_merge_CI": true
+}
