@@ -1,0 +1,19 @@
+{
+  "schema": "N339_REPAIR_V2_SHA_FROZEN_BEFORE_COMPARISON",
+  "date": "2026-10-31",
+  "original_prereg_commit": "b8ac80c4bfe73c77088c80cb4f1e966f90e120a4",
+  "repair_authorization_commit": "05e51108a7cb96ccb085ef2fe641112f3e8257c8",
+  "repaired_source_commit": "45e9dc0f78e5d9ed4dd1a7446483b7d33e1f164a",
+  "exact_change": "Two occurrences @functools.cache(None) --> @functools.cache, verified byte-identical otherwise",
+  "old_sha256": "fb3f09b51238f2deb5ec479f397d908b12b15d7737ab75e679b7997bca531259",
+  "repaired_sha256": "2f4e69308145bcb6a639b4cc280e71aa53e74f4d3078103b82128c22ac5b2156",
+  "JS_results_frozen_sha256": "b7d3f483e90e956129e7197c72a23096512b4faff0facc34344cd5cd96951a2a",
+  "graph_inputs_frozen_sha256": "875d3fdc70f07ae65c906221d8e7c8c4b37cbeb5106939c41604ba0d3bd1378b",
+  "Python_oracle_completed_before_repair": false,
+  "previous_failure": "TypeError in decorator line 45 before first per-graph objective or dual comparison",
+  "data_modified": false,
+  "JS_results_modified": false,
+  "AB_cyclic_effect": "No new cycle; failed oracle attempt retained, N339 pending verification",
+  "CT2": 7,
+  "R5": "STOP"
+}
