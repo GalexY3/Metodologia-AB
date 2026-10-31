@@ -32,6 +32,13 @@
       "type": "documentary_R5_block",
       "status": "primary_code_verified_no_data_use_rights",
       "note": "Author Code.R aChoice/pChoice + gID Dyad, OSF node_license=null, no temporal order verified"
+    },
+    {
+      "id": "MP-N358-HARDWALL",
+      "type": "technical_robustness",
+      "status": "valid_pass",
+      "preoutcome_commit": "bd0b74ef08d121747790d1d9f8fc20cb5f3ccd7f",
+      "result": "8/8 process-bound resource/fail-closed controls, Python 3/3 matching totals"
     }
   ],
   "edges": [
@@ -54,9 +61,14 @@
       "from": "MP-SRC106-CODE-R5-GATE",
       "to": "MP-N357-SERIALIZATION",
       "type": "documentary_screen_not_experimental_cycle"
+    },
+    {
+      "from": "MP-N357-SERIALIZATION",
+      "to": "MP-N358-HARDWALL",
+      "type": "technical_dependency"
     }
   ],
-  "valid_cycles": 1,
-  "pending_cycles": 19,
+  "valid_cycles": 2,
+  "pending_cycles": 18,
   "main_merge": false
 }

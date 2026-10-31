@@ -1,0 +1,27 @@
+{
+  "schema": "ABH_N358_INDEPENDENT_PYTHON_AUDIT_V1",
+  "source_sha256": "5040466f5517142808052aab9d17128d0f526307bb9a587a09758cdc8c5d2b45",
+  "passed": 8,
+  "expected": 8,
+  "three_independent_exact_objectives": [
+    {
+      "name": "EMPTY_144",
+      "exact_fraction_objective": "0",
+      "matching_certified": true
+    },
+    {
+      "name": "STAR_144",
+      "exact_fraction_objective": "4503599627370586",
+      "matching_certified": true
+    },
+    {
+      "name": "SPARSE_N144",
+      "exact_fraction_objective": "324259173170678042",
+      "matching_certified": true
+    }
+  ],
+  "two_external_hard_timeouts": 2,
+  "three_fail_closed_worker_outputs": 3,
+  "scientific_CT2": 7,
+  "STOP_R5_human": true
+}

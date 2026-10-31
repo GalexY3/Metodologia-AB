@@ -3,13 +3,12 @@
   "date": "2026-10-31",
   "campaign": "N357–N376",
   "authorized_cycles": 20,
-  "valid": 1,
-  "positive_technical": 1,
+  "valid": 2,
+  "positive_technical": 2,
   "valid_negative": 0,
   "invalid": 0,
   "planning": 0,
   "pending": [
-    "N358",
     "N359",
     "N360",
     "N361",
@@ -29,7 +28,7 @@
     "N375",
     "N376"
   ],
-  "invalid_instrument_attempts": 0,
+  "invalid_instrument_attempts": 1,
   "executed": [
     {
       "cycle": "N357",
@@ -40,11 +39,21 @@
       "js_result_sha256": "119878216085a10a00317a649507819d7e6e8af2ab1f1031042358abe17e3c6c",
       "python_result_sha256": "fef0ebf34c35494bd1f5806fa7aa25e54a00b65d57cafb0f8c0fe8ae920d161b",
       "summary": "21/21 exact numeric objectives after BigInt fix, independent Python rational verification; 15/21 old Number wrong; original human scope unchanged"
+    },
+    {
+      "cycle": "N358",
+      "classification": "VALID_TECHNICAL_PASS",
+      "prereg_commit": "bd0b74ef08d121747790d1d9f8fc20cb5f3ccd7f",
+      "repair_commit_before_oracle_rerun": "d5605e747ef8f8debd8b956aaaca494da1031b8e",
+      "receipt_file": "N358_HARDWALL_SUPERVISOR/N358_OUTCOME_RECEIPT.json",
+      "js_result_sha256": "5040466f5517142808052aab9d17128d0f526307bb9a587a09758cdc8c5d2b45",
+      "python_result_sha256": "4d5ef0a769e2b546210fce3a19a721c49719f234ca6cac09a6d06d34e8e944ec",
+      "summary": "8/8 hard wall / malformed worker / successful matching controls; three exact Python objective checks; one preserved Python schema parsing failure"
     }
   ],
   "sources_count": 121,
   "priors_count": 35,
-  "updates_count": 225,
+  "updates_count": 226,
   "CT2_scientific": 7,
   "STOP_R5_human": true,
   "scientific_grade": "0/3",
