@@ -3,7 +3,7 @@
   "project": "mercados-de-pareja",
   "date": "2026-10-31",
   "scope": "Retrospective provenance backfill from repository reports plus N56/N57 publisher audit. Original data never copied; not systematic or claim of accessing raw data for bibliography.",
-  "source_count": 119,
+  "source_count": 121,
   "sources": [
     {
       "id": "SRC001",
@@ -2685,9 +2685,53 @@
         "file_specific_license": null,
         "clarification": "Open article is CC BY 4.0; this does not grant a confirmed separate license for participant-level dataset; no native sequence exposed in the two public files."
       }
+    },
+    {
+      "id": "SRC120",
+      "title": "Kluger, Ackerman, Kenny, Malloy & Eastwick (2025), Social Relations Model for Asymmetric Block Design with R",
+      "canonical_url": "https://doi.org/10.1177/25152459241279522",
+      "source_type": "ORIGINAL_METHODS_TUTORIAL_WITH_2007_NORTHWESTERN_COHORT_REUSED",
+      "primary_repository": "https://osf.io/vuen2/",
+      "OSF_API": "https://api.osf.io/v2/nodes/vuen2/",
+      "OSF_node_license": null,
+      "data_license_verified": false,
+      "method_verified": "Publisher original Table 3 describes gID actorID partnerID order gender date.again attractive sexy; eight Northwestern 2007 events, 94 men and 93 women, published sample 187 persons",
+      "source_material_type": "Publisher article plus public OSF metadata and primary folder inventory; no participant-level data processed",
+      "nonindependence": "The same 187-person eight-event 2007 Northwestern cohort is also the second sample in existing SRC084. DO NOT count as a new independent human holdout.",
+      "R5_status": "BLOCKED_DATA_REUSE_RIGHTS_AND_INDEPENDENCE",
+      "prior_ids": [
+        "P-DYADIC_ACCESS"
+      ],
+      "verification_date": "2026-10-31",
+      "restrictions": "No authorization accepted or authors contacted; paper access is not data license; no original rows copied."
+    },
+    {
+      "id": "SRC121",
+      "title": "Huang, Yeomans, Brooks, Minson & Gino (2017), It Does Not Hurt to Ask: Question-Asking Increases Liking, Study 3 and 2025 erratum",
+      "canonical_url": "https://doi.org/10.1037/pspi0000097",
+      "primary_repository": "https://osf.io/8k7rf/",
+      "OSF_API": "https://api.osf.io/v2/nodes/8k7rf/",
+      "source_type": "INDEPENDENT_PUBLISHED_HUMAN_SPEED_DATING_DATA_LEAD_NOT_ADMITTED_R5",
+      "OSF_node_license": null,
+      "data_license_verified": false,
+      "primary_file_inventory": "study3/study3.csv 426013 bytes, metadata only; no records inspected",
+      "LICENSE_TXT_INTERPRETATION": "The 1048-byte root LICENSE.txt grants rights to Software and associated documentation under MIT terms; it does not explicitly license participant-level CSV data.",
+      "related_published_reanalysis": "https://doi.org/10.1037/pspi0000156",
+      "related_2025_erratum": "https://doi.org/10.1037/pspi0000491",
+      "reported_sample": "110 participants in three speed-dating sessions, 1961 reported directed dyadic observations in 2017 Study 3, described by published reanalysis; not verified against raw files",
+      "source_material_type": "Original paper/reanalysis and public OSF API file inventory; no human rows downloaded",
+      "potential_independence": "Distinct study team and 110-person three-event design from Northwestern 2007 and Columbia; participant ID independence not verified",
+      "native_order_verified": false,
+      "native_bilateral_votes_verified_from_rows": false,
+      "R5_status": "BLOCKED_DATA_LICENSE_AND_NATIVE_SCHEMA_NOT_VERIFIED",
+      "prior_ids": [
+        "P-DYADIC_ACCESS"
+      ],
+      "verification_date": "2026-10-31",
+      "restrictions": "No authors contacted, no login or license acceptance; do not infer causal benefit or convert directed scores to native mutual yes without original join."
     }
   ],
-  "last_added_campaign": "ABH_N337_N356_WINDOWS_SOURCE_AUDIT_20261031",
+  "last_added_campaign": "ABH_N357_N376_NEW_R5_DOCUMENTARY_LEADS",
   "canonical_duplicate_DOI_audit": {
     "date": "2026-10-30",
     "source_records_before": 107,

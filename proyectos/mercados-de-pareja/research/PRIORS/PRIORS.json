@@ -398,7 +398,7 @@
         "SRC105",
         "SRC106"
       ],
-      "last_update_id": "U221",
+      "last_update_id": "U224",
       "uncertainty": "Not probabilistically calibrated; evidence heterogeneous and some sources only metadata",
       "next_falsifier_or_test": "Independent prospective data with matched risk set, competent adversarial controls and documented sample selection",
       "numeric_probability": null,
@@ -445,7 +445,9 @@
         "U208",
         "U213",
         "U219",
-        "U221"
+        "U221",
+        "U223",
+        "U224"
       ],
       "latest_evidence_summary": "Two genuinely new original human data-source leads: SRC105 Jauk 2016 90 participants 691 actual speed dates in 3 groups and primary author OSF individual/dyadic SAV, and SRC106 Hall 2026 129 participants in 8 events with second-date choices and publisher pointing to original OSF. Both sources document native personal binary intent after real dates, but neither original dyadic data file was obtained, neither source-specific data licence proven, actor/partner two-native-column join and cohort overlap not audited; no additional original human sample is accessible for an ESBM test.\n2026-10-29 AB-H N107–N126: 2026-10-29 targeted lookup yielded previously registered Columbia/OpenML, Mixmosa, McMaster, Hall, Arias-Sarah, Tawkify and other already indexed publications; no novel licensed two-native-vote data archive obtained. Do not treat web links as independent samples or successful rights verification.\n2026-10-30: SRC107 newly retrieved original 2026 MMSD peer-reviewed study reports 619 observed contact-exchange dyads each with two native decisions, 25 sessions/147 people. Only aggregate 2x2 published is verified; rights to individual data, actor IDs, ex ante exposure schedule and independent holdout not established. STOP_R5 remains.\nN167–N186: New SRC108 deposit-level CC0 catalog assertion refers to original Columbia 2002–2004 Fisman/Iyengar cohort; not independent from SRC016/SRC082, original archive first-party page and file-level license/bytes unverified, cannot open R5.\nN187–N206: New SRC109 Hoffmann et al. 2024 paper (60 volunteer subjects, four recurring preassigned partners, 240 real meetings, 237 usable) describes independent two native yes/no answers. Paper says files on OSF and article CC BY, but case-level dataset rights, file schema, two-vote actor join and usable independent holdout not verified; no OSF access attempted. STOP_R5.\nNO CYCLE 2026-10-30: SRC110 Blink Date podcast speed-date: NLM secondary CC BY catalogue + ~31 published speed-date dialogues, binary joint match only (two surveys described but not per-actor native vote columns released), no full candidate-opportunity risksets or file-level licence audited; this cannot unblock R5. Mixmosa/SRC081 public two native votes still lacks explicit license; Graz/SRC083 Scientific Use authentication; MatchNMingle/SRC088 has EULA, ordinal scores.\nDOCUMENTARY_SCREENING 2026-10-30: SRC112 Lock5Data has 276 Columbia first-date records with two votes, but known Columbia-derived cohort and first date only, not independent full opportunity dynamics. SRC113 Fledge.Love 2026 surveys N2617/N2894 on attitudes toward AI agents, not actual two-human directed votes or person-to-person opportunity risk sets. No raw files examined, no licence accepted; human R5 STOP.\nDocumentary new SRC114 Echenique-Robinson-Cortés-Yariv 2025: original human lab decentralized matching with strategic offers/acceptances and known payoff/opportunity arrays; 85 usable nonromantic market rounds in publication. This is NOT human romantic speed dating, native two-person romantic votes, or independent romantic ESBM holdout. Dropbox linked replication files not read, file licensing unverified; R5 human STOP.\nDocumentary re-screen: Ogushi MMSD human 619 bilateral decisions SRC107 remains raw inaccessible/unlicensed for verified replication; Mixmosa SRC081 two native decisions but unresolved file-level reuse rights; Columbia rehosts duplicate original SRC082. Echenique SRC114 is nonromantic. No qualifying new independent cohort with eligibility, paired votes and lawful raw access; STOP_R5 remains.\n2026-10-30 R5 review: new documentary SRC115 (one-sided online profile choice), SRC116 (nonromantic teammate/competitor partner), SRC117 (experimental paired first meeting with self-report satisfaction), but zero newly verified original raw romantic datasets with full exposure and sequential two-native-choice records. Known SRC096 McMaster is pre-existing and has rights conflict and event-holdout limitations; SRC104 bidirectional joins inconsistent, SRC107 MMSD row rights inaccessible. STOP_R5 human, CT2=7.\n2026-10-31 U219 NO_CHANGE_WITH_REASON: New public independent original human Hoffmann et al. OSF vzx6q dataset SRC119 audited: 240 unique scheduled speed dates, 60 subjects×4 assigned, 8 fixed partners, both native yes/no choices observed without missing values, 72 and43 yes, 10 mutual yes, exact cross-check. However no native round/sequence/timestamps in 31 source columns and no verified data-specific reuse licence; order and real allocation institution cannot be inferred. STOP_R5 and CT2=7 remain; no human forecast run.",
       "last_revised_at": "2026-10-31",
@@ -458,7 +460,8 @@
         "SRC117",
         "SRC119"
       ],
-      "SRC119_OSF_license_documentary_note": "OSF node_license=null as of 2026-10-31; R5 remains blocked, date sequence absent."
+      "SRC119_OSF_license_documentary_note": "OSF node_license=null as of 2026-10-31; R5 remains blocked, date sequence absent.",
+      "documentary_gate_20261031": "SRC120 2007 Northwestern original cohort already SRC084 and OSF licence null; SRC121 Harvard 2017 new published cohort lead but dataset license and native round/choice schema unverified; neither admitted R5."
     },
     {
       "id": "P-COMPETENT_NULL",
@@ -1133,9 +1136,10 @@
         "U211",
         "U216",
         "U218",
-        "U220"
+        "U220",
+        "U222"
       ],
-      "last_update_id": "U220",
+      "last_update_id": "U222",
       "CT2_scientific": 7,
       "grade": "0/3",
       "external_data": false,
@@ -1143,7 +1147,8 @@
       "date": "2026-10-30",
       "last_revised_at": "2026-10-31",
       "latest_evidence_summary": "N317 18/20 central welfare-optimal matchings unstable under bilateral artificial preferences; N322 20/20 one-round protocols unstable; N336 15/20 nonlinear rescalings change central allocations while DA remains ordinally invariant; independent DP/MILP small oracles. Known prior art and mechanistic stipulation, no human validation.\nSRC116 demonstrates that nonromantic participant choices may diverge from objectively task-optimal partner selection under experimental payoffs. Not observed both parties agreeing in a romantic market. Prior human status remains synthetic-only.\nN347 conditional frozen native-accepted edges: central13668 pairs vs greedy chronological12496 and reverse12588 across 960 snapshot graphs; NOT valid as longitudinal counterfactual. N348 new FULL endogenous dynamic alternative 60 trajectories per order: immediate sequential acceptance chronological13201 versus reverse13411, central13668 pairs. Opportunities, decisions, feedback and durations recomputed with frozen synthetic shock tensors. N349 pure independent Python recomputed 120 TS world traces (1920 ticks, 1833907 directed events, 1076929 probabilities), 120/120 parity. No independent romantic data or human causal effect; U216 NO_CHANGE_WITH_REASON and CT2 7/100.\n2026-10-31 U218 NO_CHANGE_WITH_REASON: N351–N355 fixed 96 mutual-positive F/M risksets: central 1165 pairs, 415 blocking under explicitly assumed strict directional rankings, DA both proposer sides1062 with no blocking, greedy1093/1088. N352 five heterogeneity levels x96 markets: 0 proposer-side differences, negative. N353 68 acyclic markets and 21 with 4cycles, constructed nonnative 2x2 rotations demonstrate possibility with changed assumed rankings. N354 dynamic 12 actual simulation worlds of 16 ticks each DA both proposer sides1123 formed vs central1165 and first-accepted1145/1156; N355 independently reconstructs12/12,159402 directed and92594 probability decisions. No real subject preference elicitation.",
-      "technical_provenance_N356": "Software full_units numeric auxiliary field loses exact units in 9/12 adversarial tests; matching certificates still passed. No inference about social mechanisms."
+      "technical_provenance_N356": "Software full_units numeric auxiliary field loses exact units in 9/12 adversarial tests; matching certificates still passed. No inference about social mechanisms.",
+      "technical_provenance_N357": "Exact BigInt decimal serialization verified 21/21 with independent Python Fraction reconstruction, original ESBM unchanged; no human confidence update."
     }
   ],
   "audit": {

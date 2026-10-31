@@ -1,0 +1,159 @@
+{
+  "schema": "ABH_N357_PYTHON_FRACTION_ORACLE_V1",
+  "source_sha256": "119878216085a10a00317a649507819d7e6e8af2ab1f1031042358abe17e3c6c",
+  "cases": 21,
+  "confirmed_exact": 21,
+  "old_Number_mismatch_count": 15,
+  "mutation_probes_rejected": 2,
+  "rows": [
+    {
+      "name": "D2_ONE",
+      "matching_cardinality": 1,
+      "exact_total": "4503599627370497",
+      "old_numeric_loss": "0",
+      "verify_serialized_exact": true
+    },
+    {
+      "name": "D4_ZERO",
+      "matching_cardinality": 2,
+      "exact_total": "9007199254740992",
+      "old_numeric_loss": "0",
+      "verify_serialized_exact": true
+    },
+    {
+      "name": "D4_ONE",
+      "matching_cardinality": 2,
+      "exact_total": "9007199254740993",
+      "old_numeric_loss": "-1",
+      "verify_serialized_exact": true
+    },
+    {
+      "name": "D4_THREE",
+      "matching_cardinality": 2,
+      "exact_total": "9007199254740995",
+      "old_numeric_loss": "1",
+      "verify_serialized_exact": true
+    },
+    {
+      "name": "D6_ONE",
+      "matching_cardinality": 3,
+      "exact_total": "13510798882111489",
+      "old_numeric_loss": "-1",
+      "verify_serialized_exact": true
+    },
+    {
+      "name": "D8_ONE",
+      "matching_cardinality": 4,
+      "exact_total": "18014398509481985",
+      "old_numeric_loss": "-1",
+      "verify_serialized_exact": true
+    },
+    {
+      "name": "D144_ZERO",
+      "matching_cardinality": 72,
+      "exact_total": "324259173170675712",
+      "old_numeric_loss": "0",
+      "verify_serialized_exact": true
+    },
+    {
+      "name": "D144_ONE",
+      "matching_cardinality": 72,
+      "exact_total": "324259173170675713",
+      "old_numeric_loss": "-1",
+      "verify_serialized_exact": true
+    },
+    {
+      "name": "D144_THREE",
+      "matching_cardinality": 72,
+      "exact_total": "324259173170675715",
+      "old_numeric_loss": "-3",
+      "verify_serialized_exact": true
+    },
+    {
+      "name": "D144_THIRTYONE",
+      "matching_cardinality": 72,
+      "exact_total": "324259173170675743",
+      "old_numeric_loss": "-31",
+      "verify_serialized_exact": true
+    },
+    {
+      "name": "D144_THIRTYTHREE",
+      "matching_cardinality": 72,
+      "exact_total": "324259173170675745",
+      "old_numeric_loss": "31",
+      "verify_serialized_exact": true
+    },
+    {
+      "name": "D144_PATTERN",
+      "matching_cardinality": 72,
+      "exact_total": "324259173170675853",
+      "old_numeric_loss": "-13",
+      "verify_serialized_exact": true
+    },
+    {
+      "name": "EMPTY_GRAPH",
+      "matching_cardinality": 0,
+      "exact_total": "0",
+      "old_numeric_loss": "0",
+      "verify_serialized_exact": true
+    },
+    {
+      "name": "K6_TIES",
+      "matching_cardinality": 3,
+      "exact_total": "13510798882111488",
+      "old_numeric_loss": "0",
+      "verify_serialized_exact": true
+    },
+    {
+      "name": "R8",
+      "matching_cardinality": 4,
+      "exact_total": "18014398509482509",
+      "old_numeric_loss": "-1",
+      "verify_serialized_exact": true
+    },
+    {
+      "name": "R24",
+      "matching_cardinality": 12,
+      "exact_total": "54043195528448067",
+      "old_numeric_loss": "-3",
+      "verify_serialized_exact": true
+    },
+    {
+      "name": "R64",
+      "matching_cardinality": 32,
+      "exact_total": "144115188075865862",
+      "old_numeric_loss": "-6",
+      "verify_serialized_exact": true
+    },
+    {
+      "name": "R144_SPARSE",
+      "matching_cardinality": 72,
+      "exact_total": "324259173170681324",
+      "old_numeric_loss": "20",
+      "verify_serialized_exact": true
+    },
+    {
+      "name": "R144_DENSE_ULP",
+      "matching_cardinality": 72,
+      "exact_total": "324259173170677849",
+      "old_numeric_loss": "-25",
+      "verify_serialized_exact": true
+    },
+    {
+      "name": "STAR_N144",
+      "matching_cardinality": 1,
+      "exact_total": "4503599627370586",
+      "old_numeric_loss": "0",
+      "verify_serialized_exact": true
+    },
+    {
+      "name": "ODD_DISCONNECTED",
+      "matching_cardinality": 71,
+      "exact_total": "319755573543305845",
+      "old_numeric_loss": "11",
+      "verify_serialized_exact": true
+    }
+  ],
+  "CT2": 7,
+  "STOP_R5": true
+}

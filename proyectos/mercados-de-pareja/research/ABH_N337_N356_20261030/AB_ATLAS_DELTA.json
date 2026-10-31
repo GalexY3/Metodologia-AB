@@ -6,13 +6,13 @@
   "mode": "AB-H",
   "AB_cycles": {
     "authorized": 20,
-    "valid_executed": 19,
+    "valid_executed": 20,
     "technical_pass": 17,
-    "valid_technical_negative": 2,
+    "valid_technical_negative": 3,
     "invalid_executed": 0,
     "planning_ab": 0,
-    "pending": 1,
-    "invalid_instrument_attempts_not_cycles": 7,
+    "pending": 0,
+    "invalid_instrument_attempts_not_cycles": 8,
     "valid": 20
   },
   "scientific_grade": "0/3",
@@ -548,7 +548,7 @@
       "note": "R5 human branch remains STOP; technical falsifier discovered and executed after prospective SHA freeze."
     }
   ],
-  "orphan_audit": "All 19 actual executed AB-H cycles represented: N337 and N338 original nodes, N339 gate closed, N340–N355 newly typed. Every new source/blocked gate linked; 1 N356 unopened. 119 SOURCES,35 PRIORS,219 UPDATES, U217–U219 human NO_CHANGE_WITH_REASON. No research branch merge and no new human scientific grade.",
+  "orphan_audit": "2026-10-31 post-campaign metadata correction: N337–N356 20 cycles, 17 PASS, 3 negative, 0 pending and 8 failed instrument attempts; original prior valid_executed=19 was stale; corrected without a cycle.",
   "main_merge": false,
   "last_update": "U221",
   "new_human_validation": false,

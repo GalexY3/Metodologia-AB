@@ -1,0 +1,51 @@
+{
+  "schema": "ABH_N357_N376_AB_ATLAS_DELTA_V1",
+  "date": "2026-10-31",
+  "parent_campaign": "ABH_N337_N356_20261030",
+  "root": "MP-N356-TECH-NEGATIVE",
+  "CT2": 7,
+  "STOP_R5_human": true,
+  "grade": "0/3",
+  "nodes": [
+    {
+      "id": "MP-N357-SERIALIZATION",
+      "type": "technical_repair",
+      "status": "valid_pass",
+      "parent": "MP-N356-TECH-NEGATIVE",
+      "prereg_commit": "07a22a1d1dbc6995714b57f2b37f975178b61b42",
+      "outcome": "21 of 21 exact decimal string totals, independent Fraction oracle"
+    },
+    {
+      "id": "MP-SRC120-COHORT_REUSE",
+      "type": "documentary_R5_block",
+      "status": "not_admitted",
+      "note": "Northwestern 2007 identical SRC084 cohort, no OSF dataset license"
+    },
+    {
+      "id": "MP-SRC121-OSF_RIGHTS",
+      "type": "documentary_R5_block",
+      "status": "not_admitted",
+      "note": "Harvard study3 rights unverified; MIT software license does not explicitly grant human dataset reuse"
+    }
+  ],
+  "edges": [
+    {
+      "from": "MP-N356-TECH-NEGATIVE",
+      "to": "MP-N357-SERIALIZATION",
+      "type": "technical_fix"
+    },
+    {
+      "from": "MP-SRC120-COHORT_REUSE",
+      "to": "MP-N357-SERIALIZATION",
+      "type": "independent_documentary_screen"
+    },
+    {
+      "from": "MP-SRC121-OSF_RIGHTS",
+      "to": "MP-N357-SERIALIZATION",
+      "type": "independent_documentary_screen"
+    }
+  ],
+  "valid_cycles": 1,
+  "pending_cycles": 19,
+  "main_merge": false
+}
