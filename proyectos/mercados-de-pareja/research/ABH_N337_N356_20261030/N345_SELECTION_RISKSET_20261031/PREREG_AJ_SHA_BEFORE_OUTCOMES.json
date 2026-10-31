@@ -1,0 +1,71 @@
+{
+  "schema": "ABH_N345_AJ_SHA_PREOUTCOME",
+  "date": "2026-10-31",
+  "cycle": "N345",
+  "state": "BEFORE_FIRST_OUTCOME",
+  "A": {
+    "question": "Can original ESBM synthetic exposure and opportunity risk-set selection for all 60 trajectories (N144 T16 K7) be independently derived from fixed original people/shocks, existing original decision events, and prior partner states, including Gumbel top-K order under each policy? Does this confirm the denominators used by the model?",
+    "unit": "Each sender x tick actually eligible, all original selected opportunities and ordered picks vs independently recomputed ordinal Gumbel score",
+    "not": "no humans, no unobserved platform exposures"
+  },
+  "B": {
+    "rivals": [
+      "Observed native Python exposure sequence (N342) as target, without executing original simulator again",
+      "Independent pure Python eligibility + math.log Gumbel top-k from frozen u_expose, normative same_norm, popularity, visibility balancing with seen counter",
+      "Original per-tick risk_edges and total impression/gender/norm counts used as independent second checkpoint"
+    ],
+    "source_independence": "independent instrument and different math.log vs numpy vectorized; same synthetic inputs and rules"
+  },
+  "C": {
+    "primary": "All 60 runs exactly match every ordered top-k selection, original risk edges for 960 ticks, exposure counts by gender and norm under original configurations, no mismatches; record smallest cutoff gaps and ties, not claim causal outcomes",
+    "failures": "First sender/tick mismatch, unexpected exposure, incorrect risk set/seen state, impression aggregate mismatch, floating cutoff tie - explicitly retain outcome; no after-observed adjustment."
+  },
+  "D": {
+    "code_sha256": "52e02b4385dc1ef7d6003628e90a9e6ae6b20ebfd6b3e71205bf3ba976c3a3a2",
+    "code_commit": "f4160cea8a59a75dbfeea548aca620b16f21d8d6",
+    "original_native_events_index_SHA": "89e221ab34c1a3c08ff04c8902268946f1b40cf6230cea224a907d9e96bd776b",
+    "original_input_manifest_sha": "84a52580add085ab551dacf6e4cd3fdfc80be8eeaf187c7d3e4b25be208e42bf",
+    "original_source_sha": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b"
+  },
+  "E": {
+    "command": "py -3.13 instrument/verify_exposure_policy_60.py",
+    "expected_runs": 60,
+    "expected_ticks": 960,
+    "outer_wall_seconds": 180,
+    "max_RAM_GB": 2,
+    "new_original_or_JS_simulations": 0,
+    "output": "outcomes/N345_INDEPENDENT_EXPOSURE_POLICY.json"
+  },
+  "F": {
+    "adversarial": [
+      "Artificially boost one excluded candidate score by 1e9, verify previously excluded candidate enters top K",
+      "Drop/alter original exposure actor, check first mismatch and stop counting matching as correct",
+      "Detection of actual score cutoff near ties within 1e-12",
+      "Reconstruct previous partner state only from native dissolution decision and per tick pair identity, no access to original simulation internals"
+    ],
+    "negative_policy": "All negatives retained"
+  },
+  "G": {
+    "novelty": "N342 event parity compares original-vs-TS outputs; N345 independently recomputes risk set and Gumbel top-K mathematically from tensors for all actors including norm/popularity/balance, validating exposure denominator and selection process; no repeat model run."
+  },
+  "H": {
+    "prior": "P-OPPORTUNITY; synthetic mechanism fidelity, NO_CHANGE_WITH_REASON and no human CT2 increase"
+  },
+  "I": {
+    "CT2_scientific": 7,
+    "STOP_R5_human": true,
+    "scientific_grade_new": "0/3"
+  },
+  "J": {
+    "count": "At most one N345 after actual execution and signed outcome hash; no cycles for count of actor selections",
+    "remaining_if_valid": 11,
+    "prohibited": [
+      "SSJY",
+      "Codex",
+      "License acceptance",
+      "Author contact",
+      "Experimental branch merge",
+      "Expensive CI"
+    ]
+  }
+}
