@@ -1,0 +1,47 @@
+{
+  "schema": "ABH_EXECUTED_CYCLE_RECEIPT_POSTOUTCOME_V1",
+  "date": "2026-10-31",
+  "cycle_id": "N348",
+  "classification": "VALID_TECHNICAL_PASS",
+  "prereg_AJ_path": "proyectos/mercados-de-pareja/research/ABH_N337_N356_20261030/N348_FULL_DYNAMIC_DECENTRALIZED_20261031/PREREG_AJ_SHA_BEFORE_OUTCOMES.json",
+  "actual_original_input": "N341 six original synthetic populations and five PCG64 shock tensors; N347 first-tick fixed-decision shadow",
+  "source_code_preoutcome_sha": {
+    "run_decentralized_120.mjs": "1998e341c40473e0aa230de0722b86ecea0cfcf4efe5937e5d3469991451b115",
+    "compare_decentralized_dynamic_120.py": "69b7ed9e48d05ec4c5f4e5e21b5d41b97a60ed65b4b48c75b2da1880b80ba32c",
+    "engine_decentralized.ts": "0ad95a0a686b4fbb32fb36e580c04550438f98402730903c9f202445d5f17f84",
+    "decentralized_matching.mjs": "0e7855dc9d2671d14795a631635f1ea74ccc82a5398c87b82b14dde09a5125db"
+  },
+  "outcome_file": "outcomes/N348_DYNAMIC_PROTOCOL_COMPARISON.json",
+  "outcome_sha256": "c4a56a6f2813ef96c97abbec4db8bb7bb8a6af12d0fdcc59f4cac71a8bdcce48",
+  "metrics": {
+    "complete_counterfactual_dynamic_worlds": 120,
+    "chronological_runs": 60,
+    "reverse_runs": 60,
+    "total_matching_ticks": 1920,
+    "first_tick_shadow_controls": 120,
+    "central_formed_pairs": 13668,
+    "chronological_dynamic_formed_pairs": 13201,
+    "reverse_dynamic_formed_pairs": 13411,
+    "chronological_minus_central": -467,
+    "reverse_minus_central": -257,
+    "all_N348_240_raw_files_sha256_verified": true,
+    "verified_raw_bytes": 301930766
+  },
+  "source_and_result_frozen_before_outcome": true,
+  "additional_SHA": {
+    "alternative_index": "e357e134c23379c07ed8aa52be1924401d664f951e55829428b8cc94083d5f28"
+  },
+  "local_integrity_audit_sha256": "c72ca7483fa1b46892b3fb40b58ed67935dc69c429fdff73055182b77aaa5fea",
+  "scientific_limit": "Simulator-internal counterfactual changes opportunity sets, subsequent decisions/feedback and shocks through state; NOT human causal effect, no frequentist p-values without independent human holdout.",
+  "human_holdout_new": 0,
+  "CT2_scientific": 7,
+  "STOP_R5_human": true,
+  "new_grade": "0/3",
+  "counted_as_one_AB_cycle": true,
+  "no_SSJY": true,
+  "no_Codex": true,
+  "no_license_acceptance": true,
+  "no_author_contact": true,
+  "no_branch_merge_main": true,
+  "no_expensive_CI": true
+}
