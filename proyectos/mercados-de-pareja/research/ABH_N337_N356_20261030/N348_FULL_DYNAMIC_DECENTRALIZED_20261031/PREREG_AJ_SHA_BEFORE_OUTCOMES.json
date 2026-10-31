@@ -1,0 +1,108 @@
+{
+  "schema": "ABH_N348_AJ_SHA_PREOUTCOME",
+  "date": "2026-10-31",
+  "cycle": "N348",
+  "state": "ALL_SOURCES_AND_SOURCE_SHA_IN_GITHUB_BEFORE_FIRST_DYNAMIC_OUTCOME",
+  "A": {
+    "question": "Across the 60 original ESBM official synthetic populations/shocks, does replacing central matching with chronological or reversed immediate binding accepted-pair protocol alter full 16-period trajectories after partner choices reshape next-tick risk sets, exposures, proposals, rejections, duration and final stocks?",
+    "unit": "Two self-contained simulated worlds per seed-scenario (120 total): N144 T16 K7; original centralized historical path remains frozen for comparison."
+  },
+  "B": {
+    "rivals": [
+      "Preexisting 60 original centralized JS/true Python ESBM trajectories N341/N342; no additional rerun of central",
+      "New 60 chronological first-accepted pairing dynamic worlds, 60 reverse chronological dynamic worlds, same original actor attributes and stable per-dyad/time shocks",
+      "Previous N347 single-tick fixed-decision shadow as exact first-tick validation only; later divergence is endogenous"
+    ],
+    "independence": "Two alternative artificial institutional mechanisms, not human observations or DA preference-constrained stability."
+  },
+  "C": {
+    "primary": "All 120 runs must complete T16, strict balance invariants, and tick t=0 formed count must coincide with N347 fixed-decision shadow under same policy. Report per-run, by-order, by-six-seed paired differences in 7 preregistered outputs versus historical centralized original, and first/late pairing differences.",
+    "failure": "Negative/exception, self-edge unrecognized, first-tick shadow disagreement, missing trace/index SHA, any run dropped. Report negative and preserve failures.",
+    "causal_status": "Longitudinal causal implication is INTERNAL TO STIPULATED SIMULATOR under shared shocks; never a causal population effect."
+  },
+  "D": {
+    "sha256": {
+      "instrument/run_decentralized_120.mjs": "1998e341c40473e0aa230de0722b86ecea0cfcf4efe5937e5d3469991451b115",
+      "instrument/compare_decentralized_dynamic_120.py": "69b7ed9e48d05ec4c5f4e5e21b5d41b97a60ed65b4b48c75b2da1880b80ba32c",
+      "work/src/engine_decentralized.ts": "0ad95a0a686b4fbb32fb36e580c04550438f98402730903c9f202445d5f17f84",
+      "work/src/decentralized_matching.mjs": "0e7855dc9d2671d14795a631635f1ea74ccc82a5398c87b82b14dde09a5125db"
+    },
+    "frozen_input_manifest_sha": "84a52580add085ab551dacf6e4cd3fdfc80be8eeaf187c7d3e4b25be208e42bf",
+    "N341_central_index_sha": "37b8a1010968e0ead1a13f7f71193858bcfb83b0e3428573ad734f96e136948d",
+    "N347_shadow_sha": "b1704a408d293d686cc4fb1a6b0d0645561b4dbd706e19c2244086539f6eb13a",
+    "base_engine_unmodified_N207_except_matching_import": "15506227eeac1aeb5f0f2c1d61fe567519b31f862ae3310897575cd3957d0cbe",
+    "GH_frozen_commits": [
+      "1d5e7093ab914570724eb82a3e2f9a03e1ba1452",
+      "5ac6949ceda81a8b73fbf526403d4e72e52f57b1",
+      "9058ae851dcf969098fc0cc7f9b331971f4d2b3a",
+      "e94730f8977da879534b9aa79a6986528da309b8"
+    ]
+  },
+  "E": {
+    "commands": [
+      "node instrument/run_decentralized_120.mjs",
+      "py -3.13 instrument/compare_decentralized_dynamic_120.py"
+    ],
+    "max_wall_node_seconds": 300,
+    "max_wall_python_seconds": 90,
+    "max_RAM_GB": 2,
+    "max_disk_outputs_GB": 1,
+    "per_run_event_limit": 80000,
+    "per_run_trace_bytes_limit": 134217728,
+    "predetermined_orders": [
+      "chronological",
+      "reverse"
+    ],
+    "seeds": [
+      101,
+      211,
+      307,
+      401,
+      503,
+      601
+    ],
+    "scenarios": 10,
+    "expected_runs": 120,
+    "expected_matching_ticks": 1920,
+    "outputs": [
+      "outcomes/N348_DECENTRALIZED_INDEX.json",
+      "outcomes/N348_DECENTRALIZED_TRACES/120 json+120 jsonl",
+      "outcomes/N348_DYNAMIC_PROTOCOL_COMPARISON.json"
+    ],
+    "no_new_human_data": true
+  },
+  "F": {
+    "adversarial": [
+      "Self-response edge raises exact INVALID_ACCEPTANCE_EDGE in independent matcher",
+      "Endogenous state changes may differ after t0, cannot falsely treat fixed N347 outcomes as full paths",
+      "First-tick pair count against previously frozen N347 shadow for each order",
+      "Each submitted pair must be available and partner symmetric by underlying ESBM state checker",
+      "All 120 run/trace SHA checked before comparison; no stdout per-case to avoid N341 instrumentation block"
+    ],
+    "limits": "No post-outcome policy reversal or parameter tuning; report all 120."
+  },
+  "G": {
+    "novelty": "N317 contrasted toy bipartite allocation, N347 fixed-decision within-tick shadow. N348 tests actual full synthetic N144 ESBM dynamic feedback of alternative institutional matching with shared stable time/dyad shocks and explicit order sensitivity. Different scientific identification issue, still not human reality."
+  },
+  "H": {
+    "prior_id": "P-ALLOCATION-RULE",
+    "update": "Qualitative synthetic model-architecture sensitivity, no human prior numeric posterior and no CT2 increase"
+  },
+  "I": {
+    "CT2_scientific": 7,
+    "STOP_R5_human": true,
+    "scientific_grade_new": "0/3"
+  },
+  "J": {
+    "count": "One N348 only if actual 120 runs and bounded auditable postoutcome comparison or meaningful negative",
+    "remaining_if_valid": 8,
+    "prohibitions": [
+      "No SSJY",
+      "No Codex",
+      "No licence acceptance",
+      "No contact authors",
+      "No experimental merge to main",
+      "No expensive CI"
+    ]
+  }
+}
