@@ -1,0 +1,92 @@
+{
+  "schema": "ABH_N342_AJ_PREOUTCOME_FROZEN",
+  "date": "2026-10-31",
+  "cycle": "N342",
+  "status": "BEFORE_NATIVE_OBSERVER_EXECUTION",
+  "A": {
+    "question": "Do all 60 official ESBM original Python simulations agree with independent TS Blossom on directed chronological events, actor-level accept/reject/dissolve outcomes, shock values, 960 selected pair sets and every per-run metric?",
+    "units": "Six frozen seeds x ten scenarios N144 T16 K7; directed actor events and per-tick sets, not only original RUNS aggregate",
+    "human": false
+  },
+  "B": {
+    "original": "Byte identical original Python ESBM SHA f7e6b840...8254d0b, unmodified simulate(), observed via sys.settrace and an unchanged-return NetworkX wrapper",
+    "independent": "60 preexisting N341 TS Blossom runs, compact directed JSONL and pair ticks, frozen SHA",
+    "competing": "True individual-event equality vs summary-only equivalence; no ex ante blind human holdout."
+  },
+  "C": {
+    "primary": "All 60 run original chronological streams exact event stage, actor i,j, decision, exact u_send/u_reply/u_hazard, p difference ≤1e-12; per tick 16 canonical pair sets match and all original metrics exact ints/float ≤1e-9",
+    "failure": "First mismatch in event order, coordinates, decision, shock, p, count, chosen pairs or summary; keep case negatives",
+    "qualification": "JS exposure events have no u_expose; Python observer checks original frozen u_expose in [0,1) but does not falsely compare missing JS u field."
+  },
+  "D": {
+    "sha256_scripts": {
+      "instrument/native_python_event_observer.py": "04ebebf1a16254c623de59dc5c3ea1d1780c127526228985d79602ab59581ac1",
+      "instrument/compare_native_directed_60.py": "ecd9361eba2554feb32ca7f1cfb25e96acdef42219ebf3cc313751dcac16a536"
+    },
+    "other_SHA": {
+      "original_Python": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+      "original_inputs_manifest": "84a52580add085ab551dacf6e4cd3fdfc80be8eeaf187c7d3e4b25be208e42bf",
+      "TS_60_index": "37b8a1010968e0ead1a13f7f71193858bcfb83b0e3428573ad734f96e136948d",
+      "TS_60_comparison": "dd20054a8dc7e197364995c8d70d0b209418e4b4ac804d34181beaf160069f13"
+    },
+    "original_line_numbers": {
+      "simulate": 63,
+      "dissolution": 87,
+      "exposure": 108,
+      "proposal": 114,
+      "response": 118
+    },
+    "instrument_commits": [
+      "70e45de1f23de74a6666fe82883634f5ae23954b",
+      "dc2858a0bcd633c7b05eaf98565b214abb43c2ae"
+    ]
+  },
+  "E": {
+    "commands": [
+      "py -3.13 instrument/native_python_event_observer.py",
+      "py -3.13 instrument/compare_native_directed_60.py"
+    ],
+    "expected_files": [
+      "outcomes/N342_NATIVE_INDEX.json",
+      "outcomes/N342_NATIVE_JS_COMPARE.json",
+      "outcomes/N342_NATIVE_TRACES/{seed}_{scenario}.jsonl and .json"
+    ],
+    "Python_wall_seconds": 240,
+    "comparison_wall_seconds": 120,
+    "RAM_GB": 2,
+    "TS_reexecution": false,
+    "original_modified": false
+  },
+  "F": {
+    "adversarial": [
+      "Mutation actor i detected",
+      "Mutation directed response choice detected",
+      "Exact chronological order and count checked",
+      "Original Python SHA and frozen 30 tensor SHA before native run",
+      "First difference preserved for negative outcomes"
+    ],
+    "no_outcome_driven_repair": true
+  },
+  "G": {
+    "novelty": "N341 only 60 summary outputs; N342 directly observes genuine Python original directed event stream and per-tick pair identity",
+    "independence": "Different language TS implementation vs observed Python unchanged source, synthetic assumptions shared."
+  },
+  "H": {
+    "prior": "P-TRAJECTORY-INVARIANCE; qualitative only. No new SOURCES or CT2 uplift for synthetic software QA."
+  },
+  "I": {
+    "CT2_scientific": 7,
+    "STOP_R5_human": true,
+    "new_human_grade": "0/3"
+  },
+  "J": {
+    "count_once": "Only if actually executed N342 with verifiable receipt and raw SHA, not 60 slots",
+    "remaining_if_valid": 14,
+    "SSJY": false,
+    "Codex": false,
+    "license_acceptance": false,
+    "author_contact": false,
+    "merge_to_main": false,
+    "expensive_CI": false
+  }
+}
