@@ -1,0 +1,33 @@
+{
+  "schema": "ABH_EXECUTED_CYCLE_RECEIPT_POSTOUTCOME_V1",
+  "date": "2026-10-31",
+  "cycle_id": "N345",
+  "classification": "VALID_TECHNICAL_PASS",
+  "prereg_AJ_path": "proyectos/mercados-de-pareja/research/ABH_N337_N356_20261030/N345_SELECTION_RISKSET_20261031/PREREG_AJ_SHA_BEFORE_OUTCOMES.json",
+  "actual_original_input": "N342 native 60 streams, N341 frozen original people+shocks",
+  "source_code_preoutcome_sha": "52e02b4385dc1ef7d6003628e90a9e6ae6b20ebfd6b3e71205bf3ba976c3a3a2",
+  "outcome_file": "outcomes/N345_INDEPENDENT_EXPOSURE_POLICY.json",
+  "outcome_sha256": "5415906a683f4cb7ffc24af53264258958e34ee3acb92ebc0cc1ca328543def1",
+  "metrics": {
+    "original_native_runs_verified": 60,
+    "actor_topK_risksets": 51747,
+    "individual_exposures_verified": 358348,
+    "near_cutoff_ties": 0,
+    "negative_control_excluded_candidate_score_boost": "DETECTED"
+  },
+  "source_and_result_frozen_before_outcome": true,
+  "additional_SHA": {},
+  "local_integrity_audit_sha256": "c72ca7483fa1b46892b3fb40b58ed67935dc69c429fdff73055182b77aaa5fea",
+  "scientific_limit": "Independent reconstruction uses original recorded availability and frozen Gumbel shocks; verifies stipulated exposures, not social mechanism nor human R5",
+  "human_holdout_new": 0,
+  "CT2_scientific": 7,
+  "STOP_R5_human": true,
+  "new_grade": "0/3",
+  "counted_as_one_AB_cycle": true,
+  "no_SSJY": true,
+  "no_Codex": true,
+  "no_license_acceptance": true,
+  "no_author_contact": true,
+  "no_branch_merge_main": true,
+  "no_expensive_CI": true
+}
