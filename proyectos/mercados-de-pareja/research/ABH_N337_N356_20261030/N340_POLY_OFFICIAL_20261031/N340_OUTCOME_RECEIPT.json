@@ -1,0 +1,68 @@
+{
+  "schema": "N340_OUTCOME_RECEIPT",
+  "date": "2026-10-31",
+  "cycle": "N340",
+  "status": "VALID_TECHNICAL_POSITIVE",
+  "preoutcome_prereg_commit": "8d22a0d038614f885e8b8bc9278a96aec5525251",
+  "code_sha_frozen": true,
+  "postoutcome_code_edit": false,
+  "scenarios": [
+    "mixed_random",
+    "private_rejection_learning"
+  ],
+  "seed": 101,
+  "N": 144,
+  "T": 16,
+  "K": 7,
+  "typescripts_full_runs": 2,
+  "matched_full_output_and_per_tick_pairs": 2,
+  "matching_ticks": 32,
+  "matching_ticks_with_primal_dual_certificate": 32,
+  "uniqueness_proved_by_strict_slack": 0,
+  "uncertified_uniqueness_interpretation": "All chosen pairs actually coincide with original Python, but unique optimum not formally proven for any tick by strict-slack sufficient test. Do not generalize pair identity across tied/relabelled graphs.",
+  "directed_event_counts": {
+    "mixed_random": 15527,
+    "private_rejection_learning": 14778,
+    "total": 30305
+  },
+  "all_node_event_counts": {
+    "mixed_random": 17763,
+    "private_rejection_learning": 17233,
+    "total": 34996
+  },
+  "Python_original_reference": "N338_PY_OFFICIAL.json frozen before N340, SHA b95e2727af8eecf54f52e026531ce7adc6686e73cd2f203fe804f60e728ed48d",
+  "input_sha": "N338_INPUT_MANIFEST.json SHA 075900f243f31e0306d7a72c2075a45818782fcbc860cd1a5c07a46439c2b994",
+  "JS_outcomes_sha256": "04f26c04bee8f007f9a85803360bf779225364397d511db5fc3dfcf23fcc17d0",
+  "comparison_sha256": "b03416a067794e5317ab66d49438a86c4f1b13e452aa4698a8e3ef4abaa1e97b",
+  "library": "Full synthetic outcome ZIP stored in Windows approved workspace, and split base64 archive in GitHub research branch",
+  "archive": {
+    "filename": "N340_FULL_OFFICIAL_POLY.zip",
+    "zip_sha256": "1b407f5035d3b8f76d57f68ea47643d3a45703ca309703da040f0e0482357d42",
+    "zip_bytes": 657507,
+    "parts": 5,
+    "b64_chars": 876676,
+    "part_names": [
+      "N340_FULL_OFFICIAL_POLY.zip.b64.part00",
+      "N340_FULL_OFFICIAL_POLY.zip.b64.part01",
+      "N340_FULL_OFFICIAL_POLY.zip.b64.part02",
+      "N340_FULL_OFFICIAL_POLY.zip.b64.part03",
+      "N340_FULL_OFFICIAL_POLY.zip.b64.part04"
+    ],
+    "restore": "Concatenate five ASCII files in part index order, base64-decode to ZIP; compare full SHA."
+  },
+  "outcomes_interpretation": "New scalable TS event engine replaces N207 exponential matching with polynomial MIT Blossom using safe-integer 2^52 residual scale and internal dual certificate. All metrics and selected pairs match original Python for two official scenarios. Does not constitute 60-run parity or native-Python directed event observation; event-level reference still pending.",
+  "program_status": "2 cycles executed since N339: N339 & N340 technical PASS. Total N337–N340 four executed, 16 still authorized.",
+  "CT2": 7,
+  "STOP_R5_human": true,
+  "SOURCES_total": 117,
+  "PRIORS_total": 35,
+  "UPDATES_before_campaign_extension": 214,
+  "original_ESBM_intact": true,
+  "SRC104_intact": true,
+  "SSJY_used": false,
+  "Codex_used": false,
+  "licences_accepted": false,
+  "authors_contacted": false,
+  "merge_to_main": false,
+  "CI_costly": false
+}
