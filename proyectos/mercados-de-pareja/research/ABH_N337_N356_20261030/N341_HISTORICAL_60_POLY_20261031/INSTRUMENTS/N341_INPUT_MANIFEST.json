@@ -1,0 +1,425 @@
+{
+  "schema": "ABH_N341_ORIGINAL_INPUTS_FROZEN",
+  "original_ESBM_sha256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+  "input_generator_sha256": "a1d19f290ee8cf528b2107297cc1f4a0ed47de5365abb168cba69c1caa3d612b",
+  "python": "3.13.4",
+  "numpy": "2.4.3",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "n": 144,
+  "t": 16,
+  "k": 7,
+  "seed_order": [
+    101,
+    211,
+    307,
+    401,
+    503,
+    601
+  ],
+  "scenario_order": [
+    "mixed_random",
+    "heterosexual_restricted",
+    "institutional_segregation",
+    "explicit_norm_preference",
+    "popularity_ranking",
+    "visibility_balancing",
+    "private_rejection_learning",
+    "public_rejection_signal",
+    "longer_partnerships",
+    "shorter_partnerships"
+  ],
+  "provenance": "6 ORIGINAL people(seed) call results, 5 shocks tensors per seed; NO simulation outcomes created",
+  "seed101_byte_equal_to_preexisting_N338": true,
+  "rows": [
+    {
+      "seed": 101,
+      "people": {
+        "path": "people_101.json",
+        "sha256": "dd16c739b3139f45dcc53d18ab36810e99ba98842c707764bc0a33cc9356249d",
+        "bytes": 5088
+      },
+      "tensors": {
+        "u_send": {
+          "path": "u_send_101.bin",
+          "sha256": "61468c812847a2c540fb3c8a472ea2e6a6b7c36af328746640ed386b22fb60df",
+          "bytes": 2654208,
+          "shape": [
+            16,
+            144,
+            144
+          ],
+          "dtype": "float64LE"
+        },
+        "u_reply": {
+          "path": "u_reply_101.bin",
+          "sha256": "92c9d540136661aad7c381a58d260f05ca9b328b060172f27d6278da60f04e3d",
+          "bytes": 2654208,
+          "shape": [
+            16,
+            144,
+            144
+          ],
+          "dtype": "float64LE"
+        },
+        "u_hazard": {
+          "path": "u_hazard_101.bin",
+          "sha256": "3e8149ccbe4b10f38dfdff85cc326da5d7156be7e6ea1d7079156a5988e85931",
+          "bytes": 2654208,
+          "shape": [
+            16,
+            144,
+            144
+          ],
+          "dtype": "float64LE"
+        },
+        "u_expose": {
+          "path": "u_expose_101.bin",
+          "sha256": "ff6b5bc4b5d1d4b9651527c44476cd54080e73251f14fb6a003093271b8234cc",
+          "bytes": 2654208,
+          "shape": [
+            16,
+            144,
+            144
+          ],
+          "dtype": "float64LE"
+        },
+        "u_match": {
+          "path": "u_match_101.bin",
+          "sha256": "e30ddad180210da0bad3a487fd593238dd0ca9ccd9824361b0376aa0f99fe0c9",
+          "bytes": 2654208,
+          "shape": [
+            16,
+            144,
+            144
+          ],
+          "dtype": "float64LE"
+        }
+      }
+    },
+    {
+      "seed": 211,
+      "people": {
+        "path": "people_211.json",
+        "sha256": "78aa768f773d913164916b475ccebffb3f7a31ccf9639bfde7c9bb23615ac68e",
+        "bytes": 5083
+      },
+      "tensors": {
+        "u_send": {
+          "path": "u_send_211.bin",
+          "sha256": "1f121b6fdd978b5d2c3463042a3265286cf09cda8330d2ad939997ca1c0c5e63",
+          "bytes": 2654208,
+          "shape": [
+            16,
+            144,
+            144
+          ],
+          "dtype": "float64LE"
+        },
+        "u_reply": {
+          "path": "u_reply_211.bin",
+          "sha256": "e647d80dddd5234500401356d941599d616e3f37cdb39c5abf89b540c92860d9",
+          "bytes": 2654208,
+          "shape": [
+            16,
+            144,
+            144
+          ],
+          "dtype": "float64LE"
+        },
+        "u_hazard": {
+          "path": "u_hazard_211.bin",
+          "sha256": "035ae2b1504a4df6cfc2a36c7aaddb6d284517e8106742b26b1bdd4184ac6a94",
+          "bytes": 2654208,
+          "shape": [
+            16,
+            144,
+            144
+          ],
+          "dtype": "float64LE"
+        },
+        "u_expose": {
+          "path": "u_expose_211.bin",
+          "sha256": "de95a2cf37aee71ce4218f0f45a0537ce1b227ca8f9da5db284ee6b9acacc8be",
+          "bytes": 2654208,
+          "shape": [
+            16,
+            144,
+            144
+          ],
+          "dtype": "float64LE"
+        },
+        "u_match": {
+          "path": "u_match_211.bin",
+          "sha256": "3b420f757928cfaa2d9983acf47dcf62933bed7da70ea760ffe889ce2bf783df",
+          "bytes": 2654208,
+          "shape": [
+            16,
+            144,
+            144
+          ],
+          "dtype": "float64LE"
+        }
+      }
+    },
+    {
+      "seed": 307,
+      "people": {
+        "path": "people_307.json",
+        "sha256": "57433a4f4a6fdd58a25358dde226b99e19a0331888e239d0deb5a0865ba2564d",
+        "bytes": 5097
+      },
+      "tensors": {
+        "u_send": {
+          "path": "u_send_307.bin",
+          "sha256": "94a56d9b805af66edc6757d4d7c7ae6fc1b40040d3c3a64db1ee70fad6cfc809",
+          "bytes": 2654208,
+          "shape": [
+            16,
+            144,
+            144
+          ],
+          "dtype": "float64LE"
+        },
+        "u_reply": {
+          "path": "u_reply_307.bin",
+          "sha256": "a570518a658ce1c5026269219cb53ac5693454c7143bf87303387ee8d2656768",
+          "bytes": 2654208,
+          "shape": [
+            16,
+            144,
+            144
+          ],
+          "dtype": "float64LE"
+        },
+        "u_hazard": {
+          "path": "u_hazard_307.bin",
+          "sha256": "75b890175c58cf89ea0fee5dd5dd5ecf1a6d4b3388a5e3bddc210b6e525748a6",
+          "bytes": 2654208,
+          "shape": [
+            16,
+            144,
+            144
+          ],
+          "dtype": "float64LE"
+        },
+        "u_expose": {
+          "path": "u_expose_307.bin",
+          "sha256": "34a2c32c4d875ce4d774e4203e6d1c56aa1059814416a013c0ee6b793c3eadac",
+          "bytes": 2654208,
+          "shape": [
+            16,
+            144,
+            144
+          ],
+          "dtype": "float64LE"
+        },
+        "u_match": {
+          "path": "u_match_307.bin",
+          "sha256": "ad2f5102cc81e50eb34f3a679a0a25889ae71274443ac1a70b1a48e4229cd086",
+          "bytes": 2654208,
+          "shape": [
+            16,
+            144,
+            144
+          ],
+          "dtype": "float64LE"
+        }
+      }
+    },
+    {
+      "seed": 401,
+      "people": {
+        "path": "people_401.json",
+        "sha256": "7051c2d086961d63df6f154497d4cd297bde1cb62214a15b94f9845bf821c008",
+        "bytes": 5095
+      },
+      "tensors": {
+        "u_send": {
+          "path": "u_send_401.bin",
+          "sha256": "756173191e016ce73ec14aa51794cc7f1bc8cbd399213f63f38115ae954745e3",
+          "bytes": 2654208,
+          "shape": [
+            16,
+            144,
+            144
+          ],
+          "dtype": "float64LE"
+        },
+        "u_reply": {
+          "path": "u_reply_401.bin",
+          "sha256": "bb9c57152c3176be35d9a845b659c9b9badc10eb3194063ab33f6a336eb0163f",
+          "bytes": 2654208,
+          "shape": [
+            16,
+            144,
+            144
+          ],
+          "dtype": "float64LE"
+        },
+        "u_hazard": {
+          "path": "u_hazard_401.bin",
+          "sha256": "c34e4e6b49bc2e3af4af9e997e7e9fd17bf49c739541fd537b69d13733eb3c85",
+          "bytes": 2654208,
+          "shape": [
+            16,
+            144,
+            144
+          ],
+          "dtype": "float64LE"
+        },
+        "u_expose": {
+          "path": "u_expose_401.bin",
+          "sha256": "c0de1c0a2aa08c7737155a00d9bb8f3b9ed4e76277ae09a227c811c088c315e0",
+          "bytes": 2654208,
+          "shape": [
+            16,
+            144,
+            144
+          ],
+          "dtype": "float64LE"
+        },
+        "u_match": {
+          "path": "u_match_401.bin",
+          "sha256": "080f59fc5781cf3b98c95a4e016dcaebf7571ff46bbbbd309ea80a6006bef64c",
+          "bytes": 2654208,
+          "shape": [
+            16,
+            144,
+            144
+          ],
+          "dtype": "float64LE"
+        }
+      }
+    },
+    {
+      "seed": 503,
+      "people": {
+        "path": "people_503.json",
+        "sha256": "512d7b60e36c30aefec154424df63acd251ecb4622555f9efeca0470520c30de",
+        "bytes": 5091
+      },
+      "tensors": {
+        "u_send": {
+          "path": "u_send_503.bin",
+          "sha256": "61fe8d135b17754499330d2222de94e246ba9447fc9cf17c8f78a4496f1b0b30",
+          "bytes": 2654208,
+          "shape": [
+            16,
+            144,
+            144
+          ],
+          "dtype": "float64LE"
+        },
+        "u_reply": {
+          "path": "u_reply_503.bin",
+          "sha256": "74e60dcd3b312b20a30a8d3fc2b8cc946ad47d314aab393a943626c8a9aa2276",
+          "bytes": 2654208,
+          "shape": [
+            16,
+            144,
+            144
+          ],
+          "dtype": "float64LE"
+        },
+        "u_hazard": {
+          "path": "u_hazard_503.bin",
+          "sha256": "ee0b4da09fe0e272263684e69fc319bf3cce0c2c698c2b2aa56118f69b20764b",
+          "bytes": 2654208,
+          "shape": [
+            16,
+            144,
+            144
+          ],
+          "dtype": "float64LE"
+        },
+        "u_expose": {
+          "path": "u_expose_503.bin",
+          "sha256": "61c2044ad16f2bf7edd9f48c39fd88dd891cb95c41dd53e694649115e34ccea4",
+          "bytes": 2654208,
+          "shape": [
+            16,
+            144,
+            144
+          ],
+          "dtype": "float64LE"
+        },
+        "u_match": {
+          "path": "u_match_503.bin",
+          "sha256": "b57694ec50096f6b989fdd6a02d7f502c91e08e8608c642693ea11ed8e927314",
+          "bytes": 2654208,
+          "shape": [
+            16,
+            144,
+            144
+          ],
+          "dtype": "float64LE"
+        }
+      }
+    },
+    {
+      "seed": 601,
+      "people": {
+        "path": "people_601.json",
+        "sha256": "1dda1ce827521cc607270131a0feaeb3126bcaff2113421d22ab5569889fee3b",
+        "bytes": 5110
+      },
+      "tensors": {
+        "u_send": {
+          "path": "u_send_601.bin",
+          "sha256": "35838a23d138b583a8ae3bee074114cf26c01e62f293b2f182aaa83770538e76",
+          "bytes": 2654208,
+          "shape": [
+            16,
+            144,
+            144
+          ],
+          "dtype": "float64LE"
+        },
+        "u_reply": {
+          "path": "u_reply_601.bin",
+          "sha256": "f8aa9ea2d3c0ba09e9a9ba3af731653ef882be3662d4b24057f32f7da6f2c40e",
+          "bytes": 2654208,
+          "shape": [
+            16,
+            144,
+            144
+          ],
+          "dtype": "float64LE"
+        },
+        "u_hazard": {
+          "path": "u_hazard_601.bin",
+          "sha256": "939410534810542efb96e2cdaeff42897e1909172d8eb4decd75ca2396cd1f22",
+          "bytes": 2654208,
+          "shape": [
+            16,
+            144,
+            144
+          ],
+          "dtype": "float64LE"
+        },
+        "u_expose": {
+          "path": "u_expose_601.bin",
+          "sha256": "2ff2ec8ebcc94934dee7f80afb3ea0e01f1f6db661d48914d0a5c810bf1c6337",
+          "bytes": 2654208,
+          "shape": [
+            16,
+            144,
+            144
+          ],
+          "dtype": "float64LE"
+        },
+        "u_match": {
+          "path": "u_match_601.bin",
+          "sha256": "90c15f0715574520158fc0640c50616f0d5f803e1ffcb9f5b3b1109e1aa7406d",
+          "bytes": 2654208,
+          "shape": [
+            16,
+            144,
+            144
+          ],
+          "dtype": "float64LE"
+        }
+      }
+    }
+  ]
+}
