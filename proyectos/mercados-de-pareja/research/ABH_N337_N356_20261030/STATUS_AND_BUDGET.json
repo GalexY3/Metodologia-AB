@@ -5,10 +5,10 @@
   "base_ref": "research/ab-h-esbm-decentralized-n317-n336-20261030",
   "authorized_range": "N337–N356",
   "authorized_cycles": 20,
-  "valid": 19,
+  "valid": 20,
   "invalid": 0,
   "planning": 0,
-  "unspent": 1,
+  "unspent": 0,
   "cycle_ids_executed": [
     "N337",
     "N338",
@@ -28,18 +28,19 @@
     "N352",
     "N353",
     "N354",
-    "N355"
+    "N355",
+    "N356"
   ],
   "cycle_ids_planning": [],
   "cycle_ids_invalid": [],
-  "next_cycle_if_conditions_met": "N356",
-  "current_blocker": "HUMAN_R5_NEW_SRC119_REAL_BILATERAL_OPPORTUNITIES_VERIFIED_BUT_NATIVE_DATETIME_OR_ROUND_ORDER_MISSING_AND_DATA_REUSE_LICENSE_NOT_VERIFIED; NO_MATCHING_REAL_ORDINAL_PREFERENCES; NO_NEW_DISCRIMINANT_TECHNICAL_TEST_SELECTED_FOR_N356",
+  "next_cycle_if_conditions_met": null,
+  "current_blocker": "HUMAN_SRC119_MISSING_NATIVE_ROUND_AND_OSF_NODE_LICENSE_NULL; HUMAN_R5_STOP_CONTINUES",
   "admission_contract": "A_J_CONDITIONAL_R5_GATE_NOT_EXECUTED.md",
   "outcomes_executed": true,
   "original_ESBM_sha256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
   "original_SRC104_modified": false,
   "legacy_TypeScript_recovered": false,
-  "code_SHA_frozen_for_new_outcomes": "Every actually executed N337–N355 A–J and input/code SHA frozen in GitHub before experimental outcomes. N356 NOT opened, NO A–J committed and NO outcomes.",
+  "code_SHA_frozen_for_new_outcomes": "N356 prereg and exact local bytes frozen before JS in commit dec8fa73876a0ac80b4add10b91d71e48bea3a04; corrected independent Python oracle frozen before rerun in b4f8d831a9e682a9b51483595b63d520fea33465",
   "reason_no_code_freeze": "No new N356 outcome eligible under strict R5, and no nonredundant technical experiment yet defined. The single authorized AB slot is preserved.",
   "new_documentary_source_ids": [
     "SRC115",
@@ -59,11 +60,13 @@
     "U216",
     "U217",
     "U218",
-    "U219"
+    "U219",
+    "U220",
+    "U221"
   ],
   "source_count": 119,
   "priors_count": 35,
-  "updates_count": 219,
+  "updates_count": 221,
   "new_qualifying_human_holdout": 0,
   "raw_rows_inspected_new": 240,
   "source_screen_candidates": 14,
@@ -72,7 +75,7 @@
   "STOP_R5_human": true,
   "scientific_grade_new": "0/3",
   "maturity_percent_previous_44_10_not_reestimated": true,
-  "R5_gate_decision": "PRESERVE_ONE_N356_AUTHORIZED_STOP_LOCAL_R5_HUMAN_RIGHTS_OR_NATIVE_ORDER_MISSING",
+  "R5_gate_decision": "NO_NEW_HUMAN_VALIDATION_OSF_NODE_LICENSE_NULL_AND_NO_SEQUENCE",
   "prohibitions": {
     "SSJY": true,
     "Codex": true,
@@ -83,7 +86,7 @@
   },
   "scope": "Real Windows execution of original Python and TypeScript matching solvers plus independent computational verification; No new qualifying independent human romantic dyadic data. Existing R5 documentary screening retained.",
   "is_graph_revision": "AB_ATLAS_DELTA.json",
-  "status": "ABH_N337_N355_COMPLETED_19_VALID_N356_NOT_SPENT_HUMAN_R5_STOP",
+  "status": "ABH_N337_N356_CLOSED_20_VALID_17_TECH_PASS_3_TECH_NEGATIVE_HUMAN_STOP_R5",
   "executed_details": [
     {
       "id": "N337",
@@ -179,17 +182,22 @@
       "id": "N355",
       "status": "VALID_TECHNICAL_PASS",
       "evidence": "LEDGER_AJ_N337_N355_20261031.json#N355"
+    },
+    {
+      "id": "N356",
+      "status": "VALID_TECHNICAL_NEGATIVE",
+      "evidence": "LEDGER_AJ_N337_N356_20261031.json#N356"
     }
   ],
-  "AJ_postoutcome_ledger": "LEDGER_AJ_N337_N355_20261031.json",
+  "AJ_postoutcome_ledger": "LEDGER_AJ_N337_N356_20261031.json",
   "date_last_verified": "2026-10-31",
   "external_human_validation_executed": false,
   "supersedes_documentary_phase_20261030": true,
   "outcomes_sha_manifest": "N350_N355_OUTPUTS_20261031/N350_N355_COMPLETE_OUTPUTS.zip.b64 and LEDGER_AJ_N337_N355_20261031.json",
-  "invalid_instrument_attempts": 7,
+  "invalid_instrument_attempts": 8,
   "technical_pass": 17,
-  "technical_valid_negative": 2,
-  "verified_tech_results": "N350 84/84 applicable adversarial dual mutants rejected; N351 96 DA-vs-central F/M markets; N352 all 480 assumed preference scenarios had no F/M proposer-side split (valid negative); N353 68/96 no cycle and 96 artificial 2×2 stable rotation witnesses; N354 12 full DA N144×T16 worlds; N355 independent 12/12 state checks 159402 directed events. Earlier N342 60/60 original Python/TS full pair/direct-event parity and N349 120/120 decentralized worlds unchanged.",
+  "technical_valid_negative": 3,
+  "verified_tech_results": "N350 84/84 applicable adversarial dual mutants rejected; N351 96 DA-vs-central F/M markets; N352 all 480 assumed preference scenarios had no F/M proposer-side split (valid negative); N353 68/96 no cycle and 96 artificial 2×2 stable rotation witnesses; N354 12 full DA N144×T16 worlds; N355 independent 12/12 state checks 159402 directed events. Earlier N342 60/60 original Python/TS full pair/direct-event parity and N349 120/120 decentralized worlds unchanged.; N356 9/12 incorrect full_units numeric summaries despite 12/12 matching certificates, Python rational independent verification and two mutation checks",
   "legacy_TypeScript_scope": "N207–N216 actual TS recovered and executed; original N237–N256 TS/Boost historical ZIP still not recovered. No rewrite of prior claim.",
   "no_merge_main": true,
   "raw_rows_uploaded_to_GitHub": 0,
@@ -204,6 +212,8 @@
     "sequence_native_verified": false,
     "license_verified": false,
     "R5_admitted": false,
-    "aggregate_audit_only": "R5_HOFFMANN_OSF_VZX6Q_20261031/AGGREGATE_ONLY_R5_GATE.json"
-  }
+    "aggregate_audit_only": "R5_HOFFMANN_OSF_VZX6Q_20261031/AGGREGATE_ONLY_R5_GATE.json",
+    "OSF_API_node_license": null
+  },
+  "pending_cycle_ids": []
 }

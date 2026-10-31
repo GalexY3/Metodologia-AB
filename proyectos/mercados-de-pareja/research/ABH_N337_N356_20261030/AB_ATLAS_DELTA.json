@@ -12,7 +12,8 @@
     "invalid_executed": 0,
     "planning_ab": 0,
     "pending": 1,
-    "invalid_instrument_attempts_not_cycles": 7
+    "invalid_instrument_attempts_not_cycles": 7,
+    "valid": 20
   },
   "scientific_grade": "0/3",
   "CT2": 7,
@@ -351,6 +352,18 @@
       "title": "N356 unspent pending original human sequence and data rights, or other distinct discriminant experiment",
       "cycle_spent": false,
       "reason": "SRC119 data 240 native bilateral encounters lack round or time and data reuse rights verifiable; no original ordinal preference schedule"
+    },
+    {
+      "id": "MP-N356-TECH-NEGATIVE",
+      "type": "technical_falsification",
+      "mode": "AB-H",
+      "status": "executed_negative",
+      "cycle": "N356",
+      "title": "IEEE-754 full integer objective field numerically non-exact 9/12; independent rational oracle agrees",
+      "prereg_commit": "dec8fa73876a0ac80b4add10b91d71e48bea3a04",
+      "technical_only": true,
+      "cycle_spent": true,
+      "CT2_scientific": 7
     }
   ],
   "edges": [
@@ -527,11 +540,17 @@
       "to": "MP-N356-R5-UNSPENT",
       "type": "branches_from",
       "note": "Technical synthetic DA validation finished; no human transportability inferred"
+    },
+    {
+      "from": "MP-N356-R5-UNSPENT",
+      "to": "MP-N356-TECH-NEGATIVE",
+      "type": "superseded_by_executed_test",
+      "note": "R5 human branch remains STOP; technical falsifier discovered and executed after prospective SHA freeze."
     }
   ],
   "orphan_audit": "All 19 actual executed AB-H cycles represented: N337 and N338 original nodes, N339 gate closed, N340–N355 newly typed. Every new source/blocked gate linked; 1 N356 unopened. 119 SOURCES,35 PRIORS,219 UPDATES, U217–U219 human NO_CHANGE_WITH_REASON. No research branch merge and no new human scientific grade.",
   "main_merge": false,
-  "last_update": "U219",
+  "last_update": "U221",
   "new_human_validation": false,
   "new_human_independent_dataset_candidate": "SRC119_REAL_240_SPEED_DATES_BLOCKED_R5"
 }

@@ -1,0 +1,96 @@
+{
+  "schema": "ABH_N356_PYTHON_RATIONAL_ORACLE_V1",
+  "source_sha256": "8ecf9395834ee96c98c9cb5c39ec692eea0f3944895b464515d9e6e7c9e2fef5",
+  "cases": 12,
+  "matching_cases_checked": 12,
+  "reported_mismatches": 9,
+  "two_intentional_mutants_detected": true,
+  "checks": [
+    {
+      "name": "POS_SINGLE_ONE_ULP",
+      "python_exact_full_units": "4503599627370497",
+      "published_minus_python_exact": "0",
+      "json_decimal_literal_minus_python_exact": "0",
+      "source_row_claim_correct": true
+    },
+    {
+      "name": "POS_DOUBLE_ZERO_ULP",
+      "python_exact_full_units": "9007199254740992",
+      "published_minus_python_exact": "0",
+      "json_decimal_literal_minus_python_exact": "0",
+      "source_row_claim_correct": true
+    },
+    {
+      "name": "NEG_DOUBLE_ONE_ULP",
+      "python_exact_full_units": "9007199254740993",
+      "published_minus_python_exact": "-1",
+      "json_decimal_literal_minus_python_exact": "-1",
+      "source_row_claim_correct": true
+    },
+    {
+      "name": "NEG_DOUBLE_THREE_ULP",
+      "python_exact_full_units": "9007199254740995",
+      "published_minus_python_exact": "1",
+      "json_decimal_literal_minus_python_exact": "1",
+      "source_row_claim_correct": true
+    },
+    {
+      "name": "NEG_TRIPLE_ONE_ULP",
+      "python_exact_full_units": "13510798882111489",
+      "published_minus_python_exact": "-1",
+      "json_decimal_literal_minus_python_exact": "-1",
+      "source_row_claim_correct": true
+    },
+    {
+      "name": "NEG_QUAD_ONE_ULP",
+      "python_exact_full_units": "18014398509481985",
+      "published_minus_python_exact": "-1",
+      "json_decimal_literal_minus_python_exact": "-1",
+      "source_row_claim_correct": true
+    },
+    {
+      "name": "POS_N144_ALL_INTEGER",
+      "python_exact_full_units": "324259173170675712",
+      "published_minus_python_exact": "0",
+      "json_decimal_literal_minus_python_exact": "-12",
+      "source_row_claim_correct": true
+    },
+    {
+      "name": "NEG_N144_ONE_ULP",
+      "python_exact_full_units": "324259173170675713",
+      "published_minus_python_exact": "-1",
+      "json_decimal_literal_minus_python_exact": "-13",
+      "source_row_claim_correct": true
+    },
+    {
+      "name": "NEG_N144_THREE_ULP",
+      "python_exact_full_units": "324259173170675715",
+      "published_minus_python_exact": "-3",
+      "json_decimal_literal_minus_python_exact": "-15",
+      "source_row_claim_correct": true
+    },
+    {
+      "name": "NEG_N144_31_ULP",
+      "python_exact_full_units": "324259173170675743",
+      "published_minus_python_exact": "-31",
+      "json_decimal_literal_minus_python_exact": "-43",
+      "source_row_claim_correct": true
+    },
+    {
+      "name": "NEG_N144_33_ULP",
+      "python_exact_full_units": "324259173170675745",
+      "published_minus_python_exact": "31",
+      "json_decimal_literal_minus_python_exact": "55",
+      "source_row_claim_correct": true
+    },
+    {
+      "name": "MIX_N144_PATTERN",
+      "python_exact_full_units": "324259173170675853",
+      "published_minus_python_exact": "-13",
+      "json_decimal_literal_minus_python_exact": "-13",
+      "source_row_claim_correct": true
+    }
+  ],
+  "CT2_scientific": 7,
+  "STOP_R5_human": true
+}

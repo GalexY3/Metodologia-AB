@@ -6209,7 +6209,48 @@
       "STOP_R5_human": true,
       "scientific_grade": "0/3",
       "numerical_bayesian_likelihood_updated": false
+    },
+    {
+      "id": "U220",
+      "recorded_at": "2026-10-31",
+      "campaign": "ABH_N337_N356_N356",
+      "prior_id": "P-ALLOCATION-RULE",
+      "source_ids": [
+        "SRC118"
+      ],
+      "cycle_ids": [
+        "N356"
+      ],
+      "direction": "NO_CHANGE_WITH_REASON",
+      "evidence_type": "PROSPECTIVE_SOFTWARE_NUMERIC_INTEGRITY_FALSIFIER",
+      "before": "NO_HUMAN_REAL_ALLOCATION_VALIDATION",
+      "after": "NO_HUMAN_REAL_ALLOCATION_VALIDATION",
+      "documentary_findings": "N356 found 9/12 JS Number full_units summary rounding errors; all 12 matching certified, independent Python fraction checks complete. Does not establish invalidity of selected pairs.",
+      "outcome_sha256": "8ecf9395834ee96c98c9cb5c39ec692eea0f3944895b464515d9e6e7c9e2fef5",
+      "independent_oracle_sha256": "eee65d33af9b7a4ec0af62953235d9c45254d934ad09d55edc5ed4201bf17f08",
+      "why_no_update": "Technical representation bug concerns an auxiliary numerical report, not measured romantic behavior or the social hypothesis.",
+      "CT2_scientific": 7,
+      "scientific_grade": "0/3"
+    },
+    {
+      "id": "U221",
+      "recorded_at": "2026-10-31",
+      "campaign": "ABH_N337_N356_SRC119_PRIMARY_LICENSE_DETAIL",
+      "prior_id": "P-DYADIC_ACCESS",
+      "source_ids": [
+        "SRC119"
+      ],
+      "cycle_ids": [],
+      "direction": "NO_CHANGE_WITH_REASON",
+      "evidence_type": "PRIMARY_OSF_API_LICENSE_METADATA_AUDIT_NOT_CYCLE",
+      "before": "HUMAN_EXTERNAL_ORDERED_NATIVE_DYADIC_ACCESS_BLOCKED",
+      "after": "HUMAN_EXTERNAL_ORDERED_NATIVE_DYADIC_ACCESS_BLOCKED",
+      "original_source": "https://api.osf.io/v2/nodes/vzx6q/ ; https://api.osf.io/v2/nodes/vzx6q/files/osfstorage/ ; Hoffmann 2024 open article",
+      "documentary_findings": "OSF node has node_license=null (public=true). Only original .sav and R script files available; no added schedule/round file; article CC BY does not by itself confirm dataset licensing.",
+      "why_no_update": "R5 prespec still lacks native dyadic temporal order and verifiable data reuse rights. Discovery documents a missing license, not an admissible human validation dataset.",
+      "CT2_scientific": 7,
+      "scientific_grade": "0/3"
     }
   ],
-  "last_campaign": "ABH_N337_N356_20261031_N350_N355_AND_SRC119_HUMAN_STOP_R5"
+  "last_campaign": "ABH_N337_N356_CLOSED_N356_NUMERIC_BUG_OSF_LICENSE_R5_STOP"
 }
