@@ -1,28 +1,17 @@
-# Mercados de pareja · estado verificable
+# Mercados de pareja · estado verificable · 31/10/2026
 
-**Actualizado: 30/10/2026.** Esta entrada es documentación estable en `main`, no una fusión de ramas científicas.
+**N337–N356 autorizado: 2/20 ciclos técnicos ejecutados (1 PASS, 1 negativo válido), 18 plazas N339–N356 pendientes, 0 inválidos/planificación AB.** El acceso al PC mediante ChatGPT on Steroids eliminó el impedimento de ejecución Windows, pero no el cuello de botella **científico humano STOP_R5**. El ESBM original y SRC104 permanecen intactos. **CT2 científica 7/100, 117 SOURCES, 35 PRIORS, 214 UPDATES**; U214 `NO_CHANGE_WITH_REASON`, madurez previa 44,10 % no reestimada.
 
-## Campaña autorizada actualmente: AB-H N337–N356
+[Informe actualizado del 31/10 en main](informes/ABH_N337_N356_20261031_WINDOWS.md) · [Rama científica N337–N356](https://github.com/GalexY3/Metodologia-AB/tree/research/ab-h-esbm-r5-evidence-gate-n337-n356-20261030/proyectos/mercados-de-pareja/research/ABH_N337_N356_20261030) · [saldo/ledger](https://github.com/GalexY3/Metodologia-AB/blob/research/ab-h-esbm-r5-evidence-gate-n337-n356-20261030/proyectos/mercados-de-pareja/research/ABH_N337_N356_20261030/STATUS_AND_BUDGET.json).
 
-**20 plazas autorizadas, 0 ejecutadas, 20 disponibles, STOP_R5 humano activo.** El usuario ha ordenado no consumir cupo con repeticiones ni simulaciones carentes de nueva prueba discriminante. La investigación se ha detenido localmente tras un cribado documental sin identificar una nueva base de decisiones románticas que permita al mismo tiempo verificar el conjunto de oportunidades, dos respuestas nativas, secuencia temporal, independencia, permisos y acceso a registros originales.
+**N337**: 60/60 trayectorias artificiales N8/T6/K3 coincidieron entre el verdadero Python original (inyectando inputs pequeños sin alterar su archivo) y TypeScript N207–N216 **independiente**, en todos los resultados y conjuntos de parejas por tick (360 ticks, 360 óptimos TS únicos). Prerregistro SHA previo commit `732d628dc8aa9f24620206c352eed5705fa40521`. Paquete bruto de 28 archivos (ZIP codificado base64) y recibo en la rama científica. Esto no es el TS+Boost N237–N256 histórico ni una prueba humana.
 
-[Informe de STOP_R5 documentado en main](informes/ABH_N337_N356_20261030_STOP_R5.md) · [Rama científica N337–N356 con puerta A–J y saldo](https://github.com/GalexY3/Metodologia-AB/tree/research/ab-h-esbm-r5-evidence-gate-n337-n356-20261030/proyectos/mercados-de-pareja/research/ABH_N337_N356_20261030).
+**N338**: al probar las dimensiones **oficiales N144/T16/K7** con `people(101)`, el Python original completó dos escenarios, pero el TS exacto de subconjuntos se detuvo en t=1 ante **componente 27 > 22**, límite precongelado; primer tick Python/TS coincidente en 37 y 38 parejas, respectivamente, sin paridad completa. Prerregistro previo `9ee375c058cbeb3a678c403bcc2653207fc4690f`. Negativo técnico **válido** y conservado, no una reparación Boost.
 
-### Nuevos antecedentes documentales
+**Evidencia humana:** [informe documental de 30/10](informes/ABH_N337_N356_20261030_STOP_R5.md) preservado como instantánea histórica anterior al PC; SRC115–SRC117 eran antecedentes documentales, ninguno un nuevo holdout romántico con dos votos nativos y oportunidades auditadas. Las 18 plazas están **ya autorizadas**; no pedir nuevas. Solo abrir N339 con prueba discriminante no redundante y congelación A–J + código/input SHA **antes** de outcomes.
 
-Se añadieron **SRC115–SRC117** (sin suplantar cohortes independientes):
-- **SRC115:** Hu y Markowitz (2026), dos experimentos de elección entre conjuntos de seis y 31 perfiles románticos (N193/N342); elección unilateral, sin decisión independiente del destinatario.
-- **SRC116:** Winter, Gërxhani y van de Rijt (2026), elección humana de compañeros y competidores en tareas remuneradas, **no** emparejamiento romántico ni consentimiento bilateral.
-- **SRC117:** Sharabi (2020/2021), 108 díadas con información previa de perfil asignada aleatoriamente, autoinformes sobre comunicación y futura interacción; sin binarios nativos de ambas personas ni secuencias de riesgo acreditados.
+## Historial
 
-Registrados en SOURCES y UPDATES, con revisión cualitativa de cinco priors preexistentes. **117 SOURCES, 35 PRIORS, 213 UPDATES (U209–U213 `NO_CHANGE_WITH_REASON`)**. CT2 científica **7/100**, STOP_R5 humano **activo**, grado científico nuevo 0/3. Madurez histórica 44,10 % **no reestimada**.
+[Informe N317–N336](informes/ABH_N317_N336_20261030.md) · [N297–N316](informes/ABH_N297_N316_20261030.md) · [N277–N296](informes/ABH_N277_N296_20261030.md) · [N257–N276](informes/ABH_N257_N276_20261030.md) · [tareas Codex archivadas/inactivas](tareas_codex/README.md).
 
-No hay SHA de código experimental N337 porque no se inició ni observó outcome alguno. El [contrato A–J de admisión](https://github.com/GalexY3/Metodologia-AB/blob/research/ab-h-esbm-r5-evidence-gate-n337-n356-20261030/proyectos/mercados-de-pareja/research/ABH_N337_N356_20261030/A_J_CONDITIONAL_R5_GATE_NOT_EXECUTED.md) es **condicional**; cualquier ejecución futura requiere código, dataset y hashes congelados en GitHub antes de outcomes. Los 20 ciclos están previamente autorizados y no deben volver a solicitarse.
-
-## Antecedentes experimentales realmente cerrados
-
-- [N317–N336: 20/20 pruebas técnicas ejecutadas](informes/ABH_N317_N336_20261030.md), diferenciando negociación DA, ofertas descentralizadas y max-weight central sobre poblaciones artificiales. Sin validación causal romántica.
-- [N297–N316: 20/20 controles exactitud y robustez](informes/ABH_N297_N316_20261030.md), con Python ESBM original auditado directamente en 60 trayectorias y problemas adversariales Boost.
-- [N277–N296](informes/ABH_N277_N296_20261030.md) y [N257–N276](informes/ABH_N257_N276_20261030.md): antecedentes de paridad instrumental y contraejemplos técnicos.
-
-El **ESBM original** permanece con SHA256 `f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b`; SRC104 intacto y con anomalías de correspondencia no corregidas. El TypeScript histórico completo no se ha recuperado. Sin SSJY, Codex, aceptación de licencias, contactos de autores, fusiones experimentales a main ni CI costosa. [Carpeta histórica de tareas Codex, inactiva](tareas_codex/README.md).
+**Gobernanza:** sin SSJY, Codex, aceptar licencias, contactar autores, fusionar ramas experimentales con main ni ejecutar CI costosa. La prueba de fidelidad software no equivale a validez sociológica, y el matching centralizado/DA no puede inferirse de simples respuestas de interés sin preferencias/criterios de exclusividad.
