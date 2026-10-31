@@ -1,0 +1,81 @@
+{
+  "schema": "ABH_N350_PREOUTCOME_AJ_FROZEN",
+  "date": "2026-10-31",
+  "status": "NO_MUTATIONS_EXECUTED_YET",
+  "cycle": "N350",
+  "authorization": "N350–N356 7 already granted",
+  "A": {
+    "question": "Can independently checkable primal-dual Blossom certificates detect targeted tampering in the witness, graph weight, edge, matched pair or bound without accepting falsely certified optimality?",
+    "unit": "12 already frozen graph instances, a single verification programme, 11 predetermined attack types/instance; no fresh synthetic matching outcome",
+    "newness": "N339 positive dual verification; N350 explicitly attacks verifier trust boundary and detects false-certification vulnerabilities."
+  },
+  "B": {
+    "strong_comparator": "Unmodified N339 graph inputs and original genuine JS dual witnesses (both frozen source/result SHA); test each legitimate instance passes unchanged; deliberately invalid mutants should be rejected when applicable",
+    "external_oracle": "Independent Python verifier was separately used in N339 and is not reused to count extra cycles; this test adversarially assesses JS production verifier",
+    "comparator_limit": "Deterministic mutation suite, not statistical human study"
+  },
+  "C": {
+    "primary": "Each applicable witness tampering must throw rather than return certified; retain all ESCAPED failures as negative. Count NONAPPLICABLE separately; all 12 unmodified valid controls must verify",
+    "mutants": [
+      "swap_first_matched_endpoint",
+      "duplicate_first_matched_pair",
+      "first_matched_edge_weight_plus_one",
+      "first_matched_edge_weight_minus_one",
+      "dual_first_vertex_plus_one",
+      "dual_first_positive_vertex_minus_one",
+      "upper_bound_below_primal",
+      "positive_blossom_dual_minus_one",
+      "positive_blossom_dual_negative",
+      "blossom_parent_self_loop",
+      "nonedge_in_matching"
+    ],
+    "warning": "Some perturbations may not invalidate optimality (eg changed edge weight by -1 but matching still optimal), thus escaping one is evidence about validator sensitivity not necessarily unsoundness; evaluate exact discrepancy, never claim fraud without mathematical counterexample."
+  },
+  "D": {
+    "new_harness_sha256": "dfa4b28b5423a4f76b49bffcfe7474f7bb83c40da938137c91fac4eb26ed8f25",
+    "github_preoutcome_source_commit": "d6c8c2e8aa9b902a1a857157fc375ce6e6d436cb",
+    "historical_N339_input_sha256": "875d3fdc70f07ae65c906221d8e7c8c4b37cbeb5106939c41604ba0d3bd1378b",
+    "historical_N339_result_sha256": "b7d3f483e90e956129e7197c72a23096512b4faff0facc34344cd5cd96951a2a",
+    "verifier_sha256": "9b6fd317dd05229c45fa5ee60bf71af226dd307fa2a558c1abb332b93017b19d"
+  },
+  "E": {
+    "commands": [
+      "node instrument/n350_adversarial_witness.mjs"
+    ],
+    "outer_wall_seconds": 40,
+    "heap_limit_mb": 512,
+    "outcome_path": "outcomes/N350_ADVERSARIAL_DUAL.json",
+    "executed_at_freeze": false
+  },
+  "F": {
+    "controls": [
+      "12 unchanged valid certs accepted",
+      "Mutation never changes N339 source files",
+      "Tampering caught by independent typed code guards",
+      "No posthoc attacks excluded",
+      "Exact result SHA checks before testing"
+    ]
+  },
+  "G": {
+    "epistemic": "Software certificate audit only, not independent human behavior or novel theorem"
+  },
+  "H": {
+    "prior": "P-TRAJECTORY-INVARIANCE; NO_CHANGE_WITH_REASON even if passes, document any escape as limitation"
+  },
+  "I": {
+    "CT2_scientific": 7,
+    "STOP_R5_human": true
+  },
+  "J": {
+    "count_if_real_execution": "One valid technical cycle even if false negatives are found; no extra slot for each mutant",
+    "remaining_if_executed": 6,
+    "not_allowed": [
+      "SSJY",
+      "Codex",
+      "License acceptance",
+      "Author contact",
+      "main merge",
+      "costly CI"
+    ]
+  }
+}
