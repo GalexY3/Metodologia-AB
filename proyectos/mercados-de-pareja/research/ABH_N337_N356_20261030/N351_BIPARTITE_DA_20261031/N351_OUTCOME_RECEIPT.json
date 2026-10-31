@@ -1,0 +1,46 @@
+{
+  "cycle": "N351",
+  "classification": "VALID_TECHNICAL_MECHANISM_DISCRIMINATION",
+  "prereg_commit": "065f3e571ed9aeab74fb79df2842b56a84551d5f",
+  "input_sha": "42c24b43bde724d0609d816a57f6287c17c0f201705382031d8f00cecfe28d35",
+  "code_sha": "e9b5d2ddfdfe6b786220fd32606047860930c2b19d9dd6751f0e6367acb81805",
+  "output_sha": "5bc1d9e7557e6e090002a1b705fbf1f08691bd736de50ea418c52ba800a72eac",
+  "markets": 96,
+  "clusters_synthetic_seeds": 6,
+  "eligibility": "Original ESBM positive directed responses deduplicated as undirected dyads in heterosexual restricted synthetic scenario",
+  "ordinal": "ASSUMED q(receiver)-0.02 age gap+0.03 same norm−1e−7 partner ID, NOT observed human preference",
+  "summary": {
+    "central": {
+      "pairs": 1165,
+      "markets_with_blocking": 93,
+      "blocking_pairs": 415
+    },
+    "DA_F": {
+      "pairs": 1062,
+      "markets_with_blocking": 0,
+      "blocking_pairs": 0
+    },
+    "DA_M": {
+      "pairs": 1062,
+      "markets_with_blocking": 0,
+      "blocking_pairs": 0
+    },
+    "greedy_forward": {
+      "pairs": 1093,
+      "blocking_pairs": 478,
+      "markets_blocked": 93
+    },
+    "greedy_reverse": {
+      "pairs": 1088,
+      "blocking_pairs": 440,
+      "markets_blocked": 96
+    }
+  },
+  "DA_F_vs_DA_M_pairsets_different_markets": 0,
+  "limit": "DA guaranteed stable under defined synthetic strict ordinal lists, not original ESBM empirical consent; central uses alternative objective maximizing cardinality then tiny random edge weights and can be unstable under these independently stipulated rankings. Not longitudinal counterfactual and no human data.",
+  "N350_valid": true,
+  "pending_after": 5,
+  "CT2": 7,
+  "STOP_R5_human": true,
+  "no_SSJY_Codex_license_contact_merge_CI": true
+}
