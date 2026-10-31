@@ -3,7 +3,7 @@
   "project": "mercados-de-pareja",
   "date": "2026-10-31",
   "scope": "Retrospective provenance backfill from repository reports plus N56/N57 publisher audit. Original data never copied; not systematic or claim of accessing raw data for bibliography.",
-  "source_count": 118,
+  "source_count": 119,
   "sources": [
     {
       "id": "SRC001",
@@ -2600,9 +2600,82 @@
         "P-TRAJECTORY-INVARIANCE"
       ],
       "discovery_campaign": "ABH_N337_N356_20261031_WINDOWS"
+    },
+    {
+      "id": "SRC119",
+      "title": "Hoffmann et al. (2024), Sharing and Receiving Eye-Contact Predicts Mate Choice After a 5-Minute Conversation: Evidence from a Speed-Dating Study — original OSF dual eye-tracking data",
+      "canonical_url": "https://doi.org/10.1007/s10508-023-02806-0",
+      "primary_repository": "https://osf.io/vzx6q/",
+      "primary_data_url": "https://osf.io/download/g6tym/",
+      "source_script_url": "https://osf.io/download/ph4e2/",
+      "date_verified": "2026-10-31",
+      "source_type": "ORIGINAL_HUMAN_ROMANTIC_DYADIC_MICRODATA_PUBLIC_R5_PARTIAL_QUALIFICATION",
+      "file_format": "IBM SPSS .sav (public published)",
+      "public_dataset_sha256": "3de995b8f8abc24908244d770009e600207d6b7940b4a91ff0b82573e45c9f01",
+      "public_dataset_bytes": 39536,
+      "R_script_sha256": "de0d558c79a4e530070006575534d8be2b922c05e5acd0700a63e21a649ed67a",
+      "R_script_bytes": 4818,
+      "verified_counts": {
+        "dyadic_encounters": 240,
+        "distinct_subjects": 60,
+        "distinct_preassigned_partners": 8,
+        "dates_per_subject": 4,
+        "dates_per_partner": 30,
+        "unique_Subject_Partner_pairs": 240,
+        "Subject_Choice_yes": 72,
+        "Subject_Choice_no": 168,
+        "Partner_Choice_yes": 43,
+        "Partner_Choice_no": 197,
+        "mutual_yes": 10,
+        "mutual_no": 230,
+        "native_choice_missing": 0,
+        "exact_mutual_vote_consistency": true
+      },
+      "native_original_fields": [
+        "Subject",
+        "Partner",
+        "Subject_Choice",
+        "Partner_Choice",
+        "Match",
+        "MutualEyeGaze_duration",
+        "Partner_eyes_duration",
+        "Subject_eyes_duration",
+        "Subject_Attractiveness",
+        "Partner_Attractiveness"
+      ],
+      "R5_pros": [
+        "Independent original real romantic speed dates (not synthetic)",
+        "Observed face-to-face encounter denominator on a defined assigned 4-partner set",
+        "Both native yes/no decisions per encounter, no inferred mirrored votes",
+        "Fully verified data bytes and author's original R analysis script"
+      ],
+      "R5_blockers": [
+        "No native Round/time/sequence/session/trial/timestamp/order fields in 31-column SPSS file, so four dates per subject cannot be temporally ordered from source",
+        "OSF node has public access but data-level reuse license not verified in API metadata; public download is not equivalent to license clearance",
+        "Four assigned partners are the observed risk set for encounters, but not all possible/feasible relationship candidates; no full exclusivity/allocation mechanism",
+        "No ordinal full preferences or real strategic offer sequence, so DA and central matching not empirically identified from votes",
+        "Only 10 positive mutual yes events means limited precision for subgroup positive outcome inference"
+      ],
+      "R5_eligible": false,
+      "R5_decision": "STOP_R5_PENDING_VERIFIED_NATIVE_TEMPORAL_ORDER_AND_RIGHTS",
+      "temporal_order_native_verified": false,
+      "data_level_license_verified": false,
+      "prohibited_contact_authors": true,
+      "observational_comparison_allowed_only_after_rights": "Potentially dyadic binary propensity under observed scheduled dates with actor dependence; NOT sequential market mechanism or Gale–Shapley stable allocation without further instrument.",
+      "privacy_preservation": "Raw 240 individual rows and raw participant IDs retained only in approved local user machine workspace, NOT uploaded to GitHub; aggregate schema/count/hash only",
+      "aggregate_public_audit": "proyectos/mercados-de-pareja/research/ABH_N337_N356_20261030/R5_HOFFMANN_OSF_VZX6Q_20261031/AGGREGATE_ONLY_R5_GATE.json",
+      "aggregate_audit_sha256": "70f1c646a5fb72f5c880951473c77d98aee31ac0d6f5617de16d7acd4307c97d",
+      "prior_ids": [
+        "P-DYADIC_ACCESS",
+        "P-LONGITUDINAL-ELIGIBILITY",
+        "P-MEASURE_OUTCOME"
+      ],
+      "no_AB_cycle_spent_for_document_review": true,
+      "human_original_new_independent_candidate": true,
+      "no_human_validation_claimed": true
     }
   ],
-  "last_added_campaign": "ABH_N337_N356_WINDOWS_PIVOT_20261031",
+  "last_added_campaign": "ABH_N337_N356_WINDOWS_SOURCE_AUDIT_20261031",
   "canonical_duplicate_DOI_audit": {
     "date": "2026-10-30",
     "source_records_before": 107,
