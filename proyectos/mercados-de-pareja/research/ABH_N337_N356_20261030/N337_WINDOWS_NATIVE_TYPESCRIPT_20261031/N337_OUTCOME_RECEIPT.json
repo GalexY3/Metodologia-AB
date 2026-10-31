@@ -26,7 +26,6 @@
   "total_pair_ticks": 360,
   "TS_runs_succeeded": 60,
   "TS_exceptions": 0,
-  "result_and_pair_exact_with_float_tol_1e9": 60,
   "first_differences": 0,
   "unique_matching_optima_count": 360,
   "matched_pairs_formed_Python": 236,
@@ -57,5 +56,7 @@
     "planning": 0,
     "pending_after": 19
   },
-  "AB_decision": "CLOSE_N337_TECHNICAL_PASS_WITH_SCOPE"
+  "AB_decision": "CLOSE_N337_TECHNICAL_PASS_WITH_SCOPE",
+  "result_and_pair_agreement_with_absolute_float_tolerance_1e_minus_9": 60,
+  "receipt_metadata_errata": "Renamed mistyped field suffix '1e9' to '1e_minus_9' to state actual comparator tolerance. No raw experiment, code, prereg, outcome hash, run classification or cycle count changed."
 }
