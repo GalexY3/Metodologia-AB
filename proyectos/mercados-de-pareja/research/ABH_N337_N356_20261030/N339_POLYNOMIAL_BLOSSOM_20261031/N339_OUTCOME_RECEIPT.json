@@ -1,0 +1,83 @@
+{
+  "schema": "ABH_N339_RESULT_RECEIPT_v1",
+  "date": "2026-10-31",
+  "cycle_id": "N339",
+  "classification": "VALID_TECHNICAL_POSITIVE_WITH_LIMITS",
+  "original_prereg_commit": "b8ac80c4bfe73c77088c80cb4f1e966f90e120a4",
+  "documented_repair_prereg_commit": "05e51108a7cb96ccb085ef2fe641112f3e8257c8",
+  "repaired_oracle_code_frozen_before_python_oracle_commit": "2c568150b6b320311a0c1b3a028db06b84d3e708",
+  "repair_exact_change": "@functools.cache(None) to @functools.cache in 2 decorators only, no outcomes modified",
+  "preoutcome_code_inputs_sha": "see PREREG_AJ_SHA_FREEZE_BEFORE_OUTCOMES.json, original list of 9 SHA256",
+  "graphs": 12,
+  "max_n": 144,
+  "max_edges": 3221,
+  "JS_runs_completed": 12,
+  "JS_primal_dual_certificates": 12,
+  "Python_independent_dual_verified": 12,
+  "Python_NetworkX_exact_integer_optimum_matched": 12,
+  "small_DP_exact_verified": 5,
+  "run_negative_cases": 0,
+  "graph_labels": [
+    "C4_EXACT_TIE",
+    "K6_ALL_TIED",
+    "ODD_TRIANGLE_PENDANT",
+    "RANDOM_N12_D65",
+    "RANDOM_N14_D80",
+    "RANDOM_N24_D32",
+    "RANDOM_N64_D12",
+    "RANDOM_N144_D8",
+    "RANDOM_N144_D31",
+    "ULP_N144_D13",
+    "ULP_N144_D27",
+    "DISCONNECTED_N144_WITH_ISOLATES"
+  ],
+  "degeneracy": {
+    "C4_number_optima": 2,
+    "K6_number_optima": 15,
+    "ULP_N144_D27": "Different pair sets between JS and NetworkX, same 72-pair cardinality and exact residue784; uniqueness UNVERIFIED, do not claim pair parity"
+  },
+  "integer_normalization": "Let r_e=(binary64_weight_e-1)*2^52 as exact integer. With C=floor(n/2), M=max r_e, use transformed W_e=C*M+1+r_e, keeping all sums <2^53. Maximizing transformed weight lexicographically maximizes cardinality and integer residual sum.",
+  "dual_cert_proof": "Dual feasibility per edge, zero slack for matched edges, zero vertex dual for unmatched, saturation of odd blossoms with positive dual, primal-dual objective equality; checked by separate Python script.",
+  "runtime_milliseconds": {
+    "RANDOM_N144_D8": 8.153,
+    "RANDOM_N144_D31": 17.642,
+    "ULP_N144_D13": 6.075,
+    "ULP_N144_D27": 21.192
+  },
+  "hashes": {
+    "inputs_sha256": "875d3fdc70f07ae65c906221d8e7c8c4b37cbeb5106939c41604ba0d3bd1378b",
+    "js_outcomes_sha256": "b7d3f483e90e956129e7197c72a23096512b4faff0facc34344cd5cd96951a2a",
+    "independent_oracle_sha256": "f6f785262969730cd6ba09bdfc1ec18cc632061727d247aee57ce932369fea38",
+    "archive_zip_sha256": "b57781d54adb3b863c365ee653effd3c780a179349bee385f9cae5822e7c0347"
+  },
+  "archive": {
+    "file": "N339_EXACT_BLOSSOM_DUAL_EVIDENCE.zip.b64",
+    "encoding": "UTF-8 base64 of binary ZIP",
+    "zip_bytes": 137545,
+    "member_count": 25,
+    "zip_test": "CRC_ALL_VALID",
+    "local_copy": "C:\\Users\\Nitropc\\CoS-Prueba\\ESBM_ABH_N339_N356_20261031\\N339_EXACT_BLOSSOM_DUAL_EVIDENCE.zip"
+  },
+  "invalid_attempts": [
+    {
+      "stage": "first_independent_oracle_attempt",
+      "reason": "Python @functools.cache(None) decorator TypeError before any comparison",
+      "count_as_cycle": false,
+      "retained": "outcomes/FAILED_N339_PY_ORACLE_ATTEMPT_1.txt",
+      "repair_prospectively_frozen": true
+    }
+  ],
+  "licence_provenance": "Matt Krick EdmondsBlossom upstream commit fab7ca8505e1577b009696c038dc804cf0acbea2 MIT, licence text included and no clickthrough. Algorithm port from Joris van Rantwijk, same mathematical lineage as NetworkX; no claim of independent theoretical derivation.",
+  "limit": "This is a solver certificate only on synthetic graphs; not full TS ESBM replay, not human empirical validation; only 12 graphs and no universal proof of implementation correctness beyond certificates and checks.",
+  "CT2_scientific": 7,
+  "STOP_R5_human": true,
+  "new_human_grade": "0/3",
+  "cycles_spent_this_cycle": 1,
+  "cycles_remaining_N340_N356": 17,
+  "SSJY": false,
+  "Codex": false,
+  "licence_accepted": false,
+  "authors_contacted": false,
+  "research_branch_merged_to_main": false,
+  "costly_CI": false
+}
