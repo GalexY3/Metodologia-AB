@@ -6308,7 +6308,27 @@
       "why_no_update": "No source-native row schema/sequence verified and no explicit dataset license; no human outcome processed.",
       "scientific_CT2": 7,
       "scientific_grade": "0/3"
+    },
+    {
+      "id": "U225",
+      "recorded_at": "2026-10-31",
+      "campaign": "ABH_N357_N376_SRC106_PRIMARY_AUTHOR_CODE",
+      "prior_id": "P-DYADIC_ACCESS",
+      "source_ids": [
+        "SRC106"
+      ],
+      "cycle_ids": [],
+      "direction": "NO_CHANGE_WITH_REASON",
+      "before": "NO_NEW_HUMAN_R5_ADMITTED",
+      "after": "NO_NEW_HUMAN_R5_ADMITTED",
+      "evidence_type": "FIRST_PARTY_VIEW_ONLY_OSF_AUTHOR_CODE_VERIFIED_NOT_HUMAN_DATA",
+      "primary_metadata": "https://api.osf.io/v2/nodes/tn9mj/ public=false node_license=null; author-published view-only URL permits browsing, not dataset reuse authorization",
+      "original_code_sha256": "6603f0b1c8eedf69c849f10eb96e0bfa82ad1496b2feea1c9c439f77ca2d204b",
+      "observed": "R 58,976-byte source uses aChoice and pChoice in Bernoulli SRM models with gID, MaleCode, FemaleCode and Dyad. Published OSF has three files but no rights or sequence verified; .sav not downloaded.",
+      "why_no_update": "Two-vote author code improves documentary confidence in measurement but original participant records remain under private view-only with null license and unverifiable native chronology. No prediction or matching mechanism R5.",
+      "CT2_scientific": 7,
+      "scientific_grade": "0/3"
     }
   ],
-  "last_campaign": "ABH_N357_N376_N357_TECHNICAL_PASS_R5_DOCUMENTARY_SOURCE_SCREEN"
+  "last_campaign": "ABH_N357_N376_SRC106_AUTHOR_CODE_DOCUMENTARY_AUDIT"
 }

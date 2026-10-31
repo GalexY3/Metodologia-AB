@@ -26,6 +26,12 @@
       "type": "documentary_R5_block",
       "status": "not_admitted",
       "note": "Harvard study3 rights unverified; MIT software license does not explicitly grant human dataset reuse"
+    },
+    {
+      "id": "MP-SRC106-CODE-R5-GATE",
+      "type": "documentary_R5_block",
+      "status": "primary_code_verified_no_data_use_rights",
+      "note": "Author Code.R aChoice/pChoice + gID Dyad, OSF node_license=null, no temporal order verified"
     }
   ],
   "edges": [
@@ -43,6 +49,11 @@
       "from": "MP-SRC121-OSF_RIGHTS",
       "to": "MP-N357-SERIALIZATION",
       "type": "independent_documentary_screen"
+    },
+    {
+      "from": "MP-SRC106-CODE-R5-GATE",
+      "to": "MP-N357-SERIALIZATION",
+      "type": "documentary_screen_not_experimental_cycle"
     }
   ],
   "valid_cycles": 1,

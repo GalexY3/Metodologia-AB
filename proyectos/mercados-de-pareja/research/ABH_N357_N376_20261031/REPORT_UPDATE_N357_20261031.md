@@ -18,8 +18,10 @@ JS outcome SHA256 `119878216085a10a00317a649507819d7e6e8af2ab1f1031042358abe17e3
 
 **SRC121** Huang et al. (2017) <https://doi.org/10.1037/pspi0000097>, OSF <https://osf.io/8k7rf/>, junto con el reanálisis de Kluger y Malloy 2019 y la corrección de 2025. La bibliografía refiere 110 personas y 1.961 puntuaciones dirigidas en tres sesiones, con decisión de segunda cita; OSF muestra `study3/study3.csv` (426.013 bytes) pero la base no se ha leído. `node_license=null`; su `LICENSE.txt` de 1.048 bytes es licencia MIT explícita para software/documentación, no una licencia de dataset humano inequívoca. Tampoco hay comprobación primaria de ronda o par nativo. Por ello no se ha concedido R5. La revisión de 2019 y la réplica de 2025 no constituyen una nueva cohorte cada una.
 
-**Contadores:** 121 SOURCES, 35 PRIORS, 224 UPDATES; U222 registra el resultado de software, U223–U224 el R5 documental con `NO_CHANGE_WITH_REASON`. Se corrigió además una incongruencia de metadatos heredada del Atlas N337–N356, cuyo contador `valid_executed=19` no concordaba con su ledger canónico `20`; **esta reparación documental no consume ciclos**.
+**Contadores:** 121 SOURCES, 35 PRIORS, 225 UPDATES; U222 registra el resultado de software, U223–U224 el R5 documental con `NO_CHANGE_WITH_REASON`. Se corrigió además una incongruencia de metadatos heredada del Atlas N337–N356, cuyo contador `valid_executed=19` no concordaba con su ledger canónico `20`; **esta reparación documental no consume ciclos**.
 
 ## AB-DECIDE
 
 Continuar N358–N376 solo mediante nuevas propiedades técnicas verdaderamente falsables o evidencia humana independiente con licencia y orden originales comprobados; sin estudios sobre microdatos privados ni pruebas reiteradas sobre los 60 casos históricos. Hasta ese momento 19 plazas permanecen disponibles.
+
+**SRC106 [U225]:** revisión primaria nueva, sin gasto de ciclo, del original Code.R (58.976 bytes, SHA256 6603f0b1c8eedf69c849f10eb96e0bfa82ad1496b2feea1c9c439f77ca2d204b) desde el enlace view-only publicado por Hall et al. (2026). El código modela aChoice/pChoice con gID, MaleCode/FemaleCode y Dyad; OSF API mantiene public=false y node_license=null. Ni el fichero .sav de personas ni sus filas se descargaron: R5 requiere derechos de base y secuencia temporal verificables. No se ejecutó experimento de validación humana.
