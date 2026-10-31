@@ -1,0 +1,44 @@
+{
+  "cycle": "N352",
+  "classification": "VALID_NEGATIVE_MECHANISM_FALSIFICATION",
+  "prereg": "3ee0c49f0e82f1a4eb8365c0424d69c7a9e114d2",
+  "source_sha": "940beeaff4d440eab8562e42df8a0ce20b0c0fcd24b619762e4d0a1d9d2eb776",
+  "N351_inputs_sha": "42c24b43bde724d0609d816a57f6287c17c0f201705382031d8f00cecfe28d35",
+  "outcome_sha": "5907663ba2e24ccc5122f19f176e7f07c82804771bc68f62391c565d69871187",
+  "markets": 96,
+  "lambda_values": [
+    0,
+    0.1,
+    0.5,
+    1,
+    2
+  ],
+  "total_markets": 480,
+  "DA_F_vs_M_different": {
+    "0": 0,
+    "1": 0,
+    "2": 0,
+    "0.1": 0,
+    "0.5": 0
+  },
+  "DA_pairs": {
+    "0": 1062,
+    "1": 1066,
+    "2": 1079,
+    "0.1": 1062,
+    "0.5": 1059
+  },
+  "central_blocking": {
+    "0": 415,
+    "1": 405,
+    "2": 375,
+    "0.1": 424,
+    "0.5": 418
+  },
+  "novel_negative": "Even actor-specific exogenous preference heterogeneity intensity up to 2 did not generate proposer-side difference on frozen 96 sparse bilateral accepted markets. Must investigate graph structural cycles and preference rotation before any universal proposer-neutral statement.",
+  "limit": "Same 96 synthetic mutually accepted graphs, five assumed preference models, not human ordinal choices, 6 synthetic seed clusters, no inferential p-values.",
+  "CT2": 7,
+  "STOP_R5": true,
+  "remaining": 4,
+  "no_SSJY_Codex_license_contact_merge_CI": true
+}
