@@ -6,12 +6,13 @@
   "mode": "AB-H",
   "AB_cycles": {
     "authorized": 20,
-    "valid_executed": 2,
-    "technical_pass": 1,
-    "valid_technical_negative": 1,
+    "valid_executed": 19,
+    "technical_pass": 17,
+    "valid_technical_negative": 2,
     "invalid_executed": 0,
     "planning_ab": 0,
-    "pending": 18
+    "pending": 1,
+    "invalid_instrument_attempts_not_cycles": 7
   },
   "scientific_grade": "0/3",
   "CT2": 7,
@@ -70,7 +71,7 @@
       "id": "MP-AJ-N337",
       "type": "preregistration_gate",
       "mode": "AB-H",
-      "status": "proposed",
+      "status": "closed",
       "title": "Conditional A-J and SHA for first qualifying human study",
       "evidence": "A_J_CONDITIONAL_R5_GATE_NOT_EXECUTED.md",
       "warning": "No executable instrument, no frozen code, no cycle spent"
@@ -109,12 +110,247 @@
     },
     {
       "id": "MP-N339-ORACLE-GATE",
+      "type": "experiment",
+      "mode": "AB-H",
+      "status": "closed",
+      "title": "N339 integer Blossom primal-dual certified exact polynomial JS vs independent Python",
+      "blocker": "Need new independent scalable algorithm and frozen A-J/code/inputs before any N339 outcomes",
+      "new_cycle_spent": false,
+      "prereg": "N339_POLYNOMIAL_BLOSSOM_20261031/PREREG_AJ_SHA_FREEZE_BEFORE_OUTCOMES.json",
+      "outcome": "N339_POLYNOMIAL_BLOSSOM_20261031/N339_OUTCOME_RECEIPT.json"
+    },
+    {
+      "id": "MP-N340-ABH",
+      "type": "experiment",
+      "mode": "AB-H",
+      "status": "closed",
+      "epistemic_result": "TECHNICAL_PASS_NOT_HUMAN",
+      "title": "first N144×T16 Python original vs TypeScript polynomial Blossom pair and result parity",
+      "preoutcome_AJ_file": "research/ABH_N337_N356_20261030/N340_POLY_OFFICIAL_20261031/PREREG_AJ_SHA_BEFORE_OUTCOMES.json",
+      "outcome_receipt_file": "research/ABH_N337_N356_20261030/N340_POLY_OFFICIAL_20261031/N340_OUTCOME_RECEIPT.json",
+      "scientific_grade": "0/3",
+      "CT2": 7,
+      "R5_human": "STOP"
+    },
+    {
+      "id": "MP-N341-ABH",
+      "type": "experiment",
+      "mode": "AB-H",
+      "status": "closed",
+      "epistemic_result": "TECHNICAL_PASS_NOT_HUMAN",
+      "title": "60 original historic Python outputs vs 60 TypeScript synthetic runs with 960 primal-dual receipts",
+      "preoutcome_AJ_file": "research/ABH_N337_N356_20261030/N341_HISTORICAL_60_POLY_20261031/PREREG_AJ_SHA_BEFORE_OUTCOMES.json",
+      "outcome_receipt_file": "research/ABH_N337_N356_20261030/N341_HISTORICAL_60_POLY_20261031/N341_OUTCOME_RECEIPT.json",
+      "scientific_grade": "0/3",
+      "CT2": 7,
+      "R5_human": "STOP"
+    },
+    {
+      "id": "MP-N342-ABH",
+      "type": "experiment",
+      "mode": "AB-H",
+      "status": "closed",
+      "epistemic_result": "TECHNICAL_PASS_NOT_HUMAN",
+      "title": "60 original Python chronological native event observers vs TS 960 pair sets and 871914 directed event parity",
+      "preoutcome_AJ_file": "research/ABH_N337_N356_20261030/N342_NATIVE_PY_JS_EVENTS_20261031/PREREG_AJ_SHA_BEFORE_OUTCOMES.json",
+      "outcome_receipt_file": "research/ABH_N337_N356_20261030/N342_NATIVE_PY_JS_EVENTS_20261031/N342_OUTCOME_RECEIPT.json",
+      "scientific_grade": "0/3",
+      "CT2": 7,
+      "R5_human": "STOP"
+    },
+    {
+      "id": "MP-N343-ABH",
+      "type": "experiment",
+      "mode": "AB-H",
+      "status": "closed",
+      "epistemic_result": "TECHNICAL_PASS_NOT_HUMAN",
+      "title": "960 original matching-graph exact integer objectives and partner pairs cross-checked",
+      "preoutcome_AJ_file": "research/ABH_N337_N356_20261030/N343_ORIGINAL_GRAPH_960_20261031/PREREG_AJ_SHA_BEFORE_OUTCOMES.json",
+      "outcome_receipt_file": "research/ABH_N337_N356_20261030/N343_ORIGINAL_GRAPH_960_20261031/N343_OUTCOME_RECEIPT.json",
+      "scientific_grade": "0/3",
+      "CT2": 7,
+      "R5_human": "STOP"
+    },
+    {
+      "id": "MP-N344-ABH",
+      "type": "experiment",
+      "mode": "AB-H",
+      "status": "closed",
+      "epistemic_result": "TECHNICAL_PASS_NOT_HUMAN",
+      "title": "960 unique-optimum original graphs certified via selected-edge exclusion; independent sample 120",
+      "preoutcome_AJ_file": "research/ABH_N337_N356_20261030/N344_OPTIMUM_UNIQUENESS_960_20261031/PREREG_AJ_SHA_BEFORE_OUTCOMES.json",
+      "outcome_receipt_file": "research/ABH_N337_N356_20261030/N344_OPTIMUM_UNIQUENESS_960_20261031/N344_OUTCOME_RECEIPT.json",
+      "scientific_grade": "0/3",
+      "CT2": 7,
+      "R5_human": "STOP"
+    },
+    {
+      "id": "MP-N345-ABH",
+      "type": "experiment",
+      "mode": "AB-H",
+      "status": "closed",
+      "epistemic_result": "TECHNICAL_PASS_NOT_HUMAN",
+      "title": "independent top-K Gumbel opportunity replay 358348 exposures",
+      "preoutcome_AJ_file": "research/ABH_N337_N356_20261030/N345_SELECTION_RISKSET_20261031/PREREG_AJ_SHA_BEFORE_OUTCOMES.json",
+      "outcome_receipt_file": "research/ABH_N337_N356_20261030/N345_SELECTION_RISKSET_20261031/N345_OUTCOME_RECEIPT.json",
+      "scientific_grade": "0/3",
+      "CT2": 7,
+      "R5_human": "STOP"
+    },
+    {
+      "id": "MP-N346-ABH",
+      "type": "experiment",
+      "mode": "AB-H",
+      "status": "closed",
+      "epistemic_result": "TECHNICAL_PASS_NOT_HUMAN",
+      "title": "independent feedback/proposal/reply/hazard 871914 event arithmetic",
+      "preoutcome_AJ_file": "research/ABH_N337_N356_20261030/N346_FEEDBACK_PROBABILITY_20261031/PREREG_AJ_SHA_BEFORE_OUTCOMES.json",
+      "outcome_receipt_file": "research/ABH_N337_N356_20261030/N346_FEEDBACK_PROBABILITY_20261031/N346_OUTCOME_RECEIPT.json",
+      "scientific_grade": "0/3",
+      "CT2": 7,
+      "R5_human": "STOP"
+    },
+    {
+      "id": "MP-N347-ABH",
+      "type": "experiment",
+      "mode": "AB-H",
+      "status": "closed",
+      "epistemic_result": "TECHNICAL_PASS_NOT_HUMAN",
+      "title": "conditional 960 synthetic accepted-graph central vs immediate-offer order shadow",
+      "preoutcome_AJ_file": "research/ABH_N337_N356_20261030/N347_DECENTRALIZED_SHADOW_20261031/PREREG_AJ_SHA_BEFORE_OUTCOMES.json",
+      "outcome_receipt_file": "research/ABH_N337_N356_20261030/N347_DECENTRALIZED_SHADOW_20261031/N347_OUTCOME_RECEIPT.json",
+      "scientific_grade": "0/3",
+      "CT2": 7,
+      "R5_human": "STOP"
+    },
+    {
+      "id": "MP-N348-ABH",
+      "type": "experiment",
+      "mode": "AB-H",
+      "status": "closed",
+      "epistemic_result": "TECHNICAL_PASS_NOT_HUMAN",
+      "title": "120 fully dynamic immediate-acceptance alternative worlds against centralized ESBM",
+      "preoutcome_AJ_file": "research/ABH_N337_N356_20261030/N348_FULL_DYNAMIC_DECENTRALIZED_20261031/PREREG_AJ_SHA_BEFORE_OUTCOMES.json",
+      "outcome_receipt_file": "research/ABH_N337_N356_20261030/N348_FULL_DYNAMIC_DECENTRALIZED_20261031/N348_OUTCOME_RECEIPT.json",
+      "scientific_grade": "0/3",
+      "CT2": 7,
+      "R5_human": "STOP"
+    },
+    {
+      "id": "MP-N349-ABH",
+      "type": "experiment",
+      "mode": "AB-H",
+      "status": "closed",
+      "epistemic_result": "TECHNICAL_PASS_NOT_HUMAN",
+      "title": "independent Python state reconstruction of 120 alternative worlds",
+      "preoutcome_AJ_file": "research/ABH_N337_N356_20261030/N349_DECENTRALIZED_INDEPENDENT_QA_20261031/PREREG_AJ_SHA_BEFORE_OUTCOMES.json",
+      "outcome_receipt_file": "research/ABH_N337_N356_20261030/N349_DECENTRALIZED_INDEPENDENT_QA_20261031/N349_OUTCOME_RECEIPT.json",
+      "scientific_grade": "0/3",
+      "CT2": 7,
+      "R5_human": "STOP"
+    },
+    {
+      "id": "MP-N350-ABH",
+      "type": "experiment",
+      "mode": "AB-H",
+      "status": "closed",
+      "epistemic_result": "TECHNICAL_PASS_NOT_HUMAN",
+      "title": "84/84 applicable adversarial dual mutations rejected; 48 no-op, 12 legitimate controls",
+      "preoutcome_AJ_file": "research/ABH_N337_N356_20261030/N350_ADVERSARIAL_DUAL_20261031/PREREG_AJ_SHA_BEFORE_OUTCOMES.json",
+      "outcome_receipt_file": "research/ABH_N337_N356_20261030/N350_ADVERSARIAL_DUAL_20261031/N350_OUTCOME_RECEIPT.json",
+      "scientific_grade": "0/3",
+      "CT2": 7,
+      "R5_human": "STOP"
+    },
+    {
+      "id": "MP-N351-ABH",
+      "type": "experiment",
+      "mode": "AB-H",
+      "status": "closed",
+      "epistemic_result": "TECHNICAL_PASS_NOT_HUMAN",
+      "title": "96 F-M mutual-YES graphs DA stable vs central 415 blocking pairs under assumed ranks",
+      "preoutcome_AJ_file": "research/ABH_N337_N356_20261030/N351_BIPARTITE_DA_20261031/PREREG_AJ_SHA_BEFORE_OUTCOMES.json",
+      "outcome_receipt_file": "research/ABH_N337_N356_20261030/N351_BIPARTITE_DA_20261031/N351_OUTCOME_RECEIPT.json",
+      "scientific_grade": "0/3",
+      "CT2": 7,
+      "R5_human": "STOP"
+    },
+    {
+      "id": "MP-N352-ABH",
+      "type": "experiment",
+      "mode": "AB-H",
+      "status": "closed",
+      "epistemic_result": "VALID_TECHNICAL_NEGATIVE",
+      "title": "480 synthetic preference configurations yielded zero F/M proposer-side DA differences",
+      "preoutcome_AJ_file": "research/ABH_N337_N356_20261030/N352_PREFERENCE_HETEROGENEITY_20261031/PREREG_AJ_SHA_BEFORE_OUTCOMES.json",
+      "outcome_receipt_file": "research/ABH_N337_N356_20261030/N352_PREFERENCE_HETEROGENEITY_20261031/N352_OUTCOME_RECEIPT.json",
+      "scientific_grade": "0/3",
+      "CT2": 7,
+      "R5_human": "STOP"
+    },
+    {
+      "id": "MP-N353-ABH",
+      "type": "experiment",
+      "mode": "AB-H",
+      "status": "closed",
+      "epistemic_result": "TECHNICAL_PASS_NOT_HUMAN",
+      "title": "68/96 acyclic original graphs, hypothetical 2x2 stable rotation with annotated nonnative edges",
+      "preoutcome_AJ_file": "research/ABH_N337_N356_20261030/N353_ROTATION_OBSTRUCTION_20261031/PREREG_AJ_SHA_BEFORE_OUTCOMES.json",
+      "outcome_receipt_file": "research/ABH_N337_N356_20261030/N353_ROTATION_OBSTRUCTION_20261031/N353_OUTCOME_RECEIPT.json",
+      "scientific_grade": "0/3",
+      "CT2": 7,
+      "R5_human": "STOP"
+    },
+    {
+      "id": "MP-N354-ABH",
+      "type": "experiment",
+      "mode": "AB-H",
+      "status": "closed",
+      "epistemic_result": "TECHNICAL_PASS_NOT_HUMAN",
+      "title": "12 full 16-tick simulated DA worlds F/M proposer vs central and immediate acceptance",
+      "preoutcome_AJ_file": "research/ABH_N337_N356_20261030/N354_FULL_DYNAMIC_DA_20261031/PREREG_AJ_SHA_BEFORE_OUTCOMES.json",
+      "outcome_receipt_file": "research/ABH_N337_N356_20261030/N354_FULL_DYNAMIC_DA_20261031/N354_OUTCOME_RECEIPT.json",
+      "scientific_grade": "0/3",
+      "CT2": 7,
+      "R5_human": "STOP"
+    },
+    {
+      "id": "MP-N355-ABH",
+      "type": "experiment",
+      "mode": "AB-H",
+      "status": "closed",
+      "epistemic_result": "TECHNICAL_PASS_NOT_HUMAN",
+      "title": "independent 12/12 Python validation full DA state and probabilities",
+      "preoutcome_AJ_file": "research/ABH_N337_N356_20261030/N355_INDEPENDENT_DA_QA_20261031/PREREG_AJ_SHA_BEFORE_OUTCOMES.json",
+      "outcome_receipt_file": "research/ABH_N337_N356_20261030/N355_INDEPENDENT_DA_QA_20261031/N355_OUTCOME_RECEIPT.json",
+      "scientific_grade": "0/3",
+      "CT2": 7,
+      "R5_human": "STOP"
+    },
+    {
+      "id": "MP-SRC119-R5-PARTIAL",
+      "type": "source",
+      "mode": "AB-R",
+      "status": "partially_qualified_blocked",
+      "title": "Hoffmann 2024 original OSF 240 human speed dates 2 native votes per observed date, missing native Round/time and unverified reuse license",
+      "source_id": "SRC119",
+      "counts": {
+        "observed_encounters": 240,
+        "subjects": 60,
+        "assigned_partners": 8,
+        "mutual_yes": 10
+      },
+      "R5_eligible": false,
+      "raw_data_uploaded": false
+    },
+    {
+      "id": "MP-N356-R5-UNSPENT",
       "type": "proposed_test",
       "mode": "AB-H",
-      "status": "proposed",
-      "title": "Polynomial exact independent N144 matching implementation and parity",
-      "blocker": "Need new independent scalable algorithm and frozen A-J/code/inputs before any N339 outcomes",
-      "new_cycle_spent": false
+      "status": "blocked",
+      "title": "N356 unspent pending original human sequence and data rights, or other distinct discriminant experiment",
+      "cycle_spent": false,
+      "reason": "SRC119 data 240 native bilateral encounters lack round or time and data reuse rights verifiable; no original ordinal preference schedule"
     }
   ],
   "edges": [
@@ -177,10 +413,125 @@
       "to": "MP-R5-N337",
       "type": "related_to",
       "note": "Technical negative distinct from empirical R5"
+    },
+    {
+      "from": "MP-N339-ORACLE-GATE",
+      "to": "MP-N340-ABH",
+      "type": "related_to",
+      "note": "Sequential AB-H study progression; not causally validated against human data"
+    },
+    {
+      "from": "MP-N340-ABH",
+      "to": "MP-N341-ABH",
+      "type": "related_to",
+      "note": "Sequential AB-H study progression; not causally validated against human data"
+    },
+    {
+      "from": "MP-N341-ABH",
+      "to": "MP-N342-ABH",
+      "type": "related_to",
+      "note": "Sequential AB-H study progression; not causally validated against human data"
+    },
+    {
+      "from": "MP-N342-ABH",
+      "to": "MP-N343-ABH",
+      "type": "related_to",
+      "note": "Sequential AB-H study progression; not causally validated against human data"
+    },
+    {
+      "from": "MP-N343-ABH",
+      "to": "MP-N344-ABH",
+      "type": "related_to",
+      "note": "Sequential AB-H study progression; not causally validated against human data"
+    },
+    {
+      "from": "MP-N344-ABH",
+      "to": "MP-N345-ABH",
+      "type": "related_to",
+      "note": "Sequential AB-H study progression; not causally validated against human data"
+    },
+    {
+      "from": "MP-N345-ABH",
+      "to": "MP-N346-ABH",
+      "type": "related_to",
+      "note": "Sequential AB-H study progression; not causally validated against human data"
+    },
+    {
+      "from": "MP-N346-ABH",
+      "to": "MP-N347-ABH",
+      "type": "related_to",
+      "note": "Sequential AB-H study progression; not causally validated against human data"
+    },
+    {
+      "from": "MP-N347-ABH",
+      "to": "MP-N348-ABH",
+      "type": "related_to",
+      "note": "Sequential AB-H study progression; not causally validated against human data"
+    },
+    {
+      "from": "MP-N348-ABH",
+      "to": "MP-N349-ABH",
+      "type": "related_to",
+      "note": "Sequential AB-H study progression; not causally validated against human data"
+    },
+    {
+      "from": "MP-N349-ABH",
+      "to": "MP-N350-ABH",
+      "type": "related_to",
+      "note": "Sequential AB-H study progression; not causally validated against human data"
+    },
+    {
+      "from": "MP-N350-ABH",
+      "to": "MP-N351-ABH",
+      "type": "related_to",
+      "note": "Sequential AB-H study progression; not causally validated against human data"
+    },
+    {
+      "from": "MP-N351-ABH",
+      "to": "MP-N352-ABH",
+      "type": "related_to",
+      "note": "Sequential AB-H study progression; not causally validated against human data"
+    },
+    {
+      "from": "MP-N352-ABH",
+      "to": "MP-N353-ABH",
+      "type": "related_to",
+      "note": "Sequential AB-H study progression; not causally validated against human data"
+    },
+    {
+      "from": "MP-N353-ABH",
+      "to": "MP-N354-ABH",
+      "type": "related_to",
+      "note": "Sequential AB-H study progression; not causally validated against human data"
+    },
+    {
+      "from": "MP-N354-ABH",
+      "to": "MP-N355-ABH",
+      "type": "related_to",
+      "note": "Sequential AB-H study progression; not causally validated against human data"
+    },
+    {
+      "from": "MP-SRC119-R5-PARTIAL",
+      "to": "MP-R5-N337",
+      "type": "related_to",
+      "note": "New human primary cohort identified, but temporal/rights R5 not met"
+    },
+    {
+      "from": "MP-SRC119-R5-PARTIAL",
+      "to": "MP-N356-R5-UNSPENT",
+      "type": "blocks",
+      "note": "No native Round/time or independently verified data reuse license"
+    },
+    {
+      "from": "MP-N355-ABH",
+      "to": "MP-N356-R5-UNSPENT",
+      "type": "branches_from",
+      "note": "Technical synthetic DA validation finished; no human transportability inferred"
     }
   ],
-  "orphan_audit": "All newly introduced source nodes SRC115-117 linked; no 1/3 created; blocked source SRC104 retained; no relations construed as confirmation",
+  "orphan_audit": "All 19 actual executed AB-H cycles represented: N337 and N338 original nodes, N339 gate closed, N340–N355 newly typed. Every new source/blocked gate linked; 1 N356 unopened. 119 SOURCES,35 PRIORS,219 UPDATES, U217–U219 human NO_CHANGE_WITH_REASON. No research branch merge and no new human scientific grade.",
   "main_merge": false,
-  "last_update": "U214",
-  "new_human_validation": false
+  "last_update": "U219",
+  "new_human_validation": false,
+  "new_human_independent_dataset_candidate": "SRC119_REAL_240_SPEED_DATES_BLOCKED_R5"
 }
