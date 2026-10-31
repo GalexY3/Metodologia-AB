@@ -1,15 +1,17 @@
 {
   "schema": "ab_atlas_delta_v1",
   "campaign": "ABH_N337_N356_20261030",
-  "date": "2026-10-30",
+  "date": "2026-10-31",
   "root": "MP-R5-N337",
   "mode": "AB-H",
   "AB_cycles": {
     "authorized": 20,
-    "valid_executed": 0,
+    "valid_executed": 2,
+    "technical_pass": 1,
+    "valid_technical_negative": 1,
     "invalid_executed": 0,
     "planning_ab": 0,
-    "pending": 20
+    "pending": 18
   },
   "scientific_grade": "0/3",
   "CT2": 7,
@@ -80,6 +82,39 @@
       "status": "blocked",
       "title": "SRC104 original bilateral vote pairing inconsistency",
       "reason": "15 mirrored decisions discordant; original coding documentation missing"
+    },
+    {
+      "id": "MP-N337-WIN-TS",
+      "type": "experiment",
+      "mode": "AB-H",
+      "status": "closed",
+      "epistemic_result": "TECHNICAL_PASS_NOT_HUMAN",
+      "title": "Original Python versus independent local TypeScript N207 60 runs N8 T6 K3",
+      "prereg": "732d628dc8aa9f24620206c352eed5705fa40521",
+      "receipt": "N337_WINDOWS_NATIVE_TYPESCRIPT_20261031/N337_OUTCOME_RECEIPT.json",
+      "conclusion": "60/60 complete per-tick pairs+all output fields match; 360 unique-optimum matching ticks",
+      "limitations": "Not original N144, not historic N237 TS Boost, no native Python complete directed events or human records"
+    },
+    {
+      "id": "MP-N338-WIN-SCALE",
+      "type": "experiment",
+      "mode": "AB-H",
+      "status": "closed",
+      "epistemic_result": "TECHNICAL_NEGATIVE_VALID",
+      "title": "Official n144 original Python vs independent TypeScript N207 exact-subset solver resource cap",
+      "prereg": "9ee375c058cbeb3a678c403bcc2653207fc4690f",
+      "receipt": "N338_WINDOWS_FULLSIZE_20261031/N338_OUTCOME_RECEIPT.json",
+      "conclusion": "Two of two TS stops at tick t=1 on matching component 27>22; original Python completes, first-tick pair sets match in posthoc descriptive check",
+      "limitations": "Not 16-tick TS parity; no resource cap raised post-outcomes"
+    },
+    {
+      "id": "MP-N339-ORACLE-GATE",
+      "type": "proposed_test",
+      "mode": "AB-H",
+      "status": "proposed",
+      "title": "Polynomial exact independent N144 matching implementation and parity",
+      "blocker": "Need new independent scalable algorithm and frozen A-J/code/inputs before any N339 outcomes",
+      "new_cycle_spent": false
     }
   ],
   "edges": [
@@ -118,8 +153,34 @@
       "to": "MP-R5-N337",
       "type": "depends_on",
       "note": "Requires source rights and code SHA before outcomes"
+    },
+    {
+      "from": "MP-N337-WIN-TS",
+      "to": "MP-N338-WIN-SCALE",
+      "type": "related_to",
+      "note": "Same TS N207 engine, distinct small-N parity vs full-size resource test"
+    },
+    {
+      "from": "MP-N338-WIN-SCALE",
+      "to": "MP-N339-ORACLE-GATE",
+      "type": "blocks",
+      "note": "Exponential solver cannot complete official N144; no general full parity"
+    },
+    {
+      "from": "MP-N337-WIN-TS",
+      "to": "MP-R5-N337",
+      "type": "related_to",
+      "note": "Technical fidelity not human causal validity"
+    },
+    {
+      "from": "MP-N338-WIN-SCALE",
+      "to": "MP-R5-N337",
+      "type": "related_to",
+      "note": "Technical negative distinct from empirical R5"
     }
   ],
   "orphan_audit": "All newly introduced source nodes SRC115-117 linked; no 1/3 created; blocked source SRC104 retained; no relations construed as confirmation",
-  "main_merge": false
+  "main_merge": false,
+  "last_update": "U214",
+  "new_human_validation": false
 }
