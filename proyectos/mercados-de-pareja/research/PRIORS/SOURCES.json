@@ -1,9 +1,9 @@
 {
   "schema": "ab.research.sources.v1",
   "project": "mercados-de-pareja",
-  "date": "2026-10-30",
+  "date": "2026-10-31",
   "scope": "Retrospective provenance backfill from repository reports plus N56/N57 publisher audit. Original data never copied; not systematic or claim of accessing raw data for bibliography.",
-  "source_count": 117,
+  "source_count": 118,
   "sources": [
     {
       "id": "SRC001",
@@ -2575,9 +2575,34 @@
       "licences_accepted": 0,
       "discovery_campaign": "ABH_N337_N356_20261030",
       "AB_cycles_counted": 0
+    },
+    {
+      "id": "SRC118",
+      "title": "Matt Krick (2015), EdmondsBlossom: independent JavaScript maximum-weight matching implementation (GitHub, MIT)",
+      "canonical_url": "https://github.com/mattkrick/EdmondsBlossom",
+      "primary_code": "https://raw.githubusercontent.com/mattkrick/EdmondsBlossom/fab7ca8505e1577b009696c038dc804cf0acbea2/app/blossom.js",
+      "source_type": "PRIMARY_PUBLIC_SOFTWARE_IMPLEMENTATION_NOT_HUMAN_EVIDENCE",
+      "original_repository_commit": "fab7ca8505e1577b009696c038dc804cf0acbea2",
+      "GitHub_original_blob_sha": "b1de38593cdce8354fd281f75158f337f5cd54f8",
+      "downloaded_source_sha256": "334350e3dd8ff68964febbb27d6c89f8cd72f78e3780f3da5d217cf1c53755ff",
+      "license_file": "https://raw.githubusercontent.com/mattkrick/EdmondsBlossom/fab7ca8505e1577b009696c038dc804cf0acbea2/LICENSE",
+      "license": "MIT, 2015 copyright Matt Krick; attribution and original license preserved in source package. No login/click-through licence acceptance.",
+      "date_verified": "2026-10-31",
+      "evidence_access": "Actual 20,412-byte source and 1,077-byte MIT licence obtained and SHA checked; JS algorithm and wrapper executed locally and verified against Python exact integer NetworkX and independent primal-dual checker on 12 new graphs",
+      "research_role": "N339 polynomial exact Blossom n144 replacement for exponentially-limited TypeScript N207, N340–N343 60×16 event matching and objective checks",
+      "independence_limit": "Port based on Joris van Rantwijk's Galil primal-dual matching, overlapping mathematical algorithm lineage with Python NetworkX; written in separate language and differently implemented, independently checkable certificates reduce but do not erase common lineage",
+      "rights": "Public MIT source; copying/reproduction retains MIT licence. No author contact, controlled user data, or special terms consent.",
+      "scientific_limit": "Computational backend; no independent human romance records, R5 false",
+      "R5_eligible": false,
+      "original_human_rows_read": 0,
+      "cycle_counted_as_external_human": 0,
+      "prior_ids": [
+        "P-TRAJECTORY-INVARIANCE"
+      ],
+      "discovery_campaign": "ABH_N337_N356_20261031_WINDOWS"
     }
   ],
-  "last_added_campaign": "ABH_N337_N356_20261030_DOCUMENTARY_SCREEN_ONLY",
+  "last_added_campaign": "ABH_N337_N356_WINDOWS_PIVOT_20261031",
   "canonical_duplicate_DOI_audit": {
     "date": "2026-10-30",
     "source_records_before": 107,
