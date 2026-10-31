@@ -1,0 +1,79 @@
+{
+  "schema": "ABH_N343_PREOUTCOME_AJ_SHA",
+  "date": "2026-10-31",
+  "cycle": "N343",
+  "code_frozen_before_outcomes": true,
+  "A": {
+    "question": "Can an entirely separate Python graph builder reconstruct every exact ESBM original matching_graph from original native positive response events and u_match binary64 shock tensor; do its graph-edge hashes, max cardinality, exact integer 2^-52 residual optima and original float matching chosen pairs coincide with the TypeScript polynomial backend across 960 individual ticks?",
+    "units": "60 existing original synthetic historical trajectories ×16 ticks =960 graph events, explicitly not new human sample",
+    "what_is_new": "Matching GRAPH identity + exact integer optimization on every actual original event-state riskset; N342 only compared final pair choices, N339 used 12 external artificial graphs."
+  },
+  "B": {
+    "independent_oracles": [
+      "Original Python directed native response events N342 SHA index plus frozen original u_match tensors",
+      "TS matching_graph SHA per tick N341, reconstructed independently by Python JSON bytes to detect edge set/weight changes",
+      "Independent NetworkX integer weighted maximum cardinality per original graph; full exact ULP residue sums; compare TS certified objective and actual native Python float-chosen edges"
+    ],
+    "alternative": "Graph differs despite event stream parity due edge dedup, response order, weight indexing, float JS serialization or objective drift.",
+    "limitation": "NetworkX and vendor MIT Blossom share Galil/Joris mathematical lineage; independent witness check N339 uses separate inequalities."
+  },
+  "C": {
+    "prespecified": "960/960 exact graph SHA equality, 960/960 objective cardinality+int weight equality between Python NetworkX and JS, Python original float matching achieves same exact integer optimum, TS/original chosen pairs coincide",
+    "falsifier": "Any graph mismatch or objective difference, report count and first mismatch; negatives preserved",
+    "ties": "Different pair set with same optimal objective would not falsify objective but falsify native pair parity; no uniqueness claim without proof."
+  },
+  "D": {
+    "new_instrument": "instrument/oracle_native_graph_960.py",
+    "sha256": "b14867812e4860bb837d6f3bea962dba7ba356c7e8988efed5be912afb7a184b",
+    "frozen_source_commit": "92239de650524c1779af4a7cd305daea6a96a2fd",
+    "inputs_SHA256": {
+      "N342_original_native_index": "89e221ab34c1a3c08ff04c8902268946f1b40cf6230cea224a907d9e96bd776b",
+      "N341_frozen_TS_index": "37b8a1010968e0ead1a13f7f71193858bcfb83b0e3428573ad734f96e136948d",
+      "N341_original_all_tensor_manifest": "84a52580add085ab551dacf6e4cd3fdfc80be8eeaf187c7d3e4b25be208e42bf"
+    },
+    "original_ESBM_source_sha": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+    "units": "2^52 binary64 residual exact integer, weights=1+1e-4*u_match; no float approximate equality on objective."
+  },
+  "E": {
+    "command": "py -3.13 instrument/oracle_native_graph_960.py",
+    "maxWallSeconds": 180,
+    "maxRAM_GB": 2,
+    "outputs": [
+      "outcomes/N343_NATIVE_GRAPH_ORACLE.json"
+    ],
+    "no_original_or_TS_reexecution": true,
+    "no_source_mutation": true
+  },
+  "F": {
+    "adversarial": [
+      "Change directed recipient identity in reconstructed graph must affect SHA",
+      "Change single binary64 weight by nextafter ULP must affect SHA",
+      "Check Python floating matching integer objective vs exact integer optimum for ordinary historical shocks, not pretend adversarial high precision results generalize",
+      "Check graph edges never outnumber directed positive responses and SHA matches TS graph content"
+    ],
+    "control_weight_precision": "Use native numpy memmap of immutable original tensor and read-only, assertions each seed source file SHA."
+  },
+  "G": {
+    "novelty_vs_N339_N342": "N339 12 synthetic external graphs with full dual; N342 60 native per-tick pairs and directed events; N343 all 960 original native event-derived matching graphs and exact integer objectives, with SHA and source weight indexing.",
+    "theoretical_independence": "NO claim of novel blossom theorem; independent Python event-to-graph reconstruction, Python integer NetworkX oracle and new JS solver."
+  },
+  "H": {
+    "target_prior": "P-TRAJECTORY-INVARIANCE",
+    "posterior_policy": "Qualitative tech improvement only, NO_CHANGE_WITH_REASON for human prior/CT2"
+  },
+  "I": {
+    "CT2_scientific": 7,
+    "STOP_R5_human": true,
+    "new_human_grade": "0/3"
+  },
+  "J": {
+    "count_once": "One valid N343 if actual 960 graphs independently checked or meaningful negative",
+    "remaining_if_spent": 13,
+    "no_SSJY": true,
+    "no_Codex": true,
+    "no_license_acceptance": true,
+    "no_author_contact": true,
+    "no_research_merge_main": true,
+    "no_expensive_CI": true
+  }
+}
