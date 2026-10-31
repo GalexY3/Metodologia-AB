@@ -1,0 +1,78 @@
+{
+  "schema": "N338_OFFICIAL_SEED101_PREOUTCOME_INPUTS",
+  "seed": 101,
+  "N": 144,
+  "T": 16,
+  "K": 7,
+  "scenarios": [
+    "mixed_random",
+    "private_rejection_learning"
+  ],
+  "original_source_sha256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+  "producer_sha256": "4668496fb7305b5bd48425d7620ce2c4c999df10986b0429856f4bedeb6e95d5",
+  "Python": "3.13.4",
+  "NumPy": "2.4.3",
+  "files": {
+    "people": {
+      "name": "people_101.json",
+      "sha256": "dd16c739b3139f45dcc53d18ab36810e99ba98842c707764bc0a33cc9356249d",
+      "bytes": 5088
+    },
+    "u_send": {
+      "name": "u_send_101.bin",
+      "sha256": "61468c812847a2c540fb3c8a472ea2e6a6b7c36af328746640ed386b22fb60df",
+      "bytes": 2654208,
+      "shape": [
+        16,
+        144,
+        144
+      ],
+      "dtype": "<f8"
+    },
+    "u_reply": {
+      "name": "u_reply_101.bin",
+      "sha256": "92c9d540136661aad7c381a58d260f05ca9b328b060172f27d6278da60f04e3d",
+      "bytes": 2654208,
+      "shape": [
+        16,
+        144,
+        144
+      ],
+      "dtype": "<f8"
+    },
+    "u_hazard": {
+      "name": "u_hazard_101.bin",
+      "sha256": "3e8149ccbe4b10f38dfdff85cc326da5d7156be7e6ea1d7079156a5988e85931",
+      "bytes": 2654208,
+      "shape": [
+        16,
+        144,
+        144
+      ],
+      "dtype": "<f8"
+    },
+    "u_expose": {
+      "name": "u_expose_101.bin",
+      "sha256": "ff6b5bc4b5d1d4b9651527c44476cd54080e73251f14fb6a003093271b8234cc",
+      "bytes": 2654208,
+      "shape": [
+        16,
+        144,
+        144
+      ],
+      "dtype": "<f8"
+    },
+    "u_match": {
+      "name": "u_match_101.bin",
+      "sha256": "e30ddad180210da0bad3a487fd593238dd0ca9ccd9824361b0376aa0f99fe0c9",
+      "bytes": 2654208,
+      "shape": [
+        16,
+        144,
+        144
+      ],
+      "dtype": "<f8"
+    }
+  },
+  "status": "INPUTS_FROZEN_NOT_SIMULATED"
+}
