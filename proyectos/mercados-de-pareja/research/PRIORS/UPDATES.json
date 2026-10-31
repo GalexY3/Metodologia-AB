@@ -1,7 +1,7 @@
 {
   "schema": "ab.research.prior_updates.v1",
   "project": "mercados-de-pareja",
-  "date": "2026-10-28",
+  "date": "2026-10-31",
   "mode": "append-only logical, versioned by Git commits",
   "reconstructed_from_documents": "Retrospective backfill, not preregistration. Old before values NOT_RECORDED unless documented explicitly.",
   "source_coverage": "111 SOURCE metadata, 34 PRIORS, 196 append-only UPDATES; N237–256 20 genuinely executed technical audits; 0 new human data/grade.",
@@ -6075,7 +6075,67 @@
       "STOP_R5_human": "ACTIVE",
       "new_scientific_grade": "0/3",
       "no_numeric_bayesian_likelihood": true
+    },
+    {
+      "id": "U215",
+      "recorded_at": "2026-10-31",
+      "campaign": "ABH_N337_N356_20261031_WINDOWS",
+      "prior_id": "P-TRAJECTORY-INVARIANCE",
+      "source_ids": [
+        "SRC118"
+      ],
+      "cycle_ids": [
+        "N339",
+        "N340",
+        "N341",
+        "N342",
+        "N343",
+        "N344",
+        "N345",
+        "N346"
+      ],
+      "direction": "NO_CHANGE_WITH_REASON",
+      "evidence_type": "PROSPECTIVE_SHA_FROZEN_TECHNICAL_NATIVE_CROSS_LANGUAGE_AND_INTEGER_SOLVER",
+      "before": "SYNTHETIC_COUNTEREXAMPLE_REPAIRED_OPT_IN_NOT_HUMAN",
+      "after": "SYNTHETIC_COUNTEREXAMPLE_REPAIRED_OPT_IN_NOT_HUMAN",
+      "technical_findings": "N339 MIT JS Edmonds/Galil polynomial Blossom + 2^52 integer lexicographic objective passed 12/12 graphs against NetworkX exact ints, 5/5 small DP, 12/12 independently coded Python primal-dual proofs; one repair of failed Python decorator first attempt prereg before rerun. N340 2/2 official N144 T16 K7 TS vs original Python result+pair parity, 32 matching certificates. N341 60/60 original historical result parity, 960 JS certificate ticks, all six PCG64 populations/shocks frozen, 871914 JS directed events, process interruption after 54 resumed only six after prereg and SHA custody. N342 unmodified original Python original source dynamically traced: 60/60 identical chosen pair sets per all 960 ticks, and all 871914 directed events agree with independent TS in order, actors, decisions, exact shocks and p≤1e−12; observer repair prospectively preregistered. N343 960/960 exact matching-graph residual objectives and pair identity verified against original source and NetworkX exact integer; N344 960/960 unique optima proven by excluding every selected matching edge and recomputing integer maximum, 120 independent endpoint sample checks. N345 independently reconstructed 51747 risksets and 358348 original exposures. N346 independently verified 513566 decision events, minimum shock-probability margin 4.7456e−7; not sensitive near 1e−9 in historic seeds.",
+      "rights": "SRC118 software under MIT with original license included; no click-through accepted. No new human records, no SSJY, Codex, contacts or merges.",
+      "independence": "TS and original Python code/architecture distinct but share synthetic parameterization, exogenous seeded shocks and overlapping Edmonds/Galil algorithm lineage; strong computational corroboration, not independently sampled human romantic data.",
+      "why_no_human_prior_change": "Precise synthetic-model output equivalence cannot estimate calibration, accuracy or causal transport of ESBM, DA, feedback or platform rules to a population of real daters. All model outcomes and shocks synthetic. CT2 7/100, STOP_R5 human retained.",
+      "AB_cycles_counted": 8,
+      "scientific_grade": "0/3",
+      "CT2_before": 7,
+      "CT2_after": 7,
+      "STOP_R5_human": true,
+      "numerical_posterior_updated": false,
+      "refer_to": "N339–N346 original prereg A–J, receipts and locally preserved SHA datasets."
+    },
+    {
+      "id": "U216",
+      "recorded_at": "2026-10-31",
+      "campaign": "ABH_N337_N356_20261031_WINDOWS",
+      "prior_id": "P-ALLOCATION-RULE",
+      "source_ids": [],
+      "cycle_ids": [
+        "N347",
+        "N348",
+        "N349"
+      ],
+      "direction": "NO_CHANGE_WITH_REASON",
+      "evidence_type": "FULL_DYNAMIC_SIMULATED_COORDINATION_MECHANISM_AND_INDEPENDENT_STATE_RECONSTRUCTION",
+      "before": "ALLOCATION_PROTOCOL_DISTINGUISHES_STABILITY_AND_WELFARE_SYNTHETIC_ONLY",
+      "after": "ALLOCATION_PROTOCOL_DISTINGUISHES_STABILITY_AND_WELFARE_SYNTHETIC_ONLY",
+      "technical_findings": "N347 fixed-decision 960 graph shadow: centralized exact 13668 pairs vs chronological 12496 and reverse 12588; 606 and 633 snapshot cardinality-loss ticks respectively, but frozen decision shadow not longitudinal. N348 full 120 alternative longitudinal models (60 seeds×scenario each order), recomputing exposures, bilateral decisions and dissolutions with shared originally generated shocks, all first-tick N347 controls 120/120. Central 13668 formations over 60 scenarios vs chronological 13201 (−467 total, mean −7.783 per run) and reverse 13411 (−257 total, mean −4.283). Contrast is model-internal as protocols produce different feasible pools and future choices. N349 independently coded Python state observer verifies all 120 full alternative trajectories, 1920 ticks, 1833907 directed events, 1076929 recomputed probability decisions, with real proposal-decision flip negative control. Initial N349 A–J SHA typo/provenance mismatch corrected in separate GitHub prereg BEFORE any N349 outcomes; actual source Git blob/local SHA identical.",
+      "independence": "New independent Python verifier of TS dynamic engine, but identical stipulated synthetic mechanisms and inputs; no human randomized protocol assignment. The fake-partner assertion is only trivial negative unit check, not injected adversarial data.",
+      "why_no_human_prior_change": "No observed romantic participants or opportunities, no holdout; no effect size or uncertainty can be transported to real dating. Causal claim only within the simulator structural rules.",
+      "AB_cycles_counted": 3,
+      "scientific_grade": "0/3",
+      "CT2_before": 7,
+      "CT2_after": 7,
+      "STOP_R5_human": true,
+      "numerical_posterior_updated": false,
+      "refer_to": "N347/N348/N349 source SHA and outcomes; N349 correction GitHub f9de8cdc."
     }
   ],
-  "last_campaign": "ABH_N337_N356_20261031_LOCAL_WINDOWS"
+  "last_campaign": "ABH_N337_N356_WINDOWS_N349_POSTOUTCOME"
 }
