@@ -1,0 +1,38 @@
+{
+  "schema": "ABH_TECHNICAL_OUTCOME_RECEIPT",
+  "date": "2026-10-31",
+  "cycle": "N344",
+  "classification": "VALID_TECHNICAL_PASS",
+  "prereg_AJ_SHA_commit": "6a3147bacf926633a28cb7d1e161a3508759e2da",
+  "outcomes": {
+    "graphs": 960,
+    "proven_unique_by_forbidden_edge_exact_reoptimizations": 960,
+    "proven_nonunique": 0,
+    "unresolved": 0,
+    "alternate_exact_dual_optimizations": 13668,
+    "independent_python_NetworkX_sample_verified": 120,
+    "JS_outcomes_sha256": "a7a6292e086c2c17c291e2508a4fc9073a597a7107f3dedc367b22cf3ea76a89",
+    "Python_sample_sha256": "90af020e8d37b86a8b8489d4225e501aa4a1f3a1c5baec84fbb04da7152abef8"
+  },
+  "files": {
+    "raw_zip_base64": "proyectos/mercados-de-pareja/research/ABH_N337_N356_20261030/N343_N344_EXACT_ORACLES.zip.b64",
+    "zip_sha256": "784ac9cecf0690ec46de26fabc6c5a25c0f6ac688a3ce879319bdba5be85e11e",
+    "zip_bytes": 115885,
+    "zip_members": 6,
+    "crc": "PASS"
+  },
+  "scope": "Tests algorithmic fidelity of original synthetic historical ESBM. Does NOT validate human relationship formation. All 960 same shared source/shocks. MIT Blossom and NetworkX share algorithm lineage; edge exclusion is complete uniqueness logic but only 120 independently cross-checked in Python.",
+  "CT2_scientific": 7,
+  "STOP_R5_human": true,
+  "new_human_grade": "0/3",
+  "original_ESBM_modified": false,
+  "SRC104_modified": false,
+  "SSJY": false,
+  "Codex": false,
+  "licence_accepted": false,
+  "contact_author": false,
+  "merged_branch_main": false,
+  "expensive_CI": false,
+  "total_cycles_N337_N344": 8,
+  "remaining_N345_N356": 12
+}
