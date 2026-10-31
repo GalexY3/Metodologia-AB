@@ -1,3 +1,7 @@
+> **ACTUALIZACIÓN VIGENTE 31/10/2026 (sustituye el saldo de la fase documental 30/10):** con acceso real al PC mediante ChatGPT on Steroids se han ejecutado **N337 (PASS técnico n8 60/60)** y **N338 (negativo técnico válido: N144 TypeScript exponencial STOP en t=1 por componente 27 > límite 22)**. **2 ciclos válidos, 0 inválidos, 0 planificación, 18 plazas N339–N356 pendientes**. Véase el [informe actualizado](REPORT_UPDATE_20261031_WINDOWS.md), [ledger A–J](LEDGER_AJ_N337_N338_20261031.json), [estado verdadero](STATUS_AND_BUDGET.json) y [recibos originales](N337_WINDOWS_NATIVE_TYPESCRIPT_20261031/N337_OUTCOME_RECEIPT.json). **CT2 científico 7/100, STOP_R5 humano activo**. **El texto de 30/10 inferior es una instantánea histórica DOCUMENTAL 0/20 y no describe el estado actual**.
+
+---
+
 # Informe AB-H PIVOT · Mercados de pareja N337–N356
 
 **Fecha:** 30 de octubre de 2026. **Rama:** `research/ab-h-esbm-r5-evidence-gate-n337-n356-20261030`. **AB-DECIDE: STOP_LOCAL_R5 / continuar solo ante nueva clase de datos.** La autorización del investigador se mantiene íntegra.
