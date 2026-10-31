@@ -1,0 +1,119 @@
+{
+  "schema": "ABH_N338_AJ_PREOUTCOME_OFFICIAL_N144_TS_N207",
+  "date": "2026-10-31",
+  "authorized_grant": "N337–N356 20 slots",
+  "previous_executed": "N337 technical PASS N8 60/60",
+  "cycles_spent_before": 1,
+  "cycle": "N338",
+  "status_at_freeze": "NOT_EXECUTED",
+  "A": {
+    "question": "Does independent N207 Windows TypeScript engine with its exact subset solver reproduce actual byte-identical original Python ESBM for official n144 T16 K7 with shared frozen source-generated shocks?",
+    "unit": "One official synthetic seed 101, two fixed scenarios mixed_random and private_rejection_learning, 16 periods each",
+    "outcomes": "Partner pair identities per tick, all track/aggregate fields, operational feasibility and fail-closed resource handling",
+    "not": "NOT historical N237–N256 TS+Boost nor human validation"
+  },
+  "B": {
+    "rivals": [
+      "Original Python unchanged simulate() NetworkX float maximum cardinality solver",
+      "N207 TypeScript independent engine and exact binary64 subset recurrence (max component22)",
+      "Null: N207 hits size/time/resource limit or diverges by shock order, responses, matching tie or metric"
+    ],
+    "extra": "N237 previously tested aggregated historical Python vs TS+Boost; here independent earlier N207 TS and exact solver; no novelty claim for human dynamics"
+  },
+  "C": {
+    "data": "Original people(101) creates genders scopes norms q ages and five independent frozen tensors IEEE754 float64 C-order [16,144,144]",
+    "fixed_scenarios": [
+      "mixed_random",
+      "private_rejection_learning"
+    ],
+    "primary": "Both cases must complete and agree on 16 canonical pair sets, then all output fields exact integers and numeric tolerance1e-9",
+    "falsifier": "Any execution STOP/timeout, tie without uniqueness proof, pair divergence, field divergence; first difference preserved",
+    "selection_exposure": "Seed 101 was used in prior campaigns; NOT independent holdout, only software QA"
+  },
+  "D": {
+    "code_files_sha256": {
+      "prepare_official_101.py": "4668496FB7305B5BD48425D7620CE2C4C999DF10986B0429856F4BEDEB6E95D5",
+      "python_official_101.py": "E8045C356C3933C6CFCB9EB80D0013A4E1522998D4BA32310EEE1C849AF645E2",
+      "ts_official_101.mjs": "6DED9C9398E213400E30AA644F6C1E87376F372AFA026B007C00A5CDD1118F0D",
+      "audit_official_101.py": "71B590CC884E56DA030C5E9864E69C4354632ED963FAB8AFB5C48C71D6172A17",
+      "esbm_dynamic.py": "F7E6B84000720CBDF2EE0800C2B10D136185FACD00E4622756CBB5F8D8254D0B",
+      "N338_INPUT_MANIFEST.json": "075900F243F31E0306D7A72C2075A45818782FCBC860CD1A5C07A46439C2B994",
+      "audit_n337.py": "892E9F8917453BF49066792F403A9D38A4ED6A980B9C50BAA7E4AC645E3178EF"
+    },
+    "source_TS_N207_frozen_in_N337_prereg": "732d628dc8aa9f24620206c352eed5705fa40521",
+    "binary_inputs_sha256": {
+      "people_101.json": "DD16C739B3139F45DCC53D18AB36810E99BA98842C707764BC0A33CC9356249D",
+      "u_send_101.bin": "61468C812847A2C540FB3C8A472EA2E6A6B7C36AF328746640ED386B22FB60DF",
+      "u_reply_101.bin": "92C9D540136661AAD7C381A58D260F05CA9B328B060172F27D6278DA60F04E3D",
+      "u_hazard_101.bin": "3E8149CCBE4B10F38DFDFF85CC326DA5D7156BE7E6EA1D7079156A5988E85931",
+      "u_expose_101.bin": "FF6B5BC4B5D1D4B9651527C44476CD54080E73251F14FB6A003093271B8234CC",
+      "u_match_101.bin": "E30DDAD180210DA0BAD3A487FD593238DD0CA9CCD9824361B0376AA0F99FE0C9"
+    },
+    "frozen_github_code_commits": [
+      "15e6039ec35a3587f253c8ea86595a269a9081e6",
+      "0c156e290daaac5f6b7bcb8f75eff652347bb8d6",
+      "0c600b74659852a89e4ba7e426f54dc404311af5",
+      "cc2bab3dd403e43565155b2252f326221cb0fba4",
+      "b96e44da151239fd99e34147437354fd55dc1b8a"
+    ],
+    "windows_local_path": "C:\\Users\\Nitropc\\CoS-Prueba\\ESBM_AUDIT_N337_20261031"
+  },
+  "E": {
+    "commands": [
+      "py -3.13 python_official_101.py",
+      "node ts_official_101.mjs",
+      "py -3.13 audit_official_101.py"
+    ],
+    "expected_files": [
+      "N338_PY_OFFICIAL.json",
+      "N338_TS_OFFICIAL.json",
+      "N338_AUDIT.json"
+    ],
+    "wall_time_caps_seconds": {
+      "python": 45,
+      "typescript": 90,
+      "audit": 15
+    },
+    "TS_match_limits": {
+      "maxStates": 50000,
+      "maxComponentNodes": 22,
+      "maxWallMs_per_call": 2500,
+      "maxHeapBytes": 524288000
+    },
+    "trace_limits": {
+      "events": 80000,
+      "bytes": 134217728
+    },
+    "outcome_at_freeze": "NONE"
+  },
+  "F": {
+    "checks": "Exact source input arrays verified against canonical Python people(101), independent TypeScript float64LE read validates each file SHA, TS uniqueness statuses and no hidden fallbacks, exact partner identity/tick, every field with comparator, report resource errors as negatives",
+    "negative": "N207 solver may STOP due component>22, wall/heap limit; do not broaden on failure"
+  },
+  "G": {
+    "independence": "Separate TS algorithm and Python original; same synthetic data; self-hosted Windows PC. No external human observation. Original N237 historical TS still absent.",
+    "prior_technical": "N337 N8 cross-language 60/60 agreement, N297 original Python vs reconstruction 60/60; this run tests new full N144 N207 exact-subset performance"
+  },
+  "H": {
+    "planned_update": "P-TRAJECTORY-INVARIANCE qualitative NO_CHANGE_WITH_REASON for human validation even if technical PASS; no new SOURCES unless documentary",
+    "numerical_posterior": false
+  },
+  "I": {
+    "CT2_before": 7,
+    "CT2_after": 7,
+    "STOP_R5_human": true,
+    "scientific_grade": "0/3"
+  },
+  "J": {
+    "count_rule": "Spend one N338 only if actual bounded execution produces auditable full or failure receipt; no same-case retries after outcome except separate prereg; leave other 18 pending",
+    "prohibitions": [
+      "No SSJY",
+      "No Codex",
+      "No licence acceptance",
+      "No author contact",
+      "No main merge",
+      "No expensive CI"
+    ],
+    "resource_cleanup": "No background service; child Node process must be killed on 90s budget"
+  }
+}
