@@ -1,3 +1,17 @@
+# Mercados de pareja · estado científico vigente en la rama AB-H (31/10/2026)
+
+**AB-H PIVOT N337–N356: 19/20 ciclos válidos ejecutados (17 técnicos positivos, 2 negativos válidos N338 y N352), N356 una plaza ya autorizada y todavía sin ejecutar. Cero ciclos AB inválidos.** **CT2 científico 7/100 y STOP_R5 humano activos.** Todos los A–J y los hashes del código de N337–N355 se congelaron antes de resultados, con reparaciones instrumentales documentadas y sin sobrescribir resultados. **119 SOURCES, 35 PRIORS y 219 UPDATES**; originales ESBM y SRC104 intactos, sin merges de código ni CI costosa.
+
+[Informe científico N350–N355 + SRC119](research/ABH_N337_N356_20261030/REPORT_UPDATE_20261031_N350_N355_R5.md) · [A–J y recibos 19 ciclos](research/ABH_N337_N356_20261030/LEDGER_AJ_N337_N355_20261031.json) · [saldo](research/ABH_N337_N356_20261030/STATUS_AND_BUDGET.json) · [AB Atlas](research/ABH_N337_N356_20261030/AB_ATLAS_DELTA.json) · [CT2](research/ABH_N337_N356_20261030/CT2.svg).
+
+El **solucionador exacto polinómico Blossom** ha sido contrastado con NetworkX de pesos enteros, verificadores primal-dual independientes y una batería adversarial. La paridad con el **Python ESBM original** y un **motor TypeScript N207 independiente** comprende las 60 trayectorias históricas artificiales, las parejas individuales de 960 períodos y 871.914 eventos dirigidos. Se han completado además mundos longitudinales alternativos de ofertas inmediatas y Gale–Shapley, con oráculos independientes. **Ninguna de esas simulaciones valida causalmente mercados humanos reales**.
+
+**Novedad empírica documental:** [Hoffmann et al. (2024), OSF `vzx6q`](https://osf.io/vzx6q/) (**SRC119**) contiene 240 citas presenciales humanas originales, ambos votos de aceptación nativos y sus oportunidades asignadas observadas. El SPSS tiene 31 variables, 60 sujetos por cuatro citas con ocho parejas experimentales preasignadas, diez sí mutuos. **No contiene ronda, secuencia temporal o timestamps nativos** y no se verificó licencia específica para reutilizar los datos. Por ello [auditoría R5 agregada](research/ABH_N337_N356_20261030/R5_HOFFMANN_OSF_VZX6Q_20261031/AGGREGATE_ONLY_R5_GATE.json) mantiene STOP_R5, sin entrenar modelos humanos ni inferir preferencias completas o una asignación DA real. Las filas personales originales no se subieron al repositorio.
+
+La plaza N356 **ya está autorizada**. No gastarla en más controles redundantes: solo abrirla con un contraste realmente distinto y prerregistrado o al disponer de nueva prueba de temporalidad y derechos de SRC119 o cohortes humanas equivalentes.
+
+---
+
 # Mercados de pareja: homogamia emergente sin preferencia por semejanza
 
 **Proyecto AB-R (autoría de investigación: Alejandro Panera Pascual)**. Proyecto hermano de `proyectos/politics-fantasy-league/`, deliberadamente más ligero. **Estado: piloto exploratorio, sin hallazgo 2/3 ni calibración empírica.** Rama de trabajo: `research/ab-r-mercados-pareja-20261028`. Corte: 28/10/2026.
