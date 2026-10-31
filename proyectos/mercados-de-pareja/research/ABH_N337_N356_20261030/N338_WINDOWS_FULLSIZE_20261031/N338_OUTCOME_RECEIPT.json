@@ -1,0 +1,91 @@
+{
+  "schema": "ABH_N338_OUTCOME_RECEIPT_V1",
+  "date": "2026-10-31",
+  "cycle": "N338",
+  "classification": "VALID_TECHNICAL_NEGATIVE_RESOURCE_LIMIT",
+  "preoutcome_AJ_commit": "9ee375c058cbeb3a678c403bcc2653207fc4690f",
+  "preoutcome_source_commits": [
+    "15e6039ec35a3587f253c8ea86595a269a9081e6",
+    "0c156e290daaac5f6b7bcb8f75eff652347bb8d6",
+    "0c600b74659852a89e4ba7e426f54dc404311af5",
+    "cc2bab3dd403e43565155b2252f326221cb0fba4",
+    "b96e44da151239fd99e34147437354fd55dc1b8a"
+  ],
+  "original_source_sha256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+  "original_Python_inputs": "real people(101), all 5 x float64 [16,144,144], input SHA in manifest",
+  "input_manifest_sha256": "075900f243f31e0306d7a72c2075a45818782fcbc860cd1a5c07a46439c2b994",
+  "typescript_implementation": "N207 corrected original independent TypeScript subset solver; explicitly not N237–N256 Boost",
+  "environment": "Windows 10.0.26200, Python 3.13.4 NumPy 2.4.3 NetworkX 3.6.1 Node 24.16.0",
+  "N": 144,
+  "T": 16,
+  "K": 7,
+  "seed": 101,
+  "scenarios": [
+    "mixed_random",
+    "private_rejection_learning"
+  ],
+  "native_original_Python_completed": 2,
+  "typescript_completed_full_16ticks": 0,
+  "typescript_completed_first_tick": 2,
+  "scenario_results": [
+    {
+      "scenario": "mixed_random",
+      "state": "EXECUTED_NEGATIVE",
+      "t": 1,
+      "first_error": "MATCH_RESOURCE_LIMIT:COMPONENT:27>22:states=5",
+      "emitted_events": 4207,
+      "last_event": {
+        "t": 1,
+        "stage": "matching_graph",
+        "seq": 4206
+      },
+      "formation_pair_ticks_before_stop": 1,
+      "first_tick_pairs": 37,
+      "first_tick_pairs_agree_original": true
+    },
+    {
+      "scenario": "private_rejection_learning",
+      "state": "EXECUTED_NEGATIVE",
+      "t": 1,
+      "first_error": "MATCH_RESOURCE_LIMIT:COMPONENT:27>22:states=6",
+      "emitted_events": 4264,
+      "last_event": {
+        "t": 1,
+        "stage": "matching_graph",
+        "seq": 4263
+      },
+      "formation_pair_ticks_before_stop": 1,
+      "first_tick_pairs": 38,
+      "first_tick_pairs_agree_original": true
+    }
+  ],
+  "first_tick_pair_agreement_method": "Additional descriptive post-outcome inspection, not preregistered confirmation of full parity",
+  "precommitted_cap": {
+    "TS_max_component_nodes": 22,
+    "TS_max_states": 50000,
+    "TS_maxWallMs_per_matching": 2500,
+    "TS_heap_limit_bytes": 524288000,
+    "outer_node_wall_ms": 90000
+  },
+  "outcomes_sha256": {
+    "Python": "b95e2727af8eecf54f52e026531ce7adc6686e73cd2f203fe804f60e728ed48d",
+    "TypeScript": "be54a38fca2f4b9f17bf20fddaa1a80f4b6095dc7837677d64a0057525de2eb2",
+    "audit": "ee61ffb56feca4e2fed3462cc94baf56e5651f251ef4100d9a10479825a183e6"
+  },
+  "export_archive": {
+    "filename": "N338_OFFICIAL_N144_NEGATIVE.zip.b64",
+    "zip_sha256": "bd535039aaf30e872c95e3601d8d1a17dc2a88d1da00ea38ded49251780a5f87",
+    "zip_bytes": 17840,
+    "files": 10,
+    "note": "Synthetic binary 13MB tensors not included in lightweight archive, but SHA+seed+original source and generator allow deterministic regeneration from frozen NumPy version; local originals remain in CoS-Prueba/ESBM_AUDIT_N337_20261031/official_101"
+  },
+  "no_code_changes_after_outcomes": true,
+  "no_resources_increased_posthoc": true,
+  "completion_interpretation": "Cannot claim 16-tick parity or full event-level equivalence. The independent small-N exact subset solver is not viable at N144 under frozen component22 cap because a size27 component appears at t1 in both scenarios; the original Python returns valid complete results.",
+  "external_human_data_new": 0,
+  "CT2_scientific": 7,
+  "STOP_R5_human": true,
+  "new_scientific_grade": "0/3",
+  "AB_slot_count_once": true,
+  "cycles_remaining_after_N338": 18
+}
