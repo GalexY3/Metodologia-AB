@@ -6135,7 +6135,81 @@
       "STOP_R5_human": true,
       "numerical_posterior_updated": false,
       "refer_to": "N347/N348/N349 source SHA and outcomes; N349 correction GitHub f9de8cdc."
+    },
+    {
+      "id": "U217",
+      "recorded_at": "2026-10-31",
+      "campaign": "ABH_N337_N356_COMPLETION_N350_N355",
+      "prior_id": "P-TRAJECTORY-INVARIANCE",
+      "source_ids": [
+        "SRC118"
+      ],
+      "cycle_ids": [
+        "N350"
+      ],
+      "direction": "NO_CHANGE_WITH_REASON",
+      "evidence_type": "ADVERSARIAL_CERTIFICATE_TRUST_BOUNDARY_AUDIT",
+      "before": "SYNTHETIC_COUNTEREXAMPLE_REPAIRED_OPT_IN_NOT_HUMAN",
+      "after": "SYNTHETIC_COUNTEREXAMPLE_REPAIRED_OPT_IN_NOT_HUMAN",
+      "technical_findings": "On 12 existing n4–144 N339 graphs, N350 tested 132 deliberately mutated primal-dual witnesses/graphs/matchings/bounds, 84 applicable mutants, all 84 rejected and 48 no-op properly excluded; all 12 pristine witnesses passed. Initial two instrumental attempts failed before any mutants because serialized witness map and n144 graph with n109 incident vertices, with separate prospective repair SHA commits and all negative attempts retained. Finite mutation-suite pass is not a mathematical universal verifier guarantee.",
+      "source_sha": "490068e0a9dd60f0c52238526132e6889dd1ee5b7fd6f082d1e61ba88879246c",
+      "outcome_sha": "acb985ca032b817e738ccb080fda642554db2522a67ea11c0dda6d1082955205",
+      "why_no_human_prior_change": "No participant data; negative and positive test outcomes strictly algorithmic on synthetic weighted graphs.",
+      "AB_valid_cycles": 1,
+      "CT2_scientific": 7,
+      "STOP_R5_human": true,
+      "scientific_grade": "0/3",
+      "numerical_bayesian_likelihood_updated": false
+    },
+    {
+      "id": "U218",
+      "recorded_at": "2026-10-31",
+      "campaign": "ABH_N337_N356_COMPLETION_N350_N355",
+      "prior_id": "P-ALLOCATION-RULE",
+      "source_ids": [],
+      "cycle_ids": [
+        "N351",
+        "N352",
+        "N353",
+        "N354",
+        "N355"
+      ],
+      "direction": "NO_CHANGE_WITH_REASON",
+      "evidence_type": "STRICT_RANKS_STABILITY_OPPORTUNITY_ROTATION_AND_FULL_DYNAMIC_GALE_SHAPLEY_SYNTHETIC",
+      "before": "ALLOCATION_PROTOCOL_DISTINGUISHES_STABILITY_AND_WELFARE_SYNTHETIC_ONLY",
+      "after": "ALLOCATION_PROTOCOL_DISTINGUISHES_STABILITY_AND_WELFARE_SYNTHETIC_ONLY",
+      "technical_findings": "N351 96 fixed native synthetic F-M mutual-YES graphs, strict ordinal preferences ASSUMED from q/age/norm (not revealed), central max cardinality1165 pairs with 415 blocking pairs in93 graphs under new ranks; F/M Gale–Shapley both1062 pairs, zero blocking in all 96, same pair identities; chronological greedy1093 reverse1088. N352 480 same-graph perturbations with actor-specific SHA preference noise lambdas 0,0.1,0.5,1,2: all zero DA proposer-side pairset differences despite DA counts 1062,1062,1059,1066,1079; negative mechanism finding. N353 68/96 original eligibility graphs acyclic,28 cyclic,21 with 4cycle; all 96 constructed minimally specified artificial four-actor preference rotation examples with exactly two stable matchings (21 required zero,73 one,2 two NON-NATIVE eligibility edges). Alternating cycles necessary not sufficient for proposer dependence. N354 first complete endogenous 12 world trajectories at n144 T16 K7 heterosexual restricted, 6 seeds per DA-side: both F/M DA form1123 relations, vs original central1165 and immediate accepted forward1145/reverse1156, with all later exposures/choices/rejections/ruptures recomputed and no time extrapolation. N355 independent Python state/DA/blocking oracle verified 12/12 new full-world traces,192 matching ticks,159402 directed events and 92594 probability decisions plus genuine proposal mutant control. Initial N351 input dedup and N354 plan driver errors repaired before outcomes under SHA. No DA/F-M effect found in this specified synthetic model; cannot claim universal proposer invariance.",
+      "rights": "No human ordinal preferences or real allocation institution observed. No license accepted, contacts, Codex, SSJY, expensive CI, or merges.",
+      "why_no_human_prior_change": "All graph risk sets, ranks and outcomes synthetic ESBM; no external native participant allocation institution or verified relational longevity; outputs cannot establish actual strategic bargaining or causal relationship formation.",
+      "AB_valid_cycles": 5,
+      "CT2_scientific": 7,
+      "STOP_R5_human": true,
+      "scientific_grade": "0/3",
+      "numerical_bayesian_likelihood_updated": false
+    },
+    {
+      "id": "U219",
+      "recorded_at": "2026-10-31",
+      "campaign": "ABH_N337_N356_SRC119_R5_GATE",
+      "prior_id": "P-DYADIC_ACCESS",
+      "source_ids": [
+        "SRC119"
+      ],
+      "cycle_ids": [],
+      "direction": "NO_CHANGE_WITH_REASON",
+      "evidence_type": "NEW_INDEPENDENT_PRIMARY_HUMAN_DYADIC_DATA_INSPECTED_BUT_TEMPORAL_R5_NOT_MET",
+      "before": "HUMAN_EXTERNAL_ORDERED_NATIVE_DYADIC_ACCESS_BLOCKED",
+      "after": "HUMAN_EXTERNAL_ORDERED_NATIVE_DYADIC_ACCESS_BLOCKED",
+      "original_source": "Hoffmann et al. (2024) OSF vzx6q public primary 39,536-byte SPSS Speed_Dating.sav SHA256 3de995b8f8abc24908244d770009e600207d6b7940b4a91ff0b82573e45c9f01, author 4,818-byte R script SHA de0d558c79a4e530070006575534d8be2b922c05e5acd0700a63e21a649ed67a.",
+      "documentary_findings": "240 original observed unique Subject/Partner encounters, 60 main subjects each four assigned dates and eight fixed partners each seen in thirty dates, two original choice votes per dyad (Subject yes72, Partner yes43, mutual yes10; 230 not mutual); all choices complete and Match perfectly agrees with mutual yes. Explicit round/timestamp/session/sequence/order NOT present in all31 native columns. Project metadata does not verify data-specific reuse licence. Historic four-date schedule not reconstructible from subject IDs or table rows without unsupported imputation. Original raw human rows retained local user PC and NOT committed to GitHub; aggregate JSON+SHA only.",
+      "R5_decision": "STOP_R5_ORDER_AND_LICENSING_NOT_VERIFIED",
+      "why_no_update": "The discovery substantially improves *documentary* evidence of static binary bilateral dates and observed scheduled opportunity sets but does NOT meet strict prospectively specified temporality, licensing, independent time-sequential market prediction requirement; a 10-match human positive subset also poses high variance. No predictive analysis or full partner ranking/DA based on this source, no CT2 grade change.",
+      "AB_cycles_spent": 0,
+      "CT2_scientific": 7,
+      "STOP_R5_human": true,
+      "scientific_grade": "0/3",
+      "numerical_bayesian_likelihood_updated": false
     }
   ],
-  "last_campaign": "ABH_N337_N356_WINDOWS_N349_POSTOUTCOME"
+  "last_campaign": "ABH_N337_N356_20261031_N350_N355_AND_SRC119_HUMAN_STOP_R5"
 }
