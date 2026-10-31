@@ -1,0 +1,84 @@
+{
+  "schema": "ABH_N344_PREOUTCOME_AJ_SHA",
+  "date": "2026-10-31",
+  "cycle": "N344",
+  "status": "FROZEN_BEFORE_OPTIMUM_UNIQUENESS_OUTCOMES",
+  "A": {
+    "question": "Are all 960 actual original ESBM historical synthetic matching optima uniquely determined by lexicographic max-cardinality/weight, rather than pair identity accidentally contingent on alternative equal optima? Certify uniqueness by independently reoptimizing each incumbent matched-edge exclusion.",
+    "unit": "960 original matching graphs reconstructed from N342 native original directed response logs and frozen u_match. Check every chosen edge for alternative with same cardinality/residual."
+  },
+  "B": {
+    "hypothesis": "All 960 optima unique or explicit counterexamples with distinct same-objective assignments",
+    "rivals": [
+      "N339 strict-slack sufficient uniqueness condition left most graph optima uncertified; N344 tests necessary+ sufficient by forbidding each selected edge",
+      "Exact MIT JS Blossom primal-dual verified alt matching; independent Python NetworkX tests first/last ticks per run plus all recorded ambiguity up to 200"
+    ],
+    "clarification": "This does not establish structural uniqueness in human dating markets; all inputs synthetic historical shocks."
+  },
+  "C": {
+    "criterion": "Each graph either proven unique if every incumbent edge exclusion reduces optimal objective/cardinality, or proven nonunique by a distinct pair set equal maximum objective; no arbitrary tie break presented as uniqueness",
+    "validity": "NetworkX independent sample 120 endpoint graphs plus up to first200 nonunique others agrees exact unique/nonunique status",
+    "failures": "Any uncertified alt, resource timeout, objective > baseline, independent audit disagreement must be reported, not silently PASS"
+  },
+  "D": {
+    "sha256": {
+      "instrument/oracle_unique_alternatives.mjs": "34dbb82e14a8af8505198b04011a188f946b378a56c0802311152ace4eb1ea08",
+      "instrument/verify_unique_sample_python.py": "7caefd810739485f31ac843c8a4ad848b63f5238c2636e88dc98233e81275a9b",
+      "N342_original_native_index": "89e221ab34c1a3c08ff04c8902268946f1b40cf6230cea224a907d9e96bd776b",
+      "N341_TS_index": "37b8a1010968e0ead1a13f7f71193858bcfb83b0e3428573ad734f96e136948d",
+      "N341_original_inputs": "84a52580add085ab551dacf6e4cd3fdfc80be8eeaf187c7d3e4b25be208e42bf",
+      "poly_backend": "9b6fd317dd05229c45fa5ee60bf71af226dd307fa2a558c1abb332b93017b19d"
+    },
+    "code_commits": [
+      "79430597601cd024170a5d980e6cf60c77642ff2",
+      "d151c6f675715965b3bc4001bf30bf5cd4b7d634"
+    ],
+    "source_rule": "Source acceptance events native original Python + frozen u_match, do not run full TS or original Python model again"
+  },
+  "E": {
+    "commands": [
+      "node instrument/oracle_unique_alternatives.mjs",
+      "py -3.13 instrument/verify_unique_sample_python.py"
+    ],
+    "node_outer_wall_seconds": 180,
+    "python_outer_wall_seconds": 180,
+    "per_alternative_matching_ms": 2500,
+    "max_graph_edges": 6000,
+    "memory_GB": 2,
+    "expected_graphs": 960,
+    "uniqueness_stop_early": "Stop excluding further edges after one equal-objective alternative proves nonunique; for uniqueness must check every selected edge"
+  },
+  "F": {
+    "adversarial": [
+      "Known C4 and K6 alternative optima from N339 corroborate nonuniqueness logic but not recounted as an N344 graph result",
+      "Every chosen edge gets forbidden, independent NetworkX sample must confirm true uniqueness/alternative",
+      "Baseline optimality N343 960/960 verified before N344, but no hidden outcomes examined in N344 yet"
+    ],
+    "controls": "All run identities SHA-preserved"
+  },
+  "G": {
+    "previous_scope": "N297 small-n n14 unique and N339 synthetic n144 ULP tie, N344 extends exact uniqueness proof to all 960 actual ESBM original historical graphs, not redundant small fixtures",
+    "human_evidence": 0
+  },
+  "H": {
+    "prior_id": "P-TRAJECTORY-INVARIANCE",
+    "posterior_policy": "NO_CHANGE_WITH_REASON for human empirical model, synthetic technical characterization only"
+  },
+  "I": {
+    "CT2_scientific": 7,
+    "STOP_R5_human": true,
+    "new_scientific_grade": "0/3"
+  },
+  "J": {
+    "one_cycle": "Count N344 only once upon actual 960 or meaningful documented negative, do not inflate per graph",
+    "authorized_remaining_if_spent": 12,
+    "forbidden": [
+      "SSJY",
+      "Codex",
+      "License acceptance",
+      "Authors contact",
+      "Merge to main",
+      "Expensive CI"
+    ]
+  }
+}
