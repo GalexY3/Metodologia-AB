@@ -1,0 +1,50 @@
+{
+  "schema": "N341_RESUME_AJ_SHA_FROZEN_BEFORE_OUTCOMES_55_TO_60",
+  "date": "2026-10-31",
+  "cycle_id": "N341",
+  "not_new_cycle": true,
+  "original_prereg": "a24f9f6635cf7b4cc2d9f1beb377ce9edfbac6a9",
+  "original_script_SHA": "90e5abec08338a1b2d12126d00cd7c89aa5d2677c8655d21f0eed8f35b2706d4",
+  "repair_source_sha": "523287e4e470a4421ba1b7d1deeb68fd8ad7f25cb7dda5fdc1da06540f48b447",
+  "partial54_manifest_sha": "8553d0261d2043b60f6a2de18de800c10cbe7124218ab8900881aec2b1cd9948",
+  "custody_script_sha": "26ea1d3f0cea13c9193951d5710702f3938f6059bab0cf45a45deb5155d10550",
+  "preoutcome_source_commits": [
+    "2630e74d42df8f77bee39a6e5bdb2423ecaf5e68",
+    "d095ba4d079ffbe61de6021363c961e3a4b20eed",
+    "23fb3a02312bc45fb24aec34b9848fe447e2ea9d"
+  ],
+  "previous_outcomes_recorded": {
+    "complete_runs": 54,
+    "matching_ticks": 864,
+    "preserved_original_first54": true,
+    "run_and_trace_sha": "Each run+trace SHA in frozen N341_PARTIAL_54_MANIFEST.json",
+    "last_completed": "seed601 explicit_norm_preference",
+    "next_unstarted": "seed601 popularity_ranking",
+    "original_python_historic_outputs_not_read_or_compared_yet": true
+  },
+  "initial_attempt_termination": "The original subprocess wrote 54 full run+trace pairs, then stopped making progress while its parent PowerShell waited for exit and redirected stdout was not being drained; process 32328 uniquely identified by cmd and stopped. Hypothesized stdout pipe backpressure, not established by process diagnostics. No source-code matching exception or partial 55th file.",
+  "allowed_changes_from_frozen_script": [
+    "Allow existing N341_TRACES dir only when final index absent",
+    "Load frozen first54 custody SHA and rehash before skip",
+    "Never overwrite or re-execute first54 runs, fail-closed if one mismatched/missing",
+    "Execute exact same replay callback, shocks, scenarios and backend only for six remaining seed601 cases",
+    "Remove per-run console logging to avoid stdout saturation; one final summary line only",
+    "Write final 60-row index with combined 54 old sha and six new sha"
+  ],
+  "forbidden_changes": [
+    "No change to generator, exposure score, proposal, response, hazards, feedback, matching, weight transform, certificate, scenario order, input tensors or time/resource limits",
+    "No reading historical reference outcomes before new six run"
+  ],
+  "E": {
+    "remaining_target": 6,
+    "expected_final_runs": 60,
+    "outer_wall_limit_seconds": 120,
+    "stdout_policy": "Redirect process stdout and stderr to local files with no buffering before waiting; never wait with unconsumed large pipe",
+    "source_replay_same_hash": "15506227eeac1aeb5f0f2c1d61fe567519b31f862ae3310897575cd3957d0cbe",
+    "backend_same_hash": "9b6fd317dd05229c45fa5ee60bf71af226dd307fa2a558c1abb332b93017b19d"
+  },
+  "ledger": "One invalid *instrumental attempt* preserved within single N341 cycle; not a second N341 or N342. N341 spent only after successful complete verified outputs or useful negative; past 54 files do not create extra cycles.",
+  "CT2_scientific": 7,
+  "R5_human": "STOP",
+  "human_data": 0
+}
