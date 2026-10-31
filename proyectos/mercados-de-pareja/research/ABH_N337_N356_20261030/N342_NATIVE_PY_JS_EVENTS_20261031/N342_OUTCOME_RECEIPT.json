@@ -1,0 +1,62 @@
+{
+  "schema": "ABH_N342_OUTCOME_RECEIPT",
+  "date": "2026-10-31",
+  "cycle": "N342",
+  "valid": "TECHNICAL_PASS",
+  "prereg_commit": "fbec2f689cdf390ad476d8c48c6618242d8ccdfe",
+  "repair_prereg_commits": [
+    "50f7f6c97f794b8a458726fb2c8e17dfec78efb4",
+    "c1b170234c340a2379bc29613c9c1fe61daaa818"
+  ],
+  "original_code_sha256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+  "original_python_observer_SHA": "04ebebf1a16254c623de59dc5c3ea1d1780c127526228985d79602ab59581ac1",
+  "repaired_python_observer_SHA": "95a4178c15c58d53b04fb78870d8ed14528081e06c41c8a758b0d02f16393f86",
+  "frozen_TS_index_sha": "37b8a1010968e0ead1a13f7f71193858bcfb83b0e3428573ad734f96e136948d",
+  "frozen_original_input_manifest_sha": "84a52580add085ab551dacf6e4cd3fdfc80be8eeaf187c7d3e4b25be208e42bf",
+  "outcomes": {
+    "native_index_sha256": "89e221ab34c1a3c08ff04c8902268946f1b40cf6230cea224a907d9e96bd776b",
+    "native_JS_comparison_sha256": "e3d2706059be27c9d0936f4ef15bcada8655ade87efd32848c5e8b1f5523dbd6",
+    "native_runs_completed": 60,
+    "individual_pair_and_summary_equal": 60,
+    "individual_directed_event_stream_equal": 60,
+    "directed_events_equal": 871914,
+    "matching_ticks": 960,
+    "adversarial_identity_flip_detected": true,
+    "adversarial_choice_flip_detected": true
+  },
+  "invalid_attempts": [
+    {
+      "kind": "N342 initial native observer generated 10 seed101 complete trajectories but seed211 people() source was left patched to seed101 and asserted before writing seed211 outputs",
+      "count_as_new_AB_cycle": false,
+      "custody_first10_SHA": "90a3971eabf0cf749ac68dc4faf7cd0a929411e6fefa0257db7f0ad54df6626f",
+      "repair": "Prospective SHA frozen to cache actual original_people and skip first 10 by SHA; executed precisely 50 remaining; never rewrote original."
+    }
+  ],
+  "archive": {
+    "name": "N342_NATIVE_ORIGINAL_EVENTS_AND_PARITY.zip",
+    "local_only": true,
+    "zip_sha256": "dd54a21ef9a2f6f3a32ad1557e06ffcb337041561759f6676fcecc6d16e81d48",
+    "zip_bytes": 18494580,
+    "files": 126,
+    "zip_crc": "PASS",
+    "local_path": "C:\\Users\\Nitropc\\CoS-Prueba\\ESBM_ABH_N339_N356_20261031\\N342_NATIVE_ORIGINAL_EVENTS_AND_PARITY.zip",
+    "sha_index_in_GitHub": true
+  },
+  "scope_limits": [
+    "The same synthetic assumptions and fixed shocks are shared; this is independent language implementation fidelity, not human data validation.",
+    "Python exposures carry actual u_expose from frozen tensors; TypeScript exposure event lacks an individual u_expose scalar, so its equality for exposures checks actor and time, not TS-reported raw exposure random value; other directed send/reply/hazard U exact and P tolerance 1e-12.",
+    "No uniqueness proof universally; pair identity coincided on actual 60 configurations."
+  ],
+  "cycles_spent_this_cycle": 1,
+  "cycles_total_N337_N342": 6,
+  "remaining_N343_N356": 14,
+  "CT2_scientific": 7,
+  "STOP_R5_human": true,
+  "human_qualified_new": 0,
+  "SSJY_used": false,
+  "Codex_used": false,
+  "licence_accepted": false,
+  "authors_contacted": false,
+  "main_merged": false,
+  "CI_costly": false
+}
