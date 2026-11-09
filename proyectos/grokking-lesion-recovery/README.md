@@ -109,8 +109,7 @@ del optimizador es una intervención crucial y falsable.
 
 [PREREG_V15_OPTIMIZER_REPAIR.md](full_100/PREREG_V15_OPTIMIZER_REPAIR.md)
 establece el experimento siguiente para comparar recuperaciones con exactamente
-los mismos pesos y máscaras, conservando vs reiniciando AdamW. **En el momento
-de esta actualización aún no está ejecutado.**
+los mismos pesos y máscaras, conservando vs reiniciando AdamW. **V15 completado y auditado con 240 reconstrucciones.** Leer [REPORT_V15.md](full_100/REPORT_V15.md), [V15_ANALYSIS.json](full_100/V15_ANALYSIS.json) y [V15_ALIAS_ERRATUM.md](full_100/V15_ALIAS_ERRATUM.md).
 
 Evidencias V13: [auditoría y resultados](full_100/V13_ANALYSIS.json),
 [protocolo](full_100/PREREG_V13_DOSE.md), datos en full_100/v13_dose_runs.
@@ -124,3 +123,20 @@ La próxima simulación de coordinación funcional e intercambio de generaciones
 se mantiene **en cola**, bajo
 [coordinacion-funcional-intergeneracional/QUEUE.md](../coordinacion-funcional-intergeneracional/QUEUE.md).
 No confundir la simulación propuesta con resultados ejecutados.
+
+## V15 — reparación y estado de AdamW
+
+**V15 completado y auditado (PASS, 240 reconstrucciones desde pesos idénticos)**.
+Leer el [informe V15](full_100/REPORT_V15.md), los [resultados](full_100/V15_ANALYSIS.json)
+y la [errata de integridad](full_100/V15_ALIAS_ERRATUM.md).
+
+Se invalidó una primera ejecución debido a memoria compartida entre estados
+AdamW; sus datos fueron aislados fuera del repositorio. La repetición corrigió
+el alias con copia profunda, comprobó cero punteros compartidos, y preservó
+exactamente el mismo daño inicial entre brazos de optimizador.
+La recuperación mostró efectos del estado de AdamW que varían según la dosis:
+restaurar momentos no siempre mejora, especialmente ante 90% de destrucción.
+El estudio no identifica causalmente un efecto exclusivo del grokking.
+
+**El siguiente proyecto autorizado por el usuario está en cola**:
+[coordinacion-funcional-intergeneracional/QUEUE.md](../coordinacion-funcional-intergeneracional/QUEUE.md).

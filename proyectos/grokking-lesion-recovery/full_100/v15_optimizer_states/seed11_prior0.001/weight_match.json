@@ -1,0 +1,25 @@
+{
+  "seed": 11,
+  "initial_L1": 0.001,
+  "step_start": 6000,
+  "step_final": 10000,
+  "continued_L1": 0.0001,
+  "optimizer": "AdamW, fresh at step6000, state preserved through step10000",
+  "max_model_weight_difference": 0.0,
+  "max_differences_by_key": {
+    "mask": 0.0,
+    "a.weight": 0.0,
+    "a.bias": 0.0,
+    "b.weight": 0.0,
+    "b.bias": 0.0
+  },
+  "same_weights_tolerance": 1e-06,
+  "weights_verified": true,
+  "final_train_val_accuracy": [
+    1.0,
+    1.0
+  ],
+  "optimizer_state_entries": 4,
+  "source_checkpoint": "C:\\Programación\\AB-grokking-lesion-v12-travel-20261109\\proyectos\\grokking-lesion-recovery\\full_100\\v12_runs\\seed11_prior0.001\\ck_010000.pt",
+  "protocol": "PREREG_V15_OPTIMIZER_REPAIR.md"
+}

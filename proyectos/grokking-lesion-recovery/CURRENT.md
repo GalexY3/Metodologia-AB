@@ -1,6 +1,6 @@
 # CURRENT — investigación sobre grokking, ablación y reconstrucción funcional
 
-**Fecha de trabajo:** 9 de noviembre de 2026. **Estado:** completados V10–V14B, incluyendo nuevo barrido de dosis V13 y control del optimizador V14B. V15 aún **no ejecutado** en el momento de este corte; protocolo registrado. Todos los hallazgos son experimentos computacionales exploratorios y no implican causalidad directa del evento grokking ni regeneración biológica.
+**Fecha de trabajo:** 9 de noviembre de 2026. **Estado:** completados V10–V15, incluyendo nuevo barrido de dosis V13, control del optimizador V14B y comparación de recuperación V15 corregida y auditada; protocolo registrado. Todos los hallazgos son experimentos computacionales exploratorios y no implican causalidad directa del evento grokking ni regeneración biológica.
 
 **Equipo activo:** GALEXY_TRAVEL. **Repositorio:** GalexY3/Metodologia-AB. **Rama:** research/grokking-lesion-v12-travel-20261109. **Carpeta:** proyectos/grokking-lesion-recovery. El trabajo original del sobremesa está en la rama anterior research/grokking-lesion-v10-portable-20261109 y no debe sobrescribirse.
 
@@ -21,13 +21,20 @@ En este tipo de redes la capacidad de recuperación varía claramente con la dos
 
 Ninguna máscara/regla equivale a crecimiento de neuronas; es aprendizaje compensatorio con unidades supervivientes. Una red puede mantener 100% accuracy y reorganizar su tolerancia a ablaciones. Muestras n=5 de entrenamiento independiente, máscaras repetidas anidadas. El test no confirma 2^30 posibles patrones.
 
-## Próximo paso V15, ya registrado y pendiente
-[PREREG_V15_OPTIMIZER_REPAIR.md](full_100/PREREG_V15_OPTIMIZER_REPAIR.md). Recuperar exactamente el checkpoint step10000 y **estado AdamW** de la fase final común V12 rehaciendo desde ck006000 (verificar pesos contra V12 original). Aplicar las MISMAS lesiones de 30%,60%,90% a dos ramas desde mismos pesos: continuar con optimizador original vs reinicializarlo. Horizonte 500, CE+L1 común. Medir AUC y recuperación por red. Si el estado de AdamW cambia sistemáticamente la recuperación dentro de la misma red, sería un efecto computacional controlado sobre optimización, no efecto causal de grokking. No iniciar el proyecto intergeneracional hasta cerrar esta evaluación y fijar la conclusión.
+## V15 finalizado: optimizador conservado frente a reiniciado durante la reparación
+
+Se reconstruyeron los diez checkpoints V12 con **diferencia máxima de pesos de 0,0** y el estado real de AdamW. La primera ejecución de V15 se invalidó por memoria compartida entre los tensores de momentos de AdamW y se aisló en una carpeta local de cuarentena, fuera de Git. La prueba de regresión comprobó **12/12 alias en carga directa y 0/12 tras copia profunda**. La ejecución válida se repitió desde cero con nuevo código y auditó **240/240 lesiones PASS**, máscaras y daños iniciales iguales. Ver full_100/V15_ALIAS_ERRATUM.md, REPORT_V15.md y V15_ANALYSIS.json.
+
+AUC de déficit de validación **nuevo/restaurado** a dosis 30%: A 35,6/35,3 y B 25,2/17,7; a 60%: A 86,8/92,9 y B 83,4/76,8; a 90%: A 214,7/234,9 y B 179,3/192,0. A dosis 90%, el AdamW reiniciado tuvo menor AUC en ambos grupos, mientras el estado conservado favoreció B a dosis menores. El efecto del optimizador no es uniforme, pero se identifica *dentro de la misma red y lesión*. La comparación entre historias sigue sin identificar causalidad aislada del grokking, por confusión con L1 de adquisición.
+
+**Cierre del objetivo neuronal del usuario:** se obtuvo una curva de dosis 10–90%, una extensión de 90% a 2000 pasos, un control factorial de L1 y tiempo (V14), el efecto de reiniciar AdamW en robustez (V14B), y el de reiniciarlo en recuperación de las mismas lesiones (V15). Los resultados son claros respecto a que la recuperabilidad varía con dosis, identidad funcional y procedimiento de optimización; **no se acreditó una ventaja general ni una desventaja general causada por grokking**. Las limitaciones n=5, una sola tarea y arquitectura, y L1 histórica distinta permanecen. No prolongar automáticamente el estudio con infinitas pruebas posthoc; siguiente reto: nueva cohorte/tarea, si se solicita.
+
+**Siguiente tarea en cola conforme al orden del usuario:** iniciar el programa separado en ../coordinacion-funcional-intergeneracional/QUEUE.md, con agentes que equilibran 1/k funciones usando comunicación local, entrenamiento k<=4, pruebas zero-shot k>4 y relevo generacional. Se han preparado criterios metodológicos pero **no se han ejecutado experimentos sociales** al cerrar esta etapa.
 
 ## Reanudación y GitHub
 1. Leer REPORT_V13.md, REPORT_V13B.md, REPORT_V14.md y PREREG_V15_OPTIMIZER_REPAIR.md.
 2. Verificar V13_ANALYSIS.json, V13B_ANALYSIS.json, V14_TEMPORAL_CONTROL.json, V14B_ANALYSIS.json, V12_GATES.json.
-3. Ejecutar V15; analizar y registrar resultados positivos y negativos; versionarlos en rama. Utilizar Python de C:\Programación\Grokking\.venv\Scripts\python.exe, PyTorch CPU.
+3. V15 corregido y auditado; consultar REPORT_V15.md y V15_ALIAS_ERRATUM.md. Utilizar Python de C:\Programación\Grokking\.venv\Scripts\python.exe, PyTorch CPU.
 4. Regenerar ARCHIVE_MANIFEST.json con SHA256 comprobados y preservar hashes de V12_GATES.json y V12_ROBUSTNESS.json que quedaron registrados en V12_TEST_AUDIT.json antes de consultar el test. Evitar conversiones CRLF accidentales.
 5. Después del cierre neuronal, leer la tarea en cola coordinacion-funcional-intergeneracional/QUEUE.md. El texto adjunto original menciona varios DOCX/PDF cuyas bytes no se verificaron en el chat: no presumir contenido no disponible.
 
