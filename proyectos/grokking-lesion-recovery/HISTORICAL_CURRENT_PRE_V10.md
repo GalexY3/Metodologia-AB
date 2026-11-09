@@ -1,0 +1,13 @@
+# CURRENT — grokking / recuperación por lesión (09-11-2026)
+
+**Autoridad del investigador:** no fijar % de acierto; comparar capacidades funcionales **iguales** y durables, adquiridas por historias distintas: un sistema después de **semigrokking genuino** y otro que alcance la misma meseta **gradualmente sin grokking**. Ablar neuronas y medir tanto resistencia como plasticidad. No confundir antes/después de grokking con equivalencia de inteligencia.
+
+**Primer paso obligatorio al reanudar:** leer `REPORT_V7.md`, `PROTOCOL_V3_HISTORY_MATCHED.md`, `PILOT_V7_PREREG.md` y `V7_ANALYSIS.json`; revisar `V7_INTEGRITY_AUDIT.json`. No refritar checkpoint, no sobrescribir datos. Los experimentos propios del usuario sobre Grokking permanecen en otro repositorio `C:\Programación\Grokking` y no han sido modificados desde esta exploración.
+
+**Estado:** V7 completado, auditado a nivel local PASS, tres parejas de semillas y 30 lesiones. Los tres pares alcanzaron mismo global val 61.25/61.25/60.625, train100, y clean_val100. Se observaron diferencias en recuperación heterogéneas y con inversión de signo por semilla. Comparación WD1.0 vs2.5 produce dos latencias tardías diferentes, **no** la comparación deseada semigrok vs gradual. Además, el 61% surge del techo de una mezcla de etiquetas aleatorias, por lo cual no cuenta como semigrokking intrínseco. V8 Fourier desde inicialización no evitó el retraso, WD10/20 bloqueó ajuste.
+
+**Recomendación científica siguiente:** reproducir condición genuina de semi-grokking en una tarea homogénea con Transformer y tamaño de entrenamiento cercano a Dcrit (Varma 2023/2024), sin usar curvas sintetizadas. Explorar controles de aprendizaje gradual para mismo conjunto de evaluación y capacidad, con estrategia predeclarada. Priorizar replicabilidad, definiciones de trayectoria y lesión, permanencia temporal, controles negativos y estimandos que separen daño inmediato de recuperación. No etiquetar resultados de este piloto como nuevos mecanismos ni como causalidad. Si no se obtiene un par auténtico, registrar «NO ELEGIBLE».
+
+**Repositorio de datos:** local aislado `C:\Programación\grokking_lesion_20261109`. No commit ni push GitHub efectuado por este piloto. `REPORT_V7.md` contiene todas las cifras y rutas; `PRIOR_ART_20261109.md` bibliografía relevante. GPU Nvidia está disponible físicamente, pero PyTorch 2.13.0 instalado en Python del sobremesa es CPU-only y los modelos aquí corrieron en CPU.
+
+**Estado de procesos:** entrenamientos V4/V5/V6/V7/V8 y 30 lesiones V7 completados en esta conversación. No hay entrenamiento adicional encargado para ejecutarse posteriormente.

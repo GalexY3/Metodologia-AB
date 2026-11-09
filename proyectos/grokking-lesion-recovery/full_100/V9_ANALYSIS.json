@@ -1,0 +1,310 @@
+{
+  "audit": {
+    "status": "PASS",
+    "lesion_trials": 90,
+    "model_seeds": 3,
+    "paired_masks_per_dose": 15,
+    "issues": [],
+    "interpretation": "both WD1 and WD3 pathways grok; this is not grok vs non-grok"
+  },
+  "network_summaries": [
+    {
+      "seed": 0,
+      "wd": 1.0,
+      "dose": 30,
+      "mean_damage_pp": 0.09259223937988281,
+      "mean_auc": 0.004629611968994141,
+      "meaningful_damage": 0,
+      "recovered_to99": 5,
+      "mean_recovery_steps_all": 0,
+      "median_damage_pp": 0.0
+    },
+    {
+      "seed": 0,
+      "wd": 1.0,
+      "dose": 60,
+      "mean_damage_pp": 3.5185182094573975,
+      "mean_auc": 0.45370298624038696,
+      "meaningful_damage": 2,
+      "recovered_to99": 5,
+      "mean_recovery_steps_all": 12,
+      "median_damage_pp": 1.3888895511627197
+    },
+    {
+      "seed": 0,
+      "wd": 1.0,
+      "dose": 90,
+      "mean_damage_pp": 4.444442987442017,
+      "mean_auc": 0.4074069857597351,
+      "meaningful_damage": 5,
+      "recovered_to99": 5,
+      "mean_recovery_steps_all": 16,
+      "median_damage_pp": 3.7037014961242676
+    },
+    {
+      "seed": 0,
+      "wd": 3.0,
+      "dose": 30,
+      "mean_damage_pp": 0.0,
+      "mean_auc": 0.0,
+      "meaningful_damage": 0,
+      "recovered_to99": 5,
+      "mean_recovery_steps_all": 0,
+      "median_damage_pp": 0.0
+    },
+    {
+      "seed": 0,
+      "wd": 3.0,
+      "dose": 60,
+      "mean_damage_pp": 0.0,
+      "mean_auc": 0.0,
+      "meaningful_damage": 0,
+      "recovered_to99": 5,
+      "mean_recovery_steps_all": 0,
+      "median_damage_pp": 0.0
+    },
+    {
+      "seed": 0,
+      "wd": 3.0,
+      "dose": 90,
+      "mean_damage_pp": 0.5555558204650879,
+      "mean_auc": 0.037037014961242676,
+      "meaningful_damage": 0,
+      "recovered_to99": 5,
+      "mean_recovery_steps_all": 2,
+      "median_damage_pp": 0.46296119689941406
+    },
+    {
+      "seed": 1,
+      "wd": 1.0,
+      "dose": 30,
+      "mean_damage_pp": 0.18518567085266113,
+      "mean_auc": 0.009259283542633057,
+      "meaningful_damage": 0,
+      "recovered_to99": 5,
+      "mean_recovery_steps_all": 0,
+      "median_damage_pp": 0.0
+    },
+    {
+      "seed": 1,
+      "wd": 1.0,
+      "dose": 60,
+      "mean_damage_pp": 1.3888895511627197,
+      "mean_auc": 0.3009255528450012,
+      "meaningful_damage": 1,
+      "recovered_to99": 5,
+      "mean_recovery_steps_all": 8,
+      "median_damage_pp": 0.9259283542633057
+    },
+    {
+      "seed": 1,
+      "wd": 1.0,
+      "dose": 90,
+      "mean_damage_pp": 9.07407522201538,
+      "mean_auc": 2.027774214744568,
+      "meaningful_damage": 5,
+      "recovered_to99": 5,
+      "mean_recovery_steps_all": 28,
+      "median_damage_pp": 8.33333134651184
+    },
+    {
+      "seed": 1,
+      "wd": 3.0,
+      "dose": 30,
+      "mean_damage_pp": 0.0,
+      "mean_auc": 0.0,
+      "meaningful_damage": 0,
+      "recovered_to99": 5,
+      "mean_recovery_steps_all": 0,
+      "median_damage_pp": 0.0
+    },
+    {
+      "seed": 1,
+      "wd": 3.0,
+      "dose": 60,
+      "mean_damage_pp": 0.0,
+      "mean_auc": 0.0,
+      "meaningful_damage": 0,
+      "recovered_to99": 5,
+      "mean_recovery_steps_all": 0,
+      "median_damage_pp": 0.0
+    },
+    {
+      "seed": 1,
+      "wd": 3.0,
+      "dose": 90,
+      "mean_damage_pp": 0.09259223937988281,
+      "mean_auc": 0.004629611968994141,
+      "meaningful_damage": 0,
+      "recovered_to99": 5,
+      "mean_recovery_steps_all": 0,
+      "median_damage_pp": 0.0
+    },
+    {
+      "seed": 2,
+      "wd": 1.0,
+      "dose": 30,
+      "mean_damage_pp": 0.0,
+      "mean_auc": 0.0,
+      "meaningful_damage": 0,
+      "recovered_to99": 5,
+      "mean_recovery_steps_all": 0,
+      "median_damage_pp": 0.0
+    },
+    {
+      "seed": 2,
+      "wd": 1.0,
+      "dose": 60,
+      "mean_damage_pp": 1.3888895511627197,
+      "mean_auc": 0.42129606008529663,
+      "meaningful_damage": 1,
+      "recovered_to99": 5,
+      "mean_recovery_steps_all": 8,
+      "median_damage_pp": 1.3888895511627197
+    },
+    {
+      "seed": 2,
+      "wd": 1.0,
+      "dose": 90,
+      "mean_damage_pp": 6.0185182094573975,
+      "mean_auc": 0.6805551648139954,
+      "meaningful_damage": 5,
+      "recovered_to99": 5,
+      "mean_recovery_steps_all": 16,
+      "median_damage_pp": 5.555558204650879
+    },
+    {
+      "seed": 2,
+      "wd": 3.0,
+      "dose": 30,
+      "mean_damage_pp": 0.0,
+      "mean_auc": 0.0,
+      "meaningful_damage": 0,
+      "recovered_to99": 5,
+      "mean_recovery_steps_all": 0,
+      "median_damage_pp": 0.0
+    },
+    {
+      "seed": 2,
+      "wd": 3.0,
+      "dose": 60,
+      "mean_damage_pp": 0.0,
+      "mean_auc": 0.0,
+      "meaningful_damage": 0,
+      "recovered_to99": 5,
+      "mean_recovery_steps_all": 0,
+      "median_damage_pp": 0.0
+    },
+    {
+      "seed": 2,
+      "wd": 3.0,
+      "dose": 90,
+      "mean_damage_pp": 0.6481480598449707,
+      "mean_auc": 0.032407402992248535,
+      "meaningful_damage": 0,
+      "recovered_to99": 5,
+      "mean_recovery_steps_all": 4,
+      "median_damage_pp": 0.46296119689941406
+    }
+  ],
+  "paired_seed_differences": [
+    {
+      "seed": 0,
+      "dose": 30,
+      "damage_gap_wd1_minus_wd3_pp": 0.09259223937988281,
+      "auc_gap_wd1_minus_wd3": 0.004629611968994141
+    },
+    {
+      "seed": 0,
+      "dose": 60,
+      "damage_gap_wd1_minus_wd3_pp": 3.5185182094573975,
+      "auc_gap_wd1_minus_wd3": 0.45370298624038696
+    },
+    {
+      "seed": 0,
+      "dose": 90,
+      "damage_gap_wd1_minus_wd3_pp": 3.8888871669769287,
+      "auc_gap_wd1_minus_wd3": 0.37036997079849243
+    },
+    {
+      "seed": 1,
+      "dose": 30,
+      "damage_gap_wd1_minus_wd3_pp": 0.18518567085266113,
+      "auc_gap_wd1_minus_wd3": 0.009259283542633057
+    },
+    {
+      "seed": 1,
+      "dose": 60,
+      "damage_gap_wd1_minus_wd3_pp": 1.3888895511627197,
+      "auc_gap_wd1_minus_wd3": 0.3009255528450012
+    },
+    {
+      "seed": 1,
+      "dose": 90,
+      "damage_gap_wd1_minus_wd3_pp": 8.981482982635498,
+      "auc_gap_wd1_minus_wd3": 2.0231446027755737
+    },
+    {
+      "seed": 2,
+      "dose": 30,
+      "damage_gap_wd1_minus_wd3_pp": 0.0,
+      "auc_gap_wd1_minus_wd3": 0.0
+    },
+    {
+      "seed": 2,
+      "dose": 60,
+      "damage_gap_wd1_minus_wd3_pp": 1.3888895511627197,
+      "auc_gap_wd1_minus_wd3": 0.42129606008529663
+    },
+    {
+      "seed": 2,
+      "dose": 90,
+      "damage_gap_wd1_minus_wd3_pp": 5.370370149612427,
+      "auc_gap_wd1_minus_wd3": 0.6481477618217468
+    }
+  ],
+  "by_dose": {
+    "30": {
+      "mean_paired_damage_gap_pp": 0.09259263674418132,
+      "per_seed_damage_gap_pp": [
+        0.093,
+        0.185,
+        0.0
+      ],
+      "mean_paired_auc_gap": 0.0046296318372090655,
+      "per_seed_auc_gap": [
+        0.005,
+        0.009,
+        0.0
+      ]
+    },
+    "60": {
+      "mean_paired_damage_gap_pp": 2.098765770594279,
+      "per_seed_damage_gap_pp": [
+        3.519,
+        1.389,
+        1.389
+      ],
+      "mean_paired_auc_gap": 0.39197486639022827,
+      "per_seed_auc_gap": [
+        0.454,
+        0.301,
+        0.421
+      ]
+    },
+    "90": {
+      "mean_paired_damage_gap_pp": 6.080246766408284,
+      "per_seed_damage_gap_pp": [
+        3.889,
+        8.981,
+        5.37
+      ],
+      "mean_paired_auc_gap": 1.0138874451319377,
+      "per_seed_auc_gap": [
+        0.37,
+        2.023,
+        0.648
+      ]
+    }
+  }
+}

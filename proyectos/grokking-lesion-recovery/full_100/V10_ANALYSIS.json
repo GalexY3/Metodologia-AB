@@ -1,0 +1,767 @@
+{
+  "audit": {
+    "status": "PASS",
+    "n_lesions": 150,
+    "n_independent_seed_pairs": 5,
+    "n_mask_pairs": 75,
+    "issues": [],
+    "status_claim": "not a causal estimate of grokking: L1 differs"
+  },
+  "by_dose": {
+    "30": {
+      "means": {
+        "A_initial_damage_pp": 2.184000015258789,
+        "B_initial_damage_pp": 8.444000244140625,
+        "A_auc": 1.4752000570297241,
+        "B_auc": 3.690000224113464
+      },
+      "network_paired_damage_pp": [
+        -9.36000108718872,
+        -2.6600003242492676,
+        -0.39999961853027344,
+        -4.37999963760376,
+        -14.500000476837158
+      ],
+      "network_paired_auc": [
+        -3.4789991974830627,
+        -0.7380003929138184,
+        -3.022999882698059,
+        -3.1230000257492065,
+        -0.7110013365745544
+      ],
+      "total_masks_damaged_both": 2,
+      "paired_norm_auc_diffs_if_both_damaged": [
+        -29.097744883188355,
+        272.7922286927757
+      ]
+    },
+    "90": {
+      "means": {
+        "A_initial_damage_pp": 8.556000232696533,
+        "B_initial_damage_pp": 27.979999780654907,
+        "A_auc": 5.1033999681472775,
+        "B_auc": 21.344600105285643
+      },
+      "network_paired_damage_pp": [
+        -22.260000705718994,
+        -26.15999937057495,
+        -18.53999972343445,
+        -18.33999991416931,
+        -11.819998025894165
+      ],
+      "network_paired_auc": [
+        -19.960000038146973,
+        -30.21400010585785,
+        -1.9829989075660706,
+        -15.583000123500824,
+        -13.466001510620117
+      ],
+      "total_masks_damaged_both": 14,
+      "paired_norm_auc_diffs_if_both_damaged": [
+        -47.61710779387138,
+        16.480472913386702,
+        55.67446197552647,
+        22.60034392834224,
+        -36.605639411471806
+      ]
+    },
+    "150": {
+      "means": {
+        "A_initial_damage_pp": 13.508000135421753,
+        "B_initial_damage_pp": 34.727999567985535,
+        "A_auc": 13.140399932861328,
+        "B_auc": 53.57400022149086
+      },
+      "network_paired_damage_pp": [
+        -26.859999895095825,
+        -27.21999943256378,
+        -19.65999960899353,
+        -16.759999990463257,
+        -15.599998235702515
+      ],
+      "network_paired_auc": [
+        -46.09100008010864,
+        -35.225000470876694,
+        -42.96499979496002,
+        -47.3089998960495,
+        -30.5780012011528
+      ],
+      "total_masks_damaged_both": 15,
+      "paired_norm_auc_diffs_if_both_damaged": [
+        2.1243143817400156,
+        35.39697699837172,
+        -139.35051821241927,
+        -72.81739700736793,
+        -102.95243571560056
+      ]
+    }
+  },
+  "by_network": [
+    {
+      "seed": 0,
+      "lambda": 1e-05,
+      "group": "grok",
+      "dose": 30,
+      "mean_initial_damage_pp": 0.0,
+      "median_initial_damage_pp": 0.0,
+      "mean_auc": 0.0,
+      "mean_normalized_auc_if_damage": null,
+      "n_meaningful_damage": 0,
+      "n_recovered_meaningful": 0,
+      "recovery_steps_meaningful": [],
+      "mean_end_val": 1.0
+    },
+    {
+      "seed": 0,
+      "lambda": 1e-05,
+      "group": "grok",
+      "dose": 90,
+      "mean_initial_damage_pp": 2.6600003242492676,
+      "median_initial_damage_pp": 0.0,
+      "mean_auc": 0.15299999713897705,
+      "mean_normalized_auc_if_damage": 5.751878890547063,
+      "n_meaningful_damage": 1,
+      "n_recovered_meaningful": 1,
+      "recovery_steps_meaningful": [
+        10
+      ],
+      "mean_end_val": 1.0
+    },
+    {
+      "seed": 0,
+      "lambda": 1e-05,
+      "group": "grok",
+      "dose": 150,
+      "mean_initial_damage_pp": 8.980000019073486,
+      "median_initial_damage_pp": 11.19999885559082,
+      "mean_auc": 14.138999700546265,
+      "mean_normalized_auc_if_damage": 166.8303605475162,
+      "n_meaningful_damage": 4,
+      "n_recovered_meaningful": 4,
+      "recovery_steps_meaningful": [
+        260,
+        280,
+        10,
+        280
+      ],
+      "mean_end_val": 1.0
+    },
+    {
+      "seed": 0,
+      "lambda": 0.001,
+      "group": "continuous",
+      "dose": 30,
+      "mean_initial_damage_pp": 9.36000108718872,
+      "median_initial_damage_pp": 0.0,
+      "mean_auc": 3.4789991974830627,
+      "mean_normalized_auc_if_damage": 25.957293167754063,
+      "n_meaningful_damage": 2,
+      "n_recovered_meaningful": 2,
+      "recovery_steps_meaningful": [
+        10,
+        130
+      ],
+      "mean_end_val": 0.996999990940094
+    },
+    {
+      "seed": 0,
+      "lambda": 0.001,
+      "group": "continuous",
+      "dose": 90,
+      "mean_initial_damage_pp": 24.92000102996826,
+      "median_initial_damage_pp": 13.80000114440918,
+      "mean_auc": 20.11300003528595,
+      "mean_normalized_auc_if_damage": 64.69884408968814,
+      "n_meaningful_damage": 5,
+      "n_recovered_meaningful": 5,
+      "recovery_steps_meaningful": [
+        10,
+        10,
+        180,
+        200,
+        290
+      ],
+      "mean_end_val": 0.9986000061035156
+    },
+    {
+      "seed": 0,
+      "lambda": 0.001,
+      "group": "continuous",
+      "dose": 150,
+      "mean_initial_damage_pp": 35.83999991416931,
+      "median_initial_damage_pp": 40.39999842643738,
+      "mean_auc": 60.22999978065491,
+      "mean_normalized_auc_if_damage": 159.3542691014426,
+      "n_meaningful_damage": 5,
+      "n_recovered_meaningful": 1,
+      "recovery_steps_meaningful": [
+        null,
+        null,
+        null,
+        10,
+        null
+      ],
+      "mean_end_val": 0.9484000086784363
+    },
+    {
+      "seed": 1,
+      "lambda": 1e-05,
+      "group": "grok",
+      "dose": 30,
+      "mean_initial_damage_pp": 2.239999771118164,
+      "median_initial_damage_pp": 0.0,
+      "mean_auc": 0.1119999885559082,
+      "mean_normalized_auc_if_damage": 5.0,
+      "n_meaningful_damage": 1,
+      "n_recovered_meaningful": 1,
+      "recovery_steps_meaningful": [
+        10
+      ],
+      "mean_end_val": 1.0
+    },
+    {
+      "seed": 1,
+      "lambda": 1e-05,
+      "group": "grok",
+      "dose": 90,
+      "mean_initial_damage_pp": 11.640000343322754,
+      "median_initial_damage_pp": 11.19999885559082,
+      "mean_auc": 7.962999641895294,
+      "mean_normalized_auc_if_damage": 65.8097259179086,
+      "n_meaningful_damage": 4,
+      "n_recovered_meaningful": 4,
+      "recovery_steps_meaningful": [
+        140,
+        230,
+        20,
+        10
+      ],
+      "mean_end_val": 0.9998000025749206
+    },
+    {
+      "seed": 1,
+      "lambda": 1e-05,
+      "group": "grok",
+      "dose": 150,
+      "mean_initial_damage_pp": 15.399999618530273,
+      "median_initial_damage_pp": 24.500000476837158,
+      "mean_auc": 20.68999981880188,
+      "mean_normalized_auc_if_damage": 136.6714825828546,
+      "n_meaningful_damage": 3,
+      "n_recovered_meaningful": 2,
+      "recovery_steps_meaningful": [
+        null,
+        170,
+        270
+      ],
+      "mean_end_val": 0.99760000705719
+    },
+    {
+      "seed": 1,
+      "lambda": 0.001,
+      "group": "continuous",
+      "dose": 30,
+      "mean_initial_damage_pp": 4.900000095367432,
+      "median_initial_damage_pp": 0.0,
+      "mean_auc": 0.8500003814697266,
+      "mean_normalized_auc_if_damage": 15.932800632891047,
+      "n_meaningful_damage": 2,
+      "n_recovered_meaningful": 2,
+      "recovery_steps_meaningful": [
+        90,
+        10
+      ],
+      "mean_end_val": 0.9938000082969666
+    },
+    {
+      "seed": 1,
+      "lambda": 0.001,
+      "group": "continuous",
+      "dose": 90,
+      "mean_initial_damage_pp": 37.799999713897705,
+      "median_initial_damage_pp": 39.99999761581421,
+      "mean_auc": 38.17699974775314,
+      "mean_normalized_auc_if_damage": 82.3388797403222,
+      "n_meaningful_damage": 5,
+      "n_recovered_meaningful": 4,
+      "recovery_steps_meaningful": [
+        null,
+        240,
+        90,
+        90,
+        100
+      ],
+      "mean_end_val": 0.9509999990463257
+    },
+    {
+      "seed": 1,
+      "lambda": 0.001,
+      "group": "continuous",
+      "dose": 150,
+      "mean_initial_damage_pp": 42.619999051094055,
+      "median_initial_damage_pp": 50.40000081062317,
+      "mean_auc": 55.915000289678574,
+      "mean_normalized_auc_if_damage": 127.6135078588537,
+      "n_meaningful_damage": 5,
+      "n_recovered_meaningful": 4,
+      "recovery_steps_meaningful": [
+        380,
+        200,
+        260,
+        230,
+        null
+      ],
+      "mean_end_val": 0.9363999962806702
+    },
+    {
+      "seed": 2,
+      "lambda": 1e-05,
+      "group": "grok",
+      "dose": 30,
+      "mean_initial_damage_pp": 3.6800003051757812,
+      "median_initial_damage_pp": 0.0,
+      "mean_auc": 0.29500049352645874,
+      "mean_normalized_auc_if_damage": 8.7500032393826,
+      "n_meaningful_damage": 2,
+      "n_recovered_meaningful": 2,
+      "recovery_steps_meaningful": [
+        20,
+        20
+      ],
+      "mean_end_val": 1.0
+    },
+    {
+      "seed": 2,
+      "lambda": 1e-05,
+      "group": "grok",
+      "dose": 90,
+      "mean_initial_damage_pp": 5.199999809265137,
+      "median_initial_damage_pp": 0.0,
+      "mean_auc": 1.1190003752708435,
+      "mean_normalized_auc_if_damage": 21.875259364317696,
+      "n_meaningful_damage": 2,
+      "n_recovered_meaningful": 2,
+      "recovery_steps_meaningful": [
+        80,
+        20
+      ],
+      "mean_end_val": 1.0
+    },
+    {
+      "seed": 2,
+      "lambda": 1e-05,
+      "group": "grok",
+      "dose": 150,
+      "mean_initial_damage_pp": 17.87999987602234,
+      "median_initial_damage_pp": 25.999999046325684,
+      "mean_auc": 22.49500060081482,
+      "mean_normalized_auc_if_damage": 127.90693695367521,
+      "n_meaningful_damage": 3,
+      "n_recovered_meaningful": 3,
+      "recovery_steps_meaningful": [
+        230,
+        290,
+        10
+      ],
+      "mean_end_val": 1.0
+    },
+    {
+      "seed": 2,
+      "lambda": 0.001,
+      "group": "continuous",
+      "dose": 30,
+      "mean_initial_damage_pp": 4.079999923706055,
+      "median_initial_damage_pp": 0.0,
+      "mean_auc": 3.318000376224518,
+      "mean_normalized_auc_if_damage": 79.39248677400133,
+      "n_meaningful_damage": 2,
+      "n_recovered_meaningful": 2,
+      "recovery_steps_meaningful": [
+        280,
+        10
+      ],
+      "mean_end_val": 0.9849999904632568
+    },
+    {
+      "seed": 2,
+      "lambda": 0.001,
+      "group": "continuous",
+      "dose": 90,
+      "mean_initial_damage_pp": 23.739999532699585,
+      "median_initial_damage_pp": 13.999998569488525,
+      "mean_auc": 3.101999282836914,
+      "mean_normalized_auc_if_damage": -10.800843661055932,
+      "n_meaningful_damage": 5,
+      "n_recovered_meaningful": 5,
+      "recovery_steps_meaningful": [
+        120,
+        10,
+        320,
+        10,
+        10
+      ],
+      "mean_end_val": 1.0
+    },
+    {
+      "seed": 2,
+      "lambda": 0.001,
+      "group": "continuous",
+      "dose": 150,
+      "mean_initial_damage_pp": 37.53999948501587,
+      "median_initial_damage_pp": 49.19999837875366,
+      "mean_auc": 65.46000039577484,
+      "mean_normalized_auc_if_damage": 211.41341906659065,
+      "n_meaningful_damage": 5,
+      "n_recovered_meaningful": 0,
+      "recovery_steps_meaningful": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "mean_end_val": 0.9080000042915344
+    },
+    {
+      "seed": 3,
+      "lambda": 1e-05,
+      "group": "grok",
+      "dose": 30,
+      "mean_initial_damage_pp": 2.760000228881836,
+      "median_initial_damage_pp": 0.0,
+      "mean_auc": 0.13999998569488525,
+      "mean_normalized_auc_if_damage": 5.072462829164464,
+      "n_meaningful_damage": 1,
+      "n_recovered_meaningful": 1,
+      "recovery_steps_meaningful": [
+        10
+      ],
+      "mean_end_val": 1.0
+    },
+    {
+      "seed": 3,
+      "lambda": 1e-05,
+      "group": "grok",
+      "dose": 90,
+      "mean_initial_damage_pp": 12.619999647140503,
+      "median_initial_damage_pp": 11.19999885559082,
+      "mean_auc": 11.196999728679657,
+      "mean_normalized_auc_if_damage": 119.00634579913903,
+      "n_meaningful_damage": 4,
+      "n_recovered_meaningful": 4,
+      "recovery_steps_meaningful": [
+        210,
+        190,
+        120,
+        20
+      ],
+      "mean_end_val": 1.0
+    },
+    {
+      "seed": 3,
+      "lambda": 1e-05,
+      "group": "grok",
+      "dose": 150,
+      "mean_initial_damage_pp": 18.12000036239624,
+      "median_initial_damage_pp": 23.19999933242798,
+      "mean_auc": 7.8119999170303345,
+      "mean_normalized_auc_if_damage": 41.966938655670255,
+      "n_meaningful_damage": 4,
+      "n_recovered_meaningful": 4,
+      "recovery_steps_meaningful": [
+        280,
+        20,
+        10,
+        10
+      ],
+      "mean_end_val": 1.0
+    },
+    {
+      "seed": 3,
+      "lambda": 0.001,
+      "group": "continuous",
+      "dose": 30,
+      "mean_initial_damage_pp": 7.139999866485596,
+      "median_initial_damage_pp": 0.0,
+      "mean_auc": 3.263000011444092,
+      "mean_normalized_auc_if_damage": 69.86607846100792,
+      "n_meaningful_damage": 2,
+      "n_recovered_meaningful": 2,
+      "recovery_steps_meaningful": [
+        190,
+        10
+      ],
+      "mean_end_val": 1.0
+    },
+    {
+      "seed": 3,
+      "lambda": 0.001,
+      "group": "continuous",
+      "dose": 90,
+      "mean_initial_damage_pp": 30.959999561309814,
+      "median_initial_damage_pp": 39.99999761581421,
+      "mean_auc": 26.77999985218048,
+      "mean_normalized_auc_if_damage": 86.50161166363408,
+      "n_meaningful_damage": 5,
+      "n_recovered_meaningful": 5,
+      "recovery_steps_meaningful": [
+        130,
+        260,
+        100,
+        110,
+        200
+      ],
+      "mean_end_val": 1.0
+    },
+    {
+      "seed": 3,
+      "lambda": 0.001,
+      "group": "continuous",
+      "dose": 150,
+      "mean_initial_damage_pp": 34.8800003528595,
+      "median_initial_damage_pp": 40.6000018119812,
+      "mean_auc": 55.120999813079834,
+      "mean_normalized_auc_if_damage": 170.89998771534582,
+      "n_meaningful_damage": 4,
+      "n_recovered_meaningful": 2,
+      "recovery_steps_meaningful": [
+        null,
+        260,
+        110,
+        null
+      ],
+      "mean_end_val": 0.9642000079154969
+    },
+    {
+      "seed": 4,
+      "lambda": 1e-05,
+      "group": "grok",
+      "dose": 30,
+      "mean_initial_damage_pp": 2.239999771118164,
+      "median_initial_damage_pp": 0.0,
+      "mean_auc": 6.828999817371368,
+      "mean_normalized_auc_if_damage": 304.8660944265394,
+      "n_meaningful_damage": 1,
+      "n_recovered_meaningful": 1,
+      "recovery_steps_meaningful": [
+        270
+      ],
+      "mean_end_val": 0.9998000025749206
+    },
+    {
+      "seed": 4,
+      "lambda": 1e-05,
+      "group": "grok",
+      "dose": 90,
+      "mean_initial_damage_pp": 10.660001039505005,
+      "median_initial_damage_pp": 13.300001621246338,
+      "mean_auc": 5.085000097751617,
+      "mean_normalized_auc_if_damage": 62.04260013653794,
+      "n_meaningful_damage": 3,
+      "n_recovered_meaningful": 3,
+      "recovery_steps_meaningful": [
+        140,
+        10,
+        20
+      ],
+      "mean_end_val": 1.0
+    },
+    {
+      "seed": 4,
+      "lambda": 1e-05,
+      "group": "grok",
+      "dose": 150,
+      "mean_initial_damage_pp": 7.160000801086426,
+      "median_initial_damage_pp": 0.0,
+      "mean_auc": 0.5659996271133423,
+      "mean_normalized_auc_if_damage": 7.48019529911778,
+      "n_meaningful_damage": 2,
+      "n_recovered_meaningful": 2,
+      "recovery_steps_meaningful": [
+        30,
+        20
+      ],
+      "mean_end_val": 1.0
+    },
+    {
+      "seed": 4,
+      "lambda": 0.001,
+      "group": "continuous",
+      "dose": 30,
+      "mean_initial_damage_pp": 16.740000247955322,
+      "median_initial_damage_pp": 13.300001621246338,
+      "mean_auc": 7.540001153945923,
+      "mean_normalized_auc_if_damage": 58.59314889977484,
+      "n_meaningful_damage": 3,
+      "n_recovered_meaningful": 3,
+      "recovery_steps_meaningful": [
+        110,
+        130,
+        120
+      ],
+      "mean_end_val": 0.9990000009536744
+    },
+    {
+      "seed": 4,
+      "lambda": 0.001,
+      "group": "continuous",
+      "dose": 90,
+      "mean_initial_damage_pp": 22.47999906539917,
+      "median_initial_damage_pp": 25.099998712539673,
+      "mean_auc": 18.551001608371735,
+      "mean_normalized_auc_if_damage": 96.33826105864625,
+      "n_meaningful_damage": 5,
+      "n_recovered_meaningful": 5,
+      "recovery_steps_meaningful": [
+        120,
+        210,
+        10,
+        310,
+        10
+      ],
+      "mean_end_val": 0.9998000025749206
+    },
+    {
+      "seed": 4,
+      "lambda": 0.001,
+      "group": "continuous",
+      "dose": 150,
+      "mean_initial_damage_pp": 22.75999903678894,
+      "median_initial_damage_pp": 25.099998712539673,
+      "mean_auc": 31.144000828266144,
+      "mean_normalized_auc_if_damage": 143.99990882204733,
+      "n_meaningful_damage": 5,
+      "n_recovered_meaningful": 5,
+      "recovery_steps_meaningful": [
+        380,
+        130,
+        220,
+        330,
+        40
+      ],
+      "mean_end_val": 0.9983999967575073
+    }
+  ],
+  "paired_seed": [
+    {
+      "seed": 0,
+      "dose": 30,
+      "A_minus_B_damage_pp": -9.36000108718872,
+      "A_minus_B_auc": -3.4789991974830627,
+      "both_meaningfully_damaged_masks": 0,
+      "normalized_auc_A_minus_B_both_damaged": null
+    },
+    {
+      "seed": 0,
+      "dose": 90,
+      "A_minus_B_damage_pp": -22.260000705718994,
+      "A_minus_B_auc": -19.960000038146973,
+      "both_meaningfully_damaged_masks": 1,
+      "normalized_auc_A_minus_B_both_damaged": -47.61710779387138
+    },
+    {
+      "seed": 0,
+      "dose": 150,
+      "A_minus_B_damage_pp": -26.859999895095825,
+      "A_minus_B_auc": -46.09100008010864,
+      "both_meaningfully_damaged_masks": 4,
+      "normalized_auc_A_minus_B_both_damaged": 2.1243143817400156
+    },
+    {
+      "seed": 1,
+      "dose": 30,
+      "A_minus_B_damage_pp": -2.6600003242492676,
+      "A_minus_B_auc": -0.7380003929138184,
+      "both_meaningfully_damaged_masks": 1,
+      "normalized_auc_A_minus_B_both_damaged": -29.097744883188355
+    },
+    {
+      "seed": 1,
+      "dose": 90,
+      "A_minus_B_damage_pp": -26.15999937057495,
+      "A_minus_B_auc": -30.21400010585785,
+      "both_meaningfully_damaged_masks": 4,
+      "normalized_auc_A_minus_B_both_damaged": 16.480472913386702
+    },
+    {
+      "seed": 1,
+      "dose": 150,
+      "A_minus_B_damage_pp": -27.21999943256378,
+      "A_minus_B_auc": -35.225000470876694,
+      "both_meaningfully_damaged_masks": 3,
+      "normalized_auc_A_minus_B_both_damaged": 35.39697699837172
+    },
+    {
+      "seed": 2,
+      "dose": 30,
+      "A_minus_B_damage_pp": -0.39999961853027344,
+      "A_minus_B_auc": -3.022999882698059,
+      "both_meaningfully_damaged_masks": 0,
+      "normalized_auc_A_minus_B_both_damaged": null
+    },
+    {
+      "seed": 2,
+      "dose": 90,
+      "A_minus_B_damage_pp": -18.53999972343445,
+      "A_minus_B_auc": -1.9829989075660706,
+      "both_meaningfully_damaged_masks": 2,
+      "normalized_auc_A_minus_B_both_damaged": 55.67446197552647
+    },
+    {
+      "seed": 2,
+      "dose": 150,
+      "A_minus_B_damage_pp": -19.65999960899353,
+      "A_minus_B_auc": -42.96499979496002,
+      "both_meaningfully_damaged_masks": 3,
+      "normalized_auc_A_minus_B_both_damaged": -139.35051821241927
+    },
+    {
+      "seed": 3,
+      "dose": 30,
+      "A_minus_B_damage_pp": -4.37999963760376,
+      "A_minus_B_auc": -3.1230000257492065,
+      "both_meaningfully_damaged_masks": 0,
+      "normalized_auc_A_minus_B_both_damaged": null
+    },
+    {
+      "seed": 3,
+      "dose": 90,
+      "A_minus_B_damage_pp": -18.33999991416931,
+      "A_minus_B_auc": -15.583000123500824,
+      "both_meaningfully_damaged_masks": 4,
+      "normalized_auc_A_minus_B_both_damaged": 22.60034392834224
+    },
+    {
+      "seed": 3,
+      "dose": 150,
+      "A_minus_B_damage_pp": -16.759999990463257,
+      "A_minus_B_auc": -47.3089998960495,
+      "both_meaningfully_damaged_masks": 3,
+      "normalized_auc_A_minus_B_both_damaged": -72.81739700736793
+    },
+    {
+      "seed": 4,
+      "dose": 30,
+      "A_minus_B_damage_pp": -14.500000476837158,
+      "A_minus_B_auc": -0.7110013365745544,
+      "both_meaningfully_damaged_masks": 1,
+      "normalized_auc_A_minus_B_both_damaged": 272.7922286927757
+    },
+    {
+      "seed": 4,
+      "dose": 90,
+      "A_minus_B_damage_pp": -11.819998025894165,
+      "A_minus_B_auc": -13.466001510620117,
+      "both_meaningfully_damaged_masks": 3,
+      "normalized_auc_A_minus_B_both_damaged": -36.605639411471806
+    },
+    {
+      "seed": 4,
+      "dose": 150,
+      "A_minus_B_damage_pp": -15.599998235702515,
+      "A_minus_B_auc": -30.5780012011528,
+      "both_meaningfully_damaged_masks": 2,
+      "normalized_auc_A_minus_B_both_damaged": -102.95243571560056
+    }
+  ]
+}

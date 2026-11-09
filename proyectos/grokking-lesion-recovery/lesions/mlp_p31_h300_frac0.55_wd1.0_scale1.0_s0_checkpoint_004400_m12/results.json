@@ -1,0 +1,115 @@
+{
+  "checkpoint": "C:\\Programaci\u00f3n\\grokking_lesion_20261109\\runs\\mlp_p31_h300_frac0.55_wd1.0_scale1.0_s0\\checkpoint_004400.pt",
+  "checkpoint_step": 4400,
+  "base": {
+    "step": 0,
+    "train_acc": 1.0,
+    "train_loss": 0.0023693221155554056,
+    "test_acc": 0.6050808429718018,
+    "test_loss": 1.3583589792251587,
+    "weight_l2": 35.94320297241211
+  },
+  "mask_seed": 12,
+  "indices": [
+    0,
+    17,
+    31,
+    32,
+    45,
+    49,
+    52,
+    55,
+    65,
+    68,
+    76,
+    91,
+    97,
+    104,
+    125,
+    135,
+    138,
+    159,
+    162,
+    166,
+    189,
+    190,
+    213,
+    228,
+    248,
+    258,
+    259,
+    265,
+    269,
+    294
+  ],
+  "repair_steps": 150,
+  "threshold": 0.5748268008232117,
+  "arms": {
+    "control": {
+      "initial": {
+        "arm": "control",
+        "step": 0,
+        "train_acc": 1.0,
+        "train_loss": 0.0023693221155554056,
+        "test_acc": 0.6050808429718018,
+        "test_loss": 1.3583589792251587,
+        "weight_l2": 35.94320297241211
+      },
+      "final": {
+        "arm": "control",
+        "step": 150,
+        "train_acc": 1.0,
+        "train_loss": 0.00219559739343822,
+        "test_acc": 0.6558891534805298,
+        "test_loss": 1.2189871072769165,
+        "weight_l2": 35.939762115478516
+      },
+      "recovery_step": 0,
+      "initial_damage_test_pp": 0.0
+    },
+    "ablate": {
+      "initial": {
+        "arm": "ablate",
+        "step": 0,
+        "train_acc": 1.0,
+        "train_loss": 0.0191948339343071,
+        "test_acc": 0.40415704250335693,
+        "test_loss": 1.8684828281402588,
+        "weight_l2": 35.94320297241211
+      },
+      "final": {
+        "arm": "ablate",
+        "step": 150,
+        "train_acc": 1.0,
+        "train_loss": 0.0023114867508411407,
+        "test_acc": 0.6096997857093811,
+        "test_loss": 1.3285366296768188,
+        "weight_l2": 37.032958984375
+      },
+      "recovery_step": 90,
+      "initial_damage_test_pp": 20.092380046844482
+    },
+    "reset": {
+      "initial": {
+        "arm": "reset",
+        "step": 0,
+        "train_acc": 1.0,
+        "train_loss": 0.022323286160826683,
+        "test_acc": 0.4157043993473053,
+        "test_loss": 1.951295256614685,
+        "weight_l2": 35.783382415771484
+      },
+      "final": {
+        "arm": "reset",
+        "step": 150,
+        "train_acc": 1.0,
+        "train_loss": 0.0020390425343066454,
+        "test_acc": 0.517320990562439,
+        "test_loss": 1.5755161046981812,
+        "weight_l2": 37.00464630126953
+      },
+      "recovery_step": null,
+      "initial_damage_test_pp": 18.937644362449646
+    }
+  }
+}

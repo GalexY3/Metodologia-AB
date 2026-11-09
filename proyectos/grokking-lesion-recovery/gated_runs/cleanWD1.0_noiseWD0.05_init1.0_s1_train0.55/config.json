@@ -1,0 +1,25 @@
+{
+  "p": 31,
+  "noise_total": 640,
+  "train_frac": 0.55,
+  "valid_frac": 0.2,
+  "split_seed": 2731,
+  "seed": 1,
+  "dim": 32,
+  "branch_hidden": 150,
+  "init_scale": 1.0,
+  "wd_clean": 1.0,
+  "wd_noise": 0.05,
+  "lr": 0.001,
+  "steps": 22000,
+  "record_every": 200,
+  "checkpoint_every": 3000,
+  "data_sha256": "d0f313694787c85d2acf1ff2a1f8c267d7a89811423ee529b30384d729c55259",
+  "runtime": {
+    "torch": "2.13.0+cpu",
+    "python": "3.14.3",
+    "ntrain": 880,
+    "nval": 320,
+    "ntest": 401
+  }
+}

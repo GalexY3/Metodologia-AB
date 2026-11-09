@@ -1,0 +1,22 @@
+{
+  "split_seed": 20261109,
+  "ntrain": 800,
+  "nval": 1000,
+  "ntest": 2000,
+  "seed": 0,
+  "width": 300,
+  "l1": 1e-06,
+  "lr": 0.001,
+  "steps": 8000,
+  "record_every": 100,
+  "checkpoint_every": 1000,
+  "torch": "2.13.0+cpu",
+  "python": "3.14.3",
+  "x_sha256": "3649d0c921b52e46c8a7cf6520ee28caf974fa1dcbbd40fc0fc9c13908953da4",
+  "train_y_sha256": "ee6339ee038e04ab477a4e19dba39222a7a382578b2d87339c629dc22519b042",
+  "sample_counts": {
+    "train": 800,
+    "val": 1000,
+    "test": 2000
+  }
+}

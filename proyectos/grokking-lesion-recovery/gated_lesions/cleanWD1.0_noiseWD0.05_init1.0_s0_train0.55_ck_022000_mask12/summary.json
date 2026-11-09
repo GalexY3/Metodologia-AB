@@ -1,0 +1,52 @@
+{
+  "checkpoint": "C:\\Programaci\u00f3n\\grokking_lesion_20261109\\gated_runs\\cleanWD1.0_noiseWD0.05_init1.0_s0_train0.55\\ck_022000.pt",
+  "checkpoint_step": 22000,
+  "mask_seed": 12,
+  "masked_clean": [
+    9,
+    25,
+    26,
+    28,
+    33,
+    34,
+    50,
+    70,
+    83,
+    99,
+    131,
+    134,
+    140,
+    143,
+    149
+  ],
+  "masked_noise": [
+    27,
+    31,
+    37,
+    40,
+    56,
+    62,
+    65,
+    80,
+    99,
+    101,
+    104,
+    116,
+    131,
+    141,
+    148
+  ],
+  "repair_optimizer": {
+    "type": "AdamW fresh",
+    "lr": 0.001,
+    "wd": 0.1
+  },
+  "baseline_validation": 0.612500011920929,
+  "initial_after_validation": 0.609375,
+  "initial_damage_pp": 0.3125011920928955,
+  "first_recovery_to_95pct_original_step": 0,
+  "final_lesion_val": 0.621874988079071,
+  "final_no_lesion_val": 0.612500011920929,
+  "integrated_control_minus_lesion_val_auc_step": -3.0624911189079285,
+  "initial_train_damage_pp": 0.0
+}

@@ -1,0 +1,11 @@
+# CURRENT — traspaso portátil de grokking y lesión neuronal
+
+**Fecha de captura:** 2026-11-09. **Estado:** V10B completo, V10C de igualación de lesión pendiente. **Autoridad científica**: la especificación del usuario es comparar igual capacidad final (ahora 100%) con historia de grokking frente a aprendizaje progresivo, para medir resistencia y reconstrucción. No confundir robustez con plasticidad.
+
+**Primero leer**: `README.md`, `full_100/PREREG_V10B.md`, `full_100/V10_ELIGIBILITY.json`, `full_100/V10_ANALYSIS.json`, `full_100/V10_UNIT_MECHANISM.json`, `full_100/PREREG_V10C.md`, `REPORT_V7.md`.
+
+**Hallazgos exploratorios**: V10B construyó 5 parejas de paridad 30bits (3 relevantes) con igual 100% train/val/test a paso8000. L1 grokking tardío λ=1e-5, L1 aprendizaje rápido λ=.001. Latencia fit→95% val: A 3100–4000 pasos; B 400–800 pasos. Lesiones: dosis30/90/150 de 300; 5 máscaras por pareja, 150 ensayos. Estado de auditoría local PASS. El grupo A pierde menos precisión tras lesión y presenta menor déficit acumulado, pero diferencias de magnitud de daño y L1 impiden conclusión causal sobre recuperación. Las sondas neuronales indican concentración funcional diferente, también susceptible a confusión por L1.
+
+**Siguiente tarea concreta:** ejecutar la sensibilidad V10C: seleccionar máscaras disjuntas bajo criterio PREVIO sobre daño validación (10–40 pp en ambos grupos con diferencia ≤5 pp, 150 unidades eliminadas); estudiar curvas de recuperación solo después de congelar el listado de máscaras, sin seleccionar por velocidad. Auditar pérdidas inicialmente equiparadas y corregir sesgos de selección; controlar características del daño. Es una prueba exploratoria, no confirmatoria. Requerirá más semillas e idealmente regularización idéntica con manipulación independiente de trayectoria. No presentar una ventaja de resistencia como recuperación más rápida.
+
+**Original local:** `C:\Programación\grokking_lesion_20261109`. Esta copia conserva scripts, datos sintéticos, informes, curvas y checkpoints finales, pero omite snapshots intermedios (ver ARCHIVE_MANIFEST.json). Todo código local de los experimentos anteriores está dentro de esta carpeta. No hay automatización residente configurada para correr entrenamientos entre chats.
