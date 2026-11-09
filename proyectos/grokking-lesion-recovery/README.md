@@ -73,3 +73,11 @@ python full_100/analyze_v10c.py
 Tras 4.000 actualizaciones de entrenamiento **con el mismo λ L1=0.0001** y rendimiento 100% en ambas historias, la ventaja de resistencia inicial (A−B=−11.16pp) se redujo casi a cero (−0.48pp) ante 90/300 neuronas eliminadas. En reconstrucción manteniendo la misma L1, las cinco parejas no mostraron una ventaja reproducible: 2 semillas favorecen a A, 3 a B; diferencia media de AUC A−B=−3.48, prueba exploratoria de inversión de signos p=0.6875. La evidencia disponible no acredita que el grokking, separadamente de la regularización, mejore la reparación. Las máscaras no son replicaciones independientes de entrenamiento.
 
 Se incluyen 10 checkpoints iniciales V10 paso5000 y los checkpoints V11 5000/7000/9000, así como las 200 curvas completas de reparación V11B/V11C. Los anteriores resultados positivos V10 permanecen documentados para comparación. No se ha demostrado equivalencia estadística ni una ausencia universal de dependencia de trayectoria.
+
+## V12 — réplica en GALEXY_TRAVEL
+
+El [informe científico V12](full_100/REPORT_V12.md) contiene dos gráficos, resultados completos y limitaciones. Se entrenaron diez pares nuevos sobre una partición independiente; cinco cumplieron todos los criterios de historia y capacidad antes de ser lesionados. La diferencia de robustez A−B disminuyó de −10,38 a −0,96 puntos porcentuales tras 4.000 actualizaciones finales con la misma L1=0,0001. La comparación posterior de reconstrucción con cien lesiones nuevas NO encontró una ventaja consistente del grupo tardío: dos de cinco semillas favorecieron a A y tres a B. Ni este resultado ni los pilotos previos identifican causalmente un efecto exclusivo del grokking.
+
+Evidencias: [selección](full_100/V12_GATES.json), [robustez](full_100/V12_ROBUSTNESS.json), [reparación](full_100/V12B_ANALYSIS.json), [test reservado](full_100/V12_TEST_AUDIT.json), [prerregistro V12](full_100/PREREG_V12.md) y [prerregistro de lesiones](full_100/PREREG_V12B.md). La carpeta V12 mantiene los checkpoints y curvas para reproducir los análisis.
+
+Para recomputar el análisis desde Windows, con Python y PyTorch/NumPy instalados, ejecutar full_100/v12_robustness.py, full_100/v12b_analysis.py y full_100/v12_make_report.py. Se puede verificar el manifiesto mediante SHA-256 byte a byte.

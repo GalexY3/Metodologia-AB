@@ -1,0 +1,21 @@
+{
+  "seed": 13,
+  "prior_lambda": 1e-05,
+  "split_seed": 20261110,
+  "ntrain": 500,
+  "nval": 1000,
+  "ntest_reserved": 2000,
+  "train_and_val_only": true,
+  "gate": {
+    "first_train99": 200,
+    "first_val95": 2900,
+    "lag": 2700,
+    "low_val_1000postfit": true,
+    "stable_last5": true,
+    "history_ok": true,
+    "eligible": true
+  },
+  "input_data_sha256": "9c4028f1ad40ea80738796571398259407ad2c148e5748bc5590178a5fc353f6",
+  "train_labels_sha256": "07d3b5fa588ea4fda5b7bc0e6f861577a5d1718936558fc6dd7c2e185c4d90ee",
+  "protocol": "PREREG_V12.md"
+}

@@ -1,0 +1,22 @@
+{
+  "source": "portable Git worktree on GALEXY_TRAVEL",
+  "base_upstream_commit": "898bca86f48bb42fae72f6c8ab7b577a68b9faee",
+  "git_eol_crlf_only_mismatches_corrected": 55,
+  "unexplained_mismatches": [],
+  "original_manifest_entries": 1079,
+  "policy": "new .gitattributes forces LF for text; *.pt binary",
+  "validation": {
+    "v12_robustness": "V12_ROBUSTNESS.json",
+    "v12b_repair": "V12B_ANALYSIS.json",
+    "test_sealed": "V12_TEST_AUDIT.json"
+  },
+  "v12_final_line_endings": {
+    "files_normalized_from_CRLF_to_LF": 1101,
+    "crlf_preserved_for_test_audit_hashes": [
+      "full_100/V12_GATES.json",
+      "full_100/V12_ROBUSTNESS.json"
+    ],
+    "source_recorded_sha256_preserved": true,
+    "rule": "Git eol=lf for text by default; eol=crlf for two frozen evidence JSON; pt binary"
+  }
+}

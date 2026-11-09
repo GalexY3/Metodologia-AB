@@ -1,0 +1,108 @@
+{
+  "audit": {
+    "status": "PASS",
+    "issues": [],
+    "n_network_pair_seeds": 5,
+    "n_lesions": 100,
+    "test_partition_not_used": true
+  },
+  "per_seed": [
+    {
+      "seed": 11,
+      "masks": 10,
+      "damage_A_pp": 26.919999718666077,
+      "damage_B_pp": 32.80000030994415,
+      "auc_A": 97.96050000190735,
+      "auc_B": 22.1099993288517,
+      "auc_A_minus_B": 75.85050067305565,
+      "masks_both_damaged_gt2pp": 8,
+      "normalized_auc_difference_if_both_damaged": 270.0913275826156,
+      "A_damaged_gt2pp": 8,
+      "B_damaged_gt2pp": 10,
+      "A_recovered_given_damage": 4,
+      "B_recovered_given_damage": 10
+    },
+    {
+      "seed": 12,
+      "masks": 10,
+      "damage_A_pp": 24.62000012397766,
+      "damage_B_pp": 32.74999976158142,
+      "auc_A": 6.973999857902527,
+      "auc_B": 15.778499960899353,
+      "auc_A_minus_B": -8.804500102996826,
+      "masks_both_damaged_gt2pp": 8,
+      "normalized_auc_difference_if_both_damaged": -25.042774517671273,
+      "A_damaged_gt2pp": 9,
+      "B_damaged_gt2pp": 9,
+      "A_recovered_given_damage": 9,
+      "B_recovered_given_damage": 9
+    },
+    {
+      "seed": 13,
+      "masks": 10,
+      "damage_A_pp": 20.25999903678894,
+      "damage_B_pp": 14.06999945640564,
+      "auc_A": 13.606000185012817,
+      "auc_B": 23.38549956679344,
+      "auc_A_minus_B": -9.779499381780624,
+      "masks_both_damaged_gt2pp": 5,
+      "normalized_auc_difference_if_both_damaged": -102.60196485442071,
+      "A_damaged_gt2pp": 8,
+      "B_damaged_gt2pp": 5,
+      "A_recovered_given_damage": 8,
+      "B_recovered_given_damage": 5
+    },
+    {
+      "seed": 14,
+      "masks": 10,
+      "damage_A_pp": 34.13000017404556,
+      "damage_B_pp": 28.799999356269836,
+      "auc_A": 28.237500086426735,
+      "auc_B": 13.568999528884888,
+      "auc_A_minus_B": 14.668500557541847,
+      "masks_both_damaged_gt2pp": 8,
+      "normalized_auc_difference_if_both_damaged": 71.35038060982149,
+      "A_damaged_gt2pp": 9,
+      "B_damaged_gt2pp": 8,
+      "A_recovered_given_damage": 9,
+      "B_recovered_given_damage": 8
+    },
+    {
+      "seed": 18,
+      "masks": 10,
+      "damage_A_pp": 25.149999856948853,
+      "damage_B_pp": 17.020000219345093,
+      "auc_A": 38.635999381542206,
+      "auc_B": 18.265499472618103,
+      "auc_A_minus_B": 20.370499908924103,
+      "masks_both_damaged_gt2pp": 4,
+      "normalized_auc_difference_if_both_damaged": -64.68175152658439,
+      "A_damaged_gt2pp": 7,
+      "B_damaged_gt2pp": 5,
+      "A_recovered_given_damage": 5,
+      "B_recovered_given_damage": 5
+    }
+  ],
+  "overall": {
+    "mean_AUC_A": 37.08279990255833,
+    "mean_AUC_B": 18.621699571609497,
+    "mean_paired_AUC_A_minus_B": 18.46110033094883,
+    "paired_auc_differences": [
+      75.85050067305565,
+      -8.804500102996826,
+      -9.779499381780624,
+      14.668500557541847,
+      20.370499908924103
+    ],
+    "mean_initial_damage_A_pp": 26.21599978208542,
+    "mean_initial_damage_B_pp": 25.08799982070923,
+    "favor_A_seeds": 2,
+    "favor_B_seeds": 3,
+    "exact_signflip_p_two_sided_exploratory": 0.3125,
+    "recovered_A": 35,
+    "recovered_B": 37,
+    "damaged_A": 41,
+    "damaged_B": 37
+  },
+  "limits": "regimes remain confounded by historical L1; masked perturbations nested within five networks; n!=100; no equivalence test."
+}

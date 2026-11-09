@@ -1,0 +1,176 @@
+{
+  "status": "One-time secondary audit, test sealed from choice of arms/masks and validation analysis",
+  "gate_file_sha256": "03ed9fbc569f2353ee9cdbd546c132e94a73b1d0eed917d921452bc907456b3c",
+  "validation_file_sha256": "19f52e74c7a6884ea1b53841e1714a76c458afc996dfa8f7a739bf08bfcc3f7e",
+  "eligible_seeds": [
+    11,
+    12,
+    13,
+    14,
+    18
+  ],
+  "test_partition_seed": 20261110,
+  "results": [
+    {
+      "seed": 11,
+      "prior_lambda": 1e-05,
+      "step": 6000,
+      "test_acc": 1.0,
+      "test_ce": 9.383042197441682e-05,
+      "n_test": 2000
+    },
+    {
+      "seed": 11,
+      "prior_lambda": 1e-05,
+      "step": 10000,
+      "test_acc": 1.0,
+      "test_ce": 0.00040392231312580407,
+      "n_test": 2000
+    },
+    {
+      "seed": 11,
+      "prior_lambda": 0.001,
+      "step": 6000,
+      "test_acc": 1.0,
+      "test_ce": 0.0074282060377299786,
+      "n_test": 2000
+    },
+    {
+      "seed": 11,
+      "prior_lambda": 0.001,
+      "step": 10000,
+      "test_acc": 1.0,
+      "test_ce": 0.0005792709998786449,
+      "n_test": 2000
+    },
+    {
+      "seed": 12,
+      "prior_lambda": 1e-05,
+      "step": 6000,
+      "test_acc": 1.0,
+      "test_ce": 9.896308620227501e-05,
+      "n_test": 2000
+    },
+    {
+      "seed": 12,
+      "prior_lambda": 1e-05,
+      "step": 10000,
+      "test_acc": 1.0,
+      "test_ce": 0.00045186266652308404,
+      "n_test": 2000
+    },
+    {
+      "seed": 12,
+      "prior_lambda": 0.001,
+      "step": 6000,
+      "test_acc": 1.0,
+      "test_ce": 0.0069977412931621075,
+      "n_test": 2000
+    },
+    {
+      "seed": 12,
+      "prior_lambda": 0.001,
+      "step": 10000,
+      "test_acc": 1.0,
+      "test_ce": 0.0005180155276320875,
+      "n_test": 2000
+    },
+    {
+      "seed": 13,
+      "prior_lambda": 1e-05,
+      "step": 6000,
+      "test_acc": 1.0,
+      "test_ce": 9.542197949485853e-05,
+      "n_test": 2000
+    },
+    {
+      "seed": 13,
+      "prior_lambda": 1e-05,
+      "step": 10000,
+      "test_acc": 1.0,
+      "test_ce": 0.00042933927034027874,
+      "n_test": 2000
+    },
+    {
+      "seed": 13,
+      "prior_lambda": 0.001,
+      "step": 6000,
+      "test_acc": 1.0,
+      "test_ce": 0.0074286991730332375,
+      "n_test": 2000
+    },
+    {
+      "seed": 13,
+      "prior_lambda": 0.001,
+      "step": 10000,
+      "test_acc": 1.0,
+      "test_ce": 0.0005515310331247747,
+      "n_test": 2000
+    },
+    {
+      "seed": 14,
+      "prior_lambda": 1e-05,
+      "step": 6000,
+      "test_acc": 1.0,
+      "test_ce": 0.00011122141586383805,
+      "n_test": 2000
+    },
+    {
+      "seed": 14,
+      "prior_lambda": 1e-05,
+      "step": 10000,
+      "test_acc": 1.0,
+      "test_ce": 0.0003935680724680424,
+      "n_test": 2000
+    },
+    {
+      "seed": 14,
+      "prior_lambda": 0.001,
+      "step": 6000,
+      "test_acc": 1.0,
+      "test_ce": 0.006982524413615465,
+      "n_test": 2000
+    },
+    {
+      "seed": 14,
+      "prior_lambda": 0.001,
+      "step": 10000,
+      "test_acc": 1.0,
+      "test_ce": 0.000573079742025584,
+      "n_test": 2000
+    },
+    {
+      "seed": 18,
+      "prior_lambda": 1e-05,
+      "step": 6000,
+      "test_acc": 1.0,
+      "test_ce": 0.00010139392543351278,
+      "n_test": 2000
+    },
+    {
+      "seed": 18,
+      "prior_lambda": 1e-05,
+      "step": 10000,
+      "test_acc": 1.0,
+      "test_ce": 0.0004821741604246199,
+      "n_test": 2000
+    },
+    {
+      "seed": 18,
+      "prior_lambda": 0.001,
+      "step": 6000,
+      "test_acc": 1.0,
+      "test_ce": 0.004965599626302719,
+      "n_test": 2000
+    },
+    {
+      "seed": 18,
+      "prior_lambda": 0.001,
+      "step": 10000,
+      "test_acc": 1.0,
+      "test_ce": 0.00036532655940391123,
+      "n_test": 2000
+    }
+  ],
+  "all_test100": true
+}
