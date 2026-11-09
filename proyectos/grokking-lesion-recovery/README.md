@@ -65,3 +65,11 @@ Para verificar los resultados guardados desde otro PC:
 ```powershell
 python full_100/analyze_v10c.py
 ```
+
+## V11 — control adversarial de la historia de grokking
+
+[Informe V11](full_100/REPORT_V11.md), [protocolo](full_100/PREREG_V11.md), [robustez V11](full_100/V11_ROBUSTNESS.json) y [reparación V11C](full_100/V11C_ANALYSIS.json).
+
+Tras 4.000 actualizaciones de entrenamiento **con el mismo λ L1=0.0001** y rendimiento 100% en ambas historias, la ventaja de resistencia inicial (A−B=−11.16pp) se redujo casi a cero (−0.48pp) ante 90/300 neuronas eliminadas. En reconstrucción manteniendo la misma L1, las cinco parejas no mostraron una ventaja reproducible: 2 semillas favorecen a A, 3 a B; diferencia media de AUC A−B=−3.48, prueba exploratoria de inversión de signos p=0.6875. La evidencia disponible no acredita que el grokking, separadamente de la regularización, mejore la reparación. Las máscaras no son replicaciones independientes de entrenamiento.
+
+Se incluyen 10 checkpoints iniciales V10 paso5000 y los checkpoints V11 5000/7000/9000, así como las 200 curvas completas de reparación V11B/V11C. Los anteriores resultados positivos V10 permanecen documentados para comparación. No se ha demostrado equivalencia estadística ni una ausencia universal de dependencia de trayectoria.

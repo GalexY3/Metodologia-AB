@@ -1,0 +1,126 @@
+{
+  "audit": {
+    "status": "PASS",
+    "n_lesions": 100,
+    "n_independent_seed_pairs": 5,
+    "errors": [],
+    "not_independent_audit": true
+  },
+  "per_seed": [
+    {
+      "seed": 0,
+      "n_masks": 10,
+      "mean_initial_A_pp": 22.59999990463257,
+      "mean_initial_B_pp": 29.680001139640808,
+      "auc_A": 25.184499323368073,
+      "auc_B": 52.85749936103821,
+      "auc_A_minus_B": -27.673000037670135,
+      "both_damaged_n": 7,
+      "normalized_auc_A_minus_B_if_both_damaged": -52.4226956527651,
+      "n_lesions_damaged_A": 7,
+      "n_lesions_damaged_B": 10,
+      "n_recovered_damaged_A": 5,
+      "n_recovered_damaged_B": 5,
+      "last_unlesioned_val_A": 0.9879999756813049,
+      "last_unlesioned_val_B": 1.0
+    },
+    {
+      "seed": 1,
+      "n_masks": 10,
+      "mean_initial_A_pp": 29.9099999666214,
+      "mean_initial_B_pp": 22.609999775886536,
+      "auc_A": 19.708499670028687,
+      "auc_B": 12.248501807451248,
+      "auc_A_minus_B": 7.459997862577438,
+      "both_damaged_n": 8,
+      "normalized_auc_A_minus_B_if_both_damaged": 13.341065108843942,
+      "n_lesions_damaged_A": 9,
+      "n_lesions_damaged_B": 8,
+      "n_recovered_damaged_A": 8,
+      "n_recovered_damaged_B": 7,
+      "last_unlesioned_val_A": 1.0,
+      "last_unlesioned_val_B": 0.984000027179718
+    },
+    {
+      "seed": 2,
+      "n_masks": 10,
+      "mean_initial_A_pp": 14.320001006126404,
+      "mean_initial_B_pp": 18.619999587535858,
+      "auc_A": 3.059503138065338,
+      "auc_B": 1.308498576283455,
+      "auc_A_minus_B": 1.7510045617818832,
+      "both_damaged_n": 6,
+      "normalized_auc_A_minus_B_if_both_damaged": 4.543285417203414,
+      "n_lesions_damaged_A": 8,
+      "n_lesions_damaged_B": 8,
+      "n_recovered_damaged_A": 8,
+      "n_recovered_damaged_B": 8,
+      "last_unlesioned_val_A": 0.9990000128746033,
+      "last_unlesioned_val_B": 0.9869999885559082
+    },
+    {
+      "seed": 3,
+      "n_masks": 10,
+      "mean_initial_A_pp": 24.96000051498413,
+      "mean_initial_B_pp": 22.200000286102295,
+      "auc_A": 17.631000488996506,
+      "auc_B": 33.147499680519104,
+      "auc_A_minus_B": -15.516499191522598,
+      "both_damaged_n": 6,
+      "normalized_auc_A_minus_B_if_both_damaged": -77.36837397327866,
+      "n_lesions_damaged_A": 7,
+      "n_lesions_damaged_B": 8,
+      "n_recovered_damaged_A": 6,
+      "n_recovered_damaged_B": 6,
+      "last_unlesioned_val_A": 0.9990000128746033,
+      "last_unlesioned_val_B": 0.996999979019165
+    },
+    {
+      "seed": 4,
+      "n_masks": 10,
+      "mean_initial_A_pp": 31.040000915527344,
+      "mean_initial_B_pp": 15.799999833106995,
+      "auc_A": 16.8390009701252,
+      "auc_B": 26.057499259710312,
+      "auc_A_minus_B": -9.218498289585114,
+      "both_damaged_n": 6,
+      "normalized_auc_A_minus_B_if_both_damaged": -80.31503572025902,
+      "n_lesions_damaged_A": 9,
+      "n_lesions_damaged_B": 7,
+      "n_recovered_damaged_A": 7,
+      "n_recovered_damaged_B": 6,
+      "last_unlesioned_val_A": 0.9789999723434448,
+      "last_unlesioned_val_B": 1.0
+    }
+  ],
+  "aggregate": {
+    "mean_damage_A_pp": 24.56600046157837,
+    "mean_damage_B_pp": 21.7820001244545,
+    "mean_auc_A": 16.48450071811676,
+    "mean_auc_B": 25.123899737000464,
+    "mean_auc_A_minus_B": -8.639399018883704,
+    "seedwise_auc_A_minus_B": [
+      -27.673000037670135,
+      7.459997862577438,
+      1.7510045617818832,
+      -15.516499191522598,
+      -9.218498289585114
+    ],
+    "A_lower_auc_seeds": 3,
+    "seedwise_control_final_val_B": [
+      1.0,
+      0.984000027179718,
+      0.9869999885559082,
+      0.996999979019165,
+      1.0
+    ],
+    "seedwise_control_final_val_A": [
+      0.9879999756813049,
+      1.0,
+      0.9990000128746033,
+      0.9990000128746033,
+      0.9789999723434448
+    ]
+  },
+  "warning": "V11B repair uses ZERO L1 and may cause loss of generalization even without a lesion. V11C corrects this by maintaining common L1."
+}

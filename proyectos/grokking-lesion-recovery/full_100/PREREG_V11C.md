@@ -1,0 +1,10 @@
+# V11C: reparación con regularización CONTINUADA en ambos brazos
+2026-11-09, registro de sensibilidad antes de ejecutar el lote V11C. V11B está en ejecución, pero no se han consultado sus agregados al establecer este diseño.
+
+**Motivo correctivo:** los modelos de aprendizaje rápido que dejan de recibir penalización L1 tras adquirir 100% pueden empezar a perder precisión sin ninguna lesión (V11 λcommon=0), por tanto la reconstrucción bajo pérdida L1 puede confundirse con degradación general de la solución. V11C mantiene el mismo λ=1e-4 que ambos grupos recibieron durante los 4000 pasos finales de V11, tanto en el control intacto como en la red lesionada.
+
+**Diseño bloqueado:** mismos cinco pares de redes con checkpoints V11 a paso 9000 bajo L1 común 1e-4 y 100% validación; dosis fija 90/300 neuronas, máscaras NUEVAS seeds 2111..2120 (diez por modelo; mismas unidades para cada pareja). Reparación AdamW nuevo, lr=.001, weight_decay=0, pérdida CE + L1 1e-4 sum abs parámetros, horizonte 500 pasos; medir cada 10 pasos; control intacto de continuación igual optimizer y penalización. No ajustar dosis ni máscara después de resultados; no seleccionar por recuperación. Definir daño inicial y pérdida CE inmediata, tiempo a 99% validación en 2 evaluaciones consecutivas, AUC déficit respecto a control (menor=mejor), error en train/valid, convergencia del control y normalización por daño inicial si ambas lesiones >2pp. Semillas como unidades independientes y máscaras subordinadas.
+
+**Resultados rivales:** persistencia de ventaja de recuperación tras regularización común versus desaparición/inversión. La precisión inicial está igualada (100% en los datos finitos) pero la magnitud exacta de lesión y los ejemplos dañados no necesariamente; se registran.
+
+**Interpretación máxima:** diferencias entre representaciones con historias y regularizaciones tempranas distintas después de compartir L1 final; una historia *grokking* no es tratamiento causal aislable sin intervenir en los factores que lo inducen. V11C no demuestra causalidad incluso si la reparación difiere. Resultados de V11B y V11C deben publicarse juntos aunque contradigan hipótesis.
