@@ -1,0 +1,40 @@
+{
+  "protocol": "PROTOCOL_P1_SCALE.md",
+  "train_seed": 20261110,
+  "train_k": [
+    2,
+    3,
+    4
+  ],
+  "eval_k": [
+    5,
+    6,
+    7,
+    8
+  ],
+  "eval_seed_range": "10000+100*k+s, s=0..9",
+  "eval_ticks": 140,
+  "num_seed_per_k": 10,
+  "policies": [
+    "P0_same_cohort",
+    "P1_k_scaled",
+    "manual_minority"
+  ],
+  "model_p0_sha256": "475931069978bac05ac24724a22127a2bf4232fab28d64a6713d9b8436525d7c",
+  "model_p1_sha256": "9e7f65f1102ee50fc42e926a6f26c14767ea8089adf8dc27b12dc7cc1ed9d3f5",
+  "trained_weights_hashes": {
+    "P0_same_cohort": "7e5002c16d4e9ba31867c30926d6579c797e5a39f4a5e8d1f8f64532b7b92259",
+    "P1_k_scaled": "e1353b9ffc361b03b498bb8332d2fd486d12e7398a1c01523f9f8d5d3eb36133"
+  },
+  "params": {
+    "n": 120,
+    "memory_decay": 0.94,
+    "lr": 0.35,
+    "temp": 0.55,
+    "switch_cost": 0.12,
+    "stability_tv": 0.06,
+    "stability_churn": 0.05,
+    "stability_window": 10,
+    "init_majority": 0.7
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "model_sha256": "475931069978bac05ac24724a22127a2bf4232fab28d64a6713d9b8436525d7c",
+  "training_theta_npz_sha256": "7828c75777f57ead697f3418c4b1bf3e9cb94cca31445e39462b91995ea8556e",
+  "train_episodes": 24,
+  "train_k": [
+    2,
+    3,
+    4
+  ],
+  "heldout_k": [
+    5,
+    6,
+    7,
+    8
+  ],
+  "heldout_seed_range": "6000+k*100+s, s=0..9",
+  "num_seeds_per_k": 10,
+  "policy": [
+    "stay",
+    "copy",
+    "random",
+    "minority",
+    "untrained",
+    "learned"
+  ],
+  "evaluation_learning": false,
+  "ticks": 140,
+  "locked_params": {
+    "n": 120,
+    "memory_decay": 0.94,
+    "lr": 0.35,
+    "temp": 0.55,
+    "switch_cost": 0.12,
+    "stability_tv": 0.06,
+    "stability_churn": 0.05,
+    "stability_window": 10,
+    "init_majority": 0.7
+  },
+  "success": "TV<=0.06 and churn<=0.05 for the final 10 ticks"
+}
