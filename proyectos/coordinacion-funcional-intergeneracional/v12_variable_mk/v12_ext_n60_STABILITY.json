@@ -1,0 +1,233 @@
+{
+  "kind": "POSTHOC_EXPLORATORY_TIME_SERIES_STABILITY",
+  "worlds_per_seed": 64,
+  "horizon": 100,
+  "seeds": [
+    980011,
+    980031
+  ],
+  "results": [
+    {
+      "model": "v12_ext_n60_c0_s3111",
+      "update": 1000,
+      "scenario": "known",
+      "m": 10,
+      "k": 2,
+      "init": "random",
+      "policy": "stochastic",
+      "worlds": 128,
+      "by_seed": [
+        {
+          "seed": 980011,
+          "exact_once": 5,
+          "exact_final": 3,
+          "sustained_3": 4,
+          "sustained_5": 2,
+          "food_last20": 0.5790360450744629,
+          "churn_last20": 0.003671875043073669,
+          "occupied_last20": 1.221875
+        },
+        {
+          "seed": 980031,
+          "exact_once": 12,
+          "exact_final": 5,
+          "sustained_3": 8,
+          "sustained_5": 7,
+          "food_last20": 0.5843867391347886,
+          "churn_last20": 0.0019140625518048182,
+          "occupied_last20": 1.2078125
+        }
+      ],
+      "exact_once": 17,
+      "exact_last": 8,
+      "sustained_5": 9,
+      "food_last20": 0.5817113921046257,
+      "churn_last20": 0.002792968797439244
+    },
+    {
+      "model": "v12_ext_n60_c0_s3111",
+      "update": 1000,
+      "scenario": "known",
+      "m": 10,
+      "k": 2,
+      "init": "random",
+      "policy": "greedy",
+      "worlds": 128,
+      "by_seed": [
+        {
+          "seed": 980011,
+          "exact_once": 0,
+          "exact_final": 0,
+          "sustained_3": 0,
+          "sustained_5": 0,
+          "food_last20": 0.6619244933128356,
+          "churn_last20": 0.014231770904734731,
+          "occupied_last20": 1.75
+        },
+        {
+          "seed": 980031,
+          "exact_once": 2,
+          "exact_final": 2,
+          "sustained_3": 2,
+          "sustained_5": 2,
+          "food_last20": 0.6534462571144104,
+          "churn_last20": 0.01979166641831398,
+          "occupied_last20": 1.8125
+        }
+      ],
+      "exact_once": 2,
+      "exact_last": 2,
+      "sustained_5": 2,
+      "food_last20": 0.657685375213623,
+      "churn_last20": 0.017011718661524355
+    },
+    {
+      "model": "v12_ext_n60_c0_s3111",
+      "update": 1000,
+      "scenario": "new",
+      "m": 30,
+      "k": 5,
+      "init": "random",
+      "policy": "stochastic",
+      "worlds": 128,
+      "by_seed": [
+        {
+          "seed": 980011,
+          "exact_once": 0,
+          "exact_final": 0,
+          "sustained_3": 0,
+          "sustained_5": 0,
+          "food_last20": 0.7093012481927872,
+          "churn_last20": 0.05908854175359011,
+          "occupied_last20": 3.565625
+        },
+        {
+          "seed": 980031,
+          "exact_once": 0,
+          "exact_final": 0,
+          "sustained_3": 0,
+          "sustained_5": 0,
+          "food_last20": 0.6781478226184845,
+          "churn_last20": 0.06992187406867742,
+          "occupied_last20": 3.40703125
+        }
+      ],
+      "exact_once": 0,
+      "exact_last": 0,
+      "sustained_5": 0,
+      "food_last20": 0.6937245354056358,
+      "churn_last20": 0.06450520791113376
+    },
+    {
+      "model": "v12_ext_n60_c0_s3111",
+      "update": 1000,
+      "scenario": "new",
+      "m": 30,
+      "k": 5,
+      "init": "random",
+      "policy": "greedy",
+      "worlds": 128,
+      "by_seed": [
+        {
+          "seed": 980011,
+          "exact_once": 0,
+          "exact_final": 0,
+          "sustained_3": 0,
+          "sustained_5": 0,
+          "food_last20": 0.6951823234558105,
+          "churn_last20": 0.027656250074505805,
+          "occupied_last20": 3.671875
+        },
+        {
+          "seed": 980031,
+          "exact_once": 0,
+          "exact_final": 0,
+          "sustained_3": 0,
+          "sustained_5": 0,
+          "food_last20": 0.6899891674518586,
+          "churn_last20": 0.0293098958209157,
+          "occupied_last20": 3.625
+        }
+      ],
+      "exact_once": 0,
+      "exact_last": 0,
+      "sustained_5": 0,
+      "food_last20": 0.6925857454538346,
+      "churn_last20": 0.028483072947710752
+    },
+    {
+      "model": "v12_ext_n60_c0_s3111",
+      "update": 1000,
+      "scenario": "trap",
+      "m": 20,
+      "k": 4,
+      "init": "trap",
+      "policy": "stochastic",
+      "worlds": 128,
+      "by_seed": [
+        {
+          "seed": 980011,
+          "exact_once": 0,
+          "exact_final": 0,
+          "sustained_3": 0,
+          "sustained_5": 0,
+          "food_last20": 0.500047755241394,
+          "churn_last20": 0.11075520850718021,
+          "occupied_last20": 2.04296875
+        },
+        {
+          "seed": 980031,
+          "exact_once": 0,
+          "exact_final": 0,
+          "sustained_3": 0,
+          "sustained_5": 0,
+          "food_last20": 0.5000329881906509,
+          "churn_last20": 0.1149348959326744,
+          "occupied_last20": 2.0296875
+        }
+      ],
+      "exact_once": 0,
+      "exact_last": 0,
+      "sustained_5": 0,
+      "food_last20": 0.5000403717160224,
+      "churn_last20": 0.1128450522199273
+    },
+    {
+      "model": "v12_ext_n60_c0_s3111",
+      "update": 1000,
+      "scenario": "trap",
+      "m": 20,
+      "k": 4,
+      "init": "trap",
+      "policy": "greedy",
+      "worlds": 128,
+      "by_seed": [
+        {
+          "seed": 980011,
+          "exact_once": 0,
+          "exact_final": 0,
+          "sustained_3": 0,
+          "sustained_5": 0,
+          "food_last20": 0.5000000014901161,
+          "churn_last20": 0.2772005215287209,
+          "occupied_last20": 2.0
+        },
+        {
+          "seed": 980031,
+          "exact_once": 0,
+          "exact_final": 0,
+          "sustained_3": 0,
+          "sustained_5": 0,
+          "food_last20": 0.5000000119209289,
+          "churn_last20": 0.2344921886920929,
+          "occupied_last20": 2.0
+        }
+      ],
+      "exact_once": 0,
+      "exact_last": 0,
+      "sustained_5": 0,
+      "food_last20": 0.5000000067055226,
+      "churn_last20": 0.2558463551104069
+    }
+  ]
+}
