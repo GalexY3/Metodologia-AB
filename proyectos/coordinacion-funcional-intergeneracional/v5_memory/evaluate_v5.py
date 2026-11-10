@@ -10,7 +10,7 @@ sys.path.insert(0,str(ROOT.parent/"v4_10states"))
 import torch
 from torch.distributions import Categorical
 from society10 import Society10,Config10,C,S
-from actors_memory import MemoryAgents10
+from agents_memory import MemoryAgents10
 from evaluate_v4 import ref_iid
 torch.set_num_threads(2)
 OUT=ROOT/"holdout"
