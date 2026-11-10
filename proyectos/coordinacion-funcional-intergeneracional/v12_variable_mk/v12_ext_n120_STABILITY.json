@@ -1,0 +1,233 @@
+{
+  "kind": "POSTHOC_EXPLORATORY_TIME_SERIES_STABILITY",
+  "worlds_per_seed": 64,
+  "horizon": 100,
+  "seeds": [
+    980011,
+    980031
+  ],
+  "results": [
+    {
+      "model": "v12_ext_n120_c0pub_s3111",
+      "update": 1100,
+      "scenario": "known",
+      "m": 10,
+      "k": 2,
+      "init": "random",
+      "policy": "stochastic",
+      "worlds": 128,
+      "by_seed": [
+        {
+          "seed": 980011,
+          "exact_once": 10,
+          "exact_final": 1,
+          "sustained_3": 5,
+          "sustained_5": 3,
+          "food_last20": 0.5910033732652664,
+          "churn_last20": 0.00561197919305414,
+          "occupied_last20": 1.33125
+        },
+        {
+          "seed": 980031,
+          "exact_once": 5,
+          "exact_final": 0,
+          "sustained_3": 2,
+          "sustained_5": 0,
+          "food_last20": 0.5586183845996857,
+          "churn_last20": 0.0038867187104187906,
+          "occupied_last20": 1.2328125
+        }
+      ],
+      "exact_once": 15,
+      "exact_last": 1,
+      "sustained_5": 3,
+      "food_last20": 0.5748108789324761,
+      "churn_last20": 0.004749348951736465
+    },
+    {
+      "model": "v12_ext_n120_c0pub_s3111",
+      "update": 1100,
+      "scenario": "known",
+      "m": 10,
+      "k": 2,
+      "init": "random",
+      "policy": "greedy",
+      "worlds": 128,
+      "by_seed": [
+        {
+          "seed": 980011,
+          "exact_once": 0,
+          "exact_final": 0,
+          "sustained_3": 0,
+          "sustained_5": 0,
+          "food_last20": 0.6916220545768738,
+          "churn_last20": 0.04291015584021807,
+          "occupied_last20": 2.65625
+        },
+        {
+          "seed": 980031,
+          "exact_once": 2,
+          "exact_final": 1,
+          "sustained_3": 2,
+          "sustained_5": 1,
+          "food_last20": 0.69153873026371,
+          "churn_last20": 0.03287760354578495,
+          "occupied_last20": 2.421875
+        }
+      ],
+      "exact_once": 2,
+      "exact_last": 1,
+      "sustained_5": 1,
+      "food_last20": 0.6915803924202919,
+      "churn_last20": 0.03789387969300151
+    },
+    {
+      "model": "v12_ext_n120_c0pub_s3111",
+      "update": 1100,
+      "scenario": "new",
+      "m": 30,
+      "k": 5,
+      "init": "random",
+      "policy": "stochastic",
+      "worlds": 128,
+      "by_seed": [
+        {
+          "seed": 980011,
+          "exact_once": 0,
+          "exact_final": 0,
+          "sustained_3": 0,
+          "sustained_5": 0,
+          "food_last20": 0.7031491845846176,
+          "churn_last20": 0.051113280840218066,
+          "occupied_last20": 3.6171875
+        },
+        {
+          "seed": 980031,
+          "exact_once": 0,
+          "exact_final": 0,
+          "sustained_3": 0,
+          "sustained_5": 0,
+          "food_last20": 0.7000331521034241,
+          "churn_last20": 0.05827473942190409,
+          "occupied_last20": 3.59296875
+        }
+      ],
+      "exact_once": 0,
+      "exact_last": 0,
+      "sustained_5": 0,
+      "food_last20": 0.7015911683440208,
+      "churn_last20": 0.05469401013106108
+    },
+    {
+      "model": "v12_ext_n120_c0pub_s3111",
+      "update": 1100,
+      "scenario": "new",
+      "m": 30,
+      "k": 5,
+      "init": "random",
+      "policy": "greedy",
+      "worlds": 128,
+      "by_seed": [
+        {
+          "seed": 980011,
+          "exact_once": 0,
+          "exact_final": 0,
+          "sustained_3": 0,
+          "sustained_5": 0,
+          "food_last20": 0.7191203325986862,
+          "churn_last20": 0.02462890651077032,
+          "occupied_last20": 3.90625
+        },
+        {
+          "seed": 980031,
+          "exact_once": 0,
+          "exact_final": 0,
+          "sustained_3": 0,
+          "sustained_5": 0,
+          "food_last20": 0.7113216638565063,
+          "churn_last20": 0.023359374701976778,
+          "occupied_last20": 3.890625
+        }
+      ],
+      "exact_once": 0,
+      "exact_last": 0,
+      "sustained_5": 0,
+      "food_last20": 0.7152209982275963,
+      "churn_last20": 0.02399414060637355
+    },
+    {
+      "model": "v12_ext_n120_c0pub_s3111",
+      "update": 1100,
+      "scenario": "trap",
+      "m": 20,
+      "k": 4,
+      "init": "trap",
+      "policy": "stochastic",
+      "worlds": 128,
+      "by_seed": [
+        {
+          "seed": 980011,
+          "exact_once": 0,
+          "exact_final": 0,
+          "sustained_3": 0,
+          "sustained_5": 0,
+          "food_last20": 0.5000427335500717,
+          "churn_last20": 0.08386067822575569,
+          "occupied_last20": 2.15390625
+        },
+        {
+          "seed": 980031,
+          "exact_once": 0,
+          "exact_final": 0,
+          "sustained_3": 0,
+          "sustained_5": 0,
+          "food_last20": 0.5000483810901641,
+          "churn_last20": 0.07971354238688946,
+          "occupied_last20": 2.17421875
+        }
+      ],
+      "exact_once": 0,
+      "exact_last": 0,
+      "sustained_5": 0,
+      "food_last20": 0.5000455573201179,
+      "churn_last20": 0.08178711030632257
+    },
+    {
+      "model": "v12_ext_n120_c0pub_s3111",
+      "update": 1100,
+      "scenario": "trap",
+      "m": 20,
+      "k": 4,
+      "init": "trap",
+      "policy": "greedy",
+      "worlds": 128,
+      "by_seed": [
+        {
+          "seed": 980011,
+          "exact_once": 0,
+          "exact_final": 0,
+          "sustained_3": 0,
+          "sustained_5": 0,
+          "food_last20": 0.49999999105930326,
+          "churn_last20": 0.15068359524011612,
+          "occupied_last20": 2.0
+        },
+        {
+          "seed": 980031,
+          "exact_once": 0,
+          "exact_final": 0,
+          "sustained_3": 0,
+          "sustained_5": 0,
+          "food_last20": 0.49999998658895495,
+          "churn_last20": 0.1776822917163372,
+          "occupied_last20": 2.0
+        }
+      ],
+      "exact_once": 0,
+      "exact_last": 0,
+      "sustained_5": 0,
+      "food_last20": 0.4999999888241291,
+      "churn_last20": 0.16418294347822665
+    }
+  ]
+}
