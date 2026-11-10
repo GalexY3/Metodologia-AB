@@ -1,0 +1,793 @@
+{
+  "kind": "POSTHOC_DEVELOPMENT_FRESH_WORLD_SEEDS_NOT_SEALED_HOLDOUT",
+  "seeds": [
+    660003,
+    760007
+  ],
+  "batch_per_seed": 96,
+  "horizon": 48,
+  "records": [
+    {
+      "name": "pilot_324_d5_c0_seed1411",
+      "update": 120,
+      "config": {
+        "n": 324,
+        "batch": 12,
+        "horizon": 20,
+        "hidden": 12,
+        "degree": 5,
+        "topology": "ring",
+        "communication": false,
+        "blind": false,
+        "gamma": 0.97,
+        "lr": 0.0015,
+        "entropy": 0.012,
+        "device": "cpu",
+        "seed": 1411
+      },
+      "evaluation": {
+        "stochastic": [
+          {
+            "food_mean": 0.5741713047027588,
+            "food_min": 0.012345679104328156,
+            "hunger_fraction": 0.9913516044616699,
+            "occupied": 9.96875,
+            "D4": 0.3360660970211029,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.6757651567459106
+          },
+          {
+            "food_mean": 0.5766194462776184,
+            "food_min": 0.012345679104328156,
+            "hunger_fraction": 0.9909979701042175,
+            "occupied": 9.927083015441895,
+            "D4": 0.33249738812446594,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.6647055149078369
+          }
+        ],
+        "greedy": [
+          {
+            "food_mean": 0.5,
+            "food_min": 0.3802816867828369,
+            "hunger_fraction": 1.0,
+            "occupied": 2.0,
+            "D4": 0.5,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.008262602612376213
+          },
+          {
+            "food_mean": 0.5,
+            "food_min": 0.3785046637058258,
+            "hunger_fraction": 1.0,
+            "occupied": 2.0,
+            "D4": 0.5,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.008230452425777912
+          }
+        ]
+      }
+    },
+    {
+      "name": "pilot_blind_d5_seed1411",
+      "update": 120,
+      "config": {
+        "n": 36,
+        "batch": 24,
+        "horizon": 24,
+        "hidden": 12,
+        "degree": 5,
+        "topology": "ring",
+        "communication": false,
+        "blind": true,
+        "gamma": 0.97,
+        "lr": 0.0015,
+        "entropy": 0.012,
+        "device": "cpu",
+        "seed": 1411
+      },
+      "evaluation": {
+        "stochastic": [
+          {
+            "food_mean": 0.5035686492919922,
+            "food_min": 0.1111111119389534,
+            "hunger_fraction": 0.9311342835426331,
+            "occupied": 9.729166984558105,
+            "D4": 0.4062499701976776,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.8304398059844971
+          },
+          {
+            "food_mean": 0.5016075968742371,
+            "food_min": 0.1111111119389534,
+            "hunger_fraction": 0.9398148059844971,
+            "occupied": 9.75,
+            "D4": 0.4079861342906952,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.8142361044883728
+          }
+        ],
+        "greedy": [
+          {
+            "food_mean": 0.6761509776115417,
+            "food_min": 0.1111111119389534,
+            "hunger_fraction": 0.6712962985038757,
+            "occupied": 7.697916507720947,
+            "D4": 0.24971063435077667,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.2352430522441864
+          },
+          {
+            "food_mean": 0.6698174476623535,
+            "food_min": 0.1111111119389534,
+            "hunger_fraction": 0.6767939925193787,
+            "occupied": 7.8125,
+            "D4": 0.253472238779068,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.23234952986240387
+          }
+        ]
+      }
+    },
+    {
+      "name": "pilot_d2_c0_seed1411",
+      "update": 120,
+      "config": {
+        "n": 36,
+        "batch": 24,
+        "horizon": 24,
+        "hidden": 12,
+        "degree": 2,
+        "topology": "ring",
+        "communication": false,
+        "blind": false,
+        "gamma": 0.97,
+        "lr": 0.0015,
+        "entropy": 0.012,
+        "device": "cpu",
+        "seed": 1411
+      },
+      "evaluation": {
+        "stochastic": [
+          {
+            "food_mean": 0.5483860969543457,
+            "food_min": 0.1111111119389534,
+            "hunger_fraction": 0.8634259104728699,
+            "occupied": 9.489583015441895,
+            "D4": 0.359375,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.8058449029922485
+          },
+          {
+            "food_mean": 0.5486432909965515,
+            "food_min": 0.1111111119389534,
+            "hunger_fraction": 0.8521412014961243,
+            "occupied": 9.583333015441895,
+            "D4": 0.359375,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.7986111044883728
+          }
+        ],
+        "greedy": [
+          {
+            "food_mean": 0.6118826866149902,
+            "food_min": 0.5,
+            "hunger_fraction": 1.0,
+            "occupied": 3.0,
+            "D4": 0.3339120149612427,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.02777777798473835
+          },
+          {
+            "food_mean": 0.6067708134651184,
+            "food_min": 0.5,
+            "hunger_fraction": 1.0,
+            "occupied": 3.0,
+            "D4": 0.3376735746860504,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.02777777798473835
+          }
+        ]
+      }
+    },
+    {
+      "name": "pilot_d5_c0_seed1411",
+      "update": 120,
+      "config": {
+        "n": 36,
+        "batch": 24,
+        "horizon": 24,
+        "hidden": 12,
+        "degree": 5,
+        "topology": "ring",
+        "communication": false,
+        "blind": false,
+        "gamma": 0.97,
+        "lr": 0.0015,
+        "entropy": 0.012,
+        "device": "cpu",
+        "seed": 1411
+      },
+      "evaluation": {
+        "stochastic": [
+          {
+            "food_mean": 0.5643325448036194,
+            "food_min": 0.1111111119389534,
+            "hunger_fraction": 0.8159722089767456,
+            "occupied": 9.427083015441895,
+            "D4": 0.34375,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.8041087985038757
+          },
+          {
+            "food_mean": 0.567547619342804,
+            "food_min": 0.1111111119389534,
+            "hunger_fraction": 0.8110532164573669,
+            "occupied": 9.510416984558105,
+            "D4": 0.34143516421318054,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.7936921119689941
+          }
+        ],
+        "greedy": [
+          {
+            "food_mean": 0.5331790447235107,
+            "food_min": 0.3913043439388275,
+            "hunger_fraction": 0.7777777910232544,
+            "occupied": 3.0,
+            "D4": 0.3819444477558136,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.02777777798473835
+          },
+          {
+            "food_mean": 0.5353009104728699,
+            "food_min": 0.3913043439388275,
+            "hunger_fraction": 0.7777777910232544,
+            "occupied": 3.0,
+            "D4": 0.3802083432674408,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.02777777798473835
+          }
+        ]
+      }
+    },
+    {
+      "name": "pilot_d5_c0_seed2522",
+      "update": 120,
+      "config": {
+        "n": 36,
+        "batch": 24,
+        "horizon": 24,
+        "hidden": 12,
+        "degree": 5,
+        "topology": "ring",
+        "communication": false,
+        "blind": false,
+        "gamma": 0.97,
+        "lr": 0.0015,
+        "entropy": 0.012,
+        "device": "cpu",
+        "seed": 2522
+      },
+      "evaluation": {
+        "stochastic": [
+          {
+            "food_mean": 0.5296746492385864,
+            "food_min": 0.1111111119389534,
+            "hunger_fraction": 0.9021990895271301,
+            "occupied": 9.520833015441895,
+            "D4": 0.37818285822868347,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.8168402910232544
+          },
+          {
+            "food_mean": 0.5273276567459106,
+            "food_min": 0.1111111119389534,
+            "hunger_fraction": 0.8880208134651184,
+            "occupied": 9.645833015441895,
+            "D4": 0.38310185074806213,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.8070023059844971
+          }
+        ],
+        "greedy": [
+          {
+            "food_mean": 0.565039873123169,
+            "food_min": 0.1111111119389534,
+            "hunger_fraction": 1.0,
+            "occupied": 3.2604167461395264,
+            "D4": 0.36863425374031067,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.06741898506879807
+          },
+          {
+            "food_mean": 0.5645254850387573,
+            "food_min": 0.1111111119389534,
+            "hunger_fraction": 1.0,
+            "occupied": 3.3541667461395264,
+            "D4": 0.3663194477558136,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.0711805522441864
+          }
+        ]
+      }
+    },
+    {
+      "name": "pilot_d5_c0_seed3533",
+      "update": 120,
+      "config": {
+        "n": 36,
+        "batch": 24,
+        "horizon": 24,
+        "hidden": 12,
+        "degree": 5,
+        "topology": "ring",
+        "communication": false,
+        "blind": false,
+        "gamma": 0.97,
+        "lr": 0.0015,
+        "entropy": 0.012,
+        "device": "cpu",
+        "seed": 3533
+      },
+      "evaluation": {
+        "stochastic": [
+          {
+            "food_mean": 0.518164873123169,
+            "food_min": 0.1111111119389534,
+            "hunger_fraction": 0.8967013955116272,
+            "occupied": 9.677083015441895,
+            "D4": 0.39467594027519226,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.8223379850387573
+          },
+          {
+            "food_mean": 0.5179398655891418,
+            "food_min": 0.1111111119389534,
+            "hunger_fraction": 0.9082754850387573,
+            "occupied": 9.666666984558105,
+            "D4": 0.39178240299224854,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.8090277910232544
+          }
+        ],
+        "greedy": [
+          {
+            "food_mean": 0.3980516791343689,
+            "food_min": 0.2222222238779068,
+            "hunger_fraction": 1.0,
+            "occupied": 4.0,
+            "D4": 0.4510995149612427,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.05237268656492233
+          },
+          {
+            "food_mean": 0.39464378356933594,
+            "food_min": 0.2222222238779068,
+            "hunger_fraction": 1.0,
+            "occupied": 4.0,
+            "D4": 0.45457175374031067,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.05324074253439903
+          }
+        ]
+      }
+    },
+    {
+      "name": "pilot_d5_c1_seed1411",
+      "update": 120,
+      "config": {
+        "n": 36,
+        "batch": 24,
+        "horizon": 24,
+        "hidden": 12,
+        "degree": 5,
+        "topology": "ring",
+        "communication": true,
+        "blind": false,
+        "gamma": 0.97,
+        "lr": 0.0015,
+        "entropy": 0.012,
+        "device": "cpu",
+        "seed": 1411
+      },
+      "evaluation": {
+        "stochastic": [
+          {
+            "food_mean": 0.4979102909564972,
+            "food_min": 0.1111111119389534,
+            "hunger_fraction": 0.9366319179534912,
+            "occupied": 9.802083015441895,
+            "D4": 0.4123264253139496,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.8139467835426331
+          },
+          {
+            "food_mean": 0.49672070145606995,
+            "food_min": 0.1111111119389534,
+            "hunger_fraction": 0.9464699029922485,
+            "occupied": 9.8125,
+            "D4": 0.4126157760620117,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.8258101940155029
+          }
+        ],
+        "greedy": [
+          {
+            "food_mean": 0.45045655965805054,
+            "food_min": 0.1111111119389534,
+            "hunger_fraction": 0.9953703880310059,
+            "occupied": 8.291666984558105,
+            "D4": 0.4227430522441864,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.23755787312984467
+          },
+          {
+            "food_mean": 0.4444766342639923,
+            "food_min": 0.1111111119389534,
+            "hunger_fraction": 0.9884259104728699,
+            "occupied": 8.364583015441895,
+            "D4": 0.4305555820465088,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.2300347238779068
+          }
+        ],
+        "no_messages_stochastic": [
+          {
+            "food_mean": 0.5075874924659729,
+            "food_min": 0.1111111119389534,
+            "hunger_fraction": 0.9201388955116272,
+            "occupied": 9.760416984558105,
+            "D4": 0.3993055522441864,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.828125
+          },
+          {
+            "food_mean": 0.502957820892334,
+            "food_min": 0.1111111119389534,
+            "hunger_fraction": 0.9366319179534912,
+            "occupied": 9.697916984558105,
+            "D4": 0.4071180820465088,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.8148148059844971
+          }
+        ]
+      }
+    },
+    {
+      "name": "pilot_d5_c1_seed2522",
+      "update": 120,
+      "config": {
+        "n": 36,
+        "batch": 24,
+        "horizon": 24,
+        "hidden": 12,
+        "degree": 5,
+        "topology": "ring",
+        "communication": true,
+        "blind": false,
+        "gamma": 0.97,
+        "lr": 0.0015,
+        "entropy": 0.012,
+        "device": "cpu",
+        "seed": 2522
+      },
+      "evaluation": {
+        "stochastic": [
+          {
+            "food_mean": 0.4971708059310913,
+            "food_min": 0.1111111119389534,
+            "hunger_fraction": 0.9464699029922485,
+            "occupied": 9.78125,
+            "D4": 0.4120369851589203,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.8107638955116272
+          },
+          {
+            "food_mean": 0.50208979845047,
+            "food_min": 0.1111111119389534,
+            "hunger_fraction": 0.9441550970077515,
+            "occupied": 9.739583015441895,
+            "D4": 0.40682873129844666,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.8243634104728699
+          }
+        ],
+        "greedy": [
+          {
+            "food_mean": 0.4575938880443573,
+            "food_min": 0.1111111119389534,
+            "hunger_fraction": 0.9927662014961243,
+            "occupied": 7.072916507720947,
+            "D4": 0.3935185372829437,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.07349537312984467
+          },
+          {
+            "food_mean": 0.4528999328613281,
+            "food_min": 0.1111111119389534,
+            "hunger_fraction": 1.0,
+            "occupied": 7.072916507720947,
+            "D4": 0.3969907760620117,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.07436342537403107
+          }
+        ],
+        "no_messages_stochastic": [
+          {
+            "food_mean": 0.5053048133850098,
+            "food_min": 0.1111111119389534,
+            "hunger_fraction": 0.9239004850387573,
+            "occupied": 9.739583015441895,
+            "D4": 0.40509259700775146,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.8301504850387573
+          },
+          {
+            "food_mean": 0.5029578804969788,
+            "food_min": 0.1111111119389534,
+            "hunger_fraction": 0.9276620149612427,
+            "occupied": 9.75,
+            "D4": 0.4071180820465088,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.8177083134651184
+          }
+        ]
+      }
+    },
+    {
+      "name": "pilot_d5_c1_seed3533",
+      "update": 120,
+      "config": {
+        "n": 36,
+        "batch": 24,
+        "horizon": 24,
+        "hidden": 12,
+        "degree": 5,
+        "topology": "ring",
+        "communication": true,
+        "blind": false,
+        "gamma": 0.97,
+        "lr": 0.0015,
+        "entropy": 0.012,
+        "device": "cpu",
+        "seed": 3533
+      },
+      "evaluation": {
+        "stochastic": [
+          {
+            "food_mean": 0.5047904253005981,
+            "food_min": 0.1111111119389534,
+            "hunger_fraction": 0.9331597089767456,
+            "occupied": 9.677083015441895,
+            "D4": 0.4068286716938019,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.8067129850387573
+          },
+          {
+            "food_mean": 0.5069445371627808,
+            "food_min": 0.1111111119389534,
+            "hunger_fraction": 0.9175347089767456,
+            "occupied": 9.729166984558105,
+            "D4": 0.4036458432674408,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.8188657164573669
+          }
+        ],
+        "greedy": [
+          {
+            "food_mean": 0.5181648135185242,
+            "food_min": 0.1111111119389534,
+            "hunger_fraction": 0.8408564925193787,
+            "occupied": 4.854166507720947,
+            "D4": 0.3544560372829437,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.15075232088565826
+          },
+          {
+            "food_mean": 0.5181648135185242,
+            "food_min": 0.1111111119389534,
+            "hunger_fraction": 0.8504050970077515,
+            "occupied": 4.84375,
+            "D4": 0.3544560372829437,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.14872685074806213
+          }
+        ],
+        "no_messages_stochastic": [
+          {
+            "food_mean": 0.5082626342773438,
+            "food_min": 0.1111111119389534,
+            "hunger_fraction": 0.9204282164573669,
+            "occupied": 9.75,
+            "D4": 0.40162038803100586,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.8252314925193787
+          },
+          {
+            "food_mean": 0.5116384029388428,
+            "food_min": 0.1111111119389534,
+            "hunger_fraction": 0.9267939925193787,
+            "occupied": 9.666666984558105,
+            "D4": 0.3984375,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.8096064925193787
+          }
+        ]
+      }
+    },
+    {
+      "name": "pilot_d5_rewired_c0_seed1411",
+      "update": 120,
+      "config": {
+        "n": 36,
+        "batch": 24,
+        "horizon": 24,
+        "hidden": 12,
+        "degree": 5,
+        "topology": "rewired",
+        "communication": false,
+        "blind": false,
+        "gamma": 0.97,
+        "lr": 0.0015,
+        "entropy": 0.012,
+        "device": "cpu",
+        "seed": 1411
+      },
+      "evaluation": {
+        "stochastic": [
+          {
+            "food_mean": 0.548353910446167,
+            "food_min": 0.1111111119389534,
+            "hunger_fraction": 0.859375,
+            "occupied": 9.46875,
+            "D4": 0.3602430820465088,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.8072916865348816
+          },
+          {
+            "food_mean": 0.5480967164039612,
+            "food_min": 0.1111111119389534,
+            "hunger_fraction": 0.8518518805503845,
+            "occupied": 9.604166984558105,
+            "D4": 0.3599536716938019,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.8075810074806213
+          }
+        ],
+        "greedy": [
+          {
+            "food_mean": 0.5030863881111145,
+            "food_min": 0.1111111119389534,
+            "hunger_fraction": 1.0,
+            "occupied": 3.0,
+            "D4": 0.472222238779068,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.0
+          },
+          {
+            "food_mean": 0.5030863881111145,
+            "food_min": 0.1111111119389534,
+            "hunger_fraction": 1.0,
+            "occupied": 3.0,
+            "D4": 0.472222238779068,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "pilot_d8_c0_seed1411",
+      "update": 120,
+      "config": {
+        "n": 36,
+        "batch": 24,
+        "horizon": 24,
+        "hidden": 12,
+        "degree": 8,
+        "topology": "ring",
+        "communication": false,
+        "blind": false,
+        "gamma": 0.97,
+        "lr": 0.0015,
+        "entropy": 0.012,
+        "device": "cpu",
+        "seed": 1411
+      },
+      "evaluation": {
+        "stochastic": [
+          {
+            "food_mean": 0.593460738658905,
+            "food_min": 0.1111111119389534,
+            "hunger_fraction": 0.7714120149612427,
+            "occupied": 9.229166984558105,
+            "D4": 0.31481480598449707,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.7980324029922485
+          },
+          {
+            "food_mean": 0.5895382761955261,
+            "food_min": 0.1111111119389534,
+            "hunger_fraction": 0.7757523059844971,
+            "occupied": 9.25,
+            "D4": 0.3203125,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.7798032164573669
+          }
+        ],
+        "greedy": [
+          {
+            "food_mean": 0.5010931491851807,
+            "food_min": 0.1111111119389534,
+            "hunger_fraction": 1.0,
+            "occupied": 2.3541667461395264,
+            "D4": 0.49016204476356506,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.0
+          },
+          {
+            "food_mean": 0.5012217164039612,
+            "food_min": 0.1111111119389534,
+            "hunger_fraction": 1.0,
+            "occupied": 2.3958332538604736,
+            "D4": 0.48900464177131653,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.0
+          }
+        ]
+      }
+    }
+  ],
+  "notes": "Trained models frozen, personal food only. Communication ablation disables messages at test; stochastic RNG consumption changes, so direct pairwise causal comparison needs a controlled intervention."
+}

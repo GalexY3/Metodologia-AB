@@ -1,0 +1,608 @@
+{
+  "kind": "development_baselines",
+  "seed": 450001,
+  "batch": 64,
+  "horizon": 48,
+  "records": [
+    {
+      "n": 36,
+      "degree": 2,
+      "arm": "random",
+      "initial": {
+        "food_mean": 0.5048225522041321,
+        "food_min": 0.1111111119389534,
+        "hunger_fraction": 0.9184027910232544,
+        "occupied": 9.78125,
+        "D4": 0.4049479365348816,
+        "exact": 0,
+        "worlds": 64,
+        "churn": 0.0
+      },
+      "final": {
+        "food_mean": 0.49233219027519226,
+        "food_min": 0.1111111119389534,
+        "hunger_fraction": 0.94921875,
+        "occupied": 9.859375,
+        "D4": 0.4140624701976776,
+        "exact": 0,
+        "worlds": 64,
+        "churn": 0.8849826455116272
+      }
+    },
+    {
+      "n": 36,
+      "degree": 2,
+      "arm": "frozen",
+      "initial": {
+        "food_mean": 0.5048225522041321,
+        "food_min": 0.1111111119389534,
+        "hunger_fraction": 0.9184027910232544,
+        "occupied": 9.78125,
+        "D4": 0.4049479365348816,
+        "exact": 0,
+        "worlds": 64,
+        "churn": 0.0
+      },
+      "final": {
+        "food_mean": 0.5048225522041321,
+        "food_min": 0.1111111119389534,
+        "hunger_fraction": 0.9184027910232544,
+        "occupied": 9.78125,
+        "D4": 0.4049479365348816,
+        "exact": 0,
+        "worlds": 64,
+        "churn": 0.0
+      }
+    },
+    {
+      "n": 36,
+      "degree": 2,
+      "arm": "imitate",
+      "initial": {
+        "food_mean": 0.5048225522041321,
+        "food_min": 0.1111111119389534,
+        "hunger_fraction": 0.9184027910232544,
+        "occupied": 9.78125,
+        "D4": 0.4049479365348816,
+        "exact": 0,
+        "worlds": 64,
+        "churn": 0.0
+      },
+      "final": {
+        "food_mean": 0.6710069179534912,
+        "food_min": 0.1111111119389534,
+        "hunger_fraction": 0.76953125,
+        "occupied": 4.265625,
+        "D4": 0.2478298544883728,
+        "exact": 0,
+        "worlds": 64,
+        "churn": 0.8723958134651184
+      }
+    },
+    {
+      "n": 36,
+      "degree": 2,
+      "arm": "untrained_neural",
+      "initial": {
+        "food_mean": 0.5048225522041321,
+        "food_min": 0.1111111119389534,
+        "hunger_fraction": 0.9184027910232544,
+        "occupied": 9.78125,
+        "D4": 0.4049479365348816,
+        "exact": 0,
+        "worlds": 64,
+        "churn": 0.0
+      },
+      "final": {
+        "food_mean": 0.49093368649482727,
+        "food_min": 0.1111111119389534,
+        "hunger_fraction": 0.9644097089767456,
+        "occupied": 9.78125,
+        "D4": 0.4179687201976776,
+        "exact": 0,
+        "worlds": 64,
+        "churn": 0.8368055820465088
+      }
+    },
+    {
+      "n": 36,
+      "degree": 5,
+      "arm": "random",
+      "initial": {
+        "food_mean": 0.5048225522041321,
+        "food_min": 0.1111111119389534,
+        "hunger_fraction": 0.9184027910232544,
+        "occupied": 9.78125,
+        "D4": 0.4049479365348816,
+        "exact": 0,
+        "worlds": 64,
+        "churn": 0.0
+      },
+      "final": {
+        "food_mean": 0.49233219027519226,
+        "food_min": 0.1111111119389534,
+        "hunger_fraction": 0.94921875,
+        "occupied": 9.859375,
+        "D4": 0.4140624701976776,
+        "exact": 0,
+        "worlds": 64,
+        "churn": 0.8849826455116272
+      }
+    },
+    {
+      "n": 36,
+      "degree": 5,
+      "arm": "frozen",
+      "initial": {
+        "food_mean": 0.5048225522041321,
+        "food_min": 0.1111111119389534,
+        "hunger_fraction": 0.9184027910232544,
+        "occupied": 9.78125,
+        "D4": 0.4049479365348816,
+        "exact": 0,
+        "worlds": 64,
+        "churn": 0.0
+      },
+      "final": {
+        "food_mean": 0.5048225522041321,
+        "food_min": 0.1111111119389534,
+        "hunger_fraction": 0.9184027910232544,
+        "occupied": 9.78125,
+        "D4": 0.4049479365348816,
+        "exact": 0,
+        "worlds": 64,
+        "churn": 0.0
+      }
+    },
+    {
+      "n": 36,
+      "degree": 5,
+      "arm": "imitate",
+      "initial": {
+        "food_mean": 0.5048225522041321,
+        "food_min": 0.1111111119389534,
+        "hunger_fraction": 0.9184027910232544,
+        "occupied": 9.78125,
+        "D4": 0.4049479365348816,
+        "exact": 0,
+        "worlds": 64,
+        "churn": 0.0
+      },
+      "final": {
+        "food_mean": 0.44246724247932434,
+        "food_min": 0.1111111119389534,
+        "hunger_fraction": 0.93359375,
+        "occupied": 2.09375,
+        "D4": 0.5334201455116272,
+        "exact": 0,
+        "worlds": 64,
+        "churn": 0.3376736044883728
+      }
+    },
+    {
+      "n": 36,
+      "degree": 5,
+      "arm": "untrained_neural",
+      "initial": {
+        "food_mean": 0.5048225522041321,
+        "food_min": 0.1111111119389534,
+        "hunger_fraction": 0.9184027910232544,
+        "occupied": 9.78125,
+        "D4": 0.4049479365348816,
+        "exact": 0,
+        "worlds": 64,
+        "churn": 0.0
+      },
+      "final": {
+        "food_mean": 0.49016204476356506,
+        "food_min": 0.1111111119389534,
+        "hunger_fraction": 0.9644097089767456,
+        "occupied": 9.75,
+        "D4": 0.4197048544883728,
+        "exact": 0,
+        "worlds": 64,
+        "churn": 0.8359375
+      }
+    },
+    {
+      "n": 36,
+      "degree": 8,
+      "arm": "random",
+      "initial": {
+        "food_mean": 0.5048225522041321,
+        "food_min": 0.1111111119389534,
+        "hunger_fraction": 0.9184027910232544,
+        "occupied": 9.78125,
+        "D4": 0.4049479365348816,
+        "exact": 0,
+        "worlds": 64,
+        "churn": 0.0
+      },
+      "final": {
+        "food_mean": 0.49233219027519226,
+        "food_min": 0.1111111119389534,
+        "hunger_fraction": 0.94921875,
+        "occupied": 9.859375,
+        "D4": 0.4140624701976776,
+        "exact": 0,
+        "worlds": 64,
+        "churn": 0.8849826455116272
+      }
+    },
+    {
+      "n": 36,
+      "degree": 8,
+      "arm": "frozen",
+      "initial": {
+        "food_mean": 0.5048225522041321,
+        "food_min": 0.1111111119389534,
+        "hunger_fraction": 0.9184027910232544,
+        "occupied": 9.78125,
+        "D4": 0.4049479365348816,
+        "exact": 0,
+        "worlds": 64,
+        "churn": 0.0
+      },
+      "final": {
+        "food_mean": 0.5048225522041321,
+        "food_min": 0.1111111119389534,
+        "hunger_fraction": 0.9184027910232544,
+        "occupied": 9.78125,
+        "D4": 0.4049479365348816,
+        "exact": 0,
+        "worlds": 64,
+        "churn": 0.0
+      }
+    },
+    {
+      "n": 36,
+      "degree": 8,
+      "arm": "imitate",
+      "initial": {
+        "food_mean": 0.5048225522041321,
+        "food_min": 0.1111111119389534,
+        "hunger_fraction": 0.9184027910232544,
+        "occupied": 9.78125,
+        "D4": 0.4049479365348816,
+        "exact": 0,
+        "worlds": 64,
+        "churn": 0.0
+      },
+      "final": {
+        "food_mean": 0.4145929515361786,
+        "food_min": 0.1111111119389534,
+        "hunger_fraction": 0.9683159589767456,
+        "occupied": 2.015625,
+        "D4": 0.5629340410232544,
+        "exact": 0,
+        "worlds": 64,
+        "churn": 0.2743055522441864
+      }
+    },
+    {
+      "n": 36,
+      "degree": 8,
+      "arm": "untrained_neural",
+      "initial": {
+        "food_mean": 0.5048225522041321,
+        "food_min": 0.1111111119389534,
+        "hunger_fraction": 0.9184027910232544,
+        "occupied": 9.78125,
+        "D4": 0.4049479365348816,
+        "exact": 0,
+        "worlds": 64,
+        "churn": 0.0
+      },
+      "final": {
+        "food_mean": 0.4909336268901825,
+        "food_min": 0.1111111119389534,
+        "hunger_fraction": 0.9644097089767456,
+        "occupied": 9.75,
+        "D4": 0.418402761220932,
+        "exact": 0,
+        "worlds": 64,
+        "churn": 0.8359375
+      }
+    },
+    {
+      "n": 324,
+      "degree": 2,
+      "arm": "random",
+      "initial": {
+        "food_mean": 0.41061052680015564,
+        "food_min": 0.20987653732299805,
+        "hunger_fraction": 1.0,
+        "occupied": 10.0,
+        "D4": 0.538194477558136,
+        "exact": 0,
+        "worlds": 64,
+        "churn": 0.0
+      },
+      "final": {
+        "food_mean": 0.41101059317588806,
+        "food_min": 0.1975308656692505,
+        "hunger_fraction": 1.0,
+        "occupied": 10.0,
+        "D4": 0.5374228358268738,
+        "exact": 0,
+        "worlds": 64,
+        "churn": 0.9033564925193787
+      }
+    },
+    {
+      "n": 324,
+      "degree": 2,
+      "arm": "frozen",
+      "initial": {
+        "food_mean": 0.41061052680015564,
+        "food_min": 0.20987653732299805,
+        "hunger_fraction": 1.0,
+        "occupied": 10.0,
+        "D4": 0.538194477558136,
+        "exact": 0,
+        "worlds": 64,
+        "churn": 0.0
+      },
+      "final": {
+        "food_mean": 0.41061052680015564,
+        "food_min": 0.20987653732299805,
+        "hunger_fraction": 1.0,
+        "occupied": 10.0,
+        "D4": 0.538194477558136,
+        "exact": 0,
+        "worlds": 64,
+        "churn": 0.0
+      }
+    },
+    {
+      "n": 324,
+      "degree": 2,
+      "arm": "imitate",
+      "initial": {
+        "food_mean": 0.41061052680015564,
+        "food_min": 0.20987653732299805,
+        "hunger_fraction": 1.0,
+        "occupied": 10.0,
+        "D4": 0.538194477558136,
+        "exact": 0,
+        "worlds": 64,
+        "churn": 0.0
+      },
+      "final": {
+        "food_mean": 0.4774722456932068,
+        "food_min": 0.04938271641731262,
+        "hunger_fraction": 0.9781057238578796,
+        "occupied": 9.984375,
+        "D4": 0.429157018661499,
+        "exact": 0,
+        "worlds": 64,
+        "churn": 0.9078414440155029
+      }
+    },
+    {
+      "n": 324,
+      "degree": 2,
+      "arm": "untrained_neural",
+      "initial": {
+        "food_mean": 0.41061052680015564,
+        "food_min": 0.20987653732299805,
+        "hunger_fraction": 1.0,
+        "occupied": 10.0,
+        "D4": 0.538194477558136,
+        "exact": 0,
+        "worlds": 64,
+        "churn": 0.0
+      },
+      "final": {
+        "food_mean": 0.4104081094264984,
+        "food_min": 0.20987653732299805,
+        "hunger_fraction": 1.0,
+        "occupied": 10.0,
+        "D4": 0.5396412014961243,
+        "exact": 0,
+        "worlds": 64,
+        "churn": 0.8179976940155029
+      }
+    },
+    {
+      "n": 324,
+      "degree": 5,
+      "arm": "random",
+      "initial": {
+        "food_mean": 0.41061052680015564,
+        "food_min": 0.20987653732299805,
+        "hunger_fraction": 1.0,
+        "occupied": 10.0,
+        "D4": 0.538194477558136,
+        "exact": 0,
+        "worlds": 64,
+        "churn": 0.0
+      },
+      "final": {
+        "food_mean": 0.41101059317588806,
+        "food_min": 0.1975308656692505,
+        "hunger_fraction": 1.0,
+        "occupied": 10.0,
+        "D4": 0.5374228358268738,
+        "exact": 0,
+        "worlds": 64,
+        "churn": 0.9033564925193787
+      }
+    },
+    {
+      "n": 324,
+      "degree": 5,
+      "arm": "frozen",
+      "initial": {
+        "food_mean": 0.41061052680015564,
+        "food_min": 0.20987653732299805,
+        "hunger_fraction": 1.0,
+        "occupied": 10.0,
+        "D4": 0.538194477558136,
+        "exact": 0,
+        "worlds": 64,
+        "churn": 0.0
+      },
+      "final": {
+        "food_mean": 0.41061052680015564,
+        "food_min": 0.20987653732299805,
+        "hunger_fraction": 1.0,
+        "occupied": 10.0,
+        "D4": 0.538194477558136,
+        "exact": 0,
+        "worlds": 64,
+        "churn": 0.0
+      }
+    },
+    {
+      "n": 324,
+      "degree": 5,
+      "arm": "imitate",
+      "initial": {
+        "food_mean": 0.41061052680015564,
+        "food_min": 0.20987653732299805,
+        "hunger_fraction": 1.0,
+        "occupied": 10.0,
+        "D4": 0.538194477558136,
+        "exact": 0,
+        "worlds": 64,
+        "churn": 0.0
+      },
+      "final": {
+        "food_mean": 0.6014023423194885,
+        "food_min": 0.012345679104328156,
+        "hunger_fraction": 0.8018904328346252,
+        "occupied": 8.625,
+        "D4": 0.3143807649612427,
+        "exact": 0,
+        "worlds": 64,
+        "churn": 0.42505785822868347
+      }
+    },
+    {
+      "n": 324,
+      "degree": 5,
+      "arm": "untrained_neural",
+      "initial": {
+        "food_mean": 0.41061052680015564,
+        "food_min": 0.20987653732299805,
+        "hunger_fraction": 1.0,
+        "occupied": 10.0,
+        "D4": 0.538194477558136,
+        "exact": 0,
+        "worlds": 64,
+        "churn": 0.0
+      },
+      "final": {
+        "food_mean": 0.41042953729629517,
+        "food_min": 0.20987653732299805,
+        "hunger_fraction": 1.0,
+        "occupied": 10.0,
+        "D4": 0.5393036007881165,
+        "exact": 0,
+        "worlds": 64,
+        "churn": 0.8182870149612427
+      }
+    },
+    {
+      "n": 324,
+      "degree": 8,
+      "arm": "random",
+      "initial": {
+        "food_mean": 0.41061052680015564,
+        "food_min": 0.20987653732299805,
+        "hunger_fraction": 1.0,
+        "occupied": 10.0,
+        "D4": 0.538194477558136,
+        "exact": 0,
+        "worlds": 64,
+        "churn": 0.0
+      },
+      "final": {
+        "food_mean": 0.41101059317588806,
+        "food_min": 0.1975308656692505,
+        "hunger_fraction": 1.0,
+        "occupied": 10.0,
+        "D4": 0.5374228358268738,
+        "exact": 0,
+        "worlds": 64,
+        "churn": 0.9033564925193787
+      }
+    },
+    {
+      "n": 324,
+      "degree": 8,
+      "arm": "frozen",
+      "initial": {
+        "food_mean": 0.41061052680015564,
+        "food_min": 0.20987653732299805,
+        "hunger_fraction": 1.0,
+        "occupied": 10.0,
+        "D4": 0.538194477558136,
+        "exact": 0,
+        "worlds": 64,
+        "churn": 0.0
+      },
+      "final": {
+        "food_mean": 0.41061052680015564,
+        "food_min": 0.20987653732299805,
+        "hunger_fraction": 1.0,
+        "occupied": 10.0,
+        "D4": 0.538194477558136,
+        "exact": 0,
+        "worlds": 64,
+        "churn": 0.0
+      }
+    },
+    {
+      "n": 324,
+      "degree": 8,
+      "arm": "imitate",
+      "initial": {
+        "food_mean": 0.41061052680015564,
+        "food_min": 0.20987653732299805,
+        "hunger_fraction": 1.0,
+        "occupied": 10.0,
+        "D4": 0.538194477558136,
+        "exact": 0,
+        "worlds": 64,
+        "churn": 0.0
+      },
+      "final": {
+        "food_mean": 0.6061694622039795,
+        "food_min": 0.012345679104328156,
+        "hunger_fraction": 0.7956211566925049,
+        "occupied": 8.625,
+        "D4": 0.3049768805503845,
+        "exact": 0,
+        "worlds": 64,
+        "churn": 0.37827932834625244
+      }
+    },
+    {
+      "n": 324,
+      "degree": 8,
+      "arm": "untrained_neural",
+      "initial": {
+        "food_mean": 0.41061052680015564,
+        "food_min": 0.20987653732299805,
+        "hunger_fraction": 1.0,
+        "occupied": 10.0,
+        "D4": 0.538194477558136,
+        "exact": 0,
+        "worlds": 64,
+        "churn": 0.0
+      },
+      "final": {
+        "food_mean": 0.41057002544403076,
+        "food_min": 0.20987653732299805,
+        "hunger_fraction": 1.0,
+        "occupied": 10.0,
+        "D4": 0.5390142202377319,
+        "exact": 0,
+        "worlds": 64,
+        "churn": 0.8180459141731262
+      }
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "update": 120,
+  "episodes": 1440,
+  "state": "completed",
+  "elapsed": 34.02501034736633,
+  "report": {
+    "loss": -0.34414801001548767,
+    "train_food": 0.589391827583313,
+    "train_D4": 0.32098761200904846,
+    "grad": 0.001298017567023635,
+    "entropy": 1.7396013736724854,
+    "update": 120,
+    "episodes": 1440,
+    "stochastic": {
+      "food_mean": 0.5789275765419006,
+      "food_min": 0.012345679104328156,
+      "hunger_fraction": 0.9531893134117126,
+      "occupied": 9.958333015441895,
+      "D4": 0.332561731338501,
+      "exact": 0,
+      "worlds": 24,
+      "churn": 0.6667952537536621
+    },
+    "greedy": {
+      "food_mean": 0.5,
+      "food_min": 0.3802816867828369,
+      "hunger_fraction": 1.0,
+      "occupied": 2.0,
+      "D4": 0.5,
+      "exact": 0,
+      "worlds": 24,
+      "churn": 0.008359053172171116
+    }
+  }
+}
