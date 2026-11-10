@@ -7,7 +7,7 @@ world sample is nested under ONE independent training cohort.
 from pathlib import Path
 import argparse,hashlib,json,time,math
 import torch
-from independent_agents import IndependentActors
+from individual_agents import IndependentActors
 from environment_v3 import IndependentSociety
 from environment import Configuration
 from train_scaling_v3c import random_floor
