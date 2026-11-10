@@ -1,0 +1,22 @@
+{
+  "version": "k_comparison_1",
+  "config": {
+    "n": 36,
+    "k": 2,
+    "batch": 32,
+    "horizon": 24,
+    "hidden": 12,
+    "degree": 5,
+    "topology": "ring",
+    "communication": false,
+    "blind": false,
+    "gamma": 0.97,
+    "lr": 0.0035,
+    "entropy": 0.012,
+    "device": "cpu",
+    "seed": 2522
+  },
+  "updates": 600,
+  "eval_seed": 450001,
+  "eval_every": 100
+}
