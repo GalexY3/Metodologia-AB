@@ -1,0 +1,47 @@
+{
+  "name": "v12_n120_c1pub_s2111",
+  "tasks": [
+    [
+      10,
+      2
+    ],
+    [
+      10,
+      4
+    ],
+    [
+      20,
+      2
+    ],
+    [
+      20,
+      4
+    ]
+  ],
+  "config": {
+    "n": 120,
+    "m": 10,
+    "k": 2,
+    "degree": 5,
+    "hidden": 8,
+    "communication": true,
+    "public": true,
+    "blind": false,
+    "alpha": 0.1,
+    "gamma": 0.97,
+    "lr": 0.008,
+    "entropy": 0.006,
+    "topology": "ring",
+    "init": "random",
+    "batch": 16,
+    "horizon": 16,
+    "device": "cuda",
+    "seed": 2111
+  },
+  "updates": 180,
+  "eval_horizon": 36,
+  "eval_batch": 24,
+  "eval_every": 30,
+  "save_every": 30,
+  "model": "color-equivariant-128-parameter"
+}
