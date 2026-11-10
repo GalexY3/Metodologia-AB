@@ -1,0 +1,19 @@
+# V4-D — Test adversarial de la crítica externa sobre reward, 500 actualizaciones
+
+**Fecha 2026-11-10. Registrado después de completar V4-10000 y su evaluación reservada negativa, pero antes de iniciar los nuevos entrenamientos delta. Análisis exploratorio, no confirmación prospectiva original.**
+
+## Hipótesis motivadora y comprobación crítica
+
+Gemini afirma que la recompensa de V4 `r=-D_{t+1}-0.03*churn_t` imposibilita el aprendizaje porque es negativa y paraliza las acciones. Se verificó que a 10000 actualizaciones C1 mantiene churn ~0.8796 y C2 ~0.8829, frente al 0.9 de la política IID entre diez estados; no se produjo la parálisis predicha. Al usar REINFORCE con baseline leave-one-out, una recompensa numéricamente negativa tampoco implica automáticamente gradiente negativo para todas las acciones. Además, la penalización de 0.03 por fracción de cambios supone 0.03/36=0.000833 por un individuo que cambia, frente al beneficio inmediato 1/36=0.02778 de bajar D en un agente; la penalización equivale al 3% de ese beneficio, no lo supera.
+
+No obstante, la recompensa diferencial N·(D_t−D_{t+1}), sin penalización adicional, es una intervención razonable para estudiar la señal de progreso y la magnitud de ventajas; merece probarse. **Ojo:** con gamma=0.98, esta no es exactamente la forma de shaping preservadora de política F=gamma·Phi(s')−Phi(s); la propuesta de Gemini es una recompensa de progreso en sí, no un teorema que garantice éxito.
+
+## Diseño congelado del piloto
+
+Mismo código V4 `society10.py`, `actors10.py`, `train_v4.py`; única intervención de entrenamiento: `--reward-kind delta --churn-penalty 0`. La función `Society10.step` ya incluye la rama `delta: reward=N*(old_D−new_D)`, y así el código no se modifica. Dos condiciones C1 sin mensajes y C2 con mensajes. N36, hidden64, k2/k3/k4, 10 colores legales, seed421, 500 actualizaciones, batch12, 32 turnos por episodio, Adam .001, gamma .98, entropy .0005, adv_scale10, clip10 por agente; el primer modelo de cada brazo parte de los mismos pesos θ_i iniciales que el V4 original (llamadas `torch.manual_seed(421)`). El entorno y sus observaciones siguen iguales, con colores locales y feedback global idéntico; ni pesos ni gradientes compartidos entre agentes.
+
+**Observación de desarrollo** cada 100 actualizaciones. Comparar el promedio de D final de desarrollo, número de estados ocupados, exactitud y estabilidad con V4 original en actualizaciones 1 y 500 y con azar de diez colores; no escoger solo k favorable. Guardar todos los logs y checkpoints a 500. Registrar max grad norm, pérdida y tasa de cambios. Si no se observa una mejora clara frente al nivel IID-10 ni una tendencia de selección k colores, NO afirmar que se corrigió el problema ni lanzar automáticamente otros 10000 con el mismo esquema.
+
+**Evaluación del piloto:** para nuevas sociedades no usadas para desarrollo, utilizar seeds 5700000+100k por cada condición, 100 mundos por k, 120 turnos, políticas estocásticas y greedy, además de aleatorio uniforme; registrar D_k final, D/D_IID-10, número de estados ocupados, éxitos exactos, D≤.02 y churn≤.05 en últimos diez turnos y AUC; fijar test lock SHA de pesos/código ANTES de leer resultados. Esa evaluación es exploratoria, porque el reward delta fue propuesto después del fallo V4.
+
+**Limitación crucial:** 500 actualizaciones en lugar de 10000, por lo que una mejora o no mejora podría depender del tiempo de entrenamiento. Las dos recompensas también difieren de escala; el baseline leave-one-out y Adam no garantizan invariancia a escala para la varianza/entropía/clipping. Una supuesta ventaja del delta tendría que replicarse por semillas antes de atribuir causalmente un mecanismo a la forma de reward. No usar el test para seleccionar un checkpoint entre 100/250/500. No alterar nunca los checkpoints históricos del experimento V4.
