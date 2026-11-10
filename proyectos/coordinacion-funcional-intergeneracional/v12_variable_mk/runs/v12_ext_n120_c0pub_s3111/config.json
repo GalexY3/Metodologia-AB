@@ -1,0 +1,47 @@
+{
+  "name": "v12_ext_n120_c0pub_s3111",
+  "tasks": [
+    [
+      10,
+      2
+    ],
+    [
+      10,
+      4
+    ],
+    [
+      20,
+      2
+    ],
+    [
+      20,
+      4
+    ]
+  ],
+  "config": {
+    "n": 120,
+    "m": 10,
+    "k": 2,
+    "degree": 5,
+    "hidden": 8,
+    "communication": false,
+    "public": true,
+    "blind": false,
+    "alpha": 0.1,
+    "gamma": 0.97,
+    "lr": 0.012,
+    "entropy": 0.006,
+    "topology": "ring",
+    "init": "random",
+    "batch": 16,
+    "horizon": 18,
+    "device": "cuda",
+    "seed": 3111
+  },
+  "updates": 1100,
+  "eval_horizon": 40,
+  "eval_batch": 32,
+  "eval_every": 100,
+  "save_every": 100,
+  "model": "color-equivariant-128-parameter"
+}

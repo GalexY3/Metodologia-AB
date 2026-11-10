@@ -1,0 +1,4264 @@
+{
+  "kind": "POSTHOC_EXPLORATORY_EVALUATIONS_NOT_SEALED",
+  "procedure": "frozen independent models on fresh world seeds",
+  "seeds": [
+    970011,
+    970031
+  ],
+  "worlds_per_seed": 48,
+  "horizon": 60,
+  "models": [
+    {
+      "name": "v12_n120_c0_s2111",
+      "updates": 180,
+      "config": {
+        "n": 120,
+        "m": 10,
+        "k": 2,
+        "degree": 5,
+        "hidden": 8,
+        "communication": false,
+        "public": false,
+        "blind": false,
+        "alpha": 0.0,
+        "gamma": 0.97,
+        "lr": 0.008,
+        "entropy": 0.006,
+        "topology": "ring",
+        "init": "random",
+        "batch": 16,
+        "horizon": 16,
+        "device": "cuda",
+        "seed": 2111
+      },
+      "tests": [
+        {
+          "task": "known_M10_k2",
+          "m": 10,
+          "k": 2,
+          "initial": "random",
+          "mode": "learned_stochastic",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.21416087448596954,
+              "food_std": 0.00696143601089716,
+              "d": 0.7277777791023254,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 10.0,
+              "hungry": 1.0,
+              "churn": 0.8923611044883728,
+              "viable": 0.0
+            },
+            {
+              "food": 0.2165277898311615,
+              "food_std": 0.007757291663438082,
+              "d": 0.7204861640930176,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 10.0,
+              "hungry": 1.0,
+              "churn": 0.9001736044883728,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.21534433215856552,
+          "mean_d": 0.7241319715976715,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "known_M10_k2",
+          "m": 10,
+          "k": 2,
+          "initial": "random",
+          "mode": "learned_greedy",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.2177198976278305,
+              "food_std": 0.007470784708857536,
+              "d": 0.714930534362793,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 10.0,
+              "hungry": 1.0,
+              "churn": 0.5496527552604675,
+              "viable": 0.0
+            },
+            {
+              "food": 0.2218460738658905,
+              "food_std": 0.009830335155129433,
+              "d": 0.706250011920929,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 10.0,
+              "hungry": 1.0,
+              "churn": 0.5486111044883728,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.2197829857468605,
+          "mean_d": 0.710590273141861,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "known_M10_k2",
+          "m": 10,
+          "k": 2,
+          "initial": "random",
+          "mode": "random",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.2142997682094574,
+              "food_std": 0.0062661804258823395,
+              "d": 0.7246527671813965,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 10.0,
+              "hungry": 1.0,
+              "churn": 0.8993055820465088,
+              "viable": 0.0
+            },
+            {
+              "food": 0.21337386965751648,
+              "food_std": 0.006006572861224413,
+              "d": 0.729687511920929,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 10.0,
+              "hungry": 1.0,
+              "churn": 0.9046875238418579,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.21383681893348694,
+          "mean_d": 0.7271701395511627,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "known_M10_k2",
+          "m": 10,
+          "k": 2,
+          "initial": "random",
+          "mode": "frozen",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.21443867683410645,
+              "food_std": 0.006588445045053959,
+              "d": 0.7251736521720886,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 10.0,
+              "hungry": 1.0,
+              "churn": 0.0,
+              "viable": 0.0
+            },
+            {
+              "food": 0.21525463461875916,
+              "food_std": 0.008005275391042233,
+              "d": 0.7223958373069763,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 10.0,
+              "hungry": 1.0,
+              "churn": 0.0,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.2148466557264328,
+          "mean_d": 0.7237847447395325,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "known_M10_k2",
+          "m": 10,
+          "k": 2,
+          "initial": "random",
+          "mode": "local_imitation",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.5821036100387573,
+              "food_std": 0.11338864266872406,
+              "d": 0.33229169249534607,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 4.6875,
+              "hungry": 0.8269097208976746,
+              "churn": 0.3803819417953491,
+              "viable": 0.3541666567325592
+            },
+            {
+              "food": 0.5572916865348816,
+              "food_std": 0.11678152531385422,
+              "d": 0.35277774930000305,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 4.833333492279053,
+              "hungry": 0.8795138597488403,
+              "churn": 0.4116319417953491,
+              "viable": 0.25
+            }
+          ],
+          "mean_food": 0.5696976482868195,
+          "mean_d": 0.34253472089767456,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "known_M20_k4",
+          "m": 20,
+          "k": 4,
+          "initial": "random",
+          "mode": "learned_stochastic",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.23042823374271393,
+              "food_std": 0.010841187089681625,
+              "d": 0.6881944537162781,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 19.97916603088379,
+              "hungry": 1.0,
+              "churn": 0.9468749761581421,
+              "viable": 0.0
+            },
+            {
+              "food": 0.2306250035762787,
+              "food_std": 0.008443426340818405,
+              "d": 0.6901041865348816,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 19.89583396911621,
+              "hungry": 1.0,
+              "churn": 0.9489583373069763,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.2305266186594963,
+          "mean_d": 0.6891493201255798,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "known_M20_k4",
+          "m": 20,
+          "k": 4,
+          "initial": "random",
+          "mode": "learned_greedy",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.2554861307144165,
+              "food_std": 0.017656421288847923,
+              "d": 0.6434027552604675,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 19.8125,
+              "hungry": 1.0,
+              "churn": 0.5475694537162781,
+              "viable": 0.0
+            },
+            {
+              "food": 0.2559722363948822,
+              "food_std": 0.017191020771861076,
+              "d": 0.6434027552604675,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 19.77083396911621,
+              "hungry": 1.0,
+              "churn": 0.5463541746139526,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.25572918355464935,
+          "mean_d": 0.6434027552604675,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "unseen_M30_k3",
+          "m": 30,
+          "k": 3,
+          "initial": "random",
+          "mode": "learned_stochastic",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.12424478679895401,
+              "food_std": 0.006975099910050631,
+              "d": 0.8076388835906982,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 29.5,
+              "hungry": 1.0,
+              "churn": 0.9644097089767456,
+              "viable": 0.0
+            },
+            {
+              "food": 0.12312500178813934,
+              "food_std": 0.005620500072836876,
+              "d": 0.8142361640930176,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 29.33333396911621,
+              "hungry": 1.0,
+              "churn": 0.964062511920929,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.12368489429354668,
+          "mean_d": 0.8109375238418579,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "unseen_M30_k3",
+          "m": 30,
+          "k": 3,
+          "initial": "random",
+          "mode": "learned_greedy",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.14406250417232513,
+              "food_std": 0.011591866612434387,
+              "d": 0.7640625834465027,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 28.29166603088379,
+              "hungry": 1.0,
+              "churn": 0.5486111044883728,
+              "viable": 0.0
+            },
+            {
+              "food": 0.14527776837348938,
+              "food_std": 0.010926526039838791,
+              "d": 0.7671875357627869,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 28.29166603088379,
+              "hungry": 1.0,
+              "churn": 0.550868034362793,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.14467013627290726,
+          "mean_d": 0.7656250596046448,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "unseen_M30_k5",
+          "m": 30,
+          "k": 5,
+          "initial": "random",
+          "mode": "learned_stochastic",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.20707465708255768,
+              "food_std": 0.011625166982412338,
+              "d": 0.7026042342185974,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 29.5,
+              "hungry": 1.0,
+              "churn": 0.9644097089767456,
+              "viable": 0.0
+            },
+            {
+              "food": 0.20520833134651184,
+              "food_std": 0.009367495775222778,
+              "d": 0.7107639312744141,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 29.33333396911621,
+              "hungry": 1.0,
+              "churn": 0.964062511920929,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.20614149421453476,
+          "mean_d": 0.7066840827465057,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "unseen_M30_k5",
+          "m": 30,
+          "k": 5,
+          "initial": "random",
+          "mode": "learned_greedy",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.24309894442558289,
+              "food_std": 0.02266690693795681,
+              "d": 0.6446180939674377,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 28.29166603088379,
+              "hungry": 1.0,
+              "churn": 0.5480902791023254,
+              "viable": 0.0
+            },
+            {
+              "food": 0.24032117426395416,
+              "food_std": 0.017661983147263527,
+              "d": 0.6489583253860474,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 28.45833396911621,
+              "hungry": 1.0,
+              "churn": 0.546875,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.24171005934476852,
+          "mean_d": 0.6467882096767426,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "unseen_M30_k5",
+          "m": 30,
+          "k": 5,
+          "initial": "random",
+          "mode": "random",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.20593170821666718,
+              "food_std": 0.009765486232936382,
+              "d": 0.7076389193534851,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 29.625,
+              "hungry": 1.0,
+              "churn": 0.9652777910232544,
+              "viable": 0.0
+            },
+            {
+              "food": 0.20555555820465088,
+              "food_std": 0.0073547763749957085,
+              "d": 0.7060763835906982,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 29.70833396911621,
+              "hungry": 1.0,
+              "churn": 0.9685763716697693,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.20574363321065903,
+          "mean_d": 0.7068576514720917,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "unseen_M30_k5",
+          "m": 30,
+          "k": 5,
+          "initial": "random",
+          "mode": "frozen",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.204644113779068,
+              "food_std": 0.008412713184952736,
+              "d": 0.707118034362793,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 29.625,
+              "hungry": 1.0,
+              "churn": 0.0,
+              "viable": 0.0
+            },
+            {
+              "food": 0.2083333283662796,
+              "food_std": 0.011069435626268387,
+              "d": 0.7010416984558105,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 29.45833396911621,
+              "hungry": 1.0,
+              "churn": 0.0,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.2064887210726738,
+          "mean_d": 0.7040798664093018,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "unseen_M30_k5",
+          "m": 30,
+          "k": 5,
+          "initial": "random",
+          "mode": "local_imitation",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.6638021469116211,
+              "food_std": 0.09959900379180908,
+              "d": 0.2595486342906952,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 5.479166507720947,
+              "hungry": 0.7545138597488403,
+              "churn": 0.4053819477558136,
+              "viable": 1.2083333730697632
+            },
+            {
+              "food": 0.6706814169883728,
+              "food_std": 0.10562699288129807,
+              "d": 0.244791641831398,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 5.770833492279053,
+              "hungry": 0.7699652910232544,
+              "churn": 0.43263888359069824,
+              "viable": 1.1458333730697632
+            }
+          ],
+          "mean_food": 0.667241781949997,
+          "mean_d": 0.2521701380610466,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "unseen_M50_k6",
+          "m": 50,
+          "k": 6,
+          "initial": "random",
+          "mode": "learned_stochastic",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.17227432131767273,
+              "food_std": 0.010325630195438862,
+              "d": 0.7359375953674316,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 45.5625,
+              "hungry": 1.0,
+              "churn": 0.9802083373069763,
+              "viable": 0.0
+            },
+            {
+              "food": 0.16828125715255737,
+              "food_std": 0.010764208622276783,
+              "d": 0.7454860806465149,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 45.35416793823242,
+              "hungry": 1.0,
+              "churn": 0.9774305820465088,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.17027778923511505,
+          "mean_d": 0.7407118380069733,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "unseen_M50_k6",
+          "m": 50,
+          "k": 6,
+          "initial": "random",
+          "mode": "learned_greedy",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.2272222340106964,
+              "food_std": 0.024124925956130028,
+              "d": 0.65625,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 39.02083206176758,
+              "hungry": 1.0,
+              "churn": 0.550000011920929,
+              "viable": 0.0
+            },
+            {
+              "food": 0.22388890385627747,
+              "food_std": 0.021403541788458824,
+              "d": 0.6605902314186096,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 39.0625,
+              "hungry": 1.0,
+              "churn": 0.5472221970558167,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.22555556893348694,
+          "mean_d": 0.6584201157093048,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "unseen_M50_k10",
+          "m": 50,
+          "k": 10,
+          "initial": "random",
+          "mode": "learned_stochastic",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.28712379932403564,
+              "food_std": 0.017209379002451897,
+              "d": 0.6020833253860474,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 45.5625,
+              "hungry": 1.0,
+              "churn": 0.9802083373069763,
+              "viable": 0.0
+            },
+            {
+              "food": 0.28046876192092896,
+              "food_std": 0.017940348014235497,
+              "d": 0.6131944060325623,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 45.35416793823242,
+              "hungry": 1.0,
+              "churn": 0.9774305820465088,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.2837962806224823,
+          "mean_d": 0.6076388657093048,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "unseen_M50_k10",
+          "m": 50,
+          "k": 10,
+          "initial": "random",
+          "mode": "learned_greedy",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.3717882037162781,
+              "food_std": 0.029359150677919388,
+              "d": 0.5083333253860474,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 39.14583206176758,
+              "hungry": 0.9769096970558167,
+              "churn": 0.5463541746139526,
+              "viable": 0.25
+            },
+            {
+              "food": 0.3699508309364319,
+              "food_std": 0.027180258184671402,
+              "d": 0.5095486044883728,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 39.04166793823242,
+              "hungry": 0.984375,
+              "churn": 0.5444444417953491,
+              "viable": 0.1666666716337204
+            }
+          ],
+          "mean_food": 0.370869517326355,
+          "mean_d": 0.5089409649372101,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "NashTrap_M20_k2",
+          "m": 20,
+          "k": 2,
+          "initial": "trap",
+          "mode": "learned_stochastic",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.11530093103647232,
+              "food_std": 0.004998336546123028,
+              "d": 0.8293402194976807,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 19.97916603088379,
+              "hungry": 1.0,
+              "churn": 0.9409722089767456,
+              "viable": 0.0
+            },
+            {
+              "food": 0.11537616699934006,
+              "food_std": 0.004462668672204018,
+              "d": 0.8302083015441895,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 20.0,
+              "hungry": 1.0,
+              "churn": 0.9475694298744202,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.11533854901790619,
+          "mean_d": 0.8297742605209351,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "NashTrap_M20_k2",
+          "m": 20,
+          "k": 2,
+          "initial": "trap",
+          "mode": "learned_greedy",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.31767359375953674,
+              "food_std": 0.0033990456722676754,
+              "d": 0.5489582419395447,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 18.0,
+              "hungry": 1.0,
+              "churn": 0.5249999761581421,
+              "viable": 0.0
+            },
+            {
+              "food": 0.31745946407318115,
+              "food_std": 0.0031396117992699146,
+              "d": 0.5491319298744202,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 18.0,
+              "hungry": 1.0,
+              "churn": 0.5249999761581421,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.31756652891635895,
+          "mean_d": 0.5490450859069824,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "NashTrap_M20_k4",
+          "m": 20,
+          "k": 4,
+          "initial": "trap",
+          "mode": "learned_stochastic",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.2305787205696106,
+              "food_std": 0.009995467029511929,
+              "d": 0.6878471970558167,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 19.97916603088379,
+              "hungry": 1.0,
+              "churn": 0.9411458373069763,
+              "viable": 0.0
+            },
+            {
+              "food": 0.2307407408952713,
+              "food_std": 0.008925224654376507,
+              "d": 0.6895833015441895,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 20.0,
+              "hungry": 1.0,
+              "churn": 0.9473958611488342,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.23065973073244095,
+          "mean_d": 0.688715249300003,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "NashTrap_M20_k4",
+          "m": 20,
+          "k": 4,
+          "initial": "trap",
+          "mode": "learned_greedy",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.54146409034729,
+              "food_std": 0.036834489554166794,
+              "d": 0.36666667461395264,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 18.02083396911621,
+              "hungry": 0.6305555701255798,
+              "churn": 0.542881965637207,
+              "viable": 1.4583333730697632
+            },
+            {
+              "food": 0.5437789559364319,
+              "food_std": 0.0380617156624794,
+              "d": 0.36944445967674255,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 18.08333396911621,
+              "hungry": 0.636631965637207,
+              "churn": 0.535937488079071,
+              "viable": 1.4375
+            }
+          ],
+          "mean_food": 0.542621523141861,
+          "mean_d": 0.3680555671453476,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "NashTrap_M20_k4",
+          "m": 20,
+          "k": 4,
+          "initial": "trap",
+          "mode": "random",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.23283566534519196,
+              "food_std": 0.010291684418916702,
+              "d": 0.6833333373069763,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 20.0,
+              "hungry": 1.0,
+              "churn": 0.9496527910232544,
+              "viable": 0.0
+            },
+            {
+              "food": 0.22942130267620087,
+              "food_std": 0.009360984899103642,
+              "d": 0.6916666626930237,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 19.95833396911621,
+              "hungry": 1.0,
+              "churn": 0.9527778029441833,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.2311284840106964,
+          "mean_d": 0.6875,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "NashTrap_M20_k4",
+          "m": 20,
+          "k": 4,
+          "initial": "trap",
+          "mode": "frozen",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.5,
+              "food_std": 0.0,
+              "d": 0.5,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 2.0,
+              "hungry": 1.0,
+              "churn": 0.0,
+              "viable": 0.0
+            },
+            {
+              "food": 0.5,
+              "food_std": 0.0,
+              "d": 0.5,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 2.0,
+              "hungry": 1.0,
+              "churn": 0.0,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.5,
+          "mean_d": 0.5,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "NashTrap_M20_k4",
+          "m": 20,
+          "k": 4,
+          "initial": "trap",
+          "mode": "local_imitation",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.451174795627594,
+              "food_std": 0.0799119845032692,
+              "d": 0.5355902314186096,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 1.9791666269302368,
+              "hungry": 0.9543402791023254,
+              "churn": 0.20677083730697632,
+              "viable": 0.1875
+            },
+            {
+              "food": 0.4518113434314728,
+              "food_std": 0.08214770257472992,
+              "d": 0.5359375476837158,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 1.9583333730697632,
+              "hungry": 0.9416666626930237,
+              "churn": 0.21388888359069824,
+              "viable": 0.2291666716337204
+            }
+          ],
+          "mean_food": 0.4514930695295334,
+          "mean_d": 0.5357638895511627,
+          "exact": 0,
+          "total_worlds": 96
+        }
+      ]
+    },
+    {
+      "name": "v12_n120_c1_s2111",
+      "updates": 180,
+      "config": {
+        "n": 120,
+        "m": 10,
+        "k": 2,
+        "degree": 5,
+        "hidden": 8,
+        "communication": true,
+        "public": false,
+        "blind": false,
+        "alpha": 0.0,
+        "gamma": 0.97,
+        "lr": 0.008,
+        "entropy": 0.006,
+        "topology": "ring",
+        "init": "random",
+        "batch": 16,
+        "horizon": 16,
+        "device": "cuda",
+        "seed": 2111
+      },
+      "tests": [
+        {
+          "task": "known_M10_k2",
+          "m": 10,
+          "k": 2,
+          "initial": "random",
+          "mode": "learned_stochastic",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.2161516398191452,
+              "food_std": 0.0065819742158055305,
+              "d": 0.7194445133209229,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 10.0,
+              "hungry": 1.0,
+              "churn": 0.8921874761581421,
+              "viable": 0.0
+            },
+            {
+              "food": 0.2135937511920929,
+              "food_std": 0.005343284457921982,
+              "d": 0.7291666865348816,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 10.0,
+              "hungry": 1.0,
+              "churn": 0.8899305462837219,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.21487269550561905,
+          "mean_d": 0.7243055999279022,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "known_M10_k2",
+          "m": 10,
+          "k": 2,
+          "initial": "random",
+          "mode": "learned_greedy",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.22313079237937927,
+              "food_std": 0.010362785309553146,
+              "d": 0.7032987475395203,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 10.0,
+              "hungry": 1.0,
+              "churn": 0.5178819298744202,
+              "viable": 0.0
+            },
+            {
+              "food": 0.22589120268821716,
+              "food_std": 0.013029912486672401,
+              "d": 0.6935763359069824,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 10.0,
+              "hungry": 1.0,
+              "churn": 0.5189236402511597,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.22451099753379822,
+          "mean_d": 0.6984375417232513,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "known_M10_k2",
+          "m": 10,
+          "k": 2,
+          "initial": "random",
+          "mode": "messages_blocked",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.21375001966953278,
+              "food_std": 0.00665169907733798,
+              "d": 0.7265625,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 10.0,
+              "hungry": 1.0,
+              "churn": 0.8951388597488403,
+              "viable": 0.0
+            },
+            {
+              "food": 0.21714121103286743,
+              "food_std": 0.007432602345943451,
+              "d": 0.7194444537162781,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 10.0,
+              "hungry": 1.0,
+              "churn": 0.901562511920929,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.2154456153512001,
+          "mean_d": 0.723003476858139,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "known_M10_k2",
+          "m": 10,
+          "k": 2,
+          "initial": "random",
+          "mode": "messages_shuffled",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.2162500023841858,
+              "food_std": 0.006680638995021582,
+              "d": 0.7182291150093079,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 10.0,
+              "hungry": 1.0,
+              "churn": 0.8904513716697693,
+              "viable": 0.0
+            },
+            {
+              "food": 0.21380789577960968,
+              "food_std": 0.005538447294384241,
+              "d": 0.7288194298744202,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 10.0,
+              "hungry": 1.0,
+              "churn": 0.8888888955116272,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.21502894908189774,
+          "mean_d": 0.723524272441864,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "known_M10_k2",
+          "m": 10,
+          "k": 2,
+          "initial": "random",
+          "mode": "random",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.2142997682094574,
+              "food_std": 0.0062661804258823395,
+              "d": 0.7246527671813965,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 10.0,
+              "hungry": 1.0,
+              "churn": 0.8993055820465088,
+              "viable": 0.0
+            },
+            {
+              "food": 0.21337386965751648,
+              "food_std": 0.006006572861224413,
+              "d": 0.729687511920929,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 10.0,
+              "hungry": 1.0,
+              "churn": 0.9046875238418579,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.21383681893348694,
+          "mean_d": 0.7271701395511627,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "known_M10_k2",
+          "m": 10,
+          "k": 2,
+          "initial": "random",
+          "mode": "frozen",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.21443867683410645,
+              "food_std": 0.006588445045053959,
+              "d": 0.7251736521720886,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 10.0,
+              "hungry": 1.0,
+              "churn": 0.0,
+              "viable": 0.0
+            },
+            {
+              "food": 0.21525463461875916,
+              "food_std": 0.008005275391042233,
+              "d": 0.7223958373069763,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 10.0,
+              "hungry": 1.0,
+              "churn": 0.0,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.2148466557264328,
+          "mean_d": 0.7237847447395325,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "known_M10_k2",
+          "m": 10,
+          "k": 2,
+          "initial": "random",
+          "mode": "local_imitation",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.5821036100387573,
+              "food_std": 0.11338864266872406,
+              "d": 0.33229169249534607,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 4.6875,
+              "hungry": 0.8269097208976746,
+              "churn": 0.3803819417953491,
+              "viable": 0.3541666567325592
+            },
+            {
+              "food": 0.5572916865348816,
+              "food_std": 0.11678152531385422,
+              "d": 0.35277774930000305,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 4.833333492279053,
+              "hungry": 0.8795138597488403,
+              "churn": 0.4116319417953491,
+              "viable": 0.25
+            }
+          ],
+          "mean_food": 0.5696976482868195,
+          "mean_d": 0.34253472089767456,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "known_M20_k4",
+          "m": 20,
+          "k": 4,
+          "initial": "random",
+          "mode": "learned_stochastic",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.22972221672534943,
+              "food_std": 0.010482201352715492,
+              "d": 0.691493034362793,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 19.95833396911621,
+              "hungry": 1.0,
+              "churn": 0.9512152671813965,
+              "viable": 0.0
+            },
+            {
+              "food": 0.23320603370666504,
+              "food_std": 0.011528190225362778,
+              "d": 0.6821179986000061,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 19.95833396911621,
+              "hungry": 1.0,
+              "churn": 0.9486111402511597,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.23146412521600723,
+          "mean_d": 0.6868055164813995,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "known_M20_k4",
+          "m": 20,
+          "k": 4,
+          "initial": "random",
+          "mode": "learned_greedy",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.2642592489719391,
+              "food_std": 0.02062997780740261,
+              "d": 0.6328125,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 19.60416603088379,
+              "hungry": 1.0,
+              "churn": 0.519618034362793,
+              "viable": 0.0
+            },
+            {
+              "food": 0.25848379731178284,
+              "food_std": 0.016981493681669235,
+              "d": 0.6413194537162781,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 19.70833396911621,
+              "hungry": 1.0,
+              "churn": 0.519618034362793,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.26137152314186096,
+          "mean_d": 0.637065976858139,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "known_M20_k4",
+          "m": 20,
+          "k": 4,
+          "initial": "random",
+          "mode": "messages_blocked",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.2306944578886032,
+              "food_std": 0.011122393421828747,
+              "d": 0.6869791150093079,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 19.97916603088379,
+              "hungry": 1.0,
+              "churn": 0.9494791626930237,
+              "viable": 0.0
+            },
+            {
+              "food": 0.23045139014720917,
+              "food_std": 0.008197707124054432,
+              "d": 0.691319465637207,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 19.91666603088379,
+              "hungry": 1.0,
+              "churn": 0.948437511920929,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.2305729240179062,
+          "mean_d": 0.6891492903232574,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "known_M20_k4",
+          "m": 20,
+          "k": 4,
+          "initial": "random",
+          "mode": "messages_shuffled",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.22967593371868134,
+              "food_std": 0.009904920123517513,
+              "d": 0.6911458373069763,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 19.95833396911621,
+              "hungry": 1.0,
+              "churn": 0.9510416388511658,
+              "viable": 0.0
+            },
+            {
+              "food": 0.23270833492279053,
+              "food_std": 0.011255214922130108,
+              "d": 0.6828124523162842,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 19.95833396911621,
+              "hungry": 1.0,
+              "churn": 0.948437511920929,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.23119213432073593,
+          "mean_d": 0.6869791448116302,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "unseen_M30_k3",
+          "m": 30,
+          "k": 3,
+          "initial": "random",
+          "mode": "learned_stochastic",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.1251649260520935,
+              "food_std": 0.006188202649354935,
+              "d": 0.8052082657814026,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 29.41666603088379,
+              "hungry": 1.0,
+              "churn": 0.9663194417953491,
+              "viable": 0.0
+            },
+            {
+              "food": 0.12279513478279114,
+              "food_std": 0.006520179100334644,
+              "d": 0.8144097328186035,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 29.47916603088379,
+              "hungry": 1.0,
+              "churn": 0.964930534362793,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.12398003041744232,
+          "mean_d": 0.809808999300003,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "unseen_M30_k3",
+          "m": 30,
+          "k": 3,
+          "initial": "random",
+          "mode": "learned_greedy",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.14668403565883636,
+              "food_std": 0.011556386947631836,
+              "d": 0.7623264193534851,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 28.125,
+              "hungry": 1.0,
+              "churn": 0.5243055820465088,
+              "viable": 0.0
+            },
+            {
+              "food": 0.14809027314186096,
+              "food_std": 0.012842762283980846,
+              "d": 0.7609374523162842,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 27.6875,
+              "hungry": 1.0,
+              "churn": 0.5263888835906982,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.14738715440034866,
+          "mean_d": 0.7616319358348846,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "unseen_M30_k3",
+          "m": 30,
+          "k": 3,
+          "initial": "random",
+          "mode": "messages_blocked",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.12426215410232544,
+              "food_std": 0.006916561163961887,
+              "d": 0.8065972328186035,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 29.5,
+              "hungry": 1.0,
+              "churn": 0.9659722447395325,
+              "viable": 0.0
+            },
+            {
+              "food": 0.1236458346247673,
+              "food_std": 0.00578570831567049,
+              "d": 0.813368022441864,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 29.35416603088379,
+              "hungry": 1.0,
+              "churn": 0.9651041626930237,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.12395399436354637,
+          "mean_d": 0.8099826276302338,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "unseen_M30_k3",
+          "m": 30,
+          "k": 3,
+          "initial": "random",
+          "mode": "messages_shuffled",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.12518230080604553,
+              "food_std": 0.006205226760357618,
+              "d": 0.8052083849906921,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 29.41666603088379,
+              "hungry": 1.0,
+              "churn": 0.965624988079071,
+              "viable": 0.0
+            },
+            {
+              "food": 0.12298611551523209,
+              "food_std": 0.006488691084086895,
+              "d": 0.8135416507720947,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 29.45833396911621,
+              "hungry": 1.0,
+              "churn": 0.964930534362793,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.12408420816063881,
+          "mean_d": 0.8093750178813934,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "unseen_M30_k5",
+          "m": 30,
+          "k": 5,
+          "initial": "random",
+          "mode": "learned_stochastic",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.2086082398891449,
+              "food_std": 0.0103136682882905,
+              "d": 0.7003471851348877,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 29.41666603088379,
+              "hungry": 1.0,
+              "churn": 0.9663194417953491,
+              "viable": 0.0
+            },
+            {
+              "food": 0.204644113779068,
+              "food_std": 0.01087915524840355,
+              "d": 0.7104166150093079,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 29.47916603088379,
+              "hungry": 1.0,
+              "churn": 0.964930534362793,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.20662617683410645,
+          "mean_d": 0.7053819000720978,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "unseen_M30_k5",
+          "m": 30,
+          "k": 5,
+          "initial": "random",
+          "mode": "learned_greedy",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.2417534738779068,
+              "food_std": 0.022958556190133095,
+              "d": 0.6480903029441833,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 28.125,
+              "hungry": 1.0,
+              "churn": 0.5230903029441833,
+              "viable": 0.0
+            },
+            {
+              "food": 0.25490453839302063,
+              "food_std": 0.028372326865792274,
+              "d": 0.6338541507720947,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 27.75,
+              "hungry": 1.0,
+              "churn": 0.5227430462837219,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.24832900613546371,
+          "mean_d": 0.640972226858139,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "unseen_M30_k5",
+          "m": 30,
+          "k": 5,
+          "initial": "random",
+          "mode": "messages_blocked",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.2070891112089157,
+              "food_std": 0.01154564693570137,
+              "d": 0.7020833492279053,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 29.5,
+              "hungry": 1.0,
+              "churn": 0.9657986164093018,
+              "viable": 0.0
+            },
+            {
+              "food": 0.20607638359069824,
+              "food_std": 0.009642845019698143,
+              "d": 0.7092013359069824,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 29.35416603088379,
+              "hungry": 1.0,
+              "churn": 0.9651041626930237,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.20658274739980698,
+          "mean_d": 0.7056423425674438,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "unseen_M30_k5",
+          "m": 30,
+          "k": 5,
+          "initial": "random",
+          "mode": "messages_shuffled",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.20863714814186096,
+              "food_std": 0.01034204289317131,
+              "d": 0.7001736164093018,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 29.41666603088379,
+              "hungry": 1.0,
+              "churn": 0.965624988079071,
+              "viable": 0.0
+            },
+            {
+              "food": 0.2049768716096878,
+              "food_std": 0.01081448420882225,
+              "d": 0.7102430462837219,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 29.45833396911621,
+              "hungry": 1.0,
+              "churn": 0.964930534362793,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.20680700987577438,
+          "mean_d": 0.7052083313465118,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "unseen_M30_k5",
+          "m": 30,
+          "k": 5,
+          "initial": "random",
+          "mode": "random",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.20593170821666718,
+              "food_std": 0.009765486232936382,
+              "d": 0.7076389193534851,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 29.625,
+              "hungry": 1.0,
+              "churn": 0.9652777910232544,
+              "viable": 0.0
+            },
+            {
+              "food": 0.20555555820465088,
+              "food_std": 0.0073547763749957085,
+              "d": 0.7060763835906982,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 29.70833396911621,
+              "hungry": 1.0,
+              "churn": 0.9685763716697693,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.20574363321065903,
+          "mean_d": 0.7068576514720917,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "unseen_M30_k5",
+          "m": 30,
+          "k": 5,
+          "initial": "random",
+          "mode": "frozen",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.204644113779068,
+              "food_std": 0.008412713184952736,
+              "d": 0.707118034362793,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 29.625,
+              "hungry": 1.0,
+              "churn": 0.0,
+              "viable": 0.0
+            },
+            {
+              "food": 0.2083333283662796,
+              "food_std": 0.011069435626268387,
+              "d": 0.7010416984558105,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 29.45833396911621,
+              "hungry": 1.0,
+              "churn": 0.0,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.2064887210726738,
+          "mean_d": 0.7040798664093018,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "unseen_M30_k5",
+          "m": 30,
+          "k": 5,
+          "initial": "random",
+          "mode": "local_imitation",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.6638021469116211,
+              "food_std": 0.09959900379180908,
+              "d": 0.2595486342906952,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 5.479166507720947,
+              "hungry": 0.7545138597488403,
+              "churn": 0.4053819477558136,
+              "viable": 1.2083333730697632
+            },
+            {
+              "food": 0.6706814169883728,
+              "food_std": 0.10562699288129807,
+              "d": 0.244791641831398,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 5.770833492279053,
+              "hungry": 0.7699652910232544,
+              "churn": 0.43263888359069824,
+              "viable": 1.1458333730697632
+            }
+          ],
+          "mean_food": 0.667241781949997,
+          "mean_d": 0.2521701380610466,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "unseen_M50_k6",
+          "m": 50,
+          "k": 6,
+          "initial": "random",
+          "mode": "learned_stochastic",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.1680208444595337,
+              "food_std": 0.00999077595770359,
+              "d": 0.7454860806465149,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 45.52083206176758,
+              "hungry": 1.0,
+              "churn": 0.980381965637207,
+              "viable": 0.0
+            },
+            {
+              "food": 0.1705729216337204,
+              "food_std": 0.009163758717477322,
+              "d": 0.7406249642372131,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 45.41666793823242,
+              "hungry": 1.0,
+              "churn": 0.9810763597488403,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.16929688304662704,
+          "mean_d": 0.743055522441864,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "unseen_M50_k6",
+          "m": 50,
+          "k": 6,
+          "initial": "random",
+          "mode": "learned_greedy",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.2241840362548828,
+              "food_std": 0.02026979997754097,
+              "d": 0.6621527671813965,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 38.54166793823242,
+              "hungry": 1.0,
+              "churn": 0.5282986164093018,
+              "viable": 0.0
+            },
+            {
+              "food": 0.22508680820465088,
+              "food_std": 0.019101064652204514,
+              "d": 0.6572917103767395,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 38.52083206176758,
+              "hungry": 1.0,
+              "churn": 0.5234375,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.22463542222976685,
+          "mean_d": 0.659722238779068,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "unseen_M50_k6",
+          "m": 50,
+          "k": 6,
+          "initial": "random",
+          "mode": "messages_blocked",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.17184028029441833,
+              "food_std": 0.010087807662785053,
+              "d": 0.7364583015441895,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 45.60416793823242,
+              "hungry": 1.0,
+              "churn": 0.9807291626930237,
+              "viable": 0.0
+            },
+            {
+              "food": 0.16869793832302094,
+              "food_std": 0.010592825710773468,
+              "d": 0.7449652552604675,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 45.29166793823242,
+              "hungry": 1.0,
+              "churn": 0.9772569537162781,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.17026910930871964,
+          "mean_d": 0.7407117784023285,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "unseen_M50_k6",
+          "m": 50,
+          "k": 6,
+          "initial": "random",
+          "mode": "messages_shuffled",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.16819444298744202,
+              "food_std": 0.010065375827252865,
+              "d": 0.7451388835906982,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 45.58333206176758,
+              "hungry": 1.0,
+              "churn": 0.980555534362793,
+              "viable": 0.0
+            },
+            {
+              "food": 0.1705729216337204,
+              "food_std": 0.009412972256541252,
+              "d": 0.7413194179534912,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 45.35416793823242,
+              "hungry": 1.0,
+              "churn": 0.9809027910232544,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.1693836823105812,
+          "mean_d": 0.7432291507720947,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "unseen_M50_k10",
+          "m": 50,
+          "k": 10,
+          "initial": "random",
+          "mode": "learned_stochastic",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.2800346910953522,
+              "food_std": 0.01665128767490387,
+              "d": 0.6126735806465149,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 45.52083206176758,
+              "hungry": 1.0,
+              "churn": 0.980381965637207,
+              "viable": 0.0
+            },
+            {
+              "food": 0.2842881977558136,
+              "food_std": 0.015272926539182663,
+              "d": 0.6060764193534851,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 45.41666793823242,
+              "hungry": 1.0,
+              "churn": 0.9810763597488403,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.2821614444255829,
+          "mean_d": 0.609375,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "unseen_M50_k10",
+          "m": 50,
+          "k": 10,
+          "initial": "random",
+          "mode": "learned_greedy",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.36228299140930176,
+              "food_std": 0.02792501263320446,
+              "d": 0.5189235806465149,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 39.08333206176758,
+              "hungry": 0.9899305701255798,
+              "churn": 0.5310763716697693,
+              "viable": 0.1041666641831398
+            },
+            {
+              "food": 0.3741897940635681,
+              "food_std": 0.027258725836873055,
+              "d": 0.5039930939674377,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 38.58333206176758,
+              "hungry": 0.9829860925674438,
+              "churn": 0.5269097089767456,
+              "viable": 0.1666666716337204
+            }
+          ],
+          "mean_food": 0.36823639273643494,
+          "mean_d": 0.5114583373069763,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "unseen_M50_k10",
+          "m": 50,
+          "k": 10,
+          "initial": "random",
+          "mode": "messages_blocked",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.2864004373550415,
+              "food_std": 0.0168130062520504,
+              "d": 0.6026042103767395,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 45.60416793823242,
+              "hungry": 1.0,
+              "churn": 0.9807291626930237,
+              "viable": 0.0
+            },
+            {
+              "food": 0.28116318583488464,
+              "food_std": 0.017654703930020332,
+              "d": 0.612500011920929,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 45.29166793823242,
+              "hungry": 1.0,
+              "churn": 0.9772569537162781,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.2837818115949631,
+          "mean_d": 0.6075521111488342,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "unseen_M50_k10",
+          "m": 50,
+          "k": 10,
+          "initial": "random",
+          "mode": "messages_shuffled",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.2803240418434143,
+              "food_std": 0.016775619238615036,
+              "d": 0.6119791865348816,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 45.58333206176758,
+              "hungry": 1.0,
+              "churn": 0.9807291626930237,
+              "viable": 0.0
+            },
+            {
+              "food": 0.2842881977558136,
+              "food_std": 0.01568828709423542,
+              "d": 0.6062500476837158,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 45.35416793823242,
+              "hungry": 1.0,
+              "churn": 0.9809027910232544,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.28230611979961395,
+          "mean_d": 0.6091146171092987,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "NashTrap_M20_k2",
+          "m": 20,
+          "k": 2,
+          "initial": "trap",
+          "mode": "learned_stochastic",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.11517361551523209,
+              "food_std": 0.005370657425373793,
+              "d": 0.8352430462837219,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 20.0,
+              "hungry": 1.0,
+              "churn": 0.9553819298744202,
+              "viable": 0.0
+            },
+            {
+              "food": 0.11659722775220871,
+              "food_std": 0.006080918945372105,
+              "d": 0.8272569179534912,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 19.95833396911621,
+              "hungry": 1.0,
+              "churn": 0.9472222328186035,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.1158854216337204,
+          "mean_d": 0.8312499821186066,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "NashTrap_M20_k2",
+          "m": 20,
+          "k": 2,
+          "initial": "trap",
+          "mode": "learned_greedy",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.4647221863269806,
+              "food_std": 2.9802322387695312e-08,
+              "d": 0.42499998211860657,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 19.0,
+              "hungry": 0.550000011920929,
+              "churn": 0.4833333194255829,
+              "viable": 1.0
+            },
+            {
+              "food": 0.4647221863269806,
+              "food_std": 2.9802322387695312e-08,
+              "d": 0.42499998211860657,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 19.0,
+              "hungry": 0.550000011920929,
+              "churn": 0.4833333194255829,
+              "viable": 1.0
+            }
+          ],
+          "mean_food": 0.4647221863269806,
+          "mean_d": 0.42499998211860657,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "NashTrap_M20_k2",
+          "m": 20,
+          "k": 2,
+          "initial": "trap",
+          "mode": "messages_blocked",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.11557869613170624,
+              "food_std": 0.00498320022597909,
+              "d": 0.8267361521720886,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 19.97916603088379,
+              "hungry": 1.0,
+              "churn": 0.9437500238418579,
+              "viable": 0.0
+            },
+            {
+              "food": 0.1158854141831398,
+              "food_std": 0.0049224491231143475,
+              "d": 0.8274305462837219,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 20.0,
+              "hungry": 1.0,
+              "churn": 0.9477430582046509,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.11573205515742302,
+          "mean_d": 0.8270833492279053,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "NashTrap_M20_k2",
+          "m": 20,
+          "k": 2,
+          "initial": "trap",
+          "mode": "messages_shuffled",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.11527199298143387,
+              "food_std": 0.005324624013155699,
+              "d": 0.835069477558136,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 19.97916603088379,
+              "hungry": 1.0,
+              "churn": 0.9550347328186035,
+              "viable": 0.0
+            },
+            {
+              "food": 0.11678241193294525,
+              "food_std": 0.006115010939538479,
+              "d": 0.8263888955116272,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 19.95833396911621,
+              "hungry": 1.0,
+              "churn": 0.9472222328186035,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.11602720245718956,
+          "mean_d": 0.8307291865348816,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "NashTrap_M20_k4",
+          "m": 20,
+          "k": 4,
+          "initial": "trap",
+          "mode": "learned_stochastic",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.23034723103046417,
+              "food_std": 0.010741314850747585,
+              "d": 0.6921875476837158,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 20.0,
+              "hungry": 1.0,
+              "churn": 0.9552083611488342,
+              "viable": 0.0
+            },
+            {
+              "food": 0.23319445550441742,
+              "food_std": 0.0121300732716918,
+              "d": 0.6855902671813965,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 19.95833396911621,
+              "hungry": 1.0,
+              "churn": 0.9472222328186035,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.2317708432674408,
+          "mean_d": 0.6888889074325562,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "NashTrap_M20_k4",
+          "m": 20,
+          "k": 4,
+          "initial": "trap",
+          "mode": "learned_greedy",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.549456000328064,
+              "food_std": 0.03406965360045433,
+              "d": 0.37986111640930176,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 17.54166603088379,
+              "hungry": 0.7119791507720947,
+              "churn": 0.5026041865348816,
+              "viable": 1.1041666269302368
+            },
+            {
+              "food": 0.5578067302703857,
+              "food_std": 0.02195712737739086,
+              "d": 0.3758680522441864,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 17.75,
+              "hungry": 0.6880208253860474,
+              "churn": 0.503819465637207,
+              "viable": 1.1875
+            }
+          ],
+          "mean_food": 0.5536313652992249,
+          "mean_d": 0.3778645843267441,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "NashTrap_M20_k4",
+          "m": 20,
+          "k": 4,
+          "initial": "trap",
+          "mode": "messages_blocked",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.23111110925674438,
+              "food_std": 0.00991735327988863,
+              "d": 0.6850695013999939,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 19.97916603088379,
+              "hungry": 1.0,
+              "churn": 0.9437500238418579,
+              "viable": 0.0
+            },
+            {
+              "food": 0.2317708283662796,
+              "food_std": 0.009844898246228695,
+              "d": 0.6861110329627991,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 20.0,
+              "hungry": 1.0,
+              "churn": 0.9477430582046509,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.231440968811512,
+          "mean_d": 0.6855902671813965,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "NashTrap_M20_k4",
+          "m": 20,
+          "k": 4,
+          "initial": "trap",
+          "mode": "messages_shuffled",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.23054398596286774,
+              "food_std": 0.010649248026311398,
+              "d": 0.6918403506278992,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 19.97916603088379,
+              "hungry": 1.0,
+              "churn": 0.9550347328186035,
+              "viable": 0.0
+            },
+            {
+              "food": 0.2335648238658905,
+              "food_std": 0.012230021879076958,
+              "d": 0.6850693821907043,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 19.95833396911621,
+              "hungry": 1.0,
+              "churn": 0.9472222328186035,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.23205440491437912,
+          "mean_d": 0.6884548664093018,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "NashTrap_M20_k4",
+          "m": 20,
+          "k": 4,
+          "initial": "trap",
+          "mode": "random",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.23283566534519196,
+              "food_std": 0.010291684418916702,
+              "d": 0.6833333373069763,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 20.0,
+              "hungry": 1.0,
+              "churn": 0.9496527910232544,
+              "viable": 0.0
+            },
+            {
+              "food": 0.22942130267620087,
+              "food_std": 0.009360984899103642,
+              "d": 0.6916666626930237,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 19.95833396911621,
+              "hungry": 1.0,
+              "churn": 0.9527778029441833,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.2311284840106964,
+          "mean_d": 0.6875,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "NashTrap_M20_k4",
+          "m": 20,
+          "k": 4,
+          "initial": "trap",
+          "mode": "frozen",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.5,
+              "food_std": 0.0,
+              "d": 0.5,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 2.0,
+              "hungry": 1.0,
+              "churn": 0.0,
+              "viable": 0.0
+            },
+            {
+              "food": 0.5,
+              "food_std": 0.0,
+              "d": 0.5,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 2.0,
+              "hungry": 1.0,
+              "churn": 0.0,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.5,
+          "mean_d": 0.5,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "NashTrap_M20_k4",
+          "m": 20,
+          "k": 4,
+          "initial": "trap",
+          "mode": "local_imitation",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.451174795627594,
+              "food_std": 0.0799119845032692,
+              "d": 0.5355902314186096,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 1.9791666269302368,
+              "hungry": 0.9543402791023254,
+              "churn": 0.20677083730697632,
+              "viable": 0.1875
+            },
+            {
+              "food": 0.4518113434314728,
+              "food_std": 0.08214770257472992,
+              "d": 0.5359375476837158,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 1.9583333730697632,
+              "hungry": 0.9416666626930237,
+              "churn": 0.21388888359069824,
+              "viable": 0.2291666716337204
+            }
+          ],
+          "mean_food": 0.4514930695295334,
+          "mean_d": 0.5357638895511627,
+          "exact": 0,
+          "total_worlds": 96
+        }
+      ]
+    },
+    {
+      "name": "v12_n120_c1pub_s2111",
+      "updates": 180,
+      "config": {
+        "n": 120,
+        "m": 10,
+        "k": 2,
+        "degree": 5,
+        "hidden": 8,
+        "communication": true,
+        "public": true,
+        "blind": false,
+        "alpha": 0.1,
+        "gamma": 0.97,
+        "lr": 0.008,
+        "entropy": 0.006,
+        "topology": "ring",
+        "init": "random",
+        "batch": 16,
+        "horizon": 16,
+        "device": "cuda",
+        "seed": 2111
+      },
+      "tests": [
+        {
+          "task": "known_M10_k2",
+          "m": 10,
+          "k": 2,
+          "initial": "random",
+          "mode": "learned_stochastic",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.2158796340227127,
+              "food_std": 0.006284200586378574,
+              "d": 0.7197916507720947,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 10.0,
+              "hungry": 1.0,
+              "churn": 0.8913194537162781,
+              "viable": 0.0
+            },
+            {
+              "food": 0.2135416865348816,
+              "food_std": 0.005323720630258322,
+              "d": 0.729687511920929,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 10.0,
+              "hungry": 1.0,
+              "churn": 0.8890625238418579,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.21471066027879715,
+          "mean_d": 0.7247395813465118,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "known_M10_k2",
+          "m": 10,
+          "k": 2,
+          "initial": "random",
+          "mode": "learned_greedy",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.22479166090488434,
+              "food_std": 0.010722292587161064,
+              "d": 0.6987847685813904,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 10.0,
+              "hungry": 1.0,
+              "churn": 0.5140625238418579,
+              "viable": 0.0
+            },
+            {
+              "food": 0.22575810551643372,
+              "food_std": 0.01094151847064495,
+              "d": 0.6963542103767395,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 10.0,
+              "hungry": 1.0,
+              "churn": 0.5128472447395325,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.22527488321065903,
+          "mean_d": 0.6975694894790649,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "known_M10_k2",
+          "m": 10,
+          "k": 2,
+          "initial": "random",
+          "mode": "messages_blocked",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.21364006400108337,
+              "food_std": 0.006829189136624336,
+              "d": 0.7277777791023254,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 10.0,
+              "hungry": 1.0,
+              "churn": 0.8935763835906982,
+              "viable": 0.0
+            },
+            {
+              "food": 0.2170196920633316,
+              "food_std": 0.007709634490311146,
+              "d": 0.7206597328186035,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 10.0,
+              "hungry": 1.0,
+              "churn": 0.9019097089767456,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.2153298780322075,
+          "mean_d": 0.7242187559604645,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "known_M10_k2",
+          "m": 10,
+          "k": 2,
+          "initial": "random",
+          "mode": "messages_shuffled",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.21623265743255615,
+              "food_std": 0.006804824806749821,
+              "d": 0.7190973162651062,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 10.0,
+              "hungry": 1.0,
+              "churn": 0.8907986283302307,
+              "viable": 0.0
+            },
+            {
+              "food": 0.21368637681007385,
+              "food_std": 0.005460337270051241,
+              "d": 0.7286458015441895,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 10.0,
+              "hungry": 1.0,
+              "churn": 0.8883680701255798,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.214959517121315,
+          "mean_d": 0.7238715589046478,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "known_M10_k2",
+          "m": 10,
+          "k": 2,
+          "initial": "random",
+          "mode": "random",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.2142997682094574,
+              "food_std": 0.0062661804258823395,
+              "d": 0.7246527671813965,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 10.0,
+              "hungry": 1.0,
+              "churn": 0.8993055820465088,
+              "viable": 0.0
+            },
+            {
+              "food": 0.21337386965751648,
+              "food_std": 0.006006572861224413,
+              "d": 0.729687511920929,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 10.0,
+              "hungry": 1.0,
+              "churn": 0.9046875238418579,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.21383681893348694,
+          "mean_d": 0.7271701395511627,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "known_M10_k2",
+          "m": 10,
+          "k": 2,
+          "initial": "random",
+          "mode": "frozen",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.21443867683410645,
+              "food_std": 0.006588445045053959,
+              "d": 0.7251736521720886,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 10.0,
+              "hungry": 1.0,
+              "churn": 0.0,
+              "viable": 0.0
+            },
+            {
+              "food": 0.21525463461875916,
+              "food_std": 0.008005275391042233,
+              "d": 0.7223958373069763,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 10.0,
+              "hungry": 1.0,
+              "churn": 0.0,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.2148466557264328,
+          "mean_d": 0.7237847447395325,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "known_M10_k2",
+          "m": 10,
+          "k": 2,
+          "initial": "random",
+          "mode": "local_imitation",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.5821036100387573,
+              "food_std": 0.11338864266872406,
+              "d": 0.33229169249534607,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 4.6875,
+              "hungry": 0.8269097208976746,
+              "churn": 0.3803819417953491,
+              "viable": 0.3541666567325592
+            },
+            {
+              "food": 0.5572916865348816,
+              "food_std": 0.11678152531385422,
+              "d": 0.35277774930000305,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 4.833333492279053,
+              "hungry": 0.8795138597488403,
+              "churn": 0.4116319417953491,
+              "viable": 0.25
+            }
+          ],
+          "mean_food": 0.5696976482868195,
+          "mean_d": 0.34253472089767456,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "known_M20_k4",
+          "m": 20,
+          "k": 4,
+          "initial": "random",
+          "mode": "learned_stochastic",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.22937501966953278,
+              "food_std": 0.010253743268549442,
+              "d": 0.691319465637207,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 19.95833396911621,
+              "hungry": 1.0,
+              "churn": 0.9505208134651184,
+              "viable": 0.0
+            },
+            {
+              "food": 0.232962965965271,
+              "food_std": 0.011352886445820332,
+              "d": 0.6826388835906982,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 19.95833396911621,
+              "hungry": 1.0,
+              "churn": 0.948437511920929,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.23116899281740189,
+          "mean_d": 0.6869791746139526,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "known_M20_k4",
+          "m": 20,
+          "k": 4,
+          "initial": "random",
+          "mode": "learned_greedy",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.25783565640449524,
+              "food_std": 0.01796925626695156,
+              "d": 0.6411458253860474,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 19.77083396911621,
+              "hungry": 1.0,
+              "churn": 0.5107638835906982,
+              "viable": 0.0
+            },
+            {
+              "food": 0.26186344027519226,
+              "food_std": 0.01971520483493805,
+              "d": 0.635937511920929,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 19.66666603088379,
+              "hungry": 1.0,
+              "churn": 0.5095486044883728,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.25984954833984375,
+          "mean_d": 0.6385416686534882,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "known_M20_k4",
+          "m": 20,
+          "k": 4,
+          "initial": "random",
+          "mode": "messages_blocked",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.23076389729976654,
+              "food_std": 0.011201385408639908,
+              "d": 0.6873263716697693,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 19.97916603088379,
+              "hungry": 1.0,
+              "churn": 0.9486111402511597,
+              "viable": 0.0
+            },
+            {
+              "food": 0.23030094802379608,
+              "food_std": 0.008190098218619823,
+              "d": 0.691493034362793,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 19.91666603088379,
+              "hungry": 1.0,
+              "churn": 0.9501736164093018,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.2305324226617813,
+          "mean_d": 0.6894097030162811,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "known_M20_k4",
+          "m": 20,
+          "k": 4,
+          "initial": "random",
+          "mode": "messages_shuffled",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.22967593371868134,
+              "food_std": 0.010173922404646873,
+              "d": 0.6911458373069763,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 19.95833396911621,
+              "hungry": 1.0,
+              "churn": 0.9508680701255798,
+              "viable": 0.0
+            },
+            {
+              "food": 0.23289354145526886,
+              "food_std": 0.011029189452528954,
+              "d": 0.6824652552604675,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 19.95833396911621,
+              "hungry": 1.0,
+              "churn": 0.9475694298744202,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.2312847375869751,
+          "mean_d": 0.6868055462837219,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "unseen_M30_k3",
+          "m": 30,
+          "k": 3,
+          "initial": "random",
+          "mode": "learned_stochastic",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.1251562535762787,
+              "food_std": 0.006132358219474554,
+              "d": 0.8053819537162781,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 29.41666603088379,
+              "hungry": 1.0,
+              "churn": 0.9659722447395325,
+              "viable": 0.0
+            },
+            {
+              "food": 0.122942715883255,
+              "food_std": 0.006418114062398672,
+              "d": 0.8142361640930176,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 29.45833396911621,
+              "hungry": 1.0,
+              "churn": 0.9652777910232544,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.12404948472976685,
+          "mean_d": 0.8098090589046478,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "unseen_M30_k3",
+          "m": 30,
+          "k": 3,
+          "initial": "random",
+          "mode": "learned_greedy",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.1497395932674408,
+              "food_std": 0.012698831968009472,
+              "d": 0.7585069537162781,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 27.89583396911621,
+              "hungry": 1.0,
+              "churn": 0.5119791626930237,
+              "viable": 0.0
+            },
+            {
+              "food": 0.15080729126930237,
+              "food_std": 0.013870839960873127,
+              "d": 0.7571180462837219,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 27.83333396911621,
+              "hungry": 1.0,
+              "churn": 0.5128472447395325,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.15027344226837158,
+          "mean_d": 0.7578125,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "unseen_M30_k3",
+          "m": 30,
+          "k": 3,
+          "initial": "random",
+          "mode": "messages_blocked",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.12417535483837128,
+              "food_std": 0.007000892888754606,
+              "d": 0.8071181178092957,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 29.5,
+              "hungry": 1.0,
+              "churn": 0.9659722447395325,
+              "viable": 0.0
+            },
+            {
+              "food": 0.12366319447755814,
+              "food_std": 0.006085782777518034,
+              "d": 0.8130207657814026,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 29.375,
+              "hungry": 1.0,
+              "churn": 0.964062511920929,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.1239192746579647,
+          "mean_d": 0.8100694417953491,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "unseen_M30_k3",
+          "m": 30,
+          "k": 3,
+          "initial": "random",
+          "mode": "messages_shuffled",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.12518228590488434,
+              "food_std": 0.006194141693413258,
+              "d": 0.8050348162651062,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 29.41666603088379,
+              "hungry": 1.0,
+              "churn": 0.965624988079071,
+              "viable": 0.0
+            },
+            {
+              "food": 0.12311631441116333,
+              "food_std": 0.006438135635107756,
+              "d": 0.8133680820465088,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 29.45833396911621,
+              "hungry": 1.0,
+              "churn": 0.9654513597488403,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.12414930015802383,
+          "mean_d": 0.8092014491558075,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "unseen_M30_k5",
+          "m": 30,
+          "k": 5,
+          "initial": "random",
+          "mode": "learned_stochastic",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.2085503488779068,
+              "food_std": 0.010190599597990513,
+              "d": 0.7006945013999939,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 29.41666603088379,
+              "hungry": 1.0,
+              "churn": 0.9657986164093018,
+              "viable": 0.0
+            },
+            {
+              "food": 0.20494791865348816,
+              "food_std": 0.010652822442352772,
+              "d": 0.7097222208976746,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 29.45833396911621,
+              "hungry": 1.0,
+              "churn": 0.9652777910232544,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.20674913376569748,
+          "mean_d": 0.7052083611488342,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "unseen_M30_k5",
+          "m": 30,
+          "k": 5,
+          "initial": "random",
+          "mode": "learned_greedy",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.25085359811782837,
+              "food_std": 0.020593352615833282,
+              "d": 0.6361110806465149,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 27.70833396911621,
+              "hungry": 1.0,
+              "churn": 0.5090277791023254,
+              "viable": 0.0
+            },
+            {
+              "food": 0.25078123807907104,
+              "food_std": 0.02666071057319641,
+              "d": 0.6390624642372131,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 27.89583396911621,
+              "hungry": 0.9963541626930237,
+              "churn": 0.5137152671813965,
+              "viable": 0.02083333395421505
+            }
+          ],
+          "mean_food": 0.2508174180984497,
+          "mean_d": 0.637586772441864,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "unseen_M30_k5",
+          "m": 30,
+          "k": 5,
+          "initial": "random",
+          "mode": "messages_blocked",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.20701679587364197,
+              "food_std": 0.011647256091237068,
+              "d": 0.7024305462837219,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 29.5,
+              "hungry": 1.0,
+              "churn": 0.9659722447395325,
+              "viable": 0.0
+            },
+            {
+              "food": 0.20609083771705627,
+              "food_std": 0.010113492608070374,
+              "d": 0.7086805701255798,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 29.375,
+              "hungry": 1.0,
+              "churn": 0.964062511920929,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.20655381679534912,
+          "mean_d": 0.7055555582046509,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "unseen_M30_k5",
+          "m": 30,
+          "k": 5,
+          "initial": "random",
+          "mode": "messages_shuffled",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.20863714814186096,
+              "food_std": 0.010323568247258663,
+              "d": 0.7001736164093018,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 29.41666603088379,
+              "hungry": 1.0,
+              "churn": 0.965624988079071,
+              "viable": 0.0
+            },
+            {
+              "food": 0.20516492426395416,
+              "food_std": 0.010689807124435902,
+              "d": 0.7097222805023193,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 29.45833396911621,
+              "hungry": 1.0,
+              "churn": 0.9657986164093018,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.20690103620290756,
+          "mean_d": 0.7049479484558105,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "unseen_M30_k5",
+          "m": 30,
+          "k": 5,
+          "initial": "random",
+          "mode": "random",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.20593170821666718,
+              "food_std": 0.009765486232936382,
+              "d": 0.7076389193534851,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 29.625,
+              "hungry": 1.0,
+              "churn": 0.9652777910232544,
+              "viable": 0.0
+            },
+            {
+              "food": 0.20555555820465088,
+              "food_std": 0.0073547763749957085,
+              "d": 0.7060763835906982,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 29.70833396911621,
+              "hungry": 1.0,
+              "churn": 0.9685763716697693,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.20574363321065903,
+          "mean_d": 0.7068576514720917,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "unseen_M30_k5",
+          "m": 30,
+          "k": 5,
+          "initial": "random",
+          "mode": "frozen",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.204644113779068,
+              "food_std": 0.008412713184952736,
+              "d": 0.707118034362793,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 29.625,
+              "hungry": 1.0,
+              "churn": 0.0,
+              "viable": 0.0
+            },
+            {
+              "food": 0.2083333283662796,
+              "food_std": 0.011069435626268387,
+              "d": 0.7010416984558105,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 29.45833396911621,
+              "hungry": 1.0,
+              "churn": 0.0,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.2064887210726738,
+          "mean_d": 0.7040798664093018,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "unseen_M30_k5",
+          "m": 30,
+          "k": 5,
+          "initial": "random",
+          "mode": "local_imitation",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.6638021469116211,
+              "food_std": 0.09959900379180908,
+              "d": 0.2595486342906952,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 5.479166507720947,
+              "hungry": 0.7545138597488403,
+              "churn": 0.4053819477558136,
+              "viable": 1.2083333730697632
+            },
+            {
+              "food": 0.6706814169883728,
+              "food_std": 0.10562699288129807,
+              "d": 0.244791641831398,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 5.770833492279053,
+              "hungry": 0.7699652910232544,
+              "churn": 0.43263888359069824,
+              "viable": 1.1458333730697632
+            }
+          ],
+          "mean_food": 0.667241781949997,
+          "mean_d": 0.2521701380610466,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "unseen_M50_k6",
+          "m": 50,
+          "k": 6,
+          "initial": "random",
+          "mode": "learned_stochastic",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.16805554926395416,
+              "food_std": 0.009945358149707317,
+              "d": 0.7454860806465149,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 45.5,
+              "hungry": 1.0,
+              "churn": 0.9798611402511597,
+              "viable": 0.0
+            },
+            {
+              "food": 0.17055556178092957,
+              "food_std": 0.009242638014256954,
+              "d": 0.7406249642372131,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 45.41666793823242,
+              "hungry": 1.0,
+              "churn": 0.9810763597488403,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.16930555552244186,
+          "mean_d": 0.743055522441864,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "unseen_M50_k6",
+          "m": 50,
+          "k": 6,
+          "initial": "random",
+          "mode": "learned_greedy",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.22161458432674408,
+              "food_std": 0.018119337037205696,
+              "d": 0.6638888716697693,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 38.5,
+              "hungry": 1.0,
+              "churn": 0.5107638835906982,
+              "viable": 0.0
+            },
+            {
+              "food": 0.22465278208255768,
+              "food_std": 0.022079946473240852,
+              "d": 0.6559028029441833,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 38.97916793823242,
+              "hungry": 1.0,
+              "churn": 0.5105902552604675,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.22313368320465088,
+          "mean_d": 0.6598958373069763,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "unseen_M50_k6",
+          "m": 50,
+          "k": 6,
+          "initial": "random",
+          "mode": "messages_blocked",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.17190973460674286,
+              "food_std": 0.009970962069928646,
+              "d": 0.7364583015441895,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 45.60416793823242,
+              "hungry": 1.0,
+              "churn": 0.9809027910232544,
+              "viable": 0.0
+            },
+            {
+              "food": 0.16861110925674438,
+              "food_std": 0.010752007365226746,
+              "d": 0.7451388835906982,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 45.29166793823242,
+              "hungry": 1.0,
+              "churn": 0.9776041507720947,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.17026042193174362,
+          "mean_d": 0.7407985925674438,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "unseen_M50_k6",
+          "m": 50,
+          "k": 6,
+          "initial": "random",
+          "mode": "messages_shuffled",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.16822916269302368,
+              "food_std": 0.010018251836299896,
+              "d": 0.7451388835906982,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 45.5625,
+              "hungry": 1.0,
+              "churn": 0.9800347089767456,
+              "viable": 0.0
+            },
+            {
+              "food": 0.17064236104488373,
+              "food_std": 0.009276862256228924,
+              "d": 0.741319477558136,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 45.35416793823242,
+              "hungry": 1.0,
+              "churn": 0.980555534362793,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.1694357618689537,
+          "mean_d": 0.7432291805744171,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "unseen_M50_k10",
+          "m": 50,
+          "k": 10,
+          "initial": "random",
+          "mode": "learned_stochastic",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.28009259700775146,
+              "food_std": 0.016575593501329422,
+              "d": 0.612500011920929,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 45.5,
+              "hungry": 1.0,
+              "churn": 0.9798611402511597,
+              "viable": 0.0
+            },
+            {
+              "food": 0.28425925970077515,
+              "food_std": 0.01540439110249281,
+              "d": 0.606249988079071,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 45.41666793823242,
+              "hungry": 1.0,
+              "churn": 0.9810763597488403,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.2821759283542633,
+          "mean_d": 0.609375,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "unseen_M50_k10",
+          "m": 50,
+          "k": 10,
+          "initial": "random",
+          "mode": "learned_greedy",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.3703992962837219,
+              "food_std": 0.03151783347129822,
+              "d": 0.5100694298744202,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 38.5,
+              "hungry": 0.9895833134651184,
+              "churn": 0.5111111402511597,
+              "viable": 0.1041666641831398
+            },
+            {
+              "food": 0.37741607427597046,
+              "food_std": 0.02887098863720894,
+              "d": 0.5032985806465149,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 38.5625,
+              "hungry": 0.9781249761581421,
+              "churn": 0.5092014074325562,
+              "viable": 0.2291666716337204
+            }
+          ],
+          "mean_food": 0.3739076852798462,
+          "mean_d": 0.5066840052604675,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "unseen_M50_k10",
+          "m": 50,
+          "k": 10,
+          "initial": "random",
+          "mode": "messages_blocked",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.286342591047287,
+              "food_std": 0.016505129635334015,
+              "d": 0.6027777791023254,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 45.625,
+              "hungry": 1.0,
+              "churn": 0.9809027910232544,
+              "viable": 0.0
+            },
+            {
+              "food": 0.28101852536201477,
+              "food_std": 0.017920013517141342,
+              "d": 0.6130208373069763,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 45.29166793823242,
+              "hungry": 1.0,
+              "churn": 0.9776041507720947,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.2836805582046509,
+          "mean_d": 0.6078993082046509,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "unseen_M50_k10",
+          "m": 50,
+          "k": 10,
+          "initial": "random",
+          "mode": "messages_shuffled",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.2802661955356598,
+              "food_std": 0.016462769359350204,
+              "d": 0.6119791865348816,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 45.58333206176758,
+              "hungry": 1.0,
+              "churn": 0.9798611402511597,
+              "viable": 0.0
+            },
+            {
+              "food": 0.284403920173645,
+              "food_std": 0.015461438335478306,
+              "d": 0.6064236164093018,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 45.35416793823242,
+              "hungry": 1.0,
+              "churn": 0.980555534362793,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.2823350578546524,
+          "mean_d": 0.6092014014720917,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "NashTrap_M20_k2",
+          "m": 20,
+          "k": 2,
+          "initial": "trap",
+          "mode": "learned_stochastic",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.11509259790182114,
+              "food_std": 0.005415874999016523,
+              "d": 0.8352430462837219,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 20.0,
+              "hungry": 1.0,
+              "churn": 0.9545139074325562,
+              "viable": 0.0
+            },
+            {
+              "food": 0.11661458760499954,
+              "food_std": 0.00604410283267498,
+              "d": 0.827256977558136,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 19.95833396911621,
+              "hungry": 1.0,
+              "churn": 0.9463541507720947,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.11585359275341034,
+          "mean_d": 0.831250011920929,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "NashTrap_M20_k2",
+          "m": 20,
+          "k": 2,
+          "initial": "trap",
+          "mode": "learned_greedy",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.47305557131767273,
+              "food_std": 0.0,
+              "d": 0.4500000476837158,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 16.0,
+              "hungry": 0.550000011920929,
+              "churn": 0.4833333194255829,
+              "viable": 1.0
+            },
+            {
+              "food": 0.47305557131767273,
+              "food_std": 0.0,
+              "d": 0.4500000476837158,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 16.0,
+              "hungry": 0.550000011920929,
+              "churn": 0.4833333194255829,
+              "viable": 1.0
+            }
+          ],
+          "mean_food": 0.47305557131767273,
+          "mean_d": 0.4500000476837158,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "NashTrap_M20_k2",
+          "m": 20,
+          "k": 2,
+          "initial": "trap",
+          "mode": "messages_blocked",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.11548611521720886,
+              "food_std": 0.004947155248373747,
+              "d": 0.8276041150093079,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 19.97916603088379,
+              "hungry": 1.0,
+              "churn": 0.9434027671813965,
+              "viable": 0.0
+            },
+            {
+              "food": 0.1159432977437973,
+              "food_std": 0.004874565172940493,
+              "d": 0.8274305462837219,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 20.0,
+              "hungry": 1.0,
+              "churn": 0.9487847089767456,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.11571470648050308,
+          "mean_d": 0.8275173306465149,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "NashTrap_M20_k2",
+          "m": 20,
+          "k": 2,
+          "initial": "trap",
+          "mode": "messages_shuffled",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.1151793897151947,
+              "food_std": 0.005345716141164303,
+              "d": 0.8352430462837219,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 20.0,
+              "hungry": 1.0,
+              "churn": 0.9548611044883728,
+              "viable": 0.0
+            },
+            {
+              "food": 0.11660300195217133,
+              "food_std": 0.005963128060102463,
+              "d": 0.8270832896232605,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 19.95833396911621,
+              "hungry": 1.0,
+              "churn": 0.9468749761581421,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.11589119583368301,
+          "mean_d": 0.8311631679534912,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "NashTrap_M20_k4",
+          "m": 20,
+          "k": 4,
+          "initial": "trap",
+          "mode": "learned_stochastic",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.23018519580364227,
+              "food_std": 0.010831749998033047,
+              "d": 0.692187488079071,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 20.0,
+              "hungry": 1.0,
+              "churn": 0.9545139074325562,
+              "viable": 0.0
+            },
+            {
+              "food": 0.23331019282341003,
+              "food_std": 0.012101657688617706,
+              "d": 0.6852430701255798,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 19.95833396911621,
+              "hungry": 1.0,
+              "churn": 0.9463541507720947,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.23174769431352615,
+          "mean_d": 0.6887152791023254,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "NashTrap_M20_k4",
+          "m": 20,
+          "k": 4,
+          "initial": "trap",
+          "mode": "learned_greedy",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.5544734001159668,
+              "food_std": 0.02957780286669731,
+              "d": 0.3756944239139557,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 17.64583396911621,
+              "hungry": 0.7284722328186035,
+              "churn": 0.5003471970558167,
+              "viable": 1.0208333730697632
+            },
+            {
+              "food": 0.5584605932235718,
+              "food_std": 0.022548526525497437,
+              "d": 0.37465277314186096,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 17.39583396911621,
+              "hungry": 0.7385416626930237,
+              "churn": 0.5005208253860474,
+              "viable": 1.0
+            }
+          ],
+          "mean_food": 0.5564669966697693,
+          "mean_d": 0.3751735985279083,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "NashTrap_M20_k4",
+          "m": 20,
+          "k": 4,
+          "initial": "trap",
+          "mode": "messages_blocked",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.2310069352388382,
+              "food_std": 0.009940446354448795,
+              "d": 0.6859375834465027,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 19.97916603088379,
+              "hungry": 1.0,
+              "churn": 0.9432291388511658,
+              "viable": 0.0
+            },
+            {
+              "food": 0.2318865954875946,
+              "food_std": 0.009749130345880985,
+              "d": 0.6857638359069824,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 20.0,
+              "hungry": 1.0,
+              "churn": 0.9487847089767456,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.2314467653632164,
+          "mean_d": 0.6858507096767426,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "NashTrap_M20_k4",
+          "m": 20,
+          "k": 4,
+          "initial": "trap",
+          "mode": "messages_shuffled",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.2303587794303894,
+              "food_std": 0.010691432282328606,
+              "d": 0.6911458969116211,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 20.0,
+              "hungry": 1.0,
+              "churn": 0.9548611044883728,
+              "viable": 0.0
+            },
+            {
+              "food": 0.23320600390434265,
+              "food_std": 0.011926256120204926,
+              "d": 0.6855902671813965,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 19.95833396911621,
+              "hungry": 1.0,
+              "churn": 0.9468749761581421,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.23178239166736603,
+          "mean_d": 0.6883680820465088,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "NashTrap_M20_k4",
+          "m": 20,
+          "k": 4,
+          "initial": "trap",
+          "mode": "random",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.23283566534519196,
+              "food_std": 0.010291684418916702,
+              "d": 0.6833333373069763,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 20.0,
+              "hungry": 1.0,
+              "churn": 0.9496527910232544,
+              "viable": 0.0
+            },
+            {
+              "food": 0.22942130267620087,
+              "food_std": 0.009360984899103642,
+              "d": 0.6916666626930237,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 19.95833396911621,
+              "hungry": 1.0,
+              "churn": 0.9527778029441833,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.2311284840106964,
+          "mean_d": 0.6875,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "NashTrap_M20_k4",
+          "m": 20,
+          "k": 4,
+          "initial": "trap",
+          "mode": "frozen",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.5,
+              "food_std": 0.0,
+              "d": 0.5,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 2.0,
+              "hungry": 1.0,
+              "churn": 0.0,
+              "viable": 0.0
+            },
+            {
+              "food": 0.5,
+              "food_std": 0.0,
+              "d": 0.5,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 2.0,
+              "hungry": 1.0,
+              "churn": 0.0,
+              "viable": 0.0
+            }
+          ],
+          "mean_food": 0.5,
+          "mean_d": 0.5,
+          "exact": 0,
+          "total_worlds": 96
+        },
+        {
+          "task": "NashTrap_M20_k4",
+          "m": 20,
+          "k": 4,
+          "initial": "trap",
+          "mode": "local_imitation",
+          "seeds": [
+            970011,
+            970031
+          ],
+          "by_seed": [
+            {
+              "food": 0.451174795627594,
+              "food_std": 0.0799119845032692,
+              "d": 0.5355902314186096,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 1.9791666269302368,
+              "hungry": 0.9543402791023254,
+              "churn": 0.20677083730697632,
+              "viable": 0.1875
+            },
+            {
+              "food": 0.4518113434314728,
+              "food_std": 0.08214770257472992,
+              "d": 0.5359375476837158,
+              "exact": 0,
+              "worlds": 48,
+              "occupied": 1.9583333730697632,
+              "hungry": 0.9416666626930237,
+              "churn": 0.21388888359069824,
+              "viable": 0.2291666716337204
+            }
+          ],
+          "mean_food": 0.4514930695295334,
+          "mean_d": 0.5357638895511627,
+          "exact": 0,
+          "total_worlds": 96
+        }
+      ]
+    }
+  ],
+  "caution": "C1 ablations do not preserve identical action sampling streams when messaging changes."
+}
