@@ -22,7 +22,7 @@ def model_path(mem,hidden):
  return ROOT/"runs"/f"W{mem}_H{hidden}_C2_seed521_u150"/"FINAL_MODEL.pt"
 
 @torch.no_grad()
-def evaluate(net,k,model_tag,kind,worldseed):
+def evaluate(net,k,model_tag,kind,worldseed,reference):
  e=Society10(Config10(batch=B,seed=worldseed,reward_kind="level",churn_penalty=.03))
  e.reset(k=k)
  if net is not None:net.reset_memory(B)
@@ -64,7 +64,7 @@ def evaluate(net,k,model_tag,kind,worldseed):
          "D_initial":float(ds[0].mean()),"D_final":float(ds[-1].mean()),
          "D_tail10":float(ds[-10:].mean()),
          "D_auc":float(ds[1:].mean()),
-         "ratio_iid10":float(ds[-1].mean())/ref_iid(k),
+         "ratio_iid10":float(ds[-1].mean())/reference,
          "n_exact_final":int(ex[-1].sum()),
          "n_exact_any":int(ex.any(0).sum()),
          "n_stable10":int(stable.sum()),
@@ -111,6 +111,7 @@ def main():
  table=[];start=time.perf_counter()
  for k in KS:
   worldseed=7200000+100*k
+  reference=ref_iid(k)
   for m,h in VARIANTS:
    tag=f"W{m}_H{h}"
    for stage,model in (("trained",actors[(m,h)]),
@@ -118,9 +119,11 @@ def main():
     kinds=("sample","greedy","no_history") if m==8 and stage=="trained" else ("sample","greedy")
     for kind in kinds:
      dest=OUT/f"k{k}_{tag}_{stage}_{kind}.json"
-     if dest.exists():raise RuntimeError("No overwrite for "+str(dest))
-     row=evaluate(model,k,f"{tag}_{stage}",kind,worldseed)
-     dest.write_text(json.dumps(row,indent=2,ensure_ascii=False),encoding="utf-8")
+     if dest.exists():
+      row=json.loads(dest.read_text(encoding="utf-8"))
+     else:
+      row=evaluate(model,k,f"{tag}_{stage}",kind,worldseed,reference)
+      dest.write_text(json.dumps(row,indent=2,ensure_ascii=False),encoding="utf-8")
      table.append({a:b for a,b in row.items() if a not in
                 ("D_curve","occupied_curve","churn_curve","D_by_world")})
      print("V5_HOLDOUT",k,tag,stage,kind,"D",round(row["D_final"],4),
@@ -129,9 +132,11 @@ def main():
            "elapsed",round(time.perf_counter()-start,1),flush=True)
   for kind in ("random_always","random_T24","stay"):
    dest=OUT/f"k{k}_{kind}.json"
-   if dest.exists():raise RuntimeError("No overwrite")
-   row=evaluate(None,k,"baseline",kind,worldseed)
-   dest.write_text(json.dumps(row,indent=2,ensure_ascii=False),encoding="utf-8")
+   if dest.exists():
+    row=json.loads(dest.read_text(encoding="utf-8"))
+   else:
+    row=evaluate(None,k,"baseline",kind,worldseed,reference)
+    dest.write_text(json.dumps(row,indent=2,ensure_ascii=False),encoding="utf-8")
    table.append({a:b for a,b in row.items() if a not in
                 ("D_curve","occupied_curve","churn_curve","D_by_world")})
    print("V5_BASELINE",k,kind,"D",round(row["D_final"],4),flush=True)
