@@ -1,0 +1,753 @@
+{
+  "kind": "EXPLORATORY_POSTHOC_NOT_SEALED",
+  "seeds": [
+    660003,
+    760007
+  ],
+  "worlds_per_seed": 96,
+  "horizon": 48,
+  "trained": [
+    {
+      "k": 2,
+      "n": 36,
+      "run": "k2_n36_d5_seed1411",
+      "update": 120,
+      "results": {
+        "stochastic": [
+          {
+            "food_mean": 0.27137991786003113,
+            "food_min": 0.0555555559694767,
+            "hunger_fraction": 1.0,
+            "occupied": 9.604166984558105,
+            "Dk": 0.6238425970077515,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.8151041865348816
+          },
+          {
+            "food_mean": 0.27289095520973206,
+            "food_min": 0.0555555559694767,
+            "hunger_fraction": 1.0,
+            "occupied": 9.645833015441895,
+            "Dk": 0.6215277910232544,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.7951388955116272
+          }
+        ],
+        "greedy": [
+          {
+            "food_mean": 0.5306391716003418,
+            "food_min": 0.0555555559694767,
+            "hunger_fraction": 1.0,
+            "occupied": 2.6041667461395264,
+            "Dk": 0.388888955116272,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.0694444477558136
+          },
+          {
+            "food_mean": 0.5311214327812195,
+            "food_min": 0.0555555559694767,
+            "hunger_fraction": 1.0,
+            "occupied": 2.6666667461395264,
+            "Dk": 0.388888955116272,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.06828703731298447
+          }
+        ]
+      }
+    },
+    {
+      "k": 2,
+      "n": 36,
+      "run": "k2_n36_d5_seed2522",
+      "update": 120,
+      "results": {
+        "stochastic": [
+          {
+            "food_mean": 0.2616383731365204,
+            "food_min": 0.0555555559694767,
+            "hunger_fraction": 1.0,
+            "occupied": 9.635416984558105,
+            "Dk": 0.6391782164573669,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.8252314925193787
+          },
+          {
+            "food_mean": 0.2558192014694214,
+            "food_min": 0.0555555559694767,
+            "hunger_fraction": 1.0,
+            "occupied": 9.770833015441895,
+            "Dk": 0.6504629254341125,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.8185763955116272
+          }
+        ],
+        "greedy": [
+          {
+            "food_mean": 0.5582079887390137,
+            "food_min": 0.0555555559694767,
+            "hunger_fraction": 1.0,
+            "occupied": 3.5,
+            "Dk": 0.3333333134651184,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.0
+          },
+          {
+            "food_mean": 0.5584330558776855,
+            "food_min": 0.0555555559694767,
+            "hunger_fraction": 1.0,
+            "occupied": 3.4270832538604736,
+            "Dk": 0.3333333134651184,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "k": 2,
+      "n": 36,
+      "run": "k2_n36_d5_seed3533",
+      "update": 120,
+      "results": {
+        "stochastic": [
+          {
+            "food_mean": 0.25961291790008545,
+            "food_min": 0.0555555559694767,
+            "hunger_fraction": 1.0,
+            "occupied": 9.677083015441895,
+            "Dk": 0.6426504254341125,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.8208912014961243
+          },
+          {
+            "food_mean": 0.25884130597114563,
+            "food_min": 0.0555555559694767,
+            "hunger_fraction": 1.0,
+            "occupied": 9.65625,
+            "Dk": 0.6446759104728699,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.8119212985038757
+          }
+        ],
+        "greedy": [
+          {
+            "food_mean": 0.8809959888458252,
+            "food_min": 0.0555555559694767,
+            "hunger_fraction": 0.20978009700775146,
+            "occupied": 3.6979167461395264,
+            "Dk": 0.06568286567926407,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.14293982088565826
+          },
+          {
+            "food_mean": 0.8999968767166138,
+            "food_min": 0.0555555559694767,
+            "hunger_fraction": 0.140625,
+            "occupied": 3.2708332538604736,
+            "Dk": 0.054687511175870895,
+            "exact": 1,
+            "worlds": 96,
+            "churn": 0.14554397761821747
+          }
+        ]
+      }
+    },
+    {
+      "k": 4,
+      "n": 36,
+      "run": "pilot_d5_c0_seed1411",
+      "update": 120,
+      "results": {
+        "stochastic": [
+          {
+            "food_mean": 0.5643325448036194,
+            "food_min": 0.1111111119389534,
+            "hunger_fraction": 0.8159722089767456,
+            "occupied": 9.427083015441895,
+            "Dk": 0.34375,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.8041087985038757
+          },
+          {
+            "food_mean": 0.567547619342804,
+            "food_min": 0.1111111119389534,
+            "hunger_fraction": 0.8110532164573669,
+            "occupied": 9.510416984558105,
+            "Dk": 0.34143516421318054,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.7936921119689941
+          }
+        ],
+        "greedy": [
+          {
+            "food_mean": 0.5331790447235107,
+            "food_min": 0.3913043439388275,
+            "hunger_fraction": 0.7777777910232544,
+            "occupied": 3.0,
+            "Dk": 0.3819444477558136,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.02777777798473835
+          },
+          {
+            "food_mean": 0.5353009104728699,
+            "food_min": 0.3913043439388275,
+            "hunger_fraction": 0.7777777910232544,
+            "occupied": 3.0,
+            "Dk": 0.3802083432674408,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.02777777798473835
+          }
+        ]
+      }
+    },
+    {
+      "k": 4,
+      "n": 36,
+      "run": "pilot_d5_c0_seed2522",
+      "update": 120,
+      "results": {
+        "stochastic": [
+          {
+            "food_mean": 0.5296746492385864,
+            "food_min": 0.1111111119389534,
+            "hunger_fraction": 0.9021990895271301,
+            "occupied": 9.520833015441895,
+            "Dk": 0.37818285822868347,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.8168402910232544
+          },
+          {
+            "food_mean": 0.5273276567459106,
+            "food_min": 0.1111111119389534,
+            "hunger_fraction": 0.8880208134651184,
+            "occupied": 9.645833015441895,
+            "Dk": 0.38310185074806213,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.8070023059844971
+          }
+        ],
+        "greedy": [
+          {
+            "food_mean": 0.565039873123169,
+            "food_min": 0.1111111119389534,
+            "hunger_fraction": 1.0,
+            "occupied": 3.2604167461395264,
+            "Dk": 0.36863425374031067,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.06741898506879807
+          },
+          {
+            "food_mean": 0.5645254850387573,
+            "food_min": 0.1111111119389534,
+            "hunger_fraction": 1.0,
+            "occupied": 3.3541667461395264,
+            "Dk": 0.3663194477558136,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.0711805522441864
+          }
+        ]
+      }
+    },
+    {
+      "k": 4,
+      "n": 36,
+      "run": "pilot_d5_c0_seed3533",
+      "update": 120,
+      "results": {
+        "stochastic": [
+          {
+            "food_mean": 0.518164873123169,
+            "food_min": 0.1111111119389534,
+            "hunger_fraction": 0.8967013955116272,
+            "occupied": 9.677083015441895,
+            "Dk": 0.39467594027519226,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.8223379850387573
+          },
+          {
+            "food_mean": 0.5179398655891418,
+            "food_min": 0.1111111119389534,
+            "hunger_fraction": 0.9082754850387573,
+            "occupied": 9.666666984558105,
+            "Dk": 0.39178240299224854,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.8090277910232544
+          }
+        ],
+        "greedy": [
+          {
+            "food_mean": 0.3980516791343689,
+            "food_min": 0.2222222238779068,
+            "hunger_fraction": 1.0,
+            "occupied": 4.0,
+            "Dk": 0.4510995149612427,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.05237268656492233
+          },
+          {
+            "food_mean": 0.39464378356933594,
+            "food_min": 0.2222222238779068,
+            "hunger_fraction": 1.0,
+            "occupied": 4.0,
+            "Dk": 0.45457175374031067,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.05324074253439903
+          }
+        ]
+      }
+    },
+    {
+      "k": 2,
+      "n": 324,
+      "run": "k2_n324_continue240_seed1411",
+      "update": 240,
+      "results": {
+        "stochastic": [
+          {
+            "food_mean": 0.50023353099823,
+            "food_min": 0.006172839552164078,
+            "hunger_fraction": 1.0,
+            "occupied": 4.84375,
+            "Dk": 0.49199458956718445,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.03565457835793495
+          },
+          {
+            "food_mean": 0.5002004504203796,
+            "food_min": 0.006172839552164078,
+            "hunger_fraction": 1.0,
+            "occupied": 4.59375,
+            "Dk": 0.49311983585357666,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.03321116417646408
+          }
+        ],
+        "greedy": [
+          {
+            "food_mean": 0.5,
+            "food_min": 0.5,
+            "hunger_fraction": 1.0,
+            "occupied": 1.0,
+            "Dk": 0.5,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.0
+          },
+          {
+            "food_mean": 0.5,
+            "food_min": 0.5,
+            "hunger_fraction": 1.0,
+            "occupied": 1.0,
+            "Dk": 0.5,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "k": 4,
+      "n": 324,
+      "run": "k4_n324_continue240_seed1411",
+      "update": 240,
+      "results": {
+        "stochastic": [
+          {
+            "food_mean": 0.5003548264503479,
+            "food_min": 0.012345679104328156,
+            "hunger_fraction": 1.0,
+            "occupied": 5.520833492279053,
+            "Dk": 0.48951902985572815,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.48006686568260193
+          },
+          {
+            "food_mean": 0.5003151297569275,
+            "food_min": 0.012345679104328156,
+            "hunger_fraction": 1.0,
+            "occupied": 5.458333492279053,
+            "Dk": 0.4899691045284271,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.4815457761287689
+          }
+        ],
+        "greedy": [
+          {
+            "food_mean": 0.5000000596046448,
+            "food_min": 0.4792899489402771,
+            "hunger_fraction": 1.0,
+            "occupied": 2.0,
+            "Dk": 0.5,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.0
+          },
+          {
+            "food_mean": 0.5000000596046448,
+            "food_min": 0.4792899489402771,
+            "hunger_fraction": 1.0,
+            "occupied": 2.0,
+            "Dk": 0.5,
+            "exact": 0,
+            "worlds": 96,
+            "churn": 0.0
+          }
+        ]
+      }
+    }
+  ],
+  "baselines": [
+    {
+      "k": 2,
+      "n": 36,
+      "baseline": "random",
+      "results": [
+        {
+          "food_mean": 0.25363296270370483,
+          "food_min": 0.0555555559694767,
+          "hunger_fraction": 1.0,
+          "occupied": 9.677083015441895,
+          "Dk": 0.6562499403953552,
+          "exact": 0,
+          "worlds": 96,
+          "churn": 0.8978587985038757
+        },
+        {
+          "food_mean": 0.24829606711864471,
+          "food_min": 0.0555555559694767,
+          "hunger_fraction": 1.0,
+          "occupied": 9.729166984558105,
+          "Dk": 0.6637731194496155,
+          "exact": 0,
+          "worlds": 96,
+          "churn": 0.9013310074806213
+        }
+      ]
+    },
+    {
+      "k": 2,
+      "n": 36,
+      "baseline": "frozen",
+      "results": [
+        {
+          "food_mean": 0.24675284326076508,
+          "food_min": 0.0555555559694767,
+          "hunger_fraction": 1.0,
+          "occupied": 9.78125,
+          "Dk": 0.6637731194496155,
+          "exact": 0,
+          "worlds": 96,
+          "churn": 0.0
+        },
+        {
+          "food_mean": 0.24903549253940582,
+          "food_min": 0.0555555559694767,
+          "hunger_fraction": 1.0,
+          "occupied": 9.84375,
+          "Dk": 0.657118022441864,
+          "exact": 0,
+          "worlds": 96,
+          "churn": 0.0
+        }
+      ]
+    },
+    {
+      "k": 2,
+      "n": 36,
+      "baseline": "imitate",
+      "results": [
+        {
+          "food_mean": 0.6679848432540894,
+          "food_min": 0.0555555559694767,
+          "hunger_fraction": 0.7792245149612427,
+          "occupied": 1.9583333730697632,
+          "Dk": 0.26793983578681946,
+          "exact": 1,
+          "worlds": 96,
+          "churn": 0.27575230598449707
+        },
+        {
+          "food_mean": 0.6730484962463379,
+          "food_min": 0.0555555559694767,
+          "hunger_fraction": 0.7688078880310059,
+          "occupied": 2.1666667461395264,
+          "Dk": 0.2644675672054291,
+          "exact": 2,
+          "worlds": 96,
+          "churn": 0.34346064925193787
+        }
+      ]
+    },
+    {
+      "k": 2,
+      "n": 324,
+      "baseline": "random",
+      "results": [
+        {
+          "food_mean": 0.20564383268356323,
+          "food_min": 0.1111111119389534,
+          "hunger_fraction": 1.0,
+          "occupied": 10.0,
+          "Dk": 0.7530221343040466,
+          "exact": 0,
+          "worlds": 96,
+          "churn": 0.8972157835960388
+        },
+        {
+          "food_mean": 0.20524850487709045,
+          "food_min": 0.10493826866149902,
+          "hunger_fraction": 1.0,
+          "occupied": 10.0,
+          "Dk": 0.7561407089233398,
+          "exact": 0,
+          "worlds": 96,
+          "churn": 0.8996592164039612
+        }
+      ]
+    },
+    {
+      "k": 2,
+      "n": 324,
+      "baseline": "frozen",
+      "results": [
+        {
+          "food_mean": 0.2058553695678711,
+          "food_min": 0.09259258955717087,
+          "hunger_fraction": 1.0,
+          "occupied": 10.0,
+          "Dk": 0.7527649402618408,
+          "exact": 0,
+          "worlds": 96,
+          "churn": 0.0
+        },
+        {
+          "food_mean": 0.20586293935775757,
+          "food_min": 0.08641975373029709,
+          "hunger_fraction": 1.0,
+          "occupied": 10.0,
+          "Dk": 0.7532150149345398,
+          "exact": 0,
+          "worlds": 96,
+          "churn": 0.0
+        }
+      ]
+    },
+    {
+      "k": 2,
+      "n": 324,
+      "baseline": "imitate",
+      "results": [
+        {
+          "food_mean": 0.3321544826030731,
+          "food_min": 0.006172839552164078,
+          "hunger_fraction": 0.9907729029655457,
+          "occupied": 8.84375,
+          "Dk": 0.557645320892334,
+          "exact": 0,
+          "worlds": 96,
+          "churn": 0.421875
+        },
+        {
+          "food_mean": 0.333071768283844,
+          "food_min": 0.006172839552164078,
+          "hunger_fraction": 0.9893261194229126,
+          "occupied": 8.78125,
+          "Dk": 0.556584358215332,
+          "exact": 0,
+          "worlds": 96,
+          "churn": 0.41946372389793396
+        }
+      ]
+    },
+    {
+      "k": 4,
+      "n": 36,
+      "baseline": "random",
+      "results": [
+        {
+          "food_mean": 0.5066551566123962,
+          "food_min": 0.1111111119389534,
+          "hunger_fraction": 0.9273726940155029,
+          "occupied": 9.677083015441895,
+          "Dk": 0.40422454476356506,
+          "exact": 0,
+          "worlds": 96,
+          "churn": 0.8978587985038757
+        },
+        {
+          "food_mean": 0.4946952164173126,
+          "food_min": 0.1111111119389534,
+          "hunger_fraction": 0.9548611044883728,
+          "occupied": 9.729166984558105,
+          "Dk": 0.41724538803100586,
+          "exact": 0,
+          "worlds": 96,
+          "churn": 0.9013310074806213
+        }
+      ]
+    },
+    {
+      "k": 4,
+      "n": 36,
+      "baseline": "frozen",
+      "results": [
+        {
+          "food_mean": 0.4916088581085205,
+          "food_min": 0.1111111119389534,
+          "hunger_fraction": 0.9557291865348816,
+          "occupied": 9.78125,
+          "Dk": 0.41608795523643494,
+          "exact": 0,
+          "worlds": 96,
+          "churn": 0.0
+        },
+        {
+          "food_mean": 0.49746018648147583,
+          "food_min": 0.1111111119389534,
+          "hunger_fraction": 0.9490740895271301,
+          "occupied": 9.84375,
+          "Dk": 0.41087964177131653,
+          "exact": 0,
+          "worlds": 96,
+          "churn": 0.0
+        }
+      ]
+    },
+    {
+      "k": 4,
+      "n": 36,
+      "baseline": "imitate",
+      "results": [
+        {
+          "food_mean": 0.42711544036865234,
+          "food_min": 0.1111111119389534,
+          "hunger_fraction": 0.9525462985038757,
+          "occupied": 1.9583333730697632,
+          "Dk": 0.5558449029922485,
+          "exact": 0,
+          "worlds": 96,
+          "churn": 0.27575230598449707
+        },
+        {
+          "food_mean": 0.45084235072135925,
+          "food_min": 0.1111111119389534,
+          "hunger_fraction": 0.9496527910232544,
+          "occupied": 2.1666667461395264,
+          "Dk": 0.5245948433876038,
+          "exact": 0,
+          "worlds": 96,
+          "churn": 0.34346064925193787
+        }
+      ]
+    },
+    {
+      "k": 4,
+      "n": 324,
+      "baseline": "random",
+      "results": [
+        {
+          "food_mean": 0.41128766536712646,
+          "food_min": 0.2222222238779068,
+          "hunger_fraction": 1.0,
+          "occupied": 10.0,
+          "Dk": 0.535236656665802,
+          "exact": 0,
+          "worlds": 96,
+          "churn": 0.8972157835960388
+        },
+        {
+          "food_mean": 0.4104970097541809,
+          "food_min": 0.20987653732299805,
+          "hunger_fraction": 1.0,
+          "occupied": 10.0,
+          "Dk": 0.5388053059577942,
+          "exact": 0,
+          "worlds": 96,
+          "churn": 0.8996592164039612
+        }
+      ]
+    },
+    {
+      "k": 4,
+      "n": 324,
+      "baseline": "frozen",
+      "results": [
+        {
+          "food_mean": 0.4117107391357422,
+          "food_min": 0.18518517911434174,
+          "hunger_fraction": 1.0,
+          "occupied": 10.0,
+          "Dk": 0.5347543358802795,
+          "exact": 0,
+          "worlds": 96,
+          "churn": 0.0
+        },
+        {
+          "food_mean": 0.41172587871551514,
+          "food_min": 0.17283950746059418,
+          "hunger_fraction": 1.0,
+          "occupied": 10.0,
+          "Dk": 0.5351080298423767,
+          "exact": 0,
+          "worlds": 96,
+          "churn": 0.0
+        }
+      ]
+    },
+    {
+      "k": 4,
+      "n": 324,
+      "baseline": "imitate",
+      "results": [
+        {
+          "food_mean": 0.5945533514022827,
+          "food_min": 0.012345679104328156,
+          "hunger_fraction": 0.8324009776115417,
+          "occupied": 8.84375,
+          "Dk": 0.31568285822868347,
+          "exact": 0,
+          "worlds": 96,
+          "churn": 0.421875
+        },
+        {
+          "food_mean": 0.5906012058258057,
+          "food_min": 0.012345679104328156,
+          "hunger_fraction": 0.8301182985305786,
+          "occupied": 8.78125,
+          "Dk": 0.3209233582019806,
+          "exact": 0,
+          "worlds": 96,
+          "churn": 0.41946372389793396
+        }
+      ]
+    }
+  ]
+}
