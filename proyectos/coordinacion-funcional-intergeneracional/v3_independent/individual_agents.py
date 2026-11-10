@@ -1,93 +1,136 @@
-"""One neural policy per agent; no parameter sharing or centralized critic.
+"""N independent, exactly color-label equivariant policies.
 
-Param axes start with agent index, e.g., W1[i], W_send[i], W_accept[i].
-Operations batch worlds only. Gradient on actor i is structurally separated
-from actor j parameters, with the SAME team reward for both.
+Each agent i owns distinct tensors W*_i. Color candidates use a common
+scoring network WITHIN that agent, not across agents. Hence relabeling
+colors permutes logits without re-training. No fixed color-identity bias.
+
+Input: own color, direct neighbor colors, optional directed messages with
+sender snapshot and requested color, previous GLOBAL TEAM scalar feedback.
+No global histogram enters an agent's action. Messages are cheap talk,
+self-color is ALWAYS an independent choice, even when no messages exist.
 """
-from pathlib import Path
-import sys
-sys.path.insert(0,str(Path(__file__).resolve().parent.parent/"v2_rl"))
 import torch
 from torch import nn
 from torch.distributions import Categorical
 from torch.nn import functional as F
-from environment import OBS_DIM,MAX_K
-from environment_v3 import ACTION_DIM
+from pathlib import Path
+import sys
+sys.path.insert(0,str(Path(__file__).resolve().parent.parent/"v2_rl"))
+from environment import MAX_K,OBS_DIM
+
+SEND_FEATURES=7
+CHOOSE_FEATURES=9
 
 class IndependentActors(nn.Module):
-    def __init__(self,n:int=36,hidden:int=32):
+    def __init__(self,n:int=36,hidden:int=24):
         super().__init__()
-        self.n=int(n);self.hidden=int(hidden)
-        self.W1=nn.Parameter(torch.empty(n,OBS_DIM,hidden))
-        self.b1=nn.Parameter(torch.zeros(n,hidden))
-        self.W2=nn.Parameter(torch.empty(n,hidden,hidden))
-        self.b2=nn.Parameter(torch.zeros(n,hidden))
-        self.Wsend=nn.Parameter(torch.empty(n,hidden,1+5*MAX_K))
-        self.bsend=nn.Parameter(torch.zeros(n,1+5*MAX_K))
-        self.Wreject=nn.Parameter(torch.empty(n,hidden,1))
-        self.breject=nn.Parameter(torch.zeros(n,1))
-        self.Wself=nn.Parameter(torch.empty(n,hidden,MAX_K))
-        self.bself=nn.Parameter(torch.zeros(n,MAX_K))
-        self.Waccept=nn.Parameter(torch.empty(n,hidden+OBS_DIM+MAX_K,hidden))
-        self.baccept=nn.Parameter(torch.zeros(n,hidden))
-        self.Wacceptout=nn.Parameter(torch.empty(n,hidden,1))
-        self.bacceptout=nn.Parameter(torch.zeros(n,1))
+        self.n=int(n)
+        self.hidden=int(hidden)
+        # Dimensions [agent, features, hidden], unique per-agent weights
+        self.send_W1=nn.Parameter(torch.empty(n,SEND_FEATURES,hidden))
+        self.send_b1=nn.Parameter(torch.zeros(n,hidden))
+        self.send_W2=nn.Parameter(torch.empty(n,hidden))
+        self.send_b2=nn.Parameter(torch.zeros(n))
+        self.silence_bias=nn.Parameter(torch.zeros(n))
+        self.choose_W1=nn.Parameter(torch.empty(n,CHOOSE_FEATURES,hidden))
+        self.choose_b1=nn.Parameter(torch.zeros(n,hidden))
+        self.choose_W2=nn.Parameter(torch.empty(n,hidden))
+        self.choose_b2=nn.Parameter(torch.zeros(n))
         self.reset_parameters()
 
     def reset_parameters(self):
-        for p in (self.W1,self.W2,self.Wsend,self.Wreject,self.Wself,self.Waccept,self.Wacceptout):
-            for m in p:
-                nn.init.xavier_uniform_(m)
-        # Lower starting logit magnitudes prevent saturation and high bias.
+        for W in (self.send_W1,self.choose_W1):
+            for w in W: nn.init.xavier_uniform_(w)
         with torch.no_grad():
-            self.Wsend.mul_(.25)
-            self.Wacceptout.mul_(.25)
-            self.Wreject.mul_(.25)
-            self.Wself.mul_(.25)
+            nn.init.normal_(self.send_W2,std=.08)
+            nn.init.normal_(self.choose_W2,std=.08)
 
-    def encode(self,obs):
-        if obs.shape[1]!=self.n or obs.shape[-1]!=OBS_DIM:
-            raise ValueError("One independent model per node. Mismatched population size")
-        z=torch.tanh(torch.einsum("bni,nih->bnh",obs,self.W1)+self.b1[None])
-        return torch.tanh(torch.einsum("bnh,nhj->bnj",z,self.W2)+self.b2[None])
+    def _decode_observation(self,obs):
+        B,N,D=obs.shape
+        if N!=self.n or D!=OBS_DIM:raise ValueError("N and observation dimension mismatch")
+        own=obs[:,:,:MAX_K]
+        neigh=obs[:,:,4:24].reshape(B,N,5,MAX_K)
+        valid=obs[:,:,24:29]
+        progress=obs[:,:,29]
+        kinfo=obs[:,:,30]
+        count=valid.sum(-1).clamp_min(1)
+        frac=neigh.sum(2)/count[:,:,None]
+        return own,neigh,valid,frac,progress,kinfo,count
 
-    def send_logits(self,obs,mask):
-        h=self.encode(obs)
-        logits=torch.einsum("bnh,nhj->bnj",h,self.Wsend)+self.bsend[None]
-        logits=logits.masked_fill(~mask,-1e8)
-        return logits,h
+    def send_logits(self,obs,k):
+        B,N,D=obs.shape
+        own,neigh,valid,frac,progress,kinfo,count=self._decode_observation(obs)
+        # Seven scalar features per (recipient neighbor slot, candidate color).
+        local_freq=frac[:,:,None,:].expand(-1,-1,5,-1)
+        own_candidate=own[:,:,None,:].expand(-1,-1,5,-1)
+        recipient_candidate=neigh
+        recipient_matches_self=(neigh*own[:,:,None,:]).sum(-1,keepdim=True).expand(-1,-1,-1,MAX_K)
+        f=torch.stack((
+            own_candidate,local_freq,recipient_candidate,
+            recipient_matches_self,
+            progress[:,:,None,None].expand(B,N,5,MAX_K),
+            kinfo[:,:,None,None].expand(B,N,5,MAX_K),
+            (count/5)[:,:,None,None].expand(B,N,5,MAX_K)
+        ),dim=-1)
+        h=torch.tanh(torch.einsum("bnscf,nfh->bnsch",f,self.send_W1)
+                     +self.send_b1[None,:,None,None,:])
+        candidate=torch.einsum("bnsch,nh->bnsc",h,self.send_W2)+self.send_b2[None,:,None,None]
+        legal=valid[:,:, :,None].bool() & (
+            torch.arange(MAX_K)[None,None,None,:]<k[:,None,None,None])
+        scores=candidate.masked_fill(~legal,-1e8).reshape(B,N,5*MAX_K)
+        silence=self.silence_bias[None,:,None].expand(B,N,1)
+        return torch.cat((silence,scores),-1)
 
-    def accept_logits(self,h,snapshot,incoming,requests,k):
-        B,N,S,D=snapshot.shape
-        assert N==self.n and S==5 and D==OBS_DIM
-        own=h.unsqueeze(2).expand(-1,-1,S,-1)
-        color=F.one_hot(requests,MAX_K).float()
-        combined=torch.cat((own,snapshot,color),dim=-1)
-        z=torch.tanh(torch.einsum("bnsi,nih->bnsh",combined,self.Waccept)+self.baccept[None,:,None])
-        options=(torch.einsum("bnsh,nhj->bnsj",z,self.Wacceptout)+self.bacceptout[None,:,None]).squeeze(-1)
-        decline=torch.einsum("bnh,nhj->bnj",h,self.Wreject)+self.breject[None]
-        # Self-initiated choices are fully independent of whether requests exist.
-        voluntary=torch.einsum("bnh,nhj->bnj",h,self.Wself)+self.bself[None]
-        active=(torch.arange(MAX_K)[None,None,:]<k[:,None,None]).expand(B,N,MAX_K)
-        legal=torch.cat((torch.ones_like(incoming[:,:,:1]),active,incoming),dim=-1)
-        return torch.cat((decline,voluntary,options),dim=-1).masked_fill(~legal,-1e8)
+    def choose_logits(self,obs,k,incoming,requested,snapshots):
+        B,N,D=obs.shape
+        own,neigh,valid,frac,progress,kinfo,count=self._decode_observation(obs)
+        if incoming.shape!=(B,N,5) or requested.shape!=(B,N,5) or snapshots.shape!=(B,N,5,OBS_DIM):
+            raise ValueError("Invalid neighbor-message format")
+        # All received messages contribute, no exclusive matching.
+        req_onehot=F.one_hot(requested,MAX_K).float()*incoming[:,:,:,None]
+        req_frac=req_onehot.sum(2)/incoming.sum(2).clamp_min(1)[:,:,None]
+        sender_own=snapshots[:,:,:,:4]
+        sender_neigh=snapshots[:,:,:,4:24].reshape(B,N,5,5,MAX_K).sum(-2)
+        sender_valid=snapshots[:,:,:,24:29].sum(-1)
+        sender_counts=(sender_own+sender_neigh)/(sender_valid[:,:,:,None]+1).clamp_min(1)
+        sender_counts=(sender_counts*incoming[:,:,:,None]).sum(2)/incoming.sum(2).clamp_min(1)[:,:,None]
+        any_message=incoming.any(2).float()
+        # These are observations, NOT rules to seek a minority color.
+        # Same learned scorer applied to every candidate color => equivariant.
+        features=torch.stack((
+            own,frac,req_frac,sender_counts,
+            progress[:,:,None].expand(B,N,MAX_K),
+            kinfo[:,:,None].expand(B,N,MAX_K),
+            (count/5)[:,:,None].expand(B,N,MAX_K),
+            any_message[:,:,None].expand(B,N,MAX_K),
+            ((own*frac).sum(-1))[:,:,None].expand(B,N,MAX_K)
+        ),dim=-1)
+        z=torch.tanh(torch.einsum("bncf,nfh->bnch",features,self.choose_W1)
+                   +self.choose_b1[None,:,None,:])
+        logits=torch.einsum("bnch,nh->bnc",z,self.choose_W2)+self.choose_b2[None,:,None]
+        allowed=torch.arange(MAX_K)[None,None,:]<k[:,None,None]
+        return logits.masked_fill(~allowed,-1e8)
 
-    def act_send(self,obs,legal,deterministic=False,uniform=False):
-        logits,h=self.send_logits(obs,legal)
-        if uniform:logits=torch.zeros_like(logits).masked_fill(~legal,-1e8)
-        cat=Categorical(logits=logits)
-        action=logits.argmax(-1) if deterministic else cat.sample()
-        return action,cat.log_prob(action),cat.entropy(),h
+    def act_send(self,obs,k,deterministic=False,uniform=False,disable_messages=False):
+        scores=self.send_logits(obs,k)
+        if disable_messages:
+            scores=torch.zeros_like(scores).masked_fill(
+                torch.arange(scores.shape[-1])[None,None,:]!=0,-1e8)
+        elif uniform:
+            allowed=scores>-1e7
+            scores=torch.zeros_like(scores).masked_fill(~allowed,-1e8)
+        cat=Categorical(logits=scores)
+        action=scores.argmax(-1) if deterministic else cat.sample()
+        return action,cat.log_prob(action),cat.entropy()
 
-    def act_accept(self,h,snapshot,incoming,requests,k,deterministic=False,uniform=False):
-        # k is public task information; no global counts are consulted.
-        logits=self.accept_logits(h,snapshot,incoming,requests,k)
+    def act_choose(self,obs,k,incoming,requested,snapshots,deterministic=False,uniform=False):
+        scores=self.choose_logits(obs,k,incoming,requested,snapshots)
         if uniform:
-            permitted=logits>-1e7
-            logits=torch.zeros_like(logits).masked_fill(~permitted,-1e8)
-        cat=Categorical(logits=logits)
-        a=logits.argmax(-1) if deterministic else cat.sample()
-        return a,cat.log_prob(a),cat.entropy()
+            allowed=scores>-1e7
+            scores=torch.zeros_like(scores).masked_fill(~allowed,-1e8)
+        cat=Categorical(logits=scores)
+        action=scores.argmax(-1) if deterministic else cat.sample()
+        return action,cat.log_prob(action),cat.entropy()
 
-    def agent_parameter_block(self,i:int):
+    def agent_parameter_block(self,i):
         return {name:p[i].detach().clone() for name,p in self.named_parameters()}
