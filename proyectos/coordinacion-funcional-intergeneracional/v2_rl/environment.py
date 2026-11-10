@@ -46,6 +46,7 @@ class Configuration:
     batch:int=12
     seed:int=20261110
     majority_fraction:float=.70
+    randomize_majority:bool=False
     device:str="cpu"
 
 class VectorSociety:
@@ -81,6 +82,11 @@ class VectorSociety:
             kc=int(self.k[b])
             colors[b,majority:]=torch.randint(1,kc,(N-majority,),generator=self.gen)
             colors[b]=colors[b,torch.randperm(N,generator=self.gen)]
+            if self.cfg.randomize_majority:
+                # Randomly relabel the majority and minority colors per episode.
+                # Actors cannot exploit a fixed 'color zero is overrepresented' cue.
+                role_permutation=torch.randperm(kc,generator=self.gen)
+                colors[b]=role_permutation[colors[b]]
         self.colors=colors
         self.feedback=torch.zeros(B,dtype=torch.float32)
         self.turn=0

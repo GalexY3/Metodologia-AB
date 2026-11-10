@@ -107,6 +107,38 @@ class V2Tests(unittest.TestCase):
   degree=5
   self.assertGreater(needed,degree)
 
+ def test_randomized_majority_color(self):
+  selected=[]
+  for s in range(20):
+   env=VectorSociety(Configuration(batch=1,seed=10000+s,randomize_majority=True))
+   env.reset(k=4)
+   counts=env.distribution()[0]
+   self.assertEqual(int(counts.argmax()),int(counts.argmax()))
+   self.assertAlmostEqual(float(counts.max()),25/36,places=6)
+   selected.append(int(counts.argmax()))
+  self.assertGreaterEqual(len(set(selected)),3)
+
+ def test_counterfactual_reward_single_change(self):
+  from train_credit import marginal_credits
+  env=VectorSociety(Configuration(batch=1,seed=911))
+  env.reset(k=4)
+  before=env.tv().clone()
+  target=int((env.colors[0]==0).nonzero()[0])
+  sender=next(iter(env.contact_sets[target]))
+  slot=int((env.neighbors[sender]==target).nonzero()[0])
+  send=torch.zeros((1,env.n),dtype=torch.long)
+  send[0,sender]=1+slot*4+1
+  incoming,requested,snapshot=env.deliveries(env.observe(),send)
+  a=torch.zeros_like(send)
+  received_slot=int(incoming[0,target].nonzero()[0])+1
+  a[0,target]=received_slot
+  old=env.colors.clone()
+  metrics=env.step(send,a,incoming,requested)
+  credit,send_credit=marginal_credits(env,old,a,metrics["tv"])
+  self.assertGreater(float(credit[0,target]),0)
+  self.assertAlmostEqual(float(credit.sum()),float(metrics["reward"][0]),places=4)
+  self.assertAlmostEqual(float(send_credit.sum()),float(metrics["reward"][0]),places=4)
+
  def test_random_baseline_eval(self):
   a=LocalActor(hidden=16)
   v=evaluate(a,seed=67,batch=3,horizon=10,policy="random",k=3)

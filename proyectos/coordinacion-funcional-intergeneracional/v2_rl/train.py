@@ -17,8 +17,9 @@ torch.set_num_threads(2)
 
 @torch.no_grad()
 def evaluate(actor,seed=91000,batch=16,horizon=70,rows=6,cols=6,
-             policy="learned",k=4,deterministic=True):
-    env=VectorSociety(Configuration(rows=rows,cols=cols,batch=batch,seed=seed))
+             policy="learned",k=4,deterministic=True,randomize_majority=False):
+    env=VectorSociety(Configuration(rows=rows,cols=cols,batch=batch,seed=seed,
+                                        randomize_majority=randomize_majority))
     env.reset(k=k)
     tv=[env.tv()]
     churn=[]
