@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Laboratorio MARL V7 · Comparación de algoritmos</title>
+<style>
+:root{color-scheme:dark;--bg:#0a101b;--panel:#131e2c;--border:#304055;--muted:#9eafc1;--fg:#edf4ff}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.55 system-ui,-apple-system,Segoe UI,sans-serif}
+main{max-width:1400px;margin:auto;padding:26px 24px 64px}
+h1{font-size:clamp(25px,3vw,40px);margin:3px 0 7px;font-weight:720;letter-spacing:-.03em}
+h2{font-size:20px;margin:0 0 12px}p{margin:5px 0 13px;color:var(--muted)}
+.eyebrow{font-size:12px;letter-spacing:.17em;color:#83d6cf;font-weight:700;text-transform:uppercase}
+.intro{max-width:850px}.head{display:flex;justify-content:space-between;gap:14px;align-items:center;flex-wrap:wrap}
+.status{border:1px solid var(--border);border-radius:40px;padding:6px 14px;color:var(--muted);font-size:13px}
+section{margin-top:24px}.panel{border:1px solid var(--border);border-radius:15px;background:var(--panel);padding:20px;min-width:0}
+.chart-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.chart-title{font-size:15px;font-weight:700}.small{font-size:12px;color:var(--muted)}
+canvas{display:block;width:100%;height:245px;margin-top:8px}
+.legend{display:flex;gap:13px;flex-wrap:wrap;margin:14px 0}
+.legend span{font-size:12px;color:var(--muted)}.dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px}
+table{width:100%;border-collapse:collapse;font-size:13px;white-space:nowrap}
+th,td{text-align:left;border-bottom:1px solid #314054;padding:11px 10px}
+th{color:#a6baca;font-weight:600}td.num{text-align:right;font-variant-numeric:tabular-nums}
+td.titlecell{font-weight:650}.scroll{overflow-x:auto}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+input[type=range]{width:100%;accent-color:#5ac9c2}
+button,select{background:#192b3c;border:1px solid #435d72;color:var(--fg);padding:8px 13px;border-radius:8px;cursor:pointer}
+button:hover{background:#24445a}.controls{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.matrix{display:grid;gap:3px;width:min(100%,520px);margin:18px auto 0}
+.cell{aspect-ratio:1;border-radius:2px;min-width:0}.metric{font-variant-numeric:tabular-nums;font-weight:600}
+#board-status{margin:12px 0 0;color:#cfdfeb}.hint{color:#aabacb;font-size:13px}
+#problem{color:#f1aa9c}
+.footer{font-size:13px;margin-top:18px}
+@media(max-width:1100px){.chart-grid{grid-template-columns:1fr 1fr}}@media(max-width:720px){.chart-grid,.grid2{grid-template-columns:1fr}main{padding:19px 14px}}
+</style>
+</head>
+<body><main>
+<header>
+<div class="eyebrow">Investigación computacional · V7</div>
+<div class="head"><h1>Coordinación colectiva entre agentes</h1><div id="connection" class="status">Conectando al experimento</div></div>
+<p class="intro">Diez estados posibles; objetivo endógeno de dos, tres o cuatro grupos equilibrados. Políticas individuales y recompensa colectiva. El panel representa resultados de simulaciones reales y no predice aprendizaje futuro.</p>
+</header>
+<section class="panel">
+<div class="head"><h2>Trayectorias de desarrollo</h2><span class="small">Semillas fijas · evaluación greedy · menor D es mejor</span></div>
+<div id="legend" class="legend"></div>
+<div class="chart-grid">
+<div><div class="chart-title">Objetivo k = 2 · 50 % por grupo</div><canvas id="c2"></canvas></div>
+<div><div class="chart-title">Objetivo k = 3 · 33,3 % por grupo</div><canvas id="c3"></canvas></div>
+<div><div class="chart-title">Objetivo k = 4 · 25 % por grupo</div><canvas id="c4"></canvas></div>
+</div>
+<p class="hint">D = 0 corresponde al reparto exacto. El descenso del error por sí solo no demuestra estabilidad ni coordinación mediante mensajes; compare también estados ocupados y churn.</p>
+</section>
+<section class="panel">
+<div class="head"><h2>Comparación entre métodos</h2><span id="last-update" class="small"></span></div>
+<div class="scroll"><table><thead><tr>
+<th>Entrenamiento</th><th>Estado</th><th>Episodios</th><th>Objetivo</th><th>D inicial</th><th>D final</th><th>Colores ocupados</th><th>Churn final</th><th>Exactos</th><th>Estables</th>
+</tr></thead><tbody id="table-body"><tr><td>Cargando…</td></tr></tbody></table></div>
+</section>
+<section class="grid2">
+<div class="panel">
+<h2>Reproducción de una sociedad</h2>
+<div class="controls"><label for="runSelect">Modelo</label><select id="runSelect"></select><button id="prev">Anterior</button><button id="next">Siguiente</button></div>
+<input type="range" id="frame" min="0" max="0" value="0">
+<div id="board-status" class="metric"></div><div id="board" class="matrix"></div>
+<p class="hint">Una sociedad concreta de desarrollo k=4, con pesos congelados. Las trayectorias individuales son descriptivas y no equivalen a un test reservado.</p>
+</div>
+<div class="panel">
+<h2>Lectura científica</h2>
+<p>La medida principal es la distancia al conjunto de repartos válidos. Un algoritmo puede reducir D sin extinguir los colores sobrantes o disminuir churn sin organizar a la sociedad.</p>
+<p>El contraste entre <strong>gated</strong> y <strong>gru</strong> permite investigar el efecto de conservar información de turnos anteriores. La comparación <strong>gru C1</strong> / <strong>gru C2</strong> identifica la ventaja incremental de permitir mensajes. <strong>ES</strong> usa el retorno global de sociedades enteras, sin atribuir recompensas individuales.</p>
+<p class="hint">Los pilotos con N=36 y una sola semilla son diagnósticos; no deben interpretarse como transferencias demostradas a N=324. Los brazos pueden tener costes computacionales distintos.</p>
+<div id="problem"></div>
+</div>
+</section>
+<div class="footer">Panel de solo lectura · Servidor local 127.0.0.1 · El entrenamiento y el visor son procesos separados</div>
+</main>
+<script>
+'use strict';
+const palette=['#72c8f5','#f8ad72','#79d1aa','#ca9beb','#ef7da7','#dbd67b','#86a4fa','#d89774','#73ded9','#e0b9f9'];
+const runColors=['#80c5ff','#ffbc75','#8bdfa0','#db9cf5','#e57e94','#d5ca70'];
+let data={}, visible=[], selected='', frameIdx=0, pending=false;
+const $=id=>document.getElementById(id);
+const fmt=(x,n=3)=> x===null||x===undefined ? '—' : Number(x).toFixed(n);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function getRecords(){
+ const all=Object.entries(data).filter(([n,x])=>x.history&&x.history.length);
+ const pilots=all.filter(([n])=>n.startsWith('pilot_'));
+ return (pilots.length?pilots:all).sort((a,b)=>a[0].localeCompare(b[0]));
+}
+function drawChart(k){
+ const cn=$('c'+k),w=cn.clientWidth||400,h=245,dpr=window.devicePixelRatio||1;
+ cn.width=Math.round(w*dpr);cn.height=Math.round(h*dpr);
+ const ctx=cn.getContext('2d');ctx.setTransform(dpr,0,0,dpr,0,0);ctx.clearRect(0,0,w,h);
+ const inset={left:44,right:12,top:22,bottom:30};
+ const series=visible.map(([name,r],i)=>({name,color:runColors[i%runColors.length],
+  points:r.history.filter(x=>x.development).map(x=>({x:x.update,
+   y:(x.development.find(y=>y.k===k)||{}).final_D})).filter(x=>Number.isFinite(x.y))}));
+ const pts=series.flatMap(s=>s.points);
+ if(!pts.length){ctx.fillStyle='#abbfd0';ctx.fillText('Sin evaluaciones todavía',30,110);return;}
+ const xmin=0,xmax=Math.max(40,...pts.map(p=>p.x));
+ const miny=Math.min(...pts.map(p=>p.y)),maxy=Math.max(...pts.map(p=>p.y));
+ const ymin=Math.max(0,Math.floor((miny-.025)*20)/20),ymax=Math.min(1,Math.ceil((maxy+.025)*20)/20);
+ const sx=x=>inset.left+(x-xmin)/(xmax-xmin)*(w-inset.left-inset.right);
+ const sy=y=>inset.top+(ymax-y)/Math.max(.001,ymax-ymin)*(h-inset.top-inset.bottom);
+ ctx.font='11px system-ui';ctx.strokeStyle='#32475d';ctx.fillStyle='#b8c9d7';ctx.lineWidth=1;
+ for(let i=0;i<=4;i++){
+   const y=ymin+(ymax-ymin)*i/4,p=sy(y);
+   ctx.beginPath();ctx.moveTo(inset.left,p);ctx.lineTo(w-inset.right,p);ctx.stroke();
+   ctx.fillText(y.toFixed(2),3,p+4);
+ }
+ ctx.fillText('Actualizaciones',w-105,h-7);
+ series.forEach(s=>{
+  if(!s.points.length)return;
+  ctx.strokeStyle=s.color;ctx.lineWidth=2.3;ctx.beginPath();
+  s.points.forEach((p,i)=>{if(i===0)ctx.moveTo(sx(p.x),sy(p.y));else ctx.lineTo(sx(p.x),sy(p.y))});
+  ctx.stroke();
+  s.points.forEach(p=>{ctx.fillStyle=s.color;ctx.beginPath();ctx.arc(sx(p.x),sy(p.y),2.4,0,Math.PI*2);ctx.fill()});
+ });
+}
+function renderTable(){
+ let rows=[];
+ visible.forEach(([name,r])=>{
+  const latest=r.history.slice().reverse().find(x=>x.development);
+  if(!latest)return;
+  latest.development.forEach((d,j)=>{
+   const st=r.status||{},label=name.replace(/^pilot_/,'').replaceAll('_',' ');
+   rows.push('<tr><td class="titlecell">'+esc(label)+'</td><td>'+esc(st.state||'—')+
+    '</td><td class="num">'+(st.episodes||latest.episodes||'—')+'</td><td class="num">'+d.k+
+    '</td><td class="num">'+fmt(d.initial_D,4)+'</td><td class="num">'+fmt(d.final_D,4)+
+    '</td><td class="num">'+fmt(d.occupied,2)+'</td><td class="num">'+fmt(d.churn*100,1)+' %</td>'+
+    '<td class="num">'+d.exact+'/'+d.worlds+'</td><td class="num">'+d.stable+'/'+d.worlds+'</td></tr>');
+  });
+ });
+ $('table-body').innerHTML=rows.join('')||'<tr><td colspan="10">Todavía no hay evaluaciones de desarrollo.</td></tr>';
+ $('last-update').textContent=visible.length+' modelos con datos';
+}
+function renderReplay(){
+ const r=data[selected]||{},replay=r.replay;
+ if(!replay||!replay.frames||!replay.frames.length){
+  $('board-status').textContent='Este experimento aún no tiene una reproducción guardada.';
+  $('board').innerHTML='';$('frame').max=0;return;
+ }
+ frameIdx=Math.min(frameIdx,replay.frames.length-1);
+ $('frame').max=replay.frames.length-1;$('frame').value=frameIdx;
+ const frame=replay.frames[frameIdx];
+ $('board-status').textContent='Turno '+frame.t+'/'+(replay.frames.length-1)+
+ ' · D₄='+fmt(frame.D,4)+' · estados ocupados='+frame.occupied+
+ ' · churn='+fmt(frame.churn*100,1)+' % · mensajes='+frame.messages.length;
+ $('board').style.gridTemplateColumns='repeat('+replay.side+',minmax(0,1fr))';
+ $('board').innerHTML=frame.colors.map((c,i)=>'<div class="cell" title="Agente '+(i+1)+', estado '+c+
+ '" style="background:'+palette[c%palette.length]+'"></div>').join('');
+}
+function render(){
+ visible=getRecords();
+ $('connection').textContent=visible.length+' brazos · datos locales';
+ $('legend').innerHTML=visible.map(([n],i)=>'<span><i class="dot" style="background:'+runColors[i%runColors.length]+
+ '"></i>'+esc(n.replace(/^pilot_/,'').replaceAll('_',' '))+'</span>').join('');
+ for(let k=2;k<=4;k++)drawChart(k);
+ renderTable();
+ const names=visible.map(([n])=>n).filter(n=>data[n].replay);
+ if(!names.includes(selected)) selected=names[0]||visible[0]?.[0]||'';
+ $('runSelect').innerHTML=visible.map(([n])=>'<option value="'+esc(n)+'">'+esc(n)+'</option>').join('');
+ $('runSelect').value=selected;
+ renderReplay();
+}
+async function refresh(){
+ if(pending)return;pending=true;
+ try{
+  const response=await fetch('/api/state',{cache:'no-store'});
+  if(!response.ok)throw new Error('HTTP '+response.status);
+  data=await response.json();render();$('problem').textContent='';
+ }catch(e){$('problem').textContent='No se pudo actualizar: '+e.message}
+ finally{pending=false}
+}
+$('runSelect').addEventListener('change',e=>{selected=e.target.value;frameIdx=0;renderReplay()});
+$('frame').addEventListener('input',e=>{frameIdx=Number(e.target.value);renderReplay()});
+$('prev').addEventListener('click',()=>{frameIdx=Math.max(0,frameIdx-1);renderReplay()});
+$('next').addEventListener('click',()=>{frameIdx++;renderReplay()});
+window.addEventListener('resize',()=>{for(let k=2;k<=4;k++)drawChart(k)});
+refresh();setInterval(refresh,4000);
+</script></body></html>
