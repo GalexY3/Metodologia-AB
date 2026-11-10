@@ -1,0 +1,1089 @@
+{
+  "kind": "POSTHOC_DECOMPOSITION_VERIFIED_AGAINST_TRANSFER",
+  "trained_for_k": 4,
+  "results": [
+    {
+      "rep": 0,
+      "model": "models\\acceptance_n324_k4_rep0.npz",
+      "rows": [
+        {
+          "k": 2,
+          "arms": {
+            "trained": {
+              "initial_D": 0.7561246141975309,
+              "final_D": 0.11516203703703703,
+              "leakage": 0.11516203703703705,
+              "overload": 0.0,
+              "exact": 0,
+              "worlds": 64,
+              "occupied": 9.84375,
+              "final_distribution": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                10,
+                54
+              ]
+            },
+            "untrained": {
+              "initial_D": 0.7561246141975309,
+              "final_D": 0.7552565586419754,
+              "leakage": 0.7552565586419754,
+              "overload": 0.0,
+              "exact": 0,
+              "worlds": 64,
+              "occupied": 10.0,
+              "final_distribution": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                64
+              ]
+            },
+            "scripted": {
+              "initial_D": 0.7561246141975309,
+              "final_D": 0.0022665895061728496,
+              "leakage": 0.0022665895061728496,
+              "overload": 0.0,
+              "exact": 29,
+              "worlds": 64,
+              "occupied": 2.71875,
+              "final_distribution": [
+                0,
+                0,
+                29,
+                26,
+                7,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "k": 3,
+          "arms": {
+            "trained": {
+              "initial_D": 0.6432773919753086,
+              "final_D": 0.07089120370370372,
+              "leakage": 0.07089120370370369,
+              "overload": 0.0,
+              "exact": 0,
+              "worlds": 64,
+              "occupied": 9.765625,
+              "final_distribution": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                49
+              ]
+            },
+            "untrained": {
+              "initial_D": 0.6432773919753086,
+              "final_D": 0.6458333333333333,
+              "leakage": 0.6458333333333333,
+              "overload": 0.0,
+              "exact": 0,
+              "worlds": 64,
+              "occupied": 10.0,
+              "final_distribution": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                64
+              ]
+            },
+            "scripted": {
+              "initial_D": 0.6432773919753086,
+              "final_D": 0.0005787037037037063,
+              "leakage": 0.0005787037037037063,
+              "overload": 0.0,
+              "exact": 53,
+              "worlds": 64,
+              "occupied": 3.1875,
+              "final_distribution": [
+                0,
+                0,
+                0,
+                53,
+                10,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "k": 4,
+          "arms": {
+            "trained": {
+              "initial_D": 0.5356385030864197,
+              "final_D": 0.05222800925925926,
+              "leakage": 0.05217978395061733,
+              "overload": 4.822530864197552e-05,
+              "exact": 0,
+              "worlds": 64,
+              "occupied": 9.609375,
+              "final_distribution": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                3,
+                19,
+                42
+              ]
+            },
+            "untrained": {
+              "initial_D": 0.5356385030864197,
+              "final_D": 0.5352527006172839,
+              "leakage": 0.535252700617284,
+              "overload": 0.0,
+              "exact": 0,
+              "worlds": 64,
+              "occupied": 10.0,
+              "final_distribution": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                64
+              ]
+            },
+            "scripted": {
+              "initial_D": 0.5356385030864197,
+              "final_D": 0.0007716049382716084,
+              "leakage": 0.0007716049382716084,
+              "overload": 0.0,
+              "exact": 50,
+              "worlds": 64,
+              "occupied": 4.234375,
+              "final_distribution": [
+                0,
+                0,
+                0,
+                0,
+                50,
+                13,
+                1,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "k": 6,
+          "arms": {
+            "trained": {
+              "initial_D": 0.337914737654321,
+              "final_D": 0.03187692901234569,
+              "leakage": 0.031539351851851916,
+              "overload": 0.0003375771604938282,
+              "exact": 0,
+              "worlds": 64,
+              "occupied": 9.75,
+              "final_distribution": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2,
+                12,
+                50
+              ]
+            },
+            "untrained": {
+              "initial_D": 0.337914737654321,
+              "final_D": 0.3353105709876543,
+              "leakage": 0.3353105709876543,
+              "overload": 0.0,
+              "exact": 0,
+              "worlds": 64,
+              "occupied": 10.0,
+              "final_distribution": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                64
+              ]
+            },
+            "scripted": {
+              "initial_D": 0.337914737654321,
+              "final_D": 0.00048225308641975523,
+              "leakage": 0.00048225308641986625,
+              "overload": 0.0,
+              "exact": 54,
+              "worlds": 64,
+              "occupied": 6.15625,
+              "final_distribution": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                54,
+                10,
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "k": 9,
+          "arms": {
+            "trained": {
+              "initial_D": 0.09958526234567901,
+              "final_D": 0.010850694444444468,
+              "leakage": 0.00892168209876552,
+              "overload": 0.0019290123456790122,
+              "exact": 0,
+              "worlds": 64,
+              "occupied": 9.96875,
+              "final_distribution": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2,
+                62
+              ]
+            },
+            "untrained": {
+              "initial_D": 0.09958526234567901,
+              "final_D": 0.1000192901234568,
+              "leakage": 0.07402584876543214,
+              "overload": 0.025993441358024692,
+              "exact": 0,
+              "worlds": 64,
+              "occupied": 10.0,
+              "final_distribution": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                64
+              ]
+            },
+            "scripted": {
+              "initial_D": 0.09958526234567901,
+              "final_D": 0.00024112654320987761,
+              "leakage": 0.00024112654320987761,
+              "overload": 0.0,
+              "exact": 60,
+              "worlds": 64,
+              "occupied": 9.0625,
+              "final_distribution": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                60,
+                4
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "rep": 1,
+      "model": "models\\acceptance_n324_k4_rep1.npz",
+      "rows": [
+        {
+          "k": 2,
+          "arms": {
+            "trained": {
+              "initial_D": 0.7555459104938271,
+              "final_D": 0.11000192901234568,
+              "leakage": 0.11000192901234569,
+              "overload": 0.0,
+              "exact": 0,
+              "worlds": 64,
+              "occupied": 9.953125,
+              "final_distribution": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                3,
+                61
+              ]
+            },
+            "untrained": {
+              "initial_D": 0.7555459104938271,
+              "final_D": 0.7495659722222222,
+              "leakage": 0.7495659722222222,
+              "overload": 0.0,
+              "exact": 0,
+              "worlds": 64,
+              "occupied": 10.0,
+              "final_distribution": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                64
+              ]
+            },
+            "scripted": {
+              "initial_D": 0.7555459104938271,
+              "final_D": 0.0018325617283950699,
+              "leakage": 0.0018325617283950699,
+              "overload": 0.0,
+              "exact": 32,
+              "worlds": 64,
+              "occupied": 2.5625,
+              "final_distribution": [
+                0,
+                0,
+                32,
+                28,
+                4,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "k": 3,
+          "arms": {
+            "trained": {
+              "initial_D": 0.6452064043209876,
+              "final_D": 0.07272376543209877,
+              "leakage": 0.07272376543209874,
+              "overload": 0.0,
+              "exact": 0,
+              "worlds": 64,
+              "occupied": 9.640625,
+              "final_distribution": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                2,
+                16,
+                45
+              ]
+            },
+            "untrained": {
+              "initial_D": 0.6452064043209876,
+              "final_D": 0.6428433641975309,
+              "leakage": 0.6428433641975309,
+              "overload": 0.0,
+              "exact": 0,
+              "worlds": 64,
+              "occupied": 10.0,
+              "final_distribution": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                64
+              ]
+            },
+            "scripted": {
+              "initial_D": 0.6452064043209876,
+              "final_D": 0.0007233796296296328,
+              "leakage": 0.0007233796296296328,
+              "overload": 0.0,
+              "exact": 49,
+              "worlds": 64,
+              "occupied": 3.234375,
+              "final_distribution": [
+                0,
+                0,
+                0,
+                49,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "k": 4,
+          "arms": {
+            "trained": {
+              "initial_D": 0.537133487654321,
+              "final_D": 0.05193865740740741,
+              "leakage": 0.05193865740740744,
+              "overload": 0.0,
+              "exact": 0,
+              "worlds": 64,
+              "occupied": 9.640625,
+              "final_distribution": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2,
+                19,
+                43
+              ]
+            },
+            "untrained": {
+              "initial_D": 0.537133487654321,
+              "final_D": 0.5367959104938271,
+              "leakage": 0.5367959104938271,
+              "overload": 0.0,
+              "exact": 0,
+              "worlds": 64,
+              "occupied": 10.0,
+              "final_distribution": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                64
+              ]
+            },
+            "scripted": {
+              "initial_D": 0.537133487654321,
+              "final_D": 0.00048225308641975523,
+              "leakage": 0.00048225308641975523,
+              "overload": 0.0,
+              "exact": 54,
+              "worlds": 64,
+              "occupied": 4.15625,
+              "final_distribution": [
+                0,
+                0,
+                0,
+                0,
+                54,
+                10,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "k": 6,
+          "arms": {
+            "trained": {
+              "initial_D": 0.33796296296296297,
+              "final_D": 0.03173225308641976,
+              "leakage": 0.031684027777777846,
+              "overload": 4.822530864197552e-05,
+              "exact": 0,
+              "worlds": 64,
+              "occupied": 9.65625,
+              "final_distribution": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                20,
+                43
+              ]
+            },
+            "untrained": {
+              "initial_D": 0.33796296296296297,
+              "final_D": 0.34172453703703703,
+              "leakage": 0.3417245370370371,
+              "overload": 0.0,
+              "exact": 0,
+              "worlds": 64,
+              "occupied": 10.0,
+              "final_distribution": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                64
+              ]
+            },
+            "scripted": {
+              "initial_D": 0.33796296296296297,
+              "final_D": 0.00024112654320987761,
+              "leakage": 0.00024112654320998864,
+              "overload": 0.0,
+              "exact": 59,
+              "worlds": 64,
+              "occupied": 6.078125,
+              "final_distribution": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                59,
+                5,
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "k": 9,
+          "arms": {
+            "trained": {
+              "initial_D": 0.09992283950617284,
+              "final_D": 0.012731481481481498,
+              "leakage": 0.010802469135802554,
+              "overload": 0.0019290123456790122,
+              "exact": 0,
+              "worlds": 64,
+              "occupied": 10.0,
+              "final_distribution": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                64
+              ]
+            },
+            "untrained": {
+              "initial_D": 0.09992283950617284,
+              "final_D": 0.1021412037037037,
+              "leakage": 0.07479745370370375,
+              "overload": 0.027343750000000007,
+              "exact": 0,
+              "worlds": 64,
+              "occupied": 10.0,
+              "final_distribution": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                64
+              ]
+            },
+            "scripted": {
+              "initial_D": 0.09992283950617284,
+              "final_D": 0.0003858024691358042,
+              "leakage": 0.0003858024691358042,
+              "overload": 0.0,
+              "exact": 57,
+              "worlds": 64,
+              "occupied": 9.109375,
+              "final_distribution": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                57,
+                7
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "rep": 2,
+      "model": "models\\acceptance_n324_k4_rep2.npz",
+      "rows": [
+        {
+          "k": 2,
+          "arms": {
+            "trained": {
+              "initial_D": 0.7543402777777777,
+              "final_D": 0.11660879629629631,
+              "leakage": 0.11660879629629631,
+              "overload": 0.0,
+              "exact": 0,
+              "worlds": 64,
+              "occupied": 9.90625,
+              "final_distribution": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                4,
+                59
+              ]
+            },
+            "untrained": {
+              "initial_D": 0.7543402777777777,
+              "final_D": 0.75390625,
+              "leakage": 0.75390625,
+              "overload": 0.0,
+              "exact": 0,
+              "worlds": 64,
+              "occupied": 10.0,
+              "final_distribution": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                64
+              ]
+            },
+            "scripted": {
+              "initial_D": 0.7543402777777777,
+              "final_D": 0.0019772376543209964,
+              "leakage": 0.0019772376543209964,
+              "overload": 0.0,
+              "exact": 33,
+              "worlds": 64,
+              "occupied": 2.59375,
+              "final_distribution": [
+                0,
+                0,
+                33,
+                25,
+                5,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "k": 3,
+          "arms": {
+            "trained": {
+              "initial_D": 0.6417824074074074,
+              "final_D": 0.07296489197530864,
+              "leakage": 0.0728202160493827,
+              "overload": 0.00014467592592592657,
+              "exact": 0,
+              "worlds": 64,
+              "occupied": 9.796875,
+              "final_distribution": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                11,
+                52
+              ]
+            },
+            "untrained": {
+              "initial_D": 0.6417824074074074,
+              "final_D": 0.6413001543209877,
+              "leakage": 0.6413001543209877,
+              "overload": 0.0,
+              "exact": 0,
+              "worlds": 64,
+              "occupied": 10.0,
+              "final_distribution": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                64
+              ]
+            },
+            "scripted": {
+              "initial_D": 0.6417824074074074,
+              "final_D": 0.001012731481481486,
+              "leakage": 0.001012731481481486,
+              "overload": 0.0,
+              "exact": 48,
+              "worlds": 64,
+              "occupied": 3.328125,
+              "final_distribution": [
+                0,
+                0,
+                0,
+                48,
+                12,
+                3,
+                1,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "k": 4,
+          "arms": {
+            "trained": {
+              "initial_D": 0.5346257716049383,
+              "final_D": 0.05381944444444445,
+              "leakage": 0.05381944444444448,
+              "overload": 0.0,
+              "exact": 0,
+              "worlds": 64,
+              "occupied": 9.71875,
+              "final_distribution": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2,
+                14,
+                48
+              ]
+            },
+            "untrained": {
+              "initial_D": 0.5346257716049383,
+              "final_D": 0.5373263888888888,
+              "leakage": 0.5373263888888888,
+              "overload": 0.0,
+              "exact": 0,
+              "worlds": 64,
+              "occupied": 10.0,
+              "final_distribution": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                64
+              ]
+            },
+            "scripted": {
+              "initial_D": 0.5346257716049383,
+              "final_D": 0.0007716049382716084,
+              "leakage": 0.0007716049382716084,
+              "overload": 0.0,
+              "exact": 49,
+              "worlds": 64,
+              "occupied": 4.25,
+              "final_distribution": [
+                0,
+                0,
+                0,
+                0,
+                49,
+                14,
+                1,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "k": 6,
+          "arms": {
+            "trained": {
+              "initial_D": 0.3365644290123457,
+              "final_D": 0.03168402777777779,
+              "leakage": 0.03144290123456797,
+              "overload": 0.00024112654320987761,
+              "exact": 0,
+              "worlds": 64,
+              "occupied": 9.6875,
+              "final_distribution": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                18,
+                45
+              ]
+            },
+            "untrained": {
+              "initial_D": 0.3365644290123457,
+              "final_D": 0.3412905092592593,
+              "leakage": 0.3412905092592593,
+              "overload": 0.0,
+              "exact": 0,
+              "worlds": 64,
+              "occupied": 10.0,
+              "final_distribution": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                64
+              ]
+            },
+            "scripted": {
+              "initial_D": 0.3365644290123457,
+              "final_D": 0.00048225308641975523,
+              "leakage": 0.00048225308641986625,
+              "overload": 0.0,
+              "exact": 54,
+              "worlds": 64,
+              "occupied": 6.15625,
+              "final_distribution": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                54,
+                10,
+                0,
+                0,
+                0
+              ]
+            }
+          }
+        },
+        {
+          "k": 9,
+          "arms": {
+            "trained": {
+              "initial_D": 0.1017554012345679,
+              "final_D": 0.012201003086419773,
+              "leakage": 0.01007908950617293,
+              "overload": 0.0021219135802469135,
+              "exact": 0,
+              "worlds": 64,
+              "occupied": 9.953125,
+              "final_distribution": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                3,
+                61
+              ]
+            },
+            "untrained": {
+              "initial_D": 0.1017554012345679,
+              "final_D": 0.09765625,
+              "leakage": 0.0734953703703704,
+              "overload": 0.024160879629629633,
+              "exact": 0,
+              "worlds": 64,
+              "occupied": 10.0,
+              "final_distribution": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                64
+              ]
+            },
+            "scripted": {
+              "initial_D": 0.1017554012345679,
+              "final_D": 0.0003858024691358042,
+              "leakage": 0.0003858024691358042,
+              "overload": 0.0,
+              "exact": 56,
+              "worlds": 64,
+              "occupied": 9.125,
+              "final_distribution": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                56,
+                8
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

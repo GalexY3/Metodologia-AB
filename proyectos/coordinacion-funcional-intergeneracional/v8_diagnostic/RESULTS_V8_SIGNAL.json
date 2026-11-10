@@ -1,0 +1,972 @@
+{
+  "kind": "offline_diagnostic_not_training",
+  "initial_public_example": {
+    "n": 36,
+    "k": 2,
+    "focal_color": 0,
+    "neighbors": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "global_D": 0.02777777777777779,
+    "society_A": {
+      "counts": [
+        17,
+        19,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "after": [
+        16,
+        20,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "error_after": 0.05555555555555558
+    },
+    "society_B": {
+      "counts": [
+        19,
+        17,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "after": [
+        18,
+        18,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "error_after": 0.0
+    }
+  },
+  "seed": 62511,
+  "requested_samples": 1500,
+  "experiment": "Random simultaneous other-agent actions; oracle-selected single mutation; observational public Delta D.",
+  "rows": [
+    {
+      "n": 36,
+      "k": 2,
+      "samples": 1500,
+      "initial_D": 0.6577407407407408,
+      "levels": [
+        {
+          "concurrent_actors": 1,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 1.0,
+          "public_reward_noise_sd": 0.0,
+          "public_progress_snr": null,
+          "probability_observed_global_improvement": 1.0,
+          "probability_observed_global_deterioration": 0.0,
+          "probability_observed_global_no_change": 0.0,
+          "mean_global_progress": 1.0
+        },
+        {
+          "concurrent_actors": 2,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 0.964,
+          "public_reward_noise_sd": 0.6193280770859119,
+          "public_progress_snr": 1.5565255890478158,
+          "probability_observed_global_improvement": 0.7886666666666666,
+          "probability_observed_global_deterioration": 0.0,
+          "probability_observed_global_no_change": 0.21133333333333335,
+          "mean_global_progress": 0.9686666666666667
+        },
+        {
+          "concurrent_actors": 4,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 0.8853333333333333,
+          "public_reward_noise_sd": 1.0115991738788612,
+          "public_progress_snr": 0.8751819457687218,
+          "probability_observed_global_improvement": 0.654,
+          "probability_observed_global_deterioration": 0.08133333333333333,
+          "probability_observed_global_no_change": 0.26466666666666666,
+          "mean_global_progress": 0.8893333333333333
+        },
+        {
+          "concurrent_actors": 8,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 0.7386666666666667,
+          "public_reward_noise_sd": 1.402355146004715,
+          "public_progress_snr": 0.5267329526126923,
+          "probability_observed_global_improvement": 0.54,
+          "probability_observed_global_deterioration": 0.192,
+          "probability_observed_global_no_change": 0.268,
+          "mean_global_progress": 0.6653333333333332
+        },
+        {
+          "concurrent_actors": 16,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 0.4826666666666667,
+          "public_reward_noise_sd": 1.8767421229939136,
+          "public_progress_snr": 0.2571832649531424,
+          "probability_observed_global_improvement": 0.482,
+          "probability_observed_global_deterioration": 0.31466666666666665,
+          "probability_observed_global_no_change": 0.20333333333333334,
+          "mean_global_progress": 0.42333333333333334
+        },
+        {
+          "concurrent_actors": 32,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 0.12,
+          "public_reward_noise_sd": 2.1964309902549157,
+          "public_progress_snr": 0.05463408617544269,
+          "probability_observed_global_improvement": 0.416,
+          "probability_observed_global_deterioration": 0.39266666666666666,
+          "probability_observed_global_no_change": 0.19133333333333333,
+          "mean_global_progress": 0.07266666666666664
+        },
+        {
+          "concurrent_actors": 36,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": -0.01933333333333326,
+          "public_reward_noise_sd": 2.2073573581456922,
+          "public_progress_snr": -0.008758587848038516,
+          "probability_observed_global_improvement": 0.402,
+          "probability_observed_global_deterioration": 0.412,
+          "probability_observed_global_no_change": 0.186,
+          "mean_global_progress": 0.009333333333333308
+        }
+      ]
+    },
+    {
+      "n": 36,
+      "k": 3,
+      "samples": 1500,
+      "initial_D": 0.5249814814814815,
+      "levels": [
+        {
+          "concurrent_actors": 1,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 0.9999999999999997,
+          "public_reward_noise_sd": 0.0,
+          "public_progress_snr": null,
+          "probability_observed_global_improvement": 1.0,
+          "probability_observed_global_deterioration": 0.0,
+          "probability_observed_global_no_change": 0.0,
+          "mean_global_progress": 0.9999999999999997
+        },
+        {
+          "concurrent_actors": 2,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 0.9679999999999997,
+          "public_reward_noise_sd": 0.6708369675613594,
+          "public_progress_snr": 1.4429735491752842,
+          "probability_observed_global_improvement": 0.7446666666666667,
+          "probability_observed_global_deterioration": 0.0,
+          "probability_observed_global_no_change": 0.25533333333333336,
+          "mean_global_progress": 0.9513333333333334
+        },
+        {
+          "concurrent_actors": 4,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 0.8993333333333333,
+          "public_reward_noise_sd": 1.1130956778246848,
+          "public_progress_snr": 0.8079569000671122,
+          "probability_observed_global_improvement": 0.616,
+          "probability_observed_global_deterioration": 0.114,
+          "probability_observed_global_no_change": 0.27,
+          "mean_global_progress": 0.8373333333333334
+        },
+        {
+          "concurrent_actors": 8,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 0.7946666666666666,
+          "public_reward_noise_sd": 1.597604388475739,
+          "public_progress_snr": 0.49741141949719575,
+          "probability_observed_global_improvement": 0.5766666666666667,
+          "probability_observed_global_deterioration": 0.19733333333333333,
+          "probability_observed_global_no_change": 0.226,
+          "mean_global_progress": 0.7893333333333333
+        },
+        {
+          "concurrent_actors": 16,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 0.5893333333333333,
+          "public_reward_noise_sd": 2.0125568676816705,
+          "public_progress_snr": 0.2928281644096872,
+          "probability_observed_global_improvement": 0.482,
+          "probability_observed_global_deterioration": 0.31533333333333335,
+          "probability_observed_global_no_change": 0.20266666666666666,
+          "mean_global_progress": 0.454
+        },
+        {
+          "concurrent_actors": 32,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 0.09466666666666666,
+          "public_reward_noise_sd": 2.472809574443809,
+          "public_progress_snr": 0.03828303952113229,
+          "probability_observed_global_improvement": 0.4126666666666667,
+          "probability_observed_global_deterioration": 0.434,
+          "probability_observed_global_no_change": 0.15333333333333332,
+          "mean_global_progress": -0.03933333333333327
+        },
+        {
+          "concurrent_actors": 36,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": -0.01466666666666664,
+          "public_reward_noise_sd": 2.505732897535453,
+          "public_progress_snr": -0.005853244246859765,
+          "probability_observed_global_improvement": 0.4073333333333333,
+          "probability_observed_global_deterioration": 0.4186666666666667,
+          "probability_observed_global_no_change": 0.174,
+          "mean_global_progress": -0.04333333333333329
+        }
+      ]
+    },
+    {
+      "n": 36,
+      "k": 4,
+      "samples": 1500,
+      "initial_D": 0.41301851851851845,
+      "levels": [
+        {
+          "concurrent_actors": 1,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 0.9999999999999994,
+          "public_reward_noise_sd": 0.0,
+          "public_progress_snr": null,
+          "probability_observed_global_improvement": 1.0,
+          "probability_observed_global_deterioration": 0.0,
+          "probability_observed_global_no_change": 0.0,
+          "mean_global_progress": 0.9999999999999994
+        },
+        {
+          "concurrent_actors": 2,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 0.9493333333333327,
+          "public_reward_noise_sd": 0.693796649902909,
+          "public_progress_snr": 1.3683163985674822,
+          "probability_observed_global_improvement": 0.7226666666666667,
+          "probability_observed_global_deterioration": 0.0,
+          "probability_observed_global_no_change": 0.2773333333333333,
+          "mean_global_progress": 0.9319999999999994
+        },
+        {
+          "concurrent_actors": 4,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 0.8853333333333328,
+          "public_reward_noise_sd": 1.1556368604616791,
+          "public_progress_snr": 0.7660999433504054,
+          "probability_observed_global_improvement": 0.608,
+          "probability_observed_global_deterioration": 0.11866666666666667,
+          "probability_observed_global_no_change": 0.2733333333333333,
+          "mean_global_progress": 0.8479999999999996
+        },
+        {
+          "concurrent_actors": 8,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 0.7593333333333331,
+          "public_reward_noise_sd": 1.61581355912766,
+          "public_progress_snr": 0.4699387061359229,
+          "probability_observed_global_improvement": 0.5433333333333333,
+          "probability_observed_global_deterioration": 0.23,
+          "probability_observed_global_no_change": 0.22666666666666666,
+          "mean_global_progress": 0.6686666666666664
+        },
+        {
+          "concurrent_actors": 16,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 0.5273333333333332,
+          "public_reward_noise_sd": 2.1105344803510606,
+          "public_progress_snr": 0.2498577200433219,
+          "probability_observed_global_improvement": 0.5,
+          "probability_observed_global_deterioration": 0.322,
+          "probability_observed_global_no_change": 0.178,
+          "mean_global_progress": 0.4546666666666665
+        },
+        {
+          "concurrent_actors": 32,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 0.10799999999999996,
+          "public_reward_noise_sd": 2.5065432716755267,
+          "public_progress_snr": 0.043087227426082356,
+          "probability_observed_global_improvement": 0.45066666666666666,
+          "probability_observed_global_deterioration": 0.4026666666666667,
+          "probability_observed_global_no_change": 0.14666666666666667,
+          "mean_global_progress": 0.17199999999999993
+        },
+        {
+          "concurrent_actors": 36,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 0.007999999999999991,
+          "public_reward_noise_sd": 2.4876926321346193,
+          "public_progress_snr": 0.0032158313678548847,
+          "probability_observed_global_improvement": 0.43,
+          "probability_observed_global_deterioration": 0.4,
+          "probability_observed_global_no_change": 0.17,
+          "mean_global_progress": 0.12133333333333324
+        }
+      ]
+    },
+    {
+      "n": 144,
+      "k": 2,
+      "samples": 1500,
+      "initial_D": 0.7305694444444444,
+      "levels": [
+        {
+          "concurrent_actors": 1,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 1.0000000000000002,
+          "public_reward_noise_sd": 0.0,
+          "public_progress_snr": null,
+          "probability_observed_global_improvement": 1.0,
+          "probability_observed_global_deterioration": 0.0,
+          "probability_observed_global_no_change": 0.0,
+          "mean_global_progress": 1.0000000000000002
+        },
+        {
+          "concurrent_actors": 2,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 0.9820000000000003,
+          "public_reward_noise_sd": 0.5962520998704789,
+          "public_progress_snr": 1.6469543674786482,
+          "probability_observed_global_improvement": 0.8086666666666666,
+          "probability_observed_global_deterioration": 0.0,
+          "probability_observed_global_no_change": 0.19133333333333333,
+          "mean_global_progress": 0.974666666666667
+        },
+        {
+          "concurrent_actors": 4,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 0.9613333333333334,
+          "public_reward_noise_sd": 1.0208262730465212,
+          "public_progress_snr": 0.9417207988430402,
+          "probability_observed_global_improvement": 0.6693333333333333,
+          "probability_observed_global_deterioration": 0.074,
+          "probability_observed_global_no_change": 0.25666666666666665,
+          "mean_global_progress": 0.9366666666666666
+        },
+        {
+          "concurrent_actors": 8,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 0.916666666666667,
+          "public_reward_noise_sd": 1.45426091380668,
+          "public_progress_snr": 0.6303316399167987,
+          "probability_observed_global_improvement": 0.602,
+          "probability_observed_global_deterioration": 0.16666666666666666,
+          "probability_observed_global_no_change": 0.23133333333333334,
+          "mean_global_progress": 0.882
+        },
+        {
+          "concurrent_actors": 16,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 0.8306666666666667,
+          "public_reward_noise_sd": 2.0456650228746556,
+          "public_progress_snr": 0.40606191990288737,
+          "probability_observed_global_improvement": 0.5453333333333333,
+          "probability_observed_global_deterioration": 0.2633333333333333,
+          "probability_observed_global_no_change": 0.19133333333333333,
+          "mean_global_progress": 0.8040000000000002
+        },
+        {
+          "concurrent_actors": 32,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 0.696666666666667,
+          "public_reward_noise_sd": 2.671349901408037,
+          "public_progress_snr": 0.2607919937030571,
+          "probability_observed_global_improvement": 0.514,
+          "probability_observed_global_deterioration": 0.3353333333333333,
+          "probability_observed_global_no_change": 0.15066666666666667,
+          "mean_global_progress": 0.6193333333333335
+        },
+        {
+          "concurrent_actors": 64,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 0.426,
+          "public_reward_noise_sd": 3.630739710751997,
+          "public_progress_snr": 0.1173314624395829,
+          "probability_observed_global_improvement": 0.4866666666666667,
+          "probability_observed_global_deterioration": 0.392,
+          "probability_observed_global_no_change": 0.12133333333333333,
+          "mean_global_progress": 0.35399999999999987
+        },
+        {
+          "concurrent_actors": 128,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 0.09866666666666682,
+          "public_reward_noise_sd": 4.079589553231729,
+          "public_progress_snr": 0.02418543958386844,
+          "probability_observed_global_improvement": 0.44266666666666665,
+          "probability_observed_global_deterioration": 0.4613333333333333,
+          "probability_observed_global_no_change": 0.096,
+          "mean_global_progress": -0.09466666666666701
+        },
+        {
+          "concurrent_actors": 144,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 0.0026666666666667746,
+          "public_reward_noise_sd": 4.1425426968895085,
+          "public_progress_snr": 0.0006437270202837214,
+          "probability_observed_global_improvement": 0.462,
+          "probability_observed_global_deterioration": 0.438,
+          "probability_observed_global_no_change": 0.1,
+          "mean_global_progress": -0.008000000000000208
+        }
+      ]
+    },
+    {
+      "n": 144,
+      "k": 3,
+      "samples": 1500,
+      "initial_D": 0.6140601851851851,
+      "levels": [
+        {
+          "concurrent_actors": 1,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 0.9999999999999997,
+          "public_reward_noise_sd": 0.0,
+          "public_progress_snr": null,
+          "probability_observed_global_improvement": 1.0,
+          "probability_observed_global_deterioration": 0.0,
+          "probability_observed_global_no_change": 0.0,
+          "mean_global_progress": 0.9999999999999997
+        },
+        {
+          "concurrent_actors": 2,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 0.9886666666666664,
+          "public_reward_noise_sd": 0.6634292083047318,
+          "public_progress_snr": 1.4902368697227206,
+          "probability_observed_global_improvement": 0.788,
+          "probability_observed_global_deterioration": 0.0,
+          "probability_observed_global_no_change": 0.212,
+          "mean_global_progress": 1.017333333333333
+        },
+        {
+          "concurrent_actors": 4,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 0.9666666666666663,
+          "public_reward_noise_sd": 1.124268645234657,
+          "public_progress_snr": 0.8598182211733779,
+          "probability_observed_global_improvement": 0.6646666666666666,
+          "probability_observed_global_deterioration": 0.08333333333333333,
+          "probability_observed_global_no_change": 0.252,
+          "mean_global_progress": 0.9806666666666664
+        },
+        {
+          "concurrent_actors": 8,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 0.9299999999999994,
+          "public_reward_noise_sd": 1.6627483404245538,
+          "public_progress_snr": 0.5593149470608042,
+          "probability_observed_global_improvement": 0.5846666666666667,
+          "probability_observed_global_deterioration": 0.20133333333333334,
+          "probability_observed_global_no_change": 0.214,
+          "mean_global_progress": 0.8966666666666664
+        },
+        {
+          "concurrent_actors": 16,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 0.8659999999999997,
+          "public_reward_noise_sd": 2.3493358937474182,
+          "public_progress_snr": 0.36861480825487486,
+          "probability_observed_global_improvement": 0.566,
+          "probability_observed_global_deterioration": 0.27,
+          "probability_observed_global_no_change": 0.164,
+          "mean_global_progress": 0.8833333333333331
+        },
+        {
+          "concurrent_actors": 32,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 0.7513333333333332,
+          "public_reward_noise_sd": 3.1414276904264935,
+          "public_progress_snr": 0.23916938646177432,
+          "probability_observed_global_improvement": 0.534,
+          "probability_observed_global_deterioration": 0.3486666666666667,
+          "probability_observed_global_no_change": 0.11733333333333333,
+          "mean_global_progress": 0.6879999999999998
+        },
+        {
+          "concurrent_actors": 64,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 0.5246666666666666,
+          "public_reward_noise_sd": 4.161201183041508,
+          "public_progress_snr": 0.12608538822993817,
+          "probability_observed_global_improvement": 0.5166666666666667,
+          "probability_observed_global_deterioration": 0.3933333333333333,
+          "probability_observed_global_no_change": 0.09,
+          "mean_global_progress": 0.606
+        },
+        {
+          "concurrent_actors": 128,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 0.07733333333333339,
+          "public_reward_noise_sd": 4.664813523857496,
+          "public_progress_snr": 0.016578011733550238,
+          "probability_observed_global_improvement": 0.452,
+          "probability_observed_global_deterioration": 0.464,
+          "probability_observed_global_no_change": 0.084,
+          "mean_global_progress": 0.07266666666666674
+        },
+        {
+          "concurrent_actors": 144,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 0.0153333333333333,
+          "public_reward_noise_sd": 4.674306970306648,
+          "public_progress_snr": 0.0032803436810499823,
+          "probability_observed_global_improvement": 0.45666666666666667,
+          "probability_observed_global_deterioration": 0.45866666666666667,
+          "probability_observed_global_no_change": 0.08466666666666667,
+          "mean_global_progress": 0.0246666666666667
+        }
+      ]
+    },
+    {
+      "n": 144,
+      "k": 4,
+      "samples": 1500,
+      "initial_D": 0.5048888888888889,
+      "levels": [
+        {
+          "concurrent_actors": 1,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 1.0,
+          "public_reward_noise_sd": 0.0,
+          "public_progress_snr": null,
+          "probability_observed_global_improvement": 1.0,
+          "probability_observed_global_deterioration": 0.0,
+          "probability_observed_global_no_change": 0.0,
+          "mean_global_progress": 1.0
+        },
+        {
+          "concurrent_actors": 2,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 0.9813333333333332,
+          "public_reward_noise_sd": 0.6987214728965185,
+          "public_progress_snr": 1.4044699803846872,
+          "probability_observed_global_improvement": 0.7413333333333333,
+          "probability_observed_global_deterioration": 0.0,
+          "probability_observed_global_no_change": 0.25866666666666666,
+          "mean_global_progress": 0.9706666666666666
+        },
+        {
+          "concurrent_actors": 4,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 0.9626666666666667,
+          "public_reward_noise_sd": 1.168309590048288,
+          "public_progress_snr": 0.8239825084606882,
+          "probability_observed_global_improvement": 0.638,
+          "probability_observed_global_deterioration": 0.11466666666666667,
+          "probability_observed_global_no_change": 0.24733333333333332,
+          "mean_global_progress": 0.9266666666666666
+        },
+        {
+          "concurrent_actors": 8,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 0.9213333333333332,
+          "public_reward_noise_sd": 1.6644858758916874,
+          "public_progress_snr": 0.553524272376155,
+          "probability_observed_global_improvement": 0.606,
+          "probability_observed_global_deterioration": 0.19933333333333333,
+          "probability_observed_global_no_change": 0.19466666666666665,
+          "mean_global_progress": 0.9206666666666666
+        },
+        {
+          "concurrent_actors": 16,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 0.8526666666666667,
+          "public_reward_noise_sd": 2.4177848011044856,
+          "public_progress_snr": 0.352664416732686,
+          "probability_observed_global_improvement": 0.5346666666666666,
+          "probability_observed_global_deterioration": 0.29933333333333334,
+          "probability_observed_global_no_change": 0.166,
+          "mean_global_progress": 0.725333333333333
+        },
+        {
+          "concurrent_actors": 32,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 0.7653333333333333,
+          "public_reward_noise_sd": 3.263205565482703,
+          "public_progress_snr": 0.2345342081506664,
+          "probability_observed_global_improvement": 0.5126666666666667,
+          "probability_observed_global_deterioration": 0.366,
+          "probability_observed_global_no_change": 0.12133333333333333,
+          "mean_global_progress": 0.5866666666666668
+        },
+        {
+          "concurrent_actors": 64,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 0.524,
+          "public_reward_noise_sd": 4.123589643735439,
+          "public_progress_snr": 0.12707375012352679,
+          "probability_observed_global_improvement": 0.4886666666666667,
+          "probability_observed_global_deterioration": 0.4053333333333333,
+          "probability_observed_global_no_change": 0.106,
+          "mean_global_progress": 0.4273333333333334
+        },
+        {
+          "concurrent_actors": 128,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 0.09199999999999985,
+          "public_reward_noise_sd": 4.7910892662913005,
+          "public_progress_snr": 0.01920231389702648,
+          "probability_observed_global_improvement": 0.446,
+          "probability_observed_global_deterioration": 0.46266666666666667,
+          "probability_observed_global_no_change": 0.09133333333333334,
+          "mean_global_progress": -0.11800000000000006
+        },
+        {
+          "concurrent_actors": 144,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 0.016666666666666847,
+          "public_reward_noise_sd": 4.968940846664138,
+          "public_progress_snr": 0.0033541688623352985,
+          "probability_observed_global_improvement": 0.44733333333333336,
+          "probability_observed_global_deterioration": 0.4686666666666667,
+          "probability_observed_global_no_change": 0.084,
+          "mean_global_progress": -0.14066666666666658
+        }
+      ]
+    },
+    {
+      "n": 324,
+      "k": 2,
+      "samples": 1500,
+      "initial_D": 0.7544876543209876,
+      "levels": [
+        {
+          "concurrent_actors": 1,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 1.0000000000000013,
+          "public_reward_noise_sd": 0.0,
+          "public_progress_snr": null,
+          "probability_observed_global_improvement": 1.0,
+          "probability_observed_global_deterioration": 0.0,
+          "probability_observed_global_no_change": 0.0,
+          "mean_global_progress": 1.0000000000000013
+        },
+        {
+          "concurrent_actors": 2,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 0.9913333333333345,
+          "public_reward_noise_sd": 0.578641412208473,
+          "public_progress_snr": 1.71320840924565,
+          "probability_observed_global_improvement": 0.832,
+          "probability_observed_global_deterioration": 0.0,
+          "probability_observed_global_no_change": 0.168,
+          "mean_global_progress": 0.9993333333333347
+        },
+        {
+          "concurrent_actors": 4,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 0.9760000000000011,
+          "public_reward_noise_sd": 0.9814419873185947,
+          "public_progress_snr": 0.994455110552727,
+          "probability_observed_global_improvement": 0.678,
+          "probability_observed_global_deterioration": 0.054,
+          "probability_observed_global_no_change": 0.268,
+          "mean_global_progress": 0.9486666666666679
+        },
+        {
+          "concurrent_actors": 8,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 0.9566666666666679,
+          "public_reward_noise_sd": 1.4910509119011528,
+          "public_progress_snr": 0.6416056346774085,
+          "probability_observed_global_improvement": 0.6293333333333333,
+          "probability_observed_global_deterioration": 0.14666666666666667,
+          "probability_observed_global_no_change": 0.224,
+          "mean_global_progress": 1.0106666666666682
+        },
+        {
+          "concurrent_actors": 16,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 0.8946666666666676,
+          "public_reward_noise_sd": 2.0821893679325907,
+          "public_progress_snr": 0.42967593651435443,
+          "probability_observed_global_improvement": 0.57,
+          "probability_observed_global_deterioration": 0.252,
+          "probability_observed_global_no_change": 0.178,
+          "mean_global_progress": 0.921333333333335
+        },
+        {
+          "concurrent_actors": 32,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 0.8146666666666678,
+          "public_reward_noise_sd": 2.9534118094896957,
+          "public_progress_snr": 0.2758391715131083,
+          "probability_observed_global_improvement": 0.532,
+          "probability_observed_global_deterioration": 0.3393333333333333,
+          "probability_observed_global_no_change": 0.12866666666666668,
+          "mean_global_progress": 0.7340000000000009
+        },
+        {
+          "concurrent_actors": 64,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 0.6926666666666673,
+          "public_reward_noise_sd": 3.9483489201207815,
+          "public_progress_snr": 0.1754319794628177,
+          "probability_observed_global_improvement": 0.5346666666666666,
+          "probability_observed_global_deterioration": 0.36666666666666664,
+          "probability_observed_global_no_change": 0.09866666666666667,
+          "mean_global_progress": 0.8253333333333346
+        },
+        {
+          "concurrent_actors": 128,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 0.46466666666666734,
+          "public_reward_noise_sd": 4.895096592213286,
+          "public_progress_snr": 0.09492492291282272,
+          "probability_observed_global_improvement": 0.5,
+          "probability_observed_global_deterioration": 0.414,
+          "probability_observed_global_no_change": 0.086,
+          "mean_global_progress": 0.4626666666666675
+        },
+        {
+          "concurrent_actors": 324,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": -0.00866666666666685,
+          "public_reward_noise_sd": 5.952501749147557,
+          "public_progress_snr": -0.0014559704527441729,
+          "probability_observed_global_improvement": 0.45866666666666667,
+          "probability_observed_global_deterioration": 0.4826666666666667,
+          "probability_observed_global_no_change": 0.058666666666666666,
+          "mean_global_progress": -0.005333333333333258
+        }
+      ]
+    },
+    {
+      "n": 324,
+      "k": 3,
+      "samples": 1500,
+      "initial_D": 0.6426049382716049,
+      "levels": [
+        {
+          "concurrent_actors": 1,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 1.0000000000000007,
+          "public_reward_noise_sd": 0.0,
+          "public_progress_snr": null,
+          "probability_observed_global_improvement": 1.0,
+          "probability_observed_global_deterioration": 0.0,
+          "probability_observed_global_no_change": 0.0,
+          "mean_global_progress": 1.0000000000000007
+        },
+        {
+          "concurrent_actors": 2,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 0.9900000000000007,
+          "public_reward_noise_sd": 0.6564654244191855,
+          "public_progress_snr": 1.508076378700239,
+          "probability_observed_global_improvement": 0.7793333333333333,
+          "probability_observed_global_deterioration": 0.0,
+          "probability_observed_global_no_change": 0.22066666666666668,
+          "mean_global_progress": 0.9926666666666675
+        },
+        {
+          "concurrent_actors": 4,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 0.9820000000000007,
+          "public_reward_noise_sd": 1.1161490707133441,
+          "public_progress_snr": 0.8798107938865126,
+          "probability_observed_global_improvement": 0.658,
+          "probability_observed_global_deterioration": 0.096,
+          "probability_observed_global_no_change": 0.246,
+          "mean_global_progress": 0.9406666666666675
+        },
+        {
+          "concurrent_actors": 8,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 0.9553333333333338,
+          "public_reward_noise_sd": 1.7264054775179833,
+          "public_progress_snr": 0.5533655596985225,
+          "probability_observed_global_improvement": 0.612,
+          "probability_observed_global_deterioration": 0.188,
+          "probability_observed_global_no_change": 0.2,
+          "mean_global_progress": 1.008666666666667
+        },
+        {
+          "concurrent_actors": 16,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 0.922000000000001,
+          "public_reward_noise_sd": 2.3519014681528434,
+          "public_progress_snr": 0.3920232256686031,
+          "probability_observed_global_improvement": 0.544,
+          "probability_observed_global_deterioration": 0.3006666666666667,
+          "probability_observed_global_no_change": 0.15533333333333332,
+          "mean_global_progress": 0.8113333333333342
+        },
+        {
+          "concurrent_actors": 32,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 0.856666666666667,
+          "public_reward_noise_sd": 3.2675100226061895,
+          "public_progress_snr": 0.2621772116198081,
+          "probability_observed_global_improvement": 0.5366666666666666,
+          "probability_observed_global_deterioration": 0.35733333333333334,
+          "probability_observed_global_no_change": 0.106,
+          "mean_global_progress": 0.7206666666666672
+        },
+        {
+          "concurrent_actors": 64,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 0.776666666666667,
+          "public_reward_noise_sd": 4.3275598287722525,
+          "public_progress_snr": 0.17946988543125714,
+          "probability_observed_global_improvement": 0.524,
+          "probability_observed_global_deterioration": 0.38533333333333336,
+          "probability_observed_global_no_change": 0.09066666666666667,
+          "mean_global_progress": 0.6700000000000003
+        },
+        {
+          "concurrent_actors": 128,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 0.5433333333333341,
+          "public_reward_noise_sd": 5.761575310242215,
+          "public_progress_snr": 0.09430291267172425,
+          "probability_observed_global_improvement": 0.48733333333333334,
+          "probability_observed_global_deterioration": 0.44333333333333336,
+          "probability_observed_global_no_change": 0.06933333333333333,
+          "mean_global_progress": 0.25400000000000084
+        },
+        {
+          "concurrent_actors": 324,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 0.02666666666666657,
+          "public_reward_noise_sd": 7.02338493586283,
+          "public_progress_snr": 0.0037968396877268045,
+          "probability_observed_global_improvement": 0.452,
+          "probability_observed_global_deterioration": 0.49666666666666665,
+          "probability_observed_global_no_change": 0.051333333333333335,
+          "mean_global_progress": -0.2693333333333326
+        }
+      ]
+    },
+    {
+      "n": 324,
+      "k": 4,
+      "samples": 1500,
+      "initial_D": 0.5370555555555555,
+      "levels": [
+        {
+          "concurrent_actors": 1,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 0.9999999999999999,
+          "public_reward_noise_sd": 0.0,
+          "public_progress_snr": null,
+          "probability_observed_global_improvement": 1.0,
+          "probability_observed_global_deterioration": 0.0,
+          "probability_observed_global_no_change": 0.0,
+          "mean_global_progress": 0.9999999999999999
+        },
+        {
+          "concurrent_actors": 2,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 0.9880000000000001,
+          "public_reward_noise_sd": 0.7038061648166904,
+          "public_progress_snr": 1.4037956036621664,
+          "probability_observed_global_improvement": 0.764,
+          "probability_observed_global_deterioration": 0.0,
+          "probability_observed_global_no_change": 0.236,
+          "mean_global_progress": 1.028666666666667
+        },
+        {
+          "concurrent_actors": 4,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 0.9753333333333327,
+          "public_reward_noise_sd": 1.1937097012211197,
+          "public_progress_snr": 0.8170607412636454,
+          "probability_observed_global_improvement": 0.6613333333333333,
+          "probability_observed_global_deterioration": 0.11,
+          "probability_observed_global_no_change": 0.22866666666666666,
+          "mean_global_progress": 0.9726666666666662
+        },
+        {
+          "concurrent_actors": 8,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 0.9593333333333324,
+          "public_reward_noise_sd": 1.7473737719660491,
+          "public_progress_snr": 0.5490143830269028,
+          "probability_observed_global_improvement": 0.608,
+          "probability_observed_global_deterioration": 0.196,
+          "probability_observed_global_no_change": 0.196,
+          "mean_global_progress": 0.9666666666666663
+        },
+        {
+          "concurrent_actors": 16,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 0.9339999999999997,
+          "public_reward_noise_sd": 2.5185574087058846,
+          "public_progress_snr": 0.37084721466798676,
+          "probability_observed_global_improvement": 0.5706666666666667,
+          "probability_observed_global_deterioration": 0.272,
+          "probability_observed_global_no_change": 0.15733333333333333,
+          "mean_global_progress": 0.9759999999999999
+        },
+        {
+          "concurrent_actors": 32,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 0.8693333333333333,
+          "public_reward_noise_sd": 3.4764034461802256,
+          "public_progress_snr": 0.25006687134904676,
+          "probability_observed_global_improvement": 0.5333333333333333,
+          "probability_observed_global_deterioration": 0.35533333333333333,
+          "probability_observed_global_no_change": 0.11133333333333334,
+          "mean_global_progress": 0.8953333333333329
+        },
+        {
+          "concurrent_actors": 64,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 0.768,
+          "public_reward_noise_sd": 4.653556985500491,
+          "public_progress_snr": 0.1650350478983984,
+          "probability_observed_global_improvement": 0.52,
+          "probability_observed_global_deterioration": 0.3933333333333333,
+          "probability_observed_global_no_change": 0.08666666666666667,
+          "mean_global_progress": 0.821333333333333
+        },
+        {
+          "concurrent_actors": 128,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": 0.562666666666667,
+          "public_reward_noise_sd": 6.112645932288981,
+          "public_progress_snr": 0.09204960877816903,
+          "probability_observed_global_improvement": 0.5026666666666667,
+          "probability_observed_global_deterioration": 0.432,
+          "probability_observed_global_no_change": 0.06533333333333333,
+          "mean_global_progress": 0.6186666666666663
+        },
+        {
+          "concurrent_actors": 324,
+          "worlds": 1500,
+          "mean_single_agent_causal_effect": -0.013333333333333603,
+          "public_reward_noise_sd": 7.438437545903378,
+          "public_progress_snr": -0.0017924911315114504,
+          "probability_observed_global_improvement": 0.474,
+          "probability_observed_global_deterioration": 0.4666666666666667,
+          "probability_observed_global_no_change": 0.059333333333333335,
+          "mean_global_progress": 0.0539999999999989
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,711 @@
+{
+  "kind": "NEURAL_MICROTASK_NOT_FULL_COORDINATION",
+  "seed": 681104,
+  "settings": {
+    "batch": 48,
+    "episodes": 60,
+    "train_epochs": 2,
+    "eval_epochs": 40,
+    "eval_worlds": 64,
+    "lr": 0.5,
+    "seed": 681104
+  },
+  "results": [
+    {
+      "n": 36,
+      "k": 4,
+      "repeat": 0,
+      "train_worlds": 48,
+      "train_episodes": 60,
+      "train_epochs": 2,
+      "evaluation_worlds": 64,
+      "eval_epochs": 40,
+      "final_policies": {
+        "positive": 0.9297233991551995,
+        "negative": 0.026292541268076716,
+        "neutral": 0.373604135808494,
+        "positive_gt_negative": 1.0,
+        "std_weights": 1.8099084401659842
+      },
+      "training_history": [
+        {
+          "episode": 1,
+          "mean_D": 0.40740740740740744,
+          "exact": 0
+        },
+        {
+          "episode": 10,
+          "mean_D": 0.3200231481481482,
+          "exact": 0
+        },
+        {
+          "episode": 20,
+          "mean_D": 0.25289351851851855,
+          "exact": 0
+        },
+        {
+          "episode": 30,
+          "mean_D": 0.20775462962962962,
+          "exact": 0
+        },
+        {
+          "episode": 40,
+          "mean_D": 0.21180555555555555,
+          "exact": 0
+        },
+        {
+          "episode": 50,
+          "mean_D": 0.18865740740740736,
+          "exact": 0
+        },
+        {
+          "episode": 60,
+          "mean_D": 0.18460648148148148,
+          "exact": 0
+        }
+      ],
+      "arms": {
+        "untrained": {
+          "initial_D": 0.4032118055555556,
+          "final_D": 0.4171006944444444,
+          "exact": 0,
+          "worlds": 64,
+          "occupied": 9.78125,
+          "final_distribution": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            12,
+            51
+          ]
+        },
+        "trained": {
+          "initial_D": 0.4032118055555556,
+          "final_D": 0.07986111111111113,
+          "exact": 1,
+          "worlds": 64,
+          "occupied": 6.328125,
+          "final_distribution": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            12,
+            25,
+            18,
+            7,
+            1,
+            0
+          ]
+        },
+        "scripted": {
+          "initial_D": 0.4032118055555556,
+          "final_D": 0.00217013888888889,
+          "exact": 59,
+          "worlds": 64,
+          "occupied": 4.078125,
+          "final_distribution": [
+            0,
+            0,
+            0,
+            0,
+            59,
+            5,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "n": 36,
+      "k": 4,
+      "repeat": 1,
+      "train_worlds": 48,
+      "train_episodes": 60,
+      "train_epochs": 2,
+      "evaluation_worlds": 64,
+      "eval_epochs": 40,
+      "final_policies": {
+        "positive": 0.9290990666447111,
+        "negative": 0.026703352317492098,
+        "neutral": 0.3745893045011479,
+        "positive_gt_negative": 1.0,
+        "std_weights": 1.800190931835419
+      },
+      "training_history": [
+        {
+          "episode": 1,
+          "mean_D": 0.4143518518518518,
+          "exact": 0
+        },
+        {
+          "episode": 10,
+          "mean_D": 0.31886574074074076,
+          "exact": 0
+        },
+        {
+          "episode": 20,
+          "mean_D": 0.2476851851851852,
+          "exact": 0
+        },
+        {
+          "episode": 30,
+          "mean_D": 0.22800925925925922,
+          "exact": 0
+        },
+        {
+          "episode": 40,
+          "mean_D": 0.19618055555555555,
+          "exact": 0
+        },
+        {
+          "episode": 50,
+          "mean_D": 0.19560185185185183,
+          "exact": 0
+        },
+        {
+          "episode": 60,
+          "mean_D": 0.18229166666666666,
+          "exact": 0
+        }
+      ],
+      "arms": {
+        "untrained": {
+          "initial_D": 0.4032118055555555,
+          "final_D": 0.41015625,
+          "exact": 0,
+          "worlds": 64,
+          "occupied": 9.75,
+          "final_distribution": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            11,
+            51
+          ]
+        },
+        "trained": {
+          "initial_D": 0.4032118055555555,
+          "final_D": 0.08289930555555558,
+          "exact": 0,
+          "worlds": 64,
+          "occupied": 6.40625,
+          "final_distribution": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            15,
+            23,
+            12,
+            13,
+            1,
+            0
+          ]
+        },
+        "scripted": {
+          "initial_D": 0.4032118055555555,
+          "final_D": 0.0017361111111111119,
+          "exact": 60,
+          "worlds": 64,
+          "occupied": 4.0625,
+          "final_distribution": [
+            0,
+            0,
+            0,
+            0,
+            60,
+            4,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "n": 36,
+      "k": 4,
+      "repeat": 2,
+      "train_worlds": 48,
+      "train_episodes": 60,
+      "train_epochs": 2,
+      "evaluation_worlds": 64,
+      "eval_epochs": 40,
+      "final_policies": {
+        "positive": 0.92953558692875,
+        "negative": 0.026175062868213653,
+        "neutral": 0.37281277394389833,
+        "positive_gt_negative": 1.0,
+        "std_weights": 1.8121704987784815
+      },
+      "training_history": [
+        {
+          "episode": 1,
+          "mean_D": 0.39872685185185186,
+          "exact": 0
+        },
+        {
+          "episode": 10,
+          "mean_D": 0.31828703703703703,
+          "exact": 0
+        },
+        {
+          "episode": 20,
+          "mean_D": 0.24710648148148148,
+          "exact": 0
+        },
+        {
+          "episode": 30,
+          "mean_D": 0.2199074074074074,
+          "exact": 0
+        },
+        {
+          "episode": 40,
+          "mean_D": 0.20949074074074073,
+          "exact": 0
+        },
+        {
+          "episode": 50,
+          "mean_D": 0.19618055555555555,
+          "exact": 0
+        },
+        {
+          "episode": 60,
+          "mean_D": 0.1863425925925926,
+          "exact": 0
+        }
+      ],
+      "arms": {
+        "untrained": {
+          "initial_D": 0.41579861111111105,
+          "final_D": 0.4092881944444444,
+          "exact": 0,
+          "worlds": 64,
+          "occupied": 9.75,
+          "final_distribution": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            12,
+            50
+          ]
+        },
+        "trained": {
+          "initial_D": 0.41579861111111105,
+          "final_D": 0.07986111111111113,
+          "exact": 1,
+          "worlds": 64,
+          "occupied": 6.25,
+          "final_distribution": [
+            0,
+            0,
+            0,
+            0,
+            2,
+            14,
+            21,
+            20,
+            7,
+            0,
+            0
+          ]
+        },
+        "scripted": {
+          "initial_D": 0.41579861111111105,
+          "final_D": 0.0008680555555555559,
+          "exact": 62,
+          "worlds": 64,
+          "occupied": 4.03125,
+          "final_distribution": [
+            0,
+            0,
+            0,
+            0,
+            62,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "n": 324,
+      "k": 4,
+      "repeat": 0,
+      "train_worlds": 48,
+      "train_episodes": 60,
+      "train_epochs": 2,
+      "evaluation_worlds": 64,
+      "eval_epochs": 40,
+      "final_policies": {
+        "positive": 0.9445194524010684,
+        "negative": 0.030982204220613683,
+        "neutral": 0.423818458684302,
+        "positive_gt_negative": 1.0,
+        "std_weights": 1.7265689871192191
+      },
+      "training_history": [
+        {
+          "episode": 1,
+          "mean_D": 0.5342721193415638,
+          "exact": 0
+        },
+        {
+          "episode": 10,
+          "mean_D": 0.3898533950617284,
+          "exact": 0
+        },
+        {
+          "episode": 20,
+          "mean_D": 0.3042695473251029,
+          "exact": 0
+        },
+        {
+          "episode": 30,
+          "mean_D": 0.26440329218106995,
+          "exact": 0
+        },
+        {
+          "episode": 40,
+          "mean_D": 0.24504886831275718,
+          "exact": 0
+        },
+        {
+          "episode": 50,
+          "mean_D": 0.2288451646090535,
+          "exact": 0
+        },
+        {
+          "episode": 60,
+          "mean_D": 0.22672325102880656,
+          "exact": 0
+        }
+      ],
+      "arms": {
+        "untrained": {
+          "initial_D": 0.5370370370370371,
+          "final_D": 0.5379050925925926,
+          "exact": 0,
+          "worlds": 64,
+          "occupied": 10.0,
+          "final_distribution": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            64
+          ]
+        },
+        "trained": {
+          "initial_D": 0.5370370370370371,
+          "final_D": 0.05343364197530865,
+          "exact": 0,
+          "worlds": 64,
+          "occupied": 9.65625,
+          "final_distribution": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            18,
+            44
+          ]
+        },
+        "scripted": {
+          "initial_D": 0.5370370370370371,
+          "final_D": 0.0005787037037037063,
+          "exact": 53,
+          "worlds": 64,
+          "occupied": 4.171875,
+          "final_distribution": [
+            0,
+            0,
+            0,
+            0,
+            53,
+            11,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "n": 324,
+      "k": 4,
+      "repeat": 1,
+      "train_worlds": 48,
+      "train_episodes": 60,
+      "train_epochs": 2,
+      "evaluation_worlds": 64,
+      "eval_epochs": 40,
+      "final_policies": {
+        "positive": 0.9442969567376198,
+        "negative": 0.030538846223419062,
+        "neutral": 0.4215611715010324,
+        "positive_gt_negative": 1.0,
+        "std_weights": 1.7335457912278989
+      },
+      "training_history": [
+        {
+          "episode": 1,
+          "mean_D": 0.5300925925925926,
+          "exact": 0
+        },
+        {
+          "episode": 10,
+          "mean_D": 0.39544753086419754,
+          "exact": 0
+        },
+        {
+          "episode": 20,
+          "mean_D": 0.30195473251028804,
+          "exact": 0
+        },
+        {
+          "episode": 30,
+          "mean_D": 0.26080246913580246,
+          "exact": 0
+        },
+        {
+          "episode": 40,
+          "mean_D": 0.24067644032921812,
+          "exact": 0
+        },
+        {
+          "episode": 50,
+          "mean_D": 0.23096707818930037,
+          "exact": 0
+        },
+        {
+          "episode": 60,
+          "mean_D": 0.2288451646090535,
+          "exact": 0
+        }
+      ],
+      "arms": {
+        "untrained": {
+          "initial_D": 0.5349633487654322,
+          "final_D": 0.5372299382716049,
+          "exact": 0,
+          "worlds": 64,
+          "occupied": 10.0,
+          "final_distribution": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            64
+          ]
+        },
+        "trained": {
+          "initial_D": 0.5349633487654322,
+          "final_D": 0.05102237654320988,
+          "exact": 0,
+          "worlds": 64,
+          "occupied": 9.53125,
+          "final_distribution": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            5,
+            20,
+            39
+          ]
+        },
+        "scripted": {
+          "initial_D": 0.5349633487654322,
+          "final_D": 0.0008198302469135839,
+          "exact": 47,
+          "worlds": 64,
+          "occupied": 4.265625,
+          "final_distribution": [
+            0,
+            0,
+            0,
+            0,
+            47,
+            17,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "n": 324,
+      "k": 4,
+      "repeat": 2,
+      "train_worlds": 48,
+      "train_episodes": 60,
+      "train_epochs": 2,
+      "evaluation_worlds": 64,
+      "eval_epochs": 40,
+      "final_policies": {
+        "positive": 0.9443976364172826,
+        "negative": 0.030776599622871853,
+        "neutral": 0.42275000721637546,
+        "positive_gt_negative": 1.0,
+        "std_weights": 1.7297193403711513
+      },
+      "training_history": [
+        {
+          "episode": 1,
+          "mean_D": 0.5301568930041153,
+          "exact": 0
+        },
+        {
+          "episode": 10,
+          "mean_D": 0.39210390946502055,
+          "exact": 0
+        },
+        {
+          "episode": 20,
+          "mean_D": 0.30246913580246915,
+          "exact": 0
+        },
+        {
+          "episode": 30,
+          "mean_D": 0.26086676954732513,
+          "exact": 0
+        },
+        {
+          "episode": 40,
+          "mean_D": 0.24414866255144033,
+          "exact": 0
+        },
+        {
+          "episode": 50,
+          "mean_D": 0.2315457818930041,
+          "exact": 0
+        },
+        {
+          "episode": 60,
+          "mean_D": 0.22440843621399176,
+          "exact": 0
+        }
+      ],
+      "arms": {
+        "untrained": {
+          "initial_D": 0.5383391203703703,
+          "final_D": 0.5345293209876543,
+          "exact": 0,
+          "worlds": 64,
+          "occupied": 10.0,
+          "final_distribution": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            64
+          ]
+        },
+        "trained": {
+          "initial_D": 0.5383391203703703,
+          "final_D": 0.05406057098765432,
+          "exact": 0,
+          "worlds": 64,
+          "occupied": 9.71875,
+          "final_distribution": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            18,
+            46
+          ]
+        },
+        "scripted": {
+          "initial_D": 0.5383391203703703,
+          "final_D": 0.00048225308641975523,
+          "exact": 54,
+          "worlds": 64,
+          "occupied": 4.15625,
+          "final_distribution": [
+            0,
+            0,
+            0,
+            0,
+            54,
+            10,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    }
+  ]
+}
