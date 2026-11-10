@@ -1,0 +1,36 @@
+{
+  "protocol": "PREREG_SCALE_STRATEGY_AUDIT.md",
+  "script_sha": "1467d3fd8cc19b99ff6c4cb1a36439c60b662d0defc9510fc94974f3680117bb",
+  "model_sha": "55ba33a19bfb5da2236aa4064a1df14102ec39712987127c5bc437bd71554c7f",
+  "env_sha": "2d5e6821fb7a17af5329055c4f0835177aaf5c9086f9eeda79f452bd432c931c",
+  "weights": {
+    "221": "5cf963032e4e84204ac01b666bad74131dbbcd43ca45a93b000a036d7cc32ed6",
+    "222": "dedf25e4b5fce33e711deeb5dc7a7a78fb7c1b361bfe24f56e1351375fb22717",
+    "223": "4be5058af2cad3baeb7d9363b6743b89f4a363628ee13095ebfc21cd66b7e345"
+  },
+  "seeds": [
+    221,
+    222,
+    223
+  ],
+  "k": 4,
+  "n": 120,
+  "batch": 40,
+  "steps": 90,
+  "world_seeds": "1310000+1000*training_seed+100*k",
+  "conditions": [
+    "trained",
+    "no_sender_snapshot",
+    "no_direct_neighbor",
+    "no_last_feedback",
+    "one_sender",
+    "random_T8",
+    "random_T24",
+    "random_always",
+    "stay"
+  ],
+  "freeze_steps": [
+    8,
+    24
+  ]
+}

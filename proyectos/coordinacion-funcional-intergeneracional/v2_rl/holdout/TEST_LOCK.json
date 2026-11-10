@@ -1,0 +1,53 @@
+{
+  "protocol": "PREREG_HOLDOUT.md",
+  "checkpoints_sha256": {
+    "team_only": "cca8dacbf95a5d5ec78930625437086986b9b34110ede562dea428d916376df4",
+    "credit_difference": "5cf963032e4e84204ac01b666bad74131dbbcd43ca45a93b000a036d7cc32ed6"
+  },
+  "environment_sha256": "2d5e6821fb7a17af5329055c4f0835177aaf5c9086f9eeda79f452bd432c931c",
+  "actor_sha256": "55ba33a19bfb5da2236aa4064a1df14102ec39712987127c5bc437bd71554c7f",
+  "evaluator_sha256": "66a4d0d7b70f84a246faddee73857194340137f8a3763aa3c2fde4905e25865e",
+  "N36": {
+    "rows": 6,
+    "cols": 6,
+    "batch": 96,
+    "steps": 90,
+    "k": [
+      2,
+      3,
+      4
+    ],
+    "world_seed": "940000+100*k",
+    "conditions": [
+      "difference_stochastic",
+      "team_stochastic",
+      "difference_deterministic",
+      "random",
+      "stay",
+      "one_sender",
+      "strip_snapshot",
+      "no_previous_feedback"
+    ]
+  },
+  "N120": {
+    "rows": 10,
+    "cols": 12,
+    "batch": 60,
+    "steps": 90,
+    "k": [
+      2,
+      3,
+      4
+    ],
+    "world_seed": "950000+100*k",
+    "conditions": [
+      "difference_stochastic",
+      "team_stochastic",
+      "random",
+      "stay"
+    ]
+  },
+  "global_feedback_at_evaluation": true,
+  "training_updates": 0,
+  "stability": "TV<=.06 and churn<=.05 for final ten rounds"
+}

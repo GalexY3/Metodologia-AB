@@ -1,0 +1,27 @@
+{
+  "protocol": "PREREG_SCALE_STRATEGY_AUDIT.md",
+  "model": "55ba33a19bfb5da2236aa4064a1df14102ec39712987127c5bc437bd71554c7f",
+  "environment": "2d5e6821fb7a17af5329055c4f0835177aaf5c9086f9eeda79f452bd432c931c",
+  "script": "0d9fa07924af33862a35b84952c4644de35fd64fcf56a2fc57b814a2ffcac385",
+  "weights": {
+    "221": "5cf963032e4e84204ac01b666bad74131dbbcd43ca45a93b000a036d7cc32ed6",
+    "223": "4be5058af2cad3baeb7d9363b6743b89f4a363628ee13095ebfc21cd66b7e345"
+  },
+  "training_seeds": [
+    221,
+    223
+  ],
+  "k": [
+    2,
+    3,
+    4
+  ],
+  "n": 120,
+  "worlds": 8,
+  "ticks": 90,
+  "modes": [
+    "learned",
+    "random"
+  ],
+  "world_seed": "1510000+1000*model_seed+100*k"
+}

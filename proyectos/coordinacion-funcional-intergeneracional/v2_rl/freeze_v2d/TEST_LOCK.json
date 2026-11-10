@@ -1,0 +1,22 @@
+{
+  "protocol": "PREREG_SCALE_STRATEGY_AUDIT.md plus exploratory extension to larger N",
+  "script_sha": "9c57de0791b8510719a57b63a051e071e8ed6c7eb70a71b5c56f500c79b6ddc0",
+  "env_sha": "2d5e6821fb7a17af5329055c4f0835177aaf5c9086f9eeda79f452bd432c931c",
+  "agents_sha": "55ba33a19bfb5da2236aa4064a1df14102ec39712987127c5bc437bd71554c7f",
+  "N": [
+    36,
+    120,
+    240,
+    480,
+    960
+  ],
+  "k": 4,
+  "steps": 90,
+  "modes": [
+    "random_8_then_freeze",
+    "random_24_then_freeze",
+    "random_always"
+  ],
+  "world_seed": "1710000+200*N+100*k",
+  "rule": "uniform random send+accept for 8 or24 steps, then no activity"
+}

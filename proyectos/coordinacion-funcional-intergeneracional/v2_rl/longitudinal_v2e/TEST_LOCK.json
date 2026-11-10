@@ -1,0 +1,35 @@
+{
+  "protocol": "PREREG_LONGITUDINAL.md",
+  "code": "7a73df969d5eb7a0139906c569cb3fae16ec5a25c52846ca0e92ab164db225b9",
+  "env": "2d5e6821fb7a17af5329055c4f0835177aaf5c9086f9eeda79f452bd432c931c",
+  "agents": "55ba33a19bfb5da2236aa4064a1df14102ec39712987127c5bc437bd71554c7f",
+  "ckpts": {
+    "221_credit2": "5cf963032e4e84204ac01b666bad74131dbbcd43ca45a93b000a036d7cc32ed6",
+    "221_credit0": "cca8dacbf95a5d5ec78930625437086986b9b34110ede562dea428d916376df4",
+    "222_credit2": "dedf25e4b5fce33e711deeb5dc7a7a78fb7c1b361bfe24f56e1351375fb22717",
+    "222_credit0": "6c5038bd134f72867bdbab0e4df0c08486264b4784a456b76b69857d3e8bdd80",
+    "223_credit2": "4be5058af2cad3baeb7d9363b6743b89f4a363628ee13095ebfc21cd66b7e345",
+    "223_credit0": "55de5b327c9f2e2ebe1fd6009300fcf94ba4263c58435cce55b0b1d5e43c0fa0"
+  },
+  "n": 120,
+  "batch": 24,
+  "ks": [
+    2,
+    3,
+    4
+  ],
+  "cohorts": [
+    221,
+    222,
+    223
+  ],
+  "modes": [
+    "credit2",
+    "credit0",
+    "random_always",
+    "random_T24",
+    "stay"
+  ],
+  "ticks": 240,
+  "world_seeds": "2040000+1000*train_seed+100*k"
+}

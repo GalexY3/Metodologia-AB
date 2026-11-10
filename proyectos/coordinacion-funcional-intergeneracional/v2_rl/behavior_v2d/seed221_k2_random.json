@@ -1,0 +1,112 @@
+{
+  "seed": 221,
+  "k": 2,
+  "mode": "random",
+  "societies": 8,
+  "n_agents": 120,
+  "ticks": 90,
+  "final_tv": 0.05520833656191826,
+  "mean_last10_tv": 0.040937498398125174,
+  "mean_send_rate": 0.9013657407407407,
+  "mean_received_per_agent_turn": 0.9013657407407407,
+  "mean_accept_rate": 0.3579398148148148,
+  "mean_actual_change_rate": 0.1790162037037037,
+  "acceptance_rate_per_incoming": 0.39710829759367217,
+  "change_per_accepted_request": 0.5001293410075665,
+  "request_target_global_deficit_fraction": 0.4602455122114076,
+  "request_target_local_minimum_fraction": 0.5555484218906495,
+  "requests_that_repeat_sender_own_color_fraction": 0.49915252060915793,
+  "positive_impact_changes_fraction": 0.5129630826921834,
+  "negative_impact_changes_fraction": 0.4870369173078166,
+  "neutral_impact_changes_fraction": 0.0,
+  "origin_color_by_requested_color": [
+    [
+      19667,
+      19736
+    ],
+    [
+      19269,
+      19206
+    ]
+  ],
+  "origin_color_by_actual_new_color": [
+    [
+      0,
+      7752
+    ],
+    [
+      7715,
+      0
+    ]
+  ],
+  "epoch": {
+    "early": {
+      "send_rate": 0.9029166666666667,
+      "accept_rate": 0.35909722222222223,
+      "change_rate": 0.1807638888888889,
+      "mean_tv": 0.041631942987442015,
+      "beneficial_changes": 2693,
+      "harmful_changes": 2513
+    },
+    "middle": {
+      "send_rate": 0.9016666666666666,
+      "accept_rate": 0.35704861111111114,
+      "change_rate": 0.17965277777777777,
+      "mean_tv": 0.03541666610787312,
+      "beneficial_changes": 2662,
+      "harmful_changes": 2512
+    },
+    "late": {
+      "send_rate": 0.8995138888888888,
+      "accept_rate": 0.3576736111111111,
+      "change_rate": 0.17663194444444444,
+      "mean_tv": 0.038749999925494195,
+      "beneficial_changes": 2579,
+      "harmful_changes": 2508
+    }
+  },
+  "degree_roles": [
+    {
+      "degree": 3,
+      "nodes_per_world": 4,
+      "send_per_node_turn": 0.8569444444444445,
+      "received_per_node_turn": 0.6159722222222221,
+      "accept_per_node_turn": 0.27118055555555554,
+      "change_per_node_turn": 0.13506944444444446
+    },
+    {
+      "degree": 4,
+      "nodes_per_world": 36,
+      "send_per_node_turn": 0.8892361111111112,
+      "received_per_node_turn": 0.8284722222222223,
+      "accept_per_node_turn": 0.34216820987654323,
+      "change_per_node_turn": 0.17337962962962963
+    },
+    {
+      "degree": 5,
+      "nodes_per_world": 80,
+      "send_per_node_turn": 0.909045138888889,
+      "received_per_node_turn": 0.9484375,
+      "accept_per_node_turn": 0.36937499999999995,
+      "change_per_node_turn": 0.18375
+    }
+  ],
+  "sender_engagement_gini_per_world": [
+    0.017794961081524008,
+    0.019130345394736903,
+    0.020500341530054644,
+    0.020707513140265865,
+    0.02305698592516303,
+    0.02070035460992914,
+    0.022362271024504166,
+    0.0185185185185186
+  ],
+  "sender_engagement_gini_mean": 0.020346411403087045,
+  "spatial_sender_role_consistency_between_world_halves": 0.439644440674907,
+  "residual_sender_role_consistency_after_degree": 0.13414587948065626,
+  "interpretation_limits": [
+    "all agents share SAME neural policy weights",
+    "roles can reflect observations, graph position, and random trajectory; not permanent social classes",
+    "global deficits and marginal impacts are computed by analyst after actions only"
+  ]
+}

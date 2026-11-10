@@ -1,0 +1,7 @@
+# Preserve experimental input and output byte hashes across Git transports.
+# Locks store SHA-256 of original raw source/checkpoint bytes, not normalized text.
+*.py -text
+*.json -text
+*.svg -text
+*.md -text
+*.pt binary

@@ -1,0 +1,43 @@
+{
+  "protocol": "PREREG_REPLICATION.md",
+  "actor_sha": "55ba33a19bfb5da2236aa4064a1df14102ec39712987127c5bc437bd71554c7f",
+  "env_sha": "2d5e6821fb7a17af5329055c4f0835177aaf5c9086f9eeda79f452bd432c931c",
+  "source_sha": "1e70faa47b26c467474ae9d37763fcc2acd0170174e655b9bae36a8f703f8e94",
+  "checkpoint_sha": {
+    "222_0": "6c5038bd134f72867bdbab0e4df0c08486264b4784a456b76b69857d3e8bdd80",
+    "222_2": "dedf25e4b5fce33e711deeb5dc7a7a78fb7c1b361bfe24f56e1351375fb22717",
+    "223_0": "55de5b327c9f2e2ebe1fd6009300fcf94ba4263c58435cce55b0b1d5e43c0fa0",
+    "223_2": "4be5058af2cad3baeb7d9363b6743b89f4a363628ee13095ebfc21cd66b7e345"
+  },
+  "new_training_seed_cohorts": [
+    222,
+    223
+  ],
+  "weights": [
+    0.0,
+    2.0
+  ],
+  "ks": [
+    2,
+    3,
+    4
+  ],
+  "grid_shapes": [
+    [
+      6,
+      6
+    ],
+    [
+      10,
+      12
+    ]
+  ],
+  "eval_batch_by_N": {
+    "36": 64,
+    "120": 40
+  },
+  "n_iterations": 90,
+  "world_seed": "970000 or 980000 +1000*training_seed+100*k",
+  "stability": "D<=.06 and churn<=.05 for last 10 rounds",
+  "parameters_frozen": true
+}
