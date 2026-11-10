@@ -29,6 +29,7 @@ def evaluate(net,k,model_tag,kind,worldseed):
  torch.manual_seed(worldseed+(1 if kind=="greedy" else 0))
  D=[e.D.clone()];C_h=[];occupied=[];messages=[];exact=[]
  for t in range(T):
+  if kind=="no_history" and net is not None:net.reset_memory(B)
   observation=e.observe()
   stop=(kind=="stay" or (kind=="random_T24" and t>=24))
   if stop:
@@ -114,7 +115,8 @@ def main():
    tag=f"W{m}_H{h}"
    for stage,model in (("trained",actors[(m,h)]),
                        ("untrained",untrained[(m,h)])):
-    for kind in ("sample","greedy"):
+    kinds=("sample","greedy","no_history") if m==8 and stage=="trained" else ("sample","greedy")
+    for kind in kinds:
      dest=OUT/f"k{k}_{tag}_{stage}_{kind}.json"
      if dest.exists():raise RuntimeError("No overwrite for "+str(dest))
      row=evaluate(model,k,f"{tag}_{stage}",kind,worldseed)
