@@ -1,0 +1,36 @@
+{
+  "protocol": "PREREG_V3C_SCALING.md",
+  "n": 120,
+  "rows": 10,
+  "cols": 12,
+  "hidden": 24,
+  "updates": 1500,
+  "training_seed": 411,
+  "batch": 64,
+  "ticks": 120,
+  "k": [
+    2,
+    3,
+    4
+  ],
+  "modes": [
+    "C1",
+    "C2",
+    "C3",
+    "random_always",
+    "random_T24",
+    "stay"
+  ],
+  "world_seed_formula": "9000000 + N*10000 + hidden*100 + trainingseed*10 + k",
+  "script_sha": "e2224d9b96088db615bb34edf6b6f95db7c2dcb84a3cc3c195aa15e24f4f3b0b",
+  "actor_sha": "30f7683c8632f2e791ca5e962707c4b783b91f9297ebd5c234d057b79edfb0e4",
+  "env_sha": "4d83c44ffd403558fe1fbbd11f2feeedefb47464aa830b9b06fd100dbd767d7d",
+  "base_env_sha": "2d5e6821fb7a17af5329055c4f0835177aaf5c9086f9eeda79f452bd432c931c",
+  "trainer_sha": "662cbe6a1f8e35c62e077430c750352a67cb4c36f6299e010ce2735b79f1cc53",
+  "models_sha": {
+    "C1": "cbda774a0235028d4daee75e7aaa5b6d0783a5b123bef6ca1e616db1e1bb3365",
+    "C2": "e00112d145acb06ef26c5ee328b6ed1dec31876ef91b2676da6ca847c8efc6ba"
+  },
+  "no_gradient_evaluation": true,
+  "stability": "D<=.06 and churn<=.05 in 10 last turns"
+}
