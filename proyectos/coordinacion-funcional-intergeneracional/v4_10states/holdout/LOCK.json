@@ -1,0 +1,32 @@
+{
+  "protocol": "PREREG_V4.md",
+  "test_script": "8a819da9245ebfe5a21ef599651f5b4ee800c7a9dc6c671a3b6998960258c4ad",
+  "policy_script": "755d14e3bc7f84d5bf46380edc0edb4857b3517a3844484f73aa58b3558cd0f2",
+  "society_script": "cda3b699417649f006597738868217f5fb7c7833e3aaba0652d6d68eba7655a6",
+  "weights_sha": {
+    "C1": "769f45cf789b365f8ff7f88f371945312b0ca69c8edb423f4fa89251b1326b69",
+    "C2": "21a3a1e821cb1cad5e119c67a7cc9693816328cd7ebfba15c6274b288a11a843"
+  },
+  "n": 36,
+  "k": [
+    2,
+    3,
+    4
+  ],
+  "worlds_per_k_mode": 100,
+  "steps": 120,
+  "worldseed": "4900000+100*k",
+  "no_learning": true,
+  "conditions": [
+    "C1",
+    "C2",
+    "C3",
+    "C1_greedy",
+    "C2_greedy",
+    "C3_greedy",
+    "random_always",
+    "random_T24",
+    "stay"
+  ],
+  "iid_reference_seed": 20261110
+}

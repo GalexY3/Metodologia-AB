@@ -1,0 +1,32 @@
+{
+  "protocol": "PREREG_V4_DELTA500.md",
+  "scope": "exploratory_posthoc_v4_10k_negative_outcome",
+  "evaluater_sha": "161a9a39dd6398299a09c88bc157fc952ce5fff209129a0b36844808c170c922",
+  "base_eval_sha": "8a819da9245ebfe5a21ef599651f5b4ee800c7a9dc6c671a3b6998960258c4ad",
+  "policy_sha": "755d14e3bc7f84d5bf46380edc0edb4857b3517a3844484f73aa58b3558cd0f2",
+  "society_sha": "cda3b699417649f006597738868217f5fb7c7833e3aaba0652d6d68eba7655a6",
+  "train_script_sha": "e14879f4dc884d837a6e0da627c7e7f71bc20cea7322ce9ec891e73d703182e7",
+  "models_sha": {
+    "C1": "7efaab1f49b0a64633f140e36b0fd6eb89d0e79ff403aa4ef9e4541b53a34b2d",
+    "C2": "7fa59a936155bbdfc86516fe641f80f05a860974940b2cdae7006ed5c895134b"
+  },
+  "seed_initial_weights": 421,
+  "world_seed_formula": "5700000+100*k",
+  "n_worlds": 100,
+  "horizon": 120,
+  "k": [
+    2,
+    3,
+    4
+  ],
+  "modes": [
+    "C1",
+    "C2",
+    "C3",
+    "C1_greedy",
+    "C2_greedy",
+    "random_always",
+    "random_T24",
+    "stay"
+  ]
+}

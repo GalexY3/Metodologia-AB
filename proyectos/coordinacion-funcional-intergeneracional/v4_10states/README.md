@@ -12,17 +12,17 @@ Los agentes tienen **matrices neuronales distintas θ_i**, observan color propio
 
 [PREREG_V4.md](PREREG_V4.md) fija tarea, cambios respecto a V3, hiperpárametros y evaluación reservada. [test_v4.py](test_v4.py) pasó **9 tests**, incluyendo cuotas con subconjuntos arbitrarios (0,2,5,9), gradientes θ_i independientes, permutación de las diez etiquetas y ausencia de fugas de mensajes no recibidos.
 
-## Entrenamientos largos iniciados y todavía NO declarados completados
+## Entrenamientos V4 completados — historial y resultados posteriores
 
 **GalexY_travel, condición C2 con mensajes:** `C:\Programación\AB-ten-states-v4-20261110\proyectos\coordinacion-funcional-intergeneracional\v4_10states\runs\tenstates_N36_H64_seed421_C2_u10000`
 
 **DESKTOP-I4SULKD, condición C1 sin mensajes:** la misma ruta `C:\Programación\AB-ten-states-v4-20261110\proyectos\coordinacion-funcional-intergeneracional\v4_10states\runs\tenstates_N36_H64_seed421_C1_u10000`.
 
-Ambos se iniciaron con `train_v4.py`, 10.000 actualizaciones previstas por brazo, 12 mundos por actualización, 32 turnos por mundo, H64, N36, seed421, Adam .001, gamma .98, clip por agente y baseline leave-one-out ENTRE MUNDOS de k igual. Se guardan `LATEST.pt` y `TRAINING_LOG.json` cada 250 actualizaciones y checkpoints inmutables `MILESTONE_XXXXX.pt` en 500,1000,2000,5000,10000. Si un proceso falla, no inventar su conclusión: revisar último checkpoint y reanudar con la misma configuración `--resume`, sin lanzar dos entrenamientos en paralelo sobre la misma carpeta.
+Ambos se ejecutaron con `train_v4.py`, 10.000 actualizaciones completadas por brazo, 12 mundos por actualización, 32 turnos por mundo, H64, N36, seed421, Adam .001, gamma .98, clip por agente y baseline leave-one-out ENTRE MUNDOS de k igual. Se guardan `LATEST.pt` y `TRAINING_LOG.json` cada 250 actualizaciones y checkpoints inmutables `MILESTONE_XXXXX.pt` en 500,1000,2000,5000,10000. Si un proceso falla, no inventar su conclusión: revisar último checkpoint y reanudar con la misma configuración `--resume`, sin lanzar dos entrenamientos en paralelo sobre la misma carpeta.
 
 **Resultados preliminares (DESARROLLO, no prueba reservada):** hasta 2000 actualizaciones C2, ningún caso exacto en el lote fijo de desarrollo y distancia al objetivo próxima al IID-10 aleatorio; C1 mostró una tendencia parecida en sus primeros hitos. La comparación greedy de C2 en actualización1000 mejoraba la distancia frente al muestreo pero peor que un modelo GREEDY recién inicializado; no se ha demostrado aprendizaje organizativo. Véase `development_diagnostics/C2_u1000.json`.
 
-El **test reservado** `evaluate_v4.py` exige AMBOS `FINAL_MODEL.pt` con update exactamente10000; prueba k2/3/4, C1,C2,C3, sus versiones greedy, random siempre, random→quieto y quieto, sin modificar pesos; guarda `holdout/LOCK.json` con SHA256 de ambos checkpoints y scripts antes de calcular el primer resultado. No abrir test ni reportar final anticipadamente.
+El **test reservado** `evaluate_v4.py` se ejecutó con ambos modelos finales de 10.000 actualizaciones, bloqueo SHA256 previo y 100 sociedades nuevas por k y condición. No se obtuvo ninguna solución exacta o estabilidad sostenida para C1/C2. Véase `holdout/SUMMARY.json` y la auditoría `REPORT_GEMINI_AUDIT_RESULTS.md`.
 
 ## Continuidad en GitHub
 
