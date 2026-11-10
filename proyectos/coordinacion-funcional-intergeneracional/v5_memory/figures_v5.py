@@ -31,7 +31,7 @@ for k in (2,3,4):
  for t in range(0,101,20):
   svg.append(f'<text x="{x(t):.1f}" y="{Ht-bottom+24}" font-family="Arial" font-size="12" text-anchor="middle" fill="#5D6975">{t}</text>')
  for i,(label,(variant,kind)) in enumerate(names.items()):
-  fn=R/"holdout"/f"k{k}_{variant}_{kind}.json"
+  fn=R/"holdout"/(f"k{k}_{kind}.json" if variant=="baseline" else f"k{k}_{variant}_{kind}.json")
   v=json.loads(fn.read_text(encoding="utf-8"))
   points=" ".join(f"{x(t):.2f},{y(d):.2f}" for t,d in enumerate(v["D_curve"]))
   color=palette[label]

@@ -1,0 +1,26 @@
+{
+  "protocol": "PREREG_V5.md",
+  "seed_train": 521,
+  "k": [
+    2,
+    3,
+    4
+  ],
+  "n_societies_per_variant_kind_k": 100,
+  "ticks": 100,
+  "worldseed": "7200000+100*k",
+  "code_sha": {
+    "agents_memory.py": "d3bd6513c53e0e1e49a7054f978829e9b4e5ceae760618f05a31c5c7390117cb",
+    "train_v5.py": "6ac3b26def251f6225ff070992814217268436823c0be3f49bb47d9b55364cf7",
+    "evaluate_v5.py": "956d6889ab768fe9ee29109c71258c114c0f158ced0d24fc17834211ebcdfacf"
+  },
+  "environment_sha": "cda3b699417649f006597738868217f5fb7c7833e3aaba0652d6d68eba7655a6",
+  "weights": {
+    "W1_H64": "1fe5ee5de8e110685146305886eefa1dbfeab76b4a797f835b31e9a8a6c669dc",
+    "W1_H128": "64d439bfccee309b99e253b17dae4fad4f70517b517ebd394cd35628421e1420",
+    "W8_H64": "238bb40991a9364f6bc1c05abc4271c7dcea9fe23ee376152ba6055e7db2257a",
+    "W8_H128": "ac42e0fc7714c0faed56699078c6227b149f35a5adf702433bfdde455d2a2e98"
+  },
+  "evaluation": "stochastic and deterministic, frozen; untrained controls from same seed",
+  "no_test_tuning": true
+}
