@@ -1,0 +1,39 @@
+{
+  "protocol": "PREREG_V3B_C1C2.md",
+  "test_script_hash": "154fa2c79e09a93e3ef27519eb9612ff49b4a3ae1faab115435a9fd6746b474f",
+  "env_hash": "4d83c44ffd403558fe1fbbd11f2feeedefb47464aa830b9b06fd100dbd767d7d",
+  "society_hash": "2d5e6821fb7a17af5329055c4f0835177aaf5c9086f9eeda79f452bd432c931c",
+  "policy_hash": "30f7683c8632f2e791ca5e962707c4b783b91f9297ebd5c234d057b79edfb0e4",
+  "train_script_hash": "78cc0008856ce6946b7d684ea5dd8a873e09708790f03121043a8cbef3e67558",
+  "weights": {
+    "311_C1": "a7687d215ad5435d56153dffb4196de1f6444d565cbae3e0b9835c010d0f6998",
+    "311_C2": "ad373321e2f1069026c54a6cce1384650b0d3b7e3d8e81b52be350ed3523657d",
+    "312_C1": "e8162d9b5c1915d9c4ff4747812e1835a630509d44a9bfb4843f0c1654110b1d",
+    "312_C2": "3107aa4001f4bfcfc9f60efaa4fe6569219d37e6f0769659d3b4b1c8b19de510",
+    "313_C1": "a933ef6001f3436d99b6d7268cfbf51a186470afebbc384d4b8f67a7e68c3708",
+    "313_C2": "c15c414661fdde4fa054072a0ea0cd64f9144f2260f6cf49ae80084a933b66e8"
+  },
+  "seeds": [
+    311,
+    312,
+    313
+  ],
+  "k": [
+    2,
+    3,
+    4
+  ],
+  "conditions": [
+    "C1",
+    "C2",
+    "C3",
+    "random_always",
+    "random_T24",
+    "stay"
+  ],
+  "batch": 100,
+  "ticks": 120,
+  "eval_seed_formula": "990000+10000*trainseed+100*k",
+  "training_updates_during_evaluation": 0,
+  "stability": "D<=0.06 AND churn<=0.05 over last 10 ticks"
+}
