@@ -1,0 +1,1696 @@
+{
+  "model": "v14_N120_fullrange_s3111",
+  "training_ks": [
+    2,
+    3,
+    4,
+    6,
+    10,
+    15,
+    24,
+    30
+  ],
+  "note": "Neither the actor nor the objective uses quota rounding; only exact assessment handles integer feasibility.",
+  "tests": [
+    {
+      "k": 7,
+      "m": 80,
+      "mode": "learned",
+      "food": 0.727695087591807,
+      "ratio": 0.7381968161066577,
+      "ideal": 0.9857738095238096,
+      "exact": 0,
+      "worlds": 144,
+      "occupied": 5.104166666666667,
+      "subruns": [
+        {
+          "food": 0.727329671382904,
+          "best_possible_balanced": 0.9857738095238096,
+          "ratio_vs_balanced": 0.7378261263953135,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 5.104166507720947,
+          "overrepresented": 0.02083333395421505
+        },
+        {
+          "food": 0.7249611616134644,
+          "best_possible_balanced": 0.9857738095238096,
+          "ratio_vs_balanced": 0.7354234354873619,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 5.083333492279053,
+          "overrepresented": 0.0
+        },
+        {
+          "food": 0.7307944297790527,
+          "best_possible_balanced": 0.9857738095238096,
+          "ratio_vs_balanced": 0.7413408864372976,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 5.125,
+          "overrepresented": 0.02083333395421505
+        }
+      ]
+    },
+    {
+      "k": 7,
+      "m": 80,
+      "mode": "random",
+      "food": 0.14573880533377329,
+      "ratio": 0.147842034273739,
+      "ideal": 0.9857738095238096,
+      "exact": 0,
+      "worlds": 144,
+      "occupied": 61.993054707845054,
+      "subruns": [
+        {
+          "food": 0.1462586671113968,
+          "best_possible_balanced": 0.9857738095238096,
+          "ratio_vs_balanced": 0.1483693984343618,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 61.83333206176758,
+          "overrepresented": 0.0
+        },
+        {
+          "food": 0.14577257633209229,
+          "best_possible_balanced": 0.9857738095238096,
+          "ratio_vs_balanced": 0.14787629263807442,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 62.5,
+          "overrepresented": 0.0
+        },
+        {
+          "food": 0.1451851725578308,
+          "best_possible_balanced": 0.9857738095238096,
+          "ratio_vs_balanced": 0.14728041174878073,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 61.64583206176758,
+          "overrepresented": 0.0
+        }
+      ]
+    },
+    {
+      "k": 7,
+      "m": 80,
+      "mode": "imitate",
+      "food": 0.5207033157348633,
+      "ratio": 0.528217843387821,
+      "ideal": 0.9857738095238096,
+      "exact": 0,
+      "worlds": 144,
+      "occupied": 4.763888835906982,
+      "subruns": [
+        {
+          "food": 0.5059046149253845,
+          "best_possible_balanced": 0.9857738095238096,
+          "ratio_vs_balanced": 0.5132055751915017,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 4.666666507720947,
+          "overrepresented": 0.8958333134651184
+        },
+        {
+          "food": 0.5387869477272034,
+          "best_possible_balanced": 0.9857738095238096,
+          "ratio_vs_balanced": 0.5465624492371848,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 4.958333492279053,
+          "overrepresented": 0.8333333134651184
+        },
+        {
+          "food": 0.517418384552002,
+          "best_possible_balanced": 0.9857738095238096,
+          "ratio_vs_balanced": 0.5248855057347764,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 4.666666507720947,
+          "overrepresented": 0.875
+        }
+      ]
+    },
+    {
+      "k": 9,
+      "m": 80,
+      "mode": "learned",
+      "food": 0.7297044396400452,
+      "ratio": 0.7545414283223216,
+      "ideal": 0.9670833333333333,
+      "exact": 0,
+      "worlds": 144,
+      "occupied": 6.576388835906982,
+      "subruns": [
+        {
+          "food": 0.72584068775177,
+          "best_possible_balanced": 0.9670833333333333,
+          "ratio_vs_balanced": 0.7505461657062681,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 6.541666507720947,
+          "overrepresented": 0.02083333395421505
+        },
+        {
+          "food": 0.730487585067749,
+          "best_possible_balanced": 0.9670833333333333,
+          "ratio_vs_balanced": 0.7553512297124505,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 6.583333492279053,
+          "overrepresented": 0.0
+        },
+        {
+          "food": 0.7327850461006165,
+          "best_possible_balanced": 0.9670833333333333,
+          "ratio_vs_balanced": 0.7577268895482463,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 6.604166507720947,
+          "overrepresented": 0.0
+        }
+      ]
+    },
+    {
+      "k": 9,
+      "m": 80,
+      "mode": "random",
+      "food": 0.18737847109635672,
+      "ratio": 0.19375628204707288,
+      "ideal": 0.9670833333333333,
+      "exact": 0,
+      "worlds": 144,
+      "occupied": 61.993054707845054,
+      "subruns": [
+        {
+          "food": 0.1880468726158142,
+          "best_possible_balanced": 0.9670833333333333,
+          "ratio_vs_balanced": 0.19444743398446968,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 61.83333206176758,
+          "overrepresented": 0.0
+        },
+        {
+          "food": 0.18742188811302185,
+          "best_possible_balanced": 0.9670833333333333,
+          "ratio_vs_balanced": 0.1938011768510351,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 62.5,
+          "overrepresented": 0.0
+        },
+        {
+          "food": 0.18666665256023407,
+          "best_possible_balanced": 0.9670833333333333,
+          "ratio_vs_balanced": 0.19302023530571383,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 61.64583206176758,
+          "overrepresented": 0.0
+        }
+      ]
+    },
+    {
+      "k": 9,
+      "m": 80,
+      "mode": "imitate",
+      "food": 0.43676504492759705,
+      "ratio": 0.4516312399078987,
+      "ideal": 0.9670833333333333,
+      "exact": 0,
+      "worlds": 144,
+      "occupied": 4.763888835906982,
+      "subruns": [
+        {
+          "food": 0.4256727397441864,
+          "best_possible_balanced": 0.9670833333333333,
+          "ratio_vs_balanced": 0.4401613853451303,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 4.666666507720947,
+          "overrepresented": 0.9791666865348816
+        },
+        {
+          "food": 0.452792227268219,
+          "best_possible_balanced": 0.9670833333333333,
+          "ratio_vs_balanced": 0.46820394030319934,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 4.958333492279053,
+          "overrepresented": 1.0
+        },
+        {
+          "food": 0.43183016777038574,
+          "best_possible_balanced": 0.9670833333333333,
+          "ratio_vs_balanced": 0.4465283940753666,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 4.666666507720947,
+          "overrepresented": 1.0
+        }
+      ]
+    },
+    {
+      "k": 11,
+      "m": 80,
+      "mode": "learned",
+      "food": 0.7106457948684692,
+      "ratio": 0.7211165528966402,
+      "ideal": 0.9854797979797979,
+      "exact": 0,
+      "worlds": 144,
+      "occupied": 7.8402778307596845,
+      "subruns": [
+        {
+          "food": 0.7172769904136658,
+          "best_possible_balanced": 0.9854797979797979,
+          "ratio_vs_balanced": 0.7278454534370574,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 7.916666507720947,
+          "overrepresented": 0.0416666679084301
+        },
+        {
+          "food": 0.7097334265708923,
+          "best_possible_balanced": 0.9854797979797979,
+          "ratio_vs_balanced": 0.7201907416324751,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 7.833333492279053,
+          "overrepresented": 0.0416666679084301
+        },
+        {
+          "food": 0.7049269676208496,
+          "best_possible_balanced": 0.9854797979797979,
+          "ratio_vs_balanced": 0.7153134636203882,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 7.770833492279053,
+          "overrepresented": 0.1041666641831398
+        }
+      ]
+    },
+    {
+      "k": 11,
+      "m": 80,
+      "mode": "random",
+      "food": 0.2290181666612625,
+      "ratio": 0.23239255348586793,
+      "ideal": 0.9854797979797979,
+      "exact": 0,
+      "worlds": 144,
+      "occupied": 61.993054707845054,
+      "subruns": [
+        {
+          "food": 0.22983509302139282,
+          "best_possible_balanced": 0.9854797979797979,
+          "ratio_vs_balanced": 0.23322151655726217,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 61.83333206176758,
+          "overrepresented": 0.0
+        },
+        {
+          "food": 0.2290712147951126,
+          "best_possible_balanced": 0.9854797979797979,
+          "ratio_vs_balanced": 0.23244638323860245,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 62.5,
+          "overrepresented": 0.0
+        },
+        {
+          "food": 0.2281481921672821,
+          "best_possible_balanced": 0.9854797979797979,
+          "ratio_vs_balanced": 0.2315097606617392,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 61.64583206176758,
+          "overrepresented": 0.0
+        }
+      ]
+    },
+    {
+      "k": 11,
+      "m": 80,
+      "mode": "imitate",
+      "food": 0.3730295995871226,
+      "ratio": 0.37852587171428714,
+      "ideal": 0.9854797979797979,
+      "exact": 0,
+      "worlds": 144,
+      "occupied": 4.763888835906982,
+      "subruns": [
+        {
+          "food": 0.3639046847820282,
+          "best_possible_balanced": 0.9854797979797979,
+          "ratio_vs_balanced": 0.36926650909335856,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 4.666666507720947,
+          "overrepresented": 1.0
+        },
+        {
+          "food": 0.3888280987739563,
+          "best_possible_balanced": 0.9854797979797979,
+          "ratio_vs_balanced": 0.39455714827543037,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 4.958333492279053,
+          "overrepresented": 1.0
+        },
+        {
+          "food": 0.3663560152053833,
+          "best_possible_balanced": 0.9854797979797979,
+          "ratio_vs_balanced": 0.3717539577740725,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 4.666666507720947,
+          "overrepresented": 1.0
+        }
+      ]
+    },
+    {
+      "k": 13,
+      "m": 80,
+      "mode": "learned",
+      "food": 0.6881502866744995,
+      "ratio": 0.7153186388220685,
+      "ideal": 0.9620192307692308,
+      "exact": 0,
+      "worlds": 144,
+      "occupied": 9.0,
+      "subruns": [
+        {
+          "food": 0.6906499862670898,
+          "best_possible_balanced": 0.9620192307692308,
+          "ratio_vs_balanced": 0.7179170272041714,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 9.041666984558105,
+          "overrepresented": 0.1666666716337204
+        },
+        {
+          "food": 0.6837443113327026,
+          "best_possible_balanced": 0.9620192307692308,
+          "ratio_vs_balanced": 0.7107387144287963,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 8.9375,
+          "overrepresented": 0.0833333358168602
+        },
+        {
+          "food": 0.690056562423706,
+          "best_possible_balanced": 0.9620192307692308,
+          "ratio_vs_balanced": 0.7173001748332377,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 9.020833015441895,
+          "overrepresented": 0.1666666716337204
+        }
+      ]
+    },
+    {
+      "k": 13,
+      "m": 80,
+      "mode": "random",
+      "food": 0.2706577976544698,
+      "ratio": 0.2813434378417277,
+      "ideal": 0.9620192307692308,
+      "exact": 0,
+      "worlds": 144,
+      "occupied": 61.993054707845054,
+      "subruns": [
+        {
+          "food": 0.27162325382232666,
+          "best_possible_balanced": 0.9620192307692308,
+          "ratio_vs_balanced": 0.2823470104699847,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 61.83333206176758,
+          "overrepresented": 0.0
+        },
+        {
+          "food": 0.270720511674881,
+          "best_possible_balanced": 0.9620192307692308,
+          "ratio_vs_balanced": 0.2814086278279622,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 62.5,
+          "overrepresented": 0.0
+        },
+        {
+          "food": 0.2696296274662018,
+          "best_possible_balanced": 0.9620192307692308,
+          "ratio_vs_balanced": 0.2802746752272362,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 61.64583206176758,
+          "overrepresented": 0.0
+        }
+      ]
+    },
+    {
+      "k": 13,
+      "m": 80,
+      "mode": "imitate",
+      "food": 0.3249118725458781,
+      "ratio": 0.33773947770885876,
+      "ideal": 0.9620192307692308,
+      "exact": 0,
+      "worlds": 144,
+      "occupied": 4.763888835906982,
+      "subruns": [
+        {
+          "food": 0.3174256682395935,
+          "best_possible_balanced": 0.9620192307692308,
+          "ratio_vs_balanced": 0.3299577161111217,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 4.666666507720947,
+          "overrepresented": 1.0
+        },
+        {
+          "food": 0.3395301401615143,
+          "best_possible_balanced": 0.9620192307692308,
+          "ratio_vs_balanced": 0.35293487832881043,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 4.958333492279053,
+          "overrepresented": 1.0
+        },
+        {
+          "food": 0.3177798092365265,
+          "best_possible_balanced": 0.9620192307692308,
+          "ratio_vs_balanced": 0.3303258386866442,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 4.666666507720947,
+          "overrepresented": 1.0
+        }
+      ]
+    },
+    {
+      "k": 14,
+      "m": 80,
+      "mode": "learned",
+      "food": 0.6741538246472677,
+      "ratio": 0.7135700764915636,
+      "ideal": 0.9447619047619047,
+      "exact": 0,
+      "worlds": 144,
+      "occupied": 9.513888994852701,
+      "subruns": [
+        {
+          "food": 0.6719378232955933,
+          "best_possible_balanced": 0.9447619047619047,
+          "ratio_vs_balanced": 0.7112245105447308,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 9.5,
+          "overrepresented": 0.1666666716337204
+        },
+        {
+          "food": 0.6778674125671387,
+          "best_possible_balanced": 0.9447619047619047,
+          "ratio_vs_balanced": 0.7175007895115884,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 9.5625,
+          "overrepresented": 0.1458333283662796
+        },
+        {
+          "food": 0.672656238079071,
+          "best_possible_balanced": 0.9447619047619047,
+          "ratio_vs_balanced": 0.7119849294183717,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 9.479166984558105,
+          "overrepresented": 0.2291666716337204
+        }
+      ]
+    },
+    {
+      "k": 14,
+      "m": 80,
+      "mode": "random",
+      "food": 0.29147761066754657,
+      "ratio": 0.30851964838802814,
+      "ideal": 0.9447619047619047,
+      "exact": 0,
+      "worlds": 144,
+      "occupied": 61.993054707845054,
+      "subruns": [
+        {
+          "food": 0.2925173342227936,
+          "best_possible_balanced": 0.9447619047619047,
+          "ratio_vs_balanced": 0.30962016223178757,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 61.83333206176758,
+          "overrepresented": 0.0
+        },
+        {
+          "food": 0.29154515266418457,
+          "best_possible_balanced": 0.9447619047619047,
+          "ratio_vs_balanced": 0.3085911394126954,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 62.5,
+          "overrepresented": 0.0
+        },
+        {
+          "food": 0.2903703451156616,
+          "best_possible_balanced": 0.9447619047619047,
+          "ratio_vs_balanced": 0.30734764351960153,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 61.64583206176758,
+          "overrepresented": 0.0
+        }
+      ]
+    },
+    {
+      "k": 14,
+      "m": 80,
+      "mode": "imitate",
+      "food": 0.3050074477990468,
+      "ratio": 0.3228405445453621,
+      "ideal": 0.9447619047619047,
+      "exact": 0,
+      "worlds": 144,
+      "occupied": 4.763888835906982,
+      "subruns": [
+        {
+          "food": 0.2979815602302551,
+          "best_possible_balanced": 0.9447619047619047,
+          "ratio_vs_balanced": 0.31540386919533053,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 4.666666507720947,
+          "overrepresented": 1.0
+        },
+        {
+          "food": 0.3191712200641632,
+          "best_possible_balanced": 0.9447619047619047,
+          "ratio_vs_balanced": 0.33783244059210826,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 4.958333492279053,
+          "overrepresented": 1.0
+        },
+        {
+          "food": 0.29786956310272217,
+          "best_possible_balanced": 0.9447619047619047,
+          "ratio_vs_balanced": 0.3152853238486475,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 4.666666507720947,
+          "overrepresented": 1.0
+        }
+      ]
+    },
+    {
+      "k": 16,
+      "m": 80,
+      "mode": "learned",
+      "food": 0.6515258153279623,
+      "ratio": 0.6964052657899834,
+      "ideal": 0.9355555555555556,
+      "exact": 0,
+      "worlds": 144,
+      "occupied": 10.520833333333334,
+      "subruns": [
+        {
+          "food": 0.6545774936676025,
+          "best_possible_balanced": 0.9355555555555556,
+          "ratio_vs_balanced": 0.6996671547515941,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 10.541666984558105,
+          "overrepresented": 0.2708333432674408
+        },
+        {
+          "food": 0.6514004468917847,
+          "best_possible_balanced": 0.9355555555555556,
+          "ratio_vs_balanced": 0.6962712615232852,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 10.520833015441895,
+          "overrepresented": 0.3333333432674408
+        },
+        {
+          "food": 0.6485995054244995,
+          "best_possible_balanced": 0.9355555555555556,
+          "ratio_vs_balanced": 0.6932773810950708,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 10.5,
+          "overrepresented": 0.2916666567325592
+        }
+      ]
+    },
+    {
+      "k": 16,
+      "m": 80,
+      "mode": "random",
+      "food": 0.3330575128396352,
+      "ratio": 0.35599971681196163,
+      "ideal": 0.9355555555555556,
+      "exact": 0,
+      "worlds": 144,
+      "occupied": 61.993054707845054,
+      "subruns": [
+        {
+          "food": 0.3343055844306946,
+          "best_possible_balanced": 0.9355555555555556,
+          "ratio_vs_balanced": 0.35733376008031487,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 61.83333206176758,
+          "overrepresented": 0.0
+        },
+        {
+          "food": 0.3330150544643402,
+          "best_possible_balanced": 0.9355555555555556,
+          "ratio_vs_balanced": 0.3559543337504824,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 62.5,
+          "overrepresented": 0.0
+        },
+        {
+          "food": 0.33185189962387085,
+          "best_possible_balanced": 0.9355555555555556,
+          "ratio_vs_balanced": 0.3547110566050876,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 61.64583206176758,
+          "overrepresented": 0.0
+        }
+      ]
+    },
+    {
+      "k": 16,
+      "m": 80,
+      "mode": "imitate",
+      "food": 0.27161072691281635,
+      "ratio": 0.29032025441987497,
+      "ideal": 0.9355555555555556,
+      "exact": 0,
+      "worlds": 144,
+      "occupied": 4.763888835906982,
+      "subruns": [
+        {
+          "food": 0.265295147895813,
+          "best_possible_balanced": 0.9355555555555556,
+          "ratio_vs_balanced": 0.2835696355180899,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 4.666666507720947,
+          "overrepresented": 1.0
+        },
+        {
+          "food": 0.2844097316265106,
+          "best_possible_balanced": 0.9355555555555556,
+          "ratio_vs_balanced": 0.3040009007884318,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 4.958333492279053,
+          "overrepresented": 1.0
+        },
+        {
+          "food": 0.2651273012161255,
+          "best_possible_balanced": 0.9355555555555556,
+          "ratio_vs_balanced": 0.28339022695310323,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 4.666666507720947,
+          "overrepresented": 1.0
+        }
+      ]
+    },
+    {
+      "k": 17,
+      "m": 80,
+      "mode": "learned",
+      "food": 0.6466550628344218,
+      "ratio": 0.656916702832923,
+      "ideal": 0.9843790849673203,
+      "exact": 0,
+      "worlds": 144,
+      "occupied": 11.083333333333334,
+      "subruns": [
+        {
+          "food": 0.6453418731689453,
+          "best_possible_balanced": 0.9843790849673203,
+          "ratio_vs_balanced": 0.655582674423004,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 11.0625,
+          "overrepresented": 0.4583333432674408
+        },
+        {
+          "food": 0.6496257185935974,
+          "best_possible_balanced": 0.9843790849673203,
+          "ratio_vs_balanced": 0.6599344993348409,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 11.104166984558105,
+          "overrepresented": 0.4791666567325592
+        },
+        {
+          "food": 0.6449975967407227,
+          "best_possible_balanced": 0.9843790849673203,
+          "ratio_vs_balanced": 0.655232934740924,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 11.083333015441895,
+          "overrepresented": 0.5625
+        }
+      ]
+    },
+    {
+      "k": 17,
+      "m": 80,
+      "mode": "random",
+      "food": 0.35382093985875446,
+      "ratio": 0.35943565366436114,
+      "ideal": 0.9843790849673203,
+      "exact": 0,
+      "worlds": 144,
+      "occupied": 61.993054707845054,
+      "subruns": [
+        {
+          "food": 0.3551996946334839,
+          "best_possible_balanced": 0.9843790849673203,
+          "ratio_vs_balanced": 0.36083628762315273,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 61.83333206176758,
+          "overrepresented": 0.0
+        },
+        {
+          "food": 0.35367053747177124,
+          "best_possible_balanced": 0.9843790849673203,
+          "ratio_vs_balanced": 0.3592828645719474,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 62.5,
+          "overrepresented": 0.0
+        },
+        {
+          "food": 0.3525925874710083,
+          "best_possible_balanced": 0.9843790849673203,
+          "ratio_vs_balanced": 0.35818780879798334,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 61.64583206176758,
+          "overrepresented": 0.0
+        }
+      ]
+    },
+    {
+      "k": 17,
+      "m": 80,
+      "mode": "imitate",
+      "food": 0.2576762835184733,
+      "ratio": 0.26176529698111956,
+      "ideal": 0.9843790849673203,
+      "exact": 0,
+      "worlds": 144,
+      "occupied": 4.763888835906982,
+      "subruns": [
+        {
+          "food": 0.2517031729221344,
+          "best_possible_balanced": 0.9843790849673203,
+          "ratio_vs_balanced": 0.25569740028608035,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 4.666666507720947,
+          "overrepresented": 1.0
+        },
+        {
+          "food": 0.26964282989501953,
+          "best_possible_balanced": 0.9843790849673203,
+          "ratio_vs_balanced": 0.27392173809134845,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 4.958333492279053,
+          "overrepresented": 1.0
+        },
+        {
+          "food": 0.251682847738266,
+          "best_possible_balanced": 0.9843790849673203,
+          "ratio_vs_balanced": 0.25567675256592987,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 4.666666507720947,
+          "overrepresented": 1.0
+        }
+      ]
+    },
+    {
+      "k": 19,
+      "m": 80,
+      "mode": "learned",
+      "food": 0.6320196390151978,
+      "ratio": 0.6771957220520941,
+      "ideal": 0.9332894736842104,
+      "exact": 0,
+      "worlds": 144,
+      "occupied": 12.145833333333334,
+      "subruns": [
+        {
+          "food": 0.6338847875595093,
+          "best_possible_balanced": 0.9332894736842104,
+          "ratio_vs_balanced": 0.6791941894053674,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 12.125,
+          "overrepresented": 0.8333333134651184
+        },
+        {
+          "food": 0.632687509059906,
+          "best_possible_balanced": 0.9332894736842104,
+          "ratio_vs_balanced": 0.6779113307282231,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 12.166666984558105,
+          "overrepresented": 0.875
+        },
+        {
+          "food": 0.629486620426178,
+          "best_possible_balanced": 0.9332894736842104,
+          "ratio_vs_balanced": 0.6744816460226918,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 12.145833015441895,
+          "overrepresented": 0.7916666865348816
+        }
+      ]
+    },
+    {
+      "k": 19,
+      "m": 80,
+      "mode": "random",
+      "food": 0.3951888680458069,
+      "ratio": 0.4234365426685652,
+      "ideal": 0.9332894736842104,
+      "exact": 0,
+      "worlds": 144,
+      "occupied": 61.993054707845054,
+      "subruns": [
+        {
+          "food": 0.39698779582977295,
+          "best_possible_balanced": 0.9332894736842104,
+          "ratio_vs_balanced": 0.42536405587287107,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 61.83333206176758,
+          "overrepresented": 0.0
+        },
+        {
+          "food": 0.39475518465042114,
+          "best_possible_balanced": 0.9332894736842104,
+          "ratio_vs_balanced": 0.4229718600512056,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 62.5,
+          "overrepresented": 0.0
+        },
+        {
+          "food": 0.39382362365722656,
+          "best_possible_balanced": 0.9332894736842104,
+          "ratio_vs_balanced": 0.4219737120816188,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 61.64583206176758,
+          "overrepresented": 0.0
+        }
+      ]
+    },
+    {
+      "k": 19,
+      "m": 80,
+      "mode": "imitate",
+      "food": 0.23278695344924927,
+      "ratio": 0.2494263141427174,
+      "ideal": 0.9332894736842104,
+      "exact": 0,
+      "worlds": 144,
+      "occupied": 4.763888835906982,
+      "subruns": [
+        {
+          "food": 0.22738593816757202,
+          "best_possible_balanced": 0.9332894736842104,
+          "ratio_vs_balanced": 0.2436392401062382,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 4.666666507720947,
+          "overrepresented": 1.0
+        },
+        {
+          "food": 0.24308808147907257,
+          "best_possible_balanced": 0.9332894736842104,
+          "ratio_vs_balanced": 0.2604637557085791,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 4.958333492279053,
+          "overrepresented": 1.0
+        },
+        {
+          "food": 0.2278868407011032,
+          "best_possible_balanced": 0.9332894736842104,
+          "ratio_vs_balanced": 0.24417594661333492,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 4.666666507720947,
+          "overrepresented": 1.0
+        }
+      ]
+    },
+    {
+      "k": 21,
+      "m": 80,
+      "mode": "learned",
+      "food": 0.6105008323987325,
+      "ratio": 0.6543166816139525,
+      "ideal": 0.9330357142857143,
+      "exact": 0,
+      "worlds": 144,
+      "occupied": 13.048611323038736,
+      "subruns": [
+        {
+          "food": 0.6084251403808594,
+          "best_possible_balanced": 0.9330357142857143,
+          "ratio_vs_balanced": 0.6520920164847488,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 13.0,
+          "overrepresented": 0.9375
+        },
+        {
+          "food": 0.6080302000045776,
+          "best_possible_balanced": 0.9330357142857143,
+          "ratio_vs_balanced": 0.6516687311053846,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 12.979166984558105,
+          "overrepresented": 0.8958333134651184
+        },
+        {
+          "food": 0.6150471568107605,
+          "best_possible_balanced": 0.9330357142857143,
+          "ratio_vs_balanced": 0.6591892972517241,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 13.166666984558105,
+          "overrepresented": 0.8958333134651184
+        }
+      ]
+    },
+    {
+      "k": 21,
+      "m": 80,
+      "mode": "random",
+      "food": 0.4351103703180949,
+      "ratio": 0.4663383873265706,
+      "ideal": 0.9330357142857143,
+      "exact": 0,
+      "worlds": 144,
+      "occupied": 61.993054707845054,
+      "subruns": [
+        {
+          "food": 0.43684399127960205,
+          "best_possible_balanced": 0.9330357142857143,
+          "ratio_vs_balanced": 0.46819643084512375,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 61.83333206176758,
+          "overrepresented": 0.0
+        },
+        {
+          "food": 0.43475013971328735,
+          "best_possible_balanced": 0.9330357142857143,
+          "ratio_vs_balanced": 0.4659523028506046,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 62.5,
+          "overrepresented": 0.0
+        },
+        {
+          "food": 0.43373697996139526,
+          "best_possible_balanced": 0.9330357142857143,
+          "ratio_vs_balanced": 0.46486642828398345,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 61.64583206176758,
+          "overrepresented": 0.0
+        }
+      ]
+    },
+    {
+      "k": 21,
+      "m": 80,
+      "mode": "imitate",
+      "food": 0.212429940700531,
+      "ratio": 0.22767610869339208,
+      "ideal": 0.9330357142857143,
+      "exact": 0,
+      "worlds": 144,
+      "occupied": 4.763888835906982,
+      "subruns": [
+        {
+          "food": 0.2075880467891693,
+          "best_possible_balanced": 0.9330357142857143,
+          "ratio_vs_balanced": 0.222486710434325,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 4.666666507720947,
+          "overrepresented": 1.0
+        },
+        {
+          "food": 0.22142547369003296,
+          "best_possible_balanced": 0.9330357142857143,
+          "ratio_vs_balanced": 0.23731725409840854,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 4.958333492279053,
+          "overrepresented": 1.0
+        },
+        {
+          "food": 0.20827630162239075,
+          "best_possible_balanced": 0.9330357142857143,
+          "ratio_vs_balanced": 0.2232243615474427,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 4.666666507720947,
+          "overrepresented": 1.0
+        }
+      ]
+    },
+    {
+      "k": 22,
+      "m": 80,
+      "mode": "learned",
+      "food": 0.6042315562566122,
+      "ratio": 0.6618968085134672,
+      "ideal": 0.9128787878787878,
+      "exact": 0,
+      "worlds": 144,
+      "occupied": 13.583333333333334,
+      "subruns": [
+        {
+          "food": 0.6073722243309021,
+          "best_possible_balanced": 0.9128787878787878,
+          "ratio_vs_balanced": 0.665337208395677,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 13.645833015441895,
+          "overrepresented": 0.9791666865348816
+        },
+        {
+          "food": 0.6074439287185669,
+          "best_possible_balanced": 0.9128787878787878,
+          "ratio_vs_balanced": 0.6654157559406708,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 13.604166984558105,
+          "overrepresented": 1.0
+        },
+        {
+          "food": 0.5978785157203674,
+          "best_possible_balanced": 0.9128787878787878,
+          "ratio_vs_balanced": 0.6549374612040539,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 13.5,
+          "overrepresented": 0.9791666865348816
+        }
+      ]
+    },
+    {
+      "k": 22,
+      "m": 80,
+      "mode": "random",
+      "food": 0.45441414912541706,
+      "ratio": 0.4977814745606229,
+      "ideal": 0.9128787878787878,
+      "exact": 0,
+      "worlds": 144,
+      "occupied": 61.993054707845054,
+      "subruns": [
+        {
+          "food": 0.45589175820350647,
+          "best_possible_balanced": 0.9128787878787878,
+          "ratio_vs_balanced": 0.4994001002727208,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 61.83333206176758,
+          "overrepresented": 0.0
+        },
+        {
+          "food": 0.4542522132396698,
+          "best_possible_balanced": 0.9128787878787878,
+          "ratio_vs_balanced": 0.4976040842127503,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 62.5,
+          "overrepresented": 0.0
+        },
+        {
+          "food": 0.45309847593307495,
+          "best_possible_balanced": 0.9128787878787878,
+          "ratio_vs_balanced": 0.49634023919639747,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 61.64583206176758,
+          "overrepresented": 0.0
+        }
+      ]
+    },
+    {
+      "k": 22,
+      "m": 80,
+      "mode": "imitate",
+      "food": 0.20355542500813803,
+      "ratio": 0.22298187635746242,
+      "ideal": 0.9128787878787878,
+      "exact": 0,
+      "worlds": 144,
+      "occupied": 4.763888835906982,
+      "subruns": [
+        {
+          "food": 0.19900618493556976,
+          "best_possible_balanced": 0.9128787878787878,
+          "ratio_vs_balanced": 0.21799847644394366,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 4.666666507720947,
+          "overrepresented": 1.0
+        },
+        {
+          "food": 0.21202519536018372,
+          "best_possible_balanced": 0.9128787878787878,
+          "ratio_vs_balanced": 0.232259965041861,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 4.958333492279053,
+          "overrepresented": 1.0
+        },
+        {
+          "food": 0.19963489472866058,
+          "best_possible_balanced": 0.9128787878787878,
+          "ratio_vs_balanced": 0.21868718758658257,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 4.666666507720947,
+          "overrepresented": 1.0
+        }
+      ]
+    },
+    {
+      "k": 23,
+      "m": 80,
+      "mode": "learned",
+      "food": 0.6023783286412557,
+      "ratio": 0.6434694483018347,
+      "ideal": 0.9361413043478262,
+      "exact": 0,
+      "worlds": 144,
+      "occupied": 14.083333333333334,
+      "subruns": [
+        {
+          "food": 0.6039052605628967,
+          "best_possible_balanced": 0.9361413043478262,
+          "ratio_vs_balanced": 0.6451005395853294,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 14.083333015441895,
+          "overrepresented": 0.9166666865348816
+        },
+        {
+          "food": 0.6016796231269836,
+          "best_possible_balanced": 0.9361413043478262,
+          "ratio_vs_balanced": 0.6427230807278083,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 14.104166984558105,
+          "overrepresented": 0.9583333134651184
+        },
+        {
+          "food": 0.6015501022338867,
+          "best_possible_balanced": 0.9361413043478262,
+          "ratio_vs_balanced": 0.6425847245923666,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 14.0625,
+          "overrepresented": 0.9583333134651184
+        }
+      ]
+    },
+    {
+      "k": 23,
+      "m": 80,
+      "mode": "random",
+      "food": 0.4737779498100281,
+      "ratio": 0.5060966198260967,
+      "ideal": 0.9361413043478262,
+      "exact": 0,
+      "worlds": 144,
+      "occupied": 61.993054707845054,
+      "subruns": [
+        {
+          "food": 0.4750139117240906,
+          "best_possible_balanced": 0.9361413043478262,
+          "ratio_vs_balanced": 0.5074168926399574,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 61.83333206176758,
+          "overrepresented": 0.0
+        },
+        {
+          "food": 0.47380515933036804,
+          "best_possible_balanced": 0.9361413043478262,
+          "ratio_vs_balanced": 0.5061256854385353,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 62.5,
+          "overrepresented": 0.0
+        },
+        {
+          "food": 0.4725147783756256,
+          "best_possible_balanced": 0.9361413043478262,
+          "ratio_vs_balanced": 0.5047472813997974,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 61.64583206176758,
+          "overrepresented": 0.0
+        }
+      ]
+    },
+    {
+      "k": 23,
+      "m": 80,
+      "mode": "imitate",
+      "food": 0.1954873949289322,
+      "ratio": 0.20882252927096384,
+      "ideal": 0.9361413043478262,
+      "exact": 0,
+      "worlds": 144,
+      "occupied": 4.763888835906982,
+      "subruns": [
+        {
+          "food": 0.1912086308002472,
+          "best_possible_balanced": 0.9361413043478262,
+          "ratio_vs_balanced": 0.20425189008560513,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 4.666666507720947,
+          "overrepresented": 1.0
+        },
+        {
+          "food": 0.20347189903259277,
+          "best_possible_balanced": 0.9361413043478262,
+          "ratio_vs_balanced": 0.21735169475760271,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 4.958333492279053,
+          "overrepresented": 1.0
+        },
+        {
+          "food": 0.1917816549539566,
+          "best_possible_balanced": 0.9361413043478262,
+          "ratio_vs_balanced": 0.20486400296968368,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 4.666666507720947,
+          "overrepresented": 1.0
+        }
+      ]
+    },
+    {
+      "k": 25,
+      "m": 80,
+      "mode": "learned",
+      "food": 0.5945621728897095,
+      "ratio": 0.6332614859180338,
+      "ideal": 0.9388888888888888,
+      "exact": 0,
+      "worlds": 144,
+      "occupied": 15.159722328186035,
+      "subruns": [
+        {
+          "food": 0.5889280438423157,
+          "best_possible_balanced": 0.9388888888888888,
+          "ratio_vs_balanced": 0.6272606384119339,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 14.916666984558105,
+          "overrepresented": 1.0
+        },
+        {
+          "food": 0.6014887690544128,
+          "best_possible_balanced": 0.9388888888888888,
+          "ratio_vs_balanced": 0.6406389256200847,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 15.395833015441895,
+          "overrepresented": 0.9791666865348816
+        },
+        {
+          "food": 0.5932697057723999,
+          "best_possible_balanced": 0.9388888888888888,
+          "ratio_vs_balanced": 0.6318848937220828,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 15.166666984558105,
+          "overrepresented": 1.0
+        }
+      ]
+    },
+    {
+      "k": 25,
+      "m": 80,
+      "mode": "random",
+      "food": 0.5090653896331787,
+      "ratio": 0.5421998232779419,
+      "ideal": 0.9388888888888888,
+      "exact": 0,
+      "worlds": 144,
+      "occupied": 61.993054707845054,
+      "subruns": [
+        {
+          "food": 0.5099015831947327,
+          "best_possible_balanced": 0.9388888888888888,
+          "ratio_vs_balanced": 0.5430904436393603,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 61.83333206176758,
+          "overrepresented": 0.0
+        },
+        {
+          "food": 0.5087152719497681,
+          "best_possible_balanced": 0.9388888888888888,
+          "ratio_vs_balanced": 0.5418269168695755,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 62.5,
+          "overrepresented": 0.0
+        },
+        {
+          "food": 0.5085793137550354,
+          "best_possible_balanced": 0.9388888888888888,
+          "ratio_vs_balanced": 0.5416821093248898,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 61.64583206176758,
+          "overrepresented": 0.0
+        }
+      ]
+    },
+    {
+      "k": 25,
+      "m": 80,
+      "mode": "imitate",
+      "food": 0.18088735143343607,
+      "ratio": 0.19266108436697335,
+      "ideal": 0.9388888888888888,
+      "exact": 0,
+      "worlds": 144,
+      "occupied": 4.763888835906982,
+      "subruns": [
+        {
+          "food": 0.17709346115589142,
+          "best_possible_balanced": 0.9388888888888888,
+          "ratio_vs_balanced": 0.18862025448556485,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 4.666666507720947,
+          "overrepresented": 1.0
+        },
+        {
+          "food": 0.188145250082016,
+          "best_possible_balanced": 0.9388888888888888,
+          "ratio_vs_balanced": 0.20039139061989872,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 4.958333492279053,
+          "overrepresented": 1.0
+        },
+        {
+          "food": 0.17742334306240082,
+          "best_possible_balanced": 0.9388888888888888,
+          "ratio_vs_balanced": 0.1889716079954565,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 4.666666507720947,
+          "overrepresented": 1.0
+        }
+      ]
+    },
+    {
+      "k": 27,
+      "m": 80,
+      "mode": "learned",
+      "food": 0.581730842590332,
+      "ratio": 0.6503823084860856,
+      "ideal": 0.8944444444444444,
+      "exact": 0,
+      "worlds": 144,
+      "occupied": 16.069444338480633,
+      "subruns": [
+        {
+          "food": 0.579120397567749,
+          "best_possible_balanced": 0.8944444444444444,
+          "ratio_vs_balanced": 0.6474637985229492,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 16.0,
+          "overrepresented": 1.0
+        },
+        {
+          "food": 0.5793836712837219,
+          "best_possible_balanced": 0.8944444444444444,
+          "ratio_vs_balanced": 0.6477581418078879,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 15.979166984558105,
+          "overrepresented": 1.0
+        },
+        {
+          "food": 0.5866884589195251,
+          "best_possible_balanced": 0.8944444444444444,
+          "ratio_vs_balanced": 0.6559249851274195,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 16.22916603088379,
+          "overrepresented": 1.0
+        }
+      ]
+    },
+    {
+      "k": 27,
+      "m": 80,
+      "mode": "random",
+      "food": 0.5413165092468262,
+      "ratio": 0.605198581766638,
+      "ideal": 0.8944444444444444,
+      "exact": 0,
+      "worlds": 144,
+      "occupied": 61.993054707845054,
+      "subruns": [
+        {
+          "food": 0.5418344736099243,
+          "best_possible_balanced": 0.8944444444444444,
+          "ratio_vs_balanced": 0.6057776723589217,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 61.83333206176758,
+          "overrepresented": 0.0
+        },
+        {
+          "food": 0.5399112105369568,
+          "best_possible_balanced": 0.8944444444444444,
+          "ratio_vs_balanced": 0.6036274403518772,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 62.5,
+          "overrepresented": 0.0
+        },
+        {
+          "food": 0.5422038435935974,
+          "best_possible_balanced": 0.8944444444444444,
+          "ratio_vs_balanced": 0.6061906325891152,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 61.64583206176758,
+          "overrepresented": 0.0
+        }
+      ]
+    },
+    {
+      "k": 27,
+      "m": 80,
+      "mode": "imitate",
+      "food": 0.16805299619833627,
+      "ratio": 0.18788533736459959,
+      "ideal": 0.8944444444444444,
+      "exact": 0,
+      "worlds": 144,
+      "occupied": 4.763888835906982,
+      "subruns": [
+        {
+          "food": 0.16468317806720734,
+          "best_possible_balanced": 0.8944444444444444,
+          "ratio_vs_balanced": 0.1841178388329026,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 4.666666507720947,
+          "overrepresented": 1.0
+        },
+        {
+          "food": 0.17482158541679382,
+          "best_possible_balanced": 0.8944444444444444,
+          "ratio_vs_balanced": 0.19545270419268876,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 4.958333492279053,
+          "overrepresented": 1.0
+        },
+        {
+          "food": 0.1646542251110077,
+          "best_possible_balanced": 0.8944444444444444,
+          "ratio_vs_balanced": 0.18408546906820736,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 4.666666507720947,
+          "overrepresented": 1.0
+        }
+      ]
+    },
+    {
+      "k": 29,
+      "m": 80,
+      "mode": "learned",
+      "food": 0.5726736187934875,
+      "ratio": 0.6069758964674122,
+      "ideal": 0.943486590038314,
+      "exact": 0,
+      "worlds": 144,
+      "occupied": 17.048611323038738,
+      "subruns": [
+        {
+          "food": 0.5681109428405762,
+          "best_possible_balanced": 0.943486590038314,
+          "ratio_vs_balanced": 0.602139923173159,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 16.9375,
+          "overrepresented": 1.0
+        },
+        {
+          "food": 0.5753479599952698,
+          "best_possible_balanced": 0.943486590038314,
+          "ratio_vs_balanced": 0.6098104266345804,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 17.08333396911621,
+          "overrepresented": 1.0
+        },
+        {
+          "food": 0.5745619535446167,
+          "best_possible_balanced": 0.943486590038314,
+          "ratio_vs_balanced": 0.6089773395944974,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 17.125,
+          "overrepresented": 1.0
+        }
+      ]
+    },
+    {
+      "k": 29,
+      "m": 80,
+      "mode": "random",
+      "food": 0.5741297403971354,
+      "ratio": 0.6085192375376746,
+      "ideal": 0.943486590038314,
+      "exact": 0,
+      "worlds": 144,
+      "occupied": 61.993054707845054,
+      "subruns": [
+        {
+          "food": 0.5743550062179565,
+          "best_possible_balanced": 0.943486590038314,
+          "ratio_vs_balanced": 0.6087579964381185,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 61.83333206176758,
+          "overrepresented": 0.0
+        },
+        {
+          "food": 0.5717373490333557,
+          "best_possible_balanced": 0.943486590038314,
+          "ratio_vs_balanced": 0.60598354557444,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 62.5,
+          "overrepresented": 0.0
+        },
+        {
+          "food": 0.576296865940094,
+          "best_possible_balanced": 0.943486590038314,
+          "ratio_vs_balanced": 0.6108161706004652,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 61.64583206176758,
+          "overrepresented": 0.0
+        }
+      ]
+    },
+    {
+      "k": 29,
+      "m": 80,
+      "mode": "imitate",
+      "food": 0.15702931582927704,
+      "ratio": 0.16643513271651295,
+      "ideal": 0.943486590038314,
+      "exact": 0,
+      "worlds": 144,
+      "occupied": 4.763888835906982,
+      "subruns": [
+        {
+          "food": 0.1540353000164032,
+          "best_possible_balanced": 0.943486590038314,
+          "ratio_vs_balanced": 0.1632617799158629,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 4.666666507720947,
+          "overrepresented": 1.0
+        },
+        {
+          "food": 0.16337953507900238,
+          "best_possible_balanced": 0.943486590038314,
+          "ratio_vs_balanced": 0.1731657204289122,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 4.958333492279053,
+          "overrepresented": 1.0
+        },
+        {
+          "food": 0.15367311239242554,
+          "best_possible_balanced": 0.943486590038314,
+          "ratio_vs_balanced": 0.16287789780476375,
+          "exact_integer_balanced": 0,
+          "worlds": 48,
+          "active_professions": 4.666666507720947,
+          "overrepresented": 1.0
+        }
+      ]
+    }
+  ]
+}

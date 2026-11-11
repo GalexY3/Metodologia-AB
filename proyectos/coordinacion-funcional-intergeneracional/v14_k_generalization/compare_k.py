@@ -8,7 +8,7 @@ def get(model,m,k,mode='learned'):
     d=datas.get(model)
     if not d:return None
     return next((x for x in d['evals'] if x['m']==m and x['k']==k and x['mode']==mode),None)
-names=['v14_N120_knownK_s3111','v14_N120_hiddenK_s3111','v14_N120_curriculum_k2to15_s3111']
+names=['v14_N120_knownK_s3111','v14_N120_hiddenK_s3111','v14_N120_curriculum_k2to15_s3111','v14_N120_fullrange_s3111']
 rows=[]
 for m in (12,40,80):
     for k in (2,3,4,5,6,8,10,12,15,20,24,30):

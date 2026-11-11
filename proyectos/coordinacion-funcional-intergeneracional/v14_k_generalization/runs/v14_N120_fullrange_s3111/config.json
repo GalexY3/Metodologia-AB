@@ -1,0 +1,83 @@
+{
+  "name": "v14_N120_fullrange_s3111",
+  "tasks": [
+    [
+      12,
+      2
+    ],
+    [
+      12,
+      3
+    ],
+    [
+      12,
+      4
+    ],
+    [
+      12,
+      6
+    ],
+    [
+      12,
+      10
+    ],
+    [
+      40,
+      2
+    ],
+    [
+      40,
+      3
+    ],
+    [
+      40,
+      4
+    ],
+    [
+      40,
+      6
+    ],
+    [
+      40,
+      10
+    ],
+    [
+      40,
+      15
+    ],
+    [
+      40,
+      24
+    ],
+    [
+      40,
+      30
+    ]
+  ],
+  "config": {
+    "n": 120,
+    "m": 10,
+    "k": 2,
+    "degree": 8,
+    "hidden": 8,
+    "communication": false,
+    "public": false,
+    "blind": false,
+    "alpha": 0.0,
+    "gamma": 0.97,
+    "lr": 0.009,
+    "entropy": 0.003,
+    "topology": "ring",
+    "init": "random",
+    "batch": 16,
+    "horizon": 24,
+    "device": "cuda",
+    "seed": 3111
+  },
+  "updates": 3500,
+  "eval_horizon": 60,
+  "eval_batch": 32,
+  "eval_every": 175,
+  "save_every": 175,
+  "model": "color-equivariant-128-parameter"
+}
