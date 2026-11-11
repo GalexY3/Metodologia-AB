@@ -1,0 +1,788 @@
+{
+  "train_ks": [
+    2,
+    3,
+    4,
+    6,
+    10,
+    15,
+    30,
+    60
+  ],
+  "holdout_ks": [
+    5,
+    8,
+    12,
+    20,
+    40
+  ],
+  "heldout_topology": "rewired",
+  "heldout_degree": [
+    8,
+    16
+  ],
+  "train_samples": 299520,
+  "test_samples": 201600,
+  "local_baseline": {
+    "accuracy": 0.7344791666666667,
+    "balanced_accuracy": 0.5276303723652892,
+    "macro_precision": 0.4853794255852886,
+    "matrix": [
+      [
+        51279,
+        0,
+        6146
+      ],
+      [
+        2831,
+        0,
+        1049
+      ],
+      [
+        43503,
+        0,
+        96792
+      ]
+    ],
+    "recall_per_class": [
+      0.8929734436221158,
+      0.0,
+      0.6899176734737518
+    ],
+    "n": 201600,
+    "cases": {
+      "random": {
+        "accuracy": 0.7990773809523809,
+        "balanced_accuracy": 0.43444039865153367,
+        "n": 67200
+      },
+      "trap": {
+        "accuracy": 0.7748958333333333,
+        "balanced_accuracy": 0.25829861111111113,
+        "n": 67200
+      },
+      "cluster": {
+        "accuracy": 0.6294642857142857,
+        "balanced_accuracy": 0.20982142857142858,
+        "n": 67200
+      }
+    }
+  },
+  "variants": [
+    {
+      "name": "raw_mlp",
+      "seed": 3111,
+      "features": 10,
+      "total_params": 339,
+      "eval": {
+        "accuracy": 0.8174255952380952,
+        "balanced_accuracy": 0.8012912653504932,
+        "macro_precision": 0.8506625266240716,
+        "matrix": [
+          [
+            43127,
+            0,
+            14298
+          ],
+          [
+            0,
+            3135,
+            745
+          ],
+          [
+            21764,
+            0,
+            118531
+          ]
+        ],
+        "recall_per_class": [
+          0.7510143665650849,
+          0.8079896907216495,
+          0.8448697387647457
+        ],
+        "n": 201600,
+        "cases": {
+          "random": {
+            "accuracy": 0.7744791666666667,
+            "balanced_accuracy": 0.8466683018210516,
+            "n": 67200
+          },
+          "trap": {
+            "accuracy": 0.9036904761904762,
+            "balanced_accuracy": 0.30123015873015874,
+            "n": 67200
+          },
+          "cluster": {
+            "accuracy": 0.7741071428571429,
+            "balanced_accuracy": 0.2580357142857143,
+            "n": 67200
+          }
+        }
+      }
+    },
+    {
+      "name": "raw_mlp",
+      "seed": 4111,
+      "features": 10,
+      "total_params": 339,
+      "eval": {
+        "accuracy": 0.8172321428571429,
+        "balanced_accuracy": 0.7767675247737472,
+        "macro_precision": 0.8510346421899918,
+        "matrix": [
+          [
+            43408,
+            0,
+            14017
+          ],
+          [
+            0,
+            2831,
+            1049
+          ],
+          [
+            21780,
+            0,
+            118515
+          ]
+        ],
+        "recall_per_class": [
+          0.755907705703091,
+          0.7296391752577319,
+          0.8447556933604191
+        ],
+        "n": 201600,
+        "cases": {
+          "random": {
+            "accuracy": 0.7738988095238095,
+            "balanced_accuracy": 0.8212778548636726,
+            "n": 67200
+          },
+          "trap": {
+            "accuracy": 0.9036904761904762,
+            "balanced_accuracy": 0.30123015873015874,
+            "n": 67200
+          },
+          "cluster": {
+            "accuracy": 0.7741071428571429,
+            "balanced_accuracy": 0.2580357142857143,
+            "n": 67200
+          }
+        }
+      }
+    },
+    {
+      "name": "raw_wide",
+      "seed": 3111,
+      "features": 10,
+      "total_params": 899,
+      "eval": {
+        "accuracy": 0.8151388888888889,
+        "balanced_accuracy": 0.8590848180636167,
+        "macro_precision": 0.8481010305636358,
+        "matrix": [
+          [
+            43321,
+            0,
+            14104
+          ],
+          [
+            0,
+            3832,
+            48
+          ],
+          [
+            23116,
+            0,
+            117179
+          ]
+        ],
+        "recall_per_class": [
+          0.7543926861123205,
+          0.9876288659793815,
+          0.8352329020991482
+        ],
+        "n": 201600,
+        "cases": {
+          "random": {
+            "accuracy": 0.7867261904761905,
+            "balanced_accuracy": 0.9038290669822212,
+            "n": 67200
+          },
+          "trap": {
+            "accuracy": 0.8955952380952381,
+            "balanced_accuracy": 0.29853174603174604,
+            "n": 67200
+          },
+          "cluster": {
+            "accuracy": 0.763095238095238,
+            "balanced_accuracy": 0.25436507936507935,
+            "n": 67200
+          }
+        }
+      }
+    },
+    {
+      "name": "raw_wide",
+      "seed": 4111,
+      "features": 10,
+      "total_params": 899,
+      "eval": {
+        "accuracy": 0.8161359126984127,
+        "balanced_accuracy": 0.8565898131507117,
+        "macro_precision": 0.8495942850857444,
+        "matrix": [
+          [
+            44598,
+            0,
+            12827
+          ],
+          [
+            0,
+            3744,
+            136
+          ],
+          [
+            24104,
+            0,
+            116191
+          ]
+        ],
+        "recall_per_class": [
+          0.7766303874619068,
+          0.9649484536082474,
+          0.8281905983819808
+        ],
+        "n": 201600,
+        "cases": {
+          "random": {
+            "accuracy": 0.8034970238095238,
+            "balanced_accuracy": 0.9001757007694972,
+            "n": 67200
+          },
+          "trap": {
+            "accuracy": 0.8889583333333333,
+            "balanced_accuracy": 0.2963194444444444,
+            "n": 67200
+          },
+          "cluster": {
+            "accuracy": 0.7559523809523809,
+            "balanced_accuracy": 0.251984126984127,
+            "n": 67200
+          }
+        }
+      }
+    },
+    {
+      "name": "raw_deep",
+      "seed": 3111,
+      "features": 10,
+      "total_params": 3027,
+      "eval": {
+        "accuracy": 0.8854811507936508,
+        "balanced_accuracy": 0.9203191254301314,
+        "macro_precision": 0.901677660353314,
+        "matrix": [
+          [
+            50184,
+            0,
+            7241
+          ],
+          [
+            0,
+            3880,
+            0
+          ],
+          [
+            15846,
+            0,
+            124449
+          ]
+        ],
+        "recall_per_class": [
+          0.8739050936003483,
+          1.0,
+          0.887052282690046
+        ],
+        "n": 201600,
+        "cases": {
+          "random": {
+            "accuracy": 0.8379315476190476,
+            "balanced_accuracy": 0.7515787688308766,
+            "n": 67200
+          },
+          "trap": {
+            "accuracy": 0.9438095238095238,
+            "balanced_accuracy": 0.3146031746031746,
+            "n": 67200
+          },
+          "cluster": {
+            "accuracy": 0.874702380952381,
+            "balanced_accuracy": 0.29156746031746034,
+            "n": 67200
+          }
+        }
+      }
+    },
+    {
+      "name": "raw_deep",
+      "seed": 4111,
+      "features": 10,
+      "total_params": 3027,
+      "eval": {
+        "accuracy": 0.8848065476190476,
+        "balanced_accuracy": 0.9216657867546951,
+        "macro_precision": 0.9009945005410277,
+        "matrix": [
+          [
+            50671,
+            0,
+            6754
+          ],
+          [
+            0,
+            3880,
+            0
+          ],
+          [
+            16469,
+            0,
+            123826
+          ]
+        ],
+        "recall_per_class": [
+          0.8823857205050065,
+          1.0,
+          0.8826116397590791
+        ],
+        "n": 201600,
+        "cases": {
+          "random": {
+            "accuracy": 0.8359077380952381,
+            "balanced_accuracy": 0.7191780504595428,
+            "n": 67200
+          },
+          "trap": {
+            "accuracy": 0.9438095238095238,
+            "balanced_accuracy": 0.3146031746031746,
+            "n": 67200
+          },
+          "cluster": {
+            "accuracy": 0.874702380952381,
+            "balanced_accuracy": 0.29156746031746034,
+            "n": 67200
+          }
+        }
+      }
+    },
+    {
+      "name": "lattice_mlp",
+      "seed": 3111,
+      "features": 18,
+      "total_params": 531,
+      "eval": {
+        "accuracy": 0.957405753968254,
+        "balanced_accuracy": 0.9537177221811604,
+        "macro_precision": 0.976059449356674,
+        "matrix": [
+          [
+            49877,
+            0,
+            7548
+          ],
+          [
+            0,
+            3880,
+            0
+          ],
+          [
+            1039,
+            0,
+            139256
+          ]
+        ],
+        "recall_per_class": [
+          0.8685589899869395,
+          1.0,
+          0.9925941765565416
+        ],
+        "n": 201600,
+        "cases": {
+          "random": {
+            "accuracy": 0.8872023809523809,
+            "balanced_accuracy": 0.9543768869648295,
+            "n": 67200
+          },
+          "trap": {
+            "accuracy": 0.991264880952381,
+            "balanced_accuracy": 0.33042162698412697,
+            "n": 67200
+          },
+          "cluster": {
+            "accuracy": 0.99375,
+            "balanced_accuracy": 0.33125,
+            "n": 67200
+          }
+        }
+      }
+    },
+    {
+      "name": "lattice_mlp",
+      "seed": 4111,
+      "features": 18,
+      "total_params": 531,
+      "eval": {
+        "accuracy": 0.9574156746031746,
+        "balanced_accuracy": 0.9537019017119786,
+        "macro_precision": 0.9760979787341656,
+        "matrix": [
+          [
+            49871,
+            0,
+            7554
+          ],
+          [
+            0,
+            3880,
+            0
+          ],
+          [
+            1031,
+            0,
+            139264
+          ]
+        ],
+        "recall_per_class": [
+          0.8684545058772312,
+          1.0,
+          0.9926511992587048
+        ],
+        "n": 201600,
+        "cases": {
+          "random": {
+            "accuracy": 0.8872321428571428,
+            "balanced_accuracy": 0.9547944196859642,
+            "n": 67200
+          },
+          "trap": {
+            "accuracy": 0.991264880952381,
+            "balanced_accuracy": 0.33042162698412697,
+            "n": 67200
+          },
+          "cluster": {
+            "accuracy": 0.99375,
+            "balanced_accuracy": 0.33125,
+            "n": 67200
+          }
+        }
+      }
+    },
+    {
+      "name": "lattice_deep",
+      "seed": 3111,
+      "features": 18,
+      "total_params": 3411,
+      "eval": {
+        "accuracy": 0.9439236111111111,
+        "balanced_accuracy": 0.951796106767976,
+        "macro_precision": 0.9552418113724633,
+        "matrix": [
+          [
+            51200,
+            0,
+            6225
+          ],
+          [
+            0,
+            3880,
+            0
+          ],
+          [
+            5080,
+            0,
+            135215
+          ]
+        ],
+        "recall_per_class": [
+          0.891597736177623,
+          1.0,
+          0.9637905841263052
+        ],
+        "n": 201600,
+        "cases": {
+          "random": {
+            "accuracy": 0.90625,
+            "balanced_accuracy": 0.9596250299557302,
+            "n": 67200
+          },
+          "trap": {
+            "accuracy": 0.9642113095238095,
+            "balanced_accuracy": 0.32140376984126984,
+            "n": 67200
+          },
+          "cluster": {
+            "accuracy": 0.9613095238095238,
+            "balanced_accuracy": 0.32043650793650796,
+            "n": 67200
+          }
+        }
+      }
+    },
+    {
+      "name": "lattice_deep",
+      "seed": 4111,
+      "features": 18,
+      "total_params": 3411,
+      "eval": {
+        "accuracy": 0.9246428571428571,
+        "balanced_accuracy": 0.95230867536417,
+        "macro_precision": 0.9316713720347054,
+        "matrix": [
+          [
+            54043,
+            0,
+            3382
+          ],
+          [
+            0,
+            3880,
+            0
+          ],
+          [
+            11810,
+            0,
+            128485
+          ]
+        ],
+        "recall_per_class": [
+          0.9411057901610796,
+          1.0,
+          0.9158202359314302
+        ],
+        "n": 201600,
+        "cases": {
+          "random": {
+            "accuracy": 0.9442410714285714,
+            "balanced_accuracy": 0.9597296371501026,
+            "n": 67200
+          },
+          "trap": {
+            "accuracy": 0.9192708333333334,
+            "balanced_accuracy": 0.3064236111111111,
+            "n": 67200
+          },
+          "cluster": {
+            "accuracy": 0.9104166666666667,
+            "balanced_accuracy": 0.3034722222222222,
+            "n": 67200
+          }
+        }
+      }
+    },
+    {
+      "name": "lattice_weighted",
+      "seed": 3111,
+      "features": 18,
+      "total_params": 531,
+      "eval": {
+        "accuracy": 0.9099652777777778,
+        "balanced_accuracy": 0.9391271154290645,
+        "macro_precision": 0.9206682759832816,
+        "matrix": [
+          [
+            52249,
+            0,
+            5176
+          ],
+          [
+            0,
+            3880,
+            0
+          ],
+          [
+            12975,
+            0,
+            127320
+          ]
+        ],
+        "recall_per_class": [
+          0.9098650413582934,
+          1.0,
+          0.9075163049288998
+        ],
+        "n": 201600,
+        "cases": {
+          "random": {
+            "accuracy": 0.9223660714285714,
+            "balanced_accuracy": 0.9676366649028635,
+            "n": 67200
+          },
+          "trap": {
+            "accuracy": 0.9256845238095238,
+            "balanced_accuracy": 0.30856150793650794,
+            "n": 67200
+          },
+          "cluster": {
+            "accuracy": 0.8818452380952381,
+            "balanced_accuracy": 0.2939484126984127,
+            "n": 67200
+          }
+        }
+      }
+    },
+    {
+      "name": "lattice_weighted",
+      "seed": 4111,
+      "features": 18,
+      "total_params": 531,
+      "eval": {
+        "accuracy": 0.9049255952380952,
+        "balanced_accuracy": 0.9393189867677759,
+        "macro_precision": 0.9161085029159821,
+        "matrix": [
+          [
+            53009,
+            0,
+            4416
+          ],
+          [
+            0,
+            3880,
+            0
+          ],
+          [
+            14751,
+            0,
+            125544
+          ]
+        ],
+        "recall_per_class": [
+          0.92309969525468,
+          1.0,
+          0.8948572650486475
+        ],
+        "n": 201600,
+        "cases": {
+          "random": {
+            "accuracy": 0.9336755952380953,
+            "balanced_accuracy": 0.9720482162016589,
+            "n": 67200
+          },
+          "trap": {
+            "accuracy": 0.9117559523809524,
+            "balanced_accuracy": 0.3039186507936508,
+            "n": 67200
+          },
+          "cluster": {
+            "accuracy": 0.8693452380952381,
+            "balanced_accuracy": 0.28978174603174606,
+            "n": 67200
+          }
+        }
+      }
+    },
+    {
+      "name": "lattice_linear",
+      "seed": 3111,
+      "features": 18,
+      "total_params": 57,
+      "eval": {
+        "accuracy": 0.8857043650793651,
+        "balanced_accuracy": 0.8467605259450025,
+        "macro_precision": 0.9039288614462087,
+        "matrix": [
+          [
+            49213,
+            0,
+            8212
+          ],
+          [
+            0,
+            3038,
+            842
+          ],
+          [
+            13988,
+            0,
+            126307
+          ]
+        ],
+        "recall_per_class": [
+          0.8569960818458859,
+          0.7829896907216495,
+          0.9002958052674721
+        ],
+        "n": 201600,
+        "cases": {
+          "random": {
+            "accuracy": 0.8647767857142857,
+            "balanced_accuracy": 0.8781292693969817,
+            "n": 67200
+          },
+          "trap": {
+            "accuracy": 0.9226934523809524,
+            "balanced_accuracy": 0.3075644841269841,
+            "n": 67200
+          },
+          "cluster": {
+            "accuracy": 0.8696428571428572,
+            "balanced_accuracy": 0.2898809523809524,
+            "n": 67200
+          }
+        }
+      }
+    },
+    {
+      "name": "lattice_linear",
+      "seed": 4111,
+      "features": 18,
+      "total_params": 57,
+      "eval": {
+        "accuracy": 0.9267708333333333,
+        "balanced_accuracy": 0.6035629875392291,
+        "macro_precision": 0.6348218550121069,
+        "matrix": [
+          [
+            46562,
+            0,
+            10863
+          ],
+          [
+            0,
+            0,
+            3880
+          ],
+          [
+            20,
+            0,
+            140275
+          ]
+        ],
+        "recall_per_class": [
+          0.8108315193730954,
+          0.0,
+          0.9998574432445918
+        ],
+        "n": 201600,
+        "cases": {
+          "random": {
+            "accuracy": 0.7803125,
+            "balanced_accuracy": 0.6024796045634377,
+            "n": 67200
+          },
+          "trap": {
+            "accuracy": 1.0,
+            "balanced_accuracy": 0.3333333333333333,
+            "n": 67200
+          },
+          "cluster": {
+            "accuracy": 1.0,
+            "balanced_accuracy": 0.3333333333333333,
+            "n": 67200
+          }
+        }
+      }
+    }
+  ],
+  "caveat": "Auxiliary centralized classifier only; not proof of multiagent coordination."
+}
