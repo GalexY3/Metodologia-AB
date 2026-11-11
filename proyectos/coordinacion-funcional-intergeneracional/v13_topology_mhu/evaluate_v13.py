@@ -79,6 +79,7 @@ def frozen_run(actor,cfg,seed,graph_seed,baseline="learned",
 def main():
     p=argparse.ArgumentParser()
     p.add_argument('--prefix',default='v13_N120_')
+    p.add_argument('--name-ends',default='',help='filter suffix, e.g. _s4202')
     p.add_argument('--worlds',type=int,default=48)
     p.add_argument('--steps',type=int,default=60)
     p.add_argument('--seed',type=int,default=733001)
@@ -87,6 +88,7 @@ def main():
     torch.set_num_threads(3)
     result=[]
     for folder in sorted((HERE/'runs').glob(args.prefix+'*')):
+        if args.name_ends and not folder.name.endswith(args.name_ends):continue
         if not (folder/'latest.pt').exists():continue
         cc=json.loads((folder/'config.json').read_text('utf8'))
         c=base.Config(**{**cc['config'],'device':'cpu'})
@@ -140,7 +142,7 @@ def main():
         result.append(dict(name=folder.name,update=ck['update'],network=info,
                            config=cc,experiments=experiments))
         base.write_json(HERE/'evaluations'/(folder.name+'_EVAL.json'),result[-1])
-    base.write_json(HERE/'evaluations'/('SUMMARY_'+args.prefix+'.json'),dict(
+    base.write_json(HERE/'evaluations'/('SUMMARY_'+args.prefix+'_'+(args.name_ends or 'all')+'.json'),dict(
       definition='finite partial low-q occupation-mark spectrum divided by exact conditional shuffled-mark expected intensity',
       modes=[(1,0),(0,1),(1,1),(1,-1),(2,0),(0,2)],
       exploratory=True,seed=args.seed,worlds_per_seed=args.worlds,
