@@ -1,0 +1,47 @@
+{
+  "name": "v13_N60_torus_d8_s3111",
+  "tasks": [
+    [
+      10,
+      2
+    ],
+    [
+      10,
+      4
+    ],
+    [
+      20,
+      2
+    ],
+    [
+      20,
+      4
+    ]
+  ],
+  "config": {
+    "n": 60,
+    "m": 10,
+    "k": 2,
+    "degree": 8,
+    "hidden": 8,
+    "communication": false,
+    "public": false,
+    "blind": false,
+    "alpha": 0.0,
+    "gamma": 0.97,
+    "lr": 0.012,
+    "entropy": 0.006,
+    "topology": "torus",
+    "init": "random",
+    "batch": 20,
+    "horizon": 18,
+    "device": "cpu",
+    "seed": 3111
+  },
+  "updates": 650,
+  "eval_horizon": 40,
+  "eval_batch": 32,
+  "eval_every": 130,
+  "save_every": 130,
+  "model": "color-equivariant-128-parameter"
+}
