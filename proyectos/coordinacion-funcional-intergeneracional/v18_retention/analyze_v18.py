@@ -9,7 +9,7 @@ def load(path):
     if not path.exists():return []
     return json.loads(path.read_text(encoding='utf8'))['rows']
 def get_all():
-    rows=load(RESULTS/'frozen_initial.json')+load(RESULTS/'frozen_sweep.json')+load(RESULTS/'frozen_onpolicy.json')
+    rows=load(RESULTS/'frozen_initial.json')+load(RESULTS/'frozen_sweep.json')+load(RESULTS/'frozen_onpolicy.json')+load(RESULTS/'frozen_long.json')
     unique={}
     for r in rows:
         key=(r['model'],r['case'],r['mode'])
@@ -55,11 +55,17 @@ def main():
     for suffix,teacher in (('6111','teacher_v17_DISTILL_LATTICE_R8_s3111_fix'),
                            ('7111','teacher_v17_DISTILL_LATTICE_R8_s4111_fix')):
         baseline='v18_BC0_s'+suffix
-        for prefix in ('v18_BC08_s','v18_BC3_s','v18_ON_SINGLE_3_s','v18_ON_ALL_3_s'):
+        for prefix in ('v18_BC08_s','v18_BC3_s','v18_ON_SINGLE_3_s','v18_ON_ALL_3_s','v18_ON_ALL_LONG_3_s'):
             candidate=prefix+suffix
             for other in (baseline,teacher):
                 result=compare(rows,candidate,other)
                 if result:pairs.append(result)
+    for a,b in (
+      ('v18_ON_ALL_3_s6111','v18_OFF_SYNTH_3_s6111'),
+      ('v18_ON_ALL_LONG_3_s6111','v18_ON_ALL_3_s6111'),
+      ('v18_ON_ALL_LONG_3_s7111','v18_ON_ALL_3_s7111')):
+        z=compare(rows,a,b)
+        if z:pairs.append(z)
     (RESULTS/'v18_statistics.json').write_text(json.dumps(
       dict(n_cells=len(rows),model_count=len(set(x['model'] for x in rows)),
            table=table,paired_case_bootstrap=pairs),indent=2),encoding='utf8')

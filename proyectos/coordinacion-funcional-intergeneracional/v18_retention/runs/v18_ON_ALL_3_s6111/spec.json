@@ -1,0 +1,13 @@
+{
+  "name": "v18_ON_ALL_3_s6111",
+  "source": "v17_DISTILL_LATTICE_R8_s3111_fix",
+  "seed": 6111,
+  "regularize": 3.0,
+  "updates": 700,
+  "mode": "on_all",
+  "batch": 12,
+  "horizon": 20,
+  "lr": 0.002,
+  "eval_every": 175,
+  "device": "cuda"
+}
