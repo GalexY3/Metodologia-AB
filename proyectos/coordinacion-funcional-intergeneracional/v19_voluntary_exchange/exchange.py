@@ -127,7 +127,7 @@ class IndependentActors(nn.Module):
         self.offer_b1=nn.Parameter(torch.zeros(n,hidden))
         self.offer_w2=nn.Parameter(torch.randn(n,hidden)*.05)
         self.offer_b2=nn.Parameter(torch.zeros(n))
-    def act(self,c,world,mode='normal',deterministic=False,force_offer=None,return_logits=False):
+    def act(self,c,world,mode='normal',deterministic=False,force_offer=None,return_logits=False,return_parts=False):
         f=observe(c,world,mode)
         b,n=world['roles'].shape
         k=c.k;K=k-1
@@ -182,6 +182,8 @@ class IndependentActors(nn.Module):
         odist=Bernoulli(logits=offer_logits)
         logoffers=odist.log_prob(offers)
         entropy=entrole+odist.entropy()
+        if return_parts:
+            return choice,offers,logrole,logoffers,entrole,odist.entropy()
         return choice,offers,logrole+logoffers,entropy
 
 def advance(c,world,roles,offers):
