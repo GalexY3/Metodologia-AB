@@ -1,0 +1,2425 @@
+{
+  "model": "v15_ops_mlp16_s4111",
+  "steps": 60,
+  "per_condition_worlds": 144,
+  "test_seeds": [
+    202601,
+    202607,
+    202609
+  ],
+  "cases": [
+    [
+      12,
+      10
+    ],
+    [
+      16,
+      15
+    ],
+    [
+      24,
+      4
+    ],
+    [
+      24,
+      20
+    ],
+    [
+      40,
+      12
+    ],
+    [
+      40,
+      30
+    ],
+    [
+      50,
+      4
+    ],
+    [
+      80,
+      12
+    ],
+    [
+      80,
+      30
+    ],
+    [
+      80,
+      60
+    ]
+  ],
+  "operations": [
+    "original_gate",
+    "no_gate",
+    "scaled_gate",
+    "local_sign_gate",
+    "oracle_sign_gate"
+  ],
+  "exact_coalition_thresholds": [
+    {
+      "k": 4,
+      "m": 1,
+      "group_size": 120,
+      "payoff": 0.25,
+      "unilateral_founder": 0.03333333333333333,
+      "coalition_equal_threshold": 7.5,
+      "smallest_strict_improving_size": 8,
+      "suggested_ceil": 8
+    },
+    {
+      "k": 4,
+      "m": 2,
+      "group_size": 60,
+      "payoff": 0.5,
+      "unilateral_founder": 0.03333333333333333,
+      "coalition_equal_threshold": 15.0,
+      "smallest_strict_improving_size": 16,
+      "suggested_ceil": 15
+    },
+    {
+      "k": 4,
+      "m": 3,
+      "group_size": 40,
+      "payoff": 0.75,
+      "unilateral_founder": 0.03333333333333333,
+      "coalition_equal_threshold": 22.5,
+      "smallest_strict_improving_size": 23,
+      "suggested_ceil": 23
+    },
+    {
+      "k": 8,
+      "m": 6,
+      "group_size": 20,
+      "payoff": 0.75,
+      "unilateral_founder": 0.06666666666666667,
+      "coalition_equal_threshold": 11.25,
+      "smallest_strict_improving_size": 12,
+      "suggested_ceil": 12
+    },
+    {
+      "k": 80,
+      "m": 60,
+      "group_size": 2,
+      "payoff": 0.75,
+      "unilateral_founder": 0.6666666666666666,
+      "coalition_equal_threshold": 1.125,
+      "smallest_strict_improving_size": 2,
+      "suggested_ceil": 2
+    }
+  ],
+  "noninteger_U1_counterexample": {
+    "N": 120,
+    "k": 80,
+    "M": 120,
+    "food_k80": 1.0,
+    "food_k120": 1.0,
+    "distinct_optimal_k": [
+      80,
+      120
+    ]
+  },
+  "experiment": "Frozen V15 model; original food payoff; oracle treatment labeled illegal upper bound; local sign only uses allowed neighborhood.",
+  "results": [
+    {
+      "m": 12,
+      "k": 10,
+      "init": "random",
+      "mode": "original_gate",
+      "food": 0.8188899556795756,
+      "occupied": 9.472222646077475,
+      "D": 0.14461801449457803,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.5938576270489242,
+        "congestion_recall": 0.6278560573423659,
+        "deficit_recall": 0.576708909798684,
+        "true_critical_fraction": 0.11388888955116272
+      },
+      "final_sign": {
+        "accuracy": 0.6779632079995617,
+        "congestion_recall": 0.7344981750357981,
+        "deficit_recall": 0.48805036373039723,
+        "true_critical_fraction": 0.104861115415891
+      }
+    },
+    {
+      "m": 12,
+      "k": 10,
+      "init": "random",
+      "mode": "no_gate",
+      "food": 0.802449901898702,
+      "occupied": 9.395833651224772,
+      "D": 0.16203699509302774,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.5938576270489242,
+        "congestion_recall": 0.6278560573423659,
+        "deficit_recall": 0.576708909798684,
+        "true_critical_fraction": 0.11388888955116272
+      },
+      "final_sign": {
+        "accuracy": 0.7210573432049943,
+        "congestion_recall": 0.7449257565936863,
+        "deficit_recall": 0.5493547908109604,
+        "true_critical_fraction": 0.06527778009573619
+      }
+    },
+    {
+      "m": 12,
+      "k": 10,
+      "init": "random",
+      "mode": "scaled_gate",
+      "food": 0.806910773118337,
+      "occupied": 9.38194497426351,
+      "D": 0.16030088067054749,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.5938576270489242,
+        "congestion_recall": 0.6278560573423659,
+        "deficit_recall": 0.576708909798684,
+        "true_critical_fraction": 0.11388888955116272
+      },
+      "final_sign": {
+        "accuracy": 0.7216840227284073,
+        "congestion_recall": 0.7424538068093427,
+        "deficit_recall": 0.5494515928918311,
+        "true_critical_fraction": 0.058333334823449455
+      }
+    },
+    {
+      "m": 12,
+      "k": 10,
+      "init": "random",
+      "mode": "local_sign_gate",
+      "food": 0.8086999456087748,
+      "occupied": 9.409722646077475,
+      "D": 0.1575809766848882,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.5938576270489242,
+        "congestion_recall": 0.6278560573423659,
+        "deficit_recall": 0.576708909798684,
+        "true_critical_fraction": 0.11388888955116272
+      },
+      "final_sign": {
+        "accuracy": 0.7064487163172856,
+        "congestion_recall": 0.7315648478534765,
+        "deficit_recall": 0.5502249012310932,
+        "true_critical_fraction": 0.07013889153798421
+      }
+    },
+    {
+      "m": 12,
+      "k": 10,
+      "init": "random",
+      "mode": "oracle_sign_gate",
+      "food": 0.8411892851193746,
+      "occupied": 9.472222328186035,
+      "D": 0.13234949111938477,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.5938576270489242,
+        "congestion_recall": 0.6278560573423659,
+        "deficit_recall": 0.576708909798684,
+        "true_critical_fraction": 0.11388888955116272
+      },
+      "final_sign": {
+        "accuracy": 0.6838766282455935,
+        "congestion_recall": 0.7260809664671148,
+        "deficit_recall": 0.48206212934906656,
+        "true_critical_fraction": 0.13402777910232544
+      }
+    },
+    {
+      "m": 12,
+      "k": 10,
+      "init": "trap",
+      "mode": "original_gate",
+      "food": 0.5,
+      "occupied": 5.0,
+      "D": 0.5,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.8320023148148148,
+        "congestion_recall": 0.8320023148148148,
+        "deficit_recall": 0.0,
+        "true_critical_fraction": 0.0
+      },
+      "final_sign": {
+        "accuracy": 0.8675925925925926,
+        "congestion_recall": 0.8675925925925926,
+        "deficit_recall": 0.0,
+        "true_critical_fraction": 0.0
+      }
+    },
+    {
+      "m": 12,
+      "k": 10,
+      "init": "trap",
+      "mode": "no_gate",
+      "food": 0.5,
+      "occupied": 5.0,
+      "D": 0.5,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.8320023148148148,
+        "congestion_recall": 0.8320023148148148,
+        "deficit_recall": 0.0,
+        "true_critical_fraction": 0.0
+      },
+      "final_sign": {
+        "accuracy": 0.8674189814814816,
+        "congestion_recall": 0.8674189814814816,
+        "deficit_recall": 0.0,
+        "true_critical_fraction": 0.0
+      }
+    },
+    {
+      "m": 12,
+      "k": 10,
+      "init": "trap",
+      "mode": "scaled_gate",
+      "food": 0.5,
+      "occupied": 5.0,
+      "D": 0.5,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.8320023148148148,
+        "congestion_recall": 0.8320023148148148,
+        "deficit_recall": 0.0,
+        "true_critical_fraction": 0.0
+      },
+      "final_sign": {
+        "accuracy": 0.8674189814814816,
+        "congestion_recall": 0.8674189814814816,
+        "deficit_recall": 0.0,
+        "true_critical_fraction": 0.0
+      }
+    },
+    {
+      "m": 12,
+      "k": 10,
+      "init": "trap",
+      "mode": "local_sign_gate",
+      "food": 0.5,
+      "occupied": 5.0,
+      "D": 0.5,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.8320023148148148,
+        "congestion_recall": 0.8320023148148148,
+        "deficit_recall": 0.0,
+        "true_critical_fraction": 0.0
+      },
+      "final_sign": {
+        "accuracy": 0.8677662037037037,
+        "congestion_recall": 0.8677662037037037,
+        "deficit_recall": 0.0,
+        "true_critical_fraction": 0.0
+      }
+    },
+    {
+      "m": 12,
+      "k": 10,
+      "init": "trap",
+      "mode": "oracle_sign_gate",
+      "food": 0.5,
+      "occupied": 5.0,
+      "D": 0.5,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.8320023148148148,
+        "congestion_recall": 0.8320023148148148,
+        "deficit_recall": 0.0,
+        "true_critical_fraction": 0.0
+      },
+      "final_sign": {
+        "accuracy": 0.8674189814814816,
+        "congestion_recall": 0.8674189814814816,
+        "deficit_recall": 0.0,
+        "true_critical_fraction": 0.0
+      }
+    },
+    {
+      "m": 16,
+      "k": 15,
+      "init": "random",
+      "mode": "original_gate",
+      "food": 0.8161603212356567,
+      "occupied": 13.923611640930176,
+      "D": 0.1487846871217092,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.5968196522956085,
+        "congestion_recall": 0.501762777396753,
+        "deficit_recall": 0.7152539308460338,
+        "true_critical_fraction": 0.14120371143023172
+      },
+      "final_sign": {
+        "accuracy": 0.6169931548565244,
+        "congestion_recall": 0.6128965185049952,
+        "deficit_recall": 0.6352316156267636,
+        "true_critical_fraction": 0.1254629666606585
+      }
+    },
+    {
+      "m": 16,
+      "k": 15,
+      "init": "random",
+      "mode": "no_gate",
+      "food": 0.8006582856178284,
+      "occupied": 13.868055661519369,
+      "D": 0.16579857468605042,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.5968196522956085,
+        "congestion_recall": 0.501762777396753,
+        "deficit_recall": 0.7152539308460338,
+        "true_critical_fraction": 0.14120371143023172
+      },
+      "final_sign": {
+        "accuracy": 0.6342958102671795,
+        "congestion_recall": 0.6278655102871419,
+        "deficit_recall": 0.6867997499174855,
+        "true_critical_fraction": 0.10324074327945709
+      }
+    },
+    {
+      "m": 16,
+      "k": 15,
+      "init": "random",
+      "mode": "scaled_gate",
+      "food": 0.8078197638193766,
+      "occupied": 13.868055661519369,
+      "D": 0.16174764931201935,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.5968196522956085,
+        "congestion_recall": 0.501762777396753,
+        "deficit_recall": 0.7152539308460338,
+        "true_critical_fraction": 0.14120371143023172
+      },
+      "final_sign": {
+        "accuracy": 0.6349750653898427,
+        "congestion_recall": 0.6283362446764477,
+        "deficit_recall": 0.6943416001401818,
+        "true_critical_fraction": 0.10509259502092998
+      }
+    },
+    {
+      "m": 16,
+      "k": 15,
+      "init": "random",
+      "mode": "local_sign_gate",
+      "food": 0.809903085231781,
+      "occupied": 13.930555979410807,
+      "D": 0.15613421301047006,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.5968196522956085,
+        "congestion_recall": 0.501762777396753,
+        "deficit_recall": 0.7152539308460338,
+        "true_critical_fraction": 0.14120371143023172
+      },
+      "final_sign": {
+        "accuracy": 0.6200110823470464,
+        "congestion_recall": 0.6093268258437569,
+        "deficit_recall": 0.6866759562608222,
+        "true_critical_fraction": 0.12037037312984467
+      }
+    },
+    {
+      "m": 16,
+      "k": 15,
+      "init": "random",
+      "mode": "oracle_sign_gate",
+      "food": 0.8349030812581381,
+      "occupied": 13.979166984558105,
+      "D": 0.13634255031744638,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.5968196522956085,
+        "congestion_recall": 0.501762777396753,
+        "deficit_recall": 0.7152539308460338,
+        "true_critical_fraction": 0.14120371143023172
+      },
+      "final_sign": {
+        "accuracy": 0.6043840069030959,
+        "congestion_recall": 0.6027665716621095,
+        "deficit_recall": 0.6141665253511445,
+        "true_critical_fraction": 0.17222222685813904
+      }
+    },
+    {
+      "m": 16,
+      "k": 15,
+      "init": "trap",
+      "mode": "original_gate",
+      "food": 0.46666666865348816,
+      "occupied": 7.0,
+      "D": 0.5333333015441895,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.704224537037037,
+        "congestion_recall": 0.704224537037037,
+        "deficit_recall": 0.0,
+        "true_critical_fraction": 0.0
+      },
+      "final_sign": {
+        "accuracy": 0.8119791666666666,
+        "congestion_recall": 0.8119791666666666,
+        "deficit_recall": 0.0,
+        "true_critical_fraction": 0.0
+      }
+    },
+    {
+      "m": 16,
+      "k": 15,
+      "init": "trap",
+      "mode": "no_gate",
+      "food": 0.46666666865348816,
+      "occupied": 7.0,
+      "D": 0.5333333015441895,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.704224537037037,
+        "congestion_recall": 0.704224537037037,
+        "deficit_recall": 0.0,
+        "true_critical_fraction": 0.0
+      },
+      "final_sign": {
+        "accuracy": 0.8119791666666666,
+        "congestion_recall": 0.8119791666666666,
+        "deficit_recall": 0.0,
+        "true_critical_fraction": 0.0
+      }
+    },
+    {
+      "m": 16,
+      "k": 15,
+      "init": "trap",
+      "mode": "scaled_gate",
+      "food": 0.46666666865348816,
+      "occupied": 7.0,
+      "D": 0.5333333015441895,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.704224537037037,
+        "congestion_recall": 0.704224537037037,
+        "deficit_recall": 0.0,
+        "true_critical_fraction": 0.0
+      },
+      "final_sign": {
+        "accuracy": 0.8119791666666666,
+        "congestion_recall": 0.8119791666666666,
+        "deficit_recall": 0.0,
+        "true_critical_fraction": 0.0
+      }
+    },
+    {
+      "m": 16,
+      "k": 15,
+      "init": "trap",
+      "mode": "local_sign_gate",
+      "food": 0.46666666865348816,
+      "occupied": 7.0,
+      "D": 0.5333333015441895,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.704224537037037,
+        "congestion_recall": 0.704224537037037,
+        "deficit_recall": 0.0,
+        "true_critical_fraction": 0.0
+      },
+      "final_sign": {
+        "accuracy": 0.8119791666666666,
+        "congestion_recall": 0.8119791666666666,
+        "deficit_recall": 0.0,
+        "true_critical_fraction": 0.0
+      }
+    },
+    {
+      "m": 16,
+      "k": 15,
+      "init": "trap",
+      "mode": "oracle_sign_gate",
+      "food": 0.46666666865348816,
+      "occupied": 7.0,
+      "D": 0.5333333015441895,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.704224537037037,
+        "congestion_recall": 0.704224537037037,
+        "deficit_recall": 0.0,
+        "true_critical_fraction": 0.0
+      },
+      "final_sign": {
+        "accuracy": 0.8119791666666666,
+        "congestion_recall": 0.8119791666666666,
+        "deficit_recall": 0.0,
+        "true_critical_fraction": 0.0
+      }
+    },
+    {
+      "m": 24,
+      "k": 4,
+      "init": "random",
+      "mode": "original_gate",
+      "food": 0.6507311264673868,
+      "occupied": 2.9375,
+      "D": 0.33443283041318256,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.956712962962963,
+        "congestion_recall": 0.0,
+        "deficit_recall": 0.956712962962963,
+        "true_critical_fraction": 0.0
+      },
+      "final_sign": {
+        "accuracy": 0.9185818426410703,
+        "congestion_recall": 0.9452254285898362,
+        "deficit_recall": 0.1199789018926032,
+        "true_critical_fraction": 0.0017361111628512542
+      }
+    },
+    {
+      "m": 24,
+      "k": 4,
+      "init": "random",
+      "mode": "no_gate",
+      "food": 0.6507311264673868,
+      "occupied": 2.9375,
+      "D": 0.33443283041318256,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.956712962962963,
+        "congestion_recall": 0.0,
+        "deficit_recall": 0.956712962962963,
+        "true_critical_fraction": 0.0
+      },
+      "final_sign": {
+        "accuracy": 0.9185818426410703,
+        "congestion_recall": 0.9452254285898362,
+        "deficit_recall": 0.1199789018926032,
+        "true_critical_fraction": 0.0017361111628512542
+      }
+    },
+    {
+      "m": 24,
+      "k": 4,
+      "init": "random",
+      "mode": "scaled_gate",
+      "food": 0.6507311264673868,
+      "occupied": 2.9375,
+      "D": 0.33443283041318256,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.956712962962963,
+        "congestion_recall": 0.0,
+        "deficit_recall": 0.956712962962963,
+        "true_critical_fraction": 0.0
+      },
+      "final_sign": {
+        "accuracy": 0.9185818426410703,
+        "congestion_recall": 0.9452254285898362,
+        "deficit_recall": 0.1199789018926032,
+        "true_critical_fraction": 0.0017361111628512542
+      }
+    },
+    {
+      "m": 24,
+      "k": 4,
+      "init": "random",
+      "mode": "local_sign_gate",
+      "food": 0.6507311264673868,
+      "occupied": 2.9375,
+      "D": 0.33443283041318256,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.956712962962963,
+        "congestion_recall": 0.0,
+        "deficit_recall": 0.956712962962963,
+        "true_critical_fraction": 0.0
+      },
+      "final_sign": {
+        "accuracy": 0.9185818426410703,
+        "congestion_recall": 0.9452254285898362,
+        "deficit_recall": 0.1199789018926032,
+        "true_critical_fraction": 0.0017361111628512542
+      }
+    },
+    {
+      "m": 24,
+      "k": 4,
+      "init": "random",
+      "mode": "oracle_sign_gate",
+      "food": 0.6507311264673868,
+      "occupied": 2.9375,
+      "D": 0.33443283041318256,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.956712962962963,
+        "congestion_recall": 0.0,
+        "deficit_recall": 0.956712962962963,
+        "true_critical_fraction": 0.0
+      },
+      "final_sign": {
+        "accuracy": 0.9185818426410703,
+        "congestion_recall": 0.9452254285898362,
+        "deficit_recall": 0.1199789018926032,
+        "true_critical_fraction": 0.0017361111628512542
+      }
+    },
+    {
+      "m": 24,
+      "k": 4,
+      "init": "trap",
+      "mode": "original_gate",
+      "food": 0.500021239121755,
+      "occupied": 2.0555556615193686,
+      "D": 0.4994791845480601,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.8608796296296296,
+        "congestion_recall": 0.8608796296296296,
+        "deficit_recall": 0.0,
+        "true_critical_fraction": 0.0
+      },
+      "final_sign": {
+        "accuracy": 0.9256365740740741,
+        "congestion_recall": 0.9255978687295424,
+        "deficit_recall": 1.0,
+        "true_critical_fraction": 0.0
+      }
+    },
+    {
+      "m": 24,
+      "k": 4,
+      "init": "trap",
+      "mode": "no_gate",
+      "food": 0.500021239121755,
+      "occupied": 2.0555556615193686,
+      "D": 0.4994791845480601,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.8608796296296296,
+        "congestion_recall": 0.8608796296296296,
+        "deficit_recall": 0.0,
+        "true_critical_fraction": 0.0
+      },
+      "final_sign": {
+        "accuracy": 0.9256365740740741,
+        "congestion_recall": 0.9255978687295424,
+        "deficit_recall": 1.0,
+        "true_critical_fraction": 0.0
+      }
+    },
+    {
+      "m": 24,
+      "k": 4,
+      "init": "trap",
+      "mode": "scaled_gate",
+      "food": 0.500021239121755,
+      "occupied": 2.0555556615193686,
+      "D": 0.4994791845480601,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.8608796296296296,
+        "congestion_recall": 0.8608796296296296,
+        "deficit_recall": 0.0,
+        "true_critical_fraction": 0.0
+      },
+      "final_sign": {
+        "accuracy": 0.9256365740740741,
+        "congestion_recall": 0.9255978687295424,
+        "deficit_recall": 1.0,
+        "true_critical_fraction": 0.0
+      }
+    },
+    {
+      "m": 24,
+      "k": 4,
+      "init": "trap",
+      "mode": "local_sign_gate",
+      "food": 0.500021239121755,
+      "occupied": 2.0555556615193686,
+      "D": 0.4994791845480601,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.8608796296296296,
+        "congestion_recall": 0.8608796296296296,
+        "deficit_recall": 0.0,
+        "true_critical_fraction": 0.0
+      },
+      "final_sign": {
+        "accuracy": 0.9256365740740741,
+        "congestion_recall": 0.9255978687295424,
+        "deficit_recall": 1.0,
+        "true_critical_fraction": 0.0
+      }
+    },
+    {
+      "m": 24,
+      "k": 4,
+      "init": "trap",
+      "mode": "oracle_sign_gate",
+      "food": 0.500021239121755,
+      "occupied": 2.0555556615193686,
+      "D": 0.4994791845480601,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.8608796296296296,
+        "congestion_recall": 0.8608796296296296,
+        "deficit_recall": 0.0,
+        "true_critical_fraction": 0.0
+      },
+      "final_sign": {
+        "accuracy": 0.9256365740740741,
+        "congestion_recall": 0.9255978687295424,
+        "deficit_recall": 1.0,
+        "true_critical_fraction": 0.0
+      }
+    },
+    {
+      "m": 24,
+      "k": 20,
+      "init": "random",
+      "mode": "original_gate",
+      "food": 0.7817323009173075,
+      "occupied": 18.31944529215495,
+      "D": 0.17980319758256277,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.6169878755434353,
+        "congestion_recall": 0.3977044529491755,
+        "deficit_recall": 0.8097697160376557,
+        "true_critical_fraction": 0.17916667461395264
+      },
+      "final_sign": {
+        "accuracy": 0.6207582736050731,
+        "congestion_recall": 0.6057486827910964,
+        "deficit_recall": 0.7080260269615728,
+        "true_critical_fraction": 0.13055556019147238
+      }
+    },
+    {
+      "m": 24,
+      "k": 20,
+      "init": "random",
+      "mode": "no_gate",
+      "food": 0.7767747441927592,
+      "occupied": 18.33333396911621,
+      "D": 0.1842592159907023,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.6169878755434353,
+        "congestion_recall": 0.3977044529491755,
+        "deficit_recall": 0.8097697160376557,
+        "true_critical_fraction": 0.17916667461395264
+      },
+      "final_sign": {
+        "accuracy": 0.6280120570986183,
+        "congestion_recall": 0.6107778956756276,
+        "deficit_recall": 0.7591891438258814,
+        "true_critical_fraction": 0.12256944676240285
+      }
+    },
+    {
+      "m": 24,
+      "k": 20,
+      "init": "random",
+      "mode": "scaled_gate",
+      "food": 0.7931519945462545,
+      "occupied": 18.33333396911621,
+      "D": 0.1732059766848882,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.6169878755434353,
+        "congestion_recall": 0.3977044529491755,
+        "deficit_recall": 0.8097697160376557,
+        "true_critical_fraction": 0.17916667461395264
+      },
+      "final_sign": {
+        "accuracy": 0.6148713419656787,
+        "congestion_recall": 0.6024748723640925,
+        "deficit_recall": 0.7052829955289509,
+        "true_critical_fraction": 0.12500000248352686
+      }
+    },
+    {
+      "m": 24,
+      "k": 20,
+      "init": "random",
+      "mode": "local_sign_gate",
+      "food": 0.7823785146077474,
+      "occupied": 18.361111958821613,
+      "D": 0.1800346871217092,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.6169878755434353,
+        "congestion_recall": 0.3977044529491755,
+        "deficit_recall": 0.8097697160376557,
+        "true_critical_fraction": 0.17916667461395264
+      },
+      "final_sign": {
+        "accuracy": 0.6147671909742477,
+        "congestion_recall": 0.5945626024717962,
+        "deficit_recall": 0.7614685309975465,
+        "true_critical_fraction": 0.1322916696468989
+      }
+    },
+    {
+      "m": 24,
+      "k": 20,
+      "init": "random",
+      "mode": "oracle_sign_gate",
+      "food": 0.7960166533788046,
+      "occupied": 18.34027862548828,
+      "D": 0.17112264037132263,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.6169878755434353,
+        "congestion_recall": 0.3977044529491755,
+        "deficit_recall": 0.8097697160376557,
+        "true_critical_fraction": 0.17916667461395264
+      },
+      "final_sign": {
+        "accuracy": 0.6145787575364176,
+        "congestion_recall": 0.6006178797479126,
+        "deficit_recall": 0.7148472054850928,
+        "true_critical_fraction": 0.16597222288449606
+      }
+    },
+    {
+      "m": 24,
+      "k": 20,
+      "init": "trap",
+      "mode": "original_gate",
+      "food": 0.500000019868215,
+      "occupied": 10.0,
+      "D": 0.5,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.5486689814814816,
+        "congestion_recall": 0.5486689814814816,
+        "deficit_recall": 0.0,
+        "true_critical_fraction": 0.0
+      },
+      "final_sign": {
+        "accuracy": 0.7232060185185185,
+        "congestion_recall": 0.7232060185185185,
+        "deficit_recall": 0.0,
+        "true_critical_fraction": 0.0
+      }
+    },
+    {
+      "m": 24,
+      "k": 20,
+      "init": "trap",
+      "mode": "no_gate",
+      "food": 0.500000019868215,
+      "occupied": 10.0,
+      "D": 0.5,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.5486689814814816,
+        "congestion_recall": 0.5486689814814816,
+        "deficit_recall": 0.0,
+        "true_critical_fraction": 0.0
+      },
+      "final_sign": {
+        "accuracy": 0.7239583333333334,
+        "congestion_recall": 0.7239583333333334,
+        "deficit_recall": 0.0,
+        "true_critical_fraction": 0.0
+      }
+    },
+    {
+      "m": 24,
+      "k": 20,
+      "init": "trap",
+      "mode": "scaled_gate",
+      "food": 0.500000019868215,
+      "occupied": 10.0,
+      "D": 0.5,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.5486689814814816,
+        "congestion_recall": 0.5486689814814816,
+        "deficit_recall": 0.0,
+        "true_critical_fraction": 0.0
+      },
+      "final_sign": {
+        "accuracy": 0.7239583333333334,
+        "congestion_recall": 0.7239583333333334,
+        "deficit_recall": 0.0,
+        "true_critical_fraction": 0.0
+      }
+    },
+    {
+      "m": 24,
+      "k": 20,
+      "init": "trap",
+      "mode": "local_sign_gate",
+      "food": 0.500000019868215,
+      "occupied": 10.0,
+      "D": 0.5,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.5486689814814816,
+        "congestion_recall": 0.5486689814814816,
+        "deficit_recall": 0.0,
+        "true_critical_fraction": 0.0
+      },
+      "final_sign": {
+        "accuracy": 0.7238425925925926,
+        "congestion_recall": 0.7238425925925926,
+        "deficit_recall": 0.0,
+        "true_critical_fraction": 0.0
+      }
+    },
+    {
+      "m": 24,
+      "k": 20,
+      "init": "trap",
+      "mode": "oracle_sign_gate",
+      "food": 0.500000019868215,
+      "occupied": 10.0,
+      "D": 0.5,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.5486689814814816,
+        "congestion_recall": 0.5486689814814816,
+        "deficit_recall": 0.0,
+        "true_critical_fraction": 0.0
+      },
+      "final_sign": {
+        "accuracy": 0.7239583333333334,
+        "congestion_recall": 0.7239583333333334,
+        "deficit_recall": 0.0,
+        "true_critical_fraction": 0.0
+      }
+    },
+    {
+      "m": 40,
+      "k": 12,
+      "init": "random",
+      "mode": "original_gate",
+      "food": 0.6510879993438721,
+      "occupied": 7.993055979410808,
+      "D": 0.34675922989845276,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.8145061859314245,
+        "congestion_recall": 0.0,
+        "deficit_recall": 0.8145061859314245,
+        "true_critical_fraction": 0.0028935185400769114
+      },
+      "final_sign": {
+        "accuracy": 0.9493923545016266,
+        "congestion_recall": 0.9538924797127383,
+        "deficit_recall": 0.26006410256410256,
+        "true_critical_fraction": 0.008680555814256271
+      }
+    },
+    {
+      "m": 40,
+      "k": 12,
+      "init": "random",
+      "mode": "no_gate",
+      "food": 0.6510879993438721,
+      "occupied": 7.993055979410808,
+      "D": 0.34675922989845276,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.8145061859314245,
+        "congestion_recall": 0.0,
+        "deficit_recall": 0.8145061859314245,
+        "true_critical_fraction": 0.0028935185400769114
+      },
+      "final_sign": {
+        "accuracy": 0.9493923545016266,
+        "congestion_recall": 0.9538924797127383,
+        "deficit_recall": 0.26006410256410256,
+        "true_critical_fraction": 0.008680555814256271
+      }
+    },
+    {
+      "m": 40,
+      "k": 12,
+      "init": "random",
+      "mode": "scaled_gate",
+      "food": 0.6510879993438721,
+      "occupied": 7.993055979410808,
+      "D": 0.34675922989845276,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.8145061859314245,
+        "congestion_recall": 0.0,
+        "deficit_recall": 0.8145061859314245,
+        "true_critical_fraction": 0.0028935185400769114
+      },
+      "final_sign": {
+        "accuracy": 0.9493923545016266,
+        "congestion_recall": 0.9538924797127383,
+        "deficit_recall": 0.26006410256410256,
+        "true_critical_fraction": 0.008680555814256271
+      }
+    },
+    {
+      "m": 40,
+      "k": 12,
+      "init": "random",
+      "mode": "local_sign_gate",
+      "food": 0.6510879993438721,
+      "occupied": 7.993055979410808,
+      "D": 0.34675922989845276,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.8145061859314245,
+        "congestion_recall": 0.0,
+        "deficit_recall": 0.8145061859314245,
+        "true_critical_fraction": 0.0028935185400769114
+      },
+      "final_sign": {
+        "accuracy": 0.9493923545016266,
+        "congestion_recall": 0.9538924797127383,
+        "deficit_recall": 0.26006410256410256,
+        "true_critical_fraction": 0.008680555814256271
+      }
+    },
+    {
+      "m": 40,
+      "k": 12,
+      "init": "random",
+      "mode": "oracle_sign_gate",
+      "food": 0.6510879993438721,
+      "occupied": 7.993055979410808,
+      "D": 0.34675922989845276,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.8145061859314245,
+        "congestion_recall": 0.0,
+        "deficit_recall": 0.8145061859314245,
+        "true_critical_fraction": 0.0028935185400769114
+      },
+      "final_sign": {
+        "accuracy": 0.9493923545016266,
+        "congestion_recall": 0.9538924797127383,
+        "deficit_recall": 0.26006410256410256,
+        "true_critical_fraction": 0.008680555814256271
+      }
+    },
+    {
+      "m": 40,
+      "k": 12,
+      "init": "trap",
+      "mode": "original_gate",
+      "food": 0.5000405311584473,
+      "occupied": 6.048611323038737,
+      "D": 0.49959492683410645,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.7664351851851853,
+        "congestion_recall": 0.7664351851851853,
+        "deficit_recall": 0.0,
+        "true_critical_fraction": 0.0
+      },
+      "final_sign": {
+        "accuracy": 0.9201967592592593,
+        "congestion_recall": 0.9201648236102437,
+        "deficit_recall": 1.0,
+        "true_critical_fraction": 0.0
+      }
+    },
+    {
+      "m": 40,
+      "k": 12,
+      "init": "trap",
+      "mode": "no_gate",
+      "food": 0.5000405311584473,
+      "occupied": 6.048611323038737,
+      "D": 0.49959492683410645,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.7664351851851853,
+        "congestion_recall": 0.7664351851851853,
+        "deficit_recall": 0.0,
+        "true_critical_fraction": 0.0
+      },
+      "final_sign": {
+        "accuracy": 0.9201967592592593,
+        "congestion_recall": 0.9201648236102437,
+        "deficit_recall": 1.0,
+        "true_critical_fraction": 0.0
+      }
+    },
+    {
+      "m": 40,
+      "k": 12,
+      "init": "trap",
+      "mode": "scaled_gate",
+      "food": 0.5000405311584473,
+      "occupied": 6.048611323038737,
+      "D": 0.49959492683410645,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.7664351851851853,
+        "congestion_recall": 0.7664351851851853,
+        "deficit_recall": 0.0,
+        "true_critical_fraction": 0.0
+      },
+      "final_sign": {
+        "accuracy": 0.9201967592592593,
+        "congestion_recall": 0.9201648236102437,
+        "deficit_recall": 1.0,
+        "true_critical_fraction": 0.0
+      }
+    },
+    {
+      "m": 40,
+      "k": 12,
+      "init": "trap",
+      "mode": "local_sign_gate",
+      "food": 0.5000405311584473,
+      "occupied": 6.048611323038737,
+      "D": 0.49959492683410645,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.7664351851851853,
+        "congestion_recall": 0.7664351851851853,
+        "deficit_recall": 0.0,
+        "true_critical_fraction": 0.0
+      },
+      "final_sign": {
+        "accuracy": 0.9201967592592593,
+        "congestion_recall": 0.9201648236102437,
+        "deficit_recall": 1.0,
+        "true_critical_fraction": 0.0
+      }
+    },
+    {
+      "m": 40,
+      "k": 12,
+      "init": "trap",
+      "mode": "oracle_sign_gate",
+      "food": 0.5000405311584473,
+      "occupied": 6.048611323038737,
+      "D": 0.49959492683410645,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.7664351851851853,
+        "congestion_recall": 0.7664351851851853,
+        "deficit_recall": 0.0,
+        "true_critical_fraction": 0.0
+      },
+      "final_sign": {
+        "accuracy": 0.9201967592592593,
+        "congestion_recall": 0.9201648236102437,
+        "deficit_recall": 1.0,
+        "true_critical_fraction": 0.0
+      }
+    },
+    {
+      "m": 40,
+      "k": 30,
+      "init": "random",
+      "mode": "original_gate",
+      "food": 0.780830442905426,
+      "occupied": 27.52083396911621,
+      "D": 0.17505782345930734,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.6307134207628132,
+        "congestion_recall": 0.2986638526622778,
+        "deficit_recall": 0.9058387739411166,
+        "true_critical_fraction": 0.22291667262713113
+      },
+      "final_sign": {
+        "accuracy": 0.6140877006276436,
+        "congestion_recall": 0.5743678013270231,
+        "deficit_recall": 0.8055207788324986,
+        "true_critical_fraction": 0.18564814825852713
+      }
+    },
+    {
+      "m": 40,
+      "k": 30,
+      "init": "random",
+      "mode": "no_gate",
+      "food": 0.7632089257240295,
+      "occupied": 27.090277989705402,
+      "D": 0.1965856154759725,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.6307134207628132,
+        "congestion_recall": 0.2986638526622778,
+        "deficit_recall": 0.9058387739411166,
+        "true_critical_fraction": 0.22291667262713113
+      },
+      "final_sign": {
+        "accuracy": 0.6345612635885591,
+        "congestion_recall": 0.606022394809274,
+        "deficit_recall": 0.8327061428959568,
+        "true_critical_fraction": 0.2291666716337204
+      }
+    },
+    {
+      "m": 40,
+      "k": 30,
+      "init": "random",
+      "mode": "scaled_gate",
+      "food": 0.780830442905426,
+      "occupied": 27.52083396911621,
+      "D": 0.17505782345930734,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.6307134207628132,
+        "congestion_recall": 0.2986638526622778,
+        "deficit_recall": 0.9058387739411166,
+        "true_critical_fraction": 0.22291667262713113
+      },
+      "final_sign": {
+        "accuracy": 0.6140877006276436,
+        "congestion_recall": 0.5743678013270231,
+        "deficit_recall": 0.8055207788324986,
+        "true_critical_fraction": 0.18564814825852713
+      }
+    },
+    {
+      "m": 40,
+      "k": 30,
+      "init": "random",
+      "mode": "local_sign_gate",
+      "food": 0.7763165632883707,
+      "occupied": 27.38888994852702,
+      "D": 0.1813078373670578,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.6307134207628132,
+        "congestion_recall": 0.2986638526622778,
+        "deficit_recall": 0.9058387739411166,
+        "true_critical_fraction": 0.22291667262713113
+      },
+      "final_sign": {
+        "accuracy": 0.6305117606873962,
+        "congestion_recall": 0.5854059549675662,
+        "deficit_recall": 0.8631828639778041,
+        "true_critical_fraction": 0.24097223579883575
+      }
+    },
+    {
+      "m": 40,
+      "k": 30,
+      "init": "random",
+      "mode": "oracle_sign_gate",
+      "food": 0.7982639074325562,
+      "occupied": 27.5625,
+      "D": 0.16371523837248483,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.6307134207628132,
+        "congestion_recall": 0.2986638526622778,
+        "deficit_recall": 0.9058387739411166,
+        "true_critical_fraction": 0.22291667262713113
+      },
+      "final_sign": {
+        "accuracy": 0.6239067927801042,
+        "congestion_recall": 0.588906687769237,
+        "deficit_recall": 0.7946011868907178,
+        "true_critical_fraction": 0.3062500059604645
+      }
+    },
+    {
+      "m": 40,
+      "k": 30,
+      "init": "trap",
+      "mode": "original_gate",
+      "food": 0.4998987317085266,
+      "occupied": 15.0,
+      "D": 0.5000578761100769,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.390625,
+        "congestion_recall": 0.390625,
+        "deficit_recall": 0.0,
+        "true_critical_fraction": 0.0
+      },
+      "final_sign": {
+        "accuracy": 0.6441105026271056,
+        "congestion_recall": 0.6441635781100924,
+        "deficit_recall": 0.1111111111111111,
+        "true_critical_fraction": 0.00046296297417332727
+      }
+    },
+    {
+      "m": 40,
+      "k": 30,
+      "init": "trap",
+      "mode": "no_gate",
+      "food": 0.4998987317085266,
+      "occupied": 15.0,
+      "D": 0.5000578761100769,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.390625,
+        "congestion_recall": 0.390625,
+        "deficit_recall": 0.0,
+        "true_critical_fraction": 0.0
+      },
+      "final_sign": {
+        "accuracy": 0.6435307525884717,
+        "congestion_recall": 0.643583858227983,
+        "deficit_recall": 0.1111111111111111,
+        "true_critical_fraction": 0.00046296297417332727
+      }
+    },
+    {
+      "m": 40,
+      "k": 30,
+      "init": "trap",
+      "mode": "scaled_gate",
+      "food": 0.4998987317085266,
+      "occupied": 15.0,
+      "D": 0.5000578761100769,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.390625,
+        "congestion_recall": 0.390625,
+        "deficit_recall": 0.0,
+        "true_critical_fraction": 0.0
+      },
+      "final_sign": {
+        "accuracy": 0.6441105026271056,
+        "congestion_recall": 0.6441635781100924,
+        "deficit_recall": 0.1111111111111111,
+        "true_critical_fraction": 0.00046296297417332727
+      }
+    },
+    {
+      "m": 40,
+      "k": 30,
+      "init": "trap",
+      "mode": "local_sign_gate",
+      "food": 0.4998987317085266,
+      "occupied": 15.0,
+      "D": 0.5000578761100769,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.390625,
+        "congestion_recall": 0.390625,
+        "deficit_recall": 0.0,
+        "true_critical_fraction": 0.0
+      },
+      "final_sign": {
+        "accuracy": 0.643785108292796,
+        "congestion_recall": 0.6438382139323072,
+        "deficit_recall": 0.1111111111111111,
+        "true_critical_fraction": 0.00023148148708666363
+      }
+    },
+    {
+      "m": 40,
+      "k": 30,
+      "init": "trap",
+      "mode": "oracle_sign_gate",
+      "food": 0.4998987317085266,
+      "occupied": 15.0,
+      "D": 0.5000578761100769,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.390625,
+        "congestion_recall": 0.390625,
+        "deficit_recall": 0.0,
+        "true_critical_fraction": 0.0
+      },
+      "final_sign": {
+        "accuracy": 0.6435307525884717,
+        "congestion_recall": 0.643583858227983,
+        "deficit_recall": 0.1111111111111111,
+        "true_critical_fraction": 0.00046296297417332727
+      }
+    },
+    {
+      "m": 50,
+      "k": 4,
+      "init": "random",
+      "mode": "original_gate",
+      "food": 0.6850501696268717,
+      "occupied": 3.1458334922790527,
+      "D": 0.2973379095395406,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.9887152777777778,
+        "congestion_recall": 0.0,
+        "deficit_recall": 0.9887152777777778,
+        "true_critical_fraction": 0.0
+      },
+      "final_sign": {
+        "accuracy": 0.9347800925925926,
+        "congestion_recall": 0.9645155468896629,
+        "deficit_recall": 0.10829017021458313,
+        "true_critical_fraction": 0.0
+      }
+    },
+    {
+      "m": 50,
+      "k": 4,
+      "init": "random",
+      "mode": "no_gate",
+      "food": 0.6850501696268717,
+      "occupied": 3.1458334922790527,
+      "D": 0.2973379095395406,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.9887152777777778,
+        "congestion_recall": 0.0,
+        "deficit_recall": 0.9887152777777778,
+        "true_critical_fraction": 0.0
+      },
+      "final_sign": {
+        "accuracy": 0.9347800925925926,
+        "congestion_recall": 0.9645155468896629,
+        "deficit_recall": 0.10829017021458313,
+        "true_critical_fraction": 0.0
+      }
+    },
+    {
+      "m": 50,
+      "k": 4,
+      "init": "random",
+      "mode": "scaled_gate",
+      "food": 0.6850501696268717,
+      "occupied": 3.1458334922790527,
+      "D": 0.2973379095395406,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.9887152777777778,
+        "congestion_recall": 0.0,
+        "deficit_recall": 0.9887152777777778,
+        "true_critical_fraction": 0.0
+      },
+      "final_sign": {
+        "accuracy": 0.9347800925925926,
+        "congestion_recall": 0.9645155468896629,
+        "deficit_recall": 0.10829017021458313,
+        "true_critical_fraction": 0.0
+      }
+    },
+    {
+      "m": 50,
+      "k": 4,
+      "init": "random",
+      "mode": "local_sign_gate",
+      "food": 0.6850501696268717,
+      "occupied": 3.1458334922790527,
+      "D": 0.2973379095395406,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.9887152777777778,
+        "congestion_recall": 0.0,
+        "deficit_recall": 0.9887152777777778,
+        "true_critical_fraction": 0.0
+      },
+      "final_sign": {
+        "accuracy": 0.9347800925925926,
+        "congestion_recall": 0.9645155468896629,
+        "deficit_recall": 0.10829017021458313,
+        "true_critical_fraction": 0.0
+      }
+    },
+    {
+      "m": 50,
+      "k": 4,
+      "init": "random",
+      "mode": "oracle_sign_gate",
+      "food": 0.6850501696268717,
+      "occupied": 3.1458334922790527,
+      "D": 0.2973379095395406,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.9887152777777778,
+        "congestion_recall": 0.0,
+        "deficit_recall": 0.9887152777777778,
+        "true_critical_fraction": 0.0
+      },
+      "final_sign": {
+        "accuracy": 0.9347800925925926,
+        "congestion_recall": 0.9645155468896629,
+        "deficit_recall": 0.10829017021458313,
+        "true_critical_fraction": 0.0
+      }
+    },
+    {
+      "m": 50,
+      "k": 4,
+      "init": "trap",
+      "mode": "original_gate",
+      "food": 0.5000115633010864,
+      "occupied": 2.0416667461395264,
+      "D": 0.49965279301007587,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.8607060185185186,
+        "congestion_recall": 0.8607060185185186,
+        "deficit_recall": 0.0,
+        "true_critical_fraction": 0.0
+      },
+      "final_sign": {
+        "accuracy": 0.9330439814814815,
+        "congestion_recall": 0.9330208802735164,
+        "deficit_recall": 0.6666666666666666,
+        "true_critical_fraction": 0.0
+      }
+    },
+    {
+      "m": 50,
+      "k": 4,
+      "init": "trap",
+      "mode": "no_gate",
+      "food": 0.5000115633010864,
+      "occupied": 2.0416667461395264,
+      "D": 0.49965279301007587,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.8607060185185186,
+        "congestion_recall": 0.8607060185185186,
+        "deficit_recall": 0.0,
+        "true_critical_fraction": 0.0
+      },
+      "final_sign": {
+        "accuracy": 0.9330439814814815,
+        "congestion_recall": 0.9330208802735164,
+        "deficit_recall": 0.6666666666666666,
+        "true_critical_fraction": 0.0
+      }
+    },
+    {
+      "m": 50,
+      "k": 4,
+      "init": "trap",
+      "mode": "scaled_gate",
+      "food": 0.5000115633010864,
+      "occupied": 2.0416667461395264,
+      "D": 0.49965279301007587,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.8607060185185186,
+        "congestion_recall": 0.8607060185185186,
+        "deficit_recall": 0.0,
+        "true_critical_fraction": 0.0
+      },
+      "final_sign": {
+        "accuracy": 0.9330439814814815,
+        "congestion_recall": 0.9330208802735164,
+        "deficit_recall": 0.6666666666666666,
+        "true_critical_fraction": 0.0
+      }
+    },
+    {
+      "m": 50,
+      "k": 4,
+      "init": "trap",
+      "mode": "local_sign_gate",
+      "food": 0.5000115633010864,
+      "occupied": 2.0416667461395264,
+      "D": 0.49965279301007587,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.8607060185185186,
+        "congestion_recall": 0.8607060185185186,
+        "deficit_recall": 0.0,
+        "true_critical_fraction": 0.0
+      },
+      "final_sign": {
+        "accuracy": 0.9330439814814815,
+        "congestion_recall": 0.9330208802735164,
+        "deficit_recall": 0.6666666666666666,
+        "true_critical_fraction": 0.0
+      }
+    },
+    {
+      "m": 50,
+      "k": 4,
+      "init": "trap",
+      "mode": "oracle_sign_gate",
+      "food": 0.5000115633010864,
+      "occupied": 2.0416667461395264,
+      "D": 0.49965279301007587,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.8607060185185186,
+        "congestion_recall": 0.8607060185185186,
+        "deficit_recall": 0.0,
+        "true_critical_fraction": 0.0
+      },
+      "final_sign": {
+        "accuracy": 0.9330439814814815,
+        "congestion_recall": 0.9330208802735164,
+        "deficit_recall": 0.6666666666666666,
+        "true_critical_fraction": 0.0
+      }
+    },
+    {
+      "m": 80,
+      "k": 12,
+      "init": "random",
+      "mode": "original_gate",
+      "food": 0.6671528220176697,
+      "occupied": 8.277777989705404,
+      "D": 0.3291666309038798,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.9068865740740741,
+        "congestion_recall": 0.0,
+        "deficit_recall": 0.9068865740740741,
+        "true_critical_fraction": 0.0
+      },
+      "final_sign": {
+        "accuracy": 0.9714462702138759,
+        "congestion_recall": 0.9780559218038682,
+        "deficit_recall": 0.3394230769230769,
+        "true_critical_fraction": 0.015046296330789724
+      }
+    },
+    {
+      "m": 80,
+      "k": 12,
+      "init": "random",
+      "mode": "no_gate",
+      "food": 0.6671528220176697,
+      "occupied": 8.277777989705404,
+      "D": 0.3291666309038798,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.9068865740740741,
+        "congestion_recall": 0.0,
+        "deficit_recall": 0.9068865740740741,
+        "true_critical_fraction": 0.0
+      },
+      "final_sign": {
+        "accuracy": 0.9714462702138759,
+        "congestion_recall": 0.9780559218038682,
+        "deficit_recall": 0.3394230769230769,
+        "true_critical_fraction": 0.015046296330789724
+      }
+    },
+    {
+      "m": 80,
+      "k": 12,
+      "init": "random",
+      "mode": "scaled_gate",
+      "food": 0.6671528220176697,
+      "occupied": 8.277777989705404,
+      "D": 0.3291666309038798,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.9068865740740741,
+        "congestion_recall": 0.0,
+        "deficit_recall": 0.9068865740740741,
+        "true_critical_fraction": 0.0
+      },
+      "final_sign": {
+        "accuracy": 0.9714462702138759,
+        "congestion_recall": 0.9780559218038682,
+        "deficit_recall": 0.3394230769230769,
+        "true_critical_fraction": 0.015046296330789724
+      }
+    },
+    {
+      "m": 80,
+      "k": 12,
+      "init": "random",
+      "mode": "local_sign_gate",
+      "food": 0.6671528220176697,
+      "occupied": 8.277777989705404,
+      "D": 0.3291666309038798,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.9068865740740741,
+        "congestion_recall": 0.0,
+        "deficit_recall": 0.9068865740740741,
+        "true_critical_fraction": 0.0
+      },
+      "final_sign": {
+        "accuracy": 0.9714462702138759,
+        "congestion_recall": 0.9780559218038682,
+        "deficit_recall": 0.3394230769230769,
+        "true_critical_fraction": 0.015046296330789724
+      }
+    },
+    {
+      "m": 80,
+      "k": 12,
+      "init": "random",
+      "mode": "oracle_sign_gate",
+      "food": 0.6671528220176697,
+      "occupied": 8.277777989705404,
+      "D": 0.3291666309038798,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.9068865740740741,
+        "congestion_recall": 0.0,
+        "deficit_recall": 0.9068865740740741,
+        "true_critical_fraction": 0.0
+      },
+      "final_sign": {
+        "accuracy": 0.9714462702138759,
+        "congestion_recall": 0.9780559218038682,
+        "deficit_recall": 0.3394230769230769,
+        "true_critical_fraction": 0.015046296330789724
+      }
+    },
+    {
+      "m": 80,
+      "k": 12,
+      "init": "trap",
+      "mode": "original_gate",
+      "food": 0.5000405311584473,
+      "occupied": 6.048611323038737,
+      "D": 0.49959491689999896,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.7593171296296296,
+        "congestion_recall": 0.7593171296296296,
+        "deficit_recall": 0.0,
+        "true_critical_fraction": 0.0
+      },
+      "final_sign": {
+        "accuracy": 0.9373263888888891,
+        "congestion_recall": 0.9373010599537129,
+        "deficit_recall": 1.0,
+        "true_critical_fraction": 0.0
+      }
+    },
+    {
+      "m": 80,
+      "k": 12,
+      "init": "trap",
+      "mode": "no_gate",
+      "food": 0.5000405311584473,
+      "occupied": 6.048611323038737,
+      "D": 0.49959491689999896,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.7593171296296296,
+        "congestion_recall": 0.7593171296296296,
+        "deficit_recall": 0.0,
+        "true_critical_fraction": 0.0
+      },
+      "final_sign": {
+        "accuracy": 0.9373263888888891,
+        "congestion_recall": 0.9373010599537129,
+        "deficit_recall": 1.0,
+        "true_critical_fraction": 0.0
+      }
+    },
+    {
+      "m": 80,
+      "k": 12,
+      "init": "trap",
+      "mode": "scaled_gate",
+      "food": 0.5000405311584473,
+      "occupied": 6.048611323038737,
+      "D": 0.49959491689999896,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.7593171296296296,
+        "congestion_recall": 0.7593171296296296,
+        "deficit_recall": 0.0,
+        "true_critical_fraction": 0.0
+      },
+      "final_sign": {
+        "accuracy": 0.9373263888888891,
+        "congestion_recall": 0.9373010599537129,
+        "deficit_recall": 1.0,
+        "true_critical_fraction": 0.0
+      }
+    },
+    {
+      "m": 80,
+      "k": 12,
+      "init": "trap",
+      "mode": "local_sign_gate",
+      "food": 0.5000405311584473,
+      "occupied": 6.048611323038737,
+      "D": 0.49959491689999896,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.7593171296296296,
+        "congestion_recall": 0.7593171296296296,
+        "deficit_recall": 0.0,
+        "true_critical_fraction": 0.0
+      },
+      "final_sign": {
+        "accuracy": 0.9373263888888891,
+        "congestion_recall": 0.9373010599537129,
+        "deficit_recall": 1.0,
+        "true_critical_fraction": 0.0
+      }
+    },
+    {
+      "m": 80,
+      "k": 12,
+      "init": "trap",
+      "mode": "oracle_sign_gate",
+      "food": 0.5000405311584473,
+      "occupied": 6.048611323038737,
+      "D": 0.49959491689999896,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.7593171296296296,
+        "congestion_recall": 0.7593171296296296,
+        "deficit_recall": 0.0,
+        "true_critical_fraction": 0.0
+      },
+      "final_sign": {
+        "accuracy": 0.9373263888888891,
+        "congestion_recall": 0.9373010599537129,
+        "deficit_recall": 1.0,
+        "true_critical_fraction": 0.0
+      }
+    },
+    {
+      "m": 80,
+      "k": 30,
+      "init": "random",
+      "mode": "original_gate",
+      "food": 0.6738715569178263,
+      "occupied": 20.930556615193684,
+      "D": 0.3194444278875987,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.8862183584832422,
+        "congestion_recall": 0.25387464825652356,
+        "deficit_recall": 0.9360981099970238,
+        "true_critical_fraction": 0.12199074526627858
+      },
+      "final_sign": {
+        "accuracy": 0.8403371605399325,
+        "congestion_recall": 0.8470021425785258,
+        "deficit_recall": 0.4884002722940777,
+        "true_critical_fraction": 0.08287037412325542
+      }
+    },
+    {
+      "m": 80,
+      "k": 30,
+      "init": "random",
+      "mode": "no_gate",
+      "food": 0.6738715569178263,
+      "occupied": 20.930556615193684,
+      "D": 0.3194444278875987,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.8862183584832422,
+        "congestion_recall": 0.25387464825652356,
+        "deficit_recall": 0.9360981099970238,
+        "true_critical_fraction": 0.12199074526627858
+      },
+      "final_sign": {
+        "accuracy": 0.8403371605399325,
+        "congestion_recall": 0.8470021425785258,
+        "deficit_recall": 0.4884002722940777,
+        "true_critical_fraction": 0.08287037412325542
+      }
+    },
+    {
+      "m": 80,
+      "k": 30,
+      "init": "random",
+      "mode": "scaled_gate",
+      "food": 0.6738715569178263,
+      "occupied": 20.930556615193684,
+      "D": 0.3194444278875987,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.8862183584832422,
+        "congestion_recall": 0.25387464825652356,
+        "deficit_recall": 0.9360981099970238,
+        "true_critical_fraction": 0.12199074526627858
+      },
+      "final_sign": {
+        "accuracy": 0.8403371605399325,
+        "congestion_recall": 0.8470021425785258,
+        "deficit_recall": 0.4884002722940777,
+        "true_critical_fraction": 0.08287037412325542
+      }
+    },
+    {
+      "m": 80,
+      "k": 30,
+      "init": "random",
+      "mode": "local_sign_gate",
+      "food": 0.6738715569178263,
+      "occupied": 20.930556615193684,
+      "D": 0.3194444278875987,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.8862183584832422,
+        "congestion_recall": 0.25387464825652356,
+        "deficit_recall": 0.9360981099970238,
+        "true_critical_fraction": 0.12199074526627858
+      },
+      "final_sign": {
+        "accuracy": 0.8403371605399325,
+        "congestion_recall": 0.8470021425785258,
+        "deficit_recall": 0.4884002722940777,
+        "true_critical_fraction": 0.08287037412325542
+      }
+    },
+    {
+      "m": 80,
+      "k": 30,
+      "init": "random",
+      "mode": "oracle_sign_gate",
+      "food": 0.6738715569178263,
+      "occupied": 20.930556615193684,
+      "D": 0.3194444278875987,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.8862183584832422,
+        "congestion_recall": 0.25387464825652356,
+        "deficit_recall": 0.9360981099970238,
+        "true_critical_fraction": 0.12199074526627858
+      },
+      "final_sign": {
+        "accuracy": 0.8403371605399325,
+        "congestion_recall": 0.8470021425785258,
+        "deficit_recall": 0.4884002722940777,
+        "true_critical_fraction": 0.08287037412325542
+      }
+    },
+    {
+      "m": 80,
+      "k": 30,
+      "init": "trap",
+      "mode": "original_gate",
+      "food": 0.49908854564030963,
+      "occupied": 15.076388994852701,
+      "D": 0.5001736084620158,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.38576388888888885,
+        "congestion_recall": 0.38576388888888885,
+        "deficit_recall": 0.0,
+        "true_critical_fraction": 0.0
+      },
+      "final_sign": {
+        "accuracy": 0.8093647574685091,
+        "congestion_recall": 0.8092487203704865,
+        "deficit_recall": 0.8888888888888888,
+        "true_critical_fraction": 0.003703703870996833
+      }
+    },
+    {
+      "m": 80,
+      "k": 30,
+      "init": "trap",
+      "mode": "no_gate",
+      "food": 0.49908854564030963,
+      "occupied": 15.076388994852701,
+      "D": 0.5001736084620158,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.38576388888888885,
+        "congestion_recall": 0.38576388888888885,
+        "deficit_recall": 0.0,
+        "true_critical_fraction": 0.0
+      },
+      "final_sign": {
+        "accuracy": 0.8093647574685091,
+        "congestion_recall": 0.8092487203704865,
+        "deficit_recall": 0.8888888888888888,
+        "true_critical_fraction": 0.003703703870996833
+      }
+    },
+    {
+      "m": 80,
+      "k": 30,
+      "init": "trap",
+      "mode": "scaled_gate",
+      "food": 0.49908854564030963,
+      "occupied": 15.076388994852701,
+      "D": 0.5001736084620158,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.38576388888888885,
+        "congestion_recall": 0.38576388888888885,
+        "deficit_recall": 0.0,
+        "true_critical_fraction": 0.0
+      },
+      "final_sign": {
+        "accuracy": 0.8093647574685091,
+        "congestion_recall": 0.8092487203704865,
+        "deficit_recall": 0.8888888888888888,
+        "true_critical_fraction": 0.003703703870996833
+      }
+    },
+    {
+      "m": 80,
+      "k": 30,
+      "init": "trap",
+      "mode": "local_sign_gate",
+      "food": 0.49908854564030963,
+      "occupied": 15.076388994852701,
+      "D": 0.5001736084620158,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.38576388888888885,
+        "congestion_recall": 0.38576388888888885,
+        "deficit_recall": 0.0,
+        "true_critical_fraction": 0.0
+      },
+      "final_sign": {
+        "accuracy": 0.8093647574685091,
+        "congestion_recall": 0.8092487203704865,
+        "deficit_recall": 0.8888888888888888,
+        "true_critical_fraction": 0.003703703870996833
+      }
+    },
+    {
+      "m": 80,
+      "k": 30,
+      "init": "trap",
+      "mode": "oracle_sign_gate",
+      "food": 0.49908854564030963,
+      "occupied": 15.076388994852701,
+      "D": 0.5001736084620158,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.38576388888888885,
+        "congestion_recall": 0.38576388888888885,
+        "deficit_recall": 0.0,
+        "true_critical_fraction": 0.0
+      },
+      "final_sign": {
+        "accuracy": 0.8093647574685091,
+        "congestion_recall": 0.8092487203704865,
+        "deficit_recall": 0.8888888888888888,
+        "true_critical_fraction": 0.003703703870996833
+      }
+    },
+    {
+      "m": 80,
+      "k": 60,
+      "init": "random",
+      "mode": "original_gate",
+      "food": 0.7661747932434082,
+      "occupied": 53.21527862548828,
+      "D": 0.19357634584108988,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.4461876188889256,
+        "congestion_recall": 0.16146897916100036,
+        "deficit_recall": 1.0,
+        "true_critical_fraction": 0.3366898198922475
+      },
+      "final_sign": {
+        "accuracy": 0.5786920376175596,
+        "congestion_recall": 0.5131519791664427,
+        "deficit_recall": 1.0,
+        "true_critical_fraction": 0.4018518626689911
+      }
+    },
+    {
+      "m": 80,
+      "k": 60,
+      "init": "random",
+      "mode": "no_gate",
+      "food": 0.7554687658945719,
+      "occupied": 53.270835876464844,
+      "D": 0.2004050463438034,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.4461876188889256,
+        "congestion_recall": 0.16146897916100036,
+        "deficit_recall": 1.0,
+        "true_critical_fraction": 0.3366898198922475
+      },
+      "final_sign": {
+        "accuracy": 0.5909079887321386,
+        "congestion_recall": 0.5230216062227183,
+        "deficit_recall": 1.0,
+        "true_critical_fraction": 0.37986112634340924
+      }
+    },
+    {
+      "m": 80,
+      "k": 60,
+      "init": "random",
+      "mode": "scaled_gate",
+      "food": 0.7114294171333313,
+      "occupied": 62.3888905843099,
+      "D": 0.20185181001822153,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.4461876188889256,
+        "congestion_recall": 0.16146897916100036,
+        "deficit_recall": 1.0,
+        "true_critical_fraction": 0.3366898198922475
+      },
+      "final_sign": {
+        "accuracy": 0.4941510230471308,
+        "congestion_recall": 0.24860960126808207,
+        "deficit_recall": 1.0,
+        "true_critical_fraction": 0.3297453820705414
+      }
+    },
+    {
+      "m": 80,
+      "k": 60,
+      "init": "random",
+      "mode": "local_sign_gate",
+      "food": 0.7558449308077494,
+      "occupied": 53.27777989705404,
+      "D": 0.200115700562795,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.4461876188889256,
+        "congestion_recall": 0.16146897916100036,
+        "deficit_recall": 1.0,
+        "true_critical_fraction": 0.3366898198922475
+      },
+      "final_sign": {
+        "accuracy": 0.5904185416010644,
+        "congestion_recall": 0.5225525803485879,
+        "deficit_recall": 1.0,
+        "true_critical_fraction": 0.3803240756193797
+      }
+    },
+    {
+      "m": 80,
+      "k": 60,
+      "init": "random",
+      "mode": "oracle_sign_gate",
+      "food": 0.7661747932434082,
+      "occupied": 53.21527862548828,
+      "D": 0.19357634584108988,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.4461876188889256,
+        "congestion_recall": 0.16146897916100036,
+        "deficit_recall": 1.0,
+        "true_critical_fraction": 0.3366898198922475
+      },
+      "final_sign": {
+        "accuracy": 0.5786920376175596,
+        "congestion_recall": 0.5131519791664427,
+        "deficit_recall": 1.0,
+        "true_critical_fraction": 0.4018518626689911
+      }
+    },
+    {
+      "m": 80,
+      "k": 60,
+      "init": "trap",
+      "mode": "original_gate",
+      "food": 0.49945024649302167,
+      "occupied": 29.972222646077473,
+      "D": 0.5005208452542623,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.18315972222222224,
+        "congestion_recall": 0.18315972222222224,
+        "deficit_recall": 0.0,
+        "true_critical_fraction": 0.0
+      },
+      "final_sign": {
+        "accuracy": 0.4986529324597993,
+        "congestion_recall": 0.49862375203124415,
+        "deficit_recall": 0.3333333333333333,
+        "true_critical_fraction": 0.016666666915019352
+      }
+    },
+    {
+      "m": 80,
+      "k": 60,
+      "init": "trap",
+      "mode": "no_gate",
+      "food": 0.4993634323279063,
+      "occupied": 29.972222646077473,
+      "D": 0.5005787014961243,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.18315972222222224,
+        "congestion_recall": 0.18315972222222224,
+        "deficit_recall": 0.0,
+        "true_critical_fraction": 0.0
+      },
+      "final_sign": {
+        "accuracy": 0.4976505049351332,
+        "congestion_recall": 0.49759219543807237,
+        "deficit_recall": 0.3333333333333333,
+        "true_critical_fraction": 0.01678240733842055
+      }
+    },
+    {
+      "m": 80,
+      "k": 60,
+      "init": "trap",
+      "mode": "scaled_gate",
+      "food": 0.5,
+      "occupied": 30.0,
+      "D": 0.5,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.18315972222222224,
+        "congestion_recall": 0.18315972222222224,
+        "deficit_recall": 0.0,
+        "true_critical_fraction": 0.0
+      },
+      "final_sign": {
+        "accuracy": 0.18315972222222224,
+        "congestion_recall": 0.18315972222222224,
+        "deficit_recall": 0.0,
+        "true_critical_fraction": 0.0
+      }
+    },
+    {
+      "m": 80,
+      "k": 60,
+      "init": "trap",
+      "mode": "local_sign_gate",
+      "food": 0.4993634323279063,
+      "occupied": 29.972222646077473,
+      "D": 0.5005787014961243,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.18315972222222224,
+        "congestion_recall": 0.18315972222222224,
+        "deficit_recall": 0.0,
+        "true_critical_fraction": 0.0
+      },
+      "final_sign": {
+        "accuracy": 0.498710074554418,
+        "congestion_recall": 0.4986518067218781,
+        "deficit_recall": 0.3333333333333333,
+        "true_critical_fraction": 0.01655092587073644
+      }
+    },
+    {
+      "m": 80,
+      "k": 60,
+      "init": "trap",
+      "mode": "oracle_sign_gate",
+      "food": 0.49945024649302167,
+      "occupied": 29.972222646077473,
+      "D": 0.5005208452542623,
+      "exact": 0,
+      "worlds": 144,
+      "initial_sign": {
+        "accuracy": 0.18315972222222224,
+        "congestion_recall": 0.18315972222222224,
+        "deficit_recall": 0.0,
+        "true_critical_fraction": 0.0
+      },
+      "final_sign": {
+        "accuracy": 0.4986529324597993,
+        "congestion_recall": 0.49862375203124415,
+        "deficit_recall": 0.3333333333333333,
+        "true_critical_fraction": 0.016666666915019352
+      }
+    }
+  ]
+}
