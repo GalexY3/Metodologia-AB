@@ -1,0 +1,101 @@
+{
+  "args": {
+    "name": "v15_ops_rnn24_s3111",
+    "n": 120,
+    "train_pairs": "24:2,24:3,24:4,24:6,24:10,24:15,24:20,80:2,80:4,80:6,80:10,80:15,80:20,80:30,80:40,80:60",
+    "degree": 8,
+    "h": 24,
+    "no_recurrence": false,
+    "updates": 2400,
+    "batch": 16,
+    "horizon": 28,
+    "eval_every": 200,
+    "save_every": 200,
+    "lr": 0.006,
+    "entropy": 0.006,
+    "gamma": 0.97,
+    "seed": 3111,
+    "device": "cuda"
+  },
+  "pairs": [
+    [
+      24,
+      2
+    ],
+    [
+      24,
+      3
+    ],
+    [
+      24,
+      4
+    ],
+    [
+      24,
+      6
+    ],
+    [
+      24,
+      10
+    ],
+    [
+      24,
+      15
+    ],
+    [
+      24,
+      20
+    ],
+    [
+      80,
+      2
+    ],
+    [
+      80,
+      4
+    ],
+    [
+      80,
+      6
+    ],
+    [
+      80,
+      10
+    ],
+    [
+      80,
+      15
+    ],
+    [
+      80,
+      20
+    ],
+    [
+      80,
+      30
+    ],
+    [
+      80,
+      40
+    ],
+    [
+      80,
+      60
+    ]
+  ],
+  "policy": 9,
+  "independent_per_agent": true,
+  "personal_reward_only": true,
+  "no_privileged_global_information": true,
+  "operations": [
+    "stay",
+    "local_modal",
+    "local_minority",
+    "random_neighbor",
+    "random_profession",
+    "locally_absent",
+    "best_past",
+    "previous_role",
+    "neighbor_weighted"
+  ]
+}

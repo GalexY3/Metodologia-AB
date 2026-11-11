@@ -18,8 +18,10 @@ def simulate(actor,c,seed,mode='neural',greedy=False):
     init=e.jobs.detach().cpu().numpy()
     with torch.no_grad():
         for _ in range(c.horizon):
-            if mode=='neural':
-                target,_,_=actor.act(e,greedy=greedy)
+            if mode in ('neural','adaptive'):
+                # Fixed exploratory inference rule; no access to global state.
+                use_greedy=greedy or (mode=='adaptive' and c.k/c.m>=.50)
+                target,_,_=actor.act(e,greedy=use_greedy)
             elif mode=='random':
                 target=torch.randint(c.m,e.jobs.shape,device=c.device)
             elif mode=='frozen':
@@ -87,10 +89,10 @@ def main():
             if k>m:continue
             c=replace(cfg,m=m,k=k)
             conditions={}
-            for mode in ('neural','neural_greedy','random','imitate','random_hold'):
+            for mode in ('neural','neural_greedy','adaptive','random','imitate','random_hold'):
                 per_seed=[]
                 for seed in seeds:
-                    sd=simulate(actor if mode.startswith('neural') else None,c,seed,
+                    sd=simulate(actor if mode.startswith('neural') or mode=='adaptive' else None,c,seed,
                        mode='neural' if mode.startswith('neural') else mode,
                        greedy=(mode=='neural_greedy'))
                     per_seed.append(dict(seed=seed,**sd))
@@ -105,7 +107,7 @@ def main():
             baseline=conditions['random']['mean_food']
             neural=conditions['neural']['mean_food']
             result=dict(m=m,k=k,canonical=(c.n%k==0),
-                    trained=(m,k) in spec['pairs'],
+                    trained=any(int(mm)==m and int(kk)==k for mm,kk in spec['pairs']),
                     random_analytic=baseline_analytic(cfg.n,m,k),
                     advantage_over_random=neural-baseline,
                     conditions=conditions)
@@ -113,13 +115,14 @@ def main():
             print('RESULT',args.name,'M',m,'k',k,
                   'train',int(result['trained']),'learned',round(neural,4),
                   'greedy',round(conditions['neural_greedy']['mean_food'],4),
+                  'adaptive',round(conditions['adaptive']['mean_food'],4),
                   'random',round(baseline,4),'difference',round(neural-baseline,4),
                   'exact',conditions['neural']['exact'],'/',conditions['neural']['worlds'],
                   flush=True)
     outputfile=HERE/'evaluations'/(args.name+'_FROZEN.json')
     envlib.write_json(outputfile,dict(model=args.name,checkpoint=st['update'],
            seed_list=seeds,worlds_per_seed=args.worlds,horizon=args.steps,
-           procedures=('neural','neural_greedy','random','imitate','random_hold'),
+           procedures=('neural','neural_greedy','adaptive','random','imitate','random_hold'),
            interpretation='Only k|N is canonical optimum from exactly k evenly filled groups. Other k have noninteger target quotas.',
            results=output))
     print('EVALUATION_COMPLETE',args.name,len(output),'conditions',flush=True)
