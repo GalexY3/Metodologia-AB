@@ -15,9 +15,9 @@ def task(u,seed,mode,device,batch,horizon):
     # Balanced randomization; all rewards depend on local endowment, not
     # an evaluator-specified global distance to target.
     k=TRAIN_K[u%len(TRAIN_K)]
-    top=['ring','rewired'][u%2] if mode=='mixed' else 'ring'
-    degree=[8,12][(u//4)%2] if mode=='mixed' else 10
-    init=['monolith','random','half','balanced'][u%4]
+    top=['ring','rewired'][(u//len(TRAIN_K))%2] if mode=='mixed' else 'ring'
+    degree=[8,12][(u//(len(TRAIN_K)*8))%2] if mode=='mixed' else 10
+    init=['monolith','random','half','balanced'][(u//(len(TRAIN_K)*2))%4]
     return k,top,degree,init
 
 @torch.no_grad()
