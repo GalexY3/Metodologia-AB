@@ -27,6 +27,7 @@ class C:
     gamma:float=.99
     device:str='cuda'
     social:bool=True
+    warm:float=0.0  # exogenous prehistory, not taught policy
 
 def create(c,seed):
     graph=make_graph(c.n,c.degree,c.topology,seed,c.device)
@@ -34,13 +35,32 @@ def create(c,seed):
     gen.manual_seed(seed)
     shift=torch.randint(c.k,(c.batch,1),device=c.device,generator=gen)
     roles=(torch.arange(c.n,device=c.device)[None,:]%c.k+shift)%c.k
-    return dict(graph=graph,roles=roles,
+    w=dict(graph=graph,roles=roles,
       prev_gift=torch.zeros(c.batch,c.n,device=c.device),
       prev_recipient=torch.full((c.batch,c.n),-1,device=c.device,dtype=torch.long),
       incoming=torch.zeros(c.batch,c.n,c.degree,device=c.device),
       lastfood=torch.full((c.batch,c.n),.2,device=c.device),
       t=0,full=torch.zeros(c.batch,c.n,device=c.device),
       cover=torch.zeros(c.batch,c.n,device=c.device))
+    if c.warm>0:
+        assert 0<=c.warm<=1
+        prev=(torch.rand(c.batch,c.n,device=c.device,generator=gen)<c.warm).float()
+        slots=torch.randint(c.degree,(c.batch,c.n),device=c.device,generator=gen)
+        prevdest=graph[None,:,:].expand(c.batch,-1,-1).gather(2,slots[:,:,None]).squeeze(2)
+        past_received=((prevdest[:,graph]==torch.arange(c.n,device=c.device)[None,:,None])&
+                       (prev[:,graph]>.5)).float()
+        goods=(torch.nn.functional.one_hot(roles[:,graph],c.k).float()*
+               past_received[:,:,:,None]).sum(2)>0
+        own=torch.nn.functional.one_hot(roles,c.k).bool()
+        d=(goods&(~own)).sum(2).float()
+        full=(d>=c.k-1).float()
+        w['prev_gift']=prev
+        w['prev_recipient']=prevdest
+        w['incoming']=past_received
+        w['cover']=d/(c.k-1)
+        w['full']=full
+        w['lastfood']=.2+.55*w['cover']+.25*full-c.cost*prev
+    return w
 
 class PrivateGiftActor(nn.Module):
     def __init__(self,n=24,hidden=20,scale=8):
