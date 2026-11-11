@@ -75,6 +75,16 @@ class Checks(unittest.TestCase):
         b=base.World(replace(c,topology='torus'),112)
         self.assertTrue(torch.equal(a.jobs,b.jobs))
         self.assertTrue(torch.allclose(a.food,b.food))
+    def test_window_variance_separates_marked_null_from_constructed_control(self):
+        n=120;xy=coordinates(n)
+        rng=np.random.default_rng(41)
+        a=[mhu.reference_balanced(n,20,4,xy,int(rng.integers(1e9))) for _ in range(30)]
+        b=[mhu.reference_balanced(n,20,4,xy,int(rng.integers(1e9)),kind='low_spectral',swaps=1000) for _ in range(8)]
+        null=np.mean([mhu.window_variance_ratio(z,xy)['mean_ratio'] for z in a])
+        positive=np.mean([mhu.window_variance_ratio(z,xy)['mean_ratio'] for z in b])
+        self.assertGreater(null,.75)
+        self.assertLess(null,1.25)
+        self.assertLess(positive,null)
     def test_training_smoke(self):
         for t in ('torus','poisson_geo'):
             nw.TOPO_SEED=250

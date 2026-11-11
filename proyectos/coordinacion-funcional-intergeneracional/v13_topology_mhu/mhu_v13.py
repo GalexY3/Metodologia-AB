@@ -99,3 +99,41 @@ def calibration(n=120,m=10,k=4,seed=2201,reps=160):
     return dict(null=aggregation(random,xy),
                 constructed_positive_control=aggregation(ordered,xy),
                 caveat='Ordered control is constructed by optimizing the reported observable; not an empirical neural discovery.')
+
+
+def window_variance_ratio(jobs,xy,radii=(.16,.24,.32),grid_side=8,min_count=4):
+    """Count variance relative to exact hypergeometric marking null, using
+    circular windows on periodic 2-D domain at 64 translated centers.
+    Added as exploratory cross-check of the earlier low-q spectral metric;
+    finite windows do not establish an asymptotic scaling exponent.
+    """
+    labels=np.asarray(jobs,dtype=int)
+    xy=np.asarray(xy,dtype=float)
+    n=len(labels)
+    active,identity=np.unique(labels,return_inverse=True)
+    counts=np.bincount(identity)
+    chosen=np.where((counts>=min_count)&(n-counts>=min_count))[0]
+    if not len(chosen):return dict(mean_ratio=None,per_radius=[])
+    marks=(identity[:,None]==chosen[None,:]).astype(float)
+    jobsizes=counts[chosen].astype(float)
+    grid=(np.arange(grid_side)+.5)/grid_side
+    centers=np.array([(x,y) for x in grid for y in grid])
+    delta=xy[None,:,:]-centers[:,None,:]
+    delta-=np.round(delta)
+    r2=(delta*delta).sum(2)
+    items=[]
+    for radius in radii:
+        window=(r2<radius**2).astype(float)
+        K=window.sum(1)
+        valid=(K>0)&(K<n)
+        X=window[valid]@marks
+        k=K[valid,None]
+        expected=k*jobsizes[None,:]/n
+        variances=k*(jobsizes/n)[None,:]*(1-jobsizes/n)[None,:]*(n-k)/(n-1)
+        ratios=np.sum((X-expected)**2,axis=0)/np.maximum(np.sum(variances,axis=0),1e-12)
+        items.append(dict(radius=float(radius),
+            mean_ratio=float(ratios.mean()),
+            max_component_ratio=float(ratios.max()),
+            components=[float(v) for v in ratios]))
+    return dict(mean_ratio=float(np.mean([v['mean_ratio'] for v in items])),
+                n_resolved_components=len(chosen),per_radius=items)

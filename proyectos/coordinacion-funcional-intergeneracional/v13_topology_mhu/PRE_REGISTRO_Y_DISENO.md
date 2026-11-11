@@ -51,3 +51,7 @@ H4. Un soporte de puntos ligeramente perturbado desde una retícula puede facili
 ## Límites
 
 Las profesiones siguen siendo materialmente equivalentes; la MHU espacial de sus marcas es un observable emergente, NO parte de la recompensa. Una señal MHU del entorno incorporada por construcción sería un sesgo, no descubrimiento. La comparabilidad entre grafos geométricos y regulares requiere reportar sus diferencias de distribución de grado, no atribuir todo a "tipo de red". El estudio no prueba ausencia de una estrategia individual ganadora ni que haya cooperación comunicativa aprendida.
+
+## Extensión exploratoria posterior a los primeros resultados de la retícula toroidal
+
+Tras observar el primer piloto N=60, d=4, se añadió **una comprobación complementaria de varianza en ventanas circulares**. Se cuentan los trabajadores de cada profesión dentro de 64 ventanas trasladadas por el toro de radios 0,16, 0,24 y 0,32. El denominador es la varianza hipergeométrica exacta de barajar las etiquetas preservando la población de cada profesión y la ocupación espacial del soporte. Su esperanza de referencia es 1. Esta medida se añadió después de inspeccionar datos, por lo que su interpretación es exploratoria y no debe presentarse como confirmación preregistrada. La MHU estricta requiere tamaños crecientes y un límite termodinámico que nuestros experimentos pequeños no satisfacen.
