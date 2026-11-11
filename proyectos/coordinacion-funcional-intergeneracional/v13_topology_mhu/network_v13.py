@@ -191,7 +191,8 @@ def network_stats(n,degree,topology,seed):
 
 def run_cli():
     import argparse
-    pre=argparse.ArgumentParser(add_help=False)
+    # --n belongs to V12 and must NOT be parsed as an abbreviation of --network.
+    pre=argparse.ArgumentParser(add_help=False,allow_abbrev=False)
     pre.add_argument('--network',choices=TOPO_CHOICES,required=True)
     pre.add_argument('--graph-seed',type=int,default=None)
     selected,rest=pre.parse_known_args()
