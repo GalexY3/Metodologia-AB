@@ -28,6 +28,7 @@ class C:
     device:str='cuda'
     social:bool=True
     warm:float=0.0  # exogenous prehistory, not taught policy
+    memory_decay:float=0.0  # privately retained donor identity
 
 def create(c,seed):
     graph=make_graph(c.n,c.degree,c.topology,seed,c.device)
@@ -39,6 +40,7 @@ def create(c,seed):
       prev_gift=torch.zeros(c.batch,c.n,device=c.device),
       prev_recipient=torch.full((c.batch,c.n),-1,device=c.device,dtype=torch.long),
       incoming=torch.zeros(c.batch,c.n,c.degree,device=c.device),
+      trust=torch.zeros(c.batch,c.n,c.degree,device=c.device),
       lastfood=torch.full((c.batch,c.n),.2,device=c.device),
       t=0,full=torch.zeros(c.batch,c.n,device=c.device),
       cover=torch.zeros(c.batch,c.n,device=c.device))
@@ -57,6 +59,7 @@ def create(c,seed):
         w['prev_gift']=prev
         w['prev_recipient']=prevdest
         w['incoming']=past_received
+        w['trust']=past_received.clone()
         w['cover']=d/(c.k-1)
         w['full']=full
         w['lastfood']=.2+.55*w['cover']+.25*full-c.cost*prev
@@ -78,7 +81,7 @@ class PrivateGiftActor(nn.Module):
         graph=w['graph'];b,n=w['roles'].shape;deg=c.degree
         neighbors=w['roles'][:,graph]
         complementary=(neighbors!=w['roles'][:,:,None]).float()
-        prior_help=w['incoming']
+        prior_help=w['trust']
         prior_offer=w['prev_gift'][:,graph]
         prior_target=(w['prev_recipient'][:,:,None]==graph[None,:,:]).float()
         if mode=='no_social' or not c.social:
@@ -133,6 +136,7 @@ def step(c,w,dest,gift):
     full=(distinct>=c.k-1).float()
     food=.20+.55*cover+.25*full-c.cost*gift
     w['incoming']=incoming
+    w['trust']=torch.maximum(incoming,c.memory_decay*w['trust'])
     w['prev_gift']=gift
     w['prev_recipient']=dest
     w['lastfood']=food

@@ -1,0 +1,4292 @@
+{
+ "model": "v20_SMOOTH_s4111",
+ "checkpoint": 600,
+ "steps": 48,
+ "seeds": [
+  970001,
+  970007,
+  970009,
+  970021,
+  970031,
+  970037
+ ],
+ "conditions": 42,
+ "worlds": 6048,
+ "scenarios": [
+  {
+   "model": "v20_SMOOTH_s4111",
+   "update": 600,
+   "k": 2,
+   "topology": "ring",
+   "degree": 2,
+   "mode": "normal",
+   "worlds": 144,
+   "food": 0.3696180582046509,
+   "gift": 0.29369213183720905,
+   "coverage": 0.2560763905445735,
+   "full": 0.2560763905445735,
+   "conditional_gift": 0.6501228072257093,
+   "by_seed": [
+    {
+     "food": 0.3675694465637207,
+     "gift": 0.2934027910232544,
+     "coverage": 0.253472238779068,
+     "full": 0.253472238779068,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.2989366340140502,
+     "gift_if_previously_received": 0.6502971978488536
+    },
+    {
+     "food": 0.37236112356185913,
+     "gift": 0.2881944477558136,
+     "coverage": 0.2586805522441864,
+     "full": 0.2586805522441864,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.30269820988178253,
+     "gift_if_previously_received": 0.6486524622548328
+    },
+    {
+     "food": 0.36416664719581604,
+     "gift": 0.2986111044883728,
+     "coverage": 0.25,
+     "full": 0.25,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.303602434694767,
+     "gift_if_previously_received": 0.6454194654852079
+    },
+    {
+     "food": 0.37763890624046326,
+     "gift": 0.3020833432674408,
+     "coverage": 0.2673611044883728,
+     "full": 0.2673611044883728,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.30226418065528077,
+     "gift_if_previously_received": 0.6526390870185449
+    },
+    {
+     "food": 0.371319442987442,
+     "gift": 0.296875,
+     "coverage": 0.2586805522441864,
+     "full": 0.2586805522441864,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.3064959521094958,
+     "gift_if_previously_received": 0.6585264326349383
+    },
+    {
+     "food": 0.3646527826786041,
+     "gift": 0.2829861044883728,
+     "coverage": 0.2482638955116272,
+     "full": 0.2482638955116272,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.30085359141230583,
+     "gift_if_previously_received": 0.6452021981118783
+    }
+   ]
+  },
+  {
+   "model": "v20_SMOOTH_s4111",
+   "update": 600,
+   "k": 2,
+   "topology": "ring",
+   "degree": 2,
+   "mode": "scramble",
+   "worlds": 144,
+   "food": 0.3567129671573639,
+   "gift": 0.27199074625968933,
+   "coverage": 0.23668981591860452,
+   "full": 0.23668981591860452,
+   "conditional_gift": 0.5244389932735384,
+   "by_seed": [
+    {
+     "food": 0.347638875246048,
+     "gift": 0.2743055522441864,
+     "coverage": 0.2256944477558136,
+     "full": 0.2256944477558136,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.28660301429529983,
+     "gift_if_previously_received": 0.5225796930342385
+    },
+    {
+     "food": 0.3680555522441864,
+     "gift": 0.2777777910232544,
+     "coverage": 0.2517361044883728,
+     "full": 0.2517361044883728,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.28497540826598805,
+     "gift_if_previously_received": 0.525231719876416
+    },
+    {
+     "food": 0.36194443702697754,
+     "gift": 0.2708333432674408,
+     "coverage": 0.2430555522441864,
+     "full": 0.2430555522441864,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.28953269869089127,
+     "gift_if_previously_received": 0.5308553386911596
+    },
+    {
+     "food": 0.35055556893348694,
+     "gift": 0.25,
+     "coverage": 0.2256944477558136,
+     "full": 0.2256944477558136,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.28924334794282913,
+     "gift_if_previously_received": 0.51440209485016
+    },
+    {
+     "food": 0.35930556058883667,
+     "gift": 0.28125,
+     "coverage": 0.2413194477558136,
+     "full": 0.2413194477558136,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.2890263336400191,
+     "gift_if_previously_received": 0.5139009556907037
+    },
+    {
+     "food": 0.3527778089046478,
+     "gift": 0.2777777910232544,
+     "coverage": 0.2326388955116272,
+     "full": 0.2326388955116272,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.2916666691501935,
+     "gift_if_previously_received": 0.5396641574985525
+    }
+   ]
+  },
+  {
+   "model": "v20_SMOOTH_s4111",
+   "update": 600,
+   "k": 2,
+   "topology": "ring",
+   "degree": 2,
+   "mode": "no_social",
+   "worlds": 144,
+   "food": 0.3538541744152705,
+   "gift": 0.2630208333333333,
+   "coverage": 0.23177083333333334,
+   "full": 0.23177083333333334,
+   "conditional_gift": 0.48360235777366384,
+   "by_seed": [
+    {
+     "food": 0.35548609495162964,
+     "gift": 0.2552083432674408,
+     "coverage": 0.2326388955116272,
+     "full": 0.2326388955116272,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.2706163243080179,
+     "gift_if_previously_received": 0.4865735767991407
+    },
+    {
+     "food": 0.3540972173213959,
+     "gift": 0.2552083432674408,
+     "coverage": 0.2309027761220932,
+     "full": 0.2309027761220932,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.2716652251159151,
+     "gift_if_previously_received": 0.4767513000917712
+    },
+    {
+     "food": 0.35458335280418396,
+     "gift": 0.2743055522441864,
+     "coverage": 0.234375,
+     "full": 0.234375,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.27318431933720905,
+     "gift_if_previously_received": 0.47758434755815743
+    },
+    {
+     "food": 0.3629166781902313,
+     "gift": 0.2743055522441864,
+     "coverage": 0.2447916716337204,
+     "full": 0.2447916716337204,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.27220775714764994,
+     "gift_if_previously_received": 0.48413793103448277
+    },
+    {
+     "food": 0.34791669249534607,
+     "gift": 0.2604166567325592,
+     "coverage": 0.2239583283662796,
+     "full": 0.2239583283662796,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.27553530503064394,
+     "gift_if_previously_received": 0.4964082609997007
+    },
+    {
+     "food": 0.34812501072883606,
+     "gift": 0.2586805522441864,
+     "coverage": 0.2239583283662796,
+     "full": 0.2239583283662796,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.2713035320242246,
+     "gift_if_previously_received": 0.4801587301587302
+    }
+   ]
+  },
+  {
+   "model": "v20_SMOOTH_s4111",
+   "update": 600,
+   "k": 2,
+   "topology": "ring",
+   "degree": 2,
+   "mode": "always",
+   "worlds": 144,
+   "food": 0.6790740390618643,
+   "gift": 1.0,
+   "coverage": 0.748842587073644,
+   "full": 0.748842587073644,
+   "conditional_gift": 1.0,
+   "by_seed": [
+    {
+     "food": 0.6813888549804688,
+     "gift": 1.0,
+     "coverage": 0.7517361044883728,
+     "full": 0.7517361044883728,
+     "worlds": 24,
+     "mean_gift_trajectory": 1.0,
+     "gift_if_previously_received": 1.0
+    },
+    {
+     "food": 0.6813888549804688,
+     "gift": 1.0,
+     "coverage": 0.7517361044883728,
+     "full": 0.7517361044883728,
+     "worlds": 24,
+     "mean_gift_trajectory": 1.0,
+     "gift_if_previously_received": 1.0
+    },
+    {
+     "food": 0.6702777147293091,
+     "gift": 1.0,
+     "coverage": 0.7378472089767456,
+     "full": 0.7378472089767456,
+     "worlds": 24,
+     "mean_gift_trajectory": 1.0,
+     "gift_if_previously_received": 1.0
+    },
+    {
+     "food": 0.6897221803665161,
+     "gift": 1.0,
+     "coverage": 0.7621527910232544,
+     "full": 0.7621527910232544,
+     "worlds": 24,
+     "mean_gift_trajectory": 1.0,
+     "gift_if_previously_received": 1.0
+    },
+    {
+     "food": 0.6688888669013977,
+     "gift": 1.0,
+     "coverage": 0.7361111044883728,
+     "full": 0.7361111044883728,
+     "worlds": 24,
+     "mean_gift_trajectory": 1.0,
+     "gift_if_previously_received": 1.0
+    },
+    {
+     "food": 0.6827777624130249,
+     "gift": 1.0,
+     "coverage": 0.7534722089767456,
+     "full": 0.7534722089767456,
+     "worlds": 24,
+     "mean_gift_trajectory": 1.0,
+     "gift_if_previously_received": 1.0
+    }
+   ]
+  },
+  {
+   "model": "v20_SMOOTH_s4111",
+   "update": 600,
+   "k": 2,
+   "topology": "ring",
+   "degree": 2,
+   "mode": "random",
+   "worlds": 144,
+   "food": 0.4883449027935664,
+   "gift": 0.49450231591860455,
+   "coverage": 0.43460647761821747,
+   "full": 0.43460647761821747,
+   "conditional_gift": 0.4974918840841425,
+   "by_seed": [
+    {
+     "food": 0.4907638728618622,
+     "gift": 0.5052083134651184,
+     "coverage": 0.4392361044883728,
+     "full": 0.4392361044883728,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.5006872154772282,
+     "gift_if_previously_received": 0.5015560602237362
+    },
+    {
+     "food": 0.4891666769981384,
+     "gift": 0.506944477558136,
+     "coverage": 0.4375,
+     "full": 0.4375,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.5016276103754839,
+     "gift_if_previously_received": 0.49391421136573493
+    },
+    {
+     "food": 0.47861114144325256,
+     "gift": 0.4791666567325592,
+     "coverage": 0.4201388955116272,
+     "full": 0.4201388955116272,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.49605758612354595,
+     "gift_if_previously_received": 0.4949835595649608
+    },
+    {
+     "food": 0.49715274572372437,
+     "gift": 0.4982638955116272,
+     "coverage": 0.4461805522441864,
+     "full": 0.4461805522441864,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.5029296924670538,
+     "gift_if_previously_received": 0.49794376835921106
+    },
+    {
+     "food": 0.48645836114883423,
+     "gift": 0.4947916567325592,
+     "coverage": 0.4322916567325592,
+     "full": 0.4322916567325592,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.49732349688808125,
+     "gift_if_previously_received": 0.49621437686091024
+    },
+    {
+     "food": 0.48791661858558655,
+     "gift": 0.4826388955116272,
+     "coverage": 0.4322916567325592,
+     "full": 0.4322916567325592,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.49793837157388526,
+     "gift_if_previously_received": 0.500339328130302
+    }
+   ]
+  },
+  {
+   "model": "v20_SMOOTH_s4111",
+   "update": 600,
+   "k": 2,
+   "topology": "ring",
+   "degree": 2,
+   "mode": "never",
+   "worlds": 144,
+   "food": 0.20000000298023224,
+   "gift": 0.0,
+   "coverage": 0.0,
+   "full": 0.0,
+   "conditional_gift": 0.0,
+   "by_seed": [
+    {
+     "food": 0.20000000298023224,
+     "gift": 0.0,
+     "coverage": 0.0,
+     "full": 0.0,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.0,
+     "gift_if_previously_received": null
+    },
+    {
+     "food": 0.20000000298023224,
+     "gift": 0.0,
+     "coverage": 0.0,
+     "full": 0.0,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.0,
+     "gift_if_previously_received": null
+    },
+    {
+     "food": 0.20000000298023224,
+     "gift": 0.0,
+     "coverage": 0.0,
+     "full": 0.0,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.0,
+     "gift_if_previously_received": null
+    },
+    {
+     "food": 0.20000000298023224,
+     "gift": 0.0,
+     "coverage": 0.0,
+     "full": 0.0,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.0,
+     "gift_if_previously_received": null
+    },
+    {
+     "food": 0.20000000298023224,
+     "gift": 0.0,
+     "coverage": 0.0,
+     "full": 0.0,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.0,
+     "gift_if_previously_received": null
+    },
+    {
+     "food": 0.20000000298023224,
+     "gift": 0.0,
+     "coverage": 0.0,
+     "full": 0.0,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.0,
+     "gift_if_previously_received": null
+    }
+   ]
+  },
+  {
+   "model": "v20_SMOOTH_s4111",
+   "update": 600,
+   "k": 2,
+   "topology": "ring",
+   "degree": 2,
+   "mode": "titfortat",
+   "worlds": 144,
+   "food": 0.8343286712964376,
+   "gift": 0.9716435273488363,
+   "coverage": 0.938657412926356,
+   "full": 0.938657412926356,
+   "conditional_gift": 1.0,
+   "by_seed": [
+    {
+     "food": 0.8299999237060547,
+     "gift": 0.9652777910232544,
+     "coverage": 0.9322916865348816,
+     "full": 0.9322916865348816,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.9303747129937013,
+     "gift_if_previously_received": 1.0
+    },
+    {
+     "food": 0.8368749618530273,
+     "gift": 0.9774305820465088,
+     "coverage": 0.9427083134651184,
+     "full": 0.9427083134651184,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.9339554483691851,
+     "gift_if_previously_received": 1.0
+    },
+    {
+     "food": 0.8341666460037231,
+     "gift": 0.9652777910232544,
+     "coverage": 0.9375,
+     "full": 0.9375,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.931170430034399,
+     "gift_if_previously_received": 1.0
+    },
+    {
+     "food": 0.8297916054725647,
+     "gift": 0.9670138955116272,
+     "coverage": 0.9322916865348816,
+     "full": 0.9322916865348816,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.9293619884798924,
+     "gift_if_previously_received": 1.0
+    },
+    {
+     "food": 0.8388194441795349,
+     "gift": 0.984375,
+     "coverage": 0.9461805820465088,
+     "full": 0.9461805820465088,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.9316768000523249,
+     "gift_if_previously_received": 1.0
+    },
+    {
+     "food": 0.8363194465637207,
+     "gift": 0.9704861044883728,
+     "coverage": 0.9409722089767456,
+     "full": 0.9409722089767456,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.9284215948234001,
+     "gift_if_previously_received": 1.0
+    }
+   ]
+  },
+  {
+   "model": "v20_SMOOTH_s4111",
+   "update": 600,
+   "k": 2,
+   "topology": "rewired",
+   "degree": 2,
+   "mode": "normal",
+   "worlds": 144,
+   "food": 0.2669328774015109,
+   "gift": 0.2948495348294576,
+   "coverage": 0.12789351989825568,
+   "full": 0.12789351989825568,
+   "conditional_gift": 0.40453206101319483,
+   "by_seed": [
+    {
+     "food": 0.30812501907348633,
+     "gift": 0.3142361044883728,
+     "coverage": 0.1822916716337204,
+     "full": 0.1822916716337204,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.32949942412475747,
+     "gift_if_previously_received": 0.43294087535193243
+    },
+    {
+     "food": 0.27243056893348694,
+     "gift": 0.2760416567325592,
+     "coverage": 0.1319444477558136,
+     "full": 0.1319444477558136,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.29673032586773235,
+     "gift_if_previously_received": 0.31015971010602605
+    },
+    {
+     "food": 0.304583340883255,
+     "gift": 0.3090277910232544,
+     "coverage": 0.1770833283662796,
+     "full": 0.1770833283662796,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.31542969308793545,
+     "gift_if_previously_received": 0.43344751651578173
+    },
+    {
+     "food": 0.22131943702697754,
+     "gift": 0.296875,
+     "coverage": 0.071180559694767,
+     "full": 0.071180559694767,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.31340422729651135,
+     "gift_if_previously_received": 0.36239165933927897
+    },
+    {
+     "food": 0.2802777886390686,
+     "gift": 0.2916666567325592,
+     "coverage": 0.1440972238779068,
+     "full": 0.1440972238779068,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.3084852459530036,
+     "gift_if_previously_received": 0.4661101420383753
+    },
+    {
+     "food": 0.21486110985279083,
+     "gift": 0.28125,
+     "coverage": 0.0607638880610466,
+     "full": 0.0607638880610466,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.30237268780668575,
+     "gift_if_previously_received": 0.4221424627277747
+    }
+   ]
+  },
+  {
+   "model": "v20_SMOOTH_s4111",
+   "update": 600,
+   "k": 2,
+   "topology": "rewired",
+   "degree": 2,
+   "mode": "scramble",
+   "worlds": 144,
+   "food": 0.2637615775068601,
+   "gift": 0.28269676864147186,
+   "coverage": 0.12210648444791634,
+   "full": 0.12210648444791634,
+   "conditional_gift": 0.3213310331700322,
+   "by_seed": [
+    {
+     "food": 0.29729166626930237,
+     "gift": 0.300347238779068,
+     "coverage": 0.1666666716337204,
+     "full": 0.1666666716337204,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.31539352238178253,
+     "gift_if_previously_received": 0.35057024364955935
+    },
+    {
+     "food": 0.2860416769981384,
+     "gift": 0.2552083432674408,
+     "coverage": 0.1458333283662796,
+     "full": 0.1458333283662796,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.30157697076598805,
+     "gift_if_previously_received": 0.24819055138834056
+    },
+    {
+     "food": 0.2852083444595337,
+     "gift": 0.296875,
+     "coverage": 0.1510416716337204,
+     "full": 0.1510416716337204,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.31282552393774193,
+     "gift_if_previously_received": 0.3092875318066158
+    },
+    {
+     "food": 0.22166666388511658,
+     "gift": 0.2708333432674408,
+     "coverage": 0.0677083358168602,
+     "full": 0.0677083358168602,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.3212890674670537,
+     "gift_if_previously_received": 0.29580793631048635
+    },
+    {
+     "food": 0.2824305593967438,
+     "gift": 0.2621527910232544,
+     "coverage": 0.142361119389534,
+     "full": 0.142361119389534,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.3066767988105615,
+     "gift_if_previously_received": 0.36280181086519114
+    },
+    {
+     "food": 0.20993055403232574,
+     "gift": 0.3107638955116272,
+     "coverage": 0.0590277798473835,
+     "full": 0.0590277798473835,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.3097873292863369,
+     "gift_if_previously_received": 0.361328125
+    }
+   ]
+  },
+  {
+   "model": "v20_SMOOTH_s4111",
+   "update": 600,
+   "k": 2,
+   "topology": "rewired",
+   "degree": 2,
+   "mode": "no_social",
+   "worlds": 144,
+   "food": 0.26652778188387555,
+   "gift": 0.27314814925193787,
+   "coverage": 0.1241319440305233,
+   "full": 0.1241319440305233,
+   "conditional_gift": 0.29634832017877893,
+   "by_seed": [
+    {
+     "food": 0.30298611521720886,
+     "gift": 0.2760416567325592,
+     "coverage": 0.1701388955116272,
+     "full": 0.1701388955116272,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.2994791679084301,
+     "gift_if_previously_received": 0.3160097192224622
+    },
+    {
+     "food": 0.27888891100883484,
+     "gift": 0.2569444477558136,
+     "coverage": 0.1371527761220932,
+     "full": 0.1371527761220932,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.28327546392877895,
+     "gift_if_previously_received": 0.22827605476390053
+    },
+    {
+     "food": 0.29499998688697815,
+     "gift": 0.284722238779068,
+     "coverage": 0.1614583283662796,
+     "full": 0.1614583283662796,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.2946325285981099,
+     "gift_if_previously_received": 0.30572125813449025
+    },
+    {
+     "food": 0.22736109793186188,
+     "gift": 0.28125,
+     "coverage": 0.0763888880610466,
+     "full": 0.0763888880610466,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.29814091697335243,
+     "gift_if_previously_received": 0.25538749832686386
+    },
+    {
+     "food": 0.27763891220092773,
+     "gift": 0.2673611044883728,
+     "coverage": 0.1371527761220932,
+     "full": 0.1371527761220932,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.2913411470750968,
+     "gift_if_previously_received": 0.32692562640859074
+    },
+    {
+     "food": 0.2172916680574417,
+     "gift": 0.2725694477558136,
+     "coverage": 0.0625,
+     "full": 0.0625,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.2850839172800382,
+     "gift_if_previously_received": 0.3457697642163662
+    }
+   ]
+  },
+  {
+   "model": "v20_SMOOTH_s4111",
+   "update": 600,
+   "k": 2,
+   "topology": "rewired",
+   "degree": 2,
+   "mode": "always",
+   "worlds": 144,
+   "food": 0.4207407385110855,
+   "gift": 1.0,
+   "coverage": 0.42592592537403107,
+   "full": 0.42592592537403107,
+   "conditional_gift": 1.0,
+   "by_seed": [
+    {
+     "food": 0.4244444668292999,
+     "gift": 1.0,
+     "coverage": 0.4305555522441864,
+     "full": 0.4305555522441864,
+     "worlds": 24,
+     "mean_gift_trajectory": 1.0,
+     "gift_if_previously_received": 1.0
+    },
+    {
+     "food": 0.47305557131767273,
+     "gift": 1.0,
+     "coverage": 0.4913194477558136,
+     "full": 0.4913194477558136,
+     "worlds": 24,
+     "mean_gift_trajectory": 1.0,
+     "gift_if_previously_received": 1.0
+    },
+    {
+     "food": 0.4633333384990692,
+     "gift": 1.0,
+     "coverage": 0.4791666567325592,
+     "full": 0.4791666567325592,
+     "worlds": 24,
+     "mean_gift_trajectory": 1.0,
+     "gift_if_previously_received": 1.0
+    },
+    {
+     "food": 0.35083332657814026,
+     "gift": 1.0,
+     "coverage": 0.3385416567325592,
+     "full": 0.3385416567325592,
+     "worlds": 24,
+     "mean_gift_trajectory": 1.0,
+     "gift_if_previously_received": 1.0
+    },
+    {
+     "food": 0.44111108779907227,
+     "gift": 1.0,
+     "coverage": 0.4513888955116272,
+     "full": 0.4513888955116272,
+     "worlds": 24,
+     "mean_gift_trajectory": 1.0,
+     "gift_if_previously_received": 1.0
+    },
+    {
+     "food": 0.37166664004325867,
+     "gift": 1.0,
+     "coverage": 0.3645833432674408,
+     "full": 0.3645833432674408,
+     "worlds": 24,
+     "mean_gift_trajectory": 1.0,
+     "gift_if_previously_received": 1.0
+    }
+   ]
+  },
+  {
+   "model": "v20_SMOOTH_s4111",
+   "update": 600,
+   "k": 2,
+   "topology": "rewired",
+   "degree": 2,
+   "mode": "random",
+   "worlds": 144,
+   "food": 0.3110301047563553,
+   "gift": 0.49450231591860455,
+   "coverage": 0.21296296268701553,
+   "full": 0.21296296268701553,
+   "conditional_gift": 0.49758538254107837,
+   "by_seed": [
+    {
+     "food": 0.3157638907432556,
+     "gift": 0.5052083134651184,
+     "coverage": 0.220486119389534,
+     "full": 0.220486119389534,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.5006872154772282,
+     "gift_if_previously_received": 0.4999159663865546
+    },
+    {
+     "food": 0.36000004410743713,
+     "gift": 0.506944477558136,
+     "coverage": 0.2760416567325592,
+     "full": 0.2760416567325592,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.5016276103754839,
+     "gift_if_previously_received": 0.5001261246111158
+    },
+    {
+     "food": 0.33694446086883545,
+     "gift": 0.4791666567325592,
+     "coverage": 0.2430555522441864,
+     "full": 0.2430555522441864,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.49605758612354595,
+     "gift_if_previously_received": 0.49307855626326963
+    },
+    {
+     "food": 0.24715280532836914,
+     "gift": 0.4982638955116272,
+     "coverage": 0.1336805522441864,
+     "full": 0.1336805522441864,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.5029296924670538,
+     "gift_if_previously_received": 0.4992856542566602
+    },
+    {
+     "food": 0.3184027671813965,
+     "gift": 0.4947916567325592,
+     "coverage": 0.2222222238779068,
+     "full": 0.2222222238779068,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.49732349688808125,
+     "gift_if_previously_received": 0.4961890243902439
+    },
+    {
+     "food": 0.2879166603088379,
+     "gift": 0.4826388955116272,
+     "coverage": 0.1822916716337204,
+     "full": 0.1822916716337204,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.49793837157388526,
+     "gift_if_previously_received": 0.49691696933862656
+    }
+   ]
+  },
+  {
+   "model": "v20_SMOOTH_s4111",
+   "update": 600,
+   "k": 2,
+   "topology": "rewired",
+   "degree": 2,
+   "mode": "never",
+   "worlds": 144,
+   "food": 0.20000000298023224,
+   "gift": 0.0,
+   "coverage": 0.0,
+   "full": 0.0,
+   "conditional_gift": 0.0,
+   "by_seed": [
+    {
+     "food": 0.20000000298023224,
+     "gift": 0.0,
+     "coverage": 0.0,
+     "full": 0.0,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.0,
+     "gift_if_previously_received": null
+    },
+    {
+     "food": 0.20000000298023224,
+     "gift": 0.0,
+     "coverage": 0.0,
+     "full": 0.0,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.0,
+     "gift_if_previously_received": null
+    },
+    {
+     "food": 0.20000000298023224,
+     "gift": 0.0,
+     "coverage": 0.0,
+     "full": 0.0,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.0,
+     "gift_if_previously_received": null
+    },
+    {
+     "food": 0.20000000298023224,
+     "gift": 0.0,
+     "coverage": 0.0,
+     "full": 0.0,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.0,
+     "gift_if_previously_received": null
+    },
+    {
+     "food": 0.20000000298023224,
+     "gift": 0.0,
+     "coverage": 0.0,
+     "full": 0.0,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.0,
+     "gift_if_previously_received": null
+    },
+    {
+     "food": 0.20000000298023224,
+     "gift": 0.0,
+     "coverage": 0.0,
+     "full": 0.0,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.0,
+     "gift_if_previously_received": null
+    }
+   ]
+  },
+  {
+   "model": "v20_SMOOTH_s4111",
+   "update": 600,
+   "k": 2,
+   "topology": "rewired",
+   "degree": 2,
+   "mode": "titfortat",
+   "worlds": 144,
+   "food": 0.4368055562178294,
+   "gift": 0.9375,
+   "coverage": 0.4366319527228673,
+   "full": 0.4366319527228673,
+   "conditional_gift": 1.0,
+   "by_seed": [
+    {
+     "food": 0.3986111283302307,
+     "gift": 0.9375,
+     "coverage": 0.3888888955116272,
+     "full": 0.3888888955116272,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.917751744389534,
+     "gift_if_previously_received": 1.0
+    },
+    {
+     "food": 0.5209027528762817,
+     "gift": 0.9253472089767456,
+     "coverage": 0.5399305820465088,
+     "full": 0.5399305820465088,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.9065031881133715,
+     "gift_if_previously_received": 1.0
+    },
+    {
+     "food": 0.5393750071525574,
+     "gift": 0.921875,
+     "coverage": 0.5625,
+     "full": 0.5625,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.918547456463178,
+     "gift_if_previously_received": 1.0
+    },
+    {
+     "food": 0.3506944477558136,
+     "gift": 0.9548611044883728,
+     "coverage": 0.331597238779068,
+     "full": 0.331597238779068,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.9202112350612879,
+     "gift_if_previously_received": 1.0
+    },
+    {
+     "food": 0.4551388919353485,
+     "gift": 0.9409722089767456,
+     "coverage": 0.4600694477558136,
+     "full": 0.4600694477558136,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.9185112901031971,
+     "gift_if_previously_received": 1.0
+    },
+    {
+     "food": 0.3561111092567444,
+     "gift": 0.944444477558136,
+     "coverage": 0.3368055522441864,
+     "full": 0.3368055522441864,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.9146773796528578,
+     "gift_if_previously_received": 1.0
+    }
+   ]
+  },
+  {
+   "model": "v20_SMOOTH_s4111",
+   "update": 600,
+   "k": 2,
+   "topology": "ring",
+   "degree": 4,
+   "mode": "normal",
+   "worlds": 144,
+   "food": 0.2763773153225581,
+   "gift": 0.3029513905445735,
+   "coverage": 0.14091435571511587,
+   "full": 0.14091435571511587,
+   "conditional_gift": 0.6181041191953897,
+   "by_seed": [
+    {
+     "food": 0.26993057131767273,
+     "gift": 0.296875,
+     "coverage": 0.1319444477558136,
+     "full": 0.1319444477558136,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.3181785326451063,
+     "gift_if_previously_received": 0.6198210598761184
+    },
+    {
+     "food": 0.27868056297302246,
+     "gift": 0.2934027910232544,
+     "coverage": 0.142361119389534,
+     "full": 0.142361119389534,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.3189742515484492,
+     "gift_if_previously_received": 0.608363434287302
+    },
+    {
+     "food": 0.2688888907432556,
+     "gift": 0.3055555522441864,
+     "coverage": 0.1319444477558136,
+     "full": 0.1319444477558136,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.32284433332582313,
+     "gift_if_previously_received": 0.6236207601144258
+    },
+    {
+     "food": 0.28437498211860657,
+     "gift": 0.3038194477558136,
+     "coverage": 0.1510416716337204,
+     "full": 0.1510416716337204,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.3206018526107073,
+     "gift_if_previously_received": 0.6219630709426628
+    },
+    {
+     "food": 0.2777777910232544,
+     "gift": 0.3125,
+     "coverage": 0.1440972238779068,
+     "full": 0.1440972238779068,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.3231698504338662,
+     "gift_if_previously_received": 0.623196448390677
+    },
+    {
+     "food": 0.27861109375953674,
+     "gift": 0.3055555522441864,
+     "coverage": 0.1440972238779068,
+     "full": 0.1440972238779068,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.3192274322112401,
+     "gift_if_previously_received": 0.6116599415611521
+    }
+   ]
+  },
+  {
+   "model": "v20_SMOOTH_s4111",
+   "update": 600,
+   "k": 2,
+   "topology": "ring",
+   "degree": 4,
+   "mode": "scramble",
+   "worlds": 144,
+   "food": 0.2689351886510849,
+   "gift": 0.2916666716337204,
+   "coverage": 0.12991898134350777,
+   "full": 0.12991898134350777,
+   "conditional_gift": 0.47776815725918853,
+   "by_seed": [
+    {
+     "food": 0.26256945729255676,
+     "gift": 0.300347238779068,
+     "coverage": 0.1232638880610466,
+     "full": 0.1232638880610466,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.30931713556249935,
+     "gift_if_previously_received": 0.4768101896718815
+    },
+    {
+     "food": 0.28680557012557983,
+     "gift": 0.2951388955116272,
+     "coverage": 0.1527777761220932,
+     "full": 0.1527777761220932,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.3088107692698638,
+     "gift_if_previously_received": 0.4841872669520784
+    },
+    {
+     "food": 0.27125000953674316,
+     "gift": 0.3090277910232544,
+     "coverage": 0.1354166716337204,
+     "full": 0.1354166716337204,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.3133318902303775,
+     "gift_if_previously_received": 0.4748709589785384
+    },
+    {
+     "food": 0.2653472125530243,
+     "gift": 0.265625,
+     "coverage": 0.1215277761220932,
+     "full": 0.1215277761220932,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.3138020858168602,
+     "gift_if_previously_received": 0.4711068909386869
+    },
+    {
+     "food": 0.27298611402511597,
+     "gift": 0.2829861044883728,
+     "coverage": 0.1336805522441864,
+     "full": 0.1336805522441864,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.3124638336400191,
+     "gift_if_previously_received": 0.47200547570157425
+    },
+    {
+     "food": 0.2546527683734894,
+     "gift": 0.296875,
+     "coverage": 0.1128472238779068,
+     "full": 0.1128472238779068,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.3118489620586236,
+     "gift_if_previously_received": 0.48762816131237186
+    }
+   ]
+  },
+  {
+   "model": "v20_SMOOTH_s4111",
+   "update": 600,
+   "k": 2,
+   "topology": "ring",
+   "degree": 4,
+   "mode": "no_social",
+   "worlds": 144,
+   "food": 0.2541782557964325,
+   "gift": 0.2699652860562007,
+   "coverage": 0.1082175945242246,
+   "full": 0.1082175945242246,
+   "conditional_gift": 0.44045185669189985,
+   "by_seed": [
+    {
+     "food": 0.2413194477558136,
+     "gift": 0.269097238779068,
+     "coverage": 0.0920138880610466,
+     "full": 0.0920138880610466,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.2911964760472377,
+     "gift_if_previously_received": 0.4363399071925754
+    },
+    {
+     "food": 0.2517361044883728,
+     "gift": 0.2517361044883728,
+     "coverage": 0.102430559694767,
+     "full": 0.102430559694767,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.2923177108168602,
+     "gift_if_previously_received": 0.43874891398783666
+    },
+    {
+     "food": 0.25506946444511414,
+     "gift": 0.2934027910232544,
+     "coverage": 0.1128472238779068,
+     "full": 0.1128472238779068,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.29521123009423417,
+     "gift_if_previously_received": 0.4419137659361123
+    },
+    {
+     "food": 0.26076391339302063,
+     "gift": 0.269097238779068,
+     "coverage": 0.1163194477558136,
+     "full": 0.1163194477558136,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.29148582617441815,
+     "gift_if_previously_received": 0.4432229133516563
+    },
+    {
+     "food": 0.25736111402511597,
+     "gift": 0.2743055522441864,
+     "coverage": 0.1128472238779068,
+     "full": 0.1128472238779068,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.2944878513614337,
+     "gift_if_previously_received": 0.4420644048303623
+    },
+    {
+     "food": 0.25881949067115784,
+     "gift": 0.2621527910232544,
+     "coverage": 0.1128472238779068,
+     "full": 0.1128472238779068,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.29275174128512543,
+     "gift_if_previously_received": 0.44042123485285634
+    }
+   ]
+  },
+  {
+   "model": "v20_SMOOTH_s4111",
+   "update": 600,
+   "k": 2,
+   "topology": "ring",
+   "degree": 4,
+   "mode": "always",
+   "worlds": 144,
+   "food": 0.43162036935488385,
+   "gift": 1.0,
+   "coverage": 0.43952546020348865,
+   "full": 0.43952546020348865,
+   "conditional_gift": 1.0,
+   "by_seed": [
+    {
+     "food": 0.44805559515953064,
+     "gift": 1.0,
+     "coverage": 0.4600694477558136,
+     "full": 0.4600694477558136,
+     "worlds": 24,
+     "mean_gift_trajectory": 1.0,
+     "gift_if_previously_received": 1.0
+    },
+    {
+     "food": 0.43138885498046875,
+     "gift": 1.0,
+     "coverage": 0.4392361044883728,
+     "full": 0.4392361044883728,
+     "worlds": 24,
+     "mean_gift_trajectory": 1.0,
+     "gift_if_previously_received": 1.0
+    },
+    {
+     "food": 0.4300000071525574,
+     "gift": 1.0,
+     "coverage": 0.4375,
+     "full": 0.4375,
+     "worlds": 24,
+     "mean_gift_trajectory": 1.0,
+     "gift_if_previously_received": 1.0
+    },
+    {
+     "food": 0.4258333444595337,
+     "gift": 1.0,
+     "coverage": 0.4322916567325592,
+     "full": 0.4322916567325592,
+     "worlds": 24,
+     "mean_gift_trajectory": 1.0,
+     "gift_if_previously_received": 1.0
+    },
+    {
+     "food": 0.4438888728618622,
+     "gift": 1.0,
+     "coverage": 0.4548611044883728,
+     "full": 0.4548611044883728,
+     "worlds": 24,
+     "mean_gift_trajectory": 1.0,
+     "gift_if_previously_received": 1.0
+    },
+    {
+     "food": 0.41055554151535034,
+     "gift": 1.0,
+     "coverage": 0.4131944477558136,
+     "full": 0.4131944477558136,
+     "worlds": 24,
+     "mean_gift_trajectory": 1.0,
+     "gift_if_previously_received": 1.0
+    }
+   ]
+  },
+  {
+   "model": "v20_SMOOTH_s4111",
+   "update": 600,
+   "k": 2,
+   "topology": "ring",
+   "degree": 4,
+   "mode": "random",
+   "worlds": 144,
+   "food": 0.32121528685092926,
+   "gift": 0.49450231591860455,
+   "coverage": 0.2256944477558136,
+   "full": 0.2256944477558136,
+   "conditional_gift": 0.49976119214214587,
+   "by_seed": [
+    {
+     "food": 0.3157638907432556,
+     "gift": 0.5052083134651184,
+     "coverage": 0.220486119389534,
+     "full": 0.220486119389534,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.5006872154772282,
+     "gift_if_previously_received": 0.501521116678597
+    },
+    {
+     "food": 0.30444446206092834,
+     "gift": 0.506944477558136,
+     "coverage": 0.2065972238779068,
+     "full": 0.2065972238779068,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.5016276103754839,
+     "gift_if_previously_received": 0.5011586452762923
+    },
+    {
+     "food": 0.3175000250339508,
+     "gift": 0.4791666567325592,
+     "coverage": 0.21875,
+     "full": 0.21875,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.49605758612354595,
+     "gift_if_previously_received": 0.49807192180073534
+    },
+    {
+     "food": 0.31937500834465027,
+     "gift": 0.4982638955116272,
+     "coverage": 0.2239583283662796,
+     "full": 0.2239583283662796,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.5029296924670538,
+     "gift_if_previously_received": 0.5056319290465632
+    },
+    {
+     "food": 0.3447916805744171,
+     "gift": 0.4947916567325592,
+     "coverage": 0.2552083432674408,
+     "full": 0.2552083432674408,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.49732349688808125,
+     "gift_if_previously_received": 0.49487750556792875
+    },
+    {
+     "food": 0.3254166543483734,
+     "gift": 0.4826388955116272,
+     "coverage": 0.2291666716337204,
+     "full": 0.2291666716337204,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.49793837157388526,
+     "gift_if_previously_received": 0.4973060344827586
+    }
+   ]
+  },
+  {
+   "model": "v20_SMOOTH_s4111",
+   "update": 600,
+   "k": 2,
+   "topology": "ring",
+   "degree": 4,
+   "mode": "never",
+   "worlds": 144,
+   "food": 0.20000000298023224,
+   "gift": 0.0,
+   "coverage": 0.0,
+   "full": 0.0,
+   "conditional_gift": 0.0,
+   "by_seed": [
+    {
+     "food": 0.20000000298023224,
+     "gift": 0.0,
+     "coverage": 0.0,
+     "full": 0.0,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.0,
+     "gift_if_previously_received": null
+    },
+    {
+     "food": 0.20000000298023224,
+     "gift": 0.0,
+     "coverage": 0.0,
+     "full": 0.0,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.0,
+     "gift_if_previously_received": null
+    },
+    {
+     "food": 0.20000000298023224,
+     "gift": 0.0,
+     "coverage": 0.0,
+     "full": 0.0,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.0,
+     "gift_if_previously_received": null
+    },
+    {
+     "food": 0.20000000298023224,
+     "gift": 0.0,
+     "coverage": 0.0,
+     "full": 0.0,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.0,
+     "gift_if_previously_received": null
+    },
+    {
+     "food": 0.20000000298023224,
+     "gift": 0.0,
+     "coverage": 0.0,
+     "full": 0.0,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.0,
+     "gift_if_previously_received": null
+    },
+    {
+     "food": 0.20000000298023224,
+     "gift": 0.0,
+     "coverage": 0.0,
+     "full": 0.0,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.0,
+     "gift_if_previously_received": null
+    }
+   ]
+  },
+  {
+   "model": "v20_SMOOTH_s4111",
+   "update": 600,
+   "k": 2,
+   "topology": "ring",
+   "degree": 4,
+   "mode": "titfortat",
+   "worlds": 144,
+   "food": 0.47555554409821826,
+   "gift": 0.9849537114302317,
+   "coverage": 0.4921875049670537,
+   "full": 0.4921875049670537,
+   "conditional_gift": 1.0,
+   "by_seed": [
+    {
+     "food": 0.4796527922153473,
+     "gift": 0.991319477558136,
+     "coverage": 0.4982638955116272,
+     "full": 0.4982638955116272,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.9439380864302317,
+     "gift_if_previously_received": 1.0
+    },
+    {
+     "food": 0.4647916853427887,
+     "gift": 0.9878472089767456,
+     "coverage": 0.4791666567325592,
+     "full": 0.4791666567325592,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.9379702048997084,
+     "gift_if_previously_received": 1.0
+    },
+    {
+     "food": 0.46166664361953735,
+     "gift": 0.9791666865348816,
+     "coverage": 0.4739583432674408,
+     "full": 0.4739583432674408,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.9388382583856583,
+     "gift_if_previously_received": 1.0
+    },
+    {
+     "food": 0.4642361104488373,
+     "gift": 0.9809027910232544,
+     "coverage": 0.4774305522441864,
+     "full": 0.4774305522441864,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.9401765074580908,
+     "gift_if_previously_received": 1.0
+    },
+    {
+     "food": 0.49138885736465454,
+     "gift": 0.9861111044883728,
+     "coverage": 0.5121527910232544,
+     "full": 0.5121527910232544,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.9377531868716081,
+     "gift_if_previously_received": 1.0
+    },
+    {
+     "food": 0.49159717559814453,
+     "gift": 0.984375,
+     "coverage": 0.5121527910232544,
+     "full": 0.5121527910232544,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.9362702574580908,
+     "gift_if_previously_received": 1.0
+    }
+   ]
+  },
+  {
+   "model": "v20_SMOOTH_s4111",
+   "update": 600,
+   "k": 2,
+   "topology": "rewired",
+   "degree": 4,
+   "mode": "normal",
+   "worlds": 144,
+   "food": 0.2695717637737592,
+   "gift": 0.29021990795930225,
+   "coverage": 0.1304976890484492,
+   "full": 0.1304976890484492,
+   "conditional_gift": 0.47753316267220364,
+   "by_seed": [
+    {
+     "food": 0.2896527647972107,
+     "gift": 0.2829861044883728,
+     "coverage": 0.1545138955116272,
+     "full": 0.1545138955116272,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.30400029197335243,
+     "gift_if_previously_received": 0.460037674919268
+    },
+    {
+     "food": 0.23673613369464874,
+     "gift": 0.2725694477558136,
+     "coverage": 0.086805559694767,
+     "full": 0.086805559694767,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.31289786224563915,
+     "gift_if_previously_received": 0.4607531158843808
+    },
+    {
+     "food": 0.2542361319065094,
+     "gift": 0.300347238779068,
+     "coverage": 0.1128472238779068,
+     "full": 0.1128472238779068,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.3123553271094958,
+     "gift_if_previously_received": 0.32767692712444096
+    },
+    {
+     "food": 0.2784722149372101,
+     "gift": 0.2951388955116272,
+     "coverage": 0.142361119389534,
+     "full": 0.142361119389534,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.3127170167863369,
+     "gift_if_previously_received": 0.5584627964022895
+    },
+    {
+     "food": 0.25583335757255554,
+     "gift": 0.2986111044883728,
+     "coverage": 0.1145833358168602,
+     "full": 0.1145833358168602,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.31687645117441815,
+     "gift_if_previously_received": 0.5074487895716946
+    },
+    {
+     "food": 0.3024999797344208,
+     "gift": 0.2916666567325592,
+     "coverage": 0.171875,
+     "full": 0.171875,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.31796151772141457,
+     "gift_if_previously_received": 0.5508196721311476
+    }
+   ]
+  },
+  {
+   "model": "v20_SMOOTH_s4111",
+   "update": 600,
+   "k": 2,
+   "topology": "rewired",
+   "degree": 4,
+   "mode": "scramble",
+   "worlds": 144,
+   "food": 0.2684027925133705,
+   "gift": 0.2864583383003871,
+   "coverage": 0.12847222636143366,
+   "full": 0.12847222636143366,
+   "conditional_gift": 0.36429867562672014,
+   "by_seed": [
+    {
+     "food": 0.28437504172325134,
+     "gift": 0.3038194477558136,
+     "coverage": 0.1510416716337204,
+     "full": 0.1510416716337204,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.3105468799670537,
+     "gift_if_previously_received": 0.3603355616725652
+    },
+    {
+     "food": 0.2375694364309311,
+     "gift": 0.265625,
+     "coverage": 0.086805559694767,
+     "full": 0.086805559694767,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.30472367194791633,
+     "gift_if_previously_received": 0.3380281690140845
+    },
+    {
+     "food": 0.2554861307144165,
+     "gift": 0.2899305522441864,
+     "coverage": 0.1128472238779068,
+     "full": 0.1128472238779068,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.3174189856896798,
+     "gift_if_previously_received": 0.24559585492227978
+    },
+    {
+     "food": 0.28138890862464905,
+     "gift": 0.2708333432674408,
+     "coverage": 0.142361119389534,
+     "full": 0.142361119389534,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.3141276041666667,
+     "gift_if_previously_received": 0.4257746661480617
+    },
+    {
+     "food": 0.2644444704055786,
+     "gift": 0.284722238779068,
+     "coverage": 0.1232638880610466,
+     "full": 0.1232638880610466,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.31344039800266427,
+     "gift_if_previously_received": 0.3694794952681388
+    },
+    {
+     "food": 0.2871527671813965,
+     "gift": 0.3038194477558136,
+     "coverage": 0.1545138955116272,
+     "full": 0.1545138955116272,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.3080512185891469,
+     "gift_if_previously_received": 0.4465783067351907
+    }
+   ]
+  },
+  {
+   "model": "v20_SMOOTH_s4111",
+   "update": 600,
+   "k": 2,
+   "topology": "rewired",
+   "degree": 4,
+   "mode": "no_social",
+   "worlds": 144,
+   "food": 0.2615625113248825,
+   "gift": 0.2682291766007741,
+   "coverage": 0.1171875,
+   "full": 0.1171875,
+   "conditional_gift": 0.32185933031035824,
+   "by_seed": [
+    {
+     "food": 0.2647222578525543,
+     "gift": 0.2708333432674408,
+     "coverage": 0.1215277761220932,
+     "full": 0.1215277761220932,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.28508391541739303,
+     "gift_if_previously_received": 0.28300811850163793
+    },
+    {
+     "food": 0.23944444954395294,
+     "gift": 0.25,
+     "coverage": 0.086805559694767,
+     "full": 0.086805559694767,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.28956886877616245,
+     "gift_if_previously_received": 0.3029755283648498
+    },
+    {
+     "food": 0.24673610925674438,
+     "gift": 0.2934027910232544,
+     "coverage": 0.102430559694767,
+     "full": 0.102430559694767,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.3011429440230131,
+     "gift_if_previously_received": 0.22312233969518055
+    },
+    {
+     "food": 0.2839583456516266,
+     "gift": 0.2725694477558136,
+     "coverage": 0.1458333283662796,
+     "full": 0.1458333283662796,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.2915943308422963,
+     "gift_if_previously_received": 0.4189151599443672
+    },
+    {
+     "food": 0.23993058502674103,
+     "gift": 0.269097238779068,
+     "coverage": 0.0902777761220932,
+     "full": 0.0902777761220932,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.2939091470713417,
+     "gift_if_previously_received": 0.31347477869888996
+    },
+    {
+     "food": 0.2945833206176758,
+     "gift": 0.253472238779068,
+     "coverage": 0.15625,
+     "full": 0.15625,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.2887731498728196,
+     "gift_if_previously_received": 0.3896600566572238
+    }
+   ]
+  },
+  {
+   "model": "v20_SMOOTH_s4111",
+   "update": 600,
+   "k": 2,
+   "topology": "rewired",
+   "degree": 4,
+   "mode": "always",
+   "worlds": 144,
+   "food": 0.4230555345614751,
+   "gift": 1.0,
+   "coverage": 0.4288194527228673,
+   "full": 0.4288194527228673,
+   "conditional_gift": 1.0,
+   "by_seed": [
+    {
+     "food": 0.45222219824790955,
+     "gift": 1.0,
+     "coverage": 0.4652777910232544,
+     "full": 0.4652777910232544,
+     "worlds": 24,
+     "mean_gift_trajectory": 1.0,
+     "gift_if_previously_received": 1.0
+    },
+    {
+     "food": 0.42722219228744507,
+     "gift": 1.0,
+     "coverage": 0.4340277910232544,
+     "full": 0.4340277910232544,
+     "worlds": 24,
+     "mean_gift_trajectory": 1.0,
+     "gift_if_previously_received": 1.0
+    },
+    {
+     "food": 0.3147222101688385,
+     "gift": 1.0,
+     "coverage": 0.2934027910232544,
+     "full": 0.2934027910232544,
+     "worlds": 24,
+     "mean_gift_trajectory": 1.0,
+     "gift_if_previously_received": 1.0
+    },
+    {
+     "food": 0.4466666281223297,
+     "gift": 1.0,
+     "coverage": 0.4583333432674408,
+     "full": 0.4583333432674408,
+     "worlds": 24,
+     "mean_gift_trajectory": 1.0,
+     "gift_if_previously_received": 1.0
+    },
+    {
+     "food": 0.37861108779907227,
+     "gift": 1.0,
+     "coverage": 0.3732638955116272,
+     "full": 0.3732638955116272,
+     "worlds": 24,
+     "mean_gift_trajectory": 1.0,
+     "gift_if_previously_received": 1.0
+    },
+    {
+     "food": 0.5188888907432556,
+     "gift": 1.0,
+     "coverage": 0.5486111044883728,
+     "full": 0.5486111044883728,
+     "worlds": 24,
+     "mean_gift_trajectory": 1.0,
+     "gift_if_previously_received": 1.0
+    }
+   ]
+  },
+  {
+   "model": "v20_SMOOTH_s4111",
+   "update": 600,
+   "k": 2,
+   "topology": "rewired",
+   "degree": 4,
+   "mode": "random",
+   "worlds": 144,
+   "food": 0.31936342517534894,
+   "gift": 0.49450231591860455,
+   "coverage": 0.22337963432073593,
+   "full": 0.22337963432073593,
+   "conditional_gift": 0.4987849222281146,
+   "by_seed": [
+    {
+     "food": 0.351874977350235,
+     "gift": 0.5052083134651184,
+     "coverage": 0.265625,
+     "full": 0.265625,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.5006872154772282,
+     "gift_if_previously_received": 0.5020924227584365
+    },
+    {
+     "food": 0.32805559039115906,
+     "gift": 0.506944477558136,
+     "coverage": 0.236111119389534,
+     "full": 0.236111119389534,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.5016276103754839,
+     "gift_if_previously_received": 0.49888542131074454
+    },
+    {
+     "food": 0.2522222101688385,
+     "gift": 0.4791666567325592,
+     "coverage": 0.1371527761220932,
+     "full": 0.1371527761220932,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.49605758612354595,
+     "gift_if_previously_received": 0.4939759036144578
+    },
+    {
+     "food": 0.3263194262981415,
+     "gift": 0.4982638955116272,
+     "coverage": 0.2326388955116272,
+     "full": 0.2326388955116272,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.5029296924670538,
+     "gift_if_previously_received": 0.5
+    },
+    {
+     "food": 0.28090277314186096,
+     "gift": 0.4947916567325592,
+     "coverage": 0.1753472238779068,
+     "full": 0.1753472238779068,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.49732349688808125,
+     "gift_if_previously_received": 0.4985181859003143
+    },
+    {
+     "food": 0.3768055737018585,
+     "gift": 0.4826388955116272,
+     "coverage": 0.2934027910232544,
+     "full": 0.2934027910232544,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.49793837157388526,
+     "gift_if_previously_received": 0.49923759978473403
+    }
+   ]
+  },
+  {
+   "model": "v20_SMOOTH_s4111",
+   "update": 600,
+   "k": 2,
+   "topology": "rewired",
+   "degree": 4,
+   "mode": "never",
+   "worlds": 144,
+   "food": 0.20000000298023224,
+   "gift": 0.0,
+   "coverage": 0.0,
+   "full": 0.0,
+   "conditional_gift": 0.0,
+   "by_seed": [
+    {
+     "food": 0.20000000298023224,
+     "gift": 0.0,
+     "coverage": 0.0,
+     "full": 0.0,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.0,
+     "gift_if_previously_received": null
+    },
+    {
+     "food": 0.20000000298023224,
+     "gift": 0.0,
+     "coverage": 0.0,
+     "full": 0.0,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.0,
+     "gift_if_previously_received": null
+    },
+    {
+     "food": 0.20000000298023224,
+     "gift": 0.0,
+     "coverage": 0.0,
+     "full": 0.0,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.0,
+     "gift_if_previously_received": null
+    },
+    {
+     "food": 0.20000000298023224,
+     "gift": 0.0,
+     "coverage": 0.0,
+     "full": 0.0,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.0,
+     "gift_if_previously_received": null
+    },
+    {
+     "food": 0.20000000298023224,
+     "gift": 0.0,
+     "coverage": 0.0,
+     "full": 0.0,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.0,
+     "gift_if_previously_received": null
+    },
+    {
+     "food": 0.20000000298023224,
+     "gift": 0.0,
+     "coverage": 0.0,
+     "full": 0.0,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.0,
+     "gift_if_previously_received": null
+    }
+   ]
+  },
+  {
+   "model": "v20_SMOOTH_s4111",
+   "update": 600,
+   "k": 2,
+   "topology": "rewired",
+   "degree": 4,
+   "mode": "titfortat",
+   "worlds": 144,
+   "food": 0.47936342159907025,
+   "gift": 0.9667245348294576,
+   "coverage": 0.49421297510464984,
+   "full": 0.49421297510464984,
+   "conditional_gift": 1.0,
+   "by_seed": [
+    {
+     "food": 0.5677777528762817,
+     "gift": 0.9513888955116272,
+     "coverage": 0.6024305820465088,
+     "full": 0.6024305820465088,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.926974835495154,
+     "gift_if_previously_received": 1.0
+    },
+    {
+     "food": 0.4190972149372101,
+     "gift": 0.9635416865348816,
+     "coverage": 0.4184027910232544,
+     "full": 0.4184027910232544,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.9250217030445734,
+     "gift_if_previously_received": 1.0
+    },
+    {
+     "food": 0.3561805784702301,
+     "gift": 0.9670138955116272,
+     "coverage": 0.3402777910232544,
+     "full": 0.3402777910232544,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.9309172543386618,
+     "gift_if_previously_received": 1.0
+    },
+    {
+     "food": 0.4972222149372101,
+     "gift": 0.9722222089767456,
+     "coverage": 0.5173611044883728,
+     "full": 0.5173611044883728,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.9307002344479164,
+     "gift_if_previously_received": 1.0
+    },
+    {
+     "food": 0.4303472340106964,
+     "gift": 0.9739583134651184,
+     "coverage": 0.4340277910232544,
+     "full": 0.4340277910232544,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.9286386047800382,
+     "gift_if_previously_received": 1.0
+    },
+    {
+     "food": 0.605555534362793,
+     "gift": 0.9722222089767456,
+     "coverage": 0.6527777910232544,
+     "full": 0.6527777910232544,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.9258535945167145,
+     "gift_if_previously_received": 1.0
+    }
+   ]
+  },
+  {
+   "model": "v20_SMOOTH_s4111",
+   "update": 600,
+   "k": 3,
+   "topology": "ring",
+   "degree": 2,
+   "mode": "normal",
+   "worlds": 144,
+   "food": 0.2554325858751933,
+   "gift": 0.29369213183720905,
+   "coverage": 0.14684606591860452,
+   "full": 0.03964120335876942,
+   "conditional_gift": 0.6588816887782207,
+   "by_seed": [
+    {
+     "food": 0.25405383110046387,
+     "gift": 0.2899305522441864,
+     "coverage": 0.1449652761220932,
+     "full": 0.0364583320915699,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.30009404197335243,
+     "gift_if_previously_received": 0.6572039942938659
+    },
+    {
+     "food": 0.254218727350235,
+     "gift": 0.2881944477558136,
+     "coverage": 0.1440972238779068,
+     "full": 0.0381944440305233,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.30251736628512543,
+     "gift_if_previously_received": 0.6561746774422231
+    },
+    {
+     "food": 0.25957465171813965,
+     "gift": 0.300347238779068,
+     "coverage": 0.150173619389534,
+     "full": 0.0520833320915699,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.3036386041591565,
+     "gift_if_previously_received": 0.6554015020219526
+    },
+    {
+     "food": 0.25496530532836914,
+     "gift": 0.2986111044883728,
+     "coverage": 0.1493055522441864,
+     "full": 0.0347222238779068,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.30255353388686973,
+     "gift_if_previously_received": 0.6622045001424096
+    },
+    {
+     "food": 0.25626736879348755,
+     "gift": 0.2986111044883728,
+     "coverage": 0.1493055522441864,
+     "full": 0.0399305559694767,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.30595341759423417,
+     "gift_if_previously_received": 0.6639721254355401
+    },
+    {
+     "food": 0.2535156309604645,
+     "gift": 0.2864583432674408,
+     "coverage": 0.1432291716337204,
+     "full": 0.0364583320915699,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.30226418065528077,
+     "gift_if_previously_received": 0.6583333333333333
+    }
+   ]
+  },
+  {
+   "model": "v20_SMOOTH_s4111",
+   "update": 600,
+   "k": 3,
+   "topology": "ring",
+   "degree": 2,
+   "mode": "scramble",
+   "worlds": 144,
+   "food": 0.2509114642937978,
+   "gift": 0.27199074625968933,
+   "coverage": 0.13599537312984467,
+   "full": 0.03501157400508722,
+   "conditional_gift": 0.5331728784036973,
+   "by_seed": [
+    {
+     "food": 0.2553732693195343,
+     "gift": 0.2760416567325592,
+     "coverage": 0.1380208283662796,
+     "full": 0.0503472238779068,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.2850839166591565,
+     "gift_if_previously_received": 0.5291592658377738
+    },
+    {
+     "food": 0.2495659738779068,
+     "gift": 0.2777777910232544,
+     "coverage": 0.1388888955116272,
+     "full": 0.02604166604578495,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.2849754076451063,
+     "gift_if_previously_received": 0.5354829210836278
+    },
+    {
+     "food": 0.2482205033302307,
+     "gift": 0.269097238779068,
+     "coverage": 0.134548619389534,
+     "full": 0.02604166604578495,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.2900390649835269,
+     "gift_if_previously_received": 0.5409155937052933
+    },
+    {
+     "food": 0.24455730617046356,
+     "gift": 0.2482638955116272,
+     "coverage": 0.1241319477558136,
+     "full": 0.0243055559694767,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.2890986731896798,
+     "gift_if_previously_received": 0.5214098456160793
+    },
+    {
+     "food": 0.2534114420413971,
+     "gift": 0.2829861044883728,
+     "coverage": 0.1414930522441864,
+     "full": 0.0381944440305233,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.28913484141230583,
+     "gift_if_previously_received": 0.5229876722262509
+    },
+    {
+     "food": 0.2543402910232544,
+     "gift": 0.2777777910232544,
+     "coverage": 0.1388888955116272,
+     "full": 0.0451388880610466,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.29202835882703465,
+     "gift_if_previously_received": 0.5490819719531589
+    }
+   ]
+  },
+  {
+   "model": "v20_SMOOTH_s4111",
+   "update": 600,
+   "k": 3,
+   "topology": "ring",
+   "degree": 2,
+   "mode": "no_social",
+   "worlds": 144,
+   "food": 0.24786025285720825,
+   "gift": 0.26070602734883624,
+   "coverage": 0.13035301367441812,
+   "full": 0.029803240671753883,
+   "conditional_gift": 0.49355183981498424,
+   "by_seed": [
+    {
+     "food": 0.24476562440395355,
+     "gift": 0.2552083432674408,
+     "coverage": 0.1276041716337204,
+     "full": 0.02083333395421505,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.2703993072112401,
+     "gift_if_previously_received": 0.49316960859554876
+    },
+    {
+     "food": 0.24552951753139496,
+     "gift": 0.2517361044883728,
+     "coverage": 0.1258680522441864,
+     "full": 0.02604166604578495,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.2718822369351983,
+     "gift_if_previously_received": 0.4875477463712758
+    },
+    {
+     "food": 0.2516927123069763,
+     "gift": 0.269097238779068,
+     "coverage": 0.134548619389534,
+     "full": 0.0399305559694767,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.27387153046826523,
+     "gift_if_previously_received": 0.49234068627450983
+    },
+    {
+     "food": 0.24735243618488312,
+     "gift": 0.269097238779068,
+     "coverage": 0.134548619389534,
+     "full": 0.0225694440305233,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.2717013939594229,
+     "gift_if_previously_received": 0.4931758932679037
+    },
+    {
+     "food": 0.24888022243976593,
+     "gift": 0.2621527910232544,
+     "coverage": 0.1310763955116272,
+     "full": 0.0329861119389534,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.27658420397589606,
+     "gift_if_previously_received": 0.5085782485454274
+    },
+    {
+     "food": 0.24894100427627563,
+     "gift": 0.2569444477558136,
+     "coverage": 0.1284722238779068,
+     "full": 0.0364583320915699,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.27123119309544563,
+     "gift_if_previously_received": 0.4864988558352403
+    }
+   ]
+  },
+  {
+   "model": "v20_SMOOTH_s4111",
+   "update": 600,
+   "k": 3,
+   "topology": "ring",
+   "degree": 2,
+   "mode": "always",
+   "worlds": 144,
+   "food": 0.41778937975565594,
+   "gift": 1.0,
+   "coverage": 0.5,
+   "full": 0.251157412926356,
+   "conditional_gift": 1.0,
+   "by_seed": [
+    {
+     "food": 0.4170660078525543,
+     "gift": 1.0,
+     "coverage": 0.5,
+     "full": 0.2482638955116272,
+     "worlds": 24,
+     "mean_gift_trajectory": 1.0,
+     "gift_if_previously_received": 1.0
+    },
+    {
+     "food": 0.4170660078525543,
+     "gift": 1.0,
+     "coverage": 0.5,
+     "full": 0.2482638955116272,
+     "worlds": 24,
+     "mean_gift_trajectory": 1.0,
+     "gift_if_previously_received": 1.0
+    },
+    {
+     "food": 0.4205382168292999,
+     "gift": 1.0,
+     "coverage": 0.5,
+     "full": 0.2621527910232544,
+     "worlds": 24,
+     "mean_gift_trajectory": 1.0,
+     "gift_if_previously_received": 1.0
+    },
+    {
+     "food": 0.41446182131767273,
+     "gift": 1.0,
+     "coverage": 0.5,
+     "full": 0.2378472238779068,
+     "worlds": 24,
+     "mean_gift_trajectory": 1.0,
+     "gift_if_previously_received": 1.0
+    },
+    {
+     "food": 0.4209722578525543,
+     "gift": 1.0,
+     "coverage": 0.5,
+     "full": 0.2638888955116272,
+     "worlds": 24,
+     "mean_gift_trajectory": 1.0,
+     "gift_if_previously_received": 1.0
+    },
+    {
+     "food": 0.4166319668292999,
+     "gift": 1.0,
+     "coverage": 0.5,
+     "full": 0.2465277761220932,
+     "worlds": 24,
+     "mean_gift_trajectory": 1.0,
+     "gift_if_previously_received": 1.0
+    }
+   ]
+  },
+  {
+   "model": "v20_SMOOTH_s4111",
+   "update": 600,
+   "k": 3,
+   "topology": "ring",
+   "degree": 2,
+   "mode": "random",
+   "worlds": 144,
+   "food": 0.2916218340396881,
+   "gift": 0.49450231591860455,
+   "coverage": 0.24725115795930228,
+   "full": 0.059895834575096764,
+   "conditional_gift": 0.4974918840841425,
+   "by_seed": [
+    {
+     "food": 0.29480037093162537,
+     "gift": 0.5052083134651184,
+     "coverage": 0.2526041567325592,
+     "full": 0.0659722238779068,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.5006872154772282,
+     "gift_if_previously_received": 0.5015560602237362
+    },
+    {
+     "food": 0.29593750834465027,
+     "gift": 0.506944477558136,
+     "coverage": 0.253472238779068,
+     "full": 0.0694444477558136,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.5016276103754839,
+     "gift_if_previously_received": 0.49391421136573493
+    },
+    {
+     "food": 0.2890278100967407,
+     "gift": 0.4791666567325592,
+     "coverage": 0.2395833283662796,
+     "full": 0.0590277798473835,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.49605758612354595,
+     "gift_if_previously_received": 0.4949835595649608
+    },
+    {
+     "food": 0.2902517318725586,
+     "gift": 0.4982638955116272,
+     "coverage": 0.2491319477558136,
+     "full": 0.0520833320915699,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.5029296924670538,
+     "gift_if_previously_received": 0.49794376835921106
+    },
+    {
+     "food": 0.2923177182674408,
+     "gift": 0.4947916567325592,
+     "coverage": 0.2473958283662796,
+     "full": 0.0625,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.49732349688808125,
+     "gift_if_previously_received": 0.49621437686091024
+    },
+    {
+     "food": 0.2873958647251129,
+     "gift": 0.4826388955116272,
+     "coverage": 0.2413194477558136,
+     "full": 0.0503472238779068,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.49793837157388526,
+     "gift_if_previously_received": 0.500339328130302
+    }
+   ]
+  },
+  {
+   "model": "v20_SMOOTH_s4111",
+   "update": 600,
+   "k": 3,
+   "topology": "ring",
+   "degree": 2,
+   "mode": "never",
+   "worlds": 144,
+   "food": 0.20000000298023224,
+   "gift": 0.0,
+   "coverage": 0.0,
+   "full": 0.0,
+   "conditional_gift": 0.0,
+   "by_seed": [
+    {
+     "food": 0.20000000298023224,
+     "gift": 0.0,
+     "coverage": 0.0,
+     "full": 0.0,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.0,
+     "gift_if_previously_received": null
+    },
+    {
+     "food": 0.20000000298023224,
+     "gift": 0.0,
+     "coverage": 0.0,
+     "full": 0.0,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.0,
+     "gift_if_previously_received": null
+    },
+    {
+     "food": 0.20000000298023224,
+     "gift": 0.0,
+     "coverage": 0.0,
+     "full": 0.0,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.0,
+     "gift_if_previously_received": null
+    },
+    {
+     "food": 0.20000000298023224,
+     "gift": 0.0,
+     "coverage": 0.0,
+     "full": 0.0,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.0,
+     "gift_if_previously_received": null
+    },
+    {
+     "food": 0.20000000298023224,
+     "gift": 0.0,
+     "coverage": 0.0,
+     "full": 0.0,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.0,
+     "gift_if_previously_received": null
+    },
+    {
+     "food": 0.20000000298023224,
+     "gift": 0.0,
+     "coverage": 0.0,
+     "full": 0.0,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.0,
+     "gift_if_previously_received": null
+    }
+   ]
+  },
+  {
+   "model": "v20_SMOOTH_s4111",
+   "update": 600,
+   "k": 3,
+   "topology": "ring",
+   "degree": 2,
+   "mode": "titfortat",
+   "worlds": 144,
+   "food": 0.3588512937227885,
+   "gift": 0.9716435273488363,
+   "coverage": 0.48582176367441815,
+   "full": 0.0329861119389534,
+   "conditional_gift": 1.0,
+   "by_seed": [
+    {
+     "food": 0.3578645884990692,
+     "gift": 0.9652777910232544,
+     "coverage": 0.4826388955116272,
+     "full": 0.0329861119389534,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.9303747129937013,
+     "gift_if_previously_received": 1.0
+    },
+    {
+     "food": 0.3601823151111603,
+     "gift": 0.9774305820465088,
+     "coverage": 0.4887152910232544,
+     "full": 0.0347222238779068,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.9339554483691851,
+     "gift_if_previously_received": 1.0
+    },
+    {
+     "food": 0.3565625250339508,
+     "gift": 0.9652777910232544,
+     "coverage": 0.4826388955116272,
+     "full": 0.02777777798473835,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.931170430034399,
+     "gift_if_previously_received": 1.0
+    },
+    {
+     "food": 0.3585677146911621,
+     "gift": 0.9670138955116272,
+     "coverage": 0.4835069477558136,
+     "full": 0.0347222238779068,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.9293619884798924,
+     "gift_if_previously_received": 1.0
+    },
+    {
+     "food": 0.36212676763534546,
+     "gift": 0.984375,
+     "coverage": 0.4921875,
+     "full": 0.0381944440305233,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.9316768000523249,
+     "gift_if_previously_received": 1.0
+    },
+    {
+     "food": 0.3578038513660431,
+     "gift": 0.9704861044883728,
+     "coverage": 0.4852430522441864,
+     "full": 0.02951388992369175,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.9284215948234001,
+     "gift_if_previously_received": 1.0
+    }
+   ]
+  },
+  {
+   "model": "v20_SMOOTH_s4111",
+   "update": 600,
+   "k": 3,
+   "topology": "ring",
+   "degree": 4,
+   "mode": "normal",
+   "worlds": 144,
+   "food": 0.2505512237548828,
+   "gift": 0.29108797013759613,
+   "coverage": 0.1384548619389534,
+   "full": 0.037326389302810035,
+   "conditional_gift": 0.6507088381448495,
+   "by_seed": [
+    {
+     "food": 0.2516840398311615,
+     "gift": 0.2934027910232544,
+     "coverage": 0.140625,
+     "full": 0.0381944440305233,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.29763455254336196,
+     "gift_if_previously_received": 0.6472346786248132
+    },
+    {
+     "food": 0.2484809011220932,
+     "gift": 0.2777777910232544,
+     "coverage": 0.134548619389534,
+     "full": 0.03125,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.30045573102931183,
+     "gift_if_previously_received": 0.6412315930388219
+    },
+    {
+     "food": 0.24917533993721008,
+     "gift": 0.2951388955116272,
+     "coverage": 0.1380208283662796,
+     "full": 0.0347222238779068,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.30237268780668575,
+     "gift_if_previously_received": 0.6563614744351962
+    },
+    {
+     "food": 0.2537934184074402,
+     "gift": 0.2986111044883728,
+     "coverage": 0.1432291716337204,
+     "full": 0.0434027798473835,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.30277054632703465,
+     "gift_if_previously_received": 0.6570370370370371
+    },
+    {
+     "food": 0.25126737356185913,
+     "gift": 0.296875,
+     "coverage": 0.140625,
+     "full": 0.0381944440305233,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.30287905409932137,
+     "gift_if_previously_received": 0.6521998508575689
+    },
+    {
+     "food": 0.24890626966953278,
+     "gift": 0.284722238779068,
+     "coverage": 0.1336805522441864,
+     "full": 0.0381944440305233,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.2991536483168602,
+     "gift_if_previously_received": 0.6501883948756594
+    }
+   ]
+  },
+  {
+   "model": "v20_SMOOTH_s4111",
+   "update": 600,
+   "k": 3,
+   "topology": "ring",
+   "degree": 4,
+   "mode": "scramble",
+   "worlds": 144,
+   "food": 0.24756944924592972,
+   "gift": 0.27488426367441815,
+   "coverage": 0.1339699054757754,
+   "full": 0.027488425994912784,
+   "conditional_gift": 0.4890421157499261,
+   "by_seed": [
+    {
+     "food": 0.24622395634651184,
+     "gift": 0.2777777910232544,
+     "coverage": 0.1328125,
+     "full": 0.02604166604578495,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.28895399533212185,
+     "gift_if_previously_received": 0.49059376837154617
+    },
+    {
+     "food": 0.25030383467674255,
+     "gift": 0.2777777910232544,
+     "coverage": 0.1362847238779068,
+     "full": 0.0347222238779068,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.28768808270494145,
+     "gift_if_previously_received": 0.4914302600472813
+    },
+    {
+     "food": 0.24776042997837067,
+     "gift": 0.2725694477558136,
+     "coverage": 0.1336805522441864,
+     "full": 0.02777777798473835,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.29459635851283866,
+     "gift_if_previously_received": 0.49253302699597934
+    },
+    {
+     "food": 0.2458159625530243,
+     "gift": 0.265625,
+     "coverage": 0.1302083283662796,
+     "full": 0.0243055559694767,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.2921368647366762,
+     "gift_if_previously_received": 0.4816905485598495
+    },
+    {
+     "food": 0.24684898555278778,
+     "gift": 0.2725694477558136,
+     "coverage": 0.1328125,
+     "full": 0.02604166604578495,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.29170283923546475,
+     "gift_if_previously_received": 0.48484848484848486
+    },
+    {
+     "food": 0.24846352636814117,
+     "gift": 0.2829861044883728,
+     "coverage": 0.1380208283662796,
+     "full": 0.02604166604578495,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.29242621672650176,
+     "gift_if_previously_received": 0.4931566056764155
+    }
+   ]
+  },
+  {
+   "model": "v20_SMOOTH_s4111",
+   "update": 600,
+   "k": 3,
+   "topology": "ring",
+   "degree": 4,
+   "mode": "no_social",
+   "worlds": 144,
+   "food": 0.2435416802763939,
+   "gift": 0.259259266157945,
+   "coverage": 0.12586805472771326,
+   "full": 0.021701388681928318,
+   "conditional_gift": 0.45986600818786777,
+   "by_seed": [
+    {
+     "food": 0.24248266220092773,
+     "gift": 0.2586805522441864,
+     "coverage": 0.125,
+     "full": 0.01909722201526165,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.27253327642877895,
+     "gift_if_previously_received": 0.4548791679412664
+    },
+    {
+     "food": 0.24194447696208954,
+     "gift": 0.2465277761220932,
+     "coverage": 0.1197916641831398,
+     "full": 0.0225694440305233,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.2740885450815161,
+     "gift_if_previously_received": 0.4531726662599146
+    },
+    {
+     "food": 0.24488714337348938,
+     "gift": 0.2708333432674408,
+     "coverage": 0.1328125,
+     "full": 0.0173611119389534,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.27477575683345395,
+     "gift_if_previously_received": 0.46788567916410573
+    },
+    {
+     "food": 0.24532119929790497,
+     "gift": 0.2621527910232544,
+     "coverage": 0.1293402761220932,
+     "full": 0.0225694440305233,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.27314815235634643,
+     "gift_if_previously_received": 0.45858895705521474
+    },
+    {
+     "food": 0.24293401837348938,
+     "gift": 0.2621527910232544,
+     "coverage": 0.125,
+     "full": 0.0225694440305233,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.27698206311712664,
+     "gift_if_previously_received": 0.4684234438891413
+    },
+    {
+     "food": 0.24368058145046234,
+     "gift": 0.2552083432674408,
+     "coverage": 0.1232638880610466,
+     "full": 0.02604166604578495,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.27224392785380286,
+     "gift_if_previously_received": 0.4562461348175634
+    }
+   ]
+  },
+  {
+   "model": "v20_SMOOTH_s4111",
+   "update": 600,
+   "k": 3,
+   "topology": "ring",
+   "degree": 4,
+   "mode": "always",
+   "worlds": 144,
+   "food": 0.36734087268511456,
+   "gift": 1.0,
+   "coverage": 0.4357638905445735,
+   "full": 0.1906828706463178,
+   "conditional_gift": 1.0,
+   "by_seed": [
+    {
+     "food": 0.36645832657814026,
+     "gift": 1.0,
+     "coverage": 0.4340277910232544,
+     "full": 0.1909722238779068,
+     "worlds": 24,
+     "mean_gift_trajectory": 1.0,
+     "gift_if_previously_received": 1.0
+    },
+    {
+     "food": 0.3649826645851135,
+     "gift": 1.0,
+     "coverage": 0.4305555522441864,
+     "full": 0.1927083283662796,
+     "worlds": 24,
+     "mean_gift_trajectory": 1.0,
+     "gift_if_previously_received": 1.0
+    },
+    {
+     "food": 0.3671528100967407,
+     "gift": 1.0,
+     "coverage": 0.4392361044883728,
+     "full": 0.1822916716337204,
+     "worlds": 24,
+     "mean_gift_trajectory": 1.0,
+     "gift_if_previously_received": 1.0
+    },
+    {
+     "food": 0.3659375011920929,
+     "gift": 1.0,
+     "coverage": 0.4322916567325592,
+     "full": 0.1927083283662796,
+     "worlds": 24,
+     "mean_gift_trajectory": 1.0,
+     "gift_if_previously_received": 1.0
+    },
+    {
+     "food": 0.3622048795223236,
+     "gift": 1.0,
+     "coverage": 0.4357638955116272,
+     "full": 0.1701388955116272,
+     "worlds": 24,
+     "mean_gift_trajectory": 1.0,
+     "gift_if_previously_received": 1.0
+    },
+    {
+     "food": 0.37730905413627625,
+     "gift": 1.0,
+     "coverage": 0.4427083432674408,
+     "full": 0.2152777761220932,
+     "worlds": 24,
+     "mean_gift_trajectory": 1.0,
+     "gift_if_previously_received": 1.0
+    }
+   ]
+  },
+  {
+   "model": "v20_SMOOTH_s4111",
+   "update": 600,
+   "k": 3,
+   "topology": "ring",
+   "degree": 4,
+   "mode": "random",
+   "worlds": 144,
+   "food": 0.2834765712420146,
+   "gift": 0.49450231591860455,
+   "coverage": 0.23480903108914694,
+   "full": 0.054687501241763435,
+   "conditional_gift": 0.49976119214214587,
+   "by_seed": [
+    {
+     "food": 0.2839496433734894,
+     "gift": 0.5052083134651184,
+     "coverage": 0.2352430522441864,
+     "full": 0.0607638880610466,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.5006872154772282,
+     "gift_if_previously_received": 0.501521116678597
+    },
+    {
+     "food": 0.291119784116745,
+     "gift": 0.506944477558136,
+     "coverage": 0.243923619389534,
+     "full": 0.071180559694767,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.5016276103754839,
+     "gift_if_previously_received": 0.5011586452762923
+    },
+    {
+     "food": 0.27939239144325256,
+     "gift": 0.4791666567325592,
+     "coverage": 0.2291666716337204,
+     "full": 0.0434027798473835,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.49605758612354595,
+     "gift_if_previously_received": 0.49807192180073534
+    },
+    {
+     "food": 0.28491321206092834,
+     "gift": 0.4982638955116272,
+     "coverage": 0.2378472238779068,
+     "full": 0.0555555559694767,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.5029296924670538,
+     "gift_if_previously_received": 0.5056319290465632
+    },
+    {
+     "food": 0.2838107645511627,
+     "gift": 0.4947916567325592,
+     "coverage": 0.2335069477558136,
+     "full": 0.0590277798473835,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.49732349688808125,
+     "gift_if_previously_received": 0.49487750556792875
+    },
+    {
+     "food": 0.2776736319065094,
+     "gift": 0.4826388955116272,
+     "coverage": 0.2291666716337204,
+     "full": 0.0381944440305233,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.49793837157388526,
+     "gift_if_previously_received": 0.4973060344827586
+    }
+   ]
+  },
+  {
+   "model": "v20_SMOOTH_s4111",
+   "update": 600,
+   "k": 3,
+   "topology": "ring",
+   "degree": 4,
+   "mode": "never",
+   "worlds": 144,
+   "food": 0.20000000298023224,
+   "gift": 0.0,
+   "coverage": 0.0,
+   "full": 0.0,
+   "conditional_gift": 0.0,
+   "by_seed": [
+    {
+     "food": 0.20000000298023224,
+     "gift": 0.0,
+     "coverage": 0.0,
+     "full": 0.0,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.0,
+     "gift_if_previously_received": null
+    },
+    {
+     "food": 0.20000000298023224,
+     "gift": 0.0,
+     "coverage": 0.0,
+     "full": 0.0,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.0,
+     "gift_if_previously_received": null
+    },
+    {
+     "food": 0.20000000298023224,
+     "gift": 0.0,
+     "coverage": 0.0,
+     "full": 0.0,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.0,
+     "gift_if_previously_received": null
+    },
+    {
+     "food": 0.20000000298023224,
+     "gift": 0.0,
+     "coverage": 0.0,
+     "full": 0.0,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.0,
+     "gift_if_previously_received": null
+    },
+    {
+     "food": 0.20000000298023224,
+     "gift": 0.0,
+     "coverage": 0.0,
+     "full": 0.0,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.0,
+     "gift_if_previously_received": null
+    },
+    {
+     "food": 0.20000000298023224,
+     "gift": 0.0,
+     "coverage": 0.0,
+     "full": 0.0,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.0,
+     "gift_if_previously_received": null
+    }
+   ]
+  },
+  {
+   "model": "v20_SMOOTH_s4111",
+   "update": 600,
+   "k": 3,
+   "topology": "ring",
+   "degree": 4,
+   "mode": "titfortat",
+   "worlds": 144,
+   "food": 0.3534708023071289,
+   "gift": 0.9849537114302317,
+   "coverage": 0.48972801367441815,
+   "full": 0.00925925956107676,
+   "conditional_gift": 1.0,
+   "by_seed": [
+    {
+     "food": 0.3548698127269745,
+     "gift": 0.991319477558136,
+     "coverage": 0.4939236044883728,
+     "full": 0.0086805559694767,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.9439380864302317,
+     "gift_if_previously_received": 1.0
+    },
+    {
+     "food": 0.352855920791626,
+     "gift": 0.9878472089767456,
+     "coverage": 0.4887152910232544,
+     "full": 0.010416666977107525,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.9379702048997084,
+     "gift_if_previously_received": 1.0
+    },
+    {
+     "food": 0.35203129053115845,
+     "gift": 0.9791666865348816,
+     "coverage": 0.4861111044883728,
+     "full": 0.0086805559694767,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.9388382583856583,
+     "gift_if_previously_received": 1.0
+    },
+    {
+     "food": 0.3532986342906952,
+     "gift": 0.9809027910232544,
+     "coverage": 0.4895833432674408,
+     "full": 0.0069444444961845875,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.9401765074580908,
+     "gift_if_previously_received": 1.0
+    },
+    {
+     "food": 0.3554080128669739,
+     "gift": 0.9861111044883728,
+     "coverage": 0.4921875,
+     "full": 0.01215277798473835,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.9377531868716081,
+     "gift_if_previously_received": 1.0
+    },
+    {
+     "food": 0.35236114263534546,
+     "gift": 0.984375,
+     "coverage": 0.487847238779068,
+     "full": 0.0086805559694767,
+     "worlds": 24,
+     "mean_gift_trajectory": 0.9362702574580908,
+     "gift_if_previously_received": 1.0
+    }
+   ]
+  }
+ ],
+ "causal": {
+  "normal": {
+   "mode": "normal",
+   "records": [
+    {
+     "seed": 970001,
+     "person": 0,
+     "mode": "normal",
+     "worlds": 24,
+     "delta_immediate": -0.12000006437301636,
+     "delta_future": 0.16088294982910156,
+     "delta_total": 0.040882110595703125,
+     "delta_incoming": 0.005319148302078247,
+     "delta_next_incoming": 0.25,
+     "delta_future_giving": 0.0008864998817443848
+    },
+    {
+     "seed": 970001,
+     "person": 4,
+     "mode": "normal",
+     "worlds": 24,
+     "delta_immediate": -0.12000000476837158,
+     "delta_future": 0.0,
+     "delta_total": -0.11999893188476562,
+     "delta_incoming": 0.0,
+     "delta_next_incoming": 0.0,
+     "delta_future_giving": 0.0
+    },
+    {
+     "seed": 970001,
+     "person": 8,
+     "mode": "normal",
+     "worlds": 24,
+     "delta_immediate": -0.12000000476837158,
+     "delta_future": 0.23282814025878906,
+     "delta_total": 0.11282920837402344,
+     "delta_incoming": 0.006205648183822632,
+     "delta_next_incoming": 0.4166667014360428,
+     "delta_future_giving": 0.0
+    },
+    {
+     "seed": 970001,
+     "person": 12,
+     "mode": "normal",
+     "worlds": 24,
+     "delta_immediate": -0.12000006437301636,
+     "delta_future": 0.16542816162109375,
+     "delta_total": 0.04542732238769531,
+     "delta_incoming": 0.007092177867889404,
+     "delta_next_incoming": 0.2083333134651184,
+     "delta_future_giving": 0.0
+    },
+    {
+     "seed": 970001,
+     "person": 16,
+     "mode": "normal",
+     "worlds": 24,
+     "delta_immediate": -0.12000001221895218,
+     "delta_future": 0.0,
+     "delta_total": -0.12000083923339844,
+     "delta_incoming": 0.0,
+     "delta_next_incoming": 0.0,
+     "delta_future_giving": 0.0
+    },
+    {
+     "seed": 970001,
+     "person": 20,
+     "mode": "normal",
+     "worlds": 24,
+     "delta_immediate": -0.12000003457069397,
+     "delta_future": 2.0261268615722656,
+     "delta_total": 1.9061241149902344,
+     "delta_incoming": 0.0558510422706604,
+     "delta_next_incoming": 0.4166666865348816,
+     "delta_future_giving": 0.0026595592498779297
+    },
+    {
+     "seed": 970007,
+     "person": 0,
+     "mode": "normal",
+     "worlds": 24,
+     "delta_immediate": -0.12000006437301636,
+     "delta_future": 0.2683277130126953,
+     "delta_total": 0.14832687377929688,
+     "delta_incoming": 0.00975179672241211,
+     "delta_next_incoming": 0.375,
+     "delta_future_giving": 0.005319178104400635
+    },
+    {
+     "seed": 970007,
+     "person": 4,
+     "mode": "normal",
+     "worlds": 24,
+     "delta_immediate": -0.12000001221895218,
+     "delta_future": 0.0,
+     "delta_total": -0.11999988555908203,
+     "delta_incoming": 0.0,
+     "delta_next_incoming": 0.0,
+     "delta_future_giving": 0.0
+    },
+    {
+     "seed": 970007,
+     "person": 8,
+     "mode": "normal",
+     "worlds": 24,
+     "delta_immediate": -0.12000000476837158,
+     "delta_future": 0.2603569030761719,
+     "delta_total": 0.14036178588867188,
+     "delta_incoming": 0.007092207670211792,
+     "delta_next_incoming": 0.375,
+     "delta_future_giving": 0.0008865222334861755
+    },
+    {
+     "seed": 970007,
+     "person": 12,
+     "mode": "normal",
+     "worlds": 24,
+     "delta_immediate": -0.12000000476837158,
+     "delta_future": -0.0049266815185546875,
+     "delta_total": -0.1249237060546875,
+     "delta_incoming": 0.0008865594863891602,
+     "delta_next_incoming": 0.0,
+     "delta_future_giving": 0.0008865296840667725
+    },
+    {
+     "seed": 970007,
+     "person": 16,
+     "mode": "normal",
+     "worlds": 24,
+     "delta_immediate": -0.12000001221895218,
+     "delta_future": 0.0,
+     "delta_total": -0.11999988555908203,
+     "delta_incoming": 0.0,
+     "delta_next_incoming": 0.0,
+     "delta_future_giving": 0.0
+    },
+    {
+     "seed": 970007,
+     "person": 20,
+     "mode": "normal",
+     "worlds": 24,
+     "delta_immediate": -0.12000003457069397,
+     "delta_future": 1.1460819244384766,
+     "delta_total": 1.0260810852050781,
+     "delta_incoming": 0.03191488981246948,
+     "delta_next_incoming": 0.25,
+     "delta_future_giving": 0.004432618618011475
+    },
+    {
+     "seed": 970009,
+     "person": 0,
+     "mode": "normal",
+     "worlds": 24,
+     "delta_immediate": -0.12000006437301636,
+     "delta_future": 0.24553298950195312,
+     "delta_total": 0.1255321502685547,
+     "delta_incoming": 0.00886523723602295,
+     "delta_next_incoming": 0.3750000298023224,
+     "delta_future_giving": 0.00354611873626709
+    },
+    {
+     "seed": 970009,
+     "person": 4,
+     "mode": "normal",
+     "worlds": 24,
+     "delta_immediate": -0.12000001221895218,
+     "delta_future": 0.0,
+     "delta_total": -0.12000083923339844,
+     "delta_incoming": 0.0,
+     "delta_next_incoming": 0.0,
+     "delta_future_giving": 0.0
+    },
+    {
+     "seed": 970009,
+     "person": 8,
+     "mode": "normal",
+     "worlds": 24,
+     "delta_immediate": -0.12000000476837158,
+     "delta_future": 0.2598915100097656,
+     "delta_total": 0.1398944854736328,
+     "delta_incoming": 0.007092207670211792,
+     "delta_next_incoming": 0.4166666567325592,
+     "delta_future_giving": 0.000886525958776474
+    },
+    {
+     "seed": 970009,
+     "person": 12,
+     "mode": "normal",
+     "worlds": 24,
+     "delta_immediate": -0.12000000476837158,
+     "delta_future": 0.0842437744140625,
+     "delta_total": -0.035755157470703125,
+     "delta_incoming": 0.004432618618011475,
+     "delta_next_incoming": 0.1666666567325592,
+     "delta_future_giving": 0.0026595741510391235
+    },
+    {
+     "seed": 970009,
+     "person": 16,
+     "mode": "normal",
+     "worlds": 24,
+     "delta_immediate": -0.12000001221895218,
+     "delta_future": 0.0,
+     "delta_total": -0.11999893188476562,
+     "delta_incoming": 0.0,
+     "delta_next_incoming": 0.0,
+     "delta_future_giving": 0.0
+    },
+    {
+     "seed": 970009,
+     "person": 20,
+     "mode": "normal",
+     "worlds": 24,
+     "delta_immediate": -0.12000000476837158,
+     "delta_future": 0.7496452331542969,
+     "delta_total": 0.6296443939208984,
+     "delta_incoming": 0.020390093326568604,
+     "delta_next_incoming": 0.2916666865348816,
+     "delta_future_giving": 0.0008865594863891602
+    },
+    {
+     "seed": 970021,
+     "person": 0,
+     "mode": "normal",
+     "worlds": 24,
+     "delta_immediate": -0.12000000476837158,
+     "delta_future": 0.16444015502929688,
+     "delta_total": 0.04443931579589844,
+     "delta_incoming": 0.0062056779861450195,
+     "delta_next_incoming": 0.3333333730697632,
+     "delta_future_giving": 0.0062056779861450195
+    },
+    {
+     "seed": 970021,
+     "person": 4,
+     "mode": "normal",
+     "worlds": 24,
+     "delta_immediate": -0.12000001221895218,
+     "delta_future": 0.03316688537597656,
+     "delta_total": -0.08683395385742188,
+     "delta_incoming": 0.0008865250274538994,
+     "delta_next_incoming": 0.0416666679084301,
+     "delta_future_giving": 0.0
+    },
+    {
+     "seed": 970021,
+     "person": 8,
+     "mode": "normal",
+     "worlds": 24,
+     "delta_immediate": -0.12000003457069397,
+     "delta_future": 0.09983062744140625,
+     "delta_total": -0.020170211791992188,
+     "delta_incoming": 0.0026595592498779297,
+     "delta_next_incoming": 0.2083333134651184,
+     "delta_future_giving": 0.0
+    },
+    {
+     "seed": 970021,
+     "person": 12,
+     "mode": "normal",
+     "worlds": 24,
+     "delta_immediate": -0.12000000476837158,
+     "delta_future": 0.1988353729248047,
+     "delta_total": 0.07883453369140625,
+     "delta_incoming": 0.005319178104400635,
+     "delta_next_incoming": 0.2083333432674408,
+     "delta_future_giving": 0.0
+    },
+    {
+     "seed": 970021,
+     "person": 16,
+     "mode": "normal",
+     "worlds": 24,
+     "delta_immediate": -0.12000000476837158,
+     "delta_future": -0.033165931701660156,
+     "delta_total": -0.1531658172607422,
+     "delta_incoming": -0.0008865250274538994,
+     "delta_next_incoming": -0.0416666679084301,
+     "delta_future_giving": 0.0
+    },
+    {
+     "seed": 970021,
+     "person": 20,
+     "mode": "normal",
+     "worlds": 24,
+     "delta_immediate": -0.12000006437301636,
+     "delta_future": 0.32372093200683594,
+     "delta_total": 0.2037220001220703,
+     "delta_incoming": 0.00886523723602295,
+     "delta_next_incoming": 0.125,
+     "delta_future_giving": 0.0008864998817443848
+    },
+    {
+     "seed": 970031,
+     "person": 0,
+     "mode": "normal",
+     "worlds": 24,
+     "delta_immediate": -0.12000000476837158,
+     "delta_future": 0.2272186279296875,
+     "delta_total": 0.10721588134765625,
+     "delta_incoming": 0.0062056779861450195,
+     "delta_next_incoming": 0.3333333432674408,
+     "delta_future_giving": 0.0008865594863891602
+    },
+    {
+     "seed": 970031,
+     "person": 4,
+     "mode": "normal",
+     "worlds": 24,
+     "delta_immediate": -0.12000001221895218,
+     "delta_future": 0.0,
+     "delta_total": -0.11999988555908203,
+     "delta_incoming": 0.0,
+     "delta_next_incoming": 0.0,
+     "delta_future_giving": 0.0
+    },
+    {
+     "seed": 970031,
+     "person": 8,
+     "mode": "normal",
+     "worlds": 24,
+     "delta_immediate": -0.12000006437301636,
+     "delta_future": 0.2608795166015625,
+     "delta_total": 0.14088058471679688,
+     "delta_incoming": 0.007978737354278564,
+     "delta_next_incoming": 0.375,
+     "delta_future_giving": 0.0008865222334861755
+    },
+    {
+     "seed": 970031,
+     "person": 12,
+     "mode": "normal",
+     "worlds": 24,
+     "delta_immediate": -0.12000006437301636,
+     "delta_future": 0.023218154907226562,
+     "delta_total": -0.09678268432617188,
+     "delta_incoming": 0.001773059368133545,
+     "delta_next_incoming": 0.08333331346511841,
+     "delta_future_giving": 0.001773044466972351
+    },
+    {
+     "seed": 970031,
+     "person": 16,
+     "mode": "normal",
+     "worlds": 24,
+     "delta_immediate": -0.12000001221895218,
+     "delta_future": -0.033165931701660156,
+     "delta_total": -0.153167724609375,
+     "delta_incoming": -0.0008865250274538994,
+     "delta_next_incoming": -0.0416666679084301,
+     "delta_future_giving": 0.0
+    },
+    {
+     "seed": 970031,
+     "person": 20,
+     "mode": "normal",
+     "worlds": 24,
+     "delta_immediate": -0.12000003457069397,
+     "delta_future": 1.6845951080322266,
+     "delta_total": 1.564596176147461,
+     "delta_incoming": 0.046099305152893066,
+     "delta_next_incoming": 0.2916666865348816,
+     "delta_future_giving": 0.0008865594863891602
+    },
+    {
+     "seed": 970037,
+     "person": 0,
+     "mode": "normal",
+     "worlds": 24,
+     "delta_immediate": -0.12000003457069397,
+     "delta_future": 0.2502937316894531,
+     "delta_total": 0.1302928924560547,
+     "delta_incoming": 0.007092207670211792,
+     "delta_next_incoming": 0.3333333134651184,
+     "delta_future_giving": 0.0026595592498779297
+    },
+    {
+     "seed": 970037,
+     "person": 4,
+     "mode": "normal",
+     "worlds": 24,
+     "delta_immediate": -0.12000001221895218,
+     "delta_future": -0.033000946044921875,
+     "delta_total": -0.1530008316040039,
+     "delta_incoming": -0.0008865245617926121,
+     "delta_next_incoming": 0.0,
+     "delta_future_giving": 0.0
+    },
+    {
+     "seed": 970037,
+     "person": 8,
+     "mode": "normal",
+     "worlds": 24,
+     "delta_immediate": -0.12000000476837158,
+     "delta_future": 0.04356193542480469,
+     "delta_total": -0.07643508911132812,
+     "delta_incoming": 0.0008865296840667725,
+     "delta_next_incoming": 0.125,
+     "delta_future_giving": -0.001773051917552948
+    },
+    {
+     "seed": 970037,
+     "person": 12,
+     "mode": "normal",
+     "worlds": 24,
+     "delta_immediate": -0.12000006437301636,
+     "delta_future": 0.07927322387695312,
+     "delta_total": -0.04073143005371094,
+     "delta_incoming": 0.004432618618011475,
+     "delta_next_incoming": 0.125,
+     "delta_future_giving": 0.003546103835105896
+    },
+    {
+     "seed": 970037,
+     "person": 16,
+     "mode": "normal",
+     "worlds": 24,
+     "delta_immediate": -0.12000001221895218,
+     "delta_future": -0.03316688537597656,
+     "delta_total": -0.1531658172607422,
+     "delta_incoming": -0.0008865240961313248,
+     "delta_next_incoming": -0.0416666679084301,
+     "delta_future_giving": 0.0
+    },
+    {
+     "seed": 970037,
+     "person": 20,
+     "mode": "normal",
+     "worlds": 24,
+     "delta_immediate": -0.1199999451637268,
+     "delta_future": 1.3914165496826172,
+     "delta_total": 1.2714176177978516,
+     "delta_incoming": 0.0381205677986145,
+     "delta_next_incoming": 0.3750000298023224,
+     "delta_future_giving": 0.0026595592498779297
+    }
+   ],
+   "mean_immediate": -0.12000002256698078,
+   "mean_future": 0.2845102945963542,
+   "mean_total": 0.1645103030734592,
+   "mean_incoming": 0.008274233602504764,
+   "mean_next_incoming": 0.1770833364377419,
+   "successes_total": 18,
+   "pairs": 36
+  },
+  "scramble": {
+   "mode": "scramble",
+   "records": [
+    {
+     "seed": 970001,
+     "person": 0,
+     "mode": "scramble",
+     "worlds": 24,
+     "delta_immediate": -0.12000006437301636,
+     "delta_future": 0.06649017333984375,
+     "delta_total": -0.0535125732421875,
+     "delta_incoming": 0.0017729997634887695,
+     "delta_next_incoming": 0.08333331346511841,
+     "delta_future_giving": 0.0
+    },
+    {
+     "seed": 970001,
+     "person": 4,
+     "mode": "scramble",
+     "worlds": 24,
+     "delta_immediate": -0.12000001221895218,
+     "delta_future": 0.0,
+     "delta_total": -0.11999988555908203,
+     "delta_incoming": 0.0,
+     "delta_next_incoming": 0.0,
+     "delta_future_giving": 0.0
+    },
+    {
+     "seed": 970001,
+     "person": 8,
+     "mode": "scramble",
+     "worlds": 24,
+     "delta_immediate": -0.12000003457069397,
+     "delta_future": 0.23780250549316406,
+     "delta_total": 0.11780548095703125,
+     "delta_incoming": 0.006205648183822632,
+     "delta_next_incoming": 0.4166666865348816,
+     "delta_future_giving": -0.0008865222334861755
+    },
+    {
+     "seed": 970001,
+     "person": 12,
+     "mode": "scramble",
+     "worlds": 24,
+     "delta_immediate": -0.12000003457069397,
+     "delta_future": -0.0429534912109375,
+     "delta_total": -0.1629486083984375,
+     "delta_incoming": -0.0008864998817443848,
+     "delta_next_incoming": 0.0,
+     "delta_future_giving": 0.001773044466972351
+    },
+    {
+     "seed": 970001,
+     "person": 16,
+     "mode": "scramble",
+     "worlds": 24,
+     "delta_immediate": -0.12000001221895218,
+     "delta_future": 0.004975318908691406,
+     "delta_total": -0.11502456665039062,
+     "delta_incoming": 0.0,
+     "delta_next_incoming": 0.0,
+     "delta_future_giving": -0.0008865250274538994
+    },
+    {
+     "seed": 970001,
+     "person": 20,
+     "mode": "scramble",
+     "worlds": 24,
+     "delta_immediate": -0.12000006437301636,
+     "delta_future": 0.0,
+     "delta_total": -0.11999702453613281,
+     "delta_incoming": 0.0,
+     "delta_next_incoming": 0.0,
+     "delta_future_giving": 0.0
+    },
+    {
+     "seed": 970007,
+     "person": 0,
+     "mode": "scramble",
+     "worlds": 24,
+     "delta_immediate": -0.12000003457069397,
+     "delta_future": -0.004974365234375,
+     "delta_total": -0.12497520446777344,
+     "delta_incoming": 0.0,
+     "delta_next_incoming": 0.0,
+     "delta_future_giving": 0.0008864998817443848
+    },
+    {
+     "seed": 970007,
+     "person": 4,
+     "mode": "scramble",
+     "worlds": 24,
+     "delta_immediate": -0.12000001221895218,
+     "delta_future": 0.0,
+     "delta_total": -0.11999893188476562,
+     "delta_incoming": 0.0,
+     "delta_next_incoming": 0.0,
+     "delta_future_giving": 0.0
+    },
+    {
+     "seed": 970007,
+     "person": 8,
+     "mode": "scramble",
+     "worlds": 24,
+     "delta_immediate": -0.12000000476837158,
+     "delta_future": -2.47955322265625e-05,
+     "delta_total": -0.120025634765625,
+     "delta_incoming": 0.0,
+     "delta_next_incoming": 0.0,
+     "delta_future_giving": 0.0
+    },
+    {
+     "seed": 970007,
+     "person": 12,
+     "mode": "scramble",
+     "worlds": 24,
+     "delta_immediate": -0.12000000476837158,
+     "delta_future": 0.02321624755859375,
+     "delta_total": -0.09678459167480469,
+     "delta_incoming": 0.0008865594863891602,
+     "delta_next_incoming": 0.04166668653488159,
+     "delta_future_giving": 0.0017730295658111572
+    },
+    {
+     "seed": 970007,
+     "person": 16,
+     "mode": "scramble",
+     "worlds": 24,
+     "delta_immediate": -0.12000001221895218,
+     "delta_future": 0.004975318908691406,
+     "delta_total": -0.11502552032470703,
+     "delta_incoming": 0.0,
+     "delta_next_incoming": 0.0,
+     "delta_future_giving": -0.0008865250274538994
+    },
+    {
+     "seed": 970007,
+     "person": 20,
+     "mode": "scramble",
+     "worlds": 24,
+     "delta_immediate": -0.12000006437301636,
+     "delta_future": 0.0,
+     "delta_total": -0.12000274658203125,
+     "delta_incoming": 0.0,
+     "delta_next_incoming": 0.0,
+     "delta_future_giving": 0.0
+    },
+    {
+     "seed": 970009,
+     "person": 0,
+     "mode": "scramble",
+     "worlds": 24,
+     "delta_immediate": -0.12000003457069397,
+     "delta_future": 0.013101577758789062,
+     "delta_total": -0.10689735412597656,
+     "delta_incoming": 0.001773059368133545,
+     "delta_next_incoming": 0.04166668653488159,
+     "delta_future_giving": 0.0035460591316223145
+    },
+    {
+     "seed": 970009,
+     "person": 4,
+     "mode": "scramble",
+     "worlds": 24,
+     "delta_immediate": -0.12000001221895218,
+     "delta_future": 0.0,
+     "delta_total": -0.11999988555908203,
+     "delta_incoming": 0.0,
+     "delta_next_incoming": 0.0,
+     "delta_future_giving": 0.0
+    },
+    {
+     "seed": 970009,
+     "person": 8,
+     "mode": "scramble",
+     "worlds": 24,
+     "delta_immediate": -0.12000006437301636,
+     "delta_future": -2.47955322265625e-05,
+     "delta_total": -0.120025634765625,
+     "delta_incoming": 0.0,
+     "delta_next_incoming": 0.0,
+     "delta_future_giving": 0.0
+    },
+    {
+     "seed": 970009,
+     "person": 12,
+     "mode": "scramble",
+     "worlds": 24,
+     "delta_immediate": -0.12000000476837158,
+     "delta_future": -0.07081222534179688,
+     "delta_total": -0.1908130645751953,
+     "delta_incoming": -0.0017729997634887695,
+     "delta_next_incoming": -0.04166668653488159,
+     "delta_future_giving": 0.0008865296840667725
+    },
+    {
+     "seed": 970009,
+     "person": 16,
+     "mode": "scramble",
+     "worlds": 24,
+     "delta_immediate": -0.12000001221895218,
+     "delta_future": 0.0,
+     "delta_total": -0.11999988555908203,
+     "delta_incoming": 0.0,
+     "delta_next_incoming": 0.0,
+     "delta_future_giving": 0.0
+    },
+    {
+     "seed": 970009,
+     "person": 20,
+     "mode": "scramble",
+     "worlds": 24,
+     "delta_immediate": -0.12000003457069397,
+     "delta_future": 0.0,
+     "delta_total": -0.11999893188476562,
+     "delta_incoming": 0.0,
+     "delta_next_incoming": 0.0,
+     "delta_future_giving": 0.0
+    },
+    {
+     "seed": 970021,
+     "person": 0,
+     "mode": "scramble",
+     "worlds": 24,
+     "delta_immediate": -0.12000006437301636,
+     "delta_future": 0.08420562744140625,
+     "delta_total": -0.035797119140625,
+     "delta_incoming": 0.0026595592498779297,
+     "delta_next_incoming": 0.0833333432674408,
+     "delta_future_giving": 0.002659618854522705
+    },
+    {
+     "seed": 970021,
+     "person": 4,
+     "mode": "scramble",
+     "worlds": 24,
+     "delta_immediate": -0.12000001221895218,
+     "delta_future": 0.0,
+     "delta_total": -0.11999988555908203,
+     "delta_incoming": 0.0,
+     "delta_next_incoming": 0.0,
+     "delta_future_giving": 0.0
+    },
+    {
+     "seed": 970021,
+     "person": 8,
+     "mode": "scramble",
+     "worlds": 24,
+     "delta_immediate": -0.12000003457069397,
+     "delta_future": 0.03316497802734375,
+     "delta_total": -0.08683395385742188,
+     "delta_incoming": 0.0008865296840667725,
+     "delta_next_incoming": 0.041666656732559204,
+     "delta_future_giving": 0.0
+    },
+    {
+     "seed": 970021,
+     "person": 12,
+     "mode": "scramble",
+     "worlds": 24,
+     "delta_immediate": -0.12000000476837158,
+     "delta_future": -0.0430908203125,
+     "delta_total": -0.16309165954589844,
+     "delta_incoming": -0.0008865594863891602,
+     "delta_next_incoming": -0.041666626930236816,
+     "delta_future_giving": 0.001773044466972351
+    },
+    {
+     "seed": 970021,
+     "person": 16,
+     "mode": "scramble",
+     "worlds": 24,
+     "delta_immediate": -0.12000001221895218,
+     "delta_future": 0.0,
+     "delta_total": -0.11999988555908203,
+     "delta_incoming": 0.0,
+     "delta_next_incoming": 0.0,
+     "delta_future_giving": 0.0
+    },
+    {
+     "seed": 970021,
+     "person": 20,
+     "mode": "scramble",
+     "worlds": 24,
+     "delta_immediate": -0.12000006437301636,
+     "delta_future": 0.027860641479492188,
+     "delta_total": -0.09214019775390625,
+     "delta_incoming": 0.0008865296840667725,
+     "delta_next_incoming": 0.0,
+     "delta_future_giving": 0.0008864998817443848
+    },
+    {
+     "seed": 970031,
+     "person": 0,
+     "mode": "scramble",
+     "worlds": 24,
+     "delta_immediate": -0.12000000476837158,
+     "delta_future": -0.042999267578125,
+     "delta_total": -0.16300010681152344,
+     "delta_incoming": -0.0008864998817443848,
+     "delta_next_incoming": 0.0,
+     "delta_future_giving": 0.001773059368133545
+    },
+    {
+     "seed": 970031,
+     "person": 4,
+     "mode": "scramble",
+     "worlds": 24,
+     "delta_immediate": -0.12000001221895218,
+     "delta_future": 0.0,
+     "delta_total": -0.12000083923339844,
+     "delta_incoming": 0.0,
+     "delta_next_incoming": 0.0,
+     "delta_future_giving": 0.0
+    },
+    {
+     "seed": 970031,
+     "person": 8,
+     "mode": "scramble",
+     "worlds": 24,
+     "delta_immediate": -0.12000000476837158,
+     "delta_future": -0.06621742248535156,
+     "delta_total": -0.18621826171875,
+     "delta_incoming": -0.0026595890522003174,
+     "delta_next_incoming": -0.08333337306976318,
+     "delta_future_giving": 0.0
+    },
+    {
+     "seed": 970031,
+     "person": 12,
+     "mode": "scramble",
+     "worlds": 24,
+     "delta_immediate": -0.12000006437301636,
+     "delta_future": 0.018239974975585938,
+     "delta_total": -0.10175895690917969,
+     "delta_incoming": 0.0008865594863891602,
+     "delta_next_incoming": 0.04166668653488159,
+     "delta_future_giving": 0.0026595741510391235
+    },
+    {
+     "seed": 970031,
+     "person": 16,
+     "mode": "scramble",
+     "worlds": 24,
+     "delta_immediate": -0.12000001221895218,
+     "delta_future": 0.0,
+     "delta_total": -0.12000083923339844,
+     "delta_incoming": 0.0,
+     "delta_next_incoming": 0.0,
+     "delta_future_giving": 0.0
+    },
+    {
+     "seed": 970031,
+     "person": 20,
+     "mode": "scramble",
+     "worlds": 24,
+     "delta_immediate": -0.12000003457069397,
+     "delta_future": -0.1656665802001953,
+     "delta_total": -0.28566741943359375,
+     "delta_incoming": -0.004432648420333862,
+     "delta_next_incoming": -0.1666666567325592,
+     "delta_future_giving": 0.0
+    },
+    {
+     "seed": 970037,
+     "person": 0,
+     "mode": "scramble",
+     "worlds": 24,
+     "delta_immediate": -0.12000006437301636,
+     "delta_future": 0.013265609741210938,
+     "delta_total": -0.10673141479492188,
+     "delta_incoming": 0.0026595890522003174,
+     "delta_next_incoming": 0.125,
+     "delta_future_giving": 0.0035460591316223145
+    },
+    {
+     "seed": 970037,
+     "person": 4,
+     "mode": "scramble",
+     "worlds": 24,
+     "delta_immediate": -0.12000001221895218,
+     "delta_future": 0.0,
+     "delta_total": -0.11999893188476562,
+     "delta_incoming": 0.0,
+     "delta_next_incoming": 0.0,
+     "delta_future_giving": 0.0
+    },
+    {
+     "seed": 970037,
+     "person": 8,
+     "mode": "scramble",
+     "worlds": 24,
+     "delta_immediate": -0.12000000476837158,
+     "delta_future": 0.0,
+     "delta_total": -0.11999893188476562,
+     "delta_incoming": 0.0,
+     "delta_next_incoming": 0.0,
+     "delta_future_giving": 0.0
+    },
+    {
+     "seed": 970037,
+     "person": 12,
+     "mode": "scramble",
+     "worlds": 24,
+     "delta_immediate": -0.12000006437301636,
+     "delta_future": 0.03316688537597656,
+     "delta_total": -0.08683586120605469,
+     "delta_incoming": 0.0008865594863891602,
+     "delta_next_incoming": 0.041666656732559204,
+     "delta_future_giving": 0.0
+    },
+    {
+     "seed": 970037,
+     "person": 16,
+     "mode": "scramble",
+     "worlds": 24,
+     "delta_immediate": -0.12000001221895218,
+     "delta_future": 0.0,
+     "delta_total": -0.12000083923339844,
+     "delta_incoming": 0.0,
+     "delta_next_incoming": 0.0,
+     "delta_future_giving": 0.0
+    },
+    {
+     "seed": 970037,
+     "person": 20,
+     "mode": "scramble",
+     "worlds": 24,
+     "delta_immediate": -0.12000003457069397,
+     "delta_future": -0.06616783142089844,
+     "delta_total": -0.18616867065429688,
+     "delta_incoming": -0.001773059368133545,
+     "delta_next_incoming": -0.041666656732559204,
+     "delta_future_giving": 0.0
+    }
+   ],
+   "mean_immediate": -0.12000002877579795,
+   "mean_future": 0.001598146226671007,
+   "mean_total": -0.11840189827813043,
+   "mean_incoming": 0.00017238159974416098,
+   "mean_next_incoming": 0.015046297676033445,
+   "successes_total": 1,
+   "pairs": 36
+  },
+  "no_social": {
+   "mode": "no_social",
+   "records": [
+    {
+     "seed": 970001,
+     "person": 0,
+     "mode": "no_social",
+     "worlds": 24,
+     "delta_immediate": -0.12000006437301636,
+     "delta_future": 0.0,
+     "delta_total": -0.12000083923339844,
+     "delta_incoming": -0.0008865594863891602,
+     "delta_next_incoming": -0.041666626930236816,
+     "delta_future_giving": 0.0
+    },
+    {
+     "seed": 970001,
+     "person": 4,
+     "mode": "no_social",
+     "worlds": 24,
+     "delta_immediate": -0.12000000476837158,
+     "delta_future": 0.0,
+     "delta_total": -0.11999893188476562,
+     "delta_incoming": 0.0,
+     "delta_next_incoming": 0.0,
+     "delta_future_giving": 0.0
+    },
+    {
+     "seed": 970001,
+     "person": 8,
+     "mode": "no_social",
+     "worlds": 24,
+     "delta_immediate": -0.12000000476837158,
+     "delta_future": 0.0,
+     "delta_total": -0.11999893188476562,
+     "delta_incoming": 0.0,
+     "delta_next_incoming": 0.0,
+     "delta_future_giving": 0.0
+    },
+    {
+     "seed": 970001,
+     "person": 12,
+     "mode": "no_social",
+     "worlds": 24,
+     "delta_immediate": -0.12000006437301636,
+     "delta_future": 0.01824188232421875,
+     "delta_total": -0.1017608642578125,
+     "delta_incoming": 0.0008864998817443848,
+     "delta_next_incoming": 0.04166668653488159,
+     "delta_future_giving": 0.0026595890522003174
+    },
+    {
+     "seed": 970001,
+     "person": 16,
+     "mode": "no_social",
+     "worlds": 24,
+     "delta_immediate": -0.12000001221895218,
+     "delta_future": 0.0,
+     "delta_total": -0.11999988555908203,
+     "delta_incoming": 0.0,
+     "delta_next_incoming": 0.0,
+     "delta_future_giving": 0.0
+    },
+    {
+     "seed": 970001,
+     "person": 20,
+     "mode": "no_social",
+     "worlds": 24,
+     "delta_immediate": -0.12000003457069397,
+     "delta_future": -0.024849891662597656,
+     "delta_total": -0.1448507308959961,
+     "delta_incoming": 0.0,
+     "delta_next_incoming": 0.0,
+     "delta_future_giving": 0.004432618618011475
+    },
+    {
+     "seed": 970007,
+     "person": 0,
+     "mode": "no_social",
+     "worlds": 24,
+     "delta_immediate": -0.12000006437301636,
+     "delta_future": -0.009950637817382812,
+     "delta_total": -0.12994766235351562,
+     "delta_incoming": 0.0,
+     "delta_next_incoming": 0.0,
+     "delta_future_giving": 0.0017730295658111572
+    },
+    {
+     "seed": 970007,
+     "person": 4,
+     "mode": "no_social",
+     "worlds": 24,
+     "delta_immediate": -0.12000001221895218,
+     "delta_future": 0.0,
+     "delta_total": -0.11999988555908203,
+     "delta_incoming": 0.0,
+     "delta_next_incoming": 0.0,
+     "delta_future_giving": 0.0
+    },
+    {
+     "seed": 970007,
+     "person": 8,
+     "mode": "no_social",
+     "worlds": 24,
+     "delta_immediate": -0.12000000476837158,
+     "delta_future": 0.06616973876953125,
+     "delta_total": -0.05383110046386719,
+     "delta_incoming": 0.001773059368133545,
+     "delta_next_incoming": 0.08333331346511841,
+     "delta_future_giving": 0.0
+    },
+    {
+     "seed": 970007,
+     "person": 12,
+     "mode": "no_social",
+     "worlds": 24,
+     "delta_immediate": -0.12000000476837158,
+     "delta_future": 0.0232391357421875,
+     "delta_total": -0.09676170349121094,
+     "delta_incoming": 0.0008865594863891602,
+     "delta_next_incoming": 0.04166668653488159,
+     "delta_future_giving": 0.001773059368133545
+    },
+    {
+     "seed": 970007,
+     "person": 16,
+     "mode": "no_social",
+     "worlds": 24,
+     "delta_immediate": -0.12000001221895218,
+     "delta_future": 0.0,
+     "delta_total": -0.11999988555908203,
+     "delta_incoming": 0.0,
+     "delta_next_incoming": 0.0,
+     "delta_future_giving": 0.0
+    },
+    {
+     "seed": 970007,
+     "person": 20,
+     "mode": "no_social",
+     "worlds": 24,
+     "delta_immediate": -0.12000003457069397,
+     "delta_future": -0.004974365234375,
+     "delta_total": -0.12497425079345703,
+     "delta_incoming": 0.0,
+     "delta_next_incoming": 0.0,
+     "delta_future_giving": 0.0008865594863891602
+    },
+    {
+     "seed": 970009,
+     "person": 0,
+     "mode": "no_social",
+     "worlds": 24,
+     "delta_immediate": -0.12000006437301636,
+     "delta_future": 0.06102752685546875,
+     "delta_total": -0.058971405029296875,
+     "delta_incoming": 0.0026595592498779297,
+     "delta_next_incoming": 0.04166668653488159,
+     "delta_future_giving": 0.0008865296840667725
+    },
+    {
+     "seed": 970009,
+     "person": 4,
+     "mode": "no_social",
+     "worlds": 24,
+     "delta_immediate": -0.12000001221895218,
+     "delta_future": 0.0,
+     "delta_total": -0.12000083923339844,
+     "delta_incoming": 0.0,
+     "delta_next_incoming": 0.0,
+     "delta_future_giving": 0.0
+    },
+    {
+     "seed": 970009,
+     "person": 8,
+     "mode": "no_social",
+     "worlds": 24,
+     "delta_immediate": -0.12000000476837158,
+     "delta_future": 0.000164031982421875,
+     "delta_total": -0.11983299255371094,
+     "delta_incoming": 0.0,
+     "delta_next_incoming": 0.041666656732559204,
+     "delta_future_giving": 0.0
+    },
+    {
+     "seed": 970009,
+     "person": 12,
+     "mode": "no_social",
+     "worlds": 24,
+     "delta_immediate": -0.12000000476837158,
+     "delta_future": -0.019899368286132812,
+     "delta_total": -0.13990020751953125,
+     "delta_incoming": 0.0,
+     "delta_next_incoming": 0.0,
+     "delta_future_giving": 0.003546088933944702
+    },
+    {
+     "seed": 970009,
+     "person": 16,
+     "mode": "no_social",
+     "worlds": 24,
+     "delta_immediate": -0.12000001221895218,
+     "delta_future": 0.0,
+     "delta_total": -0.11999893188476562,
+     "delta_incoming": 0.0,
+     "delta_next_incoming": 0.0,
+     "delta_future_giving": 0.0
+    },
+    {
+     "seed": 970009,
+     "person": 20,
+     "mode": "no_social",
+     "worlds": 24,
+     "delta_immediate": -0.12000000476837158,
+     "delta_future": -0.01987457275390625,
+     "delta_total": -0.1398754119873047,
+     "delta_incoming": 0.0,
+     "delta_next_incoming": 0.0,
+     "delta_future_giving": 0.00354611873626709
+    },
+    {
+     "seed": 970021,
+     "person": 0,
+     "mode": "no_social",
+     "worlds": 24,
+     "delta_immediate": -0.12000000476837158,
+     "delta_future": 0.028194427490234375,
+     "delta_total": -0.09180641174316406,
+     "delta_incoming": 0.0008865594863891602,
+     "delta_next_incoming": 0.041666656732559204,
+     "delta_future_giving": 0.0008865296840667725
+    },
+    {
+     "seed": 970021,
+     "person": 4,
+     "mode": "no_social",
+     "worlds": 24,
+     "delta_immediate": -0.12000001221895218,
+     "delta_future": 0.0,
+     "delta_total": -0.12000083923339844,
+     "delta_incoming": 0.0,
+     "delta_next_incoming": 0.0,
+     "delta_future_giving": 0.0
+    },
+    {
+     "seed": 970021,
+     "person": 8,
+     "mode": "no_social",
+     "worlds": 24,
+     "delta_immediate": -0.12000003457069397,
+     "delta_future": -0.06616783142089844,
+     "delta_total": -0.18616867065429688,
+     "delta_incoming": -0.0017730295658111572,
+     "delta_next_incoming": -0.041666656732559204,
+     "delta_future_giving": 0.0
+    },
+    {
+     "seed": 970021,
+     "person": 12,
+     "mode": "no_social",
+     "worlds": 24,
+     "delta_immediate": -0.12000000476837158,
+     "delta_future": -0.01490020751953125,
+     "delta_total": -0.1349029541015625,
+     "delta_incoming": 0.0,
+     "delta_next_incoming": 0.0,
+     "delta_future_giving": 0.0026595741510391235
+    },
+    {
+     "seed": 970021,
+     "person": 16,
+     "mode": "no_social",
+     "worlds": 24,
+     "delta_immediate": -0.12000000476837158,
+     "delta_future": 0.0,
+     "delta_total": -0.11999988555908203,
+     "delta_incoming": 0.0,
+     "delta_next_incoming": 0.0,
+     "delta_future_giving": 0.0
+    },
+    {
+     "seed": 970021,
+     "person": 20,
+     "mode": "no_social",
+     "worlds": 24,
+     "delta_immediate": -0.12000006437301636,
+     "delta_future": -0.004974365234375,
+     "delta_total": -0.12497520446777344,
+     "delta_incoming": 0.0,
+     "delta_next_incoming": 0.0,
+     "delta_future_giving": 0.0008864998817443848
+    },
+    {
+     "seed": 970031,
+     "person": 0,
+     "mode": "no_social",
+     "worlds": 24,
+     "delta_immediate": -0.12000000476837158,
+     "delta_future": 0.056407928466796875,
+     "delta_total": -0.06359100341796875,
+     "delta_incoming": 0.001773059368133545,
+     "delta_next_incoming": 0.08333331346511841,
+     "delta_future_giving": 0.001773059368133545
+    },
+    {
+     "seed": 970031,
+     "person": 4,
+     "mode": "no_social",
+     "worlds": 24,
+     "delta_immediate": -0.12000001221895218,
+     "delta_future": 0.0,
+     "delta_total": -0.11999988555908203,
+     "delta_incoming": 0.0,
+     "delta_next_incoming": 0.0,
+     "delta_future_giving": 0.0
+    },
+    {
+     "seed": 970031,
+     "person": 8,
+     "mode": "no_social",
+     "worlds": 24,
+     "delta_immediate": -0.12000006437301636,
+     "delta_future": -0.03316497802734375,
+     "delta_total": -0.153167724609375,
+     "delta_incoming": -0.0008864998817443848,
+     "delta_next_incoming": -0.041666656732559204,
+     "delta_future_giving": 0.0
+    },
+    {
+     "seed": 970031,
+     "person": 12,
+     "mode": "no_social",
+     "worlds": 24,
+     "delta_immediate": -0.12000006437301636,
+     "delta_future": -0.05782508850097656,
+     "delta_total": -0.177825927734375,
+     "delta_incoming": -0.0008864998817443848,
+     "delta_next_incoming": 0.0,
+     "delta_future_giving": 0.0044326335191726685
+    },
+    {
+     "seed": 970031,
+     "person": 16,
+     "mode": "no_social",
+     "worlds": 24,
+     "delta_immediate": -0.12000001221895218,
+     "delta_future": 0.0,
+     "delta_total": -0.12000083923339844,
+     "delta_incoming": 0.0,
+     "delta_next_incoming": 0.0,
+     "delta_future_giving": 0.0
+    },
+    {
+     "seed": 970031,
+     "person": 20,
+     "mode": "no_social",
+     "worlds": 24,
+     "delta_immediate": -0.12000003457069397,
+     "delta_future": 0.0,
+     "delta_total": -0.12000083923339844,
+     "delta_incoming": 0.0,
+     "delta_next_incoming": 0.0,
+     "delta_future_giving": 0.0
+    },
+    {
+     "seed": 970037,
+     "person": 0,
+     "mode": "no_social",
+     "worlds": 24,
+     "delta_immediate": -0.12000003457069397,
+     "delta_future": 0.06136131286621094,
+     "delta_total": -0.05864524841308594,
+     "delta_incoming": 0.001773059368133545,
+     "delta_next_incoming": 0.08333331346511841,
+     "delta_future_giving": 0.0008865296840667725
+    },
+    {
+     "seed": 970037,
+     "person": 4,
+     "mode": "no_social",
+     "worlds": 24,
+     "delta_immediate": -0.12000001221895218,
+     "delta_future": 0.0,
+     "delta_total": -0.11999988555908203,
+     "delta_incoming": 0.0,
+     "delta_next_incoming": 0.0,
+     "delta_future_giving": 0.0
+    },
+    {
+     "seed": 970037,
+     "person": 8,
+     "mode": "no_social",
+     "worlds": 24,
+     "delta_immediate": -0.12000000476837158,
+     "delta_future": -0.028192520141601562,
+     "delta_total": -0.1481914520263672,
+     "delta_incoming": -0.0008865296840667725,
+     "delta_next_incoming": -0.041666656732559204,
+     "delta_future_giving": -0.0008865222334861755
+    },
+    {
+     "seed": 970037,
+     "person": 12,
+     "mode": "no_social",
+     "worlds": 24,
+     "delta_immediate": -0.12000006437301636,
+     "delta_future": 0.008152008056640625,
+     "delta_total": -0.11184883117675781,
+     "delta_incoming": 0.0008864998817443848,
+     "delta_next_incoming": 0.0,
+     "delta_future_giving": 0.004432618618011475
+    },
+    {
+     "seed": 970037,
+     "person": 16,
+     "mode": "no_social",
+     "worlds": 24,
+     "delta_immediate": -0.12000001221895218,
+     "delta_future": -0.03316688537597656,
+     "delta_total": -0.1531667709350586,
+     "delta_incoming": -0.0008865250274538994,
+     "delta_next_incoming": -0.0416666679084301,
+     "delta_future_giving": 0.0
+    },
+    {
+     "seed": 970037,
+     "person": 20,
+     "mode": "no_social",
+     "worlds": 24,
+     "delta_immediate": -0.1199999451637268,
+     "delta_future": -0.00994873046875,
+     "delta_total": -0.12994956970214844,
+     "delta_incoming": 0.0,
+     "delta_next_incoming": 0.0,
+     "delta_future_giving": 0.001773059368133545
+    }
+   ],
+   "mean_immediate": -0.12000002256698078,
+   "mean_future": -0.0001369847191704644,
+   "mean_total": -0.12013740009731716,
+   "mean_incoming": 0.0001477559045371082,
+   "mean_next_incoming": 0.006944445789688163,
+   "successes_total": 0,
+   "pairs": 36
+  }
+ },
+ "caveat": "Counterfactual one-period intervention, with fixed learned weights and paired stochastic seeds. No claims of spontaneous cooperation without causal positive net benefit."
+}
