@@ -1,0 +1,282 @@
+{
+  "definition": "finite partial low-q occupation-mark spectrum divided by exact conditional shuffled-mark expected intensity",
+  "modes": [
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      -1
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      0,
+      2
+    ]
+  ],
+  "exploratory": true,
+  "seed": 733001,
+  "worlds_per_seed": 12,
+  "horizon": 40,
+  "models": [
+    {
+      "name": "v13_N120_torus_d4_s3111",
+      "update": 650,
+      "network": {
+        "n": 120,
+        "network": "torus",
+        "requested_mean_degree": 4,
+        "mean_degree": 4.0,
+        "min_degree": 4,
+        "max_degree": 4,
+        "degree_std": 0.0,
+        "links": 240,
+        "clustering": 0.0,
+        "path_length": 5.546218487394958,
+        "spatial_edge_length": 0.09166666666666666,
+        "modularity": 0.5666666666666667,
+        "coordinate_layout": "fixed-grid",
+        "graph_seed": 4000
+      },
+      "summary": [
+        {
+          "task": "known_k2_m10",
+          "m": 10,
+          "k": 2,
+          "topology": "torus",
+          "degree": 4,
+          "graph_seed": 4000,
+          "baseline": "learned",
+          "init": "random",
+          "n_worlds": 24,
+          "food": 0.5756944417953491,
+          "low_spectral_ratio": 7.903952163026242,
+          "d": 0.41111114621162415,
+          "exact": 0
+        },
+        {
+          "task": "known_k2_m10",
+          "m": 10,
+          "k": 2,
+          "topology": "torus",
+          "degree": 4,
+          "graph_seed": 4000,
+          "baseline": "imitate",
+          "init": "random",
+          "n_worlds": 24,
+          "food": 0.47865739464759827,
+          "low_spectral_ratio": 1.95867928992909,
+          "d": 0.42048612236976624,
+          "exact": 0
+        },
+        {
+          "task": "known_k2_m10",
+          "m": 10,
+          "k": 2,
+          "topology": "torus",
+          "degree": 4,
+          "graph_seed": 4000,
+          "baseline": "random",
+          "init": "random",
+          "n_worlds": 24,
+          "food": 0.21574075520038605,
+          "low_spectral_ratio": 0.9787856438623602,
+          "d": 0.7232639491558075,
+          "exact": 0
+        },
+        {
+          "task": "known_k4_m20",
+          "m": 20,
+          "k": 4,
+          "topology": "torus",
+          "degree": 4,
+          "graph_seed": 4000,
+          "baseline": "learned",
+          "init": "random",
+          "n_worlds": 24,
+          "food": 0.6354745328426361,
+          "low_spectral_ratio": 7.457276202181476,
+          "d": 0.3628472238779068,
+          "exact": 0
+        },
+        {
+          "task": "known_k4_m20",
+          "m": 20,
+          "k": 4,
+          "topology": "torus",
+          "degree": 4,
+          "graph_seed": 4000,
+          "baseline": "frozen",
+          "init": "balanced_random",
+          "n_worlds": 24,
+          "food": 1.0,
+          "low_spectral_ratio": 0.9706379865079325,
+          "d": 0.0,
+          "exact": 24
+        },
+        {
+          "task": "known_k4_m20",
+          "m": 20,
+          "k": 4,
+          "topology": "torus",
+          "degree": 4,
+          "graph_seed": 4000,
+          "baseline": "frozen",
+          "init": "mhu_constructed",
+          "n_worlds": 24,
+          "food": 1.0,
+          "low_spectral_ratio": 0.038001865444991796,
+          "d": 0.0,
+          "exact": 24
+        },
+        {
+          "task": "known_k4_m20",
+          "m": 20,
+          "k": 4,
+          "topology": "torus",
+          "degree": 4,
+          "graph_seed": 4000,
+          "baseline": "learned",
+          "init": "mhu_constructed",
+          "n_worlds": 24,
+          "food": 0.7396180331707001,
+          "low_spectral_ratio": 7.2139091158197495,
+          "d": 0.2593749985098839,
+          "exact": 0
+        },
+        {
+          "task": "unseen_k3_m30",
+          "m": 30,
+          "k": 3,
+          "topology": "torus",
+          "degree": 4,
+          "graph_seed": 4000,
+          "baseline": "learned",
+          "init": "random",
+          "n_worlds": 24,
+          "food": 0.6406510174274445,
+          "low_spectral_ratio": 7.658060027373585,
+          "d": 0.3541666269302368,
+          "exact": 0
+        },
+        {
+          "task": "unseen_k5_m30",
+          "m": 30,
+          "k": 5,
+          "topology": "torus",
+          "degree": 4,
+          "graph_seed": 4000,
+          "baseline": "learned",
+          "init": "random",
+          "n_worlds": 24,
+          "food": 0.6743779182434082,
+          "low_spectral_ratio": 7.214243932777642,
+          "d": 0.32395830750465393,
+          "exact": 0
+        },
+        {
+          "task": "unseen_k5_m30",
+          "m": 30,
+          "k": 5,
+          "topology": "torus",
+          "degree": 4,
+          "graph_seed": 4000,
+          "baseline": "imitate",
+          "init": "random",
+          "n_worlds": 24,
+          "food": 0.6525318920612335,
+          "low_spectral_ratio": 1.9598671961450502,
+          "d": 0.24861110001802444,
+          "exact": 0
+        },
+        {
+          "task": "unseen_k5_m30",
+          "m": 30,
+          "k": 5,
+          "topology": "torus",
+          "degree": 4,
+          "graph_seed": 4000,
+          "baseline": "random",
+          "init": "random",
+          "n_worlds": 24,
+          "food": 0.20911458134651184,
+          "low_spectral_ratio": 1.000264218116543,
+          "d": 0.7055554986000061,
+          "exact": 0
+        },
+        {
+          "task": "unseen_k5_m30",
+          "m": 30,
+          "k": 5,
+          "topology": "torus",
+          "degree": 4,
+          "graph_seed": 4221,
+          "baseline": "learned",
+          "init": "random",
+          "n_worlds": 24,
+          "food": 0.6743779182434082,
+          "low_spectral_ratio": 7.214243932777642,
+          "d": 0.32395830750465393,
+          "exact": 0
+        },
+        {
+          "task": "unseen_k5_m30",
+          "m": 30,
+          "k": 5,
+          "topology": "torus",
+          "degree": 4,
+          "graph_seed": 4221,
+          "baseline": "imitate",
+          "init": "random",
+          "n_worlds": 24,
+          "food": 0.6525318920612335,
+          "low_spectral_ratio": 1.9598671961450502,
+          "d": 0.24861110001802444,
+          "exact": 0
+        },
+        {
+          "task": "unseen_k5_m30",
+          "m": 30,
+          "k": 5,
+          "topology": "torus",
+          "degree": 4,
+          "graph_seed": 4221,
+          "baseline": "random",
+          "init": "random",
+          "n_worlds": 24,
+          "food": 0.20911458134651184,
+          "low_spectral_ratio": 1.000264218116543,
+          "d": 0.7055554986000061,
+          "exact": 0
+        },
+        {
+          "task": "unseen_k6_m50",
+          "m": 50,
+          "k": 6,
+          "topology": "torus",
+          "degree": 4,
+          "graph_seed": 4000,
+          "baseline": "learned",
+          "init": "random",
+          "n_worlds": 24,
+          "food": 0.6647569537162781,
+          "low_spectral_ratio": 7.170934101126961,
+          "d": 0.3326388895511627,
+          "exact": 0
+        }
+      ]
+    }
+  ]
+}
