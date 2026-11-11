@@ -1,0 +1,9733 @@
+{
+ "seeds": [
+  992001,
+  992003,
+  992007,
+  992009
+ ],
+ "steps": 30,
+ "worlds_per_seed": 48,
+ "rows": [
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 36,
+   "k": 3,
+   "init": "trap",
+   "mode": "normal",
+   "food": 0.9493088573217392,
+   "D": 0.02764753717929125,
+   "occupied": 3.020833373069763,
+   "exact": 63,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.945421040058136,
+     "D": 0.030729133635759354,
+     "exact": 15,
+     "occupied": 3.0625,
+     "worlds": 48
+    },
+    {
+     "food": 0.9580382108688354,
+     "D": 0.022916635498404503,
+     "exact": 18,
+     "occupied": 3.0208334922790527,
+     "worlds": 48
+    },
+    {
+     "food": 0.9503299593925476,
+     "D": 0.026388857513666153,
+     "exact": 16,
+     "occupied": 3.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.9434462189674377,
+     "D": 0.030555522069334984,
+     "exact": 14,
+     "occupied": 3.0,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 36,
+   "k": 3,
+   "init": "trap",
+   "mode": "shuffled",
+   "food": 0.9505750983953476,
+   "D": 0.02638885611668229,
+   "occupied": 3.0,
+   "exact": 64,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.9554601311683655,
+     "D": 0.023611081764101982,
+     "exact": 17,
+     "occupied": 3.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.9422135353088379,
+     "D": 0.030902743339538574,
+     "exact": 13,
+     "occupied": 3.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.9490581154823303,
+     "D": 0.027256911620497704,
+     "exact": 18,
+     "occupied": 3.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.9555686116218567,
+     "D": 0.023784687742590904,
+     "exact": 16,
+     "occupied": 3.0,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 36,
+   "k": 3,
+   "init": "trap",
+   "mode": "removed",
+   "food": 0.3333333432674408,
+   "D": 0.6666666269302368,
+   "occupied": 1.0,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.3333333432674408,
+     "D": 0.6666666269302368,
+     "exact": 0,
+     "occupied": 1.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.3333333432674408,
+     "D": 0.6666666269302368,
+     "exact": 0,
+     "occupied": 1.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.3333333432674408,
+     "D": 0.6666666269302368,
+     "exact": 0,
+     "occupied": 1.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.3333333432674408,
+     "D": 0.6666666269302368,
+     "exact": 0,
+     "occupied": 1.0,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 36,
+   "k": 3,
+   "init": "random",
+   "mode": "normal",
+   "food": 0.7752452194690704,
+   "D": 0.16870655864477158,
+   "occupied": 5.0156251192092896,
+   "exact": 3,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.768224835395813,
+     "D": 0.17482635378837585,
+     "exact": 0,
+     "occupied": 5.208333492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.7465017437934875,
+     "D": 0.19322912395000458,
+     "exact": 2,
+     "occupied": 5.375,
+     "worlds": 48
+    },
+    {
+     "food": 0.7852170467376709,
+     "D": 0.16111107170581818,
+     "exact": 1,
+     "occupied": 4.958333492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.8010372519493103,
+     "D": 0.1456596851348877,
+     "exact": 0,
+     "occupied": 4.520833492279053,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 36,
+   "k": 3,
+   "init": "random",
+   "mode": "shuffled",
+   "food": 0.7800586074590683,
+   "D": 0.16254336759448051,
+   "occupied": 4.8906251192092896,
+   "exact": 1,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.8001388907432556,
+     "D": 0.14496523141860962,
+     "exact": 0,
+     "occupied": 4.6666669845581055,
+     "worlds": 48
+    },
+    {
+     "food": 0.7730078101158142,
+     "D": 0.1701388657093048,
+     "exact": 1,
+     "occupied": 4.9375,
+     "worlds": 48
+    },
+    {
+     "food": 0.7902257442474365,
+     "D": 0.15208329260349274,
+     "exact": 0,
+     "occupied": 4.770833492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.7568619847297668,
+     "D": 0.1829860806465149,
+     "exact": 0,
+     "occupied": 5.1875,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 36,
+   "k": 3,
+   "init": "random",
+   "mode": "removed",
+   "food": 0.5620149821043015,
+   "D": 0.34648435562849045,
+   "occupied": 6.6406251192092896,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.5474956631660461,
+     "D": 0.3590277433395386,
+     "exact": 0,
+     "occupied": 6.875,
+     "worlds": 48
+    },
+    {
+     "food": 0.5659288167953491,
+     "D": 0.3376736044883728,
+     "exact": 0,
+     "occupied": 6.2291669845581055,
+     "worlds": 48
+    },
+    {
+     "food": 0.5613845586776733,
+     "D": 0.34861108660697937,
+     "exact": 0,
+     "occupied": 6.833333492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.5732508897781372,
+     "D": 0.34062498807907104,
+     "exact": 0,
+     "occupied": 6.625,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 48,
+   "k": 6,
+   "init": "trap",
+   "mode": "normal",
+   "food": 0.9053016901016235,
+   "D": 0.05581593047827482,
+   "occupied": 6.010416746139526,
+   "exact": 16,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.9057031869888306,
+     "D": 0.05694440007209778,
+     "exact": 3,
+     "occupied": 6.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.9062413573265076,
+     "D": 0.05295134708285332,
+     "exact": 4,
+     "occupied": 6.0416669845581055,
+     "worlds": 48
+    },
+    {
+     "food": 0.8992447853088379,
+     "D": 0.06093745678663254,
+     "exact": 4,
+     "occupied": 6.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.9100174307823181,
+     "D": 0.052430517971515656,
+     "exact": 5,
+     "occupied": 6.0,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 48,
+   "k": 6,
+   "init": "trap",
+   "mode": "shuffled",
+   "food": 0.817408874630928,
+   "D": 0.13541662693023682,
+   "occupied": 5.6875001192092896,
+   "exact": 3,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.8252170085906982,
+     "D": 0.1328124701976776,
+     "exact": 0,
+     "occupied": 5.645833492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.8123611807823181,
+     "D": 0.14097218215465546,
+     "exact": 1,
+     "occupied": 5.625,
+     "worlds": 48
+    },
+    {
+     "food": 0.8059288263320923,
+     "D": 0.14253467321395874,
+     "exact": 2,
+     "occupied": 5.75,
+     "worlds": 48
+    },
+    {
+     "food": 0.8261284828186035,
+     "D": 0.12534718215465546,
+     "exact": 0,
+     "occupied": 5.7291669845581055,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 48,
+   "k": 6,
+   "init": "trap",
+   "mode": "removed",
+   "food": 0.5000000149011612,
+   "D": 0.5,
+   "occupied": 3.0,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 3.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 3.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5000000596046448,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 3.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 3.0,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 50,
+   "k": 4,
+   "init": "trap",
+   "mode": "normal",
+   "food": 0.9247511923313141,
+   "D": 0.04136280994862318,
+   "occupied": 4.005208373069763,
+   "exact": 26,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.9399653077125549,
+     "D": 0.032291632145643234,
+     "exact": 10,
+     "occupied": 4.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.9118576049804688,
+     "D": 0.04999995976686478,
+     "exact": 3,
+     "occupied": 4.020833492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.9262790679931641,
+     "D": 0.040451355278491974,
+     "exact": 9,
+     "occupied": 4.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.9209027886390686,
+     "D": 0.04270829260349274,
+     "exact": 4,
+     "occupied": 4.0,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 50,
+   "k": 4,
+   "init": "trap",
+   "mode": "shuffled",
+   "food": 0.908664733171463,
+   "D": 0.052300307899713516,
+   "occupied": 4.0,
+   "exact": 20,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.9033623933792114,
+     "D": 0.058159686625003815,
+     "exact": 7,
+     "occupied": 4.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.9064874053001404,
+     "D": 0.052951350808143616,
+     "exact": 5,
+     "occupied": 4.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.9128993153572083,
+     "D": 0.048784684389829636,
+     "exact": 5,
+     "occupied": 4.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.911909818649292,
+     "D": 0.049305509775877,
+     "exact": 3,
+     "occupied": 4.0,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 50,
+   "k": 4,
+   "init": "trap",
+   "mode": "removed",
+   "food": 0.5,
+   "D": 0.5,
+   "occupied": 2.0,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 2.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 2.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 2.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 2.0,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 50,
+   "k": 4,
+   "init": "random",
+   "mode": "normal",
+   "food": 0.9096195846796036,
+   "D": 0.05182287283241749,
+   "occupied": 4.1562501192092896,
+   "exact": 10,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.9038253426551819,
+     "D": 0.05607634410262108,
+     "exact": 1,
+     "occupied": 4.145833492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.9177199006080627,
+     "D": 0.04635412618517876,
+     "exact": 3,
+     "occupied": 4.1875,
+     "worlds": 48
+    },
+    {
+     "food": 0.9079630970954895,
+     "D": 0.05243051052093506,
+     "exact": 6,
+     "occupied": 4.1666669845581055,
+     "worlds": 48
+    },
+    {
+     "food": 0.9089699983596802,
+     "D": 0.05243051052093506,
+     "exact": 0,
+     "occupied": 4.125,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 50,
+   "k": 4,
+   "init": "random",
+   "mode": "shuffled",
+   "food": 0.8946455866098404,
+   "D": 0.06067704316228628,
+   "occupied": 4.067708492279053,
+   "exact": 8,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.8910648226737976,
+     "D": 0.06249995529651642,
+     "exact": 1,
+     "occupied": 4.083333492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.8948727250099182,
+     "D": 0.059548571705818176,
+     "exact": 1,
+     "occupied": 4.020833492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.9091493487358093,
+     "D": 0.05173606798052788,
+     "exact": 3,
+     "occupied": 4.0625,
+     "worlds": 48
+    },
+    {
+     "food": 0.8834954500198364,
+     "D": 0.06892357766628265,
+     "exact": 3,
+     "occupied": 4.1041669845581055,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 50,
+   "k": 4,
+   "init": "random",
+   "mode": "removed",
+   "food": 0.5687037408351898,
+   "D": 0.3593749776482582,
+   "occupied": 7.510416865348816,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.5572685599327087,
+     "D": 0.3743055760860443,
+     "exact": 0,
+     "occupied": 7.6875,
+     "worlds": 48
+    },
+    {
+     "food": 0.5654224753379822,
+     "D": 0.3663194179534912,
+     "exact": 0,
+     "occupied": 7.645833492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.5706424117088318,
+     "D": 0.3541666269302368,
+     "exact": 0,
+     "occupied": 7.3541669845581055,
+     "worlds": 48
+    },
+    {
+     "food": 0.5814815163612366,
+     "D": 0.3427082896232605,
+     "exact": 0,
+     "occupied": 7.3541669845581055,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 72,
+   "k": 8,
+   "init": "trap",
+   "mode": "normal",
+   "food": 0.9008651971817017,
+   "D": 0.0652343351393938,
+   "occupied": 7.932291865348816,
+   "exact": 23,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.9121412634849548,
+     "D": 0.05607634782791138,
+     "exact": 3,
+     "occupied": 7.9375,
+     "worlds": 48
+    },
+    {
+     "food": 0.8958218097686768,
+     "D": 0.06909718364477158,
+     "exact": 7,
+     "occupied": 7.9166669845581055,
+     "worlds": 48
+    },
+    {
+     "food": 0.8991550803184509,
+     "D": 0.06597217917442322,
+     "exact": 5,
+     "occupied": 7.958333492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.8963426351547241,
+     "D": 0.06979162991046906,
+     "exact": 8,
+     "occupied": 7.9166669845581055,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 72,
+   "k": 8,
+   "init": "trap",
+   "mode": "shuffled",
+   "food": 0.7266406863927841,
+   "D": 0.23294267430901527,
+   "occupied": 6.744791746139526,
+   "exact": 5,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.7412616610527039,
+     "D": 0.22100691497325897,
+     "exact": 2,
+     "occupied": 6.770833492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.723541796207428,
+     "D": 0.22673606872558594,
+     "exact": 1,
+     "occupied": 6.9375,
+     "worlds": 48
+    },
+    {
+     "food": 0.763761579990387,
+     "D": 0.19739580154418945,
+     "exact": 1,
+     "occupied": 7.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.6779977083206177,
+     "D": 0.28663191199302673,
+     "exact": 1,
+     "occupied": 6.270833492279053,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 72,
+   "k": 8,
+   "init": "trap",
+   "mode": "removed",
+   "food": 0.5,
+   "D": 0.5,
+   "occupied": 4.0,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 4.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 4.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 4.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 4.0,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 72,
+   "k": 8,
+   "init": "random",
+   "mode": "normal",
+   "food": 0.8993084877729416,
+   "D": 0.06649301573634148,
+   "occupied": 7.947916865348816,
+   "exact": 25,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.8966782689094543,
+     "D": 0.0684027373790741,
+     "exact": 6,
+     "occupied": 7.9375,
+     "worlds": 48
+    },
+    {
+     "food": 0.9035995602607727,
+     "D": 0.0640624612569809,
+     "exact": 7,
+     "occupied": 7.958333492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.8993866443634033,
+     "D": 0.06510412693023682,
+     "exact": 8,
+     "occupied": 7.9791669845581055,
+     "worlds": 48
+    },
+    {
+     "food": 0.897569477558136,
+     "D": 0.0684027373790741,
+     "exact": 4,
+     "occupied": 7.9166669845581055,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 72,
+   "k": 8,
+   "init": "random",
+   "mode": "shuffled",
+   "food": 0.7200087010860443,
+   "D": 0.24318573623895645,
+   "occupied": 6.557291746139526,
+   "exact": 4,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.709768533706665,
+     "D": 0.25277775526046753,
+     "exact": 1,
+     "occupied": 6.5,
+     "worlds": 48
+    },
+    {
+     "food": 0.7150463461875916,
+     "D": 0.2489582896232605,
+     "exact": 1,
+     "occupied": 6.520833492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.7382639050483704,
+     "D": 0.22534720599651337,
+     "exact": 2,
+     "occupied": 6.708333492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.7169560194015503,
+     "D": 0.2456596940755844,
+     "exact": 0,
+     "occupied": 6.5,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 72,
+   "k": 8,
+   "init": "random",
+   "mode": "removed",
+   "food": 0.6171267628669739,
+   "D": 0.28359372168779373,
+   "occupied": 12.859375238418579,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.628912091255188,
+     "D": 0.2748263478279114,
+     "exact": 0,
+     "occupied": 12.833333969116211,
+     "worlds": 48
+    },
+    {
+     "food": 0.5965046286582947,
+     "D": 0.3003472089767456,
+     "exact": 0,
+     "occupied": 13.125,
+     "worlds": 48
+    },
+    {
+     "food": 0.6318750381469727,
+     "D": 0.2708333134651184,
+     "exact": 0,
+     "occupied": 12.6875,
+     "worlds": 48
+    },
+    {
+     "food": 0.6112152934074402,
+     "D": 0.28836801648139954,
+     "exact": 0,
+     "occupied": 12.791666984558105,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 12,
+   "init": "trap",
+   "mode": "normal",
+   "food": 0.9168056100606918,
+   "D": 0.061458298936486244,
+   "occupied": 11.708333492279053,
+   "exact": 30,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.9165971875190735,
+     "D": 0.06336802244186401,
+     "exact": 11,
+     "occupied": 11.6875,
+     "worlds": 48
+    },
+    {
+     "food": 0.9201563596725464,
+     "D": 0.0588541254401207,
+     "exact": 5,
+     "occupied": 11.75,
+     "worlds": 48
+    },
+    {
+     "food": 0.9198264479637146,
+     "D": 0.05868052691221237,
+     "exact": 8,
+     "occupied": 11.6875,
+     "worlds": 48
+    },
+    {
+     "food": 0.9106424450874329,
+     "D": 0.0649305209517479,
+     "exact": 6,
+     "occupied": 11.708333969116211,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 12,
+   "init": "trap",
+   "mode": "shuffled",
+   "food": 0.697048619389534,
+   "D": 0.27986107766628265,
+   "occupied": 9.166666984558105,
+   "exact": 1,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.6537500619888306,
+     "D": 0.3194444179534912,
+     "exact": 0,
+     "occupied": 8.75,
+     "worlds": 48
+    },
+    {
+     "food": 0.6970486044883728,
+     "D": 0.2809027433395386,
+     "exact": 0,
+     "occupied": 9.125,
+     "worlds": 48
+    },
+    {
+     "food": 0.7451041340827942,
+     "D": 0.23402774333953857,
+     "exact": 1,
+     "occupied": 9.708333969116211,
+     "worlds": 48
+    },
+    {
+     "food": 0.6922916769981384,
+     "D": 0.28506940603256226,
+     "exact": 0,
+     "occupied": 9.083333969116211,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 12,
+   "init": "trap",
+   "mode": "removed",
+   "food": 0.5,
+   "D": 0.5,
+   "occupied": 6.0,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 6.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 6.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 6.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 6.0,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 12,
+   "init": "random",
+   "mode": "normal",
+   "food": 0.9151128977537155,
+   "D": 0.06163190398365259,
+   "occupied": 11.734375476837158,
+   "exact": 25,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.9295486807823181,
+     "D": 0.05173607915639877,
+     "exact": 12,
+     "occupied": 11.75,
+     "worlds": 48
+    },
+    {
+     "food": 0.905086874961853,
+     "D": 0.07048606872558594,
+     "exact": 3,
+     "occupied": 11.645833969116211,
+     "worlds": 48
+    },
+    {
+     "food": 0.9080035090446472,
+     "D": 0.06215272843837738,
+     "exact": 3,
+     "occupied": 11.833333969116211,
+     "worlds": 48
+    },
+    {
+     "food": 0.9178125262260437,
+     "D": 0.062152739614248276,
+     "exact": 7,
+     "occupied": 11.708333969116211,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 12,
+   "init": "random",
+   "mode": "shuffled",
+   "food": 0.6169227808713913,
+   "D": 0.3608940839767456,
+   "occupied": 8.151041984558105,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.5869097709655762,
+     "D": 0.390625,
+     "exact": 0,
+     "occupied": 7.833333492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.5944792032241821,
+     "D": 0.38159722089767456,
+     "exact": 0,
+     "occupied": 7.895833492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.6311805844306946,
+     "D": 0.34652775526046753,
+     "exact": 0,
+     "occupied": 8.354166984558105,
+     "worlds": 48
+    },
+    {
+     "food": 0.6551215648651123,
+     "D": 0.32482635974884033,
+     "exact": 0,
+     "occupied": 8.520833969116211,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 12,
+   "init": "random",
+   "mode": "removed",
+   "food": 0.6085026562213898,
+   "D": 0.28289927542209625,
+   "occupied": 18.203125476837158,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.6077083945274353,
+     "D": 0.2805555462837219,
+     "exact": 0,
+     "occupied": 17.979167938232422,
+     "worlds": 48
+    },
+    {
+     "food": 0.6180035471916199,
+     "D": 0.27534720301628113,
+     "exact": 0,
+     "occupied": 18.39583396911621,
+     "worlds": 48
+    },
+    {
+     "food": 0.6016840934753418,
+     "D": 0.29010412096977234,
+     "exact": 0,
+     "occupied": 18.125,
+     "worlds": 48
+    },
+    {
+     "food": 0.6066145896911621,
+     "D": 0.2855902314186096,
+     "exact": 0,
+     "occupied": 18.3125,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 20,
+   "init": "trap",
+   "mode": "normal",
+   "food": 0.8840567767620087,
+   "D": 0.10078120604157448,
+   "occupied": 18.578125476837158,
+   "exact": 13,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.9007234573364258,
+     "D": 0.0848957896232605,
+     "exact": 7,
+     "occupied": 18.89583396911621,
+     "worlds": 48
+    },
+    {
+     "food": 0.9004051685333252,
+     "D": 0.08368051052093506,
+     "exact": 2,
+     "occupied": 18.95833396911621,
+     "worlds": 48
+    },
+    {
+     "food": 0.8623263835906982,
+     "D": 0.1222221776843071,
+     "exact": 2,
+     "occupied": 18.08333396911621,
+     "worlds": 48
+    },
+    {
+     "food": 0.8727720975875854,
+     "D": 0.11232634633779526,
+     "exact": 2,
+     "occupied": 18.375,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 20,
+   "init": "trap",
+   "mode": "shuffled",
+   "food": 0.5983362644910812,
+   "D": 0.39331595599651337,
+   "occupied": 12.453125238418579,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.5877604484558105,
+     "D": 0.4043402671813965,
+     "exact": 0,
+     "occupied": 12.229166984558105,
+     "worlds": 48
+    },
+    {
+     "food": 0.6200231909751892,
+     "D": 0.37013888359069824,
+     "exact": 0,
+     "occupied": 12.979166984558105,
+     "worlds": 48
+    },
+    {
+     "food": 0.5982349514961243,
+     "D": 0.39253470301628113,
+     "exact": 0,
+     "occupied": 12.479166984558105,
+     "worlds": 48
+    },
+    {
+     "food": 0.5873264670372009,
+     "D": 0.4062499701976776,
+     "exact": 0,
+     "occupied": 12.125,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 20,
+   "init": "trap",
+   "mode": "removed",
+   "food": 0.4997395873069763,
+   "D": 0.5002604126930237,
+   "occupied": 9.994791746139526,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 10.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.4989583492279053,
+     "D": 0.5010416507720947,
+     "exact": 0,
+     "occupied": 9.979166984558105,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 10.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 10.0,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 40,
+   "init": "random",
+   "mode": "normal",
+   "food": 0.9405237883329391,
+   "D": 0.05338537413626909,
+   "occupied": 38.36979389190674,
+   "exact": 26,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.9424769282341003,
+     "D": 0.05069440230727196,
+     "exact": 8,
+     "occupied": 38.520835876464844,
+     "worlds": 48
+    },
+    {
+     "food": 0.9454283118247986,
+     "D": 0.048784684389829636,
+     "exact": 10,
+     "occupied": 38.54166793823242,
+     "worlds": 48
+    },
+    {
+     "food": 0.9361690282821655,
+     "D": 0.05815967917442322,
+     "exact": 7,
+     "occupied": 38.145835876464844,
+     "worlds": 48
+    },
+    {
+     "food": 0.9380208849906921,
+     "D": 0.05590273067355156,
+     "exact": 1,
+     "occupied": 38.270835876464844,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 40,
+   "init": "random",
+   "mode": "shuffled",
+   "food": 0.58466437458992,
+   "D": 0.4114583134651184,
+   "occupied": 23.88020896911621,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.5833333730697632,
+     "D": 0.41354164481163025,
+     "exact": 0,
+     "occupied": 23.729167938232422,
+     "worlds": 48
+    },
+    {
+     "food": 0.5808449387550354,
+     "D": 0.4151041507720947,
+     "exact": 0,
+     "occupied": 23.75,
+     "worlds": 48
+    },
+    {
+     "food": 0.5634837746620178,
+     "D": 0.4321180284023285,
+     "exact": 0,
+     "occupied": 23.104167938232422,
+     "worlds": 48
+    },
+    {
+     "food": 0.6109954118728638,
+     "D": 0.38506942987442017,
+     "exact": 0,
+     "occupied": 24.9375,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 40,
+   "init": "random",
+   "mode": "removed",
+   "food": 0.5342737287282944,
+   "D": 0.4575086534023285,
+   "occupied": 22.61458396911621,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.5329861044883728,
+     "D": 0.4562499523162842,
+     "exact": 0,
+     "occupied": 22.95833396911621,
+     "worlds": 48
+    },
+    {
+     "food": 0.5269675850868225,
+     "D": 0.46319442987442017,
+     "exact": 0,
+     "occupied": 22.58333396911621,
+     "worlds": 48
+    },
+    {
+     "food": 0.5439236164093018,
+     "D": 0.4487847089767456,
+     "exact": 0,
+     "occupied": 22.83333396911621,
+     "worlds": 48
+    },
+    {
+     "food": 0.5332176089286804,
+     "D": 0.461805522441864,
+     "exact": 0,
+     "occupied": 22.08333396911621,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 40,
+   "init": "trap",
+   "mode": "normal",
+   "food": 0.8666232824325562,
+   "D": 0.12443572841584682,
+   "occupied": 35.76041793823242,
+   "exact": 3,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.8502894043922424,
+     "D": 0.14184024930000305,
+     "exact": 1,
+     "occupied": 34.958335876464844,
+     "worlds": 48
+    },
+    {
+     "food": 0.8680555820465088,
+     "D": 0.12291663140058517,
+     "exact": 2,
+     "occupied": 35.833335876464844,
+     "worlds": 48
+    },
+    {
+     "food": 0.8736111521720886,
+     "D": 0.11666662991046906,
+     "exact": 0,
+     "occupied": 36.125,
+     "worlds": 48
+    },
+    {
+     "food": 0.8745369911193848,
+     "D": 0.11631940305233002,
+     "exact": 0,
+     "occupied": 36.125,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 40,
+   "init": "trap",
+   "mode": "shuffled",
+   "food": 0.4548756033182144,
+   "D": 0.5413628369569778,
+   "occupied": 18.656250953674316,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.47193291783332825,
+     "D": 0.5241319537162781,
+     "exact": 0,
+     "occupied": 19.354167938232422,
+     "worlds": 48
+    },
+    {
+     "food": 0.440972238779068,
+     "D": 0.5548610687255859,
+     "exact": 0,
+     "occupied": 18.166667938232422,
+     "worlds": 48
+    },
+    {
+     "food": 0.4442708492279053,
+     "D": 0.5519096851348877,
+     "exact": 0,
+     "occupied": 18.229167938232422,
+     "worlds": 48
+    },
+    {
+     "food": 0.46232640743255615,
+     "D": 0.5345486402511597,
+     "exact": 0,
+     "occupied": 18.875,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 40,
+   "init": "trap",
+   "mode": "removed",
+   "food": 0.5,
+   "D": 0.5,
+   "occupied": 20.0,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 20.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 20.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 20.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 20.0,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s4111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 36,
+   "k": 3,
+   "init": "trap",
+   "mode": "normal",
+   "food": 0.9502267837524414,
+   "D": 0.027039901353418827,
+   "occupied": 3.0312500596046448,
+   "exact": 67,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.9604600667953491,
+     "D": 0.020833302289247513,
+     "exact": 17,
+     "occupied": 3.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.9466536045074463,
+     "D": 0.028993025422096252,
+     "exact": 14,
+     "occupied": 3.0625,
+     "worlds": 48
+    },
+    {
+     "food": 0.9475347399711609,
+     "D": 0.02934025228023529,
+     "exact": 19,
+     "occupied": 3.0416667461395264,
+     "worlds": 48
+    },
+    {
+     "food": 0.9462587237358093,
+     "D": 0.028993025422096252,
+     "exact": 17,
+     "occupied": 3.0208334922790527,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s4111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 36,
+   "k": 3,
+   "init": "trap",
+   "mode": "shuffled",
+   "food": 0.9509103894233704,
+   "D": 0.026085040532052517,
+   "occupied": 3.0,
+   "exact": 65,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.9491710662841797,
+     "D": 0.02725691720843315,
+     "exact": 19,
+     "occupied": 3.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.9448133707046509,
+     "D": 0.029340248554944992,
+     "exact": 14,
+     "occupied": 3.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.9621006846427917,
+     "D": 0.01979164034128189,
+     "exact": 19,
+     "occupied": 3.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.9475564360618591,
+     "D": 0.027951356023550034,
+     "exact": 13,
+     "occupied": 3.0,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s4111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 36,
+   "k": 3,
+   "init": "trap",
+   "mode": "removed",
+   "food": 0.3333333432674408,
+   "D": 0.6666666269302368,
+   "occupied": 1.0,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.3333333432674408,
+     "D": 0.6666666269302368,
+     "exact": 0,
+     "occupied": 1.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.3333333432674408,
+     "D": 0.6666666269302368,
+     "exact": 0,
+     "occupied": 1.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.3333333432674408,
+     "D": 0.6666666269302368,
+     "exact": 0,
+     "occupied": 1.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.3333333432674408,
+     "D": 0.6666666269302368,
+     "exact": 0,
+     "occupied": 1.0,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s4111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 36,
+   "k": 3,
+   "init": "random",
+   "mode": "normal",
+   "food": 0.7608160078525543,
+   "D": 0.1786457970738411,
+   "occupied": 5.244791865348816,
+   "exact": 1,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.7627735137939453,
+     "D": 0.1777777373790741,
+     "exact": 1,
+     "occupied": 5.2916669845581055,
+     "worlds": 48
+    },
+    {
+     "food": 0.7604557871818542,
+     "D": 0.17586801946163177,
+     "exact": 0,
+     "occupied": 5.3125,
+     "worlds": 48
+    },
+    {
+     "food": 0.7599826455116272,
+     "D": 0.18263885378837585,
+     "exact": 0,
+     "occupied": 5.145833492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.7600520849227905,
+     "D": 0.17829857766628265,
+     "exact": 0,
+     "occupied": 5.2291669845581055,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s4111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 36,
+   "k": 3,
+   "init": "random",
+   "mode": "shuffled",
+   "food": 0.7782487273216248,
+   "D": 0.1625867746770382,
+   "occupied": 4.9218751192092896,
+   "exact": 4,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.7730686068534851,
+     "D": 0.16857634484767914,
+     "exact": 0,
+     "occupied": 5.083333492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.7936111688613892,
+     "D": 0.15069441497325897,
+     "exact": 1,
+     "occupied": 4.770833492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.7700216770172119,
+     "D": 0.17118053138256073,
+     "exact": 0,
+     "occupied": 5.020833492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.7762934565544128,
+     "D": 0.15989580750465393,
+     "exact": 3,
+     "occupied": 4.8125,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s4111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 36,
+   "k": 3,
+   "init": "random",
+   "mode": "removed",
+   "food": 0.5607259273529053,
+   "D": 0.3476996347308159,
+   "occupied": 6.583333492279053,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.5488064289093018,
+     "D": 0.35972219705581665,
+     "exact": 0,
+     "occupied": 6.645833492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.5555989742279053,
+     "D": 0.3472222089767456,
+     "exact": 0,
+     "occupied": 6.375,
+     "worlds": 48
+    },
+    {
+     "food": 0.5634852647781372,
+     "D": 0.3461805284023285,
+     "exact": 0,
+     "occupied": 6.7291669845581055,
+     "worlds": 48
+    },
+    {
+     "food": 0.5750130414962769,
+     "D": 0.3376736044883728,
+     "exact": 0,
+     "occupied": 6.583333492279053,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s4111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 48,
+   "k": 6,
+   "init": "trap",
+   "mode": "normal",
+   "food": 0.9071875214576721,
+   "D": 0.05503468122333288,
+   "occupied": 5.979166865348816,
+   "exact": 16,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.9033593535423279,
+     "D": 0.057812463492155075,
+     "exact": 5,
+     "occupied": 5.9791669845581055,
+     "worlds": 48
+    },
+    {
+     "food": 0.9069358110427856,
+     "D": 0.05607634782791138,
+     "exact": 5,
+     "occupied": 5.958333492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.9135677814483643,
+     "D": 0.0501735657453537,
+     "exact": 3,
+     "occupied": 6.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.9048871397972107,
+     "D": 0.05607634782791138,
+     "exact": 3,
+     "occupied": 5.9791669845581055,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s4111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 48,
+   "k": 6,
+   "init": "trap",
+   "mode": "shuffled",
+   "food": 0.8185460567474365,
+   "D": 0.13342010043561459,
+   "occupied": 5.6718751192092896,
+   "exact": 1,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.8182812929153442,
+     "D": 0.13402774930000305,
+     "exact": 1,
+     "occupied": 5.645833492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.8131337761878967,
+     "D": 0.13836801052093506,
+     "exact": 0,
+     "occupied": 5.625,
+     "worlds": 48
+    },
+    {
+     "food": 0.8320398926734924,
+     "D": 0.12065967172384262,
+     "exact": 0,
+     "occupied": 5.7291669845581055,
+     "worlds": 48
+    },
+    {
+     "food": 0.8107292652130127,
+     "D": 0.1406249701976776,
+     "exact": 0,
+     "occupied": 5.6875,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s4111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 48,
+   "k": 6,
+   "init": "trap",
+   "mode": "removed",
+   "food": 0.5,
+   "D": 0.5,
+   "occupied": 3.0,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 3.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 3.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 3.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 3.0,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s4111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 50,
+   "k": 4,
+   "init": "trap",
+   "mode": "normal",
+   "food": 0.9267289042472839,
+   "D": 0.04036454297602177,
+   "occupied": 4.005208373069763,
+   "exact": 26,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.929155170917511,
+     "D": 0.03819440305233002,
+     "exact": 8,
+     "occupied": 4.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.9265220165252686,
+     "D": 0.041493017226457596,
+     "exact": 7,
+     "occupied": 4.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.9244386553764343,
+     "D": 0.04218745976686478,
+     "exact": 5,
+     "occupied": 4.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.9267997741699219,
+     "D": 0.03958329185843468,
+     "exact": 6,
+     "occupied": 4.020833492279053,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s4111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 50,
+   "k": 4,
+   "init": "trap",
+   "mode": "shuffled",
+   "food": 0.906383141875267,
+   "D": 0.05321176443248987,
+   "occupied": 3.9947916865348816,
+   "exact": 24,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.914936363697052,
+     "D": 0.04774301499128342,
+     "exact": 8,
+     "occupied": 4.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.9071991443634033,
+     "D": 0.052083294838666916,
+     "exact": 7,
+     "occupied": 4.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.8968461155891418,
+     "D": 0.05989579111337662,
+     "exact": 7,
+     "occupied": 3.9791667461395264,
+     "worlds": 48
+    },
+    {
+     "food": 0.906550943851471,
+     "D": 0.05312495678663254,
+     "exact": 2,
+     "occupied": 4.0,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s4111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 50,
+   "k": 4,
+   "init": "trap",
+   "mode": "removed",
+   "food": 0.5,
+   "D": 0.5,
+   "occupied": 2.0,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 2.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 2.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 2.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 2.0,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s4111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 50,
+   "k": 4,
+   "init": "random",
+   "mode": "normal",
+   "food": 0.9061603844165802,
+   "D": 0.054644057527184486,
+   "occupied": 4.213541865348816,
+   "exact": 14,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.8946180939674377,
+     "D": 0.062152739614248276,
+     "exact": 3,
+     "occupied": 4.270833492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.9065452218055725,
+     "D": 0.053472183644771576,
+     "exact": 2,
+     "occupied": 4.1875,
+     "worlds": 48
+    },
+    {
+     "food": 0.9101737141609192,
+     "D": 0.05381939932703972,
+     "exact": 4,
+     "occupied": 4.2291669845581055,
+     "worlds": 48
+    },
+    {
+     "food": 0.9133045077323914,
+     "D": 0.049131907522678375,
+     "exact": 5,
+     "occupied": 4.1666669845581055,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s4111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 50,
+   "k": 4,
+   "init": "random",
+   "mode": "shuffled",
+   "food": 0.9030613750219345,
+   "D": 0.05546871107071638,
+   "occupied": 4.0625001192092896,
+   "exact": 14,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.890295147895813,
+     "D": 0.0657985731959343,
+     "exact": 2,
+     "occupied": 4.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.921840250492096,
+     "D": 0.044270794838666916,
+     "exact": 6,
+     "occupied": 4.020833492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.8979457020759583,
+     "D": 0.056944407522678375,
+     "exact": 4,
+     "occupied": 4.125,
+     "worlds": 48
+    },
+    {
+     "food": 0.9021643996238708,
+     "D": 0.05486106872558594,
+     "exact": 2,
+     "occupied": 4.1041669845581055,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s4111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 50,
+   "k": 4,
+   "init": "random",
+   "mode": "removed",
+   "food": 0.574642688035965,
+   "D": 0.35125867277383804,
+   "occupied": 7.4531251192092896,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.560671329498291,
+     "D": 0.3645833134651184,
+     "exact": 0,
+     "occupied": 7.5625,
+     "worlds": 48
+    },
+    {
+     "food": 0.5739873647689819,
+     "D": 0.35624998807907104,
+     "exact": 0,
+     "occupied": 7.583333492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.5755208730697632,
+     "D": 0.3479166626930237,
+     "exact": 0,
+     "occupied": 7.395833492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.5883911848068237,
+     "D": 0.33628472685813904,
+     "exact": 0,
+     "occupied": 7.270833492279053,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s4111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 72,
+   "k": 8,
+   "init": "trap",
+   "mode": "normal",
+   "food": 0.9047136008739471,
+   "D": 0.06171870790421963,
+   "occupied": 7.927083373069763,
+   "exact": 21,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.901840329170227,
+     "D": 0.0640624612569809,
+     "exact": 6,
+     "occupied": 7.9375,
+     "worlds": 48
+    },
+    {
+     "food": 0.9024768471717834,
+     "D": 0.0649305135011673,
+     "exact": 6,
+     "occupied": 7.895833492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.9030094146728516,
+     "D": 0.0597221776843071,
+     "exact": 3,
+     "occupied": 7.9375,
+     "worlds": 48
+    },
+    {
+     "food": 0.9115278124809265,
+     "D": 0.05815967917442322,
+     "exact": 6,
+     "occupied": 7.9375,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s4111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 72,
+   "k": 8,
+   "init": "trap",
+   "mode": "shuffled",
+   "food": 0.7435445934534073,
+   "D": 0.2170572504401207,
+   "occupied": 6.859375238418579,
+   "exact": 3,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.7346296906471252,
+     "D": 0.2281249612569809,
+     "exact": 1,
+     "occupied": 6.7291669845581055,
+     "worlds": 48
+    },
+    {
+     "food": 0.7591319680213928,
+     "D": 0.20572912693023682,
+     "exact": 0,
+     "occupied": 6.875,
+     "worlds": 48
+    },
+    {
+     "food": 0.7386227250099182,
+     "D": 0.21892356872558594,
+     "exact": 1,
+     "occupied": 6.9166669845581055,
+     "worlds": 48
+    },
+    {
+     "food": 0.7417939901351929,
+     "D": 0.21545134484767914,
+     "exact": 1,
+     "occupied": 6.9166669845581055,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s4111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 72,
+   "k": 8,
+   "init": "trap",
+   "mode": "removed",
+   "food": 0.5,
+   "D": 0.5,
+   "occupied": 4.0,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 4.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 4.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 4.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 4.0,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s4111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 72,
+   "k": 8,
+   "init": "random",
+   "mode": "normal",
+   "food": 0.8960127532482147,
+   "D": 0.0651475265622139,
+   "occupied": 7.958333611488342,
+   "exact": 10,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.8995370864868164,
+     "D": 0.06527774035930634,
+     "exact": 4,
+     "occupied": 7.9166669845581055,
+     "worlds": 48
+    },
+    {
+     "food": 0.8970023393630981,
+     "D": 0.0657985657453537,
+     "exact": 3,
+     "occupied": 7.958333492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.8984490633010864,
+     "D": 0.06197912245988846,
+     "exact": 3,
+     "occupied": 7.9791669845581055,
+     "worlds": 48
+    },
+    {
+     "food": 0.8890625238418579,
+     "D": 0.0675346776843071,
+     "exact": 0,
+     "occupied": 7.9791669845581055,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s4111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 72,
+   "k": 8,
+   "init": "random",
+   "mode": "shuffled",
+   "food": 0.7053964585065842,
+   "D": 0.2593315690755844,
+   "occupied": 6.463541865348816,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.7117477655410767,
+     "D": 0.250520795583725,
+     "exact": 0,
+     "occupied": 6.6041669845581055,
+     "worlds": 48
+    },
+    {
+     "food": 0.7029861807823181,
+     "D": 0.2656249701976776,
+     "exact": 0,
+     "occupied": 6.395833492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.6964583396911621,
+     "D": 0.2649305462837219,
+     "exact": 0,
+     "occupied": 6.395833492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.7103935480117798,
+     "D": 0.25624996423721313,
+     "exact": 0,
+     "occupied": 6.458333492279053,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s4111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 72,
+   "k": 8,
+   "init": "random",
+   "mode": "removed",
+   "food": 0.6137471497058868,
+   "D": 0.2849392145872116,
+   "occupied": 12.932291984558105,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.6170023679733276,
+     "D": 0.28506943583488464,
+     "exact": 0,
+     "occupied": 13.145833969116211,
+     "worlds": 48
+    },
+    {
+     "food": 0.6006250381469727,
+     "D": 0.29305553436279297,
+     "exact": 0,
+     "occupied": 13.020833969116211,
+     "worlds": 48
+    },
+    {
+     "food": 0.633807897567749,
+     "D": 0.27013885974884033,
+     "exact": 0,
+     "occupied": 12.8125,
+     "worlds": 48
+    },
+    {
+     "food": 0.603553295135498,
+     "D": 0.2914930284023285,
+     "exact": 0,
+     "occupied": 12.75,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s4111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 12,
+   "init": "trap",
+   "mode": "normal",
+   "food": 0.9082292020320892,
+   "D": 0.06757808662950993,
+   "occupied": 11.677083969116211,
+   "exact": 22,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.9126389622688293,
+     "D": 0.06336801499128342,
+     "exact": 6,
+     "occupied": 11.708333969116211,
+     "worlds": 48
+    },
+    {
+     "food": 0.9180208444595337,
+     "D": 0.05694440007209778,
+     "exact": 4,
+     "occupied": 11.833333969116211,
+     "worlds": 48
+    },
+    {
+     "food": 0.9130902886390686,
+     "D": 0.0649305209517479,
+     "exact": 5,
+     "occupied": 11.645833969116211,
+     "worlds": 48
+    },
+    {
+     "food": 0.8891667127609253,
+     "D": 0.08506941050291061,
+     "exact": 7,
+     "occupied": 11.520833969116211,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s4111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 12,
+   "init": "trap",
+   "mode": "shuffled",
+   "food": 0.7001432627439499,
+   "D": 0.27764755487442017,
+   "occupied": 9.223958730697632,
+   "exact": 4,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.7200521230697632,
+     "D": 0.2595486044883728,
+     "exact": 0,
+     "occupied": 9.375,
+     "worlds": 48
+    },
+    {
+     "food": 0.6684895753860474,
+     "D": 0.3088541626930237,
+     "exact": 0,
+     "occupied": 8.854166984558105,
+     "worlds": 48
+    },
+    {
+     "food": 0.7260938286781311,
+     "D": 0.25121524930000305,
+     "exact": 2,
+     "occupied": 9.520833969116211,
+     "worlds": 48
+    },
+    {
+     "food": 0.6859375238418579,
+     "D": 0.29097220301628113,
+     "exact": 2,
+     "occupied": 9.145833969116211,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s4111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 12,
+   "init": "trap",
+   "mode": "removed",
+   "food": 0.5,
+   "D": 0.5,
+   "occupied": 6.0,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 6.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 6.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 6.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 6.0,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s4111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 12,
+   "init": "random",
+   "mode": "normal",
+   "food": 0.9050781726837158,
+   "D": 0.0701388493180275,
+   "occupied": 11.645833492279053,
+   "exact": 17,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.9091145992279053,
+     "D": 0.06892357021570206,
+     "exact": 6,
+     "occupied": 11.625,
+     "worlds": 48
+    },
+    {
+     "food": 0.8965451717376709,
+     "D": 0.07552079111337662,
+     "exact": 2,
+     "occupied": 11.625,
+     "worlds": 48
+    },
+    {
+     "food": 0.9109375476837158,
+     "D": 0.06388884782791138,
+     "exact": 6,
+     "occupied": 11.6875,
+     "worlds": 48
+    },
+    {
+     "food": 0.9037153720855713,
+     "D": 0.07222218811511993,
+     "exact": 3,
+     "occupied": 11.645833969116211,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s4111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 12,
+   "init": "random",
+   "mode": "shuffled",
+   "food": 0.631506085395813,
+   "D": 0.34605032205581665,
+   "occupied": 8.348958611488342,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.602343738079071,
+     "D": 0.37517356872558594,
+     "exact": 0,
+     "occupied": 7.958333492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.6551563143730164,
+     "D": 0.32170137763023376,
+     "exact": 0,
+     "occupied": 8.666666984558105,
+     "worlds": 48
+    },
+    {
+     "food": 0.6171354055404663,
+     "D": 0.36128470301628113,
+     "exact": 0,
+     "occupied": 8.145833969116211,
+     "worlds": 48
+    },
+    {
+     "food": 0.6513888835906982,
+     "D": 0.32604163885116577,
+     "exact": 0,
+     "occupied": 8.625,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s4111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 12,
+   "init": "random",
+   "mode": "removed",
+   "food": 0.605143278837204,
+   "D": 0.2843315601348877,
+   "occupied": 18.119792461395264,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.6010938286781311,
+     "D": 0.28524303436279297,
+     "exact": 0,
+     "occupied": 17.979167938232422,
+     "worlds": 48
+    },
+    {
+     "food": 0.612986147403717,
+     "D": 0.27968746423721313,
+     "exact": 0,
+     "occupied": 18.291667938232422,
+     "worlds": 48
+    },
+    {
+     "food": 0.5976042151451111,
+     "D": 0.29027771949768066,
+     "exact": 0,
+     "occupied": 18.08333396911621,
+     "worlds": 48
+    },
+    {
+     "food": 0.6088889241218567,
+     "D": 0.282118022441864,
+     "exact": 0,
+     "occupied": 18.125,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s4111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 20,
+   "init": "trap",
+   "mode": "normal",
+   "food": 0.8779875934123993,
+   "D": 0.10581593215465546,
+   "occupied": 18.557292938232422,
+   "exact": 6,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.8903067708015442,
+     "D": 0.09513884782791138,
+     "exact": 3,
+     "occupied": 18.791667938232422,
+     "worlds": 48
+    },
+    {
+     "food": 0.8789930939674377,
+     "D": 0.10677079856395721,
+     "exact": 1,
+     "occupied": 18.479167938232422,
+     "worlds": 48
+    },
+    {
+     "food": 0.868807852268219,
+     "D": 0.1144096776843071,
+     "exact": 1,
+     "occupied": 18.416667938232422,
+     "worlds": 48
+    },
+    {
+     "food": 0.8738426566123962,
+     "D": 0.10694440454244614,
+     "exact": 1,
+     "occupied": 18.541667938232422,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s4111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 20,
+   "init": "trap",
+   "mode": "shuffled",
+   "food": 0.5821976214647293,
+   "D": 0.4084635302424431,
+   "occupied": 12.203125238418579,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.5650463104248047,
+     "D": 0.4260416626930237,
+     "exact": 0,
+     "occupied": 11.854166984558105,
+     "worlds": 48
+    },
+    {
+     "food": 0.5978877544403076,
+     "D": 0.39357638359069824,
+     "exact": 0,
+     "occupied": 12.458333969116211,
+     "worlds": 48
+    },
+    {
+     "food": 0.6042823791503906,
+     "D": 0.38506942987442017,
+     "exact": 0,
+     "occupied": 12.6875,
+     "worlds": 48
+    },
+    {
+     "food": 0.5615740418434143,
+     "D": 0.42916664481163025,
+     "exact": 0,
+     "occupied": 11.8125,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s4111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 20,
+   "init": "trap",
+   "mode": "removed",
+   "food": 0.4997396096587181,
+   "D": 0.5002604126930237,
+   "occupied": 9.994791746139526,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 10.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.49895837903022766,
+     "D": 0.5010416507720947,
+     "exact": 0,
+     "occupied": 9.979166984558105,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 10.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5000000596046448,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 10.0,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s4111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 40,
+   "init": "random",
+   "mode": "normal",
+   "food": 0.9423611611127853,
+   "D": 0.05160586163401604,
+   "occupied": 38.421875953674316,
+   "exact": 28,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.9382523894309998,
+     "D": 0.055381905287504196,
+     "exact": 6,
+     "occupied": 38.29166793823242,
+     "worlds": 48
+    },
+    {
+     "food": 0.9489005208015442,
+     "D": 0.04635412618517876,
+     "exact": 8,
+     "occupied": 38.5,
+     "worlds": 48
+    },
+    {
+     "food": 0.9348958730697632,
+     "D": 0.0588541254401207,
+     "exact": 6,
+     "occupied": 38.125,
+     "worlds": 48
+    },
+    {
+     "food": 0.9473958611488342,
+     "D": 0.0458332896232605,
+     "exact": 8,
+     "occupied": 38.770835876464844,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s4111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 40,
+   "init": "random",
+   "mode": "shuffled",
+   "food": 0.5881221145391464,
+   "D": 0.4079426899552345,
+   "occupied": 24.02083396911621,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.590624988079071,
+     "D": 0.4055555462837219,
+     "exact": 0,
+     "occupied": 24.08333396911621,
+     "worlds": 48
+    },
+    {
+     "food": 0.5951389074325562,
+     "D": 0.40138888359069824,
+     "exact": 0,
+     "occupied": 24.25,
+     "worlds": 48
+    },
+    {
+     "food": 0.5677661895751953,
+     "D": 0.4279513359069824,
+     "exact": 0,
+     "occupied": 23.27083396911621,
+     "worlds": 48
+    },
+    {
+     "food": 0.5989583730697632,
+     "D": 0.3968749940395355,
+     "exact": 0,
+     "occupied": 24.479167938232422,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s4111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 40,
+   "init": "random",
+   "mode": "removed",
+   "food": 0.5342882126569748,
+   "D": 0.45407983660697937,
+   "occupied": 23.114583492279053,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.5337384939193726,
+     "D": 0.45503470301628113,
+     "exact": 0,
+     "occupied": 23.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5292823910713196,
+     "D": 0.4555555284023285,
+     "exact": 0,
+     "occupied": 23.45833396911621,
+     "worlds": 48
+    },
+    {
+     "food": 0.5456597208976746,
+     "D": 0.4470486044883728,
+     "exact": 0,
+     "occupied": 22.9375,
+     "worlds": 48
+    },
+    {
+     "food": 0.5284722447395325,
+     "D": 0.45868051052093506,
+     "exact": 0,
+     "occupied": 23.0625,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s4111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 40,
+   "init": "trap",
+   "mode": "normal",
+   "food": 0.8592014312744141,
+   "D": 0.13190100714564323,
+   "occupied": 35.44791793823242,
+   "exact": 3,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.8603009581565857,
+     "D": 0.13194440305233002,
+     "exact": 0,
+     "occupied": 35.35416793823242,
+     "worlds": 48
+    },
+    {
+     "food": 0.8622106909751892,
+     "D": 0.12881940603256226,
+     "exact": 1,
+     "occupied": 35.583335876464844,
+     "worlds": 48
+    },
+    {
+     "food": 0.8612268567085266,
+     "D": 0.12986108660697937,
+     "exact": 2,
+     "occupied": 35.54166793823242,
+     "worlds": 48
+    },
+    {
+     "food": 0.8530672192573547,
+     "D": 0.1369791328907013,
+     "exact": 0,
+     "occupied": 35.3125,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s4111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 40,
+   "init": "trap",
+   "mode": "shuffled",
+   "food": 0.46043115109205246,
+   "D": 0.5365017354488373,
+   "occupied": 18.80208396911621,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.48125001788139343,
+     "D": 0.515625,
+     "exact": 0,
+     "occupied": 19.64583396911621,
+     "worlds": 48
+    },
+    {
+     "food": 0.44392362236976624,
+     "D": 0.5532985925674438,
+     "exact": 0,
+     "occupied": 18.104167938232422,
+     "worlds": 48
+    },
+    {
+     "food": 0.4529514014720917,
+     "D": 0.5439236164093018,
+     "exact": 0,
+     "occupied": 18.5,
+     "worlds": 48
+    },
+    {
+     "food": 0.4635995626449585,
+     "D": 0.5331597328186035,
+     "exact": 0,
+     "occupied": 18.95833396911621,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R8_s4111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 40,
+   "init": "trap",
+   "mode": "removed",
+   "food": 0.5,
+   "D": 0.5,
+   "occupied": 20.0,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 20.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 20.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 20.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 20.0,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_RAW_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 36,
+   "k": 3,
+   "init": "trap",
+   "mode": "normal",
+   "food": 0.9502995163202286,
+   "D": 0.026909690350294113,
+   "occupied": 3.041666805744171,
+   "exact": 62,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.9600651264190674,
+     "D": 0.0211805310100317,
+     "exact": 20,
+     "occupied": 3.0208334922790527,
+     "worlds": 48
+    },
+    {
+     "food": 0.9471527934074402,
+     "D": 0.029340244829654694,
+     "exact": 13,
+     "occupied": 3.1041667461395264,
+     "worlds": 48
+    },
+    {
+     "food": 0.9500781893730164,
+     "D": 0.026909690350294113,
+     "exact": 16,
+     "occupied": 3.0208334922790527,
+     "worlds": 48
+    },
+    {
+     "food": 0.9439019560813904,
+     "D": 0.030208295211195946,
+     "exact": 13,
+     "occupied": 3.0208334922790527,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_RAW_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 36,
+   "k": 3,
+   "init": "trap",
+   "mode": "shuffled",
+   "food": 0.9367502331733704,
+   "D": 0.03398434352129698,
+   "occupied": 3.0,
+   "exact": 51,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.9385808706283569,
+     "D": 0.03281246870756149,
+     "exact": 12,
+     "occupied": 3.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.9272655844688416,
+     "D": 0.039236076176166534,
+     "exact": 11,
+     "occupied": 3.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.9349218606948853,
+     "D": 0.03506941720843315,
+     "exact": 16,
+     "occupied": 3.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.9462326169013977,
+     "D": 0.028819411993026733,
+     "exact": 12,
+     "occupied": 3.0,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_RAW_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 36,
+   "k": 3,
+   "init": "trap",
+   "mode": "removed",
+   "food": 0.3333333432674408,
+   "D": 0.6666666269302368,
+   "occupied": 1.0,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.3333333432674408,
+     "D": 0.6666666269302368,
+     "exact": 0,
+     "occupied": 1.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.3333333432674408,
+     "D": 0.6666666269302368,
+     "exact": 0,
+     "occupied": 1.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.3333333432674408,
+     "D": 0.6666666269302368,
+     "exact": 0,
+     "occupied": 1.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.3333333432674408,
+     "D": 0.6666666269302368,
+     "exact": 0,
+     "occupied": 1.0,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_RAW_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 36,
+   "k": 3,
+   "init": "random",
+   "mode": "normal",
+   "food": 0.7643088400363922,
+   "D": 0.17812497168779373,
+   "occupied": 5.1406251192092896,
+   "exact": 4,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.7643620371818542,
+     "D": 0.17673608660697937,
+     "exact": 1,
+     "occupied": 5.0625,
+     "worlds": 48
+    },
+    {
+     "food": 0.758155345916748,
+     "D": 0.18350690603256226,
+     "exact": 1,
+     "occupied": 5.3125,
+     "worlds": 48
+    },
+    {
+     "food": 0.7548220753669739,
+     "D": 0.18871524930000305,
+     "exact": 1,
+     "occupied": 5.2916669845581055,
+     "worlds": 48
+    },
+    {
+     "food": 0.7798959016799927,
+     "D": 0.16354164481163025,
+     "exact": 1,
+     "occupied": 4.895833492279053,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_RAW_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 36,
+   "k": 3,
+   "init": "random",
+   "mode": "shuffled",
+   "food": 0.765949472784996,
+   "D": 0.17569440975785255,
+   "occupied": 5.083333611488342,
+   "exact": 2,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.7535721063613892,
+     "D": 0.1892360895872116,
+     "exact": 1,
+     "occupied": 5.2916669845581055,
+     "worlds": 48
+    },
+    {
+     "food": 0.7947700023651123,
+     "D": 0.15190967917442322,
+     "exact": 1,
+     "occupied": 4.770833492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.756944477558136,
+     "D": 0.18229162693023682,
+     "exact": 0,
+     "occupied": 5.1041669845581055,
+     "worlds": 48
+    },
+    {
+     "food": 0.7585113048553467,
+     "D": 0.17934024333953857,
+     "exact": 0,
+     "occupied": 5.1666669845581055,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_RAW_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 36,
+   "k": 3,
+   "init": "random",
+   "mode": "removed",
+   "food": 0.5533279180526733,
+   "D": 0.3539496287703514,
+   "occupied": 6.692708492279053,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.5479210019111633,
+     "D": 0.3574652373790741,
+     "exact": 0,
+     "occupied": 6.7916669845581055,
+     "worlds": 48
+    },
+    {
+     "food": 0.5548784732818604,
+     "D": 0.3513888716697693,
+     "exact": 0,
+     "occupied": 6.333333492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.5358464121818542,
+     "D": 0.3722221851348877,
+     "exact": 0,
+     "occupied": 6.9375,
+     "worlds": 48
+    },
+    {
+     "food": 0.5746657848358154,
+     "D": 0.33472222089767456,
+     "exact": 0,
+     "occupied": 6.708333492279053,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_RAW_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 48,
+   "k": 6,
+   "init": "trap",
+   "mode": "normal",
+   "food": 0.8971332758665085,
+   "D": 0.06093745771795511,
+   "occupied": 5.989583492279053,
+   "exact": 7,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.8923263549804688,
+     "D": 0.06527774035930634,
+     "exact": 2,
+     "occupied": 5.9791669845581055,
+     "worlds": 48
+    },
+    {
+     "food": 0.8917795419692993,
+     "D": 0.06475690007209778,
+     "exact": 3,
+     "occupied": 6.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.9057031869888306,
+     "D": 0.05434023588895798,
+     "exact": 2,
+     "occupied": 6.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.8987240195274353,
+     "D": 0.05937495455145836,
+     "exact": 0,
+     "occupied": 5.9791669845581055,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_RAW_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 48,
+   "k": 6,
+   "init": "trap",
+   "mode": "shuffled",
+   "food": 0.8002387434244156,
+   "D": 0.1523437164723873,
+   "occupied": 5.583333492279053,
+   "exact": 4,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.803072988986969,
+     "D": 0.14583329856395721,
+     "exact": 0,
+     "occupied": 5.645833492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.803723931312561,
+     "D": 0.14982634782791138,
+     "exact": 2,
+     "occupied": 5.583333492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.8071180582046509,
+     "D": 0.14722219109535217,
+     "exact": 1,
+     "occupied": 5.5625,
+     "worlds": 48
+    },
+    {
+     "food": 0.7870399951934814,
+     "D": 0.1664930284023285,
+     "exact": 1,
+     "occupied": 5.5416669845581055,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_RAW_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 48,
+   "k": 6,
+   "init": "trap",
+   "mode": "removed",
+   "food": 0.5000000149011612,
+   "D": 0.5,
+   "occupied": 3.0,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.5000000596046448,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 3.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 3.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 3.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 3.0,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_RAW_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 50,
+   "k": 4,
+   "init": "trap",
+   "mode": "normal",
+   "food": 0.9274552017450333,
+   "D": 0.0398003114387393,
+   "occupied": 4.0,
+   "exact": 30,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.9228588938713074,
+     "D": 0.043402742594480515,
+     "exact": 8,
+     "occupied": 4.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.9324595332145691,
+     "D": 0.036631908267736435,
+     "exact": 4,
+     "occupied": 4.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.9246412515640259,
+     "D": 0.041319407522678375,
+     "exact": 8,
+     "occupied": 4.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.9298611283302307,
+     "D": 0.037847187370061874,
+     "exact": 10,
+     "occupied": 4.0,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_RAW_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 50,
+   "k": 4,
+   "init": "trap",
+   "mode": "shuffled",
+   "food": 0.8935055136680603,
+   "D": 0.06132808141410351,
+   "occupied": 3.9947916865348816,
+   "exact": 13,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.8842303156852722,
+     "D": 0.06822912395000458,
+     "exact": 5,
+     "occupied": 4.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.9029976725578308,
+     "D": 0.05416662618517876,
+     "exact": 3,
+     "occupied": 4.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.8962616324424744,
+     "D": 0.05937495455145836,
+     "exact": 3,
+     "occupied": 4.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.8905324339866638,
+     "D": 0.06354162096977234,
+     "exact": 2,
+     "occupied": 3.9791667461395264,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_RAW_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 50,
+   "k": 4,
+   "init": "trap",
+   "mode": "removed",
+   "food": 0.5,
+   "D": 0.5,
+   "occupied": 2.0,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 2.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 2.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 2.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 2.0,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_RAW_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 50,
+   "k": 4,
+   "init": "random",
+   "mode": "normal",
+   "food": 0.9019488245248795,
+   "D": 0.05720481462776661,
+   "occupied": 4.234375238418579,
+   "exact": 9,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.8940104246139526,
+     "D": 0.0614582858979702,
+     "exact": 1,
+     "occupied": 4.2291669845581055,
+     "worlds": 48
+    },
+    {
+     "food": 0.9024653434753418,
+     "D": 0.05572912096977234,
+     "exact": 4,
+     "occupied": 4.2291669845581055,
+     "worlds": 48
+    },
+    {
+     "food": 0.9072048664093018,
+     "D": 0.05329856276512146,
+     "exact": 1,
+     "occupied": 4.2291669845581055,
+     "worlds": 48
+    },
+    {
+     "food": 0.9041146636009216,
+     "D": 0.05833328887820244,
+     "exact": 3,
+     "occupied": 4.25,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_RAW_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 50,
+   "k": 4,
+   "init": "random",
+   "mode": "shuffled",
+   "food": 0.8923785239458084,
+   "D": 0.06315099820494652,
+   "occupied": 4.0937501192092896,
+   "exact": 7,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.8948032855987549,
+     "D": 0.06163190305233002,
+     "exact": 2,
+     "occupied": 4.0625,
+     "worlds": 48
+    },
+    {
+     "food": 0.887355387210846,
+     "D": 0.06684023886919022,
+     "exact": 2,
+     "occupied": 4.083333492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.8952142000198364,
+     "D": 0.06093745678663254,
+     "exact": 1,
+     "occupied": 4.1666669845581055,
+     "worlds": 48
+    },
+    {
+     "food": 0.8921412229537964,
+     "D": 0.0631943941116333,
+     "exact": 2,
+     "occupied": 4.0625,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_RAW_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 50,
+   "k": 4,
+   "init": "random",
+   "mode": "removed",
+   "food": 0.5750810354948044,
+   "D": 0.3526909500360489,
+   "occupied": 7.411458492279053,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.5586631894111633,
+     "D": 0.37274301052093506,
+     "exact": 0,
+     "occupied": 7.6041669845581055,
+     "worlds": 48
+    },
+    {
+     "food": 0.5718634724617004,
+     "D": 0.35815972089767456,
+     "exact": 0,
+     "occupied": 7.6041669845581055,
+     "worlds": 48
+    },
+    {
+     "food": 0.5776447057723999,
+     "D": 0.3473958373069763,
+     "exact": 0,
+     "occupied": 7.25,
+     "worlds": 48
+    },
+    {
+     "food": 0.5921527743339539,
+     "D": 0.3324652314186096,
+     "exact": 0,
+     "occupied": 7.1875,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_RAW_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 72,
+   "k": 8,
+   "init": "trap",
+   "mode": "normal",
+   "food": 0.8945312947034836,
+   "D": 0.06866315193474293,
+   "occupied": 7.880208373069763,
+   "exact": 13,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.8878241181373596,
+     "D": 0.07569440454244614,
+     "exact": 4,
+     "occupied": 7.8125,
+     "worlds": 48
+    },
+    {
+     "food": 0.8922337889671326,
+     "D": 0.0710069015622139,
+     "exact": 3,
+     "occupied": 7.895833492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.895416796207428,
+     "D": 0.06805551052093506,
+     "exact": 2,
+     "occupied": 7.875,
+     "worlds": 48
+    },
+    {
+     "food": 0.9026504755020142,
+     "D": 0.05989579111337662,
+     "exact": 4,
+     "occupied": 7.9375,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_RAW_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 72,
+   "k": 8,
+   "init": "trap",
+   "mode": "shuffled",
+   "food": 0.7367563992738724,
+   "D": 0.2226996198296547,
+   "occupied": 6.8437501192092896,
+   "exact": 3,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.7214236855506897,
+     "D": 0.2439235895872116,
+     "exact": 1,
+     "occupied": 6.458333492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.7384490966796875,
+     "D": 0.22256939113140106,
+     "exact": 1,
+     "occupied": 6.895833492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.7563310861587524,
+     "D": 0.1953124701976776,
+     "exact": 0,
+     "occupied": 7.208333492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.7308217287063599,
+     "D": 0.2289930284023285,
+     "exact": 1,
+     "occupied": 6.8125,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_RAW_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 72,
+   "k": 8,
+   "init": "trap",
+   "mode": "removed",
+   "food": 0.5,
+   "D": 0.5,
+   "occupied": 4.0,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 4.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 4.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 4.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 4.0,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_RAW_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 72,
+   "k": 8,
+   "init": "random",
+   "mode": "normal",
+   "food": 0.8946817219257355,
+   "D": 0.06679683551192284,
+   "occupied": 7.932291746139526,
+   "exact": 10,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.8918865919113159,
+     "D": 0.06944441050291061,
+     "exact": 2,
+     "occupied": 7.958333492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.8939351439476013,
+     "D": 0.06423606723546982,
+     "exact": 4,
+     "occupied": 7.958333492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.8953356742858887,
+     "D": 0.0675346851348877,
+     "exact": 4,
+     "occupied": 7.875,
+     "worlds": 48
+    },
+    {
+     "food": 0.897569477558136,
+     "D": 0.06597217917442322,
+     "exact": 0,
+     "occupied": 7.9375,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_RAW_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 72,
+   "k": 8,
+   "init": "random",
+   "mode": "shuffled",
+   "food": 0.7092881947755814,
+   "D": 0.2535589896142483,
+   "occupied": 6.520833492279053,
+   "exact": 4,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.7111111283302307,
+     "D": 0.2513888478279114,
+     "exact": 2,
+     "occupied": 6.5416669845581055,
+     "worlds": 48
+    },
+    {
+     "food": 0.7115161418914795,
+     "D": 0.24670135974884033,
+     "exact": 0,
+     "occupied": 6.625,
+     "worlds": 48
+    },
+    {
+     "food": 0.6870254874229431,
+     "D": 0.27725690603256226,
+     "exact": 1,
+     "occupied": 6.333333492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.7275000214576721,
+     "D": 0.23888884484767914,
+     "exact": 1,
+     "occupied": 6.583333492279053,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_RAW_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 72,
+   "k": 8,
+   "init": "random",
+   "mode": "removed",
+   "food": 0.6170486509799957,
+   "D": 0.2799912989139557,
+   "occupied": 12.708333969116211,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.6234607100486755,
+     "D": 0.27621525526046753,
+     "exact": 0,
+     "occupied": 12.833333969116211,
+     "worlds": 48
+    },
+    {
+     "food": 0.5990162491798401,
+     "D": 0.29392358660697937,
+     "exact": 0,
+     "occupied": 12.895833969116211,
+     "worlds": 48
+    },
+    {
+     "food": 0.6345139145851135,
+     "D": 0.2649305462837219,
+     "exact": 0,
+     "occupied": 12.583333969116211,
+     "worlds": 48
+    },
+    {
+     "food": 0.6112037301063538,
+     "D": 0.28489580750465393,
+     "exact": 0,
+     "occupied": 12.520833969116211,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_RAW_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 12,
+   "init": "trap",
+   "mode": "normal",
+   "food": 0.9122873544692993,
+   "D": 0.06549475155770779,
+   "occupied": 11.697916746139526,
+   "exact": 23,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.9220312833786011,
+     "D": 0.05590273439884186,
+     "exact": 6,
+     "occupied": 11.791666984558105,
+     "worlds": 48
+    },
+    {
+     "food": 0.91364586353302,
+     "D": 0.06614580005407333,
+     "exact": 9,
+     "occupied": 11.6875,
+     "worlds": 48
+    },
+    {
+     "food": 0.9034374952316284,
+     "D": 0.07204857468605042,
+     "exact": 7,
+     "occupied": 11.625,
+     "worlds": 48
+    },
+    {
+     "food": 0.9100347757339478,
+     "D": 0.06788189709186554,
+     "exact": 1,
+     "occupied": 11.6875,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_RAW_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 12,
+   "init": "trap",
+   "mode": "shuffled",
+   "food": 0.7140581458806992,
+   "D": 0.25985240191221237,
+   "occupied": 9.489583492279053,
+   "exact": 1,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.7073437571525574,
+     "D": 0.2682291269302368,
+     "exact": 0,
+     "occupied": 9.4375,
+     "worlds": 48
+    },
+    {
+     "food": 0.7058854103088379,
+     "D": 0.2657985985279083,
+     "exact": 1,
+     "occupied": 9.416666984558105,
+     "worlds": 48
+    },
+    {
+     "food": 0.7111631631851196,
+     "D": 0.26510414481163025,
+     "exact": 0,
+     "occupied": 9.375,
+     "worlds": 48
+    },
+    {
+     "food": 0.7318402528762817,
+     "D": 0.2402777373790741,
+     "exact": 0,
+     "occupied": 9.729166984558105,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_RAW_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 12,
+   "init": "trap",
+   "mode": "removed",
+   "food": 0.5,
+   "D": 0.5,
+   "occupied": 6.0,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 6.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 6.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 6.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 6.0,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_RAW_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 12,
+   "init": "random",
+   "mode": "normal",
+   "food": 0.9072526693344116,
+   "D": 0.06666662730276585,
+   "occupied": 11.760416746139526,
+   "exact": 19,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.9058855175971985,
+     "D": 0.07152773439884186,
+     "exact": 4,
+     "occupied": 11.6875,
+     "worlds": 48
+    },
+    {
+     "food": 0.9002777934074402,
+     "D": 0.06805551797151566,
+     "exact": 6,
+     "occupied": 11.854166984558105,
+     "worlds": 48
+    },
+    {
+     "food": 0.9143924713134766,
+     "D": 0.06336802244186401,
+     "exact": 7,
+     "occupied": 11.6875,
+     "worlds": 48
+    },
+    {
+     "food": 0.9084548950195312,
+     "D": 0.06371523439884186,
+     "exact": 2,
+     "occupied": 11.8125,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_RAW_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 12,
+   "init": "random",
+   "mode": "shuffled",
+   "food": 0.6490060985088348,
+   "D": 0.3292100578546524,
+   "occupied": 8.500000238418579,
+   "exact": 1,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.6201562881469727,
+     "D": 0.3609374761581421,
+     "exact": 0,
+     "occupied": 8.0625,
+     "worlds": 48
+    },
+    {
+     "food": 0.6615972518920898,
+     "D": 0.3142361044883728,
+     "exact": 0,
+     "occupied": 8.729166984558105,
+     "worlds": 48
+    },
+    {
+     "food": 0.6538715362548828,
+     "D": 0.3244791626930237,
+     "exact": 1,
+     "occupied": 8.583333969116211,
+     "worlds": 48
+    },
+    {
+     "food": 0.660399317741394,
+     "D": 0.31718748807907104,
+     "exact": 0,
+     "occupied": 8.625,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_RAW_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 12,
+   "init": "random",
+   "mode": "removed",
+   "food": 0.6035026609897614,
+   "D": 0.2863280922174454,
+   "occupied": 18.187500953674316,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.6037500500679016,
+     "D": 0.2828124761581421,
+     "exact": 0,
+     "occupied": 18.104167938232422,
+     "worlds": 48
+    },
+    {
+     "food": 0.6063715815544128,
+     "D": 0.28489577770233154,
+     "exact": 0,
+     "occupied": 18.33333396911621,
+     "worlds": 48
+    },
+    {
+     "food": 0.5956076979637146,
+     "D": 0.29305553436279297,
+     "exact": 0,
+     "occupied": 17.979167938232422,
+     "worlds": 48
+    },
+    {
+     "food": 0.6082813143730164,
+     "D": 0.2845485806465149,
+     "exact": 0,
+     "occupied": 18.33333396911621,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_RAW_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 20,
+   "init": "trap",
+   "mode": "normal",
+   "food": 0.8812283575534821,
+   "D": 0.10316835902631283,
+   "occupied": 18.541667461395264,
+   "exact": 10,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.890422523021698,
+     "D": 0.09600690007209778,
+     "exact": 3,
+     "occupied": 18.64583396911621,
+     "worlds": 48
+    },
+    {
+     "food": 0.8819156289100647,
+     "D": 0.1005207896232605,
+     "exact": 4,
+     "occupied": 18.666667938232422,
+     "worlds": 48
+    },
+    {
+     "food": 0.8722222447395325,
+     "D": 0.11284717917442322,
+     "exact": 1,
+     "occupied": 18.229167938232422,
+     "worlds": 48
+    },
+    {
+     "food": 0.8803530335426331,
+     "D": 0.10329856723546982,
+     "exact": 2,
+     "occupied": 18.625,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_RAW_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 20,
+   "init": "trap",
+   "mode": "shuffled",
+   "food": 0.6053241044282913,
+   "D": 0.38576386123895645,
+   "occupied": 12.635416984558105,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.602980375289917,
+     "D": 0.38732635974884033,
+     "exact": 0,
+     "occupied": 12.645833969116211,
+     "worlds": 48
+    },
+    {
+     "food": 0.6212384700775146,
+     "D": 0.37013885378837585,
+     "exact": 0,
+     "occupied": 12.9375,
+     "worlds": 48
+    },
+    {
+     "food": 0.6344618201255798,
+     "D": 0.35711801052093506,
+     "exact": 0,
+     "occupied": 13.166666984558105,
+     "worlds": 48
+    },
+    {
+     "food": 0.5626157522201538,
+     "D": 0.42847222089767456,
+     "exact": 0,
+     "occupied": 11.791666984558105,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_RAW_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 20,
+   "init": "trap",
+   "mode": "removed",
+   "food": 0.4997396022081375,
+   "D": 0.5002604126930237,
+   "occupied": 9.994791746139526,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 10.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.4989583492279053,
+     "D": 0.5010416507720947,
+     "exact": 0,
+     "occupied": 9.979166984558105,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 10.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5000000596046448,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 10.0,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_RAW_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 40,
+   "init": "random",
+   "mode": "normal",
+   "food": 0.9448785185813904,
+   "D": 0.049262115731835365,
+   "occupied": 38.515625953674316,
+   "exact": 35,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.9556713700294495,
+     "D": 0.03871523588895798,
+     "exact": 7,
+     "occupied": 38.91666793823242,
+     "worlds": 48
+    },
+    {
+     "food": 0.945891261100769,
+     "D": 0.04947913438081741,
+     "exact": 11,
+     "occupied": 38.375,
+     "worlds": 48
+    },
+    {
+     "food": 0.9365741610527039,
+     "D": 0.056944411247968674,
+     "exact": 8,
+     "occupied": 38.25,
+     "worlds": 48
+    },
+    {
+     "food": 0.9413772821426392,
+     "D": 0.0519096814095974,
+     "exact": 9,
+     "occupied": 38.520835876464844,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_RAW_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 40,
+   "init": "random",
+   "mode": "shuffled",
+   "food": 0.5901475846767426,
+   "D": 0.40611977130174637,
+   "occupied": 24.078125476837158,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.5847222208976746,
+     "D": 0.41180557012557983,
+     "exact": 0,
+     "occupied": 23.8125,
+     "worlds": 48
+    },
+    {
+     "food": 0.599942147731781,
+     "D": 0.3967013359069824,
+     "exact": 0,
+     "occupied": 24.4375,
+     "worlds": 48
+    },
+    {
+     "food": 0.5698495507240295,
+     "D": 0.426215261220932,
+     "exact": 0,
+     "occupied": 23.291667938232422,
+     "worlds": 48
+    },
+    {
+     "food": 0.6060764193534851,
+     "D": 0.3897569179534912,
+     "exact": 0,
+     "occupied": 24.77083396911621,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_RAW_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 40,
+   "init": "random",
+   "mode": "removed",
+   "food": 0.5324797630310059,
+   "D": 0.46210935711860657,
+   "occupied": 22.104167461395264,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.5310764312744141,
+     "D": 0.46232637763023376,
+     "exact": 0,
+     "occupied": 22.229167938232422,
+     "worlds": 48
+    },
+    {
+     "food": 0.5329282283782959,
+     "D": 0.46302080154418945,
+     "exact": 0,
+     "occupied": 21.916667938232422,
+     "worlds": 48
+    },
+    {
+     "food": 0.5329861044883728,
+     "D": 0.46041664481163025,
+     "exact": 0,
+     "occupied": 22.3125,
+     "worlds": 48
+    },
+    {
+     "food": 0.5329282879829407,
+     "D": 0.4626736044883728,
+     "exact": 0,
+     "occupied": 21.95833396911621,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_RAW_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 40,
+   "init": "trap",
+   "mode": "normal",
+   "food": 0.8740307092666626,
+   "D": 0.11822913028299809,
+   "occupied": 35.921875953674316,
+   "exact": 7,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.8707175850868225,
+     "D": 0.12118051946163177,
+     "exact": 3,
+     "occupied": 35.85416793823242,
+     "worlds": 48
+    },
+    {
+     "food": 0.8805555701255798,
+     "D": 0.11111106723546982,
+     "exact": 1,
+     "occupied": 36.1875,
+     "worlds": 48
+    },
+    {
+     "food": 0.8690394163131714,
+     "D": 0.12361107766628265,
+     "exact": 0,
+     "occupied": 35.72916793823242,
+     "worlds": 48
+    },
+    {
+     "food": 0.8758102655410767,
+     "D": 0.1170138567686081,
+     "exact": 3,
+     "occupied": 35.91666793823242,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_RAW_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 40,
+   "init": "trap",
+   "mode": "shuffled",
+   "food": 0.46796877682209015,
+   "D": 0.5285590142011642,
+   "occupied": 19.151041984558105,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.4785301387310028,
+     "D": 0.5182291269302368,
+     "exact": 0,
+     "occupied": 19.5625,
+     "worlds": 48
+    },
+    {
+     "food": 0.4506944417953491,
+     "D": 0.5458333492279053,
+     "exact": 0,
+     "occupied": 18.45833396911621,
+     "worlds": 48
+    },
+    {
+     "food": 0.4618634581565857,
+     "D": 0.5338541269302368,
+     "exact": 0,
+     "occupied": 19.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.480787068605423,
+     "D": 0.5163194537162781,
+     "exact": 0,
+     "occupied": 19.58333396911621,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_RAW_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 40,
+   "init": "trap",
+   "mode": "removed",
+   "food": 0.5,
+   "D": 0.5,
+   "occupied": 20.0,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 20.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 20.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 20.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 20.0,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R16_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 36,
+   "k": 3,
+   "init": "trap",
+   "mode": "normal",
+   "food": 0.9558062553405762,
+   "D": 0.023394066840410233,
+   "occupied": 3.0,
+   "exact": 70,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.9599305391311646,
+     "D": 0.02118053287267685,
+     "exact": 23,
+     "occupied": 3.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.9656945466995239,
+     "D": 0.01805552840232849,
+     "exact": 19,
+     "occupied": 3.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.9474002718925476,
+     "D": 0.027951352298259735,
+     "exact": 15,
+     "occupied": 3.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.9501996636390686,
+     "D": 0.026388853788375854,
+     "exact": 13,
+     "occupied": 3.0,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R16_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 36,
+   "k": 3,
+   "init": "trap",
+   "mode": "shuffled",
+   "food": 0.9508040845394135,
+   "D": 0.026171842589974403,
+   "occupied": 3.0,
+   "exact": 59,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.9565668702125549,
+     "D": 0.023090243339538574,
+     "exact": 15,
+     "occupied": 3.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.9521788358688354,
+     "D": 0.025347193703055382,
+     "exact": 17,
+     "occupied": 3.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.9453690052032471,
+     "D": 0.029340248554944992,
+     "exact": 15,
+     "occupied": 3.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.9491016268730164,
+     "D": 0.026909684762358665,
+     "exact": 12,
+     "occupied": 3.0,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R16_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 36,
+   "k": 3,
+   "init": "trap",
+   "mode": "removed",
+   "food": 0.3333333432674408,
+   "D": 0.6666666269302368,
+   "occupied": 1.0,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.3333333432674408,
+     "D": 0.6666666269302368,
+     "exact": 0,
+     "occupied": 1.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.3333333432674408,
+     "D": 0.6666666269302368,
+     "exact": 0,
+     "occupied": 1.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.3333333432674408,
+     "D": 0.6666666269302368,
+     "exact": 0,
+     "occupied": 1.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.3333333432674408,
+     "D": 0.6666666269302368,
+     "exact": 0,
+     "occupied": 1.0,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R16_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 36,
+   "k": 3,
+   "init": "random",
+   "mode": "normal",
+   "food": 0.7762391269207001,
+   "D": 0.16618919745087624,
+   "occupied": 5.005208373069763,
+   "exact": 5,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.7707421183586121,
+     "D": 0.17291662096977234,
+     "exact": 0,
+     "occupied": 4.9375,
+     "worlds": 48
+    },
+    {
+     "food": 0.7581467032432556,
+     "D": 0.1812499761581421,
+     "exact": 1,
+     "occupied": 5.375,
+     "worlds": 48
+    },
+    {
+     "food": 0.7914800047874451,
+     "D": 0.15156245231628418,
+     "exact": 1,
+     "occupied": 4.895833492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.7845876812934875,
+     "D": 0.15902774035930634,
+     "exact": 3,
+     "occupied": 4.8125,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R16_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 36,
+   "k": 3,
+   "init": "random",
+   "mode": "shuffled",
+   "food": 0.7736620903015137,
+   "D": 0.16644961759448051,
+   "occupied": 4.942708611488342,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.7855121493339539,
+     "D": 0.15538190305233002,
+     "exact": 0,
+     "occupied": 4.770833492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.7600129842758179,
+     "D": 0.17881940305233002,
+     "exact": 0,
+     "occupied": 5.1666669845581055,
+     "worlds": 48
+    },
+    {
+     "food": 0.7768619060516357,
+     "D": 0.16510413587093353,
+     "exact": 0,
+     "occupied": 4.9791669845581055,
+     "worlds": 48
+    },
+    {
+     "food": 0.7722613215446472,
+     "D": 0.1664930284023285,
+     "exact": 0,
+     "occupied": 4.8541669845581055,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R16_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 36,
+   "k": 3,
+   "init": "random",
+   "mode": "removed",
+   "food": 0.5620149821043015,
+   "D": 0.34648435562849045,
+   "occupied": 6.6406251192092896,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.5474956631660461,
+     "D": 0.3590277433395386,
+     "exact": 0,
+     "occupied": 6.875,
+     "worlds": 48
+    },
+    {
+     "food": 0.5659288167953491,
+     "D": 0.3376736044883728,
+     "exact": 0,
+     "occupied": 6.2291669845581055,
+     "worlds": 48
+    },
+    {
+     "food": 0.5613845586776733,
+     "D": 0.34861108660697937,
+     "exact": 0,
+     "occupied": 6.833333492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.5732508897781372,
+     "D": 0.34062498807907104,
+     "exact": 0,
+     "occupied": 6.625,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R16_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 48,
+   "k": 6,
+   "init": "trap",
+   "mode": "normal",
+   "food": 0.8229535967111588,
+   "D": 0.12973086722195148,
+   "occupied": 5.677083492279053,
+   "exact": 6,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.8287500143051147,
+     "D": 0.12013884633779526,
+     "exact": 0,
+     "occupied": 5.75,
+     "worlds": 48
+    },
+    {
+     "food": 0.8144010901451111,
+     "D": 0.13836802542209625,
+     "exact": 2,
+     "occupied": 5.645833492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.8134809136390686,
+     "D": 0.14184024930000305,
+     "exact": 2,
+     "occupied": 5.583333492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.8351823687553406,
+     "D": 0.11857634782791138,
+     "exact": 2,
+     "occupied": 5.7291669845581055,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R16_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 48,
+   "k": 6,
+   "init": "trap",
+   "mode": "shuffled",
+   "food": 0.8082205653190613,
+   "D": 0.14401037618517876,
+   "occupied": 5.630208492279053,
+   "exact": 5,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.805772602558136,
+     "D": 0.14461801946163177,
+     "exact": 0,
+     "occupied": 5.6041669845581055,
+     "worlds": 48
+    },
+    {
+     "food": 0.8262587189674377,
+     "D": 0.12968745827674866,
+     "exact": 1,
+     "occupied": 5.708333492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.8004862070083618,
+     "D": 0.14895829558372498,
+     "exact": 2,
+     "occupied": 5.625,
+     "worlds": 48
+    },
+    {
+     "food": 0.8003647327423096,
+     "D": 0.15277773141860962,
+     "exact": 2,
+     "occupied": 5.583333492279053,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R16_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 48,
+   "k": 6,
+   "init": "trap",
+   "mode": "removed",
+   "food": 0.5000000149011612,
+   "D": 0.5,
+   "occupied": 3.0,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 3.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 3.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5000000596046448,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 3.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 3.0,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R16_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 50,
+   "k": 4,
+   "init": "trap",
+   "mode": "normal",
+   "food": 0.9096383452415466,
+   "D": 0.05104162450879812,
+   "occupied": 4.0,
+   "exact": 18,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.9248901605606079,
+     "D": 0.041493009775877,
+     "exact": 5,
+     "occupied": 4.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.9049305319786072,
+     "D": 0.053472183644771576,
+     "exact": 7,
+     "occupied": 4.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.9006539583206177,
+     "D": 0.05781245231628418,
+     "exact": 4,
+     "occupied": 4.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.9080787301063538,
+     "D": 0.051388852298259735,
+     "exact": 2,
+     "occupied": 4.0,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R16_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 50,
+   "k": 4,
+   "init": "trap",
+   "mode": "shuffled",
+   "food": 0.9083116352558136,
+   "D": 0.05325516778975725,
+   "occupied": 4.0,
+   "exact": 20,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.9192765951156616,
+     "D": 0.04461801052093506,
+     "exact": 6,
+     "occupied": 4.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.8986226320266724,
+     "D": 0.062499966472387314,
+     "exact": 6,
+     "occupied": 4.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.9023669958114624,
+     "D": 0.05642356723546982,
+     "exact": 3,
+     "occupied": 4.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.912980318069458,
+     "D": 0.049479126930236816,
+     "exact": 5,
+     "occupied": 4.0,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R16_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 50,
+   "k": 4,
+   "init": "trap",
+   "mode": "removed",
+   "food": 0.5,
+   "D": 0.5,
+   "occupied": 2.0,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 2.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 2.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 2.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 2.0,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R16_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 50,
+   "k": 4,
+   "init": "random",
+   "mode": "normal",
+   "food": 0.8897367268800735,
+   "D": 0.06388884596526623,
+   "occupied": 4.130208492279053,
+   "exact": 6,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.8822859525680542,
+     "D": 0.06805551052093506,
+     "exact": 2,
+     "occupied": 4.1041669845581055,
+     "worlds": 48
+    },
+    {
+     "food": 0.8932870626449585,
+     "D": 0.06215272843837738,
+     "exact": 0,
+     "occupied": 4.208333492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.8978704214096069,
+     "D": 0.059201352298259735,
+     "exact": 3,
+     "occupied": 4.125,
+     "worlds": 48
+    },
+    {
+     "food": 0.8855034708976746,
+     "D": 0.06614579260349274,
+     "exact": 1,
+     "occupied": 4.083333492279053,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R16_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 50,
+   "k": 4,
+   "init": "random",
+   "mode": "shuffled",
+   "food": 0.8908334076404572,
+   "D": 0.06319440435618162,
+   "occupied": 4.052083373069763,
+   "exact": 11,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.8710243701934814,
+     "D": 0.07499995827674866,
+     "exact": 0,
+     "occupied": 4.020833492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.9059780836105347,
+     "D": 0.05295134708285332,
+     "exact": 3,
+     "occupied": 4.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.8962095975875854,
+     "D": 0.059201352298259735,
+     "exact": 3,
+     "occupied": 4.0625,
+     "worlds": 48
+    },
+    {
+     "food": 0.890121579170227,
+     "D": 0.06562495976686478,
+     "exact": 5,
+     "occupied": 4.125,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R16_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 50,
+   "k": 4,
+   "init": "random",
+   "mode": "removed",
+   "food": 0.5687037408351898,
+   "D": 0.3593749776482582,
+   "occupied": 7.510416865348816,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.5572685599327087,
+     "D": 0.3743055760860443,
+     "exact": 0,
+     "occupied": 7.6875,
+     "worlds": 48
+    },
+    {
+     "food": 0.5654224753379822,
+     "D": 0.3663194179534912,
+     "exact": 0,
+     "occupied": 7.645833492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.5706424117088318,
+     "D": 0.3541666269302368,
+     "exact": 0,
+     "occupied": 7.3541669845581055,
+     "worlds": 48
+    },
+    {
+     "food": 0.5814815163612366,
+     "D": 0.3427082896232605,
+     "exact": 0,
+     "occupied": 7.3541669845581055,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R16_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 72,
+   "k": 8,
+   "init": "trap",
+   "mode": "normal",
+   "food": 0.7275144904851913,
+   "D": 0.23155378550291061,
+   "occupied": 6.770833373069763,
+   "exact": 3,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.7230672240257263,
+     "D": 0.23315969109535217,
+     "exact": 1,
+     "occupied": 6.8125,
+     "worlds": 48
+    },
+    {
+     "food": 0.7298726439476013,
+     "D": 0.23385414481163025,
+     "exact": 1,
+     "occupied": 6.6875,
+     "worlds": 48
+    },
+    {
+     "food": 0.7388426065444946,
+     "D": 0.21701383590698242,
+     "exact": 1,
+     "occupied": 6.958333492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.7182754874229431,
+     "D": 0.2421874701976776,
+     "exact": 0,
+     "occupied": 6.625,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R16_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 72,
+   "k": 8,
+   "init": "trap",
+   "mode": "shuffled",
+   "food": 0.7613628804683685,
+   "D": 0.20238711312413216,
+   "occupied": 6.9375001192092896,
+   "exact": 5,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.7590740919113159,
+     "D": 0.20486107468605042,
+     "exact": 2,
+     "occupied": 6.895833492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.7440393567085266,
+     "D": 0.21892356872558594,
+     "exact": 0,
+     "occupied": 6.875,
+     "worlds": 48
+    },
+    {
+     "food": 0.7807986736297607,
+     "D": 0.18072913587093353,
+     "exact": 2,
+     "occupied": 7.083333492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.7615393996238708,
+     "D": 0.20503467321395874,
+     "exact": 1,
+     "occupied": 6.895833492279053,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R16_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 72,
+   "k": 8,
+   "init": "trap",
+   "mode": "removed",
+   "food": 0.5,
+   "D": 0.5,
+   "occupied": 4.0,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 4.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 4.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 4.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 4.0,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R16_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 72,
+   "k": 8,
+   "init": "random",
+   "mode": "normal",
+   "food": 0.7117187827825546,
+   "D": 0.25208329781889915,
+   "occupied": 6.520833492279053,
+   "exact": 1,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.7450578808784485,
+     "D": 0.2203124612569809,
+     "exact": 1,
+     "occupied": 6.7291669845581055,
+     "worlds": 48
+    },
+    {
+     "food": 0.6971527934074402,
+     "D": 0.25902774930000305,
+     "exact": 0,
+     "occupied": 6.5625,
+     "worlds": 48
+    },
+    {
+     "food": 0.6775231957435608,
+     "D": 0.289583295583725,
+     "exact": 0,
+     "occupied": 6.2291669845581055,
+     "worlds": 48
+    },
+    {
+     "food": 0.727141261100769,
+     "D": 0.2394096851348877,
+     "exact": 0,
+     "occupied": 6.5625,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R16_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 72,
+   "k": 8,
+   "init": "random",
+   "mode": "shuffled",
+   "food": 0.7252546697854996,
+   "D": 0.2398437224328518,
+   "occupied": 6.5625001192092896,
+   "exact": 2,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.7442941069602966,
+     "D": 0.21579858660697937,
+     "exact": 0,
+     "occupied": 6.770833492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.7231481671333313,
+     "D": 0.23958329856395721,
+     "exact": 0,
+     "occupied": 6.625,
+     "worlds": 48
+    },
+    {
+     "food": 0.7356018424034119,
+     "D": 0.2350694239139557,
+     "exact": 1,
+     "occupied": 6.520833492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.6979745626449585,
+     "D": 0.2689235806465149,
+     "exact": 1,
+     "occupied": 6.333333492279053,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R16_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 72,
+   "k": 8,
+   "init": "random",
+   "mode": "removed",
+   "food": 0.6171267628669739,
+   "D": 0.28359372168779373,
+   "occupied": 12.859375238418579,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.628912091255188,
+     "D": 0.2748263478279114,
+     "exact": 0,
+     "occupied": 12.833333969116211,
+     "worlds": 48
+    },
+    {
+     "food": 0.5965046286582947,
+     "D": 0.3003472089767456,
+     "exact": 0,
+     "occupied": 13.125,
+     "worlds": 48
+    },
+    {
+     "food": 0.6318750381469727,
+     "D": 0.2708333134651184,
+     "exact": 0,
+     "occupied": 12.6875,
+     "worlds": 48
+    },
+    {
+     "food": 0.6112152934074402,
+     "D": 0.28836801648139954,
+     "exact": 0,
+     "occupied": 12.791666984558105,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R16_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 12,
+   "init": "trap",
+   "mode": "normal",
+   "food": 0.6889844089746475,
+   "D": 0.2880208045244217,
+   "occupied": 9.093750238418579,
+   "exact": 2,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.6854861378669739,
+     "D": 0.2940971851348877,
+     "exact": 2,
+     "occupied": 9.041666984558105,
+     "worlds": 48
+    },
+    {
+     "food": 0.6929514408111572,
+     "D": 0.2854166626930237,
+     "exact": 0,
+     "occupied": 9.0625,
+     "worlds": 48
+    },
+    {
+     "food": 0.6878125071525574,
+     "D": 0.28923606872558594,
+     "exact": 0,
+     "occupied": 9.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.6896875500679016,
+     "D": 0.28333330154418945,
+     "exact": 0,
+     "occupied": 9.270833969116211,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R16_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 12,
+   "init": "trap",
+   "mode": "shuffled",
+   "food": 0.6874566525220871,
+   "D": 0.28749997913837433,
+   "occupied": 9.114583492279053,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.671909749507904,
+     "D": 0.3010416626930237,
+     "exact": 0,
+     "occupied": 9.041666984558105,
+     "worlds": 48
+    },
+    {
+     "food": 0.7074480056762695,
+     "D": 0.27031248807907104,
+     "exact": 0,
+     "occupied": 9.229166984558105,
+     "worlds": 48
+    },
+    {
+     "food": 0.6738542318344116,
+     "D": 0.2999999523162842,
+     "exact": 0,
+     "occupied": 8.9375,
+     "worlds": 48
+    },
+    {
+     "food": 0.6966146230697632,
+     "D": 0.2786458134651184,
+     "exact": 0,
+     "occupied": 9.25,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R16_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 12,
+   "init": "trap",
+   "mode": "removed",
+   "food": 0.5,
+   "D": 0.5,
+   "occupied": 6.0,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 6.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 6.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 6.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 6.0,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R16_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 12,
+   "init": "random",
+   "mode": "normal",
+   "food": 0.6433941125869751,
+   "D": 0.33541662991046906,
+   "occupied": 8.447916984558105,
+   "exact": 1,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.6455382704734802,
+     "D": 0.3355902433395386,
+     "exact": 0,
+     "occupied": 8.416666984558105,
+     "worlds": 48
+    },
+    {
+     "food": 0.6203298568725586,
+     "D": 0.35607635974884033,
+     "exact": 0,
+     "occupied": 8.208333969116211,
+     "worlds": 48
+    },
+    {
+     "food": 0.6339583396911621,
+     "D": 0.3444443941116333,
+     "exact": 0,
+     "occupied": 8.354166984558105,
+     "worlds": 48
+    },
+    {
+     "food": 0.6737499833106995,
+     "D": 0.305555522441864,
+     "exact": 1,
+     "occupied": 8.8125,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R16_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 12,
+   "init": "random",
+   "mode": "shuffled",
+   "food": 0.6373437941074371,
+   "D": 0.34149301797151566,
+   "occupied": 8.369792222976685,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.6168750524520874,
+     "D": 0.3590277433395386,
+     "exact": 0,
+     "occupied": 8.208333969116211,
+     "worlds": 48
+    },
+    {
+     "food": 0.6361632347106934,
+     "D": 0.34392356872558594,
+     "exact": 0,
+     "occupied": 8.333333969116211,
+     "worlds": 48
+    },
+    {
+     "food": 0.6399479508399963,
+     "D": 0.34045132994651794,
+     "exact": 0,
+     "occupied": 8.333333969116211,
+     "worlds": 48
+    },
+    {
+     "food": 0.6563889384269714,
+     "D": 0.32256942987442017,
+     "exact": 0,
+     "occupied": 8.604166984558105,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R16_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 12,
+   "init": "random",
+   "mode": "removed",
+   "food": 0.6085026562213898,
+   "D": 0.28289927542209625,
+   "occupied": 18.203125476837158,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.6077083945274353,
+     "D": 0.2805555462837219,
+     "exact": 0,
+     "occupied": 17.979167938232422,
+     "worlds": 48
+    },
+    {
+     "food": 0.6180035471916199,
+     "D": 0.27534720301628113,
+     "exact": 0,
+     "occupied": 18.39583396911621,
+     "worlds": 48
+    },
+    {
+     "food": 0.6016840934753418,
+     "D": 0.29010412096977234,
+     "exact": 0,
+     "occupied": 18.125,
+     "worlds": 48
+    },
+    {
+     "food": 0.6066145896911621,
+     "D": 0.2855902314186096,
+     "exact": 0,
+     "occupied": 18.3125,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R16_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 20,
+   "init": "trap",
+   "mode": "normal",
+   "food": 0.6015335917472839,
+   "D": 0.38880208134651184,
+   "occupied": 12.583333730697632,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.5887153148651123,
+     "D": 0.40069445967674255,
+     "exact": 0,
+     "occupied": 12.395833969116211,
+     "worlds": 48
+    },
+    {
+     "food": 0.6193287372589111,
+     "D": 0.3739583492279053,
+     "exact": 0,
+     "occupied": 12.75,
+     "worlds": 48
+    },
+    {
+     "food": 0.5914930701255798,
+     "D": 0.3982638716697693,
+     "exact": 0,
+     "occupied": 12.416666984558105,
+     "worlds": 48
+    },
+    {
+     "food": 0.6065972447395325,
+     "D": 0.38229164481163025,
+     "exact": 0,
+     "occupied": 12.770833969116211,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R16_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 20,
+   "init": "trap",
+   "mode": "shuffled",
+   "food": 0.5906467139720917,
+   "D": 0.3999565690755844,
+   "occupied": 12.359375238418579,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.5904514193534851,
+     "D": 0.40138888359069824,
+     "exact": 0,
+     "occupied": 12.25,
+     "worlds": 48
+    },
+    {
+     "food": 0.570978045463562,
+     "D": 0.42135414481163025,
+     "exact": 0,
+     "occupied": 11.895833969116211,
+     "worlds": 48
+    },
+    {
+     "food": 0.6017650365829468,
+     "D": 0.3862846791744232,
+     "exact": 0,
+     "occupied": 12.729166984558105,
+     "worlds": 48
+    },
+    {
+     "food": 0.5993923544883728,
+     "D": 0.39079856872558594,
+     "exact": 0,
+     "occupied": 12.5625,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R16_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 20,
+   "init": "trap",
+   "mode": "removed",
+   "food": 0.4997395873069763,
+   "D": 0.5002604126930237,
+   "occupied": 9.994791746139526,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 10.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.4989583492279053,
+     "D": 0.5010416507720947,
+     "exact": 0,
+     "occupied": 9.979166984558105,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 10.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 10.0,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R16_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 40,
+   "init": "random",
+   "mode": "normal",
+   "food": 0.5976707488298416,
+   "D": 0.39874130487442017,
+   "occupied": 24.359375953674316,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.5938079357147217,
+     "D": 0.40295135974884033,
+     "exact": 0,
+     "occupied": 24.166667938232422,
+     "worlds": 48
+    },
+    {
+     "food": 0.5902199149131775,
+     "D": 0.4060763716697693,
+     "exact": 0,
+     "occupied": 24.08333396911621,
+     "worlds": 48
+    },
+    {
+     "food": 0.604629635810852,
+     "D": 0.3916666507720947,
+     "exact": 0,
+     "occupied": 24.64583396911621,
+     "worlds": 48
+    },
+    {
+     "food": 0.6020255088806152,
+     "D": 0.3942708373069763,
+     "exact": 0,
+     "occupied": 24.541667938232422,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R16_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 40,
+   "init": "random",
+   "mode": "shuffled",
+   "food": 0.597439244389534,
+   "D": 0.39856768399477005,
+   "occupied": 24.39583444595337,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.6049189567565918,
+     "D": 0.39184021949768066,
+     "exact": 0,
+     "occupied": 24.604167938232422,
+     "worlds": 48
+    },
+    {
+     "food": 0.5869792103767395,
+     "D": 0.40850695967674255,
+     "exact": 0,
+     "occupied": 24.041667938232422,
+     "worlds": 48
+    },
+    {
+     "food": 0.6071180701255798,
+     "D": 0.38940972089767456,
+     "exact": 0,
+     "occupied": 24.70833396911621,
+     "worlds": 48
+    },
+    {
+     "food": 0.5907407402992249,
+     "D": 0.4045138359069824,
+     "exact": 0,
+     "occupied": 24.229167938232422,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R16_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 40,
+   "init": "random",
+   "mode": "removed",
+   "food": 0.5342737287282944,
+   "D": 0.4575086534023285,
+   "occupied": 22.61458396911621,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.5329861044883728,
+     "D": 0.4562499523162842,
+     "exact": 0,
+     "occupied": 22.95833396911621,
+     "worlds": 48
+    },
+    {
+     "food": 0.5269675850868225,
+     "D": 0.46319442987442017,
+     "exact": 0,
+     "occupied": 22.58333396911621,
+     "worlds": 48
+    },
+    {
+     "food": 0.5439236164093018,
+     "D": 0.4487847089767456,
+     "exact": 0,
+     "occupied": 22.83333396911621,
+     "worlds": 48
+    },
+    {
+     "food": 0.5332176089286804,
+     "D": 0.461805522441864,
+     "exact": 0,
+     "occupied": 22.08333396911621,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R16_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 40,
+   "init": "trap",
+   "mode": "normal",
+   "food": 0.46427952498197556,
+   "D": 0.5323350578546524,
+   "occupied": 19.000000953674316,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.4807870388031006,
+     "D": 0.5163194537162781,
+     "exact": 0,
+     "occupied": 19.58333396911621,
+     "worlds": 48
+    },
+    {
+     "food": 0.45422452688217163,
+     "D": 0.542881965637207,
+     "exact": 0,
+     "occupied": 18.541667938232422,
+     "worlds": 48
+    },
+    {
+     "food": 0.45283567905426025,
+     "D": 0.5435763597488403,
+     "exact": 0,
+     "occupied": 18.58333396911621,
+     "worlds": 48
+    },
+    {
+     "food": 0.46927085518836975,
+     "D": 0.5265624523162842,
+     "exact": 0,
+     "occupied": 19.291667938232422,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R16_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 40,
+   "init": "trap",
+   "mode": "shuffled",
+   "food": 0.46210938692092896,
+   "D": 0.5342447906732559,
+   "occupied": 18.927083492279053,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.47083333134651184,
+     "D": 0.5256944894790649,
+     "exact": 0,
+     "occupied": 19.25,
+     "worlds": 48
+    },
+    {
+     "food": 0.4539930522441864,
+     "D": 0.5425347089767456,
+     "exact": 0,
+     "occupied": 18.58333396911621,
+     "worlds": 48
+    },
+    {
+     "food": 0.45439818501472473,
+     "D": 0.5420138835906982,
+     "exact": 0,
+     "occupied": 18.625,
+     "worlds": 48
+    },
+    {
+     "food": 0.46921297907829285,
+     "D": 0.5267360806465149,
+     "exact": 0,
+     "occupied": 19.25,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_LATTICE_R16_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 40,
+   "init": "trap",
+   "mode": "removed",
+   "food": 0.5,
+   "D": 0.5,
+   "occupied": 20.0,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 20.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 20.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 20.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 20.0,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 36,
+   "k": 3,
+   "init": "trap",
+   "mode": "normal",
+   "food": 0.9493088573217392,
+   "D": 0.02764753717929125,
+   "occupied": 3.020833373069763,
+   "exact": 63,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.945421040058136,
+     "D": 0.030729133635759354,
+     "exact": 15,
+     "occupied": 3.0625,
+     "worlds": 48
+    },
+    {
+     "food": 0.9580382108688354,
+     "D": 0.022916635498404503,
+     "exact": 18,
+     "occupied": 3.0208334922790527,
+     "worlds": 48
+    },
+    {
+     "food": 0.9503299593925476,
+     "D": 0.026388857513666153,
+     "exact": 16,
+     "occupied": 3.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.9434462189674377,
+     "D": 0.030555522069334984,
+     "exact": 14,
+     "occupied": 3.0,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 36,
+   "k": 3,
+   "init": "trap",
+   "mode": "shuffled",
+   "food": 0.9505750983953476,
+   "D": 0.02638885611668229,
+   "occupied": 3.0,
+   "exact": 64,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.9554601311683655,
+     "D": 0.023611081764101982,
+     "exact": 17,
+     "occupied": 3.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.9422135353088379,
+     "D": 0.030902743339538574,
+     "exact": 13,
+     "occupied": 3.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.9490581154823303,
+     "D": 0.027256911620497704,
+     "exact": 18,
+     "occupied": 3.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.9555686116218567,
+     "D": 0.023784687742590904,
+     "exact": 16,
+     "occupied": 3.0,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 36,
+   "k": 3,
+   "init": "trap",
+   "mode": "removed",
+   "food": 0.3333333432674408,
+   "D": 0.6666666269302368,
+   "occupied": 1.0,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.3333333432674408,
+     "D": 0.6666666269302368,
+     "exact": 0,
+     "occupied": 1.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.3333333432674408,
+     "D": 0.6666666269302368,
+     "exact": 0,
+     "occupied": 1.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.3333333432674408,
+     "D": 0.6666666269302368,
+     "exact": 0,
+     "occupied": 1.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.3333333432674408,
+     "D": 0.6666666269302368,
+     "exact": 0,
+     "occupied": 1.0,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 36,
+   "k": 3,
+   "init": "random",
+   "mode": "normal",
+   "food": 0.7752452194690704,
+   "D": 0.16870655864477158,
+   "occupied": 5.0156251192092896,
+   "exact": 3,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.768224835395813,
+     "D": 0.17482635378837585,
+     "exact": 0,
+     "occupied": 5.208333492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.7465017437934875,
+     "D": 0.19322912395000458,
+     "exact": 2,
+     "occupied": 5.375,
+     "worlds": 48
+    },
+    {
+     "food": 0.7852170467376709,
+     "D": 0.16111107170581818,
+     "exact": 1,
+     "occupied": 4.958333492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.8010372519493103,
+     "D": 0.1456596851348877,
+     "exact": 0,
+     "occupied": 4.520833492279053,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 36,
+   "k": 3,
+   "init": "random",
+   "mode": "shuffled",
+   "food": 0.7800586074590683,
+   "D": 0.16254336759448051,
+   "occupied": 4.8906251192092896,
+   "exact": 1,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.8001388907432556,
+     "D": 0.14496523141860962,
+     "exact": 0,
+     "occupied": 4.6666669845581055,
+     "worlds": 48
+    },
+    {
+     "food": 0.7730078101158142,
+     "D": 0.1701388657093048,
+     "exact": 1,
+     "occupied": 4.9375,
+     "worlds": 48
+    },
+    {
+     "food": 0.7902257442474365,
+     "D": 0.15208329260349274,
+     "exact": 0,
+     "occupied": 4.770833492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.7568619847297668,
+     "D": 0.1829860806465149,
+     "exact": 0,
+     "occupied": 5.1875,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 36,
+   "k": 3,
+   "init": "random",
+   "mode": "removed",
+   "food": 0.5620149821043015,
+   "D": 0.34648435562849045,
+   "occupied": 6.6406251192092896,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.5474956631660461,
+     "D": 0.3590277433395386,
+     "exact": 0,
+     "occupied": 6.875,
+     "worlds": 48
+    },
+    {
+     "food": 0.5659288167953491,
+     "D": 0.3376736044883728,
+     "exact": 0,
+     "occupied": 6.2291669845581055,
+     "worlds": 48
+    },
+    {
+     "food": 0.5613845586776733,
+     "D": 0.34861108660697937,
+     "exact": 0,
+     "occupied": 6.833333492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.5732508897781372,
+     "D": 0.34062498807907104,
+     "exact": 0,
+     "occupied": 6.625,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 48,
+   "k": 6,
+   "init": "trap",
+   "mode": "normal",
+   "food": 0.9053016901016235,
+   "D": 0.05581593047827482,
+   "occupied": 6.010416746139526,
+   "exact": 16,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.9057031869888306,
+     "D": 0.05694440007209778,
+     "exact": 3,
+     "occupied": 6.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.9062413573265076,
+     "D": 0.05295134708285332,
+     "exact": 4,
+     "occupied": 6.0416669845581055,
+     "worlds": 48
+    },
+    {
+     "food": 0.8992447853088379,
+     "D": 0.06093745678663254,
+     "exact": 4,
+     "occupied": 6.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.9100174307823181,
+     "D": 0.052430517971515656,
+     "exact": 5,
+     "occupied": 6.0,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 48,
+   "k": 6,
+   "init": "trap",
+   "mode": "shuffled",
+   "food": 0.817408874630928,
+   "D": 0.13541662693023682,
+   "occupied": 5.6875001192092896,
+   "exact": 3,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.8252170085906982,
+     "D": 0.1328124701976776,
+     "exact": 0,
+     "occupied": 5.645833492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.8123611807823181,
+     "D": 0.14097218215465546,
+     "exact": 1,
+     "occupied": 5.625,
+     "worlds": 48
+    },
+    {
+     "food": 0.8059288263320923,
+     "D": 0.14253467321395874,
+     "exact": 2,
+     "occupied": 5.75,
+     "worlds": 48
+    },
+    {
+     "food": 0.8261284828186035,
+     "D": 0.12534718215465546,
+     "exact": 0,
+     "occupied": 5.7291669845581055,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 48,
+   "k": 6,
+   "init": "trap",
+   "mode": "removed",
+   "food": 0.5000000149011612,
+   "D": 0.5,
+   "occupied": 3.0,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 3.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 3.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5000000596046448,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 3.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 3.0,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 50,
+   "k": 4,
+   "init": "trap",
+   "mode": "normal",
+   "food": 0.9247511923313141,
+   "D": 0.04136280994862318,
+   "occupied": 4.005208373069763,
+   "exact": 26,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.9399653077125549,
+     "D": 0.032291632145643234,
+     "exact": 10,
+     "occupied": 4.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.9118576049804688,
+     "D": 0.04999995976686478,
+     "exact": 3,
+     "occupied": 4.020833492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.9262790679931641,
+     "D": 0.040451355278491974,
+     "exact": 9,
+     "occupied": 4.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.9209027886390686,
+     "D": 0.04270829260349274,
+     "exact": 4,
+     "occupied": 4.0,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 50,
+   "k": 4,
+   "init": "trap",
+   "mode": "shuffled",
+   "food": 0.908664733171463,
+   "D": 0.052300307899713516,
+   "occupied": 4.0,
+   "exact": 20,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.9033623933792114,
+     "D": 0.058159686625003815,
+     "exact": 7,
+     "occupied": 4.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.9064874053001404,
+     "D": 0.052951350808143616,
+     "exact": 5,
+     "occupied": 4.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.9128993153572083,
+     "D": 0.048784684389829636,
+     "exact": 5,
+     "occupied": 4.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.911909818649292,
+     "D": 0.049305509775877,
+     "exact": 3,
+     "occupied": 4.0,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 50,
+   "k": 4,
+   "init": "trap",
+   "mode": "removed",
+   "food": 0.5,
+   "D": 0.5,
+   "occupied": 2.0,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 2.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 2.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 2.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 2.0,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 50,
+   "k": 4,
+   "init": "random",
+   "mode": "normal",
+   "food": 0.9096195846796036,
+   "D": 0.05182287283241749,
+   "occupied": 4.1562501192092896,
+   "exact": 10,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.9038253426551819,
+     "D": 0.05607634410262108,
+     "exact": 1,
+     "occupied": 4.145833492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.9177199006080627,
+     "D": 0.04635412618517876,
+     "exact": 3,
+     "occupied": 4.1875,
+     "worlds": 48
+    },
+    {
+     "food": 0.9079630970954895,
+     "D": 0.05243051052093506,
+     "exact": 6,
+     "occupied": 4.1666669845581055,
+     "worlds": 48
+    },
+    {
+     "food": 0.9089699983596802,
+     "D": 0.05243051052093506,
+     "exact": 0,
+     "occupied": 4.125,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 50,
+   "k": 4,
+   "init": "random",
+   "mode": "shuffled",
+   "food": 0.8946455866098404,
+   "D": 0.06067704316228628,
+   "occupied": 4.067708492279053,
+   "exact": 8,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.8910648226737976,
+     "D": 0.06249995529651642,
+     "exact": 1,
+     "occupied": 4.083333492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.8948727250099182,
+     "D": 0.059548571705818176,
+     "exact": 1,
+     "occupied": 4.020833492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.9091493487358093,
+     "D": 0.05173606798052788,
+     "exact": 3,
+     "occupied": 4.0625,
+     "worlds": 48
+    },
+    {
+     "food": 0.8834954500198364,
+     "D": 0.06892357766628265,
+     "exact": 3,
+     "occupied": 4.1041669845581055,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 50,
+   "k": 4,
+   "init": "random",
+   "mode": "removed",
+   "food": 0.5687037408351898,
+   "D": 0.3593749776482582,
+   "occupied": 7.510416865348816,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.5572685599327087,
+     "D": 0.3743055760860443,
+     "exact": 0,
+     "occupied": 7.6875,
+     "worlds": 48
+    },
+    {
+     "food": 0.5654224753379822,
+     "D": 0.3663194179534912,
+     "exact": 0,
+     "occupied": 7.645833492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.5706424117088318,
+     "D": 0.3541666269302368,
+     "exact": 0,
+     "occupied": 7.3541669845581055,
+     "worlds": 48
+    },
+    {
+     "food": 0.5814815163612366,
+     "D": 0.3427082896232605,
+     "exact": 0,
+     "occupied": 7.3541669845581055,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 72,
+   "k": 8,
+   "init": "trap",
+   "mode": "normal",
+   "food": 0.9008651971817017,
+   "D": 0.0652343351393938,
+   "occupied": 7.932291865348816,
+   "exact": 23,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.9121412634849548,
+     "D": 0.05607634782791138,
+     "exact": 3,
+     "occupied": 7.9375,
+     "worlds": 48
+    },
+    {
+     "food": 0.8958218097686768,
+     "D": 0.06909718364477158,
+     "exact": 7,
+     "occupied": 7.9166669845581055,
+     "worlds": 48
+    },
+    {
+     "food": 0.8991550803184509,
+     "D": 0.06597217917442322,
+     "exact": 5,
+     "occupied": 7.958333492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.8963426351547241,
+     "D": 0.06979162991046906,
+     "exact": 8,
+     "occupied": 7.9166669845581055,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 72,
+   "k": 8,
+   "init": "trap",
+   "mode": "shuffled",
+   "food": 0.7266406863927841,
+   "D": 0.23294267430901527,
+   "occupied": 6.744791746139526,
+   "exact": 5,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.7412616610527039,
+     "D": 0.22100691497325897,
+     "exact": 2,
+     "occupied": 6.770833492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.723541796207428,
+     "D": 0.22673606872558594,
+     "exact": 1,
+     "occupied": 6.9375,
+     "worlds": 48
+    },
+    {
+     "food": 0.763761579990387,
+     "D": 0.19739580154418945,
+     "exact": 1,
+     "occupied": 7.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.6779977083206177,
+     "D": 0.28663191199302673,
+     "exact": 1,
+     "occupied": 6.270833492279053,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 72,
+   "k": 8,
+   "init": "trap",
+   "mode": "removed",
+   "food": 0.5,
+   "D": 0.5,
+   "occupied": 4.0,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 4.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 4.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 4.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 4.0,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 72,
+   "k": 8,
+   "init": "random",
+   "mode": "normal",
+   "food": 0.8993084877729416,
+   "D": 0.06649301573634148,
+   "occupied": 7.947916865348816,
+   "exact": 25,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.8966782689094543,
+     "D": 0.0684027373790741,
+     "exact": 6,
+     "occupied": 7.9375,
+     "worlds": 48
+    },
+    {
+     "food": 0.9035995602607727,
+     "D": 0.0640624612569809,
+     "exact": 7,
+     "occupied": 7.958333492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.8993866443634033,
+     "D": 0.06510412693023682,
+     "exact": 8,
+     "occupied": 7.9791669845581055,
+     "worlds": 48
+    },
+    {
+     "food": 0.897569477558136,
+     "D": 0.0684027373790741,
+     "exact": 4,
+     "occupied": 7.9166669845581055,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 72,
+   "k": 8,
+   "init": "random",
+   "mode": "shuffled",
+   "food": 0.7200087010860443,
+   "D": 0.24318573623895645,
+   "occupied": 6.557291746139526,
+   "exact": 4,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.709768533706665,
+     "D": 0.25277775526046753,
+     "exact": 1,
+     "occupied": 6.5,
+     "worlds": 48
+    },
+    {
+     "food": 0.7150463461875916,
+     "D": 0.2489582896232605,
+     "exact": 1,
+     "occupied": 6.520833492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.7382639050483704,
+     "D": 0.22534720599651337,
+     "exact": 2,
+     "occupied": 6.708333492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.7169560194015503,
+     "D": 0.2456596940755844,
+     "exact": 0,
+     "occupied": 6.5,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 72,
+   "k": 8,
+   "init": "random",
+   "mode": "removed",
+   "food": 0.6171267628669739,
+   "D": 0.28359372168779373,
+   "occupied": 12.859375238418579,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.628912091255188,
+     "D": 0.2748263478279114,
+     "exact": 0,
+     "occupied": 12.833333969116211,
+     "worlds": 48
+    },
+    {
+     "food": 0.5965046286582947,
+     "D": 0.3003472089767456,
+     "exact": 0,
+     "occupied": 13.125,
+     "worlds": 48
+    },
+    {
+     "food": 0.6318750381469727,
+     "D": 0.2708333134651184,
+     "exact": 0,
+     "occupied": 12.6875,
+     "worlds": 48
+    },
+    {
+     "food": 0.6112152934074402,
+     "D": 0.28836801648139954,
+     "exact": 0,
+     "occupied": 12.791666984558105,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 12,
+   "init": "trap",
+   "mode": "normal",
+   "food": 0.9168056100606918,
+   "D": 0.061458298936486244,
+   "occupied": 11.708333492279053,
+   "exact": 30,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.9165971875190735,
+     "D": 0.06336802244186401,
+     "exact": 11,
+     "occupied": 11.6875,
+     "worlds": 48
+    },
+    {
+     "food": 0.9201563596725464,
+     "D": 0.0588541254401207,
+     "exact": 5,
+     "occupied": 11.75,
+     "worlds": 48
+    },
+    {
+     "food": 0.9198264479637146,
+     "D": 0.05868052691221237,
+     "exact": 8,
+     "occupied": 11.6875,
+     "worlds": 48
+    },
+    {
+     "food": 0.9106424450874329,
+     "D": 0.0649305209517479,
+     "exact": 6,
+     "occupied": 11.708333969116211,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 12,
+   "init": "trap",
+   "mode": "shuffled",
+   "food": 0.697048619389534,
+   "D": 0.27986107766628265,
+   "occupied": 9.166666984558105,
+   "exact": 1,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.6537500619888306,
+     "D": 0.3194444179534912,
+     "exact": 0,
+     "occupied": 8.75,
+     "worlds": 48
+    },
+    {
+     "food": 0.6970486044883728,
+     "D": 0.2809027433395386,
+     "exact": 0,
+     "occupied": 9.125,
+     "worlds": 48
+    },
+    {
+     "food": 0.7451041340827942,
+     "D": 0.23402774333953857,
+     "exact": 1,
+     "occupied": 9.708333969116211,
+     "worlds": 48
+    },
+    {
+     "food": 0.6922916769981384,
+     "D": 0.28506940603256226,
+     "exact": 0,
+     "occupied": 9.083333969116211,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 12,
+   "init": "trap",
+   "mode": "removed",
+   "food": 0.5,
+   "D": 0.5,
+   "occupied": 6.0,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 6.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 6.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 6.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 6.0,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 12,
+   "init": "random",
+   "mode": "normal",
+   "food": 0.9151128977537155,
+   "D": 0.06163190398365259,
+   "occupied": 11.734375476837158,
+   "exact": 25,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.9295486807823181,
+     "D": 0.05173607915639877,
+     "exact": 12,
+     "occupied": 11.75,
+     "worlds": 48
+    },
+    {
+     "food": 0.905086874961853,
+     "D": 0.07048606872558594,
+     "exact": 3,
+     "occupied": 11.645833969116211,
+     "worlds": 48
+    },
+    {
+     "food": 0.9080035090446472,
+     "D": 0.06215272843837738,
+     "exact": 3,
+     "occupied": 11.833333969116211,
+     "worlds": 48
+    },
+    {
+     "food": 0.9178125262260437,
+     "D": 0.062152739614248276,
+     "exact": 7,
+     "occupied": 11.708333969116211,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 12,
+   "init": "random",
+   "mode": "shuffled",
+   "food": 0.6169227808713913,
+   "D": 0.3608940839767456,
+   "occupied": 8.151041984558105,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.5869097709655762,
+     "D": 0.390625,
+     "exact": 0,
+     "occupied": 7.833333492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.5944792032241821,
+     "D": 0.38159722089767456,
+     "exact": 0,
+     "occupied": 7.895833492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.6311805844306946,
+     "D": 0.34652775526046753,
+     "exact": 0,
+     "occupied": 8.354166984558105,
+     "worlds": 48
+    },
+    {
+     "food": 0.6551215648651123,
+     "D": 0.32482635974884033,
+     "exact": 0,
+     "occupied": 8.520833969116211,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 12,
+   "init": "random",
+   "mode": "removed",
+   "food": 0.6085026562213898,
+   "D": 0.28289927542209625,
+   "occupied": 18.203125476837158,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.6077083945274353,
+     "D": 0.2805555462837219,
+     "exact": 0,
+     "occupied": 17.979167938232422,
+     "worlds": 48
+    },
+    {
+     "food": 0.6180035471916199,
+     "D": 0.27534720301628113,
+     "exact": 0,
+     "occupied": 18.39583396911621,
+     "worlds": 48
+    },
+    {
+     "food": 0.6016840934753418,
+     "D": 0.29010412096977234,
+     "exact": 0,
+     "occupied": 18.125,
+     "worlds": 48
+    },
+    {
+     "food": 0.6066145896911621,
+     "D": 0.2855902314186096,
+     "exact": 0,
+     "occupied": 18.3125,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 20,
+   "init": "trap",
+   "mode": "normal",
+   "food": 0.8840567767620087,
+   "D": 0.10078120604157448,
+   "occupied": 18.578125476837158,
+   "exact": 13,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.9007234573364258,
+     "D": 0.0848957896232605,
+     "exact": 7,
+     "occupied": 18.89583396911621,
+     "worlds": 48
+    },
+    {
+     "food": 0.9004051685333252,
+     "D": 0.08368051052093506,
+     "exact": 2,
+     "occupied": 18.95833396911621,
+     "worlds": 48
+    },
+    {
+     "food": 0.8623263835906982,
+     "D": 0.1222221776843071,
+     "exact": 2,
+     "occupied": 18.08333396911621,
+     "worlds": 48
+    },
+    {
+     "food": 0.8727720975875854,
+     "D": 0.11232634633779526,
+     "exact": 2,
+     "occupied": 18.375,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 20,
+   "init": "trap",
+   "mode": "shuffled",
+   "food": 0.5983362644910812,
+   "D": 0.39331595599651337,
+   "occupied": 12.453125238418579,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.5877604484558105,
+     "D": 0.4043402671813965,
+     "exact": 0,
+     "occupied": 12.229166984558105,
+     "worlds": 48
+    },
+    {
+     "food": 0.6200231909751892,
+     "D": 0.37013888359069824,
+     "exact": 0,
+     "occupied": 12.979166984558105,
+     "worlds": 48
+    },
+    {
+     "food": 0.5982349514961243,
+     "D": 0.39253470301628113,
+     "exact": 0,
+     "occupied": 12.479166984558105,
+     "worlds": 48
+    },
+    {
+     "food": 0.5873264670372009,
+     "D": 0.4062499701976776,
+     "exact": 0,
+     "occupied": 12.125,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 20,
+   "init": "trap",
+   "mode": "removed",
+   "food": 0.4997395873069763,
+   "D": 0.5002604126930237,
+   "occupied": 9.994791746139526,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 10.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.4989583492279053,
+     "D": 0.5010416507720947,
+     "exact": 0,
+     "occupied": 9.979166984558105,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 10.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 10.0,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 40,
+   "init": "random",
+   "mode": "normal",
+   "food": 0.9405237883329391,
+   "D": 0.05338537413626909,
+   "occupied": 38.36979389190674,
+   "exact": 26,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.9424769282341003,
+     "D": 0.05069440230727196,
+     "exact": 8,
+     "occupied": 38.520835876464844,
+     "worlds": 48
+    },
+    {
+     "food": 0.9454283118247986,
+     "D": 0.048784684389829636,
+     "exact": 10,
+     "occupied": 38.54166793823242,
+     "worlds": 48
+    },
+    {
+     "food": 0.9361690282821655,
+     "D": 0.05815967917442322,
+     "exact": 7,
+     "occupied": 38.145835876464844,
+     "worlds": 48
+    },
+    {
+     "food": 0.9380208849906921,
+     "D": 0.05590273067355156,
+     "exact": 1,
+     "occupied": 38.270835876464844,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 40,
+   "init": "random",
+   "mode": "shuffled",
+   "food": 0.58466437458992,
+   "D": 0.4114583134651184,
+   "occupied": 23.88020896911621,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.5833333730697632,
+     "D": 0.41354164481163025,
+     "exact": 0,
+     "occupied": 23.729167938232422,
+     "worlds": 48
+    },
+    {
+     "food": 0.5808449387550354,
+     "D": 0.4151041507720947,
+     "exact": 0,
+     "occupied": 23.75,
+     "worlds": 48
+    },
+    {
+     "food": 0.5634837746620178,
+     "D": 0.4321180284023285,
+     "exact": 0,
+     "occupied": 23.104167938232422,
+     "worlds": 48
+    },
+    {
+     "food": 0.6109954118728638,
+     "D": 0.38506942987442017,
+     "exact": 0,
+     "occupied": 24.9375,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 40,
+   "init": "random",
+   "mode": "removed",
+   "food": 0.5342737287282944,
+   "D": 0.4575086534023285,
+   "occupied": 22.61458396911621,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.5329861044883728,
+     "D": 0.4562499523162842,
+     "exact": 0,
+     "occupied": 22.95833396911621,
+     "worlds": 48
+    },
+    {
+     "food": 0.5269675850868225,
+     "D": 0.46319442987442017,
+     "exact": 0,
+     "occupied": 22.58333396911621,
+     "worlds": 48
+    },
+    {
+     "food": 0.5439236164093018,
+     "D": 0.4487847089767456,
+     "exact": 0,
+     "occupied": 22.83333396911621,
+     "worlds": 48
+    },
+    {
+     "food": 0.5332176089286804,
+     "D": 0.461805522441864,
+     "exact": 0,
+     "occupied": 22.08333396911621,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 40,
+   "init": "trap",
+   "mode": "normal",
+   "food": 0.8666232824325562,
+   "D": 0.12443572841584682,
+   "occupied": 35.76041793823242,
+   "exact": 3,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.8502894043922424,
+     "D": 0.14184024930000305,
+     "exact": 1,
+     "occupied": 34.958335876464844,
+     "worlds": 48
+    },
+    {
+     "food": 0.8680555820465088,
+     "D": 0.12291663140058517,
+     "exact": 2,
+     "occupied": 35.833335876464844,
+     "worlds": 48
+    },
+    {
+     "food": 0.8736111521720886,
+     "D": 0.11666662991046906,
+     "exact": 0,
+     "occupied": 36.125,
+     "worlds": 48
+    },
+    {
+     "food": 0.8745369911193848,
+     "D": 0.11631940305233002,
+     "exact": 0,
+     "occupied": 36.125,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 40,
+   "init": "trap",
+   "mode": "shuffled",
+   "food": 0.4548756033182144,
+   "D": 0.5413628369569778,
+   "occupied": 18.656250953674316,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.47193291783332825,
+     "D": 0.5241319537162781,
+     "exact": 0,
+     "occupied": 19.354167938232422,
+     "worlds": 48
+    },
+    {
+     "food": 0.440972238779068,
+     "D": 0.5548610687255859,
+     "exact": 0,
+     "occupied": 18.166667938232422,
+     "worlds": 48
+    },
+    {
+     "food": 0.4442708492279053,
+     "D": 0.5519096851348877,
+     "exact": 0,
+     "occupied": 18.229167938232422,
+     "worlds": 48
+    },
+    {
+     "food": 0.46232640743255615,
+     "D": 0.5345486402511597,
+     "exact": 0,
+     "occupied": 18.875,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "teacher",
+   "update": 900,
+   "m": 80,
+   "k": 40,
+   "init": "trap",
+   "mode": "removed",
+   "food": 0.5,
+   "D": 0.5,
+   "occupied": 20.0,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 20.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 20.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 20.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 20.0,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "after_rl",
+   "update": 500,
+   "m": 36,
+   "k": 3,
+   "init": "trap",
+   "mode": "normal",
+   "food": 0.6879958808422089,
+   "D": 0.2721787840127945,
+   "occupied": 2.8697917461395264,
+   "exact": 1,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.6932551860809326,
+     "D": 0.2644096910953522,
+     "exact": 1,
+     "occupied": 2.8333334922790527,
+     "worlds": 48
+    },
+    {
+     "food": 0.695117175579071,
+     "D": 0.26406246423721313,
+     "exact": 0,
+     "occupied": 2.8541667461395264,
+     "worlds": 48
+    },
+    {
+     "food": 0.6801996827125549,
+     "D": 0.2847221791744232,
+     "exact": 0,
+     "occupied": 2.8541667461395264,
+     "worlds": 48
+    },
+    {
+     "food": 0.6834114789962769,
+     "D": 0.27552080154418945,
+     "exact": 0,
+     "occupied": 2.9375,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "after_rl",
+   "update": 500,
+   "m": 36,
+   "k": 3,
+   "init": "trap",
+   "mode": "shuffled",
+   "food": 0.667647585272789,
+   "D": 0.32760414481163025,
+   "occupied": 2.130208373069763,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.6688889265060425,
+     "D": 0.32326385378837585,
+     "exact": 0,
+     "occupied": 2.1666667461395264,
+     "worlds": 48
+    },
+    {
+     "food": 0.6675130128860474,
+     "D": 0.32760414481163025,
+     "exact": 0,
+     "occupied": 2.125,
+     "worlds": 48
+    },
+    {
+     "food": 0.6669617891311646,
+     "D": 0.33020830154418945,
+     "exact": 0,
+     "occupied": 2.125,
+     "worlds": 48
+    },
+    {
+     "food": 0.6672266125679016,
+     "D": 0.32934027910232544,
+     "exact": 0,
+     "occupied": 2.1041667461395264,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "after_rl",
+   "update": 500,
+   "m": 36,
+   "k": 3,
+   "init": "trap",
+   "mode": "removed",
+   "food": 0.3333333432674408,
+   "D": 0.6666666269302368,
+   "occupied": 1.0,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.3333333432674408,
+     "D": 0.6666666269302368,
+     "exact": 0,
+     "occupied": 1.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.3333333432674408,
+     "D": 0.6666666269302368,
+     "exact": 0,
+     "occupied": 1.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.3333333432674408,
+     "D": 0.6666666269302368,
+     "exact": 0,
+     "occupied": 1.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.3333333432674408,
+     "D": 0.6666666269302368,
+     "exact": 0,
+     "occupied": 1.0,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "after_rl",
+   "update": 500,
+   "m": 36,
+   "k": 3,
+   "init": "random",
+   "mode": "normal",
+   "food": 0.6700369119644165,
+   "D": 0.2585503086447716,
+   "occupied": 4.145833611488342,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.6651518940925598,
+     "D": 0.2637152373790741,
+     "exact": 0,
+     "occupied": 4.2291669845581055,
+     "worlds": 48
+    },
+    {
+     "food": 0.6799740195274353,
+     "D": 0.25208330154418945,
+     "exact": 0,
+     "occupied": 4.1666669845581055,
+     "worlds": 48
+    },
+    {
+     "food": 0.668932318687439,
+     "D": 0.25902771949768066,
+     "exact": 0,
+     "occupied": 4.1041669845581055,
+     "worlds": 48
+    },
+    {
+     "food": 0.6660894155502319,
+     "D": 0.2593749761581421,
+     "exact": 0,
+     "occupied": 4.083333492279053,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "after_rl",
+   "update": 500,
+   "m": 36,
+   "k": 3,
+   "init": "random",
+   "mode": "shuffled",
+   "food": 0.6609038561582565,
+   "D": 0.2648003175854683,
+   "occupied": 3.9687501788139343,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.6589062213897705,
+     "D": 0.2670138478279114,
+     "exact": 0,
+     "occupied": 4.1041669845581055,
+     "worlds": 48
+    },
+    {
+     "food": 0.6684244871139526,
+     "D": 0.258333295583725,
+     "exact": 0,
+     "occupied": 3.9166667461395264,
+     "worlds": 48
+    },
+    {
+     "food": 0.6644617915153503,
+     "D": 0.26249998807907104,
+     "exact": 0,
+     "occupied": 3.8958334922790527,
+     "worlds": 48
+    },
+    {
+     "food": 0.6518229246139526,
+     "D": 0.27135413885116577,
+     "exact": 0,
+     "occupied": 3.9583334922790527,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "after_rl",
+   "update": 500,
+   "m": 36,
+   "k": 3,
+   "init": "random",
+   "mode": "removed",
+   "food": 0.5924718379974365,
+   "D": 0.31432288885116577,
+   "occupied": 5.229166746139526,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.588901937007904,
+     "D": 0.31458330154418945,
+     "exact": 0,
+     "occupied": 5.25,
+     "worlds": 48
+    },
+    {
+     "food": 0.5760547518730164,
+     "D": 0.3343749940395355,
+     "exact": 0,
+     "occupied": 5.125,
+     "worlds": 48
+    },
+    {
+     "food": 0.6136589050292969,
+     "D": 0.2921874523162842,
+     "exact": 0,
+     "occupied": 4.9791669845581055,
+     "worlds": 48
+    },
+    {
+     "food": 0.5912717580795288,
+     "D": 0.31614580750465393,
+     "exact": 0,
+     "occupied": 5.5625,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "after_rl",
+   "update": 500,
+   "m": 48,
+   "k": 6,
+   "init": "trap",
+   "mode": "normal",
+   "food": 0.6895616799592972,
+   "D": 0.2999131828546524,
+   "occupied": 4.432291746139526,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.6860330700874329,
+     "D": 0.29809027910232544,
+     "exact": 0,
+     "occupied": 4.5416669845581055,
+     "worlds": 48
+    },
+    {
+     "food": 0.6901909708976746,
+     "D": 0.2993055284023285,
+     "exact": 0,
+     "occupied": 4.4375,
+     "worlds": 48
+    },
+    {
+     "food": 0.6956597566604614,
+     "D": 0.2958333194255829,
+     "exact": 0,
+     "occupied": 4.4375,
+     "worlds": 48
+    },
+    {
+     "food": 0.6863629221916199,
+     "D": 0.3064236044883728,
+     "exact": 0,
+     "occupied": 4.3125,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "after_rl",
+   "update": 500,
+   "m": 48,
+   "k": 6,
+   "init": "trap",
+   "mode": "shuffled",
+   "food": 0.6746810078620911,
+   "D": 0.3220919892191887,
+   "occupied": 4.130208492279053,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.6677864789962769,
+     "D": 0.33003470301628113,
+     "exact": 0,
+     "occupied": 4.0625,
+     "worlds": 48
+    },
+    {
+     "food": 0.676536500453949,
+     "D": 0.32065969705581665,
+     "exact": 0,
+     "occupied": 4.125,
+     "worlds": 48
+    },
+    {
+     "food": 0.6757031083106995,
+     "D": 0.3199652433395386,
+     "exact": 0,
+     "occupied": 4.1666669845581055,
+     "worlds": 48
+    },
+    {
+     "food": 0.678697943687439,
+     "D": 0.3177083134651184,
+     "exact": 0,
+     "occupied": 4.1666669845581055,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "after_rl",
+   "update": 500,
+   "m": 48,
+   "k": 6,
+   "init": "trap",
+   "mode": "removed",
+   "food": 0.5000000149011612,
+   "D": 0.5,
+   "occupied": 3.0,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 3.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 3.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5000000596046448,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 3.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 3.0,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "after_rl",
+   "update": 500,
+   "m": 50,
+   "k": 4,
+   "init": "trap",
+   "mode": "normal",
+   "food": 0.7439381033182144,
+   "D": 0.2548610717058182,
+   "occupied": 2.989583373069763,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.7395833730697632,
+     "D": 0.2604166269302368,
+     "exact": 0,
+     "occupied": 2.9583334922790527,
+     "worlds": 48
+    },
+    {
+     "food": 0.7452893853187561,
+     "D": 0.25277775526046753,
+     "exact": 0,
+     "occupied": 3.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.75,
+     "D": 0.24999994039535522,
+     "exact": 0,
+     "occupied": 3.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.7408796548843384,
+     "D": 0.25624996423721313,
+     "exact": 0,
+     "occupied": 3.0,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "after_rl",
+   "update": 500,
+   "m": 50,
+   "k": 4,
+   "init": "trap",
+   "mode": "shuffled",
+   "food": 0.75,
+   "D": 0.24999994039535522,
+   "occupied": 3.0,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.75,
+     "D": 0.24999994039535522,
+     "exact": 0,
+     "occupied": 3.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.75,
+     "D": 0.24999994039535522,
+     "exact": 0,
+     "occupied": 3.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.75,
+     "D": 0.24999994039535522,
+     "exact": 0,
+     "occupied": 3.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.75,
+     "D": 0.24999994039535522,
+     "exact": 0,
+     "occupied": 3.0,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "after_rl",
+   "update": 500,
+   "m": 50,
+   "k": 4,
+   "init": "trap",
+   "mode": "removed",
+   "food": 0.5,
+   "D": 0.5,
+   "occupied": 2.0,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 2.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 2.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 2.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 2.0,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "after_rl",
+   "update": 500,
+   "m": 50,
+   "k": 4,
+   "init": "random",
+   "mode": "normal",
+   "food": 0.7562369853258133,
+   "D": 0.22361106425523758,
+   "occupied": 3.4687501192092896,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.7637847065925598,
+     "D": 0.2151041030883789,
+     "exact": 0,
+     "occupied": 3.4583334922790527,
+     "worlds": 48
+    },
+    {
+     "food": 0.7498264312744141,
+     "D": 0.23611107468605042,
+     "exact": 0,
+     "occupied": 3.4166667461395264,
+     "worlds": 48
+    },
+    {
+     "food": 0.7526677846908569,
+     "D": 0.22100690007209778,
+     "exact": 0,
+     "occupied": 3.5833334922790527,
+     "worlds": 48
+    },
+    {
+     "food": 0.7586690187454224,
+     "D": 0.22222217917442322,
+     "exact": 0,
+     "occupied": 3.4166667461395264,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "after_rl",
+   "update": 500,
+   "m": 50,
+   "k": 4,
+   "init": "random",
+   "mode": "shuffled",
+   "food": 0.7534085661172867,
+   "D": 0.23524300754070282,
+   "occupied": 3.3072916865348816,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.7510301470756531,
+     "D": 0.23923605680465698,
+     "exact": 0,
+     "occupied": 3.25,
+     "worlds": 48
+    },
+    {
+     "food": 0.7550694942474365,
+     "D": 0.2315971851348877,
+     "exact": 0,
+     "occupied": 3.3541667461395264,
+     "worlds": 48
+    },
+    {
+     "food": 0.7525231242179871,
+     "D": 0.23645827174186707,
+     "exact": 0,
+     "occupied": 3.3125,
+     "worlds": 48
+    },
+    {
+     "food": 0.7550114989280701,
+     "D": 0.23368051648139954,
+     "exact": 0,
+     "occupied": 3.3125,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "after_rl",
+   "update": 500,
+   "m": 50,
+   "k": 4,
+   "init": "random",
+   "mode": "removed",
+   "food": 0.573463574051857,
+   "D": 0.35169269144535065,
+   "occupied": 7.281250238418579,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.5642419457435608,
+     "D": 0.3593749701976776,
+     "exact": 0,
+     "occupied": 7.4791669845581055,
+     "worlds": 48
+    },
+    {
+     "food": 0.5607060194015503,
+     "D": 0.3656249940395355,
+     "exact": 0,
+     "occupied": 7.5416669845581055,
+     "worlds": 48
+    },
+    {
+     "food": 0.5941841006278992,
+     "D": 0.33038192987442017,
+     "exact": 0,
+     "occupied": 6.9166669845581055,
+     "worlds": 48
+    },
+    {
+     "food": 0.5747222304344177,
+     "D": 0.3513888716697693,
+     "exact": 0,
+     "occupied": 7.1875,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "after_rl",
+   "update": 500,
+   "m": 72,
+   "k": 8,
+   "init": "trap",
+   "mode": "normal",
+   "food": 0.740350142121315,
+   "D": 0.2584634870290756,
+   "occupied": 5.953125,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.7361111044883728,
+     "D": 0.2621527314186096,
+     "exact": 0,
+     "occupied": 5.9375,
+     "worlds": 48
+    },
+    {
+     "food": 0.7421875,
+     "D": 0.2578124403953552,
+     "exact": 0,
+     "occupied": 5.9375,
+     "worlds": 48
+    },
+    {
+     "food": 0.7364352345466614,
+     "D": 0.2618055045604706,
+     "exact": 0,
+     "occupied": 5.9375,
+     "worlds": 48
+    },
+    {
+     "food": 0.7466667294502258,
+     "D": 0.25208327174186707,
+     "exact": 0,
+     "occupied": 6.0,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "after_rl",
+   "update": 500,
+   "m": 72,
+   "k": 8,
+   "init": "trap",
+   "mode": "shuffled",
+   "food": 0.7447019964456558,
+   "D": 0.2548176571726799,
+   "occupied": 5.968750238418579,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.7473958730697632,
+     "D": 0.2526041269302368,
+     "exact": 0,
+     "occupied": 5.9791669845581055,
+     "worlds": 48
+    },
+    {
+     "food": 0.7429282665252686,
+     "D": 0.25642356276512146,
+     "exact": 0,
+     "occupied": 5.958333492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.7457291483879089,
+     "D": 0.25364577770233154,
+     "exact": 0,
+     "occupied": 5.9791669845581055,
+     "worlds": 48
+    },
+    {
+     "food": 0.7427546977996826,
+     "D": 0.2565971612930298,
+     "exact": 0,
+     "occupied": 5.958333492279053,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "after_rl",
+   "update": 500,
+   "m": 72,
+   "k": 8,
+   "init": "trap",
+   "mode": "removed",
+   "food": 0.5,
+   "D": 0.5,
+   "occupied": 4.0,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 4.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 4.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 4.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 4.0,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "after_rl",
+   "update": 500,
+   "m": 72,
+   "k": 8,
+   "init": "random",
+   "mode": "normal",
+   "food": 0.7939612418413162,
+   "D": 0.19422738626599312,
+   "occupied": 6.776041865348816,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.787199079990387,
+     "D": 0.20416662096977234,
+     "exact": 0,
+     "occupied": 6.6041669845581055,
+     "worlds": 48
+    },
+    {
+     "food": 0.8024653196334839,
+     "D": 0.18454858660697937,
+     "exact": 0,
+     "occupied": 6.895833492279053,
+     "worlds": 48
+    },
+    {
+     "food": 0.8015509247779846,
+     "D": 0.1864582747220993,
+     "exact": 0,
+     "occupied": 6.875,
+     "worlds": 48
+    },
+    {
+     "food": 0.7846296429634094,
+     "D": 0.20173606276512146,
+     "exact": 0,
+     "occupied": 6.7291669845581055,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "after_rl",
+   "update": 500,
+   "m": 72,
+   "k": 8,
+   "init": "random",
+   "mode": "shuffled",
+   "food": 0.7995399534702301,
+   "D": 0.1927516832947731,
+   "occupied": 6.692708492279053,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.8164351582527161,
+     "D": 0.17569439113140106,
+     "exact": 0,
+     "occupied": 6.8125,
+     "worlds": 48
+    },
+    {
+     "food": 0.7920833230018616,
+     "D": 0.1968749612569809,
+     "exact": 0,
+     "occupied": 6.75,
+     "worlds": 48
+    },
+    {
+     "food": 0.797511637210846,
+     "D": 0.1977429986000061,
+     "exact": 0,
+     "occupied": 6.6041669845581055,
+     "worlds": 48
+    },
+    {
+     "food": 0.7921296954154968,
+     "D": 0.20069438219070435,
+     "exact": 0,
+     "occupied": 6.6041669845581055,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "after_rl",
+   "update": 500,
+   "m": 72,
+   "k": 8,
+   "init": "random",
+   "mode": "removed",
+   "food": 0.6189410090446472,
+   "D": 0.27443573623895645,
+   "occupied": 11.156250476837158,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.6181482076644897,
+     "D": 0.2727430462837219,
+     "exact": 0,
+     "occupied": 11.25,
+     "worlds": 48
+    },
+    {
+     "food": 0.6167361736297607,
+     "D": 0.2786458134651184,
+     "exact": 0,
+     "occupied": 11.520833969116211,
+     "worlds": 48
+    },
+    {
+     "food": 0.6302199363708496,
+     "D": 0.26493051648139954,
+     "exact": 0,
+     "occupied": 10.833333969116211,
+     "worlds": 48
+    },
+    {
+     "food": 0.6106597185134888,
+     "D": 0.28142356872558594,
+     "exact": 0,
+     "occupied": 11.020833969116211,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "after_rl",
+   "update": 500,
+   "m": 80,
+   "k": 12,
+   "init": "trap",
+   "mode": "normal",
+   "food": 0.755872443318367,
+   "D": 0.24231766164302826,
+   "occupied": 9.161458492279053,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.7469618320465088,
+     "D": 0.2498263567686081,
+     "exact": 0,
+     "occupied": 9.125,
+     "worlds": 48
+    },
+    {
+     "food": 0.7577952146530151,
+     "D": 0.24079856276512146,
+     "exact": 0,
+     "occupied": 9.166666984558105,
+     "worlds": 48
+    },
+    {
+     "food": 0.7604687213897705,
+     "D": 0.23802077770233154,
+     "exact": 0,
+     "occupied": 9.1875,
+     "worlds": 48
+    },
+    {
+     "food": 0.7582640051841736,
+     "D": 0.24062494933605194,
+     "exact": 0,
+     "occupied": 9.166666984558105,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "after_rl",
+   "update": 500,
+   "m": 80,
+   "k": 12,
+   "init": "trap",
+   "mode": "shuffled",
+   "food": 0.7789019644260406,
+   "D": 0.21844613179564476,
+   "occupied": 9.453125,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.7707986235618591,
+     "D": 0.22569438815116882,
+     "exact": 0,
+     "occupied": 9.375,
+     "worlds": 48
+    },
+    {
+     "food": 0.7867187857627869,
+     "D": 0.2109374701976776,
+     "exact": 0,
+     "occupied": 9.5625,
+     "worlds": 48
+    },
+    {
+     "food": 0.7831076979637146,
+     "D": 0.21406245231628418,
+     "exact": 0,
+     "occupied": 9.5,
+     "worlds": 48
+    },
+    {
+     "food": 0.774982750415802,
+     "D": 0.22309021651744843,
+     "exact": 0,
+     "occupied": 9.375,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "after_rl",
+   "update": 500,
+   "m": 80,
+   "k": 12,
+   "init": "trap",
+   "mode": "removed",
+   "food": 0.5,
+   "D": 0.5,
+   "occupied": 6.0,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 6.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 6.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 6.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 6.0,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "after_rl",
+   "update": 500,
+   "m": 80,
+   "k": 12,
+   "init": "random",
+   "mode": "normal",
+   "food": 0.8154297173023224,
+   "D": 0.18224821984767914,
+   "occupied": 9.885416984558105,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.8180903196334839,
+     "D": 0.17986106872558594,
+     "exact": 0,
+     "occupied": 9.895833969116211,
+     "worlds": 48
+    },
+    {
+     "food": 0.8129514455795288,
+     "D": 0.18506941199302673,
+     "exact": 0,
+     "occupied": 9.833333969116211,
+     "worlds": 48
+    },
+    {
+     "food": 0.8118576407432556,
+     "D": 0.18593744933605194,
+     "exact": 0,
+     "occupied": 9.875,
+     "worlds": 48
+    },
+    {
+     "food": 0.8188194632530212,
+     "D": 0.17812494933605194,
+     "exact": 0,
+     "occupied": 9.9375,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "after_rl",
+   "update": 500,
+   "m": 80,
+   "k": 12,
+   "init": "random",
+   "mode": "shuffled",
+   "food": 0.8162066340446472,
+   "D": 0.18185760453343391,
+   "occupied": 9.875000238418579,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.8226215243339539,
+     "D": 0.17552080750465393,
+     "exact": 0,
+     "occupied": 9.9375,
+     "worlds": 48
+    },
+    {
+     "food": 0.807309091091156,
+     "D": 0.19045135378837585,
+     "exact": 0,
+     "occupied": 9.791666984558105,
+     "worlds": 48
+    },
+    {
+     "food": 0.8187153339385986,
+     "D": 0.17916664481163025,
+     "exact": 0,
+     "occupied": 9.916666984558105,
+     "worlds": 48
+    },
+    {
+     "food": 0.8161805868148804,
+     "D": 0.18229161202907562,
+     "exact": 0,
+     "occupied": 9.854166984558105,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "after_rl",
+   "update": 500,
+   "m": 80,
+   "k": 12,
+   "init": "random",
+   "mode": "removed",
+   "food": 0.5990842282772064,
+   "D": 0.28923608362674713,
+   "occupied": 16.45312523841858,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.6040278077125549,
+     "D": 0.28593748807907104,
+     "exact": 0,
+     "occupied": 16.8125,
+     "worlds": 48
+    },
+    {
+     "food": 0.59703129529953,
+     "D": 0.29131942987442017,
+     "exact": 0,
+     "occupied": 16.52083396911621,
+     "worlds": 48
+    },
+    {
+     "food": 0.5911284685134888,
+     "D": 0.29531246423721313,
+     "exact": 0,
+     "occupied": 15.854166984558105,
+     "worlds": 48
+    },
+    {
+     "food": 0.604149341583252,
+     "D": 0.2843749523162842,
+     "exact": 0,
+     "occupied": 16.625,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": false
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "after_rl",
+   "update": 500,
+   "m": 80,
+   "k": 20,
+   "init": "trap",
+   "mode": "normal",
+   "food": 0.794068306684494,
+   "D": 0.20217008888721466,
+   "occupied": 16.156250953674316,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.7948786020278931,
+     "D": 0.20156244933605194,
+     "exact": 0,
+     "occupied": 16.14583396911621,
+     "worlds": 48
+    },
+    {
+     "food": 0.7964119911193848,
+     "D": 0.19930550456047058,
+     "exact": 0,
+     "occupied": 16.229167938232422,
+     "worlds": 48
+    },
+    {
+     "food": 0.7893229126930237,
+     "D": 0.20677077770233154,
+     "exact": 0,
+     "occupied": 16.104167938232422,
+     "worlds": 48
+    },
+    {
+     "food": 0.7956597208976746,
+     "D": 0.20104162395000458,
+     "exact": 0,
+     "occupied": 16.14583396911621,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "after_rl",
+   "update": 500,
+   "m": 80,
+   "k": 20,
+   "init": "trap",
+   "mode": "shuffled",
+   "food": 0.8284794986248016,
+   "D": 0.16957461088895798,
+   "occupied": 16.697916984558105,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.8168113231658936,
+     "D": 0.18107633292675018,
+     "exact": 0,
+     "occupied": 16.479167938232422,
+     "worlds": 48
+    },
+    {
+     "food": 0.8298032879829407,
+     "D": 0.16805551946163177,
+     "exact": 0,
+     "occupied": 16.75,
+     "worlds": 48
+    },
+    {
+     "food": 0.8320891857147217,
+     "D": 0.16614580154418945,
+     "exact": 0,
+     "occupied": 16.75,
+     "worlds": 48
+    },
+    {
+     "food": 0.8352141976356506,
+     "D": 0.1630207896232605,
+     "exact": 0,
+     "occupied": 16.8125,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "after_rl",
+   "update": 500,
+   "m": 80,
+   "k": 20,
+   "init": "trap",
+   "mode": "removed",
+   "food": 0.49699075520038605,
+   "D": 0.5027778148651123,
+   "occupied": 9.958333492279053,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.4981481432914734,
+     "D": 0.5013889074325562,
+     "exact": 0,
+     "occupied": 10.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.49699077010154724,
+     "D": 0.5027778148651123,
+     "exact": 0,
+     "occupied": 9.958333969116211,
+     "worlds": 48
+    },
+    {
+     "food": 0.4968750476837158,
+     "D": 0.5031250715255737,
+     "exact": 0,
+     "occupied": 9.9375,
+     "worlds": 48
+    },
+    {
+     "food": 0.49594905972480774,
+     "D": 0.503819465637207,
+     "exact": 0,
+     "occupied": 9.9375,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "after_rl",
+   "update": 500,
+   "m": 80,
+   "k": 40,
+   "init": "random",
+   "mode": "normal",
+   "food": 0.8627025932073593,
+   "D": 0.1361110731959343,
+   "occupied": 34.66666793823242,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.8590856790542603,
+     "D": 0.13940969109535217,
+     "exact": 0,
+     "occupied": 34.5625,
+     "worlds": 48
+    },
+    {
+     "food": 0.8664352893829346,
+     "D": 0.13229161500930786,
+     "exact": 0,
+     "occupied": 34.8125,
+     "worlds": 48
+    },
+    {
+     "food": 0.8614004850387573,
+     "D": 0.13732635974884033,
+     "exact": 0,
+     "occupied": 34.645835876464844,
+     "worlds": 48
+    },
+    {
+     "food": 0.8638889193534851,
+     "D": 0.13541662693023682,
+     "exact": 0,
+     "occupied": 34.645835876464844,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "after_rl",
+   "update": 500,
+   "m": 80,
+   "k": 40,
+   "init": "random",
+   "mode": "shuffled",
+   "food": 0.8673611283302307,
+   "D": 0.13151037693023682,
+   "occupied": 34.84895992279053,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.8614583611488342,
+     "D": 0.13680551946163177,
+     "exact": 0,
+     "occupied": 34.6875,
+     "worlds": 48
+    },
+    {
+     "food": 0.8707755208015442,
+     "D": 0.12864577770233154,
+     "exact": 0,
+     "occupied": 34.895835876464844,
+     "worlds": 48
+    },
+    {
+     "food": 0.8659722208976746,
+     "D": 0.1326388567686081,
+     "exact": 0,
+     "occupied": 34.833335876464844,
+     "worlds": 48
+    },
+    {
+     "food": 0.8712384104728699,
+     "D": 0.12795135378837585,
+     "exact": 0,
+     "occupied": 34.97916793823242,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "after_rl",
+   "update": 500,
+   "m": 80,
+   "k": 40,
+   "init": "random",
+   "mode": "removed",
+   "food": 0.5284867137670517,
+   "D": 0.47078993171453476,
+   "occupied": 21.250000476837158,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.5254051089286804,
+     "D": 0.47343751788139343,
+     "exact": 0,
+     "occupied": 21.1875,
+     "worlds": 48
+    },
+    {
+     "food": 0.5260416865348816,
+     "D": 0.4729166626930237,
+     "exact": 0,
+     "occupied": 21.20833396911621,
+     "worlds": 48
+    },
+    {
+     "food": 0.5337963104248047,
+     "D": 0.46562498807907104,
+     "exact": 0,
+     "occupied": 21.4375,
+     "worlds": 48
+    },
+    {
+     "food": 0.5287037491798401,
+     "D": 0.4711805582046509,
+     "exact": 0,
+     "occupied": 21.166667938232422,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "after_rl",
+   "update": 500,
+   "m": 80,
+   "k": 40,
+   "init": "trap",
+   "mode": "normal",
+   "food": 0.855483278632164,
+   "D": 0.1432725377380848,
+   "occupied": 34.39062690734863,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.8518519401550293,
+     "D": 0.14722219109535217,
+     "exact": 0,
+     "occupied": 34.208335876464844,
+     "worlds": 48
+    },
+    {
+     "food": 0.8543403148651123,
+     "D": 0.14357635378837585,
+     "exact": 0,
+     "occupied": 34.458335876464844,
+     "worlds": 48
+    },
+    {
+     "food": 0.8601852655410767,
+     "D": 0.1388888657093048,
+     "exact": 0,
+     "occupied": 34.54166793823242,
+     "worlds": 48
+    },
+    {
+     "food": 0.8555555939674377,
+     "D": 0.14340274035930634,
+     "exact": 0,
+     "occupied": 34.35416793823242,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "after_rl",
+   "update": 500,
+   "m": 80,
+   "k": 40,
+   "init": "trap",
+   "mode": "shuffled",
+   "food": 0.8709056675434113,
+   "D": 0.12799475342035294,
+   "occupied": 34.97395992279053,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.8776620030403137,
+     "D": 0.12118051946163177,
+     "exact": 0,
+     "occupied": 35.270835876464844,
+     "worlds": 48
+    },
+    {
+     "food": 0.8684605956077576,
+     "D": 0.13038191199302673,
+     "exact": 0,
+     "occupied": 34.875,
+     "worlds": 48
+    },
+    {
+     "food": 0.8723958730697632,
+     "D": 0.1265624612569809,
+     "exact": 0,
+     "occupied": 35.020835876464844,
+     "worlds": 48
+    },
+    {
+     "food": 0.8651041984558105,
+     "D": 0.13385412096977234,
+     "exact": 0,
+     "occupied": 34.72916793823242,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  },
+  {
+   "model": "v17_DISTILL_FINETUNE_R8_s3111_fix",
+   "stage": "after_rl",
+   "update": 500,
+   "m": 80,
+   "k": 40,
+   "init": "trap",
+   "mode": "removed",
+   "food": 0.5,
+   "D": 0.5,
+   "occupied": 20.0,
+   "exact": 0,
+   "worlds": 192,
+   "by_seed": [
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 20.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 20.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 20.0,
+     "worlds": 48
+    },
+    {
+     "food": 0.5,
+     "D": 0.5,
+     "exact": 0,
+     "occupied": 20.0,
+     "worlds": 48
+    }
+   ],
+   "heldout_k": true
+  }
+ ],
+ "caveat": "Models trained by explicit teacher labels, not independent discovery of coordination."
+}
