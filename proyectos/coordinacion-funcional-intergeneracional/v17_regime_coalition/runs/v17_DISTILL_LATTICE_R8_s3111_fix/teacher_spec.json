@@ -1,0 +1,15 @@
+{
+  "name": "v17_DISTILL_LATTICE_R8_s3111_fix",
+  "init_seed": 3111,
+  "updates": 900,
+  "rl_updates": 0,
+  "h": 16,
+  "rounds": 8,
+  "quorum": true,
+  "features": "lattice",
+  "batch": 20,
+  "rho": 0.6,
+  "lr": 0.004,
+  "device": "cuda",
+  "eval_every": 300
+}
