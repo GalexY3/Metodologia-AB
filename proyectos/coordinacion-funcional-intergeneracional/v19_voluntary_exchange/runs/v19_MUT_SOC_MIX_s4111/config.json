@@ -1,0 +1,16 @@
+{
+  "name": "v19_MUT_SOC_MIX_s4111",
+  "seed": 4111,
+  "updates": 1600,
+  "hidden": 20,
+  "batch": 16,
+  "horizon": 20,
+  "lr": 0.003,
+  "entropy": 0.005,
+  "device": "cuda",
+  "mutual": 1,
+  "social": 1,
+  "topology_train": "mixed",
+  "eval_every": 200,
+  "checkpoint_every": 200
+}
