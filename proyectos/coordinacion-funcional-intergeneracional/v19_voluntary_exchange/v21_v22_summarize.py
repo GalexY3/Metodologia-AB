@@ -113,6 +113,15 @@ for n in ["v21_LONG_SMOOTH_s3111","v21_LONG_SMOOTH_s4111"]:
  reptab.append([n]+[fmt(sm[m]["mean_total"]) for m in (
  "normal","no_direct_identity","no_public_offer",
  "no_both_except_receipt","no_social")])
+cpu_replay=read(RES/"v21_travel_cpu_replication.json")
+assert len(cpu_replay["rows"])==12 and cpu_replay["device"]=="cpu"
+cpu_rows=[]
+for n in ("v20_SMOOTH_s3111","v20_SMOOTH_s4111","v20_CONST_s3111"):
+  x={r["mode"]:r for r in cpu_replay["rows"] if r["model"]==n}
+  cpu_rows.append([n,fmt(x["normal"]["mean"]),
+      fmt(x["no_direct_identity"]["mean"]),
+      fmt(x["no_public_offer"]["mean"]),
+      fmt(x["no_social"]["mean"])])
 mix=[]
 for n in MIX:
  a=next(x for x in records21 if x["name"]==n)
@@ -125,7 +134,7 @@ for n in MIX:
                 f"{a['rewired_positive']}/24"])
 sha_paths=[
  "v21_longitudinal.py","v21_reputation_census.py","v22_occupations.py",
- "v22_frozen_holdout.py","test_v22_occupations.py",
+ "v22_frozen_holdout.py","test_v22_occupations.py","v21_travel_replay.py",
  "v20_all_agents_causal.py","targeted_gifts.py",
  "PREREG_V21_LONGITUDINAL.md","PREREG_V21B_TOPOLOGIES.md",
  "PREREG_V22_ENDOGENOUS_OCCUPATIONS.md"]
@@ -162,6 +171,12 @@ report=[
  "",
  "Las dos políticas prolongadas retienen retorno positivo al quitar separadamente cada uno de los dos canales informativos, pero pierden ese beneficio cuando se retiran conjuntamente. [Inferencia] Resultado compatible con redundancia funcional de señales interpersonales, sin implicar una institución social plenamente interiorizada.",
  "",
+ "## Réplica de V20 en el segundo ordenador",
+ "",
+ "La réplica en GalexY Travel usó exactamente el código y pesos congelados de V20 en PyTorch CPU 2.15.0, con 16 mundos por semilla (frente a 24/32 en el PC principal). Por tanto, verifica reproducibilidad entre plataformas, no independencia del código.",
+ "",
+ table(cpu_rows,["Política V20","Retorno normal CPU","Sin memoria directa CPU","Sin señal pública CPU","Sin observación social CPU"]),
+ "",
  "## V22. Evaluación congelada sobre seis semillas y 144 sociedades por condición",
  "",
  "Los agentes empiezan con un único oficio, sin cuota deseada programada. El control aleatorio representa la mayor alimentación media de cuatro probabilidades de movilidad preestablecidas (0,02, 0,15, 0,35, 0,60), evaluadas en los mismos escenarios. Esta elección a posteriori del mejor control se reporta para no subestimar al azar.",
@@ -195,7 +210,7 @@ report=[
  ]
 (RES/"RESULTADOS_INTEGRALES_V21_V22.md").write_text("\n".join(report),encoding="utf8")
 (RES/"METRICAS_V21_V22.json").write_text(json.dumps(
- dict(v21=records21,v22=records22,bootstrap=bootstrap,sha256=hashes,
+ dict(v21=records21,v22=records22,cpu_replay=cpu_rows,bootstrap=bootstrap,sha256=hashes,
       training_agent_periods_v21_long=6*1000*16*32*24,
       training_agent_periods_v21_mixed=4*600*16*32*24,
       training_agent_periods_v22=4*600*24*48*24,

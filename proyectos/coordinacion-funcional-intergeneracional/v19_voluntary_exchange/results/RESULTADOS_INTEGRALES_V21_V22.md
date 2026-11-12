@@ -39,6 +39,16 @@ El resultado no apoya la hipótesis de que exponer al agente a grafos circulares
 
 Las dos políticas prolongadas retienen retorno positivo al quitar separadamente cada uno de los dos canales informativos, pero pierden ese beneficio cuando se retiran conjuntamente. [Inferencia] Resultado compatible con redundancia funcional de señales interpersonales, sin implicar una institución social plenamente interiorizada.
 
+## Réplica de V20 en el segundo ordenador
+
+La réplica en GalexY Travel usó exactamente el código y pesos congelados de V20 en PyTorch CPU 2.15.0, con 16 mundos por semilla (frente a 24/32 en el PC principal). Por tanto, verifica reproducibilidad entre plataformas, no independencia del código.
+
+| Política V20 | Retorno normal CPU | Sin memoria directa CPU | Sin señal pública CPU | Sin observación social CPU |
+| --- | --- | --- | --- | --- |
+| v20_SMOOTH_s3111 | +0.252 | +0.181 | -0.014 | -0.123 |
+| v20_SMOOTH_s4111 | +0.029 | -0.007 | -0.064 | -0.123 |
+| v20_CONST_s3111 | +0.231 | +0.130 | +0.020 | -0.120 |
+
 ## V22. Evaluación congelada sobre seis semillas y 144 sociedades por condición
 
 Los agentes empiezan con un único oficio, sin cuota deseada programada. El control aleatorio representa la mayor alimentación media de cuatro probabilidades de movilidad preestablecidas (0,02, 0,15, 0,35, 0,60), evaluadas en los mismos escenarios. Esta elección a posteriori del mejor control se reporta para no subestimar al azar.
@@ -84,6 +94,7 @@ v21_reputation_census.py: 1a3e012c4943f8a23a3aafbd2cb76c4a1eaa5063db6a317e7478de
 v22_occupations.py: dfd40a60c11546f1349830596251dc8c808bf869503b43715a7619b5e59585dd
 v22_frozen_holdout.py: fed5e42414271396bbbba4ae11c255bbae2d5826631f20429b701bb96bb85fb8
 test_v22_occupations.py: 36f6a981a253e0bd1e9b93d38b05c12cb7a9c1290be4214ab620836e7c756158
+v21_travel_replay.py: e5f5933b44cedbf10352fc23587c4370852be72e465ec6968c2c312dd39aeea9
 v20_all_agents_causal.py: 2ab65c7e973890d0e171e3f06ec20cf7f5083c7f6fed26fcf49820cf026bd33a
 targeted_gifts.py: 7fa22d46016595fd87b8b0bf5a9edae1f5472cb8e2f95c85e42d9e350ffa8527
 PREREG_V21_LONGITUDINAL.md: 86c85028bb5c572ecceccd8e630a6652a413711781ee8598371794007e349d8f
