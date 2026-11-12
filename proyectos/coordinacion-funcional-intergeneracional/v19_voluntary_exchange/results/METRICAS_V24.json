@@ -1,0 +1,205 @@
+{
+  "models": [
+    {
+      "model": "v24_K4_N48_s3111",
+      "n": 48,
+      "seed": 3111,
+      "schedule": "smooth",
+      "updates": 1000,
+      "food": 0.19975902140140533,
+      "gift": 0.00036168983206152916,
+      "coverage": 9.645061800256371e-05,
+      "full": 0.0,
+      "potential": 0.9646990895271301,
+      "balance": 0.0,
+      "theoretical_food_upper_at_actual_donations": 0.2000530478420357,
+      "absolute_capacity_bound": 0.3466666666666667
+    },
+    {
+      "model": "v24_K4_N48_s4111",
+      "n": 48,
+      "seed": 4111,
+      "schedule": "smooth",
+      "updates": 1000,
+      "food": 0.1997721642255783,
+      "gift": 0.00036168983206152916,
+      "coverage": 0.0001085069525288418,
+      "full": 0.0,
+      "potential": 0.9768518805503845,
+      "balance": 0.0,
+      "theoretical_food_upper_at_actual_donations": 0.2000530478420357,
+      "absolute_capacity_bound": 0.3466666666666667
+    },
+    {
+      "model": "v24_K4_N120_s3111",
+      "n": 120,
+      "seed": 3111,
+      "schedule": "smooth",
+      "updates": 1000,
+      "food": 0.19977228343486786,
+      "gift": 0.00043402783921919763,
+      "coverage": 0.0001302083401242271,
+      "full": 0.0,
+      "potential": 0.9365741610527039,
+      "balance": 0.0,
+      "theoretical_food_upper_at_actual_donations": 0.20006365741641882,
+      "absolute_capacity_bound": 0.3466666666666667
+    },
+    {
+      "model": "v24_K4_N120_s4111",
+      "n": 120,
+      "seed": 4111,
+      "schedule": "smooth",
+      "updates": 1000,
+      "food": 0.19976015388965607,
+      "gift": 0.0004050926072522998,
+      "coverage": 0.0001109182121581398,
+      "full": 0.0,
+      "potential": 0.9467592835426331,
+      "balance": 0.0,
+      "theoretical_food_upper_at_actual_donations": 0.200059413582397,
+      "absolute_capacity_bound": 0.3466666666666667
+    },
+    {
+      "model": "v24B_K4_N48_s3111",
+      "n": 48,
+      "seed": 3111,
+      "schedule": "delayed",
+      "updates": 1800,
+      "food": 0.19977542757987976,
+      "gift": 0.0003978587919846177,
+      "coverage": 0.0001085069525288418,
+      "full": 0.0,
+      "potential": 1.0,
+      "balance": 0.0,
+      "theoretical_food_upper_at_actual_donations": 0.20005835262282443,
+      "absolute_capacity_bound": 0.3466666666666667,
+      "stages": [
+        {
+          "update": 1,
+          "cost_train": 0.002,
+          "food_test_high": 0.20352932810783386,
+          "donation_test_high": 0.5118272304534912,
+          "coverage_test_high": 0.12016542255878448
+        },
+        {
+          "update": 300,
+          "cost_train": 0.002,
+          "food_test_high": 0.20816726982593536,
+          "donation_test_high": 0.2230902910232544,
+          "coverage_test_high": 0.06417583674192429
+        },
+        {
+          "update": 600,
+          "cost_train": 0.002,
+          "food_test_high": 0.20791643857955933,
+          "donation_test_high": 0.18243634700775146,
+          "coverage_test_high": 0.05462722107768059
+        },
+        {
+          "update": 900,
+          "cost_train": 0.04133333333333333,
+          "food_test_high": 0.20218487083911896,
+          "donation_test_high": 0.05461516231298447,
+          "coverage_test_high": 0.01633632555603981
+        },
+        {
+          "update": 1200,
+          "cost_train": 0.12,
+          "food_test_high": 0.19980719685554504,
+          "donation_test_high": 0.001989294309169054,
+          "coverage_test_high": 0.000518422108143568
+        },
+        {
+          "update": 1500,
+          "cost_train": 0.12,
+          "food_test_high": 0.199774831533432,
+          "donation_test_high": 0.0006148726679384708,
+          "coverage_test_high": 0.00015673226153012365
+        },
+        {
+          "update": 1800,
+          "cost_train": 0.12,
+          "food_test_high": 0.19977542757987976,
+          "donation_test_high": 0.0003978587919846177,
+          "coverage_test_high": 0.0001085069525288418
+        }
+      ]
+    },
+    {
+      "model": "v24B_K4_N48_s4111",
+      "n": 48,
+      "seed": 4111,
+      "schedule": "delayed",
+      "updates": 1800,
+      "food": 0.19977837800979614,
+      "gift": 0.0004340278101153672,
+      "coverage": 0.00013261960702948272,
+      "full": 0.0,
+      "potential": 0.9982638955116272,
+      "balance": 0.0,
+      "theoretical_food_upper_at_actual_donations": 0.20006365741215026,
+      "absolute_capacity_bound": 0.3466666666666667,
+      "stages": [
+        {
+          "update": 1,
+          "cost_train": 0.002,
+          "food_test_high": 0.20494718849658966,
+          "donation_test_high": 0.4981915354728699,
+          "coverage_test_high": 0.119900181889534
+        },
+        {
+          "update": 300,
+          "cost_train": 0.002,
+          "food_test_high": 0.2114855796098709,
+          "donation_test_high": 0.2876518964767456,
+          "coverage_test_high": 0.08388793468475342
+        },
+        {
+          "update": 600,
+          "cost_train": 0.002,
+          "food_test_high": 0.2113356739282608,
+          "donation_test_high": 0.25730615854263306,
+          "coverage_test_high": 0.07701581716537476
+        },
+        {
+          "update": 900,
+          "cost_train": 0.04133333333333333,
+          "food_test_high": 0.20270365476608276,
+          "donation_test_high": 0.0685763955116272,
+          "coverage_test_high": 0.020326970145106316
+        },
+        {
+          "update": 1200,
+          "cost_train": 0.12,
+          "food_test_high": 0.19980700314044952,
+          "donation_test_high": 0.002097801072522998,
+          "coverage_test_high": 0.0005545910680666566
+        },
+        {
+          "update": 1500,
+          "cost_train": 0.12,
+          "food_test_high": 0.19977885484695435,
+          "donation_test_high": 0.0006510416860692203,
+          "coverage_test_high": 0.00018084491603076458
+        },
+        {
+          "update": 1800,
+          "cost_train": 0.12,
+          "food_test_high": 0.19977837800979614,
+          "donation_test_high": 0.0004340278101153672,
+          "coverage_test_high": 0.00013261960702948272
+        }
+      ]
+    }
+  ],
+  "theorem": {
+    "k": 4,
+    "cost": 0.12,
+    "capacity_per_donor": 1,
+    "max_full_fraction": 0.3333333333333333,
+    "max_average_food": 0.3466666666666667,
+    "economy_without_donations": 0.2,
+    "production_cap_constraint": "At most N donation units for N*(k-1) goods required for universal coverage."
+  }
+}

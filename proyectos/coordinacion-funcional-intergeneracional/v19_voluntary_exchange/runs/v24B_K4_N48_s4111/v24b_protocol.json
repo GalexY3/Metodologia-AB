@@ -1,0 +1,11 @@
+{
+  "schedule": "low-flat-then-linear-then-high",
+  "cost_low": 0.002,
+  "cost_high": 0.12,
+  "flat_through_update": 800,
+  "increase_through_update": 1100,
+  "high_from_update": 1100,
+  "updates": 1800,
+  "base_script_sha256": "fc006193518a27f007505c3b58db1781a88e83ddbdd96d7464b7ebe4dd4d1b6b",
+  "note": "V24b custom schedule, NOT the V24 smooth schedule shown in common v24_spec.json. All model parameters initialized randomly."
+}
