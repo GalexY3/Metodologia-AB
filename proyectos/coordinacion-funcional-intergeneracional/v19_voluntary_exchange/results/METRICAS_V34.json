@@ -1,0 +1,91 @@
+{
+  "models": [
+    {
+      "model": "v34_N48_D4_MUTUAL_s3111",
+      "seed": 3111,
+      "degree": 4,
+      "food": 0.3730689783891042,
+      "trades": 1.3148389274691359,
+      "coverage": 0.3995788594086965,
+      "potential_learned": 0.9034529626369476,
+      "potential_random": 0.6802662412325541,
+      "full": 0.024540654383599758,
+      "exact_balance": 0.0,
+      "best_random_food": 0.3388862709204356,
+      "role_advantage": 0.03418270746866858,
+      "prior_degree6_food": 0.34404462575912476,
+      "prior_degree6_role_advantage": 0.011269102493921934,
+      "improvement_in_role_advantage": 0.02291360497474665,
+      "no_gifts": 0.19975335896015167,
+      "relocated": 0.34232844909032184,
+      "rewired": 0.35275669395923615,
+      "causal": 0.03879975235167876,
+      "positive_people": 48,
+      "causal_rewired": 0.028376613594850317,
+      "prior_degree6_causal": 0.03304956700786635,
+      "oracle": 0.8799999356269836
+    },
+    {
+      "model": "v34_N48_D4_MUTUAL_s4111",
+      "seed": 4111,
+      "degree": 4,
+      "food": 0.3726152429978053,
+      "trades": 1.3170211226851851,
+      "coverage": 0.39914080997308093,
+      "potential_learned": 0.8934220870335897,
+      "potential_random": 0.6802662412325541,
+      "full": 0.0240704578657945,
+      "exact_balance": 0.847222238779068,
+      "best_random_food": 0.34176862239837646,
+      "role_advantage": 0.03084662059942883,
+      "prior_degree6_food": 0.3428199589252472,
+      "prior_degree6_role_advantage": 0.010954404870669066,
+      "improvement_in_role_advantage": 0.019892215728759766,
+      "no_gifts": 0.1997432311375936,
+      "relocated": 0.3592110474904378,
+      "rewired": 0.35465649763743085,
+      "causal": 0.04030982058103897,
+      "positive_people": 48,
+      "causal_rewired": 0.02986533243314524,
+      "prior_degree6_causal": 0.03462586195443388,
+      "oracle": 0.8799999356269836
+    }
+  ],
+  "uncertainty": {
+    "v34_N48_D4_MUTUAL_s3111": {
+      "seedwise_advantage": [
+        0.03258827328681946,
+        0.03770962357521057,
+        0.03586503863334656,
+        0.032916635274887085,
+        0.03336799144744873,
+        0.032648682594299316
+      ],
+      "descriptive_bootstrap_95": [
+        0.0328031579653422,
+        0.035879756013552346
+      ]
+    },
+    "v34_N48_D4_MUTUAL_s4111": {
+      "seedwise_advantage": [
+        0.030490636825561523,
+        0.03359067440032959,
+        0.032555580139160156,
+        0.029455482959747314,
+        0.029519587755203247,
+        0.029467761516571045
+      ],
+      "descriptive_bootstrap_95": [
+        0.02964278558890025,
+        0.03222297132015228
+      ]
+    }
+  },
+  "sha256": {
+    "v34_contract_degree4.py": "d9292f3563169100e731232a70f2cb5e02f832beafca3f423aee4db34e0f7c8a",
+    "v34_frozen_audits.py": "e40a431a5b473337e4fed296565b7a83baeb80d927ff35399ef79286a4f49c6a",
+    "v34_summarize.py": "6fdaa884e3cb293352e76755fdacbd40cc6254e432d56c4113684f0b40d7dc82",
+    "PREREG_V34_NEIGHBOR_SCARCITY.md": "ffb178214b4b1f65fcbf47320f94e0fd9adf88e2422c4b56760dc05ca241ec68"
+  },
+  "training_agent_rounds": 38707200
+}
