@@ -118,3 +118,24 @@ Política externa explícitamente programada como benchmark matemático, cuya ex
 ## Escalado de capacidad vs. escalado de coste
 
 Distinción entre aumentar el número máximo de acciones productivas por trabajador y ajustar el coste unitario para preservar un presupuesto total comparable entre economías con diferentes necesidades. V25A permite hasta tres regalos a 0,12 cada uno; V25B permite los mismos tres a 0,04, con máximo gasto 0,12. La comparación factorial identifica qué obstáculo limita el comportamiento, sin confundir capacidad y precio.
+
+
+## Equilibrio perfecto en subjuegos
+
+Solución de un juego dinámico por la que las acciones son respuestas óptimas en cada contingencia y continuación posible del historial. En juegos repetidos de contribución voluntaria con horizonte finito públicamente conocido, regalos costosos y ningún valor después del último período, la inducción hacia atrás favorece no contribuir desde el último turno hasta el primero. La cooperación neuronal observada no acredita equilibrio perfecto en subjuegos.
+
+## Inducción hacia atrás
+
+Razonamiento que resuelve decisiones estratégicas empezando por la última etapa y sustituyendo en cada etapa precedente las respuestas futuras óptimas conocidas. En V28 se demuestra que una contribución propia del último turno empeora exactamente c la recompensa propia, sin posibilidad de recibir reciprocidad posterior. La proposición requiere racionalidad secuencial y conocimiento común del horizonte; sus condiciones no equivalen al comportamiento efectivo de redes neuronales aproximadas.
+
+## Cooperación de racionalidad limitada
+
+Patrón contributivo aprendido por actores con memoria, parámetros y experiencia de entrenamiento finitos que puede mejorar su retorno contrafactual dentro de la población de políticas observadas, sin constituir necesariamente una estrategia óptima en todos los subjuegos. Las donaciones persistentes en la última ronda de V23 evidencian una conducta cooperativa a pesar del incentivo terminal a no regalar.
+
+## Perfil temporal de contribuciones
+
+Serie de donaciones emitidas por persona y ronda, obtenida con pesos neuronales congelados y sin entrenamiento adicional. Permite separar la caída de contribuciones cerca del final del episodio de un abandono general del intercambio desde el comienzo. En V23 la tasa es binaria de 0 a 1 regalo por agente, mientras que en V25 el número puede alcanzar 3, por lo que deben normalizarse antes de comparar ambas familias.
+
+## Horizonte social indeterminado
+
+Diseño en el que los actores no conocen con certeza cuándo terminarán sus interacciones, por ejemplo, con riesgo probabilístico de finalización en cada turno y sin contador terminal público. La condición modifica el incentivo a sostener reputación y cooperación futura frente a episodios de duración conocida. No debe darse por válida su capacidad de generar cooperación sin nuevas pruebas con controles de horizonte.
