@@ -47,6 +47,15 @@ El agente obligado a dar asume exactamente -0,12 de alimento en la primera ronda
 
 Las redes aprendidas con escaso historial social forman a veces distribuciones ocupacionales casi perfectas y simultáneamente dejan de donar: la complementariedad de puestos no equivale a cooperación material. La permutación de políticas privadas entre posiciones reduce la alimentación. La generalización a red reconectada es desigual y dos de cuatro semillas progresivas pierden retorno causal positivo.
 
+## Replicación de V23 en el segundo ordenador
+
+Se replicaron las políticas congeladas de V23 en GalexY_travel con PyTorch CPU 2.15.0 en lugar del entorno GPU original. Se ha utilizado el mismo código y los mismos checkpoints, con 16 mundos por semilla en evaluación de alimento y 4 en auditoría causal (frente a 24 y 12 en el PC principal). La diferencia en lotes explica parte del error Monte Carlo y no permite interpretar la réplica como una implementación independiente. Las señales de retorno individual permanecieron consistentes.
+
+| Modelo | Alimento GPU | Alimento CPU | Retorno causal GPU | Retorno causal CPU | Sin historial GPU | Sin historial CPU |
+| --- | --- | --- | --- | --- | --- | --- |
+| v23_SMOOTH_s3111 | 0.6132 | 0.6126 | +0.344 | +0.263 | -0.116 | -0.117 |
+| v23_SMOOTH_s4111 | 0.6980 | 0.6974 | +0.694 | +0.539 | -0.126 | -0.100 |
+
 ## Estructura de dependencia estadística
 
 Las seis semillas ambientales son unidades de agrupamiento de la evaluación, pero no equivalen a seis entrenamientos nuevos. Se empleó bootstrap descriptivo de contrastes emparejados por esas seis semillas; los intervalos no cubren variación sobre infinitas inicializaciones de redes. Solo existen cuatro semillas neuronales principales y dos por control negativo.
@@ -66,4 +75,5 @@ v23_joint_cold.py: d3b3f9d8e2c6d97dc497cca3d4cf42bb7a845e58553c15f5f0c26745157b8
 v23_joint_audit.py: 1b0dc47d07fb9ce65ec6c4332b792af13bbd1a6e523e096cde143d2a5a7d60c6
 v23_joint_holdout.py: b15a5f2eb74fae153a89c8bff30e0b3bcf977e26c4a016cba0142c65e2df8f5e
 test_v23_joint.py: adca1604d0983d3c7ba218330fe48b97c8af341a674a3682c76f079e538797af
+v23_travel_cpu_replication.py: 88ce78dfd60512b51b51a7022afe5f3b95e9e6ae1b5db065d2d625c92df562d3
 PREREG_V23_JOINT_COLD_START.md: c7fb45dceed3f714ff9e186c0bcc73189e8596fcedda9088c35a17eb76251171

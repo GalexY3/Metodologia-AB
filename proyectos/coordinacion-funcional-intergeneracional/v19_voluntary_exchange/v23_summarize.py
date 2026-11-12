@@ -63,6 +63,18 @@ with (RES/"COMPARACION_V23.csv").open("w",encoding="utf8",newline="") as f:
  frozen_holdout_world_condition_paths=8*48*6*24,
  counterfactual_world_person_pairs=8*12*6*12*24),indent=2),encoding="utf8")
 primary=out[:4]
+cpu_replay=load(RES/"v23_travel_cpu_replication.json")
+assert cpu_replay["cpu_torch"].endswith("+cpu") and len(cpu_replay["records"])==8
+cpu_rows=[]
+for model in ("v23_SMOOTH_s3111","v23_SMOOTH_s4111"):
+ gpu=next(z for z in out if z["model"]==model)
+ records=[z for z in cpu_replay["records"] if z["model"]==model]
+ cpu_food=next(z for z in records if z["analysis"]=="food" and z["social"])
+ cpu_causal=next(z for z in records if z["analysis"]=="causal" and z["mode"]=="normal")
+ cpu_nohistory=next(z for z in records if z["analysis"]=="causal" and z["mode"]=="no_history")
+ cpu_rows.append([model,f'{gpu["food"]:.4f}',f'{cpu_food["food"]:.4f}',
+      fmt(gpu["causal"]),fmt(cpu_causal["mean_return"]),
+      fmt(gpu["causal_no_history"]),fmt(cpu_nohistory["mean_return"])])
 main_rows=[[q["model"],f'{q["food"]:.3f}',f'{q["gift"]:.1%}',
    f'{q["complementarity"]:.1%}',f'{q["exact_balance"]:.1%}',
    f'{q["best_random"]:.3f}',fmt(q["improvement"]),
@@ -74,7 +86,7 @@ ablation_rows=[[q["model"],f'{q["food"]:.3f}',
   f'{q["no_history_food"]:.3f}',f'{q["relocated_food"]:.3f}',
   f'{q["no_gifts_food"]:.3f}'] for q in out]
 sources=("v23_joint_cold.py","v23_joint_audit.py","v23_joint_holdout.py",
-  "test_v23_joint.py","PREREG_V23_JOINT_COLD_START.md")
+  "test_v23_joint.py","v23_travel_cpu_replication.py","PREREG_V23_JOINT_COLD_START.md")
 hashes={q:hashlib.sha256((ROOT/q).read_bytes()).hexdigest() for q in sources}
 report=[
  "# V23. Coaprendizaje de reciprocidad y ocupaciones desde cero",
@@ -101,6 +113,12 @@ report=[
  table(ablation_rows,["Modelo","Normal","Sin historial social","Personas reasignadas","Donaciones bloqueadas"]),
  "",
  "Las redes aprendidas con escaso historial social forman a veces distribuciones ocupacionales casi perfectas y simultáneamente dejan de donar: la complementariedad de puestos no equivale a cooperación material. La permutación de políticas privadas entre posiciones reduce la alimentación. La generalización a red reconectada es desigual y dos de cuatro semillas progresivas pierden retorno causal positivo.",
+ "",
+ "## Replicación de V23 en el segundo ordenador",
+ "",
+ "Se replicaron las políticas congeladas de V23 en GalexY_travel con PyTorch CPU 2.15.0 en lugar del entorno GPU original. Se ha utilizado el mismo código y los mismos checkpoints, con 16 mundos por semilla en evaluación de alimento y 4 en auditoría causal (frente a 24 y 12 en el PC principal). La diferencia en lotes explica parte del error Monte Carlo y no permite interpretar la réplica como una implementación independiente. Las señales de retorno individual permanecieron consistentes.",
+ "",
+ table(cpu_rows,["Modelo","Alimento GPU","Alimento CPU","Retorno causal GPU","Retorno causal CPU","Sin historial GPU","Sin historial CPU"]),
  "",
  "## Estructura de dependencia estadística",
  "",
