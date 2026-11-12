@@ -1,0 +1,28 @@
+{
+  "source": "v20_SMOOTH_s3111",
+  "source_sha": "31d553db871e18ac0266fdafdd1b7a23c223962e",
+  "additional": 1000,
+  "eval_every": 250,
+  "topology": "ring",
+  "entropy_mult": 1.0,
+  "original_spec": {
+    "name": "v20_SMOOTH_s3111",
+    "seed": 3111,
+    "schedule": "smooth",
+    "updates": 600,
+    "n": 24,
+    "hidden": 20,
+    "init_scale": 8.0,
+    "cost": 0.12,
+    "low_cost": 0.01,
+    "gamma": 0.995,
+    "lr": 0.002,
+    "entropy": 0.015,
+    "batch": 16,
+    "horizon": 32,
+    "eval_every": 200,
+    "topology": "ring",
+    "social": 1,
+    "device": "cuda"
+  }
+}

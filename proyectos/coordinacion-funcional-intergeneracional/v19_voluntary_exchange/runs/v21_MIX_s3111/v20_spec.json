@@ -1,0 +1,20 @@
+{
+  "name": "v21_MIX_s3111",
+  "seed": 3111,
+  "schedule": "smooth",
+  "updates": 600,
+  "n": 24,
+  "hidden": 20,
+  "init_scale": 8.0,
+  "cost": 0.12,
+  "low_cost": 0.01,
+  "gamma": 0.995,
+  "lr": 0.002,
+  "entropy": 0.015,
+  "batch": 16,
+  "horizon": 32,
+  "eval_every": 200,
+  "topology": "mixed",
+  "social": 1,
+  "device": "cuda"
+}
