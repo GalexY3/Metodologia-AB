@@ -1,0 +1,199 @@
+{
+  "rows": [
+    {
+      "model": "v26_M94_N48_C04_s3111",
+      "memory_decay": 0.94,
+      "half_life_rounds": 11.202305583621158,
+      "seed": 3111,
+      "food": 0.2011883333325386,
+      "gift_per_person": 0.011854384404917559,
+      "coverage": 0.0034737295548742018,
+      "complete": 0.0,
+      "efficiency": 0.8794712251704949,
+      "no_history_food": 0.20138306419054666,
+      "best_random_food": 0.19981452077627182,
+      "baseline_v25_food": 0.20264440029859543,
+      "delta_food": -0.0014560669660568237,
+      "return_causal": -0.04613812971446249,
+      "positive_agents": 0,
+      "return_no_history": -0.03991376318865352,
+      "return_rewired": -0.04454125960667928,
+      "baseline_v25_return": -0.03909082503782378
+    },
+    {
+      "model": "v26_M94_N48_C04_s4111",
+      "memory_decay": 0.94,
+      "half_life_rounds": 11.202305583621158,
+      "seed": 4111,
+      "food": 0.20193512489398321,
+      "gift_per_person": 0.017840351909399033,
+      "coverage": 0.005256559078892072,
+      "complete": 4.5211230220350744e-06,
+      "efficiency": 0.8838069620607024,
+      "no_history_food": 0.2026262730360031,
+      "best_random_food": 0.20020642131567,
+      "baseline_v25_food": 0.20175978044668832,
+      "delta_food": 0.00017534444729488952,
+      "return_causal": -0.04728929822643598,
+      "positive_agents": 0,
+      "return_no_history": -0.04001021964682473,
+      "return_rewired": -0.04775197638405694,
+      "baseline_v25_return": -0.04018534430199199
+    },
+    {
+      "model": "v26_M99_N48_C04_s3111",
+      "memory_decay": 0.99,
+      "half_life_rounds": 68.96756393652842,
+      "seed": 3111,
+      "food": 0.201621875166893,
+      "gift_per_person": 0.015670211830486853,
+      "coverage": 0.004534686372304956,
+      "complete": 0.0,
+      "efficiency": 0.8684314193716967,
+      "no_history_food": 0.20195069164037704,
+      "best_random_food": 0.19999519983927408,
+      "baseline_v25_food": 0.20264440029859543,
+      "delta_food": -0.001022525131702423,
+      "return_causal": -0.047491139007939234,
+      "positive_agents": 0,
+      "return_no_history": -0.03983476592434777,
+      "return_rewired": -0.046981044941478305,
+      "baseline_v25_return": -0.03909082503782378
+    },
+    {
+      "model": "v26_M99_N48_C04_s4111",
+      "memory_decay": 0.99,
+      "half_life_rounds": 68.96756393652842,
+      "seed": 4111,
+      "food": 0.20091628034909567,
+      "gift_per_person": 0.009602865359435478,
+      "coverage": 0.0028046033112332225,
+      "complete": 0.0,
+      "efficiency": 0.8760912693501378,
+      "no_history_food": 0.20103769749403,
+      "best_random_food": 0.19974793990453085,
+      "baseline_v25_food": 0.20175978044668832,
+      "delta_food": -0.0008435000975926532,
+      "return_causal": -0.048229570190111794,
+      "positive_agents": 0,
+      "return_no_history": -0.04014847303430239,
+      "return_rewired": -0.047004655831389956,
+      "baseline_v25_return": -0.04018534430199199
+    }
+  ],
+  "paired": {
+    "v26_M94_N48_C04_s3111": {
+      "diff_by_environment_seed": [
+        -0.0014614909887313843,
+        -0.00152587890625,
+        -0.0013173669576644897,
+        -0.0013897418975830078,
+        -0.0014761388301849365,
+        -0.001565784215927124
+      ],
+      "mean": -0.0014560669660568237,
+      "descriptive_bootstrap_95": [
+        -0.0015201593438784282,
+        -0.001389533281326294
+      ]
+    },
+    "v26_M94_N48_C04_s4111": {
+      "diff_by_environment_seed": [
+        0.00017555058002471924,
+        0.00025656819343566895,
+        0.00022013485431671143,
+        0.0001036226749420166,
+        0.0001226663589477539,
+        0.00017352402210235596
+      ],
+      "mean": 0.000175344447294871,
+      "descriptive_bootstrap_95": [
+        0.00013360877831776938,
+        0.00021708011627197266
+      ]
+    },
+    "v26_M99_N48_C04_s3111": {
+      "diff_by_environment_seed": [
+        -0.0009205639362335205,
+        -0.001089051365852356,
+        -0.0009960383176803589,
+        -0.0010270029306411743,
+        -0.0010007023811340332,
+        -0.0011017918586730957
+      ],
+      "mean": -0.001022525131702423,
+      "descriptive_bootstrap_95": [
+        -0.0010694637894630432,
+        -0.0009738033016522726
+      ]
+    },
+    "v26_M99_N48_C04_s4111": {
+      "diff_by_environment_seed": [
+        -0.0008783936500549316,
+        -0.0008530020713806152,
+        -0.0007758140563964844,
+        -0.0008349120616912842,
+        -0.0008565187454223633,
+        -0.0008623600006103516
+      ],
+      "mean": -0.0008435000975926717,
+      "descriptive_bootstrap_95": [
+        -0.0008651713530222575,
+        -0.0008152072628339132
+      ]
+    }
+  },
+  "baselines": {
+    "3111": {
+      "model": "v25_N48_C04_s3111",
+      "cost": 0.04,
+      "seed": 3111,
+      "food": 0.20264440029859543,
+      "gift_per_agent": 0.022004305695494015,
+      "coverage": 0.006846487522125244,
+      "complete": 0.0,
+      "useful_ratio": 0.9333836732457855,
+      "potential": 0.9997830092906952,
+      "balanced": 0.010416666666666666,
+      "oracle": 0.8799999952316284,
+      "no_gifts_food": 0.19975887487332025,
+      "best_random_food": 0.20069027443726858,
+      "best_random_label": "role_random_060",
+      "no_history_food": 0.20265056441227594,
+      "relocated_food": 0.20140109459559122,
+      "causal_return": -0.03909082503782378,
+      "positive_agents": 0,
+      "causal_no_history": -0.03989944731195768,
+      "causal_rewired": -0.039751284238364964,
+      "causal_random_init": -0.03916997296942605,
+      "causal_balanced_init": -0.0391527120437887
+    },
+    "4111": {
+      "model": "v25_N48_C04_s4111",
+      "cost": 0.04,
+      "seed": 4111,
+      "food": 0.20175978044668832,
+      "gift_per_agent": 0.016407155742247898,
+      "coverage": 0.004834587840984265,
+      "complete": 0.0,
+      "useful_ratio": 0.8839162312157726,
+      "potential": 1.0,
+      "balanced": 0.0,
+      "oracle": 0.8799999952316284,
+      "no_gifts_food": 0.1997570420304934,
+      "best_random_food": 0.20024085541566214,
+      "best_random_label": "role_random_060",
+      "no_history_food": 0.20176690816879272,
+      "relocated_food": 0.20081481585899988,
+      "causal_return": -0.04018534430199199,
+      "positive_agents": 0,
+      "causal_no_history": -0.04002747436364492,
+      "causal_rewired": -0.040838603758149676,
+      "causal_random_init": -0.040168063094218574,
+      "causal_balanced_init": -0.04018532153632906
+    }
+  },
+  "training_agent_periods": 110592000,
+  "frozen_holdout_world_condition_paths": 12288,
+  "forced_pair_world_individuals": 73728
+}
