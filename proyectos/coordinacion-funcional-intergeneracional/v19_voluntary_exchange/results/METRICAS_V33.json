@@ -1,0 +1,215 @@
+{
+  "models": [
+    {
+      "model": "v33_JOINT_s3111",
+      "seed": 3111,
+      "continuation": "joint",
+      "total_updates": 2100,
+      "donor_unchanged": false,
+      "food_u700": 0.34404462575912476,
+      "food_u2100": 0.3472071935733159,
+      "food_change": 0.003162567814191164,
+      "trades_u700": 1.0961733217592593,
+      "trades_u2100": 1.119068287037037,
+      "role_random_u700": 0.3327755232652028,
+      "role_random_u2100": 0.33558770020802814,
+      "learned_role_advantage_u700": 0.011269102493921934,
+      "learned_role_advantage_u2100": 0.01161949336528778,
+      "gain_in_role_advantage": 0.00035039087136584657,
+      "rewired_food": 0.34845544894536334,
+      "relocated_food": 0.34193900724252063,
+      "exact_balance": 0.0,
+      "potential": 1.0,
+      "food_change_95_descriptive": [
+        0.0026622911294301352,
+        0.0036569436391194663
+      ]
+    },
+    {
+      "model": "v33_JOINT_s4111",
+      "seed": 4111,
+      "continuation": "joint",
+      "total_updates": 2100,
+      "donor_unchanged": false,
+      "food_u700": 0.3428199589252472,
+      "food_u2100": 0.35028625031312305,
+      "food_change": 0.007466291387875856,
+      "trades_u700": 1.091869212962963,
+      "trades_u2100": 1.1500651041666667,
+      "role_random_u700": 0.3318655540545781,
+      "role_random_u2100": 0.3371199568112691,
+      "learned_role_advantage_u700": 0.010954404870669066,
+      "learned_role_advantage_u2100": 0.013166293501853943,
+      "gain_in_role_advantage": 0.0022118886311848773,
+      "rewired_food": 0.3363715360562007,
+      "relocated_food": 0.32849066456158954,
+      "exact_balance": 0.0,
+      "potential": 1.0,
+      "food_change_95_descriptive": [
+        0.006780177354812622,
+        0.008168389399846395
+      ]
+    },
+    {
+      "model": "v33_ROLE_ONLY_s3111",
+      "seed": 3111,
+      "continuation": "role_only",
+      "total_updates": 2100,
+      "donor_unchanged": true,
+      "food_u700": 0.34404462575912476,
+      "food_u2100": 0.34386172890663147,
+      "food_change": -0.00018289685249328613,
+      "trades_u700": 1.0961733217592593,
+      "trades_u2100": 1.096233603395062,
+      "role_random_u700": 0.3327755232652028,
+      "role_random_u2100": 0.3327755232652028,
+      "learned_role_advantage_u700": 0.011269102493921934,
+      "learned_role_advantage_u2100": 0.011086205641428648,
+      "gain_in_role_advantage": -0.00018289685249328613,
+      "rewired_food": 0.3427703032890956,
+      "relocated_food": 0.33620891471703845,
+      "exact_balance": 0.0,
+      "potential": 0.9930555820465088,
+      "food_change_95_descriptive": [
+        -0.0004966358343760172,
+        9.693702061971028e-05
+      ]
+    },
+    {
+      "model": "v33_ROLE_ONLY_s4111",
+      "seed": 4111,
+      "continuation": "role_only",
+      "total_updates": 2100,
+      "donor_unchanged": true,
+      "food_u700": 0.3428199589252472,
+      "food_u2100": 0.3427317440509796,
+      "food_change": -8.821487426757812e-05,
+      "trades_u700": 1.091869212962963,
+      "trades_u2100": 1.0906756365740742,
+      "role_random_u700": 0.3318655540545781,
+      "role_random_u2100": 0.3318655540545781,
+      "learned_role_advantage_u700": 0.010954404870669066,
+      "learned_role_advantage_u2100": 0.010866189996401487,
+      "gain_in_role_advantage": -8.821487426757812e-05,
+      "rewired_food": 0.33783937493960065,
+      "relocated_food": 0.3292541950941086,
+      "exact_balance": 0.0,
+      "potential": 1.0,
+      "food_change_95_descriptive": [
+        -0.00021361311276753744,
+        5.6515137354532875e-05
+      ]
+    }
+  ],
+  "trajectories": {
+    "v33_JOINT_s3111": [
+      {
+        "update": 701,
+        "food": 0.343205064535141
+      },
+      {
+        "update": 900,
+        "food": 0.34362921118736267
+      },
+      {
+        "update": 1100,
+        "food": 0.34392496943473816
+      },
+      {
+        "update": 1400,
+        "food": 0.3451797664165497
+      },
+      {
+        "update": 1700,
+        "food": 0.3445911109447479
+      },
+      {
+        "update": 2100,
+        "food": 0.3453870713710785
+      }
+    ],
+    "v33_JOINT_s4111": [
+      {
+        "update": 701,
+        "food": 0.3427615463733673
+      },
+      {
+        "update": 900,
+        "food": 0.34523746371269226
+      },
+      {
+        "update": 1100,
+        "food": 0.3459903597831726
+      },
+      {
+        "update": 1400,
+        "food": 0.348256379365921
+      },
+      {
+        "update": 1700,
+        "food": 0.34854647517204285
+      },
+      {
+        "update": 2100,
+        "food": 0.3500461280345917
+      }
+    ],
+    "v33_ROLE_ONLY_s3111": [
+      {
+        "update": 701,
+        "food": 0.3431687653064728
+      },
+      {
+        "update": 900,
+        "food": 0.3432632088661194
+      },
+      {
+        "update": 1100,
+        "food": 0.34317153692245483
+      },
+      {
+        "update": 1400,
+        "food": 0.3431444764137268
+      },
+      {
+        "update": 1700,
+        "food": 0.34346720576286316
+      },
+      {
+        "update": 2100,
+        "food": 0.343187153339386
+      }
+    ],
+    "v33_ROLE_ONLY_s4111": [
+      {
+        "update": 701,
+        "food": 0.3427068889141083
+      },
+      {
+        "update": 900,
+        "food": 0.34279459714889526
+      },
+      {
+        "update": 1100,
+        "food": 0.3427335023880005
+      },
+      {
+        "update": 1400,
+        "food": 0.34283605217933655
+      },
+      {
+        "update": 1700,
+        "food": 0.3428187072277069
+      },
+      {
+        "update": 2100,
+        "food": 0.3426665961742401
+      }
+    ]
+  },
+  "source_sha256": {
+    "v33_continue_barter.py": "acdb1d88a9d492b553af7b9c2faaf8db438c4274e829de050cdba955db71c5f7",
+    "v33_summarize.py": "2c275e2fabb9b58783b847da18dcbdca4395c162b0a96446612fd6d67ff30c33",
+    "PREREG_V33_OCCUPATION_LONG_TRAINING.md": "572aa2c6b1ce231e6fd3465a39b4388ee44a40ca80a7027ca27ec70ed6fd1287"
+  }
+}
