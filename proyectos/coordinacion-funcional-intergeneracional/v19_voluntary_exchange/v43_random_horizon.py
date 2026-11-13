@@ -22,7 +22,7 @@ def local_potential(c,w):
  return ((possible&~own).float().sum(2)/(c.k-1)).mean(1)
 
 def roll(c,gift,role,seed,q=1.,hidden_clock=False,init="mixed",
-         interval=8,move_cost=.015,role_baseline=None):
+         interval=8,move_cost=.015,role_baseline=None,survival_generator=None):
  assert 0<q<=1
  world=start4(c,seed,init)
  alive=torch.ones(c.batch,device=c.device,dtype=torch.bool)
@@ -31,7 +31,8 @@ def roll(c,gift,role,seed,q=1.,hidden_clock=False,init="mixed",
  active_by_round=[]
  for t in range(c.horizon):
   if t>0 and q<1.:
-   alive=alive&(torch.rand(c.batch,device=c.device)<q)
+   alive=alive&(torch.rand(c.batch,device=c.device,
+       generator=survival_generator)<q)
   active=alive.float()
   activeagent=active[:,None]
   observations=({**world,"t":0} if hidden_clock else world)
