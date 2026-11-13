@@ -1,0 +1,25 @@
+# V37 — Aprendizaje privado de una cohorte de reemplazo en sociedades contractuales
+
+**Preregistro exploratorio del 12/11/2026.** Se define después de observar en V35 la pérdida permanente de 24–28% del excedente alimentario cuando 30 de los 120 habitantes entrenados se sustituyen por agentes sin experiencia y las políticas permanecen congeladas. V37 investiga si esta vulnerabilidad se debe a ausencia de aprendizaje individual posterior al reemplazo.
+
+## Mecanismo y población
+
+Se conservarán los cuatro checkpoints finales V31 con N120, k4, grado6, dos costes finales c=0,04 y0,12 y dos semillas neuronales 3111/4111. Se elige de forma reproducible y **antes de entrenar** un subconjunto aleatorio fijo de 30 posiciones por checkpoint. Estas posiciones se reservan a una nueva cohorte de 30 agentes con dos redes neuronales **privadas inicializadas aleatoriamente** (actor de ofertas y actor de profesiones), mientras que las demás 90 personas mantienen sus redes originales congeladas. Los residentes de las 30 posiciones también mantienen sus redes originales disponibles para representar los 24 turnos previos a la sustitución. No se transfieren pesos de incumbentes a recién llegados.
+
+Cada simulación de entrenamiento comienza con 120 incumbentes hasta el final de la ronda 24. En la ronda 25, **después de la elección ocupacional programada y antes de las propuestas materiales** (enmienda V35), se incorporan 30 nuevas personas con oficios iniciales aleatorios, y se reinicia su memoria social y la de vecinos sobre ellas. Desde la ronda25 hasta la48 los 90 residentes utilizan sus redes anteriores congeladas. Únicamente las redes privadas de los 30 recién incorporados reciben actualizaciones mediante su **propio alimento descontado** (REINFORCE, baseline por mundos), sin maximización de la recompensa grupal, sin tutor y sin clonación de políticas viejas. La regla contractual bilateral recíproca sigue programada como condición institucional del entorno.
+
+## Entrenamiento y factores
+
+Cuatro entrenamientos con 700 actualizaciones cada uno; cada actualización repite 12 mundos y 48 rondas (24 anteriores y24 posteriores al choque). Inicios de oficio mezclados monolíticos y aleatorios durante entrenamiento. Identidad de la cohorte de reemplazo fija para cada checkpoint y preregistrada por algoritmo `torch.randperm(120, Generator.seed=seed+37001)[:30]`. El conjunto de pesos nuevos iniciales se guarda como contrafactual de cohorte sin experiencia. Hiperaparámetros de las dos políticas V31, gamma0,995, movilidad profesional cada ocho rondas a coste0,015. Coste del intercambio unitario comienza en0,002 hasta actualización250, aumenta al coste final entre250–450 y permanece constante hasta700. Evaluaciones de desarrollo con coste final en u1,140,280,420,560,700; siempre mismo grupo de 30 posiciones.
+
+La intervención no enseña directamente a los nuevos agentes. Representa **aprendizaje por experiencia privada repetida en una ecología social de incumbentes entrenados**, no aprendizaje inmediato dentro de un único episodio de 24 rondas ni socialización humana natural. Es un mecanismo de entrenamiento de cohorte concreto, y no una generación que surge por sí misma en una sociedad que decide reproducirse.
+
+## Evaluación fuera de muestra
+
+Seis semillas ambientales reservadas, 16 mundos por semilla, 48 rondas y choque de sustitución en ronda25, según V35. Comparadores congelados: (A) sociedad V31 original sin choque, (B) 30 agentes nuevos con **las redes iniciales aleatorias guardadas**, (C) 30 agentes entrenados por su propia recompensa en esas posiciones. En B y C el subconjunto de reemplazo es idéntico, los residentes y la población inicial son idénticos, las semillas ambientales están emparejadas y la aleatoriedad se restablece antes de cada ensayo. Se reporta por separado comida de los 30 nuevos, de los 90 incumbentes restantes, excedente final conservado y velocidad de recuperación en los bloques 25–32,33–40,41–48.
+
+El criterio **H37a** se alcanza cuando los nuevos agentes entrenados aumentan su alimento al menos0,030 sobre el control de nuevos sin experiencia en ambas semillas de cada coste. **H37b** exige restaurar ≥85% del excedente alimentario original en las últimas ocho rondas en al menos tres de las cuatro condiciones, incluyendo al menos una con coste0,12. Se informa la heterogeneidad entre 30 nuevos; una subida en el promedio social sin mejorarles no cumple H37a. **H37c** exige que los 90 incumbentes mantengan su alimentación al menos igual que en el control de recién llegados sin experiencia, evitando transferir riqueza solo a la cohorte nueva a costa de la anterior.
+
+## Validez y límites
+
+Las posiciones se fijan por semilla neuronal y pueden contener convenciones aprendidas por sus incumbentes. No se ensaya aquí generalización a otras 30 posiciones, ni se permite reentrenar a los 90 residentes. Comparar cuatro cohortes es insuficiente para afirmar robustez universal. Aun con integración exitosa, la posibilidad institucional de contrato permanece exógena, y V37 por sí solo no satisface el objetivo general de organización emergente sin esta estructura de intercambio.
