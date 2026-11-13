@@ -123,7 +123,10 @@ def scenario(c,donor,occupational,seed,init="mixed",baseline=None,
  return (dict(food=total_food/c["horizon"],gifts=total_sent/c["horizon"],
    full=total_full/c["horizon"],coverage=total_cover/c["horizon"],
    balanced_teams=total_balanced/c["horizon"],
-   switches_per_person=total_sw/(batch*N)),
+   switches_per_person=total_sw/(batch*N),
+   terminal_food=float(rewards.mean().detach()),
+   terminal_full=float(full.mean().detach()),
+   terminal_balanced_teams=float((counts==1).all(2).float().mean().detach())),
    torch.stack(reward_list),logp,entropy,decision_steps)
 
 def context(batch,device,horizon=H):
