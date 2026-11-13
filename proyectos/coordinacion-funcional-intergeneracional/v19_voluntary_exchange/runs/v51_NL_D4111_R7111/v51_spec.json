@@ -1,0 +1,21 @@
+{
+  "name": "v51_NL_D4111_R7111",
+  "source": "v47_Q95_NL_s4111",
+  "role_seed": 7111,
+  "updates": 1500,
+  "batch": 12,
+  "lr": 0.003,
+  "ent": 0.01,
+  "save_every": 300,
+  "device": "cuda",
+  "n": 48,
+  "k": 4,
+  "teams": 12,
+  "team_size": 4,
+  "source_gift_policy_frozen": true,
+  "initial_roles": "mixed monolith/random",
+  "move_cost": 0.015,
+  "role_decision_interval": 8,
+  "cost_each_gift": 0.04,
+  "source_policy_type": "V47 private exact opponent shaping"
+}
