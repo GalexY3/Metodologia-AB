@@ -1,0 +1,3781 @@
+{
+  "cells": [
+    {
+      "setting": "BASE",
+      "environment": "PATCHY",
+      "mechanism": "NONE",
+      "survival": 0.0795627170138889,
+      "viable_teams": 0.07497829861111112,
+      "net_food_per_survivor": 0.769659946368884,
+      "cost_admin_per_survivor": 0.0,
+      "loss_transport_per_survivor": 0.0
+    },
+    {
+      "setting": "BASE",
+      "environment": "PATCHY",
+      "mechanism": "LOCAL",
+      "survival": 0.33637152777777773,
+      "viable_teams": 0.3347439236111111,
+      "net_food_per_survivor": 0.7802861507300989,
+      "cost_admin_per_survivor": 0.004000000000000001,
+      "loss_transport_per_survivor": 0.0004052233350014364
+    },
+    {
+      "setting": "BASE",
+      "environment": "PATCHY",
+      "mechanism": "GLOBAL",
+      "survival": 0.079833984375,
+      "viable_teams": 0.0705295138888889,
+      "net_food_per_survivor": 0.7405450828693342,
+      "cost_admin_per_survivor": 0.008000000000000002,
+      "loss_transport_per_survivor": 0.0026381654980220577
+    },
+    {
+      "setting": "BASE",
+      "environment": "PATCHY",
+      "mechanism": "LOCAL_GLOBAL",
+      "survival": 0.9148491753472222,
+      "viable_teams": 0.9139539930555557,
+      "net_food_per_survivor": 0.7687498835528461,
+      "cost_admin_per_survivor": 0.011999999999999999,
+      "loss_transport_per_survivor": 0.0024170796333391016
+    },
+    {
+      "setting": "BASE",
+      "environment": "PATCHY",
+      "mechanism": "FORECAST",
+      "survival": 0.8049858940972223,
+      "viable_teams": 0.8033854166666666,
+      "net_food_per_survivor": 0.7611746963270244,
+      "cost_admin_per_survivor": 0.02,
+      "loss_transport_per_survivor": 0.0021580294445998276
+    },
+    {
+      "setting": "BASE",
+      "environment": "PATCHY",
+      "mechanism": "PLACEBO",
+      "survival": 0.790283203125,
+      "viable_teams": 0.7886284722222223,
+      "net_food_per_survivor": 0.7610483802230089,
+      "cost_admin_per_survivor": 0.019999999999999993,
+      "loss_transport_per_survivor": 0.002251672701251655
+    },
+    {
+      "setting": "BASE",
+      "environment": "PATCHY",
+      "mechanism": "POLICY",
+      "survival": 0.8727756076388888,
+      "viable_teams": 0.8718532986111112,
+      "net_food_per_survivor": 0.765545763110253,
+      "cost_admin_per_survivor": 0.015,
+      "loss_transport_per_survivor": 0.0026721695777342977
+    },
+    {
+      "setting": "BASE",
+      "environment": "PATCHY",
+      "mechanism": "FULL_PROXY",
+      "survival": 0.7445203993055555,
+      "viable_teams": 0.7430555555555555,
+      "net_food_per_survivor": 0.7582611859659977,
+      "cost_admin_per_survivor": 0.023000000000000003,
+      "loss_transport_per_survivor": 0.002342771247154454
+    },
+    {
+      "setting": "BASE",
+      "environment": "SYSTEMIC",
+      "mechanism": "NONE",
+      "survival": 0.006212022569444445,
+      "viable_teams": 0.006184895833333333,
+      "net_food_per_survivor": 0.7241283191885493,
+      "cost_admin_per_survivor": 0.0,
+      "loss_transport_per_survivor": 0.0
+    },
+    {
+      "setting": "BASE",
+      "environment": "SYSTEMIC",
+      "mechanism": "LOCAL",
+      "survival": 0.04326714409722222,
+      "viable_teams": 0.04242621527777777,
+      "net_food_per_survivor": 0.7382634746764332,
+      "cost_admin_per_survivor": 0.004,
+      "loss_transport_per_survivor": 0.0008431380675449196
+    },
+    {
+      "setting": "BASE",
+      "environment": "SYSTEMIC",
+      "mechanism": "GLOBAL",
+      "survival": 0.004665798611111111,
+      "viable_teams": 0.00390625,
+      "net_food_per_survivor": 0.7186184399525762,
+      "cost_admin_per_survivor": 0.008000000000000005,
+      "loss_transport_per_survivor": 0.00017639435572847168
+    },
+    {
+      "setting": "BASE",
+      "environment": "SYSTEMIC",
+      "mechanism": "LOCAL_GLOBAL",
+      "survival": 0.03407118055555556,
+      "viable_teams": 0.03342013888888889,
+      "net_food_per_survivor": 0.7311008424946194,
+      "cost_admin_per_survivor": 0.011999999999999999,
+      "loss_transport_per_survivor": 0.0009238138653751713
+    },
+    {
+      "setting": "BASE",
+      "environment": "SYSTEMIC",
+      "mechanism": "FORECAST",
+      "survival": 0.02609592013888889,
+      "viable_teams": 0.025499131944444448,
+      "net_food_per_survivor": 0.7241367886030406,
+      "cost_admin_per_survivor": 0.019999999999999997,
+      "loss_transport_per_survivor": 0.0009815523890756219
+    },
+    {
+      "setting": "BASE",
+      "environment": "SYSTEMIC",
+      "mechanism": "PLACEBO",
+      "survival": 0.026828342013888885,
+      "viable_teams": 0.02615017361111111,
+      "net_food_per_survivor": 0.7243801916684417,
+      "cost_admin_per_survivor": 0.02,
+      "loss_transport_per_survivor": 0.0009775824037344053
+    },
+    {
+      "setting": "BASE",
+      "environment": "SYSTEMIC",
+      "mechanism": "POLICY",
+      "survival": 0.031792534722222224,
+      "viable_teams": 0.031141493055555556,
+      "net_food_per_survivor": 0.7289788405103237,
+      "cost_admin_per_survivor": 0.01499999999999999,
+      "loss_transport_per_survivor": 0.0009634236899531607
+    },
+    {
+      "setting": "BASE",
+      "environment": "SYSTEMIC",
+      "mechanism": "FULL_PROXY",
+      "survival": 0.02414279513888889,
+      "viable_teams": 0.023546006944444444,
+      "net_food_per_survivor": 0.721571716174346,
+      "cost_admin_per_survivor": 0.023000000000000007,
+      "loss_transport_per_survivor": 0.0010166561555572577
+    },
+    {
+      "setting": "HALF_ADMIN",
+      "environment": "PATCHY",
+      "mechanism": "NONE",
+      "survival": 0.0795627170138889,
+      "viable_teams": 0.07497829861111112,
+      "net_food_per_survivor": 0.769659946368884,
+      "cost_admin_per_survivor": 0.0,
+      "loss_transport_per_survivor": 0.0
+    },
+    {
+      "setting": "HALF_ADMIN",
+      "environment": "PATCHY",
+      "mechanism": "LOCAL",
+      "survival": 0.34931098090277773,
+      "viable_teams": 0.34787326388888884,
+      "net_food_per_survivor": 0.7822315957946037,
+      "cost_admin_per_survivor": 0.0020000000000000005,
+      "loss_transport_per_survivor": 0.0003987157013033244
+    },
+    {
+      "setting": "HALF_ADMIN",
+      "environment": "PATCHY",
+      "mechanism": "GLOBAL",
+      "survival": 0.09876844618055557,
+      "viable_teams": 0.08734809027777778,
+      "net_food_per_survivor": 0.7436745983782324,
+      "cost_admin_per_survivor": 0.003999999999999999,
+      "loss_transport_per_survivor": 0.0026345128140648297
+    },
+    {
+      "setting": "HALF_ADMIN",
+      "environment": "PATCHY",
+      "mechanism": "LOCAL_GLOBAL",
+      "survival": 0.9596896701388888,
+      "viable_teams": 0.9593098958333334,
+      "net_food_per_survivor": 0.7748305489338875,
+      "cost_admin_per_survivor": 0.005999999999999999,
+      "loss_transport_per_survivor": 0.0022844218104754433
+    },
+    {
+      "setting": "HALF_ADMIN",
+      "environment": "PATCHY",
+      "mechanism": "FORECAST",
+      "survival": 0.9348958333333334,
+      "viable_teams": 0.9344618055555555,
+      "net_food_per_survivor": 0.7711596293983102,
+      "cost_admin_per_survivor": 0.010000000000000002,
+      "loss_transport_per_survivor": 0.0019757713805751203
+    },
+    {
+      "setting": "HALF_ADMIN",
+      "environment": "PATCHY",
+      "mechanism": "PLACEBO",
+      "survival": 0.9185926649305557,
+      "viable_teams": 0.9173177083333334,
+      "net_food_per_survivor": 0.7708896396202362,
+      "cost_admin_per_survivor": 0.01,
+      "loss_transport_per_survivor": 0.002022464673122995
+    },
+    {
+      "setting": "HALF_ADMIN",
+      "environment": "PATCHY",
+      "mechanism": "POLICY",
+      "survival": 0.9494900173611112,
+      "viable_teams": 0.9490017361111112,
+      "net_food_per_survivor": 0.7730654774456284,
+      "cost_admin_per_survivor": 0.007499999999999999,
+      "loss_transport_per_survivor": 0.0025584479502245437
+    },
+    {
+      "setting": "HALF_ADMIN",
+      "environment": "PATCHY",
+      "mechanism": "FULL_PROXY",
+      "survival": 0.9168023003472223,
+      "viable_teams": 0.9161241319444445,
+      "net_food_per_survivor": 0.769471704887037,
+      "cost_admin_per_survivor": 0.011499999999999998,
+      "loss_transport_per_survivor": 0.00219554869824379
+    },
+    {
+      "setting": "HALF_ADMIN",
+      "environment": "SYSTEMIC",
+      "mechanism": "NONE",
+      "survival": 0.006212022569444445,
+      "viable_teams": 0.006184895833333333,
+      "net_food_per_survivor": 0.7241283191885493,
+      "cost_admin_per_survivor": 0.0,
+      "loss_transport_per_survivor": 0.0
+    },
+    {
+      "setting": "HALF_ADMIN",
+      "environment": "SYSTEMIC",
+      "mechanism": "LOCAL",
+      "survival": 0.04448784722222223,
+      "viable_teams": 0.04351128472222222,
+      "net_food_per_survivor": 0.7402717582068146,
+      "cost_admin_per_survivor": 0.002,
+      "loss_transport_per_survivor": 0.0008447361567791965
+    },
+    {
+      "setting": "HALF_ADMIN",
+      "environment": "SYSTEMIC",
+      "mechanism": "GLOBAL",
+      "survival": 0.005208333333333333,
+      "viable_teams": 0.005208333333333333,
+      "net_food_per_survivor": 0.722026870566229,
+      "cost_admin_per_survivor": 0.004000000000000001,
+      "loss_transport_per_survivor": 0.00018009013883283576
+    },
+    {
+      "setting": "HALF_ADMIN",
+      "environment": "SYSTEMIC",
+      "mechanism": "LOCAL_GLOBAL",
+      "survival": 0.03819444444444444,
+      "viable_teams": 0.037543402777777776,
+      "net_food_per_survivor": 0.7361169600121688,
+      "cost_admin_per_survivor": 0.006000000000000001,
+      "loss_transport_per_survivor": 0.0009161020790140068
+    },
+    {
+      "setting": "HALF_ADMIN",
+      "environment": "SYSTEMIC",
+      "mechanism": "FORECAST",
+      "survival": 0.03534613715277778,
+      "viable_teams": 0.03493923611111111,
+      "net_food_per_survivor": 0.7323221118224802,
+      "cost_admin_per_survivor": 0.01,
+      "loss_transport_per_survivor": 0.0009728009171884248
+    },
+    {
+      "setting": "HALF_ADMIN",
+      "environment": "SYSTEMIC",
+      "mechanism": "PLACEBO",
+      "survival": 0.03466796875000001,
+      "viable_teams": 0.03417968750000001,
+      "net_food_per_survivor": 0.7324163382099994,
+      "cost_admin_per_survivor": 0.009999999999999998,
+      "loss_transport_per_survivor": 0.0009701563733464399
+    },
+    {
+      "setting": "HALF_ADMIN",
+      "environment": "SYSTEMIC",
+      "mechanism": "POLICY",
+      "survival": 0.036675347222222224,
+      "viable_teams": 0.03634982638888889,
+      "net_food_per_survivor": 0.7346501488090253,
+      "cost_admin_per_survivor": 0.007500000000000001,
+      "loss_transport_per_survivor": 0.0009500714508201446
+    },
+    {
+      "setting": "HALF_ADMIN",
+      "environment": "SYSTEMIC",
+      "mechanism": "FULL_PROXY",
+      "survival": 0.03472222222222222,
+      "viable_teams": 0.03407118055555556,
+      "net_food_per_survivor": 0.7311935742570856,
+      "cost_admin_per_survivor": 0.011500000000000003,
+      "loss_transport_per_survivor": 0.0010228509429925515
+    },
+    {
+      "setting": "ZERO_ADMIN",
+      "environment": "PATCHY",
+      "mechanism": "NONE",
+      "survival": 0.0795627170138889,
+      "viable_teams": 0.07497829861111112,
+      "net_food_per_survivor": 0.769659946368884,
+      "cost_admin_per_survivor": 0.0,
+      "loss_transport_per_survivor": 0.0
+    },
+    {
+      "setting": "ZERO_ADMIN",
+      "environment": "PATCHY",
+      "mechanism": "LOCAL",
+      "survival": 0.3649631076388889,
+      "viable_teams": 0.36306423611111116,
+      "net_food_per_survivor": 0.7841887784547975,
+      "cost_admin_per_survivor": 0.0,
+      "loss_transport_per_survivor": 0.00039162893129001064
+    },
+    {
+      "setting": "ZERO_ADMIN",
+      "environment": "PATCHY",
+      "mechanism": "GLOBAL",
+      "survival": 0.11271158854166664,
+      "viable_teams": 0.09776475694444446,
+      "net_food_per_survivor": 0.7463586653383117,
+      "cost_admin_per_survivor": 0.0,
+      "loss_transport_per_survivor": 0.002643433730298005
+    },
+    {
+      "setting": "ZERO_ADMIN",
+      "environment": "PATCHY",
+      "mechanism": "LOCAL_GLOBAL",
+      "survival": 0.9835340711805555,
+      "viable_teams": 0.9832899305555555,
+      "net_food_per_survivor": 0.7809632820893827,
+      "cost_admin_per_survivor": 0.0,
+      "loss_transport_per_survivor": 0.0021269400986410475
+    },
+    {
+      "setting": "ZERO_ADMIN",
+      "environment": "PATCHY",
+      "mechanism": "FORECAST",
+      "survival": 0.9857313368055555,
+      "viable_teams": 0.9855685763888888,
+      "net_food_per_survivor": 0.7813709735309765,
+      "cost_admin_per_survivor": 0.0,
+      "loss_transport_per_survivor": 0.0017303865528689474
+    },
+    {
+      "setting": "ZERO_ADMIN",
+      "environment": "PATCHY",
+      "mechanism": "PLACEBO",
+      "survival": 0.9766710069444445,
+      "viable_teams": 0.9760199652777778,
+      "net_food_per_survivor": 0.7812628898765827,
+      "cost_admin_per_survivor": 0.0,
+      "loss_transport_per_survivor": 0.0017354699899175404
+    },
+    {
+      "setting": "ZERO_ADMIN",
+      "environment": "PATCHY",
+      "mechanism": "POLICY",
+      "survival": 0.9825032552083334,
+      "viable_teams": 0.982204861111111,
+      "net_food_per_survivor": 0.7807244736469198,
+      "cost_admin_per_survivor": 0.0,
+      "loss_transport_per_survivor": 0.002372000475715745
+    },
+    {
+      "setting": "ZERO_ADMIN",
+      "environment": "PATCHY",
+      "mechanism": "FULL_PROXY",
+      "survival": 0.9829644097222223,
+      "viable_teams": 0.9827473958333334,
+      "net_food_per_survivor": 0.7811797351783221,
+      "cost_admin_per_survivor": 0.0,
+      "loss_transport_per_survivor": 0.0019208082076961274
+    },
+    {
+      "setting": "ZERO_ADMIN",
+      "environment": "SYSTEMIC",
+      "mechanism": "NONE",
+      "survival": 0.006212022569444445,
+      "viable_teams": 0.006184895833333333,
+      "net_food_per_survivor": 0.7241283191885493,
+      "cost_admin_per_survivor": 0.0,
+      "loss_transport_per_survivor": 0.0
+    },
+    {
+      "setting": "ZERO_ADMIN",
+      "environment": "SYSTEMIC",
+      "mechanism": "LOCAL",
+      "survival": 0.047770182291666664,
+      "viable_teams": 0.04687499999999999,
+      "net_food_per_survivor": 0.7420193384338706,
+      "cost_admin_per_survivor": 0.0,
+      "loss_transport_per_survivor": 0.0008396182353416893
+    },
+    {
+      "setting": "ZERO_ADMIN",
+      "environment": "SYSTEMIC",
+      "mechanism": "GLOBAL",
+      "survival": 0.005533854166666667,
+      "viable_teams": 0.005533854166666667,
+      "net_food_per_survivor": 0.7236538445155171,
+      "cost_admin_per_survivor": 0.0,
+      "loss_transport_per_survivor": 0.00018378786816354779
+    },
+    {
+      "setting": "ZERO_ADMIN",
+      "environment": "SYSTEMIC",
+      "mechanism": "LOCAL_GLOBAL",
+      "survival": 0.04988606770833334,
+      "viable_teams": 0.04904513888888889,
+      "net_food_per_survivor": 0.7420658113388737,
+      "cost_admin_per_survivor": 0.0,
+      "loss_transport_per_survivor": 0.000909911280240266
+    },
+    {
+      "setting": "ZERO_ADMIN",
+      "environment": "SYSTEMIC",
+      "mechanism": "FORECAST",
+      "survival": 0.04991319444444445,
+      "viable_teams": 0.04904513888888889,
+      "net_food_per_survivor": 0.741828238669791,
+      "cost_admin_per_survivor": 0.0,
+      "loss_transport_per_survivor": 0.0009656679858478217
+    },
+    {
+      "setting": "ZERO_ADMIN",
+      "environment": "SYSTEMIC",
+      "mechanism": "PLACEBO",
+      "survival": 0.05015733506944445,
+      "viable_teams": 0.04926215277777778,
+      "net_food_per_survivor": 0.7421128133211571,
+      "cost_admin_per_survivor": 0.0,
+      "loss_transport_per_survivor": 0.000961403667877646
+    },
+    {
+      "setting": "ZERO_ADMIN",
+      "environment": "SYSTEMIC",
+      "mechanism": "POLICY",
+      "survival": 0.04847547743055555,
+      "viable_teams": 0.047526041666666664,
+      "net_food_per_survivor": 0.7419537625075808,
+      "cost_admin_per_survivor": 0.0,
+      "loss_transport_per_survivor": 0.0009338654694348035
+    },
+    {
+      "setting": "ZERO_ADMIN",
+      "environment": "SYSTEMIC",
+      "mechanism": "FULL_PROXY",
+      "survival": 0.04945203993055555,
+      "viable_teams": 0.048502604166666664,
+      "net_food_per_survivor": 0.7418058602090932,
+      "cost_admin_per_survivor": 0.0,
+      "loss_transport_per_survivor": 0.0010059655191916575
+    },
+    {
+      "setting": "DOUBLE_ADMIN",
+      "environment": "PATCHY",
+      "mechanism": "NONE",
+      "survival": 0.0795627170138889,
+      "viable_teams": 0.07497829861111112,
+      "net_food_per_survivor": 0.769659946368884,
+      "cost_admin_per_survivor": 0.0,
+      "loss_transport_per_survivor": 0.0
+    },
+    {
+      "setting": "DOUBLE_ADMIN",
+      "environment": "PATCHY",
+      "mechanism": "LOCAL",
+      "survival": 0.31054687500000006,
+      "viable_teams": 0.30859375,
+      "net_food_per_survivor": 0.7765155685644141,
+      "cost_admin_per_survivor": 0.008000000000000002,
+      "loss_transport_per_survivor": 0.00041961473962696206
+    },
+    {
+      "setting": "DOUBLE_ADMIN",
+      "environment": "PATCHY",
+      "mechanism": "GLOBAL",
+      "survival": 0.053005642361111105,
+      "viable_teams": 0.04676649305555555,
+      "net_food_per_survivor": 0.7346694876081311,
+      "cost_admin_per_survivor": 0.016,
+      "loss_transport_per_survivor": 0.0026018482521997636
+    },
+    {
+      "setting": "DOUBLE_ADMIN",
+      "environment": "PATCHY",
+      "mechanism": "LOCAL_GLOBAL",
+      "survival": 0.7245008680555555,
+      "viable_teams": 0.7227647569444445,
+      "net_food_per_survivor": 0.7570717256824322,
+      "cost_admin_per_survivor": 0.023999999999999994,
+      "loss_transport_per_survivor": 0.0025259717354986343
+    },
+    {
+      "setting": "DOUBLE_ADMIN",
+      "environment": "PATCHY",
+      "mechanism": "FORECAST",
+      "survival": 0.3553331163194444,
+      "viable_teams": 0.3527560763888889,
+      "net_food_per_survivor": 0.741722914341527,
+      "cost_admin_per_survivor": 0.04,
+      "loss_transport_per_survivor": 0.0021952039205203736
+    },
+    {
+      "setting": "DOUBLE_ADMIN",
+      "environment": "PATCHY",
+      "mechanism": "PLACEBO",
+      "survival": 0.3647732204861111,
+      "viable_teams": 0.36208767361111116,
+      "net_food_per_survivor": 0.7413969675537501,
+      "cost_admin_per_survivor": 0.04,
+      "loss_transport_per_survivor": 0.002401013746620663
+    },
+    {
+      "setting": "DOUBLE_ADMIN",
+      "environment": "PATCHY",
+      "mechanism": "POLICY",
+      "survival": 0.5750868055555556,
+      "viable_teams": 0.5729166666666666,
+      "net_food_per_survivor": 0.7511416004681121,
+      "cost_admin_per_survivor": 0.03,
+      "loss_transport_per_survivor": 0.00262705738398371
+    },
+    {
+      "setting": "DOUBLE_ADMIN",
+      "environment": "PATCHY",
+      "mechanism": "FULL_PROXY",
+      "survival": 0.24110243055555555,
+      "viable_teams": 0.23871527777777776,
+      "net_food_per_survivor": 0.7359714277625886,
+      "cost_admin_per_survivor": 0.046000000000000006,
+      "loss_transport_per_survivor": 0.0022157297076594563
+    },
+    {
+      "setting": "DOUBLE_ADMIN",
+      "environment": "SYSTEMIC",
+      "mechanism": "NONE",
+      "survival": 0.006212022569444445,
+      "viable_teams": 0.006184895833333333,
+      "net_food_per_survivor": 0.7241283191885493,
+      "cost_admin_per_survivor": 0.0,
+      "loss_transport_per_survivor": 0.0
+    },
+    {
+      "setting": "DOUBLE_ADMIN",
+      "environment": "SYSTEMIC",
+      "mechanism": "LOCAL",
+      "survival": 0.03618706597222222,
+      "viable_teams": 0.035590277777777776,
+      "net_food_per_survivor": 0.734528293379317,
+      "cost_admin_per_survivor": 0.008000000000000004,
+      "loss_transport_per_survivor": 0.0008532959350329674
+    },
+    {
+      "setting": "DOUBLE_ADMIN",
+      "environment": "SYSTEMIC",
+      "mechanism": "GLOBAL",
+      "survival": 0.003363715277777778,
+      "viable_teams": 0.0026041666666666665,
+      "net_food_per_survivor": 0.7105912162467506,
+      "cost_admin_per_survivor": 0.016000000000000007,
+      "loss_transport_per_survivor": 0.00015974810415681179
+    },
+    {
+      "setting": "DOUBLE_ADMIN",
+      "environment": "SYSTEMIC",
+      "mechanism": "LOCAL_GLOBAL",
+      "survival": 0.021891276041666668,
+      "viable_teams": 0.021484375,
+      "net_food_per_survivor": 0.7208102665489661,
+      "cost_admin_per_survivor": 0.024000000000000004,
+      "loss_transport_per_survivor": 0.000943950445957276
+    },
+    {
+      "setting": "DOUBLE_ADMIN",
+      "environment": "SYSTEMIC",
+      "mechanism": "FORECAST",
+      "survival": 0.010796440972222222,
+      "viable_teams": 0.010633680555555554,
+      "net_food_per_survivor": 0.7068207727910624,
+      "cost_admin_per_survivor": 0.04000000000000001,
+      "loss_transport_per_survivor": 0.000999381335217591
+    },
+    {
+      "setting": "DOUBLE_ADMIN",
+      "environment": "SYSTEMIC",
+      "mechanism": "PLACEBO",
+      "survival": 0.010036892361111112,
+      "viable_teams": 0.009874131944444446,
+      "net_food_per_survivor": 0.7066731898843607,
+      "cost_admin_per_survivor": 0.04000000000000001,
+      "loss_transport_per_survivor": 0.0009975594260287289
+    },
+    {
+      "setting": "DOUBLE_ADMIN",
+      "environment": "SYSTEMIC",
+      "mechanism": "POLICY",
+      "survival": 0.017089843750000003,
+      "viable_teams": 0.016710069444444444,
+      "net_food_per_survivor": 0.7157912417364551,
+      "cost_admin_per_survivor": 0.03000000000000001,
+      "loss_transport_per_survivor": 0.0009535353100937616
+    },
+    {
+      "setting": "DOUBLE_ADMIN",
+      "environment": "SYSTEMIC",
+      "mechanism": "FULL_PROXY",
+      "survival": 0.007215711805555556,
+      "viable_teams": 0.006727430555555556,
+      "net_food_per_survivor": 0.7021833261037332,
+      "cost_admin_per_survivor": 0.04600000000000001,
+      "loss_transport_per_survivor": 0.0010380327078555282
+    },
+    {
+      "setting": "FREE_TRANSFER",
+      "environment": "PATCHY",
+      "mechanism": "NONE",
+      "survival": 0.0795627170138889,
+      "viable_teams": 0.07497829861111112,
+      "net_food_per_survivor": 0.769659946368884,
+      "cost_admin_per_survivor": 0.0,
+      "loss_transport_per_survivor": 0.0
+    },
+    {
+      "setting": "FREE_TRANSFER",
+      "environment": "PATCHY",
+      "mechanism": "LOCAL",
+      "survival": 0.35055881076388884,
+      "viable_teams": 0.34906684027777773,
+      "net_food_per_survivor": 0.7806971864664325,
+      "cost_admin_per_survivor": 0.004000000000000001,
+      "loss_transport_per_survivor": 0.0
+    },
+    {
+      "setting": "FREE_TRANSFER",
+      "environment": "PATCHY",
+      "mechanism": "GLOBAL",
+      "survival": 0.08965386284722222,
+      "viable_teams": 0.07866753472222222,
+      "net_food_per_survivor": 0.7421427777701388,
+      "cost_admin_per_survivor": 0.008000000000000005,
+      "loss_transport_per_survivor": 0.0
+    },
+    {
+      "setting": "FREE_TRANSFER",
+      "environment": "PATCHY",
+      "mechanism": "LOCAL_GLOBAL",
+      "survival": 0.9421929253472223,
+      "viable_teams": 0.9417317708333334,
+      "net_food_per_survivor": 0.7711436130956232,
+      "cost_admin_per_survivor": 0.012000000000000002,
+      "loss_transport_per_survivor": 0.0
+    },
+    {
+      "setting": "FREE_TRANSFER",
+      "environment": "PATCHY",
+      "mechanism": "FORECAST",
+      "survival": 0.8563096788194443,
+      "viable_teams": 0.8551432291666665,
+      "net_food_per_survivor": 0.7633493426092498,
+      "cost_admin_per_survivor": 0.020000000000000004,
+      "loss_transport_per_survivor": 0.0
+    },
+    {
+      "setting": "FREE_TRANSFER",
+      "environment": "PATCHY",
+      "mechanism": "PLACEBO",
+      "survival": 0.8406846788194445,
+      "viable_teams": 0.8394097222222222,
+      "net_food_per_survivor": 0.7631659519960895,
+      "cost_admin_per_survivor": 0.02,
+      "loss_transport_per_survivor": 0.0
+    },
+    {
+      "setting": "FREE_TRANSFER",
+      "environment": "PATCHY",
+      "mechanism": "POLICY",
+      "survival": 0.9141710069444443,
+      "viable_teams": 0.9134114583333334,
+      "net_food_per_survivor": 0.7681827112156844,
+      "cost_admin_per_survivor": 0.015000000000000001,
+      "loss_transport_per_survivor": 0.0
+    },
+    {
+      "setting": "FREE_TRANSFER",
+      "environment": "PATCHY",
+      "mechanism": "FULL_PROXY",
+      "survival": 0.7984483506944445,
+      "viable_teams": 0.7969835069444445,
+      "net_food_per_survivor": 0.7604242745448797,
+      "cost_admin_per_survivor": 0.022999999999999996,
+      "loss_transport_per_survivor": 0.0
+    },
+    {
+      "setting": "FREE_TRANSFER",
+      "environment": "SYSTEMIC",
+      "mechanism": "NONE",
+      "survival": 0.006212022569444445,
+      "viable_teams": 0.006184895833333333,
+      "net_food_per_survivor": 0.7241283191885493,
+      "cost_admin_per_survivor": 0.0,
+      "loss_transport_per_survivor": 0.0
+    },
+    {
+      "setting": "FREE_TRANSFER",
+      "environment": "SYSTEMIC",
+      "mechanism": "LOCAL",
+      "survival": 0.044840494791666664,
+      "viable_teams": 0.0439453125,
+      "net_food_per_survivor": 0.7392946569690336,
+      "cost_admin_per_survivor": 0.004000000000000001,
+      "loss_transport_per_survivor": 0.0
+    },
+    {
+      "setting": "FREE_TRANSFER",
+      "environment": "SYSTEMIC",
+      "mechanism": "GLOBAL",
+      "survival": 0.004665798611111111,
+      "viable_teams": 0.00390625,
+      "net_food_per_survivor": 0.7187336617402083,
+      "cost_admin_per_survivor": 0.008000000000000005,
+      "loss_transport_per_survivor": 0.0
+    },
+    {
+      "setting": "FREE_TRANSFER",
+      "environment": "SYSTEMIC",
+      "mechanism": "LOCAL_GLOBAL",
+      "survival": 0.03567165798611111,
+      "viable_teams": 0.03504774305555556,
+      "net_food_per_survivor": 0.7318331001959081,
+      "cost_admin_per_survivor": 0.012000000000000004,
+      "loss_transport_per_survivor": 0.0
+    },
+    {
+      "setting": "FREE_TRANSFER",
+      "environment": "SYSTEMIC",
+      "mechanism": "FORECAST",
+      "survival": 0.030137803819444444,
+      "viable_teams": 0.029513888888888885,
+      "net_food_per_survivor": 0.7252593705414377,
+      "cost_admin_per_survivor": 0.02,
+      "loss_transport_per_survivor": 0.0
+    },
+    {
+      "setting": "FREE_TRANSFER",
+      "environment": "SYSTEMIC",
+      "mechanism": "PLACEBO",
+      "survival": 0.02902560763888889,
+      "viable_teams": 0.028320312499999997,
+      "net_food_per_survivor": 0.7252645118036559,
+      "cost_admin_per_survivor": 0.019999999999999993,
+      "loss_transport_per_survivor": 0.0
+    },
+    {
+      "setting": "FREE_TRANSFER",
+      "environment": "SYSTEMIC",
+      "mechanism": "POLICY",
+      "survival": 0.033121744791666664,
+      "viable_teams": 0.03266059027777778,
+      "net_food_per_survivor": 0.7294659786103952,
+      "cost_admin_per_survivor": 0.014999999999999994,
+      "loss_transport_per_survivor": 0.0
+    },
+    {
+      "setting": "FREE_TRANSFER",
+      "environment": "SYSTEMIC",
+      "mechanism": "FULL_PROXY",
+      "survival": 0.026068793402777776,
+      "viable_teams": 0.02571614583333333,
+      "net_food_per_survivor": 0.72234351543301,
+      "cost_admin_per_survivor": 0.023000000000000007,
+      "loss_transport_per_survivor": 0.0
+    },
+    {
+      "setting": "LOSS20",
+      "environment": "PATCHY",
+      "mechanism": "NONE",
+      "survival": 0.0795627170138889,
+      "viable_teams": 0.07497829861111112,
+      "net_food_per_survivor": 0.769659946368884,
+      "cost_admin_per_survivor": 0.0,
+      "loss_transport_per_survivor": 0.0
+    },
+    {
+      "setting": "LOSS20",
+      "environment": "PATCHY",
+      "mechanism": "LOCAL",
+      "survival": 0.29511176215277773,
+      "viable_teams": 0.2928602430555555,
+      "net_food_per_survivor": 0.7789717894167612,
+      "cost_admin_per_survivor": 0.004,
+      "loss_transport_per_survivor": 0.001698605031091353
+    },
+    {
+      "setting": "LOSS20",
+      "environment": "PATCHY",
+      "mechanism": "GLOBAL",
+      "survival": 0.08639865451388888,
+      "viable_teams": 0.07964409722222222,
+      "net_food_per_survivor": 0.7417293536113188,
+      "cost_admin_per_survivor": 0.008,
+      "loss_transport_per_survivor": 0.009726941555927024
+    },
+    {
+      "setting": "LOSS20",
+      "environment": "PATCHY",
+      "mechanism": "LOCAL_GLOBAL",
+      "survival": 0.7519802517361112,
+      "viable_teams": 0.7504340277777778,
+      "net_food_per_survivor": 0.7607648988717931,
+      "cost_admin_per_survivor": 0.011999999999999997,
+      "loss_transport_per_survivor": 0.010681241060505104
+    },
+    {
+      "setting": "LOSS20",
+      "environment": "PATCHY",
+      "mechanism": "FORECAST",
+      "survival": 0.6089680989583334,
+      "viable_teams": 0.6070963541666666,
+      "net_food_per_survivor": 0.7542052196058638,
+      "cost_admin_per_survivor": 0.02,
+      "loss_transport_per_survivor": 0.009484551546155412
+    },
+    {
+      "setting": "LOSS20",
+      "environment": "PATCHY",
+      "mechanism": "PLACEBO",
+      "survival": 0.5877549913194444,
+      "viable_teams": 0.5846354166666666,
+      "net_food_per_survivor": 0.753600671511792,
+      "cost_admin_per_survivor": 0.02,
+      "loss_transport_per_survivor": 0.010033691547384427
+    },
+    {
+      "setting": "LOSS20",
+      "environment": "PATCHY",
+      "mechanism": "POLICY",
+      "survival": 0.6795518663194443,
+      "viable_teams": 0.6773003472222223,
+      "net_food_per_survivor": 0.7571045392722277,
+      "cost_admin_per_survivor": 0.015,
+      "loss_transport_per_survivor": 0.011457935877254173
+    },
+    {
+      "setting": "LOSS20",
+      "environment": "PATCHY",
+      "mechanism": "FULL_PROXY",
+      "survival": 0.5202094184027778,
+      "viable_teams": 0.5179036458333334,
+      "net_food_per_survivor": 0.7504916416661384,
+      "cost_admin_per_survivor": 0.023000000000000003,
+      "loss_transport_per_survivor": 0.010119378401462093
+    },
+    {
+      "setting": "LOSS20",
+      "environment": "SYSTEMIC",
+      "mechanism": "NONE",
+      "survival": 0.006212022569444445,
+      "viable_teams": 0.006184895833333333,
+      "net_food_per_survivor": 0.7241283191885493,
+      "cost_admin_per_survivor": 0.0,
+      "loss_transport_per_survivor": 0.0
+    },
+    {
+      "setting": "LOSS20",
+      "environment": "SYSTEMIC",
+      "mechanism": "LOCAL",
+      "survival": 0.034749348958333336,
+      "viable_teams": 0.03396267361111111,
+      "net_food_per_survivor": 0.7359280447564641,
+      "cost_admin_per_survivor": 0.004000000000000001,
+      "loss_transport_per_survivor": 0.003480886387251287
+    },
+    {
+      "setting": "LOSS20",
+      "environment": "SYSTEMIC",
+      "mechanism": "GLOBAL",
+      "survival": 0.004665798611111111,
+      "viable_teams": 0.00390625,
+      "net_food_per_survivor": 0.7185231001252886,
+      "cost_admin_per_survivor": 0.008000000000000004,
+      "loss_transport_per_survivor": 0.0006988950315681106
+    },
+    {
+      "setting": "LOSS20",
+      "environment": "SYSTEMIC",
+      "mechanism": "LOCAL_GLOBAL",
+      "survival": 0.02780490451388889,
+      "viable_teams": 0.027235243055555556,
+      "net_food_per_survivor": 0.7288331482769883,
+      "cost_admin_per_survivor": 0.011999999999999997,
+      "loss_transport_per_survivor": 0.003780519945119756
+    },
+    {
+      "setting": "LOSS20",
+      "environment": "SYSTEMIC",
+      "mechanism": "FORECAST",
+      "survival": 0.02004665798611111,
+      "viable_teams": 0.01953125,
+      "net_food_per_survivor": 0.7214757820898906,
+      "cost_admin_per_survivor": 0.02,
+      "loss_transport_per_survivor": 0.0039706189418388625
+    },
+    {
+      "setting": "LOSS20",
+      "environment": "SYSTEMIC",
+      "mechanism": "PLACEBO",
+      "survival": 0.019449869791666668,
+      "viable_teams": 0.018880208333333332,
+      "net_food_per_survivor": 0.7215583684495286,
+      "cost_admin_per_survivor": 0.020000000000000007,
+      "loss_transport_per_survivor": 0.0039619417824723726
+    },
+    {
+      "setting": "LOSS20",
+      "environment": "SYSTEMIC",
+      "mechanism": "POLICY",
+      "survival": 0.022243923611111115,
+      "viable_teams": 0.021592881944444448,
+      "net_food_per_survivor": 0.7257138703204271,
+      "cost_admin_per_survivor": 0.015000000000000001,
+      "loss_transport_per_survivor": 0.003906504490446391
+    },
+    {
+      "setting": "LOSS20",
+      "environment": "SYSTEMIC",
+      "mechanism": "FULL_PROXY",
+      "survival": 0.014756944444444446,
+      "viable_teams": 0.0146484375,
+      "net_food_per_survivor": 0.7184277153318975,
+      "cost_admin_per_survivor": 0.022999999999999996,
+      "loss_transport_per_survivor": 0.004095604733740158
+    },
+    {
+      "setting": "LOW_SUBSISTENCE",
+      "environment": "PATCHY",
+      "mechanism": "NONE",
+      "survival": 0.3526475694444444,
+      "viable_teams": 0.34136284722222227,
+      "net_food_per_survivor": 0.774837795594372,
+      "cost_admin_per_survivor": 0.0,
+      "loss_transport_per_survivor": 0.0
+    },
+    {
+      "setting": "LOW_SUBSISTENCE",
+      "environment": "PATCHY",
+      "mechanism": "LOCAL",
+      "survival": 0.8215060763888888,
+      "viable_teams": 0.8209635416666666,
+      "net_food_per_survivor": 0.7793336740343513,
+      "cost_admin_per_survivor": 0.004,
+      "loss_transport_per_survivor": 0.00017141242306734702
+    },
+    {
+      "setting": "LOW_SUBSISTENCE",
+      "environment": "PATCHY",
+      "mechanism": "GLOBAL",
+      "survival": 0.6673448350694445,
+      "viable_teams": 0.5696614583333334,
+      "net_food_per_survivor": 0.7402698208067379,
+      "cost_admin_per_survivor": 0.007999999999999998,
+      "loss_transport_per_survivor": 0.001970515228214769
+    },
+    {
+      "setting": "LOW_SUBSISTENCE",
+      "environment": "PATCHY",
+      "mechanism": "LOCAL_GLOBAL",
+      "survival": 1.0,
+      "viable_teams": 1.0,
+      "net_food_per_survivor": 0.7702002071234763,
+      "cost_admin_per_survivor": 0.012000000000000009,
+      "loss_transport_per_survivor": 0.0009348325945863805
+    },
+    {
+      "setting": "LOW_SUBSISTENCE",
+      "environment": "PATCHY",
+      "mechanism": "FORECAST",
+      "survival": 1.0,
+      "viable_teams": 1.0,
+      "net_food_per_survivor": 0.7623437791548575,
+      "cost_admin_per_survivor": 0.019999999999999973,
+      "loss_transport_per_survivor": 0.0007912605632053911
+    },
+    {
+      "setting": "LOW_SUBSISTENCE",
+      "environment": "PATCHY",
+      "mechanism": "PLACEBO",
+      "survival": 1.0,
+      "viable_teams": 1.0,
+      "net_food_per_survivor": 0.7623925205082975,
+      "cost_admin_per_survivor": 0.019999999999999973,
+      "loss_transport_per_survivor": 0.0007425192097653348
+    },
+    {
+      "setting": "LOW_SUBSISTENCE",
+      "environment": "PATCHY",
+      "mechanism": "POLICY",
+      "survival": 1.0,
+      "viable_teams": 1.0,
+      "net_food_per_survivor": 0.7670148983589566,
+      "cost_admin_per_survivor": 0.014999999999999986,
+      "loss_transport_per_survivor": 0.0011201413591062175
+    },
+    {
+      "setting": "LOW_SUBSISTENCE",
+      "environment": "PATCHY",
+      "mechanism": "FULL_PROXY",
+      "survival": 1.0,
+      "viable_teams": 1.0,
+      "net_food_per_survivor": 0.7591811013004155,
+      "cost_admin_per_survivor": 0.02299999999999999,
+      "loss_transport_per_survivor": 0.0009539384176473435
+    },
+    {
+      "setting": "LOW_SUBSISTENCE",
+      "environment": "SYSTEMIC",
+      "mechanism": "NONE",
+      "survival": 0.04397243923611111,
+      "viable_teams": 0.03960503472222222,
+      "net_food_per_survivor": 0.7221625541849711,
+      "cost_admin_per_survivor": 0.0,
+      "loss_transport_per_survivor": 0.0
+    },
+    {
+      "setting": "LOW_SUBSISTENCE",
+      "environment": "SYSTEMIC",
+      "mechanism": "LOCAL",
+      "survival": 0.3166775173611111,
+      "viable_teams": 0.3151041666666667,
+      "net_food_per_survivor": 0.7352080319076525,
+      "cost_admin_per_survivor": 0.004000000000000001,
+      "loss_transport_per_survivor": 0.0005616020059043329
+    },
+    {
+      "setting": "LOW_SUBSISTENCE",
+      "environment": "SYSTEMIC",
+      "mechanism": "GLOBAL",
+      "survival": 0.03835720486111111,
+      "viable_teams": 0.033854166666666664,
+      "net_food_per_survivor": 0.7129953083242472,
+      "cost_admin_per_survivor": 0.008000000000000002,
+      "loss_transport_per_survivor": 0.00032213548467094593
+    },
+    {
+      "setting": "LOW_SUBSISTENCE",
+      "environment": "SYSTEMIC",
+      "mechanism": "LOCAL_GLOBAL",
+      "survival": 0.2701280381944445,
+      "viable_teams": 0.2689887152777778,
+      "net_food_per_survivor": 0.7274216623072141,
+      "cost_admin_per_survivor": 0.012000000000000002,
+      "loss_transport_per_survivor": 0.0007397627310433661
+    },
+    {
+      "setting": "LOW_SUBSISTENCE",
+      "environment": "SYSTEMIC",
+      "mechanism": "FORECAST",
+      "survival": 0.22688802083333334,
+      "viable_teams": 0.22558593750000003,
+      "net_food_per_survivor": 0.7196499311762232,
+      "cost_admin_per_survivor": 0.02,
+      "loss_transport_per_survivor": 0.0008174656196031214
+    },
+    {
+      "setting": "LOW_SUBSISTENCE",
+      "environment": "SYSTEMIC",
+      "mechanism": "PLACEBO",
+      "survival": 0.22254774305555558,
+      "viable_teams": 0.22146267361111113,
+      "net_food_per_survivor": 0.7195703583080298,
+      "cost_admin_per_survivor": 0.020000000000000004,
+      "loss_transport_per_survivor": 0.0008158128686044482
+    },
+    {
+      "setting": "LOW_SUBSISTENCE",
+      "environment": "SYSTEMIC",
+      "mechanism": "POLICY",
+      "survival": 0.2518446180555555,
+      "viable_teams": 0.25097656249999994,
+      "net_food_per_survivor": 0.7245825180949242,
+      "cost_admin_per_survivor": 0.015,
+      "loss_transport_per_survivor": 0.0007901722742651404
+    },
+    {
+      "setting": "LOW_SUBSISTENCE",
+      "environment": "SYSTEMIC",
+      "mechanism": "FULL_PROXY",
+      "survival": 0.20857747395833334,
+      "viable_teams": 0.20713975694444445,
+      "net_food_per_survivor": 0.7164981330861527,
+      "cost_admin_per_survivor": 0.022999999999999996,
+      "loss_transport_per_survivor": 0.0008886266188948143
+    },
+    {
+      "setting": "HIGH_SUBSISTENCE",
+      "environment": "PATCHY",
+      "mechanism": "NONE",
+      "survival": 0.009819878472222222,
+      "viable_teams": 0.008680555555555556,
+      "net_food_per_survivor": 0.7702590689721761,
+      "cost_admin_per_survivor": 0.0,
+      "loss_transport_per_survivor": 0.0
+    },
+    {
+      "setting": "HIGH_SUBSISTENCE",
+      "environment": "PATCHY",
+      "mechanism": "LOCAL",
+      "survival": 0.037543402777777776,
+      "viable_teams": 0.03689236111111111,
+      "net_food_per_survivor": 0.7830526459565492,
+      "cost_admin_per_survivor": 0.004,
+      "loss_transport_per_survivor": 0.0006364889790515335
+    },
+    {
+      "setting": "HIGH_SUBSISTENCE",
+      "environment": "PATCHY",
+      "mechanism": "GLOBAL",
+      "survival": 0.002468532986111111,
+      "viable_teams": 0.002061631944444444,
+      "net_food_per_survivor": 0.7572961252986664,
+      "cost_admin_per_survivor": 0.008000000000000002,
+      "loss_transport_per_survivor": 0.001578554765378792
+    },
+    {
+      "setting": "HIGH_SUBSISTENCE",
+      "environment": "PATCHY",
+      "mechanism": "LOCAL_GLOBAL",
+      "survival": 0.022813585069444448,
+      "viable_teams": 0.022243923611111115,
+      "net_food_per_survivor": 0.7742405123726378,
+      "cost_admin_per_survivor": 0.011999999999999999,
+      "loss_transport_per_survivor": 0.0016593141776559985
+    },
+    {
+      "setting": "HIGH_SUBSISTENCE",
+      "environment": "PATCHY",
+      "mechanism": "FORECAST",
+      "survival": 0.01321072048611111,
+      "viable_teams": 0.012803819444444446,
+      "net_food_per_survivor": 0.7676012632039765,
+      "cost_admin_per_survivor": 0.02,
+      "loss_transport_per_survivor": 0.0015064253084465056
+    },
+    {
+      "setting": "HIGH_SUBSISTENCE",
+      "environment": "PATCHY",
+      "mechanism": "PLACEBO",
+      "survival": 0.013563368055555558,
+      "viable_teams": 0.013237847222222224,
+      "net_food_per_survivor": 0.7679503711382787,
+      "cost_admin_per_survivor": 0.02,
+      "loss_transport_per_survivor": 0.0016039045970480652
+    },
+    {
+      "setting": "HIGH_SUBSISTENCE",
+      "environment": "PATCHY",
+      "mechanism": "POLICY",
+      "survival": 0.018636067708333332,
+      "viable_teams": 0.01801215277777778,
+      "net_food_per_survivor": 0.7718046305838161,
+      "cost_admin_per_survivor": 0.015,
+      "loss_transport_per_survivor": 0.0016173250425797747
+    },
+    {
+      "setting": "HIGH_SUBSISTENCE",
+      "environment": "PATCHY",
+      "mechanism": "FULL_PROXY",
+      "survival": 0.011067708333333334,
+      "viable_teams": 0.010633680555555558,
+      "net_food_per_survivor": 0.7655248854950868,
+      "cost_admin_per_survivor": 0.023000000000000003,
+      "loss_transport_per_survivor": 0.0014610687618268104
+    },
+    {
+      "setting": "HIGH_SUBSISTENCE",
+      "environment": "SYSTEMIC",
+      "mechanism": "NONE",
+      "survival": 0.0,
+      "viable_teams": 0.0,
+      "net_food_per_survivor": 0.7260819739060972,
+      "cost_admin_per_survivor": 0.0,
+      "loss_transport_per_survivor": 0.0
+    },
+    {
+      "setting": "HIGH_SUBSISTENCE",
+      "environment": "SYSTEMIC",
+      "mechanism": "LOCAL",
+      "survival": 0.0034722222222222225,
+      "viable_teams": 0.0034722222222222225,
+      "net_food_per_survivor": 0.7495686964208882,
+      "cost_admin_per_survivor": 0.004000000000000003,
+      "loss_transport_per_survivor": 0.0009908630687961992
+    },
+    {
+      "setting": "HIGH_SUBSISTENCE",
+      "environment": "SYSTEMIC",
+      "mechanism": "GLOBAL",
+      "survival": 0.0,
+      "viable_teams": 0.0,
+      "net_food_per_survivor": 0.7192425587306935,
+      "cost_admin_per_survivor": 0.008000000000000004,
+      "loss_transport_per_survivor": 9.438251417070028e-05
+    },
+    {
+      "setting": "HIGH_SUBSISTENCE",
+      "environment": "SYSTEMIC",
+      "mechanism": "LOCAL_GLOBAL",
+      "survival": 0.0016276041666666667,
+      "viable_teams": 0.0016276041666666667,
+      "net_food_per_survivor": 0.7406714249251759,
+      "cost_admin_per_survivor": 0.012000000000000004,
+      "loss_transport_per_survivor": 0.0010051018101344417
+    },
+    {
+      "setting": "HIGH_SUBSISTENCE",
+      "environment": "SYSTEMIC",
+      "mechanism": "FORECAST",
+      "survival": 0.0,
+      "viable_teams": 0.0,
+      "net_food_per_survivor": 0.7309345136896851,
+      "cost_admin_per_survivor": 0.020000000000000004,
+      "loss_transport_per_survivor": 0.0010312173068913295
+    },
+    {
+      "setting": "HIGH_SUBSISTENCE",
+      "environment": "SYSTEMIC",
+      "mechanism": "PLACEBO",
+      "survival": 0.0,
+      "viable_teams": 0.0,
+      "net_food_per_survivor": 0.731200766347461,
+      "cost_admin_per_survivor": 0.020000000000000004,
+      "loss_transport_per_survivor": 0.0010290625243835894
+    },
+    {
+      "setting": "HIGH_SUBSISTENCE",
+      "environment": "SYSTEMIC",
+      "mechanism": "POLICY",
+      "survival": 0.00010850694444444444,
+      "viable_teams": 0.00010850694444444444,
+      "net_food_per_survivor": 0.73773721992943,
+      "cost_admin_per_survivor": 0.015000000000000008,
+      "loss_transport_per_survivor": 0.0010345543225863147
+    },
+    {
+      "setting": "HIGH_SUBSISTENCE",
+      "environment": "SYSTEMIC",
+      "mechanism": "FULL_PROXY",
+      "survival": 0.0,
+      "viable_teams": 0.0,
+      "net_food_per_survivor": 0.7270013551368136,
+      "cost_admin_per_survivor": 0.022999999999999993,
+      "loss_transport_per_survivor": 0.0010251945192947666
+    },
+    {
+      "setting": "SHORT_BUFFER",
+      "environment": "PATCHY",
+      "mechanism": "NONE",
+      "survival": 0.01491970486111111,
+      "viable_teams": 0.01388888888888889,
+      "net_food_per_survivor": 0.7820567540091402,
+      "cost_admin_per_survivor": 0.0,
+      "loss_transport_per_survivor": 0.0
+    },
+    {
+      "setting": "SHORT_BUFFER",
+      "environment": "PATCHY",
+      "mechanism": "LOCAL",
+      "survival": 0.042724609375,
+      "viable_teams": 0.04188368055555555,
+      "net_food_per_survivor": 0.7822699591830985,
+      "cost_admin_per_survivor": 0.004,
+      "loss_transport_per_survivor": 0.00042650812950168865
+    },
+    {
+      "setting": "SHORT_BUFFER",
+      "environment": "PATCHY",
+      "mechanism": "GLOBAL",
+      "survival": 0.047770182291666664,
+      "viable_teams": 0.044596354166666664,
+      "net_food_per_survivor": 0.7606539579166315,
+      "cost_admin_per_survivor": 0.008,
+      "loss_transport_per_survivor": 0.0020873911345644443
+    },
+    {
+      "setting": "SHORT_BUFFER",
+      "environment": "PATCHY",
+      "mechanism": "LOCAL_GLOBAL",
+      "survival": 0.3313259548611111,
+      "viable_teams": 0.3286675347222222,
+      "net_food_per_survivor": 0.769799131669959,
+      "cost_admin_per_survivor": 0.012000000000000002,
+      "loss_transport_per_survivor": 0.00223161447459927
+    },
+    {
+      "setting": "SHORT_BUFFER",
+      "environment": "PATCHY",
+      "mechanism": "FORECAST",
+      "survival": 0.21050347222222224,
+      "viable_teams": 0.20768229166666666,
+      "net_food_per_survivor": 0.7622021853148554,
+      "cost_admin_per_survivor": 0.02,
+      "loss_transport_per_survivor": 0.0019448773342604538
+    },
+    {
+      "setting": "SHORT_BUFFER",
+      "environment": "PATCHY",
+      "mechanism": "PLACEBO",
+      "survival": 0.17735460069444445,
+      "viable_teams": 0.17447916666666666,
+      "net_food_per_survivor": 0.7619402387333696,
+      "cost_admin_per_survivor": 0.020000000000000004,
+      "loss_transport_per_survivor": 0.0021089949647451916
+    },
+    {
+      "setting": "SHORT_BUFFER",
+      "environment": "PATCHY",
+      "mechanism": "POLICY",
+      "survival": 0.2899034288194445,
+      "viable_teams": 0.2875434027777778,
+      "net_food_per_survivor": 0.7670764146200008,
+      "cost_admin_per_survivor": 0.015,
+      "loss_transport_per_survivor": 0.0022420189012402315
+    },
+    {
+      "setting": "SHORT_BUFFER",
+      "environment": "PATCHY",
+      "mechanism": "FULL_PROXY",
+      "survival": 0.18161349826388892,
+      "viable_teams": 0.1792534722222222,
+      "net_food_per_survivor": 0.7594224435382825,
+      "cost_admin_per_survivor": 0.022999999999999996,
+      "loss_transport_per_survivor": 0.0019736275879917746
+    },
+    {
+      "setting": "SHORT_BUFFER",
+      "environment": "SYSTEMIC",
+      "mechanism": "NONE",
+      "survival": 0.0,
+      "viable_teams": 0.0,
+      "net_food_per_survivor": 0.7338773667088953,
+      "cost_admin_per_survivor": 0.0,
+      "loss_transport_per_survivor": 0.0
+    },
+    {
+      "setting": "SHORT_BUFFER",
+      "environment": "SYSTEMIC",
+      "mechanism": "LOCAL",
+      "survival": 0.004584418402777778,
+      "viable_teams": 0.00390625,
+      "net_food_per_survivor": 0.7470553935237535,
+      "cost_admin_per_survivor": 0.004000000000000001,
+      "loss_transport_per_survivor": 0.0008015464335768786
+    },
+    {
+      "setting": "SHORT_BUFFER",
+      "environment": "SYSTEMIC",
+      "mechanism": "GLOBAL",
+      "survival": 0.0,
+      "viable_teams": 0.0,
+      "net_food_per_survivor": 0.7267689707877397,
+      "cost_admin_per_survivor": 0.008000000000000002,
+      "loss_transport_per_survivor": 1.7542839783604658e-05
+    },
+    {
+      "setting": "SHORT_BUFFER",
+      "environment": "SYSTEMIC",
+      "mechanism": "LOCAL_GLOBAL",
+      "survival": 0.0032009548611111114,
+      "viable_teams": 0.0026041666666666665,
+      "net_food_per_survivor": 0.739285909751771,
+      "cost_admin_per_survivor": 0.01200000000000001,
+      "loss_transport_per_survivor": 0.000836787585581011
+    },
+    {
+      "setting": "SHORT_BUFFER",
+      "environment": "SYSTEMIC",
+      "mechanism": "FORECAST",
+      "survival": 0.0029296875,
+      "viable_teams": 0.0026041666666666665,
+      "net_food_per_survivor": 0.732391766248396,
+      "cost_admin_per_survivor": 0.020000000000000018,
+      "loss_transport_per_survivor": 0.0008471548639839514
+    },
+    {
+      "setting": "SHORT_BUFFER",
+      "environment": "SYSTEMIC",
+      "mechanism": "PLACEBO",
+      "survival": 0.0029296875,
+      "viable_teams": 0.0026041666666666665,
+      "net_food_per_survivor": 0.732391766248396,
+      "cost_admin_per_survivor": 0.020000000000000018,
+      "loss_transport_per_survivor": 0.0008471548639839514
+    },
+    {
+      "setting": "SHORT_BUFFER",
+      "environment": "SYSTEMIC",
+      "mechanism": "POLICY",
+      "survival": 0.0032009548611111114,
+      "viable_teams": 0.0026041666666666665,
+      "net_food_per_survivor": 0.7374631366870438,
+      "cost_admin_per_survivor": 0.015000000000000013,
+      "loss_transport_per_survivor": 0.0008780950977964886
+    },
+    {
+      "setting": "SHORT_BUFFER",
+      "environment": "SYSTEMIC",
+      "mechanism": "FULL_PROXY",
+      "survival": 0.0029296875,
+      "viable_teams": 0.0026041666666666665,
+      "net_food_per_survivor": 0.7305358581469198,
+      "cost_admin_per_survivor": 0.022999999999999982,
+      "loss_transport_per_survivor": 0.0008720014157300313
+    },
+    {
+      "setting": "LONG_BUFFER",
+      "environment": "PATCHY",
+      "mechanism": "NONE",
+      "survival": 0.2360297309027778,
+      "viable_teams": 0.22482638888888892,
+      "net_food_per_survivor": 0.7704893679844806,
+      "cost_admin_per_survivor": 0.0,
+      "loss_transport_per_survivor": 0.0
+    },
+    {
+      "setting": "LONG_BUFFER",
+      "environment": "PATCHY",
+      "mechanism": "LOCAL",
+      "survival": 0.6166992187500001,
+      "viable_teams": 0.6152343750000001,
+      "net_food_per_survivor": 0.779557549027292,
+      "cost_admin_per_survivor": 0.004,
+      "loss_transport_per_survivor": 0.00030250334475566263
+    },
+    {
+      "setting": "LONG_BUFFER",
+      "environment": "PATCHY",
+      "mechanism": "GLOBAL",
+      "survival": 0.07476128472222222,
+      "viable_teams": 0.06336805555555557,
+      "net_food_per_survivor": 0.7265562129368082,
+      "cost_admin_per_survivor": 0.007999999999999998,
+      "loss_transport_per_survivor": 0.0021912746515487342
+    },
+    {
+      "setting": "LONG_BUFFER",
+      "environment": "PATCHY",
+      "mechanism": "LOCAL_GLOBAL",
+      "survival": 0.997341579861111,
+      "viable_teams": 0.9971788194444445,
+      "net_food_per_survivor": 0.7697677946460507,
+      "cost_admin_per_survivor": 0.012000000000000004,
+      "loss_transport_per_survivor": 0.001359773135234179
+    },
+    {
+      "setting": "LONG_BUFFER",
+      "environment": "PATCHY",
+      "mechanism": "FORECAST",
+      "survival": 0.9812825520833334,
+      "viable_teams": 0.9810112847222222,
+      "net_food_per_survivor": 0.7617278215375533,
+      "cost_admin_per_survivor": 0.02000000000000001,
+      "loss_transport_per_survivor": 0.0013810686707893354
+    },
+    {
+      "setting": "LONG_BUFFER",
+      "environment": "PATCHY",
+      "mechanism": "PLACEBO",
+      "survival": 0.9733615451388888,
+      "viable_teams": 0.9727647569444445,
+      "net_food_per_survivor": 0.7616252179828552,
+      "cost_admin_per_survivor": 0.020000000000000007,
+      "loss_transport_per_survivor": 0.0014433851558073062
+    },
+    {
+      "setting": "LONG_BUFFER",
+      "environment": "PATCHY",
+      "mechanism": "POLICY",
+      "survival": 0.9935438368055555,
+      "viable_teams": 0.9933810763888888,
+      "net_food_per_survivor": 0.7665221243897281,
+      "cost_admin_per_survivor": 0.014999999999999987,
+      "loss_transport_per_survivor": 0.0015920116450435756
+    },
+    {
+      "setting": "LONG_BUFFER",
+      "environment": "PATCHY",
+      "mechanism": "FULL_PROXY",
+      "survival": 0.9625651041666666,
+      "viable_teams": 0.962131076388889,
+      "net_food_per_survivor": 0.7585352060969647,
+      "cost_admin_per_survivor": 0.023000000000000003,
+      "loss_transport_per_survivor": 0.0015867218230870646
+    },
+    {
+      "setting": "LONG_BUFFER",
+      "environment": "SYSTEMIC",
+      "mechanism": "NONE",
+      "survival": 0.029296875,
+      "viable_teams": 0.025824652777777776,
+      "net_food_per_survivor": 0.718624923210195,
+      "cost_admin_per_survivor": 0.0,
+      "loss_transport_per_survivor": 0.0
+    },
+    {
+      "setting": "LONG_BUFFER",
+      "environment": "SYSTEMIC",
+      "mechanism": "LOCAL",
+      "survival": 0.1334906684027778,
+      "viable_teams": 0.1325954861111111,
+      "net_food_per_survivor": 0.7361117610010485,
+      "cost_admin_per_survivor": 0.004000000000000001,
+      "loss_transport_per_survivor": 0.000748180649899323
+    },
+    {
+      "setting": "LONG_BUFFER",
+      "environment": "SYSTEMIC",
+      "mechanism": "GLOBAL",
+      "survival": 0.024359809027777776,
+      "viable_teams": 0.021050347222222224,
+      "net_food_per_survivor": 0.711818103645062,
+      "cost_admin_per_survivor": 0.008,
+      "loss_transport_per_survivor": 0.0003804455537311524
+    },
+    {
+      "setting": "LONG_BUFFER",
+      "environment": "SYSTEMIC",
+      "mechanism": "LOCAL_GLOBAL",
+      "survival": 0.10601128472222222,
+      "viable_teams": 0.10503472222222222,
+      "net_food_per_survivor": 0.7281481486442694,
+      "cost_admin_per_survivor": 0.011999999999999999,
+      "loss_transport_per_survivor": 0.000929949973295175
+    },
+    {
+      "setting": "LONG_BUFFER",
+      "environment": "SYSTEMIC",
+      "mechanism": "FORECAST",
+      "survival": 0.07948133680555554,
+      "viable_teams": 0.07866753472222222,
+      "net_food_per_survivor": 0.7204359953264752,
+      "cost_admin_per_survivor": 0.020000000000000004,
+      "loss_transport_per_survivor": 0.000958380214876173
+    },
+    {
+      "setting": "LONG_BUFFER",
+      "environment": "SYSTEMIC",
+      "mechanism": "PLACEBO",
+      "survival": 0.07912868923611112,
+      "viable_teams": 0.07834201388888888,
+      "net_food_per_survivor": 0.7205552604960143,
+      "cost_admin_per_survivor": 0.019999999999999997,
+      "loss_transport_per_survivor": 0.0009575576811498319
+    },
+    {
+      "setting": "LONG_BUFFER",
+      "environment": "SYSTEMIC",
+      "mechanism": "POLICY",
+      "survival": 0.0947536892361111,
+      "viable_teams": 0.09342447916666667,
+      "net_food_per_survivor": 0.725333300355801,
+      "cost_admin_per_survivor": 0.014999999999999998,
+      "loss_transport_per_survivor": 0.00099283603037632
+    },
+    {
+      "setting": "LONG_BUFFER",
+      "environment": "SYSTEMIC",
+      "mechanism": "FULL_PROXY",
+      "survival": 0.0710177951388889,
+      "viable_teams": 0.0703125,
+      "net_food_per_survivor": 0.7175028839815315,
+      "cost_admin_per_survivor": 0.023000000000000007,
+      "loss_transport_per_survivor": 0.0010214681772411365
+    }
+  ],
+  "contrasts": [
+    {
+      "setting": "BASE",
+      "environment": "PATCHY",
+      "contrast": "LOCAL_GLOBAL_minus_LOCAL",
+      "effect": 0.5784776475694445,
+      "by_seed": [
+        0.5992838541666667,
+        0.5782877604166667,
+        0.5945638020833334,
+        0.5431315104166667,
+        0.5799153645833334,
+        0.57568359375
+      ],
+      "descriptive_ci95": [
+        0.5629882812500001,
+        0.5912543402777779
+      ]
+    },
+    {
+      "setting": "BASE",
+      "environment": "PATCHY",
+      "contrast": "LOCAL_GLOBAL_minus_NONE",
+      "effect": 0.8352864583333335,
+      "by_seed": [
+        0.8522135416666666,
+        0.8400065104166667,
+        0.8460286458333334,
+        0.8074544270833334,
+        0.8274739583333334,
+        0.8385416666666667
+      ],
+      "descriptive_ci95": [
+        0.8226453993055555,
+        0.8458116319444445
+      ]
+    },
+    {
+      "setting": "BASE",
+      "environment": "PATCHY",
+      "contrast": "FORECAST_minus_LOCAL_GLOBAL",
+      "effect": -0.10986328125000004,
+      "by_seed": [
+        -0.11100260416666663,
+        -0.12125651041666674,
+        -0.11246744791666674,
+        -0.09830729166666663,
+        -0.10514322916666674,
+        -0.11100260416666674
+      ],
+      "descriptive_ci95": [
+        -0.11539713541666673,
+        -0.10392252604166669
+      ]
+    },
+    {
+      "setting": "BASE",
+      "environment": "PATCHY",
+      "contrast": "FORECAST_minus_PLACEBO",
+      "effect": 0.01470269097222219,
+      "by_seed": [
+        0.0205078125,
+        0.0035807291666666297,
+        0.01497395833333326,
+        0.01643880208333337,
+        0.01481119791666663,
+        0.01790364583333326
+      ],
+      "descriptive_ci95": [
+        0.009982638888888859,
+        0.01822916666666663
+      ]
+    },
+    {
+      "setting": "BASE",
+      "environment": "PATCHY",
+      "contrast": "FULL_PROXY_minus_LOCAL_GLOBAL",
+      "effect": -0.17032877604166666,
+      "by_seed": [
+        -0.17643229166666663,
+        -0.17447916666666674,
+        -0.18603515625,
+        -0.1474609375,
+        -0.17154947916666674,
+        -0.166015625
+      ],
+      "descriptive_ci95": [
+        -0.17884657118055558,
+        -0.1598849826388889
+      ]
+    },
+    {
+      "setting": "BASE",
+      "environment": "PATCHY",
+      "contrast": "FULL_PROXY_minus_NONE",
+      "effect": 0.6649576822916666,
+      "by_seed": [
+        0.67578125,
+        0.66552734375,
+        0.6599934895833334,
+        0.6599934895833334,
+        0.6559244791666666,
+        0.6725260416666667
+      ],
+      "descriptive_ci95": [
+        0.6595594618055556,
+        0.6708984375
+      ]
+    },
+    {
+      "setting": "BASE",
+      "environment": "SYSTEMIC",
+      "contrast": "LOCAL_GLOBAL_minus_LOCAL",
+      "effect": -0.009195963541666666,
+      "by_seed": [
+        -0.0006510416666666644,
+        -0.004557291666666664,
+        -0.01595052083333333,
+        -0.013346354166666668,
+        -0.0073242187499999965,
+        -0.013346354166666668
+      ],
+      "descriptive_ci95": [
+        -0.013210720486111112,
+        -0.004720052083333331
+      ]
+    },
+    {
+      "setting": "BASE",
+      "environment": "SYSTEMIC",
+      "contrast": "LOCAL_GLOBAL_minus_NONE",
+      "effect": 0.02785915798611111,
+      "by_seed": [
+        0.044921875,
+        0.025390625,
+        0.03206380208333333,
+        0.020345052083333332,
+        0.022135416666666668,
+        0.022298177083333332
+      ],
+      "descriptive_ci95": [
+        0.022108289930555552,
+        0.035237630208333336
+      ]
+    },
+    {
+      "setting": "BASE",
+      "environment": "SYSTEMIC",
+      "contrast": "FORECAST_minus_LOCAL_GLOBAL",
+      "effect": -0.007975260416666666,
+      "by_seed": [
+        -0.0026041666666666644,
+        -0.018880208333333336,
+        -0.005533854166666664,
+        0.0,
+        -0.013671875,
+        -0.007161458333333332
+      ],
+      "descriptive_ci95": [
+        -0.013237847222222224,
+        -0.003146701388888888
+      ]
+    },
+    {
+      "setting": "BASE",
+      "environment": "SYSTEMIC",
+      "contrast": "FORECAST_minus_PLACEBO",
+      "effect": -0.000732421875,
+      "by_seed": [
+        0.00146484375,
+        -0.002604166666666668,
+        0.0013020833333333356,
+        0.0,
+        -0.00390625,
+        -0.0006510416666666678
+      ],
+      "descriptive_ci95": [
+        -0.0023600260416666674,
+        0.0007595486111111124
+      ]
+    },
+    {
+      "setting": "BASE",
+      "environment": "SYSTEMIC",
+      "contrast": "FULL_PROXY_minus_LOCAL_GLOBAL",
+      "effect": -0.009928385416666666,
+      "by_seed": [
+        -0.006998697916666664,
+        -0.01953125,
+        -0.0048828125,
+        -0.00048828125,
+        -0.014322916666666668,
+        -0.013346354166666666
+      ],
+      "descriptive_ci95": [
+        -0.01486545138888889,
+        -0.004828559027777777
+      ]
+    },
+    {
+      "setting": "BASE",
+      "environment": "SYSTEMIC",
+      "contrast": "FULL_PROXY_minus_NONE",
+      "effect": 0.017930772569444444,
+      "by_seed": [
+        0.037923177083333336,
+        0.005859375,
+        0.027180989583333332,
+        0.019856770833333332,
+        0.0078125,
+        0.008951822916666666
+      ],
+      "descriptive_ci95": [
+        0.009358723958333334,
+        0.02777777777777778
+      ]
+    },
+    {
+      "setting": "HALF_ADMIN",
+      "environment": "PATCHY",
+      "contrast": "LOCAL_GLOBAL_minus_LOCAL",
+      "effect": 0.610378689236111,
+      "by_seed": [
+        0.63427734375,
+        0.6124674479166666,
+        0.6188151041666667,
+        0.5891927083333333,
+        0.6051432291666667,
+        0.6023763020833333
+      ],
+      "descriptive_ci95": [
+        0.599365234375,
+        0.6216905381944445
+      ]
+    },
+    {
+      "setting": "HALF_ADMIN",
+      "environment": "PATCHY",
+      "contrast": "LOCAL_GLOBAL_minus_NONE",
+      "effect": 0.880126953125,
+      "by_seed": [
+        0.89697265625,
+        0.8876953125,
+        0.89013671875,
+        0.8623046875,
+        0.86328125,
+        0.88037109375
+      ],
+      "descriptive_ci95": [
+        0.8695475260416666,
+        0.8902180989583334
+      ]
+    },
+    {
+      "setting": "HALF_ADMIN",
+      "environment": "PATCHY",
+      "contrast": "FORECAST_minus_LOCAL_GLOBAL",
+      "effect": -0.024793836805555542,
+      "by_seed": [
+        -0.02522786458333337,
+        -0.02701822916666663,
+        -0.02408854166666663,
+        -0.02799479166666663,
+        -0.02034505208333337,
+        -0.02408854166666663
+      ],
+      "descriptive_ci95": [
+        -0.026692708333333297,
+        -0.022732204861111122
+      ]
+    },
+    {
+      "setting": "HALF_ADMIN",
+      "environment": "PATCHY",
+      "contrast": "FORECAST_minus_PLACEBO",
+      "effect": 0.016303168402777773,
+      "by_seed": [
+        0.02262369791666663,
+        0.02018229166666663,
+        0.0068359375,
+        0.013671875,
+        0.01611328125,
+        0.01839192708333337
+      ],
+      "descriptive_ci95": [
+        0.012125651041666666,
+        0.020019531249999983
+      ]
+    },
+    {
+      "setting": "HALF_ADMIN",
+      "environment": "PATCHY",
+      "contrast": "FULL_PROXY_minus_LOCAL_GLOBAL",
+      "effect": -0.042887369791666664,
+      "by_seed": [
+        -0.04020182291666674,
+        -0.04622395833333326,
+        -0.0419921875,
+        -0.05045572916666663,
+        -0.03743489583333337,
+        -0.041015625
+      ],
+      "descriptive_ci95": [
+        -0.04660373263888886,
+        -0.039713541666666706
+      ]
+    },
+    {
+      "setting": "HALF_ADMIN",
+      "environment": "PATCHY",
+      "contrast": "FULL_PROXY_minus_NONE",
+      "effect": 0.8372395833333334,
+      "by_seed": [
+        0.8567708333333333,
+        0.8414713541666667,
+        0.84814453125,
+        0.8118489583333334,
+        0.8258463541666666,
+        0.83935546875
+      ],
+      "descriptive_ci95": [
+        0.8248155381944445,
+        0.8484429253472222
+      ]
+    },
+    {
+      "setting": "HALF_ADMIN",
+      "environment": "SYSTEMIC",
+      "contrast": "LOCAL_GLOBAL_minus_LOCAL",
+      "effect": -0.006293402777777779,
+      "by_seed": [
+        -0.0013020833333333356,
+        0.0,
+        -0.016276041666666664,
+        -0.007975260416666671,
+        -0.0030924479166666713,
+        -0.009114583333333332
+      ],
+      "descriptive_ci95": [
+        -0.011067708333333334,
+        -0.002197265625000002
+      ]
+    },
+    {
+      "setting": "HALF_ADMIN",
+      "environment": "SYSTEMIC",
+      "contrast": "LOCAL_GLOBAL_minus_NONE",
+      "effect": 0.031982421875,
+      "by_seed": [
+        0.045572916666666664,
+        0.029947916666666664,
+        0.03515625,
+        0.025553385416666664,
+        0.026529947916666664,
+        0.029134114583333332
+      ],
+      "descriptive_ci95": [
+        0.027343071831597218,
+        0.03792317708333333
+      ]
+    },
+    {
+      "setting": "HALF_ADMIN",
+      "environment": "SYSTEMIC",
+      "contrast": "FORECAST_minus_LOCAL_GLOBAL",
+      "effect": -0.002848307291666664,
+      "by_seed": [
+        -0.0006510416666666644,
+        -0.004557291666666664,
+        -0.0017903645833333287,
+        -0.0017903645833333287,
+        -0.003743489583333332,
+        -0.004557291666666664
+      ],
+      "descriptive_ci95": [
+        -0.003960503472222219,
+        -0.0016818576388888857
+      ]
+    },
+    {
+      "setting": "HALF_ADMIN",
+      "environment": "SYSTEMIC",
+      "contrast": "FORECAST_minus_PLACEBO",
+      "effect": 0.000678168402777778,
+      "by_seed": [
+        0.0,
+        0.0013020833333333322,
+        0.0,
+        -0.00048828125,
+        0.001953125,
+        0.0013020833333333356
+      ],
+      "descriptive_ci95": [
+        -2.7126736111110727e-05,
+        0.0014105902777777773
+      ]
+    },
+    {
+      "setting": "HALF_ADMIN",
+      "environment": "SYSTEMIC",
+      "contrast": "FULL_PROXY_minus_LOCAL_GLOBAL",
+      "effect": -0.0034722222222222203,
+      "by_seed": [
+        -0.0006510416666666644,
+        -0.004557291666666664,
+        -0.00244140625,
+        -0.0048828124999999965,
+        -0.003743489583333332,
+        -0.004557291666666664
+      ],
+      "descriptive_ci95": [
+        -0.004530164930555553,
+        -0.002170138888888887
+      ]
+    },
+    {
+      "setting": "HALF_ADMIN",
+      "environment": "SYSTEMIC",
+      "contrast": "FULL_PROXY_minus_NONE",
+      "effect": 0.028510199652777776,
+      "by_seed": [
+        0.044921875,
+        0.025390625,
+        0.03271484375,
+        0.020670572916666668,
+        0.022786458333333332,
+        0.024576822916666668
+      ],
+      "descriptive_ci95": [
+        0.02289496527777778,
+        0.035807291666666664
+      ]
+    },
+    {
+      "setting": "ZERO_ADMIN",
+      "environment": "PATCHY",
+      "contrast": "LOCAL_GLOBAL_minus_LOCAL",
+      "effect": 0.6185709635416666,
+      "by_seed": [
+        0.6334635416666666,
+        0.62646484375,
+        0.6160481770833333,
+        0.6046549479166667,
+        0.6207682291666666,
+        0.6100260416666667
+      ],
+      "descriptive_ci95": [
+        0.6110297309027778,
+        0.6262749565972222
+      ]
+    },
+    {
+      "setting": "ZERO_ADMIN",
+      "environment": "PATCHY",
+      "contrast": "LOCAL_GLOBAL_minus_NONE",
+      "effect": 0.9039713541666666,
+      "by_seed": [
+        0.9104817708333333,
+        0.91748046875,
+        0.90283203125,
+        0.8922526041666667,
+        0.8922526041666666,
+        0.9085286458333334
+      ],
+      "descriptive_ci95": [
+        0.896728515625,
+        0.9112141927083331
+      ]
+    },
+    {
+      "setting": "ZERO_ADMIN",
+      "environment": "PATCHY",
+      "contrast": "FORECAST_minus_LOCAL_GLOBAL",
+      "effect": 0.002197265625,
+      "by_seed": [
+        0.0032552083333333703,
+        -0.00146484375,
+        0.0048828125,
+        0.004720052083333259,
+        0.0029296875,
+        -0.0011393229166666297
+      ],
+      "descriptive_ci95": [
+        0.00016276041666668517,
+        0.004177517361111087
+      ]
+    },
+    {
+      "setting": "ZERO_ADMIN",
+      "environment": "PATCHY",
+      "contrast": "FORECAST_minus_PLACEBO",
+      "effect": 0.009060329861111086,
+      "by_seed": [
+        0.00732421875,
+        0.00813802083333326,
+        0.00651041666666663,
+        0.01253255208333326,
+        0.00830078125,
+        0.01155598958333337
+      ],
+      "descriptive_ci95": [
+        0.007378472222222192,
+        0.01090494791666661
+      ]
+    },
+    {
+      "setting": "ZERO_ADMIN",
+      "environment": "PATCHY",
+      "contrast": "FULL_PROXY_minus_LOCAL_GLOBAL",
+      "effect": -0.0005696614583333518,
+      "by_seed": [
+        0.0,
+        -0.00341796875,
+        0.0021158854166666297,
+        -0.0008138020833333703,
+        0.0,
+        -0.0013020833333333703
+      ],
+      "descriptive_ci95": [
+        -0.001925998263888895,
+        0.0007052951388888765
+      ]
+    },
+    {
+      "setting": "ZERO_ADMIN",
+      "environment": "PATCHY",
+      "contrast": "FULL_PROXY_minus_NONE",
+      "effect": 0.9034016927083334,
+      "by_seed": [
+        0.9104817708333333,
+        0.9140625,
+        0.9049479166666666,
+        0.8914388020833334,
+        0.8922526041666666,
+        0.9072265625
+      ],
+      "descriptive_ci95": [
+        0.8964572482638888,
+        0.9098849826388888
+      ]
+    },
+    {
+      "setting": "ZERO_ADMIN",
+      "environment": "SYSTEMIC",
+      "contrast": "LOCAL_GLOBAL_minus_LOCAL",
+      "effect": 0.0021158854166666665,
+      "by_seed": [
+        0.001953125,
+        0.0013020833333333356,
+        0.00244140625,
+        -0.001953125,
+        0.0,
+        0.008951822916666664
+      ],
+      "descriptive_ci95": [
+        -0.000244140625,
+        0.005126953124999999
+      ]
+    },
+    {
+      "setting": "ZERO_ADMIN",
+      "environment": "SYSTEMIC",
+      "contrast": "LOCAL_GLOBAL_minus_NONE",
+      "effect": 0.04367404513888889,
+      "by_seed": [
+        0.053385416666666664,
+        0.036458333333333336,
+        0.05615234375,
+        0.0322265625,
+        0.036295572916666664,
+        0.047526041666666664
+      ],
+      "descriptive_ci95": [
+        0.036458333333333336,
+        0.05097113715277777
+      ]
+    },
+    {
+      "setting": "ZERO_ADMIN",
+      "environment": "SYSTEMIC",
+      "contrast": "FORECAST_minus_LOCAL_GLOBAL",
+      "effect": 2.7126736111113037e-05,
+      "by_seed": [
+        0.0,
+        0.0,
+        -0.00048828125,
+        0.0013020833333333356,
+        -0.0013020833333333287,
+        0.0006510416666666713
+      ],
+      "descriptive_ci95": [
+        -0.0006239149305555525,
+        0.0006781684027777797
+      ]
+    },
+    {
+      "setting": "ZERO_ADMIN",
+      "environment": "SYSTEMIC",
+      "contrast": "FORECAST_minus_PLACEBO",
+      "effect": -0.00024414062499999883,
+      "by_seed": [
+        -0.0006510416666666713,
+        0.0032552083333333356,
+        -0.00244140625,
+        0.00032552083333333565,
+        -0.0026041666666666644,
+        0.0006510416666666713
+      ],
+      "descriptive_ci95": [
+        -0.0017361111111111108,
+        0.001383463541666669
+      ]
+    },
+    {
+      "setting": "ZERO_ADMIN",
+      "environment": "SYSTEMIC",
+      "contrast": "FULL_PROXY_minus_LOCAL_GLOBAL",
+      "effect": -0.00043402777777777857,
+      "by_seed": [
+        -0.0026041666666666644,
+        0.0,
+        -0.004557291666666671,
+        0.0021158854166666644,
+        0.0009765625,
+        0.00146484375
+      ],
+      "descriptive_ci95": [
+        -0.002468532986111112,
+        0.001329210069444444
+      ]
+    },
+    {
+      "setting": "ZERO_ADMIN",
+      "environment": "SYSTEMIC",
+      "contrast": "FULL_PROXY_minus_NONE",
+      "effect": 0.04324001736111111,
+      "by_seed": [
+        0.05078125,
+        0.036458333333333336,
+        0.05159505208333333,
+        0.034342447916666664,
+        0.037272135416666664,
+        0.048990885416666664
+      ],
+      "descriptive_ci95": [
+        0.03770616319444444,
+        0.04863823784722222
+      ]
+    },
+    {
+      "setting": "DOUBLE_ADMIN",
+      "environment": "PATCHY",
+      "contrast": "LOCAL_GLOBAL_minus_LOCAL",
+      "effect": 0.4139539930555556,
+      "by_seed": [
+        0.42399088541666663,
+        0.4182942708333333,
+        0.41113281249999994,
+        0.39990234375,
+        0.4138997395833333,
+        0.41650390625
+      ],
+      "descriptive_ci95": [
+        0.4076063368055556,
+        0.41937934027777773
+      ]
+    },
+    {
+      "setting": "DOUBLE_ADMIN",
+      "environment": "PATCHY",
+      "contrast": "LOCAL_GLOBAL_minus_NONE",
+      "effect": 0.6449381510416666,
+      "by_seed": [
+        0.6526692708333333,
+        0.6541341145833334,
+        0.6402994791666666,
+        0.6394856770833334,
+        0.6318359375,
+        0.6512044270833334
+      ],
+      "descriptive_ci95": [
+        0.6381022135416667,
+        0.6509602864583334
+      ]
+    },
+    {
+      "setting": "DOUBLE_ADMIN",
+      "environment": "PATCHY",
+      "contrast": "FORECAST_minus_LOCAL_GLOBAL",
+      "effect": -0.3691677517361111,
+      "by_seed": [
+        -0.38688151041666663,
+        -0.3946940104166667,
+        -0.3826497395833333,
+        -0.333984375,
+        -0.3543294270833333,
+        -0.3624674479166667
+      ],
+      "descriptive_ci95": [
+        -0.38471137152777773,
+        -0.35158962673611116
+      ]
+    },
+    {
+      "setting": "DOUBLE_ADMIN",
+      "environment": "PATCHY",
+      "contrast": "FORECAST_minus_PLACEBO",
+      "effect": -0.009440104166666666,
+      "by_seed": [
+        -0.012532552083333315,
+        -0.011393229166666685,
+        -0.01220703125,
+        0.0006510416666666852,
+        -0.009114583333333315,
+        -0.01204427083333337
+      ],
+      "descriptive_ci95": [
+        -0.012152777777777781,
+        -0.00518120659722221
+      ]
+    },
+    {
+      "setting": "DOUBLE_ADMIN",
+      "environment": "PATCHY",
+      "contrast": "FULL_PROXY_minus_LOCAL_GLOBAL",
+      "effect": -0.48339843749999994,
+      "by_seed": [
+        -0.494140625,
+        -0.4970703125,
+        -0.49755859375,
+        -0.4554036458333333,
+        -0.4765625,
+        -0.4796549479166667
+      ],
+      "descriptive_ci95": [
+        -0.49384223090277785,
+        -0.4699978298611111
+      ]
+    },
+    {
+      "setting": "DOUBLE_ADMIN",
+      "environment": "PATCHY",
+      "contrast": "FULL_PROXY_minus_NONE",
+      "effect": 0.16153971354166666,
+      "by_seed": [
+        0.15852864583333331,
+        0.15706380208333331,
+        0.14274088541666666,
+        0.18408203125,
+        0.1552734375,
+        0.17154947916666663
+      ],
+      "descriptive_ci95": [
+        0.15193684895833334,
+        0.17293294270833334
+      ]
+    },
+    {
+      "setting": "DOUBLE_ADMIN",
+      "environment": "SYSTEMIC",
+      "contrast": "LOCAL_GLOBAL_minus_LOCAL",
+      "effect": -0.014295789930555554,
+      "by_seed": [
+        -0.007649739583333329,
+        -0.021484375,
+        -0.01904296875,
+        -0.0048828125,
+        -0.015625,
+        -0.01708984375
+      ],
+      "descriptive_ci95": [
+        -0.018798828125,
+        -0.009385850694444442
+      ]
+    },
+    {
+      "setting": "DOUBLE_ADMIN",
+      "environment": "SYSTEMIC",
+      "contrast": "LOCAL_GLOBAL_minus_NONE",
+      "effect": 0.015679253472222224,
+      "by_seed": [
+        0.037923177083333336,
+        0.005859375,
+        0.015462239583333332,
+        0.01806640625,
+        0.0078125,
+        0.008951822916666666
+      ],
+      "descriptive_ci95": [
+        0.008626302083333332,
+        0.025526258680555556
+      ]
+    },
+    {
+      "setting": "DOUBLE_ADMIN",
+      "environment": "SYSTEMIC",
+      "contrast": "FORECAST_minus_LOCAL_GLOBAL",
+      "effect": -0.011094835069444446,
+      "by_seed": [
+        -0.026204427083333336,
+        -0.001953125,
+        -0.015625,
+        -0.01025390625,
+        -0.003580729166666666,
+        -0.008951822916666666
+      ],
+      "descriptive_ci95": [
+        -0.01801215277777778,
+        -0.005099826388888888
+      ]
+    },
+    {
+      "setting": "DOUBLE_ADMIN",
+      "environment": "SYSTEMIC",
+      "contrast": "FORECAST_minus_PLACEBO",
+      "effect": 0.0007595486111111111,
+      "by_seed": [
+        0.001953125,
+        0.001302083333333333,
+        0.0,
+        0.001302083333333334,
+        0.0,
+        0.0
+      ],
+      "descriptive_ci95": [
+        0.00021701388888888885,
+        0.001410590277777778
+      ]
+    },
+    {
+      "setting": "DOUBLE_ADMIN",
+      "environment": "SYSTEMIC",
+      "contrast": "FULL_PROXY_minus_LOCAL_GLOBAL",
+      "effect": -0.014675564236111112,
+      "by_seed": [
+        -0.032063802083333336,
+        -0.001953125,
+        -0.015625,
+        -0.016764322916666664,
+        -0.0126953125,
+        -0.008951822916666666
+      ],
+      "descriptive_ci95": [
+        -0.022732204861111115,
+        -0.007866753472222222
+      ]
+    },
+    {
+      "setting": "DOUBLE_ADMIN",
+      "environment": "SYSTEMIC",
+      "contrast": "FULL_PROXY_minus_NONE",
+      "effect": 0.001003689236111111,
+      "by_seed": [
+        0.005859375,
+        0.00390625,
+        -0.00016276041666666782,
+        0.001302083333333334,
+        -0.0048828125,
+        0.0
+      ],
+      "descriptive_ci95": [
+        -0.0017903645833333333,
+        0.0035807291666666665
+      ]
+    },
+    {
+      "setting": "FREE_TRANSFER",
+      "environment": "PATCHY",
+      "contrast": "LOCAL_GLOBAL_minus_LOCAL",
+      "effect": 0.5916341145833334,
+      "by_seed": [
+        0.61474609375,
+        0.5939127604166667,
+        0.6004231770833334,
+        0.56396484375,
+        0.59130859375,
+        0.58544921875
+      ],
+      "descriptive_ci95": [
+        0.5786105685763889,
+        0.6035698784722222
+      ]
+    },
+    {
+      "setting": "FREE_TRANSFER",
+      "environment": "PATCHY",
+      "contrast": "LOCAL_GLOBAL_minus_NONE",
+      "effect": 0.8626302083333334,
+      "by_seed": [
+        0.8792317708333333,
+        0.8680013020833334,
+        0.8728841145833334,
+        0.8395182291666667,
+        0.8513997395833334,
+        0.86474609375
+      ],
+      "descriptive_ci95": [
+        0.8510199652777778,
+        0.87255859375
+      ]
+    },
+    {
+      "setting": "FREE_TRANSFER",
+      "environment": "PATCHY",
+      "contrast": "FORECAST_minus_LOCAL_GLOBAL",
+      "effect": -0.08588324652777778,
+      "by_seed": [
+        -0.08707682291666663,
+        -0.09716796875,
+        -0.08284505208333337,
+        -0.08333333333333337,
+        -0.07568359375,
+        -0.08919270833333326
+      ],
+      "descriptive_ci95": [
+        -0.09114583333333333,
+        -0.08067491319444443
+      ]
+    },
+    {
+      "setting": "FREE_TRANSFER",
+      "environment": "PATCHY",
+      "contrast": "FORECAST_minus_PLACEBO",
+      "effect": 0.015625000000000017,
+      "by_seed": [
+        0.02587890625,
+        0.01595052083333337,
+        0.01285807291666663,
+        0.00406901041666663,
+        0.01725260416666674,
+        0.01774088541666674
+      ],
+      "descriptive_ci95": [
+        0.010223388671875009,
+        0.02069769965277779
+      ]
+    },
+    {
+      "setting": "FREE_TRANSFER",
+      "environment": "PATCHY",
+      "contrast": "FULL_PROXY_minus_LOCAL_GLOBAL",
+      "effect": -0.1437445746527778,
+      "by_seed": [
+        -0.15022786458333326,
+        -0.14892578125,
+        -0.14876302083333337,
+        -0.13102213541666674,
+        -0.13997395833333337,
+        -0.1435546875
+      ],
+      "descriptive_ci95": [
+        -0.14843749999999997,
+        -0.13780381944444448
+      ]
+    },
+    {
+      "setting": "FREE_TRANSFER",
+      "environment": "PATCHY",
+      "contrast": "FULL_PROXY_minus_NONE",
+      "effect": 0.7188856336805557,
+      "by_seed": [
+        0.72900390625,
+        0.7190755208333334,
+        0.72412109375,
+        0.70849609375,
+        0.71142578125,
+        0.72119140625
+      ],
+      "descriptive_ci95": [
+        0.7129991319444445,
+        0.7244194878472223
+      ]
+    },
+    {
+      "setting": "FREE_TRANSFER",
+      "environment": "SYSTEMIC",
+      "contrast": "LOCAL_GLOBAL_minus_LOCAL",
+      "effect": -0.009168836805555554,
+      "by_seed": [
+        -0.0026041666666666644,
+        -0.004557291666666664,
+        -0.01676432291666667,
+        -0.012369791666666664,
+        -0.008138020833333336,
+        -0.010579427083333332
+      ],
+      "descriptive_ci95": [
+        -0.012939453125,
+        -0.005479600694444443
+      ]
+    },
+    {
+      "setting": "FREE_TRANSFER",
+      "environment": "SYSTEMIC",
+      "contrast": "LOCAL_GLOBAL_minus_NONE",
+      "effect": 0.02945963541666666,
+      "by_seed": [
+        0.044921875,
+        0.025390625,
+        0.03450520833333333,
+        0.02099609375,
+        0.0234375,
+        0.027506510416666668
+      ],
+      "descriptive_ci95": [
+        0.02362738715277778,
+        0.03646375868055508
+      ]
+    },
+    {
+      "setting": "FREE_TRANSFER",
+      "environment": "SYSTEMIC",
+      "contrast": "FORECAST_minus_LOCAL_GLOBAL",
+      "effect": -0.005533854166666667,
+      "by_seed": [
+        0.0,
+        -0.012369791666666668,
+        -0.0026041666666666644,
+        -0.0006510416666666678,
+        -0.007161458333333332,
+        -0.010416666666666668
+      ],
+      "descriptive_ci95": [
+        -0.009331597222222224,
+        -0.0018446180555555553
+      ]
+    },
+    {
+      "setting": "FREE_TRANSFER",
+      "environment": "SYSTEMIC",
+      "contrast": "FORECAST_minus_PLACEBO",
+      "effect": 0.0011121961805555553,
+      "by_seed": [
+        0.00146484375,
+        0.003255208333333332,
+        0.001953125,
+        0.0,
+        0.0006510416666666678,
+        -0.0006510416666666678
+      ],
+      "descriptive_ci95": [
+        0.00010850694444444464,
+        0.002170138888888888
+      ]
+    },
+    {
+      "setting": "FREE_TRANSFER",
+      "environment": "SYSTEMIC",
+      "contrast": "FULL_PROXY_minus_LOCAL_GLOBAL",
+      "effect": -0.009602864583333334,
+      "by_seed": [
+        -0.0026041666666666644,
+        -0.01953125,
+        -0.004720052083333336,
+        -0.0011393229166666678,
+        -0.014973958333333332,
+        -0.014648437500000002
+      ],
+      "descriptive_ci95": [
+        -0.015136718749999998,
+        -0.004231770833333334
+      ]
+    },
+    {
+      "setting": "FREE_TRANSFER",
+      "environment": "SYSTEMIC",
+      "contrast": "FULL_PROXY_minus_NONE",
+      "effect": 0.019856770833333332,
+      "by_seed": [
+        0.042317708333333336,
+        0.005859375,
+        0.029785156249999997,
+        0.019856770833333332,
+        0.008463541666666668,
+        0.012858072916666666
+      ],
+      "descriptive_ci95": [
+        0.01052517361111111,
+        0.030653211805555552
+      ]
+    },
+    {
+      "setting": "LOSS20",
+      "environment": "PATCHY",
+      "contrast": "LOCAL_GLOBAL_minus_LOCAL",
+      "effect": 0.4568684895833334,
+      "by_seed": [
+        0.4734700520833333,
+        0.45003255208333337,
+        0.4518229166666667,
+        0.44775390625000006,
+        0.45393880208333337,
+        0.4641927083333333
+      ],
+      "descriptive_ci95": [
+        0.45022243923611116,
+        0.4647081163194445
+      ]
+    },
+    {
+      "setting": "LOSS20",
+      "environment": "PATCHY",
+      "contrast": "LOCAL_GLOBAL_minus_NONE",
+      "effect": 0.6724175347222223,
+      "by_seed": [
+        0.6853841145833333,
+        0.6705729166666667,
+        0.6648763020833334,
+        0.6725260416666667,
+        0.6595052083333334,
+        0.681640625
+      ],
+      "descriptive_ci95": [
+        0.6653645833333334,
+        0.6795247395833334
+      ]
+    },
+    {
+      "setting": "LOSS20",
+      "environment": "PATCHY",
+      "contrast": "FORECAST_minus_LOCAL_GLOBAL",
+      "effect": -0.14301215277777776,
+      "by_seed": [
+        -0.14485677083333326,
+        -0.1484375,
+        -0.1455078125,
+        -0.14029947916666674,
+        -0.13720703125,
+        -0.14176432291666663
+      ],
+      "descriptive_ci95": [
+        -0.14586113823784722,
+        -0.14000108506944445
+      ]
+    },
+    {
+      "setting": "LOSS20",
+      "environment": "PATCHY",
+      "contrast": "FORECAST_minus_PLACEBO",
+      "effect": 0.021213107638888912,
+      "by_seed": [
+        0.03352864583333337,
+        0.00960286458333337,
+        0.01204427083333337,
+        0.01790364583333326,
+        0.03776041666666674,
+        0.01643880208333337
+      ],
+      "descriptive_ci95": [
+        0.01318359375,
+        0.030192057291666703
+      ]
+    },
+    {
+      "setting": "LOSS20",
+      "environment": "PATCHY",
+      "contrast": "FULL_PROXY_minus_LOCAL_GLOBAL",
+      "effect": -0.23177083333333337,
+      "by_seed": [
+        -0.24186197916666663,
+        -0.23323567708333337,
+        -0.23958333333333337,
+        -0.22086588541666674,
+        -0.22819010416666674,
+        -0.22688802083333326
+      ],
+      "descriptive_ci95": [
+        -0.237548828125,
+        -0.22604709201388895
+      ]
+    },
+    {
+      "setting": "LOSS20",
+      "environment": "PATCHY",
+      "contrast": "FULL_PROXY_minus_NONE",
+      "effect": 0.44064670138888884,
+      "by_seed": [
+        0.4435221354166667,
+        0.4373372395833333,
+        0.42529296875,
+        0.45166015624999994,
+        0.43131510416666663,
+        0.4547526041666667
+      ],
+      "descriptive_ci95": [
+        0.43234592013888884,
+        0.44894748263888884
+      ]
+    },
+    {
+      "setting": "LOSS20",
+      "environment": "SYSTEMIC",
+      "contrast": "LOCAL_GLOBAL_minus_LOCAL",
+      "effect": -0.006944444444444443,
+      "by_seed": [
+        -0.0032552083333333287,
+        -0.010416666666666668,
+        -0.005859375,
+        -0.0008138020833333356,
+        -0.013671875,
+        -0.007649739583333332
+      ],
+      "descriptive_ci95": [
+        -0.010389539930555554,
+        -0.0036349826388888877
+      ]
+    },
+    {
+      "setting": "LOSS20",
+      "environment": "SYSTEMIC",
+      "contrast": "LOCAL_GLOBAL_minus_NONE",
+      "effect": 0.021592881944444448,
+      "by_seed": [
+        0.042317708333333336,
+        0.014973958333333332,
+        0.027506510416666668,
+        0.019856770833333332,
+        0.009765625,
+        0.01513671875
+      ],
+      "descriptive_ci95": [
+        0.014078776041666666,
+        0.030761718750000003
+      ]
+    },
+    {
+      "setting": "LOSS20",
+      "environment": "SYSTEMIC",
+      "contrast": "FORECAST_minus_LOCAL_GLOBAL",
+      "effect": -0.007758246527777779,
+      "by_seed": [
+        -0.007161458333333336,
+        -0.009114583333333332,
+        -0.016601562500000003,
+        -0.0048828125,
+        -0.001953125,
+        -0.0068359375
+      ],
+      "descriptive_ci95": [
+        -0.011773003472222224,
+        -0.004503038194444445
+      ]
+    },
+    {
+      "setting": "LOSS20",
+      "environment": "SYSTEMIC",
+      "contrast": "FORECAST_minus_PLACEBO",
+      "effect": 0.0005967881944444442,
+      "by_seed": [
+        0.00048828125,
+        0.0,
+        0.0,
+        0.0017903645833333322,
+        0.0,
+        0.001302083333333333
+      ],
+      "descriptive_ci95": [
+        8.138020833333333e-05,
+        0.0011935763888888883
+      ]
+    },
+    {
+      "setting": "LOSS20",
+      "environment": "SYSTEMIC",
+      "contrast": "FULL_PROXY_minus_LOCAL_GLOBAL",
+      "effect": -0.013047960069444446,
+      "by_seed": [
+        -0.024576822916666668,
+        -0.009114583333333332,
+        -0.021158854166666668,
+        -0.0068359375,
+        -0.001953125,
+        -0.0146484375
+      ],
+      "descriptive_ci95": [
+        -0.01942613389756944,
+        -0.006781684027777779
+      ]
+    },
+    {
+      "setting": "LOSS20",
+      "environment": "SYSTEMIC",
+      "contrast": "FULL_PROXY_minus_NONE",
+      "effect": 0.008544921875,
+      "by_seed": [
+        0.017740885416666668,
+        0.005859375,
+        0.00634765625,
+        0.013020833333333332,
+        0.0078125,
+        0.00048828125
+      ],
+      "descriptive_ci95": [
+        0.00439453125,
+        0.013075086805555558
+      ]
+    },
+    {
+      "setting": "LOW_SUBSISTENCE",
+      "environment": "PATCHY",
+      "contrast": "LOCAL_GLOBAL_minus_LOCAL",
+      "effect": 0.17849392361111113,
+      "by_seed": [
+        0.16650390625,
+        0.18831380208333337,
+        0.18294270833333337,
+        0.18701171875,
+        0.17236328125,
+        0.173828125
+      ],
+      "descriptive_ci95": [
+        0.17209201388888892,
+        0.18478732638888892
+      ]
+    },
+    {
+      "setting": "LOW_SUBSISTENCE",
+      "environment": "PATCHY",
+      "contrast": "LOCAL_GLOBAL_minus_NONE",
+      "effect": 0.6473524305555557,
+      "by_seed": [
+        0.65625,
+        0.64990234375,
+        0.6451822916666667,
+        0.6370442708333333,
+        0.6583658854166667,
+        0.6373697916666667
+      ],
+      "descriptive_ci95": [
+        0.6406521267361112,
+        0.654052734375
+      ]
+    },
+    {
+      "setting": "LOW_SUBSISTENCE",
+      "environment": "PATCHY",
+      "contrast": "FORECAST_minus_LOCAL_GLOBAL",
+      "effect": 0.0,
+      "by_seed": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "descriptive_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "setting": "LOW_SUBSISTENCE",
+      "environment": "PATCHY",
+      "contrast": "FORECAST_minus_PLACEBO",
+      "effect": 0.0,
+      "by_seed": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "descriptive_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "setting": "LOW_SUBSISTENCE",
+      "environment": "PATCHY",
+      "contrast": "FULL_PROXY_minus_LOCAL_GLOBAL",
+      "effect": 0.0,
+      "by_seed": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "descriptive_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "setting": "LOW_SUBSISTENCE",
+      "environment": "PATCHY",
+      "contrast": "FULL_PROXY_minus_NONE",
+      "effect": 0.6473524305555557,
+      "by_seed": [
+        0.65625,
+        0.64990234375,
+        0.6451822916666667,
+        0.6370442708333333,
+        0.6583658854166667,
+        0.6373697916666667
+      ],
+      "descriptive_ci95": [
+        0.6406521267361112,
+        0.654052734375
+      ]
+    },
+    {
+      "setting": "LOW_SUBSISTENCE",
+      "environment": "SYSTEMIC",
+      "contrast": "LOCAL_GLOBAL_minus_LOCAL",
+      "effect": -0.046549479166666664,
+      "by_seed": [
+        -0.056966145833333315,
+        -0.0400390625,
+        -0.048502604166666685,
+        -0.052571614583333315,
+        -0.048665364583333315,
+        -0.03255208333333337
+      ],
+      "descriptive_ci95": [
+        -0.052707248263888874,
+        -0.039822048611111126
+      ]
+    },
+    {
+      "setting": "LOW_SUBSISTENCE",
+      "environment": "SYSTEMIC",
+      "contrast": "LOCAL_GLOBAL_minus_NONE",
+      "effect": 0.22615559895833334,
+      "by_seed": [
+        0.22428385416666666,
+        0.19156901041666666,
+        0.21858723958333331,
+        0.251953125,
+        0.23030598958333334,
+        0.24023437499999997
+      ],
+      "descriptive_ci95": [
+        0.21058485243055555,
+        0.2405327690972222
+      ]
+    },
+    {
+      "setting": "LOW_SUBSISTENCE",
+      "environment": "SYSTEMIC",
+      "contrast": "FORECAST_minus_LOCAL_GLOBAL",
+      "effect": -0.043240017361111105,
+      "by_seed": [
+        -0.05338541666666666,
+        -0.03824869791666666,
+        -0.03466796875,
+        -0.05013020833333334,
+        -0.03173828125000003,
+        -0.05126953124999997
+      ],
+      "descriptive_ci95": [
+        -0.04961480034722221,
+        -0.036458333333333336
+      ]
+    },
+    {
+      "setting": "LOW_SUBSISTENCE",
+      "environment": "SYSTEMIC",
+      "contrast": "FORECAST_minus_PLACEBO",
+      "effect": 0.004340277777777786,
+      "by_seed": [
+        -0.00032552083333331483,
+        0.007161458333333343,
+        0.006022135416666657,
+        0.004231770833333343,
+        0.00048828125,
+        0.008463541666666685
+      ],
+      "descriptive_ci95": [
+        0.0016004774305555618,
+        0.006890190972222233
+      ]
+    },
+    {
+      "setting": "LOW_SUBSISTENCE",
+      "environment": "SYSTEMIC",
+      "contrast": "FULL_PROXY_minus_LOCAL_GLOBAL",
+      "effect": -0.061550564236111126,
+      "by_seed": [
+        -0.07584635416666666,
+        -0.06070963541666666,
+        -0.05452473958333334,
+        -0.07177734375000003,
+        -0.04101562500000003,
+        -0.06542968749999997
+      ],
+      "descriptive_ci95": [
+        -0.07012261284722221,
+        -0.05183919270833335
+      ]
+    },
+    {
+      "setting": "LOW_SUBSISTENCE",
+      "environment": "SYSTEMIC",
+      "contrast": "FULL_PROXY_minus_NONE",
+      "effect": 0.1646050347222222,
+      "by_seed": [
+        0.1484375,
+        0.130859375,
+        0.1640625,
+        0.18017578125,
+        0.18929036458333331,
+        0.1748046875
+      ],
+      "descriptive_ci95": [
+        0.14786783854166666,
+        0.17963324652777776
+      ]
+    },
+    {
+      "setting": "HIGH_SUBSISTENCE",
+      "environment": "PATCHY",
+      "contrast": "LOCAL_GLOBAL_minus_LOCAL",
+      "effect": -0.014729817708333334,
+      "by_seed": [
+        -0.015625000000000003,
+        -0.013671874999999997,
+        -0.011230468749999997,
+        -0.0146484375,
+        -0.0185546875,
+        -0.0146484375
+      ],
+      "descriptive_ci95": [
+        -0.0166015625,
+        -0.01302083333333333
+      ]
+    },
+    {
+      "setting": "HIGH_SUBSISTENCE",
+      "environment": "PATCHY",
+      "contrast": "LOCAL_GLOBAL_minus_NONE",
+      "effect": 0.012993706597222224,
+      "by_seed": [
+        0.011718749999999998,
+        0.01220703125,
+        0.015136718750000002,
+        0.012532552083333334,
+        0.0146484375,
+        0.01171875
+      ],
+      "descriptive_ci95": [
+        0.01193576388888889,
+        0.014105902777777776
+      ]
+    },
+    {
+      "setting": "HIGH_SUBSISTENCE",
+      "environment": "PATCHY",
+      "contrast": "FORECAST_minus_LOCAL_GLOBAL",
+      "effect": -0.009602864583333334,
+      "by_seed": [
+        -0.008138020833333332,
+        -0.007975260416666668,
+        -0.011555989583333334,
+        -0.009602864583333332,
+        -0.010904947916666666,
+        -0.009440104166666666
+      ],
+      "descriptive_ci95": [
+        -0.010660807291666666,
+        -0.008544921875
+      ]
+    },
+    {
+      "setting": "HIGH_SUBSISTENCE",
+      "environment": "PATCHY",
+      "contrast": "FORECAST_minus_PLACEBO",
+      "effect": -0.00035264756944444433,
+      "by_seed": [
+        -0.002115885416666668,
+        -0.001139322916666666,
+        0.00146484375,
+        0.0,
+        -0.0003255208333333322,
+        0.0
+      ],
+      "descriptive_ci95": [
+        -0.0012478298611111117,
+        0.0004882812500000003
+      ]
+    },
+    {
+      "setting": "HIGH_SUBSISTENCE",
+      "environment": "PATCHY",
+      "contrast": "FULL_PROXY_minus_LOCAL_GLOBAL",
+      "effect": -0.011745876736111112,
+      "by_seed": [
+        -0.010091145833333332,
+        -0.009277343750000002,
+        -0.014973958333333334,
+        -0.010579427083333332,
+        -0.013997395833333334,
+        -0.011555989583333334
+      ],
+      "descriptive_ci95": [
+        -0.013454861111111112,
+        -0.010172526041666666
+      ]
+    },
+    {
+      "setting": "HIGH_SUBSISTENCE",
+      "environment": "PATCHY",
+      "contrast": "FULL_PROXY_minus_NONE",
+      "effect": 0.0012478298611111112,
+      "by_seed": [
+        0.001627604166666666,
+        0.002929687499999999,
+        0.00016276041666666782,
+        0.0019531250000000017,
+        0.0006510416666666661,
+        0.0001627604166666661
+      ],
+      "descriptive_ci95": [
+        0.00048828124999999973,
+        0.0020887586805555555
+      ]
+    },
+    {
+      "setting": "HIGH_SUBSISTENCE",
+      "environment": "SYSTEMIC",
+      "contrast": "LOCAL_GLOBAL_minus_LOCAL",
+      "effect": -0.0018446180555555557,
+      "by_seed": [
+        0.0,
+        -0.0032552083333333335,
+        -0.0078125,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "descriptive_ci95": [
+        -0.004448784722222223,
+        0.0
+      ]
+    },
+    {
+      "setting": "HIGH_SUBSISTENCE",
+      "environment": "SYSTEMIC",
+      "contrast": "LOCAL_GLOBAL_minus_NONE",
+      "effect": 0.0016276041666666667,
+      "by_seed": [
+        0.001953125,
+        0.0,
+        0.0,
+        0.0078125,
+        0.0,
+        0.0
+      ],
+      "descriptive_ci95": [
+        0.0,
+        0.004231770833333333
+      ]
+    },
+    {
+      "setting": "HIGH_SUBSISTENCE",
+      "environment": "SYSTEMIC",
+      "contrast": "FORECAST_minus_LOCAL_GLOBAL",
+      "effect": -0.0016276041666666667,
+      "by_seed": [
+        -0.001953125,
+        0.0,
+        0.0,
+        -0.0078125,
+        0.0,
+        0.0
+      ],
+      "descriptive_ci95": [
+        -0.004231770833333333,
+        0.0
+      ]
+    },
+    {
+      "setting": "HIGH_SUBSISTENCE",
+      "environment": "SYSTEMIC",
+      "contrast": "FORECAST_minus_PLACEBO",
+      "effect": 0.0,
+      "by_seed": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "descriptive_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "setting": "HIGH_SUBSISTENCE",
+      "environment": "SYSTEMIC",
+      "contrast": "FULL_PROXY_minus_LOCAL_GLOBAL",
+      "effect": -0.0016276041666666667,
+      "by_seed": [
+        -0.001953125,
+        0.0,
+        0.0,
+        -0.0078125,
+        0.0,
+        0.0
+      ],
+      "descriptive_ci95": [
+        -0.004231770833333333,
+        0.0
+      ]
+    },
+    {
+      "setting": "HIGH_SUBSISTENCE",
+      "environment": "SYSTEMIC",
+      "contrast": "FULL_PROXY_minus_NONE",
+      "effect": 0.0,
+      "by_seed": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "descriptive_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "setting": "SHORT_BUFFER",
+      "environment": "PATCHY",
+      "contrast": "LOCAL_GLOBAL_minus_LOCAL",
+      "effect": 0.2886013454861111,
+      "by_seed": [
+        0.27571614583333337,
+        0.267578125,
+        0.2939453125,
+        0.3063151041666667,
+        0.2825520833333333,
+        0.3055013020833333
+      ],
+      "descriptive_ci95": [
+        0.2769639756944444,
+        0.3000217013888889
+      ]
+    },
+    {
+      "setting": "SHORT_BUFFER",
+      "environment": "PATCHY",
+      "contrast": "LOCAL_GLOBAL_minus_NONE",
+      "effect": 0.31640625000000006,
+      "by_seed": [
+        0.30452473958333337,
+        0.2903645833333333,
+        0.32682291666666663,
+        0.33138020833333337,
+        0.3160807291666667,
+        0.3292643229166667
+      ],
+      "descriptive_ci95": [
+        0.3036838107638889,
+        0.32731119791666674
+      ]
+    },
+    {
+      "setting": "SHORT_BUFFER",
+      "environment": "PATCHY",
+      "contrast": "FORECAST_minus_LOCAL_GLOBAL",
+      "effect": -0.1208224826388889,
+      "by_seed": [
+        -0.11930338541666669,
+        -0.12662760416666666,
+        -0.11897786458333331,
+        -0.11702473958333334,
+        -0.11800130208333334,
+        -0.125
+      ],
+      "descriptive_ci95": [
+        -0.12375217013888888,
+        -0.1181098090277778
+      ]
+    },
+    {
+      "setting": "SHORT_BUFFER",
+      "environment": "PATCHY",
+      "contrast": "FORECAST_minus_PLACEBO",
+      "effect": 0.033148871527777776,
+      "by_seed": [
+        0.018717447916666657,
+        0.023600260416666685,
+        0.0390625,
+        0.0390625,
+        0.04020182291666666,
+        0.03824869791666666
+      ],
+      "descriptive_ci95": [
+        0.02617730034722222,
+        0.03930664062499999
+      ]
+    },
+    {
+      "setting": "SHORT_BUFFER",
+      "environment": "PATCHY",
+      "contrast": "FULL_PROXY_minus_LOCAL_GLOBAL",
+      "effect": -0.1497124565972222,
+      "by_seed": [
+        -0.14827473958333334,
+        -0.15055338541666666,
+        -0.15071614583333331,
+        -0.14388020833333334,
+        -0.14078776041666666,
+        -0.1640625
+      ],
+      "descriptive_ci95": [
+        -0.15616929796006945,
+        -0.1444769965277778
+      ]
+    },
+    {
+      "setting": "SHORT_BUFFER",
+      "environment": "PATCHY",
+      "contrast": "FULL_PROXY_minus_NONE",
+      "effect": 0.1666937934027778,
+      "by_seed": [
+        0.15625,
+        0.13981119791666669,
+        0.17610677083333334,
+        0.1875,
+        0.17529296875,
+        0.16520182291666666
+      ],
+      "descriptive_ci95": [
+        0.15394422743055558,
+        0.17816840277777776
+      ]
+    },
+    {
+      "setting": "SHORT_BUFFER",
+      "environment": "SYSTEMIC",
+      "contrast": "LOCAL_GLOBAL_minus_LOCAL",
+      "effect": -0.0013834635416666667,
+      "by_seed": [
+        -0.00048828125,
+        0.0,
+        -0.0078125,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "descriptive_ci95": [
+        -0.003987630208333333,
+        0.0
+      ]
+    },
+    {
+      "setting": "SHORT_BUFFER",
+      "environment": "SYSTEMIC",
+      "contrast": "LOCAL_GLOBAL_minus_NONE",
+      "effect": 0.0032009548611111114,
+      "by_seed": [
+        0.0,
+        0.0,
+        0.0078125,
+        0.0078125,
+        0.0035807291666666665,
+        0.0
+      ],
+      "descriptive_ci95": [
+        0.0005967881944444444,
+        0.005805121527777779
+      ]
+    },
+    {
+      "setting": "SHORT_BUFFER",
+      "environment": "SYSTEMIC",
+      "contrast": "FORECAST_minus_LOCAL_GLOBAL",
+      "effect": -0.00027126736111111107,
+      "by_seed": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.0016276041666666665,
+        0.0
+      ],
+      "descriptive_ci95": [
+        -0.0008138020833333334,
+        0.0
+      ]
+    },
+    {
+      "setting": "SHORT_BUFFER",
+      "environment": "SYSTEMIC",
+      "contrast": "FORECAST_minus_PLACEBO",
+      "effect": 0.0,
+      "by_seed": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "descriptive_ci95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "setting": "SHORT_BUFFER",
+      "environment": "SYSTEMIC",
+      "contrast": "FULL_PROXY_minus_LOCAL_GLOBAL",
+      "effect": -0.00027126736111111107,
+      "by_seed": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.0016276041666666665,
+        0.0
+      ],
+      "descriptive_ci95": [
+        -0.0008138020833333334,
+        0.0
+      ]
+    },
+    {
+      "setting": "SHORT_BUFFER",
+      "environment": "SYSTEMIC",
+      "contrast": "FULL_PROXY_minus_NONE",
+      "effect": 0.0029296875,
+      "by_seed": [
+        0.0,
+        0.0,
+        0.0078125,
+        0.0078125,
+        0.001953125,
+        0.0
+      ],
+      "descriptive_ci95": [
+        0.0003255208333333333,
+        0.005533854166666667
+      ]
+    },
+    {
+      "setting": "LONG_BUFFER",
+      "environment": "PATCHY",
+      "contrast": "LOCAL_GLOBAL_minus_LOCAL",
+      "effect": 0.3806423611111111,
+      "by_seed": [
+        0.36311848958333337,
+        0.38818359375,
+        0.39567057291666663,
+        0.38834635416666663,
+        0.37890625,
+        0.36962890625
+      ],
+      "descriptive_ci95": [
+        0.3714735243055556,
+        0.3891872829861111
+      ]
+    },
+    {
+      "setting": "LONG_BUFFER",
+      "environment": "PATCHY",
+      "contrast": "LOCAL_GLOBAL_minus_NONE",
+      "effect": 0.7613118489583334,
+      "by_seed": [
+        0.771484375,
+        0.7721354166666666,
+        0.7613932291666666,
+        0.7486979166666666,
+        0.7586263020833334,
+        0.7555338541666667
+      ],
+      "descriptive_ci95": [
+        0.7547471788194445,
+        0.7678765190972222
+      ]
+    },
+    {
+      "setting": "LONG_BUFFER",
+      "environment": "PATCHY",
+      "contrast": "FORECAST_minus_LOCAL_GLOBAL",
+      "effect": -0.016059027777777773,
+      "by_seed": [
+        -0.00439453125,
+        -0.01643880208333337,
+        -0.01497395833333326,
+        -0.0205078125,
+        -0.0234375,
+        -0.0166015625
+      ],
+      "descriptive_ci95": [
+        -0.020372178819444437,
+        -0.010877821180555544
+      ]
+    },
+    {
+      "setting": "LONG_BUFFER",
+      "environment": "PATCHY",
+      "contrast": "FORECAST_minus_PLACEBO",
+      "effect": 0.007921006944444475,
+      "by_seed": [
+        0.00813802083333337,
+        0.01025390625,
+        0.0017903645833333703,
+        0.01009114583333337,
+        0.004557291666666741,
+        0.0126953125
+      ],
+      "descriptive_ci95": [
+        0.00496419270833337,
+        0.01068793402777779
+      ]
+    },
+    {
+      "setting": "LONG_BUFFER",
+      "environment": "PATCHY",
+      "contrast": "FULL_PROXY_minus_LOCAL_GLOBAL",
+      "effect": -0.034776475694444454,
+      "by_seed": [
+        -0.01692708333333337,
+        -0.041015625,
+        -0.02897135416666663,
+        -0.04052734375,
+        -0.0439453125,
+        -0.03727213541666674
+      ],
+      "descriptive_ci95": [
+        -0.041259765625,
+        -0.026828342013888912
+      ]
+    },
+    {
+      "setting": "LONG_BUFFER",
+      "environment": "PATCHY",
+      "contrast": "FULL_PROXY_minus_NONE",
+      "effect": 0.7265353732638888,
+      "by_seed": [
+        0.7545572916666666,
+        0.7311197916666666,
+        0.732421875,
+        0.7081705729166666,
+        0.7146809895833334,
+        0.71826171875
+      ],
+      "descriptive_ci95": [
+        0.7152506510416666,
+        0.7394476996527777
+      ]
+    },
+    {
+      "setting": "LONG_BUFFER",
+      "environment": "SYSTEMIC",
+      "contrast": "LOCAL_GLOBAL_minus_LOCAL",
+      "effect": -0.027479383680555552,
+      "by_seed": [
+        -0.018880208333333343,
+        -0.04817708333333334,
+        -0.008626302083333315,
+        -0.03238932291666667,
+        -0.03011067708333333,
+        -0.02669270833333333
+      ],
+      "descriptive_ci95": [
+        -0.037272135416666664,
+        -0.017876519097222213
+      ]
+    },
+    {
+      "setting": "LONG_BUFFER",
+      "environment": "SYSTEMIC",
+      "contrast": "LOCAL_GLOBAL_minus_NONE",
+      "effect": 0.07671440972222222,
+      "by_seed": [
+        0.06103515625,
+        0.0625,
+        0.10872395833333334,
+        0.0751953125,
+        0.05859375,
+        0.09423828125
+      ],
+      "descriptive_ci95": [
+        0.06282552083333333,
+        0.09271918402777779
+      ]
+    },
+    {
+      "setting": "LONG_BUFFER",
+      "environment": "SYSTEMIC",
+      "contrast": "FORECAST_minus_LOCAL_GLOBAL",
+      "effect": -0.02652994791666667,
+      "by_seed": [
+        -0.03580729166666667,
+        -0.013671875,
+        -0.035156250000000014,
+        -0.018880208333333343,
+        -0.029296875,
+        -0.0263671875
+      ],
+      "descriptive_ci95": [
+        -0.03282335069444445,
+        -0.01985677083333334
+      ]
+    },
+    {
+      "setting": "LONG_BUFFER",
+      "environment": "SYSTEMIC",
+      "contrast": "FORECAST_minus_PLACEBO",
+      "effect": 0.0003526475694444406,
+      "by_seed": [
+        0.0013020833333333287,
+        0.0013020833333333287,
+        -0.0013020833333333426,
+        -0.0006510416666666713,
+        0.0,
+        0.00146484375
+      ],
+      "descriptive_ci95": [
+        -0.000542534722222226,
+        0.0011393229166666644
+      ]
+    },
+    {
+      "setting": "LONG_BUFFER",
+      "environment": "SYSTEMIC",
+      "contrast": "FULL_PROXY_minus_LOCAL_GLOBAL",
+      "effect": -0.034993489583333336,
+      "by_seed": [
+        -0.04833984375,
+        -0.0185546875,
+        -0.04166666666666667,
+        -0.03336588541666667,
+        -0.03466796875,
+        -0.03336588541666666
+      ],
+      "descriptive_ci95": [
+        -0.042236328125,
+        -0.027560763888888885
+      ]
+    },
+    {
+      "setting": "LONG_BUFFER",
+      "environment": "SYSTEMIC",
+      "contrast": "FULL_PROXY_minus_NONE",
+      "effect": 0.04172092013888889,
+      "by_seed": [
+        0.0126953125,
+        0.0439453125,
+        0.06705729166666667,
+        0.04182942708333333,
+        0.02392578125,
+        0.060872395833333336
+      ],
+      "descriptive_ci95": [
+        0.02634006076388889,
+        0.05678032769097187
+      ]
+    }
+  ],
+  "predefined_questions": {
+    "Q53b1_local_global_positive_vs_local_in_at_least_8of10_PATCHY": true,
+    "Q53b2_zero_admin_forecast_more_viable_in_patchy": true,
+    "Q53b3_full_proxy_strictly_best_in_any_setting": false,
+    "Q53b4_forecast_beats_placebo_in_all_settings": false
+  },
+  "sha256": {
+    "PREREG_V53B_SENSITIVITY.md": "81de0cd5dbaedbbd8c8693795924da3ed4248184475007bb0582ace35bbd861c",
+    "v53b_sensitivity.py": "006e31a541c9a359912ddb1828091c4e437d38f5585071bf2607746833118453",
+    "test_v53b_sensitivity.py": "f32b78172d606f19f98b29e6d8e678c51638e92f4b1a39b2e95ffc8b2fceb4b8",
+    "v53b_summarize.py": "7adfb8f2935fc3d34451137e6b29d125f4ddbef20d8a602b869c7ebf74249a1c"
+  },
+  "total_worlds": 122880,
+  "base_exactly_reconciled_to_v53": true,
+  "sensitivity": "One factor at a time, mechanisms designed externally, no emergent governance"
+}
