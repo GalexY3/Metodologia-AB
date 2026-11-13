@@ -1,0 +1,23 @@
+{
+  "name": "v46_Q95_LOOK1_s4111",
+  "seed": 4111,
+  "method": "LOOK",
+  "alpha": 1.0,
+  "q": 0.95,
+  "updates": 1000,
+  "lr": 0.03,
+  "device": "cpu",
+  "save_every": 200,
+  "n": 48,
+  "n_pairs": 24,
+  "cost": 0.04,
+  "value": 0.18333333333333335,
+  "food_base": 0.2,
+  "gamma": 0.995,
+  "horizon": 48,
+  "training_objective": "own exact discounted food return",
+  "opponent_gradient": "private opponent payoff; no shared objective",
+  "opponents": "paired permanent; distinct individual parameter vectors",
+  "contract_rule": false,
+  "teacher": false
+}
