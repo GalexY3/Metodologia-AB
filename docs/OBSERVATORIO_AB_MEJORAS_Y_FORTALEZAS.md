@@ -299,3 +299,27 @@ Fuente verificable: `GalexY3/proyecto-LARP` / `docs/AB06_REALDATA_20261022/LEDGE
 **Procedencia:** `GalexY3/proyecto-LARP`, rama `research/evidence-gate-20261022`, `research/EVIDENCE_GATE_20261022/NOTA_AB_METHOD.md`. Los métodos COSI y POWER_DIAG ofrecen distinto ranking con media fija y con Ridge sobre cuatro escenas físicas monocromas (canales derivados, no estaciones independientes). El selector llamado GP tenía un número efectivo de candidatos inferior al parámetro nominal por emplear `Sobol.random_base2(7)`. Una reparación ex post amplió a 576 ubicaciones por rol, pero no constituye confirmación nueva ni benchmarking contra el estado del arte.
 
 **Propuesta:** declarar estimando y predictor conjuntamente antes de seleccionar posiciones; contar candidatos únicos efectivamente evaluados por tipo; equiparar cantidad de datos, readout y presupuesto; etiquetar ampliaciones después de abrir test como `REPAIR_POST_HOC` y no como nueva confirmación. **Falsador/coste:** si el estimando solo exige cuadratura fija, no se precisa entrenamiento de predictors complejos; el checklist puede ser redundante con AB-M021/M024/M030. **Estado:** PROPUESTA, sin cambio normativo AB 3.2.1, eficacia metodológica no validada.
+
+
+---
+
+## AB-M038–M042 — Aprendizaje de PaperOrchestra (14-11-2026)
+
+**Fuente:** Yiwen Song et al. (2026), PaperOrchestra, código oficial https://github.com/google-research/paper-orchestra ; auditoría propia de AB 3.2.1/O7. **Estado:** propuestas implementadas como PILOTOS TÉCNICOS, eficacia metodológica comparada NO_VALIDADA. Ver [informe completo](AB_M038_M042_PAPERORCHESTRA_PILOTOS_20261114.md) y [código](../ab_tools/README.md). No se modifican normas ni priors anteriores.
+
+### AB-M038 — Literatura adversarial y verificación de metadatos
+**Propuesta:** planificar búsquedas por hipótesis, rivales, novedad y metodologías; recuperar y deduplicar registros de OpenAlex/Semantic Scholar; conservar evaluación de pasaje y localizador. **Falsador/coste:** comparar con búsqueda competente si la mejora de recall de contraevidencia y de antecedentes compensa latencia y falsos positivos. La mera existencia de citas no prueba el contenido. Estado PILOTO.
+
+### AB-M039 — Contratos ejecutables de roles
+**Propuesta:** artefactos de entrada/salida por rol, orden de dependencias, revisión por distinto identificador y registro hash. **Falsador/coste:** comparar con un investigador/LLM competente trabajando sin roles separados; medir error, latencia, tokens y duplicación de pasos. Un role ID separado no garantiza independencia epistémica. Estado PILOTO.
+
+### AB-M040 — Proveniencia granular de afirmaciones
+**Propuesta:** ligar cada afirmación a archivos o fuentes, localizadores, contradicciones y revisores; verificar integridad de bytes; exportar como nodos no validados mediante el esquema de deltas Atlas ya existente. **Falsador/coste:** inyectar errores y medir detección y tiempo de auditoría. El hash no valida la verdad. Estado PILOTO.
+
+### AB-M041 — Revisión científica separada de la editorial
+**Propuesta:** cinco gates científicos y posterior comparación de revisiones editoriales con campos de evidencia congelados, control heurístico de números/citas y decisión conservadora. **Falsador/coste:** versiones con cambios semánticos y estadísticos; medir falsas aceptaciones. No maximizar puntuaciones de revisores automáticos ni considerar equivalencia semántica una igualdad de tokens. Estado PILOTO.
+
+### AB-M042 — Ablaciones y evaluación pareada AB-META
+**Propuesta:** analizador por caso independiente con IC bootstrap, permutación de signos y control de coste, presupuesto y modelo. Complementa pero no ejecuta AB-E2E-01. **Falsador/coste:** comprobar en estudios reales con brazos aislados y grader ciego si cada intervención mejora el estimando preregistrado; corregir multiplicidad y selección. Estado PILOTO.
+
+**Decisión provisional:** conservar reversiblemente los prototipos sujetos a pruebas técnicas, sin promoverlos a AB 3.3 o priors A ni incrementar CT2 por sus tests. Reconsiderar con comparadores competentes bajo AB-META.

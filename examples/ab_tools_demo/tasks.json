@@ -1,0 +1,60 @@
+[
+  {
+    "id": "H01",
+    "role": "proposer",
+    "depends_on": [],
+    "status": "pending"
+  },
+  {
+    "id": "L01",
+    "role": "librarian",
+    "depends_on": [
+      "H01"
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "D01",
+    "role": "designer",
+    "depends_on": [
+      "H01",
+      "L01"
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "I01",
+    "role": "implementer",
+    "depends_on": [
+      "D01"
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "A01",
+    "role": "auditor",
+    "depends_on": [
+      "I01"
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "S01",
+    "role": "analyst",
+    "depends_on": [
+      "I01",
+      "A01"
+    ],
+    "status": "pending"
+  },
+  {
+    "id": "J01",
+    "role": "coordinator",
+    "depends_on": [
+      "L01",
+      "A01",
+      "S01"
+    ],
+    "status": "pending"
+  }
+]
