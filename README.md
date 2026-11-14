@@ -15,6 +15,10 @@ Repositorio de la metodología de investigación abductivo-bayesiana **AB**, sus
 
 **[AB 3.2.1-O7 — Grafo universal, modos de proyecto y autocrítica recursiva](docs/AB_3_2_1_O7_GRAFO_UNIVERSAL_MODOS_Y_AUTOCRITICA.md)**: toda nueva iniciativa AB debe empezar, bajo el piloto, con un grafo JSON versionado y una vista interactiva; AB-R investiga, AB-P desarrolla productos, AB-H combina sin mezclar evidencias y AB-META evalúa la propia metodología. Cada ejecución tiene recibo ligero y complaints opcionales. **AB puede modificarse, revertirse o reemplazarse**; O7 no acredita mayor eficacia, ni modifica retrospectivamente las campañas existentes. El prototipo externo aún requiere validación visual, integración con repositorios y evaluación frente a alternativas competentes.
 
+## Pilotos M038–M042 · aprendizaje de PaperOrchestra (14/11/2026)
+
+Se han añadido herramientas **experimentales y optativas** de revisión bibliográfica adversarial, contratos entre agentes, trazabilidad afirmación–evidencia, separación entre revisión científica/editorial y análisis comparativo de ablaciones. El código y los ejemplos están en [ab_tools/README.md](ab_tools/README.md); la procedencia, propuestas, falsadores y limitaciones en [AB-M038–M042](docs/AB_M038_M042_PAPERORCHESTRA_PILOTOS_20261114.md). Hay tests de ingeniería, **NO** resultados científicos que demuestren mejora de AB. No cambia AB 3.2.1, O1–O7, CT2 ni grados 0–3.
+
 ## Por dónde empezar
 
 1. [AB 3.2.1 — protocolo central](docs/METODO_AB_3_2_1.md), revisión provisional del **19 de octubre de 2026**. Describe R1–R5, el ciclo A–J, roles, registro mínimo y límites de las conclusiones. Texto recuperado de Drive el 22 de octubre; [procedencia y SHA-256](docs/METODO_AB_3_2_1.provenance.json).

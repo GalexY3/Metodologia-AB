@@ -1,0 +1,11 @@
+# Python local byproducts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+# Generated pilot outputs, kept out of scientific source control
+demo_workflow.json
+demo_comparison.json
+demo_ablations.json
+smoke_*.json
