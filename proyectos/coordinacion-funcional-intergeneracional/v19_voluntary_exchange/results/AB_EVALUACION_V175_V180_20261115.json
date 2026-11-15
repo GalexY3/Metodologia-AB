@@ -1,0 +1,51 @@
+{
+  "method": "AB3.2.1",
+  "date": "2026-11-15",
+  "canonical_branch_id": "B-heterogeneidad-reciprocidad-funciones",
+  "canonical_CT2_historical": 61,
+  "new_ecological_branch_score": null,
+  "N1": "NOT_AUDITED",
+  "N2": 0,
+  "N3": 0,
+  "no_score_increase": true,
+  "rationale": "Failed high-capacity memory, Pareto-trap, affine-private, maintenance-collapse and destructive-invasion gates; human direct contrast inconclusive. Reproducibility and TFM improved, independent novel prediction not confirmed.",
+  "technical_audit": "results/V175_V180_FINAL_AUDIT.json",
+  "scientific_failures": [
+    {
+      "study": "V175",
+      "criterion": "Generic private memory Q>=.70 in both seeds",
+      "outcome": "failed2/2; full-information RNN diagnostic also failed2/2"
+    },
+    {
+      "study": "V176",
+      "criterion": "High capacity without variable sensory input",
+      "outcome": "failed; recurrence helps private policies but does not remove need for private feedback"
+    },
+    {
+      "study": "V177",
+      "criterion": "Strong ex-post Pareto trap in >=50% groups in both full-RNN populations",
+      "outcome": "failed:0% and4.296875%"
+    },
+    {
+      "study": "V178",
+      "criterion": "Affine private >=.70 in6/8 and median gain>=.20",
+      "outcome": "failed0/8; M16 cancelled as preregistered"
+    },
+    {
+      "study": "V180",
+      "criterion": "Maintenance collapse in>=6/8",
+      "outcome": "failed1/8; retained heterogeneity"
+    },
+    {
+      "study": "V180",
+      "criterion": "Common destructive profitable bias in four held-out populations",
+      "outcome": "failed; minimax screen selected b=0"
+    },
+    {
+      "study": "V179",
+      "criterion": "Human government-public effect difference established",
+      "outcome": "not established; contrast post hoc, CI95[-.09993,.48926]"
+    }
+  ],
+  "goal_status": "active; excellent TFM and original contribution still require work"
+}

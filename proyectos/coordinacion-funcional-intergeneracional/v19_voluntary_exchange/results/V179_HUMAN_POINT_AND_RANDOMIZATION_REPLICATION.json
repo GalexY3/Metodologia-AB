@@ -1,0 +1,141 @@
+{
+  "study": "V179_EXISTING_HUMAN_RESULT_REPLICATION",
+  "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8307295/",
+  "original_zip_sha256": "e67848f5759d2ed8d3746a4d9dc1ce2192e977b22f0f86ae3ce12e9ec8182ffa",
+  "source_sha256": "5e69f9ef35618f2c277f66ef163b4a4de2f2e6314bcd73a049147d941a843e0d",
+  "limits": {
+    "pid": 17780,
+    "priority": "BelowNormal",
+    "priority_code": 16384,
+    "affinity": 16515072,
+    "numba_threads": 3
+  },
+  "grain": {
+    "rows": 320,
+    "waterways": 160,
+    "audits_per_waterway": 2,
+    "duplicate_keys": 0,
+    "treatment_changed_within_waterway": false,
+    "arm_counts": [
+      {
+        "government": 0,
+        "public": 0,
+        "waterways": 80
+      },
+      {
+        "government": 0,
+        "public": 1,
+        "waterways": 20
+      },
+      {
+        "government": 1,
+        "public": 0,
+        "waterways": 20
+      },
+      {
+        "government": 1,
+        "public": 1,
+        "waterways": 40
+      }
+    ],
+    "raw_rows": 358,
+    "raw_waterways": 179,
+    "raw_missing_in_used_variables": {
+      "m1_qual.noDO": 0,
+      "m1b_qual": 0,
+      "c1_pre.a_m1": 0,
+      "c2_pre.b_m1": 0,
+      "c3_temp_m1": 0
+    },
+    "covariate_imputation": "Authors use city means for missing covariates; outcomes not filled by our code."
+  },
+  "estimates": [
+    {
+      "contrast": "government",
+      "estimate": 0.19153182491405044,
+      "se_CR2": 0.09013402949389344,
+      "df_Satterthwaite": 64.01695367681755,
+      "ci95": [
+        0.011469319724881327,
+        0.3715943301032195
+      ],
+      "p_two_sided": 0.03745517471130607
+    },
+    {
+      "contrast": "public",
+      "estimate": -0.0031348342160126747,
+      "se_CR2": 0.07842460698888792,
+      "df_Satterthwaite": 62.8688288089071,
+      "ci95": [
+        -0.15986030535076948,
+        0.1535906369187441
+      ],
+      "p_two_sided": 0.9682416525352501
+    },
+    {
+      "contrast": "government_minus_public",
+      "estimate": 0.19466665913006312,
+      "se_CR2": 0.1456346563731853,
+      "df_Satterthwaite": 38.926244660902505,
+      "ci95": [
+        -0.09992508432629152,
+        0.48925840258641773
+      ],
+      "p_two_sided": 0.18908818952118311
+    }
+  ],
+  "exact_export_checks": [
+    {
+      "contrast": "government",
+      "published_estimate_4dp": 0.1915,
+      "point_error": 3.182491405043231e-05,
+      "published_se_4dp": 0.0901,
+      "se_error": 3.4029493893444895e-05,
+      "ci_max_error": 8.72565908416334e-16
+    },
+    {
+      "contrast": "public",
+      "published_estimate_4dp": -0.0031,
+      "point_error": 3.483421601267484e-05,
+      "published_se_4dp": 0.0784,
+      "se_error": 2.460698888792634e-05,
+      "ci_max_error": 4.718447854656915e-16
+    }
+  ],
+  "randomization": [
+    {
+      "contrast": "government",
+      "permutations": 10000,
+      "p_one_sided_greater": 0.0189,
+      "p_two_sided_sharp_null": 0.0427,
+      "published_p_one_sided": 0.0189,
+      "assignment_unit": "waterway",
+      "rows": 320,
+      "clusters": 160
+    },
+    {
+      "contrast": "public",
+      "permutations": 10000,
+      "p_one_sided_greater": 0.5181,
+      "p_two_sided_sharp_null": 0.9773,
+      "published_p_one_sided": 0.5181,
+      "assignment_unit": "waterway",
+      "rows": 320,
+      "clusters": 160
+    }
+  ],
+  "code_quality": {
+    "issue": "Authors f_test uses pf(.95,df1,df2) instead of qf(.95,df1,df2) as the F critical value.",
+    "F": 3.132020022610717,
+    "cdf_threshold": 0.5244956804340694,
+    "quantile_threshold": 1.9689138442087861,
+    "selection_changed_for_this_outcome": false,
+    "scope": "Only the main full-sample water-quality specification checked; do not infer impact on other outcomes."
+  },
+  "original_R_executed": false,
+  "household_microdata_read": false,
+  "new_human_sample": false,
+  "ecological_simulator_validated": false,
+  "novel_prediction_confirmed": false,
+  "CT2_change": 0
+}

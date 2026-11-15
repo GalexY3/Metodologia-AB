@@ -1,0 +1,1439 @@
+{
+  "study": "V179_DATA_QUALITY_ONLY",
+  "limits": {
+    "pid": 12868,
+    "priority": "BelowNormal",
+    "priority_code": 16384,
+    "affinity": 16515072,
+    "numba_threads": 3
+  },
+  "profiles": [
+    {
+      "archive_member": "UrbanWaterways_replication/04_Processed Data/h2o.quality_analysis.csv",
+      "sha256": "c72725fbde43feb6f9a13d84464c6ac4aa37361eeb102c1f84adf19efeaa97ee",
+      "rows": 320,
+      "column_count": 65,
+      "exact_duplicate_rows": 0,
+      "columns": [
+        {
+          "name": "wway_id",
+          "dtype": "int64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 160,
+          "minimum": 1.0,
+          "maximum": 2212.0
+        },
+        {
+          "name": "city",
+          "dtype": "str",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 9
+        },
+        {
+          "name": "county",
+          "dtype": "str",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 46
+        },
+        {
+          "name": "i.block",
+          "dtype": "int64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 20,
+          "minimum": 1.0,
+          "maximum": 20.0
+        },
+        {
+          "name": "trt",
+          "dtype": "str",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 4
+        },
+        {
+          "name": "ctrl",
+          "dtype": "int64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 2,
+          "minimum": 0.0,
+          "maximum": 1.0
+        },
+        {
+          "name": "treat_g",
+          "dtype": "int64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 2,
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "counts": {
+            "0": 200,
+            "1": 120
+          }
+        },
+        {
+          "name": "treat_p",
+          "dtype": "int64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 2,
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "counts": {
+            "0": 200,
+            "1": 120
+          }
+        },
+        {
+          "name": "ctrl_remote",
+          "dtype": "int64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 1,
+          "minimum": 0.0,
+          "maximum": 0.0
+        },
+        {
+          "name": "audit",
+          "dtype": "str",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 2
+        },
+        {
+          "name": "m1_qual",
+          "dtype": "float64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 320,
+          "minimum": -10.972619047619,
+          "maximum": -0.373518485678617
+        },
+        {
+          "name": "m1_qual_rank",
+          "dtype": "int64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 178,
+          "minimum": 1.0,
+          "maximum": 179.0
+        },
+        {
+          "name": "m2_lit.a",
+          "dtype": "float64",
+          "nulls": 165,
+          "null_fraction": 0.515625,
+          "distinct": 10,
+          "minimum": 1.0,
+          "maximum": 5.0
+        },
+        {
+          "name": "m1b_qual",
+          "dtype": "float64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 160,
+          "minimum": -8.21404274568393,
+          "maximum": -0.382440503557745
+        },
+        {
+          "name": "m1b_qual_rank",
+          "dtype": "int64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 160,
+          "minimum": 1.0,
+          "maximum": 160.0
+        },
+        {
+          "name": "m2b_lit.a",
+          "dtype": "float64",
+          "nulls": 2,
+          "null_fraction": 0.00625,
+          "distinct": 5,
+          "minimum": 1.0,
+          "maximum": 5.0
+        },
+        {
+          "name": "b6.hhi",
+          "dtype": "float64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 159,
+          "minimum": 2875.0,
+          "maximum": 16966.6666666667
+        },
+        {
+          "name": "c1_pre.a_m1",
+          "dtype": "float64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 55,
+          "minimum": 0.0,
+          "maximum": 88.1
+        },
+        {
+          "name": "c2_pre.b_m1",
+          "dtype": "float64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 55,
+          "minimum": 0.0,
+          "maximum": 72.4333333333333
+        },
+        {
+          "name": "c3_temp_m1",
+          "dtype": "float64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 83,
+          "minimum": 18.2,
+          "maximum": 31.5666666666667
+        },
+        {
+          "name": "c1_pre.a_m2",
+          "dtype": "float64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 9,
+          "minimum": 0.0,
+          "maximum": 8.7
+        },
+        {
+          "name": "c2_pre.b_m2",
+          "dtype": "float64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 38,
+          "minimum": 0.0,
+          "maximum": 61.3
+        },
+        {
+          "name": "c3_temp_m2",
+          "dtype": "float64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 88,
+          "minimum": 23.5,
+          "maximum": 29.6166666666667
+        },
+        {
+          "name": "m1b_qual.noDO",
+          "dtype": "float64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 160,
+          "minimum": -7.50634615384615,
+          "maximum": -0.418526819923372
+        },
+        {
+          "name": "m1_qual.noDO",
+          "dtype": "float64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 320,
+          "minimum": -7.5545183982684,
+          "maximum": -0.36984758062517
+        },
+        {
+          "name": "m1b_qual.noDO_rank",
+          "dtype": "int64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 160,
+          "minimum": 1.0,
+          "maximum": 160.0
+        },
+        {
+          "name": "m1_qual.noDO_rank",
+          "dtype": "int64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 177,
+          "minimum": 1.0,
+          "maximum": 179.0
+        },
+        {
+          "name": "m1_qual.d",
+          "dtype": "int64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 2,
+          "minimum": 0.0,
+          "maximum": 1.0
+        },
+        {
+          "name": "m1_qual.noDO.d",
+          "dtype": "int64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 2,
+          "minimum": 0.0,
+          "maximum": 1.0
+        },
+        {
+          "name": "m1b_qual_DOlower",
+          "dtype": "float64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 160,
+          "minimum": -12.0050769230769,
+          "maximum": -0.382440503557745
+        },
+        {
+          "name": "m1_qual_DOlower",
+          "dtype": "float64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 320,
+          "minimum": -6.76097541018998,
+          "maximum": -0.373518485678617
+        },
+        {
+          "name": "m1b_qual_DOupper",
+          "dtype": "float64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 160,
+          "minimum": -8.10438556583449,
+          "maximum": -0.382440503557745
+        },
+        {
+          "name": "m1_qual_DOupper",
+          "dtype": "float64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 320,
+          "minimum": -10.972619047619,
+          "maximum": -0.373518485678617
+        },
+        {
+          "name": "transparency_b",
+          "dtype": "float64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 55,
+          "minimum": 10.0,
+          "maximum": 135.0
+        },
+        {
+          "name": "do_b",
+          "dtype": "float64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 101,
+          "minimum": 0.1,
+          "maximum": 21.95
+        },
+        {
+          "name": "orp_b",
+          "dtype": "float64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 125,
+          "minimum": 0.535714285714286,
+          "maximum": 2.79503105590062
+        },
+        {
+          "name": "ammonia_b",
+          "dtype": "float64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 145,
+          "minimum": 0.042,
+          "maximum": 20.1
+        },
+        {
+          "name": "cod_b",
+          "dtype": "int64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 51,
+          "minimum": 4.0,
+          "maximum": 356.0
+        },
+        {
+          "name": "tp_b",
+          "dtype": "float64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 120,
+          "minimum": 0.023,
+          "maximum": 3.24
+        },
+        {
+          "name": "tn_b",
+          "dtype": "float64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 134,
+          "minimum": 0.807,
+          "maximum": 21.8
+        },
+        {
+          "name": "transparency",
+          "dtype": "float64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 66,
+          "minimum": 10.0,
+          "maximum": 130.0
+        },
+        {
+          "name": "do",
+          "dtype": "float64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 113,
+          "minimum": 0.0,
+          "maximum": 26.4
+        },
+        {
+          "name": "orp",
+          "dtype": "float64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 227,
+          "minimum": 0.48659169550173,
+          "maximum": 2.92207792207792
+        },
+        {
+          "name": "ammonia",
+          "dtype": "float64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 272,
+          "minimum": 0.034,
+          "maximum": 31.7
+        },
+        {
+          "name": "cod",
+          "dtype": "float64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 72,
+          "minimum": 3.0,
+          "maximum": 211.0
+        },
+        {
+          "name": "tp",
+          "dtype": "float64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 146,
+          "minimum": 0.01,
+          "maximum": 3.59
+        },
+        {
+          "name": "tn",
+          "dtype": "float64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 236,
+          "minimum": 0.538,
+          "maximum": 33.2
+        },
+        {
+          "name": "transparency.pi",
+          "dtype": "float64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 66,
+          "minimum": 0.192307692307692,
+          "maximum": 2.5
+        },
+        {
+          "name": "do.pi",
+          "dtype": "float64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 113,
+          "minimum": 0.0,
+          "maximum": 30.0
+        },
+        {
+          "name": "orp.pi",
+          "dtype": "float64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 227,
+          "minimum": 0.48659169550173,
+          "maximum": 2.92207792207792
+        },
+        {
+          "name": "ammonia.pi",
+          "dtype": "float64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 272,
+          "minimum": 0.0226666666666667,
+          "maximum": 21.1333333333333
+        },
+        {
+          "name": "cod.pi",
+          "dtype": "float64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 72,
+          "minimum": 0.1,
+          "maximum": 7.03333333333333
+        },
+        {
+          "name": "tp.pi",
+          "dtype": "float64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 146,
+          "minimum": 0.0333333333333333,
+          "maximum": 11.9666666666667
+        },
+        {
+          "name": "tn.pi",
+          "dtype": "float64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 236,
+          "minimum": 0.358666666666667,
+          "maximum": 22.1333333333333
+        },
+        {
+          "name": "transparency_b.pi",
+          "dtype": "float64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 55,
+          "minimum": 0.185185185185185,
+          "maximum": 2.5
+        },
+        {
+          "name": "do_b.pi",
+          "dtype": "float64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 101,
+          "minimum": 0.136674259681093,
+          "maximum": 30.0
+        },
+        {
+          "name": "orp_b.pi",
+          "dtype": "float64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 125,
+          "minimum": 0.535714285714286,
+          "maximum": 2.79503105590062
+        },
+        {
+          "name": "ammonia_b.pi",
+          "dtype": "float64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 145,
+          "minimum": 0.028,
+          "maximum": 13.4
+        },
+        {
+          "name": "cod_b.pi",
+          "dtype": "float64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 51,
+          "minimum": 0.133333333333333,
+          "maximum": 11.8666666666667
+        },
+        {
+          "name": "tp_b.pi",
+          "dtype": "float64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 120,
+          "minimum": 0.0766666666666667,
+          "maximum": 10.8
+        },
+        {
+          "name": "tn_b.pi",
+          "dtype": "float64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 134,
+          "minimum": 0.538,
+          "maximum": 14.5333333333333
+        },
+        {
+          "name": "m1_b.e1_change",
+          "dtype": "float64",
+          "nulls": 19,
+          "null_fraction": 0.059375,
+          "distinct": 160,
+          "minimum": -9.60695488721804,
+          "maximum": 7.42282392152702
+        },
+        {
+          "name": "subset_i",
+          "dtype": "int64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 2,
+          "minimum": 0.0,
+          "maximum": 1.0
+        },
+        {
+          "name": "h1_index",
+          "dtype": "float64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 320,
+          "minimum": -14.2581704282997,
+          "maximum": 1.16604295511109
+        },
+        {
+          "name": "h1_index.noDO",
+          "dtype": "float64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 320,
+          "minimum": -6.04605544867141,
+          "maximum": 1.24676891376827
+        }
+      ]
+    },
+    {
+      "archive_member": "UrbanWaterways_replication/04_Processed Data/h2o_noimpute.csv",
+      "sha256": "db1be7b9757f0a1d26ab5baec55573fc13417951979bcde388a57a6e77b67025",
+      "rows": 358,
+      "column_count": 63,
+      "exact_duplicate_rows": 0,
+      "columns": [
+        {
+          "name": "Unnamed: 0",
+          "dtype": "int64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 358,
+          "minimum": 1.0,
+          "maximum": 358.0
+        },
+        {
+          "name": "wway_id",
+          "dtype": "int64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 179,
+          "minimum": 1.0,
+          "maximum": 2212.0
+        },
+        {
+          "name": "sample",
+          "dtype": "str",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 2
+        },
+        {
+          "name": "city",
+          "dtype": "str",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 13
+        },
+        {
+          "name": "county",
+          "dtype": "str",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 50
+        },
+        {
+          "name": "i.block",
+          "dtype": "float64",
+          "nulls": 38,
+          "null_fraction": 0.10614525139664804,
+          "distinct": 20,
+          "minimum": 1.0,
+          "maximum": 20.0
+        },
+        {
+          "name": "trt",
+          "dtype": "str",
+          "nulls": 38,
+          "null_fraction": 0.10614525139664804,
+          "distinct": 4
+        },
+        {
+          "name": "ctrl",
+          "dtype": "int64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 2,
+          "minimum": 0.0,
+          "maximum": 1.0
+        },
+        {
+          "name": "treat_g",
+          "dtype": "float64",
+          "nulls": 38,
+          "null_fraction": 0.10614525139664804,
+          "distinct": 2,
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "counts": {
+            "0.0": 200,
+            "1.0": 120,
+            "nan": 38
+          }
+        },
+        {
+          "name": "treat_p",
+          "dtype": "float64",
+          "nulls": 38,
+          "null_fraction": 0.10614525139664804,
+          "distinct": 2,
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "counts": {
+            "0.0": 200,
+            "1.0": 120,
+            "nan": 38
+          }
+        },
+        {
+          "name": "ctrl_remote",
+          "dtype": "int64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 2,
+          "minimum": 0.0,
+          "maximum": 1.0
+        },
+        {
+          "name": "audit",
+          "dtype": "str",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 2
+        },
+        {
+          "name": "m1_qual",
+          "dtype": "float64",
+          "nulls": 19,
+          "null_fraction": 0.05307262569832402,
+          "distinct": 339,
+          "minimum": -10.972619047619,
+          "maximum": -0.373518485678617
+        },
+        {
+          "name": "m1_qual_rank",
+          "dtype": "float64",
+          "nulls": 19,
+          "null_fraction": 0.05307262569832402,
+          "distinct": 179,
+          "minimum": 1.0,
+          "maximum": 179.0
+        },
+        {
+          "name": "m2_lit.a",
+          "dtype": "float64",
+          "nulls": 203,
+          "null_fraction": 0.5670391061452514,
+          "distinct": 10,
+          "minimum": 1.0,
+          "maximum": 5.0
+        },
+        {
+          "name": "m1b_qual",
+          "dtype": "float64",
+          "nulls": 38,
+          "null_fraction": 0.10614525139664804,
+          "distinct": 160,
+          "minimum": -8.21404274568393,
+          "maximum": -0.382440503557745
+        },
+        {
+          "name": "m1b_qual_rank",
+          "dtype": "float64",
+          "nulls": 38,
+          "null_fraction": 0.10614525139664804,
+          "distinct": 160,
+          "minimum": 1.0,
+          "maximum": 160.0
+        },
+        {
+          "name": "m2b_lit.a",
+          "dtype": "float64",
+          "nulls": 40,
+          "null_fraction": 0.11173184357541899,
+          "distinct": 5,
+          "minimum": 1.0,
+          "maximum": 5.0
+        },
+        {
+          "name": "b6.hhi",
+          "dtype": "float64",
+          "nulls": 42,
+          "null_fraction": 0.11731843575418995,
+          "distinct": 158,
+          "minimum": 2875.0,
+          "maximum": 16966.6666666667
+        },
+        {
+          "name": "c1_pre.a_m1",
+          "dtype": "float64",
+          "nulls": 38,
+          "null_fraction": 0.10614525139664804,
+          "distinct": 55,
+          "minimum": 0.0,
+          "maximum": 88.1
+        },
+        {
+          "name": "c2_pre.b_m1",
+          "dtype": "float64",
+          "nulls": 38,
+          "null_fraction": 0.10614525139664804,
+          "distinct": 55,
+          "minimum": 0.0,
+          "maximum": 72.4333333333333
+        },
+        {
+          "name": "c3_temp_m1",
+          "dtype": "float64",
+          "nulls": 38,
+          "null_fraction": 0.10614525139664804,
+          "distinct": 83,
+          "minimum": 18.2,
+          "maximum": 31.5666666666667
+        },
+        {
+          "name": "c1_pre.a_m2",
+          "dtype": "float64",
+          "nulls": 202,
+          "null_fraction": 0.5642458100558659,
+          "distinct": 7,
+          "minimum": 0.0,
+          "maximum": 8.7
+        },
+        {
+          "name": "c2_pre.b_m2",
+          "dtype": "float64",
+          "nulls": 202,
+          "null_fraction": 0.5642458100558659,
+          "distinct": 29,
+          "minimum": 0.0,
+          "maximum": 61.3
+        },
+        {
+          "name": "c3_temp_m2",
+          "dtype": "float64",
+          "nulls": 208,
+          "null_fraction": 0.5810055865921788,
+          "distinct": 80,
+          "minimum": 23.5,
+          "maximum": 29.6166666666667
+        },
+        {
+          "name": "m1b_qual.noDO",
+          "dtype": "float64",
+          "nulls": 38,
+          "null_fraction": 0.10614525139664804,
+          "distinct": 160,
+          "minimum": -7.50634615384615,
+          "maximum": -0.418526819923372
+        },
+        {
+          "name": "m1_qual.noDO",
+          "dtype": "float64",
+          "nulls": 19,
+          "null_fraction": 0.05307262569832402,
+          "distinct": 339,
+          "minimum": -7.5545183982684,
+          "maximum": -0.36984758062517
+        },
+        {
+          "name": "m1b_qual.noDO_rank",
+          "dtype": "float64",
+          "nulls": 38,
+          "null_fraction": 0.10614525139664804,
+          "distinct": 160,
+          "minimum": 1.0,
+          "maximum": 160.0
+        },
+        {
+          "name": "m1_qual.noDO_rank",
+          "dtype": "float64",
+          "nulls": 19,
+          "null_fraction": 0.05307262569832402,
+          "distinct": 179,
+          "minimum": 1.0,
+          "maximum": 179.0
+        },
+        {
+          "name": "m1_qual.d",
+          "dtype": "float64",
+          "nulls": 38,
+          "null_fraction": 0.10614525139664804,
+          "distinct": 2,
+          "minimum": 0.0,
+          "maximum": 1.0
+        },
+        {
+          "name": "m1_qual.noDO.d",
+          "dtype": "float64",
+          "nulls": 38,
+          "null_fraction": 0.10614525139664804,
+          "distinct": 2,
+          "minimum": 0.0,
+          "maximum": 1.0
+        },
+        {
+          "name": "m1b_qual_DOlower",
+          "dtype": "float64",
+          "nulls": 38,
+          "null_fraction": 0.10614525139664804,
+          "distinct": 160,
+          "minimum": -12.0050769230769,
+          "maximum": -0.382440503557745
+        },
+        {
+          "name": "m1_qual_DOlower",
+          "dtype": "float64",
+          "nulls": 19,
+          "null_fraction": 0.05307262569832402,
+          "distinct": 339,
+          "minimum": -6.76097541018998,
+          "maximum": -0.373518485678617
+        },
+        {
+          "name": "m1b_qual_DOupper",
+          "dtype": "float64",
+          "nulls": 38,
+          "null_fraction": 0.10614525139664804,
+          "distinct": 160,
+          "minimum": -8.10438556583449,
+          "maximum": -0.382440503557745
+        },
+        {
+          "name": "m1_qual_DOupper",
+          "dtype": "float64",
+          "nulls": 19,
+          "null_fraction": 0.05307262569832402,
+          "distinct": 339,
+          "minimum": -10.972619047619,
+          "maximum": -0.373518485678617
+        },
+        {
+          "name": "transparency_b",
+          "dtype": "float64",
+          "nulls": 38,
+          "null_fraction": 0.10614525139664804,
+          "distinct": 55,
+          "minimum": 10.0,
+          "maximum": 135.0
+        },
+        {
+          "name": "do_b",
+          "dtype": "float64",
+          "nulls": 38,
+          "null_fraction": 0.10614525139664804,
+          "distinct": 101,
+          "minimum": 0.1,
+          "maximum": 21.95
+        },
+        {
+          "name": "orp_b",
+          "dtype": "float64",
+          "nulls": 38,
+          "null_fraction": 0.10614525139664804,
+          "distinct": 125,
+          "minimum": 0.535714285714286,
+          "maximum": 2.79503105590062
+        },
+        {
+          "name": "ammonia_b",
+          "dtype": "float64",
+          "nulls": 38,
+          "null_fraction": 0.10614525139664804,
+          "distinct": 145,
+          "minimum": 0.042,
+          "maximum": 20.1
+        },
+        {
+          "name": "cod_b",
+          "dtype": "float64",
+          "nulls": 38,
+          "null_fraction": 0.10614525139664804,
+          "distinct": 51,
+          "minimum": 4.0,
+          "maximum": 356.0
+        },
+        {
+          "name": "tp_b",
+          "dtype": "float64",
+          "nulls": 38,
+          "null_fraction": 0.10614525139664804,
+          "distinct": 120,
+          "minimum": 0.023,
+          "maximum": 3.24
+        },
+        {
+          "name": "tn_b",
+          "dtype": "float64",
+          "nulls": 38,
+          "null_fraction": 0.10614525139664804,
+          "distinct": 134,
+          "minimum": 0.807,
+          "maximum": 21.8
+        },
+        {
+          "name": "transparency",
+          "dtype": "float64",
+          "nulls": 19,
+          "null_fraction": 0.05307262569832402,
+          "distinct": 69,
+          "minimum": 10.0,
+          "maximum": 130.0
+        },
+        {
+          "name": "do",
+          "dtype": "float64",
+          "nulls": 19,
+          "null_fraction": 0.05307262569832402,
+          "distinct": 113,
+          "minimum": 0.0,
+          "maximum": 26.4
+        },
+        {
+          "name": "orp",
+          "dtype": "float64",
+          "nulls": 19,
+          "null_fraction": 0.05307262569832402,
+          "distinct": 233,
+          "minimum": 0.48659169550173,
+          "maximum": 2.92207792207792
+        },
+        {
+          "name": "ammonia",
+          "dtype": "float64",
+          "nulls": 19,
+          "null_fraction": 0.05307262569832402,
+          "distinct": 285,
+          "minimum": 0.034,
+          "maximum": 31.7
+        },
+        {
+          "name": "cod",
+          "dtype": "float64",
+          "nulls": 19,
+          "null_fraction": 0.05307262569832402,
+          "distinct": 72,
+          "minimum": 3.0,
+          "maximum": 211.0
+        },
+        {
+          "name": "tp",
+          "dtype": "float64",
+          "nulls": 19,
+          "null_fraction": 0.05307262569832402,
+          "distinct": 148,
+          "minimum": 0.01,
+          "maximum": 3.59
+        },
+        {
+          "name": "tn",
+          "dtype": "float64",
+          "nulls": 19,
+          "null_fraction": 0.05307262569832402,
+          "distinct": 245,
+          "minimum": 0.538,
+          "maximum": 33.2
+        },
+        {
+          "name": "transparency.pi",
+          "dtype": "float64",
+          "nulls": 19,
+          "null_fraction": 0.05307262569832402,
+          "distinct": 69,
+          "minimum": 0.192307692307692,
+          "maximum": 2.5
+        },
+        {
+          "name": "do.pi",
+          "dtype": "float64",
+          "nulls": 19,
+          "null_fraction": 0.05307262569832402,
+          "distinct": 113,
+          "minimum": 0.0,
+          "maximum": 30.0
+        },
+        {
+          "name": "orp.pi",
+          "dtype": "float64",
+          "nulls": 19,
+          "null_fraction": 0.05307262569832402,
+          "distinct": 233,
+          "minimum": 0.48659169550173,
+          "maximum": 2.92207792207792
+        },
+        {
+          "name": "ammonia.pi",
+          "dtype": "float64",
+          "nulls": 19,
+          "null_fraction": 0.05307262569832402,
+          "distinct": 285,
+          "minimum": 0.0226666666666667,
+          "maximum": 21.1333333333333
+        },
+        {
+          "name": "cod.pi",
+          "dtype": "float64",
+          "nulls": 19,
+          "null_fraction": 0.05307262569832402,
+          "distinct": 72,
+          "minimum": 0.1,
+          "maximum": 7.03333333333333
+        },
+        {
+          "name": "tp.pi",
+          "dtype": "float64",
+          "nulls": 19,
+          "null_fraction": 0.05307262569832402,
+          "distinct": 148,
+          "minimum": 0.0333333333333333,
+          "maximum": 11.9666666666667
+        },
+        {
+          "name": "tn.pi",
+          "dtype": "float64",
+          "nulls": 19,
+          "null_fraction": 0.05307262569832402,
+          "distinct": 245,
+          "minimum": 0.358666666666667,
+          "maximum": 22.1333333333333
+        },
+        {
+          "name": "transparency_b.pi",
+          "dtype": "float64",
+          "nulls": 38,
+          "null_fraction": 0.10614525139664804,
+          "distinct": 55,
+          "minimum": 0.185185185185185,
+          "maximum": 2.5
+        },
+        {
+          "name": "do_b.pi",
+          "dtype": "float64",
+          "nulls": 38,
+          "null_fraction": 0.10614525139664804,
+          "distinct": 101,
+          "minimum": 0.136674259681093,
+          "maximum": 30.0
+        },
+        {
+          "name": "orp_b.pi",
+          "dtype": "float64",
+          "nulls": 38,
+          "null_fraction": 0.10614525139664804,
+          "distinct": 125,
+          "minimum": 0.535714285714286,
+          "maximum": 2.79503105590062
+        },
+        {
+          "name": "ammonia_b.pi",
+          "dtype": "float64",
+          "nulls": 38,
+          "null_fraction": 0.10614525139664804,
+          "distinct": 145,
+          "minimum": 0.028,
+          "maximum": 13.4
+        },
+        {
+          "name": "cod_b.pi",
+          "dtype": "float64",
+          "nulls": 38,
+          "null_fraction": 0.10614525139664804,
+          "distinct": 51,
+          "minimum": 0.133333333333333,
+          "maximum": 11.8666666666667
+        },
+        {
+          "name": "tp_b.pi",
+          "dtype": "float64",
+          "nulls": 38,
+          "null_fraction": 0.10614525139664804,
+          "distinct": 120,
+          "minimum": 0.0766666666666667,
+          "maximum": 10.8
+        },
+        {
+          "name": "tn_b.pi",
+          "dtype": "float64",
+          "nulls": 38,
+          "null_fraction": 0.10614525139664804,
+          "distinct": 134,
+          "minimum": 0.538,
+          "maximum": 14.5333333333333
+        }
+      ]
+    },
+    {
+      "archive_member": "UrbanWaterways_replication/04_Processed Data/h2o.quality_meta.analysis.csv",
+      "sha256": "1c8a2963a4c4f4a6a7a5ab38378885a6ef83373f378709128e15a31c1f24a522",
+      "rows": 320,
+      "column_count": 27,
+      "exact_duplicate_rows": 0,
+      "columns": [
+        {
+          "name": "wway_id",
+          "dtype": "int64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 160,
+          "minimum": 1.0,
+          "maximum": 2212.0
+        },
+        {
+          "name": "county",
+          "dtype": "str",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 46
+        },
+        {
+          "name": "city",
+          "dtype": "str",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 9
+        },
+        {
+          "name": "trt",
+          "dtype": "str",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 4
+        },
+        {
+          "name": "ctrl",
+          "dtype": "int64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 2,
+          "minimum": 0.0,
+          "maximum": 1.0
+        },
+        {
+          "name": "treat_g",
+          "dtype": "int64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 2,
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "counts": {
+            "0": 200,
+            "1": 120
+          }
+        },
+        {
+          "name": "treat_p",
+          "dtype": "int64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 2,
+          "minimum": 0.0,
+          "maximum": 1.0,
+          "counts": {
+            "0": 200,
+            "1": 120
+          }
+        },
+        {
+          "name": "audit",
+          "dtype": "str",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 2
+        },
+        {
+          "name": "m1b_qual",
+          "dtype": "float64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 160,
+          "minimum": -5.44617867388068,
+          "maximum": 0.65835169927016
+        },
+        {
+          "name": "m1_qual",
+          "dtype": "float64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 320,
+          "minimum": -14.2581704282997,
+          "maximum": 1.16604295511109
+        },
+        {
+          "name": "m1b_qual.noDO",
+          "dtype": "float64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 160,
+          "minimum": -6.08894551934285,
+          "maximum": 0.807575382139574
+        },
+        {
+          "name": "m1_qual.noDO",
+          "dtype": "float64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 320,
+          "minimum": -6.04605544867141,
+          "maximum": 1.24676891376827
+        },
+        {
+          "name": "m1b_qual_DOlower",
+          "dtype": "float64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 160,
+          "minimum": -6.74164595370372,
+          "maximum": 0.562185917629249
+        },
+        {
+          "name": "m1_qual_DOlower",
+          "dtype": "float64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 320,
+          "minimum": -5.15751557416292,
+          "maximum": 1.16604295511109
+        },
+        {
+          "name": "m1b_qual_DOupper",
+          "dtype": "float64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 160,
+          "minimum": -8.1008001170746,
+          "maximum": 0.865382812051303
+        },
+        {
+          "name": "m1_qual_DOupper",
+          "dtype": "float64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 320,
+          "minimum": -14.7742569937248,
+          "maximum": 1.16604295511109
+        },
+        {
+          "name": "c1_pre.a",
+          "dtype": "float64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 55,
+          "minimum": 0.0,
+          "maximum": 88.1
+        },
+        {
+          "name": "c2_pre.b",
+          "dtype": "float64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 55,
+          "minimum": 0.0,
+          "maximum": 72.4333333333333
+        },
+        {
+          "name": "c3_temp",
+          "dtype": "float64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 83,
+          "minimum": 18.2,
+          "maximum": 31.5666666666667
+        },
+        {
+          "name": "outcome_na",
+          "dtype": "int64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 1,
+          "minimum": 1.0,
+          "maximum": 1.0
+        },
+        {
+          "name": "h1_index",
+          "dtype": "float64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 320,
+          "minimum": -14.2581704282997,
+          "maximum": 1.16604295511109
+        },
+        {
+          "name": "outcome_na.noDO",
+          "dtype": "int64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 1,
+          "minimum": 1.0,
+          "maximum": 1.0
+        },
+        {
+          "name": "h1_index.noDO",
+          "dtype": "float64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 320,
+          "minimum": -6.04605544867141,
+          "maximum": 1.24676891376827
+        },
+        {
+          "name": "outcome_na.DOlower",
+          "dtype": "int64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 1,
+          "minimum": 1.0,
+          "maximum": 1.0
+        },
+        {
+          "name": "h1_index.DOlower",
+          "dtype": "float64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 320,
+          "minimum": -5.15751557416292,
+          "maximum": 1.16604295511109
+        },
+        {
+          "name": "outcome_na.DOupper",
+          "dtype": "int64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 1,
+          "minimum": 1.0,
+          "maximum": 1.0
+        },
+        {
+          "name": "h1_index.DOupper",
+          "dtype": "float64",
+          "nulls": 0,
+          "null_fraction": 0.0,
+          "distinct": 320,
+          "minimum": -14.7742569937248,
+          "maximum": 1.16604295511109
+        }
+      ]
+    }
+  ],
+  "provenance": "Published Buntaine et al.2021 anonymized archive; ZIP preserved.",
+  "household_data_read": false,
+  "third_party_R_code_executed": false,
+  "confirms_our_mechanisms": false,
+  "CT2_change": 0
+}

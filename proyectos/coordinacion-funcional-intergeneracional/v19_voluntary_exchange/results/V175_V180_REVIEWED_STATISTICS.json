@@ -1,0 +1,1016 @@
+{
+  "V175": {
+    "RNN_RESOURCE": [
+      0.4702791258059923,
+      0.515990113675648
+    ],
+    "RNN_FULL": [
+      0.4699947960574312,
+      0.5132279881542307
+    ],
+    "MLP_RESOURCE": [
+      0.0015360602374870599,
+      0.0038246336520240893
+    ],
+    "LINEAR_FULL": [
+      0.8116291763476884,
+      0.7905127238062098
+    ],
+    "FILTER_RESOURCE": [
+      0.3098027992159844,
+      0.3029867265864491
+    ]
+  },
+  "V178": {
+    "FULL": {
+      "values": [
+        0.8148206901372469,
+        0.8135922871941159,
+        0.8077824852113447,
+        0.7739874739842301,
+        0.7964528909223805,
+        0.7863505302538337,
+        0.7965243048397831,
+        0.7445548022459225
+      ],
+      "mean": 0.7917581830986071,
+      "sd": 0.023553409714956945,
+      "min": 0.7445548022459225,
+      "max": 0.8148206901372469
+    },
+    "ORIGINAL_PRIVATE": {
+      "values": [
+        0.3988328171399707,
+        0.399330515897563,
+        0.40341030126542055,
+        0.39716927270659985,
+        0.403972481200525,
+        0.3972243733910123,
+        0.39281046785963986,
+        0.4040974252024683
+      ],
+      "mean": 0.39960595683289996,
+      "sd": 0.004003115073299154,
+      "min": 0.39281046785963986,
+      "max": 0.4040974252024683
+    },
+    "AFFINE_PRIVATE": {
+      "values": [
+        0.04176695687962335,
+        0.03618410657003848,
+        0.0449226729701315,
+        0.04153316421663941,
+        0.035538001997756155,
+        0.03896857648744346,
+        0.03599575604295785,
+        0.04488356129284051
+      ],
+      "mean": 0.039974099557178844,
+      "sd": 0.003875150052551571,
+      "min": 0.035538001997756155,
+      "max": 0.0449226729701315
+    },
+    "AFFINE_FULL": {
+      "values": [
+        0.03809599464976451,
+        0.03539033013544275,
+        0.03367809067916874,
+        0.03058100268056877,
+        0.039252330410743545,
+        0.040416672960165705,
+        0.038306444781534284,
+        0.028690518439882372
+      ],
+      "mean": 0.035551423092158835,
+      "sd": 0.004255161188241915,
+      "min": 0.028690518439882372,
+      "max": 0.040416672960165705
+    },
+    "PRIVATE_THRESHOLD": {
+      "values": [
+        0.5288782846316369,
+        0.5316894238496637,
+        0.535205740354145,
+        0.5242900231964726,
+        0.5306334491676968,
+        0.5315033955192618,
+        0.5281322489592973,
+        0.5306458092518226
+      ],
+      "mean": 0.5301222968662496,
+      "sd": 0.00316822017024999,
+      "min": 0.5242900231964726,
+      "max": 0.535205740354145
+    }
+  },
+  "V180": {
+    "paired": [
+      {
+        "seed": 180115,
+        "Q": {
+          "LOCKED": 0.7756736974264166,
+          "OPEN": 0.6304255014172839
+        },
+        "difference": 0.14524819600913264,
+        "loss": false
+      },
+      {
+        "seed": 180116,
+        "Q": {
+          "LOCKED": 0.8106016677130783,
+          "OPEN": 0.6695867103814123
+        },
+        "difference": 0.14101495733166602,
+        "loss": false
+      },
+      {
+        "seed": 180117,
+        "Q": {
+          "LOCKED": 0.7778894997721527,
+          "OPEN": 0.03750675321367349
+        },
+        "difference": 0.7403827465584792,
+        "loss": true
+      },
+      {
+        "seed": 180118,
+        "Q": {
+          "LOCKED": 0.778977190850809,
+          "OPEN": 0.7885827868183717
+        },
+        "difference": -0.009605595967562719,
+        "loss": false
+      },
+      {
+        "seed": 180119,
+        "Q": {
+          "LOCKED": 0.7958976846403044,
+          "OPEN": 0.7893666173865633
+        },
+        "difference": 0.006531067253741085,
+        "loss": false
+      },
+      {
+        "seed": 180120,
+        "Q": {
+          "LOCKED": 0.7597600687236922,
+          "OPEN": 0.6290348938181975
+        },
+        "difference": 0.13072517490549462,
+        "loss": false
+      },
+      {
+        "seed": 180121,
+        "Q": {
+          "LOCKED": 0.7688547147061079,
+          "OPEN": 0.7870878500597803
+        },
+        "difference": -0.018233135353672436,
+        "loss": false
+      },
+      {
+        "seed": 180122,
+        "Q": {
+          "LOCKED": 0.7861840906313995,
+          "OPEN": 0.723441280793887
+        },
+        "difference": 0.06274280983751246,
+        "loss": false
+      }
+    ],
+    "open_above_point30": 7,
+    "open_above_point70": 4,
+    "mean_locked": 0.7817298268079951,
+    "mean_open": 0.6318790492361461
+  },
+  "V176_M5": [
+    {
+      "seed": 175115,
+      "mode": "RNN_RESOURCE",
+      "means": {
+        "INTACT": {
+          "Q": 0.4577426587714015,
+          "focal_fitness": 0.09131667949990238,
+          "others_fitness": 0.36642597927149917,
+          "harvest": 0.48293300781250004,
+          "switches": 0.9557538006756756,
+          "resource": 0.12972678753057926
+        },
+        "RESET": {
+          "Q": 0.015465831486325281,
+          "focal_fitness": 0.002573398279308482,
+          "others_fitness": 0.012892433207016798,
+          "harvest": 0.0042744140625,
+          "switches": 0.008552888826326327,
+          "resource": 0.9932438652922757
+        },
+        "RESOURCE_CLAMP": {
+          "Q": 0.4947745150928945,
+          "focal_fitness": 0.09977337275144363,
+          "others_fitness": 0.3950011423414509,
+          "harvest": 0.48875546875,
+          "switches": 0.9640044341216216,
+          "resource": 0.1442305408115217
+        },
+        "SENSORY_CLAMP": {
+          "Q": 0.20506152799599814,
+          "focal_fitness": 0.04203698914307373,
+          "others_fitness": 0.1630245388529244,
+          "harvest": 0.45070527343749994,
+          "switches": 0.8819149227352352,
+          "resource": 0.08859586050495796
+        },
+        "CLONAL_GROUPS": {
+          "Q": 0.12728000102326117,
+          "focal_fitness": 0.02542720608481918,
+          "others_fitness": 0.10185279493844199,
+          "harvest": 0.38588847656249997,
+          "switches": 0.7697205017517517,
+          "resource": 0.037531846189660586
+        },
+        "ALWAYS_HARVEST_INVADER": {
+          "Q": 0.12157145642793513,
+          "focal_fitness": 0.045148541355328475,
+          "others_fitness": 0.07642291507260665,
+          "harvest": 0.5030595703125,
+          "switches": 0.6011732435560561,
+          "resource": 0.031617117094419035
+        }
+      },
+      "contrasts": {
+        "recurrence_gain": 0.4422768272850762,
+        "resource_feedback_gain": -0.03703185632149297,
+        "sensory_feedback_gain": 0.2526811307754034,
+        "diversity_gain": 0.3304626577481403,
+        "invader_private_gain": -0.046168138144573906,
+        "invader_group_gain": -0.3361712023434664
+      }
+    },
+    {
+      "seed": 175115,
+      "mode": "RNN_FULL",
+      "means": {
+        "INTACT": {
+          "Q": 0.47532410255423985,
+          "focal_fitness": 0.09447636399487407,
+          "others_fitness": 0.3808477385593658,
+          "harvest": 0.493410546875,
+          "switches": 0.9689404247997998,
+          "resource": 0.13707326969398353
+        },
+        "RESET": {
+          "Q": 0.8125236161458187,
+          "focal_fitness": 0.16557254047384873,
+          "others_fitness": 0.64695107567197,
+          "harvest": 0.43305429687499997,
+          "switches": 0.012509188876376375,
+          "resource": 0.35563118660347526
+        },
+        "RESOURCE_CLAMP": {
+          "Q": 0.5004044067411264,
+          "focal_fitness": 0.10171025704825346,
+          "others_fitness": 0.398694149692873,
+          "harvest": 0.47896015625,
+          "switches": 0.9093611189314315,
+          "resource": 0.15770706594420847
+        },
+        "SENSORY_CLAMP": {
+          "Q": 0.5870197283016437,
+          "focal_fitness": 0.11948947593755606,
+          "others_fitness": 0.46753025236408763,
+          "harvest": 0.428251171875,
+          "switches": 0.7315070930305305,
+          "resource": 0.2605550969285672
+        },
+        "CLONAL_GROUPS": {
+          "Q": 0.10453965960368508,
+          "focal_fitness": 0.02100032373851908,
+          "others_fitness": 0.08353933586516599,
+          "harvest": 0.3680958984375,
+          "switches": 0.5959656922547547,
+          "resource": 0.0708996373656497
+        },
+        "ALWAYS_HARVEST_INVADER": {
+          "Q": 0.1323806334230462,
+          "focal_fitness": 0.04960100757689333,
+          "others_fitness": 0.08277962584615287,
+          "harvest": 0.5209998046875,
+          "switches": 0.5561882194694695,
+          "resource": 0.035557629002108335
+        }
+      },
+      "contrasts": {
+        "recurrence_gain": -0.33719951359157885,
+        "resource_feedback_gain": -0.02508030418688656,
+        "sensory_feedback_gain": -0.11169562574740388,
+        "diversity_gain": 0.3707844429505548,
+        "invader_private_gain": -0.04487535641798074,
+        "invader_group_gain": -0.34294346913119367
+      }
+    },
+    {
+      "seed": 175115,
+      "mode": "MLP_RESOURCE",
+      "means": {
+        "INTACT": {
+          "Q": 0.002226359693887627,
+          "focal_fitness": 0.00044962575428830005,
+          "others_fitness": 0.0017767339395993267,
+          "harvest": 0.62064765625,
+          "switches": 0.011436631944444444,
+          "resource": 0.0005441177051311566
+        },
+        "RESET": {
+          "Q": 0.002226359693887627,
+          "focal_fitness": 0.00044962575428830005,
+          "others_fitness": 0.0017767339395993267,
+          "harvest": 0.62064765625,
+          "switches": 0.011436631944444444,
+          "resource": 0.0005441177051311566
+        },
+        "RESOURCE_CLAMP": {
+          "Q": 1.86907790909223e-15,
+          "focal_fitness": 3.734654549952494e-16,
+          "others_fitness": 1.4956124540969809e-15,
+          "harvest": 1.0,
+          "switches": 0.0,
+          "resource": 2.3703030625625272e-05
+        },
+        "SENSORY_CLAMP": {
+          "Q": 1.86907790909223e-15,
+          "focal_fitness": 3.734654549952494e-16,
+          "others_fitness": 1.4956124540969809e-15,
+          "harvest": 1.0,
+          "switches": 0.0,
+          "resource": 2.3703030625625272e-05
+        },
+        "CLONAL_GROUPS": {
+          "Q": 0.0036030099098827225,
+          "focal_fitness": 0.0007206019819765442,
+          "others_fitness": 0.002882407927906178,
+          "harvest": 0.6466244140625,
+          "switches": 0.2634216247497497,
+          "resource": 0.0008929914339749645
+        },
+        "ALWAYS_HARVEST_INVADER": {
+          "Q": 0.0013124046338897444,
+          "focal_fitness": 0.0004729567665065673,
+          "others_fitness": 0.000839447867383177,
+          "harvest": 0.6644208984375,
+          "switches": 0.0074326279404404415,
+          "resource": 0.0003274549035078725
+        }
+      },
+      "contrasts": {
+        "recurrence_gain": 0.0,
+        "resource_feedback_gain": 0.0022263596938857577,
+        "sensory_feedback_gain": 0.0022263596938857577,
+        "diversity_gain": -0.0013766502159950956,
+        "invader_private_gain": 2.333101221826722e-05,
+        "invader_group_gain": -0.0009139550599978825
+      }
+    },
+    {
+      "seed": 175115,
+      "mode": "LINEAR_FULL",
+      "means": {
+        "INTACT": {
+          "Q": 0.7730203029597573,
+          "focal_fitness": 0.1536885013934712,
+          "others_fitness": 0.6193318015662861,
+          "harvest": 0.42169863281250003,
+          "switches": 0.8106373952077077,
+          "resource": 0.32145435698403463
+        },
+        "RESET": {
+          "Q": 0.7730203029597573,
+          "focal_fitness": 0.1536885013934712,
+          "others_fitness": 0.6193318015662861,
+          "harvest": 0.42169863281250003,
+          "switches": 0.8106373952077077,
+          "resource": 0.32145435698403463
+        },
+        "RESOURCE_CLAMP": {
+          "Q": 0.7340113328139168,
+          "focal_fitness": 0.14618674686006433,
+          "others_fitness": 0.5878245859538526,
+          "harvest": 0.3475861328125,
+          "switches": 0.6030925456706706,
+          "resource": 0.4952003111454667
+        },
+        "SENSORY_CLAMP": {
+          "Q": 0.5086446317239156,
+          "focal_fitness": 0.08936977353566763,
+          "others_fitness": 0.41927485818824783,
+          "harvest": 0.233203125,
+          "switches": 0.0,
+          "resource": 0.6818088922241635
+        },
+        "CLONAL_GROUPS": {
+          "Q": 0.5657226741363286,
+          "focal_fitness": 0.1131798514069936,
+          "others_fitness": 0.452542822729335,
+          "harvest": 0.44042734375000003,
+          "switches": 0.5872648038663664,
+          "resource": 0.2602700540577391
+        },
+        "ALWAYS_HARVEST_INVADER": {
+          "Q": 0.008309764237532555,
+          "focal_fitness": 0.003175897059164794,
+          "others_fitness": 0.005133867178367761,
+          "harvest": 0.7176052734375,
+          "switches": 0.45242351726726726,
+          "resource": 0.0036605189239554345
+        }
+      },
+      "contrasts": {
+        "recurrence_gain": 0.0,
+        "resource_feedback_gain": 0.03900897014584048,
+        "sensory_feedback_gain": 0.2643756712358417,
+        "diversity_gain": 0.20729762882342873,
+        "invader_private_gain": -0.1505126043343064,
+        "invader_group_gain": -0.7647105387222247
+      }
+    },
+    {
+      "seed": 175116,
+      "mode": "RNN_RESOURCE",
+      "means": {
+        "INTACT": {
+          "Q": 0.5236771805115157,
+          "focal_fitness": 0.10474866276092978,
+          "others_fitness": 0.4189285177505859,
+          "harvest": 0.48041640625000004,
+          "switches": 0.9554499812312313,
+          "resource": 0.1549795866032317
+        },
+        "RESET": {
+          "Q": 1.4245384570984272e-15,
+          "focal_fitness": 2.857463727917891e-16,
+          "others_fitness": 1.138792084306638e-15,
+          "harvest": 0.0,
+          "switches": 0.0,
+          "resource": 0.9978826135243678
+        },
+        "RESOURCE_CLAMP": {
+          "Q": 0.5364803164428831,
+          "focal_fitness": 0.10714459369780537,
+          "others_fitness": 0.4293357227450778,
+          "harvest": 0.4830564453125,
+          "switches": 0.9633471361986987,
+          "resource": 0.15871474483613318
+        },
+        "SENSORY_CLAMP": {
+          "Q": 0.112230053108528,
+          "focal_fitness": 0.022206225383197473,
+          "others_fitness": 0.09002382772533053,
+          "harvest": 0.46922207031249996,
+          "switches": 0.9382274852977978,
+          "resource": 0.04084030154778518
+        },
+        "CLONAL_GROUPS": {
+          "Q": 0.06693157816993242,
+          "focal_fitness": 0.013223148527425135,
+          "others_fitness": 0.053708429642507285,
+          "harvest": 0.3952755859375,
+          "switches": 0.74555688501001,
+          "resource": 0.03213747983346933
+        },
+        "ALWAYS_HARVEST_INVADER": {
+          "Q": 0.08858277716553598,
+          "focal_fitness": 0.03305423946825258,
+          "others_fitness": 0.055528537697283394,
+          "harvest": 0.5208658203125001,
+          "switches": 0.6000596299424424,
+          "resource": 0.023473715683970074
+        }
+      },
+      "contrasts": {
+        "recurrence_gain": 0.5236771805115142,
+        "resource_feedback_gain": -0.012803135931367393,
+        "sensory_feedback_gain": 0.41144712740298767,
+        "diversity_gain": 0.45674560234158323,
+        "invader_private_gain": -0.0716944232926772,
+        "invader_group_gain": -0.4350944033459797
+      }
+    },
+    {
+      "seed": 175116,
+      "mode": "RNN_FULL",
+      "means": {
+        "INTACT": {
+          "Q": 0.4987942550022294,
+          "focal_fitness": 0.10012349131593318,
+          "others_fitness": 0.39867076368629617,
+          "harvest": 0.48530898437500003,
+          "switches": 0.9471131287537538,
+          "resource": 0.1460722649750995
+        },
+        "RESET": {
+          "Q": 0.9065506894073604,
+          "focal_fitness": 0.1848423814043623,
+          "others_fitness": 0.7217083080029981,
+          "harvest": 0.35545957031250003,
+          "switches": 0.19648378847597597,
+          "resource": 0.44541911492446407
+        },
+        "RESOURCE_CLAMP": {
+          "Q": 0.514098568521445,
+          "focal_fitness": 0.10273669532526761,
+          "others_fitness": 0.4113618731961774,
+          "harvest": 0.4866974609375,
+          "switches": 0.9558153856981981,
+          "resource": 0.15180868566007488
+        },
+        "SENSORY_CLAMP": {
+          "Q": 0.14254268286650784,
+          "focal_fitness": 0.028742133640208608,
+          "others_fitness": 0.11380054922629923,
+          "harvest": 0.486943359375,
+          "switches": 0.9452714433183182,
+          "resource": 0.04584661994293937
+        },
+        "CLONAL_GROUPS": {
+          "Q": 0.14859547051574795,
+          "focal_fitness": 0.029548760834439785,
+          "others_fitness": 0.11904670968130818,
+          "harvest": 0.357194921875,
+          "switches": 0.6695136542792793,
+          "resource": 0.050066580021191326
+        },
+        "ALWAYS_HARVEST_INVADER": {
+          "Q": 0.21641772541986953,
+          "focal_fitness": 0.0816049864636726,
+          "others_fitness": 0.13481273895619694,
+          "harvest": 0.49909375,
+          "switches": 0.5661837618868869,
+          "resource": 0.05846477980017504
+        }
+      },
+      "contrasts": {
+        "recurrence_gain": -0.407756434405131,
+        "resource_feedback_gain": -0.015304313519215573,
+        "sensory_feedback_gain": 0.35625157213572156,
+        "diversity_gain": 0.35019878448648145,
+        "invader_private_gain": -0.018518504852260573,
+        "invader_group_gain": -0.28237652958235987
+      }
+    },
+    {
+      "seed": 175116,
+      "mode": "MLP_RESOURCE",
+      "means": {
+        "INTACT": {
+          "Q": 0.003882209725812031,
+          "focal_fitness": 0.0007370779662618761,
+          "others_fitness": 0.003145131759550155,
+          "harvest": 0.6538103515624999,
+          "switches": 0.045616710460460466,
+          "resource": 0.001434904185039536
+        },
+        "RESET": {
+          "Q": 0.003882209725812031,
+          "focal_fitness": 0.0007370779662618761,
+          "others_fitness": 0.003145131759550155,
+          "harvest": 0.6538103515624999,
+          "switches": 0.045616710460460466,
+          "resource": 0.001434904185039536
+        },
+        "RESOURCE_CLAMP": {
+          "Q": 2.8869859313953896e-15,
+          "focal_fitness": 5.732902453918749e-16,
+          "others_fitness": 2.3136956860035148e-15,
+          "harvest": 0.9989130859375,
+          "switches": 0.0010837008883883884,
+          "resource": 0.0002633985310224812
+        },
+        "SENSORY_CLAMP": {
+          "Q": 0.5529746919644389,
+          "focal_fitness": 0.10691029103529809,
+          "others_fitness": 0.4460644009291408,
+          "harvest": 0.2857421875,
+          "switches": 0.0,
+          "resource": 0.6027486114570458
+        },
+        "CLONAL_GROUPS": {
+          "Q": 0.006568177326600593,
+          "focal_fitness": 0.0013136355825439977,
+          "others_fitness": 0.005254541744056595,
+          "harvest": 0.6947634765624999,
+          "switches": 0.26181083427177176,
+          "resource": 0.002153628949189374
+        },
+        "ALWAYS_HARVEST_INVADER": {
+          "Q": 0.0019700900390294085,
+          "focal_fitness": 0.0007107197223522315,
+          "others_fitness": 0.0012593703166771768,
+          "harvest": 0.6971658203125,
+          "switches": 0.024730394456956958,
+          "resource": 0.0008480716273428688
+        }
+      },
+      "contrasts": {
+        "recurrence_gain": 0.0,
+        "resource_feedback_gain": 0.003882209725809144,
+        "sensory_feedback_gain": -0.5490924822386269,
+        "diversity_gain": -0.0026859676007885617,
+        "invader_private_gain": -2.6358243909644632e-05,
+        "invader_group_gain": -0.0019121196867826224
+      }
+    },
+    {
+      "seed": 175116,
+      "mode": "LINEAR_FULL",
+      "means": {
+        "INTACT": {
+          "Q": 0.8022668324087869,
+          "focal_fitness": 0.16107917867994037,
+          "others_fitness": 0.6411876537288466,
+          "harvest": 0.40634453125000003,
+          "switches": 0.7917102649524524,
+          "resource": 0.3381536066929762
+        },
+        "RESET": {
+          "Q": 0.8022668324087869,
+          "focal_fitness": 0.16107917867994037,
+          "others_fitness": 0.6411876537288466,
+          "harvest": 0.40634453125000003,
+          "switches": 0.7917102649524524,
+          "resource": 0.3381536066929762
+        },
+        "RESOURCE_CLAMP": {
+          "Q": 0.7582775044492829,
+          "focal_fitness": 0.15202853669184552,
+          "others_fitness": 0.6062489677574374,
+          "harvest": 0.31285175781249996,
+          "switches": 0.5744234468843844,
+          "resource": 0.5412224677797017
+        },
+        "SENSORY_CLAMP": {
+          "Q": 0.4459529020395746,
+          "focal_fitness": 0.09516768988724339,
+          "others_fitness": 0.35078521215233116,
+          "harvest": 0.179296875,
+          "switches": 0.0,
+          "resource": 0.764068145249548
+        },
+        "CLONAL_GROUPS": {
+          "Q": 0.580100149938268,
+          "focal_fitness": 0.11592283716437538,
+          "others_fitness": 0.4641773127738926,
+          "harvest": 0.43278281250000006,
+          "switches": 0.6009489958708709,
+          "resource": 0.2610738822681097
+        },
+        "ALWAYS_HARVEST_INVADER": {
+          "Q": 0.002906229363219822,
+          "focal_fitness": 0.001122316505157222,
+          "others_fitness": 0.0017839128580625992,
+          "harvest": 0.6643951171875,
+          "switches": 0.5577282360485485,
+          "resource": 0.0022674405533763885
+        }
+      },
+      "contrasts": {
+        "recurrence_gain": 0.0,
+        "resource_feedback_gain": 0.043989327959504054,
+        "sensory_feedback_gain": 0.35631393036921233,
+        "diversity_gain": 0.22216668247051896,
+        "invader_private_gain": -0.15995686217478314,
+        "invader_group_gain": -0.7993606030455671
+      }
+    }
+  ],
+  "V177": [
+    {
+      "seed": 175115,
+      "mode": "RNN_FULL",
+      "groups": 512,
+      "population_sha256": "3abade223d98e10d2163aac1b79b4e9ca7457bdaea174d600a6cead314cb3719",
+      "Q_all_on": 0.4744229098644622,
+      "Q_all_off": 0.8298952691991517,
+      "all_on_restricted_nash": 0.833984375,
+      "all_off_restricted_nash": 0.00390625,
+      "all_off_pareto_improvement": 0.00390625,
+      "strong_trap_fraction": 0.0,
+      "no_pure_restricted_nash": 0.009765625,
+      "unilateral_off_private_gain": -0.07928401551587576,
+      "unilateral_off_profitable_fraction": 0.044921875,
+      "all_on_regret_mean": 0.007159859348487894,
+      "by_other_active": [
+        {
+          "other_active": 0,
+          "off_minus_on": 0.007211234465396764,
+          "fraction_off_profitable": 0.25390625
+        },
+        {
+          "other_active": 1,
+          "off_minus_on": -0.0777114044303763,
+          "fraction_off_profitable": 0.11328125
+        },
+        {
+          "other_active": 2,
+          "off_minus_on": -0.021795715349665668,
+          "fraction_off_profitable": 0.20279947916666666
+        },
+        {
+          "other_active": 3,
+          "off_minus_on": -0.03470465334696671,
+          "fraction_off_profitable": 0.23046875
+        },
+        {
+          "other_active": 4,
+          "off_minus_on": -0.07928401551587576,
+          "fraction_off_profitable": 0.044921875
+        }
+      ]
+    },
+    {
+      "seed": 175115,
+      "mode": "RNN_RESOURCE",
+      "groups": 512,
+      "population_sha256": "820e1e7a1d497d75191684306bdd4de9d1e50061c44a380edb832aff22f85067",
+      "Q_all_on": 0.45731627873001734,
+      "Q_all_off": 0.01445398133219097,
+      "all_on_restricted_nash": 1.0,
+      "all_off_restricted_nash": 0.0,
+      "all_off_pareto_improvement": 0.0,
+      "strong_trap_fraction": 0.0,
+      "no_pure_restricted_nash": 0.0,
+      "unilateral_off_private_gain": -0.09207378475058442,
+      "unilateral_off_profitable_fraction": 0.0,
+      "all_on_regret_mean": 0.0,
+      "by_other_active": [
+        {
+          "other_active": 0,
+          "off_minus_on": -0.44496547761593763,
+          "fraction_off_profitable": 0.0
+        },
+        {
+          "other_active": 1,
+          "off_minus_on": -0.38703390891814027,
+          "fraction_off_profitable": 0.0
+        },
+        {
+          "other_active": 2,
+          "off_minus_on": -0.31297520861340034,
+          "fraction_off_profitable": 0.0
+        },
+        {
+          "other_active": 3,
+          "off_minus_on": -0.09769562312320801,
+          "fraction_off_profitable": 0.0
+        },
+        {
+          "other_active": 4,
+          "off_minus_on": -0.09207378475058442,
+          "fraction_off_profitable": 0.0
+        }
+      ]
+    },
+    {
+      "seed": 175115,
+      "mode": "LINEAR_FULL",
+      "groups": 512,
+      "population_sha256": "c5b50e822b5e6ef49462b06b64bae4ebc4de58c3a340856f8819da5eef2665e8",
+      "Q_all_on": 0.763385094585657,
+      "Q_all_off": 0.763385094585657,
+      "all_on_restricted_nash": 1.0,
+      "all_off_restricted_nash": 1.0,
+      "all_off_pareto_improvement": 0.0,
+      "strong_trap_fraction": 0.0,
+      "no_pure_restricted_nash": 0.0,
+      "unilateral_off_private_gain": 0.0,
+      "unilateral_off_profitable_fraction": 0.0,
+      "all_on_regret_mean": 0.0,
+      "by_other_active": [
+        {
+          "other_active": 0,
+          "off_minus_on": 0.0,
+          "fraction_off_profitable": 0.0
+        },
+        {
+          "other_active": 1,
+          "off_minus_on": 0.0,
+          "fraction_off_profitable": 0.0
+        },
+        {
+          "other_active": 2,
+          "off_minus_on": 0.0,
+          "fraction_off_profitable": 0.0
+        },
+        {
+          "other_active": 3,
+          "off_minus_on": 0.0,
+          "fraction_off_profitable": 0.0
+        },
+        {
+          "other_active": 4,
+          "off_minus_on": 0.0,
+          "fraction_off_profitable": 0.0
+        }
+      ]
+    },
+    {
+      "seed": 175116,
+      "mode": "RNN_FULL",
+      "groups": 512,
+      "population_sha256": "2a8089022808208daf75551cf44c6270bcb4e167f216e5fd170da48c95099079",
+      "Q_all_on": 0.5080850877364868,
+      "Q_all_off": 0.9061965589409325,
+      "all_on_restricted_nash": 0.837890625,
+      "all_off_restricted_nash": 0.0,
+      "all_off_pareto_improvement": 0.044921875,
+      "strong_trap_fraction": 0.04296875,
+      "no_pure_restricted_nash": 0.001953125,
+      "unilateral_off_private_gain": -0.08794164860352405,
+      "unilateral_off_profitable_fraction": 0.03515625,
+      "all_on_regret_mean": 0.0030085557518464597,
+      "by_other_active": [
+        {
+          "other_active": 0,
+          "off_minus_on": -0.058948454803992016,
+          "fraction_off_profitable": 0.2890625
+        },
+        {
+          "other_active": 1,
+          "off_minus_on": -0.08521693139132622,
+          "fraction_off_profitable": 0.2255859375
+        },
+        {
+          "other_active": 2,
+          "off_minus_on": -0.07311635281655304,
+          "fraction_off_profitable": 0.232421875
+        },
+        {
+          "other_active": 3,
+          "off_minus_on": -0.06353139430897081,
+          "fraction_off_profitable": 0.23681640625
+        },
+        {
+          "other_active": 4,
+          "off_minus_on": -0.08794164860352405,
+          "fraction_off_profitable": 0.03515625
+        }
+      ]
+    },
+    {
+      "seed": 175116,
+      "mode": "RNN_RESOURCE",
+      "groups": 512,
+      "population_sha256": "bb2cbcc91322211f800f8ca70f50ddc9c05e23b9b7022cbcc193843cfd2a94c7",
+      "Q_all_on": 0.5162522298324621,
+      "Q_all_off": 1.427610398995228e-15,
+      "all_on_restricted_nash": 1.0,
+      "all_off_restricted_nash": 0.0,
+      "all_off_pareto_improvement": 0.0,
+      "strong_trap_fraction": 0.0,
+      "no_pure_restricted_nash": 0.0,
+      "unilateral_off_private_gain": -0.10272757390447612,
+      "unilateral_off_profitable_fraction": 0.0,
+      "all_on_regret_mean": 0.0,
+      "by_other_active": [
+        {
+          "other_active": 0,
+          "off_minus_on": -0.27833167099412215,
+          "fraction_off_profitable": 0.0
+        },
+        {
+          "other_active": 1,
+          "off_minus_on": -0.2795091903202035,
+          "fraction_off_profitable": 0.0
+        },
+        {
+          "other_active": 2,
+          "off_minus_on": -0.2721680848965304,
+          "fraction_off_profitable": 0.0
+        },
+        {
+          "other_active": 3,
+          "off_minus_on": -0.15093647229742552,
+          "fraction_off_profitable": 0.0
+        },
+        {
+          "other_active": 4,
+          "off_minus_on": -0.10272757390447612,
+          "fraction_off_profitable": 0.0
+        }
+      ]
+    },
+    {
+      "seed": 175116,
+      "mode": "LINEAR_FULL",
+      "groups": 512,
+      "population_sha256": "54f805369dba8095b1f9313d000d29bebaf846c1789b943c7b70f09591c3e082",
+      "Q_all_on": 0.7800342678083939,
+      "Q_all_off": 0.7800342678083939,
+      "all_on_restricted_nash": 1.0,
+      "all_off_restricted_nash": 1.0,
+      "all_off_pareto_improvement": 0.0,
+      "strong_trap_fraction": 0.0,
+      "no_pure_restricted_nash": 0.0,
+      "unilateral_off_private_gain": 0.0,
+      "unilateral_off_profitable_fraction": 0.0,
+      "all_on_regret_mean": 0.0,
+      "by_other_active": [
+        {
+          "other_active": 0,
+          "off_minus_on": 0.0,
+          "fraction_off_profitable": 0.0
+        },
+        {
+          "other_active": 1,
+          "off_minus_on": 0.0,
+          "fraction_off_profitable": 0.0
+        },
+        {
+          "other_active": 2,
+          "off_minus_on": 0.0,
+          "fraction_off_profitable": 0.0
+        },
+        {
+          "other_active": 3,
+          "off_minus_on": 0.0,
+          "fraction_off_profitable": 0.0
+        },
+        {
+          "other_active": 4,
+          "off_minus_on": 0.0,
+          "fraction_off_profitable": 0.0
+        }
+      ]
+    }
+  ],
+  "V179": [
+    {
+      "contrast": "government",
+      "estimate": 0.19153182491405044,
+      "se_CR2": 0.09013402949389344,
+      "df_Satterthwaite": 64.01695367681755,
+      "ci95": [
+        0.011469319724881327,
+        0.3715943301032195
+      ],
+      "p_two_sided": 0.03745517471130607
+    },
+    {
+      "contrast": "public",
+      "estimate": -0.0031348342160126747,
+      "se_CR2": 0.07842460698888792,
+      "df_Satterthwaite": 62.8688288089071,
+      "ci95": [
+        -0.15986030535076948,
+        0.1535906369187441
+      ],
+      "p_two_sided": 0.9682416525352501
+    },
+    {
+      "contrast": "government_minus_public",
+      "estimate": 0.19466665913006312,
+      "se_CR2": 0.1456346563731853,
+      "df_Satterthwaite": 38.926244660902505,
+      "ci95": [
+        -0.09992508432629152,
+        0.48925840258641773
+      ],
+      "p_two_sided": 0.18908818952118311
+    }
+  ],
+  "retained_failures": [
+    {
+      "study": "V175",
+      "criterion": "Generic private memory Q>=.70 in both seeds",
+      "outcome": "failed2/2; full-information RNN diagnostic also failed2/2"
+    },
+    {
+      "study": "V176",
+      "criterion": "High capacity without variable sensory input",
+      "outcome": "failed; recurrence helps private policies but does not remove need for private feedback"
+    },
+    {
+      "study": "V177",
+      "criterion": "Strong ex-post Pareto trap in >=50% groups in both full-RNN populations",
+      "outcome": "failed:0% and4.296875%"
+    },
+    {
+      "study": "V178",
+      "criterion": "Affine private >=.70 in6/8 and median gain>=.20",
+      "outcome": "failed0/8; M16 cancelled as preregistered"
+    },
+    {
+      "study": "V180",
+      "criterion": "Maintenance collapse in>=6/8",
+      "outcome": "failed1/8; retained heterogeneity"
+    },
+    {
+      "study": "V180",
+      "criterion": "Common destructive profitable bias in four held-out populations",
+      "outcome": "failed; minimax screen selected b=0"
+    },
+    {
+      "study": "V179",
+      "criterion": "Human government-public effect difference established",
+      "outcome": "not established; contrast post hoc, CI95[-.09993,.48926]"
+    }
+  ]
+}
