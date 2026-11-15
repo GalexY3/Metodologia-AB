@@ -1,0 +1,57 @@
+{
+  "checks": [
+    {
+      "field": "forward",
+      "error": 0.0,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "field": "gradient_message",
+      "error": 0.0,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "field": "gradient_context",
+      "error": 0.0,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "field": "gradient_output",
+      "error": 1.1102230246251565e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "field": "AdamW_message",
+      "error": 0.0,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "field": "AdamW_context",
+      "error": 0.0,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "field": "AdamW_output",
+      "error": 6.938893903907228e-18,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "field": "other_history_gradient",
+      "error": 0.0,
+      "tolerance": 0,
+      "passed": true
+    }
+  ],
+  "failures": [],
+  "urn_list_reference_batches": 40,
+  "actor_gradient_isolation": true,
+  "no_parameters_shared_between_histories": true,
+  "scientific_training_executed": false
+}
