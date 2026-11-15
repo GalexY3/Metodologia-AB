@@ -3,7 +3,7 @@ $taskProject = $PSScriptRoot
 $taskRepo = (Resolve-Path (Join-Path $taskProject '..\..\..')).Path
 $taskPrefix = 'proyectos/coordinacion-funcional-intergeneracional/v19_voluntary_exchange/'
 $taskArchiveDir = Join-Path $taskProject 'research/V175_V180_20261115'
-$taskExpectedRemote = '2766f863cda02bff7cd67eebeb8a682de358065e'
+$taskExpectedRemote = '9404824721694a3d91c81dddb9f49aa46afd3284'
 $taskBranch = 'research/aldea-memory-v175-20261115'
 $taskRef = 'refs/heads/' + $taskBranch
 
@@ -21,7 +21,7 @@ $taskIndexOriginal = (Invoke-TaskGit rev-parse --git-path index).Trim()
 if (-not [IO.Path]::IsPathRooted($taskIndexOriginal)) { $taskIndexOriginal = Join-Path $taskRepo $taskIndexOriginal }
 $taskIndexOriginal = (Resolve-Path -LiteralPath $taskIndexOriginal).Path
 $taskIndexShaBefore = (Get-FileHash -LiteralPath $taskIndexOriginal -Algorithm SHA256).Hash
-$taskTemporaryIndex = Join-Path $taskArchiveDir 'git_publish_attempt2.index'
+$taskTemporaryIndex = Join-Path $taskArchiveDir 'git_publish_exact_bytes.index'
 if (Test-Path -LiteralPath $taskTemporaryIndex) { throw 'Task index exists; inspect it rather than overwriting.' }
 $taskReceiptPath = Join-Path $taskArchiveDir 'PUBLICATION_RECEIPT.json'
 if (Test-Path -LiteralPath $taskReceiptPath) { throw 'A publication receipt already exists.' }
@@ -36,7 +36,7 @@ $taskFiles = @(
  'v177_cognitive_gate_game.py','v178_private_affine_rival.py','v179_download_cpr_evidence.py',
  'v179_profile_cpr_archive.py','v179_replicate_waterway_effects.py','v180_open_policy_space.py',
  'close_v175_v180.py','v180_register_and_integrate.py','v180_verify_remote_prereg.py',
- 'archive_v175_v180.py','publish_v175_v180.ps1','REPRODUCE_V175_V180.md','V175_REPRODUCTION.md',
+ 'archive_v175_v180.py','publish_v175_v180.ps1','v180_verify_delivery.py','REPRODUCE_V175_V180.md','V175_REPRODUCTION.md',
  'PREREG_V175_LEARNED_ECOLOGICAL_MEMORY.md','PREREG_V176_FROZEN_MEMORY_CAUSAL.md',
  'PREREG_V177_COGNITIVE_GATE_GAME.md','PREREG_V178_PRIVATE_AFFINE_RIVAL.md','PREREG_V180_OPEN_POLICY_SPACE.md',
  'INICIO_INVESTIGACION_CIENTIFICA.md','handoff_codex/ESTADO_20261115_V180.md',
@@ -64,21 +64,23 @@ try {
     foreach ($taskRelative in $taskFiles) {
         $taskAbsolute = Join-Path $taskProject $taskRelative
         if (-not (Test-Path -LiteralPath $taskAbsolute -PathType Leaf)) { throw "Missing payload: $taskRelative" }
-        $taskBlob = (Invoke-TaskGit hash-object -w -- $taskAbsolute).Trim()
+        $taskBlob = (Invoke-TaskGit hash-object -w --no-filters -- $taskAbsolute).Trim()
         $taskRepoPath = $taskPrefix + $taskRelative
         $null = Invoke-TaskGit update-index --add --cacheinfo 100644 $taskBlob $taskRepoPath
     }
     $taskTree = (Invoke-TaskGit write-tree).Trim()
     $taskMessageFile = Join-Path $taskArchiveDir 'git_publish_message.txt'
     $taskMessage = @'
-research: publish V175–V180 evidence and integrated TFM with failed gates
+research: preserve exact V175–V180 bytes across Windows Git filters
 
 Preserve 66 completed evolutions, frozen-policy causal audits and an independent
 Python reconstruction of published human monitoring results. Retain failed
 capacity, Pareto-trap, affine-rival, maintenance-collapse and invasion criteria.
 Historical CT2 remains 61; no N2/N3 accreditation or external validation claim.
 
-Include a per-member verified evidence ZIP and the integrated working manuscript.
+Retain the initial publication and correct text line-ending normalization.
+Store exact blob bytes and an identical embedded/outer manifest. Scientific
+results, preregistrations and manuscript claims are unchanged.
 '@
     [IO.File]::WriteAllText($taskMessageFile,$taskMessage,[Text.UTF8Encoding]::new($false))
     $taskCommit = (Invoke-TaskGit commit-tree $taskTree -p $taskExpectedRemote -F $taskMessageFile).Trim()

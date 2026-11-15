@@ -1,6 +1,6 @@
 # Reproducir el bloque V175–V180
 
-El paquete de evidencia se extrae en un directorio que actúe como raíz de `v19_voluntary_exchange`. Preservar cualquier salida existente. Los ejecutores crean directorios nuevos y rechazan sobrescribirlos. Para repetir las evoluciones, utilizar otra copia limpia; para inspeccionarlas basta cargar las poblaciones, curvas y matrices guardadas.
+El paquete de evidencia se extrae en un directorio que actúe como raíz de `v19_voluntary_exchange`. Preservar cualquier salida existente. Los ejecutores crean directorios nuevos y rechazan sobrescribirlos. Para repetir las evoluciones, utilizar otra copia limpia; para inspeccionarlas basta cargar las poblaciones, curvas y matrices guardadas. El ZIP preserva los bytes exactos, incluidos saltos de línea. Para verificar hashes directamente en una nueva copia Git, clonar con `git -c core.autocrlf=false clone ...`; no cambiar silenciosamente la configuración de una copia de trabajo existente. La publicación usa `hash-object --no-filters` para conservar la identidad de los archivos.
 
 ## Dependencias y recursos
 

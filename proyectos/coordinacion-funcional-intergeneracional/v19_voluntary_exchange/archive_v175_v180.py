@@ -108,6 +108,7 @@ The user local branch,index and preexisting work are preserved. No PR or unsolic
          'v177_cognitive_gate_game.py','v178_private_affine_rival.py','v179_download_cpr_evidence.py',
          'v179_profile_cpr_archive.py','v179_replicate_waterway_effects.py','v180_open_policy_space.py',
          'close_v175_v180.py','v180_register_and_integrate.py','archive_v175_v180.py','v180_verify_remote_prereg.py',
+         'v180_verify_delivery.py','publish_v175_v180.ps1',
          'literatura/generate_bibliography.py','v169_local_private_contract_learning.py']
     for name in own:add(name)
     for _,_,_,protocol in freeze_specs:add(protocol)
@@ -142,7 +143,7 @@ The user local branch,index and preexisting work are preserved. No PR or unsolic
     assert not any(p.name.startswith('Itao_ds_game_') or p.name.startswith('Buntaine2021_UrbanWaterways_') for p in selected)
     payload=[dict(path=p.relative_to(ROOT).as_posix(),bytes=p.stat().st_size,sha256=sha(p)) for p in sorted(selected)]
     manifest=dict(scope='Own evidence and selected prior context; originals excluded as documented.',files=payload)
-    manifest_text=json.dumps(manifest,ensure_ascii=False,indent=2)+'\n';(OUT/'SHA256.json').write_text(manifest_text,encoding='utf8')
+    manifest_text=json.dumps(manifest,ensure_ascii=False,indent=2)+'\n';(OUT/'SHA256.json').write_bytes(manifest_text.encode('utf8'))
     archive=OUT/'EVIDENCE.zip';assert not archive.exists()
     with zipfile.ZipFile(archive,'x',compression=zipfile.ZIP_DEFLATED,compresslevel=6) as z:
         for r in payload:z.write(ROOT/r['path'],r['path'])
@@ -156,7 +157,9 @@ The user local branch,index and preexisting work are preserved. No PR or unsolic
        sha256=sha(archive),payload_files=len(payload),manifest_members=1,CRC_verified=True,
        every_member_SHA256_verified=True,source_payload_hashes_verified=True,
        human_raw_ZIP_excluded=True,third_party_unlicensed_code_excluded=True,
-       CT2_historical=61,N2=0,N3=0,goal_active=True)
+       CT2_historical=61,N2=0,N3=0,goal_active=True,packaging_revision=2,
+       supersedes_archive_sha256='2b6e2b650b73d7fcee9816774a2d5d310dede9dd5c3b45d3792dad12d67b5587',
+       revision_reason='Exact manifest bytes and Git blob roundtrip; scientific inputs and results unchanged.')
     put(OUT/'PACKAGE_RECEIPT.json',receipt)
     print('ARCHIVED',json.dumps(receipt),flush=True)
 
