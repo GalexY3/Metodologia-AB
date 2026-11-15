@@ -1,0 +1,188 @@
+{
+  "checks": [
+    {
+      "fixture": 0,
+      "check": "loss_unbiased",
+      "error": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "fixture": 0,
+      "check": "gradient_unbiased",
+      "error": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "fixture": 0,
+      "check": "joint_accuracy_factorization",
+      "error": 2.7755575615628914e-17,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "fixture": 1,
+      "check": "loss_unbiased",
+      "error": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "fixture": 1,
+      "check": "gradient_unbiased",
+      "error": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "fixture": 1,
+      "check": "joint_accuracy_factorization",
+      "error": 2.7755575615628914e-17,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "fixture": 2,
+      "check": "loss_unbiased",
+      "error": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "fixture": 2,
+      "check": "gradient_unbiased",
+      "error": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "fixture": 2,
+      "check": "joint_accuracy_factorization",
+      "error": 8.326672684688674e-17,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "fixture": 3,
+      "check": "loss_unbiased",
+      "error": 4.440892098500626e-16,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "fixture": 3,
+      "check": "gradient_unbiased",
+      "error": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "fixture": 3,
+      "check": "joint_accuracy_factorization",
+      "error": 2.498001805406602e-16,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "fixture": 4,
+      "check": "loss_unbiased",
+      "error": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "fixture": 4,
+      "check": "gradient_unbiased",
+      "error": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "fixture": 4,
+      "check": "joint_accuracy_factorization",
+      "error": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "fixture": 5,
+      "check": "loss_unbiased",
+      "error": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "fixture": 5,
+      "check": "gradient_unbiased",
+      "error": 0.0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "fixture": 5,
+      "check": "joint_accuracy_factorization",
+      "error": 5.551115123125783e-17,
+      "tolerance": 1e-12,
+      "passed": true
+    }
+  ],
+  "failures": [],
+  "contexts": [
+    {
+      "seed": 192115,
+      "context_seeds": [
+        192000,
+        192001
+      ],
+      "local_train": 384,
+      "local_test": 577,
+      "all_marginals_seen": true,
+      "reversed_pair_leakage": false,
+      "diagonal_pairs_always_held_out": true
+    },
+    {
+      "seed": 192116,
+      "context_seeds": [
+        192002,
+        192003
+      ],
+      "local_train": 384,
+      "local_test": 577,
+      "all_marginals_seen": true,
+      "reversed_pair_leakage": false,
+      "diagonal_pairs_always_held_out": true
+    },
+    {
+      "seed": 192117,
+      "context_seeds": [
+        192004,
+        192005
+      ],
+      "local_train": 384,
+      "local_test": 577,
+      "all_marginals_seen": true,
+      "reversed_pair_leakage": false,
+      "diagonal_pairs_always_held_out": true
+    },
+    {
+      "seed": 192118,
+      "context_seeds": [
+        192006,
+        192007
+      ],
+      "local_train": 384,
+      "local_test": 577,
+      "all_marginals_seen": true,
+      "reversed_pair_leakage": false,
+      "diagonal_pairs_always_held_out": true
+    }
+  ],
+  "feedback_table_entries_checked": 1848,
+  "equal_expected_loss_and_gradient_verified": true,
+  "private_network_gradients_isolated": true,
+  "action_sampler_epsilon_greedy": true,
+  "bandit_loss_has_no_counterfactual_or_local_truth_input": true,
+  "neural_training_executed": false,
+  "known_identities_not_originality": true
+}

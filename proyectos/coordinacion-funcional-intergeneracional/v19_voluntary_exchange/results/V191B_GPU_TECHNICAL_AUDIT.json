@@ -1,0 +1,21 @@
+{
+  "checks": [
+    {
+      "family": "FULL",
+      "synthetic_updates": 1,
+      "role_parameters_disjoint": true,
+      "first_update_leaves_other_network_bit_identical": true,
+      "both_losses_finite": true
+    },
+    {
+      "family": "BANDIT",
+      "synthetic_updates": 1,
+      "role_parameters_disjoint": true,
+      "first_update_leaves_other_network_bit_identical": true,
+      "both_losses_finite": true
+    }
+  ],
+  "failures": [],
+  "scientific_training_executed": false,
+  "synthetic_fixture_only": true
+}
