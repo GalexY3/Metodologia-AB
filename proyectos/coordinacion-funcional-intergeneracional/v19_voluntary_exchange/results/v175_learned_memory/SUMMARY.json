@@ -1,0 +1,249 @@
+{
+  "freeze": {
+    "study": "V175",
+    "prereg_commit": "e5dd0826c29f97d246d80d5a8e8f16072e56552b",
+    "source_sha256": "17cfa930f47407f0f7b8685352a97311c046aa4d1f2899003f33fe4d06dd8c06",
+    "protocol_sha256": "c1e3e4f9f7e49354ca958634b44ad55396a00868598ece50b77b1530542d7f19",
+    "resource_limits_sha256": "53fc43054ce43e029dbf497b3d7d9a5614d136266bfdd8f6244e38b9663f2961",
+    "pre_run_audit_sha256": "583dbd8855d34ef500b1fc8d743e929ba6cd7b6cae4a33fd46455d2a3b39c22a",
+    "modes": {
+      "RNN_RESOURCE": 0,
+      "RNN_FULL": 1,
+      "MLP_RESOURCE": 2,
+      "LINEAR_FULL": 3,
+      "FILTER_RESOURCE": 4
+    },
+    "seeds": [
+      175115,
+      175116
+    ],
+    "groups": 100,
+    "group_size": 5,
+    "steps": 1000,
+    "generations": 3000,
+    "genes": 37,
+    "init_sd": 0.1,
+    "mutation_sd": 0.1,
+    "numpy": "2.5.4",
+    "numba": "0.68.0",
+    "max_workers": 2,
+    "threads_per_worker": 3
+  },
+  "results": [
+    {
+      "seed": 175115,
+      "mode": "RNN_RESOURCE",
+      "Q_tail": 0.4702791258059923,
+      "initial_genotype_sha256": "bea1a57f486ec60e2bd8ddc2a1f4fc6bcb603b7f6aaea733fe6b1e3dd64d0c09",
+      "elapsed": 72.4702849000023,
+      "resource_limits": {
+        "pid": 25540,
+        "priority": "BelowNormal",
+        "priority_code": 16384,
+        "affinity": 16515072,
+        "numba_threads": 3
+      },
+      "all_generations": 3000,
+      "individual_fitness_selection": true,
+      "observer_coefficients_supplied": false,
+      "policy_parameters_learned_by_evolution": true
+    },
+    {
+      "seed": 175115,
+      "mode": "RNN_FULL",
+      "Q_tail": 0.4699947960574312,
+      "initial_genotype_sha256": "bea1a57f486ec60e2bd8ddc2a1f4fc6bcb603b7f6aaea733fe6b1e3dd64d0c09",
+      "elapsed": 83.99047980000614,
+      "resource_limits": {
+        "pid": 26496,
+        "priority": "BelowNormal",
+        "priority_code": 16384,
+        "affinity": 16515072,
+        "numba_threads": 3
+      },
+      "all_generations": 3000,
+      "individual_fitness_selection": true,
+      "observer_coefficients_supplied": false,
+      "policy_parameters_learned_by_evolution": true
+    },
+    {
+      "seed": 175115,
+      "mode": "LINEAR_FULL",
+      "Q_tail": 0.8116291763476884,
+      "initial_genotype_sha256": "bea1a57f486ec60e2bd8ddc2a1f4fc6bcb603b7f6aaea733fe6b1e3dd64d0c09",
+      "elapsed": 8.717411600002379,
+      "resource_limits": {
+        "pid": 26496,
+        "priority": "BelowNormal",
+        "priority_code": 16384,
+        "affinity": 16515072,
+        "numba_threads": 3
+      },
+      "all_generations": 3000,
+      "individual_fitness_selection": true,
+      "observer_coefficients_supplied": false,
+      "policy_parameters_learned_by_evolution": true
+    },
+    {
+      "seed": 175115,
+      "mode": "FILTER_RESOURCE",
+      "Q_tail": 0.3098027992159844,
+      "initial_genotype_sha256": "bea1a57f486ec60e2bd8ddc2a1f4fc6bcb603b7f6aaea733fe6b1e3dd64d0c09",
+      "elapsed": 16.026251500006765,
+      "resource_limits": {
+        "pid": 26496,
+        "priority": "BelowNormal",
+        "priority_code": 16384,
+        "affinity": 16515072,
+        "numba_threads": 3
+      },
+      "all_generations": 3000,
+      "individual_fitness_selection": true,
+      "observer_coefficients_supplied": false,
+      "policy_parameters_learned_by_evolution": true
+    },
+    {
+      "seed": 175115,
+      "mode": "MLP_RESOURCE",
+      "Q_tail": 0.0015360602374870599,
+      "initial_genotype_sha256": "bea1a57f486ec60e2bd8ddc2a1f4fc6bcb603b7f6aaea733fe6b1e3dd64d0c09",
+      "elapsed": 49.988555600000836,
+      "resource_limits": {
+        "pid": 25540,
+        "priority": "BelowNormal",
+        "priority_code": 16384,
+        "affinity": 16515072,
+        "numba_threads": 3
+      },
+      "all_generations": 3000,
+      "individual_fitness_selection": true,
+      "observer_coefficients_supplied": false,
+      "policy_parameters_learned_by_evolution": true
+    },
+    {
+      "seed": 175116,
+      "mode": "RNN_RESOURCE",
+      "Q_tail": 0.515990113675648,
+      "initial_genotype_sha256": "7e8580097fa3a9df75776475414593fe2226cac94d76308e2c2f2d980f87dff1",
+      "elapsed": 68.94091090000438,
+      "resource_limits": {
+        "pid": 26496,
+        "priority": "BelowNormal",
+        "priority_code": 16384,
+        "affinity": 16515072,
+        "numba_threads": 3
+      },
+      "all_generations": 3000,
+      "individual_fitness_selection": true,
+      "observer_coefficients_supplied": false,
+      "policy_parameters_learned_by_evolution": true
+    },
+    {
+      "seed": 175116,
+      "mode": "RNN_FULL",
+      "Q_tail": 0.5132279881542307,
+      "initial_genotype_sha256": "7e8580097fa3a9df75776475414593fe2226cac94d76308e2c2f2d980f87dff1",
+      "elapsed": 64.63423889999831,
+      "resource_limits": {
+        "pid": 25540,
+        "priority": "BelowNormal",
+        "priority_code": 16384,
+        "affinity": 16515072,
+        "numba_threads": 3
+      },
+      "all_generations": 3000,
+      "individual_fitness_selection": true,
+      "observer_coefficients_supplied": false,
+      "policy_parameters_learned_by_evolution": true
+    },
+    {
+      "seed": 175116,
+      "mode": "LINEAR_FULL",
+      "Q_tail": 0.7905127238062098,
+      "initial_genotype_sha256": "7e8580097fa3a9df75776475414593fe2226cac94d76308e2c2f2d980f87dff1",
+      "elapsed": 8.582543500000611,
+      "resource_limits": {
+        "pid": 25540,
+        "priority": "BelowNormal",
+        "priority_code": 16384,
+        "affinity": 16515072,
+        "numba_threads": 3
+      },
+      "all_generations": 3000,
+      "individual_fitness_selection": true,
+      "observer_coefficients_supplied": false,
+      "policy_parameters_learned_by_evolution": true
+    },
+    {
+      "seed": 175116,
+      "mode": "FILTER_RESOURCE",
+      "Q_tail": 0.3029867265864491,
+      "initial_genotype_sha256": "7e8580097fa3a9df75776475414593fe2226cac94d76308e2c2f2d980f87dff1",
+      "elapsed": 15.282970800006296,
+      "resource_limits": {
+        "pid": 25540,
+        "priority": "BelowNormal",
+        "priority_code": 16384,
+        "affinity": 16515072,
+        "numba_threads": 3
+      },
+      "all_generations": 3000,
+      "individual_fitness_selection": true,
+      "observer_coefficients_supplied": false,
+      "policy_parameters_learned_by_evolution": true
+    },
+    {
+      "seed": 175116,
+      "mode": "MLP_RESOURCE",
+      "Q_tail": 0.0038246336520240893,
+      "initial_genotype_sha256": "7e8580097fa3a9df75776475414593fe2226cac94d76308e2c2f2d980f87dff1",
+      "elapsed": 45.471385899996676,
+      "resource_limits": {
+        "pid": 26496,
+        "priority": "BelowNormal",
+        "priority_code": 16384,
+        "affinity": 16515072,
+        "numba_threads": 3
+      },
+      "all_generations": 3000,
+      "individual_fitness_selection": true,
+      "observer_coefficients_supplied": false,
+      "policy_parameters_learned_by_evolution": true
+    }
+  ],
+  "tests": {
+    "175115": {
+      "Q": {
+        "RNN_RESOURCE": 0.4702791258059923,
+        "RNN_FULL": 0.4699947960574312,
+        "LINEAR_FULL": 0.8116291763476884,
+        "FILTER_RESOURCE": 0.3098027992159844,
+        "MLP_RESOURCE": 0.0015360602374870599
+      },
+      "memory_gain": 0.46874306556850526,
+      "generic_memory_capacity": false,
+      "generic_memory_gain": true,
+      "diagnostic_full_rnn_capacity": false,
+      "diagnostic_full_linear_capacity": true,
+      "structured_filter_capacity": false
+    },
+    "175116": {
+      "Q": {
+        "RNN_RESOURCE": 0.515990113675648,
+        "RNN_FULL": 0.5132279881542307,
+        "LINEAR_FULL": 0.7905127238062098,
+        "FILTER_RESOURCE": 0.3029867265864491,
+        "MLP_RESOURCE": 0.0038246336520240893
+      },
+      "memory_gain": 0.5121654800236238,
+      "generic_memory_capacity": false,
+      "generic_memory_gain": true,
+      "diagnostic_full_rnn_capacity": false,
+      "diagnostic_full_linear_capacity": true,
+      "structured_filter_capacity": false
+    }
+  },
+  "external_replication": false,
+  "N2": 0,
+  "scientific_novelty_not_accredited": true
+}
