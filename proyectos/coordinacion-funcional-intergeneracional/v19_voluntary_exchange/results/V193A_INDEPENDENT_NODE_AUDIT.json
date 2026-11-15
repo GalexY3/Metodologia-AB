@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-15",
+  "status": "PASS",
+  "comparisons": 224,
+  "comparison_misses": 0,
+  "max_abs_error": 3.3306690738754696e-16,
+  "theory_ci_misses": 0,
+  "n_worlds": 64,
+  "rows": 32,
+  "thresholds": [
+    {
+      "k": 4,
+      "rule": "UNANIMITY",
+      "damage_break_even": 1.9895833333333326
+    },
+    {
+      "k": 4,
+      "rule": "MAJORITY",
+      "damage_break_even": -2.020833333333335
+    },
+    {
+      "k": 8,
+      "rule": "UNANIMITY",
+      "damage_break_even": 4.177403353814643
+    },
+    {
+      "k": 8,
+      "rule": "MAJORITY",
+      "damage_break_even": -1.800019201228879
+    },
+    {
+      "k": 12,
+      "rule": "UNANIMITY",
+      "damage_break_even": 5.105755428429355
+    },
+    {
+      "k": 12,
+      "rule": "MAJORITY",
+      "damage_break_even": -1.7654691606829152
+    },
+    {
+      "k": 24,
+      "rule": "UNANIMITY",
+      "damage_break_even": 5.705727814223098
+    },
+    {
+      "k": 24,
+      "rule": "MAJORITY",
+      "damage_break_even": -1.750748979313515
+    }
+  ],
+  "source_python_sha": "6f6b6a5ca2c1f0bbb4d7b285828291236e35f1b6c5727393edd7afa92e1a6160",
+  "preregistration_sha256": "4c5fc7131b6ffc8c266d6fd8195dc5675acbb136050ed3225f8bc362c2057a84",
+  "caveat": "pure arithmetic cross-engine agreement; common formula, not independent scientific replication"
+}

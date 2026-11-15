@@ -871,3 +871,19 @@ Relates delayed generalization and primacy bias to feature learning; proposes ef
 Zero-error functional communication, side information, characteristic graphs and graph colorings. Restricción: Confusability/coloring constraints are classical. Our finite counting bound and designed support are not claimed as new information-theoretic theorems. Alcance: primary publisher abstract/introduction, definitions1–6 and characteristic-graph/coloring equivalence in section3.1; not full paper.
 
 La revisión sigue siendo exploratoria. Los nuevos registros no constituyen una búsqueda sistemática ni acreditan prioridad por ausencia de resultados de búsqueda. El registro PMLR de Lyle difiere del PDF en fecha y orden de autores; se conserva la discrepancia en el catálogo.
+
+## Antecedentes de V191–V194
+
+**Klein, Einat; Mislovaty, Rachel; Kanter, Ido; Ruttor, Andreas; Kinzel, Wolfgang (2004).** [Synchronization of neural networks by mutual learning and its application to cryptography](https://proceedings.neurips.cc/paper/2004/hash/5a45828dead8c065099cb653a2185df1-Abstract.html).
+
+Analytical and simulated synchronization of mutually learning neural networks. Restricción: Coordination and synchronization between separate neural networks are longstanding prior work; a delayed test curve is not enough for a new collective mechanism. Alcance: primary metadata, abstract, introduction and section2 mutual-perceptron learning; remaining cryptographic sections not fully reviewed.
+
+**Ciosek, Kamil; Whiteson, Shimon (2020).** [Expected Policy Gradients for Reinforcement Learning](https://www.jmlr.org/papers/v21/18-012.html).
+
+Integrates across actions in policy-gradient estimates and studies variance reduction. Restricción: Marginalization and generic variance reduction are not new. Our MSE-regression estimator identity is not claimed as EPG or a new algorithm. Alcance: primary JMLR metadata and abstract; full journal text not reviewed.
+
+**Kakade, Sham M.; Shalev-Shwartz, Shai; Tewari, Ambuj (2008).** [Efficient bandit algorithms for online multiclass prediction](https://doi.org/10.1145/1390156.1390212).
+
+Banditron learns multiclass predictions from correctness feedback and provides mistake bounds under its assumptions. Restricción: Binary feedback is not in itself an impossibility argument. Bounds for its linear predictor are not transferred to our neural game; Banditron was not executed. Alcance: primary ACM metadata and author-hosted PDF abstract/introduction; theorem proofs not fully reviewed.
+
+COMA ya constaba en el catálogo. Se consultaron de nuevo sus pasajes sobre crítico centralizado y baseline contrafactual. Esta revisión sigue siendo exploratoria y no sistemática; no se afirma prioridad por búsquedas sin coincidencias.

@@ -2,7 +2,7 @@
   "project": "Cooperación y división del trabajo MARL/TFM",
   "review_status": "exploratory-scoping; scope of primary-source review specified per entry; not systematic",
   "review_date": "2026-11-15",
-  "number_verified": 96,
+  "number_verified": 99,
   "pending": [],
   "references": [
     {
@@ -239,11 +239,12 @@
       "url": "https://ojs.aaai.org/index.php/AAAI/article/view/11794",
       "theme": "MARL",
       "contribution": "Crédito contrafactual y critic central para aprendizaje descentralizado.",
-      "our_experiments": "V87B y futura arquitectura",
+      "our_experiments": "V87B y futura arquitectura,V191–V194",
       "novelty_constraint": "COMA es distinto de nuestro baseline entre mundos; comparar sin llamar equivalentes.",
       "verification": "abstract-editorial",
       "checked_on": "2026-11-14",
-      "full_text_reviewed": false
+      "full_text_reviewed": false,
+      "V191_V194_review_scope": "primary abstract and critic/counterfactual-baseline method excerpts; original algorithm not executed"
     },
     {
       "id": "WangROMA2020",
@@ -1539,6 +1540,55 @@
       "verification": "primary publisher abstract/introduction, definitions1–6 and characteristic-graph/coloring equivalence in section3.1; not full paper",
       "checked_on": "2026-11-15",
       "full_text_reviewed": false
+    },
+    {
+      "id": "KleinEtAl2004MutualLearning",
+      "authors": "Klein, Einat; Mislovaty, Rachel; Kanter, Ido; Ruttor, Andreas; Kinzel, Wolfgang",
+      "year": 2004,
+      "title": "Synchronization of neural networks by mutual learning and its application to cryptography",
+      "container": "Advances in Neural Information Processing Systems17",
+      "doi": null,
+      "url": "https://proceedings.neurips.cc/paper/2004/hash/5a45828dead8c065099cb653a2185df1-Abstract.html",
+      "theme": "MUTUAL_LEARNING",
+      "contribution": "Analytical and simulated synchronization of mutually learning neural networks.",
+      "our_experiments": "V191–V194",
+      "novelty_constraint": "Coordination and synchronization between separate neural networks are longstanding prior work; a delayed test curve is not enough for a new collective mechanism.",
+      "verification": "primary metadata, abstract, introduction and section2 mutual-perceptron learning; remaining cryptographic sections not fully reviewed",
+      "full_text_reviewed": false,
+      "checked_on": "2026-11-15"
+    },
+    {
+      "id": "CiosekWhiteson2020EPG",
+      "authors": "Ciosek, Kamil; Whiteson, Shimon",
+      "year": 2020,
+      "title": "Expected Policy Gradients for Reinforcement Learning",
+      "container": "Journal of Machine Learning Research21(52):1–51",
+      "doi": null,
+      "url": "https://www.jmlr.org/papers/v21/18-012.html",
+      "theme": "CREDIT_VARIANCE",
+      "contribution": "Integrates across actions in policy-gradient estimates and studies variance reduction.",
+      "our_experiments": "V191–V194",
+      "novelty_constraint": "Marginalization and generic variance reduction are not new. Our MSE-regression estimator identity is not claimed as EPG or a new algorithm.",
+      "verification": "primary JMLR metadata and abstract; full journal text not reviewed",
+      "full_text_reviewed": false,
+      "version_note": "V191/V192 notes initially cited the2018arXiv version1801.03326; catalogue uses the2020JMLR journal version.",
+      "checked_on": "2026-11-15"
+    },
+    {
+      "id": "KakadeEtAl2008Banditron",
+      "authors": "Kakade, Sham M.; Shalev-Shwartz, Shai; Tewari, Ambuj",
+      "year": 2008,
+      "title": "Efficient bandit algorithms for online multiclass prediction",
+      "container": "ICML2008:440–447",
+      "doi": "10.1145/1390156.1390212",
+      "url": "https://doi.org/10.1145/1390156.1390212",
+      "theme": "BANDIT_CLASSIFICATION",
+      "contribution": "Banditron learns multiclass predictions from correctness feedback and provides mistake bounds under its assumptions.",
+      "our_experiments": "V194",
+      "novelty_constraint": "Binary feedback is not in itself an impossibility argument. Bounds for its linear predictor are not transferred to our neural game; Banditron was not executed.",
+      "verification": "primary ACM metadata and author-hosted PDF abstract/introduction; theorem proofs not fully reviewed",
+      "full_text_reviewed": false,
+      "checked_on": "2026-11-15"
     }
   ]
 }

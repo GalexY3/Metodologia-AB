@@ -1,3 +1,11 @@
+# Estado actualizado V194 — 15/11/2026
+
+V192 obtiene cuatro candidatos de generalización tardía en dos redes privadas. V193 refuta necesidad de coadaptación continua después de memorizar: congelar cualquiera de los compañeros conserva test local1.0 y pesos/momentos activos idénticos. V194 confirma capacidad binaria con oráculos, test medio.991778 frente a.032169con compañeros aprendientes. No se acredita institución material ni AB2/3.
+
+Informe: results/INFORME_V191_V194_20261115.md. Manuscrito: docs/TFM_MANUSCRITO_TRABAJO_V194.md. Reproducción: REPRODUCE_V191_V194.md. CT2 histórico61, rama nueva sin puntuación, N2=N3=0.
+
+---
+
 # Estado actualizado V190 — 15/11/2026
 
 V190 no produjo ninguna entrada en memorización perfecta con código comprimido entre las ocho historias LOW. No apareció el régimen previo necesario para estudiar la transición registrada. Se cierra esta arquitectura mínima —emisor tabular con feedback binario y receptor neuronal— como vía de identificación de grokking colectivo; no se concluye que el fenómeno sea imposible con otros agentes o tareas. En las 16 historias privadas V190, el receptor ya alcanza el techo de entrenamiento del código actual y el emisor no obtiene mejora inmediata cambiando una señal frente a ese receptor fijo. El sondeo restringe el cuello de botella a una convención compatible y su posible reorganización; no establece un equilibrio global.

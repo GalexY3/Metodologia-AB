@@ -1,0 +1,895 @@
+{
+  "date": "2026-11-15",
+  "status": "PASS",
+  "check_count": 151,
+  "failed": [],
+  "experimental_scenarios": 6,
+  "V195_effect_positive_with_CI_count": 5,
+  "V196_autonomous_plastic_retention_ge_75pct_count": 0,
+  "V196_keep_pulse_significant_by_CI_count": 6,
+  "causal_interpretation": "exogenously coordinated learning assists; not spontaneously created or self-maintaining institution",
+  "cannot_claim_N2": true,
+  "CT2": 61,
+  "N2": 0,
+  "N3": 0,
+  "report_sha256": "66d5900f6a355d1d1df79592a87e51a78587dd1b346023e16a9ddeccd3e632c5",
+  "rows": [
+    {
+      "k": 4,
+      "rule": "UNANIMITY",
+      "benchmark_private": 0.04844374999999983,
+      "iid": 0.16730312499999783,
+      "joint": 0.22239765624999752,
+      "joint_minus_iid_ci95": [
+        0.04335613281250024,
+        0.06699384765624955
+      ],
+      "initial_exact": 0.22257500000000005,
+      "no_pulse_plastic_end": 0.04971500000000001,
+      "retained_ratio_no_pulse": 0.22336291137818712,
+      "keep_pulse_plastic_end": 0.21233000000000005,
+      "retained_ratio_keep_pulse": 0.9539705717173986,
+      "keep_minus_without_ci95": [
+        0.15160487500000003,
+        0.17352500000000004
+      ]
+    },
+    {
+      "k": 4,
+      "rule": "MAJORITY",
+      "benchmark_private": 0.20251328124999834,
+      "iid": 0.26123515624999843,
+      "joint": 0.26628124999999814,
+      "joint_minus_iid_ci95": [
+        -0.008239863281250145,
+        0.017297343749999326
+      ],
+      "initial_exact": 0.2672725,
+      "no_pulse_plastic_end": 0.19616750000000005,
+      "retained_ratio_no_pulse": 0.7339606581298115,
+      "keep_pulse_plastic_end": 0.26510500000000004,
+      "retained_ratio_keep_pulse": 0.991890299226445,
+      "keep_minus_without_ci95": [
+        0.05677206250000001,
+        0.08062506250000002
+      ]
+    },
+    {
+      "k": 8,
+      "rule": "UNANIMITY",
+      "benchmark_private": 0.016196093750000164,
+      "iid": 0.08809787946428493,
+      "joint": 0.18055982142856836,
+      "joint_minus_iid_ci95": [
+        0.08315875279017639,
+        0.10174411551339037
+      ],
+      "initial_exact": 0.18041309371428577,
+      "no_pulse_plastic_end": 0.005348908571428572,
+      "retained_ratio_no_pulse": 0.029648117336203223,
+      "keep_pulse_plastic_end": 0.17710975657142863,
+      "retained_ratio_keep_pulse": 0.9816901474563231,
+      "keep_minus_without_ci95": [
+        0.1631975416285715,
+        0.18037347748571436
+      ]
+    },
+    {
+      "k": 8,
+      "rule": "MAJORITY",
+      "benchmark_private": 0.2619172991071418,
+      "iid": 0.3446450892857119,
+      "joint": 0.400770982142854,
+      "joint_minus_iid_ci95": [
+        0.04038693638392801,
+        0.07258842912946326
+      ],
+      "initial_exact": 0.4006664942857142,
+      "no_pulse_plastic_end": 0.25423566000000003,
+      "retained_ratio_no_pulse": 0.6345318703357942,
+      "keep_pulse_plastic_end": 0.3985620942857143,
+      "retained_ratio_keep_pulse": 0.9947477514840578,
+      "keep_minus_without_ci95": [
+        0.12622344121428572,
+        0.16229425549999998
+      ]
+    },
+    {
+      "k": 12,
+      "rule": "UNANIMITY",
+      "benchmark_private": 0.006365696022727331,
+      "iid": 0.044742755681818056,
+      "joint": 0.1406346590909076,
+      "joint_minus_iid_ci95": [
+        0.08756149147727152,
+        0.10438919566761218
+      ],
+      "initial_exact": 0.14024231574690912,
+      "no_pulse_plastic_end": 0.0003539966667431819,
+      "retained_ratio_no_pulse": 0.002524178703537872,
+      "keep_pulse_plastic_end": 0.1321926157847273,
+      "retained_ratio_keep_pulse": 0.9426014900045656,
+      "keep_minus_without_ci95": [
+        0.1245279755085763,
+        0.13927233582101378
+      ]
+    },
+    {
+      "k": 12,
+      "rule": "MAJORITY",
+      "benchmark_private": 0.3001686079545429,
+      "iid": 0.3964325994318145,
+      "joint": 0.44687485795454324,
+      "joint_minus_iid_ci95": [
+        0.028282553267046994,
+        0.07264331143466252
+      ],
+      "initial_exact": 0.44651889978938175,
+      "no_pulse_plastic_end": 0.29588099800727274,
+      "retained_ratio_no_pulse": 0.6626393600513588,
+      "keep_pulse_plastic_end": 0.4555757763234909,
+      "retained_ratio_keep_pulse": 1.0202832994043056,
+      "keep_minus_without_ci95": [
+        0.13919429945698908,
+        0.17894089806885816
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "check": "4_UNANIMITY_V194_exists",
+      "passed": true,
+      "detail": "C:\\Programaci\u00f3n\\MARL-million-144-20261110\\proyectos\\coordinacion-funcional-intergeneracional\\v19_voluntary_exchange\\results\\V194_PRIVATE_INFORMATION_LEARNING\\V194_k4_UNANIMITY_W32_G20_T8000.json"
+    },
+    {
+      "check": "4_UNANIMITY_V194_weights_exists",
+      "passed": true,
+      "detail": "C:\\Programaci\u00f3n\\MARL-million-144-20261110\\proyectos\\coordinacion-funcional-intergeneracional\\v19_voluntary_exchange\\results\\V194_PRIVATE_INFORMATION_LEARNING\\V194_k4_UNANIMITY_W32_G20_T8000.npz"
+    },
+    {
+      "check": "4_UNANIMITY_V194A_exists",
+      "passed": true,
+      "detail": "C:\\Programaci\u00f3n\\MARL-million-144-20261110\\proyectos\\coordinacion-funcional-intergeneracional\\v19_voluntary_exchange\\results\\V194_PRIVATE_INFORMATION_LEARNING\\V194A_exact_strategic_k4_UNANIMITY.json"
+    },
+    {
+      "check": "4_UNANIMITY_V195_exists",
+      "passed": true,
+      "detail": "C:\\Programaci\u00f3n\\MARL-million-144-20261110\\proyectos\\coordinacion-funcional-intergeneracional\\v19_voluntary_exchange\\results\\V195_CORRELATED_EXPLORATION\\V195_k4_UNANIMITY_W32_G20_T8000.json"
+    },
+    {
+      "check": "4_UNANIMITY_V195_weights_exists",
+      "passed": true,
+      "detail": "C:\\Programaci\u00f3n\\MARL-million-144-20261110\\proyectos\\coordinacion-funcional-intergeneracional\\v19_voluntary_exchange\\results\\V195_CORRELATED_EXPLORATION\\V195_k4_UNANIMITY_W32_G20_T8000.npz"
+    },
+    {
+      "check": "4_UNANIMITY_V195A_exists",
+      "passed": true,
+      "detail": "C:\\Programaci\u00f3n\\MARL-million-144-20261110\\proyectos\\coordinacion-funcional-intergeneracional\\v19_voluntary_exchange\\results\\V195_CORRELATED_EXPLORATION\\V195A_FROZEN_NO_PULSE_AUDIT_k4_UNANIMITY.json"
+    },
+    {
+      "check": "4_UNANIMITY_V196_exists",
+      "passed": true,
+      "detail": "C:\\Programaci\u00f3n\\MARL-million-144-20261110\\proyectos\\coordinacion-funcional-intergeneracional\\v19_voluntary_exchange\\results\\V196_POST_PULSE_PLASTICITY\\V196_k4_UNANIMITY_W32_G20_H8000.json"
+    },
+    {
+      "check": "4_UNANIMITY_V196_weights_exists",
+      "passed": true,
+      "detail": "C:\\Programaci\u00f3n\\MARL-million-144-20261110\\proyectos\\coordinacion-funcional-intergeneracional\\v19_voluntary_exchange\\results\\V196_POST_PULSE_PLASTICITY\\V196_k4_UNANIMITY_W32_G20_H8000.npz"
+    },
+    {
+      "check": "4_UNANIMITY_V194_source_SHA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "4_UNANIMITY_V195_source_SHA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "4_UNANIMITY_V196_source_SHA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "4_UNANIMITY_V194_protocol",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "4_UNANIMITY_V195_protocol",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "4_UNANIMITY_V196_protocol",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "4_UNANIMITY_V195A_binded_V195",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "4_UNANIMITY_V196_binded_V195_weights",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "4_UNANIMITY_V196_exact_policies_match_prior",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "4_UNANIMITY_training_pulse_intact",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "4_UNANIMITY_evaluation_has_no_pulse",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "4_UNANIMITY_analytic_independent_observation_within_margin",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "4_UNANIMITY_source_value_reproduced",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "4_UNANIMITY_frozen_unchanged",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "4_UNANIMITY_no_pulse_actually_zero",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "4_UNANIMITY_support_pulse_at_10_percent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "4_MAJORITY_V194_exists",
+      "passed": true,
+      "detail": "C:\\Programaci\u00f3n\\MARL-million-144-20261110\\proyectos\\coordinacion-funcional-intergeneracional\\v19_voluntary_exchange\\results\\V194_PRIVATE_INFORMATION_LEARNING\\V194_k4_MAJORITY_W32_G20_T8000.json"
+    },
+    {
+      "check": "4_MAJORITY_V194_weights_exists",
+      "passed": true,
+      "detail": "C:\\Programaci\u00f3n\\MARL-million-144-20261110\\proyectos\\coordinacion-funcional-intergeneracional\\v19_voluntary_exchange\\results\\V194_PRIVATE_INFORMATION_LEARNING\\V194_k4_MAJORITY_W32_G20_T8000.npz"
+    },
+    {
+      "check": "4_MAJORITY_V194A_exists",
+      "passed": true,
+      "detail": "C:\\Programaci\u00f3n\\MARL-million-144-20261110\\proyectos\\coordinacion-funcional-intergeneracional\\v19_voluntary_exchange\\results\\V194_PRIVATE_INFORMATION_LEARNING\\V194A_exact_strategic_k4_MAJORITY.json"
+    },
+    {
+      "check": "4_MAJORITY_V195_exists",
+      "passed": true,
+      "detail": "C:\\Programaci\u00f3n\\MARL-million-144-20261110\\proyectos\\coordinacion-funcional-intergeneracional\\v19_voluntary_exchange\\results\\V195_CORRELATED_EXPLORATION\\V195_k4_MAJORITY_W32_G20_T8000.json"
+    },
+    {
+      "check": "4_MAJORITY_V195_weights_exists",
+      "passed": true,
+      "detail": "C:\\Programaci\u00f3n\\MARL-million-144-20261110\\proyectos\\coordinacion-funcional-intergeneracional\\v19_voluntary_exchange\\results\\V195_CORRELATED_EXPLORATION\\V195_k4_MAJORITY_W32_G20_T8000.npz"
+    },
+    {
+      "check": "4_MAJORITY_V195A_exists",
+      "passed": true,
+      "detail": "C:\\Programaci\u00f3n\\MARL-million-144-20261110\\proyectos\\coordinacion-funcional-intergeneracional\\v19_voluntary_exchange\\results\\V195_CORRELATED_EXPLORATION\\V195A_FROZEN_NO_PULSE_AUDIT_k4_MAJORITY.json"
+    },
+    {
+      "check": "4_MAJORITY_V196_exists",
+      "passed": true,
+      "detail": "C:\\Programaci\u00f3n\\MARL-million-144-20261110\\proyectos\\coordinacion-funcional-intergeneracional\\v19_voluntary_exchange\\results\\V196_POST_PULSE_PLASTICITY\\V196_k4_MAJORITY_W32_G20_H8000.json"
+    },
+    {
+      "check": "4_MAJORITY_V196_weights_exists",
+      "passed": true,
+      "detail": "C:\\Programaci\u00f3n\\MARL-million-144-20261110\\proyectos\\coordinacion-funcional-intergeneracional\\v19_voluntary_exchange\\results\\V196_POST_PULSE_PLASTICITY\\V196_k4_MAJORITY_W32_G20_H8000.npz"
+    },
+    {
+      "check": "4_MAJORITY_V194_source_SHA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "4_MAJORITY_V195_source_SHA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "4_MAJORITY_V196_source_SHA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "4_MAJORITY_V194_protocol",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "4_MAJORITY_V195_protocol",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "4_MAJORITY_V196_protocol",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "4_MAJORITY_V195A_binded_V195",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "4_MAJORITY_V196_binded_V195_weights",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "4_MAJORITY_V196_exact_policies_match_prior",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "4_MAJORITY_training_pulse_intact",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "4_MAJORITY_evaluation_has_no_pulse",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "4_MAJORITY_analytic_independent_observation_within_margin",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "4_MAJORITY_source_value_reproduced",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "4_MAJORITY_frozen_unchanged",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "4_MAJORITY_no_pulse_actually_zero",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "4_MAJORITY_support_pulse_at_10_percent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "8_UNANIMITY_V194_exists",
+      "passed": true,
+      "detail": "C:\\Programaci\u00f3n\\MARL-million-144-20261110\\proyectos\\coordinacion-funcional-intergeneracional\\v19_voluntary_exchange\\results\\V194_PRIVATE_INFORMATION_LEARNING\\V194_k8_UNANIMITY_W32_G20_T8000.json"
+    },
+    {
+      "check": "8_UNANIMITY_V194_weights_exists",
+      "passed": true,
+      "detail": "C:\\Programaci\u00f3n\\MARL-million-144-20261110\\proyectos\\coordinacion-funcional-intergeneracional\\v19_voluntary_exchange\\results\\V194_PRIVATE_INFORMATION_LEARNING\\V194_k8_UNANIMITY_W32_G20_T8000.npz"
+    },
+    {
+      "check": "8_UNANIMITY_V194A_exists",
+      "passed": true,
+      "detail": "C:\\Programaci\u00f3n\\MARL-million-144-20261110\\proyectos\\coordinacion-funcional-intergeneracional\\v19_voluntary_exchange\\results\\V194_PRIVATE_INFORMATION_LEARNING\\V194A_exact_strategic_k8_UNANIMITY.json"
+    },
+    {
+      "check": "8_UNANIMITY_V195_exists",
+      "passed": true,
+      "detail": "C:\\Programaci\u00f3n\\MARL-million-144-20261110\\proyectos\\coordinacion-funcional-intergeneracional\\v19_voluntary_exchange\\results\\V195_CORRELATED_EXPLORATION\\V195_k8_UNANIMITY_W32_G20_T8000.json"
+    },
+    {
+      "check": "8_UNANIMITY_V195_weights_exists",
+      "passed": true,
+      "detail": "C:\\Programaci\u00f3n\\MARL-million-144-20261110\\proyectos\\coordinacion-funcional-intergeneracional\\v19_voluntary_exchange\\results\\V195_CORRELATED_EXPLORATION\\V195_k8_UNANIMITY_W32_G20_T8000.npz"
+    },
+    {
+      "check": "8_UNANIMITY_V195A_exists",
+      "passed": true,
+      "detail": "C:\\Programaci\u00f3n\\MARL-million-144-20261110\\proyectos\\coordinacion-funcional-intergeneracional\\v19_voluntary_exchange\\results\\V195_CORRELATED_EXPLORATION\\V195A_FROZEN_NO_PULSE_AUDIT_k8_UNANIMITY.json"
+    },
+    {
+      "check": "8_UNANIMITY_V196_exists",
+      "passed": true,
+      "detail": "C:\\Programaci\u00f3n\\MARL-million-144-20261110\\proyectos\\coordinacion-funcional-intergeneracional\\v19_voluntary_exchange\\results\\V196_POST_PULSE_PLASTICITY\\V196_k8_UNANIMITY_W32_G20_H8000.json"
+    },
+    {
+      "check": "8_UNANIMITY_V196_weights_exists",
+      "passed": true,
+      "detail": "C:\\Programaci\u00f3n\\MARL-million-144-20261110\\proyectos\\coordinacion-funcional-intergeneracional\\v19_voluntary_exchange\\results\\V196_POST_PULSE_PLASTICITY\\V196_k8_UNANIMITY_W32_G20_H8000.npz"
+    },
+    {
+      "check": "8_UNANIMITY_V194_source_SHA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "8_UNANIMITY_V195_source_SHA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "8_UNANIMITY_V196_source_SHA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "8_UNANIMITY_V194_protocol",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "8_UNANIMITY_V195_protocol",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "8_UNANIMITY_V196_protocol",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "8_UNANIMITY_V195A_binded_V195",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "8_UNANIMITY_V196_binded_V195_weights",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "8_UNANIMITY_V196_exact_policies_match_prior",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "8_UNANIMITY_training_pulse_intact",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "8_UNANIMITY_evaluation_has_no_pulse",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "8_UNANIMITY_analytic_independent_observation_within_margin",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "8_UNANIMITY_source_value_reproduced",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "8_UNANIMITY_frozen_unchanged",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "8_UNANIMITY_no_pulse_actually_zero",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "8_UNANIMITY_support_pulse_at_10_percent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "8_MAJORITY_V194_exists",
+      "passed": true,
+      "detail": "C:\\Programaci\u00f3n\\MARL-million-144-20261110\\proyectos\\coordinacion-funcional-intergeneracional\\v19_voluntary_exchange\\results\\V194_PRIVATE_INFORMATION_LEARNING\\V194_k8_MAJORITY_W32_G20_T8000.json"
+    },
+    {
+      "check": "8_MAJORITY_V194_weights_exists",
+      "passed": true,
+      "detail": "C:\\Programaci\u00f3n\\MARL-million-144-20261110\\proyectos\\coordinacion-funcional-intergeneracional\\v19_voluntary_exchange\\results\\V194_PRIVATE_INFORMATION_LEARNING\\V194_k8_MAJORITY_W32_G20_T8000.npz"
+    },
+    {
+      "check": "8_MAJORITY_V194A_exists",
+      "passed": true,
+      "detail": "C:\\Programaci\u00f3n\\MARL-million-144-20261110\\proyectos\\coordinacion-funcional-intergeneracional\\v19_voluntary_exchange\\results\\V194_PRIVATE_INFORMATION_LEARNING\\V194A_exact_strategic_k8_MAJORITY.json"
+    },
+    {
+      "check": "8_MAJORITY_V195_exists",
+      "passed": true,
+      "detail": "C:\\Programaci\u00f3n\\MARL-million-144-20261110\\proyectos\\coordinacion-funcional-intergeneracional\\v19_voluntary_exchange\\results\\V195_CORRELATED_EXPLORATION\\V195_k8_MAJORITY_W32_G20_T8000.json"
+    },
+    {
+      "check": "8_MAJORITY_V195_weights_exists",
+      "passed": true,
+      "detail": "C:\\Programaci\u00f3n\\MARL-million-144-20261110\\proyectos\\coordinacion-funcional-intergeneracional\\v19_voluntary_exchange\\results\\V195_CORRELATED_EXPLORATION\\V195_k8_MAJORITY_W32_G20_T8000.npz"
+    },
+    {
+      "check": "8_MAJORITY_V195A_exists",
+      "passed": true,
+      "detail": "C:\\Programaci\u00f3n\\MARL-million-144-20261110\\proyectos\\coordinacion-funcional-intergeneracional\\v19_voluntary_exchange\\results\\V195_CORRELATED_EXPLORATION\\V195A_FROZEN_NO_PULSE_AUDIT_k8_MAJORITY.json"
+    },
+    {
+      "check": "8_MAJORITY_V196_exists",
+      "passed": true,
+      "detail": "C:\\Programaci\u00f3n\\MARL-million-144-20261110\\proyectos\\coordinacion-funcional-intergeneracional\\v19_voluntary_exchange\\results\\V196_POST_PULSE_PLASTICITY\\V196_k8_MAJORITY_W32_G20_H8000.json"
+    },
+    {
+      "check": "8_MAJORITY_V196_weights_exists",
+      "passed": true,
+      "detail": "C:\\Programaci\u00f3n\\MARL-million-144-20261110\\proyectos\\coordinacion-funcional-intergeneracional\\v19_voluntary_exchange\\results\\V196_POST_PULSE_PLASTICITY\\V196_k8_MAJORITY_W32_G20_H8000.npz"
+    },
+    {
+      "check": "8_MAJORITY_V194_source_SHA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "8_MAJORITY_V195_source_SHA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "8_MAJORITY_V196_source_SHA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "8_MAJORITY_V194_protocol",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "8_MAJORITY_V195_protocol",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "8_MAJORITY_V196_protocol",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "8_MAJORITY_V195A_binded_V195",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "8_MAJORITY_V196_binded_V195_weights",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "8_MAJORITY_V196_exact_policies_match_prior",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "8_MAJORITY_training_pulse_intact",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "8_MAJORITY_evaluation_has_no_pulse",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "8_MAJORITY_analytic_independent_observation_within_margin",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "8_MAJORITY_source_value_reproduced",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "8_MAJORITY_frozen_unchanged",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "8_MAJORITY_no_pulse_actually_zero",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "8_MAJORITY_support_pulse_at_10_percent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "12_UNANIMITY_V194_exists",
+      "passed": true,
+      "detail": "C:\\Programaci\u00f3n\\MARL-million-144-20261110\\proyectos\\coordinacion-funcional-intergeneracional\\v19_voluntary_exchange\\results\\V194_PRIVATE_INFORMATION_LEARNING\\V194_k12_UNANIMITY_W32_G20_T8000.json"
+    },
+    {
+      "check": "12_UNANIMITY_V194_weights_exists",
+      "passed": true,
+      "detail": "C:\\Programaci\u00f3n\\MARL-million-144-20261110\\proyectos\\coordinacion-funcional-intergeneracional\\v19_voluntary_exchange\\results\\V194_PRIVATE_INFORMATION_LEARNING\\V194_k12_UNANIMITY_W32_G20_T8000.npz"
+    },
+    {
+      "check": "12_UNANIMITY_V194A_exists",
+      "passed": true,
+      "detail": "C:\\Programaci\u00f3n\\MARL-million-144-20261110\\proyectos\\coordinacion-funcional-intergeneracional\\v19_voluntary_exchange\\results\\V194_PRIVATE_INFORMATION_LEARNING\\V194A_exact_strategic_k12_UNANIMITY.json"
+    },
+    {
+      "check": "12_UNANIMITY_V195_exists",
+      "passed": true,
+      "detail": "C:\\Programaci\u00f3n\\MARL-million-144-20261110\\proyectos\\coordinacion-funcional-intergeneracional\\v19_voluntary_exchange\\results\\V195_CORRELATED_EXPLORATION\\V195_k12_UNANIMITY_W32_G20_T8000.json"
+    },
+    {
+      "check": "12_UNANIMITY_V195_weights_exists",
+      "passed": true,
+      "detail": "C:\\Programaci\u00f3n\\MARL-million-144-20261110\\proyectos\\coordinacion-funcional-intergeneracional\\v19_voluntary_exchange\\results\\V195_CORRELATED_EXPLORATION\\V195_k12_UNANIMITY_W32_G20_T8000.npz"
+    },
+    {
+      "check": "12_UNANIMITY_V195A_exists",
+      "passed": true,
+      "detail": "C:\\Programaci\u00f3n\\MARL-million-144-20261110\\proyectos\\coordinacion-funcional-intergeneracional\\v19_voluntary_exchange\\results\\V195_CORRELATED_EXPLORATION\\V195A_FROZEN_NO_PULSE_AUDIT_k12_UNANIMITY.json"
+    },
+    {
+      "check": "12_UNANIMITY_V196_exists",
+      "passed": true,
+      "detail": "C:\\Programaci\u00f3n\\MARL-million-144-20261110\\proyectos\\coordinacion-funcional-intergeneracional\\v19_voluntary_exchange\\results\\V196_POST_PULSE_PLASTICITY\\V196_k12_UNANIMITY_W32_G20_H8000.json"
+    },
+    {
+      "check": "12_UNANIMITY_V196_weights_exists",
+      "passed": true,
+      "detail": "C:\\Programaci\u00f3n\\MARL-million-144-20261110\\proyectos\\coordinacion-funcional-intergeneracional\\v19_voluntary_exchange\\results\\V196_POST_PULSE_PLASTICITY\\V196_k12_UNANIMITY_W32_G20_H8000.npz"
+    },
+    {
+      "check": "12_UNANIMITY_V194_source_SHA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "12_UNANIMITY_V195_source_SHA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "12_UNANIMITY_V196_source_SHA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "12_UNANIMITY_V194_protocol",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "12_UNANIMITY_V195_protocol",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "12_UNANIMITY_V196_protocol",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "12_UNANIMITY_V195A_binded_V195",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "12_UNANIMITY_V196_binded_V195_weights",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "12_UNANIMITY_V196_exact_policies_match_prior",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "12_UNANIMITY_training_pulse_intact",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "12_UNANIMITY_evaluation_has_no_pulse",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "12_UNANIMITY_analytic_independent_observation_within_margin",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "12_UNANIMITY_source_value_reproduced",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "12_UNANIMITY_frozen_unchanged",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "12_UNANIMITY_no_pulse_actually_zero",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "12_UNANIMITY_support_pulse_at_10_percent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "12_MAJORITY_V194_exists",
+      "passed": true,
+      "detail": "C:\\Programaci\u00f3n\\MARL-million-144-20261110\\proyectos\\coordinacion-funcional-intergeneracional\\v19_voluntary_exchange\\results\\V194_PRIVATE_INFORMATION_LEARNING\\V194_k12_MAJORITY_W32_G20_T8000.json"
+    },
+    {
+      "check": "12_MAJORITY_V194_weights_exists",
+      "passed": true,
+      "detail": "C:\\Programaci\u00f3n\\MARL-million-144-20261110\\proyectos\\coordinacion-funcional-intergeneracional\\v19_voluntary_exchange\\results\\V194_PRIVATE_INFORMATION_LEARNING\\V194_k12_MAJORITY_W32_G20_T8000.npz"
+    },
+    {
+      "check": "12_MAJORITY_V194A_exists",
+      "passed": true,
+      "detail": "C:\\Programaci\u00f3n\\MARL-million-144-20261110\\proyectos\\coordinacion-funcional-intergeneracional\\v19_voluntary_exchange\\results\\V194_PRIVATE_INFORMATION_LEARNING\\V194A_exact_strategic_k12_MAJORITY.json"
+    },
+    {
+      "check": "12_MAJORITY_V195_exists",
+      "passed": true,
+      "detail": "C:\\Programaci\u00f3n\\MARL-million-144-20261110\\proyectos\\coordinacion-funcional-intergeneracional\\v19_voluntary_exchange\\results\\V195_CORRELATED_EXPLORATION\\V195_k12_MAJORITY_W32_G20_T8000.json"
+    },
+    {
+      "check": "12_MAJORITY_V195_weights_exists",
+      "passed": true,
+      "detail": "C:\\Programaci\u00f3n\\MARL-million-144-20261110\\proyectos\\coordinacion-funcional-intergeneracional\\v19_voluntary_exchange\\results\\V195_CORRELATED_EXPLORATION\\V195_k12_MAJORITY_W32_G20_T8000.npz"
+    },
+    {
+      "check": "12_MAJORITY_V195A_exists",
+      "passed": true,
+      "detail": "C:\\Programaci\u00f3n\\MARL-million-144-20261110\\proyectos\\coordinacion-funcional-intergeneracional\\v19_voluntary_exchange\\results\\V195_CORRELATED_EXPLORATION\\V195A_FROZEN_NO_PULSE_AUDIT_k12_MAJORITY.json"
+    },
+    {
+      "check": "12_MAJORITY_V196_exists",
+      "passed": true,
+      "detail": "C:\\Programaci\u00f3n\\MARL-million-144-20261110\\proyectos\\coordinacion-funcional-intergeneracional\\v19_voluntary_exchange\\results\\V196_POST_PULSE_PLASTICITY\\V196_k12_MAJORITY_W32_G20_H8000.json"
+    },
+    {
+      "check": "12_MAJORITY_V196_weights_exists",
+      "passed": true,
+      "detail": "C:\\Programaci\u00f3n\\MARL-million-144-20261110\\proyectos\\coordinacion-funcional-intergeneracional\\v19_voluntary_exchange\\results\\V196_POST_PULSE_PLASTICITY\\V196_k12_MAJORITY_W32_G20_H8000.npz"
+    },
+    {
+      "check": "12_MAJORITY_V194_source_SHA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "12_MAJORITY_V195_source_SHA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "12_MAJORITY_V196_source_SHA",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "12_MAJORITY_V194_protocol",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "12_MAJORITY_V195_protocol",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "12_MAJORITY_V196_protocol",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "12_MAJORITY_V195A_binded_V195",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "12_MAJORITY_V196_binded_V195_weights",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "12_MAJORITY_V196_exact_policies_match_prior",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "12_MAJORITY_training_pulse_intact",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "12_MAJORITY_evaluation_has_no_pulse",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "12_MAJORITY_analytic_independent_observation_within_margin",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "12_MAJORITY_source_value_reproduced",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "12_MAJORITY_frozen_unchanged",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "12_MAJORITY_no_pulse_actually_zero",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "12_MAJORITY_support_pulse_at_10_percent",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "V195_joint_above_individual_CI_in_5_of_6",
+      "passed": true,
+      "detail": "5"
+    },
+    {
+      "check": "V196_75percent_retention_gate_failed_0of6",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "check": "V196_pulse_maintain_positive_6of6",
+      "passed": true,
+      "detail": "6"
+    },
+    {
+      "check": "six_datasets_per_experiment",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "report_exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fig1_exists",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "fig2_exists",
+      "passed": true,
+      "detail": ""
+    }
+  ]
+}
