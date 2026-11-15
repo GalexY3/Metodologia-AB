@@ -1,0 +1,3 @@
+# Estado: V195 neuronal completado
+
+Retirada de FULL después de memorizar pasa4/4, test medio0.99480069, train1. NumPy48checks sin fallos. Controles congelados cancelados según protocolo. Mismas cuatro raíces, no confirmación independiente. N2=N3=0; CT2 histórico61sin editar. Leer INFORME_V195_WITHDRAW_COUNTERFACTUAL_20261115.md y el manuscrito nuevo V195. Archivos anteriores no se sobrescriben. La línea paralela V194–V196 de votación se desambigua por sus nombres; requiere auditar la ley de desempates usada por su evaluador antes de nuevas conclusiones. El objetivo científico global permanece activo. No quedan procesos V195 en entrenamiento.

@@ -1,0 +1,654 @@
+{
+  "new_training_executed": false,
+  "explicit_issue": "Adding independent uniform action jitters of width 1e-12 produces a triangular CDF inside near ties, whereas existing p_yes uses probability .5 there.",
+  "rows": [
+    {
+      "file": "results/V195_CORRELATED_EXPLORATION/V195_k12_MAJORITY_W32_G20_T8000.npz",
+      "arm": "STANDARD_PRIVATE",
+      "states": 14080,
+      "nonzero_policy_discrepancies": 30,
+      "max_policy_discrepancy": 0.0864337660088274,
+      "mean_policy_discrepancy": 2.0769856778971646e-05,
+      "source_sha256": "5c1c850f9ba2100de7759ed4f5cca8b812f7fdc9c981e4b9c4c6232a19029c86"
+    },
+    {
+      "file": "results/V195_CORRELATED_EXPLORATION/V195_k12_MAJORITY_W32_G20_T8000.npz",
+      "arm": "IID_SIGNAL_PULSE_10",
+      "states": 14080,
+      "nonzero_policy_discrepancies": 0,
+      "max_policy_discrepancy": 0.0,
+      "mean_policy_discrepancy": 0.0,
+      "source_sha256": "5c1c850f9ba2100de7759ed4f5cca8b812f7fdc9c981e4b9c4c6232a19029c86"
+    },
+    {
+      "file": "results/V195_CORRELATED_EXPLORATION/V195_k12_MAJORITY_W32_G20_T8000.npz",
+      "arm": "JOINT_SIGNAL_PULSE_10",
+      "states": 14080,
+      "nonzero_policy_discrepancies": 0,
+      "max_policy_discrepancy": 0.0,
+      "mean_policy_discrepancy": 0.0,
+      "source_sha256": "5c1c850f9ba2100de7759ed4f5cca8b812f7fdc9c981e4b9c4c6232a19029c86"
+    },
+    {
+      "file": "results/V195_CORRELATED_EXPLORATION/V195_k12_MAJORITY_W32_G20_T8000.npz",
+      "arm": "JOINT_RANDOM_PULSE_10",
+      "states": 14080,
+      "nonzero_policy_discrepancies": 0,
+      "max_policy_discrepancy": 0.0,
+      "mean_policy_discrepancy": 0.0,
+      "source_sha256": "5c1c850f9ba2100de7759ed4f5cca8b812f7fdc9c981e4b9c4c6232a19029c86"
+    },
+    {
+      "file": "results/V195_CORRELATED_EXPLORATION/V195_k12_MAJORITY_W32_G20_T8000.npz",
+      "arm": "JOINT_SIGNAL_PULSE_02",
+      "states": 14080,
+      "nonzero_policy_discrepancies": 0,
+      "max_policy_discrepancy": 0.0,
+      "mean_policy_discrepancy": 0.0,
+      "source_sha256": "5c1c850f9ba2100de7759ed4f5cca8b812f7fdc9c981e4b9c4c6232a19029c86"
+    },
+    {
+      "file": "results/V195_CORRELATED_EXPLORATION/V195_k12_MAJORITY_W32_G20_T8000.npz",
+      "arm": "SIGNAL_FOLLOW_CONTROL",
+      "states": 14080,
+      "nonzero_policy_discrepancies": 0,
+      "max_policy_discrepancy": 0.0,
+      "mean_policy_discrepancy": 0.0,
+      "source_sha256": "5c1c850f9ba2100de7759ed4f5cca8b812f7fdc9c981e4b9c4c6232a19029c86"
+    },
+    {
+      "file": "results/V195_CORRELATED_EXPLORATION/V195_k12_MAJORITY_W32_G20_T8000.npz",
+      "arm": "ORACLE_STATE",
+      "states": 14080,
+      "nonzero_policy_discrepancies": 0,
+      "max_policy_discrepancy": 0.0,
+      "mean_policy_discrepancy": 0.0,
+      "source_sha256": "5c1c850f9ba2100de7759ed4f5cca8b812f7fdc9c981e4b9c4c6232a19029c86"
+    },
+    {
+      "file": "results/V195_CORRELATED_EXPLORATION/V195_k12_UNANIMITY_W32_G20_T8000.npz",
+      "arm": "STANDARD_PRIVATE",
+      "states": 14080,
+      "nonzero_policy_discrepancies": 940,
+      "max_policy_discrepancy": 0.4999817559219329,
+      "mean_policy_discrepancy": 0.005072434839778728,
+      "source_sha256": "3de31ef47f4873649644db601b59e0d9e50699ef53242b60fcb110a51c673974"
+    },
+    {
+      "file": "results/V195_CORRELATED_EXPLORATION/V195_k12_UNANIMITY_W32_G20_T8000.npz",
+      "arm": "IID_SIGNAL_PULSE_10",
+      "states": 14080,
+      "nonzero_policy_discrepancies": 810,
+      "max_policy_discrepancy": 0.4999624628096554,
+      "mean_policy_discrepancy": 0.002280408621395497,
+      "source_sha256": "3de31ef47f4873649644db601b59e0d9e50699ef53242b60fcb110a51c673974"
+    },
+    {
+      "file": "results/V195_CORRELATED_EXPLORATION/V195_k12_UNANIMITY_W32_G20_T8000.npz",
+      "arm": "JOINT_SIGNAL_PULSE_10",
+      "states": 14080,
+      "nonzero_policy_discrepancies": 115,
+      "max_policy_discrepancy": 0.4983302631926253,
+      "mean_policy_discrepancy": 0.0005873131219562768,
+      "source_sha256": "3de31ef47f4873649644db601b59e0d9e50699ef53242b60fcb110a51c673974"
+    },
+    {
+      "file": "results/V195_CORRELATED_EXPLORATION/V195_k12_UNANIMITY_W32_G20_T8000.npz",
+      "arm": "JOINT_RANDOM_PULSE_10",
+      "states": 14080,
+      "nonzero_policy_discrepancies": 0,
+      "max_policy_discrepancy": 0.0,
+      "mean_policy_discrepancy": 0.0,
+      "source_sha256": "3de31ef47f4873649644db601b59e0d9e50699ef53242b60fcb110a51c673974"
+    },
+    {
+      "file": "results/V195_CORRELATED_EXPLORATION/V195_k12_UNANIMITY_W32_G20_T8000.npz",
+      "arm": "JOINT_SIGNAL_PULSE_02",
+      "states": 14080,
+      "nonzero_policy_discrepancies": 1212,
+      "max_policy_discrepancy": 0.49999875543264527,
+      "mean_policy_discrepancy": 0.002416515222106529,
+      "source_sha256": "3de31ef47f4873649644db601b59e0d9e50699ef53242b60fcb110a51c673974"
+    },
+    {
+      "file": "results/V195_CORRELATED_EXPLORATION/V195_k12_UNANIMITY_W32_G20_T8000.npz",
+      "arm": "SIGNAL_FOLLOW_CONTROL",
+      "states": 14080,
+      "nonzero_policy_discrepancies": 0,
+      "max_policy_discrepancy": 0.0,
+      "mean_policy_discrepancy": 0.0,
+      "source_sha256": "3de31ef47f4873649644db601b59e0d9e50699ef53242b60fcb110a51c673974"
+    },
+    {
+      "file": "results/V195_CORRELATED_EXPLORATION/V195_k12_UNANIMITY_W32_G20_T8000.npz",
+      "arm": "ORACLE_STATE",
+      "states": 14080,
+      "nonzero_policy_discrepancies": 0,
+      "max_policy_discrepancy": 0.0,
+      "mean_policy_discrepancy": 0.0,
+      "source_sha256": "3de31ef47f4873649644db601b59e0d9e50699ef53242b60fcb110a51c673974"
+    },
+    {
+      "file": "results/V195_CORRELATED_EXPLORATION/V195_k4_MAJORITY_W32_G20_T8000.npz",
+      "arm": "STANDARD_PRIVATE",
+      "states": 3840,
+      "nonzero_policy_discrepancies": 0,
+      "max_policy_discrepancy": 0.0,
+      "mean_policy_discrepancy": 0.0,
+      "source_sha256": "d9986896bce8883cf84933694c0c30dc88882c9bf4d03550b9578e18487c600b"
+    },
+    {
+      "file": "results/V195_CORRELATED_EXPLORATION/V195_k4_MAJORITY_W32_G20_T8000.npz",
+      "arm": "IID_SIGNAL_PULSE_10",
+      "states": 3840,
+      "nonzero_policy_discrepancies": 0,
+      "max_policy_discrepancy": 0.0,
+      "mean_policy_discrepancy": 0.0,
+      "source_sha256": "d9986896bce8883cf84933694c0c30dc88882c9bf4d03550b9578e18487c600b"
+    },
+    {
+      "file": "results/V195_CORRELATED_EXPLORATION/V195_k4_MAJORITY_W32_G20_T8000.npz",
+      "arm": "JOINT_SIGNAL_PULSE_10",
+      "states": 3840,
+      "nonzero_policy_discrepancies": 0,
+      "max_policy_discrepancy": 0.0,
+      "mean_policy_discrepancy": 0.0,
+      "source_sha256": "d9986896bce8883cf84933694c0c30dc88882c9bf4d03550b9578e18487c600b"
+    },
+    {
+      "file": "results/V195_CORRELATED_EXPLORATION/V195_k4_MAJORITY_W32_G20_T8000.npz",
+      "arm": "JOINT_RANDOM_PULSE_10",
+      "states": 3840,
+      "nonzero_policy_discrepancies": 0,
+      "max_policy_discrepancy": 0.0,
+      "mean_policy_discrepancy": 0.0,
+      "source_sha256": "d9986896bce8883cf84933694c0c30dc88882c9bf4d03550b9578e18487c600b"
+    },
+    {
+      "file": "results/V195_CORRELATED_EXPLORATION/V195_k4_MAJORITY_W32_G20_T8000.npz",
+      "arm": "JOINT_SIGNAL_PULSE_02",
+      "states": 3840,
+      "nonzero_policy_discrepancies": 0,
+      "max_policy_discrepancy": 0.0,
+      "mean_policy_discrepancy": 0.0,
+      "source_sha256": "d9986896bce8883cf84933694c0c30dc88882c9bf4d03550b9578e18487c600b"
+    },
+    {
+      "file": "results/V195_CORRELATED_EXPLORATION/V195_k4_MAJORITY_W32_G20_T8000.npz",
+      "arm": "SIGNAL_FOLLOW_CONTROL",
+      "states": 3840,
+      "nonzero_policy_discrepancies": 0,
+      "max_policy_discrepancy": 0.0,
+      "mean_policy_discrepancy": 0.0,
+      "source_sha256": "d9986896bce8883cf84933694c0c30dc88882c9bf4d03550b9578e18487c600b"
+    },
+    {
+      "file": "results/V195_CORRELATED_EXPLORATION/V195_k4_MAJORITY_W32_G20_T8000.npz",
+      "arm": "ORACLE_STATE",
+      "states": 3840,
+      "nonzero_policy_discrepancies": 0,
+      "max_policy_discrepancy": 0.0,
+      "mean_policy_discrepancy": 0.0,
+      "source_sha256": "d9986896bce8883cf84933694c0c30dc88882c9bf4d03550b9578e18487c600b"
+    },
+    {
+      "file": "results/V195_CORRELATED_EXPLORATION/V195_k4_UNANIMITY_W32_G20_T8000.npz",
+      "arm": "STANDARD_PRIVATE",
+      "states": 3840,
+      "nonzero_policy_discrepancies": 56,
+      "max_policy_discrepancy": 0.4959897987589837,
+      "mean_policy_discrepancy": 0.0010448986771023835,
+      "source_sha256": "bdc21734b739f20e6b2ac859186284ede6b293b982e731f2aab137037892793e"
+    },
+    {
+      "file": "results/V195_CORRELATED_EXPLORATION/V195_k4_UNANIMITY_W32_G20_T8000.npz",
+      "arm": "IID_SIGNAL_PULSE_10",
+      "states": 3840,
+      "nonzero_policy_discrepancies": 10,
+      "max_policy_discrepancy": 0.4997511666400868,
+      "mean_policy_discrepancy": 0.0005059830606475705,
+      "source_sha256": "bdc21734b739f20e6b2ac859186284ede6b293b982e731f2aab137037892793e"
+    },
+    {
+      "file": "results/V195_CORRELATED_EXPLORATION/V195_k4_UNANIMITY_W32_G20_T8000.npz",
+      "arm": "JOINT_SIGNAL_PULSE_10",
+      "states": 3840,
+      "nonzero_policy_discrepancies": 0,
+      "max_policy_discrepancy": 0.0,
+      "mean_policy_discrepancy": 0.0,
+      "source_sha256": "bdc21734b739f20e6b2ac859186284ede6b293b982e731f2aab137037892793e"
+    },
+    {
+      "file": "results/V195_CORRELATED_EXPLORATION/V195_k4_UNANIMITY_W32_G20_T8000.npz",
+      "arm": "JOINT_RANDOM_PULSE_10",
+      "states": 3840,
+      "nonzero_policy_discrepancies": 0,
+      "max_policy_discrepancy": 0.0,
+      "mean_policy_discrepancy": 0.0,
+      "source_sha256": "bdc21734b739f20e6b2ac859186284ede6b293b982e731f2aab137037892793e"
+    },
+    {
+      "file": "results/V195_CORRELATED_EXPLORATION/V195_k4_UNANIMITY_W32_G20_T8000.npz",
+      "arm": "JOINT_SIGNAL_PULSE_02",
+      "states": 3840,
+      "nonzero_policy_discrepancies": 7,
+      "max_policy_discrepancy": 0.4975904847824808,
+      "mean_policy_discrepancy": 0.00023870207918980568,
+      "source_sha256": "bdc21734b739f20e6b2ac859186284ede6b293b982e731f2aab137037892793e"
+    },
+    {
+      "file": "results/V195_CORRELATED_EXPLORATION/V195_k4_UNANIMITY_W32_G20_T8000.npz",
+      "arm": "SIGNAL_FOLLOW_CONTROL",
+      "states": 3840,
+      "nonzero_policy_discrepancies": 0,
+      "max_policy_discrepancy": 0.0,
+      "mean_policy_discrepancy": 0.0,
+      "source_sha256": "bdc21734b739f20e6b2ac859186284ede6b293b982e731f2aab137037892793e"
+    },
+    {
+      "file": "results/V195_CORRELATED_EXPLORATION/V195_k4_UNANIMITY_W32_G20_T8000.npz",
+      "arm": "ORACLE_STATE",
+      "states": 3840,
+      "nonzero_policy_discrepancies": 0,
+      "max_policy_discrepancy": 0.0,
+      "mean_policy_discrepancy": 0.0,
+      "source_sha256": "bdc21734b739f20e6b2ac859186284ede6b293b982e731f2aab137037892793e"
+    },
+    {
+      "file": "results/V195_CORRELATED_EXPLORATION/V195_k8_MAJORITY_W32_G20_T8000.npz",
+      "arm": "STANDARD_PRIVATE",
+      "states": 8960,
+      "nonzero_policy_discrepancies": 15,
+      "max_policy_discrepancy": 0.06523264519555388,
+      "mean_policy_discrepancy": 7.6173265752829525e-06,
+      "source_sha256": "637ca4abd3867a3941a7a0c16b6122c177703a88380f461b40796895d3a10afa"
+    },
+    {
+      "file": "results/V195_CORRELATED_EXPLORATION/V195_k8_MAJORITY_W32_G20_T8000.npz",
+      "arm": "IID_SIGNAL_PULSE_10",
+      "states": 8960,
+      "nonzero_policy_discrepancies": 0,
+      "max_policy_discrepancy": 0.0,
+      "mean_policy_discrepancy": 0.0,
+      "source_sha256": "637ca4abd3867a3941a7a0c16b6122c177703a88380f461b40796895d3a10afa"
+    },
+    {
+      "file": "results/V195_CORRELATED_EXPLORATION/V195_k8_MAJORITY_W32_G20_T8000.npz",
+      "arm": "JOINT_SIGNAL_PULSE_10",
+      "states": 8960,
+      "nonzero_policy_discrepancies": 0,
+      "max_policy_discrepancy": 0.0,
+      "mean_policy_discrepancy": 0.0,
+      "source_sha256": "637ca4abd3867a3941a7a0c16b6122c177703a88380f461b40796895d3a10afa"
+    },
+    {
+      "file": "results/V195_CORRELATED_EXPLORATION/V195_k8_MAJORITY_W32_G20_T8000.npz",
+      "arm": "JOINT_RANDOM_PULSE_10",
+      "states": 8960,
+      "nonzero_policy_discrepancies": 0,
+      "max_policy_discrepancy": 0.0,
+      "mean_policy_discrepancy": 0.0,
+      "source_sha256": "637ca4abd3867a3941a7a0c16b6122c177703a88380f461b40796895d3a10afa"
+    },
+    {
+      "file": "results/V195_CORRELATED_EXPLORATION/V195_k8_MAJORITY_W32_G20_T8000.npz",
+      "arm": "JOINT_SIGNAL_PULSE_02",
+      "states": 8960,
+      "nonzero_policy_discrepancies": 0,
+      "max_policy_discrepancy": 0.0,
+      "mean_policy_discrepancy": 0.0,
+      "source_sha256": "637ca4abd3867a3941a7a0c16b6122c177703a88380f461b40796895d3a10afa"
+    },
+    {
+      "file": "results/V195_CORRELATED_EXPLORATION/V195_k8_MAJORITY_W32_G20_T8000.npz",
+      "arm": "SIGNAL_FOLLOW_CONTROL",
+      "states": 8960,
+      "nonzero_policy_discrepancies": 0,
+      "max_policy_discrepancy": 0.0,
+      "mean_policy_discrepancy": 0.0,
+      "source_sha256": "637ca4abd3867a3941a7a0c16b6122c177703a88380f461b40796895d3a10afa"
+    },
+    {
+      "file": "results/V195_CORRELATED_EXPLORATION/V195_k8_MAJORITY_W32_G20_T8000.npz",
+      "arm": "ORACLE_STATE",
+      "states": 8960,
+      "nonzero_policy_discrepancies": 0,
+      "max_policy_discrepancy": 0.0,
+      "mean_policy_discrepancy": 0.0,
+      "source_sha256": "637ca4abd3867a3941a7a0c16b6122c177703a88380f461b40796895d3a10afa"
+    },
+    {
+      "file": "results/V195_CORRELATED_EXPLORATION/V195_k8_UNANIMITY_W32_G20_T8000.npz",
+      "arm": "STANDARD_PRIVATE",
+      "states": 8960,
+      "nonzero_policy_discrepancies": 717,
+      "max_policy_discrepancy": 0.4999529772831676,
+      "mean_policy_discrepancy": 0.005584488850994773,
+      "source_sha256": "0e56eac221639d49cd9e651842142825307e20eb492bff1a8b90ace7a3707a4f"
+    },
+    {
+      "file": "results/V195_CORRELATED_EXPLORATION/V195_k8_UNANIMITY_W32_G20_T8000.npz",
+      "arm": "IID_SIGNAL_PULSE_10",
+      "states": 8960,
+      "nonzero_policy_discrepancies": 624,
+      "max_policy_discrepancy": 0.4996443221645071,
+      "mean_policy_discrepancy": 0.0025758059250618353,
+      "source_sha256": "0e56eac221639d49cd9e651842142825307e20eb492bff1a8b90ace7a3707a4f"
+    },
+    {
+      "file": "results/V195_CORRELATED_EXPLORATION/V195_k8_UNANIMITY_W32_G20_T8000.npz",
+      "arm": "JOINT_SIGNAL_PULSE_10",
+      "states": 8960,
+      "nonzero_policy_discrepancies": 0,
+      "max_policy_discrepancy": 0.0,
+      "mean_policy_discrepancy": 0.0,
+      "source_sha256": "0e56eac221639d49cd9e651842142825307e20eb492bff1a8b90ace7a3707a4f"
+    },
+    {
+      "file": "results/V195_CORRELATED_EXPLORATION/V195_k8_UNANIMITY_W32_G20_T8000.npz",
+      "arm": "JOINT_RANDOM_PULSE_10",
+      "states": 8960,
+      "nonzero_policy_discrepancies": 0,
+      "max_policy_discrepancy": 0.0,
+      "mean_policy_discrepancy": 0.0,
+      "source_sha256": "0e56eac221639d49cd9e651842142825307e20eb492bff1a8b90ace7a3707a4f"
+    },
+    {
+      "file": "results/V195_CORRELATED_EXPLORATION/V195_k8_UNANIMITY_W32_G20_T8000.npz",
+      "arm": "JOINT_SIGNAL_PULSE_02",
+      "states": 8960,
+      "nonzero_policy_discrepancies": 412,
+      "max_policy_discrepancy": 0.49255080401127227,
+      "mean_policy_discrepancy": 0.0013798260874259387,
+      "source_sha256": "0e56eac221639d49cd9e651842142825307e20eb492bff1a8b90ace7a3707a4f"
+    },
+    {
+      "file": "results/V195_CORRELATED_EXPLORATION/V195_k8_UNANIMITY_W32_G20_T8000.npz",
+      "arm": "SIGNAL_FOLLOW_CONTROL",
+      "states": 8960,
+      "nonzero_policy_discrepancies": 0,
+      "max_policy_discrepancy": 0.0,
+      "mean_policy_discrepancy": 0.0,
+      "source_sha256": "0e56eac221639d49cd9e651842142825307e20eb492bff1a8b90ace7a3707a4f"
+    },
+    {
+      "file": "results/V195_CORRELATED_EXPLORATION/V195_k8_UNANIMITY_W32_G20_T8000.npz",
+      "arm": "ORACLE_STATE",
+      "states": 8960,
+      "nonzero_policy_discrepancies": 0,
+      "max_policy_discrepancy": 0.0,
+      "mean_policy_discrepancy": 0.0,
+      "source_sha256": "0e56eac221639d49cd9e651842142825307e20eb492bff1a8b90ace7a3707a4f"
+    },
+    {
+      "file": "results/V196_POST_PULSE_PLASTICITY/V196_k12_MAJORITY_W32_G20_H8000.npz",
+      "arm": "FREEZE",
+      "states": 14080,
+      "nonzero_policy_discrepancies": 0,
+      "max_policy_discrepancy": 0.0,
+      "mean_policy_discrepancy": 0.0,
+      "source_sha256": "f6c18e05908a764e93cd829ccffd9b580770ebe9dca2ad77ae21bb69f49a1c61"
+    },
+    {
+      "file": "results/V196_POST_PULSE_PLASTICITY/V196_k12_MAJORITY_W32_G20_H8000.npz",
+      "arm": "PLASTIC_NO_PULSE_EPS08",
+      "states": 14080,
+      "nonzero_policy_discrepancies": 24,
+      "max_policy_discrepancy": 0.4118075478245804,
+      "mean_policy_discrepancy": 8.561170153840066e-05,
+      "source_sha256": "f6c18e05908a764e93cd829ccffd9b580770ebe9dca2ad77ae21bb69f49a1c61"
+    },
+    {
+      "file": "results/V196_POST_PULSE_PLASTICITY/V196_k12_MAJORITY_W32_G20_H8000.npz",
+      "arm": "PLASTIC_NO_PULSE_EPS02",
+      "states": 14080,
+      "nonzero_policy_discrepancies": 53,
+      "max_policy_discrepancy": 0.4473526471713834,
+      "mean_policy_discrepancy": 8.996664974894115e-05,
+      "source_sha256": "f6c18e05908a764e93cd829ccffd9b580770ebe9dca2ad77ae21bb69f49a1c61"
+    },
+    {
+      "file": "results/V196_POST_PULSE_PLASTICITY/V196_k12_MAJORITY_W32_G20_H8000.npz",
+      "arm": "PLASTIC_NO_PULSE_EPS00",
+      "states": 14080,
+      "nonzero_policy_discrepancies": 14,
+      "max_policy_discrepancy": 0.024670639297284747,
+      "mean_policy_discrepancy": 2.7186577032417494e-06,
+      "source_sha256": "f6c18e05908a764e93cd829ccffd9b580770ebe9dca2ad77ae21bb69f49a1c61"
+    },
+    {
+      "file": "results/V196_POST_PULSE_PLASTICITY/V196_k12_MAJORITY_W32_G20_H8000.npz",
+      "arm": "PLASTIC_KEEP_PULSE_10",
+      "states": 14080,
+      "nonzero_policy_discrepancies": 0,
+      "max_policy_discrepancy": 0.0,
+      "mean_policy_discrepancy": 0.0,
+      "source_sha256": "f6c18e05908a764e93cd829ccffd9b580770ebe9dca2ad77ae21bb69f49a1c61"
+    },
+    {
+      "file": "results/V196_POST_PULSE_PLASTICITY/V196_k12_UNANIMITY_W32_G20_H8000.npz",
+      "arm": "FREEZE",
+      "states": 14080,
+      "nonzero_policy_discrepancies": 115,
+      "max_policy_discrepancy": 0.4983302631926253,
+      "mean_policy_discrepancy": 0.0005873131219562768,
+      "source_sha256": "0df8e9a58c22b011ff0caec8f2d2d7b1050dd8a72dc1f882b18b036653af5118"
+    },
+    {
+      "file": "results/V196_POST_PULSE_PLASTICITY/V196_k12_UNANIMITY_W32_G20_H8000.npz",
+      "arm": "PLASTIC_NO_PULSE_EPS08",
+      "states": 14080,
+      "nonzero_policy_discrepancies": 57,
+      "max_policy_discrepancy": 0.49925383095961884,
+      "mean_policy_discrepancy": 0.00011878535447580177,
+      "source_sha256": "0df8e9a58c22b011ff0caec8f2d2d7b1050dd8a72dc1f882b18b036653af5118"
+    },
+    {
+      "file": "results/V196_POST_PULSE_PLASTICITY/V196_k12_UNANIMITY_W32_G20_H8000.npz",
+      "arm": "PLASTIC_NO_PULSE_EPS02",
+      "states": 14080,
+      "nonzero_policy_discrepancies": 128,
+      "max_policy_discrepancy": 0.467744197132977,
+      "mean_policy_discrepancy": 0.0001924179231970027,
+      "source_sha256": "0df8e9a58c22b011ff0caec8f2d2d7b1050dd8a72dc1f882b18b036653af5118"
+    },
+    {
+      "file": "results/V196_POST_PULSE_PLASTICITY/V196_k12_UNANIMITY_W32_G20_H8000.npz",
+      "arm": "PLASTIC_NO_PULSE_EPS00",
+      "states": 14080,
+      "nonzero_policy_discrepancies": 60,
+      "max_policy_discrepancy": 0.10400183500366655,
+      "mean_policy_discrepancy": 3.126494474341153e-05,
+      "source_sha256": "0df8e9a58c22b011ff0caec8f2d2d7b1050dd8a72dc1f882b18b036653af5118"
+    },
+    {
+      "file": "results/V196_POST_PULSE_PLASTICITY/V196_k12_UNANIMITY_W32_G20_H8000.npz",
+      "arm": "PLASTIC_KEEP_PULSE_10",
+      "states": 14080,
+      "nonzero_policy_discrepancies": 102,
+      "max_policy_discrepancy": 0.49489557641675375,
+      "mean_policy_discrepancy": 0.00043551023480417297,
+      "source_sha256": "0df8e9a58c22b011ff0caec8f2d2d7b1050dd8a72dc1f882b18b036653af5118"
+    },
+    {
+      "file": "results/V196_POST_PULSE_PLASTICITY/V196_k4_MAJORITY_W32_G20_H8000.npz",
+      "arm": "FREEZE",
+      "states": 3840,
+      "nonzero_policy_discrepancies": 0,
+      "max_policy_discrepancy": 0.0,
+      "mean_policy_discrepancy": 0.0,
+      "source_sha256": "f9dc55e1d834df4075c6889206b5186b1237ec332e905c1966aec0255e5ae0a5"
+    },
+    {
+      "file": "results/V196_POST_PULSE_PLASTICITY/V196_k4_MAJORITY_W32_G20_H8000.npz",
+      "arm": "PLASTIC_NO_PULSE_EPS08",
+      "states": 3840,
+      "nonzero_policy_discrepancies": 0,
+      "max_policy_discrepancy": 0.0,
+      "mean_policy_discrepancy": 0.0,
+      "source_sha256": "f9dc55e1d834df4075c6889206b5186b1237ec332e905c1966aec0255e5ae0a5"
+    },
+    {
+      "file": "results/V196_POST_PULSE_PLASTICITY/V196_k4_MAJORITY_W32_G20_H8000.npz",
+      "arm": "PLASTIC_NO_PULSE_EPS02",
+      "states": 3840,
+      "nonzero_policy_discrepancies": 1,
+      "max_policy_discrepancy": 0.23089122447957644,
+      "mean_policy_discrepancy": 6.0127923041556365e-05,
+      "source_sha256": "f9dc55e1d834df4075c6889206b5186b1237ec332e905c1966aec0255e5ae0a5"
+    },
+    {
+      "file": "results/V196_POST_PULSE_PLASTICITY/V196_k4_MAJORITY_W32_G20_H8000.npz",
+      "arm": "PLASTIC_NO_PULSE_EPS00",
+      "states": 3840,
+      "nonzero_policy_discrepancies": 1,
+      "max_policy_discrepancy": 1.468558608053172e-11,
+      "mean_policy_discrepancy": 3.824371375138469e-15,
+      "source_sha256": "f9dc55e1d834df4075c6889206b5186b1237ec332e905c1966aec0255e5ae0a5"
+    },
+    {
+      "file": "results/V196_POST_PULSE_PLASTICITY/V196_k4_MAJORITY_W32_G20_H8000.npz",
+      "arm": "PLASTIC_KEEP_PULSE_10",
+      "states": 3840,
+      "nonzero_policy_discrepancies": 0,
+      "max_policy_discrepancy": 0.0,
+      "mean_policy_discrepancy": 0.0,
+      "source_sha256": "f9dc55e1d834df4075c6889206b5186b1237ec332e905c1966aec0255e5ae0a5"
+    },
+    {
+      "file": "results/V196_POST_PULSE_PLASTICITY/V196_k4_UNANIMITY_W32_G20_H8000.npz",
+      "arm": "FREEZE",
+      "states": 3840,
+      "nonzero_policy_discrepancies": 0,
+      "max_policy_discrepancy": 0.0,
+      "mean_policy_discrepancy": 0.0,
+      "source_sha256": "d59d7be9f0ded2ada12028eda7b6a76c3b14c8dda0986860856a56f6cd33d229"
+    },
+    {
+      "file": "results/V196_POST_PULSE_PLASTICITY/V196_k4_UNANIMITY_W32_G20_H8000.npz",
+      "arm": "PLASTIC_NO_PULSE_EPS08",
+      "states": 3840,
+      "nonzero_policy_discrepancies": 30,
+      "max_policy_discrepancy": 0.45635972787800216,
+      "mean_policy_discrepancy": 0.00034390665706185794,
+      "source_sha256": "d59d7be9f0ded2ada12028eda7b6a76c3b14c8dda0986860856a56f6cd33d229"
+    },
+    {
+      "file": "results/V196_POST_PULSE_PLASTICITY/V196_k4_UNANIMITY_W32_G20_H8000.npz",
+      "arm": "PLASTIC_NO_PULSE_EPS02",
+      "states": 3840,
+      "nonzero_policy_discrepancies": 25,
+      "max_policy_discrepancy": 0.016518171739305143,
+      "mean_policy_discrepancy": 1.3140063872832888e-05,
+      "source_sha256": "d59d7be9f0ded2ada12028eda7b6a76c3b14c8dda0986860856a56f6cd33d229"
+    },
+    {
+      "file": "results/V196_POST_PULSE_PLASTICITY/V196_k4_UNANIMITY_W32_G20_H8000.npz",
+      "arm": "PLASTIC_NO_PULSE_EPS00",
+      "states": 3840,
+      "nonzero_policy_discrepancies": 0,
+      "max_policy_discrepancy": 0.0,
+      "mean_policy_discrepancy": 0.0,
+      "source_sha256": "d59d7be9f0ded2ada12028eda7b6a76c3b14c8dda0986860856a56f6cd33d229"
+    },
+    {
+      "file": "results/V196_POST_PULSE_PLASTICITY/V196_k4_UNANIMITY_W32_G20_H8000.npz",
+      "arm": "PLASTIC_KEEP_PULSE_10",
+      "states": 3840,
+      "nonzero_policy_discrepancies": 0,
+      "max_policy_discrepancy": 0.0,
+      "mean_policy_discrepancy": 0.0,
+      "source_sha256": "d59d7be9f0ded2ada12028eda7b6a76c3b14c8dda0986860856a56f6cd33d229"
+    },
+    {
+      "file": "results/V196_POST_PULSE_PLASTICITY/V196_k8_MAJORITY_W32_G20_H8000.npz",
+      "arm": "FREEZE",
+      "states": 8960,
+      "nonzero_policy_discrepancies": 0,
+      "max_policy_discrepancy": 0.0,
+      "mean_policy_discrepancy": 0.0,
+      "source_sha256": "96b013220bbab42b330d0c904ef7133141202111e2266516787318cea2990b97"
+    },
+    {
+      "file": "results/V196_POST_PULSE_PLASTICITY/V196_k8_MAJORITY_W32_G20_H8000.npz",
+      "arm": "PLASTIC_NO_PULSE_EPS08",
+      "states": 8960,
+      "nonzero_policy_discrepancies": 11,
+      "max_policy_discrepancy": 0.4846201881082977,
+      "mean_policy_discrepancy": 6.21460887158413e-05,
+      "source_sha256": "96b013220bbab42b330d0c904ef7133141202111e2266516787318cea2990b97"
+    },
+    {
+      "file": "results/V196_POST_PULSE_PLASTICITY/V196_k8_MAJORITY_W32_G20_H8000.npz",
+      "arm": "PLASTIC_NO_PULSE_EPS02",
+      "states": 8960,
+      "nonzero_policy_discrepancies": 19,
+      "max_policy_discrepancy": 0.08236149581572405,
+      "mean_policy_discrepancy": 1.8064959727093514e-05,
+      "source_sha256": "96b013220bbab42b330d0c904ef7133141202111e2266516787318cea2990b97"
+    },
+    {
+      "file": "results/V196_POST_PULSE_PLASTICITY/V196_k8_MAJORITY_W32_G20_H8000.npz",
+      "arm": "PLASTIC_NO_PULSE_EPS00",
+      "states": 8960,
+      "nonzero_policy_discrepancies": 12,
+      "max_policy_discrepancy": 3.0442526704366202e-05,
+      "mean_policy_discrepancy": 8.57990273925426e-09,
+      "source_sha256": "96b013220bbab42b330d0c904ef7133141202111e2266516787318cea2990b97"
+    },
+    {
+      "file": "results/V196_POST_PULSE_PLASTICITY/V196_k8_MAJORITY_W32_G20_H8000.npz",
+      "arm": "PLASTIC_KEEP_PULSE_10",
+      "states": 8960,
+      "nonzero_policy_discrepancies": 0,
+      "max_policy_discrepancy": 0.0,
+      "mean_policy_discrepancy": 0.0,
+      "source_sha256": "96b013220bbab42b330d0c904ef7133141202111e2266516787318cea2990b97"
+    },
+    {
+      "file": "results/V196_POST_PULSE_PLASTICITY/V196_k8_UNANIMITY_W32_G20_H8000.npz",
+      "arm": "FREEZE",
+      "states": 8960,
+      "nonzero_policy_discrepancies": 0,
+      "max_policy_discrepancy": 0.0,
+      "mean_policy_discrepancy": 0.0,
+      "source_sha256": "cf9cac34670f7ed3abe9b7d67ac60ad4561a6cd06b85815a6c98886281b6a3f3"
+    },
+    {
+      "file": "results/V196_POST_PULSE_PLASTICITY/V196_k8_UNANIMITY_W32_G20_H8000.npz",
+      "arm": "PLASTIC_NO_PULSE_EPS08",
+      "states": 8960,
+      "nonzero_policy_discrepancies": 50,
+      "max_policy_discrepancy": 0.48266068711173826,
+      "mean_policy_discrepancy": 0.00019276621485835184,
+      "source_sha256": "cf9cac34670f7ed3abe9b7d67ac60ad4561a6cd06b85815a6c98886281b6a3f3"
+    },
+    {
+      "file": "results/V196_POST_PULSE_PLASTICITY/V196_k8_UNANIMITY_W32_G20_H8000.npz",
+      "arm": "PLASTIC_NO_PULSE_EPS02",
+      "states": 8960,
+      "nonzero_policy_discrepancies": 15,
+      "max_policy_discrepancy": 0.007376503310237537,
+      "mean_policy_discrepancy": 1.662831396339217e-06,
+      "source_sha256": "cf9cac34670f7ed3abe9b7d67ac60ad4561a6cd06b85815a6c98886281b6a3f3"
+    },
+    {
+      "file": "results/V196_POST_PULSE_PLASTICITY/V196_k8_UNANIMITY_W32_G20_H8000.npz",
+      "arm": "PLASTIC_NO_PULSE_EPS00",
+      "states": 8960,
+      "nonzero_policy_discrepancies": 42,
+      "max_policy_discrepancy": 0.33593150830803387,
+      "mean_policy_discrepancy": 4.761045359282403e-05,
+      "source_sha256": "cf9cac34670f7ed3abe9b7d67ac60ad4561a6cd06b85815a6c98886281b6a3f3"
+    },
+    {
+      "file": "results/V196_POST_PULSE_PLASTICITY/V196_k8_UNANIMITY_W32_G20_H8000.npz",
+      "arm": "PLASTIC_KEEP_PULSE_10",
+      "states": 8960,
+      "nonzero_policy_discrepancies": 0,
+      "max_policy_discrepancy": 0.0,
+      "mean_policy_discrepancy": 0.0,
+      "source_sha256": "cf9cac34670f7ed3abe9b7d67ac60ad4561a6cd06b85815a6c98886281b6a3f3"
+    }
+  ]
+}

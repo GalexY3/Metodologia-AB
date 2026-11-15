@@ -1,0 +1,73 @@
+{
+  "rows": [
+    {
+      "seed": 192115,
+      "cut": 1200,
+      "full_test": 1.0,
+      "binary_from_scratch_test": 0.03240030156579932,
+      "withdrawal_train": 1.0,
+      "withdrawal_test": 0.9965337954939342,
+      "full_t_gen": 10200,
+      "withdrawal_t_gen": 14300,
+      "minimum_observed_post_switch_train": 1.0,
+      "payoff_entries_per_local_training_input": 96000,
+      "continuous_full_payoff_entries_per_local_training_input": 1860000,
+      "payoff_entry_reduction_fraction": 0.9483870967741935
+    },
+    {
+      "seed": 192116,
+      "cut": 1100,
+      "full_test": 1.0,
+      "binary_from_scratch_test": 0.03196777691339594,
+      "withdrawal_train": 1.0,
+      "withdrawal_test": 0.9948006932409013,
+      "full_t_gen": 12000,
+      "withdrawal_t_gen": 16000,
+      "minimum_observed_post_switch_train": 0.9973958333333334,
+      "payoff_entries_per_local_training_input": 93000,
+      "continuous_full_payoff_entries_per_local_training_input": 1860000,
+      "payoff_entry_reduction_fraction": 0.95
+    },
+    {
+      "seed": 192117,
+      "cut": 1100,
+      "full_test": 1.0,
+      "binary_from_scratch_test": 0.03237627241844357,
+      "withdrawal_train": 1.0,
+      "withdrawal_test": 0.9982668977469671,
+      "full_t_gen": 11700,
+      "withdrawal_t_gen": 14900,
+      "minimum_observed_post_switch_train": 1.0,
+      "payoff_entries_per_local_training_input": 93000,
+      "continuous_full_payoff_entries_per_local_training_input": 1860000,
+      "payoff_entry_reduction_fraction": 0.95
+    },
+    {
+      "seed": 192118,
+      "cut": 1200,
+      "full_test": 1.0,
+      "binary_from_scratch_test": 0.03193173319236233,
+      "withdrawal_train": 1.0,
+      "withdrawal_test": 0.9896013864818024,
+      "full_t_gen": 10600,
+      "withdrawal_t_gen": 15900,
+      "minimum_observed_post_switch_train": 0.9973958333333334,
+      "payoff_entries_per_local_training_input": 96000,
+      "continuous_full_payoff_entries_per_local_training_input": 1860000,
+      "payoff_entry_reduction_fraction": 0.9483870967741935
+    }
+  ],
+  "mean_withdrawal_test": 0.9948006932409013,
+  "mean_binary_from_scratch_test": 0.03216902102250029,
+  "primary_passed": true,
+  "primary_pass_count": 4,
+  "median_deficit": 0.004332755632582286,
+  "counterfactual_feedback_needed_throughout_training_refuted_in_this_model": true,
+  "autonomous_binary_formation_from_scratch_demonstrated": false,
+  "payoff_entries_are_not_Shannon_information_or_physical_query_cost": true,
+  "new_independent_roots": 0,
+  "N2": 0,
+  "N3": 0,
+  "CT2_historical": 61,
+  "new_branch_score": null
+}

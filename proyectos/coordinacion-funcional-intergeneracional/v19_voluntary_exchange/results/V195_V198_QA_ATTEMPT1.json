@@ -1,0 +1,6 @@
+{
+  "stage": "Document and workspace verification",
+  "failure": "Default cp1252 decoding of UTF8 Git path containing Programaci\u00f3n caused a FileNotFoundError; index and HEAD were unchanged.",
+  "scientific_results_changed": false,
+  "correction": "Specify encoding=utf-8 for Git subprocess output."
+}

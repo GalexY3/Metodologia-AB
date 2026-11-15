@@ -1,0 +1,602 @@
+{
+  "independent_numpy_forward": true,
+  "explicit_Cartesian_game_enumeration": true,
+  "scientific_new_roots": 0,
+  "metric_checks": 48,
+  "failures": [],
+  "max_error": 5.551115123125783e-16,
+  "audits": [
+    {
+      "family": "V195_BOTH_BANDIT",
+      "step": 60000,
+      "checkpoint_sha256": "31f2d651adc551d9ef8a0803aa63dfda08606b308f35d322292d2a95c5a0cccf",
+      "checks": [
+        {
+          "family": "V195_BOTH_BANDIT",
+          "seed": 192115,
+          "step": 60000,
+          "field": "train_joint_greedy",
+          "reference": 1.0,
+          "saved": 1.0,
+          "error": 0.0,
+          "tolerance": 1e-07,
+          "passed": true
+        },
+        {
+          "family": "V195_BOTH_BANDIT",
+          "seed": 192115,
+          "step": 60000,
+          "field": "train_joint_behavior_expected",
+          "reference": 0.8161290322580645,
+          "saved": 0.816129032258065,
+          "error": 4.440892098500626e-16,
+          "tolerance": 1e-07,
+          "passed": true
+        },
+        {
+          "family": "V195_BOTH_BANDIT",
+          "seed": 192115,
+          "step": 60000,
+          "field": "test_joint_greedy",
+          "reference": 0.9965337954939342,
+          "saved": 0.9965337954939342,
+          "error": 0.0,
+          "tolerance": 1e-07,
+          "passed": true
+        },
+        {
+          "family": "V195_BOTH_BANDIT",
+          "seed": 192115,
+          "step": 60000,
+          "field": "test_joint_behavior_expected",
+          "reference": 0.8133214066081512,
+          "saved": 0.8133214066081518,
+          "error": 5.551115123125783e-16,
+          "tolerance": 1e-07,
+          "passed": true
+        },
+        {
+          "family": "V195_BOTH_BANDIT",
+          "seed": 192115,
+          "step": 60000,
+          "field": "train_A",
+          "reference": 1.0,
+          "saved": 1.0,
+          "error": 0.0,
+          "tolerance": 1e-07,
+          "passed": true
+        },
+        {
+          "family": "V195_BOTH_BANDIT",
+          "seed": 192115,
+          "step": 60000,
+          "field": "test_A",
+          "reference": 0.9965337954939342,
+          "saved": 0.9965337954939342,
+          "error": 0.0,
+          "tolerance": 1e-07,
+          "passed": true
+        },
+        {
+          "family": "V195_BOTH_BANDIT",
+          "seed": 192115,
+          "step": 60000,
+          "field": "train_B",
+          "reference": 1.0,
+          "saved": 1.0,
+          "error": 0.0,
+          "tolerance": 1e-07,
+          "passed": true
+        },
+        {
+          "family": "V195_BOTH_BANDIT",
+          "seed": 192115,
+          "step": 60000,
+          "field": "test_B",
+          "reference": 1.0,
+          "saved": 1.0,
+          "error": 0.0,
+          "tolerance": 1e-07,
+          "passed": true
+        },
+        {
+          "family": "V195_BOTH_BANDIT",
+          "seed": 192116,
+          "step": 60000,
+          "field": "train_joint_greedy",
+          "reference": 1.0,
+          "saved": 1.0,
+          "error": 0.0,
+          "tolerance": 1e-07,
+          "passed": true
+        },
+        {
+          "family": "V195_BOTH_BANDIT",
+          "seed": 192116,
+          "step": 60000,
+          "field": "train_joint_behavior_expected",
+          "reference": 0.8161290322580645,
+          "saved": 0.8161290322580647,
+          "error": 1.1102230246251565e-16,
+          "tolerance": 1e-07,
+          "passed": true
+        },
+        {
+          "family": "V195_BOTH_BANDIT",
+          "seed": 192116,
+          "step": 60000,
+          "field": "test_joint_greedy",
+          "reference": 0.9948006932409013,
+          "saved": 0.9948006932409013,
+          "error": 0.0,
+          "tolerance": 1e-07,
+          "passed": true
+        },
+        {
+          "family": "V195_BOTH_BANDIT",
+          "seed": 192116,
+          "step": 60000,
+          "field": "test_joint_behavior_expected",
+          "reference": 0.8119175937831946,
+          "saved": 0.8119175937831947,
+          "error": 1.1102230246251565e-16,
+          "tolerance": 1e-07,
+          "passed": true
+        },
+        {
+          "family": "V195_BOTH_BANDIT",
+          "seed": 192116,
+          "step": 60000,
+          "field": "train_A",
+          "reference": 1.0,
+          "saved": 1.0,
+          "error": 0.0,
+          "tolerance": 1e-07,
+          "passed": true
+        },
+        {
+          "family": "V195_BOTH_BANDIT",
+          "seed": 192116,
+          "step": 60000,
+          "field": "test_A",
+          "reference": 0.9948006932409013,
+          "saved": 0.9948006932409013,
+          "error": 0.0,
+          "tolerance": 1e-07,
+          "passed": true
+        },
+        {
+          "family": "V195_BOTH_BANDIT",
+          "seed": 192116,
+          "step": 60000,
+          "field": "train_B",
+          "reference": 1.0,
+          "saved": 1.0,
+          "error": 0.0,
+          "tolerance": 1e-07,
+          "passed": true
+        },
+        {
+          "family": "V195_BOTH_BANDIT",
+          "seed": 192116,
+          "step": 60000,
+          "field": "test_B",
+          "reference": 1.0,
+          "saved": 1.0,
+          "error": 0.0,
+          "tolerance": 1e-07,
+          "passed": true
+        },
+        {
+          "family": "V195_BOTH_BANDIT",
+          "seed": 192117,
+          "step": 60000,
+          "field": "train_joint_greedy",
+          "reference": 1.0,
+          "saved": 1.0,
+          "error": 0.0,
+          "tolerance": 1e-07,
+          "passed": true
+        },
+        {
+          "family": "V195_BOTH_BANDIT",
+          "seed": 192117,
+          "step": 60000,
+          "field": "train_joint_behavior_expected",
+          "reference": 0.8161290322580645,
+          "saved": 0.816129032258065,
+          "error": 4.440892098500626e-16,
+          "tolerance": 1e-07,
+          "passed": true
+        },
+        {
+          "family": "V195_BOTH_BANDIT",
+          "seed": 192117,
+          "step": 60000,
+          "field": "test_joint_greedy",
+          "reference": 0.9982668977469671,
+          "saved": 0.9982668977469671,
+          "error": 0.0,
+          "tolerance": 1e-07,
+          "passed": true
+        },
+        {
+          "family": "V195_BOTH_BANDIT",
+          "seed": 192117,
+          "step": 60000,
+          "field": "test_joint_behavior_expected",
+          "reference": 0.8147252194331079,
+          "saved": 0.8147252194331084,
+          "error": 4.440892098500626e-16,
+          "tolerance": 1e-07,
+          "passed": true
+        },
+        {
+          "family": "V195_BOTH_BANDIT",
+          "seed": 192117,
+          "step": 60000,
+          "field": "train_A",
+          "reference": 1.0,
+          "saved": 1.0,
+          "error": 0.0,
+          "tolerance": 1e-07,
+          "passed": true
+        },
+        {
+          "family": "V195_BOTH_BANDIT",
+          "seed": 192117,
+          "step": 60000,
+          "field": "test_A",
+          "reference": 1.0,
+          "saved": 1.0,
+          "error": 0.0,
+          "tolerance": 1e-07,
+          "passed": true
+        },
+        {
+          "family": "V195_BOTH_BANDIT",
+          "seed": 192117,
+          "step": 60000,
+          "field": "train_B",
+          "reference": 1.0,
+          "saved": 1.0,
+          "error": 0.0,
+          "tolerance": 1e-07,
+          "passed": true
+        },
+        {
+          "family": "V195_BOTH_BANDIT",
+          "seed": 192117,
+          "step": 60000,
+          "field": "test_B",
+          "reference": 0.9982668977469671,
+          "saved": 0.9982668977469671,
+          "error": 0.0,
+          "tolerance": 1e-07,
+          "passed": true
+        },
+        {
+          "family": "V195_BOTH_BANDIT",
+          "seed": 192118,
+          "step": 60000,
+          "field": "train_joint_greedy",
+          "reference": 1.0,
+          "saved": 1.0,
+          "error": 0.0,
+          "tolerance": 1e-07,
+          "passed": true
+        },
+        {
+          "family": "V195_BOTH_BANDIT",
+          "seed": 192118,
+          "step": 60000,
+          "field": "train_joint_behavior_expected",
+          "reference": 0.8161290322580645,
+          "saved": 0.816129032258065,
+          "error": 4.440892098500626e-16,
+          "tolerance": 1e-07,
+          "passed": true
+        },
+        {
+          "family": "V195_BOTH_BANDIT",
+          "seed": 192118,
+          "step": 60000,
+          "field": "test_joint_greedy",
+          "reference": 0.9896013864818024,
+          "saved": 0.9896013864818024,
+          "error": 0.0,
+          "tolerance": 1e-07,
+          "passed": true
+        },
+        {
+          "family": "V195_BOTH_BANDIT",
+          "seed": 192118,
+          "step": 60000,
+          "field": "test_joint_behavior_expected",
+          "reference": 0.8077061553083245,
+          "saved": 0.807706155308325,
+          "error": 5.551115123125783e-16,
+          "tolerance": 1e-07,
+          "passed": true
+        },
+        {
+          "family": "V195_BOTH_BANDIT",
+          "seed": 192118,
+          "step": 60000,
+          "field": "train_A",
+          "reference": 1.0,
+          "saved": 1.0,
+          "error": 0.0,
+          "tolerance": 1e-07,
+          "passed": true
+        },
+        {
+          "family": "V195_BOTH_BANDIT",
+          "seed": 192118,
+          "step": 60000,
+          "field": "test_A",
+          "reference": 0.9896013864818024,
+          "saved": 0.9896013864818024,
+          "error": 0.0,
+          "tolerance": 1e-07,
+          "passed": true
+        },
+        {
+          "family": "V195_BOTH_BANDIT",
+          "seed": 192118,
+          "step": 60000,
+          "field": "train_B",
+          "reference": 1.0,
+          "saved": 1.0,
+          "error": 0.0,
+          "tolerance": 1e-07,
+          "passed": true
+        },
+        {
+          "family": "V195_BOTH_BANDIT",
+          "seed": 192118,
+          "step": 60000,
+          "field": "test_B",
+          "reference": 1.0,
+          "saved": 1.0,
+          "error": 0.0,
+          "tolerance": 1e-07,
+          "passed": true
+        }
+      ],
+      "diagnostics": [
+        {
+          "seed": 192115,
+          "minimum_output_action_margins": [
+            0.01089768040129896,
+            0.04195454881462782
+          ],
+          "Cartesian_train_pairs": 147456,
+          "Cartesian_test_pairs": 332929
+        },
+        {
+          "seed": 192116,
+          "minimum_output_action_margins": [
+            0.004767871469746915,
+            0.010059107273434315
+          ],
+          "Cartesian_train_pairs": 147456,
+          "Cartesian_test_pairs": 332929
+        },
+        {
+          "seed": 192117,
+          "minimum_output_action_margins": [
+            0.021000985774231568,
+            0.0007903280740955976
+          ],
+          "Cartesian_train_pairs": 147456,
+          "Cartesian_test_pairs": 332929
+        },
+        {
+          "seed": 192118,
+          "minimum_output_action_margins": [
+            0.0007715221061019295,
+            0.05928751126411527
+          ],
+          "Cartesian_train_pairs": 147456,
+          "Cartesian_test_pairs": 332929
+        }
+      ]
+    }
+  ],
+  "parent_gauge_checks": [
+    {
+      "arm": "BOTH_BANDIT",
+      "seed": 192115,
+      "field": "parent_gauge_train_A",
+      "reference": 1.0,
+      "saved": 1.0,
+      "error": 0.0,
+      "passed": true
+    },
+    {
+      "arm": "BOTH_BANDIT",
+      "seed": 192115,
+      "field": "parent_gauge_test_A",
+      "reference": 0.9965337954939342,
+      "saved": 0.9965337954939342,
+      "error": 0.0,
+      "passed": true
+    },
+    {
+      "arm": "BOTH_BANDIT",
+      "seed": 192115,
+      "field": "parent_gauge_train_B",
+      "reference": 1.0,
+      "saved": 1.0,
+      "error": 0.0,
+      "passed": true
+    },
+    {
+      "arm": "BOTH_BANDIT",
+      "seed": 192115,
+      "field": "parent_gauge_test_B",
+      "reference": 1.0,
+      "saved": 1.0,
+      "error": 0.0,
+      "passed": true
+    },
+    {
+      "arm": "BOTH_BANDIT",
+      "seed": 192116,
+      "field": "parent_gauge_train_A",
+      "reference": 1.0,
+      "saved": 1.0,
+      "error": 0.0,
+      "passed": true
+    },
+    {
+      "arm": "BOTH_BANDIT",
+      "seed": 192116,
+      "field": "parent_gauge_test_A",
+      "reference": 0.9948006932409013,
+      "saved": 0.9948006932409013,
+      "error": 0.0,
+      "passed": true
+    },
+    {
+      "arm": "BOTH_BANDIT",
+      "seed": 192116,
+      "field": "parent_gauge_train_B",
+      "reference": 1.0,
+      "saved": 1.0,
+      "error": 0.0,
+      "passed": true
+    },
+    {
+      "arm": "BOTH_BANDIT",
+      "seed": 192116,
+      "field": "parent_gauge_test_B",
+      "reference": 1.0,
+      "saved": 1.0,
+      "error": 0.0,
+      "passed": true
+    },
+    {
+      "arm": "BOTH_BANDIT",
+      "seed": 192117,
+      "field": "parent_gauge_train_A",
+      "reference": 1.0,
+      "saved": 1.0,
+      "error": 0.0,
+      "passed": true
+    },
+    {
+      "arm": "BOTH_BANDIT",
+      "seed": 192117,
+      "field": "parent_gauge_test_A",
+      "reference": 1.0,
+      "saved": 1.0,
+      "error": 0.0,
+      "passed": true
+    },
+    {
+      "arm": "BOTH_BANDIT",
+      "seed": 192117,
+      "field": "parent_gauge_train_B",
+      "reference": 1.0,
+      "saved": 1.0,
+      "error": 0.0,
+      "passed": true
+    },
+    {
+      "arm": "BOTH_BANDIT",
+      "seed": 192117,
+      "field": "parent_gauge_test_B",
+      "reference": 0.9982668977469671,
+      "saved": 0.9982668977469671,
+      "error": 0.0,
+      "passed": true
+    },
+    {
+      "arm": "BOTH_BANDIT",
+      "seed": 192118,
+      "field": "parent_gauge_train_A",
+      "reference": 1.0,
+      "saved": 1.0,
+      "error": 0.0,
+      "passed": true
+    },
+    {
+      "arm": "BOTH_BANDIT",
+      "seed": 192118,
+      "field": "parent_gauge_test_A",
+      "reference": 0.9896013864818024,
+      "saved": 0.9896013864818024,
+      "error": 0.0,
+      "passed": true
+    },
+    {
+      "arm": "BOTH_BANDIT",
+      "seed": 192118,
+      "field": "parent_gauge_train_B",
+      "reference": 1.0,
+      "saved": 1.0,
+      "error": 0.0,
+      "passed": true
+    },
+    {
+      "arm": "BOTH_BANDIT",
+      "seed": 192118,
+      "field": "parent_gauge_test_B",
+      "reference": 1.0,
+      "saved": 1.0,
+      "error": 0.0,
+      "passed": true
+    }
+  ],
+  "frozen_parameter_checks": [],
+  "optimizer_and_RNG_checks": [
+    {
+      "arm": "BOTH_BANDIT",
+      "seed": 192115,
+      "original_cut": 1200,
+      "aligned_clock": 1200,
+      "final_clock": 60000,
+      "RNG_consumption_identical": true,
+      "unpadded_parent_weights_and_Adam_moments_retained": true
+    },
+    {
+      "arm": "BOTH_BANDIT",
+      "seed": 192116,
+      "original_cut": 1100,
+      "aligned_clock": 1200,
+      "final_clock": 60000,
+      "RNG_consumption_identical": true,
+      "unpadded_parent_weights_and_Adam_moments_retained": true
+    },
+    {
+      "arm": "BOTH_BANDIT",
+      "seed": 192117,
+      "original_cut": 1100,
+      "aligned_clock": 1200,
+      "final_clock": 60000,
+      "RNG_consumption_identical": true,
+      "unpadded_parent_weights_and_Adam_moments_retained": true
+    },
+    {
+      "arm": "BOTH_BANDIT",
+      "seed": 192118,
+      "original_cut": 1200,
+      "aligned_clock": 1200,
+      "final_clock": 60000,
+      "RNG_consumption_identical": true,
+      "unpadded_parent_weights_and_Adam_moments_retained": true
+    }
+  ],
+  "primary_gates": [
+    {
+      "arm": "BOTH_BANDIT",
+      "count": 4,
+      "median_deficit": 0.004332755632582286,
+      "passed": true
+    }
+  ],
+  "conditional_control_execution_matches_preregistration": true,
+  "frozen_scientific_sources_and_parents_unchanged": true
+}
