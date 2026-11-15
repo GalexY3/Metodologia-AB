@@ -1,0 +1,163 @@
+{
+  "schema": "ABH_N359_EXECUTED_RECEIPT_V1",
+  "cycle": "N359",
+  "run_id": "N359-20261115-SYNTHETIC-PARTIAL-ID",
+  "date": "2026-11-15",
+  "method": "AB3.2.1+O1-O7",
+  "status": "VALID_TECHNICAL_PASS",
+  "preoutcome_commit": "929da09f7eb74e53bf39d252865a2fbd37f35aae",
+  "js_sha256": "5e0bd21476825d240fd3d8b5f05c1c55c8c2d84d6dbc25e0e2b23e76b712caa2",
+  "py_sha256": "8981671a0bb851e4a7d56a42d17bad8e375154584dffabef8de891f8ad118734",
+  "js_outcome_sha256": "3d6b644e06e1657ef9cb9a9c202012af3a14837a4a4413f5d0571f847fa5c150",
+  "python_oracle_outcome_sha256": "034bdf1785c296033245eba25d7a3c1d287e55333b9989717dfc444e82d32ecb",
+  "synthetic_worlds": 504,
+  "exposure_experimental_worlds": 480,
+  "complete_exposure_null_controls": 24,
+  "full_cross_language_L_U_K_exact_checks": 504,
+  "manual_identical_observed_records_with_possible_matching_range": [
+    0,
+    4
+  ],
+  "observational_uncertainty_by_group": [
+    {
+      "mode": "MCAR",
+      "rate": 0.15,
+      "n": 40,
+      "meanWidth": 7.45,
+      "pointIdentified": 0,
+      "meanObserved": 12.775
+    },
+    {
+      "mode": "MCAR",
+      "rate": 0.35,
+      "n": 40,
+      "meanWidth": 5.8,
+      "pointIdentified": 0,
+      "meanObserved": 28.275
+    },
+    {
+      "mode": "MCAR",
+      "rate": 0.6,
+      "n": 40,
+      "meanWidth": 4.475,
+      "pointIdentified": 0,
+      "meanObserved": 47.375
+    },
+    {
+      "mode": "MCAR",
+      "rate": 0.85,
+      "n": 40,
+      "meanWidth": 2.675,
+      "pointIdentified": 0,
+      "meanObserved": 68.55
+    },
+    {
+      "mode": "MCAR",
+      "rate": 1,
+      "n": 8,
+      "meanWidth": 0,
+      "pointIdentified": 8,
+      "meanObserved": 81
+    },
+    {
+      "mode": "ACTOR_SELECT",
+      "rate": 0.15,
+      "n": 40,
+      "meanWidth": 7.675,
+      "pointIdentified": 0,
+      "meanObserved": 11.675
+    },
+    {
+      "mode": "ACTOR_SELECT",
+      "rate": 0.35,
+      "n": 40,
+      "meanWidth": 6.1,
+      "pointIdentified": 0,
+      "meanObserved": 26.025
+    },
+    {
+      "mode": "ACTOR_SELECT",
+      "rate": 0.6,
+      "n": 40,
+      "meanWidth": 4.625,
+      "pointIdentified": 0,
+      "meanObserved": 45.7
+    },
+    {
+      "mode": "ACTOR_SELECT",
+      "rate": 0.85,
+      "n": 40,
+      "meanWidth": 2.775,
+      "pointIdentified": 1,
+      "meanObserved": 60.875
+    },
+    {
+      "mode": "ACTOR_SELECT",
+      "rate": 1,
+      "n": 8,
+      "meanWidth": 0,
+      "pointIdentified": 8,
+      "meanObserved": 81
+    },
+    {
+      "mode": "OUTCOME_MNAR",
+      "rate": 0.15,
+      "n": 40,
+      "meanWidth": 7.025,
+      "pointIdentified": 0,
+      "meanObserved": 8.45
+    },
+    {
+      "mode": "OUTCOME_MNAR",
+      "rate": 0.35,
+      "n": 40,
+      "meanWidth": 5.075,
+      "pointIdentified": 0,
+      "meanObserved": 19.65
+    },
+    {
+      "mode": "OUTCOME_MNAR",
+      "rate": 0.6,
+      "n": 40,
+      "meanWidth": 3.825,
+      "pointIdentified": 0,
+      "meanObserved": 33.1
+    },
+    {
+      "mode": "OUTCOME_MNAR",
+      "rate": 0.85,
+      "n": 40,
+      "meanWidth": 3.125,
+      "pointIdentified": 1,
+      "meanObserved": 43.875
+    },
+    {
+      "mode": "OUTCOME_MNAR",
+      "rate": 1,
+      "n": 8,
+      "meanWidth": 0,
+      "pointIdentified": 8,
+      "meanObserved": 81
+    }
+  ],
+  "new_human_measurements": 0,
+  "human_validation": false,
+  "adversarial_mutations_rejected": 2,
+  "complaint_ids": [],
+  "instrumental_failed_attempts": 0,
+  "cost": {
+    "runtime_seconds": "NOT_MEASURED",
+    "token_cost": "NOT_MEASURED",
+    "max_allowed_wall_seconds": 90
+  },
+  "CLEAN_CLONE_NOT_VERIFIED": true,
+  "CT2_before": 7,
+  "CT2_after": 7,
+  "scientific_grade": "0/3",
+  "STOP_R5": true,
+  "DRIFT_D": 2.0,
+  "scientific_novelty": "NONE_CLAIMED_MANSKI_PARTIAL_IDENTIFICATION_IS_PRIOR_ART",
+  "scope_limit": "Exact finite bipartite maximum-cardinality bounds conditional on all unseen pairs feasible, no sequence, no exclusivity beyond matching, synthetic mechanisms only; not measured real dating population.",
+  "no_original_ESBM_or_SRC104_changes": true,
+  "no_SSJY_Codex_authors_contacts_licenses_merge": true
+}

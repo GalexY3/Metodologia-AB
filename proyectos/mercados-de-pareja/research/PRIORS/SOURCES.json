@@ -3,7 +3,7 @@
   "project": "mercados-de-pareja",
   "date": "2026-10-31",
   "scope": "Retrospective provenance backfill from repository reports plus N56/N57 publisher audit. Original data never copied; not systematic or claim of accessing raw data for bibliography.",
-  "source_count": 121,
+  "source_count": 123,
   "sources": [
     {
       "id": "SRC001",
@@ -2762,9 +2762,31 @@
       ],
       "verification_date": "2026-10-31",
       "restrictions": "No authors contacted, no login or license acceptance; do not infer causal benefit or convert directed scores to native mutual yes without original join."
+    },
+    {
+      "id": "SRC122",
+      "title": "Charles F. Manski (2005), Partial identification with missing data: concepts and findings",
+      "canonical_url": "https://doi.org/10.1016/j.ijar.2004.10.006",
+      "source_type": "ORIGINAL_THEORETICAL_PRIOR_ART_NOT_HUMAN_MICRODATA",
+      "date_verified": "2026-11-15",
+      "publisher": "International Journal of Approximate Reasoning 39(2-3):151-165",
+      "source_access": "Original publisher abstract/metadata inspected; no file download or human data",
+      "contribution": "Defines identified regions compatible with missing values rather than unsupported point estimates; generic missing-data partial identification predates ESBM.",
+      "limit": "Not a theorem about this specific finite bipartite matching riskset and not evidence for real partnering; mathematical adaptation is elementary."
+    },
+    {
+      "id": "SRC123",
+      "title": "Horowitz & Manski (2006), Identification and estimation of statistical functionals using incomplete data",
+      "canonical_url": "https://doi.org/10.1016/j.jeconom.2005.02.007",
+      "source_type": "ORIGINAL_THEORETICAL_PRIOR_ART_NOT_HUMAN_MICRODATA",
+      "date_verified": "2026-11-15",
+      "publisher": "Journal of Econometrics 132(2):445-459",
+      "source_access": "Publisher abstract and citation metadata inspected",
+      "contribution": "Explicit sharp bounds under incomplete data without assuming missingness is ignorable; identifies obvious claim of originality as inappropriate.",
+      "limit": "Does not test this experiment, any actual dataset, or dynamic romantic pairing mechanisms."
     }
   ],
-  "last_added_campaign": "ABH_N357_N376_NEW_R5_DOCUMENTARY_LEADS",
+  "last_added_campaign": "ABH_N359_PARTIAL_IDENTIFICATION_PRIOR_ART_20261115",
   "canonical_duplicate_DOI_audit": {
     "date": "2026-10-30",
     "source_records_before": 107,
