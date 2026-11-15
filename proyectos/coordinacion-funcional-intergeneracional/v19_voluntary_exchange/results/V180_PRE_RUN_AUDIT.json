@@ -1,0 +1,244 @@
+{
+  "limits": {
+    "pid": 4072,
+    "priority": "BelowNormal",
+    "priority_code": 16384,
+    "affinity": 16515072,
+    "numba_threads": 3
+  },
+  "source_sha256": "b78fefcc2ff4547494cb90aed65a67a67b3130403411c03744a58994b409dfaa",
+  "kernel_sha256": "83fb5177ef778cf5407bd5a7caa1753ca9cf9403d38383a671e098bba1051a96",
+  "original_endpoints": [
+    {
+      "seed": 178115,
+      "population_sha256": "29dc53dded06f002ff932b9bd65c6aaaa947ffc0b2bd6d34a3ee4ec043d5945b",
+      "max_error": 0.0
+    },
+    {
+      "seed": 178116,
+      "population_sha256": "9a82027caebf3f0e51da763fb84c074ae4f8b5e8a07088110d1d341a4b184ed1",
+      "max_error": 0.0
+    },
+    {
+      "seed": 178117,
+      "population_sha256": "67d7dcffba8df75458e0fd2bc2fda8b801c1f2ddeb289ad918cc70bff7e60563",
+      "max_error": 0.0
+    },
+    {
+      "seed": 178118,
+      "population_sha256": "ca27bfaff189d91a6dc362286485def30ca1c7a1b0987d2c3536d4fe3f4e880d",
+      "max_error": 0.0
+    },
+    {
+      "seed": 178119,
+      "population_sha256": "cc98b4673a0267ddeb9cc3770a29b5292be46c53b9ceeb19d932ff0724e24e55",
+      "max_error": 0.0
+    },
+    {
+      "seed": 178120,
+      "population_sha256": "a69e7a1cc353d2e766133f0f87e0972386ee6b84ab2727f797146e9346936881",
+      "max_error": 0.0
+    },
+    {
+      "seed": 178121,
+      "population_sha256": "35506c283a12a57b5eb0f63d23ea50bdc79cd9f34de0465fb0b215edf7c104bf",
+      "max_error": 0.0
+    },
+    {
+      "seed": 178122,
+      "population_sha256": "e452d956d3f439d5095e9427ed8e61ee03ff62876475e208891b7684a8c57e4d",
+      "max_error": 0.0
+    }
+  ],
+  "boundary_jacobian": [
+    {
+      "m": 3,
+      "positive_intercepts": 0,
+      "max_error": 1.0000000161269895e-08,
+      "resource_eigenvalue": 2.0,
+      "stable_origin": false
+    },
+    {
+      "m": 3,
+      "positive_intercepts": 1,
+      "max_error": 7.000000135093387e-09,
+      "resource_eigenvalue": 1.4,
+      "stable_origin": false
+    },
+    {
+      "m": 3,
+      "positive_intercepts": 2,
+      "max_error": 4.000000108916879e-09,
+      "resource_eigenvalue": 0.8,
+      "stable_origin": true
+    },
+    {
+      "m": 3,
+      "positive_intercepts": 3,
+      "max_error": 3.000000026176508e-09,
+      "resource_eigenvalue": 0.20000000000000018,
+      "stable_origin": true
+    },
+    {
+      "m": 5,
+      "positive_intercepts": 0,
+      "max_error": 1.0000000161269895e-08,
+      "resource_eigenvalue": 2.0,
+      "stable_origin": false
+    },
+    {
+      "m": 5,
+      "positive_intercepts": 1,
+      "max_error": 8.200000234381832e-09,
+      "resource_eigenvalue": 1.6400000000000001,
+      "stable_origin": false
+    },
+    {
+      "m": 5,
+      "positive_intercepts": 2,
+      "max_error": 6.4000000854491645e-09,
+      "resource_eigenvalue": 1.28,
+      "stable_origin": false
+    },
+    {
+      "m": 5,
+      "positive_intercepts": 3,
+      "max_error": 4.600000047538799e-09,
+      "resource_eigenvalue": 0.9199999999999999,
+      "stable_origin": true
+    },
+    {
+      "m": 5,
+      "positive_intercepts": 4,
+      "max_error": 2.800000009628434e-09,
+      "resource_eigenvalue": 0.56,
+      "stable_origin": true
+    },
+    {
+      "m": 5,
+      "positive_intercepts": 5,
+      "max_error": 1.8000000379103653e-09,
+      "resource_eigenvalue": 0.20000000000000018,
+      "stable_origin": true
+    },
+    {
+      "m": 16,
+      "positive_intercepts": 0,
+      "max_error": 1.0000000161269895e-08,
+      "resource_eigenvalue": 2.0,
+      "stable_origin": false
+    },
+    {
+      "m": 16,
+      "positive_intercepts": 1,
+      "max_error": 9.437500336773041e-09,
+      "resource_eigenvalue": 1.8875,
+      "stable_origin": false
+    },
+    {
+      "m": 16,
+      "positive_intercepts": 2,
+      "max_error": 8.875000068186978e-09,
+      "resource_eigenvalue": 1.775,
+      "stable_origin": false
+    },
+    {
+      "m": 16,
+      "positive_intercepts": 3,
+      "max_error": 8.312500021645519e-09,
+      "resource_eigenvalue": 1.6625,
+      "stable_origin": false
+    },
+    {
+      "m": 16,
+      "positive_intercepts": 4,
+      "max_error": 7.750000197148665e-09,
+      "resource_eigenvalue": 1.55,
+      "stable_origin": false
+    },
+    {
+      "m": 16,
+      "positive_intercepts": 5,
+      "max_error": 7.187500150607207e-09,
+      "resource_eigenvalue": 1.4375,
+      "stable_origin": false
+    },
+    {
+      "m": 16,
+      "positive_intercepts": 6,
+      "max_error": 6.625000104065748e-09,
+      "resource_eigenvalue": 1.325,
+      "stable_origin": false
+    },
+    {
+      "m": 16,
+      "positive_intercepts": 7,
+      "max_error": 6.062500279568894e-09,
+      "resource_eigenvalue": 1.2125,
+      "stable_origin": false
+    },
+    {
+      "m": 16,
+      "positive_intercepts": 8,
+      "max_error": 5.500000010982831e-09,
+      "resource_eigenvalue": 1.1,
+      "stable_origin": false
+    },
+    {
+      "m": 16,
+      "positive_intercepts": 9,
+      "max_error": 4.9375000754636744e-09,
+      "resource_eigenvalue": 0.9875,
+      "stable_origin": true
+    },
+    {
+      "m": 16,
+      "positive_intercepts": 10,
+      "max_error": 4.375000028922216e-09,
+      "resource_eigenvalue": 0.875,
+      "stable_origin": true
+    },
+    {
+      "m": 16,
+      "positive_intercepts": 11,
+      "max_error": 3.812499982380757e-09,
+      "resource_eigenvalue": 0.7625,
+      "stable_origin": true
+    },
+    {
+      "m": 16,
+      "positive_intercepts": 12,
+      "max_error": 3.250000046861601e-09,
+      "resource_eigenvalue": 0.6499999999999999,
+      "stable_origin": true
+    },
+    {
+      "m": 16,
+      "positive_intercepts": 13,
+      "max_error": 2.6875001113424446e-09,
+      "resource_eigenvalue": 0.5374999999999999,
+      "stable_origin": true
+    },
+    {
+      "m": 16,
+      "positive_intercepts": 14,
+      "max_error": 2.1250000092898347e-09,
+      "resource_eigenvalue": 0.42500000000000004,
+      "stable_origin": true
+    },
+    {
+      "m": 16,
+      "positive_intercepts": 15,
+      "max_error": 1.5625000182595272e-09,
+      "resource_eigenvalue": 0.3125,
+      "stable_origin": true
+    },
+    {
+      "m": 16,
+      "positive_intercepts": 16,
+      "max_error": 1.0000000272292198e-09,
+      "resource_eigenvalue": 0.19999999999999996,
+      "stable_origin": true
+    }
+  ]
+}
