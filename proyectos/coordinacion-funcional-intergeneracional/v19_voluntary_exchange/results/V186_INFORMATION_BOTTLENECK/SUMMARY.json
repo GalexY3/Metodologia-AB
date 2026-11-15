@@ -1,0 +1,124 @@
+{
+  "results": [
+    {
+      "seed": 185115,
+      "mode": "CONTINUE_JOINT",
+      "final": {
+        "step": 60000,
+        "train": 0.9147287011146545,
+        "test": 0.3519163727760315,
+        "train_nll": 0.1185619905591011,
+        "test_nll": 3.632392644882202,
+        "protocol_symbols": 24,
+        "bayes_bound_stochastic": 0.7741528153419495,
+        "bayes_bound_greedy": 0.7741935483870968,
+        "sender_entropy": 0.0006122051272541285
+      }
+    },
+    {
+      "seed": 185115,
+      "mode": "FROZEN_ORIGINAL",
+      "final": {
+        "step": 60000,
+        "train": 0.9147287011146545,
+        "test": 0.08885017782449722,
+        "train_nll": 0.11823899298906326,
+        "test_nll": 7.410945892333984,
+        "protocol_symbols": 24,
+        "bayes_bound_stochastic": 0.774193525314331,
+        "bayes_bound_greedy": 0.7741935483870968,
+        "sender_entropy": -0.0
+      }
+    },
+    {
+      "seed": 185115,
+      "mode": "BIJECTIVE_REPAIR",
+      "final": {
+        "step": 60000,
+        "train": 1.0,
+        "test": 0.9878048896789551,
+        "train_nll": 9.256427233594877e-07,
+        "test_nll": 0.052369847893714905,
+        "protocol_symbols": 31,
+        "bayes_bound_stochastic": 1.0,
+        "bayes_bound_greedy": 1.0,
+        "sender_entropy": -0.0
+      }
+    },
+    {
+      "seed": 185116,
+      "mode": "CONTINUE_JOINT",
+      "final": {
+        "step": 60000,
+        "train": 0.9715762734413147,
+        "test": 0.7125435471534729,
+        "train_nll": 0.039560455828905106,
+        "test_nll": 1.332371473312378,
+        "protocol_symbols": 29,
+        "bayes_bound_stochastic": 0.9354646801948547,
+        "bayes_bound_greedy": 0.9354838709677419,
+        "sender_entropy": 0.0002894546778406948
+      }
+    },
+    {
+      "seed": 185116,
+      "mode": "FROZEN_ORIGINAL",
+      "final": {
+        "step": 60000,
+        "train": 0.9638243317604065,
+        "test": 0.2229965180158615,
+        "train_nll": 0.050155363976955414,
+        "test_nll": 4.650064945220947,
+        "protocol_symbols": 28,
+        "bayes_bound_stochastic": 0.9032257795333862,
+        "bayes_bound_greedy": 0.9032258064516129,
+        "sender_entropy": -0.0
+      }
+    },
+    {
+      "seed": 185116,
+      "mode": "BIJECTIVE_REPAIR",
+      "final": {
+        "step": 60000,
+        "train": 1.0,
+        "test": 1.0,
+        "train_nll": 9.127052749136055e-07,
+        "test_nll": 0.03469788655638695,
+        "protocol_symbols": 31,
+        "bayes_bound_stochastic": 1.0,
+        "bayes_bound_greedy": 1.0,
+        "sender_entropy": -0.0
+      }
+    }
+  ],
+  "gates": [
+    {
+      "seed": 185115,
+      "scores": {
+        "CONTINUE_JOINT": 0.3519163727760315,
+        "FROZEN_ORIGINAL": 0.08885017782449722,
+        "BIJECTIVE_REPAIR": 0.9878048896789551
+      },
+      "gate_passed": true
+    },
+    {
+      "seed": 185116,
+      "scores": {
+        "CONTINUE_JOINT": 0.7125435471534729,
+        "FROZEN_ORIGINAL": 0.2229965180158615,
+        "BIJECTIVE_REPAIR": 1.0
+      },
+      "gate_passed": true
+    }
+  ],
+  "primary_passed": true,
+  "reused_original_histories": 2,
+  "new_continuations": 6,
+  "extra_updates_each": 30000,
+  "CT2_historical": 61,
+  "new_branch_score": null,
+  "N2": 0,
+  "N3": 0,
+  "novel_collective_grokking_established": false,
+  "oracle_repair_not_autonomous": true
+}

@@ -1,0 +1,128 @@
+{
+  "runs": [
+    {
+      "seed": 185115,
+      "condition": "FIXED_PROTOCOL",
+      "freeze": null,
+      "updates_total": 30000,
+      "updates_this_continuation": 30000,
+      "t_mem": 600,
+      "t_gen": 13600,
+      "delayed_generalization_gate": true,
+      "final": {
+        "step": 30000,
+        "train": 1.0,
+        "test": 0.9790940880775452,
+        "train_nll": 9.5921848242142e-07,
+        "test_nll": 0.08760350942611694,
+        "protocol_symbols": 31,
+        "bayes_bound_stochastic": 1.0,
+        "bayes_bound_greedy": 1.0,
+        "sender_entropy": -0.0
+      },
+      "common_payoff_imposed": true,
+      "institution_formation_demonstrated": false
+    },
+    {
+      "seed": 185115,
+      "condition": "INDEPENDENT_COMM",
+      "freeze": null,
+      "updates_total": 30000,
+      "updates_this_continuation": 30000,
+      "t_mem": null,
+      "t_gen": null,
+      "delayed_generalization_gate": false,
+      "final": {
+        "step": 30000,
+        "train": 0.9147287011146545,
+        "test": 0.2735191583633423,
+        "train_nll": 0.11850131303071976,
+        "test_nll": 4.14694881439209,
+        "protocol_symbols": 24,
+        "bayes_bound_stochastic": 0.7741793394088745,
+        "bayes_bound_greedy": 0.7741935483870968,
+        "sender_entropy": 0.0007101194350980222
+      },
+      "common_payoff_imposed": true,
+      "institution_formation_demonstrated": false
+    },
+    {
+      "seed": 185116,
+      "condition": "FIXED_PROTOCOL",
+      "freeze": null,
+      "updates_total": 30000,
+      "updates_this_continuation": 30000,
+      "t_mem": 600,
+      "t_gen": 11600,
+      "delayed_generalization_gate": true,
+      "final": {
+        "step": 30000,
+        "train": 1.0,
+        "test": 0.99303138256073,
+        "train_nll": 9.475131719227647e-07,
+        "test_nll": 0.04795336350798607,
+        "protocol_symbols": 31,
+        "bayes_bound_stochastic": 1.0,
+        "bayes_bound_greedy": 1.0,
+        "sender_entropy": -0.0
+      },
+      "common_payoff_imposed": true,
+      "institution_formation_demonstrated": false
+    },
+    {
+      "seed": 185116,
+      "condition": "INDEPENDENT_COMM",
+      "freeze": null,
+      "updates_total": 30000,
+      "updates_this_continuation": 30000,
+      "t_mem": null,
+      "t_gen": null,
+      "delayed_generalization_gate": false,
+      "final": {
+        "step": 30000,
+        "train": 0.9638243317604065,
+        "test": 0.6202090382575989,
+        "train_nll": 0.050348035991191864,
+        "test_nll": 1.9053593873977661,
+        "protocol_symbols": 28,
+        "bayes_bound_stochastic": 0.903180718421936,
+        "bayes_bound_greedy": 0.9032258064516129,
+        "sender_entropy": 0.0008790197316557169
+      },
+      "common_payoff_imposed": true,
+      "institution_formation_demonstrated": false
+    }
+  ],
+  "crossplay": [
+    {
+      "sender_seed": 185115,
+      "receiver_seed": 185115,
+      "all_pair_accuracy": 0.5317378044128418,
+      "shuffled_message_accuracy": 0.034404268371872604
+    },
+    {
+      "sender_seed": 185116,
+      "receiver_seed": 185115,
+      "all_pair_accuracy": 0.028095735237002373,
+      "shuffled_message_accuracy": 0.03225806634873152
+    },
+    {
+      "sender_seed": 185115,
+      "receiver_seed": 185116,
+      "all_pair_accuracy": 0.01664932444691658,
+      "shuffled_message_accuracy": 0.0309573378181085
+    },
+    {
+      "sender_seed": 185116,
+      "receiver_seed": 185116,
+      "all_pair_accuracy": 0.7585848569869995,
+      "shuffled_message_accuracy": 0.031737774959765375
+    }
+  ],
+  "exploratory_only": true,
+  "novel_collective_grokking_established": false,
+  "CT2_historical": 61,
+  "new_branch_score": null,
+  "N2": 0,
+  "N3": 0
+}

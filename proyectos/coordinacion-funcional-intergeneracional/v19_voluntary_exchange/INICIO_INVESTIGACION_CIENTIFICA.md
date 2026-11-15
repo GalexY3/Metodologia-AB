@@ -1,3 +1,7 @@
+# Estado actual V186
+
+Objetivo activo,CT2histórico61sinincremento. Resultados y límites: [handoffV186](handoff_codex/ESTADO_20261115_V186.md). Manuscrito [V186](docs/TFM_MANUSCRITO_TRABAJO_V186.md).
+
 # Estado vigente hasta V181 —15/11/2026
 
 Leer `handoff_codex/ESTADO_20261115_V181.md`. Control de6000generaciones y reinicio del intercepto ejecutado:criterio de ventaja histórica pasa frente aambos rivales. Manuscrito:`docs/TFM_MANUSCRITO_TRABAJO_V181.md`. CT2histórico61sin aumento;N2=N3=0. Currículo externo,no institución aprendida. Objetivo ACTIVO. Se conservan los bloques anteriores.

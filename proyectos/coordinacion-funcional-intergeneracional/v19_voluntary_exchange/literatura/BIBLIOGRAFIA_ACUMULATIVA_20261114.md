@@ -1,6 +1,6 @@
 # Base bibliográfica acumulativa de cooperación y división del trabajo
 
-Revisión 2026-11-15: **87 fuentes verificadas bibliográficamente; 0 pendientes**.
+Revisión 2026-11-15: **94 fuentes verificadas bibliográficamente; 0 pendientes**.
 
 Esta es una revisión de alcance exploratorio, no una revisión sistemática. Las fichas editoriales, resúmenes e índices no equivalen a lectura completa del texto. La base structured references_verified.json contiene alcance de verificación por obra.
 
@@ -825,3 +825,37 @@ Yaman et al. 2023 [material Dryad](https://doi.org/10.5061/dryad.dv41ns24r) es c
 Priorizar lectura integral de Yaman 2023, DiCo 2024, HARL 2024, Garbus-Pollack 2024, SND 2025, así como obras sociológicas específicas. Preparar extracción de variables, intervenciones, rivales y licencias antes de reimplementar.
 
 Documentar modelos siguiendo [ODD 2020](https://doi.org/10.18564/jasss.4259); publicar checkpoints, seeds y resultados negativos como evidencia, no seleccionar mejores trayectorias.
+
+
+## Actualización V182–V186: código original y comunicación
+
+Yaman2023 pasa de resumen a lectura del texto principal y auditoría ejecutada. El código archivado y los datos no tienen la misma interfaz ni regularizador; no se invalida automáticamente el artículo. Las fichas nuevas conservan su alcance de lectura, que no equivale a revisión completa.
+
+**Yang, Jiachen; Li, Ang; Farajtabar, Mehrdad; Sunehag, Peter; Hughes, Edward; Zha, Hongyuan (2020).** [Learning to Incentivize Other Learning Agents](https://proceedings.neurips.cc/paper_files/paper/2020/hash/ad7ed5d47b9baceb12045a929e7e2f66-Abstract.html). NeurIPS33:15208–15219.
+
+Private learned incentives and division of labor; meta-gradients and opponent models. Restricción: Do not claim private incentive learning or its inter-episode credit problem as new. Alcance: full main text through conclusion; appendix and original implementation not reproduced.
+
+**Power, Alethea; Burda, Yuri; Edwards, Harri; Babuschkin, Igor; Misra, Vedant (2022).** [Grokking: Generalization Beyond Overfitting on Small Algorithmic Datasets](https://arxiv.org/abs/2201.02177). arXiv2201.02177.
+
+Delayed generalization after fitting algorithmic data. Restricción: A late test-accuracy increase is an established phenomenon. Alcance: primary abstract and bibliographic metadata.
+
+**Nanda, Neel; Chan, Lawrence; Lieberum, Tom; Smith, Jess; Steinhardt, Jacob (2023).** [Progress Measures for Grokking via Mechanistic Interpretability](https://arxiv.org/abs/2301.05217). ICLR2023.
+
+Mechanistic progress measures for modular-addition grokking. Restricción: Thresholded accuracy does not by itself identify sudden mechanism formation. Alcance: primary paper bibliographic record and task scope; full text review pending.
+
+**Chaabouni, Rahma; Kharitonov, Eugene; Bouchacourt, Diane; Dupoux, Emmanuel; Baroni, Marco (2020).** [Compositionality and Generalization In Emergent Languages](https://aclanthology.org/2020.acl-main.407/). ACL2020:4427–4442.
+
+Generalization of learned communication and separability from compositionality. Restricción: Communication generalization and transmission to new agents are not new generic claims. Alcance: primary abstract and metadata.
+
+**Lowe, Ryan; Foerster, Jakob; Boureau, Y-Lan; Pineau, Joelle; Dauphin, Yann (2019).** [On the Pitfalls of Measuring Emergent Communication](https://ifaamas.org/Proceedings/aamas2019/pdfs/p693.pdf). AAMAS2019:693–701.
+
+Information correlation alone does not establish causal communication. Restricción: Use causal and distribution-preserving message interventions. Alcance: primary abstract and methodological excerpts.
+
+**Huttegger, Simon; Skyrms, Brian; Tarrès, Pierre; Wagner, Elliott (2014).** [Some dynamics of signaling games](https://pmc.ncbi.nlm.nih.gov/articles/PMC4113927/). PNAS111(Suppl3):10873–10880.
+
+Evolution and learning of signaling conventions with aligned or conflicting interests. Restricción: Partial communication and pooling equilibria have strong classical antecedents. Alcance: primary abstract, introduction and pooling-dynamics excerpts.
+
+**Spike, Matthew; Stadler, Kevin; Kirby, Simon; Smith, Kenny (2017).** [Minimal Requirements for the Emergence of Learned Signaling](https://pmc.ncbi.nlm.nih.gov/articles/PMC5412673/). CognitiveScience41(3):623–658.
+
+Comparative models of reinforcement, forgetting and bias against ambiguity. Restricción: A generic ambiguity/forgetting explanation cannot be claimed new; use these as competent rivals. Alcance: primary abstract and relevant reinforcement/information-loss sections; full review pending.
+
