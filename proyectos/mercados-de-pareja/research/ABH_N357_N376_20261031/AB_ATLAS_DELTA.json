@@ -50,6 +50,16 @@
       "prereg_commit": "929da09f7eb74e53bf39d252865a2fbd37f35aae",
       "evidence": "504 checked in JS and Python; no human evidence",
       "CT2": 7
+    },
+    {
+      "id": "MP-SRC092-MUENSTER-OSF-DOC-GATE",
+      "type": "independent_documentary_evidence",
+      "status": "blocked",
+      "R5": "STOP",
+      "cycle_spent": false,
+      "source": "SRC092",
+      "update": "U229",
+      "note": "Original variable selector includes yes/match and f1-f4 longitudinal questionnaire labels; original CSV not accessed, request forms/rights still unresolved"
     }
   ],
   "edges": [
@@ -89,6 +99,12 @@
       "to": "MP-SRC121-OSF_RIGHTS",
       "type": "related_to",
       "note": "Human observed opportunity/rights gate remains blocked"
+    },
+    {
+      "from": "MP-SRC092-MUENSTER-OSF-DOC-GATE",
+      "to": "MP-N359-PARTIAL-ID",
+      "type": "blocks",
+      "note": "No eligible original dyad riskset or source-native data available to operationalize identification bounds"
     }
   ],
   "valid_cycles": 3,

@@ -6393,7 +6393,29 @@
       "why_no_update": "Mathematical identification conditions verified only on synthetic data",
       "CT2_scientific": 7,
       "scientific_grade": "0/3"
+    },
+    {
+      "id": "U229",
+      "recorded_at": "2026-11-15",
+      "campaign": "ABH_N357_N376_SRC092_PRIMARY_OSF_ORIGINAL_VARSELECTOR_AUDIT",
+      "prior_id": "P-DYADIC_ACCESS",
+      "source_ids": [
+        "SRC092"
+      ],
+      "cycle_ids": [],
+      "direction": "NO_CHANGE_WITH_REASON",
+      "before": "NO_ORIGINAL_LICENSED_NATIVE_ORDERED_BILATERAL_DATA_ACCESSED",
+      "after": "NO_ORIGINAL_LICENSED_NATIVE_ORDERED_BILATERAL_DATA_ACCESSED",
+      "evidence_type": "NEW_ORIGINAL_PUBLIC_AUTHOR_CODEBOOK_SELECTION_SCRIPT_VERIFIED_NO_DATA_ROWS",
+      "original_script_sha256": "d3f43ad7f2eda641538432d729eabb40fa132c6e726e3a9e1fd3a7ae40a3c9fd",
+      "original_script_bytes": 77239,
+      "original_source_url": "https://osf.io/n7dw9/",
+      "observed": "OSF node public=true, node_license=null; original author variable selector includes d1..d5 yes and match fields, meta-perception d*_yes_p, 4 followup survey dates and partner ids, and refers to unavailable original individual-level CSV. Separate forms for data access and reproducibility.",
+      "why_no_update": "Script does not establish original actor-partner native vote crosswalk or encounter chronology; source dataset rights differ from publicly licensed processed publication supplement; no participant records read.",
+      "no_AB_cycle_spent": true,
+      "scientific_CT2": 7,
+      "scientific_grade": "0/3"
     }
   ],
-  "last_campaign": "ABH_N357_N376_N359_PARTIAL_ID_EXECUTED_SYNTHETIC_ONLY"
+  "last_campaign": "ABH_N357_N376_SRC092_R5_DOCUMENTARY_GATE_20261115"
 }

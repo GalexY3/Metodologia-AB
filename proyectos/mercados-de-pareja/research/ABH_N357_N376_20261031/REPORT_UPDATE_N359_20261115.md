@@ -2,7 +2,7 @@
 
 Fecha de la ejecución: **15 de noviembre de 2026**. Protocolo vigente AB 3.2.1 con O1–O7; instrumentos AB-M038–M042 añadidos el 14/11/2026 siguen en fase de **piloto no validado**, no equivalen a reforma normativa. Se leyó el protocolo de `main` antes de abrir N359.
 
-**Saldo:** 20 autorizados, **3 ciclos AB técnicamente válidos y ejecutados (N357, N358, N359)**, 0 inválidos AB, 0 de planificación AB, 17 N360–N376 pendientes. Un intento de oráculo Python fallido en N358 registrado separadamente. N359 no requirió reparaciones. **123 SOURCES, 36 PRIORS, 228 UPDATES. CT2 científico 7/100, STOP_R5 humano activo, novedad sociológica 0/3.**
+**Saldo:** 20 autorizados, **3 ciclos AB técnicamente válidos y ejecutados (N357, N358, N359)**, 0 inválidos AB, 0 de planificación AB, 17 N360–N376 pendientes. Un intento de oráculo Python fallido en N358 registrado separadamente. N359 no requirió reparaciones. **123 SOURCES, 36 PRIORS, 229 UPDATES. CT2 científico 7/100, STOP_R5 humano activo, novedad sociológica 0/3.**
 
 ## N359 — cotas exactas para parejas mutuamente aceptables bajo oportunidades incompletas
 
@@ -46,3 +46,7 @@ Se preservaron código ESBM original y SRC104, ambas ramas históricas y los out
 ### AB-DECIDE
 
 **CONTINUE solo con nueva evidencia diferencial y R5.** N360–N376 siguen previamente autorizados pero no deben consumirse por obligación. El cierre de esta fase intermedia no requiere nueva aprobación. CT2 7/100 y grado humano 0/3. Reproducción en clon limpio pendiente de verificar (CLEAN_CLONE_NOT_VERIFIED).
+
+## Evidencia documental nueva posterior a N359, sin gasto de ciclo
+
+**U229 / SRC092 — Münster, fuente original de solicitud de datos.** Una vía nueva de OSF https://osf.io/n7dw9/ (distinta de los enlaces fallidos históricos) identifica el proyecto público con `node_license=null` y los formularios `datemeforscience_data_request.docx` y `datemeforscience_reproduction_request.docx`. Se descargó únicamente el archivo R de selección original de variables de 77.239 bytes, SHA256 `d3f43ad7f2eda641538432d729eabb40fa132c6e726e3a9e1fd3a7ae40a3c9fd`. La lista de variables indica `d1_yes`–`d5_yes`, `d1_match`–`d5_match`, metapercepción `d1_yes_p`–`d5_yes_p`, fechas de cuatro cuestionarios de seguimiento y `f1_p_partnerid`–`f4_p_partnerid`. Estas **etiquetas de un selector de variables no acreditan respuestas originales accesibles, correspondencia nativa bilateral, cronología de rondas ni un seguimiento individual utilizable**. El CSV fuente de personas no se descargó ni procesó y los formularios de solicitud no se completaron. La licencia CC BY4 del paquete complementario PsychArchives SRC092 no acredita por sí sola autorización sobre el CSV OSF no publicado. Estado R5 sigue STOP; 17 plazas intactas.
