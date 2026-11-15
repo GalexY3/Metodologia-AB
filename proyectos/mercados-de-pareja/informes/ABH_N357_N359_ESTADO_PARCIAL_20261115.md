@@ -1,0 +1,25 @@
+# Mercados de pareja · continuidad AB-H PIVOT N357–N376 (15/11/2026)
+
+**Estado verificado:** campaña de 20 ciclos autorizados. N357, N358 y N359 son **tres ciclos técnicos válidos**, 0 ciclos AB inválidos, 0 de planificación; queda el saldo de **17 ya autorizados N360–N376**, sin necesidad de una concesión nueva. Un intento instrumental fallido y reparado se conserva en N358. No hay nuevas validaciones empíricas humanas. **CT2 científico 7/100, STOP_R5 humano y grado 0/3**. Contadores canónicos: **123 SOURCES, 36 PRIORS, 229 UPDATES**.
+
+## Revisión de la política AB
+
+Se inspeccionaron los documentos vigentes del repositorio metodológico, incluido el commit `f48edcc11b2ad499e4cd390eefde02b3687d7010` de 14/11/2026. El núcleo normativo sigue siendo **AB 3.2.1, anexos O1–O7, R1–R5 y contratos A–J**. Las herramientas M038–M042 inspiradas en PaperOrchestra, publicadas el 14/11, continúan siendo pilotos técnicos, **NO_VALIDADOS**; la nueva implementación no autoriza cambios retrospectivos ni atribuye superioridad científica a AB.
+
+## N359 · nueva identificación parcial
+
+[N359 A–J y código congelados antes de ejecución en 929da09f](https://github.com/GalexY3/Metodologia-AB/commit/929da09f7eb74e53bf39d252865a2fbd37f35aae).
+
+Para un mercado bipartito finito de 9+9 agentes sintéticos, se pregunta qué cantidad máxima de emparejamientos mutuamente aceptables podría obtenerse cuando se conoce la aceptación/rechazo bilateral solo en encuentros observados. Las parejas nunca observadas admiten respuestas mutuamente aceptables o no aceptables. Por tanto el conjunto identificado condicional del máximo emparejamiento se acota por el máximo sobre aristas mutuamente aceptadas observadas (**L**) y por el máximo sobre dichas aristas más todas las oportunidades no observadas factibles (**U**). Ambas cotas son alcanzables mediante las dos completaciones extremas de los encuentros no observados, suponiendo factibilidad de todas las parejas cruzadas.
+
+**Ejecución verificada:** 504 mercados sintéticos, de los cuales 480 corresponden a tres mecanismos de exposición y cuatro tasas ×40 semillas, y 24 son controles de observación completa. Un oráculo de programación dinámica Python independiente confirmó **504/504 resultados exactos L, U y K**, y **24/24 controles completos** obtuvieron L=K=U. Un ejemplo adversarial n=4 con las mismas observaciones permite K entre 0 y 4. Estos resultados no confirman preferencias reales, causalidad, ni novedad del principio teórico: existen precedentes clásicos de identificación parcial (Manski, DOI 10.1016/j.ijar.2004.10.006; Horowitz y Manski, DOI 10.1016/j.jeconom.2005.02.007). DRIFT D2.0; CT2 inalterada.
+
+[Informe completo N359](https://github.com/GalexY3/Metodologia-AB/blob/beda7cc8d27c32381f72940905b4d1566fb67640/proyectos/mercados-de-pareja/research/ABH_N357_N376_20261031/REPORT_UPDATE_N359_20261115.md) · [Ledger](https://github.com/GalexY3/Metodologia-AB/blob/beda7cc8d27c32381f72940905b4d1566fb67640/proyectos/mercados-de-pareja/research/ABH_N357_N376_20261031/LEDGER_AJ_N357_N376_20261031.json) · [Recibo N359](https://github.com/GalexY3/Metodologia-AB/blob/beda7cc8d27c32381f72940905b4d1566fb67640/proyectos/mercados-de-pareja/research/ABH_N357_N376_20261031/N359_PARTIAL_ID/N359_OUTCOME_RECEIPT.json) · [CT2](https://github.com/GalexY3/Metodologia-AB/blob/beda7cc8d27c32381f72940905b4d1566fb67640/proyectos/mercados-de-pareja/research/ABH_N357_N376_20261031/CT2.svg).
+
+## Revisión documental nueva, sin consumir N360
+
+**SRC092 / U229**: se encontró el repositorio original público de Münster *Date me for Science* en https://osf.io/n7dw9/. La API confirmó `public=true` y `node_license=null`. Se obtuvo únicamente el selector de variables original R de 77.239 bytes (SHA256 `d3f43ad7f2eda641538432d729eabb40fa132c6e726e3a9e1fd3a7ae40a3c9fd`) y el inventario público de formularios de solicitud de datos y codebook. El selector lista `d1_yes`–`d5_yes`, `d1_match`–`d5_match`, variables de metapercepción `d*_yes_p` y campos de seguimiento longitudinal `f1`–`f4`. La existencia de nombres de variables **no acredita** decisiones nativas observadas de ambos participantes, calendario de ronda, vínculo entre actores, permiso de reutilización ni datos humanos utilizables. El CSV original no se descargó y no se aceptaron términos ni contactó a autores. El paquete complementario SRC092 de PsychArchives con licencia CC BY4 no autoriza automáticamente los registros originales gestionados por solicitud separada. El estado R5 permanece STOP.
+
+**AB-DECIDE:** no se consumirán N360–N376 repitiendo este mismo generador o ensayos técnicos sin novedad. Continuarán únicamente cuando haya una observación realmente discriminante, instrumento original con acceso legítimo o un falsador técnico substantivamente nuevo. El saldo autorizado de 17 se conserva sin caducidad asumida.
+
+Documento exclusivamente informativo en `main`; no fusiona ni modifica la rama científica, ni altera originales ESBM/SRC104. Estado científico canónico en `research/ab-h-esbm-bigint-r5-n357-n376-20261031`, commit `beda7cc8d27c32381f72940905b4d1566fb67640`.
