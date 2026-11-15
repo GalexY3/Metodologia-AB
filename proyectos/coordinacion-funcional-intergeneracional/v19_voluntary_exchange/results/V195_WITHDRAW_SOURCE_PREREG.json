@@ -1,0 +1,48 @@
+{
+  "created_UTC": "2026-11-15T20:16:18.035366+00:00",
+  "source_sha256": {
+    "PREREG_V195_WITHDRAW_COUNTERFACTUAL.md": "4493615e0dffd1f3fa67b873b8182b6cfcf6e4eed8bd40d98809630709c9a7f1",
+    "v195_withdraw_counterfactual.py": "057259506753a36b35d0142f63f4cf5b6ce6367b2862828c6d99381d9f87d779",
+    "make_v195_withdraw_registration.py": "5585d2186acf0c92cdfb1ba6f088b1203045a36fba6221235b194ad5aca8cf28",
+    "verify_v195_withdraw_registration.py": "5fd9c59cc3dd59306101347633a9ebd6fb4f7acafb2c23335241768fc5044412",
+    "v193_frozen_peer.py": "de53abb1ca6471de0e007ffaa884f0e0701fcdd66248c2247b5a0bac12a43ad9",
+    "v192_dual_neural_learning.py": "fc31e9d60237d00cecd90f04e8f731547093dbf573c7d973680d0f3bd0595c7b",
+    "v191_dual_neural_credit.py": "ceb8b0b3cd10f41dd6a596c853082f2bbfc6b02685a4f5fbbd0a40e6129928be",
+    "v188_private_conventions.py": "d1e25590d8c8fb37ead4541199e0eafb7ceada9a1fb5e74b401dfdb70554dc6c",
+    "v187_classical_signaling.py": "c1723b8a41e2aa17a5f89fdbeb76a9be9d47cb7dfd99fd254828fb81731a71ee",
+    "v185_collective_grokking.py": "593a732b23e1c203131873083dfdc06990ac16cb2fa69b0f6a1c69a73f538d52",
+    "research_resource_limits.py": "53fc43054ce43e029dbf497b3d7d9a5614d136266bfdd8f6244e38b9663f2961",
+    "results/V195_WITHDRAW_TECHNICAL_REPLAY.json": "82738c6b18bec13f2ba40cf6a24d115001156c967040bcfd8bacc4f8b246a771",
+    "results/V192_DUAL_NEURAL_LEARNING/SUMMARY.json": "039abbe328b51da2d936ae6fa2523771d39264be67a3e0965018b5431b03f3db",
+    "results/V193_FROZEN_PEER/SUMMARY.json": "736fda2969459dec34a7aaaf170e083418b37c4117f12134819c111df714a400",
+    "docs/V194_REDUCCION_Y_PRIORIDAD_V195.md": "36f40acda7806563b393e52787f832aaeec050ee3ccbce88440be425e0d8e1ea",
+    "results/V191_DUAL_NEURAL_AUDIT_V2/context_s192115.npz": "f69b99f3182654f629ff48b0c72dd1008321bb7800fab48ab0c72d14e091d31b",
+    "results/V191_DUAL_NEURAL_AUDIT_V2/context_s192116.npz": "7fbd90ec53eab45e8652e121e815982b6aab110951c7b7c546c30165a92359da",
+    "results/V191_DUAL_NEURAL_AUDIT_V2/context_s192117.npz": "beaca0ff0debf625855e0da35d6416c8f436ac03752eaaae0d60f7afd969ab5e",
+    "results/V191_DUAL_NEURAL_AUDIT_V2/context_s192118.npz": "0764477203d56a7b73211cc86982f93aca4c83c51cac087bbaa69806a555444b"
+  },
+  "binary_parent_sha256": {
+    "results/V192_DUAL_NEURAL_LEARNING/PRIVATE_FULL/first_memorization_s192115.pt": "23484400ddd810a8c351eb499b9c4fcaac8a11a0c0aa5c4511770ce3088fe945",
+    "results/V192_DUAL_NEURAL_LEARNING/PRIVATE_FULL/first_memorization_s192116.pt": "3e3b79766730ed82ab40eead6185e087ac5207d94aba454a66aea2b8cdc97b72",
+    "results/V192_DUAL_NEURAL_LEARNING/PRIVATE_FULL/first_memorization_s192117.pt": "c2b28cf72bc32c6f232e044bcc812d101bf7b0fe1c7dce47c4fe0c32f8160ac0",
+    "results/V192_DUAL_NEURAL_LEARNING/PRIVATE_FULL/first_memorization_s192118.pt": "e3cde0a5182058b25c42465bdf291af9725706b9f743301aa8a2c978d9451b99",
+    "results/V192_DUAL_NEURAL_LEARNING/PRIVATE_BANDIT_IS/checkpoint_5000.pt": "c9db0b1a27c36f23cc0c622db62e6f30db09b0127c857bd8b9366a6ba06df129",
+    "results/V192_DUAL_NEURAL_LEARNING/PRIVATE_BANDIT_IS/checkpoint_10000.pt": "c5a13a25269b42c64ea14457ab0b3999f7d008c280776629635c56dad614d6ce"
+  },
+  "binary_parents_previously_archived_in": "research/V191_V194_20261115/EVIDENCE_PAYLOAD_SHA256.json",
+  "known_before_registration": "V191-V194 complete and audited. Only historical V192 BANDIT 5000-10000 replay executed for V195 technical validation. No withdrawal prefixes or scientific continuations run.",
+  "original_parent_histories": 4,
+  "new_independent_roots": 0,
+  "GPU_memory_fraction_cap": 0.35,
+  "CPU_threads": 2,
+  "minimum_wall_seconds_per100_updates": 0.4,
+  "parent_cuts": [
+    1200,
+    1100,
+    1100,
+    1200
+  ],
+  "total_steps": 60000,
+  "conditional_controls": "Execute both frozen-peer BANDIT controls iff BOTH_BANDIT primary criterion fails.",
+  "local_control_gauge": "Parent convention selected with training only; do not remap a unilateral gauge shift."
+}
