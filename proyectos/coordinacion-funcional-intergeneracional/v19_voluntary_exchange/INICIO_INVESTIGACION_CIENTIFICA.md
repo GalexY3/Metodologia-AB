@@ -1,3 +1,7 @@
+# Estado vigente hasta V181 —15/11/2026
+
+Leer `handoff_codex/ESTADO_20261115_V181.md`. Control de6000generaciones y reinicio del intercepto ejecutado:criterio de ventaja histórica pasa frente aambos rivales. Manuscrito:`docs/TFM_MANUSCRITO_TRABAJO_V181.md`. CT2histórico61sin aumento;N2=N3=0. Currículo externo,no institución aprendida. Objetivo ACTIVO. Se conservan los bloques anteriores.
+
 # Estado vigente hasta V180 — 15/11/2026
 
 Leer `handoff_codex/ESTADO_20261115_V180.md`. Informe nuevo: `results/INFORME_V175_V180_20261115.md`. Manuscrito integrado: `docs/TFM_MANUSCRITO_TRABAJO_V180.md`. Se ejecutaron66evoluciones y una reproducción humana con10000reasignaciones;464comprobaciones técnicas. Se conservaron negativos y se cancelóM16 al fallar su gate. CT2 histórico61/100 sin aumento;N2=N3=0. Objetivo científico ACTIVO;TFM todavía borrador. Ningún entrenamiento pendiente. Los bloques previos se conservan debajo.

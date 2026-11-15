@@ -1,0 +1,93 @@
+{
+  "mean_warm": 0.6318790492361461,
+  "mean_continue": 0.03859472497536288,
+  "mean_reset": 0.039609837737956836,
+  "paired": [
+    {
+      "seed": 180115,
+      "warm": 0.6304255014172839,
+      "continue_affine": 0.04143154711264139,
+      "reset_bias": 0.036572321673107595,
+      "warm_minus_continue": 0.5889939543046425,
+      "warm_minus_reset": 0.5938531797441763
+    },
+    {
+      "seed": 180116,
+      "warm": 0.6695867103814123,
+      "continue_affine": 0.04300050821790636,
+      "reset_bias": 0.04186944184829466,
+      "warm_minus_continue": 0.6265862021635059,
+      "warm_minus_reset": 0.6277172685331176
+    },
+    {
+      "seed": 180117,
+      "warm": 0.03750675321367349,
+      "continue_affine": 0.036679365443408156,
+      "reset_bias": 0.03864241189950631,
+      "warm_minus_continue": 0.0008273877702653365,
+      "warm_minus_reset": -0.0011356586858328188
+    },
+    {
+      "seed": 180118,
+      "warm": 0.7885827868183717,
+      "continue_affine": 0.03983517436309197,
+      "reset_bias": 0.041070645513146674,
+      "warm_minus_continue": 0.7487476124552798,
+      "warm_minus_reset": 0.747512141305225
+    },
+    {
+      "seed": 180119,
+      "warm": 0.7893666173865633,
+      "continue_affine": 0.03970568943857514,
+      "reset_bias": 0.03965507837297719,
+      "warm_minus_continue": 0.7496609279479882,
+      "warm_minus_reset": 0.7497115390135861
+    },
+    {
+      "seed": 180120,
+      "warm": 0.6290348938181975,
+      "continue_affine": 0.03917801267064692,
+      "reset_bias": 0.042011411573650924,
+      "warm_minus_continue": 0.5898568811475506,
+      "warm_minus_reset": 0.5870234822445466
+    },
+    {
+      "seed": 180121,
+      "warm": 0.7870878500597803,
+      "continue_affine": 0.036258837171587045,
+      "reset_bias": 0.038099702974762895,
+      "warm_minus_continue": 0.7508290128881933,
+      "warm_minus_reset": 0.7489881470850175
+    },
+    {
+      "seed": 180122,
+      "warm": 0.723441280793887,
+      "continue_affine": 0.03266866538504605,
+      "reset_bias": 0.038957688048208435,
+      "warm_minus_continue": 0.6907726154088409,
+      "warm_minus_reset": 0.6844835927456786
+    }
+  ],
+  "contrasts": {
+    "CONTINUE": {
+      "mean_advantage": 0.5932843242607833,
+      "median_advantage": 0.6586794087861734,
+      "paired_bootstrap_mean_CI95": [
+        0.4108891346352991,
+        0.7143710723179724
+      ],
+      "positive_pairs": 8
+    },
+    "RESET_BIAS": {
+      "mean_advantage": 0.5922692114981893,
+      "median_advantage": 0.656100430639398,
+      "paired_bootstrap_mean_CI95": [
+        0.4099144475548893,
+        0.7130075466524013
+      ],
+      "positive_pairs": 7
+    }
+  },
+  "bootstrap_unit": "original paired evolutionary history; n=8",
+  "bootstrap_status": "post-hoc descriptive uncertainty; not a new external confirmatory sample"
+}
