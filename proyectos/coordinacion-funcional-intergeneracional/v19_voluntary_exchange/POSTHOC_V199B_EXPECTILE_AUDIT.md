@@ -1,0 +1,11 @@
+# V199B: diagnóstico posterior de optimismo y exposición sin veto
+
+Declarado después de conocer V199, incluyendo el fallo3/6de sus dos hipótesis principales y el daño medio a agentes de pérdida7bajo mayoría. No es una predicción registrada antes de V199 ni una nueva campaña de aprendizaje. No rescata H1/H2.
+
+Se congelan los perfiles HYSTERETIC del paso8000en ambas cohortes y los seis escenarios. Se calcula por convolución la distribución del pago individual condicional en su señal y en cada acción propia, con compañeros codiciosos o con su exploración.08. El agente del experimento no recibe este cálculo. La evaluación audita el pago esperado, el mejor pago unilateral disponible y la diferencia con las decisiones actuales.
+
+Una precaución decisiva: bajo mayoría, votarNOno evita que los demás ratifiquen una decisión que cause pérdidas al votante. No hay una acción de salida en esta tarea. Por eso un retorno negativo de personas de alto riesgo no demuestra por sí solo que elijan irracionalmente perder; puede existir daño incluso bajo su mejor respuesta unilateral. Bajo unanimidad, en cambio, NOgarantiza0. No llamar cooperación voluntaria a una participación sin opción de salida.
+
+La regla hysteretic tiene una interpretación estándar de pérdida cuadrática asimétrica. Para retorno estacionario con masas p+en+1, p−en−L y p0en0, sea N=alpha*p+−beta*L*p−. El cero de la deriva escalar es N/(alpha*p+ + beta*(1−p+)) si N>=0y N/(alpha*(1−p−)+beta*p−) si N<0. Corresponde al expectil tau=alpha/(alpha+beta)=10/11, no a la media salvo alpha=beta. Es álgebra de un estadístico conocido; antecedente primario Rowland y colaboradores2019, sección3.1, https://proceedings.mlr.press/v97/rowland19a.html. Se consultaron definición y ecuaciones de esa sección y metadatos, no todos sus experimentos o apéndices. No se ejecuta su algoritmo EDRL.
+
+Comprobar1000residuos de la fórmula y su reducción a la media con alpha=beta. Comparar el ranking por medias y por expectiles con las elecciones guardadas, y conservar resultados aunque no apoyen una explicación simple. Congelar compañeros no reconstruye la coadaptación anterior. El cero de deriva tampoco es exactamente la media estacionaria del algoritmo con ganancia constante. Todo diagnóstico de ajuste de conducta es posterior y descriptivo. N2=N3=0, CT2histórico61sin cambios.

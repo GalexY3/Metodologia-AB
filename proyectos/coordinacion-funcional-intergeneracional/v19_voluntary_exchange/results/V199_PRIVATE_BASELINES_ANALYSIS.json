@@ -1,0 +1,1641 @@
+{
+  "primary_counts": {
+    "MAINTENANCE": 3,
+    "FORMATION": 3
+  },
+  "H1_hysteretic_maintenance_passed": false,
+  "H2_hysteretic_formation_passed": false,
+  "gates": [
+    {
+      "cohort": "MAINTENANCE",
+      "k": 4,
+      "rule": "UNANIMITY",
+      "passed": true,
+      "utility_or_retention_gate": true,
+      "mean_advantage": 0.14050250000000003,
+      "simultaneous_lower": 0.11997873958333334
+    },
+    {
+      "cohort": "MAINTENANCE",
+      "k": 4,
+      "rule": "MAJORITY",
+      "passed": false,
+      "utility_or_retention_gate": false,
+      "mean_advantage": -0.2602300000000001,
+      "simultaneous_lower": -0.3197112604166667
+    },
+    {
+      "cohort": "MAINTENANCE",
+      "k": 8,
+      "rule": "UNANIMITY",
+      "passed": true,
+      "utility_or_retention_gate": true,
+      "mean_advantage": 0.21354615542857147,
+      "simultaneous_lower": 0.19849468578571433
+    },
+    {
+      "cohort": "MAINTENANCE",
+      "k": 8,
+      "rule": "MAJORITY",
+      "passed": false,
+      "utility_or_retention_gate": false,
+      "mean_advantage": -0.18251313714285716,
+      "simultaneous_lower": -0.22901548569047622
+    },
+    {
+      "cohort": "MAINTENANCE",
+      "k": 12,
+      "rule": "UNANIMITY",
+      "passed": true,
+      "utility_or_retention_gate": true,
+      "mean_advantage": 0.22606324804247274,
+      "simultaneous_lower": 0.21475712838307154
+    },
+    {
+      "cohort": "MAINTENANCE",
+      "k": 12,
+      "rule": "MAJORITY",
+      "passed": false,
+      "utility_or_retention_gate": false,
+      "mean_advantage": -0.1336340986269091,
+      "simultaneous_lower": -0.17125034992921215
+    },
+    {
+      "cohort": "FORMATION",
+      "k": 4,
+      "rule": "UNANIMITY",
+      "passed": true,
+      "utility_or_retention_gate": true,
+      "mean_advantage": 0.14193250000000002,
+      "simultaneous_lower": 0.12448807291666669
+    },
+    {
+      "cohort": "FORMATION",
+      "k": 4,
+      "rule": "MAJORITY",
+      "passed": false,
+      "utility_or_retention_gate": false,
+      "mean_advantage": -0.2957350000000001,
+      "simultaneous_lower": -0.33575347916666676
+    },
+    {
+      "cohort": "FORMATION",
+      "k": 8,
+      "rule": "UNANIMITY",
+      "passed": true,
+      "utility_or_retention_gate": true,
+      "mean_advantage": 0.2081243950714286,
+      "simultaneous_lower": 0.1879199721651786
+    },
+    {
+      "cohort": "FORMATION",
+      "k": 8,
+      "rule": "MAJORITY",
+      "passed": false,
+      "utility_or_retention_gate": false,
+      "mean_advantage": -0.2006041885714286,
+      "simultaneous_lower": -0.24387573157142858
+    },
+    {
+      "cohort": "FORMATION",
+      "k": 12,
+      "rule": "UNANIMITY",
+      "passed": true,
+      "utility_or_retention_gate": true,
+      "mean_advantage": 0.12641722909854547,
+      "simultaneous_lower": 0.11087636766618032
+    },
+    {
+      "cohort": "FORMATION",
+      "k": 12,
+      "rule": "MAJORITY",
+      "passed": false,
+      "utility_or_retention_gate": false,
+      "mean_advantage": -0.17422010258327272,
+      "simultaneous_lower": -0.22222731552320002
+    }
+  ],
+  "contrasts": [
+    {
+      "cohort": "MAINTENANCE",
+      "k": 4,
+      "rule": "UNANIMITY",
+      "method": "IQL_JITTER",
+      "mean_advantage_against_IQL_EXACT": 0.002200000000000001,
+      "descriptive_CI95": [
+        -0.0013350000000000016,
+        0.005620000000000001
+      ],
+      "six_contrast_family_CI991667": [
+        -0.0026484166666666683,
+        0.006848354166666671
+      ],
+      "mean_welfare": 0.04763000000000002,
+      "low_payoff": 0.08865743137637813,
+      "high_payoff": 0.004435167344909993
+    },
+    {
+      "cohort": "MAINTENANCE",
+      "k": 4,
+      "rule": "UNANIMITY",
+      "method": "IQL_EXACT",
+      "mean_advantage_against_IQL_EXACT": 0.0,
+      "descriptive_CI95": [
+        0.0,
+        0.0
+      ],
+      "six_contrast_family_CI991667": [
+        0.0,
+        0.0
+      ],
+      "mean_welfare": 0.04543000000000001,
+      "low_payoff": 0.0854427154396864,
+      "high_payoff": 0.0031966748768472927
+    },
+    {
+      "cohort": "MAINTENANCE",
+      "k": 4,
+      "rule": "UNANIMITY",
+      "method": "IQL_SLOW",
+      "mean_advantage_against_IQL_EXACT": 0.21499000000000007,
+      "descriptive_CI95": [
+        0.20416962500000005,
+        0.22534012500000006
+      ],
+      "six_contrast_family_CI991667": [
+        0.20026164583333336,
+        0.2286917708333334
+      ],
+      "mean_welfare": 0.26042000000000004,
+      "low_payoff": 0.3134952235101083,
+      "high_payoff": 0.20944508137408574
+    },
+    {
+      "cohort": "MAINTENANCE",
+      "k": 4,
+      "rule": "UNANIMITY",
+      "method": "HYSTERETIC",
+      "mean_advantage_against_IQL_EXACT": 0.14050250000000003,
+      "descriptive_CI95": [
+        0.12574981250000003,
+        0.1541025625
+      ],
+      "six_contrast_family_CI991667": [
+        0.11997873958333334,
+        0.15852003125000003
+      ],
+      "mean_welfare": 0.18593250000000003,
+      "low_payoff": 0.34630622736383737,
+      "high_payoff": 0.03352212022354232
+    },
+    {
+      "cohort": "MAINTENANCE",
+      "k": 4,
+      "rule": "UNANIMITY",
+      "method": "RUNNING_MEAN",
+      "mean_advantage_against_IQL_EXACT": 0.21566500000000005,
+      "descriptive_CI95": [
+        0.20509487500000004,
+        0.22584
+      ],
+      "six_contrast_family_CI991667": [
+        0.20099664583333335,
+        0.22936189583333338
+      ],
+      "mean_welfare": 0.2610950000000001,
+      "low_payoff": 0.3239262948360691,
+      "high_payoff": 0.19669318792971244
+    },
+    {
+      "cohort": "MAINTENANCE",
+      "k": 4,
+      "rule": "UNANIMITY",
+      "method": "LMRL2",
+      "mean_advantage_against_IQL_EXACT": -0.008854999999999998,
+      "descriptive_CI95": [
+        -0.01249,
+        -0.005604999999999995
+      ],
+      "six_contrast_family_CI991667": [
+        -0.01385670833333333,
+        -0.00461829166666666
+      ],
+      "mean_welfare": 0.03657500000000002,
+      "low_payoff": 0.07051708913946333,
+      "high_payoff": 0.0
+    },
+    {
+      "cohort": "MAINTENANCE",
+      "k": 4,
+      "rule": "UNANIMITY",
+      "method": "FROZEN",
+      "mean_advantage_against_IQL_EXACT": 0.17714500000000008,
+      "descriptive_CI95": [
+        0.16648987500000006,
+        0.18762512500000006
+      ],
+      "six_contrast_family_CI991667": [
+        0.16295310416666675,
+        0.19100835416666676
+      ],
+      "mean_welfare": 0.22257500000000008,
+      "low_payoff": 0.2570220728726498,
+      "high_payoff": 0.18925262739558552
+    },
+    {
+      "cohort": "MAINTENANCE",
+      "k": 4,
+      "rule": "MAJORITY",
+      "method": "IQL_JITTER",
+      "mean_advantage_against_IQL_EXACT": 0.0,
+      "descriptive_CI95": [
+        0.0,
+        0.0
+      ],
+      "six_contrast_family_CI991667": [
+        0.0,
+        0.0
+      ],
+      "mean_welfare": 0.19898000000000005,
+      "low_payoff": 0.32473402785978833,
+      "high_payoff": 0.07486835196550964
+    },
+    {
+      "cohort": "MAINTENANCE",
+      "k": 4,
+      "rule": "MAJORITY",
+      "method": "IQL_EXACT",
+      "mean_advantage_against_IQL_EXACT": 0.0,
+      "descriptive_CI95": [
+        0.0,
+        0.0
+      ],
+      "six_contrast_family_CI991667": [
+        0.0,
+        0.0
+      ],
+      "mean_welfare": 0.19898000000000005,
+      "low_payoff": 0.32473402785978833,
+      "high_payoff": 0.07486835196550964
+    },
+    {
+      "cohort": "MAINTENANCE",
+      "k": 4,
+      "rule": "MAJORITY",
+      "method": "IQL_SLOW",
+      "mean_advantage_against_IQL_EXACT": 0.11329999999999996,
+      "descriptive_CI95": [
+        0.10032987499999999,
+        0.12597762499999995
+      ],
+      "six_contrast_family_CI991667": [
+        0.09555746874999996,
+        0.13028759374999996
+      ],
+      "mean_welfare": 0.31228,
+      "low_payoff": 0.39740214564349635,
+      "high_payoff": 0.2297507182194806
+    },
+    {
+      "cohort": "MAINTENANCE",
+      "k": 4,
+      "rule": "MAJORITY",
+      "method": "HYSTERETIC",
+      "mean_advantage_against_IQL_EXACT": -0.2602300000000001,
+      "descriptive_CI95": [
+        -0.304055,
+        -0.21694743750000003
+      ],
+      "six_contrast_family_CI991667": [
+        -0.3197112604166667,
+        -0.20177285416666665
+      ],
+      "mean_welfare": -0.06124999999999999,
+      "low_payoff": 0.3077996691123445,
+      "high_payoff": -0.428740090806854
+    },
+    {
+      "cohort": "MAINTENANCE",
+      "k": 4,
+      "rule": "MAJORITY",
+      "method": "RUNNING_MEAN",
+      "mean_advantage_against_IQL_EXACT": 0.07595,
+      "descriptive_CI95": [
+        0.0640098125,
+        0.08795275
+      ],
+      "six_contrast_family_CI991667": [
+        0.06017902083333334,
+        0.09174293750000004
+      ],
+      "mean_welfare": 0.27493000000000006,
+      "low_payoff": 0.40357130789661944,
+      "high_payoff": 0.14866420112180512
+    },
+    {
+      "cohort": "MAINTENANCE",
+      "k": 4,
+      "rule": "MAJORITY",
+      "method": "LMRL2",
+      "mean_advantage_against_IQL_EXACT": -0.05112000000000001,
+      "descriptive_CI95": [
+        -0.060642687500000014,
+        -0.041312500000000016
+      ],
+      "six_contrast_family_CI991667": [
+        -0.06384750000000003,
+        -0.03789990625000001
+      ],
+      "mean_welfare": 0.14786000000000005,
+      "low_payoff": 0.2430615055907295,
+      "high_payoff": 0.05348508568486281
+    },
+    {
+      "cohort": "MAINTENANCE",
+      "k": 4,
+      "rule": "MAJORITY",
+      "method": "FROZEN",
+      "mean_advantage_against_IQL_EXACT": 0.0682925,
+      "descriptive_CI95": [
+        0.053134875000000005,
+        0.08355499999999999
+      ],
+      "six_contrast_family_CI991667": [
+        0.048115,
+        0.08924265625
+      ],
+      "mean_welfare": 0.2672725,
+      "low_payoff": 0.3775481598939372,
+      "high_payoff": 0.16106273519197936
+    },
+    {
+      "cohort": "MAINTENANCE",
+      "k": 8,
+      "rule": "UNANIMITY",
+      "method": "IQL_JITTER",
+      "mean_advantage_against_IQL_EXACT": -0.011994263791356255,
+      "descriptive_CI95": [
+        -0.016990863419927685,
+        -0.007042159133425931
+      ],
+      "six_contrast_family_CI991667": [
+        -0.018853804226701493,
+        -0.0054847082922363085
+      ],
+      "mean_welfare": 0.007390904208643753,
+      "low_payoff": 0.010906242188328759,
+      "high_payoff": 0.0035604413115808
+    },
+    {
+      "cohort": "MAINTENANCE",
+      "k": 8,
+      "rule": "UNANIMITY",
+      "method": "IQL_EXACT",
+      "mean_advantage_against_IQL_EXACT": 0.0,
+      "descriptive_CI95": [
+        0.0,
+        0.0
+      ],
+      "six_contrast_family_CI991667": [
+        0.0,
+        0.0
+      ],
+      "mean_welfare": 0.019385168000000008,
+      "low_payoff": 0.025926215724257393,
+      "high_payoff": 0.012812891933100787
+    },
+    {
+      "cohort": "MAINTENANCE",
+      "k": 8,
+      "rule": "UNANIMITY",
+      "method": "IQL_SLOW",
+      "mean_advantage_against_IQL_EXACT": 0.2226919497142858,
+      "descriptive_CI95": [
+        0.21375927845714288,
+        0.23143577822857148
+      ],
+      "six_contrast_family_CI991667": [
+        0.21083041511428577,
+        0.23462529553809533
+      ],
+      "mean_welfare": 0.2420771177142858,
+      "low_payoff": 0.26242219681624057,
+      "high_payoff": 0.2218400367007652
+    },
+    {
+      "cohort": "MAINTENANCE",
+      "k": 8,
+      "rule": "UNANIMITY",
+      "method": "HYSTERETIC",
+      "mean_advantage_against_IQL_EXACT": 0.21354615542857147,
+      "descriptive_CI95": [
+        0.20243373802857145,
+        0.22388542764285715
+      ],
+      "six_contrast_family_CI991667": [
+        0.19849468578571433,
+        0.22702638484761908
+      ],
+      "mean_welfare": 0.23293132342857148,
+      "low_payoff": 0.36030309078306444,
+      "high_payoff": 0.10701615274000245
+    },
+    {
+      "cohort": "MAINTENANCE",
+      "k": 8,
+      "rule": "UNANIMITY",
+      "method": "RUNNING_MEAN",
+      "mean_advantage_against_IQL_EXACT": 0.2525644034285715,
+      "descriptive_CI95": [
+        0.24470353217142862,
+        0.2604272372857144
+      ],
+      "six_contrast_family_CI991667": [
+        0.24189596767142865,
+        0.2631858746238096
+      ],
+      "mean_welfare": 0.2719495714285715,
+      "low_payoff": 0.2972967910109744,
+      "high_payoff": 0.24685721081361367
+    },
+    {
+      "cohort": "MAINTENANCE",
+      "k": 8,
+      "rule": "UNANIMITY",
+      "method": "LMRL2",
+      "mean_advantage_against_IQL_EXACT": -0.018979859428571434,
+      "descriptive_CI95": [
+        -0.023977815057142866,
+        -0.014222592342857152
+      ],
+      "six_contrast_family_CI991667": [
+        -0.025593757700000008,
+        -0.012513247704761908
+      ],
+      "mean_welfare": 0.00040530857142857156,
+      "low_payoff": 0.0006918815340760662,
+      "high_payoff": 0.00011135536991536991
+    },
+    {
+      "cohort": "MAINTENANCE",
+      "k": 8,
+      "rule": "UNANIMITY",
+      "method": "FROZEN",
+      "mean_advantage_against_IQL_EXACT": 0.16102792571428576,
+      "descriptive_CI95": [
+        0.15245530611428576,
+        0.16952882614285722
+      ],
+      "six_contrast_family_CI991667": [
+        0.14933856018095246,
+        0.1723831939190477
+      ],
+      "mean_welfare": 0.1804130937142858,
+      "low_payoff": 0.18692706424277372,
+      "high_payoff": 0.17434640565732876
+    },
+    {
+      "cohort": "MAINTENANCE",
+      "k": 8,
+      "rule": "MAJORITY",
+      "method": "IQL_JITTER",
+      "mean_advantage_against_IQL_EXACT": 0.00452645714285714,
+      "descriptive_CI95": [
+        -0.002372647857142853,
+        0.010970490714285705
+      ],
+      "six_contrast_family_CI991667": [
+        -0.005165053333333333,
+        0.013037306071428572
+      ],
+      "mean_welfare": 0.27149304285714293,
+      "low_payoff": 0.3585692022956694,
+      "high_payoff": 0.18517357620529507
+    },
+    {
+      "cohort": "MAINTENANCE",
+      "k": 8,
+      "rule": "MAJORITY",
+      "method": "IQL_EXACT",
+      "mean_advantage_against_IQL_EXACT": 0.0,
+      "descriptive_CI95": [
+        0.0,
+        0.0
+      ],
+      "six_contrast_family_CI991667": [
+        0.0,
+        0.0
+      ],
+      "mean_welfare": 0.2669665857142858,
+      "low_payoff": 0.35692452317197854,
+      "high_payoff": 0.177767515973542
+    },
+    {
+      "cohort": "MAINTENANCE",
+      "k": 8,
+      "rule": "MAJORITY",
+      "method": "IQL_SLOW",
+      "mean_advantage_against_IQL_EXACT": 0.14131573142857146,
+      "descriptive_CI95": [
+        0.12149449335714287,
+        0.16039823714285714
+      ],
+      "six_contrast_family_CI991667": [
+        0.11521310767857144,
+        0.1674067709166667
+      ],
+      "mean_welfare": 0.40828231714285723,
+      "low_payoff": 0.4660439403314801,
+      "high_payoff": 0.35086595100873375
+    },
+    {
+      "cohort": "MAINTENANCE",
+      "k": 8,
+      "rule": "MAJORITY",
+      "method": "HYSTERETIC",
+      "mean_advantage_against_IQL_EXACT": -0.18251313714285716,
+      "descriptive_CI95": [
+        -0.2158567919285715,
+        -0.14962199814285718
+      ],
+      "six_contrast_family_CI991667": [
+        -0.22901548569047622,
+        -0.13853029932142857
+      ],
+      "mean_welfare": 0.08445344857142863,
+      "low_payoff": 0.38277111860390134,
+      "high_payoff": -0.2173815814807477
+    },
+    {
+      "cohort": "MAINTENANCE",
+      "k": 8,
+      "rule": "MAJORITY",
+      "method": "RUNNING_MEAN",
+      "mean_advantage_against_IQL_EXACT": 0.1728248542857143,
+      "descriptive_CI95": [
+        0.15591595007142858,
+        0.1889663907857143
+      ],
+      "six_contrast_family_CI991667": [
+        0.14981788623809525,
+        0.19442036401190477
+      ],
+      "mean_welfare": 0.43979144000000003,
+      "low_payoff": 0.4970923416604367,
+      "high_payoff": 0.3823904504098268
+    },
+    {
+      "cohort": "MAINTENANCE",
+      "k": 8,
+      "rule": "MAJORITY",
+      "method": "LMRL2",
+      "mean_advantage_against_IQL_EXACT": -0.1093333628571429,
+      "descriptive_CI95": [
+        -0.13177305778571433,
+        -0.08665218271428578
+      ],
+      "six_contrast_family_CI991667": [
+        -0.14022392367857145,
+        -0.07871695483333334
+      ],
+      "mean_welfare": 0.1576332228571429,
+      "low_payoff": 0.2099302041002419,
+      "high_payoff": 0.10528407266857298
+    },
+    {
+      "cohort": "MAINTENANCE",
+      "k": 8,
+      "rule": "MAJORITY",
+      "method": "FROZEN",
+      "mean_advantage_against_IQL_EXACT": 0.13369990857142858,
+      "descriptive_CI95": [
+        0.11581354692857145,
+        0.1516221735
+      ],
+      "six_contrast_family_CI991667": [
+        0.11056104591666668,
+        0.15767422511904763
+      ],
+      "mean_welfare": 0.4006664942857143,
+      "low_payoff": 0.4648123751400445,
+      "high_payoff": 0.33717215455653393
+    },
+    {
+      "cohort": "MAINTENANCE",
+      "k": 12,
+      "rule": "UNANIMITY",
+      "method": "IQL_JITTER",
+      "mean_advantage_against_IQL_EXACT": -0.018281657443591372,
+      "descriptive_CI95": [
+        -0.022428198879626018,
+        -0.014369020886166336
+      ],
+      "six_contrast_family_CI991667": [
+        -0.023923495492861404,
+        -0.013099264327663843
+      ],
+      "mean_welfare": 0.0007554737866631784,
+      "low_payoff": 0.0013166044190374947,
+      "high_payoff": 0.00013915537984597753
+    },
+    {
+      "cohort": "MAINTENANCE",
+      "k": 12,
+      "rule": "UNANIMITY",
+      "method": "IQL_EXACT",
+      "mean_advantage_against_IQL_EXACT": 0.0,
+      "descriptive_CI95": [
+        0.0,
+        0.0
+      ],
+      "six_contrast_family_CI991667": [
+        0.0,
+        0.0
+      ],
+      "mean_welfare": 0.01903713123025455,
+      "low_payoff": 0.021949810161936083,
+      "high_payoff": 0.01605472131230023
+    },
+    {
+      "cohort": "MAINTENANCE",
+      "k": 12,
+      "rule": "UNANIMITY",
+      "method": "IQL_SLOW",
+      "mean_advantage_against_IQL_EXACT": 0.19495083896901827,
+      "descriptive_CI95": [
+        0.18789051150443645,
+        0.20156251418161458
+      ],
+      "six_contrast_family_CI991667": [
+        0.18533952319660613,
+        0.20370829409054556
+      ],
+      "mean_welfare": 0.2139879701992728,
+      "low_payoff": 0.22537825594955266,
+      "high_payoff": 0.20241353466602452
+    },
+    {
+      "cohort": "MAINTENANCE",
+      "k": 12,
+      "rule": "UNANIMITY",
+      "method": "HYSTERETIC",
+      "mean_advantage_against_IQL_EXACT": 0.22606324804247274,
+      "descriptive_CI95": [
+        0.21763530509200005,
+        0.2347470801030691
+      ],
+      "six_contrast_family_CI991667": [
+        0.21475712838307154,
+        0.2379358638696825
+      ],
+      "mean_welfare": 0.24510037927272732,
+      "low_payoff": 0.35185184863265595,
+      "high_payoff": 0.1385254329886893
+    },
+    {
+      "cohort": "MAINTENANCE",
+      "k": 12,
+      "rule": "UNANIMITY",
+      "method": "RUNNING_MEAN",
+      "mean_advantage_against_IQL_EXACT": 0.24939364042356377,
+      "descriptive_CI95": [
+        0.2417231552832583,
+        0.2569395760900074
+      ],
+      "six_contrast_family_CI991667": [
+        0.23895645117236375,
+        0.2594404493154183
+      ],
+      "mean_welfare": 0.2684307716538183,
+      "low_payoff": 0.2802379474351412,
+      "high_payoff": 0.25636860457096244
+    },
+    {
+      "cohort": "MAINTENANCE",
+      "k": 12,
+      "rule": "UNANIMITY",
+      "method": "LMRL2",
+      "mean_advantage_against_IQL_EXACT": -0.01820428701323637,
+      "descriptive_CI95": [
+        -0.02219317516381092,
+        -0.014459016439360005
+      ],
+      "six_contrast_family_CI991667": [
+        -0.023704254028703037,
+        -0.013159794700800002
+      ],
+      "mean_welfare": 0.0008328442170181819,
+      "low_payoff": 0.0012126743808323144,
+      "high_payoff": 0.0005037991630735101
+    },
+    {
+      "cohort": "MAINTENANCE",
+      "k": 12,
+      "rule": "UNANIMITY",
+      "method": "FROZEN",
+      "mean_advantage_against_IQL_EXACT": 0.1215560029230546,
+      "descriptive_CI95": [
+        0.11478281590068369,
+        0.12852294888290913
+      ],
+      "six_contrast_family_CI991667": [
+        0.11265006228961943,
+        0.13092452888023762
+      ],
+      "mean_welfare": 0.14059313415330915,
+      "low_payoff": 0.14410840774406808,
+      "high_payoff": 0.13699869903493955
+    },
+    {
+      "cohort": "MAINTENANCE",
+      "k": 12,
+      "rule": "MAJORITY",
+      "method": "IQL_JITTER",
+      "mean_advantage_against_IQL_EXACT": 0.010626282327272724,
+      "descriptive_CI95": [
+        0.00287053428727274,
+        0.018623223149090887
+      ],
+      "six_contrast_family_CI991667": [
+        0.00030325995212121645,
+        0.02151876935212121
+      ],
+      "mean_welfare": 0.29036042736872736,
+      "low_payoff": 0.37310567742230566,
+      "high_payoff": 0.2082212361188104
+    },
+    {
+      "cohort": "MAINTENANCE",
+      "k": 12,
+      "rule": "MAJORITY",
+      "method": "IQL_EXACT",
+      "mean_advantage_against_IQL_EXACT": 0.0,
+      "descriptive_CI95": [
+        0.0,
+        0.0
+      ],
+      "six_contrast_family_CI991667": [
+        0.0,
+        0.0
+      ],
+      "mean_welfare": 0.27973414504145455,
+      "low_payoff": 0.36354304869324183,
+      "high_payoff": 0.1966356365104964
+    },
+    {
+      "cohort": "MAINTENANCE",
+      "k": 12,
+      "rule": "MAJORITY",
+      "method": "IQL_SLOW",
+      "mean_advantage_against_IQL_EXACT": 0.2015136675328,
+      "descriptive_CI95": [
+        0.18075082465258183,
+        0.2219402957669382
+      ],
+      "six_contrast_family_CI991667": [
+        0.17364343476605576,
+        0.22840137258768972
+      ],
+      "mean_welfare": 0.48124781257425453,
+      "low_payoff": 0.5165104544062722,
+      "high_payoff": 0.4462936687099306
+    },
+    {
+      "cohort": "MAINTENANCE",
+      "k": 12,
+      "rule": "MAJORITY",
+      "method": "HYSTERETIC",
+      "mean_advantage_against_IQL_EXACT": -0.1336340986269091,
+      "descriptive_CI95": [
+        -0.16213867151003636,
+        -0.10528207334596364
+      ],
+      "six_contrast_family_CI991667": [
+        -0.17125034992921215,
+        -0.09481943864938176
+      ],
+      "mean_welfare": 0.14610004641454552,
+      "low_payoff": 0.4139016489117294,
+      "high_payoff": -0.12105017533168183
+    },
+    {
+      "cohort": "MAINTENANCE",
+      "k": 12,
+      "rule": "MAJORITY",
+      "method": "RUNNING_MEAN",
+      "mean_advantage_against_IQL_EXACT": 0.23526036444043635,
+      "descriptive_CI95": [
+        0.21369862167374543,
+        0.25656664014875635
+      ],
+      "six_contrast_family_CI991667": [
+        0.20586284580644604,
+        0.2636502306535297
+      ],
+      "mean_welfare": 0.514994509481891,
+      "low_payoff": 0.5465629919765418,
+      "high_payoff": 0.4834968122776643
+    },
+    {
+      "cohort": "MAINTENANCE",
+      "k": 12,
+      "rule": "MAJORITY",
+      "method": "LMRL2",
+      "mean_advantage_against_IQL_EXACT": -0.11409122124800002,
+      "descriptive_CI95": [
+        -0.14179444654792728,
+        -0.08553160989454549
+      ],
+      "six_contrast_family_CI991667": [
+        -0.15054123038004852,
+        -0.07459392971501819
+      ],
+      "mean_welfare": 0.1656429237934546,
+      "low_payoff": 0.2024968542432496,
+      "high_payoff": 0.12920180726746208
+    },
+    {
+      "cohort": "MAINTENANCE",
+      "k": 12,
+      "rule": "MAJORITY",
+      "method": "FROZEN",
+      "mean_advantage_against_IQL_EXACT": 0.16678475474792726,
+      "descriptive_CI95": [
+        0.1403645468645236,
+        0.19171277916653087
+      ],
+      "six_contrast_family_CI991667": [
+        0.13081615686684606,
+        0.19935518497483154
+      ],
+      "mean_welfare": 0.44651889978938186,
+      "low_payoff": 0.4939899346744596,
+      "high_payoff": 0.399209057811879
+    },
+    {
+      "cohort": "FORMATION",
+      "k": 4,
+      "rule": "UNANIMITY",
+      "method": "IQL_JITTER",
+      "mean_advantage_against_IQL_EXACT": 0.0008449999999999997,
+      "descriptive_CI95": [
+        -0.0021650000000000003,
+        0.004060000000000001
+      ],
+      "six_contrast_family_CI991667": [
+        -0.0032250000000000017,
+        0.005366770833333341
+      ],
+      "mean_welfare": 0.04289000000000001,
+      "low_payoff": 0.07893003811420533,
+      "high_payoff": 0.006833304464044504
+    },
+    {
+      "cohort": "FORMATION",
+      "k": 4,
+      "rule": "UNANIMITY",
+      "method": "IQL_EXACT",
+      "mean_advantage_against_IQL_EXACT": 0.0,
+      "descriptive_CI95": [
+        0.0,
+        0.0
+      ],
+      "six_contrast_family_CI991667": [
+        0.0,
+        0.0
+      ],
+      "mean_welfare": 0.04204500000000001,
+      "low_payoff": 0.07738554178128988,
+      "high_payoff": 0.006553145426243052
+    },
+    {
+      "cohort": "FORMATION",
+      "k": 4,
+      "rule": "UNANIMITY",
+      "method": "IQL_SLOW",
+      "mean_advantage_against_IQL_EXACT": 0.238645,
+      "descriptive_CI95": [
+        0.22768462500000003,
+        0.248825375
+      ],
+      "six_contrast_family_CI991667": [
+        0.22343164583333336,
+        0.2521067083333334
+      ],
+      "mean_welfare": 0.28069,
+      "low_payoff": 0.323912033638479,
+      "high_payoff": 0.23952062360243492
+    },
+    {
+      "cohort": "FORMATION",
+      "k": 4,
+      "rule": "UNANIMITY",
+      "method": "HYSTERETIC",
+      "mean_advantage_against_IQL_EXACT": 0.14193250000000002,
+      "descriptive_CI95": [
+        0.12883493750000002,
+        0.15560750000000004
+      ],
+      "six_contrast_family_CI991667": [
+        0.12448807291666669,
+        0.15993088541666672
+      ],
+      "mean_welfare": 0.18397750000000004,
+      "low_payoff": 0.35514820165210254,
+      "high_payoff": 0.025353889412835146
+    },
+    {
+      "cohort": "FORMATION",
+      "k": 4,
+      "rule": "UNANIMITY",
+      "method": "RUNNING_MEAN",
+      "mean_advantage_against_IQL_EXACT": 0.23746000000000003,
+      "descriptive_CI95": [
+        0.22652500000000003,
+        0.24861037500000002
+      ],
+      "six_contrast_family_CI991667": [
+        0.22283158333333336,
+        0.2526351875
+      ],
+      "mean_welfare": 0.279505,
+      "low_payoff": 0.34249152216360423,
+      "high_payoff": 0.21873475550308852
+    },
+    {
+      "cohort": "FORMATION",
+      "k": 4,
+      "rule": "UNANIMITY",
+      "method": "LMRL2",
+      "mean_advantage_against_IQL_EXACT": -0.010695,
+      "descriptive_CI95": [
+        -0.014969999999999999,
+        -0.0067449999999999975
+      ],
+      "six_contrast_family_CI991667": [
+        -0.0164850625,
+        -0.005544999999999998
+      ],
+      "mean_welfare": 0.03135000000000001,
+      "low_payoff": 0.06223650701255043,
+      "high_payoff": 0.0
+    },
+    {
+      "cohort": "FORMATION",
+      "k": 4,
+      "rule": "UNANIMITY",
+      "method": "IQL_MIN",
+      "mean_advantage_against_IQL_EXACT": 0.00014999999999999996,
+      "descriptive_CI95": [
+        0.0,
+        0.0004499999999999999
+      ],
+      "six_contrast_family_CI991667": [
+        0.0,
+        0.0005999999999999998
+      ],
+      "mean_welfare": 0.04219500000000001,
+      "low_payoff": 0.07729858525955074,
+      "high_payoff": 0.006850442723540349
+    },
+    {
+      "cohort": "FORMATION",
+      "k": 4,
+      "rule": "MAJORITY",
+      "method": "IQL_JITTER",
+      "mean_advantage_against_IQL_EXACT": -0.000474999999999998,
+      "descriptive_CI95": [
+        -0.001424999999999994,
+        0.0
+      ],
+      "six_contrast_family_CI991667": [
+        -0.001899999999999992,
+        0.0
+      ],
+      "mean_welfare": 0.20842750000000004,
+      "low_payoff": 0.32800238215507643,
+      "high_payoff": 0.0890558355248457
+    },
+    {
+      "cohort": "FORMATION",
+      "k": 4,
+      "rule": "MAJORITY",
+      "method": "IQL_EXACT",
+      "mean_advantage_against_IQL_EXACT": 0.0,
+      "descriptive_CI95": [
+        0.0,
+        0.0
+      ],
+      "six_contrast_family_CI991667": [
+        0.0,
+        0.0
+      ],
+      "mean_welfare": 0.20890250000000005,
+      "low_payoff": 0.3283508670035613,
+      "high_payoff": 0.08968546515447531
+    },
+    {
+      "cohort": "FORMATION",
+      "k": 4,
+      "rule": "MAJORITY",
+      "method": "IQL_SLOW",
+      "mean_advantage_against_IQL_EXACT": 0.10709749999999993,
+      "descriptive_CI95": [
+        0.09650468749999992,
+        0.11784774999999992
+      ],
+      "six_contrast_family_CI991667": [
+        0.09292740624999993,
+        0.12151753124999995
+      ],
+      "mean_welfare": 0.316,
+      "low_payoff": 0.3995227576083267,
+      "high_payoff": 0.2325629486043122
+    },
+    {
+      "cohort": "FORMATION",
+      "k": 4,
+      "rule": "MAJORITY",
+      "method": "HYSTERETIC",
+      "mean_advantage_against_IQL_EXACT": -0.2957350000000001,
+      "descriptive_CI95": [
+        -0.32555006250000007,
+        -0.2658924375000001
+      ],
+      "six_contrast_family_CI991667": [
+        -0.33575347916666676,
+        -0.25567178125
+      ],
+      "mean_welfare": -0.0868325,
+      "low_payoff": 0.29896900684410793,
+      "high_payoff": -0.4790617991667462
+    },
+    {
+      "cohort": "FORMATION",
+      "k": 4,
+      "rule": "MAJORITY",
+      "method": "RUNNING_MEAN",
+      "mean_advantage_against_IQL_EXACT": 0.11747749999999994,
+      "descriptive_CI95": [
+        0.10548499999999994,
+        0.12955762499999993
+      ],
+      "six_contrast_family_CI991667": [
+        0.10152145833333327,
+        0.13391338541666664
+      ],
+      "mean_welfare": 0.32638,
+      "low_payoff": 0.4104279285770833,
+      "high_payoff": 0.24238961356913896
+    },
+    {
+      "cohort": "FORMATION",
+      "k": 4,
+      "rule": "MAJORITY",
+      "method": "LMRL2",
+      "mean_advantage_against_IQL_EXACT": -0.046667500000000015,
+      "descriptive_CI95": [
+        -0.059257625000000015,
+        -0.033774937500000025
+      ],
+      "six_contrast_family_CI991667": [
+        -0.06325341666666667,
+        -0.029473197916666676
+      ],
+      "mean_welfare": 0.16223500000000005,
+      "low_payoff": 0.26109393383862284,
+      "high_payoff": 0.06310633125960091
+    },
+    {
+      "cohort": "FORMATION",
+      "k": 4,
+      "rule": "MAJORITY",
+      "method": "IQL_MIN",
+      "mean_advantage_against_IQL_EXACT": 0.000675000000000002,
+      "descriptive_CI95": [
+        -0.0009499999999999995,
+        0.0023750000000000056
+      ],
+      "six_contrast_family_CI991667": [
+        -0.0014249999999999992,
+        0.0030500000000000076
+      ],
+      "mean_welfare": 0.20957750000000006,
+      "low_payoff": 0.32910166275952946,
+      "high_payoff": 0.09028223934802371
+    },
+    {
+      "cohort": "FORMATION",
+      "k": 8,
+      "rule": "UNANIMITY",
+      "method": "IQL_JITTER",
+      "mean_advantage_against_IQL_EXACT": 0.0037453426966975157,
+      "descriptive_CI95": [
+        -0.0019387690952674878,
+        0.009172987047417232
+      ],
+      "six_contrast_family_CI991667": [
+        -0.003916716407052077,
+        0.01094032228750117
+      ],
+      "mean_welfare": 0.01531385101812609,
+      "low_payoff": 0.019387772521541044,
+      "high_payoff": 0.011275821879995367
+    },
+    {
+      "cohort": "FORMATION",
+      "k": 8,
+      "rule": "UNANIMITY",
+      "method": "IQL_EXACT",
+      "mean_advantage_against_IQL_EXACT": 0.0,
+      "descriptive_CI95": [
+        0.0,
+        0.0
+      ],
+      "six_contrast_family_CI991667": [
+        0.0,
+        0.0
+      ],
+      "mean_welfare": 0.011568508321428575,
+      "low_payoff": 0.015262169954944269,
+      "high_payoff": 0.00803446748655861
+    },
+    {
+      "cohort": "FORMATION",
+      "k": 8,
+      "rule": "UNANIMITY",
+      "method": "IQL_SLOW",
+      "mean_advantage_against_IQL_EXACT": 0.22343881828571435,
+      "descriptive_CI95": [
+        0.21476951825714294,
+        0.23199614822857148
+      ],
+      "six_contrast_family_CI991667": [
+        0.2117506193333334,
+        0.2349849551000001
+      ],
+      "mean_welfare": 0.2350073266071429,
+      "low_payoff": 0.2566141680471206,
+      "high_payoff": 0.2148247956570505
+    },
+    {
+      "cohort": "FORMATION",
+      "k": 8,
+      "rule": "UNANIMITY",
+      "method": "HYSTERETIC",
+      "mean_advantage_against_IQL_EXACT": 0.2081243950714286,
+      "descriptive_CI95": [
+        0.1938780845571429,
+        0.2211289471482143
+      ],
+      "six_contrast_family_CI991667": [
+        0.1879199721651786,
+        0.22502887299434526
+      ],
+      "mean_welfare": 0.2196929033928572,
+      "low_payoff": 0.3581441624123978,
+      "high_payoff": 0.0895975262974808
+    },
+    {
+      "cohort": "FORMATION",
+      "k": 8,
+      "rule": "UNANIMITY",
+      "method": "RUNNING_MEAN",
+      "mean_advantage_against_IQL_EXACT": 0.23988121450000008,
+      "descriptive_CI95": [
+        0.23181646421964294,
+        0.2476897237428572
+      ],
+      "six_contrast_family_CI991667": [
+        0.2290440846568453,
+        0.2504021577571429
+      ],
+      "mean_welfare": 0.25144972282142863,
+      "low_payoff": 0.27549333154035127,
+      "high_payoff": 0.22898497255854772
+    },
+    {
+      "cohort": "FORMATION",
+      "k": 8,
+      "rule": "UNANIMITY",
+      "method": "LMRL2",
+      "mean_advantage_against_IQL_EXACT": -0.01099263860714286,
+      "descriptive_CI95": [
+        -0.015469848887500005,
+        -0.006950923450000007
+      ],
+      "six_contrast_family_CI991667": [
+        -0.017191798149107148,
+        -0.005682566475297621
+      ],
+      "mean_welfare": 0.0005758697142857146,
+      "low_payoff": 0.0010880502473055577,
+      "high_payoff": 2.917944577488881e-05
+    },
+    {
+      "cohort": "FORMATION",
+      "k": 8,
+      "rule": "UNANIMITY",
+      "method": "IQL_MIN",
+      "mean_advantage_against_IQL_EXACT": -0.004050085464285715,
+      "descriptive_CI95": [
+        -0.008889371758928575,
+        0.0008764429071428575
+      ],
+      "six_contrast_family_CI991667": [
+        -0.0102601058796131,
+        0.0026194417267857164
+      ],
+      "mean_welfare": 0.0075184228571428605,
+      "low_payoff": 0.009410827842781192,
+      "high_payoff": 0.005720117179077291
+    },
+    {
+      "cohort": "FORMATION",
+      "k": 8,
+      "rule": "MAJORITY",
+      "method": "IQL_JITTER",
+      "mean_advantage_against_IQL_EXACT": 0.00039369714285713685,
+      "descriptive_CI95": [
+        -0.013736418071428586,
+        0.014202413714285706
+      ],
+      "six_contrast_family_CI991667": [
+        -0.01909986327380953,
+        0.019124244297619036
+      ],
+      "mean_welfare": 0.25988046285714295,
+      "low_payoff": 0.3472968208750306,
+      "high_payoff": 0.17556305816602286
+    },
+    {
+      "cohort": "FORMATION",
+      "k": 8,
+      "rule": "MAJORITY",
+      "method": "IQL_EXACT",
+      "mean_advantage_against_IQL_EXACT": 0.0,
+      "descriptive_CI95": [
+        0.0,
+        0.0
+      ],
+      "six_contrast_family_CI991667": [
+        0.0,
+        0.0
+      ],
+      "mean_welfare": 0.25948676571428575,
+      "low_payoff": 0.3487368039444756,
+      "high_payoff": 0.17215926161508452
+    },
+    {
+      "cohort": "FORMATION",
+      "k": 8,
+      "rule": "MAJORITY",
+      "method": "IQL_SLOW",
+      "mean_advantage_against_IQL_EXACT": 0.1392082228571429,
+      "descriptive_CI95": [
+        0.12418500550000003,
+        0.15500007871428576
+      ],
+      "six_contrast_family_CI991667": [
+        0.11946659054761909,
+        0.16056236405952387
+      ],
+      "mean_welfare": 0.39869498857142865,
+      "low_payoff": 0.46005988973576517,
+      "high_payoff": 0.3383734698748134
+    },
+    {
+      "cohort": "FORMATION",
+      "k": 8,
+      "rule": "MAJORITY",
+      "method": "HYSTERETIC",
+      "mean_advantage_against_IQL_EXACT": -0.2006041885714286,
+      "descriptive_CI95": [
+        -0.23297486292857145,
+        -0.16792730478571427
+      ],
+      "six_contrast_family_CI991667": [
+        -0.24387573157142858,
+        -0.1559234209404762
+      ],
+      "mean_welfare": 0.05888257714285718,
+      "low_payoff": 0.38377491273830094,
+      "high_payoff": -0.2615747786305437
+    },
+    {
+      "cohort": "FORMATION",
+      "k": 8,
+      "rule": "MAJORITY",
+      "method": "RUNNING_MEAN",
+      "mean_advantage_against_IQL_EXACT": 0.20465088571428575,
+      "descriptive_CI95": [
+        0.19337211464285717,
+        0.2161973125714286
+      ],
+      "six_contrast_family_CI991667": [
+        0.18971445170238102,
+        0.2201552745476191
+      ],
+      "mean_welfare": 0.46413765142857155,
+      "low_payoff": 0.5082705453152631,
+      "high_payoff": 0.4214866206135857
+    },
+    {
+      "cohort": "FORMATION",
+      "k": 8,
+      "rule": "MAJORITY",
+      "method": "LMRL2",
+      "mean_advantage_against_IQL_EXACT": -0.09146570571428572,
+      "descriptive_CI95": [
+        -0.109318718,
+        -0.07406153092857143
+      ],
+      "six_contrast_family_CI991667": [
+        -0.11592675771428573,
+        -0.06881452369047619
+      ],
+      "mean_welfare": 0.16802106000000003,
+      "low_payoff": 0.22575310187460806,
+      "high_payoff": 0.11134450594424003
+    },
+    {
+      "cohort": "FORMATION",
+      "k": 8,
+      "rule": "MAJORITY",
+      "method": "IQL_MIN",
+      "mean_advantage_against_IQL_EXACT": 0.0033205999999999965,
+      "descriptive_CI95": [
+        -0.009355642071428577,
+        0.015174061857142847
+      ],
+      "six_contrast_family_CI991667": [
+        -0.01375600945238096,
+        0.019053399309523822
+      ],
+      "mean_welfare": 0.26280736571428576,
+      "low_payoff": 0.35234245348444837,
+      "high_payoff": 0.17556330718776889
+    },
+    {
+      "cohort": "FORMATION",
+      "k": 12,
+      "rule": "UNANIMITY",
+      "method": "IQL_JITTER",
+      "mean_advantage_against_IQL_EXACT": -0.011351175143512693,
+      "descriptive_CI95": [
+        -0.01687059794952305,
+        -0.005786858235872384
+      ],
+      "six_contrast_family_CI991667": [
+        -0.018722675334303503,
+        -0.003905229791777598
+      ],
+      "mean_welfare": 0.0071615513326557766,
+      "low_payoff": 0.00810952204976747,
+      "high_payoff": 0.006237962528476453
+    },
+    {
+      "cohort": "FORMATION",
+      "k": 12,
+      "rule": "UNANIMITY",
+      "method": "IQL_EXACT",
+      "mean_advantage_against_IQL_EXACT": 0.0,
+      "descriptive_CI95": [
+        0.0,
+        0.0
+      ],
+      "six_contrast_family_CI991667": [
+        0.0,
+        0.0
+      ],
+      "mean_welfare": 0.018512726476168473,
+      "low_payoff": 0.021053559030382793,
+      "high_payoff": 0.016035742268212392
+    },
+    {
+      "cohort": "FORMATION",
+      "k": 12,
+      "rule": "UNANIMITY",
+      "method": "IQL_SLOW",
+      "mean_advantage_against_IQL_EXACT": 0.10191141578356368,
+      "descriptive_CI95": [
+        0.09305871417053095,
+        0.11101284754880004
+      ],
+      "six_contrast_family_CI991667": [
+        0.08992478559659155,
+        0.11421065770844127
+      ],
+      "mean_welfare": 0.12042414225973214,
+      "low_payoff": 0.12877727357191723,
+      "high_payoff": 0.11190944433056577
+    },
+    {
+      "cohort": "FORMATION",
+      "k": 12,
+      "rule": "UNANIMITY",
+      "method": "HYSTERETIC",
+      "mean_advantage_against_IQL_EXACT": 0.12641722909854547,
+      "descriptive_CI95": [
+        0.11468672865596002,
+        0.13806448142356909
+      ],
+      "six_contrast_family_CI991667": [
+        0.11087636766618032,
+        0.14176512438516548
+      ],
+      "mean_welfare": 0.14492995557471394,
+      "low_payoff": 0.21691463082939388,
+      "high_payoff": 0.07278790919863899
+    },
+    {
+      "cohort": "FORMATION",
+      "k": 12,
+      "rule": "UNANIMITY",
+      "method": "RUNNING_MEAN",
+      "mean_advantage_against_IQL_EXACT": 0.12406228012683641,
+      "descriptive_CI95": [
+        0.11386454017837822,
+        0.13471891707533823
+      ],
+      "six_contrast_family_CI991667": [
+        0.11047885114854308,
+        0.13839163992796247
+      ],
+      "mean_welfare": 0.14257500660300487,
+      "low_payoff": 0.1536429533344607,
+      "high_payoff": 0.1314302776666198
+    },
+    {
+      "cohort": "FORMATION",
+      "k": 12,
+      "rule": "UNANIMITY",
+      "method": "LMRL2",
+      "mean_advantage_against_IQL_EXACT": -0.018315678225986655,
+      "descriptive_CI95": [
+        -0.022602459810769353,
+        -0.014178512626224491
+      ],
+      "six_contrast_family_CI991667": [
+        -0.024175059036409194,
+        -0.012735287196898752
+      ],
+      "mean_welfare": 0.00019704825018181815,
+      "low_payoff": 0.0001925101208863289,
+      "high_payoff": 0.00019823861627318932
+    },
+    {
+      "cohort": "FORMATION",
+      "k": 12,
+      "rule": "UNANIMITY",
+      "method": "IQL_MIN",
+      "mean_advantage_against_IQL_EXACT": -0.016633002310350288,
+      "descriptive_CI95": [
+        -0.02131073117200928,
+        -0.012065786182292747
+      ],
+      "six_contrast_family_CI991667": [
+        -0.022885106661202404,
+        -0.010481138587585403
+      ],
+      "mean_welfare": 0.0018797241658181825,
+      "low_payoff": 0.0019482486541420121,
+      "high_payoff": 0.001803139008231924
+    },
+    {
+      "cohort": "FORMATION",
+      "k": 12,
+      "rule": "MAJORITY",
+      "method": "IQL_JITTER",
+      "mean_advantage_against_IQL_EXACT": -0.008085799508363628,
+      "descriptive_CI95": [
+        -0.024725931131345427,
+        0.0101306002765091
+      ],
+      "six_contrast_family_CI991667": [
+        -0.030015624219963625,
+        0.01719183555781819
+      ],
+      "mean_welfare": 0.306143005277091,
+      "low_payoff": 0.37567045698529733,
+      "high_payoff": 0.23337836604291928
+    },
+    {
+      "cohort": "FORMATION",
+      "k": 12,
+      "rule": "MAJORITY",
+      "method": "IQL_EXACT",
+      "mean_advantage_against_IQL_EXACT": 0.0,
+      "descriptive_CI95": [
+        0.0,
+        0.0
+      ],
+      "six_contrast_family_CI991667": [
+        0.0,
+        0.0
+      ],
+      "mean_welfare": 0.31422880478545456,
+      "low_payoff": 0.3812219824003942,
+      "high_payoff": 0.24393876796083244
+    },
+    {
+      "cohort": "FORMATION",
+      "k": 12,
+      "rule": "MAJORITY",
+      "method": "IQL_SLOW",
+      "mean_advantage_against_IQL_EXACT": 0.15858646002036367,
+      "descriptive_CI95": [
+        0.14402406084421823,
+        0.17369406071432725
+      ],
+      "six_contrast_family_CI991667": [
+        0.13983562434216973,
+        0.17873836339327273
+      ],
+      "mean_welfare": 0.47281526480581826,
+      "low_payoff": 0.5132014861723738,
+      "high_payoff": 0.43052701490385287
+    },
+    {
+      "cohort": "FORMATION",
+      "k": 12,
+      "rule": "MAJORITY",
+      "method": "HYSTERETIC",
+      "mean_advantage_against_IQL_EXACT": -0.17422010258327272,
+      "descriptive_CI95": [
+        -0.20843237908269094,
+        -0.14267975614516365
+      ],
+      "six_contrast_family_CI991667": [
+        -0.22222731552320002,
+        -0.1328589329846424
+      ],
+      "mean_welfare": 0.14000870220218187,
+      "low_payoff": 0.41418407443958455,
+      "high_payoff": -0.14849538148010383
+    },
+    {
+      "cohort": "FORMATION",
+      "k": 12,
+      "rule": "MAJORITY",
+      "method": "RUNNING_MEAN",
+      "mean_advantage_against_IQL_EXACT": 0.21238416377425454,
+      "descriptive_CI95": [
+        0.19788967108853817,
+        0.22731403249141813
+      ],
+      "six_contrast_family_CI991667": [
+        0.1931830144349115,
+        0.23260173356563146
+      ],
+      "mean_welfare": 0.5266129685597092,
+      "low_payoff": 0.5513424670855991,
+      "high_payoff": 0.500851096117077
+    },
+    {
+      "cohort": "FORMATION",
+      "k": 12,
+      "rule": "MAJORITY",
+      "method": "LMRL2",
+      "mean_advantage_against_IQL_EXACT": -0.14172219099636366,
+      "descriptive_CI95": [
+        -0.15866315333614547,
+        -0.12413926339701821
+      ],
+      "six_contrast_family_CI991667": [
+        -0.16427707823322424,
+        -0.11788388175401211
+      ],
+      "mean_welfare": 0.17250661378909096,
+      "low_payoff": 0.2167510383932712,
+      "high_payoff": 0.12629367764408644
+    },
+    {
+      "cohort": "FORMATION",
+      "k": 12,
+      "rule": "MAJORITY",
+      "method": "IQL_MIN",
+      "mean_advantage_against_IQL_EXACT": -0.019888610813090905,
+      "descriptive_CI95": [
+        -0.04049486019810909,
+        0.000492928924000006
+      ],
+      "six_contrast_family_CI991667": [
+        -0.04715931866454544,
+        0.008073714469090946
+      ],
+      "mean_welfare": 0.2943401939723637,
+      "low_payoff": 0.37004667192502194,
+      "high_payoff": 0.21441163659488513
+    }
+  ],
+  "bootstrap_resamples": 20000,
+  "worlds_as_inference_unit": 32,
+  "simultaneous_intervals_family_scope": "Six HYSTERETIC versus IQL_EXACT cases within each cohort; separate H1/H2 families.",
+  "other_method_intervals_are_secondary_descriptive": true,
+  "known_algorithm_success_does_not_accredit_originality": true,
+  "CT2_historical": 61,
+  "new_branch_score": null,
+  "N2": 0,
+  "N3": 0
+}

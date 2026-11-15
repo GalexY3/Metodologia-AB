@@ -1,0 +1,76 @@
+{
+  "method_table": [
+    {
+      "method": "IQL_JITTER",
+      "maintenance75": 0,
+      "formation_useful_count": 3,
+      "adaptation_maintenance": 3,
+      "adaptation_formation": 3
+    },
+    {
+      "method": "IQL_EXACT",
+      "maintenance75": 0,
+      "formation_useful_count": 3,
+      "adaptation_maintenance": 3,
+      "adaptation_formation": 2
+    },
+    {
+      "method": "IQL_SLOW",
+      "maintenance75": 6,
+      "formation_useful_count": 6,
+      "adaptation_maintenance": 0,
+      "adaptation_formation": 0
+    },
+    {
+      "method": "HYSTERETIC",
+      "maintenance75": 3,
+      "formation_useful_count": 3,
+      "adaptation_maintenance": 3,
+      "adaptation_formation": 3
+    },
+    {
+      "method": "RUNNING_MEAN",
+      "maintenance75": 6,
+      "formation_useful_count": 6,
+      "adaptation_maintenance": 0,
+      "adaptation_formation": 0
+    },
+    {
+      "method": "LMRL2",
+      "maintenance75": 0,
+      "formation_useful_count": 3,
+      "adaptation_maintenance": 0,
+      "adaptation_formation": 0
+    },
+    {
+      "method": "FROZEN",
+      "maintenance75": 6,
+      "formation_useful_count": null,
+      "adaptation_maintenance": 0,
+      "adaptation_formation": null
+    },
+    {
+      "method": "IQL_MIN",
+      "maintenance75": null,
+      "formation_useful_count": 3,
+      "adaptation_maintenance": null,
+      "adaptation_formation": 3
+    }
+  ],
+  "primary_H1_passed": false,
+  "primary_H2_passed": false,
+  "primary_counts": {
+    "MAINTENANCE": 3,
+    "FORMATION": 3
+  },
+  "new_formation_world_roots": 192,
+  "lower_variance_private_learners_form_and_maintain_without_pulses_in_six": true,
+  "those_two_controls_fail_reversal_in_all_six": true,
+  "no_method_meets_adaptation_in_at_least_four": true,
+  "voting_without_exit_is_not_voluntary_participation": true,
+  "expectile_diagnostic_is_posthoc_not_a_rescued_primary": true,
+  "CT2_historical": 61,
+  "new_branch_score": null,
+  "N2": 0,
+  "N3": 0
+}

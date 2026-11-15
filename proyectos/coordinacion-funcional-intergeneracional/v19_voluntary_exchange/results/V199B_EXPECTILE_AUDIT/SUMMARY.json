@@ -1,0 +1,763 @@
+{
+  "analysis_is_posthoc": true,
+  "new_training_executed": false,
+  "stationary_scalar_fixed_point_algebra_is_known": true,
+  "root_residual_fixtures": 1000,
+  "maximum_root_residual": 2.7755575615628914e-17,
+  "alpha": 0.1,
+  "beta": 0.01,
+  "expectile_tau": 0.9090909090909091,
+  "mean_dynamics_fixed_point_not_constant_gain_stationary_sample_mean": true,
+  "frozen_peers_are_a_diagnostic_not_original_learning_dynamics": true,
+  "majority_can_bind_a_voter_who_rejects_and_has_no_exit": true,
+  "records": [
+    {
+      "cohort": "MAINTENANCE",
+      "k": 4,
+      "rule": "UNANIMITY",
+      "peer_epsilon": 0.0,
+      "private_types": [
+        {
+          "loss": 1,
+          "current_greedy_against_peer_law": 0.3441623931623933,
+          "best_unilateral_expected_payoff": 0.3948034188034189,
+          "fraction_people_with_negative_best_response_value": 0.0,
+          "mean_unilateral_regret": 0.05064102564102565,
+          "signal_weighted_mean_expectile_choice_disagreement": 0.11141025641025641,
+          "signal_weighted_actual_choice_disagreement_with_mean": 0.11354700854700855,
+          "signal_weighted_actual_choice_disagreement_with_expectile": 0.002136752136752137
+        },
+        {
+          "loss": 7,
+          "current_greedy_against_peer_law": 0.03542113821138218,
+          "best_unilateral_expected_payoff": 0.15282926829268303,
+          "fraction_people_with_negative_best_response_value": 0.0,
+          "mean_unilateral_regret": 0.11740813008130083,
+          "signal_weighted_mean_expectile_choice_disagreement": 0.4814227642276424,
+          "signal_weighted_actual_choice_disagreement_with_mean": 0.3659349593495935,
+          "signal_weighted_actual_choice_disagreement_with_expectile": 0.13581300813008132
+        }
+      ],
+      "forward_payoff_parity_error": 0.0,
+      "checkpoint_sha256": "72602807616849c363e7f8bea1362f3ea794470854e1f4cedbb87085f22654b9",
+      "analysis_is_posthoc": true
+    },
+    {
+      "cohort": "MAINTENANCE",
+      "k": 4,
+      "rule": "UNANIMITY",
+      "peer_epsilon": 0.08,
+      "private_types": [
+        {
+          "loss": 1,
+          "current_greedy_against_peer_law": 0.31254178461538484,
+          "best_unilateral_expected_payoff": 0.35921528888888915,
+          "fraction_people_with_negative_best_response_value": 0.0,
+          "mean_unilateral_regret": 0.04667350427350431,
+          "signal_weighted_mean_expectile_choice_disagreement": 0.1132905982905983,
+          "signal_weighted_actual_choice_disagreement_with_mean": 0.1138034188034188,
+          "signal_weighted_actual_choice_disagreement_with_expectile": 0.004273504273504274
+        },
+        {
+          "loss": 7,
+          "current_greedy_against_peer_law": 0.008421335934959416,
+          "best_unilateral_expected_payoff": 0.1337660357723578,
+          "fraction_people_with_negative_best_response_value": 0.0,
+          "mean_unilateral_regret": 0.12534469983739838,
+          "signal_weighted_mean_expectile_choice_disagreement": 0.4928048780487806,
+          "signal_weighted_actual_choice_disagreement_with_mean": 0.3557723577235773,
+          "signal_weighted_actual_choice_disagreement_with_expectile": 0.13703252032520324
+        }
+      ],
+      "forward_payoff_parity_error": 2.7755575615628914e-17,
+      "checkpoint_sha256": "72602807616849c363e7f8bea1362f3ea794470854e1f4cedbb87085f22654b9",
+      "analysis_is_posthoc": true
+    },
+    {
+      "cohort": "MAINTENANCE",
+      "k": 4,
+      "rule": "MAJORITY",
+      "peer_epsilon": 0.0,
+      "private_types": [
+        {
+          "loss": 1,
+          "current_greedy_against_peer_law": 0.3063247863247865,
+          "best_unilateral_expected_payoff": 0.3756239316239318,
+          "fraction_people_with_negative_best_response_value": 0.0,
+          "mean_unilateral_regret": 0.0692991452991453,
+          "signal_weighted_mean_expectile_choice_disagreement": 0.13209401709401708,
+          "signal_weighted_actual_choice_disagreement_with_mean": 0.23064102564102565,
+          "signal_weighted_actual_choice_disagreement_with_expectile": 0.13803418803418802
+        },
+        {
+          "loss": 7,
+          "current_greedy_against_peer_law": -0.4108943089430895,
+          "best_unilateral_expected_payoff": -0.3200487804878049,
+          "fraction_people_with_negative_best_response_value": 0.5345528455284553,
+          "mean_unilateral_regret": 0.09084552845528457,
+          "signal_weighted_mean_expectile_choice_disagreement": 0.2515853658536586,
+          "signal_weighted_actual_choice_disagreement_with_mean": 0.336829268292683,
+          "signal_weighted_actual_choice_disagreement_with_expectile": 0.20215447154471547
+        }
+      ],
+      "forward_payoff_parity_error": 3.469446951953614e-17,
+      "checkpoint_sha256": "7053ad39ae5a3c815ec1c9891326e1c26f2d79264a7014f207a9e23ff8868fb5",
+      "analysis_is_posthoc": true
+    },
+    {
+      "cohort": "MAINTENANCE",
+      "k": 4,
+      "rule": "MAJORITY",
+      "peer_epsilon": 0.08,
+      "private_types": [
+        {
+          "loss": 1,
+          "current_greedy_against_peer_law": 0.291182358974359,
+          "best_unilateral_expected_payoff": 0.3583212581196581,
+          "fraction_people_with_negative_best_response_value": 0.0,
+          "mean_unilateral_regret": 0.06713889914529918,
+          "signal_weighted_mean_expectile_choice_disagreement": 0.17863247863247866,
+          "signal_weighted_actual_choice_disagreement_with_mean": 0.23106837606837607,
+          "signal_weighted_actual_choice_disagreement_with_expectile": 0.11918803418803418
+        },
+        {
+          "loss": 7,
+          "current_greedy_against_peer_law": -0.44685112195121973,
+          "best_unilateral_expected_payoff": -0.3544839544715449,
+          "fraction_people_with_negative_best_response_value": 0.8028455284552846,
+          "mean_unilateral_regret": 0.09236716747967479,
+          "signal_weighted_mean_expectile_choice_disagreement": 0.33630081300813014,
+          "signal_weighted_actual_choice_disagreement_with_mean": 0.31524390243902445,
+          "signal_weighted_actual_choice_disagreement_with_expectile": 0.1924390243902439
+        }
+      ],
+      "forward_payoff_parity_error": 1.3877787807814457e-17,
+      "checkpoint_sha256": "7053ad39ae5a3c815ec1c9891326e1c26f2d79264a7014f207a9e23ff8868fb5",
+      "analysis_is_posthoc": true
+    },
+    {
+      "cohort": "MAINTENANCE",
+      "k": 8,
+      "rule": "UNANIMITY",
+      "peer_epsilon": 0.0,
+      "private_types": [
+        {
+          "loss": 1,
+          "current_greedy_against_peer_law": 0.36018295390134536,
+          "best_unilateral_expected_payoff": 0.3619906353363229,
+          "fraction_people_with_negative_best_response_value": 0.0,
+          "mean_unilateral_regret": 0.0018076814349775785,
+          "signal_weighted_mean_expectile_choice_disagreement": 0.003946188340807175,
+          "signal_weighted_actual_choice_disagreement_with_mean": 0.030744394618834082,
+          "signal_weighted_actual_choice_disagreement_with_expectile": 0.026798206278026905
+        },
+        {
+          "loss": 7,
+          "current_greedy_against_peer_law": 0.10681081856000006,
+          "best_unilateral_expected_payoff": 0.2203727985777779,
+          "fraction_people_with_negative_best_response_value": 0.0,
+          "mean_unilateral_regret": 0.11356198001777781,
+          "signal_weighted_mean_expectile_choice_disagreement": 0.4155377777777778,
+          "signal_weighted_actual_choice_disagreement_with_mean": 0.32804444444444447,
+          "signal_weighted_actual_choice_disagreement_with_expectile": 0.16946666666666665
+        }
+      ],
+      "forward_payoff_parity_error": 2.7755575615628914e-17,
+      "checkpoint_sha256": "f2e644ca50cefde982820e850d42c0ad223d11482275fdda1e6cbc6a166559d2",
+      "analysis_is_posthoc": true
+    },
+    {
+      "cohort": "MAINTENANCE",
+      "k": 8,
+      "rule": "UNANIMITY",
+      "peer_epsilon": 0.08,
+      "private_types": [
+        {
+          "loss": 1,
+          "current_greedy_against_peer_law": 0.2798122237058443,
+          "best_unilateral_expected_payoff": 0.2812300364955027,
+          "fraction_people_with_negative_best_response_value": 0.0,
+          "mean_unilateral_regret": 0.0014178127896584188,
+          "signal_weighted_mean_expectile_choice_disagreement": 0.009973094170403589,
+          "signal_weighted_actual_choice_disagreement_with_mean": 0.02001793721973094,
+          "signal_weighted_actual_choice_disagreement_with_expectile": 0.01596412556053812
+        },
+        {
+          "loss": 7,
+          "current_greedy_against_peer_law": 0.05644033957492565,
+          "best_unilateral_expected_payoff": 0.16608730353086235,
+          "fraction_people_with_negative_best_response_value": 0.0,
+          "mean_unilateral_regret": 0.10964696395593669,
+          "signal_weighted_mean_expectile_choice_disagreement": 0.4397688888888889,
+          "signal_weighted_actual_choice_disagreement_with_mean": 0.3323377777777778,
+          "signal_weighted_actual_choice_disagreement_with_expectile": 0.19059555555555555
+        }
+      ],
+      "forward_payoff_parity_error": 5.551115123125783e-17,
+      "checkpoint_sha256": "f2e644ca50cefde982820e850d42c0ad223d11482275fdda1e6cbc6a166559d2",
+      "analysis_is_posthoc": true
+    },
+    {
+      "cohort": "MAINTENANCE",
+      "k": 8,
+      "rule": "MAJORITY",
+      "peer_epsilon": 0.0,
+      "private_types": [
+        {
+          "loss": 1,
+          "current_greedy_against_peer_law": 0.38242499730941715,
+          "best_unilateral_expected_payoff": 0.42186004663677135,
+          "fraction_people_with_negative_best_response_value": 0.0013452914798206279,
+          "mean_unilateral_regret": 0.03943504932735427,
+          "signal_weighted_mean_expectile_choice_disagreement": 0.1564304932735426,
+          "signal_weighted_actual_choice_disagreement_with_mean": 0.24146188340807176,
+          "signal_weighted_actual_choice_disagreement_with_expectile": 0.18795515695067264
+        },
+        {
+          "loss": 7,
+          "current_greedy_against_peer_law": -0.2108694641777778,
+          "best_unilateral_expected_payoff": -0.1380631608888889,
+          "fraction_people_with_negative_best_response_value": 0.44266666666666665,
+          "mean_unilateral_regret": 0.07280630328888893,
+          "signal_weighted_mean_expectile_choice_disagreement": 0.20320000000000002,
+          "signal_weighted_actual_choice_disagreement_with_mean": 0.23575111111111113,
+          "signal_weighted_actual_choice_disagreement_with_expectile": 0.2236977777777778
+        }
+      ],
+      "forward_payoff_parity_error": 4.163336342344337e-17,
+      "checkpoint_sha256": "c0d96e4fd5c68a1a8aafe0b5446cdb246d793d318eb6b77c22ef816f77116293",
+      "analysis_is_posthoc": true
+    },
+    {
+      "cohort": "MAINTENANCE",
+      "k": 8,
+      "rule": "MAJORITY",
+      "peer_epsilon": 0.08,
+      "private_types": [
+        {
+          "loss": 1,
+          "current_greedy_against_peer_law": 0.3519713404550404,
+          "best_unilateral_expected_payoff": 0.3895365808059181,
+          "fraction_people_with_negative_best_response_value": 0.002242152466367713,
+          "mean_unilateral_regret": 0.037565240350877716,
+          "signal_weighted_mean_expectile_choice_disagreement": 0.2687533632286996,
+          "signal_weighted_actual_choice_disagreement_with_mean": 0.2974708520179372,
+          "signal_weighted_actual_choice_disagreement_with_expectile": 0.15994618834080718
+        },
+        {
+          "loss": 7,
+          "current_greedy_against_peer_law": -0.30482080367386716,
+          "best_unilateral_expected_payoff": -0.23934083118588154,
+          "fraction_people_with_negative_best_response_value": 0.5244444444444445,
+          "mean_unilateral_regret": 0.06547997248798565,
+          "signal_weighted_mean_expectile_choice_disagreement": 0.2284266666666667,
+          "signal_weighted_actual_choice_disagreement_with_mean": 0.22145777777777778,
+          "signal_weighted_actual_choice_disagreement_with_expectile": 0.21002666666666667
+        }
+      ],
+      "forward_payoff_parity_error": 4.358492733391728e-17,
+      "checkpoint_sha256": "c0d96e4fd5c68a1a8aafe0b5446cdb246d793d318eb6b77c22ef816f77116293",
+      "analysis_is_posthoc": true
+    },
+    {
+      "cohort": "MAINTENANCE",
+      "k": 12,
+      "rule": "UNANIMITY",
+      "peer_epsilon": 0.0,
+      "private_types": [
+        {
+          "loss": 1,
+          "current_greedy_against_peer_law": 0.35174460291179,
+          "best_unilateral_expected_payoff": 0.3520839180131317,
+          "fraction_people_with_negative_best_response_value": 0.0,
+          "mean_unilateral_regret": 0.00033931510134170713,
+          "signal_weighted_mean_expectile_choice_disagreement": 0.0006280331144733086,
+          "signal_weighted_actual_choice_disagreement_with_mean": 0.032212389380530976,
+          "signal_weighted_actual_choice_disagreement_with_expectile": 0.03158435626605766
+        },
+        {
+          "loss": 7,
+          "current_greedy_against_peer_law": 0.1394812909471304,
+          "best_unilateral_expected_payoff": 0.24191525581987006,
+          "fraction_people_with_negative_best_response_value": 0.0,
+          "mean_unilateral_regret": 0.10243396487273963,
+          "signal_weighted_mean_expectile_choice_disagreement": 0.4003166525303931,
+          "signal_weighted_actual_choice_disagreement_with_mean": 0.33877862595419855,
+          "signal_weighted_actual_choice_disagreement_with_expectile": 0.13575911789652245
+        }
+      ],
+      "forward_payoff_parity_error": 5.551115123125783e-17,
+      "checkpoint_sha256": "d2e86f4090340d4f2d03a6d7f6d4ec67beba28b0590a7a3cc9b57686ec077bd5",
+      "analysis_is_posthoc": true
+    },
+    {
+      "cohort": "MAINTENANCE",
+      "k": 12,
+      "rule": "UNANIMITY",
+      "peer_epsilon": 0.08,
+      "private_types": [
+        {
+          "loss": 1,
+          "current_greedy_against_peer_law": 0.2329886085339756,
+          "best_unilateral_expected_payoff": 0.2332167002711141,
+          "fraction_people_with_negative_best_response_value": 0.0,
+          "mean_unilateral_regret": 0.00022809173713851872,
+          "signal_weighted_mean_expectile_choice_disagreement": 0.0015072794747359407,
+          "signal_weighted_actual_choice_disagreement_with_mean": 0.01860119897230945,
+          "signal_weighted_actual_choice_disagreement_with_expectile": 0.017847559234941482
+        },
+        {
+          "loss": 7,
+          "current_greedy_against_peer_law": 0.06831274715218055,
+          "best_unilateral_expected_payoff": 0.15602311092317236,
+          "fraction_people_with_negative_best_response_value": 0.0,
+          "mean_unilateral_regret": 0.08771036377099184,
+          "signal_weighted_mean_expectile_choice_disagreement": 0.40412779191405157,
+          "signal_weighted_actual_choice_disagreement_with_mean": 0.35098671190274244,
+          "signal_weighted_actual_choice_disagreement_with_expectile": 0.1495843935538592
+        }
+      ],
+      "forward_payoff_parity_error": 1.1102230246251565e-16,
+      "checkpoint_sha256": "d2e86f4090340d4f2d03a6d7f6d4ec67beba28b0590a7a3cc9b57686ec077bd5",
+      "analysis_is_posthoc": true
+    },
+    {
+      "cohort": "MAINTENANCE",
+      "k": 12,
+      "rule": "MAJORITY",
+      "peer_epsilon": 0.0,
+      "private_types": [
+        {
+          "loss": 1,
+          "current_greedy_against_peer_law": 0.4140022517111049,
+          "best_unilateral_expected_payoff": 0.4440314122713562,
+          "fraction_people_with_negative_best_response_value": 0.004282043962318013,
+          "mean_unilateral_regret": 0.03002916056025122,
+          "signal_weighted_mean_expectile_choice_disagreement": 0.1561975449614616,
+          "signal_weighted_actual_choice_disagreement_with_mean": 0.25784755923494146,
+          "signal_weighted_actual_choice_disagreement_with_expectile": 0.2172537824721667
+        },
+        {
+          "loss": 7,
+          "current_greedy_against_peer_law": -0.11922690443471877,
+          "best_unilateral_expected_payoff": -0.0379725905352559,
+          "fraction_people_with_negative_best_response_value": 0.27339553293751767,
+          "mean_unilateral_regret": 0.08125431389946287,
+          "signal_weighted_mean_expectile_choice_disagreement": 0.20010178117048347,
+          "signal_weighted_actual_choice_disagreement_with_mean": 0.25804353972292904,
+          "signal_weighted_actual_choice_disagreement_with_expectile": 0.26521345773254174
+        }
+      ],
+      "forward_payoff_parity_error": 5.551115123125783e-17,
+      "checkpoint_sha256": "503651b1ee6cad8574d3b5432272cf07c06431cf5346020dd9446a7d8c48cf07",
+      "analysis_is_posthoc": true
+    },
+    {
+      "cohort": "MAINTENANCE",
+      "k": 12,
+      "rule": "MAJORITY",
+      "peer_epsilon": 0.08,
+      "private_types": [
+        {
+          "loss": 1,
+          "current_greedy_against_peer_law": 0.3810146375752268,
+          "best_unilateral_expected_payoff": 0.41059669368867846,
+          "fraction_people_with_negative_best_response_value": 0.003711104767342278,
+          "mean_unilateral_regret": 0.029582056113451646,
+          "signal_weighted_mean_expectile_choice_disagreement": 0.246188980873537,
+          "signal_weighted_actual_choice_disagreement_with_mean": 0.2929831572937482,
+          "signal_weighted_actual_choice_disagreement_with_expectile": 0.20859834427633459
+        },
+        {
+          "loss": 7,
+          "current_greedy_against_peer_law": -0.22002400635078428,
+          "best_unilateral_expected_payoff": -0.1426097301252919,
+          "fraction_people_with_negative_best_response_value": 0.42324003392705684,
+          "mean_unilateral_regret": 0.07741427622549238,
+          "signal_weighted_mean_expectile_choice_disagreement": 0.20496465931580438,
+          "signal_weighted_actual_choice_disagreement_with_mean": 0.25418150975402887,
+          "signal_weighted_actual_choice_disagreement_with_expectile": 0.2553124116482895
+        }
+      ],
+      "forward_payoff_parity_error": 8.326672684688674e-17,
+      "checkpoint_sha256": "503651b1ee6cad8574d3b5432272cf07c06431cf5346020dd9446a7d8c48cf07",
+      "analysis_is_posthoc": true
+    },
+    {
+      "cohort": "FORMATION",
+      "k": 4,
+      "rule": "UNANIMITY",
+      "peer_epsilon": 0.0,
+      "private_types": [
+        {
+          "loss": 1,
+          "current_greedy_against_peer_law": 0.35320869565217405,
+          "best_unilateral_expected_payoff": 0.3964695652173915,
+          "fraction_people_with_negative_best_response_value": 0.0,
+          "mean_unilateral_regret": 0.04326086956521739,
+          "signal_weighted_mean_expectile_choice_disagreement": 0.09517391304347826,
+          "signal_weighted_actual_choice_disagreement_with_mean": 0.09571739130434782,
+          "signal_weighted_actual_choice_disagreement_with_expectile": 0.0005434782608695652
+        },
+        {
+          "loss": 7,
+          "current_greedy_against_peer_law": 0.02828480000000006,
+          "best_unilateral_expected_payoff": 0.15297280000000013,
+          "fraction_people_with_negative_best_response_value": 0.0,
+          "mean_unilateral_regret": 0.12468800000000005,
+          "signal_weighted_mean_expectile_choice_disagreement": 0.4916800000000001,
+          "signal_weighted_actual_choice_disagreement_with_mean": 0.3730000000000001,
+          "signal_weighted_actual_choice_disagreement_with_expectile": 0.12244
+        }
+      ],
+      "forward_payoff_parity_error": 2.7755575615628914e-17,
+      "checkpoint_sha256": "5f3f1edc7039928f11d13ffe5046af5176637f96afd572e0eef76bc16f05af07",
+      "analysis_is_posthoc": true
+    },
+    {
+      "cohort": "FORMATION",
+      "k": 4,
+      "rule": "UNANIMITY",
+      "peer_epsilon": 0.08,
+      "private_types": [
+        {
+          "loss": 1,
+          "current_greedy_against_peer_law": 0.3204514921739133,
+          "best_unilateral_expected_payoff": 0.36032140521739153,
+          "fraction_people_with_negative_best_response_value": 0.0,
+          "mean_unilateral_regret": 0.03986991304347828,
+          "signal_weighted_mean_expectile_choice_disagreement": 0.09565217391304348,
+          "signal_weighted_actual_choice_disagreement_with_mean": 0.09578260869565218,
+          "signal_weighted_actual_choice_disagreement_with_expectile": 0.0010869565217391304
+        },
+        {
+          "loss": 7,
+          "current_greedy_against_peer_law": 0.0014724787200000647,
+          "best_unilateral_expected_payoff": 0.13402186752000012,
+          "fraction_people_with_negative_best_response_value": 0.0,
+          "mean_unilateral_regret": 0.13254938880000003,
+          "signal_weighted_mean_expectile_choice_disagreement": 0.4928000000000001,
+          "signal_weighted_actual_choice_disagreement_with_mean": 0.3720000000000001,
+          "signal_weighted_actual_choice_disagreement_with_expectile": 0.12256
+        }
+      ],
+      "forward_payoff_parity_error": 8.326672684688674e-17,
+      "checkpoint_sha256": "5f3f1edc7039928f11d13ffe5046af5176637f96afd572e0eef76bc16f05af07",
+      "analysis_is_posthoc": true
+    },
+    {
+      "cohort": "FORMATION",
+      "k": 4,
+      "rule": "MAJORITY",
+      "peer_epsilon": 0.0,
+      "private_types": [
+        {
+          "loss": 1,
+          "current_greedy_against_peer_law": 0.2973949579831933,
+          "best_unilateral_expected_payoff": 0.38215126050420184,
+          "fraction_people_with_negative_best_response_value": 0.0,
+          "mean_unilateral_regret": 0.08475630252100841,
+          "signal_weighted_mean_expectile_choice_disagreement": 0.15436974789915966,
+          "signal_weighted_actual_choice_disagreement_with_mean": 0.26228991596638657,
+          "signal_weighted_actual_choice_disagreement_with_expectile": 0.14581932773109244
+        },
+        {
+          "loss": 7,
+          "current_greedy_against_peer_law": -0.46470909090909096,
+          "best_unilateral_expected_payoff": -0.39480165289256197,
+          "fraction_people_with_negative_best_response_value": 0.5464876033057852,
+          "mean_unilateral_regret": 0.06990743801652893,
+          "signal_weighted_mean_expectile_choice_disagreement": 0.24301652892561984,
+          "signal_weighted_actual_choice_disagreement_with_mean": 0.31964876033057854,
+          "signal_weighted_actual_choice_disagreement_with_expectile": 0.22274793388429753
+        }
+      ],
+      "forward_payoff_parity_error": 5.551115123125783e-17,
+      "checkpoint_sha256": "6a411f7673c8acd61411e4deba2a582510cfaa68d98d314a1a2e06bf9bc89ad3",
+      "analysis_is_posthoc": true
+    },
+    {
+      "cohort": "FORMATION",
+      "k": 4,
+      "rule": "MAJORITY",
+      "peer_epsilon": 0.08,
+      "private_types": [
+        {
+          "loss": 1,
+          "current_greedy_against_peer_law": 0.2840512268907563,
+          "best_unilateral_expected_payoff": 0.3648242554621849,
+          "fraction_people_with_negative_best_response_value": 0.0,
+          "mean_unilateral_regret": 0.08077302857142861,
+          "signal_weighted_mean_expectile_choice_disagreement": 0.20012605042016807,
+          "signal_weighted_actual_choice_disagreement_with_mean": 0.25428571428571434,
+          "signal_weighted_actual_choice_disagreement_with_expectile": 0.11794117647058823
+        },
+        {
+          "loss": 7,
+          "current_greedy_against_peer_law": -0.4935926505785126,
+          "best_unilateral_expected_payoff": -0.4201197884297523,
+          "fraction_people_with_negative_best_response_value": 0.7933884297520661,
+          "mean_unilateral_regret": 0.07347286214876031,
+          "signal_weighted_mean_expectile_choice_disagreement": 0.34454545454545465,
+          "signal_weighted_actual_choice_disagreement_with_mean": 0.280702479338843,
+          "signal_weighted_actual_choice_disagreement_with_expectile": 0.21169421487603307
+        }
+      ],
+      "forward_payoff_parity_error": 5.551115123125783e-17,
+      "checkpoint_sha256": "6a411f7673c8acd61411e4deba2a582510cfaa68d98d314a1a2e06bf9bc89ad3",
+      "analysis_is_posthoc": true
+    },
+    {
+      "cohort": "FORMATION",
+      "k": 8,
+      "rule": "UNANIMITY",
+      "peer_epsilon": 0.0,
+      "private_types": [
+        {
+          "loss": 1,
+          "current_greedy_against_peer_law": 0.35781550876548884,
+          "best_unilateral_expected_payoff": 0.3611688838916935,
+          "fraction_people_with_negative_best_response_value": 0.0,
+          "mean_unilateral_regret": 0.0033533751262046813,
+          "signal_weighted_mean_expectile_choice_disagreement": 0.015217989903625518,
+          "signal_weighted_actual_choice_disagreement_with_mean": 0.03728315741165673,
+          "signal_weighted_actual_choice_disagreement_with_expectile": 0.0352638825149151
+        },
+        {
+          "loss": 7,
+          "current_greedy_against_peer_law": 0.08889361738374627,
+          "best_unilateral_expected_payoff": 0.22175989430682322,
+          "fraction_people_with_negative_best_response_value": 0.0,
+          "mean_unilateral_regret": 0.13286627692307695,
+          "signal_weighted_mean_expectile_choice_disagreement": 0.44286831812255545,
+          "signal_weighted_actual_choice_disagreement_with_mean": 0.33556714471968707,
+          "signal_weighted_actual_choice_disagreement_with_expectile": 0.15872229465449805
+        }
+      ],
+      "forward_payoff_parity_error": 0.0,
+      "checkpoint_sha256": "8ce08482bfd2f4b42b58a3d1ee12aca1c7776a46438405d93eb06b3f56a132b0",
+      "analysis_is_posthoc": true
+    },
+    {
+      "cohort": "FORMATION",
+      "k": 8,
+      "rule": "UNANIMITY",
+      "peer_epsilon": 0.08,
+      "private_types": [
+        {
+          "loss": 1,
+          "current_greedy_against_peer_law": 0.2778330590629667,
+          "best_unilateral_expected_payoff": 0.2804627874481592,
+          "fraction_people_with_negative_best_response_value": 0.0,
+          "mean_unilateral_regret": 0.0026297283851924465,
+          "signal_weighted_mean_expectile_choice_disagreement": 0.015621844882973841,
+          "signal_weighted_actual_choice_disagreement_with_mean": 0.045947682423129875,
+          "signal_weighted_actual_choice_disagreement_with_expectile": 0.044332262505736575
+        },
+        {
+          "loss": 7,
+          "current_greedy_against_peer_law": 0.040987319942255004,
+          "best_unilateral_expected_payoff": 0.167071855320607,
+          "fraction_people_with_negative_best_response_value": 0.0,
+          "mean_unilateral_regret": 0.126084535378352,
+          "signal_weighted_mean_expectile_choice_disagreement": 0.44822251195132556,
+          "signal_weighted_actual_choice_disagreement_with_mean": 0.3389048239895697,
+          "signal_weighted_actual_choice_disagreement_with_expectile": 0.16741416775315082
+        }
+      ],
+      "forward_payoff_parity_error": 2.7755575615628914e-17,
+      "checkpoint_sha256": "8ce08482bfd2f4b42b58a3d1ee12aca1c7776a46438405d93eb06b3f56a132b0",
+      "analysis_is_posthoc": true
+    },
+    {
+      "cohort": "FORMATION",
+      "k": 8,
+      "rule": "MAJORITY",
+      "peer_epsilon": 0.0,
+      "private_types": [
+        {
+          "loss": 1,
+          "current_greedy_against_peer_law": 0.38327746146872166,
+          "best_unilateral_expected_payoff": 0.42278826473254766,
+          "fraction_people_with_negative_best_response_value": 0.0013599274705349048,
+          "mean_unilateral_regret": 0.03951080326382595,
+          "signal_weighted_mean_expectile_choice_disagreement": 0.1642973708068903,
+          "signal_weighted_actual_choice_disagreement_with_mean": 0.24593834995466907,
+          "signal_weighted_actual_choice_disagreement_with_expectile": 0.1859020852221215
+        },
+        {
+          "loss": 7,
+          "current_greedy_against_peer_law": -0.2558118445030783,
+          "best_unilateral_expected_payoff": -0.18021851187335095,
+          "fraction_people_with_negative_best_response_value": 0.4665787159190853,
+          "mean_unilateral_regret": 0.07559333262972738,
+          "signal_weighted_mean_expectile_choice_disagreement": 0.19813544415127532,
+          "signal_weighted_actual_choice_disagreement_with_mean": 0.2515831134564644,
+          "signal_weighted_actual_choice_disagreement_with_expectile": 0.21967458223394898
+        }
+      ],
+      "forward_payoff_parity_error": 2.0816681711721685e-17,
+      "checkpoint_sha256": "c580680b39438f0385b5a038fbe052eeef0c275408c9c28e2a414e3d9237427a",
+      "analysis_is_posthoc": true
+    },
+    {
+      "cohort": "FORMATION",
+      "k": 8,
+      "rule": "MAJORITY",
+      "peer_epsilon": 0.08,
+      "private_types": [
+        {
+          "loss": 1,
+          "current_greedy_against_peer_law": 0.35209839346344146,
+          "best_unilateral_expected_payoff": 0.39013843294887185,
+          "fraction_people_with_negative_best_response_value": 0.0013599274705349048,
+          "mean_unilateral_regret": 0.038040039485430374,
+          "signal_weighted_mean_expectile_choice_disagreement": 0.26184950135992746,
+          "signal_weighted_actual_choice_disagreement_with_mean": 0.29842248413417954,
+          "signal_weighted_actual_choice_disagreement_with_expectile": 0.16226654578422486
+        },
+        {
+          "loss": 7,
+          "current_greedy_against_peer_law": -0.34895031173166174,
+          "best_unilateral_expected_payoff": -0.27797570887373885,
+          "fraction_people_with_negative_best_response_value": 0.5356200527704486,
+          "mean_unilateral_regret": 0.07097460285792291,
+          "signal_weighted_mean_expectile_choice_disagreement": 0.22481970096745826,
+          "signal_weighted_actual_choice_disagreement_with_mean": 0.23583113456464377,
+          "signal_weighted_actual_choice_disagreement_with_expectile": 0.21097625329815306
+        }
+      ],
+      "forward_payoff_parity_error": 6.938893903907228e-17,
+      "checkpoint_sha256": "c580680b39438f0385b5a038fbe052eeef0c275408c9c28e2a414e3d9237427a",
+      "analysis_is_posthoc": true
+    },
+    {
+      "cohort": "FORMATION",
+      "k": 12,
+      "rule": "UNANIMITY",
+      "peer_epsilon": 0.0,
+      "private_types": [
+        {
+          "loss": 1,
+          "current_greedy_against_peer_law": 0.21630779523525087,
+          "best_unilateral_expected_payoff": 0.21765025556146225,
+          "fraction_people_with_negative_best_response_value": 0.0,
+          "mean_unilateral_regret": 0.0013424603262113914,
+          "signal_weighted_mean_expectile_choice_disagreement": 0.021558515160102012,
+          "signal_weighted_actual_choice_disagreement_with_mean": 0.29958628506659113,
+          "signal_weighted_actual_choice_disagreement_with_expectile": 0.30183054689713795
+        },
+        {
+          "loss": 7,
+          "current_greedy_against_peer_law": 0.07318617996604562,
+          "best_unilateral_expected_payoff": 0.1462509714462228,
+          "fraction_people_with_negative_best_response_value": 0.0,
+          "mean_unilateral_regret": 0.0730647914801772,
+          "signal_weighted_mean_expectile_choice_disagreement": 0.28110509826260327,
+          "signal_weighted_actual_choice_disagreement_with_mean": 0.4863913414981487,
+          "signal_weighted_actual_choice_disagreement_with_expectile": 0.3636798632868129
+        }
+      ],
+      "forward_payoff_parity_error": 2.7755575615628914e-17,
+      "checkpoint_sha256": "72b6b542a9ac38e5d4b5fa0bd45cc13e43c482d576ee5220742bc09ccb70702e",
+      "analysis_is_posthoc": true
+    },
+    {
+      "cohort": "FORMATION",
+      "k": 12,
+      "rule": "UNANIMITY",
+      "peer_epsilon": 0.08,
+      "private_types": [
+        {
+          "loss": 1,
+          "current_greedy_against_peer_law": 0.1432098178441065,
+          "best_unilateral_expected_payoff": 0.1441091415916568,
+          "fraction_people_with_negative_best_response_value": 0.0,
+          "mean_unilateral_regret": 0.0008993237475503085,
+          "signal_weighted_mean_expectile_choice_disagreement": 0.021558515160102012,
+          "signal_weighted_actual_choice_disagreement_with_mean": 0.29958628506659113,
+          "signal_weighted_actual_choice_disagreement_with_expectile": 0.30183054689713795
+        },
+        {
+          "loss": 7,
+          "current_greedy_against_peer_law": 0.03305224912457865,
+          "best_unilateral_expected_payoff": 0.09421019879129178,
+          "fraction_people_with_negative_best_response_value": 0.0,
+          "mean_unilateral_regret": 0.06115794966671313,
+          "signal_weighted_mean_expectile_choice_disagreement": 0.28110509826260327,
+          "signal_weighted_actual_choice_disagreement_with_mean": 0.4863913414981487,
+          "signal_weighted_actual_choice_disagreement_with_expectile": 0.3636798632868129
+        }
+      ],
+      "forward_payoff_parity_error": 6.938893903907228e-17,
+      "checkpoint_sha256": "72b6b542a9ac38e5d4b5fa0bd45cc13e43c482d576ee5220742bc09ccb70702e",
+      "analysis_is_posthoc": true
+    },
+    {
+      "cohort": "FORMATION",
+      "k": 12,
+      "rule": "MAJORITY",
+      "peer_epsilon": 0.0,
+      "private_types": [
+        {
+          "loss": 1,
+          "current_greedy_against_peer_law": 0.4142398522294492,
+          "best_unilateral_expected_payoff": 0.44467115035352267,
+          "fraction_people_with_negative_best_response_value": 0.001669449081803005,
+          "mean_unilateral_regret": 0.030431298124073462,
+          "signal_weighted_mean_expectile_choice_disagreement": 0.16747913188647748,
+          "signal_weighted_actual_choice_disagreement_with_mean": 0.26232053422370616,
+          "signal_weighted_actual_choice_disagreement_with_expectile": 0.23186978297161936
+        },
+        {
+          "loss": 7,
+          "current_greedy_against_peer_law": -0.14600022211528743,
+          "best_unilateral_expected_payoff": -0.06344426548299484,
+          "fraction_people_with_negative_best_response_value": 0.3044109112013929,
+          "mean_unilateral_regret": 0.08255595663229255,
+          "signal_weighted_mean_expectile_choice_disagreement": 0.2053279164248404,
+          "signal_weighted_actual_choice_disagreement_with_mean": 0.25534532791642484,
+          "signal_weighted_actual_choice_disagreement_with_expectile": 0.2590713871154962
+        }
+      ],
+      "forward_payoff_parity_error": 8.326672684688674e-17,
+      "checkpoint_sha256": "25f0880ce66b99e7d109c1037b335892ce43e2cfa000c10e36b622c9ef90b0fa",
+      "analysis_is_posthoc": true
+    },
+    {
+      "cohort": "FORMATION",
+      "k": 12,
+      "rule": "MAJORITY",
+      "peer_epsilon": 0.08,
+      "private_types": [
+        {
+          "loss": 1,
+          "current_greedy_against_peer_law": 0.3813144376168232,
+          "best_unilateral_expected_payoff": 0.4115656317862908,
+          "fraction_people_with_negative_best_response_value": 0.001669449081803005,
+          "mean_unilateral_regret": 0.030251194169467577,
+          "signal_weighted_mean_expectile_choice_disagreement": 0.2650528658875904,
+          "signal_weighted_actual_choice_disagreement_with_mean": 0.302771285475793,
+          "signal_weighted_actual_choice_disagreement_with_expectile": 0.2226488592097941
+        },
+        {
+          "loss": 7,
+          "current_greedy_against_peer_law": -0.24514299993698177,
+          "best_unilateral_expected_payoff": -0.16577095131989136,
+          "fraction_people_with_negative_best_response_value": 0.4550203134068485,
+          "mean_unilateral_regret": 0.07937204861709043,
+          "signal_weighted_mean_expectile_choice_disagreement": 0.2187463726059199,
+          "signal_weighted_actual_choice_disagreement_with_mean": 0.2514799767846779,
+          "signal_weighted_actual_choice_disagreement_with_expectile": 0.2478467788740569
+        }
+      ],
+      "forward_payoff_parity_error": 7.632783294297951e-17,
+      "checkpoint_sha256": "25f0880ce66b99e7d109c1037b335892ce43e2cfa000c10e36b622c9ef90b0fa",
+      "analysis_is_posthoc": true
+    }
+  ],
+  "CT2_historical": 61,
+  "new_branch_score": null,
+  "N2": 0,
+  "N3": 0
+}
