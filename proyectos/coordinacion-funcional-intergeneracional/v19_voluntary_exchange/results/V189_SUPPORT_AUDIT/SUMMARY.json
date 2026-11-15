@@ -1,0 +1,293 @@
+{
+  "posthoc_audit": true,
+  "no_new_neural_training": true,
+  "number_expected_accuracy_checks": 9600,
+  "all_capacity_checks_passed": true,
+  "max_residual": -0.0010405613902207955,
+  "final_history_bounds": [
+    {
+      "seed": 188115,
+      "family": "FIXED_PROTOCOL",
+      "symbols": 31,
+      "train": 1.0,
+      "test": 0.9878048896789551,
+      "test_bound_given_train": 1.0
+    },
+    {
+      "seed": 188116,
+      "family": "FIXED_PROTOCOL",
+      "symbols": 31,
+      "train": 1.0,
+      "test": 0.99303138256073,
+      "test_bound_given_train": 1.0
+    },
+    {
+      "seed": 188117,
+      "family": "FIXED_PROTOCOL",
+      "symbols": 31,
+      "train": 1.0,
+      "test": 0.9878048896789551,
+      "test_bound_given_train": 1.0
+    },
+    {
+      "seed": 188118,
+      "family": "FIXED_PROTOCOL",
+      "symbols": 31,
+      "train": 1.0,
+      "test": 0.9912891983985901,
+      "test_bound_given_train": 1.0
+    },
+    {
+      "seed": 188119,
+      "family": "FIXED_PROTOCOL",
+      "symbols": 31,
+      "train": 1.0,
+      "test": 0.989547073841095,
+      "test_bound_given_train": 1.0
+    },
+    {
+      "seed": 188120,
+      "family": "FIXED_PROTOCOL",
+      "symbols": 31,
+      "train": 1.0,
+      "test": 0.99303138256073,
+      "test_bound_given_train": 1.0
+    },
+    {
+      "seed": 188121,
+      "family": "FIXED_PROTOCOL",
+      "symbols": 31,
+      "train": 1.0,
+      "test": 0.9912891983985901,
+      "test_bound_given_train": 1.0
+    },
+    {
+      "seed": 188122,
+      "family": "FIXED_PROTOCOL",
+      "symbols": 31,
+      "train": 1.0,
+      "test": 0.9947735071182251,
+      "test_bound_given_train": 1.0
+    },
+    {
+      "seed": 188115,
+      "family": "REINFORCE",
+      "symbols": 24,
+      "train": 0.9250646233558655,
+      "test": 0.24216027557849884,
+      "test_bound_given_train": 0.6724738515004879
+    },
+    {
+      "seed": 188116,
+      "family": "REINFORCE",
+      "symbols": 27,
+      "train": 0.9431524872779846,
+      "test": 0.47909408807754517,
+      "test_bound_given_train": 0.822299629657526
+    },
+    {
+      "seed": 188117,
+      "family": "REINFORCE",
+      "symbols": 25,
+      "train": 0.9224806427955627,
+      "test": 0.2665505111217499,
+      "test_bound_given_train": 0.7282229812510753
+    },
+    {
+      "seed": 188118,
+      "family": "REINFORCE",
+      "symbols": 25,
+      "train": 0.9379845261573792,
+      "test": 0.3414634168148041,
+      "test_bound_given_train": 0.7177700145942408
+    },
+    {
+      "seed": 188119,
+      "family": "REINFORCE",
+      "symbols": 26,
+      "train": 0.9405685067176819,
+      "test": 0.3658536672592163,
+      "test_bound_given_train": 0.7700348221258835
+    },
+    {
+      "seed": 188120,
+      "family": "REINFORCE",
+      "symbols": 26,
+      "train": 0.9379845261573792,
+      "test": 0.33101046085357666,
+      "test_bound_given_train": 0.7717769832353558
+    },
+    {
+      "seed": 188121,
+      "family": "REINFORCE",
+      "symbols": 22,
+      "train": 0.9018087983131409,
+      "test": 0.2229965180158615,
+      "test_bound_given_train": 0.5801393642035095
+    },
+    {
+      "seed": 188122,
+      "family": "REINFORCE",
+      "symbols": 25,
+      "train": 0.9173126816749573,
+      "test": 0.33275261521339417,
+      "test_bound_given_train": 0.7317073034700201
+    },
+    {
+      "seed": 188115,
+      "family": "URN_LIMITED",
+      "symbols": 23,
+      "train": 0.9018087983131409,
+      "test": 0.026132404804229736,
+      "test_bound_given_train": 0.6341463328446245
+    },
+    {
+      "seed": 188116,
+      "family": "URN_LIMITED",
+      "symbols": 23,
+      "train": 0.881136953830719,
+      "test": 0.05923344939947128,
+      "test_bound_given_train": 0.6480836217204038
+    },
+    {
+      "seed": 188117,
+      "family": "URN_LIMITED",
+      "symbols": 22,
+      "train": 0.8966408371925354,
+      "test": 0.019163763150572777,
+      "test_bound_given_train": 0.5836236864224543
+    },
+    {
+      "seed": 188118,
+      "family": "URN_LIMITED",
+      "symbols": 22,
+      "train": 0.8785529732704163,
+      "test": 0.05226480960845947,
+      "test_bound_given_train": 0.5958188141887611
+    },
+    {
+      "seed": 188119,
+      "family": "URN_LIMITED",
+      "symbols": 24,
+      "train": 0.9069767594337463,
+      "test": 0.04355400800704956,
+      "test_bound_given_train": 0.6846689792667947
+    },
+    {
+      "seed": 188120,
+      "family": "URN_LIMITED",
+      "symbols": 21,
+      "train": 0.8475452661514282,
+      "test": 0.040069688111543655,
+      "test_bound_given_train": 0.5627177386749082
+    },
+    {
+      "seed": 188121,
+      "family": "URN_LIMITED",
+      "symbols": 23,
+      "train": 0.8759689927101135,
+      "test": 0.05574912950396538,
+      "test_bound_given_train": 0.6515679439393486
+    },
+    {
+      "seed": 188122,
+      "family": "URN_LIMITED",
+      "symbols": 25,
+      "train": 0.9095607399940491,
+      "test": 0.04355400800704956,
+      "test_bound_given_train": 0.7369337867984374
+    },
+    {
+      "seed": 188115,
+      "family": "URN_PURE",
+      "symbols": 27,
+      "train": 0.9534884095191956,
+      "test": 0.24390244483947754,
+      "test_bound_given_train": 0.8153309852196364
+    },
+    {
+      "seed": 188116,
+      "family": "URN_PURE",
+      "symbols": 26,
+      "train": 0.9534884095191956,
+      "test": 0.16202090680599213,
+      "test_bound_given_train": 0.7613240165785214
+    },
+    {
+      "seed": 188117,
+      "family": "URN_PURE",
+      "symbols": 24,
+      "train": 0.9276486039161682,
+      "test": 0.23344947397708893,
+      "test_bound_given_train": 0.6707316903910155
+    },
+    {
+      "seed": 188118,
+      "family": "URN_PURE",
+      "symbols": 21,
+      "train": 0.8966408371925354,
+      "test": 0.11846689879894257,
+      "test_bound_given_train": 0.5296167177813393
+    },
+    {
+      "seed": 188119,
+      "family": "URN_PURE",
+      "symbols": 25,
+      "train": 0.91989666223526,
+      "test": 0.12891985476016998,
+      "test_bound_given_train": 0.7299651423605477
+    },
+    {
+      "seed": 188120,
+      "family": "URN_PURE",
+      "symbols": 24,
+      "train": 0.9147287011146545,
+      "test": 0.17421603202819824,
+      "test_bound_given_train": 0.6794424959383775
+    },
+    {
+      "seed": 188121,
+      "family": "URN_PURE",
+      "symbols": 24,
+      "train": 0.9250646233558655,
+      "test": 0.15505225956439972,
+      "test_bound_given_train": 0.6724738515004879
+    },
+    {
+      "seed": 188122,
+      "family": "URN_PURE",
+      "symbols": 26,
+      "train": 0.9405685067176819,
+      "test": 0.221254363656044,
+      "test_bound_given_train": 0.7700348221258835
+    }
+  ],
+  "controlled_supports": {
+    "P": 31,
+    "train_pairs": 372,
+    "test_pairs": 589,
+    "both_marginal_degrees": 12,
+    "both_symmetric": true,
+    "low_chromatic_number": 16,
+    "low_upper_certificate": "explicit 16-coloring",
+    "low_lower_certificate": "no independent triple",
+    "high_chromatic_number": 31,
+    "high_certificate": "complete confusability graph",
+    "high_construction_seed": 189001,
+    "selection_uses_neural_outcomes": false,
+    "low_oracle_bounds": {
+      "active_symbols": 16,
+      "maximum_train_correct": 372,
+      "maximum_train_accuracy": 1.0,
+      "unconditional_test_accuracy_bound": 0.8217317487266553,
+      "test_accuracy_bound_at_given_train_correct": 0.21052631578947367,
+      "given_train_correct": 372.0
+    },
+    "oracle_dictionary_learned_by_agents": false
+  },
+  "theoretical_scope": "Known information/graph constraints; new controlled dataset, not an original theorem",
+  "CT2_historical": 61,
+  "new_branch_score": null,
+  "N2": 0,
+  "N3": 0
+}

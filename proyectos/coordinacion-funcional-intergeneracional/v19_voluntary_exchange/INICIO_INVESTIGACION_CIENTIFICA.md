@@ -1,3 +1,11 @@
+# Estado actualizado V190 — 15/11/2026
+
+V190 no produjo ninguna entrada en memorización perfecta con código comprimido entre las ocho historias LOW. No apareció el régimen previo necesario para estudiar la transición registrada. Se cierra esta arquitectura mínima —emisor tabular con feedback binario y receptor neuronal— como vía de identificación de grokking colectivo; no se concluye que el fenómeno sea imposible con otros agentes o tareas. En las 16 historias privadas V190, el receptor ya alcanza el techo de entrenamiento del código actual y el emisor no obtiene mejora inmediata cambiando una señal frente a ese receptor fijo. El sondeo restringe el cuello de botella a una convención compatible y su posible reorganización; no establece un equilibrio global.
+
+Informe: results/INFORME_V187_V190_20261115.md. Manuscrito: docs/TFM_MANUSCRITO_TRABAJO_V190.md. Reproducción: REPRODUCE_V187_V190.md. CT2 histórico61, nueva rama sin puntuación; N2=N3=0.
+
+---
+
 # Estado actual V186
 
 Objetivo activo,CT2histórico61sinincremento. Resultados y límites: [handoffV186](handoff_codex/ESTADO_20261115_V186.md). Manuscrito [V186](docs/TFM_MANUSCRITO_TRABAJO_V186.md).

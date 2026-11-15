@@ -2,7 +2,7 @@
   "project": "Cooperación y división del trabajo MARL/TFM",
   "review_status": "exploratory-scoping; scope of primary-source review specified per entry; not systematic",
   "review_date": "2026-11-15",
-  "number_verified": 94,
+  "number_verified": 96,
   "pending": [],
   "references": [
     {
@@ -1499,11 +1499,46 @@
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5412673/",
       "contribution": "Comparative models of reinforcement, forgetting and bias against ambiguity.",
       "novelty_constraint": "A generic ambiguity/forgetting explanation cannot be claimed new; use these as competent rivals.",
-      "verification": "primary abstract and relevant reinforcement/information-loss sections; full review pending",
+      "verification": "primary abstract, methods3.1-4.1 and discussion relevant to reinforcement, limited memory and inhibition; not complete full-text review",
       "theme": "COMMUNICATION_AND_LEARNING",
       "full_text_reviewed": false,
       "checked_on": "2026-11-15",
-      "our_experiments": "V185–V186 and prospective strong-rival audit"
+      "our_experiments": "V185–V186 and prospective strong-rival audit",
+      "original_code_availability": "Published github.com/matspike/Cogscisignaling returned404 through website, connector and public API on2026-11-15. V187 is an independent methods reimplementation with explicit empty-urn fallback; original code not executed."
+    },
+    {
+      "id": "Lyle2026GrokkingNonstationarity",
+      "authors": "Lyle, Clare; Sokar, Ghada; György, András; Pascanu, Razvan",
+      "year": 2026,
+      "title": "What can grokking teach us about learning under non-stationarity?",
+      "container": "Proceedings of the 4th Conference on Lifelong Learning Agents, PMLR330:635–656",
+      "doi": null,
+      "url": "https://proceedings.mlr.press/v330/lyle26a.html",
+      "theme": "GROKKING_PLASTICITY",
+      "contribution": "Relates delayed generalization and primacy bias to feature learning; proposes effective-learning-rate re-warming.",
+      "our_experiments": "V185–V190",
+      "novelty_constraint": "Generic links between nonstationarity, feature plasticity and grokking are prior work; a private-interaction result needs a narrower discriminating prediction.",
+      "verification": "primary PMLR metadata and downloaded primary PDF main text sections1–7, pp1–10; appendices not fully reviewed",
+      "checked_on": "2026-11-15",
+      "full_text_reviewed": false,
+      "bibliographic_discrepancy": "PMLR records 2026 and author order Lyle,Sokar,Gyorgy,Pascanu; PDF header says CoLLAs2025 and lists Lyle,Sokar,Pascanu,Gyorgy. Catalogue follows PMLR without silently reconciling the discrepancy.",
+      "source_manifest": "literatura/original_code/Lyle2026/SOURCE_MANIFEST.json"
+    },
+    {
+      "id": "CharpenayLeTreustRoumy2024",
+      "authors": "Charpenay, Nicolas; Le Treust, Maël; Roumy, Aline",
+      "year": 2024,
+      "title": "Side Information Design in Zero-Error Coding for Computing",
+      "container": "Entropy26(4):338",
+      "doi": "10.3390/e26040338",
+      "url": "https://www.mdpi.com/1099-4300/26/4/338",
+      "theme": "COMMUNICATION_INFORMATION",
+      "contribution": "Zero-error functional communication, side information, characteristic graphs and graph colorings.",
+      "our_experiments": "V189,V189B,V190",
+      "novelty_constraint": "Confusability/coloring constraints are classical. Our finite counting bound and designed support are not claimed as new information-theoretic theorems.",
+      "verification": "primary publisher abstract/introduction, definitions1–6 and characteristic-graph/coloring equivalence in section3.1; not full paper",
+      "checked_on": "2026-11-15",
+      "full_text_reviewed": false
     }
   ]
 }

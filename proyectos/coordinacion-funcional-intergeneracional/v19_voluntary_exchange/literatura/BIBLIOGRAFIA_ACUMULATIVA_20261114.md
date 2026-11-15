@@ -859,3 +859,15 @@ Evolution and learning of signaling conventions with aligned or conflicting inte
 
 Comparative models of reinforcement, forgetting and bias against ambiguity. Restricción: A generic ambiguity/forgetting explanation cannot be claimed new; use these as competent rivals. Alcance: primary abstract and relevant reinforcement/information-loss sections; full review pending.
 
+
+## Antecedentes contrastados en V187–V190
+
+**Lyle, Clare; Sokar, Ghada; György, András; Pascanu, Razvan (2026).** [What can grokking teach us about learning under non-stationarity?](https://proceedings.mlr.press/v330/lyle26a.html). Proceedings of the 4th Conference on Lifelong Learning Agents, PMLR330:635–656.
+
+Relates delayed generalization and primacy bias to feature learning; proposes effective-learning-rate re-warming. Restricción: Generic links between nonstationarity, feature plasticity and grokking are prior work; a private-interaction result needs a narrower discriminating prediction. Alcance: primary PMLR metadata and downloaded primary PDF main text sections1–7, pp1–10; appendices not fully reviewed.
+
+**Charpenay, Nicolas; Le Treust, Maël; Roumy, Aline (2024).** [Side Information Design in Zero-Error Coding for Computing](https://www.mdpi.com/1099-4300/26/4/338). Entropy26(4):338.
+
+Zero-error functional communication, side information, characteristic graphs and graph colorings. Restricción: Confusability/coloring constraints are classical. Our finite counting bound and designed support are not claimed as new information-theoretic theorems. Alcance: primary publisher abstract/introduction, definitions1–6 and characteristic-graph/coloring equivalence in section3.1; not full paper.
+
+La revisión sigue siendo exploratoria. Los nuevos registros no constituyen una búsqueda sistemática ni acreditan prioridad por ausencia de resultados de búsqueda. El registro PMLR de Lyle difiere del PDF en fecha y orden de autores; se conserva la discrepancia en el catálogo.
