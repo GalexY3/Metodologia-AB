@@ -1,0 +1,131 @@
+{
+  "schema": "ABH_N359_A_J_PREOUTCOME_V1",
+  "date": "2026-11-15",
+  "id": "N359",
+  "project": "Mercados de pareja",
+  "cycle_kind": "EXPERIMENTAL_AB",
+  "execution_state": "NOT_EXECUTED",
+  "campaign": "AB-H PIVOT N357–N376; 18 authorized remaining before N359",
+  "parent": "N358",
+  "method": "AB 3.2.1 + O1-O7 as of main commit f48edcc11b2ad499e4cd390eefde02b3687d7010, M038-M042 optional UNVALIDATED",
+  "A": {
+    "question": "Under incomplete observed contact/acceptance graphs, is the maximum cardinality of mutually accepting bipartite pairings point-identified? Derive and empirically exercise sharp worst-case bounds rather than silently filling in invisible contacts.",
+    "estimand": "For an n by n finite at-risk bipartite market, K(G)=maximum matching cardinality in complete latent graph of bilateral yes/yes. Observed records fix bilateral outcomes only on actual encounters. Identified set is [K(E_observed_mutual), K(E_observed_mutual ∪ E_unobserved)] under only binary completion of unobserved dyads.",
+    "units": "504 independent simulated markets, not humans; 9 female-side and 9 male-side agents with at most 81 possible pair encounters",
+    "outcome": "Interval endpoints L,U; latent K only for simulator audit; observed dyadic yes/no and exposure matrix",
+    "scope": "Assumes all cross-side dyads feasible, no capacity beyond one partner, observed no must stay no; no timing or persistence."
+  },
+  "B": {
+    "preferred": "Incomplete encounter networks frequently leave a non-singleton identified set for latent attainable mutual matches.",
+    "null": "With sufficient observed exposures L=U or observed outcomes alone identify K, even without all dyads encountered.",
+    "rivals": [
+      "Model-based MAR imputation would yield a point under untestable assumptions",
+      "Structural institutional constraints might shrink the unknown possible-edge set",
+      "No independent original 2-vote longitudinal human record yet qualifies R5"
+    ],
+    "status": "Exploratory synthetic methodology; already strong prior art from Manski 2005 and Horowitz/Manski 2006; do not claim novelty of generic partial identification."
+  },
+  "C": {
+    "treatment": "Three exposure mechanisms MCAR, actor-specific selection, and outcome-dependent MNAR at each of four exposure rates 0.15,0.35,0.60,0.85, 40 independent pre-set seeds per cell; plus 8 complete-exposure null controls per mechanism.",
+    "comparators": "Actual latent complete matching (oracle-only, not available empirically); observed-only matching L; unconstrained completion matching U; independent Python exact subset DP against JavaScript augmenting-path algorithm.",
+    "primary_acceptance": "504/504 all L <= latent K <= U; Python independently computes exact L,U,K for all rows; complete observation returns L=K=U for 24 null cases; manually constructed n4 observational-equivalence example gives lower0 upper4.",
+    "secondary": "Descriptive mean bound width and point-identified fraction by exposure regime; no inferential p-values, no claims of population-specific prediction.",
+    "falsifiers": [
+      "Any L>K, K>U, negative width or bound >9",
+      "Disagreement of Python subset DP and JavaScript augmenting matching",
+      "Any full-observation control fails to collapse",
+      "Observational equivalence witness invalid",
+      "A silent generated-seed drift or input not reproducible"
+    ]
+  },
+  "D": {
+    "js_sha256": "5e0bd21476825d240fd3d8b5f05c1c55c8c2d84d6dbc25e0e2b23e76b712caa2",
+    "independent_python_sha256": "8981671a0bb851e4a7d56a42d17bad8e375154584dffabef8de891f8ad118734",
+    "original_ESBM_sha256": "f7e6b84000720cbdf2ee0800c2b10d136185facd00e4622756cbb5f8d8254d0b",
+    "generator": "Xorshift32 deterministic seeded 359000+mode*10000+rate*1000+repetition, all modes/rates enumerated; 24 full controls at seeds 459000+mode*100+rep; no hyperparameter fitting after outcome.",
+    "data": "Fresh synthetic outcomes and opportunities, not human SRC104/SRC119 or any historical trajectories.",
+    "prior_art": [
+      "https://doi.org/10.1016/j.ijar.2004.10.006",
+      "https://doi.org/10.1016/j.jeconom.2005.02.007"
+    ],
+    "hashes_frozen_to_GitHub_commit_before_any_execution": true
+  },
+  "E": {
+    "commands": [
+      "node instrument/n359_bounds.mjs",
+      "py -3 instrument/n359_independent_dp.py"
+    ],
+    "cwd": "C:\\Users\\Nitropc\\CoS-Prueba\\ESBM_ABH_N357_N376_20261031",
+    "outcomes": [
+      "outcomes/N359_PARTIAL_ID_SYNTHETIC.json",
+      "outcomes/N359_PYTHON_DP_ORACLE.json"
+    ],
+    "budget": {
+      "worlds": 504,
+      "python_exact_DP_n": 9,
+      "wall_seconds_max": 90,
+      "memory_gb_max": 1
+    },
+    "seed_policy": "No post hoc adaptation, no reuse of 60 historical worlds or N351-N355 fixed simulated worlds; 1 cycle for all 504 worlds.",
+    "no_overwrite": true,
+    "main_engine_modified": false
+  },
+  "F": {
+    "adversarial": [
+      "manually chosen n4 diagonal observed negative, off-diagonal unknown, same observed data compatible with K=0 and K=4",
+      "24 complete-exposure null cases across three exposure regimes",
+      "Python subset-state DP algorithm independent from JS augmenting paths",
+      "two deliberate corruptions of manual low/high endpoints must be rejected"
+    ],
+    "auditor": "Independent cross-language algorithm. Keep all invalid attempts, rejected mutants, errors and raw synthetic outcomes."
+  },
+  "G": {
+    "source_status": "Original sources existing; new SRC122 theoretical prior art only after documental verification",
+    "external_replication": "NONE: same synthetic generator evaluated with independent algorithm does not yield external human replication",
+    "selection_exposure": "All 504 worlds and the manual witness fixed before opening outcomes; no fresh human holdout",
+    "future": "Only next R5 advancement if legally reusable independent human source has native bilateral yes/no, original event/time order and source provenance; evaluate rival forecasts without result leakage."
+  },
+  "H": {
+    "prior_ids": [
+      "P-DYADIC_ACCESS",
+      "P-ALLOCATION-RULE"
+    ],
+    "updates": "Qualitative NO_CHANGE_WITH_REASON on human validity; may update technical limitations. Add source/prior/ledger only after audited outcomes.",
+    "CT2_before": 7,
+    "grade_before": "0/3",
+    "novelty": "No claim original identification theorem. Numerical sensitivity on synthetic selections only."
+  },
+  "I": {
+    "internal_validity": "Conditional on finite graph+assumed unconstrained unknown edges only",
+    "causal_identification": false,
+    "transportability": "NONE",
+    "novelty": "Strong existing partial-identification literature",
+    "importance": "Potential tool to avoid false point estimates when opportunity coverage incomplete",
+    "CT2_before": 7,
+    "CT2_after_planned": "NO_AUTO_INCREASE",
+    "human_R5_STOP": true,
+    "grade": "0/3"
+  },
+  "J": {
+    "branch_parent": "research/ab-h-esbm-bigint-r5-n357-n376-20261031",
+    "DRIFT_D": 2,
+    "DRIFT_reason": "New estimand of observational partial identification, same dating market/matching discipline; no new population or human dataset",
+    "decision_if_valid": "Record one technical N359, retain N360-N376. STOP_LOCAL for repeating within this synthetic generator.",
+    "complaint_ids": [],
+    "run_receipt_fields": [
+      "run_id",
+      "date",
+      "version",
+      "objective",
+      "status",
+      "SHA",
+      "costs",
+      "complaint_ids"
+    ],
+    "no_SSJY": true,
+    "no_Codex": true,
+    "no_accepted_licenses": true,
+    "no_contact_authors": true,
+    "no_merge_to_main": true
+  }
+}
