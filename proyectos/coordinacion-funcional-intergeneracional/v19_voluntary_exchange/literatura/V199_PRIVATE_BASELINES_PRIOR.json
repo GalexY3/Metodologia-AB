@@ -1,0 +1,39 @@
+{
+  "created_UTC": "2026-11-15T21:08:23.250782+00:00",
+  "records": [
+    {
+      "id": "MatignonLaurentLeFortPiat2007",
+      "title": "Hysteretic Q-Learning: an algorithm for Decentralized Reinforcement Learning in Cooperative Multi-Agent Teams",
+      "doi": "10.1109/IROS.2007.4399095",
+      "url": "https://gjlaurent.github.io/assets/papers/Matignon2007hysteretic.pdf",
+      "pdf": "literatura/original_code/Matignon2007/Matignon2007hysteretic.pdf",
+      "read_scope": "Sections II-III and Eq3 with matrix-game parameters; rendered original PDFpage3 inspected. Other sections partly extracted, not claimed as fully read.",
+      "parameters_used": {
+        "alpha": 0.1,
+        "beta": 0.01
+      },
+      "adaptation": "Same scalar reward update, terminal private-signal context, strict random ties. Original matrix-game exploration was Boltzmann; this study matches epsilon-greedy for controlled updater contrasts.",
+      "pdf_sha256": "9ba26cf5d326669e6435fd4b30832fd79184d4feb04f076bbb37b30303b956b7"
+    },
+    {
+      "id": "WeiLuke2016",
+      "title": "Lenient Learning in Independent-Learner Stochastic Cooperative Games",
+      "url": "https://www.jmlr.org/papers/v17/15-417.html",
+      "pdf": "literatura/original_code/WeiLuke2016/WeiLuke2016.pdf",
+      "read_scope": "Abstract, full Section4 algorithm pp8-12, Table2 and discussion of initialization. Original PDFpage10 rendered and equation inspected. Not all42pages or proofs read.",
+      "parameters_used": {
+        "alpha": 0.1,
+        "MaxTemp": 50.0,
+        "MinTemp": 2.0,
+        "decay": 0.995,
+        "theta": 1.0,
+        "omega": 1.0
+      },
+      "adaptation": "Terminal contextual episodes, gamma0, no temperature diffusion to a next state. Q minimum own reward for formation, existing Q and reset temperatures for maintenance. Native exploration, no post-cooling epsilon floor.",
+      "pdf_sha256": "c9677f5d1d20001ab2d8e29dd873076d1becf85a9ba5b57fdf884d986a2553a8"
+    }
+  ],
+  "PDFs_not_redistributed": true,
+  "original_author_code_not_executed": true,
+  "known_methods_not_our_original_algorithms": true
+}
