@@ -1,0 +1,8 @@
+LIMITS {'pid': 16388, 'priority': 'BelowNormal', 'priority_code': 16384, 'affinity': 16515072, 'numba_threads': 2}
+Traceback (most recent call last):
+  File "C:\Programación\MARL-million-144-20261110\proyectos\coordinacion-funcional-intergeneracional\v19_voluntary_exchange\audit_v202_engine.py", line 80, in <module>
+    main()
+  File "C:\Programación\MARL-million-144-20261110\proyectos\coordinacion-funcional-intergeneracional\v19_voluntary_exchange\audit_v202_engine.py", line 59, in main
+    assert abs(evaluated['payment_disable_effect']-.3952)<1e-12
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

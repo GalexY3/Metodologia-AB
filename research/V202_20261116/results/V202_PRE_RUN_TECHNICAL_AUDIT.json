@@ -1,0 +1,96 @@
+{
+  "status": "PASS",
+  "conditional_factorization_rows": 48,
+  "max_scalar_error": 1.1102230246251565e-15,
+  "ordinary_privacy_invariance_checks": 96,
+  "mixture_gradient_checks": 400,
+  "max_finite_difference_error": 4.2802028588084795e-10,
+  "frozen_programmed_certificate": {
+    "normalized_private_return": [
+      0.1734821052631579,
+      0.1734821052631579,
+      0.19348210526315793,
+      0.22448210526315798
+    ],
+    "gain_over_autarky": [
+      0.07611368421052632,
+      0.07611368421052632,
+      0.09611368421052634,
+      0.12711368421052638
+    ],
+    "discounted_GOOD_joint_rate": 0.41600000000000004,
+    "disabled_payment_GOOD_rate": 0.046720575022461866,
+    "payment_disable_effect": 0.3692794249775382,
+    "normalized_payments_per_donor": [
+      0.41600000000000004,
+      0.41600000000000004,
+      -0.0
+    ],
+    "single_default_future_GOOD_effect_at_START": [
+      0.4160000000000001,
+      0.4160000000000001,
+      0.0
+    ],
+    "functional": true,
+    "exact_value_residual": 9.159339953157541e-16
+  },
+  "public_best_response_certificate": {
+    "scope": "Exact public-information best response, including optimal conditional payment",
+    "normalized_gain_per_agent": [
+      -2.220446049250315e-16,
+      -2.220446049250315e-16,
+      -2.8865798640254096e-16,
+      -3.996802888650567e-16
+    ],
+    "max_normalized_gain": -2.220446049250315e-16,
+    "checks": [
+      {
+        "iterations": 3,
+        "residual": 4.440892098500626e-16,
+        "equal_public_count_value_error": 8.881784197001252e-16
+      },
+      {
+        "iterations": 3,
+        "residual": 4.440892098500626e-16,
+        "equal_public_count_value_error": 8.881784197001252e-16
+      },
+      {
+        "iterations": 2,
+        "residual": 4.440892098500626e-16,
+        "equal_public_count_value_error": 4.440892098500626e-16
+      },
+      {
+        "iterations": 2,
+        "residual": 8.881784197001252e-16,
+        "equal_public_count_value_error": 8.881784197001252e-16
+      }
+    ]
+  },
+  "geometric_termination_probability": 0.05,
+  "learning_discount_in_updates": 1.0,
+  "resulting_valuation_discount": 0.95,
+  "no_double_discount": true,
+  "smoke": [
+    {
+      "arm": "IQL_PUBLIC_COLD",
+      "finite": true,
+      "round_count": 400
+    },
+    {
+      "arm": "PG_PUBLIC_COLD",
+      "finite": true,
+      "round_count": 400
+    },
+    {
+      "arm": "IQL_PRIVATE_COLD",
+      "finite": true,
+      "round_count": 400
+    },
+    {
+      "arm": "PG_PRIVATE_COLD",
+      "finite": true,
+      "round_count": 400
+    }
+  ],
+  "smoke_is_not_scientific_evidence": true
+}
