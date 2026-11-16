@@ -1,0 +1,518 @@
+{
+  "status": "PASS",
+  "cases": 84,
+  "scalar_native_checks": 504,
+  "scalar_behavior_checks": 336,
+  "public_best_response_checks": 96,
+  "maxNativeError": 9.48699452330004e-13,
+  "maxBehaviorError": 9.49754164203398e-13,
+  "maxBRerror": 9.083288930581725e-14,
+  "method": "Independent JavaScript literal enumeration and value iteration; native sigmoid independently reconstructed from logits",
+  "external_scientific_confirmation": false,
+  "checked": [
+    {
+      "case": "COLD_None_EPG",
+      "time": 0,
+      "error": 9.48699452330004e-13,
+      "functional": false
+    },
+    {
+      "case": "COLD_None_EPG",
+      "time": 60,
+      "error": 9.46909217702796e-13,
+      "functional": false
+    },
+    {
+      "case": "COLD_None_EPG",
+      "time": 600,
+      "error": 9.19528342357978e-13,
+      "functional": false
+    },
+    {
+      "case": "COLD_None_EPG",
+      "time": 6000,
+      "error": 9.16475229040259e-13,
+      "functional": false
+    },
+    {
+      "case": "COLD_None_EPG_PRECISION",
+      "time": 6000,
+      "error": 9.175576964892684e-13,
+      "functional": false
+    },
+    {
+      "case": "COLD_None_NPG",
+      "time": 0,
+      "error": 9.48699452330004e-13,
+      "functional": false
+    },
+    {
+      "case": "COLD_None_NPG",
+      "time": 60,
+      "error": 9.335563468532464e-13,
+      "functional": false
+    },
+    {
+      "case": "COLD_None_NPG",
+      "time": 600,
+      "error": 9.466820358430459e-13,
+      "functional": false
+    },
+    {
+      "case": "COLD_None_NPG",
+      "time": 6000,
+      "error": 9.32313497474383e-13,
+      "functional": false
+    },
+    {
+      "case": "COLD_None_NPG_PRECISION",
+      "time": 6000,
+      "error": 9.323136357525117e-13,
+      "functional": false
+    },
+    {
+      "case": "WARM_None_EPG",
+      "time": 0,
+      "error": 9.340375695110481e-13,
+      "functional": false
+    },
+    {
+      "case": "WARM_None_EPG",
+      "time": 60,
+      "error": 9.260717193093626e-13,
+      "functional": true
+    },
+    {
+      "case": "WARM_None_EPG",
+      "time": 600,
+      "error": 9.406572742953756e-13,
+      "functional": true
+    },
+    {
+      "case": "WARM_None_EPG",
+      "time": 6000,
+      "error": 9.421560753786196e-13,
+      "functional": true
+    },
+    {
+      "case": "WARM_None_EPG_PRECISION",
+      "time": 6000,
+      "error": 9.421213809091e-13,
+      "functional": true
+    },
+    {
+      "case": "WARM_None_NPG",
+      "time": 0,
+      "error": 9.340375695110481e-13,
+      "functional": false
+    },
+    {
+      "case": "WARM_None_NPG",
+      "time": 60,
+      "error": 9.361955655151633e-13,
+      "functional": true
+    },
+    {
+      "case": "WARM_None_NPG",
+      "time": 600,
+      "error": 9.433009928727643e-13,
+      "functional": true
+    },
+    {
+      "case": "WARM_None_NPG",
+      "time": 6000,
+      "error": 9.428569036629142e-13,
+      "functional": true
+    },
+    {
+      "case": "WARM_None_NPG_PRECISION",
+      "time": 6000,
+      "error": 9.428569036629142e-13,
+      "functional": true
+    },
+    {
+      "case": "JITTER_2031600_EPG",
+      "time": 0,
+      "error": 9.468814621271804e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031600_EPG",
+      "time": 60,
+      "error": 9.474643292151086e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031600_EPG",
+      "time": 600,
+      "error": 9.193479311164765e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031600_EPG",
+      "time": 6000,
+      "error": 9.147266277764743e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031600_NPG",
+      "time": 0,
+      "error": 9.468814621271804e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031600_NPG",
+      "time": 60,
+      "error": 9.336188797487918e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031600_NPG",
+      "time": 600,
+      "error": 9.47213253455889e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031600_NPG",
+      "time": 6000,
+      "error": 9.334103682951441e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031601_EPG",
+      "time": 0,
+      "error": 9.464790062807538e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031601_EPG",
+      "time": 60,
+      "error": 9.463679839782912e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031601_EPG",
+      "time": 600,
+      "error": 9.193756866920921e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031601_EPG",
+      "time": 6000,
+      "error": 9.15129083622901e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031601_NPG",
+      "time": 0,
+      "error": 9.464790062807538e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031601_NPG",
+      "time": 60,
+      "error": 9.336508253846392e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031601_NPG",
+      "time": 600,
+      "error": 9.463241999452752e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031601_NPG",
+      "time": 6000,
+      "error": 9.309241053075953e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031602_EPG",
+      "time": 0,
+      "error": 9.463541061904834e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031602_EPG",
+      "time": 60,
+      "error": 9.470202400052585e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031602_EPG",
+      "time": 600,
+      "error": 9.205552986557564e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031602_EPG",
+      "time": 6000,
+      "error": 9.143519275056633e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031602_NPG",
+      "time": 0,
+      "error": 9.463541061904834e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031602_NPG",
+      "time": 60,
+      "error": 9.315743397845548e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031602_NPG",
+      "time": 600,
+      "error": 9.439103782329304e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031602_NPG",
+      "time": 6000,
+      "error": 9.306499080370749e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031603_EPG",
+      "time": 0,
+      "error": 9.467981954003335e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031603_EPG",
+      "time": 60,
+      "error": 9.476447404566102e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031603_EPG",
+      "time": 600,
+      "error": 9.19167519874975e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031603_EPG",
+      "time": 6000,
+      "error": 9.160450176182167e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031603_NPG",
+      "time": 0,
+      "error": 9.467981954003335e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031603_NPG",
+      "time": 60,
+      "error": 9.330592006113111e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031603_NPG",
+      "time": 600,
+      "error": 9.460009380265872e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031603_NPG",
+      "time": 6000,
+      "error": 9.3200007834324e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031604_EPG",
+      "time": 0,
+      "error": 9.470063622174507e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031604_EPG",
+      "time": 60,
+      "error": 9.468675843393726e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031604_EPG",
+      "time": 600,
+      "error": 9.202777428996e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031604_EPG",
+      "time": 6000,
+      "error": 9.15947873103562e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031604_NPG",
+      "time": 0,
+      "error": 9.470063622174507e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031604_NPG",
+      "time": 60,
+      "error": 9.338329088279974e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031604_NPG",
+      "time": 600,
+      "error": 9.471628964472022e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031604_NPG",
+      "time": 6000,
+      "error": 9.328264305575706e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031605_EPG",
+      "time": 0,
+      "error": 9.46603906371024e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031605_EPG",
+      "time": 60,
+      "error": 9.465067618563694e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031605_EPG",
+      "time": 600,
+      "error": 9.195560979335937e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031605_EPG",
+      "time": 6000,
+      "error": 9.16169917708487e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031605_NPG",
+      "time": 0,
+      "error": 9.46603906371024e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031605_NPG",
+      "time": 60,
+      "error": 9.326327406981923e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031605_NPG",
+      "time": 600,
+      "error": 9.45936745952317e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031605_NPG",
+      "time": 6000,
+      "error": 9.330513722269335e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031606_EPG",
+      "time": 0,
+      "error": 9.468814621271804e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031606_EPG",
+      "time": 60,
+      "error": 9.465900285832163e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031606_EPG",
+      "time": 600,
+      "error": 9.206108098069876e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031606_EPG",
+      "time": 6000,
+      "error": 9.155592950449432e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031606_NPG",
+      "time": 0,
+      "error": 9.468814621271804e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031606_NPG",
+      "time": 60,
+      "error": 9.327955199959847e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031606_NPG",
+      "time": 600,
+      "error": 9.45113638509449e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031606_NPG",
+      "time": 6000,
+      "error": 9.301948550445138e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031607_EPG",
+      "time": 0,
+      "error": 9.468953399149882e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031607_EPG",
+      "time": 60,
+      "error": 9.472977957614148e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031607_EPG",
+      "time": 600,
+      "error": 9.18418119333353e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031607_EPG",
+      "time": 6000,
+      "error": 9.145045831715493e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031607_NPG",
+      "time": 0,
+      "error": 9.468953399149882e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031607_NPG",
+      "time": 60,
+      "error": 9.32896366150498e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031607_NPG",
+      "time": 600,
+      "error": 9.452585363064502e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031607_NPG",
+      "time": 6000,
+      "error": 9.301782718334724e-13,
+      "functional": false
+    }
+  ]
+}
