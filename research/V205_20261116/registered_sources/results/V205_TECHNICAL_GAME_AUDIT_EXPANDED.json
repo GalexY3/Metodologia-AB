@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "stage": "TECHNICAL_GAME_QA_NOT_PRIMARY_AA_TEST",
+  "cases": 4,
+  "scalar_first_derivative_checks": 48,
+  "max_value_error": 7.025630077706069e-17,
+  "max_gradient_error": 1.2311707209278211e-11,
+  "primary_equilibrium_AA_field_not_executed": true,
+  "rows": [
+    {
+      "case": 0,
+      "gamma": 0.3,
+      "coupling": 0.0,
+      "mass": 1.0000000000000002,
+      "value_error": 6.938893903907228e-18
+    },
+    {
+      "case": 1,
+      "gamma": 0.5,
+      "coupling": 0.1,
+      "mass": 0.9999999999999999,
+      "value_error": 5.551115123125783e-17
+    },
+    {
+      "case": 2,
+      "gamma": 0.9,
+      "coupling": 0.3,
+      "mass": 0.9999999999999999,
+      "value_error": 5.551115123125783e-17
+    },
+    {
+      "case": 3,
+      "gamma": 0.99,
+      "coupling": 1.0,
+      "mass": 1.0,
+      "value_error": 7.025630077706069e-17
+    }
+  ],
+  "sources": {
+    "v205_two_stage_game.py": "e50625532caaad51ca750118a3ca0df5db1da61913c20bf5d3a727c2565655bf",
+    "audit_v205_game.py": "3ae76ce7dcbc853ff22318af09526da858d508984103d6075aafbc534dac6029"
+  }
+}
