@@ -1,0 +1,53 @@
+{
+  "status": "PASS",
+  "study": "V204_TECHNICAL_ONLY",
+  "scientific_learning_trajectories_executed": false,
+  "arbitrary_debug_seed": 2041600,
+  "scalar_first_derivative_checks": 2880,
+  "bilinear_hessian_checks": 36,
+  "maximum_value_error": 2.220446049250313e-16,
+  "maximum_own_gradient_error": 4.163336342344337e-17,
+  "maximum_cross_gradient_error": 3.2087239115741184e-11,
+  "maximum_hessian_bilinear_error": 1.4888365876524617e-14,
+  "mean_LOLA_field_seconds": 0.05940091999946162,
+  "elapsed_seconds": 4.963938800006872,
+  "original_method": "LOLA-Ex Eq. 4.4; G[i,j] multiplier stopped in correction",
+  "original_contribution": false,
+  "model_and_peer_policy_oracle": true,
+  "private_realized_feedback": false,
+  "full_monetary_given_cost_in_every_private_return": true,
+  "sources": {
+    "v204_opponent_gradient.py": "116e95ad845010d061ceecfee8d0722276decb3c2f02631f8fdca5a13b20eea2",
+    "audit_v204_opponent_gradient.py": "6ae84de5e35ef3f29d20b5fd0bdb897fa97e9280365ed2872d4b137dc9c06fa7"
+  },
+  "records": [
+    {
+      "case": 0,
+      "epsilon": 0.0,
+      "scalar_gradient_checks": 960,
+      "maximum_gradient_error": 2.2454964753934603e-11,
+      "bilinear_hessian_checks": 12,
+      "maximum_hessian_error": 1.3929538132759905e-14
+    },
+    {
+      "case": 1,
+      "epsilon": 0.02,
+      "scalar_gradient_checks": 960,
+      "maximum_gradient_error": 1.1051065011008498e-11,
+      "bilinear_hessian_checks": 12,
+      "maximum_hessian_error": 6.758508073394058e-15
+    },
+    {
+      "case": 2,
+      "epsilon": 0.2,
+      "scalar_gradient_checks": 960,
+      "maximum_gradient_error": 3.2087239115741184e-11,
+      "bilinear_hessian_checks": 12,
+      "maximum_hessian_error": 1.4888365876524617e-14
+    }
+  ],
+  "CT2_historical": 61,
+  "new_branch_score": null,
+  "N2": 0,
+  "N3": 0
+}

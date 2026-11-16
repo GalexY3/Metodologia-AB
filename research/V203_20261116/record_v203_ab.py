@@ -27,7 +27,7 @@ p=B/'results/V203_AB_LEDGER.json';assert not p.exists();p.write_text(json.dumps(
 prior=dict(study='V203',new_algorithm=False,originality_unestablished=True,records=[
     dict(work='Sutton et al., Policy Gradient Methods, 1999',role='Established policy-gradient theorem',new_priority_claim=False),
     dict(work='Kakade, A Natural Policy Gradient, 2001',role='Established Fisher geometry; derived discounted hierarchical control is not an author-code reproduction',new_priority_claim=False),
-    dict(work='Foerster et al., LOLA, ICLR 2018',role='Opponent-learning awareness already established',new_priority_claim=False),
+    dict(work='Foerster et al., LOLA, AAMAS 2018',role='Opponent-learning awareness already established',new_priority_claim=False),
     dict(work='Yang et al., LIO, NeurIPS 2020',role='Incentives through recipient learning; author code already has include_cost_in_chain_rule option',source_commit='979e29723aa9bf18fd63447bb58a2cc27ade6727',new_priority_claim=False),
     dict(work='Phan et al., MATE, 2024',role='Additional relevant rival; abstract/background read, full method audit pending',new_priority_claim=False),
     dict(work='McAvoy et al., Unilateral incentive alignment, PNAS 2025',role='Additional relevant rival; initial method reading only',new_priority_claim=False)])
