@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "independent_27_vs_15_state_value_checks": 3,
+  "maximum_value_error": 4.163336342344337e-17,
+  "finite_difference_parameters": 720,
+  "maximum_private_gradient_error": 9.868578176863707e-12,
+  "history_independent_vector_field_checks": [
+    {
+      "case": 0,
+      "natural_mode_spread": 5.551115123125783e-16,
+      "natural_pay_spread": 0.0,
+      "ordinary_mode_spread": 0.049553659599956466
+    },
+    {
+      "case": 1,
+      "natural_mode_spread": 5.551115123125783e-16,
+      "natural_pay_spread": 5.551115123125783e-17,
+      "ordinary_mode_spread": 0.042681237342654846
+    },
+    {
+      "case": 2,
+      "natural_mode_spread": 5.551115123125783e-16,
+      "natural_pay_spread": 0.0,
+      "ordinary_mode_spread": 0.025148427314895513
+    },
+    {
+      "case": 3,
+      "natural_mode_spread": 4.440892098500626e-16,
+      "natural_pay_spread": 5.551115123125783e-17,
+      "ordinary_mode_spread": 0.06060440261504731
+    }
+  ],
+  "cold_conditional_payment_advantage": -0.25,
+  "cold_critical_JOINT_minus_AUTO": [
+    -0.8765877727856228,
+    -0.3127319357716325
+  ],
+  "oracle_model_and_peer_policy_access": true,
+  "private_realized_feedback_learner": false,
+  "new_scientific_integrations_executed": false
+}

@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "current_mixture_gradient": true,
+  "total_finite_differences": 720,
+  "rows": [
+    {
+      "epsilon": 0.0,
+      "finite_differences": 240,
+      "max_error": 9.292559777218656e-12,
+      "natural_history_mode_spread": 2.255140518769849e-16,
+      "natural_history_pay_spread": 8.326672684688674e-17
+    },
+    {
+      "epsilon": 0.02,
+      "finite_differences": 240,
+      "max_error": 7.300407782635798e-12,
+      "natural_history_mode_spread": 2.220446049250313e-16,
+      "natural_history_pay_spread": 1.1102230246251565e-16
+    },
+    {
+      "epsilon": 0.2,
+      "finite_differences": 240,
+      "max_error": 1.465336879613588e-11,
+      "natural_history_mode_spread": 3.1086244689504383e-15,
+      "natural_history_pay_spread": 1.1102230246251565e-16
+    }
+  ],
+  "exact_gradient_for_frozen_instantaneous_epsilon": true,
+  "not_a_full_derivative_of_future_learning_or_future_exploration_schedule": true
+}
