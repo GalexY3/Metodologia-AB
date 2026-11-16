@@ -1,0 +1,14 @@
+{
+  "status": "POST_HOC_UNCERTAINTY_DIAGNOSTIC",
+  "registered_primary_still": "FAIL",
+  "independent_units": 32,
+  "any_functional_worlds": 0,
+  "groups_per_world": 8,
+  "one_sided_level": 0.95,
+  "upper_bound_probability_world_has_any_functional_group": 0.0893681989862648,
+  "formula": "1 - 0.05**(1/32)",
+  "upper_bound_mean_functional_fraction": 0.0893681989862648,
+  "mean_bound_reason": "F_world in [0,1] implies E[F_world] <= P(F_world>0).",
+  "assumptions": "Independent worlds under the specified training-randomness generator; no external transport claim.",
+  "warning": "The registered all-zero bootstrap intervals degenerate at [0,0]; they do not establish that the population probability is exactly zero. No group pseudoreplication."
+}

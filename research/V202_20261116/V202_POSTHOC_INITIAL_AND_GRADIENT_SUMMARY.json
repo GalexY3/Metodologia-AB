@@ -1,0 +1,106 @@
+{
+  "status": "POST_HOC_INTERPRETATION_NOT_CONFIRMATION",
+  "registered_primary_still": "FAIL",
+  "initial_policy_summary": {
+    "IQL_PUBLIC_COLD": {
+      "initial_functional_fraction": 0.0,
+      "initial_GOOD_rate": 0.040625000000000036,
+      "initial_mean_min_private_gain": -0.27195641447368424,
+      "mean_absolute_probability_change": 0.26530761718749996,
+      "maximum_absolute_probability_change": 0.5
+    },
+    "PG_PUBLIC_COLD": {
+      "initial_functional_fraction": 0.0,
+      "initial_GOOD_rate": 0.040625000000000036,
+      "initial_mean_min_private_gain": -0.27195641447368424,
+      "mean_absolute_probability_change": 0.010419570875544957,
+      "maximum_absolute_probability_change": 0.4164937270574592
+    },
+    "IQL_PRIVATE_COLD": {
+      "initial_functional_fraction": 0.0,
+      "initial_GOOD_rate": 0.040625000000000036,
+      "initial_mean_min_private_gain": -0.27195641447368424,
+      "mean_absolute_probability_change": 0.19423828125,
+      "maximum_absolute_probability_change": 0.5
+    },
+    "PG_PRIVATE_COLD": {
+      "initial_functional_fraction": 0.0,
+      "initial_GOOD_rate": 0.040625000000000036,
+      "initial_mean_min_private_gain": -0.27195641447368424,
+      "mean_absolute_probability_change": 0.009970202477361925,
+      "maximum_absolute_probability_change": 0.4161776443571592
+    },
+    "IQL_PUBLIC_WARM": {
+      "initial_functional_fraction": 1.0,
+      "initial_GOOD_rate": 0.41600000000000004,
+      "initial_mean_min_private_gain": 0.07611368421052632,
+      "mean_absolute_probability_change": 0.10613606770833334,
+      "maximum_absolute_probability_change": 1.0
+    },
+    "PG_PUBLIC_WARM": {
+      "initial_functional_fraction": 0.0,
+      "initial_GOOD_rate": 0.21564043995530136,
+      "initial_mean_min_private_gain": 0.018998974432658546,
+      "mean_absolute_probability_change": 0.0005235740798043394,
+      "maximum_absolute_probability_change": 0.01506769986418121
+    }
+  },
+  "uniform_cold_conditional_mode_advantages": [
+    {
+      "role": 0,
+      "loss": 1,
+      "signal": 0,
+      "JOINT_minus_AUTO_with_uniform_peers": -0.08420972400513477
+    },
+    {
+      "role": 0,
+      "loss": 1,
+      "signal": 1,
+      "JOINT_minus_AUTO_with_uniform_peers": 0.021166369313113293
+    },
+    {
+      "role": 1,
+      "loss": 1,
+      "signal": 0,
+      "JOINT_minus_AUTO_with_uniform_peers": -0.08420972400513477
+    },
+    {
+      "role": 1,
+      "loss": 1,
+      "signal": 1,
+      "JOINT_minus_AUTO_with_uniform_peers": 0.021166369313113293
+    },
+    {
+      "role": 2,
+      "loss": 7,
+      "signal": 0,
+      "JOINT_minus_AUTO_with_uniform_peers": -0.5964048459563542
+    },
+    {
+      "role": 2,
+      "loss": 7,
+      "signal": 1,
+      "JOINT_minus_AUTO_with_uniform_peers": -0.06781668153434434
+    },
+    {
+      "role": 3,
+      "loss": 7,
+      "signal": 0,
+      "JOINT_minus_AUTO_with_uniform_peers": -0.8765877727856224
+    },
+    {
+      "role": 3,
+      "loss": 7,
+      "signal": 1,
+      "JOINT_minus_AUTO_with_uniform_peers": -0.31273193577163244
+    }
+  ],
+  "conditional_payment_advantage_at_uniform_history_independent_policy": -0.25,
+  "reason_payment_gradient": "At initialization all continuation values are history independent, so changing the payment only costs 0.25. Public and private memory do not initially induce a different continuation response.",
+  "critical_positive_signal_advantage_upper_bound_over_all_fixed_nonnegative_stocks": -0.2780720338983051,
+  "upper_bound_scope": "Uniform 0.5 modes and 0.5 payments of peers, L_critical=7, fixed stock. Not a result about endogenous investment, every initialization or every learning algorithm.",
+  "warning": "WARM PG starts with almost the full behavioral blueprint. Its binary functional transition crosses a small private-gain threshold; report continuous changes and profitable deviations.",
+  "scientific_external_confirmation": false,
+  "N2": 0,
+  "N3": 0
+}
