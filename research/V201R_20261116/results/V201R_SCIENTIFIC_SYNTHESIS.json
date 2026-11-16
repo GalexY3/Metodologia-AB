@@ -1,0 +1,136 @@
+{
+  "status": "POST_HOC_THEORY_AUDIT_AND_CONSTRUCTIVE_CONTROLS",
+  "source_sha256": {
+    "v201r_theory_precheck.py": "ca4fcf5754932be4109c03dd14db70c14344caa7cdb4f490888b5e0f6ee9a44e",
+    "v201r_single_agent_bellman.py": "26d8d4b654d2e73fe5168f5134a04f7941628e9439beee84166e5c19a9fabdc1",
+    "v201r_capital_coalition_audit.py": "2598bf7092e495ce89f7adc8250742360e8dc1c19f9ac199a8256c2f2856c9c8",
+    "v201r_relational_certificate.py": "5dae0432411224b41ebb5a4746104cc0b631cb81d03f30681166e233beea562d",
+    "audit_v201r_capital_bounds.py": "af0a27d9ff9b371e5d73ad1309228f43a967f38d4a1bd16bb0c27b4fd056112e",
+    "analyze_v201r_controls.py": "995d6e2b928609a0dcfc08bd1b35aa3169cb3df8b86bbce20c9373ae85d1dd17",
+    "research_resource_limits.py": "53fc43054ce43e029dbf497b3d7d9a5614d136266bfdd8f6244e38b9663f2961"
+  },
+  "theory_input_sha256": "82592df070764a5889df4227536fd24bdaf935512de5965aa02aa77197eda411",
+  "conditional_payoff_max_error": 1.3877787807814457e-16,
+  "capital_control_independent_sign_agreement": true,
+  "rational_relational_interval_count": 164,
+  "relational_independent_checks": 656,
+  "monitoring_scope_counterexample": {
+    "reference_stock": 0.8903152454708944,
+    "repaired_policies": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "donors": [
+      0,
+      1
+    ],
+    "rents": [
+      {
+        "role": 0,
+        "loss": 1,
+        "incremental_rent_per_round": 0.07611368421052633,
+        "discounted_future_rent": 1.4461600000000003,
+        "voluntary_payment_IC_margin": 1.1961600000000003
+      },
+      {
+        "role": 1,
+        "loss": 1,
+        "incremental_rent_per_round": 0.07611368421052633,
+        "discounted_future_rent": 1.4461600000000003,
+        "voluntary_payment_IC_margin": 1.1961600000000003
+      },
+      {
+        "role": 2,
+        "loss": 7,
+        "incremental_rent_per_round": 0.09611368421052632,
+        "discounted_future_rent": 1.8261600000000002,
+        "voluntary_payment_IC_margin": null
+      },
+      {
+        "role": 3,
+        "loss": 7,
+        "incremental_rent_per_round": 0.12711368421052632,
+        "discounted_future_rent": 2.41516,
+        "voluntary_payment_IC_margin": null
+      }
+    ],
+    "conditional_mode_gains": [
+      {
+        "role": 0,
+        "signal": 0,
+        "prescribed_mode": 1,
+        "joint_minus_autarky": 0.013621566110397956
+      },
+      {
+        "role": 0,
+        "signal": 1,
+        "prescribed_mode": 1,
+        "joint_minus_autarky": 0.11954041034790366
+      },
+      {
+        "role": 1,
+        "signal": 0,
+        "prescribed_mode": 1,
+        "joint_minus_autarky": 0.013621566110397956
+      },
+      {
+        "role": 1,
+        "signal": 1,
+        "prescribed_mode": 1,
+        "joint_minus_autarky": 0.11954041034790366
+      },
+      {
+        "role": 2,
+        "signal": 0,
+        "prescribed_mode": 0,
+        "joint_minus_autarky": -0.8566059050064184
+      },
+      {
+        "role": 2,
+        "signal": 1,
+        "prescribed_mode": 1,
+        "joint_minus_autarky": 0.16290454950936667
+      },
+      {
+        "role": 3,
+        "signal": 0,
+        "prescribed_mode": 0,
+        "joint_minus_autarky": -1.0297766367137355
+      },
+      {
+        "role": 3,
+        "signal": 1,
+        "prescribed_mode": 1,
+        "joint_minus_autarky": 0.2154469223907226
+      }
+    ],
+    "private_critical_only_punishment_forgiveness_gain_on_positive_signal": 0.2154469223907226,
+    "interpretation": "If only the critical switches to AUTARKY after nonpayment while ordinary agents retain these policies and still promise future payments, resuming JOINT on a positive signal is profitable. This rejects that punishment strategy, not every private-monitoring equilibrium.",
+    "public_grim_control_is_a_different_information_structure": true
+  },
+  "V201R_original_policy_not_validated": true,
+  "capital_bootstrap_is_a_separate_coordination_problem": true,
+  "numerical_controls_are_not_learned_institutions": true,
+  "statistical_holdout_used": false,
+  "external_confirmation": false,
+  "AB2_not_accredited": true,
+  "new_N1_awards": [],
+  "CT2_historical": 61,
+  "new_branch_score": null,
+  "N2": 0,
+  "N3": 0
+}

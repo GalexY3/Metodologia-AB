@@ -1,0 +1,70 @@
+{
+  "reproduction": "PASS",
+  "fresh_directory": "C:\\Programaci\u00f3n\\AB_reproductions\\V201R_theory_20261116",
+  "script_runs": [
+    {
+      "script": "v201r_theory_precheck.py",
+      "exit_code": 0
+    },
+    {
+      "script": "v201r_single_agent_bellman.py",
+      "exit_code": 0
+    },
+    {
+      "script": "v201r_capital_coalition_audit.py",
+      "exit_code": 0
+    },
+    {
+      "script": "v201r_relational_certificate.py",
+      "exit_code": 0
+    },
+    {
+      "script": "audit_v201r_capital_bounds.py",
+      "exit_code": 0
+    },
+    {
+      "script": "analyze_v201r_controls.py",
+      "exit_code": 0
+    }
+  ],
+  "comparisons": [
+    {
+      "file": "V201R_THEORY_PRECHECK.json",
+      "all_JSON_values_identical": true,
+      "original_sha256": "77231212b03c1b0b9f6693492d9bcad5ebfbdd368c2518e478231af997abaf73",
+      "reproduced_sha256": "77231212b03c1b0b9f6693492d9bcad5ebfbdd368c2518e478231af997abaf73"
+    },
+    {
+      "file": "V201R_SINGLE_AGENT_BELLMAN.json",
+      "all_JSON_values_identical": true,
+      "original_sha256": "625c27c882e96efcad9f1183f998df7d494e704f3f57ed6fa7c44914b284d3d9",
+      "reproduced_sha256": "625c27c882e96efcad9f1183f998df7d494e704f3f57ed6fa7c44914b284d3d9"
+    },
+    {
+      "file": "V201R_CAPITAL_COALITION_AUDIT.json",
+      "all_JSON_values_identical": true,
+      "original_sha256": "4dcab98121d071bed220a1448f6c61941993499fba45610fec982856d0ace2db",
+      "reproduced_sha256": "4dcab98121d071bed220a1448f6c61941993499fba45610fec982856d0ace2db"
+    },
+    {
+      "file": "V201R_RELATIONAL_CERTIFICATES.json",
+      "all_JSON_values_identical": true,
+      "original_sha256": "e9216afd9cd1ff2515dd56fbf1a1ed403df38ea47b4f5153c7aec5b04a568367",
+      "reproduced_sha256": "e9216afd9cd1ff2515dd56fbf1a1ed403df38ea47b4f5153c7aec5b04a568367"
+    },
+    {
+      "file": "V201R_CAPITAL_BOUND_INDEPENDENT_AUDIT.json",
+      "all_JSON_values_identical": true,
+      "original_sha256": "f0a429a77f3c0eea1d1ea62ee1c56e797c42c7207bddc92b391b04362f0755ec",
+      "reproduced_sha256": "f0a429a77f3c0eea1d1ea62ee1c56e797c42c7207bddc92b391b04362f0755ec"
+    },
+    {
+      "file": "V201R_SCIENTIFIC_SYNTHESIS.json",
+      "all_JSON_values_identical": true,
+      "original_sha256": "5461f0b435a8b57da55d1ecf42d7fc9192723664bbc290e9506888d502335bd9",
+      "reproduced_sha256": "5461f0b435a8b57da55d1ecf42d7fc9192723664bbc290e9506888d502335bd9"
+    }
+  ],
+  "scientific_external_replication": false,
+  "limits": "Same machine, same installed libraries, same author; a fresh staging reproduction, not independent evidence."
+}

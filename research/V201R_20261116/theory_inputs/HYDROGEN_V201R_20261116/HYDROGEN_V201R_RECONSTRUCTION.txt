@@ -1,0 +1,232 @@
+### 0. Dictamen de autocrítica sobre la auditoría
+
+La auditoría matemática (`REVISION_CRITICA_GEMINI_HYDROGEN_V201.md`) es implacable y **tiene razón en sus siete objeciones**. El borrador anterior de V201 contenía tres fallos estructurales que lo invalidaban antes de ejecutar una sola ronda:
+
+1. **Inviabilidad algebraica de una sola ronda:** Al evaluar incentivos con la probabilidad previa $\pi = 0.65$ en lugar de condicionar tanto a la señal privada $s_i$ como al evento de completitud conjunta (que exige que los otros 3 miembros también entreguen), se obtuvo un umbral erróneo ($0.95$ frente al real $2.238347$), una ventana vacía entre trabajador crítico y ordinario ($S > 0.6644$ frente a $S < 0.4952$), ningún umbral viable para $L=7$ y una tasa $\gamma_{\max} = -0.482897 < 0$.
+
+
+2. **Falso gradiente de arranque desde monocultivo:** El término $\frac{0.55}{3} d_i$ recompensa entregas *ajenas*, no la propia entrega ni la inversión privada $x_i$ en $S_{g,t}$. En monocultivo ($S_{g,0}=0$), ningún agente tenía incentivo marginal propio para invertir primero.
+
+
+3. **Institución disfrazada de física:** La transferencia automática $\phi(S)$ y la destrucción automática $-\eta S$ seguían siendo reglas de cumplimiento ejecutadas por el simulador. Como señaló la auditoría, sin derechos de acceso, exclusión o decisión voluntaria de transferir, el modelo colapsaba en una variante de durabilidad de bienes públicos ya estudiada por **Brown y Taddei (2007)**.
+
+
+
+**¿Debe abandonarse la idea o es recuperable?**
+La intuición central —que un **activo físico local duradero pero no portable** puede servir de anclaje material para instituciones emergentes— **es recuperable únicamente si se despoja de toda redistribución y sanción automáticas**, trasladando la apropiación y el cumplimiento a decisiones secuenciales voluntarias de los propios agentes (en la línea de la evidencia empírica de **Yamamoto y Goto, 2024**, sobre decisiones alternas con derecho de salida, citada en el archivo de trabajo).
+
+A continuación se reconstruye el modelo desde cero (`V201-R`), respondiendo explícitamente a las siete preguntas de la auditoría con viabilidad algebraica verificada.
+
+---
+
+### 1. Reconstrucción de incentivos condicionales y separación Física / Institución (Preguntas 1 y 3)
+
+Para eliminar el «alguacil oculto» en la física del simulador, se separa estrictamente la **tecnología física** de las **acciones institucionales voluntarias**:
+
+#### A. Qué es física exógena (conservación y producción)
+
+1. **Stock local depreciable:** Cada local $g \in \{1,\dots,M\}$ de capacidad $k=4$ posee un stock físico $S_{g,t} \ge 0$ (inicialmente $S_{g,0} = 0$) que evoluciona únicamente por inversión física $I_{i,t} \in \{0, c_{\text{inv}}\}$ y depreciación natural $\gamma \in (0,1]$:
+
+$$S_{g,t+1} = \mathrm{clip}\Big((1-\gamma)S_{g,t} + \sum_{i \in g} I_{i,t}, \; 0, \; S_{\max}\Big).$$
+
+
+
+Se eliminan por completo $\phi(S)$ (peaje automático) y $-\eta S$ (quema punitiva automática).
+
+
+2. **Producción autárquica base ($y_0$):** Cualquier agente $i$ que trabaje ($e_{i,t}=1$, coste $c_{\text{work}}$) en modo individual (`AUTARKY`) aprovecha la infraestructura local $S_{g,t}$ obteniendo un retorno privado seguro (independiente del estado oculto $\omega_t \in \{G,B\}$):
+
+$$y_0(S) = \alpha_0\big(1 - e^{-\lambda S}\big).$$
+
+
+3. **Producción conjunta supermodular ($Y_{\text{joint}}$):** Existen cuatro roles $r_{i,t} \in \{0,1,2,3\}$. El rol $r=3$ es la operación crítica de coordinación/infraestructura, con un coste operativo adicional $\delta_0 > 0$ pagado *únicamente* cuando su titular decide activar el modo conjunto (`JOINT`). Si los 4 roles distintos están presentes en $g$ y **los 4 eligen simultáneamente trabajar en modo conjunto** ($m_{i,t} = 1$), cada uno cosecha directamente una cuarta parte del producto conjunto en el estado favorable $\omega_t = G$, o sufre su pérdida privada $-L_i$ ($L_i \in \{1,7\}$) en el estado adverso $\omega_t = B$:
+
+$$\frac{1}{4}Y_{\text{joint}}(S) = y_0(S) + b_{\text{spec}}\big(1 - e^{-\lambda S}\big).$$
+
+
+
+Si menos de 4 roles eligen `JOINT`, el proceso conjunto no arranca y quienes trabajaron reciben únicamente su producto autárquico $y_0(S)$ (aunque el crítico $r=3$ que activó `JOINT` asume su coste de preparación $\delta_0$).
+
+#### B. Qué es institución endógena (acciones voluntarias sin árbitro)
+
+Cada ronda $t$ se divide en tres sub-etapas observables localmente dentro del grupo $g$:
+
+1. **Sub-etapa 1 (Gatekeeping / Participación condicional a señal):** Tras observar su rol $r_{i,t}$, la composición de roles del local $\mathbf{n}_{-i,g,t}$, el nivel discretizado $\tilde{S}_{g,t}$ y su señal privada $s_{i,t} \in \{0,1\}$, cada agente elige su modo operativo $m_{i,t} \in \{\text{AUTARKY}, \text{JOINT}\}$. Al exigir completitud ($4/4$ en `JOINT`), tanto el trabajador crítico como cualquier ordinario ejercen **derecho efectivo de exclusión/veto**: basta que uno elija `AUTARKY` para bloquear la renta supermodular.
+2. **Sub-etapa 2 (Transferencia voluntaria ex-post, sin coerción):** Si la producción conjunta se ejecutó en $\omega_t = G$, cada trabajador ordinario $j \in \{0,1,2\}$ decide libremente si transfiere una compensación $\tau_{j,t} \in \{0, \tau\}$ de su propio bolsillo al titular del rol crítico ($r=3$). El simulador **no** obliga a pagar $\tau$ ni multa a quien paga $0$. El titular crítico observa cuántos pagos recibió ($T_{g,t} \in \{0,1,2,3\}$) antes de la siguiente ronda.
+
+
+3. **Sub-etapa 3 (Inversión, cambio de rol y salida libre):** Cada agente decide si invierte $I_{i,t} \in \{0, c_{\text{inv}}\}$ en $S_{g,t}$, si cambia de oficio (cuando le toca turno asincrónico, con fricción $c_{\text{sw}}$) o si abandona el grupo (`LEAVE`, con coste $s_{\text{mov}}$), perdiendo todo acceso al capital $S_{g,t}$ del local que abandona.
+
+---
+
+### 2. Viabilidad matemática exacta: Bayes, unanimidad y ecuación de Bellman (Preguntas 1, 2 y 4)
+
+Fijamos los parámetros del entorno antes de simular:
+
+
+$$\pi = \Pr(\omega_t = G) = 0.65, \quad a = 0.80, \quad \alpha_0 = 0.25, \quad b_{\text{spec}} = 0.80, \quad \lambda = 1.0,$$
+
+$$c_{\text{work}} = 0.05, \quad \delta_0 = 0.30, \quad \tau = 0.25, \quad c_{\text{inv}} = 0.04, \quad \beta_{\text{RL}} = 0.95, \quad L_i \in \{1, 7\}.$$
+
+#### Paso 1: Filtrado bayesiano endógeno por unanimidad ($4/4$)
+
+Dado $s_{i,t} = 1$, la probabilidad posterior de $\omega_t = G$ es $p_+ = \frac{0.65 \times 0.80}{0.65 \times 0.80 + 0.35 \times 0.20} = \frac{52}{59} \approx 0.881356$. Dado $s_{i,t} = 0$, es $p_- = \frac{13}{41} \approx 0.317073$.
+
+Crucialmente, cuando los 4 miembros siguen la regla contingente a señal ($m_{j,t} = s_{j,t}$), la producción conjunta solo se dispara si los otros 3 miembros también reciben señal positiva ($a^3 = 0.512$ en $G$, frente a $(1-a)^3 = 0.008$ en $B$). Las probabilidades de ejecución conjunta condicionadas a la señal propia $s_i$ son:
+
+* Con $s_{i,t} = 1$: $P_{G \mid +} = p_+ a^3 = \frac{26.624}{59} \approx 0.451254$ y $P_{B \mid +} = (1-p_+)(1-a)^3 = \frac{0.056}{59} \approx 0.000949$.
+* Con $s_{i,t} = 0$: $P_{G \mid -} = p_- a^3 = \frac{6.656}{41} \approx 0.162341$ y $P_{B \mid -} = (1-p_-)(1-a)^3 = \frac{0.224}{41} \approx 0.005463$.
+
+La exigencia física de los 4 oficios actúa como un **filtro epistémico de Condorcet**: reduce la exposición esperada al riesgo catastrófico $L_7 = 7$ bajo $s_i=1$ de $(1-p_+)7 = 0.8305$ a tan solo $P_{B \mid +}\cdot 7 = \mathbf{0.006644}$ por ronda.
+
+#### Paso 2: Gradiente privado de inversión desde monocultivo ($S_{g,0} = 0$)
+
+En monocultivo ($r_1=r_2=r_3=r_4=0$), ningún agente obtiene excedente conjunto, pero cada uno recibe su producción autárquica $y_0(S) = 0.25(1 - e^{-S})$. El valor presente descontado privado de invertir $c_{\text{inv}} = 0.04$ unidades de recurso en $S_{g,t}$ evaluado en $S=0$ es:
+
+
+$$PV_{\text{inv}}(S=0) = \sum_{h=1}^{\infty} \beta_{\text{RL}}^h (1-\gamma)^{h-1} y_0'(0)\, c_{\text{inv}} = \frac{0.95 \times 0.25 \times 0.04}{1 - 0.95(1-\gamma)} = \frac{0.0095}{0.05 + 0.95\gamma}.$$
+
+
+La inversión inicial desde monocultivo es **estrictamente rentable de forma privada** ($PV_{\text{inv}}(0) > c_{\text{inv}} = 0.04$) si y solo si:
+
+
+$$\gamma < \gamma_{\text{boot}} = \frac{0.1875}{0.95} \approx \mathbf{0.19737}.$$
+
+
+Cuando $\gamma < \gamma_{\text{boot}}$, los agentes acumulan capital autárquico hasta igualar el beneficio marginal descontado con el coste unitario ($PV_{\text{inv}}(S_{\text{aut}}) = c_{\text{inv}}$), alcanzando un stock estacionario autárquico:
+
+
+$$S_{\text{aut}}(\gamma) = \ln\left(\frac{0.2375}{0.05 + 0.95\gamma}\right).$$
+
+#### Paso 3: Rentabilidad estática de todos los roles (incluidos $L_i = 7$)
+
+Sea $\Delta y(S) \equiv \frac{1}{4}Y_{\text{joint}}(S) - y_0(S) = 0.80(1 - e^{-S})$ el excedente supermodular por persona.
+
+* **Trabajador ordinario ($r \in \{0,1,2\}$) que paga $\tau = 0.25$ en $G$:**
+
+$$\Delta U_{\text{ord}}(S, L_j \mid s_j=1) = P_{G \mid +}\big[0.80(1-e^{-S}) - 0.25\big] - P_{B \mid +}\big[0.25(1-e^{-S}) + L_j\big].$$
+
+
+
+Para el agente más vulnerable ($L_j = 7$):
+
+$$\Delta U_{\text{ord}}(S, 7 \mid s_j=1) = 0.360766(1 - e^{-S}) - 0.119458 > 0 \iff S > S_{\text{static}} = \mathbf{0.40215}.$$
+
+
+
+Bajo señal negativa ($s_j=0$), para todo $S \le 1.5$ se cumple $\Delta U_{\text{ord}}(S, 7 \mid s_j=0) \le -0.0185 < 0$, por lo que el agente $L_7$ **se abstiene racionalmente (`AUTARKY`) cuando $s_j=0$** y participa (`JOINT`) cuando $s_j=1$.
+* **Trabajador crítico ($r=3$) cuando recibe $3\tau = 0.75$ en $G$:**
+
+$$\Delta U_{\text{crit}}(S, L_3 \mid s_3=1) = P_{G \mid +}\big[0.80(1-e^{-S}) + 0.75\big] - P_{B \mid +}\big[0.25(1-e^{-S}) + L_3\big] - \delta_0.$$
+
+
+
+Para $L_3 = 7$: $\Delta U_{\text{crit}}(S, 7 \mid s_3=1) = 0.360766(1 - e^{-S}) + 0.031798 > 0$ para todo $S \ge 0$ (y si $\tau = 0$, pierde $-0.3066 + 0.3608(1-e^{-S}) < 0$ para todo $S < 1.797$). Bajo $s_3=0$, $\Delta U_{\text{crit}}(S, L_3 \mid s_3=0) < -0.055 < 0$, por lo que también se abstiene ante señal negativa.
+
+#### Paso 4: Ecuación de Bellman para la transferencia voluntaria $\tau$ (sin contrato externo)
+
+¿Por qué paga el trabajador ordinario $\tau = 0.25$ en la Sub-etapa 2 si no hay multa? Si el titular crítico condiciona su participación futura `JOINT` a haber recibido al menos 2 transferencias ($T_{g,t-1} \ge 2$), el valor esperado por ronda de mantener viva la relación cooperativa en el stock $S$ es $V_{\text{rel}}(S, L_j) = \Pr(s_j=1)\,\Delta U_{\text{ord}}(S, L_j \mid s_j=1) = 0.59\,\Delta U_{\text{ord}}(S, L_j \mid s_j=1)$.
+
+Por la ecuación de Bellman estacionaria, pagar $\tau = 0.25$ hoy es subjuego-perfecto si el valor presente de la renta futura perdida por ruptura supera el ahorro inmediato $\tau$:
+
+
+$$\frac{\beta_{\text{RL}}}{1 - \beta_{\text{RL}}} V_{\text{rel}}(S, L_j) > \tau \iff 19 \times 0.59 \times \big[0.360766(1 - e^{-S}) - 0.119458\big] > 0.25$$
+
+$$\iff 0.360766(1 - e^{-S}) > 0.141759 \iff S > S_{\text{rel}} = \mathbf{0.49913}.$$
+
+Cruzando $S_{\text{aut}}(\gamma) > S_{\text{rel}} = 0.49913$ obtenemos la **frontera superior exacta y positiva de depreciación**:
+
+
+$$\frac{0.2375}{0.05 + 0.95\gamma} > e^{0.49913} = 1.64729 \iff \gamma < \gamma_{\max} = \frac{0.094177}{0.95} = \mathbf{0.09913} \in (0,1).$$
+
+
+Por ejemplo, en $\gamma = 0.05$, el stock autárquico alcanza $S_{\text{aut}}(0.05) = 0.8903 \in (0.49913, 1.797)$:
+
+* El mantenimiento físico requiere $\gamma S = 0.0445$ por ronda, apenas el **27,8%** de la capacidad máxima de inversión del grupo ($4 \times 0.04 = 0.16$).
+* Sin transferencias voluntarias ($\tau=0$), el crítico pierde $-0.0940$ por ronda; con transferencias voluntarias ($\tau=0.25$), **los 4 roles (incluidos $L=7$) obtienen excedente esperado estrictamente positivo** ($+0.2445$ el crítico y $+0.0932$ cada ordinario en cada ronda con $s_i=1$).
+
+---
+
+### 3. Choque de obsolescencia tecnológica, valor de salida y frontera inferior $\gamma_{\min}(\sigma)$ (Pregunta 5)
+
+Para evitar confundir un cambio de señal con obsolescencia de activos ni apelar a falacias de coste hundido, definimos un **proceso de innovación tecnológica $\Theta_t \in \{\Theta_1, \Theta_2\}$** con tasa de llegada de Poisson $\sigma > 0$:
+
+1. **Incompatibilidad física de paradigmas:** Cada local $g$ almacena capital específico de un paradigma $(S_{g,t}, \theta_{g,t})$. Cuando ocurre un choque $\Theta_1 \to \Theta_2$:
+* El capital heredado $S_{g,t}^{\Theta_1}$ pierde su complementariedad bajo $\Theta_2$ ($Y_{\text{joint}}^{\Theta_2}(S^{\Theta_1}) = 0$) y su rendimiento autárquico cae a $\kappa_{\text{obs}} y_0(S)$ con $\kappa_{\text{obs}} = 0.25$.
+* **Restricción física de emplazamiento:** Un local $g$ no puede acumular capital del nuevo paradigma $\Theta_2$ mientras los restos de la infraestructura anterior superen el umbral de despeje $S_{\text{clear}} = 0.15$.
+
+
+2. **Valor de opción externa calculable (`LEAVE`):** Cada agente puede elegir `LEAVE` pagando $s_{\text{mov}} = 0.12$ para trasladarse a un emplazamiento virgen ($S_{\text{new}} = 0, \theta = \Theta_2$).
+* El valor presente de abandonar individualmente (`LEAVE`) es $V_{\text{out}}(\gamma) = V_{\text{build}}^{\Theta_2}(\gamma) - s_{\text{mov}}$, mientras que el valor de quedarse (`STAY`) hasta que el local se despeje por depreciación natural exige esperar:
+
+$$\tau_{\text{clear}}(\gamma) = \left\lceil \frac{\ln(S_{\text{aut}}(\gamma) / S_{\text{clear}})}{-\ln(1 - \gamma)} \right\rceil \approx \frac{1}{\gamma} \ln\left(\frac{S_{\text{aut}}(\gamma)}{0.15}\right) \text{ rondas}.$$
+
+
+* Mientras $S_{g,t}^{\Theta_1} > S_{\text{exit}}(\gamma)$ —donde $S_{\text{exit}}(\gamma)$ iguala la pérdida por espera $\tau_{\text{clear}}(\gamma)\Delta V$ con el coste de migración más la pérdida de coordinación inicial $s_{\text{mov}} + C_{\text{coord}}$—, ningún agente unilateralmente quiere pagar $s_{\text{mov}}$ primero, generando **congestión institucional racional** (no sesgo irracional de coste hundido).
+
+
+3. **Bifurcación en $\gamma_{\min}(\sigma)$:** Bajo tasa de choques $\sigma$, la fracción estacionaria de tiempo que la economía logra sostener división del trabajo relacional es:
+
+$$F_{\text{rel}}(\gamma, \sigma) = \frac{1/\sigma}{1/\sigma + T_{\text{build}}(\gamma) + \tau_{\text{clear}}(\gamma)} \mathbf{1}[\gamma < \gamma_{\max}].$$
+
+
+
+Exigir viabilidad adaptativa ($F_{\text{rel}}(\gamma, \sigma) \ge 0.50$) determina una frontera inferior estrictamente positiva:
+
+$$\gamma_{\min}(\sigma) \approx \frac{\sigma \ln(S_{\text{aut}} / S_{\text{clear}})}{1 - \sigma T_{\text{build}}(\gamma)} > 0.$$
+
+
+
+---
+
+### 4. Contraste de originalidad frente a la literatura (Pregunta 6)
+
+| Antecedente | Qué demuestra | Por qué NO explica V201-R (Predicción discriminante) |
+| --- | --- | --- |
+| **Brown y Taddei (2007)** (*PLOS ONE*)
+
+ | Un bien público duradero ($S$) altera los umbrales de invasión evolutiva en dilemas sociales.
+
+ | En Brown–Taddei, $S$ es un bien público **no excluible** con beneficios automáticos; no hay especialización asimétrica ni transferencias relacionales $\tau$ no ejecutadas por el entorno. Si fijamos $\tau \equiv 0$, V201-R colapsa al **0%** de división del trabajo aunque $S > 0$. |
+| **Smith y Wen (2017)** (*J. Econ. Sci. Assoc.*)
+
+ | Los sujetos invierten en mejorar la tecnología de un bien público cuando la institución de reparto es fija.
+
+ | No modela la emergencia de transferencias voluntarias sin árbitro ni la pérdida de adaptabilidad por esclerosis de capital específico. |
+| **Baker, Gibbons y Murphy (2002)** (*QJE*) y **Hart–Moore**
+
+ | Contratos relacionales autoejecutables mediante amenaza de reversión a autarquía en horizonte infinito.
+
+ | Carecen de una variable de estado material lenta $S_t$ que deba acumularse desde cero. En su teoría, si el factor de descuento $\beta_{\text{RL}}$ basta, la cooperación es inmediata; en V201-R, incluso con $\beta_{\text{RL}} = 0.95$, **existe una brecha observable $\gamma \in (\gamma_{\max}, \gamma_{\text{static}}) = (0.0991, 0.1146)$** donde el contrato formal externo funciona pero el acuerdo relacional fracasa porque $S_{\text{aut}}(\gamma) \in (0.402, 0.499)$ no alcanza $S_{\text{rel}}$. |
+| **Haupt et al. (2024) / MOCA** y **Yaman et al. (2023)**
+
+ | Contratos formales ejecutados por el entorno (MOCA) o sanciones sociales costosas (Yaman).
+
+ | V201-R opera **sin compilador externo de contratos y sin acción de castigo social**, sosteniendo cooperación únicamente mediante exclusión (`AUTARKY`) y transferencias voluntarias ex-post ancladas en $S_{g,t}$. |
+
+**Proposición discriminante (falsable):**
+
+> *En ausencia de ejecución contractual exógena, existe una región intermedia de depreciación $\gamma \in (\gamma_{\max}, \gamma_{\text{static}}) = (0.0991, 0.1146)$ en la que los agentes acumulan capital suficiente para hacer la división del trabajo estáticamente rentable ($S > S_{\text{static}} = 0.402$), de modo que un contrato externo tipo V200 logra alta cooperación, pero el intercambio relacional voluntario fracasa ($<10\%$) porque $S < S_{\text{rel}} = 0.4991$. Solo para $\gamma \in (\gamma_{\min}(\sigma), \gamma_{\max})$ emerge división del trabajo relacional auto-sostenible y adaptable.*
+
+---
+
+### 5. Experimento mínimo preregistrado y falsable (`v201b_relational_durable_capital.py`) (Pregunta 7)
+
+Antes de ejecutar entrenamientos largos, el script debe incluir una función `assert_incentive_viability()` que verifique numéricamente las desigualdades de la Sección 2.
+
+* **Diseño:** $W = 32$ mundos independientes por brazo; $M = 16$ locales de $k = 4$ agentes ($N = 64$, mitad $L=1$ y mitad $L=7$); inicialización en monocultivo ($r_{i,0}=0$) y $S_{g,0}=0$.
+* **Horizonte:** $T_{\text{pre}} = 12.000$ rondas en paradigma $\Theta_1$, seguidas de un **choque de obsolescencia tecnológica** $\Theta_1 \to \Theta_2$ en $t = 12.000$ hasta $T_{\text{total}} = 20.000$ (con opción `LEAVE` a emplazamientos limpios $S_{\text{new}}=0$ pagando $s_{\text{mov}} = 0.12$).
+* **Aprendices:** Q-learning tabular estrictamente privado ($\alpha = 0.03$, $\beta_{\text{RL}} = 0.95$, $\epsilon_t = \max(0.02, 0.30 e^{-t/3000})$), donde cada agente observa únicamente $(r_{i,t}, \mathbf{n}_{-i,g,t}, \tilde{S}_{g,t}, s_{i,t}, T_{g,t-1})$ (sin identidades globales ni pagos ajenos).
+* **6 Brazos experimentales con igualdad de acceso informativo:**
+1. `CTRL_S_ZERO`: Control estricto $S_{g,t} \equiv 0$ (sin capital duradero, con transferencias voluntarias $\tau \in \{0, 0.25\}$ permitidas; equivale a Baker–Gibbons–Murphy sin activo).
+2. `GAMMA_0.25`: $\gamma = 0.25 > \gamma_{\text{boot}}$ (depreciación demasiado rápida para arrancar desde monocultivo).
+3. `GAMMA_0.105`: $\gamma = 0.105 \in (\gamma_{\max}, \gamma_{\text{static}})$ (**prueba de la brecha teórica**: $S_{\text{aut}} \approx 0.460 \in (0.402, 0.499)$, estáticamente viable pero relacionalmente inviable).
+4. `GAMMA_0.05`: $\gamma = 0.05 \in (\gamma_{\min}, \gamma_{\max})$ (banda viable y adaptable: $S_{\text{aut}} \approx 0.890 > S_{\text{rel}}$).
+5. `GAMMA_0.005`: $\gamma = 0.005 < \gamma_{\min}$ (esclerosis institucional por bloqueo de emplazamiento tras el choque $\Theta_1 \to \Theta_2$).
+6. `RIVAL_CONTRACT_GAMMA_0.105`: Igual que `GAMMA_0.105`, pero con ejecución contractual automática de $\tau = 0.25$ por el simulador (rival tipo V200/Haupt).
+
+
+* **Criterios exactos de falsación (preregistrados):**
+* **F1 (Refutación de necesidad de $S_{g,t}$):** Si `CTRL_S_ZERO` ($S \equiv 0$) logra $\ge 20\%$ de grupos con los 4 roles activos y entregas funcionales en $t \in [10.000, 12.000]$.
+* **F2 (Refutación de la brecha relacional):** Si `GAMMA_0.105` con transferencias voluntarias alcanza $> 50\%$ de la cooperación obtenida por `RIVAL_CONTRACT_GAMMA_0.105` en $t \in [10.000, 12.000]$.
+* **F3 (Refutación de emergencia o adaptabilidad):** Si `GAMMA_0.05` no supera el $60\%$ de grupos funcionales en $t \in [10.000, 12.000]$, **o** si en la ventana post-choque $t \in [18.000, 20.000]$ no supera significativamente (IC bootstrap 95% sobre los 32 mundos excluyendo cero) tanto a `GAMMA_0.005` en bienestar medio como a $W_{L7} > 0$. Si F3 se cumple, se abandona esta línea sin reajustar parámetros.

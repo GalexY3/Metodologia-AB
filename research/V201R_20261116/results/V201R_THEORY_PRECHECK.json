@@ -1,0 +1,682 @@
+{
+  "input": "theory_inputs/HYDROGEN_V201R_20261116/HYDROGEN_V201R_RECONSTRUCTION.txt",
+  "input_sha256": "82592df070764a5889df4227536fd24bdaf935512de5965aa02aa77197eda411",
+  "scientific_training_executed": false,
+  "analytic_theory_audit": true,
+  "no_AB_originality_awarded": true,
+  "conditional_probabilities": [
+    {
+      "signal": 0,
+      "posterior_G": "13/41",
+      "posterior_G_float": 0.3170731707317073,
+      "other_three_follow_G_joint": 0.16234146341463415,
+      "other_three_follow_B_joint": 0.005463414634146341
+    },
+    {
+      "signal": 1,
+      "posterior_G": "52/59",
+      "posterior_G_float": 0.8813559322033898,
+      "other_three_follow_G_joint": 0.4512542372881356,
+      "other_three_follow_B_joint": 0.0009491525423728814
+    }
+  ],
+  "payoff_enumeration_max_error": 1.3877787807814457e-16,
+  "conditional_gains": [
+    {
+      "stock": 0.0,
+      "role": 0,
+      "loss": 1.0,
+      "signal": 0,
+      "joint_minus_autarky": -0.046048780487804884,
+      "all_peers_follow_signals": true,
+      "three_promised_payers": true
+    },
+    {
+      "stock": 0.0,
+      "role": 0,
+      "loss": 1.0,
+      "signal": 1,
+      "joint_minus_autarky": -0.1137627118644068,
+      "all_peers_follow_signals": true,
+      "three_promised_payers": true
+    },
+    {
+      "stock": 0.0,
+      "role": 1,
+      "loss": 1.0,
+      "signal": 0,
+      "joint_minus_autarky": -0.046048780487804884,
+      "all_peers_follow_signals": true,
+      "three_promised_payers": true
+    },
+    {
+      "stock": 0.0,
+      "role": 1,
+      "loss": 1.0,
+      "signal": 1,
+      "joint_minus_autarky": -0.1137627118644068,
+      "all_peers_follow_signals": true,
+      "three_promised_payers": true
+    },
+    {
+      "stock": 0.0,
+      "role": 2,
+      "loss": 7.0,
+      "signal": 0,
+      "joint_minus_autarky": -0.07882926829268294,
+      "all_peers_follow_signals": true,
+      "three_promised_payers": true
+    },
+    {
+      "stock": 0.0,
+      "role": 2,
+      "loss": 7.0,
+      "signal": 1,
+      "joint_minus_autarky": -0.11945762711864409,
+      "all_peers_follow_signals": true,
+      "three_promised_payers": true
+    },
+    {
+      "stock": 0.0,
+      "role": 3,
+      "loss": 7.0,
+      "signal": 0,
+      "joint_minus_autarky": -0.21648780487804875,
+      "all_peers_follow_signals": true,
+      "three_promised_payers": true
+    },
+    {
+      "stock": 0.0,
+      "role": 3,
+      "loss": 7.0,
+      "signal": 1,
+      "joint_minus_autarky": 0.03179661016949159,
+      "all_peers_follow_signals": true,
+      "three_promised_payers": true
+    },
+    {
+      "stock": 0.40215,
+      "role": 0,
+      "loss": 1.0,
+      "signal": 0,
+      "joint_minus_autarky": -0.003497489845891391,
+      "all_peers_follow_signals": true,
+      "three_promised_payers": true
+    },
+    {
+      "stock": 0.40215,
+      "role": 0,
+      "loss": 1.0,
+      "signal": 1,
+      "joint_minus_autarky": 0.005694013220202381,
+      "all_peers_follow_signals": true,
+      "three_promised_payers": true
+    },
+    {
+      "stock": 0.40215,
+      "role": 1,
+      "loss": 1.0,
+      "signal": 0,
+      "joint_minus_autarky": -0.003497489845891391,
+      "all_peers_follow_signals": true,
+      "three_promised_payers": true
+    },
+    {
+      "stock": 0.40215,
+      "role": 1,
+      "loss": 1.0,
+      "signal": 1,
+      "joint_minus_autarky": 0.005694013220202381,
+      "all_peers_follow_signals": true,
+      "three_promised_payers": true
+    },
+    {
+      "stock": 0.40215,
+      "role": 2,
+      "loss": 7.0,
+      "signal": 0,
+      "joint_minus_autarky": -0.03627797765076944,
+      "all_peers_follow_signals": true,
+      "three_promised_payers": true
+    },
+    {
+      "stock": 0.40215,
+      "role": 2,
+      "loss": 7.0,
+      "signal": 1,
+      "joint_minus_autarky": -9.020340349091133e-07,
+      "all_peers_follow_signals": true,
+      "three_promised_payers": true
+    },
+    {
+      "stock": 0.40215,
+      "role": 3,
+      "loss": 7.0,
+      "signal": 0,
+      "joint_minus_autarky": -0.17393651423613524,
+      "all_peers_follow_signals": true,
+      "three_promised_payers": true
+    },
+    {
+      "stock": 0.40215,
+      "role": 3,
+      "loss": 7.0,
+      "signal": 1,
+      "joint_minus_autarky": 0.15125333525410078,
+      "all_peers_follow_signals": true,
+      "three_promised_payers": true
+    },
+    {
+      "stock": 0.49913,
+      "role": 0,
+      "loss": 1.0,
+      "signal": 0,
+      "joint_minus_autarky": 0.004447068320564901,
+      "all_peers_follow_signals": true,
+      "three_promised_payers": true
+    },
+    {
+      "stock": 0.49913,
+      "role": 0,
+      "loss": 1.0,
+      "signal": 1,
+      "joint_minus_autarky": 0.02799723567226709,
+      "all_peers_follow_signals": true,
+      "three_promised_payers": true
+    },
+    {
+      "stock": 0.49913,
+      "role": 1,
+      "loss": 1.0,
+      "signal": 0,
+      "joint_minus_autarky": 0.004447068320564901,
+      "all_peers_follow_signals": true,
+      "three_promised_payers": true
+    },
+    {
+      "stock": 0.49913,
+      "role": 1,
+      "loss": 1.0,
+      "signal": 1,
+      "joint_minus_autarky": 0.02799723567226709,
+      "all_peers_follow_signals": true,
+      "three_promised_payers": true
+    },
+    {
+      "stock": 0.49913,
+      "role": 2,
+      "loss": 7.0,
+      "signal": 0,
+      "joint_minus_autarky": -0.02833341948431315,
+      "all_peers_follow_signals": true,
+      "three_promised_payers": true
+    },
+    {
+      "stock": 0.49913,
+      "role": 2,
+      "loss": 7.0,
+      "signal": 1,
+      "joint_minus_autarky": 0.022302320418029802,
+      "all_peers_follow_signals": true,
+      "three_promised_payers": true
+    },
+    {
+      "stock": 0.49913,
+      "role": 3,
+      "loss": 7.0,
+      "signal": 0,
+      "joint_minus_autarky": -0.16599195606967898,
+      "all_peers_follow_signals": true,
+      "three_promised_payers": true
+    },
+    {
+      "stock": 0.49913,
+      "role": 3,
+      "loss": 7.0,
+      "signal": 1,
+      "joint_minus_autarky": 0.17355655770616546,
+      "all_peers_follow_signals": true,
+      "three_promised_payers": true
+    },
+    {
+      "stock": 0.8903152454708944,
+      "role": 0,
+      "loss": 1.0,
+      "signal": 0,
+      "joint_minus_autarky": 0.029702901155327352,
+      "all_peers_follow_signals": true,
+      "three_promised_payers": true
+    },
+    {
+      "stock": 0.8903152454708944,
+      "role": 0,
+      "loss": 1.0,
+      "signal": 1,
+      "joint_minus_autarky": 0.09889941123996435,
+      "all_peers_follow_signals": true,
+      "three_promised_payers": true
+    },
+    {
+      "stock": 0.8903152454708944,
+      "role": 1,
+      "loss": 1.0,
+      "signal": 0,
+      "joint_minus_autarky": 0.029702901155327352,
+      "all_peers_follow_signals": true,
+      "three_promised_payers": true
+    },
+    {
+      "stock": 0.8903152454708944,
+      "role": 1,
+      "loss": 1.0,
+      "signal": 1,
+      "joint_minus_autarky": 0.09889941123996435,
+      "all_peers_follow_signals": true,
+      "three_promised_payers": true
+    },
+    {
+      "stock": 0.8903152454708944,
+      "role": 2,
+      "loss": 7.0,
+      "signal": 0,
+      "joint_minus_autarky": -0.003077586649550698,
+      "all_peers_follow_signals": true,
+      "three_promised_payers": true
+    },
+    {
+      "stock": 0.8903152454708944,
+      "role": 2,
+      "loss": 7.0,
+      "signal": 1,
+      "joint_minus_autarky": 0.09320449598572707,
+      "all_peers_follow_signals": true,
+      "three_promised_payers": true
+    },
+    {
+      "stock": 0.8903152454708944,
+      "role": 3,
+      "loss": 7.0,
+      "signal": 0,
+      "joint_minus_autarky": -0.14073612323491652,
+      "all_peers_follow_signals": true,
+      "three_promised_payers": true
+    },
+    {
+      "stock": 0.8903152454708944,
+      "role": 3,
+      "loss": 7.0,
+      "signal": 1,
+      "joint_minus_autarky": 0.24445873327386275,
+      "all_peers_follow_signals": true,
+      "three_promised_payers": true
+    },
+    {
+      "stock": 1.5,
+      "role": 0,
+      "loss": 1.0,
+      "signal": 0,
+      "joint_minus_autarky": 0.05378467834658424,
+      "all_peers_follow_signals": true,
+      "three_promised_payers": true
+    },
+    {
+      "stock": 1.5,
+      "role": 0,
+      "loss": 1.0,
+      "signal": 1,
+      "joint_minus_autarky": 0.16650559178319738,
+      "all_peers_follow_signals": true,
+      "three_promised_payers": true
+    },
+    {
+      "stock": 1.5,
+      "role": 1,
+      "loss": 1.0,
+      "signal": 0,
+      "joint_minus_autarky": 0.05378467834658424,
+      "all_peers_follow_signals": true,
+      "three_promised_payers": true
+    },
+    {
+      "stock": 1.5,
+      "role": 1,
+      "loss": 1.0,
+      "signal": 1,
+      "joint_minus_autarky": 0.16650559178319738,
+      "all_peers_follow_signals": true,
+      "three_promised_payers": true
+    },
+    {
+      "stock": 1.5,
+      "role": 2,
+      "loss": 7.0,
+      "signal": 0,
+      "joint_minus_autarky": 0.021004190541706193,
+      "all_peers_follow_signals": true,
+      "three_promised_payers": true
+    },
+    {
+      "stock": 1.5,
+      "role": 2,
+      "loss": 7.0,
+      "signal": 1,
+      "joint_minus_autarky": 0.16081067652896008,
+      "all_peers_follow_signals": true,
+      "three_promised_payers": true
+    },
+    {
+      "stock": 1.5,
+      "role": 3,
+      "loss": 7.0,
+      "signal": 0,
+      "joint_minus_autarky": -0.11665434604365962,
+      "all_peers_follow_signals": true,
+      "three_promised_payers": true
+    },
+    {
+      "stock": 1.5,
+      "role": 3,
+      "loss": 7.0,
+      "signal": 1,
+      "joint_minus_autarky": 0.3120649138170957,
+      "all_peers_follow_signals": true,
+      "three_promised_payers": true
+    }
+  ],
+  "negative_signal_low_loss_counterexample": 0.029702901155327352,
+  "negative_signal_high_loss_at1p5_counterexample": 0.021004190541706193,
+  "transfer_pivotality": [
+    {
+      "promised_payers": 3,
+      "critical_required_payments": 2,
+      "payments_after_one_defection": 2,
+      "continuation_still_authorized": true,
+      "immediate_defection_gain": 0.25,
+      "payer_is_pivotal_for_written_continuation": false,
+      "one_period_deviation_not_deterred_by_written_threshold": true,
+      "full_sequential_incentive_compatibility_assessed": false
+    },
+    {
+      "promised_payers": 2,
+      "critical_required_payments": 2,
+      "payments_after_one_defection": 1,
+      "continuation_still_authorized": false,
+      "immediate_defection_gain": 0.25,
+      "payer_is_pivotal_for_written_continuation": true,
+      "one_period_deviation_not_deterred_by_written_threshold": false,
+      "full_sequential_incentive_compatibility_assessed": false
+    },
+    {
+      "promised_payers": 3,
+      "critical_required_payments": 3,
+      "payments_after_one_defection": 2,
+      "continuation_still_authorized": false,
+      "immediate_defection_gain": 0.25,
+      "payer_is_pivotal_for_written_continuation": true,
+      "one_period_deviation_not_deterred_by_written_threshold": false,
+      "full_sequential_incentive_compatibility_assessed": false
+    }
+  ],
+  "monitoring_memory": {
+    "probability_good_completed_opportunity": 0.26624,
+    "calendar_count_expected_lifetime_if_reset_on_every_nonsuccess": 1.3628434365460096,
+    "calendar_memory_future_rent_upper_reference": 0.07420050543990407,
+    "claimed_permanent_memory_future_rent_reference": 1.1086623999999992,
+    "payment_now": 0.25,
+    "calendar_memory_also_fails_reference_payment_bound": true,
+    "initially_zero_calendar_memory_is_absorbing_under_the_written_threshold": true,
+    "last_successful_opportunity_memory_is_a_different_policy": true
+  },
+  "investment": {
+    "claimed_marginal_gamma_boot": 0.19736842105263158,
+    "finite_increment_gamma_boot_if_working_exogenously": 0.1943392098519499,
+    "current_stock_for_positive_operating_output": 0.2231435513142097,
+    "maximum_autarky_output_from_one_investment": 0.009802640211919199,
+    "one_investment_cost": 0.04,
+    "single_investment_PV_optional_work_at_zero": 0.0,
+    "single_investment_net_optional_work_at_zero": -0.04,
+    "single_investment_PV_forced_work_reference": 0.09611727868650959,
+    "positive_first_investment_marginal_with_optional_rest_refuted": true,
+    "does_not_rule_out_profitable_multiperiod_investment": true,
+    "aut_stock_formula_is_not_a_solved_four_player_stock_equilibrium": true
+  },
+  "conditional_mode_candidates": [
+    {
+      "gamma": 0.105,
+      "reference_stock": 0.4612003864791371,
+      "conditional_mode_equilibria": 3,
+      "profiles": [
+        {
+          "donors": [
+            0,
+            1
+          ],
+          "role_policies": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "donors": [
+            0,
+            1
+          ],
+          "role_policies": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "donors": [
+            0,
+            1
+          ],
+          "role_policies": [
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        }
+      ],
+      "transfers_assumed_kept": true,
+      "not_a_full_relational_equilibrium": true
+    },
+    {
+      "gamma": 0.05,
+      "reference_stock": 0.8903152454708944,
+      "conditional_mode_equilibria": 1,
+      "profiles": [
+        {
+          "donors": [
+            0,
+            1
+          ],
+          "role_policies": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        }
+      ],
+      "transfers_assumed_kept": true,
+      "not_a_full_relational_equilibrium": true
+    },
+    {
+      "gamma": 0.005,
+      "reference_stock": 1.4673902547780857,
+      "conditional_mode_equilibria": 3,
+      "profiles": [
+        {
+          "donors": [
+            0,
+            1
+          ],
+          "role_policies": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "donors": [
+            0,
+            2
+          ],
+          "role_policies": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "donors": [
+            1,
+            2
+          ],
+          "role_policies": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        }
+      ],
+      "transfers_assumed_kept": true,
+      "not_a_full_relational_equilibrium": true
+    }
+  ],
+  "renewal_process_counterexamples": [
+    {
+      "sigma_times_rebuild": 0.1,
+      "stated_fraction": 0.9090909090909091,
+      "fraction_if_independent_Poisson_shocks_reset_rebuilding": 0.9048374180359595
+    },
+    {
+      "sigma_times_rebuild": 0.5,
+      "stated_fraction": 0.6666666666666666,
+      "fraction_if_independent_Poisson_shocks_reset_rebuilding": 0.6065306597126334
+    },
+    {
+      "sigma_times_rebuild": 1.0,
+      "stated_fraction": 0.5,
+      "fraction_if_independent_Poisson_shocks_reset_rebuilding": 0.36787944117144233
+    },
+    {
+      "sigma_times_rebuild": 2.0,
+      "stated_fraction": 0.3333333333333333,
+      "fraction_if_independent_Poisson_shocks_reset_rebuilding": 0.1353352832366127
+    }
+  ],
+  "unresolved_definitions": [
+    "S_max not numerically fixed",
+    "sigma not numerically fixed in the six-arm design",
+    "T_build and C_coord not solved",
+    "V_build and V_out not computed",
+    "Poisson shocks versus one scheduled shock are different processes",
+    "No vacant destination in16full sites for64agents unless site creation/reassignment is defined",
+    "Investment financing, stock-use rights and learning substage transitions not fully specified",
+    "Credible punishment and private/public monitoring not proved",
+    "S_zero removes all joint productive surplus, not just durability",
+    "Autarkic reference stock cannot be held fixed when joint production changes investment incentives"
+  ],
+  "all_follow_signal_policy_is_not_Bayes_Nash_in_claimed_region": true,
+  "all_three_payment_profile_is_not_self_enforcing_under_threshold2": true,
+  "exact_gamma_band_not_established": true,
+  "long_MARL_campaign_not_justified_yet": true,
+  "CT2_historical": 61,
+  "new_branch_score": null,
+  "N2": 0,
+  "N3": 0
+}

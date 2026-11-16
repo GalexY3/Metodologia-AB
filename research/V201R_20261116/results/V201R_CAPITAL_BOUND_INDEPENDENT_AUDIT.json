@@ -1,0 +1,64 @@
+{
+  "independent_algorithm": true,
+  "independent_external_team_or_data": false,
+  "monotone_ceiling_transition_upper_envelope": true,
+  "continuous_process": "reward=max(0,0.25*(1-exp(-S))-0.05)-I; S_next=(1-gamma)*S+I; I in {0,0.04}",
+  "proof": "At S=0, wait returns beta*V(0); invest returns -0.04+beta*V(0.04). If even an optimistic quantized upper bound on the latter is strictly negative, V(0)=0 and waiting is optimal.",
+  "floating_point_scope": "Dominance argument is analytic; numerical bounds include explicit 1e-12 outward guards. This is not an arbitrary-precision interval-arithmetic package.",
+  "rows": [
+    {
+      "gamma": 0.25,
+      "points": 16001,
+      "cap": 4.0,
+      "iterations": 554,
+      "guard_stock_and_reward": 1e-12,
+      "optimistic_value_at_first_invested_state": 2.1823632491349244e-11,
+      "first_investment_action_upper_bound": -0.03999999997826755,
+      "strictly_negative_investment_bound": true,
+      "first_action_upper_margin_below_zero": 0.03999999997826755,
+      "agrees_with_interpolation_method_on_sign": true
+    },
+    {
+      "gamma": 0.105,
+      "points": 16001,
+      "cap": 4.0,
+      "iterations": 554,
+      "guard_stock_and_reward": 1e-12,
+      "optimistic_value_at_first_invested_state": 2.1823632491349244e-11,
+      "first_investment_action_upper_bound": -0.03999999997826755,
+      "strictly_negative_investment_bound": true,
+      "first_action_upper_margin_below_zero": 0.03999999997826755,
+      "agrees_with_interpolation_method_on_sign": true
+    },
+    {
+      "gamma": 0.05,
+      "points": 16001,
+      "cap": 4.0,
+      "iterations": 554,
+      "guard_stock_and_reward": 1e-12,
+      "optimistic_value_at_first_invested_state": 2.1823632491349244e-11,
+      "first_investment_action_upper_bound": -0.03999999997826755,
+      "strictly_negative_investment_bound": true,
+      "first_action_upper_margin_below_zero": 0.03999999997826755,
+      "agrees_with_interpolation_method_on_sign": true
+    },
+    {
+      "gamma": 0.005,
+      "points": 16001,
+      "cap": 8.0,
+      "iterations": 535,
+      "guard_stock_and_reward": 1e-12,
+      "optimistic_value_at_first_invested_state": 0.52477417990857,
+      "first_investment_action_upper_bound": 0.4585354709141415,
+      "strictly_negative_investment_bound": false,
+      "first_action_upper_margin_below_zero": 0.0,
+      "agrees_with_interpolation_method_on_sign": true
+    }
+  ],
+  "all_signs_agree": true,
+  "scope": "Solitary autarky MDP without financing limits. Does not disprove coordinated investment, contingent public-good equilibria, or multiagent bootstrap.",
+  "CT2_historical": 61,
+  "new_branch_score": null,
+  "N2": 0,
+  "N3": 0
+}

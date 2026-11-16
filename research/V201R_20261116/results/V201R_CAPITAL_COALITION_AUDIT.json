@@ -1,0 +1,292 @@
+{
+  "protocol": "Post-input mathematical diagnostic; no confirmatory learning run",
+  "physical_model": "S_next=(1-gamma)*S+0.04*n_investors; own reward=max(0,0.25*(1-exp(-S))-0.05)-own_investment",
+  "discount": 0.95,
+  "horizon": 2000,
+  "omitted_positive_tail_bound": 1.4001693996774652e-44,
+  "cap_assumption": "No cap binds on the displayed feasible paths; Hydrogen did not specify S_max.",
+  "commitment_control_not_learned": true,
+  "investment_is_costly_effort_without_cash_constraint": true,
+  "scalar_closed_form_parity_max_error": 2.4424906541753444e-15,
+  "rows": [
+    {
+      "gamma": 0.25,
+      "contributors": 1,
+      "searched_investment_durations": [
+        0,
+        200
+      ],
+      "selected_duration_within_this_family": 0,
+      "feasible_private_discounted_return": 0.0,
+      "positive_feasible_return": false,
+      "first_investment_omission_gain": null,
+      "max_single_omission_among_first_50": null,
+      "unobserved_omission_continuation_assumes_others_keep_investing": true,
+      "this_is_not_an_equilibrium_or_a_globally_optimal_policy": true
+    },
+    {
+      "gamma": 0.25,
+      "contributors": 2,
+      "searched_investment_durations": [
+        0,
+        200
+      ],
+      "selected_duration_within_this_family": 0,
+      "feasible_private_discounted_return": 0.0,
+      "positive_feasible_return": false,
+      "first_investment_omission_gain": null,
+      "max_single_omission_among_first_50": null,
+      "unobserved_omission_continuation_assumes_others_keep_investing": true,
+      "this_is_not_an_equilibrium_or_a_globally_optimal_policy": true
+    },
+    {
+      "gamma": 0.25,
+      "contributors": 3,
+      "searched_investment_durations": [
+        0,
+        200
+      ],
+      "selected_duration_within_this_family": 0,
+      "feasible_private_discounted_return": 0.0,
+      "positive_feasible_return": false,
+      "first_investment_omission_gain": null,
+      "max_single_omission_among_first_50": null,
+      "unobserved_omission_continuation_assumes_others_keep_investing": true,
+      "this_is_not_an_equilibrium_or_a_globally_optimal_policy": true
+    },
+    {
+      "gamma": 0.25,
+      "contributors": 4,
+      "searched_investment_durations": [
+        0,
+        200
+      ],
+      "selected_duration_within_this_family": 200,
+      "feasible_private_discounted_return": 0.2633786492048324,
+      "positive_feasible_return": true,
+      "first_investment_omission_gain": 0.0242432120165737,
+      "max_single_omission_among_first_50": {
+        "round": 0,
+        "deviation_gain": 0.0242432120165737
+      },
+      "unobserved_omission_continuation_assumes_others_keep_investing": true,
+      "this_is_not_an_equilibrium_or_a_globally_optimal_policy": true
+    },
+    {
+      "gamma": 0.105,
+      "contributors": 1,
+      "searched_investment_durations": [
+        0,
+        200
+      ],
+      "selected_duration_within_this_family": 0,
+      "feasible_private_discounted_return": 0.0,
+      "positive_feasible_return": false,
+      "first_investment_omission_gain": null,
+      "max_single_omission_among_first_50": null,
+      "unobserved_omission_continuation_assumes_others_keep_investing": true,
+      "this_is_not_an_equilibrium_or_a_globally_optimal_policy": true
+    },
+    {
+      "gamma": 0.105,
+      "contributors": 2,
+      "searched_investment_durations": [
+        0,
+        200
+      ],
+      "selected_duration_within_this_family": 200,
+      "feasible_private_discounted_return": 0.19280267297212159,
+      "positive_feasible_return": true,
+      "first_investment_omission_gain": 0.014812071186877801,
+      "max_single_omission_among_first_50": {
+        "round": 0,
+        "deviation_gain": 0.014812071186877801
+      },
+      "unobserved_omission_continuation_assumes_others_keep_investing": true,
+      "this_is_not_an_equilibrium_or_a_globally_optimal_policy": true
+    },
+    {
+      "gamma": 0.105,
+      "contributors": 3,
+      "searched_investment_durations": [
+        0,
+        200
+      ],
+      "selected_duration_within_this_family": 200,
+      "feasible_private_discounted_return": 0.7696751108728258,
+      "positive_feasible_return": true,
+      "first_investment_omission_gain": 0.013897452825757606,
+      "max_single_omission_among_first_50": {
+        "round": 0,
+        "deviation_gain": 0.013897452825757606
+      },
+      "unobserved_omission_continuation_assumes_others_keep_investing": true,
+      "this_is_not_an_equilibrium_or_a_globally_optimal_policy": true
+    },
+    {
+      "gamma": 0.105,
+      "contributors": 4,
+      "searched_investment_durations": [
+        0,
+        200
+      ],
+      "selected_duration_within_this_family": 200,
+      "feasible_private_discounted_return": 1.211540995729818,
+      "positive_feasible_return": true,
+      "first_investment_omission_gain": 0.012986831630668716,
+      "max_single_omission_among_first_50": {
+        "round": 7,
+        "deviation_gain": 0.013222415275043087
+      },
+      "unobserved_omission_continuation_assumes_others_keep_investing": true,
+      "this_is_not_an_equilibrium_or_a_globally_optimal_policy": true
+    },
+    {
+      "gamma": 0.05,
+      "contributors": 1,
+      "searched_investment_durations": [
+        0,
+        200
+      ],
+      "selected_duration_within_this_family": 0,
+      "feasible_private_discounted_return": 0.0,
+      "positive_feasible_return": false,
+      "first_investment_omission_gain": null,
+      "max_single_omission_among_first_50": null,
+      "unobserved_omission_continuation_assumes_others_keep_investing": true,
+      "this_is_not_an_equilibrium_or_a_globally_optimal_policy": true
+    },
+    {
+      "gamma": 0.05,
+      "contributors": 2,
+      "searched_investment_durations": [
+        0,
+        200
+      ],
+      "selected_duration_within_this_family": 200,
+      "feasible_private_discounted_return": 0.7327898589178911,
+      "positive_feasible_return": true,
+      "first_investment_omission_gain": 0.001737045723560593,
+      "max_single_omission_among_first_50": {
+        "round": 20,
+        "deviation_gain": 0.003868637528390284
+      },
+      "unobserved_omission_continuation_assumes_others_keep_investing": true,
+      "this_is_not_an_equilibrium_or_a_globally_optimal_policy": true
+    },
+    {
+      "gamma": 0.05,
+      "contributors": 3,
+      "searched_investment_durations": [
+        0,
+        200
+      ],
+      "selected_duration_within_this_family": 200,
+      "feasible_private_discounted_return": 1.2954194606866474,
+      "positive_feasible_return": true,
+      "first_investment_omission_gain": 0.004745611662948068,
+      "max_single_omission_among_first_50": {
+        "round": 13,
+        "deviation_gain": 0.009888317164701732
+      },
+      "unobserved_omission_continuation_assumes_others_keep_investing": true,
+      "this_is_not_an_equilibrium_or_a_globally_optimal_policy": true
+    },
+    {
+      "gamma": 0.05,
+      "contributors": 4,
+      "searched_investment_durations": [
+        0,
+        200
+      ],
+      "selected_duration_within_this_family": 200,
+      "feasible_private_discounted_return": 1.67186791151837,
+      "positive_feasible_return": true,
+      "first_investment_omission_gain": 0.007720409750604729,
+      "max_single_omission_among_first_50": {
+        "round": 9,
+        "deviation_gain": 0.014830636862569246
+      },
+      "unobserved_omission_continuation_assumes_others_keep_investing": true,
+      "this_is_not_an_equilibrium_or_a_globally_optimal_policy": true
+    },
+    {
+      "gamma": 0.005,
+      "contributors": 1,
+      "searched_investment_durations": [
+        0,
+        200
+      ],
+      "selected_duration_within_this_family": 45,
+      "feasible_private_discounted_return": 0.4483318565209568,
+      "positive_feasible_return": true,
+      "first_investment_omission_gain": -0.0224424951278,
+      "max_single_omission_among_first_50": {
+        "round": 41,
+        "deviation_gain": 2.0026584884647036e-05
+      },
+      "unobserved_omission_continuation_assumes_others_keep_investing": true,
+      "this_is_not_an_equilibrium_or_a_globally_optimal_policy": true
+    },
+    {
+      "gamma": 0.005,
+      "contributors": 2,
+      "searched_investment_durations": [
+        0,
+        200
+      ],
+      "selected_duration_within_this_family": 32,
+      "feasible_private_discounted_return": 1.2990774701074759,
+      "positive_feasible_return": true,
+      "first_investment_omission_gain": -0.012968765941976157,
+      "max_single_omission_among_first_50": {
+        "round": 19,
+        "deviation_gain": 0.0060080516012577245
+      },
+      "unobserved_omission_continuation_assumes_others_keep_investing": true,
+      "this_is_not_an_equilibrium_or_a_globally_optimal_policy": true
+    },
+    {
+      "gamma": 0.005,
+      "contributors": 3,
+      "searched_investment_durations": [
+        0,
+        200
+      ],
+      "selected_duration_within_this_family": 25,
+      "feasible_private_discounted_return": 1.7968438473436592,
+      "positive_feasible_return": true,
+      "first_investment_omission_gain": -0.0037802093508843004,
+      "max_single_omission_among_first_50": {
+        "round": 13,
+        "deviation_gain": 0.011475686933059004
+      },
+      "unobserved_omission_continuation_assumes_others_keep_investing": true,
+      "this_is_not_an_equilibrium_or_a_globally_optimal_policy": true
+    },
+    {
+      "gamma": 0.005,
+      "contributors": 4,
+      "searched_investment_durations": [
+        0,
+        200
+      ],
+      "selected_duration_within_this_family": 21,
+      "feasible_private_discounted_return": 2.127035494424169,
+      "positive_feasible_return": true,
+      "first_investment_omission_gain": 0.0026695518371004923,
+      "max_single_omission_among_first_50": {
+        "round": 9,
+        "deviation_gain": 0.01581111118832812
+      },
+      "unobserved_omission_continuation_assumes_others_keep_investing": true,
+      "this_is_not_an_equilibrium_or_a_globally_optimal_policy": true
+    }
+  ],
+  "limits": "Positive return is a feasibility witness only. One profitable omission refutes this open-loop commitment, not every possible contingent equilibrium.",
+  "input_sha256": "82592df070764a5889df4227536fd24bdaf935512de5965aa02aa77197eda411",
+  "CT2_historical": 61,
+  "new_branch_score": null,
+  "N2": 0,
+  "N3": 0
+}

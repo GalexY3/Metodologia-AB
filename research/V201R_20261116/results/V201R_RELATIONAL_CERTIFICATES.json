@@ -1,0 +1,6522 @@
+{
+  "audit_of_a_repair_not_the_original_policy": true,
+  "strategy": "C initially. On successful GOOD joint production retain C iff T>=number_of_designated_donors. Otherwise retain C. Below threshold switch publicly and permanently to P. In P everybody selects AUTARKY and no transfers.",
+  "assumptions": [
+    "Public common-knowledge payment count after a successful production",
+    "Fixed capital and role identities; no depreciation, investment, migration or role switching in this control",
+    "IID private signals conditional on IID hidden states; stationary publicly known losses",
+    "Two designated donors/threshold two, or three designated donors/threshold three",
+    "Punishment AUTARKY is a weak stage equilibrium under unanimity; all players observe the public state",
+    "No automatic transfer, fine or capital destruction, but the contingent strategy itself is imposed"
+  ],
+  "covered_deviations": [
+    "Every conditional mode decision in C",
+    "Every donor withholding decision after GOOD joint production",
+    "Unilateral mode deviations in P; only the critical incurs an extra preparation cost",
+    "Nonpayers making an unnecessary payment cannot improve continuation"
+  ],
+  "proof_scope": "One-shot deviation certificate for this bounded discounted stationary fixed-capital public-history game. NOT the original private-monitoring model or the full capital/mobility game.",
+  "all_16_loss_allocations_checked": true,
+  "rational_inequalities": true,
+  "interval_certificates": [
+    {
+      "losses": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "94200/252263",
+      "upper_f_exact": "400/797",
+      "lower_f": 0.37341980393478236,
+      "upper_f": 0.5018820577164367,
+      "stock_min": 0.4674785063493704,
+      "stock_max": 0.6969183981030247,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "400/797",
+      "upper_f_exact": "1",
+      "lower_f": 0.5018820577164367,
+      "upper_f": 1.0,
+      "stock_min": 0.6969183981030247,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "400/797",
+      "upper_f_exact": "1",
+      "lower_f": 0.5018820577164367,
+      "upper_f": 1.0,
+      "stock_min": 0.6969183981030247,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "400/797",
+      "upper_f_exact": "140/173",
+      "lower_f": 0.5018820577164367,
+      "upper_f": 0.8092485549132948,
+      "stock_min": 0.6969183981030247,
+      "stock_max": 1.6567840330312988,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "94200/252263",
+      "upper_f_exact": "400/797",
+      "lower_f": 0.37341980393478236,
+      "upper_f": 0.5018820577164367,
+      "stock_min": 0.4674785063493704,
+      "stock_max": 0.6969183981030247,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "400/797",
+      "upper_f_exact": "1",
+      "lower_f": 0.5018820577164367,
+      "upper_f": 1.0,
+      "stock_min": 0.6969183981030247,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "400/797",
+      "upper_f_exact": "140/173",
+      "lower_f": 0.5018820577164367,
+      "upper_f": 0.8092485549132948,
+      "stock_min": 0.6969183981030247,
+      "stock_max": 1.6567840330312988,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "400/797",
+      "upper_f_exact": "1",
+      "lower_f": 0.5018820577164367,
+      "upper_f": 1.0,
+      "stock_min": 0.6969183981030247,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        1,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "400/797",
+      "upper_f_exact": "140/173",
+      "lower_f": 0.5018820577164367,
+      "upper_f": 0.8092485549132948,
+      "stock_min": 0.6969183981030247,
+      "stock_max": 1.6567840330312988,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        1,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "94200/252263",
+      "upper_f_exact": "400/797",
+      "lower_f": 0.37341980393478236,
+      "upper_f": 0.5018820577164367,
+      "stock_min": 0.4674785063493704,
+      "stock_max": 0.6969183981030247,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        1,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "400/797",
+      "upper_f_exact": "1",
+      "lower_f": 0.5018820577164367,
+      "upper_f": 1.0,
+      "stock_min": 0.6969183981030247,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        1,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "400/797",
+      "upper_f_exact": "1",
+      "lower_f": 0.5018820577164367,
+      "upper_f": 1.0,
+      "stock_min": 0.6969183981030247,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1,
+        2
+      ],
+      "payment_threshold": 3,
+      "lower_f_exact": "94200/252263",
+      "upper_f_exact": "400/797",
+      "lower_f": 0.37341980393478236,
+      "upper_f": 0.5018820577164367,
+      "stock_min": 0.4674785063493704,
+      "stock_max": 0.6969183981030247,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1,
+        2
+      ],
+      "payment_threshold": 3,
+      "lower_f_exact": "94200/252263",
+      "upper_f_exact": "400/797",
+      "lower_f": 0.37341980393478236,
+      "upper_f": 0.5018820577164367,
+      "stock_min": 0.4674785063493704,
+      "stock_max": 0.6969183981030247,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1,
+        2
+      ],
+      "payment_threshold": 3,
+      "lower_f_exact": "400/797",
+      "upper_f_exact": "1",
+      "lower_f": 0.5018820577164367,
+      "upper_f": 1.0,
+      "stock_min": 0.6969183981030247,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1,
+        2
+      ],
+      "payment_threshold": 3,
+      "lower_f_exact": "94200/252263",
+      "upper_f_exact": "400/797",
+      "lower_f": 0.37341980393478236,
+      "upper_f": 0.5018820577164367,
+      "stock_min": 0.4674785063493704,
+      "stock_max": 0.6969183981030247,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1,
+        2
+      ],
+      "payment_threshold": 3,
+      "lower_f_exact": "400/797",
+      "upper_f_exact": "1",
+      "lower_f": 0.5018820577164367,
+      "upper_f": 1.0,
+      "stock_min": 0.6969183981030247,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1,
+        2
+      ],
+      "payment_threshold": 3,
+      "lower_f_exact": "400/797",
+      "upper_f_exact": "1",
+      "lower_f": 0.5018820577164367,
+      "upper_f": 1.0,
+      "stock_min": 0.6969183981030247,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        1,
+        1,
+        7
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "94200/252263",
+      "upper_f_exact": "400/797",
+      "lower_f": 0.37341980393478236,
+      "upper_f": 0.5018820577164367,
+      "stock_min": 0.4674785063493704,
+      "stock_max": 0.6969183981030247,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        1,
+        1,
+        7
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "400/797",
+      "upper_f_exact": "1",
+      "lower_f": 0.5018820577164367,
+      "upper_f": 1.0,
+      "stock_min": 0.6969183981030247,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        1,
+        1,
+        7
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "400/797",
+      "upper_f_exact": "1",
+      "lower_f": 0.5018820577164367,
+      "upper_f": 1.0,
+      "stock_min": 0.6969183981030247,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        1,
+        1,
+        7
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "400/797",
+      "upper_f_exact": "140/173",
+      "lower_f": 0.5018820577164367,
+      "upper_f": 0.8092485549132948,
+      "stock_min": 0.6969183981030247,
+      "stock_max": 1.6567840330312988,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        1,
+        1,
+        7
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "94200/252263",
+      "upper_f_exact": "400/797",
+      "lower_f": 0.37341980393478236,
+      "upper_f": 0.5018820577164367,
+      "stock_min": 0.4674785063493704,
+      "stock_max": 0.6969183981030247,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        1,
+        1,
+        7
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "400/797",
+      "upper_f_exact": "1",
+      "lower_f": 0.5018820577164367,
+      "upper_f": 1.0,
+      "stock_min": 0.6969183981030247,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        1,
+        1,
+        7
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "400/797",
+      "upper_f_exact": "140/173",
+      "lower_f": 0.5018820577164367,
+      "upper_f": 0.8092485549132948,
+      "stock_min": 0.6969183981030247,
+      "stock_max": 1.6567840330312988,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        1,
+        1,
+        7
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "400/797",
+      "upper_f_exact": "1",
+      "lower_f": 0.5018820577164367,
+      "upper_f": 1.0,
+      "stock_min": 0.6969183981030247,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        1,
+        1,
+        7
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        1,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "400/797",
+      "upper_f_exact": "140/173",
+      "lower_f": 0.5018820577164367,
+      "upper_f": 0.8092485549132948,
+      "stock_min": 0.6969183981030247,
+      "stock_max": 1.6567840330312988,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        1,
+        1,
+        7
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        1,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "94200/252263",
+      "upper_f_exact": "400/797",
+      "lower_f": 0.37341980393478236,
+      "upper_f": 0.5018820577164367,
+      "stock_min": 0.4674785063493704,
+      "stock_max": 0.6969183981030247,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        1,
+        1,
+        7
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        1,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "400/797",
+      "upper_f_exact": "1",
+      "lower_f": 0.5018820577164367,
+      "upper_f": 1.0,
+      "stock_min": 0.6969183981030247,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        1,
+        1,
+        7
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        1,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "400/797",
+      "upper_f_exact": "1",
+      "lower_f": 0.5018820577164367,
+      "upper_f": 1.0,
+      "stock_min": 0.6969183981030247,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        1,
+        1,
+        7
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1,
+        2
+      ],
+      "payment_threshold": 3,
+      "lower_f_exact": "94200/252263",
+      "upper_f_exact": "400/797",
+      "lower_f": 0.37341980393478236,
+      "upper_f": 0.5018820577164367,
+      "stock_min": 0.4674785063493704,
+      "stock_max": 0.6969183981030247,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        1,
+        1,
+        7
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1,
+        2
+      ],
+      "payment_threshold": 3,
+      "lower_f_exact": "94200/252263",
+      "upper_f_exact": "400/797",
+      "lower_f": 0.37341980393478236,
+      "upper_f": 0.5018820577164367,
+      "stock_min": 0.4674785063493704,
+      "stock_max": 0.6969183981030247,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        1,
+        1,
+        7
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1,
+        2
+      ],
+      "payment_threshold": 3,
+      "lower_f_exact": "400/797",
+      "upper_f_exact": "1",
+      "lower_f": 0.5018820577164367,
+      "upper_f": 1.0,
+      "stock_min": 0.6969183981030247,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        1,
+        1,
+        7
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1,
+        2
+      ],
+      "payment_threshold": 3,
+      "lower_f_exact": "94200/252263",
+      "upper_f_exact": "400/797",
+      "lower_f": 0.37341980393478236,
+      "upper_f": 0.5018820577164367,
+      "stock_min": 0.4674785063493704,
+      "stock_max": 0.6969183981030247,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        1,
+        1,
+        7
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1,
+        2
+      ],
+      "payment_threshold": 3,
+      "lower_f_exact": "400/797",
+      "upper_f_exact": "1",
+      "lower_f": 0.5018820577164367,
+      "upper_f": 1.0,
+      "stock_min": 0.6969183981030247,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        1,
+        1,
+        7
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1,
+        2
+      ],
+      "payment_threshold": 3,
+      "lower_f_exact": "400/797",
+      "upper_f_exact": "1",
+      "lower_f": 0.5018820577164367,
+      "upper_f": 1.0,
+      "stock_min": 0.6969183981030247,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        1,
+        7,
+        1
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "94200/252263",
+      "upper_f_exact": "400/797",
+      "lower_f": 0.37341980393478236,
+      "upper_f": 0.5018820577164367,
+      "stock_min": 0.4674785063493704,
+      "stock_max": 0.6969183981030247,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        1,
+        7,
+        1
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "94200/252263",
+      "upper_f_exact": "400/797",
+      "lower_f": 0.37341980393478236,
+      "upper_f": 0.5018820577164367,
+      "stock_min": 0.4674785063493704,
+      "stock_max": 0.6969183981030247,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        1,
+        7,
+        1
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "94200/252263",
+      "upper_f_exact": "400/797",
+      "lower_f": 0.37341980393478236,
+      "upper_f": 0.5018820577164367,
+      "stock_min": 0.4674785063493704,
+      "stock_max": 0.6969183981030247,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        1,
+        7,
+        1
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "400/797",
+      "upper_f_exact": "1",
+      "lower_f": 0.5018820577164367,
+      "upper_f": 1.0,
+      "stock_min": 0.6969183981030247,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        1,
+        7,
+        1
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "6480/14839",
+      "upper_f_exact": "400/797",
+      "lower_f": 0.4366871082957073,
+      "upper_f": 0.5018820577164367,
+      "stock_min": 0.5739200473069703,
+      "stock_max": 0.6969183981030247,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        1,
+        7,
+        1
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "40880/62567",
+      "upper_f_exact": "1",
+      "lower_f": 0.6533795770933559,
+      "upper_f": 1.0,
+      "stock_min": 1.059524979874398,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        1,
+        7,
+        1
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        1,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "6480/14839",
+      "upper_f_exact": "400/797",
+      "lower_f": 0.4366871082957073,
+      "upper_f": 0.5018820577164367,
+      "stock_min": 0.5739200473069703,
+      "stock_max": 0.6969183981030247,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        1,
+        7,
+        1
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        1,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "40880/62567",
+      "upper_f_exact": "1",
+      "lower_f": 0.6533795770933559,
+      "upper_f": 1.0,
+      "stock_min": 1.059524979874398,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        1,
+        7,
+        1
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1,
+        2
+      ],
+      "payment_threshold": 3,
+      "lower_f_exact": "6480/14839",
+      "upper_f_exact": "400/797",
+      "lower_f": 0.4366871082957073,
+      "upper_f": 0.5018820577164367,
+      "stock_min": 0.5739200473069703,
+      "stock_max": 0.6969183981030247,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        1,
+        7,
+        1
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1,
+        2
+      ],
+      "payment_threshold": 3,
+      "lower_f_exact": "6480/14839",
+      "upper_f_exact": "400/797",
+      "lower_f": 0.4366871082957073,
+      "upper_f": 0.5018820577164367,
+      "stock_min": 0.5739200473069703,
+      "stock_max": 0.6969183981030247,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        1,
+        7,
+        1
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1,
+        2
+      ],
+      "payment_threshold": 3,
+      "lower_f_exact": "40880/62567",
+      "upper_f_exact": "1",
+      "lower_f": 0.6533795770933559,
+      "upper_f": 1.0,
+      "stock_min": 1.059524979874398,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        1,
+        7,
+        7
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "94200/252263",
+      "upper_f_exact": "400/797",
+      "lower_f": 0.37341980393478236,
+      "upper_f": 0.5018820577164367,
+      "stock_min": 0.4674785063493704,
+      "stock_max": 0.6969183981030247,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        1,
+        7,
+        7
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "94200/252263",
+      "upper_f_exact": "400/797",
+      "lower_f": 0.37341980393478236,
+      "upper_f": 0.5018820577164367,
+      "stock_min": 0.4674785063493704,
+      "stock_max": 0.6969183981030247,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        1,
+        7,
+        7
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "94200/252263",
+      "upper_f_exact": "400/797",
+      "lower_f": 0.37341980393478236,
+      "upper_f": 0.5018820577164367,
+      "stock_min": 0.4674785063493704,
+      "stock_max": 0.6969183981030247,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        1,
+        7,
+        7
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "400/797",
+      "upper_f_exact": "1",
+      "lower_f": 0.5018820577164367,
+      "upper_f": 1.0,
+      "stock_min": 0.6969183981030247,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        1,
+        7,
+        7
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "6480/14839",
+      "upper_f_exact": "400/797",
+      "lower_f": 0.4366871082957073,
+      "upper_f": 0.5018820577164367,
+      "stock_min": 0.5739200473069703,
+      "stock_max": 0.6969183981030247,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        1,
+        7,
+        7
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "40880/62567",
+      "upper_f_exact": "1",
+      "lower_f": 0.6533795770933559,
+      "upper_f": 1.0,
+      "stock_min": 1.059524979874398,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        1,
+        7,
+        7
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        1,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "6480/14839",
+      "upper_f_exact": "400/797",
+      "lower_f": 0.4366871082957073,
+      "upper_f": 0.5018820577164367,
+      "stock_min": 0.5739200473069703,
+      "stock_max": 0.6969183981030247,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        1,
+        7,
+        7
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        1,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "40880/62567",
+      "upper_f_exact": "1",
+      "lower_f": 0.6533795770933559,
+      "upper_f": 1.0,
+      "stock_min": 1.059524979874398,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        1,
+        7,
+        7
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1,
+        2
+      ],
+      "payment_threshold": 3,
+      "lower_f_exact": "6480/14839",
+      "upper_f_exact": "400/797",
+      "lower_f": 0.4366871082957073,
+      "upper_f": 0.5018820577164367,
+      "stock_min": 0.5739200473069703,
+      "stock_max": 0.6969183981030247,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        1,
+        7,
+        7
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1,
+        2
+      ],
+      "payment_threshold": 3,
+      "lower_f_exact": "6480/14839",
+      "upper_f_exact": "400/797",
+      "lower_f": 0.4366871082957073,
+      "upper_f": 0.5018820577164367,
+      "stock_min": 0.5739200473069703,
+      "stock_max": 0.6969183981030247,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        1,
+        7,
+        7
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1,
+        2
+      ],
+      "payment_threshold": 3,
+      "lower_f_exact": "40880/62567",
+      "upper_f_exact": "1",
+      "lower_f": 0.6533795770933559,
+      "upper_f": 1.0,
+      "stock_min": 1.059524979874398,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        7,
+        1,
+        1
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "6480/14839",
+      "upper_f_exact": "400/797",
+      "lower_f": 0.4366871082957073,
+      "upper_f": 0.5018820577164367,
+      "stock_min": 0.5739200473069703,
+      "stock_max": 0.6969183981030247,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        7,
+        1,
+        1
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "40880/62567",
+      "upper_f_exact": "1",
+      "lower_f": 0.6533795770933559,
+      "upper_f": 1.0,
+      "stock_min": 1.059524979874398,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        7,
+        1,
+        1
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "94200/252263",
+      "upper_f_exact": "400/797",
+      "lower_f": 0.37341980393478236,
+      "upper_f": 0.5018820577164367,
+      "stock_min": 0.4674785063493704,
+      "stock_max": 0.6969183981030247,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        7,
+        1,
+        1
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "94200/252263",
+      "upper_f_exact": "400/797",
+      "lower_f": 0.37341980393478236,
+      "upper_f": 0.5018820577164367,
+      "stock_min": 0.4674785063493704,
+      "stock_max": 0.6969183981030247,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        7,
+        1,
+        1
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "94200/252263",
+      "upper_f_exact": "400/797",
+      "lower_f": 0.37341980393478236,
+      "upper_f": 0.5018820577164367,
+      "stock_min": 0.4674785063493704,
+      "stock_max": 0.6969183981030247,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        7,
+        1,
+        1
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "400/797",
+      "upper_f_exact": "1",
+      "lower_f": 0.5018820577164367,
+      "upper_f": 1.0,
+      "stock_min": 0.6969183981030247,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        7,
+        1,
+        1
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        1,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "6480/14839",
+      "upper_f_exact": "400/797",
+      "lower_f": 0.4366871082957073,
+      "upper_f": 0.5018820577164367,
+      "stock_min": 0.5739200473069703,
+      "stock_max": 0.6969183981030247,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        7,
+        1,
+        1
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        1,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "40880/62567",
+      "upper_f_exact": "1",
+      "lower_f": 0.6533795770933559,
+      "upper_f": 1.0,
+      "stock_min": 1.059524979874398,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        7,
+        1,
+        1
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1,
+        2
+      ],
+      "payment_threshold": 3,
+      "lower_f_exact": "6480/14839",
+      "upper_f_exact": "400/797",
+      "lower_f": 0.4366871082957073,
+      "upper_f": 0.5018820577164367,
+      "stock_min": 0.5739200473069703,
+      "stock_max": 0.6969183981030247,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        7,
+        1,
+        1
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1,
+        2
+      ],
+      "payment_threshold": 3,
+      "lower_f_exact": "6480/14839",
+      "upper_f_exact": "400/797",
+      "lower_f": 0.4366871082957073,
+      "upper_f": 0.5018820577164367,
+      "stock_min": 0.5739200473069703,
+      "stock_max": 0.6969183981030247,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        7,
+        1,
+        1
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1,
+        2
+      ],
+      "payment_threshold": 3,
+      "lower_f_exact": "40880/62567",
+      "upper_f_exact": "1",
+      "lower_f": 0.6533795770933559,
+      "upper_f": 1.0,
+      "stock_min": 1.059524979874398,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        7,
+        1,
+        7
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "6480/14839",
+      "upper_f_exact": "400/797",
+      "lower_f": 0.4366871082957073,
+      "upper_f": 0.5018820577164367,
+      "stock_min": 0.5739200473069703,
+      "stock_max": 0.6969183981030247,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        7,
+        1,
+        7
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "40880/62567",
+      "upper_f_exact": "1",
+      "lower_f": 0.6533795770933559,
+      "upper_f": 1.0,
+      "stock_min": 1.059524979874398,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        7,
+        1,
+        7
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "94200/252263",
+      "upper_f_exact": "400/797",
+      "lower_f": 0.37341980393478236,
+      "upper_f": 0.5018820577164367,
+      "stock_min": 0.4674785063493704,
+      "stock_max": 0.6969183981030247,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        7,
+        1,
+        7
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "94200/252263",
+      "upper_f_exact": "400/797",
+      "lower_f": 0.37341980393478236,
+      "upper_f": 0.5018820577164367,
+      "stock_min": 0.4674785063493704,
+      "stock_max": 0.6969183981030247,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        7,
+        1,
+        7
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "94200/252263",
+      "upper_f_exact": "400/797",
+      "lower_f": 0.37341980393478236,
+      "upper_f": 0.5018820577164367,
+      "stock_min": 0.4674785063493704,
+      "stock_max": 0.6969183981030247,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        7,
+        1,
+        7
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "400/797",
+      "upper_f_exact": "1",
+      "lower_f": 0.5018820577164367,
+      "upper_f": 1.0,
+      "stock_min": 0.6969183981030247,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        7,
+        1,
+        7
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        1,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "6480/14839",
+      "upper_f_exact": "400/797",
+      "lower_f": 0.4366871082957073,
+      "upper_f": 0.5018820577164367,
+      "stock_min": 0.5739200473069703,
+      "stock_max": 0.6969183981030247,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        7,
+        1,
+        7
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        1,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "40880/62567",
+      "upper_f_exact": "1",
+      "lower_f": 0.6533795770933559,
+      "upper_f": 1.0,
+      "stock_min": 1.059524979874398,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        7,
+        1,
+        7
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1,
+        2
+      ],
+      "payment_threshold": 3,
+      "lower_f_exact": "6480/14839",
+      "upper_f_exact": "400/797",
+      "lower_f": 0.4366871082957073,
+      "upper_f": 0.5018820577164367,
+      "stock_min": 0.5739200473069703,
+      "stock_max": 0.6969183981030247,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        7,
+        1,
+        7
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1,
+        2
+      ],
+      "payment_threshold": 3,
+      "lower_f_exact": "6480/14839",
+      "upper_f_exact": "400/797",
+      "lower_f": 0.4366871082957073,
+      "upper_f": 0.5018820577164367,
+      "stock_min": 0.5739200473069703,
+      "stock_max": 0.6969183981030247,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        7,
+        1,
+        7
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1,
+        2
+      ],
+      "payment_threshold": 3,
+      "lower_f_exact": "40880/62567",
+      "upper_f_exact": "1",
+      "lower_f": 0.6533795770933559,
+      "upper_f": 1.0,
+      "stock_min": 1.059524979874398,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        7,
+        7,
+        1
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "6480/14839",
+      "upper_f_exact": "400/797",
+      "lower_f": 0.4366871082957073,
+      "upper_f": 0.5018820577164367,
+      "stock_min": 0.5739200473069703,
+      "stock_max": 0.6969183981030247,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        7,
+        7,
+        1
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "6480/14839",
+      "upper_f_exact": "1",
+      "lower_f": 0.4366871082957073,
+      "upper_f": 1.0,
+      "stock_min": 0.5739200473069703,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        7,
+        7,
+        1
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "6480/14839",
+      "upper_f_exact": "400/797",
+      "lower_f": 0.4366871082957073,
+      "upper_f": 0.5018820577164367,
+      "stock_min": 0.5739200473069703,
+      "stock_max": 0.6969183981030247,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        7,
+        7,
+        1
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "6480/14839",
+      "upper_f_exact": "1",
+      "lower_f": 0.4366871082957073,
+      "upper_f": 1.0,
+      "stock_min": 0.5739200473069703,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        7,
+        7,
+        1
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        1,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "6480/14839",
+      "upper_f_exact": "1",
+      "lower_f": 0.4366871082957073,
+      "upper_f": 1.0,
+      "stock_min": 0.5739200473069703,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        7,
+        7,
+        1
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1,
+        2
+      ],
+      "payment_threshold": 3,
+      "lower_f_exact": "6480/14839",
+      "upper_f_exact": "1",
+      "lower_f": 0.4366871082957073,
+      "upper_f": 1.0,
+      "stock_min": 0.5739200473069703,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        7,
+        7,
+        7
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "6480/14839",
+      "upper_f_exact": "400/797",
+      "lower_f": 0.4366871082957073,
+      "upper_f": 0.5018820577164367,
+      "stock_min": 0.5739200473069703,
+      "stock_max": 0.6969183981030247,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        7,
+        7,
+        7
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "6480/14839",
+      "upper_f_exact": "1",
+      "lower_f": 0.4366871082957073,
+      "upper_f": 1.0,
+      "stock_min": 0.5739200473069703,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        7,
+        7,
+        7
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "6480/14839",
+      "upper_f_exact": "400/797",
+      "lower_f": 0.4366871082957073,
+      "upper_f": 0.5018820577164367,
+      "stock_min": 0.5739200473069703,
+      "stock_max": 0.6969183981030247,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        7,
+        7,
+        7
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "6480/14839",
+      "upper_f_exact": "1",
+      "lower_f": 0.4366871082957073,
+      "upper_f": 1.0,
+      "stock_min": 0.5739200473069703,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        7,
+        7,
+        7
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        1,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "6480/14839",
+      "upper_f_exact": "1",
+      "lower_f": 0.4366871082957073,
+      "upper_f": 1.0,
+      "stock_min": 0.5739200473069703,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        1,
+        7,
+        7,
+        7
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1,
+        2
+      ],
+      "payment_threshold": 3,
+      "lower_f_exact": "6480/14839",
+      "upper_f_exact": "1",
+      "lower_f": 0.4366871082957073,
+      "upper_f": 1.0,
+      "stock_min": 0.5739200473069703,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        1,
+        1,
+        1
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "6480/14839",
+      "upper_f_exact": "400/797",
+      "lower_f": 0.4366871082957073,
+      "upper_f": 0.5018820577164367,
+      "stock_min": 0.5739200473069703,
+      "stock_max": 0.6969183981030247,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        1,
+        1,
+        1
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "40880/62567",
+      "upper_f_exact": "1",
+      "lower_f": 0.6533795770933559,
+      "upper_f": 1.0,
+      "stock_min": 1.059524979874398,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        1,
+        1,
+        1
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "6480/14839",
+      "upper_f_exact": "400/797",
+      "lower_f": 0.4366871082957073,
+      "upper_f": 0.5018820577164367,
+      "stock_min": 0.5739200473069703,
+      "stock_max": 0.6969183981030247,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        1,
+        1,
+        1
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "40880/62567",
+      "upper_f_exact": "1",
+      "lower_f": 0.6533795770933559,
+      "upper_f": 1.0,
+      "stock_min": 1.059524979874398,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        1,
+        1,
+        1
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        1,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "94200/252263",
+      "upper_f_exact": "400/797",
+      "lower_f": 0.37341980393478236,
+      "upper_f": 0.5018820577164367,
+      "stock_min": 0.4674785063493704,
+      "stock_max": 0.6969183981030247,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        1,
+        1,
+        1
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        1,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "94200/252263",
+      "upper_f_exact": "400/797",
+      "lower_f": 0.37341980393478236,
+      "upper_f": 0.5018820577164367,
+      "stock_min": 0.4674785063493704,
+      "stock_max": 0.6969183981030247,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        1,
+        1,
+        1
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        1,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "400/797",
+      "upper_f_exact": "1",
+      "lower_f": 0.5018820577164367,
+      "upper_f": 1.0,
+      "stock_min": 0.6969183981030247,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        1,
+        1,
+        1
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        1,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "94200/252263",
+      "upper_f_exact": "400/797",
+      "lower_f": 0.37341980393478236,
+      "upper_f": 0.5018820577164367,
+      "stock_min": 0.4674785063493704,
+      "stock_max": 0.6969183981030247,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        1,
+        1,
+        1
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1,
+        2
+      ],
+      "payment_threshold": 3,
+      "lower_f_exact": "6480/14839",
+      "upper_f_exact": "400/797",
+      "lower_f": 0.4366871082957073,
+      "upper_f": 0.5018820577164367,
+      "stock_min": 0.5739200473069703,
+      "stock_max": 0.6969183981030247,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        1,
+        1,
+        1
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1,
+        2
+      ],
+      "payment_threshold": 3,
+      "lower_f_exact": "6480/14839",
+      "upper_f_exact": "400/797",
+      "lower_f": 0.4366871082957073,
+      "upper_f": 0.5018820577164367,
+      "stock_min": 0.5739200473069703,
+      "stock_max": 0.6969183981030247,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        1,
+        1,
+        1
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1,
+        2
+      ],
+      "payment_threshold": 3,
+      "lower_f_exact": "40880/62567",
+      "upper_f_exact": "1",
+      "lower_f": 0.6533795770933559,
+      "upper_f": 1.0,
+      "stock_min": 1.059524979874398,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        1,
+        1,
+        7
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "6480/14839",
+      "upper_f_exact": "400/797",
+      "lower_f": 0.4366871082957073,
+      "upper_f": 0.5018820577164367,
+      "stock_min": 0.5739200473069703,
+      "stock_max": 0.6969183981030247,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        1,
+        1,
+        7
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "40880/62567",
+      "upper_f_exact": "1",
+      "lower_f": 0.6533795770933559,
+      "upper_f": 1.0,
+      "stock_min": 1.059524979874398,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        1,
+        1,
+        7
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "6480/14839",
+      "upper_f_exact": "400/797",
+      "lower_f": 0.4366871082957073,
+      "upper_f": 0.5018820577164367,
+      "stock_min": 0.5739200473069703,
+      "stock_max": 0.6969183981030247,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        1,
+        1,
+        7
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "40880/62567",
+      "upper_f_exact": "1",
+      "lower_f": 0.6533795770933559,
+      "upper_f": 1.0,
+      "stock_min": 1.059524979874398,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        1,
+        1,
+        7
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        1,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "94200/252263",
+      "upper_f_exact": "400/797",
+      "lower_f": 0.37341980393478236,
+      "upper_f": 0.5018820577164367,
+      "stock_min": 0.4674785063493704,
+      "stock_max": 0.6969183981030247,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        1,
+        1,
+        7
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        1,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "94200/252263",
+      "upper_f_exact": "400/797",
+      "lower_f": 0.37341980393478236,
+      "upper_f": 0.5018820577164367,
+      "stock_min": 0.4674785063493704,
+      "stock_max": 0.6969183981030247,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        1,
+        1,
+        7
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        1,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "400/797",
+      "upper_f_exact": "1",
+      "lower_f": 0.5018820577164367,
+      "upper_f": 1.0,
+      "stock_min": 0.6969183981030247,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        1,
+        1,
+        7
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        1,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "94200/252263",
+      "upper_f_exact": "400/797",
+      "lower_f": 0.37341980393478236,
+      "upper_f": 0.5018820577164367,
+      "stock_min": 0.4674785063493704,
+      "stock_max": 0.6969183981030247,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        1,
+        1,
+        7
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1,
+        2
+      ],
+      "payment_threshold": 3,
+      "lower_f_exact": "6480/14839",
+      "upper_f_exact": "400/797",
+      "lower_f": 0.4366871082957073,
+      "upper_f": 0.5018820577164367,
+      "stock_min": 0.5739200473069703,
+      "stock_max": 0.6969183981030247,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        1,
+        1,
+        7
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1,
+        2
+      ],
+      "payment_threshold": 3,
+      "lower_f_exact": "6480/14839",
+      "upper_f_exact": "400/797",
+      "lower_f": 0.4366871082957073,
+      "upper_f": 0.5018820577164367,
+      "stock_min": 0.5739200473069703,
+      "stock_max": 0.6969183981030247,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        1,
+        1,
+        7
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1,
+        2
+      ],
+      "payment_threshold": 3,
+      "lower_f_exact": "40880/62567",
+      "upper_f_exact": "1",
+      "lower_f": 0.6533795770933559,
+      "upper_f": 1.0,
+      "stock_min": 1.059524979874398,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        1,
+        7,
+        1
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "6480/14839",
+      "upper_f_exact": "400/797",
+      "lower_f": 0.4366871082957073,
+      "upper_f": 0.5018820577164367,
+      "stock_min": 0.5739200473069703,
+      "stock_max": 0.6969183981030247,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        1,
+        7,
+        1
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "6480/14839",
+      "upper_f_exact": "1",
+      "lower_f": 0.4366871082957073,
+      "upper_f": 1.0,
+      "stock_min": 0.5739200473069703,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        1,
+        7,
+        1
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "6480/14839",
+      "upper_f_exact": "1",
+      "lower_f": 0.4366871082957073,
+      "upper_f": 1.0,
+      "stock_min": 0.5739200473069703,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        1,
+        7,
+        1
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        1,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "6480/14839",
+      "upper_f_exact": "1",
+      "lower_f": 0.4366871082957073,
+      "upper_f": 1.0,
+      "stock_min": 0.5739200473069703,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        1,
+        7,
+        1
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        1,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "6480/14839",
+      "upper_f_exact": "400/797",
+      "lower_f": 0.4366871082957073,
+      "upper_f": 0.5018820577164367,
+      "stock_min": 0.5739200473069703,
+      "stock_max": 0.6969183981030247,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        1,
+        7,
+        1
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1,
+        2
+      ],
+      "payment_threshold": 3,
+      "lower_f_exact": "6480/14839",
+      "upper_f_exact": "1",
+      "lower_f": 0.4366871082957073,
+      "upper_f": 1.0,
+      "stock_min": 0.5739200473069703,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        1,
+        7,
+        7
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "6480/14839",
+      "upper_f_exact": "400/797",
+      "lower_f": 0.4366871082957073,
+      "upper_f": 0.5018820577164367,
+      "stock_min": 0.5739200473069703,
+      "stock_max": 0.6969183981030247,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        1,
+        7,
+        7
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "6480/14839",
+      "upper_f_exact": "1",
+      "lower_f": 0.4366871082957073,
+      "upper_f": 1.0,
+      "stock_min": 0.5739200473069703,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        1,
+        7,
+        7
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "6480/14839",
+      "upper_f_exact": "1",
+      "lower_f": 0.4366871082957073,
+      "upper_f": 1.0,
+      "stock_min": 0.5739200473069703,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        1,
+        7,
+        7
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        1,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "6480/14839",
+      "upper_f_exact": "1",
+      "lower_f": 0.4366871082957073,
+      "upper_f": 1.0,
+      "stock_min": 0.5739200473069703,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        1,
+        7,
+        7
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        1,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "6480/14839",
+      "upper_f_exact": "400/797",
+      "lower_f": 0.4366871082957073,
+      "upper_f": 0.5018820577164367,
+      "stock_min": 0.5739200473069703,
+      "stock_max": 0.6969183981030247,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        1,
+        7,
+        7
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1,
+        2
+      ],
+      "payment_threshold": 3,
+      "lower_f_exact": "6480/14839",
+      "upper_f_exact": "1",
+      "lower_f": 0.4366871082957073,
+      "upper_f": 1.0,
+      "stock_min": 0.5739200473069703,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        7,
+        1,
+        1
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "6480/14839",
+      "upper_f_exact": "1",
+      "lower_f": 0.4366871082957073,
+      "upper_f": 1.0,
+      "stock_min": 0.5739200473069703,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        7,
+        1,
+        1
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "6480/14839",
+      "upper_f_exact": "1",
+      "lower_f": 0.4366871082957073,
+      "upper_f": 1.0,
+      "stock_min": 0.5739200473069703,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        7,
+        1,
+        1
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "6480/14839",
+      "upper_f_exact": "400/797",
+      "lower_f": 0.4366871082957073,
+      "upper_f": 0.5018820577164367,
+      "stock_min": 0.5739200473069703,
+      "stock_max": 0.6969183981030247,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        7,
+        1,
+        1
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        1,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "6480/14839",
+      "upper_f_exact": "1",
+      "lower_f": 0.4366871082957073,
+      "upper_f": 1.0,
+      "stock_min": 0.5739200473069703,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        7,
+        1,
+        1
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        1,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "6480/14839",
+      "upper_f_exact": "400/797",
+      "lower_f": 0.4366871082957073,
+      "upper_f": 0.5018820577164367,
+      "stock_min": 0.5739200473069703,
+      "stock_max": 0.6969183981030247,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        7,
+        1,
+        1
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1,
+        2
+      ],
+      "payment_threshold": 3,
+      "lower_f_exact": "6480/14839",
+      "upper_f_exact": "1",
+      "lower_f": 0.4366871082957073,
+      "upper_f": 1.0,
+      "stock_min": 0.5739200473069703,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        7,
+        1,
+        7
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "6480/14839",
+      "upper_f_exact": "1",
+      "lower_f": 0.4366871082957073,
+      "upper_f": 1.0,
+      "stock_min": 0.5739200473069703,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        7,
+        1,
+        7
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "6480/14839",
+      "upper_f_exact": "1",
+      "lower_f": 0.4366871082957073,
+      "upper_f": 1.0,
+      "stock_min": 0.5739200473069703,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        7,
+        1,
+        7
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "6480/14839",
+      "upper_f_exact": "400/797",
+      "lower_f": 0.4366871082957073,
+      "upper_f": 0.5018820577164367,
+      "stock_min": 0.5739200473069703,
+      "stock_max": 0.6969183981030247,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        7,
+        1,
+        7
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        1,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "6480/14839",
+      "upper_f_exact": "1",
+      "lower_f": 0.4366871082957073,
+      "upper_f": 1.0,
+      "stock_min": 0.5739200473069703,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        7,
+        1,
+        7
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        1,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "6480/14839",
+      "upper_f_exact": "400/797",
+      "lower_f": 0.4366871082957073,
+      "upper_f": 0.5018820577164367,
+      "stock_min": 0.5739200473069703,
+      "stock_max": 0.6969183981030247,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        7,
+        1,
+        7
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1,
+        2
+      ],
+      "payment_threshold": 3,
+      "lower_f_exact": "6480/14839",
+      "upper_f_exact": "1",
+      "lower_f": 0.4366871082957073,
+      "upper_f": 1.0,
+      "stock_min": 0.5739200473069703,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        7,
+        7,
+        1
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "6480/14839",
+      "upper_f_exact": "1",
+      "lower_f": 0.4366871082957073,
+      "upper_f": 1.0,
+      "stock_min": 0.5739200473069703,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        7,
+        7,
+        1
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "2020/3293",
+      "upper_f_exact": "1",
+      "lower_f": 0.6134224111752201,
+      "upper_f": 1.0,
+      "stock_min": 0.9504226838189577,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        7,
+        7,
+        1
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "2020/3293",
+      "upper_f_exact": "1",
+      "lower_f": 0.6134224111752201,
+      "upper_f": 1.0,
+      "stock_min": 0.9504226838189577,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        7,
+        7,
+        1
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "2020/3293",
+      "upper_f_exact": "1",
+      "lower_f": 0.6134224111752201,
+      "upper_f": 1.0,
+      "stock_min": 0.9504226838189577,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        7,
+        7,
+        1
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "6480/14839",
+      "upper_f_exact": "1",
+      "lower_f": 0.4366871082957073,
+      "upper_f": 1.0,
+      "stock_min": 0.5739200473069703,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        7,
+        7,
+        1
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "2020/3293",
+      "upper_f_exact": "1",
+      "lower_f": 0.6134224111752201,
+      "upper_f": 1.0,
+      "stock_min": 0.9504226838189577,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        7,
+        7,
+        1
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        1,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "2020/3293",
+      "upper_f_exact": "1",
+      "lower_f": 0.6134224111752201,
+      "upper_f": 1.0,
+      "stock_min": 0.9504226838189577,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        7,
+        7,
+        1
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        1,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "2020/3293",
+      "upper_f_exact": "1",
+      "lower_f": 0.6134224111752201,
+      "upper_f": 1.0,
+      "stock_min": 0.9504226838189577,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        7,
+        7,
+        1
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        1,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "6480/14839",
+      "upper_f_exact": "1",
+      "lower_f": 0.4366871082957073,
+      "upper_f": 1.0,
+      "stock_min": 0.5739200473069703,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        7,
+        7,
+        1
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1,
+        2
+      ],
+      "payment_threshold": 3,
+      "lower_f_exact": "397280/1011047",
+      "upper_f_exact": "2020/3293",
+      "lower_f": 0.3929392006504149,
+      "upper_f": 0.6134224111752201,
+      "stock_min": 0.49912632926556244,
+      "stock_max": 0.9504226838189577,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        7,
+        7,
+        1
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1,
+        2
+      ],
+      "payment_threshold": 3,
+      "lower_f_exact": "2020/3293",
+      "upper_f_exact": "1",
+      "lower_f": 0.6134224111752201,
+      "upper_f": 1.0,
+      "stock_min": 0.9504226838189577,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        7,
+        7,
+        1
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1,
+        2
+      ],
+      "payment_threshold": 3,
+      "lower_f_exact": "2020/3293",
+      "upper_f_exact": "1",
+      "lower_f": 0.6134224111752201,
+      "upper_f": 1.0,
+      "stock_min": 0.9504226838189577,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        7,
+        7,
+        1
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1,
+        2
+      ],
+      "payment_threshold": 3,
+      "lower_f_exact": "2020/3293",
+      "upper_f_exact": "1",
+      "lower_f": 0.6134224111752201,
+      "upper_f": 1.0,
+      "stock_min": 0.9504226838189577,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        7,
+        7,
+        7
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "6480/14839",
+      "upper_f_exact": "1",
+      "lower_f": 0.4366871082957073,
+      "upper_f": 1.0,
+      "stock_min": 0.5739200473069703,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        7,
+        7,
+        7
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "2020/3293",
+      "upper_f_exact": "1",
+      "lower_f": 0.6134224111752201,
+      "upper_f": 1.0,
+      "stock_min": 0.9504226838189577,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        7,
+        7,
+        7
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "2020/3293",
+      "upper_f_exact": "1",
+      "lower_f": 0.6134224111752201,
+      "upper_f": 1.0,
+      "stock_min": 0.9504226838189577,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        7,
+        7,
+        7
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "2020/3293",
+      "upper_f_exact": "1",
+      "lower_f": 0.6134224111752201,
+      "upper_f": 1.0,
+      "stock_min": 0.9504226838189577,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        7,
+        7,
+        7
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "6480/14839",
+      "upper_f_exact": "1",
+      "lower_f": 0.4366871082957073,
+      "upper_f": 1.0,
+      "stock_min": 0.5739200473069703,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        7,
+        7,
+        7
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "2020/3293",
+      "upper_f_exact": "1",
+      "lower_f": 0.6134224111752201,
+      "upper_f": 1.0,
+      "stock_min": 0.9504226838189577,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        7,
+        7,
+        7
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        1,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "2020/3293",
+      "upper_f_exact": "1",
+      "lower_f": 0.6134224111752201,
+      "upper_f": 1.0,
+      "stock_min": 0.9504226838189577,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        7,
+        7,
+        7
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        1,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "2020/3293",
+      "upper_f_exact": "1",
+      "lower_f": 0.6134224111752201,
+      "upper_f": 1.0,
+      "stock_min": 0.9504226838189577,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        7,
+        7,
+        7
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        1,
+        2
+      ],
+      "payment_threshold": 2,
+      "lower_f_exact": "6480/14839",
+      "upper_f_exact": "1",
+      "lower_f": 0.4366871082957073,
+      "upper_f": 1.0,
+      "stock_min": 0.5739200473069703,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        7,
+        7,
+        7
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1,
+        2
+      ],
+      "payment_threshold": 3,
+      "lower_f_exact": "397280/1011047",
+      "upper_f_exact": "2020/3293",
+      "lower_f": 0.3929392006504149,
+      "upper_f": 0.6134224111752201,
+      "stock_min": 0.49912632926556244,
+      "stock_max": 0.9504226838189577,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        7,
+        7,
+        7
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1,
+        2
+      ],
+      "payment_threshold": 3,
+      "lower_f_exact": "2020/3293",
+      "upper_f_exact": "1",
+      "lower_f": 0.6134224111752201,
+      "upper_f": 1.0,
+      "stock_min": 0.9504226838189577,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        7,
+        7,
+        7
+      ],
+      "policies": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1,
+        2
+      ],
+      "payment_threshold": 3,
+      "lower_f_exact": "2020/3293",
+      "upper_f_exact": "1",
+      "lower_f": 0.6134224111752201,
+      "upper_f": 1.0,
+      "stock_min": 0.9504226838189577,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    },
+    {
+      "losses": [
+        7,
+        7,
+        7,
+        7
+      ],
+      "policies": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "donors": [
+        0,
+        1,
+        2
+      ],
+      "payment_threshold": 3,
+      "lower_f_exact": "2020/3293",
+      "upper_f_exact": "1",
+      "lower_f": 0.6134224111752201,
+      "upper_f": 1.0,
+      "stock_min": 0.9504226838189577,
+      "stock_max": null,
+      "upper_f_one_is_excluded": true
+    }
+  ],
+  "certificate_count": 164,
+  "independent_enumerated_rent_checks": 656,
+  "independent_max_error": 1.1102230246251565e-16,
+  "original_reference_stocks": [
+    {
+      "gamma": 0.105,
+      "stock_reference_only_not_endogenous": 0.4612003864791371,
+      "public_grim_fixed_stock_certificate_count": 0,
+      "certificates": []
+    },
+    {
+      "gamma": 0.05,
+      "stock_reference_only_not_endogenous": 0.8903152454708944,
+      "public_grim_fixed_stock_certificate_count": 1,
+      "certificates": [
+        {
+          "losses": [
+            1,
+            1,
+            7,
+            7
+          ],
+          "policies": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "donors": [
+            0,
+            1
+          ],
+          "payment_threshold": 2,
+          "lower_f_exact": "400/797",
+          "upper_f_exact": "1",
+          "lower_f": 0.5018820577164367,
+          "upper_f": 1.0,
+          "stock_min": 0.6969183981030247,
+          "stock_max": null,
+          "upper_f_one_is_excluded": true
+        }
+      ]
+    },
+    {
+      "gamma": 0.005,
+      "stock_reference_only_not_endogenous": 1.4673902547780857,
+      "public_grim_fixed_stock_certificate_count": 4,
+      "certificates": [
+        {
+          "losses": [
+            1,
+            1,
+            7,
+            7
+          ],
+          "policies": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "donors": [
+            0,
+            1
+          ],
+          "payment_threshold": 2,
+          "lower_f_exact": "400/797",
+          "upper_f_exact": "1",
+          "lower_f": 0.5018820577164367,
+          "upper_f": 1.0,
+          "stock_min": 0.6969183981030247,
+          "stock_max": null,
+          "upper_f_one_is_excluded": true
+        },
+        {
+          "losses": [
+            1,
+            1,
+            7,
+            7
+          ],
+          "policies": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "donors": [
+            0,
+            2
+          ],
+          "payment_threshold": 2,
+          "lower_f_exact": "40880/62567",
+          "upper_f_exact": "1",
+          "lower_f": 0.6533795770933559,
+          "upper_f": 1.0,
+          "stock_min": 1.059524979874398,
+          "stock_max": null,
+          "upper_f_one_is_excluded": true
+        },
+        {
+          "losses": [
+            1,
+            1,
+            7,
+            7
+          ],
+          "policies": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "donors": [
+            1,
+            2
+          ],
+          "payment_threshold": 2,
+          "lower_f_exact": "40880/62567",
+          "upper_f_exact": "1",
+          "lower_f": 0.6533795770933559,
+          "upper_f": 1.0,
+          "stock_min": 1.059524979874398,
+          "stock_max": null,
+          "upper_f_one_is_excluded": true
+        },
+        {
+          "losses": [
+            1,
+            1,
+            7,
+            7
+          ],
+          "policies": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "donors": [
+            0,
+            1,
+            2
+          ],
+          "payment_threshold": 3,
+          "lower_f_exact": "40880/62567",
+          "upper_f_exact": "1",
+          "lower_f": 0.6533795770933559,
+          "upper_f": 1.0,
+          "stock_min": 1.059524979874398,
+          "stock_max": null,
+          "upper_f_one_is_excluded": true
+        }
+      ]
+    }
+  ],
+  "learned_institution": false,
+  "original_three_donors_threshold_two_not_certified": true,
+  "does_not_establish_a_gamma_band": true,
+  "CT2_historical": 61,
+  "new_branch_score": null,
+  "N2": 0,
+  "N3": 0
+}

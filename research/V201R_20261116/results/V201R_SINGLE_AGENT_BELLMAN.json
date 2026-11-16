@@ -1,0 +1,3965 @@
+{
+  "planner_control_not_learned_agents": true,
+  "independent_private_autarky_only": true,
+  "discount": 0.95,
+  "investment_quantum": 0.04,
+  "work_cost": 0.05,
+  "constraints": "Investment is costly effort without a cash borrowing limit; solitary access to clean land guaranteed; no joint production or transfers.",
+  "physical_parameters_taken_from_Hydrogen": true,
+  "no_hyperparameter_fit_to_cooperation": true,
+  "rows": [
+    {
+      "gamma": 0.25,
+      "grid_points": 2001,
+      "cap": 4.0,
+      "iterations": 12,
+      "Bellman_grid_residual": 0.0,
+      "approximate_value_at_zero": 0.0,
+      "feasible_continuous_policy_value": 0.0,
+      "conservative_interpolation_error_bound": 0.016521739130434764,
+      "value_upper_bound": 0.016521739130434764,
+      "value_at_first_invested_state_approximation": 0.0,
+      "first_investment_action_value_upper_bound": -0.024304347826086977,
+      "rest_at_zero_proved_optimal_by_strict_upper_bound": true,
+      "feasible_return_tail_bound": 1.4001693996774652e-44,
+      "first_investment": 0.0,
+      "sample_trajectory": [
+        {
+          "step": 0,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 1,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 2,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 3,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 4,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 5,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 6,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 7,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 8,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 9,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 10,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 11,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 12,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 13,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 14,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 15,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 16,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 17,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 18,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 19,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 20,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 21,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 22,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 23,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 24,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 25,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 26,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 27,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 28,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 29,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 30,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 31,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 32,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 33,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 34,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 35,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 36,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 37,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 38,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 39,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 99,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 199,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 499,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 1999,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        }
+      ]
+    },
+    {
+      "gamma": 0.25,
+      "grid_points": 4001,
+      "cap": 4.0,
+      "iterations": 12,
+      "Bellman_grid_residual": 0.0,
+      "approximate_value_at_zero": 0.0,
+      "feasible_continuous_policy_value": 0.0,
+      "conservative_interpolation_error_bound": 0.008260869565217382,
+      "value_upper_bound": 0.008260869565217382,
+      "value_at_first_invested_state_approximation": 0.0,
+      "first_investment_action_value_upper_bound": -0.03215217391304349,
+      "rest_at_zero_proved_optimal_by_strict_upper_bound": true,
+      "feasible_return_tail_bound": 1.4001693996774652e-44,
+      "first_investment": 0.0,
+      "sample_trajectory": [
+        {
+          "step": 0,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 1,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 2,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 3,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 4,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 5,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 6,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 7,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 8,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 9,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 10,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 11,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 12,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 13,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 14,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 15,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 16,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 17,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 18,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 19,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 20,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 21,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 22,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 23,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 24,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 25,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 26,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 27,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 28,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 29,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 30,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 31,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 32,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 33,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 34,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 35,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 36,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 37,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 38,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 39,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 99,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 199,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 499,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 1999,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        }
+      ]
+    },
+    {
+      "gamma": 0.25,
+      "grid_points": 8001,
+      "cap": 4.0,
+      "iterations": 12,
+      "Bellman_grid_residual": 0.0,
+      "approximate_value_at_zero": 0.0,
+      "feasible_continuous_policy_value": 0.0,
+      "conservative_interpolation_error_bound": 0.004130434782608691,
+      "value_upper_bound": 0.004130434782608691,
+      "value_at_first_invested_state_approximation": 0.0,
+      "first_investment_action_value_upper_bound": -0.036076086956521744,
+      "rest_at_zero_proved_optimal_by_strict_upper_bound": true,
+      "feasible_return_tail_bound": 1.4001693996774652e-44,
+      "first_investment": 0.0,
+      "sample_trajectory": [
+        {
+          "step": 0,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 1,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 2,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 3,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 4,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 5,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 6,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 7,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 8,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 9,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 10,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 11,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 12,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 13,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 14,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 15,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 16,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 17,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 18,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 19,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 20,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 21,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 22,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 23,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 24,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 25,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 26,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 27,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 28,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 29,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 30,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 31,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 32,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 33,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 34,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 35,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 36,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 37,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 38,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 39,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 99,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 199,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 499,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 1999,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        }
+      ]
+    },
+    {
+      "gamma": 0.105,
+      "grid_points": 2001,
+      "cap": 4.0,
+      "iterations": 28,
+      "Bellman_grid_residual": 0.0,
+      "approximate_value_at_zero": 0.0,
+      "feasible_continuous_policy_value": 0.0,
+      "conservative_interpolation_error_bound": 0.03171953255425705,
+      "value_upper_bound": 0.03171953255425705,
+      "value_at_first_invested_state_approximation": 0.0,
+      "first_investment_action_value_upper_bound": -0.009866444073455802,
+      "rest_at_zero_proved_optimal_by_strict_upper_bound": true,
+      "feasible_return_tail_bound": 1.4001693996774652e-44,
+      "first_investment": 0.0,
+      "sample_trajectory": [
+        {
+          "step": 0,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 1,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 2,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 3,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 4,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 5,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 6,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 7,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 8,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 9,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 10,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 11,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 12,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 13,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 14,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 15,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 16,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 17,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 18,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 19,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 20,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 21,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 22,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 23,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 24,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 25,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 26,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 27,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 28,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 29,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 30,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 31,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 32,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 33,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 34,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 35,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 36,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 37,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 38,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 39,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 99,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 199,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 499,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 1999,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        }
+      ]
+    },
+    {
+      "gamma": 0.105,
+      "grid_points": 4001,
+      "cap": 4.0,
+      "iterations": 28,
+      "Bellman_grid_residual": 0.0,
+      "approximate_value_at_zero": 0.0,
+      "feasible_continuous_policy_value": 0.0,
+      "conservative_interpolation_error_bound": 0.015859766277128526,
+      "value_upper_bound": 0.015859766277128526,
+      "value_at_first_invested_state_approximation": 0.0,
+      "first_investment_action_value_upper_bound": -0.024933222036727903,
+      "rest_at_zero_proved_optimal_by_strict_upper_bound": true,
+      "feasible_return_tail_bound": 1.4001693996774652e-44,
+      "first_investment": 0.0,
+      "sample_trajectory": [
+        {
+          "step": 0,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 1,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 2,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 3,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 4,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 5,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 6,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 7,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 8,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 9,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 10,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 11,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 12,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 13,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 14,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 15,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 16,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 17,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 18,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 19,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 20,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 21,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 22,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 23,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 24,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 25,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 26,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 27,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 28,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 29,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 30,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 31,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 32,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 33,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 34,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 35,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 36,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 37,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 38,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 39,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 99,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 199,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 499,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 1999,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        }
+      ]
+    },
+    {
+      "gamma": 0.105,
+      "grid_points": 8001,
+      "cap": 4.0,
+      "iterations": 28,
+      "Bellman_grid_residual": 0.0,
+      "approximate_value_at_zero": 0.0,
+      "feasible_continuous_policy_value": 0.0,
+      "conservative_interpolation_error_bound": 0.007929883138564263,
+      "value_upper_bound": 0.007929883138564263,
+      "value_at_first_invested_state_approximation": 0.0,
+      "first_investment_action_value_upper_bound": -0.03246661101836395,
+      "rest_at_zero_proved_optimal_by_strict_upper_bound": true,
+      "feasible_return_tail_bound": 1.4001693996774652e-44,
+      "first_investment": 0.0,
+      "sample_trajectory": [
+        {
+          "step": 0,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 1,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 2,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 3,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 4,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 5,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 6,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 7,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 8,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 9,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 10,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 11,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 12,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 13,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 14,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 15,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 16,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 17,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 18,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 19,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 20,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 21,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 22,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 23,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 24,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 25,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 26,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 27,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 28,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 29,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 30,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 31,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 32,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 33,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 34,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 35,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 36,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 37,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 38,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 39,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 99,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 199,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 499,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 1999,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        }
+      ]
+    },
+    {
+      "gamma": 0.05,
+      "grid_points": 2001,
+      "cap": 4.0,
+      "iterations": 473,
+      "Bellman_grid_residual": 9.601208716958354e-13,
+      "approximate_value_at_zero": 0.0,
+      "feasible_continuous_policy_value": 0.0,
+      "conservative_interpolation_error_bound": 0.04871794873715108,
+      "value_upper_bound": 0.04871794873715108,
+      "value_at_first_invested_state_approximation": 0.0,
+      "first_investment_action_value_upper_bound": 0.006282051300293523,
+      "rest_at_zero_proved_optimal_by_strict_upper_bound": false,
+      "feasible_return_tail_bound": 1.4001693996774652e-44,
+      "first_investment": 0.0,
+      "sample_trajectory": [
+        {
+          "step": 0,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 1,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 2,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 3,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 4,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 5,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 6,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 7,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 8,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 9,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 10,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 11,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 12,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 13,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 14,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 15,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 16,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 17,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 18,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 19,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 20,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 21,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 22,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 23,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 24,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 25,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 26,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 27,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 28,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 29,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 30,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 31,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 32,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 33,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 34,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 35,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 36,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 37,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 38,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 39,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 99,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 199,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 499,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 1999,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        }
+      ]
+    },
+    {
+      "gamma": 0.05,
+      "grid_points": 4001,
+      "cap": 4.0,
+      "iterations": 473,
+      "Bellman_grid_residual": 9.601208716958354e-13,
+      "approximate_value_at_zero": 0.0,
+      "feasible_continuous_policy_value": 0.0,
+      "conservative_interpolation_error_bound": 0.02435897437817675,
+      "value_upper_bound": 0.02435897437817675,
+      "value_at_first_invested_state_approximation": 0.0,
+      "first_investment_action_value_upper_bound": -0.01685897434073209,
+      "rest_at_zero_proved_optimal_by_strict_upper_bound": true,
+      "feasible_return_tail_bound": 1.4001693996774652e-44,
+      "first_investment": 0.0,
+      "sample_trajectory": [
+        {
+          "step": 0,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 1,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 2,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 3,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 4,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 5,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 6,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 7,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 8,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 9,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 10,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 11,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 12,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 13,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 14,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 15,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 16,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 17,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 18,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 19,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 20,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 21,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 22,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 23,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 24,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 25,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 26,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 27,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 28,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 29,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 30,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 31,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 32,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 33,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 34,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 35,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 36,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 37,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 38,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 39,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 99,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 199,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 499,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 1999,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        }
+      ]
+    },
+    {
+      "gamma": 0.05,
+      "grid_points": 8001,
+      "cap": 4.0,
+      "iterations": 473,
+      "Bellman_grid_residual": 9.605649609056854e-13,
+      "approximate_value_at_zero": 0.0,
+      "feasible_continuous_policy_value": 0.0,
+      "conservative_interpolation_error_bound": 0.012179487198698465,
+      "value_upper_bound": 0.012179487198698465,
+      "value_at_first_invested_state_approximation": 0.0,
+      "first_investment_action_value_upper_bound": -0.028429487161236458,
+      "rest_at_zero_proved_optimal_by_strict_upper_bound": true,
+      "feasible_return_tail_bound": 1.4001693996774652e-44,
+      "first_investment": 0.0,
+      "sample_trajectory": [
+        {
+          "step": 0,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 1,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 2,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 3,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 4,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 5,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 6,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 7,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 8,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 9,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 10,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 11,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 12,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 13,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 14,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 15,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 16,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 17,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 18,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 19,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 20,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 21,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 22,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 23,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 24,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 25,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 26,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 27,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 28,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 29,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 30,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 31,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 32,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 33,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 34,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 35,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 36,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 37,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 38,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 39,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 99,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 199,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 499,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        },
+        {
+          "step": 1999,
+          "stock": 0.0,
+          "investment": 0.0,
+          "reward": 0.0,
+          "working": false
+        }
+      ]
+    },
+    {
+      "gamma": 0.005,
+      "grid_points": 2001,
+      "cap": 8.0,
+      "iterations": 499,
+      "Bellman_grid_residual": 9.983125437429408e-13,
+      "approximate_value_at_zero": 0.4494310786401491,
+      "feasible_continuous_policy_value": 0.4494601647786578,
+      "conservative_interpolation_error_bound": 0.17351598175512567,
+      "value_upper_bound": 0.6229470603952747,
+      "value_at_first_invested_state_approximation": 0.5151906090958909,
+      "first_investment_action_value_upper_bound": 0.6142712613084657,
+      "rest_at_zero_proved_optimal_by_strict_upper_bound": false,
+      "feasible_return_tail_bound": 1.4001693996774652e-44,
+      "first_investment": 0.04,
+      "sample_trajectory": [
+        {
+          "step": 0,
+          "stock": 0.0,
+          "investment": 0.04,
+          "reward": -0.04,
+          "working": false
+        },
+        {
+          "step": 1,
+          "stock": 0.04,
+          "investment": 0.04,
+          "reward": -0.04,
+          "working": false
+        },
+        {
+          "step": 2,
+          "stock": 0.07980000000000001,
+          "investment": 0.04,
+          "reward": -0.04,
+          "working": false
+        },
+        {
+          "step": 3,
+          "stock": 0.11940100000000001,
+          "investment": 0.04,
+          "reward": -0.04,
+          "working": false
+        },
+        {
+          "step": 4,
+          "stock": 0.158803995,
+          "investment": 0.04,
+          "reward": -0.04,
+          "working": false
+        },
+        {
+          "step": 5,
+          "stock": 0.198009975025,
+          "investment": 0.04,
+          "reward": -0.04,
+          "working": false
+        },
+        {
+          "step": 6,
+          "stock": 0.23701992514987502,
+          "investment": 0.04,
+          "reward": -0.03724389185114104,
+          "working": true
+        },
+        {
+          "step": 7,
+          "stock": 0.27583482552412564,
+          "investment": 0.04,
+          "reward": -0.02973456941028356,
+          "working": true
+        },
+        {
+          "step": 8,
+          "stock": 0.314455651396505,
+          "investment": 0.04,
+          "reward": -0.022546560491768737,
+          "working": true
+        },
+        {
+          "step": 9,
+          "stock": 0.35288337313952245,
+          "investment": 0.04,
+          "reward": -0.015664784381974974,
+          "working": true
+        },
+        {
+          "step": 10,
+          "stock": 0.3911189562738248,
+          "investment": 0.04,
+          "reward": -0.0090749252904097,
+          "working": true
+        },
+        {
+          "step": 11,
+          "stock": 0.42916336149245565,
+          "investment": 0.04,
+          "reward": -0.002763390852861543,
+          "working": true
+        },
+        {
+          "step": 12,
+          "stock": 0.46701754468499335,
+          "investment": 0.04,
+          "reward": 0.003282726976214144,
+          "working": true
+        },
+        {
+          "step": 13,
+          "stock": 0.5046824569615684,
+          "investment": 0.04,
+          "reward": 0.009075688787198201,
+          "working": true
+        },
+        {
+          "step": 14,
+          "stock": 0.5421590446767607,
+          "investment": 0.04,
+          "reward": 0.014627142470567157,
+          "working": true
+        },
+        {
+          "step": 15,
+          "stock": 0.5794482494533769,
+          "investment": 0.04,
+          "reward": 0.01994815599113984,
+          "working": true
+        },
+        {
+          "step": 16,
+          "stock": 0.6165510082061101,
+          "investment": 0.04,
+          "reward": 0.025049248300479506,
+          "working": true
+        },
+        {
+          "step": 17,
+          "stock": 0.6534682531650796,
+          "investment": 0.04,
+          "reward": 0.02994041849909037,
+          "working": true
+        },
+        {
+          "step": 18,
+          "stock": 0.6902009118992543,
+          "investment": 0.04,
+          "reward": 0.0346311733530179,
+          "working": true
+        },
+        {
+          "step": 19,
+          "stock": 0.726749907339758,
+          "investment": 0.04,
+          "reward": 0.03913055326289252,
+          "working": true
+        },
+        {
+          "step": 20,
+          "stock": 0.7631161578030592,
+          "investment": 0.04,
+          "reward": 0.0434471567773221,
+          "working": true
+        },
+        {
+          "step": 21,
+          "stock": 0.7993005770140439,
+          "investment": 0.04,
+          "reward": 0.047589163736802186,
+          "working": true
+        },
+        {
+          "step": 22,
+          "stock": 0.8353040741289737,
+          "investment": 0.04,
+          "reward": 0.051564357128954234,
+          "working": true
+        },
+        {
+          "step": 23,
+          "stock": 0.8711275537583288,
+          "investment": 0.04,
+          "reward": 0.055380143730890084,
+          "working": true
+        },
+        {
+          "step": 24,
+          "stock": 0.9067719159895372,
+          "investment": 0.04,
+          "reward": 0.05904357360981501,
+          "working": true
+        },
+        {
+          "step": 25,
+          "stock": 0.9422380564095896,
+          "investment": 0.04,
+          "reward": 0.06256135854859932,
+          "working": true
+        },
+        {
+          "step": 26,
+          "stock": 0.9775268661275417,
+          "investment": 0.04,
+          "reward": 0.06593988945894852,
+          "working": true
+        },
+        {
+          "step": 27,
+          "stock": 1.012639231796904,
+          "investment": 0.04,
+          "reward": 0.06918525284096469,
+          "working": true
+        },
+        {
+          "step": 28,
+          "stock": 1.0475760356379196,
+          "investment": 0.04,
+          "reward": 0.0723032463443036,
+          "working": true
+        },
+        {
+          "step": 29,
+          "stock": 1.08233815545973,
+          "investment": 0.04,
+          "reward": 0.07529939348276865,
+          "working": true
+        },
+        {
+          "step": 30,
+          "stock": 1.1169264646824313,
+          "investment": 0.04,
+          "reward": 0.07817895755103926,
+          "working": true
+        },
+        {
+          "step": 31,
+          "stock": 1.1513418323590192,
+          "investment": 0.04,
+          "reward": 0.08094695478928246,
+          "working": true
+        },
+        {
+          "step": 32,
+          "stock": 1.185585123197224,
+          "investment": 0.04,
+          "reward": 0.08360816683863789,
+          "working": true
+        },
+        {
+          "step": 33,
+          "stock": 1.219657197581238,
+          "investment": 0.04,
+          "reward": 0.08616715252798138,
+          "working": true
+        },
+        {
+          "step": 34,
+          "stock": 1.2535589115933319,
+          "investment": 0.04,
+          "reward": 0.08862825902994867,
+          "working": true
+        },
+        {
+          "step": 35,
+          "stock": 1.2872911170353654,
+          "investment": 0.04,
+          "reward": 0.09099563242193195,
+          "working": true
+        },
+        {
+          "step": 36,
+          "stock": 1.3208546614501886,
+          "investment": 0.04,
+          "reward": 0.0932732276856327,
+          "working": true
+        },
+        {
+          "step": 37,
+          "stock": 1.3542503881429377,
+          "investment": 0.04,
+          "reward": 0.09546481817675959,
+          "working": true
+        },
+        {
+          "step": 38,
+          "stock": 1.3874791362022232,
+          "investment": 0.04,
+          "reward": 0.09757400459458934,
+          "working": true
+        },
+        {
+          "step": 39,
+          "stock": 1.4205417405212122,
+          "investment": 0.04,
+          "reward": 0.09960422347935335,
+          "working": true
+        },
+        {
+          "step": 99,
+          "stock": 1.4604470036390276,
+          "investment": 0.0,
+          "reward": 0.1419668781329474,
+          "working": true
+        },
+        {
+          "step": 199,
+          "stock": 1.4869805970222336,
+          "investment": 0.0,
+          "reward": 0.14348645630511986,
+          "working": true
+        },
+        {
+          "step": 499,
+          "stock": 1.4857006725139184,
+          "investment": 0.0,
+          "reward": 0.143414076925303,
+          "working": true
+        },
+        {
+          "step": 1999,
+          "stock": 1.4797761704299797,
+          "investment": 0.0,
+          "reward": 0.14307783846689082,
+          "working": true
+        }
+      ]
+    },
+    {
+      "gamma": 0.005,
+      "grid_points": 4001,
+      "cap": 8.0,
+      "iterations": 499,
+      "Bellman_grid_residual": 9.992007221626409e-13,
+      "approximate_value_at_zero": 0.449452862113007,
+      "feasible_continuous_policy_value": 0.4494601647786578,
+      "conservative_interpolation_error_bound": 0.08675799088756372,
+      "value_upper_bound": 0.5362108530005707,
+      "value_at_first_invested_state_approximation": 0.5152135390673201,
+      "first_investment_action_value_upper_bound": 0.5318729534571397,
+      "rest_at_zero_proved_optimal_by_strict_upper_bound": false,
+      "feasible_return_tail_bound": 1.4001693996774652e-44,
+      "first_investment": 0.04,
+      "sample_trajectory": [
+        {
+          "step": 0,
+          "stock": 0.0,
+          "investment": 0.04,
+          "reward": -0.04,
+          "working": false
+        },
+        {
+          "step": 1,
+          "stock": 0.04,
+          "investment": 0.04,
+          "reward": -0.04,
+          "working": false
+        },
+        {
+          "step": 2,
+          "stock": 0.07980000000000001,
+          "investment": 0.04,
+          "reward": -0.04,
+          "working": false
+        },
+        {
+          "step": 3,
+          "stock": 0.11940100000000001,
+          "investment": 0.04,
+          "reward": -0.04,
+          "working": false
+        },
+        {
+          "step": 4,
+          "stock": 0.158803995,
+          "investment": 0.04,
+          "reward": -0.04,
+          "working": false
+        },
+        {
+          "step": 5,
+          "stock": 0.198009975025,
+          "investment": 0.04,
+          "reward": -0.04,
+          "working": false
+        },
+        {
+          "step": 6,
+          "stock": 0.23701992514987502,
+          "investment": 0.04,
+          "reward": -0.03724389185114104,
+          "working": true
+        },
+        {
+          "step": 7,
+          "stock": 0.27583482552412564,
+          "investment": 0.04,
+          "reward": -0.02973456941028356,
+          "working": true
+        },
+        {
+          "step": 8,
+          "stock": 0.314455651396505,
+          "investment": 0.04,
+          "reward": -0.022546560491768737,
+          "working": true
+        },
+        {
+          "step": 9,
+          "stock": 0.35288337313952245,
+          "investment": 0.04,
+          "reward": -0.015664784381974974,
+          "working": true
+        },
+        {
+          "step": 10,
+          "stock": 0.3911189562738248,
+          "investment": 0.04,
+          "reward": -0.0090749252904097,
+          "working": true
+        },
+        {
+          "step": 11,
+          "stock": 0.42916336149245565,
+          "investment": 0.04,
+          "reward": -0.002763390852861543,
+          "working": true
+        },
+        {
+          "step": 12,
+          "stock": 0.46701754468499335,
+          "investment": 0.04,
+          "reward": 0.003282726976214144,
+          "working": true
+        },
+        {
+          "step": 13,
+          "stock": 0.5046824569615684,
+          "investment": 0.04,
+          "reward": 0.009075688787198201,
+          "working": true
+        },
+        {
+          "step": 14,
+          "stock": 0.5421590446767607,
+          "investment": 0.04,
+          "reward": 0.014627142470567157,
+          "working": true
+        },
+        {
+          "step": 15,
+          "stock": 0.5794482494533769,
+          "investment": 0.04,
+          "reward": 0.01994815599113984,
+          "working": true
+        },
+        {
+          "step": 16,
+          "stock": 0.6165510082061101,
+          "investment": 0.04,
+          "reward": 0.025049248300479506,
+          "working": true
+        },
+        {
+          "step": 17,
+          "stock": 0.6534682531650796,
+          "investment": 0.04,
+          "reward": 0.02994041849909037,
+          "working": true
+        },
+        {
+          "step": 18,
+          "stock": 0.6902009118992543,
+          "investment": 0.04,
+          "reward": 0.0346311733530179,
+          "working": true
+        },
+        {
+          "step": 19,
+          "stock": 0.726749907339758,
+          "investment": 0.04,
+          "reward": 0.03913055326289252,
+          "working": true
+        },
+        {
+          "step": 20,
+          "stock": 0.7631161578030592,
+          "investment": 0.04,
+          "reward": 0.0434471567773221,
+          "working": true
+        },
+        {
+          "step": 21,
+          "stock": 0.7993005770140439,
+          "investment": 0.04,
+          "reward": 0.047589163736802186,
+          "working": true
+        },
+        {
+          "step": 22,
+          "stock": 0.8353040741289737,
+          "investment": 0.04,
+          "reward": 0.051564357128954234,
+          "working": true
+        },
+        {
+          "step": 23,
+          "stock": 0.8711275537583288,
+          "investment": 0.04,
+          "reward": 0.055380143730890084,
+          "working": true
+        },
+        {
+          "step": 24,
+          "stock": 0.9067719159895372,
+          "investment": 0.04,
+          "reward": 0.05904357360981501,
+          "working": true
+        },
+        {
+          "step": 25,
+          "stock": 0.9422380564095896,
+          "investment": 0.04,
+          "reward": 0.06256135854859932,
+          "working": true
+        },
+        {
+          "step": 26,
+          "stock": 0.9775268661275417,
+          "investment": 0.04,
+          "reward": 0.06593988945894852,
+          "working": true
+        },
+        {
+          "step": 27,
+          "stock": 1.012639231796904,
+          "investment": 0.04,
+          "reward": 0.06918525284096469,
+          "working": true
+        },
+        {
+          "step": 28,
+          "stock": 1.0475760356379196,
+          "investment": 0.04,
+          "reward": 0.0723032463443036,
+          "working": true
+        },
+        {
+          "step": 29,
+          "stock": 1.08233815545973,
+          "investment": 0.04,
+          "reward": 0.07529939348276865,
+          "working": true
+        },
+        {
+          "step": 30,
+          "stock": 1.1169264646824313,
+          "investment": 0.04,
+          "reward": 0.07817895755103926,
+          "working": true
+        },
+        {
+          "step": 31,
+          "stock": 1.1513418323590192,
+          "investment": 0.04,
+          "reward": 0.08094695478928246,
+          "working": true
+        },
+        {
+          "step": 32,
+          "stock": 1.185585123197224,
+          "investment": 0.04,
+          "reward": 0.08360816683863789,
+          "working": true
+        },
+        {
+          "step": 33,
+          "stock": 1.219657197581238,
+          "investment": 0.04,
+          "reward": 0.08616715252798138,
+          "working": true
+        },
+        {
+          "step": 34,
+          "stock": 1.2535589115933319,
+          "investment": 0.04,
+          "reward": 0.08862825902994867,
+          "working": true
+        },
+        {
+          "step": 35,
+          "stock": 1.2872911170353654,
+          "investment": 0.04,
+          "reward": 0.09099563242193195,
+          "working": true
+        },
+        {
+          "step": 36,
+          "stock": 1.3208546614501886,
+          "investment": 0.04,
+          "reward": 0.0932732276856327,
+          "working": true
+        },
+        {
+          "step": 37,
+          "stock": 1.3542503881429377,
+          "investment": 0.04,
+          "reward": 0.09546481817675959,
+          "working": true
+        },
+        {
+          "step": 38,
+          "stock": 1.3874791362022232,
+          "investment": 0.04,
+          "reward": 0.09757400459458934,
+          "working": true
+        },
+        {
+          "step": 39,
+          "stock": 1.4205417405212122,
+          "investment": 0.04,
+          "reward": 0.09960422347935335,
+          "working": true
+        },
+        {
+          "step": 99,
+          "stock": 1.4604470036390276,
+          "investment": 0.0,
+          "reward": 0.1419668781329474,
+          "working": true
+        },
+        {
+          "step": 199,
+          "stock": 1.4869805970222336,
+          "investment": 0.0,
+          "reward": 0.14348645630511986,
+          "working": true
+        },
+        {
+          "step": 499,
+          "stock": 1.4857006725139184,
+          "investment": 0.0,
+          "reward": 0.143414076925303,
+          "working": true
+        },
+        {
+          "step": 1999,
+          "stock": 1.4797761704299797,
+          "investment": 0.0,
+          "reward": 0.14307783846689082,
+          "working": true
+        }
+      ]
+    },
+    {
+      "gamma": 0.005,
+      "grid_points": 8001,
+      "cap": 8.0,
+      "iterations": 500,
+      "Bellman_grid_residual": 9.516831767086842e-13,
+      "approximate_value_at_zero": 0.4494583823331323,
+      "feasible_continuous_policy_value": 0.4494601647786578,
+      "conservative_interpolation_error_bound": 0.04337899545282352,
+      "value_upper_bound": 0.4928373777859558,
+      "value_at_first_invested_state_approximation": 0.5152193498252976,
+      "first_investment_action_value_upper_bound": 0.4906684280142151,
+      "rest_at_zero_proved_optimal_by_strict_upper_bound": false,
+      "feasible_return_tail_bound": 1.4001693996774652e-44,
+      "first_investment": 0.04,
+      "sample_trajectory": [
+        {
+          "step": 0,
+          "stock": 0.0,
+          "investment": 0.04,
+          "reward": -0.04,
+          "working": false
+        },
+        {
+          "step": 1,
+          "stock": 0.04,
+          "investment": 0.04,
+          "reward": -0.04,
+          "working": false
+        },
+        {
+          "step": 2,
+          "stock": 0.07980000000000001,
+          "investment": 0.04,
+          "reward": -0.04,
+          "working": false
+        },
+        {
+          "step": 3,
+          "stock": 0.11940100000000001,
+          "investment": 0.04,
+          "reward": -0.04,
+          "working": false
+        },
+        {
+          "step": 4,
+          "stock": 0.158803995,
+          "investment": 0.04,
+          "reward": -0.04,
+          "working": false
+        },
+        {
+          "step": 5,
+          "stock": 0.198009975025,
+          "investment": 0.04,
+          "reward": -0.04,
+          "working": false
+        },
+        {
+          "step": 6,
+          "stock": 0.23701992514987502,
+          "investment": 0.04,
+          "reward": -0.03724389185114104,
+          "working": true
+        },
+        {
+          "step": 7,
+          "stock": 0.27583482552412564,
+          "investment": 0.04,
+          "reward": -0.02973456941028356,
+          "working": true
+        },
+        {
+          "step": 8,
+          "stock": 0.314455651396505,
+          "investment": 0.04,
+          "reward": -0.022546560491768737,
+          "working": true
+        },
+        {
+          "step": 9,
+          "stock": 0.35288337313952245,
+          "investment": 0.04,
+          "reward": -0.015664784381974974,
+          "working": true
+        },
+        {
+          "step": 10,
+          "stock": 0.3911189562738248,
+          "investment": 0.04,
+          "reward": -0.0090749252904097,
+          "working": true
+        },
+        {
+          "step": 11,
+          "stock": 0.42916336149245565,
+          "investment": 0.04,
+          "reward": -0.002763390852861543,
+          "working": true
+        },
+        {
+          "step": 12,
+          "stock": 0.46701754468499335,
+          "investment": 0.04,
+          "reward": 0.003282726976214144,
+          "working": true
+        },
+        {
+          "step": 13,
+          "stock": 0.5046824569615684,
+          "investment": 0.04,
+          "reward": 0.009075688787198201,
+          "working": true
+        },
+        {
+          "step": 14,
+          "stock": 0.5421590446767607,
+          "investment": 0.04,
+          "reward": 0.014627142470567157,
+          "working": true
+        },
+        {
+          "step": 15,
+          "stock": 0.5794482494533769,
+          "investment": 0.04,
+          "reward": 0.01994815599113984,
+          "working": true
+        },
+        {
+          "step": 16,
+          "stock": 0.6165510082061101,
+          "investment": 0.04,
+          "reward": 0.025049248300479506,
+          "working": true
+        },
+        {
+          "step": 17,
+          "stock": 0.6534682531650796,
+          "investment": 0.04,
+          "reward": 0.02994041849909037,
+          "working": true
+        },
+        {
+          "step": 18,
+          "stock": 0.6902009118992543,
+          "investment": 0.04,
+          "reward": 0.0346311733530179,
+          "working": true
+        },
+        {
+          "step": 19,
+          "stock": 0.726749907339758,
+          "investment": 0.04,
+          "reward": 0.03913055326289252,
+          "working": true
+        },
+        {
+          "step": 20,
+          "stock": 0.7631161578030592,
+          "investment": 0.04,
+          "reward": 0.0434471567773221,
+          "working": true
+        },
+        {
+          "step": 21,
+          "stock": 0.7993005770140439,
+          "investment": 0.04,
+          "reward": 0.047589163736802186,
+          "working": true
+        },
+        {
+          "step": 22,
+          "stock": 0.8353040741289737,
+          "investment": 0.04,
+          "reward": 0.051564357128954234,
+          "working": true
+        },
+        {
+          "step": 23,
+          "stock": 0.8711275537583288,
+          "investment": 0.04,
+          "reward": 0.055380143730890084,
+          "working": true
+        },
+        {
+          "step": 24,
+          "stock": 0.9067719159895372,
+          "investment": 0.04,
+          "reward": 0.05904357360981501,
+          "working": true
+        },
+        {
+          "step": 25,
+          "stock": 0.9422380564095896,
+          "investment": 0.04,
+          "reward": 0.06256135854859932,
+          "working": true
+        },
+        {
+          "step": 26,
+          "stock": 0.9775268661275417,
+          "investment": 0.04,
+          "reward": 0.06593988945894852,
+          "working": true
+        },
+        {
+          "step": 27,
+          "stock": 1.012639231796904,
+          "investment": 0.04,
+          "reward": 0.06918525284096469,
+          "working": true
+        },
+        {
+          "step": 28,
+          "stock": 1.0475760356379196,
+          "investment": 0.04,
+          "reward": 0.0723032463443036,
+          "working": true
+        },
+        {
+          "step": 29,
+          "stock": 1.08233815545973,
+          "investment": 0.04,
+          "reward": 0.07529939348276865,
+          "working": true
+        },
+        {
+          "step": 30,
+          "stock": 1.1169264646824313,
+          "investment": 0.04,
+          "reward": 0.07817895755103926,
+          "working": true
+        },
+        {
+          "step": 31,
+          "stock": 1.1513418323590192,
+          "investment": 0.04,
+          "reward": 0.08094695478928246,
+          "working": true
+        },
+        {
+          "step": 32,
+          "stock": 1.185585123197224,
+          "investment": 0.04,
+          "reward": 0.08360816683863789,
+          "working": true
+        },
+        {
+          "step": 33,
+          "stock": 1.219657197581238,
+          "investment": 0.04,
+          "reward": 0.08616715252798138,
+          "working": true
+        },
+        {
+          "step": 34,
+          "stock": 1.2535589115933319,
+          "investment": 0.04,
+          "reward": 0.08862825902994867,
+          "working": true
+        },
+        {
+          "step": 35,
+          "stock": 1.2872911170353654,
+          "investment": 0.04,
+          "reward": 0.09099563242193195,
+          "working": true
+        },
+        {
+          "step": 36,
+          "stock": 1.3208546614501886,
+          "investment": 0.04,
+          "reward": 0.0932732276856327,
+          "working": true
+        },
+        {
+          "step": 37,
+          "stock": 1.3542503881429377,
+          "investment": 0.04,
+          "reward": 0.09546481817675959,
+          "working": true
+        },
+        {
+          "step": 38,
+          "stock": 1.3874791362022232,
+          "investment": 0.04,
+          "reward": 0.09757400459458934,
+          "working": true
+        },
+        {
+          "step": 39,
+          "stock": 1.4205417405212122,
+          "investment": 0.04,
+          "reward": 0.09960422347935335,
+          "working": true
+        },
+        {
+          "step": 99,
+          "stock": 1.4604470036390276,
+          "investment": 0.0,
+          "reward": 0.1419668781329474,
+          "working": true
+        },
+        {
+          "step": 199,
+          "stock": 1.4869805970222336,
+          "investment": 0.0,
+          "reward": 0.14348645630511986,
+          "working": true
+        },
+        {
+          "step": 499,
+          "stock": 1.4857006725139184,
+          "investment": 0.0,
+          "reward": 0.143414076925303,
+          "working": true
+        },
+        {
+          "step": 1999,
+          "stock": 1.4797761704299797,
+          "investment": 0.0,
+          "reward": 0.14307783846689082,
+          "working": true
+        }
+      ]
+    }
+  ],
+  "exit_controls": [
+    {
+      "gamma": 0.105,
+      "old_reference_stock": 0.4612003864791371,
+      "waiting_rounds_to_clear": 11,
+      "discounted_old_operating_return_while_waiting": 0.0,
+      "passive_stay_value_upper_bound": 0.004510518260956894,
+      "immediate_leave_feasible_value_lower_bound": -0.12,
+      "leaving_beats_passive_waiting_by_valid_bound": false,
+      "guaranteed_new_site_assumed": true,
+      "other_mobility_strategies_not_solved": true
+    },
+    {
+      "gamma": 0.05,
+      "old_reference_stock": 0.8903152454708944,
+      "waiting_rounds_to_clear": 35,
+      "discounted_old_operating_return_while_waiting": 0.0,
+      "passive_stay_value_upper_bound": 0.0020228104491935833,
+      "immediate_leave_feasible_value_lower_bound": -0.12,
+      "leaving_beats_passive_waiting_by_valid_bound": false,
+      "guaranteed_new_site_assumed": true,
+      "other_mobility_strategies_not_solved": true
+    },
+    {
+      "gamma": 0.005,
+      "old_reference_stock": 1.4673902547780857,
+      "waiting_rounds_to_clear": 455,
+      "discounted_old_operating_return_while_waiting": 0.0,
+      "passive_stay_value_upper_bound": 3.6053218831997315e-11,
+      "immediate_leave_feasible_value_lower_bound": 0.3294601647786578,
+      "leaving_beats_passive_waiting_by_valid_bound": true,
+      "guaranteed_new_site_assumed": true,
+      "other_mobility_strategies_not_solved": true
+    }
+  ],
+  "gamma025_no_reachable_stock_exceeds_work_threshold": true,
+  "does_not_prove_multiagent_bootstrap_or_relational_equilibrium": true,
+  "CT2_historical": 61,
+  "new_branch_score": null,
+  "N2": 0,
+  "N3": 0
+}
