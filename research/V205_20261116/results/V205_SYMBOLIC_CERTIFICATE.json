@@ -1,0 +1,57 @@
+{
+  "study": "V205",
+  "status": "PASS",
+  "method": "SymPy exact symbolic action enumeration, unilateral policies and equilibrium-condition Jacobian",
+  "own_gradient": [
+    [
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0"
+    ]
+  ],
+  "AA_correction": [
+    [
+      "0",
+      "beta*gamma**3/4",
+      "beta*gamma**3/4"
+    ],
+    [
+      "0",
+      "0",
+      "0"
+    ]
+  ],
+  "pure_unilateral_policy_certificates": 16,
+  "all_initial_unilateral_values": [
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "marginal_Nash_conditions_zero": true,
+  "isolated_equilibrium_jacobian_determinant": "4096*c**6",
+  "isolated_for_positive_c": true,
+  "exact_player2_regret_after_joint_advantage_step": "gamma*(c + 1)*tanh(alpha*beta*gamma**3/8)",
+  "regret_positive_for_positive_gamma_beta_alpha": true,
+  "general_learning_success_or_welfare_claim": false,
+  "external_scientific_confirmation": false,
+  "sympy_version": "1.14.0",
+  "source_sha256": "4e77f9aed758b2be0aec41e151ca75ec8584900090f4b79c7dc216e43bf7ac68"
+}

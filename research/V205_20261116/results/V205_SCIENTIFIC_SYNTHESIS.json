@@ -1,0 +1,127 @@
+{
+  "study": "V205",
+  "status": "INTERNALLY_CONFIRMED_MATHEMATICAL_COUNTEREXAMPLE",
+  "primary_H1": "CONFIRMED_INTERNAL_COUNTEREXAMPLE",
+  "registration_commit": "c7779edf154a924262ddd60a579d7b9eafab0ba9",
+  "source_freeze_unchanged": true,
+  "primary_outputs_unchanged": true,
+  "literal_profiles": 320,
+  "source_helper_calls": 144,
+  "AA_source_calls": 96,
+  "naive_source_calls": 48,
+  "independent_stochastic_replications": 0,
+  "exact_game_paths": 16,
+  "deterministic_BR_policies_per_player": 8,
+  "central": {
+    "gamma": 0.9,
+    "beta": 0.3,
+    "alpha": 0.1,
+    "coupling": 0.1,
+    "terminal_field": 0.05467500000000001,
+    "exact_player2_regret": 0.0027064057579956335
+  },
+  "maximum_beta0_or_marginal_control_field": 6.938893903907228e-18,
+  "maximum_naive_source_control_field": 3.725290298461914e-09,
+  "AA_source_minimum_regret": 0.0016874979218811648,
+  "AA_source_maximum_regret": 0.007165546790251942,
+  "independent_internal_JS_completed": true,
+  "JS": {
+    "status": "PASS",
+    "literalProfiles": 320,
+    "originalSourcePostStepProfiles": 144,
+    "maxFieldError": 5.551115123125783e-17,
+    "maxBestResponseError": 1.249000902703301e-16,
+    "independentImplementation": true,
+    "externalScientificConfirmation": false,
+    "method": "Literal JavaScript action enumeration, score products and exhaustive 8-policy unilateral deviations"
+  },
+  "symbolic": {
+    "study": "V205",
+    "status": "PASS",
+    "method": "SymPy exact symbolic action enumeration, unilateral policies and equilibrium-condition Jacobian",
+    "own_gradient": [
+      [
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "AA_correction": [
+      [
+        "0",
+        "beta*gamma**3/4",
+        "beta*gamma**3/4"
+      ],
+      [
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "pure_unilateral_policy_certificates": 16,
+    "all_initial_unilateral_values": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "marginal_Nash_conditions_zero": true,
+    "isolated_equilibrium_jacobian_determinant": "4096*c**6",
+    "isolated_for_positive_c": true,
+    "exact_player2_regret_after_joint_advantage_step": "gamma*(c + 1)*tanh(alpha*beta*gamma**3/8)",
+    "regret_positive_for_positive_gamma_beta_alpha": true,
+    "general_learning_success_or_welfare_claim": false,
+    "external_scientific_confirmation": false,
+    "sympy_version": "1.14.0",
+    "source_sha256": "4e77f9aed758b2be0aec41e151ca75ec8584900090f4b79c7dc216e43bf7ac68"
+  },
+  "post_hoc_intervention_summary": {
+    "study": "V205",
+    "analysis": "POST_HOC_CAUSAL_OPERATOR_INTERVENTION",
+    "registered_primary_outcome_unchanged": true,
+    "debug_seed": 2051930,
+    "profiles": 12,
+    "maximum_own_gradient_discrepancy": 5.551115123125783e-17,
+    "maximum_hybrid_marginal_correction_norm": 2.6379777400251014e-18,
+    "minimum_joint_correction_norm": 0.023923180318218475,
+    "operator_changes_not_an_unbiased_variance_reduction": true,
+    "general_proof_requires_independent_current_action_sampling_and_detached_advantages": true,
+    "external_scientific_confirmation": false,
+    "original_priority_unestablished": true,
+    "source_sha256": "2fbad6b25a277eca46aae17bd5d6d0f70cbd2752cc4e69f1df703cc86ea55829"
+  },
+  "cancellation_scope": "Independent current action sampling, detached current opponent marginal, and pre-current-action measurable past weights; not arbitrary past sampled GAE",
+  "published_publisher_copy_checked": true,
+  "theorem_scope": "Joint-action Equation 8/10 and sampled original loss helpers, not a distinct unconditional-inner-expectation interpretation of Eq66",
+  "implementation_scope": "Unmodified extracted original loss helper bodies on own tabular game; no original network/environment/training reproduction",
+  "scientific_external_confirmation": false,
+  "original_priority_established": false,
+  "new_N1_awards": [],
+  "N2": 0,
+  "N3": 0,
+  "historical_CT2": 61,
+  "new_branch_score": null,
+  "overall_goal": "ACTIVE",
+  "runtime": {
+    "python": "3.12.16",
+    "numpy": "2.5.4",
+    "node": "v24.16.0"
+  }
+}

@@ -1,0 +1,281 @@
+{
+  "study": "V205",
+  "analysis": "POST_HOC_CAUSAL_OPERATOR_INTERVENTION",
+  "registered_primary_outcome_unchanged": true,
+  "debug_seed": 2051930,
+  "profiles": 12,
+  "maximum_own_gradient_discrepancy": 5.551115123125783e-17,
+  "maximum_hybrid_marginal_correction_norm": 2.6379777400251014e-18,
+  "minimum_joint_correction_norm": 0.023923180318218475,
+  "operator_changes_not_an_unbiased_variance_reduction": true,
+  "general_proof_requires_independent_current_action_sampling_and_detached_advantages": true,
+  "external_scientific_confirmation": false,
+  "original_priority_unestablished": true,
+  "rows": [
+    {
+      "case": 0,
+      "theta": [
+        [
+          0.5913348165783469,
+          -1.715030753115915,
+          0.13272724156929236
+        ],
+        [
+          0.4528398685058445,
+          -1.7597700823243756,
+          -0.631073949386108
+        ]
+      ],
+      "gamma": 0.5,
+      "coupling": 0.0,
+      "actual_non_equilibrium_regret": 0.19216936206576138,
+      "own_gradient_difference": 1.0842021724855044e-17,
+      "joint_AA_correction_norm": 0.033320068626347045,
+      "opponent_only_marginal_correction_norm": 0.0,
+      "all_marginal_correction_norm": 0.0
+    },
+    {
+      "case": 1,
+      "theta": [
+        [
+          0.14215281283432898,
+          -1.5826510923127775,
+          -0.5582159834908678
+        ],
+        [
+          0.3727176621980342,
+          -1.3859272952548982,
+          0.29760139763790117
+        ]
+      ],
+      "gamma": 0.9,
+      "coupling": 0.1,
+      "actual_non_equilibrium_regret": 0.5487474615401342,
+      "own_gradient_difference": 8.673617379884035e-18,
+      "joint_AA_correction_norm": 0.20151281288462097,
+      "opponent_only_marginal_correction_norm": 1.7142741545784674e-19,
+      "all_marginal_correction_norm": 7.681426057803939e-20
+    },
+    {
+      "case": 2,
+      "theta": [
+        [
+          -0.15060609850453793,
+          -0.43202056353687796,
+          -0.5788870851161123
+        ],
+        [
+          0.8536352446308183,
+          0.8640513447058302,
+          -0.7240595494433988
+        ]
+      ],
+      "gamma": 0.99,
+      "coupling": 0.4,
+      "actual_non_equilibrium_regret": 0.4000903440588703,
+      "own_gradient_difference": 6.938893903907228e-18,
+      "joint_AA_correction_norm": 0.21364399506688087,
+      "opponent_only_marginal_correction_norm": 1.3884562417838567e-18,
+      "all_marginal_correction_norm": 3.5547945469941845e-19
+    },
+    {
+      "case": 3,
+      "theta": [
+        [
+          -0.9321734142655039,
+          -0.8514910467640298,
+          -0.8773070679147564
+        ],
+        [
+          -1.3631436415235574,
+          -0.3792669424526204,
+          1.2036408483437975
+        ]
+      ],
+      "gamma": 0.5,
+      "coupling": 0.0,
+      "actual_non_equilibrium_regret": 0.08294732597269526,
+      "own_gradient_difference": 6.938893903907228e-18,
+      "joint_AA_correction_norm": 0.023923180318218475,
+      "opponent_only_marginal_correction_norm": 0.0,
+      "all_marginal_correction_norm": 0.0
+    },
+    {
+      "case": 4,
+      "theta": [
+        [
+          0.30358515740860753,
+          -0.3959509625601371,
+          -0.6116592174860402
+        ],
+        [
+          0.1293859409097132,
+          -0.19906696457357367,
+          0.9038483966532393
+        ]
+      ],
+      "gamma": 0.9,
+      "coupling": 0.1,
+      "actual_non_equilibrium_regret": 0.2741107651254774,
+      "own_gradient_difference": 3.729655473350135e-17,
+      "joint_AA_correction_norm": 0.2519951598628422,
+      "opponent_only_marginal_correction_norm": 1.631940375314535e-19,
+      "all_marginal_correction_norm": 2.794246022715893e-20
+    },
+    {
+      "case": 5,
+      "theta": [
+        [
+          -0.36512649630607674,
+          0.982758507492631,
+          -1.379023821161569
+        ],
+        [
+          0.5480782101075968,
+          0.35910725743138594,
+          1.0596668081232592
+        ]
+      ],
+      "gamma": 0.99,
+      "coupling": 0.4,
+      "actual_non_equilibrium_regret": 0.26300544453029556,
+      "own_gradient_difference": 2.0816681711721685e-17,
+      "joint_AA_correction_norm": 0.23989781886675154,
+      "opponent_only_marginal_correction_norm": 2.6379777400251014e-18,
+      "all_marginal_correction_norm": 2.2718175287815495e-19
+    },
+    {
+      "case": 6,
+      "theta": [
+        [
+          -0.4859317190149642,
+          -0.9164809109737168,
+          -0.5721598274300957
+        ],
+        [
+          0.4380061708482316,
+          -0.1585718949451597,
+          -0.2861008640246726
+        ]
+      ],
+      "gamma": 0.5,
+      "coupling": 0.0,
+      "actual_non_equilibrium_regret": 0.21490380736899678,
+      "own_gradient_difference": 1.9081958235744878e-17,
+      "joint_AA_correction_norm": 0.03670275556901695,
+      "opponent_only_marginal_correction_norm": 0.0,
+      "all_marginal_correction_norm": 0.0
+    },
+    {
+      "case": 7,
+      "theta": [
+        [
+          1.8702553277902478,
+          -0.40287808297802236,
+          -1.2892471676283939
+        ],
+        [
+          -0.7384215360873235,
+          0.6968498843008268,
+          -1.4186914197299334
+        ]
+      ],
+      "gamma": 0.9,
+      "coupling": 0.1,
+      "actual_non_equilibrium_regret": 0.34084738250212593,
+      "own_gradient_difference": 2.7755575615628914e-17,
+      "joint_AA_correction_norm": 0.18931979400715376,
+      "opponent_only_marginal_correction_norm": 1.9545732629329692e-19,
+      "all_marginal_correction_norm": 5.42365719446819e-20
+    },
+    {
+      "case": 8,
+      "theta": [
+        [
+          0.049676600039247426,
+          0.24643067277345257,
+          -0.4740324974509127
+        ],
+        [
+          -0.6245106777500554,
+          1.1733615259823984,
+          -0.003954352115658299
+        ]
+      ],
+      "gamma": 0.99,
+      "coupling": 0.4,
+      "actual_non_equilibrium_regret": 0.1883118466974461,
+      "own_gradient_difference": 1.734723475976807e-17,
+      "joint_AA_correction_norm": 0.2757674686660514,
+      "opponent_only_marginal_correction_norm": 2.6200934866262717e-18,
+      "all_marginal_correction_norm": 1.2421114360673676e-19
+    },
+    {
+      "case": 9,
+      "theta": [
+        [
+          -0.7060185356486318,
+          0.26558889579781125,
+          -0.33835492293110614
+        ],
+        [
+          -0.09262893879225664,
+          0.042489996262016945,
+          -1.0125668197945252
+        ]
+      ],
+      "gamma": 0.5,
+      "coupling": 0.0,
+      "actual_non_equilibrium_regret": 0.008479127069678183,
+      "own_gradient_difference": 6.938893903907228e-18,
+      "joint_AA_correction_norm": 0.04309660700640703,
+      "opponent_only_marginal_correction_norm": 0.0,
+      "all_marginal_correction_norm": 0.0
+    },
+    {
+      "case": 10,
+      "theta": [
+        [
+          -0.3778623717502918,
+          -0.8224272217414934,
+          -1.132102068049614
+        ],
+        [
+          0.3158737858669315,
+          0.7158227074850938,
+          1.2815139321169173
+        ]
+      ],
+      "gamma": 0.9,
+      "coupling": 0.1,
+      "actual_non_equilibrium_regret": 0.4760229535986241,
+      "own_gradient_difference": 2.7755575615628914e-17,
+      "joint_AA_correction_norm": 0.19866387631123114,
+      "opponent_only_marginal_correction_norm": 3.7947076036992655e-19,
+      "all_marginal_correction_norm": 6.108041446665529e-20
+    },
+    {
+      "case": 11,
+      "theta": [
+        [
+          0.6569759652289693,
+          -0.9452705565799822,
+          -0.21082999474269812
+        ],
+        [
+          0.5270873685933588,
+          1.2181796714517983,
+          -0.34177332968440655
+        ]
+      ],
+      "gamma": 0.99,
+      "coupling": 0.4,
+      "actual_non_equilibrium_regret": 0.4836493662153585,
+      "own_gradient_difference": 5.551115123125783e-17,
+      "joint_AA_correction_norm": 0.27243007616714565,
+      "opponent_only_marginal_correction_norm": 4.84869951806108e-19,
+      "all_marginal_correction_norm": 1.21217487951527e-19
+    }
+  ],
+  "source_sha256": "2fbad6b25a277eca46aae17bd5d6d0f70cbd2752cc4e69f1df703cc86ea55829"
+}
