@@ -1,0 +1,15 @@
+# Actualización de prioridad posterior a V204
+
+Esta búsqueda no establece originalidad ni modifica H1. Se añade después de publicar las evidencias inmutables 7ea02d43860b0ca98aaa9c6c1abc4145d4ffc9bf.
+
+1. **Advantage Alignment Algorithms, ICLR2025** (Duque y colaboradores, arXiv2406.14662v3). Verificados título y sede en el artículo original; leídos introducción, secciones3–4.1, algoritmo1/ecuaciones4–8 y descripción del cambio a valores públicos en Negotiation Game. El método ya unifica mecanismos de alineación de ventajas en LOLA/LOQA. El algoritmo1 entrena también un crítico del oponente con su recompensa: no equipararlo sin auditoría a observar únicamente la propia recompensa. No se ha implementado ni se han revisado todas sus pruebas/apéndices. El apéndiceA.9 trata explícitamente n jugadores y es prioritario. [Primario](https://arxiv.org/pdf/2406.14662).
+
+2. **LOQA, ICLR2024.** Abstract del artículo y repositorio de autores consultados. Modela comportamiento mediante valores Q y ofrece un rival posterior a LOLA/POLA. Falta revisar el método y sus requisitos de datos antes de portarlo. [Primario](https://proceedings.iclr.cc/paper_files/paper/2024/file/402542c2341e5d2eadc1dd0891275901-Paper-Conference.pdf), [código](https://github.com/MiladInk/loqa).
+
+3. **DUOS, preprint 5–6/11/2026.** La búsqueda inicial devolvió una copia en un dominio ajeno; el título, autores, fechas y abstract se comprobaron después en arXiv2611.08335v2. Los autores presentan metaprendizaje de reglas que usan experiencia propia y optimizan retorno vital, y comunican resultados de opponent shaping. No se ha leído aún el método ni comprobado la evaluación. No proponer esa idea general como algoritmo nuevo de AB ni tratar el preprint como evidencia externa de nuestro juego. [Primario](https://arxiv.org/abs/2611.08335v2).
+
+Consecuencia para la identidad V204: interpretar un producto de ventajas o la conciencia del aprendizaje ajeno como novedad sería incorrecto. La eventual aportación debe residir en una predicción cuantitativa adicional —por ejemplo el factor de ocupación/rareza o el umbral informativo, si no están ya cubiertos— y en validación discriminante suficiente. No se ha determinado si esos detalles específicos ya aparecen en los antecedentes.
+
+Hipótesis de trabajo adicional, **sin comprobación**: distinguir productos de gradientes esperados de productos estimados con muestras compartidas. Su covarianza puede cambiar la dependencia de rareza y tamaño de batch. Antes de convertirla en predicción, leer las derivaciones de LOLA/DiCE/Advantage Alignment: podrían describir ya el efecto o mostrar que el estimador propuesto cambia de objetivo. No se ha ejecutado una campaña de batch, no afirmar que el ruido ayuda y no modificar los negativos registrados.
+
+Prioridad siguiente: comprobar la fórmula general con otra implementación y revisar el vínculo exacto con Advantage Alignment, antes de gastar GPU en entrenamientos adicionales. El 61 histórico no cambia y el candidato sigue sin acreditación N1/N2/N3.
