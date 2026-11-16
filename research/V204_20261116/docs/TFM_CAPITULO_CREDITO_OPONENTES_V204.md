@@ -1,0 +1,11 @@
+# Control de aprendizaje ajeno e identidad del incentivo local
+
+El fracaso de gradientes propios exactos dejó abierta la posibilidad de que considerar el aprendizaje de los destinatarios resolviera la adquisición. Para probarlo se portó LOLA-Ex, ecuación 4.4 del método de Foerster y colaboradores, al mismo juego. Las recompensas fueron privadas, monetarias netas y con transferencias a coste íntegro, aunque el cálculo dispuso de modelo y parámetros ajenos. El método y ese acceso fueron proporcionados por el investigador: no constituyen institución aprendida.
+
+La campaña prospectiva tampoco adquirió desde COLD o sus ocho perturbaciones. Conservó el acuerdo WARM suministrado, con resultados prácticamente iguales a EPG. Las auditorías de derivadas, precisión e implementación independiente respaldan este negativo acotado. No demuestra imposibilidad general ni un resultado en poblaciones humanas.
+
+El análisis posterior produjo una identidad que explica parte del cuello de botella. En un punto uniforme, el coste directo agregado de los logits de pago tiene orden q^n, pero la corrección de LOLA que refleja su efecto en el aprendizaje del crítico tiene orden q^(2n), sin exploración y para q pequeño. En la calibración n=4 esto produce q^4 frente a q^8. La expresión cerrada reproduce 57 componentes del autodiff con error relativo inferior a 1,8e−13. En el inicio efectivo con exploración, la corrección favorable compensa solo el 0,1743% del término directo agregado del pagador de menor riesgo.
+
+Esta identidad también predice un cambio de signo del término de enseñanza según la precisión de la señal del destinatario y el riesgo del pagador. Son predicciones sobre el campo de actualización en una parametrización y un punto determinados, no sobre la cooperación finalmente aprendida. La generalización a otros tamaños y señales requiere contraste adicional; la prioridad frente a antecedentes sigue abierta. El resultado se incorpora al TFM como una contribución matemática candidata y un control de falsación, manteniendo separados derivación posterior, prueba prospectiva y confirmación externa.
+
+Para supuestos, prueba, matrices de validación y límites: `V204_CLOSED_FORM_PAYMENT_GRADIENT.md` y `results/INFORME_V204_LOLA_Y_BARRERA_CREDITO_20261116.md`. No se acredita un nivel AB adicional.

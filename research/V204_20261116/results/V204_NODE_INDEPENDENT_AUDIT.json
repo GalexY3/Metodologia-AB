@@ -1,0 +1,266 @@
+{
+  "status": "PASS",
+  "cases": 42,
+  "scalar_native_checks": 252,
+  "scalar_behavior_checks": 168,
+  "public_best_response_checks": 48,
+  "maxNativeError": 9.48699452330004e-13,
+  "maxBehaviorError": 9.49754164203398e-13,
+  "maxBRerror": 8.940625373561346e-14,
+  "method": "Independent JavaScript literal enumeration and value iteration; native sigmoid independently reconstructed from logits",
+  "external_scientific_confirmation": false,
+  "checked": [
+    {
+      "case": "COLD_None_LOLA",
+      "time": 0,
+      "error": 9.48699452330004e-13,
+      "functional": false
+    },
+    {
+      "case": "COLD_None_LOLA",
+      "time": 60,
+      "error": 9.416634139114421e-13,
+      "functional": false
+    },
+    {
+      "case": "COLD_None_LOLA",
+      "time": 600,
+      "error": 9.158229730132916e-13,
+      "functional": false
+    },
+    {
+      "case": "COLD_None_LOLA",
+      "time": 6000,
+      "error": 9.159756286791776e-13,
+      "functional": false
+    },
+    {
+      "case": "COLD_None_LOLA_PRECISION",
+      "time": 6000,
+      "error": 9.163086955865651e-13,
+      "functional": false
+    },
+    {
+      "case": "WARM_None_LOLA",
+      "time": 0,
+      "error": 9.340375695110481e-13,
+      "functional": false
+    },
+    {
+      "case": "WARM_None_LOLA",
+      "time": 60,
+      "error": 9.2612029156669e-13,
+      "functional": true
+    },
+    {
+      "case": "WARM_None_LOLA",
+      "time": 600,
+      "error": 9.408238077490694e-13,
+      "functional": true
+    },
+    {
+      "case": "WARM_None_LOLA",
+      "time": 6000,
+      "error": 9.427042479970282e-13,
+      "functional": true
+    },
+    {
+      "case": "WARM_None_LOLA_PRECISION",
+      "time": 6000,
+      "error": 9.427597591482595e-13,
+      "functional": true
+    },
+    {
+      "case": "JITTER_2031600_LOLA",
+      "time": 0,
+      "error": 9.468814621271804e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031600_LOLA",
+      "time": 60,
+      "error": 9.409140133698202e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031600_LOLA",
+      "time": 600,
+      "error": 9.17585452064884e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031600_LOLA",
+      "time": 6000,
+      "error": 9.154343949546728e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031601_LOLA",
+      "time": 0,
+      "error": 9.464790062807538e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031601_LOLA",
+      "time": 60,
+      "error": 9.428569036629142e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031601_LOLA",
+      "time": 600,
+      "error": 9.175993298526919e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031601_LOLA",
+      "time": 6000,
+      "error": 9.15351128227826e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031602_LOLA",
+      "time": 0,
+      "error": 9.463541061904834e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031602_LOLA",
+      "time": 60,
+      "error": 9.429124148141454e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031602_LOLA",
+      "time": 600,
+      "error": 9.180017856991185e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031602_LOLA",
+      "time": 6000,
+      "error": 9.153094948644025e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031603_LOLA",
+      "time": 0,
+      "error": 9.467981954003335e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031603_LOLA",
+      "time": 60,
+      "error": 9.4167729169925e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031603_LOLA",
+      "time": 600,
+      "error": 9.142409052032008e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031603_LOLA",
+      "time": 6000,
+      "error": 9.156009284083666e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031604_LOLA",
+      "time": 0,
+      "error": 9.470063622174507e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031604_LOLA",
+      "time": 60,
+      "error": 9.416495361236343e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031604_LOLA",
+      "time": 600,
+      "error": 9.163086955865651e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031604_LOLA",
+      "time": 6000,
+      "error": 9.147960167155134e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031605_LOLA",
+      "time": 0,
+      "error": 9.46603906371024e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031605_LOLA",
+      "time": 60,
+      "error": 9.411776913381686e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031605_LOLA",
+      "time": 600,
+      "error": 9.168776848866855e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031605_LOLA",
+      "time": 6000,
+      "error": 9.156286839839822e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031606_LOLA",
+      "time": 0,
+      "error": 9.468814621271804e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031606_LOLA",
+      "time": 60,
+      "error": 9.420103586066375e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031606_LOLA",
+      "time": 600,
+      "error": 9.176132076404997e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031606_LOLA",
+      "time": 6000,
+      "error": 9.144907053837414e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031607_LOLA",
+      "time": 0,
+      "error": 9.468953399149882e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031607_LOLA",
+      "time": 60,
+      "error": 9.413303470040546e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031607_LOLA",
+      "time": 600,
+      "error": 9.183626081821217e-13,
+      "functional": false
+    },
+    {
+      "case": "JITTER_2031607_LOLA",
+      "time": 6000,
+      "error": 9.152262281375556e-13,
+      "functional": false
+    }
+  ]
+}
