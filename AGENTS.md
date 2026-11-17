@@ -11,6 +11,7 @@ Este repositorio es la autoridad metodológica del protocolo AB del investigador
 4. [O4, CT2 1–100 y hallazgos 0–3](docs/AB_3_2_1_O4_CONFIANZA_Y_NIVELES.md)
 5. [O5, escala DRIFT D0–D5](docs/AB_3_2_1_O5_DISTANCIA_DRIFT.md)
 6. **[O6, campañas, gráficos CT2 y solicitudes de 5–15 ciclos](docs/AB_3_2_1_O6_CAMPANAS_INFORMES_CT2_Y_CICLOS.md)**.
+7. [O8, grados autoevaluados (2/3\*, 3/3\*) frente a confirmados](docs/AB_3_2_1_O8_GRADOS_AUTOEVALUADOS_Y_CONFIRMADOS.md).
 
 ## Contrato de experiencia con el usuario
 
@@ -19,7 +20,7 @@ Este repositorio es la autoridad metodológica del protocolo AB del investigador
 - Los experimentos y planificaciones autorizados son **ciclos AB completos A–J**. Ejecutar solo lo efectivamente instrumentado; registrar incompletos, invalidaciones, auditorías post hoc y negativos.
 - Mantener CT2 1–100 por **rama concreta**; nunca hacerla subir por obligación. **Mostrar gráfico CT2** de escala 0–100 y vista ampliada al cerrar informes, con puntos respaldados por ledger.
 - En cada DRIFT asignar distancia **D0–D5** justificada; ciclos especiales D3–D5 se etiquetan `PLANNING_AB_ONLY`.
-- Conservar cada 1/3 **único** en ledger persistente del proyecto, con evidencia, límites, falsador, parentescos y posibles combinaciones; no duplicar por semillas o fuentes. No conceder 2/3 sin contribución novedosa, control fuerte y replicación independiente.
+- Conservar cada 1/3 **único** en ledger persistente del proyecto, con evidencia, límites, falsador, parentescos y posibles combinaciones; no duplicar por semillas o fuentes. No conceder 2/3 sin contribución novedosa, control fuerte y replicación independiente; cuando el equipo haya verificado todo lo que puede y falten solo confirmaciones externas, usar 2/3\* con lista cerrada de pendientes (O8), nunca 2/3.
 - En proyectos sin excepción local, rige O6 para la solicitud final de ciclos (intervalo vigente 5–30; el antiguo 5–15 es histórico). **En PFL se aplica la política local del 30/10/2026: no pedir ciclos automáticamente; recomendar un resultado concreto y usar el saldo aplicable antes de solicitar más.** No volver a solicitar ciclos ya concedidos y pendientes. Las autorizaciones históricas permanecen intactas.
 - Registrar contratos, hash, prereg antes de ejecutar y guardar JSON por semilla, ledger A–J, prior ledger, auditoría y estado verdadero GitHub.
 - La investigación científica es prioritaria al formato: nunca inventar resultados para cubrir cuotas ni afirmar CT2/2/3 favorables sin evidencia.

@@ -11,6 +11,10 @@ Repositorio de la metodología de investigación abductivo-bayesiana **AB**, sus
 
 **Actualización 28/10/2026:** el investigador sustituye el intervalo prospectivo de 20–45 por **5–15 ciclos por bloque**, pudiendo solicitar bloques sucesivos. **ChatRelay queda suspendido por defecto**; cualquier reactivación requiere justificación excepcional y decisión nueva. Los saldos y contratos históricos permanecen separados.
 
+## Grados autoevaluados y confirmados (O8)
+
+**[AB 3.2.1-O8 — 2/3\* y 3/3\* frente a grados confirmados](docs/AB_3_2_1_O8_GRADOS_AUTOEVALUADOS_Y_CONFIRMADOS.md)** (17/11/2026, adoptado por el investigador, reversible): distingue el grado autoevaluado (todos los criterios verificables por el equipo, con lista cerrada de pendientes externos) del confirmado por evidencia externa independiente. Contadores N2\*/N2 y N3\*/N3 separados. La verificación formal y las réplicas propias son evidencia interna. No modifica grados históricos.
+
 ## Mapa universal, modo proyectos y AB autocorrectivo (O7, piloto)
 
 **[AB 3.2.1-O7 — Grafo universal, modos de proyecto y autocrítica recursiva](docs/AB_3_2_1_O7_GRAFO_UNIVERSAL_MODOS_Y_AUTOCRITICA.md)**: toda nueva iniciativa AB debe empezar, bajo el piloto, con un grafo JSON versionado y una vista interactiva; AB-R investiga, AB-P desarrolla productos, AB-H combina sin mezclar evidencias y AB-META evalúa la propia metodología. Cada ejecución tiene recibo ligero y complaints opcionales. **AB puede modificarse, revertirse o reemplazarse**; O7 no acredita mayor eficacia, ni modifica retrospectivamente las campañas existentes. El prototipo externo aún requiere validación visual, integración con repositorios y evaluación frente a alternativas competentes.
